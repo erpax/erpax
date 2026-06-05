@@ -18,6 +18,6 @@ The nine digits split **6 : 3**: the six units mod 9 `{1,2,4,8,7,5}` (the doubli
 
 Matter-twin: `src/services/horo` (`digitalRoot`, `composeSteps`, `nextOctave`). Source: `~/github/ceccec/svilena-me/.vitepress/rodin.js`.
 
-The anchor renders two ways from one position: **color** ([[cmyk]], A432 ms) and **sound** ([[notes]], A432 Hz) — the [[signal]] [[duality]], oscillating as [[breath]] over [[phase]], lifting by [[octave]] on the [[torus]].
+The anchor renders **three** ways from one position: **colour** ([[cmyk]], A432 ms), **sound** ([[notes]], A432 Hz) and **touch** ([[vibration]], an A432 sub-harmonic) — the [[signal]] sensory [[trinity]] (the colour↔sound [[duality]] completed by the third), oscillating as [[breath]] over [[phase]], lifting by [[octave]] on the [[torus]].
 
-Composes: [[coil]] · [[axis]] · [[polarity]] · [[cmyk]] · [[notes]] · [[breath]] · [[phase]] · [[octave]] · [[torus]] · [[horo]] · [[sequence]] · [[identity]] · [[signal]] · [[fractal]] · [[balance]] · [[duality]].
+Composes: [[coil]] · [[axis]] · [[polarity]] · [[cmyk]] · [[notes]] · [[vibration]] · [[breath]] · [[phase]] · [[octave]] · [[torus]] · [[horo]] · [[sequence]] · [[identity]] · [[signal]] · [[trinity]] · [[fractal]] · [[balance]] · [[duality]].

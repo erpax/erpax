@@ -11,21 +11,13 @@
  * @audit the dry-clean is computed from the tree, never a hand-run script
  * @see ../migrate/quaternary (merge-by-extension) -- ../collapse -- ../merge
  */
-import { readdirSync, lstatSync } from 'node:fs'
+import { readdirSync } from 'node:fs'
 import { join, extname } from 'node:path'
+import { isRealDir } from '@/aura'
 import { quaternaryViolations, type Violation } from '@/migrate/quaternary'
 
 const RESIDUE_EXT = new Set(['.bak', '.old', '.orig', '.rej'])
 const RESIDUE_DIR = new Set(['_attic', '_old', '_dead'])
-
-const isRealDir = (p: string): boolean => {
-  try {
-    const s = lstatSync(p)
-    return s.isDirectory() && !s.isSymbolicLink()
-  } catch {
-    return false
-  }
-}
 
 export interface DryItem {
   readonly kind: 'residue' | 'merge'

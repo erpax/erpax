@@ -15,8 +15,9 @@
  *
  * Links: quaternary (the law), test, collapse, merge.
  */
-import { readdirSync, lstatSync, renameSync } from 'node:fs'
+import { readdirSync, renameSync } from 'node:fs'
 import { join } from 'node:path'
+import { isRealDir } from '@/aura'
 
 const ROOT = join(process.cwd(), 'src')
 const TEST_RE = /\.test\.tsx?$/
@@ -29,15 +30,6 @@ export interface Flag {
   readonly folder: string
   readonly files: readonly string[]
   readonly reason: string
-}
-
-const isRealDir = (p: string): boolean => {
-  try {
-    const s = lstatSync(p)
-    return s.isDirectory() && !s.isSymbolicLink()
-  } catch {
-    return false
-  }
 }
 
 /** Plan the canonical-test-name collision over every atom folder (no mutation). */

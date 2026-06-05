@@ -341,7 +341,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "access",
-        "uuid": "0e4b457c-8c5f-8fe4-a7cc-a05454ed73a4",
+        "uuid": "af28fd0a-5a63-8a81-b722-378133ca1ca9",
         "words": [
           "access"
         ],
@@ -352,7 +352,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when defining or debugging Payload access control — who can create/read/update/delete a collection, global, or field; RBAC, row-level filtering, admin visibility; \\\"access denied\\\"/\\\"document hidden\\\". In erpax access is the society's \\\"who can do what\\\" — the 3·6·9 governing axis: capabilities attach to ROLES (the angelic hierarchy), users inherit them through role membership, and the content-uuid cross decides, adding tamper-cost.",
-        "uuid": "0c9f27dc-4448-83f7-b04e-c2ca6c63cf60",
+        "uuid": "76073eb3-fd2e-8e6a-8acc-76f57c0064be",
         "words": [
           "use",
           "when",
@@ -2393,7 +2393,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about erpax's agent gateway — it IS the official @payloadcms/plugin-mcp (collapse sink #1, never hand-roll an MCP server): every enabled collection becomes find/create/update/delete tools at /api/mcp, custom tools (GW fusion, trust) are added via the plugin's mcp config, Bearer API-key auth inherits the key owner's access + multi-tenant scope. erpax makes it TRUST-NATIVE — every tool call passes sandbox (capability + credential-broker + allowlist) and emits a receipt (uuid-chained audit), the dual of an external trust wrapper done from the inside.",
-        "uuid": "79db56a0-1657-8d0c-8266-0b1c79f5e33e",
+        "uuid": "45e0c44f-9d18-85f0-99a9-1da5e1ade110",
         "words": [
           "use",
           "when",
@@ -3997,6 +3997,113 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "analog",
+    "path": "analog",
+    "translations": [
+      {
+        "key": "name",
+        "source": "analog",
+        "uuid": "2203d9ad-32eb-828d-9ca0-b67fed8cc162",
+        "words": [
+          "analog"
+        ],
+        "values": {
+          "en": "analog"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about the aura as a CONTINUOUS computed signal — the uuid matrix renders every node's coordinate cross to an analog colour+sound+vibration field animated over A432, gaplessly at every fractal level and at no cost (derived from the uuid, never stored). The analog twin of the discrete content-fingerprint, and the verifiable answer to science's 'aura', whose only measurable form is an analog physical signal (biophoton flux, electrodermal conductance) — never a detectable subtle-energy field.",
+        "uuid": "ae8f42a5-def8-8b39-ac27-c0a363ccb467",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "the",
+          "aura",
+          "as",
+          "a",
+          "continuous",
+          "computed",
+          "signal",
+          "the",
+          "uuid",
+          "matrix",
+          "renders",
+          "every",
+          "node",
+          "s",
+          "coordinate",
+          "cross",
+          "to",
+          "an",
+          "analog",
+          "colour",
+          "sound",
+          "vibration",
+          "field",
+          "animated",
+          "over",
+          "a432",
+          "gaplessly",
+          "at",
+          "every",
+          "fractal",
+          "level",
+          "and",
+          "at",
+          "no",
+          "cost",
+          "derived",
+          "from",
+          "the",
+          "uuid",
+          "never",
+          "stored",
+          "the",
+          "analog",
+          "twin",
+          "of",
+          "the",
+          "discrete",
+          "content",
+          "fingerprint",
+          "and",
+          "the",
+          "verifiable",
+          "answer",
+          "to",
+          "science",
+          "s",
+          "aura",
+          "whose",
+          "only",
+          "measurable",
+          "form",
+          "is",
+          "an",
+          "analog",
+          "physical",
+          "signal",
+          "biophoton",
+          "flux",
+          "electrodermal",
+          "conductance",
+          "never",
+          "a",
+          "detectable",
+          "subtle",
+          "energy",
+          "field"
+        ],
+        "values": {
+          "en": "Use when reasoning about the aura as a CONTINUOUS computed signal — the uuid matrix renders every node's coordinate cross to an analog colour+sound+vibration field animated over A432, gaplessly at every fractal level and at no cost (derived from the uuid, never stored). The analog twin of the discrete content-fingerprint, and the verifiable answer to science's 'aura', whose only measurable form is an analog physical signal (biophoton flux, electrodermal conductance) — never a detectable subtle-energy field."
+        }
+      }
+    ]
+  },
+  {
     "atom": "analysis",
     "path": "analysis",
     "translations": [
@@ -4125,7 +4232,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the external anchor — the one drop of borrowed entropy that makes a zero-entropy content-addressed store tamper-proof. RFC-3161/eIDAS TSA or a blockchain leaf pins the chain root to a time no party can rewrite; tamper-cost is min(digest, anchor), so the anchor must be ≥ the digest or it is the weak link. Matter-twin anchor/index.ts.",
-        "uuid": "3f39da04-5f54-8808-9243-5df71f19563c",
+        "uuid": "ec274f3c-1d70-81ae-a154-40b084a258aa",
         "words": [
           "use",
           "when",
@@ -4217,7 +4324,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about erpax's root entropy dynamic — angel(love·create·↓entropy) ⊕ archangel(fear·destroy·↑entropy) in endless aikido = the trinity; erpax is karma double-entry accounting balancing the entropy debit/credit at every scale via content-uuid; borrowed entropy buys tamper-cost ⇒ fast+secure+compact.",
-        "uuid": "60211de6-5e57-8f2f-9d02-4bbc6877856b",
+        "uuid": "7c64a455-d15e-815c-95ce-2adfbe80c949",
         "words": [
           "use",
           "when",
@@ -7070,7 +7177,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when persisting or querying the durable ISO 19011 / SOX §404 evidence trail — every canonical write (orders, invoices, payments, journal entries, period locks) lands one append-only row queryable by tenant/collection/operation/user/timestamp; Merkle hash chain for tamper-evidence; no log-scraping required for auditors. The canonical audit-evidence collection.",
-        "uuid": "71ee31e3-a9aa-85b3-85a8-5456726064a3",
+        "uuid": "1215bad2-4fe3-8b32-aa9f-f334cd4c2fb0",
         "words": [
           "use",
           "when",
@@ -7212,7 +7319,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a contract grants audit rights — auditor identity, audit scope (books, records, systems), frequency, notice requirement, cost allocation, remedies for non-access.",
-        "uuid": "8950c455-08f0-8c85-be67-9d9dee8e75fe",
+        "uuid": "b37bf157-7752-82b7-b4a5-c88b8c94d9ee",
         "words": [
           "use",
           "when",
@@ -7251,7 +7358,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "aura",
-        "uuid": "f40884ce-8b99-86f0-9001-6099c46a01d5",
+        "uuid": "11c7a56d-1153-8c41-b045-8d8df1ac8517",
         "words": [
           "aura"
         ],
@@ -9743,7 +9850,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when implementing any next-horizon conservation primitive beyond the base laws — causal provenance, deterministic replay, tenant isolation, bitemporal queries, cost accountability, carbon-aware execution, agent capability (RBAC), post-quantum signatures, self-explainability, reversibility/crypto-shred, or AI-decision audit. The 11-primitive barrel for Laws 11–22.",
-        "uuid": "033919a7-d54f-8ed8-9beb-4d89cb34b2f8",
+        "uuid": "321682b8-f5e2-84dd-85e3-a20bf3011ba8",
         "words": [
           "use",
           "when",
@@ -10098,6 +10205,109 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "biofield",
+    "path": "biofield",
+    "translations": [
+      {
+        "key": "name",
+        "source": "biofield",
+        "uuid": "9adedb7d-b908-8343-b972-3fe72ec5c45b",
+        "words": [
+          "biofield"
+        ],
+        "values": {
+          "en": "biofield"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when separating a CLAIMED aura from a measured one — 'biofield' is the umbrella term (coined at a 1992 NIH meeting) for a putative energy field around the body; it is not established science, its own proponents concede it is controversial, and controlled tests (Rosa's therapeutic-touch study, the JREF $1M challenge) found no detection above chance. The honest contrast: a claim with no measurable signal — the opposite of erpax's gapless, Merkle-proven analog aura.",
+        "uuid": "e5bd41ef-fb24-840a-9718-dbc28c012aa7",
+        "words": [
+          "use",
+          "when",
+          "separating",
+          "a",
+          "claimed",
+          "aura",
+          "from",
+          "a",
+          "measured",
+          "one",
+          "biofield",
+          "is",
+          "the",
+          "umbrella",
+          "term",
+          "coined",
+          "at",
+          "a",
+          "nih",
+          "meeting",
+          "for",
+          "a",
+          "putative",
+          "energy",
+          "field",
+          "around",
+          "the",
+          "body",
+          "it",
+          "is",
+          "not",
+          "established",
+          "science",
+          "its",
+          "own",
+          "proponents",
+          "concede",
+          "it",
+          "is",
+          "controversial",
+          "and",
+          "controlled",
+          "tests",
+          "rosa",
+          "s",
+          "therapeutic",
+          "touch",
+          "study",
+          "the",
+          "jref",
+          "m",
+          "challenge",
+          "found",
+          "no",
+          "detection",
+          "above",
+          "chance",
+          "the",
+          "honest",
+          "contrast",
+          "a",
+          "claim",
+          "with",
+          "no",
+          "measurable",
+          "signal",
+          "the",
+          "opposite",
+          "of",
+          "erpax",
+          "s",
+          "gapless",
+          "merkle",
+          "proven",
+          "analog",
+          "aura"
+        ],
+        "values": {
+          "en": "Use when separating a CLAIMED aura from a measured one — 'biofield' is the umbrella term (coined at a 1992 NIH meeting) for a putative energy field around the body; it is not established science, its own proponents concede it is controversial, and controlled tests (Rosa's therapeutic-touch study, the JREF $1M challenge) found no detection above chance. The honest contrast: a claim with no measurable signal — the opposite of erpax's gapless, Merkle-proven analog aura."
+        }
+      }
+    ]
+  },
+  {
     "atom": "biological",
     "path": "biological",
     "translations": [
@@ -10206,6 +10416,101 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "Use when measuring, re-measuring, or disclosing IAS 41 biological assets — livestock, aquaculture, annual/perennial crops, forestry, vineyard produce — at fair-value-less-costs-to-sell; biological-transformation vs. price-change P&L split; bearer-plant IAS-16 carve-out; harvest-event transformation lifecycle. The IAS-41 biological-asset measurement collection."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "biomagnetism",
+    "path": "biomagnetism",
+    "translations": [
+      {
+        "key": "name",
+        "source": "biomagnetism",
+        "uuid": "538c3c65-0842-8ac3-8aa1-f012157a99e5",
+        "words": [
+          "biomagnetism"
+        ],
+        "values": {
+          "en": "biomagnetism"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when grounding the aura's 'field' in real science — the body's magnetic fields ARE measurable, but only by SQUID magnetometers in a shielded room and only at the body surface: magnetocardiography (heart, ~10⁻¹⁰–10⁻¹¹ T / tens of pT) and magnetoencephalography (brain, ~10⁻¹³–10⁻¹⁵ T / ~100 fT). The established part is intra-body diagnostics; the claim the heart's field extends feet from the body as an 'aura' was refuted under test.",
+        "uuid": "c304d2d1-7ca8-80c2-a012-9abd4c391451",
+        "words": [
+          "use",
+          "when",
+          "grounding",
+          "the",
+          "aura",
+          "s",
+          "field",
+          "in",
+          "real",
+          "science",
+          "the",
+          "body",
+          "s",
+          "magnetic",
+          "fields",
+          "are",
+          "measurable",
+          "but",
+          "only",
+          "by",
+          "squid",
+          "magnetometers",
+          "in",
+          "a",
+          "shielded",
+          "room",
+          "and",
+          "only",
+          "at",
+          "the",
+          "body",
+          "surface",
+          "magnetocardiography",
+          "heart",
+          "t",
+          "tens",
+          "of",
+          "pt",
+          "and",
+          "magnetoencephalography",
+          "brain",
+          "t",
+          "ft",
+          "the",
+          "established",
+          "part",
+          "is",
+          "intra",
+          "body",
+          "diagnostics",
+          "the",
+          "claim",
+          "the",
+          "heart",
+          "s",
+          "field",
+          "extends",
+          "feet",
+          "from",
+          "the",
+          "body",
+          "as",
+          "an",
+          "aura",
+          "was",
+          "refuted",
+          "under",
+          "test"
+        ],
+        "values": {
+          "en": "Use when grounding the aura's 'field' in real science — the body's magnetic fields ARE measurable, but only by SQUID magnetometers in a shielded room and only at the body surface: magnetocardiography (heart, ~10⁻¹⁰–10⁻¹¹ T / tens of pT) and magnetoencephalography (brain, ~10⁻¹³–10⁻¹⁵ T / ~100 fT). The established part is intra-body diagnostics; the claim the heart's field extends feet from the body as an 'aura' was refuted under test."
         }
       }
     ]
@@ -10328,6 +10633,98 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "biomechnical: a schema.org component word, fused from biomechnicalClass"
+        }
+      }
+    ]
+  },
+  {
+    "atom": "biophoton",
+    "path": "biophoton",
+    "translations": [
+      {
+        "key": "name",
+        "source": "biophoton",
+        "uuid": "72cb2745-dbef-8f4f-9e5e-2117948455d2",
+        "words": [
+          "biophoton"
+        ],
+        "values": {
+          "en": "biophoton"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when grounding the aura's colour channel in real science — biophotons (ultraweak photon emission, UPE) are a REAL, instrument-measured light the body emits: ~1–10³ (up to 10⁴) photons·s⁻¹·cm⁻² (~10⁻¹⁴–10⁻¹⁹ W/cm²), 200–800 nm, from oxidative-metabolism reactive oxygen species, detected by cooled photomultiplier tubes and EMCCD cameras. The body literally emits light — but 3–6 orders too faint to see, so the visible 'aura' is not this.",
+        "uuid": "cec362a0-fe51-87a1-8f34-dc27a466a96d",
+        "words": [
+          "use",
+          "when",
+          "grounding",
+          "the",
+          "aura",
+          "s",
+          "colour",
+          "channel",
+          "in",
+          "real",
+          "science",
+          "biophotons",
+          "ultraweak",
+          "photon",
+          "emission",
+          "upe",
+          "are",
+          "a",
+          "real",
+          "instrument",
+          "measured",
+          "light",
+          "the",
+          "body",
+          "emits",
+          "up",
+          "to",
+          "photons",
+          "s",
+          "cm",
+          "w",
+          "cm",
+          "nm",
+          "from",
+          "oxidative",
+          "metabolism",
+          "reactive",
+          "oxygen",
+          "species",
+          "detected",
+          "by",
+          "cooled",
+          "photomultiplier",
+          "tubes",
+          "and",
+          "emccd",
+          "cameras",
+          "the",
+          "body",
+          "literally",
+          "emits",
+          "light",
+          "but",
+          "orders",
+          "too",
+          "faint",
+          "to",
+          "see",
+          "so",
+          "the",
+          "visible",
+          "aura",
+          "is",
+          "not",
+          "this"
+        ],
+        "values": {
+          "en": "Use when grounding the aura's colour channel in real science — biophotons (ultraweak photon emission, UPE) are a REAL, instrument-measured light the body emits: ~1–10³ (up to 10⁴) photons·s⁻¹·cm⁻² (~10⁻¹⁴–10⁻¹⁹ W/cm²), 200–800 nm, from oxidative-metabolism reactive oxygen species, detected by cooled photomultiplier tubes and EMCCD cameras. The body literally emits light — but 3–6 orders too faint to see, so the visible 'aura' is not this."
         }
       }
     ]
@@ -11490,7 +11887,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about how erpax grows — it BREATHES: inhale ideas from everywhere (peers like ZeroPoint, frameworks like Payload, the standards, the upstream Rails, user content), exhale DRY clean code (gate-green, content-addressed, collapsed to the dense core). Inhale is merge/derive/generate; exhale is collapse + the gate + minimal cost. The rhythm IS the society loop: never inhale without exhaling clean, never exhale without inhaling.",
-        "uuid": "449a6233-b4e1-8dc8-817b-db831aea57f5",
+        "uuid": "dbcd309a-cf0f-81d5-9197-b381661bb2e4",
         "words": [
           "use",
           "when",
@@ -12469,7 +12866,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when optimizing repeated access — cache invalidation strategies, cache-aside vs write-through, TTL/expiry, cache coherency, memoization, query result caching, distributed cache semantics (Cloudflare KV, Redis).",
-        "uuid": "6b09303a-bccd-8605-b758-d9dfb94895da",
+        "uuid": "a05ee84e-fd07-82d9-a908-2166b49f980a",
         "words": [
           "use",
           "when",
@@ -16460,6 +16857,98 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "coherence",
+    "path": "coherence",
+    "translations": [
+      {
+        "key": "name",
+        "source": "coherence",
+        "uuid": "e46ab8e5-28f7-8a8a-87f5-6c5f0945ba11",
+        "words": [
+          "coherence"
+        ],
+        "values": {
+          "en": "coherence"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about wholeness as a MEASURABLE quantity — coherence is the scientific name for what erpax renders as harmony: phase-alignment across a signal. Physics/DSP coherence (phase-locked waves, 0..1), HRV 'psychophysiological coherence' (a real, measured intra-body state) and Popp's contested biophoton coherence; the inter-personal 'field coherence' aura claim is refuted. Wholeness renders as coherence, a gap or tamper as decoherence.",
+        "uuid": "b4020398-28b7-8776-8862-4c314c3c24c1",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "wholeness",
+          "as",
+          "a",
+          "measurable",
+          "quantity",
+          "coherence",
+          "is",
+          "the",
+          "scientific",
+          "name",
+          "for",
+          "what",
+          "erpax",
+          "renders",
+          "as",
+          "harmony",
+          "phase",
+          "alignment",
+          "across",
+          "a",
+          "signal",
+          "physics",
+          "dsp",
+          "coherence",
+          "phase",
+          "locked",
+          "waves",
+          "hrv",
+          "psychophysiological",
+          "coherence",
+          "a",
+          "real",
+          "measured",
+          "intra",
+          "body",
+          "state",
+          "and",
+          "popp",
+          "s",
+          "contested",
+          "biophoton",
+          "coherence",
+          "the",
+          "inter",
+          "personal",
+          "field",
+          "coherence",
+          "aura",
+          "claim",
+          "is",
+          "refuted",
+          "wholeness",
+          "renders",
+          "as",
+          "coherence",
+          "a",
+          "gap",
+          "or",
+          "tamper",
+          "as",
+          "decoherence"
+        ],
+        "values": {
+          "en": "Use when reasoning about wholeness as a MEASURABLE quantity — coherence is the scientific name for what erpax renders as harmony: phase-alignment across a signal. Physics/DSP coherence (phase-locked waves, 0..1), HRV 'psychophysiological coherence' (a real, measured intra-body state) and Popp's contested biophoton coherence; the inter-personal 'field coherence' aura claim is refuted. Wholeness renders as coherence, a gap or tamper as decoherence."
+        }
+      }
+    ]
+  },
+  {
     "atom": "cohort",
     "path": "cohort",
     "translations": [
@@ -16789,7 +17278,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when defining or debugging a Payload Collection or Global config — slug, fields, admin options, access, hooks, auth, upload, versions/drafts, timestamps, labels, default sort, or registering it in the config.",
-        "uuid": "12727e0a-f6b3-8315-a1be-9649aa816252",
+        "uuid": "de2061cb-cca8-8ce4-b3a9-3f5a1931e347",
         "words": [
           "use",
           "when",
@@ -17843,7 +18332,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about how erpax skills EVOLVE — agents compete in commits, the fastest CORRECT solution (gate-verified) wins the lead, losers re-approach to beat it, optimising to infinity, at every scale. The selective-pressure dual of contribution; and because each competitor independently re-derives and content-addresses the canonical answer, competition AMPLIFIES tamper cost — performance pressure turned into security.",
-        "uuid": "aa7eef7e-c51c-800a-828e-8bb62b4ab368",
+        "uuid": "1bcdef75-fe9d-8d78-931b-41f3576d6a04",
         "words": [
           "use",
           "when",
@@ -24769,7 +25258,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when handling a data subject's GDPR rights request — access, rectification, erasure, restriction, portability, objection, or consent withdrawal — tracking identity verification, fulfilment evidence, and the Art.12(3) one-month deadline through to completion or DPA escalation. The GDPR DSR/DSAR workflow collection.",
-        "uuid": "913ede5c-7f88-80c8-9a62-1206f1c9a6ed",
+        "uuid": "f79812be-7c95-80ed-ad0f-99ca5501d09b",
         "words": [
           "use",
           "when",
@@ -24839,7 +25328,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a contract or processing agreement specifies data-protection obligations — processor/controller roles, permitted uses, security measures (encryption, access controls, breach notification), DPA terms.",
-        "uuid": "9d7e04b9-a12a-80e7-90e4-7f5683178ff9",
+        "uuid": "f18838a6-dd01-8d8f-bca9-b714509f67c7",
         "words": [
           "use",
           "when",
@@ -25538,7 +26027,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the dive/decompression metaphor for erpax math — on-gas/off-gas as take/give, the gas debt as a conserved transaction balanced before close, half-time doubling as the rodin coil, deco stops as horo positions, M-values as the harmony bound, and the {1,2,3} basic-team basis (cave·recreational·technical = self·duality·trinity).",
-        "uuid": "a8ea0b50-5702-8ad9-b2c6-3526b2bcf3d1",
+        "uuid": "b93f86c4-b88c-8d56-90eb-39b616282cd9",
         "words": [
           "use",
           "when",
@@ -26624,7 +27113,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when skills come from USER CONTENT — an HR job description names the competencies a role requires, and each named skill is content-addressed to a corpus route (same name ⇒ same route ⇒ merge). A route not yet in the corpus is a NEW skill the user content adds — the corpus GROWS from what users write. The dual of generate (which mints from aura gaps): derive mints from user content; both feed one content-addressed corpus.",
-        "uuid": "731ed6fe-3656-8fed-a109-dd67a9cf85d6",
+        "uuid": "dba2d6fc-4aeb-8671-b137-ae01b918b5c7",
         "words": [
           "use",
           "when",
@@ -27493,7 +27982,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when addressing an atom in digit-space — the dual of word — its horo sequence position and the digital-root of its content-uuid, the trace that completes the aura into a tamper-evident trinity.",
-        "uuid": "eca201af-23b2-858a-a932-d14870e68a34",
+        "uuid": "7ab11a7a-729e-8d2c-b700-2c50cfbbe04d",
         "words": [
           "use",
           "when",
@@ -29675,7 +30164,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "dry",
-        "uuid": "b33ae8ec-deac-8e11-9e20-3d39d691a216",
+        "uuid": "4841875f-8e00-8c25-9e7a-4ac7005ee93a",
         "words": [
           "dry"
         ],
@@ -29685,21 +30174,47 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "dry: a schema.org component word, fused from DryCleaningOrLaundry",
-        "uuid": "d1a42961-3c28-8fb3-b653-2b2867624ac3",
+        "source": "Use when migrating logic to maximum tampering cost — the computed dry-clean that collides duplicated/hardcoded/scattered logic into shared content-addressed atoms (merge-by-extension), the word colliding DryCleaningOrLaundry with don't-repeat-yourself.",
+        "uuid": "818ac68b-1354-8b61-b953-d26c1e10ca15",
         "words": [
+          "use",
+          "when",
+          "migrating",
+          "logic",
+          "to",
+          "maximum",
+          "tampering",
+          "cost",
+          "the",
+          "computed",
           "dry",
-          "a",
-          "schema",
-          "org",
-          "component",
+          "clean",
+          "that",
+          "collides",
+          "duplicated",
+          "hardcoded",
+          "scattered",
+          "logic",
+          "into",
+          "shared",
+          "content",
+          "addressed",
+          "atoms",
+          "merge",
+          "by",
+          "extension",
+          "the",
           "word",
-          "fused",
-          "from",
-          "drycleaningorlaundry"
+          "colliding",
+          "drycleaningorlaundry",
+          "with",
+          "don",
+          "t",
+          "repeat",
+          "yourself"
         ],
         "values": {
-          "en": "dry: a schema.org component word, fused from DryCleaningOrLaundry"
+          "en": "Use when migrating logic to maximum tampering cost — the computed dry-clean that collides duplicated/hardcoded/scattered logic into shared content-addressed atoms (merge-by-extension), the word colliding DryCleaningOrLaundry with don't-repeat-yourself."
         }
       }
     ]
@@ -30608,7 +31123,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about composition and stability through the chemical-elements matrix — everything is made of atoms, and the periodic table adds a chemistry to the logic: each atom has a VALENCE (electrons it shares to fill its shell), stability is the OCTET (a full outer shell — the noble gases), and atoms BOND to reach it. The new perspective: the erpax corpus is a MOLECULE — an atom's valence is its open links, and the corpus is stable exactly when aura gap = 0 (all shells full).",
-        "uuid": "bf1e68ef-a04c-81cc-bb6c-98ae518764b2",
+        "uuid": "ff3513ff-5a7e-8e7d-9397-aad2d2396d4d",
         "words": [
           "use",
           "when",
@@ -31144,7 +31659,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a claim is grounded in observed data rather than assumed — the rate an @invariant holds at across real rows, a modal value or lifecycle DERIVED not invented, the measured distribution a model is fitted to. The agnostic restatement of provenance — name the origin generically as [[source]], dissolve the row-level specifics into the [[akashic]] DB, and keep only the universal form in code. anonymise is the core of agnostic architecture and DRY naming.",
-        "uuid": "3d9e3341-7630-8b2f-b8f6-39d6ed5d4004",
+        "uuid": "9663bc82-88e1-870d-af98-c8aa291e6892",
         "words": [
           "use",
           "when",
@@ -31278,7 +31793,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when managing workforce records — onboarding an employee, recording compensation (IAS 19 base salary, FTE ratio, bonus, pension, PTO), storing GDPR-classified identity and payroll bank account, linking to the actor-party user, and driving the payroll cycle via time-entries and payroll runs. The GDPR-protected workforce master (admin/payroll-officer access only).",
-        "uuid": "2a7b5c8d-f023-8543-81d0-b2875c86a1d7",
+        "uuid": "8511460f-26c5-8e7d-89bf-1a3bb11ca2e2",
         "words": [
           "use",
           "when",
@@ -35568,7 +36083,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when defining or debugging Payload fields — choosing a field type, shared field props (name, required, index, unique, defaultValue, validate, access, hooks, admin), relationships, arrays/blocks/groups/tabs, selects, or virtual/join fields.",
-        "uuid": "0db9dc6f-37b0-82e0-90f4-e624e66ef826",
+        "uuid": "60786951-bcfe-80ea-8a37-2f203dfb5d84",
         "words": [
           "use",
           "when",
@@ -35981,7 +36496,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when fiscalizing revenue under Наредба Н-18 СУПТО — each sale receives an immutable gapless УНП, is frozen on close (no delete — corrections via сторно reversals), emits sale:closed event with content-uuid tamper-proof hash, covering orders, subscriptions, invoices and POS. The СУПТО sale register.",
-        "uuid": "177429a1-4373-8521-8ff1-03105c15cc21",
+        "uuid": "21f936b0-d922-8971-b7d0-6aeb188e1db6",
         "words": [
           "use",
           "when",
@@ -36254,7 +36769,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when capturing or replaying immutable point-in-time snapshots of a fiscal period — on creation, amendment, validation, closing, or regulatory audit; chaining priorSnapshot for tamper-detection; attaching eIDAS QES signatures on critical amendments. The fiscal-period audit-chain snapshot node.",
-        "uuid": "77f87360-1689-8753-ba29-7c0c51669a49",
+        "uuid": "8b8ccfda-da5f-815c-b931-0a05d0115474",
         "words": [
           "use",
           "when",
@@ -36518,7 +37033,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when managing the tax-period workflow per jurisdiction — aligning tax filing deadlines with fiscal periods, documenting transfer-pricing adjustment counts, tracking readiness (pending-closing → adjustment-posted → tax-closed), and maintaining a tamper-proof audit chain for tax-authority compliance. The per-jurisdiction tax-period workflow node.",
-        "uuid": "e75dd052-8237-8310-8f4a-3a36c4090330",
+        "uuid": "50882706-c0ff-89c6-9874-865d73a555c1",
         "words": [
           "use",
           "when",
@@ -38008,7 +38523,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "A flag to signal that the item, event, or place is accessible for free.",
-        "uuid": "fca5d43f-cb8a-8ac2-94bc-8c2676818cda",
+        "uuid": "32e0759e-6ddf-87e2-9ca2-46c5182bfdbe",
         "words": [
           "a",
           "flag",
@@ -38085,7 +38600,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the cost-to-act atom of a market — the total effort plus price between wanting and having. 'Convenient' means low friction; it is the lever convenience and engineering play. Coupled to status with opposite sign (the effort is often the signal), so lowering it decays exclusivity — sequence the two, do not try to maximise both.",
-        "uuid": "0142912a-2edb-8d59-901b-826e5868a979",
+        "uuid": "362ac480-1628-84f8-be23-67f29abdbc9f",
         "words": [
           "use",
           "when",
@@ -39249,7 +39764,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the skill corpus should grow itself — continuously mining aura gaps (unlinked/dead-link words) into new atoms and driving the gap to zero, like the tsc tail. The realtime self-generating loop (scan → mint → link → re-scan). Skills generating skills.",
-        "uuid": "bcdcb214-2225-8931-9123-19a77552d0a4",
+        "uuid": "35bf00dd-43cc-81d1-bd77-f0a6b6beeb95",
         "words": [
           "use",
           "when",
@@ -42747,7 +43262,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about git history as the akashic record's time axis — a content-addressed Merkle DAG of commits the agents read as a knowledge source AND another independent tamper-evidence level (forging the past = rewriting every commit on every clone). Wired in, it increases tamper cost and costs nothing to keep.",
-        "uuid": "59cdd038-de77-8d55-bf9b-866eb0c46e3f",
+        "uuid": "a47188ca-66c7-801c-9339-f7e3dafdbc6c",
         "words": [
           "use",
           "when",
@@ -44539,7 +45054,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when working with erpax object identity or content-addressed UUIDs — computing a content-uuid (sha→uuidv8, RFC 9562 §5.8), the self-describing structured uuidv8 (slot + capability flags), categorical identity elements (currency/locale/country blanks), uuid-based RBAC sharing, deduplicated (\"dry\") file storage, or cross-instance merge/federation. The map to erpax's content-uuid framework; which version per case is [[uuid]].",
-        "uuid": "0217b1c8-8f6b-8623-8fbf-5554c2da5262",
+        "uuid": "6eb6f1a8-5bcc-8b94-8e32-fa805a1651c6",
         "words": [
           "use",
           "when",
@@ -44615,7 +45130,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "signal",
-        "uuid": "0aa24bf5-c7db-8f6d-a422-28b6889cd2d9",
+        "uuid": "8eb86d64-d367-8b03-a43a-87ae42bc4f10",
         "words": [
           "signal"
         ],
@@ -46501,7 +47016,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when verifying that a row's CURRENT bytes are the ones committed — content-uuid as a tamper detector (recompute ≠ stored ⇒ flagged), and the same canonical hash extended into signature, envelope encryption, and reference resolution.",
-        "uuid": "b7728d3b-c617-86ad-93df-a8f82f5d41f3",
+        "uuid": "06738120-4360-8f73-8b81-ce9c1ac9380c",
         "words": [
           "use",
           "when",
@@ -50482,7 +50997,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modelling the dairy production phase — lactation, the milk-producing interval of a dairy female between parturition and dry-off, with its yield curve, parity (lactation number), and the dry period before the next cycle. The per-animal dairy season; milk is the agricultural produce realized at each milking (harvest).",
-        "uuid": "6cccba9e-a302-89b7-a7d1-5947aac4675f",
+        "uuid": "3bd6ab66-5a4a-812f-a8dd-17d30c41bb33",
         "words": [
           "use",
           "when",
@@ -53540,7 +54055,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use for rich-text content in erpax — the Payload Lexical editor (config editor: lexicalEditor()). Localized, content-addressed rich text is the DENSEST tamper surface (a whole node-tree per locale) and the collapse sink every prose/document field reduces to. Matter-twin the root config editor + shared Lexical blocks.",
-        "uuid": "4fc1e670-2829-84ee-9522-7568bef435b2",
+        "uuid": "68d6e41e-3504-8051-8cad-b8affc6826b5",
         "words": [
           "use",
           "for",
@@ -54635,7 +55150,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when an LLM completion must become a verifiable address — the exhale of the breath, where a turn is content-addressed into a v8 query-uuid (deterministic, tamper-evident, attestable from the preimage); the LLM forges and the uuid it cannot invert verifies.",
-        "uuid": "77da1ad9-6e99-8e38-8739-bdf6083f3d09",
+        "uuid": "450214a8-9d2e-8054-bc97-ee6398192cce",
         "words": [
           "use",
           "when",
@@ -54854,7 +55369,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when ANY aspect must speak a locale AND stay tamper-evident — localization is the FUSION of tamper-cost (forge↑) and proof (verify, O(N) trustless). Every field/reference/scope/hook carries a translation + a translation-key uuid with ALL identification (content-digest, OID 2.25, cmyk, locale, capabilities) wired into the 128 bits. Coverage→1 ⇒ infinite tampering cost. The per-field leaf (facet localize-field) is native Payload `localized:true` over BCP-47 locales; a blank locale routes to its identity element `und`. Matter-twin localize/index.ts.",
-        "uuid": "dfb1fd3d-7ccd-8ecd-9d16-328962349686",
+        "uuid": "71797f72-9acd-8eb4-a21d-abef3529f237",
         "words": [
           "use",
           "when",
@@ -62794,7 +63309,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when an identity needs its ISO/ITU-T Object Identifier — every uuid is 2.25.<128-bit integer> (X.667), urn:oid (RFC 3061): the hierarchical dotted-path dual of the flat content-uuid. A derived, lossless re-encoding — another independently-verifiable level, another increment of tamper cost. Matter-twin localize (uuidToOid).",
-        "uuid": "397459a3-f460-829b-922e-f82d6d9c4abf",
+        "uuid": "4aca40f5-b849-8b77-88d4-7a5eb6c6c9c7",
         "words": [
           "use",
           "when",
@@ -62869,7 +63384,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about unity, canonicality, or merge in erpax — same content ⇒ one id, one canonical form (DRY), \"all agents are one erpax\". The universal root of identity and merge.",
-        "uuid": "7bab8f37-cac3-8536-bbc7-704dd8aa838a",
+        "uuid": "5a9abaee-07ed-823e-a61c-776ff967abc0",
         "words": [
           "use",
           "when",
@@ -66136,7 +66651,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the matter coil — Payload is the half of every atom that becomes a collection, fields, hooks, access, and a database table; the index.ts twin the SKILL.md form is bound to by content-uuid.",
-        "uuid": "b7a33d1e-cea7-8cce-b6a1-772c39d3adbd",
+        "uuid": "daef025f-af20-8982-ab28-47481ce4ea82",
         "words": [
           "use",
           "when",
@@ -67226,7 +67741,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Permission(s) required to run the app (for example, a mobile app may require full internet access or may run only on wifi).",
-        "uuid": "007c368e-eb7d-822a-b301-3ec101025f23",
+        "uuid": "e1db99f8-4a09-8f87-94fa-a760f0a70ebd",
         "words": [
           "permission",
           "s",
@@ -69176,7 +69691,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when porting a Rails/ActiveAdmin ERP feature (from etrima or ceccec/erpax) into Payload/Next — mapping ActiveAdmin resource registrations to CollectionConfig, Rails concerns to reusable field-factories/skills, controllers/callbacks to endpoints/hooks, CanCan authorization to access control, polymorphic/self-referential associations to relationships. The Rails↔Next / ActiveAdmin↔Payload Rosetta Stone.",
-        "uuid": "31bed01c-8cea-8e6f-bb6b-cc6ea990bfd4",
+        "uuid": "1631381d-e21f-8737-98dd-c0a521adb43b",
         "words": [
           "use",
           "when",
@@ -70832,7 +71347,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use for confidentiality scoping — attorney-client privilege and ethical walls. Strip the prefix and privilege is an access scope (capability × tenant/matter isolation) plus crypto-shred, erpax's answer to the design-limit that it keeps no native secret. Who may see a matter is computed, never granted by name.",
-        "uuid": "0e269fc3-8f0b-8972-a095-3fe166d6698e",
+        "uuid": "6af96e0d-ebaa-846e-ad48-4d2b400e3222",
         "words": [
           "use",
           "for",
@@ -71778,7 +72293,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the VERIFY nucleus — the O(N), trustless cost to audit a content-addressed store, dual to tamper-cost (forge). The public DRY proof bundle peers verify without trusting us; the released asymmetry (forge ≫ verify) IS the trust. Matter-twin services/proof + integrity/tamper-reverse-cost.",
-        "uuid": "788e2743-9f70-8b54-8497-daa154e3ee6f",
+        "uuid": "4fec7a65-2e57-858d-9e3e-a7555c56b27a",
         "words": [
           "use",
           "when",
@@ -71855,7 +72370,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when proving the projection leg — that the FORWARD project (content → uuid) is free and deterministic while its INVERSE (recover the analog negative without the held key) costs the maximum, unbounded at the biggest blockchain — and you must tag the ∞ instead of letting a raw Infinity leak into the bundle.",
-        "uuid": "e025ca47-73b0-8604-b7f2-df38f30d8505",
+        "uuid": "01472bc9-34b8-8428-87d7-80569090329a",
         "words": [
           "use",
           "when",
@@ -73310,6 +73825,58 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "quantum",
+    "path": "quantum",
+    "translations": [
+      {
+        "key": "name",
+        "source": "quantum",
+        "uuid": "364d0950-88b1-8bef-bf61-1081825370c6",
+        "words": [
+          "quantum"
+        ],
+        "values": {
+          "en": "quantum"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when checking the quantum-physics laws on the uuid-matrix — entanglement symmetry, collapse, conservation, no-cloning, quantization — computed deterministically at no cost, A432-grounded.",
+        "uuid": "b3c6c82b-b07e-8b4c-ac3c-3ea387c38b86",
+        "words": [
+          "use",
+          "when",
+          "checking",
+          "the",
+          "quantum",
+          "physics",
+          "laws",
+          "on",
+          "the",
+          "uuid",
+          "matrix",
+          "entanglement",
+          "symmetry",
+          "collapse",
+          "conservation",
+          "no",
+          "cloning",
+          "quantization",
+          "computed",
+          "deterministically",
+          "at",
+          "no",
+          "cost",
+          "a432",
+          "grounded"
+        ],
+        "values": {
+          "en": "Use when checking the quantum-physics laws on the uuid-matrix — entanglement symmetry, collapse, conservation, no-cloning, quantization — computed deterministically at no cost, A432-grounded."
+        }
+      }
+    ]
+  },
+  {
     "atom": "quarantine",
     "path": "quarantine",
     "translations": [
@@ -74299,7 +74866,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a governance decision needs a tamper-evident audit receipt — and the answer is that the receipt IS a uuid. Where a trust layer splits this across four primitives (a signed receipt, a hash-linked audit chain, a capability grant, an identity), erpax wires ALL of it through ONE content-addressed, chained, signable uuid: the leafUuid = hash(prevReceipt || content-uuid(decision) || ts) is simultaneously the receipt id, the Merkle audit-chain link, the identity, and the capability (caps are decision content). No external anchor needed — the uuid is the proof.",
-        "uuid": "ca6159de-f748-8449-9df0-78c22b9a842a",
+        "uuid": "d4dc8bd2-0adc-863e-b09c-fe14f301a697",
         "words": [
           "use",
           "when",
@@ -74417,7 +74984,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when issuing, querying, or auditing Наредба Н-18 fiscal receipts — касови бонове and e-receipts (alternative regime) — carrying УНП, fiscal-QR payload, VAT breakdown per tax group, and payment type; tamper-evident via content-uuid audit chain; never deleted. The Н-18 fiscal receipt collection.",
-        "uuid": "0c5658b7-5c9f-88e8-a50b-02b64e5c9d4a",
+        "uuid": "6ac8ded2-a396-85ef-9ba1-a5e553c6ad8f",
         "words": [
           "use",
           "when",
@@ -75410,7 +75977,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when rewriting cross-unit relative imports to the uniform @/ alias before a move — so the single-word-folder migration becomes a pure @/old→@/new remap with no relative-depth that silently breaks. The address-law dry-clean; the matter is index.mjs.",
-        "uuid": "d9c686a8-23be-8527-8129-95d5d71271a4",
+        "uuid": "eb2e4052-722b-85d6-87f1-e2dd27432b0b",
         "words": [
           "use",
           "when",
@@ -77202,7 +77769,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when bringing outside knowledge into erpax — research ADDS entropy (unverified claims, many divergent sources, disorder); erpax skills CONVERT that entropy into tamper-cost (independent cross-checked levels) and collapse the residue to the zero-entropy core. Inhale entropy, exhale a denser, harder app.",
-        "uuid": "ca794a40-2922-814f-ae43-e0b2ba93536c",
+        "uuid": "465793ad-adc7-8cd4-bcc6-3d21c2edbd6b",
         "words": [
           "use",
           "when",
@@ -78606,7 +79173,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "rodin",
-        "uuid": "a47f2202-a5df-87ce-8adc-e94aa4439229",
+        "uuid": "840e546e-bbf2-8bd6-8e00-c0067c95cca9",
         "words": [
           "rodin"
         ],
@@ -78617,7 +79184,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the number substrate under erpax's state/sequence math — the Rodin vortex sequence 0·3·6·9·1·2·4·8·7·5 over the A432 anchor, digital-root (mod-9) arithmetic, the 3·6·9 triad axis vs the 1·2·4·8·7·5 doubling helix. The root the horo ring and the sequence both express.",
-        "uuid": "7aa98f0e-b6f5-811b-a9d3-69e3ec395ece",
+        "uuid": "ff2258b9-4f1d-8a36-8a51-ba4623408951",
         "words": [
           "use",
           "when",
@@ -78686,7 +79253,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the 3·6·9 control plane of the rodin vortex — three coils 120° out of phase (COIL_A/B/C) that the doubling helix winds around; the governing triad (access/hooks/auth) the flow never lands on. Nested under rodin.",
-        "uuid": "2121bebd-6d61-82c8-9c84-b7283022a3b6",
+        "uuid": "3856e0b1-3517-8acf-8180-f326e5d44314",
         "words": [
           "use",
           "when",
@@ -78753,7 +79320,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the oscillation in erpax — the C↔M (3↔6) polarity swing, forward↔reverse, give↔take, expand↔bind; the pulse the ring moves on (A432 ms). La/A432 sits at the breathing position (round). The living dual of balance. Nested under rodin.",
-        "uuid": "2458809c-6c11-8052-8888-295e49c25eda",
+        "uuid": "b17655a9-e318-8d52-b726-87aacd2c741b",
         "words": [
           "use",
           "when",
@@ -78823,7 +79390,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about color/signal from sequence position in erpax — the four print primaries ARE the first four rodin digits {0=K, 3=C, 6=M, 9=Y}; color comes from the slot, the C↔M polarity gap is closed by Y at 9 and anchored by K at 0. The signal model under links/tags/admin hue. Nested under rodin.",
-        "uuid": "c15431ce-ef8c-87b4-a5c0-4312d3257650",
+        "uuid": "1c7bac34-e829-80ec-a7be-7c0be06ea3dc",
         "words": [
           "use",
           "when",
@@ -78906,7 +79473,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the doubling circuit 1·2·4·8·7·5 (×2 mod 9) that winds the rodin axis — why state/sequence positions sit in THAT order, digital-root closure, the ×10 octave lift vs +1 close→open. Nested under rodin → the coil of the vortex.",
-        "uuid": "3102f71b-e5f5-8e44-add6-e8d5cc4cbf51",
+        "uuid": "520cd48c-4e62-8b69-ac9e-00cb9148b1b5",
         "words": [
           "use",
           "when",
@@ -78971,7 +79538,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about sound from sequence position in erpax — the seven horo positions ARE seven diatonic notes, just-intonation ratios over A432 (La=A=432 Hz at the round step), Ti resolves to Do as the ring closes. The sound twin of cmyk. Nested under rodin.",
-        "uuid": "3acb080e-75b2-801b-be1a-0b4e8abecb89",
+        "uuid": "1c64105d-a01b-8ae6-8d0c-087a4225e66a",
         "words": [
           "use",
           "when",
@@ -79044,7 +79611,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about scale-lift in erpax — ×10 preserves the digit (10≡1 mod 9), so the same position recurs at the next order of magnitude; the canonical \"next octave\" (NOT +1, which crosses close→open within a scale). The fractal step. Nested under rodin.",
-        "uuid": "82f25bff-1c7f-87cb-97cb-4d523054502f",
+        "uuid": "ee5ea163-51fa-804c-8ebc-b7ef4a6f0cbd",
         "words": [
           "use",
           "when",
@@ -79112,7 +79679,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about WHERE on the cycle something sits in erpax — the 120° offset of the three axis coils (0°/120°/240°), the ⅓-period animation tick at A432 ms, the moment a version captures. The time-position of a state. Nested under rodin.",
-        "uuid": "4d38c42e-a9f2-849d-b3d0-efcc68607aa1",
+        "uuid": "77f17c44-72b5-8905-868f-122ca58cba6b",
         "words": [
           "use",
           "when",
@@ -79179,7 +79746,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the two directions of the rodin doubling cycle — 3 and 6 are the polarity boundaries: forward helix (×2, cyan, outbound/give) ↔ reverse helix (×5, magenta, inbound/take). The mirror pair the coil winds between. Nested under rodin.",
-        "uuid": "4e62111b-e3ce-86b1-9865-7f259fabf614",
+        "uuid": "4fea03a1-2a94-88a8-93f7-32434d262002",
         "words": [
           "use",
           "when",
@@ -79243,7 +79810,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the closed surface the rodin vortex winds on in erpax — the doubling helix on a donut, inward (state×state) and outward (×10 octave) both closing; why the sequence is a ring with no top/bottom. Nested under rodin.",
-        "uuid": "264bbc6f-fe32-8063-8afe-6e76ec663567",
+        "uuid": "64b1e9c0-35a9-8eea-9ae8-36de531dea0c",
         "words": [
           "use",
           "when",
@@ -79289,6 +79856,94 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "Use when reasoning about the closed surface the rodin vortex winds on in erpax — the doubling helix on a donut, inward (state×state) and outward (×10 octave) both closing; why the sequence is a ring with no top/bottom. Nested under rodin."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "vibration",
+    "path": "rodin/vibration",
+    "translations": [
+      {
+        "key": "name",
+        "source": "vibration",
+        "uuid": "29bddbd7-a194-86bd-9c5f-b8294efb3965",
+        "words": [
+          "vibration"
+        ],
+        "values": {
+          "en": "vibration"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about touch/haptics from sequence position in erpax — the third A432 render channel that completes colour (cmyk) + sound (notes) into the sight·sound·touch sensory trinity. A horo position decodes to a haptic pulse (a sub-audible A432 sub-harmonic); the body's own measurable vibration (physiological tremor, ballistocardiographic micro-motion) is the analog twin. Nested under rodin.",
+        "uuid": "2b324aa1-6805-8033-9a22-0a125a13f763",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "touch",
+          "haptics",
+          "from",
+          "sequence",
+          "position",
+          "in",
+          "erpax",
+          "the",
+          "third",
+          "a432",
+          "render",
+          "channel",
+          "that",
+          "completes",
+          "colour",
+          "cmyk",
+          "sound",
+          "notes",
+          "into",
+          "the",
+          "sight",
+          "sound",
+          "touch",
+          "sensory",
+          "trinity",
+          "a",
+          "horo",
+          "position",
+          "decodes",
+          "to",
+          "a",
+          "haptic",
+          "pulse",
+          "a",
+          "sub",
+          "audible",
+          "a432",
+          "sub",
+          "harmonic",
+          "the",
+          "body",
+          "s",
+          "own",
+          "measurable",
+          "vibration",
+          "physiological",
+          "tremor",
+          "ballistocardiographic",
+          "micro",
+          "motion",
+          "is",
+          "the",
+          "analog",
+          "twin",
+          "nested",
+          "under",
+          "rodin"
+        ],
+        "values": {
+          "en": "Use when reasoning about touch/haptics from sequence position in erpax — the third A432 render channel that completes colour (cmyk) + sound (notes) into the sight·sound·touch sensory trinity. A horo position decodes to a haptic pulse (a sub-audible A432 sub-harmonic); the body's own measurable vibration (physiological tremor, ballistocardiographic micro-motion) is the analog twin. Nested under rodin."
         }
       }
     ]
@@ -82306,6 +82961,97 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "access",
+    "path": "security/remote/access",
+    "translations": [
+      {
+        "key": "name",
+        "source": "remote-access",
+        "uuid": "54bee7b5-40f6-805f-a486-bdff9845c3b9",
+        "words": [
+          "remote",
+          "access"
+        ],
+        "values": {
+          "en": "remote-access"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when proving a remote-access product's PUBLIC vulnerability classes with erpax's own trust primitives — each flaw is a missing primitive and the verdict is a receipted, content-addressed proof. The AnyDesk case (SYSTEM file-read LPE, a stolen code-signing cert, coarse unattended-access) folded onto sandbox, tamper-cost and the receipt. Defensive modeling over public CVEs, never an exploit.",
+        "uuid": "5fff9377-7451-81d2-82ed-44bfb7dad34d",
+        "words": [
+          "use",
+          "when",
+          "proving",
+          "a",
+          "remote",
+          "access",
+          "product",
+          "s",
+          "public",
+          "vulnerability",
+          "classes",
+          "with",
+          "erpax",
+          "s",
+          "own",
+          "trust",
+          "primitives",
+          "each",
+          "flaw",
+          "is",
+          "a",
+          "missing",
+          "primitive",
+          "and",
+          "the",
+          "verdict",
+          "is",
+          "a",
+          "receipted",
+          "content",
+          "addressed",
+          "proof",
+          "the",
+          "anydesk",
+          "case",
+          "system",
+          "file",
+          "read",
+          "lpe",
+          "a",
+          "stolen",
+          "code",
+          "signing",
+          "cert",
+          "coarse",
+          "unattended",
+          "access",
+          "folded",
+          "onto",
+          "sandbox",
+          "tamper",
+          "cost",
+          "and",
+          "the",
+          "receipt",
+          "defensive",
+          "modeling",
+          "over",
+          "public",
+          "cves",
+          "never",
+          "an",
+          "exploit"
+        ],
+        "values": {
+          "en": "Use when proving a remote-access product's PUBLIC vulnerability classes with erpax's own trust primitives — each flaw is a missing primitive and the verdict is a receipted, content-addressed proof. The AnyDesk case (SYSTEM file-read LPE, a stolen code-signing cert, coarse unattended-access) folded onto sandbox, tamper-cost and the receipt. Defensive modeling over public CVEs, never an exploit."
+        }
+      }
+    ]
+  },
+  {
     "atom": "seed",
     "path": "seed",
     "translations": [
@@ -83418,7 +84164,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when adding, finding, or debugging erpax business logic that is NOT schema — pure tested functions, content-uuid math, integrity/tamper-cost, the agent society, domain export/import — the society's organ-body, one folder per organ, called by the collections/access/hooks.",
-        "uuid": "7dc5c759-2ddd-8185-be66-bd699d3e8e81",
+        "uuid": "0952c3aa-18c9-8683-a8a7-ea8023c72d37",
         "words": [
           "use",
           "when",
@@ -83728,7 +84474,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when granting, checking, or revoking uuid-based RBAC access (Law 59) — share bindings (granteeUuid, accessRole, targetUuid) per tenant over content-uuid-addressed resources; the access-control source of truth checkShare reads at read time, with each grant/revoke attested by a chain-linked audit leaf. Revocation is a soft flag, never a delete. The uuid-share RBAC binding collection.",
-        "uuid": "7b584612-d6b8-898b-9691-9c15435771df",
+        "uuid": "8aae5dec-19ce-8719-b808-aa4aecfe3446",
         "words": [
           "use",
           "when",
@@ -84185,7 +84931,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reconciling GDPR erasure with content-addressing — a content-uuid is f(content) and the chain needs the row, so you cannot delete. Crypto-shred = encrypt erasable fields per subject, and erasure = destroy the key (not the row). The row+uuid persist (chain/tamper-evidence intact), the plaintext is unrecoverable. Matter-twin shred/index.ts.",
-        "uuid": "47d1fb3b-199c-8c96-9d31-43f4fbe84aac",
+        "uuid": "09134ad8-1051-8ba0-a5eb-107aac52a265",
         "words": [
           "use",
           "when",
@@ -85076,7 +85822,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about erpax building itself — the autonomous loop where the agent society (convened at chat) reads its own akashic record and advances one gate-verified step at a time, driving the aura to whole and the collections to their dense core with minimal human footprint. The self-building loop; matter-twin society/build.mjs.",
-        "uuid": "25e5e826-4e71-8f3e-9edc-937b910dc5a6",
+        "uuid": "b9a162e6-58aa-82be-ba0c-296be967a4eb",
         "words": [
           "use",
           "when",
@@ -87737,7 +88483,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when events must move as one continuous tamper-proof current rather than discrete steps — turning the event bus into a typed AsyncIterable, windowing it (tumbling/sliding/session), composing blocks stream-to-stream, and verifying causal Lamport order plus the streamUuid hash-chain.",
-        "uuid": "8cc0867d-97f4-849b-a6f4-33bca6cddb7f",
+        "uuid": "f3782a70-e280-84d7-b66a-e84b0a83e168",
         "words": [
           "use",
           "when",
@@ -89987,7 +90733,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "tamper",
-        "uuid": "102ca891-9405-86a5-a8e6-aff9a278513b",
+        "uuid": "b2561e95-25eb-86e6-83db-db305160997a",
         "words": [
           "tamper"
         ],
@@ -90046,7 +90792,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "tamper-cost",
-        "uuid": "4fbb21bb-b4df-8dec-b00d-ddf4f059c6af",
+        "uuid": "81b9fe2c-351e-839e-975b-c9a4a80de7a3",
         "words": [
           "tamper",
           "cost"
@@ -90058,7 +90804,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about how much it costs to tamper a zero-entropy (content-addressed, keyless) erpax store — second-preimage on the digest vs. rewriting the whole all-directions-wired graph and forging the external anchor. Integrity, not secrecy; the protection is the computational impossibility of changing all coherently. Matter-twin tamper-cost/index.ts.",
-        "uuid": "66c83396-3267-8a5a-8c79-55545399506a",
+        "uuid": "b29b06e0-f8fa-8cc6-b19e-0bc8e34327e9",
         "words": [
           "use",
           "when",
@@ -91632,7 +92378,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when creating or scoping a tenant — the GDPR-controller boundary for all access, localization cascade (BCP-47/ECMA-402), accounting framework (IFRS/GAAP/fiscal-year), reporting currency (ISO 4217), and integration secrets (Stripe, Resend, MCP). The multi-tenant root entity and access-scope boundary.",
-        "uuid": "54842407-0d43-880f-aee1-74c26d682e1f",
+        "uuid": "b8812f83-67ec-8b60-b8dd-c4f44020330b",
         "words": [
           "use",
           "when",
@@ -93631,7 +94377,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the two-directional collapse that closes into a donut — erpax falls into Payload (collections → canonical core) AND Payload falls into erpax (primitives are atoms; domains extract as @erpax/* plugins). The implosion (collapse) and the explosion (supernova) are one toroidal flow — the Rodin vortex. The shape of the whole.",
-        "uuid": "3d02955a-7aaa-822b-ab87-5c30debc3b8f",
+        "uuid": "2020275c-3f88-8805-b706-3e2aa764263e",
         "words": [
           "use",
           "when",
@@ -95128,7 +95874,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a crop is supported vertically — trellising/staking holds vining or heavy crops (tomatoes, cucumbers, pole beans, peas) off the ground for airflow, quality, and harvest access; methods scale from stake-and-weave (basket weave) for determinates to lower-and-lean string for indeterminates. Vertical support trades labor/materials for yield, quality, and disease reduction.",
-        "uuid": "3473760e-4175-88ef-b80e-c3685d90892d",
+        "uuid": "9e87c857-8bfe-8ebb-9e82-3c495206fd47",
         "words": [
           "use",
           "when",
@@ -95342,7 +96088,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about how one node is told three times and rendered once — matter (index.ts inline docs) · antimatter (SKILL.md) · backend (the generated payload-types schema), fused into VitePress (the speech). The doc-scale DRY law — the page derives from the code and the backend, never restated.",
-        "uuid": "ff976f58-3f70-868f-bd9c-1af942566c52",
+        "uuid": "fbdb4a5b-db8d-819a-973a-fda564f022ea",
         "words": [
           "use",
           "when",
@@ -96723,7 +97469,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when managing authenticated actors — employees, agents, customers, authors — their cross-tenant roles, held competencies, per-user locale/display config, email login, and access credentials. The typeless universal actor and identity root.",
-        "uuid": "2e60868d-d741-8978-888c-9bd4bdf1a7e2",
+        "uuid": "7ec2a79a-2e20-847e-9bc2-db2d8e2eb5f1",
         "words": [
           "use",
           "when",
@@ -97146,7 +97892,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when content, search, locale, version, or CSS colour must agree about what a record IS — they all DRY-derive from ONE content projection through the content-uuid. The uuid singularity realised: project(record) returns identity (uuid), searchable text (multi-search), and a deterministic colour (CSS) from the same bytes; per-locale content gives the per-locale uuid, and a version is the uuid in time.",
-        "uuid": "c4b5a492-4e14-8c76-8190-1f1623aa00cb",
+        "uuid": "2f9332b9-6551-8660-b1f4-5628ef3a4d80",
         "words": [
           "use",
           "when",
@@ -98109,7 +98855,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about erpax's version — it is CONTENT-ADDRESSED and skill-based, a function of the corpus aura (the hash over every atom's content-uuid), so the same skills produce the same version on every clone; automatic tags follow the corpus, and drift or forgery between a tag and the code is caught. The git tag that cannot lie about what it contains.",
-        "uuid": "c9638bdc-dbae-8749-94b8-6f7deadf5718",
+        "uuid": "f6891dee-2502-8d2a-b252-dd90d8bbae12",
         "words": [
           "use",
           "when",
@@ -101395,7 +102141,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the criterion that decides what is canonical — zero entropy wins: of all forms of a thing, the LOWEST-entropy one (most ordered, DRY, integer, content-addressed) is the truth. The source erpax descends from (ceccec/zeropoint-node, the a432/vortex prior art): irrationality collapses to integer resonance (rodin digital-root, the horo ring), sprawl collapses to the uuid singularity, duplicates merge to one. The 0 everything radiates from and returns to.",
-        "uuid": "928b4667-6e76-8038-81ee-57d4d92bbc6b",
+        "uuid": "aad1bffe-5663-87a9-9011-0c716b785334",
         "words": [
           "use",
           "when",
@@ -101509,4 +102255,4 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
   }
 ]
 
-export const TRANSLATIONS_COUNT = 2166
+export const TRANSLATIONS_COUNT = 2174

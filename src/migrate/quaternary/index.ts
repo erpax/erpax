@@ -20,8 +20,9 @@
  * @audit the folder law is computed from the live tree, never hand-maintained
  * @see ../ (the migrating skills) · ../../aura (the link gap)
  */
-import { readdirSync, lstatSync } from 'node:fs'
+import { readdirSync } from 'node:fs'
 import { join, extname } from 'node:path'
+import { isRealDir } from '@/aura'
 
 /** Canonical word-atom files -- one per role, per folder. */
 export const CANONICAL = ['SKILL.md', 'index.ts', 'test.ts', 'translations.ts', 'seed.ts'] as const
@@ -43,15 +44,6 @@ const isAllowed = (file: string): boolean =>
 export interface Violation {
   readonly folder: string
   readonly file: string
-}
-
-const isRealDir = (p: string): boolean => {
-  try {
-    const s = lstatSync(p)
-    return s.isDirectory() && !s.isSymbolicLink()
-  } catch {
-    return false
-  }
 }
 
 /** Every file, in ANY folder, that is not allowed -- the merge-by-extension queue. */

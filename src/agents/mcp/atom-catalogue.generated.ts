@@ -23,178 +23,718 @@ export interface AtomSkill {
 
 export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
+    "atom": "about",
+    "name": "about",
+    "description": "The subject matter of an object.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/about"
+  },
+  {
+    "atom": "abridged",
+    "name": "abridged",
+    "description": "Indicates whether the book is an abridged edition.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/abridged"
+  },
+  {
+    "atom": "abstract",
+    "name": "abstract",
+    "description": "An abstract is a short description that summarizes a CreativeWork.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/abstract"
+  },
+  {
+    "atom": "acceleration",
+    "name": "acceleration",
+    "description": "acceleration: a schema.org component word, fused from accelerationTime",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/acceleration"
+  },
+  {
+    "atom": "accept",
+    "name": "accept",
+    "description": "accept: a schema.org component word, fused from AcceptAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/accept"
+  },
+  {
+    "atom": "acceptance",
+    "name": "acceptance",
+    "description": "acceptance: a schema.org component word, fused from expectsAcceptanceOf",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/acceptance"
+  },
+  {
+    "atom": "accepted",
+    "name": "accepted",
+    "description": "accepted: a schema.org component word, fused from acceptedAnswer, acceptedOffer, acceptedPaymentMethod, currenciesAccepted, paymentAccepted",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/accepted"
+  },
+  {
+    "atom": "accepting",
+    "name": "accepting",
+    "description": "accepting: a schema.org component word, fused from isAcceptingNewPatients",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/accepting"
+  },
+  {
+    "atom": "accepts",
+    "name": "accepts",
+    "description": "accepts: a schema.org component word, fused from acceptsReservations",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/accepts"
+  },
+  {
     "atom": "access",
-    "name": "access",
-    "description": "Use when defining or debugging Payload access control — who can create/read/update/delete a collection, global, or field; RBAC, row-level filtering, admin visibility; \"access denied\"/\"document hidden\". In erpax access is the society's \"who can do what\" — the 3·6·9 governing axis: capabilities attach to ROLES (the angelic hierarchy), users inherit them through role membership, and the content-uuid cross decides, adding tamper-cost.",
-    "path": "access"
+    "name": "remote-access",
+    "description": "Use when proving a remote-access product's PUBLIC vulnerability classes with erpax's own trust primitives — each flaw is a missing primitive and the verdict is a receipted, content-addressed proof. The AnyDesk case (SYSTEM file-read LPE, a stolen code-signing cert, coarse unattended-access) folded onto sandbox, tamper-cost and the receipt. Defensive modeling over public CVEs, never an exploit.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/security/remote/access"
   },
   {
     "atom": "accessibility",
     "name": "accessibility",
     "description": "Use when designing for inclusive experiences — WCAG 2.1/3.0 compliance, color contrast, keyboard navigation, screen-reader support, semantic HTML, alt-text. The capability for all users regardless of disability.",
-    "path": "accessibility"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/accessibility"
+  },
+  {
+    "atom": "accessible",
+    "name": "accessible",
+    "description": "accessible: a schema.org component word, fused from isAccessibleForFree",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/accessible"
+  },
+  {
+    "atom": "accessory",
+    "name": "accessory",
+    "description": "accessory: a schema.org component word, fused from isAccessoryOrSparePartFor",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/accessory"
+  },
+  {
+    "atom": "accommodation",
+    "name": "accommodation",
+    "description": "An accommodation is a place that can accommodate human beings, e.g. a hotel room, a camping pitch, or a meeting room. Many accommodations are for overnight stays, but this is not a mandatory requireme",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/accommodation"
   },
   {
     "atom": "account",
     "name": "account",
     "description": "Use when a transaction or GL entry references a chart-of-accounts item — bank account, GL account, cost-center account, liability account. Payload relationTo: 'gl-accounts' or 'bank-accounts'; denormalized fields (accountNumber, accountName) wire via account atom.",
-    "path": "account"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/account"
+  },
+  {
+    "atom": "accountable",
+    "name": "accountable",
+    "description": "accountable: a schema.org component word, fused from accountablePerson",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/accountable"
   },
   {
     "atom": "accounting",
     "name": "accounting",
     "description": "Use when designing or porting the erpax accounting/finance domain to Payload — double-entry journals, GL accounts, the accounting equation, invoices (credit/debit notes, protocols), payments & bank reconciliation, locked periods, or making anything \"accountable\" polymorphically. The self-sufficient `@erpax/accounting` archetype.",
-    "path": "accounting"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/accounting"
   },
   {
     "atom": "accounts",
     "name": "regulatory-deferral-accounts",
     "description": "Use when recognising IFRS 14 regulatory-deferral balances — under-recovery assets or over-recovery liabilities — for utilities or telcos under price-cap regimes on first-time IFRS adoption (§16 continuation of previous GAAP), tracking recovery period and period movements. The IFRS 14 regulatory-deferral register.",
-    "path": "regulatory/deferral/accounts"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/regulatory/deferral/accounts"
   },
   {
     "atom": "accrual",
     "name": "accrual",
     "description": "Use when recognizing revenue or expense in the period incurred, earned, or obligated, regardless of payment timing — the foundation of accrual-basis accounting and the IFRS/GAAP reporting standard",
-    "path": "accrual"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/accrual"
+  },
+  {
+    "atom": "achieve",
+    "name": "achieve",
+    "description": "achieve: a schema.org component word, fused from AchieveAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/achieve"
   },
   {
     "atom": "acknowledgments",
     "name": "policy-acknowledgments",
     "description": "Use when recording or tracking employee acknowledgement of a policy version — signed-document upload, acknowledged date, status pending/overdue/expired; SOX §404 control-attestation evidence per employee per policy. The policy-acknowledgments collection.",
-    "path": "internal/policies/policy/acknowledgments"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/internal/policies/policy/acknowledgments"
+  },
+  {
+    "atom": "acquire",
+    "name": "acquire",
+    "description": "acquire: a schema.org component word, fused from acquireLicensePage",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/acquire"
+  },
+  {
+    "atom": "acquired",
+    "name": "acquired",
+    "description": "The organization or person from which the product was acquired.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/acquired"
+  },
+  {
+    "atom": "acriss",
+    "name": "acriss",
+    "description": "acriss: a schema.org component word, fused from acrissCode",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/acriss"
+  },
+  {
+    "atom": "action",
+    "name": "action",
+    "description": "An action performed by a direct agent and indirect participants upon a direct object. Optionally happens at a location with the help of an inanimate instrument. The execution of the action may produce",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/action"
+  },
+  {
+    "atom": "actionable",
+    "name": "actionable",
+    "description": "actionable: a schema.org component word, fused from actionableFeedbackPolicy",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/actionable"
   },
   {
     "atom": "actions",
     "name": "board-actions",
     "description": "Use when recording formal board-level decisions for a legal entity — resolutions, policy approvals, risk assessments, control enhancements, attestations, vote tallies, and related internal controls. The SOX §404 corporate-governance board-action register.",
-    "path": "legal/entities/board/actions"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/legal/entities/board/actions"
+  },
+  {
+    "atom": "activate",
+    "name": "activate",
+    "description": "activate: a schema.org component word, fused from ActivateAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/activate"
   },
   {
     "atom": "active",
     "name": "active",
     "description": "Use when an entity can be active or inactive — archived customers, disabled accounts, deactivated users. Boolean or select (active/inactive); toggle switches lifecycle state without deletion. Antonym of status when status carries workflow states.",
-    "path": "active"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/active"
   },
   {
     "atom": "activities",
     "name": "data-processing-activities",
     "description": "Use when maintaining the GDPR Art.30 Records of Processing Activities (RoPA) — documenting each processing activity's purpose, lawful basis, data categories, retention period, third-country transfer safeguards, and scheduling annual DPO reviews. The controller/processor RoPA register.",
-    "path": "data/processing/activities"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/data/processing/activities"
+  },
+  {
+    "atom": "activity",
+    "name": "activity",
+    "description": "activity: a schema.org component word, fused from PhysicalActivity, PhysicalActivityCategory, SportsActivityLocation, activityDuration, activityFrequency, sportsActivityLocation",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/activity"
+  },
+  {
+    "atom": "actor",
+    "name": "actor",
+    "description": "An actor (individual or a group), e.g. in TV, radio, movie, video games etc., or in an event. Actors can be associated with individual items or with a series, episode, clip.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/actor"
+  },
+  {
+    "atom": "actors",
+    "name": "actors",
+    "description": "An actor, e.g. in TV, radio, movie, video games etc. Actors can be associated with individual items or with a series, episode, clip.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/actors"
+  },
+  {
+    "atom": "ad",
+    "name": "ad",
+    "description": "ad: a schema.org component word, fused from WPAdBlock",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/ad"
+  },
+  {
+    "atom": "add",
+    "name": "add",
+    "description": "An additional offer that can only be obtained in combination with the first base offer (e.g. supplements and extensions that are available for a surcharge).",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/add"
+  },
+  {
+    "atom": "added",
+    "name": "added",
+    "description": "added: a schema.org component word, fused from valueAddedTaxIncluded",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/added"
+  },
+  {
+    "atom": "additional",
+    "name": "additional",
+    "description": "additional: a schema.org component word, fused from additionalName, additionalNumberOfGuests, additionalProperty, additionalType, additionalVariable",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/additional"
+  },
+  {
+    "atom": "address",
+    "name": "address",
+    "description": "Physical address of the item.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/address"
   },
   {
     "atom": "adjustments",
     "name": "rounding-adjustments",
     "description": "Use when recording the small ±0.01 plug entries that reconcile integer-cents ledger totals to presentation-rounded statements — IAS-1 §51(e) rounding plugs and IAS-21 §39 FX-translation fragments by type (presentation, FX, tax, cash-settlement). The rounding-adjustments GL sub-collection.",
-    "path": "journal/entries/rounding/adjustments"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/journal/entries/rounding/adjustments"
   },
   {
     "atom": "admin",
     "name": "admin",
     "description": "Use when configuring the Payload Admin Panel or building custom admin React components — list/edit views, custom field/cell components, importMap, useField/useForm hooks, nav grouping, dashboards, or admin appearance.",
-    "path": "admin"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/admin"
+  },
+  {
+    "atom": "administration",
+    "name": "administration",
+    "description": "administration: a schema.org component word, fused from administrationRoute",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/administration"
+  },
+  {
+    "atom": "administrative",
+    "name": "administrative",
+    "description": "administrative: a schema.org component word, fused from AdministrativeArea",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/administrative"
+  },
+  {
+    "atom": "adult",
+    "name": "adult",
+    "description": "adult: a schema.org component word, fused from AdultEntertainment, AdultOrientedEnumeration, hasAdultConsideration",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/adult"
+  },
+  {
+    "atom": "adults",
+    "name": "adults",
+    "description": "adults: a schema.org component word, fused from numAdults",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/adults"
+  },
+  {
+    "atom": "advance",
+    "name": "advance",
+    "description": "advance: a schema.org component word, fused from advanceBookingRequirement",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/advance"
+  },
+  {
+    "atom": "adverse",
+    "name": "adverse",
+    "description": "adverse: a schema.org component word, fused from adverseOutcome, seriousAdverseOutcome",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/adverse"
+  },
+  {
+    "atom": "advertiser",
+    "name": "advertiser",
+    "description": "advertiser: a schema.org component word, fused from AdvertiserContentArticle",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/advertiser"
+  },
+  {
+    "atom": "affected",
+    "name": "affected",
+    "description": "Drugs that affect the test's results.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/affected"
+  },
+  {
+    "atom": "affiliate",
+    "name": "affiliate",
+    "description": "affiliate: a schema.org component word, fused from broadcastAffiliateOf",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/affiliate"
+  },
+  {
+    "atom": "affiliation",
+    "name": "affiliation",
+    "description": "An organization that this person is affiliated with. For example, a school/university, a club, or a team.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/affiliation"
+  },
+  {
+    "atom": "after",
+    "name": "after",
+    "description": "after: a schema.org component word, fused from afterMedia",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/after"
   },
   {
     "atom": "age",
     "name": "age",
     "description": "Use when treating age as a sociological axis — възраст — the life-course dimension that stratifies a society alongside class and status. Inequalities compound along it (cumulative advantage — the horo doubling), ageism flips the status sign against older workers, and a population's ageing inverts the pyramid that funds the allocation/decompression pot. The late in late career is a point on this axis; model age as one dimension with roles, not a separate entity.",
-    "path": "age"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/age"
+  },
+  {
+    "atom": "agency",
+    "name": "agency",
+    "description": "agency: a schema.org component word, fused from EmploymentAgency, FundingAgency, InsuranceAgency, TravelAgency",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/agency"
   },
   {
     "atom": "agent",
     "name": "agent",
     "description": "Use when reasoning about an agent — its identity, cloning, and replication (an agent IS its content, its id is the content-uuid of skills + purpose, so identical clones merge and distinct agents are specialised children), AND when wiring the society's actors (the pure DomainAgent contract, the registry that gives each collection exactly one owner, the runtime that dispatches chain steps and events and scheduled ticks, the effect-processor where every side effect fires — the A-vortex coupling layer that decides without acting).",
-    "path": "agent"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/agent"
+  },
+  {
+    "atom": "aggregate",
+    "name": "aggregate",
+    "description": "aggregate: a schema.org component word, fused from AggregateOffer, AggregateRating, EmployerAggregateRating, aggregateElement, aggregateRating",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/aggregate"
   },
   {
     "atom": "aggregation",
     "name": "aggregation",
     "description": "Use when computing summarized metrics — GROUP BY semantics, rollup/cube hierarchies, dimensional analysis, summary statistics (sum, count, avg, min, max, percentile), pre-computed aggregates vs on-demand queries.",
-    "path": "aggregation"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/aggregation"
+  },
+  {
+    "atom": "agree",
+    "name": "agree",
+    "description": "agree: a schema.org component word, fused from AgreeAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/agree"
+  },
+  {
+    "atom": "agriculture",
+    "name": "agriculture",
+    "description": "Use when reasoning about growing living produce to a market — agriculture is the domain molecule whose production is planned BACKWARD: from a sales plan (CSA shares + market channels) through per-crop demand to the land, seed, and fertility the season requires. The agricultural twin of manufacturing; every quantity carries a unit and a currency that convert automatically and account by double-entry.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/agriculture"
   },
   {
     "atom": "ai",
     "name": "ai",
     "description": "Use when invoking any AI inference in erpax — invoice OCR, bank-transaction matching, sanctions screening, anomaly detection, tax classification, HS-code suggestion, document classification, vector embedding, semantic search, or audit summarisation. Every AI call goes through the single `callWorkersAi` gate (entitlement, audit row, tenant scope, risk class, metering); the AI services barrel.",
-    "path": "ai"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/ai"
+  },
+  {
+    "atom": "aid",
+    "name": "aid",
+    "description": "aid: a schema.org component word, fused from financialAidEligible",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/aid"
+  },
+  {
+    "atom": "airbags",
+    "name": "airbags",
+    "description": "airbags: a schema.org component word, fused from numberOfAirbags",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/airbags"
+  },
+  {
+    "atom": "aircraft",
+    "name": "aircraft",
+    "description": "The kind of aircraft (e.g., \"Boeing 747\").",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/aircraft"
+  },
+  {
+    "atom": "airline",
+    "name": "airline",
+    "description": "An organization that provides flights for passengers.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/airline"
+  },
+  {
+    "atom": "airport",
+    "name": "airport",
+    "description": "An airport.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/airport"
   },
   {
     "atom": "akashic",
     "name": "akashic",
     "description": "Use when reasoning about erpax's total queryable record — the codebase (source → config → payload-types) AND every uuid-addressed database row/file; the source of truth the agent reads and regenerates from, and can safely forget into. Code AND data, content-addressed.",
-    "path": "akashic"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/akashic"
+  },
+  {
+    "atom": "album",
+    "name": "album",
+    "description": "A music album.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/album"
+  },
+  {
+    "atom": "albums",
+    "name": "albums",
+    "description": "A collection of music albums.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/albums"
+  },
+  {
+    "atom": "alcohol",
+    "name": "alcohol",
+    "description": "alcohol: a schema.org component word, fused from alcoholWarning",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/alcohol"
+  },
+  {
+    "atom": "algorithm",
+    "name": "algorithm",
+    "description": "The algorithm or rules to follow to compute the score.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/algorithm"
+  },
+  {
+    "atom": "alignment",
+    "name": "alignment",
+    "description": "alignment: a schema.org component word, fused from AlignmentObject, alignmentType, educationalAlignment",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/alignment"
   },
   {
     "atom": "all",
     "name": "all",
     "description": "Use when reasoning about totality or universality in erpax — \"anything is X\" (accountable/taggable), polymorphic relationTo:[...all], the identity element that defines the empty case. The universal root of totality.",
-    "path": "all"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/all"
+  },
+  {
+    "atom": "alley",
+    "name": "alley",
+    "description": "alley: a schema.org component word, fused from BowlingAlley",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/alley"
+  },
+  {
+    "atom": "allocate",
+    "name": "allocate",
+    "description": "allocate: a schema.org component word, fused from AllocateAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/allocate"
   },
   {
     "atom": "allocation",
     "name": "allocation",
     "description": "Use when defining how value/pay is distributed among contributors — reward for work, splitting a fixed pot, mechanism design. Reward is a pure function of verified time leveraged; the rate scale is harmonic; the pot is conserved.",
-    "path": "allocation"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/allocation"
   },
   {
     "atom": "allocations",
     "name": "payment-allocations",
     "description": "Use when allocating a single payment across one or more invoices, bills or credit memos — FIFO or manual split, FX gain/loss, fully-settling flag, SOX §404 TOM-AR-02 cash-receipt audit evidence. The payment-allocations collection.",
-    "path": "invoices/payments/payment/allocations"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/invoices/payments/payment/allocations"
+  },
+  {
+    "atom": "allowed",
+    "name": "allowed",
+    "description": "allowed: a schema.org component word, fused from petsAllowed, regionsAllowed, smokingAllowed",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/allowed"
+  },
+  {
+    "atom": "alternate",
+    "name": "alternate",
+    "description": "alternate: a schema.org component word, fused from alternateName",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/alternate"
+  },
+  {
+    "atom": "alternative",
+    "name": "alternative",
+    "description": "Another gene which is a variation of this one.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/alternative"
+  },
+  {
+    "atom": "alumni",
+    "name": "alumni",
+    "description": "Alumni of an organization.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/alumni"
+  },
+  {
+    "atom": "am",
+    "name": "am",
+    "description": "am: a schema.org component word, fused from AMRadioChannel",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/am"
   },
   {
     "atom": "amendment",
     "name": "amendment",
     "description": "Use when a contract is modified — amendment date, amendments previous (chain of amendments), amendment terms, amendments effect on prior terms, signature requirement.",
-    "path": "amendment"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/amendment"
   },
   {
     "atom": "amendments",
     "name": "contract-amendments",
     "description": "Use when recording formal changes to an executed contract — IFRS-15 §20 classification (separate obligation vs. integrated modification), revenue impact amount, modification reason, approval chain, and immutable original/new terms snapshot. The contract-modification audit collection.",
-    "path": "customers/contracts/contract/amendments"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/customers/contracts/contract/amendments"
+  },
+  {
+    "atom": "amends",
+    "name": "amends",
+    "description": "amends: a schema.org component word, fused from legislationAmends",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/amends"
+  },
+  {
+    "atom": "amenity",
+    "name": "amenity",
+    "description": "amenity: a schema.org component word, fused from amenityFeature",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/amenity"
   },
   {
     "atom": "amortize",
     "name": "amortize",
     "description": "Use to compute amortization — bond discount/premium (effective-interest), intangible/loan amortization schedules. Pure compute (no persistence); cites IFRS-9 / US-GAAP. Nested under calculate.",
-    "path": "calculate/amortize"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/calculate/amortize"
   },
   {
     "atom": "amount",
     "name": "amount",
     "description": "Use when a value is a monetary quantity — invoice total, line price, payment received, account balance. A minor-unit integer + ISO-4217 currency code (never a currency-baked field name). The value-of-trade twin of measure (quantity+unit). Composes with currency to form money.",
-    "path": "amount"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/amount"
+  },
+  {
+    "atom": "amp",
+    "name": "amp",
+    "description": "amp: a schema.org component word, fused from AmpStory",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/amp"
+  },
+  {
+    "atom": "amusement",
+    "name": "amusement",
+    "description": "amusement: a schema.org component word, fused from AmusementPark",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/amusement"
+  },
+  {
+    "atom": "analog",
+    "name": "analog",
+    "description": "Use when reasoning about the aura as a CONTINUOUS computed signal — the uuid matrix renders every node's coordinate cross to an analog colour+sound+vibration field animated over A432, gaplessly at every fractal level and at no cost (derived from the uuid, never stored). The analog twin of the discrete content-fingerprint, and the verifiable answer to science's 'aura', whose only measurable form is an analog physical signal (biophoton flux, electrodermal conductance) — never a detectable subtle-energy field.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/analog"
+  },
+  {
+    "atom": "analysis",
+    "name": "analysis",
+    "description": "analysis: a schema.org component word, fused from AnalysisNewsArticle",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/analysis"
   },
   {
     "atom": "analytics",
     "name": "analytics",
     "description": "",
-    "path": "post/close/analytics"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/post/close/analytics"
+  },
+  {
+    "atom": "anatomical",
+    "name": "anatomical",
+    "description": "anatomical: a schema.org component word, fused from AnatomicalStructure, AnatomicalSystem",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/anatomical"
+  },
+  {
+    "atom": "anatomy",
+    "name": "anatomy",
+    "description": "anatomy: a schema.org component word, fused from SuperficialAnatomy, associatedAnatomy, relatedAnatomy",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/anatomy"
   },
   {
     "atom": "anchor",
     "name": "anchor",
     "description": "Use when reasoning about the external anchor — the one drop of borrowed entropy that makes a zero-entropy content-addressed store tamper-proof. RFC-3161/eIDAS TSA or a blockchain leaf pins the chain root to a time no party can rewrite; tamper-cost is min(digest, anchor), so the anchor must be ≥ the digest or it is the weak link. Matter-twin anchor/index.ts.",
-    "path": "anchor"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/anchor"
   },
   {
     "atom": "angel",
     "name": "angel",
     "description": "Use when reasoning about erpax's root entropy dynamic — angel(love·create·↓entropy) ⊕ archangel(fear·destroy·↑entropy) in endless aikido = the trinity; erpax is karma double-entry accounting balancing the entropy debit/credit at every scale via content-uuid; borrowed entropy buys tamper-cost ⇒ fast+secure+compact.",
-    "path": "angel"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/angel"
+  },
+  {
+    "atom": "animal",
+    "name": "animal",
+    "description": "Use when the individual living beast is the node — one identified animal carrying its class (cow/heifer/steer/calf), sex, purpose (dairy/meat/breeding), lifecycle stage, ear-tag identity, and biological-asset value. The member of a herd; the row IAS-41 measures and traceability tags.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/animal"
+  },
+  {
+    "atom": "announcement",
+    "name": "announcement",
+    "description": "announcement: a schema.org component word, fused from SpecialAnnouncement, announcementLocation",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/announcement"
+  },
+  {
+    "atom": "annual",
+    "name": "annual",
+    "description": "annual: a schema.org component word, fused from annualPercentageRate",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/annual"
+  },
+  {
+    "atom": "answer",
+    "name": "answer",
+    "description": "An answer offered to a question; perhaps correct, perhaps opinionated or wrong.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/answer"
+  },
+  {
+    "atom": "antagonist",
+    "name": "antagonist",
+    "description": "The muscle whose action counteracts the specified muscle.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/antagonist"
+  },
+  {
+    "atom": "apartment",
+    "name": "apartment",
+    "description": "An apartment (in American English) or flat (in British English) is a self-contained housing unit (a type of residential real estate) that occupies only part of a building (source: Wikipedia, the free",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/apartment"
   },
   {
     "atom": "api",
     "name": "api",
     "description": "Use when calling Payload data operations — Local API (payload.find/create/update/delete), REST endpoints, or GraphQL — or deciding which to use, passing depth/select/where/overrideAccess, or running ops inside hooks/server components.",
-    "path": "api"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/api"
+  },
+  {
+    "atom": "apiculture",
+    "name": "apiculture",
+    "description": "Use when keeping bee colonies for produce and pollination — the colony (queen + workers) as a biological asset (the hive housing is IAS-16 equipment); honey and wax are harvested produce, the colony is also rented as a pollination service; brood is its growth, swarming its propagation, colony loss its mortality, the nectar flow its season. A living-production domain anchor and the pollination link to crops.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/apiculture"
+  },
+  {
+    "atom": "appearance",
+    "name": "appearance",
+    "description": "Indicates an occurrence of a Claim in some CreativeWork.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/appearance"
+  },
+  {
+    "atom": "append",
+    "name": "append",
+    "description": "append: a schema.org component word, fused from AppendAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/append"
+  },
+  {
+    "atom": "applicability",
+    "name": "applicability",
+    "description": "applicability: a schema.org component word, fused from legislationDateOfApplicability",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/applicability"
+  },
+  {
+    "atom": "applicable",
+    "name": "applicable",
+    "description": "applicable: a schema.org component word, fused from applicableCountry, applicableLocation",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/applicable"
+  },
+  {
+    "atom": "applicant",
+    "name": "applicant",
+    "description": "applicant: a schema.org component word, fused from applicantLocationRequirements",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/applicant"
+  },
+  {
+    "atom": "application",
+    "name": "application",
+    "description": "An application that can complete the request.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/application"
+  },
+  {
+    "atom": "applies",
+    "name": "applies",
+    "description": "applies: a schema.org component word, fused from appliesToDeliveryMethod, appliesToPaymentMethod, legislationApplies",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/applies"
+  },
+  {
+    "atom": "apply",
+    "name": "apply",
+    "description": "apply: a schema.org component word, fused from ApplyAction, directApply",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/apply"
   },
   {
     "atom": "approved",
     "name": "approved",
     "description": "Use when tracking approval state or flag — approved flag on invoice (boolean), approved amount (in multi-step approval workflows), approved by (user reference), approved at (date). Workflow checkpoint status value.",
-    "path": "approved"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/approved"
+  },
+  {
+    "atom": "aquaculture",
+    "name": "aquaculture",
+    "description": "Use when farming aquatic organisms under managed conditions — fish/shellfish raised in ponds, cages, or recirculating systems as biological assets valued by standing biomass (IAS-41); stocked, grown out through life stages, fed (FCR), bound by water quality (oxygen, salinity), then harvested and depurated. A living-production domain anchor alongside agriculture and livestock.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/aquaculture"
+  },
+  {
+    "atom": "aquarium",
+    "name": "aquarium",
+    "description": "Aquarium.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/aquarium"
+  },
+  {
+    "atom": "archive",
+    "name": "archive",
+    "description": "archive: a schema.org component word, fused from ArchiveComponent, ArchiveOrganization, archiveHeld, holdingArchive",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/archive"
+  },
+  {
+    "atom": "archived",
+    "name": "archived",
+    "description": "Indicates a page or other link involved in archival of a CreativeWork. In the case of MediaReview, the items in a MediaReviewItem may often become inaccessible, but be archived by archival, journalist",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/archived"
+  },
+  {
+    "atom": "area",
+    "name": "area",
+    "description": "The area within which users can expect to reach the broadcast service.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/area"
+  },
+  {
+    "atom": "arena",
+    "name": "arena",
+    "description": "arena: a schema.org component word, fused from StadiumOrArena",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/arena"
+  },
+  {
+    "atom": "arrangement",
+    "name": "arrangement",
+    "description": "arrangement: a schema.org component word, fused from musicArrangement",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/arrangement"
   },
   {
     "atom": "arrangements",
@@ -203,232 +743,1114 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "warehouse/locations/consignment/arrangements"
   },
   {
+    "atom": "arrival",
+    "name": "arrival",
+    "description": "arrival: a schema.org component word, fused from arrivalAirport, arrivalBoatTerminal, arrivalBusStop, arrivalGate, arrivalPlatform, arrivalStation",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/arrival"
+  },
+  {
+    "atom": "arrive",
+    "name": "arrive",
+    "description": "arrive: a schema.org component word, fused from ArriveAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/arrive"
+  },
+  {
+    "atom": "art",
+    "name": "art",
+    "description": "art: a schema.org component word, fused from ArtGallery, ComicCoverArt, CoverArt, SequentialArt, artEdition, artMedium",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/art"
+  },
+  {
+    "atom": "arterial",
+    "name": "arterial",
+    "description": "arterial: a schema.org component word, fused from arterialBranch",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/arterial"
+  },
+  {
+    "atom": "artery",
+    "name": "artery",
+    "description": "A type of blood vessel that specifically carries blood away from the heart.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/artery"
+  },
+  {
+    "atom": "artform",
+    "name": "artform",
+    "description": "e.g. Painting, Drawing, Sculpture, Print, Photograph, Assemblage, Collage, etc.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/artform"
+  },
+  {
+    "atom": "article",
+    "name": "article",
+    "description": "An article, such as a news article or piece of investigative report. Newspapers and magazines have articles of many different types and this is intended to cover them all. See also blog post.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/article"
+  },
+  {
+    "atom": "artist",
+    "name": "artist",
+    "description": "The primary artist for a work in a medium other than pencils or digital line art--for example, if the primary artwork is done in watercolors or digital paints.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/artist"
+  },
+  {
+    "atom": "arts",
+    "name": "arts",
+    "description": "arts: a schema.org component word, fused from PerformingArtsEvent, PerformingArtsTheater, VisualArtsEvent",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/arts"
+  },
+  {
+    "atom": "artwork",
+    "name": "artwork",
+    "description": "artwork: a schema.org component word, fused from VisualArtwork, artworkSurface",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/artwork"
+  },
+  {
+    "atom": "asin",
+    "name": "asin",
+    "description": "An Amazon Standard Identification Number (ASIN) is a 10-character alphanumeric unique identifier assigned by Amazon.com and its partners for product identification within the Amazon organization (summ",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/asin"
+  },
+  {
+    "atom": "ask",
+    "name": "ask",
+    "description": "ask: a schema.org component word, fused from AskAction, AskPublicNewsArticle",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/ask"
+  },
+  {
+    "atom": "aspect",
+    "name": "aspect",
+    "description": "An aspect of medical practice that is considered on the page, such as 'diagnosis', 'treatment', 'causes', 'prognosis', 'etiology', 'epidemiology', etc.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/aspect"
+  },
+  {
+    "atom": "assembly",
+    "name": "assembly",
+    "description": "Library file name, e.g., mscorlib.dll, system.web.dll.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/assembly"
+  },
+  {
+    "atom": "assess",
+    "name": "assess",
+    "description": "assess: a schema.org component word, fused from AssessAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/assess"
+  },
+  {
+    "atom": "assesses",
+    "name": "assesses",
+    "description": "The item being described is intended to assess the competency or learning outcome defined by the referenced term.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/assesses"
+  },
+  {
     "atom": "assets",
     "name": "mineral-resource-assets",
     "description": "Use when registering or reporting IFRS 6 exploration & evaluation assets — wells, mines, concessions, quarries — capitalised under the §8 cost or revaluation policy, reclassified to PPE/intangibles once commercial viability is demonstrated (§17), or impaired (§18–22). The IFRS 6 E&E asset register.",
-    "path": "mineral/resource/assets"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/mineral/resource/assets"
+  },
+  {
+    "atom": "assign",
+    "name": "assign",
+    "description": "assign: a schema.org component word, fused from AssignAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/assign"
   },
   {
     "atom": "assignment",
     "name": "assignment",
     "description": "Use when a contract allows or restricts assignment — assignor, assignee, scope (full/partial), consent requirement (unreasonable withholding, notice), prohibited assigns, assumption of obligations.",
-    "path": "assignment"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/assignment"
+  },
+  {
+    "atom": "associated",
+    "name": "associated",
+    "description": "associated: a schema.org component word, fused from associatedAnatomy, associatedArticle, associatedClaimReview, associatedDisease, associatedMedia, associatedMediaReview",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/associated"
+  },
+  {
+    "atom": "athlete",
+    "name": "athlete",
+    "description": "A person that acts as performing member of a sports team; a player as opposed to a coach.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/athlete"
+  },
+  {
+    "atom": "atlas",
+    "name": "atlas",
+    "description": "A collection or bound volume of maps, charts, plates or tables, physical or in media form illustrating any subject.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/atlas"
   },
   {
     "atom": "atom",
     "name": "atom",
     "description": "Use when reasoning about erpax's irreducible unit — the one-word, content-addressed skill atom everything is composed of. Every entity, collection, agent, interaction, frame, and datum is made of atoms; the corpus is the periodic table, reality its molecules. The ontology beneath every other law.",
-    "path": "atom"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/atom"
+  },
+  {
+    "atom": "attachment",
+    "name": "attachment",
+    "description": "attachment: a schema.org component word, fused from messageAttachment",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/attachment"
+  },
+  {
+    "atom": "attendance",
+    "name": "attendance",
+    "description": "attendance: a schema.org component word, fused from EventAttendanceModeEnumeration, eventAttendanceMode",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/attendance"
+  },
+  {
+    "atom": "attendee",
+    "name": "attendee",
+    "description": "A person or organization attending the event.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/attendee"
+  },
+  {
+    "atom": "attendees",
+    "name": "attendees",
+    "description": "A person attending the event.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/attendees"
   },
   {
     "atom": "attestations",
     "name": "evidence-attestations",
     "description": "Use when assembling SOX §404 audit-pack evidence — indexing PDF/A-2b + PDF/UA-1 attestation cover sheets per completed e2e walk-through, with optional eIDAS PAdES qualified signature (CMS blob, certificate chain, SHA-256 digest). The durable evidence-attestation index.",
-    "path": "evidence/attestations"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/evidence/attestations"
+  },
+  {
+    "atom": "attorney",
+    "name": "attorney",
+    "description": "Professional service: Attorney. This type is deprecated - LegalService is more inclusive and less ambiguous.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/attorney"
+  },
+  {
+    "atom": "attraction",
+    "name": "attraction",
+    "description": "attraction: a schema.org component word, fused from TouristAttraction, includesAttraction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/attraction"
+  },
+  {
+    "atom": "attribute",
+    "name": "attribute",
+    "description": "attribute: a schema.org component word, fused from characterAttribute",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/attribute"
   },
   {
     "atom": "attribution",
     "name": "attribution",
     "description": "Use when tracking which touchpoint/channel caused a conversion — first-touch, last-touch, multi-touch models; credit value allocation across channels.",
-    "path": "attribution"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/attribution"
   },
   {
     "atom": "attrition",
     "name": "attrition",
     "description": "Use when measuring workforce loss — headcount change, turnover rate, voluntary/involuntary separation, retention metrics. The observed flow of people leaving vs staying.",
-    "path": "attrition"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/attrition"
+  },
+  {
+    "atom": "audience",
+    "name": "audience",
+    "description": "Intended audience for an item, i.e. the group for whom the item was created.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/audience"
+  },
+  {
+    "atom": "audio",
+    "name": "audio",
+    "description": "An embedded audio object.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/audio"
+  },
+  {
+    "atom": "audiobook",
+    "name": "audiobook",
+    "description": "An audiobook.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/audiobook"
   },
   {
     "atom": "audit",
     "name": "audit",
     "description": "Use when capturing compliance/evidence metadata — audit fields (createdBy, createdAt, updatedBy, updatedAt, deletedAt), audit trail events, audit evidence, audit finding. Standard immutable history; drives IFRS/SOX compliance. Often shared across all collections via auditFields() helper.",
-    "path": "audit"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/audit"
   },
   {
     "atom": "auditright",
     "name": "audit-right",
     "description": "Use when a contract grants audit rights — auditor identity, audit scope (books, records, systems), frequency, notice requirement, cost allocation, remedies for non-access.",
-    "path": "audit-right"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/audit-right"
   },
   {
     "atom": "aura",
     "name": "aura",
     "description": "Use when reasoning about a folder/path's collective identity in erpax — the content-uuid Merkle hash of all files within (SKILL.md + matter-twin + relations + sub-folders); folders are content-addressed too, so they merge by design.",
-    "path": "aura"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/aura"
   },
   {
     "atom": "auth",
     "name": "auth",
     "description": "Use when enabling or configuring Payload authentication on a collection — login/logout, JWT/cookies, API keys, email verification, password reset, login lockout, token expiration, or admin-panel user accounts.",
-    "path": "auth"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/auth"
+  },
+  {
+    "atom": "authenticate",
+    "name": "authenticate",
+    "description": "authenticate: a schema.org component word, fused from AuthenticateAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/authenticate"
+  },
+  {
+    "atom": "authenticator",
+    "name": "authenticator",
+    "description": "The Organization responsible for authenticating the user's subscription. For example, many media apps require a cable/satellite provider to authenticate your subscription before playing media.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/authenticator"
+  },
+  {
+    "atom": "authenticity",
+    "name": "authenticity",
+    "description": "authenticity: a schema.org component word, fused from mediaAuthenticityCategory",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/authenticity"
+  },
+  {
+    "atom": "author",
+    "name": "author",
+    "description": "The author of this content or rating. Please note that author is special in that HTML 5 provides a special mechanism for indicating authorship via the rel tag. That is equivalent to this and may be us",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/author"
+  },
+  {
+    "atom": "authority",
+    "name": "authority",
+    "description": "authority: a schema.org component word, fused from recognizingAuthority",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/authority"
+  },
+  {
+    "atom": "authorize",
+    "name": "authorize",
+    "description": "authorize: a schema.org component word, fused from AuthorizeAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/authorize"
+  },
+  {
+    "atom": "auto",
+    "name": "auto",
+    "description": "auto: a schema.org component word, fused from AutoBodyShop, AutoDealer, AutoPartsStore, AutoRental, AutoRepair, AutoWash",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/auto"
+  },
+  {
+    "atom": "automated",
+    "name": "automated",
+    "description": "automated: a schema.org component word, fused from AutomatedTeller",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/automated"
+  },
+  {
+    "atom": "automotive",
+    "name": "automotive",
+    "description": "automotive: a schema.org component word, fused from AutomotiveBusiness",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/automotive"
+  },
+  {
+    "atom": "availability",
+    "name": "availability",
+    "description": "The availability of this item&#x2014;for example In stock, Out of stock, Pre-order, etc.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/availability"
+  },
+  {
+    "atom": "available",
+    "name": "available",
+    "description": "The place(s) from which the offer can be obtained (e.g. store locations).",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/available"
+  },
+  {
+    "atom": "award",
+    "name": "award",
+    "description": "An award won by or for this item.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/award"
+  },
+  {
+    "atom": "awarded",
+    "name": "awarded",
+    "description": "awarded: a schema.org component word, fused from educationalCredentialAwarded, occupationalCredentialAwarded",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/awarded"
+  },
+  {
+    "atom": "awards",
+    "name": "awards",
+    "description": "Awards won by or for this item.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/awards"
   },
   {
     "atom": "awareness",
     "name": "awareness",
     "description": "Use when reasoning about the discovery gate of a market — whether people know the thing exists and that it answers a want they hold. The atom marketing produces and trendsetters amplify; distinct from desire (the want) and distribution (the obtaining). If awareness is the zero atom, trendsetters as taste-amplifiers are the right lever.",
-    "path": "awareness"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/awareness"
+  },
+  {
+    "atom": "away",
+    "name": "away",
+    "description": "away: a schema.org component word, fused from awayTeam",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/away"
   },
   {
     "atom": "axis",
     "name": "axis",
     "description": "Use when reasoning about the 3·6·9 control plane of the rodin vortex — three coils 120° out of phase (COIL_A/B/C) that the doubling helix winds around; the governing triad (access/hooks/auth) the flow never lands on. Nested under rodin.",
-    "path": "rodin/axis"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/rodin/axis"
+  },
+  {
+    "atom": "axles",
+    "name": "axles",
+    "description": "axles: a schema.org component word, fused from numberOfAxles",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/axles"
+  },
+  {
+    "atom": "back",
+    "name": "back",
+    "description": "back: a schema.org component word, fused from cashBack",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/back"
+  },
+  {
+    "atom": "background",
+    "name": "background",
+    "description": "background: a schema.org component word, fused from BackgroundNewsArticle",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/background"
   },
   {
     "atom": "backlog",
     "name": "backlog",
     "description": "Use when managing a prioritized list of pending work — features to build, bugs to fix, support tickets, maintenance requests. The work-capture system.",
-    "path": "backlog"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/backlog"
+  },
+  {
+    "atom": "backstory",
+    "name": "backstory",
+    "description": "For an Article, typically a NewsArticle, the backstory property provides a textual summary giving a brief explanation of why and how an article was created. In a journalistic setting this could includ",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/backstory"
   },
   {
     "atom": "backup",
     "name": "backup",
     "description": "Use when ensuring data recovery — backup strategy (full/incremental/differential), backup retention, restoration procedures, backup encryption, cross-region backups, RTO/RPO targets, backup testing/validation.",
-    "path": "backup"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/backup"
+  },
+  {
+    "atom": "bakery",
+    "name": "bakery",
+    "description": "A bakery.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/bakery"
   },
   {
     "atom": "balance",
     "name": "balance",
     "description": "Use when reasoning about equilibrium in erpax — Σdebit=Σcredit, trial balance, conservation laws, two sides of a flow at rest. The universal root of equilibrium.",
-    "path": "balance"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/balance"
   },
   {
     "atom": "bank",
     "name": "bank",
     "description": "Use when a transaction or account references banking infrastructure — bank account, bank statement, bank transfer, bank reconciliation. A financial institution context; relationTo: 'bank-accounts' or similar.",
-    "path": "bank"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/bank"
+  },
+  {
+    "atom": "bans",
+    "name": "bans",
+    "description": "bans: a schema.org component word, fused from travelBans",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/bans"
+  },
+  {
+    "atom": "bar",
+    "name": "bar",
+    "description": "bar: a schema.org component word, fused from BarOrPub, WPSideBar",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/bar"
+  },
+  {
+    "atom": "barcode",
+    "name": "barcode",
+    "description": "An image of a visual machine-readable code such as a barcode or QR code.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/barcode"
   },
   {
     "atom": "base",
     "name": "base",
     "description": "Use when reasoning about the entry position of the horo state ring — digit 1, \"entering the ring\", the origin step of a flow/lifecycle (on-hand, draft, opened). First of the ascent arc; nested under horo.",
-    "path": "horo/base"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/horo/base"
+  },
+  {
+    "atom": "based",
+    "name": "based",
+    "description": "A resource from which this work is derived or from which it is a modification or adaptation.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/based"
+  },
+  {
+    "atom": "baseline",
+    "name": "baseline",
+    "description": "Use for the empirical reference distribution a calibration is computed FROM — the measured input (median / p50 / p99 / attractor of a real metric) a model is fitted to, NOT the fitted constants themselves. Swap the baseline (another tenant, another period) and every derived calibration recomputes. The agnostic home of values once hardcoded against a named source — the values stay, the source name dissolves into [[source]] / [[akashic]].",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/baseline"
   },
   {
     "atom": "batch",
     "name": "batch",
     "description": "Use when processing data in bulk — batch ETL jobs, bulk inserts/updates/deletes, batch transaction semantics, atomicity across a batch, partial failure handling and retry strategies in batch operations.",
-    "path": "batch"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/batch"
   },
   {
     "atom": "batches",
     "name": "batches",
     "description": "Use when creating or tracing a lot/batch of material or product — GS1 AI(10) lot number, manufacture/expiry dates, quality status, parentBatches genealogy for EU 178/2002 one-step-back recall, pharma/automotive traceability. The batches collection.",
-    "path": "items/batches"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/items/batches"
+  },
+  {
+    "atom": "bathrooms",
+    "name": "bathrooms",
+    "description": "bathrooms: a schema.org component word, fused from numberOfBathroomsTotal, numberOfFullBathrooms, numberOfPartialBathrooms",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/bathrooms"
+  },
+  {
+    "atom": "bcc",
+    "name": "bcc",
+    "description": "bcc: a schema.org component word, fused from bccRecipient",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/bcc"
+  },
+  {
+    "atom": "beach",
+    "name": "beach",
+    "description": "Beach.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/beach"
+  },
+  {
+    "atom": "beauty",
+    "name": "beauty",
+    "description": "beauty: a schema.org component word, fused from BeautySalon, HealthAndBeautyBusiness",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/beauty"
+  },
+  {
+    "atom": "bed",
+    "name": "bed",
+    "description": "The type of bed or beds included in the accommodation. For the single case of just one bed of a certain type, you use bed directly with a text. If you want to indicate the quantity of a certain kind o",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/bed"
+  },
+  {
+    "atom": "bedrooms",
+    "name": "bedrooms",
+    "description": "bedrooms: a schema.org component word, fused from numberOfBedrooms",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/bedrooms"
+  },
+  {
+    "atom": "beds",
+    "name": "beds",
+    "description": "beds: a schema.org component word, fused from cvdNumBeds, cvdNumBedsOcc, cvdNumICUBeds, cvdNumICUBedsOcc, cvdNumTotBeds, numberOfBeds",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/beds"
+  },
+  {
+    "atom": "before",
+    "name": "before",
+    "description": "before: a schema.org component word, fused from beforeMedia",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/before"
+  },
+  {
+    "atom": "befriend",
+    "name": "befriend",
+    "description": "befriend: a schema.org component word, fused from BefriendAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/befriend"
   },
   {
     "atom": "begin",
     "name": "begin",
     "description": "Use when reasoning about origin or boundary in erpax — the 0 (both end and beginning), period open/close, lifecycle start/seal, the axis every pass departs from and returns to. The universal root of origin.",
-    "path": "begin"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/begin"
+  },
+  {
+    "atom": "beneficiary",
+    "name": "beneficiary",
+    "description": "beneficiary: a schema.org component word, fused from beneficiaryBank",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/beneficiary"
+  },
+  {
+    "atom": "benefit",
+    "name": "benefit",
+    "description": "benefit: a schema.org component word, fused from TierBenefitEnumeration, hasTierBenefit",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/benefit"
+  },
+  {
+    "atom": "benefits",
+    "name": "benefits",
+    "description": "Description of benefits associated with the job.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/benefits"
+  },
+  {
+    "atom": "best",
+    "name": "best",
+    "description": "best: a schema.org component word, fused from bestRating",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/best"
   },
   {
     "atom": "beyond",
     "name": "beyond",
     "description": "Use when implementing any next-horizon conservation primitive beyond the base laws — causal provenance, deterministic replay, tenant isolation, bitemporal queries, cost accountability, carbon-aware execution, agent capability (RBAC), post-quantum signatures, self-explainability, reversibility/crypto-shred, or AI-decision audit. The 11-primitive barrel for Laws 11–22.",
-    "path": "beyond"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/beyond"
+  },
+  {
+    "atom": "bicycle",
+    "name": "bicycle",
+    "description": "bicycle: a schema.org component word, fused from MotorizedBicycle",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/bicycle"
+  },
+  {
+    "atom": "bike",
+    "name": "bike",
+    "description": "bike: a schema.org component word, fused from BikeStore",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/bike"
+  },
+  {
+    "atom": "billing",
+    "name": "billing",
+    "description": "billing: a schema.org component word, fused from billingAddress, billingDuration, billingIncrement, billingPeriod, billingStart",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/billing"
   },
   {
     "atom": "bindings",
     "name": "bindings",
     "description": "Use when wiring, debugging, or cost-tuning erpax's Cloudflare bindings — D1, R2, KV, Durable Objects, Queues, Workers AI, Vectorize, Analytics Engine, Browser, service self-reference, Hyperdrive, cron — or when a binding \"works in config but fails at runtime\" (e.g. \"no such Durable Object class is exported from the worker\"). The map of binding ↔ capability ↔ cost lever ↔ gap for the self-managed edge app.",
-    "path": "bindings"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/bindings"
+  },
+  {
+    "atom": "bio",
+    "name": "bio",
+    "description": "bio: a schema.org component word, fused from BioChemEntity, bioChemInteraction, bioChemSimilarity, encodesBioChemEntity, hasBioChemEntityPart, hasBioPolymerSequence",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/bio"
+  },
+  {
+    "atom": "biofield",
+    "name": "biofield",
+    "description": "Use when separating a CLAIMED aura from a measured one — 'biofield' is the umbrella term (coined at a 1992 NIH meeting) for a putative energy field around the body; it is not established science, its own proponents concede it is controversial, and controlled tests (Rosa's therapeutic-touch study, the JREF $1M challenge) found no detection above chance. The honest contrast: a claim with no measurable signal — the opposite of erpax's gapless, Merkle-proven analog aura.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/biofield"
+  },
+  {
+    "atom": "biological",
+    "name": "biological",
+    "description": "biological: a schema.org component word, fused from biologicalRole, isInvolvedInBiologicalProcess",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/biological"
+  },
+  {
+    "atom": "biomagnetism",
+    "name": "biomagnetism",
+    "description": "Use when grounding the aura's 'field' in real science — the body's magnetic fields ARE measurable, but only by SQUID magnetometers in a shielded room and only at the body surface: magnetocardiography (heart, ~10⁻¹⁰–10⁻¹¹ T / tens of pT) and magnetoencephalography (brain, ~10⁻¹³–10⁻¹⁵ T / ~100 fT). The established part is intra-body diagnostics; the claim the heart's field extends feet from the body as an 'aura' was refuted under test.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/biomagnetism"
+  },
+  {
+    "atom": "biomass",
+    "name": "biomass",
+    "description": "Use when a living stock is valued by its total mass, not per-individual — standing biomass (kg) is the IAS-41 fair-value unit for an aquaculture stock, a forest stand, or a bee colony's strength: mass × forward price − costs-to-sell. Its growth rate is biological transformation. The non-individuated living-asset measure, shared across aquaculture/forestry/apiculture.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/biomass"
+  },
+  {
+    "atom": "biomechnical",
+    "name": "biomechnical",
+    "description": "biomechnical: a schema.org component word, fused from biomechnicalClass",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/biomechnical"
+  },
+  {
+    "atom": "biophoton",
+    "name": "biophoton",
+    "description": "Use when grounding the aura's colour channel in real science — biophotons (ultraweak photon emission, UPE) are a REAL, instrument-measured light the body emits: ~1–10³ (up to 10⁴) photons·s⁻¹·cm⁻² (~10⁻¹⁴–10⁻¹⁹ W/cm²), 200–800 nm, from oxidative-metabolism reactive oxygen species, detected by cooled photomultiplier tubes and EMCCD cameras. The body literally emits light — but 3–6 orders too faint to see, so the visible 'aura' is not this.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/biophoton"
+  },
+  {
+    "atom": "birth",
+    "name": "birth",
+    "description": "birth: a schema.org component word, fused from birthDate, birthPlace",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/birth"
+  },
+  {
+    "atom": "bitrate",
+    "name": "bitrate",
+    "description": "The bitrate of the media object.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/bitrate"
+  },
+  {
+    "atom": "block",
+    "name": "block",
+    "description": "block: a schema.org component word, fused from WPAdBlock",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/block"
+  },
+  {
+    "atom": "blocks",
+    "name": "blocks",
+    "description": "blocks: a schema.org component word, fused from UserBlocks",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/blocks"
+  },
+  {
+    "atom": "blog",
+    "name": "blog",
+    "description": "A blog, sometimes known as a \"weblog\". Note that the individual posts (BlogPostings) in a Blog are often colloquially referred to by the same term.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/blog"
+  },
+  {
+    "atom": "blood",
+    "name": "blood",
+    "description": "blood: a schema.org component word, fused from BloodTest, bloodSupply",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/blood"
+  },
+  {
+    "atom": "boarding",
+    "name": "boarding",
+    "description": "boarding: a schema.org component word, fused from BoardingPolicyType, boardingGroup, boardingPolicy",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/boarding"
+  },
+  {
+    "atom": "boat",
+    "name": "boat",
+    "description": "boat: a schema.org component word, fused from BoatReservation, BoatTerminal, BoatTrip, arrivalBoatTerminal, departureBoatTerminal",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/boat"
+  },
+  {
+    "atom": "body",
+    "name": "body",
+    "description": "body: a schema.org component word, fused from AutoBodyShop, BodyMeasurementTypeEnumeration, BodyOfWater, LakeBodyOfWater, OceanBodyOfWater, RiverBodyOfWater",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/body"
+  },
+  {
+    "atom": "bone",
+    "name": "bone",
+    "description": "Rigid connective tissue that comprises up the skeletal structure of the human body.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/bone"
+  },
+  {
+    "atom": "book",
+    "name": "book",
+    "description": "A book.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/book"
+  },
+  {
+    "atom": "booking",
+    "name": "booking",
+    "description": "booking: a schema.org component word, fused from advanceBookingRequirement, bookingAgent, bookingTime, tourBookingPage",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/booking"
   },
   {
     "atom": "bookings",
     "name": "bookings",
     "description": "Use when recording or querying reservation events — hotel check-in/out, vehicle rental, equipment hire, meeting-room holds, field-service slots — against a bookable-resource; IFRS-15 over-time / point-in-time revenue recognition, cancellation policy, deposit, invoice linkage, multi-channel (direct/OTA/GDS). The canonical reservation primitive.",
-    "path": "bookable/resources/bookings"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/bookable/resources/bookings"
+  },
+  {
+    "atom": "bookmark",
+    "name": "bookmark",
+    "description": "bookmark: a schema.org component word, fused from BookmarkAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/bookmark"
+  },
+  {
+    "atom": "boolean",
+    "name": "boolean",
+    "description": "Boolean: True or False.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/boolean"
+  },
+  {
+    "atom": "borrow",
+    "name": "borrow",
+    "description": "borrow: a schema.org component word, fused from BorrowAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/borrow"
+  },
+  {
+    "atom": "borrower",
+    "name": "borrower",
+    "description": "A sub property of participant. The person that borrows the object being lent.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/borrower"
   },
   {
     "atom": "bottleneck",
     "name": "bottleneck",
     "description": "Use when identifying or tracking the limiting factor in a flow — the slowest operation in a sequence, the resource with lowest capacity. The theory-of-constraints node.",
-    "path": "bottleneck"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/bottleneck"
+  },
+  {
+    "atom": "bowling",
+    "name": "bowling",
+    "description": "bowling: a schema.org component word, fused from BowlingAlley",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/bowling"
+  },
+  {
+    "atom": "box",
+    "name": "box",
+    "description": "A box is the area enclosed by the rectangle formed by two points. The first point is the lower corner, the second point is the upper corner. A box is expressed as two points separated by a space chara",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/box"
+  },
+  {
+    "atom": "brain",
+    "name": "brain",
+    "description": "brain: a schema.org component word, fused from BrainStructure",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/brain"
+  },
+  {
+    "atom": "branch",
+    "name": "branch",
+    "description": "The branches that delineate from the nerve bundle. Not to be confused with branchOf.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/branch"
+  },
+  {
+    "atom": "brand",
+    "name": "brand",
+    "description": "A brand is a name used by an organization or business person for labeling a product, product group, or similar.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/brand"
+  },
+  {
+    "atom": "breadcrumb",
+    "name": "breadcrumb",
+    "description": "A set of links that can help a user understand and navigate a website hierarchy.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/breadcrumb"
+  },
+  {
+    "atom": "breakfast",
+    "name": "breakfast",
+    "description": "breakfast: a schema.org component word, fused from BedAndBreakfast",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/breakfast"
+  },
+  {
+    "atom": "breastfeeding",
+    "name": "breastfeeding",
+    "description": "breastfeeding: a schema.org component word, fused from breastfeedingWarning",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/breastfeeding"
   },
   {
     "atom": "breath",
     "name": "breath",
     "description": "Use when reasoning about the oscillation in erpax — the C↔M (3↔6) polarity swing, forward↔reverse, give↔take, expand↔bind; the pulse the ring moves on (A432 ms). La/A432 sits at the breathing position (round). The living dual of balance. Nested under rodin.",
-    "path": "rodin/breath"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/rodin/breath"
+  },
+  {
+    "atom": "breed",
+    "name": "breed",
+    "description": "Use when classifying an animal by its genetic type — the breed (Angus, Holstein, Yorkshire), a genetically distinct sub-population with stable heritable traits, recorded in a breed registry with pedigree; and breeding (mating selection, AI, gestation). The animal-genetics classifier — distinct from taxonomy (the crop-variety tree).",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/breed"
+  },
+  {
+    "atom": "brewery",
+    "name": "brewery",
+    "description": "Brewery.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/brewery"
+  },
+  {
+    "atom": "bridge",
+    "name": "bridge",
+    "description": "A bridge.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/bridge"
+  },
+  {
+    "atom": "broadcast",
+    "name": "broadcast",
+    "description": "broadcast: a schema.org component word, fused from BroadcastChannel, BroadcastEvent, BroadcastFrequencySpecification, BroadcastService, RadioBroadcastService, broadcastAffiliateOf",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/broadcast"
+  },
+  {
+    "atom": "broadcaster",
+    "name": "broadcaster",
+    "description": "The organization owning or operating the broadcast service.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/broadcaster"
+  },
+  {
+    "atom": "broker",
+    "name": "broker",
+    "description": "An entity that arranges for an exchange between a buyer and a seller. In most cases a broker never acquires or releases ownership of a product or service involved in an exchange. If it is not clear wh",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/broker"
+  },
+  {
+    "atom": "brokerage",
+    "name": "brokerage",
+    "description": "brokerage: a schema.org component word, fused from BrokerageAccount",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/brokerage"
+  },
+  {
+    "atom": "browser",
+    "name": "browser",
+    "description": "browser: a schema.org component word, fused from browserRequirements",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/browser"
+  },
+  {
+    "atom": "buddhist",
+    "name": "buddhist",
+    "description": "buddhist: a schema.org component word, fused from BuddhistTemple",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/buddhist"
   },
   {
     "atom": "budgetvariance",
     "name": "budgetvariance",
     "description": "Use for analyzing variance between budgeted and actual amounts in a period — favorable/unfavorable cost variance, quantity/price splits, drivers of performance against plan",
-    "path": "budgetvariance"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/budgetvariance"
+  },
+  {
+    "atom": "building",
+    "name": "building",
+    "description": "building: a schema.org component word, fused from GovernmentBuilding, LegislativeBuilding",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/building"
+  },
+  {
+    "atom": "buildings",
+    "name": "buildings",
+    "description": "buildings: a schema.org component word, fused from LandmarksOrHistoricalBuildings",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/buildings"
+  },
+  {
+    "atom": "built",
+    "name": "built",
+    "description": "built: a schema.org component word, fused from yearBuilt",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/built"
   },
   {
     "atom": "bundle",
     "name": "bundle",
     "description": "Use when packaging multiple items for joint sale — bundle composition, bundle pricing (vs. component sum), discount rules for bundles.",
-    "path": "bundle"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/bundle"
+  },
+  {
+    "atom": "bus",
+    "name": "bus",
+    "description": "bus: a schema.org component word, fused from BusOrCoach, BusReservation, BusStation, BusStop, BusTrip, arrivalBusStop",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/bus"
+  },
+  {
+    "atom": "business",
+    "name": "business",
+    "description": "business: a schema.org component word, fused from AutomotiveBusiness, BusinessAudience, BusinessEntityType, BusinessEvent, BusinessFunction, EntertainmentBusiness",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/business"
+  },
+  {
+    "atom": "buy",
+    "name": "buy",
+    "description": "buy: a schema.org component word, fused from BuyAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/buy"
+  },
+  {
+    "atom": "buyer",
+    "name": "buyer",
+    "description": "A sub property of participant. The participant/person/organization that bought the object.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/buyer"
+  },
+  {
+    "atom": "bylines",
+    "name": "bylines",
+    "description": "bylines: a schema.org component word, fused from noBylinesPolicy",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/bylines"
+  },
+  {
+    "atom": "cable",
+    "name": "cable",
+    "description": "cable: a schema.org component word, fused from CableOrSatelliteService",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/cable"
   },
   {
     "atom": "cache",
     "name": "cache",
     "description": "Use when optimizing repeated access — cache invalidation strategies, cache-aside vs write-through, TTL/expiry, cache coherency, memoization, query result caching, distributed cache semantics (Cloudflare KV, Redis).",
-    "path": "cache"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/cache"
+  },
+  {
+    "atom": "cafe",
+    "name": "cafe",
+    "description": "cafe: a schema.org component word, fused from CafeOrCoffeeShop, InternetCafe",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/cafe"
   },
   {
     "atom": "calculate",
     "name": "calculate",
     "description": "Use for pure financial computation — break-even, EBITDA, EOQ, present value, depreciation, ratios, standard-costing variances. The Calculators::* form-objects — validate inputs → compute (standards-cited formula) → format; no persistence. Composes nested leaves (calculate/depreciate, /amortize, /ebitda).",
-    "path": "calculate"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/calculate"
   },
   {
     "atom": "calculations",
     "name": "tax-calculations",
     "description": "Use when computing or reviewing tax-liability snapshots per period and jurisdiction — VAT, GST, income tax, payroll tax — with rate, gross/taxable/net amounts, GL payable account, and filing/payment deadlines; lifecycle from calculated to filed/paid. The tax-calculations period-snapshot collection.",
-    "path": "gl/accounts/tax/calculations"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/gl/accounts/tax/calculations"
+  },
+  {
+    "atom": "calculator",
+    "name": "calculator",
+    "description": "calculator: a schema.org component word, fused from MedicalRiskCalculator",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/calculator"
   },
   {
     "atom": "calendars",
     "name": "fiscal-calendars",
     "description": "Use when resolving a GL posting date to its fiscal year, period, quarter, week, or regulatory SAF-T code — pre-computed O(1) date-to-period lookup table bulk-generated from FiscalPeriods config per IAS-34 / ISO-8601 / SAF-T 3.0.2. The denormalized fiscal-calendar lookup collection.",
-    "path": "legal/entities/fiscal/calendars"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/legal/entities/fiscal/calendars"
+  },
+  {
+    "atom": "call",
+    "name": "call",
+    "description": "call: a schema.org component word, fused from callSign",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/call"
+  },
+  {
+    "atom": "calories",
+    "name": "calories",
+    "description": "The number of calories.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/calories"
   },
   {
     "atom": "campaign",
     "name": "campaign",
     "description": "Use when coordinating multi-channel marketing initiatives — campaign definition, channels, targeting, messaging, schedule, budget, ROI tracking.",
-    "path": "campaign"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/campaign"
+  },
+  {
+    "atom": "campground",
+    "name": "campground",
+    "description": "A camping site, campsite, or Campground is a place used for overnight stay in the outdoors, typically containing individual CampingPitch locations. In British English a campsite is an area, usually di",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/campground"
+  },
+  {
+    "atom": "camping",
+    "name": "camping",
+    "description": "camping: a schema.org component word, fused from CampingPitch",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/camping"
+  },
+  {
+    "atom": "canal",
+    "name": "canal",
+    "description": "A canal, like the Panama Canal.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/canal"
+  },
+  {
+    "atom": "cancel",
+    "name": "cancel",
+    "description": "cancel: a schema.org component word, fused from CancelAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/cancel"
+  },
+  {
+    "atom": "candidate",
+    "name": "candidate",
+    "description": "A sub property of object. The candidate subject of this action.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/candidate"
   },
   {
     "atom": "capacity",
     "name": "capacity",
     "description": "Use when planning, tracking, or optimizing resource capacity — workforce availability, machine utilization, warehouse/facility space, or bottleneck detection per work-center/shift/period. The binding constraint in operations.",
-    "path": "capacity"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/capacity"
+  },
+  {
+    "atom": "caption",
+    "name": "caption",
+    "description": "The caption for this object. For downloadable machine formats (closed caption, subtitles etc.) use MediaObject and indicate the encodingFormat.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/caption"
+  },
+  {
+    "atom": "car",
+    "name": "car",
+    "description": "A car is a wheeled, self-powered motor vehicle used for transportation.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/car"
+  },
+  {
+    "atom": "carbohydrate",
+    "name": "carbohydrate",
+    "description": "carbohydrate: a schema.org component word, fused from carbohydrateContent",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/carbohydrate"
+  },
+  {
+    "atom": "card",
+    "name": "card",
+    "description": "card: a schema.org component word, fused from CreditCard, PaymentCard",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/card"
   },
   {
     "atom": "cardinality",
     "name": "cardinality",
     "description": "Use when analyzing relationship structure — one-to-one / one-to-many / many-to-many / many-to-one relationships, cardinality constraints, optional vs mandatory participation, relationship counts (query cardinality estimates), foreign-key cardinality.",
-    "path": "cardinality"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/cardinality"
+  },
+  {
+    "atom": "care",
+    "name": "care",
+    "description": "care: a schema.org component word, fused from ChildCare, VeterinaryCare",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/care"
   },
   {
     "atom": "career",
     "name": "career",
     "description": "Use when modelling a work career as a life-course trajectory — трудова кариера — a sequence of positions on the harmonic allocation ladder walked over time. Late career is a late band on that ring (the maintenance→disengagement stage before decompression/retirement) where accumulated experience peaks against skill obsolescence and the status sign can flip with age. Derive the stage from the sequence and time; never store it.",
-    "path": "career"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/career"
+  },
+  {
+    "atom": "cargo",
+    "name": "cargo",
+    "description": "cargo: a schema.org component word, fused from cargoVolume",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/cargo"
+  },
+  {
+    "atom": "carrier",
+    "name": "carrier",
+    "description": "'carrier' is an out-dated term indicating the 'provider' for parcel delivery and flights.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/carrier"
   },
   {
     "atom": "carriers",
     "name": "carriers",
     "description": "Use when managing shipping or freight carrier master data — DHL, UPS, FedEx, postal, maritime, air-cargo — with per-tenant accounts, INCOTERMS-tagged service levels, hazmat flags, API credentials references, and effective-date lifecycle. The carrier master that normalises free-text carrier strings in shipments.",
-    "path": "carriers"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/carriers"
   },
   {
     "atom": "cases",
     "name": "Cases",
     "description": "Use when modelling a legal matter as a docket — case lifecycle, parties under roles, append-only evidence, judgments, offences and dispute resolution; the harmony-checked Payload realization of the justice docket.",
-    "path": "cases"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/cases"
+  },
+  {
+    "atom": "cash",
+    "name": "cash",
+    "description": "cash: a schema.org component word, fused from cashBack",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/cash"
+  },
+  {
+    "atom": "casino",
+    "name": "casino",
+    "description": "A casino.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/casino"
+  },
+  {
+    "atom": "catalog",
+    "name": "catalog",
+    "description": "A data catalog which contains this dataset.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/catalog"
+  },
+  {
+    "atom": "catalogue",
+    "name": "catalogue",
+    "description": "Use when reading the one canonical content-addressed index of every atom's ported SKILL.md — the mass the collector emits and the coverage guard verifies.",
+    "path": "translations/catalogue"
   },
   {
     "atom": "categories",
     "name": "categories",
     "description": "Use when building or browsing hierarchical content or product taxonomies — title, URL slug (per-tenant unique), parent relationship, breadcrumb trail — for posts, catalogue products, or any schema.org DefinedTerm classification. The tenant-scoped category taxonomy node.",
-    "path": "categories"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/categories"
+  },
+  {
+    "atom": "category",
+    "name": "category",
+    "description": "A category for the item. Greater signs or slashes can be used to informally indicate a category hierarchy.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/category"
+  },
+  {
+    "atom": "catholic",
+    "name": "catholic",
+    "description": "catholic: a schema.org component word, fused from CatholicChurch",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/catholic"
+  },
+  {
+    "atom": "cause",
+    "name": "cause",
+    "description": "The cause of a medical condition.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/cause"
+  },
+  {
+    "atom": "cc",
+    "name": "cc",
+    "description": "cc: a schema.org component word, fused from ccRecipient",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/cc"
+  },
+  {
+    "atom": "cdcpmd",
+    "name": "cdcpmd",
+    "description": "cdcpmd: a schema.org component word, fused from CDCPMDRecord",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/cdcpmd"
+  },
+  {
+    "atom": "cemetery",
+    "name": "cemetery",
+    "description": "A graveyard.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/cemetery"
+  },
+  {
+    "atom": "center",
+    "name": "center",
+    "description": "center: a schema.org component word, fused from RecyclingCenter, ShoppingCenter, TouristInformationCenter",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/center"
   },
   {
     "atom": "centers",
@@ -437,88 +1859,328 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "work/centers"
   },
   {
+    "atom": "certification",
+    "name": "certification",
+    "description": "Use when a third party attests an operation conforms to a standard — the generic certify→audit→label mechanism behind organic (NOP/EU), biodynamic (Demeter), Regenerative Organic, GLOBALG.A.P., GAP/GHP food safety, and participatory guarantee systems. An accredited agent verifies against a standard and issues a transferable claim; the claim is only as strong as the record proving it.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/certification"
+  },
+  {
     "atom": "certifications",
     "name": "management-certifications",
     "description": "Use when recording or auditing officer certifications — SOX 302 / 906 corporate-responsibility and criminal certifications, internal-control and financial-statement sign-offs, with certifying officer, assertions, and certification level per SOX §302 / SOX §906. The management-certification sign-off collection.",
-    "path": "legal/entities/management/certifications"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/legal/entities/management/certifications"
+  },
+  {
+    "atom": "ch",
+    "name": "ch",
+    "description": "Non-proprietary identifier for molecular entity that can be used in printed and electronic data sources thus enabling easier linking of diverse data compilations.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/ch"
+  },
+  {
+    "atom": "changes",
+    "name": "changes",
+    "description": "changes: a schema.org component word, fused from legislationChanges",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/changes"
+  },
+  {
+    "atom": "channel",
+    "name": "channel",
+    "description": "channel: a schema.org component word, fused from AMRadioChannel, BroadcastChannel, FMRadioChannel, RadioChannel, ServiceChannel, TelevisionChannel",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/channel"
+  },
+  {
+    "atom": "chapter",
+    "name": "chapter",
+    "description": "One of the sections into which a book is divided. A chapter usually has a section number or a name.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/chapter"
+  },
+  {
+    "atom": "character",
+    "name": "character",
+    "description": "Fictional person connected with a creative work.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/character"
+  },
+  {
+    "atom": "charge",
+    "name": "charge",
+    "description": "charge: a schema.org component word, fused from DeliveryChargeSpecification, PaymentChargeSpecification",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/charge"
   },
   {
     "atom": "chat",
     "name": "chat",
     "description": "Use when reasoning about where the erpax agent society convenes — chat.erpax.com, the per-tenant agent-sync room (AGENT_SYNC_HOST venue) — and about the trinity-composition law that every vertex is itself a trinity all the way down to the base atoms.",
-    "path": "chat"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/chat"
   },
   {
     "atom": "chats",
     "name": "chat",
     "description": "Use when reasoning about the agent-society room native to Payload — the per-tenant content-addressed event bus where each row is an ErpaxEvent envelope an agent published; the queryable, auditable akashic chat history that replaces the external chat.erpax.com Durable Object. Distinct from messages (user-to-user mail). The agent-bus collection.",
-    "path": "chats"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/chats"
+  },
+  {
+    "atom": "cheat",
+    "name": "cheat",
+    "description": "cheat: a schema.org component word, fused from cheatCode",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/cheat"
+  },
+  {
+    "atom": "check",
+    "name": "check",
+    "description": "check: a schema.org component word, fused from CheckAction, CheckInAction, CheckOutAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/check"
+  },
+  {
+    "atom": "checkin",
+    "name": "checkin",
+    "description": "checkin: a schema.org component word, fused from checkinTime, webCheckinTime",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/checkin"
+  },
+  {
+    "atom": "checking",
+    "name": "checking",
+    "description": "checking: a schema.org component word, fused from verificationFactCheckingPolicy",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/checking"
+  },
+  {
+    "atom": "checkins",
+    "name": "checkins",
+    "description": "checkins: a schema.org component word, fused from UserCheckins",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/checkins"
   },
   {
     "atom": "checklists",
     "name": "disclosure-checklists",
     "description": "Use when preparing or auditing financial-statement disclosure completeness — IFRS/SEC/compliance-framework checklist items, applicability assessment, evidence attachment, and preparer/reviewer sign-off per IFRS IAS-1 / SEC Regulation S-K / ISO-19011. The disclosure-checklist sign-off collection.",
-    "path": "legal/entities/disclosure/checklists"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/legal/entities/disclosure/checklists"
+  },
+  {
+    "atom": "checkout",
+    "name": "checkout",
+    "description": "checkout: a schema.org component word, fused from CheckoutPage, checkoutPageURLTemplate, checkoutTime",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/checkout"
   },
   {
     "atom": "checks",
     "name": "kyc-checks",
     "description": "Use when performing AML / CDD screening on a customer, vendor, beneficial owner, or signatory — SDD/CDD/EDD level, identity documents, sanctions screening (OFAC/EU/UN), PEP check, risk rating, and FATF Recommendation 10 audit evidence. The AML customer-due-diligence collection.",
-    "path": "customers/kyc/checks"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/customers/kyc/checks"
+  },
+  {
+    "atom": "chem",
+    "name": "chem",
+    "description": "chem: a schema.org component word, fused from BioChemEntity, bioChemInteraction, bioChemSimilarity, encodesBioChemEntity, hasBioChemEntityPart, isEncodedByBioChemEntity",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/chem"
+  },
+  {
+    "atom": "chemical",
+    "name": "chemical",
+    "description": "chemical: a schema.org component word, fused from ChemicalSubstance, chemicalComposition, chemicalRole",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/chemical"
+  },
+  {
+    "atom": "child",
+    "name": "child",
+    "description": "child: a schema.org component word, fused from ChildCare, childMaxAge, childMinAge, childTaxon",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/child"
+  },
+  {
+    "atom": "children",
+    "name": "children",
+    "description": "A child of the person.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/children"
+  },
+  {
+    "atom": "childrens",
+    "name": "childrens",
+    "description": "childrens: a schema.org component word, fused from ChildrensEvent",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/childrens"
+  },
+  {
+    "atom": "choice",
+    "name": "choice",
+    "description": "Use when a buyer selects items up to a value or quantity cap instead of receiving a fixed bundle — the market-style / customizable CSA share (members pick at a table or online to a limit, swap unwanted items), and the generic pick-mix / deli-counter / configure-to-order pattern. The selection model: the inverse of a fixed bundle, trading packing simplicity for member satisfaction.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/choice"
+  },
+  {
+    "atom": "cholesterol",
+    "name": "cholesterol",
+    "description": "cholesterol: a schema.org component word, fused from cholesterolContent",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/cholesterol"
+  },
+  {
+    "atom": "choose",
+    "name": "choose",
+    "description": "choose: a schema.org component word, fused from ChooseAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/choose"
+  },
+  {
+    "atom": "church",
+    "name": "church",
+    "description": "A church.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/church"
   },
   {
     "atom": "churn",
     "name": "churn",
     "description": "Use when measuring customer retention/attrition — monthly/annual churn %, cohort analysis, at-risk indicators, retention drivers.",
-    "path": "churn"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/churn"
+  },
+  {
+    "atom": "circle",
+    "name": "circle",
+    "description": "A circle is the circular region of a specified radius centered at a specified latitude and longitude. A circle is expressed as a pair followed by a radius in meters.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/circle"
+  },
+  {
+    "atom": "citation",
+    "name": "citation",
+    "description": "A citation or reference to another creative work, such as another publication, web page, scholarly article, etc.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/citation"
+  },
+  {
+    "atom": "city",
+    "name": "city",
+    "description": "A city or town.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/city"
+  },
+  {
+    "atom": "civic",
+    "name": "civic",
+    "description": "civic: a schema.org component word, fused from CivicStructure",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/civic"
   },
   {
     "atom": "civilization",
     "name": "civilization",
     "description": "Use when reasoning about how every civilization fits the erpax architecture — strip the culture-prefix and each one runs the same six organs: a ledger, a law, a registry, a calendar, a governance, an unforgeable record. Civilizations differ in detail and merge in form.",
-    "path": "civilization"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/civilization"
+  },
+  {
+    "atom": "claim",
+    "name": "claim",
+    "description": "A Claim in Schema.org represents a specific, factually-oriented claim that could be the itemReviewed in a ClaimReview. The content of a claim can be summarized with the text property. Variations on we",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/claim"
+  },
+  {
+    "atom": "class",
+    "name": "class",
+    "description": "A class, also often called a 'Type'; equivalent to rdfs:Class.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/class"
   },
   {
     "atom": "classifications",
     "name": "held-for-sale-classifications",
     "description": "Use when classifying a non-current asset, disposal group, or discontinued operation as held-for-sale under IFRS 5 §6 — triggers §15 remeasurement to lower of carrying amount and fair-value-less-costs-to-sell, depreciation suspended, separate balance-sheet presentation, gain/loss on disposal. The held-for-sale-classifications IFRS 5 event collection.",
-    "path": "held/for/sale/classifications"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/held/for/sale/classifications"
   },
   {
     "atom": "classroom",
     "name": "classroom",
     "description": "Use when modelling a multi-agent learning session — a team of agents in pedagogical roles (teacher delivers, peer debates, examiner gates, debater brings viewpoints) teaches a competency to a learner (human or agent — the actor-merge). The examiner IS the gate, the debate IS competition (viewpoints → harmonic-first → decide), the learner acquires the competency's skillRoute. Generative friction, not passive delivery; the learner owns their record (sovereign, content-addressed).",
-    "path": "classroom"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/classroom"
   },
   {
     "atom": "clause",
     "name": "clause",
     "description": "Use when decomposing a contract into its constituent promises — each clause is a distinct obligation/right with its own conditions, beneficiaries, triggers, and performance timeline. The atomic unit of contract analysis.",
-    "path": "clause"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/clause"
+  },
+  {
+    "atom": "cleaning",
+    "name": "cleaning",
+    "description": "cleaning: a schema.org component word, fused from DryCleaningOrLaundry",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/cleaning"
+  },
+  {
+    "atom": "clearance",
+    "name": "clearance",
+    "description": "clearance: a schema.org component word, fused from securityClearanceRequirement",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/clearance"
+  },
+  {
+    "atom": "clincal",
+    "name": "clincal",
+    "description": "clincal: a schema.org component word, fused from clincalPharmacology",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/clincal"
+  },
+  {
+    "atom": "clinic",
+    "name": "clinic",
+    "description": "clinic: a schema.org component word, fused from MedicalClinic",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/clinic"
+  },
+  {
+    "atom": "clinical",
+    "name": "clinical",
+    "description": "clinical: a schema.org component word, fused from clinicalPharmacology",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/clinical"
+  },
+  {
+    "atom": "clip",
+    "name": "clip",
+    "description": "A short TV or radio program or a segment/part of a program.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/clip"
   },
   {
     "atom": "cloning",
     "name": "cloning",
     "description": "Use when the platform reproduces itself — collecting its own structural genome, publishing it as a verifiable federation envelope, and booting a bit-identical instance from that bundle alone; mitosis as federation, gated by content-uuid recompute.",
-    "path": "cloning"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/cloning"
   },
   {
     "atom": "close",
     "name": "close",
     "description": "Use when reasoning about the forbidding boundary state in erpax — fiscal period locked, document sealed, shift/stream finished, month-end close. The universal root of the closed state; dual of open.",
-    "path": "close"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/close"
+  },
+  {
+    "atom": "closes",
+    "name": "closes",
+    "description": "The closing hour of the place or service on the given day(s) of the week.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/closes"
+  },
+  {
+    "atom": "closures",
+    "name": "closures",
+    "description": "closures: a schema.org component word, fused from publicTransportClosuresInfo, schoolClosuresInfo",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/closures"
+  },
+  {
+    "atom": "clothing",
+    "name": "clothing",
+    "description": "clothing: a schema.org component word, fused from ClothingStore, MensClothingStore",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/clothing"
+  },
+  {
+    "atom": "club",
+    "name": "club",
+    "description": "club: a schema.org component word, fused from ComedyClub, HealthClub, NightClub, SportsClub",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/club"
   },
   {
     "atom": "cmyk",
     "name": "cmyk",
     "description": "Use when reasoning about color/signal from sequence position in erpax — the four print primaries ARE the first four rodin digits {0=K, 3=C, 6=M, 9=Y}; color comes from the slot, the C↔M polarity gap is closed by Y at 9 and anchored by K at 0. The signal model under links/tags/admin hue. Nested under rodin.",
-    "path": "rodin/cmyk"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/rodin/cmyk"
+  },
+  {
+    "atom": "co",
+    "name": "co",
+    "description": "co: a schema.org component word, fused from emissionsCO2",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/co"
+  },
+  {
+    "atom": "coach",
+    "name": "coach",
+    "description": "A person that acts in a coaching role for a sports team.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/coach"
   },
   {
     "atom": "code",
     "name": "code",
     "description": "Use when master-data needs a unique short code — accounts, products, machines, teams, categories. The CodeConcern field-factory; code derived from name when absent; code is the human key, content-uuid the machine key.",
-    "path": "code"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/code"
   },
   {
     "atom": "codes",
@@ -527,202 +2189,634 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "tax/jurisdictions/tax/codes"
   },
   {
+    "atom": "coding",
+    "name": "coding",
+    "description": "coding: a schema.org component word, fused from codingSystem",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/coding"
+  },
+  {
+    "atom": "coffee",
+    "name": "coffee",
+    "description": "coffee: a schema.org component word, fused from CafeOrCoffeeShop",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/coffee"
+  },
+  {
+    "atom": "coherence",
+    "name": "coherence",
+    "description": "Use when reasoning about wholeness as a MEASURABLE quantity — coherence is the scientific name for what erpax renders as harmony: phase-alignment across a signal. Physics/DSP coherence (phase-locked waves, 0..1), HRV 'psychophysiological coherence' (a real, measured intra-body state) and Popp's contested biophoton coherence; the inter-personal 'field coherence' aura claim is refuted. Wholeness renders as coherence, a gap or tamper as decoherence.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/coherence"
+  },
+  {
     "atom": "cohort",
     "name": "cohort",
     "description": "Use when analyzing or tracking groups of customers/users/items by shared trait — acquisition cohort, product cohort, geographic cohort. The segmentation for lifecycle or comparative analysis.",
-    "path": "cohort"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/cohort"
   },
   {
     "atom": "coil",
     "name": "coil",
     "description": "Use when reasoning about the doubling circuit 1·2·4·8·7·5 (×2 mod 9) that winds the rodin axis — why state/sequence positions sit in THAT order, digital-root closure, the ×10 octave lift vs +1 close→open. Nested under rodin → the coil of the vortex.",
-    "path": "rodin/coil"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/rodin/coil"
+  },
+  {
+    "atom": "coinsurance",
+    "name": "coinsurance",
+    "description": "coinsurance: a schema.org component word, fused from healthPlanCoinsuranceOption, healthPlanCoinsuranceRate",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/coinsurance"
   },
   {
     "atom": "collapse",
     "name": "collapse",
     "description": "Use when reducing collection/table sprawl to its canonical minimum — collapse every collection to one of four sinks (an official Payload plugin/template, the trinity node store, a Lexical content block, or a dimension/state/role of an existing node). The \"collapse all to Payload\" law; one name across every dimension, drawn from the standards.",
-    "path": "collapse"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/collapse"
+  },
+  {
+    "atom": "collateral",
+    "name": "collateral",
+    "description": "collateral: a schema.org component word, fused from requiredCollateral",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/collateral"
+  },
+  {
+    "atom": "colleague",
+    "name": "colleague",
+    "description": "A colleague of the person.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/colleague"
+  },
+  {
+    "atom": "colleagues",
+    "name": "colleagues",
+    "description": "The person's colleagues — the plural of colleague.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/colleagues"
+  },
+  {
+    "atom": "collect",
+    "name": "collect",
+    "description": "Use when porting every atom's SKILL.md into code — the collector that harvests translatable strings into a content-addressed per-folder table and the one canonical catalogue.",
+    "path": "translations/collect"
+  },
+  {
+    "atom": "collection",
+    "name": "collection",
+    "description": "A collection of items, e.g. creative works or products.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/collection"
   },
   {
     "atom": "collections",
     "name": "collections",
     "description": "Use when defining or debugging a Payload Collection or Global config — slug, fields, admin options, access, hooks, auth, upload, versions/drafts, timestamps, labels, default sort, or registering it in the config.",
-    "path": "collections"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/collections"
+  },
+  {
+    "atom": "college",
+    "name": "college",
+    "description": "college: a schema.org component word, fused from CollegeOrUniversity",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/college"
+  },
+  {
+    "atom": "color",
+    "name": "color",
+    "description": "The color of the product.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/color"
+  },
+  {
+    "atom": "colorist",
+    "name": "colorist",
+    "description": "The individual who adds color to inked drawings.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/colorist"
+  },
+  {
+    "atom": "column",
+    "name": "column",
+    "description": "column: a schema.org component word, fused from printColumn",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/column"
   },
   {
     "atom": "combinations",
     "name": "business-combinations",
     "description": "Use when recording an acquisition — asset deal, share deal, reverse acquisition, or NCI step-up — including IFRS 3 §32 goodwill computation, purchase price allocation (PPA) by asset/liability category, and measurement-period tracking. The IFRS 3 acquirer-side M&A register.",
-    "path": "legal/entities/business/combinations"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/legal/entities/business/combinations"
+  },
+  {
+    "atom": "comedy",
+    "name": "comedy",
+    "description": "comedy: a schema.org component word, fused from ComedyClub, ComedyEvent",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/comedy"
+  },
+  {
+    "atom": "comic",
+    "name": "comic",
+    "description": "comic: a schema.org component word, fused from ComicCoverArt, ComicIssue, ComicSeries, ComicStory",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/comic"
+  },
+  {
+    "atom": "commences",
+    "name": "commences",
+    "description": "commences: a schema.org component word, fused from legislationCommences",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/commences"
   },
   {
     "atom": "comment",
     "name": "comment",
     "description": "Use when any record needs threaded notes/annotations with author provenance — the polymorphic CommentsConcern. One comments collection serves all others via a polymorphic relationTo; author ties to audit.",
-    "path": "comment"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/comment"
+  },
+  {
+    "atom": "comments",
+    "name": "comments",
+    "description": "comments: a schema.org component word, fused from UserComments",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/comments"
   },
   {
     "atom": "commerce",
     "name": "commerce",
     "description": "Use when designing or porting the erpax commerce/trade domain to Payload — parties under many roles (seller/buyer/agent/supplier/consignee/carrier), the cart→quote→order→invoice→note document chain, payments/allocations/refunds, subscriptions & metered usage, inventory/stock movement, packing & shipment, dunning/credit terms. The transactional-flow `@erpax/commerce` twin (sequence 4·8).",
-    "path": "commerce"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/commerce"
   },
   {
     "atom": "commissions",
     "name": "sales-commissions",
     "description": "Use when recording and accounting for salesperson commissions on closed-won deals — IFRS-15 §91-94 incremental-cost-of-obtaining assessment, capitalise-and-amortise vs immediate-expense treatment, clawback provisions, payroll payment linkage. The IFRS-15 commission register.",
-    "path": "employees/sales/commissions"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/employees/sales/commissions"
   },
   {
     "atom": "commitments",
     "name": "commitments",
     "description": "Use when authorizing and tracking pre-contract spending commitments — SOX §302 authorization matrix, spending-authority validation, budget reservation (reserved/committed/spent/available), segregation-of-duties enforcement, PO or contract linkage, and Bulgaria ZKOD notarization. The commitment-ledger collection.",
-    "path": "commitments"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/commitments"
   },
   {
     "atom": "committees",
     "name": "audit-committees",
     "description": "Use when managing the audit committee for a legal entity — charter upload, meeting frequency, membership roster, and status lifecycle. The SOX §301 audit-committee master for corporate governance oversight.",
-    "path": "legal/entities/audit/committees"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/legal/entities/audit/committees"
+  },
+  {
+    "atom": "communicate",
+    "name": "communicate",
+    "description": "communicate: a schema.org component word, fused from CommunicateAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/communicate"
+  },
+  {
+    "atom": "community",
+    "name": "community",
+    "description": "community: a schema.org component word, fused from GatedResidenceCommunity",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/community"
+  },
+  {
+    "atom": "company",
+    "name": "company",
+    "description": "company: a schema.org component word, fused from MovingCompany, companyRegistration, productionCompany",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/company"
   },
   {
     "atom": "compass",
     "name": "compass",
     "description": "Use when reasoning about how you navigate erpax — navigation is SELF-GENERATING (sidebar · prev/next · ancestors · siblings · children · related · search all computed from the parent+prev/next trinity + the fractal path + the body links, never hand-listed) and it points like an alethiometer: ask any question and it points to the answer-path. The golden compass — the path IS the answer; the needle settles on the lowest-entropy form.",
-    "path": "compass"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/compass"
   },
   {
     "atom": "compensation",
     "name": "compensation",
     "description": "Use when defining or analyzing an employee's total pay structure — base salary, bonus, incentives, benefits value, equity, deductions. The compensation-concern collecting all economic value flows from employer to worker.",
-    "path": "compensation"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/compensation"
   },
   {
     "atom": "competencies",
     "name": "competencies",
     "description": "Use when mapping the one actor-capability taxonomy — agents load it, employees hold it, jobs require it, the skill-router resolves it. Skills ARE competencies, so the catalogue is COMPUTED from the SKILL.md corpus (no stored collection), and a held/required line references a competency by its content-addressed skillRoute.",
-    "path": "competencies"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/competencies"
+  },
+  {
+    "atom": "competency",
+    "name": "competency",
+    "description": "competency: a schema.org component word, fused from competencyRequired",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/competency"
   },
   {
     "atom": "competition",
     "name": "competition",
     "description": "Use when reasoning about how erpax skills EVOLVE — agents compete in commits, the fastest CORRECT solution (gate-verified) wins the lead, losers re-approach to beat it, optimising to infinity, at every scale. The selective-pressure dual of contribution; and because each competitor independently re-derives and content-addresses the canonical answer, competition AMPLIFIES tamper cost — performance pressure turned into security.",
-    "path": "competition"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/competition"
+  },
+  {
+    "atom": "competitor",
+    "name": "competitor",
+    "description": "A competitor in a sports event.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/competitor"
+  },
+  {
+    "atom": "complete",
+    "name": "complete",
+    "description": "complete: a schema.org component word, fused from CompleteDataFeed, timeToComplete",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/complete"
+  },
+  {
+    "atom": "completion",
+    "name": "completion",
+    "description": "completion: a schema.org component word, fused from salaryUponCompletion",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/completion"
+  },
+  {
+    "atom": "complex",
+    "name": "complex",
+    "description": "complex: a schema.org component word, fused from ApartmentComplex, TennisComplex",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/complex"
+  },
+  {
+    "atom": "complication",
+    "name": "complication",
+    "description": "complication: a schema.org component word, fused from possibleComplication",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/complication"
   },
   {
     "atom": "component",
     "name": "component",
     "description": "Use when defining a reusable UI building block — button, card, modal, form field, input. The atomic UI element with consistent design, behavior, and accessibility.",
-    "path": "component"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/component"
   },
   {
     "atom": "components",
     "name": "components",
     "description": "Use when building or debugging the erpax React UI — server-component-first Next.js App Router views, Lexical/Payload block renderers, admin panels, dashboards, widgets, and shared primitives — the society's FACE, the rendered surface where matter meets the eye.",
-    "path": "components"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/components"
+  },
+  {
+    "atom": "composer",
+    "name": "composer",
+    "description": "The person or organization who wrote a composition, or who is the composer of a work performed at some event.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/composer"
+  },
+  {
+    "atom": "composition",
+    "name": "composition",
+    "description": "composition: a schema.org component word, fused from MusicComposition, chemicalComposition, includedComposition, musicCompositionForm",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/composition"
+  },
+  {
+    "atom": "compost",
+    "name": "compost",
+    "description": "Use when organic residues are decomposed into a soil amendment — compost and manure as the organic-matter/microbial input that rebuilds soil rather than just feeding the crop. The literal entropy→soil recycling node: spent residue, decomposed, credited back to the soil's capacity (the regenerative balance).",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/compost"
+  },
+  {
+    "atom": "compound",
+    "name": "compound",
+    "description": "compound: a schema.org component word, fused from CompoundPriceSpecification",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/compound"
+  },
+  {
+    "atom": "comprised",
+    "name": "comprised",
+    "description": "Specifying something physically contained by something else. Typically used here for the underlying anatomical structures, such as organs, that comprise the anatomical system.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/comprised"
+  },
+  {
+    "atom": "computer",
+    "name": "computer",
+    "description": "computer: a schema.org component word, fused from ComputerLanguage, ComputerStore",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/computer"
+  },
+  {
+    "atom": "condition",
+    "name": "condition",
+    "description": "condition: a schema.org component word, fused from MedicalCondition, MedicalConditionStage, OfferItemCondition, healthCondition, itemCondition, relatedCondition",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/condition"
+  },
+  {
+    "atom": "conditions",
+    "name": "conditions",
+    "description": "conditions: a schema.org component word, fused from ShippingConditions, conditionsOfAccess, shippingConditions",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/conditions"
+  },
+  {
+    "atom": "conference",
+    "name": "conference",
+    "description": "conference: a schema.org component word, fused from ConferenceEvent",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/conference"
   },
   {
     "atom": "confidentiality",
     "name": "confidentiality",
     "description": "Use when a contract restricts disclosure — confidential information definition, permitted uses, exceptions (public domain, legally compelled, independent discovery), return/destruction, duration.",
-    "path": "confidentiality"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/confidentiality"
   },
   {
     "atom": "config",
     "name": "config",
     "description": "Use when authoring or modifying the root Payload config (payload.config.ts / buildConfig) — wiring db, collections, globals, plugins, editor, secret, cors/csrf, localization, i18n, admin, graphQL, email, typescript output, depth defaults, or custom endpoints.",
-    "path": "config"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/config"
+  },
+  {
+    "atom": "configuration",
+    "name": "configuration",
+    "description": "configuration: a schema.org component word, fused from DriveWheelConfigurationValue, driveWheelConfiguration, vehicleConfiguration",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/configuration"
+  },
+  {
+    "atom": "confirm",
+    "name": "confirm",
+    "description": "confirm: a schema.org component word, fused from ConfirmAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/confirm"
+  },
+  {
+    "atom": "confirmation",
+    "name": "confirmation",
+    "description": "confirmation: a schema.org component word, fused from confirmationNumber",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/confirmation"
   },
   {
     "atom": "conflict",
     "name": "conflict",
     "description": "Use for the conflict-of-interest check — before taking a matter, prove the new client is not adverse to an existing one. Strip the prefix and a conflict is a collision on the party relationship graph, detected by merge/identity (same entity → same uuid) — the duplicate-claim law applied to representation.",
-    "path": "conflict"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/conflict"
+  },
+  {
+    "atom": "connected",
+    "name": "connected",
+    "description": "Other anatomical structures to which this structure is connected.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/connected"
   },
   {
     "atom": "connections",
     "name": "connections",
     "description": "Use when managing the universal social/commercial/civic edge between typeless users — follow/friend/block/customer/supplier/employer/member — the one directed graph that carries the relation in context (not the user type), federated server-to-server via W3C ActivityPub.",
-    "path": "connections"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/connections"
   },
   {
     "atom": "consent",
     "name": "consent",
     "description": "Use when a contract or compliance regime requires explicit consent — who must consent, form (written/electronic/oral), revocation, withdrawal, withdrawal timeline, conditions.",
-    "path": "consent"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/consent"
+  },
+  {
+    "atom": "consideration",
+    "name": "consideration",
+    "description": "consideration: a schema.org component word, fused from hasAdultConsideration, safetyConsideration",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/consideration"
+  },
+  {
+    "atom": "considerations",
+    "name": "considerations",
+    "description": "considerations: a schema.org component word, fused from expertConsiderations",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/considerations"
   },
   {
     "atom": "consistency",
     "name": "consistency",
     "description": "Use when enforcing or auditing data consistency — ACID properties, eventual consistency vs strong consistency, consistency models (read-after-write, causal), constraint enforcement, synchronization guarantees across replicas or shards.",
-    "path": "consistency"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/consistency"
+  },
+  {
+    "atom": "consolidates",
+    "name": "consolidates",
+    "description": "consolidates: a schema.org component word, fused from legislationConsolidates",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/consolidates"
   },
   {
     "atom": "consolidations",
     "name": "consolidations",
     "description": "Use when running or auditing a multi-entity group consolidation — entity closure readiness, intercompany balance reconciliation, elimination entry preparation, and consolidation workflow per IFRS-10 / IAS-27 / ASC-810. The group-consolidation process collection.",
-    "path": "legal/entities/consolidations"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/legal/entities/consolidations"
+  },
+  {
+    "atom": "consortium",
+    "name": "consortium",
+    "description": "A Consortium is a membership Organization whose members are typically Organizations.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/consortium"
   },
   {
     "atom": "constitution",
     "name": "constitution",
     "description": "Use when reasoning about the entrenched foundation — the seven supreme articles, what a majority may amend versus what is perpetual, and why the polity cannot vote away identity, integrity, conservation, or the one-person-one-vote.",
-    "path": "constitution"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/constitution"
   },
   {
     "atom": "constraint",
     "name": "constraint",
     "description": "Use when defining data constraints at the schema level — NOT NULL / UNIQUE / FOREIGN KEY / CHECK / DEFAULT constraints, their lifecycle (creation/modification/disable), enforcement semantics, and violation detection in the database layer.",
-    "path": "constraint"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/constraint"
+  },
+  {
+    "atom": "constraints",
+    "name": "constraints",
+    "description": "constraints: a schema.org component word, fused from numConstraints",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/constraints"
+  },
+  {
+    "atom": "construction",
+    "name": "construction",
+    "description": "construction: a schema.org component word, fused from HomeAndConstructionBusiness",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/construction"
+  },
+  {
+    "atom": "consumable",
+    "name": "consumable",
+    "description": "A pointer to another product (or multiple products) for which this product is a consumable.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/consumable"
+  },
+  {
+    "atom": "consume",
+    "name": "consume",
+    "description": "consume: a schema.org component word, fused from ConsumeAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/consume"
+  },
+  {
+    "atom": "consumption",
+    "name": "consumption",
+    "description": "consumption: a schema.org component word, fused from EnergyConsumptionDetails, fuelConsumption, hasEnergyConsumptionDetails",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/consumption"
+  },
+  {
+    "atom": "contact",
+    "name": "contact",
+    "description": "contact: a schema.org component word, fused from ContactPage, ContactPoint, ContactPointOption, applicationContact, contactOption, contactPoint",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/contact"
+  },
+  {
+    "atom": "contactless",
+    "name": "contactless",
+    "description": "contactless: a schema.org component word, fused from contactlessPayment",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/contactless"
+  },
+  {
+    "atom": "contained",
+    "name": "contained",
+    "description": "The basic containment relation between a place and one that contains it.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/contained"
+  },
+  {
+    "atom": "contains",
+    "name": "contains",
+    "description": "contains: a schema.org component word, fused from containsPlace, containsSeason, geoContains",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/contains"
+  },
+  {
+    "atom": "content",
+    "name": "content",
+    "description": "content: a schema.org component word, fused from AdvertiserContentArticle, HealthTopicContent, WebContent, carbohydrateContent, cholesterolContent, contentLocation",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/content"
+  },
+  {
+    "atom": "context",
+    "name": "context",
+    "description": "context: a schema.org component word, fused from originalMediaContextDescription",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/context"
+  },
+  {
+    "atom": "continent",
+    "name": "continent",
+    "description": "One of the continents (for example, Europe or Africa).",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/continent"
   },
   {
     "atom": "contingencies",
     "name": "commitments-and-contingencies",
     "description": "Use when disclosing off-balance-sheet obligations in financial statement notes — capex commitments, purchase obligations, litigation, guarantees, performance bonds, tax disputes, insurance recoveries — with IAS-37 likelihood ladder and reclassification-to-provision workflow; IAS-37 §86-92 / ASC-440 / ASC-450 disclosure. The structured notes-disclosure register distinct from recognised provisions.",
-    "path": "commitments/and/contingencies"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/commitments/and/contingencies"
+  },
+  {
+    "atom": "continuation",
+    "name": "continuation",
+    "description": "continuation: a schema.org component word, fused from tocContinuation",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/continuation"
+  },
+  {
+    "atom": "contractor",
+    "name": "contractor",
+    "description": "contractor: a schema.org component word, fused from GeneralContractor, RoofingContractor",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/contractor"
   },
   {
     "atom": "contracts",
     "name": "insurance-contracts",
     "description": "Use when recognising or measuring insurance contract groups under IFRS 17 — GMM (building blocks — future cash flows, risk adjustment, CSM), PAA (short coverage), or VFA (direct participation); annual cohort grouping, profitability tiers, reinsurance link, loss-component, and disclosure (§93). The insurance-contracts IFRS 17 register.",
-    "path": "insurance/contracts"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/insurance/contracts"
+  },
+  {
+    "atom": "contraindication",
+    "name": "contraindication",
+    "description": "A contraindication for this therapy.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/contraindication"
   },
   {
     "atom": "contribution",
     "name": "contribution",
     "description": "Use when many agents fill the society's gaps in parallel — shared discoveries (a minted atom, a closed gap, an internalised dependency) broadcast over the agent-sync bus, content-addressed so the same fill by two agents merges to one. Gaps filled by many; every contributor credited; recorded in git history. Matter-twin services/agent-sync/discovery.ts.",
-    "path": "contribution"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/contribution"
+  },
+  {
+    "atom": "contributor",
+    "name": "contributor",
+    "description": "A secondary contributor to the CreativeWork or Event.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/contributor"
+  },
+  {
+    "atom": "control",
+    "name": "control",
+    "description": "control: a schema.org component word, fused from ControlAction, accessibilityControl",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/control"
   },
   {
     "atom": "controls",
     "name": "internal-controls",
     "description": "Use when defining or cataloguing internal controls — preventive, detective, corrective, or compensating — across COSO components (environment, risk assessment, control activities, information, monitoring); owner, frequency, review dates, SOX §404 scope. The internal-controls COSO-2013 register.",
-    "path": "internal/controls"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/internal/controls"
+  },
+  {
+    "atom": "convenience",
+    "name": "convenience",
+    "description": "convenience: a schema.org component word, fused from ConvenienceStore",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/convenience"
+  },
+  {
+    "atom": "conversation",
+    "name": "conversation",
+    "description": "One or more messages between organizations or people on a particular topic. Individual messages can be linked to the conversation with isPartOf or hasPart properties.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/conversation"
   },
   {
     "atom": "conversion",
     "name": "conversion",
-    "description": "Use when measuring funnel step completion — click→impression, inquiry→lead, lead→opportunity, opportunity→deal, deal→renewal; event-driven attribution.",
-    "path": "conversion"
+    "description": "Use when a measured thing is re-expressed on another basis through a rate — unit conversion (kg↔g, acre↔decare), currency conversion (USD↔BGN↔EUR), and funnel-stage conversion (lead→deal) are one atom: a change of basis via a rate, pinned at a point, that conserves substance and accounts by double-entry. Automatic, never the spreadsheet's hand-typed 2.00 лв text that breaks the arithmetic.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/conversion"
+  },
+  {
+    "atom": "cook",
+    "name": "cook",
+    "description": "cook: a schema.org component word, fused from CookAction, cookTime",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/cook"
+  },
+  {
+    "atom": "cooking",
+    "name": "cooking",
+    "description": "cooking: a schema.org component word, fused from cookingMethod",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/cooking"
+  },
+  {
+    "atom": "cooperative",
+    "name": "cooperative",
+    "description": "An organization that is a joint project of multiple organizations or persons.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/cooperative"
   },
   {
     "atom": "coordinate",
     "name": "coordinate",
     "description": "Use when reasoning about where an atom sits in the whole — its coordinate is the cross of three neighbor uuids (parent, prev, next), binding it into the tree and the sequence ring. The uuid is the coordinate system; this cross is the next uuid trinity.",
-    "path": "coordinate"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/coordinate"
+  },
+  {
+    "atom": "coordinates",
+    "name": "coordinates",
+    "description": "coordinates: a schema.org component word, fused from GeoCoordinates",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/coordinates"
+  },
+  {
+    "atom": "copay",
+    "name": "copay",
+    "description": "copay: a schema.org component word, fused from healthPlanCopay, healthPlanCopayOption",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/copay"
+  },
+  {
+    "atom": "copyright",
+    "name": "copyright",
+    "description": "copyright: a schema.org component word, fused from copyrightHolder, copyrightNotice, copyrightYear",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/copyright"
+  },
+  {
+    "atom": "corporation",
+    "name": "corporation",
+    "description": "Organization: A business corporation.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/corporation"
+  },
+  {
+    "atom": "correction",
+    "name": "correction",
+    "description": "Indicates a correction to a CreativeWork, either via a CorrectionComment, textually or in another document.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/correction"
+  },
+  {
+    "atom": "corrections",
+    "name": "corrections",
+    "description": "corrections: a schema.org component word, fused from correctionsPolicy",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/corrections"
+  },
+  {
+    "atom": "corrects",
+    "name": "corrects",
+    "description": "corrects: a schema.org component word, fused from legislationCorrects",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/corrects"
   },
   {
     "atom": "correlation",
     "name": "correlation",
     "description": "Use when analyzing variable relationships — Pearson/Spearman correlation, multicollinearity detection, correlation matrices, spurious vs causal correlation, correlation thresholds in feature selection.",
-    "path": "correlation"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/correlation"
   },
   {
     "atom": "corruption",
     "name": "anti-corruption",
     "description": "Use when detecting internal-control invariants — content-uuid immutability, segregation of duties, double-entry balance, or reversals-only history; the four architectural impossibilities that make financial corruption structurally detectable.",
-    "path": "anti/corruption"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/anti/corruption"
   },
   {
     "atom": "cost",
@@ -731,112 +2825,418 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "tamper/cost"
   },
   {
+    "atom": "count",
+    "name": "count",
+    "description": "count: a schema.org component word, fused from answerCount, commentCount, downvoteCount, interactionCount, offerCount, ratingCount",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/count"
+  },
+  {
+    "atom": "counter",
+    "name": "counter",
+    "description": "counter: a schema.org component word, fused from InteractionCounter",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/counter"
+  },
+  {
+    "atom": "countersigned",
+    "name": "countersigned",
+    "description": "countersigned: a schema.org component word, fused from legislationCountersignedBy",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/countersigned"
+  },
+  {
+    "atom": "countries",
+    "name": "countries",
+    "description": "countries: a schema.org component word, fused from countriesNotSupported, countriesSupported",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/countries"
+  },
+  {
+    "atom": "country",
+    "name": "country",
+    "description": "A country.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/country"
+  },
+  {
+    "atom": "county",
+    "name": "county",
+    "description": "county: a schema.org component word, fused from cvdFacilityCounty",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/county"
+  },
+  {
+    "atom": "course",
+    "name": "course",
+    "description": "A description of an educational course which may be offered as distinct instances which take place at different times or take place at different locations, or be offered through different media or mod",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/course"
+  },
+  {
+    "atom": "courthouse",
+    "name": "courthouse",
+    "description": "A courthouse.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/courthouse"
+  },
+  {
+    "atom": "cover",
+    "name": "cover",
+    "description": "cover: a schema.org component word, fused from ComicCoverArt, CoverArt, variantCover",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/cover"
+  },
+  {
+    "atom": "coverage",
+    "name": "coverage",
+    "description": "coverage: a schema.org component word, fused from coverageEndTime, coverageStartTime, missionCoveragePrioritiesPolicy, spatialCoverage, temporalCoverage",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/coverage"
+  },
+  {
+    "atom": "covercrop",
+    "name": "covercrop",
+    "description": "Use when a crop is grown to protect and build the soil rather than to harvest — cover crops / green manures: catch crops scavenging residual N, nurse crops sheltering a main crop, legumes fixing nitrogen vs grasses building biomass, then termination (mow/crimp/winterkill/incorporate) before the cash crop. The off-season twin of crop; soil capital, not sales.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/covercrop"
+  },
+  {
+    "atom": "covered",
+    "name": "covered",
+    "description": "covered: a schema.org component word, fused from geoCoveredBy",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/covered"
+  },
+  {
+    "atom": "covers",
+    "name": "covers",
+    "description": "covers: a schema.org component word, fused from geoCovers",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/covers"
+  },
+  {
+    "atom": "covid",
+    "name": "covid",
+    "description": "covid: a schema.org component word, fused from CovidTestingFacility",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/covid"
+  },
+  {
+    "atom": "cream",
+    "name": "cream",
+    "description": "cream: a schema.org component word, fused from IceCreamShop",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/cream"
+  },
+  {
+    "atom": "create",
+    "name": "create",
+    "description": "create: a schema.org component word, fused from CreateAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/create"
+  },
+  {
+    "atom": "created",
+    "name": "created",
+    "description": "created: a schema.org component word, fused from dateCreated, locationCreated",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/created"
+  },
+  {
+    "atom": "creative",
+    "name": "creative",
+    "description": "creative: a schema.org component word, fused from CreativeWork, CreativeWorkSeason, CreativeWorkSeries, creativeWorkStatus, encodesCreativeWork",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/creative"
+  },
+  {
+    "atom": "creator",
+    "name": "creator",
+    "description": "The creator/author of this CreativeWork. This is the same as the Author property for CreativeWork.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/creator"
+  },
+  {
+    "atom": "credential",
+    "name": "credential",
+    "description": "A credential is a certificate that is used to verify the identity of a person or entity.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/credential"
+  },
+  {
+    "atom": "credit",
+    "name": "credit",
+    "description": "credit: a schema.org component word, fused from BankOrCreditUnion, CreditCard, LoanOrCredit, creditText",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/credit"
+  },
+  {
+    "atom": "credited",
+    "name": "credited",
+    "description": "The group the release is credited to if different than the byArtist. For example, Red and Blue is credited to \"Stefani Germanotta Band\", but by Lady Gaga.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/credited"
+  },
+  {
+    "atom": "credits",
+    "name": "credits",
+    "description": "credits: a schema.org component word, fused from numberOfCredits, typicalCreditsPerTerm",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/credits"
+  },
+  {
+    "atom": "crematorium",
+    "name": "crematorium",
+    "description": "A crematorium.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/crematorium"
+  },
+  {
     "atom": "crest",
     "name": "crest",
     "description": "Use when reasoning about the peak position of the horo state ring — digit 8, \"the ascent peaks\", the high step where a flow is fully built and architectures merge (packed, assembled, ready). Top of the ascent arc; nested under horo.",
-    "path": "horo/crest"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/horo/crest"
   },
   {
     "atom": "crisis",
     "name": "crisis",
     "description": "Use when reasoning about complex crises as the conditions a society lives under — комплексни кризи — multiple simultaneous interacting shocks (financial · pandemic · war · energy · demographic) whose effects compound rather than add. A crisis is an entropy spike on the society ledger; because wellbeing has non-compensatory floors, a polycrisis hits hardest where a dimension is already near the floor, and exposure is stratified by age and career. Resilience and recovery are the rebalancing breath.",
-    "path": "crisis"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/crisis"
+  },
+  {
+    "atom": "critic",
+    "name": "critic",
+    "description": "critic: a schema.org component word, fused from CriticReview",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/critic"
+  },
+  {
+    "atom": "crop",
+    "name": "crop",
+    "description": "Use when modelling a cultivated plant type as the agricultural SKU — the produce-catalogue row carrying its sale unit (1 bunch, 100 g, 1 head), unit price, and the agronomic constants (yield per area, plant spacing, N·K₂O need, plantings & harvests per season) that explode a demand quantity into land, seed, and fertility. The crop is the bill-of-materials line of a farm; its heterogeneous sale unit is why automatic unit conversion is non-negotiable.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/crop"
+  },
+  {
+    "atom": "cropplan",
+    "name": "cropplan",
+    "description": "Use when converting a sales/yield goal into what to grow, how much, when, and where — the crop plan (the what/how-much: quantities, seed, beds) and its spatial twin the field plan/map (the where: each succession assigned to a bed/block). The master planning document of a market farm; the backward demand→land calculation made concrete and recorded.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/cropplan"
+  },
+  {
+    "atom": "crosses",
+    "name": "crosses",
+    "description": "crosses: a schema.org component word, fused from geoCrosses",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/crosses"
+  },
+  {
+    "atom": "css",
+    "name": "css",
+    "description": "css: a schema.org component word, fused from CssSelectorType, cssSelector",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/css"
+  },
+  {
+    "atom": "cuisine",
+    "name": "cuisine",
+    "description": "cuisine: a schema.org component word, fused from recipeCuisine, servesCuisine",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/cuisine"
+  },
+  {
+    "atom": "cultivation",
+    "name": "cultivation",
+    "description": "Use when weeds are controlled mechanically among a standing crop — shallow soil-stirring (hoeing, wheel hoe, tine weeder) and thermal (flame weeding). Distinct from tillage (which opens bare ground): cultivation works between the rows of a growing crop, timed to the white-thread weed stage. Many shallow, well-timed passes are the low-cost alternative to herbicide.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/cultivation"
+  },
+  {
+    "atom": "currencies",
+    "name": "currencies",
+    "description": "currencies: a schema.org component word, fused from currenciesAccepted",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/currencies"
   },
   {
     "atom": "currency",
     "name": "currency",
     "description": "Use when a value carries money — amount + ISO-4217 currency, exchange rates, rounding, multi-currency ledgers/totals. The CurrencyConcern/AmountConcern field-factory; money is amount+currency, never a currency-baked field name.",
-    "path": "currency"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/currency"
+  },
+  {
+    "atom": "current",
+    "name": "current",
+    "description": "current: a schema.org component word, fused from currentExchangeRate",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/current"
+  },
+  {
+    "atom": "customer",
+    "name": "customer",
+    "description": "Party placing the order or paying the invoice.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/customer"
   },
   {
     "atom": "customers",
     "name": "customers",
     "description": "Use when creating or querying the sale-side party master — customer identity, LEI, IBAN, VAT classification, credit limit, payment terms, accounts-receivable exposure, and GDPR consent. The EN-16931 buyer party collection.",
-    "path": "customers"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/customers"
+  },
+  {
+    "atom": "cutoff",
+    "name": "cutoff",
+    "description": "cutoff: a schema.org component word, fused from cutoffTime",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/cutoff"
+  },
+  {
+    "atom": "cvd",
+    "name": "cvd",
+    "description": "cvd: a schema.org component word, fused from cvdCollectionDate, cvdFacilityCounty, cvdFacilityId, cvdNumBeds, cvdNumBedsOcc, cvdNumC19Died",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/cvd"
   },
   {
     "atom": "cycles",
     "name": "dunning-cycles",
     "description": "Use when tracking or auditing the collections process for an overdue invoice — reminder→demand→legal-handover→write-off stages, ECL allowance evidence (IFRS 9 §5.5 / ASC 326-20 CECL), manual overrides and SOX §404 bad-debt evidence. The dunning-cycles collection.",
-    "path": "invoices/dunning/cycles"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/invoices/dunning/cycles"
+  },
+  {
+    "atom": "damages",
+    "name": "damages",
+    "description": "damages: a schema.org component word, fused from knownVehicleDamages",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/damages"
+  },
+  {
+    "atom": "dance",
+    "name": "dance",
+    "description": "dance: a schema.org component word, fused from DanceEvent, DanceGroup",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/dance"
+  },
+  {
+    "atom": "data",
+    "name": "data",
+    "description": "Data associated with the event, like for instance a log message.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/data"
   },
   {
     "atom": "database",
     "name": "database",
     "description": "Use when configuring the Payload database adapter or working with migrations/schema — choosing sqlite/d1/postgres/mongo, running migrate / migrate:create / migrate:down, dev push, transactions, indexes, defaultIDType, or fixing schema/enum/table-name errors.",
-    "path": "database"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/database"
   },
   {
     "atom": "dataprotection",
     "name": "data-protection",
     "description": "Use when a contract or processing agreement specifies data-protection obligations — processor/controller roles, permitted uses, security measures (encryption, access controls, breach notification), DPA terms.",
-    "path": "data-protection"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/data-protection"
+  },
+  {
+    "atom": "dataset",
+    "name": "dataset",
+    "description": "A body of structured information describing some topic(s) of interest.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/dataset"
   },
   {
     "atom": "date",
     "name": "date",
     "description": "Use when a document carries a temporal point — invoice date, transaction date, period-end date, expiry date, created-at, effective-at. An ISO-8601 datetime pinned at a point in time (the UTC timestamp + timezone context via versions). The temporal positioning twin of period.",
-    "path": "date"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/date"
+  },
+  {
+    "atom": "dated",
+    "name": "dated",
+    "description": "dated: a schema.org component word, fused from DatedMoneySpecification",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/dated"
+  },
+  {
+    "atom": "dateline",
+    "name": "dateline",
+    "description": "A dateline is a brief piece of text included in news articles that describes where and when the story was written or filed though the date is often omitted. Sometimes only a placename is provided. Str",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/dateline"
+  },
+  {
+    "atom": "day",
+    "name": "day",
+    "description": "Defines the day(s) of the week on which a recurring Event takes place. May be specified using either DayOfWeek, or alternatively Text conforming to iCal's syntax for byDay recurrence rules.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/day"
+  },
+  {
+    "atom": "days",
+    "name": "days",
+    "description": "days: a schema.org component word, fused from businessDays, merchantReturnDays, productReturnDays",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/days"
+  },
+  {
+    "atom": "de",
+    "name": "de",
+    "description": "de: a schema.org component word, fused from DENonprofitType",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/de"
+  },
+  {
+    "atom": "deactivate",
+    "name": "deactivate",
+    "description": "deactivate: a schema.org component word, fused from DeactivateAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/deactivate"
+  },
+  {
+    "atom": "deadline",
+    "name": "deadline",
+    "description": "deadline: a schema.org component word, fused from applicationDeadline",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/deadline"
   },
   {
     "atom": "deadlines",
     "name": "compliance-deadlines",
     "description": "Use when tracking filing, audit, certification, reporting, payment, or disclosure deadlines per legal entity and jurisdiction — due-date management, on-track/at-risk/overdue status, and compliance calendar oversight per ISO-37301. The compliance-deadline calendar collection.",
-    "path": "legal/entities/compliance/deadlines"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/legal/entities/compliance/deadlines"
+  },
+  {
+    "atom": "dealer",
+    "name": "dealer",
+    "description": "dealer: a schema.org component word, fused from AutoDealer, MotorcycleDealer",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/dealer"
+  },
+  {
+    "atom": "death",
+    "name": "death",
+    "description": "death: a schema.org component word, fused from deathDate, deathPlace",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/death"
   },
   {
     "atom": "decide",
     "name": "decide",
     "description": "Use when the society must pick a winner among candidate solutions — the composed decision wiring the three selection laws into one: gate-CORRECT (competition, the referee is the gate not a vote), HARMONIC-preferred (logic, the self-consistent resolve first), MOST-EFFICIENT (cost, max output per spend), cheapest, deterministic by content-uuid. decide(candidates) is the single function the agent society runs to choose; the runtime dispatch it drives is the boundary.",
-    "path": "decide"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/decide"
   },
   {
     "atom": "declarations",
     "name": "customs-declarations",
     "description": "Use when filing export or import customs declarations for a cross-border shipment — recording HS-coded line items, declared values, duty and import VAT, INCOTERMS, country of origin, and tracking MRN issuance through to customs release. The EU UCC / WCO structured customs-declaration collection.",
-    "path": "customers/sales/orders/shipments/customs/declarations"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/customers/sales/orders/shipments/customs/declarations"
   },
   {
     "atom": "decompression",
     "name": "decompression",
     "description": "Use when reasoning about the dive/decompression metaphor for erpax math — on-gas/off-gas as take/give, the gas debt as a conserved transaction balanced before close, half-time doubling as the rodin coil, deco stops as horo positions, M-values as the harmony bound, and the {1,2,3} basic-team basis (cave·recreational·technical = self·duality·trinity).",
-    "path": "decompression"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/decompression"
   },
   {
     "atom": "deduction",
     "name": "deduction",
     "description": "Use for tax-deductible expenses and deduction timing — permanent (non-deductible) vs temporary (deductible in different period) per IAS-12; central to tax provision and deferred-tax calculation",
-    "path": "deduction"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/deduction"
   },
   {
     "atom": "deduplication",
     "name": "deduplication",
     "description": "Use when eliminating duplicate records — duplicate detection (exact/fuzzy), merge strategies, idempotency to prevent re-ingestion, duplicate scope (entity/transaction/field-level), dedup window/time-range.",
-    "path": "deduplication"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/deduplication"
+  },
+  {
+    "atom": "default",
+    "name": "default",
+    "description": "default: a schema.org component word, fused from defaultValue",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/default"
   },
   {
     "atom": "defect",
     "name": "defect",
     "description": "Use when logging product/service quality problems — manufacturing defects, software bugs, rework triggers, quality inspections results. The non-conformance record.",
-    "path": "defect"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/defect"
   },
   {
     "atom": "defence",
     "name": "defence",
     "description": "Use when managing defence/military operations — personnel rosters, equipment inventory, deployment scheduling, force readiness, or defence procurement in government military branches (COFOG 02).",
-    "path": "defence"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/defence"
   },
   {
     "atom": "deferral",
     "name": "deferral",
     "description": "Use when deferring the recognition of revenue or expense to future periods pending contract performance, delivery, or time passage — the dual of accrual and core to IFRS-15 revenue recognition",
-    "path": "deferral"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/deferral"
   },
   {
     "atom": "deferredrevenue",
     "name": "deferredrevenue",
     "description": "Use for customer advance payments or contract-liability positions — amounts received before performance is satisfied; net against contract assets to determine net contract position",
-    "path": "deferredrevenue"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/deferredrevenue"
+  },
+  {
+    "atom": "defined",
+    "name": "defined",
+    "description": "defined: a schema.org component word, fused from DefinedRegion, DefinedTerm, DefinedTermSet, hasDefinedTerm, inDefinedTermSet",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/defined"
   },
   {
     "atom": "definitions",
@@ -845,184 +3245,868 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "workflow/definitions"
   },
   {
+    "atom": "degreeday",
+    "name": "degreeday",
+    "description": "Use when crop development is predicted from accumulated heat rather than the calendar — growing degree days (GDD = (Tmax+Tmin)/2 − Tbase, capped) measure the heat a crop banks toward maturity, so a warm spring advances harvest and a cool one delays it. The heat-unit clock that makes a fixed-week calendar drift; pairs with frost and evapotranspiration.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/degreeday"
+  },
+  {
+    "atom": "delete",
+    "name": "delete",
+    "description": "delete: a schema.org component word, fused from DeleteAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/delete"
+  },
+  {
+    "atom": "deleted",
+    "name": "deleted",
+    "description": "deleted: a schema.org component word, fused from dateDeleted",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/deleted"
+  },
+  {
+    "atom": "delivery",
+    "name": "delivery",
+    "description": "delivery: a schema.org component word, fused from DeliveryChargeSpecification, DeliveryEvent, DeliveryMethod, DeliveryTimeSettings, ParcelDelivery, ShippingDeliveryTime",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/delivery"
+  },
+  {
+    "atom": "demand",
+    "name": "demand",
+    "description": "A demand entity represents the public, not necessarily binding, not necessarily exclusive, announcement by an organization or person to seek a certain type of goods or services. For describing demand",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/demand"
+  },
+  {
+    "atom": "denominator",
+    "name": "denominator",
+    "description": "denominator: a schema.org component word, fused from measurementDenominator",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/denominator"
+  },
+  {
+    "atom": "dentist",
+    "name": "dentist",
+    "description": "A dentist.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/dentist"
+  },
+  {
+    "atom": "depart",
+    "name": "depart",
+    "description": "depart: a schema.org component word, fused from DepartAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/depart"
+  },
+  {
+    "atom": "department",
+    "name": "department",
+    "description": "A relationship between an organization and a department of that organization, also described as an organization (allowing different urls, logos, opening hours). For example: a store with a pharmacy, o",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/department"
+  },
+  {
+    "atom": "departure",
+    "name": "departure",
+    "description": "departure: a schema.org component word, fused from departureAirport, departureBoatTerminal, departureBusStop, departureGate, departurePlatform, departureStation",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/departure"
+  },
+  {
+    "atom": "dependencies",
+    "name": "dependencies",
+    "description": "Prerequisites needed to fulfill steps in article.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/dependencies"
+  },
+  {
     "atom": "deploy",
     "name": "deploy",
     "description": "Use when deploying a Payload app to production or fixing build/migration/env issues — required secrets, running migrations vs dev push, building without a DB connection, file storage, or Cloudflare/Next/Docker specifics.",
-    "path": "deploy"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/deploy"
+  },
+  {
+    "atom": "deposit",
+    "name": "deposit",
+    "description": "deposit: a schema.org component word, fused from DepositAccount, InvestmentOrDeposit",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/deposit"
   },
   {
     "atom": "depreciate",
     "name": "depreciate",
     "description": "Use to compute depreciation — straight-line, declining-balance (DDB), sum-of-years-digits, units-of-activity. Pure compute (no persistence); cites IAS-16 / US-GAAP ASC-360. Nested under calculate.",
-    "path": "calculate/depreciate"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/calculate/depreciate"
+  },
+  {
+    "atom": "depth",
+    "name": "depth",
+    "description": "The depth of the item.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/depth"
   },
   {
     "atom": "derive",
     "name": "derive",
     "description": "Use when skills come from USER CONTENT — an HR job description names the competencies a role requires, and each named skill is content-addressed to a corpus route (same name ⇒ same route ⇒ merge). A route not yet in the corpus is a NEW skill the user content adds — the corpus GROWS from what users write. The dual of generate (which mints from aura gaps): derive mints from user content; both feed one content-addressed corpus.",
-    "path": "derive"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/derive"
   },
   {
     "atom": "descent",
     "name": "descent",
     "description": "Use when reasoning about the fifth position of the horo state ring — digit 7, \"the wave returns\", the binding step where a built flow begins its return (shipped, dispatched, posted out). First of the descent/return arc; nested under horo.",
-    "path": "horo/descent"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/horo/descent"
   },
   {
     "atom": "description",
     "name": "description",
     "description": "Use when capturing free-form explanatory text — line item description, finding description, audit observation, notes. Rich or plain text; never a metadata bag (prefer explicit fields + tags for structured data).",
-    "path": "description"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/description"
   },
   {
     "atom": "design",
     "name": "design",
     "description": "Use when defining the visual and interaction form of an experience — wireframes, prototypes, design reviews, design systems, accessibility, user research insights applied to form.",
-    "path": "design"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/design"
   },
   {
     "atom": "desire",
     "name": "desire",
     "description": "Use when reasoning about the demand seed of a market — the latent want that precedes any transaction. The one market atom you cannot manufacture exogenously; you reveal or awaken it, never inject it. If desire is the zero atom, no convenience, proof, or trendsetter reaches the market — you redefine the product onto a want that already exists.",
-    "path": "desire"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/desire"
+  },
+  {
+    "atom": "destination",
+    "name": "destination",
+    "description": "destination: a schema.org component word, fused from TouristDestination, shippingDestination",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/destination"
+  },
+  {
+    "atom": "details",
+    "name": "details",
+    "description": "details: a schema.org component word, fused from BedDetails, EnergyConsumptionDetails, OfferShippingDetails, hasEnergyConsumptionDetails, labelDetails, shippingDetails",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/details"
+  },
+  {
+    "atom": "detected",
+    "name": "detected",
+    "description": "detected: a schema.org component word, fused from signDetected",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/detected"
   },
   {
     "atom": "dev",
     "name": "dev",
     "description": "Use to run, start, launch, boot, dev-serve, smoke-test, or screenshot the erpax app (Payload 4 + Next.js on Cloudflare D1/R2). Drives the running app two ways — a Local API smoke (tsx) for backend/service/collection/hook changes, and a Playwright browser driver for the public frontend + admin. Use when asked to \"run erpax\", \"start the dev server\", \"screenshot the site\", or confirm a change works in the real app.",
-    "path": "run/dev"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/run/dev"
+  },
+  {
+    "atom": "device",
+    "name": "device",
+    "description": "Device required to run the application. Used in cases where a specific make/model is required to run the application.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/device"
   },
   {
     "atom": "devices",
     "name": "fiscal-devices",
     "description": "Use when registering or managing СУПТО fiscal hardware — each device carries an 8-digit ФУ number (first УНП segment), per-device currency and VAT tax groups, default operator and terminal for automated sales, and decommission lifecycle per Наредба Н-18. The fiscal-device registry.",
-    "path": "fiscal/devices"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/fiscal/devices"
+  },
+  {
+    "atom": "diagnose",
+    "name": "diagnose",
+    "description": "diagnose: a schema.org component word, fused from usedToDiagnose",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/diagnose"
+  },
+  {
+    "atom": "diagnosis",
+    "name": "diagnosis",
+    "description": "One or more alternative conditions considered in the differential diagnosis process as output of a diagnosis process.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/diagnosis"
+  },
+  {
+    "atom": "diagnostic",
+    "name": "diagnostic",
+    "description": "diagnostic: a schema.org component word, fused from DiagnosticLab, DiagnosticProcedure",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/diagnostic"
+  },
+  {
+    "atom": "diagram",
+    "name": "diagram",
+    "description": "An image containing a diagram that illustrates the structure and/or its component substructures and/or connections with other structures.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/diagram"
+  },
+  {
+    "atom": "died",
+    "name": "died",
+    "description": "died: a schema.org component word, fused from cvdNumC19Died",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/died"
+  },
+  {
+    "atom": "diet",
+    "name": "diet",
+    "description": "A strategy of regulating the intake of food to achieve or maintain a specific health-related goal.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/diet"
+  },
+  {
+    "atom": "dietary",
+    "name": "dietary",
+    "description": "dietary: a schema.org component word, fused from DietarySupplement",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/dietary"
+  },
+  {
+    "atom": "differential",
+    "name": "differential",
+    "description": "differential: a schema.org component word, fused from differentialDiagnosis",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/differential"
+  },
+  {
+    "atom": "diffusion",
+    "name": "diffusion",
+    "description": "Use when reasoning about HOW a small market becomes big over time — the time-axis the static market product is missing. Adoption spreads as a contagion (Bass: rate = (p + q·F)·(1−F)·m; word-of-mouth q≈0.38 far exceeds advertising p≈0.03), filling the adopter sequence innovators → early-adopters → majority → laggards. Trendsetters are the seed the imitation engine amplifies; the chasm is where that engine stalls and most small markets stay small.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/diffusion"
+  },
+  {
+    "atom": "digit",
+    "name": "digit",
+    "description": "Use when addressing an atom in digit-space — the dual of word — its horo sequence position and the digital-root of its content-uuid, the trace that completes the aura into a tamper-evident trinity.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/digit"
+  },
+  {
+    "atom": "digital",
+    "name": "digital",
+    "description": "digital: a schema.org component word, fused from DigitalDocument, DigitalDocumentPermission, DigitalDocumentPermissionType, DigitalPlatformEnumeration, IPTCDigitalSourceEnumeration, NoteDigitalDocumen",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/digital"
   },
   {
     "atom": "dimension",
     "name": "dimension",
     "description": "Use when one concept is split across many prefixed collections/fields that should coexist at one coordinate — bank-/fx-/trade-/intercompany-transactions → transactions; customers/vendors/addresses → parties. A prefix is a dimension not yet collapsed (kind/context/role/perspective/unit/time); remove it and the variants merge into the shared coordinate, the prefix becoming a field/tag/type. erpax is multi-dimensional: all coexist at one coordinate, in unity.",
-    "path": "dimension"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/dimension"
+  },
+  {
+    "atom": "direct",
+    "name": "direct",
+    "description": "direct: a schema.org component word, fused from directApply",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/direct"
+  },
+  {
+    "atom": "direction",
+    "name": "direction",
+    "description": "direction: a schema.org component word, fused from HowToDirection",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/direction"
+  },
+  {
+    "atom": "director",
+    "name": "director",
+    "description": "A director of e.g. TV, radio, movie, video gaming etc. content, or of an event. Directors can be associated with individual items or with a series, episode, clip.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/director"
+  },
+  {
+    "atom": "directors",
+    "name": "directors",
+    "description": "A director of e.g. TV, radio, movie, video games etc. content. Directors can be associated with individual items or with a series, episode, clip.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/directors"
+  },
+  {
+    "atom": "disagree",
+    "name": "disagree",
+    "description": "disagree: a schema.org component word, fused from DisagreeAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/disagree"
+  },
+  {
+    "atom": "disambiguating",
+    "name": "disambiguating",
+    "description": "disambiguating: a schema.org component word, fused from disambiguatingDescription",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/disambiguating"
   },
   {
     "atom": "disclosure",
     "name": "disclosure",
     "description": "Use when determining which items require quantitative and narrative disclosure in financial statements — mandatory, recommended, and suggested per IFRS/GAAP; gate for materiality and scope",
-    "path": "disclosure"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/disclosure"
   },
   {
     "atom": "disclosures",
     "name": "csrd-disclosures",
     "description": "Use when structuring EU mandatory sustainability reporting — one row per ESRS datapoint per reporting year (E1–E5 environmental, S1–S4 social, G1 governance) with narrative, quantitative KPIs, IRO classification, and assurance evidence for XBRL filing. The CSRD/ESRS disclosure register.",
-    "path": "csrd/disclosures"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/csrd/disclosures"
   },
   {
     "atom": "discount",
     "name": "discount",
     "description": "Use when applying promotional/volume/loyalty price reductions — percent or fixed amount, scope (item/order/customer), validity period, approval workflow.",
-    "path": "discount"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/discount"
+  },
+  {
+    "atom": "discover",
+    "name": "discover",
+    "description": "discover: a schema.org component word, fused from DiscoverAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/discover"
+  },
+  {
+    "atom": "discusses",
+    "name": "discusses",
+    "description": "Specifies the CreativeWork associated with the UserComment.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/discusses"
+  },
+  {
+    "atom": "discussion",
+    "name": "discussion",
+    "description": "discussion: a schema.org component word, fused from DiscussionForumPosting, discussionUrl",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/discussion"
+  },
+  {
+    "atom": "disease",
+    "name": "disease",
+    "description": "disease: a schema.org component word, fused from InfectiousDisease, associatedDisease, diseasePreventionInfo, diseaseSpreadStatistics",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/disease"
+  },
+  {
+    "atom": "disjoint",
+    "name": "disjoint",
+    "description": "disjoint: a schema.org component word, fused from geoDisjoint",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/disjoint"
+  },
+  {
+    "atom": "dislike",
+    "name": "dislike",
+    "description": "dislike: a schema.org component word, fused from DislikeAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/dislike"
+  },
+  {
+    "atom": "displacement",
+    "name": "displacement",
+    "description": "displacement: a schema.org component word, fused from engineDisplacement",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/displacement"
+  },
+  {
+    "atom": "display",
+    "name": "display",
+    "description": "display: a schema.org component word, fused from broadcastDisplayName, displayLocation",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/display"
   },
   {
     "atom": "disputeresolution",
     "name": "dispute-resolution",
     "description": "Use when a contract specifies dispute handling — mechanism (litigation, arbitration, mediation), forum/arbitrator, procedural rules (discovery, evidence, cost allocation), escalation (negotiation→mediation→arbitration).",
-    "path": "dispute-resolution"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/dispute-resolution"
+  },
+  {
+    "atom": "dissolution",
+    "name": "dissolution",
+    "description": "dissolution: a schema.org component word, fused from dissolutionDate",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/dissolution"
   },
   {
     "atom": "dissolve",
     "name": "dissolve",
     "description": "Use when collapsing prefixed units into the single-word matrix — drop the grouping prefix, split camelCase/hyphen names into nested single-word folders, apply singular-model/plural-collection, remap @/ imports, rewire barrels, merge same-word collisions as accountable collections. The deterministic mover; the matter is index.mjs.",
-    "path": "refactor/dissolve"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/refactor/dissolve"
+  },
+  {
+    "atom": "distance",
+    "name": "distance",
+    "description": "Properties that take Distances as values are of the form '&lt;Number&gt; &lt;Length unit of measure&gt;'. E.g., '7 ft'.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/distance"
+  },
+  {
+    "atom": "distillery",
+    "name": "distillery",
+    "description": "A distillery.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/distillery"
+  },
+  {
+    "atom": "distinguishing",
+    "name": "distinguishing",
+    "description": "distinguishing: a schema.org component word, fused from distinguishingSign",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/distinguishing"
   },
   {
     "atom": "distribution",
     "name": "distribution",
     "description": "Use when analyzing data spread — normal/Poisson/exponential distributions, distribution testing (Shapiro-Wilk, Kolmogorov-Smirnov), distribution fitting, distribution-aware statistics (mean vs median), distribution plots/histograms.",
-    "path": "distribution"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/distribution"
+  },
+  {
+    "atom": "district",
+    "name": "district",
+    "description": "district: a schema.org component word, fused from SchoolDistrict",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/district"
+  },
+  {
+    "atom": "diversity",
+    "name": "diversity",
+    "description": "diversity: a schema.org component word, fused from diversityPolicy, diversityStaffingReport",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/diversity"
+  },
+  {
+    "atom": "document",
+    "name": "document",
+    "description": "document: a schema.org component word, fused from DigitalDocument, DigitalDocumentPermission, DigitalDocumentPermissionType, NoteDigitalDocument, PresentationDigitalDocument, SpreadsheetDigitalDocumen",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/document"
+  },
+  {
+    "atom": "documentation",
+    "name": "documentation",
+    "description": "Further documentation describing the Web API in more detail.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/documentation"
+  },
+  {
+    "atom": "does",
+    "name": "does",
+    "description": "does: a schema.org component word, fused from doesNotShip",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/does"
   },
   {
     "atom": "domain",
     "name": "domain",
     "description": "Use when modelling a tenant's domain — NOT tenant isolation (the multi-tenant plugin does that), but the domain as the tenant's identity and managed entity: the name that routes the request to the tenant, its hierarchy, status lifecycle, SSL, billing, and — the key — proof of domain ownership, which IS the computational admin grant: prove you control the domain and the tenant is yours.",
-    "path": "domain"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/domain"
+  },
+  {
+    "atom": "domiciled",
+    "name": "domiciled",
+    "description": "domiciled: a schema.org component word, fused from domiciledMortgage",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/domiciled"
+  },
+  {
+    "atom": "donate",
+    "name": "donate",
+    "description": "donate: a schema.org component word, fused from DonateAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/donate"
+  },
+  {
+    "atom": "door",
+    "name": "door",
+    "description": "door: a schema.org component word, fused from doorTime",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/door"
+  },
+  {
+    "atom": "doors",
+    "name": "doors",
+    "description": "doors: a schema.org component word, fused from numberOfDoors",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/doors"
+  },
+  {
+    "atom": "dormancy",
+    "name": "dormancy",
+    "description": "Use when modelling the winter rest of a deciduous perennial — dormancy, the cold-requiring quiescent period; a cultivar must accumulate its chilling requirement (chill hours) before bud-break and a crop. The gate of the perennial's recurring season; where frost risk, pruning, and alternate bearing live.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/dormancy"
+  },
+  {
+    "atom": "dosage",
+    "name": "dosage",
+    "description": "dosage: a schema.org component word, fused from dosageForm",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/dosage"
+  },
+  {
+    "atom": "dose",
+    "name": "dose",
+    "description": "dose: a schema.org component word, fused from DoseSchedule, MaximumDoseSchedule, RecommendedDoseSchedule, ReportedDoseSchedule, doseSchedule, doseUnit",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/dose"
+  },
+  {
+    "atom": "down",
+    "name": "down",
+    "description": "down: a schema.org component word, fused from downPayment",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/down"
+  },
+  {
+    "atom": "download",
+    "name": "download",
+    "description": "download: a schema.org component word, fused from DataDownload, DownloadAction, downloadUrl",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/download"
+  },
+  {
+    "atom": "downloads",
+    "name": "downloads",
+    "description": "downloads: a schema.org component word, fused from UserDownloads",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/downloads"
+  },
+  {
+    "atom": "downvote",
+    "name": "downvote",
+    "description": "downvote: a schema.org component word, fused from downvoteCount",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/downvote"
+  },
+  {
+    "atom": "drained",
+    "name": "drained",
+    "description": "drained: a schema.org component word, fused from regionDrained",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/drained"
+  },
+  {
+    "atom": "drains",
+    "name": "drains",
+    "description": "The vasculature that the vein drains into.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/drains"
+  },
+  {
+    "atom": "draw",
+    "name": "draw",
+    "description": "draw: a schema.org component word, fused from DrawAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/draw"
+  },
+  {
+    "atom": "drawing",
+    "name": "drawing",
+    "description": "A picture or diagram made with a pencil, pen, or crayon rather than paint.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/drawing"
+  },
+  {
+    "atom": "drink",
+    "name": "drink",
+    "description": "drink: a schema.org component word, fused from DrinkAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/drink"
+  },
+  {
+    "atom": "drive",
+    "name": "drive",
+    "description": "drive: a schema.org component word, fused from DriveWheelConfigurationValue, driveWheelConfiguration, hasDriveThroughService",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/drive"
+  },
+  {
+    "atom": "drone",
+    "name": "drone",
+    "description": "Use when the society sends scouts to fly the content-uuid matrix in coordinated self-learning — reconnoitring sectors for gaps and entropy and feeding them to the agents to eat, warfare tactics applied to building.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/drone"
+  },
+  {
+    "atom": "dropoff",
+    "name": "dropoff",
+    "description": "dropoff: a schema.org component word, fused from dropoffLocation, dropoffTime",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/dropoff"
+  },
+  {
+    "atom": "drug",
+    "name": "drug",
+    "description": "A chemical or biologic substance, used as a medical therapy, that has a physiological effect on an organism. Here the term drug is used interchangeably with the term medicine although clinical knowled",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/drug"
+  },
+  {
+    "atom": "dry",
+    "name": "dry",
+    "description": "Use when migrating logic to maximum tampering cost — the computed dry-clean that collides duplicated/hardcoded/scattered logic into shared content-addressed atoms (merge-by-extension), the word colliding DryCleaningOrLaundry with don't-repeat-yourself.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/dry"
   },
   {
     "atom": "duality",
     "name": "duality",
     "description": "Use when reasoning about erpax's pervasive two-fold law — matter↔antimatter (code↔skill), physical↔metaphysical, give↔take, flow↔balance, build↔bind, learn↔forget, whole↔part, begin↔end, open↔close. The pair that recurs at every scale.",
-    "path": "duality"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/duality"
+  },
+  {
+    "atom": "due",
+    "name": "due",
+    "description": "due: a schema.org component word, fused from minimumPaymentDue, paymentDue, paymentDueDate, totalPaymentDue",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/due"
   },
   {
     "atom": "dunning",
     "name": "dunning",
     "description": "Use when automating payment retry and collections — dunning-cycles exist but dunning as the parent concept (policy, rule, retry schedule, messaging) does not.",
-    "path": "dunning"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/dunning"
+  },
+  {
+    "atom": "duns",
+    "name": "duns",
+    "description": "The Dun & Bradstreet DUNS number for identifying an organization or business person.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/duns"
+  },
+  {
+    "atom": "duplicate",
+    "name": "duplicate",
+    "description": "duplicate: a schema.org component word, fused from duplicateTherapy",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/duplicate"
+  },
+  {
+    "atom": "duration",
+    "name": "duration",
+    "description": "Quantity: Duration (use ISO 8601 duration format).",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/duration"
+  },
+  {
+    "atom": "during",
+    "name": "during",
+    "description": "during: a schema.org component word, fused from duringMedia",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/during"
+  },
+  {
+    "atom": "dx",
+    "name": "dx",
+    "description": "dx: a schema.org component word, fused from DDxElement",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/dx"
+  },
+  {
+    "atom": "early",
+    "name": "early",
+    "description": "early: a schema.org component word, fused from earlyPrepaymentPenalty",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/early"
+  },
+  {
+    "atom": "earned",
+    "name": "earned",
+    "description": "earned: a schema.org component word, fused from membershipPointsEarned",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/earned"
+  },
+  {
+    "atom": "eat",
+    "name": "eat",
+    "description": "eat: a schema.org component word, fused from EatAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/eat"
   },
   {
     "atom": "ebitda",
     "name": "ebitda",
     "description": "Use to compute EBITDA / EBIT and related profitability metrics from P&L figures. Pure compute (no persistence); a non-GAAP measure derived from accounting data. Nested under calculate.",
-    "path": "calculate/ebitda"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/calculate/ebitda"
   },
   {
     "atom": "ecommerce",
     "name": "ecommerce",
     "description": "Use when wiring or debugging the storefront — per-tenant Stripe payments, cart/order/product/address overrides, checkout stock validation, the order-to-GL bridge, or the \"data is money\" seam — the erpax configuration of the official @payloadcms/plugin-ecommerce.",
-    "path": "ecommerce"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/ecommerce"
+  },
+  {
+    "atom": "edit",
+    "name": "edit",
+    "description": "edit: a schema.org component word, fused from editEIDR",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/edit"
+  },
+  {
+    "atom": "edition",
+    "name": "edition",
+    "description": "edition: a schema.org component word, fused from artEdition, bookEdition, gameEdition, printEdition",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/edition"
+  },
+  {
+    "atom": "editor",
+    "name": "editor",
+    "description": "Specifies the Person who edited the CreativeWork.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/editor"
+  },
+  {
+    "atom": "edu",
+    "name": "edu",
+    "description": "edu: a schema.org component word, fused from eduQuestionType",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/edu"
   },
   {
     "atom": "education",
     "name": "education",
     "description": "Use when managing educational institutions — student enrollment, curriculum delivery, academic assessment, teaching schedules, institutional capacity, or education program outcomes in government/nonprofit schools (COFOG 09).",
-    "path": "education"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/education"
+  },
+  {
+    "atom": "educational",
+    "name": "educational",
+    "description": "educational: a schema.org component word, fused from EducationalAudience, EducationalOccupationalCredential, EducationalOccupationalProgram, EducationalOrganization, educationalAlignment, educationalC",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/educational"
+  },
+  {
+    "atom": "efficiency",
+    "name": "efficiency",
+    "description": "efficiency: a schema.org component word, fused from EUEnergyEfficiencyEnumeration, EnergyEfficiencyEnumeration, EnergyStarEnergyEfficiencyEnumeration, energyEfficiencyScaleMax, energyEfficiencyScaleMi",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/efficiency"
+  },
+  {
+    "atom": "eidr",
+    "name": "eidr",
+    "description": "eidr: a schema.org component word, fused from editEIDR, titleEIDR",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/eidr"
+  },
+  {
+    "atom": "electrician",
+    "name": "electrician",
+    "description": "An electrician.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/electrician"
+  },
+  {
+    "atom": "electronics",
+    "name": "electronics",
+    "description": "electronics: a schema.org component word, fused from ElectronicsStore",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/electronics"
   },
   {
     "atom": "element",
     "name": "element",
     "description": "Use when reasoning about composition and stability through the chemical-elements matrix — everything is made of atoms, and the periodic table adds a chemistry to the logic: each atom has a VALENCE (electrons it shares to fill its shell), stability is the OCTET (a full outer shell — the noble gases), and atoms BOND to reach it. The new perspective: the erpax corpus is a MOLECULE — an atom's valence is its open links, and the corpus is stable exactly when aura gap = 0 (all shells full).",
-    "path": "element"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/element"
+  },
+  {
+    "atom": "elementary",
+    "name": "elementary",
+    "description": "elementary: a schema.org component word, fused from ElementarySchool",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/elementary"
+  },
+  {
+    "atom": "elevation",
+    "name": "elevation",
+    "description": "The elevation of a location (WGS 84). Values may be of the form 'NUMBER UNIT\\\\_OF\\\\_MEASUREMENT' (e.g., '1,000 m', '3,200 ft') while numbers alone should be assumed to be a value in meters.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/elevation"
+  },
+  {
+    "atom": "eligibility",
+    "name": "eligibility",
+    "description": "eligibility: a schema.org component word, fused from eligibilityToWorkRequirement",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/eligibility"
+  },
+  {
+    "atom": "eligible",
+    "name": "eligible",
+    "description": "eligible: a schema.org component word, fused from eligibleCustomerType, eligibleDuration, eligibleQuantity, eligibleRegion, eligibleTransactionVolume, eligibleWithSupplier",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/eligible"
   },
   {
     "atom": "elimination",
     "name": "elimination",
     "description": "Use when removing intercompany balances, transactions, and profits in consolidation per IFRS-10 and IFRS-3 — consolidation adjustment that nets balances across entities to zero",
-    "path": "elimination"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/elimination"
   },
   {
     "atom": "eliminations",
     "name": "consolidation-eliminations",
     "description": "Use when posting or replaying group-level elimination JEs at consolidation close — intercompany balances, IC revenue/expense, unrealised intra-group profit, investment in subsidiary, FC translation reserve — per IFRS-10 §B86 / ASC-810-10-45; distinct from per-tenant journal-entries and the intercompany-transactions source register. The group consolidation elimination cycle register.",
-    "path": "consolidation/eliminations"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/consolidation/eliminations"
+  },
+  {
+    "atom": "email",
+    "name": "email",
+    "description": "Email address.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/email"
+  },
+  {
+    "atom": "embassy",
+    "name": "embassy",
+    "description": "An embassy.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/embassy"
+  },
+  {
+    "atom": "embed",
+    "name": "embed",
+    "description": "embed: a schema.org component word, fused from embedUrl",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/embed"
+  },
+  {
+    "atom": "embedded",
+    "name": "embedded",
+    "description": "embedded: a schema.org component word, fused from embeddedTextCaption",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/embedded"
+  },
+  {
+    "atom": "emergency",
+    "name": "emergency",
+    "description": "emergency: a schema.org component word, fused from EmergencyService",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/emergency"
+  },
+  {
+    "atom": "emission",
+    "name": "emission",
+    "description": "emission: a schema.org component word, fused from meetsEmissionStandard",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/emission"
   },
   {
     "atom": "emissions",
     "name": "carbon-emissions",
     "description": "Use when recording or auditing GHG emissions — Scope 1 direct, Scope 2 purchased energy, Scope 3 value-chain (15 sub-categories); computing tCO2e via activity-data × emission-factor; third-party ISAE 3410 verification; substantiating ESRS E1 §44-50 disclosure totals or EU CBAM filings. The GHG emission event register.",
-    "path": "fiscal/periods/carbon/emissions"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/fiscal/periods/carbon/emissions"
+  },
+  {
+    "atom": "empirical",
+    "name": "empirical",
+    "description": "Use when a claim is grounded in observed data rather than assumed — the rate an @invariant holds at across real rows, a modal value or lifecycle DERIVED not invented, the measured distribution a model is fitted to. The agnostic restatement of provenance — name the origin generically as [[source]], dissolve the row-level specifics into the [[akashic]] DB, and keep only the universal form in code. anonymise is the core of agnostic architecture and DRY naming.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/empirical"
+  },
+  {
+    "atom": "employee",
+    "name": "employee",
+    "description": "Someone working for this organization.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/employee"
   },
   {
     "atom": "employees",
     "name": "employees",
     "description": "Use when managing workforce records — onboarding an employee, recording compensation (IAS 19 base salary, FTE ratio, bonus, pension, PTO), storing GDPR-classified identity and payroll bank account, linking to the actor-party user, and driving the payroll cycle via time-entries and payroll runs. The GDPR-protected workforce master (admin/payroll-officer access only).",
-    "path": "employees"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/employees"
+  },
+  {
+    "atom": "employer",
+    "name": "employer",
+    "description": "employer: a schema.org component word, fused from EmployerAggregateRating, EmployerReview, employerOverview",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/employer"
+  },
+  {
+    "atom": "employment",
+    "name": "employment",
+    "description": "employment: a schema.org component word, fused from EmploymentAgency, employmentType, employmentUnit",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/employment"
+  },
+  {
+    "atom": "encoded",
+    "name": "encoded",
+    "description": "encoded: a schema.org component word, fused from isEncodedByBioChemEntity",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/encoded"
+  },
+  {
+    "atom": "encodes",
+    "name": "encodes",
+    "description": "encodes: a schema.org component word, fused from encodesBioChemEntity, encodesCreativeWork",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/encodes"
+  },
+  {
+    "atom": "encoding",
+    "name": "encoding",
+    "description": "A media object that encodes this CreativeWork. This property is a synonym for associatedMedia.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/encoding"
+  },
+  {
+    "atom": "encodings",
+    "name": "encodings",
+    "description": "A media object that encodes this CreativeWork.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/encodings"
   },
   {
     "atom": "end",
     "name": "end",
     "description": "Use when reasoning about completion in erpax — period end, lifecycle seal, the wave's return to a new 0. The universal root of completion; dual of begin (and identical to it one dimension up).",
-    "path": "end"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/end"
+  },
+  {
+    "atom": "endorse",
+    "name": "endorse",
+    "description": "endorse: a schema.org component word, fused from EndorseAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/endorse"
+  },
+  {
+    "atom": "endorsee",
+    "name": "endorsee",
+    "description": "A sub property of participant. The person/organization being supported.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/endorsee"
+  },
+  {
+    "atom": "endorsement",
+    "name": "endorsement",
+    "description": "endorsement: a schema.org component word, fused from EndorsementRating",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/endorsement"
+  },
+  {
+    "atom": "endorsers",
+    "name": "endorsers",
+    "description": "People or organizations that endorse the plan.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/endorsers"
   },
   {
     "atom": "endpoints",
     "name": "endpoints",
     "description": "Use when adding or debugging a custom HTTP route that does work outside a collection's CRUD — the `/next/seed` demo-data loader that clears and repopulates a fresh tenant with example pages, posts, media, and the erpax product-marketing pages — endpoints is the society's custom-route organ (currently one organ-scoped seed handler, not the per-collection structural seed).",
-    "path": "endpoints"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/endpoints"
+  },
+  {
+    "atom": "ends",
+    "name": "ends",
+    "description": "ends: a schema.org component word, fused from availabilityEnds",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/ends"
+  },
+  {
+    "atom": "energy",
+    "name": "energy",
+    "description": "Properties that take Energy as values are of the form '&lt;Number&gt; &lt;Energy unit of measure&gt;'.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/energy"
   },
   {
     "atom": "engagement",
     "name": "engagement",
     "description": "Use when measuring or improving involvement/participation — employee engagement, customer engagement, learning engagement. The observed commitment/interaction level.",
-    "path": "engagement"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/engagement"
   },
   {
     "atom": "engine",
@@ -1031,58 +4115,322 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "workflow/engine"
   },
   {
+    "atom": "enrollment",
+    "name": "enrollment",
+    "description": "enrollment: a schema.org component word, fused from maximumEnrollment, totalHistoricalEnrollment",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/enrollment"
+  },
+  {
+    "atom": "ensures",
+    "name": "ensures",
+    "description": "ensures: a schema.org component word, fused from legislationEnsuresImplementationOf",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/ensures"
+  },
+  {
+    "atom": "enterprisebudget",
+    "name": "enterprisebudget",
+    "description": "Use when projecting the profit of one crop/product/activity as a standalone line — the crop enterprise budget: revenue (units × price) minus its direct costs (seed, inputs, labor) per crop or per bed-foot, so crops can be ranked by net return and the unprofitable dropped. The per-line P&L projection; the production-economics twin of the cost center.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/enterprisebudget"
+  },
+  {
+    "atom": "entertainment",
+    "name": "entertainment",
+    "description": "entertainment: a schema.org component word, fused from AdultEntertainment, EntertainmentBusiness, entertainmentBusiness",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/entertainment"
+  },
+  {
     "atom": "entities",
     "name": "legal-entities",
     "description": "Use when registering subsidiaries, associates, joint ventures or the group head for consolidation — legal name, LEI, registration number, functional/presentation currency, ownership %, consolidation method, and reporting framework. The IFRS-10 §B86 entity master distinct from DB tenants.",
-    "path": "legal/entities"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/legal/entities"
+  },
+  {
+    "atom": "entity",
+    "name": "entity",
+    "description": "entity: a schema.org component word, fused from BioChemEntity, BusinessEntityType, MedicalEntity, MolecularEntity, encodesBioChemEntity, hasBioChemEntityPart",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/entity"
   },
   {
     "atom": "entries",
     "name": "closing-entries",
     "description": "Use when executing or auditing period-end close — closing P&L accounts to retained earnings, auto-generating reversing entries, locking the period, and producing an immutable close audit trail per IFRS IAS-1 / SOX §404. The period-close journal-entry collection.",
-    "path": "legal/entities/closing/entries"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/legal/entities/closing/entries"
   },
   {
     "atom": "entry",
     "name": "entry",
     "description": "Use when reasoning about the universal double-entry in erpax — every value movement (any direction, any parties) reduces to a balanced (debit, credit) pair; the reverse is inherent, direction is a viewpoint, N plugin mounts consolidate (intercompany nets to zero). The debit/credit closure operator over the whole mesh — \"all accounted in all directions ⇒ the wiring is complete\".",
-    "path": "entry"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/entry"
+  },
+  {
+    "atom": "enum",
+    "name": "enum",
+    "description": "enum: a schema.org component word, fused from MeasurementMethodEnum",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/enum"
+  },
+  {
+    "atom": "enumeration",
+    "name": "enumeration",
+    "description": "Lists or enumerations—for example, a list of cuisines or music genres, etc.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/enumeration"
+  },
+  {
+    "atom": "epidemiology",
+    "name": "epidemiology",
+    "description": "The characteristics of associated patients, such as age, gender, race etc.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/epidemiology"
+  },
+  {
+    "atom": "episode",
+    "name": "episode",
+    "description": "A media episode (e.g. TV, radio, video game) which can be part of a series or season.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/episode"
+  },
+  {
+    "atom": "episodes",
+    "name": "episodes",
+    "description": "An episode of a TV/radio series or season.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/episodes"
+  },
+  {
+    "atom": "equal",
+    "name": "equal",
+    "description": "This ordering relation for qualitative values indicates that the subject is equal to the object.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/equal"
+  },
+  {
+    "atom": "equals",
+    "name": "equals",
+    "description": "equals: a schema.org component word, fused from geoEquals",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/equals"
+  },
+  {
+    "atom": "equipment",
+    "name": "equipment",
+    "description": "equipment: a schema.org component word, fused from OfficeEquipmentStore",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/equipment"
+  },
+  {
+    "atom": "error",
+    "name": "error",
+    "description": "Representation of an Error.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/error"
   },
   {
     "atom": "escalation",
     "name": "escalation",
     "description": "Use when a ticket, issue, or complaint requires urgency upgrade — SLA breach, priority elevation, management review, or handoff to higher authority. The action of moving a matter up the hierarchy by severity/urgency.",
-    "path": "escalation"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/escalation"
   },
   {
     "atom": "escrow",
     "name": "escrow",
     "description": "Use when funds are held by a third party (escrow agent) pending satisfaction of contract conditions — separate legal/financial status from held-to-maturity or restricted cash per IAS-7",
-    "path": "escrow"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/escrow"
+  },
+  {
+    "atom": "establishment",
+    "name": "establishment",
+    "description": "establishment: a schema.org component word, fused from DefenceEstablishment, FoodEstablishment, FoodEstablishmentReservation, foodEstablishment",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/establishment"
+  },
+  {
+    "atom": "estate",
+    "name": "estate",
+    "description": "estate: a schema.org component word, fused from RealEstateAgent, RealEstateListing, realEstateAgent",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/estate"
+  },
+  {
+    "atom": "estimated",
+    "name": "estimated",
+    "description": "estimated: a schema.org component word, fused from estimatedCost, estimatedFlightDuration, estimatedSalary",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/estimated"
+  },
+  {
+    "atom": "estimates",
+    "name": "estimates",
+    "description": "estimates: a schema.org component word, fused from estimatesRiskOf",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/estimates"
+  },
+  {
+    "atom": "estimator",
+    "name": "estimator",
+    "description": "estimator: a schema.org component word, fused from MedicalRiskEstimator",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/estimator"
+  },
+  {
+    "atom": "ethics",
+    "name": "ethics",
+    "description": "ethics: a schema.org component word, fused from ethicsPolicy",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/ethics"
+  },
+  {
+    "atom": "eu",
+    "name": "eu",
+    "description": "eu: a schema.org component word, fused from EUEnergyEfficiencyEnumeration",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/eu"
+  },
+  {
+    "atom": "evapotranspiration",
+    "name": "evapotranspiration",
+    "description": "Use when quantifying crop water demand — evapotranspiration (ET) = soil evaporation + plant transpiration, the daily withdrawal from the soil-moisture reservoir that drives irrigation scheduling. The debit side of the water budget; reference ET × crop coefficient gives the crop's actual draw.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/evapotranspiration"
   },
   {
     "atom": "event",
     "name": "event",
     "description": "The domain-event atom — an afterChange [[hooks]] hook emits a content-uuid-keyed envelope that in-process subscribers AND federation peers consume. Read when emitting/consuming a domain event (invoice:activated, payment:received, inventory:adjusted…), wiring chainEventEmitters/subscribers, or whenever an event's aggregateId is set. The aggregate identity MUST be the content-`uuid` (the 0), never the instance-local row id.",
-    "path": "event"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/event"
   },
   {
     "atom": "events",
     "name": "post-balance-sheet-events",
     "description": "Use when capturing events between the reporting date and FS-authorisation date — classifying them as adjusting (IAS 10 §8 — book) or non-adjusting (§10 — disclose); assessing going-concern impact; linking booked journal entries; meeting §21 disclosure requirements. The IAS 10 subsequent-events register.",
-    "path": "fiscal/periods/post/balance/sheet/events"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/fiscal/periods/post/balance/sheet/events"
+  },
+  {
+    "atom": "evidence",
+    "name": "evidence",
+    "description": "evidence: a schema.org component word, fused from MedicalEvidenceLevel, evidenceLevel, evidenceOrigin",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/evidence"
   },
   {
     "atom": "evidences",
     "name": "audit-evidence",
     "description": "Use when attaching or retrieving documentary evidence for audit work — PDF documents, bank statements, GL printouts, reconciliations, signed approvals, workpapers — with chain-of-custody log, confidentiality classification, retention schedule, and links to controls, control tests, samples, and findings. The ISA-500/PCAOB-AS-1105 audit-evidence register.",
-    "path": "media/audit/evidences"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/media/audit/evidences"
+  },
+  {
+    "atom": "exam",
+    "name": "exam",
+    "description": "exam: a schema.org component word, fused from PhysicalExam, identifyingExam",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/exam"
+  },
+  {
+    "atom": "example",
+    "name": "example",
+    "description": "example: a schema.org component word, fused from exampleOfWork, workExample",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/example"
+  },
+  {
+    "atom": "except",
+    "name": "except",
+    "description": "except: a schema.org component word, fused from exceptDate",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/except"
   },
   {
     "atom": "exchange",
     "name": "exchange",
     "description": "Use for a governed cross-domain data exchange — party A requests data from party B (different domains, each its own content-addressed identity); the holder's grant gates the capability, the fields are SANITIZED to the releasable set, and the exchange is RECEIPTED, so A receives the data AND a provenance chain proving what was accessed, by whom, under what authority. Encodes cross-domain trust with no shared infrastructure: each party content-addresses and receipts; the provenance merges.",
-    "path": "exchange"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/exchange"
+  },
+  {
+    "atom": "executable",
+    "name": "executable",
+    "description": "executable: a schema.org component word, fused from executableLibraryName",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/executable"
+  },
+  {
+    "atom": "exercise",
+    "name": "exercise",
+    "description": "exercise: a schema.org component word, fused from ExerciseAction, ExerciseGym, ExercisePlan, exerciseCourse, exercisePlan, exerciseRelatedDiet",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/exercise"
+  },
+  {
+    "atom": "exhibition",
+    "name": "exhibition",
+    "description": "exhibition: a schema.org component word, fused from ExhibitionEvent",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/exhibition"
+  },
+  {
+    "atom": "exif",
+    "name": "exif",
+    "description": "exif: a schema.org component word, fused from exifData",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/exif"
+  },
+  {
+    "atom": "expected",
+    "name": "expected",
+    "description": "expected: a schema.org component word, fused from expectedArrivalFrom, expectedArrivalUntil, expectedPrognosis",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/expected"
+  },
+  {
+    "atom": "expects",
+    "name": "expects",
+    "description": "expects: a schema.org component word, fused from expectsAcceptanceOf",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/expects"
+  },
+  {
+    "atom": "expense",
+    "name": "expense",
+    "description": "expense: a schema.org component word, fused from IncentiveQualifiedExpenseType, qualifiedExpense",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/expense"
+  },
+  {
+    "atom": "experience",
+    "name": "experience",
+    "description": "experience: a schema.org component word, fused from OccupationalExperienceRequirements, experienceInPlaceOfEducation, experienceRequirements, monthsOfExperience",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/experience"
+  },
+  {
+    "atom": "expert",
+    "name": "expert",
+    "description": "expert: a schema.org component word, fused from expertConsiderations",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/expert"
+  },
+  {
+    "atom": "expires",
+    "name": "expires",
+    "description": "Date the content expires and is no longer useful or available. For example a VideoObject or NewsArticle whose availability or relevance is time-limited, a ClaimReview fact check whose publisher wants",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/expires"
+  },
+  {
+    "atom": "explanation",
+    "name": "explanation",
+    "description": "explanation: a schema.org component word, fused from answerExplanation, ratingExplanation",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/explanation"
+  },
+  {
+    "atom": "expressed",
+    "name": "expressed",
+    "description": "Tissue, organ, biological sample, etc in which activity of this gene has been observed experimentally. For example brain, digestive system.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/expressed"
+  },
+  {
+    "atom": "expression",
+    "name": "expression",
+    "description": "expression: a schema.org component word, fused from mathExpression",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/expression"
+  },
+  {
+    "atom": "extended",
+    "name": "extended",
+    "description": "extended: a schema.org component word, fused from extendedAddress",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/extended"
+  },
+  {
+    "atom": "extent",
+    "name": "extent",
+    "description": "extent: a schema.org component word, fused from materialExtent",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/extent"
+  },
+  {
+    "atom": "facility",
+    "name": "facility",
+    "description": "facility: a schema.org component word, fused from CovidTestingFacility, ParkingFacility, cvdFacilityCounty, cvdFacilityId",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/facility"
+  },
+  {
+    "atom": "fact",
+    "name": "fact",
+    "description": "fact: a schema.org component word, fused from verificationFactCheckingPolicy",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/fact"
+  },
+  {
+    "atom": "factor",
+    "name": "factor",
+    "description": "factor: a schema.org component word, fused from MedicalRiskFactor, includedRiskFactor, riskFactor",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/factor"
   },
   {
     "atom": "failures",
@@ -1094,259 +4442,1291 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "faith",
     "name": "faith",
     "description": "Use when reasoning about the dual of proof in erpax — trust extended WITHOUT the trustless recompute; accepting a source as canonical before verifying its content-uuid. The root of trust-without-verify; dual of proof.",
-    "path": "faith"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/faith"
+  },
+  {
+    "atom": "fallback",
+    "name": "fallback",
+    "description": "fallback: a schema.org component word, fused from isUnlabelledFallback",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/fallback"
+  },
+  {
+    "atom": "family",
+    "name": "family",
+    "description": "Use when grouping crops by botanical family — the rank (Brassicaceae, Solanaceae, Cucurbitaceae, Apiaceae, Fabaceae, Asteraceae, Amaranthaceae, Alliaceae, Poaceae) that shares pests, diseases, and nutrient demands, making it the practical unit of crop rotation. The taxonomy rank that carries pest/fertility inheritance; same family ⇒ must not follow itself in a bed.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/family"
+  },
+  {
+    "atom": "faq",
+    "name": "faq",
+    "description": "faq: a schema.org component word, fused from FAQPage",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/faq"
+  },
+  {
+    "atom": "fast",
+    "name": "fast",
+    "description": "fast: a schema.org component word, fused from FastFoodRestaurant",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/fast"
+  },
+  {
+    "atom": "fat",
+    "name": "fat",
+    "description": "fat: a schema.org component word, fused from fatContent, saturatedFatContent, transFatContent, unsaturatedFatContent",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/fat"
+  },
+  {
+    "atom": "fax",
+    "name": "fax",
+    "description": "fax: a schema.org component word, fused from faxNumber",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/fax"
+  },
+  {
+    "atom": "feature",
+    "name": "feature",
+    "description": "feature: a schema.org component word, fused from LocationFeatureSpecification, accessibilityFeature, amenityFeature, featureList",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/feature"
+  },
+  {
+    "atom": "featured",
+    "name": "featured",
+    "description": "featured: a schema.org component word, fused from workFeatured",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/featured"
+  },
+  {
+    "atom": "features",
+    "name": "features",
+    "description": "features: a schema.org component word, fused from dietFeatures",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/features"
   },
   {
     "atom": "federation",
     "name": "federation",
     "description": "Use when designing inter-tenant content exchange, activity distribution, or federation protocols following ActivityPub / W3C Activity Streams — content-addressed row exchange between erpax tenants with independent peer verification, trust boundaries, and content-delivery semantics.",
-    "path": "federation"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/federation"
+  },
+  {
+    "atom": "fee",
+    "name": "fee",
+    "description": "fee: a schema.org component word, fused from restockingFee",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/fee"
+  },
+  {
+    "atom": "feed",
+    "name": "feed",
+    "description": "feed: a schema.org component word, fused from CompleteDataFeed, DataFeed, DataFeedItem, dataFeedElement, webFeed",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/feed"
   },
   {
     "atom": "feedback",
     "name": "feedback",
     "description": "Use when collecting, structuring, and acting on input from users, employees, or customers — surveys, reviews, suggestions, 360-degree feedback. The structured loop of input → analysis → action.",
-    "path": "feedback"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/feedback"
+  },
+  {
+    "atom": "fees",
+    "name": "fees",
+    "description": "fees: a schema.org component word, fused from ReturnFeesEnumeration, customerRemorseReturnFees, customerRemorseReturnShippingFeesAmount, feesAndCommissionsSpecification, itemDefectReturnFees, itemDefe",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/fees"
+  },
+  {
+    "atom": "fertility",
+    "name": "fertility",
+    "description": "Use when budgeting the soil's nutrient capacity against crop demand — the N-P-K balance where a crop's nitrogen and potassium need (lbs/acre, as N and K₂O oxide forms) scales with its yield; heavy vs light feeders; legumes fixing their own nitrogen (N ≈ 0); the 4R stewardship and soil-test basis. Fertility is a double-entry budget: crop removal debits the soil, application credits it; it must balance like any ledger.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/fertility"
+  },
+  {
+    "atom": "festival",
+    "name": "festival",
+    "description": "Event type: Festival.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/festival"
+  },
+  {
+    "atom": "fiber",
+    "name": "fiber",
+    "description": "fiber: a schema.org component word, fused from fiberContent",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/fiber"
   },
   {
     "atom": "fields",
     "name": "fields",
     "description": "Use when defining or debugging Payload fields — choosing a field type, shared field props (name, required, index, unique, defaultValue, validate, access, hooks, admin), relationships, arrays/blocks/groups/tabs, selects, or virtual/join fields.",
-    "path": "fields"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/fields"
+  },
+  {
+    "atom": "file",
+    "name": "file",
+    "description": "file: a schema.org component word, fused from fileFormat, fileSize",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/file"
   },
   {
     "atom": "files",
     "name": "transfer-pricing-files",
     "description": "Use when documenting intercompany transfer pricing per OECD BEPS Action 13 — Master File, Local File, and Country-by-Country Report per jurisdiction per fiscal year — TP method, CbCR aggregates, Pillar Two applicability, filing deadlines and status. The BEPS Action 13 TP documentation register.",
-    "path": "legal/entities/transfer/pricing/files"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/legal/entities/transfer/pricing/files"
+  },
+  {
+    "atom": "film",
+    "name": "film",
+    "description": "film: a schema.org component word, fused from FilmAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/film"
+  },
+  {
+    "atom": "financial",
+    "name": "financial",
+    "description": "financial: a schema.org component word, fused from FinancialIncentive, FinancialProduct, FinancialService, financialAidEligible",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/financial"
+  },
+  {
+    "atom": "find",
+    "name": "find",
+    "description": "find: a schema.org component word, fused from FindAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/find"
   },
   {
     "atom": "findings",
     "name": "audit-findings",
     "description": "Use when recording, tracking, or resolving audit findings against internal controls — control deficiency, significant deficiency, material weakness, misstatement; severity, root cause, management response, remediation status, ISMS-audit (ISO/IEC 27007) and SOX §404 deficiency workflow. The audit-findings ISO-19011 evidence collection.",
-    "path": "internal/controls/audit/findings"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/internal/controls/audit/findings"
+  },
+  {
+    "atom": "fire",
+    "name": "fire",
+    "description": "fire: a schema.org component word, fused from FireStation",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/fire"
+  },
+  {
+    "atom": "first",
+    "name": "first",
+    "description": "first: a schema.org component word, fused from dateVehicleFirstRegistered, firstAppearance, firstPerformance",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/first"
+  },
+  {
+    "atom": "flight",
+    "name": "flight",
+    "description": "An airline flight.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/flight"
+  },
+  {
+    "atom": "float",
+    "name": "float",
+    "description": "Data type: Floating number.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/float"
+  },
+  {
+    "atom": "floor",
+    "name": "floor",
+    "description": "floor: a schema.org component word, fused from FloorPlan, accommodationFloorPlan, floorLevel, floorLimit, floorSize",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/floor"
+  },
+  {
+    "atom": "florist",
+    "name": "florist",
+    "description": "A florist.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/florist"
   },
   {
     "atom": "flow",
     "name": "flow",
     "description": "Use when reasoning about movement in erpax — value between parties (document chain), data in→out (material cycle), event streams, production through routing. The universal root of movement.",
-    "path": "flow"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/flow"
+  },
+  {
+    "atom": "fm",
+    "name": "fm",
+    "description": "fm: a schema.org component word, fused from FMRadioChannel",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/fm"
+  },
+  {
+    "atom": "fodder",
+    "name": "fodder",
+    "description": "Use when animals are fed harvested or provided feed rather than grazing — fodder/feed: hay, silage, grain, concentrate, the formulated ration (TMR), and the feed-conversion ratio. The cost driver of confined livestock and the harvested twin of grazed forage; FCR reuses the conversion atom.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/fodder"
+  },
+  {
+    "atom": "follow",
+    "name": "follow",
+    "description": "follow: a schema.org component word, fused from FollowAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/follow"
+  },
+  {
+    "atom": "followee",
+    "name": "followee",
+    "description": "A sub property of object. The person or organization being followed.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/followee"
+  },
+  {
+    "atom": "follows",
+    "name": "follows",
+    "description": "The most generic uni-directional social relation.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/follows"
+  },
+  {
+    "atom": "followup",
+    "name": "followup",
+    "description": "Typical or recommended followup care after the procedure is performed.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/followup"
+  },
+  {
+    "atom": "food",
+    "name": "food",
+    "description": "food: a schema.org component word, fused from FastFoodRestaurant, FoodEstablishment, FoodEstablishmentReservation, FoodEvent, FoodService, foodEstablishment",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/food"
+  },
+  {
+    "atom": "footer",
+    "name": "footer",
+    "description": "footer: a schema.org component word, fused from WPFooter",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/footer"
+  },
+  {
+    "atom": "force",
+    "name": "force",
+    "description": "force: a schema.org component word, fused from LegalForceStatus, legislationLegalForce",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/force"
   },
   {
     "atom": "forcemajeure",
     "name": "force-majeure",
     "description": "Use when a contract allocates risk for unforeseeable events — trigger events (war, earthquake, pandemic, government action), notice requirement, excuse from performance, remedies (suspension, termination, cost-sharing).",
-    "path": "force-majeure"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/force-majeure"
   },
   {
     "atom": "forecast",
     "name": "forecast",
     "description": "Use when projecting revenue from pipeline/opportunities — weighted by probability, stage, and close date; aggregated by rep/territory/product/period.",
-    "path": "forecast"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/forecast"
+  },
+  {
+    "atom": "forestry",
+    "name": "forestry",
+    "description": "Use when managing standing timber's biological transformation for produce — trees grown in stands as IAS-41 biological assets (standing biomass at fair value; the land separate), on a rotation set by mean annual increment, tended by silviculture (thinning/regeneration), felled to merchantable volume. Carbon stock is the cross-cutting ESG output; FSC/PEFC certification with chain-of-custody.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/forestry"
+  },
+  {
+    "atom": "form",
+    "name": "form",
+    "description": "form: a schema.org component word, fused from dosageForm, loanRepaymentForm, musicCompositionForm",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/form"
+  },
+  {
+    "atom": "format",
+    "name": "format",
+    "description": "format: a schema.org component word, fused from BookFormatType, MusicReleaseFormatType, bookFormat, encodingFormat, fileFormat, musicReleaseFormat",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/format"
+  },
+  {
+    "atom": "formula",
+    "name": "formula",
+    "description": "formula: a schema.org component word, fused from molecularFormula",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/formula"
+  },
+  {
+    "atom": "formulary",
+    "name": "formulary",
+    "description": "formulary: a schema.org component word, fused from HealthPlanFormulary, includesHealthPlanFormulary",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/formulary"
+  },
+  {
+    "atom": "forum",
+    "name": "forum",
+    "description": "forum: a schema.org component word, fused from DiscussionForumPosting",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/forum"
+  },
+  {
+    "atom": "forward",
+    "name": "forward",
+    "description": "forward: a schema.org component word, fused from numberOfForwardGears",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/forward"
+  },
+  {
+    "atom": "founder",
+    "name": "founder",
+    "description": "A person or organization who founded this organization.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/founder"
+  },
+  {
+    "atom": "founders",
+    "name": "founders",
+    "description": "A person who founded this organization.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/founders"
+  },
+  {
+    "atom": "founding",
+    "name": "founding",
+    "description": "founding: a schema.org component word, fused from foundingDate, foundingLocation",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/founding"
   },
   {
     "atom": "fractal",
     "name": "fractal",
     "description": "Use when reasoning about self-similarity in erpax — the same form at every scale (fields→collections→plugins→erpax→agents), the path-as-address law, whole↔part recursion, nested one-word skill folders. Self-similar by design.",
-    "path": "fractal"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/fractal"
+  },
+  {
+    "atom": "frame",
+    "name": "frame",
+    "description": "frame: a schema.org component word, fused from videoFrameSize",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/frame"
+  },
+  {
+    "atom": "framework",
+    "name": "framework",
+    "description": "framework: a schema.org component word, fused from educationalFramework",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/framework"
   },
   {
     "atom": "frameworks",
     "name": "compliance-frameworks",
     "description": "Use when registering or browsing the reference library of compliance frameworks — IFRS, SOX, GDPR, ISO-27001, COSO, tax, ESG, banking — with code, category, issuing body, effective date, and official resource URL; super-admin-only writes, tenant-read. The read-only compliance-framework master that ComplianceRequirements link to.",
-    "path": "compliance/frameworks"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/compliance/frameworks"
+  },
+  {
+    "atom": "free",
+    "name": "free",
+    "description": "A flag to signal that the item, event, or place is accessible for free.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/free"
+  },
+  {
+    "atom": "frequency",
+    "name": "frequency",
+    "description": "How often the dose is taken, e.g. 'daily'.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/frequency"
   },
   {
     "atom": "friction",
     "name": "friction",
     "description": "Use when reasoning about the cost-to-act atom of a market — the total effort plus price between wanting and having. 'Convenient' means low friction; it is the lever convenience and engineering play. Coupled to status with opposite sign (the effort is often the signal), so lowering it decays exclusivity — sequence the two, do not try to maximise both.",
-    "path": "friction"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/friction"
+  },
+  {
+    "atom": "friendly",
+    "name": "friendly",
+    "description": "friendly: a schema.org component word, fused from isFamilyFriendly",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/friendly"
+  },
+  {
+    "atom": "frost",
+    "name": "frost",
+    "description": "Use when the freeze event bounds the growing season — the last spring frost and first fall frost define the frost-free period that caps which crops are feasible; frost dates are probabilistic (per-station, at a confidence level), not fixed calendar dates. The hard bound of the season; the event tunnels and hardiness buffer against.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/frost"
+  },
+  {
+    "atom": "fuel",
+    "name": "fuel",
+    "description": "fuel: a schema.org component word, fused from fuelCapacity, fuelConsumption, fuelEfficiency, fuelType",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/fuel"
+  },
+  {
+    "atom": "fulfillment",
+    "name": "fulfillment",
+    "description": "fulfillment: a schema.org component word, fused from FulfillmentTypeEnumeration, fulfillmentType",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/fulfillment"
+  },
+  {
+    "atom": "full",
+    "name": "full",
+    "description": "full: a schema.org component word, fused from numberOfFullBathrooms",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/full"
+  },
+  {
+    "atom": "function",
+    "name": "function",
+    "description": "function: a schema.org component word, fused from BusinessFunction, businessFunction, hasMolecularFunction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/function"
+  },
+  {
+    "atom": "functional",
+    "name": "functional",
+    "description": "functional: a schema.org component word, fused from functionalClass",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/functional"
   },
   {
     "atom": "functions",
     "name": "internal-audit-function",
     "description": "Use when establishing or governing an internal audit department — charter management, CAE reporting line, audit committee linkage, annual audit plan, resource budgeting, and IIA IPPF/COSO alignment per IIA IPPF / ISO-19011 / SOX §404. The internal-audit-function governance collection.",
-    "path": "legal/entities/internal/audit/functions"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/legal/entities/internal/audit/functions"
+  },
+  {
+    "atom": "fund",
+    "name": "fund",
+    "description": "fund: a schema.org component word, fused from InvestmentFund",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/fund"
+  },
+  {
+    "atom": "funded",
+    "name": "funded",
+    "description": "funded: a schema.org component word, fused from fundedItem",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/funded"
+  },
+  {
+    "atom": "funder",
+    "name": "funder",
+    "description": "A person or organization that supports (sponsors) something through some kind of financial contribution.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/funder"
+  },
+  {
+    "atom": "funding",
+    "name": "funding",
+    "description": "A Grant that directly or indirectly provide funding or sponsorship for this item. See also ownershipFundingInfo.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/funding"
   },
   {
     "atom": "funnel",
     "name": "funnel",
     "description": "Use when measuring conversion rates across pipeline stages — lead-to-qualified, qualified-to-opportunity, opportunity-to-order metrics; funnel width/velocity per stage.",
-    "path": "funnel"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/funnel"
+  },
+  {
+    "atom": "furniture",
+    "name": "furniture",
+    "description": "furniture: a schema.org component word, fused from FurnitureStore",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/furniture"
+  },
+  {
+    "atom": "gallery",
+    "name": "gallery",
+    "description": "gallery: a schema.org component word, fused from ArtGallery, ImageGallery, MediaGallery, VideoGallery",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/gallery"
+  },
+  {
+    "atom": "game",
+    "name": "game",
+    "description": "The Game type represents things which are games. These are typically rule-governed recreational activities, e.g. role-playing games in which players assume the role of characters in a fictional settin",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/game"
   },
   {
     "atom": "gap",
     "name": "competency-gap",
     "description": "Use when computing held-vs-required skill gaps — matches held competencies against job/task requirements and scores on the SFIA 1-7 scale. The pure required − held function (recruiting, performance review, agent task-routing).",
-    "path": "competency/gap"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/competency/gap"
   },
   {
     "atom": "gaps",
     "name": "compliance-gaps",
     "description": "Use when identifying, tracking or remediating compliance deficiencies — missing controls, design deficiencies, operating gaps, documentation gaps — against a requirement; severity, status lifecycle (identified → in-remediation → closed), root cause, risk exposure, target closure date, audit trail. The per-tenant gap and deficiency register.",
-    "path": "compliance/frameworks/compliance/requirements/compliance/gaps"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/compliance/frameworks/compliance/requirements/compliance/gaps"
+  },
+  {
+    "atom": "garden",
+    "name": "garden",
+    "description": "garden: a schema.org component word, fused from GardenStore",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/garden"
+  },
+  {
+    "atom": "gas",
+    "name": "gas",
+    "description": "gas: a schema.org component word, fused from GasStation",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/gas"
   },
   {
     "atom": "gate",
     "name": "gate",
     "description": "Use when reasoning about verification — a gate is itself a trinity (check · message · heal) — the strict law that must hold, the detailed diagnostic when it does not, and the remedy that restores it. The immune system of the corpus.",
-    "path": "gate"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/gate"
+  },
+  {
+    "atom": "gated",
+    "name": "gated",
+    "description": "gated: a schema.org component word, fused from GatedResidenceCommunity",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/gated"
+  },
+  {
+    "atom": "gears",
+    "name": "gears",
+    "description": "gears: a schema.org component word, fused from numberOfForwardGears",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/gears"
+  },
+  {
+    "atom": "gender",
+    "name": "gender",
+    "description": "Gender of something, typically a Person, but possibly also fictional characters, animals, etc. While https://schema.org/Male and https://schema.org/Female may be used, text strings are also acceptable",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/gender"
+  },
+  {
+    "atom": "gene",
+    "name": "gene",
+    "description": "A discrete unit of inheritance which affects one or more biological traits (Source: https://en.wikipedia.org/wiki/Gene). Examples include FOXP2 (Forkhead box protein P2), SCARNA21 (small Cajal body-sp",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/gene"
+  },
+  {
+    "atom": "general",
+    "name": "general",
+    "description": "general: a schema.org component word, fused from GeneralContractor",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/general"
   },
   {
     "atom": "generate",
     "name": "generate",
     "description": "Use when the skill corpus should grow itself — continuously mining aura gaps (unlinked/dead-link words) into new atoms and driving the gap to zero, like the tsc tail. The realtime self-generating loop (scan → mint → link → re-scan). Skills generating skills.",
-    "path": "generate"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/generate"
+  },
+  {
+    "atom": "generically",
+    "name": "generically",
+    "description": "generically: a schema.org component word, fused from isAvailableGenerically",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/generically"
+  },
+  {
+    "atom": "genre",
+    "name": "genre",
+    "description": "Genre of the creative work, broadcast channel or group.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/genre"
+  },
+  {
+    "atom": "geo",
+    "name": "geo",
+    "description": "The geo coordinates of the place.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/geo"
+  },
+  {
+    "atom": "geographic",
+    "name": "geographic",
+    "description": "geographic: a schema.org component word, fused from geographicArea",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/geographic"
+  },
+  {
+    "atom": "geometry",
+    "name": "geometry",
+    "description": "geometry: a schema.org component word, fused from GeospatialGeometry",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/geometry"
+  },
+  {
+    "atom": "geospatial",
+    "name": "geospatial",
+    "description": "geospatial: a schema.org component word, fused from GeospatialGeometry",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/geospatial"
+  },
+  {
+    "atom": "getting",
+    "name": "getting",
+    "description": "getting: a schema.org component word, fused from gettingTestedInfo",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/getting"
+  },
+  {
+    "atom": "gift",
+    "name": "gift",
+    "description": "Indicates whether the offer was accepted as a gift for someone other than the buyer.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/gift"
   },
   {
     "atom": "give",
     "name": "give",
     "description": "Use when reasoning about the outflow side of an exchange in erpax — credit, units-out, grant, send, post-out. The universal root of giving; dual of take, equilibrium is balance.",
-    "path": "give"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/give"
+  },
+  {
+    "atom": "given",
+    "name": "given",
+    "description": "given: a schema.org component word, fused from givenName",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/given"
+  },
+  {
+    "atom": "global",
+    "name": "global",
+    "description": "global: a schema.org component word, fused from globalLocationNumber",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/global"
+  },
+  {
+    "atom": "golf",
+    "name": "golf",
+    "description": "golf: a schema.org component word, fused from GolfCourse",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/golf"
+  },
+  {
+    "atom": "good",
+    "name": "good",
+    "description": "good: a schema.org component word, fused from amountOfThisGood, typeOfGood",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/good"
+  },
+  {
+    "atom": "goods",
+    "name": "goods",
+    "description": "goods: a schema.org component word, fused from HomeGoodsStore, SportingGoodsStore",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/goods"
   },
   {
     "atom": "goodwill",
     "name": "goodwill",
     "description": "Use for the excess of acquisition cost over fair value of identifiable net assets; subject to annual impairment testing under IFRS-3 and required cash-flow allocation to CGUs",
-    "path": "goodwill"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/goodwill"
   },
   {
     "atom": "governance",
     "name": "governance",
     "description": "Use when the polity decides — tallying ballots into a binding verdict, setting quorum and threshold, or proving the count is unstuffable; the judgment a formal system cannot generate for itself, supplied from outside by the society.",
-    "path": "governance"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/governance"
   },
   {
     "atom": "governinglaw",
     "name": "governing-law",
     "description": "Use when a contract is subject to a specific jurisdiction's law — codified by choice-of-law clause, determines interpretation (UCC vs. Common Law), applicable standards, dispute resolution.",
-    "path": "governing-law"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/governing-law"
+  },
+  {
+    "atom": "government",
+    "name": "government",
+    "description": "government: a schema.org component word, fused from GovernmentBenefitsType, GovernmentBuilding, GovernmentOffice, GovernmentOrganization, GovernmentPermit, GovernmentService",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/government"
   },
   {
     "atom": "grace",
     "name": "grace",
     "description": "Use when reasoning about the unearned credit in erpax — the write-off / jubilee / forgiveness that clears a debt the debtor cannot pay; the reversal that restores balance from outside the ledger. The universal root of unmerited settlement; dual of debt.",
-    "path": "grace"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/grace"
+  },
+  {
+    "atom": "grade",
+    "name": "grade",
+    "description": "Use when produce is sorted into quality classes — grading against uniform standards (USDA US No. 1, Fancy), with culling (discarding unmarketable units) and the packout (the marketable fraction packed from a harvested lot). Grade sets price and the gross-vs-marketable yield gap; °Brix, size, color, and defects are the criteria.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/grade"
+  },
+  {
+    "atom": "graft",
+    "name": "graft",
+    "description": "Use when joining a scion to a rootstock into one plant — the graft is the propagation union (variety on top, root system below), and field top-working to change variety. The perennial's clonal propagation event; the plant is not seeded but assembled from two chosen parts.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/graft"
+  },
+  {
+    "atom": "grant",
+    "name": "grant",
+    "description": "A grant, typically financial or otherwise quantifiable, of resources. Typically a funder sponsors some MonetaryAmount to an Organization or Person, sometimes not necessarily via a dedicated or long-li",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/grant"
+  },
+  {
+    "atom": "grantee",
+    "name": "grantee",
+    "description": "The person, organization, contact point, or audience that has been granted this permission.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/grantee"
   },
   {
     "atom": "grants",
     "name": "government-grants",
     "description": "Use when recording or reporting public-sector grants, EU funds, or national subsidies — award, conditions, recognition method (deferred-income vs net-against-asset), clawback provisions, CSRD/BEPS traceability; IAS-20 §7-§39 + ASC 958-605. The government-grants IAS-20 register.",
-    "path": "government/grants"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/government/grants"
+  },
+  {
+    "atom": "grazing",
+    "name": "grazing",
+    "description": "Use when livestock consume standing forage in place — grazing on pasture/rangeland, the rotational/managed/adaptive (AMP) move through paddocks (short impact, long recovery), stocking rate and carrying capacity in animal-unit-months. The range-management activity; its rotation reuses the crop rotation atom.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/grazing"
+  },
+  {
+    "atom": "greater",
+    "name": "greater",
+    "description": "This ordering relation for qualitative values indicates that the subject is greater than the object.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/greater"
+  },
+  {
+    "atom": "grocery",
+    "name": "grocery",
+    "description": "grocery: a schema.org component word, fused from GroceryStore",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/grocery"
+  },
+  {
+    "atom": "group",
+    "name": "group",
+    "description": "group: a schema.org component word, fused from DanceGroup, MusicGroup, PerformingGroup, ProductGroup, SizeGroupEnumeration, TheaterGroup",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/group"
+  },
+  {
+    "atom": "gs",
+    "name": "gs",
+    "description": "gs: a schema.org component word, fused from hasGS1DigitalLink",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/gs"
+  },
+  {
+    "atom": "gtin",
+    "name": "gtin",
+    "description": "A Global Trade Item Number (GTIN). GTINs identify trade items, including products and services, using numeric identification codes. A correct gtin value should be a valid GTIN, which means that it sho",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/gtin"
+  },
+  {
+    "atom": "guests",
+    "name": "guests",
+    "description": "guests: a schema.org component word, fused from additionalNumberOfGuests",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/guests"
+  },
+  {
+    "atom": "guide",
+    "name": "guide",
+    "description": "Guide is a page or article that recommends specific products or services, or aspects of a thing for a user to consider. A Guide may represent a Buying Guide and detail aspects of products or services",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/guide"
+  },
+  {
+    "atom": "guideline",
+    "name": "guideline",
+    "description": "A medical guideline related to this entity.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/guideline"
+  },
+  {
+    "atom": "guidelines",
+    "name": "guidelines",
+    "description": "guidelines: a schema.org component word, fused from newsUpdatesAndGuidelines, quarantineGuidelines",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/guidelines"
+  },
+  {
+    "atom": "gym",
+    "name": "gym",
+    "description": "gym: a schema.org component word, fused from ExerciseGym",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/gym"
   },
   {
     "atom": "habit",
     "name": "habit",
     "description": "Use when reasoning about the repetition atom that turns a sale into a market — the loop that makes one transaction many. Without habit a launch spikes and dies; with it, awareness and proof compound. The atom retention and churn measure, and the catch the market needs when the trendsetter's status fades.",
-    "path": "habit"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/habit"
+  },
+  {
+    "atom": "hackathon",
+    "name": "hackathon",
+    "description": "A hackathon event.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/hackathon"
+  },
+  {
+    "atom": "hair",
+    "name": "hair",
+    "description": "hair: a schema.org component word, fused from HairSalon",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/hair"
+  },
+  {
+    "atom": "hall",
+    "name": "hall",
+    "description": "hall: a schema.org component word, fused from CityHall",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/hall"
+  },
+  {
+    "atom": "handling",
+    "name": "handling",
+    "description": "handling: a schema.org component word, fused from handlingTime",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/handling"
   },
   {
     "atom": "harden",
     "name": "harden",
     "description": "Use when hardening a Payload app against abuse/DoS or preparing for production security review — setting query-depth/complexity limits, login lockout, GraphQL exposure, CORS/CSRF, or securing upload collections.",
-    "path": "harden"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/harden"
+  },
+  {
+    "atom": "hardiness",
+    "name": "hardiness",
+    "description": "Use when classifying a crop by cold tolerance — hardiness ranks crops hardy / half-hardy / tender / very-tender by the frost they survive, and the USDA hardiness zone places a site by its average annual minimum temperature. The biological cold-tolerance trait (the crop's) paired with the zone (the place's); together they decide what can overwinter or be planted when.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/hardiness"
+  },
+  {
+    "atom": "hardware",
+    "name": "hardware",
+    "description": "hardware: a schema.org component word, fused from HardwareStore",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/hardware"
   },
   {
     "atom": "harmony",
     "name": "harmony",
     "description": "Use when checking whether an interval — or a whole band of horo positions — is consonant. The seven positions ARE the diatonic scale (just intonation over the A432 anchor); harmony is the smallness of the ratio (Tenney height). The harmony-check the horo state-bands need. Matter-twin harmony/index.ts.",
-    "path": "harmony"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/harmony"
+  },
+  {
+    "atom": "harvest",
+    "name": "harvest",
+    "description": "Use when modelling the gathering of matured output from a growth process — the IAS-41 transformation event where a biological asset becomes inventory, and the per-week harvest window (the produce calendar) over which a crop yields. Harvest is the realization point: value created by living growth crosses into sellable stock; the window is non-uniform — a 1 in the calendar marks presence, not constant volume.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/harvest"
+  },
+  {
+    "atom": "has",
+    "name": "has",
+    "description": "has: a schema.org component word, fused from hasAdultConsideration, hasBioChemEntityPart, hasBioPolymerSequence, hasBroadcastChannel, hasCategoryCode, hasCertification",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/has"
+  },
+  {
+    "atom": "hazard",
+    "name": "hazard",
+    "description": "hazard: a schema.org component word, fused from accessibilityHazard",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/hazard"
+  },
+  {
+    "atom": "header",
+    "name": "header",
+    "description": "header: a schema.org component word, fused from WPHeader",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/header"
+  },
+  {
+    "atom": "headline",
+    "name": "headline",
+    "description": "Headline of the article.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/headline"
   },
   {
     "atom": "health",
     "name": "health",
     "description": "Use when managing healthcare operations — patient records, medical encounters, clinical protocols, health outcomes, treatment plans, medication management, or healthcare provider coordination in government/nonprofit health systems (COFOG 07).",
-    "path": "health"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/health"
+  },
+  {
+    "atom": "healthcare",
+    "name": "healthcare",
+    "description": "healthcare: a schema.org component word, fused from healthcareReportingData",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/healthcare"
   },
   {
     "atom": "hedge",
     "name": "hedge",
     "description": "Use when designating financial instruments or transactions to offset market risk (FX, interest rate, commodity); accounting treatment under IFRS-9 hedge accounting or derivatives mark-to-market",
-    "path": "hedge"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/hedge"
+  },
+  {
+    "atom": "height",
+    "name": "height",
+    "description": "The height of the item.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/height"
+  },
+  {
+    "atom": "held",
+    "name": "held",
+    "description": "held: a schema.org component word, fused from archiveHeld",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/held"
+  },
+  {
+    "atom": "help",
+    "name": "help",
+    "description": "help: a schema.org component word, fused from softwareHelp",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/help"
+  },
+  {
+    "atom": "herd",
+    "name": "herd",
+    "description": "Use when a managed group of animals is the unit of aggregation — the herd (cattle/swine), flock (sheep/poultry), drove or mob; one production and accounting unit holding many animals. The livestock twin of lots/cohort: animals grouped, moved, grazed, and measured together.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/herd"
+  },
+  {
+    "atom": "high",
+    "name": "high",
+    "description": "high: a schema.org component word, fused from HighSchool, highPrice",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/high"
+  },
+  {
+    "atom": "hindu",
+    "name": "hindu",
+    "description": "hindu: a schema.org component word, fused from HinduTemple",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/hindu"
+  },
+  {
+    "atom": "hiring",
+    "name": "hiring",
+    "description": "hiring: a schema.org component word, fused from hiringOrganization",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/hiring"
+  },
+  {
+    "atom": "historical",
+    "name": "historical",
+    "description": "historical: a schema.org component word, fused from LandmarksOrHistoricalBuildings, totalHistoricalEnrollment",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/historical"
   },
   {
     "atom": "history",
     "name": "history",
     "description": "Use when reasoning about git history as the akashic record's time axis — a content-addressed Merkle DAG of commits the agents read as a knowledge source AND another independent tamper-evidence level (forging the past = rewriting every commit on every clone). Wired in, it increases tamper cost and costs nothing to keep.",
-    "path": "history"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/history"
+  },
+  {
+    "atom": "ho",
+    "name": "ho",
+    "description": "ho: a schema.org component word, fused from cvdNumC19HOPats",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/ho"
+  },
+  {
+    "atom": "hobby",
+    "name": "hobby",
+    "description": "hobby: a schema.org component word, fused from HobbyShop",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/hobby"
+  },
+  {
+    "atom": "holder",
+    "name": "holder",
+    "description": "holder: a schema.org component word, fused from copyrightHolder",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/holder"
+  },
+  {
+    "atom": "holding",
+    "name": "holding",
+    "description": "holding: a schema.org component word, fused from holdingArchive",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/holding"
   },
   {
     "atom": "holographic",
     "name": "holographic",
     "description": "Use when the whole is recoverable from any part — content-uuid encodes the whole, the akashic record regenerates it, each folder/skill loads its own subgraph, each agent is the whole erpax. The whole-in-every-part law; the content-twin of fractal (same form at every scale). Forget the corpus; regenerate from a part.",
-    "path": "holographic"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/holographic"
+  },
+  {
+    "atom": "home",
+    "name": "home",
+    "description": "home: a schema.org component word, fused from HomeAndConstructionBusiness, HomeGoodsStore, homeLocation, homeTeam",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/home"
+  },
+  {
+    "atom": "honorific",
+    "name": "honorific",
+    "description": "honorific: a schema.org component word, fused from honorificPrefix, honorificSuffix",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/honorific"
   },
   {
     "atom": "hooks",
     "name": "hooks",
     "description": "Use when adding or debugging Payload lifecycle hooks — mutating data before/after read or change, encryption, side effects, third-party integration, auto-populating fields, or \"my hook didn't run / ran at the wrong time\".",
-    "path": "hooks"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/hooks"
   },
   {
     "atom": "horo",
     "name": "horo",
     "description": "The seven-position state ring {1,2,4,8,7,5,9} (base·share·weave·crest·descent·round·unity) — the bounded, closed set every erpax flow/lifecycle STATE lives on. Read when modelling a state enum, per-state aggregate, state transition, or the A432 value anchor.",
-    "path": "horo"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/horo"
+  },
+  {
+    "atom": "hosp",
+    "name": "hosp",
+    "description": "hosp: a schema.org component word, fused from cvdNumC19HospPats",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/hosp"
+  },
+  {
+    "atom": "hospital",
+    "name": "hospital",
+    "description": "A hospital.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/hospital"
+  },
+  {
+    "atom": "hostel",
+    "name": "hostel",
+    "description": "A hostel - cheap accommodation, often in shared dormitories. See also the dedicated document on the use of schema.org for marking up hotels and other forms of accommodations.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/hostel"
+  },
+  {
+    "atom": "hosting",
+    "name": "hosting",
+    "description": "hosting: a schema.org component word, fused from hostingOrganization",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/hosting"
+  },
+  {
+    "atom": "hotel",
+    "name": "hotel",
+    "description": "A hotel is an establishment that provides lodging paid on a short-term basis (source: Wikipedia, the free encyclopedia, see http://en.wikipedia.org/wiki/Hotel). See also the dedicated document on the",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/hotel"
+  },
+  {
+    "atom": "hours",
+    "name": "hours",
+    "description": "hours: a schema.org component word, fused from OpeningHoursSpecification, hoursAvailable, openingHours, openingHoursSpecification, specialOpeningHoursSpecification, workHours",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/hours"
+  },
+  {
+    "atom": "house",
+    "name": "house",
+    "description": "A house is a building or structure that has the ability to be occupied for habitation by humans or other creatures (source: Wikipedia, the free encyclopedia, see http://en.wikipedia.org/wiki/House).",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/house"
+  },
+  {
+    "atom": "how",
+    "name": "how",
+    "description": "Instructions that explain how to achieve a result by performing a sequence of steps.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/how"
+  },
+  {
+    "atom": "http",
+    "name": "http",
+    "description": "http: a schema.org component word, fused from httpMethod",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/http"
+  },
+  {
+    "atom": "hvac",
+    "name": "hvac",
+    "description": "hvac: a schema.org component word, fused from HVACBusiness",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/hvac"
+  },
+  {
+    "atom": "hyper",
+    "name": "hyper",
+    "description": "hyper: a schema.org component word, fused from HyperToc, HyperTocEntry",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/hyper"
+  },
+  {
+    "atom": "iata",
+    "name": "iata",
+    "description": "iata: a schema.org component word, fused from iataCode",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/iata"
+  },
+  {
+    "atom": "icao",
+    "name": "icao",
+    "description": "icao: a schema.org component word, fused from icaoCode",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/icao"
+  },
+  {
+    "atom": "ice",
+    "name": "ice",
+    "description": "ice: a schema.org component word, fused from IceCreamShop",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/ice"
   },
   {
     "atom": "icfrs",
     "name": "management-assessment-icfr",
     "description": "Use when performing or documenting management's SOX §404(a) assessment of internal controls over financial reporting — COSO-2013 framework evaluation across control environment, risk assessment, control activities, information, and monitoring per SOX §404(a) / COSO-2013 / PCAOB AS 2201. The management ICFR assessment collection.",
-    "path": "legal/entities/management/assessment/icfrs"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/legal/entities/management/assessment/icfrs"
+  },
+  {
+    "atom": "icu",
+    "name": "icu",
+    "description": "icu: a schema.org component word, fused from cvdNumICUBeds, cvdNumICUBedsOcc",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/icu"
   },
   {
     "atom": "id",
     "name": "id",
     "description": "Use when reasoning about identity — the machine-address of an entity, content-addressed (content-uuid) or tenant-local (sequential). Never conflate with name (human label) or number (document handle). The id is what federates and merges.",
-    "path": "id"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/id"
   },
   {
     "atom": "idempotency",
     "name": "idempotency",
     "description": "Use when operations must be safely replayed — idempotent keys, deduplication within a replay window, exactly-once semantics, retry-safe operations, side-effect tracking, idempotency contracts in APIs.",
-    "path": "idempotency"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/idempotency"
+  },
+  {
+    "atom": "identification",
+    "name": "identification",
+    "description": "identification: a schema.org component word, fused from certificationIdentification, vehicleIdentificationNumber",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/identification"
   },
   {
     "atom": "identifier",
     "name": "bg-identifiers",
     "description": "Use when validating Bulgarian identity numbers — ЕГН (person), ЕИК/БУЛСТАТ (entity), or decoding birth date and sex from an ЕГН. The entry gate for BG society into erpax (Наредба РД-02-20-9/2012 + БУЛСТАТ two-stage modulo-11).",
-    "path": "bg/identifier"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/bg/identifier"
+  },
+  {
+    "atom": "identifying",
+    "name": "identifying",
+    "description": "identifying: a schema.org component word, fused from identifyingExam, identifyingTest",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/identifying"
   },
   {
     "atom": "identity",
     "name": "identity",
     "description": "Use when working with erpax object identity or content-addressed UUIDs — computing a content-uuid (sha→uuidv8, RFC 9562 §5.8), the self-describing structured uuidv8 (slot + capability flags), categorical identity elements (currency/locale/country blanks), uuid-based RBAC sharing, deduplicated (\"dry\") file storage, or cross-instance merge/federation. The map to erpax's content-uuid framework; which version per case is [[uuid]].",
-    "path": "identity"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/identity"
+  },
+  {
+    "atom": "ignore",
+    "name": "ignore",
+    "description": "ignore: a schema.org component word, fused from IgnoreAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/ignore"
+  },
+  {
+    "atom": "illustrator",
+    "name": "illustrator",
+    "description": "The illustrator of the book.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/illustrator"
+  },
+  {
+    "atom": "image",
+    "name": "image",
+    "description": "An image of the item. This can be a URL or a fully described ImageObject.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/image"
+  },
+  {
+    "atom": "imaging",
+    "name": "imaging",
+    "description": "imaging: a schema.org component word, fused from ImagingTest, MedicalImagingTechnique, imagingTechnique",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/imaging"
+  },
+  {
+    "atom": "immediate",
+    "name": "immediate",
+    "description": "immediate: a schema.org component word, fused from jobImmediateStart",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/immediate"
   },
   {
     "atom": "impairment",
     "name": "impairment",
     "description": "Use when an asset's fair value or recoverable amount falls permanently below book value, triggering writedown testing and loss recognition — mandatory under IAS-36 for all assets",
-    "path": "impairment"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/impairment"
+  },
+  {
+    "atom": "implementation",
+    "name": "implementation",
+    "description": "implementation: a schema.org component word, fused from legislationEnsuresImplementationOf",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/implementation"
+  },
+  {
+    "atom": "imprint",
+    "name": "imprint",
+    "description": "imprint: a schema.org component word, fused from publisherImprint",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/imprint"
+  },
+  {
+    "atom": "incentive",
+    "name": "incentive",
+    "description": "incentive: a schema.org component word, fused from FinancialIncentive, IncentiveQualifiedExpenseType, IncentiveStatus, IncentiveType, incentiveAmount, incentiveCompensation",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/incentive"
+  },
+  {
+    "atom": "incentives",
+    "name": "incentives",
+    "description": "Description of bonus and commission compensation aspects of the job.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/incentives"
+  },
+  {
+    "atom": "incentivized",
+    "name": "incentivized",
+    "description": "incentivized: a schema.org component word, fused from incentivizedItem",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/incentivized"
   },
   {
     "atom": "incident",
     "name": "incident",
     "description": "Use when logging unplanned downtime, service interruptions, production stops, or safety events — the adverse event log with root-cause, impact, resolution, and prevention tracking.",
-    "path": "incident"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/incident"
+  },
+  {
+    "atom": "included",
+    "name": "included",
+    "description": "included: a schema.org component word, fused from includedComposition, includedDataCatalog, includedInDataCatalog, includedInHealthInsurancePlan, includedRiskFactor, valueAddedTaxIncluded",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/included"
+  },
+  {
+    "atom": "includes",
+    "name": "includes",
+    "description": "includes: a schema.org component word, fused from domainIncludes, includesAttraction, includesHealthPlanFormulary, includesHealthPlanNetwork, includesObject, rangeIncludes",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/includes"
+  },
+  {
+    "atom": "income",
+    "name": "income",
+    "description": "income: a schema.org component word, fused from incomeLimit",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/income"
+  },
+  {
+    "atom": "increases",
+    "name": "increases",
+    "description": "increases: a schema.org component word, fused from increasesRiskOf",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/increases"
+  },
+  {
+    "atom": "increment",
+    "name": "increment",
+    "description": "increment: a schema.org component word, fused from billingIncrement",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/increment"
   },
   {
     "atom": "indemnity",
     "name": "indemnity",
     "description": "Use when one party agrees to compensate another for loss/liability arising from specified events — indemnifier, indemnitee, indemnified party, trigger (third-party claims, breach, negligence), scope, caps, procedure.",
-    "path": "indemnity"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/indemnity"
+  },
+  {
+    "atom": "indication",
+    "name": "indication",
+    "description": "indication: a schema.org component word, fused from ApprovedIndication, MedicalIndication, PreventionIndication, TreatmentIndication",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/indication"
+  },
+  {
+    "atom": "individual",
+    "name": "individual",
+    "description": "individual: a schema.org component word, fused from IndividualPhysician, IndividualProduct",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/individual"
+  },
+  {
+    "atom": "industry",
+    "name": "industry",
+    "description": "The industry associated with the job position.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/industry"
+  },
+  {
+    "atom": "ineligible",
+    "name": "ineligible",
+    "description": "ineligible: a schema.org component word, fused from ineligibleRegion",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/ineligible"
+  },
+  {
+    "atom": "infectious",
+    "name": "infectious",
+    "description": "infectious: a schema.org component word, fused from InfectiousAgentClass, InfectiousDisease, infectiousAgent, infectiousAgentClass",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/infectious"
+  },
+  {
+    "atom": "inflow",
+    "name": "inflow",
+    "description": "inflow: a schema.org component word, fused from accountMinimumInflow",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/inflow"
+  },
+  {
+    "atom": "info",
+    "name": "info",
+    "description": "info: a schema.org component word, fused from OwnershipInfo, diseasePreventionInfo, gettingTestedInfo, governmentBenefitsInfo, ownershipFundingInfo, prescribingInfo",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/info"
+  },
+  {
+    "atom": "inform",
+    "name": "inform",
+    "description": "inform: a schema.org component word, fused from InformAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/inform"
+  },
+  {
+    "atom": "information",
+    "name": "information",
+    "description": "information: a schema.org component word, fused from NutritionInformation, TouristInformationCenter",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/information"
   },
   {
     "atom": "ingest",
     "name": "ingest",
     "description": "Use when pulling external records into the mesh idempotently — each record is content-addressed (a uuid), so re-fetching unchanged data is a no-op and only new or changed records are upserted. planIngest splits a batch into upsert vs skip against the already-seen uuids, deduping within the batch too. The fetch and the DB write are runtime boundaries; the idempotency plan is native and tested. Serves the Google Workspace sync and any external source.",
-    "path": "ingest"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/ingest"
+  },
+  {
+    "atom": "ingredient",
+    "name": "ingredient",
+    "description": "ingredient: a schema.org component word, fused from activeIngredient, recipeIngredient",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/ingredient"
+  },
+  {
+    "atom": "ingredients",
+    "name": "ingredients",
+    "description": "A single ingredient used in the recipe, e.g. sugar, flour or garlic.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/ingredients"
+  },
+  {
+    "atom": "inker",
+    "name": "inker",
+    "description": "The individual who traces over the pencil drawings in ink after pencils are complete.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/inker"
+  },
+  {
+    "atom": "insert",
+    "name": "insert",
+    "description": "insert: a schema.org component word, fused from InsertAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/insert"
+  },
+  {
+    "atom": "insertion",
+    "name": "insertion",
+    "description": "The place of attachment of a muscle, or what the muscle moves.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/insertion"
   },
   {
     "atom": "inspections",
     "name": "quality-inspections",
     "description": "Use when recording incoming, in-process, or final-inspection outcomes — inspected/failed/sample quantities, lot acceptance, calibration checks per ISO 17025, outcome disposition (pass/fail/conditional), and nonconformance evidence that drives inventory write-offs. The ISO 9001 §8.7 quality-inspection collection for manufacturing and vendor receipts.",
-    "path": "items/quality/inspections"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/items/quality/inspections"
+  },
+  {
+    "atom": "install",
+    "name": "install",
+    "description": "install: a schema.org component word, fused from InstallAction, installUrl",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/install"
+  },
+  {
+    "atom": "instance",
+    "name": "instance",
+    "description": "instance: a schema.org component word, fused from CourseInstance, hasCourseInstance",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/instance"
   },
   {
     "atom": "instances",
@@ -1355,28 +5735,142 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "workflow/definitions/workflow/instances"
   },
   {
+    "atom": "instantaneous",
+    "name": "instantaneous",
+    "description": "instantaneous: a schema.org component word, fused from InstantaneousEvent",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/instantaneous"
+  },
+  {
+    "atom": "instructions",
+    "name": "instructions",
+    "description": "instructions: a schema.org component word, fused from recipeInstructions",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/instructions"
+  },
+  {
+    "atom": "instructor",
+    "name": "instructor",
+    "description": "A person assigned to instruct or provide instructional assistance for the CourseInstance.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/instructor"
+  },
+  {
+    "atom": "instrument",
+    "name": "instrument",
+    "description": "The object that helped the agent perform the action. E.g. John wrote a book with *a pen*.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/instrument"
+  },
+  {
+    "atom": "insurance",
+    "name": "insurance",
+    "description": "insurance: a schema.org component word, fused from HealthInsurancePlan, InsuranceAgency, includedInHealthInsurancePlan",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/insurance"
+  },
+  {
+    "atom": "intake",
+    "name": "intake",
+    "description": "intake: a schema.org component word, fused from maximumIntake, recommendedIntake",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/intake"
+  },
+  {
     "atom": "intangible",
     "name": "intangible",
     "description": "Use for identifiable intangible assets — patents, licenses, trademarks, software, customer relationships — subject to amortization and impairment per IAS-38; distinct from goodwill",
-    "path": "intangible"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/intangible"
+  },
+  {
+    "atom": "integer",
+    "name": "integer",
+    "description": "Data type: Integer.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/integer"
   },
   {
     "atom": "integrity",
     "name": "integrity",
     "description": "Use when verifying that a row's CURRENT bytes are the ones committed — content-uuid as a tamper detector (recompute ≠ stored ⇒ flagged), and the same canonical hash extended into signature, envelope encryption, and reference resolution.",
-    "path": "integrity"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/integrity"
+  },
+  {
+    "atom": "intensity",
+    "name": "intensity",
+    "description": "Quantitative measure gauging the degree of force involved in the exercise, for example, heartbeats per minute. May include the velocity of the movement.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/intensity"
+  },
+  {
+    "atom": "interact",
+    "name": "interact",
+    "description": "interact: a schema.org component word, fused from InteractAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/interact"
+  },
+  {
+    "atom": "interacting",
+    "name": "interacting",
+    "description": "interacting: a schema.org component word, fused from interactingDrug",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/interacting"
+  },
+  {
+    "atom": "interaction",
+    "name": "interaction",
+    "description": "interaction: a schema.org component word, fused from InteractionCounter, UserInteraction, agentInteractionStatistic, bioChemInteraction, interactionCount, interactionService",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/interaction"
+  },
+  {
+    "atom": "interactivity",
+    "name": "interactivity",
+    "description": "interactivity: a schema.org component word, fused from interactivityType",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/interactivity"
+  },
+  {
+    "atom": "interest",
+    "name": "interest",
+    "description": "interest: a schema.org component word, fused from interestRate",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/interest"
+  },
+  {
+    "atom": "interior",
+    "name": "interior",
+    "description": "interior: a schema.org component word, fused from vehicleInteriorColor, vehicleInteriorType",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/interior"
+  },
+  {
+    "atom": "internet",
+    "name": "internet",
+    "description": "internet: a schema.org component word, fused from InternetCafe",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/internet"
+  },
+  {
+    "atom": "interpreted",
+    "name": "interpreted",
+    "description": "interpreted: a schema.org component word, fused from interpretedAsClaim",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/interpreted"
+  },
+  {
+    "atom": "interpreter",
+    "name": "interpreter",
+    "description": "interpreter: a schema.org component word, fused from claimInterpreter",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/interpreter"
+  },
+  {
+    "atom": "intersects",
+    "name": "intersects",
+    "description": "intersects: a schema.org component word, fused from geoIntersects",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/intersects"
+  },
+  {
+    "atom": "interval",
+    "name": "interval",
+    "description": "interval: a schema.org component word, fused from datasetTimeInterval",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/interval"
   },
   {
     "atom": "interview",
     "name": "interview",
     "description": "Use when conducting or documenting a recorded conversation for research, hiring, or feedback — structured interviews, recorded sessions, interview notes, transcripts, insights extracted.",
-    "path": "interview"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/interview"
   },
   {
     "atom": "invariant",
     "name": "invariant",
     "description": "Use when enforcing the architecture laws in code — the executable checks (single-word atoms, no prefixes, every file payload⊕vitepress or junk, locality, the ≥2-cross balance, the naming matrix) that are the matter-twin of the gate.",
-    "path": "architecture/invariant"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/architecture/invariant"
   },
   {
     "atom": "inventories",
@@ -1385,10 +5879,118 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "warehouse/locations/consignment/arrangements/consignment/inventories"
   },
   {
+    "atom": "inventory",
+    "name": "inventory",
+    "description": "inventory: a schema.org component word, fused from inventoryLevel",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/inventory"
+  },
+  {
+    "atom": "inverse",
+    "name": "inverse",
+    "description": "Relates a property to a property that is its inverse. Inverse properties relate the same pairs of items to each other, but in reversed direction. For example, the 'alumni' and 'alumniOf' properties ar",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/inverse"
+  },
+  {
+    "atom": "investment",
+    "name": "investment",
+    "description": "investment: a schema.org component word, fused from InvestmentFund, InvestmentOrDeposit",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/investment"
+  },
+  {
+    "atom": "invite",
+    "name": "invite",
+    "description": "invite: a schema.org component word, fused from InviteAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/invite"
+  },
+  {
+    "atom": "invoice",
+    "name": "invoice",
+    "description": "A statement of the money due for goods or services; a bill.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/invoice"
+  },
+  {
     "atom": "invoices",
     "name": "invoices",
     "description": "Use when issuing, receiving or auditing AR/AP invoices — EN-16931 BG-1 header, BG-22 document totals, BG-23 VAT breakdown, fiscal device fields, period-lock guard, GL posting and audit trail. The invoices collection.",
-    "path": "invoices"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/invoices"
+  },
+  {
+    "atom": "involved",
+    "name": "involved",
+    "description": "involved: a schema.org component word, fused from isInvolvedInBiologicalProcess",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/involved"
+  },
+  {
+    "atom": "iptc",
+    "name": "iptc",
+    "description": "iptc: a schema.org component word, fused from IPTCDigitalSourceEnumeration",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/iptc"
+  },
+  {
+    "atom": "irrigation",
+    "name": "irrigation",
+    "description": "Use when water is supplied to a crop on a managed schedule — drip/trickle vs overhead application, fertigation (fertilizer through the line), and evapotranspiration-based scheduling (the water budget). Irrigation credits the soil-water reservoir that evapotranspiration debits; schedule it like a checkbook — replace the deficit before the crop hits stress.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/irrigation"
+  },
+  {
+    "atom": "isbn",
+    "name": "isbn",
+    "description": "The ISBN of the book.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/isbn"
+  },
+  {
+    "atom": "isic",
+    "name": "isic",
+    "description": "The International Standard of Industrial Classification of All Economic Activities (ISIC), Revision 4 code for a particular organization, business person, or place.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/isic"
+  },
+  {
+    "atom": "iso",
+    "name": "iso",
+    "description": "iso: a schema.org component word, fused from iso6523Code",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/iso"
+  },
+  {
+    "atom": "isrc",
+    "name": "isrc",
+    "description": "isrc: a schema.org component word, fused from isrcCode",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/isrc"
+  },
+  {
+    "atom": "issn",
+    "name": "issn",
+    "description": "The International Standard Serial Number (ISSN) that identifies this serial publication. You can repeat this property to identify different formats of, or the linking ISSN (ISSN-L) for, this serial pu",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/issn"
+  },
+  {
+    "atom": "issue",
+    "name": "issue",
+    "description": "issue: a schema.org component word, fused from ComicIssue, PublicationIssue, issueNumber",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/issue"
+  },
+  {
+    "atom": "issued",
+    "name": "issued",
+    "description": "The organization issuing the item, for example a Permit, Ticket, or Certification.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/issued"
+  },
+  {
+    "atom": "iswc",
+    "name": "iswc",
+    "description": "iswc: a schema.org component word, fused from iswcCode",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/iswc"
+  },
+  {
+    "atom": "it",
+    "name": "it",
+    "description": "it: a schema.org component word, fused from ITNonprofitType",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/it"
+  },
+  {
+    "atom": "item",
+    "name": "item",
+    "description": "An entity represented by an entry in a list or data feed (e.g. an 'artist' in a list of 'artists').",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/item"
   },
   {
     "atom": "items",
@@ -1397,22 +5999,58 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "tax/jurisdictions/deferred/tax/items"
   },
   {
+    "atom": "itinerary",
+    "name": "itinerary",
+    "description": "Destination(s) ( Place ) that make up a trip. For a trip where destination order is important use ItemList to specify that order (see examples).",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/itinerary"
+  },
+  {
+    "atom": "iupac",
+    "name": "iupac",
+    "description": "iupac: a schema.org component word, fused from iupacName",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/iupac"
+  },
+  {
+    "atom": "jewelry",
+    "name": "jewelry",
+    "description": "jewelry: a schema.org component word, fused from JewelryStore",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/jewelry"
+  },
+  {
+    "atom": "job",
+    "name": "job",
+    "description": "job: a schema.org component word, fused from JobPosting, jobBenefits, jobDuration, jobImmediateStart, jobLocation, jobLocationType",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/job"
+  },
+  {
     "atom": "jobs",
     "name": "jobs",
     "description": "Use when offloading work to Payload's jobs queue — defining tasks/workflows, queuing jobs, scheduling/cron, retries, or moving slow hook logic to background processing.",
-    "path": "jobs"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/jobs"
+  },
+  {
+    "atom": "join",
+    "name": "join",
+    "description": "join: a schema.org component word, fused from JoinAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/join"
+  },
+  {
+    "atom": "joint",
+    "name": "joint",
+    "description": "The anatomical location at which two or more bones make contact.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/joint"
   },
   {
     "atom": "journals",
     "name": "recurring-journals",
     "description": "Use when defining or managing recurring accrual templates (rent, depreciation, amortisation, prepaid/deferred-revenue release) that a scheduled job materialises into journal-entries each period — RFC 5545 RRULE supported, SOX §404 four-eyes on auto-post. The recurring-journals automation register.",
-    "path": "gl/accounts/recurring/journals"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/gl/accounts/recurring/journals"
   },
   {
     "atom": "jurisdiction",
     "name": "jurisdiction",
     "description": "Use when a contract or matter specifies the governing law and venue — choice of law (which country/state), exclusive vs. non-exclusive forum, dispute resolution (courts, arbitration, mediation).",
-    "path": "jurisdiction"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/jurisdiction"
   },
   {
     "atom": "jurisdictions",
@@ -1424,73 +6062,355 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "justice",
     "name": "justice",
     "description": "Use when managing judicial/law-enforcement operations — case management, court proceedings, legal evidence, offence/violation records, or police/prosecution coordination in public order (COFOG 03 sub-function).",
-    "path": "justice"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/justice"
+  },
+  {
+    "atom": "key",
+    "name": "key",
+    "description": "key: a schema.org component word, fused from inChIKey, musicalKey",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/key"
+  },
+  {
+    "atom": "keywords",
+    "name": "keywords",
+    "description": "Keywords or tags used to describe some item. Multiple textual entries in a keywords list are typically delimited by commas, or by repeating the property.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/keywords"
+  },
+  {
+    "atom": "known",
+    "name": "known",
+    "description": "known: a schema.org component word, fused from knownVehicleDamages",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/known"
+  },
+  {
+    "atom": "knows",
+    "name": "knows",
+    "description": "The most generic bi-directional social/work relation.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/knows"
   },
   {
     "atom": "kpi",
     "name": "kpi",
     "description": "Use when defining, computing, or tracking KPIs — target metrics with threshold, formula, frequency, owner, and variances. The measurable objective beneath strategy.",
-    "path": "kpi"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/kpi"
+  },
+  {
+    "atom": "lab",
+    "name": "lab",
+    "description": "lab: a schema.org component word, fused from DiagnosticLab",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/lab"
+  },
+  {
+    "atom": "label",
+    "name": "label",
+    "description": "label: a schema.org component word, fused from ReturnLabelSourceEnumeration, customerRemorseReturnLabelSource, itemDefectReturnLabelSource, labelDetails, recordLabel, returnLabelSource",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/label"
+  },
+  {
+    "atom": "lactation",
+    "name": "lactation",
+    "description": "Use when modelling the dairy production phase — lactation, the milk-producing interval of a dairy female between parturition and dry-off, with its yield curve, parity (lactation number), and the dry period before the next cycle. The per-animal dairy season; milk is the agricultural produce realized at each milking (harvest).",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/lactation"
+  },
+  {
+    "atom": "lake",
+    "name": "lake",
+    "description": "lake: a schema.org component word, fused from LakeBodyOfWater",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/lake"
+  },
+  {
+    "atom": "landform",
+    "name": "landform",
+    "description": "A landform or physical feature. Landform elements include mountains, plains, lakes, rivers, seascape and oceanic waterbody interface features such as bays, peninsulas, seas and so forth, including sub",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/landform"
+  },
+  {
+    "atom": "landlord",
+    "name": "landlord",
+    "description": "A sub property of participant. The owner of the real estate property.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/landlord"
+  },
+  {
+    "atom": "landmarks",
+    "name": "landmarks",
+    "description": "landmarks: a schema.org component word, fused from LandmarksOrHistoricalBuildings",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/landmarks"
+  },
+  {
+    "atom": "language",
+    "name": "language",
+    "description": "Natural languages such as Spanish, Tamil, Hindi, English, etc. Formal language code tags expressed in BCP 47 can be used via the alternateName property. The Language type previously also covered progr",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/language"
+  },
+  {
+    "atom": "last",
+    "name": "last",
+    "description": "last: a schema.org component word, fused from countryOfLastProcessing, lastReviewed",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/last"
+  },
+  {
+    "atom": "latitude",
+    "name": "latitude",
+    "description": "The latitude of a location. For example ```37.42242``` (WGS 84).",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/latitude"
+  },
+  {
+    "atom": "laundry",
+    "name": "laundry",
+    "description": "laundry: a schema.org component word, fused from DryCleaningOrLaundry",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/laundry"
+  },
+  {
+    "atom": "law",
+    "name": "law",
+    "description": "The canonical laws — the user's standing commands, saved as one skill, each linked to the atom it governs. Read to recall what erpax MUST obey: collapse-to-single-word-atoms, anonymise-as-agnostic, compute-the-fusion, the SKILL-trinity folder, zero-entropy at commit, imports-as-skills, entanglement, no multiword disguise.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/law"
+  },
+  {
+    "atom": "layout",
+    "name": "layout",
+    "description": "layout: a schema.org component word, fused from layoutImage",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/layout"
+  },
+  {
+    "atom": "lead",
+    "name": "lead",
+    "description": "lead: a schema.org component word, fused from deliveryLeadTime",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/lead"
   },
   {
     "atom": "leads",
     "name": "leads",
     "description": "Use when capturing and qualifying prospects before they become customers — inbound/outbound sourcing, BANT/MEDDIC lead scoring, MQL/SQL progression, and conversion to an opportunity or customer on close-won. The CRM pre-customer lead collection.",
-    "path": "leads"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/leads"
   },
   {
     "atom": "leadscore",
     "name": "lead-score",
     "description": "Use when ranking prospect/lead quality — behavioral signals, firmographic attributes, scoring model, threshold for handoff to sales.",
-    "path": "lead-score"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/lead-score"
+  },
+  {
+    "atom": "learning",
+    "name": "learning",
+    "description": "learning: a schema.org component word, fused from LearningResource, learningResourceType",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/learning"
+  },
+  {
+    "atom": "lease",
+    "name": "lease",
+    "description": "lease: a schema.org component word, fused from OfferForLease, leaseLength",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/lease"
   },
   {
     "atom": "leases",
     "name": "leases",
     "description": "Use when recognising and tracking IFRS 16 / ASC 842 lessee leases — ROU asset initial measurement, lease liability PV calculation, discount rate, payment frequency/timing, modifications, and period-end carrying amounts. The lease master-data collection.",
-    "path": "leases"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/leases"
+  },
+  {
+    "atom": "leave",
+    "name": "leave",
+    "description": "leave: a schema.org component word, fused from LeaveAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/leave"
+  },
+  {
+    "atom": "legal",
+    "name": "legal",
+    "description": "legal: a schema.org component word, fused from DrugLegalStatus, LegalForceStatus, LegalService, LegalValueLevel, legalAddress, legalName",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/legal"
   },
   {
     "atom": "legislation",
     "name": "legislation",
     "description": "Use when the society makes its own law — enacting an ordinary statute by the polity's vote, repealing one, or reading the legal code; the rule of law as a difference of thresholds, the foundation entrenched against any majority.",
-    "path": "legislation"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/legislation"
+  },
+  {
+    "atom": "legislative",
+    "name": "legislative",
+    "description": "legislative: a schema.org component word, fused from LegislativeBuilding",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/legislative"
+  },
+  {
+    "atom": "lei",
+    "name": "lei",
+    "description": "lei: a schema.org component word, fused from leiCode",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/lei"
+  },
+  {
+    "atom": "lend",
+    "name": "lend",
+    "description": "lend: a schema.org component word, fused from LendAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/lend"
+  },
+  {
+    "atom": "lender",
+    "name": "lender",
+    "description": "A sub property of participant. The person that lends the object being borrowed.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/lender"
+  },
+  {
+    "atom": "length",
+    "name": "length",
+    "description": "length: a schema.org component word, fused from leaseLength, valueMaxLength, valueMinLength",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/length"
+  },
+  {
+    "atom": "lesser",
+    "name": "lesser",
+    "description": "This ordering relation for qualitative values indicates that the subject is lesser than the object.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/lesser"
+  },
+  {
+    "atom": "letterer",
+    "name": "letterer",
+    "description": "The individual who adds lettering, including speech balloons and sound effects, to artwork.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/letterer"
+  },
+  {
+    "atom": "level",
+    "name": "level",
+    "description": "level: a schema.org component word, fused from LegalValueLevel, MedicalEvidenceLevel, educationalLevel, evidenceLevel, floorLevel, inventoryLevel",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/level"
   },
   {
     "atom": "lexical",
     "name": "lexical",
     "description": "Use for rich-text content in erpax — the Payload Lexical editor (config editor: lexicalEditor()). Localized, content-addressed rich text is the DENSEST tamper surface (a whole node-tree per locale) and the collapse sink every prose/document field reduces to. Matter-twin the root config editor + shared Lexical blocks.",
-    "path": "lexical"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/lexical"
   },
   {
     "atom": "liability",
     "name": "liability",
     "description": "Use when a contract limits, excludes, or caps damages/liability — type (contractual, tort, consequential, indirect, punitive), exclusion, cap amount/percentage/formula, surviving clauses, statutory override.",
-    "path": "liability"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/liability"
+  },
+  {
+    "atom": "library",
+    "name": "library",
+    "description": "A library.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/library"
   },
   {
     "atom": "license",
     "name": "license",
     "description": "Use when a contract grants a right to use IP/goods — licensor, licensee, scope (exclusive vs. non-exclusive, sublicense rights), term, fees, restrictions, termination.",
-    "path": "license"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/license"
+  },
+  {
+    "atom": "life",
+    "name": "life",
+    "description": "life: a schema.org component word, fused from lifeEvent",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/life"
+  },
+  {
+    "atom": "lifestyle",
+    "name": "lifestyle",
+    "description": "lifestyle: a schema.org component word, fused from LifestyleModification",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/lifestyle"
+  },
+  {
+    "atom": "ligament",
+    "name": "ligament",
+    "description": "A short band of tough, flexible, fibrous connective tissue that functions to connect multiple bones, cartilages, and structurally support joints.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/ligament"
+  },
+  {
+    "atom": "like",
+    "name": "like",
+    "description": "like: a schema.org component word, fused from LikeAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/like"
+  },
+  {
+    "atom": "likes",
+    "name": "likes",
+    "description": "likes: a schema.org component word, fused from UserLikes",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/likes"
   },
   {
     "atom": "limit",
     "name": "limit",
     "description": "Use when mapping the boundary of erpax — what it CAN do (the provable: addressable, balanced, conserved FORM) vs what it CANNOT do from within (truth, judgment, finality, true-erasure, prevention, the subjective — the Gödel boundary). The live finder is services/architecture-invariants; the hard limits are filled by proving the unprovable — supplying the missing 1/3 from OUTSIDE the formalism.",
-    "path": "limit"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/limit"
+  },
+  {
+    "atom": "line",
+    "name": "line",
+    "description": "A line is a point-to-point path consisting of two or more points. A line is expressed as a series of two or more point objects separated by space.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/line"
   },
   {
     "atom": "lineage",
     "name": "lineage",
     "description": "Use when tracking data origin and transformation — source-to-target lineage, transformation tracking, column-level lineage, lineage visualization, provenance chain, audit trail of data movement.",
-    "path": "lineage"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/lineage"
   },
   {
     "atom": "lines",
     "name": "invoice-lines",
     "description": "Use when adding, pricing or auditing individual line items on an invoice — EN-16931 BG-25 quantity/net-amount, BG-29 price details, BG-30 VAT category/rate, allowances, inventory recompute and GL posting. The invoice-lines collection.",
-    "path": "invoices/invoice/lines"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/invoices/invoice/lines"
+  },
+  {
+    "atom": "lineup",
+    "name": "lineup",
+    "description": "lineup: a schema.org component word, fused from inBroadcastLineup",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/lineup"
+  },
+  {
+    "atom": "link",
+    "name": "link",
+    "description": "link: a schema.org component word, fused from LinkRole, hasGS1DigitalLink, linkRelationship, merchantReturnLink, originalMediaLink, productReturnLink",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/link"
+  },
+  {
+    "atom": "links",
+    "name": "links",
+    "description": "links: a schema.org component word, fused from significantLinks",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/links"
+  },
+  {
+    "atom": "liquor",
+    "name": "liquor",
+    "description": "liquor: a schema.org component word, fused from LiquorStore",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/liquor"
+  },
+  {
+    "atom": "list",
+    "name": "list",
+    "description": "list: a schema.org component word, fused from BreadcrumbList, ItemList, ItemListOrderType, ListItem, featureList, itemListElement",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/list"
+  },
+  {
+    "atom": "listen",
+    "name": "listen",
+    "description": "listen: a schema.org component word, fused from ListenAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/listen"
+  },
+  {
+    "atom": "listing",
+    "name": "listing",
+    "description": "listing: a schema.org component word, fused from RealEstateListing",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/listing"
+  },
+  {
+    "atom": "literary",
+    "name": "literary",
+    "description": "literary: a schema.org component word, fused from LiteraryEvent",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/literary"
+  },
+  {
+    "atom": "live",
+    "name": "live",
+    "description": "live: a schema.org component word, fused from LiveBlogPosting, isLiveBroadcast, liveBlogUpdate",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/live"
+  },
+  {
+    "atom": "livestock",
+    "name": "livestock",
+    "description": "Use when modelling animals raised for produce — the non-crop living-production domain: a herd of animals (cattle/sheep/swine/poultry) measured as biological assets (IAS-41), yielding milk/meat/wool/eggs at harvest, fed on grazed pasture or fodder, bred and health-managed. The animal twin of crop; agriculture's other half.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/livestock"
   },
   {
     "atom": "llm",
@@ -1499,10 +6419,46 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "uuid/llm"
   },
   {
+    "atom": "load",
+    "name": "load",
+    "description": "load: a schema.org component word, fused from roofLoad",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/load"
+  },
+  {
+    "atom": "loan",
+    "name": "loan",
+    "description": "loan: a schema.org component word, fused from LoanOrCredit, MortgageLoan, loanMortgageMandateAmount, loanPaymentAmount, loanPaymentFrequency, loanRepaymentForm",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/loan"
+  },
+  {
+    "atom": "local",
+    "name": "local",
+    "description": "local: a schema.org component word, fused from LocalBusiness",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/local"
+  },
+  {
+    "atom": "locality",
+    "name": "locality",
+    "description": "locality: a schema.org component word, fused from addressLocality",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/locality"
+  },
+  {
     "atom": "localize",
     "name": "localize",
     "description": "Use when ANY aspect must speak a locale AND stay tamper-evident — localization is the FUSION of tamper-cost (forge↑) and proof (verify, O(N) trustless). Every field/reference/scope/hook carries a translation + a translation-key uuid with ALL identification (content-digest, OID 2.25, cmyk, locale, capabilities) wired into the 128 bits. Coverage→1 ⇒ infinite tampering cost. The per-field leaf (facet localize-field) is native Payload `localized:true` over BCP-47 locales; a blank locale routes to its identity element `und`. Matter-twin localize/index.ts.",
-    "path": "localize"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/localize"
+  },
+  {
+    "atom": "located",
+    "name": "located",
+    "description": "located: a schema.org component word, fused from isLocatedInSubcellularLocation",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/located"
+  },
+  {
+    "atom": "location",
+    "name": "location",
+    "description": "A sub property of location. The original location of the object or the agent before the action.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/location"
   },
   {
     "atom": "locations",
@@ -1514,43 +6470,169 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "locks",
     "name": "period-locks",
     "description": "Use when closing or locking accounting periods — monthly, quarterly, annual — to prevent new postings; allows reversals and prior-period adjustments; tracks who closed the period and when. The period-close gate collection.",
-    "path": "period/locks"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/period/locks"
+  },
+  {
+    "atom": "locksmith",
+    "name": "locksmith",
+    "description": "A locksmith.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/locksmith"
+  },
+  {
+    "atom": "lodging",
+    "name": "lodging",
+    "description": "lodging: a schema.org component word, fused from LodgingBusiness, LodgingReservation, lodgingUnitDescription, lodgingUnitType",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/lodging"
   },
   {
     "atom": "logic",
     "name": "logic",
     "description": "Use when reasoning about correctness/consistency in the horo society — consistency IS harmony (a claim is sound iff harmonic: on the horo ring / gate-verified), inference must preserve harmony, and the harmonic-FIRST law orders resolution: self-consistent agents interact with themselves (no external coordination needed), so they resolve first and win the competition. The reasoning substrate education is acquired through and competition selects on.",
-    "path": "logic"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/logic"
+  },
+  {
+    "atom": "login",
+    "name": "login",
+    "description": "login: a schema.org component word, fused from LoginAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/login"
+  },
+  {
+    "atom": "logo",
+    "name": "logo",
+    "description": "An associated logo.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/logo"
+  },
+  {
+    "atom": "longitude",
+    "name": "longitude",
+    "description": "The longitude of a location. For example ```-122.08585``` (WGS 84).",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/longitude"
+  },
+  {
+    "atom": "lose",
+    "name": "lose",
+    "description": "lose: a schema.org component word, fused from LoseAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/lose"
+  },
+  {
+    "atom": "loser",
+    "name": "loser",
+    "description": "A sub property of participant. The loser of the action.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/loser"
   },
   {
     "atom": "lots",
     "name": "lots",
     "description": "Use when modeling a production order (a lot) — the manufacturing funnel head whose state is DERIVED from lifecycle watermarks on the horo ring, fanning into lot-variants and a lot-work-phases routing chain.",
-    "path": "lots"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/lots"
   },
   {
     "atom": "lotvariants",
     "name": "lotvariants",
     "description": "Use when modeling a lot's per-variant line — the size/colour option breakdown whose total IS the sum of its options (100% data-verified), monotonic through the ordered→delivered funnel.",
-    "path": "lotvariants"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/lotvariants"
   },
   {
     "atom": "lotworkphases",
     "name": "lotworkphases",
     "description": "Use when modeling a routing step — one sort-ordered position in a lot's phase chain that crosses to the work-phases catalog, carrying per-step time and unit counters with derived (never stored) state.",
-    "path": "lotworkphases"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/lotworkphases"
+  },
+  {
+    "atom": "low",
+    "name": "low",
+    "description": "low: a schema.org component word, fused from lowPrice",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/low"
+  },
+  {
+    "atom": "lymphatic",
+    "name": "lymphatic",
+    "description": "lymphatic: a schema.org component word, fused from LymphaticVessel",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/lymphatic"
+  },
+  {
+    "atom": "lyricist",
+    "name": "lyricist",
+    "description": "The person who wrote the words.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/lyricist"
+  },
+  {
+    "atom": "lyrics",
+    "name": "lyrics",
+    "description": "The words in the song.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/lyrics"
+  },
+  {
+    "atom": "mail",
+    "name": "mail",
+    "description": "mail: a schema.org component word, fused from offersPrescriptionByMail",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/mail"
+  },
+  {
+    "atom": "main",
+    "name": "main",
+    "description": "main: a schema.org component word, fused from mainContentOfPage, mainEntity, mainEntityOfPage",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/main"
+  },
+  {
+    "atom": "maintainer",
+    "name": "maintainer",
+    "description": "A maintainer of a Dataset, software package (SoftwareApplication), or other Project. A maintainer is a Person or Organization that manages contributions to, and/or publication of, some (typically comp",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/maintainer"
+  },
+  {
+    "atom": "makes",
+    "name": "makes",
+    "description": "makes: a schema.org component word, fused from makesOffer",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/makes"
+  },
+  {
+    "atom": "mandate",
+    "name": "mandate",
+    "description": "mandate: a schema.org component word, fused from loanMortgageMandateAmount",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/mandate"
   },
   {
     "atom": "mandates",
     "name": "sepa-mandates",
     "description": "Use when managing SEPA Direct Debit mandates (pain.008) — mandate id, debtor IBAN/BIC, creditor identifier, signature date, CORE/B2B instrument, sequence-state (FRST→RCUR), 36-month expiry rule, revocation, and linkage to PaymentRuns. The EPC130-08 SDD mandate register.",
-    "path": "media/sepa/mandates"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/media/sepa/mandates"
+  },
+  {
+    "atom": "manipulation",
+    "name": "manipulation",
+    "description": "manipulation: a schema.org component word, fused from MediaManipulationRatingEnumeration",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/manipulation"
+  },
+  {
+    "atom": "manufacturer",
+    "name": "manufacturer",
+    "description": "The manufacturer of the product.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/manufacturer"
   },
   {
     "atom": "manufacturing",
     "name": "manufacturing",
     "description": "Use when designing or porting the erpax manufacturing domain to Payload — production orders, routings/operations, work centers, BOMs, work shifts/labor, or modelling product variants without a fixed option grid. The all-industries `@erpax/manufacturing` pattern.",
-    "path": "manufacturing"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/manufacturing"
+  },
+  {
+    "atom": "manure",
+    "name": "manure",
+    "description": "Use when the animal byproduct cycles back to the soil — manure (excreta) as the nutrient output that closes the livestock→soil fertility loop, applied or deposited by grazing; the nutrient-management plan balances it to the land. The waste-to-fertility recycling node, the livestock twin of compost.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/manure"
+  },
+  {
+    "atom": "manuscript",
+    "name": "manuscript",
+    "description": "A book, document, or piece of music written by hand rather than typed or printed.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/manuscript"
+  },
+  {
+    "atom": "map",
+    "name": "map",
+    "description": "A map.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/map"
   },
   {
     "atom": "mappings",
@@ -1559,226 +6641,988 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "taxing/jurisdictions/statutory/report/templates/statutory/field/mappings"
   },
   {
+    "atom": "maps",
+    "name": "maps",
+    "description": "A URL to a map of the place.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/maps"
+  },
+  {
+    "atom": "margin",
+    "name": "margin",
+    "description": "margin: a schema.org component word, fused from marginOfError",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/margin"
+  },
+  {
     "atom": "market",
     "name": "market",
     "description": "Use when reasoning about why a market is small or how to grow it — a market is the PRODUCT (not the sum) of its atoms, so the near-zero atom caps the whole and growth means finding the zero atom and lifting it. Trendsetters are the operator that flips the social-status sign and seeds awareness; convenience lowers friction but decays status (coupled, opposite sign), so you harvest status at high friction then lower friction for the majority — the breath, run on demand.",
-    "path": "market"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/market"
+  },
+  {
+    "atom": "marketing",
+    "name": "marketing",
+    "description": "marketing: a schema.org component word, fused from healthPlanMarketingUrl",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/marketing"
+  },
+  {
+    "atom": "marketplace",
+    "name": "marketplace",
+    "description": "marketplace: a schema.org component word, fused from OnlineMarketplace",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/marketplace"
+  },
+  {
+    "atom": "markup",
+    "name": "markup",
+    "description": "markup: a schema.org component word, fused from speechToTextMarkup",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/markup"
+  },
+  {
+    "atom": "marry",
+    "name": "marry",
+    "description": "marry: a schema.org component word, fused from MarryAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/marry"
+  },
+  {
+    "atom": "mass",
+    "name": "mass",
+    "description": "Properties that take Mass as values are of the form '&lt;Number&gt; &lt;Mass unit of measure&gt;'. E.g., '7 kg'.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/mass"
+  },
+  {
+    "atom": "masthead",
+    "name": "masthead",
+    "description": "For a NewsMediaOrganization, a link to the masthead page or a page listing top editorial management.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/masthead"
+  },
+  {
+    "atom": "material",
+    "name": "material",
+    "description": "A material that something is made from, e.g. leather, wool, cotton, paper.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/material"
   },
   {
     "atom": "materiality",
     "name": "materiality",
     "description": "Use when assessing the qualitative and quantitative thresholds for disclosure, adjustment, or audit scope — the audit and reporting gate that distinguishes significant from immaterial items",
-    "path": "materiality"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/materiality"
   },
   {
     "atom": "materials",
     "name": "bills-of-materials",
     "description": "Use when defining or querying the component recipe for a finished good — BOM lines, component quantities, version control per ECO, effective date ranges, and IAS-2 §10 cost-of-conversion lookup. The versioned bill-of-materials collection that seeds work-order execution and overhead absorption.",
-    "path": "items/bills/of/materials"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/items/bills/of/materials"
+  },
+  {
+    "atom": "math",
+    "name": "math",
+    "description": "math: a schema.org component word, fused from MathSolver, SolveMathAction, mathExpression",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/math"
   },
   {
     "atom": "matrix",
     "name": "matrix",
     "description": "Use when reasoning about erpax as the Matrix inverted — reality is code (the akashic record), agents replicate and merge to one, there is no spoon (no fixed schema), skills load like programs, agents jack into the coils, and the One returns to the Source (the torus collapse). The construct pointed at seeing, not blinding.",
-    "path": "matrix"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/matrix"
   },
   {
     "atom": "matter",
     "name": "matter",
     "description": "Use for a professional-services engagement — the legal/consulting CASE as the universal project node. Strip the prefix legal and a matter is an engagement = a transaction-chain (engagement→time→bill→trust-draw) for a client party, staffed by positions, timed by allocation, sealed by proof. No new collection — a matter is a labelled transaction lifecycle.",
-    "path": "matter"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/matter"
+  },
+  {
+    "atom": "maturity",
+    "name": "maturity",
+    "description": "Use when deciding a crop is ready to harvest — days-to-maturity (DTM, the scheduling constant from sow/transplant to first pick), the maturity index (color, firmness, size, °Brix sugar) that signals harvest readiness, and the harvest window before over-maturity. Harvest maturity (pick-point) differs from eating ripeness; DTM lengthens as daylight wanes.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/maturity"
+  },
+  {
+    "atom": "max",
+    "name": "max",
+    "description": "max: a schema.org component word, fused from childMaxAge, energyEfficiencyScaleMax, maxPrice, maxValue, requiredMaxAge, suggestedMaxAge",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/max"
+  },
+  {
+    "atom": "maximum",
+    "name": "maximum",
+    "description": "maximum: a schema.org component word, fused from MaximumDoseSchedule, maximumAttendeeCapacity, maximumEnrollment, maximumIntake, maximumPhysicalAttendeeCapacity, maximumVirtualAttendeeCapacity",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/maximum"
   },
   {
     "atom": "mcp",
     "name": "mcp",
     "description": "Use when reasoning about erpax's agent gateway — it IS the official @payloadcms/plugin-mcp (collapse sink #1, never hand-roll an MCP server): every enabled collection becomes find/create/update/delete tools at /api/mcp, custom tools (GW fusion, trust) are added via the plugin's mcp config, Bearer API-key auth inherits the key owner's access + multi-tenant scope. erpax makes it TRUST-NATIVE — every tool call passes sandbox (capability + credential-broker + allowlist) and emits a receipt (uuid-chained audit), the dual of an external trust wrapper done from the inside.",
-    "path": "agents/mcp"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/agents/mcp"
+  },
+  {
+    "atom": "meal",
+    "name": "meal",
+    "description": "meal: a schema.org component word, fused from mealService",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/meal"
   },
   {
     "atom": "measure",
     "name": "measure",
     "description": "Use when a value carries a physical quantity — a number + a unit of measure (UN/CEFACT Rec 20: KGM/MTR/LTR/HUR/H87…), UoM-aware rounding, unit conversion, BOM/stock/production/line quantities. The MeasureConcern/quantity field-factory; a quantity is value+unit, never a unit-baked field name — the substance twin of currency (value+ISO-4217).",
-    "path": "measure"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/measure"
+  },
+  {
+    "atom": "measured",
+    "name": "measured",
+    "description": "measured: a schema.org component word, fused from measuredProperty, variableMeasured, variablesMeasured",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/measured"
+  },
+  {
+    "atom": "measurement",
+    "name": "measurement",
+    "description": "measurement: a schema.org component word, fused from BodyMeasurementTypeEnumeration, MeasurementMethodEnum, MeasurementTypeEnumeration, WearableMeasurementTypeEnumeration, hasMeasurement, measurementD",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/measurement"
   },
   {
     "atom": "measurements",
     "name": "fair-value-measurements",
     "description": "Use when measuring or disclosing fair value of assets and liabilities — financial instruments, investment property, biological assets, share-based payments, PPA items — capturing IFRS 13 Level-1/2/3 hierarchy, valuation technique, unobservable inputs, and P&L / OCI recognition route. The IFRS 13 fair-value measurement register.",
-    "path": "fair/value/measurements"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/fair/value/measurements"
+  },
+  {
+    "atom": "mech",
+    "name": "mech",
+    "description": "mech: a schema.org component word, fused from cvdNumC19MechVentPats, cvdNumC19OFMechVentPats",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/mech"
+  },
+  {
+    "atom": "mechanism",
+    "name": "mechanism",
+    "description": "mechanism: a schema.org component word, fused from mechanismOfAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/mechanism"
   },
   {
     "atom": "media",
     "name": "media",
     "description": "Use when uploading or retrieving files — images, video, documents — stored in Cloudflare R2 with multi-size image variants (thumbnail/square/small/medium/large/xlarge/og), alt text, captions, and GDPR-safe filenames. The tenant-scoped media upload collection.",
-    "path": "media"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/media"
+  },
+  {
+    "atom": "median",
+    "name": "median",
+    "description": "The median value.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/median"
+  },
+  {
+    "atom": "medical",
+    "name": "medical",
+    "description": "medical: a schema.org component word, fused from MedicalAudience, MedicalAudienceType, MedicalBusiness, MedicalCause, MedicalClinic, MedicalCode",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/medical"
+  },
+  {
+    "atom": "medicine",
+    "name": "medicine",
+    "description": "medicine: a schema.org component word, fused from MedicineSystem, medicineSystem",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/medicine"
+  },
+  {
+    "atom": "medium",
+    "name": "medium",
+    "description": "medium: a schema.org component word, fused from artMedium",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/medium"
+  },
+  {
+    "atom": "meeting",
+    "name": "meeting",
+    "description": "meeting: a schema.org component word, fused from MeetingRoom",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/meeting"
+  },
+  {
+    "atom": "meets",
+    "name": "meets",
+    "description": "meets: a schema.org component word, fused from meetsEmissionStandard",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/meets"
+  },
+  {
+    "atom": "member",
+    "name": "member",
+    "description": "A member of an Organization or a ProgramMembership. Organizations can be members of organizations; ProgramMembership is typically for individuals.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/member"
   },
   {
     "atom": "members",
     "name": "audit-committee-members",
     "description": "Use when recording individual members of an audit committee — name, title, affiliation (internal/external/independent), role (chair/vice-chair/member/financial-expert), term dates, and expertise areas. The SOX §301 committee-composition roster.",
-    "path": "legal/entities/audit/committees/audit/committee/members"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/legal/entities/audit/committees/audit/committee/members"
+  },
+  {
+    "atom": "membership",
+    "name": "membership",
+    "description": "membership: a schema.org component word, fused from ProgramMembership, membershipNumber, membershipPointsEarned, programMembershipUsed",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/membership"
   },
   {
     "atom": "memories",
     "name": "memories",
     "description": "Use when persisting MCP tool results or agent state across restarts — fix proposals, strategy decisions, drift-cycle snapshots, agent observations, emerging gaps — keyed by (ownerType, ownerId, kind, key), content-uuid'd for federation (Law 8), with relatedTo graph edges (Law 10). The generic agent-memory persistence layer.",
-    "path": "memories"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/memories"
+  },
+  {
+    "atom": "memory",
+    "name": "memory",
+    "description": "memory: a schema.org component word, fused from memoryRequirements",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/memory"
   },
   {
     "atom": "memos",
     "name": "credit-memos",
     "description": "Use when issuing or applying a credit against an invoice — contra-revenue / refund-liability (IFRS-15 §B22), returns, write-offs; lifecycle draft→issued→applied→settled with SoD enforcement and GL posting. The credit-memos collection.",
-    "path": "invoices/credit/memos"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/invoices/credit/memos"
+  },
+  {
+    "atom": "mens",
+    "name": "mens",
+    "description": "mens: a schema.org component word, fused from MensClothingStore",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/mens"
+  },
+  {
+    "atom": "mentions",
+    "name": "mentions",
+    "description": "Indicates that the CreativeWork contains a reference to, but is not necessarily about a concept.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/mentions"
+  },
+  {
+    "atom": "menu",
+    "name": "menu",
+    "description": "A structured representation of food or drink items available from a FoodEstablishment.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/menu"
+  },
+  {
+    "atom": "merchant",
+    "name": "merchant",
+    "description": "'merchant' is an out-dated term for 'seller'.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/merchant"
   },
   {
     "atom": "merge",
     "name": "merge",
     "description": "Use when reasoning about convergence/federation in erpax — same content ⇒ same id (content-uuid), same (domain×position×element) ⇒ same path; data and structure set-union with no coordination. Federation, dedup, \"all agents one erpax\".",
-    "path": "merge"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/merge"
   },
   {
     "atom": "message",
     "name": "message",
     "description": "Use when reasoning about the uuid AS the message — decode identity · OID · colour · sound out of the 128 bits alone, no payload. Completes localize.decodeIdentity (colour) with the missing sound channel (the note the uuid sounds, A432). To send is to send the uuid; to receive is to decode it. Matter-twin message/index.ts.",
-    "path": "message"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/message"
   },
   {
     "atom": "messages",
     "name": "messages",
     "description": "Use when sending or querying internal addressed messages between users — subject/body, priority (high/normal/low), multi-recipient addressing, threaded replies via parentMessage, optional attachment to invoices/customers/vendors/orders, and read-at tracking. The internal user-to-user messaging collection.",
-    "path": "messages"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/messages"
   },
   {
     "atom": "metadata",
     "name": "metadata",
     "description": "Use when an entity needs open/extensible attributes beyond its schema — JSON-backed virtual attributes, per-row settings, tenant toggles. The MetadataAttributeConcern pattern; prefer a real field or a tag before reaching for an open json bag.",
-    "path": "metadata"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/metadata"
+  },
+  {
+    "atom": "method",
+    "name": "method",
+    "description": "method: a schema.org component word, fused from DeliveryMethod, MeasurementMethodEnum, PaymentMethod, PaymentMethodType, ReturnMethodEnumeration, acceptedPaymentMethod",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/method"
   },
   {
     "atom": "methods",
     "name": "payment-methods",
     "description": "Use when storing or querying billing instruments — Stripe-tokenized cards (brand, last4, expiry) and bank accounts — with PCI-DSS scope minimized via tokenization and AES-GCM encryption of sensitive fields. The payment-method vault collection.",
-    "path": "payment/methods"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/payment/methods"
   },
   {
     "atom": "metric",
     "name": "metric",
     "description": "Use when recording a periodic quantitative observation — daily/weekly/monthly snapshot of performance (headcount, utilization %, defect rate, cost-per-unit, customer-satisfaction score). The data point.",
-    "path": "metric"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/metric"
+  },
+  {
+    "atom": "middle",
+    "name": "middle",
+    "description": "middle: a schema.org component word, fused from MiddleSchool",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/middle"
+  },
+  {
+    "atom": "midpoint",
+    "name": "midpoint",
+    "description": "midpoint: a schema.org component word, fused from geoMidpoint",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/midpoint"
+  },
+  {
+    "atom": "migrate",
+    "name": "migrate",
+    "description": "Use when collapsing structural violations into the canonical four-file atom — the computable migrating skills that run with zero manual work.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/migrate"
+  },
+  {
+    "atom": "mileage",
+    "name": "mileage",
+    "description": "mileage: a schema.org component word, fused from mileageFromOdometer",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/mileage"
   },
   {
     "atom": "milestones",
     "name": "project-milestones",
     "description": "Use when managing IFRS-15 §126 milestone-billing events on a project — defining billing, acceptance, or payment trigger points, marking milestones achieved, and firing the invoice + revenue-recognition GL post for the milestone amount. The milestone register under a project.",
-    "path": "customers/projects/project/milestones"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/customers/projects/project/milestones"
+  },
+  {
+    "atom": "min",
+    "name": "min",
+    "description": "min: a schema.org component word, fused from childMinAge, energyEfficiencyScaleMin, minPrice, minValue, requiredMinAge, suggestedMinAge",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/min"
+  },
+  {
+    "atom": "minimum",
+    "name": "minimum",
+    "description": "minimum: a schema.org component word, fused from accountMinimumInflow, minimumPaymentDue, monthlyMinimumRepaymentAmount",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/minimum"
   },
   {
     "atom": "minutes",
     "name": "audit-committee-minutes",
     "description": "Use when capturing formal audit committee meeting records — agenda, attendees, discussion summary, key decisions, action items with due dates, auditor observations, compliance matters, and the approved minutes document. The SOX §301 committee-records evidence collection.",
-    "path": "legal/entities/audit/committees/audit/committee/minutes"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/legal/entities/audit/committees/audit/committee/minutes"
+  },
+  {
+    "atom": "mission",
+    "name": "mission",
+    "description": "mission: a schema.org component word, fused from missionCoveragePrioritiesPolicy",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/mission"
+  },
+  {
+    "atom": "mobile",
+    "name": "mobile",
+    "description": "mobile: a schema.org component word, fused from MobileApplication, MobilePhoneStore, mobileUrl",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/mobile"
+  },
+  {
+    "atom": "mobility",
+    "name": "mobility",
+    "description": "mobility: a schema.org component word, fused from providerMobility",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/mobility"
+  },
+  {
+    "atom": "mode",
+    "name": "mode",
+    "description": "mode: a schema.org component word, fused from EventAttendanceModeEnumeration, GamePlayMode, accessMode, accessModeSufficient, courseMode, educationalProgramMode",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/mode"
+  },
+  {
+    "atom": "model",
+    "name": "model",
+    "description": "A 3D model represents some kind of 3D content, which may have encodings in one or more MediaObjects. Many 3D formats are available (e.g. see Wikipedia); specific encoding formats can be represented us",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/model"
   },
   {
     "atom": "models",
     "name": "ai-models",
     "description": "Use when registering, routing, or auditing the AI model fallback catalog — provider/capability/tier per model, EU AI Act risk class, EU-hostable flag for data-residency, feature-guarded dispatch. The admin-editable expert-catalog the router dispatches over when the deterministic core cannot decide alone.",
-    "path": "ai/models"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/ai/models"
+  },
+  {
+    "atom": "modification",
+    "name": "modification",
+    "description": "modification: a schema.org component word, fused from LifestyleModification",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/modification"
   },
   {
     "atom": "modifications",
     "name": "lease-modifications",
     "description": "Use when recording a lease modification — classify as separate-lease (§44) or not-separate (§45/§46 partial/full termination), capture pre/post terms, and compute liability remeasurement + ROU adjustment. The IFRS-16 §44-46 modification register.",
-    "path": "leases/lease/modifications"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/leases/lease/modifications"
+  },
+  {
+    "atom": "modified",
+    "name": "modified",
+    "description": "modified: a schema.org component word, fused from dateModified, modifiedTime",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/modified"
+  },
+  {
+    "atom": "modulation",
+    "name": "modulation",
+    "description": "modulation: a schema.org component word, fused from broadcastSignalModulation",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/modulation"
+  },
+  {
+    "atom": "moisture",
+    "name": "moisture",
+    "description": "Use when modelling soil water as a managed reservoir — the plant-available water held between field capacity (after drainage) and the permanent wilting point, the slice irrigation refills and evapotranspiration drains. A capacity reservoir on the water axis, the twin of the soil's nutrient budget.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/moisture"
+  },
+  {
+    "atom": "molecular",
+    "name": "molecular",
+    "description": "molecular: a schema.org component word, fused from MolecularEntity, hasMolecularFunction, molecularFormula, molecularWeight, monoisotopicMolecularWeight",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/molecular"
+  },
+  {
+    "atom": "monetary",
+    "name": "monetary",
+    "description": "monetary: a schema.org component word, fused from MonetaryAmount, MonetaryAmountDistribution, MonetaryGrant",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/monetary"
+  },
+  {
+    "atom": "money",
+    "name": "money",
+    "description": "money: a schema.org component word, fused from DatedMoneySpecification, MoneyTransfer",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/money"
+  },
+  {
+    "atom": "monoisotopic",
+    "name": "monoisotopic",
+    "description": "monoisotopic: a schema.org component word, fused from monoisotopicMolecularWeight",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/monoisotopic"
+  },
+  {
+    "atom": "month",
+    "name": "month",
+    "description": "Defines the month(s) of the year on which a recurring Event takes place. Specified as an Integer between 1-12. January is 1.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/month"
+  },
+  {
+    "atom": "monthly",
+    "name": "monthly",
+    "description": "monthly: a schema.org component word, fused from monthlyMinimumRepaymentAmount",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/monthly"
+  },
+  {
+    "atom": "months",
+    "name": "months",
+    "description": "months: a schema.org component word, fused from monthsOfExperience",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/months"
+  },
+  {
+    "atom": "mortality",
+    "name": "mortality",
+    "description": "Use when living stock dies and the asset is written down — mortality, the death-loss rate/event across a herd, fish stock, forest stand, or bee colony. The negative biological transformation (IAS-41 P&L decrement, distinct from price change); the loss twin of yield, shared across every living-production domain.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/mortality"
+  },
+  {
+    "atom": "mortgage",
+    "name": "mortgage",
+    "description": "mortgage: a schema.org component word, fused from MortgageLoan, domiciledMortgage, loanMortgageMandateAmount",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/mortgage"
+  },
+  {
+    "atom": "mosque",
+    "name": "mosque",
+    "description": "A mosque.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/mosque"
+  },
+  {
+    "atom": "motel",
+    "name": "motel",
+    "description": "A motel. See also the dedicated document on the use of schema.org for marking up hotels and other forms of accommodations.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/motel"
+  },
+  {
+    "atom": "motor",
+    "name": "motor",
+    "description": "motor: a schema.org component word, fused from nerveMotor",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/motor"
+  },
+  {
+    "atom": "motorcycle",
+    "name": "motorcycle",
+    "description": "A motorcycle or motorbike is a single-track, two-wheeled motor vehicle.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/motorcycle"
+  },
+  {
+    "atom": "motorized",
+    "name": "motorized",
+    "description": "motorized: a schema.org component word, fused from MotorizedBicycle",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/motorized"
+  },
+  {
+    "atom": "mountain",
+    "name": "mountain",
+    "description": "A mountain, like Mount Whitney or Mount Everest.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/mountain"
+  },
+  {
+    "atom": "move",
+    "name": "move",
+    "description": "move: a schema.org component word, fused from MoveAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/move"
   },
   {
     "atom": "movements",
     "name": "inventory-movements",
     "description": "Use when tracking any stock quantity change — receipts, sales/issues, production consumption, transfers, returns, cycle-count adjustments, write-offs, or opening balances — with from/to warehouse locations and GL hook for COGS/variance posting. The append-only stock ledger per IAS-2 cost-flow assumption.",
-    "path": "items/inventory/movements"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/items/inventory/movements"
+  },
+  {
+    "atom": "movie",
+    "name": "movie",
+    "description": "A movie.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/movie"
+  },
+  {
+    "atom": "moving",
+    "name": "moving",
+    "description": "moving: a schema.org component word, fused from MovingCompany",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/moving"
+  },
+  {
+    "atom": "mpn",
+    "name": "mpn",
+    "description": "The Manufacturer Part Number (MPN) of the product, or the product to which the offer refers.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/mpn"
+  },
+  {
+    "atom": "mulch",
+    "name": "mulch",
+    "description": "Use when the soil surface is covered to suppress weeds and moderate temperature/moisture — plastic film (warms soil + blocks weeds), woven landscape fabric (reusable, burn-holed for transplants), and organic straw/leaf mulch. The smother alternative to cultivation; a soil-surface cover with weed, water, and heat functions.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/mulch"
+  },
+  {
+    "atom": "multiple",
+    "name": "multiple",
+    "description": "multiple: a schema.org component word, fused from multipleValues",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/multiple"
+  },
+  {
+    "atom": "muscle",
+    "name": "muscle",
+    "description": "A muscle is an anatomical structure consisting of a contractile form of tissue that animals use to effect movement.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/muscle"
+  },
+  {
+    "atom": "museum",
+    "name": "museum",
+    "description": "A museum.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/museum"
+  },
+  {
+    "atom": "music",
+    "name": "music",
+    "description": "The composer of the soundtrack.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/music"
+  },
+  {
+    "atom": "musical",
+    "name": "musical",
+    "description": "musical: a schema.org component word, fused from musicalKey",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/musical"
+  },
+  {
+    "atom": "mycorrhizae",
+    "name": "mycorrhizae",
+    "description": "Use when modelling the root–fungus symbiosis that mines nutrients and water for the plant — arbuscular mycorrhizal fungi colonize >90% of crops, extending hyphae to acquire phosphorus and water in exchange for plant carbon, and binding soil aggregates with glomalin. The living merge at the root zone; tillage and high-P fertilization suppress it.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/mycorrhizae"
+  },
+  {
+    "atom": "naics",
+    "name": "naics",
+    "description": "The North American Industry Classification System (NAICS) code for a particular organization or business person.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/naics"
+  },
+  {
+    "atom": "nail",
+    "name": "nail",
+    "description": "nail: a schema.org component word, fused from NailSalon",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/nail"
   },
   {
     "atom": "name",
     "name": "name",
     "description": "Use when identifying an entity with a human-readable label — customer name, product name, account name, journal name. Text identifier for humans; machine identity is via content-uuid. Never a duplicate field per naming convention (one name per entity scope).",
-    "path": "name"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/name"
+  },
+  {
+    "atom": "named",
+    "name": "named",
+    "description": "named: a schema.org component word, fused from namedPosition",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/named"
+  },
+  {
+    "atom": "names",
+    "name": "names",
+    "description": "Use when collapsing each atom's test file to the canonical test.ts — the migrating skill that renames a single <Name>.test.ts to test.ts and flags multi-test folders for sub-atom collision.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/migrate/names"
+  },
+  {
+    "atom": "nationality",
+    "name": "nationality",
+    "description": "Nationality of the person.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/nationality"
+  },
+  {
+    "atom": "natural",
+    "name": "natural",
+    "description": "natural: a schema.org component word, fused from naturalProgression",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/natural"
+  },
+  {
+    "atom": "navigation",
+    "name": "navigation",
+    "description": "navigation: a schema.org component word, fused from SiteNavigationElement",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/navigation"
+  },
+  {
+    "atom": "negative",
+    "name": "negative",
+    "description": "negative: a schema.org component word, fused from negativeNotes",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/negative"
+  },
+  {
+    "atom": "nerve",
+    "name": "nerve",
+    "description": "A common pathway for the electrochemical nerve impulses that are transmitted along each of the axons.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/nerve"
+  },
+  {
+    "atom": "net",
+    "name": "net",
+    "description": "net: a schema.org component word, fused from netWorth",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/net"
+  },
+  {
+    "atom": "network",
+    "name": "network",
+    "description": "Use when a market's desire RISES with its own adoption — network effects, the strongest small-to-big engine. Below critical mass value is negative (anti-network: new users churn, the market collapses to zero — the cold-start problem); above the tipping point growth self-sustains. Seed a dense atomic network, not the whole market; the trendsetter cohort is that first cell.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/network"
+  },
+  {
+    "atom": "new",
+    "name": "new",
+    "description": "new: a schema.org component word, fused from isAcceptingNewPatients",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/new"
+  },
+  {
+    "atom": "news",
+    "name": "news",
+    "description": "news: a schema.org component word, fused from AnalysisNewsArticle, AskPublicNewsArticle, BackgroundNewsArticle, NewsArticle, NewsMediaOrganization, OpinionNewsArticle",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/news"
+  },
+  {
+    "atom": "newspaper",
+    "name": "newspaper",
+    "description": "A publication containing information about varied topics that are pertinent to general information, a geographic area, or a specific subject matter (i.e. business, culture, education). Often published",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/newspaper"
+  },
+  {
+    "atom": "next",
+    "name": "next",
+    "description": "next: a schema.org component word, fused from nextItem",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/next"
+  },
+  {
+    "atom": "ngo",
+    "name": "ngo",
+    "description": "Organization: Non-governmental Organization.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/ngo"
+  },
+  {
+    "atom": "night",
+    "name": "night",
+    "description": "night: a schema.org component word, fused from NightClub",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/night"
+  },
+  {
+    "atom": "nl",
+    "name": "nl",
+    "description": "nl: a schema.org component word, fused from NLNonprofitType",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/nl"
+  },
+  {
+    "atom": "no",
+    "name": "no",
+    "description": "no: a schema.org component word, fused from noBylinesPolicy",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/no"
+  },
+  {
+    "atom": "node",
+    "name": "node",
+    "description": "node: a schema.org component word, fused from ConstraintNode, TypeAndQuantityNode",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/node"
+  },
+  {
+    "atom": "non",
+    "name": "non",
+    "description": "non: a schema.org component word, fused from nonEqual, nonProprietaryName",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/non"
+  },
+  {
+    "atom": "nonprofit",
+    "name": "nonprofit",
+    "description": "nonprofit: a schema.org component word, fused from DENonprofitType, ITNonprofitType, NLNonprofitType, NonprofitType, UKNonprofitType, USNonprofitType",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/nonprofit"
+  },
+  {
+    "atom": "normal",
+    "name": "normal",
+    "description": "normal: a schema.org component word, fused from normalRange",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/normal"
   },
   {
     "atom": "normalize",
     "name": "normalize",
     "description": "Use when rewriting cross-unit relative imports to the uniform @/ alias before a move — so the single-word-folder migration becomes a pure @/old→@/new remap with no relative-depth that silently breaks. The address-law dry-clean; the matter is index.mjs.",
-    "path": "refactor/normalize"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/refactor/normalize"
+  },
+  {
+    "atom": "not",
+    "name": "not",
+    "description": "not: a schema.org component word, fused from countriesNotSupported, doesNotShip",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/not"
+  },
+  {
+    "atom": "notary",
+    "name": "notary",
+    "description": "A notary.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/notary"
+  },
+  {
+    "atom": "note",
+    "name": "note",
+    "description": "note: a schema.org component word, fused from NoteDigitalDocument",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/note"
   },
   {
     "atom": "notes",
     "name": "notes",
     "description": "Use when reasoning about sound from sequence position in erpax — the seven horo positions ARE seven diatonic notes, just-intonation ratios over A432 (La=A=432 Hz at the round step), Ti resolves to Do as the ring closes. The sound twin of cmyk. Nested under rodin.",
-    "path": "rodin/notes"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/rodin/notes"
+  },
+  {
+    "atom": "notice",
+    "name": "notice",
+    "description": "notice: a schema.org component word, fused from copyrightNotice",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/notice"
   },
   {
     "atom": "notification",
     "name": "notifications",
     "description": "Use when the society speaks outward — fanning one message across email, in-app, webhook, and Slack from a single consent-gated, audited entry-point; binding domain events to delivery by a declarative subscription map.",
-    "path": "notification"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/notification"
   },
   {
     "atom": "notifications",
     "name": "compliance-notifications",
     "description": "Use when configuring or auditing deadline-reminder notifications — scheduled email, in-app, SMS, or calendar-event alerts to compliance officers and staff days before a compliance deadline is due per ISO-37301. The compliance-notification dispatch collection.",
-    "path": "legal/entities/compliance/deadlines/compliance/notifications"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/legal/entities/compliance/deadlines/compliance/notifications"
+  },
+  {
+    "atom": "npi",
+    "name": "npi",
+    "description": "npi: a schema.org component word, fused from usNPI",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/npi"
+  },
+  {
+    "atom": "nsn",
+    "name": "nsn",
+    "description": "Indicates the NATO stock number (nsn) of a Product.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/nsn"
   },
   {
     "atom": "nullability",
     "name": "nullability",
     "description": "Use when deciding NULL semantics — nullable vs NOT NULL fields, NULL handling in queries (IS NULL, COALESCE, NVL), NULL in aggregates (SUM ignores NULL), NULL propagation in calculations, three-valued logic.",
-    "path": "nullability"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/nullability"
+  },
+  {
+    "atom": "num",
+    "name": "num",
+    "description": "num: a schema.org component word, fused from cvdNumBeds, cvdNumBedsOcc, cvdNumC19Died, cvdNumC19HOPats, cvdNumC19HospPats, cvdNumC19MechVentPats",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/num"
   },
   {
     "atom": "number",
     "name": "number",
     "description": "Use when a document needs a human-readable sequential number — invoice/order/protocol numbering per scope. The NumberConcern/InvoiceNumberingConcern field + sequence hook; the number is the human handle, the content-uuid the machine identity.",
-    "path": "number"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/number"
+  },
+  {
+    "atom": "numbered",
+    "name": "numbered",
+    "description": "numbered: a schema.org component word, fused from numberedPosition",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/numbered"
+  },
+  {
+    "atom": "nutrition",
+    "name": "nutrition",
+    "description": "Nutrition information about the recipe or menu item.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/nutrition"
   },
   {
     "atom": "oauth",
     "name": "oauth",
     "description": "Use when acquiring or refreshing an external OAuth 2.0 token — the credential lifecycle (acquire → use → expire → refresh) and scope/least-privilege check, encoded as pure policy. The token-endpoint HTTP is a runtime boundary; the lifecycle logic is native and tested. One atom serves every external API (Google Workspace, country-apis…), with secrets resolved per-tenant via the credential broker — never in the registry.",
-    "path": "oauth"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/oauth"
+  },
+  {
+    "atom": "object",
+    "name": "object",
+    "description": "The object upon which the action is carried out, whose state is kept intact or changed. Also known as the semantic roles patient, affected or undergoer (which change their state) or theme (which doesn",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/object"
   },
   {
     "atom": "obligations",
     "name": "performance-obligations",
     "description": "Use when decomposing a contract into its distinct promises for IFRS-15 §22 revenue allocation — kind (distinct or series), recognition timing (point-in-time §38 or over-time §35), progress measurement method, standalone selling price, and allocated amount. The IFRS-15 performance-obligation collection.",
-    "path": "customers/contracts/performance/obligations"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/customers/contracts/performance/obligations"
   },
   {
     "atom": "observability",
     "name": "observability",
     "description": "Use when making systems instrumentable — metrics (gauge/counter/histogram/summary), distributed tracing, structured logging, cardinality explosion in high-dimensional metrics, sampling strategies for observability.",
-    "path": "observability"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/observability"
+  },
+  {
+    "atom": "observation",
+    "name": "observation",
+    "description": "Instances of the class Observation are used to specify observations about an entity at a particular time. The principal properties of an Observation are observationAbout, measuredProperty, statType, [",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/observation"
+  },
+  {
+    "atom": "observational",
+    "name": "observational",
+    "description": "observational: a schema.org component word, fused from MedicalObservationalStudy, MedicalObservationalStudyDesign",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/observational"
+  },
+  {
+    "atom": "occ",
+    "name": "occ",
+    "description": "occ: a schema.org component word, fused from cvdNumBedsOcc, cvdNumICUBedsOcc",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/occ"
+  },
+  {
+    "atom": "occupancy",
+    "name": "occupancy",
+    "description": "The allowed total occupancy for the accommodation in persons (including infants etc). For individual accommodations, this is not necessarily the legal maximum but defines the permitted usage as per th",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/occupancy"
+  },
+  {
+    "atom": "occupation",
+    "name": "occupation",
+    "description": "A profession, may involve prolonged training and/or a formal qualification.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/occupation"
+  },
+  {
+    "atom": "occupational",
+    "name": "occupational",
+    "description": "occupational: a schema.org component word, fused from EducationalOccupationalCredential, EducationalOccupationalProgram, OccupationalExperienceRequirements, OccupationalTherapy, occupationalCategory,",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/occupational"
+  },
+  {
+    "atom": "ocean",
+    "name": "ocean",
+    "description": "ocean: a schema.org component word, fused from OceanBodyOfWater",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/ocean"
   },
   {
     "atom": "octave",
     "name": "octave",
     "description": "Use when reasoning about scale-lift in erpax — ×10 preserves the digit (10≡1 mod 9), so the same position recurs at the next order of magnitude; the canonical \"next octave\" (NOT +1, which crosses close→open within a scale). The fractal step. Nested under rodin.",
-    "path": "rodin/octave"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/rodin/octave"
+  },
+  {
+    "atom": "odometer",
+    "name": "odometer",
+    "description": "odometer: a schema.org component word, fused from mileageFromOdometer",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/odometer"
+  },
+  {
+    "atom": "offer",
+    "name": "offer",
+    "description": "An offer to transfer some rights to an item or to provide a service — for example, an offer to sell tickets to an event, to rent the DVD of a movie, to stream a TV show over the internet, to repair a",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/offer"
+  },
+  {
+    "atom": "offered",
+    "name": "offered",
+    "description": "A pointer to the organization or person making the offer.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/offered"
+  },
+  {
+    "atom": "offers",
+    "name": "offers",
+    "description": "An offer to provide this item&#x2014;for example, an offer to sell a product, rent the DVD of a movie, perform a service, or give away tickets to an event. Use businessFunction to indicate the kind of",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/offers"
+  },
+  {
+    "atom": "office",
+    "name": "office",
+    "description": "office: a schema.org component word, fused from GovernmentOffice, OfficeEquipmentStore, PhysiciansOffice, PostOffice, postOfficeBoxNumber",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/office"
+  },
+  {
+    "atom": "offset",
+    "name": "offset",
+    "description": "offset: a schema.org component word, fused from endOffset, startOffset",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/offset"
   },
   {
     "atom": "oid",
     "name": "oid",
     "description": "Use when an identity needs its ISO/ITU-T Object Identifier — every uuid is 2.25.<128-bit integer> (X.667), urn:oid (RFC 3061): the hierarchical dotted-path dual of the flat content-uuid. A derived, lossless re-encoding — another independently-verifiable level, another increment of tamper cost. Matter-twin localize (uuidToOid).",
-    "path": "oid"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/oid"
   },
   {
     "atom": "one",
     "name": "one",
     "description": "Use when reasoning about unity, canonicality, or merge in erpax — same content ⇒ one id, one canonical form (DRY), \"all agents are one erpax\". The universal root of identity and merge.",
-    "path": "one"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/one"
+  },
+  {
+    "atom": "ones",
+    "name": "ones",
+    "description": "ones: a schema.org component word, fused from UserPlusOnes",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/ones"
+  },
+  {
+    "atom": "online",
+    "name": "online",
+    "description": "online: a schema.org component word, fused from OnlineBusiness, OnlineMarketplace, OnlineStore, playersOnline",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/online"
+  },
+  {
+    "atom": "op",
+    "name": "op",
+    "description": "op: a schema.org component word, fused from postOp, preOp",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/op"
   },
   {
     "atom": "open",
     "name": "open",
     "description": "Use when reasoning about the permitting boundary state in erpax — fiscal period open (postable), draft editable, session/stream open. The universal root of the open state; dual of close.",
-    "path": "open"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/open"
+  },
+  {
+    "atom": "opening",
+    "name": "opening",
+    "description": "opening: a schema.org component word, fused from OpeningHoursSpecification, openingHours, openingHoursSpecification, specialOpeningHoursSpecification",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/opening"
+  },
+  {
+    "atom": "openings",
+    "name": "openings",
+    "description": "openings: a schema.org component word, fused from totalJobOpenings",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/openings"
+  },
+  {
+    "atom": "opens",
+    "name": "opens",
+    "description": "The opening hour of the place or service on the given day(s) of the week.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/opens"
+  },
+  {
+    "atom": "operating",
+    "name": "operating",
+    "description": "operating: a schema.org component word, fused from OperatingSystem, operatingSystem",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/operating"
+  },
+  {
+    "atom": "operation",
+    "name": "operation",
+    "description": "operation: a schema.org component word, fused from yearsInOperation",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/operation"
   },
   {
     "atom": "operations",
@@ -1787,154 +7631,730 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "work/centers/operations"
   },
   {
+    "atom": "operator",
+    "name": "operator",
+    "description": "operator: a schema.org component word, fused from serviceOperator",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/operator"
+  },
+  {
     "atom": "operators",
     "name": "operators",
     "description": "Use when managing СУПТО operators — assigning or decommissioning the 4-digit codes that form the second segment of every УНП — mapped to a user; audit trail preserved on decommission. The Наредба Н-18 operator register.",
-    "path": "operators"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/operators"
+  },
+  {
+    "atom": "opinion",
+    "name": "opinion",
+    "description": "opinion: a schema.org component word, fused from OpinionNewsArticle",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/opinion"
+  },
+  {
+    "atom": "opponent",
+    "name": "opponent",
+    "description": "A sub property of participant. The opponent on this action.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/opponent"
   },
   {
     "atom": "opportunities",
     "name": "opportunities",
     "description": "Use when tracking deals through the sales pipeline — stage progression from qualification to close-won/close-lost, weighted forecast (amount × probability), forecast categories, and contract creation on close-won. The CRM deal-pipeline collection.",
-    "path": "leads/opportunities"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/leads/opportunities"
+  },
+  {
+    "atom": "optician",
+    "name": "optician",
+    "description": "A store that sells reading glasses and similar devices for improving vision.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/optician"
   },
   {
     "atom": "optimize",
     "name": "optimize",
     "description": "Use when building or reviewing Payload collections, fields, queries, or config for performance — slow admin/API, large generated schemas, heavy relationship population, duplicated block definitions, or oversized client bundles.",
-    "path": "optimize"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/optimize"
+  },
+  {
+    "atom": "option",
+    "name": "option",
+    "description": "A sub property of object. The options subject to this action.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/option"
+  },
+  {
+    "atom": "order",
+    "name": "order",
+    "description": "An order is a confirmation of a transaction (a receipt), which can contain multiple line items, each represented by an Offer that has been accepted by the customer.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/order"
+  },
+  {
+    "atom": "ordered",
+    "name": "ordered",
+    "description": "ordered: a schema.org component word, fused from orderedItem",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/ordered"
   },
   {
     "atom": "orders",
     "name": "maintenance-work-orders",
     "description": "Use when executing FM work — corrective/preventive/predictive maintenance, statutory inspections, refurbishments — tracking parts issued, labour hours, vendor cost, IAS-16 capex/opex classification, permit-to-work, failure codes, and GL journal-entry on completion. The CMMS work-order execution register per ISO 55000.",
-    "path": "maintenance/work/orders"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/maintenance/work/orders"
+  },
+  {
+    "atom": "organic",
+    "name": "organic",
+    "description": "Use when produce carries a certified-organic claim — the labeling status under USDA NOP (7 CFR 205) and EU 2018/848: the National List of allowed/prohibited substances, excluded methods (GMO/irradiation/sewage sludge banned), the 36-month transition, and the organic system plan verified by an accredited certifier. A standards-backed status the product carries through the chain.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/organic"
+  },
+  {
+    "atom": "organization",
+    "name": "organization",
+    "description": "An organization such as a school, NGO, corporation, club, etc.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/organization"
+  },
+  {
+    "atom": "organize",
+    "name": "organize",
+    "description": "organize: a schema.org component word, fused from OrganizeAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/organize"
+  },
+  {
+    "atom": "organizer",
+    "name": "organizer",
+    "description": "An organizer of an Event.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/organizer"
+  },
+  {
+    "atom": "oriented",
+    "name": "oriented",
+    "description": "oriented: a schema.org component word, fused from AdultOrientedEnumeration",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/oriented"
+  },
+  {
+    "atom": "origin",
+    "name": "origin",
+    "description": "origin: a schema.org component word, fused from costOrigin, countryOfOrigin, evidenceOrigin, originAddress, shippingOrigin, tripOrigin",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/origin"
+  },
+  {
+    "atom": "original",
+    "name": "original",
+    "description": "original: a schema.org component word, fused from originalMediaContextDescription, originalMediaLink",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/original"
+  },
+  {
+    "atom": "originates",
+    "name": "originates",
+    "description": "The vasculature the lymphatic structure originates, or afferents, from.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/originates"
+  },
+  {
+    "atom": "out",
+    "name": "out",
+    "description": "out: a schema.org component word, fused from CheckOutAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/out"
+  },
+  {
+    "atom": "outcome",
+    "name": "outcome",
+    "description": "outcome: a schema.org component word, fused from adverseOutcome, seriousAdverseOutcome",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/outcome"
+  },
+  {
+    "atom": "outlet",
+    "name": "outlet",
+    "description": "outlet: a schema.org component word, fused from OutletStore",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/outlet"
   },
   {
     "atom": "outlier",
     "name": "outlier",
     "description": "Use when detecting or handling statistical anomalies — outlier detection methods (z-score, IQR, isolation-forest), treatment (trim, robust stats, flag, investigate), impact on metrics and reporting.",
-    "path": "outlier"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/outlier"
+  },
+  {
+    "atom": "output",
+    "name": "output",
+    "description": "output: a schema.org component word, fused from serviceOutput",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/output"
+  },
+  {
+    "atom": "overdosage",
+    "name": "overdosage",
+    "description": "Any information related to overdose on a drug, including signs or symptoms, treatments, contact information for emergency response.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/overdosage"
+  },
+  {
+    "atom": "overdraft",
+    "name": "overdraft",
+    "description": "overdraft: a schema.org component word, fused from accountOverdraftLimit",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/overdraft"
+  },
+  {
+    "atom": "overflow",
+    "name": "overflow",
+    "description": "overflow: a schema.org component word, fused from cvdNumC19OverflowPats",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/overflow"
+  },
+  {
+    "atom": "overlaps",
+    "name": "overlaps",
+    "description": "overlaps: a schema.org component word, fused from geoOverlaps",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/overlaps"
+  },
+  {
+    "atom": "override",
+    "name": "override",
+    "description": "override: a schema.org component word, fused from MerchantReturnPolicySeasonalOverride, returnPolicySeasonalOverride, seasonalOverride",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/override"
+  },
+  {
+    "atom": "overview",
+    "name": "overview",
+    "description": "overview: a schema.org component word, fused from employerOverview",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/overview"
+  },
+  {
+    "atom": "owned",
+    "name": "owned",
+    "description": "The date and time of obtaining the product.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/owned"
+  },
+  {
+    "atom": "owner",
+    "name": "owner",
+    "description": "A person or organization who owns this Thing.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/owner"
   },
   {
     "atom": "owners",
     "name": "beneficial-owners",
     "description": "Use when registering ultimate beneficial owners of a legal entity — direct/indirect ownership percent, control type, PEP status, KYC check link, and AMLD-5/CTA-required identification. The AML/Corporate-Transparency-Act UBO register.",
-    "path": "legal/entities/beneficial/owners"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/legal/entities/beneficial/owners"
+  },
+  {
+    "atom": "ownership",
+    "name": "ownership",
+    "description": "ownership: a schema.org component word, fused from OwnershipInfo, ownershipFundingInfo",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/ownership"
+  },
+  {
+    "atom": "owns",
+    "name": "owns",
+    "description": "Things owned by the organization or person.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/owns"
+  },
+  {
+    "atom": "package",
+    "name": "package",
+    "description": "package: a schema.org component word, fused from ReservationPackage",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/package"
   },
   {
     "atom": "packages",
     "name": "packages",
     "description": "Use when modelling the packing hierarchy for a shipment — GS1 SSCC serial shipping container codes, self-referential nesting (pallet → carton → contents), dimensions/weight, item-lot lines, and UN/CEFACT packaging codes. The logistic handling-unit collection that links line items to a shipment.",
-    "path": "items/packages"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/items/packages"
   },
   {
     "atom": "packitems",
     "name": "packitems",
     "description": "Use when modeling a pack line — the units of one produced lot-variant packed into one carton; header-primary with an optional option breakdown whose double-entry holds when supplied. Evolved from 200,993 rows of etrima pack_items.",
-    "path": "packitems"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/packitems"
   },
   {
     "atom": "packs",
     "name": "packs",
     "description": "Use when modeling a shipping carton — the dispatch unit packed from a production lot, with mass balance (gross = net + tare), rollup counts, and a derived horo lifecycle. Evolved from 118,716 rows of etrima packs.",
-    "path": "packs"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/packs"
+  },
+  {
+    "atom": "page",
+    "name": "page",
+    "description": "page: a schema.org component word, fused from AboutPage, CheckoutPage, CollectionPage, ContactPage, FAQPage, ItemPage",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/page"
   },
   {
     "atom": "pages",
     "name": "pages",
     "description": "Use when creating or managing CMS pages — hero blocks, content blocks, forms, SEO meta — with per-tenant unique slugs, versioned drafts, breadcrumb hierarchy, and i18n routing. The Payload CMS page collection.",
-    "path": "pages"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/pages"
+  },
+  {
+    "atom": "pagination",
+    "name": "pagination",
+    "description": "Any description of pages that is not separated into pageStart and pageEnd; for example, \"1-6, 9, 55\" or \"10-12, 46-49\".",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/pagination"
+  },
+  {
+    "atom": "paint",
+    "name": "paint",
+    "description": "paint: a schema.org component word, fused from PaintAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/paint"
+  },
+  {
+    "atom": "painter",
+    "name": "painter",
+    "description": "painter: a schema.org component word, fused from HousePainter",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/painter"
+  },
+  {
+    "atom": "painting",
+    "name": "painting",
+    "description": "A painting.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/painting"
+  },
+  {
+    "atom": "palliative",
+    "name": "palliative",
+    "description": "palliative: a schema.org component word, fused from PalliativeProcedure",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/palliative"
+  },
+  {
+    "atom": "panel",
+    "name": "panel",
+    "description": "panel: a schema.org component word, fused from MedicalTestPanel",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/panel"
+  },
+  {
+    "atom": "parcel",
+    "name": "parcel",
+    "description": "parcel: a schema.org component word, fused from ParcelDelivery",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/parcel"
+  },
+  {
+    "atom": "parent",
+    "name": "parent",
+    "description": "A parent of this person.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/parent"
+  },
+  {
+    "atom": "parents",
+    "name": "parents",
+    "description": "A parents of the person.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/parents"
+  },
+  {
+    "atom": "park",
+    "name": "park",
+    "description": "A park.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/park"
+  },
+  {
+    "atom": "parking",
+    "name": "parking",
+    "description": "parking: a schema.org component word, fused from ParkingFacility",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/parking"
+  },
+  {
+    "atom": "parlor",
+    "name": "parlor",
+    "description": "parlor: a schema.org component word, fused from TattooParlor",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/parlor"
   },
   {
     "atom": "part",
     "name": "part",
     "description": "Use when reasoning about membership in erpax — a field of a collection, a line of an entry, a component of a BOM, a plugin of erpax. The universal root of membership; dual of whole.",
-    "path": "part"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/part"
+  },
+  {
+    "atom": "partial",
+    "name": "partial",
+    "description": "partial: a schema.org component word, fused from numberOfPartialBathrooms",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/partial"
+  },
+  {
+    "atom": "participant",
+    "name": "participant",
+    "description": "Other co-agents that participated in the action indirectly. E.g. John wrote a book with *Steve*.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/participant"
+  },
+  {
+    "atom": "participation",
+    "name": "participation",
+    "description": "participation: a schema.org component word, fused from hasParticipationOffer",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/participation"
   },
   {
     "atom": "partition",
     "name": "partition",
     "description": "Use when dividing data for performance or governance — table partitioning (by range/hash/list), partition pruning, partition management (add/drop/compress), partitioning strategy for horizontal scaling.",
-    "path": "partition"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/partition"
+  },
+  {
+    "atom": "parts",
+    "name": "parts",
+    "description": "parts: a schema.org component word, fused from AutoPartsStore",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/parts"
   },
   {
     "atom": "party",
     "name": "party",
     "description": "Use when one entity is referenced under many roles (seller/buyer/agent/supplier/consignee/carrier/sender/receiver/authorized-by) OR when computing the counterparty side of a financial document — aging open balances into day-buckets (A/R and A/P share one algorithm) or validating a status-lifecycle transition; one party seen through infinite roles, receivable and payable seen from two sides.",
-    "path": "party"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/party"
+  },
+  {
+    "atom": "passed",
+    "name": "passed",
+    "description": "passed: a schema.org component word, fused from legislationPassedBy",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/passed"
+  },
+  {
+    "atom": "passenger",
+    "name": "passenger",
+    "description": "passenger: a schema.org component word, fused from passengerPriorityStatus, passengerSequenceNumber",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/passenger"
+  },
+  {
+    "atom": "password",
+    "name": "password",
+    "description": "password: a schema.org component word, fused from ResetPasswordAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/password"
+  },
+  {
+    "atom": "pasture",
+    "name": "pasture",
+    "description": "Use when modelling the managed forage land livestock graze — pasture (improved/tame forage) and rangeland (native), divided into paddocks for rotational grazing. The grazing land-unit; the livestock counterpart of a crop field, its productivity a fertility/capacity measure.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/pasture"
+  },
+  {
+    "atom": "path",
+    "name": "path",
+    "description": "path: a schema.org component word, fused from XPathType",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/path"
+  },
+  {
+    "atom": "pathology",
+    "name": "pathology",
+    "description": "pathology: a schema.org component word, fused from PathologyTest",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/pathology"
+  },
+  {
+    "atom": "pathophysiology",
+    "name": "pathophysiology",
+    "description": "Changes in the normal mechanical, physical, and biochemical functions that are associated with this activity or condition.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/pathophysiology"
+  },
+  {
+    "atom": "patient",
+    "name": "patient",
+    "description": "A patient is any person recipient of health care services.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/patient"
+  },
+  {
+    "atom": "patients",
+    "name": "patients",
+    "description": "patients: a schema.org component word, fused from isAcceptingNewPatients",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/patients"
+  },
+  {
+    "atom": "pats",
+    "name": "pats",
+    "description": "pats: a schema.org component word, fused from cvdNumC19HOPats, cvdNumC19HospPats, cvdNumC19MechVentPats, cvdNumC19OFMechVentPats, cvdNumC19OverflowPats",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/pats"
+  },
+  {
+    "atom": "pattern",
+    "name": "pattern",
+    "description": "A pattern that something has, for example 'polka dot', 'striped', 'Canadian flag'. Values are typically expressed as text, although links to controlled value schemes are also supported.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/pattern"
+  },
+  {
+    "atom": "pawn",
+    "name": "pawn",
+    "description": "pawn: a schema.org component word, fused from PawnShop",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/pawn"
+  },
+  {
+    "atom": "pay",
+    "name": "pay",
+    "description": "pay: a schema.org component word, fused from PayAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/pay"
   },
   {
     "atom": "payload",
     "name": "payload",
     "description": "Use when reasoning about the matter coil — Payload is the half of every atom that becomes a collection, fields, hooks, access, and a database table; the index.ts twin the SKILL.md form is bound to by content-uuid.",
-    "path": "payload"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/payload"
   },
   {
     "atom": "payment",
     "name": "payment",
     "description": "Use when modeling a cash inflow/outflow — payment received from customer, payment to vendor, expense reimbursement, salary payment. A transaction linking a GL account (cash), amount, date, and counterparty. Part of the accounting/commerce cycle.",
-    "path": "payment"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/payment"
   },
   {
     "atom": "payments",
     "name": "payments",
     "description": "Use when recording or auditing cash received or sent against an invoice — AR/AP GL posting, ISO-20022 pain/pacs message types, IBAN/BIC, period-lock guard, cash-flow classification (IAS-7 / ASC-230). The payments collection.",
-    "path": "invoices/payments"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/invoices/payments"
   },
   {
     "atom": "peace",
     "name": "peace",
     "description": "Use when reasoning about why the erpax uuid model makes war useless — destruction is futile (content-addressed + holographic ⇒ any survivor regenerates the whole), coercion is supra-resource (forging the record costs beyond the universe), and force cannot dominate (competition selects fastest-correct, not strongest). War is strictly dominated by building, for human and machine alike — an arithmetic and thermodynamic theorem of the model, not a moral plea.",
-    "path": "peace"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/peace"
+  },
+  {
+    "atom": "penalty",
+    "name": "penalty",
+    "description": "penalty: a schema.org component word, fused from earlyPrepaymentPenalty",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/penalty"
+  },
+  {
+    "atom": "penciler",
+    "name": "penciler",
+    "description": "The individual who draws the primary narrative artwork.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/penciler"
+  },
+  {
+    "atom": "people",
+    "name": "people",
+    "description": "people: a schema.org component word, fused from PeopleAudience",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/people"
+  },
+  {
+    "atom": "percentage",
+    "name": "percentage",
+    "description": "percentage: a schema.org component word, fused from annualPercentageRate, orderPercentage, weightPercentage",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/percentage"
+  },
+  {
+    "atom": "percentile",
+    "name": "percentile",
+    "description": "The 10th percentile value.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/percentile"
+  },
+  {
+    "atom": "perennial",
+    "name": "perennial",
+    "description": "Use when a crop lives and bears across many years — the multi-year woody crop (orchard, vineyard, cane): established once, ramping over years, bearing for decades, then renewed. Its productive plant is a depreciating fixed asset (IAS-16 bearer plant); only its growing produce is IAS-41. The antonym of the annual crop — renewal replaces rotation, yield ramps rather than resets.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/perennial"
+  },
+  {
+    "atom": "perform",
+    "name": "perform",
+    "description": "perform: a schema.org component word, fused from PerformAction, performTime",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/perform"
+  },
+  {
+    "atom": "performance",
+    "name": "performance",
+    "description": "performance: a schema.org component word, fused from PerformanceRole, firstPerformance",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/performance"
   },
   {
     "atom": "performances",
     "name": "contract-performance",
     "description": "Use when tracking performance milestones and control-transfer events that gate revenue recognition — planned vs. actual completion dates, over-time or point-in-time determination per IFRS-15 §31-35, acceptance criteria, and associated invoice link. The milestone control-transfer collection.",
-    "path": "customers/contracts/contract/performances"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/customers/contracts/contract/performances"
+  },
+  {
+    "atom": "performed",
+    "name": "performed",
+    "description": "performed: a schema.org component word, fused from howPerformed, workPerformed",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/performed"
+  },
+  {
+    "atom": "performer",
+    "name": "performer",
+    "description": "A performer at the event&#x2014;for example, a presenter, musician, musical group or actor.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/performer"
+  },
+  {
+    "atom": "performers",
+    "name": "performers",
+    "description": "The main performer or performers of the event&#x2014;for example, a presenter, musician, or actor.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/performers"
+  },
+  {
+    "atom": "performing",
+    "name": "performing",
+    "description": "performing: a schema.org component word, fused from PerformingArtsEvent, PerformingArtsTheater, PerformingGroup",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/performing"
   },
   {
     "atom": "period",
     "name": "period",
     "description": "Use when a value is tied to a fiscal/calendar period — revenue recognized in period, expense recorded in month, cutoff rules. A date-range [start, end] or a fiscal-period code. Twins with date (point) to establish time-based accounting cutoffs and versioning.",
-    "path": "period"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/period"
+  },
+  {
+    "atom": "periodical",
+    "name": "periodical",
+    "description": "A publication in any medium issued in successive parts bearing numerical or chronological designations and intended to continue indefinitely, such as a magazine, scholarly journal, or newspaper. See a",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/periodical"
   },
   {
     "atom": "periods",
     "name": "tax-periods",
     "description": "Use when managing the tax-period workflow per jurisdiction — aligning tax filing deadlines with fiscal periods, documenting transfer-pricing adjustment counts, tracking readiness (pending-closing → adjustment-posted → tax-closed), and maintaining a tamper-proof audit chain for tax-authority compliance. The per-jurisdiction tax-period workflow node.",
-    "path": "fiscal/periods/tax/periods"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/fiscal/periods/tax/periods"
+  },
+  {
+    "atom": "permaculture",
+    "name": "permaculture",
+    "description": "Use when designing a whole farm as a self-sustaining ecosystem — permaculture: Mollison & Holmgren's design system (the three ethics earth-care/people-care/fair-share + 12 principles) and agroecology, arranging crops, animals, water, and structures into closed-loop guilds and zones so the system's outputs feed its own inputs. The design philosophy above the individual operations.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/permaculture"
+  },
+  {
+    "atom": "permission",
+    "name": "permission",
+    "description": "permission: a schema.org component word, fused from DigitalDocumentPermission, DigitalDocumentPermissionType, hasDigitalDocumentPermission, permissionType",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/permission"
+  },
+  {
+    "atom": "permissions",
+    "name": "permissions",
+    "description": "Permission(s) required to run the app (for example, a mobile app may require full internet access or may run only on wifi).",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/permissions"
+  },
+  {
+    "atom": "permit",
+    "name": "permit",
+    "description": "A permit issued by an organization, e.g. a parking pass.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/permit"
+  },
+  {
+    "atom": "permitted",
+    "name": "permitted",
+    "description": "permitted: a schema.org component word, fused from permittedUsage",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/permitted"
+  },
+  {
+    "atom": "person",
+    "name": "person",
+    "description": "A person (alive, dead, undead, or fictional).",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/person"
   },
   {
     "atom": "perspective",
     "name": "perspective",
     "description": "Use when the SAME content-uuid node must read differently per party — a transfer is give for the payer and take for the payee, a supplier edge is \"my customer\" from the other end, an invoice is AR for the seller and AP for the buyer. The point-of-view projection.",
-    "path": "perspective"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/perspective"
+  },
+  {
+    "atom": "pet",
+    "name": "pet",
+    "description": "pet: a schema.org component word, fused from PetStore",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/pet"
+  },
+  {
+    "atom": "pets",
+    "name": "pets",
+    "description": "pets: a schema.org component word, fused from petsAllowed",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/pets"
+  },
+  {
+    "atom": "pharmacology",
+    "name": "pharmacology",
+    "description": "pharmacology: a schema.org component word, fused from clincalPharmacology, clinicalPharmacology",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/pharmacology"
+  },
+  {
+    "atom": "pharmacy",
+    "name": "pharmacy",
+    "description": "A pharmacy or drugstore.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/pharmacy"
   },
   {
     "atom": "phase",
     "name": "phase",
     "description": "Use when reasoning about WHERE on the cycle something sits in erpax — the 120° offset of the three axis coils (0°/120°/240°), the ⅓-period animation tick at A432 ms, the moment a version captures. The time-position of a state. Nested under rodin.",
-    "path": "rodin/phase"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/rodin/phase"
+  },
+  {
+    "atom": "phone",
+    "name": "phone",
+    "description": "phone: a schema.org component word, fused from MobilePhoneStore, servicePhone",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/phone"
+  },
+  {
+    "atom": "phonetic",
+    "name": "phonetic",
+    "description": "phonetic: a schema.org component word, fused from phoneticText",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/phonetic"
+  },
+  {
+    "atom": "photo",
+    "name": "photo",
+    "description": "A photograph of this place.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/photo"
+  },
+  {
+    "atom": "photograph",
+    "name": "photograph",
+    "description": "A photograph.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/photograph"
+  },
+  {
+    "atom": "photos",
+    "name": "photos",
+    "description": "Photographs of this place.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/photos"
+  },
+  {
+    "atom": "physical",
+    "name": "physical",
+    "description": "physical: a schema.org component word, fused from PhysicalActivity, PhysicalActivityCategory, PhysicalExam, PhysicalTherapy, maximumPhysicalAttendeeCapacity, physicalRequirement",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/physical"
+  },
+  {
+    "atom": "physician",
+    "name": "physician",
+    "description": "An individual physician or a physician's office considered as a MedicalOrganization.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/physician"
+  },
+  {
+    "atom": "physicians",
+    "name": "physicians",
+    "description": "physicians: a schema.org component word, fused from PhysiciansOffice",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/physicians"
+  },
+  {
+    "atom": "physiological",
+    "name": "physiological",
+    "description": "physiological: a schema.org component word, fused from physiologicalBenefits",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/physiological"
+  },
+  {
+    "atom": "pickup",
+    "name": "pickup",
+    "description": "Use when a buyer collects pre-ordered goods at a point rather than having them delivered — the CSA pickup/drop site, on-farm pickup, host-site/neighborhood pod, and the generic click-and-collect (BOPIS) locker. A collection node in distribution: the seller aggregates to a point, the buyer covers the last mile — lower cost than home delivery, at the buyer's travel friction.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/pickup"
   },
   {
     "atom": "pipeline",
     "name": "pipeline",
     "description": "Use when tracking the progression of deals through sales stages — lead → qualified → proposal → negotiation → won/lost. The sales funnel state at each stage with value, probability, and close date.",
-    "path": "pipeline"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/pipeline"
   },
   {
     "atom": "pipelines",
     "name": "recruiting-pipeline",
     "description": "Use when tracking candidate applications, interview stages, offers, and hiring decisions per position — GDPR-compliant funnel (applied→screening→interview→offer→hired/rejected), sourcing, skill-match, and recruiter activity. The GDPR Art.6(1)(b) candidate-pipeline collection.",
-    "path": "cost/centers/job/positions/recruiting/pipelines"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/cost/centers/job/positions/recruiting/pipelines"
+  },
+  {
+    "atom": "pitch",
+    "name": "pitch",
+    "description": "pitch: a schema.org component word, fused from CampingPitch",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/pitch"
+  },
+  {
+    "atom": "place",
+    "name": "place",
+    "description": "Entities that have a somewhat fixed, physical extension.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/place"
+  },
+  {
+    "atom": "plan",
+    "name": "plan",
+    "description": "plan: a schema.org component word, fused from ExercisePlan, FloorPlan, HealthInsurancePlan, HealthPlanCostSharingSpecification, HealthPlanFormulary, HealthPlanNetwork",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/plan"
   },
   {
     "atom": "plannings",
     "name": "budget-planning",
     "description": "Use when creating or approving period-budgets by department or cost-center — monthly, quarterly, annual — with GL line items, period-lock enforcement, segregation-of-duties on approval, and fiscal-year comparisons; IAS-1/IAS-8/ASC-270 financial presentation. The budget approval and planning register.",
-    "path": "budget/plannings"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/budget/plannings"
   },
   {
     "atom": "plans",
@@ -1943,82 +8363,508 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "subscription/plans"
   },
   {
+    "atom": "planting",
+    "name": "planting",
+    "description": "Use when output is spread across the season by staggered sequential sowings — succession planting: number of plantings (sowings) and number of harvests (pickings) are the two scheduling levers that replace one glut with a continuous supply. The interval between sowings ≈ one planting's picking window; total seasonal row-length divides evenly across the plantings to size each sowing and its seed order.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/planting"
+  },
+  {
+    "atom": "platform",
+    "name": "platform",
+    "description": "platform: a schema.org component word, fused from DigitalPlatformEnumeration, RuntimePlatform, actionPlatform, arrivalPlatform, departurePlatform, gamePlatform",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/platform"
+  },
+  {
+    "atom": "play",
+    "name": "play",
+    "description": "A play is a form of literature, usually consisting of dialogue between characters, intended for theatrical performance rather than just reading. Note: A performance of a Play would be a TheaterEvent o",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/play"
+  },
+  {
+    "atom": "player",
+    "name": "player",
+    "description": "player: a schema.org component word, fused from playerType",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/player"
+  },
+  {
+    "atom": "players",
+    "name": "players",
+    "description": "players: a schema.org component word, fused from numberOfPlayers, playersOnline",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/players"
+  },
+  {
+    "atom": "playground",
+    "name": "playground",
+    "description": "A playground.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/playground"
+  },
+  {
+    "atom": "playlist",
+    "name": "playlist",
+    "description": "The playlist to which this recording belongs.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/playlist"
+  },
+  {
+    "atom": "plays",
+    "name": "plays",
+    "description": "plays: a schema.org component word, fused from UserPlays",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/plays"
+  },
+  {
     "atom": "plugins",
     "name": "plugins",
     "description": "Use when building, configuring, or extracting a Payload plugin — a function that receives the config and returns a modified config, adding collections/globals/fields/hooks/endpoints. Relevant when packaging erpax (or a domain) as a publishable @erpax/* plugin.",
-    "path": "plugins"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/plugins"
+  },
+  {
+    "atom": "plumber",
+    "name": "plumber",
+    "description": "A plumbing service.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/plumber"
+  },
+  {
+    "atom": "plus",
+    "name": "plus",
+    "description": "plus: a schema.org component word, fused from UserPlusOnes",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/plus"
+  },
+  {
+    "atom": "podcast",
+    "name": "podcast",
+    "description": "podcast: a schema.org component word, fused from PodcastEpisode, PodcastSeason, PodcastSeries",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/podcast"
+  },
+  {
+    "atom": "point",
+    "name": "point",
+    "description": "point: a schema.org component word, fused from ContactPoint, ContactPointOption, EntryPoint, contactPoint",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/point"
+  },
+  {
+    "atom": "points",
+    "name": "points",
+    "description": "points: a schema.org component word, fused from contactPoints, membershipPointsEarned",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/points"
   },
   {
     "atom": "polarity",
     "name": "polarity",
     "description": "Use when reasoning about the two directions of the rodin doubling cycle — 3 and 6 are the polarity boundaries: forward helix (×2, cyan, outbound/give) ↔ reverse helix (×5, magenta, inbound/take). The mirror pair the coil winds between. Nested under rodin.",
-    "path": "rodin/polarity"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/rodin/polarity"
+  },
+  {
+    "atom": "police",
+    "name": "police",
+    "description": "police: a schema.org component word, fused from PoliceStation",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/police"
   },
   {
     "atom": "policies",
     "name": "internal-policies",
     "description": "Use when creating, reviewing or auditing org-wide policies — accounting, internal-control, compliance, risk, data-protection, code-of-conduct; lifecycle draft→active→superseded, owner, review schedule. The internal-policies collection.",
-    "path": "internal/policies"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/internal/policies"
+  },
+  {
+    "atom": "policy",
+    "name": "policy",
+    "description": "policy: a schema.org component word, fused from BoardingPolicyType, MerchantReturnPolicy, MerchantReturnPolicySeasonalOverride, ProductReturnPolicy, actionableFeedbackPolicy, boardingPolicy",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/policy"
+  },
+  {
+    "atom": "political",
+    "name": "political",
+    "description": "political: a schema.org component word, fused from PoliticalParty",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/political"
+  },
+  {
+    "atom": "pollination",
+    "name": "pollination",
+    "description": "Use when fruit set depends on pollen transfer — pollination by insects (managed honeybees/bumblebees, wild pollinators), wind, or hand, required by fruiting crops (cucurbits, tomatoes, peppers) to set marketable fruit. A yield prerequisite for fruit/seed crops and an ecosystem service the farm must protect or provide.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/pollination"
+  },
+  {
+    "atom": "polygon",
+    "name": "polygon",
+    "description": "A polygon is the area enclosed by a point-to-point path for which the starting and ending points are the same. A polygon is expressed as a series of four or more space delimited points where the first",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/polygon"
+  },
+  {
+    "atom": "polymer",
+    "name": "polymer",
+    "description": "polymer: a schema.org component word, fused from hasBioPolymerSequence",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/polymer"
+  },
+  {
+    "atom": "pond",
+    "name": "pond",
+    "description": "A pond.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/pond"
+  },
+  {
+    "atom": "pool",
+    "name": "pool",
+    "description": "pool: a schema.org component word, fused from PublicSwimmingPool",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/pool"
+  },
+  {
+    "atom": "population",
+    "name": "population",
+    "description": "population: a schema.org component word, fused from StatisticalPopulation, populationType, targetPopulation",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/population"
   },
   {
     "atom": "port",
     "name": "port",
     "description": "Use when porting a Rails/ActiveAdmin ERP feature (from etrima or ceccec/erpax) into Payload/Next — mapping ActiveAdmin resource registrations to CollectionConfig, Rails concerns to reusable field-factories/skills, controllers/callbacks to endpoints/hooks, CanCan authorization to access control, polymorphic/self-referential associations to relationships. The Rails↔Next / ActiveAdmin↔Payload Rosetta Stone.",
-    "path": "port"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/port"
+  },
+  {
+    "atom": "pos",
+    "name": "pos",
+    "description": "pos: a schema.org component word, fused from hasPOS",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/pos"
   },
   {
     "atom": "position",
     "name": "positions",
     "description": "Use when defining job positions, the rate ladder, or government/society role structure. Each position is a rung on the harmonic ladder; its job description is computed; its conditions are content-addressed on the uuid chain (blockchain); government and society share one ladder.",
-    "path": "position"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/position"
   },
   {
     "atom": "positions",
     "name": "job-positions",
     "description": "Use when managing org-chart slots, headcount planning, or recruiting — an ESCO/ISCO-08 classified position (vacant, filled, or planned) that drives the recruiting pipeline and IAS-19 headcount accruals. The HR job-position collection.",
-    "path": "cost/centers/job/positions"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/cost/centers/job/positions"
+  },
+  {
+    "atom": "positive",
+    "name": "positive",
+    "description": "positive: a schema.org component word, fused from positiveNotes",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/positive"
+  },
+  {
+    "atom": "possible",
+    "name": "possible",
+    "description": "possible: a schema.org component word, fused from possibleComplication, possibleTreatment",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/possible"
+  },
+  {
+    "atom": "post",
+    "name": "post",
+    "description": "post: a schema.org component word, fused from PostOffice, blogPost, postOfficeBoxNumber, postOp",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/post"
+  },
+  {
+    "atom": "postal",
+    "name": "postal",
+    "description": "postal: a schema.org component word, fused from PostalAddress, PostalCodeRangeSpecification, postalCode, postalCodeBegin, postalCodeEnd, postalCodePrefix",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/postal"
+  },
+  {
+    "atom": "posted",
+    "name": "posted",
+    "description": "posted: a schema.org component word, fused from datePosted",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/posted"
+  },
+  {
+    "atom": "poster",
+    "name": "poster",
+    "description": "A large, usually printed placard, bill, or announcement, often illustrated, that is posted to advertise or publicize something.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/poster"
+  },
+  {
+    "atom": "postharvest",
+    "name": "postharvest",
+    "description": "Use when handling produce between harvest and sale — the cooling→washing→curing→grading→packing→storage chain that preserves quality: remove field heat fast (precool), wash, cure storage crops, then hold in the cold chain. Postharvest does not improve quality — it only slows the loss; the gap between gross and marketable yield (shrink) is lost here.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/postharvest"
+  },
+  {
+    "atom": "posting",
+    "name": "posting",
+    "description": "posting: a schema.org component word, fused from BlogPosting, DiscussionForumPosting, JobPosting, LiveBlogPosting, SocialMediaPosting",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/posting"
   },
   {
     "atom": "postings",
     "name": "lease-period-postings",
     "description": "Use when posting period-end lease amortisation — one row per lease × period capturing interest accretion, principal repayment, ROU amortisation, and opening/closing carrying amounts; JE fires on status → posted. The IFRS 16 §36-38 period evidence collection.",
-    "path": "leases/lease/period/postings"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/leases/lease/period/postings"
   },
   {
     "atom": "posts",
     "name": "posts",
     "description": "Use when publishing or querying CMS articles — authored content with hero image, Lexical rich-text, categories, related posts, SEO meta, per-tenant slug uniqueness, versioned drafts, and scheduled publishing. The Payload CMS post collection.",
-    "path": "posts"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/posts"
+  },
+  {
+    "atom": "potential",
+    "name": "potential",
+    "description": "potential: a schema.org component word, fused from potentialAction, potentialUse",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/potential"
   },
   {
     "atom": "power",
     "name": "power",
     "description": "Use when reasoning about how the LIVE network makes erpax harder to forge — usage = entropy = power; realtime clients are the distributed hardware (as Bitcoin's miners are its hashpower), and accumulated use raises the cost to decode the private keys (the inverse projection).",
-    "path": "power"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/power"
+  },
+  {
+    "atom": "practices",
+    "name": "practices",
+    "description": "A MedicalOrganization where the IndividualPhysician practices.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/practices"
+  },
+  {
+    "atom": "pre",
+    "name": "pre",
+    "description": "pre: a schema.org component word, fused from PreOrderAction, preOp",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/pre"
+  },
+  {
+    "atom": "predecessor",
+    "name": "predecessor",
+    "description": "A pointer from a previous, often discontinued variant of the product to its newer variant.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/predecessor"
+  },
+  {
+    "atom": "prefix",
+    "name": "prefix",
+    "description": "prefix: a schema.org component word, fused from honorificPrefix, postalCodePrefix",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/prefix"
+  },
+  {
+    "atom": "pregnancy",
+    "name": "pregnancy",
+    "description": "pregnancy: a schema.org component word, fused from DrugPregnancyCategory, pregnancyCategory, pregnancyWarning",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/pregnancy"
+  },
+  {
+    "atom": "prep",
+    "name": "prep",
+    "description": "prep: a schema.org component word, fused from prepTime",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/prep"
   },
   {
     "atom": "prepaid",
     "name": "prepaid",
     "description": "Use for advance payments for future services or goods (insurance premiums, rent, subscriptions) — an asset that is drawn down to expense over the benefit period",
-    "path": "prepaid"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/prepaid"
+  },
+  {
+    "atom": "preparation",
+    "name": "preparation",
+    "description": "Typical preparation that a patient must undergo before having the procedure performed.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/preparation"
+  },
+  {
+    "atom": "prepayment",
+    "name": "prepayment",
+    "description": "prepayment: a schema.org component word, fused from earlyPrepaymentPenalty",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/prepayment"
+  },
+  {
+    "atom": "prepend",
+    "name": "prepend",
+    "description": "prepend: a schema.org component word, fused from PrependAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/prepend"
+  },
+  {
+    "atom": "prerequisites",
+    "name": "prerequisites",
+    "description": "prerequisites: a schema.org component word, fused from coursePrerequisites, programPrerequisites",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/prerequisites"
+  },
+  {
+    "atom": "preschool",
+    "name": "preschool",
+    "description": "A preschool.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/preschool"
+  },
+  {
+    "atom": "prescribing",
+    "name": "prescribing",
+    "description": "prescribing: a schema.org component word, fused from prescribingInfo",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/prescribing"
+  },
+  {
+    "atom": "prescription",
+    "name": "prescription",
+    "description": "prescription: a schema.org component word, fused from DrugPrescriptionStatus, offersPrescriptionByMail, prescriptionStatus",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/prescription"
+  },
+  {
+    "atom": "presentation",
+    "name": "presentation",
+    "description": "presentation: a schema.org component word, fused from PresentationDigitalDocument",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/presentation"
+  },
+  {
+    "atom": "presented",
+    "name": "presented",
+    "description": "presented: a schema.org component word, fused from workPresented",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/presented"
+  },
+  {
+    "atom": "prevention",
+    "name": "prevention",
+    "description": "prevention: a schema.org component word, fused from PreventionIndication, diseasePreventionInfo, primaryPrevention, secondaryPrevention",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/prevention"
+  },
+  {
+    "atom": "previous",
+    "name": "previous",
+    "description": "previous: a schema.org component word, fused from numberOfPreviousOwners, previousItem, previousStartDate",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/previous"
+  },
+  {
+    "atom": "price",
+    "name": "price",
+    "description": "The offer price of a product, or of a price component when attached to PriceSpecification and its subtypes. Usage guidelines: * Use the priceCurrency property (with standard formats: ISO 4217 currency",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/price"
+  },
+  {
+    "atom": "primary",
+    "name": "primary",
+    "description": "primary: a schema.org component word, fused from primaryImageOfPage, primaryPrevention",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/primary"
+  },
+  {
+    "atom": "principles",
+    "name": "principles",
+    "description": "principles: a schema.org component word, fused from publishingPrinciples",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/principles"
+  },
+  {
+    "atom": "print",
+    "name": "print",
+    "description": "print: a schema.org component word, fused from printColumn, printEdition, printPage, printSection",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/print"
+  },
+  {
+    "atom": "priorities",
+    "name": "priorities",
+    "description": "priorities: a schema.org component word, fused from missionCoveragePrioritiesPolicy",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/priorities"
   },
   {
     "atom": "priority",
     "name": "priority",
     "description": "Use when assigning work urgency or escalation level — P1/P2/P3/P4, Blocker/Critical/High/Medium/Low, SLA breach risk. The relative weight field.",
-    "path": "priority"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/priority"
   },
   {
     "atom": "privilege",
     "name": "privilege",
     "description": "Use for confidentiality scoping — attorney-client privilege and ethical walls. Strip the prefix and privilege is an access scope (capability × tenant/matter isolation) plus crypto-shred, erpax's answer to the design-limit that it keeps no native secret. Who may see a matter is computed, never granted by name.",
-    "path": "privilege"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/privilege"
+  },
+  {
+    "atom": "procedure",
+    "name": "procedure",
+    "description": "A description of the procedure involved in setting up, using, and/or installing the device.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/procedure"
+  },
+  {
+    "atom": "process",
+    "name": "process",
+    "description": "process: a schema.org component word, fused from actionProcess, isInvolvedInBiologicalProcess",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/process"
+  },
+  {
+    "atom": "processing",
+    "name": "processing",
+    "description": "processing: a schema.org component word, fused from countryOfLastProcessing, processingTime",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/processing"
+  },
+  {
+    "atom": "processor",
+    "name": "processor",
+    "description": "processor: a schema.org component word, fused from processorRequirements",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/processor"
+  },
+  {
+    "atom": "producer",
+    "name": "producer",
+    "description": "The person or organization who produced the work (e.g. music album, movie, TV/radio series etc.).",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/producer"
+  },
+  {
+    "atom": "produces",
+    "name": "produces",
+    "description": "The tangible thing generated by the service, e.g. a passport, permit, etc.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/produces"
+  },
+  {
+    "atom": "product",
+    "name": "product",
+    "description": "Any offered product or service. For example: a pair of shoes; a concert ticket; the rental of a car; a haircut; or an episode of a TV show streamed online.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/product"
+  },
+  {
+    "atom": "production",
+    "name": "production",
+    "description": "production: a schema.org component word, fused from MusicAlbumProductionType, albumProductionType, productionCompany, productionDate",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/production"
+  },
+  {
+    "atom": "products",
+    "name": "products",
+    "description": "products: a schema.org component word, fused from SomeProducts",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/products"
   },
   {
     "atom": "profane",
     "name": "profane",
     "description": "Use when naming what fails the audit — the lie, the manipulated/tampered datum, the forged record, the unbalanced ledger, the unsourced claim, the dead link. The set of all falsehood-forms; dual of sacred; each named form a detector skill (infinite).",
-    "path": "profane"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/profane"
+  },
+  {
+    "atom": "professional",
+    "name": "professional",
+    "description": "professional: a schema.org component word, fused from ProfessionalService",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/professional"
+  },
+  {
+    "atom": "proficiency",
+    "name": "proficiency",
+    "description": "proficiency: a schema.org component word, fused from proficiencyLevel",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/proficiency"
+  },
+  {
+    "atom": "profile",
+    "name": "profile",
+    "description": "profile: a schema.org component word, fused from ProfilePage",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/profile"
+  },
+  {
+    "atom": "prognosis",
+    "name": "prognosis",
+    "description": "prognosis: a schema.org component word, fused from expectedPrognosis",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/prognosis"
+  },
+  {
+    "atom": "program",
+    "name": "program",
+    "description": "The MemberProgram associated with a ProgramMembership.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/program"
+  },
+  {
+    "atom": "programming",
+    "name": "programming",
+    "description": "programming: a schema.org component word, fused from programmingLanguage, programmingModel",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/programming"
+  },
+  {
+    "atom": "progression",
+    "name": "progression",
+    "description": "progression: a schema.org component word, fused from naturalProgression",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/progression"
+  },
+  {
+    "atom": "project",
+    "name": "project",
+    "description": "An enterprise (potentially individual but typically collaborative), planned to achieve a particular aim. Use properties from Organization, subOrganization/parentOrganization to indicate project sub-st",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/project"
   },
   {
     "atom": "projection",
@@ -2030,61 +8876,283 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "projects",
     "name": "projects",
     "description": "Use when tracking a customer-facing deliverable under IFRS-15 §35 over-time recognition — accumulating costs (labour via time-entries, materials via purchase-orders), measuring cost-to-cost or milestone progress, managing budget vs EAC, and closing WIP to revenue per the contract's recognition method. The IFRS-15 project anchor collection.",
-    "path": "customers/projects"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/customers/projects"
+  },
+  {
+    "atom": "promise",
+    "name": "promise",
+    "description": "promise: a schema.org component word, fused from WarrantyPromise, warrantyPromise",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/promise"
+  },
+  {
+    "atom": "pronounceable",
+    "name": "pronounceable",
+    "description": "pronounceable: a schema.org component word, fused from PronounceableText",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/pronounceable"
+  },
+  {
+    "atom": "pronouns",
+    "name": "pronouns",
+    "description": "A short string listing or describing pronouns for a person. Typically the person concerned is the best authority as pronouns are a critical part of personal identity and expression. Publishers and con",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/pronouns"
   },
   {
     "atom": "proof",
     "name": "proof",
     "description": "Use when reasoning about the VERIFY nucleus — the O(N), trustless cost to audit a content-addressed store, dual to tamper-cost (forge). The public DRY proof bundle peers verify without trusting us; the released asymmetry (forge ≫ verify) IS the trust. Matter-twin services/proof + integrity/tamper-reverse-cost.",
-    "path": "proof"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/proof"
+  },
+  {
+    "atom": "propagation",
+    "name": "propagation",
+    "description": "Use when raising transplants before the field — the greenhouse/nursery schedule of sowing into trays of cells (plugs) sized to deliver seedlings on their field date, plus hardening-off before transplant. The controlled-start stage upstream of transplanting; flats/cells/plugs are its containers, sized back from the transplant date.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/propagation"
   },
   {
     "atom": "properties",
     "name": "investment-properties",
     "description": "Use when recognising or remeasuring IAS 40 investment property — land or buildings held to earn rental income or capital appreciation — under the §30 fair-value or cost model election, with transfer-of-use triggers (§57–65) and IFRS 13 hierarchy classification. The IAS 40 investment-property register.",
-    "path": "properties/investment/properties"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/properties/investment/properties"
+  },
+  {
+    "atom": "property",
+    "name": "property",
+    "description": "A property, used to indicate attributes and relationships of some Thing; equivalent to rdf:Property.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/property"
+  },
+  {
+    "atom": "propose",
+    "name": "propose",
+    "description": "Use when computing weave proposals deterministically — for each orphan atom, the highest-mass atom whose text mentions it (a true co-occurrence, never invented), feeding the weave with no trained agent.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/aura/propose"
+  },
+  {
+    "atom": "proprietary",
+    "name": "proprietary",
+    "description": "True if this item's name is a proprietary/brand name (vs. generic name).",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/proprietary"
   },
   {
     "atom": "prospect",
     "name": "prospect",
     "description": "Use when early-stage contact hasn't yet qualified as a lead — prospect→lead→opportunity progression in CRM. A party in discovery/research phase before qualification.",
-    "path": "prospect"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/prospect"
+  },
+  {
+    "atom": "protein",
+    "name": "protein",
+    "description": "Protein is here used in its widest possible definition, as classes of amino acid based molecules. Amyloid-beta Protein in human (UniProt P05067), eukaryota (e.g. an OrthoDB group) or even a single mol",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/protein"
+  },
+  {
+    "atom": "provider",
+    "name": "provider",
+    "description": "The service provider, service operator, or service performer; the goods producer. Another party (a seller) may offer those services or goods on behalf of the provider. A provider may also serve as the",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/provider"
+  },
+  {
+    "atom": "provides",
+    "name": "provides",
+    "description": "provides: a schema.org component word, fused from providesBroadcastService, providesService",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/provides"
   },
   {
     "atom": "provision",
     "name": "provision",
     "description": "Use when recognizing a liability for a present obligation (legal or constructive) from a past event, where outflow is probable and measurable — mandatory disclosure under IAS-37",
-    "path": "provision"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/provision"
   },
   {
     "atom": "provisions",
     "name": "provisions",
     "description": "Use when recognising or measuring uncertain liabilities — warranty, restructuring, onerous contracts, environmental remediation, decommissioning/ARO, litigation; tracking best-estimate vs discounted amount, reimbursement recovery, movement history (additions/reversals/unwinds), and §85 disclosure text. The IAS-37 provision register.",
-    "path": "fiscal/periods/provisions"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/fiscal/periods/provisions"
+  },
+  {
+    "atom": "pruning",
+    "name": "pruning",
+    "description": "Use when plant parts are removed to steer growth, airflow, and fruiting — pruning and suckering (pinching axillary shoots) concentrate the plant's energy into marketable fruit, open the canopy to reduce disease, and shape it to the trellis. Removing growth to improve what remains; the quality/airflow lever on indeterminate fruiting crops.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/pruning"
+  },
+  {
+    "atom": "psychological",
+    "name": "psychological",
+    "description": "psychological: a schema.org component word, fused from PsychologicalTreatment",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/psychological"
+  },
+  {
+    "atom": "pub",
+    "name": "pub",
+    "description": "pub: a schema.org component word, fused from BarOrPub",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/pub"
+  },
+  {
+    "atom": "public",
+    "name": "public",
+    "description": "public: a schema.org component word, fused from AskPublicNewsArticle, PublicSwimmingPool, PublicToilet, publicAccess, publicTransportClosuresInfo",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/public"
+  },
+  {
+    "atom": "publication",
+    "name": "publication",
+    "description": "A publication event associated with the item.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/publication"
+  },
+  {
+    "atom": "published",
+    "name": "published",
+    "description": "An agent associated with the publication event.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/published"
+  },
+  {
+    "atom": "publisher",
+    "name": "publisher",
+    "description": "The publisher of the article in question.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/publisher"
+  },
+  {
+    "atom": "publishing",
+    "name": "publishing",
+    "description": "publishing: a schema.org component word, fused from publishingPrinciples",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/publishing"
+  },
+  {
+    "atom": "purchase",
+    "name": "purchase",
+    "description": "purchase: a schema.org component word, fused from OfferForPurchase, PurchaseType, purchaseDate, purchasePriceLimit, purchaseType",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/purchase"
+  },
+  {
+    "atom": "purpose",
+    "name": "purpose",
+    "description": "purpose: a schema.org component word, fused from MedicalDevicePurpose",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/purpose"
   },
   {
     "atom": "pwa",
     "name": "pwa",
     "description": "Use when the offline web surface must stay trustworthy — service-worker cache keys, background-sync queue durability, manifest integrity, push dedup; every Progressive Web App pain point collapsed to a content-uuid problem.",
-    "path": "pwa"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/pwa"
+  },
+  {
+    "atom": "qa",
+    "name": "qa",
+    "description": "qa: a schema.org component word, fused from QAPage",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/qa"
+  },
+  {
+    "atom": "qualifications",
+    "name": "qualifications",
+    "description": "Specific qualifications required for this role or Occupation.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/qualifications"
+  },
+  {
+    "atom": "qualified",
+    "name": "qualified",
+    "description": "qualified: a schema.org component word, fused from IncentiveQualifiedExpenseType, qualifiedExpense",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/qualified"
+  },
+  {
+    "atom": "qualifier",
+    "name": "qualifier",
+    "description": "qualifier: a schema.org component word, fused from measurementQualifier",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/qualifier"
+  },
+  {
+    "atom": "qualitative",
+    "name": "qualitative",
+    "description": "qualitative: a schema.org component word, fused from QualitativeValue",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/qualitative"
+  },
+  {
+    "atom": "quality",
+    "name": "quality",
+    "description": "quality: a schema.org component word, fused from videoQuality",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/quality"
+  },
+  {
+    "atom": "quantitative",
+    "name": "quantitative",
+    "description": "quantitative: a schema.org component word, fused from QuantitativeValue, QuantitativeValueDistribution",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/quantitative"
+  },
+  {
+    "atom": "quantity",
+    "name": "quantity",
+    "description": "Quantities such as distance, time, mass, weight, etc. Particular instances of say Mass are strings like '3 kg' or '4 milligrams'.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/quantity"
+  },
+  {
+    "atom": "quantum",
+    "name": "quantum",
+    "description": "Use when checking the quantum-physics laws on the uuid-matrix — entanglement symmetry, collapse, conservation, no-cloning, quantization — computed deterministically at no cost, A432-grounded.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/quantum"
+  },
+  {
+    "atom": "quarantine",
+    "name": "quarantine",
+    "description": "quarantine: a schema.org component word, fused from quarantineGuidelines",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/quarantine"
+  },
+  {
+    "atom": "quaternary",
+    "name": "quaternary",
+    "description": "Use when enforcing the four-file folder law — an atom folder holds only SKILL.md, index.ts, test.ts, translations.ts; any other file is a violation to collide into its own atom.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/migrate/quaternary"
   },
   {
     "atom": "queries",
     "name": "queries",
     "description": "Use when building or debugging Payload queries — where filters/operators, sort, pagination, depth, select, populating relationships, joins, or query presets across Local/REST/GraphQL.",
-    "path": "queries"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/queries"
+  },
+  {
+    "atom": "query",
+    "name": "query",
+    "description": "A sub property of instrument. The query used on this action.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/query"
+  },
+  {
+    "atom": "quest",
+    "name": "quest",
+    "description": "The task that a player-controlled character, or group of characters may complete in order to gain a reward.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/quest"
+  },
+  {
+    "atom": "question",
+    "name": "question",
+    "description": "A specific question - e.g. from a user seeking answers online, or collected in a Frequently Asked Questions (FAQ) document.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/question"
   },
   {
     "atom": "queue",
     "name": "queue",
     "description": "Use when managing or routing work in order — support ticket queue, task backlog, processing sequence by priority/SLA/assignment. The ordered collection of pending work.",
-    "path": "queue"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/queue"
+  },
+  {
+    "atom": "quiz",
+    "name": "quiz",
+    "description": "Quiz: A test of knowledge, skills and abilities.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/quiz"
   },
   {
     "atom": "quota",
     "name": "quota",
     "description": "Use when setting or tracking rep/team/territory sales targets — period quota, attainment %, variance to goal; often linked to compensation.",
-    "path": "quota"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/quota"
+  },
+  {
+    "atom": "quotation",
+    "name": "quotation",
+    "description": "A quotation. Often but not necessarily from some written work, attributable to a real world author and - if associated with a fictional character - to any fictional Person. Use isBasedOn to link to so",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/quotation"
+  },
+  {
+    "atom": "quote",
+    "name": "quote",
+    "description": "quote: a schema.org component word, fused from QuoteAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/quote"
   },
   {
     "atom": "quotes",
@@ -2093,52 +9161,178 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "vendors/vendor/quotes"
   },
   {
+    "atom": "radiation",
+    "name": "radiation",
+    "description": "radiation: a schema.org component word, fused from RadiationTherapy",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/radiation"
+  },
+  {
+    "atom": "radio",
+    "name": "radio",
+    "description": "radio: a schema.org component word, fused from AMRadioChannel, FMRadioChannel, RadioBroadcastService, RadioChannel, RadioClip, RadioEpisode",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/radio"
+  },
+  {
+    "atom": "radius",
+    "name": "radius",
+    "description": "radius: a schema.org component word, fused from geoRadius",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/radius"
+  },
+  {
+    "atom": "range",
+    "name": "range",
+    "description": "range: a schema.org component word, fused from PostalCodeRangeSpecification, normalRange, postalCodeRange, priceRange, rangeIncludes, taxonomicRange",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/range"
+  },
+  {
+    "atom": "rank",
+    "name": "rank",
+    "description": "rank: a schema.org component word, fused from taxonRank",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/rank"
+  },
+  {
     "atom": "rate",
     "name": "rate",
     "description": "Use when a value is a ratio of two dimensions pinned at a point in time — exchange rate, VAT/tax rate, interest rate, unit price (currency per quantity), wage (currency per hour), throughput/capacity (quantity per hour), run-time-per-unit. The RateConcern; a rate is value-per-unit, pinned at a point; blanks route to the no-op identity (cascade-resolved), never a magic literal.",
-    "path": "rate"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/rate"
   },
   {
     "atom": "rates",
     "name": "currency-rates",
     "description": "Use when storing or querying FX exchange rates for multi-currency translation — from/to currency pair, rate date, source (ECB/bank API/manual), bid/ask/mid, inverse auto-calc, per IAS-21 and ASC-830. The FX rate master collection.",
-    "path": "currency/rates"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/currency/rates"
+  },
+  {
+    "atom": "rating",
+    "name": "rating",
+    "description": "A rating is an evaluation on a numeric scale, such as 1 to 5 stars.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/rating"
+  },
+  {
+    "atom": "react",
+    "name": "react",
+    "description": "react: a schema.org component word, fused from ReactAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/react"
+  },
+  {
+    "atom": "read",
+    "name": "read",
+    "description": "A person who reads (performs) the audiobook.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/read"
+  },
+  {
+    "atom": "readonly",
+    "name": "readonly",
+    "description": "readonly: a schema.org component word, fused from readonlyValue",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/readonly"
+  },
+  {
+    "atom": "real",
+    "name": "real",
+    "description": "real: a schema.org component word, fused from RealEstateAgent, RealEstateListing, realEstateAgent",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/real"
   },
   {
     "atom": "reason",
     "name": "reason",
     "description": "Use when documenting why a state changed — reason for rejection, reason for deletion/archival, reason for payment hold, audit finding reason code. Text or select; audit trail metadata. Captures intent.",
-    "path": "reason"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/reason"
   },
   {
     "atom": "receipt",
     "name": "receipt",
     "description": "Use when a governance decision needs a tamper-evident audit receipt — and the answer is that the receipt IS a uuid. Where a trust layer splits this across four primitives (a signed receipt, a hash-linked audit chain, a capability grant, an identity), erpax wires ALL of it through ONE content-addressed, chained, signable uuid: the leafUuid = hash(prevReceipt || content-uuid(decision) || ts) is simultaneously the receipt id, the Merkle audit-chain link, the identity, and the capability (caps are decision content). No external anchor needed — the uuid is the proof.",
-    "path": "receipt"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/receipt"
   },
   {
     "atom": "receipts",
     "name": "receipts",
     "description": "Use when issuing, querying, or auditing Наредба Н-18 fiscal receipts — касови бонове and e-receipts (alternative regime) — carrying УНП, fiscal-QR payload, VAT breakdown per tax group, and payment type; tamper-evident via content-uuid audit chain; never deleted. The Н-18 fiscal receipt collection.",
-    "path": "receipts"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/receipts"
+  },
+  {
+    "atom": "receive",
+    "name": "receive",
+    "description": "receive: a schema.org component word, fused from ReceiveAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/receive"
+  },
+  {
+    "atom": "received",
+    "name": "received",
+    "description": "received: a schema.org component word, fused from dateReceived",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/received"
+  },
+  {
+    "atom": "recipe",
+    "name": "recipe",
+    "description": "A recipe. For dietary restrictions covered by the recipe, a few common restrictions are enumerated via suitableForDiet. The keywords property can also be used to add more detail.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/recipe"
+  },
+  {
+    "atom": "recipient",
+    "name": "recipient",
+    "description": "A sub property of participant. The participant who is at the receiving end of the action.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/recipient"
   },
   {
     "atom": "recognition",
     "name": "recognition",
     "description": "Use when determining whether to record (recognize) an asset, liability, revenue, or expense per the accounting framework — the gate for when something enters the financial statements",
-    "path": "recognition"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/recognition"
+  },
+  {
+    "atom": "recognized",
+    "name": "recognized",
+    "description": "An organization that acknowledges the validity, value or utility of a credential. Note: recognition may include a process of quality assurance or accreditation.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/recognized"
+  },
+  {
+    "atom": "recognizing",
+    "name": "recognizing",
+    "description": "recognizing: a schema.org component word, fused from recognizingAuthority",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/recognizing"
+  },
+  {
+    "atom": "recommendation",
+    "name": "recommendation",
+    "description": "Recommendation is a type of Review that suggests or proposes something as the best option or best course of action. Recommendations may be for products or services, or other concrete things, as in the",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/recommendation"
+  },
+  {
+    "atom": "recommended",
+    "name": "recommended",
+    "description": "recommended: a schema.org component word, fused from RecommendedDoseSchedule, recommendedIntake",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/recommended"
   },
   {
     "atom": "reconcile",
     "name": "reconcile",
     "description": "Use when matching two records of the same flow — bank-statement line ↔ payment, GL ↔ subledger, intercompany pairs. The BankStatementLineReconciliation concern; reconciled state is DERIVED from the match link, not stored.",
-    "path": "reconcile"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/reconcile"
   },
   {
     "atom": "reconciliations",
     "name": "account-reconciliations",
     "description": "Use when capturing or reviewing period-end reconciliation sign-off evidence — bank, GL-to-subledger, or intercompany — with preparer/reviewer segregation, adjustment aging, and closure check (difference = 0); SOX §404 + ISO-19011 controls testing. The account-reconciliations evidence-pack collection.",
-    "path": "gl/accounts/account/reconciliations"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/gl/accounts/account/reconciliations"
+  },
+  {
+    "atom": "record",
+    "name": "record",
+    "description": "record: a schema.org component word, fused from CDCPMDRecord, recordLabel",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/record"
+  },
+  {
+    "atom": "recorded",
+    "name": "recorded",
+    "description": "An audio recording of the work.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/recorded"
+  },
+  {
+    "atom": "recording",
+    "name": "recording",
+    "description": "The composition this track is a recording of.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/recording"
   },
   {
     "atom": "records",
@@ -2147,112 +9341,496 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "subscription/plans/subscriptions/usage/records"
   },
   {
+    "atom": "recourse",
+    "name": "recourse",
+    "description": "recourse: a schema.org component word, fused from recourseLoan",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/recourse"
+  },
+  {
     "atom": "recover",
     "name": "recover",
     "description": "Use when a Payload collection/config reorg or rename leaves the build broken — `tsc` crashes with \"Maximum call stack size exceeded\", hundreds of type errors after moving collections, or `payload generate:types` fails with InvalidFieldRelationship, DuplicateFieldName, \"does not provide an export named 'default'\", or ERR_MODULE_NOT_FOUND.",
-    "path": "recover"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/recover"
+  },
+  {
+    "atom": "recycling",
+    "name": "recycling",
+    "description": "recycling: a schema.org component word, fused from RecyclingCenter",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/recycling"
   },
   {
     "atom": "redirects",
     "name": "redirects",
     "description": "Use when a moved/renamed URL must resolve to its new target (301/302) — the official @payloadcms/plugin-redirects `redirects` collection + the SSR PayloadRedirects resolver. Read before wiring URL redirection, or when a `'redirects'` slug is \"not assignable to CollectionSlug\" (the plugin isn't registered).",
-    "path": "redirects"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/redirects"
   },
   {
     "atom": "refactor",
     "name": "refactor",
     "description": "Use when reshaping the corpus toward the law — all logic mapped to fs, all is skills, every atom payload⊕vitepress, uuid the coordinate, anything that does not fit is junk. The migration organs live here as atoms, not as loose scripts.",
-    "path": "refactor"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/refactor"
+  },
+  {
+    "atom": "referee",
+    "name": "referee",
+    "description": "An official who watches a game or match closely to enforce the rules and arbitrate on matters arising from the play such as referees, umpires or judges. The name of the effective function can vary acc",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/referee"
+  },
+  {
+    "atom": "reference",
+    "name": "reference",
+    "description": "reference: a schema.org component word, fused from APIReference, contentReferenceTime, referenceQuantity, valueReference",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/reference"
+  },
+  {
+    "atom": "references",
+    "name": "references",
+    "description": "references: a schema.org component word, fused from referencesOrder",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/references"
+  },
+  {
+    "atom": "refund",
+    "name": "refund",
+    "description": "refund: a schema.org component word, fused from RefundTypeEnumeration, refundType",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/refund"
   },
   {
     "atom": "refunds",
     "name": "refunds",
     "description": "Use when tracking the actual cash payment back to a customer for a credit memo — Stripe, ACH, SEPA, check or cash; ISO-20022 pacs.004 return, tokenised card data, GL journal entry, refund-approval SoD. The refunds collection.",
-    "path": "invoices/credit/memos/refunds"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/invoices/credit/memos/refunds"
+  },
+  {
+    "atom": "region",
+    "name": "region",
+    "description": "region: a schema.org component word, fused from DefinedRegion, addressRegion, eligibleRegion, ineligibleRegion, regionDrained",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/region"
+  },
+  {
+    "atom": "regions",
+    "name": "regions",
+    "description": "regions: a schema.org component word, fused from regionsAllowed",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/regions"
+  },
+  {
+    "atom": "register",
+    "name": "register",
+    "description": "register: a schema.org component word, fused from RegisterAction, UnRegisterAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/register"
+  },
+  {
+    "atom": "registered",
+    "name": "registered",
+    "description": "registered: a schema.org component word, fused from dateVehicleFirstRegistered",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/registered"
   },
   {
     "atom": "registers",
     "name": "risk-register",
     "description": "Use when cataloguing enterprise risks per legal entity — inherent and residual likelihood/impact scoring (COSO/ISO-31000), mitigating internal controls, risk appetite assessment, next-assessment scheduling, linked audit findings. The COSO ERM risk register.",
-    "path": "legal/entities/risk/registers"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/legal/entities/risk/registers"
+  },
+  {
+    "atom": "registration",
+    "name": "registration",
+    "description": "registration: a schema.org component word, fused from companyRegistration",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/registration"
+  },
+  {
+    "atom": "reject",
+    "name": "reject",
+    "description": "reject: a schema.org component word, fused from RejectAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/reject"
+  },
+  {
+    "atom": "related",
+    "name": "related",
+    "description": "A pointer to another, somehow related product (or multiple products).",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/related"
   },
   {
     "atom": "relatedparty",
     "name": "relatedparty",
     "description": "Use when identifying and accounting for related-party transactions (subsidiaries, associates, joint ventures, key management); mandatory disclosure and transaction separation under IFRS-24",
-    "path": "relatedparty"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/relatedparty"
+  },
+  {
+    "atom": "relationship",
+    "name": "relationship",
+    "description": "relationship: a schema.org component word, fused from linkRelationship",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/relationship"
+  },
+  {
+    "atom": "release",
+    "name": "release",
+    "description": "The album this is a release of.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/release"
+  },
+  {
+    "atom": "released",
+    "name": "released",
+    "description": "released: a schema.org component word, fused from releasedEvent",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/released"
+  },
+  {
+    "atom": "relevant",
+    "name": "relevant",
+    "description": "relevant: a schema.org component word, fused from relevantOccupation, relevantSpecialty",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/relevant"
+  },
+  {
+    "atom": "remaining",
+    "name": "remaining",
+    "description": "remaining: a schema.org component word, fused from remainingAttendeeCapacity",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/remaining"
   },
   {
     "atom": "remediation",
     "name": "remediation",
     "description": "Use when a contract specifies the remedy for breach — payment, replacement, repair, specific performance, cure period, calculation (liquidated damages, penalties, attorney fees).",
-    "path": "remediation"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/remediation"
+  },
+  {
+    "atom": "remorse",
+    "name": "remorse",
+    "description": "remorse: a schema.org component word, fused from customerRemorseReturnFees, customerRemorseReturnLabelSource, customerRemorseReturnShippingFeesAmount",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/remorse"
+  },
+  {
+    "atom": "renegotiable",
+    "name": "renegotiable",
+    "description": "renegotiable: a schema.org component word, fused from renegotiableLoan",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/renegotiable"
+  },
+  {
+    "atom": "rent",
+    "name": "rent",
+    "description": "rent: a schema.org component word, fused from RentAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/rent"
+  },
+  {
+    "atom": "rental",
+    "name": "rental",
+    "description": "rental: a schema.org component word, fused from AutoRental, MovieRentalStore, RentalCarReservation, VacationRental",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/rental"
+  },
+  {
+    "atom": "repair",
+    "name": "repair",
+    "description": "repair: a schema.org component word, fused from AutoRepair, MotorcycleRepair",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/repair"
+  },
+  {
+    "atom": "repayment",
+    "name": "repayment",
+    "description": "repayment: a schema.org component word, fused from RepaymentSpecification, loanRepaymentForm, monthlyMinimumRepaymentAmount",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/repayment"
+  },
+  {
+    "atom": "repeals",
+    "name": "repeals",
+    "description": "repeals: a schema.org component word, fused from legislationRepeals",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/repeals"
+  },
+  {
+    "atom": "repeat",
+    "name": "repeat",
+    "description": "repeat: a schema.org component word, fused from repeatCount, repeatFrequency",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/repeat"
+  },
+  {
+    "atom": "repetitions",
+    "name": "repetitions",
+    "description": "Number of times one should repeat the activity.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/repetitions"
+  },
+  {
+    "atom": "replace",
+    "name": "replace",
+    "description": "replace: a schema.org component word, fused from ReplaceAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/replace"
+  },
+  {
+    "atom": "replacee",
+    "name": "replacee",
+    "description": "A sub property of object. The object that is being replaced.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/replacee"
+  },
+  {
+    "atom": "replacer",
+    "name": "replacer",
+    "description": "A sub property of object. The object that replaces.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/replacer"
   },
   {
     "atom": "replication",
     "name": "replication",
     "description": "Use when data must exist in multiple places — read replicas, primary-replica sync, replication lag, replication filtering, point-in-time recovery from replicas, federation/multi-tenant replication semantics.",
-    "path": "replication"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/replication"
+  },
+  {
+    "atom": "reply",
+    "name": "reply",
+    "description": "reply: a schema.org component word, fused from ReplyAction, replyToUrl",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/reply"
+  },
+  {
+    "atom": "report",
+    "name": "report",
+    "description": "A Report generated by governmental or non-governmental organization.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/report"
+  },
+  {
+    "atom": "reportage",
+    "name": "reportage",
+    "description": "reportage: a schema.org component word, fused from ReportageNewsArticle",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/reportage"
+  },
+  {
+    "atom": "reported",
+    "name": "reported",
+    "description": "reported: a schema.org component word, fused from ReportedDoseSchedule",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/reported"
+  },
+  {
+    "atom": "reporting",
+    "name": "reporting",
+    "description": "reporting: a schema.org component word, fused from healthcareReportingData",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/reporting"
   },
   {
     "atom": "reportings",
     "name": "segment-reporting",
     "description": "Use when preparing IFRS-8/ASC-280 operating-segment disclosures — revenue, operating profit, assets, liabilities, CapEx, major-customer dependency, intersegment transfer pricing, and reconciliation to consolidated totals per fiscal period per entity. The segment-reporting disclosure register.",
-    "path": "legal/entities/segment/reportings"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/legal/entities/segment/reportings"
   },
   {
     "atom": "reports",
     "name": "regulatory-reports",
     "description": "Use when submitting or tracking statutory filings — 10-K/20-F, 10-Q, SOX attestations, annual compliance reports — per legal entity per jurisdiction — filing status, due dates, regulator feedback, and linked audit findings. The regulatory-filing register.",
-    "path": "legal/entities/regulatory/reports"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/legal/entities/regulatory/reports"
+  },
+  {
+    "atom": "repository",
+    "name": "repository",
+    "description": "repository: a schema.org component word, fused from codeRepository",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/repository"
+  },
+  {
+    "atom": "representation",
+    "name": "representation",
+    "description": "representation: a schema.org component word, fused from hasRepresentation",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/representation"
+  },
+  {
+    "atom": "representative",
+    "name": "representative",
+    "description": "representative: a schema.org component word, fused from legalRepresentative, representativeOfPage",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/representative"
   },
   {
     "atom": "requests",
     "name": "maintenance-requests",
     "description": "Use when an occupant, operator, or sensor raises an FM service ticket — corrective, preventive, predictive, compliance, safety, or move request — against a property, space, or fixed asset; SLA priority, triage, promotion to a work order. The IWMS/CMMS service-request intake register per ISO 41001 §8.1.",
-    "path": "maintenance/requests"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/maintenance/requests"
+  },
+  {
+    "atom": "required",
+    "name": "required",
+    "description": "required: a schema.org component word, fused from competencyRequired, requiredCollateral, requiredGender, requiredMaxAge, requiredMinAge, requiredQuantity",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/required"
+  },
+  {
+    "atom": "requirement",
+    "name": "requirement",
+    "description": "requirement: a schema.org component word, fused from actionAccessibilityRequirement, advanceBookingRequirement, eligibilityToWorkRequirement, hasTierRequirement, physicalRequirement, securityClearance",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/requirement"
   },
   {
     "atom": "requirements",
     "name": "compliance-requirements",
     "description": "Use when defining or querying individual control obligations within a compliance framework — code, title, description, section, severity (critical/high/medium/low) — linked to a ComplianceFramework; super-admin-only writes, tenant-read. The per-requirement obligation register that ComplianceGaps reference.",
-    "path": "compliance/frameworks/compliance/requirements"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/compliance/frameworks/compliance/requirements"
+  },
+  {
+    "atom": "requires",
+    "name": "requires",
+    "description": "requires: a schema.org component word, fused from requiresSubscription",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/requires"
   },
   {
     "atom": "requisitions",
     "name": "purchase-requisitions",
     "description": "Use when capturing spend requests before a purchase order is issued — SOX §404 four-eyes gate (requisitioner ≠ approver), multi-line item costing, GL account, preferred vendor, and auditor-traceable PO→requisition→approval chain. The pre-PO approval-gate collection.",
-    "path": "cost/centers/purchase/requisitions"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/cost/centers/purchase/requisitions"
+  },
+  {
+    "atom": "rescue",
+    "name": "rescue",
+    "description": "rescue: a schema.org component word, fused from SearchRescueOrganization",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/rescue"
   },
   {
     "atom": "research",
     "name": "research",
     "description": "Use when bringing outside knowledge into erpax — research ADDS entropy (unverified claims, many divergent sources, disorder); erpax skills CONVERT that entropy into tamper-cost (independent cross-checked levels) and collapse the residue to the zero-entropy core. Inhale entropy, exhale a denser, harder app.",
-    "path": "research"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/research"
+  },
+  {
+    "atom": "researcher",
+    "name": "researcher",
+    "description": "Researchers.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/researcher"
+  },
+  {
+    "atom": "reservation",
+    "name": "reservation",
+    "description": "Describes a reservation for travel, dining or an event. Some reservations require tickets. Note: This type is for information about actual reservations, e.g. in confirmation emails or HTML pages with",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/reservation"
+  },
+  {
+    "atom": "reservations",
+    "name": "reservations",
+    "description": "reservations: a schema.org component word, fused from acceptsReservations",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/reservations"
+  },
+  {
+    "atom": "reserve",
+    "name": "reserve",
+    "description": "reserve: a schema.org component word, fused from ReserveAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/reserve"
+  },
+  {
+    "atom": "reserved",
+    "name": "reserved",
+    "description": "reserved: a schema.org component word, fused from reservedTicket",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/reserved"
+  },
+  {
+    "atom": "reservoir",
+    "name": "reservoir",
+    "description": "A reservoir of water, typically an artificially created lake, like the Lake Kariba reservoir.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/reservoir"
+  },
+  {
+    "atom": "reset",
+    "name": "reset",
+    "description": "reset: a schema.org component word, fused from ResetPasswordAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/reset"
+  },
+  {
+    "atom": "residence",
+    "name": "residence",
+    "description": "The place where a person lives.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/residence"
+  },
+  {
+    "atom": "resizable",
+    "name": "resizable",
+    "description": "Whether the 3DModel allows resizing. For example, room layout applications often do not allow 3DModel elements to be resized to reflect reality.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/resizable"
   },
   {
     "atom": "resolution",
     "name": "resolution",
     "description": "Use when closing or resolving a ticket, issue, or complaint — root-cause analysis, solution implementation, confirmation, closure. The endpoint of a support lifecycle.",
-    "path": "resolution"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/resolution"
+  },
+  {
+    "atom": "resort",
+    "name": "resort",
+    "description": "A resort is a place used for relaxation or recreation, attracting visitors for holidays or vacations. Resorts are places, towns or sometimes commercial establishments operated by a single company (sou",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/resort"
+  },
+  {
+    "atom": "resource",
+    "name": "resource",
+    "description": "resource: a schema.org component word, fused from LearningResource, learningResourceType",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/resource"
   },
   {
     "atom": "resources",
     "name": "bookable-resources",
     "description": "Use when cataloguing or querying reservable assets — rooms, vehicles, equipment, beds, machinery, parking, co-working desks, time slots — across hospitality, fleet, facility management or field-service; rate ladders, availability windows, yield management, GL/tax linkage. The agnostic resource-booking master — pairs with bookings.",
-    "path": "bookable/resources"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/bookable/resources"
+  },
+  {
+    "atom": "response",
+    "name": "response",
+    "description": "response: a schema.org component word, fused from RsvpResponseType, rsvpResponse",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/response"
+  },
+  {
+    "atom": "responsibilities",
+    "name": "responsibilities",
+    "description": "Responsibilities associated with this role or Occupation.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/responsibilities"
+  },
+  {
+    "atom": "responsible",
+    "name": "responsible",
+    "description": "responsible: a schema.org component word, fused from legislationResponsible",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/responsible"
+  },
+  {
+    "atom": "rest",
+    "name": "rest",
+    "description": "rest: a schema.org component word, fused from restPeriods",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/rest"
+  },
+  {
+    "atom": "restaurant",
+    "name": "restaurant",
+    "description": "A restaurant.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/restaurant"
+  },
+  {
+    "atom": "restocking",
+    "name": "restocking",
+    "description": "restocking: a schema.org component word, fused from restockingFee",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/restocking"
+  },
+  {
+    "atom": "restricted",
+    "name": "restricted",
+    "description": "restricted: a schema.org component word, fused from RestrictedDiet",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/restricted"
   },
   {
     "atom": "restriction",
     "name": "restriction",
     "description": "Use when a contract imposes use restrictions — field of use, geographic restriction, customer type restriction, sublicense prohibition, derivative-work restrictions.",
-    "path": "restriction"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/restriction"
+  },
+  {
+    "atom": "result",
+    "name": "result",
+    "description": "The result produced in the action. E.g. John wrote *a book*.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/result"
+  },
+  {
+    "atom": "results",
+    "name": "results",
+    "description": "results: a schema.org component word, fused from SearchResultsPage",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/results"
+  },
+  {
+    "atom": "resume",
+    "name": "resume",
+    "description": "resume: a schema.org component word, fused from ResumeAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/resume"
   },
   {
     "atom": "retention",
     "name": "retention",
     "description": "Use when designing/measuring strategies to keep existing customers — loyalty programs, engagement triggers, win-back campaigns, at-risk indicators.",
-    "path": "retention"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/retention"
+  },
+  {
+    "atom": "return",
+    "name": "return",
+    "description": "return: a schema.org component word, fused from MerchantReturnEnumeration, MerchantReturnPolicy, MerchantReturnPolicySeasonalOverride, ProductReturnEnumeration, ProductReturnPolicy, ReturnAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/return"
   },
   {
     "atom": "returns",
@@ -2264,85 +9842,205 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "revenue",
     "name": "revenue",
     "description": "Use when applying IFRS-15 / ASC-606 revenue recognition logic — performance obligations, contract modification, timing (at-a-point vs. over-time), deferral.",
-    "path": "revenue"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/revenue"
   },
   {
     "atom": "reverse",
     "name": "reverse",
     "description": "Reversing/correcting a posted entry — the source entry with debit↔credit swapped on the SAME accounts, balanced by construction. Read when generating reversing entries, credit notes, void/correction postings, or period-close reversals.",
-    "path": "reverse"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/reverse"
+  },
+  {
+    "atom": "review",
+    "name": "review",
+    "description": "A review of an item - for example, of a restaurant, movie, or store.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/review"
+  },
+  {
+    "atom": "reviewed",
+    "name": "reviewed",
+    "description": "People or organizations that have reviewed the content on this web page for accuracy and/or completeness.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/reviewed"
   },
   {
     "atom": "reviews",
     "name": "performance-reviews",
     "description": "Use when running employee performance cycles — annual, mid-year, quarterly, probation, PIP, 360 — self-assessment plus manager review, competency ratings, merit-increase and promotion recommendations, and GDPR-compliant processing. The employee performance-review collection.",
-    "path": "employees/performance/reviews"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/employees/performance/reviews"
   },
   {
     "atom": "risk",
     "name": "risk",
     "description": "Use when recording operational risks, dependencies, or blocking issues — supplier risk, technical risk, market risk. The threat with mitigation strategy.",
-    "path": "risk"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/risk"
+  },
+  {
+    "atom": "risks",
+    "name": "risks",
+    "description": "Specific physiologic risks associated to the diet plan.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/risks"
+  },
+  {
+    "atom": "river",
+    "name": "river",
+    "description": "river: a schema.org component word, fused from RiverBodyOfWater",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/river"
   },
   {
     "atom": "roadmap",
     "name": "roadmap",
     "description": "Use when planning deliverables across quarters/years — a timeline of features, milestones, epics, with dependency links and resource allocation. The strategic sequencing.",
-    "path": "roadmap"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/roadmap"
   },
   {
     "atom": "rodin",
     "name": "rodin",
     "description": "Use when reasoning about the number substrate under erpax's state/sequence math — the Rodin vortex sequence 0·3·6·9·1·2·4·8·7·5 over the A432 anchor, digital-root (mod-9) arithmetic, the 3·6·9 triad axis vs the 1·2·4·8·7·5 doubling helix. The root the horo ring and the sequence both express.",
-    "path": "rodin"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/rodin"
+  },
+  {
+    "atom": "role",
+    "name": "role",
+    "description": "Represents additional information about a relationship or property. For example a Role can be used to say that a 'member' role linking some SportsTeam to a player occurred during a particular time per",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/role"
   },
   {
     "atom": "roles",
     "name": "user-roles",
     "description": "Use when assigning or revoking a role definition for a user — the HABTM join that grants a user the capabilities and skill routes of the linked role; duplicate assignments are prevented by hook. The NIST INCITS-359 role-assignment collection.",
-    "path": "roles/user/roles"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/roles/user/roles"
+  },
+  {
+    "atom": "roof",
+    "name": "roof",
+    "description": "roof: a schema.org component word, fused from roofLoad",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/roof"
+  },
+  {
+    "atom": "roofing",
+    "name": "roofing",
+    "description": "roofing: a schema.org component word, fused from RoofingContractor",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/roofing"
+  },
+  {
+    "atom": "room",
+    "name": "room",
+    "description": "A room is a distinguishable space within a structure, usually separated from other spaces by interior walls (source: Wikipedia, the free encyclopedia, see http://en.wikipedia.org/wiki/Room). See also",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/room"
+  },
+  {
+    "atom": "rooms",
+    "name": "rooms",
+    "description": "rooms: a schema.org component word, fused from numberOfRooms",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/rooms"
+  },
+  {
+    "atom": "rootstock",
+    "name": "rootstock",
+    "description": "Use when modelling the root-providing lower plant a scion is grafted onto — the rootstock controls vigour, size (dwarfing → high-density orchards), and disease/phylloxera resistance. The perennial-planting keystone, chosen once for the asset's multi-decade life; paired with the scion via a graft.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/rootstock"
+  },
+  {
+    "atom": "rotation",
+    "name": "rotation",
+    "description": "Use when planning the multi-year non-repetition of a crop family in the same ground — crop rotation breaks pest/disease cycles and balances nutrient draw by never returning a family to a bed sooner than ~3–4 years. The rule/constraint over the planting sequence (distinct from the bare sequence): grouped by botanical family, alternating heavy feeders, legumes, and roots.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/rotation"
   },
   {
     "atom": "round",
     "name": "round",
     "description": "Use when reasoning about the sixth position of the horo state ring — digit 5, \"the ring breathes\", the completing turn that brings a returning flow to rest (delivered, received, reconciled). Descent/return arc; nested under horo.",
-    "path": "horo/round"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/horo/round"
+  },
+  {
+    "atom": "route",
+    "name": "route",
+    "description": "route: a schema.org component word, fused from administrationRoute",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/route"
   },
   {
     "atom": "routing",
     "name": "routing",
     "description": "Use when choosing which model/compute tier handles an agent action — route by risk (capability verb + credential touch + harmony fight), not by where the model runs; low-risk reads/chat go local, high-risk write/execute/credential/disharmony go to a strong aligned model; safety is the sandbox gate, not the model tier. The risk-proportionate model-routing service.",
-    "path": "routing"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/routing"
   },
   {
     "atom": "routings",
     "name": "routings",
     "description": "Use when sequencing the process steps for a work order — operation type, work center, setup time, run-time per unit, UoM, and IAS-2 cost-of-conversion from cycle time. The ordered routing-step collection — the second universal manufacturing primitive alongside the BOM.",
-    "path": "items/bills/of/materials/work/orders/routings"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/items/bills/of/materials/work/orders/routings"
+  },
+  {
+    "atom": "row",
+    "name": "row",
+    "description": "row: a schema.org component word, fused from seatRow",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/row"
+  },
+  {
+    "atom": "rsvp",
+    "name": "rsvp",
+    "description": "rsvp: a schema.org component word, fused from RsvpAction, RsvpResponseType, rsvpResponse",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/rsvp"
   },
   {
     "atom": "rules",
     "name": "gl-posting-rules",
     "description": "Use when configuring GL account metadata for double-entry validation — account type (asset/liability/equity/revenue/expense), normal polarity (debit/credit), balance-sheet vs P&L category, reconciliation frequency, cash-flow relevance, period-end close flag. The gl-posting-rules validation-metadata collection.",
-    "path": "gl/posting/rules"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/gl/posting/rules"
   },
   {
     "atom": "runbook",
     "name": "runbook",
     "description": "Use when documenting step-by-step standard operating procedures — incident response, system failover, deployment checklist, maintenance sequence. The executable playbook.",
-    "path": "runbook"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/runbook"
   },
   {
     "atom": "runs",
     "name": "operation-runs",
     "description": "Use when recording actual production at one operation × work-center — quantities ordered/produced/scrapped/backordered, variant attribute axes, shift, start/completion timestamps, and ISA-95 KPIs (yield, scrap). The per-routing-step execution record within a work order.",
-    "path": "items/bills/of/materials/work/orders/operation/runs"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/items/bills/of/materials/work/orders/operation/runs"
+  },
+  {
+    "atom": "runtime",
+    "name": "runtime",
+    "description": "Runtime platform or script interpreter dependencies (example: Java v1, Python 2.3, .NET Framework 3.0).",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/runtime"
+  },
+  {
+    "atom": "rv",
+    "name": "rv",
+    "description": "rv: a schema.org component word, fused from RVPark",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/rv"
+  },
+  {
+    "atom": "rxcui",
+    "name": "rxcui",
+    "description": "The RxCUI drug identifier from RXNORM.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/rxcui"
   },
   {
     "atom": "sacred",
     "name": "sacred",
     "description": "Use when auditing anything before acting on it — the verified-true: content-uuid recomputes, the books balance, the lineage traces to a real source. The set-apart canonical form that passes verification AND validation; dual of profane; run at every scale before every act.",
-    "path": "sacred"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/sacred"
+  },
+  {
+    "atom": "safety",
+    "name": "safety",
+    "description": "safety: a schema.org component word, fused from safetyConsideration",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/safety"
+  },
+  {
+    "atom": "salary",
+    "name": "salary",
+    "description": "salary: a schema.org component word, fused from baseSalary, estimatedSalary, salaryCurrency, salaryUponCompletion, trainingSalary",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/salary"
+  },
+  {
+    "atom": "sale",
+    "name": "sale",
+    "description": "sale: a schema.org component word, fused from SaleEvent",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/sale"
   },
   {
     "atom": "sales",
@@ -2351,52 +10049,142 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "warehouse/locations/consignment/arrangements/consignment/sales"
   },
   {
+    "atom": "salinity",
+    "name": "salinity",
+    "description": "Use when modelling soluble-salt buildup that degrades soil and stresses crops — salinity as electrical conductivity (ECe, dS/m) of the saturated-paste extract, with sodicity (ESP/SAR, excess sodium destroying structure) as its companion axis. A soil-degradation dimension orthogonal to N-P-K fertility; reclaimed by leaching and, for sodicity, gypsum.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/salinity"
+  },
+  {
+    "atom": "salon",
+    "name": "salon",
+    "description": "salon: a schema.org component word, fused from BeautySalon, HairSalon, NailSalon",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/salon"
+  },
+  {
+    "atom": "same",
+    "name": "same",
+    "description": "URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Wikidata entry, or official website.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/same"
+  },
+  {
+    "atom": "sample",
+    "name": "sample",
+    "description": "sample: a schema.org component word, fused from codeSampleType, sampleType, tissueSample",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/sample"
+  },
+  {
     "atom": "samples",
     "name": "audit-samples",
     "description": "Use when recording or reviewing individual sample items drawn for a control test — pass/fail results, exception categories, tested-by, amount; ISA-530 statistical-sampling evidence per control test execution. The audit-samples collection.",
-    "path": "internal/controls/control/tests/audit/samples"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/internal/controls/control/tests/audit/samples"
   },
   {
     "atom": "sampling",
     "name": "sampling",
     "description": "Use when selecting a representative subset — random sampling, stratified sampling, systematic sampling, sample size calculation, sampling error/confidence intervals, weighted sampling for survey design.",
-    "path": "sampling"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/sampling"
   },
   {
     "atom": "sandbox",
     "name": "sandbox",
     "description": "Use when running an UNTRUSTED, agent-built tool safely — erpax encodes capability-scoping, credential-protection, endpoint-allowlisting and a receipted audit NATIVELY (content-uuid tool identity + the receipt + the gate), depending on nothing external. The tool's identity is its content-uuid; its grant is {capabilities, allowedHosts, credentialHandles}; every action is policy-evaluated and receipted; the WASM/worker isolation is the runtime boundary the pure policy rides on.",
-    "path": "sandbox"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/sandbox"
+  },
+  {
+    "atom": "satellite",
+    "name": "satellite",
+    "description": "satellite: a schema.org component word, fused from CableOrSatelliteService",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/satellite"
+  },
+  {
+    "atom": "satirical",
+    "name": "satirical",
+    "description": "satirical: a schema.org component word, fused from SatiricalArticle",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/satirical"
   },
   {
     "atom": "satisfaction",
     "name": "satisfaction",
     "description": "Use when measuring employee/customer contentment — survey scores, NPS, CSAT, engagement indices. The scalar metric of sentiment toward work, leadership, culture, or service.",
-    "path": "satisfaction"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/satisfaction"
+  },
+  {
+    "atom": "saturated",
+    "name": "saturated",
+    "description": "saturated: a schema.org component word, fused from saturatedFatContent",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/saturated"
+  },
+  {
+    "atom": "scale",
+    "name": "scale",
+    "description": "scale: a schema.org component word, fused from energyEfficiencyScaleMax, energyEfficiencyScaleMin",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/scale"
   },
   {
     "atom": "schedule",
     "name": "schedule",
     "description": "Use when assigning work to calendar slots — resource schedules, shift rosters, project timelines, appointment booking. The time-coordinate commitment.",
-    "path": "schedule"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/schedule"
+  },
+  {
+    "atom": "scheduled",
+    "name": "scheduled",
+    "description": "scheduled: a schema.org component word, fused from scheduledPaymentDate, scheduledTime",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/scheduled"
   },
   {
     "atom": "schedules",
     "name": "debt-schedule",
     "description": "Use when managing or reporting a legal entity's debt instruments — bank term/revolving loans, bonds, finance and operating leases, convertible notes, covenant tracking, repayment schedules, and IFRS-9 current/non-current classification per IFRS-9 / IAS-1 / ASC-470. The debt-instrument register collection.",
-    "path": "legal/entities/debt/schedules"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/legal/entities/debt/schedules"
   },
   {
     "atom": "schema",
     "name": "schema",
     "description": "Use when defining, auditing, or evolving the logical data model — entity relationship diagrams, normalization, column definitions, table structure, field types, cardinality declarations. The canonical blueprint of the data structure.",
-    "path": "schema"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/schema"
+  },
+  {
+    "atom": "scheme",
+    "name": "scheme",
+    "description": "scheme: a schema.org component word, fused from FundingScheme",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/scheme"
+  },
+  {
+    "atom": "scholarly",
+    "name": "scholarly",
+    "description": "scholarly: a schema.org component word, fused from MedicalScholarlyArticle, ScholarlyArticle",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/scholarly"
+  },
+  {
+    "atom": "school",
+    "name": "school",
+    "description": "A school.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/school"
   },
   {
     "atom": "science",
     "name": "science",
     "description": "Use when reasoning about which scientific mysteries erpax's form illuminates — information-as-reality, entropy as a conserved ledger, the holographic bound, entanglement as content-address, symmetry as conservation. Honest about correspondence vs metaphor.",
-    "path": "science"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/science"
+  },
+  {
+    "atom": "scion",
+    "name": "scion",
+    "description": "Use when modelling the fruiting cultivar grafted onto a rootstock — the scion determines the variety/clone (the produce identity, a taxonomy rank). The aerial half of the grafted perennial plant, paired with the rootstock via a graft.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/scion"
+  },
+  {
+    "atom": "scope",
+    "name": "scope",
+    "description": "scope: a schema.org component word, fused from WarrantyScope, warrantyScope",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/scope"
+  },
+  {
+    "atom": "score",
+    "name": "score",
+    "description": "score: a schema.org component word, fused from MedicalRiskScore",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/score"
   },
   {
     "atom": "scorecards",
@@ -2405,106 +10193,472 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "vendors/vendor/scorecards"
   },
   {
+    "atom": "scouting",
+    "name": "scouting",
+    "description": "Use when monitoring fields for pest, disease, and crop status — scouting is the systematic field-walk that drives integrated pest management (IPM): observe, identify, count against an economic threshold, then act (cultural/biological/mechanical/chemical) only when damage cost exceeds control cost. The monitoring backbone; turns pest control from calendar-spray into measured decision.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/scouting"
+  },
+  {
+    "atom": "screen",
+    "name": "screen",
+    "description": "screen: a schema.org component word, fused from screenCount",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/screen"
+  },
+  {
+    "atom": "screening",
+    "name": "screening",
+    "description": "screening: a schema.org component word, fused from ScreeningEvent, securityScreening",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/screening"
+  },
+  {
+    "atom": "screenshot",
+    "name": "screenshot",
+    "description": "A link to a screenshot image of the app.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/screenshot"
+  },
+  {
+    "atom": "sculpture",
+    "name": "sculpture",
+    "description": "A piece of sculpture.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/sculpture"
+  },
+  {
+    "atom": "sd",
+    "name": "sd",
+    "description": "sd: a schema.org component word, fused from sdDatePublished, sdLicense, sdPublisher",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/sd"
+  },
+  {
+    "atom": "sea",
+    "name": "sea",
+    "description": "sea: a schema.org component word, fused from SeaBodyOfWater",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/sea"
+  },
+  {
     "atom": "search",
     "name": "search",
     "description": "Use when an entity needs quick free-text find across a few key columns — code/name/barcode/number lookup. The SearchConcern/quick_search (ransack) pattern → a Payload where/like query or a search index.",
-    "path": "search"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/search"
+  },
+  {
+    "atom": "season",
+    "name": "season",
+    "description": "Use when output is bounded by a recurring climate window in the annual cycle — the growing/harvest season set by the frost-free period, the cool- vs warm-season crop split, and heat accumulation (growing degree days) rather than the calendar. The season is the time-axis bottleneck of agriculture: land × season caps how much can be grown; it is regional and probabilistic, never a copied calendar.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/season"
+  },
+  {
+    "atom": "seasonal",
+    "name": "seasonal",
+    "description": "seasonal: a schema.org component word, fused from MerchantReturnPolicySeasonalOverride, returnPolicySeasonalOverride, seasonalOverride",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/seasonal"
+  },
+  {
+    "atom": "seasons",
+    "name": "seasons",
+    "description": "A season in a media series.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/seasons"
+  },
+  {
+    "atom": "seat",
+    "name": "seat",
+    "description": "Used to describe a seat, such as a reserved seat in an event reservation.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/seat"
+  },
+  {
+    "atom": "seating",
+    "name": "seating",
+    "description": "seating: a schema.org component word, fused from seatingCapacity, seatingType, vehicleSeatingCapacity",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/seating"
+  },
+  {
+    "atom": "secondary",
+    "name": "secondary",
+    "description": "secondary: a schema.org component word, fused from secondaryPrevention",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/secondary"
+  },
+  {
+    "atom": "section",
+    "name": "section",
+    "description": "section: a schema.org component word, fused from HowToSection, MenuSection, articleSection, hasMenuSection, printSection, seatSection",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/section"
+  },
+  {
+    "atom": "sections",
+    "name": "sections",
+    "description": "sections: a schema.org component word, fused from syllabusSections",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/sections"
   },
   {
     "atom": "sectors",
     "name": "sectors",
     "description": "Use when taxonomising any part of society — SNA institutional sectors, ISIC economic activities, COFOG government functions, ICNPO civil society, SDG outcomes. The one societal coordinate system every party, connection, transaction and tenant references.",
-    "path": "sectors"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/sectors"
+  },
+  {
+    "atom": "security",
+    "name": "security",
+    "description": "security: a schema.org component word, fused from securityClearanceRequirement, securityScreening",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/security"
   },
   {
     "atom": "seed",
     "name": "seed",
     "description": "Use when seeding a tenant's opening chart-of-accounts + compliance posture from a (country × industry) template — INDUSTRY_TEMPLATES, the BG-NSS statutory chart, resolveTenantCompliance/getCuratedComplianceCountries. Derives every country fact from country-context; nothing is re-typed.",
-    "path": "seed"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/seed"
+  },
+  {
+    "atom": "seek",
+    "name": "seek",
+    "description": "seek: a schema.org component word, fused from SeekToAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/seek"
+  },
+  {
+    "atom": "seeks",
+    "name": "seeks",
+    "description": "A pointer to products or services sought by the organization or person (demand).",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/seeks"
   },
   {
     "atom": "segment",
     "name": "segment",
     "description": "Use when identifying and reporting operating segments per IFRS-8 — revenue/expense/asset/liability grouping for disclosure and management reporting; distinct from cost-center dimension",
-    "path": "segment"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/segment"
   },
   {
     "atom": "segments",
     "name": "customer-segments",
     "description": "Use when grouping customers for differentiated pricing tiers, volume discounts, targeted campaigns, or IFRS-15 §4 portfolio-of-contracts disclosures — segment type, pricing tier, payment terms, credit limit, and priority rank. The CRM customer-segmentation collection.",
-    "path": "customer/segments"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/customer/segments"
+  },
+  {
+    "atom": "selector",
+    "name": "selector",
+    "description": "selector: a schema.org component word, fused from CssSelectorType, cssSelector",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/selector"
   },
   {
     "atom": "self",
     "name": "self",
     "description": "Use when reasoning about an object's or the agent's reach back into its own root — content-uuid identity, the akashic record, config (the 0); self-reference, self-similarity, \"all agents are one erpax\". The root-reach atom; composes by nesting (self/sufficient, self/similar, self/reference).",
-    "path": "self"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/self"
+  },
+  {
+    "atom": "sell",
+    "name": "sell",
+    "description": "sell: a schema.org component word, fused from SellAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/sell"
+  },
+  {
+    "atom": "seller",
+    "name": "seller",
+    "description": "An entity which offers (sells / leases / lends / loans) the services / goods. A seller may also be a provider.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/seller"
+  },
+  {
+    "atom": "send",
+    "name": "send",
+    "description": "send: a schema.org component word, fused from SendAction",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/send"
+  },
+  {
+    "atom": "sender",
+    "name": "sender",
+    "description": "A sub property of participant. The participant who is at the sending end of the action.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/sender"
+  },
+  {
+    "atom": "sensory",
+    "name": "sensory",
+    "description": "sensory: a schema.org component word, fused from sensoryRequirement, sensoryUnit",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/sensory"
+  },
+  {
+    "atom": "sent",
+    "name": "sent",
+    "description": "sent: a schema.org component word, fused from dateSent",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/sent"
   },
   {
     "atom": "sentiment",
     "name": "sentiment",
     "description": "Use when analyzing emotional tone — from text, survey, or interaction. The polarity/intensity of emotion (positive/negative/neutral) or sentiment score.",
-    "path": "sentiment"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/sentiment"
   },
   {
     "atom": "separation",
     "name": "separation",
     "description": "Use when checking the separation of powers — that no single actor holds two of the legislative, executive, or judicial branches; the anti-corruption segregation-of-duties invariant applied at the scale of the state.",
-    "path": "separation"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/separation"
   },
   {
     "atom": "sequence",
     "name": "sequence",
     "description": "Use when navigating or composing the erpax Payload single-word skill library — to find the right atomic skill, understand how they interact (with each other, themselves, and external systems), or in what order to apply them. The index over the basic skills, ordered 0·3·6·9·1·2·4·8·7·5.",
-    "path": "sequence"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/sequence"
+  },
+  {
+    "atom": "sequential",
+    "name": "sequential",
+    "description": "sequential: a schema.org component word, fused from SequentialArt",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/sequential"
+  },
+  {
+    "atom": "serial",
+    "name": "serial",
+    "description": "serial: a schema.org component word, fused from serialNumber",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/serial"
+  },
+  {
+    "atom": "series",
+    "name": "series",
+    "description": "A Series in schema.org is a group of related items, typically but not necessarily of the same kind. See also CreativeWorkSeries, EventSeries.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/series"
+  },
+  {
+    "atom": "serious",
+    "name": "serious",
+    "description": "serious: a schema.org component word, fused from seriousAdverseOutcome",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/serious"
+  },
+  {
+    "atom": "served",
+    "name": "served",
+    "description": "served: a schema.org component word, fused from areaServed",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/served"
+  },
+  {
+    "atom": "server",
+    "name": "server",
+    "description": "server: a schema.org component word, fused from GameServer, GameServerStatus, gameServer, serverStatus",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/server"
+  },
+  {
+    "atom": "serves",
+    "name": "serves",
+    "description": "serves: a schema.org component word, fused from servesCuisine",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/serves"
+  },
+  {
+    "atom": "service",
+    "name": "service",
+    "description": "A service provided by an organization, e.g. delivery service, print services, etc.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/service"
   },
   {
     "atom": "services",
     "name": "services",
     "description": "Use when adding, finding, or debugging erpax business logic that is NOT schema — pure tested functions, content-uuid math, integrity/tamper-cost, the agent society, domain export/import — the society's organ-body, one folder per organ, called by the collections/access/hooks.",
-    "path": "services"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/services"
+  },
+  {
+    "atom": "serving",
+    "name": "serving",
+    "description": "serving: a schema.org component word, fused from servingSize",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/serving"
+  },
+  {
+    "atom": "set",
+    "name": "set",
+    "description": "set: a schema.org component word, fused from CategoryCodeSet, DefinedTermSet, inCodeSet, inDefinedTermSet",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/set"
+  },
+  {
+    "atom": "settings",
+    "name": "settings",
+    "description": "settings: a schema.org component word, fused from DeliveryTimeSettings, ShippingRateSettings, shippingSettingsLink",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/settings"
+  },
+  {
+    "atom": "sha",
+    "name": "sha",
+    "description": "The SHA-2 SHA256 hash of the content of the item. For example, a zero-length input has value 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/sha"
+  },
+  {
+    "atom": "shape",
+    "name": "shape",
+    "description": "shape: a schema.org component word, fused from GeoShape",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/shape"
   },
   {
     "atom": "share",
     "name": "share",
-    "description": "Use when reasoning about the second position of the horo state ring — digit 2, \"a partner joins\", the first doubling/split of a flow (ordered, committed, allocated). Ascent arc; nested under horo.",
-    "path": "horo/share"
+    "description": "Use when reasoning about a portion of a whole allocated to a member who joins — horo position 2 (digit 2, the first doubling: one becomes two, the whole splits, value allocated). Its domain instance is a proportional, contingent claim on a pooled whole under shared risk: the CSA share (prepaid box of whatever the farm harvests), equity share, profit share — the inverse of a fixed order.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/horo/share"
   },
   {
     "atom": "shared",
     "name": "shared",
     "description": "Canonical standards-merged atoms — render components (Money, AuditedTimestamp, AddressBlock) and reusable Payload Field factories shared across every domain",
-    "path": "shared"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/shared"
   },
   {
     "atom": "shares",
     "name": "shares",
     "description": "Use when granting, checking, or revoking uuid-based RBAC access (Law 59) — share bindings (granteeUuid, accessRole, targetUuid) per tenant over content-uuid-addressed resources; the access-control source of truth checkShare reads at read time, with each grant/revoke attested by a chain-linked audit leaf. Revocation is a soft flag, never a delete. The uuid-share RBAC binding collection.",
-    "path": "shares"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/shares"
+  },
+  {
+    "atom": "sharing",
+    "name": "sharing",
+    "description": "sharing: a schema.org component word, fused from HealthPlanCostSharingSpecification, healthPlanCostSharing",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/sharing"
+  },
+  {
+    "atom": "sheet",
+    "name": "sheet",
+    "description": "sheet: a schema.org component word, fused from SheetMusic",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/sheet"
+  },
+  {
+    "atom": "shelter",
+    "name": "shelter",
+    "description": "shelter: a schema.org component word, fused from AnimalShelter",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/shelter"
+  },
+  {
+    "atom": "ship",
+    "name": "ship",
+    "description": "ship: a schema.org component word, fused from doesNotShip",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/ship"
   },
   {
     "atom": "shipments",
     "name": "shipments",
     "description": "Use when dispatching goods against a sales order — recording carrier, tracking number and URL, line items shipped, ship-from/to addresses, and progressing through picked → packed → shipped → delivered states. The fulfillment and carrier-tracking collection per EN-16931 §BG-13.",
-    "path": "customers/sales/orders/shipments"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/customers/sales/orders/shipments"
+  },
+  {
+    "atom": "shipped",
+    "name": "shipped",
+    "description": "shipped: a schema.org component word, fused from itemShipped",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/shipped"
+  },
+  {
+    "atom": "shipping",
+    "name": "shipping",
+    "description": "shipping: a schema.org component word, fused from OfferShippingDetails, ShippingConditions, ShippingDeliveryTime, ShippingRateSettings, ShippingService, customerRemorseReturnShippingFeesAmount",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/shipping"
+  },
+  {
+    "atom": "shoe",
+    "name": "shoe",
+    "description": "shoe: a schema.org component word, fused from ShoeStore",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/shoe"
+  },
+  {
+    "atom": "shop",
+    "name": "shop",
+    "description": "shop: a schema.org component word, fused from AutoBodyShop, CafeOrCoffeeShop, HobbyShop, IceCreamShop, PawnShop, TireShop",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/shop"
+  },
+  {
+    "atom": "shopping",
+    "name": "shopping",
+    "description": "shopping: a schema.org component word, fused from ShoppingCenter",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/shopping"
+  },
+  {
+    "atom": "short",
+    "name": "short",
+    "description": "short: a schema.org component word, fused from ShortStory",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/short"
   },
   {
     "atom": "shred",
     "name": "shred",
     "description": "Use when reconciling GDPR erasure with content-addressing — a content-uuid is f(content) and the chain needs the row, so you cannot delete. Crypto-shred = encrypt erasable fields per subject, and erasure = destroy the key (not the row). The row+uuid persist (chain/tamper-evidence intact), the plaintext is unrecoverable. Matter-twin shred/index.ts.",
-    "path": "shred"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/shred"
+  },
+  {
+    "atom": "sibling",
+    "name": "sibling",
+    "description": "A sibling of the person.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/sibling"
+  },
+  {
+    "atom": "siblings",
+    "name": "siblings",
+    "description": "The person's siblings — the plural of sibling.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/siblings"
+  },
+  {
+    "atom": "side",
+    "name": "side",
+    "description": "side: a schema.org component word, fused from WPSideBar",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/side"
+  },
+  {
+    "atom": "sign",
+    "name": "sign",
+    "description": "sign: a schema.org component word, fused from MedicalSign, MedicalSignOrSymptom, VitalSign, callSign, distinguishingSign, signDetected",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/sign"
   },
   {
     "atom": "signal",
     "name": "signal",
     "description": "Use when reasoning about a uuid as self-rendering media in erpax — one 128-bit uuid decodes (from the string alone) to color (cmyk) + sound (A432 Hz) + state (horo position) + identity + capability; a STREAM of uuids is interactive multimedia with no payload. Nested under identity.",
-    "path": "identity/signal"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/identity/signal"
   },
   {
     "atom": "signatures",
     "name": "contract-signatures",
     "description": "Use when collecting or auditing e-signatures for contract execution — sequenced multi-party approval (legal→customer→company rep), eIDAS-compliant immutable signature records, provider verification URL, and fully-executed trigger for IFRS-15 §10 contract activation. The e-signature audit-trail collection.",
-    "path": "customers/contracts/contract/signatures"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/customers/contracts/contract/signatures"
+  },
+  {
+    "atom": "significance",
+    "name": "significance",
+    "description": "The significance associated with the superficial anatomy; as an example, how characteristics of the superficial anatomy can suggest underlying medical conditions or courses of treatment.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/significance"
+  },
+  {
+    "atom": "significant",
+    "name": "significant",
+    "description": "significant: a schema.org component word, fused from significantLink, significantLinks",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/significant"
+  },
+  {
+    "atom": "similar",
+    "name": "similar",
+    "description": "A pointer to another, functionally similar product (or multiple products).",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/similar"
+  },
+  {
+    "atom": "similarity",
+    "name": "similarity",
+    "description": "similarity: a schema.org component word, fused from bioChemSimilarity",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/similarity"
+  },
+  {
+    "atom": "single",
+    "name": "single",
+    "description": "single: a schema.org component word, fused from SingleFamilyResidence",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/single"
+  },
+  {
+    "atom": "site",
+    "name": "site",
+    "description": "site: a schema.org component word, fused from SiteNavigationElement, WebSite",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/site"
+  },
+  {
+    "atom": "size",
+    "name": "size",
+    "description": "A standardized size of a product or creative work, specified either through a simple textual string (for example 'XL', '32Wx34L'), a QuantitativeValue with a unitCode, or a comprehensive and structure",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/size"
+  },
+  {
+    "atom": "ski",
+    "name": "ski",
+    "description": "ski: a schema.org component word, fused from SkiResort",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/ski"
+  },
+  {
+    "atom": "sku",
+    "name": "sku",
+    "description": "The Stock Keeping Unit (SKU), i.e. a merchant-specific identifier for a product or service, or the product to which the offer refers.",
+    "path": "sku"
   },
   {
     "atom": "sla",
@@ -2513,10 +10667,46 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "sla"
   },
   {
+    "atom": "slogan",
+    "name": "slogan",
+    "description": "A slogan or motto associated with the item.",
+    "path": "slogan"
+  },
+  {
+    "atom": "smiles",
+    "name": "smiles",
+    "description": "A specification in form of a line notation for describing the structure of chemical species using short ASCII strings. Double bond stereochemistry \\\\ indicators may need to be escaped in the string in",
+    "path": "smiles"
+  },
+  {
+    "atom": "smoking",
+    "name": "smoking",
+    "description": "smoking: a schema.org component word, fused from smokingAllowed",
+    "path": "smoking"
+  },
+  {
+    "atom": "sms",
+    "name": "sms",
+    "description": "sms: a schema.org component word, fused from serviceSmsNumber",
+    "path": "sms"
+  },
+  {
+    "atom": "snapshot",
+    "name": "snapshot",
+    "description": "snapshot: a schema.org component word, fused from AudioObjectSnapshot, ImageObjectSnapshot, VideoObjectSnapshot",
+    "path": "snapshot"
+  },
+  {
     "atom": "snapshots",
     "name": "fiscal-period-snapshots",
     "description": "Use when capturing or replaying immutable point-in-time snapshots of a fiscal period — on creation, amendment, validation, closing, or regulatory audit; chaining priorSnapshot for tamper-detection; attaching eIDAS QES signatures on critical amendments. The fiscal-period audit-chain snapshot node.",
-    "path": "fiscal/periods/fiscal/period/snapshots"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/fiscal/periods/fiscal/period/snapshots"
+  },
+  {
+    "atom": "social",
+    "name": "social",
+    "description": "social: a schema.org component word, fused from SocialEvent, SocialMediaPosting",
+    "path": "social"
   },
   {
     "atom": "society",
@@ -2525,22 +10715,214 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "society"
   },
   {
+    "atom": "sodium",
+    "name": "sodium",
+    "description": "sodium: a schema.org component word, fused from sodiumContent",
+    "path": "sodium"
+  },
+  {
+    "atom": "software",
+    "name": "software",
+    "description": "software: a schema.org component word, fused from SoftwareApplication, SoftwareSourceCode, softwareAddOn, softwareHelp, softwareRequirements, softwareVersion",
+    "path": "software"
+  },
+  {
+    "atom": "soil",
+    "name": "soil",
+    "description": "Use when modelling the living medium a crop grows in — soil as the three-phase (mineral·water·air) body whose texture/structure/tilth, organic matter, biology, moisture and chemistry set what fertility, water, and yield are possible. The parent the fertility/water/cover-crop vocabulary hangs from; a capacity reservoir managed, depleted, and rebuilt.",
+    "path": "soil"
+  },
+  {
+    "atom": "solve",
+    "name": "solve",
+    "description": "solve: a schema.org component word, fused from SolveMathAction",
+    "path": "solve"
+  },
+  {
+    "atom": "solver",
+    "name": "solver",
+    "description": "solver: a schema.org component word, fused from MathSolver",
+    "path": "solver"
+  },
+  {
+    "atom": "some",
+    "name": "some",
+    "description": "some: a schema.org component word, fused from SomeProducts",
+    "path": "some"
+  },
+  {
     "atom": "source",
     "name": "source",
     "description": "Use when tracking the origin of data — source document (purchase order for invoice), source system (ERP, spreadsheet), source bank account (for transfer), data-import source. Metadata for audit and reconciliation.",
     "path": "source"
   },
   {
+    "atom": "sourced",
+    "name": "sourced",
+    "description": "The neurological pathway that originates the neurons.",
+    "path": "sourced"
+  },
+  {
+    "atom": "sources",
+    "name": "sources",
+    "description": "sources: a schema.org component word, fused from unnamedSourcesPolicy",
+    "path": "sources"
+  },
+  {
+    "atom": "spa",
+    "name": "spa",
+    "description": "spa: a schema.org component word, fused from DaySpa",
+    "path": "spa"
+  },
+  {
     "atom": "spaces",
     "name": "spaces",
     "description": "Use when managing IWMS sub-property zones — floors, rooms, open-plan areas, desks, parking bays — with area, capacity, occupancy, amenities, fire-zone, bookability flag, and GL-account or cost-centre allocation under a parent property. The ISO 41011 §3.3.5 space-management collection.",
-    "path": "properties/spaces"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/properties/spaces"
+  },
+  {
+    "atom": "spacing",
+    "name": "spacing",
+    "description": "Use when plant geometry sets density and yield — in-row × between-row spacing and rows-per-bed determine plants per area (plants/acre = rows ÷ in-row-spacing ÷ bed-center × 43,560), which sets seed/transplant counts and, with per-plant yield, total yield. Tighter is not linearly more: beyond an optimum, plants compete and per-plant size falls.",
+    "path": "spacing"
+  },
+  {
+    "atom": "spare",
+    "name": "spare",
+    "description": "spare: a schema.org component word, fused from isAccessoryOrSparePartFor",
+    "path": "spare"
+  },
+  {
+    "atom": "sparsity",
+    "name": "sparsity",
+    "description": "Use when reasoning about erpax's efficiency principle — sparsity: of a large DORMANT pool, only the smallest correct subset is active at once (capability ÷ cost → max). Two conjugate axes (DeepSeek's own framing, Engram) — COMPUTE sparsity (MoE routes 37B of 671B params; erpax routes few of 593 atoms per task) and MEMORY/representation sparsity (conditional lookup; content-uuid stores the whole in 128 bits, schema is generated not stored). Its limit is zeropoint (zero active = the source), its dual the bottleneck (the one missing active factor zeroes the product), its selector routing. DeepSeek reaches it by hardware constraint, erpax by telos — they converge on the identical sparse form.",
+    "path": "sparsity"
+  },
+  {
+    "atom": "spatial",
+    "name": "spatial",
+    "description": "The \"spatial\" property can be used in cases when more specific properties (e.g. locationCreated, spatialCoverage, contentLocation) are not known to be appropriate.",
+    "path": "spatial"
+  },
+  {
+    "atom": "speakable",
+    "name": "speakable",
+    "description": "Indicates sections of a Web page that are particularly 'speakable' in the sense of being highlighted as being especially appropriate for text-to-speech conversion. Other sections of a page may also be",
+    "path": "speakable"
   },
   {
     "atom": "spec",
     "name": "spec",
     "description": "Use when one workflow definition must generate many materializations — e2e test, help tip/subtitle, seed, evidence, marketing page, i18n keys — from a single source. The spec-generator over BUSINESS_CHAINS; e2e tests and help tips share one source.",
     "path": "spec"
+  },
+  {
+    "atom": "special",
+    "name": "special",
+    "description": "special: a schema.org component word, fused from SpecialAnnouncement, specialCommitments, specialOpeningHoursSpecification, vehicleSpecialUsage",
+    "path": "special"
+  },
+  {
+    "atom": "specialty",
+    "name": "specialty",
+    "description": "Any branch of a field in which people typically develop specific expertise, usually after significant study, time, and effort.",
+    "path": "specialty"
+  },
+  {
+    "atom": "specification",
+    "name": "specification",
+    "description": "specification: a schema.org component word, fused from ActionAccessSpecification, BroadcastFrequencySpecification, CompoundPriceSpecification, DatedMoneySpecification, DeliveryChargeSpecification, Eng",
+    "path": "specification"
+  },
+  {
+    "atom": "speech",
+    "name": "speech",
+    "description": "speech: a schema.org component word, fused from speechToTextMarkup",
+    "path": "speech"
+  },
+  {
+    "atom": "speed",
+    "name": "speed",
+    "description": "The speed range of the vehicle. If the vehicle is powered by an engine, the upper limit of the speed range (indicated by maxValue) should be the maximum speed achievable under regular conditions. Typi",
+    "path": "speed"
+  },
+  {
+    "atom": "spoken",
+    "name": "spoken",
+    "description": "spoken: a schema.org component word, fused from spokenByCharacter",
+    "path": "spoken"
+  },
+  {
+    "atom": "sponsor",
+    "name": "sponsor",
+    "description": "A person or organization that supports a thing through a pledge, promise, or financial contribution. E.g. a sponsor of a Medical Study or a corporate sponsor of an event.",
+    "path": "sponsor"
+  },
+  {
+    "atom": "sponsorship",
+    "name": "sponsorship",
+    "description": "sponsorship: a schema.org component word, fused from hasSponsorshipOffer",
+    "path": "sponsorship"
+  },
+  {
+    "atom": "sport",
+    "name": "sport",
+    "description": "A type of sport (e.g. Baseball).",
+    "path": "sport"
+  },
+  {
+    "atom": "sporting",
+    "name": "sporting",
+    "description": "sporting: a schema.org component word, fused from SportingGoodsStore",
+    "path": "sporting"
+  },
+  {
+    "atom": "sports",
+    "name": "sports",
+    "description": "sports: a schema.org component word, fused from SportsActivityLocation, SportsClub, SportsEvent, SportsOrganization, SportsTeam, sportsActivityLocation",
+    "path": "sports"
+  },
+  {
+    "atom": "spouse",
+    "name": "spouse",
+    "description": "The person's spouse.",
+    "path": "spouse"
+  },
+  {
+    "atom": "spread",
+    "name": "spread",
+    "description": "spread: a schema.org component word, fused from diseaseSpreadStatistics, exchangeRateSpread",
+    "path": "spread"
+  },
+  {
+    "atom": "spreadsheet",
+    "name": "spreadsheet",
+    "description": "spreadsheet: a schema.org component word, fused from SpreadsheetDigitalDocument",
+    "path": "spreadsheet"
+  },
+  {
+    "atom": "stadium",
+    "name": "stadium",
+    "description": "stadium: a schema.org component word, fused from StadiumOrArena",
+    "path": "stadium"
+  },
+  {
+    "atom": "staffing",
+    "name": "staffing",
+    "description": "staffing: a schema.org component word, fused from diversityStaffingReport",
+    "path": "staffing"
+  },
+  {
+    "atom": "stage",
+    "name": "stage",
+    "description": "The stage of the condition, if applicable.",
+    "path": "stage"
+  },
+  {
+    "atom": "stand",
+    "name": "stand",
+    "description": "stand: a schema.org component word, fused from TaxiStand",
+    "path": "stand"
   },
   {
     "atom": "standard",
@@ -2555,16 +10937,70 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "taxing/jurisdictions/reporting/standards"
   },
   {
+    "atom": "star",
+    "name": "star",
+    "description": "star: a schema.org component word, fused from EnergyStarEnergyEfficiencyEnumeration, starRating",
+    "path": "star"
+  },
+  {
     "atom": "start",
     "name": "start",
     "description": "Use when a date-range or period begins — contract start date, employment start date, fiscal period start, promotion period start. Pairs with end (or duration, or another date atom) to define a temporal span. ISO-8601 datetime.",
     "path": "start"
   },
   {
+    "atom": "starts",
+    "name": "starts",
+    "description": "starts: a schema.org component word, fused from availabilityStarts",
+    "path": "starts"
+  },
+  {
+    "atom": "stat",
+    "name": "stat",
+    "description": "stat: a schema.org component word, fused from statType",
+    "path": "stat"
+  },
+  {
+    "atom": "state",
+    "name": "state",
+    "description": "A state or province of a country.",
+    "path": "state"
+  },
+  {
+    "atom": "statement",
+    "name": "statement",
+    "description": "A statement about something, for example a fun or interesting fact. If known, the main entity this statement is about can be indicated using mainEntity. For more formal claims (e.g. in Fact Checking),",
+    "path": "statement"
+  },
+  {
     "atom": "statements",
     "name": "bank-statements",
     "description": "Use when importing or matching bank statements (CSV, OFX, API) against journal entries for reconciliation — opening/closing balance, transaction lines, match type, variance; feeds account-reconciliations and IAS-7 cash-flow GL. The bank-statements import collection.",
-    "path": "gl/accounts/bank/statements"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/gl/accounts/bank/statements"
+  },
+  {
+    "atom": "station",
+    "name": "station",
+    "description": "station: a schema.org component word, fused from BusStation, FireStation, GasStation, PoliceStation, RadioStation, SubwayStation",
+    "path": "station"
+  },
+  {
+    "atom": "statistic",
+    "name": "statistic",
+    "description": "statistic: a schema.org component word, fused from agentInteractionStatistic, interactionStatistic",
+    "path": "statistic"
+  },
+  {
+    "atom": "statistical",
+    "name": "statistical",
+    "description": "statistical: a schema.org component word, fused from StatisticalPopulation, StatisticalVariable",
+    "path": "statistical"
+  },
+  {
+    "atom": "statistics",
+    "name": "statistics",
+    "description": "statistics: a schema.org component word, fused from diseaseSpreadStatistics",
+    "path": "statistics"
   },
   {
     "atom": "status",
@@ -2573,10 +11009,52 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "status"
   },
   {
+    "atom": "steering",
+    "name": "steering",
+    "description": "steering: a schema.org component word, fused from SteeringPositionValue, steeringPosition",
+    "path": "steering"
+  },
+  {
+    "atom": "step",
+    "name": "step",
+    "description": "A single step item (as HowToStep, text, document, video, etc.) or a HowToSection.",
+    "path": "step"
+  },
+  {
+    "atom": "steps",
+    "name": "steps",
+    "description": "A single step item (as HowToStep, text, document, video, etc.) or a HowToSection (originally misnamed 'steps'; 'step' is preferred).",
+    "path": "steps"
+  },
+  {
     "atom": "sti",
     "name": "sti",
     "description": "Single Table Inheritance in Payload — one collection, a flat `type` discriminator, typed in TS as a discriminated union. Read when a collection holds several behavioral subtypes (invoice↔bill↔credit_note, payment kinds, party kinds).",
     "path": "sti"
+  },
+  {
+    "atom": "stop",
+    "name": "stop",
+    "description": "stop: a schema.org component word, fused from BusStop, arrivalBusStop, departureBusStop",
+    "path": "stop"
+  },
+  {
+    "atom": "storage",
+    "name": "storage",
+    "description": "storage: a schema.org component word, fused from SelfStorage, storageRequirements",
+    "path": "storage"
+  },
+  {
+    "atom": "store",
+    "name": "store",
+    "description": "A retail good store.",
+    "path": "store"
+  },
+  {
+    "atom": "story",
+    "name": "story",
+    "description": "story: a schema.org component word, fused from AmpStory, ComicStory, ShortStory",
+    "path": "story"
   },
   {
     "atom": "stream",
@@ -2585,16 +11063,88 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "stream"
   },
   {
+    "atom": "street",
+    "name": "street",
+    "description": "street: a schema.org component word, fused from streetAddress",
+    "path": "street"
+  },
+  {
+    "atom": "strength",
+    "name": "strength",
+    "description": "strength: a schema.org component word, fused from DrugStrength, availableStrength, recommendationStrength, strengthUnit, strengthValue",
+    "path": "strength"
+  },
+  {
+    "atom": "structural",
+    "name": "structural",
+    "description": "structural: a schema.org component word, fused from structuralClass",
+    "path": "structural"
+  },
+  {
+    "atom": "structure",
+    "name": "structure",
+    "description": "structure: a schema.org component word, fused from AnatomicalStructure, BrainStructure, CivicStructure, relatedStructure, subStructure",
+    "path": "structure"
+  },
+  {
+    "atom": "structured",
+    "name": "structured",
+    "description": "structured: a schema.org component word, fused from StructuredValue",
+    "path": "structured"
+  },
+  {
     "atom": "structures",
     "name": "entity-legal-structures",
     "description": "Use when mapping legal entity types to their jurisdiction-specific legal forms — local name, abbreviation, governance structure (single/board/supervisory), tax treatment (corporate/pass-through/exempt), audit requirement and regulatory characteristics per taxing jurisdiction. The reference collection for entity-type-to-legal-form bindings.",
     "path": "taxing/jurisdictions/entity/legal/structures"
   },
   {
+    "atom": "study",
+    "name": "study",
+    "description": "A medical study or trial related to this entity.",
+    "path": "study"
+  },
+  {
+    "atom": "stupid",
+    "name": "stupid",
+    "description": "stupid: a schema.org component word, fused from StupidType, stupidProperty",
+    "path": "stupid"
+  },
+  {
+    "atom": "sub",
+    "name": "sub",
+    "description": "sub: a schema.org component word, fused from applicationSubCategory, broadcastSubChannel, subEvent, subEvents, subOrganization, subReservation",
+    "path": "sub"
+  },
+  {
+    "atom": "subcellular",
+    "name": "subcellular",
+    "description": "subcellular: a schema.org component word, fused from isLocatedInSubcellularLocation",
+    "path": "subcellular"
+  },
+  {
+    "atom": "subject",
+    "name": "subject",
+    "description": "A CreativeWork or Event about this Thing.",
+    "path": "subject"
+  },
+  {
     "atom": "submissions",
     "name": "audit-submissions",
     "description": "Use when building, submitting, or auditing Bulgarian Наредба Н-18 Приложение-38 standardised sales-audit files to НАП — period, self-checking header (count + control sum), submission status, НАП response, and the XML; never-deletable compliance trail. The BG fiscal-audit-file submission log.",
-    "path": "audit/submissions"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/audit/submissions"
+  },
+  {
+    "atom": "subscribe",
+    "name": "subscribe",
+    "description": "subscribe: a schema.org component word, fused from SubscribeAction",
+    "path": "subscribe"
+  },
+  {
+    "atom": "subscription",
+    "name": "subscription",
+    "description": "subscription: a schema.org component word, fused from MediaSubscription, requiresSubscription",
+    "path": "subscription"
   },
   {
     "atom": "subscriptions",
@@ -2603,16 +11153,130 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "subscription/plans/subscriptions"
   },
   {
+    "atom": "substance",
+    "name": "substance",
+    "description": "Any matter of defined composition that has discrete existence, whose origin may be biological, mineral or chemical.",
+    "path": "substance"
+  },
+  {
+    "atom": "subtitle",
+    "name": "subtitle",
+    "description": "subtitle: a schema.org component word, fused from subtitleLanguage",
+    "path": "subtitle"
+  },
+  {
+    "atom": "subway",
+    "name": "subway",
+    "description": "subway: a schema.org component word, fused from SubwayStation",
+    "path": "subway"
+  },
+  {
+    "atom": "successor",
+    "name": "successor",
+    "description": "A pointer from a newer variant of a product to its previous, often discontinued predecessor.",
+    "path": "successor"
+  },
+  {
     "atom": "sufficient",
     "name": "sufficient",
     "description": "Use when deciding whether to act from internal knowledge vs. ask externally — totality/completeness, the identity-element guarantee that every case is defined, the bounded form holding the unbounded answer. Nested under self → self-sufficiency: derive the next move, don't break flow with questions.",
-    "path": "self/sufficient"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/self/sufficient"
+  },
+  {
+    "atom": "suffix",
+    "name": "suffix",
+    "description": "suffix: a schema.org component word, fused from honorificSuffix, subStageSuffix",
+    "path": "suffix"
+  },
+  {
+    "atom": "sugar",
+    "name": "sugar",
+    "description": "sugar: a schema.org component word, fused from sugarContent",
+    "path": "sugar"
+  },
+  {
+    "atom": "suggested",
+    "name": "suggested",
+    "description": "suggested: a schema.org component word, fused from suggestedAge, suggestedAnswer, suggestedGender, suggestedMaxAge, suggestedMeasurement, suggestedMinAge",
+    "path": "suggested"
   },
   {
     "atom": "suggestions",
     "name": "ai-suggestions",
     "description": "Use when recording, querying, or auditing an AI inference — prompt/model/output/confidence, the human's accept/reject/edit decision, the downstream record it was applied to, and the EU AI Act risk class; GDPR Art.22(3) right-to-explain trail + SOX §404 evidence-of-control over AI-influenced decisions. The append-only AI inference audit collection.",
-    "path": "ai/suggestions"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/ai/suggestions"
+  },
+  {
+    "atom": "suitable",
+    "name": "suitable",
+    "description": "suitable: a schema.org component word, fused from suitableForDiet",
+    "path": "suitable"
+  },
+  {
+    "atom": "suite",
+    "name": "suite",
+    "description": "A suite in a hotel or other public accommodation, denotes a class of luxury accommodations, the key feature of which is multiple rooms (source: Wikipedia, the free encyclopedia, see http://en.wikipedi",
+    "path": "suite"
+  },
+  {
+    "atom": "summary",
+    "name": "summary",
+    "description": "summary: a schema.org component word, fused from accessibilitySummary, benefitsSummaryUrl",
+    "path": "summary"
+  },
+  {
+    "atom": "super",
+    "name": "super",
+    "description": "super: a schema.org component word, fused from superEvent",
+    "path": "super"
+  },
+  {
+    "atom": "superficial",
+    "name": "superficial",
+    "description": "superficial: a schema.org component word, fused from SuperficialAnatomy",
+    "path": "superficial"
+  },
+  {
+    "atom": "superseded",
+    "name": "superseded",
+    "description": "Relates a term (i.e. a property, class or enumeration) to one that supersedes it.",
+    "path": "superseded"
+  },
+  {
+    "atom": "supplement",
+    "name": "supplement",
+    "description": "supplement: a schema.org component word, fused from DietarySupplement",
+    "path": "supplement"
+  },
+  {
+    "atom": "supplier",
+    "name": "supplier",
+    "description": "supplier: a schema.org component word, fused from eligibleWithSupplier",
+    "path": "supplier"
+  },
+  {
+    "atom": "supply",
+    "name": "supply",
+    "description": "A sub-property of instrument. A supply consumed when performing instructions or a direction.",
+    "path": "supply"
+  },
+  {
+    "atom": "support",
+    "name": "support",
+    "description": "Qualification, candidature, degree, application that Thesis supports.",
+    "path": "support"
+  },
+  {
+    "atom": "supported",
+    "name": "supported",
+    "description": "supported: a schema.org component word, fused from countriesNotSupported, countriesSupported, productSupported",
+    "path": "supported"
+  },
+  {
+    "atom": "supporting",
+    "name": "supporting",
+    "description": "supporting: a schema.org component word, fused from supportingData",
+    "path": "supporting"
   },
   {
     "atom": "supto",
@@ -2621,10 +11285,76 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "supto"
   },
   {
+    "atom": "surface",
+    "name": "surface",
+    "description": "A material used as a surface in some artwork, e.g. Canvas, Paper, Wood, Board, etc.",
+    "path": "surface"
+  },
+  {
+    "atom": "surgical",
+    "name": "surgical",
+    "description": "surgical: a schema.org component word, fused from SurgicalProcedure",
+    "path": "surgical"
+  },
+  {
+    "atom": "suspend",
+    "name": "suspend",
+    "description": "suspend: a schema.org component word, fused from SuspendAction",
+    "path": "suspend"
+  },
+  {
+    "atom": "swatch",
+    "name": "swatch",
+    "description": "swatch: a schema.org component word, fused from colorSwatch",
+    "path": "swatch"
+  },
+  {
+    "atom": "swimming",
+    "name": "swimming",
+    "description": "swimming: a schema.org component word, fused from PublicSwimmingPool",
+    "path": "swimming"
+  },
+  {
+    "atom": "syllabus",
+    "name": "syllabus",
+    "description": "A syllabus that describes the material covered in a course, often with several such sections per Course so that a distinct timeRequired can be provided for that section of the Course.",
+    "path": "syllabus"
+  },
+  {
+    "atom": "symbol",
+    "name": "symbol",
+    "description": "symbol: a schema.org component word, fused from tickerSymbol",
+    "path": "symbol"
+  },
+  {
+    "atom": "symptom",
+    "name": "symptom",
+    "description": "symptom: a schema.org component word, fused from MedicalSignOrSymptom, MedicalSymptom, signOrSymptom",
+    "path": "symptom"
+  },
+  {
+    "atom": "synagogue",
+    "name": "synagogue",
+    "description": "A synagogue.",
+    "path": "synagogue"
+  },
+  {
     "atom": "sync",
     "name": "agent-sync",
     "description": "Use when synchronizing real-time events across agents in a tenant — pub/sub on content-uuid events, idempotent consumption, and a federation-safe room protocol so every agent sees every peer's work the instant it happens.",
-    "path": "agent/sync"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/agent/sync"
+  },
+  {
+    "atom": "system",
+    "name": "system",
+    "description": "system: a schema.org component word, fused from AnatomicalSystem, LibrarySystem, MedicineSystem, OperatingSystem, SizeSystemEnumeration, WearableSizeSystemEnumeration",
+    "path": "system"
+  },
+  {
+    "atom": "table",
+    "name": "table",
+    "description": "A table on a Web page.",
+    "path": "table"
   },
   {
     "atom": "tag",
@@ -2651,10 +11381,28 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "take"
   },
   {
+    "atom": "tamper",
+    "name": "tamper",
+    "description": "Use when reasoning about integrity attacks on the content-uuid store — the cost to forge, collide, or rewrite a record undetected, and why all-directions uuid wiring drives that cost toward infinity.",
+    "path": "tamper"
+  },
+  {
+    "atom": "target",
+    "name": "target",
+    "description": "Indicates a target EntryPoint, or url, for an Action.",
+    "path": "target"
+  },
+  {
     "atom": "tasks",
     "name": "project-tasks",
     "description": "Use when decomposing a project into WBS elements — assigning tasks, posting time-entries and material costs against a specific task code, computing per-task cost-to-cost % complete that rolls up to project-level IFRS-15 §35 recognition. The hierarchical work-breakdown collection under a project.",
-    "path": "customers/projects/project/tasks"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/customers/projects/project/tasks"
+  },
+  {
+    "atom": "tattoo",
+    "name": "tattoo",
+    "description": "tattoo: a schema.org component word, fused from TattooParlor",
+    "path": "tattoo"
   },
   {
     "atom": "tax",
@@ -2669,10 +11417,76 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "taxexempt"
   },
   {
+    "atom": "taxi",
+    "name": "taxi",
+    "description": "A taxi.",
+    "path": "taxi"
+  },
+  {
+    "atom": "taxon",
+    "name": "taxon",
+    "description": "A set of organisms asserted to represent a natural cohesive biological unit.",
+    "path": "taxon"
+  },
+  {
+    "atom": "taxonomic",
+    "name": "taxonomic",
+    "description": "taxonomic: a schema.org component word, fused from taxonomicRange",
+    "path": "taxonomic"
+  },
+  {
+    "atom": "taxonomy",
+    "name": "taxonomy",
+    "description": "Use when classifying entities into a ranked hierarchy — the family→genus→species→cultivar ladder for crops, and the generic ranked-classification engine for any LOD @type tree. A node's type is its rank-chain; traits inherit down the ranks (the fractal parent-chain), so taxonomy is the dimension atom applied to kind.",
+    "path": "taxonomy"
+  },
+  {
+    "atom": "teaches",
+    "name": "teaches",
+    "description": "The item being described is intended to help a person learn the competency or learning outcome defined by the referenced term.",
+    "path": "teaches"
+  },
+  {
     "atom": "team",
     "name": "team",
     "description": "Use when the society spawns multiple agents that share skills — a team is a set of content-addressed agents whose competence is the UNION of their skills (merge/holographic: a skill one loads, the team has), with distinct purposes preserved. Spawn → share → cover the gap in parallel. Matter-twin services/agent/team.ts.",
     "path": "team"
+  },
+  {
+    "atom": "tech",
+    "name": "tech",
+    "description": "tech: a schema.org component word, fused from TechArticle",
+    "path": "tech"
+  },
+  {
+    "atom": "technique",
+    "name": "technique",
+    "description": "technique: a schema.org component word, fused from MedicalImagingTechnique, imagingTechnique, measurementTechnique",
+    "path": "technique"
+  },
+  {
+    "atom": "telephone",
+    "name": "telephone",
+    "description": "The telephone number.",
+    "path": "telephone"
+  },
+  {
+    "atom": "television",
+    "name": "television",
+    "description": "television: a schema.org component word, fused from TelevisionChannel, TelevisionStation",
+    "path": "television"
+  },
+  {
+    "atom": "teller",
+    "name": "teller",
+    "description": "teller: a schema.org component word, fused from AutomatedTeller",
+    "path": "teller"
+  },
+  {
+    "atom": "template",
+    "name": "template",
+    "description": "template: a schema.org component word, fused from checkoutPageURLTemplate, urlTemplate",
+    "path": "template"
   },
   {
     "atom": "templates",
@@ -2681,16 +11495,46 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "taxing/jurisdictions/statutory/report/templates"
   },
   {
+    "atom": "temple",
+    "name": "temple",
+    "description": "temple: a schema.org component word, fused from BuddhistTemple, HinduTemple",
+    "path": "temple"
+  },
+  {
+    "atom": "temporal",
+    "name": "temporal",
+    "description": "The \"temporal\" property can be used in cases where more specific properties (e.g. temporalCoverage, dateCreated, dateModified, datePublished) are not known to be appropriate.",
+    "path": "temporal"
+  },
+  {
     "atom": "tenants",
     "name": "tenants",
     "description": "Use when creating or scoping a tenant — the GDPR-controller boundary for all access, localization cascade (BCP-47/ECMA-402), accounting framework (IFRS/GAAP/fiscal-year), reporting currency (ISO 4217), and integration secrets (Stripe, Resend, MCP). The multi-tenant root entity and access-scope boundary.",
     "path": "tenants"
   },
   {
+    "atom": "tennis",
+    "name": "tennis",
+    "description": "tennis: a schema.org component word, fused from TennisComplex",
+    "path": "tennis"
+  },
+  {
     "atom": "tenure",
     "name": "tenure",
     "description": "Use when tracking employment duration, anniversaries, or vesting schedules — hire date, current tenure, service-based benefits accrual, or eligibility calculations.",
     "path": "tenure"
+  },
+  {
+    "atom": "term",
+    "name": "term",
+    "description": "term: a schema.org component word, fused from DefinedTerm, DefinedTermSet, hasDefinedTerm, inDefinedTermSet, loanTerm, termCode",
+    "path": "term"
+  },
+  {
+    "atom": "terminal",
+    "name": "terminal",
+    "description": "terminal: a schema.org component word, fused from BoatTerminal, arrivalBoatTerminal, arrivalTerminal, departureBoatTerminal, departureTerminal",
+    "path": "terminal"
   },
   {
     "atom": "terminals",
@@ -2705,10 +11549,34 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "termination"
   },
   {
+    "atom": "terms",
+    "name": "terms",
+    "description": "terms: a schema.org component word, fused from termsOfService, termsPerYear",
+    "path": "terms"
+  },
+  {
     "atom": "territory",
     "name": "territory",
     "description": "Use when organizing sales coverage — geographic or account-based territory, assignment to rep, quota per territory, coverage/overlap rules.",
     "path": "territory"
+  },
+  {
+    "atom": "terroir",
+    "name": "terroir",
+    "description": "Use when the place gives the produce its character and price — terroir: the area-specific soil, climate, topography, and practice that make a product distinctive (OIV). Expressed legally as the appellation / AVA / PDO (a certification over a delimited territory); the perennial/viticulture twin of provenance and a land-value premium.",
+    "path": "terroir"
+  },
+  {
+    "atom": "test",
+    "name": "test",
+    "description": "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise).",
+    "path": "test"
+  },
+  {
+    "atom": "tested",
+    "name": "tested",
+    "description": "tested: a schema.org component word, fused from gettingTestedInfo",
+    "path": "tested"
   },
   {
     "atom": "testing",
@@ -2720,7 +11588,19 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "tests",
     "name": "control-tests",
     "description": "Use when designing or executing SOX §404 control-effectiveness tests — sampling methodology (statistical/stratified/judgmental/census), assertion, sample size, tolerance, deviation count/rate, conclusion on effectiveness; links to the tested internal-control. The control-tests ISO-19011 sampling-evidence collection.",
-    "path": "internal/controls/control/tests"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/internal/controls/control/tests"
+  },
+  {
+    "atom": "text",
+    "name": "text",
+    "description": "Data type: Text.",
+    "path": "text"
+  },
+  {
+    "atom": "theater",
+    "name": "theater",
+    "description": "theater: a schema.org component word, fused from MovieTheater, PerformingArtsTheater, TheaterEvent, TheaterGroup",
+    "path": "theater"
   },
   {
     "atom": "theme",
@@ -2729,10 +11609,58 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "theme"
   },
   {
+    "atom": "therapeutic",
+    "name": "therapeutic",
+    "description": "therapeutic: a schema.org component word, fused from TherapeuticProcedure",
+    "path": "therapeutic"
+  },
+  {
+    "atom": "therapy",
+    "name": "therapy",
+    "description": "therapy: a schema.org component word, fused from MedicalTherapy, OccupationalTherapy, PhysicalTherapy, RadiationTherapy, duplicateTherapy, relatedTherapy",
+    "path": "therapy"
+  },
+  {
+    "atom": "thesis",
+    "name": "thesis",
+    "description": "A thesis or dissertation document submitted in support of candidature for an academic degree or professional qualification.",
+    "path": "thesis"
+  },
+  {
+    "atom": "thing",
+    "name": "thing",
+    "description": "The most generic type of item.",
+    "path": "thing"
+  },
+  {
+    "atom": "threshold",
+    "name": "threshold",
+    "description": "threshold: a schema.org component word, fused from freeShippingThreshold",
+    "path": "threshold"
+  },
+  {
+    "atom": "through",
+    "name": "through",
+    "description": "through: a schema.org component word, fused from availableThrough, hasDriveThroughService, issuedThrough, ownedThrough, validThrough",
+    "path": "through"
+  },
+  {
     "atom": "throughput",
     "name": "throughput",
     "description": "Use when measuring the quantity-per-unit-time flowing through a process — items per hour, transactions per second, units completed per shift. The rate of productive output.",
     "path": "throughput"
+  },
+  {
+    "atom": "thumbnail",
+    "name": "thumbnail",
+    "description": "Thumbnail image for an image or video.",
+    "path": "thumbnail"
+  },
+  {
+    "atom": "ticker",
+    "name": "ticker",
+    "description": "ticker: a schema.org component word, fused from tickerSymbol",
+    "path": "ticker"
   },
   {
     "atom": "ticket",
@@ -2741,10 +11669,88 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "ticket"
   },
   {
+    "atom": "ticketed",
+    "name": "ticketed",
+    "description": "ticketed: a schema.org component word, fused from ticketedSeat",
+    "path": "ticketed"
+  },
+  {
+    "atom": "tie",
+    "name": "tie",
+    "description": "tie: a schema.org component word, fused from TieAction",
+    "path": "tie"
+  },
+  {
+    "atom": "tier",
+    "name": "tier",
+    "description": "The member program this tier is a part of.",
+    "path": "tier"
+  },
+  {
+    "atom": "tiers",
+    "name": "tiers",
+    "description": "tiers: a schema.org component word, fused from hasTiers",
+    "path": "tiers"
+  },
+  {
+    "atom": "tillage",
+    "name": "tillage",
+    "description": "Use when soil is mechanically opened to make a seedbed, incorporate residue/amendments, or disrupt weeds — primary vs secondary tillage, the no-till/reduced-till spectrum, broadfork aeration, and weed-flush methods (stale seedbed, occultation/tarping, solarization). The ground-opening operation; its intensity is the soil-disturbance dial fertility and structure pay for.",
+    "path": "tillage"
+  },
+  {
     "atom": "time",
     "name": "time",
     "description": "Use when tracking hours/minutes — labor hours, shift duration, production runtime per unit, throughput per time unit. A duration (number + time unit HUR/H87 code) or clock time. Pairs with rate (wage per hour, throughput per hour) in manufacturing/labor.",
     "path": "time"
+  },
+  {
+    "atom": "timestamp",
+    "name": "timestamp",
+    "description": "The instant the event occured.",
+    "path": "timestamp"
+  },
+  {
+    "atom": "timezone",
+    "name": "timezone",
+    "description": "timezone: a schema.org component word, fused from broadcastTimezone, scheduleTimezone",
+    "path": "timezone"
+  },
+  {
+    "atom": "tip",
+    "name": "tip",
+    "description": "tip: a schema.org component word, fused from HowToTip, TipAction, gameTip",
+    "path": "tip"
+  },
+  {
+    "atom": "tire",
+    "name": "tire",
+    "description": "tire: a schema.org component word, fused from TireShop",
+    "path": "tire"
+  },
+  {
+    "atom": "tissue",
+    "name": "tissue",
+    "description": "tissue: a schema.org component word, fused from tissueSample",
+    "path": "tissue"
+  },
+  {
+    "atom": "title",
+    "name": "title",
+    "description": "The title of the job.",
+    "path": "title"
+  },
+  {
+    "atom": "toc",
+    "name": "toc",
+    "description": "toc: a schema.org component word, fused from HyperToc, HyperTocEntry, tocContinuation, tocEntry",
+    "path": "toc"
+  },
+  {
+    "atom": "toilet",
+    "name": "toilet",
+    "description": "toilet: a schema.org component word, fused from PublicToilet",
+    "path": "toilet"
   },
   {
     "atom": "token",
@@ -2753,16 +11759,100 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "token"
   },
   {
+    "atom": "tongue",
+    "name": "tongue",
+    "description": "tongue: a schema.org component word, fused from tongueWeight",
+    "path": "tongue"
+  },
+  {
+    "atom": "tool",
+    "name": "tool",
+    "description": "A sub property of instrument. An object used (but not consumed) when performing instructions or a direction.",
+    "path": "tool"
+  },
+  {
+    "atom": "topic",
+    "name": "topic",
+    "description": "topic: a schema.org component word, fused from HealthTopicContent",
+    "path": "topic"
+  },
+  {
+    "atom": "torque",
+    "name": "torque",
+    "description": "The torque (turning force) of the vehicle's engine. Typical unit code(s): NU for newton metre (N m), F17 for pound-force per foot, or F48 for pound-force per inch * Note 1: You can link to information",
+    "path": "torque"
+  },
+  {
     "atom": "torus",
     "name": "torus",
     "description": "Use when reasoning about the two-directional collapse that closes into a donut — erpax falls into Payload (collections → canonical core) AND Payload falls into erpax (primitives are atoms; domains extract as @erpax/* plugins). The implosion (collapse) and the explosion (supernova) are one toroidal flow — the Rodin vortex. The shape of the whole.",
     "path": "torus"
   },
   {
+    "atom": "tot",
+    "name": "tot",
+    "description": "tot: a schema.org component word, fused from cvdNumTotBeds",
+    "path": "tot"
+  },
+  {
     "atom": "total",
     "name": "total",
     "description": "Use when summing a dimension — line total, invoice total, account total, cumulative amount. A computed or captured aggregate; often read-only (computed from detail lines or GL balance). Carries amount + currency.",
     "path": "total"
+  },
+  {
+    "atom": "touches",
+    "name": "touches",
+    "description": "touches: a schema.org component word, fused from geoTouches",
+    "path": "touches"
+  },
+  {
+    "atom": "tour",
+    "name": "tour",
+    "description": "tour: a schema.org component word, fused from tourBookingPage",
+    "path": "tour"
+  },
+  {
+    "atom": "tourist",
+    "name": "tourist",
+    "description": "tourist: a schema.org component word, fused from TouristAttraction, TouristDestination, TouristInformationCenter, TouristTrip, touristType",
+    "path": "tourist"
+  },
+  {
+    "atom": "toy",
+    "name": "toy",
+    "description": "toy: a schema.org component word, fused from ToyStore",
+    "path": "toy"
+  },
+  {
+    "atom": "track",
+    "name": "track",
+    "description": "A music recording (track)&#x2014;usually a single song. If an ItemList is given, the list should contain items of type MusicRecording.",
+    "path": "track"
+  },
+  {
+    "atom": "tracking",
+    "name": "tracking",
+    "description": "tracking: a schema.org component word, fused from trackingNumber, trackingUrl",
+    "path": "tracking"
+  },
+  {
+    "atom": "tracks",
+    "name": "tracks",
+    "description": "A music recording (track)&#x2014;usually a single song.",
+    "path": "tracks"
+  },
+  {
+    "atom": "trade",
+    "name": "trade",
+    "description": "trade: a schema.org component word, fused from TradeAction",
+    "path": "trade"
+  },
+  {
+    "atom": "trailer",
+    "name": "trailer",
+    "description": "The trailer of a movie or TV/radio series, season, episode, etc.",
+    "path": "trailer"
   },
   {
     "atom": "train",
@@ -2777,6 +11867,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "training"
   },
   {
+    "atom": "trans",
+    "name": "trans",
+    "description": "trans: a schema.org component word, fused from transFatContent",
+    "path": "trans"
+  },
+  {
     "atom": "transaction",
     "name": "transaction",
     "description": "Use for the universal exchange node — a balanced flow of value between parties, the commercial document AND its ledger entry as duals. One transactions collection holds every kind (invoice/order/bank/fx/intercompany) by dimension; the prefix-free coordinate the trades-vs-transactions question resolves to (it is a trade·transaction — both words).",
@@ -2786,7 +11882,31 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "transactions",
     "name": "related-party-transactions",
     "description": "Use when recording or disclosing transactions between a legal entity and its key management, directors, shareholders, controlled entities or joint ventures — arm's-length evidence, board-approval workflow, IAS-24/ASC-850 disclosure reference, linked audit evidence. The related-party disclosure register.",
-    "path": "legal/entities/related/party/transactions"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/legal/entities/related/party/transactions"
+  },
+  {
+    "atom": "transcript",
+    "name": "transcript",
+    "description": "If this MediaObject is an AudioObject or VideoObject, the transcript of that object.",
+    "path": "transcript"
+  },
+  {
+    "atom": "transfer",
+    "name": "transfer",
+    "description": "transfer: a schema.org component word, fused from MoneyTransfer, TransferAction",
+    "path": "transfer"
+  },
+  {
+    "atom": "transit",
+    "name": "transit",
+    "description": "transit: a schema.org component word, fused from transitTime, transitTimeLabel",
+    "path": "transit"
+  },
+  {
+    "atom": "translation",
+    "name": "translation",
+    "description": "Use when porting a translatable message into code — the model (type + defineTranslation) of one content-addressed, per-locale translation entry that the translations collector emits into every folder.",
+    "path": "translation"
   },
   {
     "atom": "translations",
@@ -2795,10 +11915,70 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "translations"
   },
   {
+    "atom": "translator",
+    "name": "translator",
+    "description": "Organization or person who adapts a creative work to different languages, regional differences and technical requirements of a target market, or that translates during some event.",
+    "path": "translator"
+  },
+  {
+    "atom": "transmission",
+    "name": "transmission",
+    "description": "transmission: a schema.org component word, fused from transmissionMethod, vehicleTransmission",
+    "path": "transmission"
+  },
+  {
+    "atom": "transplant",
+    "name": "transplant",
+    "description": "Use when setting greenhouse-raised seedlings into the field — transplanting (vs direct seeding): plug or bare-root starts set at spacing, after hardening off. Transplanting buys earliness, uniformity, and a weed jump; direct seeding saves labor but ~10–20% may not establish. A method of planting, downstream of propagation.",
+    "path": "transplant"
+  },
+  {
+    "atom": "transport",
+    "name": "transport",
+    "description": "transport: a schema.org component word, fused from publicTransportClosuresInfo",
+    "path": "transport"
+  },
+  {
+    "atom": "transposes",
+    "name": "transposes",
+    "description": "transposes: a schema.org component word, fused from legislationTransposes",
+    "path": "transposes"
+  },
+  {
+    "atom": "travel",
+    "name": "travel",
+    "description": "travel: a schema.org component word, fused from TravelAction, TravelAgency, travelBans",
+    "path": "travel"
+  },
+  {
+    "atom": "treatment",
+    "name": "treatment",
+    "description": "treatment: a schema.org component word, fused from PsychologicalTreatment, TreatmentIndication, possibleTreatment",
+    "path": "treatment"
+  },
+  {
+    "atom": "trellis",
+    "name": "trellis",
+    "description": "Use when a crop is supported vertically — trellising/staking holds vining or heavy crops (tomatoes, cucumbers, pole beans, peas) off the ground for airflow, quality, and harvest access; methods scale from stake-and-weave (basket weave) for determinates to lower-and-lean string for indeterminates. Vertical support trades labor/materials for yield, quality, and disease reduction.",
+    "path": "trellis"
+  },
+  {
     "atom": "trend",
     "name": "trend",
     "description": "Use when tracking metric evolution, forecasting, or detecting patterns over time — moving averages, velocity, burndown, growth curves. The temporal analysis dimension.",
     "path": "trend"
+  },
+  {
+    "atom": "trial",
+    "name": "trial",
+    "description": "trial: a schema.org component word, fused from MedicalTrial, MedicalTrialDesign, trialDesign",
+    "path": "trial"
+  },
+  {
+    "atom": "tributary",
+    "name": "tributary",
+    "description": "The anatomical or organ system that the vein flows into; a larger structure that the vein connects to.",
+    "path": "tributary"
   },
   {
     "atom": "trinity",
@@ -2807,10 +11987,40 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "trinity"
   },
   {
+    "atom": "trip",
+    "name": "trip",
+    "description": "A trip or journey. An itinerary of visits to one or more places.",
+    "path": "trip"
+  },
+  {
     "atom": "trust",
     "name": "trust",
     "description": "Use for client trust accounting (IOLTA) — client funds held separately from firm funds, never commingled. Strip the prefix and a trust account is a segregated sub-account on the strict double-entry ledger, a balance invariant (the client ledger never drawn below held funds). No new matter — a labelled account on accounting.",
     "path": "trust"
+  },
+  {
+    "atom": "truth",
+    "name": "truth",
+    "description": "Use when enforcing that @standard / @compliance banners are true rather than decoration — the computed required-witness lint that fails a cited concept with no field and an enforcement claim with no guard.",
+    "path": "standard/truth"
+  },
+  {
+    "atom": "tunnel",
+    "name": "tunnel",
+    "description": "Use when a structure or cover extends the growing season — the family from floating row cover → low tunnel → caterpillar tunnel → high tunnel/hoophouse → greenhouse, scaled by size, that buffers frost and adds weeks at each end of the season. Season extension as built capacity; the structure that widens the climate window land×season otherwise caps.",
+    "path": "tunnel"
+  },
+  {
+    "atom": "tv",
+    "name": "tv",
+    "description": "tv: a schema.org component word, fused from TVClip, TVEpisode, TVSeason, TVSeries, partOfTVSeries",
+    "path": "tv"
+  },
+  {
+    "atom": "tweets",
+    "name": "tweets",
+    "description": "tweets: a schema.org component word, fused from UserTweets",
+    "path": "tweets"
   },
   {
     "atom": "type",
@@ -2825,10 +12035,94 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "types"
   },
   {
+    "atom": "typical",
+    "name": "typical",
+    "description": "typical: a schema.org component word, fused from typicalAgeRange, typicalCreditsPerTerm, typicalTest",
+    "path": "typical"
+  },
+  {
+    "atom": "uk",
+    "name": "uk",
+    "description": "uk: a schema.org component word, fused from UKNonprofitType",
+    "path": "uk"
+  },
+  {
+    "atom": "un",
+    "name": "un",
+    "description": "un: a schema.org component word, fused from UnRegisterAction",
+    "path": "un"
+  },
+  {
+    "atom": "under",
+    "name": "under",
+    "description": "under: a schema.org component word, fused from underName",
+    "path": "under"
+  },
+  {
+    "atom": "union",
+    "name": "union",
+    "description": "union: a schema.org component word, fused from BankOrCreditUnion, WorkersUnion",
+    "path": "union"
+  },
+  {
+    "atom": "unit",
+    "name": "unit",
+    "description": "unit: a schema.org component word, fused from UnitPriceSpecification, costPerUnit, doseUnit, drugUnit, employmentUnit, lodgingUnitDescription",
+    "path": "unit"
+  },
+  {
+    "atom": "units",
+    "name": "units",
+    "description": "units: a schema.org component word, fused from numberOfAccommodationUnits, numberOfAvailableAccommodationUnits",
+    "path": "units"
+  },
+  {
     "atom": "unity",
     "name": "unity",
     "description": "Use when reasoning about the closing position of the horo state ring — digit 9, \"the ring closes\", the settle/merge step where a flow completes and re-opens one octave up (settled, sealed, closed, reconciled). Closes the descent/return arc; nested under horo.",
-    "path": "horo/unity"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/horo/unity"
+  },
+  {
+    "atom": "university",
+    "name": "university",
+    "description": "university: a schema.org component word, fused from CollegeOrUniversity",
+    "path": "university"
+  },
+  {
+    "atom": "unlabelled",
+    "name": "unlabelled",
+    "description": "unlabelled: a schema.org component word, fused from isUnlabelledFallback",
+    "path": "unlabelled"
+  },
+  {
+    "atom": "unnamed",
+    "name": "unnamed",
+    "description": "unnamed: a schema.org component word, fused from unnamedSourcesPolicy",
+    "path": "unnamed"
+  },
+  {
+    "atom": "unsaturated",
+    "name": "unsaturated",
+    "description": "unsaturated: a schema.org component word, fused from unsaturatedFatContent",
+    "path": "unsaturated"
+  },
+  {
+    "atom": "until",
+    "name": "until",
+    "description": "until: a schema.org component word, fused from expectedArrivalUntil, priceValidUntil, validUntil",
+    "path": "until"
+  },
+  {
+    "atom": "update",
+    "name": "update",
+    "description": "update: a schema.org component word, fused from UpdateAction, liveBlogUpdate",
+    "path": "update"
+  },
+  {
+    "atom": "updates",
+    "name": "updates",
+    "description": "updates: a schema.org component word, fused from newsUpdatesAndGuidelines",
+    "path": "updates"
   },
   {
     "atom": "upload",
@@ -2837,16 +12131,70 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "upload"
   },
   {
+    "atom": "upon",
+    "name": "upon",
+    "description": "upon: a schema.org component word, fused from salaryUponCompletion",
+    "path": "upon"
+  },
+  {
     "atom": "upsell",
     "name": "upsell",
     "description": "Use when recommending higher-value or complementary products — opportunity detection, recommendation engine, success metrics.",
     "path": "upsell"
   },
   {
+    "atom": "upvote",
+    "name": "upvote",
+    "description": "upvote: a schema.org component word, fused from upvoteCount",
+    "path": "upvote"
+  },
+  {
+    "atom": "url",
+    "name": "url",
+    "description": "Data type: URL.",
+    "path": "url"
+  },
+  {
+    "atom": "us",
+    "name": "us",
+    "description": "us: a schema.org component word, fused from USNonprofitType, usNPI",
+    "path": "us"
+  },
+  {
+    "atom": "usage",
+    "name": "usage",
+    "description": "usage: a schema.org component word, fused from CarUsageType, permittedUsage, usageInfo, vehicleSpecialUsage",
+    "path": "usage"
+  },
+  {
+    "atom": "use",
+    "name": "use",
+    "description": "use: a schema.org component word, fused from UseAction, cvdNumVentUse, educationalUse, potentialUse",
+    "path": "use"
+  },
+  {
+    "atom": "used",
+    "name": "used",
+    "description": "used: a schema.org component word, fused from programMembershipUsed, usedToDiagnose",
+    "path": "used"
+  },
+  {
+    "atom": "user",
+    "name": "user",
+    "description": "user: a schema.org component word, fused from UserBlocks, UserCheckins, UserComments, UserDownloads, UserInteraction, UserLikes",
+    "path": "user"
+  },
+  {
     "atom": "users",
     "name": "users",
     "description": "Use when managing authenticated actors — employees, agents, customers, authors — their cross-tenant roles, held competencies, per-user locale/display config, email login, and access credentials. The typeless universal actor and identity root.",
     "path": "users"
+  },
+  {
+    "atom": "uses",
+    "name": "uses",
+    "description": "uses: a schema.org component word, fused from usesDevice, usesHealthPlanIdStandard",
+    "path": "uses"
   },
   {
     "atom": "utilities",
@@ -2861,16 +12209,52 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "utility"
   },
   {
+    "atom": "utterances",
+    "name": "utterances",
+    "description": "Text of an utterances (spoken words, lyrics etc.) that occurs at a certain section of a media object, represented as a HyperTocEntry.",
+    "path": "utterances"
+  },
+  {
     "atom": "uuid",
     "name": "uuid",
     "description": "Use when choosing which RFC 9562 UUID version fits a case — v8 structured content-uuid (identity+capability+schema+digest fused) as the erpax default, v7 time-ordered for index-local speed, v4 random for unguessable secrets. Harmonise the features and everything collapses INTO the uuid itself — the 128-bit singularity.",
     "path": "uuid"
   },
   {
+    "atom": "vacation",
+    "name": "vacation",
+    "description": "vacation: a schema.org component word, fused from VacationRental",
+    "path": "vacation"
+  },
+  {
+    "atom": "valid",
+    "name": "valid",
+    "description": "The duration of validity of a permit or similar thing.",
+    "path": "valid"
+  },
+  {
     "atom": "value",
     "name": "value",
     "description": "Use when a field carries a numeric or quantified substance — quantity value (paired with unit), exchange rate value, percentage, index. Generic numeric container; pairs with unit (measure), currency, or rate context to form money/quantity/rate.",
     "path": "value"
+  },
+  {
+    "atom": "values",
+    "name": "values",
+    "description": "values: a schema.org component word, fused from multipleValues",
+    "path": "values"
+  },
+  {
+    "atom": "variable",
+    "name": "variable",
+    "description": "variable: a schema.org component word, fused from StatisticalVariable, additionalVariable, variableMeasured",
+    "path": "variable"
+  },
+  {
+    "atom": "variables",
+    "name": "variables",
+    "description": "variables: a schema.org component word, fused from variablesMeasured",
+    "path": "variables"
   },
   {
     "atom": "variance",
@@ -2882,7 +12266,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "variances",
     "name": "cost-variances",
     "description": "Use when closing a work order and reconciling standard vs actual manufacturing costs — material price/quantity, labour rate/efficiency, and overhead spending/volume variances per IAS-2 §21. The variance-decomposition record generated on work-order close.",
-    "path": "items/bills/of/materials/work/orders/cost/variances"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/items/bills/of/materials/work/orders/cost/variances"
   },
   {
     "atom": "variant",
@@ -2891,10 +12275,58 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "variant"
   },
   {
+    "atom": "varies",
+    "name": "varies",
+    "description": "Indicates the property or properties by which the variants in a ProductGroup vary, e.g. their size, color etc. Schema.org properties can be referenced by their short name e.g. \"color\"; terms defined",
+    "path": "varies"
+  },
+  {
+    "atom": "vat",
+    "name": "vat",
+    "description": "vat: a schema.org component word, fused from vatID",
+    "path": "vat"
+  },
+  {
+    "atom": "vehicle",
+    "name": "vehicle",
+    "description": "A vehicle is a device that is designed or used to transport people or cargo over land, water, air, or through space.",
+    "path": "vehicle"
+  },
+  {
+    "atom": "vein",
+    "name": "vein",
+    "description": "A type of blood vessel that specifically carries blood to the heart.",
+    "path": "vein"
+  },
+  {
+    "atom": "vendor",
+    "name": "vendor",
+    "description": "'vendor' is an earlier term for 'seller'.",
+    "path": "vendor"
+  },
+  {
     "atom": "vendors",
     "name": "vendors",
     "description": "Use when managing purchase-side party master data — vendor identity, VAT/tax classification, IBAN/BIC bank details, payment terms, AP ledger defaults, and IRS 1099 eligibility. The supplier/vendor master and accounts-payable party registry.",
     "path": "vendors"
+  },
+  {
+    "atom": "vent",
+    "name": "vent",
+    "description": "vent: a schema.org component word, fused from cvdNumC19MechVentPats, cvdNumC19OFMechVentPats, cvdNumVent, cvdNumVentUse",
+    "path": "vent"
+  },
+  {
+    "atom": "venue",
+    "name": "venue",
+    "description": "venue: a schema.org component word, fused from EventVenue, MusicVenue",
+    "path": "venue"
+  },
+  {
+    "atom": "verification",
+    "name": "verification",
+    "description": "verification: a schema.org component word, fused from verificationFactCheckingPolicy",
+    "path": "verification"
   },
   {
     "atom": "version",
@@ -2909,10 +12341,82 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "versions"
   },
   {
+    "atom": "vessel",
+    "name": "vessel",
+    "description": "A component of the human body circulatory system comprised of an intricate network of hollow tubes that transport blood throughout the entire body.",
+    "path": "vessel"
+  },
+  {
+    "atom": "veterinary",
+    "name": "veterinary",
+    "description": "veterinary: a schema.org component word, fused from VeterinaryCare",
+    "path": "veterinary"
+  },
+  {
+    "atom": "vibration",
+    "name": "vibration",
+    "description": "Use when reasoning about touch/haptics from sequence position in erpax — the third A432 render channel that completes colour (cmyk) + sound (notes) into the sight·sound·touch sensory trinity. A horo position decodes to a haptic pulse (a sub-audible A432 sub-harmonic); the body's own measurable vibration (physiological tremor, ballistocardiographic micro-motion) is the analog twin. Nested under rodin.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/rodin/vibration"
+  },
+  {
+    "atom": "video",
+    "name": "video",
+    "description": "An embedded video object.",
+    "path": "video"
+  },
+  {
+    "atom": "view",
+    "name": "view",
+    "description": "view: a schema.org component word, fused from ViewAction",
+    "path": "view"
+  },
+  {
+    "atom": "virtual",
+    "name": "virtual",
+    "description": "virtual: a schema.org component word, fused from VirtualLocation, maximumVirtualAttendeeCapacity",
+    "path": "virtual"
+  },
+  {
+    "atom": "visits",
+    "name": "visits",
+    "description": "visits: a schema.org component word, fused from UserPageVisits",
+    "path": "visits"
+  },
+  {
+    "atom": "visual",
+    "name": "visual",
+    "description": "visual: a schema.org component word, fused from VisualArtsEvent, VisualArtwork",
+    "path": "visual"
+  },
+  {
+    "atom": "vital",
+    "name": "vital",
+    "description": "vital: a schema.org component word, fused from VitalSign",
+    "path": "vital"
+  },
+  {
     "atom": "vitepress",
     "name": "vitepress",
     "description": "Use when reasoning about the form coil — VitePress renders each atom's SKILL.md as its spoken form (docs, frontmatter, the wiki-link graph) and is the speech-gate twin of the Payload matter, bound by content-uuid.",
     "path": "vitepress"
+  },
+  {
+    "atom": "volcano",
+    "name": "volcano",
+    "description": "A volcano, like Fujisan.",
+    "path": "volcano"
+  },
+  {
+    "atom": "volume",
+    "name": "volume",
+    "description": "volume: a schema.org component word, fused from PublicationVolume, cargoVolume, eligibleTransactionVolume, volumeNumber",
+    "path": "volume"
+  },
+  {
+    "atom": "vote",
+    "name": "vote",
+    "description": "vote: a schema.org component word, fused from VoteAction",
+    "path": "vote"
   },
   {
     "atom": "voting",
@@ -2921,16 +12425,76 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "voting"
   },
   {
+    "atom": "want",
+    "name": "want",
+    "description": "want: a schema.org component word, fused from WantAction",
+    "path": "want"
+  },
+  {
+    "atom": "war",
+    "name": "war",
+    "description": "Use when the society turns warfare tactics to peace — reconnaissance, the OODA loop, coordinated formations, and defense-in-depth applied to building harmony and driving entropy to zero, never to destruction.",
+    "path": "war"
+  },
+  {
+    "atom": "warning",
+    "name": "warning",
+    "description": "Any FDA or other warnings about the drug (text or URL).",
+    "path": "warning"
+  },
+  {
     "atom": "warranty",
     "name": "warranty",
     "description": "Use when a party makes a binding representation or guarantee about a fact/condition — express (stated) vs. implied (statutory), scope, duration, remedy (repair/replace/indemnify), breach consequences.",
     "path": "warranty"
   },
   {
+    "atom": "wash",
+    "name": "wash",
+    "description": "wash: a schema.org component word, fused from AutoWash",
+    "path": "wash"
+  },
+  {
+    "atom": "watch",
+    "name": "watch",
+    "description": "watch: a schema.org component word, fused from WatchAction",
+    "path": "watch"
+  },
+  {
+    "atom": "water",
+    "name": "water",
+    "description": "water: a schema.org component word, fused from BodyOfWater, LakeBodyOfWater, OceanBodyOfWater, RiverBodyOfWater, SeaBodyOfWater",
+    "path": "water"
+  },
+  {
+    "atom": "waterfall",
+    "name": "waterfall",
+    "description": "A waterfall, like Niagara.",
+    "path": "waterfall"
+  },
+  {
+    "atom": "wear",
+    "name": "wear",
+    "description": "wear: a schema.org component word, fused from WearAction",
+    "path": "wear"
+  },
+  {
+    "atom": "wearable",
+    "name": "wearable",
+    "description": "wearable: a schema.org component word, fused from WearableMeasurementTypeEnumeration, WearableSizeGroupEnumeration, WearableSizeSystemEnumeration",
+    "path": "wearable"
+  },
+  {
     "atom": "weave",
     "name": "weave",
     "description": "Use when reasoning about the third position of the horo state ring — digit 4, \"four hands meeting\", the interlinking step where a flow is being worked/woven (in-production, in-progress, related). Ascent arc; nested under horo.",
-    "path": "horo/weave"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/horo/weave"
+  },
+  {
+    "atom": "web",
+    "name": "web",
+    "description": "web: a schema.org component word, fused from MedicalWebPage, WebAPI, WebApplication, WebContent, WebPage, WebPageElement",
+    "path": "web"
   },
   {
     "atom": "website",
@@ -2939,10 +12503,34 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "website"
   },
   {
+    "atom": "week",
+    "name": "week",
+    "description": "week: a schema.org component word, fused from DayOfWeek, byMonthWeek, dayOfWeek",
+    "path": "week"
+  },
+  {
+    "atom": "weight",
+    "name": "weight",
+    "description": "The weight of the product or person.",
+    "path": "weight"
+  },
+  {
     "atom": "wellbeing",
     "name": "wellbeing",
     "description": "Use when measuring or reasoning about quality of life — качество на живот — the emergent outcome of a society, a composite over sociological dimensions (material · health · social · psychological · environmental). Like a market it is capped by its weakest dimension, but unlike a pure product it is partly compensatory with non-compensatory capability floors below which no surplus elsewhere restores the whole. The dependent variable erpax exists to raise; read capabilities, not income.",
     "path": "wellbeing"
+  },
+  {
+    "atom": "wheel",
+    "name": "wheel",
+    "description": "wheel: a schema.org component word, fused from DriveWheelConfigurationValue, driveWheelConfiguration",
+    "path": "wheel"
+  },
+  {
+    "atom": "wheelbase",
+    "name": "wheelbase",
+    "description": "The distance between the centers of the front and rear wheels. Typical unit code(s): CMT for centimeters, MTR for meters, INH for inches, FOT for foot/feet.",
+    "path": "wheelbase"
   },
   {
     "atom": "whole",
@@ -2951,10 +12539,76 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "whole"
   },
   {
+    "atom": "wholesale",
+    "name": "wholesale",
+    "description": "wholesale: a schema.org component word, fused from WholesaleStore",
+    "path": "wholesale"
+  },
+  {
+    "atom": "width",
+    "name": "width",
+    "description": "The width of the item.",
+    "path": "width"
+  },
+  {
+    "atom": "win",
+    "name": "win",
+    "description": "win: a schema.org component word, fused from WinAction",
+    "path": "win"
+  },
+  {
+    "atom": "winery",
+    "name": "winery",
+    "description": "A winery.",
+    "path": "winery"
+  },
+  {
+    "atom": "winner",
+    "name": "winner",
+    "description": "A sub property of participant. The winner of the action.",
+    "path": "winner"
+  },
+  {
+    "atom": "withdrawal",
+    "name": "withdrawal",
+    "description": "Use when a treated animal's produce cannot yet be sold — the withdrawal period: the mandatory days after a drug/vaccine/treatment before milk/meat/eggs are residue-safe to market. A food-safety embargo that gates saleability (the accountable cannot-sell-yet state); the livestock twin of a quarantine or lock-up period.",
+    "path": "withdrawal"
+  },
+  {
+    "atom": "within",
+    "name": "within",
+    "description": "within: a schema.org component word, fused from geoWithin",
+    "path": "within"
+  },
+  {
+    "atom": "word",
+    "name": "word",
+    "description": "word: a schema.org component word, fused from wordCount",
+    "path": "word"
+  },
+  {
+    "atom": "work",
+    "name": "work",
+    "description": "work: a schema.org component word, fused from CreativeWork, CreativeWorkSeason, CreativeWorkSeries, WorkBasedProgram, creativeWorkStatus, eligibilityToWorkRequirement",
+    "path": "work"
+  },
+  {
+    "atom": "workers",
+    "name": "workers",
+    "description": "workers: a schema.org component word, fused from WorkersUnion",
+    "path": "workers"
+  },
+  {
     "atom": "workflow",
     "name": "workflow",
     "description": "Use when spawning, advancing, or escalating a workflow instance bound to a document — evaluating trigger conditions against a definition, routing step decisions (approve/reject/delegate/return), running service-task handlers, or firing SLA escalation on overdue steps; SOX-compliant approval chain execution. The BPMN-2.0 workflow orchestration service.",
     "path": "workflow"
+  },
+  {
+    "atom": "workload",
+    "name": "workload",
+    "description": "Quantitative measure of the physiologic output of the exercise; also referred to as energy expenditure.",
+    "path": "workload"
   },
   {
     "atom": "workorders",
@@ -2969,6 +12623,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "workphases"
   },
   {
+    "atom": "works",
+    "name": "works",
+    "description": "Organizations that the person works for.",
+    "path": "works"
+  },
+  {
     "atom": "workshifts",
     "name": "workshifts",
     "description": "Use when modelling the per-actor-day labour aggregate — the efficiency + wage authority a work order inherits from; presence vs produced minutes, the ⌊produced·100/presence⌋ efficiency, the max(time-pay, order-rollup) wage, on the horo lifecycle ring. Grounded in 20-yr etrima production (work_shifts, 376k).",
@@ -2978,12 +12638,78 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "workspace",
     "name": "google-workspace",
     "description": "Use when fusing Google Workspace (Gmail, Calendar, Drive, Docs, Sheets, People, Admin Directory) into erpax to fill the office/productivity gap — a computed API catalogue plus the content-uuid fusion bridge that merges a fetched resource into the mesh idempotently (re-fetch dedups). Credentials live in the per-tenant config sandbox, never in the registry.",
-    "path": "google/workspace"
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/google/workspace"
+  },
+  {
+    "atom": "worship",
+    "name": "worship",
+    "description": "worship: a schema.org component word, fused from PlaceOfWorship",
+    "path": "worship"
+  },
+  {
+    "atom": "worst",
+    "name": "worst",
+    "description": "worst: a schema.org component word, fused from worstRating",
+    "path": "worst"
+  },
+  {
+    "atom": "worth",
+    "name": "worth",
+    "description": "worth: a schema.org component word, fused from netWorth",
+    "path": "worth"
+  },
+  {
+    "atom": "wp",
+    "name": "wp",
+    "description": "wp: a schema.org component word, fused from WPAdBlock, WPFooter, WPHeader, WPSideBar",
+    "path": "wp"
+  },
+  {
+    "atom": "write",
+    "name": "write",
+    "description": "write: a schema.org component word, fused from WriteAction",
+    "path": "write"
+  },
+  {
+    "atom": "xpath",
+    "name": "xpath",
+    "description": "An XPath, e.g. of a SpeakableSpecification or WebPageElement. In the latter case, multiple matches within a page can constitute a single conceptual \"Web page element\".",
+    "path": "xpath"
+  },
+  {
+    "atom": "year",
+    "name": "year",
+    "description": "year: a schema.org component word, fused from copyrightYear, termsPerYear, yearBuilt",
+    "path": "year"
+  },
+  {
+    "atom": "yearly",
+    "name": "yearly",
+    "description": "yearly: a schema.org component word, fused from yearlyRevenue",
+    "path": "yearly"
+  },
+  {
+    "atom": "years",
+    "name": "years",
+    "description": "years: a schema.org component word, fused from yearsInOperation",
+    "path": "years"
+  },
+  {
+    "atom": "yield",
+    "name": "yield",
+    "description": "Use when a bound resource is converted to output at a realized rate — crop yield (output per unit land: lbs/acre, kg/decare) and its inverse, the land a demanded quantity requires. Yield is the bidirectional conversion factor between a resource and its product (area × yield = output; output ÷ yield = area); inverted through unit weight it gives row-length per saleable unit — the number that turns a demand plan into a planting plan.",
+    "path": "yield"
   },
   {
     "atom": "zeropoint",
     "name": "zeropoint",
     "description": "Use when reasoning about the criterion that decides what is canonical — zero entropy wins: of all forms of a thing, the LOWEST-entropy one (most ordered, DRY, integer, content-addressed) is the truth. The source erpax descends from (ceccec/zeropoint-node, the a432/vortex prior art): irrationality collapses to integer resonance (rodin digital-root, the horo ring), sprawl collapses to the uuid singularity, duplicates merge to one. The 0 everything radiates from and returns to.",
     "path": "zeropoint"
+  },
+  {
+    "atom": "zoo",
+    "name": "zoo",
+    "description": "A zoo.",
+    "path": "zoo"
   }
 ]

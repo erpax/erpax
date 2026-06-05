@@ -28,8 +28,9 @@
  * @audit aura gap parity — a non-atom word here is a mint-queue word there
  * @see ../translation (model) · ../message (messaging-uuid) · ../aura (the gap)
  */
-import { readdirSync, readFileSync, writeFileSync, existsSync, lstatSync } from 'node:fs'
+import { readdirSync, readFileSync, writeFileSync, existsSync } from 'node:fs'
 import { join, dirname, basename } from 'node:path'
+import { isRealDir } from '@/aura'
 import { defineTranslation, type Translation } from '@/translation'
 import { isAtomWord, splitWords } from '@/message'
 
@@ -43,14 +44,6 @@ const LIMIT = (() => {
 })()
 
 // ── the shared resolver: walk SKILL.md, skip symlinks (the src/skills → . loop) ──
-const isRealDir = (p: string): boolean => {
-  try {
-    const s = lstatSync(p)
-    return s.isDirectory() && !s.isSymbolicLink()
-  } catch {
-    return false
-  }
-}
 function walk(dir: string, out: string[] = []): string[] {
   for (const name of readdirSync(dir).sort()) {
     if (name === 'node_modules' || name.startsWith('.')) continue
