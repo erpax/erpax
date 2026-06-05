@@ -1,4 +1,10 @@
 #!/usr/bin/env bash
+# Deterministic byte-order collation (LC_ALL=C): the generated index is byte-identical
+# on EVERY platform, so the CI --verify-index is a real zero-entropy proof — not a flaky
+# cross-platform diff (macOS BSD sort ≠ Linux GNU sort under a locale). Determinism =
+# content-addressable = tamper-cost (the one law); CI is wired in like any other config.
+export LC_ALL=C
+
 # Standards citation index generator.
 #
 # Walks src/ and tests/ for every JSDoc tag the STANDARDS.md grammar
