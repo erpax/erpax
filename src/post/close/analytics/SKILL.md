@@ -1,3 +1,8 @@
+---
+name: analytics
+description: Use when generating post-close financial analytics — budget-vs-actual and period-over-period variance with waterfall decomposition, the sixteen liquidity/profitability/solvency/efficiency ratios, IFRS-8 business and geographic segment reporting, and executive KPI dashboards, once audit and consolidation are approved.
+---
+
 # Phase B7: Post-Close Analytics
 
 **Status:** Implementation Complete  

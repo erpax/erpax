@@ -5843,6 +5843,7 @@ src/self/reference/erpax.profile.ts:12: * @audit ISO 19011:2018 §6.4.6 (platfor
 src/self/similar/index.ts:16: * @audit every quantity computed on (ℤ/9ℤ) via @/horo + @/rodin, never asserted
 src/self/sufficient/index.ts:27: * @audit Conservation Law 53 (self-referential closure — internal fallback can replay)
 src/self/sufficient/index.ts:28: * @audit Conservation Law 54 (universal identity element — every case already defined)
+src/seo/index.ts:12: * @audit every field derived from the atom; seoCoverage reads the live tree, the gap is computed not assumed
 src/shared/AddressBlock.tsx:19: * @audit ISO-19011:2018 audit-trail consistent-rendering
 src/shared/AuditedTimestamp.tsx:17: * @audit ISO-19011:2018 audit-trail consistent-timestamps
 src/shared/Money.tsx:19: * @audit ISO-19011:2018 audit-trail consistent-formatting
