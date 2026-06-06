@@ -20,8 +20,7 @@
  */
 import { readFileSync, readdirSync, statSync, type Stats } from 'node:fs'
 import { join, basename, dirname } from 'node:path'
-
-const norm = (s: string): string => String(s).toLowerCase().replace(/[-_]/g, '')
+import { norm } from '@/corpus/index.mts'
 
 type WalkPredicate = (entry: string, path: string) => boolean
 

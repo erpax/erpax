@@ -18,9 +18,7 @@
  * @see ../duality -- ../step -- ../rodin -- ./SKILL.md
  */
 import { foldDualities } from '@/duality'
-
-/** Base-10 digital root (the rodin reduction): 108 → 1+0+8 → 9. */
-const dr = (n: number): number => (n === 0 ? 0 : 1 + ((Math.abs(n) - 1) % 9))
+import { digitalRoot } from '@/horo'
 
 /** The round: 108 steps (beads). */
 export const BEADS = 108
@@ -30,13 +28,13 @@ export function math108(): { product123: number; as9x12: number; as2sq3cube: num
   const product123 = 1 ** 1 * 2 ** 2 * 3 ** 3 // 1·4·27
   const as9x12 = 9 * 12
   const as2sq3cube = 2 ** 2 * 3 ** 3
-  const digitalRoot = dr(BEADS)
+  const digitalRootBeads = digitalRoot(BEADS)
   return {
     product123,
     as9x12,
     as2sq3cube,
-    digitalRoot,
-    holds: product123 === BEADS && as9x12 === BEADS && as2sq3cube === BEADS && digitalRoot === 9,
+    digitalRoot: digitalRootBeads,
+    holds: product123 === BEADS && as9x12 === BEADS && as2sq3cube === BEADS && digitalRootBeads === 9,
   }
 }
 

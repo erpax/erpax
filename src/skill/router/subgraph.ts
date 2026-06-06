@@ -19,6 +19,7 @@
  * @standard ISO/IEC 25010 §5.5 testability (pure, deterministic)
  */
 import { resolveSkill, type ParsedRequest, type ResolveResult, type SkillNode } from '@/skill/router/resolve'
+import { norm } from '@/corpus/index.mts'
 
 export interface Subgraph {
   /** the seed + its related subgraph, BFS order — the skills the message loads. */
@@ -28,9 +29,6 @@ export interface Subgraph {
   /** loaded / (loaded + gaps): the skill-completeness ratio (1 = every neighbour present). */
   readonly coverage: number
 }
-
-/** Canonical key — mirrors the gates' norm (lowercase + strip -/_). */
-const norm = (s: string): string => s.toLowerCase().replace(/[-_]/g, '')
 
 /** Leaf word of a ref, whether it is a route (`/a/b/SKILL`) or a bare name (`flow`). */
 const leafOf = (ref: string): string => {

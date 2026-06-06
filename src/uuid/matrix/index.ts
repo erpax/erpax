@@ -10,6 +10,7 @@
  * @see ./matrix.generated.ts (the data) · src/services/uuid-matrix/collide.mjs (the collider)
  */
 import { createHash } from 'node:crypto'
+import { norm } from '@/corpus/index.mts'
 import {
   UUID_MATRIX_NODES,
   UUID_MATRIX_EDGES,
@@ -46,9 +47,6 @@ export const toUuid = (buf: Buffer): string => {
 const ubytes = (u: string): Buffer => Buffer.from(u.replace(/-/g, ''), 'hex')
 /** Collision: two uuids → a third (concat their 16 bytes, content-hash). */
 export const merge = (a: string, b: string): string => toUuid(Buffer.concat([ubytes(a), ubytes(b)]))
-
-/** Mirror the aura/collider resolver so callers can pass any link spelling. */
-const norm = (s: string): string => s.toLowerCase().replace(/[-_]/g, '')
 
 const byAtom = new Map<string, number>()
 UUID_MATRIX_NODES.forEach((n, i) => byAtom.set(n.atom, i))

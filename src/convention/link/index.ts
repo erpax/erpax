@@ -30,6 +30,8 @@ import { join } from 'node:path'
 // so we name the index explicitly (the repo-proven specifier — cf. scripts/ingest-corpus-to-search.ts).
 // This is still the atom's INDEX (its public entry), not a deep internal file.
 import { walk, wikiMap, norm, SKILLS_DIR } from '@/corpus/index.mts'
+// stripCode has ONE home (the DRY law): the aura speech-gate. Compose it, don't re-implement.
+import { stripCode } from '@/aura'
 
 /**
  * The canonical wikilink form, mirroring the aura gate's `resolveWiki` regex exactly:
@@ -38,9 +40,6 @@ import { walk, wikiMap, norm, SKILLS_DIR } from '@/corpus/index.mts'
  * that resolves here resolves in the docs build, and one dead here is dead there.
  */
 const WIKILINK = /\[\[([A-Za-z][A-Za-z0-9/-]*)(?:\|[^\]]*)?\]\]/g
-
-/** Drop fenced + inline code spans so a `[[link]]` shown as code is not counted as a wire. */
-const stripCode = (t: string): string => t.replace(/```[\s\S]*?```/g, ' ').replace(/`[^`]*`/g, ' ')
 
 /** The normalized-leaf key a `[[a/b/c]]` link resolves under — the wikiMap's key. */
 const leafKey = (raw: string): string => norm(raw.split('/').pop() as string)

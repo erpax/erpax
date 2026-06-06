@@ -13,6 +13,7 @@ import { createHash } from 'node:crypto'
 import { readFileSync, readdirSync, existsSync, statSync, type Dirent } from 'node:fs'
 import { join, basename, dirname } from 'node:path'
 import type { InvariantResult, InvariantContext } from '@/architecture/invariant/types'
+import { norm } from '@/corpus/index.mts'
 
 import { FEATURE_REGISTRY, TIERS, featuresForTier, type Tier } from '@/feature/registry'
 import { BUSINESS_CHAINS } from '@/business/chain/registry'
@@ -23,6 +24,7 @@ import { agentRegistry } from '@/agent/bootstrap'
 import { supportedLocales } from '@/i18n'
 import { verifyContentUuid, TAMPER_PROOF_COLLECTIONS_REGISTRY, UUID_REF_REGISTRY, findDanglingRefs } from '@/integrity'
 import { UUID_MATRIX_NODES, UUID_MATRIX_EDGES } from '@/uuid/matrix'
+import { digitalRoot } from '@/horo'
 import { collectGenome, computeGenomeUuid } from '@/cloning'
 import { checkErpaxObservesItself } from '@/self/reference'
 import { listFaces, checkSeoVortexCoupling } from '@/website/seo-vortex'
@@ -3101,7 +3103,6 @@ export function checkOneBindingPerType(ctx: InvariantContext): InvariantResult {
  */
 export function checkHarmonicHelixClosure(_ctx: InvariantContext): InvariantResult {
   const HELIX = new Set([1, 2, 4, 8, 7, 5])
-  const digitalRoot = (n: number): number => (n <= 0 ? 0 : ((n - 1) % 9) + 1)
   const offenders: string[] = []
   for (const e of UUID_MATRIX_EDGES) {
     const a = UUID_MATRIX_NODES[e.f]
@@ -3138,7 +3139,6 @@ export function checkAtomsLockedToUuid(ctx: InvariantContext): InvariantResult {
   const repoRoot = ctx.repoRoot ?? REPO_ROOT_FALLBACK()
   const root = join(repoRoot, 'src')
   if (!existsSync(root)) return warn('entropy', 'atoms-locked-to-uuid', 'src/ not found')
-  const norm = (s: string): string => s.toLowerCase().replace(/[-_]/g, '')
   const skills: string[] = []
   const walk = (dir: string): void => {
     for (const e of readdirSync(dir, { withFileTypes: true })) {

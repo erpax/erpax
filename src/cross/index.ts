@@ -63,8 +63,8 @@ export const ANGELIC_HIERARCHY: readonly Choir[] = [
 /** The governing axis and the flow helix — both digital-root to 9 (the set is closed). */
 export const AXIS = [3, 6, 9] as const
 export const HELIX = [1, 2, 4, 8, 7, 5] as const
-/** Digital root (mod-9, folded to 1..9) — the rodin arithmetic. */
-export const digitalRoot = (n: number): number => (n === 0 ? 0 : ((n - 1) % 9) + 1)
+/** Digital root (mod-9, folded to 1..9) — the rodin arithmetic. Canonical: `@/horo` (one source). */
+export { digitalRoot } from '@/horo'
 
 // ─── Capability merge (merging roles merges their reach) ─────────────
 

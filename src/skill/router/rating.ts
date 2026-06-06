@@ -17,6 +17,7 @@
  * @standard ISO/IEC 25010 §5.5 testability (pure, deterministic)
  */
 import type { SkillNode } from '@/skill/router/resolve'
+import { norm } from '@/corpus/index.mts'
 
 export interface Rating {
   /** the rated atom (normalized leaf-word). */
@@ -28,8 +29,6 @@ export interface Rating {
   /** = confirmations: the independent attestations a forger must fool (the tamper-cost). */
   readonly tamperCost: number
 }
-
-const norm = (s: string): string => s.toLowerCase().replace(/[-_]/g, '')
 
 const leafOf = (ref: string): string => {
   const segs = ref.replace(/\/SKILL$/i, '').split('/').filter(Boolean)

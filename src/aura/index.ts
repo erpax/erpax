@@ -25,8 +25,9 @@ export const isRealDir = (p: string): boolean => {
   }
 }
 
-/** Canonical resolver key: lowercase, strip [-_] (matches collide / scan / vitepress). */
-export const norm = (s: string): string => String(s).toLowerCase().replace(/[-_]/g, '')
+/** Canonical resolver key: lowercase, strip [-_]. Re-exported from the one home
+ * ([[corpus]]) so the aura gate and the wikiMap share a SINGLE normalizer. */
+export { norm } from '@/corpus/index.mts'
 
 /** Strip fenced + inline code so [[links]] inside code do not count. */
 export const stripCode = (t: string): string =>
