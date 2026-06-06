@@ -4116,7 +4116,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the aura as a CONTINUOUS computed signal — the uuid matrix renders every node's coordinate cross to an analog colour+sound+vibration field animated over A432, gaplessly at every fractal level and at no cost (derived from the uuid, never stored). The analog twin of the discrete content-fingerprint, and the verifiable answer to science's 'aura', whose only measurable form is an analog physical signal (biophoton flux, electrodermal conductance) — never a detectable subtle-energy field.",
-        "uuid": "df83e900-15c7-8b7c-a702-99ce7d85f56e",
+        "uuid": "980cfa12-619f-8979-ab24-136c6b4931c2",
         "words": [
           "use",
           "when",
@@ -7672,7 +7672,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "aura",
-        "uuid": "69d0b13f-c09d-8b1e-b7ba-5f9458e5b690",
+        "uuid": "e7fc44f3-ad22-81c3-aae2-f82e3c4db7b1",
         "words": [
           "aura"
         ],
@@ -10623,7 +10623,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when separating a CLAIMED aura from a measured one — 'biofield' is the umbrella term (coined at a 1992 NIH meeting) for a putative energy field around the body; it is not established science, its own proponents concede it is controversial, and controlled tests (Rosa's therapeutic-touch study, the JREF $1M challenge) found no detection above chance. The honest contrast: a claim with no measurable signal — the opposite of erpax's gapless, Merkle-proven analog aura.",
-        "uuid": "3ac8314a-2ca3-894b-8a54-5acf2dd6ab7d",
+        "uuid": "94b129ce-96e5-86f6-98a5-47efd8292bea",
         "words": [
           "use",
           "when",
@@ -10839,7 +10839,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when grounding the aura's 'field' in real science — the body's magnetic fields ARE measurable, but only by SQUID magnetometers in a shielded room and only at the body surface: magnetocardiography (heart, ~10⁻¹⁰–10⁻¹¹ T / tens of pT) and magnetoencephalography (brain, ~10⁻¹³–10⁻¹⁵ T / ~100 fT). The established part is intra-body diagnostics; the claim the heart's field extends feet from the body as an 'aura' was refuted under test.",
-        "uuid": "2c5040c7-a081-8147-87f2-996f20bfa50c",
+        "uuid": "46cb3c67-869b-802b-9305-0a567a2c4835",
         "words": [
           "use",
           "when",
@@ -11056,7 +11056,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when grounding the aura's colour channel in real science — biophotons (ultraweak photon emission, UPE) are a REAL, instrument-measured light the body emits: ~1–10³ (up to 10⁴) photons·s⁻¹·cm⁻² (~10⁻¹⁴–10⁻¹⁹ W/cm²), 200–800 nm, from oxidative-metabolism reactive oxygen species, detected by cooled photomultiplier tubes and EMCCD cameras. The body literally emits light — but 3–6 orders too faint to see, so the visible 'aura' is not this.",
-        "uuid": "913d3a53-311b-810c-b8c9-ba029513e903",
+        "uuid": "2d691217-369d-8971-9f9d-8cde0ca381fa",
         "words": [
           "use",
           "when",
@@ -17729,7 +17729,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about wholeness as a MEASURABLE quantity — coherence is the scientific name for what erpax renders as harmony: phase-alignment across a signal. Physics/DSP coherence (phase-locked waves, 0..1), HRV 'psychophysiological coherence' (a real, measured intra-body state) and Popp's contested biophoton coherence; the inter-personal 'field coherence' aura claim is refuted. Wholeness renders as coherence, a gap or tamper as decoherence.",
-        "uuid": "8b5c96fe-40e6-86b7-bb7e-a7250b16a637",
+        "uuid": "3cd4bc05-401e-859a-b3e9-8f3ffa44a7a9",
         "words": [
           "use",
           "when",
@@ -28223,7 +28223,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when crop development is predicted from accumulated heat rather than the calendar — growing degree days (GDD = (Tmax+Tmin)/2 − Tbase, capped) measure the heat a crop banks toward maturity, so a warm spring advances harvest and a cool one delays it. The heat-unit clock that makes a fixed-week calendar drift; pairs with frost and evapotranspiration.",
-        "uuid": "db334638-d57c-8e93-9a9b-6a18ac202159",
+        "uuid": "4977ea0c-640e-82d1-957d-d794cfd7509c",
         "words": [
           "use",
           "when",
@@ -28888,7 +28888,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when skills come from USER CONTENT — an HR job description names the competencies a role requires, and each named skill is content-addressed to a corpus route (same name ⇒ same route ⇒ merge). A route not yet in the corpus is a NEW skill the user content adds — the corpus GROWS from what users write. The dual of generate (which mints from aura gaps): derive mints from user content; both feed one content-addressed corpus.",
-        "uuid": "406fdc98-b3a6-8ec1-b51d-cfd3884009a1",
+        "uuid": "af35b61e-4c45-8351-99a3-a006bff20d8e",
         "words": [
           "use",
           "when",
@@ -29274,6 +29274,63 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "detected: a schema.org component word, fused from signDetected"
+        }
+      }
+    ]
+  },
+  {
+    "atom": "development",
+    "path": "development",
+    "translations": [
+      {
+        "key": "name",
+        "source": "development",
+        "uuid": "5289c408-885a-8c7c-8ae0-8ae46713541d",
+        "words": [
+          "development"
+        ],
+        "values": {
+          "en": "development"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when planning what to build next — a feasibility-ranked roadmap of capabilities driven by the self-building loop; nextMove picks the highest-feasibility development for the society to advance.",
+        "uuid": "51264f1d-c249-818f-87b2-f5b80baf7ec9",
+        "words": [
+          "use",
+          "when",
+          "planning",
+          "what",
+          "to",
+          "build",
+          "next",
+          "a",
+          "feasibility",
+          "ranked",
+          "roadmap",
+          "of",
+          "capabilities",
+          "driven",
+          "by",
+          "the",
+          "self",
+          "building",
+          "loop",
+          "nextmove",
+          "picks",
+          "the",
+          "highest",
+          "feasibility",
+          "development",
+          "for",
+          "the",
+          "society",
+          "to",
+          "advance"
+        ],
+        "values": {
+          "en": "Use when planning what to build next — a feasibility-ranked roadmap of capabilities driven by the self-building loop; nextMove picks the highest-feasibility development for the society to advance."
         }
       }
     ]
@@ -29757,7 +29814,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when addressing an atom in digit-space — the dual of word — its horo sequence position and the digital-root of its content-uuid, the trace that completes the aura into a tamper-evident trinity.",
-        "uuid": "40639f71-9487-8c18-8d3c-0744c16f0a15",
+        "uuid": "0b7b5da3-2bf9-8f3d-af34-de0bcc2dd6a4",
         "words": [
           "use",
           "when",
@@ -33174,7 +33231,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about composition and stability through the chemical-elements matrix — everything is made of atoms, and the periodic table adds a chemistry to the logic: each atom has a VALENCE (electrons it shares to fill its shell), stability is the OCTET (a full outer shell — the noble gases), and atoms BOND to reach it. The new perspective: the erpax corpus is a MOLECULE — an atom's valence is its open links, and the corpus is stable exactly when aura gap = 0 (all shells full).",
-        "uuid": "913b2752-4d65-853c-84b5-c5d2bf6cde10",
+        "uuid": "d39df7d4-7666-8728-9615-4b40a46660cd",
         "words": [
           "use",
           "when",
@@ -42650,7 +42707,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the skill corpus should grow itself — continuously mining aura gaps (unlinked/dead-link words) into new atoms and driving the gap to zero, like the tsc tail. The realtime self-generating loop (scan → mint → link → re-scan). Skills generating skills.",
-        "uuid": "f47758ce-79b5-8d91-91e4-f1a0fb100648",
+        "uuid": "ffe211a4-834a-8bca-a705-726f8ec26573",
         "words": [
           "use",
           "when",
@@ -79275,7 +79332,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "aura",
-        "uuid": "69d0b13f-c09d-8b1e-b7ba-5f9458e5b690",
+        "uuid": "e7fc44f3-ad22-81c3-aae2-f82e3c4db7b1",
         "words": [
           "aura"
         ],
@@ -79286,7 +79343,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reading the aura as quantum coherence — the gapless link-field as the coherent in-phase state, a dead link or orphan as decoherence; coherence is the resource the corpus maximizes toward zero entropy.",
-        "uuid": "fb35a735-8541-8fb4-ba6a-0e2f039bd835",
+        "uuid": "9f8c375c-66f8-8090-8317-d53e2a2dd6a2",
         "words": [
           "use",
           "when",
@@ -79326,6 +79383,68 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "Use when reading the aura as quantum coherence — the gapless link-field as the coherent in-phase state, a dead link or orphan as decoherence; coherence is the resource the corpus maximizes toward zero entropy."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "development",
+    "path": "quantum/development",
+    "translations": [
+      {
+        "key": "name",
+        "source": "development",
+        "uuid": "5289c408-885a-8c7c-8ae0-8ae46713541d",
+        "words": [
+          "development"
+        ],
+        "values": {
+          "en": "development"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when choosing the next quantum capability to build — the feasibility-ranked quantum roadmap from the quantum-scientists; the one move now is to drive the orphans to zero so tamper-cost becomes literally infinite.",
+        "uuid": "6d858964-a9a1-86ec-8f72-3d206dcdca30",
+        "words": [
+          "use",
+          "when",
+          "choosing",
+          "the",
+          "next",
+          "quantum",
+          "capability",
+          "to",
+          "build",
+          "the",
+          "feasibility",
+          "ranked",
+          "quantum",
+          "roadmap",
+          "from",
+          "the",
+          "quantum",
+          "scientists",
+          "the",
+          "one",
+          "move",
+          "now",
+          "is",
+          "to",
+          "drive",
+          "the",
+          "orphans",
+          "to",
+          "zero",
+          "so",
+          "tamper",
+          "cost",
+          "becomes",
+          "literally",
+          "infinite"
+        ],
+        "values": {
+          "en": "Use when choosing the next quantum capability to build — the feasibility-ranked quantum roadmap from the quantum-scientists; the one move now is to drive the orphans to zero so tamper-cost becomes literally infinite."
         }
       }
     ]
@@ -90004,7 +90123,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the self GROWS its own corpus — the outward stroke begins: mine aura gaps into new atoms and drive the gap to zero (self-applied generate at forward-coil position 1/base). The self generating itself.",
-        "uuid": "57198a0c-acc0-85cb-b721-49d203e4ccc8",
+        "uuid": "ecb176cc-37c6-8781-b7f3-c6dc139cd72b",
         "words": [
           "use",
           "when",
@@ -93321,7 +93440,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about erpax building itself — the autonomous loop where the agent society (convened at chat) reads its own akashic record and advances one gate-verified step at a time, driving the aura to whole and the collections to their dense core with minimal human footprint. The self-building loop; matter-twin society/build.mjs.",
-        "uuid": "29874103-c25b-8319-8df2-a6b6db690db7",
+        "uuid": "c16c2619-60a3-848e-8745-b29082757e9f",
         "words": [
           "use",
           "when",
@@ -103005,7 +103124,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when delivering, tracking, or assessing skill development — course enrollment, completion, certification, competency gain. The experience record of learning an actor undergoes.",
-        "uuid": "d1626331-b8ed-8341-a446-e04d0d197db9",
+        "uuid": "8b83baf4-091b-879b-adcc-dcca3005154b",
         "words": [
           "use",
           "when",
@@ -107228,7 +107347,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about erpax's version — it is CONTENT-ADDRESSED and skill-based, a function of the corpus aura (the hash over every atom's content-uuid), so the same skills produce the same version on every clone; automatic tags follow the corpus, and drift or forgery between a tag and the code is caught. The git tag that cannot lie about what it contains.",
-        "uuid": "32765559-6259-86f5-9602-66ec78d59db6",
+        "uuid": "1431457e-e68b-8811-abe9-b01db43c423e",
         "words": [
           "use",
           "when",
@@ -110909,4 +111028,4 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
   }
 ]
 
-export const TRANSLATIONS_COUNT = 2335
+export const TRANSLATIONS_COUNT = 2337
