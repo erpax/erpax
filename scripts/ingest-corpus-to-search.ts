@@ -23,7 +23,7 @@ import { createRequire } from 'node:module'
 
 import { config as loadEnv } from 'dotenv'
 
-import { loadCorpus } from '../.vitepress/corpus.mts'
+import { loadCorpus } from '../src/corpus/index.mts'
 import { corpusToSearchDocs, type CorpusAtom } from '@/search'
 import { computeContentUuid } from '@/services/integrity'
 

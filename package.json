@@ -54,7 +54,7 @@
     "codemod": "bash scripts/payload-codemod.sh",
     "mcp:test": "node src/agents/mcp/tools-list.mjs",
     "docs:dev": "vitepress dev",
-    "docs:build": "vitepress build",
+    "docs:build": "cross-env NODE_OPTIONS=\"--no-deprecation --max-old-space-size=8000\" vitepress build",
     "docs:preview": "vitepress preview"
   },
   "dependencies": {

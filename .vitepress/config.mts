@@ -5,7 +5,7 @@ import type MarkdownIt from 'markdown-it'
 import { trinityHtml, trinityHead, skillDirOf } from './trinity.mts'
 // The corpus walk (route · wikiMap · sidebar) lives in ONE place, shared with the
 // search ingest (scripts/ingest-corpus-to-search.ts) — DRY, no parallel walk.
-import { SKILLS_DIR, wikiMap, allSkills, routeOf, walk, norm, dualOf } from './corpus.mts'
+import { SKILLS_DIR, wikiMap, allSkills, routeOf, walk, norm, dualOf } from '../src/corpus/index.mts'
 
 // ── The fractal skill tree IS the docs structure ──────────────────────────
 // VitePress's directory→sidebar→route mapping is the same path-as-address law
