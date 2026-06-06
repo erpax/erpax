@@ -1,5 +1,6 @@
 import { describe, it, expect } from 'vitest'
 import { totalOutput, efficiency, moreEfficient, wasteFraction, costEntry, type Ledger } from '@/cost'
+import { secondPreimageLog2, birthdayLog2, bhtCollisionLog2, groverPreimageLog2, quantumFloorLog2, harmonicFloors } from '@/cost'
 import { isBalanced, net } from '@/entry'
 
 describe('cost — one efficiency law for every society cost (vs productivity + creativity)', () => {
@@ -40,5 +41,28 @@ describe('cost — one efficiency law for every society cost (vs productivity + 
     expect(net(entry)).toBe(0)
     expect(entry.lines.find((line) => line.accountable === 'resource:energy')?.credit).toBe(42)
     expect(entry.lines.find((line) => line.accountable === 'output')?.debit).toBe(42)
+  })
+})
+
+describe('cost — the harmonic floors (D · D/2 · D/3, the first three harmonics)', () => {
+  it('the floors are the harmonic series of the digest width, strictly descending', () => {
+    const [h1, h2, h3] = harmonicFloors(256)
+    expect(h1).toBe(256) // 1st harmonic: classical second-preimage
+    expect(h2).toBe(128) // 2nd (octave): classical collision = Grover preimage
+    expect(h3).toBeCloseTo(256 / 3, 6) // 3rd: BHT quantum collision — the lowest
+    expect(h1).toBeGreaterThan(h2)
+    expect(h2).toBeGreaterThan(h3)
+  })
+
+  it('the 2nd harmonic is the octave (D/2) — classical collision and Grover preimage meet there', () => {
+    expect(secondPreimageLog2(106)).toBe(106)
+    expect(birthdayLog2(106)).toBe(53)
+    expect(groverPreimageLog2(106)).toBe(53) // same value, distinct threat (the merge at the octave)
+  })
+
+  it('the quantum (BHT) floor is the lowest — the missing cross, the 3rd harmonic D/3', () => {
+    expect(bhtCollisionLog2(106)).toBeCloseTo(106 / 3, 6)
+    expect(quantumFloorLog2(256)).toBeCloseTo(256 / 3, 6)
+    expect(bhtCollisionLog2(106)).toBeLessThan(birthdayLog2(106)) // D/3 < D/2
   })
 })

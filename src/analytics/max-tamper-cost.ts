@@ -16,7 +16,7 @@
  * @see ./index.ts -- ../tamper/cost (crackVerdict) -- ../balance (coverage) -- ../anchor
  */
 import { crackVerdict, type CrackVerdict } from '@/tamper/cost'
-import { ERPAX_DIGEST_BITS, CONTENT_DIGEST_BITS } from '@/cost'
+import { ERPAX_DIGEST_BITS, CONTENT_DIGEST_BITS, bhtCollisionLog2 } from '@/cost'
 import { auraBalance, coverage as schemaCoverage } from '@/balance'
 import { orphans } from '@/entropy'
 
@@ -55,12 +55,18 @@ export const maxTamperCost = (): MaxTamperCostReport => {
   // amplifier is ∞ at coverage=1 and would mask every lever). This surfaces the
   // structural weakest link that exists regardless of coverage; the coverage
   // amplifier is reported separately (gapToInfinity).
-  const levers = [
+  const levers: TamperLever[] = [
     lever('post-hoc (chosen-content out of scope)', crackVerdict({ checks: 1 })),
     lever('chosen-content vs bare 106-bit uuid', crackVerdict({ checks: 1, anchorCommitmentBits: ERPAX_DIGEST_BITS })),
     lever('chosen-content vs full 256-bit digest', crackVerdict({ checks: 1, anchorCommitmentBits: CONTENT_DIGEST_BITS })),
+    // the missing cross — the quantum (BHT) collision, the 3rd harmonic D/3, the
+    // lowest floor. A quantum adversary with quantum memory pays this; it also
+    // breaks an RSA/ECC anchor (Shor), so the per-record floor IS the binding one.
+    { lever: 'quantum (BHT) collision vs bare 106-bit uuid', bindingLog2: bhtCollisionLog2(ERPAX_DIGEST_BITS), binding: 'collision' },
+    { lever: 'quantum (BHT) collision vs full 256-bit digest', bindingLog2: bhtCollisionLog2(CONTENT_DIGEST_BITS), binding: 'collision' },
   ]
   const weakest = levers.reduce((m, l) => (l.bindingLog2 < m.bindingLog2 ? l : m))
+  const quantum = weakest.lever.startsWith('quantum')
   return {
     coverage: cov,
     gapToInfinity: 1 - cov,
@@ -68,8 +74,9 @@ export const maxTamperCost = (): MaxTamperCostReport => {
     orphanCollections: d.orphanCollections.length,
     weakest,
     levers,
-    fix:
-      weakest.binding === 'collision'
+    fix: quantum
+      ? 'quantum (BHT) collision on the bare uuid is the floor (2^35) — commit the FULL 256-bit content digest (→ 2^85) AND use a hash-based post-quantum anchor (Shor breaks RSA/ECC)'
+      : weakest.binding === 'collision'
         ? 'thread anchorCommitmentBits=CONTENT_DIGEST_BITS (256): closes the 2^53 chosen-content collision to 2^128'
         : 'commitment binds at second-preimage; close the coverage gap toward 1 to drive cost → ∞',
   }

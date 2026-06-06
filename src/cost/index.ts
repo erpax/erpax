@@ -110,6 +110,35 @@ export const birthdayMarginBits = (digestBits: number, rows: number): number =>
 export const bruteYearsLog2 = (workLog2: number, hashrateLog2: number): number =>
   workLog2 - hashrateLog2 - LOG2_SECONDS_PER_YEAR
 
+// THE FLOORS ARE HARMONIC ([[harmony]]). A digest of D bits has not one security
+// floor but the first three HARMONICS of D — D · D/2 · D/3:
+//   D    (1st, fundamental)  classical second-preimage — forge a matching content.
+//   D/2  (2nd, the octave)   classical BIRTHDAY collision = quantum (Grover) second-
+//                            preimage. Two threats MEET at the octave ([[merge]]).
+//   D/3  (3rd)               quantum (BHT) collision — the LOWEST floor, what a
+//                            quantum ([[quantum]]) adversary with quantum memory pays.
+// "Balanced floors" = the series complete to its third harmonic; the binding floor
+// is the LOWEST present in the threat model. The quantum cross also breaks an
+// RSA/ECC anchor (Shor → ~0), so a hash-based post-quantum anchor is required to
+// keep even the D/2 (Grover) floor. HONEST: BHT's D/3 needs 2^(D/3) quantum memory;
+// a memory-bound quantum collision is ≈ D/2 — D/3 is the conservative theoretical floor.
+
+/** Quantum (Grover) second-preimage ≈ 2^(n/2) — the 2nd harmonic (numerically the birthday collision; a distinct threat at the same octave). */
+export const groverPreimageLog2 = (digestBits: number): number => digestBits / 2
+
+/** Quantum (BHT) collision ≈ 2^(n/3) — the 3rd harmonic, the lowest floor under a quantum adversary with quantum memory. */
+export const bhtCollisionLog2 = (digestBits: number): number => digestBits / 3
+
+/** The binding floor under a quantum adversary committing `commitmentBits`: the BHT collision (the 3rd harmonic, the lowest). */
+export const quantumFloorLog2 = (commitmentBits: number): number => bhtCollisionLog2(commitmentBits)
+
+/** The harmonic floor series of a digest — [D (preimage), D/2 (collision/Grover), D/3 (BHT)], descending. */
+export const harmonicFloors = (digestBits: number): [number, number, number] => [
+  secondPreimageLog2(digestBits),
+  birthdayLog2(digestBits),
+  bhtCollisionLog2(digestBits),
+]
+
 /** P(undetected tamper) ≈ (1 − coverage)^checks. → 0 as coverage → 1. */
 export const tamperEvasionProbability = (coverage: number, checks: number): number =>
   Math.max(0, 1 - coverage) ** checks
