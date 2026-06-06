@@ -13,6 +13,8 @@ Per-folder `translations.ts` files are **massless projections** — pure data, `
 
 Attested in schema.org — translationOfWork · workTranslation
 
+**Law — [[law]]: translation is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**
+
 @standard BCP-47 language tags
 @standard RFC 9562 §5.8 content-uuid (the messaging-uuid)
 @standard schema.org — the type vocabulary, collided to single words

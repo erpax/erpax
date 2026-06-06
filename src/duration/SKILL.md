@@ -11,4 +11,6 @@ Entangled with — [[activity]] · [[billing]] · [[warranty]] · [[eligible]] �
 
 Attested in schema.org — Duration · activityDuration · billingDuration · duration · durationOfWarranty · eligibleDuration · estimatedFlightDuration · jobDuration · termDuration
 
+**Law — [[law]]: duration is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**
+
 @standard schema.org — the type vocabulary, collided to single words

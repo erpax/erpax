@@ -11,4 +11,6 @@ Entangled with — [[review]] · [[associated]] · [[interpreter]] · [[reviewed
 
 Attested in schema.org — Claim · ClaimReview · associatedClaimReview · claimInterpreter · claimReviewed · interpretedAsClaim
 
+**Law — [[law]]: claim is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**
+
 @standard schema.org — the type vocabulary, collided to single words

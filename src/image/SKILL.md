@@ -11,4 +11,6 @@ Entangled with — [[gallery]] · [[object]] · [[snapshot]] · [[layout]] · [[
 
 Attested in schema.org — ImageGallery · ImageObject · ImageObjectSnapshot · image · layoutImage · primaryImageOfPage
 
+**Law — [[law]]: image is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**
+
 @standard schema.org — the type vocabulary, collided to single words

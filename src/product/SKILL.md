@@ -11,4 +11,6 @@ Entangled with — [[financial]] · [[individual]] · [[collection]] · [[group]
 
 Attested in schema.org — FinancialProduct · IndividualProduct · Product · ProductCollection · ProductGroup · ProductModel · ProductReturnEnumeration · ProductReturnPolicy · hasProductReturnPolicy · inProductGroupWithID · productGroupID · productID · productReturnDays · productReturnLink · productSupported · targetProduct
 
+**Law — [[law]]: product is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**
+
 @standard schema.org — the type vocabulary, collided to single words

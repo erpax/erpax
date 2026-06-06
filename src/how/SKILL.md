@@ -11,4 +11,6 @@ Entangled with — [[direction]] · [[item]] · [[section]] · [[step]] · [[sup
 
 Attested in schema.org — HowTo · HowToDirection · HowToItem · HowToSection · HowToStep · HowToSupply · HowToTip · HowToTool · howPerformed
 
+**Law — [[law]]: how is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**
+
 @standard schema.org — the type vocabulary, collided to single words

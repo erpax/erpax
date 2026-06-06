@@ -13,4 +13,6 @@ In an autonomous workflow — an **answer** is the **computed resolution** a [[s
 
 Attested in schema.org — Answer · acceptedAnswer · answerCount · answerExplanation · suggestedAnswer
 
+**Law — [[law]]: answer is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**
+
 @standard schema.org — the type vocabulary, collided to single words

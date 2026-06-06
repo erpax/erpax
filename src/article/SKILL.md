@@ -11,4 +11,6 @@ Entangled with — [[advertiser]] · [[content]] · [[analysis]] · [[news]] · 
 
 Attested in schema.org — AdvertiserContentArticle · AnalysisNewsArticle · Article · AskPublicNewsArticle · BackgroundNewsArticle · MedicalScholarlyArticle · NewsArticle · OpinionNewsArticle · ReportageNewsArticle · ReviewNewsArticle · SatiricalArticle · ScholarlyArticle · TechArticle · articleBody · articleSection · associatedArticle
 
+**Law — [[law]]: article is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**
+
 @standard schema.org — the type vocabulary, collided to single words

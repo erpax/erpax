@@ -11,4 +11,6 @@ Entangled with — [[group]] · [[enumeration]] · [[specification]] · [[system
 
 Attested in schema.org — SizeGroupEnumeration · SizeSpecification · SizeSystemEnumeration · WearableSizeGroupEnumeration · WearableSizeSystemEnumeration · collectionSize · contentSize · fileSize · floorSize · partySize · servingSize · size · sizeGroup · sizeSystem · videoFrameSize
 
+**Law — [[law]]: size is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**
+
 @standard schema.org — the type vocabulary, collided to single words

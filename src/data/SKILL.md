@@ -11,4 +11,6 @@ Entangled with — [[complete]] · [[feed]] · [[catalog]] · [[download]] · [[
 
 Attested in schema.org — CompleteDataFeed · DataCatalog · DataDownload · DataFeed · DataFeedItem · DataType · data · dataFeedElement · exifData · healthcareReportingData · includedDataCatalog · includedInDataCatalog · supportingData
 
+**Law — [[law]]: data is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**
+
 @standard schema.org — the type vocabulary, collided to single words

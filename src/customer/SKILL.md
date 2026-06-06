@@ -11,4 +11,6 @@ Entangled with — [[remorse]] · [[return]] · [[fees]] · [[label]] · [[sourc
 
 Attested in schema.org — customer · customerRemorseReturnFees · customerRemorseReturnLabelSource · customerRemorseReturnShippingFeesAmount · eligibleCustomerType
 
+**Law — [[law]]: customer is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**
+
 @standard schema.org — the type vocabulary, collided to single words

@@ -11,4 +11,6 @@ Entangled with — [[eu]] · [[efficiency]] · [[enumeration]] · [[consumption]
 
 Attested in schema.org — EUEnergyEfficiencyEnumeration · Energy · EnergyConsumptionDetails · EnergyEfficiencyEnumeration · EnergyStarEnergyEfficiencyEnumeration · energyEfficiencyScaleMax · energyEfficiencyScaleMin · hasEnergyConsumptionDetails · hasEnergyEfficiencyCategory
 
+**Law — [[law]]: energy is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**
+
 @standard schema.org — the type vocabulary, collided to single words

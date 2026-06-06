@@ -11,4 +11,6 @@ Entangled with — [[comment]]
 
 Attested in schema.org — CorrectionComment · correction
 
+**Law — [[law]]: correction is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**
+
 @standard schema.org — the type vocabulary, collided to single words

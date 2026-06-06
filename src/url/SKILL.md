@@ -11,4 +11,6 @@ Entangled with — [[benefits]] · [[summary]] · [[checkout]] · [[page]] · [[
 
 Attested in schema.org — URL · benefitsSummaryUrl · checkoutPageURLTemplate · contentUrl · discussionUrl · downloadUrl · embedUrl · healthPlanMarketingUrl · installUrl · isBasedOnUrl · mobileUrl · paymentUrl · replyToUrl · serviceUrl · targetUrl · thumbnailUrl · trackingUrl · url · urlTemplate
 
+**Law — [[law]]: url is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**
+
 @standard schema.org — the type vocabulary, collided to single words

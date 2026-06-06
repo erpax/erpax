@@ -11,4 +11,6 @@ Entangled with — [[accounting]] · [[broadcast]] · [[cable]] · [[satellite]]
 
 Attested in schema.org — AccountingService · BroadcastService · CableOrSatelliteService · CurrencyConversionService · EmergencyService · FinancialService · FoodService · GovernmentService · LegalService · PaymentService · ProfessionalService · RadioBroadcastService · Service · ServiceChannel · ServicePeriod · ShippingService · TaxiService · availableService · broadcastServiceTier · hasDriveThroughService · hasShippingService · interactionService · mealService · parentService
 
+**Law — [[law]]: service is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**
+
 @standard schema.org — the type vocabulary, collided to single words

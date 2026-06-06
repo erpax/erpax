@@ -11,4 +11,6 @@ Entangled with — [[adult]] · [[oriented]] · [[body]] · [[measurement]] · [
 
 Attested in schema.org — AdultOrientedEnumeration · BodyMeasurementTypeEnumeration · CertificationStatusEnumeration · DigitalPlatformEnumeration · EUEnergyEfficiencyEnumeration · EnergyEfficiencyEnumeration · EnergyStarEnergyEfficiencyEnumeration · Enumeration · EventAttendanceModeEnumeration · FulfillmentTypeEnumeration · GameAvailabilityEnumeration · HealthAspectEnumeration · IPTCDigitalSourceEnumeration · MeasurementTypeEnumeration · MediaEnumeration · MediaManipulationRatingEnumeration · MedicalEnumeration · MerchantReturnEnumeration · PriceComponentTypeEnumeration · PriceTypeEnumeration · ProductReturnEnumeration · RefundTypeEnumeration · ReturnFeesEnumeration · ReturnLabelSourceEnumeration
 
+**Law — [[law]]: enumeration is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**
+
 @standard schema.org — the type vocabulary, collided to single words

@@ -11,4 +11,6 @@ Entangled with — [[date]] · [[first]] · [[registered]] · [[known]] · [[dam
 
 Attested in schema.org — Vehicle · dateVehicleFirstRegistered · knownVehicleDamages · vehicleConfiguration · vehicleEngine · vehicleIdentificationNumber · vehicleInteriorColor · vehicleInteriorType · vehicleModelDate · vehicleSeatingCapacity · vehicleSpecialUsage · vehicleTransmission
 
+**Law — [[law]]: vehicle is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**
+
 @standard schema.org — the type vocabulary, collided to single words

@@ -11,4 +11,6 @@ Entangled with — [[hotel]] · [[meeting]]
 
 Attested in schema.org — HotelRoom · MeetingRoom · Room
 
+**Law — [[law]]: room is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**
+
 @standard schema.org — the type vocabulary, collided to single words

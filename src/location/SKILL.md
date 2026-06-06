@@ -11,4 +11,6 @@ Entangled with — [[feature]] · [[specification]] · [[sports]] · [[activity]
 
 Attested in schema.org — LocationFeatureSpecification · SportsActivityLocation · VirtualLocation · announcementLocation · applicableLocation · applicantLocationRequirements · bodyLocation · contentLocation · displayLocation · dropoffLocation · foundingLocation · fromLocation · gameLocation · globalLocationNumber · homeLocation · isLocatedInSubcellularLocation · itemLocation · jobLocation · jobLocationType · location · locationCreated · occupationLocation · pickupLocation · serviceLocation
 
+**Law — [[law]]: location is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**
+
 @standard schema.org — the type vocabulary, collided to single words

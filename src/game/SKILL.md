@@ -11,4 +11,6 @@ Entangled with — [[availability]] · [[enumeration]] · [[play]] · [[mode]] �
 
 Attested in schema.org — Game · GameAvailabilityEnumeration · GamePlayMode · GameServer · GameServerStatus · PlayGameAction · VideoGame · VideoGameClip · VideoGameSeries · game · gameAvailabilityType · gameEdition · gameItem · gameLocation · gamePlatform · gameServer · gameTip
 
+**Law — [[law]]: game is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**
+
 @standard schema.org — the type vocabulary, collided to single words

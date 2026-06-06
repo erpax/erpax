@@ -11,4 +11,6 @@ Entangled with — [[boat]] · [[bus]] · [[event]] · [[flight]] · [[food]] ·
 
 Attested in schema.org — BoatReservation · BusReservation · EventReservation · FlightReservation · FoodEstablishmentReservation · LodgingReservation · RentalCarReservation · Reservation · ReservationPackage · ReservationStatusType · TaxiReservation · TrainReservation · reservationFor · reservationId · reservationStatus · subReservation
 
+**Law — [[law]]: reservation is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**
+
 @standard schema.org — the type vocabulary, collided to single words

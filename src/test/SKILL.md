@@ -11,4 +11,6 @@ Entangled with — [[blood]] · [[imaging]] · [[medical]] · [[panel]] · [[pat
 
 Attested in schema.org — BloodTest · ImagingTest · MedicalTest · MedicalTestPanel · PathologyTest · availableTest · identifyingTest · subTest · typicalTest
 
+**Law — [[law]]: test is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**
+
 @standard schema.org — the type vocabulary, collided to single words

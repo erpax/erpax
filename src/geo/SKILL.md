@@ -11,4 +11,6 @@ Entangled with — [[circle]] · [[coordinates]] · [[shape]] · [[contains]] ·
 
 Attested in schema.org — GeoCircle · GeoCoordinates · GeoShape · geo · geoContains · geoCoveredBy · geoCovers · geoCrosses · geoDisjoint · geoEquals · geoIntersects · geoMidpoint · geoOverlaps · geoRadius · geoTouches · geoWithin
 
+**Law — [[law]]: geo is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**
+
 @standard schema.org — the type vocabulary, collided to single words

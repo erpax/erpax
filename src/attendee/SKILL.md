@@ -11,4 +11,6 @@ Entangled with — [[maximum]] · [[capacity]] · [[physical]] · [[virtual]] ·
 
 Attested in schema.org — attendee · maximumAttendeeCapacity · maximumPhysicalAttendeeCapacity · maximumVirtualAttendeeCapacity · remainingAttendeeCapacity
 
+**Law — [[law]]: attendee is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**
+
 @standard schema.org — the type vocabulary, collided to single words

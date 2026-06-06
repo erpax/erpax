@@ -16,4 +16,6 @@ Entangled with — [[cleaning]] · [[laundry]]
 Attested in schema.org — DryCleaningOrLaundry
 
 @audit the dry-clean is computed from the tree, never a hand-run script
+**Law — [[law]]: dry is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**
+
 @standard schema.org — the type vocabulary, collided to single words

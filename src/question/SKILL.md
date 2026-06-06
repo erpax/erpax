@@ -13,4 +13,6 @@ In an autonomous workflow — a **question** is the yes/no **gate** a [[step]] a
 
 Attested in schema.org — Question · eduQuestionType · question
 
+**Law — [[law]]: question is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**
+
 @standard schema.org — the type vocabulary, collided to single words

@@ -11,4 +11,6 @@ Entangled with — [[prescription]] · [[mail]]
 
 Attested in schema.org — offers · offersPrescriptionByMail
 
+**Law — [[law]]: offers is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**
+
 @standard schema.org — the type vocabulary, collided to single words

@@ -11,4 +11,6 @@ Entangled with — [[alignment]] · [[audio]] · [[snapshot]] · [[image]] · [[
 
 Attested in schema.org — AlignmentObject · AudioObject · AudioObjectSnapshot · ImageObject · ImageObjectSnapshot · LegislationObject · MediaObject · MusicVideoObject · TextObject · VideoObject · VideoObjectSnapshot · includesObject · object
 
+**Law — [[law]]: object is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**
+
 @standard schema.org — the type vocabulary, collided to single words

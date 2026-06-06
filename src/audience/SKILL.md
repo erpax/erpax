@@ -11,4 +11,6 @@ Entangled with — [[business]] · [[educational]] · [[medical]] · [[type]] ·
 
 Attested in schema.org — Audience · BusinessAudience · EducationalAudience · MedicalAudience · MedicalAudienceType · ParentAudience · PeopleAudience · audience · audienceType · medicalAudience · permitAudience · serviceAudience
 
+**Law — [[law]]: audience is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**
+
 @standard schema.org — the type vocabulary, collided to single words

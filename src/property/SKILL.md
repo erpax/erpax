@@ -11,4 +11,6 @@ Entangled with — [[value]] · [[specification]] · [[additional]] · [[constra
 
 Attested in schema.org — Property · PropertyValue · PropertyValueSpecification · additionalProperty · constraintProperty · measuredProperty · propertyID · stupidProperty
 
+**Law — [[law]]: property is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**
+
 @standard schema.org — the type vocabulary, collided to single words

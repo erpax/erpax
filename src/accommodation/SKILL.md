@@ -11,4 +11,6 @@ Entangled with — [[category]] · [[floor]] · [[plan]] · [[number]] · [[unit
 
 Attested in schema.org — Accommodation · accommodationCategory · accommodationFloorPlan · numberOfAccommodationUnits · numberOfAvailableAccommodationUnits
 
+**Law — [[law]]: accommodation is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**
+
 @standard schema.org — the type vocabulary, collided to single words

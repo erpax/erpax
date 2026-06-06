@@ -11,4 +11,6 @@ Entangled with — [[mobile]] · [[software]] · [[web]] · [[action]] · [[cate
 
 Attested in schema.org — MobileApplication · SoftwareApplication · WebApplication · actionApplication · application · applicationCategory · applicationContact · applicationDeadline · applicationStartDate · applicationSubCategory · applicationSuite
 
+**Law — [[law]]: application is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**
+
 @standard schema.org — the type vocabulary, collided to single words

@@ -11,4 +11,6 @@ Entangled with — [[auto]] · [[parts]] · [[bike]] · [[book]] · [[clothing]]
 
 Attested in schema.org — AutoPartsStore · BikeStore · BookStore · ClothingStore · ComputerStore · ConvenienceStore · DepartmentStore · ElectronicsStore · FurnitureStore · GardenStore · GroceryStore · HardwareStore · HomeGoodsStore · JewelryStore · LiquorStore · MensClothingStore · MobilePhoneStore · MovieRentalStore · MusicStore · OfficeEquipmentStore · OnlineStore · OutletStore · PetStore · ShoeStore
 
+**Law — [[law]]: store is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**
+
 @standard schema.org — the type vocabulary, collided to single words

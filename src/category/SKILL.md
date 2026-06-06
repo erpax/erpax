@@ -11,4 +11,6 @@ Entangled with — [[code]] · [[set]] · [[drug]] · [[cost]] · [[pregnancy]] 
 
 Attested in schema.org — CategoryCode · CategoryCodeSet · DrugCostCategory · DrugPregnancyCategory · MapCategoryType · PhysicalActivityCategory · accommodationCategory · applicationCategory · applicationSubCategory · category · costCategory · credentialCategory · hasCategoryCode · hasEnergyEfficiencyCategory · healthPlanPharmacyCategory · mediaAuthenticityCategory · occupationalCategory · pregnancyCategory · recipeCategory · returnPolicyCategory
 
+**Law — [[law]]: category is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**
+
 @standard schema.org — the type vocabulary, collided to single words
