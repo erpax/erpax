@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use for confidentiality scoping — attorney-client privilege and ethical walls. Strip the prefix and privilege is an access scope (capability × tenant/matter isolation) plus crypto-shred, erpax's answer to the design-limit that it keeps no native secret. Who may see a matter is computed, never granted by name.",
-    "uuid": "732e908e-81ee-8533-8351-2980da3b45e6",
+    "uuid": "7f04fc2c-8934-8784-8318-c6c0387bbaf0",
     "words": [
       "use",
       "for",

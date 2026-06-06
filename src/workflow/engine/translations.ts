@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "workflow-engine",
-    "uuid": "747ba403-f1e0-8b1d-bfb4-dc377599d500",
+    "uuid": "331d30b3-632e-804a-94c0-a8ab4adb3998",
     "words": [
       "workflow",
       "engine"
@@ -19,7 +19,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when executing or validating finite-state machines — gating transitions, detecting dead-ends, or auditing workflow harmony.",
-    "uuid": "3a74043e-3a17-81e8-ad22-a7fe93a6ebf8",
+    "uuid": "b1fc5e37-a58b-87dc-a8f8-d69f1b3deb19",
     "words": [
       "use",
       "when",

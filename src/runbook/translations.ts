@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when documenting step-by-step standard operating procedures — incident response, system failover, deployment checklist, maintenance sequence. The executable playbook.",
-    "uuid": "77fee289-1cfe-81c8-9988-184a2cacfa62",
+    "uuid": "1c246752-5fff-8702-bf23-0cde7b7e3ef4",
     "words": [
       "use",
       "when",

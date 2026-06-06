@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "workflow-instances",
-    "uuid": "ddfc83a8-a2a7-8fc6-af30-b2c6b5b371b8",
+    "uuid": "7929e941-b854-85cf-bab1-894052527e1f",
     "words": [
       "workflow",
       "instances"
@@ -19,7 +19,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when tracking the live run of a workflow-definition against a document — current step, assignee, SLA due date, step-history decisions (approved/rejected/delegated/escalated/auto), final outcome, and ISO-19011 §6.4.6 audit-event trail. The workflow execution-instance collection.",
-    "uuid": "33d6ec05-42da-8faa-b877-89ac9bf72ea1",
+    "uuid": "de3f4efa-9401-8383-ae88-ec0e09359ad2",
     "words": [
       "use",
       "when",

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use for the universal exchange node — a balanced flow of value between parties, the commercial document AND its ledger entry as duals. One transactions collection holds every kind (invoice/order/bank/fx/intercompany) by dimension; the prefix-free coordinate the trades-vs-transactions question resolves to (it is a trade·transaction — both words).",
-    "uuid": "78129a31-a707-83f7-9f19-52e0962e737a",
+    "uuid": "4ccd8ae3-49e6-8b79-9ccd-2845306db3d3",
     "words": [
       "use",
       "for",

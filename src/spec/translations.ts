@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when one workflow definition must generate many materializations — e2e test, help tip/subtitle, seed, evidence, marketing page, i18n keys — from a single source. The spec-generator over BUSINESS_CHAINS; e2e tests and help tips share one source.",
-    "uuid": "a9b96b48-5519-861f-952a-eab75ca742ad",
+    "uuid": "466b0f8b-633c-865d-8996-24ee0429e87c",
     "words": [
       "use",
       "when",

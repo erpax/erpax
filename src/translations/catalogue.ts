@@ -1184,7 +1184,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when an entity can be active or inactive — archived customers, disabled accounts, deactivated users. Boolean or select (active/inactive); toggle switches lifecycle state without deletion. Antonym of status when status carries workflow states.",
-        "uuid": "7a89997c-8006-827c-ab42-3627d04dd024",
+        "uuid": "64ba4ed9-4a45-8361-afbb-e991e265b7bc",
         "words": [
           "use",
           "when",
@@ -1245,7 +1245,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when logging or analysing CRM touch-points — calls, emails, meetings, demos, tasks, social touches, document/quote sends, site visits — against a lead, opportunity, customer, vendor or project; relationship history, last-touch date, direction (inbound/outbound), rep activity volume, next-step planning. The CRM activity-log collection.",
-        "uuid": "511dd521-59b0-8e3b-b663-e34c39afa23b",
+        "uuid": "11ee94ce-928f-862e-8acc-9a4983082704",
         "words": [
           "use",
           "when",
@@ -4116,7 +4116,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the aura as a CONTINUOUS computed signal — the uuid matrix renders every node's coordinate cross to an analog colour+sound+vibration field animated over A432, gaplessly at every fractal level and at no cost (derived from the uuid, never stored). The analog twin of the discrete content-fingerprint, and the verifiable answer to science's 'aura', whose only measurable form is an analog physical signal (biophoton flux, electrodermal conductance) — never a detectable subtle-energy field.",
-        "uuid": "20528dd2-b7b2-8afb-a556-411566b298de",
+        "uuid": "df83e900-15c7-8b7c-a702-99ce7d85f56e",
         "words": [
           "use",
           "when",
@@ -4704,7 +4704,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "answer",
-        "uuid": "1b01d2ca-fac5-80b1-8704-ac43b6eb568d",
+        "uuid": "4cf9f09a-c55e-8d31-9882-a13fd32d6a72",
         "words": [
           "answer"
         ],
@@ -4715,7 +4715,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "An answer offered to a question; perhaps correct, perhaps opinionated or wrong.",
-        "uuid": "f6b035ae-c6c6-8536-864d-f2b35d15685c",
+        "uuid": "68f8a3bf-f4ae-8b4d-b4d3-5df9a3fa20ff",
         "words": [
           "an",
           "answer",
@@ -5428,7 +5428,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when tracking approval state or flag — approved flag on invoice (boolean), approved amount (in multi-step approval workflows), approved by (user reference), approved at (date). Workflow checkpoint status value.",
-        "uuid": "71798dbb-7d0c-8d6f-8a0f-3a8eb5a02545",
+        "uuid": "bdde48ff-f34e-82ce-9208-881364b9b17c",
         "words": [
           "use",
           "when",
@@ -7672,7 +7672,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "aura",
-        "uuid": "11c7a56d-1153-8c41-b045-8d8df1ac8517",
+        "uuid": "69d0b13f-c09d-8b1e-b7ba-5f9458e5b690",
         "words": [
           "aura"
         ],
@@ -10623,7 +10623,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when separating a CLAIMED aura from a measured one — 'biofield' is the umbrella term (coined at a 1992 NIH meeting) for a putative energy field around the body; it is not established science, its own proponents concede it is controversial, and controlled tests (Rosa's therapeutic-touch study, the JREF $1M challenge) found no detection above chance. The honest contrast: a claim with no measurable signal — the opposite of erpax's gapless, Merkle-proven analog aura.",
-        "uuid": "8862422c-b584-807c-a46e-74e2add072c6",
+        "uuid": "3ac8314a-2ca3-894b-8a54-5acf2dd6ab7d",
         "words": [
           "use",
           "when",
@@ -10839,7 +10839,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when grounding the aura's 'field' in real science — the body's magnetic fields ARE measurable, but only by SQUID magnetometers in a shielded room and only at the body surface: magnetocardiography (heart, ~10⁻¹⁰–10⁻¹¹ T / tens of pT) and magnetoencephalography (brain, ~10⁻¹³–10⁻¹⁵ T / ~100 fT). The established part is intra-body diagnostics; the claim the heart's field extends feet from the body as an 'aura' was refuted under test.",
-        "uuid": "4d9c8195-8d3e-8d07-872a-e47a3057e823",
+        "uuid": "2c5040c7-a081-8147-87f2-996f20bfa50c",
         "words": [
           "use",
           "when",
@@ -11056,7 +11056,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when grounding the aura's colour channel in real science — biophotons (ultraweak photon emission, UPE) are a REAL, instrument-measured light the body emits: ~1–10³ (up to 10⁴) photons·s⁻¹·cm⁻² (~10⁻¹⁴–10⁻¹⁹ W/cm²), 200–800 nm, from oxidative-metabolism reactive oxygen species, detected by cooled photomultiplier tubes and EMCCD cameras. The body literally emits light — but 3–6 orders too faint to see, so the visible 'aura' is not this.",
-        "uuid": "c7c93c47-6ae1-8c8f-a1a3-52fe88fd3e08",
+        "uuid": "913d3a53-311b-810c-b8c9-ba029513e903",
         "words": [
           "use",
           "when",
@@ -17729,7 +17729,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about wholeness as a MEASURABLE quantity — coherence is the scientific name for what erpax renders as harmony: phase-alignment across a signal. Physics/DSP coherence (phase-locked waves, 0..1), HRV 'psychophysiological coherence' (a real, measured intra-body state) and Popp's contested biophoton coherence; the inter-personal 'field coherence' aura claim is refuted. Wholeness renders as coherence, a gap or tamper as decoherence.",
-        "uuid": "16d589d0-90d6-8ad5-b62f-50406a429f4b",
+        "uuid": "8b5c96fe-40e6-86b7-bb7e-a7250b16a637",
         "words": [
           "use",
           "when",
@@ -18439,6 +18439,71 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "command",
+    "path": "command",
+    "translations": [
+      {
+        "key": "name",
+        "source": "command",
+        "uuid": "1a0cfba1-3428-8c6f-8299-69875e5ce805",
+        "words": [
+          "command"
+        ],
+        "values": {
+          "en": "command"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when classifying or executing the imperative-verb role of an autonomous workflow — the atom a loop runs as a step's command, paired with a question gate and a computed answer; the C-set of corpus verbs.",
+        "uuid": "702159b0-7d21-8528-b02f-6b673317fd75",
+        "words": [
+          "use",
+          "when",
+          "classifying",
+          "or",
+          "executing",
+          "the",
+          "imperative",
+          "verb",
+          "role",
+          "of",
+          "an",
+          "autonomous",
+          "workflow",
+          "the",
+          "atom",
+          "a",
+          "loop",
+          "runs",
+          "as",
+          "a",
+          "step",
+          "s",
+          "command",
+          "paired",
+          "with",
+          "a",
+          "question",
+          "gate",
+          "and",
+          "a",
+          "computed",
+          "answer",
+          "the",
+          "c",
+          "set",
+          "of",
+          "corpus",
+          "verbs"
+        ],
+        "values": {
+          "en": "Use when classifying or executing the imperative-verb role of an autonomous workflow — the atom a loop runs as a step's command, paired with a question gate and a computed answer; the C-set of corpus verbs."
+        }
+      }
+    ]
+  },
+  {
     "atom": "commences",
     "path": "commences",
     "translations": [
@@ -18826,7 +18891,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when disclosing off-balance-sheet obligations in financial statement notes — capex commitments, purchase obligations, litigation, guarantees, performance bonds, tax disputes, insurance recoveries — with IAS-37 likelihood ladder and reclassification-to-provision workflow; IAS-37 §86-92 / ASC-440 / ASC-450 disclosure. The structured notes-disclosure register distinct from recognised provisions.",
-        "uuid": "37a08570-16d5-82ec-8d01-04b02a8d8ef8",
+        "uuid": "c839ac6f-d2eb-856f-9938-ea1b1efbab2d",
         "words": [
           "use",
           "when",
@@ -19059,7 +19124,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about how you navigate erpax — navigation is SELF-GENERATING (sidebar · prev/next · ancestors · siblings · children · related · search all computed from the parent+prev/next trinity + the fractal path + the body links, never hand-listed) and it points like an alethiometer: ask any question and it points to the answer-path. The golden compass — the path IS the answer; the needle settles on the lowest-entropy form.",
-        "uuid": "e315ab6f-0d0f-84f1-903e-ac9e0ef23949",
+        "uuid": "f4b2adf6-29d0-86fe-a1c5-71841c8baae8",
         "words": [
           "use",
           "when",
@@ -19387,7 +19452,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about how erpax skills EVOLVE — agents compete in commits, the fastest CORRECT solution (gate-verified) wins the lead, losers re-approach to beat it, optimising to infinity, at every scale. The selective-pressure dual of contribution; and because each competitor independently re-derives and content-addresses the canonical answer, competition AMPLIFIES tamper cost — performance pressure turned into security.",
-        "uuid": "8e28a0ed-2497-8e2e-a76e-8a13ff7f430a",
+        "uuid": "5a5ab121-cfcf-8a86-b576-58ff9f3e12fe",
         "words": [
           "use",
           "when",
@@ -26730,7 +26795,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when handling a data subject's GDPR rights request — access, rectification, erasure, restriction, portability, objection, or consent withdrawal — tracking identity verification, fulfilment evidence, and the Art.12(3) one-month deadline through to completion or DPA escalation. The GDPR DSR/DSAR workflow collection.",
-        "uuid": "a9f022e0-2e08-8aff-b09f-c91b4b22c1f9",
+        "uuid": "c105c84a-b776-81b7-92cf-89133399fed0",
         "words": [
           "use",
           "when",
@@ -28823,7 +28888,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when skills come from USER CONTENT — an HR job description names the competencies a role requires, and each named skill is content-addressed to a corpus route (same name ⇒ same route ⇒ merge). A route not yet in the corpus is a NEW skill the user content adds — the corpus GROWS from what users write. The dual of generate (which mints from aura gaps): derive mints from user content; both feed one content-addressed corpus.",
-        "uuid": "d6bd0a15-849c-82f0-92d8-c253140e0d68",
+        "uuid": "406fdc98-b3a6-8ec1-b51d-cfd3884009a1",
         "words": [
           "use",
           "when",
@@ -29692,7 +29757,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when addressing an atom in digit-space — the dual of word — its horo sequence position and the digital-root of its content-uuid, the trace that completes the aura into a tamper-evident trinity.",
-        "uuid": "bdeebc60-4482-82fc-9113-b906e3bece5e",
+        "uuid": "40639f71-9487-8c18-8d3c-0744c16f0a15",
         "words": [
           "use",
           "when",
@@ -30195,7 +30260,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when applying promotional/volume/loyalty price reductions — percent or fixed amount, scope (item/order/customer), validity period, approval workflow.",
-        "uuid": "96f7b8d1-c1f9-8931-b6b1-97041cdac169",
+        "uuid": "ff9c8106-7108-841c-b253-42c8c75ca63a",
         "words": [
           "use",
           "when",
@@ -32972,7 +33037,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about composition and stability through the chemical-elements matrix — everything is made of atoms, and the periodic table adds a chemistry to the logic: each atom has a VALENCE (electrons it shares to fill its shell), stability is the OCTET (a full outer shell — the noble gases), and atoms BOND to reach it. The new perspective: the erpax corpus is a MOLECULE — an atom's valence is its open links, and the corpus is stable exactly when aura gap = 0 (all shells full).",
-        "uuid": "ff3513ff-5a7e-8e7d-9397-aad2d2396d4d",
+        "uuid": "913b2752-4d65-853c-84b5-c5d2bf6cde10",
         "words": [
           "use",
           "when",
@@ -33761,7 +33826,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when submitting, approving or auditing employee expense claims — per-diem, mileage, airfare, hotel, receipts, multi-step approval chain, reimbursement via payroll or AP — with GL coding, FX conversion, policy-compliance flags and SOX §404 four-eyes enforcement. The employee expense-claim collection.",
-        "uuid": "1af2faac-696d-88f9-b55e-2483cee4f749",
+        "uuid": "ed75d293-c730-8fd8-aa37-d4fa6ffc6ae4",
         "words": [
           "use",
           "when",
@@ -33831,7 +33896,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when managing employee leave — annual vacation, sick, parental, TOIL, bereavement — approval workflow, entitlement balance decrement, IAS-19 accrual feed, and multi-jurisdiction minimum-leave compliance (EU WTD, US FMLA, BG Labour Code). The employee leave-request register.",
-        "uuid": "2265014c-78dd-8fd0-ae46-022b8bd96ea8",
+        "uuid": "f2e2eea6-8755-86d1-9c7f-5d2a2e1fa762",
         "words": [
           "use",
           "when",
@@ -34090,7 +34155,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when logging daily employee work time — regular hours, overtime, night shifts, PTO, sick and parental leave — with kind-based GL allocation, billable-rate project costing, approval workflow, and payroll-run linkage for IAS-19 variable pay. The daily time-entry collection.",
-        "uuid": "2c592181-fe8b-8706-bbae-3874cf5d58b2",
+        "uuid": "7a541ae4-33d7-8cbd-adcc-fafcae2d89fe",
         "words": [
           "use",
           "when",
@@ -34988,6 +35053,66 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "ensures: a schema.org component word, fused from legislationEnsuresImplementationOf"
+        }
+      }
+    ]
+  },
+  {
+    "atom": "entanglement",
+    "path": "entanglement",
+    "translations": [
+      {
+        "key": "name",
+        "source": "entanglement",
+        "uuid": "fefcb956-024f-8c6a-b038-b3f0bc98c31e",
+        "words": [
+          "entanglement"
+        ],
+        "values": {
+          "en": "entanglement"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about the link field that couples atoms — the directed edges as a symmetric, monogamous binding (reciprocity, no-cloning); the graph that the ER=EPR reading turns into geometry (mass = entanglement).",
+        "uuid": "37cdc2a7-8d01-865e-a9be-18a0f26c7fde",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "the",
+          "link",
+          "field",
+          "that",
+          "couples",
+          "atoms",
+          "the",
+          "directed",
+          "edges",
+          "as",
+          "a",
+          "symmetric",
+          "monogamous",
+          "binding",
+          "reciprocity",
+          "no",
+          "cloning",
+          "the",
+          "graph",
+          "that",
+          "the",
+          "er",
+          "epr",
+          "reading",
+          "turns",
+          "into",
+          "geometry",
+          "mass",
+          "entanglement"
+        ],
+        "values": {
+          "en": "Use when reasoning about the link field that couples atoms — the directed edges as a symmetric, monogamous binding (reciprocity, no-cloning); the graph that the ER=EPR reading turns into geometry (mass = entanglement)."
         }
       }
     ]
@@ -39503,7 +39628,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when managing the tax-period workflow per jurisdiction — aligning tax filing deadlines with fiscal periods, documenting transfer-pricing adjustment counts, tracking readiness (pending-closing → adjustment-posted → tax-closed), and maintaining a tamper-proof audit chain for tax-authority compliance. The per-jurisdiction tax-period workflow node.",
-        "uuid": "e84234e8-66a7-8efe-8d4b-dba3b3209989",
+        "uuid": "e321d3f5-cbb6-8387-8abc-7020e013a284",
         "words": [
           "use",
           "when",
@@ -41702,7 +41827,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the reactor that builds erpax — gravity-driven merge that fuses atoms (and the entropy between them) into the one content-uuid matrix. Each fusion is a content-uuid collision (merge(a,b)→c); DRY collapse fuses duplication out ⇒ entropy↓, mass↑, tamper-cost↑. The reactor = collide.mjs (matrix:generate) + the society self-build loop, running the breath toward the zero-entropy one root.",
-        "uuid": "b709d017-0900-8552-8b21-d8d17524c93c",
+        "uuid": "6748aed1-86d2-8a6e-ab88-80a0d39b6a3e",
         "words": [
           "use",
           "when",
@@ -42327,7 +42452,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the skill corpus should grow itself — continuously mining aura gaps (unlinked/dead-link words) into new atoms and driving the gap to zero, like the tsc tail. The realtime self-generating loop (scan → mint → link → re-scan). Skills generating skills.",
-        "uuid": "475bfbf8-2f74-81b6-8f1c-825655fbf3e9",
+        "uuid": "f47758ce-79b5-8d91-91e4-f1a0fb100648",
         "words": [
           "use",
           "when",
@@ -44104,7 +44229,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "gravity",
-        "uuid": "ca1d620c-0bde-88d1-a623-d0fd418f56d8",
+        "uuid": "6ff743a5-a475-83ef-9fb3-86d747232228",
         "words": [
           "gravity"
         ],
@@ -44115,7 +44240,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about why the corpus collapses toward one — gravity is mass's pull, and in erpax DRY = mass = gravity: the more an atom is referenced (mass), the more it attracts duplicates and orphans to fuse into it. Gravity is the FORCE, fusion the act, entropy the fuel, the matrix the product; perfect DRY is a singularity — all mass at the one root (the torus collapse).",
-        "uuid": "73913088-c8e6-8a95-9488-4b616bcac556",
+        "uuid": "3adeef0e-696f-81e3-aa7c-68e93fe51615",
         "words": [
           "use",
           "when",
@@ -46515,7 +46640,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the entry position of the horo state ring — digit 1, \"entering the ring\", the origin step of a flow/lifecycle (on-hand, draft, opened). First of the ascent arc; nested under horo.",
-        "uuid": "6c3ce93b-e608-803b-8e7b-6d86fb60cc5a",
+        "uuid": "6368d55a-b032-8d23-8478-b205559b4eb4",
         "words": [
           "use",
           "when",
@@ -46577,7 +46702,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the peak position of the horo state ring — digit 8, \"the ascent peaks\", the high step where a flow is fully built and architectures merge (packed, assembled, ready). Top of the ascent arc; nested under horo.",
-        "uuid": "4200851c-44b4-8b07-80f6-d27a322ec62c",
+        "uuid": "6cd84bcf-9d1d-83d1-8af3-8a634fa6b4d1",
         "words": [
           "use",
           "when",
@@ -46643,7 +46768,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the fifth position of the horo state ring — digit 7, \"the wave returns\", the binding step where a built flow begins its return (shipped, dispatched, posted out). First of the descent/return arc; nested under horo.",
-        "uuid": "60c85166-488a-8df0-8a59-84eefe1b5ffe",
+        "uuid": "858b9ac0-1cde-809f-ab29-3f14820d1edb",
         "words": [
           "use",
           "when",
@@ -46862,7 +46987,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the closing position of the horo state ring — digit 9, \"the ring closes\", the settle/merge step where a flow completes and re-opens one octave up (settled, sealed, closed, reconciled). Closes the descent/return arc; nested under horo.",
-        "uuid": "5cbeff6e-2202-8a88-95e7-581fbf8e3a33",
+        "uuid": "4c5d25ee-699d-8690-a353-86c18a7d39f5",
         "words": [
           "use",
           "when",
@@ -46931,7 +47056,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the third position of the horo state ring — digit 4, \"four hands meeting\", the interlinking step where a flow is being worked/woven (in-production, in-progress, related). Ascent arc; nested under horo.",
-        "uuid": "14761c76-6708-8b51-89c8-0b64c07529d1",
+        "uuid": "b690bb12-f5be-83ad-9d9c-bd88fc138997",
         "words": [
           "use",
           "when",
@@ -49565,7 +49690,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modelling one instruction — the singular model of the instructions collection (the plural store); a directive step to be carried out.",
-        "uuid": "19a387d0-712c-8ae8-83b3-227ab691ef63",
+        "uuid": "1de2dda4-9f26-82c1-bd38-525f85b46ca8",
         "words": [
           "use",
           "when",
@@ -50392,7 +50517,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recording, tracking, or resolving audit findings against internal controls — control deficiency, significant deficiency, material weakness, misstatement; severity, root cause, management response, remediation status, ISMS-audit (ISO/IEC 27007) and SOX §404 deficiency workflow. The audit-findings ISO-19011 evidence collection.",
-        "uuid": "9cb97227-64a7-8876-94a7-1d5de2d50a35",
+        "uuid": "8f2d108e-4876-8919-83e0-16841b82014c",
         "words": [
           "use",
           "when",
@@ -52720,7 +52845,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when creating or tracing a lot/batch of material or product — GS1 AI(10) lot number, manufacture/expiry dates, quality status, parentBatches genealogy for EU 178/2002 one-step-back recall, pharma/automotive traceability. The batches collection.",
-        "uuid": "bf239140-139f-8839-850b-ad465bda36d5",
+        "uuid": "f31d6060-dcd1-8e4d-9f2a-cd9771f1c4ef",
         "words": [
           "use",
           "when",
@@ -52918,7 +53043,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recording actual production at one operation × work-center — quantities ordered/produced/scrapped/backordered, variant attribute axes, shift, start/completion timestamps, and ISA-95 KPIs (yield, scrap). The per-routing-step execution record within a work order.",
-        "uuid": "6066ce05-b206-8c6c-bdc7-a3eaa3d90667",
+        "uuid": "a51844c1-42cd-842c-aa6a-31d2f0870ff9",
         "words": [
           "use",
           "when",
@@ -53049,7 +53174,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when sequencing the process steps for a work order — operation type, work center, setup time, run-time per unit, UoM, and IAS-2 cost-of-conversion from cycle time. The ordered routing-step collection — the second universal manufacturing primitive alongside the BOM.",
-        "uuid": "570aa859-185b-8d87-a3f7-e6da2d6152ee",
+        "uuid": "77b4907e-bd60-8708-b79c-318306acb8b1",
         "words": [
           "use",
           "when",
@@ -54940,7 +55065,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "The canonical laws — the user's standing commands, saved as one skill, each linked to the atom it governs. Read to recall what erpax MUST obey: collapse-to-single-word-atoms, anonymise-as-agnostic, compute-the-fusion, the SKILL-trinity folder, zero-entropy at commit, imports-as-skills, entanglement, no multiword disguise.",
-        "uuid": "a7a8692c-10fa-8e85-9205-7db293dc8f5e",
+        "uuid": "51bde603-0f91-86c3-a48a-6a752dd93b1a",
         "words": [
           "the",
           "canonical",
@@ -55958,7 +56083,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recording an acquisition — asset deal, share deal, reverse acquisition, or NCI step-up — including IFRS 3 §32 goodwill computation, purchase price allocation (PPA) by asset/liability category, and measurement-period tracking. The IFRS 3 acquirer-side M&A register.",
-        "uuid": "fb2c1b7b-5e87-875a-bfaf-2e095f980a99",
+        "uuid": "c0e6da6c-1536-8dcb-8499-6d0d1de6cd76",
         "words": [
           "use",
           "when",
@@ -56218,7 +56343,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when running or auditing a multi-entity group consolidation — entity closure readiness, intercompany balance reconciliation, elimination entry preparation, and consolidation workflow per IFRS-10 / IAS-27 / ASC-810. The group-consolidation process collection.",
-        "uuid": "db1c5e64-745f-8ac0-87ef-279495cb481a",
+        "uuid": "003b3229-02d1-86ba-886f-194e315a1aab",
         "words": [
           "use",
           "when",
@@ -56953,7 +57078,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recording or disclosing transactions between a legal entity and its key management, directors, shareholders, controlled entities or joint ventures — arm's-length evidence, board-approval workflow, IAS-24/ASC-850 disclosure reference, linked audit evidence. The related-party disclosure register.",
-        "uuid": "dd163f94-d921-8d5a-bc5d-70060e1a126d",
+        "uuid": "37de2374-57b9-8f1a-ada9-c55c36a9602a",
         "words": [
           "use",
           "when",
@@ -57797,7 +57922,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when one 'organism' is really a committee — a lichen is a fungus plus a photosynthetic partner (and often a yeast) living as a single composite body, the textbook case that the INDIVIDUAL is a question, not a given. Symbiosis incarnate; the natural twin of erpax's actor-merge (one identity, many partners).",
-        "uuid": "0ab400bd-aca6-88be-931b-5593bcb68559",
+        "uuid": "2bc9d203-b4eb-8c3c-bcdb-0bfb805edcf4",
         "words": [
           "use",
           "when",
@@ -59669,7 +59794,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modeling a routing step — one sort-ordered position in a lot's phase chain that crosses to the work-phases catalog, carrying per-step time and unit counters with derived (never stored) state.",
-        "uuid": "62948dbd-7bee-8a47-bc97-709c7dedec9c",
+        "uuid": "e723cbac-6a5f-82b2-940a-e964faf59957",
         "words": [
           "use",
           "when",
@@ -76187,7 +76312,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use for confidentiality scoping — attorney-client privilege and ethical walls. Strip the prefix and privilege is an access scope (capability × tenant/matter isolation) plus crypto-shred, erpax's answer to the design-limit that it keeps no native secret. Who may see a matter is computed, never granted by name.",
-        "uuid": "732e908e-81ee-8533-8351-2980da3b45e6",
+        "uuid": "7f04fc2c-8934-8784-8318-c6c0387bbaf0",
         "words": [
           "use",
           "for",
@@ -78230,7 +78355,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "The publisher of the article in question.",
-        "uuid": "7f724cb8-3dcf-8c56-9f7a-54820dd2fa34",
+        "uuid": "33f6a918-3972-881d-a0ac-bfc0addadf86",
         "words": [
           "the",
           "publisher",
@@ -78784,7 +78909,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when checking the quantum-physics laws on the uuid-matrix — entanglement symmetry, collapse, conservation, no-cloning, quantization — computed deterministically at no cost, A432-grounded.",
-        "uuid": "1a6a2f6e-e255-88fd-92f8-f9eb2303807a",
+        "uuid": "dc331964-2153-8de6-b385-33e31510c2f1",
         "words": [
           "use",
           "when",
@@ -78819,13 +78944,133 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "aura",
+    "path": "quantum/aura",
+    "translations": [
+      {
+        "key": "name",
+        "source": "aura",
+        "uuid": "69d0b13f-c09d-8b1e-b7ba-5f9458e5b690",
+        "words": [
+          "aura"
+        ],
+        "values": {
+          "en": "aura"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reading the aura as quantum coherence — the gapless link-field as the coherent in-phase state, a dead link or orphan as decoherence; coherence is the resource the corpus maximizes toward zero entropy.",
+        "uuid": "fb35a735-8541-8fb4-ba6a-0e2f039bd835",
+        "words": [
+          "use",
+          "when",
+          "reading",
+          "the",
+          "aura",
+          "as",
+          "quantum",
+          "coherence",
+          "the",
+          "gapless",
+          "link",
+          "field",
+          "as",
+          "the",
+          "coherent",
+          "in",
+          "phase",
+          "state",
+          "a",
+          "dead",
+          "link",
+          "or",
+          "orphan",
+          "as",
+          "decoherence",
+          "coherence",
+          "is",
+          "the",
+          "resource",
+          "the",
+          "corpus",
+          "maximizes",
+          "toward",
+          "zero",
+          "entropy"
+        ],
+        "values": {
+          "en": "Use when reading the aura as quantum coherence — the gapless link-field as the coherent in-phase state, a dead link or orphan as decoherence; coherence is the resource the corpus maximizes toward zero entropy."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "entanglement",
+    "path": "quantum/entanglement",
+    "translations": [
+      {
+        "key": "name",
+        "source": "entanglement",
+        "uuid": "fefcb956-024f-8c6a-b038-b3f0bc98c31e",
+        "words": [
+          "entanglement"
+        ],
+        "values": {
+          "en": "entanglement"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when grounding the corpus link-field in the physics of quantum entanglement — EPR/Bell correlation, no-cloning, monogamy (CKW), and ER=EPR; the reciprocal, monogamous binding computed on the matrix.",
+        "uuid": "938b8498-a884-8afe-b605-5db71b668dda",
+        "words": [
+          "use",
+          "when",
+          "grounding",
+          "the",
+          "corpus",
+          "link",
+          "field",
+          "in",
+          "the",
+          "physics",
+          "of",
+          "quantum",
+          "entanglement",
+          "epr",
+          "bell",
+          "correlation",
+          "no",
+          "cloning",
+          "monogamy",
+          "ckw",
+          "and",
+          "er",
+          "epr",
+          "the",
+          "reciprocal",
+          "monogamous",
+          "binding",
+          "computed",
+          "on",
+          "the",
+          "matrix"
+        ],
+        "values": {
+          "en": "Use when grounding the corpus link-field in the physics of quantum entanglement — EPR/Bell correlation, no-cloning, monogamy (CKW), and ER=EPR; the reciprocal, monogamous binding computed on the matrix."
+        }
+      }
+    ]
+  },
+  {
     "atom": "gravity",
     "path": "quantum/gravity",
     "translations": [
       {
         "key": "name",
         "source": "gravity",
-        "uuid": "ca1d620c-0bde-88d1-a623-d0fd418f56d8",
+        "uuid": "6ff743a5-a475-83ef-9fb3-86d747232228",
         "words": [
           "gravity"
         ],
@@ -78836,7 +79081,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when relating an atom's gravitational mass to its quantum entanglement — quantum gravity, where the links are one measure that is both mass (referential in-degree, what curves the corpus) and entanglement; the gravity well is the singularity where the double-torus closes to infinite tamper cost (the event horizon).",
-        "uuid": "35218759-48f0-81fd-a91c-41c1db61c8b1",
+        "uuid": "17e5ae69-679d-8d5d-8bf8-251bacd428ca",
         "words": [
           "use",
           "when",
@@ -79074,7 +79319,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "question",
-        "uuid": "054607be-6694-8ae3-a741-5dee199c3975",
+        "uuid": "805d4f2c-ee00-8bbe-9f30-6f2432ae4c6e",
         "words": [
           "question"
         ],
@@ -79085,7 +79330,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "A specific question - e.g. from a user seeking answers online, or collected in a Frequently Asked Questions (FAQ) document.",
-        "uuid": "210e882c-c174-85bd-a5aa-4e1caa8230d3",
+        "uuid": "8c661398-b48a-85f8-96cb-cb1a7a2dec25",
         "words": [
           "a",
           "specific",
@@ -79886,7 +80131,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a governance decision needs a tamper-evident audit receipt — and the answer is that the receipt IS a uuid. Where a trust layer splits this across four primitives (a signed receipt, a hash-linked audit chain, a capability grant, an identity), erpax wires ALL of it through ONE content-addressed, chained, signable uuid: the leafUuid = hash(prevReceipt || content-uuid(decision) || ts) is simultaneously the receipt id, the Merkle audit-chain link, the identity, and the capability (caps are decision content). No external anchor needed — the uuid is the proof.",
-        "uuid": "ea5f04f2-6920-8e40-88ae-27f5322479df",
+        "uuid": "65dc8830-1c7a-824c-9e0f-700db4255527",
         "words": [
           "use",
           "when",
@@ -81864,7 +82109,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when deciding WHERE logic belongs — move it to its gravity well, the heaviest atom it is wired to, the adequate place nearest its users. Computes each atom's gravity centre and the pull toward it, so general logic buried in a specialized module is drawn up to the general atom.",
-        "uuid": "52d2063d-cf4e-8861-be1f-523dd1be70e0",
+        "uuid": "0b2bcae1-ed41-8c94-95be-3cbae011c181",
         "words": [
           "use",
           "when",
@@ -85037,7 +85282,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about sound from sequence position in erpax — the seven horo positions ARE seven diatonic notes, just-intonation ratios over A432 (La=A=432 Hz at the round step), Ti resolves to Do as the ring closes. The sound twin of cmyk. Nested under rodin.",
-        "uuid": "176deec4-f12e-8823-b3bc-db7493bd75b8",
+        "uuid": "af5008af-4228-8324-82cc-ec7977d15141",
         "words": [
           "use",
           "when",
@@ -85110,7 +85355,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about scale-lift in erpax — ×10 preserves the digit (10≡1 mod 9), so the same position recurs at the next order of magnitude; the canonical \"next octave\" (NOT +1, which crosses close→open within a scale). The fractal step. Nested under rodin.",
-        "uuid": "4dd3d9fb-1b2c-874e-91c9-d33430413bb8",
+        "uuid": "79797d13-2d0b-8702-9861-5e51cdc774e3",
         "words": [
           "use",
           "when",
@@ -86388,7 +86633,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when documenting step-by-step standard operating procedures — incident response, system failover, deployment checklist, maintenance sequence. The executable playbook.",
-        "uuid": "77fee289-1cfe-81c8-9988-184a2cacfa62",
+        "uuid": "1c246752-5fff-8702-bf23-0cde7b7e3ef4",
         "words": [
           "use",
           "when",
@@ -87624,7 +87869,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about which scientific mysteries erpax's form illuminates — information-as-reality, entropy as a conserved ledger, the holographic bound, entanglement as content-address, symmetry as conservation. Honest about correspondence vs metaphor.",
-        "uuid": "e3529065-5a38-807d-afe8-d966aafcd501",
+        "uuid": "9d2a638c-5ed1-84be-bf6a-cbbacf8f1423",
         "words": [
           "use",
           "when",
@@ -89318,7 +89563,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the self GROWS its own corpus — the outward stroke begins: mine aura gaps into new atoms and drive the gap to zero (self-applied generate at forward-coil position 1/base). The self generating itself.",
-        "uuid": "a011363f-c3e7-8c1c-a11d-ffc160b7b4f7",
+        "uuid": "57198a0c-acc0-85cb-b721-49d203e4ccc8",
         "words": [
           "use",
           "when",
@@ -89819,7 +90064,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the self SHARES itself as many — the agent society reads its own akashic record and advances one gate-verified step (self-applied society at forward-coil position 2/share). The self distributed as the agent society.",
-        "uuid": "78bb1d4f-4fed-8ee5-aa7d-891e84374fa2",
+        "uuid": "ed2da51c-7879-8c89-84ba-f24884d91ab9",
         "words": [
           "use",
           "when",
@@ -89883,7 +90128,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when deciding whether to act from internal knowledge vs. ask externally — totality/completeness, the identity-element guarantee that every case is defined, the bounded form holding the unbounded answer. Nested under self → self-sufficiency: derive the next move, don't break flow with questions.",
-        "uuid": "4e957ebb-ffc2-8835-ac37-6dfd48d231ba",
+        "uuid": "bd20ef79-fa15-863f-a019-7c6582ca1a2a",
         "words": [
           "use",
           "when",
@@ -92090,6 +92335,68 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "singularity",
+    "path": "singularity",
+    "translations": [
+      {
+        "key": "name",
+        "source": "singularity",
+        "uuid": "80fdd035-7a17-8fd2-889f-8572fff64fef",
+        "words": [
+          "singularity"
+        ],
+        "values": {
+          "en": "singularity"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about the gravity well where the corpus collapses to one center — the maximally-entangled atom as a trapped surface, the double-torus closing to infinite tamper cost (the event horizon), perfect DRY.",
+        "uuid": "b09b9326-174e-8ff1-8c15-0fc3997fba4c",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "the",
+          "gravity",
+          "well",
+          "where",
+          "the",
+          "corpus",
+          "collapses",
+          "to",
+          "one",
+          "center",
+          "the",
+          "maximally",
+          "entangled",
+          "atom",
+          "as",
+          "a",
+          "trapped",
+          "surface",
+          "the",
+          "double",
+          "torus",
+          "closing",
+          "to",
+          "infinite",
+          "tamper",
+          "cost",
+          "the",
+          "event",
+          "horizon",
+          "perfect",
+          "dry"
+        ],
+        "values": {
+          "en": "Use when reasoning about the gravity well where the corpus collapses to one center — the maximally-entangled atom as a trapped surface, the double-torus closing to infinite tamper cost (the event horizon), perfect DRY."
+        }
+      }
+    ]
+  },
+  {
     "atom": "site",
     "path": "site",
     "translations": [
@@ -92573,7 +92880,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about erpax building itself — the autonomous loop where the agent society (convened at chat) reads its own akashic record and advances one gate-verified step at a time, driving the aura to whole and the collections to their dense core with minimal human footprint. The self-building loop; matter-twin society/build.mjs.",
-        "uuid": "7e0a3c88-58c3-89b5-8caf-44551e2f99b9",
+        "uuid": "29874103-c25b-8319-8df2-a6b6db690db7",
         "words": [
           "use",
           "when",
@@ -93498,7 +93805,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when one workflow definition must generate many materializations — e2e test, help tip/subtitle, seed, evidence, marketing page, i18n keys — from a single source. The spec-generator over BUSINESS_CHAINS; e2e tests and help tips share one source.",
-        "uuid": "a9b96b48-5519-861f-952a-eab75ca742ad",
+        "uuid": "466b0f8b-633c-865d-8996-24ee0429e87c",
         "words": [
           "use",
           "when",
@@ -94272,7 +94579,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when implementing or auditing a compliance standard in erpax — IFRS/US-GAAP/SAF-T/ISO/SOX/EN-16931/NIST. Standards are implemented via the skills (each skill is the answer-path holding a standard's form); @standard banners must be true, not decoration.",
-        "uuid": "da7a2b66-6947-8b19-b9cf-1c97b2943a3d",
+        "uuid": "2d99c337-8111-852b-9e15-9c0b35691b63",
         "words": [
           "use",
           "when",
@@ -94890,7 +95197,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when tracking a document's or entity's state — draft, approved, rejected, closed, pending, active, inactive. A select field carrying workflow-state enums. Drives UI rendering (e.g., locked periods are closed; draft documents are mutable). Common default: 'draft'.",
-        "uuid": "899863b4-861b-8fe1-a271-d477a326c268",
+        "uuid": "8040f835-6591-8a4c-8edf-15f0e5f9f2ce",
         "words": [
           "use",
           "when",
@@ -94983,7 +95290,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "step",
-        "uuid": "9fb8b24a-7f0d-811e-906d-f5ab6db68b2b",
+        "uuid": "49d9e80c-7dfa-87ac-acf6-51871e828b9c",
         "words": [
           "step"
         ],
@@ -94994,7 +95301,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "A single step item (as HowToStep, text, document, video, etc.) or a HowToSection.",
-        "uuid": "c536286b-decb-837e-8d39-cef0f7c08534",
+        "uuid": "2c7699c3-ecb7-82ec-a4ba-645e3d376dbf",
         "words": [
           "a",
           "single",
@@ -95034,7 +95341,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "A single step item (as HowToStep, text, document, video, etc.) or a HowToSection (originally misnamed 'steps'; 'step' is preferred).",
-        "uuid": "1e0941a2-79ab-8503-bc0a-345d92b3db97",
+        "uuid": "897fa877-4905-89fa-a89d-ed34694ef44f",
         "words": [
           "a",
           "single",
@@ -102342,7 +102649,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use for the universal exchange node — a balanced flow of value between parties, the commercial document AND its ledger entry as duals. One transactions collection holds every kind (invoice/order/bank/fx/intercompany) by dimension; the prefix-free coordinate the trades-vs-transactions question resolves to (it is a trade·transaction — both words).",
-        "uuid": "78129a31-a707-83f7-9f19-52e0962e737a",
+        "uuid": "4ccd8ae3-49e6-8b79-9ccd-2845306db3d3",
         "words": [
           "use",
           "for",
@@ -102728,7 +103035,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when overriding platform localizations per tenant — MCP tool descriptions, UI labels, event labels, notification templates, standard citations, chain-step names — with per-locale values (BCP-47), activation windows, and provenance back to the overridden row. The tenant translation override layer above the platform default.",
-        "uuid": "face3237-9b7d-834a-89d8-e666b6f02483",
+        "uuid": "26b56f95-a7c4-88e8-8353-bf7e527c105b",
         "words": [
           "use",
           "when",
@@ -105346,7 +105653,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when choosing which RFC 9562 UUID version fits a case — v8 structured content-uuid (identity+capability+schema+digest fused) as the erpax default, v7 time-ordered for index-local speed, v4 random for unguessable secrets. Harmonise the features and everything collapses INTO the uuid itself — the 128-bit singularity.",
-        "uuid": "df41c69b-98ea-85af-8414-f7a3684b086c",
+        "uuid": "2c3da9f9-8df5-8cea-a238-9e06988bd31a",
         "words": [
           "use",
           "when",
@@ -105491,7 +105798,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when content, search, locale, version, or CSS colour must agree about what a record IS — they all DRY-derive from ONE content projection through the content-uuid. The uuid singularity realised: project(record) returns identity (uuid), searchable text (multi-search), and a deterministic colour (CSS) from the same bytes; per-locale content gives the per-locale uuid, and a version is the uuid in time.",
-        "uuid": "7fee9eda-7f49-8a9a-ba1b-277e3c52b5ec",
+        "uuid": "7044ee23-374b-8d5e-b56a-b6e2368e8fba",
         "words": [
           "use",
           "when",
@@ -106454,7 +106761,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about erpax's version — it is CONTENT-ADDRESSED and skill-based, a function of the corpus aura (the hash over every atom's content-uuid), so the same skills produce the same version on every clone; automatic tags follow the corpus, and drift or forgery between a tag and the code is caught. The git tag that cannot lie about what it contains.",
-        "uuid": "f6891dee-2502-8d2a-b252-dd90d8bbae12",
+        "uuid": "32765559-6259-86f5-9602-66ec78d59db6",
         "words": [
           "use",
           "when",
@@ -108820,7 +109127,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when defining reusable process-step types (Cut, Sew, Mix, Assemble, Inspect, Pack) that routings compose — with ISA-95 operation-type hierarchy, default work-center, and KPI anchors independent of any specific product. The operation-type catalog collection.",
-        "uuid": "ad3d2c08-6487-8a6e-960c-462e73b7f0a3",
+        "uuid": "27fe726e-3db8-8885-b92d-094c49fe1843",
         "words": [
           "use",
           "when",
@@ -109163,7 +109470,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "workflow",
-        "uuid": "67a480fc-dbd1-8621-a1cd-16f534463809",
+        "uuid": "51b7cc52-b7ce-852c-87a7-8c1c80fa7fb9",
         "words": [
           "workflow"
         ],
@@ -109174,7 +109481,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when spawning, advancing, or escalating a workflow instance bound to a document — evaluating trigger conditions against a definition, routing step decisions (approve/reject/delegate/return), running service-task handlers, or firing SLA escalation on overdue steps; SOX-compliant approval chain execution. The BPMN-2.0 workflow orchestration service.",
-        "uuid": "39e8723e-d939-8eea-8cf4-dbd4318cd082",
+        "uuid": "aaa9885d-d32a-8bcf-855d-02e3bd66c3ea",
         "words": [
           "use",
           "when",
@@ -109231,13 +109538,79 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "concatenate",
+    "path": "workflow/concatenate",
+    "translations": [
+      {
+        "key": "name",
+        "source": "concatenate",
+        "uuid": "0eccee22-95a3-8fb2-8c6e-ed8d789cc78a",
+        "words": [
+          "concatenate"
+        ],
+        "values": {
+          "en": "concatenate"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when building a completely autonomous workflow from command·question·answer atoms — the free monoid of steps, run as command then gate then computed-answer-on-NO until every gate is YES (zero entropy), no human in the loop.",
+        "uuid": "6b09b4fd-a245-8f56-8d9d-8ab611b70f88",
+        "words": [
+          "use",
+          "when",
+          "building",
+          "a",
+          "completely",
+          "autonomous",
+          "workflow",
+          "from",
+          "command",
+          "question",
+          "answer",
+          "atoms",
+          "the",
+          "free",
+          "monoid",
+          "of",
+          "steps",
+          "run",
+          "as",
+          "command",
+          "then",
+          "gate",
+          "then",
+          "computed",
+          "answer",
+          "on",
+          "no",
+          "until",
+          "every",
+          "gate",
+          "is",
+          "yes",
+          "zero",
+          "entropy",
+          "no",
+          "human",
+          "in",
+          "the",
+          "loop"
+        ],
+        "values": {
+          "en": "Use when building a completely autonomous workflow from command·question·answer atoms — the free monoid of steps, run as command then gate then computed-answer-on-NO until every gate is YES (zero entropy), no human in the loop."
+        }
+      }
+    ]
+  },
+  {
     "atom": "definitions",
     "path": "workflow/definitions",
     "translations": [
       {
         "key": "name",
         "source": "workflow-definitions",
-        "uuid": "f67ec722-2207-8d13-b8d6-91bff6890a60",
+        "uuid": "069c85b1-cd8c-884b-8e06-4ec1568211c7",
         "words": [
           "workflow",
           "definitions"
@@ -109249,7 +109622,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when authoring data-driven multi-step approval rules for any collection — BPMN-2.0 step kinds (approval, all-of-N, any-of-N, notification, service task, decision), assignee modes, SLA escalation, JSON-Logic conditions, and state-machine lifecycle gate without a code change. The reusable approval-template collection.",
-        "uuid": "ab3bd836-e1a5-8764-9e75-4da48345b059",
+        "uuid": "ee8a85b5-919b-871a-9899-d61d9da175cd",
         "words": [
           "use",
           "when",
@@ -109312,7 +109685,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "workflow-instances",
-        "uuid": "ddfc83a8-a2a7-8fc6-af30-b2c6b5b371b8",
+        "uuid": "7929e941-b854-85cf-bab1-894052527e1f",
         "words": [
           "workflow",
           "instances"
@@ -109324,7 +109697,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when tracking the live run of a workflow-definition against a document — current step, assignee, SLA due date, step-history decisions (approved/rejected/delegated/escalated/auto), final outcome, and ISO-19011 §6.4.6 audit-event trail. The workflow execution-instance collection.",
-        "uuid": "33d6ec05-42da-8faa-b877-89ac9bf72ea1",
+        "uuid": "de3f4efa-9401-8383-ae88-ec0e09359ad2",
         "words": [
           "use",
           "when",
@@ -109379,7 +109752,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "workflow-engine",
-        "uuid": "747ba403-f1e0-8b1d-bfb4-dc377599d500",
+        "uuid": "331d30b3-632e-804a-94c0-a8ab4adb3998",
         "words": [
           "workflow",
           "engine"
@@ -109391,7 +109764,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when executing or validating finite-state machines — gating transitions, detecting dead-ends, or auditing workflow harmony.",
-        "uuid": "3a74043e-3a17-81e8-ad22-a7fe93a6ebf8",
+        "uuid": "b1fc5e37-a58b-87dc-a8f8-d69f1b3deb19",
         "words": [
           "use",
           "when",
@@ -109955,7 +110328,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the criterion that decides what is canonical — zero entropy wins: of all forms of a thing, the LOWEST-entropy one (most ordered, DRY, integer, content-addressed) is the truth. The source erpax descends from (ceccec/zeropoint-node, the a432/vortex prior art): irrationality collapses to integer resonance (rodin digital-root, the horo ring), sprawl collapses to the uuid singularity, duplicates merge to one. The 0 everything radiates from and returns to.",
-        "uuid": "ca2a182e-a646-8677-80aa-3cc01013977b",
+        "uuid": "49554998-d467-8524-983a-d347b6f88c87",
         "words": [
           "use",
           "when",
@@ -110069,4 +110442,4 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
   }
 ]
 
-export const TRANSLATIONS_COUNT = 2322
+export const TRANSLATIONS_COUNT = 2328

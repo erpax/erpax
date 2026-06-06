@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "A single step item (as HowToStep, text, document, video, etc.) or a HowToSection (originally misnamed 'steps'; 'step' is preferred).",
-    "uuid": "1e0941a2-79ab-8503-bc0a-345d92b3db97",
+    "uuid": "897fa877-4905-89fa-a89d-ed34694ef44f",
     "words": [
       "a",
       "single",

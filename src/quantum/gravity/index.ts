@@ -19,39 +19,15 @@
  * @audit composed from the live matrix mass + the double-torus cost; never hand-asserted
  * @see ../../gravity (mass) -- ../index.ts (the double-torus) -- ../../cost -- ./SKILL.md
  */
-import { massOf, well, heaviest, concentration } from '@/gravity'
-import { doubleTorusCostLog2 } from '@/quantum'
+import { massOf, heaviest } from '@/gravity'
+import { singularity, isEventHorizon, type Singularity } from '@/singularity'
 
 /** Mass = entanglement: an atom's gravitational mass IS its link-entanglement (ER=EPR; the in-link is one edge). */
 export const entanglementMass = (atom: string): number => massOf(atom)
 
-export interface Singularity {
-  /** the maximally-entangled atom = the deepest gravity well */
-  atom: string
-  /** its mass = its entanglement (referential in-degree) */
-  mass: number
-  /** the corpus curvature (Gini of the mass) — how far it has fallen toward the one center */
-  curvature: number
-  /** the double-torus tamper cost at the well with no gap — ∞, the event horizon */
-  tamperCostLog2: number
-}
-
-/**
- * The singularity: the gravity well, where mass (gravity) and entanglement (quantum)
- * are both maximal and the double-torus closes (no gap) to ∞ tamper cost — the event
- * horizon, perfect DRY (one center). Composes gravity.well ⊕ quantum.doubleTorusCostLog2.
- */
-export const singularity = (): Singularity => {
-  const w = well()
-  return { atom: w.atom, mass: w.mass, curvature: concentration(), tamperCostLog2: doubleTorusCostLog2(0) }
-}
-
-/**
- * Is `coverage` at the event horizon? At coverage 1 (no gap) the double-torus closes
- * to ∞ — the horizon is unforgeable. Below 1 a gap is the escape (finite cost).
- */
-export const isEventHorizon = (coverage: number): boolean =>
-  doubleTorusCostLog2(1 - Math.max(0, Math.min(coverage, 1))) === Number.POSITIVE_INFINITY
+// The singularity (the gravity well closing to ∞ — the event horizon) lives in its own
+// atom by gravity-pull; re-exported here as the ER=EPR view (mass = entanglement at the well).
+export { singularity, isEventHorizon, type Singularity }
 
 if (import.meta.url === 'file://' + process.argv[1]) {
   const s = singularity()

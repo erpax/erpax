@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when tracking a document's or entity's state — draft, approved, rejected, closed, pending, active, inactive. A select field carrying workflow-state enums. Drives UI rendering (e.g., locked periods are closed; draft documents are mutable). Common default: 'draft'.",
-    "uuid": "899863b4-861b-8fe1-a271-d477a326c268",
+    "uuid": "8040f835-6591-8a4c-8edf-15f0e5f9f2ce",
     "words": [
       "use",
       "when",

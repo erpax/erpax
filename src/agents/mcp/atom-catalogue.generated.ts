@@ -1159,8 +1159,8 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "aura",
     "name": "aura",
-    "description": "Use when reasoning about a folder/path's collective identity in erpax — the content-uuid Merkle hash of all files within (SKILL.md + matter-twin + relations + sub-folders); folders are content-addressed too, so they merge by design.",
-    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/aura"
+    "description": "Use when reading the aura as quantum coherence — the gapless link-field as the coherent in-phase state, a dead link or orphan as decoherence; coherence is the resource the corpus maximizes toward zero entropy.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/quantum/aura"
   },
   {
     "atom": "auth",
@@ -2567,6 +2567,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/comic"
   },
   {
+    "atom": "command",
+    "name": "command",
+    "description": "Use when classifying or executing the imperative-verb role of an autonomous workflow — the atom a loop runs as a step's command, paired with a question gate and a computed answer; the C-set of corpus verbs.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/command"
+  },
+  {
     "atom": "commences",
     "name": "commences",
     "description": "commences: a schema.org component word, fused from legislationCommences",
@@ -2751,6 +2757,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "computer",
     "description": "computer: a schema.org component word, fused from ComputerLanguage, ComputerStore",
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/computer"
+  },
+  {
+    "atom": "concatenate",
+    "name": "concatenate",
+    "description": "Use when building a completely autonomous workflow from command·question·answer atoms — the free monoid of steps, run as command then gate then computed-answer-on-NO until every gate is YES (zero entropy), no human in the loop.",
+    "path": "workflow/concatenate"
   },
   {
     "atom": "condition",
@@ -4497,6 +4509,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "ensures",
     "description": "ensures: a schema.org component word, fused from legislationEnsuresImplementationOf",
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/ensures"
+  },
+  {
+    "atom": "entanglement",
+    "name": "entanglement",
+    "description": "Use when grounding the corpus link-field in the physics of quantum entanglement — EPR/Bell correlation, no-cloning, monogamy (CKW), and ER=EPR; the reciprocal, monogamous binding computed on the matrix.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/quantum/entanglement"
   },
   {
     "atom": "enterprisebudget",
@@ -11313,6 +11331,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "single",
     "description": "single: a schema.org component word, fused from SingleFamilyResidence",
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/single"
+  },
+  {
+    "atom": "singularity",
+    "name": "singularity",
+    "description": "Use when reasoning about the gravity well where the corpus collapses to one center — the maximally-entangled atom as a trapped surface, the double-torus closing to infinite tamper cost (the event horizon), perfect DRY.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/singularity"
   },
   {
     "atom": "site",

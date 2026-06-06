@@ -9,6 +9,8 @@ A specific question - e.g. from a user seeking answers online, or collected in a
 
 Entangled with — [[edu]] · [[type]]
 
+In an autonomous workflow — a **question** is the yes/no **gate** a [[step]] asks after its [[command]]; on NO the computed [[answer]] is applied and the question re-asked until YES ([[concatenate]]).
+
 Attested in schema.org — Question · eduQuestionType · question
 
 @standard schema.org — the type vocabulary, collided to single words

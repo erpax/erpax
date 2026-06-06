@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one instruction — the singular model of the instructions collection (the plural store); a directive step to be carried out.",
-    "uuid": "19a387d0-712c-8ae8-83b3-227ab691ef63",
+    "uuid": "1de2dda4-9f26-82c1-bd38-525f85b46ca8",
     "words": [
       "use",
       "when",
