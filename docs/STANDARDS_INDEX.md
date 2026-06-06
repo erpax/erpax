@@ -5424,6 +5424,7 @@ src/customers/sales/orders/shipments/index.ts:7: * @audit ISO-19011:2018 audit-t
 src/customers/sales/orders/shipments/tracking/events/index.ts:15: * @audit ISO-19011:2018 audit-trail shipment-tracking
 src/data/processing/activities/index.ts:13: * @audit ISO-19011:2018 audit-trail ropa-evidence
 src/data/subject/requests/index.ts:16: * @audit ISO-19011:2018 audit-trail dsr-evidence
+src/db/index.ts:11: * @audit the key is the content's uuid (content-addressed); dedup and the round-trip are computed
 src/decentralization/index.ts:16: * @audit computed, never hand-asserted
 src/decompression/index.ts:47: * @audit ISO 19011 — pay-over-time is a deterministic, auditable curve (no discretion)
 src/deploy/index.ts:11: * @audit the band is the doubling 1·2·4·8; its consonance is computed by @/harmony, the order never assumed
@@ -5697,6 +5698,7 @@ src/mineral/resource/assets/index.ts:18: * @audit ISO 19011:2018 §6.4.6 audit-e
 src/modal/CreateJournalEntryModal.tsx:13: * @audit ISO-19011:2018 audit-trail journal-entry-creation
 src/multi/currency.service/index.ts:19: * @audit ISO-19011:2018 audit-trail
 src/multi/search/index.ts:40: * @audit Conservation Law 53 self-referential-closure (this is the internal half)
+src/name/index.ts:11: * @audit uuidOfName is total — defined for ANY name, so every name folds; the identity is computed
 src/naredba/n/18/unp.ts:20: * @audit ISO-19011:2018 audit-trail (УНП ties order ↔ fiscal-receipt ↔ payment)
 src/navel/index.ts:11: * @audit note·colour·uuid computed from the position math, never hand-asserted
 src/nist/incits/359/payload.ts:7: * @audit ISO-19011:2018 audit-trail role-assignment
