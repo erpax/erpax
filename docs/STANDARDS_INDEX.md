@@ -5426,6 +5426,7 @@ src/data/processing/activities/index.ts:13: * @audit ISO-19011:2018 audit-trail 
 src/data/subject/requests/index.ts:16: * @audit ISO-19011:2018 audit-trail dsr-evidence
 src/decentralization/index.ts:16: * @audit computed, never hand-asserted
 src/decompression/index.ts:47: * @audit ISO 19011 — pay-over-time is a deterministic, auditable curve (no discretion)
+src/deploy/index.ts:11: * @audit the band is the doubling 1·2·4·8; its consonance is computed by @/harmony, the order never assumed
 src/depreciation.service/index.ts:27: * @audit ISO-19011:2018 audit-trail depreciation-evidence
 src/design/index.ts:20: * @audit every token/palette entry is computed from an atom's uuid via pixel(); no hardcoded hex
 src/development/research/index.ts:10: * @audit the cross binding is computed (entangle over the pair); never hand-asserted
