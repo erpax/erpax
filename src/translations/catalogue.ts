@@ -43060,7 +43060,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the skill corpus should grow itself — continuously mining aura gaps (unlinked/dead-link words) into new atoms and driving the gap to zero, like the tsc tail. The realtime self-generating loop (scan → mint → link → re-scan). Skills generating skills.",
-        "uuid": "500c25d3-ac2d-8089-b50a-8e85d3dfc66a",
+        "uuid": "011b8385-bea6-8762-a7e6-510c38c56d28",
         "words": [
           "use",
           "when",
@@ -76012,7 +76012,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about how the LIVE network makes erpax harder to forge — usage = entropy = power; realtime clients are the distributed hardware (as Bitcoin's miners are its hashpower), and accumulated use raises the cost to decode the private keys (the inverse projection).",
-        "uuid": "4bfb4a86-7993-8bf2-ba9f-71ab9b247e2f",
+        "uuid": "e8909f88-bcd8-8b0e-a685-bf69bf5ddf57",
         "words": [
           "use",
           "when",
@@ -80991,7 +80991,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "translator",
-        "uuid": "54ed469f-e5b8-83eb-ba07-65d5117b820b",
+        "uuid": "f1d608f6-e47e-820e-8f6b-a84500ba3a8c",
         "words": [
           "translator"
         ],
@@ -81002,7 +81002,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reading erpax as a quantum translator — surface forms collapsing to one meaning-uuid (the interlingua eigenstate), meaning obeying no-cloning, modalities entangled in the 128 bits.",
-        "uuid": "78ad01b9-f0bb-82ed-890e-1cbd7a8e24c9",
+        "uuid": "2a5592dd-d240-8f37-89f9-a8d06eddd4eb",
         "words": [
           "use",
           "when",
@@ -82265,6 +82265,122 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "Use when reasoning about the live shipped state versus the model — reality is what is actually on main / deployed; the live matrix root is its fingerprint, and a claim is real iff it matches that root."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "realtime",
+    "path": "realtime",
+    "translations": [
+      {
+        "key": "name",
+        "source": "realtime",
+        "uuid": "b9dfc937-39b0-8a96-b0ad-143208095392",
+        "words": [
+          "realtime"
+        ],
+        "values": {
+          "en": "realtime"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modeling live delivery of events — an append-only log plus a per-subscriber cursor, where the live tail is everything after the cursor; the pull-side semantics over a stream.",
+        "uuid": "eb6dcd27-c171-87f2-8cf7-09e0209e5146",
+        "words": [
+          "use",
+          "when",
+          "modeling",
+          "live",
+          "delivery",
+          "of",
+          "events",
+          "an",
+          "append",
+          "only",
+          "log",
+          "plus",
+          "a",
+          "per",
+          "subscriber",
+          "cursor",
+          "where",
+          "the",
+          "live",
+          "tail",
+          "is",
+          "everything",
+          "after",
+          "the",
+          "cursor",
+          "the",
+          "pull",
+          "side",
+          "semantics",
+          "over",
+          "a",
+          "stream"
+        ],
+        "values": {
+          "en": "Use when modeling live delivery of events — an append-only log plus a per-subscriber cursor, where the live tail is everything after the cursor; the pull-side semantics over a stream."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "translator",
+    "path": "realtime/translator",
+    "translations": [
+      {
+        "key": "name",
+        "source": "translator",
+        "uuid": "f1d608f6-e47e-820e-8f6b-a84500ba3a8c",
+        "words": [
+          "translator"
+        ],
+        "values": {
+          "en": "translator"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when translating a live event tail as it arrives — each realtime message reduced to its language-independent meaning so any EU-language subscriber reads the same thing zero-shot.",
+        "uuid": "f751f4e3-500d-803b-85cb-caf75c5b0f5f",
+        "words": [
+          "use",
+          "when",
+          "translating",
+          "a",
+          "live",
+          "event",
+          "tail",
+          "as",
+          "it",
+          "arrives",
+          "each",
+          "realtime",
+          "message",
+          "reduced",
+          "to",
+          "its",
+          "language",
+          "independent",
+          "meaning",
+          "so",
+          "any",
+          "eu",
+          "language",
+          "subscriber",
+          "reads",
+          "the",
+          "same",
+          "thing",
+          "zero",
+          "shot"
+        ],
+        "values": {
+          "en": "Use when translating a live event tail as it arrives — each realtime message reduced to its language-independent meaning so any EU-language subscriber reads the same thing zero-shot."
         }
       }
     ]
@@ -105707,7 +105823,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "translator",
-        "uuid": "54ed469f-e5b8-83eb-ba07-65d5117b820b",
+        "uuid": "f1d608f6-e47e-820e-8f6b-a84500ba3a8c",
         "words": [
           "translator"
         ],
@@ -113080,4 +113196,4 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
   }
 ]
 
-export const TRANSLATIONS_COUNT = 2371
+export const TRANSLATIONS_COUNT = 2373

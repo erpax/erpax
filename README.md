@@ -17,10 +17,10 @@ Computed from the live tree by `src/readme` — never asserted, never rounded.
 | Metric | Value |
 | --- | --- |
 | Collections registered (the `@/collections` barrel) | **210** |
-| Top-level `src/<word>` atom folders | **2170** |
-| Concept atoms (`SKILL.md` files) | **2371** |
-| Data atoms (`index.ts` files) | **658** |
-| Colocated proofs (`test.ts` files) | **342** |
+| Top-level `src/<word>` atom folders | **2171** |
+| Concept atoms (`SKILL.md` files) | **2373** |
+| Data atoms (`index.ts` files) | **660** |
+| Colocated proofs (`test.ts` files) | **344** |
 | Governing standards catalogued | **142** |
 | Payload plugins composed | **13** |
 | Admin UI locales | **30** |
@@ -215,7 +215,7 @@ The `SKILL.md` corpus is served as a VitePress site — `pnpm docs:dev`. Referen
 ## Project facts
 
 - **Name:** erpax · **Version:** 1.0.0 · **License:** MIT
-- **Scope:** 210 Payload collections · 2371 `SKILL.md` atoms · 142 standards · 13 plugins · 30 locales
+- **Scope:** 210 Payload collections · 2373 `SKILL.md` atoms · 142 standards · 13 plugins · 30 locales
 - **Upstream:** ported from `ceccec/erpax` + `ceccec/etrima` (Rails / ActiveAdmin)
 
 ## License
