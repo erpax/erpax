@@ -84,4 +84,9 @@ seed/import/
 # VitePress build output + cache (regenerable via `vitepress build`)
 .vitepress/dist/
 .vitepress/cache/
+
+# Docs are DYNAMIC — the SKILL.md atoms ARE the documentation (holographic by typography);
+# vitepress computes the corpus from src/ on demand, the standards index materialises when
+# needed. Nothing under docs/ is committed — it is an endless dynamic projection of src.
+/docs/
 .claude.bak/

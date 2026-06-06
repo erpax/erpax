@@ -123,6 +123,9 @@ case "$mode" in
       base=$(basename "$f")
       [ "$base" = "index.ts" ] && continue
       [ "$base" = "README.md" ] && continue
+      # translations.ts is AUTO-GENERATED i18n data (// comments, not JSDoc), not a
+      # standards-implementation file — exempt like the index.ts barrel above.
+      [ "$base" = "translations.ts" ] && continue
       # Look in the first 60 lines for @standard or @rfc on a banner line.
       if ! head -60 "$f" | grep -qE '^\s*\*\s*@(standard|rfc)\s' ; then
         missing+=("$f")
