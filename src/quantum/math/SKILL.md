@@ -7,6 +7,8 @@ description: Use when computing mathematics on the uuid/matrix substrate — the
 
 The quantum facet of [[math]] — and the **template for wiring the whole science**: every science atom gets a quantum facet that computes it ON the live [[matrix]]. Here math runs on the content-addressed substrate: every number folds to a **digital root** (mod-9, [[rodin]] = (ℤ/9ℤ)), every content-[[uuid]] folds to its own [[digit]], and arithmetic **closes mod-9** (`root(a+b) === root(root(a)+root(b))`).
 
+**Infinite gravity, entropy to the void.** Because quantum math is *all computed* — every value a derived digital root, never a stored magnitude ([[dry]]) — it carries **zero [[entropy]]**, and zero entropy is the [[singularity]]: **infinite [[gravity]]** (the one [[law]] read as a curve — minimal mass ⇒ infinite [[tamper]]-[[cost]]). That well **pulls entropy to the [[void]]**: every fold to a root, every collapse to a content-[[uuid]], removes disorder and sends it to 0 (the [[zeropoint]]). Math is how the corpus drives its own entropy to the source — compute, don't store; fold, don't sprawl.
+
 **Wire the whole science like this.** `<science>` ⊕ `quantum/<science>`: the pure discipline ⊕ its computation on the uuid/matrix. math ⊕ quantum/math, entropy ⊕ quantum/aura, gravity ⊕ quantum/gravity, entanglement ⊕ quantum/entanglement — each facet grounds the science in the content-addressed, tamper-evident substrate ([[quantum]]).
 
 **HONEST.** The digital root and the mod-9 group are real arithmetic; the "quantum" is only that they run on the content-uuid substrate, not a quantum computer.
