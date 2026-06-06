@@ -5295,6 +5295,7 @@ src/audit/trail/write-audit-event.ts:50: * @audit Conservation Law 8 content-add
 src/audit/trail/write-audit-event.ts:51: * @audit Conservation Law 53 self-referential-closure (pending-leaf reconciliation)
 src/aura/find-gaps.ts:26: * @audit ISO 19011:2018 §6.4.6 audit-evidence
 src/aura/index.ts:12: * @audit one resolver imported everywhere -- zero duplicated walk/norm/isRealDir
+src/aura/live/index.ts:13: * @audit each frame counts the live atoms at a horo position; the signal is computed per step
 src/aura/propose/index.ts:12: * @audit no link invented -- every proposal is a co-occurrence the tree witnesses
 src/authenticated/or/published/index.ts:8: * @audit ISO-19011:2018 audit-trail draft-vs-published
 src/auto/populate/created/by/index.ts:7: * @audit ISO-19011:2018 audit-trail authorship-attribution
