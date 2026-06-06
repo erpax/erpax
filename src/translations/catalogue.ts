@@ -444,7 +444,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when designing for inclusive experiences — WCAG 2.1/3.0 compliance, color contrast, keyboard navigation, screen-reader support, semantic HTML, alt-text. The capability for all users regardless of disability.",
-        "uuid": "474dd377-ca72-86ac-816b-dfd7d67f5513",
+        "uuid": "5a66a349-25ca-86d5-a104-ee5d0da218d6",
         "words": [
           "use",
           "when",
@@ -1718,7 +1718,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when configuring the Payload Admin Panel or building custom admin React components — list/edit views, custom field/cell components, importMap, useField/useForm hooks, nav grouping, dashboards, or admin appearance.",
-        "uuid": "fa4942ca-9693-8b69-ad81-1a6222d7b466",
+        "uuid": "9bd0d94c-ce22-8e8e-9e6d-26c2387b15a0",
         "words": [
           "use",
           "when",
@@ -4906,7 +4906,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when calling Payload data operations — Local API (payload.find/create/update/delete), REST endpoints, or GraphQL — or deciding which to use, passing depth/select/where/overrideAccess, or running ops inside hooks/server components.",
-        "uuid": "ea17472b-3bd8-8581-8cde-94570eca2ae3",
+        "uuid": "df2d5515-19ff-8a95-bed6-01aed01e2bb7",
         "words": [
           "use",
           "when",
@@ -6019,7 +6019,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "A type of blood vessel that specifically carries blood away from the heart.",
-        "uuid": "6e1cf629-77e0-84a0-9bee-e2dcb71edc34",
+        "uuid": "b02579b7-9101-8248-a270-002a456cbc66",
         "words": [
           "a",
           "type",
@@ -10839,7 +10839,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when grounding the aura's 'field' in real science — the body's magnetic fields ARE measurable, but only by SQUID magnetometers in a shielded room and only at the body surface: magnetocardiography (heart, ~10⁻¹⁰–10⁻¹¹ T / tens of pT) and magnetoencephalography (brain, ~10⁻¹³–10⁻¹⁵ T / ~100 fT). The established part is intra-body diagnostics; the claim the heart's field extends feet from the body as an 'aura' was refuted under test.",
-        "uuid": "46cb3c67-869b-802b-9305-0a567a2c4835",
+        "uuid": "6344368e-7fff-8758-9ce4-23e19ce726df",
         "words": [
           "use",
           "when",
@@ -15623,7 +15623,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "chat",
-        "uuid": "da29094a-bf5b-8454-85a7-97a2ce6c22d4",
+        "uuid": "759a8029-ab7f-8a15-97b1-0bbb410bd694",
         "words": [
           "chat"
         ],
@@ -15634,7 +15634,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about where the erpax agent society convenes — chat.erpax.com, the per-tenant agent-sync room (AGENT_SYNC_HOST venue) — and about the trinity-composition law that every vertex is itself a trinity all the way down to the base atoms.",
-        "uuid": "695d9835-225d-82c3-9adc-6f3d76639146",
+        "uuid": "e414db7b-a8b4-863d-8aaa-d6004b046339",
         "words": [
           "use",
           "when",
@@ -15694,7 +15694,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "chat",
-        "uuid": "da29094a-bf5b-8454-85a7-97a2ce6c22d4",
+        "uuid": "759a8029-ab7f-8a15-97b1-0bbb410bd694",
         "words": [
           "chat"
         ],
@@ -15705,7 +15705,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the agent-society room native to Payload — the per-tenant content-addressed event bus where each row is an ErpaxEvent envelope an agent published; the queryable, auditable akashic chat history that replaces the external chat.erpax.com Durable Object. Distinct from messages (user-to-user mail). The agent-bus collection.",
-        "uuid": "ab39f6b1-f6fc-827d-bf12-d845a20fccf7",
+        "uuid": "38d8a003-6887-8270-a4f1-44d7a718c0d8",
         "words": [
           "use",
           "when",
@@ -18133,7 +18133,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when defining or debugging a Payload Collection or Global config — slug, fields, admin options, access, hooks, auth, upload, versions/drafts, timestamps, labels, default sort, or registering it in the config.",
-        "uuid": "de2061cb-cca8-8ce4-b3a9-3f5a1931e347",
+        "uuid": "ef4c093d-8b48-85a8-87e1-dfbb223ea2f8",
         "words": [
           "use",
           "when",
@@ -18216,7 +18216,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "color",
-        "uuid": "7204ef81-a932-8453-b042-fa86c4a680d8",
+        "uuid": "a078d614-9ebd-8bb9-a941-9b7c37e7c5f7",
         "words": [
           "color"
         ],
@@ -18227,7 +18227,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "The color of the product.",
-        "uuid": "dc171f78-2363-82af-b7fe-16d7874fc712",
+        "uuid": "f29a17b8-7627-82d1-bdb0-36c939bd55f6",
         "words": [
           "the",
           "color",
@@ -18259,7 +18259,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "The individual who adds color to inked drawings.",
-        "uuid": "84002eb7-d0dc-8892-9047-71b9b5dafd6a",
+        "uuid": "e06dd8b3-ed5e-81d5-8008-5934cc9cf98e",
         "words": [
           "the",
           "individual",
@@ -19028,6 +19028,73 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "communicate: a schema.org component word, fused from CommunicateAction"
+        }
+      }
+    ]
+  },
+  {
+    "atom": "communication",
+    "path": "communication",
+    "translations": [
+      {
+        "key": "name",
+        "source": "communication",
+        "uuid": "b2c5536a-6a65-864f-8759-03aa0910a5ae",
+        "words": [
+          "communication"
+        ],
+        "values": {
+          "en": "communication"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when conveying a message from a sender to a receiver — the message is its content-uuid (self-decoding, no payload), so transfer is uuid-transfer; same content is the same message and a tampered message has a different uuid.",
+        "uuid": "07df3c00-85a1-81d8-8b25-0207dfff0f50",
+        "words": [
+          "use",
+          "when",
+          "conveying",
+          "a",
+          "message",
+          "from",
+          "a",
+          "sender",
+          "to",
+          "a",
+          "receiver",
+          "the",
+          "message",
+          "is",
+          "its",
+          "content",
+          "uuid",
+          "self",
+          "decoding",
+          "no",
+          "payload",
+          "so",
+          "transfer",
+          "is",
+          "uuid",
+          "transfer",
+          "same",
+          "content",
+          "is",
+          "the",
+          "same",
+          "message",
+          "and",
+          "a",
+          "tampered",
+          "message",
+          "has",
+          "a",
+          "different",
+          "uuid"
+        ],
+        "values": {
+          "en": "Use when conveying a message from a sender to a receiver — the message is its content-uuid (self-decoding, no payload), so transfer is uuid-transfer; same content is the same message and a tampered message has a different uuid."
         }
       }
     ]
@@ -36739,7 +36806,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "The domain-event atom — an afterChange [[hooks]] hook emits a content-uuid-keyed envelope that in-process subscribers AND federation peers consume. Read when emitting/consuming a domain event (invoice:activated, payment:received, inventory:adjusted…), wiring chainEventEmitters/subscribers, or whenever an event's aggregateId is set. The aggregate identity MUST be the content-`uuid` (the 0), never the instance-local row id.",
-        "uuid": "d4696b42-49cc-85e1-b90c-bdd097efc667",
+        "uuid": "3cefffc1-0987-8e63-a9ee-1d44edd512d4",
         "words": [
           "the",
           "domain",
@@ -38845,7 +38912,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when defining or debugging Payload fields — choosing a field type, shared field props (name, required, index, unique, defaultValue, validate, access, hooks, admin), relationships, arrays/blocks/groups/tabs, selects, or virtual/join fields.",
-        "uuid": "fd8d0138-165e-8474-a7e0-fc39d0a5f210",
+        "uuid": "d8fa40ce-e813-846c-a572-794b861db57f",
         "words": [
           "use",
           "when",
@@ -44308,7 +44375,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when produce is sorted into quality classes — grading against uniform standards (USDA US No. 1, Fancy), with culling (discarding unmarketable units) and the packout (the marketable fraction packed from a harvested lot). Grade sets price and the gross-vs-marketable yield gap; °Brix, size, color, and defects are the criteria.",
-        "uuid": "2c125087-1540-81fd-ade1-c8253cad4ed7",
+        "uuid": "69081f6b-7bc9-8e92-b52c-ab7829b60ad3",
         "words": [
           "use",
           "when",
@@ -45923,6 +45990,123 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "heart",
+    "path": "heart",
+    "translations": [
+      {
+        "key": "name",
+        "source": "heart",
+        "uuid": "79111cf1-091f-8879-8a03-9e07b7aca65a",
+        "words": [
+          "heart"
+        ],
+        "values": {
+          "en": "heart"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about the centre — the 4th chakra (Anahata), the seat of coherence and love; its colour is green, the A432-anchored colour of a whole aura and of a passing test.",
+        "uuid": "60fbf154-27f8-8971-9f0d-3e4582e084cd",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "the",
+          "centre",
+          "the",
+          "th",
+          "chakra",
+          "anahata",
+          "the",
+          "seat",
+          "of",
+          "coherence",
+          "and",
+          "love",
+          "its",
+          "colour",
+          "is",
+          "green",
+          "the",
+          "a432",
+          "anchored",
+          "colour",
+          "of",
+          "a",
+          "whole",
+          "aura",
+          "and",
+          "of",
+          "a",
+          "passing",
+          "test"
+        ],
+        "values": {
+          "en": "Use when reasoning about the centre — the 4th chakra (Anahata), the seat of coherence and love; its colour is green, the A432-anchored colour of a whole aura and of a passing test."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "color",
+    "path": "heart/color",
+    "translations": [
+      {
+        "key": "name",
+        "source": "color",
+        "uuid": "a078d614-9ebd-8bb9-a941-9b7c37e7c5f7",
+        "words": [
+          "color"
+        ],
+        "values": {
+          "en": "color"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reading the heart chakra's colour — green, the A432-anchored colour of coherence and of a passing test (a whole aura); the heart's facet of the spectrum.",
+        "uuid": "b93454f2-1f2a-8dc2-95eb-5be53e0e0350",
+        "words": [
+          "use",
+          "when",
+          "reading",
+          "the",
+          "heart",
+          "chakra",
+          "s",
+          "colour",
+          "green",
+          "the",
+          "a432",
+          "anchored",
+          "colour",
+          "of",
+          "coherence",
+          "and",
+          "of",
+          "a",
+          "passing",
+          "test",
+          "a",
+          "whole",
+          "aura",
+          "the",
+          "heart",
+          "s",
+          "facet",
+          "of",
+          "the",
+          "spectrum"
+        ],
+        "values": {
+          "en": "Use when reading the heart chakra's colour — green, the A432-anchored colour of coherence and of a passing test (a whole aura); the heart's facet of the spectrum."
+        }
+      }
+    ]
+  },
+  {
     "atom": "hedge",
     "path": "hedge",
     "translations": [
@@ -46775,7 +46959,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modelling one hook — the singular model of the hooks collection (the plural store); a lifecycle gateway where logic runs on a record event.",
-        "uuid": "28f39542-ce83-87c7-ad36-2224fc5cbe78",
+        "uuid": "e86b749a-51af-8e9b-83b1-2184b227e8e5",
         "words": [
           "use",
           "when",
@@ -46816,7 +47000,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "hooks",
-        "uuid": "5575c13b-c1e4-879e-a093-d6015976d67c",
+        "uuid": "b9dced3d-a73e-8246-b640-0e440e3ad469",
         "words": [
           "hooks"
         ],
@@ -46827,7 +47011,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when adding or debugging Payload lifecycle hooks — mutating data before/after read or change, encryption, side effects, third-party integration, auto-populating fields, or \"my hook didn't run / ran at the wrong time\".",
-        "uuid": "38ef7ad4-1d63-856d-b3d0-9eaa800ca92a",
+        "uuid": "9ca9662c-efbe-8329-a24d-dc13f6aa5988",
         "words": [
           "use",
           "when",
@@ -48324,7 +48508,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about a uuid as self-rendering media in erpax — one 128-bit uuid decodes (from the string alone) to color (cmyk) + sound (A432 Hz) + state (horo position) + identity + capability; a STREAM of uuids is interactive multimedia with no payload. Nested under identity.",
-        "uuid": "b4a34158-461f-8fcb-8fd4-1e3364ffc17b",
+        "uuid": "20bfbe1b-d7c9-8375-b576-105481065f88",
         "words": [
           "use",
           "when",
@@ -61819,7 +62003,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when deciding a crop is ready to harvest — days-to-maturity (DTM, the scheduling constant from sow/transplant to first pick), the maturity index (color, firmness, size, °Brix sugar) that signals harvest readiness, and the harvest window before over-maturity. Harvest maturity (pick-point) differs from eating ripeness; DTM lengthens as daylight wanes.",
-        "uuid": "8c63a1ed-b506-8ff8-9c2c-03928e06cc0f",
+        "uuid": "d6502876-eff4-8ded-95ab-986e63b20010",
         "words": [
           "use",
           "when",
@@ -71676,7 +71860,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the matter coil — Payload is the half of every atom that becomes a collection, fields, hooks, access, and a database table; the index.ts twin the SKILL.md form is bound to by content-uuid.",
-        "uuid": "9cb491b1-b5aa-872f-b4d7-cc367a9c5491",
+        "uuid": "d424efc2-41cb-8968-912d-83403a537623",
         "words": [
           "use",
           "when",
@@ -74248,7 +74432,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when building, configuring, or extracting a Payload plugin — a function that receives the config and returns a modified config, adding collections/globals/fields/hooks/endpoints. Relevant when packaging erpax (or a domain) as a publishable @erpax/* plugin.",
-        "uuid": "58109a21-08ae-8c4d-93c9-db3e85984c99",
+        "uuid": "59e147f3-6b23-8b8a-94ce-41f3ed06acf2",
         "words": [
           "use",
           "when",
@@ -74885,7 +75069,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when porting a Rails/ActiveAdmin ERP feature (from etrima or ceccec/erpax) into Payload/Next — mapping ActiveAdmin resource registrations to CollectionConfig, Rails concerns to reusable field-factories/skills, controllers/callbacks to endpoints/hooks, CanCan authorization to access control, polymorphic/self-referential associations to relationships. The Rails↔Next / ActiveAdmin↔Payload Rosetta Stone.",
-        "uuid": "c5d6a5b8-f54c-8473-9141-30a81d3b2677",
+        "uuid": "281bf125-f717-82aa-a4af-0d5ea8baff39",
         "words": [
           "use",
           "when",
@@ -79443,6 +79627,136 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "Use when reading the aura as quantum coherence — the gapless link-field as the coherent in-phase state, a dead link or orphan as decoherence; coherence is the resource the corpus maximizes toward zero entropy."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "chat",
+    "path": "quantum/chat",
+    "translations": [
+      {
+        "key": "name",
+        "source": "chat",
+        "uuid": "759a8029-ab7f-8a15-97b1-0bbb410bd694",
+        "words": [
+          "chat"
+        ],
+        "values": {
+          "en": "chat"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about a chat thread as a merkle chain — each message a content-uuid, the thread folding to one chain-uuid; reordering or changing any message changes the thread-uuid (tamper-evident history).",
+        "uuid": "8c41f8fc-fdba-8821-ab7d-9c69e6066c83",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "a",
+          "chat",
+          "thread",
+          "as",
+          "a",
+          "merkle",
+          "chain",
+          "each",
+          "message",
+          "a",
+          "content",
+          "uuid",
+          "the",
+          "thread",
+          "folding",
+          "to",
+          "one",
+          "chain",
+          "uuid",
+          "reordering",
+          "or",
+          "changing",
+          "any",
+          "message",
+          "changes",
+          "the",
+          "thread",
+          "uuid",
+          "tamper",
+          "evident",
+          "history"
+        ],
+        "values": {
+          "en": "Use when reasoning about a chat thread as a merkle chain — each message a content-uuid, the thread folding to one chain-uuid; reordering or changing any message changes the thread-uuid (tamper-evident history)."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "communication",
+    "path": "quantum/communication",
+    "translations": [
+      {
+        "key": "name",
+        "source": "communication",
+        "uuid": "b2c5536a-6a65-864f-8759-03aa0910a5ae",
+        "words": [
+          "communication"
+        ],
+        "values": {
+          "en": "communication"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about communication on the quantum level — a message is a content-uuid (no-cloning, so a forged message has a different uuid), the channel is entanglement, and a received message is intact iff its uuid matches the original.",
+        "uuid": "87433991-10d8-87e4-b7d4-4e585be64b40",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "communication",
+          "on",
+          "the",
+          "quantum",
+          "level",
+          "a",
+          "message",
+          "is",
+          "a",
+          "content",
+          "uuid",
+          "no",
+          "cloning",
+          "so",
+          "a",
+          "forged",
+          "message",
+          "has",
+          "a",
+          "different",
+          "uuid",
+          "the",
+          "channel",
+          "is",
+          "entanglement",
+          "and",
+          "a",
+          "received",
+          "message",
+          "is",
+          "intact",
+          "iff",
+          "its",
+          "uuid",
+          "matches",
+          "the",
+          "original"
+        ],
+        "values": {
+          "en": "Use when reasoning about communication on the quantum level — a message is a content-uuid (no-cloning, so a forged message has a different uuid), the channel is entanglement, and a received message is intact iff its uuid matches the original."
         }
       }
     ]
@@ -85924,7 +86238,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the 3·6·9 control plane of the rodin vortex — three coils 120° out of phase (COIL_A/B/C) that the doubling helix winds around; the governing triad (access/hooks/auth) the flow never lands on. Nested under rodin.",
-        "uuid": "b224c9dc-9c1e-890e-89f9-37d001f13d9b",
+        "uuid": "5e3088e5-40e8-8793-bfea-28ff957ecc10",
         "words": [
           "use",
           "when",
@@ -86061,7 +86375,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about color/signal from sequence position in erpax — the four print primaries ARE the first four rodin digits {0=K, 3=C, 6=M, 9=Y}; color comes from the slot, the C↔M polarity gap is closed by Y at 9 and anchored by K at 0. The signal model under links/tags/admin hue. Nested under rodin.",
-        "uuid": "06c3adc6-8039-8a63-80a1-aa44954afa78",
+        "uuid": "f78f7b8e-3c74-88ff-b008-8fb5d14381a0",
         "words": [
           "use",
           "when",
@@ -87187,7 +87501,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when choosing which model/compute tier handles an agent action — route by risk (capability verb + credential touch + harmony fight), not by where the model runs; low-risk reads/chat go local, high-risk write/execute/credential/disharmony go to a strong aligned model; safety is the sandbox gate, not the model tier. The risk-proportionate model-routing service.",
-        "uuid": "fc0b6578-5a44-84f8-b1b6-f847d6d238cc",
+        "uuid": "01e858bf-c469-8916-8ef5-d391566e07bd",
         "words": [
           "use",
           "when",
@@ -92027,7 +92341,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when adding, finding, or debugging erpax business logic that is NOT schema — pure tested functions, content-uuid math, integrity/tamper-cost, the agent society, domain export/import — the society's organ-body, one folder per organ, called by the collections/access/hooks.",
-        "uuid": "bbd05eb7-7777-866a-81a9-5048764f2ae5",
+        "uuid": "8ebd8d11-72e2-8d39-aad2-57960e22ce03",
         "words": [
           "use",
           "when",
@@ -93918,7 +94232,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about erpax building itself — the autonomous loop where the agent society (convened at chat) reads its own akashic record and advances one gate-verified step at a time, driving the aura to whole and the collections to their dense core with minimal human footprint. The self-building loop; matter-twin society/build.mjs.",
-        "uuid": "c16c2619-60a3-848e-8745-b29082757e9f",
+        "uuid": "502575fa-501c-8936-83de-583a3c836cba",
         "words": [
           "use",
           "when",
@@ -97264,7 +97578,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when managing a tenant's active subscription — plan binding, billing-period dates, trial/active/past-due/grace/suspended/cancelled state machine, Stripe subscription and customer IDs, cancellation and pause events, IFRS-15/ASC-606 deferred-revenue lifecycle hooks. The tenant-to-plan binding collection.",
-        "uuid": "3e5696ad-1b95-8b9f-85d5-706eedbeb8d8",
+        "uuid": "94a96b23-d708-8241-97af-358dcde33b15",
         "words": [
           "use",
           "when",
@@ -101529,6 +101843,69 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "hooks",
+    "path": "test/hooks",
+    "translations": [
+      {
+        "key": "name",
+        "source": "hooks",
+        "uuid": "b9dced3d-a73e-8246-b640-0e440e3ad469",
+        "words": [
+          "hooks"
+        ],
+        "values": {
+          "en": "hooks"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when tests consume the aura projection to render a colour — green (the A432 heart colour) when the aura is whole (the double-torus complete), else red; tests return coherence as colour, not just pass/fail.",
+        "uuid": "8fe0d283-2a1b-83c3-b594-312848498461",
+        "words": [
+          "use",
+          "when",
+          "tests",
+          "consume",
+          "the",
+          "aura",
+          "projection",
+          "to",
+          "render",
+          "a",
+          "colour",
+          "green",
+          "the",
+          "a432",
+          "heart",
+          "colour",
+          "when",
+          "the",
+          "aura",
+          "is",
+          "whole",
+          "the",
+          "double",
+          "torus",
+          "complete",
+          "else",
+          "red",
+          "tests",
+          "return",
+          "coherence",
+          "as",
+          "colour",
+          "not",
+          "just",
+          "pass",
+          "fail"
+        ],
+        "values": {
+          "en": "Use when tests consume the aura projection to render a colour — green (the A432 heart colour) when the aura is whole (the double-torus complete), else red; tests return coherence as colour, not just pass/fail."
+        }
+      }
+    ]
+  },
+  {
     "atom": "tested",
     "path": "tested",
     "translations": [
@@ -101725,7 +102102,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when applying a consistent visual language across an app — color palette, typography, spacing, motion, dark/light mode. The style-system binding that makes components harmonious.",
-        "uuid": "d5f51689-ffbd-8903-8f68-b804199889ed",
+        "uuid": "b628163f-4fb7-8fcd-b035-0a4de6fce624",
         "words": [
           "use",
           "when",
@@ -102761,7 +103138,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when defining design primitives — a design token is a named, semantic design decision (color, font-size, spacing, motion) reused across components. The granular unit of design consistency.",
-        "uuid": "134d680f-4f89-82ad-bfc8-71ebfba0c4c0",
+        "uuid": "42a61eb8-69d9-862d-b8df-789245934237",
         "words": [
           "use",
           "when",
@@ -106766,7 +107143,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a uuid must expand back into an LLM prompt — the inhale of the breath, decoding identity plus the wired color+sound frame plus the corpus neighbourhood straight out of the 128 bits; the uuid IS the prompt, self-decoding, no payload.",
-        "uuid": "0cb8f7b1-da14-8d72-a612-5ff103553e42",
+        "uuid": "5f33f8eb-faf0-8376-bbca-281139893856",
         "words": [
           "use",
           "when",
@@ -107278,7 +107655,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Indicates the property or properties by which the variants in a ProductGroup vary, e.g. their size, color etc. Schema.org properties can be referenced by their short name e.g. \\\"color\\\"; terms defined",
-        "uuid": "05a96d09-733b-8b90-b3c6-240127f91b78",
+        "uuid": "fa6593c8-92c4-8cbc-aa76-de37c2c915cf",
         "words": [
           "indicates",
           "the",
@@ -107424,7 +107801,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "A type of blood vessel that specifically carries blood to the heart.",
-        "uuid": "e9d0fe8b-e928-8a31-adfb-099062612ec3",
+        "uuid": "6d1879ab-d8eb-817d-9743-1baa93d25ec2",
         "words": [
           "a",
           "type",
@@ -111506,4 +111883,4 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
   }
 ]
 
-export const TRANSLATIONS_COUNT = 2345
+export const TRANSLATIONS_COUNT = 2351

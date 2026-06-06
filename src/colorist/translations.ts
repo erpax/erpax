@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "The individual who adds color to inked drawings.",
-    "uuid": "84002eb7-d0dc-8892-9047-71b9b5dafd6a",
+    "uuid": "e06dd8b3-ed5e-81d5-8008-5934cc9cf98e",
     "words": [
       "the",
       "individual",

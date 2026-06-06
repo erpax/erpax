@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when applying a consistent visual language across an app — color palette, typography, spacing, motion, dark/light mode. The style-system binding that makes components harmonious.",
-    "uuid": "d5f51689-ffbd-8903-8f68-b804199889ed",
+    "uuid": "b628163f-4fb7-8fcd-b035-0a4de6fce624",
     "words": [
       "use",
       "when",

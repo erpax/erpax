@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "A type of blood vessel that specifically carries blood away from the heart.",
-    "uuid": "6e1cf629-77e0-84a0-9bee-e2dcb71edc34",
+    "uuid": "b02579b7-9101-8248-a270-002a456cbc66",
     "words": [
       "a",
       "type",
