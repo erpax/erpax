@@ -732,7 +732,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when designing or porting the erpax accounting/finance domain to Payload — double-entry journals, GL accounts, the accounting equation, invoices (credit/debit notes, protocols), payments & bank reconciliation, locked periods, or making anything \"accountable\" polymorphically. The self-sufficient `@erpax/accounting` archetype.",
-        "uuid": "afbcf2bb-4744-807e-a729-9131007a5d8a",
+        "uuid": "3fbd45dc-274b-8fd0-a39a-45a0e6a611d1",
         "words": [
           "use",
           "when",
@@ -2746,7 +2746,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about growing living produce to a market — agriculture is the domain molecule whose production is planned BACKWARD: from a sales plan (CSA shares + market channels) through per-crop demand to the land, seed, and fertility the season requires. The agricultural twin of manufacturing; every quantity carries a unit and a currency that convert automatically and account by double-entry.",
-        "uuid": "3a6839b4-0a3c-8a01-994b-529cd97fa068",
+        "uuid": "4f488b2a-689b-84cd-b31c-140a4745ca0a",
         "words": [
           "use",
           "when",
@@ -5046,7 +5046,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when keeping bee colonies for produce and pollination — the colony (queen + workers) as a biological asset (the hive housing is IAS-16 equipment); honey and wax are harvested produce, the colony is also rented as a pollination service; brood is its growth, swarming its propagation, colony loss its mortality, the nectar flow its season. A living-production domain anchor and the pollination link to crops.",
-        "uuid": "a5e5df3c-f4bc-81f2-b8d7-d40ba72dd521",
+        "uuid": "50c1fb90-af4e-887f-a46d-86a69dd327b9",
         "words": [
           "use",
           "when",
@@ -5485,7 +5485,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when farming aquatic organisms under managed conditions — fish/shellfish raised in ponds, cages, or recirculating systems as biological assets valued by standing biomass (IAS-41); stocked, grown out through life stages, fed (FCR), bound by water quality (oxygen, salinity), then harvested and depurated. A living-production domain anchor alongside agriculture and livestock.",
-        "uuid": "2f7370e9-0e67-8361-9eed-5bce7af57d87",
+        "uuid": "1b694fbe-44d3-8d99-8d67-83331391ab55",
         "words": [
           "use",
           "when",
@@ -7806,7 +7806,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when enabling or configuring Payload authentication on a collection — login/logout, JWT/cookies, API keys, email verification, password reset, login lockout, token expiration, or admin-panel user accounts.",
-        "uuid": "307e9235-5e96-8fa6-8d5d-f27ac9663d33",
+        "uuid": "ec234e94-a677-8503-a9be-330296e65851",
         "words": [
           "use",
           "when",
@@ -18648,7 +18648,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when designing or porting the erpax commerce/trade domain to Payload — parties under many roles (seller/buyer/agent/supplier/consignee/carrier), the cart→quote→order→invoice→note document chain, payments/allocations/refunds, subscriptions & metered usage, inventory/stock movement, packing & shipment, dunning/credit terms. The transactional-flow `@erpax/commerce` twin (sequence 4·8).",
-        "uuid": "053099d9-9504-8b39-a52b-a38fbb3e29f4",
+        "uuid": "008c4bfc-0f95-8167-826f-66d6a26b4b21",
         "words": [
           "use",
           "when",
@@ -18963,7 +18963,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modelling one committee — the singular model of the committees collection (the plural store); a constituted group with delegated authority over a domain.",
-        "uuid": "6cc93e71-0aed-897e-8ea9-217878ff1769",
+        "uuid": "069290ee-5c77-8d6c-bfd7-e3ece2b2fefc",
         "words": [
           "use",
           "when",
@@ -20446,7 +20446,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a contract restricts disclosure — confidential information definition, permitted uses, exceptions (public domain, legally compelled, independent discovery), return/destruction, duration.",
-        "uuid": "97a1637c-65e4-846a-b240-1c4cb5f695cc",
+        "uuid": "34116328-9631-8740-9148-3f47faef2978",
         "words": [
           "use",
           "when",
@@ -25514,7 +25514,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when collecting or auditing e-signatures for contract execution — sequenced multi-party approval (legal→customer→company rep), eIDAS-compliant immutable signature records, provider verification URL, and fully-executed trigger for IFRS-15 §10 contract activation. The e-signature audit-trail collection.",
-        "uuid": "b8e2dcb8-5664-82d4-9f15-e1db56b327fc",
+        "uuid": "b6ce63b7-8ca3-89aa-aff0-4e46a0b1b2de",
         "words": [
           "use",
           "when",
@@ -26795,7 +26795,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when handling a data subject's GDPR rights request — access, rectification, erasure, restriction, portability, objection, or consent withdrawal — tracking identity verification, fulfilment evidence, and the Art.12(3) one-month deadline through to completion or DPA escalation. The GDPR DSR/DSAR workflow collection.",
-        "uuid": "c105c84a-b776-81b7-92cf-89133399fed0",
+        "uuid": "d1f9bce2-9a24-8383-be83-dc6aa2d7cceb",
         "words": [
           "use",
           "when",
@@ -31027,7 +31027,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "domain",
-        "uuid": "80d6b027-45b3-8cca-a153-9266441cd22e",
+        "uuid": "1857333c-a158-8cad-8f56-6750403a2b1d",
         "words": [
           "domain"
         ],
@@ -31038,7 +31038,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modelling a tenant's domain — NOT tenant isolation (the multi-tenant plugin does that), but the domain as the tenant's identity and managed entity: the name that routes the request to the tenant, its hierarchy, status lifecycle, SSL, billing, and — the key — proof of domain ownership, which IS the computational admin grant: prove you control the domain and the tenant is yours.",
-        "uuid": "1caf9562-fdbb-85cf-993d-64d280b19918",
+        "uuid": "078df74e-5ed9-8024-95fb-c98178d7cb7c",
         "words": [
           "use",
           "when",
@@ -31108,6 +31108,74 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "Use when modelling a tenant's domain — NOT tenant isolation (the multi-tenant plugin does that), but the domain as the tenant's identity and managed entity: the name that routes the request to the tenant, its hierarchy, status lifecycle, SSL, billing, and — the key — proof of domain ownership, which IS the computational admin grant: prove you control the domain and the tenant is yours."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "verification",
+    "path": "domain/verification",
+    "translations": [
+      {
+        "key": "name",
+        "source": "verification",
+        "uuid": "5399017a-389b-8b4f-9494-d0f11ba48b58",
+        "words": [
+          "verification"
+        ],
+        "values": {
+          "en": "verification"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when proving control of a domain by content-uuid — publish the token in a DNS CNAME/TXT record (the ACME DNS-01 pattern); because the value IS the object's identity, any change to the object forces re-verification by architecture.",
+        "uuid": "295665ba-5db9-8778-ac57-45d374b64618",
+        "words": [
+          "use",
+          "when",
+          "proving",
+          "control",
+          "of",
+          "a",
+          "domain",
+          "by",
+          "content",
+          "uuid",
+          "publish",
+          "the",
+          "token",
+          "in",
+          "a",
+          "dns",
+          "cname",
+          "txt",
+          "record",
+          "the",
+          "acme",
+          "dns",
+          "pattern",
+          "because",
+          "the",
+          "value",
+          "is",
+          "the",
+          "object",
+          "s",
+          "identity",
+          "any",
+          "change",
+          "to",
+          "the",
+          "object",
+          "forces",
+          "re",
+          "verification",
+          "by",
+          "architecture"
+        ],
+        "values": {
+          "en": "Use when proving control of a domain by content-uuid — publish the token in a DNS CNAME/TXT record (the ACME DNS-01 pattern); because the value IS the object's identity, any change to the object forces re-verification by architecture."
         }
       }
     ]
@@ -35064,7 +35132,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "entanglement",
-        "uuid": "fefcb956-024f-8c6a-b038-b3f0bc98c31e",
+        "uuid": "44fdc190-7dd5-8b69-b8a7-1a3b7634c765",
         "words": [
           "entanglement"
         ],
@@ -35075,7 +35143,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the link field that couples atoms — the directed edges as a symmetric, monogamous binding (reciprocity, no-cloning); the graph that the ER=EPR reading turns into geometry (mass = entanglement).",
-        "uuid": "37cdc2a7-8d01-865e-a9be-18a0f26c7fde",
+        "uuid": "8e97502d-904a-857e-bf6a-d52ee8007db5",
         "words": [
           "use",
           "when",
@@ -36485,7 +36553,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "The domain-event atom — an afterChange [[hooks]] hook emits a content-uuid-keyed envelope that in-process subscribers AND federation peers consume. Read when emitting/consuming a domain event (invoice:activated, payment:received, inventory:adjusted…), wiring chainEventEmitters/subscribers, or whenever an event's aggregateId is set. The aggregate identity MUST be the content-`uuid` (the 0), never the instance-local row id.",
-        "uuid": "bf52d6bb-f24e-8bff-82d9-09182910432d",
+        "uuid": "d4696b42-49cc-85e1-b90c-bdd097efc667",
         "words": [
           "the",
           "domain",
@@ -36787,7 +36855,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use for a governed cross-domain data exchange — party A requests data from party B (different domains, each its own content-addressed identity); the holder's grant gates the capability, the fields are SANITIZED to the releasable set, and the exchange is RECEIPTED, so A receives the data AND a provenance chain proving what was accessed, by whom, under what authority. Encodes cross-domain trust with no shared infrastructure: each party content-addresses and receipts; the provenance merges.",
-        "uuid": "04f1222b-f561-8437-852b-23205b43aaab",
+        "uuid": "3d387fd0-c1d4-8978-ab08-c7ceb74e053c",
         "words": [
           "use",
           "for",
@@ -38145,7 +38213,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when designing inter-tenant content exchange, activity distribution, or federation protocols following ActivityPub / W3C Activity Streams — content-addressed row exchange between erpax tenants with independent peer verification, trust boundaries, and content-delivery semantics.",
-        "uuid": "8c71f0ec-9fca-8e13-8c32-bf677efeae20",
+        "uuid": "3f5fed81-676f-85f8-808e-4fd71b97bfd5",
         "words": [
           "use",
           "when",
@@ -39228,7 +39296,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recording or auditing GHG emissions — Scope 1 direct, Scope 2 purchased energy, Scope 3 value-chain (15 sub-categories); computing tCO2e via activity-data × emission-factor; third-party ISAE 3410 verification; substantiating ESRS E1 §44-50 disclosure totals or EU CBAM filings. The GHG emission event register.",
-        "uuid": "64dc7798-f5ad-8a4a-a888-44cc912c16f1",
+        "uuid": "88812465-0c5e-856c-b17b-b86a64ccaf20",
         "words": [
           "use",
           "when",
@@ -42162,7 +42230,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about verification — a gate is itself a trinity (check · message · heal) — the strict law that must hold, the detailed diagnostic when it does not, and the remedy that restores it. The immune system of the corpus.",
-        "uuid": "3edbcc31-b28c-89d8-9b08-5792042c824e",
+        "uuid": "04f0887e-d50d-8db4-a8c1-411251beaa55",
         "words": [
           "use",
           "when",
@@ -46896,7 +46964,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about a portion of a whole allocated to a member who joins — horo position 2 (digit 2, the first doubling: one becomes two, the whole splits, value allocated). Its domain instance is a proportional, contingent claim on a pooled whole under shared risk: the CSA share (prepaid box of whatever the farm harvests), equity share, profit share — the inverse of a fixed order.",
-        "uuid": "8817fdcd-5d74-836c-8b78-3bf8eacb29f0",
+        "uuid": "07aa650c-1ed7-83d7-ac9c-64dea62eb9f1",
         "words": [
           "use",
           "when",
@@ -55065,7 +55133,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "The canonical laws — the user's standing commands, saved as one skill, each linked to the atom it governs. Read to recall what erpax MUST obey: collapse-to-single-word-atoms, anonymise-as-agnostic, compute-the-fusion, the SKILL-trinity folder, zero-entropy at commit, imports-as-skills, entanglement, no multiword disguise.",
-        "uuid": "51bde603-0f91-86c3-a48a-6a752dd93b1a",
+        "uuid": "636a9c58-b3ca-8b01-a48d-82527f940462",
         "words": [
           "the",
           "canonical",
@@ -58724,7 +58792,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modelling animals raised for produce — the non-crop living-production domain: a herd of animals (cattle/sheep/swine/poultry) measured as biological assets (IAS-41), yielding milk/meat/wool/eggs at harvest, fed on grazed pasture or fodder, bred and health-managed. The animal twin of crop; agriculture's other half.",
-        "uuid": "a67c9321-52bb-8940-8c5f-39bbb12195b2",
+        "uuid": "5b38a5fe-f37c-8fc0-b646-6a58e32d8910",
         "words": [
           "use",
           "when",
@@ -60467,7 +60535,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when designing or porting the erpax manufacturing domain to Payload — production orders, routings/operations, work centers, BOMs, work shifts/labor, or modelling product variants without a fixed option grid. The all-industries `@erpax/manufacturing` pattern.",
-        "uuid": "7224082f-df73-805b-b743-3934ab9b6131",
+        "uuid": "c4949109-2a4e-8f6c-b272-52a5b21bf4f2",
         "words": [
           "use",
           "when",
@@ -62796,7 +62864,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about convergence/federation in erpax — same content ⇒ same id (content-uuid), same (domain×position×element) ⇒ same path; data and structure set-union with no coordination. Federation, dedup, \"all agents one erpax\".",
-        "uuid": "b2f1ceb2-f76f-83fa-9c81-84c436f8ae00",
+        "uuid": "1d7e5623-4d4f-8074-9e89-600caabdeceb",
         "words": [
           "use",
           "when",
@@ -64390,7 +64458,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when living stock dies and the asset is written down — mortality, the death-loss rate/event across a herd, fish stock, forest stand, or bee colony. The negative biological transformation (IAS-41 P&L decrement, distinct from price change); the loss twin of yield, shared across every living-production domain.",
-        "uuid": "bd5a3125-dc7d-8a4a-8bc7-75e9322aac59",
+        "uuid": "931893f3-76b9-8aca-8ed9-e18be6a3a326",
         "words": [
           "use",
           "when",
@@ -66616,7 +66684,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the society speaks outward — fanning one message across email, in-app, webhook, and Slack from a single consent-gated, audited entry-point; binding domain events to delivery by a declarative subscription map.",
-        "uuid": "314e01d9-9358-8dc7-8987-1086af4f3cc7",
+        "uuid": "171f4716-482f-8a05-b9a9-3c4a55ddbbfa",
         "words": [
           "use",
           "when",
@@ -73867,7 +73935,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when building, configuring, or extracting a Payload plugin — a function that receives the config and returns a modified config, adding collections/globals/fields/hooks/endpoints. Relevant when packaging erpax (or a domain) as a publishable @erpax/* plugin.",
-        "uuid": "a7da90e3-7757-8298-abed-1698c420c912",
+        "uuid": "58109a21-08ae-8c4d-93c9-db3e85984c99",
         "words": [
           "use",
           "when",
@@ -75230,7 +75298,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modelling one practice — the singular model of the practices collection (the plural store); an established way of doing something within a domain.",
-        "uuid": "16877ee7-1f46-8774-975e-923b9a3659bc",
+        "uuid": "7b4bbd12-2feb-8eb5-b5e2-e71cbb2cec9e",
         "words": [
           "use",
           "when",
@@ -78909,7 +78977,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when checking the quantum-physics laws on the uuid-matrix — entanglement symmetry, collapse, conservation, no-cloning, quantization — computed deterministically at no cost, A432-grounded.",
-        "uuid": "dc331964-2153-8de6-b385-33e31510c2f1",
+        "uuid": "39b91ce0-157f-8507-8992-5dac3dbf92bf",
         "words": [
           "use",
           "when",
@@ -79012,7 +79080,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "entanglement",
-        "uuid": "fefcb956-024f-8c6a-b038-b3f0bc98c31e",
+        "uuid": "44fdc190-7dd5-8b69-b8a7-1a3b7634c765",
         "words": [
           "entanglement"
         ],
@@ -79023,7 +79091,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when grounding the corpus link-field in the physics of quantum entanglement — EPR/Bell correlation, no-cloning, monogamy (CKW), and ER=EPR; the reciprocal, monogamous binding computed on the matrix.",
-        "uuid": "938b8498-a884-8afe-b605-5db71b668dda",
+        "uuid": "fbccf4fc-78da-8a95-ba73-ab36483b1054",
         "words": [
           "use",
           "when",
@@ -79081,7 +79149,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when relating an atom's gravitational mass to its quantum entanglement — quantum gravity, where the links are one measure that is both mass (referential in-degree, what curves the corpus) and entanglement; the gravity well is the singularity where the double-torus closes to infinite tamper cost (the event horizon).",
-        "uuid": "17e5ae69-679d-8d5d-8bf8-251bacd428ca",
+        "uuid": "1deacdca-56a9-8bbc-890e-f801a1c8025c",
         "words": [
           "use",
           "when",
@@ -79137,6 +79205,60 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "Use when relating an atom's gravitational mass to its quantum entanglement — quantum gravity, where the links are one measure that is both mass (referential in-degree, what curves the corpus) and entanglement; the gravity well is the singularity where the double-torus closes to infinite tamper cost (the event horizon)."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "translator",
+    "path": "quantum/translator",
+    "translations": [
+      {
+        "key": "name",
+        "source": "translator",
+        "uuid": "f34ee256-0dba-84ce-8914-7226d4029155",
+        "words": [
+          "translator"
+        ],
+        "values": {
+          "en": "translator"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reading erpax as a quantum translator — surface forms collapsing to one meaning-uuid (the interlingua eigenstate), meaning obeying no-cloning, modalities entangled in the 128 bits.",
+        "uuid": "0de18685-b5ff-8327-8d20-428d0d69c333",
+        "words": [
+          "use",
+          "when",
+          "reading",
+          "erpax",
+          "as",
+          "a",
+          "quantum",
+          "translator",
+          "surface",
+          "forms",
+          "collapsing",
+          "to",
+          "one",
+          "meaning",
+          "uuid",
+          "the",
+          "interlingua",
+          "eigenstate",
+          "meaning",
+          "obeying",
+          "no",
+          "cloning",
+          "modalities",
+          "entangled",
+          "in",
+          "the",
+          "bits"
+        ],
+        "values": {
+          "en": "Use when reading erpax as a quantum translator — surface forms collapsing to one meaning-uuid (the interlingua eigenstate), meaning obeying no-cloning, modalities entangled in the 128 bits."
         }
       }
     ]
@@ -86788,7 +86910,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when auditing anything before acting on it — the verified-true: content-uuid recomputes, the books balance, the lineage traces to a real source. The set-apart canonical form that passes verification AND validation; dual of profane; run at every scale before every act.",
-        "uuid": "0a0d2727-db7a-8d4d-85f6-2434e18b99b4",
+        "uuid": "0ff231dc-ac51-826a-839d-06dd6a26bbc4",
         "words": [
           "use",
           "when",
@@ -87869,7 +87991,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about which scientific mysteries erpax's form illuminates — information-as-reality, entropy as a conserved ledger, the holographic bound, entanglement as content-address, symmetry as conservation. Honest about correspondence vs metaphor.",
-        "uuid": "9d2a638c-5ed1-84be-bf6a-cbbacf8f1423",
+        "uuid": "c2903a1b-b38b-8b7a-a7f3-2da533c68dd5",
         "words": [
           "use",
           "when",
@@ -90989,7 +91111,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when adding, finding, or debugging erpax business logic that is NOT schema — pure tested functions, content-uuid math, integrity/tamper-cost, the agent society, domain export/import — the society's organ-body, one folder per organ, called by the collections/access/hooks.",
-        "uuid": "e4714c78-e7d3-85e1-9169-872947e05fdb",
+        "uuid": "84e9c07b-553e-8e64-99ca-135ba0d5f93a",
         "words": [
           "use",
           "when",
@@ -91254,7 +91376,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Canonical standards-merged atoms — render components (Money, AuditedTimestamp, AddressBlock) and reusable Payload Field factories shared across every domain",
-        "uuid": "d5f6326e-60ab-8ced-bbb9-c44ff6e95799",
+        "uuid": "aa2329f4-f3b7-8f5d-98a0-66098fb246e8",
         "words": [
           "canonical",
           "standards",
@@ -97850,7 +97972,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modelling variation, categorization, or cross-domain links in erpax WITHOUT new collections or deep nesting — the polymorphic multi-context tag system (acts_as_taggable_on port). One collection presented infinitely by filtering (context, tag); tag/tagging collections, the taggable plugin, tagged_with→where mapping, tag clouds, ownership, relatedness, and tag-lists that link multiverses. \"Anything is taggable.\"",
-        "uuid": "772efb3b-3e60-8093-bd26-55e05cdd2c11",
+        "uuid": "b5948fbe-f91c-8f10-98b1-3f3a12add922",
         "words": [
           "use",
           "when",
@@ -102899,7 +103021,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "translate",
-        "uuid": "61ba2217-eb07-8239-a3ca-561ff01001f8",
+        "uuid": "a97d130d-2c54-89fb-b005-76b7264d10d6",
         "words": [
           "translate"
         ],
@@ -103203,7 +103325,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "translator",
-        "uuid": "aa77c724-3850-8645-9ac5-3968a3f3f3cd",
+        "uuid": "f34ee256-0dba-84ce-8914-7226d4029155",
         "words": [
           "translator"
         ],
@@ -104143,7 +104265,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when categorizing an entity into a taxonomic class — customer type (company/individual), transaction type (sale/purchase), account type (asset/liability/equity). A select field carrying domain-specific enums; often paired with status for state-machine workflows.",
-        "uuid": "ad659012-fe69-8fff-b955-21d8a1397cf9",
+        "uuid": "dba4ce07-618f-8b48-9775-2bf4d697f4e1",
         "words": [
           "use",
           "when",
@@ -106714,7 +106836,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "verification",
-        "uuid": "c87caeb1-9461-858a-83aa-f2e2b980405b",
+        "uuid": "5399017a-389b-8b4f-9494-d0f11ba48b58",
         "words": [
           "verification"
         ],
@@ -106724,21 +106846,47 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "verification: a schema.org component word, fused from verificationFactCheckingPolicy",
-        "uuid": "af0727ce-e2d6-81b7-8637-ebe4aecad61f",
+        "source": "Use when proving a claim by content-uuid — the verifier re-derives the uuid and matches; because the token IS the content's identity, any change requires re-verification by architecture (the ACME DNS-01 pattern).",
+        "uuid": "4ce87407-1714-86b3-883e-a54338be86a7",
         "words": [
-          "verification",
+          "use",
+          "when",
+          "proving",
           "a",
-          "schema",
-          "org",
-          "component",
-          "word",
-          "fused",
-          "from",
-          "verificationfactcheckingpolicy"
+          "claim",
+          "by",
+          "content",
+          "uuid",
+          "the",
+          "verifier",
+          "re",
+          "derives",
+          "the",
+          "uuid",
+          "and",
+          "matches",
+          "because",
+          "the",
+          "token",
+          "is",
+          "the",
+          "content",
+          "s",
+          "identity",
+          "any",
+          "change",
+          "requires",
+          "re",
+          "verification",
+          "by",
+          "architecture",
+          "the",
+          "acme",
+          "dns",
+          "pattern"
         ],
         "values": {
-          "en": "verification: a schema.org component word, fused from verificationFactCheckingPolicy"
+          "en": "Use when proving a claim by content-uuid — the verifier re-derives the uuid and matches; because the token IS the content's identity, any change requires re-verification by architecture (the ACME DNS-01 pattern)."
         }
       }
     ]
@@ -107324,7 +107472,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when checking that every word in the corpus comes from the shared standards-grounded vocabulary — the dictionary, schema.org, standard codes, and established domain terms. Whatever the language, words are written only from this one scheme; an ungrounded word is entropy, and the audit computes its zero-entropy solution.",
-        "uuid": "ba4b62bb-200a-8b97-9d0d-997fd6e7dea4",
+        "uuid": "d276bf58-cf73-8f47-8ca4-5fcd81960615",
         "words": [
           "use",
           "when",
@@ -110442,4 +110590,4 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
   }
 ]
 
-export const TRANSLATIONS_COUNT = 2328
+export const TRANSLATIONS_COUNT = 2330

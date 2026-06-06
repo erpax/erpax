@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one committee — the singular model of the committees collection (the plural store); a constituted group with delegated authority over a domain.",
-    "uuid": "6cc93e71-0aed-897e-8ea9-217878ff1769",
+    "uuid": "069290ee-5c77-8d6c-bfd7-e3ece2b2fefc",
     "words": [
       "use",
       "when",

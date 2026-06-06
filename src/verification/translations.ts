@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "verification",
-    "uuid": "c87caeb1-9461-858a-83aa-f2e2b980405b",
+    "uuid": "5399017a-389b-8b4f-9494-d0f11ba48b58",
     "words": [
       "verification"
     ],
@@ -17,21 +17,47 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "verification: a schema.org component word, fused from verificationFactCheckingPolicy",
-    "uuid": "af0727ce-e2d6-81b7-8637-ebe4aecad61f",
+    "source": "Use when proving a claim by content-uuid — the verifier re-derives the uuid and matches; because the token IS the content's identity, any change requires re-verification by architecture (the ACME DNS-01 pattern).",
+    "uuid": "4ce87407-1714-86b3-883e-a54338be86a7",
     "words": [
-      "verification",
+      "use",
+      "when",
+      "proving",
       "a",
-      "schema",
-      "org",
-      "component",
-      "word",
-      "fused",
-      "from",
-      "verificationfactcheckingpolicy"
+      "claim",
+      "by",
+      "content",
+      "uuid",
+      "the",
+      "verifier",
+      "re",
+      "derives",
+      "the",
+      "uuid",
+      "and",
+      "matches",
+      "because",
+      "the",
+      "token",
+      "is",
+      "the",
+      "content",
+      "s",
+      "identity",
+      "any",
+      "change",
+      "requires",
+      "re",
+      "verification",
+      "by",
+      "architecture",
+      "the",
+      "acme",
+      "dns",
+      "pattern"
     ],
     "values": {
-      "en": "verification: a schema.org component word, fused from verificationFactCheckingPolicy"
+      "en": "Use when proving a claim by content-uuid — the verifier re-derives the uuid and matches; because the token IS the content's identity, any change requires re-verification by architecture (the ACME DNS-01 pattern)."
     }
   }
 ]

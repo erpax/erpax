@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when relating an atom's gravitational mass to its quantum entanglement — quantum gravity, where the links are one measure that is both mass (referential in-degree, what curves the corpus) and entanglement; the gravity well is the singularity where the double-torus closes to infinite tamper cost (the event horizon).",
-    "uuid": "17e5ae69-679d-8d5d-8bf8-251bacd428ca",
+    "uuid": "1deacdca-56a9-8bbc-890e-f801a1c8025c",
     "words": [
       "use",
       "when",

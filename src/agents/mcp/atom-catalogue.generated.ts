@@ -13129,7 +13129,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "verification",
     "name": "verification",
-    "description": "verification: a schema.org component word, fused from verificationFactCheckingPolicy",
+    "description": "Use when proving a claim by content-uuid — the verifier re-derives the uuid and matches; because the token IS the content's identity, any change requires re-verification by architecture (the ACME DNS-01 pattern).",
     "path": "verification"
   },
   {
