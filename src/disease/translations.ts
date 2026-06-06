@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "disease: a schema.org component word, fused from InfectiousDisease, associatedDisease, diseasePreventionInfo, diseaseSpreadStatistics",
-    "uuid": "fc657363-8607-81a1-ab57-e1423dbe5ade",
+    "uuid": "fbd2a7c2-2901-84a7-9589-3cb85078d78e",
     "words": [
       "disease",
       "a",

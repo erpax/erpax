@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "floor: a schema.org component word, fused from FloorPlan, accommodationFloorPlan, floorLevel, floorLimit, floorSize",
-    "uuid": "ec240d2d-295a-8356-98e4-a95eddd9e7ed",
+    "uuid": "78aa6e19-b198-8cbc-9291-0eafe4dd1e50",
     "words": [
       "floor",
       "a",

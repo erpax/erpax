@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "physical: a schema.org component word, fused from PhysicalActivity, PhysicalActivityCategory, PhysicalExam, PhysicalTherapy, maximumPhysicalAttendeeCapacity, physicalRequirement",
-    "uuid": "61cd4afe-3afb-840a-98ea-11e21d563273",
+    "uuid": "10fb319b-7877-89d8-8e10-2c08a1dd11fa",
     "words": [
       "physical",
       "a",

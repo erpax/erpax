@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "mode: a schema.org component word, fused from EventAttendanceModeEnumeration, GamePlayMode, accessMode, accessModeSufficient, courseMode, educationalProgramMode",
-    "uuid": "19936c58-179e-82ac-a5bd-717cadb43166",
+    "uuid": "52cba5e5-6359-8c16-b5f2-0fa9fa7e7497",
     "words": [
       "mode",
       "a",

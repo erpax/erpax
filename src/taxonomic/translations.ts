@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "taxonomic: a schema.org component word, fused from taxonomicRange",
-    "uuid": "8755d66c-e0c9-811c-8980-fdafaafde370",
+    "uuid": "d1779297-1763-85b1-822d-a84d406068a4",
     "words": [
       "taxonomic",
       "a",

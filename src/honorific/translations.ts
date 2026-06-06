@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "honorific: a schema.org component word, fused from honorificPrefix, honorificSuffix",
-    "uuid": "85f83b38-d4f6-82d3-a4c9-a49531f80e53",
+    "uuid": "81b5dc7e-d7b6-8c96-b532-5641ca8b4d85",
     "words": [
       "honorific",
       "a",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "math",
-    "uuid": "db08bf64-9a1b-8c86-b0cd-d48615964ac0",
+    "uuid": "a44b845c-dd6a-8d0b-919c-987a880a069d",
     "words": [
       "math"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "math: a schema.org component word, fused from MathSolver, SolveMathAction, mathExpression",
-    "uuid": "49d3e015-0a46-83c8-9ade-d5a17abf0fc7",
+    "uuid": "16370cd5-a5af-8e98-b1b2-838b3514ddc2",
     "words": [
       "math",
       "a",

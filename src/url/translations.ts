@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Data type: URL.",
-    "uuid": "1ccba7d3-187d-8421-96cf-c4f9fb3d9846",
+    "uuid": "b00af910-c9a5-8ef7-bfbe-d9ab3a50a371",
     "words": [
       "data",
       "type",

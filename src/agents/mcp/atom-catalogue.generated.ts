@@ -7231,8 +7231,8 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "math",
     "name": "math",
-    "description": "math: a schema.org component word, fused from MathSolver, SolveMathAction, mathExpression",
-    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/math"
+    "description": "Use when computing mathematics on the uuid/matrix substrate — the digital root (mod-9, the rodin group), the content-uuid's own digit, arithmetic closed mod-9; the template for wiring every science as a quantum facet.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/quantum/math"
   },
   {
     "atom": "matrix",

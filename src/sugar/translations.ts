@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "sugar: a schema.org component word, fused from sugarContent",
-    "uuid": "c317f75c-98c5-804e-aa71-cecfa1ac54fa",
+    "uuid": "c439df04-ec4f-87eb-ac6d-f72edec46209",
     "words": [
       "sugar",
       "a",

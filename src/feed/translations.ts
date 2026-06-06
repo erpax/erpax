@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "feed: a schema.org component word, fused from CompleteDataFeed, DataFeed, DataFeedItem, dataFeedElement, webFeed",
-    "uuid": "73419539-4a4c-86a0-b02c-8d0d60a49804",
+    "uuid": "7dd80167-1288-85b3-ba87-ba88af953c42",
     "words": [
       "feed",
       "a",

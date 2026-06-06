@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "override: a schema.org component word, fused from MerchantReturnPolicySeasonalOverride, returnPolicySeasonalOverride, seasonalOverride",
-    "uuid": "47143b8f-3ddd-84ec-b417-5fa6d44418e1",
+    "uuid": "563f1d17-9290-8e57-b344-965c0b2def1a",
     "words": [
       "override",
       "a",

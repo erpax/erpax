@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "fire: a schema.org component word, fused from FireStation",
-    "uuid": "4c8a8e97-ccb4-89e9-aa64-559f631c1d8b",
+    "uuid": "570e506c-220e-88d4-881e-78c46edfb9bd",
     "words": [
       "fire",
       "a",

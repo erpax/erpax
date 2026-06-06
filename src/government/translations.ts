@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "government: a schema.org component word, fused from GovernmentBenefitsType, GovernmentBuilding, GovernmentOffice, GovernmentOrganization, GovernmentPermit, GovernmentService",
-    "uuid": "451ee546-3e8c-80ae-9a14-3bb223435b8a",
+    "uuid": "2b6c1b2e-1905-81ed-b261-d2962f2516e7",
     "words": [
       "government",
       "a",

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "tie: a schema.org component word, fused from TieAction",
-    "uuid": "4134d674-d014-8eb6-9460-651641cb57b3",
+    "uuid": "3d193c25-5dcc-8761-96d0-892f60b56603",
     "words": [
       "tie",
       "a",

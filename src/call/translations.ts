@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "call: a schema.org component word, fused from callSign",
-    "uuid": "f0e317af-f625-8f05-afad-1eaa1ca53492",
+    "uuid": "ef70603c-4d80-8957-9a3f-c0082ec8de0a",
     "words": [
       "call",
       "a",

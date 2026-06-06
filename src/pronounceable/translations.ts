@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "pronounceable: a schema.org component word, fused from PronounceableText",
-    "uuid": "c81cdb27-f04e-836b-9f94-dcf85f9761ff",
+    "uuid": "86badd67-a12b-8be5-b5f2-f7b8f7fcb5c1",
     "words": [
       "pronounceable",
       "a",

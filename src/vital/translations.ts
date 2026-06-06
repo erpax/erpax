@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "vital: a schema.org component word, fused from VitalSign",
-    "uuid": "f79c62af-f34b-8d5b-8972-388a93f8c5a0",
+    "uuid": "b0476851-781d-8a97-9dbe-95f0c7084b99",
     "words": [
       "vital",
       "a",

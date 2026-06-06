@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "lymphatic: a schema.org component word, fused from LymphaticVessel",
-    "uuid": "2db2ba1b-c84e-8253-80ac-18815a369af2",
+    "uuid": "8aa7f0c6-49de-85fd-8bff-3ddeb21a60c7",
     "words": [
       "lymphatic",
       "a",

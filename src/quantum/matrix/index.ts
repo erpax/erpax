@@ -20,7 +20,7 @@
  * @audit computed from the live matrix, never hand-asserted
  * @see ../../matrix -- ../index.ts -- ../../entanglement -- ../../gravity -- ./SKILL.md
  */
-import { nodeOf, bindingOf, matrixDigest } from '@/uuid/matrix'
+import { nodeOf, bindingOf, matrixDigest, parentOf, prevOf, nextOf, UUID_MATRIX_NODES as N } from '@/uuid/matrix'
 import { entangle } from '@/quantum'
 import { reciprocity as edgeReciprocity } from '@/entanglement'
 import { massOf, heaviest, well } from '@/gravity'
@@ -57,6 +57,25 @@ export const centrality = (atom: string): number => massOf(atom)
 /** The top-n atoms by centrality (the spectral-ranking proxy; the top is the [[singularity]]). */
 export const centralityRank = (n = 10): { atom: string; centrality: number }[] =>
   heaviest(n).map((h) => ({ atom: h.atom, centrality: h.mass }))
+
+/** A node's double-torus DIMENSIONS from the uuid chain: the axis (parent) ⊕ the ring (prev, next). */
+export const dimensions = (atom: string): { axis: boolean; prev: boolean; next: boolean } => ({
+  axis: parentOf(atom) !== undefined,
+  prev: prevOf(atom) !== undefined,
+  next: nextOf(atom) !== undefined,
+})
+
+/**
+ * Double-torus completeness: every node closes its RING (prev AND next bound) — the torus has no
+ * gap in any node. Proves the double-torus is complete across the uuid-chain data features (the
+ * sequence ring is the dimension every node must occupy; the [[link]] adjacency is the separate,
+ * sparser coverage frontier — see adjacencyDensity).
+ */
+export const torusComplete = (): { nodes: number; ringComplete: number; complete: boolean } => {
+  let ringComplete = 0
+  for (const n of N) if (prevOf(n.atom) !== undefined && nextOf(n.atom) !== undefined) ringComplete++
+  return { nodes: N.length, ringComplete, complete: ringComplete === N.length }
+}
 
 if (import.meta.url === 'file://' + process.argv[1]) {
   const d = adjacencyDensity()

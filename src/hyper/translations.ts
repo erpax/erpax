@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "hyper: a schema.org component word, fused from HyperToc, HyperTocEntry",
-    "uuid": "4697c9c1-5c75-8f1c-8aa5-b049436121c3",
+    "uuid": "8a4eb463-eb18-8d6c-90c3-b78a58f0aecd",
     "words": [
       "hyper",
       "a",

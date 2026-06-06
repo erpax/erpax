@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "min: a schema.org component word, fused from childMinAge, energyEfficiencyScaleMin, minPrice, minValue, requiredMinAge, suggestedMinAge",
-    "uuid": "d38b2f90-b96d-8208-a147-1ab73bb1a077",
+    "uuid": "68805306-da12-8caf-8b55-5ac2eb511053",
     "words": [
       "min",
       "a",

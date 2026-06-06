@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "parlor: a schema.org component word, fused from TattooParlor",
-    "uuid": "fabe194a-c892-8ab4-b5a0-b980fd781dac",
+    "uuid": "d7977a46-0606-852d-b7c6-2e1c2c1ceb7c",
     "words": [
       "parlor",
       "a",

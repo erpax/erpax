@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "lodging: a schema.org component word, fused from LodgingBusiness, LodgingReservation, lodgingUnitDescription, lodgingUnitType",
-    "uuid": "549d8bd5-5a5e-8a81-9755-acbd16328c93",
+    "uuid": "df48acbb-9392-859f-a840-25ccb9b987f4",
     "words": [
       "lodging",
       "a",

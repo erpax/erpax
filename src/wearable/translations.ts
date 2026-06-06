@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "wearable: a schema.org component word, fused from WearableMeasurementTypeEnumeration, WearableSizeGroupEnumeration, WearableSizeSystemEnumeration",
-    "uuid": "08165d56-df50-8d0e-97fe-c707bdf40efe",
+    "uuid": "7fb4a665-05ea-8767-a3ea-bf70cc21ba4e",
     "words": [
       "wearable",
       "a",

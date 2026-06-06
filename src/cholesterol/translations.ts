@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "cholesterol: a schema.org component word, fused from cholesterolContent",
-    "uuid": "452a9ef2-6493-8f3e-8dd8-a33472cf7a02",
+    "uuid": "f0d4d6f0-5a13-8e00-b887-568026daeffe",
     "words": [
       "cholesterol",
       "a",

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "body: a schema.org component word, fused from AutoBodyShop, BodyMeasurementTypeEnumeration, BodyOfWater, LakeBodyOfWater, OceanBodyOfWater, RiverBodyOfWater",
-    "uuid": "3bced481-34be-8c33-94a8-dc7d48fcb40b",
+    "uuid": "8cc39332-f4ff-837c-810c-ff20dcf50388",
     "words": [
       "body",
       "a",

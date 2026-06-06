@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "range: a schema.org component word, fused from PostalCodeRangeSpecification, normalRange, postalCodeRange, priceRange, rangeIncludes, taxonomicRange",
-    "uuid": "341c418f-1a8f-8948-b4f4-0716429ceb09",
+    "uuid": "b3b68bf8-a26d-8103-9391-211e8869ad5c",
     "words": [
       "range",
       "a",

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "header: a schema.org component word, fused from WPHeader",
-    "uuid": "df54df6a-d295-8679-9e5c-040722282dfe",
+    "uuid": "08665405-c026-8c24-9e62-cdb4ba3de168",
     "words": [
       "header",
       "a",

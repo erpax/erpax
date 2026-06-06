@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "fallback: a schema.org component word, fused from isUnlabelledFallback",
-    "uuid": "67fce372-3c10-8051-bc76-a3e882c3770a",
+    "uuid": "a4490265-c261-8859-918d-6605b03f5f6b",
     "words": [
       "fallback",
       "a",

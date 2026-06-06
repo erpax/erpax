@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "icao: a schema.org component word, fused from icaoCode",
-    "uuid": "f52d8d6e-f322-844e-82fc-78ffbe3381ae",
+    "uuid": "e1a17a80-0af9-8bf5-bdac-14055cde7418",
     "words": [
       "icao",
       "a",

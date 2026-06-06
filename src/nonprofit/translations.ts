@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "nonprofit: a schema.org component word, fused from DENonprofitType, ITNonprofitType, NLNonprofitType, NonprofitType, UKNonprofitType, USNonprofitType",
-    "uuid": "a4327b87-6eea-8230-a5d3-68d17bcbdfa9",
+    "uuid": "bd1c4539-ee35-8a4c-b0a8-159c2f6a63a9",
     "words": [
       "nonprofit",
       "a",

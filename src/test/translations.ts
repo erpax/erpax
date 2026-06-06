@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise).",
-    "uuid": "dd1c3b35-fce8-815b-a8f6-aa3b89bedbf8",
+    "uuid": "c26e1b77-181a-8eaf-91c2-edaa42d8b223",
     "words": [
       "a",
       "single",

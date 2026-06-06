@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "counter: a schema.org component word, fused from InteractionCounter",
-    "uuid": "975e3355-c8fb-8301-80bb-110c8e37b745",
+    "uuid": "4244e490-000f-8356-98ff-8ddff5acd689",
     "words": [
       "counter",
       "a",

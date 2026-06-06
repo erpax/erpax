@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "vent: a schema.org component word, fused from cvdNumC19MechVentPats, cvdNumC19OFMechVentPats, cvdNumVent, cvdNumVentUse",
-    "uuid": "5d651927-0444-811a-91a4-ae4d161c6965",
+    "uuid": "bdb1ef59-435d-8ad2-8b03-abd42172a701",
     "words": [
       "vent",
       "a",

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "occupational: a schema.org component word, fused from EducationalOccupationalCredential, EducationalOccupationalProgram, OccupationalExperienceRequirements, OccupationalTherapy, occupationalCategory, ",
-    "uuid": "10b6006e-fb5b-8b78-9a71-5d7022627474",
+    "uuid": "958e6bc4-28b1-8cbe-b14a-f39cd2af728a",
     "words": [
       "occupational",
       "a",

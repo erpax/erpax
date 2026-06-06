@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "threshold: a schema.org component word, fused from freeShippingThreshold",
-    "uuid": "6be52036-c774-855c-8cda-3b286d2baccd",
+    "uuid": "569ad155-1890-80e8-ba60-7241f4a2eb68",
     "words": [
       "threshold",
       "a",

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "storage: a schema.org component word, fused from SelfStorage, storageRequirements",
-    "uuid": "c467672d-348e-8526-a072-d73d8f4d7248",
+    "uuid": "e1c1c247-1875-8557-888d-8067a8c6bb0c",
     "words": [
       "storage",
       "a",

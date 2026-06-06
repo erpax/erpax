@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "rental: a schema.org component word, fused from AutoRental, MovieRentalStore, RentalCarReservation, VacationRental",
-    "uuid": "2c1d6706-1b54-855a-a4cc-60877020debb",
+    "uuid": "3324bd65-3705-8a3a-a7b9-b6e59e7a8c77",
     "words": [
       "rental",
       "a",

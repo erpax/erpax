@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "executable: a schema.org component word, fused from executableLibraryName",
-    "uuid": "d966a004-b0f2-876c-be15-fa1e20971288",
+    "uuid": "646b6204-d4a6-8c0e-b0cb-e575dc53d99c",
     "words": [
       "executable",
       "a",

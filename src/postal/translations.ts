@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "postal: a schema.org component word, fused from PostalAddress, PostalCodeRangeSpecification, postalCode, postalCodeBegin, postalCodeEnd, postalCodePrefix",
-    "uuid": "db71fc23-cc34-832d-a2b3-b204a2a17382",
+    "uuid": "a572fb8a-314f-8697-abfe-425ca2d965e9",
     "words": [
       "postal",
       "a",

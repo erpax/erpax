@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "maximum: a schema.org component word, fused from MaximumDoseSchedule, maximumAttendeeCapacity, maximumEnrollment, maximumIntake, maximumPhysicalAttendeeCapacity, maximumVirtualAttendeeCapacity",
-    "uuid": "923b09a8-0c6a-8855-bec0-65cd00937fac",
+    "uuid": "79ae11a8-fed1-87ab-b59d-5fc37d8ac40a",
     "words": [
       "maximum",
       "a",

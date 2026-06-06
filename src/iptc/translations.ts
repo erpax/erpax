@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "iptc: a schema.org component word, fused from IPTCDigitalSourceEnumeration",
-    "uuid": "c17abfd3-4327-8608-8a79-1b227c4a59ec",
+    "uuid": "d8fba36f-8cfa-895a-8279-fcf28a42a6bd",
     "words": [
       "iptc",
       "a",

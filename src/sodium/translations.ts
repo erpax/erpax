@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "sodium: a schema.org component word, fused from sodiumContent",
-    "uuid": "150fb462-9fea-8ed0-9e5a-32fa55789a20",
+    "uuid": "6d3c5f77-64ff-8ab4-94d8-b74ed15b8efe",
     "words": [
       "sodium",
       "a",

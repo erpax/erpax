@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "confirm: a schema.org component word, fused from ConfirmAction",
-    "uuid": "c6677ff4-7560-853d-9356-9cbd2b73a2ad",
+    "uuid": "d06e1c48-e700-8a2d-8e72-500aab55bc51",
     "words": [
       "confirm",
       "a",

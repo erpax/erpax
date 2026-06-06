@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "overlaps: a schema.org component word, fused from geoOverlaps",
-    "uuid": "a8e3c6fc-2ce1-801c-992d-5292f727ba16",
+    "uuid": "1fbdc0a0-44ed-8284-b2eb-8d76603ecd4f",
     "words": [
       "overlaps",
       "a",

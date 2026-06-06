@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "within: a schema.org component word, fused from geoWithin",
-    "uuid": "9810a1f8-d234-87f0-9503-e2460420a15c",
+    "uuid": "5e4df68a-4b27-874b-985b-736c722b53ba",
     "words": [
       "within",
       "a",

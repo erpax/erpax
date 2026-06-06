@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "pregnancy: a schema.org component word, fused from DrugPregnancyCategory, pregnancyCategory, pregnancyWarning",
-    "uuid": "a34ca063-f8cc-80c5-870e-ffeddd4c0e26",
+    "uuid": "4b49174f-3966-809a-91d3-5e644f5ae98e",
     "words": [
       "pregnancy",
       "a",

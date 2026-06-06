@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "iata: a schema.org component word, fused from iataCode",
-    "uuid": "031c2ccf-0bc3-8b84-9bf5-ac7fc6e53551",
+    "uuid": "48317adb-befd-832d-910c-0cfb8f4f9b29",
     "words": [
       "iata",
       "a",

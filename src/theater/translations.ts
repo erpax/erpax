@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "theater: a schema.org component word, fused from MovieTheater, PerformingArtsTheater, TheaterEvent, TheaterGroup",
-    "uuid": "c04569e6-9349-8cab-b9a5-d6d55211ef25",
+    "uuid": "dee2e79c-aa8d-8257-bbd1-c26aa3a1b6c1",
     "words": [
       "theater",
       "a",

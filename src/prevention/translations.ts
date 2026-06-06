@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "prevention: a schema.org component word, fused from PreventionIndication, diseasePreventionInfo, primaryPrevention, secondaryPrevention",
-    "uuid": "e9307f67-c741-87e3-9380-42e22fadcfee",
+    "uuid": "cde3ba2f-2c86-85e2-a408-d0a2c6d80e77",
     "words": [
       "prevention",
       "a",

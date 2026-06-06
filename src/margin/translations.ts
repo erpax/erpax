@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "margin: a schema.org component word, fused from marginOfError",
-    "uuid": "b933a540-60ea-8730-89d7-7815e70c0baa",
+    "uuid": "9e8e3d40-5c74-8ae9-b417-92e3ae43aad1",
     "words": [
       "margin",
       "a",

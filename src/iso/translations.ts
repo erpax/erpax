@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "iso: a schema.org component word, fused from iso6523Code",
-    "uuid": "101792e9-f556-80a8-bd66-dce0bd59cdad",
+    "uuid": "e7ba6b0c-0ce5-8eb7-8e84-fb8fa3c13b1f",
     "words": [
       "iso",
       "a",

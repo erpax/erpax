@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "rv: a schema.org component word, fused from RVPark",
-    "uuid": "9bde1ccb-c541-83d2-a8e4-478f4a260cb2",
+    "uuid": "c8de6b18-a748-8cd8-a89b-9870e987f278",
     "words": [
       "rv",
       "a",

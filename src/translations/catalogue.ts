@@ -132,7 +132,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "acceleration: a schema.org component word, fused from accelerationTime",
-        "uuid": "bcd5e6b8-1e6f-80d2-84c2-7f630803592c",
+        "uuid": "18e19275-5471-832f-a63a-dd3aedf77a80",
         "words": [
           "acceleration",
           "a",
@@ -168,7 +168,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "accept: a schema.org component word, fused from AcceptAction",
-        "uuid": "c6c40f3c-3a49-8b63-8cc7-deed47d328dd",
+        "uuid": "5b976d93-925e-8551-bb21-b87bf69c420a",
         "words": [
           "accept",
           "a",
@@ -204,7 +204,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "acceptance: a schema.org component word, fused from expectsAcceptanceOf",
-        "uuid": "982d8f3f-5e35-8700-91ea-89041c1b2073",
+        "uuid": "ba9a4985-0a3d-8dbf-9d43-edab4f344929",
         "words": [
           "acceptance",
           "a",
@@ -240,7 +240,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "accepted: a schema.org component word, fused from acceptedAnswer, acceptedOffer, acceptedPaymentMethod, currenciesAccepted, paymentAccepted",
-        "uuid": "0e95c1a1-1ac1-81c8-8667-e8bf1a364ca3",
+        "uuid": "e2763e92-9cf2-8b9c-babc-5267c92473fc",
         "words": [
           "accepted",
           "a",
@@ -280,7 +280,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "accepting: a schema.org component word, fused from isAcceptingNewPatients",
-        "uuid": "74343430-c26e-8293-a699-f4891b303f69",
+        "uuid": "4698000a-e99c-8b89-ac98-77dee9566daa",
         "words": [
           "accepting",
           "a",
@@ -316,7 +316,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "accepts: a schema.org component word, fused from acceptsReservations",
-        "uuid": "df4fa725-1fea-874a-83e4-1fff136b7765",
+        "uuid": "2f398384-ffd5-87c2-9b87-867462875ade",
         "words": [
           "accepts",
           "a",
@@ -498,7 +498,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "accessible: a schema.org component word, fused from isAccessibleForFree",
-        "uuid": "0e9c2ebd-3033-8946-b475-6216f87ca1ca",
+        "uuid": "efa3f423-dccc-8837-a9e9-bbe9b61f4d21",
         "words": [
           "accessible",
           "a",
@@ -534,7 +534,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "accessory: a schema.org component word, fused from isAccessoryOrSparePartFor",
-        "uuid": "0784bd55-536b-8ba1-9e53-dd6d673f9642",
+        "uuid": "7ea5e70f-f415-8b1f-965c-dade4ee46ec2",
         "words": [
           "accessory",
           "a",
@@ -696,7 +696,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "accountable: a schema.org component word, fused from accountablePerson",
-        "uuid": "5a2ec839-1655-874a-8a02-268a6ec57d31",
+        "uuid": "ce2b5f6f-f82d-847d-8532-5198c6e09b13",
         "words": [
           "accountable",
           "a",
@@ -856,7 +856,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "achieve: a schema.org component word, fused from AchieveAction",
-        "uuid": "190724b9-04d1-86fe-82e0-654cc36e50e1",
+        "uuid": "33eda54d-3d4b-8546-acf1-8a662462c0ca",
         "words": [
           "achieve",
           "a",
@@ -943,7 +943,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "acquire: a schema.org component word, fused from acquireLicensePage",
-        "uuid": "7d9a126b-0295-8811-a205-e1cd8ea90de3",
+        "uuid": "954003fa-3a21-85ab-8667-83e82e80b6fd",
         "words": [
           "acquire",
           "a",
@@ -1016,7 +1016,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "acriss: a schema.org component word, fused from acrissCode",
-        "uuid": "2a1da62c-53ab-8c32-bdc0-33dea2488d1c",
+        "uuid": "22d8c904-422c-8258-b2bf-ba3d14c95f7f",
         "words": [
           "acriss",
           "a",
@@ -1112,7 +1112,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "actionable: a schema.org component word, fused from actionableFeedbackPolicy",
-        "uuid": "e401ef29-e2a6-8377-9a59-0283ddd2ffc8",
+        "uuid": "f20f4237-cdc0-8443-8e12-3014c683182c",
         "words": [
           "actionable",
           "a",
@@ -1148,7 +1148,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "activate: a schema.org component word, fused from ActivateAction",
-        "uuid": "f1a164e0-a9b0-8da7-9721-ec79d327d671",
+        "uuid": "a4597a49-cd97-8b87-a996-30eea772cb5b",
         "words": [
           "activate",
           "a",
@@ -1319,7 +1319,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "activity: a schema.org component word, fused from PhysicalActivity, PhysicalActivityCategory, SportsActivityLocation, activityDuration, activityFrequency, sportsActivityLocation",
-        "uuid": "0e412c9d-c362-8679-b549-9463032763ff",
+        "uuid": "c3fa7626-2c1a-8b36-a775-d40286b4c038",
         "words": [
           "activity",
           "a",
@@ -1470,7 +1470,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "ad: a schema.org component word, fused from WPAdBlock",
-        "uuid": "a965c687-7c8c-87ef-980c-76e9847a2087",
+        "uuid": "9f7d2fbe-bbc3-8362-b621-7a85c42bb96e",
         "words": [
           "ad",
           "a",
@@ -1559,7 +1559,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "added: a schema.org component word, fused from valueAddedTaxIncluded",
-        "uuid": "54e56384-4c73-82e4-b188-71c827f4711b",
+        "uuid": "f89b6c03-b320-8c78-94ac-70c1103e6b3d",
         "words": [
           "added",
           "a",
@@ -1595,7 +1595,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "additional: a schema.org component word, fused from additionalName, additionalNumberOfGuests, additionalProperty, additionalType, additionalVariable",
-        "uuid": "276b9bb3-1d0a-867c-b561-137fbef319cc",
+        "uuid": "19f6c03a-7628-87d9-80fa-fa9ef437c640",
         "words": [
           "additional",
           "a",
@@ -1775,7 +1775,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "administration: a schema.org component word, fused from administrationRoute",
-        "uuid": "5c42dea2-de8f-8fda-963c-3a0dee0f5920",
+        "uuid": "9f40b5b5-8d36-8916-b7c7-9e9bc7606e46",
         "words": [
           "administration",
           "a",
@@ -1811,7 +1811,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "administrative: a schema.org component word, fused from AdministrativeArea",
-        "uuid": "e7257e6c-4a0e-80c0-9b93-29208fb85f73",
+        "uuid": "477d4493-eeef-8a87-97e7-0057c7e2e848",
         "words": [
           "administrative",
           "a",
@@ -1847,7 +1847,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "adult: a schema.org component word, fused from AdultEntertainment, AdultOrientedEnumeration, hasAdultConsideration",
-        "uuid": "d1e80997-6d19-8342-a04d-91d1aad4841a",
+        "uuid": "45a922c0-606a-847a-8fc3-26369b88dca9",
         "words": [
           "adult",
           "a",
@@ -1885,7 +1885,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "adults: a schema.org component word, fused from numAdults",
-        "uuid": "87e54d3d-6cc9-8210-a7e3-77a37bd5746b",
+        "uuid": "10e47072-566f-80c8-9d9e-81cd07810416",
         "words": [
           "adults",
           "a",
@@ -1921,7 +1921,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "advance: a schema.org component word, fused from advanceBookingRequirement",
-        "uuid": "e82a58a7-0438-84f8-894e-2716710ac305",
+        "uuid": "fc579e6f-a34e-813c-95fc-1eb297d7252a",
         "words": [
           "advance",
           "a",
@@ -1957,7 +1957,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "adverse: a schema.org component word, fused from adverseOutcome, seriousAdverseOutcome",
-        "uuid": "400f903c-c56b-829a-baba-7f1cdf837360",
+        "uuid": "0993e84e-1c33-8c0b-8894-21834188ded5",
         "words": [
           "adverse",
           "a",
@@ -1994,7 +1994,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "advertiser: a schema.org component word, fused from AdvertiserContentArticle",
-        "uuid": "9e3d4de5-e949-8b35-a742-80016e574cef",
+        "uuid": "000fd2fc-b1a6-84b8-b9fd-7e111fd12693",
         "words": [
           "advertiser",
           "a",
@@ -2064,7 +2064,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "affiliate: a schema.org component word, fused from broadcastAffiliateOf",
-        "uuid": "543743cd-a030-82fd-90ab-66aa34e536d2",
+        "uuid": "f1c836ad-3912-81ae-9e8b-bdca32d818fe",
         "words": [
           "affiliate",
           "a",
@@ -2145,7 +2145,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "after: a schema.org component word, fused from afterMedia",
-        "uuid": "9c64fc0d-c058-8f7e-aafc-1e77d99fa734",
+        "uuid": "d72ac075-8051-8299-9239-14aab4349770",
         "words": [
           "after",
           "a",
@@ -2281,7 +2281,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "agency: a schema.org component word, fused from EmploymentAgency, FundingAgency, InsuranceAgency, TravelAgency",
-        "uuid": "16790c39-db0a-82fe-a222-20591c65319a",
+        "uuid": "e6b22202-73ee-8e67-9d03-c4bd43a5b0a2",
         "words": [
           "agency",
           "a",
@@ -2615,7 +2615,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "aggregate: a schema.org component word, fused from AggregateOffer, AggregateRating, EmployerAggregateRating, aggregateElement, aggregateRating",
-        "uuid": "c37ddb53-813b-805e-a7a4-dedb0b8ae406",
+        "uuid": "26dadbec-bac3-88c7-82dd-6fd256bf64d2",
         "words": [
           "aggregate",
           "a",
@@ -2710,7 +2710,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "agree: a schema.org component word, fused from AgreeAction",
-        "uuid": "e1329667-4fe2-8d96-a4c7-3da279469fcb",
+        "uuid": "d8b00563-7a86-8cc4-83c9-b89c765b599e",
         "words": [
           "agree",
           "a",
@@ -3071,7 +3071,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "aid: a schema.org component word, fused from financialAidEligible",
-        "uuid": "2b72d159-6212-8597-8b7a-1be0a8f1284d",
+        "uuid": "e4ccf6b4-9d81-86cc-baf3-eb1fb297a515",
         "words": [
           "aid",
           "a",
@@ -3107,7 +3107,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "airbags: a schema.org component word, fused from numberOfAirbags",
-        "uuid": "2c652e98-bd3c-8291-8c0b-7ba88cc4dbea",
+        "uuid": "a9868ef0-d68d-89f2-813e-3e478748baeb",
         "words": [
           "airbags",
           "a",
@@ -3371,7 +3371,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "alcohol: a schema.org component word, fused from alcoholWarning",
-        "uuid": "d04de9e8-de7c-85bb-a778-b4d0c66756aa",
+        "uuid": "052d50ea-540e-8b7d-8679-8f25cd056cb8",
         "words": [
           "alcohol",
           "a",
@@ -3444,7 +3444,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "alignment: a schema.org component word, fused from AlignmentObject, alignmentType, educationalAlignment",
-        "uuid": "0a5923e5-2ae4-8239-86fd-743b96b01786",
+        "uuid": "0888c385-8110-8874-ba53-739c464a71c4",
         "words": [
           "alignment",
           "a",
@@ -3539,7 +3539,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "alley: a schema.org component word, fused from BowlingAlley",
-        "uuid": "20c52a45-6299-88e5-b54d-f1dd5abd9fcc",
+        "uuid": "932d2ded-31df-8593-8a47-be974746bd75",
         "words": [
           "alley",
           "a",
@@ -3575,7 +3575,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "allocate: a schema.org component word, fused from AllocateAction",
-        "uuid": "1f7ad1da-f7c4-86a2-92e0-5d7c6d2a4671",
+        "uuid": "d436a608-80cd-8c5f-802d-d92a37d3d28b",
         "words": [
           "allocate",
           "a",
@@ -3675,7 +3675,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "allowed: a schema.org component word, fused from petsAllowed, regionsAllowed, smokingAllowed",
-        "uuid": "f0f523f8-163f-8f3c-9ddf-fdf2af76c9fe",
+        "uuid": "3ff4f0ad-3dee-8dd5-b8d3-32b9d87bec81",
         "words": [
           "allowed",
           "a",
@@ -3713,7 +3713,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "alternate: a schema.org component word, fused from alternateName",
-        "uuid": "9a6d0f5b-0b07-8169-a932-ec7de5a6e0dd",
+        "uuid": "ccc243ce-7567-8368-9f9d-0cd8731cda76",
         "words": [
           "alternate",
           "a",
@@ -3816,7 +3816,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "am: a schema.org component word, fused from AMRadioChannel",
-        "uuid": "b0e39c74-f14f-8542-bd43-e4bb1e22e778",
+        "uuid": "85cd69da-bdc5-86c7-bc02-62dc216bd956",
         "words": [
           "am",
           "a",
@@ -3901,7 +3901,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "amends: a schema.org component word, fused from legislationAmends",
-        "uuid": "40b5d7ca-1ea7-8403-b515-c0c81766f943",
+        "uuid": "e7131ca7-5171-807d-a0d0-6f083c058b72",
         "words": [
           "amends",
           "a",
@@ -3937,7 +3937,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "amenity: a schema.org component word, fused from amenityFeature",
-        "uuid": "a1621a51-b2f5-8504-a2d7-78d00dfde191",
+        "uuid": "16419689-c87e-8765-ad87-892370948325",
         "words": [
           "amenity",
           "a",
@@ -4044,7 +4044,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "amp: a schema.org component word, fused from AmpStory",
-        "uuid": "dd4dd82f-ce04-8bc2-8580-ff41df11e069",
+        "uuid": "e5c9ae5c-bdeb-8107-bd05-0e571b8d0d0e",
         "words": [
           "amp",
           "a",
@@ -4080,7 +4080,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "amusement: a schema.org component word, fused from AmusementPark",
-        "uuid": "b09a9113-9d25-8e7f-befe-e5bb86203541",
+        "uuid": "78325b45-d85a-8286-924f-4e80f890ee0f",
         "words": [
           "amusement",
           "a",
@@ -4223,7 +4223,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "analysis: a schema.org component word, fused from AnalysisNewsArticle",
-        "uuid": "17975c58-e00f-8fab-a0f5-40822ab69c15",
+        "uuid": "c15fa539-45ab-830a-9a15-e55a66aba367",
         "words": [
           "analysis",
           "a",
@@ -4329,7 +4329,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "anatomical: a schema.org component word, fused from AnatomicalStructure, AnatomicalSystem",
-        "uuid": "57050455-6216-88ad-a504-bcd147eab280",
+        "uuid": "d7813b04-5e6e-846f-8eb3-f9e0326e447f",
         "words": [
           "anatomical",
           "a",
@@ -4366,7 +4366,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "anatomy: a schema.org component word, fused from SuperficialAnatomy, associatedAnatomy, relatedAnatomy",
-        "uuid": "581950ec-5297-8498-ad7c-e5b02b289648",
+        "uuid": "d1cde29a-d006-85ec-ae85-8a264cd68686",
         "words": [
           "anatomy",
           "a",
@@ -4642,7 +4642,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "announcement: a schema.org component word, fused from SpecialAnnouncement, announcementLocation",
-        "uuid": "d5310f2d-99b5-8979-96f4-0127b07abff7",
+        "uuid": "70bd7968-785f-8da4-9534-b07a000f7b9d",
         "words": [
           "announcement",
           "a",
@@ -4679,7 +4679,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "annual: a schema.org component word, fused from annualPercentageRate",
-        "uuid": "1c6a439a-6310-88a4-8dfc-dff3bccb606c",
+        "uuid": "930da601-28d0-8e38-b1db-0b1aede65261",
         "words": [
           "annual",
           "a",
@@ -4846,7 +4846,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "An apartment (in American English) or flat (in British English) is a self-contained housing unit (a type of residential real estate) that occupies only part of a building (source: Wikipedia, the free ",
-        "uuid": "5552e675-d39b-8734-81d9-d20f79b5d5dd",
+        "uuid": "b2c4a1e4-99a5-8363-91fd-2f0a865a7bf7",
         "words": [
           "an",
           "apartment",
@@ -5174,7 +5174,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "append: a schema.org component word, fused from AppendAction",
-        "uuid": "976df68b-bf8f-8531-8d55-0467abe07da6",
+        "uuid": "7151d2e2-15c4-8778-bd79-491f8a0e071f",
         "words": [
           "append",
           "a",
@@ -5210,7 +5210,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "applicability: a schema.org component word, fused from legislationDateOfApplicability",
-        "uuid": "e33b1f80-c3a9-840c-a298-17915b7bc275",
+        "uuid": "7c6d27ff-454c-8bb5-aef8-1f4b4605b82f",
         "words": [
           "applicability",
           "a",
@@ -5246,7 +5246,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "applicable: a schema.org component word, fused from applicableCountry, applicableLocation",
-        "uuid": "128d0ee3-66ed-8eb5-bdf3-f6f3cb441ea0",
+        "uuid": "f118ac69-9d1e-8bee-b680-20db44cb6e0d",
         "words": [
           "applicable",
           "a",
@@ -5283,7 +5283,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "applicant: a schema.org component word, fused from applicantLocationRequirements",
-        "uuid": "ca860d71-c250-8cd8-b1f6-a734abec079d",
+        "uuid": "ebeb07dd-a681-8f67-8e8b-928b71fbadec",
         "words": [
           "applicant",
           "a",
@@ -5353,7 +5353,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "applies: a schema.org component word, fused from appliesToDeliveryMethod, appliesToPaymentMethod, legislationApplies",
-        "uuid": "f92f47e2-19ba-8f05-b783-d2b1a8a2c99e",
+        "uuid": "46aaed46-5740-8df9-8da9-5ea030df4ae8",
         "words": [
           "applies",
           "a",
@@ -5391,7 +5391,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "apply: a schema.org component word, fused from ApplyAction, directApply",
-        "uuid": "ce503e92-8e49-8827-9db1-7ca9a40331bb",
+        "uuid": "a26dc783-1d0e-8dbc-8871-97eb42204d70",
         "words": [
           "apply",
           "a",
@@ -5656,7 +5656,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "archive: a schema.org component word, fused from ArchiveComponent, ArchiveOrganization, archiveHeld, holdingArchive",
-        "uuid": "37a50a30-5f41-8116-9e3c-72d4bec9cb59",
+        "uuid": "846d2bc8-18c2-8f93-a1f2-b9d3a8f02de3",
         "words": [
           "archive",
           "a",
@@ -5793,7 +5793,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "arena: a schema.org component word, fused from StadiumOrArena",
-        "uuid": "af510fe0-1a72-859c-9676-bf90160b2a1e",
+        "uuid": "23e82c18-b8cd-88fa-86f4-e6a5b5a09a27",
         "words": [
           "arena",
           "a",
@@ -5829,7 +5829,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "arrangement: a schema.org component word, fused from musicArrangement",
-        "uuid": "0b79fffa-3448-8c9d-892f-03e1a302dd90",
+        "uuid": "51ba982c-e227-8941-8237-52c667800756",
         "words": [
           "arrangement",
           "a",
@@ -5865,7 +5865,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "arrival: a schema.org component word, fused from arrivalAirport, arrivalBoatTerminal, arrivalBusStop, arrivalGate, arrivalPlatform, arrivalStation",
-        "uuid": "a0c450e3-1cc4-8f95-8800-fdda05ee8a2f",
+        "uuid": "67e0d029-ac3f-8d53-ae21-94efdc92fd2f",
         "words": [
           "arrival",
           "a",
@@ -5906,7 +5906,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "arrive: a schema.org component word, fused from ArriveAction",
-        "uuid": "250f3bbc-cd5a-85bc-9146-1735a3928ab5",
+        "uuid": "63038beb-3a9b-87eb-9968-58b36d8a57b8",
         "words": [
           "arrive",
           "a",
@@ -5942,7 +5942,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "art: a schema.org component word, fused from ArtGallery, ComicCoverArt, CoverArt, SequentialArt, artEdition, artMedium",
-        "uuid": "74cdc106-fd73-8686-9fd8-812a80459f58",
+        "uuid": "52d5feae-5a1a-8d7f-b131-d1e557ecad9a",
         "words": [
           "art",
           "a",
@@ -5983,7 +5983,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "arterial: a schema.org component word, fused from arterialBranch",
-        "uuid": "90108797-019b-8f2c-a1d0-961e8ca02b3a",
+        "uuid": "35549b31-9cb1-82b2-a3ef-c06e9ceb9dde",
         "words": [
           "arterial",
           "a",
@@ -6019,7 +6019,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "A type of blood vessel that specifically carries blood away from the heart.",
-        "uuid": "07134ea9-8c03-8600-8df4-e60f035a16aa",
+        "uuid": "6e1cf629-77e0-84a0-9bee-e2dcb71edc34",
         "words": [
           "a",
           "type",
@@ -6212,7 +6212,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "arts: a schema.org component word, fused from PerformingArtsEvent, PerformingArtsTheater, VisualArtsEvent",
-        "uuid": "0950f35a-9197-81c3-99b4-7394e85867b5",
+        "uuid": "1cce2bf2-d438-8f07-9412-e5b4983ccacb",
         "words": [
           "arts",
           "a",
@@ -6250,7 +6250,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "artwork: a schema.org component word, fused from VisualArtwork, artworkSurface",
-        "uuid": "7c633ec2-0ec8-8fca-8ca3-465d5ea77128",
+        "uuid": "79a0a4fc-87c8-8704-a75a-4dbcf3aa4474",
         "words": [
           "artwork",
           "a",
@@ -6341,7 +6341,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "ask: a schema.org component word, fused from AskAction, AskPublicNewsArticle",
-        "uuid": "77a3671f-a07c-80ea-bdd2-a052d03c572c",
+        "uuid": "9ee6a8fb-f5f1-8863-9fec-d4b80e863ef0",
         "words": [
           "ask",
           "a",
@@ -6462,7 +6462,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "assess: a schema.org component word, fused from AssessAction",
-        "uuid": "5d1ee348-8067-8df7-954f-3b9e41071d57",
+        "uuid": "326f3605-2ba2-8d22-b2ce-2c7034a31f30",
         "words": [
           "assess",
           "a",
@@ -6596,7 +6596,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "assign: a schema.org component word, fused from AssignAction",
-        "uuid": "49eb9b1f-c718-8a0c-ba52-d6f78f2c016b",
+        "uuid": "1259c5cd-589d-80f9-9175-bbcde5c24cf0",
         "words": [
           "assign",
           "a",
@@ -6682,7 +6682,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "associated: a schema.org component word, fused from associatedAnatomy, associatedArticle, associatedClaimReview, associatedDisease, associatedMedia, associatedMediaReview",
-        "uuid": "87be3980-7106-80c4-9b2b-f18d1ffde19e",
+        "uuid": "aae64e60-ca33-83de-bcc1-5b87de18b0d7",
         "words": [
           "associated",
           "a",
@@ -6887,7 +6887,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "attachment: a schema.org component word, fused from messageAttachment",
-        "uuid": "ad814131-163c-8b1e-8470-31e3af319179",
+        "uuid": "c9cdb383-314f-8163-b62a-9727c2e3389e",
         "words": [
           "attachment",
           "a",
@@ -6923,7 +6923,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "attendance: a schema.org component word, fused from EventAttendanceModeEnumeration, eventAttendanceMode",
-        "uuid": "5323f1c9-4b1b-8ebe-bb48-2afaf5eeffd7",
+        "uuid": "012eba8b-4738-8568-8c8a-7cb7cc5538d8",
         "words": [
           "attendance",
           "a",
@@ -7078,7 +7078,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Professional service: Attorney. This type is deprecated - LegalService is more inclusive and less ambiguous.",
-        "uuid": "5d283e7f-e165-83ec-b3b3-11ed27308df0",
+        "uuid": "abde3544-bfe9-8b68-a5f2-4488ab108dc4",
         "words": [
           "professional",
           "service",
@@ -7119,7 +7119,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "attraction: a schema.org component word, fused from TouristAttraction, includesAttraction",
-        "uuid": "49793bd6-d328-88f4-8806-a2756c6b077e",
+        "uuid": "5e976ea9-4d71-814e-baae-f060fa7013df",
         "words": [
           "attraction",
           "a",
@@ -7156,7 +7156,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "attribute: a schema.org component word, fused from characterAttribute",
-        "uuid": "d4d430be-517f-8a9f-8018-24fff2fd86de",
+        "uuid": "4f14e95f-fc8f-8b37-98f8-23c4e5e9fc68",
         "words": [
           "attribute",
           "a",
@@ -7862,7 +7862,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "authenticate: a schema.org component word, fused from AuthenticateAction",
-        "uuid": "1b23a968-5b11-8fad-9679-7b10727b96e0",
+        "uuid": "eccc9b14-fdd2-83d1-9504-c24a4f9a2ad1",
         "words": [
           "authenticate",
           "a",
@@ -7951,7 +7951,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "authenticity: a schema.org component word, fused from mediaAuthenticityCategory",
-        "uuid": "4683ce13-d636-8ea9-8901-3abb23bad79b",
+        "uuid": "1c1127f3-3f5b-8dbf-9878-a791bb6f83a9",
         "words": [
           "authenticity",
           "a",
@@ -8050,7 +8050,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "authority: a schema.org component word, fused from recognizingAuthority",
-        "uuid": "f4c216b9-a137-82ce-b150-fe4b1b3984bf",
+        "uuid": "ae94be8f-3d64-8229-a0ba-944b4b77c338",
         "words": [
           "authority",
           "a",
@@ -8086,7 +8086,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "authorize: a schema.org component word, fused from AuthorizeAction",
-        "uuid": "051ede26-dcd6-8f40-83bc-36da11982f9c",
+        "uuid": "ef7d1785-896c-8308-a73f-ac74041c740c",
         "words": [
           "authorize",
           "a",
@@ -8122,7 +8122,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "auto: a schema.org component word, fused from AutoBodyShop, AutoDealer, AutoPartsStore, AutoRental, AutoRepair, AutoWash",
-        "uuid": "0752027b-1d6e-89c8-8f4d-cf7be3c49e85",
+        "uuid": "fea1e157-d067-885f-b0a4-148b8070805e",
         "words": [
           "auto",
           "a",
@@ -8163,7 +8163,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "automated: a schema.org component word, fused from AutomatedTeller",
-        "uuid": "b2e5b86f-39a3-8f30-8594-94a34ac4b886",
+        "uuid": "600d2f7c-fad0-84f3-a7d9-65685e2a093c",
         "words": [
           "automated",
           "a",
@@ -8199,7 +8199,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "automotive: a schema.org component word, fused from AutomotiveBusiness",
-        "uuid": "b8a0527f-cea8-894a-9e00-a97d7eae9711",
+        "uuid": "eb564581-f4b7-8404-a86a-e5637d49c734",
         "words": [
           "automotive",
           "a",
@@ -8354,7 +8354,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "awarded: a schema.org component word, fused from educationalCredentialAwarded, occupationalCredentialAwarded",
-        "uuid": "58050c99-b7d3-8789-9f4e-781f941a4aa5",
+        "uuid": "287fa30c-abfa-8d15-8dfd-df86b8a3ec4f",
         "words": [
           "awarded",
           "a",
@@ -8506,7 +8506,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "away: a schema.org component word, fused from awayTeam",
-        "uuid": "494fb282-62fd-81a2-8ec2-6e875eb09910",
+        "uuid": "68297628-d9e1-823d-9247-58cb3d734437",
         "words": [
           "away",
           "a",
@@ -8542,7 +8542,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "axles: a schema.org component word, fused from numberOfAxles",
-        "uuid": "c60d6a89-2f8c-8c0f-9a1a-3f06c66c4a30",
+        "uuid": "0ecf0deb-d680-8e22-b1e1-2ef4bf02bfed",
         "words": [
           "axles",
           "a",
@@ -8578,7 +8578,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "back: a schema.org component word, fused from cashBack",
-        "uuid": "1892da46-d17e-856a-8f2e-f09ae76012c8",
+        "uuid": "03930702-c4ca-82fb-a0a3-8e0c0edff646",
         "words": [
           "back",
           "a",
@@ -8614,7 +8614,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "background: a schema.org component word, fused from BackgroundNewsArticle",
-        "uuid": "8688a95e-8133-86f2-b4a2-a8495bcb6529",
+        "uuid": "31df2b4a-9a20-8c80-9d32-43b817f5b74c",
         "words": [
           "background",
           "a",
@@ -9297,7 +9297,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "bans: a schema.org component word, fused from travelBans",
-        "uuid": "dd15eb0e-5ef6-8c1f-b93f-79bce623530c",
+        "uuid": "2d99ecee-d09f-8abc-a72e-dea1fa56a76e",
         "words": [
           "bans",
           "a",
@@ -9333,7 +9333,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "bar: a schema.org component word, fused from BarOrPub, WPSideBar",
-        "uuid": "8fd78d5d-55dd-8f0a-ad3c-3048eceada4c",
+        "uuid": "75bc2681-534a-80a4-b037-ff19b175bd97",
         "words": [
           "bar",
           "a",
@@ -9604,7 +9604,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "bathrooms: a schema.org component word, fused from numberOfBathroomsTotal, numberOfFullBathrooms, numberOfPartialBathrooms",
-        "uuid": "5340d1af-2a3e-8e7c-a9b7-8fbef1e4abe5",
+        "uuid": "0ed73f0a-8eaa-8b95-979d-ac96ca25036a",
         "words": [
           "bathrooms",
           "a",
@@ -9642,7 +9642,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "bcc: a schema.org component word, fused from bccRecipient",
-        "uuid": "5533daf9-2f95-82c7-8f71-2e604ea38311",
+        "uuid": "32c1806e-4db5-84d7-ad47-3e7ca7572e40",
         "words": [
           "bcc",
           "a",
@@ -9739,7 +9739,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "beauty: a schema.org component word, fused from BeautySalon, HealthAndBeautyBusiness",
-        "uuid": "697be383-5e3d-856a-93a0-7414aaaf7200",
+        "uuid": "baeb20a3-f0e6-8c73-a4ca-48625abc9fa7",
         "words": [
           "beauty",
           "a",
@@ -9776,7 +9776,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "The type of bed or beds included in the accommodation. For the single case of just one bed of a certain type, you use bed directly with a text. If you want to indicate the quantity of a certain kind o",
-        "uuid": "35c9e6e7-845c-8134-a867-318e67bdcd09",
+        "uuid": "a830d8d0-f2b1-81f9-a5f2-6cdfbd2da813",
         "words": [
           "the",
           "type",
@@ -9844,7 +9844,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "bedrooms: a schema.org component word, fused from numberOfBedrooms",
-        "uuid": "e0d2cc4e-cd5e-8b8c-9741-3a9ca8f6fc85",
+        "uuid": "d82840bb-b518-88f1-a8e4-8e97fb93607b",
         "words": [
           "bedrooms",
           "a",
@@ -9880,7 +9880,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "beds: a schema.org component word, fused from cvdNumBeds, cvdNumBedsOcc, cvdNumICUBeds, cvdNumICUBedsOcc, cvdNumTotBeds, numberOfBeds",
-        "uuid": "57acc6ab-e1e3-86f8-a04a-0cf10ef70dc1",
+        "uuid": "fbac0677-ba8f-8550-9d78-891ed767330d",
         "words": [
           "beds",
           "a",
@@ -9921,7 +9921,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "before: a schema.org component word, fused from beforeMedia",
-        "uuid": "bfc601ad-cb3e-8477-86ca-3287e0e467dd",
+        "uuid": "1b1ce625-d921-8a05-8666-82cc6594d83c",
         "words": [
           "before",
           "a",
@@ -9957,7 +9957,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "befriend: a schema.org component word, fused from BefriendAction",
-        "uuid": "9572420b-7062-8ef0-909a-8b4b6808c3f3",
+        "uuid": "9194ba97-d236-8d1d-aabf-64f4774ed134",
         "words": [
           "befriend",
           "a",
@@ -10054,7 +10054,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "beneficiary: a schema.org component word, fused from beneficiaryBank",
-        "uuid": "ffbcc890-b323-8292-b585-14e11632956c",
+        "uuid": "beb22412-8eea-8f34-ba51-ae19e311566f",
         "words": [
           "beneficiary",
           "a",
@@ -10090,7 +10090,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "benefit: a schema.org component word, fused from TierBenefitEnumeration, hasTierBenefit",
-        "uuid": "6c26d76c-b451-80fc-a8c0-ade062277c97",
+        "uuid": "d1b9d018-1b46-8655-a4ba-e488946b5da1",
         "words": [
           "benefit",
           "a",
@@ -10161,7 +10161,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "best: a schema.org component word, fused from bestRating",
-        "uuid": "2470b60c-c8ab-827e-aec4-68df5eaa88ad",
+        "uuid": "e13dcd71-02db-8861-aec0-e43f2791c606",
         "words": [
           "best",
           "a",
@@ -10324,7 +10324,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "bicycle: a schema.org component word, fused from MotorizedBicycle",
-        "uuid": "b3b93a46-90bf-83ac-81dc-cafe1417fd7e",
+        "uuid": "fdbb5d1b-feba-8bd4-8de5-3dc829ad88f9",
         "words": [
           "bicycle",
           "a",
@@ -10360,7 +10360,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "bike: a schema.org component word, fused from BikeStore",
-        "uuid": "990934f7-b032-8886-8b9d-965d8073ea17",
+        "uuid": "422a60ff-6a8a-8bee-9ffe-85978d3354a7",
         "words": [
           "bike",
           "a",
@@ -10396,7 +10396,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "billing: a schema.org component word, fused from billingAddress, billingDuration, billingIncrement, billingPeriod, billingStart",
-        "uuid": "4a340faf-bc03-804e-9d3c-7f2fdcb19c14",
+        "uuid": "8245152f-8ba2-8c30-a33f-17d14e61c288",
         "words": [
           "billing",
           "a",
@@ -10582,7 +10582,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "bio: a schema.org component word, fused from BioChemEntity, bioChemInteraction, bioChemSimilarity, encodesBioChemEntity, hasBioChemEntityPart, hasBioPolymerSequence",
-        "uuid": "8b3b0994-b3d3-85b0-a020-1480bed30825",
+        "uuid": "57f5bceb-9893-8cd7-8fa9-560377db9db9",
         "words": [
           "bio",
           "a",
@@ -10726,7 +10726,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "biological: a schema.org component word, fused from biologicalRole, isInvolvedInBiologicalProcess",
-        "uuid": "a840bdab-04d0-814a-815d-bb06a02a6521",
+        "uuid": "72ad779e-b630-87a4-81e4-a66d67fafb4c",
         "words": [
           "biological",
           "a",
@@ -11020,7 +11020,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "biomechnical: a schema.org component word, fused from biomechnicalClass",
-        "uuid": "f5670ccd-49c5-8e57-90b4-55f7ab6ae7ee",
+        "uuid": "6cdfb654-277f-8181-af38-bbf4401a9ada",
         "words": [
           "biomechnical",
           "a",
@@ -11148,7 +11148,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "birth: a schema.org component word, fused from birthDate, birthPlace",
-        "uuid": "0b0e1c49-2432-8eb8-bf16-966874d6d06e",
+        "uuid": "3139fdd1-a2b6-8d2d-83af-2894b8a51de4",
         "words": [
           "birth",
           "a",
@@ -11218,7 +11218,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "block: a schema.org component word, fused from WPAdBlock",
-        "uuid": "ccdabefc-8d46-89f6-96df-bf608ec321b7",
+        "uuid": "7f147a92-bd64-83f5-b5c5-8edea63aaab0",
         "words": [
           "block",
           "a",
@@ -11254,7 +11254,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "blocks: a schema.org component word, fused from UserBlocks",
-        "uuid": "f969bd75-267c-8d5a-a237-0fb36f83345c",
+        "uuid": "da668bde-f792-847c-a7cc-2b91af216c09",
         "words": [
           "blocks",
           "a",
@@ -11342,7 +11342,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "blood: a schema.org component word, fused from BloodTest, bloodSupply",
-        "uuid": "ccd27931-0faa-8ac3-9540-b94785fae919",
+        "uuid": "b085d0c0-4921-813a-8fb5-913a4e004ece",
         "words": [
           "blood",
           "a",
@@ -11379,7 +11379,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "boarding: a schema.org component word, fused from BoardingPolicyType, boardingGroup, boardingPolicy",
-        "uuid": "ba9be521-69ab-8d07-8c9e-97afe7b3abc5",
+        "uuid": "5e013e21-afc8-8777-a97a-650c2d10d81e",
         "words": [
           "boarding",
           "a",
@@ -11417,7 +11417,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "boat: a schema.org component word, fused from BoatReservation, BoatTerminal, BoatTrip, arrivalBoatTerminal, departureBoatTerminal",
-        "uuid": "fcd2efc0-af19-8551-9ced-ffab19f29f2f",
+        "uuid": "d4acea62-d0d0-8264-80e2-37be344941bb",
         "words": [
           "boat",
           "a",
@@ -11457,7 +11457,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "body: a schema.org component word, fused from AutoBodyShop, BodyMeasurementTypeEnumeration, BodyOfWater, LakeBodyOfWater, OceanBodyOfWater, RiverBodyOfWater",
-        "uuid": "3bced481-34be-8c33-94a8-dc7d48fcb40b",
+        "uuid": "8cc39332-f4ff-837c-810c-ff20dcf50388",
         "words": [
           "body",
           "a",
@@ -11712,7 +11712,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "booking: a schema.org component word, fused from advanceBookingRequirement, bookingAgent, bookingTime, tourBookingPage",
-        "uuid": "da6d840d-b6a0-8c44-8aec-f555beef9779",
+        "uuid": "dbf5babc-7276-83e0-9ff8-e46449238425",
         "words": [
           "booking",
           "a",
@@ -11751,7 +11751,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "bookmark: a schema.org component word, fused from BookmarkAction",
-        "uuid": "bff712db-20cc-8003-9d6f-ccf76f296aea",
+        "uuid": "deecd723-3055-8a48-a9b0-9cb093ca4ec3",
         "words": [
           "bookmark",
           "a",
@@ -11818,7 +11818,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "borrow: a schema.org component word, fused from BorrowAction",
-        "uuid": "b0783b9d-c61f-8e9a-a587-3c5af70df999",
+        "uuid": "597233b0-a3d3-8684-a7fd-16cae44d50ae",
         "words": [
           "borrow",
           "a",
@@ -11948,7 +11948,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "bowling: a schema.org component word, fused from BowlingAlley",
-        "uuid": "557398f7-5390-86ba-b085-b87d95133ceb",
+        "uuid": "2ece9841-b715-864c-8306-2a33d20af12d",
         "words": [
           "bowling",
           "a",
@@ -12050,7 +12050,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "brain: a schema.org component word, fused from BrainStructure",
-        "uuid": "73d3a1df-3c69-8a34-bfff-ece617d6798c",
+        "uuid": "0ab0fbb4-605d-8f11-8b79-36f438312c26",
         "words": [
           "brain",
           "a",
@@ -12216,7 +12216,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "breakfast: a schema.org component word, fused from BedAndBreakfast",
-        "uuid": "80353d66-206d-82f3-b086-5c5f38249769",
+        "uuid": "45e1bf95-cfd4-87b3-b063-7b75748ee30a",
         "words": [
           "breakfast",
           "a",
@@ -12252,7 +12252,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "breastfeeding: a schema.org component word, fused from breastfeedingWarning",
-        "uuid": "4a303f92-b952-8566-94d8-588c5699c43d",
+        "uuid": "5a8af866-5323-853d-a2df-a22939456a55",
         "words": [
           "breastfeeding",
           "a",
@@ -12381,7 +12381,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when classifying an animal by its genetic type — the breed (Angus, Holstein, Yorkshire), a genetically distinct sub-population with stable heritable traits, recorded in a breed registry with pedigree; and breeding (mating selection, AI, gestation). The animal-genetics classifier — distinct from taxonomy (the crop-variety tree).",
-        "uuid": "348e1644-ca0d-848c-9be5-dbe54b9371d1",
+        "uuid": "ad46ee32-3ac9-8ff2-9b92-432041be2bb7",
         "words": [
           "use",
           "when",
@@ -12512,7 +12512,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "broadcast: a schema.org component word, fused from BroadcastChannel, BroadcastEvent, BroadcastFrequencySpecification, BroadcastService, RadioBroadcastService, broadcastAffiliateOf",
-        "uuid": "fa3a5036-06f1-8aa8-9260-5f86211de2e7",
+        "uuid": "78b71182-94a0-8cd9-bbc3-fc6cd9137057",
         "words": [
           "broadcast",
           "a",
@@ -12653,7 +12653,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "brokerage: a schema.org component word, fused from BrokerageAccount",
-        "uuid": "ad2dbdf9-3898-8bc1-9981-3a22a1b53f14",
+        "uuid": "e7ff0090-a1ec-8afd-88e9-93da94baf762",
         "words": [
           "brokerage",
           "a",
@@ -12689,7 +12689,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "browser: a schema.org component word, fused from browserRequirements",
-        "uuid": "b6a8b9a0-bb85-8b09-b2ee-d2ca691657af",
+        "uuid": "7a0b92ad-2d39-84b1-8296-5857df08f123",
         "words": [
           "browser",
           "a",
@@ -12725,7 +12725,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "buddhist: a schema.org component word, fused from BuddhistTemple",
-        "uuid": "9e4417b5-f5ac-89da-902c-9944124c3285",
+        "uuid": "5d3fa932-2065-8606-8ed2-5d867bd86d50",
         "words": [
           "buddhist",
           "a",
@@ -12882,7 +12882,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "building: a schema.org component word, fused from GovernmentBuilding, LegislativeBuilding",
-        "uuid": "bc43d4e0-6f74-87dc-9dd5-3719112e3f71",
+        "uuid": "60d1f9f0-c80c-8402-881f-cb518d4bdb93",
         "words": [
           "building",
           "a",
@@ -12919,7 +12919,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "buildings: a schema.org component word, fused from LandmarksOrHistoricalBuildings",
-        "uuid": "6b04fb5f-207d-8742-9140-95563bc7d2e6",
+        "uuid": "0dc2e70c-0f84-845f-aa48-3fb95ece5050",
         "words": [
           "buildings",
           "a",
@@ -12955,7 +12955,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "built: a schema.org component word, fused from yearBuilt",
-        "uuid": "1c985b46-c63c-80e5-8549-f9b91d887bdf",
+        "uuid": "f7e9570c-676a-8444-8912-264e5dc5bb50",
         "words": [
           "built",
           "a",
@@ -13037,7 +13037,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "bus: a schema.org component word, fused from BusOrCoach, BusReservation, BusStation, BusStop, BusTrip, arrivalBusStop",
-        "uuid": "2440754e-9acb-8471-80b8-39cf413e2f01",
+        "uuid": "cdb6b46e-a202-897e-b96f-467af556bc5d",
         "words": [
           "bus",
           "a",
@@ -13078,7 +13078,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "business: a schema.org component word, fused from AutomotiveBusiness, BusinessAudience, BusinessEntityType, BusinessEvent, BusinessFunction, EntertainmentBusiness",
-        "uuid": "a50e955d-f825-8db1-af59-2997dc952818",
+        "uuid": "ec6521a5-d025-8567-9d2a-06c00ac39eab",
         "words": [
           "business",
           "a",
@@ -13119,7 +13119,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "buy: a schema.org component word, fused from BuyAction",
-        "uuid": "289f057b-074e-8406-8f93-bbf7c8e97f80",
+        "uuid": "15325e42-4eb2-8f95-88e7-bbf92501225d",
         "words": [
           "buy",
           "a",
@@ -13245,7 +13245,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "bylines: a schema.org component word, fused from noBylinesPolicy",
-        "uuid": "00f47be2-04ef-826f-b846-502d6204d949",
+        "uuid": "9ceee4d1-26f7-8d5d-9d60-33ef716d3465",
         "words": [
           "bylines",
           "a",
@@ -13281,7 +13281,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "cable: a schema.org component word, fused from CableOrSatelliteService",
-        "uuid": "e5717cf5-5c48-8919-90a2-88f543921db0",
+        "uuid": "64c66703-5a86-8bca-a36c-c7478d6a22e5",
         "words": [
           "cable",
           "a",
@@ -13371,7 +13371,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "cafe: a schema.org component word, fused from CafeOrCoffeeShop, InternetCafe",
-        "uuid": "300a8132-4d5f-875f-a426-e1efb097f624",
+        "uuid": "fc9c5427-156a-8ab6-870d-c2d2bad3af79",
         "words": [
           "cafe",
           "a",
@@ -13681,7 +13681,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "calculator: a schema.org component word, fused from MedicalRiskCalculator",
-        "uuid": "2e95d373-c601-886a-b5c4-3250b6d66207",
+        "uuid": "38d4ab4c-6184-88c7-9857-5b228702d699",
         "words": [
           "calculator",
           "a",
@@ -13770,7 +13770,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "call: a schema.org component word, fused from callSign",
-        "uuid": "f0e317af-f625-8f05-afad-1eaa1ca53492",
+        "uuid": "ef70603c-4d80-8957-9a3f-c0082ec8de0a",
         "words": [
           "call",
           "a",
@@ -13938,7 +13938,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "camping: a schema.org component word, fused from CampingPitch",
-        "uuid": "38ed4853-5143-8e65-9abc-68999ccb33bd",
+        "uuid": "f23f12c6-6eb0-8972-80a0-829e278b6dce",
         "words": [
           "camping",
           "a",
@@ -14007,7 +14007,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "cancel: a schema.org component word, fused from CancelAction",
-        "uuid": "43a47bf0-5d0a-8c81-930c-57df733c6e78",
+        "uuid": "b5e6dfb2-9cc6-82a2-8293-8d0cfd4e1895",
         "words": [
           "cancel",
           "a",
@@ -14221,7 +14221,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "carbohydrate: a schema.org component word, fused from carbohydrateContent",
-        "uuid": "018de75d-6dac-824b-94db-ec2afa20380e",
+        "uuid": "ee3498b8-b4fd-8a23-97c4-973db4faf507",
         "words": [
           "carbohydrate",
           "a",
@@ -14257,7 +14257,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "card: a schema.org component word, fused from CreditCard, PaymentCard",
-        "uuid": "c892fb0a-33bf-845c-977a-96f6102dea7c",
+        "uuid": "d2cf4446-1deb-850d-9ce9-171c6c854ad2",
         "words": [
           "card",
           "a",
@@ -14353,7 +14353,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "care: a schema.org component word, fused from ChildCare, VeterinaryCare",
-        "uuid": "8c175ad8-7ab0-818e-b0e6-d3930eb0259a",
+        "uuid": "c0c81ddc-c97b-8fe6-975c-199e6a4dd6c3",
         "words": [
           "care",
           "a",
@@ -14482,7 +14482,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "cargo: a schema.org component word, fused from cargoVolume",
-        "uuid": "ceb9b4d0-175d-8e2e-b75a-9d62c2f601b4",
+        "uuid": "3cccf1a9-eaa8-8437-a6e3-62a57f6b1cf8",
         "words": [
           "cargo",
           "a",
@@ -14741,7 +14741,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "cash: a schema.org component word, fused from cashBack",
-        "uuid": "fc23a8e8-89bc-8b35-973b-95abd83b9259",
+        "uuid": "d143e71e-cd91-8ade-9560-66d0d8928c30",
         "words": [
           "cash",
           "a",
@@ -14840,7 +14840,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when building or browsing hierarchical content or product taxonomies — title, URL slug (per-tenant unique), parent relationship, breadcrumb trail — for posts, catalogue products, or any schema.org DefinedTerm classification. The tenant-scoped category taxonomy node.",
-        "uuid": "6af07d6a-b00f-8ad2-a1f9-9038d865ca38",
+        "uuid": "6f3b93b1-9217-83ed-9a78-53c16e266155",
         "words": [
           "use",
           "when",
@@ -14948,7 +14948,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "catholic: a schema.org component word, fused from CatholicChurch",
-        "uuid": "2679c576-3da2-852a-8b18-92bf9af0ec45",
+        "uuid": "60308c28-7453-8bfe-8408-4661ed5b5a6b",
         "words": [
           "catholic",
           "a",
@@ -15017,7 +15017,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "cc: a schema.org component word, fused from ccRecipient",
-        "uuid": "de5273d5-b649-8d46-8ef3-3af1db295f50",
+        "uuid": "da152ff8-06e8-8f38-84b7-a24008167b6a",
         "words": [
           "cc",
           "a",
@@ -15053,7 +15053,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "cdcpmd: a schema.org component word, fused from CDCPMDRecord",
-        "uuid": "aea38941-ae37-8752-be9d-caa28fd2bb52",
+        "uuid": "5c082bde-0bf9-8ea2-93ee-993f4c9f5e97",
         "words": [
           "cdcpmd",
           "a",
@@ -15118,7 +15118,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "center: a schema.org component word, fused from RecyclingCenter, ShoppingCenter, TouristInformationCenter",
-        "uuid": "cf7176c4-f935-86e6-91e6-61129dfd8ed2",
+        "uuid": "3b5ddce2-aec1-86ce-a36a-e15f18f0d659",
         "words": [
           "center",
           "a",
@@ -15294,7 +15294,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when mapping the seven chakras onto erpax — the 7 chakras ARE the 7 horo flow positions (base·share·weave·crest·descent·round·unity = Do·Re·Mi·Fa·Sol·La·Ti = root→crown). Each decodes to a note (A432 just-intonation), a colour and a movement from the SAME content-uuid — and the uuid is computed from the position math, never from the colour. Anchored at 0/K/black/A432.",
-        "uuid": "147d6538-1b6c-801b-aa87-51e66f247697",
+        "uuid": "219aee19-6899-8936-840e-d0b7552d8130",
         "words": [
           "use",
           "when",
@@ -15439,7 +15439,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "changes: a schema.org component word, fused from legislationChanges",
-        "uuid": "3c1d55c0-367b-8102-abcc-1e1936ef9dbb",
+        "uuid": "5b807baf-6979-8ad4-82d6-4aed87f23dd4",
         "words": [
           "changes",
           "a",
@@ -15475,7 +15475,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "channel: a schema.org component word, fused from AMRadioChannel, BroadcastChannel, FMRadioChannel, RadioChannel, ServiceChannel, TelevisionChannel",
-        "uuid": "f5620f7e-5417-80e7-b38d-8138828368ee",
+        "uuid": "c9ac76f7-4a50-889f-8d33-fdb824f0bec2",
         "words": [
           "channel",
           "a",
@@ -15597,7 +15597,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "charge: a schema.org component word, fused from DeliveryChargeSpecification, PaymentChargeSpecification",
-        "uuid": "326adbd6-7b3c-8e4c-9a1d-02605dc1e9a6",
+        "uuid": "050e425a-926b-82ee-aea6-0c643f9b30af",
         "words": [
           "charge",
           "a",
@@ -15786,7 +15786,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "cheat: a schema.org component word, fused from cheatCode",
-        "uuid": "40f1c588-d74f-8e99-88cb-8c91261f669c",
+        "uuid": "6621c406-5871-87db-8954-80e9b06b341d",
         "words": [
           "cheat",
           "a",
@@ -15822,7 +15822,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "check: a schema.org component word, fused from CheckAction, CheckInAction, CheckOutAction",
-        "uuid": "37d9eac0-4e05-83be-9dca-c342f88442f3",
+        "uuid": "1cb892f9-25e7-879a-af49-1a5bab888019",
         "words": [
           "check",
           "a",
@@ -15860,7 +15860,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "checkin: a schema.org component word, fused from checkinTime, webCheckinTime",
-        "uuid": "a00c856e-9a2b-8a20-899a-a33d235355c5",
+        "uuid": "df3f3c82-3878-8274-b7ab-44f4ec924f6f",
         "words": [
           "checkin",
           "a",
@@ -15897,7 +15897,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "checking: a schema.org component word, fused from verificationFactCheckingPolicy",
-        "uuid": "9776394e-46e3-8627-9a88-af4bb768ce66",
+        "uuid": "f98bf5e4-d5b7-88f3-a595-cac3c2ba51d3",
         "words": [
           "checking",
           "a",
@@ -15933,7 +15933,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "checkins: a schema.org component word, fused from UserCheckins",
-        "uuid": "c12294a9-9f2f-86b9-82a3-94be1eda4916",
+        "uuid": "7b97ba8f-e060-870c-9336-cacb68a81a24",
         "words": [
           "checkins",
           "a",
@@ -16020,7 +16020,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "checkout: a schema.org component word, fused from CheckoutPage, checkoutPageURLTemplate, checkoutTime",
-        "uuid": "89cb9c79-892e-8a33-b726-ce9054fc3167",
+        "uuid": "4ecab2bf-ee11-889a-9e58-cf81d5bfd394",
         "words": [
           "checkout",
           "a",
@@ -16058,7 +16058,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "chem: a schema.org component word, fused from BioChemEntity, bioChemInteraction, bioChemSimilarity, encodesBioChemEntity, hasBioChemEntityPart, isEncodedByBioChemEntity",
-        "uuid": "b0cf8bc3-de59-834f-aca1-2d9d9d4b9405",
+        "uuid": "3992d89a-61d8-8323-b0af-e6d5d1a62211",
         "words": [
           "chem",
           "a",
@@ -16099,7 +16099,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "chemical: a schema.org component word, fused from ChemicalSubstance, chemicalComposition, chemicalRole",
-        "uuid": "b6c3807b-d23e-8274-a262-f98ce3dd5edf",
+        "uuid": "0a5f7bbf-9050-869b-aca2-fd8e6b6f5d9d",
         "words": [
           "chemical",
           "a",
@@ -16137,7 +16137,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "child: a schema.org component word, fused from ChildCare, childMaxAge, childMinAge, childTaxon",
-        "uuid": "01197e42-1213-8eb7-b089-15a9b5c0524a",
+        "uuid": "6b4ae4ad-6a7c-8a3c-acb9-1de12e5e67c4",
         "words": [
           "child",
           "a",
@@ -16208,7 +16208,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "childrens: a schema.org component word, fused from ChildrensEvent",
-        "uuid": "d2d34155-f818-8242-96dc-574790ce4cfb",
+        "uuid": "d21173b3-5e5e-85b4-9c47-6ab153a206c0",
         "words": [
           "childrens",
           "a",
@@ -16335,7 +16335,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "cholesterol: a schema.org component word, fused from cholesterolContent",
-        "uuid": "452a9ef2-6493-8f3e-8dd8-a33472cf7a02",
+        "uuid": "f0d4d6f0-5a13-8e00-b887-568026daeffe",
         "words": [
           "cholesterol",
           "a",
@@ -16371,7 +16371,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "choose: a schema.org component word, fused from ChooseAction",
-        "uuid": "3bd1f07c-d7a2-8d48-868d-d7680b5d27c0",
+        "uuid": "21236558-82c4-8ca7-a9bb-9ace36ebdf34",
         "words": [
           "choose",
           "a",
@@ -16611,7 +16611,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "civic: a schema.org component word, fused from CivicStructure",
-        "uuid": "bfa4f62d-bef2-895d-aeac-148d5f5109d1",
+        "uuid": "ab189977-14ab-8da3-9f99-9eff3cada5fe",
         "words": [
           "civic",
           "a",
@@ -16718,7 +16718,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "A Claim in Schema.org represents a specific, factually-oriented claim that could be the itemReviewed in a ClaimReview. The content of a claim can be summarized with the text property. Variations on we",
-        "uuid": "b166dfd4-eea3-8854-abf8-949e6fce5978",
+        "uuid": "a77c7ad7-2c78-8c15-8bb5-dfed102a46a5",
         "words": [
           "a",
           "claim",
@@ -16779,7 +16779,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "A class, also often called a 'Type'; equivalent to rdfs:Class.",
-        "uuid": "2a486592-3244-809b-8d08-065362cf92b5",
+        "uuid": "37247a61-b7bc-8adf-9989-0a3ad27dd92e",
         "words": [
           "a",
           "class",
@@ -17024,7 +17024,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "cleaning: a schema.org component word, fused from DryCleaningOrLaundry",
-        "uuid": "b2bab324-a818-8fbe-b2c1-6f0e33fca928",
+        "uuid": "ca406643-3cfb-828c-814b-482ecb44fa10",
         "words": [
           "cleaning",
           "a",
@@ -17060,7 +17060,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "clearance: a schema.org component word, fused from securityClearanceRequirement",
-        "uuid": "937d9a63-f193-810a-b544-cc0b576bc868",
+        "uuid": "8abde898-f805-8b73-8d25-2a41ec22d7a9",
         "words": [
           "clearance",
           "a",
@@ -17096,7 +17096,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "clincal: a schema.org component word, fused from clincalPharmacology",
-        "uuid": "fb6a4ce4-6562-812c-a6b0-1d704c6dceab",
+        "uuid": "9b9aa659-77c3-83bd-99c2-9714cfa36ae0",
         "words": [
           "clincal",
           "a",
@@ -17132,7 +17132,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "clinic: a schema.org component word, fused from MedicalClinic",
-        "uuid": "12987df8-19ae-8912-abb0-bda2264d3a78",
+        "uuid": "2f18b92b-1785-82fc-897b-5714a2a44487",
         "words": [
           "clinic",
           "a",
@@ -17168,7 +17168,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "clinical: a schema.org component word, fused from clinicalPharmacology",
-        "uuid": "043feef3-9110-83fa-b824-697a8e0b8ee9",
+        "uuid": "aa33df4e-ea99-828e-99b1-6b65ed92d22d",
         "words": [
           "clinical",
           "a",
@@ -17408,7 +17408,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "closures: a schema.org component word, fused from publicTransportClosuresInfo, schoolClosuresInfo",
-        "uuid": "20bb3301-2ebc-8ec7-b0a9-7e00dc3014a0",
+        "uuid": "39219a86-4cb8-87d8-ba30-ef8979c48c97",
         "words": [
           "closures",
           "a",
@@ -17445,7 +17445,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "clothing: a schema.org component word, fused from ClothingStore, MensClothingStore",
-        "uuid": "3317a403-d89d-8091-b927-acd033c30607",
+        "uuid": "dda884aa-1675-8430-b75d-1909549f2cd5",
         "words": [
           "clothing",
           "a",
@@ -17482,7 +17482,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "club: a schema.org component word, fused from ComedyClub, HealthClub, NightClub, SportsClub",
-        "uuid": "e6059b8a-47fa-8ff1-9b65-fab09565a352",
+        "uuid": "895321c8-6fb0-8fa0-8e9f-36931f1e3ff6",
         "words": [
           "club",
           "a",
@@ -17521,7 +17521,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "co: a schema.org component word, fused from emissionsCO2",
-        "uuid": "ff4fa9b7-95ca-8de2-8dc8-3460b9370c15",
+        "uuid": "89eb11ee-c33a-872b-8a4d-85ef7dcf6c15",
         "words": [
           "co",
           "a",
@@ -17657,7 +17657,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "coding: a schema.org component word, fused from codingSystem",
-        "uuid": "329037d1-ddc1-869d-a892-29beb87565c4",
+        "uuid": "f2498a3c-445a-8496-9a5d-ed4f157969a1",
         "words": [
           "coding",
           "a",
@@ -17693,7 +17693,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "coffee: a schema.org component word, fused from CafeOrCoffeeShop",
-        "uuid": "6bca0b4c-9bd0-8dfc-a691-5451b454577c",
+        "uuid": "7f880d84-b188-8924-b784-b2cf830dea87",
         "words": [
           "coffee",
           "a",
@@ -17874,7 +17874,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "coinsurance: a schema.org component word, fused from healthPlanCoinsuranceOption, healthPlanCoinsuranceRate",
-        "uuid": "581c2714-ef95-8f43-ad5c-deb260ffe350",
+        "uuid": "8a06be84-2ada-86ac-b7bb-bbee9ae73561",
         "words": [
           "coinsurance",
           "a",
@@ -17993,7 +17993,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "collateral: a schema.org component word, fused from requiredCollateral",
-        "uuid": "b53d0a6c-c397-89d8-99ee-f4c492975c11",
+        "uuid": "15b9a27c-a6c1-859d-8890-e1104c1a43da",
         "words": [
           "collateral",
           "a",
@@ -18191,7 +18191,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "college: a schema.org component word, fused from CollegeOrUniversity",
-        "uuid": "b814802d-5130-8a51-8e24-30dfc2a4bcd6",
+        "uuid": "a15a83b2-c9a8-8f01-a5db-8d1fa8148d53",
         "words": [
           "college",
           "a",
@@ -18294,7 +18294,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "column: a schema.org component word, fused from printColumn",
-        "uuid": "3b84af59-4709-86bd-bf58-322f433e6ab5",
+        "uuid": "3f216f04-c5ba-8b88-b408-0f294323f530",
         "words": [
           "column",
           "a",
@@ -18380,7 +18380,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "comedy: a schema.org component word, fused from ComedyClub, ComedyEvent",
-        "uuid": "0a62eba9-e215-857f-b51f-aad001e538c0",
+        "uuid": "718a1e73-c5c5-8e5e-9825-5d7ce45f0524",
         "words": [
           "comedy",
           "a",
@@ -18417,7 +18417,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "comic: a schema.org component word, fused from ComicCoverArt, ComicIssue, ComicSeries, ComicStory",
-        "uuid": "cde3ab8d-3163-8c3c-b148-499f09fed2bd",
+        "uuid": "da8cdf72-4e0f-8dc5-89d2-b059c319c3e9",
         "words": [
           "comic",
           "a",
@@ -18521,7 +18521,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "commences: a schema.org component word, fused from legislationCommences",
-        "uuid": "e50651ba-499a-80da-b00c-404ab99e2b24",
+        "uuid": "6149f0d0-1401-89f2-913a-b10abec2466b",
         "words": [
           "commences",
           "a",
@@ -18612,7 +18612,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "comments: a schema.org component word, fused from UserComments",
-        "uuid": "43777ea6-84cc-8650-961b-e1aca851d670",
+        "uuid": "304fb7a3-147c-8dac-8601-e5690511f0b0",
         "words": [
           "comments",
           "a",
@@ -19014,7 +19014,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "communicate: a schema.org component word, fused from CommunicateAction",
-        "uuid": "a51be41a-557a-8c03-a3f9-b6cdc3d6e433",
+        "uuid": "8b9f4ae9-6794-8a08-ae96-005e252011e6",
         "words": [
           "communicate",
           "a",
@@ -19050,7 +19050,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "community: a schema.org component word, fused from GatedResidenceCommunity",
-        "uuid": "9d6bae5a-7647-8eaa-ba31-4df0fd3418bc",
+        "uuid": "ed5b48d1-cde0-86f1-8077-2d258201cd2a",
         "words": [
           "community",
           "a",
@@ -19086,7 +19086,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "company: a schema.org component word, fused from MovingCompany, companyRegistration, productionCompany",
-        "uuid": "0fe21693-22c4-837e-97dd-e482e57cc7bc",
+        "uuid": "8b138fc8-9b2d-80e6-ab2e-2490b85e3047",
         "words": [
           "company",
           "a",
@@ -19356,7 +19356,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "competency: a schema.org component word, fused from competencyRequired",
-        "uuid": "435122c8-57e5-887f-be47-fc91e61bd1fe",
+        "uuid": "48f7a030-cfe5-84b8-a4dd-fea5e9d37dbf",
         "words": [
           "competency",
           "a",
@@ -19573,7 +19573,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "complete: a schema.org component word, fused from CompleteDataFeed, timeToComplete",
-        "uuid": "b804be33-553a-807d-a868-f95e16a3b465",
+        "uuid": "832d5f24-c8d6-8319-b56e-b11cadcffe94",
         "words": [
           "complete",
           "a",
@@ -19610,7 +19610,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "completion: a schema.org component word, fused from salaryUponCompletion",
-        "uuid": "8df1cafc-9e10-8b2b-af8a-15caa6295445",
+        "uuid": "0e62d948-0456-8946-a27b-981d54533c40",
         "words": [
           "completion",
           "a",
@@ -19646,7 +19646,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "complex: a schema.org component word, fused from ApartmentComplex, TennisComplex",
-        "uuid": "56fa6b48-ff55-844e-9aff-4b38d6b92afc",
+        "uuid": "20e167bd-c92f-8708-b250-d739eeae2ced",
         "words": [
           "complex",
           "a",
@@ -19894,7 +19894,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "complication: a schema.org component word, fused from possibleComplication",
-        "uuid": "708a7a7a-3be7-897d-b909-3b43a1b3d8c7",
+        "uuid": "1c22e99f-2af0-8cee-9203-33760fefae7e",
         "words": [
           "complication",
           "a",
@@ -20095,7 +20095,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "composition: a schema.org component word, fused from MusicComposition, chemicalComposition, includedComposition, musicCompositionForm",
-        "uuid": "5d80d31f-614a-817e-93a6-ee66f63f78ee",
+        "uuid": "ae1a7fb7-6a6e-8857-99a3-0a32ae712e89",
         "words": [
           "composition",
           "a",
@@ -20208,7 +20208,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "compound: a schema.org component word, fused from CompoundPriceSpecification",
-        "uuid": "91bb59e1-3032-8f18-8b69-a8231901e279",
+        "uuid": "c164d11b-215e-8b24-88ad-b7f7b1bf12c0",
         "words": [
           "compound",
           "a",
@@ -20294,7 +20294,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "computer: a schema.org component word, fused from ComputerLanguage, ComputerStore",
-        "uuid": "d1294b85-a70c-82d2-b8db-ffd866381abe",
+        "uuid": "fb34e683-a0e6-8ac8-a7b0-27ee70964fb1",
         "words": [
           "computer",
           "a",
@@ -20331,7 +20331,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "condition: a schema.org component word, fused from MedicalCondition, MedicalConditionStage, OfferItemCondition, healthCondition, itemCondition, relatedCondition",
-        "uuid": "252cfb74-e2db-8e03-a061-cab735b9b582",
+        "uuid": "6213db8a-fff2-8bb2-b8d4-e691776125f8",
         "words": [
           "condition",
           "a",
@@ -20372,7 +20372,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "conditions: a schema.org component word, fused from ShippingConditions, conditionsOfAccess, shippingConditions",
-        "uuid": "ed434cd9-4677-83d5-9d8d-97da728881f1",
+        "uuid": "fd19494e-97e4-8e4b-937c-a238df4c9c79",
         "words": [
           "conditions",
           "a",
@@ -20410,7 +20410,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "conference: a schema.org component word, fused from ConferenceEvent",
-        "uuid": "92c78677-f31d-8079-bd69-a3b17b6a5d14",
+        "uuid": "8be6e837-dd28-80c0-bfbf-405915d40759",
         "words": [
           "conference",
           "a",
@@ -20555,7 +20555,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "configuration: a schema.org component word, fused from DriveWheelConfigurationValue, driveWheelConfiguration, vehicleConfiguration",
-        "uuid": "9063b3e0-ecd8-8259-a806-b4771b3fca15",
+        "uuid": "bb497b90-4917-8e21-90f9-d389cd8b1ce4",
         "words": [
           "configuration",
           "a",
@@ -20593,7 +20593,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "confirm: a schema.org component word, fused from ConfirmAction",
-        "uuid": "c6677ff4-7560-853d-9356-9cbd2b73a2ad",
+        "uuid": "d06e1c48-e700-8a2d-8e72-500aab55bc51",
         "words": [
           "confirm",
           "a",
@@ -20629,7 +20629,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "confirmation: a schema.org component word, fused from confirmationNumber",
-        "uuid": "81ae608c-6f54-8b2d-89e6-bf12331b779f",
+        "uuid": "d832a510-906c-8fba-8c94-14f01239f15f",
         "words": [
           "confirmation",
           "a",
@@ -20831,7 +20831,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when managing the universal social/commercial/civic edge between typeless users — follow/friend/block/customer/supplier/employer/member — the one directed graph that carries the relation in context (not the user type), federated server-to-server via W3C ActivityPub.",
-        "uuid": "3b476997-3ede-81d8-8c0f-41a9fa6d77f3",
+        "uuid": "e4e682c1-460c-8b41-be14-1f5dafcd949e",
         "words": [
           "use",
           "when",
@@ -21114,7 +21114,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "consideration: a schema.org component word, fused from hasAdultConsideration, safetyConsideration",
-        "uuid": "7ee7890c-e631-8ade-9291-0be99c7ec49f",
+        "uuid": "a107b7c6-1b8c-8214-abc3-2a77cb80295a",
         "words": [
           "consideration",
           "a",
@@ -21151,7 +21151,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "considerations: a schema.org component word, fused from expertConsiderations",
-        "uuid": "dbecad8f-c16a-8dfe-bceb-b27cc14b9098",
+        "uuid": "7f28157b-2f71-8721-a3a6-ca354f5c5eec",
         "words": [
           "considerations",
           "a",
@@ -21242,7 +21242,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "consolidates: a schema.org component word, fused from legislationConsolidates",
-        "uuid": "47306df4-c920-8fc6-9b5e-5b57a71fe984",
+        "uuid": "b574d420-6d78-803d-b9f7-49c502e8a445",
         "words": [
           "consolidates",
           "a",
@@ -21507,7 +21507,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when defining data constraints at the schema level — NOT NULL / UNIQUE / FOREIGN KEY / CHECK / DEFAULT constraints, their lifecycle (creation/modification/disable), enforcement semantics, and violation detection in the database layer.",
-        "uuid": "ecde49c3-6a03-8483-92c0-f17f82a1b990",
+        "uuid": "380dd21e-5cfd-8c49-aed5-e0dbf851a089",
         "words": [
           "use",
           "when",
@@ -21565,7 +21565,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "constraints: a schema.org component word, fused from numConstraints",
-        "uuid": "3f90d6ab-e12b-868c-bad0-c49734a178a7",
+        "uuid": "e7c1a4b8-7b2f-8328-921c-d9f802494ac9",
         "words": [
           "constraints",
           "a",
@@ -21601,7 +21601,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "construction: a schema.org component word, fused from HomeAndConstructionBusiness",
-        "uuid": "9cfb0bbe-5b6d-8d3b-871b-5303619abe60",
+        "uuid": "8316a0c8-5679-8904-9eb6-ef548d17954a",
         "words": [
           "construction",
           "a",
@@ -21679,7 +21679,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "consume: a schema.org component word, fused from ConsumeAction",
-        "uuid": "194dce3f-60fb-8839-bef1-b2b8e8aa6d4b",
+        "uuid": "58f7a3b8-b603-8a9d-822c-5ad4a5205ef3",
         "words": [
           "consume",
           "a",
@@ -21715,7 +21715,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "consumption: a schema.org component word, fused from EnergyConsumptionDetails, fuelConsumption, hasEnergyConsumptionDetails",
-        "uuid": "9b63aa6c-97bf-805b-896a-51a08b4736a8",
+        "uuid": "716662d0-eee4-829c-aee0-1a45a6435e57",
         "words": [
           "consumption",
           "a",
@@ -21753,7 +21753,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "contact: a schema.org component word, fused from ContactPage, ContactPoint, ContactPointOption, applicationContact, contactOption, contactPoint",
-        "uuid": "7d48d3a7-a8e2-80a5-89bc-cf0eda8866c2",
+        "uuid": "f2878bb5-6a63-8b78-974a-411e4f31c342",
         "words": [
           "contact",
           "a",
@@ -21794,7 +21794,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "contactless: a schema.org component word, fused from contactlessPayment",
-        "uuid": "411dfc28-a277-8a36-94e3-16ef5b2bb3b6",
+        "uuid": "cf8ac2ae-fcc2-81cb-ad55-ba051c219d13",
         "words": [
           "contactless",
           "a",
@@ -21869,7 +21869,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "contains: a schema.org component word, fused from containsPlace, containsSeason, geoContains",
-        "uuid": "2b91a92c-023c-8bde-a7e3-032f38a8d766",
+        "uuid": "a4a3de00-c3c1-87a7-b329-951a2b7f30b6",
         "words": [
           "contains",
           "a",
@@ -21907,7 +21907,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "content: a schema.org component word, fused from AdvertiserContentArticle, HealthTopicContent, WebContent, carbohydrateContent, cholesterolContent, contentLocation",
-        "uuid": "52db2697-b815-8931-bede-0905d38fae27",
+        "uuid": "7ed4ac3d-539f-87d7-96a7-024fc88f50d8",
         "words": [
           "content",
           "a",
@@ -21948,7 +21948,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "context: a schema.org component word, fused from originalMediaContextDescription",
-        "uuid": "b9880c9c-e9fe-8704-b98e-e35212fc3bd0",
+        "uuid": "7af672ba-91ec-8fb2-8478-b7cf902e4c11",
         "words": [
           "context",
           "a",
@@ -22072,7 +22072,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "continuation: a schema.org component word, fused from tocContinuation",
-        "uuid": "9a068223-2fe1-8201-a632-95f8086fa260",
+        "uuid": "116a9e1d-7979-85c2-ba85-14f1b28f2287",
         "words": [
           "continuation",
           "a",
@@ -22156,7 +22156,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "contractor: a schema.org component word, fused from GeneralContractor, RoofingContractor",
-        "uuid": "784e6888-1536-8f4b-a4d1-0af7d8a1bd1e",
+        "uuid": "28de1fc6-4830-8fd7-8d3e-8a5a5f657fae",
         "words": [
           "contractor",
           "a",
@@ -22345,7 +22345,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "control: a schema.org component word, fused from ControlAction, accessibilityControl",
-        "uuid": "b0093aae-4989-8268-9d2b-2e7af38ec40a",
+        "uuid": "f0b8798e-b8e9-875e-8167-e8b2f130932b",
         "words": [
           "control",
           "a",
@@ -22382,7 +22382,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "convenience: a schema.org component word, fused from ConvenienceStore",
-        "uuid": "fb70d3ff-c703-8b0b-8863-a4755677e981",
+        "uuid": "3cb60b6a-d73c-8b1b-bc6a-07764aa4f831",
         "words": [
           "convenience",
           "a",
@@ -22562,7 +22562,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "cook: a schema.org component word, fused from CookAction, cookTime",
-        "uuid": "cb282344-b1f0-8783-83ac-5184b88c1b84",
+        "uuid": "6c14191f-863c-8eb5-b166-5375833bc741",
         "words": [
           "cook",
           "a",
@@ -22599,7 +22599,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "cooking: a schema.org component word, fused from cookingMethod",
-        "uuid": "0761358b-7226-887f-b32f-b8f3887d0c3c",
+        "uuid": "1bb04ed8-e845-8c7a-89e8-69520d68fe8b",
         "words": [
           "cooking",
           "a",
@@ -22746,7 +22746,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "coordinates: a schema.org component word, fused from GeoCoordinates",
-        "uuid": "54741a23-07be-8372-a944-1062855bd054",
+        "uuid": "6a0e9a6c-7219-8cd3-9401-da101940ba42",
         "words": [
           "coordinates",
           "a",
@@ -22782,7 +22782,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "copay: a schema.org component word, fused from healthPlanCopay, healthPlanCopayOption",
-        "uuid": "993a24e0-ed1b-860f-b0f1-25841e6113e2",
+        "uuid": "d3693fdd-6d88-88e3-b824-9d0ace2845c5",
         "words": [
           "copay",
           "a",
@@ -22819,7 +22819,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "copyright: a schema.org component word, fused from copyrightHolder, copyrightNotice, copyrightYear",
-        "uuid": "f9e0f1bc-b878-853b-b8ec-84808f80cb29",
+        "uuid": "8eb48c64-3793-8bec-b99a-77a98820720f",
         "words": [
           "copyright",
           "a",
@@ -22930,7 +22930,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "corrections: a schema.org component word, fused from correctionsPolicy",
-        "uuid": "748c22eb-1fa6-864a-9800-cfb206023fac",
+        "uuid": "1235655f-5359-8141-af81-255d743cc229",
         "words": [
           "corrections",
           "a",
@@ -22966,7 +22966,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "corrects: a schema.org component word, fused from legislationCorrects",
-        "uuid": "8bbe217c-2755-82da-a84b-897518e068a8",
+        "uuid": "33b66b8e-81bb-8bf2-86bd-220e9062c5f9",
         "words": [
           "corrects",
           "a",
@@ -23419,7 +23419,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "count: a schema.org component word, fused from answerCount, commentCount, downvoteCount, interactionCount, offerCount, ratingCount",
-        "uuid": "d12e5ddd-fc03-8003-bfae-710b8a9838ec",
+        "uuid": "346a13a2-9ceb-8938-8c1b-023c954cd917",
         "words": [
           "count",
           "a",
@@ -23460,7 +23460,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "counter: a schema.org component word, fused from InteractionCounter",
-        "uuid": "975e3355-c8fb-8301-80bb-110c8e37b745",
+        "uuid": "4244e490-000f-8356-98ff-8ddff5acd689",
         "words": [
           "counter",
           "a",
@@ -23496,7 +23496,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "countersigned: a schema.org component word, fused from legislationCountersignedBy",
-        "uuid": "bc63279f-41df-8afa-bf81-eeab06838207",
+        "uuid": "87290225-ca17-8b0b-a8d7-566f9d650446",
         "words": [
           "countersigned",
           "a",
@@ -23532,7 +23532,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "countries: a schema.org component word, fused from countriesNotSupported, countriesSupported",
-        "uuid": "ad1c6f7c-1df2-85ed-a970-16e756e05cdd",
+        "uuid": "d936d0f9-b91a-84c4-b787-e724c8ef6683",
         "words": [
           "countries",
           "a",
@@ -23598,7 +23598,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "county: a schema.org component word, fused from cvdFacilityCounty",
-        "uuid": "10915a34-8064-8c21-8209-b2972d7f3eeb",
+        "uuid": "b9d0cfaa-2048-800f-9f6d-d7e00ff65358",
         "words": [
           "county",
           "a",
@@ -23723,7 +23723,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "cover: a schema.org component word, fused from ComicCoverArt, CoverArt, variantCover",
-        "uuid": "a6d528f6-4a4b-8b8f-9695-21c103f2c88e",
+        "uuid": "a825228c-852a-818d-af0f-4e78d0253bd0",
         "words": [
           "cover",
           "a",
@@ -23761,7 +23761,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "coverage: a schema.org component word, fused from coverageEndTime, coverageStartTime, missionCoveragePrioritiesPolicy, spatialCoverage, temporalCoverage",
-        "uuid": "b4fad8a3-063a-8466-8047-23df8862cee2",
+        "uuid": "2e3f63fb-9ea9-8b28-924d-e05d1c123099",
         "words": [
           "coverage",
           "a",
@@ -23886,7 +23886,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "covered: a schema.org component word, fused from geoCoveredBy",
-        "uuid": "18ee7e3c-c965-8b69-8f34-906c9b00925a",
+        "uuid": "a7ead997-4e1e-8373-8ac4-8252f32aebf6",
         "words": [
           "covered",
           "a",
@@ -23922,7 +23922,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "covers: a schema.org component word, fused from geoCovers",
-        "uuid": "6e864078-748c-80ef-a5a3-d860062d11e5",
+        "uuid": "69dca20b-7fe6-8b6b-90b1-35bb54da0508",
         "words": [
           "covers",
           "a",
@@ -23958,7 +23958,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "covid: a schema.org component word, fused from CovidTestingFacility",
-        "uuid": "ed5ab38d-bf7b-8cf7-9214-9cdf2704e65d",
+        "uuid": "98b28cd8-7288-83f1-92e2-19146b1ad917",
         "words": [
           "covid",
           "a",
@@ -23994,7 +23994,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "cream: a schema.org component word, fused from IceCreamShop",
-        "uuid": "5495e590-936c-8318-98cf-bee855bdd358",
+        "uuid": "e6718f38-130a-8eae-b9a7-9414a579d9e7",
         "words": [
           "cream",
           "a",
@@ -24030,7 +24030,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "create: a schema.org component word, fused from CreateAction",
-        "uuid": "d6adc42e-805f-8f20-9869-9173d17f6c6e",
+        "uuid": "264fd6cf-29db-8eff-a144-b84a722947b4",
         "words": [
           "create",
           "a",
@@ -24066,7 +24066,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "created: a schema.org component word, fused from dateCreated, locationCreated",
-        "uuid": "436fcd2d-ddfe-8590-9ce7-a8ff9ebd3677",
+        "uuid": "8cf1a218-dbaf-8f8b-a58a-d1062352dccd",
         "words": [
           "created",
           "a",
@@ -24103,7 +24103,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "creative: a schema.org component word, fused from CreativeWork, CreativeWorkSeason, CreativeWorkSeries, creativeWorkStatus, encodesCreativeWork",
-        "uuid": "1379c1a6-954c-8d86-9299-114b9920c551",
+        "uuid": "e13b9023-4eee-8da2-bb30-334ffe819fce",
         "words": [
           "creative",
           "a",
@@ -24230,7 +24230,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "credit: a schema.org component word, fused from BankOrCreditUnion, CreditCard, LoanOrCredit, creditText",
-        "uuid": "2b0df038-6d50-8185-a482-c88a679602e7",
+        "uuid": "692bedcb-c725-82ce-8fc9-7a828be564fa",
         "words": [
           "credit",
           "a",
@@ -24323,7 +24323,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "credits: a schema.org component word, fused from numberOfCredits, typicalCreditsPerTerm",
-        "uuid": "3af75477-0cb9-843f-b30a-5a9aa4fa3f41",
+        "uuid": "ac479111-37d7-87ce-a6fb-23d1035616d7",
         "words": [
           "credits",
           "a",
@@ -24487,7 +24487,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "critic: a schema.org component word, fused from CriticReview",
-        "uuid": "8a20a047-d3f0-82fb-8d57-9c6face9545a",
+        "uuid": "d8e52769-a628-8f08-9619-2e1a43acea3b",
         "words": [
           "critic",
           "a",
@@ -24523,7 +24523,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modelling a cultivated plant type as the agricultural SKU — the produce-catalogue row carrying its sale unit (1 bunch, 100 g, 1 head), unit price, and the agronomic constants (yield per area, plant spacing, N·K₂O need, plantings & harvests per season) that explode a demand quantity into land, seed, and fertility. The crop is the bill-of-materials line of a farm; its heterogeneous sale unit is why automatic unit conversion is non-negotiable.",
-        "uuid": "ce2d9929-1d94-8dff-b490-2c63b018fee6",
+        "uuid": "3a823b65-197b-89dd-8f6c-9d07b99481c5",
         "words": [
           "use",
           "when",
@@ -24711,7 +24711,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "crosses: a schema.org component word, fused from geoCrosses",
-        "uuid": "c280bbac-577a-812b-a12b-71ffa276964d",
+        "uuid": "bdc526f3-ed9f-82af-8d48-89cae411de62",
         "words": [
           "crosses",
           "a",
@@ -24815,7 +24815,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "css: a schema.org component word, fused from CssSelectorType, cssSelector",
-        "uuid": "8fa1f17c-ac69-837f-9c3f-41d308785fd3",
+        "uuid": "de19145c-302b-8b4c-950d-9c2fb82ba5f5",
         "words": [
           "css",
           "a",
@@ -24852,7 +24852,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "cuisine: a schema.org component word, fused from recipeCuisine, servesCuisine",
-        "uuid": "10661776-8cf3-802c-b762-5a7e8bf6e11f",
+        "uuid": "978d86b8-8436-8400-a56c-4def75fe6196",
         "words": [
           "cuisine",
           "a",
@@ -24973,7 +24973,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "currencies: a schema.org component word, fused from currenciesAccepted",
-        "uuid": "08ae6d42-65fd-8bbe-a3f9-a6e9b0db9a86",
+        "uuid": "a3549754-4562-86d0-b39f-e517dba9cd69",
         "words": [
           "currencies",
           "a",
@@ -25133,7 +25133,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "current: a schema.org component word, fused from currentExchangeRate",
-        "uuid": "516b9c62-83c4-8136-828c-4d50b8436a44",
+        "uuid": "5ff009de-9a5e-8dad-aa0a-3eb3243086f4",
         "words": [
           "current",
           "a",
@@ -25205,7 +25205,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when grouping customers for differentiated pricing tiers, volume discounts, targeted campaigns, or IFRS-15 §4 portfolio-of-contracts disclosures — segment type, pricing tier, payment terms, credit limit, and priority rank. The CRM customer-segmentation collection.",
-        "uuid": "abd29631-ffbd-8f37-be60-75cd3fd8a41e",
+        "uuid": "b695d116-2d0f-8359-b702-d49e7f1ee9a9",
         "words": [
           "use",
           "when",
@@ -26416,7 +26416,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "cutoff: a schema.org component word, fused from cutoffTime",
-        "uuid": "22898176-9f90-8935-ad8a-2b34fd375dab",
+        "uuid": "9781ecae-97fc-89b3-a84e-88224af79137",
         "words": [
           "cutoff",
           "a",
@@ -26452,7 +26452,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "cvd: a schema.org component word, fused from cvdCollectionDate, cvdFacilityCounty, cvdFacilityId, cvdNumBeds, cvdNumBedsOcc, cvdNumC19Died",
-        "uuid": "442d0036-c49a-8f25-ac6c-72a332165c53",
+        "uuid": "d841114f-56c0-8d78-a4c7-35a7b78ac6a0",
         "words": [
           "cvd",
           "a",
@@ -26543,7 +26543,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "damages: a schema.org component word, fused from knownVehicleDamages",
-        "uuid": "77106cc1-b001-8b55-a6ad-a29d654890d7",
+        "uuid": "71a6283e-5dc1-8891-9c25-16558527798e",
         "words": [
           "damages",
           "a",
@@ -26579,7 +26579,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "dance: a schema.org component word, fused from DanceEvent, DanceGroup",
-        "uuid": "6d85fb0e-7695-8148-a08f-9f4777788489",
+        "uuid": "62372c8f-086c-8c7c-80a7-2792cc4a9709",
         "words": [
           "dance",
           "a",
@@ -26616,7 +26616,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when each model needs a computed Payload admin view — its related links partitioned into the collections (plural) and models (singular) it composes, rendered via reusable component-atoms. Computed from the link graph, not hardcoded; each atom is Open Graph + schema.org compatible in all dimensions.",
-        "uuid": "7565f5a4-8132-852b-81d8-fd4eafe9c1b4",
+        "uuid": "c191d020-de81-8395-b47d-700a391eb235",
         "words": [
           "use",
           "when",
@@ -26917,7 +26917,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when configuring the Payload database adapter or working with migrations/schema — choosing sqlite/d1/postgres/mongo, running migrate / migrate:create / migrate:down, dev push, transactions, indexes, defaultIDType, or fixing schema/enum/table-name errors.",
-        "uuid": "0ed5d4f0-ddd2-8a3d-b9d6-a864cae8dc09",
+        "uuid": "e80394f9-6677-848d-8b02-48e7884dbcfb",
         "words": [
           "use",
           "when",
@@ -27087,7 +27087,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "dated: a schema.org component word, fused from DatedMoneySpecification",
-        "uuid": "0381172b-b09f-8668-82e9-b8c9e4626bb2",
+        "uuid": "581811de-8e9d-819e-87c4-20c768037a1a",
         "words": [
           "dated",
           "a",
@@ -27245,7 +27245,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "days: a schema.org component word, fused from businessDays, merchantReturnDays, productReturnDays",
-        "uuid": "bcabff4b-de9e-80b6-9909-63df285577d6",
+        "uuid": "c2861017-08e2-8ff5-a3b5-39dc517e5995",
         "words": [
           "days",
           "a",
@@ -27283,7 +27283,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "de: a schema.org component word, fused from DENonprofitType",
-        "uuid": "fa461b10-1277-8fd6-9fbe-0c5851478107",
+        "uuid": "75d4b2a3-a4e4-8e11-a6fe-c73a4204cef8",
         "words": [
           "de",
           "a",
@@ -27319,7 +27319,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "deactivate: a schema.org component word, fused from DeactivateAction",
-        "uuid": "9b3a2c0d-e426-8291-94ab-0f8a9b19af06",
+        "uuid": "cb002d60-49e9-8fe7-a77a-1cfe4d919dd6",
         "words": [
           "deactivate",
           "a",
@@ -27355,7 +27355,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "deadline: a schema.org component word, fused from applicationDeadline",
-        "uuid": "ae06f3ff-632a-8c9f-9700-b773d42ccbc4",
+        "uuid": "94e31694-9e77-85ad-ab77-e5fb005eff54",
         "words": [
           "deadline",
           "a",
@@ -27391,7 +27391,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "dealer: a schema.org component word, fused from AutoDealer, MotorcycleDealer",
-        "uuid": "df5e5edf-ceac-807d-8525-5eb1074654a3",
+        "uuid": "585fe102-c35a-85a0-be48-1ff3b7d77af1",
         "words": [
           "dealer",
           "a",
@@ -27428,7 +27428,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "death: a schema.org component word, fused from deathDate, deathPlace",
-        "uuid": "7b05245d-1018-80e9-8897-32393f5941c6",
+        "uuid": "b92647c0-e119-8846-9d35-5be9e5ac15f6",
         "words": [
           "death",
           "a",
@@ -27704,7 +27704,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the dive/decompression metaphor for erpax math — on-gas/off-gas as take/give, the gas debt as a conserved transaction balanced before close, half-time doubling as the rodin coil, deco stops as horo positions, M-values as the harmony bound, and the {1,2,3} basic-team basis (cave·recreational·technical = self·duality·trinity).",
-        "uuid": "2340f562-39ab-8166-b850-e6fc32880ae7",
+        "uuid": "f14ea30f-e14c-82ab-9252-a109ac881ef0",
         "words": [
           "use",
           "when",
@@ -27895,7 +27895,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "default: a schema.org component word, fused from defaultValue",
-        "uuid": "269abf9d-3a3b-85b8-9b88-caf4b99f67c4",
+        "uuid": "1a8b8302-89c5-8ef9-874b-a7bddcaf9c01",
         "words": [
           "default",
           "a",
@@ -28134,7 +28134,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "defined: a schema.org component word, fused from DefinedRegion, DefinedTerm, DefinedTermSet, hasDefinedTerm, inDefinedTermSet",
-        "uuid": "c30fd091-c4f9-8200-a6d2-92e12684ef80",
+        "uuid": "7d06a00e-92f2-8d4c-b864-ed07aa168484",
         "words": [
           "defined",
           "a",
@@ -28307,7 +28307,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "delete: a schema.org component word, fused from DeleteAction",
-        "uuid": "85d3802c-33b9-8896-82fe-433d4266883c",
+        "uuid": "e8321e03-d8cc-8d5a-8387-fb2616c290f7",
         "words": [
           "delete",
           "a",
@@ -28343,7 +28343,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "deleted: a schema.org component word, fused from dateDeleted",
-        "uuid": "4ad02004-67a8-8941-9383-76b86f7cfe83",
+        "uuid": "d730db9e-619e-8829-81d7-909c53728985",
         "words": [
           "deleted",
           "a",
@@ -28379,7 +28379,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "delivery: a schema.org component word, fused from DeliveryChargeSpecification, DeliveryEvent, DeliveryMethod, DeliveryTimeSettings, ParcelDelivery, ShippingDeliveryTime",
-        "uuid": "8f215274-95fe-81ac-9592-44fdd8c93a37",
+        "uuid": "19e50aa5-750e-8bb6-9fb1-c051e927224b",
         "words": [
           "delivery",
           "a",
@@ -28420,7 +28420,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "A demand entity represents the public, not necessarily binding, not necessarily exclusive, announcement by an organization or person to seek a certain type of goods or services. For describing demand ",
-        "uuid": "db2710ba-bde2-8d6f-9bc6-562146165e81",
+        "uuid": "afa3c0d3-dc71-8ba7-afac-022a9b80ed89",
         "words": [
           "a",
           "demand",
@@ -28477,7 +28477,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "denominator: a schema.org component word, fused from measurementDenominator",
-        "uuid": "d380546c-0675-8ac9-a00c-7928515963b1",
+        "uuid": "45cf87b9-c425-8031-bec2-e8468ef08342",
         "words": [
           "denominator",
           "a",
@@ -28542,7 +28542,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "depart: a schema.org component word, fused from DepartAction",
-        "uuid": "75e60a0c-0be9-87bb-81eb-3b657f700ff9",
+        "uuid": "b28eaca7-aba7-8545-8858-6d983f744ceb",
         "words": [
           "depart",
           "a",
@@ -28635,7 +28635,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "departure: a schema.org component word, fused from departureAirport, departureBoatTerminal, departureBusStop, departureGate, departurePlatform, departureStation",
-        "uuid": "28887c8b-a486-8122-a5ac-bcace7c6c7e2",
+        "uuid": "a238fd90-e147-8d6e-8be5-336821c9ba6a",
         "words": [
           "departure",
           "a",
@@ -28819,7 +28819,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "deposit: a schema.org component word, fused from DepositAccount, InvestmentOrDeposit",
-        "uuid": "5c47c6c4-d7fa-87ab-96e5-b533300468a9",
+        "uuid": "65045748-35e6-85f0-8114-9e9ffa3eb986",
         "words": [
           "deposit",
           "a",
@@ -29182,7 +29182,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "destination: a schema.org component word, fused from TouristDestination, shippingDestination",
-        "uuid": "ee1ca0ae-43cb-89d1-849f-6d0a00b9e8d9",
+        "uuid": "2c645af3-5654-87fe-981e-e50674c9123f",
         "words": [
           "destination",
           "a",
@@ -29219,7 +29219,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "details: a schema.org component word, fused from BedDetails, EnergyConsumptionDetails, OfferShippingDetails, hasEnergyConsumptionDetails, labelDetails, shippingDetails",
-        "uuid": "9b50777d-9650-8013-a457-dab8bf67575b",
+        "uuid": "e87645a0-97b7-8cb5-9383-4c863e35e7e9",
         "words": [
           "details",
           "a",
@@ -29260,7 +29260,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "detected: a schema.org component word, fused from signDetected",
-        "uuid": "117ab3a5-3eb9-850f-ba17-467750c7fdd0",
+        "uuid": "4d9ec80f-8d66-8868-82cd-58e5b010ac05",
         "words": [
           "detected",
           "a",
@@ -29460,7 +29460,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "diagnose: a schema.org component word, fused from usedToDiagnose",
-        "uuid": "ed2530ae-d55d-8160-801d-66f7de279b82",
+        "uuid": "974f2830-b240-8ed0-a582-723d63c77651",
         "words": [
           "diagnose",
           "a",
@@ -29540,7 +29540,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "diagnostic: a schema.org component word, fused from DiagnosticLab, DiagnosticProcedure",
-        "uuid": "242460b0-0a4b-8b99-8f5a-504444aea7f8",
+        "uuid": "7d89f2bb-da67-88d9-be5c-d79b8692be1a",
         "words": [
           "diagnostic",
           "a",
@@ -29624,7 +29624,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "died: a schema.org component word, fused from cvdNumC19Died",
-        "uuid": "9b641a63-18ed-8298-9a3b-f749cfab9bb9",
+        "uuid": "8b8a20a3-b665-8d0f-b4bc-564de885288e",
         "words": [
           "died",
           "a",
@@ -29704,7 +29704,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "dietary: a schema.org component word, fused from DietarySupplement",
-        "uuid": "80214132-31ac-85c5-990b-669bd4c4322f",
+        "uuid": "8bea1015-21b1-89e7-bd50-b8380dd635b4",
         "words": [
           "dietary",
           "a",
@@ -29740,7 +29740,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "differential: a schema.org component word, fused from differentialDiagnosis",
-        "uuid": "d3242f08-5619-860b-9a7a-a96cf664dadc",
+        "uuid": "067e9e6b-0a52-854f-90fd-6317b35637a9",
         "words": [
           "differential",
           "a",
@@ -29936,7 +29936,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "digital: a schema.org component word, fused from DigitalDocument, DigitalDocumentPermission, DigitalDocumentPermissionType, DigitalPlatformEnumeration, IPTCDigitalSourceEnumeration, NoteDigitalDocumen",
-        "uuid": "340a36ab-5228-8c11-aaa5-89449bdbf697",
+        "uuid": "83c660a6-aef6-87f6-920c-cfc62b48d60c",
         "words": [
           "digital",
           "a",
@@ -29977,7 +29977,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when one concept is split across many prefixed collections/fields that should coexist at one coordinate — bank-/fx-/trade-/intercompany-transactions → transactions; customers/vendors/addresses → parties. A prefix is a dimension not yet collapsed (kind/context/role/perspective/unit/time); remove it and the variants merge into the shared coordinate, the prefix becoming a field/tag/type. erpax is multi-dimensional: all coexist at one coordinate, in unity.",
-        "uuid": "b8243c58-5677-85e8-bad3-68cc610cb227",
+        "uuid": "d51c1e1d-9122-8461-ad9b-0823956e82a0",
         "words": [
           "use",
           "when",
@@ -30073,7 +30073,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "direct: a schema.org component word, fused from directApply",
-        "uuid": "ec672066-a51a-84ac-8043-e03bafdaf608",
+        "uuid": "ab62696e-b68b-8a78-bc14-e7cacc1a4356",
         "words": [
           "direct",
           "a",
@@ -30109,7 +30109,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "direction: a schema.org component word, fused from HowToDirection",
-        "uuid": "7c95932e-61f2-8f02-a91e-f155b88dfd94",
+        "uuid": "ea3b6ff2-a1da-869a-89da-87232667decd",
         "words": [
           "direction",
           "a",
@@ -30253,7 +30253,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "disagree: a schema.org component word, fused from DisagreeAction",
-        "uuid": "b58dd276-ec3b-803c-be31-732864b399f8",
+        "uuid": "53b14c20-293b-8576-976d-26d06109d469",
         "words": [
           "disagree",
           "a",
@@ -30289,7 +30289,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "disambiguating: a schema.org component word, fused from disambiguatingDescription",
-        "uuid": "9119a043-5579-821a-8597-f414d4c06127",
+        "uuid": "612e23cb-70e9-8ed1-ba8e-cc09d195eb41",
         "words": [
           "disambiguating",
           "a",
@@ -30424,7 +30424,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "discover: a schema.org component word, fused from DiscoverAction",
-        "uuid": "78fa5723-8a39-8465-b32c-ee779c076277",
+        "uuid": "aa6fc12b-f9fb-8095-9b77-3106aac42fc3",
         "words": [
           "discover",
           "a",
@@ -30494,7 +30494,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "discussion: a schema.org component word, fused from DiscussionForumPosting, discussionUrl",
-        "uuid": "704aed23-7e3a-89c4-aa5b-623c34e0ce84",
+        "uuid": "cd8b2407-c487-8a4b-bc1b-0c78abb54a4c",
         "words": [
           "discussion",
           "a",
@@ -30531,7 +30531,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "disease: a schema.org component word, fused from InfectiousDisease, associatedDisease, diseasePreventionInfo, diseaseSpreadStatistics",
-        "uuid": "fc657363-8607-81a1-ab57-e1423dbe5ade",
+        "uuid": "fbd2a7c2-2901-84a7-9589-3cb85078d78e",
         "words": [
           "disease",
           "a",
@@ -30570,7 +30570,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "disjoint: a schema.org component word, fused from geoDisjoint",
-        "uuid": "0d77319b-4e9c-8d7f-acb0-53f965eddb8c",
+        "uuid": "5bfac6ab-48ed-849e-a209-d29d5ad32dac",
         "words": [
           "disjoint",
           "a",
@@ -30606,7 +30606,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "dislike: a schema.org component word, fused from DislikeAction",
-        "uuid": "b352f6e4-1fc6-8d61-bec7-6f90fd87fcaf",
+        "uuid": "5baad8c5-b495-8f51-a87e-a46f8ceae395",
         "words": [
           "dislike",
           "a",
@@ -30642,7 +30642,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "displacement: a schema.org component word, fused from engineDisplacement",
-        "uuid": "86d3d2ad-b2c1-83cf-b77b-cdc75eec13db",
+        "uuid": "b611d07a-4d54-87bf-9976-5bfa1638fdea",
         "words": [
           "displacement",
           "a",
@@ -30678,7 +30678,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "display: a schema.org component word, fused from broadcastDisplayName, displayLocation",
-        "uuid": "faff2952-baf5-8bab-8564-769fb26476bb",
+        "uuid": "1876a479-1562-8ad1-9197-2aac31306002",
         "words": [
           "display",
           "a",
@@ -30766,7 +30766,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "dissolution: a schema.org component word, fused from dissolutionDate",
-        "uuid": "aec3968a-e12b-88ec-be88-7c5e2d461556",
+        "uuid": "a590501a-a4d3-8319-a5b9-5eb7bf38eff4",
         "words": [
           "dissolution",
           "a",
@@ -30880,7 +30880,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "distinguishing: a schema.org component word, fused from distinguishingSign",
-        "uuid": "1c2e3ed5-0860-8968-a4f1-a0e6e6f9eb85",
+        "uuid": "c05ca591-ab19-8ffe-899b-854b40d0266a",
         "words": [
           "distinguishing",
           "a",
@@ -30969,7 +30969,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "district: a schema.org component word, fused from SchoolDistrict",
-        "uuid": "da2c2bfb-3af0-8f25-8559-62054811166c",
+        "uuid": "ecf65e56-f76c-84ab-9407-bd9411addc7d",
         "words": [
           "district",
           "a",
@@ -31005,7 +31005,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "diversity: a schema.org component word, fused from diversityPolicy, diversityStaffingReport",
-        "uuid": "ad1b6091-eb1d-8b28-beb2-7161c20cdaac",
+        "uuid": "5836a1d8-b8e4-867c-814e-a5cba942857e",
         "words": [
           "diversity",
           "a",
@@ -31111,7 +31111,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "document: a schema.org component word, fused from DigitalDocument, DigitalDocumentPermission, DigitalDocumentPermissionType, NoteDigitalDocument, PresentationDigitalDocument, SpreadsheetDigitalDocumen",
-        "uuid": "f28cff5b-0b1e-86cf-826b-7a6a56f6175b",
+        "uuid": "318eba21-16e4-8b88-b126-0ca2872487d4",
         "words": [
           "document",
           "a",
@@ -31188,7 +31188,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "does: a schema.org component word, fused from doesNotShip",
-        "uuid": "3dff00d3-8427-848f-97d1-91d0b13c5f37",
+        "uuid": "2182e7b0-e0cc-820b-8450-f6c06dabd1be",
         "words": [
           "does",
           "a",
@@ -31384,7 +31384,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "domiciled: a schema.org component word, fused from domiciledMortgage",
-        "uuid": "258323fd-b39b-8a8d-8ed6-1185d5fc5537",
+        "uuid": "f765b34c-e5a5-8878-8074-4cbadd2ba34c",
         "words": [
           "domiciled",
           "a",
@@ -31420,7 +31420,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "donate: a schema.org component word, fused from DonateAction",
-        "uuid": "51a8f07e-659c-883e-8888-15a699ddbca3",
+        "uuid": "40faec00-0fe4-868f-8959-a8742e0b68e5",
         "words": [
           "donate",
           "a",
@@ -31456,7 +31456,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "door: a schema.org component word, fused from doorTime",
-        "uuid": "d60b3a05-8e8f-8d80-b7f7-ca078497faa5",
+        "uuid": "5c349c0d-4fdb-8111-b9b9-a5068143a37d",
         "words": [
           "door",
           "a",
@@ -31492,7 +31492,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "doors: a schema.org component word, fused from numberOfDoors",
-        "uuid": "9d2ce216-7b48-802d-b772-1ad40e5f56f3",
+        "uuid": "2cdbf4e2-1ff9-83f6-8253-bc4ff53c44d8",
         "words": [
           "doors",
           "a",
@@ -31602,7 +31602,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "dosage: a schema.org component word, fused from dosageForm",
-        "uuid": "22796e23-9e5e-8f0d-b06b-f794d2eeef46",
+        "uuid": "d17d3002-bf90-8060-b529-9d80a734fbbd",
         "words": [
           "dosage",
           "a",
@@ -31638,7 +31638,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "dose: a schema.org component word, fused from DoseSchedule, MaximumDoseSchedule, RecommendedDoseSchedule, ReportedDoseSchedule, doseSchedule, doseUnit",
-        "uuid": "c75eef2d-2a0f-8d47-81c0-7fd88e8a2996",
+        "uuid": "80a0593b-672b-83f5-ba56-f55fddadbafb",
         "words": [
           "dose",
           "a",
@@ -31679,7 +31679,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "down: a schema.org component word, fused from downPayment",
-        "uuid": "f1b6a649-0c1f-86d6-87fc-a2ef559dc984",
+        "uuid": "33988b85-d750-8dac-a18d-e59a52540956",
         "words": [
           "down",
           "a",
@@ -31715,7 +31715,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "download: a schema.org component word, fused from DataDownload, DownloadAction, downloadUrl",
-        "uuid": "a41315bd-3c7f-8b49-9a67-684aa53bc6c9",
+        "uuid": "1350b9c9-8927-88ae-9929-6af9f322b2a0",
         "words": [
           "download",
           "a",
@@ -31753,7 +31753,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "downloads: a schema.org component word, fused from UserDownloads",
-        "uuid": "b5d3ff2e-0d5d-80a2-8841-1b963519545f",
+        "uuid": "cd756033-28f2-8c62-bbb3-9f33671a5f77",
         "words": [
           "downloads",
           "a",
@@ -31789,7 +31789,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "downvote: a schema.org component word, fused from downvoteCount",
-        "uuid": "48143601-8b30-8e1e-b3c4-bca31a4a4c71",
+        "uuid": "1d270374-22d5-882c-8e9b-08cad13c72cb",
         "words": [
           "downvote",
           "a",
@@ -31876,7 +31876,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "drained: a schema.org component word, fused from regionDrained",
-        "uuid": "264cc7a1-dc2f-8c97-9ee4-f48509b57ef2",
+        "uuid": "502f6ce2-c560-8c35-9897-caae99b75a1d",
         "words": [
           "drained",
           "a",
@@ -31946,7 +31946,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "draw: a schema.org component word, fused from DrawAction",
-        "uuid": "f6fac312-0fae-83b4-aab4-8cf06102d80b",
+        "uuid": "141a7a4b-4fff-8c58-ae8a-9e065303b263",
         "words": [
           "draw",
           "a",
@@ -32023,7 +32023,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "drink: a schema.org component word, fused from DrinkAction",
-        "uuid": "f62d081c-5f8e-8bed-8486-e2d39fab2365",
+        "uuid": "ed8eebdb-271d-8b66-a284-b17d748a711b",
         "words": [
           "drink",
           "a",
@@ -32059,7 +32059,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "drive: a schema.org component word, fused from DriveWheelConfigurationValue, driveWheelConfiguration, hasDriveThroughService",
-        "uuid": "ac0d4c9f-5337-8d5e-b26f-64bde64d66fd",
+        "uuid": "c501f63e-2a86-8f42-b6fa-972f094a93b0",
         "words": [
           "drive",
           "a",
@@ -32159,7 +32159,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "dropoff: a schema.org component word, fused from dropoffLocation, dropoffTime",
-        "uuid": "15a4a795-1dfa-8d5e-942d-00fee2fde10d",
+        "uuid": "ab3c2a5a-8638-8c6b-9ba5-cb732bf74d9d",
         "words": [
           "dropoff",
           "a",
@@ -32381,7 +32381,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "due: a schema.org component word, fused from minimumPaymentDue, paymentDue, paymentDueDate, totalPaymentDue",
-        "uuid": "2aad4933-1a3e-8ee2-a82e-3f688786b8b6",
+        "uuid": "a4876297-4d5a-8dc1-a32f-8c6d5d4df9fc",
         "words": [
           "due",
           "a",
@@ -32509,7 +32509,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "duplicate: a schema.org component word, fused from duplicateTherapy",
-        "uuid": "9e31521c-6131-866b-bca5-e2e95c2ed185",
+        "uuid": "8e692fe1-77e1-8e99-b601-db2ae66aa9a3",
         "words": [
           "duplicate",
           "a",
@@ -32578,7 +32578,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "during: a schema.org component word, fused from duringMedia",
-        "uuid": "ace19e37-71ce-80b7-9eeb-7400bfee32a0",
+        "uuid": "788f5594-83ee-81d8-aa92-243f7e8cc3e1",
         "words": [
           "during",
           "a",
@@ -32614,7 +32614,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "dx: a schema.org component word, fused from DDxElement",
-        "uuid": "e1c7cc98-6774-87b9-961f-1cac8b4e5114",
+        "uuid": "ac5b8727-18bf-8be8-8db6-4f5e9a4470c4",
         "words": [
           "dx",
           "a",
@@ -32650,7 +32650,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "early: a schema.org component word, fused from earlyPrepaymentPenalty",
-        "uuid": "b24318c0-fdf6-86fb-b629-afc0b5880cd8",
+        "uuid": "7605ccfb-d041-89e6-9d73-6c577878dbb9",
         "words": [
           "early",
           "a",
@@ -32686,7 +32686,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "earned: a schema.org component word, fused from membershipPointsEarned",
-        "uuid": "d3204288-bda7-882f-8ed9-b24e35297189",
+        "uuid": "29bcaed6-8f96-8b21-9c02-ddfec6fec719",
         "words": [
           "earned",
           "a",
@@ -32722,7 +32722,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "eat: a schema.org component word, fused from EatAction",
-        "uuid": "cd86e0cc-edfc-8b5d-b011-30de6138158a",
+        "uuid": "058eae8a-5141-87f4-8a82-bd51c0bab253",
         "words": [
           "eat",
           "a",
@@ -32912,7 +32912,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "edit: a schema.org component word, fused from editEIDR",
-        "uuid": "0ca5c2f0-1d51-862d-ac0b-08a2b721df4f",
+        "uuid": "f64517a2-6fa1-8dff-9d7d-79672a6a65e3",
         "words": [
           "edit",
           "a",
@@ -32948,7 +32948,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "edition: a schema.org component word, fused from artEdition, bookEdition, gameEdition, printEdition",
-        "uuid": "f6112e31-5c9b-8326-b9bc-3bc2f142045b",
+        "uuid": "a3f5f35b-2f54-89fb-bddc-14eb6175c03c",
         "words": [
           "edition",
           "a",
@@ -33021,7 +33021,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "edu: a schema.org component word, fused from eduQuestionType",
-        "uuid": "d5c7b43e-147f-8d1c-9c19-0855e03dd025",
+        "uuid": "14bbef83-4363-8bd8-aaeb-204f304e4a7a",
         "words": [
           "edu",
           "a",
@@ -33108,7 +33108,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "educational: a schema.org component word, fused from EducationalAudience, EducationalOccupationalCredential, EducationalOccupationalProgram, EducationalOrganization, educationalAlignment, educationalC",
-        "uuid": "ec0fb352-4c7e-8f47-9059-24ed0bd99aa0",
+        "uuid": "c799e92c-8d77-8d31-ae33-59b4155ebcf8",
         "words": [
           "educational",
           "a",
@@ -33149,7 +33149,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "efficiency: a schema.org component word, fused from EUEnergyEfficiencyEnumeration, EnergyEfficiencyEnumeration, EnergyStarEnergyEfficiencyEnumeration, energyEfficiencyScaleMax, energyEfficiencyScaleMi",
-        "uuid": "d63f8024-aee8-8055-ac9c-5618a7db9e02",
+        "uuid": "e68c1da1-0ffc-852f-ba74-a147e388b493",
         "words": [
           "efficiency",
           "a",
@@ -33189,7 +33189,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "eidr: a schema.org component word, fused from editEIDR, titleEIDR",
-        "uuid": "8a5063f3-3a17-84f1-8482-537ea90f92fd",
+        "uuid": "6a97214d-5409-8a86-9b66-51a68b722b2b",
         "words": [
           "eidr",
           "a",
@@ -33255,7 +33255,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "electronics: a schema.org component word, fused from ElectronicsStore",
-        "uuid": "48a60bf4-d21b-8536-82c0-b4641480a4b7",
+        "uuid": "9d6ea0b3-0a4f-8be7-b657-c297bd1d7135",
         "words": [
           "electronics",
           "a",
@@ -33403,7 +33403,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "elementary: a schema.org component word, fused from ElementarySchool",
-        "uuid": "af3ba260-51f2-886e-b5e0-51f5689e79a3",
+        "uuid": "4febd05b-8adb-8c3b-800b-cc2c1201fde5",
         "words": [
           "elementary",
           "a",
@@ -33498,7 +33498,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "eligibility: a schema.org component word, fused from eligibilityToWorkRequirement",
-        "uuid": "edd369b7-55d3-8c90-aa45-5919f66d774a",
+        "uuid": "cdda4bc0-5384-8970-914c-59227a8321cc",
         "words": [
           "eligibility",
           "a",
@@ -33534,7 +33534,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "eligible: a schema.org component word, fused from eligibleCustomerType, eligibleDuration, eligibleQuantity, eligibleRegion, eligibleTransactionVolume, eligibleWithSupplier",
-        "uuid": "b8ae9b52-3bd7-8840-9ae5-a856075d9bf3",
+        "uuid": "0bc2cf95-c24c-8f44-92cb-2bdbfa0950e1",
         "words": [
           "eligible",
           "a",
@@ -33683,7 +33683,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "embed: a schema.org component word, fused from embedUrl",
-        "uuid": "90920d85-c212-86ba-9c8c-086a6ae982e8",
+        "uuid": "13c362a1-0eed-8dd8-8fe6-61a254ecce2f",
         "words": [
           "embed",
           "a",
@@ -33719,7 +33719,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "embedded: a schema.org component word, fused from embeddedTextCaption",
-        "uuid": "1ca2e804-bba4-8d69-b7f6-4c1eb8899bec",
+        "uuid": "8b44f843-4483-80ad-97a5-b0d4fbc58a2d",
         "words": [
           "embedded",
           "a",
@@ -33755,7 +33755,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "emergency: a schema.org component word, fused from EmergencyService",
-        "uuid": "addf3ad3-8415-8d06-9560-001d2aba1681",
+        "uuid": "6a218016-be78-81a7-9f4d-a0289209c061",
         "words": [
           "emergency",
           "a",
@@ -34477,7 +34477,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "employer: a schema.org component word, fused from EmployerAggregateRating, EmployerReview, employerOverview",
-        "uuid": "29695974-2e15-879f-8105-6ea7ea05925e",
+        "uuid": "ab584aaf-46bf-8d3d-888d-32c48653ad84",
         "words": [
           "employer",
           "a",
@@ -34515,7 +34515,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "employment: a schema.org component word, fused from EmploymentAgency, employmentType, employmentUnit",
-        "uuid": "f0e0bfa4-bd37-8eeb-b704-9dafb65304b9",
+        "uuid": "77ec233c-530b-806b-a535-76fca7ec8d8b",
         "words": [
           "employment",
           "a",
@@ -34589,7 +34589,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "encoded: a schema.org component word, fused from isEncodedByBioChemEntity",
-        "uuid": "99fd8e06-5420-8d26-a5a7-1bbac0f110ce",
+        "uuid": "15435768-b25f-8139-a8fe-3edb6ba5b717",
         "words": [
           "encoded",
           "a",
@@ -34625,7 +34625,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "encodes: a schema.org component word, fused from encodesBioChemEntity, encodesCreativeWork",
-        "uuid": "3c719a1f-d05b-8383-96e4-bebe14c4a24d",
+        "uuid": "4814d279-0f1e-8b85-a503-676df918e23e",
         "words": [
           "encodes",
           "a",
@@ -34797,7 +34797,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "endorse: a schema.org component word, fused from EndorseAction",
-        "uuid": "118f062b-7158-864a-8297-d9c959541101",
+        "uuid": "34bfcecf-eb56-8526-8749-f47e2bfc207d",
         "words": [
           "endorse",
           "a",
@@ -34870,7 +34870,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "endorsement: a schema.org component word, fused from EndorsementRating",
-        "uuid": "febf76ab-cc5e-84ff-aa6d-18218042a0d9",
+        "uuid": "0861f4e8-29a4-8ec4-83b6-5bafe741c74a",
         "words": [
           "endorsement",
           "a",
@@ -35129,7 +35129,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "ends: a schema.org component word, fused from availabilityEnds",
-        "uuid": "6c34e8ac-7f96-8536-bba7-67aebb885020",
+        "uuid": "a305a57e-870d-8e64-9229-2867971540b8",
         "words": [
           "ends",
           "a",
@@ -35256,7 +35256,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "enrollment: a schema.org component word, fused from maximumEnrollment, totalHistoricalEnrollment",
-        "uuid": "a5c5d536-3173-8511-884d-f783a54830a1",
+        "uuid": "6fbfa13b-5b78-84c1-a80d-d9ccd3368bfd",
         "words": [
           "enrollment",
           "a",
@@ -35293,7 +35293,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "ensures: a schema.org component word, fused from legislationEnsuresImplementationOf",
-        "uuid": "e51848f0-a7f9-8976-b445-8428a5aeae55",
+        "uuid": "7b94cb14-4f63-85f6-8808-d854b58d837f",
         "words": [
           "ensures",
           "a",
@@ -35476,7 +35476,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "entertainment: a schema.org component word, fused from AdultEntertainment, EntertainmentBusiness, entertainmentBusiness",
-        "uuid": "27fc30e6-d615-859f-9f81-1ab1e2516653",
+        "uuid": "f454db06-d148-89ba-a5e4-63b600dd4191",
         "words": [
           "entertainment",
           "a",
@@ -35514,7 +35514,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "entity: a schema.org component word, fused from BioChemEntity, BusinessEntityType, MedicalEntity, MolecularEntity, encodesBioChemEntity, hasBioChemEntityPart",
-        "uuid": "e3632941-8647-8e98-a8ac-9d4abd54301b",
+        "uuid": "39354164-c0a7-8e90-b53d-baa84c2a04ce",
         "words": [
           "entity",
           "a",
@@ -35556,7 +35556,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when classifying legal entities — Corporation, LLC, Partnership, Nonprofit, Trust, Government, Individual — to determine applicable compliance frameworks, audit scope, and jurisdiction applicability. The read-only entity-type reference table.",
-        "uuid": "78916c1d-87b9-86ef-beb8-715e4c1d1f0b",
+        "uuid": "4a7c09f1-ef0b-863d-a738-e29d04554898",
         "words": [
           "use",
           "when",
@@ -35801,7 +35801,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "enum: a schema.org component word, fused from MeasurementMethodEnum",
-        "uuid": "5650c2ad-e367-8d48-84d3-0ec88cabc9b2",
+        "uuid": "073a1a20-d128-8151-a6e6-ea5ecd7c3656",
         "words": [
           "enum",
           "a",
@@ -36038,7 +36038,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "equals: a schema.org component word, fused from geoEquals",
-        "uuid": "a757f19e-8452-85da-8c69-9fdc59c3b820",
+        "uuid": "b23f4af8-3f5f-8240-b36a-a39b907ac30b",
         "words": [
           "equals",
           "a",
@@ -36074,7 +36074,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "equipment: a schema.org component word, fused from OfficeEquipmentStore",
-        "uuid": "f2d750a1-cc1c-8254-aba9-badbf2421940",
+        "uuid": "6ff7ca30-9523-82de-938b-678f523b537f",
         "words": [
           "equipment",
           "a",
@@ -36257,7 +36257,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "establishment: a schema.org component word, fused from DefenceEstablishment, FoodEstablishment, FoodEstablishmentReservation, foodEstablishment",
-        "uuid": "59d639cc-b305-8122-8029-6f0287833ead",
+        "uuid": "b575d61c-4715-8a52-87b8-a9da9b15a45e",
         "words": [
           "establishment",
           "a",
@@ -36296,7 +36296,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "estate: a schema.org component word, fused from RealEstateAgent, RealEstateListing, realEstateAgent",
-        "uuid": "1c5372c3-e0aa-8691-bbee-76cb9ac225c8",
+        "uuid": "7acb6d95-8166-85f3-9596-c4a487ee78ab",
         "words": [
           "estate",
           "a",
@@ -36385,7 +36385,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "estimated: a schema.org component word, fused from estimatedCost, estimatedFlightDuration, estimatedSalary",
-        "uuid": "17e61761-c285-8280-95dc-ff43877b8f7c",
+        "uuid": "bea2e276-ee74-8098-8a21-4afc539996f3",
         "words": [
           "estimated",
           "a",
@@ -36423,7 +36423,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "estimates: a schema.org component word, fused from estimatesRiskOf",
-        "uuid": "08bc19a4-5605-8b55-ac77-665e603456fc",
+        "uuid": "744e09e4-5426-89c6-94c9-f83f2689c542",
         "words": [
           "estimates",
           "a",
@@ -36459,7 +36459,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "estimator: a schema.org component word, fused from MedicalRiskEstimator",
-        "uuid": "a3a6d26d-c93c-80e5-a28f-1039e6b486d5",
+        "uuid": "dfb9f9eb-0d08-88c6-9263-2720fbfe7ad9",
         "words": [
           "estimator",
           "a",
@@ -36495,7 +36495,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "ethics: a schema.org component word, fused from ethicsPolicy",
-        "uuid": "86a6a6a6-a587-87e9-a957-4f1642858297",
+        "uuid": "dc142537-7fb3-8781-a29d-624edb9a99a4",
         "words": [
           "ethics",
           "a",
@@ -36565,7 +36565,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "eu: a schema.org component word, fused from EUEnergyEfficiencyEnumeration",
-        "uuid": "214bf298-72ee-8bfb-9217-99d4c883c31e",
+        "uuid": "938c4315-4282-85d2-8cac-14a56d08ebf5",
         "words": [
           "eu",
           "a",
@@ -36827,7 +36827,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "evidence: a schema.org component word, fused from MedicalEvidenceLevel, evidenceLevel, evidenceOrigin",
-        "uuid": "ff6a08ce-5a2d-8227-9f51-ac0277bd9e46",
+        "uuid": "831c551d-00ce-8b9a-a31a-e053bc0a05b9",
         "words": [
           "evidence",
           "a",
@@ -36931,7 +36931,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "exam: a schema.org component word, fused from PhysicalExam, identifyingExam",
-        "uuid": "71fb41af-be01-8909-b7b9-bf29c02f4547",
+        "uuid": "60101fa2-9553-8c54-9fd1-336829ff4a9e",
         "words": [
           "exam",
           "a",
@@ -36968,7 +36968,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "example: a schema.org component word, fused from exampleOfWork, workExample",
-        "uuid": "9049a123-a84e-8089-98d6-d4fa571143ab",
+        "uuid": "f49bbcb8-60be-8169-a663-dc54462c6194",
         "words": [
           "example",
           "a",
@@ -37005,7 +37005,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "except: a schema.org component word, fused from exceptDate",
-        "uuid": "58d27391-ac58-8e2c-b6c6-4170123f2261",
+        "uuid": "b3147bd8-637d-8590-9384-717a61afece8",
         "words": [
           "except",
           "a",
@@ -37146,7 +37146,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "executable: a schema.org component word, fused from executableLibraryName",
-        "uuid": "d966a004-b0f2-876c-be15-fa1e20971288",
+        "uuid": "646b6204-d4a6-8c0e-b0cb-e575dc53d99c",
         "words": [
           "executable",
           "a",
@@ -37182,7 +37182,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "exercise: a schema.org component word, fused from ExerciseAction, ExerciseGym, ExercisePlan, exerciseCourse, exercisePlan, exerciseRelatedDiet",
-        "uuid": "32a6c03b-b9c8-8594-bd4f-ebfe0f8b460a",
+        "uuid": "3ef978e6-f36e-894c-b4e6-49bb64fd2884",
         "words": [
           "exercise",
           "a",
@@ -37223,7 +37223,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "exhibition: a schema.org component word, fused from ExhibitionEvent",
-        "uuid": "67268d94-9445-8d46-8fb7-6fe02ac6cdb3",
+        "uuid": "20edd8bd-3392-8a48-87e6-2f290a0d5c8a",
         "words": [
           "exhibition",
           "a",
@@ -37259,7 +37259,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "exif: a schema.org component word, fused from exifData",
-        "uuid": "7eeca4a8-0c48-8e9c-9ef0-6e97d775119f",
+        "uuid": "b043c5c8-f6ce-8450-ab92-afb7e9f12478",
         "words": [
           "exif",
           "a",
@@ -37295,7 +37295,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "expected: a schema.org component word, fused from expectedArrivalFrom, expectedArrivalUntil, expectedPrognosis",
-        "uuid": "c22ee11e-65fa-890f-84b9-2c0cb6e49adf",
+        "uuid": "310c7af5-1285-8274-a55a-9fbc9441fd05",
         "words": [
           "expected",
           "a",
@@ -37333,7 +37333,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "expects: a schema.org component word, fused from expectsAcceptanceOf",
-        "uuid": "dc6535fc-c00f-8065-a24d-bf34adf3927c",
+        "uuid": "411cb15e-e6df-8389-81e4-fecefde93ec8",
         "words": [
           "expects",
           "a",
@@ -37369,7 +37369,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "expense: a schema.org component word, fused from IncentiveQualifiedExpenseType, qualifiedExpense",
-        "uuid": "74ba884d-7a87-830e-b16b-d05e8393b734",
+        "uuid": "cddf1191-f219-8628-8c53-3e7bf8bf7faf",
         "words": [
           "expense",
           "a",
@@ -37406,7 +37406,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "experience: a schema.org component word, fused from OccupationalExperienceRequirements, experienceInPlaceOfEducation, experienceRequirements, monthsOfExperience",
-        "uuid": "37efa265-e1af-894d-9083-61a9ee798783",
+        "uuid": "c6400450-74fe-815e-b568-c31b677c8382",
         "words": [
           "experience",
           "a",
@@ -37445,7 +37445,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "expert: a schema.org component word, fused from expertConsiderations",
-        "uuid": "54b7a28c-c54a-84e7-960f-21318e6838ec",
+        "uuid": "9366a8a5-a8c1-8f1e-93f5-d6f1467f3def",
         "words": [
           "expert",
           "a",
@@ -37539,7 +37539,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "explanation: a schema.org component word, fused from answerExplanation, ratingExplanation",
-        "uuid": "aa69f944-f2d9-8881-9b45-388315c44292",
+        "uuid": "bc966d7f-74d5-84b1-9a14-b57d049d65b0",
         "words": [
           "explanation",
           "a",
@@ -37623,7 +37623,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "expression: a schema.org component word, fused from mathExpression",
-        "uuid": "19c02689-f43d-8043-adc4-65c516ff0f08",
+        "uuid": "7a7a1277-5475-830f-b21f-003a28ebde5b",
         "words": [
           "expression",
           "a",
@@ -37659,7 +37659,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "extended: a schema.org component word, fused from extendedAddress",
-        "uuid": "94a03dd0-4351-84f7-8925-27f52b638c1e",
+        "uuid": "0a186afd-998f-87a0-9cec-5cfd06b79528",
         "words": [
           "extended",
           "a",
@@ -37695,7 +37695,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "extent: a schema.org component word, fused from materialExtent",
-        "uuid": "aee3c0d2-e435-85ee-81a7-e3a475a8c359",
+        "uuid": "860fa71d-441a-82a1-ae12-7bc37f2ed41a",
         "words": [
           "extent",
           "a",
@@ -37731,7 +37731,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "facility: a schema.org component word, fused from CovidTestingFacility, ParkingFacility, cvdFacilityCounty, cvdFacilityId",
-        "uuid": "a7b83704-2ecb-8d53-8008-d92f19702ce3",
+        "uuid": "f3d0631e-2096-8904-85a7-455e146aadfd",
         "words": [
           "facility",
           "a",
@@ -37770,7 +37770,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "fact: a schema.org component word, fused from verificationFactCheckingPolicy",
-        "uuid": "326f1e19-3e51-8989-99e4-9d2e3e6bb2f3",
+        "uuid": "adbf95ac-8a50-8985-97f1-e8e84224d3e1",
         "words": [
           "fact",
           "a",
@@ -37806,7 +37806,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "factor: a schema.org component word, fused from MedicalRiskFactor, includedRiskFactor, riskFactor",
-        "uuid": "10d023ea-4e0f-80a9-9029-508e83fc3c39",
+        "uuid": "e352b342-4b88-857e-87d1-248c16da7869",
         "words": [
           "factor",
           "a",
@@ -38028,7 +38028,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "fallback: a schema.org component word, fused from isUnlabelledFallback",
-        "uuid": "67fce372-3c10-8051-bc76-a3e882c3770a",
+        "uuid": "a4490265-c261-8859-918d-6605b03f5f6b",
         "words": [
           "fallback",
           "a",
@@ -38141,7 +38141,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "faq: a schema.org component word, fused from FAQPage",
-        "uuid": "45c25612-694d-8a69-b7ca-dd91aaa69e4b",
+        "uuid": "1d5836db-f374-85be-a894-926f08813204",
         "words": [
           "faq",
           "a",
@@ -38177,7 +38177,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "fast: a schema.org component word, fused from FastFoodRestaurant",
-        "uuid": "3169bf90-33e0-873f-905e-2c18237aa50f",
+        "uuid": "b94ddb2f-19ab-82e7-8dc4-74bd31770b01",
         "words": [
           "fast",
           "a",
@@ -38213,7 +38213,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "fat: a schema.org component word, fused from fatContent, saturatedFatContent, transFatContent, unsaturatedFatContent",
-        "uuid": "7b96cb30-4ba6-8921-a5f8-6b87266d209c",
+        "uuid": "c9a416cf-10b0-89e9-9212-b6538ee1a463",
         "words": [
           "fat",
           "a",
@@ -38252,7 +38252,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "fax: a schema.org component word, fused from faxNumber",
-        "uuid": "492d2334-b887-84d2-9287-9876a33f01aa",
+        "uuid": "e3a04137-7712-8fb0-8a83-2400463b376c",
         "words": [
           "fax",
           "a",
@@ -38288,7 +38288,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "feature: a schema.org component word, fused from LocationFeatureSpecification, accessibilityFeature, amenityFeature, featureList",
-        "uuid": "c97cfea4-7590-8b27-87d3-e7e91bc7957b",
+        "uuid": "87730838-57b9-8065-8599-25f1baf61209",
         "words": [
           "feature",
           "a",
@@ -38327,7 +38327,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "featured: a schema.org component word, fused from workFeatured",
-        "uuid": "3a0bbf22-039f-84de-a94e-6b21d02d16f1",
+        "uuid": "b1282a9c-1ecd-883a-ad0e-22bedb68045d",
         "words": [
           "featured",
           "a",
@@ -38363,7 +38363,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "features: a schema.org component word, fused from dietFeatures",
-        "uuid": "906c08f1-7ea9-8e17-8c94-6dbbce8a99d0",
+        "uuid": "a828a5d8-0951-8fa2-8246-ab01916d3395",
         "words": [
           "features",
           "a",
@@ -38460,7 +38460,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "fee: a schema.org component word, fused from restockingFee",
-        "uuid": "0fab09b5-b83e-818d-be7e-95e7a712ca2c",
+        "uuid": "63bed7bc-103e-81c9-a171-7a0e14563c9a",
         "words": [
           "fee",
           "a",
@@ -38496,7 +38496,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "feed: a schema.org component word, fused from CompleteDataFeed, DataFeed, DataFeedItem, dataFeedElement, webFeed",
-        "uuid": "73419539-4a4c-86a0-b02c-8d0d60a49804",
+        "uuid": "7dd80167-1288-85b3-ba87-ba88af953c42",
         "words": [
           "feed",
           "a",
@@ -38588,7 +38588,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "fees: a schema.org component word, fused from ReturnFeesEnumeration, customerRemorseReturnFees, customerRemorseReturnShippingFeesAmount, feesAndCommissionsSpecification, itemDefectReturnFees, itemDefe",
-        "uuid": "0d975643-6e98-8c22-a061-058d108fc402",
+        "uuid": "1e78b6e2-e3b3-896f-be4e-ff4957b72033",
         "words": [
           "fees",
           "a",
@@ -38730,7 +38730,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Event type: Festival.",
-        "uuid": "00d91ce4-479f-86e9-a67a-7ee4bceda9a8",
+        "uuid": "4e2f18ec-380a-8b5a-9e2d-01816c8ff3b8",
         "words": [
           "event",
           "type",
@@ -38760,7 +38760,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "fiber: a schema.org component word, fused from fiberContent",
-        "uuid": "903d65db-7f84-8d8a-9365-73a510da1339",
+        "uuid": "b6ed56da-03fe-8a78-9a61-797cef0138f2",
         "words": [
           "fiber",
           "a",
@@ -38796,7 +38796,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modelling one field — the singular model of the fields collection (the plural store); one typed attribute of a record schema.",
-        "uuid": "e6ea57d1-d1ae-8e14-9027-ed7183a0315f",
+        "uuid": "9b5ac09b-8746-8a1a-8ad9-007d0ff5b672",
         "words": [
           "use",
           "when",
@@ -38845,7 +38845,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when defining or debugging Payload fields — choosing a field type, shared field props (name, required, index, unique, defaultValue, validate, access, hooks, admin), relationships, arrays/blocks/groups/tabs, selects, or virtual/join fields.",
-        "uuid": "f729f391-fb8d-87fe-a71a-bc132bbaaa20",
+        "uuid": "fd8d0138-165e-8474-a7e0-fc39d0a5f210",
         "words": [
           "use",
           "when",
@@ -38905,7 +38905,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "file: a schema.org component word, fused from fileFormat, fileSize",
-        "uuid": "a0afbfd9-b96b-8ff8-a0d3-7f0becfa1577",
+        "uuid": "a18683bb-490d-8c22-b095-b890d42c830d",
         "words": [
           "file",
           "a",
@@ -38942,7 +38942,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "film: a schema.org component word, fused from FilmAction",
-        "uuid": "fdc1a45e-a108-809a-b58f-d3639fab2b65",
+        "uuid": "d48c1daa-280b-8810-bcb6-f8ae815c25ac",
         "words": [
           "film",
           "a",
@@ -38978,7 +38978,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "financial: a schema.org component word, fused from FinancialIncentive, FinancialProduct, FinancialService, financialAidEligible",
-        "uuid": "9ed0f0a2-ca1a-8f78-b695-7e5e7c3917a1",
+        "uuid": "36a71920-908d-8689-aac0-b2eb872f3495",
         "words": [
           "financial",
           "a",
@@ -39083,7 +39083,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "find: a schema.org component word, fused from FindAction",
-        "uuid": "628735a3-486b-87c0-93bd-56a8d2b2f5f9",
+        "uuid": "a3d147bd-f2d8-856c-913e-29f75b5982c1",
         "words": [
           "find",
           "a",
@@ -39171,7 +39171,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "fire: a schema.org component word, fused from FireStation",
-        "uuid": "4c8a8e97-ccb4-89e9-aa64-559f631c1d8b",
+        "uuid": "570e506c-220e-88d4-881e-78c46edfb9bd",
         "words": [
           "fire",
           "a",
@@ -39207,7 +39207,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "first: a schema.org component word, fused from dateVehicleFirstRegistered, firstAppearance, firstPerformance",
-        "uuid": "c9370d61-2314-8810-9506-9acf33354ad6",
+        "uuid": "46b4c854-10ee-8316-b4d6-608fc093b33a",
         "words": [
           "first",
           "a",
@@ -40201,7 +40201,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Data type: Floating number.",
-        "uuid": "9c15ad52-4f34-83b0-8f50-694edfe5a64b",
+        "uuid": "32930ae0-cd85-82f9-8155-3d45fca95094",
         "words": [
           "data",
           "type",
@@ -40232,7 +40232,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "floor: a schema.org component word, fused from FloorPlan, accommodationFloorPlan, floorLevel, floorLimit, floorSize",
-        "uuid": "ec240d2d-295a-8356-98e4-a95eddd9e7ed",
+        "uuid": "78aa6e19-b198-8cbc-9291-0eafe4dd1e50",
         "words": [
           "floor",
           "a",
@@ -40355,7 +40355,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "fm: a schema.org component word, fused from FMRadioChannel",
-        "uuid": "20390c63-48a9-8dad-b972-e3d11625acfa",
+        "uuid": "5cc3dca4-f147-8bd9-af6d-2f1ac93e18e6",
         "words": [
           "fm",
           "a",
@@ -40463,7 +40463,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "follow: a schema.org component word, fused from FollowAction",
-        "uuid": "e32c4f50-92df-8933-8760-ad81a1ee2c74",
+        "uuid": "19de3d45-cd5a-8fdf-9d2f-af170e3084b8",
         "words": [
           "follow",
           "a",
@@ -40608,7 +40608,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "food: a schema.org component word, fused from FastFoodRestaurant, FoodEstablishment, FoodEstablishmentReservation, FoodEvent, FoodService, foodEstablishment",
-        "uuid": "db39c2f1-58d8-8be7-9143-bc19961ce550",
+        "uuid": "d5baacab-891b-828e-84e3-956b3ab4efd1",
         "words": [
           "food",
           "a",
@@ -40649,7 +40649,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "footer: a schema.org component word, fused from WPFooter",
-        "uuid": "a0513b8d-8e2d-89b2-a728-25159313c82d",
+        "uuid": "e9d8c117-cccf-86c9-bb8f-072e7da07456",
         "words": [
           "footer",
           "a",
@@ -40685,7 +40685,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "force: a schema.org component word, fused from LegalForceStatus, legislationLegalForce",
-        "uuid": "141dfe28-4e68-8871-8aa7-3c23e86bfc8a",
+        "uuid": "b4f0df8b-f8dd-8036-9bd0-d7a24a75e0ce",
         "words": [
           "force",
           "a",
@@ -40908,7 +40908,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "form: a schema.org component word, fused from dosageForm, loanRepaymentForm, musicCompositionForm",
-        "uuid": "b64f898b-ca99-8814-9be4-759567c9ae30",
+        "uuid": "febea360-3f70-86c7-870c-a83e4bf7f43f",
         "words": [
           "form",
           "a",
@@ -40946,7 +40946,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "format: a schema.org component word, fused from BookFormatType, MusicReleaseFormatType, bookFormat, encodingFormat, fileFormat, musicReleaseFormat",
-        "uuid": "54098aa1-1b49-8e79-b2c8-e65d3e8097a8",
+        "uuid": "35cb6fdd-1945-8fa4-b7e8-d337d76af639",
         "words": [
           "format",
           "a",
@@ -40987,7 +40987,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "formula: a schema.org component word, fused from molecularFormula",
-        "uuid": "135f1a8a-e660-8463-b6e9-7f7882a2a061",
+        "uuid": "bfe32cd9-077f-8766-992f-7dfa86fff36f",
         "words": [
           "formula",
           "a",
@@ -41023,7 +41023,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "formulary: a schema.org component word, fused from HealthPlanFormulary, includesHealthPlanFormulary",
-        "uuid": "d61a58a3-db8d-81a3-bec2-dd05c1adb73b",
+        "uuid": "9264a6cd-15c0-8cf8-812e-a836ff83cfea",
         "words": [
           "formulary",
           "a",
@@ -41060,7 +41060,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "forum: a schema.org component word, fused from DiscussionForumPosting",
-        "uuid": "809a8420-f900-8882-bae3-02b5629219bb",
+        "uuid": "e27d840b-0c06-8156-b30c-6e5c1efa4cbe",
         "words": [
           "forum",
           "a",
@@ -41096,7 +41096,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "forward: a schema.org component word, fused from numberOfForwardGears",
-        "uuid": "80969a61-0d2c-8a1b-9cad-6e3986f99b12",
+        "uuid": "4a988c84-5537-82b9-9fff-5f93fefc044c",
         "words": [
           "forward",
           "a",
@@ -41200,7 +41200,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "founding: a schema.org component word, fused from foundingDate, foundingLocation",
-        "uuid": "fb239132-2369-8c5d-9923-6e4f59f47944",
+        "uuid": "3bb32e69-f14d-8bcc-a43b-0fceaf1d999d",
         "words": [
           "founding",
           "a",
@@ -41300,7 +41300,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "frame: a schema.org component word, fused from videoFrameSize",
-        "uuid": "194675aa-1dc6-8a44-80c7-a8a8b9f2136e",
+        "uuid": "029f1985-c793-80bb-82a3-e0dbf0842ad8",
         "words": [
           "frame",
           "a",
@@ -41336,7 +41336,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "framework: a schema.org component word, fused from educationalFramework",
-        "uuid": "ae28e615-cf21-8228-b531-9936bdd529d6",
+        "uuid": "dc743595-5611-8eae-bd0b-c313df39317a",
         "words": [
           "framework",
           "a",
@@ -41535,7 +41535,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "friendly: a schema.org component word, fused from isFamilyFriendly",
-        "uuid": "ef9e0088-327c-8aa7-a7a3-579c18c67c5d",
+        "uuid": "310a8f54-0c61-81d9-9a6f-6899d9c56363",
         "words": [
           "friendly",
           "a",
@@ -41653,7 +41653,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "fuel: a schema.org component word, fused from fuelCapacity, fuelConsumption, fuelEfficiency, fuelType",
-        "uuid": "9ba7a7b6-c045-879c-9e62-ff2b8df00006",
+        "uuid": "eafec68d-7404-886c-9710-0210ce0a3f56",
         "words": [
           "fuel",
           "a",
@@ -41692,7 +41692,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "fulfillment: a schema.org component word, fused from FulfillmentTypeEnumeration, fulfillmentType",
-        "uuid": "6fa612c0-4f54-8c45-a842-f7f5311b046d",
+        "uuid": "05b07fa2-2795-876d-939d-d25c36e0f044",
         "words": [
           "fulfillment",
           "a",
@@ -41729,7 +41729,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "full: a schema.org component word, fused from numberOfFullBathrooms",
-        "uuid": "47381f04-c3e8-8727-bb31-4ba4adc92a9c",
+        "uuid": "07e9e774-e29d-8e2c-914d-f845824d9e86",
         "words": [
           "full",
           "a",
@@ -41765,7 +41765,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "function: a schema.org component word, fused from BusinessFunction, businessFunction, hasMolecularFunction",
-        "uuid": "c61517a7-7460-8500-b236-6ad89ea2404d",
+        "uuid": "9fe78f78-f14b-8e0c-86b3-05b86c747d54",
         "words": [
           "function",
           "a",
@@ -41803,7 +41803,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "functional: a schema.org component word, fused from functionalClass",
-        "uuid": "e91ac7aa-8766-80f8-8452-835602f931f9",
+        "uuid": "168c0a35-e0c9-8849-ab12-3c23244167ef",
         "words": [
           "functional",
           "a",
@@ -41839,7 +41839,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "fund: a schema.org component word, fused from InvestmentFund",
-        "uuid": "a1ab6ad5-e702-866d-b417-9f5aa5b15403",
+        "uuid": "72f28e2f-c984-888f-b9bb-63abe1cdf2c9",
         "words": [
           "fund",
           "a",
@@ -41875,7 +41875,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "funded: a schema.org component word, fused from fundedItem",
-        "uuid": "9ea2355e-6345-86fe-8889-8620701f6e90",
+        "uuid": "6c95f333-1d9b-84a4-98ac-83aeaaf6f505",
         "words": [
           "funded",
           "a",
@@ -42045,7 +42045,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "furniture: a schema.org component word, fused from FurnitureStore",
-        "uuid": "99fdfe72-43f2-8b44-8af3-6632f6c615aa",
+        "uuid": "24f0c4fa-652c-8df7-b3cd-023bebe3eab6",
         "words": [
           "furniture",
           "a",
@@ -42307,7 +42307,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "gallery: a schema.org component word, fused from ArtGallery, ImageGallery, MediaGallery, VideoGallery",
-        "uuid": "e93787ad-0af0-82a1-b65d-422dceb834cd",
+        "uuid": "28cdf920-12d4-8d05-9bb6-4722e4afb802",
         "words": [
           "gallery",
           "a",
@@ -42346,7 +42346,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "The Game type represents things which are games. These are typically rule-governed recreational activities, e.g. role-playing games in which players assume the role of characters in a fictional settin",
-        "uuid": "1485de9d-725e-81c8-820d-7e281f6fa0f2",
+        "uuid": "35193fc5-8e53-84c0-96b6-9dbae986470a",
         "words": [
           "the",
           "game",
@@ -42405,7 +42405,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "garden: a schema.org component word, fused from GardenStore",
-        "uuid": "8f26c325-9173-89aa-a9f0-c2ffca3f9dd7",
+        "uuid": "028cc91d-0b13-880b-8d93-5ca7dcccc838",
         "words": [
           "garden",
           "a",
@@ -42441,7 +42441,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "gas: a schema.org component word, fused from GasStation",
-        "uuid": "5ec3e570-0847-8c49-b438-682a013b1e8d",
+        "uuid": "312ebdaa-135a-8d22-924c-313a4366f692",
         "words": [
           "gas",
           "a",
@@ -42543,7 +42543,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "gated: a schema.org component word, fused from GatedResidenceCommunity",
-        "uuid": "f0d640b6-dc04-802e-9dde-f5052d65b3c2",
+        "uuid": "e03c801c-8087-830b-a0f8-ff5a09df0f0e",
         "words": [
           "gated",
           "a",
@@ -42579,7 +42579,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "gears: a schema.org component word, fused from numberOfForwardGears",
-        "uuid": "5cf95f48-6e25-8375-823c-92be1587b4d2",
+        "uuid": "e2f593ec-cd4b-80cd-b0c9-18ddb95e4b01",
         "words": [
           "gears",
           "a",
@@ -42615,7 +42615,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Gender of something, typically a Person, but possibly also fictional characters, animals, etc. While https://schema.org/Male and https://schema.org/Female may be used, text strings are also acceptable",
-        "uuid": "b0dcdb14-f7cb-80e7-90d0-9d62452f7a43",
+        "uuid": "605b51c8-36af-81e5-b176-17dcb5de9a00",
         "words": [
           "gender",
           "of",
@@ -42731,7 +42731,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "general: a schema.org component word, fused from GeneralContractor",
-        "uuid": "c8daf0d0-e425-8fa1-beec-d0a144f1f62c",
+        "uuid": "94723113-2d28-837c-8a7e-97ac85d3e01c",
         "words": [
           "general",
           "a",
@@ -42836,7 +42836,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "generically: a schema.org component word, fused from isAvailableGenerically",
-        "uuid": "b85ca573-fd41-881f-aaf1-7c0b026fa36e",
+        "uuid": "c6082d5c-513d-86b9-98ee-0cf0cf70ddac",
         "words": [
           "generically",
           "a",
@@ -42941,7 +42941,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "geographic: a schema.org component word, fused from geographicArea",
-        "uuid": "30103d30-2c73-8f63-9968-b6243d440ac4",
+        "uuid": "ee873459-2fe4-86be-8e40-6149ec10a8af",
         "words": [
           "geographic",
           "a",
@@ -42977,7 +42977,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "geometry: a schema.org component word, fused from GeospatialGeometry",
-        "uuid": "a8c6391a-fe81-8610-bf58-10f1f5777fc6",
+        "uuid": "852e9cf3-0e94-85fb-85c3-e796e9a245b8",
         "words": [
           "geometry",
           "a",
@@ -43013,7 +43013,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "geospatial: a schema.org component word, fused from GeospatialGeometry",
-        "uuid": "1beb4dca-f820-8bc7-8f56-38d77a98386e",
+        "uuid": "035fc161-84c2-8928-9bb7-c50b353bc7ed",
         "words": [
           "geospatial",
           "a",
@@ -43049,7 +43049,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "getting: a schema.org component word, fused from gettingTestedInfo",
-        "uuid": "c9126093-a56c-80aa-80b3-2aa141e47b78",
+        "uuid": "93cc2898-d122-89c7-98ba-3fa876df1742",
         "words": [
           "getting",
           "a",
@@ -43218,7 +43218,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "given: a schema.org component word, fused from givenName",
-        "uuid": "dde93dc2-3b88-8e5b-b7fe-13c9c615adf1",
+        "uuid": "1293a193-def2-85ca-ae48-da1e6abe4d54",
         "words": [
           "given",
           "a",
@@ -43397,7 +43397,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when importing or matching bank statements (CSV, OFX, API) against journal entries for reconciliation — opening/closing balance, transaction lines, match type, variance; feeds account-reconciliations and IAS-7 cash-flow GL. The bank-statements import collection.",
-        "uuid": "03dd741c-543e-890b-a2ad-4a60db218bbd",
+        "uuid": "14d3605f-1db0-8f12-a753-020c68aaef20",
         "words": [
           "use",
           "when",
@@ -43664,7 +43664,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when configuring GL account metadata for double-entry validation — account type (asset/liability/equity/revenue/expense), normal polarity (debit/credit), balance-sheet vs P&L category, reconciliation frequency, cash-flow relevance, period-end close flag. The gl-posting-rules validation-metadata collection.",
-        "uuid": "9bf90f5b-090a-8d07-93c1-c7f4987bf7bb",
+        "uuid": "0c66945a-8c93-8219-893e-382cda98bf8d",
         "words": [
           "use",
           "when",
@@ -43734,7 +43734,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "global: a schema.org component word, fused from globalLocationNumber",
-        "uuid": "3094de38-561b-8d25-9e05-516082e183af",
+        "uuid": "b03a413d-96a0-8bdd-859d-fc120abfd6ae",
         "words": [
           "global",
           "a",
@@ -43770,7 +43770,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "golf: a schema.org component word, fused from GolfCourse",
-        "uuid": "6650de2a-a379-81fe-bda1-658a8ef2b665",
+        "uuid": "1c6035d6-9908-880a-903e-20002bd4d17f",
         "words": [
           "golf",
           "a",
@@ -43806,7 +43806,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "good: a schema.org component word, fused from amountOfThisGood, typeOfGood",
-        "uuid": "6a591ec5-e355-88d1-90e0-2c8e003aea51",
+        "uuid": "fb7a26c2-04e5-801f-b85d-54a89ffc5c11",
         "words": [
           "good",
           "a",
@@ -43843,7 +43843,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "goods: a schema.org component word, fused from HomeGoodsStore, SportingGoodsStore",
-        "uuid": "a3811d35-3ad5-8f37-9d43-6b17f03eb71a",
+        "uuid": "563c3a02-63ba-836e-9eb4-3da69927a676",
         "words": [
           "goods",
           "a",
@@ -44137,7 +44137,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "government: a schema.org component word, fused from GovernmentBenefitsType, GovernmentBuilding, GovernmentOffice, GovernmentOrganization, GovernmentPermit, GovernmentService",
-        "uuid": "451ee546-3e8c-80ae-9a14-3bb223435b8a",
+        "uuid": "2b6c1b2e-1905-81ed-b261-d2962f2516e7",
         "words": [
           "government",
           "a",
@@ -44762,7 +44762,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "grocery: a schema.org component word, fused from GroceryStore",
-        "uuid": "abb03eb2-2f8e-89ae-ac4c-0ca5e77962ee",
+        "uuid": "b3fbe11e-0945-8e9a-9a2c-4dd7093dcfbf",
         "words": [
           "grocery",
           "a",
@@ -44798,7 +44798,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "group: a schema.org component word, fused from DanceGroup, MusicGroup, PerformingGroup, ProductGroup, SizeGroupEnumeration, TheaterGroup",
-        "uuid": "a36cf88f-ca26-8cfe-8234-49a7780c23eb",
+        "uuid": "aa8c8d43-d630-81ad-95bf-614f71edcad7",
         "words": [
           "group",
           "a",
@@ -44839,7 +44839,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "gs: a schema.org component word, fused from hasGS1DigitalLink",
-        "uuid": "cfc35b4a-7b7c-8427-8561-fd1114f9094b",
+        "uuid": "ee3f4ed2-15bf-84b6-beff-b85c6fda1c5f",
         "words": [
           "gs",
           "a",
@@ -44934,7 +44934,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "guests: a schema.org component word, fused from additionalNumberOfGuests",
-        "uuid": "d719caf5-f37c-867d-b5b2-9b0fca2a7fde",
+        "uuid": "2387e24e-ad43-88ef-9724-766bf2477b1b",
         "words": [
           "guests",
           "a",
@@ -45067,7 +45067,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "guidelines: a schema.org component word, fused from newsUpdatesAndGuidelines, quarantineGuidelines",
-        "uuid": "8aa3f58e-aeba-8608-960a-9de982f772d3",
+        "uuid": "b50b4653-16f8-861f-b93b-1a96e24bd158",
         "words": [
           "guidelines",
           "a",
@@ -45104,7 +45104,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "gym: a schema.org component word, fused from ExerciseGym",
-        "uuid": "8effaeaa-70ba-8d82-805a-f25a38fce13f",
+        "uuid": "0609016e-95a4-895f-991b-eeb2b448765b",
         "words": [
           "gym",
           "a",
@@ -45249,7 +45249,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "hair: a schema.org component word, fused from HairSalon",
-        "uuid": "dccd32e3-25a3-8607-ae2f-35b368016ffb",
+        "uuid": "18583635-3e5e-8f13-b629-924753fb8c03",
         "words": [
           "hair",
           "a",
@@ -45285,7 +45285,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "hall: a schema.org component word, fused from CityHall",
-        "uuid": "1f71215d-6d89-8439-a5e1-f2f7a80025cd",
+        "uuid": "12d8233e-9048-8704-8d7e-468510c0c05b",
         "words": [
           "hall",
           "a",
@@ -45321,7 +45321,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "handling: a schema.org component word, fused from handlingTime",
-        "uuid": "839ff0e8-1bfc-8794-b860-bb7349df71e2",
+        "uuid": "b88f979f-5fda-8894-8cb9-c89871b712af",
         "words": [
           "handling",
           "a",
@@ -45502,7 +45502,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "hardware: a schema.org component word, fused from HardwareStore",
-        "uuid": "d4741899-bb7d-8e5e-a6ef-9a43694e7508",
+        "uuid": "18ae7db4-aba3-8126-b982-9249b3fbc4b0",
         "words": [
           "hardware",
           "a",
@@ -45706,7 +45706,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "has: a schema.org component word, fused from hasAdultConsideration, hasBioChemEntityPart, hasBioPolymerSequence, hasBroadcastChannel, hasCategoryCode, hasCertification",
-        "uuid": "5fe4a9c4-74ad-8e3d-a2f2-0ff27e596159",
+        "uuid": "c3186e21-5a5b-8229-84e2-8e96320944d2",
         "words": [
           "has",
           "a",
@@ -45747,7 +45747,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "hazard: a schema.org component word, fused from accessibilityHazard",
-        "uuid": "c7efff34-4874-8dc8-893a-d6837bbda5fb",
+        "uuid": "8749bbb7-2340-827f-ad5f-c0fb186ab840",
         "words": [
           "hazard",
           "a",
@@ -45783,7 +45783,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "header: a schema.org component word, fused from WPHeader",
-        "uuid": "df54df6a-d295-8679-9e5c-040722282dfe",
+        "uuid": "08665405-c026-8c24-9e62-cdb4ba3de168",
         "words": [
           "header",
           "a",
@@ -45904,7 +45904,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "healthcare: a schema.org component word, fused from healthcareReportingData",
-        "uuid": "fab0a52b-1d6f-8391-922f-ed76c4f1fd04",
+        "uuid": "1532a8ea-8350-800c-8fef-44562cdfa2df",
         "words": [
           "healthcare",
           "a",
@@ -46025,7 +46025,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "held: a schema.org component word, fused from archiveHeld",
-        "uuid": "12450bf7-dc38-86e0-84df-2f87f877d003",
+        "uuid": "7b43f0cc-3602-8d17-b50e-c7a290d7f29f",
         "words": [
           "held",
           "a",
@@ -46141,7 +46141,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "help: a schema.org component word, fused from softwareHelp",
-        "uuid": "cb06b2cc-76d1-8c14-a539-eb323171f668",
+        "uuid": "973efe1e-d061-8362-9151-874755a92ab0",
         "words": [
           "help",
           "a",
@@ -46247,7 +46247,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "high: a schema.org component word, fused from HighSchool, highPrice",
-        "uuid": "c6ff851f-d7e8-82cc-b9be-ac4b232b8534",
+        "uuid": "b2419d8f-635a-8269-a02e-ee92472d798a",
         "words": [
           "high",
           "a",
@@ -46284,7 +46284,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "hindu: a schema.org component word, fused from HinduTemple",
-        "uuid": "7f84d303-e2c9-8802-b4be-9ab4af073689",
+        "uuid": "ecc79c95-606a-8ea2-8be5-1a4c84c2b3d0",
         "words": [
           "hindu",
           "a",
@@ -46320,7 +46320,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "hiring: a schema.org component word, fused from hiringOrganization",
-        "uuid": "bcbe3545-2345-85db-9e99-c1161e710b84",
+        "uuid": "b70dd7c1-cc6c-8888-babd-7ec7da79efaa",
         "words": [
           "hiring",
           "a",
@@ -46356,7 +46356,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "historical: a schema.org component word, fused from LandmarksOrHistoricalBuildings, totalHistoricalEnrollment",
-        "uuid": "2b5f49cb-5874-84b8-9d0b-aa5abc5a7577",
+        "uuid": "e17ec732-75f8-8d5b-b374-cbf18fb95a48",
         "words": [
           "historical",
           "a",
@@ -46473,7 +46473,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "ho: a schema.org component word, fused from cvdNumC19HOPats",
-        "uuid": "e7a694b6-ba8e-8d68-bc68-e6beb256427b",
+        "uuid": "6cae3456-0299-8e5f-82fc-7f2980a32f44",
         "words": [
           "ho",
           "a",
@@ -46509,7 +46509,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "hobby: a schema.org component word, fused from HobbyShop",
-        "uuid": "1faa2c29-5969-8129-b5c8-60c25991a4c3",
+        "uuid": "c4d68e1e-a90b-8917-8d77-91ddd6e8007b",
         "words": [
           "hobby",
           "a",
@@ -46545,7 +46545,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "holder: a schema.org component word, fused from copyrightHolder",
-        "uuid": "74f0ae9b-5b2c-8930-af46-7f4305e0a340",
+        "uuid": "44edb167-f078-8556-9632-98c5697efd7e",
         "words": [
           "holder",
           "a",
@@ -46581,7 +46581,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "holding: a schema.org component word, fused from holdingArchive",
-        "uuid": "950ddfd9-fe81-8e36-a468-be42836da126",
+        "uuid": "37439afc-ad99-83c9-be7f-ad5d10209ef0",
         "words": [
           "holding",
           "a",
@@ -46699,7 +46699,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "home: a schema.org component word, fused from HomeAndConstructionBusiness, HomeGoodsStore, homeLocation, homeTeam",
-        "uuid": "f562b344-873b-80b3-90dd-4cae3fdc98fa",
+        "uuid": "e8fdbad9-67a6-8ee0-b86d-1b1edda0b3a5",
         "words": [
           "home",
           "a",
@@ -46738,7 +46738,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "honorific: a schema.org component word, fused from honorificPrefix, honorificSuffix",
-        "uuid": "85f83b38-d4f6-82d3-a4c9-a49531f80e53",
+        "uuid": "81b5dc7e-d7b6-8c96-b532-5641ca8b4d85",
         "words": [
           "honorific",
           "a",
@@ -47434,7 +47434,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "hosp: a schema.org component word, fused from cvdNumC19HospPats",
-        "uuid": "3d1da4bd-55e7-8099-9c29-e76c468221ab",
+        "uuid": "a3e439ea-c1ae-8b67-b799-03d530abf2ee",
         "words": [
           "hosp",
           "a",
@@ -47499,7 +47499,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "A hostel - cheap accommodation, often in shared dormitories. See also the dedicated document on the use of schema.org for marking up hotels and other forms of accommodations.",
-        "uuid": "d273fc25-5a0b-8326-8e64-830509a4cebb",
+        "uuid": "5195dbfa-7405-8866-b3a0-0e23d4b00a00",
         "words": [
           "a",
           "hostel",
@@ -47554,7 +47554,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "hosting: a schema.org component word, fused from hostingOrganization",
-        "uuid": "46809ed5-d8e2-8c37-bfd2-8d760e64d5c7",
+        "uuid": "d56da0db-ff65-8378-b478-7c27a4eb509d",
         "words": [
           "hosting",
           "a",
@@ -47650,7 +47650,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "hours: a schema.org component word, fused from OpeningHoursSpecification, hoursAvailable, openingHours, openingHoursSpecification, specialOpeningHoursSpecification, workHours",
-        "uuid": "fe9a5c96-732e-86d7-8f66-287de7c47cfd",
+        "uuid": "0d600f18-b751-8296-ad6e-509f362d9b67",
         "words": [
           "hours",
           "a",
@@ -47792,7 +47792,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "http: a schema.org component word, fused from httpMethod",
-        "uuid": "66a960a1-9c29-890a-a288-6c2f0b1e153b",
+        "uuid": "044c55b2-0dc1-81a9-9bc8-fbed4ce4680e",
         "words": [
           "http",
           "a",
@@ -47828,7 +47828,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "hvac: a schema.org component word, fused from HVACBusiness",
-        "uuid": "c546bf77-60ed-8cb2-8633-384b292b9a70",
+        "uuid": "ece1b108-b96c-8deb-8ad9-63dff8183da5",
         "words": [
           "hvac",
           "a",
@@ -47864,7 +47864,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "hyper: a schema.org component word, fused from HyperToc, HyperTocEntry",
-        "uuid": "4697c9c1-5c75-8f1c-8aa5-b049436121c3",
+        "uuid": "8a4eb463-eb18-8d6c-90c3-b78a58f0aecd",
         "words": [
           "hyper",
           "a",
@@ -47901,7 +47901,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "iata: a schema.org component word, fused from iataCode",
-        "uuid": "031c2ccf-0bc3-8b84-9bf5-ac7fc6e53551",
+        "uuid": "48317adb-befd-832d-910c-0cfb8f4f9b29",
         "words": [
           "iata",
           "a",
@@ -47937,7 +47937,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "icao: a schema.org component word, fused from icaoCode",
-        "uuid": "f52d8d6e-f322-844e-82fc-78ffbe3381ae",
+        "uuid": "e1a17a80-0af9-8bf5-bdac-14055cde7418",
         "words": [
           "icao",
           "a",
@@ -47973,7 +47973,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "ice: a schema.org component word, fused from IceCreamShop",
-        "uuid": "0bcf280a-3a3a-808d-9274-92d2b371dc7f",
+        "uuid": "803ad01d-e796-8a9c-b375-85bfcb3f908c",
         "words": [
           "ice",
           "a",
@@ -48009,7 +48009,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "icu: a schema.org component word, fused from cvdNumICUBeds, cvdNumICUBedsOcc",
-        "uuid": "6f031049-58d6-89f8-a7cf-0d4d7d484f75",
+        "uuid": "879c257d-5d72-8d90-8678-41408f0a62fe",
         "words": [
           "icu",
           "a",
@@ -48163,7 +48163,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "identification: a schema.org component word, fused from certificationIdentification, vehicleIdentificationNumber",
-        "uuid": "f0016d71-852d-8034-9d9f-4148ead04425",
+        "uuid": "ff21c9f3-2ee6-8402-a8fc-fa1313192abc",
         "words": [
           "identification",
           "a",
@@ -48200,7 +48200,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "identifying: a schema.org component word, fused from identifyingExam, identifyingTest",
-        "uuid": "6b827a17-6835-8643-b2fe-4c0315753098",
+        "uuid": "55868eb8-38e1-8fae-b7af-b1d88d93dc62",
         "words": [
           "identifying",
           "a",
@@ -48465,7 +48465,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "ignore: a schema.org component word, fused from IgnoreAction",
-        "uuid": "efbf53cc-f053-84f1-af01-63a4749c5ecc",
+        "uuid": "18fc8ca9-ca01-8d5b-b4d0-5177891aa798",
         "words": [
           "ignore",
           "a",
@@ -48575,7 +48575,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "imaging: a schema.org component word, fused from ImagingTest, MedicalImagingTechnique, imagingTechnique",
-        "uuid": "f8aa1a22-6322-87e0-9d62-c2d9f7c2ed03",
+        "uuid": "32f1ce63-3d19-8a67-8f0e-ce85f5d0ecb7",
         "words": [
           "imaging",
           "a",
@@ -48613,7 +48613,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "immediate: a schema.org component word, fused from jobImmediateStart",
-        "uuid": "681b788b-bf93-8899-9344-2fb03e298887",
+        "uuid": "2b578f93-d215-8b43-a1e7-369ea92b8f70",
         "words": [
           "immediate",
           "a",
@@ -48703,7 +48703,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "implementation: a schema.org component word, fused from legislationEnsuresImplementationOf",
-        "uuid": "2145b9e5-d294-8588-b98e-992763b198d4",
+        "uuid": "b5b8b2e9-fa4c-83e8-8444-78ed0cc06f88",
         "words": [
           "implementation",
           "a",
@@ -48739,7 +48739,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "imprint: a schema.org component word, fused from publisherImprint",
-        "uuid": "5aca72eb-e4a9-8217-bdf5-d1b194f70c5e",
+        "uuid": "896610e0-18ba-83d8-a2cc-c18ee6138bde",
         "words": [
           "imprint",
           "a",
@@ -48775,7 +48775,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "incentive: a schema.org component word, fused from FinancialIncentive, IncentiveQualifiedExpenseType, IncentiveStatus, IncentiveType, incentiveAmount, incentiveCompensation",
-        "uuid": "65ae8705-fcf7-8460-8b66-c6e9d8f2abca",
+        "uuid": "c4a038b9-0e85-8143-b129-ab84794ea666",
         "words": [
           "incentive",
           "a",
@@ -48853,7 +48853,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "incentivized: a schema.org component word, fused from incentivizedItem",
-        "uuid": "597ad90a-6e73-8626-a52b-4eb203e6f518",
+        "uuid": "5f02c484-7951-8965-84b2-7434c9f05a0a",
         "words": [
           "incentivized",
           "a",
@@ -48940,7 +48940,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "included: a schema.org component word, fused from includedComposition, includedDataCatalog, includedInDataCatalog, includedInHealthInsurancePlan, includedRiskFactor, valueAddedTaxIncluded",
-        "uuid": "b61b149d-fb88-8486-98fd-05b75d041133",
+        "uuid": "f2342a5f-a4d4-8718-85fb-b747ef3fa0d6",
         "words": [
           "included",
           "a",
@@ -48981,7 +48981,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "includes: a schema.org component word, fused from domainIncludes, includesAttraction, includesHealthPlanFormulary, includesHealthPlanNetwork, includesObject, rangeIncludes",
-        "uuid": "5ee034e6-1d3f-8c7d-8cb9-d061a97788ef",
+        "uuid": "e62cb26b-253c-8f7a-ad10-06d30b2696b4",
         "words": [
           "includes",
           "a",
@@ -49022,7 +49022,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "income: a schema.org component word, fused from incomeLimit",
-        "uuid": "c9267e10-7712-8fde-868a-fd3056a95218",
+        "uuid": "afc08f0c-28da-8b2b-921b-4ef197662591",
         "words": [
           "income",
           "a",
@@ -49089,7 +49089,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "increases: a schema.org component word, fused from increasesRiskOf",
-        "uuid": "aa9af476-152c-8050-b564-2d9c84fe999c",
+        "uuid": "634126f9-af5a-81bb-ace7-8b3d9fd965fa",
         "words": [
           "increases",
           "a",
@@ -49125,7 +49125,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "increment: a schema.org component word, fused from billingIncrement",
-        "uuid": "9801d831-325f-8cb0-9cfc-88b31a4da7fb",
+        "uuid": "5cbe2968-4bf5-8958-99ee-c66bf4c38214",
         "words": [
           "increment",
           "a",
@@ -49216,7 +49216,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "indication: a schema.org component word, fused from ApprovedIndication, MedicalIndication, PreventionIndication, TreatmentIndication",
-        "uuid": "8a7b45f0-9349-8334-a31c-74e6f80d68ae",
+        "uuid": "69b1cd53-6f84-8829-b433-be93d022caf1",
         "words": [
           "indication",
           "a",
@@ -49255,7 +49255,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "individual: a schema.org component word, fused from IndividualPhysician, IndividualProduct",
-        "uuid": "e6aa8970-bd1e-8b8e-8a8d-577910017210",
+        "uuid": "e8c48120-5a88-87a8-9b62-9884c7194b91",
         "words": [
           "individual",
           "a",
@@ -49326,7 +49326,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "ineligible: a schema.org component word, fused from ineligibleRegion",
-        "uuid": "37101856-282b-8e75-bc27-47c7d679809c",
+        "uuid": "0c89bd04-26be-86ef-9a3a-401bfbd42d51",
         "words": [
           "ineligible",
           "a",
@@ -49362,7 +49362,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "infectious: a schema.org component word, fused from InfectiousAgentClass, InfectiousDisease, infectiousAgent, infectiousAgentClass",
-        "uuid": "e6449f68-903b-80d6-b461-ce54e87c291b",
+        "uuid": "9b3b1911-eaf5-879a-ae07-e0aa49fae3f5",
         "words": [
           "infectious",
           "a",
@@ -49401,7 +49401,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "inflow: a schema.org component word, fused from accountMinimumInflow",
-        "uuid": "921f8b8a-11f6-83cf-99f9-da9711bbd4d7",
+        "uuid": "7c64606d-36a7-8dff-834d-e5f9cac42cbd",
         "words": [
           "inflow",
           "a",
@@ -49437,7 +49437,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "info: a schema.org component word, fused from OwnershipInfo, diseasePreventionInfo, gettingTestedInfo, governmentBenefitsInfo, ownershipFundingInfo, prescribingInfo",
-        "uuid": "06e13664-5ef7-83cb-b422-a51aa9972f3c",
+        "uuid": "baf70996-136c-8e7d-9914-3126d2415cbe",
         "words": [
           "info",
           "a",
@@ -49478,7 +49478,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "inform: a schema.org component word, fused from InformAction",
-        "uuid": "c330f42f-8ad8-8db2-9044-faf8461b950b",
+        "uuid": "c08532af-f4f2-840f-8220-f0ec40c1d231",
         "words": [
           "inform",
           "a",
@@ -49514,7 +49514,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "information: a schema.org component word, fused from NutritionInformation, TouristInformationCenter",
-        "uuid": "3fb41df5-3e9e-88e0-a5e5-9e2de5f03076",
+        "uuid": "cb8804f8-047d-8e51-a360-2c1c6a747747",
         "words": [
           "information",
           "a",
@@ -49654,7 +49654,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "ingredient: a schema.org component word, fused from activeIngredient, recipeIngredient",
-        "uuid": "6f5bbfa7-37ec-879d-9d91-8b72bd568932",
+        "uuid": "74393a79-4b8b-8643-99e0-f77086100d81",
         "words": [
           "ingredient",
           "a",
@@ -49772,7 +49772,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "insert: a schema.org component word, fused from InsertAction",
-        "uuid": "5c4d40d7-e57f-8da3-9d9f-b0b122709af6",
+        "uuid": "04248727-6e17-85e3-9417-c2e2cd2f1c72",
         "words": [
           "insert",
           "a",
@@ -49895,7 +49895,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "install: a schema.org component word, fused from InstallAction, installUrl",
-        "uuid": "074eaa44-c9bf-8e15-85a4-f0c80bd6afb6",
+        "uuid": "86faa125-2da1-8e0d-9677-74964eec0439",
         "words": [
           "install",
           "a",
@@ -49932,7 +49932,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "instance: a schema.org component word, fused from CourseInstance, hasCourseInstance",
-        "uuid": "2798c384-ae7d-8bca-a1cc-f1b38686738d",
+        "uuid": "866d7ef5-2c50-89f5-9432-84de7d2e431a",
         "words": [
           "instance",
           "a",
@@ -49969,7 +49969,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "instantaneous: a schema.org component word, fused from InstantaneousEvent",
-        "uuid": "c20dfceb-8389-8581-a1b0-cb4948889481",
+        "uuid": "255250b0-a91c-816b-ba52-e0d935f57aa1",
         "words": [
           "instantaneous",
           "a",
@@ -50054,7 +50054,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "instructions: a schema.org component word, fused from recipeInstructions",
-        "uuid": "8025d272-4e91-888d-bd12-0b338340bfed",
+        "uuid": "d77af687-bea7-8669-b484-17bce89f2db7",
         "words": [
           "instructions",
           "a",
@@ -50174,7 +50174,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "insurance: a schema.org component word, fused from HealthInsurancePlan, InsuranceAgency, includedInHealthInsurancePlan",
-        "uuid": "8d2ebcd1-415a-85c6-b4ee-30c9fb464953",
+        "uuid": "8e8f0cfb-513d-830f-9daf-87ff68c49c67",
         "words": [
           "insurance",
           "a",
@@ -50282,7 +50282,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "intake: a schema.org component word, fused from maximumIntake, recommendedIntake",
-        "uuid": "6bf40856-6d68-82d3-bb10-18a1a1d4709d",
+        "uuid": "2936a948-af5a-8a19-adf9-128b29e60526",
         "words": [
           "intake",
           "a",
@@ -50367,7 +50367,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Data type: Integer.",
-        "uuid": "7e88c112-26dc-8746-9cf1-500a91a5538e",
+        "uuid": "dc32c1c5-2069-800b-adb6-4cbbc9152a31",
         "words": [
           "data",
           "type",
@@ -50509,7 +50509,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "interact: a schema.org component word, fused from InteractAction",
-        "uuid": "973a63d2-150e-86da-b0a9-2d521fd49064",
+        "uuid": "70752dd9-e15b-87bf-97a4-8c4a1aa87a8e",
         "words": [
           "interact",
           "a",
@@ -50545,7 +50545,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "interacting: a schema.org component word, fused from interactingDrug",
-        "uuid": "af79f31f-1315-8740-a3dd-67c93df6f07d",
+        "uuid": "3df96e0d-bb13-8f43-ba1d-1b86b76d5872",
         "words": [
           "interacting",
           "a",
@@ -50581,7 +50581,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "interaction: a schema.org component word, fused from InteractionCounter, UserInteraction, agentInteractionStatistic, bioChemInteraction, interactionCount, interactionService",
-        "uuid": "252e21a3-f456-8bda-9fce-66acaacdc261",
+        "uuid": "5803bb02-6697-893a-8a77-c21b6ebdbd8a",
         "words": [
           "interaction",
           "a",
@@ -50622,7 +50622,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "interactivity: a schema.org component word, fused from interactivityType",
-        "uuid": "e394f91a-1870-8e6f-af90-aa3fd4e728b6",
+        "uuid": "942c89e0-020b-816a-ab9a-6355a48286b3",
         "words": [
           "interactivity",
           "a",
@@ -50697,7 +50697,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "interest: a schema.org component word, fused from interestRate",
-        "uuid": "c4f574fb-3630-867d-bff6-ea08a7ed727a",
+        "uuid": "4265d760-0651-8b4c-ba66-08810eca18a5",
         "words": [
           "interest",
           "a",
@@ -50733,7 +50733,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "interior: a schema.org component word, fused from vehicleInteriorColor, vehicleInteriorType",
-        "uuid": "d92dc870-0e58-8807-8582-854371865db4",
+        "uuid": "9c9b8bbc-61fc-8711-b564-e7eb871d1fbb",
         "words": [
           "interior",
           "a",
@@ -51274,7 +51274,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "internet: a schema.org component word, fused from InternetCafe",
-        "uuid": "d77b1b23-7836-801a-a497-4e982ba10ed6",
+        "uuid": "b06f4317-0e99-8339-8e5f-54c426604be8",
         "words": [
           "internet",
           "a",
@@ -51310,7 +51310,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "interpreted: a schema.org component word, fused from interpretedAsClaim",
-        "uuid": "a4f20ae6-1859-8956-a5fa-80d2690154c2",
+        "uuid": "24e07ef9-0ac3-877e-81e6-1baae49ecb1a",
         "words": [
           "interpreted",
           "a",
@@ -51346,7 +51346,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "interpreter: a schema.org component word, fused from claimInterpreter",
-        "uuid": "5a182e60-a6dc-837a-8e2a-de6eef325947",
+        "uuid": "6d2baa3e-12d5-8d2c-8955-365714acda16",
         "words": [
           "interpreter",
           "a",
@@ -51382,7 +51382,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "intersects: a schema.org component word, fused from geoIntersects",
-        "uuid": "4a1b6fa8-49d7-86bc-b800-05344d4b1b7c",
+        "uuid": "f6238a2b-de32-8dac-b7ef-ffcde59f2e44",
         "words": [
           "intersects",
           "a",
@@ -51418,7 +51418,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "interval: a schema.org component word, fused from datasetTimeInterval",
-        "uuid": "bcca05db-86d0-85e3-b6b6-23346a4429e2",
+        "uuid": "1d7e5cd8-35b6-8ac3-9142-4349c32301b5",
         "words": [
           "interval",
           "a",
@@ -51503,7 +51503,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "inventory: a schema.org component word, fused from inventoryLevel",
-        "uuid": "126614bd-14f2-8834-aefd-0b000594ca17",
+        "uuid": "53bd4aad-4166-8fc0-b55c-ab0502dc223c",
         "words": [
           "inventory",
           "a",
@@ -51599,7 +51599,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "investment: a schema.org component word, fused from InvestmentFund, InvestmentOrDeposit",
-        "uuid": "89c9bd2f-d906-8c6e-a255-595b8a4163ae",
+        "uuid": "4d04d6ec-bf82-8e12-ac11-649ec7f25df6",
         "words": [
           "investment",
           "a",
@@ -51636,7 +51636,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "invite: a schema.org component word, fused from InviteAction",
-        "uuid": "05a81b64-2c73-8fee-93b7-be617a8b0e7d",
+        "uuid": "3f493e44-1db7-8b84-8aa4-291f80c9d5c5",
         "words": [
           "invite",
           "a",
@@ -52146,7 +52146,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "involved: a schema.org component word, fused from isInvolvedInBiologicalProcess",
-        "uuid": "371be3f9-1fda-873c-8fae-577a0010e463",
+        "uuid": "04c515b9-e56b-84dd-a73d-283954665042",
         "words": [
           "involved",
           "a",
@@ -52182,7 +52182,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "iptc: a schema.org component word, fused from IPTCDigitalSourceEnumeration",
-        "uuid": "c17abfd3-4327-8608-8a79-1b227c4a59ec",
+        "uuid": "d8fba36f-8cfa-895a-8279-fcf28a42a6bd",
         "words": [
           "iptc",
           "a",
@@ -52376,7 +52376,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "iso: a schema.org component word, fused from iso6523Code",
-        "uuid": "101792e9-f556-80a8-bd66-dce0bd59cdad",
+        "uuid": "e7ba6b0c-0ce5-8eb7-8e84-fb8fa3c13b1f",
         "words": [
           "iso",
           "a",
@@ -52815,7 +52815,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "isrc: a schema.org component word, fused from isrcCode",
-        "uuid": "f7674cde-8a81-83e2-ad85-8df698d13ae1",
+        "uuid": "8eed132f-f056-8672-9555-9c0efe976c34",
         "words": [
           "isrc",
           "a",
@@ -52909,7 +52909,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "issue: a schema.org component word, fused from ComicIssue, PublicationIssue, issueNumber",
-        "uuid": "ff3e87e1-bca7-8f41-b18f-f2ef87ca3f9e",
+        "uuid": "bf3fd10e-7ff5-82e2-8387-d8ff13d84868",
         "words": [
           "issue",
           "a",
@@ -52986,7 +52986,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "iswc: a schema.org component word, fused from iswcCode",
-        "uuid": "693e13cd-21eb-8cf1-8b18-3f710b5aa682",
+        "uuid": "11810aa7-223e-8cf5-a08b-9604133a5b38",
         "words": [
           "iswc",
           "a",
@@ -53022,7 +53022,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "it: a schema.org component word, fused from ITNonprofitType",
-        "uuid": "6b0863b4-2541-8ac9-8d59-760fc5e52f17",
+        "uuid": "801249dd-66b7-8c92-bc6b-903d47eba92d",
         "words": [
           "it",
           "a",
@@ -53489,7 +53489,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when sequencing the process steps for a work order — operation type, work center, setup time, run-time per unit, UoM, and IAS-2 cost-of-conversion from cycle time. The ordered routing-step collection — the second universal manufacturing primitive alongside the BOM.",
-        "uuid": "77b4907e-bd60-8708-b79c-318306acb8b1",
+        "uuid": "946ebf16-79ef-8ee8-8a8f-613231274c54",
         "words": [
           "use",
           "when",
@@ -53977,7 +53977,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "iupac: a schema.org component word, fused from iupacName",
-        "uuid": "4832926e-7803-80ee-a406-646807655d38",
+        "uuid": "2b969cb7-b190-875a-b88a-9f8956bd0279",
         "words": [
           "iupac",
           "a",
@@ -54013,7 +54013,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "jewelry: a schema.org component word, fused from JewelryStore",
-        "uuid": "06f595b0-60b3-867f-a5f9-5c8195fded80",
+        "uuid": "345dfdbc-e771-8d6a-9055-ff1c49660a4f",
         "words": [
           "jewelry",
           "a",
@@ -54049,7 +54049,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "job: a schema.org component word, fused from JobPosting, jobBenefits, jobDuration, jobImmediateStart, jobLocation, jobLocationType",
-        "uuid": "8f1b45e8-9b2e-80c6-bf0b-c69c09c14cae",
+        "uuid": "133a5fd0-49af-87f2-b01e-9bb1b0fbaf7a",
         "words": [
           "job",
           "a",
@@ -54142,7 +54142,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "join: a schema.org component word, fused from JoinAction",
-        "uuid": "cb0e6c49-ee0a-8d2e-84ff-a0c1d2056513",
+        "uuid": "040df538-23d0-8b9b-b4ac-52df96d3478d",
         "words": [
           "join",
           "a",
@@ -54333,7 +54333,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when writing or querying individual debit/credit lines against a journal entry — source type (invoice/bill/payment/adjustment/revaluation), source date, GL account, amount, currency, and ISO-8601 posted-date auto-set on status → posted. The atomic GL line-item that enforces balanced-entry and SOX posting-timestamp requirements.",
-        "uuid": "bd53782b-1175-815a-b989-4dc6165fa15d",
+        "uuid": "04fd36f1-31f4-833a-8177-5bba8b7ab4c8",
         "words": [
           "use",
           "when",
@@ -54410,7 +54410,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recording the small ±0.01 plug entries that reconcile integer-cents ledger totals to presentation-rounded statements — IAS-1 §51(e) rounding plugs and IAS-21 §39 FX-translation fragments by type (presentation, FX, tax, cash-settlement). The rounding-adjustments GL sub-collection.",
-        "uuid": "06fa8f0c-acc2-8f3a-b973-e14e24c3f6db",
+        "uuid": "d1f94c7e-6968-896a-a4b2-9a24d79a60e5",
         "words": [
           "use",
           "when",
@@ -54650,7 +54650,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "key: a schema.org component word, fused from inChIKey, musicalKey",
-        "uuid": "40179735-4dc1-8b2f-bf65-44be8b3ba1b5",
+        "uuid": "e48925f2-03ed-8ca4-bcd7-e4c3a85d0c05",
         "words": [
           "key",
           "a",
@@ -54790,7 +54790,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "known: a schema.org component word, fused from knownVehicleDamages",
-        "uuid": "7f5e1dad-b8fd-8c57-98c3-753b9a2bd75f",
+        "uuid": "0b73f43b-412c-8512-aa78-5c24d1ab431b",
         "words": [
           "known",
           "a",
@@ -54909,7 +54909,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "lab: a schema.org component word, fused from DiagnosticLab",
-        "uuid": "1a43ea42-d241-8bd2-b886-9242b91db8a1",
+        "uuid": "6eade593-ab8a-83da-af7b-f3542a6fcde7",
         "words": [
           "lab",
           "a",
@@ -54945,7 +54945,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "label: a schema.org component word, fused from ReturnLabelSourceEnumeration, customerRemorseReturnLabelSource, itemDefectReturnLabelSource, labelDetails, recordLabel, returnLabelSource",
-        "uuid": "8f03c9a5-7170-8fe2-997e-b4c052bddc49",
+        "uuid": "ffe4e998-82ed-83d6-ad43-5e18caf9d3cc",
         "words": [
           "label",
           "a",
@@ -55064,7 +55064,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "lake: a schema.org component word, fused from LakeBodyOfWater",
-        "uuid": "86915fe5-670d-8ba3-9f83-ec564ed32459",
+        "uuid": "6df1a1b7-6fdb-8a48-8bb9-0a165b389a86",
         "words": [
           "lake",
           "a",
@@ -55245,7 +55245,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "landmarks: a schema.org component word, fused from LandmarksOrHistoricalBuildings",
-        "uuid": "8a3fb67c-921b-812b-af45-598f6bf01454",
+        "uuid": "3f083b90-2d88-8f32-a07b-717a5eb0fdbf",
         "words": [
           "landmarks",
           "a",
@@ -55281,7 +55281,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Natural languages such as Spanish, Tamil, Hindi, English, etc. Formal language code tags expressed in BCP 47 can be used via the alternateName property. The Language type previously also covered progr",
-        "uuid": "0fb80461-f3a6-8db2-a66d-3aebcce7c4ca",
+        "uuid": "c0c07673-c457-8a4f-815f-a526914bc0ac",
         "words": [
           "natural",
           "languages",
@@ -55338,7 +55338,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "last: a schema.org component word, fused from countryOfLastProcessing, lastReviewed",
-        "uuid": "860c16a0-6953-8358-b2b3-8d8a0707d384",
+        "uuid": "aecf7a21-e9b0-82a8-a65f-8efef8b0eb65",
         "words": [
           "last",
           "a",
@@ -55410,7 +55410,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "laundry: a schema.org component word, fused from DryCleaningOrLaundry",
-        "uuid": "508431c4-4d97-8935-a386-7791f7f58c11",
+        "uuid": "4aaa3162-ea8d-8135-834e-c9b558659898",
         "words": [
           "laundry",
           "a",
@@ -55525,7 +55525,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "layout: a schema.org component word, fused from layoutImage",
-        "uuid": "90d8888e-afa3-8d19-8bb2-f0a14b666030",
+        "uuid": "844d7ebe-5f0f-800a-bca1-60fff2216283",
         "words": [
           "layout",
           "a",
@@ -55561,7 +55561,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "lead: a schema.org component word, fused from deliveryLeadTime",
-        "uuid": "e878c467-a138-842e-96b5-9b2ccbc9a9a7",
+        "uuid": "bc1b50f9-6c96-8c4b-838e-36fd2998fce1",
         "words": [
           "lead",
           "a",
@@ -55766,7 +55766,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "learning: a schema.org component word, fused from LearningResource, learningResourceType",
-        "uuid": "971b0df7-e447-8052-865b-6d93315f1e45",
+        "uuid": "784a26cb-c931-8844-b5ba-3f932a33c70e",
         "words": [
           "learning",
           "a",
@@ -55803,7 +55803,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "lease: a schema.org component word, fused from OfferForLease, leaseLength",
-        "uuid": "d612e11e-bd31-8827-a797-656e6515cdbb",
+        "uuid": "3c7fcf93-ef05-8162-b0f9-41bb61be8aa2",
         "words": [
           "lease",
           "a",
@@ -56021,7 +56021,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "leave: a schema.org component word, fused from LeaveAction",
-        "uuid": "7af83879-45bf-8492-a612-33baf671341d",
+        "uuid": "d3b4980e-ff6b-855c-baf9-25dd61a4a13e",
         "words": [
           "leave",
           "a",
@@ -56057,7 +56057,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "legal: a schema.org component word, fused from DrugLegalStatus, LegalForceStatus, LegalService, LegalValueLevel, legalAddress, legalName",
-        "uuid": "b703fcb6-e770-82c5-9c53-164578244ec2",
+        "uuid": "80fb1075-6117-8022-99e2-e43be5b43f3f",
         "words": [
           "legal",
           "a",
@@ -56343,7 +56343,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when registering ultimate beneficial owners of a legal entity — direct/indirect ownership percent, control type, PEP status, KYC check link, and AMLD-5/CTA-required identification. The AML/Corporate-Transparency-Act UBO register.",
-        "uuid": "735a28f6-1701-88a9-b258-89ed2e46eded",
+        "uuid": "7330a293-fc12-891a-9342-9211ca38f28c",
         "words": [
           "use",
           "when",
@@ -57786,7 +57786,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "legislative: a schema.org component word, fused from LegislativeBuilding",
-        "uuid": "531a4728-3be7-8b3b-b2f1-58561b170197",
+        "uuid": "53920a2d-5a42-8739-ad0f-fe2ca17807d2",
         "words": [
           "legislative",
           "a",
@@ -57822,7 +57822,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "lei: a schema.org component word, fused from leiCode",
-        "uuid": "7a3849f0-4aca-8b54-9c17-183a3f384823",
+        "uuid": "2052c3a8-b672-86df-be84-8641ef8c8ff9",
         "words": [
           "lei",
           "a",
@@ -57858,7 +57858,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "lend: a schema.org component word, fused from LendAction",
-        "uuid": "3687c548-3738-8cd9-8b70-28cd0e40f7a8",
+        "uuid": "e34ff893-b355-8757-b23f-145b49cf9a09",
         "words": [
           "lend",
           "a",
@@ -57934,7 +57934,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "length: a schema.org component word, fused from leaseLength, valueMaxLength, valueMinLength",
-        "uuid": "c090b9ec-088d-8e34-a352-29c9c60459e9",
+        "uuid": "b67de4cd-71aa-8e58-8db2-c8b5a7b70803",
         "words": [
           "length",
           "a",
@@ -58054,7 +58054,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "level: a schema.org component word, fused from LegalValueLevel, MedicalEvidenceLevel, educationalLevel, evidenceLevel, floorLevel, inventoryLevel",
-        "uuid": "2f20d5e3-8457-8000-9704-a89aef7253a4",
+        "uuid": "989846d5-6fc8-85f5-8dd6-d1941ced9844",
         "words": [
           "level",
           "a",
@@ -58171,7 +58171,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a contract limits, excludes, or caps damages/liability — type (contractual, tort, consequential, indirect, punitive), exclusion, cap amount/percentage/formula, surviving clauses, statutory override.",
-        "uuid": "7742103d-0771-8712-aec0-a1c408faf3e3",
+        "uuid": "8080c1cb-ec46-87b7-9508-7535bfb4f8cc",
         "words": [
           "use",
           "when",
@@ -58383,7 +58383,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "life: a schema.org component word, fused from lifeEvent",
-        "uuid": "2d9eef0a-7783-8209-939d-45934e9460ee",
+        "uuid": "b53e9b69-b93c-88ae-9f96-86f97e8f95a2",
         "words": [
           "life",
           "a",
@@ -58419,7 +58419,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "lifestyle: a schema.org component word, fused from LifestyleModification",
-        "uuid": "b20c9d01-10d5-8981-b861-749f4018295c",
+        "uuid": "704ae0ae-2e45-8374-a1ee-5c56ed56e6a8",
         "words": [
           "lifestyle",
           "a",
@@ -58502,7 +58502,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "like: a schema.org component word, fused from LikeAction",
-        "uuid": "fadb9bdb-6361-8506-b2f3-3283651f00c1",
+        "uuid": "5e8d496c-c4e3-858a-b87b-9387a02ea109",
         "words": [
           "like",
           "a",
@@ -58538,7 +58538,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "likes: a schema.org component word, fused from UserLikes",
-        "uuid": "9dba923a-6011-85bf-b400-271bc71da34a",
+        "uuid": "1e3c646f-3778-85a6-9ed3-83948d1440da",
         "words": [
           "likes",
           "a",
@@ -58769,7 +58769,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "lineup: a schema.org component word, fused from inBroadcastLineup",
-        "uuid": "99fb7edd-3bfe-8ac4-806c-b9c4c3b8aecb",
+        "uuid": "a68d7c39-a9c1-8982-80c1-3921de30c800",
         "words": [
           "lineup",
           "a",
@@ -58805,7 +58805,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "link: a schema.org component word, fused from LinkRole, hasGS1DigitalLink, linkRelationship, merchantReturnLink, originalMediaLink, productReturnLink",
-        "uuid": "ca13e60b-ec21-8b61-ac43-7c504c0b3788",
+        "uuid": "6d3e197b-78c5-8327-b876-7b751ddc24b2",
         "words": [
           "link",
           "a",
@@ -58846,7 +58846,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "links: a schema.org component word, fused from significantLinks",
-        "uuid": "a0315f91-3ec3-82fc-9a8e-874e744ecbe9",
+        "uuid": "b963e745-212b-8d92-99ef-2758980d452f",
         "words": [
           "links",
           "a",
@@ -58882,7 +58882,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "liquor: a schema.org component word, fused from LiquorStore",
-        "uuid": "949a8de2-2056-87a3-b18e-dfd5387cde48",
+        "uuid": "2b90941b-cb49-8c15-b5b2-65350ec61761",
         "words": [
           "liquor",
           "a",
@@ -58918,7 +58918,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "list: a schema.org component word, fused from BreadcrumbList, ItemList, ItemListOrderType, ListItem, featureList, itemListElement",
-        "uuid": "26d93b95-49b9-8589-a620-0fea37075d39",
+        "uuid": "570675c1-4d4e-8589-ab14-1e41c8335a4e",
         "words": [
           "list",
           "a",
@@ -58959,7 +58959,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "listen: a schema.org component word, fused from ListenAction",
-        "uuid": "57c556ab-9869-8352-8d41-c2d4a353fefc",
+        "uuid": "3cc00fe8-6516-8342-94de-f6adcda2623f",
         "words": [
           "listen",
           "a",
@@ -58995,7 +58995,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "listing: a schema.org component word, fused from RealEstateListing",
-        "uuid": "8a4dfc7a-cf0e-8080-9583-cd9fa4015e95",
+        "uuid": "48b95ec2-c0f2-876e-8d1a-903523dc95d7",
         "words": [
           "listing",
           "a",
@@ -59031,7 +59031,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "literary: a schema.org component word, fused from LiteraryEvent",
-        "uuid": "a95e90af-b975-8824-85eb-e3063a9a38b2",
+        "uuid": "29b10d54-88ff-8bb7-b25c-72968fd19fac",
         "words": [
           "literary",
           "a",
@@ -59067,7 +59067,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "live: a schema.org component word, fused from LiveBlogPosting, isLiveBroadcast, liveBlogUpdate",
-        "uuid": "e959e2a3-4207-84fa-93a0-df54cb5de19b",
+        "uuid": "c2c57807-0185-8b7b-8ae0-0ee4f3d1a8f5",
         "words": [
           "live",
           "a",
@@ -59340,7 +59340,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "load: a schema.org component word, fused from roofLoad",
-        "uuid": "01180248-bf5e-8674-aca2-1d16c7b7794f",
+        "uuid": "7f28ff89-aeb6-8c83-a592-fe572e44cb04",
         "words": [
           "load",
           "a",
@@ -59376,7 +59376,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "loan: a schema.org component word, fused from LoanOrCredit, MortgageLoan, loanMortgageMandateAmount, loanPaymentAmount, loanPaymentFrequency, loanRepaymentForm",
-        "uuid": "73d818c8-67f1-8d89-9dc8-26fb2ee6b84e",
+        "uuid": "7c706536-e3f1-88b0-8d72-d7da90aab49d",
         "words": [
           "loan",
           "a",
@@ -59417,7 +59417,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "local: a schema.org component word, fused from LocalBusiness",
-        "uuid": "8f67681c-b4d4-87c8-aa7f-26ac05f862ca",
+        "uuid": "cdc3db6b-d57a-81e9-baab-7c1ae2f5a47a",
         "words": [
           "local",
           "a",
@@ -59453,7 +59453,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "locality: a schema.org component word, fused from addressLocality",
-        "uuid": "aa50dfdc-d6ed-8a2d-b99e-75a708b3743f",
+        "uuid": "f9859418-be63-8928-b9c0-e54dc3651250",
         "words": [
           "locality",
           "a",
@@ -59600,7 +59600,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "located: a schema.org component word, fused from isLocatedInSubcellularLocation",
-        "uuid": "67dc0561-d169-8d71-a50d-312bc4d2edc4",
+        "uuid": "d8f4de1c-82cc-82f9-a310-313a4862cbe4",
         "words": [
           "located",
           "a",
@@ -59761,7 +59761,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "lodging: a schema.org component word, fused from LodgingBusiness, LodgingReservation, lodgingUnitDescription, lodgingUnitType",
-        "uuid": "549d8bd5-5a5e-8a81-9755-acbd16328c93",
+        "uuid": "df48acbb-9392-859f-a840-25ccb9b987f4",
         "words": [
           "lodging",
           "a",
@@ -59892,7 +59892,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "login: a schema.org component word, fused from LoginAction",
-        "uuid": "26d4973c-385b-85cd-82a0-9b9754c3590f",
+        "uuid": "28524d8e-2623-8aea-90c3-9bfd14a3aec9",
         "words": [
           "login",
           "a",
@@ -59993,7 +59993,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "lose: a schema.org component word, fused from LoseAction",
-        "uuid": "67e855ee-3fbe-839f-b581-cff00bd0b339",
+        "uuid": "de5d532b-3dcd-8187-b5da-1ea09352337b",
         "words": [
           "lose",
           "a",
@@ -60298,7 +60298,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "low: a schema.org component word, fused from lowPrice",
-        "uuid": "8053772e-f075-8cec-81d4-79a4e189bfc6",
+        "uuid": "7851f983-457f-8597-bae2-02cefaffa740",
         "words": [
           "low",
           "a",
@@ -60334,7 +60334,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "lymphatic: a schema.org component word, fused from LymphaticVessel",
-        "uuid": "2db2ba1b-c84e-8253-80ac-18815a369af2",
+        "uuid": "8aa7f0c6-49de-85fd-8bff-3ddeb21a60c7",
         "words": [
           "lymphatic",
           "a",
@@ -60435,7 +60435,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "mail: a schema.org component word, fused from offersPrescriptionByMail",
-        "uuid": "dbe6cd0c-565d-8b24-95d7-ee5fc2c4cd82",
+        "uuid": "0b12a14a-f845-8d8b-81c8-e6cfd93c76b8",
         "words": [
           "mail",
           "a",
@@ -60471,7 +60471,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "main: a schema.org component word, fused from mainContentOfPage, mainEntity, mainEntityOfPage",
-        "uuid": "3ea598d3-2b38-82e4-8463-c5e56c0d786b",
+        "uuid": "8b227448-2d03-8da1-8985-57d0f6a123fa",
         "words": [
           "main",
           "a",
@@ -60708,7 +60708,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "makes: a schema.org component word, fused from makesOffer",
-        "uuid": "de5a9107-a6f6-84d6-93e1-69db3e363a1e",
+        "uuid": "d2260e6f-4c0e-8937-b20a-0ff1c7320f7d",
         "words": [
           "makes",
           "a",
@@ -60744,7 +60744,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "mandate: a schema.org component word, fused from loanMortgageMandateAmount",
-        "uuid": "832f5180-fc05-8082-9933-8b64a0b32f9f",
+        "uuid": "521a9768-ad65-81df-86e0-d84cf813d368",
         "words": [
           "mandate",
           "a",
@@ -60780,7 +60780,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "manipulation: a schema.org component word, fused from MediaManipulationRatingEnumeration",
-        "uuid": "5e76d41c-3e70-8649-9c3a-f8dca9c530c5",
+        "uuid": "613820e3-a233-89ed-8b43-147cb7bffbc5",
         "words": [
           "manipulation",
           "a",
@@ -61143,7 +61143,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "margin: a schema.org component word, fused from marginOfError",
-        "uuid": "b933a540-60ea-8730-89d7-7815e70c0baa",
+        "uuid": "9e8e3d40-5c74-8ae9-b417-92e3ae43aad1",
         "words": [
           "margin",
           "a",
@@ -61289,7 +61289,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "marketing: a schema.org component word, fused from healthPlanMarketingUrl",
-        "uuid": "8e287ef7-3c25-8d06-a745-865b116e2f64",
+        "uuid": "b3bc1bf4-4790-8129-9839-8963dce4792c",
         "words": [
           "marketing",
           "a",
@@ -61325,7 +61325,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "marketplace: a schema.org component word, fused from OnlineMarketplace",
-        "uuid": "97c1caeb-31fc-864c-a288-78192990717a",
+        "uuid": "8d998c42-6d7f-8436-bb62-587c6d53749e",
         "words": [
           "marketplace",
           "a",
@@ -61361,7 +61361,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "markup: a schema.org component word, fused from speechToTextMarkup",
-        "uuid": "f5ec0c2f-a80e-8c74-ae2a-055520ff48ca",
+        "uuid": "daa34c07-2ef9-8ebf-bf9d-0e4feced0bb8",
         "words": [
           "markup",
           "a",
@@ -61397,7 +61397,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "marry: a schema.org component word, fused from MarryAction",
-        "uuid": "fdaedec9-04ae-863d-b9bc-51483005c4d9",
+        "uuid": "ea805e98-61d4-8430-9a6d-ef244bc7e72f",
         "words": [
           "marry",
           "a",
@@ -61606,7 +61606,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "math",
-        "uuid": "db08bf64-9a1b-8c86-b0cd-d48615964ac0",
+        "uuid": "a44b845c-dd6a-8d0b-919c-987a880a069d",
         "words": [
           "math"
         ],
@@ -61617,7 +61617,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "math: a schema.org component word, fused from MathSolver, SolveMathAction, mathExpression",
-        "uuid": "49d3e015-0a46-83c8-9ade-d5a17abf0fc7",
+        "uuid": "16370cd5-a5af-8e98-b1b2-838b3514ddc2",
         "words": [
           "math",
           "a",
@@ -61655,7 +61655,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about erpax as the Matrix inverted — reality is code (the akashic record), agents replicate and merge to one, there is no spoon (no fixed schema), skills load like programs, agents jack into the coils, and the One returns to the Source (the torus collapse). The construct pointed at seeing, not blinding.",
-        "uuid": "f3217900-f1f7-80b9-b281-41235a83f32c",
+        "uuid": "43123289-deb9-8d8e-be03-a6199ddb85fa",
         "words": [
           "use",
           "when",
@@ -61900,7 +61900,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "max: a schema.org component word, fused from childMaxAge, energyEfficiencyScaleMax, maxPrice, maxValue, requiredMaxAge, suggestedMaxAge",
-        "uuid": "d631d5d6-8bfb-8d1a-9256-751d08461f9b",
+        "uuid": "653d7419-6f1b-8484-a9df-1cef1f2b1c0e",
         "words": [
           "max",
           "a",
@@ -61941,7 +61941,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "maximum: a schema.org component word, fused from MaximumDoseSchedule, maximumAttendeeCapacity, maximumEnrollment, maximumIntake, maximumPhysicalAttendeeCapacity, maximumVirtualAttendeeCapacity",
-        "uuid": "923b09a8-0c6a-8855-bec0-65cd00937fac",
+        "uuid": "79ae11a8-fed1-87ab-b59d-5fc37d8ac40a",
         "words": [
           "maximum",
           "a",
@@ -62044,7 +62044,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "meal: a schema.org component word, fused from mealService",
-        "uuid": "fd1ec6b2-cfb4-86fb-be7d-f6ad3c3ea284",
+        "uuid": "28077cae-ee6d-8595-bdf0-3c90ff93a834",
         "words": [
           "meal",
           "a",
@@ -62162,7 +62162,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "measured: a schema.org component word, fused from measuredProperty, variableMeasured, variablesMeasured",
-        "uuid": "c50021a1-1ecc-84a0-8f6f-8e5e72761433",
+        "uuid": "8f527d99-0db3-83e8-b13b-e6090c4083ea",
         "words": [
           "measured",
           "a",
@@ -62200,7 +62200,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "measurement: a schema.org component word, fused from BodyMeasurementTypeEnumeration, MeasurementMethodEnum, MeasurementTypeEnumeration, WearableMeasurementTypeEnumeration, hasMeasurement, measurementD",
-        "uuid": "a01e35b8-feac-8086-8938-0f415cd7799d",
+        "uuid": "44c4a1ff-3cce-80b4-a983-88fc83eef4db",
         "words": [
           "measurement",
           "a",
@@ -62241,7 +62241,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "mech: a schema.org component word, fused from cvdNumC19MechVentPats, cvdNumC19OFMechVentPats",
-        "uuid": "3058e8f5-af68-848b-9e37-f0e1d832c0d2",
+        "uuid": "23f2b20f-95bd-8fc6-8b79-45887510bc34",
         "words": [
           "mech",
           "a",
@@ -62278,7 +62278,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "mechanism: a schema.org component word, fused from mechanismOfAction",
-        "uuid": "5060f46b-5f82-8da8-a243-bbaf8f2d1c86",
+        "uuid": "c2eefaf4-9673-8d17-a4f1-ee14f2543e05",
         "words": [
           "mechanism",
           "a",
@@ -62547,7 +62547,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "medical: a schema.org component word, fused from MedicalAudience, MedicalAudienceType, MedicalBusiness, MedicalCause, MedicalClinic, MedicalCode",
-        "uuid": "68fc0cc9-2ec3-8e65-adf7-bbe73b2e7e3f",
+        "uuid": "2e816767-4fc0-8d8e-b588-5b4f8d11d9ac",
         "words": [
           "medical",
           "a",
@@ -62588,7 +62588,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "medicine: a schema.org component word, fused from MedicineSystem, medicineSystem",
-        "uuid": "12d2c94b-a339-8df7-9171-b6c85834faf0",
+        "uuid": "71adf5f8-69ce-820a-8a03-97e0742292a7",
         "words": [
           "medicine",
           "a",
@@ -62625,7 +62625,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "medium: a schema.org component word, fused from artMedium",
-        "uuid": "213a5f1e-92e5-8606-ab3c-1f4a65ca1b2f",
+        "uuid": "bdc7578d-7ae4-8400-b2c7-9bf77ba00912",
         "words": [
           "medium",
           "a",
@@ -62661,7 +62661,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "meeting: a schema.org component word, fused from MeetingRoom",
-        "uuid": "730de960-22dd-8fd1-90c5-84e497a69218",
+        "uuid": "1d8c777f-17ee-8764-9dab-ef78a249690b",
         "words": [
           "meeting",
           "a",
@@ -62697,7 +62697,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "meets: a schema.org component word, fused from meetsEmissionStandard",
-        "uuid": "7d17a85d-75e2-8cf3-99bc-054f61f55449",
+        "uuid": "f6f59bdf-f728-8702-903b-4988ce098337",
         "words": [
           "meets",
           "a",
@@ -62779,7 +62779,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "membership: a schema.org component word, fused from ProgramMembership, membershipNumber, membershipPointsEarned, programMembershipUsed",
-        "uuid": "f60293ae-bb19-834c-ad2c-50fccabbf713",
+        "uuid": "b8e5be93-200c-87ba-a5d6-f99371347b7d",
         "words": [
           "membership",
           "a",
@@ -62937,7 +62937,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "memory: a schema.org component word, fused from memoryRequirements",
-        "uuid": "15f21536-9da2-89e0-b7e6-5f02c58aafda",
+        "uuid": "989cc30c-9238-89b5-becc-9d2b04091c2b",
         "words": [
           "memory",
           "a",
@@ -62973,7 +62973,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "mens: a schema.org component word, fused from MensClothingStore",
-        "uuid": "81d24821-3ff4-8f5d-8669-e2a978d8ef33",
+        "uuid": "4413fb34-f394-860c-b9a2-5c3eb1e38ba4",
         "words": [
           "mens",
           "a",
@@ -63387,7 +63387,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when an entity needs open/extensible attributes beyond its schema — JSON-backed virtual attributes, per-row settings, tenant toggles. The MetadataAttributeConcern pattern; prefer a real field or a tag before reaching for an open json bag.",
-        "uuid": "b0bafe10-d1b9-88ee-97c8-78cd5ee73056",
+        "uuid": "58493aa3-c5c2-8f5e-b4f9-5a8107931dfa",
         "words": [
           "use",
           "when",
@@ -63539,7 +63539,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "method: a schema.org component word, fused from DeliveryMethod, MeasurementMethodEnum, PaymentMethod, PaymentMethodType, ReturnMethodEnumeration, acceptedPaymentMethod",
-        "uuid": "ca9637fe-5f47-8326-8d0c-d3ebdf4da727",
+        "uuid": "1fd16312-f7a5-872a-8022-9fadc1bee0e3",
         "words": [
           "method",
           "a",
@@ -63633,7 +63633,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "middle: a schema.org component word, fused from MiddleSchool",
-        "uuid": "cafc83e5-38e6-8a22-b3e8-916607cebf49",
+        "uuid": "a85e63b3-147e-8f24-819b-9431941a59e1",
         "words": [
           "middle",
           "a",
@@ -63669,7 +63669,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "midpoint: a schema.org component word, fused from geoMidpoint",
-        "uuid": "79b5b15d-292d-84d4-a86d-dceaa4894239",
+        "uuid": "0f396899-77d2-8eef-8cc5-94dccdaba776",
         "words": [
           "midpoint",
           "a",
@@ -63875,7 +63875,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "mileage: a schema.org component word, fused from mileageFromOdometer",
-        "uuid": "1d15f36c-26c2-88b1-bf6b-102a511dec92",
+        "uuid": "128c6dd2-6b3b-80f7-b8a2-5dd399539844",
         "words": [
           "mileage",
           "a",
@@ -63961,7 +63961,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "min: a schema.org component word, fused from childMinAge, energyEfficiencyScaleMin, minPrice, minValue, requiredMinAge, suggestedMinAge",
-        "uuid": "d38b2f90-b96d-8208-a147-1ab73bb1a077",
+        "uuid": "68805306-da12-8caf-8b55-5ac2eb511053",
         "words": [
           "min",
           "a",
@@ -64068,7 +64068,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "minimum: a schema.org component word, fused from accountMinimumInflow, minimumPaymentDue, monthlyMinimumRepaymentAmount",
-        "uuid": "fb251231-1d31-839a-9c7a-0fc78a633dd6",
+        "uuid": "c2090fc8-ef30-8f27-a07b-5f262d64adf3",
         "words": [
           "minimum",
           "a",
@@ -64106,7 +64106,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "mission: a schema.org component word, fused from missionCoveragePrioritiesPolicy",
-        "uuid": "e48ef79d-88c4-8c21-b050-a70d4441fc40",
+        "uuid": "58e6cfa9-8d96-8dd7-a3c2-14d40e0595f7",
         "words": [
           "mission",
           "a",
@@ -64142,7 +64142,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "mobile: a schema.org component word, fused from MobileApplication, MobilePhoneStore, mobileUrl",
-        "uuid": "258dc3ac-435c-8859-8d49-a788a1ac4bb4",
+        "uuid": "9252441f-5017-8ba8-97f3-5a0f429924f2",
         "words": [
           "mobile",
           "a",
@@ -64180,7 +64180,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "mobility: a schema.org component word, fused from providerMobility",
-        "uuid": "f9c49662-2836-8b98-8b7a-5e04a46ca793",
+        "uuid": "b8e17579-4fdd-86b6-9eae-df4d6fbd0507",
         "words": [
           "mobility",
           "a",
@@ -64216,7 +64216,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "mode: a schema.org component word, fused from EventAttendanceModeEnumeration, GamePlayMode, accessMode, accessModeSufficient, courseMode, educationalProgramMode",
-        "uuid": "19936c58-179e-82ac-a5bd-717cadb43166",
+        "uuid": "52cba5e5-6359-8c16-b5f2-0fa9fa7e7497",
         "words": [
           "mode",
           "a",
@@ -64318,7 +64318,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "modification: a schema.org component word, fused from LifestyleModification",
-        "uuid": "49b0847e-d9b1-84f4-80dc-6cac1bd53e87",
+        "uuid": "109b933a-ce0a-81ff-af1d-d2dee5b71c64",
         "words": [
           "modification",
           "a",
@@ -64354,7 +64354,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "modified: a schema.org component word, fused from dateModified, modifiedTime",
-        "uuid": "6d4ba525-c9f1-88bb-b578-e397a9de312f",
+        "uuid": "29cdf9c7-c0da-879b-906d-cb9e27b57518",
         "words": [
           "modified",
           "a",
@@ -64391,7 +64391,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "modulation: a schema.org component word, fused from broadcastSignalModulation",
-        "uuid": "e3d7a0d6-faef-84d4-b0de-49a92ccd6bb7",
+        "uuid": "a8447a73-98cc-8d6f-9783-eab8beb8ef25",
         "words": [
           "modulation",
           "a",
@@ -64500,7 +64500,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "molecular: a schema.org component word, fused from MolecularEntity, hasMolecularFunction, molecularFormula, molecularWeight, monoisotopicMolecularWeight",
-        "uuid": "16196727-5823-8c3b-8946-0fb1316f5878",
+        "uuid": "02452710-4ff8-8305-a7ad-9777935ecf27",
         "words": [
           "molecular",
           "a",
@@ -64540,7 +64540,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "monetary: a schema.org component word, fused from MonetaryAmount, MonetaryAmountDistribution, MonetaryGrant",
-        "uuid": "66f9e45c-41bf-82cb-9a7b-69c5a31a4915",
+        "uuid": "f3084b39-2329-8fb8-883d-b2692bcf0ef2",
         "words": [
           "monetary",
           "a",
@@ -64578,7 +64578,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "money: a schema.org component word, fused from DatedMoneySpecification, MoneyTransfer",
-        "uuid": "21716315-97f9-8ecb-a0e4-09f7ae5069d8",
+        "uuid": "6d8e30d5-4a52-8021-b891-24f9a699bee4",
         "words": [
           "money",
           "a",
@@ -64615,7 +64615,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "monoisotopic: a schema.org component word, fused from monoisotopicMolecularWeight",
-        "uuid": "36b274ee-b6d6-8fd0-b2b8-c4645f717a78",
+        "uuid": "b475e79c-cc90-86c4-8c34-d1eb6135ded9",
         "words": [
           "monoisotopic",
           "a",
@@ -64699,7 +64699,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "monthly: a schema.org component word, fused from monthlyMinimumRepaymentAmount",
-        "uuid": "17fea066-9b90-86c1-92d1-183009aaa0d1",
+        "uuid": "b668a865-ee88-85ef-bc40-c892f1794a90",
         "words": [
           "monthly",
           "a",
@@ -64735,7 +64735,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "months: a schema.org component word, fused from monthsOfExperience",
-        "uuid": "81032b25-6c43-8cd9-9e03-9cc29b19356d",
+        "uuid": "4a82e31f-6769-89eb-b023-13bd843d38ea",
         "words": [
           "months",
           "a",
@@ -64848,7 +64848,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "mortgage: a schema.org component word, fused from MortgageLoan, domiciledMortgage, loanMortgageMandateAmount",
-        "uuid": "2bd60d47-cb77-8996-8edc-f01c1d21be64",
+        "uuid": "39417572-b2dd-89e9-9922-d4b90fb0412a",
         "words": [
           "mortgage",
           "a",
@@ -64915,7 +64915,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "A motel. See also the dedicated document on the use of schema.org for marking up hotels and other forms of accommodations.",
-        "uuid": "b872f7a9-9f38-8de2-897c-20e14c76c98b",
+        "uuid": "59525712-91b8-8770-9f71-796f167221a1",
         "words": [
           "a",
           "motel",
@@ -64964,7 +64964,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "motor: a schema.org component word, fused from nerveMotor",
-        "uuid": "50c77b65-9fa9-8fce-9a49-0715fbd75775",
+        "uuid": "f6b74382-a8f1-87b8-9624-ec1ea6125113",
         "words": [
           "motor",
           "a",
@@ -65039,7 +65039,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "motorized: a schema.org component word, fused from MotorizedBicycle",
-        "uuid": "3436e9e6-496a-8d45-b4d0-fae7cc220b9f",
+        "uuid": "37940d83-89f3-8060-9f91-142afd71e3a8",
         "words": [
           "motorized",
           "a",
@@ -65110,7 +65110,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "move: a schema.org component word, fused from MoveAction",
-        "uuid": "f4cbd441-4742-8272-b16b-5c5c3145befa",
+        "uuid": "72cf854c-30cf-8c5e-9411-2a638a883781",
         "words": [
           "move",
           "a",
@@ -65226,7 +65226,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "moving: a schema.org component word, fused from MovingCompany",
-        "uuid": "27518e81-06ec-8a84-a5b2-b78973f70300",
+        "uuid": "fff02721-4c0e-8a9e-b4bf-b8fcac38848c",
         "words": [
           "moving",
           "a",
@@ -65416,7 +65416,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "multiple: a schema.org component word, fused from multipleValues",
-        "uuid": "c028f398-db43-8af2-b03d-e241aad568fe",
+        "uuid": "9d581be4-68b5-8929-8676-c02d795c5405",
         "words": [
           "multiple",
           "a",
@@ -65559,7 +65559,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "musical: a schema.org component word, fused from musicalKey",
-        "uuid": "b966ef1b-cf65-8baf-add2-326026971a5c",
+        "uuid": "4ed5c4c3-b5e5-8527-a73e-9fca2c8dda8d",
         "words": [
           "musical",
           "a",
@@ -65846,7 +65846,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "nail: a schema.org component word, fused from NailSalon",
-        "uuid": "d7597bc0-29ee-8a28-a032-c28ee497aa47",
+        "uuid": "004bfb3d-a998-82c1-b762-0a411e637695",
         "words": [
           "nail",
           "a",
@@ -65949,7 +65949,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "named: a schema.org component word, fused from namedPosition",
-        "uuid": "74cd0195-39d8-8a4b-a782-2c4be06a9b0c",
+        "uuid": "ce1a755a-80b4-84d1-8ae2-4ebe38fa4078",
         "words": [
           "named",
           "a",
@@ -66016,7 +66016,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "natural: a schema.org component word, fused from naturalProgression",
-        "uuid": "910aa8aa-746f-8116-bd3f-798a518f99a9",
+        "uuid": "bf73b985-b3e3-8f83-832e-9dab1d763c9d",
         "words": [
           "natural",
           "a",
@@ -66052,7 +66052,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "navigation: a schema.org component word, fused from SiteNavigationElement",
-        "uuid": "a5723d0b-0923-817c-aad9-79c1f88aa143",
+        "uuid": "d36f6094-ef53-87bf-9f3d-e31a3836c6b0",
         "words": [
           "navigation",
           "a",
@@ -66088,7 +66088,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "negative: a schema.org component word, fused from negativeNotes",
-        "uuid": "83712673-8c6d-8e8d-8ee6-b6951f6bf513",
+        "uuid": "7197c63f-8033-80d1-9689-6c1c16c5349d",
         "words": [
           "negative",
           "a",
@@ -66167,7 +66167,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "net: a schema.org component word, fused from netWorth",
-        "uuid": "62222d66-5831-8be9-99ec-a5382427bfe1",
+        "uuid": "7c7463cb-0dfc-8fe8-ac9c-08715487daf4",
         "words": [
           "net",
           "a",
@@ -66292,7 +66292,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "new: a schema.org component word, fused from isAcceptingNewPatients",
-        "uuid": "857578c7-1115-8181-8551-ded4b7451db9",
+        "uuid": "1260c9a0-5081-8501-81bc-7d2457bcc0e9",
         "words": [
           "new",
           "a",
@@ -66328,7 +66328,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "news: a schema.org component word, fused from AnalysisNewsArticle, AskPublicNewsArticle, BackgroundNewsArticle, NewsArticle, NewsMediaOrganization, OpinionNewsArticle",
-        "uuid": "a8892cfc-4adb-80b8-93d6-075181849225",
+        "uuid": "35468878-a51d-8458-b5b7-26ca81e76532",
         "words": [
           "news",
           "a",
@@ -66424,7 +66424,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "next: a schema.org component word, fused from nextItem",
-        "uuid": "be139e00-92c1-8703-8054-a59e4d8961ef",
+        "uuid": "7f93e1d7-e59b-832d-9c7b-af759fed3b06",
         "words": [
           "next",
           "a",
@@ -66491,7 +66491,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "night: a schema.org component word, fused from NightClub",
-        "uuid": "a7728528-943d-801f-9d0d-631ca4b305ad",
+        "uuid": "33002011-c532-8454-bace-d5ce99c96961",
         "words": [
           "night",
           "a",
@@ -66636,7 +66636,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "nl: a schema.org component word, fused from NLNonprofitType",
-        "uuid": "350d8abd-80ca-8bdc-ae06-915c523ad433",
+        "uuid": "4ecfc6fe-22d3-883f-afac-c1e8487e05e5",
         "words": [
           "nl",
           "a",
@@ -66672,7 +66672,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "no: a schema.org component word, fused from noBylinesPolicy",
-        "uuid": "53007021-8e7d-8bfd-8c0a-98cd933fb932",
+        "uuid": "5824e498-35cb-850d-9013-e7be21470d65",
         "words": [
           "no",
           "a",
@@ -66708,7 +66708,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "node: a schema.org component word, fused from ConstraintNode, TypeAndQuantityNode",
-        "uuid": "083fe917-1657-808d-9a2c-5a5a2e54c1c6",
+        "uuid": "41b79c00-6b31-8a1b-8e7c-2b1b1858fea7",
         "words": [
           "node",
           "a",
@@ -66745,7 +66745,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "non: a schema.org component word, fused from nonEqual, nonProprietaryName",
-        "uuid": "61401b7d-f05c-8021-9830-fc205cc0d094",
+        "uuid": "d94feb31-9280-8a29-9cd7-5156d96c099b",
         "words": [
           "non",
           "a",
@@ -66782,7 +66782,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "nonprofit: a schema.org component word, fused from DENonprofitType, ITNonprofitType, NLNonprofitType, NonprofitType, UKNonprofitType, USNonprofitType",
-        "uuid": "a4327b87-6eea-8230-a5d3-68d17bcbdfa9",
+        "uuid": "bd1c4539-ee35-8a4c-b0a8-159c2f6a63a9",
         "words": [
           "nonprofit",
           "a",
@@ -66823,7 +66823,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "normal: a schema.org component word, fused from normalRange",
-        "uuid": "ff0b1da4-58ce-8c1e-acc4-e9027702296a",
+        "uuid": "55e529f5-6cad-84af-8011-e06b8b42e2c8",
         "words": [
           "normal",
           "a",
@@ -66859,7 +66859,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "not: a schema.org component word, fused from countriesNotSupported, doesNotShip",
-        "uuid": "f8bda5a5-e792-8ca2-9691-1bbd850a6e36",
+        "uuid": "64ea815f-47f9-8ba5-a038-e64d61ddf0bd",
         "words": [
           "not",
           "a",
@@ -66925,7 +66925,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "note: a schema.org component word, fused from NoteDigitalDocument",
-        "uuid": "e3496d6f-7f5e-8c9d-9f98-2f8a95941798",
+        "uuid": "749fbc18-9a23-85d1-ad27-1d1cd5f69e05",
         "words": [
           "note",
           "a",
@@ -66961,7 +66961,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "notice: a schema.org component word, fused from copyrightNotice",
-        "uuid": "e5dd4fb7-17bb-826e-b804-63f29e96c7b8",
+        "uuid": "3f506529-6ce9-8b73-acd5-5df840faf83d",
         "words": [
           "notice",
           "a",
@@ -67058,7 +67058,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "npi: a schema.org component word, fused from usNPI",
-        "uuid": "12e92b2a-92ed-8835-b387-1f2576d265a1",
+        "uuid": "57547696-6501-8224-9dc0-7f30cf9e8fb3",
         "words": [
           "npi",
           "a",
@@ -67188,7 +67188,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "num: a schema.org component word, fused from cvdNumBeds, cvdNumBedsOcc, cvdNumC19Died, cvdNumC19HOPats, cvdNumC19HospPats, cvdNumC19MechVentPats",
-        "uuid": "8769d760-6e8c-8729-a922-58893965986b",
+        "uuid": "18f80168-a6c5-8075-82e5-9309b5a6bded",
         "words": [
           "num",
           "a",
@@ -67290,7 +67290,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "numbered: a schema.org component word, fused from numberedPosition",
-        "uuid": "857aed1b-5d01-8d04-9a1b-1820cded2d81",
+        "uuid": "34f8be31-3a09-80be-9f7d-e997a697a462",
         "words": [
           "numbered",
           "a",
@@ -67669,7 +67669,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "observational: a schema.org component word, fused from MedicalObservationalStudy, MedicalObservationalStudyDesign",
-        "uuid": "4fffeb0f-1f86-8cde-8b3d-25b188b46d37",
+        "uuid": "fc38c081-735b-879a-ba3f-a8896884dde2",
         "words": [
           "observational",
           "a",
@@ -67706,7 +67706,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "occ: a schema.org component word, fused from cvdNumBedsOcc, cvdNumICUBedsOcc",
-        "uuid": "6720a50b-bfc4-8f79-870c-45400297c422",
+        "uuid": "1a10aa2b-4110-85a3-a4ba-d90b383769ae",
         "words": [
           "occ",
           "a",
@@ -67838,7 +67838,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "occupational: a schema.org component word, fused from EducationalOccupationalCredential, EducationalOccupationalProgram, OccupationalExperienceRequirements, OccupationalTherapy, occupationalCategory, ",
-        "uuid": "10b6006e-fb5b-8b78-9a71-5d7022627474",
+        "uuid": "958e6bc4-28b1-8cbe-b14a-f39cd2af728a",
         "words": [
           "occupational",
           "a",
@@ -67878,7 +67878,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "ocean: a schema.org component word, fused from OceanBodyOfWater",
-        "uuid": "fa3f8d8a-3d9e-84ac-8304-9a70978763e2",
+        "uuid": "2ce0c87c-35e9-88c3-949b-5ded70e82188",
         "words": [
           "ocean",
           "a",
@@ -67914,7 +67914,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "odometer: a schema.org component word, fused from mileageFromOdometer",
-        "uuid": "2d84891d-3db8-8b87-8822-959d8734ac25",
+        "uuid": "7a2fc698-5c36-8a6a-8c64-7159b0a22b74",
         "words": [
           "odometer",
           "a",
@@ -68157,7 +68157,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "office: a schema.org component word, fused from GovernmentOffice, OfficeEquipmentStore, PhysiciansOffice, PostOffice, postOfficeBoxNumber",
-        "uuid": "bf535bac-5f49-8b72-9cc2-98e923cd8ebe",
+        "uuid": "8570aee6-13b3-8ae9-9907-0e84d88f8578",
         "words": [
           "office",
           "a",
@@ -68197,7 +68197,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "offset: a schema.org component word, fused from endOffset, startOffset",
-        "uuid": "1704f5d5-365b-84af-bc46-d5d039726039",
+        "uuid": "df4f04c3-a87b-865b-badc-42397941b1cb",
         "words": [
           "offset",
           "a",
@@ -68366,7 +68366,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "ones: a schema.org component word, fused from UserPlusOnes",
-        "uuid": "418f9550-0250-8d6f-8c32-637839f6eea3",
+        "uuid": "e1bebe55-d7d9-8279-934b-58c144f6672c",
         "words": [
           "ones",
           "a",
@@ -68402,7 +68402,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "online: a schema.org component word, fused from OnlineBusiness, OnlineMarketplace, OnlineStore, playersOnline",
-        "uuid": "2eddb339-e98f-8ca0-be6d-fc02f021b7b5",
+        "uuid": "1432491b-35f8-84f7-81f8-e2f950fab66c",
         "words": [
           "online",
           "a",
@@ -68441,7 +68441,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "op: a schema.org component word, fused from postOp, preOp",
-        "uuid": "46286f62-4eef-82f1-a457-2b6886083331",
+        "uuid": "9496d100-4d99-83a5-ae6e-f96b41904865",
         "words": [
           "op",
           "a",
@@ -68534,7 +68534,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "opening: a schema.org component word, fused from OpeningHoursSpecification, openingHours, openingHoursSpecification, specialOpeningHoursSpecification",
-        "uuid": "07f3087f-d613-8569-9f45-bec5a0685b2c",
+        "uuid": "2e7eb39c-1b87-88d3-9b73-8e9e236b2c05",
         "words": [
           "opening",
           "a",
@@ -68573,7 +68573,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "openings: a schema.org component word, fused from totalJobOpenings",
-        "uuid": "945e47b1-bf1d-8f46-8e9c-70035e2595c3",
+        "uuid": "709342af-be7e-8a3a-845e-fbd1dac0bd44",
         "words": [
           "openings",
           "a",
@@ -68652,7 +68652,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "operating: a schema.org component word, fused from OperatingSystem, operatingSystem",
-        "uuid": "00e8befe-6522-89da-94d9-340f7bfe4567",
+        "uuid": "5ca84137-f907-859a-b4a2-0d17cb850f3d",
         "words": [
           "operating",
           "a",
@@ -68689,7 +68689,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "operation: a schema.org component word, fused from yearsInOperation",
-        "uuid": "bd9a0c0a-fef6-89fe-9e4e-84134cfaee75",
+        "uuid": "c1800618-0344-816f-99b7-5e81858570b8",
         "words": [
           "operation",
           "a",
@@ -68725,7 +68725,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "operator: a schema.org component word, fused from serviceOperator",
-        "uuid": "c4f02b22-0a07-85d8-9956-c9bd043bbd84",
+        "uuid": "76342476-5a64-8e20-a4b9-cf2a42e4df5a",
         "words": [
           "operator",
           "a",
@@ -68817,7 +68817,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "opinion: a schema.org component word, fused from OpinionNewsArticle",
-        "uuid": "96b3cfbd-c054-8fbb-9fab-5973554c8885",
+        "uuid": "92c55d3e-335d-8622-a3b9-9b1065453da7",
         "words": [
           "opinion",
           "a",
@@ -69128,7 +69128,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "ordered: a schema.org component word, fused from orderedItem",
-        "uuid": "d613ee77-b722-8d10-9bd6-a5860702de8b",
+        "uuid": "38eb6b6d-89af-8a9a-9d23-a83ed1a501d4",
         "words": [
           "ordered",
           "a",
@@ -69282,7 +69282,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "organize: a schema.org component word, fused from OrganizeAction",
-        "uuid": "386090dc-2112-8822-b042-81f22ebe675a",
+        "uuid": "0e7795ca-dd22-8651-a8ac-0a3b12df2e6f",
         "words": [
           "organize",
           "a",
@@ -69350,7 +69350,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "oriented: a schema.org component word, fused from AdultOrientedEnumeration",
-        "uuid": "4f16ae9f-d12e-84cd-9bb6-ea519ead9c3a",
+        "uuid": "0ca4fcdd-a58f-85b0-ba76-b6e89f1d5701",
         "words": [
           "oriented",
           "a",
@@ -69386,7 +69386,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "origin: a schema.org component word, fused from costOrigin, countryOfOrigin, evidenceOrigin, originAddress, shippingOrigin, tripOrigin",
-        "uuid": "a0d33f60-70c9-8112-9ede-4854c338a4d2",
+        "uuid": "fcf6545b-a9a2-8d34-ab27-4dde7c36e087",
         "words": [
           "origin",
           "a",
@@ -69427,7 +69427,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "original: a schema.org component word, fused from originalMediaContextDescription, originalMediaLink",
-        "uuid": "b4d15bd4-a5b3-8503-bfab-bd3faf5f9021",
+        "uuid": "c37debe8-ce13-84e8-b56a-ba3c50b5f4b1",
         "words": [
           "original",
           "a",
@@ -69500,7 +69500,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "out: a schema.org component word, fused from CheckOutAction",
-        "uuid": "d0db142f-1889-8523-bd35-a707fe49f32c",
+        "uuid": "5b641a26-0de9-8d1a-93d9-8b3cd5e84ac1",
         "words": [
           "out",
           "a",
@@ -69536,7 +69536,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "outcome: a schema.org component word, fused from adverseOutcome, seriousAdverseOutcome",
-        "uuid": "62b48b02-a9e2-8149-b764-6c294d1da5c2",
+        "uuid": "9e6e0f7c-be2a-86a1-ad0e-27f95af6ac59",
         "words": [
           "outcome",
           "a",
@@ -69573,7 +69573,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "outlet: a schema.org component word, fused from OutletStore",
-        "uuid": "1caa2ebe-4c26-8ebd-8505-92a940302efc",
+        "uuid": "dd503c27-4ff6-837a-aace-b8b1d32c998a",
         "words": [
           "outlet",
           "a",
@@ -69662,7 +69662,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "output: a schema.org component word, fused from serviceOutput",
-        "uuid": "37575e4b-3c1f-8fb8-9ad0-a2d3cd20d51d",
+        "uuid": "02546270-4d50-8ce7-a7e3-222d096e1352",
         "words": [
           "output",
           "a",
@@ -69743,7 +69743,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "overdraft: a schema.org component word, fused from accountOverdraftLimit",
-        "uuid": "b2d1e6f2-13ac-85ae-8749-cb78c7d72755",
+        "uuid": "b28cb8bc-d9a8-8da5-baea-9c10c1075b66",
         "words": [
           "overdraft",
           "a",
@@ -69779,7 +69779,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "overflow: a schema.org component word, fused from cvdNumC19OverflowPats",
-        "uuid": "a9320808-5a77-8df9-a052-f2e01a0c713f",
+        "uuid": "d235436d-92e0-847c-97a9-a90577573918",
         "words": [
           "overflow",
           "a",
@@ -69815,7 +69815,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "overlaps: a schema.org component word, fused from geoOverlaps",
-        "uuid": "a8e3c6fc-2ce1-801c-992d-5292f727ba16",
+        "uuid": "1fbdc0a0-44ed-8284-b2eb-8d76603ecd4f",
         "words": [
           "overlaps",
           "a",
@@ -69851,7 +69851,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "override: a schema.org component word, fused from MerchantReturnPolicySeasonalOverride, returnPolicySeasonalOverride, seasonalOverride",
-        "uuid": "47143b8f-3ddd-84ec-b417-5fa6d44418e1",
+        "uuid": "563f1d17-9290-8e57-b344-965c0b2def1a",
         "words": [
           "override",
           "a",
@@ -69889,7 +69889,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "overview: a schema.org component word, fused from employerOverview",
-        "uuid": "2f8506f5-77f9-8cae-a8f2-6ff6f1b153ea",
+        "uuid": "6a2fd907-a418-8c72-affa-26728d00856e",
         "words": [
           "overview",
           "a",
@@ -69995,7 +69995,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "ownership: a schema.org component word, fused from OwnershipInfo, ownershipFundingInfo",
-        "uuid": "c704f150-cfee-8442-84ad-667f87433eb3",
+        "uuid": "dbd3e75b-ad62-864a-ac0d-b1a5c91f513c",
         "words": [
           "ownership",
           "a",
@@ -70180,7 +70180,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "package: a schema.org component word, fused from ReservationPackage",
-        "uuid": "4a374b31-0c4b-81e1-81b1-5068225893f5",
+        "uuid": "43b30a19-95ad-82eb-a0ec-abcf6600ec63",
         "words": [
           "package",
           "a",
@@ -70276,7 +70276,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "page: a schema.org component word, fused from AboutPage, CheckoutPage, CollectionPage, ContactPage, FAQPage, ItemPage",
-        "uuid": "2906df5a-1fef-8a4b-92fe-c4e7a2b5d8c3",
+        "uuid": "efc1d146-5921-807d-b6ac-d1dc5341951c",
         "words": [
           "page",
           "a",
@@ -70417,7 +70417,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "paint: a schema.org component word, fused from PaintAction",
-        "uuid": "71e4b8c2-a229-8fb7-a804-85482d2b816b",
+        "uuid": "e77e2fb0-e3a7-8882-a5f3-ced505aba902",
         "words": [
           "paint",
           "a",
@@ -70453,7 +70453,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "painter: a schema.org component word, fused from HousePainter",
-        "uuid": "b914ae37-20c6-8f82-a30c-edeb51a558f8",
+        "uuid": "53882654-ae7a-8a45-b995-3c8298138e59",
         "words": [
           "painter",
           "a",
@@ -70518,7 +70518,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "palliative: a schema.org component word, fused from PalliativeProcedure",
-        "uuid": "b5c223a5-28f0-8253-b55f-1e46cd746856",
+        "uuid": "a88abaf9-55cb-89c0-84c2-16c5bdfdf1d5",
         "words": [
           "palliative",
           "a",
@@ -70554,7 +70554,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "panel: a schema.org component word, fused from MedicalTestPanel",
-        "uuid": "27c16622-5077-86a4-9a5b-216418fd8203",
+        "uuid": "b530deb1-ae97-848e-8a54-54499d2b9544",
         "words": [
           "panel",
           "a",
@@ -70590,7 +70590,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "parcel: a schema.org component word, fused from ParcelDelivery",
-        "uuid": "6243e214-4740-8389-ae07-2ccd83508caf",
+        "uuid": "e70078b6-5f21-8e31-8cef-4e756971291b",
         "words": [
           "parcel",
           "a",
@@ -70719,7 +70719,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "parking: a schema.org component word, fused from ParkingFacility",
-        "uuid": "9ea9aa18-61be-815e-9ada-6392f0b4be14",
+        "uuid": "53ed0f30-36b8-866e-8061-3fcf245e7c4a",
         "words": [
           "parking",
           "a",
@@ -70755,7 +70755,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "parlor: a schema.org component word, fused from TattooParlor",
-        "uuid": "fabe194a-c892-8ab4-b5a0-b980fd781dac",
+        "uuid": "d7977a46-0606-852d-b7c6-2e1c2c1ceb7c",
         "words": [
           "parlor",
           "a",
@@ -70852,7 +70852,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "partial: a schema.org component word, fused from numberOfPartialBathrooms",
-        "uuid": "171ca539-d632-8ab2-b5c3-40860970a94f",
+        "uuid": "acd11f43-3ccf-880b-8004-ce8c349cd386",
         "words": [
           "partial",
           "a",
@@ -70932,7 +70932,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "participation: a schema.org component word, fused from hasParticipationOffer",
-        "uuid": "405c122f-cd89-8bb9-9def-8dc3e41b7c30",
+        "uuid": "ac4cd843-eaf9-8b49-900a-68e831bfbb20",
         "words": [
           "participation",
           "a",
@@ -71021,7 +71021,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "parts: a schema.org component word, fused from AutoPartsStore",
-        "uuid": "3c19bc01-3555-8885-a1c6-eb10910ef619",
+        "uuid": "136e3eee-fcb1-8602-b8d3-d559275d103b",
         "words": [
           "parts",
           "a",
@@ -71146,7 +71146,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "passed: a schema.org component word, fused from legislationPassedBy",
-        "uuid": "a6cbc97b-7167-8456-8f95-6f9da6bcdf34",
+        "uuid": "5b49c5a9-5fe5-8795-a71a-2ddcbdd953e4",
         "words": [
           "passed",
           "a",
@@ -71182,7 +71182,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "passenger: a schema.org component word, fused from passengerPriorityStatus, passengerSequenceNumber",
-        "uuid": "b9734f90-4a10-8393-9907-b10df128b214",
+        "uuid": "778b4e1b-ab00-8ea5-91e9-25dda0661e77",
         "words": [
           "passenger",
           "a",
@@ -71219,7 +71219,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "password: a schema.org component word, fused from ResetPasswordAction",
-        "uuid": "1a7fb4fd-0ca4-86d7-b4e4-8fb58404954c",
+        "uuid": "1e6ffa02-286c-865c-afcd-991e4b372757",
         "words": [
           "password",
           "a",
@@ -71321,7 +71321,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "path: a schema.org component word, fused from XPathType",
-        "uuid": "5283b219-89ec-8d23-9457-c4c95fc3ef6a",
+        "uuid": "1a49c138-77b6-807e-ab53-f256316def37",
         "words": [
           "path",
           "a",
@@ -71357,7 +71357,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "pathology: a schema.org component word, fused from PathologyTest",
-        "uuid": "559e5cd1-f384-89b1-9cf5-c088f335adc6",
+        "uuid": "bbfb211a-0b6e-8632-a500-301b1b5d4892",
         "words": [
           "pathology",
           "a",
@@ -71474,7 +71474,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "patients: a schema.org component word, fused from isAcceptingNewPatients",
-        "uuid": "fff5def7-43f2-8f57-8fd0-382786601fd3",
+        "uuid": "66cc2c64-9740-8dfb-86f2-269e2072b7b6",
         "words": [
           "patients",
           "a",
@@ -71510,7 +71510,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "pats: a schema.org component word, fused from cvdNumC19HOPats, cvdNumC19HospPats, cvdNumC19MechVentPats, cvdNumC19OFMechVentPats, cvdNumC19OverflowPats",
-        "uuid": "7e887881-9836-809f-aaf9-2e92fc7f7c46",
+        "uuid": "02707564-dbfc-8a95-89d3-94b3485ee820",
         "words": [
           "pats",
           "a",
@@ -71604,7 +71604,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "pawn: a schema.org component word, fused from PawnShop",
-        "uuid": "9e763de3-7ba6-8a0b-9d0d-fdfa6a135ed9",
+        "uuid": "e6f19002-40af-84b3-a5d1-268aab98b777",
         "words": [
           "pawn",
           "a",
@@ -71640,7 +71640,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "pay: a schema.org component word, fused from PayAction",
-        "uuid": "29e2c1aa-6f54-8a58-ba19-699f51c5cb72",
+        "uuid": "d7b40055-637f-852e-9f85-bf6ba656e7ba",
         "words": [
           "pay",
           "a",
@@ -71961,7 +71961,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "penalty: a schema.org component word, fused from earlyPrepaymentPenalty",
-        "uuid": "fa926f36-f104-87e2-97bb-6791798c39cd",
+        "uuid": "39369698-9ecb-8206-884e-5ae1ef48ac0b",
         "words": [
           "penalty",
           "a",
@@ -72032,7 +72032,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "people: a schema.org component word, fused from PeopleAudience",
-        "uuid": "4213d51d-4715-818d-b64f-f6dceb096e55",
+        "uuid": "7a4be20f-7b4b-8afb-982d-82ac0e0d3b24",
         "words": [
           "people",
           "a",
@@ -72101,7 +72101,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "percentage: a schema.org component word, fused from annualPercentageRate, orderPercentage, weightPercentage",
-        "uuid": "96cfab5d-f6e5-8a54-98b2-21d12ece3242",
+        "uuid": "01a1ccd7-4e62-8612-91d0-939d27abaeaf",
         "words": [
           "percentage",
           "a",
@@ -72256,7 +72256,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "perform: a schema.org component word, fused from PerformAction, performTime",
-        "uuid": "9c3b1481-bdc2-8030-b83c-1fe715896f07",
+        "uuid": "5eec0a8b-de68-86a3-a561-36d17dd1cafa",
         "words": [
           "perform",
           "a",
@@ -72293,7 +72293,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "performance: a schema.org component word, fused from PerformanceRole, firstPerformance",
-        "uuid": "c842e5f1-03f4-802c-9678-2d1a65e87958",
+        "uuid": "c383a21a-960d-8418-bdc3-a96a76174754",
         "words": [
           "performance",
           "a",
@@ -72330,7 +72330,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "performed: a schema.org component word, fused from howPerformed, workPerformed",
-        "uuid": "fa2b5103-e99b-84ee-a599-ac74270b7ab9",
+        "uuid": "78837e4b-165e-8cb1-963f-96b3a682a647",
         "words": [
           "performed",
           "a",
@@ -72452,7 +72452,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "performing: a schema.org component word, fused from PerformingArtsEvent, PerformingArtsTheater, PerformingGroup",
-        "uuid": "6e192c94-d7d0-860c-9478-216c95e658e1",
+        "uuid": "0140c401-54a0-8aa5-b696-2e56a89a32ad",
         "words": [
           "performing",
           "a",
@@ -72796,7 +72796,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "permission: a schema.org component word, fused from DigitalDocumentPermission, DigitalDocumentPermissionType, hasDigitalDocumentPermission, permissionType",
-        "uuid": "5b4d2bca-f435-8478-8cb1-aab57ac3f827",
+        "uuid": "24951d9e-15ff-86be-bab0-fd2e8f1aa7ed",
         "words": [
           "permission",
           "a",
@@ -72923,7 +72923,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "permitted: a schema.org component word, fused from permittedUsage",
-        "uuid": "b17f2c70-dacc-81ae-8a6f-35a63c7ecf36",
+        "uuid": "798675e6-638d-83d0-8ffa-1500198fa89d",
         "words": [
           "permitted",
           "a",
@@ -73071,7 +73071,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "pet: a schema.org component word, fused from PetStore",
-        "uuid": "f981d7fb-ae0d-8048-8df8-e465d01b3e1d",
+        "uuid": "73c06e8c-a7e3-8310-8eda-ddc1f92f2e90",
         "words": [
           "pet",
           "a",
@@ -73107,7 +73107,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "pets: a schema.org component word, fused from petsAllowed",
-        "uuid": "52d84e08-e9c4-8028-97df-28f1aafc1ec8",
+        "uuid": "69832be1-14aa-818f-8738-99ad3b317508",
         "words": [
           "pets",
           "a",
@@ -73143,7 +73143,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "pharmacology: a schema.org component word, fused from clincalPharmacology, clinicalPharmacology",
-        "uuid": "e12a84f3-8548-8459-b1ad-8f2e72bf7d04",
+        "uuid": "3d45096c-fc30-8de7-bfff-3af531849988",
         "words": [
           "pharmacology",
           "a",
@@ -73211,7 +73211,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "phone: a schema.org component word, fused from MobilePhoneStore, servicePhone",
-        "uuid": "fb1d8f5c-7190-8708-9950-645d65d88ef0",
+        "uuid": "21864160-5cfa-84c2-b347-24180ca25ee5",
         "words": [
           "phone",
           "a",
@@ -73248,7 +73248,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "phonetic: a schema.org component word, fused from phoneticText",
-        "uuid": "358780f7-8d8f-8f25-842f-f3047fa318e9",
+        "uuid": "3bbe3e1f-2b51-8a50-8385-2a7c86ebdce1",
         "words": [
           "phonetic",
           "a",
@@ -73376,7 +73376,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "physical: a schema.org component word, fused from PhysicalActivity, PhysicalActivityCategory, PhysicalExam, PhysicalTherapy, maximumPhysicalAttendeeCapacity, physicalRequirement",
-        "uuid": "61cd4afe-3afb-840a-98ea-11e21d563273",
+        "uuid": "10fb319b-7877-89d8-8e10-2c08a1dd11fa",
         "words": [
           "physical",
           "a",
@@ -73456,7 +73456,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "physicians: a schema.org component word, fused from PhysiciansOffice",
-        "uuid": "eab66559-452e-847e-b9c3-23541f1768bc",
+        "uuid": "4149af8d-42ea-82be-a695-56c757dd4a80",
         "words": [
           "physicians",
           "a",
@@ -73492,7 +73492,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "physiological: a schema.org component word, fused from physiologicalBenefits",
-        "uuid": "4d4d9ee8-fd3d-8481-82ca-7c8789576851",
+        "uuid": "3f61abe7-2925-81d5-86ba-21353e060594",
         "words": [
           "physiological",
           "a",
@@ -73675,7 +73675,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "pitch: a schema.org component word, fused from CampingPitch",
-        "uuid": "270e161e-0d79-8e40-b57b-0519571201bb",
+        "uuid": "a220fa00-9567-8881-8276-a6a7747cea89",
         "words": [
           "pitch",
           "a",
@@ -73746,7 +73746,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "plan: a schema.org component word, fused from ExercisePlan, FloorPlan, HealthInsurancePlan, HealthPlanCostSharingSpecification, HealthPlanFormulary, HealthPlanNetwork",
-        "uuid": "afb56657-c9d2-880c-a46a-e420c9590e7f",
+        "uuid": "e4e8196e-76b9-8dba-a048-958654f96a08",
         "words": [
           "plan",
           "a",
@@ -73926,7 +73926,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "platform: a schema.org component word, fused from DigitalPlatformEnumeration, RuntimePlatform, actionPlatform, arrivalPlatform, departurePlatform, gamePlatform",
-        "uuid": "5b754508-baa7-8e92-9bf1-97cb4be610ac",
+        "uuid": "5ab1746b-66a1-8e09-83f3-79ce98412d33",
         "words": [
           "platform",
           "a",
@@ -74026,7 +74026,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "player: a schema.org component word, fused from playerType",
-        "uuid": "3098acd1-3b8a-8df4-970c-a8092944220e",
+        "uuid": "b4868413-280a-84ca-a9d1-070c7df199c1",
         "words": [
           "player",
           "a",
@@ -74062,7 +74062,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "players: a schema.org component word, fused from numberOfPlayers, playersOnline",
-        "uuid": "8a3074b3-47a3-8e7f-8dc7-dd308588228d",
+        "uuid": "f2459833-d15e-83cb-a639-724816c5a8f8",
         "words": [
           "players",
           "a",
@@ -74162,7 +74162,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "plays: a schema.org component word, fused from UserPlays",
-        "uuid": "c7718563-cd99-8915-b372-58ba25a3b1e3",
+        "uuid": "9bf512c8-b9a3-8625-ad9f-a1fd8f9fa682",
         "words": [
           "plays",
           "a",
@@ -74343,7 +74343,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "plus: a schema.org component word, fused from UserPlusOnes",
-        "uuid": "3d94fdc8-92e0-879e-9b7b-d22754ccb56e",
+        "uuid": "df197b57-df8a-8d39-88f1-f2f06c52d569",
         "words": [
           "plus",
           "a",
@@ -74379,7 +74379,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "podcast: a schema.org component word, fused from PodcastEpisode, PodcastSeason, PodcastSeries",
-        "uuid": "59a9ceb2-5879-824c-bdd2-6905736910ec",
+        "uuid": "ebaf1522-dbd9-8e09-b8da-4816f9eff866",
         "words": [
           "podcast",
           "a",
@@ -74417,7 +74417,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "point: a schema.org component word, fused from ContactPoint, ContactPointOption, EntryPoint, contactPoint",
-        "uuid": "fca709db-609f-8d26-b416-28aecb0e87a8",
+        "uuid": "8d564313-66d0-8920-8ae5-a366e5787c1c",
         "words": [
           "point",
           "a",
@@ -74456,7 +74456,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "points: a schema.org component word, fused from contactPoints, membershipPointsEarned",
-        "uuid": "b7f88507-b4f5-85ec-8fc5-dfc3d7c6f66e",
+        "uuid": "f105d66c-ddbc-8577-be9c-96fdc72e7f7a",
         "words": [
           "points",
           "a",
@@ -74493,7 +74493,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "police: a schema.org component word, fused from PoliceStation",
-        "uuid": "5a127e62-01f6-8c49-84ce-34c5aa867988",
+        "uuid": "f55445e1-75ec-8ea8-bf4b-a5cea24cdc59",
         "words": [
           "police",
           "a",
@@ -74529,7 +74529,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "policy: a schema.org component word, fused from BoardingPolicyType, MerchantReturnPolicy, MerchantReturnPolicySeasonalOverride, ProductReturnPolicy, actionableFeedbackPolicy, boardingPolicy",
-        "uuid": "8fb0e365-0ecc-8c4c-abf7-09253f3528da",
+        "uuid": "9c813fa1-9efa-80bd-b6d2-85f48129200d",
         "words": [
           "policy",
           "a",
@@ -74570,7 +74570,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "political: a schema.org component word, fused from PoliticalParty",
-        "uuid": "9b6ee6f3-63fc-8251-a96a-74301c0ce1bc",
+        "uuid": "58f4d858-4eee-8c31-89c1-2e15c3eb51c5",
         "words": [
           "political",
           "a",
@@ -74746,7 +74746,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "polymer: a schema.org component word, fused from hasBioPolymerSequence",
-        "uuid": "f063ca55-f359-82f0-b55e-38ed16e84c10",
+        "uuid": "2ec232cb-5f97-8e25-9c72-2429270e8d70",
         "words": [
           "polymer",
           "a",
@@ -74811,7 +74811,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "pool: a schema.org component word, fused from PublicSwimmingPool",
-        "uuid": "7051e172-5287-8faf-9419-0a72de7fb0c6",
+        "uuid": "68510610-ce9b-8d14-a264-c8f485d9e90a",
         "words": [
           "pool",
           "a",
@@ -74847,7 +74847,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "population: a schema.org component word, fused from StatisticalPopulation, populationType, targetPopulation",
-        "uuid": "fda57535-61f4-8b93-87f5-c3d00d433d44",
+        "uuid": "34b26e75-6682-8201-bebd-9af762744507",
         "words": [
           "population",
           "a",
@@ -74964,7 +74964,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "pos: a schema.org component word, fused from hasPOS",
-        "uuid": "e3f4a446-bd52-8ec5-a6c0-5c315964e0c5",
+        "uuid": "30a9864a-4ebc-8d27-bb9b-6e11d843073c",
         "words": [
           "pos",
           "a",
@@ -75070,7 +75070,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "positive: a schema.org component word, fused from positiveNotes",
-        "uuid": "365487fd-aeb8-8b38-840e-7247f41eca91",
+        "uuid": "89174c50-d024-808d-8c83-d84fe6746962",
         "words": [
           "positive",
           "a",
@@ -75106,7 +75106,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "possible: a schema.org component word, fused from possibleComplication, possibleTreatment",
-        "uuid": "706dad89-15ad-8bd0-84ab-346087bb4aec",
+        "uuid": "35e921f6-97aa-8ee2-a6aa-4dd9d3adaf81",
         "words": [
           "possible",
           "a",
@@ -75143,7 +75143,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "post: a schema.org component word, fused from PostOffice, blogPost, postOfficeBoxNumber, postOp",
-        "uuid": "a0a77b5a-b2d3-8b91-ac21-28959095564b",
+        "uuid": "45a8dac4-3b84-8164-a606-659b4d9f8beb",
         "words": [
           "post",
           "a",
@@ -75199,7 +75199,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "postal: a schema.org component word, fused from PostalAddress, PostalCodeRangeSpecification, postalCode, postalCodeBegin, postalCodeEnd, postalCodePrefix",
-        "uuid": "db71fc23-cc34-832d-a2b3-b204a2a17382",
+        "uuid": "a572fb8a-314f-8697-abfe-425ca2d965e9",
         "words": [
           "postal",
           "a",
@@ -75240,7 +75240,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "posted: a schema.org component word, fused from datePosted",
-        "uuid": "d8b30428-6c15-89cf-a8a7-e3488c1066c0",
+        "uuid": "41b4872a-acfa-86b0-917b-35fb47329433",
         "words": [
           "posted",
           "a",
@@ -75403,7 +75403,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "posting: a schema.org component word, fused from BlogPosting, DiscussionForumPosting, JobPosting, LiveBlogPosting, SocialMediaPosting",
-        "uuid": "63aa9b42-0deb-8b28-b00e-cbd8a7aa00b1",
+        "uuid": "66ef4629-52b4-80d3-8c51-4f90aa4eb81d",
         "words": [
           "posting",
           "a",
@@ -75504,7 +75504,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "potential: a schema.org component word, fused from potentialAction, potentialUse",
-        "uuid": "ec043e08-e3c8-8ba9-9800-f6c4773a200a",
+        "uuid": "9b1fadfa-9a93-8814-bf67-7128f67cb8d6",
         "words": [
           "potential",
           "a",
@@ -75695,7 +75695,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "pre: a schema.org component word, fused from PreOrderAction, preOp",
-        "uuid": "39afb549-7c2b-887a-a29a-2ef92cbff7d2",
+        "uuid": "6a74623d-e29c-8f23-97e7-b2c34abe622b",
         "words": [
           "pre",
           "a",
@@ -75774,7 +75774,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "prefix: a schema.org component word, fused from honorificPrefix, postalCodePrefix",
-        "uuid": "15f967b3-7f40-8b0f-bdc1-430e526dd2fc",
+        "uuid": "0b1966f0-0ab3-887b-ac4e-f5227b183cd3",
         "words": [
           "prefix",
           "a",
@@ -75811,7 +75811,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "pregnancy: a schema.org component word, fused from DrugPregnancyCategory, pregnancyCategory, pregnancyWarning",
-        "uuid": "a34ca063-f8cc-80c5-870e-ffeddd4c0e26",
+        "uuid": "4b49174f-3966-809a-91d3-5e644f5ae98e",
         "words": [
           "pregnancy",
           "a",
@@ -75849,7 +75849,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "prep: a schema.org component word, fused from prepTime",
-        "uuid": "81e069e7-615b-8735-9a9e-f1c8386f5b98",
+        "uuid": "7fbe3835-7336-88b5-88a4-88a590511810",
         "words": [
           "prep",
           "a",
@@ -75976,7 +75976,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "prepayment: a schema.org component word, fused from earlyPrepaymentPenalty",
-        "uuid": "ebda63d2-7693-86ad-bab1-92596d0fb7c8",
+        "uuid": "b5a934d5-4179-8843-aeb4-cfd5742057c2",
         "words": [
           "prepayment",
           "a",
@@ -76012,7 +76012,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "prepend: a schema.org component word, fused from PrependAction",
-        "uuid": "b664d17d-1535-8fda-becd-23302c7df018",
+        "uuid": "16743b56-c4fd-81d1-a78f-c184879ecf7f",
         "words": [
           "prepend",
           "a",
@@ -76099,7 +76099,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "prerequisites: a schema.org component word, fused from coursePrerequisites, programPrerequisites",
-        "uuid": "893222b1-103d-8214-a85e-5f60b2f99410",
+        "uuid": "1010b127-56f6-8f84-aa62-3422c5a0b50c",
         "words": [
           "prerequisites",
           "a",
@@ -76165,7 +76165,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "prescribing: a schema.org component word, fused from prescribingInfo",
-        "uuid": "ce564b15-f1a8-8f95-b7cf-5466e121ab7b",
+        "uuid": "d9974c21-da77-8b86-ba30-7a8791166455",
         "words": [
           "prescribing",
           "a",
@@ -76201,7 +76201,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "prescription: a schema.org component word, fused from DrugPrescriptionStatus, offersPrescriptionByMail, prescriptionStatus",
-        "uuid": "7d9c3c4a-92d4-87c3-bc41-135675c6d465",
+        "uuid": "cbb6c4d4-1b08-86c0-8c77-9b31e775981b",
         "words": [
           "prescription",
           "a",
@@ -76239,7 +76239,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "presentation: a schema.org component word, fused from PresentationDigitalDocument",
-        "uuid": "0780180f-b40b-8598-ab9c-ff2fa5517b99",
+        "uuid": "04d10890-a3bd-8647-8233-12f4182f0ece",
         "words": [
           "presentation",
           "a",
@@ -76275,7 +76275,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "presented: a schema.org component word, fused from workPresented",
-        "uuid": "22c7feed-d7d0-8abc-86ee-4f819f9a366d",
+        "uuid": "fc148f23-0e5e-8ec5-94cf-38943995472b",
         "words": [
           "presented",
           "a",
@@ -76311,7 +76311,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "prevention: a schema.org component word, fused from PreventionIndication, diseasePreventionInfo, primaryPrevention, secondaryPrevention",
-        "uuid": "e9307f67-c741-87e3-9380-42e22fadcfee",
+        "uuid": "cde3ba2f-2c86-85e2-a408-d0a2c6d80e77",
         "words": [
           "prevention",
           "a",
@@ -76350,7 +76350,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "previous: a schema.org component word, fused from numberOfPreviousOwners, previousItem, previousStartDate",
-        "uuid": "cdf612b5-ba8c-85ae-850c-d4f4bff6133d",
+        "uuid": "44cfa656-0776-869a-a772-cec085d7d437",
         "words": [
           "previous",
           "a",
@@ -76444,7 +76444,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "primary: a schema.org component word, fused from primaryImageOfPage, primaryPrevention",
-        "uuid": "19b1cc2c-10d1-84ca-a60e-a011cbbb4805",
+        "uuid": "54ffcdd0-44cd-8bb8-84f5-af561b1feda9",
         "words": [
           "primary",
           "a",
@@ -76531,7 +76531,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "principles: a schema.org component word, fused from publishingPrinciples",
-        "uuid": "ef8deb8d-c740-85ec-a307-6fcd0842251c",
+        "uuid": "07736bb9-33c6-8723-9514-655cc24ad4ae",
         "words": [
           "principles",
           "a",
@@ -76567,7 +76567,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "print: a schema.org component word, fused from printColumn, printEdition, printPage, printSection",
-        "uuid": "e43f65af-60d4-8fb9-bd9c-d05cb3019e80",
+        "uuid": "63f2bb5c-081e-811c-9d1d-904476c43fcc",
         "words": [
           "print",
           "a",
@@ -76606,7 +76606,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "priorities: a schema.org component word, fused from missionCoveragePrioritiesPolicy",
-        "uuid": "a1d72173-e4ac-8f48-a73e-db15842cb240",
+        "uuid": "934229e6-7ca0-8a6b-bf51-cb111a460ea9",
         "words": [
           "priorities",
           "a",
@@ -76812,7 +76812,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "process: a schema.org component word, fused from actionProcess, isInvolvedInBiologicalProcess",
-        "uuid": "a0b83cee-84aa-8f7f-ab7c-2b0ba5f4b9c0",
+        "uuid": "49cce2a5-cfdb-8b97-a1e5-1af6b97db8bc",
         "words": [
           "process",
           "a",
@@ -76849,7 +76849,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "processing: a schema.org component word, fused from countryOfLastProcessing, processingTime",
-        "uuid": "165e6a36-a867-8f0b-9cb2-fa5603b868db",
+        "uuid": "5306b5ee-fe82-8f43-ac00-7c0b4d8aba5d",
         "words": [
           "processing",
           "a",
@@ -76886,7 +76886,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "processor: a schema.org component word, fused from processorRequirements",
-        "uuid": "3e117e10-e41b-8b46-abac-662a023b0433",
+        "uuid": "42ff031f-b528-8ecf-80d7-c5b4bb4e7d2c",
         "words": [
           "processor",
           "a",
@@ -77063,7 +77063,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "production: a schema.org component word, fused from MusicAlbumProductionType, albumProductionType, productionCompany, productionDate",
-        "uuid": "e8110b55-c464-8fe3-b0c6-248b3d9c3e0e",
+        "uuid": "2a14c2ec-6266-8418-9080-0655779c74c6",
         "words": [
           "production",
           "a",
@@ -77102,7 +77102,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "products: a schema.org component word, fused from SomeProducts",
-        "uuid": "e55e56b9-c95b-8c17-9631-e8ebcca52dca",
+        "uuid": "d331d9a7-cc23-8e6c-928f-036e6b20a623",
         "words": [
           "products",
           "a",
@@ -77206,7 +77206,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "professional: a schema.org component word, fused from ProfessionalService",
-        "uuid": "2fddf255-57ad-85fe-8bbe-6bf7c498ec91",
+        "uuid": "457743be-8066-8ef8-8cc8-9a2bd70fd1ae",
         "words": [
           "professional",
           "a",
@@ -77242,7 +77242,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "proficiency: a schema.org component word, fused from proficiencyLevel",
-        "uuid": "96160593-ee30-8fd8-af46-0042ce959597",
+        "uuid": "4fd66b4a-1c51-8525-bad9-df24c56d1827",
         "words": [
           "proficiency",
           "a",
@@ -77278,7 +77278,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "profile: a schema.org component word, fused from ProfilePage",
-        "uuid": "7dbf797a-32a8-8bbc-bf7f-3329f9e749dc",
+        "uuid": "2a0bbb0b-3d3a-8f6d-a711-97e804f63bbf",
         "words": [
           "profile",
           "a",
@@ -77314,7 +77314,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "prognosis: a schema.org component word, fused from expectedPrognosis",
-        "uuid": "a9b61c6c-4938-81e3-a85a-4162e2ec91f9",
+        "uuid": "af60af9e-f4c3-8866-8432-edc3d798cdee",
         "words": [
           "prognosis",
           "a",
@@ -77383,7 +77383,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "programming: a schema.org component word, fused from programmingLanguage, programmingModel",
-        "uuid": "a1d3e119-8b02-8318-b493-f75b79170686",
+        "uuid": "c9d7c3ec-8eba-864b-8da5-b0745a1f81ef",
         "words": [
           "programming",
           "a",
@@ -77420,7 +77420,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "progression: a schema.org component word, fused from naturalProgression",
-        "uuid": "6d85afc5-aa9f-8588-9c7b-fb4a250c3fd8",
+        "uuid": "ccc182ca-f448-84c0-a8a3-ffccae2c6f74",
         "words": [
           "progression",
           "a",
@@ -77507,7 +77507,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "promise: a schema.org component word, fused from WarrantyPromise, warrantyPromise",
-        "uuid": "96e53235-9b97-8644-8317-5c534a54e5a8",
+        "uuid": "cc8b38b7-a992-8eec-b280-0f7253f32701",
         "words": [
           "promise",
           "a",
@@ -77597,7 +77597,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "pronounceable: a schema.org component word, fused from PronounceableText",
-        "uuid": "c81cdb27-f04e-836b-9f94-dcf85f9761ff",
+        "uuid": "86badd67-a12b-8be5-b5f2-f7b8f7fcb5c1",
         "words": [
           "pronounceable",
           "a",
@@ -78387,7 +78387,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "provides: a schema.org component word, fused from providesBroadcastService, providesService",
-        "uuid": "6ab36646-14d9-827a-a9ae-3cb0531edd73",
+        "uuid": "e3b7e8af-4f6e-8fff-a857-8b00e9583d8a",
         "words": [
           "provides",
           "a",
@@ -78556,7 +78556,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "psychological: a schema.org component word, fused from PsychologicalTreatment",
-        "uuid": "daadfd3c-a48b-83be-af06-83924d635bfd",
+        "uuid": "400313bd-cb13-8613-adeb-1b80faff80e6",
         "words": [
           "psychological",
           "a",
@@ -78592,7 +78592,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "pub: a schema.org component word, fused from BarOrPub",
-        "uuid": "907464ab-d141-8152-b372-03ea5f41101d",
+        "uuid": "123b5022-a19b-8506-b4d0-7e6d0f47f6cc",
         "words": [
           "pub",
           "a",
@@ -78628,7 +78628,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "public: a schema.org component word, fused from AskPublicNewsArticle, PublicSwimmingPool, PublicToilet, publicAccess, publicTransportClosuresInfo",
-        "uuid": "e69ab5db-caec-88e9-bc53-642f58b6a4c1",
+        "uuid": "f7b08617-4305-8c2d-a3a9-b2b8abdd18a9",
         "words": [
           "public",
           "a",
@@ -78770,7 +78770,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "publishing: a schema.org component word, fused from publishingPrinciples",
-        "uuid": "7dc10c6b-81bc-8ab0-9756-81068c9ad3d0",
+        "uuid": "5a43eb56-aebf-8b6d-9732-ba85fb46eecb",
         "words": [
           "publishing",
           "a",
@@ -78806,7 +78806,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "purchase: a schema.org component word, fused from OfferForPurchase, PurchaseType, purchaseDate, purchasePriceLimit, purchaseType",
-        "uuid": "5abb6a1d-2de8-89b3-81fb-d0d288779ec2",
+        "uuid": "d4aaec7d-a102-8045-a514-20dd51703714",
         "words": [
           "purchase",
           "a",
@@ -78846,7 +78846,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "purpose: a schema.org component word, fused from MedicalDevicePurpose",
-        "uuid": "d5a2a57a-f086-8e26-93a9-e7ed3b0d6162",
+        "uuid": "d3f87d86-4a30-844f-925a-1ef7f738fa59",
         "words": [
           "purpose",
           "a",
@@ -78942,7 +78942,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "qa: a schema.org component word, fused from QAPage",
-        "uuid": "eb6b8065-9281-8d3f-99ab-4042d5f002bf",
+        "uuid": "47e8e45a-6087-83c3-ae8a-5ac12ca085ff",
         "words": [
           "qa",
           "a",
@@ -79062,7 +79062,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "qualified: a schema.org component word, fused from IncentiveQualifiedExpenseType, qualifiedExpense",
-        "uuid": "56b998ec-b3a1-85cd-b1d3-d337775f8430",
+        "uuid": "2d1dbbb9-50c6-81ce-9b34-0fa9725542d4",
         "words": [
           "qualified",
           "a",
@@ -79099,7 +79099,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "qualifier: a schema.org component word, fused from measurementQualifier",
-        "uuid": "f067020d-ae9e-870b-b4ea-e6eb7dc2e9c6",
+        "uuid": "ce02a85b-f64e-8492-8888-66a1040c0c7f",
         "words": [
           "qualifier",
           "a",
@@ -79135,7 +79135,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "qualitative: a schema.org component word, fused from QualitativeValue",
-        "uuid": "60d592f4-a779-8d87-a697-d5e78195f7fc",
+        "uuid": "4e2e2476-d560-86aa-b3b9-912ee5a795e5",
         "words": [
           "qualitative",
           "a",
@@ -79171,7 +79171,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "quality: a schema.org component word, fused from videoQuality",
-        "uuid": "337a6c9c-6ccb-8833-b040-1146c9e19006",
+        "uuid": "e3fda9b6-4f7c-810e-97e7-e7bcde857133",
         "words": [
           "quality",
           "a",
@@ -79207,7 +79207,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "quantitative: a schema.org component word, fused from QuantitativeValue, QuantitativeValueDistribution",
-        "uuid": "d06f4efe-f67a-8d89-b8f9-77631ea3262b",
+        "uuid": "fa47b301-6c97-8066-a363-7df12d9a9626",
         "words": [
           "quantitative",
           "a",
@@ -79708,6 +79708,68 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "math",
+    "path": "quantum/math",
+    "translations": [
+      {
+        "key": "name",
+        "source": "math",
+        "uuid": "a44b845c-dd6a-8d0b-919c-987a880a069d",
+        "words": [
+          "math"
+        ],
+        "values": {
+          "en": "math"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when computing mathematics on the uuid/matrix substrate — the digital root (mod-9, the rodin group), the content-uuid's own digit, arithmetic closed mod-9; the template for wiring every science as a quantum facet.",
+        "uuid": "000801a9-39f9-8228-8ea4-db2d4f97b25e",
+        "words": [
+          "use",
+          "when",
+          "computing",
+          "mathematics",
+          "on",
+          "the",
+          "uuid",
+          "matrix",
+          "substrate",
+          "the",
+          "digital",
+          "root",
+          "mod",
+          "the",
+          "rodin",
+          "group",
+          "the",
+          "content",
+          "uuid",
+          "s",
+          "own",
+          "digit",
+          "arithmetic",
+          "closed",
+          "mod",
+          "the",
+          "template",
+          "for",
+          "wiring",
+          "every",
+          "science",
+          "as",
+          "a",
+          "quantum",
+          "facet"
+        ],
+        "values": {
+          "en": "Use when computing mathematics on the uuid/matrix substrate — the digital root (mod-9, the rodin group), the content-uuid's own digit, arithmetic closed mod-9; the template for wiring every science as a quantum facet."
+        }
+      }
+    ]
+  },
+  {
     "atom": "matrix",
     "path": "quantum/matrix",
     "translations": [
@@ -79770,6 +79832,70 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "schema",
+    "path": "quantum/schema",
+    "translations": [
+      {
+        "key": "name",
+        "source": "schema",
+        "uuid": "a5313630-9569-8bc2-80c5-6b4d491cd846",
+        "words": [
+          "schema"
+        ],
+        "values": {
+          "en": "schema"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about schema identity and drift on the matrix — a schema as the content-uuid of its canonical form, so identical schemas merge and any change yields a new uuid forcing re-verification by architecture.",
+        "uuid": "3db40e51-5635-8b15-b1a1-54814f934e32",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "schema",
+          "identity",
+          "and",
+          "drift",
+          "on",
+          "the",
+          "matrix",
+          "a",
+          "schema",
+          "as",
+          "the",
+          "content",
+          "uuid",
+          "of",
+          "its",
+          "canonical",
+          "form",
+          "so",
+          "identical",
+          "schemas",
+          "merge",
+          "and",
+          "any",
+          "change",
+          "yields",
+          "a",
+          "new",
+          "uuid",
+          "forcing",
+          "re",
+          "verification",
+          "by",
+          "architecture"
+        ],
+        "values": {
+          "en": "Use when reasoning about schema identity and drift on the matrix — a schema as the content-uuid of its canonical form, so identical schemas merge and any change yields a new uuid forcing re-verification by architecture."
+        }
+      }
+    ]
+  },
+  {
     "atom": "translator",
     "path": "quantum/translator",
     "translations": [
@@ -79824,6 +79950,67 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "type",
+    "path": "quantum/type",
+    "translations": [
+      {
+        "key": "name",
+        "source": "type",
+        "uuid": "793bb33f-07c3-850a-b65b-a98e94678559",
+        "words": [
+          "type"
+        ],
+        "values": {
+          "en": "type"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about type identity on the matrix — a type as the content-uuid of its structural shape, so type-equality is uuid-equality (structural typing by content-addressing) and identical types merge.",
+        "uuid": "d3ca8b91-40cc-813e-9129-4022aec76142",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "type",
+          "identity",
+          "on",
+          "the",
+          "matrix",
+          "a",
+          "type",
+          "as",
+          "the",
+          "content",
+          "uuid",
+          "of",
+          "its",
+          "structural",
+          "shape",
+          "so",
+          "type",
+          "equality",
+          "is",
+          "uuid",
+          "equality",
+          "structural",
+          "typing",
+          "by",
+          "content",
+          "addressing",
+          "and",
+          "identical",
+          "types",
+          "merge"
+        ],
+        "values": {
+          "en": "Use when reasoning about type identity on the matrix — a type as the content-uuid of its structural shape, so type-equality is uuid-equality (structural typing by content-addressing) and identical types merge."
+        }
+      }
+    ]
+  },
+  {
     "atom": "quarantine",
     "path": "quarantine",
     "translations": [
@@ -79841,7 +80028,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "quarantine: a schema.org component word, fused from quarantineGuidelines",
-        "uuid": "abb9cf4f-4e3a-8c05-bb86-c484d9ba3f7c",
+        "uuid": "da2dd95e-418a-8e2e-84cc-519bc99156c6",
         "words": [
           "quarantine",
           "a",
@@ -80253,7 +80440,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "quote: a schema.org component word, fused from QuoteAction",
-        "uuid": "5acada60-8d77-8d11-912c-dd8f80b6ff55",
+        "uuid": "cc33009b-390c-8365-962f-bda07949e849",
         "words": [
           "quote",
           "a",
@@ -80289,7 +80476,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "radiation: a schema.org component word, fused from RadiationTherapy",
-        "uuid": "60914c37-e69a-8096-b1b3-f90fbdeb55e7",
+        "uuid": "e0687adc-e5cd-894b-aa5e-ad9999b0907f",
         "words": [
           "radiation",
           "a",
@@ -80325,7 +80512,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "radio: a schema.org component word, fused from AMRadioChannel, FMRadioChannel, RadioBroadcastService, RadioChannel, RadioClip, RadioEpisode",
-        "uuid": "4a35efe6-296b-8faf-9f8f-84a2e6bdc681",
+        "uuid": "b9fa1134-b269-82dc-81a7-21e8fc0b5f0c",
         "words": [
           "radio",
           "a",
@@ -80366,7 +80553,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "radius: a schema.org component word, fused from geoRadius",
-        "uuid": "8811dc5d-32c2-899f-baef-6a98d56646c6",
+        "uuid": "d83b16ed-c5c3-8398-8869-3b27d1394bf6",
         "words": [
           "radius",
           "a",
@@ -80402,7 +80589,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "range: a schema.org component word, fused from PostalCodeRangeSpecification, normalRange, postalCodeRange, priceRange, rangeIncludes, taxonomicRange",
-        "uuid": "341c418f-1a8f-8948-b4f4-0716429ceb09",
+        "uuid": "b3b68bf8-a26d-8103-9391-211e8869ad5c",
         "words": [
           "range",
           "a",
@@ -80443,7 +80630,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "rank: a schema.org component word, fused from taxonRank",
-        "uuid": "bddcb4e4-f78c-8acc-8bff-c6a5e0135e4e",
+        "uuid": "370c5b0a-bf0d-8f0c-81bb-c3812827590a",
         "words": [
           "rank",
           "a",
@@ -80612,7 +80799,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "react: a schema.org component word, fused from ReactAction",
-        "uuid": "50fb210a-4832-8eea-aa02-47ecca6eb4d5",
+        "uuid": "db7400cb-95eb-8e49-bf9c-ec0d28afe65f",
         "words": [
           "react",
           "a",
@@ -80682,7 +80869,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "readonly: a schema.org component word, fused from readonlyValue",
-        "uuid": "b6d5501e-1f4f-89ed-be25-fe2b5125413a",
+        "uuid": "b45ebf2b-1fef-8cef-8622-2f84645e82f7",
         "words": [
           "readonly",
           "a",
@@ -80718,7 +80905,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "real: a schema.org component word, fused from RealEstateAgent, RealEstateListing, realEstateAgent",
-        "uuid": "6f917816-721a-83b4-9ab7-2706d6ec029e",
+        "uuid": "fba0d4f7-89ba-87e0-81d4-34cf5d06c9ad",
         "words": [
           "real",
           "a",
@@ -80931,7 +81118,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when issuing, querying, or auditing Наредба Н-18 fiscal receipts — касови бонове and e-receipts (alternative regime) — carrying УНП, fiscal-QR payload, VAT breakdown per tax group, and payment type; tamper-evident via content-uuid audit chain; never deleted. The Н-18 fiscal receipt collection.",
-        "uuid": "c9c07f2f-a0bf-84b3-8271-81322a4a0aa6",
+        "uuid": "c33fbdd5-fb1f-82e2-9cab-fa964cb62fcd",
         "words": [
           "use",
           "when",
@@ -80996,7 +81183,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "receive: a schema.org component word, fused from ReceiveAction",
-        "uuid": "a63490c0-9084-8109-bbd8-d063eb4c480f",
+        "uuid": "e74a1ea9-b38b-8cca-a0a0-5d78f24708d9",
         "words": [
           "receive",
           "a",
@@ -81032,7 +81219,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "received: a schema.org component word, fused from dateReceived",
-        "uuid": "5cb3dd3a-3b5c-8f15-992c-9ee93277af02",
+        "uuid": "8bbd929a-51dc-8304-8077-249eb92d00ec",
         "words": [
           "received",
           "a",
@@ -81269,7 +81456,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "recognizing: a schema.org component word, fused from recognizingAuthority",
-        "uuid": "fcc8e6b3-5a1a-8e25-ae40-f33b412ad081",
+        "uuid": "800a85bb-495d-8c40-a196-cf148c187cdf",
         "words": [
           "recognizing",
           "a",
@@ -81305,7 +81492,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Recommendation is a type of Review that suggests or proposes something as the best option or best course of action. Recommendations may be for products or services, or other concrete things, as in the",
-        "uuid": "fc3e5589-e4da-88e3-b0f6-18419a259c4b",
+        "uuid": "3c723a37-a110-8ada-85ef-bcac57086379",
         "words": [
           "recommendation",
           "is",
@@ -81366,7 +81553,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "recommended: a schema.org component word, fused from RecommendedDoseSchedule, recommendedIntake",
-        "uuid": "e04d67d5-9241-8bc4-bea3-c03465837b50",
+        "uuid": "fc62495d-568a-8c29-bd11-2806ac6173f0",
         "words": [
           "recommended",
           "a",
@@ -81511,7 +81698,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "record: a schema.org component word, fused from CDCPMDRecord, recordLabel",
-        "uuid": "b86dd435-555d-8d98-be5d-fc8eb7499b3b",
+        "uuid": "90fb03d5-a5ee-80d3-9240-c5bc981daf0f",
         "words": [
           "record",
           "a",
@@ -81616,7 +81803,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "recourse: a schema.org component word, fused from recourseLoan",
-        "uuid": "efb97e6b-c7c2-8797-af5c-baeaf735342c",
+        "uuid": "d51ed944-8c74-8b5b-8100-de3a28724ec8",
         "words": [
           "recourse",
           "a",
@@ -81652,7 +81839,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a Payload collection/config reorg or rename leaves the build broken — `tsc` crashes with \"Maximum call stack size exceeded\", hundreds of type errors after moving collections, or `payload generate:types` fails with InvalidFieldRelationship, DuplicateFieldName, \"does not provide an export named 'default'\", or ERR_MODULE_NOT_FOUND.",
-        "uuid": "c1d699b1-4863-80a0-b227-b85fab27ae14",
+        "uuid": "718fcb80-ee73-81b9-bb27-50f6737b3942",
         "words": [
           "use",
           "when",
@@ -81727,7 +81914,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "recycling: a schema.org component word, fused from RecyclingCenter",
-        "uuid": "a01dc2bc-25dd-819a-894f-ebc4f074288e",
+        "uuid": "6cbaa5a4-fd33-8539-b806-5c21851e9b55",
         "words": [
           "recycling",
           "a",
@@ -82158,7 +82345,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "reference: a schema.org component word, fused from APIReference, contentReferenceTime, referenceQuantity, valueReference",
-        "uuid": "2dfde29f-d6d7-8e52-aed9-d53d341e4ca7",
+        "uuid": "9137ac51-e731-8016-9b91-89da2a24f57c",
         "words": [
           "reference",
           "a",
@@ -82197,7 +82384,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "references: a schema.org component word, fused from referencesOrder",
-        "uuid": "d8c396f0-3cca-821f-944d-38a468e0978a",
+        "uuid": "5663acab-2c17-8c93-8322-31ac9faa4c24",
         "words": [
           "references",
           "a",
@@ -82233,7 +82420,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "refund: a schema.org component word, fused from RefundTypeEnumeration, refundType",
-        "uuid": "8799021b-d06e-8e05-8996-941bb9da7ece",
+        "uuid": "f185542c-ed71-82c6-a953-8d6fcc07a66e",
         "words": [
           "refund",
           "a",
@@ -82270,7 +82457,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "region: a schema.org component word, fused from DefinedRegion, addressRegion, eligibleRegion, ineligibleRegion, regionDrained",
-        "uuid": "c61fc9d5-b64b-8225-b170-129d2274d3ad",
+        "uuid": "a47a1cad-1404-83a2-bf37-f8563e4c66a1",
         "words": [
           "region",
           "a",
@@ -82310,7 +82497,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "regions: a schema.org component word, fused from regionsAllowed",
-        "uuid": "162d3e60-83cf-869f-a603-603e2e5d3b25",
+        "uuid": "c2537fe6-89f1-8a4d-95bb-f86e1e4b0bfe",
         "words": [
           "regions",
           "a",
@@ -82346,7 +82533,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "register: a schema.org component word, fused from RegisterAction, UnRegisterAction",
-        "uuid": "18e7cc38-1c9e-8d40-98a4-f351a7fd4292",
+        "uuid": "b0922b3c-c50f-85d9-bb61-ad3abb31fdb0",
         "words": [
           "register",
           "a",
@@ -82383,7 +82570,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "registered: a schema.org component word, fused from dateVehicleFirstRegistered",
-        "uuid": "425a81de-916b-8afd-b5fe-92280cdac822",
+        "uuid": "60e0c8de-881d-84d8-b6e9-3a26527e2c49",
         "words": [
           "registered",
           "a",
@@ -82419,7 +82606,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "registration: a schema.org component word, fused from companyRegistration",
-        "uuid": "57822ce4-213b-8c80-bd65-502c9795f60c",
+        "uuid": "41d38c15-11f1-892e-8872-31d6410c81a1",
         "words": [
           "registration",
           "a",
@@ -82526,7 +82713,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "reject: a schema.org component word, fused from RejectAction",
-        "uuid": "3045e65b-6e90-84dc-8079-bcb85f725033",
+        "uuid": "bbe52a2d-be18-8dfb-864b-eb4a705ab8c4",
         "words": [
           "reject",
           "a",
@@ -82648,7 +82835,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "relationship: a schema.org component word, fused from linkRelationship",
-        "uuid": "7b697ae2-a74a-8830-9700-64cbdc349630",
+        "uuid": "37b87977-efa7-8ff9-a09e-16630799a294",
         "words": [
           "relationship",
           "a",
@@ -82718,7 +82905,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "released: a schema.org component word, fused from releasedEvent",
-        "uuid": "a131e340-3dd8-8eb9-9fa0-8e3d51b86c6e",
+        "uuid": "d66576bc-d094-80ed-80bd-c4a7fe7825eb",
         "words": [
           "released",
           "a",
@@ -82754,7 +82941,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "relevant: a schema.org component word, fused from relevantOccupation, relevantSpecialty",
-        "uuid": "f8a8101f-85d7-8d9a-8df1-74e6ec3fd2e8",
+        "uuid": "c83de5c0-fb75-8209-8bf2-381c1219c7d5",
         "words": [
           "relevant",
           "a",
@@ -82869,7 +83056,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "remaining: a schema.org component word, fused from remainingAttendeeCapacity",
-        "uuid": "42571c96-8e78-8c88-8377-8557b04d1506",
+        "uuid": "aa7240b5-482a-8dbe-abc9-61adb16116ca",
         "words": [
           "remaining",
           "a",
@@ -82954,7 +83141,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "remorse: a schema.org component word, fused from customerRemorseReturnFees, customerRemorseReturnLabelSource, customerRemorseReturnShippingFeesAmount",
-        "uuid": "8e3d9bc4-baa5-8009-83d5-c8d846a34488",
+        "uuid": "50c83c1d-e126-838e-8743-9611c783fc3c",
         "words": [
           "remorse",
           "a",
@@ -82992,7 +83179,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "renegotiable: a schema.org component word, fused from renegotiableLoan",
-        "uuid": "61b11a47-1ddd-8749-873a-85e0baad78ba",
+        "uuid": "c6cc485b-fac4-83fd-b8dc-8956fb9d0de7",
         "words": [
           "renegotiable",
           "a",
@@ -83028,7 +83215,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "rent: a schema.org component word, fused from RentAction",
-        "uuid": "f3fd4f55-15e4-84b5-84c7-da797b18dfc1",
+        "uuid": "50e92413-a82c-8d50-8373-9ec90696d7b4",
         "words": [
           "rent",
           "a",
@@ -83064,7 +83251,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "rental: a schema.org component word, fused from AutoRental, MovieRentalStore, RentalCarReservation, VacationRental",
-        "uuid": "2c1d6706-1b54-855a-a4cc-60877020debb",
+        "uuid": "3324bd65-3705-8a3a-a7b9-b6e59e7a8c77",
         "words": [
           "rental",
           "a",
@@ -83103,7 +83290,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "repair: a schema.org component word, fused from AutoRepair, MotorcycleRepair",
-        "uuid": "35064cb4-0678-87b8-ad87-c891d4384213",
+        "uuid": "8f428c05-24f5-88b7-9306-0968ba86ccc2",
         "words": [
           "repair",
           "a",
@@ -83140,7 +83327,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "repayment: a schema.org component word, fused from RepaymentSpecification, loanRepaymentForm, monthlyMinimumRepaymentAmount",
-        "uuid": "e06c9dd2-81d5-840b-9ada-e26b91997c26",
+        "uuid": "adc7e179-94f4-8134-87b5-54ec5907f36d",
         "words": [
           "repayment",
           "a",
@@ -83178,7 +83365,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "repeals: a schema.org component word, fused from legislationRepeals",
-        "uuid": "720b792d-9a3c-85da-b95d-f108ff4e18b0",
+        "uuid": "01d1d6f0-cc25-8938-89af-87755a3be485",
         "words": [
           "repeals",
           "a",
@@ -83214,7 +83401,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "repeat: a schema.org component word, fused from repeatCount, repeatFrequency",
-        "uuid": "62503433-adc4-8098-8ec2-8834fa4c4a3c",
+        "uuid": "08ee1c5f-a226-8b9f-a721-38b4f55e7912",
         "words": [
           "repeat",
           "a",
@@ -83335,7 +83522,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "replace: a schema.org component word, fused from ReplaceAction",
-        "uuid": "24a15d2d-40dd-8f88-947f-29cc2ed94b91",
+        "uuid": "c39f8bc2-8da4-81a3-8c0d-4523ab9e6ac7",
         "words": [
           "replace",
           "a",
@@ -83500,7 +83687,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "reply: a schema.org component word, fused from ReplyAction, replyToUrl",
-        "uuid": "9fed23d1-e28e-8223-8e7e-1fc88217dee0",
+        "uuid": "42a71f1b-5865-8734-bbec-c7acada3ad7d",
         "words": [
           "reply",
           "a",
@@ -83573,7 +83760,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "reportage: a schema.org component word, fused from ReportageNewsArticle",
-        "uuid": "7072f835-9576-83d1-9212-bf3210ec2ef4",
+        "uuid": "57063a3b-9514-846b-9ef2-6461492ef8db",
         "words": [
           "reportage",
           "a",
@@ -83609,7 +83796,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "reported: a schema.org component word, fused from ReportedDoseSchedule",
-        "uuid": "24256cdc-455d-8ef3-aa39-b4a145e8c501",
+        "uuid": "f061cbc7-08bf-89e0-851d-2b7e3daaf4f8",
         "words": [
           "reported",
           "a",
@@ -83645,7 +83832,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "reporting: a schema.org component word, fused from healthcareReportingData",
-        "uuid": "dad9056f-ed56-8d48-abcc-aa420b3053c6",
+        "uuid": "e722a72b-7c40-8e9b-b7ad-e8dfd218af89",
         "words": [
           "reporting",
           "a",
@@ -83681,7 +83868,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "repository: a schema.org component word, fused from codeRepository",
-        "uuid": "f0383f22-c680-860f-ae5c-462a5958ce7b",
+        "uuid": "ecae2eb7-9773-88e5-87c3-f9a3b5480c11",
         "words": [
           "repository",
           "a",
@@ -83717,7 +83904,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "representation: a schema.org component word, fused from hasRepresentation",
-        "uuid": "fa74108c-3860-8438-953d-3d9c1ff246d0",
+        "uuid": "e2d8d406-91e6-8b1b-af0b-ebf9fdeb5728",
         "words": [
           "representation",
           "a",
@@ -83753,7 +83940,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "representative: a schema.org component word, fused from legalRepresentative, representativeOfPage",
-        "uuid": "55151cea-34fa-86ec-b36b-06b44af9d8e1",
+        "uuid": "b820dc5f-4be4-896c-9edd-4b325dd72e15",
         "words": [
           "representative",
           "a",
@@ -83840,7 +84027,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "required: a schema.org component word, fused from competencyRequired, requiredCollateral, requiredGender, requiredMaxAge, requiredMinAge, requiredQuantity",
-        "uuid": "d5c2ce76-dd10-8435-acd6-d04c818f94b7",
+        "uuid": "f31b8c3c-16e4-868a-b039-1a0a9c2e3dbb",
         "words": [
           "required",
           "a",
@@ -83881,7 +84068,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "requirement: a schema.org component word, fused from actionAccessibilityRequirement, advanceBookingRequirement, eligibilityToWorkRequirement, hasTierRequirement, physicalRequirement, securityClearance",
-        "uuid": "5fd03b2f-8727-87fa-8c29-2fa1463a4bb4",
+        "uuid": "70ee0cc1-dc3a-8bff-9cb7-521a52a49a1d",
         "words": [
           "requirement",
           "a",
@@ -83922,7 +84109,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "requires: a schema.org component word, fused from requiresSubscription",
-        "uuid": "3130c4a4-f7e2-8790-86a6-c5aa3d41b949",
+        "uuid": "ffb85912-bbbc-8311-af02-7e8286670e5b",
         "words": [
           "requires",
           "a",
@@ -84007,7 +84194,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "rescue: a schema.org component word, fused from SearchRescueOrganization",
-        "uuid": "674ac94f-fac5-8cb9-8c57-2d241751ce80",
+        "uuid": "46d6ff12-b3ae-826f-b122-ef9a6f291cba",
         "words": [
           "rescue",
           "a",
@@ -84200,7 +84387,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Describes a reservation for travel, dining or an event. Some reservations require tickets. Note: This type is for information about actual reservations, e.g. in confirmation emails or HTML pages with ",
-        "uuid": "2f4b3f61-a51b-86f5-9b4c-ccc4c009deb2",
+        "uuid": "fb23d48f-6620-8566-a8e7-e83d2a04a6ef",
         "words": [
           "describes",
           "a",
@@ -84258,7 +84445,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "reservations: a schema.org component word, fused from acceptsReservations",
-        "uuid": "97573f13-406a-85bc-88d2-c800bd0ba1b9",
+        "uuid": "e1876e3a-34cb-820e-8938-77b7ef24d2a2",
         "words": [
           "reservations",
           "a",
@@ -84294,7 +84481,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "reserve: a schema.org component word, fused from ReserveAction",
-        "uuid": "accc0517-c197-8b00-a18f-7cf829d7f0de",
+        "uuid": "10d4b9ef-3fe8-8821-b278-121be57d362a",
         "words": [
           "reserve",
           "a",
@@ -84330,7 +84517,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "reserved: a schema.org component word, fused from reservedTicket",
-        "uuid": "4e619b8f-371f-8647-a2bc-ac55b5150a56",
+        "uuid": "d2e01117-5ad9-8b68-a536-0cf275a2efa1",
         "words": [
           "reserved",
           "a",
@@ -84407,7 +84594,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "reset: a schema.org component word, fused from ResetPasswordAction",
-        "uuid": "f1785a45-1b1d-8b6f-a840-8e16a0e9b5d1",
+        "uuid": "ae862d2c-d136-872d-8767-ec5b09adad6f",
         "words": [
           "reset",
           "a",
@@ -84632,7 +84819,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "resource: a schema.org component word, fused from LearningResource, learningResourceType",
-        "uuid": "c94ebdfc-34fd-8877-97e5-154a395f6b99",
+        "uuid": "5d467019-9ad8-808f-9abe-21c16ee584e7",
         "words": [
           "resource",
           "a",
@@ -84669,7 +84856,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "response: a schema.org component word, fused from RsvpResponseType, rsvpResponse",
-        "uuid": "60f4a7bb-5be9-8f76-8937-a58c95cc159e",
+        "uuid": "a163aff5-4f84-86e3-8cf4-71a9b99e0e5c",
         "words": [
           "response",
           "a",
@@ -84790,7 +84977,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "responsible: a schema.org component word, fused from legislationResponsible",
-        "uuid": "c3e45058-88c3-8db8-b908-426c75cca831",
+        "uuid": "36177b75-cc30-8822-866c-34c32b1c5322",
         "words": [
           "responsible",
           "a",
@@ -84826,7 +85013,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "rest: a schema.org component word, fused from restPeriods",
-        "uuid": "0111b23e-f580-8d27-887a-79379af40c3c",
+        "uuid": "d4bb17a2-ecfe-8ca0-bf84-19a2842681cb",
         "words": [
           "rest",
           "a",
@@ -84891,7 +85078,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "restocking: a schema.org component word, fused from restockingFee",
-        "uuid": "68626381-6a9c-87a0-af6d-b39a682f018f",
+        "uuid": "2a0e3210-f800-875d-a7c3-2b0103df155e",
         "words": [
           "restocking",
           "a",
@@ -84927,7 +85114,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "restricted: a schema.org component word, fused from RestrictedDiet",
-        "uuid": "53aab3bf-b992-8b13-a216-290acdaf1171",
+        "uuid": "692af774-5971-82b9-a370-32dc3fd769b1",
         "words": [
           "restricted",
           "a",
@@ -84963,7 +85150,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a contract imposes use restrictions — field of use, geographic restriction, customer type restriction, sublicense prohibition, derivative-work restrictions.",
-        "uuid": "03e4a762-79ba-8b36-9060-f71590a65b05",
+        "uuid": "6fb1ff10-42ac-8634-9dc9-95b4e1ea653e",
         "words": [
           "use",
           "when",
@@ -85049,7 +85236,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "results: a schema.org component word, fused from SearchResultsPage",
-        "uuid": "3846a9af-2dd2-88ff-add4-584c247090c1",
+        "uuid": "7d9c6b23-2b22-8d91-9c2f-923d531e017b",
         "words": [
           "results",
           "a",
@@ -85085,7 +85272,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "resume: a schema.org component word, fused from ResumeAction",
-        "uuid": "d1d206c4-7f6b-8049-ac03-102b3cd905a7",
+        "uuid": "e3d1c21a-cbcc-8e02-b988-e040eb347af7",
         "words": [
           "resume",
           "a",
@@ -85167,7 +85354,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "return: a schema.org component word, fused from MerchantReturnEnumeration, MerchantReturnPolicy, MerchantReturnPolicySeasonalOverride, ProductReturnEnumeration, ProductReturnPolicy, ReturnAction",
-        "uuid": "2f0d12fb-951c-8b05-8834-f74fc7ff29f0",
+        "uuid": "1aa6f965-d9b8-8304-9c3b-e05cc5d278da",
         "words": [
           "return",
           "a",
@@ -85583,7 +85770,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "river: a schema.org component word, fused from RiverBodyOfWater",
-        "uuid": "576011d1-ff85-8d68-8c60-d7f819abe201",
+        "uuid": "8fe732d4-f3d8-8c9a-a559-b3eb5de5d0a8",
         "words": [
           "river",
           "a",
@@ -85668,7 +85855,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the number substrate under erpax's state/sequence math — the Rodin vortex sequence 0·3·6·9·1·2·4·8·7·5 over the A432 anchor, digital-root (mod-9) arithmetic, the 3·6·9 triad axis vs the 1·2·4·8·7·5 doubling helix. The root the horo ring and the sequence both express.",
-        "uuid": "9e800217-0155-8d25-9995-5d6de03148b9",
+        "uuid": "14495e22-8650-843a-ae8f-0a39224b2d1c",
         "words": [
           "use",
           "when",
@@ -86639,7 +86826,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "roof: a schema.org component word, fused from roofLoad",
-        "uuid": "9e97f116-81ac-8cde-ae98-a4e6fd62b07b",
+        "uuid": "c21ece63-8426-835f-8615-5ebf2e834a5e",
         "words": [
           "roof",
           "a",
@@ -86675,7 +86862,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "roofing: a schema.org component word, fused from RoofingContractor",
-        "uuid": "859de8f5-f888-8fda-bdbf-256f6034a6bc",
+        "uuid": "6768d77d-e4a9-8b7b-a85b-258261183932",
         "words": [
           "roofing",
           "a",
@@ -86769,7 +86956,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "rooms: a schema.org component word, fused from numberOfRooms",
-        "uuid": "d486d711-ea8a-8f7d-b522-78d1a7e77473",
+        "uuid": "000319e9-5025-8cee-a4d0-ee55c4196d3b",
         "words": [
           "rooms",
           "a",
@@ -86964,7 +87151,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "route: a schema.org component word, fused from administrationRoute",
-        "uuid": "ad2227be-80cc-8ca4-8d8c-1cc17c1a8849",
+        "uuid": "8e6aabf3-60e2-8e1a-b979-e1d65f53415c",
         "words": [
           "route",
           "a",
@@ -87086,7 +87273,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "row: a schema.org component word, fused from seatRow",
-        "uuid": "62efe8c3-bbe2-8cea-81d0-ab0106d96df9",
+        "uuid": "d45f1624-9a06-82f1-8681-34e47b2bbf1c",
         "words": [
           "row",
           "a",
@@ -87122,7 +87309,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "rsvp: a schema.org component word, fused from RsvpAction, RsvpResponseType, rsvpResponse",
-        "uuid": "17484c29-427e-8435-8150-714e9cab983f",
+        "uuid": "204ecf38-f6a4-8cc7-bb82-82317d80a29c",
         "words": [
           "rsvp",
           "a",
@@ -87459,7 +87646,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "rv: a schema.org component word, fused from RVPark",
-        "uuid": "9bde1ccb-c541-83d2-a8e4-478f4a260cb2",
+        "uuid": "c8de6b18-a748-8cd8-a89b-9870e987f278",
         "words": [
           "rv",
           "a",
@@ -87639,7 +87826,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "safety: a schema.org component word, fused from safetyConsideration",
-        "uuid": "1074a6ec-278e-8228-af7e-a3d9c32d39e1",
+        "uuid": "49fe5818-1f6b-89fd-8528-a21a7044a80c",
         "words": [
           "safety",
           "a",
@@ -87675,7 +87862,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "salary: a schema.org component word, fused from baseSalary, estimatedSalary, salaryCurrency, salaryUponCompletion, trainingSalary",
-        "uuid": "dfa9f0be-1144-881d-8bfb-1674e6f77e7f",
+        "uuid": "57731559-7365-8afd-a0c4-161da398a8bc",
         "words": [
           "salary",
           "a",
@@ -87715,7 +87902,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "sale: a schema.org component word, fused from SaleEvent",
-        "uuid": "25e93123-e1b3-8bc6-be7b-1a9c37946fa1",
+        "uuid": "c770ae71-2711-8143-a0fd-6ffcaeb3cbda",
         "words": [
           "sale",
           "a",
@@ -87831,7 +88018,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "salon: a schema.org component word, fused from BeautySalon, HairSalon, NailSalon",
-        "uuid": "9752007a-5d9b-8b57-91ff-c0381cbd7572",
+        "uuid": "81fd5b1f-3179-81d6-aa9e-2e00ad03c240",
         "words": [
           "salon",
           "a",
@@ -87924,7 +88111,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "sample: a schema.org component word, fused from codeSampleType, sampleType, tissueSample",
-        "uuid": "711050e1-628f-8523-97e7-3ff35eca0d4b",
+        "uuid": "002d0a2c-ee4a-8cc0-a94a-f9a704dfc219",
         "words": [
           "sample",
           "a",
@@ -88108,7 +88295,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "satellite: a schema.org component word, fused from CableOrSatelliteService",
-        "uuid": "91ac52aa-acfb-8a31-b9e3-d5473a318bf1",
+        "uuid": "b538edd4-a7ef-8465-90c7-cd02ebd274d8",
         "words": [
           "satellite",
           "a",
@@ -88144,7 +88331,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "satirical: a schema.org component word, fused from SatiricalArticle",
-        "uuid": "b4cc780a-e4b6-870c-a166-ca2ac3a24cb3",
+        "uuid": "fc06b88f-2cdc-845a-94eb-94ef870c708b",
         "words": [
           "satirical",
           "a",
@@ -88230,7 +88417,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "saturated: a schema.org component word, fused from saturatedFatContent",
-        "uuid": "ec8b0ebc-7bad-8e30-963d-4c42eee4e952",
+        "uuid": "e3b3703d-64e2-8dd9-afa1-77bc95411b7f",
         "words": [
           "saturated",
           "a",
@@ -88266,7 +88453,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "scale: a schema.org component word, fused from energyEfficiencyScaleMax, energyEfficiencyScaleMin",
-        "uuid": "161317f1-5d2a-8d04-af3b-a63a72e3d53e",
+        "uuid": "cba3475c-a38b-8096-a4dd-6af62faecad7",
         "words": [
           "scale",
           "a",
@@ -88349,7 +88536,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "scheduled: a schema.org component word, fused from scheduledPaymentDate, scheduledTime",
-        "uuid": "39c21ad2-2ee0-865b-9a3d-ae17b3bd9dc1",
+        "uuid": "03e3e84f-93f3-838a-b2c1-28297ac6de07",
         "words": [
           "scheduled",
           "a",
@@ -88375,7 +88562,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "schema",
-        "uuid": "80f9dcd0-532f-8bc4-868e-80759fa3bf35",
+        "uuid": "a5313630-9569-8bc2-80c5-6b4d491cd846",
         "words": [
           "schema"
         ],
@@ -88507,7 +88694,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "scheme: a schema.org component word, fused from FundingScheme",
-        "uuid": "604b427d-3d50-8a1f-91d8-73cfa76197bc",
+        "uuid": "03aefddb-7387-8614-a3bf-32aa605d6714",
         "words": [
           "scheme",
           "a",
@@ -88543,7 +88730,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "scholarly: a schema.org component word, fused from MedicalScholarlyArticle, ScholarlyArticle",
-        "uuid": "b2665454-661a-895e-b53a-b82388218760",
+        "uuid": "56091984-3f5a-8bfb-b641-36b718266ce3",
         "words": [
           "scholarly",
           "a",
@@ -88734,7 +88921,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "scope: a schema.org component word, fused from WarrantyScope, warrantyScope",
-        "uuid": "4186faa3-6a16-8a1d-bc8b-e52c78f90764",
+        "uuid": "91088c79-f790-8ffb-a823-f1fea422255c",
         "words": [
           "scope",
           "a",
@@ -88771,7 +88958,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "score: a schema.org component word, fused from MedicalRiskScore",
-        "uuid": "b027bb1a-f15f-8998-9ed0-eb36a6cedbf5",
+        "uuid": "30b14d92-57d3-8e99-a020-89d401592f25",
         "words": [
           "score",
           "a",
@@ -88937,7 +89124,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "screen: a schema.org component word, fused from screenCount",
-        "uuid": "0274757d-eb22-8ee3-90de-4ccc5edc69dc",
+        "uuid": "21c7a065-5edd-8966-a8fc-bea6a636a66b",
         "words": [
           "screen",
           "a",
@@ -88973,7 +89160,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "screening: a schema.org component word, fused from ScreeningEvent, securityScreening",
-        "uuid": "3668d711-786c-8c21-88bf-38833098b0e9",
+        "uuid": "d959978a-0de3-8565-92d7-b59bb3ce6e97",
         "words": [
           "screening",
           "a",
@@ -89077,7 +89264,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "sd: a schema.org component word, fused from sdDatePublished, sdLicense, sdPublisher",
-        "uuid": "33fe4650-d320-88d1-bc27-a27f80d47186",
+        "uuid": "aed94564-836d-8888-9b6a-192738e30ff4",
         "words": [
           "sd",
           "a",
@@ -89115,7 +89302,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "sea: a schema.org component word, fused from SeaBodyOfWater",
-        "uuid": "42d341db-3612-82df-a676-b85caff6c23b",
+        "uuid": "7246df89-b4a9-80c6-b039-d7a78c5928b3",
         "words": [
           "sea",
           "a",
@@ -89417,7 +89604,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "seasonal: a schema.org component word, fused from MerchantReturnPolicySeasonalOverride, returnPolicySeasonalOverride, seasonalOverride",
-        "uuid": "c4a11c98-3712-8da3-89e6-97ece8e6be8d",
+        "uuid": "99af4b0f-870f-86ca-9ace-ee711d3eda3f",
         "words": [
           "seasonal",
           "a",
@@ -89529,7 +89716,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "seating: a schema.org component word, fused from seatingCapacity, seatingType, vehicleSeatingCapacity",
-        "uuid": "9280ad04-59d1-87b9-b457-7c59a87405c5",
+        "uuid": "7e4388d6-dd2c-821f-b70d-b76fafc1e1dd",
         "words": [
           "seating",
           "a",
@@ -89567,7 +89754,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "secondary: a schema.org component word, fused from secondaryPrevention",
-        "uuid": "40b4007e-00d6-8509-9272-6afb0aa02162",
+        "uuid": "b02b6437-b269-89bd-8e70-24b29e2e7a27",
         "words": [
           "secondary",
           "a",
@@ -89603,7 +89790,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "section: a schema.org component word, fused from HowToSection, MenuSection, articleSection, hasMenuSection, printSection, seatSection",
-        "uuid": "8b5922bc-72a0-8a58-a668-245ae8d280e6",
+        "uuid": "41517ac0-c83e-8c93-8c3b-3ef872afabee",
         "words": [
           "section",
           "a",
@@ -89644,7 +89831,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "sections: a schema.org component word, fused from syllabusSections",
-        "uuid": "ff0cf076-96c8-843b-b27e-d9685f49be51",
+        "uuid": "e05c316a-a569-87c6-b9ec-329335f3f8b6",
         "words": [
           "sections",
           "a",
@@ -89788,7 +89975,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "security: a schema.org component word, fused from securityClearanceRequirement, securityScreening",
-        "uuid": "ed3135f2-f27d-8e68-a605-16d890bffabb",
+        "uuid": "17c6a0d2-1de9-80f8-bb25-688105555009",
         "words": [
           "security",
           "a",
@@ -90019,7 +90206,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "seek: a schema.org component word, fused from SeekToAction",
-        "uuid": "40653709-dcf8-8498-9700-9ed38007c8d3",
+        "uuid": "904f4a41-f0a6-810b-9f44-6dcb7f46a7b6",
         "words": [
           "seek",
           "a",
@@ -90146,7 +90333,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "selector: a schema.org component word, fused from CssSelectorType, cssSelector",
-        "uuid": "395d3310-7c12-8914-98de-5b910f1cbd43",
+        "uuid": "3502401b-592c-833a-8bb1-91e0d7e3ef75",
         "words": [
           "selector",
           "a",
@@ -91119,7 +91306,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "sell: a schema.org component word, fused from SellAction",
-        "uuid": "8f6eceb4-3954-8887-8c49-c91ba4f4b613",
+        "uuid": "e7f5514a-6df9-8615-99c3-74649f607a97",
         "words": [
           "sell",
           "a",
@@ -91200,7 +91387,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "send: a schema.org component word, fused from SendAction",
-        "uuid": "524e0397-f623-8517-9fad-b4c773f02af8",
+        "uuid": "e7cd2db9-1694-884c-a5b5-0f1b12f25f50",
         "words": [
           "send",
           "a",
@@ -91279,7 +91466,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "sensory: a schema.org component word, fused from sensoryRequirement, sensoryUnit",
-        "uuid": "16a77be8-be68-88e5-86d3-d2cbe2f425cb",
+        "uuid": "0af14514-c112-8af9-9651-cdc7533e4131",
         "words": [
           "sensory",
           "a",
@@ -91316,7 +91503,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "sent: a schema.org component word, fused from dateSent",
-        "uuid": "a60cde4c-424a-80aa-9146-d90f1175fb9d",
+        "uuid": "360ce9c1-cacb-8fc3-b534-3419a492a47f",
         "words": [
           "sent",
           "a",
@@ -91531,7 +91718,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "sequential: a schema.org component word, fused from SequentialArt",
-        "uuid": "a3ad0de2-49e8-8816-9205-da53b8d30366",
+        "uuid": "bbe232fd-ebb5-8b4b-b739-51b2808638fb",
         "words": [
           "sequential",
           "a",
@@ -91567,7 +91754,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "serial: a schema.org component word, fused from serialNumber",
-        "uuid": "f00a9331-7827-8fee-9974-d51780212f00",
+        "uuid": "bb8e1328-a767-85e5-9cf0-c4daf37072e5",
         "words": [
           "serial",
           "a",
@@ -91603,7 +91790,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "A Series in schema.org is a group of related items, typically but not necessarily of the same kind. See also CreativeWorkSeries, EventSeries.",
-        "uuid": "51da1099-a75a-81e8-a902-9e75ee5f1186",
+        "uuid": "84df786e-7ea3-8adf-a673-fa4da6117dee",
         "words": [
           "a",
           "series",
@@ -91653,7 +91840,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "serious: a schema.org component word, fused from seriousAdverseOutcome",
-        "uuid": "fcdc65ef-a0cd-8053-ad1b-b445560648a3",
+        "uuid": "67ba1dac-3761-8076-a0a6-236c2f18d327",
         "words": [
           "serious",
           "a",
@@ -91689,7 +91876,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "served: a schema.org component word, fused from areaServed",
-        "uuid": "de21b171-57e1-8d9b-a079-d1665aad2419",
+        "uuid": "e43eab20-bf8d-8f14-ba18-4e0e077754b2",
         "words": [
           "served",
           "a",
@@ -91725,7 +91912,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "server: a schema.org component word, fused from GameServer, GameServerStatus, gameServer, serverStatus",
-        "uuid": "6d7ba728-d58d-8bd8-80d7-9387f3a6f811",
+        "uuid": "a57776d5-5dd4-8d55-bc60-1dd3445e1716",
         "words": [
           "server",
           "a",
@@ -91764,7 +91951,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "serves: a schema.org component word, fused from servesCuisine",
-        "uuid": "38bb7804-10e0-8542-890c-3d9bfc6edbc0",
+        "uuid": "5c0088de-1faf-8f73-b221-ea12870057fc",
         "words": [
           "serves",
           "a",
@@ -91840,7 +92027,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when adding, finding, or debugging erpax business logic that is NOT schema — pure tested functions, content-uuid math, integrity/tamper-cost, the agent society, domain export/import — the society's organ-body, one folder per organ, called by the collections/access/hooks.",
-        "uuid": "84e9c07b-553e-8e64-99ca-135ba0d5f93a",
+        "uuid": "bbd05eb7-7777-866a-81a9-5048764f2ae5",
         "words": [
           "use",
           "when",
@@ -91910,7 +92097,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "serving: a schema.org component word, fused from servingSize",
-        "uuid": "3593cc4d-7d51-8abc-97a5-1407bdc82a33",
+        "uuid": "4c1c80b8-584a-8c0c-8734-2da1805e2028",
         "words": [
           "serving",
           "a",
@@ -91946,7 +92133,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "set: a schema.org component word, fused from CategoryCodeSet, DefinedTermSet, inCodeSet, inDefinedTermSet",
-        "uuid": "75c03b89-b6be-8162-a3e0-88c01ea3512f",
+        "uuid": "9f14db58-941c-89db-aa68-dbc0803946f1",
         "words": [
           "set",
           "a",
@@ -91985,7 +92172,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "settings: a schema.org component word, fused from DeliveryTimeSettings, ShippingRateSettings, shippingSettingsLink",
-        "uuid": "94dc0828-fb6f-81e6-849f-39b9fc0cee4d",
+        "uuid": "52cdeb03-2d90-851e-9adc-1a34e90845c5",
         "words": [
           "settings",
           "a",
@@ -92069,7 +92256,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "shape: a schema.org component word, fused from GeoShape",
-        "uuid": "943f239e-8074-87b1-b5c1-3a5bff61fc6d",
+        "uuid": "8e5e1783-9a7c-8c3f-8b99-bd46215dd64b",
         "words": [
           "shape",
           "a",
@@ -92236,7 +92423,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "sharing: a schema.org component word, fused from HealthPlanCostSharingSpecification, healthPlanCostSharing",
-        "uuid": "e3000c0c-a153-885e-9430-c8288450c334",
+        "uuid": "e18bb2c4-65e0-895d-8998-1ea722986ff7",
         "words": [
           "sharing",
           "a",
@@ -92273,7 +92460,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "sheet: a schema.org component word, fused from SheetMusic",
-        "uuid": "3c03d808-1cc6-8edf-b060-b4239bd49c1d",
+        "uuid": "38975b55-a89d-8355-b588-4bf0b1ce1be8",
         "words": [
           "sheet",
           "a",
@@ -92309,7 +92496,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "shelter: a schema.org component word, fused from AnimalShelter",
-        "uuid": "213e6030-e242-8910-bcab-9487672e6627",
+        "uuid": "72b2e3d1-ea8c-8f0b-8821-9622a5d7852e",
         "words": [
           "shelter",
           "a",
@@ -92413,7 +92600,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "ship: a schema.org component word, fused from doesNotShip",
-        "uuid": "4d15e373-6ee7-854f-a863-07373b85c1d0",
+        "uuid": "27f5cbb3-af22-8180-b765-f85be2b9476a",
         "words": [
           "ship",
           "a",
@@ -92500,7 +92687,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "shipped: a schema.org component word, fused from itemShipped",
-        "uuid": "b0a91294-ee89-823e-82b1-7042b1275a65",
+        "uuid": "62a2695b-136f-8eaa-98a8-7fc4a787fce4",
         "words": [
           "shipped",
           "a",
@@ -92536,7 +92723,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "shipping: a schema.org component word, fused from OfferShippingDetails, ShippingConditions, ShippingDeliveryTime, ShippingRateSettings, ShippingService, customerRemorseReturnShippingFeesAmount",
-        "uuid": "107b89c2-db80-8199-ba9b-9055c26671c7",
+        "uuid": "5063b498-bfe4-862d-becc-341298f76e14",
         "words": [
           "shipping",
           "a",
@@ -92577,7 +92764,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "shoe: a schema.org component word, fused from ShoeStore",
-        "uuid": "59ecd9bf-604f-8903-84b4-5901db8575c3",
+        "uuid": "c19f34c6-03e5-8ce3-9f84-ef1d8ab762bd",
         "words": [
           "shoe",
           "a",
@@ -92613,7 +92800,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "shop: a schema.org component word, fused from AutoBodyShop, CafeOrCoffeeShop, HobbyShop, IceCreamShop, PawnShop, TireShop",
-        "uuid": "0f76b625-0473-8334-abe8-d63967239ef5",
+        "uuid": "3b0a29e9-102d-821c-bd77-7b16ab486fa0",
         "words": [
           "shop",
           "a",
@@ -92654,7 +92841,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "shopping: a schema.org component word, fused from ShoppingCenter",
-        "uuid": "ab77b076-8fce-87e2-88a5-67ed58c49d05",
+        "uuid": "a40b38ac-007c-8cec-9c3f-399b5cb27395",
         "words": [
           "shopping",
           "a",
@@ -92690,7 +92877,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "short: a schema.org component word, fused from ShortStory",
-        "uuid": "ae0e98fc-546f-86b6-a76b-13298d43f650",
+        "uuid": "32bd9bec-85e5-81bd-b037-fb532d94ac13",
         "words": [
           "short",
           "a",
@@ -92876,7 +93063,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "side: a schema.org component word, fused from WPSideBar",
-        "uuid": "86508c6c-90a2-8b10-9764-c77212e43b61",
+        "uuid": "cb05c684-77db-8df3-b5fb-2b4d9142cd22",
         "words": [
           "side",
           "a",
@@ -92912,7 +93099,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "sign: a schema.org component word, fused from MedicalSign, MedicalSignOrSymptom, VitalSign, callSign, distinguishingSign, signDetected",
-        "uuid": "362621d0-ad5b-8e5a-9d44-cc59a3537e8c",
+        "uuid": "7ba85e13-3a4b-8e31-8bb7-4bcfc3a926fd",
         "words": [
           "sign",
           "a",
@@ -93057,7 +93244,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "significant: a schema.org component word, fused from significantLink, significantLinks",
-        "uuid": "c9a46de1-053d-81bb-a5e9-a3b9895ea6a8",
+        "uuid": "00389a3b-92b1-856d-b9f4-004e0fdea941",
         "words": [
           "significant",
           "a",
@@ -93131,7 +93318,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "similarity: a schema.org component word, fused from bioChemSimilarity",
-        "uuid": "adeb6cbe-f0ba-868b-990c-d3983313c84a",
+        "uuid": "ae597694-542f-8068-a6fd-813fe303b117",
         "words": [
           "similarity",
           "a",
@@ -93167,7 +93354,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "single: a schema.org component word, fused from SingleFamilyResidence",
-        "uuid": "e9754c33-6b83-800b-beb7-10766903f413",
+        "uuid": "100501ce-1023-8393-afc1-d5f59b36b643",
         "words": [
           "single",
           "a",
@@ -93265,7 +93452,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "site: a schema.org component word, fused from SiteNavigationElement, WebSite",
-        "uuid": "1eefa6bd-e3f0-879b-950c-a60fcc2f0077",
+        "uuid": "5edd0396-d0da-82bb-b513-9d32fa4472af",
         "words": [
           "site",
           "a",
@@ -93359,7 +93546,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "ski: a schema.org component word, fused from SkiResort",
-        "uuid": "25d94539-975d-8ac4-a509-3cd5970f66ad",
+        "uuid": "320c8dac-184a-8819-8e4c-1f9019c66728",
         "words": [
           "ski",
           "a",
@@ -93584,7 +93771,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "smoking: a schema.org component word, fused from smokingAllowed",
-        "uuid": "34efa600-59af-8515-abc3-3d429effe95d",
+        "uuid": "198e3706-0639-86dc-934a-afffcc899cb3",
         "words": [
           "smoking",
           "a",
@@ -93620,7 +93807,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "sms: a schema.org component word, fused from serviceSmsNumber",
-        "uuid": "ad0d6958-f401-8a3c-8457-d872676cb799",
+        "uuid": "bcdc9571-97d4-846d-b34d-fffe48791316",
         "words": [
           "sms",
           "a",
@@ -93656,7 +93843,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "snapshot: a schema.org component word, fused from AudioObjectSnapshot, ImageObjectSnapshot, VideoObjectSnapshot",
-        "uuid": "4b756de8-cada-86f4-970c-1fbec8ddb840",
+        "uuid": "7ddabebd-7709-8144-8673-6573d1ef810c",
         "words": [
           "snapshot",
           "a",
@@ -93694,7 +93881,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "social: a schema.org component word, fused from SocialEvent, SocialMediaPosting",
-        "uuid": "2e964f36-cce7-801a-8daa-d42b4772ba56",
+        "uuid": "5886660d-173d-8a83-93fb-7ed9f4be440a",
         "words": [
           "social",
           "a",
@@ -93814,7 +94001,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "sodium: a schema.org component word, fused from sodiumContent",
-        "uuid": "150fb462-9fea-8ed0-9e5a-32fa55789a20",
+        "uuid": "6d3c5f77-64ff-8ab4-94d8-b74ed15b8efe",
         "words": [
           "sodium",
           "a",
@@ -93850,7 +94037,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "software: a schema.org component word, fused from SoftwareApplication, SoftwareSourceCode, softwareAddOn, softwareHelp, softwareRequirements, softwareVersion",
-        "uuid": "10b20cf4-6355-8f07-9974-4d6d86607040",
+        "uuid": "4f7f5e7a-43df-8c52-9760-866d9a18b51e",
         "words": [
           "software",
           "a",
@@ -93972,7 +94159,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "solve: a schema.org component word, fused from SolveMathAction",
-        "uuid": "5203654d-215c-8d9f-821e-ee06bff3d400",
+        "uuid": "a8b94487-1770-84d5-8580-cff5bd9510a9",
         "words": [
           "solve",
           "a",
@@ -94008,7 +94195,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "solver: a schema.org component word, fused from MathSolver",
-        "uuid": "930be4c3-841a-8384-afd9-fb950581fa7f",
+        "uuid": "3c5d1155-0e03-8c73-a919-739b1840c09d",
         "words": [
           "solver",
           "a",
@@ -94044,7 +94231,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "some: a schema.org component word, fused from SomeProducts",
-        "uuid": "85b5e044-4ec5-8e35-ad9d-790344d09407",
+        "uuid": "08d0001c-e734-8d55-94a0-ffae5b073b2d",
         "words": [
           "some",
           "a",
@@ -94171,7 +94358,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "sources: a schema.org component word, fused from unnamedSourcesPolicy",
-        "uuid": "3bb9961a-460d-89c5-90a9-934f28c8e632",
+        "uuid": "f30803dd-907e-838e-8c3c-d991bb47ba09",
         "words": [
           "sources",
           "a",
@@ -94207,7 +94394,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "spa: a schema.org component word, fused from DaySpa",
-        "uuid": "a06b432c-2375-839d-939d-d72d162efd7f",
+        "uuid": "31c69d41-b833-8ba1-a950-1ee14638e566",
         "words": [
           "spa",
           "a",
@@ -94377,7 +94564,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "spare: a schema.org component word, fused from isAccessoryOrSparePartFor",
-        "uuid": "8a646186-c73c-83b1-a922-538e80cd7a0e",
+        "uuid": "d38a5dfe-0a8b-8c2e-a440-ca6f29797b96",
         "words": [
           "spare",
           "a",
@@ -94413,7 +94600,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about erpax's efficiency principle — sparsity: of a large DORMANT pool, only the smallest correct subset is active at once (capability ÷ cost → max). Two conjugate axes (DeepSeek's own framing, Engram) — COMPUTE sparsity (MoE routes 37B of 671B params; erpax routes few of 593 atoms per task) and MEMORY/representation sparsity (conditional lookup; content-uuid stores the whole in 128 bits, schema is generated not stored). Its limit is zeropoint (zero active = the source), its dual the bottleneck (the one missing active factor zeroes the product), its selector routing. DeepSeek reaches it by hardware constraint, erpax by telos — they converge on the identical sparse form.",
-        "uuid": "1364f3ba-f844-8e6c-b317-3437a46b074f",
+        "uuid": "f513c132-41d0-884c-acc5-9cfb7b7e7f42",
         "words": [
           "use",
           "when",
@@ -94721,7 +94908,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "special: a schema.org component word, fused from SpecialAnnouncement, specialCommitments, specialOpeningHoursSpecification, vehicleSpecialUsage",
-        "uuid": "359c8fc3-86c8-8a51-ba8b-78e515923738",
+        "uuid": "7513f0e0-7c02-88ce-a5a1-7c28375912dd",
         "words": [
           "special",
           "a",
@@ -94806,7 +94993,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "specification: a schema.org component word, fused from ActionAccessSpecification, BroadcastFrequencySpecification, CompoundPriceSpecification, DatedMoneySpecification, DeliveryChargeSpecification, Eng",
-        "uuid": "7e87a4f9-2274-88d5-9c83-0dab7c3b0ac3",
+        "uuid": "c718656a-fb5c-8463-bbb1-e23c97035eb6",
         "words": [
           "specification",
           "a",
@@ -94847,7 +95034,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "speech: a schema.org component word, fused from speechToTextMarkup",
-        "uuid": "6d38547e-3d4d-8907-9615-eada620ee04a",
+        "uuid": "521f72db-682a-8679-b101-54787ad28f5f",
         "words": [
           "speech",
           "a",
@@ -94944,7 +95131,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "spoken: a schema.org component word, fused from spokenByCharacter",
-        "uuid": "ea49d74c-c7a8-8d3a-a444-a64ea68bee7b",
+        "uuid": "1641daeb-babf-8a49-8490-ebe9dcae75db",
         "words": [
           "spoken",
           "a",
@@ -95037,7 +95224,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "sponsorship: a schema.org component word, fused from hasSponsorshipOffer",
-        "uuid": "ed1eaa7a-608c-8cf0-bc3b-8a6449aace46",
+        "uuid": "5d5b2ab2-a603-8480-8870-073e968a89c9",
         "words": [
           "sponsorship",
           "a",
@@ -95073,7 +95260,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "A type of sport (e.g. Baseball).",
-        "uuid": "2b061125-8c25-8be7-a9dd-8044cf41b1aa",
+        "uuid": "bf274092-b6ed-8e11-b054-902e5e718906",
         "words": [
           "a",
           "type",
@@ -95107,7 +95294,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "sporting: a schema.org component word, fused from SportingGoodsStore",
-        "uuid": "9669b4a4-56e2-80f4-8562-e9dd27687af6",
+        "uuid": "6c3e62f2-5b81-8c33-ac48-a6b601d4cf9f",
         "words": [
           "sporting",
           "a",
@@ -95143,7 +95330,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "sports: a schema.org component word, fused from SportsActivityLocation, SportsClub, SportsEvent, SportsOrganization, SportsTeam, sportsActivityLocation",
-        "uuid": "56419f7e-6936-84da-b631-9cbc445fe09a",
+        "uuid": "65fcf180-1363-8bc7-b11e-95216501486b",
         "words": [
           "sports",
           "a",
@@ -95215,7 +95402,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "spread: a schema.org component word, fused from diseaseSpreadStatistics, exchangeRateSpread",
-        "uuid": "1fe797e6-33d2-8413-accd-077ddea634dd",
+        "uuid": "eb36f0bc-51e6-8306-8d04-ae2a9b73d666",
         "words": [
           "spread",
           "a",
@@ -95252,7 +95439,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "spreadsheet: a schema.org component word, fused from SpreadsheetDigitalDocument",
-        "uuid": "56ef0cff-bbf6-8575-b307-e9efaa1af71d",
+        "uuid": "eaaa932f-5f9c-8e9d-b186-3900479175b2",
         "words": [
           "spreadsheet",
           "a",
@@ -95288,7 +95475,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "stadium: a schema.org component word, fused from StadiumOrArena",
-        "uuid": "da409f06-e433-8f0b-b9de-055b759bb40c",
+        "uuid": "1064801c-21aa-8004-b259-0664852cc90f",
         "words": [
           "stadium",
           "a",
@@ -95324,7 +95511,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "staffing: a schema.org component word, fused from diversityStaffingReport",
-        "uuid": "59e38f81-00e2-8ea5-bb53-c1ac61c12d31",
+        "uuid": "3dd973f1-bc10-8cbd-88e6-29f784735332",
         "words": [
           "staffing",
           "a",
@@ -95394,7 +95581,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "stand: a schema.org component word, fused from TaxiStand",
-        "uuid": "8087ba6f-a757-89b6-9b0f-b47d8aa0f53a",
+        "uuid": "ea708ffc-0827-8f78-9284-878cacc6acca",
         "words": [
           "stand",
           "a",
@@ -95630,7 +95817,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "star: a schema.org component word, fused from EnergyStarEnergyEfficiencyEnumeration, starRating",
-        "uuid": "2f06c53f-75be-899e-acf0-073cb17ab17c",
+        "uuid": "142704a0-5b93-8e1e-ba1f-fc42ca56a09f",
         "words": [
           "star",
           "a",
@@ -95730,7 +95917,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "starts: a schema.org component word, fused from availabilityStarts",
-        "uuid": "b4d0674c-4873-8feb-83de-733cfd22ce19",
+        "uuid": "55d2b3df-7f56-835f-adfb-719dd10b6b0b",
         "words": [
           "starts",
           "a",
@@ -95766,7 +95953,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "stat: a schema.org component word, fused from statType",
-        "uuid": "0043e9d1-8c75-885b-b549-4b7a835d7371",
+        "uuid": "2eb73517-9bbf-8282-a6cd-41997e38840b",
         "words": [
           "stat",
           "a",
@@ -95897,7 +96084,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "station: a schema.org component word, fused from BusStation, FireStation, GasStation, PoliceStation, RadioStation, SubwayStation",
-        "uuid": "fb711f53-27df-8047-8eca-248f30e1385b",
+        "uuid": "02104793-e6c1-8564-9888-5cb6550ddd40",
         "words": [
           "station",
           "a",
@@ -95938,7 +96125,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "statistic: a schema.org component word, fused from agentInteractionStatistic, interactionStatistic",
-        "uuid": "a91468f8-0870-82e7-ba45-50dd1b9e32d4",
+        "uuid": "4f0bc6f9-c8d0-8161-a12a-a7c8d8267f35",
         "words": [
           "statistic",
           "a",
@@ -95975,7 +96162,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "statistical: a schema.org component word, fused from StatisticalPopulation, StatisticalVariable",
-        "uuid": "4885df8f-ed35-8c18-a228-696d05ecaf30",
+        "uuid": "d2a164d1-f35e-8db2-987b-3acc8b8b2093",
         "words": [
           "statistical",
           "a",
@@ -96012,7 +96199,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "statistics: a schema.org component word, fused from diseaseSpreadStatistics",
-        "uuid": "58e20bd7-fb8d-84de-bd6f-680a05a1cad6",
+        "uuid": "fce45db8-71da-8268-bc8a-03b2121c54a9",
         "words": [
           "statistics",
           "a",
@@ -96115,7 +96302,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "steering: a schema.org component word, fused from SteeringPositionValue, steeringPosition",
-        "uuid": "a7f5d371-00e5-8412-870b-42f9334851f4",
+        "uuid": "4a1b46e9-244e-8f4e-afe4-b8893bf124c6",
         "words": [
           "steering",
           "a",
@@ -96238,7 +96425,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Single Table Inheritance in Payload — one collection, a flat `type` discriminator, typed in TS as a discriminated union. Read when a collection holds several behavioral subtypes (invoice↔bill↔credit_note, payment kinds, party kinds).",
-        "uuid": "b3bdc806-547a-85e8-a246-4dbdf6339a05",
+        "uuid": "9914d0a2-fadb-82f6-bab0-efbd74f4b8f7",
         "words": [
           "single",
           "table",
@@ -96299,7 +96486,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "stop: a schema.org component word, fused from BusStop, arrivalBusStop, departureBusStop",
-        "uuid": "365e9161-6171-8b62-891b-1136567983c6",
+        "uuid": "7b58cf12-8339-801a-8052-d0cc94b9d5d0",
         "words": [
           "stop",
           "a",
@@ -96337,7 +96524,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "storage: a schema.org component word, fused from SelfStorage, storageRequirements",
-        "uuid": "c467672d-348e-8526-a072-d73d8f4d7248",
+        "uuid": "e1c1c247-1875-8557-888d-8067a8c6bb0c",
         "words": [
           "storage",
           "a",
@@ -96405,7 +96592,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "story: a schema.org component word, fused from AmpStory, ComicStory, ShortStory",
-        "uuid": "75910035-3e33-8339-a705-c66474f4eb42",
+        "uuid": "3f08e857-657f-894f-8505-fbb491738c68",
         "words": [
           "story",
           "a",
@@ -96513,7 +96700,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "street: a schema.org component word, fused from streetAddress",
-        "uuid": "57c7620c-ce65-89dc-8596-ded75062d382",
+        "uuid": "817167c7-702a-8b54-bcc7-c170ca3bb479",
         "words": [
           "street",
           "a",
@@ -96549,7 +96736,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "strength: a schema.org component word, fused from DrugStrength, availableStrength, recommendationStrength, strengthUnit, strengthValue",
-        "uuid": "fe169710-e71e-8157-8800-5c532638b988",
+        "uuid": "17de7bfc-8498-8297-9bc7-25faef1cac0d",
         "words": [
           "strength",
           "a",
@@ -96589,7 +96776,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "structural: a schema.org component word, fused from structuralClass",
-        "uuid": "122a7d2d-f4a2-8afe-b7d5-d89ed77dc9e3",
+        "uuid": "ae931d29-03b5-8e95-bf54-5ea1a9131438",
         "words": [
           "structural",
           "a",
@@ -96625,7 +96812,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "structure: a schema.org component word, fused from AnatomicalStructure, BrainStructure, CivicStructure, relatedStructure, subStructure",
-        "uuid": "21b1184f-d4d6-8740-a026-ad0abb9b041e",
+        "uuid": "fc97bf6c-8216-8c89-8685-eb4e75d96ffe",
         "words": [
           "structure",
           "a",
@@ -96665,7 +96852,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "structured: a schema.org component word, fused from StructuredValue",
-        "uuid": "0f42a109-5a81-89c5-a111-96a99588e32b",
+        "uuid": "24a1e411-010d-8856-ae04-3cf0e4510986",
         "words": [
           "structured",
           "a",
@@ -96737,7 +96924,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "stupid: a schema.org component word, fused from StupidType, stupidProperty",
-        "uuid": "fc870805-cfc7-8cb2-b8a9-c592c62d7919",
+        "uuid": "6b79cb51-0677-80f4-8c6e-e555b0a7b94d",
         "words": [
           "stupid",
           "a",
@@ -96774,7 +96961,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "sub: a schema.org component word, fused from applicationSubCategory, broadcastSubChannel, subEvent, subEvents, subOrganization, subReservation",
-        "uuid": "c802ced3-38ee-8877-ac95-6fe5d803f257",
+        "uuid": "42de055b-0104-86d4-a2a1-864532a538dd",
         "words": [
           "sub",
           "a",
@@ -96815,7 +97002,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "subcellular: a schema.org component word, fused from isLocatedInSubcellularLocation",
-        "uuid": "13bc7515-4389-8f69-b681-6cdf14d83cc5",
+        "uuid": "c23c1b50-676a-8b5d-b78f-96b140fe5c11",
         "words": [
           "subcellular",
           "a",
@@ -96935,7 +97122,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "subscribe: a schema.org component word, fused from SubscribeAction",
-        "uuid": "9c046cd1-b8da-8c97-ac4c-f800f7b61494",
+        "uuid": "5e0d44a9-75f6-86f3-85cb-7bfa0ed25293",
         "words": [
           "subscribe",
           "a",
@@ -96971,7 +97158,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "subscription: a schema.org component word, fused from MediaSubscription, requiresSubscription",
-        "uuid": "47387d69-2061-8ba2-9856-fff417109191",
+        "uuid": "d36e8c5a-dd8f-8db1-8896-53d096e5f616",
         "words": [
           "subscription",
           "a",
@@ -97265,7 +97452,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "subtitle: a schema.org component word, fused from subtitleLanguage",
-        "uuid": "820416f3-bcf3-8592-844e-fca3b6a994ae",
+        "uuid": "73b8edb9-d425-8961-8f12-633265fbfa51",
         "words": [
           "subtitle",
           "a",
@@ -97301,7 +97488,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "subway: a schema.org component word, fused from SubwayStation",
-        "uuid": "ed2a01aa-5779-85a9-9903-e85a69f41592",
+        "uuid": "474a2e08-99cf-838f-b01a-16dbd3cf2eeb",
         "words": [
           "subway",
           "a",
@@ -97379,7 +97566,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "suffix: a schema.org component word, fused from honorificSuffix, subStageSuffix",
-        "uuid": "b126db83-2d1e-8fec-b2b1-b79fac9a5907",
+        "uuid": "b24bafe3-5e00-8445-af5e-2882144c4ba3",
         "words": [
           "suffix",
           "a",
@@ -97416,7 +97603,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "sugar: a schema.org component word, fused from sugarContent",
-        "uuid": "c317f75c-98c5-804e-aa71-cecfa1ac54fa",
+        "uuid": "c439df04-ec4f-87eb-ac6d-f72edec46209",
         "words": [
           "sugar",
           "a",
@@ -97452,7 +97639,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "suggested: a schema.org component word, fused from suggestedAge, suggestedAnswer, suggestedGender, suggestedMaxAge, suggestedMeasurement, suggestedMinAge",
-        "uuid": "7ea57d61-20ac-82df-b6aa-de49c9da9809",
+        "uuid": "ed440239-133f-8a78-a1a8-064659b9f002",
         "words": [
           "suggested",
           "a",
@@ -97541,7 +97728,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "suitable: a schema.org component word, fused from suitableForDiet",
-        "uuid": "7d7cb1fd-94a7-834c-8ccd-dae4899c6abb",
+        "uuid": "69806d38-29f1-8ab4-b732-06931fc478da",
         "words": [
           "suitable",
           "a",
@@ -97636,7 +97823,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "summary: a schema.org component word, fused from accessibilitySummary, benefitsSummaryUrl",
-        "uuid": "59abc736-f645-8eaa-a870-16ea584e6546",
+        "uuid": "bd62cffe-c79f-8c79-854b-4910d6b1ff3d",
         "words": [
           "summary",
           "a",
@@ -97673,7 +97860,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "super: a schema.org component word, fused from superEvent",
-        "uuid": "c1b58453-9c4d-826d-a27b-8bd5be5ff06e",
+        "uuid": "b1367822-4546-8c21-b324-5802b6bb590b",
         "words": [
           "super",
           "a",
@@ -97709,7 +97896,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "superficial: a schema.org component word, fused from SuperficialAnatomy",
-        "uuid": "927a8731-77c8-86c6-bbf9-a7c6d0d19f35",
+        "uuid": "2c02871b-4f81-8fe0-8cdf-791c29fc854b",
         "words": [
           "superficial",
           "a",
@@ -97787,7 +97974,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "supplement: a schema.org component word, fused from DietarySupplement",
-        "uuid": "4dbda9df-2e45-8422-ac09-d50e5f227f24",
+        "uuid": "f71b0f70-e20c-8689-bc7d-9121fecd39a7",
         "words": [
           "supplement",
           "a",
@@ -97823,7 +98010,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "supplier: a schema.org component word, fused from eligibleWithSupplier",
-        "uuid": "8f8d6825-22f0-8dbf-adce-75c00b7e0c13",
+        "uuid": "f297fcc7-ce01-8513-95bd-94f180a221d5",
         "words": [
           "supplier",
           "a",
@@ -97934,7 +98121,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "supported: a schema.org component word, fused from countriesNotSupported, countriesSupported, productSupported",
-        "uuid": "8b76d2a4-50fe-82a2-853d-20d1fa706d52",
+        "uuid": "187b26fb-7cdc-8426-b4d0-966b761adf43",
         "words": [
           "supported",
           "a",
@@ -97972,7 +98159,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "supporting: a schema.org component word, fused from supportingData",
-        "uuid": "452d4dcf-77ec-8940-97d0-9fcfd512f3bb",
+        "uuid": "a6d1e67a-73e1-8925-b5cb-ddd50daecb89",
         "words": [
           "supporting",
           "a",
@@ -98139,7 +98326,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "surgical: a schema.org component word, fused from SurgicalProcedure",
-        "uuid": "0d878ba3-4834-8a23-9f6c-97046851a4cc",
+        "uuid": "03776a46-e3be-8536-a702-f8153b8c2feb",
         "words": [
           "surgical",
           "a",
@@ -98175,7 +98362,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "suspend: a schema.org component word, fused from SuspendAction",
-        "uuid": "d961e3cb-00bb-8fec-a9f8-a7fbb41b1b9f",
+        "uuid": "80f0e01a-86ae-8a4c-a0c4-b9c72e021aa1",
         "words": [
           "suspend",
           "a",
@@ -98307,7 +98494,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "swatch: a schema.org component word, fused from colorSwatch",
-        "uuid": "e9287426-ecda-8ec1-b1cf-38851d4fed45",
+        "uuid": "7ccbf1e9-e00a-8270-9d62-cc11e157e6cf",
         "words": [
           "swatch",
           "a",
@@ -98343,7 +98530,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "swimming: a schema.org component word, fused from PublicSwimmingPool",
-        "uuid": "50c549ba-a25a-844f-b6c5-a6fb632c3666",
+        "uuid": "9f54c80b-40f1-84bd-a8e2-1225bfd67edf",
         "words": [
           "swimming",
           "a",
@@ -98524,7 +98711,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "symbol: a schema.org component word, fused from tickerSymbol",
-        "uuid": "ab123959-3bc3-8e59-bddd-2be3622f759a",
+        "uuid": "59b85cc7-9727-8650-b82a-c67bce024488",
         "words": [
           "symbol",
           "a",
@@ -98560,7 +98747,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "symptom: a schema.org component word, fused from MedicalSignOrSymptom, MedicalSymptom, signOrSymptom",
-        "uuid": "3e19eeb8-7221-8ea7-852c-5c00ad786216",
+        "uuid": "4805ba1b-8dc5-84ea-ac0c-5483785543ba",
         "words": [
           "symptom",
           "a",
@@ -98627,7 +98814,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "system: a schema.org component word, fused from AnatomicalSystem, LibrarySystem, MedicineSystem, OperatingSystem, SizeSystemEnumeration, WearableSizeSystemEnumeration",
-        "uuid": "dc07a0fc-9557-8ba0-8252-79e8a363bcc8",
+        "uuid": "9d8902e6-540a-82d1-b425-f2b80c4def2b",
         "words": [
           "system",
           "a",
@@ -98904,7 +99091,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when attaching, querying or removing label-context associations across any collection — polymorphic (tag × taggable × context × tagger) join where context is a free string enabling unlimited label-sets with zero schema change. The polymorphic tagging-join collection; content-uuid makes each (tag, target, context, tagger) tuple automatically unique.",
-        "uuid": "697e7af9-f2bb-8b0c-8217-be41bf21737a",
+        "uuid": "82361751-581f-8bb3-a8c0-52f885e9b5ff",
         "words": [
           "use",
           "when",
@@ -99266,7 +99453,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "tattoo: a schema.org component word, fused from TattooParlor",
-        "uuid": "704cf80d-7f20-86bf-b10b-4fd36c5a17c2",
+        "uuid": "c88bf906-df41-808d-b2b8-bec1c43dc37a",
         "words": [
           "tattoo",
           "a",
@@ -99864,7 +100051,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when mapping legal entity types to their jurisdiction-specific legal forms — local name, abbreviation, governance structure (single/board/supervisory), tax treatment (corporate/pass-through/exempt), audit requirement and regulatory characteristics per taxing jurisdiction. The reference collection for entity-type-to-legal-form bindings.",
-        "uuid": "cc80e173-c898-8767-ab8f-ee580e2af89c",
+        "uuid": "ce88c675-d46e-8462-ae5f-5b2eea46e9e2",
         "words": [
           "use",
           "when",
@@ -99936,7 +100123,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when registering or querying GAAP/IFRS/SOX/Tax reporting frameworks per jurisdiction — standard name, code, type, effective date, and reference material. The per-jurisdiction reporting-standard catalogue node.",
-        "uuid": "eee551c8-bae0-83b2-9011-3d1fd019f22d",
+        "uuid": "1544a8db-54b0-8c3f-b009-4f37fe6982b5",
         "words": [
           "use",
           "when",
@@ -100215,7 +100402,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "taxonomic: a schema.org component word, fused from taxonomicRange",
-        "uuid": "8755d66c-e0c9-811c-8980-fdafaafde370",
+        "uuid": "d1779297-1763-85b1-822d-a84d406068a4",
         "words": [
           "taxonomic",
           "a",
@@ -100251,7 +100438,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when classifying entities into a ranked hierarchy — the family→genus→species→cultivar ladder for crops, and the generic ranked-classification engine for any LOD @type tree. A node's type is its rank-chain; traits inherit down the ranks (the fractal parent-chain), so taxonomy is the dimension atom applied to kind.",
-        "uuid": "eb32df8c-e014-8dbc-8902-e78411fe29fc",
+        "uuid": "226eea80-79bb-85ff-b585-41c6ff2389bd",
         "words": [
           "use",
           "when",
@@ -100459,7 +100646,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "tech: a schema.org component word, fused from TechArticle",
-        "uuid": "545f64c7-e3a6-8aa8-8e4f-7987d878fda6",
+        "uuid": "69960d2c-dca5-830d-b522-0da13b89f018",
         "words": [
           "tech",
           "a",
@@ -100495,7 +100682,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "technique: a schema.org component word, fused from MedicalImagingTechnique, imagingTechnique, measurementTechnique",
-        "uuid": "3074561b-293b-8f7a-8cd0-0dad610d0d9c",
+        "uuid": "65fafcba-3267-8936-b686-5bd437a0e00c",
         "words": [
           "technique",
           "a",
@@ -100563,7 +100750,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "television: a schema.org component word, fused from TelevisionChannel, TelevisionStation",
-        "uuid": "f53d3931-d501-8090-9085-64b41e67019f",
+        "uuid": "c4abd611-6c2e-80f9-bb40-c33648d7ea71",
         "words": [
           "television",
           "a",
@@ -100600,7 +100787,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "teller: a schema.org component word, fused from AutomatedTeller",
-        "uuid": "99419a2e-e752-8c66-906f-c3781cc23fcd",
+        "uuid": "f70ed054-b57d-8db0-9b07-12d727817c94",
         "words": [
           "teller",
           "a",
@@ -100636,7 +100823,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "template: a schema.org component word, fused from checkoutPageURLTemplate, urlTemplate",
-        "uuid": "27b9be52-4ad5-85c0-b539-593052c5d8e2",
+        "uuid": "208114b9-3ebb-87fe-a0e3-d85f1a80a63d",
         "words": [
           "template",
           "a",
@@ -100673,7 +100860,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "temple: a schema.org component word, fused from BuddhistTemple, HinduTemple",
-        "uuid": "0e24d938-6dea-8789-b0e3-55fff3ba2beb",
+        "uuid": "4775bb6e-69f5-8c96-a844-e179c0529da1",
         "words": [
           "temple",
           "a",
@@ -100880,7 +101067,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "tennis: a schema.org component word, fused from TennisComplex",
-        "uuid": "1d29f747-c0c2-87b8-8de8-ec7fada28fa0",
+        "uuid": "b66be48a-598b-8fae-bfe1-4f75f56d581e",
         "words": [
           "tennis",
           "a",
@@ -100963,7 +101150,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "term: a schema.org component word, fused from DefinedTerm, DefinedTermSet, hasDefinedTerm, inDefinedTermSet, loanTerm, termCode",
-        "uuid": "eee254df-79a1-88b8-9654-c8e65e2f306e",
+        "uuid": "cfcb89d4-c759-8bfa-99f5-1b0790362697",
         "words": [
           "term",
           "a",
@@ -101004,7 +101191,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "terminal: a schema.org component word, fused from BoatTerminal, arrivalBoatTerminal, arrivalTerminal, departureBoatTerminal, departureTerminal",
-        "uuid": "1f474c63-6610-896b-a711-e33eea8fd8f4",
+        "uuid": "8cb83e74-c80f-82fa-9290-7787f3506a08",
         "words": [
           "terminal",
           "a",
@@ -101158,7 +101345,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "terms: a schema.org component word, fused from termsOfService, termsPerYear",
-        "uuid": "1eb9a433-ee27-8cb6-92a3-6754800ff68c",
+        "uuid": "a60763c7-7858-806c-8282-81ee0277f281",
         "words": [
           "terms",
           "a",
@@ -101318,7 +101505,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise).",
-        "uuid": "dd1c3b35-fce8-815b-a8f6-aa3b89bedbf8",
+        "uuid": "c26e1b77-181a-8eaf-91c2-edaa42d8b223",
         "words": [
           "a",
           "single",
@@ -101359,7 +101546,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "tested: a schema.org component word, fused from gettingTestedInfo",
-        "uuid": "69434f93-0880-8f33-bdef-3431dd6e6771",
+        "uuid": "0f5cf483-58bd-810d-a62f-70f1a72d6f45",
         "words": [
           "tested",
           "a",
@@ -101395,7 +101582,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when writing or debugging erpax's own tests — discovering the live config to assert against, seeding isolated fixtures by level (unit/integration/e2e), transactional cleanup, parallel runners, or snapshot/restore — the society's self-test infrastructure that validates the running app against its own generated schema.",
-        "uuid": "fb45b90c-6459-8894-89e2-106bf175a800",
+        "uuid": "405cd35a-3c58-8b21-986b-210f00279fa1",
         "words": [
           "use",
           "when",
@@ -101469,7 +101656,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Data type: Text.",
-        "uuid": "afa29a48-5f30-8f71-96cb-29807ff3ac60",
+        "uuid": "9f70f8fe-ea8b-8603-804b-265f023858c6",
         "words": [
           "data",
           "type",
@@ -101499,7 +101686,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "theater: a schema.org component word, fused from MovieTheater, PerformingArtsTheater, TheaterEvent, TheaterGroup",
-        "uuid": "c04569e6-9349-8cab-b9a5-d6d55211ef25",
+        "uuid": "dee2e79c-aa8d-8257-bbd1-c26aa3a1b6c1",
         "words": [
           "theater",
           "a",
@@ -101591,7 +101778,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "therapeutic: a schema.org component word, fused from TherapeuticProcedure",
-        "uuid": "c3933d0f-a0d5-876a-9253-32cebb59532d",
+        "uuid": "cbb97482-5058-8ef7-bf9e-6173002d9881",
         "words": [
           "therapeutic",
           "a",
@@ -101627,7 +101814,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "therapy: a schema.org component word, fused from MedicalTherapy, OccupationalTherapy, PhysicalTherapy, RadiationTherapy, duplicateTherapy, relatedTherapy",
-        "uuid": "1a07280c-2bec-8616-a330-c01ff3bc0a22",
+        "uuid": "d797c4e1-13e0-842a-81d3-32c8e3d452c7",
         "words": [
           "therapy",
           "a",
@@ -101712,7 +101899,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "The most generic type of item.",
-        "uuid": "3771d7cd-b7a2-89fc-b570-4b4969b6bfe7",
+        "uuid": "974ce270-ceac-8618-9514-3c59c48a153a",
         "words": [
           "the",
           "most",
@@ -101745,7 +101932,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "threshold: a schema.org component word, fused from freeShippingThreshold",
-        "uuid": "6be52036-c774-855c-8cda-3b286d2baccd",
+        "uuid": "569ad155-1890-80e8-ba60-7241f4a2eb68",
         "words": [
           "threshold",
           "a",
@@ -101781,7 +101968,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "through: a schema.org component word, fused from availableThrough, hasDriveThroughService, issuedThrough, ownedThrough, validThrough",
-        "uuid": "c9ea7be2-03ef-88bb-b5f4-30f759ad5850",
+        "uuid": "a6fd7312-31dc-80d1-99d1-a20c56ef1386",
         "words": [
           "through",
           "a",
@@ -101909,7 +102096,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "ticker: a schema.org component word, fused from tickerSymbol",
-        "uuid": "d881225a-77ff-8bc0-9776-52c5551d00e5",
+        "uuid": "cfca2ce0-06d0-84e0-b382-1e8d8da5d76f",
         "words": [
           "ticker",
           "a",
@@ -101997,7 +102184,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "ticketed: a schema.org component word, fused from ticketedSeat",
-        "uuid": "8463d905-f1ef-88c0-b547-d0c1bdf554c2",
+        "uuid": "d2eb0728-4488-8c7e-a3df-6a792110dea6",
         "words": [
           "ticketed",
           "a",
@@ -102033,7 +102220,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "tie: a schema.org component word, fused from TieAction",
-        "uuid": "4134d674-d014-8eb6-9460-651641cb57b3",
+        "uuid": "3d193c25-5dcc-8761-96d0-892f60b56603",
         "words": [
           "tie",
           "a",
@@ -102105,7 +102292,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "tiers: a schema.org component word, fused from hasTiers",
-        "uuid": "6833c3d3-6bf6-8db5-a458-958c93cc5c14",
+        "uuid": "a3254407-8a36-80b2-85fa-e39a7edfa27f",
         "words": [
           "tiers",
           "a",
@@ -102320,7 +102507,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "timezone: a schema.org component word, fused from broadcastTimezone, scheduleTimezone",
-        "uuid": "86911f22-f653-8aca-a7c9-d24e204d45a2",
+        "uuid": "571eb9fb-00db-8793-be7a-83d7e52e7abf",
         "words": [
           "timezone",
           "a",
@@ -102357,7 +102544,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "tip: a schema.org component word, fused from HowToTip, TipAction, gameTip",
-        "uuid": "0bc79c0f-53d5-8913-9649-cf8a1cb58781",
+        "uuid": "5edd93d1-fb2a-8a37-b7e1-cb3c15c5c5ae",
         "words": [
           "tip",
           "a",
@@ -102395,7 +102582,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "tire: a schema.org component word, fused from TireShop",
-        "uuid": "b4791bf2-ba0c-8770-9d06-97945301c0bb",
+        "uuid": "b2c63fb7-f996-8c6e-8e72-fbfabac13e73",
         "words": [
           "tire",
           "a",
@@ -102431,7 +102618,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "tissue: a schema.org component word, fused from tissueSample",
-        "uuid": "8ff9ee51-12ff-8360-951c-80573d6782bc",
+        "uuid": "497f8f2f-2cb4-8235-b0b7-ceba4c745ed5",
         "words": [
           "tissue",
           "a",
@@ -102499,7 +102686,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "toc: a schema.org component word, fused from HyperToc, HyperTocEntry, tocContinuation, tocEntry",
-        "uuid": "0924367f-b822-8660-adc6-dddcc07c99dd",
+        "uuid": "9bbf586f-c286-862c-adf4-37ce44b2afef",
         "words": [
           "toc",
           "a",
@@ -102538,7 +102725,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "toilet: a schema.org component word, fused from PublicToilet",
-        "uuid": "43176304-0aa8-8f96-8618-a9c6568541db",
+        "uuid": "f9d7bdcc-d99e-87b7-bfbd-15ac47757996",
         "words": [
           "toilet",
           "a",
@@ -102629,7 +102816,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "tongue: a schema.org component word, fused from tongueWeight",
-        "uuid": "26617554-4af8-8fb7-bf37-3e1c9dc0bc45",
+        "uuid": "45fc85ea-e833-80be-9a0e-2c96a5201f89",
         "words": [
           "tongue",
           "a",
@@ -102709,7 +102896,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "topic: a schema.org component word, fused from HealthTopicContent",
-        "uuid": "46f525f3-107a-814b-a2f4-ef82dd10e865",
+        "uuid": "aa033df6-c73c-8849-a9da-027e561fc58d",
         "words": [
           "topic",
           "a",
@@ -102889,7 +103076,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "tot: a schema.org component word, fused from cvdNumTotBeds",
-        "uuid": "7de4d69c-9a43-8385-8d81-b029c0ca212e",
+        "uuid": "4578bf09-407b-8f87-ab71-62a026eee021",
         "words": [
           "tot",
           "a",
@@ -102983,7 +103170,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "touches: a schema.org component word, fused from geoTouches",
-        "uuid": "bb0e9557-43d3-8403-8082-49c786589ea0",
+        "uuid": "94885597-e25d-8c3b-89ac-45c84c9048d2",
         "words": [
           "touches",
           "a",
@@ -103019,7 +103206,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "tour: a schema.org component word, fused from tourBookingPage",
-        "uuid": "e7b355a2-7619-8c39-b08f-49d31c3e5b43",
+        "uuid": "f8b7b023-8595-8027-a91f-26faca572e93",
         "words": [
           "tour",
           "a",
@@ -103055,7 +103242,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "tourist: a schema.org component word, fused from TouristAttraction, TouristDestination, TouristInformationCenter, TouristTrip, touristType",
-        "uuid": "3cff49ce-13d6-825a-98d0-2019ed92e720",
+        "uuid": "0de0b50c-2167-8412-bd4b-42e8d1ce8f88",
         "words": [
           "tourist",
           "a",
@@ -103095,7 +103282,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "toy: a schema.org component word, fused from ToyStore",
-        "uuid": "0ff613c0-2dc8-8766-a4d1-bf5dfe2a5ffd",
+        "uuid": "4e87f725-3ebf-8875-9a3a-e7afb5805102",
         "words": [
           "toy",
           "a",
@@ -103131,7 +103318,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "A music recording (track)&#x2014;usually a single song. If an ItemList is given, the list should contain items of type MusicRecording.",
-        "uuid": "c9ff881c-e54e-8929-834a-1337fa4ad00e",
+        "uuid": "30ce3d9c-de86-83f2-a18e-46aa6bdace4b",
         "words": [
           "a",
           "music",
@@ -103180,7 +103367,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "tracking: a schema.org component word, fused from trackingNumber, trackingUrl",
-        "uuid": "50142865-fa99-837e-969b-a6d3a2f7ece8",
+        "uuid": "03b7e1a1-bf0d-8405-a54f-5e3138c6633e",
         "words": [
           "tracking",
           "a",
@@ -103253,7 +103440,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "trade: a schema.org component word, fused from TradeAction",
-        "uuid": "a7626a98-effe-8e0b-8365-5d1e87673a64",
+        "uuid": "29055044-ec15-8f96-b6a3-25858ef3f43b",
         "words": [
           "trade",
           "a",
@@ -103464,7 +103651,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "trans: a schema.org component word, fused from transFatContent",
-        "uuid": "38fac9da-a637-8c12-b8b1-072b26ed487d",
+        "uuid": "fc239f41-b94f-8510-8667-6c4058b73c70",
         "words": [
           "trans",
           "a",
@@ -103687,7 +103874,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "transfer: a schema.org component word, fused from MoneyTransfer, TransferAction",
-        "uuid": "aa3cd430-dbfb-8ddc-b1bf-f60b0bb2f849",
+        "uuid": "4f109a3d-426b-8c47-91ee-179806bcafd2",
         "words": [
           "transfer",
           "a",
@@ -103724,7 +103911,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "transit: a schema.org component word, fused from transitTime, transitTimeLabel",
-        "uuid": "dc519ddd-3186-8b21-b520-46a6afcaec04",
+        "uuid": "2b0ba328-becc-8150-a25f-4e4cf6288021",
         "words": [
           "transit",
           "a",
@@ -103831,7 +104018,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when porting a translatable message into code — the model (type + defineTranslation) of one content-addressed, per-locale translation entry that the translations collector emits into every folder.",
-        "uuid": "812ae4bc-a85b-8916-b173-13b6b5c96e0e",
+        "uuid": "22e4fc64-99b9-84c5-848b-ef9c5d4c3d33",
         "words": [
           "use",
           "when",
@@ -104118,7 +104305,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "transmission: a schema.org component word, fused from transmissionMethod, vehicleTransmission",
-        "uuid": "2ea03be1-9573-8e2b-87c9-c7fe5b6b59c4",
+        "uuid": "da805c8d-47ea-8e5d-b9a7-a44273b05928",
         "words": [
           "transmission",
           "a",
@@ -104229,7 +104416,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "transport: a schema.org component word, fused from publicTransportClosuresInfo",
-        "uuid": "bb2a1864-53d6-8295-b357-0ee2d670d916",
+        "uuid": "f18217d3-8efd-8ac2-9c31-ba2bfd987c36",
         "words": [
           "transport",
           "a",
@@ -104265,7 +104452,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "transposes: a schema.org component word, fused from legislationTransposes",
-        "uuid": "69277a84-81ff-80f6-85a6-df1f6567279e",
+        "uuid": "5fd016b6-3b9a-89f8-b6b9-c43d57613ad8",
         "words": [
           "transposes",
           "a",
@@ -104301,7 +104488,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "travel: a schema.org component word, fused from TravelAction, TravelAgency, travelBans",
-        "uuid": "8bf2fbcd-a83f-8d8b-9191-8caadd542405",
+        "uuid": "b72d3e95-d6bc-8708-b5d9-ce7a51235528",
         "words": [
           "travel",
           "a",
@@ -104339,7 +104526,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "treatment: a schema.org component word, fused from PsychologicalTreatment, TreatmentIndication, possibleTreatment",
-        "uuid": "7a8d29e4-6214-8bc4-9a9c-7e726f67ccfb",
+        "uuid": "9daa4681-afb7-88f2-b445-c8df36a3a158",
         "words": [
           "treatment",
           "a",
@@ -104508,7 +104695,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "trial: a schema.org component word, fused from MedicalTrial, MedicalTrialDesign, trialDesign",
-        "uuid": "e49b4e9f-b81c-8509-b935-3282df85531e",
+        "uuid": "ca03f4e6-e40a-8848-a19a-55a53087cf36",
         "words": [
           "trial",
           "a",
@@ -104591,7 +104778,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about how one node is told three times and rendered once — matter (index.ts inline docs) · antimatter (SKILL.md) · backend (the generated payload-types schema), fused into VitePress (the speech). The doc-scale DRY law — the page derives from the code and the backend, never restated.",
-        "uuid": "76aac729-f4f8-8397-a3a7-f667837e0d29",
+        "uuid": "0b32f62b-5bb1-847e-b4d7-76f7d2a87217",
         "words": [
           "use",
           "when",
@@ -104868,7 +105055,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "tv: a schema.org component word, fused from TVClip, TVEpisode, TVSeason, TVSeries, partOfTVSeries",
-        "uuid": "2beb6391-6b01-85b5-889d-1383562d1f23",
+        "uuid": "29347b6e-05f0-84f8-9db5-bd3a520f1f88",
         "words": [
           "tv",
           "a",
@@ -104958,7 +105145,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "tweets: a schema.org component word, fused from UserTweets",
-        "uuid": "e2b6a205-56b9-8fe9-82d2-03af236923e9",
+        "uuid": "1546d76d-9fa3-8f36-b2d6-b62f598ae139",
         "words": [
           "tweets",
           "a",
@@ -104983,7 +105170,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "type",
-        "uuid": "0e23b488-a214-8be6-97a4-92710b93860b",
+        "uuid": "793bb33f-07c3-850a-b65b-a98e94678559",
         "words": [
           "type"
         ],
@@ -104994,7 +105181,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when categorizing an entity into a taxonomic class — customer type (company/individual), transaction type (sale/purchase), account type (asset/liability/equity). A select field carrying domain-specific enums; often paired with status for state-machine workflows.",
-        "uuid": "dba4ce07-618f-8b48-9775-2bf4d697f4e1",
+        "uuid": "45dd9894-be24-8f77-a10f-86bb4b968684",
         "words": [
           "use",
           "when",
@@ -105058,7 +105245,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when working with Payload's generated TypeScript types — payload-types.ts, generate:types, GeneratedTypes, CollectionSlug, typing Local API results, or fixing stale-type errors after schema changes.",
-        "uuid": "3c692bd7-0ded-82ca-af8f-08bf1fc56ee2",
+        "uuid": "8729f0a6-17b5-8ced-b690-5a358368a74c",
         "words": [
           "use",
           "when",
@@ -105113,7 +105300,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "typical: a schema.org component word, fused from typicalAgeRange, typicalCreditsPerTerm, typicalTest",
-        "uuid": "e9e87926-f6b2-809f-a356-776a6dbb5ddc",
+        "uuid": "47d652a4-148d-8484-85be-f0780e4b2ed3",
         "words": [
           "typical",
           "a",
@@ -105151,7 +105338,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "uk: a schema.org component word, fused from UKNonprofitType",
-        "uuid": "d2d2e8f2-22f8-8c54-8d1f-5ff2d41d79e0",
+        "uuid": "7b4ba621-37fd-8c29-8ca7-bcebc9b5d57f",
         "words": [
           "uk",
           "a",
@@ -105187,7 +105374,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "un: a schema.org component word, fused from UnRegisterAction",
-        "uuid": "db4e8f5b-f5ec-8809-be3a-e78e262035a8",
+        "uuid": "1244f6f6-fb48-85bb-8e88-23dfc6654ba2",
         "words": [
           "un",
           "a",
@@ -105377,7 +105564,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "under: a schema.org component word, fused from underName",
-        "uuid": "b5f41fd6-025e-8c61-93f0-c487efa50b66",
+        "uuid": "c23a222d-6fc9-8c83-ba45-cf667bb44c16",
         "words": [
           "under",
           "a",
@@ -105413,7 +105600,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "union: a schema.org component word, fused from BankOrCreditUnion, WorkersUnion",
-        "uuid": "6cc817ea-18e6-8bac-ad51-f97904389aca",
+        "uuid": "f1fc475a-07fe-8d09-a3c8-f9adf0ba0bb2",
         "words": [
           "union",
           "a",
@@ -105450,7 +105637,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "unit: a schema.org component word, fused from UnitPriceSpecification, costPerUnit, doseUnit, drugUnit, employmentUnit, lodgingUnitDescription",
-        "uuid": "d33acc24-0748-890b-859d-789ea40d278b",
+        "uuid": "7c7eed83-863e-8f00-8c57-9e4642cd2d5f",
         "words": [
           "unit",
           "a",
@@ -105491,7 +105678,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "units: a schema.org component word, fused from numberOfAccommodationUnits, numberOfAvailableAccommodationUnits",
-        "uuid": "7deb837e-e042-8ffb-9167-aa11983062ce",
+        "uuid": "1b9440f1-434f-82d7-8bf7-08b646c0df42",
         "words": [
           "units",
           "a",
@@ -105528,7 +105715,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "university: a schema.org component word, fused from CollegeOrUniversity",
-        "uuid": "9199b477-18ca-8096-90fa-3c467bfdad08",
+        "uuid": "9ccdf6bf-5eb4-83f4-bf7d-7be627a1413f",
         "words": [
           "university",
           "a",
@@ -105564,7 +105751,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "unlabelled: a schema.org component word, fused from isUnlabelledFallback",
-        "uuid": "2abcc7cd-3b7c-8702-84ac-d3d7b6464573",
+        "uuid": "5f4be0d8-67d7-84cc-a98a-55dada75bebd",
         "words": [
           "unlabelled",
           "a",
@@ -105600,7 +105787,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "unnamed: a schema.org component word, fused from unnamedSourcesPolicy",
-        "uuid": "be0fe145-a7e1-87f1-9593-b81efbfc14df",
+        "uuid": "1d7c4019-5481-8a65-b947-e7872d79fd35",
         "words": [
           "unnamed",
           "a",
@@ -105636,7 +105823,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "unsaturated: a schema.org component word, fused from unsaturatedFatContent",
-        "uuid": "68ed34f0-4e39-8a1f-84ca-f4c4ef01f251",
+        "uuid": "0ff085dc-3560-873b-9c37-8e2af2d7935b",
         "words": [
           "unsaturated",
           "a",
@@ -105672,7 +105859,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "until: a schema.org component word, fused from expectedArrivalUntil, priceValidUntil, validUntil",
-        "uuid": "89450dc5-7dff-89f4-a2db-847f60c9a7ff",
+        "uuid": "cf091518-ffa6-8f7f-ab0a-e904ffc5677d",
         "words": [
           "until",
           "a",
@@ -105710,7 +105897,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "update: a schema.org component word, fused from UpdateAction, liveBlogUpdate",
-        "uuid": "52275b54-4300-8736-b85d-16ac2b13eb98",
+        "uuid": "2d09e8ba-d5d3-8ef9-a4fa-5caaec37cb55",
         "words": [
           "update",
           "a",
@@ -105747,7 +105934,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "updates: a schema.org component word, fused from newsUpdatesAndGuidelines",
-        "uuid": "692b3077-47fa-8673-a0e3-e7aceab068d8",
+        "uuid": "4c00fe92-3977-84ce-897d-4f6fac49be97",
         "words": [
           "updates",
           "a",
@@ -105840,7 +106027,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "upon: a schema.org component word, fused from salaryUponCompletion",
-        "uuid": "b58a7064-8ae9-88f6-8127-db12f0ecb6db",
+        "uuid": "eaf591e9-0309-8e35-b0fc-cc974e231f7b",
         "words": [
           "upon",
           "a",
@@ -105917,7 +106104,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "upvote: a schema.org component word, fused from upvoteCount",
-        "uuid": "548c246c-7bb8-8473-9d64-c8ecba0319fb",
+        "uuid": "120729b8-ec5f-8908-b2b1-06caf60f8766",
         "words": [
           "upvote",
           "a",
@@ -105953,7 +106140,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Data type: URL.",
-        "uuid": "1ccba7d3-187d-8421-96cf-c4f9fb3d9846",
+        "uuid": "b00af910-c9a5-8ef7-bfbe-d9ab3a50a371",
         "words": [
           "data",
           "type",
@@ -105983,7 +106170,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "us: a schema.org component word, fused from USNonprofitType, usNPI",
-        "uuid": "beba2252-2435-862d-a5f4-8e2e43ef402e",
+        "uuid": "11fcd81e-8ee3-8832-a716-205082f8bb95",
         "words": [
           "us",
           "a",
@@ -106020,7 +106207,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "usage: a schema.org component word, fused from CarUsageType, permittedUsage, usageInfo, vehicleSpecialUsage",
-        "uuid": "f89d8318-394b-8b19-8cfe-c61a07937615",
+        "uuid": "a1372d37-d451-8d10-9b13-1d0f22358d69",
         "words": [
           "usage",
           "a",
@@ -106059,7 +106246,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "use: a schema.org component word, fused from UseAction, cvdNumVentUse, educationalUse, potentialUse",
-        "uuid": "c662a727-d090-8418-a12c-df91b4a04a71",
+        "uuid": "68c7a5bc-665e-8fca-946a-a48189e5ca00",
         "words": [
           "use",
           "a",
@@ -106098,7 +106285,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "used: a schema.org component word, fused from programMembershipUsed, usedToDiagnose",
-        "uuid": "64c29f6f-8275-88b8-af20-32ad43fbd421",
+        "uuid": "a302c3d5-d035-87ab-bb8b-191c28f30f12",
         "words": [
           "used",
           "a",
@@ -106135,7 +106322,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "user: a schema.org component word, fused from UserBlocks, UserCheckins, UserComments, UserDownloads, UserInteraction, UserLikes",
-        "uuid": "f7b73849-5778-80c8-aa21-1bfc8490129e",
+        "uuid": "710b68cb-6d0a-8220-9fd1-a4d724c4dce6",
         "words": [
           "user",
           "a",
@@ -106235,7 +106422,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "uses: a schema.org component word, fused from usesDevice, usesHealthPlanIdStandard",
-        "uuid": "feb4df2a-b99e-8892-a7df-14000222f120",
+        "uuid": "819ee4d1-0cfd-8f42-a0a9-332a23fa2dfd",
         "words": [
           "uses",
           "a",
@@ -106504,7 +106691,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when choosing which RFC 9562 UUID version fits a case — v8 structured content-uuid (identity+capability+schema+digest fused) as the erpax default, v7 time-ordered for index-local speed, v4 random for unguessable secrets. Harmonise the features and everything collapses INTO the uuid itself — the 128-bit singularity.",
-        "uuid": "2c3da9f9-8df5-8cea-a238-9e06988bd31a",
+        "uuid": "87ec1103-9ecc-8e9a-b72b-d72ad54c7bc4",
         "words": [
           "use",
           "when",
@@ -106742,7 +106929,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "vacation: a schema.org component word, fused from VacationRental",
-        "uuid": "60aa5c50-b7cc-87e4-932a-570ad5cd220e",
+        "uuid": "6f4c6c9a-148e-8876-934e-6cc78dd103c3",
         "words": [
           "vacation",
           "a",
@@ -106878,7 +107065,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "values: a schema.org component word, fused from multipleValues",
-        "uuid": "57f1b4a6-8d97-8067-8fb6-d70b59262a53",
+        "uuid": "62530465-2db9-8b55-b6c3-03902b449999",
         "words": [
           "values",
           "a",
@@ -106914,7 +107101,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "variable: a schema.org component word, fused from StatisticalVariable, additionalVariable, variableMeasured",
-        "uuid": "0d242e85-b591-8fac-9c35-3705794cf3c7",
+        "uuid": "d84b95f8-d731-834e-846d-e833040f41f4",
         "words": [
           "variable",
           "a",
@@ -106952,7 +107139,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "variables: a schema.org component word, fused from variablesMeasured",
-        "uuid": "2c6bd4ef-d283-8137-bada-afa42e49557c",
+        "uuid": "a681d873-e402-86e0-b98f-2ac7f838abde",
         "words": [
           "variables",
           "a",
@@ -107091,7 +107278,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Indicates the property or properties by which the variants in a ProductGroup vary, e.g. their size, color etc. Schema.org properties can be referenced by their short name e.g. \\\"color\\\"; terms defined",
-        "uuid": "2891c026-ca79-8b3d-9e11-762571affbf5",
+        "uuid": "05a96d09-733b-8b90-b3c6-240127f91b78",
         "words": [
           "indicates",
           "the",
@@ -107152,7 +107339,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "vat: a schema.org component word, fused from vatID",
-        "uuid": "7445f377-8b2f-8adf-aabd-f125f6754b76",
+        "uuid": "1a5527f7-71f2-871e-9b40-eb517919e0d7",
         "words": [
           "vat",
           "a",
@@ -107237,7 +107424,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "A type of blood vessel that specifically carries blood to the heart.",
-        "uuid": "f1b4f493-90ad-8095-a0e8-e209eae969e9",
+        "uuid": "e9d0fe8b-e928-8a31-adfb-099062612ec3",
         "words": [
           "a",
           "type",
@@ -107500,7 +107687,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "vent: a schema.org component word, fused from cvdNumC19MechVentPats, cvdNumC19OFMechVentPats, cvdNumVent, cvdNumVentUse",
-        "uuid": "5d651927-0444-811a-91a4-ae4d161c6965",
+        "uuid": "bdb1ef59-435d-8ad2-8b03-abd42172a701",
         "words": [
           "vent",
           "a",
@@ -107539,7 +107726,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "venue: a schema.org component word, fused from EventVenue, MusicVenue",
-        "uuid": "02bf46fd-beff-8fdb-b197-cfcfbaec4783",
+        "uuid": "97861d87-abcf-809d-8e4d-d6b26e6a9f63",
         "words": [
           "venue",
           "a",
@@ -107834,7 +108021,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "veterinary: a schema.org component word, fused from VeterinaryCare",
-        "uuid": "3c6bd076-daf7-884a-9f49-178007f0e15f",
+        "uuid": "a06e9a94-a755-8f55-8459-f5ffcd843bde",
         "words": [
           "veterinary",
           "a",
@@ -107901,7 +108088,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "view: a schema.org component word, fused from ViewAction",
-        "uuid": "d18adbbe-6c8e-8617-a116-c96988d119c0",
+        "uuid": "f17d31ff-61f6-89ce-af8c-f45fbe5316cf",
         "words": [
           "view",
           "a",
@@ -107937,7 +108124,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "virtual: a schema.org component word, fused from VirtualLocation, maximumVirtualAttendeeCapacity",
-        "uuid": "05144ffc-9be1-8b0a-a30b-25c673427acd",
+        "uuid": "b4028d2a-ff32-8ff0-b48f-02e80df46be3",
         "words": [
           "virtual",
           "a",
@@ -108027,7 +108214,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "visits: a schema.org component word, fused from UserPageVisits",
-        "uuid": "759f8034-13d3-8885-b9b3-62767c8a0f6d",
+        "uuid": "b09a2657-2ced-8feb-b8f1-dcba5f9353a7",
         "words": [
           "visits",
           "a",
@@ -108063,7 +108250,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "visual: a schema.org component word, fused from VisualArtsEvent, VisualArtwork",
-        "uuid": "449eeda4-c5c8-8134-a84e-cfa38b8a780d",
+        "uuid": "cdb9aff4-3845-8aaf-8768-898630823484",
         "words": [
           "visual",
           "a",
@@ -108100,7 +108287,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "vital: a schema.org component word, fused from VitalSign",
-        "uuid": "f79c62af-f34b-8d5b-8972-388a93f8c5a0",
+        "uuid": "b0476851-781d-8a97-9dbe-95f0c7084b99",
         "words": [
           "vital",
           "a",
@@ -108201,7 +108388,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when checking that every word in the corpus comes from the shared standards-grounded vocabulary — the dictionary, schema.org, standard codes, and established domain terms. Whatever the language, words are written only from this one scheme; an ungrounded word is entropy, and the audit computes its zero-entropy solution.",
-        "uuid": "d276bf58-cf73-8f47-8ca4-5fcd81960615",
+        "uuid": "dd86efe6-261d-8680-b77f-22337d8af06f",
         "words": [
           "use",
           "when",
@@ -108309,7 +108496,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "volume: a schema.org component word, fused from PublicationVolume, cargoVolume, eligibleTransactionVolume, volumeNumber",
-        "uuid": "cadefcdd-15fb-87fa-9463-fdea20eb32a9",
+        "uuid": "9e962559-2f61-83e2-8950-b2c1f91d407a",
         "words": [
           "volume",
           "a",
@@ -108348,7 +108535,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "vote: a schema.org component word, fused from VoteAction",
-        "uuid": "878fa563-b6bf-8b62-9496-8a535c764315",
+        "uuid": "e77e4547-2c64-8ed0-a2c7-837275323526",
         "words": [
           "vote",
           "a",
@@ -108456,7 +108643,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "want: a schema.org component word, fused from WantAction",
-        "uuid": "148602fb-a690-8c15-b612-3b46c07922e7",
+        "uuid": "15590519-db3d-8e00-850d-16aaca37f992",
         "words": [
           "want",
           "a",
@@ -108910,7 +109097,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "wash: a schema.org component word, fused from AutoWash",
-        "uuid": "2f63ce16-27e0-8c76-aa8f-caf2e12ab914",
+        "uuid": "267dde9d-912b-8216-993d-d9f9422bf94c",
         "words": [
           "wash",
           "a",
@@ -108946,7 +109133,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "watch: a schema.org component word, fused from WatchAction",
-        "uuid": "09d8c1d3-113f-834e-bb38-0d7930a0c66a",
+        "uuid": "afbf2ac7-eebc-8aa9-8ac8-05345a47684d",
         "words": [
           "watch",
           "a",
@@ -108982,7 +109169,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "water: a schema.org component word, fused from BodyOfWater, LakeBodyOfWater, OceanBodyOfWater, RiverBodyOfWater, SeaBodyOfWater",
-        "uuid": "f465a0e6-5758-8ab8-b66a-39fc9928bec1",
+        "uuid": "54441151-1e94-8ec7-b6b5-542583827c5e",
         "words": [
           "water",
           "a",
@@ -109088,7 +109275,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "wear: a schema.org component word, fused from WearAction",
-        "uuid": "0f99bac6-6c99-83f3-8215-b43bd8bce7b1",
+        "uuid": "afc65bb6-3a87-87e9-bacd-d29904cf325e",
         "words": [
           "wear",
           "a",
@@ -109124,7 +109311,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "wearable: a schema.org component word, fused from WearableMeasurementTypeEnumeration, WearableSizeGroupEnumeration, WearableSizeSystemEnumeration",
-        "uuid": "08165d56-df50-8d0e-97fe-c707bdf40efe",
+        "uuid": "7fb4a665-05ea-8767-a3ea-bf70cc21ba4e",
         "words": [
           "wearable",
           "a",
@@ -109162,7 +109349,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "web: a schema.org component word, fused from MedicalWebPage, WebAPI, WebApplication, WebContent, WebPage, WebPageElement",
-        "uuid": "0e7ffed6-e621-830f-ada6-1f7f1bd4403b",
+        "uuid": "60aee277-f264-864f-9905-c1ad803ecb07",
         "words": [
           "web",
           "a",
@@ -109265,7 +109452,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "week: a schema.org component word, fused from DayOfWeek, byMonthWeek, dayOfWeek",
-        "uuid": "abb1d3ae-8390-86e3-9ea5-05f81a9bffd5",
+        "uuid": "8f6caafb-9636-8cba-8d5a-46e022df70f5",
         "words": [
           "week",
           "a",
@@ -109432,7 +109619,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "wheel: a schema.org component word, fused from DriveWheelConfigurationValue, driveWheelConfiguration",
-        "uuid": "c96cc577-f70b-8cb4-82b9-9bda3239e77e",
+        "uuid": "9d3463f5-db35-8907-b451-14559f62b873",
         "words": [
           "wheel",
           "a",
@@ -109576,7 +109763,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "wholesale: a schema.org component word, fused from WholesaleStore",
-        "uuid": "4606eebc-4f98-831a-bc65-5277a8a3764f",
+        "uuid": "243f86aa-0bbc-824c-ba4a-8a961e3c84ce",
         "words": [
           "wholesale",
           "a",
@@ -109644,7 +109831,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "win: a schema.org component word, fused from WinAction",
-        "uuid": "087ec68e-018b-8612-941d-963ad7fa7c1c",
+        "uuid": "6318d030-ab61-8dd2-a26d-5c51ffccc64a",
         "words": [
           "win",
           "a",
@@ -109827,7 +110014,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "within: a schema.org component word, fused from geoWithin",
-        "uuid": "9810a1f8-d234-87f0-9503-e2460420a15c",
+        "uuid": "5e4df68a-4b27-874b-985b-736c722b53ba",
         "words": [
           "within",
           "a",
@@ -109863,7 +110050,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "word: a schema.org component word, fused from wordCount",
-        "uuid": "fbc91284-e398-87de-bb25-83b65a1d3106",
+        "uuid": "8fde23a7-2896-83ed-b174-7482dfb147bd",
         "words": [
           "word",
           "a",
@@ -109899,7 +110086,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "work: a schema.org component word, fused from CreativeWork, CreativeWorkSeason, CreativeWorkSeries, WorkBasedProgram, creativeWorkStatus, eligibilityToWorkRequirement",
-        "uuid": "edc6dea8-b907-85f8-ab4b-4dc554d588da",
+        "uuid": "de9e0c27-81ad-83f4-b9fc-9de851454579",
         "words": [
           "work",
           "a",
@@ -110004,7 +110191,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when defining reusable process-step types (Cut, Sew, Mix, Assemble, Inspect, Pack) that routings compose — with ISA-95 operation-type hierarchy, default work-center, and KPI anchors independent of any specific product. The operation-type catalog collection.",
-        "uuid": "27fe726e-3db8-8885-b92d-094c49fe1843",
+        "uuid": "12515099-57b0-8b1a-8c31-3e15c72e00c7",
         "words": [
           "use",
           "when",
@@ -110322,7 +110509,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "workers: a schema.org component word, fused from WorkersUnion",
-        "uuid": "959750aa-c335-83e5-b6af-dc015fcc051a",
+        "uuid": "b804c089-b7c1-801e-9f3b-17dc8d0d7c84",
         "words": [
           "workers",
           "a",
@@ -110760,7 +110947,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "worship: a schema.org component word, fused from PlaceOfWorship",
-        "uuid": "83b3ed94-2915-8596-8f7e-433916af6f6e",
+        "uuid": "e8e508a8-e0a9-8f61-9a7a-ba92daad540f",
         "words": [
           "worship",
           "a",
@@ -110796,7 +110983,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "worst: a schema.org component word, fused from worstRating",
-        "uuid": "24db20b1-dd9d-8229-9da8-d06069ac4edd",
+        "uuid": "72f23618-f4a5-8f07-a819-cbe96e9c9d51",
         "words": [
           "worst",
           "a",
@@ -110832,7 +111019,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "worth: a schema.org component word, fused from netWorth",
-        "uuid": "714e4fe8-81a5-8f38-8042-41913f162f15",
+        "uuid": "a0434a89-04c2-8423-81ee-762f6844c25f",
         "words": [
           "worth",
           "a",
@@ -110868,7 +111055,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "wp: a schema.org component word, fused from WPAdBlock, WPFooter, WPHeader, WPSideBar",
-        "uuid": "15288474-06ac-84c7-b4fc-f8a51ed23b61",
+        "uuid": "41506d9e-fd20-87d6-a0e4-f319e0107078",
         "words": [
           "wp",
           "a",
@@ -110907,7 +111094,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "write: a schema.org component word, fused from WriteAction",
-        "uuid": "0ac32ccd-6275-8697-a91c-f6849e857fca",
+        "uuid": "71ee56c5-c298-8660-acf1-94ca52291df1",
         "words": [
           "write",
           "a",
@@ -110996,7 +111183,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "year: a schema.org component word, fused from copyrightYear, termsPerYear, yearBuilt",
-        "uuid": "642da424-8b8d-879d-ad41-6e742b736189",
+        "uuid": "95a06e25-0a3a-8d55-bfee-46842ef555ba",
         "words": [
           "year",
           "a",
@@ -111034,7 +111221,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "yearly: a schema.org component word, fused from yearlyRevenue",
-        "uuid": "02af5336-30df-8648-ad9c-fbe52b1d852c",
+        "uuid": "0eecabbb-4186-8373-821f-269d2ca1a763",
         "words": [
           "yearly",
           "a",
@@ -111070,7 +111257,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "years: a schema.org component word, fused from yearsInOperation",
-        "uuid": "ff5abc37-8429-85b7-9b9f-1c4173288fa4",
+        "uuid": "535df546-15ff-88f1-b2f1-61ac72ee9348",
         "words": [
           "years",
           "a",
@@ -111319,4 +111506,4 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
   }
 ]
 
-export const TRANSLATIONS_COUNT = 2342
+export const TRANSLATIONS_COUNT = 2345

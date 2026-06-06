@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "collateral: a schema.org component word, fused from requiredCollateral",
-    "uuid": "b53d0a6c-c397-89d8-99ee-f4c492975c11",
+    "uuid": "15b9a27c-a6c1-859d-8890-e1104c1a43da",
     "words": [
       "collateral",
       "a",

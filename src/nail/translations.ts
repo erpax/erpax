@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "nail: a schema.org component word, fused from NailSalon",
-    "uuid": "d7597bc0-29ee-8a28-a032-c28ee497aa47",
+    "uuid": "004bfb3d-a998-82c1-b762-0a411e637695",
     "words": [
       "nail",
       "a",

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "subcellular: a schema.org component word, fused from isLocatedInSubcellularLocation",
-    "uuid": "13bc7515-4389-8f69-b681-6cdf14d83cc5",
+    "uuid": "c23c1b50-676a-8b5d-b78f-96b140fe5c11",
     "words": [
       "subcellular",
       "a",

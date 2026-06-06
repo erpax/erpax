@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "scale: a schema.org component word, fused from energyEfficiencyScaleMax, energyEfficiencyScaleMin",
-    "uuid": "161317f1-5d2a-8d04-af3b-a63a72e3d53e",
+    "uuid": "cba3475c-a38b-8096-a4dd-6af62faecad7",
     "words": [
       "scale",
       "a",

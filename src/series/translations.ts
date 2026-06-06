@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "A Series in schema.org is a group of related items, typically but not necessarily of the same kind. See also CreativeWorkSeries, EventSeries.",
-    "uuid": "51da1099-a75a-81e8-a902-9e75ee5f1186",
+    "uuid": "84df786e-7ea3-8adf-a673-fa4da6117dee",
     "words": [
       "a",
       "series",

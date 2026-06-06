@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "A type of sport (e.g. Baseball).",
-    "uuid": "2b061125-8c25-8be7-a9dd-8044cf41b1aa",
+    "uuid": "bf274092-b6ed-8e11-b054-902e5e718906",
     "words": [
       "a",
       "type",

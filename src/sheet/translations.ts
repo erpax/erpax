@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "sheet: a schema.org component word, fused from SheetMusic",
-    "uuid": "3c03d808-1cc6-8edf-b060-b4239bd49c1d",
+    "uuid": "38975b55-a89d-8355-b588-4bf0b1ce1be8",
     "words": [
       "sheet",
       "a",

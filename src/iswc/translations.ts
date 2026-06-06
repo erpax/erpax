@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "iswc: a schema.org component word, fused from iswcCode",
-    "uuid": "693e13cd-21eb-8cf1-8b18-3f710b5aa682",
+    "uuid": "11810aa7-223e-8cf5-a08b-9604133a5b38",
     "words": [
       "iswc",
       "a",

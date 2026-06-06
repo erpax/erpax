@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Single Table Inheritance in Payload — one collection, a flat `type` discriminator, typed in TS as a discriminated union. Read when a collection holds several behavioral subtypes (invoice↔bill↔credit_note, payment kinds, party kinds).",
-    "uuid": "b3bdc806-547a-85e8-a246-4dbdf6339a05",
+    "uuid": "9914d0a2-fadb-82f6-bab0-efbd74f4b8f7",
     "words": [
       "single",
       "table",

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "gym: a schema.org component word, fused from ExerciseGym",
-    "uuid": "8effaeaa-70ba-8d82-805a-f25a38fce13f",
+    "uuid": "0609016e-95a4-895f-991b-eeb2b448765b",
     "words": [
       "gym",
       "a",

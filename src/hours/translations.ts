@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "hours: a schema.org component word, fused from OpeningHoursSpecification, hoursAvailable, openingHours, openingHoursSpecification, specialOpeningHoursSpecification, workHours",
-    "uuid": "fe9a5c96-732e-86d7-8f66-287de7c47cfd",
+    "uuid": "0d600f18-b751-8296-ad6e-509f362d9b67",
     "words": [
       "hours",
       "a",

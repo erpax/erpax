@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "drive: a schema.org component word, fused from DriveWheelConfigurationValue, driveWheelConfiguration, hasDriveThroughService",
-    "uuid": "ac0d4c9f-5337-8d5e-b26f-64bde64d66fd",
+    "uuid": "c501f63e-2a86-8f42-b6fa-972f094a93b0",
     "words": [
       "drive",
       "a",

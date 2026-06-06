@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "block: a schema.org component word, fused from WPAdBlock",
-    "uuid": "ccdabefc-8d46-89f6-96df-bf608ec321b7",
+    "uuid": "7f147a92-bd64-83f5-b5c5-8edea63aaab0",
     "words": [
       "block",
       "a",

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "breastfeeding: a schema.org component word, fused from breastfeedingWarning",
-    "uuid": "4a303f92-b952-8566-94d8-588c5699c43d",
+    "uuid": "5a8af866-5323-853d-a2df-a22939456a55",
     "words": [
       "breastfeeding",
       "a",

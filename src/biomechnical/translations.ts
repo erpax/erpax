@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "biomechnical: a schema.org component word, fused from biomechnicalClass",
-    "uuid": "f5670ccd-49c5-8e57-90b4-55f7ab6ae7ee",
+    "uuid": "6cdfb654-277f-8181-af38-bbf4401a9ada",
     "words": [
       "biomechnical",
       "a",

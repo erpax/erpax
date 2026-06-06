@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "frame: a schema.org component word, fused from videoFrameSize",
-    "uuid": "194675aa-1dc6-8a44-80c7-a8a8b9f2136e",
+    "uuid": "029f1985-c793-80bb-82a3-e0dbf0842ad8",
     "words": [
       "frame",
       "a",

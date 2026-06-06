@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "copay: a schema.org component word, fused from healthPlanCopay, healthPlanCopayOption",
-    "uuid": "993a24e0-ed1b-860f-b0f1-25841e6113e2",
+    "uuid": "d3693fdd-6d88-88e3-b824-9d0ace2845c5",
     "words": [
       "copay",
       "a",

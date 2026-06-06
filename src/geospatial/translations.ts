@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "geospatial: a schema.org component word, fused from GeospatialGeometry",
-    "uuid": "1beb4dca-f820-8bc7-8f56-38d77a98386e",
+    "uuid": "035fc161-84c2-8928-9bb7-c50b353bc7ed",
     "words": [
       "geospatial",
       "a",

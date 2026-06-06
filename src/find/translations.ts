@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "find: a schema.org component word, fused from FindAction",
-    "uuid": "628735a3-486b-87c0-93bd-56a8d2b2f5f9",
+    "uuid": "a3d147bd-f2d8-856c-913e-29f75b5982c1",
     "words": [
       "find",
       "a",

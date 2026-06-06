@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "crosses: a schema.org component word, fused from geoCrosses",
-    "uuid": "c280bbac-577a-812b-a12b-71ffa276964d",
+    "uuid": "bdc526f3-ed9f-82af-8d48-89cae411de62",
     "words": [
       "crosses",
       "a",

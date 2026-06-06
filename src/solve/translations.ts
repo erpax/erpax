@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "solve: a schema.org component word, fused from SolveMathAction",
-    "uuid": "5203654d-215c-8d9f-821e-ee06bff3d400",
+    "uuid": "a8b94487-1770-84d5-8580-cff5bd9510a9",
     "words": [
       "solve",
       "a",

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "enum: a schema.org component word, fused from MeasurementMethodEnum",
-    "uuid": "5650c2ad-e367-8d48-84d3-0ec88cabc9b2",
+    "uuid": "073a1a20-d128-8151-a6e6-ea5ecd7c3656",
     "words": [
       "enum",
       "a",

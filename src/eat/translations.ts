@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "eat: a schema.org component word, fused from EatAction",
-    "uuid": "cd86e0cc-edfc-8b5d-b011-30de6138158a",
+    "uuid": "058eae8a-5141-87f4-8a82-bd51c0bab253",
     "words": [
       "eat",
       "a",

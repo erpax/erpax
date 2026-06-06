@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "web: a schema.org component word, fused from MedicalWebPage, WebAPI, WebApplication, WebContent, WebPage, WebPageElement",
-    "uuid": "0e7ffed6-e621-830f-ada6-1f7f1bd4403b",
+    "uuid": "60aee277-f264-864f-9905-c1ad803ecb07",
     "words": [
       "web",
       "a",

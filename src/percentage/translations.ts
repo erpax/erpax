@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "percentage: a schema.org component word, fused from annualPercentageRate, orderPercentage, weightPercentage",
-    "uuid": "96cfab5d-f6e5-8a54-98b2-21d12ece3242",
+    "uuid": "01a1ccd7-4e62-8612-91d0-939d27abaeaf",
     "words": [
       "percentage",
       "a",

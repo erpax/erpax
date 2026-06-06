@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "footer: a schema.org component word, fused from WPFooter",
-    "uuid": "a0513b8d-8e2d-89b2-a728-25159313c82d",
+    "uuid": "e9d8c117-cccf-86c9-bb8f-072e7da07456",
     "words": [
       "footer",
       "a",

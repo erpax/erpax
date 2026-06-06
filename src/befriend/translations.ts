@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "befriend: a schema.org component word, fused from BefriendAction",
-    "uuid": "9572420b-7062-8ef0-909a-8b4b6808c3f3",
+    "uuid": "9194ba97-d236-8d1d-aabf-64f4774ed134",
     "words": [
       "befriend",
       "a",

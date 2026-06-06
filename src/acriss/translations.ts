@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "acriss: a schema.org component word, fused from acrissCode",
-    "uuid": "2a1da62c-53ab-8c32-bdc0-33dea2488d1c",
+    "uuid": "22d8c904-422c-8258-b2bf-ba3d14c95f7f",
     "words": [
       "acriss",
       "a",

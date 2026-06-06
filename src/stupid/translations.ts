@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "stupid: a schema.org component word, fused from StupidType, stupidProperty",
-    "uuid": "fc870805-cfc7-8cb2-b8a9-c592c62d7919",
+    "uuid": "6b79cb51-0677-80f4-8c6e-e555b0a7b94d",
     "words": [
       "stupid",
       "a",

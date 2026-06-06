@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "hvac: a schema.org component word, fused from HVACBusiness",
-    "uuid": "c546bf77-60ed-8cb2-8633-384b292b9a70",
+    "uuid": "ece1b108-b96c-8deb-8ad9-63dff8183da5",
     "words": [
       "hvac",
       "a",

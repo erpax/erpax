@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "medical: a schema.org component word, fused from MedicalAudience, MedicalAudienceType, MedicalBusiness, MedicalCause, MedicalClinic, MedicalCode",
-    "uuid": "68fc0cc9-2ec3-8e65-adf7-bbe73b2e7e3f",
+    "uuid": "2e816767-4fc0-8d8e-b588-5b4f8d11d9ac",
     "words": [
       "medical",
       "a",

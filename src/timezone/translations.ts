@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "timezone: a schema.org component word, fused from broadcastTimezone, scheduleTimezone",
-    "uuid": "86911f22-f653-8aca-a7c9-d24e204d45a2",
+    "uuid": "571eb9fb-00db-8793-be7a-83d7e52e7abf",
     "words": [
       "timezone",
       "a",

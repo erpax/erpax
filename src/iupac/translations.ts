@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "iupac: a schema.org component word, fused from iupacName",
-    "uuid": "4832926e-7803-80ee-a406-646807655d38",
+    "uuid": "2b969cb7-b190-875a-b88a-9f8956bd0279",
     "words": [
       "iupac",
       "a",

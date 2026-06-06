@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "brain: a schema.org component word, fused from BrainStructure",
-    "uuid": "73d3a1df-3c69-8a34-bfff-ece617d6798c",
+    "uuid": "0ab0fbb4-605d-8f11-8b79-36f438312c26",
     "words": [
       "brain",
       "a",

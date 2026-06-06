@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "policy: a schema.org component word, fused from BoardingPolicyType, MerchantReturnPolicy, MerchantReturnPolicySeasonalOverride, ProductReturnPolicy, actionableFeedbackPolicy, boardingPolicy",
-    "uuid": "8fb0e365-0ecc-8c4c-abf7-09253f3528da",
+    "uuid": "9c813fa1-9efa-80bd-b6d2-85f48129200d",
     "words": [
       "policy",
       "a",

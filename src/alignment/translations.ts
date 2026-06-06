@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "alignment: a schema.org component word, fused from AlignmentObject, alignmentType, educationalAlignment",
-    "uuid": "0a5923e5-2ae4-8239-86fd-743b96b01786",
+    "uuid": "0888c385-8110-8874-ba53-739c464a71c4",
     "words": [
       "alignment",
       "a",

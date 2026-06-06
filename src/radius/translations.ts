@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "radius: a schema.org component word, fused from geoRadius",
-    "uuid": "8811dc5d-32c2-899f-baef-6a98d56646c6",
+    "uuid": "d83b16ed-c5c3-8398-8869-3b27d1394bf6",
     "words": [
       "radius",
       "a",

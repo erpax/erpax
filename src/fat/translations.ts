@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "fat: a schema.org component word, fused from fatContent, saturatedFatContent, transFatContent, unsaturatedFatContent",
-    "uuid": "7b96cb30-4ba6-8921-a5f8-6b87266d209c",
+    "uuid": "c9a416cf-10b0-89e9-9212-b6538ee1a463",
     "words": [
       "fat",
       "a",

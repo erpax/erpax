@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "similarity: a schema.org component word, fused from bioChemSimilarity",
-    "uuid": "adeb6cbe-f0ba-868b-990c-d3983313c84a",
+    "uuid": "ae597694-542f-8068-a6fd-813fe303b117",
     "words": [
       "similarity",
       "a",

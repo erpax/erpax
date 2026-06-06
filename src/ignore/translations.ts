@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "ignore: a schema.org component word, fused from IgnoreAction",
-    "uuid": "efbf53cc-f053-84f1-af01-63a4749c5ecc",
+    "uuid": "18fc8ca9-ca01-8d5b-b4d0-5177891aa798",
     "words": [
       "ignore",
       "a",

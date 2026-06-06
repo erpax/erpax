@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "follow: a schema.org component word, fused from FollowAction",
-    "uuid": "e32c4f50-92df-8933-8760-ad81a1ee2c74",
+    "uuid": "19de3d45-cd5a-8fdf-9d2f-af170e3084b8",
     "words": [
       "follow",
       "a",

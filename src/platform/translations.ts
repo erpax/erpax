@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "platform: a schema.org component word, fused from DigitalPlatformEnumeration, RuntimePlatform, actionPlatform, arrivalPlatform, departurePlatform, gamePlatform",
-    "uuid": "5b754508-baa7-8e92-9bf1-97cb4be610ac",
+    "uuid": "5ab1746b-66a1-8e09-83f3-79ce98412d33",
     "words": [
       "platform",
       "a",

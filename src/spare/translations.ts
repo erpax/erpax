@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "spare: a schema.org component word, fused from isAccessoryOrSparePartFor",
-    "uuid": "8a646186-c73c-83b1-a922-538e80cd7a0e",
+    "uuid": "d38a5dfe-0a8b-8c2e-a440-ca6f29797b96",
     "words": [
       "spare",
       "a",

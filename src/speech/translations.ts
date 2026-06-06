@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "speech: a schema.org component word, fused from speechToTextMarkup",
-    "uuid": "6d38547e-3d4d-8907-9615-eada620ee04a",
+    "uuid": "521f72db-682a-8679-b101-54787ad28f5f",
     "words": [
       "speech",
       "a",

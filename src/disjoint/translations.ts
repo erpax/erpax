@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "disjoint: a schema.org component word, fused from geoDisjoint",
-    "uuid": "0d77319b-4e9c-8d7f-acb0-53f965eddb8c",
+    "uuid": "5bfac6ab-48ed-849e-a209-d29d5ad32dac",
     "words": [
       "disjoint",
       "a",

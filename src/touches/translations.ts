@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "touches: a schema.org component word, fused from geoTouches",
-    "uuid": "bb0e9557-43d3-8403-8082-49c786589ea0",
+    "uuid": "94885597-e25d-8c3b-89ac-45c84c9048d2",
     "words": [
       "touches",
       "a",

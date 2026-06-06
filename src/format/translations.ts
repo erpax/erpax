@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "format: a schema.org component word, fused from BookFormatType, MusicReleaseFormatType, bookFormat, encodingFormat, fileFormat, musicReleaseFormat",
-    "uuid": "54098aa1-1b49-8e79-b2c8-e65d3e8097a8",
+    "uuid": "35cb6fdd-1945-8fa4-b7e8-d337d76af639",
     "words": [
       "format",
       "a",

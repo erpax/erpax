@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "midpoint: a schema.org component word, fused from geoMidpoint",
-    "uuid": "79b5b15d-292d-84d4-a86d-dceaa4894239",
+    "uuid": "0f396899-77d2-8eef-8cc5-94dccdaba776",
     "words": [
       "midpoint",
       "a",

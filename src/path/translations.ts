@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "path: a schema.org component word, fused from XPathType",
-    "uuid": "5283b219-89ec-8d23-9457-c4c95fc3ef6a",
+    "uuid": "1a49c138-77b6-807e-ab53-f256316def37",
     "words": [
       "path",
       "a",

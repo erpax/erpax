@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "interval: a schema.org component word, fused from datasetTimeInterval",
-    "uuid": "bcca05db-86d0-85e3-b6b6-23346a4429e2",
+    "uuid": "1d7e5cd8-35b6-8ac3-9142-4349c32301b5",
     "words": [
       "interval",
       "a",

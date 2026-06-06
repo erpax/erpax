@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "exif: a schema.org component word, fused from exifData",
-    "uuid": "7eeca4a8-0c48-8e9c-9ef0-6e97d775119f",
+    "uuid": "b043c5c8-f6ce-8450-ab92-afb7e9f12478",
     "words": [
       "exif",
       "a",

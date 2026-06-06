@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "contact: a schema.org component word, fused from ContactPage, ContactPoint, ContactPointOption, applicationContact, contactOption, contactPoint",
-    "uuid": "7d48d3a7-a8e2-80a5-89bc-cf0eda8866c2",
+    "uuid": "f2878bb5-6a63-8b78-974a-411e4f31c342",
     "words": [
       "contact",
       "a",

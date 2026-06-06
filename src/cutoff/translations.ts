@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "cutoff: a schema.org component word, fused from cutoffTime",
-    "uuid": "22898176-9f90-8935-ad8a-2b34fd375dab",
+    "uuid": "9781ecae-97fc-89b3-a84e-88224af79137",
     "words": [
       "cutoff",
       "a",

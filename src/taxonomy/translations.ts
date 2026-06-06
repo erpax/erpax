@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when classifying entities into a ranked hierarchy — the family→genus→species→cultivar ladder for crops, and the generic ranked-classification engine for any LOD @type tree. A node's type is its rank-chain; traits inherit down the ranks (the fractal parent-chain), so taxonomy is the dimension atom applied to kind.",
-    "uuid": "eb32df8c-e014-8dbc-8902-e78411fe29fc",
+    "uuid": "226eea80-79bb-85ff-b585-41c6ff2389bd",
     "words": [
       "use",
       "when",

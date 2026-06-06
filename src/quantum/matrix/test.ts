@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest'
-import { cross, bidirectionalCross, adjacencyDensity, reciprocity, centrality, centralityRank, isAdjacent } from '@/quantum/matrix'
+import { cross, bidirectionalCross, adjacencyDensity, reciprocity, centrality, centralityRank, isAdjacent, dimensions, torusComplete } from '@/quantum/matrix'
 import { entangle } from '@/quantum'
-import { nodeOf } from '@/uuid/matrix'
+import { nodeOf, verifyRoot } from '@/uuid/matrix'
 import { massOf, well } from '@/gravity'
 import { reciprocity as edgeReciprocity } from '@/entanglement'
 
@@ -39,5 +39,24 @@ describe('quantum/matrix — the cross-product / entanglement adjacency', () => 
     expect(isAdjacent('__nonexistent__', 'all')).toBe(false)
     expect(bidirectionalCross('access', 'all')).toBe(bidirectionalCross('all', 'access')) // symmetric
     if (isAdjacent('access', 'all')) expect(bidirectionalCross('access', 'all')).toBe(true)
+  })
+})
+
+// The test-coverage law: prove the COMPLETE double-torus across all uuid-chain dimensions, no gaps.
+describe('quantum/matrix — the complete double-torus in all dimensions (uuid-chain data features)', () => {
+  it('every node closes its ring (prev AND next bound) — the torus has no gap in any dimension', () => {
+    const t = torusComplete()
+    expect(t.nodes).toBeGreaterThan(0)
+    expect(t.ringComplete).toBe(t.nodes)
+    expect(t.complete).toBe(true)
+  })
+  it('a node reports its dimensions; the ring (prev/next) is always present', () => {
+    const d = dimensions('merge')
+    expect(d.prev).toBe(true)
+    expect(d.next).toBe(true)
+  })
+  it('the double-torus folds to one root (collapse) and the entanglement is whole (reciprocity 1)', () => {
+    expect(verifyRoot().ok).toBe(true)
+    expect(reciprocity()).toBe(1)
   })
 })

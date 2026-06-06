@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "creative: a schema.org component word, fused from CreativeWork, CreativeWorkSeason, CreativeWorkSeries, creativeWorkStatus, encodesCreativeWork",
-    "uuid": "1379c1a6-954c-8d86-9299-114b9920c551",
+    "uuid": "e13b9023-4eee-8da2-bb30-334ffe819fce",
     "words": [
       "creative",
       "a",

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "coverage: a schema.org component word, fused from coverageEndTime, coverageStartTime, missionCoveragePrioritiesPolicy, spatialCoverage, temporalCoverage",
-    "uuid": "b4fad8a3-063a-8466-8047-23df8862cee2",
+    "uuid": "2e3f63fb-9ea9-8b28-924d-e05d1c123099",
     "words": [
       "coverage",
       "a",

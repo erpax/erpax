@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "shop: a schema.org component word, fused from AutoBodyShop, CafeOrCoffeeShop, HobbyShop, IceCreamShop, PawnShop, TireShop",
-    "uuid": "0f76b625-0473-8334-abe8-d63967239ef5",
+    "uuid": "3b0a29e9-102d-821c-bd77-7b16ab486fa0",
     "words": [
       "shop",
       "a",

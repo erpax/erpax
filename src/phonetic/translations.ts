@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "phonetic: a schema.org component word, fused from phoneticText",
-    "uuid": "358780f7-8d8f-8f25-842f-f3047fa318e9",
+    "uuid": "3bbe3e1f-2b51-8a50-8385-2a7c86ebdce1",
     "words": [
       "phonetic",
       "a",

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "spa: a schema.org component word, fused from DaySpa",
-    "uuid": "a06b432c-2375-839d-939d-d72d162efd7f",
+    "uuid": "31c69d41-b833-8ba1-a950-1ee14638e566",
     "words": [
       "spa",
       "a",

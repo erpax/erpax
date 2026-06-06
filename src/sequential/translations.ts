@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "sequential: a schema.org component word, fused from SequentialArt",
-    "uuid": "a3ad0de2-49e8-8816-9205-da53b8d30366",
+    "uuid": "bbe232fd-ebb5-8b4b-b739-51b2808638fb",
     "words": [
       "sequential",
       "a",

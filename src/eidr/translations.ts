@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "eidr: a schema.org component word, fused from editEIDR, titleEIDR",
-    "uuid": "8a5063f3-3a17-84f1-8482-537ea90f92fd",
+    "uuid": "6a97214d-5409-8a86-9b66-51a68b722b2b",
     "words": [
       "eidr",
       "a",

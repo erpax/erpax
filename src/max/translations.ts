@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "max: a schema.org component word, fused from childMaxAge, energyEfficiencyScaleMax, maxPrice, maxValue, requiredMaxAge, suggestedMaxAge",
-    "uuid": "d631d5d6-8bfb-8d1a-9256-751d08461f9b",
+    "uuid": "653d7419-6f1b-8484-a9df-1cef1f2b1c0e",
     "words": [
       "max",
       "a",

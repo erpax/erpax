@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "week: a schema.org component word, fused from DayOfWeek, byMonthWeek, dayOfWeek",
-    "uuid": "abb1d3ae-8390-86e3-9ea5-05f81a9bffd5",
+    "uuid": "8f6caafb-9636-8cba-8d5a-46e022df70f5",
     "words": [
       "week",
       "a",

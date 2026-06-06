@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "interior: a schema.org component word, fused from vehicleInteriorColor, vehicleInteriorType",
-    "uuid": "d92dc870-0e58-8807-8582-854371865db4",
+    "uuid": "9c9b8bbc-61fc-8711-b564-e7eb871d1fbb",
     "words": [
       "interior",
       "a",

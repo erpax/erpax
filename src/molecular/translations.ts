@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "molecular: a schema.org component word, fused from MolecularEntity, hasMolecularFunction, molecularFormula, molecularWeight, monoisotopicMolecularWeight",
-    "uuid": "16196727-5823-8c3b-8946-0fb1316f5878",
+    "uuid": "02452710-4ff8-8305-a7ad-9777935ecf27",
     "words": [
       "molecular",
       "a",

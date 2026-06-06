@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "business: a schema.org component word, fused from AutomotiveBusiness, BusinessAudience, BusinessEntityType, BusinessEvent, BusinessFunction, EntertainmentBusiness",
-    "uuid": "a50e955d-f825-8db1-af59-2997dc952818",
+    "uuid": "ec6521a5-d025-8567-9d2a-06c00ac39eab",
     "words": [
       "business",
       "a",

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "food: a schema.org component word, fused from FastFoodRestaurant, FoodEstablishment, FoodEstablishmentReservation, FoodEvent, FoodService, foodEstablishment",
-    "uuid": "db39c2f1-58d8-8be7-9143-bc19961ce550",
+    "uuid": "d5baacab-891b-828e-84e3-956b3ab4efd1",
     "words": [
       "food",
       "a",

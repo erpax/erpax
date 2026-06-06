@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "bookmark: a schema.org component word, fused from BookmarkAction",
-    "uuid": "bff712db-20cc-8003-9d6f-ccf76f296aea",
+    "uuid": "deecd723-3055-8a48-a9b0-9cb093ca4ec3",
     "words": [
       "bookmark",
       "a",

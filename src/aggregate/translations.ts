@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "aggregate: a schema.org component word, fused from AggregateOffer, AggregateRating, EmployerAggregateRating, aggregateElement, aggregateRating",
-    "uuid": "c37ddb53-813b-805e-a7a4-dedb0b8ae406",
+    "uuid": "26dadbec-bac3-88c7-82dd-6fd256bf64d2",
     "words": [
       "aggregate",
       "a",

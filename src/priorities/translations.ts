@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "priorities: a schema.org component word, fused from missionCoveragePrioritiesPolicy",
-    "uuid": "a1d72173-e4ac-8f48-a73e-db15842cb240",
+    "uuid": "934229e6-7ca0-8a6b-bf51-cb111a460ea9",
     "words": [
       "priorities",
       "a",

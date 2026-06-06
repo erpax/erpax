@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "office: a schema.org component word, fused from GovernmentOffice, OfficeEquipmentStore, PhysiciansOffice, PostOffice, postOfficeBoxNumber",
-    "uuid": "bf535bac-5f49-8b72-9cc2-98e923cd8ebe",
+    "uuid": "8570aee6-13b3-8ae9-9907-0e84d88f8578",
     "words": [
       "office",
       "a",

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "npi: a schema.org component word, fused from usNPI",
-    "uuid": "12e92b2a-92ed-8835-b387-1f2576d265a1",
+    "uuid": "57547696-6501-8224-9dc0-7f30cf9e8fb3",
     "words": [
       "npi",
       "a",

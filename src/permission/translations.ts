@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "permission: a schema.org component word, fused from DigitalDocumentPermission, DigitalDocumentPermissionType, hasDigitalDocumentPermission, permissionType",
-    "uuid": "5b4d2bca-f435-8478-8cb1-aab57ac3f827",
+    "uuid": "24951d9e-15ff-86be-bab0-fd2e8f1aa7ed",
     "words": [
       "permission",
       "a",

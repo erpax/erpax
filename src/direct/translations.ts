@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "direct: a schema.org component word, fused from directApply",
-    "uuid": "ec672066-a51a-84ac-8043-e03bafdaf608",
+    "uuid": "ab62696e-b68b-8a78-bc14-e7cacc1a4356",
     "words": [
       "direct",
       "a",

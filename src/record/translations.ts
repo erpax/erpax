@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "record: a schema.org component word, fused from CDCPMDRecord, recordLabel",
-    "uuid": "b86dd435-555d-8d98-be5d-fc8eb7499b3b",
+    "uuid": "90fb03d5-a5ee-80d3-9240-c5bc981daf0f",
     "words": [
       "record",
       "a",

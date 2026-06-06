@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "channel: a schema.org component word, fused from AMRadioChannel, BroadcastChannel, FMRadioChannel, RadioChannel, ServiceChannel, TelevisionChannel",
-    "uuid": "f5620f7e-5417-80e7-b38d-8138828368ee",
+    "uuid": "c9ac76f7-4a50-889f-8d33-fdb824f0bec2",
     "words": [
       "channel",
       "a",

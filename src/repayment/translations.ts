@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "repayment: a schema.org component word, fused from RepaymentSpecification, loanRepaymentForm, monthlyMinimumRepaymentAmount",
-    "uuid": "e06c9dd2-81d5-840b-9ada-e26b91997c26",
+    "uuid": "adc7e179-94f4-8134-87b5-54ec5907f36d",
     "words": [
       "repayment",
       "a",

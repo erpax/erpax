@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "The most generic type of item.",
-    "uuid": "3771d7cd-b7a2-89fc-b570-4b4969b6bfe7",
+    "uuid": "974ce270-ceac-8618-9514-3c59c48a153a",
     "words": [
       "the",
       "most",
