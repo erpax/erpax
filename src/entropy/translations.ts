@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about disorder as the quantity erpax's whole ledger balances — entropy is the fuel of the one law: zero entropy ⇒ infinite mass ⇒ infinite tamper/exploit cost. A content-addressed store at zero entropy holds no slack a forger can exploit (only the external anchor borrows the one drop). angel lowers it (create/order/DRY), archangel raises it (destroy/duplicate); a violation is borrowed entropy debited to the agent. Fused out by the fusion reactor.",
-    "uuid": "9e889ce1-eb97-8461-97dc-86b62409ee5c",
+    "uuid": "4a13cccb-bb23-84a4-b7f2-28b4ebd65ea2",
     "words": [
       "use",
       "when",

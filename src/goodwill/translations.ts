@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use for the excess of acquisition cost over fair value of identifiable net assets; subject to annual impairment testing under IFRS-3 and required cash-flow allocation to CGUs",
-    "uuid": "112fe0c7-638b-8fad-b048-a21430cd8049",
+    "uuid": "85a82d80-6d6f-8016-8dca-1ea7971ceea9",
     "words": [
       "use",
       "for",

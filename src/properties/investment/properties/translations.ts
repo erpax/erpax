@@ -19,7 +19,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when recognising or remeasuring IAS 40 investment property — land or buildings held to earn rental income or capital appreciation — under the §30 fair-value or cost model election, with transfer-of-use triggers (§57–65) and IFRS 13 hierarchy classification. The IAS 40 investment-property register.",
-    "uuid": "a78ae49f-cb58-87ce-b28f-40db297555fa",
+    "uuid": "aafb3e0e-d0bc-89cc-8afc-3870b288b264",
     "words": [
       "use",
       "when",

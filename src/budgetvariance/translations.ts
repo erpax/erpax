@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use for analyzing variance between budgeted and actual amounts in a period — favorable/unfavorable cost variance, quantity/price splits, drivers of performance against plan",
-    "uuid": "475a8fe7-b9c4-8760-ad42-ac3ab7f15e4c",
+    "uuid": "fdba20b9-e4b5-8d39-8cfa-ba4e8ac645cf",
     "words": [
       "use",
       "for",

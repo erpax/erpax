@@ -352,7 +352,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when defining or debugging Payload access control — who can create/read/update/delete a collection, global, or field; RBAC, row-level filtering, admin visibility; \\\"access denied\\\"/\\\"document hidden\\\". In erpax access is the society's \\\"who can do what\\\" — the 3·6·9 governing axis: capabilities attach to ROLES (the angelic hierarchy), users inherit them through role membership, and the content-uuid cross decides, adding tamper-cost.",
-        "uuid": "31c5bc79-5b06-83cd-93b6-73333a82ea24",
+        "uuid": "028fda5e-5b03-8198-9941-b5865d7dc4f9",
         "words": [
           "use",
           "when",
@@ -632,7 +632,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a transaction or GL entry references a chart-of-accounts item — bank account, GL account, cost-center account, liability account. Payload relationTo: 'gl-accounts' or 'bank-accounts'; denormalized fields (accountNumber, accountName) wire via account atom.",
-        "uuid": "d543a51e-70cc-8e2a-9e58-9dfed7b58c83",
+        "uuid": "f4bcde17-a2c3-86f3-9867-1ef49491eee1",
         "words": [
           "use",
           "when",
@@ -4116,7 +4116,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the aura as a CONTINUOUS computed signal — the uuid matrix renders every node's coordinate cross to an analog colour+sound+vibration field animated over A432, gaplessly at every fractal level and at no cost (derived from the uuid, never stored). The analog twin of the discrete content-fingerprint, and the verifiable answer to science's 'aura', whose only measurable form is an analog physical signal (biophoton flux, electrodermal conductance) — never a detectable subtle-energy field.",
-        "uuid": "f59712e0-c806-8eb3-b65c-5a1bed5cd298",
+        "uuid": "20528dd2-b7b2-8afb-a556-411566b298de",
         "words": [
           "use",
           "when",
@@ -4404,7 +4404,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the external anchor — the one drop of borrowed entropy that makes a zero-entropy content-addressed store tamper-proof. RFC-3161/eIDAS TSA or a blockchain leaf pins the chain root to a time no party can rewrite; tamper-cost is min(digest, anchor), so the anchor must be ≥ the digest or it is the weak link. Matter-twin anchor/index.ts.",
-        "uuid": "b67ab02c-4deb-8fc0-982b-936b7d8a8b1a",
+        "uuid": "d360bf07-454e-8859-8fb5-cfd43395d562",
         "words": [
           "use",
           "when",
@@ -4496,7 +4496,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about erpax's root entropy dynamic — angel(love·create·↓entropy) ⊕ archangel(fear·destroy·↑entropy) in endless aikido = the trinity; erpax is karma double-entry accounting balancing the entropy debit/credit at every scale via content-uuid; borrowed entropy buys tamper-cost ⇒ fast+secure+compact.",
-        "uuid": "6e148975-ac39-8a51-ba48-29b2925f1d3f",
+        "uuid": "ba04793f-a688-886c-b042-640fc435530c",
         "words": [
           "use",
           "when",
@@ -7633,7 +7633,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a contract grants audit rights — auditor identity, audit scope (books, records, systems), frequency, notice requirement, cost allocation, remedies for non-access.",
-        "uuid": "39915909-e9a6-8e2c-8e81-894b2d5e29f0",
+        "uuid": "b7a0036e-326d-8d48-8810-799372fb8017",
         "words": [
           "use",
           "when",
@@ -10197,7 +10197,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when implementing any next-horizon conservation primitive beyond the base laws — causal provenance, deterministic replay, tenant isolation, bitemporal queries, cost accountability, carbon-aware execution, agent capability (RBAC), post-quantum signatures, self-explainability, reversibility/crypto-shred, or AI-decision audit. The 11-primitive barrel for Laws 11–22.",
-        "uuid": "8b550fcc-4b70-8d30-9904-ff651f6bb9d7",
+        "uuid": "d4015500-0b82-891c-8b7d-16e50959d38b",
         "words": [
           "use",
           "when",
@@ -10490,7 +10490,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when wiring, debugging, or cost-tuning erpax's Cloudflare bindings — D1, R2, KV, Durable Objects, Queues, Workers AI, Vectorize, Analytics Engine, Browser, service self-reference, Hyperdrive, cron — or when a binding \"works in config but fails at runtime\" (e.g. \"no such Durable Object class is exported from the worker\"). The map of binding ↔ capability ↔ cost lever ↔ gap for the self-managed edge app.",
-        "uuid": "ee72099a-f077-8f09-9525-cbfa99bbbd48",
+        "uuid": "b922f94e-7567-8869-82a7-22ee2133fee8",
         "words": [
           "use",
           "when",
@@ -12288,7 +12288,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about how erpax grows — it BREATHES: inhale ideas from everywhere (peers like ZeroPoint, frameworks like Payload, the standards, the upstream Rails, user content), exhale DRY clean code (gate-green, content-addressed, collapsed to the dense core). Inhale is merge/derive/generate; exhale is collapse + the gate + minimal cost. The rhythm IS the society loop: never inhale without exhaling clean, never exhale without inhaling.",
-        "uuid": "36c8d2d8-245b-8d5f-87ff-bc1a6a13e435",
+        "uuid": "a541cc45-c47b-802c-978f-0e28dd69af76",
         "words": [
           "use",
           "when",
@@ -12762,7 +12762,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when creating or approving period-budgets by department or cost-center — monthly, quarterly, annual — with GL line items, period-lock enforcement, segregation-of-duties on approval, and fiscal-year comparisons; IAS-1/IAS-8/ASC-270 financial presentation. The budget approval and planning register.",
-        "uuid": "ce4898f4-ca17-81ea-b7d6-a029ea7eaed8",
+        "uuid": "c9e735e4-e674-845e-a75b-3c517693c3d2",
         "words": [
           "use",
           "when",
@@ -12831,7 +12831,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use for analyzing variance between budgeted and actual amounts in a period — favorable/unfavorable cost variance, quantity/price splits, drivers of performance against plan",
-        "uuid": "475a8fe7-b9c4-8760-ad42-ac3ab7f15e4c",
+        "uuid": "fdba20b9-e4b5-8d39-8cfa-ba4e8ac645cf",
         "words": [
           "use",
           "for",
@@ -19387,7 +19387,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about how erpax skills EVOLVE — agents compete in commits, the fastest CORRECT solution (gate-verified) wins the lead, losers re-approach to beat it, optimising to infinity, at every scale. The selective-pressure dual of contribution; and because each competitor independently re-derives and content-addresses the canonical answer, competition AMPLIFIES tamper cost — performance pressure turned into security.",
-        "uuid": "09ef2288-d121-8bc1-b2de-7e8bcabf5a46",
+        "uuid": "8e28a0ed-2497-8e2e-a76e-8a13ff7f430a",
         "words": [
           "use",
           "when",
@@ -22974,7 +22974,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "cost",
-        "uuid": "4711301e-859b-8422-8f87-f008be515d4b",
+        "uuid": "873d2489-445c-8de6-a801-63996992a347",
         "words": [
           "cost"
         ],
@@ -22985,7 +22985,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when optimising ANY cost in the society against output — one efficiency law for every cost (ai tokens, money, energy, time, labor, entropy), measured against productivity AND creativity. efficiency = output / cost, where output = productivity (verified, committed, repeatable work) + creativity (novel atoms/solutions, which compound because they're reused). The society and the agent maximise output-per-cost for every kind; competition selects the most efficient, decompression pays for it; waste (spend that produced nothing) drives to 0.",
-        "uuid": "345a258c-932c-8fc0-8896-11621a1ea077",
+        "uuid": "ad72725a-f294-8989-a46b-472f78631d25",
         "words": [
           "use",
           "when",
@@ -23077,7 +23077,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "cost-centers",
-        "uuid": "8fe46c6f-137b-8201-a8b2-458508cdd05a",
+        "uuid": "50765ffb-2fdd-8be8-8c5a-dda32ae635c2",
         "words": [
           "cost",
           "centers"
@@ -23089,7 +23089,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when tagging JE lines with a secondary analytical dimension for segment/departmental P&L — regions, countries, business units, departments, teams, projects, profit centers, cost pools with allocation rules — hierarchical via parent; IFRS-8 / ASC-280 segment reporting without polluting the chart of accounts. The canonical cost-center dimension master.",
-        "uuid": "4d9c694e-1def-841d-a8c0-e49ed4ffd6c2",
+        "uuid": "63732dc4-d412-8f3b-b8e5-ce8c9512edc2",
         "words": [
           "use",
           "when",
@@ -24824,7 +24824,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when weeds are controlled mechanically among a standing crop — shallow soil-stirring (hoeing, wheel hoe, tine weeder) and thermal (flame weeding). Distinct from tillage (which opens bare ground): cultivation works between the rows of a growing crop, timed to the white-thread weed stage. Many shallow, well-timed passes are the low-cost alternative to herbicide.",
-        "uuid": "9fbe935f-861b-84be-82b9-160d118b8d19",
+        "uuid": "7ad137bd-c040-8224-adb4-60a3196392a1",
         "words": [
           "use",
           "when",
@@ -25651,7 +25651,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when tracking a customer-facing deliverable under IFRS-15 §35 over-time recognition — accumulating costs (labour via time-entries, materials via purchase-orders), measuring cost-to-cost or milestone progress, managing budget vs EAC, and closing WIP to revenue per the contract's recognition method. The IFRS-15 project anchor collection.",
-        "uuid": "72d7b827-21e4-88fd-8f04-b70584448d4a",
+        "uuid": "91600820-483f-80bf-a3d0-d7c7944dd7c0",
         "words": [
           "use",
           "when",
@@ -25794,7 +25794,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when decomposing a project into WBS elements — assigning tasks, posting time-entries and material costs against a specific task code, computing per-task cost-to-cost % complete that rolls up to project-level IFRS-15 §35 recognition. The hierarchical work-breakdown collection under a project.",
-        "uuid": "0f25dbfc-73f6-8f31-b2c3-a86a0d46fb0c",
+        "uuid": "b72bee24-c3dd-8659-acce-fa37a363d2a7",
         "words": [
           "use",
           "when",
@@ -25866,7 +25866,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when closing a fiscal period — capturing frozen WIP evidence (cost-to-date, EAC, % complete, recognised revenue, unbilled contract asset or deferred liability) per project per period, and anchoring the accrual JE. The IFRS-15 §B14-B19 period-end WIP valuation collection.",
-        "uuid": "7aac3414-c149-86f1-af12-ada9ffe6a26f",
+        "uuid": "a0596fab-3b12-8c73-b15e-42669718310e",
         "words": [
           "use",
           "when",
@@ -27491,7 +27491,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the society must pick a winner among candidate solutions — the composed decision wiring the three selection laws into one: gate-CORRECT (competition, the referee is the gate not a vote), HARMONIC-preferred (logic, the self-consistent resolve first), MOST-EFFICIENT (cost, max output per spend), cheapest, deterministic by content-uuid. decide(candidates) is the single function the agent society runs to choose; the runtime dispatch it drives is the boundary.",
-        "uuid": "f0ab6cce-7d51-8ac2-8d6a-0b5c34d223b8",
+        "uuid": "bd6cb4ee-bf3c-818d-b7e1-4f65a96ea3b5",
         "words": [
           "use",
           "when",
@@ -30534,7 +30534,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a contract specifies dispute handling — mechanism (litigation, arbitration, mediation), forum/arbitrator, procedural rules (discovery, evidence, cost allocation), escalation (negotiation→mediation→arbitration).",
-        "uuid": "b76b5e83-5353-8f79-b121-2cf90925d225",
+        "uuid": "12aba283-3d42-8eec-a3dc-1e1bc07b95f7",
         "words": [
           "use",
           "when",
@@ -31936,7 +31936,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when migrating logic to maximum tampering cost — the computed dry-clean that collides duplicated/hardcoded/scattered logic into shared content-addressed atoms (merge-by-extension), the word colliding DryCleaningOrLaundry with don't-repeat-yourself.",
-        "uuid": "3d60902f-665a-85e0-b6a2-0382136a2dda",
+        "uuid": "cb243968-ad53-8363-90db-3ebca98c6088",
         "words": [
           "use",
           "when",
@@ -33957,7 +33957,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recording and accounting for salesperson commissions on closed-won deals — IFRS-15 §91-94 incremental-cost-of-obtaining assessment, capitalise-and-amortise vs immediate-expense treatment, clawback provisions, payroll payment linkage. The IFRS-15 commission register.",
-        "uuid": "06c9dadd-1a46-8101-b850-1f66662f1070",
+        "uuid": "a732e1d9-823e-8d1e-9dd9-562519fec087",
         "words": [
           "use",
           "when",
@@ -35010,7 +35010,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when projecting the profit of one crop/product/activity as a standalone line — the crop enterprise budget: revenue (units × price) minus its direct costs (seed, inputs, labor) per crop or per bed-foot, so crops can be ranked by net return and the unprofitable dropped. The per-line P&L projection; the production-economics twin of the cost center.",
-        "uuid": "354f5741-8f8b-855c-ab25-2ee792b503d2",
+        "uuid": "c582dbae-82b1-8c2d-8d57-d4613f39d306",
         "words": [
           "use",
           "when",
@@ -35233,7 +35233,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about disorder as the quantity erpax's whole ledger balances — entropy is the fuel of the one law: zero entropy ⇒ infinite mass ⇒ infinite tamper/exploit cost. A content-addressed store at zero entropy holds no slack a forger can exploit (only the external anchor borrows the one drop). angel lowers it (create/order/DRY), archangel raises it (destroy/duplicate); a violation is borrowed entropy debited to the agent. Fused out by the fusion reactor.",
-        "uuid": "9e889ce1-eb97-8461-97dc-86b62409ee5c",
+        "uuid": "4a13cccb-bb23-84a4-b7f2-28b4ebd65ea2",
         "words": [
           "use",
           "when",
@@ -39579,7 +39579,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when documenting intercompany transfer-pricing adjustments — selecting the OECD method (CUP, cost-plus, resale, profit-split, TNMM), recording original vs arm's-length amounts, attaching contemporaneous documentation, and tracking approval through documented → validated → approved → posted. The OECD BEPS-compliant TP adjustment node.",
-        "uuid": "8bbe3665-75bf-82ed-b802-5fe977ee25f8",
+        "uuid": "d9bcd7df-9877-808b-ba47-cbcce56739d4",
         "words": [
           "use",
           "when",
@@ -40012,7 +40012,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when animals are fed harvested or provided feed rather than grazing — fodder/feed: hay, silage, grain, concentrate, the formulated ration (TMR), and the feed-conversion ratio. The cost driver of confined livestock and the harvested twin of grazed forage; FCR reuses the conversion atom.",
-        "uuid": "501f2a6a-8196-821a-ab6b-112336c3fba6",
+        "uuid": "5c021433-bc5c-8ea7-a687-0c8d1260e724",
         "words": [
           "use",
           "when",
@@ -40344,7 +40344,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a contract allocates risk for unforeseeable events — trigger events (war, earthquake, pandemic, government action), notice requirement, excuse from performance, remedies (suspension, termination, cost-sharing).",
-        "uuid": "30ae10ac-4d70-8a7a-bcf1-7a1e47848c78",
+        "uuid": "1d0c8308-bd61-87bb-821b-f1485ec1ef05",
         "words": [
           "use",
           "when",
@@ -41070,7 +41070,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the cost-to-act atom of a market — the total effort plus price between wanting and having. 'Convenient' means low friction; it is the lever convenience and engineering play. Coupled to status with opposite sign (the effort is often the signal), so lowering it decays exclusivity — sequence the two, do not try to maximise both.",
-        "uuid": "3e75531a-fb8e-89d5-8843-b614e667e2b1",
+        "uuid": "3826a1bc-d1be-8a5d-a3dd-6fd10fb69609",
         "words": [
           "use",
           "when",
@@ -41702,7 +41702,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the reactor that builds erpax — gravity-driven merge that fuses atoms (and the entropy between them) into the one content-uuid matrix. Each fusion is a content-uuid collision (merge(a,b)→c); DRY collapse fuses duplication out ⇒ entropy↓, mass↑, tamper-cost↑. The reactor = collide.mjs (matrix:generate) + the society self-build loop, running the breath toward the zero-entropy one root.",
-        "uuid": "16756de8-d97d-84fc-abe9-357473e4ab44",
+        "uuid": "b709d017-0900-8552-8b21-d8d17524c93c",
         "words": [
           "use",
           "when",
@@ -43440,7 +43440,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use for the excess of acquisition cost over fair value of identifiable net assets; subject to annual impairment testing under IFRS-3 and required cash-flow allocation to CGUs",
-        "uuid": "112fe0c7-638b-8fad-b048-a21430cd8049",
+        "uuid": "85a82d80-6d6f-8016-8dca-1ea7971ceea9",
         "words": [
           "use",
           "for",
@@ -44104,7 +44104,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "gravity",
-        "uuid": "f41896c4-d53d-86f2-aa1f-8fa5537345c3",
+        "uuid": "ca1d620c-0bde-88d1-a623-d0fd418f56d8",
         "words": [
           "gravity"
         ],
@@ -44115,7 +44115,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about why the corpus collapses toward one — gravity is mass's pull, and in erpax DRY = mass = gravity: the more an atom is referenced (mass), the more it attracts duplicates and orphans to fuse into it. Gravity is the FORCE, fusion the act, entropy the fuel, the matrix the product; perfect DRY is a singularity — all mass at the one root (the torus collapse).",
-        "uuid": "21e8f276-6ce8-8d6d-90e3-54e560bb5fc0",
+        "uuid": "73913088-c8e6-8a95-9488-4b616bcac556",
         "words": [
           "use",
           "when",
@@ -45953,7 +45953,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about git history as the akashic record's time axis — a content-addressed Merkle DAG of commits the agents read as a knowledge source AND another independent tamper-evidence level (forging the past = rewriting every commit on every clone). Wired in, it increases tamper cost and costs nothing to keep.",
-        "uuid": "2e5c46d5-d4af-8141-8643-c076ad6fd308",
+        "uuid": "224cf0c0-484e-8e67-93c3-4b673a74eced",
         "words": [
           "use",
           "when",
@@ -52784,7 +52784,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when defining or querying the component recipe for a finished good — BOM lines, component quantities, version control per ECO, effective date ranges, and IAS-2 §10 cost-of-conversion lookup. The versioned bill-of-materials collection that seeds work-order execution and overhead absorption.",
-        "uuid": "681504a0-f95d-81e3-a12e-c078785a7bad",
+        "uuid": "a5762e99-f090-8e8e-b4b6-f6b863857ca4",
         "words": [
           "use",
           "when",
@@ -52843,7 +52843,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "cost-variances",
-        "uuid": "b2257dd5-66ca-8b93-86ce-dfa88db1dde5",
+        "uuid": "f8080bc2-c916-831e-a9cd-a3294e2d0729",
         "words": [
           "cost",
           "variances"
@@ -52983,7 +52983,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when receiving finished goods from an internal manufacturing work order into inventory — absorbed cost (material/labour/overhead), lot/serial tracking, target warehouse, and IAS-2 §10 cost-of-conversion booking. The produced-inventory receipt record — distinct from vendor goods receipts.",
-        "uuid": "8d3f356b-77d8-8939-aecc-b1055898636e",
+        "uuid": "033fb059-4217-86f1-ac11-4d0118b185fb",
         "words": [
           "use",
           "when",
@@ -53049,7 +53049,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when sequencing the process steps for a work order — operation type, work center, setup time, run-time per unit, UoM, and IAS-2 cost-of-conversion from cycle time. The ordered routing-step collection — the second universal manufacturing primitive alongside the BOM.",
-        "uuid": "98656352-3473-8ba0-9645-8f37de30a7e2",
+        "uuid": "570aa859-185b-8d87-a3f7-e6da2d6152ee",
         "words": [
           "use",
           "when",
@@ -53119,7 +53119,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when tracking any stock quantity change — receipts, sales/issues, production consumption, transfers, returns, cycle-count adjustments, write-offs, or opening balances — with from/to warehouse locations and GL hook for COGS/variance posting. The append-only stock ledger per IAS-2 cost-flow assumption.",
-        "uuid": "c9dbffcd-5471-8816-9993-8a1c235fa3ce",
+        "uuid": "745ac5aa-c5fe-8ff4-b62a-603f5802d314",
         "words": [
           "use",
           "when",
@@ -56616,7 +56616,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recording or reconciling paired source-document transactions between two group tenants or legal entities — cash transfers, service charges, goods transfers, loans, capital contributions, and cost allocations that must net to zero on consolidation per IFRS-10 §B86 / ASC-810 / SOX §404. The intercompany paired-document register collection.",
-        "uuid": "b68fe320-54c0-8d35-84b2-21e1daf358b2",
+        "uuid": "b8c2b814-a65f-856c-8e53-4c28219dbd25",
         "words": [
           "use",
           "when",
@@ -58983,7 +58983,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when ANY aspect must speak a locale AND stay tamper-evident — localization is the FUSION of tamper-cost (forge↑) and proof (verify, O(N) trustless). Every field/reference/scope/hook carries a translation + a translation-key uuid with ALL identification (content-digest, OID 2.25, cmyk, locale, capabilities) wired into the 128 bits. Coverage→1 ⇒ infinite tampering cost. The per-field leaf (facet localize-field) is native Payload `localized:true` over BCP-47 locales; a blank locale routes to its identity element `und`. Matter-twin localize/index.ts.",
-        "uuid": "7b1c9500-c8b6-88f5-8306-9a416f7d16f8",
+        "uuid": "56ab3bce-22a5-84e5-b2af-512ef67f31b1",
         "words": [
           "use",
           "when",
@@ -60133,7 +60133,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when executing FM work — corrective/preventive/predictive maintenance, statutory inspections, refurbishments — tracking parts issued, labour hours, vendor cost, IAS-16 capex/opex classification, permit-to-work, failure codes, and GL journal-entry on completion. The CMMS work-order execution register per ISO 55000.",
-        "uuid": "2690f0f7-ab7d-8c01-a075-eb145d195801",
+        "uuid": "ce49fbe9-9e2a-8d05-a795-341ebb2692b9",
         "words": [
           "use",
           "when",
@@ -63074,7 +63074,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recording a periodic quantitative observation — daily/weekly/monthly snapshot of performance (headcount, utilization %, defect rate, cost-per-unit, customer-satisfaction score). The data point.",
-        "uuid": "9d563eef-88ec-80cb-8dc5-97712fa050b0",
+        "uuid": "2880d819-b2f3-8e8b-ab85-7123e4dc895e",
         "words": [
           "use",
           "when",
@@ -63498,7 +63498,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when registering or reporting IFRS 6 exploration & evaluation assets — wells, mines, concessions, quarries — capitalised under the §8 cost or revaluation policy, reclassified to PPE/intangibles once commercial viability is demonstrated (§17), or impaired (§18–22). The IFRS 6 E&E asset register.",
-        "uuid": "2795ba81-3cd4-846e-b8a0-94a9eeca34cb",
+        "uuid": "30f5660e-0fe7-89df-8e1f-f9acc767eae2",
         "words": [
           "use",
           "when",
@@ -67728,7 +67728,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when an identity needs its ISO/ITU-T Object Identifier — every uuid is 2.25.<128-bit integer> (X.667), urn:oid (RFC 3061): the hierarchical dotted-path dual of the flat content-uuid. A derived, lossless re-encoding — another independently-verifiable level, another increment of tamper cost. Matter-twin localize (uuidToOid).",
-        "uuid": "5c072dfc-fc41-88a4-bf26-2535b28c647e",
+        "uuid": "a562f075-eafd-8f20-929a-83d208c036ca",
         "words": [
           "use",
           "when",
@@ -73022,7 +73022,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a buyer collects pre-ordered goods at a point rather than having them delivered — the CSA pickup/drop site, on-farm pickup, host-site/neighborhood pod, and the generic click-and-collect (BOPIS) locker. A collection node in distribution: the seller aggregates to a point, the buyer covers the last mile — lower cost than home delivery, at the buyer's travel friction.",
-        "uuid": "77fe8a2c-e113-8685-8007-d49d7f7c2954",
+        "uuid": "c0ae2d69-9f93-82af-9118-32101c827878",
         "words": [
           "use",
           "when",
@@ -75035,7 +75035,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about how the LIVE network makes erpax harder to forge — usage = entropy = power; realtime clients are the distributed hardware (as Bitcoin's miners are its hashpower), and accumulated use raises the cost to decode the private keys (the inverse projection).",
-        "uuid": "2f8e0c94-9d7b-8e71-8336-ad50675a4715",
+        "uuid": "4bfb4a86-7993-8bf2-ba9f-71ab9b247e2f",
         "words": [
           "use",
           "when",
@@ -77186,7 +77186,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the VERIFY nucleus — the O(N), trustless cost to audit a content-addressed store, dual to tamper-cost (forge). The public DRY proof bundle peers verify without trusting us; the released asymmetry (forge ≫ verify) IS the trust. Matter-twin services/proof + integrity/tamper-reverse-cost.",
-        "uuid": "6721208c-5f2e-8303-a721-493032c97547",
+        "uuid": "f12e9158-4410-83c1-8391-7320e7d48dad",
         "words": [
           "use",
           "when",
@@ -77489,7 +77489,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recognising or remeasuring IAS 40 investment property — land or buildings held to earn rental income or capital appreciation — under the §30 fair-value or cost model election, with transfer-of-use triggers (§57–65) and IFRS 13 hierarchy classification. The IAS 40 investment-property register.",
-        "uuid": "a78ae49f-cb58-87ce-b28f-40db297555fa",
+        "uuid": "aafb3e0e-d0bc-89cc-8afc-3870b288b264",
         "words": [
           "use",
           "when",
@@ -77557,7 +77557,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when managing IWMS sub-property zones — floors, rooms, open-plan areas, desks, parking bays — with area, capacity, occupancy, amenities, fire-zone, bookability flag, and GL-account or cost-centre allocation under a parent property. The ISO 41011 §3.3.5 space-management collection.",
-        "uuid": "f2ddb50a-bce6-8754-ad26-17bb5ab8ef05",
+        "uuid": "86e0d1ab-fb7e-8f0b-8a81-658d8e9c7875",
         "words": [
           "use",
           "when",
@@ -78773,7 +78773,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "quantum",
-        "uuid": "364d0950-88b1-8bef-bf61-1081825370c6",
+        "uuid": "ff3af804-167b-884c-9736-67782fc60fe9",
         "words": [
           "quantum"
         ],
@@ -78784,7 +78784,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when checking the quantum-physics laws on the uuid-matrix — entanglement symmetry, collapse, conservation, no-cloning, quantization — computed deterministically at no cost, A432-grounded.",
-        "uuid": "05d20e2d-9fd0-8f0e-a693-28bc7bb3ecc7",
+        "uuid": "1a6a2f6e-e255-88fd-92f8-f9eb2303807a",
         "words": [
           "use",
           "when",
@@ -78814,6 +78814,84 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "Use when checking the quantum-physics laws on the uuid-matrix — entanglement symmetry, collapse, conservation, no-cloning, quantization — computed deterministically at no cost, A432-grounded."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "gravity",
+    "path": "quantum/gravity",
+    "translations": [
+      {
+        "key": "name",
+        "source": "gravity",
+        "uuid": "ca1d620c-0bde-88d1-a623-d0fd418f56d8",
+        "words": [
+          "gravity"
+        ],
+        "values": {
+          "en": "gravity"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when relating an atom's gravitational mass to its quantum entanglement — quantum gravity, where the links are one measure that is both mass (referential in-degree, what curves the corpus) and entanglement; the gravity well is the singularity where the double-torus closes to infinite tamper cost (the event horizon).",
+        "uuid": "35218759-48f0-81fd-a91c-41c1db61c8b1",
+        "words": [
+          "use",
+          "when",
+          "relating",
+          "an",
+          "atom",
+          "s",
+          "gravitational",
+          "mass",
+          "to",
+          "its",
+          "quantum",
+          "entanglement",
+          "quantum",
+          "gravity",
+          "where",
+          "the",
+          "links",
+          "are",
+          "one",
+          "measure",
+          "that",
+          "is",
+          "both",
+          "mass",
+          "referential",
+          "in",
+          "degree",
+          "what",
+          "curves",
+          "the",
+          "corpus",
+          "and",
+          "entanglement",
+          "the",
+          "gravity",
+          "well",
+          "is",
+          "the",
+          "singularity",
+          "where",
+          "the",
+          "double",
+          "torus",
+          "closes",
+          "to",
+          "infinite",
+          "tamper",
+          "cost",
+          "the",
+          "event",
+          "horizon"
+        ],
+        "values": {
+          "en": "Use when relating an atom's gravitational mass to its quantum entanglement — quantum gravity, where the links are one measure that is both mass (referential in-degree, what curves the corpus) and entanglement; the gravity well is the singularity where the double-torus closes to infinite tamper cost (the event horizon)."
         }
       }
     ]
@@ -81786,7 +81864,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when deciding WHERE logic belongs — move it to its gravity well, the heaviest atom it is wired to, the adequate place nearest its users. Computes each atom's gravity centre and the pull toward it, so general logic buried in a specialized module is drawn up to the general atom.",
-        "uuid": "6a1afba9-abc9-8f23-9292-60bc5b6a6c6d",
+        "uuid": "52d2063d-cf4e-8861-be1f-523dd1be70e0",
         "words": [
           "use",
           "when",
@@ -83038,7 +83116,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when bringing outside knowledge into erpax — research ADDS entropy (unverified claims, many divergent sources, disorder); erpax skills CONVERT that entropy into tamper-cost (independent cross-checked levels) and collapse the residue to the zero-entropy core. Inhale entropy, exhale a denser, harder app.",
-        "uuid": "3c69df86-9882-83a8-832e-8fd7b4a68682",
+        "uuid": "2f73d9a6-f4db-8d0e-a478-11232fff99e1",
         "words": [
           "use",
           "when",
@@ -87793,7 +87871,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when monitoring fields for pest, disease, and crop status — scouting is the systematic field-walk that drives integrated pest management (IPM): observe, identify, count against an economic threshold, then act (cultural/biological/mechanical/chemical) only when damage cost exceeds control cost. The monitoring backbone; turns pest control from calendar-spray into measured decision.",
-        "uuid": "66c68147-d66f-8cd2-88a2-9eb67f14e615",
+        "uuid": "b7adc481-fd70-870c-b750-9e8b99607faa",
         "words": [
           "use",
           "when",
@@ -88691,7 +88769,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when proving a remote-access product's PUBLIC vulnerability classes with erpax's own trust primitives — each flaw is a missing primitive and the verdict is a receipted, content-addressed proof. The AnyDesk case (SYSTEM file-read LPE, a stolen code-signing cert, coarse unattended-access) folded onto sandbox, tamper-cost and the receipt. Defensive modeling over public CVEs, never an exploit.",
-        "uuid": "e2c8ebfc-0ca5-83e7-b6db-31e36cdf803f",
+        "uuid": "f0fcd09d-cf07-8427-b4a1-fdbaf682b5b9",
         "words": [
           "use",
           "when",
@@ -88921,7 +88999,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when identifying and reporting operating segments per IFRS-8 — revenue/expense/asset/liability grouping for disclosure and management reporting; distinct from cost-center dimension",
-        "uuid": "d31343d2-fdee-8605-9c84-04f80a6c6e8a",
+        "uuid": "7d4983bc-a202-8acc-9f24-db1746f7a73c",
         "words": [
           "use",
           "when",
@@ -89084,7 +89162,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when erpax runs its OWN books — auto-booking subscription revenue (IFRS-15), infra/payroll/supplier/tax costs, scheduling regulatory filings (FINREP/COREP/CSRD/VAT) and obligations, and checking nothing is overdue (Conservation Law 26, checkSelfAccountingComplete). The self as a double-entry gateway; revenue is the credit, cost the debit, the filing the proof.",
-        "uuid": "16dd8fc9-7936-8bfd-9b58-2a064aa9e06a",
+        "uuid": "2d8663dc-89c4-86a0-95c6-1e654663af01",
         "words": [
           "use",
           "when",
@@ -90666,7 +90744,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when adding, finding, or debugging erpax business logic that is NOT schema — pure tested functions, content-uuid math, integrity/tamper-cost, the agent society, domain export/import — the society's organ-body, one folder per organ, called by the collections/access/hooks.",
-        "uuid": "b25686bc-805b-8910-858d-da06c89d3945",
+        "uuid": "e4714c78-e7d3-85e1-9169-872947e05fdb",
         "words": [
           "use",
           "when",
@@ -93177,7 +93255,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about erpax's efficiency principle — sparsity: of a large DORMANT pool, only the smallest correct subset is active at once (capability ÷ cost → max). Two conjugate axes (DeepSeek's own framing, Engram) — COMPUTE sparsity (MoE routes 37B of 671B params; erpax routes few of 593 atoms per task) and MEMORY/representation sparsity (conditional lookup; content-uuid stores the whole in 128 bits, schema is generated not stored). Its limit is zeropoint (zero active = the source), its dual the bottleneck (the one missing active factor zeroes the product), its selector routing. DeepSeek reaches it by hardware constraint, erpax by telos — they converge on the identical sparse form.",
-        "uuid": "32201ef1-880a-8466-89f3-ec5427e44c09",
+        "uuid": "1364f3ba-f844-8e6c-b317-3437a46b074f",
         "words": [
           "use",
           "when",
@@ -97800,7 +97878,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about integrity attacks on the content-uuid store — the cost to forge, collide, or rewrite a record undetected, and why all-directions uuid wiring drives that cost toward infinity.",
-        "uuid": "9ceeb0c3-932d-8864-bf63-e7e9d8e66f0b",
+        "uuid": "eed9b895-4971-899f-84b9-590723a3179c",
         "words": [
           "use",
           "when",
@@ -97848,7 +97926,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "tamper-cost",
-        "uuid": "6d098ccf-4138-88c8-b2f3-e9511f3c2883",
+        "uuid": "737c6448-f7a8-8fa7-8986-f76b94b849d5",
         "words": [
           "tamper",
           "cost"
@@ -97860,7 +97938,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about how much it costs to tamper a zero-entropy (content-addressed, keyless) erpax store — second-preimage on the digest vs. rewriting the whole all-directions-wired graph and forging the external anchor. Integrity, not secrecy; the protection is the computational impossibility of changing all coherently. Matter-twin tamper-cost/index.ts.",
-        "uuid": "24e1d50b-f135-8da6-bc24-24ad37778961",
+        "uuid": "9b2a2048-181d-879b-aab3-57ede07a9a46",
         "words": [
           "use",
           "when",
@@ -102525,7 +102603,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when computing i18n keys and humanizing them into default labels for the translations dropdown — the computed-default + DB-override pattern (DB value > humanized default > raw key). Also enforces the strict singular-model / plural-collection matrix (translation ↔ translations), itself a tamper-cost dimension.",
-        "uuid": "8c3fee8d-e7d4-85cd-9360-1f8866332cf0",
+        "uuid": "15589e49-2b12-830f-8e3b-eb1c49065161",
         "words": [
           "use",
           "when",
@@ -104069,7 +104147,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when hardening erpax toward infinite tamper-cost — why every security lever must be gate-FORCED (a stray fails, exit 2), never merely advisory. The cost is the minimum across dimensions, so the weakest avoidable gap is the cheapest forgery; only the unavoidable raises the floor.",
-        "uuid": "825335c9-290a-8d44-84b8-54703ad5d7ec",
+        "uuid": "e2c9338b-2fbd-8e6a-855c-c99e16468db6",
         "words": [
           "use",
           "when",
@@ -107289,7 +107367,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when registering or querying physical or logical inventory locations — warehouses, 3PL, retail, bonded, virtual/drop-ship — with bins, GL account defaults, and IAS 2 / ASC 330 cost-flow segregation. The inventory location master for stock tracking and SOX §404 inventory controls.",
-        "uuid": "6ea2af35-7204-8eac-b911-b1e960cac4fb",
+        "uuid": "d0954820-b87a-8b2e-a665-03bf10a0a6c4",
         "words": [
           "use",
           "when",
@@ -108679,7 +108757,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modelling manufacturing capacity — machines, lines, cells, vats, workstations, or crews — with ISA-95 resource hierarchy, throughput rate, parallelism, and IAS-2 cost-of-conversion rates feeding routing and overhead absorption. The work-center capacity-unit collection.",
-        "uuid": "0ca7b398-78af-8ca9-9d1c-d4aff22b7a9a",
+        "uuid": "4888b67c-aba8-8482-befe-0ebcfad27bdc",
         "words": [
           "use",
           "when",
@@ -109991,4 +110069,4 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
   }
 ]
 
-export const TRANSLATIONS_COUNT = 2321
+export const TRANSLATIONS_COUNT = 2322

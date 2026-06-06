@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when migrating logic to maximum tampering cost — the computed dry-clean that collides duplicated/hardcoded/scattered logic into shared content-addressed atoms (merge-by-extension), the word colliding DryCleaningOrLaundry with don't-repeat-yourself.",
-    "uuid": "3d60902f-665a-85e0-b6a2-0382136a2dda",
+    "uuid": "cb243968-ad53-8363-90db-3ebca98c6088",
     "words": [
       "use",
       "when",
