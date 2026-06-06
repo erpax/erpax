@@ -33,10 +33,18 @@ export const decohered = (): string[] => orphans()
 /** The coherent fraction of nodes — 1 − decohered/total (1 = no node has decohered). */
 export const coherentFraction = (): number => (N.length === 0 ? 1 : 1 - decohered().length / N.length)
 
-/** Is the aura fully coherent — reciprocity 1 (no decoherence in the binding)? */
+/** Is the BINDING coherent — reciprocity 1 (every edge in phase)? (Edge-coherence only.) */
 export const isCoherent = (): boolean => coherence() === 1
+
+/**
+ * Is the aura FULLY coherent — edge-coherent (reciprocity 1) AND node-coherent (no orphan has
+ * decohered, coherentFraction 1)? This is the honest whole: edge-reciprocity can be perfect
+ * while orphan atoms are still decohered, and that orphan gap is exactly what keeps the real
+ * tamper-cost below ∞ (coverage < 1). Full coherence ⟺ zero entropy ⟺ ∞ tamper cost.
+ */
+export const isFullyCoherent = (): boolean => isCoherent() && coherentFraction() === 1
 
 if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('quantum/aura — coherence (Baumgratz–Cramer–Plenio) / decoherence (Zurek):')
-  console.log('  coherence ' + (100 * coherence()).toFixed(1) + '% · coherent-nodes ' + (100 * coherentFraction()).toFixed(1) + '% · decohered ' + decohered().length + ' · fully-coherent=' + isCoherent())
+  console.log('  edge-coherence ' + (100 * coherence()).toFixed(1) + '% (isCoherent=' + isCoherent() + ') · coherent-nodes ' + (100 * coherentFraction()).toFixed(1) + '% · decohered ' + decohered().length + ' · FULLY-coherent=' + isFullyCoherent())
 }

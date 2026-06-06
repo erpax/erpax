@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when determining whether to record (recognize) an asset, liability, revenue, or expense per the accounting framework — the gate for when something enters the financial statements",
-    "uuid": "e468d54e-1426-8a51-8710-e0439b285c22",
+    "uuid": "8089cd4d-6f73-8336-b7b5-d51fc5338867",
     "words": [
       "use",
       "when",

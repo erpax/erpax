@@ -721,7 +721,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "accounting",
-        "uuid": "7798a0b6-570b-88ca-91e8-3151d7506112",
+        "uuid": "0d568928-d709-8bbc-aba5-5d3b51b596cd",
         "words": [
           "accounting"
         ],
@@ -732,7 +732,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when designing or porting the erpax accounting/finance domain to Payload — double-entry journals, GL accounts, the accounting equation, invoices (credit/debit notes, protocols), payments & bank reconciliation, locked periods, or making anything \"accountable\" polymorphically. The self-sufficient `@erpax/accounting` archetype.",
-        "uuid": "c26a897d-9717-8f1d-b039-17cfbbb9a4c3",
+        "uuid": "891f505a-f5be-8840-940c-f2a371c71875",
         "words": [
           "use",
           "when",
@@ -800,7 +800,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recognizing revenue or expense in the period incurred, earned, or obligated, regardless of payment timing — the foundation of accrual-basis accounting and the IFRS/GAAP reporting standard",
-        "uuid": "b7933af8-ba7e-8aaf-863c-13c7212f2a7c",
+        "uuid": "1d3c2946-79bc-86bc-b714-1688c0253702",
         "words": [
           "use",
           "when",
@@ -4496,7 +4496,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about erpax's root entropy dynamic — angel(love·create·↓entropy) ⊕ archangel(fear·destroy·↑entropy) in endless aikido = the trinity; erpax is karma double-entry accounting balancing the entropy debit/credit at every scale via content-uuid; borrowed entropy buys tamper-cost ⇒ fast+secure+compact.",
-        "uuid": "a2ff9f6b-83cf-8976-8a9d-a53e1cc8f304",
+        "uuid": "584ab95e-2592-872a-8d8a-bade2f7416e4",
         "words": [
           "use",
           "when",
@@ -13577,7 +13577,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use to compute EBITDA / EBIT and related profitability metrics from P&L figures. Pure compute (no persistence); a non-GAAP measure derived from accounting data. Nested under calculate.",
-        "uuid": "c6bcbd18-4fe7-8d66-986c-3e0dde4580fc",
+        "uuid": "26184eec-c6a5-87ce-8e26-94aa2eb5cde4",
         "words": [
           "use",
           "to",
@@ -21023,7 +21023,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about what is conserved across a flow — nothing is created or destroyed, only transformed (mass-energy; Noether — every continuous symmetry yields a conserved quantity), which in erpax IS double-entry — Σdebit=Σcredit, every config a balanced gateway, the pot conserved. The physics root of the accounting law; an open system conserves by accounting for what crosses its boundary (the borrowed anchor).",
-        "uuid": "490ad4ca-dcae-871d-b2b2-a260fcaa2374",
+        "uuid": "58bae23f-d56a-8bd5-b607-9b6e9a7ce0c1",
         "words": [
           "use",
           "when",
@@ -30908,6 +30908,75 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "dna",
+    "path": "dna",
+    "translations": [
+      {
+        "key": "name",
+        "source": "dna",
+        "uuid": "362b46a1-5f17-89fa-bc64-3db179412379",
+        "words": [
+          "dna"
+        ],
+        "values": {
+          "en": "dna"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about inheritance in erpax — an atom's genome is its parent_id chain encoded in the uuid chain; ancestry is entangled into identity (change an ancestor and every descendant's uuid changes), so lineage is tamper-evident by architecture.",
+        "uuid": "500c2b6d-912b-80cf-a354-6aba33b22d1b",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "inheritance",
+          "in",
+          "erpax",
+          "an",
+          "atom",
+          "s",
+          "genome",
+          "is",
+          "its",
+          "parent",
+          "id",
+          "chain",
+          "encoded",
+          "in",
+          "the",
+          "uuid",
+          "chain",
+          "ancestry",
+          "is",
+          "entangled",
+          "into",
+          "identity",
+          "change",
+          "an",
+          "ancestor",
+          "and",
+          "every",
+          "descendant",
+          "s",
+          "uuid",
+          "changes",
+          "so",
+          "lineage",
+          "is",
+          "tamper",
+          "evident",
+          "by",
+          "architecture"
+        ],
+        "values": {
+          "en": "Use when reasoning about inheritance in erpax — an atom's genome is its parent_id chain encoded in the uuid chain; ancestry is entangled into identity (change an ancestor and every descendant's uuid changes), so lineage is tamper-evident by architecture."
+        }
+      }
+    ]
+  },
+  {
     "atom": "document",
     "path": "document",
     "translations": [
@@ -34090,7 +34159,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recording and accounting for salesperson commissions on closed-won deals — IFRS-15 §91-94 incremental-cost-of-obtaining assessment, capitalise-and-amortise vs immediate-expense treatment, clawback provisions, payroll payment linkage. The IFRS-15 commission register.",
-        "uuid": "6244a62b-56cd-84fb-a5ff-7268b5e87284",
+        "uuid": "83b634be-33fa-8b47-b1b3-1d5a49af0146",
         "words": [
           "use",
           "when",
@@ -39226,7 +39295,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when managing the accounting calendar — opening, closing, or locking periods; enforcing four-eyes SoD on period transitions; configuring SAF-T or XBRL-GL period coding; blocking GL writes once a period is locked. The fiscal-period lifecycle node (open → closed → locked).",
-        "uuid": "27d6fff1-3098-8846-a063-4cf7dee007d2",
+        "uuid": "2df1d30d-1f1c-8ee6-b7e4-0c0db071d24a",
         "words": [
           "use",
           "when",
@@ -45754,7 +45823,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when designating financial instruments or transactions to offset market risk (FX, interest rate, commodity); accounting treatment under IFRS-9 hedge accounting or derivatives mark-to-market",
-        "uuid": "52e6ba3c-bd8a-850e-9bb4-ee01d8a6ba1a",
+        "uuid": "844257cd-2260-8929-9f5a-a153209b76a3",
         "words": [
           "use",
           "when",
@@ -45991,7 +46060,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a managed group of animals is the unit of aggregation — the herd (cattle/swine), flock (sheep/poultry), drove or mob; one production and accounting unit holding many animals. The livestock twin of lots/cohort: animals grouped, moved, grazed, and measured together.",
-        "uuid": "b4025f6e-2839-8022-aac7-208ba3b1caf6",
+        "uuid": "91813e8d-7c20-84a6-9ca9-6ddee26bb25a",
         "words": [
           "use",
           "when",
@@ -50911,7 +50980,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when creating, reviewing or auditing org-wide policies — accounting, internal-control, compliance, risk, data-protection, code-of-conduct; lifecycle draft→active→superseded, owner, review schedule. The internal-policies collection.",
-        "uuid": "df00e0f6-c897-8948-9af5-b4a27c6d4d8e",
+        "uuid": "28349fe5-01af-8f04-a92d-80b7a51d2e13",
         "words": [
           "use",
           "when",
@@ -54030,7 +54099,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modelling one journal — the singular model of the journals collection (the plural store); the chronological book of original accounting entries.",
-        "uuid": "976015d4-3e55-8dc6-bfb8-f352b479c505",
+        "uuid": "53b189fe-9316-8acd-a5fa-2d01bfe1394f",
         "words": [
           "use",
           "when",
@@ -54080,7 +54149,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when creating or auditing double-entry accounting records — balanced debit/credit lines, entry/posted/approval dates, period-lock enforcement, posted-immutability, and segregation-of-duties (creator ≠ approver). The core GL write target per IAS-1 and OECD SAF-T §3.",
-        "uuid": "f84e2d28-c9b0-849c-bde8-c653bfb866c5",
+        "uuid": "e954d592-4c72-8099-a5ca-9e6f6e6889ef",
         "words": [
           "use",
           "when",
@@ -54376,6 +54445,72 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "Use when managing judicial/law-enforcement operations — case management, court proceedings, legal evidence, offence/violation records, or police/prosecution coordination in public order (COFOG 03 sub-function)."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "karma",
+    "path": "karma",
+    "translations": [
+      {
+        "key": "name",
+        "source": "karma",
+        "uuid": "2c4bb541-7dc5-8613-9c5f-07f020d44218",
+        "words": [
+          "karma"
+        ],
+        "values": {
+          "en": "karma"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when scoring moral weight as entropy — creating order is good karma, destroying it (waste) is bad; every move is a balanced double-entry (order debited, entropy credited), and karma is the running net of order created over destroyed.",
+        "uuid": "b3baac06-c7a4-805c-a773-05789269b81d",
+        "words": [
+          "use",
+          "when",
+          "scoring",
+          "moral",
+          "weight",
+          "as",
+          "entropy",
+          "creating",
+          "order",
+          "is",
+          "good",
+          "karma",
+          "destroying",
+          "it",
+          "waste",
+          "is",
+          "bad",
+          "every",
+          "move",
+          "is",
+          "a",
+          "balanced",
+          "double",
+          "entry",
+          "order",
+          "debited",
+          "entropy",
+          "credited",
+          "and",
+          "karma",
+          "is",
+          "the",
+          "running",
+          "net",
+          "of",
+          "order",
+          "created",
+          "over",
+          "destroyed"
+        ],
+        "values": {
+          "en": "Use when scoring moral weight as entropy — creating order is good karma, destroying it (waste) is bad; every move is a balanced double-entry (order debited, entropy credited), and karma is the running net of order created over destroyed."
         }
       }
     ]
@@ -71490,7 +71625,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modeling a cash inflow/outflow — payment received from customer, payment to vendor, expense reimbursement, salary payment. A transaction linking a GL account (cash), amount, date, and counterparty. Part of the accounting/commerce cycle.",
-        "uuid": "493d5f9c-ec61-8e3f-ba7d-f67fcdd4e44a",
+        "uuid": "16f0a7be-2c40-8dbd-a68e-b0c970f2e904",
         "words": [
           "use",
           "when",
@@ -72238,7 +72373,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a value is tied to a fiscal/calendar period — revenue recognized in period, expense recorded in month, cutoff rules. A date-range [start, end] or a fiscal-period code. Twins with date (point) to establish time-based accounting cutoffs and versioning.",
-        "uuid": "9f565c6e-f848-83cd-9ad7-2dac2889f838",
+        "uuid": "90ad6de1-454d-835f-90de-80bc04752ad0",
         "words": [
           "use",
           "when",
@@ -72345,7 +72480,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when closing or locking accounting periods — monthly, quarterly, annual — to prevent new postings; allows reversals and prior-period adjustments; tracks who closed the period and when. The period-close gate collection.",
-        "uuid": "e941fb81-5a0c-8ab4-bf93-503d67f4b996",
+        "uuid": "28a6d2e8-1a93-8471-a9d1-45270a304852",
         "words": [
           "use",
           "when",
@@ -79079,7 +79214,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "accounting",
-        "uuid": "7798a0b6-570b-88ca-91e8-3151d7506112",
+        "uuid": "0d568928-d709-8bbc-aba5-5d3b51b596cd",
         "words": [
           "accounting"
         ],
@@ -79090,7 +79225,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about accounting on the quantum level — double-entry that balances entropy (karma), inheriting down the uuid parent chain where the parent_id is the DNA; the universal ledger's quantum facet.",
-        "uuid": "3830b117-9142-8b31-9aa4-992234d4039f",
+        "uuid": "ab7068f6-8d17-8390-97ac-0af23a94b0e8",
         "words": [
           "use",
           "when",
@@ -79327,6 +79462,68 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "Use when relating an atom's gravitational mass to its quantum entanglement — quantum gravity, where the links are one measure that is both mass (referential in-degree, what curves the corpus) and entanglement; the gravity well is the singularity where the double-torus closes to infinite tamper cost (the event horizon)."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "karma",
+    "path": "quantum/karma",
+    "translations": [
+      {
+        "key": "name",
+        "source": "karma",
+        "uuid": "2c4bb541-7dc5-8613-9c5f-07f020d44218",
+        "words": [
+          "karma"
+        ],
+        "values": {
+          "en": "karma"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about karma on the quantum level — moral debt and credit inherited down the DNA chain (the parent_id), entangled via lineage so an atom carries its ancestors' karma, tamper-evident by architecture.",
+        "uuid": "11b3e188-c441-8acb-84e5-7a568ebf0ad9",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "karma",
+          "on",
+          "the",
+          "quantum",
+          "level",
+          "moral",
+          "debt",
+          "and",
+          "credit",
+          "inherited",
+          "down",
+          "the",
+          "dna",
+          "chain",
+          "the",
+          "parent",
+          "id",
+          "entangled",
+          "via",
+          "lineage",
+          "so",
+          "an",
+          "atom",
+          "carries",
+          "its",
+          "ancestors",
+          "karma",
+          "tamper",
+          "evident",
+          "by",
+          "architecture"
+        ],
+        "values": {
+          "en": "Use when reasoning about karma on the quantum level — moral debt and credit inherited down the DNA chain (the parent_id), entangled via lineage so an atom carries its ancestors' karma, tamper-evident by architecture."
         }
       }
     ]
@@ -80728,7 +80925,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when determining whether to record (recognize) an asset, liability, revenue, or expense per the accounting framework — the gate for when something enters the financial statements",
-        "uuid": "e468d54e-1426-8a51-8710-e0439b285c22",
+        "uuid": "8089cd4d-6f73-8336-b7b5-d51fc5338867",
         "words": [
           "use",
           "when",
@@ -82161,7 +82358,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when identifying and accounting for related-party transactions (subsidiaries, associates, joint ventures, key management); mandatory disclosure and transaction separation under IFRS-24",
-        "uuid": "8ee67527-188b-8046-9064-4f48f5e1a1cb",
+        "uuid": "ed3bccc2-84b2-8221-8e39-e5df395f2b54",
         "words": [
           "use",
           "when",
@@ -89639,7 +89836,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "self-accounting",
-        "uuid": "30f9af59-26ef-8be0-9a1f-83a44f97ec17",
+        "uuid": "b9ec5416-b4d3-856b-a64a-cb3ec6041fc9",
         "words": [
           "self",
           "accounting"
@@ -97830,7 +98027,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when two unlike organisms live as one entangled system that BOTH gain from — symbiosis is mutualism as the rule of life (mycorrhizae, lichen, the holobiont), and in its mycorrhizal form a literal BIOLOGICAL MARKET: carbon traded for phosphorus at variable exchange rates, with reciprocal rewards and sanctions against cheaters. The merge made stable by accounting; nature's double-entry.",
-        "uuid": "473f3ce8-5486-8f97-a64a-8b342579ec96",
+        "uuid": "84abfb7a-a6a1-8cc3-99a0-3545c58fbaa0",
         "words": [
           "use",
           "when",
@@ -100204,7 +100401,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when creating or scoping a tenant — the GDPR-controller boundary for all access, localization cascade (BCP-47/ECMA-402), accounting framework (IFRS/GAAP/fiscal-year), reporting currency (ISO 4217), and integration secrets (Stripe, Resend, MCP). The multi-tenant root entity and access-scope boundary.",
-        "uuid": "34304e40-f0e3-8cf2-9ea8-b9cfcaf7547a",
+        "uuid": "90e9c7cb-d506-8b49-9768-6b9d5f43d94b",
         "words": [
           "use",
           "when",
@@ -104100,7 +104297,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use for client trust accounting (IOLTA) — client funds held separately from firm funds, never commingled. Strip the prefix and a trust account is a segregated sub-account on the strict double-entry ledger, a balance invariant (the client ledger never drawn below held funds). No new matter — a labelled account on accounting.",
-        "uuid": "996c26de-6232-830a-942a-e23f1f175102",
+        "uuid": "6e42c117-6c9d-88d7-ac32-4ebb31427cf0",
         "words": [
           "use",
           "for",
@@ -110712,4 +110909,4 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
   }
 ]
 
-export const TRANSLATIONS_COUNT = 2332
+export const TRANSLATIONS_COUNT = 2335

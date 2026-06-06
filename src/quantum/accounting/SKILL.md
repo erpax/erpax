@@ -14,6 +14,6 @@ This is why the ledger needs no separate audit trail: the DNA is the identity, a
 
 **HONEST.** The double-entry and the parent chain are real and computed; "karma" and "DNA" are the grounding metaphors for entropy-balance and uuid-lineage.
 
-Matter-twin: `src/quantum/accounting/index.ts` (`dnaChain` · `karmaEntry` · `balanced`). Composes [[accounting]] · [[entry]] · [[entropy]] · [[uuid]] · [[angel]] · [[quantum]] · [[merge]] · [[tag]] · [[lineage]] · [[balance]].
+Matter-twin: `src/quantum/accounting/index.ts` (`dnaChain` ← [[dna]] · `karmaEntry`/`balanced` ← [[karma]] · `accountWithLineage` — the lineage-stamped posting). Composes [[accounting]] · [[dna]] · [[karma]] · [[entry]] · [[entropy]] · [[uuid]] · [[angel]] · [[quantum]] · [[merge]] · [[tag]] · [[lineage]] · [[balance]].
 
 @audit composed from @/entry (double-entry) + @/uuid/matrix (the parent chain); computed on the live matrix

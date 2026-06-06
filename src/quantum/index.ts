@@ -6,10 +6,12 @@
  * the horo digit-trace = quantization (the A432 harmonic levels). Each law is a
  * deterministic check -- A432-grounded, computed at no cost, infinite to forge.
  *
- * Findings (2026-06-05, computed): collapse / conservation / no-cloning /
- * quantization HOLD; ENTANGLEMENT is violated -- merge(a,b) != merge(b,a) (the
- * binding is asymmetric; ~36% reciprocal edges). Fix = a symmetric entanglement
- * binding, e.g. merge over the sorted pair.
+ * Findings (computed, live): collapse / conservation / no-cloning / quantization
+ * HOLD. ENTANGLEMENT: the RAW binding merge(a,b) != merge(b,a) is asymmetric (so
+ * `entanglement().symmetricBinding` is false), but `entangle()` (merge over the
+ * sorted pair) is the symmetric fix and collide.mjs now reciprocates every edge --
+ * so the live matrix is 100% reciprocal and the entanglement is WHOLE (the
+ * reciprocal-edge fraction is 1.0, not the ~36% of the pre-reciprocation matrix).
  *
  *   tsx src/quantum/index.ts
  *
