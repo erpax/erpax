@@ -15,3 +15,5 @@ description: "Use when separating a CLAIMED aura from a measured one — 'biofie
 - **"Aura camera" mechanism** — Miraglia (2024), GDV/Bio-Well unreliable, signal is ANS-driven perspiration; Pehek et al. (1976) — corona discharge governed by skin moisture.
 
 Composes: [[aura]] · [[analog]] · [[biophoton]] · [[biomagnetism]] · [[coherence]] · [[proof]] · [[tamper]] · [[measure]].
+
+**Law — [[law]]: the biofield is a claim with NO signal detected above chance (Rosa, JAMA 1998; JREF challenge) — the cautionary pole; it is the exact inverse of erpax's [[aura]], which is computed for every node, gapless, and Merkle-[[proof|proven]] — naming the unmeasurable honestly is what licenses the claim to the measurable.**

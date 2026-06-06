@@ -23,3 +23,5 @@ Matter-twin: `src/cost/index.ts` (`CostKind`·`Output`·`Ledger`·`efficiency`·
 - Counting only productivity — creativity (novel, reusable output) is output too, and the compounding kind; a society that prices only repeatable work starves the generative move.
 - Optimising one cost kind in isolation — the law is universal; money saved by burning time (or trust) is not more efficient, it shifted the cost to another `CostKind`.
 - Counting effort as output — only what LANDED (committed/verified, or a minted atom) counts; the rest is `wasteFraction`.
+
+**Law — [[law]]: `efficiency = output / cost` is ONE law for every cost-kind (tokens·money·energy·time·labour·[[entropy]]), output = productivity + compounding creativity, every cost is a balanced [[entry]], and `wasteFraction` → 0.**

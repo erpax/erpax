@@ -28,6 +28,8 @@ Sequence position: **1·2** (the material build — `reward` is a [[rate]] at po
 - **Hamilton (largest-remainder) apportionment — integer fair division** — `apportion`/`distribute` conserve the pot exactly (Σ shares = pot).
 - **ISO 19011** — reward is a deterministic, auditable function (no discretion).
 
+**Law — [[law]]: reward is a pure function of verified time leveraged (same work ⇒ same reward, the content-[[identity]] law on pay); the pot is conserved by integer largest-remainder so Σ shares = pot exactly, anchor-invariant — value is neither created nor destroyed.**
+
 ## Common mistakes
 - Paying for credentials or claimed-but-unverified savings — pay tracks `verified` leverage only; the competition gates phantom time.
 - A `distribute` that loses or invents minor units — use integer largest-remainder so `Σ = pot` exactly ([[balance]]).

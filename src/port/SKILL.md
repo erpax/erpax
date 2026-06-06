@@ -65,3 +65,5 @@ Port the *data*, not just the schema: `src/port/etrima-import.mjs` streams the s
 - Hand-writing migrations (Payload generates them from the schema).
 - Carrying `option_1..12` across literally instead of composable dimensions ([[manufacturing]]).
 - Hard-coding a `relationTo: 'specific-slug'` where the Rails side was polymorphic — keep it `relationTo: [..]` (see [[plugins]]).
+
+**Law — [[law]]: every Rails/ActiveAdmin construct has one mechanical Payload home (the Rosetta map), and a port is done only as a complete [[trinity]] — matter (code) · antimatter (SKILL) · backend (generated schema) — that all agree.**

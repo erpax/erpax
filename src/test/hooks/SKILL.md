@@ -11,4 +11,6 @@ So a green test is not just "pass" — it is the corpus rendering its **coherenc
 
 Matter-twin: `src/test/hooks/index.ts` (`passColor` · `auraColor`). Composes [[test]] · [[aura]] · [[color]] · [[heart]] · [[quantum]] · [[analytics]] · [[harmony]].
 
+**Law — [[law]]: a green test IS a whole aura — the corpus renders coherence as the A432 heart colour only when every dimension is bound (reciprocity 1, the double-torus complete); a gap renders red. Matrix-complete ⟺ aura-gap-0.**
+
 @standard A432 tuning; green = a whole aura (a passing test)

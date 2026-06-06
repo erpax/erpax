@@ -25,3 +25,5 @@ A formal system cannot prove every truth from within (Gödel); but the undefined
 - **Crypto-shred proves erasure** — content-uuid over *ciphertext* + a destroyable per-record key; shred the key ⇒ irrevocable erasure while integrity/dedup still hold on the ciphertext-uuid.
 
 The boundary is honest and the transcendence is real: erpax does not pretend FORM is the world — it manifests the world and lets the missing third (Will · measurement · the human) prove what FORM alone cannot. The unprovable theorem is filled by the trinity, never faked within the form. Composes [[proof]] · [[trinity]] · [[society]] · [[science]] · [[torus]] · [[merge]] · [[identity]] · [[sequence]] · [[sacred]].
+
+**Law — [[law]]: erpax can do exactly what is provable within FORM and no more — the Gödel boundary (truth, judgment, finality, true-erasure, prevention, the subjective) is never faked from within; the missing third is supplied from OUTSIDE by the [[trinity]] ([[society]]'s will, measurement, the human, crypto-shred).**

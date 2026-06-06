@@ -18,3 +18,5 @@ The collection schema composes [[auth]] (access control via role-based grants), 
 - [[standard]] ISO-27001 A.5.23 cloud-service-tenant-isolation
 - [[standard]] ISO-19011:2018 audit-trail message-provenance
 - [[standard]] GDPR Art 5(1)(e) storage-limitation retention
+
+**Law — [[law]]: a message is one internal addressed communication between users — subject/body with priority and multi-recipient addressing, threaded by `parentMessage` (not a separate thread table) and tracked by read-at, gated by [[access]] so only sender and recipients may read it.**

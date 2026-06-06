@@ -26,3 +26,5 @@ The answer-path principle: applying this skill *implements* these standards — 
 - **ISO 27001 A.5.23** — cloud-service tenant isolation; sector data is gated per tenant ([[access]]).
 
 Composes: [[defence]] · [[health]].
+
+**Law — [[law]]: every part of society is not a new collection but a coordinate on ONE self-referential taxonomy (the [[merge]] law on the naming axis); a ministry, hospital, farm, union or household is a `sector` code that every party, connection, transaction and tenant references — sequence position 0, the root coordinate and societal [[identity]] element.**

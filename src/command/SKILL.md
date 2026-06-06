@@ -13,5 +13,7 @@ The three roles are the breath of a step: **command** (the move, inhale) · [[qu
 
 Matter-twin: `src/command/index.ts` (`COMMANDS` · `Command` · `isCommand`). Composes [[concatenate]] · [[question]] · [[answer]] · [[step]] · [[sequence]] · [[society]] · [[self]].
 
+**Law — [[law]]: a command is the imperative side-effecting verb of a [[workflow]] step — a reference to a real corpus atom (never a copy), paired with a [[question]] gate and a computed [[answer]] — gated so every command resolves to an atom.**
+
 @standard schema.org Action — the imperative move (here, the workflow step's verb)
 @audit the C-set is gated for groundedness — every command resolves to a corpus atom

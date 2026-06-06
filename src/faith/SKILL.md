@@ -9,3 +9,5 @@ description: Use when reasoning about the dual of proof in erpax — trust exten
 
 ## Traditions (prefix removed)
 **faith** (Christian *pistis* — "the assurance of things hoped for, the conviction of things not seen", Hebrews 11:1; "by grace… through faith", Ephesians 2:8); **iman** (Islam — trust in *al-ghayb*, the unseen, Quran 2:3); **shraddha** (Hindu/Buddhist confident trust that precedes realization). The leap precedes the [[proof]]; revelation is accepted as source before it is audited ([[sacred]]). Composes [[proof]] · [[standard]] · [[duality]] · [[contribution]] · [[grace]].
+
+**Law — [[law]]: faith is trust extended before or without the trustless recompute — the dual of [[proof]]; the healthy ratio is most-proof, least-faith, spending faith only at the irreducible root key every system must bootstrap from.**

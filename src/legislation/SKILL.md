@@ -24,3 +24,5 @@ Sequence position: **4** (crest — the binding decision made law), on the ring 
 - **ISO 37000:2021** — governance-of-organizations. The body of governing rules the polity ratifies.
 - **Venice Commission Rule of Law** — law public, prospective, stable, equally applied; the foundation entrenched against the majority.
 - **ISO-19011:2018 §6.4** — audit-evidence. Every law content-addressed and citable.
+
+**Law — [[law]]: the power to legislate and the limit on it are one act — an ordinary majority enacts a statute, a supermajority moves the [[constitution]], and the gap between the two thresholds IS the rule of law (no majority repeals an entrenched article).**

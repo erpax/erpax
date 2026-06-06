@@ -17,3 +17,5 @@ This is erpax's [[identity]] law in nature. erpax already holds that users, agen
 - **Sheldrake, *Entangled Life*** (2020) — the lichen as the standing question of the individual.
 
 Composes [[symbiosis]] · [[merge]] · [[identity]] · [[mycelium]] · [[ecosystem]] · [[whole]] · [[self]] · [[diversity]] · [[law]].
+
+**Law — [[law]]: a lichen is a partnership wearing one body (fungus + photosynthetic partner, often a third yeast) — so the individual is a question not a given, and the [[merge]] of partners IS the [[identity]], erpax's actor-merge made visible in nature.**

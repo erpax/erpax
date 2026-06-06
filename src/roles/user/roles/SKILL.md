@@ -18,3 +18,5 @@ Access controlled via [[access]] (superadmin only: create/read/update/delete).
 - ISO-27002 §5.4 segregation-of-duties
 - ISO-19011:2018 audit-trail
 - SOC-2 CC6.3 access-removal
+
+**Law — [[law]]: a user-role is the join that grants a [[users|user]] the capabilities and skill routes of one linked [[roles|role]]; the assignment is deduplicated by hook ([[access]]).**

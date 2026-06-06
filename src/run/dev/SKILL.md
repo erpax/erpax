@@ -174,3 +174,5 @@ broken-in-dev admin, see Gotchas).
 Related: [[deploy]] (the prod sibling — `payload migrate`, no dev-push) · [[database]]
 (adapter, migrations, the dev-push behaviour) · [[bindings]] (D1/R2/Durable Objects — the
 `no such Durable Object class` warnings) · [[api]] (the Local API ops `smoke.ts` calls).
+
+**Law — [[law]]: a change is confirmed by driving the running app — `smoke.ts` (Local API) for backend/DB, `driver.mjs` (Playwright) for the frontend — launched dev-push OFF for steady-state (push is not idempotent).**

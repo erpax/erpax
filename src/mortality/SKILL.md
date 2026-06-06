@@ -14,3 +14,5 @@ Mortality is the living-asset form of shrink/[[risk]]: planned-for as a buffer (
 - FAO (aquaculture/livestock mortality); forest mortality & MAI models
 
 Composes [[biological/assets]] · [[animal]] · [[livestock]] · [[aquaculture]] · [[forestry]] · [[apiculture]] · [[biomass]] · [[yield]] · [[risk]] · [[rate]] · [[entry]] · [[health]].
+
+**Law — [[law]]: death-loss is the negative biological transformation — it writes the living asset down through P&L (distinct from price change) and de-recognizes it via a balanced [[entry]]; the loss twin of [[yield]], one atom across every living-production domain.**

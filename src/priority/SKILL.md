@@ -12,3 +12,5 @@ Composes: [[workflow/definitions]] · [[sla]].
 ## Standards
 - ITIL (priority matrix)
 - incident management
+
+**Law — [[law]]: priority is the relative-weight field that orders work by urgency and escalation level (P1–P4, Blocker→Low, SLA-breach risk) — a rank, not a state.**

@@ -20,4 +20,6 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO-19011:2018 audit-trail packing-evidence
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
 
+**Law — [[law]]: a logistic handling unit identified by a unique SSCC, self-nesting (pallet → carton → contents), binding item-lot lines to one shipment.**
+
 Composes: [[collections]] · [[fields]] · [[access]] · [[hooks]] · [[accounting]] · [[standard]].

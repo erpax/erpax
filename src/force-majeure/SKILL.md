@@ -13,3 +13,5 @@ Composes: [[Contracts]] · [[matter]] · [[legal/entities/risk/registers]] · [[
 - PECL-Art-8.108
 - CISG-Art-79
 - Common-Law-Doctrine
+
+**Law — [[law]]: force-majeure excuses performance when an unforeseeable event outside a party's control occurs — a notified trigger suspends or terminates the obligation rather than breaching it.**

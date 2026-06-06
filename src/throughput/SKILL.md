@@ -9,5 +9,7 @@ Use when measuring the quantity-per-unit-time flowing through a process — item
 
 Composes: [[rate]] · [[flow]] · [[measure]] · [[work/centers]] · [[bottleneck]].
 
+**Law — [[law]]: throughput is the [[rate]] of productive output — quantity per unit time flowing through a process — and the [[bottleneck]] resource caps it.**
+
 ## Standards
 - ISO-8402 (throughput rate)

@@ -14,3 +14,5 @@ Pollination is an **ecosystem service** the farm must protect (pollinator habita
 - Xerces Society — pollinator conservation; FAO — pollination services
 
 Composes [[agriculture]] · [[crop]] · [[harvest]] · [[yield]] · [[maturity]] · [[seed]] · [[scouting]] · [[tunnel]].
+
+**Law — [[law]]: pollination is the pollen transfer that sets fruit and seed — a [[yield]] prerequisite upstream of [[maturity]] for fruiting [[crop]]s, and an ecosystem service the farm must protect or provide.**

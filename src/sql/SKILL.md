@@ -9,4 +9,6 @@ A tiny **pure** SQL model: a SELECT AST (table, columns, where) with a **determi
 
 Matter-twin: `src/sql/index.ts` (`Select` · `toSql` · `normalize`). Composes [[query]] · [[table]] · [[column]] · [[quantum]].
 
+**Law — [[law]]: a query is pure data — a SELECT AST whose deterministic stringifier normalizes equivalent queries to one identical canonical form, so the [[quantum]] facet hashes them to a single content-[[uuid]] (equal meaning ⇒ equal id ⇒ [[merge]]).**
+
 @standard SQL SELECT (a minimal subset); deterministic canonicalisation

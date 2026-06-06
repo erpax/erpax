@@ -9,6 +9,8 @@ Use when a contract specifies dispute handling — mechanism (litigation, arbitr
 
 Composes: [[Contracts]] · [[matter]] · [[jurisdiction]] · [[remediation]] · [[liability]].
 
+**Law — [[law]]: a [[Contracts|contract]]'s dispute-handling clause — its mechanism (litigation/arbitration/mediation), forum, procedural rules, and the negotiation→mediation→arbitration escalation ladder.**
+
 ## Standards
 - UNCITRAL-Model-Arbitration-Law
 - NY-Convention-1958

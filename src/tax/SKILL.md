@@ -33,3 +33,5 @@ The answer-path principle: applying this skill *implements* the standard — a c
 - Tax category as free text — use the UN/CEFACT 5305 code ([[standard]]).
 - Re-computing VAT per surface (receipt, total, SAF-T) — one engine, shared.
 - A stored `taxIncluded?` boolean without the back-out [[rate]] — derive net from gross.
+
+**Law — [[law]]: a tax is a [[rate]] on a taxable [[currency]] base, categorized by a [[standard]] code (UN/CEFACT 5305) — the rate is cascade-resolved at the tax point (never a baked literal) and one engine feeds the receipt, the total, and the SAF-T file (never re-computed per surface).**

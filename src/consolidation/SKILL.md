@@ -7,4 +7,6 @@ description: "Use when modelling one consolidation — the singular model of the
 
 The combination of multiple entities figures into one set. The singular model whose plural store is the [[consolidations]] collection ([[balance]]: every collection has its model).
 
+**Law — [[law]]: the singular model of one [[consolidations]] row — the combination of multiple entities' figures into one set; every collection has its model ([[balance]]).**
+
 Composes [[consolidations]] · [[accounting]] · [[balance]].

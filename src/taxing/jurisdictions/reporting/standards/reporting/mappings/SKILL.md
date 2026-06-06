@@ -11,6 +11,8 @@ This is the single-folder collection node: `index.ts` (schema + standards banner
 co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live here.
 One folder per collection ⇒ no scatter ⇒ no drift.
 
+**Law — [[law]]: reporting-mappings is the cross-standard element-mapping node — each row binds one source element to its target (account · line-item · disclosure · metric) across reporting frameworks (XBRL-GL · IFRS-Taxonomy · SAF-T).**
+
 ## Standards
 - XBRL-GL global-ledger-taxonomy
 - IFRS-Taxonomy reporting-mapping

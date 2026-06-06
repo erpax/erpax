@@ -49,3 +49,5 @@ An agent reaching a peer is how the society covers its own gaps: where `emit` br
 - **ISO/IEC 25010:2023 §5.4 modularity / §5.5 testability** — agents are pure (no direct I/O), the substrate owns side effects; the seam is reusable and trivially testable.
 - **ISO/IEC 12207** — software-life-cycle single-source-of-truth: one owning agent per collection, one effect seam, one shared registry/runtime.
 - **ISO 19011:2018 §6.4** — audit-evidence: every `audit` effect appends a Merkle leaf, spec-traceable end to end.
+
+**Law — [[law]]: an agent IS its content — its [[identity]] is the content-uuid of its skills + purpose, so identical clones [[merge]] into one and a distinct agent is a specialised child; and it DECIDES in pure functions (returns effects, never performs them — only the substrate acts).**

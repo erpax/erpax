@@ -13,6 +13,8 @@ This is an [[accounting|accountable]] [[collections|collection]] node — shared
 
 This is the [[fractal]] same form one scale down from the [[fair/value/measurements]] register it points at — a measured balance that re-prices against a hierarchy of inputs.
 
+**Law — [[law]]: a living class is carried at fair-value-less-costs-to-sell (never cost), re-measured each reporting date, with the change split into biological-transformation vs price-change; bearer plants are carved out to IAS-16.**
+
 ## Standards
 - IFRS IAS-41 §10 recognition-criteria
 - IFRS IAS-41 §12 measurement-fair-value-less-costs-to-sell

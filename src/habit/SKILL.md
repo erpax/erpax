@@ -10,3 +10,5 @@ description: "Use when reasoning about the repetition atom that turns a sale int
 habit is also the atom that **catches the market when status fades**. The trendsetter strategy spends `status⁺` to acquire the early holders, but status is not durable (the [[friction]] ↔ status coupling — it decays as the thing becomes common, [[trend]]). The [[breath]] only closes if, by the time status has faded for the majority, **habit has formed** — otherwise the inhale (exclusive acquisition) never converts into a standing market on the exhale. If habit is the **zero atom**, you have a leaky bucket: pouring acquisition (trendsetters, ads) into a market that drains as fast as it fills.
 
 Composes [[market]] · [[retention]] · [[churn]] · [[cohort]] · [[engagement]] · [[proof]] · [[breath]].
+
+**Law — [[law]]: habit is the repetition atom that converts one transaction into many; without it a [[market]] is a spike that decays, and if habit is the zero atom every other atom's compounding collapses to a leaky bucket.**

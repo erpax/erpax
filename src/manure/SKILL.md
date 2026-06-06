@@ -14,3 +14,5 @@ A **nutrient-management plan** balances manure application to crop need ([[ferti
 - SARE *Building Soils for Better Crops* (manure as amendment); 4R nutrient stewardship
 
 Composes [[livestock]] · [[soil]] · [[fertility]] · [[grazing]] · [[compost]] · [[flow]] · [[breath]] · [[fodder]] · [[balance]] · [[risk]] · [[certification]].
+
+**Law — [[law]]: manure closes the livestock→[[soil]] [[fertility]] loop — the animal byproduct that returns N-P-K and organic matter (the credit side), the livestock twin of [[compost]], balanced to the land by the nutrient-management plan.**

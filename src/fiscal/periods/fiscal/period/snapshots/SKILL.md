@@ -15,3 +15,5 @@ Composes: [[standard]] · [[access]] · [[proof]] · [[identity]].
 - eIDAS:2014/910/EU (signature on critical amendments)
 - SOX:2002 (access control audit evidence, change log)
 - NIST-SP-800-92 (audit logging, integrity verification)
+
+**Law — [[law]]: a fiscal-period snapshot is an immutable point-in-time capture chained to its prior snapshot — the priorSnapshot link makes any hidden amendment detectable, and critical amendments carry an eIDAS QES signature, so the period's history is replayable and tamper-evident.**

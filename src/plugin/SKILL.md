@@ -8,3 +8,5 @@ description: "Use when modelling one plugin — the singular model of the plugin
 A self-contained module that extends the platform. The singular model whose plural store is the [[plugins]] collection ([[balance]]: every collection has its model).
 
 Composes [[plugins]] · [[platform]] · [[balance]].
+
+**Law — [[law]]: plugin is the singular model whose plural store is the [[plugins]] collection — every collection [[balance]]s against its one model.**

@@ -8,3 +8,5 @@ description: "Use when modelling one milestone — the singular model of the mil
 A marked checkpoint in a plan or project. The singular model whose plural store is the [[milestones]] collection ([[balance]]: every collection has its model).
 
 Composes [[milestones]] · [[project]] · [[balance]].
+
+**Law — [[law]]: milestone is the singular model whose plural store is the [[milestones]] collection — every collection [[balance]]s against its one model.**

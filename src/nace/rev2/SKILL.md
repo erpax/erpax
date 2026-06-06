@@ -25,3 +25,5 @@ EU statistical classification of economic activities — Regulation (EC) No 1893
 - UN ISIC Rev.4 (companion classification)
 - US/CA/MX NAICS 2022 (companion)
 - EU CSRD ESRS 2 §80(b) sector-classification disclosure
+
+**Law — [[law]]: NACE Rev. 2 classifies an economic activity through one strict hierarchy — Section (A–U) → Division (2-digit) → Group (3-digit) → Class (4-digit) — per Regulation (EC) No 1893/2006.**

@@ -22,4 +22,6 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - SOX §404 internal-controls bom-engineering-change-control
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
 
+**Law — [[law]]: the versioned recipe of components + quantities per finished good, controlled per engineering change, that seeds [[work/orders|work-order]] execution and cost-of-conversion absorption.**
+
 Composes: [[work/orders|WorkOrders]] · [[Items]] · [[work/centers]].

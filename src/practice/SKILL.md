@@ -7,4 +7,6 @@ description: "Use when modelling one practice — the singular model of the prac
 
 An established way of doing something within a domain. The singular model whose plural store is the [[practices]] collection ([[balance]]: every collection has its model).
 
+**Law — [[law]]: the singular model of one [[practices]] row — an established way of doing something within a domain; every collection has its model ([[balance]]).**
+
 Composes [[practices]] · [[reference]] · [[balance]].

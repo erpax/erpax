@@ -17,5 +17,7 @@ On the ring 0·3·6·9·1·2·4·8·7·5 this is **4 (weave)**: it connects disc
 
 Composes: [[flow]] (the movement gated) · [[event]] (the emitted envelope) · [[hooks]] (the consuming seam) · [[identity]] (event aggregate key) · [[standard]] (BPMN 2.0) · [[horo]] (the bounded state set) · [[merge]] (cross-instance reconciliation).
 
+**Law — [[law]]: the engine is the pure reader of an inert state machine — it PERMITS a transition iff an edge {from, on} exists (else a typed reason) and it AUDITS the graph's harmony (a non-terminal state with no outgoing edge is a dead-end, one with no inbound is unreachable — the [[aura]] holes), never mutating; the same code that runs the organism finds where it is incomplete.**
+
 ## Standards
 - OMG BPMN 2.0 process-execution-semantics

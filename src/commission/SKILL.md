@@ -8,3 +8,5 @@ description: "Use when modelling one commission — the singular model of the co
 Earned compensation tied to a sale or transaction. The singular model whose plural store is the [[commissions]] collection ([[balance]]: every collection has its model).
 
 Composes [[commissions]] · [[sales]] · [[balance]].
+
+**Law — [[law]]: commission is the singular model of one earned-compensation row tied to a sale; the plural store is its collection ([[balance]]: every collection has its model).**

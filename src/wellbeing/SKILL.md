@@ -22,3 +22,5 @@ description: "Use when measuring or reasoning about quality of life — каче
 - **CASP-12 / CASP-19** — the validated late-life quality-of-life scale (control · autonomy · self-realisation · pleasure); psychometrically validated across Central-Eastern Europe (HAPIEE cohort, n≈13,210, ages 50–70) and the QoL outcome in SHARE — the instrument of choice for *late-career* wellbeing.
 
 Composes: [[society]] · [[market]] · [[dimension]] · [[health]] · [[aggregation]] · [[bottleneck]] · [[duality]] · [[measure]] · [[cohort]] · [[time]] · [[entry]] · [[allocation]] · [[decompression]] · [[angel]] · [[balance]] · [[career]] · [[age]] · [[crisis]].
+
+**Law — [[law]]: wellbeing is the emergent composite a [[society]] is measured by — read as capabilities not income, mostly compensatory across [[dimension]]s but with non-compensatory floors where the [[bottleneck]] law returns; it is the credit side the ledger exists to fund.**

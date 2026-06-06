@@ -15,3 +15,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - OECD tax-period-coding
 - SAF-T OECD reporting-period
 - ISO-8601-1:2019 period-dates
+
+**Law — [[law]]: a tax period is per-jurisdiction and advances pending-closing → adjustment-posted → tax-closed, aligned to the underlying [[fiscal/periods]] — transfer-pricing adjustments are counted and the transitions are kept as a tamper-proof chain for the tax authority, never reordered freely.**

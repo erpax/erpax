@@ -21,3 +21,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO-27001 A.5.19 information-security-supplier-relationships
 
 Composes: [[identity]] · [[accounting]] · [[access]] · [[hooks]] · [[standard]].
+
+**Law — [[law]]: a scorecard is the periodic, evidence-backed re-evaluation of one vendor (OTD / quality / response / ESG metrics) that drives the ISO 9001 §8.4 renewal, probation or de-listing decision — the supplier re-approval node.**

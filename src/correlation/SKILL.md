@@ -12,3 +12,5 @@ Composes: [[calculate]].
 ## Standards
 - Statistics (ISO 3534-1)
 - Feature correlation in ML
+
+**Law — [[law]]: correlation measures a variable relationship, never asserts cause — spurious correlation and multicollinearity are detected, not trusted; it composes [[calculate]].**

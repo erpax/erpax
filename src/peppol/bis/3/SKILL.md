@@ -76,3 +76,5 @@ Full list: <https://docs.peppol.eu/edelivery/policies/PolicyForUseOfIdentifiers/
 - UBL 2.1 OASIS Standard — invoice/credit-note XSD.
 - ISO 6523-1:1998 — Information technology — Structure for the identification of organizations and organization parts.
 - OpenPeppol Service Metadata Publisher (SMP) — endpoint discovery.
+
+**Law — [[law]]: Peppol BIS Billing 3.0 wraps an EN-16931 semantic invoice (UBL 2.1 syntax) in the network envelope — CustomizationID + ProfileID + ISO-6523 ParticipantIdentifier + EndpointID; a message is Peppol-conformant only when both the semantic model and that envelope are present.**

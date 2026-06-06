@@ -14,3 +14,5 @@ Withdrawal is the livestock twin of a **quarantine / lock-up [[period]]**: an en
 - WOAH (veterinary drug residues); EU MRL (maximum residue limits)
 
 Composes [[animal]] · [[livestock]] · [[health]] · [[period]] · [[risk]] · [[grade]] · [[lactation]] · [[harvest]] · [[certification]].
+
+**Law — [[law]]: a withdrawal period is the residue-safety embargo that gates saleability — the mandatory days after a treatment before an [[animal]]'s produce is residue-safe to sell; produce is accountable only once the clock clears.**

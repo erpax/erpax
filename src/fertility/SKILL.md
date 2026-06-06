@@ -23,3 +23,5 @@ Fertility is one input line in [[agriculture]]'s backward plan: `N per planting 
 - Over-applying nitrogen — leaching on low-CEC sands, lodging in grains, foliage over fruit set; violates 4R Right Rate.
 
 Composes [[agriculture]] · [[crop]] · [[yield]] · [[balance]] · [[entry]] · [[measure]] · [[rate]] · [[conversion]] · [[soil]] · [[compost]] · [[covercrop]] · [[mycorrhizae]] · [[salinity]] · [[irrigation]] · [[capacity]] · [[planting]] · [[biological/assets]].
+
+**Law — [[law]]: fertility is a double-entry budget — [[crop]] removal debits the [[soil]], application credits it, and it must [[balance]] like any ledger; the N-P-K need scales with [[yield]] and a soil test, not book rates.**

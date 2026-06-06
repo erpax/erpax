@@ -29,3 +29,5 @@ Consignment Arrangements — IFRS-15 §B77-B78 / ASC 606-10-55-79 master. When e
 - ISO-19011:2018 audit-trail consignment-arrangement-evidence
 - SOX §404 internal-controls revenue-deferral TOM-AR-04
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
+
+**Law — [[law]]: control does not transfer until the consignee sells onward — the consignor keeps the inventory on its books and defers revenue until the §B77 indicators resolve at the [[warehouse/locations/consignment/arrangements/consignment/sales|sale event]].**

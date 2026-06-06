@@ -9,4 +9,6 @@ The **filesystem** is erpax's substrate: a tree where every [[path]] addresses c
 
 A filesystem is stateful, so every state of the tree is a [[snapshot]]; its content-addressed, immutable twin keeps them all, layer after layer.
 
+**Law — [[law]]: erpax's substrate is a tree where every [[path]] IS the address and every leaf [[word]] IS the [[atom]] — derived from the live tree first (never a stale index), and every state of the tree is a [[snapshot]].**
+
 @see [[path]] · [[word]] · [[atom]] · [[matter]] · [[file]] · [[snapshot]]

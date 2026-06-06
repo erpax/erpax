@@ -9,6 +9,8 @@ Use when removing intercompany balances, transactions, and profits in consolidat
 
 Composes: [[Consolidations]] · [[consolidation/eliminations]] · [[legal/entities/intercompany/transactions]] · [[journal/entries]] · [[balance]] · [[transaction]].
 
+**Law — [[law]]: consolidation nets intercompany balances, transactions, and profits to zero — the group reports as one entity, so what one member owes another cancels ([[balance]]).**
+
 ## Standards
 - IFRS-10 §19-28 (consolidated financial statements mechanics)
 - IFRS-3 §52 (elimination in consolidation)

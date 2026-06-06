@@ -16,3 +16,5 @@ description: "Use when implementing or referencing ISO 3166-2 — Country subdiv
 
 Sub-national tax jurisdictions, region/state fields on addresses, customers,
 vendors, and tax-jurisdiction master records.
+
+**Law — [[law]]: a subdivision code is only valid as `<alpha-2>-<subdivision>` — a region is always named relative to its country, never standalone, so the parent country is inseparable from the subnational jurisdiction.**

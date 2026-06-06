@@ -46,3 +46,5 @@ erpax runs as a self-managed edge app: each Cloudflare binding is a capability A
 - Reaching for D1 where KV (hot reads), R2 (blobs), Queues (async), or a DO (coordination) is cheaper/correct.
 - Storing files by random name instead of content-uuid → loses R2 dedup ([[identity]] "dry storage").
 - Forgetting Queue consumers; metering without `TENANT_QUOTA` (no cost control); rate-limit in app code instead of the `RATE_LIMITER` DO.
+
+**Law — [[law]]: every binding is a cost lever — each workload runs on its cheapest-correct primitive, meters its own usage, and a Durable Object binds only as a named export of the worker entry (or it fails at runtime).**

@@ -12,3 +12,5 @@ Composes: [[Competencies]] · [[train]] · [[Employees]] · [[competency/gap]] �
 ## Standards
 - SCORM for course tracking
 - SFIA 1-7 for competency levels
+
+**Law — [[law]]: training is the experience record of learning an actor undergoes — enrollment, completion, certification, the [[competency]] gain that closes a competency gap.**

@@ -32,3 +32,5 @@ Relationship fields are `string | RelatedDoc` depending on `depth` — guard bef
 - Editing `payload-types.ts` by hand (regenerated/overwritten).
 - Stale types after adding/renaming collections → slug literals rejected (`TS2322`/`2345`) until you re-run `generate:types`.
 - Accessing populated relationship props without checking `depth` (value may be just an ID string).
+
+**Law — [[law]]: `payload-types.ts` is generated from the config, never hand-edited; regenerate after ANY [[schema]] change or the stale types are a [[gate]]-caught gap.**

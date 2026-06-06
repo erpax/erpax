@@ -14,3 +14,5 @@ It runs the crop/livestock atoms, water-shaped: fed a ration whose **feed-conver
 - FAO (aquaculture production & systems); ASC / BAP (responsible-aquaculture certification)
 
 Composes [[agriculture]] · [[livestock]] · [[biological/assets]] · [[biomass]] · [[capacity]] · [[maturity]] · [[conversion]] · [[rate]] · [[salinity]] · [[mortality]] · [[harvest]] · [[postharvest]] · [[items]] · [[taxonomy]] · [[certification]] · [[lineage]] · [[yield]].
+
+**Law — [[law]]: aquaculture farms aquatic organisms under managed conditions as IAS-41 [[biological/assets|biological assets]] valued by standing [[biomass]] — stocked at a density capped by [[capacity]], grown out through [[maturity]] stages, then [[harvest|harvested]] into inventory.**

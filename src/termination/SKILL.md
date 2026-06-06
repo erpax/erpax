@@ -12,3 +12,5 @@ Composes: [[Contracts]] · [[matter]] · [[horo]] · [[liability]] · [[remediat
 ## Standards
 - UCC-2-309
 - PECL-Art-8.307
+
+**Law — [[law]]: termination ends a contract's forward obligations but not its survivors — wind-down duties, survival clauses, and remedies persist past the end date; ending is a controlled transition, not erasure.**

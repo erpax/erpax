@@ -11,6 +11,8 @@ This is the single-folder collection node: `index.ts` (schema + standards banner
 co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live here.
 One folder per collection ⇒ no scatter ⇒ no drift.
 
+**Law — [[law]]: one durable index row per SOX §404 attestation — a PDF/A cover sheet per completed e2e walk-through, optionally bearing an eIDAS PAdES qualified signature with its certificate chain and SHA-256 digest as tamper-evident [[proof]]; a single-folder collection node (no scatter, no drift).**
+
 ## Standards
 - ISO-19005-2:2011 pdf-a-2
 - ISO-14289-1:2014 pdf-ua-1

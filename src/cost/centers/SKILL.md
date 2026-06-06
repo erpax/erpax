@@ -21,4 +21,6 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - SOX §302 disclosure-controls segment-disclosure
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
 
+**Law — [[law]]: a cost-center is a SECONDARY analytical dimension on GL postings (region·unit·department·project, hierarchical via parent) for segment/departmental P&L — it tags JE lines without polluting the chart of accounts.**
+
 Composes: [[hooks]] · [[access]] · [[fields]] · [[accounting]] · [[identity]] · [[proof]] · [[cost/centers/job/positions]].

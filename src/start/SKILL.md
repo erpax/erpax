@@ -11,3 +11,5 @@ Composes: [[date]] · [[period]] · [[fields]] · [[end]].
 
 ## Standards
 - ISO-8601-1:2019
+
+**Law — [[law]]: start is the ISO-8601 instant a span begins; paired with [[end]] (or a duration) it defines a temporal [[period]].**

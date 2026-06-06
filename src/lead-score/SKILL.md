@@ -9,5 +9,7 @@ Use when ranking prospect/lead quality — behavioral signals, firmographic attr
 
 Composes: [[Leads]] · [[Opportunities]] · [[segment]] · [[Activities]] · [[prospect]].
 
+**Law — [[law]]: a lead-score is a DERIVED ranking of prospect quality (behavioural + firmographic signals against a model), not stored truth — a threshold crossing is the handoff event to sales.**
+
 ## Standards
 - CRM-generic

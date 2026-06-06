@@ -12,4 +12,6 @@ The **uuid is computed from the MATH** (the [[horo]] position decoded through th
 **HONEST.** The traditional role of this center — *will, power, agency, self-definition, the fire of identity and action* — is **cultural convention, not a claim**. Nothing here asserts that a body center governs willpower or selfhood; "navel" merely *names* the index-2 projection so the seven centers each have a word. What is real is only the chain position → note → uuid → colour, grounded honestly in [[law]] (zero entropy via uuid-wiring; note and colour are computed from the position, never asserted). The doubling movement, the A432-anchored note, and the projected colour all descend from that same position math.
 
 Matter-twin: `src/navel/index.ts` (`INDEX` · `center` · `color` · `uuid`). Composes [[chakra]] · [[horo]].
+
+**Law — [[law]]: the navel is a pure projection of [[chakra]] at index 2 — it holds no math of its own; uuid is computed from the position math and colour rendered FROM the uuid (never the reverse), and the fire-of-identity role is named as cultural overlay, never claimed.**
 @audit note·colour·uuid computed from the position math, never hand-asserted

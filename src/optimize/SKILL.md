@@ -40,6 +40,8 @@ Constraint: a referenced block is identical everywhere — cannot be modified pe
 
 Composes: [[collections]] · [[fields]] · [[queries]] · [[config]] · [[types]] · [[harden]] · [[deploy]].
 
+**Law — [[law]]: optimize Payload by shape, not by force — index every filtered/sorted [[fields|field]], cap [[queries|query]] depth/select/limit, and define each block ONCE and reference it by slug so the generated [[types]] and [[config]] stay small.**
+
 ## Common mistakes
 - Un-indexed fields used for sort/filter (silent slow scans).
 - Inlining the same block in many collections instead of `blockReferences` (bloats generated `payload-types.ts` and payloads).

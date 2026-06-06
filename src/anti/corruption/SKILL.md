@@ -20,6 +20,8 @@ The two sides are [[duality]]: the in-ledger invariants (matter) and the cross-e
 
 Sequence position: **9** (unity / verification / audit — the conservation check that closes a pass), on the ring 0·3·6·9·1·2·4·8·7·5 (see [[sequence]]).
 
+**Law — [[law]]: a ledger is corruption-free iff four invariants hold at once — content-uuid immutability ([[identity]]), segregation of duties, double-entry [[balance]], and reversal-only history; fraud is a contradiction that fails a pure check, not a record to be trusted-then-audited.**
+
 ## Standards
 
 - **ISO-19011:2018** — audit-trail integrity-verification. `scanTransaction` is the executable audit check.

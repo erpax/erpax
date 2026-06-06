@@ -40,3 +40,5 @@ Sequence position: **8** (crest — the value transfer between two parties carri
 - **ISO-8601-1:2019** — date-time days-between-arithmetic; `daysBetween` over `dueDate`.
 - **SOX §404 / ISO-27002 §5.4** — segregation-of-duties on status-transitions; the workflow graph forbids the illegal jump.
 - **ISO-19011:2018** — audit-trail of state-transitions and aging-of-outstanding-items.
+
+**Law — [[law]]: one party is seen through infinitely many roles via a single context-keyed reference (never one FK per role), and receivable and payable are the SAME document seen from opposite ends — so both sides share one aging algorithm and one lifecycle, differing only in sign and direction.**

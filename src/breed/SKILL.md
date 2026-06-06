@@ -14,3 +14,5 @@ A **breed** is a genetically distinct sub-population of a species with stable he
 - IFRS IAS-41 (breeding stock as biological assets); FAO (animal genetic resources)
 
 Composes [[animal]] · [[livestock]] · [[lineage]] · [[taxonomy]] · [[period]] · [[metric]] · [[forecast]] · [[cohort]] · [[biological/assets]].
+
+**Law — [[law]]: a breed is the animal-genetics classifier — a genetically distinct sub-population with stable heritable traits and pedigree — kept distinct from crop [[taxonomy]] so genetics is never conflated; breeding stock is a held [[biological/assets|biological asset]].**

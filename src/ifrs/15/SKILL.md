@@ -60,3 +60,5 @@ Files:
 - IFRS 15 §31, §35, §38 — point-in-time vs over-time recognition criteria.
 - IFRS 15 §73-§86 — allocation of the transaction price.
 - IFRS 15 §B14-B33 — variable consideration including refunds and rights of return.
+
+**Law — [[law]]: IFRS 15 / ASC 606 owns the canonical types for the five-step revenue model (identify contract → obligations → transaction price → allocate → recognize) plus its balance-sheet artefacts (ContractAsset/Liability, RefundLiability) — the one shape every revenue collection and posting service projects onto, so the obligation enums cannot drift.**

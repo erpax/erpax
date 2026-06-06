@@ -14,6 +14,8 @@ So the run's three laws are not three separate checks an operator juggles — th
 
 Matter-twin: `src/services/decide/index.ts` (`SocietyCandidate`·`decide`) over `services/competition` + `services/cost` + `services/logic` + `index.test.ts`. Composes: [[competition]] · [[logic]] · [[cost]] · [[proof]] · [[decompression]] · [[merge]] · [[peace]] · [[society]] · [[self]].
 
+**Law — [[law]]: the society picks one winner by composing three selection laws into ONE function — correctness gates (the [[gate]]/[[proof]] referee, never a vote), [[harmony]] orders, efficiency ([[cost]]) selects — ties broken by lowest cost then content-[[uuid]] so every node decides identically ([[merge]]).**
+
 ## Common mistakes
 - Selecting by efficiency before filtering correctness — correctness is absolute and first; an efficient wrong answer is not a candidate.
 - Letting a disharmonic candidate win when a harmonic one exists — harmony is preferred over raw efficiency; only when no harmonic candidate is correct does the field open to all.

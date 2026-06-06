@@ -42,3 +42,5 @@ versions: {
 - Expecting public reads to return drafts — they return published unless `draft: true`.
 - Unbounded `maxPerDoc: 0` on high-churn collections → table bloat.
 - Forgetting drafts change default read behavior in the frontend (filter `_status`).
+
+**Law — [[law]]: all is versioned because every content-uuid'd entity already is — a version is a content-addressed leaf ([[uuid]]: change content ⇒ new leaf, identical content ⇒ same leaf, [[merge]]), read three ways (version · [[tamper]]-cost · analytics) with no new storage.**

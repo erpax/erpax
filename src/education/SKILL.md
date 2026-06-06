@@ -38,3 +38,5 @@ The classification APIs already live in the registry (`config/country-apis` kind
 - Storing `status`/`graduated?` instead of deriving it from monotonic credit/assessment counters.
 - Cataloguing the realized collections here — that's matter; diff the config instead.
 - A mutable grade after award — assessment is sealed; correct via a new versioned record, never an in-place edit.
+
+**Law — [[law]]: one curriculum corpus, one learner law — agent = human ([[identity]] under a role context); academic status is DERIVED from monotonic counters, never stored, and a certified attainment is a sealed, content-addressed leaf that [[merge]]s across instances.**

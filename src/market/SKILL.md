@@ -31,3 +31,5 @@ You do not win convenience and status simultaneously; you win them **in order**.
 - **AIDA funnel** — awareness → interest → desire → action: the per-atom gates read as a sequence.
 
 Composes [[desire]] · [[awareness]] · [[distribution]] · [[friction]] · [[proof]] · [[status]] · [[habit]] · [[trend]] · [[power]] · [[signal]] · [[breath]] · [[entry]] · [[bottleneck]] · [[society]] · [[commerce]] · [[diffusion]] · [[network]].
+
+**Law — [[law]]: a market is the PRODUCT (not sum) of its atoms, so the near-zero atom caps the whole ([[bottleneck]]) — growth means finding the zero atom and lifting it, never multiplying a non-zero one by the zero.**

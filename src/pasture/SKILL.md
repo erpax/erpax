@@ -14,3 +14,5 @@ Pasture is the land [[allocation]] of the grazing system — what the land × [[
 - FAO (grazing land); Savory (holistic planned grazing)
 
 Composes [[livestock]] · [[grazing]] · [[herd]] · [[crop]] · [[rotation]] · [[fertility]] · [[capacity]] · [[manure]] · [[allocation]] · [[season]] · [[bottleneck]] · [[leases]].
+
+**Law — [[law]]: pasture is the grazing land-unit whose forage productivity is a carrying-[[capacity]] measure (animal-units), bounded by the land × [[season]] [[bottleneck]] — the livestock counterpart of a [[crop]] field.**

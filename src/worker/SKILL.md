@@ -8,3 +8,5 @@ description: "Use when modelling one worker — the singular model of the worker
 A person who performs labor for the organization. The singular model whose plural store is the [[workers]] collection ([[balance]]: every collection has its model).
 
 Composes [[workers]] · [[employee]] · [[balance]].
+
+**Law — [[law]]: a worker is one person who performs labor for the organization — the singular model whose plural store is the [[workers]] collection ([[balance]]: every collection has its model).**

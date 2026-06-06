@@ -15,4 +15,6 @@ This is the genetic reading of the [[lineage]] / [[coordinate]] tree the matrix 
 
 Matter-twin: `src/dna/index.ts` (`genome` · `inherits` · `generations`). Composes [[uuid]] · [[matrix]] · [[lineage]] · [[merge]] · [[quantum]] · [[tag]] · [[karma]] · [[tamper]].
 
+**Law — [[law]]: an atom's genome is its parent-id [[lineage]] folded into its content-[[uuid]] — change an ancestor and every descendant's uuid changes, so inheritance is tamper-evident by architecture, not stored beside the atom.**
+
 @audit computed from the live matrix parent-chain; never hand-asserted

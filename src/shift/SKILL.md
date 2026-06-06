@@ -11,5 +11,7 @@ Use when modeling a span of worked time — the per-actor-day labour unit a work
 
 Composes: [[shifts]] · [[work/shifts]] · [[employee]] · [[accounting]] · [[efficiency]] · [[time]] · [[attendance]] · [[pay]] · [[horo]].
 
+**Law — [[law]]: a shift is one `(actor, day)` of presence and the [[accounting]] authority for labour — produced minutes roll UP into it, [[efficiency]] (`⌊produced·100/presence⌋`) and wage read back DOWN, the same direction a ledger account is the authority its postings sum into.**
+
 ## Standards
 - ISO-22400-2 (manufacturing operations KPIs — efficiency, presence/produced time)

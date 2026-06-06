@@ -22,3 +22,5 @@ GL posting (debit inventory, credit accounts-payable) on GR; revenue posting on 
 - IFRS-15 §31 revenue-substantiation shipment-FOB-date
 - SOX §404 internal-controls three-way-match
 - ISO-27002 §5.4 segregation-of-duties receiver-vs-requester
+
+**Law — [[law]]: a goods receipt is the second leg of the three-way match — it confirms vendor goods arrival and posts the GL accrual (debit inventory, credit AP), while revenue timing stays deferred to the shipment FOB point, so GR date ≠ revenue date.**

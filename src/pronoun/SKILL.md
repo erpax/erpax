@@ -8,3 +8,5 @@ description: "Use when modelling one pronoun — the singular model of the prono
 A term by which a person chooses to be referred to. The singular model whose plural store is the [[pronouns]] collection ([[balance]]: every collection has its model).
 
 Composes [[pronouns]] · [[person]] · [[balance]].
+
+**Law — [[law]]: a pronoun is the singular model of one term by which a person chooses to be referred to, whose plural store is the [[pronouns]] collection ([[balance]]: every collection has its model).**

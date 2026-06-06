@@ -8,3 +8,5 @@ description: "Use when modelling one utterance — the singular model of the utt
 One spoken or written input in a conversation. The singular model whose plural store is the [[utterances]] collection ([[balance]]: every collection has its model).
 
 Composes [[utterances]] · [[conversation]] · [[balance]].
+
+**Law — [[law]]: one utterance is the singular model of exactly one [[utterances]] row — every collection has its model ([[balance]]), the plural store and its singular type two halves of one node.**

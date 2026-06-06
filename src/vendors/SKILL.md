@@ -21,3 +21,5 @@ description: Use when managing purchase-side party master data — vendor identi
 - GDPR Art.6(1)(b) lawful-basis-contract
 
 Composes: [[vendors/vendor/scorecards]] · [[vendors/vendor/quotes]].
+
+**Law — [[law]]: vendors is the purchase-side party master — one [[identity]] per supplier carrying legal identity, tax classification, bank details, payment terms and AP ledger defaults; the accounts-payable party registry.**

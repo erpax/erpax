@@ -11,5 +11,7 @@ The digit-space **dual** of [[word]]. Every atom has a WORD address (its folder 
 
 Off-[[sequence]] is FS-traceable: an atom whose digit address does not recompute from its content is an anomaly — it does not fold onto the ring. Derived from the matrix, computed, never stored.
 
+**Law — [[law]]: digit is the dual of [[word]] — every atom's [[horo]] [[sequence]] position ⊕ the digital-root of its content-[[uuid]]; computing it completes the [[aura]] into the word·digit·uuid [[trinity]], a three-fold fold whose mutual consistency drives tamper-[[cost]] to ∞.**
+
 @standard RFC 9562 §5.8 content-uuid + the horo digital-root ring
 @audit the digit address is computed from the live matrix, never hand-maintained

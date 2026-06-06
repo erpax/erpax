@@ -17,6 +17,8 @@ This module exports the 4-class risk taxonomy (`minimal`, `limited`, `high`, `pr
 - Conformity assessment under Art.43 — that's a per-deployment compliance procedure, not a code-level concern.
 - Member-state-level AI governance overlays (e.g. Spain's AESIA, France's CNIL AI guidance).
 
+**Law — [[law]]: the registry of the four-class AI risk taxonomy (minimal/limited/high/prohibited) and the `canAutoAccept(riskClass)` predicate that forces human-in-the-loop for high-risk — the registry, not the per-handler classification.**
+
 ## Citations
 
 - EU AI Act 2024 — Regulation (EU) 2024/1689 (Official Journal L 1689, 12 July 2024)

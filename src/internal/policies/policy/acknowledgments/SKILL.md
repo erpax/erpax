@@ -15,3 +15,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO-27001 A.5.1 policy-acknowledgement
 - SOX §404 control-attestation
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
+
+**Law — [[law]]: a policy acknowledgment is the per-employee-per-policy-version attestation — signed-document upload, acknowledged date and status (pending/overdue/expired) — the SOX §404 evidence that a specific person accepted a specific policy version.**

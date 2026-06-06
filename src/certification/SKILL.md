@@ -9,6 +9,8 @@ description: "Use when a third party attests an operation conforms to a standard
 
 Certification is where [[agriculture]] meets the trust layer: the claim is only as strong as the **record** that proves it — verifiable provenance ([[lineage]]/[[lots]]), tamper-evident history ([[proof]]/[[integrity]]). It generalizes far beyond food (ISO, the [[standards]] corpus itself), which is why it is its own atom rather than a fact buried in [[organic]].
 
+**Law — [[law]]: certification is one shape — a [[standard]] + an accredited agent + an [[audit]] + periodic re-review + a labeled claim — and the claim is only ever as strong as the tamper-evident [[proof]] record behind it.**
+
 ## Standards
 - USDA NOP accreditation (7 CFR 205 subpart F); IFOAM — PGS & organic guarantee systems
 - Demeter Biodynamic Standard; Regenerative Organic Certified; GLOBALG.A.P. IFA; USDA AMS GAP/GHP

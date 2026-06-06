@@ -17,3 +17,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - US-GAAP ASC-810 consolidation
 
 Composes: [[legal/entities]].
+
+**Law — [[law]]: a group consolidation only proceeds when every entity is closure-ready and intercompany balances reconcile — eliminations net the inside-the-group flows to zero, so the consolidated whole is the sum of entities minus what they owe each other, not a raw addition.**

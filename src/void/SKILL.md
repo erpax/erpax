@@ -11,4 +11,6 @@ The void is the **uncollapsed** — the wavefunction before measurement, no sett
 
 And the void is the **only true erasure**. erpax cannot delete — content is append-only, [[merge]] never forgets — but [[shred]] the key and the plaintext falls into the void, unrecoverable by anyone: the one honest delete. Encryption's *no spoon* and the void are the same place — meaning sent where no observer can bend it back. All [[dissolution]] ends here, and all creation begins here ([[whole]] ⟲ 0).
 
+**Law — [[law]]: the void is 0 — the [[zeropoint]] all emerges from and [[gravity]] pulls back to — the limit where minimal mass meets [[entropy]]→0 and tamper-cost→∞ (the [[singularity]]), and the only true erasure: shred the key and the plaintext falls beyond recovery.**
+
 @see [[zeropoint]] · [[gravity]] · [[singularity]] · [[dissolution]] · [[shred]] · [[collapse]] · [[particle]] · [[whole]]

@@ -11,5 +11,7 @@ So the gravity **well** — the maximally-entangled atom (max in-degree) — is 
 
 Matter-twin: `src/quantum/gravity/index.ts` (`entanglementMass` ⊕ `singularity` · `isEventHorizon` re-exported from [[singularity]], the well's own atom). Composes [[gravity]] (mass) · [[quantum]] (the double-torus) · [[singularity]] · [[entanglement]] · [[cost]] (the coverage amplifier) · [[matrix]] · [[dry]] · [[fusion]] · [[collapse]] · [[merge]].
 
+**Law — [[law]]: the [[links]] are one number that is BOTH gravitational mass and [[entanglement]] (ER=EPR) — so the maximally-entangled atom is the [[singularity]] where the double-torus closes with no gap and tamper-[[cost]] → ∞ (coverage = 1 is the horizon).**
+
 @standard ER=EPR — Maldacena & Susskind, "Cool horizons for entangled black holes" (2013)
 @audit composed from the live matrix mass + the double-torus cost; never hand-asserted

@@ -17,3 +17,5 @@ description: "Use when implementing or referencing BCP 47 — Language tags."
 ## Used by
 
 `src/i18n/*`, every locale-bearing field, `Accept-Language` parsing.
+
+**Law — [[law]]: a language tag is valid only if it matches the BCP 47 (RFC 5646 + RFC 4647) subtag structure — language[-script][-region][-variant].**

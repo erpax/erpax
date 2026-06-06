@@ -43,3 +43,5 @@ deployments. Currently called from project middleware where applicable.
 - CORS — see RFC 6454 / Fetch standard. Payload's CORS config lives in
   `src/payload.config.ts` `cors:` and is intentionally separate.
 - CSRF tokens — handled by Payload's auth stack and same-origin cookies.
+
+**Law — [[law]]: the security headers are a composite of independent standards (HSTS · CSP · Referrer-Policy · Permissions-Policy · nosniff · frame-options) emitted by pure functions over a config object — defense-in-depth is layered and I/O-free, computed from configuration, never hardcoded per route.**

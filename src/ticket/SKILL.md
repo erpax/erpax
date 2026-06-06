@@ -9,6 +9,8 @@ Use when a customer/employee request, complaint, or issue becomes a tracked work
 
 Composes: [[comment]] · [[Activities]] · [[workflow/definitions/workflow/instances]] · [[Users]] · [[escalation]] · [[status]] · [[queue]] · [[resolution]].
 
+**Law — [[law]]: a ticket is the polymorphic support-case container — any request, complaint, or issue becomes one tracked work item carrying its [[queue]], priority, assignment, and SLA.**
+
 ## Standards
 - ITIL for incident/request model
 - ISO-20000 for service management

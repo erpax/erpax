@@ -33,3 +33,5 @@ The consignor (tenant) keeps the rows on its **own** balance sheet under IAS-2 �
 - ISO-19011:2018 audit-trail consignment-on-hand-evidence
 - SOX §404 internal-controls inventory-segregation TOM-INV-03
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
+
+**Law — [[law]]: the per-SKU running balance at a consignee location that stays on the consignor's own balance sheet — every shipment in, [[warehouse/locations/consignment/arrangements/consignment/sales|sale]] out, and return mutates quantityOnHand + valueOnHand ([[balance]]).**

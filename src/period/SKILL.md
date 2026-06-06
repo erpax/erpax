@@ -11,3 +11,5 @@ Composes: [[date]] · [[fields]] · [[versions]] · [[accounting]] · [[start]].
 
 ## Standards
 - ISO-8601-1:2019
+
+**Law — [[law]]: a period is a date-range from [[start]] to end (or a fiscal-period code) that fixes the time-based [[accounting]] cutoff — which period a value falls in — and drives [[versions]] over that span.**

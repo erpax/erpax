@@ -9,6 +9,8 @@ Use when recording a periodic quantitative observation — daily/weekly/monthly 
 
 Composes: [[kpi]] · [[measure]] · [[schedule]] · [[defect]].
 
+**Law — [[law]]: a metric is one quantitative observation pinned to a period — the dated data point a [[kpi]] aggregates, so performance is a [[measure]] taken on a [[schedule]], not a standing assertion.**
+
 ## Standards
 - ISO-8402 (quality metrics)
 - COBIT (IT governance metrics)

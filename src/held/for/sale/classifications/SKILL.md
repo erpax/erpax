@@ -19,6 +19,8 @@ sale_pending → sold → reclassified) is a [[horo]] ring whose disposal termin
 asset. Standards (IFRS 5, IFRS 13, ASC 205-20 / 360-10) and tenant-isolation posture are the
 [[standard]] banners in `index.ts`, fused below.
 
+**Law — [[law]]: classifying an asset held-for-sale (IFRS 5 §6, sale highly-probable within 12 months) triggers §15 remeasurement to the lower of carrying amount and FV−CTS, suspends depreciation, and posts a [[journal/entries]] [[entry]] that keeps the [[accounting]] [[balance]] across a [[horo]] disposal ring.**
+
 ## Standards
 - IFRS IFRS-5 §6-§9 classification-criteria
 - IFRS IFRS-5 §15 measurement-lower-of-cv-and-fv-less-cts

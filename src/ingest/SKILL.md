@@ -19,3 +19,5 @@ Matter-twin: `src/services/ingest/index.ts` (`AddressedRecord`·`IngestPlan`·`p
 - Tracking a per-source cursor/watermark to avoid re-processing — unnecessary; the content-uuid makes re-fetch a no-op, so a full re-pull is always safe and self-correcting.
 - Upserting on every fetch — only upsert the `plan.upsert` set (changed/new); unchanged records skip, sparing the write path.
 - Deduping only against the store, not the batch — `planIngest` dedups within the batch too, so one pull never double-writes the same uuid.
+
+**Law — [[law]]: ingest is idempotent because [[identity]] is content — a record upserts IFF its content-uuid is unseen, so re-fetching unchanged data is a no-op and re-runs are always safe ([[merge]]: same content ⇒ one).**

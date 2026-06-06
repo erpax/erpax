@@ -14,3 +14,5 @@ Propagation is the upstream stage of [[agriculture]]'s [[sequence]]: it buys ear
 - Coleman / Fortier — soil blocks, plug production; Johnny's Selected Seeds — seed-starting date calculators
 
 Composes [[agriculture]] · [[seed]] · [[transplant]] · [[planting]] · [[spacing]] · [[sequence]] · [[schedule]] · [[capacity]] · [[bottleneck]] · [[cost]].
+
+**Law — [[law]]: the greenhouse sow date is scheduled BACKWARD from the [[transplant]] date (transplant − weeks-in-flat), so the nursery delivers hardened-off starts exactly when their bed opens.**

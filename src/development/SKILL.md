@@ -12,3 +12,5 @@ The quantum facet (`src/quantum/development`) carries the concrete **quantum roa
 **HONEST.** This is a planning/ranking structure over named capabilities (the engineering sense of "development"), composed with the corpus self-build loop — not economic or human development.
 
 Matter-twin: `src/development/index.ts` (`Development` · `Roadmap` · `ranked` · `nextMove` · `atTier`). Composes [[roadmap]] · [[generate]] · [[society]] · [[sequence]] · [[breath]] · [[quantum]].
+
+**Law — [[law]]: development is a feasibility-ranked roadmap of named capabilities; `nextMove` always picks the highest-feasibility one, and the society advances exactly one gate-verified step at a time.**

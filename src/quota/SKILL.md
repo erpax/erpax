@@ -11,3 +11,5 @@ Composes: [[forecast]] · [[employees/sales/commissions]] · [[Employees]] · [[
 
 ## Standards
 - CRM-generic
+
+**Law — [[law]]: a quota is a period sales target for a rep, team, or territory, against which attainment % and variance-to-goal are measured — often the basis of compensation.**

@@ -19,6 +19,8 @@ Sequence position: **6** (round — the deliberation that returns a binding resu
 
 **The reverse (erpax surplus).** This atom IS the surplus a formal system lacks — the judgment it cannot generate for itself, supplied from OUTSIDE the formalism by the vote (`tally(ballots, electorate, rule) → Verdict`). A compute-org is a formalism; it has no analog. The R&D society flagged `governance` as erpax **surplus** over the DeepSeek twins. Ratified by the R&D society (`agent/research`, reverse seq 11).
 
+**Law — [[law]]: a formal system cannot generate its own finality, so the binding verdict comes from outside it by the vote; one-person-one-vote is the content-uuid law (a re-vote updates the same node) and quorum+threshold is its [[balance]] — an unstuffable count.**
+
 ## Standards
 
 - **ISO 37000:2021** — governance-of-organizations.

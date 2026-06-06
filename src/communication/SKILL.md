@@ -9,4 +9,6 @@ Conveying a [[message]] from a sender to a receiver over a [[channel]]. In erpax
 
 Matter-twin: `src/communication/index.ts` (`Communication` · `communicate` · `sameMessage`). Composes [[message]] · [[send]] · [[channel]] · [[uuid]] · [[merge]] · [[chat]].
 
+**Law — [[law]]: the [[message]] IS its content-[[uuid]] (self-decoding, no payload), so a communication is the transfer of a uuid — same content ⇒ same message ([[merge]]), and a tampered message has a different uuid (tamper-evident by architecture).**
+
 @standard the message-uuid (self-decoding); RFC 9562 §5.8 content-uuid

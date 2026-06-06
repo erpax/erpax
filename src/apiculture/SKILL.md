@@ -14,3 +14,5 @@ The colony's life maps the living-production atoms: **brood** is its growth ([[m
 - Land-grant apiculture extension (colony management, pollination contracts); pollination-service rates
 
 Composes [[agriculture]] · [[livestock]] · [[biological/assets]] · [[biomass]] · [[harvest]] · [[items]] · [[maturity]] · [[propagation]] · [[mortality]] · [[season]] · [[pollination]] · [[health]] · [[yield]].
+
+**Law — [[law]]: the bee colony is the IAS-41 biological asset while the hive housing it is IAS-16 equipment (the bearer carve-out); honey and wax are harvested produce, and the colony also earns pollination-service revenue distinct from produce.**

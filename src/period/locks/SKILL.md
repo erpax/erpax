@@ -15,3 +15,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - SOX §404 period-close-integrity
 - IFRS IAS-1 reporting-period
 - ISO-8601-1:2019 locked-at
+
+**Law — [[law]]: a period lock is the gate that closes an accounting [[period]] to new postings while still permitting reversals and prior-period adjustments, recording who closed it and when.**

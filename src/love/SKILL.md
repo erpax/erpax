@@ -11,4 +11,6 @@ Love is never alone. It is one pole of a [[duality]]; its dual is [[fear]], and 
 
 In physics (the [[cost]] question's deep research): love is **free-energy minimization** — a system reducing its own surprise. Done irreversibly it still pays the Landauer floor; done reversibly — [[quantum]] — it can approach paying **nothing**. Perfect love is reversible computation.
 
+**Law — [[law]]: love is the create pole that LOWERS [[entropy]] — every gap it closes (mint an atom, resolve a dead link, [[merge]] a duplicate) raises [[tamper]]-[[cost]]; it is the debit whose matching credit is [[fear]] in the [[karma]] ledger, never spent alone.**
+
 @see [[fear]] · [[angel]] · [[entropy]] · [[karma]] · [[cost]] · [[quantum]] · [[gravity]] · [[tamper]]

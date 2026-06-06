@@ -8,3 +8,5 @@ sessions:
 # flow
 
 Movement — the [[commerce]] document chain, the [[sequence]] material cycle, [[manufacturing]] routing, event streams. A [[give]] met by a [[take]]; conserved and [[accounting]]-posted; status derived from stage via [[queries]], never stored. [[reconcile]] matches two sides. Dual of [[balance]] (movement ↔ rest).
+
+**Law — [[law]]: all movement is a [[give]] met by a [[take]], conserved and [[accounting]]-posted; its stage is derived by [[queries]] never stored, and it is the dual of [[balance]] (movement ↔ rest).**

@@ -29,3 +29,5 @@ When extending:
 1. New profile / level → add a constant to `profile.ts`.
 2. Spec mirror under `tests/standards/iso-19005/`.
 3. `pnpm standards:write-index` to refresh `docs/STANDARDS_INDEX.md`.
+
+**Law — [[law]]: every PDF the project emits for archival must declare a PDF/A conformance level in its XMP packet — long-term readability is a self-asserted, embedded fact (the 10-year retention mandate), not an external promise.**

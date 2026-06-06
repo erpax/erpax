@@ -23,3 +23,5 @@ Captures [[accounting]] goodwill computation (§32: consideration transferred + 
 - ISO 27001 A.5.23 cloud-service-tenant-isolation
 
 Composes: [[evidence/attestations]].
+
+**Law — [[law]]: goodwill is the residual, not an input — IFRS 3 §32 computes it as consideration + NCI + previously-held interest − fair value of identifiable net assets, so an acquisition's PPA must allocate to every asset/liability first and goodwill is whatever is left ([[accounting]] double-entry).**

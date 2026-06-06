@@ -13,4 +13,6 @@ Its constraint is [[capacity]] — the **carrying capacity** (sustainable **stoc
 - USDA-NRCS (carrying capacity & stocking-rate determination); UNL / extension (AUM)
 - Savory Institute / AMP grazing science (adaptive multi-paddock); FAO grazing systems
 
+**Law — [[law]]: livestock consuming standing forage in place, bounded by carrying [[capacity]] (the stocking rate in AUM); its paddock move is the SAME [[rotation]] atom as crop rotation, and it closes to [[fertility]] via deposited manure.**
+
 Composes [[livestock]] · [[pasture]] · [[herd]] · [[rotation]] · [[capacity]] · [[measure]] · [[throughput]] · [[fodder]] · [[manure]] · [[fertility]] · [[soil]] · [[flow]] · [[leases]].

@@ -14,3 +14,5 @@ Its efficiency is the **feed-conversion ratio** (feed mass ÷ live-weight or mil
 - IFRS IAS-2 / IAS-41 (feed inventory; standing forage as biological asset)
 
 Composes [[livestock]] · [[animal]] · [[grazing]] · [[herd]] · [[harvest]] · [[postharvest]] · [[conversion]] · [[rate]] · [[throughput]] · [[cost]] · [[manufacturing]].
+
+**Law — [[law]]: fodder is feed brought to the [[livestock]] (the harvested twin of [[grazing|grazed forage]]) — the dominant [[cost]] of confined animals, its efficiency the feed-conversion ratio (a [[conversion]] [[rate]]); what is not grazed must be fed.**

@@ -9,4 +9,6 @@ The collector for [[translations]] (the [[translation]] model · the [[message]]
 
 Flatten · DRY · keep the gravity — the compute lives here, the per-folder files are its shadows.
 
+**Law — [[law]]: the collector walks every SKILL.md and ports its translatable strings into the one content-addressed [[catalogue]] — computed, idempotent, --verify-gated; the per-folder files are its shadows ([[merge]]).**
+
 @audit ported from the live tree, never hand-maintained

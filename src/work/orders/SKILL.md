@@ -52,6 +52,8 @@ A work order sits where three axes meet: the **lot-phase/variant** axis (content
 
 The **shift axis is the efficiency authority**: a work order does **not** compute its own efficiency. It rolls UP into the shift (its produced minutes) and reads the efficiency back DOWN — `inheritShiftEfficiency` (beforeChange) denormalises `efficiencyPercent` from the related [[work/shifts|work-shift]] (the per-actor-day authority, `⌊minutesProduced·100 / presenceMinutes⌋`) on save. The shift is the authority, the order the contributor; `efficiencyPercent` is read-only on the order, never hand-set.
 
+**Law — [[law]]: the work-order is the per-(phase × variant)-per-worker-per-shift execution leaf where header totals are DERIVED from the `options` array (`unitsOrdered = Σ option ordered`, EXACTLY 100% over 2.05M etrima rows — the books balance the entries by construction), the [[horo]] lifecycle is derived from progress + seals never stored, completed units forward to the next phase ([[accounting]] account→account), and you are paid for what you produce (`wage = produced × unitSeconds × payPerHour / 3600 / mpw`).**
+
 ## Standards
 
 Booking production on this leaf IS placing it under the canonical manufacturing-execution stack (see [[standard]]).

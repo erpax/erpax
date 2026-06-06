@@ -14,3 +14,5 @@ Terroir is made legal as an **appellation of origin** — AVA (US/TTB), AOC, DOC
 - EU Reg 1151/2012 (PDO/PGI); INAO (AOC)
 
 Composes [[perennial]] · [[soil]] · [[degreeday]] · [[frost]] · [[dormancy]] · [[certification]] · [[territory]] · [[lineage]] · [[impairment]] · [[crop]].
+
+**Law — [[law]]: terroir is place-as-value — identity and price flow from where, not just what — made legal as an appellation ([[certification]] bound to a delimited [[territory]]) that gates label use and a land-value the [[impairment]] test must respect.**

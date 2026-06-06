@@ -13,4 +13,6 @@ Family is the load-bearing rung of crop [[taxonomy]] (family → genus → speci
 - *Knott's Handbook for Vegetable Growers* (the canonical family grouping); Missouri Botanical Garden
 - Iowa State / OSU Extension — crop rotation by plant family; ICN botanical nomenclature
 
+**Law — [[law]]: family (not species) is the practical unit of crop [[rotation]] because members share pests, diseases, and nutrient demands — same family ⇒ must not follow itself in a bed; pest/[[fertility]] traits inherit down the [[taxonomy]] rank.**
+
 Composes [[agriculture]] · [[crop]] · [[taxonomy]] · [[rotation]] · [[fertility]] · [[variant]] · [[fractal]].

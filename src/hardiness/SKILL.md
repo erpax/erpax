@@ -13,4 +13,6 @@ Hardiness is the biological complement to the [[frost]] bound and the built [[tu
 - USDA Plant Hardiness Zone Map (2023 — the 13-zone minimum-temperature bands)
 - Penn State / extension — hardy / half-hardy / tender vegetable classification; RHS hardiness ratings
 
+**Law — [[law]]: hardiness is cold tolerance with two faces — the [[crop]] trait (hardy/half-hardy/tender/very-tender) and the site's USDA zone — and together they decide what overwinters and what may be planted when.**
+
 Composes [[agriculture]] · [[crop]] · [[frost]] · [[season]] · [[tunnel]] · [[harvest]] · [[planting]] · [[taxonomy]].

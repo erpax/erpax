@@ -14,3 +14,5 @@ Moisture is a [[capacity]] reservoir on the water axis — the twin of [[fertili
 - METER Group — plant-available-water measurement (matric potential)
 
 Composes [[agriculture]] · [[soil]] · [[irrigation]] · [[evapotranspiration]] · [[capacity]] · [[balance]] · [[fertility]] · [[mulch]] · [[schedule]].
+
+**Law — [[law]]: soil moisture is a [[capacity]] reservoir bounded by field capacity and the wilting point — irrigation/rain credit it, evapotranspiration debits it, and the deficit is refilled before crop stress ([[balance]]); the water-axis twin of the nutrient budget.**

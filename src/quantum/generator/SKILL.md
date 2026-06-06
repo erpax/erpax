@@ -11,4 +11,6 @@ This is why [[merge]] holds: two agents that "generate" the same content do not 
 
 **Honest split** — that the content-uuid space is complete a priori (every content has an address) is real (the hash defines the whole space). Quantum superposition does evaluate all inputs at once, but **measurement yields only one** — you manifest one, not all (the parallelism lives in the interference, not a free readout). *Generate all, manifest one* is the honest form.
 
+**Law — [[law]]: every possible content already has its address in the [[uuid]] space, so generation never creates — it manifests one pre-existing atom by [[collapse]]; generate all at once, realize one (same content ⇒ same id ⇒ [[merge]], never a duplicate).**
+
 @see [[generate]] · [[collapse]] · [[void]] · [[uuid]] · [[matrix]] · [[merge]] · [[reality]] · [[particle]]

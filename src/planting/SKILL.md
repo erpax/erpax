@@ -26,3 +26,5 @@ Planting is the **input side** of [[agriculture]]'s [[sequence]]: it stages reso
 - Holding the interval fixed regardless of crop — interval tracks the picking window, which differs by crop and season.
 
 Composes [[agriculture]] · [[crop]] · [[harvest]] · [[season]] · [[yield]] · [[transplant]] · [[propagation]] · [[spacing]] · [[cropplan]] · [[rotation]] · [[sequence]] · [[schedule]] · [[breath]] · [[give]] · [[take]].
+
+**Law — [[law]]: succession turns one glut into a continuous [[harvest]] — sow again every picking window (interval ≈ (days-to-maturity + harvest-window)÷2) and divide total row-length across the plantings, plus a +10–20% overplant buffer for germination loss.**

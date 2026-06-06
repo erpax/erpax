@@ -11,3 +11,5 @@ Composes: [[identity]] · [[versions]] · [[fields]].
 
 ## Standards
 - ISO-8601-1:2019
+
+**Law — [[law]]: a date is an ISO-8601 datetime pinned at one point in time (UTC timestamp + timezone context via [[versions]]) — the temporal-positioning twin of [[period]].**

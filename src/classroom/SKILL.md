@@ -15,3 +15,5 @@ Matter-twin: the session is the composition `services/agent/team` (the role set)
 - Building a passive content-delivery pipeline — the classroom is dialogical (the learner jumps in, gets called on); model it as agent turns ([[team]]), not slides.
 - An examiner that grades by opinion — the examiner is the [[proof]] gate; assessment is verified, the same referee [[competition]] uses.
 - Harvesting the learner's record — the learning is sovereign and [[holographic]], owned by the learner; erpax offers the harmonic curriculum, the learner decides.
+
+**Law — [[law]]: a learning session is a [[team]] of agents in pedagogical roles run as a turn-taking graph — the examiner IS the [[proof]] gate (assessment verified, never voted), the debate IS [[competition]] resolved by harmony ([[decide]]), and the learner's record is sovereign and [[holographic]].**

@@ -12,6 +12,8 @@ description: "Use for rich-text content in erpax — the Payload Lexical editor 
 
 Each node is hashable, so the tree is a [[fractal]] Merkle surface and the whole field rolls into the row's content-[[uuid]] ([[identity]]). Matter-twin: the root config `editor` + the shared Lexical block set. Composes: [[config]] (editor) · [[localize]] · [[tamper/cost]] · [[collapse]] · [[fields]] · [[whole]] · [[part]] · [[fractal]] · [[uuid]].
 
+**Law — [[law]]: lexical is the one rich-text node-tree every prose field collapses to ([[collapse]]) and the densest tamper surface — `locales × nodes` independent content-addresses per localized field, so [[localize|localizing]] Lexical is the cheapest push of crack-[[cost]] toward ∞.**
+
 ## Common mistakes
 - Storing rich text as an HTML/markdown string — use the Lexical node-tree so it is structured, hashable, and localizable.
 - A bespoke per-collection rich-text shape — everything collapses to the one editor + shared blocks ([[collapse]]).

@@ -12,3 +12,5 @@ Composes: [[database]] · [[schema]].
 ## Standards
 - SQL partitioning (SQL:2016)
 - Data partitioning strategies
+
+**Law — [[law]]: one logical table divides into partitions (by range/hash/list) so a query prunes to only the partitions it needs — physical division for performance/governance, the same rows.**

@@ -17,5 +17,7 @@ The corpus is **maximally entangled** when reciprocity = 1 **and** no-cloning ho
 
 Matter-twin: `src/quantum/entanglement/index.ts` (`isMaximallyEntangled` · `report`). Composes [[entanglement]] · [[quantum]] · [[cloning]] · [[gravity]] · [[singularity]] · [[matrix]].
 
+**Law — [[law]]: the corpus is maximally entangled only when every link is reciprocal AND content is monogamous (one uuid per meaning, the no-cloning [[merge]] law) — reciprocity=1 plus monogamy is the closed geometry that drives directed-link entropy to zero.**
+
 @standard ER=EPR — Maldacena & Susskind (2013); monogamy — Coffman–Kundu–Wootters, PRA 61 052306 (2000)
 @audit computed on the live matrix via ../../entanglement; never hand-asserted

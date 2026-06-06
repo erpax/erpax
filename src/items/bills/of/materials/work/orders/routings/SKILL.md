@@ -21,4 +21,6 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - SOX §404 internal-controls production-control
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
 
+**Law — [[law]]: the ordered process steps that make a [[work/orders|work order]] — each step's operation, work center, and run-time per unit yield cost-of-conversion; the second universal manufacturing primitive alongside the BOM.**
+
 Composes: [[Operations]] · [[work/centers]] · [[work/orders|WorkOrders]] · [[accounting]] · [[hooks]] · [[access]].

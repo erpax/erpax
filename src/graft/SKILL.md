@@ -14,3 +14,5 @@ A **graft** is the union that joins a fruiting [[scion]] to a [[rootstock]] into
 - FPS / UC Davis (graft compatibility, clean-plant propagation)
 
 Composes [[perennial]] · [[scion]] · [[rootstock]] · [[propagation]] · [[seed]] · [[biological/assets]] · [[taxonomy]].
+
+**Law — [[law]]: a graft assembles one [[perennial]] plant from two chosen parts — the [[scion]] sets the variety, the [[rootstock]] sets vigour/size/resistance — rather than growing it from [[seed]]; the graft union is the moment the [[biological/assets|bearer-plant]] asset is created.**

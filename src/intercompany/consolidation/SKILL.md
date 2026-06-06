@@ -788,3 +788,5 @@ Phase B4 completes multi-entity closing. Phase B5 will add:
 **Author:** Claude (Agent)  
 **Date:** 2026-05-12  
 **Status:** Production Ready (pending local TypeScript verification)
+
+**Law — [[law]]: consolidation is NEVER automatic — readiness requires every entity closed AND every intercompany balance reconciled per pair·per currency; elimination entries are prepared but not posted (evidence → human approval → GL), and each readiness assessment chains tamper-evidently to the prior.**

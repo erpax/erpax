@@ -21,6 +21,8 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 
 Composes: [[accounting]] · [[standard]] · [[identity]] · [[proof]].
 
+**Law — [[law]]: standards are not folders — they are dissolved across `src/` as `@standard` / `@rfc` banners (the usage truth) and MEET here in one computed scan (curated registry ⊕ live banners → `catalogue.ts`) that BOTH seeds the payload `standards` collection AND renders the index; one scan, two indices, the banners the single source of truth.**
+
 <!-- CATALOGUE:START -->
 
 ## Catalogue — 142 standards, 5918 citations

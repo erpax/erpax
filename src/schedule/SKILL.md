@@ -12,3 +12,5 @@ Composes: [[bookable/resources]] · [[Bookings]] · [[work/shifts|WorkShifts]] �
 ## Standards
 - iCalendar (RFC 5545)
 - BPMN timing
+
+**Law — [[law]]: a schedule is the commitment of work to a time-coordinate — a resource, shift, project task or appointment bound to a calendar slot on the [[horo]] time ring.**

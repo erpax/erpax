@@ -25,3 +25,5 @@ Each row is one durable FX conversion / revaluation event (`transactionKind`: sp
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
 
 Composes: [[accounting]] · [[transaction]] · [[currency/rates]] · [[journal/entries]] · [[horo]] (status) · [[standard]] · [[proof]] (audit-trail).
+
+**Law — [[law]]: each FX transaction is one durable conversion or revaluation event whose `exchangeRate` is sourced from the [[currency/rates]] master (never invented) — it is the IAS-21 audit evidence for the FX gain/loss line, distinct from the rate table it reads.**

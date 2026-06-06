@@ -23,3 +23,5 @@ Two societies that serialise the same genome compute the same bundle uuid and ho
 - **NIST FIPS 204 ML-DSA** — post-quantum signature over the publication when a signer is provided.
 
 Sequence position: **2** (share — the genome handed to a daughter), on the ring 0·3·6·9·1·2·4·8·7·5 (see [[sequence]]).
+
+**Law — [[law]]: erpax serialises its own structural genome so a daughter boots bit-identical from the bundle alone — the clone is valid iff its recomputed content-[[uuid]] equals the publication's ([[merge]] same / [[proof]] tampered), reproduction without a central master.**

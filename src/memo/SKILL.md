@@ -7,4 +7,6 @@ description: "Use when modelling one memo — the singular model of the memos co
 
 A brief internal written note. The singular model whose plural store is the [[memos]] collection ([[balance]]: every collection has its model).
 
+**Law — [[law]]: a memo is the singular model of one row whose plural store is the [[memos]] collection — every collection has its model ([[balance]]).**
+
 Composes [[memos]] · [[message]] · [[balance]].

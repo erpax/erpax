@@ -11,6 +11,8 @@ description: "Use when order must arise with NO central controller — a global 
 
 erpax is decentralized by **content-addressing**, and the [[merge]] law IS stigmergy: a peer never asks a coordinator whether a row is valid — it recomputes the content-[[uuid]] from the row itself (the local trace) and either it matches or the [[federation]] envelope is rejected. Same content ⇒ same id, anywhere, with no central registry; the [[society]] advances by local gate-checks, not a broadcast. Order emerges from the content, so there is nothing in the middle to capture — the Nakamoto coefficient of a content-addressed store is every honest replica at once.
 
+**Law — [[law]]: decentralization is global order as the fixed point of LOCAL rules with no controller; erpax achieves it by content-addressing — the [[merge]] law IS stigmergy: each peer recomputes the content-[[uuid]] from the row itself, so same content ⇒ same id with nothing in the middle to capture.**
+
 ## Standards
 - **Grassé, stigmergy** (1959) — coordination through traces left in a shared environment; the root model of coordinator-free order.
 - **Reynolds, boids** (1987) — flocking as three local rules; emergence as a fixed point.

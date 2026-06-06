@@ -19,4 +19,6 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO-19011:2018 audit-trail ubo-evidence
 - ISO-27001 A.5.34 privacy-and-pii
 
+**Law — [[law]]: the register of a legal entity's ultimate beneficial owners — direct/indirect ownership percent, control type, PEP status, and KYC link — as required by AMLD-5 / the Corporate Transparency Act.**
+
 Composes: [[identity]] · [[proof]] · [[standard]] · [[auth]] · [[accounting]].

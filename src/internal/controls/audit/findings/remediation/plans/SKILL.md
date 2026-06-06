@@ -16,3 +16,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - SOX §404 control-remediation
 - ISO-27001 A.10 improvement
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
+
+**Law — [[law]]: a remediation plan is the corrective response to an audit finding or compliance gap — action steps each bearing owner, target date, priority and approval chain — that drives the deficiency back to a controlled state.**

@@ -17,6 +17,8 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 
 Composes [[workflow/definitions]] · [[audit/events]] · [[users]] · [[hooks]] · [[access]] · [[fields]] · [[approved]].
 
+**Law — [[law]]: one instance per (definition × document) walks the steps, appending every decision to `stepHistory` and emitting an audit event per transition — the live run is its own tamper-evident evidence trail.**
+
 ## Standards
 - ISO/IEC 19510:2013 BPMN-2.0
 - ISO-8601-1:2019 date-time

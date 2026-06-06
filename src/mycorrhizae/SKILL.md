@@ -14,3 +14,5 @@ They are a [[fertility]] mechanism the chemical N-P-K budget misses: a thriving 
 - USDA-NRCS — soil biology, glomalin and aggregate stability
 
 Composes [[agriculture]] · [[soil]] · [[fertility]] · [[moisture]] · [[tillage]] · [[covercrop]] · [[merge]] · [[give]] · [[take]] · [[mycelium]] · [[symbiosis]].
+
+**Law — [[law]]: mycorrhizae are the living two-way [[merge]] at the root zone — fungi trade phosphorus and water for plant carbon, a [[fertility]] mechanism the N-P-K budget misses, suppressed by [[tillage]].**

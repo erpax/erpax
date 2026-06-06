@@ -11,3 +11,5 @@ Composes: [[Customers]] · [[segment]] · [[campaign]] · [[churn]] · [[Activit
 
 ## Standards
 - CRM-generic
+
+**Law — [[law]]: retention is the discipline of keeping an existing customer — measured by at-risk indicators and acted on before churn, it is cheaper than acquisition and is the inverse of the [[churn]] it works to prevent.**

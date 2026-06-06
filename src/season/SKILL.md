@@ -27,3 +27,5 @@ As a cyclical ring keyed to the year, the season is a [[horo]]-style band over t
 - Forgetting season extension — row cover/tunnel adds weeks the bare frost-free period understates.
 
 Composes [[agriculture]] · [[crop]] · [[harvest]] · [[planting]] · [[frost]] · [[degreeday]] · [[tunnel]] · [[hardiness]] · [[bottleneck]] · [[capacity]] · [[period]] · [[time]] · [[horo]] · [[schedule]].
+
+**Law — [[law]]: the season is the time-axis [[bottleneck]] of [[agriculture]] (land × season caps how much can be grown), set by the probabilistic frost-free window and heat accumulation — regional and never a copied calendar.**

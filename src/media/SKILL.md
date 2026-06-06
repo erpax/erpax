@@ -31,3 +31,5 @@ One folder per object ⇒ no scatter ⇒ no drift.
 - ISO-27001 A.5.23 cloud-service-isolation tenant-scope
 
 Composes: [[access]] · [[hooks]] · [[lexical]].
+
+**Law — [[law]]: one media object lives as coexisting facets in a single folder — the Payload upload collection, its React render facet (picking image/video by MIME) and its sub-renderers — with tenant-scoped uploads to R2 and computed multi-size variants; one folder per object ⇒ no scatter ⇒ no drift.**

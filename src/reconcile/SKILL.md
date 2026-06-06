@@ -14,3 +14,5 @@ Composes: [[accounting]] (the ledger sides), [[hooks]]/[[jobs]] (match run), [[q
 ## Common mistakes
 - Storing a `reconciled` boolean instead of deriving it from the match link.
 - Matching across different currencies without converting ([[currency]] exchangeRate).
+
+**Law — [[law]]: a reconciliation is a link between two records of the same value-flow (bank line ↔ payment, GL ↔ subledger, intercompany debit ↔ credit); `reconciled?` is DERIVED from whether the link exists and amounts agree — never a stored boolean.**

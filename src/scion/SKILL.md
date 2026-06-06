@@ -9,6 +9,8 @@ A **scion** is the aerial, fruiting half of a grafted [[perennial]] plant — th
 
 Scion ⊕ [[rootstock]] is the perennial's two-part genetics — variety on top, root system below — the clonal ([[propagation]]) alternative to seeding. Field top-working re-grafts a new scion to change variety without replanting the root system.
 
+**Law — [[law]]: scion is the aerial fruiting cultivar [[graft|grafted]] onto a [[rootstock]] — it carries the produce identity (the variety, a [[taxonomy]] rank and species [[variant]]), and scion ⊕ rootstock is the [[perennial]]'s two-part clonal genetics.**
+
 ## Standards
 - ICNCP (cultivar nomenclature); FPS / UC Davis (registered scion/budwood, clean plant)
 - Extension pomology/viticulture (grafting, top-working)

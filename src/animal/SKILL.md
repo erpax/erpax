@@ -9,6 +9,8 @@ An **animal** is one identified living beast — the member of a [[herd]] and th
 
 The animal is where the husbandry atoms attach: its [[health]] record (vaccination, the [[withdrawal]] embargo), its [[breed]], its [[lactation]] or finishing, and at [[harvest]] its produce (milk/wool/eggs) or carcass. Death is a [[mortality]] event that de-recognizes the asset. Held-for-sale vs breeding is a [[biological/assets]] classification (both stay IAS-41).
 
+**Law — [[law]]: the individual identified beast is the node — one animal carrying its class/sex/purpose/lifecycle stage, keyed by its ear-tag/RFID [[identity]] — and it is the row a [[biological/assets]] asset is measured on and to which every husbandry atom attaches.**
+
 ## Standards
 - USDA APHIS ADT (official animal ID, premises ID, traceability); IFRS IAS-41
 - USDA AMS (animal classes); WOAH (animal health/welfare)

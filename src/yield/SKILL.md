@@ -30,3 +30,5 @@ Yield generalizes beyond the field — output per unit of any bound resource is 
 - Planning on gross field yield, not **marketable** yield — culls and grade-outs can be ~50 %; under-plants the demand.
 
 Composes [[agriculture]] · [[crop]] · [[measure]] · [[rate]] · [[conversion]] · [[spacing]] · [[grade]] · [[soil]] · [[capacity]] · [[throughput]] · [[bottleneck]] · [[revenue]] · [[harvest]] · [[fertility]].
+
+**Law — [[law]]: yield is output per unit of a bound resource, a bidirectional [[rate]] (area × yield = output; output ÷ yield = area) — so its inverse, through unit weight, turns a demand plan into a planting plan.**

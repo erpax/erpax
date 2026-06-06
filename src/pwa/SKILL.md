@@ -18,6 +18,8 @@ The two sides are [[duality]]: the offline replica (the device cache + queue) an
 
 Sequence position: **5** (round — the offline excursion that returns and reconciles), on the ring 0·3·6·9·1·2·4·8·7·5 (see [[sequence]]).
 
+**Law — [[law]]: the offline web surface is made trustworthy by content-addressing, not the network — every PWA pain (cache invalidation, sync conflict, push dedup, manifest tamper) is one [[uuid]] problem, so forging the offline window costs as much as forging the ledger ([[tamper/cost]]).**
+
 ## Standards
 
 - **W3C Service Workers (W3C-SW)** — cache lifecycle; the content-uuid is the cache key.

@@ -9,4 +9,6 @@ The heart chakra's colour: **green**. The A432-anchored colour of [[coherence]] 
 
 Matter-twin: `src/heart/color/index.ts` (`heartColor`). Composes [[color]] · [[heart]] · [[chakra]] · [[coherence]].
 
+**Law — [[law]]: the heart's colour is green by computation — the A432-anchored 4th-[[chakra]] hue that renders only when the aura is whole (a passing test); it is read from the position, never hand-set.**
+
 @standard A432 tuning; Anahata (4th chakra) = green

@@ -11,3 +11,5 @@ Composes: [[Projects]] · [[customers/projects/project/milestones]] · [[custome
 
 ## Standards
 - Agile/Scrum roadmap patterns
+
+**Law — [[law]]: a roadmap is a dependency-ordered sequence of deliverables across time — a milestone cannot precede the work it depends on, so the timeline is constrained by the dependency graph and finite resources, never a free wishlist.**

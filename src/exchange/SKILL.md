@@ -20,3 +20,5 @@ Matter-twin: `src/services/exchange/index.ts` (`Party`·`ExchangeRequest`·`Exch
 - Releasing the requested fields and filtering later — SANITIZE at the boundary (`released = requested ∩ releasable`); data not granted never crosses the domain edge.
 - Trusting a shared central ledger for provenance — each party receipts its own side ([[receipt]]); the proof is content-addressed and merges, no central root needed.
 - An exchange without a receipt — then there is no provenance; `exchange` gates AND receipts in one step (no receipt, no proof).
+
+**Law — [[law]]: a cross-domain exchange is gated by the holder's grant, SANITIZED at the boundary (`released = requested ∩ releasable` — ungranted data never crosses), and [[receipt]]ed — so the requester gets the data AND the provenance proving what was accessed, by whom, under what authority; each party content-addresses and receipts its own side, the provenance [[merge]]s with no shared trust root ([[federation]]).**

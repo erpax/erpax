@@ -11,6 +11,8 @@ sessions:
 
 Nested leaves (the fractal set, each a one-word path carrying its formula + standard): [[depreciate]], [[amortize]], [[ebitda]], … (break-even, EOQ, present-value, ratios, standard-costing variances derive the same way).
 
+**Law — [[law]]: a calculator is a pure form-object (validate → standards-cited formula → format) with no persistence and no collection; the DB math ports verbatim from Rails ([[port]]), persist only its result in [[accounting]], and every output is cited to the standard it implements.**
+
 ## Common mistakes
 - Making a calculator a collection — it's a pure function (no state); persist only its *result* in [[accounting]].
 - Re-deriving a formula instead of porting the Rails one verbatim (matter copies).

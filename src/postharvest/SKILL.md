@@ -15,3 +15,5 @@ The conserved gap between gross and marketable [[yield]] — **shrink** (transpi
 - *Knott's Handbook for Vegetable Growers* — postharvest & storage conditions
 
 Composes [[agriculture]] · [[harvest]] · [[grade]] · [[packs]] · [[yield]] · [[biological/assets]] · [[items]] · [[commerce]] · [[measure]].
+
+**Law — [[law]]: postharvest cannot improve quality, only slow its loss — the cooling→washing→curing→grading→packing→storage chain bridges field asset to sellable [[items]], and shrink (the gross-to-marketable [[yield]] gap) is the conserved loss to minimize.**

@@ -9,6 +9,8 @@ description: "Use when designing a whole farm as a self-sustaining ecosystem —
 
 It is the design twin of erpax's own laws — closed-loop ([[breath]]: no [[balance|waste]], outputs = inputs), [[whole]]-system, [[fractal]] (zones nest) — and the broader frame **agroecology** (FAO) generalizes to. The produce of a permaculture system often carries [[organic]] / regenerative [[certification]].
 
+**Law — [[law]]: design the farm as a closed-loop [[whole]] where the system's outputs feed its own inputs (no waste, [[balance]]d) — the agronomic twin of the [[breath]].**
+
 ## Standards
 - Mollison & Holmgren — *Permaculture One* (1978); Holmgren — *Permaculture: Principles & Pathways Beyond Sustainability* (the 12 principles, 3 ethics)
 - FAO — agroecology (the 10 elements); Savory Institute — holistic management / EOV (Land to Market)

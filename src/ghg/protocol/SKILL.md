@@ -26,3 +26,5 @@ The 4 + 3 + 15 = 22 sub-categories that make up Scope 1 + Scope 2 + Scope 3, plu
 - IPCC AR6 (GWP factors)
 - EU ESRS E1 §44-50 (CSRD disclosure mapping)
 - IFRS S2 (climate-related disclosures)
+
+**Law — [[law]]: the GHG Protocol fixes the 4 + 3 + 15 = 22 sub-categories of Scope 1 + 2 + 3 plus the activity-vs-spend methodology hierarchy and GWP horizon — the canonical answer-path for per-source carbon posting and the ESRS E1 disclosure roll-up.**

@@ -8,3 +8,5 @@ description: "Use when modelling one calendar — the singular model of the cale
 A scheme of dates against which events and schedules are placed. The singular model whose plural store is the [[calendars]] collection ([[balance]]: every collection has its model).
 
 Composes [[calendars]] · [[event]] · [[balance]].
+
+**Law — [[law]]: calendar is the singular model of one scheme of dates against which events and schedules are placed; the plural store is its collection ([[balance]]: every collection has its model).**

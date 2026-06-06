@@ -52,3 +52,5 @@ Now the canonical fields live here; project events / collections / DTOs referenc
 - UN/CEFACT TR 5305 — Tax category codes.
 - UN/CEFACT TR 1001 — Document name codes.
 - UN/CEFACT TR 4461 — Payment means code.
+
+**Law — [[law]]: EN 16931 is the EU's semantic data model of the core e-invoice (BG/BT codes) — the single canonical types home that every `@standard EN-16931` citation greps to, so the invoice shape is defined once and referenced, never re-defined.**

@@ -19,3 +19,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - SOX §404 access-controls audit-evidenced-via-chain
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
 - Conservation Law 59 uuid-based-sharing-with-rbac
+
+**Law — [[law]]: each row is a `(granteeUuid, accessRole, targetUuid)` grant per tenant that `checkShare` reads as the read-time access source of truth; every grant/revoke is chain-attested and revocation is a soft flag, never a delete.**

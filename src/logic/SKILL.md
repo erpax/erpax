@@ -21,3 +21,5 @@ Matter-twin: `src/services/logic/index.ts` (`Claim`·`harmonicFirst`·`consisten
 - Treating correctness as opinion/vote — it is harmony, verified ([[proof]]); a claim is sound iff harmonic, not iff agreed.
 - Ordering work by recency or authority instead of harmony — `harmonicFirst`: the self-consistent resolve first because they need no coordination ([[self]]); that ordering IS the competitive advantage.
 - Giving an agent private education — education is the ONE shared corpus ([[holographic]]); a privileged or forked education breaks [[merge]] and the harmonic-first guarantee.
+
+**Law — [[law]]: consistency IS harmony — a claim is sound iff harmonic (on the [[horo]] ring, gate-verified, no P ∧ ¬P), not iff agreed; and the harmonic-first law orders the self-consistent FIRST, which is why they resolve without coordination and win [[competition]].**

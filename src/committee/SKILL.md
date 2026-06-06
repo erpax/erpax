@@ -8,3 +8,5 @@ description: "Use when modelling one committee — the singular model of the com
 A constituted group with delegated authority over a domain. The singular model whose plural store is the [[committees]] collection ([[balance]]: every collection has its model).
 
 Composes [[committees]] · [[governance]] · [[balance]].
+
+**Law — [[law]]: one committee is the singular model of exactly one committees row — a constituted group with delegated authority over a domain; every collection has its model ([[balance]]).**

@@ -12,4 +12,7 @@ This atom is a **standalone projection** of [[chakra]]: it never recomputes the 
 **HONEST.** The traditional role of the third eye — insight, perception, intuition, vision, "seeing the pattern" — is cultural convention, not a claim made here. The only thing asserted is position → note → uuid → colour, all computed. Grounded honestly in [[law]]: zero entropy via uuid-wiring the position into every dimension; nothing is hand-asserted, so there is no gap to tamper with.
 
 Matter-twin: `src/brow/index.ts` (`INDEX` · `center` · `color` · `uuid`). Composes [[chakra]] · [[horo]].
+
+**Law — [[law]]: the brow is [[horo]] index 5 read straight from the computed seven [[chakra]] centers; position → note → [[uuid]] → colour, all computed in that one direction — nothing hand-asserted, so no gap to tamper with.**
+
 @audit note·colour·uuid computed from the position math, never hand-asserted

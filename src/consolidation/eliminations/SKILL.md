@@ -22,4 +22,6 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - SOX §404 internal-controls consolidation-control TOM-CON-01
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
 
+**Law — [[law]]: the group-level elimination [[journal/entries|journal entries]] posted at consolidation close — intercompany balances, IC revenue/expense, unrealised intra-group profit, and FC translation — distinct from per-tenant journal-entries.**
+
 Composes: [[journal/entries]] · [[legal/entities/intercompany/transactions]].

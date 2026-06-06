@@ -23,3 +23,5 @@ A **career** (*трудова кариера*) is not a job but a **trajectory**
 - **Job quality ⇒ wellbeing (late-career evidence)** — Riva, Lucchini & Piazzoni (2022), *Applied Research in Quality of Life* 17(4): SHARE, ages 50–64, 14 countries — the *wellbeing gradient* (better job-quality cluster ⇒ higher CASP-12), steeper where national unemployment is higher. Green, Lee, Zou & Zhou (2024), *Socio-Economic Review* 22(2):835–857: across 39 countries job quality ≈ physical health and ≫ income/education/gender/age.
 
 Composes: [[sequence]] · [[positions]] · [[allocation]] · [[horo]] · [[time]] · [[cohort]] · [[decompression]] · [[health]] · [[status]] · [[market]] · [[age]] · [[wellbeing]] · [[crisis]].
+
+**Law — [[law]]: a career is not a job but a trajectory — one actor's ordered [[sequence]] of positions on the [[allocation]] [[horo]] ladder walked over time; its stage (late ⟺ within the [[decompression]] band) is derived from sequence-position and time, never stored.**

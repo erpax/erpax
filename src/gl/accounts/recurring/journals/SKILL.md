@@ -21,3 +21,5 @@ Template definitions for materialised [[journal/entries]] that recur on a schedu
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
 
 Composes: [[cost/centers]] · [[accounting]].
+
+**Law — [[law]]: a recurring journal is a template, not an entry — a scheduled job materialises it into a balanced journal-entry each period (RRULE-driven), four-eyes-gated on auto-post so automation never escapes [[accounting]] control.**

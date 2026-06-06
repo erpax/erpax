@@ -8,3 +8,5 @@ description: "Use when modelling one attestation — the singular model of the a
 A signed assertion that a statement or record is true. The singular model whose plural store is the [[attestations]] collection ([[balance]]: every collection has its model).
 
 Composes [[attestations]] · [[audit]] · [[balance]].
+
+**Law — [[law]]: one attestation is the singular model of one attestations row — a signed assertion that a statement or record is true ([[audit]]); every collection has its model ([[balance]]).**

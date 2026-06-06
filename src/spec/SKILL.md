@@ -19,3 +19,5 @@ Generation runs in a [[jobs]] task, is reached via [[api]], and surfaces in [[ad
 ## Common mistakes
 - Authoring an e2e test and its help text separately — one drifts from the other; generate both from the spec.
 - Hand-writing a seed or fixture a spec could generate.
+
+**Law — [[law]]: one spec is the single source from which every materialization is generated, never hand-authored twice — e2e test and help tip share one step list; its content-uuid ([[identity]]) entangles the spec and its outputs.**

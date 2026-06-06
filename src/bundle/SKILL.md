@@ -11,3 +11,5 @@ Composes: [[Items]] · [[items/bills/of/materials]] · [[customers/sales/orders]
 
 ## Standards
 - CRM-generic
+
+**Law — [[law]]: a bundle packages multiple [[Items]] for joint sale, priced as a bundle (with its own [[discount]] rules) rather than as the sum of its components.**

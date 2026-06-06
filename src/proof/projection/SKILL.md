@@ -22,3 +22,5 @@ Composes: [[proof]] · [[anchor]] · [[tamper/cost]] · [[entry]] · [[torus]] �
 ## Common mistakes
 - Treating the 106-bit digest second-preimage as the maximum. It is the CHEAPER hash-collision path, not the max — the anchor is (`index.ts:18-20, 60-61`; `index.test.ts:32-33`).
 - Emitting `Infinity`/`null`-less numbers for the unbounded case. Always carry `unbounded: true` alongside `decryptKeyLog2: null` so the bundle stays JCS-serializable.
+
+**Law — [[law]]: the forward project (content → content-[[uuid]]) is free, deterministic and O(1) — cost 0 — while its inverse (recover the analog negative without the held key) costs the maximum, unbounded at the biggest blockchain ([[anchor]] / [[tamper/cost]]); and ∞ is TAGGED (`unbounded: true`), never serialized as a raw number.**

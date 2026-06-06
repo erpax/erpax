@@ -14,3 +14,5 @@ Milk is the **agricultural produce** realized at each milking — the IAS-41 [[h
 - IFRS IAS-41 (milk as agricultural produce at harvest); milk-quality grading (somatic cell count)
 
 Composes [[animal]] · [[livestock]] · [[yield]] · [[harvest]] · [[grade]] · [[withdrawal]] · [[items]] · [[measure]] · [[breed]] · [[season]] · [[biological/assets]].
+
+**Law — [[law]]: lactation is the per-animal dairy production phase between parturition and dry-off, and milk is the agricultural produce realized at each milking — the IAS-41 [[harvest]] event measured at fair-value-less-costs-to-sell.**

@@ -21,4 +21,6 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO 9001:2015 §8.7 quality-management-system
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
 
+**Law — [[law]]: every inspection records an outcome disposition (pass/fail/conditional) with nonconformance evidence that drives the inventory write-off — measurement attested as [[proof]].**
+
 Composes: [[accounting]] · [[transaction]] · [[standard]] · [[proof]] · [[identity]].

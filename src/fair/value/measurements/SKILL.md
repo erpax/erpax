@@ -25,4 +25,6 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - SOX §404 internal-controls TOM-FV-01 valuation-process
 - ISO 27001 A.5.23 cloud-service-tenant-isolation
 
+**Law — [[law]]: each fair-value measurement is classified into exactly one IFRS 13 hierarchy level (Level-1 quoted · Level-2 observable · Level-3 unobservable) carrying its valuation technique, inputs, and P&L/OCI recognition route — the level governs the disclosure, so the input observability determines where it sits.**
+
 Composes: [[biological/assets]] · [[evidence/attestations]] · [[accounting]] · [[transaction]] · [[party]] · [[standard]].

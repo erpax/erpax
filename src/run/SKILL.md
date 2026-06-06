@@ -13,3 +13,5 @@ Composes: [[batch]] · [[payment]] · [[schedule]] · [[jobs]] · [[entry]] · [
 
 ## Standards
 - ISO 20022 (pain.001 credit-transfer / pain.008 direct-debit batch initiation)
+
+**Law — [[law]]: one run is one bounded pass of a batch process — gather a set, authorise, execute once, reconcile — moving along a draft → approved → executed → settled lifecycle ([[horo]]).**

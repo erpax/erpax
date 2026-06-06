@@ -17,3 +17,5 @@ Mycelium is the connective tissue of *Entangled Life*: the substrate of the myco
 - **Tero et al.** (2010, *Science*) — *Physarum* (slime mould, NOT fungus) reproduces the Tokyo rail network: decentralized optimization, the right logic in the wrong kingdom.
 
 Composes [[decentralization]] · [[network]] · [[merge]] · [[mycorrhizae]] · [[soil]] · [[compost]] · [[conservation]] · [[biomass]] · [[ecosystem]] · [[symbiosis]] · [[connections]] · [[law]].
+
+**Law — [[law]]: the fungus IS the network — a body with no center, no brain, no coordinator, whose global foraging/transport emerges purely from local rules at each growing tip (the same stigmergy as a content-addressed [[merge]]); nature's proof of the wired whole ([[decentralization]] made flesh), claimed only as far as the science holds.**

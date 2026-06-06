@@ -15,3 +15,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISA-530 audit-sampling
 - ISO-19011:2018 sampling-methodology
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
+
+**Law — [[law]]: an audit sample is one item drawn for a control test, carrying its pass/fail result, exception category, tester and amount — the ISA-530 per-item evidence that rolls up into the test's deviation rate.**

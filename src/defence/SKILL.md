@@ -26,3 +26,5 @@ A sector is a [[fractal]] whole that recomposes the cycle. Its arc is **4·8** o
 - Storing `status`/`ready?`/`deployed?` instead of deriving it from monotonic readiness counters + timestamps.
 - Cataloguing the realized collections here — that's matter; diff the config instead ([[collections]]).
 - A mutable award after sealing — procurement/deployment records are immutable once sealed ([[close]]); correct via a new versioned record.
+
+**Law — [[law]]: defence is the COFOG-02 readiness [[sectors|sector]] — readiness is a DERIVED measured state never a stored flag (`ready ⟺ trainedCount ≥ requiredCount ∧ equippedCount ≥ requiredCount`), one person is many role-contexts under one [[identity]], and a procurement IS a transaction toward [[accounting]] (polymorphic-OUT, never a GL account held inward).**

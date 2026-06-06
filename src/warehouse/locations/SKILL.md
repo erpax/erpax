@@ -22,4 +22,6 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - SOX §404 internal-controls inventory-segregation
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
 
+**Law — [[law]]: the inventory location master — every physical or logical place stock can sit, with GL-account defaults that segregate cost-flow for inventory controls.**
+
 Composes: [[warehouse/locations/consignment/arrangements]] · [[gl/accounts]] · [[items/inventory/movements]] · [[Shipments]].

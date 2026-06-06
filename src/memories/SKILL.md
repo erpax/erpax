@@ -16,3 +16,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - Conservation Law 10 referential-harmony (relatedTo graph)
 
 Composes: [[accounting]] · [[fields]] · [[transaction]] · [[uuid]] · [[proof]] · [[standard]].
+
+**Law — [[law]]: memories persist agent state across restarts keyed by (ownerType, ownerId, kind, key), each content-[[uuid]]'d for federation and joined by relatedTo graph edges — the generic agent-memory layer.**

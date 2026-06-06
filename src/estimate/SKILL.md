@@ -8,3 +8,5 @@ description: "Use when modelling one estimate — the singular model of the esti
 A projected figure issued before the actual is known. The singular model whose plural store is the [[estimates]] collection ([[balance]]: every collection has its model).
 
 Composes [[estimates]] · [[forecast]] · [[balance]].
+
+**Law — [[law]]: an estimate is the singular model of one projected figure issued before the actual is known, whose plural store is the [[estimates]] collection ([[balance]]: every collection has its model).**

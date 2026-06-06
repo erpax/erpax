@@ -8,3 +8,5 @@ description: "Use when modelling one space — the singular model of the spaces 
 A bounded area that can be occupied or reserved. The singular model whose plural store is the [[spaces]] collection ([[balance]]: every collection has its model).
 
 Composes [[spaces]] · [[location]] · [[balance]].
+
+**Law — [[law]]: a space is one bounded area that can be occupied or reserved — the singular model whose plural store is the [[spaces]] collection ([[balance]]: every collection has its model).**

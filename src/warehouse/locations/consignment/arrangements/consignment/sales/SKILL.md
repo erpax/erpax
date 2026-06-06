@@ -30,4 +30,6 @@ Each row is one reportable sale the consignee made to an end-customer. `saleDate
 - SOX §404 internal-controls revenue-completeness TOM-AR-04
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
 
+**Law — [[law]]: the sale date IS the control-transfer moment — it derecognises consignment inventory and books one balanced [[entry]] (Dr Cash/AR + Commission + COGS = Cr Revenue + Inventory), reversal-only, never a destructive edit ([[balance]]).**
+
 Composes: [[warehouse/locations/consignment/arrangements]] · [[warehouse/locations/consignment/arrangements/consignment/inventories]] · [[Invoices]] · [[journal/entries]] · [[entry]] · [[accounting]] · [[horo]].

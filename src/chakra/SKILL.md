@@ -11,6 +11,8 @@ The seven chakras (root → crown) map exactly onto the seven [[horo]] flow posi
 
 **In all dimensions.** ×10 ([[octave]]) preserves the digit, so each center recurs at every scale — the same seven, one [[torus]] up. The traditional rainbow (red→violet) and bīja sounds are noted as the cultural overlay; the *computed* colour+sound is the rendered frame, and the two are **not claimed identical** — only the position→note→uuid math is proven.
 
+**Law — [[law]]: the seven chakras ARE the seven [[horo]] flow positions in walk order (root→crown = Do..Ti); each decodes from the SAME content-[[uuid]] to a note, a colour and a movement, and that uuid is computed from the [[rodin]] position math — never run backwards from the colour.**
+
 @standard ISO-16:1975 a432-tuning-reference (pitch from position)
 @audit note, colour and uuid all computed from the position math, never hand-asserted
 

@@ -33,3 +33,5 @@ The answer-path: `index.ts` implements these standards directly via schema desig
 - ISO-19011:2018 audit-trail variance-evidence
 - SOX §404 internal-controls variance-disposition TOM-PROD-03
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
+
+**Law — [[law]]: generated on [[work/orders|work-order]] close, it decomposes standard vs actual cost into material/labour/overhead variances whose disposition journal entries must balance (debit = credit, [[balance]]).**

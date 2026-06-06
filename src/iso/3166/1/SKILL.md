@@ -23,3 +23,5 @@ description: "Use when implementing or referencing ISO 3166-1 — Country codes.
 
 Every Payload field named `country` (collections: `Tenants`, `Customers`,
 `Vendors`, `TaxJurisdictions`, address fields under multi-tenant ecommerce).
+
+**Law — [[law]]: a country is identified only by its ISO 3166-1 code (alpha-2 / alpha-3) — every `country` field across the corpus speaks one canonical codeset, so the same place is the same code everywhere, never a free-text name.**

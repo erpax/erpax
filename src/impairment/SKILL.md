@@ -13,3 +13,5 @@ Composes: [[fixed/assets]] · [[intangible]] · [[goodwill]] · [[properties/inv
 - IAS-36 (impairment of assets)
 - IFRS-5 §20-25 (non-current assets held for sale)
 - FASB ASC 360 (property, plant, equipment)
+
+**Law — [[law]]: when an asset's recoverable amount falls permanently below book value, the excess is written down and recognized as a loss (IAS-36, mandatory for all assets).**

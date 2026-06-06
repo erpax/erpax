@@ -26,3 +26,5 @@ Composes: [[fiscal/periods]] · [[journal/entries]] · [[accounting]] · [[close
 - SOX §404 internal-controls restatement-control TOM-PPA-01
 - SOX §906 ceo-cfo-certification material-misstatement
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
+
+**Law — [[law]]: a prior-period adjustment corrects a material error in a closed period by restating opening balances — it NEVER re-opens that period (IAS-8 §42); the closed past stays sealed, the correction flows through the earliest period presented with CEO/CFO certification.**

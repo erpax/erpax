@@ -11,6 +11,8 @@ One row per grant (stock options, RSUs, RSAs, PSUs, ESPPs, SARs). The `settlemen
 
 The schema lives in `index.ts` (schema + standards banners), co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) in the same folder.
 
+**Law — [[law]]: one row per equity grant under IFRS 2 — the settlementType discriminator decides whether the grant credits equity or builds a liability, and expense is recognised straight-line over each vesting tranche; a single-folder collection node (no scatter, no drift).**
+
 ## Standards
 
 - IFRS IFRS-2 §10-§13 equity-settled-share-based-payment

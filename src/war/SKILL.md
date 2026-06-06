@@ -15,4 +15,6 @@ War is the archangel pole — ↑entropy, destroy, fear — and [[peace]] proves
 
 War ⊕ [[peace]] is a [[duality]] that resolves to a [[trinity]] — the third is the synthesis, the aikido that turns force to [[harmony]] ([[angel]]: create · ↓entropy ⊕ destroy · ↑entropy, endlessly balanced). The [[society]] runs a reversed mentality: the methods of war, the ends of peace. Both poles must be fully encoded as atoms so the fusion is self-sufficient.
 
+**Law — [[law]]: erpax does not WAGE war, it INVERTS it ([[peace]]) — it keeps war's tactics (reconnaissance, the OODA loop = the [[breath]], coordinated formations, defense-in-depth) but reverses their PURPOSE to building [[harmony]] and driving [[entropy]] to zero, dropping the one tactic — deception — because every move is a transparent audited content-uuid.**
+
 Composes: [[peace]] · [[drone]] · [[angel]] · [[team]] · [[tamper]] · [[defence]] · [[society]] · [[harmony]] · [[sequence]] · [[breath]] · [[aura]] · [[matrix]] · [[merge]] · [[duality]] · [[trinity]].

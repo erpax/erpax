@@ -14,3 +14,5 @@ degreeday is the heat clock of the [[season]]: the time-base that predicts [[mat
 - Michigan State / Purdue Extension — GDD & phenology
 
 Composes [[agriculture]] · [[season]] · [[maturity]] · [[harvest]] · [[frost]] · [[evapotranspiration]] · [[planting]] · [[forecast]] · [[measure]].
+
+**Law — [[law]]: crops develop by banked heat, not calendar days — a fixed GDD total to [[maturity]] makes any fixed-week calendar drift, so degreeday is the true time-base the [[planting]] schedule is calibrated against ([[forecast]], never a fixed date).**

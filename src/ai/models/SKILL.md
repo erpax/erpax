@@ -24,6 +24,8 @@ deterministic core decides whenever it can; these models are the FALLBACK tier, 
 only when needed and strictly to the law and the standards (`callWorkersAi` enforces the
 gate + per-tenant featureGuard + audit).
 
+**Law — [[law]]: the model catalog is one accountable folder with two facets (the admin-editable Payload collection + the DRY `AI_MODELS` registry) the router dispatches over only when the deterministic [[self]] cannot decide; a model swap is one edit, every fallback gated and audited by `callWorkersAi`.**
+
 ## Standards
 - EU AI Act 2024 risk-classification + transparency
 - RFC-4122 §4.3 uuid (content-addressed model identity)

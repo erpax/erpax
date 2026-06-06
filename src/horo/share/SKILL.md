@@ -20,3 +20,5 @@ That makes a share the **inverse of an [[customers/sales/orders|order]]** (fixed
 - Galt et al. (2018) — retention & the customization paradox; IFRS 15 (deferred-revenue recognition)
 
 Composes [[horo]] · [[coil]] · [[duality]] · [[part]] · [[whole]] · [[sequence]] · [[collections]] · [[base]] · [[weave]] · [[risk]] · [[prepaid]] · [[deferral]] · [[deferredrevenue]] · [[recognition]] · [[balance]] · [[agriculture]] · [[harvest]] · [[season]] · [[market]] · [[customers/sales/orders]].
+
+**Law — [[law]]: [[horo]] position 2 — the [[whole]] splits and a member joins; its domain instance is a proportional, contingent, pooled claim under shared [[risk]] (the CSA share), the inverse of a fixed order.**

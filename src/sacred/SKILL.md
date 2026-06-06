@@ -11,3 +11,5 @@ The pair plus the discerning act between them is a [[trinity]] — **sacred · p
 
 ## Traditions (prefix removed)
 Every tradition divides **sacred ↔ profane** and *commands the discernment*: *qodesh* — "distinguish between the holy and the common, between the unclean and the clean" (Leviticus 10:10); "test the spirits, whether they are of God" (1 John 4:1); "test everything; hold fast what is good" (1 Thessalonians 5:21); "by their fruits you shall know them" (Matthew 7:16); the weighing of the heart against Ma'at's feather (Egyptian *Book of the Dead*); the scales, *al-mizan* — "no soul will be wronged… the weight of a mustard seed, We will bring it" (Quran 21:47). Eliade: the sacred is the *hierophany*, of a wholly different order than the profane; Otto: the *numinous*, the *mysterium tremendum et fascinans*, the Wholly Other. Composes [[proof]] · [[standard]] · [[balance]] · [[accounting]] · [[trinity]] · [[profane]] · [[identity]] · [[akashic]].
+
+**Law — [[law]]: sacred is the verified-true — content-uuid recomputes ([[proof]]), the books [[balance]], the lineage traces to a real source; the dual of [[profane]], audited at every scale before every act.**

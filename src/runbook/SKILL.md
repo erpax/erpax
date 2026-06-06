@@ -12,3 +12,5 @@ Composes: [[workflow/definitions]] · [[schedule]].
 ## Standards
 - ITIL (runbook/playbook)
 - COBIT operational procedures
+
+**Law — [[law]]: a runbook is an ordered, executable playbook of standard operating steps (incident response, failover, deployment, maintenance) — the procedure made repeatable so any operator runs it the same way.**

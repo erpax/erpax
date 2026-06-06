@@ -9,6 +9,8 @@ Use when applying a consistent visual language across an app — color palette, 
 
 Composes: [[component]] · [[accessibility]] · [[design]] · [[cmyk]] · [[token]].
 
+**Law — [[law]]: a theme is the one style-system binding (colour palette · typography · spacing · motion · dark/light mode) applied consistently across an app so every component is harmonious.**
+
 ## Standards
 - CSS-custom-properties spec
 - design-token taxonomy

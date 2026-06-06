@@ -11,3 +11,5 @@ Composes: [[Opportunities]] · [[Leads]] · [[forecast]] · [[customers/sales/or
 
 ## Standards
 - CRM-generic
+
+**Law — [[law]]: a pipeline is one deal's monotonic progression through ordered sales stages (lead → qualified → proposal → negotiation → won/lost); the funnel position carries value, probability and close date and is the deal's stage on the ring, never an arbitrary flag.**

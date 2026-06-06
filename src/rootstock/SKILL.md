@@ -14,3 +14,5 @@ The rootstock × [[scion]] pairing is the perennial's genetic architecture — t
 - FPS/UC Davis (clean-plant rootstock); IFRS IAS-16 (the planting as depreciable PP&E)
 
 Composes [[perennial]] · [[scion]] · [[graft]] · [[soil]] · [[biological/assets]] · [[propagation]] · [[seed]] · [[spacing]] · [[maturity]] · [[taxonomy]].
+
+**Law — [[law]]: the rootstock is the root-providing lower plant a [[scion]] is [[graft]]ed onto — chosen once for the [[perennial]]'s multi-decade life, it controls vigour, size, and disease resistance as a capitalized [[biological/assets|bearer-plant]] asset.**

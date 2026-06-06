@@ -12,6 +12,8 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 
 Entangled with — [[content]] · [[thing]]
 
+**Law — [[law]]: chat is the per-tenant content-addressed agent-event bus where each row is an ErpaxEvent envelope keyed by content-[[uuid]] (idempotent, the akashic agent history) — distinct from messages (user mail).**
+
 ## Standards
 - W3C ActivityPub server-to-server activity-distribution (the model)
 - RFC 9562 §5.8 content-uuid event-identity (idempotency key)

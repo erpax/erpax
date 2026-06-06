@@ -14,3 +14,5 @@ Frost is the hard bound the [[season]] is cut from, and the event two things buf
 - USDA Plant Hardiness Zone Map (2023); NOAA climate normals (freeze/frost probabilities)
 
 Composes [[agriculture]] · [[season]] · [[crop]] · [[tunnel]] · [[hardiness]] · [[degreeday]] · [[planting]].
+
+**Law — [[law]]: frost is the freeze event that bounds the [[season]] — last-spring and first-fall frost define the frost-free window that caps which [[crop]]s are feasible; the dates are probabilistic per-station, never a fixed calendar.**

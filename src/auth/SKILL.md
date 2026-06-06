@@ -43,3 +43,5 @@ Authentication is the **bridge between the form and the world** — the [[limit]
 - Adding a singular `tenant` to the auth/users collection (use the plugin's `tenants` array).
 
 Composes: [[Users]] · [[api/audit/events]].
+
+**Law — [[law]]: authentication is the measured bridge from form to the world — proving control of an email verifies a real [[identity]], and `email@domain` is the join: the local-part is who you are, the domain places you in your tenant, so a user's tenant is DERIVED from their verified email domain, never hand-assigned.**

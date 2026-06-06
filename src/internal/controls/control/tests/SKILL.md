@@ -15,3 +15,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO-19011:2018 audit-sampling
 - SOX §404 internal-controls testing-evidence
 - ISO-19011:2018 audit-trail
+
+**Law — [[law]]: a control test records its sampling method, assertion, sample size, tolerance and deviation count/rate, and concludes on the tested control's effectiveness — the evidence linking a SOX §404 control to its verdict.**

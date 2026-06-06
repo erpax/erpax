@@ -14,3 +14,5 @@ This inverts five annual assumptions: the plant is a **standing depreciable asse
 - IRC §263A(d) (pre-productive cost capitalization); extension pomology/viticulture cost studies
 
 Composes [[crop]] · [[agriculture]] · [[biological/assets]] · [[impairment]] · [[rootstock]] · [[scion]] · [[graft]] · [[dormancy]] · [[terroir]] · [[rotation]] · [[spacing]] · [[season]] · [[maturity]] · [[harvest]] · [[yield]].
+
+**Law — [[law]]: a perennial's productive plant is a depreciating fixed asset (IAS-16 bearer plant), only its growing produce is IAS-41 — so renewal replaces [[rotation]], [[yield]] ramps over years rather than resetting each season, and the standing plant outlives any single harvest.**

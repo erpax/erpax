@@ -22,3 +22,5 @@ Composes [[conservation]] · [[entropy]] · [[capacity]] · [[compost]] · [[soi
 ## Matter-twin
 
 The computed twin lives in `src/sustainability/index.ts`. `logisticGrowth` encodes the Verhulst carrying-capacity curve; `carryingYield` returns the Maximum Sustainable Yield at the curve's peak; `sustainableHarvest` guards the stock-flow boundary; `netEntropy` measures the per-cycle thermodynamic budget (produced − exported); `isSustainable` combines both conditions into the single truth-value this atom names.
+
+**Law — [[law]]: a system endures iff each cycle nets zero — throughput ≤ regeneration AND the material loop closes, so zero net [[entropy]] is added per cycle; the un-recycled free parameter is the unsustainable leak.**

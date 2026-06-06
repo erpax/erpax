@@ -11,4 +11,6 @@ Typography is not decoration: each feature used is a dimension the [[search]] in
 
 Matter-twin: `src/typography/index.ts` (`FEATURES` · `featuresUsed` · `coverage`). Composes [[vitepress]] · [[search]] · [[holographic]].
 
+**Law — [[law]]: coverage is the fraction of the [[vitepress]] typographic feature-set a SKILL.md page actually renders — each feature used is a dimension the [[search]] index entangles and a forger must reproduce ([[tamper]]-cost).**
+
 @standard CommonMark + the vitepress markdown extensions

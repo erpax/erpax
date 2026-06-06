@@ -29,4 +29,6 @@ The catalog also holds **agricultural produce**: each [[crop]] is an items row (
 - US-GAAP ASC-330 inventory
 - IFRS IAS-41 → IAS-2 transfer at harvest (biological produce becomes inventory)
 
+**Law — [[law]]: one catalog/inventory model — garments, produce, and [[seed]] strip their prefix and [[merge]] into a single sellable/purchasable row with GL posting; trust the data over the schema.**
+
 Composes: [[Batches]] · [[items/bills/of/materials]] · [[items/inventory/movements]] · [[Packages]] · [[items/purchase/orders]] · [[items/quality/inspections]].

@@ -26,3 +26,5 @@ World Customs Organisation HS Convention. Globally standardised goods classifica
 - US Harmonized Tariff Schedule (USITC)
 - INCOTERMS 2020 (companion when crossing customs)
 - EU UCC 952/2013 (companion for EU import/export procedures)
+
+**Law — [[law]]: the Harmonised System is the global goods classification — a 6-digit harmonised root plus national extension (8 EU CN, 10 US HTS); the registry validates structure and indexes sections/chapters, never the full per-heading dictionary.**

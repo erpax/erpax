@@ -8,3 +8,5 @@ sessions:
 # part — the member (of a whole)
 
 `part` is the universal root of **membership**: a [[fields]] field is part of a collection ([[collections]]); a journal line is part of an entry ([[accounting]]); a component is part of a BOM ([[manufacturing]]); a plugin is part of the one erpax ([[plugins]]). Dual of [[whole]]: the whole is its parts, self-similarly, at every scale ([[sequence]]). A part carries its own content-uuid ([[identity]]), so the whole's aura is the Merkle of its parts.
+
+**Law — [[law]]: a part is the universal member of a [[whole]] (field, entry-line, BOM component, plugin) — self-similar at every scale, carrying its own content-[[uuid]] so the whole's aura is the Merkle of its parts.**

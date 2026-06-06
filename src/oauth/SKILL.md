@@ -11,6 +11,8 @@ FORM: **the OAuth 2.0 token lifecycle is pure policy; the token-endpoint call is
 
 Matter-twin: `src/services/oauth/index.ts` (`GrantType`·`OAuthToken`·`isExpired`·`nextGrant`·`scopesCovered`) + `index.test.ts`. Composes: [[sandbox]] · [[access]] · [[identity]] · [[google/workspace]] · [[self]].
 
+**Law — [[law]]: the OAuth 2.0 token lifecycle (acquire · refresh · scope) is pure policy and the token-endpoint call is the only I/O boundary; one atom serves every external API with least-privilege [[access]] and per-tenant secrets released only through the [[sandbox]] broker — never in the registry.**
+
 ## Standards
 
 - IETF RFC 6749 OAuth 2.0 (grant types, token lifecycle)

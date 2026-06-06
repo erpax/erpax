@@ -9,4 +9,6 @@ A wallet **holds value**: a [[balance]] under an owner [[identity]]. In erpax va
 
 Matter-twin: `src/wallet/index.ts` (`Wallet` · `wallet` · `credit` · `debit`).
 
+**Law — [[law]]: a wallet holds value as a [[balance]] under an owner [[identity]] — double-entry ([[entry]]) and content-addressed, so any balance change yields a new state uuid and every move balances ([[tamper/cost]]).**
+
 @standard double-entry ([[entry]]); content-addressed state ([[uuid]])

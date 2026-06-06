@@ -13,3 +13,5 @@ Composes: [[journal/entries]] · [[customers/contracts/contract/performances]] �
 - IFRS-15 §25 (contract liability)
 - IAS-1 §27 (accrual basis)
 - FASB ASC 606 §25
+
+**Law — [[law]]: a deferral postpones recognition of revenue or expense to a future period pending contract performance, delivery or time passage — the dual of [[accrual]] and the core of IFRS-15 revenue recognition.**

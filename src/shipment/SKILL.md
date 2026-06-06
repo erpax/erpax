@@ -8,3 +8,5 @@ description: "Use when modelling one shipment — the singular model of the ship
 A consignment of goods moved from origin to destination. The singular model whose plural store is the [[shipments]] collection ([[balance]]: every collection has its model).
 
 Composes [[shipments]] · [[delivery]] · [[balance]].
+
+**Law — [[law]]: a shipment is one consignment of goods moved from origin to destination — the singular model whose plural store is the [[shipments]] collection ([[balance]]: every collection has its model).**

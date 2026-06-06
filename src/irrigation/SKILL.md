@@ -15,3 +15,5 @@ Scheduling is a **water budget** ([[balance]]): rain + irrigation are deposits, 
 - 4R Nutrient Stewardship — fertigation (right time / right place)
 
 Composes [[agriculture]] · [[crop]] · [[moisture]] · [[evapotranspiration]] · [[fertility]] · [[balance]] · [[rate]] · [[schedule]] · [[soil]] · [[capacity]].
+
+**Law — [[law]]: irrigation credits the soil-water reservoir that [[evapotranspiration]] debits — a water-budget [[balance]] scheduled to replace the deficit before the [[crop]] hits stress.**

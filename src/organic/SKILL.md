@@ -15,3 +15,5 @@ Organic is a [[standards]]-backed label the product carries through the supply c
 - Codex Alimentarius CAC/GL 32 — organically produced foods
 
 Composes [[agriculture]] · [[crop]] · [[certification]] · [[standards]] · [[conversion]] · [[period]] · [[rotation]] · [[covercrop]] · [[compost]] · [[lineage]] · [[lots]] · [[audit]] · [[proof]] · [[integrity]].
+
+**Law — [[law]]: organic is a [[standard]]-backed production status the [[crop]] carries through the chain — the claim is only as good as the unforgeable [[proof]] behind it.**

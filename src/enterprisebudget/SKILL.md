@@ -14,3 +14,5 @@ This closes [[agriculture]]'s loop: the backward demand→land plan ([[cropplan]
 - USDA / university farm management — enterprise budgeting & cost-of-production
 
 Composes [[agriculture]] · [[crop]] · [[revenue]] · [[cost]] · [[yield]] · [[currency]] · [[forecast]] · [[cropplan]] · [[bottleneck]] · [[manufacturing]] · [[value]].
+
+**Law — [[law]]: an enterprise budget is the per-line profit projection that ranks what to grow — one [[crop]]/product's revenue minus its direct [[cost]] per bed-foot, so the unprofitable line is dropped; the projection twin of the cost center.**

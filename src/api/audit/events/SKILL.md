@@ -19,3 +19,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - EU 910/2014 eidas signature-evidence
 
 Composes: [[access]] · [[auth]] · [[hooks]] · [[fields]] · [[standard]].
+
+**Law — [[law]]: every outbound external-API call lands one immutable row — kind-bucketed, country-scoped, source-attributed, result and error captured — so every external system contacted is provable evidence, never an untracked side-channel.**

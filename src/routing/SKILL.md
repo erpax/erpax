@@ -16,6 +16,8 @@ Matter-twin: `src/services/routing/index.ts` (`RiskLevel`·`ModelTier`·`actionR
 ## Standards
 - NIST AI RMF (risk-proportionate controls) — map risk → control strength
 
+**Law — [[law]]: route an action to a compute tier by its RISK, not by where the model runs — because safety lives in the [[sandbox]] enforcement gate, not in model tier; the gate being absolute frees routing to prefer the cheapest sufficient model.**
+
 ## Common mistakes
 - Routing by data sensitivity alone — route by ACTION risk (a read of sensitive data is low-risk; a credential-bearing write is high), and remember the [[sandbox]] gate is what actually protects.
 - Trusting a local model because it runs on your hardware — locality is not safety; the enforcement layer is ([[sandbox]]). Route low-risk there freely, high-risk to a stronger model.

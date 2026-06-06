@@ -15,3 +15,5 @@ Livestock runs on the same atoms as the crop cluster, animal-shaped: fed on graz
 - WOAH (animal health & welfare); USDA APHIS ADT (animal disease traceability)
 
 Composes [[agriculture]] · [[herd]] · [[animal]] · [[grazing]] · [[pasture]] · [[fodder]] · [[breed]] · [[lactation]] · [[manure]] · [[mortality]] · [[withdrawal]] · [[biological/assets]] · [[harvest]] · [[health]] · [[share]] · [[lineage]] · [[fertility]].
+
+**Law — [[law]]: livestock is the animal half of [[agriculture]] — each animal is an IAS-41 [[biological/assets|biological asset]] (fair-value-less-costs-to-sell, re-measured as it grows) whose produce is realized at [[harvest]], the same event that turns a [[crop]] into inventory.**

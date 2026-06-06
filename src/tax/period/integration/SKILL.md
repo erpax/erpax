@@ -612,3 +612,5 @@ Phase B5 completes tax period management and transfer pricing integration. Phase
 **Author:** Claude (Agent)  
 **Date:** 2026-05-12  
 **Status:** Production Ready (pending local TypeScript verification)
+
+**Law — [[law]]: a tax period is separate from its fiscal [[period]] (same period-end date, different process) and closes only when it aligns with that fiscal period, every transfer-pricing adjustment is documented (OECD / BEPS-13) and authority compliance is verified — then tax adjustment entries are prepared, never auto-posted.**

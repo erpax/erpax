@@ -51,3 +51,5 @@ export default buildConfig({
 - Putting tenant/multi-tenancy as manual fields instead of the multi-tenant plugin (the plugin owns `tenant`).
 - Inlining repeated blocks instead of top-level `blocks` + `blockReferences` (see [[optimize]]).
 - Editing `payload-types.ts` by hand — it's generated; re-run `generate:types`.
+
+**Law — [[law]]: every atom's `index.ts` IS the one shared config both [[payload]] and [[vitepress]] derive from — self-describing (kind, fields, relations, position all declared by it + its [[name]] + content-[[uuid]]); `find src` is the registry, so identical configs [[merge]] and nothing outside classifies an atom.**

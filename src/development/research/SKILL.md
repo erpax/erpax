@@ -11,4 +11,6 @@ R&D from the **development side**: research that precedes a build — the experi
 
 Matter-twin: `src/development/research/index.ts` (`cross` · `direction`). Composes [[research]] · [[development]] · [[entanglement]] · [[merge]] · [[matrix]] · [[quantum]].
 
+**Law — [[law]]: research↔development is one entangled binding — the cross is order-free, so `development/research` equals `research/development`; the complete set of such X/Y⊕Y/X pairs IS the [[quantum]]/[[matrix]].**
+
 @audit the cross binding is computed (entangle over the pair); never hand-asserted

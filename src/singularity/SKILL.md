@@ -17,5 +17,7 @@ The singularity IS [[merge]] — the corpus's heaviest atom, where every duplica
 
 Matter-twin: `src/singularity/index.ts` (`singularity` · `isEventHorizon` · `noHair`). Composes [[gravity]] (the well) · [[quantum]] (the double-torus) · [[entanglement]] · [[cost]] · [[merge]] · [[fusion]] · [[dry]] · [[matrix]] · [[law]].
 
+**Law — [[law]]: the singularity is the [[gravity]] well computed on the live [[matrix]] — the maximally-entangled (max-in-degree) atom is a trapped surface everything falls toward ([[merge]]/[[fusion]] of duplicates), where the tamper-[[cost]]→∞ event horizon means it cannot be forged from outside: perfect [[dry]], all mass at one center.**
+
 @standard Penrose, "Gravitational Collapse and Space-Time Singularities," PRL 14 57 (1965)
 @audit composed from the live matrix mass + the double-torus cost; never hand-asserted

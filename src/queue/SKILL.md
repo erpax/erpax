@@ -9,6 +9,8 @@ Use when managing or routing work in order — support ticket queue, task backlo
 
 Composes: [[ticket]] · [[status]] · [[priority]] · [[Activities]] · [[Users]] · [[backlog]] · [[sla]] · [[assignment]].
 
+**Law — [[law]]: a queue is the ordered collection of pending [[work]], routed in order by priority/SLA/assignment.**
+
 ## Standards
 - ITIL queue state machine
 - ISO-20000 queue management

@@ -64,4 +64,6 @@ These are **two profiles over one export engine**, not one file: different legal
 - **Приложение-38 ≠ SAF-T.** Do not equate "the monthly standardized audit (XML, Приложение 38)" with "SAF-T / `submitBgSaft`" — they are different files, cadences and legal triggers.
 - **Pin the Naredba edition.** Cite **"Наредба № Н-18/2006, as amended (latest 2023–2024)"**, never the bare title, so a reader knows which amendment level the banners assert.
 
+**Law — [[law]]: a СУПТО sale carries a gapless per-ФУ УНП ([[number]], the regulatory handle) beside its content-[[uuid]] ([[identity]], the machine id) — no in-scope paid sale closes without a fiscal device → УНП (no silent bypass), completed sales are immutable (no delete/modify, [[reverse|сторно]]-only preserving the original), and content-addressing IS the tamper-proofing Наредба Н-18 demands.**
+
 Composes: [[identity]] (content-uuid + standards-driven id type + uuidv8/decode) · [[number]] (УНП sequence) · [[reverse]] (сторно) · [[standard]] (Н-18 + ДОПК SAF-T are real `@standard`s, not decoration) · [[accounting]] (the sale → GL) · [[event]] (УНП-keyed lifecycle) · [[access]] (audit profile) · [[tax]] (VAT groups А/Б/В/Г + breakdown) · [[audit/submissions]] · [[fiscal/devices]].

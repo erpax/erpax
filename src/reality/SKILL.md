@@ -9,4 +9,6 @@ Reality is the **live, shipped state**: what is *actually* on main / [[deploy]]e
 
 Matter-twin: `src/reality/index.ts` (`realityRoot` · `isReal`). Composes [[deploy]] · [[matrix]] · [[anchor]] · [[verification]] · [[quantum]].
 
+**Law — [[law]]: reality is the live shipped state (what is actually on main / [[deploy]]ed), the live [[matrix]] root its fingerprint — a claim is real iff it matches that root ([[proof]]), content-addressed truth never assertion.**
+
 @audit reality = the live matrix root; computed, never hand-asserted

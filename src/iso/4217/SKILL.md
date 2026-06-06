@@ -25,3 +25,5 @@ description: "Use when implementing or referencing ISO 4217 — Currency codes."
 Every Payload field named `currency` (collections: `CurrencyRates`,
 `TaxJurisdictions`, `Tenants`, `Invoices`, `Payments`, `FinancialStatements`,
 etc.) and the `_money/Money` value type.
+
+**Law — [[law]]: every `currency` value is a valid ISO-4217:2015 three-letter alphabetic code, validated at the boundary against the runtime table (`Intl.supportedValuesOf`), never a frozen shipped list.**

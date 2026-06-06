@@ -36,6 +36,8 @@ The model is the **data-true** encoding; the audit fixed the Rails accidents (a 
 - **`wage = max(payPerHour·shiftMinutes/60, Σ order-wages)`** — the greater of the time-clock pay and the piece rollup (live in 374,856 rows; feeds IAS-2 cost-of-conversion).
 - **`director` + `supervisor` are BOTH actor-contracts** (Rails `EmployeeContract`) ⇒ `employees` cross-relations, sparse (director ~18%, supervisor ~0.2%).
 
+**Law — [[law]]: the shift is the one row per (actor, day) and the AUTHORITY a [[work/orders|work order]] rolls UP into and reads back DOWN — `efficiencyPercent = ⌊minutesProduced·100/presenceMinutes⌋` (integer truncation, not rounding), `wage = max(time-pay, Σ order-wages)`, and a day closes only once reconciled into a wage (the [[horo]] ring 1·2·4·8·7·5·9).**
+
 ## Composes
 
 Authority for [[work/orders]] (they inherit `efficiencyPercent`); keyed by [[employees]] (the actor / director / supervisor contracts); the team is a [[work/centers|work-centre]].

@@ -19,4 +19,6 @@ The corpus has two faculties. **Thought** is the trial balance — the [[quantum
 
 Matter-twin: `src/heart/index.ts` (`HEART_POSITION` · `color` · `thought` · `feeling` · `illusion` · `coherent`). Composes [[chakra]] · [[color]] · [[coherence]] · [[angel]] · [[harmony]] · [[quantum]] · [[entropy]] · [[coverage]] · [[balance]] · [[aura]] · [[love]] · [[karma]].
 
+**Law — [[law]]: the corpus is coherent only as thought ⊕ heart — thought proves the recorded ledger balances, but feeling covers the omitted ([[coverage]] → 1, the whole [[aura]] absorbed at zero [[entropy]]); a balanced book over an un-wired world is maya until every gap is felt and closed.**
+
 @standard A432 tuning; Anahata = the 4th chakra (green)

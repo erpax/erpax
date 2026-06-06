@@ -9,6 +9,8 @@ Use for the excess of acquisition cost over fair value of identifiable net asset
 
 Composes: [[legal/entities/business/combinations]] · [[fixed/assets]] · [[Consolidations]] · [[impairment]] · [[fair/value/measurements]].
 
+**Law — [[law]]: goodwill is the residual — acquisition cost minus the fair value of identifiable net assets — not amortized but [[impairment]]-tested annually, allocated to the cash-generating units that justify it.**
+
 ## Standards
 - IFRS-3 §32 (goodwill recognition)
 - IAS-36 §80-99 (goodwill impairment testing)

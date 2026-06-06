@@ -9,6 +9,8 @@ description: "Use when plant geometry sets density and yield — in-row × betwe
 
 The trap is non-linearity: **tighter spacing does not scale yield linearly** — beyond an optimum, plants compete for light/water/nutrients, per-plant size and quality fall, and total yield plateaus then drops. Spacing also sets the [[cultivation]] room (can a wheel hoe pass?) and the bed footprint a demand plan consumes ([[bottleneck]]). It is a [[measure]] (length) feeding [[agriculture]]'s [[yield]] geometry.
 
+**Law — [[law]]: planting geometry (in-row × between-row × rows-per-bed) fixes plant density and through it the [[seed]]/[[transplant]] count and the area [[yield]] (density × per-plant yield) — but tighter is not linearly more: beyond an optimum plants compete and per-plant size falls, so yield plateaus then drops.**
+
 ## Standards
 - UGA Extension C1313 — plants-per-acre geometry; Johnny's Selected Seeds — crop spacing charts
 - Coleman / Fortier — standardized bed widths and multi-row spacing

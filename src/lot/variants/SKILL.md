@@ -23,4 +23,6 @@ So the 12 bespoke `option_N_*` column-families fold into ONE context-keyed `opti
 ## The coordinate cross
 `lot`→[[lots]] (the parent funnel head, the axis) ⊕ `productVariant`→`items` (the catalog) ⊕ `workPhase`→[[lot/work/phases]] (the routing step it currently sits at). The variant rolls UP into the lot and rides ALONG the routing chain.
 
+**Law — [[law]]: a variant total IS the [[balance|sum]] of its option postings — `units = Σ options[].units` and `unitsProduced = Σ options[].produced` (100.00% over 67 865 etrima rows), computed-not-stored so the roll-up can never drift from its parts, monotonic down the ordered≥produced≥…≥delivered funnel.**
+
 Matter-twin: `src/lot/variants/index.ts`. Composes [[accounting]] · [[balance]] · [[fields|discriminator]] · [[coordinate]] · [[lots]] · [[lot/work/phases]].

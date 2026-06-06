@@ -27,3 +27,5 @@ When adding a new identifier:
 3. Spec mirror under `tests/standards/iso-7064/`.
 4. Re-export from `index.ts`.
 5. `pnpm standards:write-index` to refresh `docs/STANDARDS_INDEX.md`.
+
+**Law — [[law]]: a check-character system embeds integrity into the identifier itself — the trailing check digit is computed from the body (mod-11 / mod-97-10 / mod-37-2), so a single-digit error or transposition is caught by the number, not by a lookup.**

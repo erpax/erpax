@@ -6,3 +6,5 @@ description: Use when reasoning about the third position of the horo state ring 
 # weave — horo position 4 (four hands meeting)
 
 `weave` is the **third** step of the [[horo]] ring — digit `4`, the next doubling of the [[coil]] (`2 → 4`): four hands meet, the parts interlink. The flow is being worked: inventory *in-production*, lines *woven* into relationships, the lattice forming. It is the [[whole]] step of a [[flow]] — composition where members link — and the [[sequence]] anchor `4` ([[database]], where relations are stored/joined). Between [[share]] and [[crest]] on the **ascent** arc (`1·2·4·8`).
+
+**Law — [[law]]: [[horo]] position 4 — the interlinking step where the parts meet and the flow is worked (in-production · woven into relationships), the composition where members link and relations are stored.**

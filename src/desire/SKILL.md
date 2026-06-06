@@ -10,3 +10,5 @@ description: "Use when reasoning about the demand seed of a market — the laten
 Demand is desire that has cleared the downstream atoms — desire **× ability-and-permission to act**; desire is the raw, pre-economic form. When desire is the **zero atom**, the market is small for the one reason no operator can fix: people simply do not want the outcome. The only move is to **redefine the product** until it lands on a want already present — people don't want the thing, they want the [[jobs|job]] it does. Trendsetters, proof, and convenience are all powerless against a desire of zero: each merely multiplies the zero.
 
 Composes [[market]] · [[jobs]] · [[awareness]].
+
+**Law — [[law]]: desire is the one [[market]] atom you cannot manufacture exogenously — you reveal or awaken it, never inject it; when it is the zero atom no convenience, [[proof]], or trendsetter reaches the market and you must redefine the product onto a want that already exists.**

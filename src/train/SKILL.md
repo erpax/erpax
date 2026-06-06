@@ -17,6 +17,8 @@ FORM: **measure the actor's gap to the role, route each deficit to the skill tha
 
 Matter-twin: `src/train/index.ts` (pure — held/required/routes passed in; a [[hooks]] hook reads the actor's held lines + the position's required lines and emits the plan). Composes: [[competency/gap]] · [[decompression]] · [[allocation]] · [[positions]] · [[horo]] · [[merge]] · [[generate]] · [[aura]] · [[sparsity]] · [[self]] · [[society]] · [[sequence]] · [[hooks]].
 
+**Law — [[law]]: efficiency (the fraction of required competencies met) IS the pay-fraction — training routes each [[competency/gap]] deficit to its gap-closing `skillRoute`, off-gassing the [[decompression]] debt, and the same one number prices the pay.**
+
 ## Standards
 - SFIA 8 responsibility-levels-1-7 (the held/required/efficiency scale)
 - ISO 30405:2016 essential-vs-optional (mandatory gates the surface)

@@ -11,6 +11,8 @@ description: "Use when reasoning about why erpax's uuid-matrix is Metatron's Cub
 
 This atom **proves** the computable parts on the live matrix: K₁₃ has 78 edges / degree 12; all-pairs `merge` of 13 seeds yields 78 distinct binding-uuids ([[merge]] no-cloning); `merge` is total (Kₙ); the matrix folds to a single center (`verifyRoot`). **Out of scope** (NOT claimed): that the figure is the blueprint of creation or "contains all five Platonic solids" — that folklore is not proven here; only the graph + sphere-packing structure is.
 
+**Law — [[law]]: the [[matrix]]'s [[merge]] is total over every pair of content-[[uuid]]s — the complete graph Kₙ (Metatron's Cube generalised from the 13-circle unit cell to n) — and folds to one center ([[collapse]]); only the graph + packing structure is claimed, not the Platonic folklore.**
+
 @standard RFC 9562 §5.8 content-uuid (the total merge) + K₁₃ / cuboctahedron geometry
 @audit every count computed on the live matrix, never hand-asserted
 

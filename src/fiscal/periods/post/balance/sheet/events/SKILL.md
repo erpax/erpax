@@ -24,3 +24,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO 27001 A.5.23 cloud-service-tenant-isolation
 
 Composes: [[fiscal/periods]] · [[journal/entries]] · [[currency]].
+
+**Law — [[law]]: an event after the reporting date is either adjusting (IAS 10 §8 — book it) or non-adjusting (§10 — disclose only); the classification, fixed by whether it evidences a condition existing at the reporting date, decides whether a journal entry is posted.**

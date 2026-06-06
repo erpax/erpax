@@ -59,3 +59,5 @@ The OECD SAF-T schema is the lingua franca every tax authority is converging on 
 - ISO 3166-1:2020 — country codes (consumed via `@/standards/iso-3166-1`).
 - ISO 4217:2015 — currency codes (consumed via `@/standards/iso-4217`).
 - ISO 8601-1:2019 — date-time (consumed via `@/standards/iso-8601`).
+
+**Law — [[law]]: SAF-T owns ONE canonical set of types for the four top-level sections (Header · MasterFiles · GeneralLedgerEntries · SourceDocuments) plus the cross-cutting code-list structures — the single shape every consumer (export service, country profile, fixtures) projects the GL + master data onto, so country variants extend the baseline rather than fork it.**

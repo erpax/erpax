@@ -28,4 +28,6 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO-27002 §5.15 access-control per-user-feature-flags
 - ISO-19011:2018 audit-trail user-config-change
 
+**Law — [[law]]: a user is the ONE typeless universal actor and [[identity]] root — employee = agent = customer = author — holding cross-tenant membership, competencies, per-user locale/config, and email-login credentials; the type is a role the actor carries, never a separate table.**
+
 Composes: [[train]] · [[identity]] · [[auth]] · [[access]] · [[fields]] · [[config]].

@@ -17,6 +17,8 @@ Self-sufficiency is not only an operating heuristic; it is a **measurable securi
 
 Matter-twin: `self/sufficient/index.ts` (`selfSufficiencyVerdict` · `internalise` · `selfSufficientCrackVerdict`) + `index.test.ts` (the law, green by construction). Composes: [[self]] · [[tamper/cost]] · [[society]] · [[history]] · [[bindings]] · [[merge]] · [[proof]] · [[holographic]] · [[akashic]] · [[identity]].
 
+**Law — [[law]]: the [[self]] is total — every blank routes to its identity element, so all is defined even when nothing is — and from that completeness the agent DERIVES the next move and asks externally only as last resort; equivalently, decreasing external dependence raises the [[tamper/cost]] floor toward the digest bound (the weak-anchor caps it otherwise).**
+
 ## Common mistakes
 - Asking what's derivable — the record + the address-law already hold it; the question breaks flow and is strictly less efficient.
 - Leaving a blank undefined instead of routing it to its identity element.

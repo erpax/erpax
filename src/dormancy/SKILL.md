@@ -13,4 +13,6 @@ Dormancy is the gate of the perennial's recurring [[season]] (dormancy → bud-b
 - Extension pomology/viticulture (chilling requirement, chill models, bud-break, dormancy)
 - WSU / OSU tree-fruit (dormancy & chill accumulation)
 
+**Law — [[law]]: dormancy is the cold-requiring quiescent gate of the [[perennial]]'s recurring [[season]] — a cultivar must accumulate its chilling requirement (chill hours) before bud-break releases the next crop; it re-awakens the standing plant, it never re-instantiates it.**
+
 Composes [[perennial]] · [[season]] · [[degreeday]] · [[frost]] · [[pruning]] · [[maturity]] · [[pollination]] · [[harvest]] · [[terroir]] · [[risk]] · [[crop]].

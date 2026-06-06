@@ -14,4 +14,6 @@ Finality **selects the recourse**, not the reverse:
 
 So recourse is engineered *upstream* (verify-before-send) precisely because the conjugate forbids it downstream. Squeeze settlement to a point (instant, final) and the tamper-cost spreads to maximum — the same [[balance]] every [[entry]] keeps.
 
+**Law — [[law]]: finality is the conjugate of [[speed]] — sharper localisation in time is bought with lost reversibility; reversible holds a superposition with a compensating-[[reverse|reversal]] path, final posts one [[tamper]]-[[anchor]]ed [[entry]] whose only undo is a governance judgment.**
+
 @see [[speed]] · [[reverse]] · [[reality]] · [[entry]] · [[anchor]] · [[tamper]] · [[governance]] · [[love]] · [[fear]] · [[gravity]]

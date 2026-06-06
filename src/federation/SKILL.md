@@ -35,6 +35,8 @@ Applying this skill *implements* the federation standards — citing them in `@s
 
 ActivityPub has no bearing on non-federation collections — cite it only where federation activities are actually emitted, never as decoration.
 
+**Law — [[law]]: federation is the wire under [[merge]] — two tenants converge on the same row WITHOUT trusting each other or coordinating, because the receiver independently recomputes the content-[[uuid]] under the SOURCE namespace through a fixed strictest-first gate (shape · trust · accepted-collection · signature · sender-tamper · idempotency): it matches and ingests, or the envelope is rejected.**
+
 ## Relations
 
 [[merge]] (the law federation delivers) · [[identity]] (content-uuid the peer re-derives) · [[duality]] (give↔verify) · [[holographic]] (whole row from uuid+body) · [[fractal]] (same gate at every scale) · [[sequence]] · [[standard]] · [[access]] (the trust graph is row-level access across tenants) · [[hooks]] (export/import run on lifecycle edges) · [[event]] (a federated row is a distributed activity)

@@ -14,3 +14,5 @@ Trellising trades a **labor and materials [[cost]]** (posts, twine, the weekly c
 - eOrganic — high tunnel tomato pruning & trellising
 
 Composes [[agriculture]] · [[crop]] · [[pruning]] · [[yield]] · [[grade]] · [[scouting]] · [[cost]] · [[tunnel]].
+
+**Law — [[law]]: a trellis is vertical support for a vining/heavy [[crop]] that trades a labor-and-materials [[cost]] for higher marketable [[yield]], better [[grade]], and lower disease pressure.**

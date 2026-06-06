@@ -356,3 +356,5 @@ See `tests/standards/period-end-closing/` for:
 - [GDPR Article 32](https://gdpr-info.eu/art-32-gdpr/) – Security of processing
 - [eIDAS 2014/910/EU](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32014R0910) – Electronic signatures regulation
 - [SOX Section 404](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001018724&type=&dateb=&owner=exclude&count=100) – Management assessment of internal controls
+
+**Law — [[law]]: a period closes only when it is eligible (not already closed/locked, correct structure) and balanced (revenues = expenses); closing P&L to retained earnings deterministically generates the reversing entries posted to the next period, through an enforced workflow state machine with an immutable chain-leaf [[accounting]] audit trail.**

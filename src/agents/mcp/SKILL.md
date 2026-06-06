@@ -23,3 +23,5 @@ The capability is built; the connector is **deploy + OAuth + register** away. Sc
 - Hand-rolling an MCP server or transport — adopt `@payloadcms/plugin-mcp`; only ADD custom tools via its `mcp` config ([[collapse]]).
 - A tool that bypasses the key owner's access — every handler runs in the actor's `PayloadRequest`; never `overrideAccess` to widen scope at the gateway.
 - Calling a tool without sandboxing/receipting it — wrap trust-boundary tools with [[sandbox]] `permits` + a [[receipt]]; an un-receipted call has no proof it was permitted.
+
+**Law — [[law]]: erpax does not build an MCP server — it adopts the official `@payloadcms/plugin-mcp` ([[collapse]]), every tool handler inheriting the key owner's [[access]] so the gateway can never exceed the actor's rights, made trust-native: each call passes [[sandbox]] and emits a [[receipt]].**

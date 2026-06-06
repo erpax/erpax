@@ -39,3 +39,5 @@ Open/extensible attributes that don't merit a typed field → a `json` bag, the 
 - Two top-level fields with the same `name` → `DuplicateFieldName` (watch shared-field helpers + plugin-injected fields like `tenant`).
 - Deeply-nested group/select producing a >63-char enum name → add `dbName` (see [[recover]],[[database]]).
 - Inlining the same blocks in many collections instead of `blockReferences`.
+
+**Law — [[law]]: a field defines the document schema and auto-generates the admin UI from one definition — every field has a `type`, data fields a `name` unique at their level; the schema and its UI never drift because they are the same source.**

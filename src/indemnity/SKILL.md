@@ -13,3 +13,5 @@ Composes: [[liability]] · [[Contracts]] · [[matter]] · [[legal/entities/risk/
 - UCC
 - PECL-Art-8.301
 - Common-Law
+
+**Law — [[law]]: an indemnity is one party's promise to make another whole for loss or liability arising from a specified trigger (third-party claim, breach, negligence) — the obligation is bounded by its defined scope, caps and procedure.**

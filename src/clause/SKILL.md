@@ -13,3 +13,5 @@ Composes: [[Contracts]] · [[matter]] · [[standard]].
 - UNCITRAL-Model-Law
 - PECL
 - UNIDROIT-PICC
+
+**Law — [[law]]: a clause is the atomic unit of a contract — one distinct obligation or right with its own conditions, beneficiaries, triggers, and performance timeline.**

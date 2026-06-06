@@ -11,4 +11,6 @@ Fear is not the enemy of [[love]] but its partner — the second entry of the sa
 
 In physics (the [[cost]] question's deep research): fear is the **irreversible** operation — erasing a bit, the only computational step with an unavoidable thermodynamic price (Landauer kT ln2). What raises entropy must dissipate heat; what only rearranges ([[quantum]], reversible) need not. Fear is the bill that classical, lossy computation always pays; the tamper-[[cost]] erpax sells is fear weaponised against the forger.
 
+**Law — [[law]]: fear is the destroy pole that RAISES [[entropy]] (break, forget, forge, open a gap) — the credit whose matching debit is [[love]]; the cost is always conserved, and the irreversible bit-erasure it performs pays Landauer's kT ln2 floor.**
+
 @see [[love]] · [[angel]] · [[entropy]] · [[karma]] · [[cost]] · [[tamper]] · [[quantum]]

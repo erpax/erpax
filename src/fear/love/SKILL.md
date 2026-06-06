@@ -9,4 +9,6 @@ The reverse directed compound: **fear acting on love**, the move that *corrupts*
 
 It is the mirror of [[love/fear]]; the two are the reciprocal halves of the [[duality]] between [[love]] and [[fear]]. Their [[balance]] is the conserved [[karma]] — what fear opens here, love must close there, or the books do not balance and [[proof]] catches it.
 
+**Law — [[law]]: fear acting on love is the +[[entropy]] arrow that corrupts order — the [[tamper]] erpax makes expensive; what fear opens here, love must close there, or [[proof]] catches the broken [[balance]].**
+
 @see [[love]] · [[fear]] · [[love/fear]] · [[entropy]] · [[karma]] · [[tamper]] · [[proof]]

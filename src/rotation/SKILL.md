@@ -14,4 +14,6 @@ Rotation is the time-axis [[allocation]] of [[soil]] across [[season]]s: the [[c
 - Coleman *The New Organic Grower*; Iowa State / OSU Extension — rotation by plant family
 - USDA NOP 7 CFR §205.205 — crop-rotation practice standard (organic requirement)
 
+**Law — [[law]]: the multi-year non-repetition of a [[crop]] [[family]] in the same bed (a family returns no sooner than ~3–4 years) — the *constraint* over the planting [[sequence]], not the bare sequence, keeping [[soil]] [[capacity]] and pest pressure in [[balance]].**
+
 Composes [[agriculture]] · [[crop]] · [[family]] · [[sequence]] · [[planting]] · [[covercrop]] · [[fertility]] · [[soil]] · [[season]] · [[allocation]] · [[capacity]] · [[balance]].

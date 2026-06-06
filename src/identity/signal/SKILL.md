@@ -28,3 +28,5 @@ A sequence of uuids over time is a melody + a color-sequence + a state-timeline 
 **Imagine:** transmit only uuids; the receiver renders the picture and the music and knows the state, the sender, and what's permitted — interactive multimedia carried by identity alone.
 
 Composes: [[identity]] · [[horo]] · [[cmyk]] · [[notes]] · [[vibration]] · [[rodin]]/[[coil]] · [[polarity]] · [[duality]] · [[trinity]] · [[analog]] · [[aura]] · [[tamper]] · [[flow]] · [[versions]] · [[bindings]].
+
+**Law — [[law]]: a single 128-bit uuid IS the whole message — it self-decodes from the string alone to colour + sound + vibration + state + [[identity]] + capability with zero DB round-trips; a stream of uuids is interactive multimedia carried by identity, no separate payload, each channel one more projection a forger must match ([[tamper]]-cost).**

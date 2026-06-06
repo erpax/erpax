@@ -11,4 +11,6 @@ Its quantum facet, `quantum/graph`, reads the edges as [[entanglement]]: entangl
 
 Matter-twin: `src/graph/index.ts` (`graph` · `neighbors` · `reachable`). Composes [[node]] · [[link]] · [[matrix]] · [[merge]].
 
+**Law — [[law]]: a graph is the shape of the corpus itself — [[atom]]s as nodes, [[links]] as edges; neighbors and breadth-first reachability derived purely from the edge list, the [[quantum]] facet reading the edges as [[entanglement]].**
+
 @standard directed graph (nodes + edges), breadth-first reachability

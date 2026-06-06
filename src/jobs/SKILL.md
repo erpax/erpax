@@ -32,3 +32,5 @@ jobs: {
 - Doing slow work inline in `afterChange` instead of queuing a job.
 - Non-idempotent task handlers that break on retry.
 - Forgetting to actually run the queue (no runner scheduled).
+
+**Law — [[law]]: slow/async work leaves the request lifecycle for the queue as idempotent, retry-safe tasks (a runner must actually run it) — never inline in a hook.**

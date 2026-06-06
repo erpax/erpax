@@ -11,3 +11,5 @@ The inflow of a [[flow]] — debit · in · receive. Paired with [[give]]; Σ[[t
 
 ## Traditions (prefix removed)
 The debit side of the moral ledger: **sin** / *hamartia* (Greek, *missing the mark*) / *dhanb* — the deed that puts the soul in debt, posted as a [[take]] against its account and weighed at the [[close]] ([[accounting]], [[angel]]). Cleared only by [[give]] (atonement, restitution) or [[grace]] (the unearned write-off). Dual of [[give]].
+
+**Law — [[law]]: [[take]] is the inflow (debit · in · receive) of a [[flow]], the dual of [[give]]; Σ[[take]] = Σ[[give]] is [[balance]].**

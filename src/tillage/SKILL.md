@@ -15,3 +15,5 @@ Weed pressure is managed pre-crop by **stale seedbed** (prep, flush a weed cohor
 - SARE — conservation tillage; UVM / UMN Extension — tarping, solarization, occultation
 
 Composes [[agriculture]] · [[soil]] · [[cultivation]] · [[mulch]] · [[compost]] · [[planting]] · [[sequence]] · [[balance]] · [[mycorrhizae]].
+
+**Law — [[law]]: tillage intensity is the soil-disturbance dial — a short-term seedbed/weed win debited against long-term [[soil]] structure, biology, and [[mycorrhizae]]; the central [[balance]] of regenerative practice.**

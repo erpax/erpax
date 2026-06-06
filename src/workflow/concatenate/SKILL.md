@@ -20,5 +20,7 @@ The canonical workflows ship as **data** (atom refs only): `grow-to-whole` · `d
 
 Matter-twin: `src/workflow/concatenate/index.ts` (`Step` · `Workflow` · `concatenate` · `stepUuid` · `runStep` · `runWorkflow` · `WORKFLOWS` · `unresolvedAtoms`). Composes [[command]] · [[question]] · [[answer]] · [[step]] · [[sequence]] · [[breath]] · [[society]] · [[gate]] · [[merge]] · [[law]] · [[self]] · [[cost]] · [[spec]].
 
+**Law — [[law]]: a workflow is the free monoid `(C×Q×A)*` over command·question·answer steps run with NO human — execute the command, ask the gate, on NO apply the COMPUTED [[self]]-sufficient answer and re-ask until YES — reaching its idempotent fixed point W* exactly when every gate is YES at once: the four faces of zero [[entropy]] ⟺ ∞ tamper-cost.**
+
 @standard ISO/IEC 19510:2013 BPMN-2.0 — a free monoid over the workflow step
 @audit pure — the algebra + an injected NAME→effect registry; the canonical workflows are gated for groundedness

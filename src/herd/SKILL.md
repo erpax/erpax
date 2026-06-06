@@ -14,3 +14,5 @@ The herd aggregates the [[biological/assets|biological-asset]] value of its memb
 - IFRS IAS-41 (the herd as a group of biological assets)
 
 Composes [[livestock]] · [[animal]] · [[grazing]] · [[pasture]] · [[breed]] · [[fodder]] · [[capacity]] · [[mortality]] · [[cohort]] · [[lots]] · [[yield]] · [[measure]] · [[rotation]] · [[whole]] · [[part]] · [[biological/assets]].
+
+**Law — [[law]]: a herd is one production-and-accounting unit holding many [[animal]]s — the [[livestock]] twin of [[lots]]/[[cohort]], grouped, moved, grazed, and measured together; one whole, many parts.**

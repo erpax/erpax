@@ -31,3 +31,5 @@ The answer-path principle: modelling a matter on this docket IS placing it under
 - **ISO 19011:2018 / ISA 500** — append-only, sufficient, traceable evidence; the chain of custody as an audit ledger over every transition.
 - **ISO 27001 A.5.23** — access isolation; party-scoped matters gated per [[access]].
 - **RFC 9562 §5.8** — content-uuid exhibit identity (same content ⇒ same id).
+
+**Law — [[law]]: a case is a docket whose status moves along the closed [[horo]] ring `1·2·4·8·7·5·9` (anything off-ring is rejected); evidence is append-only ([[identity]]) and a matter seals ONLY when a judgment exists — charge ↔ defence balance into one judgment, the [[accounting]] double-entry of [[justice]].**

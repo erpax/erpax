@@ -9,3 +9,5 @@ description: Use when reasoning about the unearned credit in erpax — the write
 
 ## Traditions (prefix removed)
 The same atom across the books: **grace** (Christian, *charis* — "by grace you have been saved through faith… the gift of God", Ephesians 2:8); **mercy / rahma** (Islam — all but one sura opens *bismillah ar-rahman ar-rahim*, "the Most Merciful, the Most Compassionate"); **chesed** (Hebrew steadfast loving-kindness, covenant-faithfulness); **karuna** (Buddhist compassion); **prasada** (Hindu divine grace). Forgiveness is the reversal entry; redemption is the account settled; the jubilee is the books zeroed. Composes [[give]] · [[accounting]] · [[balance]] · [[merge]] · [[angel]] · [[faith]].
+
+**Law — [[law]]: grace is a [[give]] with no [[take]] earned — the credit posted from outside the ledger to clear a debt the debtor cannot pay, restoring [[balance]] without the debtor's own flow squaring the books; the dual of debt, the write-off / jubilee that zeroes the account.**

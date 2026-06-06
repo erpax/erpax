@@ -273,3 +273,5 @@ See `tests/standards/multi-currency-closing/` for:
 - [SAF-T 3.0.2](https://www.oecd.org/tax/administration/standard-audit-file-for-tax.htm) – Standard Audit File for Tax
 - [GDPR Article 32](https://gdpr-info.eu/art-32-gdpr/) – Security of processing
 - [NIST SP 800-92](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-92.pdf) – Guide to Computer Security Log Management
+
+**Law — [[law]]: closing must balance per currency, not just consolidated — exchange rates pinned to the period-end date make revaluation deterministic, and an immutable chain leaf proves no rate change was hidden.**

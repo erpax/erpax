@@ -15,6 +15,8 @@ Composes [[collections]], [[fields]], [[hooks]], [[access]], [[standard]], [[pro
 
 Workflow instances are gated by [[horo]] state machine transitions; audit evidence preserved via [[identity]] versioning.
 
+**Law — [[law]]: a workflow-definition is the reusable, data-driven approval TEMPLATE — BPMN-2.0 step kinds, assignee modes, SLA escalation, and JSON-Logic conditions for any collection authored without a code change — inert form until [[workflow|a process]] runs it, its instances gated by [[horo]] state-machine transitions.**
+
 ## Standards
 - ISO/IEC 19510:2013 BPMN-2.0
 - ISO-8601-1:2019 date-time

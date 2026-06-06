@@ -12,3 +12,5 @@ Composes: [[calculate]] · [[distribution]] · [[aggregation]] · [[metric]].
 ## Standards
 - ISO 2859 (sampling plans)
 - Statistical sampling (ISO 3534)
+
+**Law — [[law]]: a sample is a representative subset drawn by a stated method (random/stratified/systematic) with a [[calculate]]d sample size and quantified sampling error, so an inference about the whole carries a known confidence.**

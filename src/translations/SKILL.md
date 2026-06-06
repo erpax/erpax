@@ -19,4 +19,6 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - Conservation Law 10 referential-harmony (relatedTo back to the source row)
 - ISO 19011:2018 §6.4.6 (translation changes audit-trailed)
 
+**Law — [[law]]: a per-tenant override layer above the platform default — per-locale values within activation windows, each carrying provenance back to the row it overrides ([[balance]]).**
+
 Composes: [[fields]] · [[standard]] · [[identity]] · [[proof]].

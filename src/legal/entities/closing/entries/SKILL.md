@@ -15,3 +15,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - IFRS IAS-1 presentation-of-financial-statements
 - US-GAAP ASC-205 presentation
 - SOX §404 period-close-integrity
+
+**Law — [[law]]: period-end close zeroes the P&L accounts to retained earnings, auto-generates the reversing entries, locks the period, and leaves an immutable close audit trail.**

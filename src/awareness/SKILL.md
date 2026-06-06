@@ -10,3 +10,5 @@ description: "Use when reasoning about the discovery gate of a market — whethe
 awareness is the atom **marketing** exists to produce and that trendsetters ([[trend]] · [[power]]) amplify as taste-makers — a [[signal]] propagating across a [[segment]]. When awareness is the **zero atom**, trendsetters are exactly the right lever: their endorsement is the cheapest, highest-trust carrier of "this exists, and the right people use it." Awareness without [[desire]] is noise (people hear, don't care); desire without awareness is a silent market (people want, can't find) — both are zeros that cap the [[market]] product.
 
 Composes [[market]] · [[desire]] · [[signal]] · [[trend]] · [[segment]].
+
+**Law — [[law]]: awareness is the discovery gate — knowing the thing exists and answers a held want; distinct from [[desire]] (the want) and [[distribution]] (the obtaining), and a zero-atom that caps the [[market]] product.**

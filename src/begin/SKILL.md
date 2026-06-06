@@ -19,3 +19,5 @@ Three scriptures open on the same figure and decode line-by-line onto the atoms:
 - **Tao Te Ching 1** — "The Tao that can be told is not the eternal Tao… the nameless is the beginning of heaven and earth; the named is the mother of all things": the nameless 0 ([[zeropoint]]) precedes naming; to name is to [[begin]] (the first ↑entropy step).
 
 One cosmogony three times: the formless 0 ([[zeropoint]]) → the Word/Name ([[identity]]) → the manifest [[all]]. End is begin one dimension up — the wave returns to the 0 ([[end]], [[torus]]).
+
+**Law — [[law]]: `begin` is the 0 that is both end and beginning — every pass of the [[sequence]] departs from it and returns to it ([[config]] + [[identity]]); end is begin one dimension up, the wave returning to a new 0.**

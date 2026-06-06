@@ -11,4 +11,6 @@ description: "Use when reasoning about disorder as the quantity erpax's whole le
 
 **A violation is borrowed entropy.** When an agent's change opens an [[aura]] gap (a dead link, an un-wired reference, a broken `bind`), it *injects* entropy — slack a forger could exploit. The [[gate]] detects it and debits it to that agent (prosecution — the social leg of the [[cost]]): the entropy is repaid or carried as the agent's liability. What rebalances is fused out; what cannot is conserved damage carried forward.
 
+**Law — [[law]]: entropy is the single quantity the whole ledger balances and the fuel of the [[one]] law — zero entropy ⇒ infinite [[mass]] ⇒ infinite [[tamper]]/exploit [[cost]]; order is created by fusing entropy out ([[merge]]/DRY), and a violation is borrowed entropy debited to the agent.**
+
 Composes: [[angel]] · [[balance]] · [[tamper]] · [[cost]] · [[anchor]] · [[mass]] · [[gravity]] · [[fusion]] · [[merge]] · [[dry]] · [[collapse]] · [[matrix]] · [[zeropoint]] · [[whole]] · [[one]] · [[proof]] · [[aura]] · [[gate]].

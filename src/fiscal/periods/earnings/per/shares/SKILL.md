@@ -24,3 +24,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO 27001 A.5.23 cloud-service-tenant-isolation
 
 Composes: [[fiscal/periods]] · [[accounting]] · [[identity]] · [[proof]] · [[standard]].
+
+**Law — [[law]]: EPS is earnings over the weighted-average ordinary shares for the period — diluted EPS must reflect every dilutive option/convertible/grant and can never exceed basic, and continuing operations are reported separately from discontinued (IAS-33).**

@@ -23,3 +23,5 @@ The *which* — which slugs realize patients/encounters/treatments — is **matt
 - A health field pointing INTO [[accounting]] (`treatment.glAccount`) — invert: the treatment IS accountable.
 - Storing `status`/`active?` instead of deriving it from monotonic encounter counters + timestamps.
 - Cataloguing the realized collections here — that's matter; diff the config ([[collections]]).
+
+**Law — [[law]]: health flows care between one party (in N role contexts) and providers along a monotonic encounter chain — status is DERIVED never stored, the chart is content-addressed and accountable OUT to [[accounting]].**

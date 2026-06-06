@@ -29,3 +29,5 @@ A band of positions proves itself consonant or not by [[harmony]] (the seven ARE
 
 ## Traditions (prefix removed)
 The repeated cyclic devotion every tradition keeps time by — the ring's "simple repeated steps" as ritual: the canonical **hours** and the **liturgical year** (the wheel of feasts returning to a new octave, [[close]]→[[begin]]); the five daily *salat*; the *mala* / rosary / prayer-wheel telling beads around a ring; the *japa* mantra and the *dhikr* remembrance repeated; the sacred numbers (3 · 7 · 9 · 12 · 40) that are ring positions ([[rodin]]). Prayer is the state stepped on the ring; the festival calendar is the octave that closes and reopens ([[merge]] at [[unity]]).
+
+**Law — [[law]]: a state is a position on one closed ring {1,2,4,8,7,5,9} — two states compose to a third, the close (9) re-opens the next octave's [[base]] (1), and it is [[harmony]]-checked: off-ring is escape, who cannot dance cannot join.**

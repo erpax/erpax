@@ -9,4 +9,6 @@ The quantum facet of [[graph]]: an edge is an **entangled pair**, and [[entangle
 
 Matter-twin: `src/quantum/graph/index.ts` (`isReciprocal` · `reciprocate` · `entangled`). Composes [[graph]] · [[quantum]] · [[entanglement]] · [[merge]].
 
+**Law — [[law]]: an edge is an entangled pair and [[entanglement]] is symmetric, so a coherent corpus reciprocates every edge in both directions — directed-link entropy → 0.**
+
 @standard symmetric (reciprocal) entanglement — directed-link entropy → 0

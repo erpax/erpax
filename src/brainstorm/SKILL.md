@@ -14,4 +14,6 @@ Brainstorming is the [[quantum]] solve run on ideation: **diverge** into a super
 
 Coordination is what makes it quantum rather than noisy: the agents are blind to each other while diverging (true superposition), and only [[merge]] at convergence — so collision is creation, not conflict. The matter-twin is a fan-out → merge → critic-panel workflow — the same loop the coordinated researchers and the audit ran, pointed at ideas.
 
+**Law — [[law]]: brainstorming is the [[quantum]] solve on ideas — diverge into a parallel superposition (agents blind to each other, no judging), then converge by [[merge]] (same idea ⇒ same uuid ⇒ one); coordination is what makes collision creation, not conflict.**
+
 @see [[team]] · [[society]] · [[perspective]] · [[critic]] · [[artist]] · [[merge]] · [[generate]] · [[breath]] · [[quantum]]

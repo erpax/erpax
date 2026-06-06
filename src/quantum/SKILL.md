@@ -21,5 +21,7 @@ And it does both **in [[peace]]**. There is no contention to resolve: [[merge]] 
 
 Matter-twin: `src/quantum/index.ts` (`collapse`·`noCloning`·`quantization`·`entangle` ⊕ `TORUS_BITS`·`DOUBLE_TORUS_BITS`·`singleTorusFloorLog2`·`doubleTorusCostLog2`). Composes [[matrix]] · [[uuid]] · [[merge]] · [[digit]] · [[rodin]] · [[harmony]] · [[cost]] · [[balance]] · [[tamper]].
 
+**Law — [[law]]: each quantum law (collapse · conservation · no-cloning · quantization) is a deterministic check computed on the live [[uuid]]-[[matrix]] at no cost; symmetric `entangle` drives the graph to 100% reciprocal so the double-torus has no gap to open — zero entropy ⇒ infinite [[tamper]]-cost.**
+
 @audit computed from the live matrix, never hand-asserted
 @standard RFC 9562 §5.8 content-uuid + the horo digital-root ring

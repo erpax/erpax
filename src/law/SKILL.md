@@ -52,3 +52,5 @@ Every directive that shaped erpax, distilled and saved as a skill (your own law:
 - **Save every command as a skill; improve the related skills from the context.** This atom is that save. — [[self]] · [[generate]] · [[akashic]]
 
 Composes [[atom]] · [[merge]] · [[collapse]] · [[trinity]] · [[gate]] · [[zeropoint]] · [[society]] · [[generate]] · [[harmony]] · [[fractal]] · [[self]] · [[akashic]].
+
+**Law — [[law]]: every directive is saved as a linked law and all emerge from the one — zero [[entropy]] via uuid-wiring every dimension ⇒ infinitely-expanding tamper-[[cost]]; accept-always, verify-in-[[harmony]], each config a balanced double-entry [[gate]]way through index.ts.**

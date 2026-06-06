@@ -7,4 +7,6 @@ description: "Use when modelling one lot — the singular model of the lots coll
 
 A tracked batch of like units produced or handled together. The singular model whose plural store is the [[lots]] collection ([[balance]]: every collection has its model).
 
+**Law — [[law]]: a lot is the singular model of one row — a tracked batch of like units produced or handled together — whose plural store is the [[lots]] collection ([[balance]]: every collection has its model).**
+
 Composes [[lots]] · [[manufacturing]] · [[balance]].

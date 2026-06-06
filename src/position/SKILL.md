@@ -29,3 +29,5 @@ Sequence position: **2** ([[collections]] — positions aggregate the [[allocati
 - A hand-written job description — derive it from the position's coordinates ([[self]]/[[sufficient]]).
 - Storing conditions without their content-uuid — the terms ARE the identity; chain them (integrity) so tamper is a hash mismatch.
 - Hardcoding a tradition's hierarchy into the tiers — encode only the math; the labelling is the particular, the ladder is the universal ([[duality]]).
+
+**Law — [[law]]: a position is one rung on the harmonic rate ladder where government IS society — same harmonic ⇒ same hourly rate regardless of function; job descriptions computed, conditions content-addressed and chained so tamper is a hash mismatch.**

@@ -11,5 +11,7 @@ Use when modeling product options, SKU expansion, or feature flags — sizes, co
 
 Composes: [[Items]] · [[commerce]] · [[tags]] · [[crop]] · [[taxonomy]] · [[seed]] · [[maturity]] · [[hardiness]] · [[cropplan]] · [[yield]] · [[agriculture]].
 
+**Law — [[law]]: a variant is the unbounded product dimension — sizes, colors, configurations, or a crop cultivar — never a fixed grid or enum; the species expands into named variants the same open way a garment expands into options.**
+
 ## Standards
 - Commerce/product taxonomy

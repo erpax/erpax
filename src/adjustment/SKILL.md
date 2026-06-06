@@ -8,3 +8,5 @@ description: "Use when modelling one adjustment — the singular model of the ad
 A correction posted against a prior figure or balance. The singular model whose plural store is the [[adjustments]] collection ([[balance]]: every collection has its model).
 
 Composes [[adjustments]] · [[accounting]] · [[balance]].
+
+**Law — [[law]]: adjustment is the singular model of one correction posted against a prior figure or balance; the plural store is its collection ([[balance]]: every collection has its model).**

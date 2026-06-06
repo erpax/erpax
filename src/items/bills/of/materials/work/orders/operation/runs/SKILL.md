@@ -19,4 +19,6 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - SOX §404 internal-controls production-control
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
 
+**Law — [[law]]: the execution record of one routing step on a [[work/orders|work order]] — quantities ordered/produced/scrapped/backordered at one operation × work-center, yielding the ISA-95 yield and scrap KPIs.**
+
 Composes: [[work/orders|WorkOrders]].

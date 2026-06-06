@@ -33,3 +33,5 @@ At `/api/graphql` (+ playground). Mirrors collections as queries/mutations. Cap 
 - Forgetting `overrideAccess: false` in Local API when you DO want access enforced.
 - Re-instantiating Payload instead of cached `getPayload()`.
 - Heavy populate via REST/GraphQL `depth` instead of `select`/`depth:0`.
+
+**Law — [[law]]: three interfaces (Local/REST/GraphQL), one query syntax and one set of operations — the only divergence is that Local API skips access by default, so `overrideAccess: false` is what makes the three behave as one.**

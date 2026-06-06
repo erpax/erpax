@@ -17,6 +17,8 @@ Topic taxonomy + category taxonomy + double-materiality scale (ESRS 1 §3) + ass
 - Per-company double-materiality assessment process (separate methodology, captured in narrative).
 - Sector-specific ESRS (drafts in development by EFRAG).
 
+**Law — [[law]]: the CSRD/ESRS topic + double-materiality + assurance-level taxonomy consumed for disclosure tagging and ESRS E1 emissions roll-up — the standard's scales, not the per-company materiality assessment.**
+
 ## Citations
 
 - EU CSRD Directive 2022/2464 (Official Journal L 322, 16 December 2022)

@@ -15,4 +15,6 @@ This atom is a **standalone projection** of [[chakra]] — it never recomputes t
 
 Matter-twin: `src/root/index.ts` (`INDEX` · `center` · `color` · `uuid`). Composes [[chakra]] · [[horo]] · [[law]].
 
+**Law — [[law]]: root is a standalone projection of [[chakra]] center 0 ([[horo]] position 0) that never recomputes the math — the uuid is computed FROM the position math and the colour rendered FROM the uuid, never the reverse; only the position→note→uuid math is claimed, not the traditional red.**
+
 @audit note·colour·uuid computed from the position math, never hand-asserted

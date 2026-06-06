@@ -8,3 +8,5 @@ description: "Use when modelling one case — the singular model of the cases co
 One matter under adjudication or handling, with its parties and lifecycle. The singular model whose plural store is the [[cases]] collection ([[balance]]: every collection has its model).
 
 Composes [[cases]] · [[justice]] · [[balance]].
+
+**Law — [[law]]: a case is the singular model of one matter under adjudication, with its parties and lifecycle, whose plural store is the [[cases]] collection ([[balance]]: every collection has its model).**

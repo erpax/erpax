@@ -22,3 +22,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - PCI-DSS-4.0 §3.2 tokenized-card-data via-stripe
 
 Composes: [[invoices/credit/memos]] · [[Invoices]] · [[customers/sales/orders]] · [[journal/entries]] · [[accounting]] · [[access]].
+
+**Law — [[law]]: a refund is the cash-out leg of a credit memo (ISO-20022 pacs.004 return) — it posts a GL journal entry, tokenises card data (never stored), and clears only through refund-approval segregation of duties.**

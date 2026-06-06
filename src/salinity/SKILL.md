@@ -9,6 +9,8 @@ description: "Use when modelling soluble-salt buildup that degrades soil and str
 
 Salinity is a [[soil]]-degradation axis **orthogonal** to N-P-K [[fertility]] (a soil can be chemically fertile yet too saline to crop), driven by irrigation-water quality, poor drainage, and over-fertilization. It is reclaimed by **leaching** salts below the root zone (good drainage) and, for sodicity, **gypsum** (Ca displaces Na). A measured ECe is a [[measure]] the [[irrigation]] water and the [[fertility]] plan are both judged against.
 
+**Law — [[law]]: salinity is soluble-salt buildup (ECe) — a [[soil]]-degradation axis orthogonal to N-P-K [[fertility]]: a soil can be chemically fertile yet too saline to crop, and the measured ECe is the [[measure]] both the [[irrigation]] water and the fertility plan are judged against.**
+
 ## Standards
 - USDA Salinity Laboratory Handbook 60; UGA C1019 / Oklahoma State — interpreting soil salinity (ECe, ESP, SAR)
 - FAO — water quality for agriculture (salinity/sodicity hazard)
