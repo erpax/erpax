@@ -732,6 +732,19 @@ src/consistency/apply/index.ts:524: * @standard ISO/IEC 25010:2023 §5.1 functio
 src/consolidation/eliminations/index.ts:12: * @standard ISO-4217:2015 currency-codes
 src/consolidation/eliminations/index.ts:13: * @standard ISO-8601-1:2019 date-time consolidation-date
 src/constitution/index.ts:13: * @standard ISO 37000:2021 governance-of-organizations principle-of-purpose
+src/convention/addressed/index.ts:29: * @standard RFC 9562 §5.8 (uuidv8 content-uuid) + §4.1 variant — identity derived from content
+src/convention/complete/index.ts:24: * @standard schema.org — the type vocabulary, collided to single words
+src/convention/dry/index.ts:21: * @standard schema.org — the type vocabulary, collided to single words
+src/convention/folded/index.ts:30: * @standard schema.org — the type vocabulary, collided to single words
+src/convention/fronted/index.ts:38: * @standard schema.org — the type vocabulary, collided to single words
+src/convention/honest/index.ts:31: * @standard schema.org — the type vocabulary, collided to single words
+src/convention/lawful/index.ts:27: * @standard schema.org — the type vocabulary, collided to single words
+src/convention/link/index.ts:24: * @standard CommonMark / Obsidian `[[wikilink]]` syntax — resolved by normalized leaf word
+src/convention/named/index.ts:40: * @standard schema.org — the type vocabulary, collided to single words
+src/convention/reciprocal/index.ts:27: * @standard schema.org — the type vocabulary, collided to single words
+src/convention/sourced/index.ts:27: * @standard schema.org — the type vocabulary, collided to single words
+src/convention/triggered/index.ts:28: * @standard schema.org — the type vocabulary, collided to single words
+src/convention/twinned/index.ts:34: * @standard schema.org — the type vocabulary, collided to single words
 src/cost/centers/index.ts:14: * @standard ISO-3166-1:2020 country-codes geographic-segment-tagging
 src/cost/centers/index.ts:15: * @standard ISO-4217:2015 currency-codes
 src/cost/centers/job/positions/index.ts:9: * @standard ISO-8601-1:2019 date-time
@@ -5354,6 +5367,7 @@ src/coherence/index.ts:19: * @audit computed from the input trace, never hand-as
 src/collections/index.test.ts:11: * @audit ISO-19011:2018 §6.4 audit-evidence (every registered collection node verified)
 src/collections/index.test.ts:68: * @audit computed from the live collections barrel + each node's slug, never hand-listed
 src/collections/test.ts:11: * @audit ISO-19011:2018 §6.4 audit-evidence (every registered collection node verified)
+src/collider/index.ts:12: * @audit each check is a live computation in @/convention; the verdict is coverageCostLog2 of the product, never assumed
 src/commitments/and/contingencies/index.ts:22: * @audit ISO-19011:2018 audit-trail off-balance-sheet
 src/commitments/index.ts:31: * @audit ISO-19011:2018 audit-trail authorization-evidence
 src/compliance/frameworks/compliance/requirements/compliance/gaps/index.ts:5: * @audit ISO-19011:2018 nonconformity
@@ -5372,6 +5386,11 @@ src/consistency/apply/index.ts:356: * @audit ISO-19011:2018 audit-trail visual-e
 src/consistency/apply/index.ts:419: * @audit ISO 9241-210:2019 human-centred-design
 src/consistency/apply/index.ts:525: * @audit Slice PPPPPPPP-cont CREATE_GAP emergence
 src/consolidation/eliminations/index.ts:18: * @audit ISO-19011:2018 audit-trail consolidation-evidence
+src/convention/fresh/index.ts:27: * @audit imports + existence scanned LIVE from src/scripts/.vitepress; coverage never hand-asserted
+src/convention/import/index.ts:15: * @audit coverage = importPurity() from @/tamper/import — scanned live over src, never hand-asserted
+src/convention/index.ts:8: * @audit each coverage is a live computation in its atom; this file only collects them, no logic
+src/convention/sealed/index.ts:13: * @audit catches + leaks scanned live from src; coverage = (catches − leaks)/catches, never assumed
+src/convention/shallow/index.ts:16: * @audit coverage = importPurity() read live from @/tamper/import; never re-implemented, never defaulted
 src/cost/centers/index.ts:19: * @audit ISO-19011:2018 audit-trail
 src/cost/centers/job/positions/index.ts:11: * @audit ISO-19011:2018 audit-trail headcount-evidence
 src/cost/centers/job/positions/recruiting/pipelines/index.ts:14: * @audit ISO-19011:2018 audit-trail recruiting-evidence
@@ -5427,6 +5446,7 @@ src/data/subject/requests/index.ts:16: * @audit ISO-19011:2018 audit-trail dsr-e
 src/db/index.ts:11: * @audit the key is the content's uuid (content-addressed); dedup and the round-trip are computed
 src/decentralization/index.ts:16: * @audit computed, never hand-asserted
 src/decompression/index.ts:47: * @audit ISO 19011 — pay-over-time is a deterministic, auditable curve (no discretion)
+src/default/index.ts:11: * @audit the architectural default is computed from the name (uuid → digit); nothing is assigned
 src/deploy/index.ts:11: * @audit the band is the doubling 1·2·4·8; its consonance is computed by @/harmony, the order never assumed
 src/depreciation.service/index.ts:27: * @audit ISO-19011:2018 audit-trail depreciation-evidence
 src/design/index.ts:20: * @audit every token/palette entry is computed from an atom's uuid via pixel(); no hardcoded hex
