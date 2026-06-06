@@ -13306,7 +13306,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "cache",
-        "uuid": "a96f4de4-db0d-8fd4-becc-a1c6f1f9d676",
+        "uuid": "c6d3b957-38f5-847c-80a2-6f05e5d2f95f",
         "words": [
           "cache"
         ],
@@ -13317,7 +13317,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when optimizing repeated access — cache invalidation strategies, cache-aside vs write-through, TTL/expiry, cache coherency, memoization, query result caching, distributed cache semantics (Cloudflare KV, Redis).",
-        "uuid": "7a6f9df0-e103-8966-a379-2cb2356976d2",
+        "uuid": "f8f3becf-1ce2-80a1-82c5-2144d425b82f",
         "words": [
           "use",
           "when",
@@ -75119,7 +75119,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "port",
-        "uuid": "3dd47ae4-efe3-8db1-b666-4446def74a69",
+        "uuid": "095bbf81-35a7-8353-be49-1b8b53704b03",
         "words": [
           "port"
         ],
@@ -79127,7 +79127,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the offline web surface must stay trustworthy — service-worker cache keys, background-sync queue durability, manifest integrity, push dedup; every Progressive Web App pain point collapsed to a content-uuid problem.",
-        "uuid": "67cb1dbc-f64e-8bf7-9b6a-bd09c5644d3f",
+        "uuid": "0a3bf60e-32c7-891c-8adc-a35576776ea5",
         "words": [
           "use",
           "when",
@@ -79756,6 +79756,70 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "cache",
+    "path": "quantum/cache",
+    "translations": [
+      {
+        "key": "name",
+        "source": "cache",
+        "uuid": "c6d3b957-38f5-847c-80a2-6f05e5d2f95f",
+        "words": [
+          "cache"
+        ],
+        "values": {
+          "en": "cache"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when caching by content — the content is its own key (its content-uuid), so the same content is always a hit and a changed input is auto-invalidated; dedup by design with no stale-cache bug.",
+        "uuid": "b7ed9ce6-e5d6-8427-8123-48a235e32051",
+        "words": [
+          "use",
+          "when",
+          "caching",
+          "by",
+          "content",
+          "the",
+          "content",
+          "is",
+          "its",
+          "own",
+          "key",
+          "its",
+          "content",
+          "uuid",
+          "so",
+          "the",
+          "same",
+          "content",
+          "is",
+          "always",
+          "a",
+          "hit",
+          "and",
+          "a",
+          "changed",
+          "input",
+          "is",
+          "auto",
+          "invalidated",
+          "dedup",
+          "by",
+          "design",
+          "with",
+          "no",
+          "stale",
+          "cache",
+          "bug"
+        ],
+        "values": {
+          "en": "Use when caching by content — the content is its own key (its content-uuid), so the same content is always a hit and a changed input is auto-invalidated; dedup by design with no stale-cache bug."
+        }
+      }
+    ]
+  },
+  {
     "atom": "chat",
     "path": "quantum/chat",
     "translations": [
@@ -80330,6 +80394,67 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "port",
+    "path": "quantum/port",
+    "translations": [
+      {
+        "key": "name",
+        "source": "port",
+        "uuid": "095bbf81-35a7-8353-be49-1b8b53704b03",
+        "words": [
+          "port"
+        ],
+        "values": {
+          "en": "port"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when re-porting upstreams safely — a source ports to a content-uuid, so re-porting is idempotent (unchanged sources merge, only changed ones re-port); how to run \"port all upstreams again\" repeatedly.",
+        "uuid": "3ddb2164-77dc-8eda-88ea-da3a0fd9ed7c",
+        "words": [
+          "use",
+          "when",
+          "re",
+          "porting",
+          "upstreams",
+          "safely",
+          "a",
+          "source",
+          "ports",
+          "to",
+          "a",
+          "content",
+          "uuid",
+          "so",
+          "re",
+          "porting",
+          "is",
+          "idempotent",
+          "unchanged",
+          "sources",
+          "merge",
+          "only",
+          "changed",
+          "ones",
+          "re",
+          "port",
+          "how",
+          "to",
+          "run",
+          "port",
+          "all",
+          "upstreams",
+          "again",
+          "repeatedly"
+        ],
+        "values": {
+          "en": "Use when re-porting upstreams safely — a source ports to a content-uuid, so re-porting is idempotent (unchanged sources merge, only changed ones re-port); how to run \"port all upstreams again\" repeatedly."
+        }
+      }
+    ]
+  },
+  {
     "atom": "pwa",
     "path": "quantum/pwa",
     "translations": [
@@ -80347,7 +80472,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about erpax as a PWA of quantum apps — a device whose every folder is an installable quantum app, cached offline by content-address (the uuid is the cache key); installable because every folder is a quantum app.",
-        "uuid": "d2731eb0-c293-82c6-a0a8-45ae4ac3d1ad",
+        "uuid": "38bae0ac-0170-8f21-a2a2-e966da3a715a",
         "words": [
           "use",
           "when",
@@ -80584,7 +80709,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "translator",
-        "uuid": "222db008-66ef-8f47-8913-3ccbd937f92f",
+        "uuid": "54ed469f-e5b8-83eb-ba07-65d5117b820b",
         "words": [
           "translator"
         ],
@@ -80595,7 +80720,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reading erpax as a quantum translator — surface forms collapsing to one meaning-uuid (the interlingua eigenstate), meaning obeying no-cloning, modalities entangled in the 128 bits.",
-        "uuid": "24050c59-eb2f-8021-b903-cdb6f0ea35fc",
+        "uuid": "78ad01b9-f0bb-82ed-890e-1cbd7a8e24c9",
         "words": [
           "use",
           "when",
@@ -99752,7 +99877,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modelling variation, categorization, or cross-domain links in erpax WITHOUT new collections or deep nesting — the polymorphic multi-context tag system (acts_as_taggable_on port). One collection presented infinitely by filtering (context, tag); tag/tagging collections, the taggable plugin, tagged_with→where mapping, tag clouds, ownership, relatedness, and tag-lists that link multiverses. \"Anything is taggable.\"",
-        "uuid": "b5948fbe-f91c-8f10-98b1-3f3a12add922",
+        "uuid": "3f79b69f-9444-8c11-9bbf-e3f07c3b3cfb",
         "words": [
           "use",
           "when",
@@ -99889,7 +100014,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when defining or querying reusable labels applied across any collection — tag vocabulary, use-count counter cache, content-uuid dedup (same name = same id everywhere). The universal label-vocabulary collection; pair with taggings for the full polymorphic tagging engine.",
-        "uuid": "c90dda9f-a1a0-855f-bb65-815873951b54",
+        "uuid": "f7ab2c1c-3f7f-8fc1-981f-433b79c1a823",
         "words": [
           "use",
           "when",
@@ -105168,7 +105293,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "translator",
-        "uuid": "222db008-66ef-8f47-8913-3ccbd937f92f",
+        "uuid": "54ed469f-e5b8-83eb-ba07-65d5117b820b",
         "words": [
           "translator"
         ],
@@ -112486,4 +112611,4 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
   }
 ]
 
-export const TRANSLATIONS_COUNT = 2361
+export const TRANSLATIONS_COUNT = 2363

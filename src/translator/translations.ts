@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "translator",
-    "uuid": "222db008-66ef-8f47-8913-3ccbd937f92f",
+    "uuid": "54ed469f-e5b8-83eb-ba07-65d5117b820b",
     "words": [
       "translator"
     ],
