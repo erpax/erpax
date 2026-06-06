@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about why the corpus collapses toward one — gravity is mass's pull, and in erpax DRY = mass = gravity: the more an atom is referenced (mass), the more it attracts duplicates and orphans to fuse into it. Gravity is the FORCE, fusion the act, entropy the fuel, the matrix the product; perfect DRY is a singularity — all mass at the one root (the torus collapse).",
-    "uuid": "9a94a706-da21-8793-bf7d-32ef624aa72c",
+    "uuid": "f634736f-2a26-8feb-9362-c89ff384a7b9",
     "words": [
       "use",
       "when",

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when conducting or documenting a recorded conversation for research, hiring, or feedback — structured interviews, recorded sessions, interview notes, transcripts, insights extracted.",
-    "uuid": "ca48e8b5-ea5c-8b96-96fe-5d83631635ad",
+    "uuid": "4515a439-7a6a-80fd-b656-0e7872335c24",
     "words": [
       "use",
       "when",

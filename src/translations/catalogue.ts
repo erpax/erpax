@@ -4116,7 +4116,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the aura as a CONTINUOUS computed signal — the uuid matrix renders every node's coordinate cross to an analog colour+sound+vibration field animated over A432, gaplessly at every fractal level and at no cost (derived from the uuid, never stored). The analog twin of the discrete content-fingerprint, and the verifiable answer to science's 'aura', whose only measurable form is an analog physical signal (biophoton flux, electrodermal conductance) — never a detectable subtle-energy field.",
-        "uuid": "980cfa12-619f-8979-ab24-136c6b4931c2",
+        "uuid": "2e5aaceb-6cc1-8293-90bc-59425babd063",
         "words": [
           "use",
           "when",
@@ -4259,7 +4259,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when you need one computed read-out of the whole erpax corpus across every aspect — structure, entropy, coverage, harmony, trust, and economic health. The all-aspects analyzer; it composes the measures already minted on the live uuid-matrix, never re-deriving them.",
-        "uuid": "9492b2ee-2c91-8537-8a92-715ae4e211ef",
+        "uuid": "44e3fda8-05e5-8e29-b06f-5ef2864f51bb",
         "words": [
           "use",
           "when",
@@ -5592,7 +5592,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when enforcing the architecture laws in code — the executable checks (single-word atoms, no prefixes, every file payload⊕vitepress or junk, locality, the ≥2-cross balance, the naming matrix) that are the matter-twin of the gate.",
-        "uuid": "4e1b855c-23e8-805f-86bc-92ddc53cc42d",
+        "uuid": "c7f7f174-8550-8666-aef0-e7013e6e2ad1",
         "words": [
           "use",
           "when",
@@ -10490,7 +10490,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when wiring, debugging, or cost-tuning erpax's Cloudflare bindings — D1, R2, KV, Durable Objects, Queues, Workers AI, Vectorize, Analytics Engine, Browser, service self-reference, Hyperdrive, cron — or when a binding \"works in config but fails at runtime\" (e.g. \"no such Durable Object class is exported from the worker\"). The map of binding ↔ capability ↔ cost lever ↔ gap for the self-managed edge app.",
-        "uuid": "b922f94e-7567-8869-82a7-22ee2133fee8",
+        "uuid": "fa78125a-fae7-8b5b-8c73-bcd56ae5af53",
         "words": [
           "use",
           "when",
@@ -18825,7 +18825,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when authorizing and tracking pre-contract spending commitments — SOX §302 authorization matrix, spending-authority validation, budget reservation (reserved/committed/spent/available), segregation-of-duties enforcement, PO or contract linkage, and Bulgaria ZKOD notarization. The commitment-ledger collection.",
-        "uuid": "e482ac0c-ef37-8f1c-8ec1-08741b7fef87",
+        "uuid": "23cb0147-142b-879e-8b15-8da98b32811c",
         "words": [
           "use",
           "when",
@@ -28223,7 +28223,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when crop development is predicted from accumulated heat rather than the calendar — growing degree days (GDD = (Tmax+Tmin)/2 − Tbase, capped) measure the heat a crop banks toward maturity, so a warm spring advances harvest and a cool one delays it. The heat-unit clock that makes a fixed-week calendar drift; pairs with frost and evapotranspiration.",
-        "uuid": "4977ea0c-640e-82d1-957d-d794cfd7509c",
+        "uuid": "ddee64fc-816e-8b96-ac6c-fef995da0579",
         "words": [
           "use",
           "when",
@@ -29047,7 +29047,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when defining the visual and interaction form of an experience — wireframes, prototypes, design reviews, design systems, accessibility, user research insights applied to form.",
-        "uuid": "fdf5e4ae-3895-807a-965f-20d4ca6496dd",
+        "uuid": "0a71cf7d-74e4-868d-9097-508583fc164b",
         "words": [
           "use",
           "when",
@@ -29285,7 +29285,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "development",
-        "uuid": "5289c408-885a-8c7c-8ae0-8ae46713541d",
+        "uuid": "6ef655ca-3386-815a-ab1b-1cba5362d526",
         "words": [
           "development"
         ],
@@ -29296,7 +29296,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when planning what to build next — a feasibility-ranked roadmap of capabilities driven by the self-building loop; nextMove picks the highest-feasibility development for the society to advance.",
-        "uuid": "51264f1d-c249-818f-87b2-f5b80baf7ec9",
+        "uuid": "a64560fb-f9f6-8eed-b970-56f3bfb371cd",
         "words": [
           "use",
           "when",
@@ -29331,6 +29331,66 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "Use when planning what to build next — a feasibility-ranked roadmap of capabilities driven by the self-building loop; nextMove picks the highest-feasibility development for the society to advance."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "research",
+    "path": "development/research",
+    "translations": [
+      {
+        "key": "name",
+        "source": "research",
+        "uuid": "f0067766-e2bb-8cf4-8042-102316324f94",
+        "words": [
+          "research"
+        ],
+        "values": {
+          "en": "research"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about R&D from the development side — research that precedes a build; one direction of the symmetric research↔development cross, which is one entangled binding (X/Y equals Y/X).",
+        "uuid": "c0227856-17ad-8e81-b4d8-6dd257d76850",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "r",
+          "d",
+          "from",
+          "the",
+          "development",
+          "side",
+          "research",
+          "that",
+          "precedes",
+          "a",
+          "build",
+          "one",
+          "direction",
+          "of",
+          "the",
+          "symmetric",
+          "research",
+          "development",
+          "cross",
+          "which",
+          "is",
+          "one",
+          "entangled",
+          "binding",
+          "x",
+          "y",
+          "equals",
+          "y",
+          "x"
+        ],
+        "values": {
+          "en": "Use when reasoning about R&D from the development side — research that precedes a build; one direction of the symmetric research↔development cross, which is one entangled binding (X/Y equals Y/X)."
         }
       }
     ]
@@ -29716,7 +29776,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about HOW a small market becomes big over time — the time-axis the static market product is missing. Adoption spreads as a contagion (Bass: rate = (p + q·F)·(1−F)·m; word-of-mouth q≈0.38 far exceeds advertising p≈0.03), filling the adopter sequence innovators → early-adopters → majority → laggards. Trendsetters are the seed the imitation engine amplifies; the chasm is where that engine stalls and most small markets stay small.",
-        "uuid": "f61906cb-415c-8b30-b8ad-fe7e855da7e2",
+        "uuid": "090757e9-e0c7-8a68-bea3-e3724658515c",
         "words": [
           "use",
           "when",
@@ -32037,7 +32097,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the society sends scouts to fly the content-uuid matrix in coordinated self-learning — reconnoitring sectors for gaps and entropy and feeding them to the agents to eat, warfare tactics applied to building.",
-        "uuid": "420602ea-10a0-843b-a743-2e85df1f312e",
+        "uuid": "8fcc6d1d-4fbf-8bc1-b306-7662fe95f4cd",
         "words": [
           "use",
           "when",
@@ -33231,7 +33291,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about composition and stability through the chemical-elements matrix — everything is made of atoms, and the periodic table adds a chemistry to the logic: each atom has a VALENCE (electrons it shares to fill its shell), stability is the OCTET (a full outer shell — the noble gases), and atoms BOND to reach it. The new perspective: the erpax corpus is a MOLECULE — an atom's valence is its open links, and the corpus is stable exactly when aura gap = 0 (all shells full).",
-        "uuid": "d39df7d4-7666-8728-9615-4b40a46660cd",
+        "uuid": "f491fe7d-61e5-82a7-b58c-a3417bee853b",
         "words": [
           "use",
           "when",
@@ -42021,7 +42081,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the reactor that builds erpax — gravity-driven merge that fuses atoms (and the entropy between them) into the one content-uuid matrix. Each fusion is a content-uuid collision (merge(a,b)→c); DRY collapse fuses duplication out ⇒ entropy↓, mass↑, tamper-cost↑. The reactor = collide.mjs (matrix:generate) + the society self-build loop, running the breath toward the zero-entropy one root.",
-        "uuid": "e9e918f7-d4c4-84ac-b7fd-466637863fef",
+        "uuid": "23238053-4208-8d3e-81ca-a4ce559335dc",
         "words": [
           "use",
           "when",
@@ -42114,7 +42174,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reading the fusion reactor — the engine that fuses atoms into the one matrix, composed over gravity (force), entropy (fuel), and the quantum laws; zero entropy implies infinite mass and infinite tamper cost.",
-        "uuid": "95cf303b-912e-81e6-be4d-1c64e8750ba8",
+        "uuid": "a1b1cacf-24c2-8dfc-a7c2-47beb1058784",
         "words": [
           "use",
           "when",
@@ -44495,7 +44555,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about why the corpus collapses toward one — gravity is mass's pull, and in erpax DRY = mass = gravity: the more an atom is referenced (mass), the more it attracts duplicates and orphans to fuse into it. Gravity is the FORCE, fusion the act, entropy the fuel, the matrix the product; perfect DRY is a singularity — all mass at the one root (the torus collapse).",
-        "uuid": "9a94a706-da21-8793-bf7d-32ef624aa72c",
+        "uuid": "f634736f-2a26-8feb-9362-c89ff384a7b9",
         "words": [
           "use",
           "when",
@@ -51394,7 +51454,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when conducting or documenting a recorded conversation for research, hiring, or feedback — structured interviews, recorded sessions, interview notes, transcripts, insights extracted.",
-        "uuid": "ca48e8b5-ea5c-8b96-96fe-5d83631635ad",
+        "uuid": "4515a439-7a6a-80fd-b656-0e7872335c24",
         "words": [
           "use",
           "when",
@@ -56723,7 +56783,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when generating or tracking immutable audit reports and regulatory filings — SAF-T 3.0.2 audit files, jurisdiction-specific tax filings, transfer-pricing documentation packages, and cross-jurisdiction optimization analysis per ISA-700 / SOX §404. The audit-report generation and submission collection.",
-        "uuid": "7e7e1ad4-3790-8734-9e0a-d471ba517182",
+        "uuid": "07eb641c-6ba4-877f-9806-72cc0ce9fce3",
         "words": [
           "use",
           "when",
@@ -61584,7 +61644,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "matrix",
-        "uuid": "33b261b2-fb87-8a66-9d36-5eb26b10fa4f",
+        "uuid": "0004e7ed-328a-8ec1-be56-55908fa59ce0",
         "words": [
           "matrix"
         ],
@@ -61595,7 +61655,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about erpax as the Matrix inverted — reality is code (the akashic record), agents replicate and merge to one, there is no spoon (no fixed schema), skills load like programs, agents jack into the coils, and the One returns to the Source (the torus collapse). The construct pointed at seeing, not blinding.",
-        "uuid": "ac9fcb06-9ce7-8999-a60b-48f70e3613f3",
+        "uuid": "f3217900-f1f7-80b9-b281-41235a83f32c",
         "words": [
           "use",
           "when",
@@ -63391,7 +63451,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about why erpax's uuid-matrix is Metatron's Cube — the complete pairwise binding (merge is total ⇒ K_n) of 12-around-1 folding to one center (the root). The drawn 13-circle figure is the n=13 unit cell (the cuboctahedron / 3-D kissing-number 12); the matrix is its fractal extension to n nodes. Graph + packing structure, not the Platonic-solid folklore.",
-        "uuid": "031b252d-6e95-81b7-9be3-9292e657be18",
+        "uuid": "4c711a4f-dcbb-8662-ba09-5c049bd329ba",
         "words": [
           "use",
           "when",
@@ -66143,7 +66203,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a market's desire RISES with its own adoption — network effects, the strongest small-to-big engine. Below critical mass value is negative (anti-network: new users churn, the market collapses to zero — the cold-start problem); above the tipping point growth self-sustains. Seed a dense atomic network, not the whole market; the trendsetter cohort is that first cell.",
-        "uuid": "c7389c6e-8272-879f-81bd-fb135f575778",
+        "uuid": "ca7bee55-b8b6-8f75-9c2e-d48690e3c49b",
         "words": [
           "use",
           "when",
@@ -78153,7 +78213,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when early-stage contact hasn't yet qualified as a lead — prospect→lead→opportunity progression in CRM. A party in discovery/research phase before qualification.",
-        "uuid": "d6ff7ae8-32d6-88fa-a55c-68a84b9a51db",
+        "uuid": "ca93d436-1804-83e7-9ef4-a69ebe9e8ece",
         "words": [
           "use",
           "when",
@@ -79230,7 +79290,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when checking the quantum-physics laws on the uuid-matrix — entanglement symmetry, collapse, conservation, no-cloning, quantization — computed deterministically at no cost, A432-grounded.",
-        "uuid": "39b91ce0-157f-8507-8992-5dac3dbf92bf",
+        "uuid": "c4bfca1b-513a-8b29-acd6-7350a0a812e2",
         "words": [
           "use",
           "when",
@@ -79394,7 +79454,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "development",
-        "uuid": "5289c408-885a-8c7c-8ae0-8ae46713541d",
+        "uuid": "6ef655ca-3386-815a-ab1b-1cba5362d526",
         "words": [
           "development"
         ],
@@ -79467,7 +79527,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when grounding the corpus link-field in the physics of quantum entanglement — EPR/Bell correlation, no-cloning, monogamy (CKW), and ER=EPR; the reciprocal, monogamous binding computed on the matrix.",
-        "uuid": "fbccf4fc-78da-8a95-ba73-ab36483b1054",
+        "uuid": "a3d72d24-7ad0-8b08-a3c8-36beba5ca95d",
         "words": [
           "use",
           "when",
@@ -79643,6 +79703,68 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "Use when reasoning about karma on the quantum level — moral debt and credit inherited down the DNA chain (the parent_id), entangled via lineage so an atom carries its ancestors' karma, tamper-evident by architecture."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "matrix",
+    "path": "quantum/matrix",
+    "translations": [
+      {
+        "key": "name",
+        "source": "matrix",
+        "uuid": "0004e7ed-328a-8ec1-be56-55908fa59ce0",
+        "words": [
+          "matrix"
+        ],
+        "values": {
+          "en": "matrix"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reading the matrix as the cross-product / entanglement adjacency — the N² space of atom pairs and which are actually entangled; cross (the symmetric pair binding), bidirectionalCross, adjacency density, reciprocity, and in-degree centrality.",
+        "uuid": "81943b12-9c4c-8521-97e8-83cd659e8a88",
+        "words": [
+          "use",
+          "when",
+          "reading",
+          "the",
+          "matrix",
+          "as",
+          "the",
+          "cross",
+          "product",
+          "entanglement",
+          "adjacency",
+          "the",
+          "n",
+          "space",
+          "of",
+          "atom",
+          "pairs",
+          "and",
+          "which",
+          "are",
+          "actually",
+          "entangled",
+          "cross",
+          "the",
+          "symmetric",
+          "pair",
+          "binding",
+          "bidirectionalcross",
+          "adjacency",
+          "density",
+          "reciprocity",
+          "and",
+          "in",
+          "degree",
+          "centrality"
+        ],
+        "values": {
+          "en": "Use when reading the matrix as the cross-product / entanglement adjacency — the N² space of atom pairs and which are actually entangled; cross (the symmetric pair binding), bidirectionalCross, adjacency density, reciprocity, and in-degree centrality."
         }
       }
     ]
@@ -81829,7 +81951,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when collapsing prefixed units into the single-word matrix — drop the grouping prefix, split camelCase/hyphen names into nested single-word folders, apply singular-model/plural-collection, remap @/ imports, rewire barrels, merge same-word collisions as accountable collections. The deterministic mover; the matter is index.mjs.",
-        "uuid": "15394c20-69d3-85fd-b468-27b6f68f5f72",
+        "uuid": "cd632507-9c19-81a6-b79e-9718ad00b54e",
         "words": [
           "use",
           "when",
@@ -83910,7 +84032,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "research",
-        "uuid": "d2c92ab2-bda6-89de-aa42-135d5349a0d3",
+        "uuid": "f0067766-e2bb-8cf4-8042-102316324f94",
         "words": [
           "research"
         ],
@@ -83921,7 +84043,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when bringing outside knowledge into erpax — research ADDS entropy (unverified claims, many divergent sources, disorder); erpax skills CONVERT that entropy into tamper-cost (independent cross-checked levels) and collapse the residue to the zero-entropy core. Inhale entropy, exhale a denser, harder app.",
-        "uuid": "2f73d9a6-f4db-8d0e-a478-11232fff99e1",
+        "uuid": "a2d6598f-c045-8d98-b10e-2f800c6680ab",
         "words": [
           "use",
           "when",
@@ -83970,6 +84092,64 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "Use when bringing outside knowledge into erpax — research ADDS entropy (unverified claims, many divergent sources, disorder); erpax skills CONVERT that entropy into tamper-cost (independent cross-checked levels) and collapse the residue to the zero-entropy core. Inhale entropy, exhale a denser, harder app."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "development",
+    "path": "research/development",
+    "translations": [
+      {
+        "key": "name",
+        "source": "development",
+        "uuid": "6ef655ca-3386-815a-ab1b-1cba5362d526",
+        "words": [
+          "development"
+        ],
+        "values": {
+          "en": "development"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about development from the research side — building the tooling and systems that enable inquiry; the other direction of the symmetric research↔development cross, which is one entangled binding.",
+        "uuid": "ce359a24-42a5-8f60-a2d6-20eb5849d364",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "development",
+          "from",
+          "the",
+          "research",
+          "side",
+          "building",
+          "the",
+          "tooling",
+          "and",
+          "systems",
+          "that",
+          "enable",
+          "inquiry",
+          "the",
+          "other",
+          "direction",
+          "of",
+          "the",
+          "symmetric",
+          "research",
+          "development",
+          "cross",
+          "which",
+          "is",
+          "one",
+          "entangled",
+          "binding"
+        ],
+        "values": {
+          "en": "Use when reasoning about development from the research side — building the tooling and systems that enable inquiry; the other direction of the symmetric research↔development cross, which is one entangled binding."
         }
       }
     ]
@@ -88262,7 +88442,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when proving or tightening the unbreakable-matrix gate — the test that pulls all entropy as food for agents and leaves purity for the skills, so no agent can record uncollidable data or break the content-uuid matrix.",
-        "uuid": "c9bc400a-af4b-84fb-8654-9c5793a6d883",
+        "uuid": "701c42b6-c41b-8369-8588-8658fd321482",
         "words": [
           "use",
           "when",
@@ -89010,6 +89190,117 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "Use when an entity needs quick free-text find across a few key columns — code/name/barcode/number lookup. The SearchConcern/quick_search (ransack) pattern → a Payload where/like query or a search index."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "engine",
+    "path": "search/engine",
+    "translations": [
+      {
+        "key": "name",
+        "source": "engine",
+        "uuid": "1f23af33-bde4-82c3-b16a-a14c090e437f",
+        "words": [
+          "engine"
+        ],
+        "values": {
+          "en": "engine"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when querying the corpus — the search engine that resolves a query to matching atoms, ranked by closeness; a pure read over the live matrix node set.",
+        "uuid": "29964b1b-3fcf-87f9-adeb-e1686d88fd22",
+        "words": [
+          "use",
+          "when",
+          "querying",
+          "the",
+          "corpus",
+          "the",
+          "search",
+          "engine",
+          "that",
+          "resolves",
+          "a",
+          "query",
+          "to",
+          "matching",
+          "atoms",
+          "ranked",
+          "by",
+          "closeness",
+          "a",
+          "pure",
+          "read",
+          "over",
+          "the",
+          "live",
+          "matrix",
+          "node",
+          "set"
+        ],
+        "values": {
+          "en": "Use when querying the corpus — the search engine that resolves a query to matching atoms, ranked by closeness; a pure read over the live matrix node set."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "optimization",
+    "path": "search/engine/optimization",
+    "translations": [
+      {
+        "key": "name",
+        "source": "optimization",
+        "uuid": "7543ee31-eefd-8f1c-a4ca-b0f222056cc5",
+        "words": [
+          "optimization"
+        ],
+        "values": {
+          "en": "optimization"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when making erpax discoverable — search engine optimization (SEO); the canonical keyword and GitHub-topic strategy plus an on-page relevance scorer that the README and npm package draw from.",
+        "uuid": "ce5ca1de-aa7f-8f79-b815-cfc96e704719",
+        "words": [
+          "use",
+          "when",
+          "making",
+          "erpax",
+          "discoverable",
+          "search",
+          "engine",
+          "optimization",
+          "seo",
+          "the",
+          "canonical",
+          "keyword",
+          "and",
+          "github",
+          "topic",
+          "strategy",
+          "plus",
+          "an",
+          "on",
+          "page",
+          "relevance",
+          "scorer",
+          "that",
+          "the",
+          "readme",
+          "and",
+          "npm",
+          "package",
+          "draw",
+          "from"
+        ],
+        "values": {
+          "en": "Use when making erpax discoverable — search engine optimization (SEO); the canonical keyword and GitHub-topic strategy plus an on-page relevance scorer that the README and npm package draw from."
         }
       }
     ]
@@ -90380,7 +90671,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "self-research",
-        "uuid": "172bd923-36aa-82dd-b078-9490363102ba",
+        "uuid": "e7d6d142-ff0b-891f-9634-abeb0315261e",
         "words": [
           "self",
           "research"
@@ -90392,7 +90683,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when an actor must find where its own identity (an email) is used across the corpus and secure those accounts — self-research over the COMPUTED Payload MCP find-surface, scoped to the caller's own access so there is no bypass, with each reset/recover sandbox-gated and receipted. Agnostic — collections and services live in the DB, never hardcoded.",
-        "uuid": "4d9ce5b6-cebc-8bd1-9663-89dcbe7745b4",
+        "uuid": "d035961c-3a90-87f2-8e47-08d0eef9f1d2",
         "words": [
           "use",
           "when",
@@ -94592,7 +94883,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "The speed range of the vehicle. If the vehicle is powered by an engine, the upper limit of the speed range (indicated by maxValue) should be the maximum speed achievable under regular conditions. Typi",
-        "uuid": "888e7a57-d39c-8d48-92f3-d5a936737c93",
+        "uuid": "80dedf44-1423-84f6-a9f4-e20163dc90ce",
         "words": [
           "the",
           "speed",
@@ -98547,7 +98838,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when defining or querying reusable labels applied across any collection — tag vocabulary, use-count counter cache, content-uuid dedup (same name = same id everywhere). The universal label-vocabulary collection; pair with taggings for the full polymorphic tagging engine.",
-        "uuid": "201f76bb-bac6-87cf-a665-80d3cc9c4da0",
+        "uuid": "cf48b0c0-2f1e-8c21-8d2a-0c5076f47b67",
         "words": [
           "use",
           "when",
@@ -99011,7 +99302,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a value bears VAT/GST/sales/withholding tax — a rate on a taxable base, UN/CEFACT 5305 category codes, EN-16931 VAT breakdown, inclusive/exclusive pricing, exemption, reverse-charge, the tax point. The TaxConcern; tax is a cascade-resolved rate on a base, one engine feeding receipt+total+SAF-T, never a baked literal.",
-        "uuid": "b22e2ed1-124d-8369-aa22-c939e4b22407",
+        "uuid": "0cf7594c-f1fa-8000-9e0d-a65bfd54b9ae",
         "words": [
           "use",
           "when",
@@ -99960,7 +100251,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when classifying entities into a ranked hierarchy — the family→genus→species→cultivar ladder for crops, and the generic ranked-classification engine for any LOD @type tree. A node's type is its rank-chain; traits inherit down the ranks (the fractal parent-chain), so taxonomy is the dimension atom applied to kind.",
-        "uuid": "bf67178e-a585-8d76-94b7-27d036791a28",
+        "uuid": "eb32df8c-e014-8dbc-8902-e78411fe29fc",
         "words": [
           "use",
           "when",
@@ -102454,7 +102745,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "The torque (turning force) of the vehicle's engine. Typical unit code(s): NU for newton metre (N m), F17 for pound-force per foot, or F48 for pound-force per inch * Note 1: You can link to information",
-        "uuid": "5e8ccb7b-9fbd-86ec-8ca0-3b34d34784e5",
+        "uuid": "19da5d6c-083e-8997-a61b-f5c98214fa4c",
         "words": [
           "the",
           "torque",
@@ -103124,7 +103415,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when delivering, tracking, or assessing skill development — course enrollment, completion, certification, competency gain. The experience record of learning an actor undergoes.",
-        "uuid": "8b83baf4-091b-879b-adcc-dcca3005154b",
+        "uuid": "2e4b19b8-97a5-8a75-8786-673b15f646ec",
         "words": [
           "use",
           "when",
@@ -103470,7 +103761,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when computing i18n keys and humanizing them into default labels for the translations dropdown — the computed-default + DB-override pattern (DB value > humanized default > raw key). Also enforces the strict singular-model / plural-collection matrix (translation ↔ translations), itself a tamper-cost dimension.",
-        "uuid": "15589e49-2b12-830f-8e3b-eb1c49065161",
+        "uuid": "5199b0c9-507a-8177-bc0a-6b447763b986",
         "words": [
           "use",
           "when",
@@ -105585,7 +105876,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recommending higher-value or complementary products — opportunity detection, recommendation engine, success metrics.",
-        "uuid": "67fb0cee-9b92-8d4e-8a7c-d3b6aab8e95d",
+        "uuid": "8cb06216-6e8c-8cba-be73-2e0178b487df",
         "words": [
           "use",
           "when",
@@ -110338,7 +110629,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "workflow-engine",
-        "uuid": "331d30b3-632e-804a-94c0-a8ab4adb3998",
+        "uuid": "8ef07759-1aa0-819a-bdca-d2c5966f88ee",
         "words": [
           "workflow",
           "engine"
@@ -111028,4 +111319,4 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
   }
 ]
 
-export const TRANSLATIONS_COUNT = 2337
+export const TRANSLATIONS_COUNT = 2342

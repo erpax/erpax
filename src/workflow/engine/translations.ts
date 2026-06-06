@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "workflow-engine",
-    "uuid": "331d30b3-632e-804a-94c0-a8ab4adb3998",
+    "uuid": "8ef07759-1aa0-819a-bdca-d2c5966f88ee",
     "words": [
       "workflow",
       "engine"
