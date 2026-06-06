@@ -5874,6 +5874,7 @@ src/standards/index.ts:30: * @audit Conservation Law 28 standards-supersession-t
 src/standards/index.ts:31: * @audit Conservation Law 38 mcp-tool-standardization
 src/storage/independence/index.ts:65: * @audit ISO 19011:2018 §6.4.6 (cross-backend verification audit-trailed)
 src/stream/index.ts:48: * @audit ISO 19011:2018 §6.4.6 (every stream window audit-trailed)
+src/strength/index.ts:12: * @audit strength = coverageCostLog2(dryness, slices); dryness read live from the dry residue, computed
 src/subscription/plans/hooks/index.ts:11: * @audit ISO-19011:2018 audit-trail
 src/subscription/plans/subscriptions/hooks/emitLifecycleEvents.ts:29: * @audit ISO-19011:2018 audit-trail subscription-lifecycle
 src/subscription/plans/subscriptions/hooks/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
