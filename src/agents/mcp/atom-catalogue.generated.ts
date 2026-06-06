@@ -13175,6 +13175,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "vitepress"
   },
   {
+    "atom": "vocabulary",
+    "name": "vocabulary",
+    "description": "Use when checking that every word in the corpus comes from the shared standards-grounded vocabulary — the dictionary, schema.org, standard codes, and established domain terms. Whatever the language, words are written only from this one scheme; an ungrounded word is entropy, and the audit computes its zero-entropy solution.",
+    "path": "vocabulary"
+  },
+  {
     "atom": "volcano",
     "name": "volcano",
     "description": "A volcano, like Fujisan.",

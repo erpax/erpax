@@ -92511,7 +92511,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modelling the living medium a crop grows in — soil as the three-phase (mineral·water·air) body whose texture/structure/tilth, organic matter, biology, moisture and chemistry set what fertility, water, and yield are possible. The parent the fertility/water/cover-crop vocabulary hangs from; a capacity reservoir managed, depleted, and rebuilt.",
-        "uuid": "cf6c3434-1173-8a7f-9e78-6df802638625",
+        "uuid": "270c1423-9f1a-88fc-a80a-3082af56f9f9",
         "words": [
           "use",
           "when",
@@ -97458,7 +97458,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when defining or querying reusable labels applied across any collection — tag vocabulary, use-count counter cache, content-uuid dedup (same name = same id everywhere). The universal label-vocabulary collection; pair with taggings for the full polymorphic tagging engine.",
-        "uuid": "7188783f-543e-8f42-b438-ba3f3eb0e66d",
+        "uuid": "201f76bb-bac6-87cf-a665-80d3cc9c4da0",
         "words": [
           "use",
           "when",
@@ -106778,6 +106778,83 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "vocabulary",
+    "path": "vocabulary",
+    "translations": [
+      {
+        "key": "name",
+        "source": "vocabulary",
+        "uuid": "8d633ecb-91f1-839c-a4a7-e39e79486ae1",
+        "words": [
+          "vocabulary"
+        ],
+        "values": {
+          "en": "vocabulary"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when checking that every word in the corpus comes from the shared standards-grounded vocabulary — the dictionary, schema.org, standard codes, and established domain terms. Whatever the language, words are written only from this one scheme; an ungrounded word is entropy, and the audit computes its zero-entropy solution.",
+        "uuid": "ba4b62bb-200a-8b97-9d0d-997fd6e7dea4",
+        "words": [
+          "use",
+          "when",
+          "checking",
+          "that",
+          "every",
+          "word",
+          "in",
+          "the",
+          "corpus",
+          "comes",
+          "from",
+          "the",
+          "shared",
+          "standards",
+          "grounded",
+          "vocabulary",
+          "the",
+          "dictionary",
+          "schema",
+          "org",
+          "standard",
+          "codes",
+          "and",
+          "established",
+          "domain",
+          "terms",
+          "whatever",
+          "the",
+          "language",
+          "words",
+          "are",
+          "written",
+          "only",
+          "from",
+          "this",
+          "one",
+          "scheme",
+          "an",
+          "ungrounded",
+          "word",
+          "is",
+          "entropy",
+          "and",
+          "the",
+          "audit",
+          "computes",
+          "its",
+          "zero",
+          "entropy",
+          "solution"
+        ],
+        "values": {
+          "en": "Use when checking that every word in the corpus comes from the shared standards-grounded vocabulary — the dictionary, schema.org, standard codes, and established domain terms. Whatever the language, words are written only from this one scheme; an ungrounded word is entropy, and the audit computes its zero-entropy solution."
+        }
+      }
+    ]
+  },
+  {
     "atom": "volcano",
     "path": "volcano",
     "translations": [
@@ -108658,7 +108735,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modeling the reusable work-phase (operation) catalog — the routing vocabulary (sewing/cutting/buttonholes/steaming/embroidery/dyeing/finishing) a lot is produced through, a self-referential tree with standard time.",
-        "uuid": "8eacdc59-4970-8dff-b39d-9483f8ccb802",
+        "uuid": "7943f601-fc1f-83d1-8324-b230221d19d1",
         "words": [
           "use",
           "when",
@@ -109770,4 +109847,4 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
   }
 ]
 
-export const TRANSLATIONS_COUNT = 2318
+export const TRANSLATIONS_COUNT = 2319
