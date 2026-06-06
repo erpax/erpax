@@ -81769,6 +81769,84 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "relocate",
+    "path": "relocate",
+    "translations": [
+      {
+        "key": "name",
+        "source": "relocate",
+        "uuid": "9d9bee9e-7ff4-8a74-ac2e-90c161d1fad1",
+        "words": [
+          "relocate"
+        ],
+        "values": {
+          "en": "relocate"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when deciding WHERE logic belongs — move it to its gravity well, the heaviest atom it is wired to, the adequate place nearest its users. Computes each atom's gravity centre and the pull toward it, so general logic buried in a specialized module is drawn up to the general atom.",
+        "uuid": "6a1afba9-abc9-8f23-9292-60bc5b6a6c6d",
+        "words": [
+          "use",
+          "when",
+          "deciding",
+          "where",
+          "logic",
+          "belongs",
+          "move",
+          "it",
+          "to",
+          "its",
+          "gravity",
+          "well",
+          "the",
+          "heaviest",
+          "atom",
+          "it",
+          "is",
+          "wired",
+          "to",
+          "the",
+          "adequate",
+          "place",
+          "nearest",
+          "its",
+          "users",
+          "computes",
+          "each",
+          "atom",
+          "s",
+          "gravity",
+          "centre",
+          "and",
+          "the",
+          "pull",
+          "toward",
+          "it",
+          "so",
+          "general",
+          "logic",
+          "buried",
+          "in",
+          "a",
+          "specialized",
+          "module",
+          "is",
+          "drawn",
+          "up",
+          "to",
+          "the",
+          "general",
+          "atom"
+        ],
+        "values": {
+          "en": "Use when deciding WHERE logic belongs — move it to its gravity well, the heaviest atom it is wired to, the adequate place nearest its users. Computes each atom's gravity centre and the pull toward it, so general logic buried in a specialized module is drawn up to the general atom."
+        }
+      }
+    ]
+  },
+  {
     "atom": "remaining",
     "path": "remaining",
     "translations": [
@@ -109913,4 +109991,4 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
   }
 ]
 
-export const TRANSLATIONS_COUNT = 2320
+export const TRANSLATIONS_COUNT = 2321

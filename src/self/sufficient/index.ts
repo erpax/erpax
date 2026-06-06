@@ -28,7 +28,8 @@
  * @audit Conservation Law 54 (universal identity element — every case already defined)
  */
 
-import { crackVerdict, ERPAX_DIGEST_BITS, type CrackVerdict } from '@/tamper/cost'
+import { crackVerdict, type CrackVerdict } from '@/tamper/cost'
+import { ERPAX_DIGEST_BITS } from '@/cost'
 
 /** Kinds of external dependence — each a trust link an attacker can target instead of the digest. */
 export type DependencyKind = 'ai-model' | 'service' | 'binding' | 'agent' | 'library'

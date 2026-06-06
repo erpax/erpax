@@ -4,7 +4,7 @@
  */
 import { describe, it, expect } from 'vitest'
 import { ANCHOR_STRENGTH_BITS, anchorBinds, anchoredFloorLog2, anchorBinding } from '@/anchor'
-import { ERPAX_DIGEST_BITS } from '@/tamper/cost'
+import { ERPAX_DIGEST_BITS } from '@/cost'
 
 describe('anchor: real strengths per kind (NIST SP 800-57)', () => {
   it('RFC-3161 RSA-2048 ≈ 112-bit, P-256 ≈ 128-bit, PoW ≈ ∞, none = 0', () => {

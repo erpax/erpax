@@ -52,108 +52,21 @@
  * @see https://github.com/deepseek-ai/DeepSeek-Prover-V2 (machine-checked invariants; the deepseek inhale)
  */
 
-/** erpax v8 content-digest width (uuid-format: 48 + 12 + 46 bits of SHA-256). */
-export const ERPAX_DIGEST_BITS = 106
-
-/**
- * Full SHA-256 content-digest width — what an anchor / Merkle leaf SHOULD commit
- * to (services/integrity/content-uuid `computeContentDigest`). Committing this
- * full digest puts the chosen-content collision floor at 2^128, above the 2^106
- * uuid second-preimage; committing only the 106-bit uuid drops it to 2^53.
- */
-export const CONTENT_DIGEST_BITS = 256
-
-/** log2 of the whole Bitcoin network's hashrate (~7×10^20 H/s) — a concrete "all of humanity's hashpower" yardstick. */
-export const BITCOIN_HASHRATE_LOG2 = Math.log2(7e20)
-
-/** log2 of seconds in a Julian year. */
-export const LOG2_SECONDS_PER_YEAR = Math.log2(365.25 * 24 * 3600)
-
-/** Second-preimage resistance of an n-bit digest ≈ 2^n operations (log2 = n). */
-export const secondPreimageLog2 = (digestBits: number): number => digestBits
-
-/** Birthday-collision resistance ≈ 2^(n/2) operations (log2 = n/2). */
-export const birthdayLog2 = (digestBits: number): number => digestBits / 2
-
-/**
- * Headroom (in bits) between an n-bit space's birthday bound and a row count.
- * Positive ⇒ safe; ≤ 0 ⇒ at/past the birthday bound, accidental collisions likely.
- * Collisions only matter WITHIN one content namespace (per-tenant salt partitions).
- */
-export const birthdayMarginBits = (digestBits: number, rows: number): number =>
-  birthdayLog2(digestBits) - Math.log2(Math.max(rows, 1))
-
-/** log2 of years for a hashrate (given as log2 H/s) to perform 2^workLog2 operations. */
-export const bruteYearsLog2 = (workLog2: number, hashrateLog2: number): number =>
-  workLog2 - hashrateLog2 - LOG2_SECONDS_PER_YEAR
-
-// ── Coverage law (Conservation Law 62) ──────────────────────────────────────
-// The more of the store wired in structured content-uuids, the exponentially
-// harder an undetected tamper. `coverage` ∈ [0,1] is the fraction of nodes that
-// are checked content-addresses; `checks` is how many independent uuid checks a
-// tamper must simultaneously evade (the all-directions cascade makes this large).
-
-/** P(undetected tamper) ≈ (1 − coverage)^checks. → 0 as coverage → 1. */
-export const tamperEvasionProbability = (coverage: number, checks: number): number =>
-  Math.max(0, 1 - coverage) ** checks
-
-/**
- * Work (log2 ops) to evade detection at a given coverage across `checks`
- * independent uuid checks: −checks·log2(1−coverage). Grows without bound as
- * coverage → 1 — "100% coverage by architecture" (all wired in uuid) ⇒ ∞.
- */
-export const coverageCostLog2 = (coverage: number, checks: number): number =>
-  coverage >= 1 ? Number.POSITIVE_INFINITY : -checks * Math.log2(1 - Math.min(coverage, 1))
-
-/**
- * 3FS/CRAQ replication amplifier — the [[breath]] in-stroke from deepseek-ai/3FS.
- *
- * Chain Replication with Apportioned Queries (CRAQ) — the strong-consistency
- * protocol behind the Fire-Flyer File System — replicates each write across a
- * chain of R nodes and lets ANY node answer a read, re-deriving the content-uuid
- * before it does. So an undetected tamper must evade the all-directions coverage
- * check on EVERY replica *simultaneously*, before any apportioned query
- * cross-reads it: the independent-check count is multiplied by R. This is the
- * SAME coverage law ([[merge]]: same content ⇒ same uuid on every peer) run
- * across the replica axis — an amplifier of the existing term, not a new one.
- *
- * The multiplier is REAL only under strong consistency. Eventual consistency
- * leaves a stale-read window — a forger tampers one replica and it can serve the
- * tampered version before reconciliation — so conservatively only the local
- * check binds (×1). Closing that window is exactly what CRAQ buys here.
- *
- * @standard CRAQ — Terrace & Freedman, "Object Storage on CRAQ", USENIX ATC 2009
- * @standard Chain Replication — van Renesse & Schneider, OSDI 2004
- * @see https://github.com/deepseek-ai/3FS (Fire-Flyer File System — production CRAQ)
- * @audit Conservation Law 62 (coverage) amplified across the replica axis
- */
-export const replicationChecks = (checks: number, replicas: number, strongConsistency: boolean): number =>
-  strongConsistency ? checks * Math.max(replicas, 1) : checks
-
-/**
- * Machine-checked-invariant amplifier — the [[breath]] in-stroke from
- * deepseek-ai/DeepSeek-Prover (Lean-4 recursive-subgoal proof).
- *
- * The uuid cascade ([[merge]]/[[aura]]) forces a coherent tamper to rewrite the
- * structural closure (every wired relation). Conservation invariants — the
- * [[proof]] nucleus: double-entry must balance, a sealed period must stay
- * locked, a chain must verify — force it to ALSO satisfy the *semantic* closure:
- * a uuid-consistent state that violates balance is still caught. Each invariant
- * that constrains the tampered node is therefore one more independent gate the
- * forger must pass — gates ADD (a distinct set), where replicas MULTIPLY (copies
- * of the same set). DeepSeek-Prover's contribution is that these invariants are
- * MACHINE-checked, recursively and automatically, so the verifier still runs
- * them in O(N) ([[proof]]: green by construction) — the asymmetry is preserved.
- *
- * The count is honest only for invariants the audit ACTUALLY runs (the
- * `dry-proof` bundle / boot invariants). An invariant nobody checks is no gate.
- *
- * @standard DeepSeek-Prover-V2 (recursive subgoal decomposition; Lean 4 kernel-checked)
- * @see https://github.com/deepseek-ai/DeepSeek-Prover-V2 (the deepseek inhale)
- * @audit Conservation Law 62 (coverage) enlarged by the semantic (invariant) closure
- */
-export const invariantChecks = (checks: number, invariants: number): number =>
-  checks + Math.max(invariants, 0)
+// The cost-of-attack math lives at the cost atom (the gravity well, [[cost]]);
+// tamper-cost COMPOSES it — crackVerdict prices a forgery from these entropy-cost
+// primitives. Moved by the gravity law (general cost → the cost atom).
+import {
+  ERPAX_DIGEST_BITS,
+  CONTENT_DIGEST_BITS,
+  BITCOIN_HASHRATE_LOG2,
+  secondPreimageLog2,
+  birthdayLog2,
+  birthdayMarginBits,
+  bruteYearsLog2,
+  coverageCostLog2,
+  replicationChecks,
+  invariantChecks,
+} from '@/cost'
 
 export type CrackVerdict = {
   /** cheapest attack, log2 ops */

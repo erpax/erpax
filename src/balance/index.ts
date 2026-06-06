@@ -26,7 +26,7 @@
  * @see ./SKILL.md -- ../conservation (the flow form of balance) -- ../entropy (the matrix aura) -- ../tamper/cost (the price)
  */
 import { UUID_MATRIX_NODES as N } from '@/uuid/matrix'
-import { coverageCostLog2 } from '@/tamper/cost'
+import { coverageCostLog2 } from '@/cost'
 
 /**
  * Words ending in -s that are NOT plural collections — so a lone one is not

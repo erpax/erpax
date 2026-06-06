@@ -34,7 +34,8 @@
  * @see src/services/tamper-cost src/services/anchor src/services/proof/projection
  */
 
-import { crackVerdict, invariantChecks, replicationChecks, ERPAX_DIGEST_BITS, type CrackVerdict } from '@/tamper/cost'
+import { crackVerdict, type CrackVerdict } from '@/tamper/cost'
+import { invariantChecks, replicationChecks, ERPAX_DIGEST_BITS } from '@/cost'
 import { ANCHOR_STRENGTH_BITS, anchoredFloorLog2, type AnchorKind } from '@/anchor'
 import { computeTamperReverseCost } from '@/integrity/tamper-reverse-cost'
 import { projectionProof, type ProjectionProof } from '@/proof/projection'

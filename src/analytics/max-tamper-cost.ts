@@ -15,7 +15,8 @@
  * @audit composed from @/tamper/cost crackVerdict at @/balance live coverage; never hand-asserted
  * @see ./index.ts -- ../tamper/cost (crackVerdict) -- ../balance (coverage) -- ../anchor
  */
-import { crackVerdict, ERPAX_DIGEST_BITS, CONTENT_DIGEST_BITS, type CrackVerdict } from '@/tamper/cost'
+import { crackVerdict, type CrackVerdict } from '@/tamper/cost'
+import { ERPAX_DIGEST_BITS, CONTENT_DIGEST_BITS } from '@/cost'
 import { auraBalance, coverage as schemaCoverage } from '@/balance'
 import { orphans } from '@/entropy'
 
@@ -50,11 +51,14 @@ const lever = (name: string, v: CrackVerdict): TamperLever => ({
 export const maxTamperCost = (): MaxTamperCostReport => {
   const d = auraBalance()
   const cov = schemaCoverage(d)
-  // Same live coverage, three commitment threat models — the difference IS the lever.
+  // The PER-RECORD floor — three commitment threat models, coverage held OUT (its
+  // amplifier is ∞ at coverage=1 and would mask every lever). This surfaces the
+  // structural weakest link that exists regardless of coverage; the coverage
+  // amplifier is reported separately (gapToInfinity).
   const levers = [
-    lever('post-hoc (chosen-content out of scope)', crackVerdict({ coverage: cov, checks: 1 })),
-    lever('chosen-content vs bare 106-bit uuid', crackVerdict({ coverage: cov, checks: 1, anchorCommitmentBits: ERPAX_DIGEST_BITS })),
-    lever('chosen-content vs full 256-bit digest', crackVerdict({ coverage: cov, checks: 1, anchorCommitmentBits: CONTENT_DIGEST_BITS })),
+    lever('post-hoc (chosen-content out of scope)', crackVerdict({ checks: 1 })),
+    lever('chosen-content vs bare 106-bit uuid', crackVerdict({ checks: 1, anchorCommitmentBits: ERPAX_DIGEST_BITS })),
+    lever('chosen-content vs full 256-bit digest', crackVerdict({ checks: 1, anchorCommitmentBits: CONTENT_DIGEST_BITS })),
   ]
   const weakest = levers.reduce((m, l) => (l.bindingLog2 < m.bindingLog2 ? l : m))
   return {

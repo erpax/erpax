@@ -14,10 +14,10 @@ import {
   bruteYearsLog2,
   tamperEvasionProbability,
   coverageCostLog2,
-  crackVerdict,
   replicationChecks,
   invariantChecks,
-} from '@/tamper/cost'
+} from '@/cost'
+import { crackVerdict } from '@/tamper/cost'
 
 describe('tamper-cost: NIST SP 800-107 hash strengths', () => {
   it('second-preimage of the erpax digest is 2^106', () => {

@@ -9,7 +9,7 @@
 import { describe, it, expect } from 'vitest'
 import type { ToolGrant } from '@/sandbox'
 import { issueReceipt, verifyReceiptChain, type Decision, type Receipt } from '@/receipt'
-import { CONTENT_DIGEST_BITS } from '@/tamper/cost'
+import { CONTENT_DIGEST_BITS } from '@/cost'
 import { proveScopeGap, proveAuthenticityGap } from '@/security/remote/access'
 
 // one tamper-evident ledger threading every verdict in this proof

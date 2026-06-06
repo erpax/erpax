@@ -31,7 +31,7 @@
 
 import { computeContentUuid } from '@/integrity/content-uuid'
 import { ANCHOR_STRENGTH_BITS, anchoredFloorLog2, anchorBinding, type AnchorKind } from '@/anchor'
-import { ERPAX_DIGEST_BITS } from '@/tamper/cost'
+import { ERPAX_DIGEST_BITS } from '@/cost'
 
 const PROJECTION_TENANT = 'erpax-public-proof'
 /** A sample pre-image projected forward to demonstrate the free, deterministic positive. */
