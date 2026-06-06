@@ -18,6 +18,8 @@
  * @standard ISO/IEC-25010:2023 §5.1 functional-completeness
  */
 
+import { PORTED_STANDARDS } from './ported'
+
 export interface RegisteredStandard {
   /** Canonical id — the seed `standardId` + catalogue key, e.g. "ISO-4217". */
   readonly id: string
@@ -27,9 +29,13 @@ export interface RegisteredStandard {
   readonly title: string
   /** Optional citation matcher override (else derived from the id's salient token). */
   readonly match?: string
+  /** Jurisdiction — EU, BG, international, US, ISO… (ported governance). */
+  readonly jurisdiction?: string
+  /** Real source URL confirming the standard (WebSearch-verified). */
+  readonly sourceUrl?: string
 }
 
-export const STANDARDS_REGISTRY: ReadonlyArray<RegisteredStandard> = [
+const CURATED_STANDARDS: ReadonlyArray<RegisteredStandard> = [
   // — IFRS / IAS financial reporting —
   { id: 'IFRS-15', family: 'ifrs', title: 'Revenue from Contracts with Customers' },
   { id: 'IFRS-9', family: 'ifrs', title: 'Financial Instruments' },
@@ -204,3 +210,6 @@ export const STANDARDS_REGISTRY: ReadonlyArray<RegisteredStandard> = [
   { id: 'EU-EUDR', family: 'eu', title: 'EU Deforestation Regulation (2023/1115)', match: 'EUDR|2023/1115|deforestation' },
   { id: 'Codex-Honey', family: 'un', title: 'Codex honey standard / EU Honey Directive 2001/110', match: 'honey|2001/110' },
 ] as const
+
+/** The registry: the curated spine ⊕ the WebSearch-verified ported governing standards & international laws. */
+export const STANDARDS_REGISTRY: ReadonlyArray<RegisteredStandard> = [...CURATED_STANDARDS, ...PORTED_STANDARDS]

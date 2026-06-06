@@ -32,12 +32,371 @@ export interface CatalogueEntry {
 
 export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
   {
+    "id": "SOC-2",
+    "family": "aicpa",
+    "title": "SOC 2 — Trust Services Criteria (Security, Availability, Processing Integrity, Confidentiality, Privacy), SSAE 18 / AT-C 105 & 205",
+    "uuid": "255134ae-aef7-80f0-a3f8-78c8b600eb57",
+    "color": "hsl(193 72% 44%)",
+    "count": 2,
+    "modules": [
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§404"
+      }
+    ]
+  },
+  {
+    "id": "COSO-ERM-2017",
+    "family": "coso",
+    "title": "Enterprise Risk Management — Integrating with Strategy and Performance (2017)",
+    "uuid": "82eb9507-6d2c-8a14-b99d-22eb70c6a160",
+    "color": "hsl(35 64% 45%)",
+    "count": 123,
+    "modules": [
+      {
+        "path": "src/address/validation/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ai/invoice-ocr.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ai/tax-classification.ts",
+        "section": "§BT-151"
+      },
+      {
+        "path": "src/architecture/invariant/checks.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bookable/resources/bookings/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bulk/op/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/config/address-formats/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/config/country-specifics/index.ts",
+        "section": "§BG-1"
+      },
+      {
+        "path": "src/country/api/client/index.ts",
+        "section": "§B2G"
+      },
+      {
+        "path": "src/country/client/bg-hybrid-invoice.ts",
+        "section": "§6"
+      },
+      {
+        "path": "src/country/client/bg-vat.ts",
+        "section": "§BG-23"
+      },
+      {
+        "path": "src/customers/index.ts",
+        "section": "§BG-7"
+      },
+      {
+        "path": "src/customers/sales/orders/index.ts",
+        "section": "§BG-13"
+      },
+      {
+        "path": "src/customers/sales/orders/shipments/index.ts",
+        "section": "§BG-13"
+      },
+      {
+        "path": "src/decentralization/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/en/16931/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/en/16931/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/en/16931/types.ts",
+        "section": ""
+      },
+      {
+        "path": "src/en/16931/validate.ts",
+        "section": ""
+      },
+      {
+        "path": "src/export/standards-import.ts",
+        "section": ""
+      },
+      {
+        "path": "src/factory/recompute-parent-aggregates.ts",
+        "section": ""
+      },
+      {
+        "path": "src/gl/accounts/tax/calculations/index.ts",
+        "section": "§BG-23"
+      },
+      {
+        "path": "src/internal/controls/audit/findings/court-docket.ts",
+        "section": "§BG-3"
+      },
+      {
+        "path": "src/invoices/credit/memos/index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "EU-910/2014",
+    "family": "eidas",
+    "title": "Regulation (EU) No 910/2014 (eIDAS) — electronic identification and trust services for electronic transactions in the internal market, repealing Directive 1999/93/EC",
+    "uuid": "cc213858-47b2-8d0b-88b3-4b4fea420f47",
+    "color": "hsl(57 76% 54%)",
+    "count": 48,
+    "modules": [
+      {
+        "path": "src/anchor/index.ts",
+        "section": "§2.4"
+      },
+      {
+        "path": "src/anchoring/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bookable/resources/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/customers/contracts/contract/signatures/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/emission/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/evidence/attestation/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/evidence/attestations/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/export/types.ts",
+        "section": ""
+      },
+      {
+        "path": "src/fiscal/period/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/fiscal/periods/fiscal/period/snapshots/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/integrity/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/integrity/signatures.ts",
+        "section": "§3.12"
+      },
+      {
+        "path": "src/iso/14289/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/iso/14289/profile.ts",
+        "section": ""
+      },
+      {
+        "path": "src/items/bills/of/materials/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/items/bills/of/materials/work/orders/operation/runs/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/items/bills/of/materials/work/orders/routings/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/items/packages/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/lot/work/phases/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/lots/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/maintenance/requests/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/maintenance/work/orders/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/period/end/closing/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/properties/index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "EU-2024/1183",
+    "family": "eidas",
+    "title": "Regulation (EU) 2024/1183 (eIDAS 2.0) — amending Regulation (EU) No 910/2014 as regards establishing the European Digital Identity Framework (EUDI Wallet)",
+    "uuid": "416d78f3-c1be-8a4d-a36b-7f3629e48fd1",
+    "color": "hsl(189 70% 41%)",
+    "count": 41,
+    "modules": [
+      {
+        "path": "src/admin/TenantFilters.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/admin/TenantManagement.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/ai/models/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ai/models/service.ts",
+        "section": ""
+      },
+      {
+        "path": "src/analytics/BudgetVsActualCard.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/analytics/CostAnalysisCard.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/analytics/FinancialRatiosCard.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/analytics/KPIDashboard.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/analytics/TrendAnalysisCard.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/beyond/ai-audit.ts",
+        "section": "Annex IV"
+      },
+      {
+        "path": "src/beyond/explainability/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/beyond/types/index.ts",
+        "section": "Annex IV"
+      },
+      {
+        "path": "src/blocks/form/Component.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/commerce/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/dashboard/index.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/discriminator/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/eu/ai/act/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ifrs/15/validate.ts",
+        "section": ""
+      },
+      {
+        "path": "src/iso/14289/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/iso/14289/profile.ts",
+        "section": ""
+      },
+      {
+        "path": "src/journal/entries/hooks/balanced-entry.ts",
+        "section": ""
+      },
+      {
+        "path": "src/modal/CreateJournalEntryModal.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/sdk/accounting-client/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "EUDI-ARF",
+    "family": "eidas",
+    "title": "European Digital Identity Wallet Architecture and Reference Framework (ARF)",
+    "uuid": "e9af230d-c899-8c1a-98ef-335e8b19cd53",
+    "color": "hsl(63 55% 51%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "EMV-3DS",
+    "family": "emv",
+    "title": "EMV 3-D Secure (3DS) Protocol and Core Functions Specification",
+    "uuid": "5363f7f8-6d1a-836a-867b-22ecd865de5d",
+    "color": "hsl(107 57% 46%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "EMVCo-Card-Specs",
+    "family": "emv",
+    "title": "EMV Integrated Circuit Card Specifications for Payment Systems (Books 1-4)",
+    "uuid": "df38701f-5f6a-862b-bf37-1ac672ead86f",
+    "color": "hsl(264 62% 45%)",
+    "count": 0,
+    "modules": []
+  },
+  {
     "id": "EN-16931",
     "family": "en",
     "title": "Semantic model of the electronic invoice",
     "uuid": "b293e94d-80cc-82ce-a7c9-7006b79e5bbf",
     "color": "hsl(355 78% 43%)",
-    "count": 105,
+    "count": 111,
     "modules": [
       {
         "path": "src/ai/invoice-ocr.ts",
@@ -96,7 +455,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": "§BG-13"
       },
       {
-        "path": "src/en/16931/README.md",
+        "path": "src/en/16931/SKILL.md",
         "section": ""
       },
       {
@@ -143,7 +502,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "EU electronic identification & trust services",
     "uuid": "29ccc17c-b37d-81fd-af35-cd6049173405",
     "color": "hsl(260 73% 42%)",
-    "count": 20,
+    "count": 21,
     "modules": [
       {
         "path": "src/agents/registered/legal.agent.ts",
@@ -182,6 +541,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": "Annex II"
       },
       {
+        "path": "src/patent/SKILL.md",
+        "section": "§§101–103;"
+      },
+      {
         "path": "src/period/end/closing/index.ts",
         "section": ""
       },
@@ -213,7 +576,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "PAdES PDF advanced electronic signatures",
     "uuid": "3f95cb7c-fd1a-8ec3-b398-007e76eb1842",
     "color": "hsl(77 83% 42%)",
-    "count": 10,
+    "count": 11,
     "modules": [
       {
         "path": "src/country/client/bg-pades-signer.ts",
@@ -245,7 +608,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/skill/router/skills.index.ts",
-        "section": "§302/404/906"
+        "section": "§47"
       }
     ]
   },
@@ -255,7 +618,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Peppol Billing BIS",
     "uuid": "6408ce0b-5969-8298-9f00-bd48c41f21b5",
     "color": "hsl(48 86% 49%)",
-    "count": 29,
+    "count": 33,
     "modules": [
       {
         "path": "src/connections/index.ts",
@@ -290,7 +653,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/peppol/bis/3/README.md",
+        "path": "src/peppol/bis/3/SKILL.md",
         "section": ""
       },
       {
@@ -629,7 +992,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "EU VAT Directive 2006/112/EC",
     "uuid": "604172d9-c097-89f2-b741-e34b3fb9ebf0",
     "color": "hsl(161 64% 39%)",
-    "count": 6,
+    "count": 7,
     "modules": [
       {
         "path": "src/naredba/n/18/vat-groups.ts",
@@ -650,6 +1013,24 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     ]
   },
   {
+    "id": "EU-UCC",
+    "family": "eu",
+    "title": "EU Union Customs Code (Regulation 952/2013)",
+    "uuid": "96b1dd40-3bc7-8b3b-b18d-1f293feada5a",
+    "color": "hsl(57 66% 54%)",
+    "count": 5,
+    "modules": [
+      {
+        "path": "src/customers/sales/orders/shipments/customs/declarations/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§4"
+      }
+    ]
+  },
+  {
     "id": "SEPA",
     "family": "eu",
     "title": "Single Euro Payments Area schemes",
@@ -664,24 +1045,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/skill/router/skills.index.ts",
         "section": "§B22"
-      }
-    ]
-  },
-  {
-    "id": "EU-UCC",
-    "family": "eu",
-    "title": "EU Union Customs Code (Regulation 952/2013)",
-    "uuid": "96b1dd40-3bc7-8b3b-b18d-1f293feada5a",
-    "color": "hsl(57 66% 54%)",
-    "count": 3,
-    "modules": [
-      {
-        "path": "src/customers/sales/orders/shipments/customs/declarations/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/skill/router/skills.index.ts",
-        "section": "§4"
       }
     ]
   },
@@ -728,12 +1091,4377 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     ]
   },
   {
+    "id": "EU-2019/1152",
+    "family": "eu-directive",
+    "title": "Transparent and Predictable Working Conditions Directive (EU) 2019/1152",
+    "uuid": "9a4ee58b-ab9f-8c3c-87f5-1390aa4f7aa6",
+    "color": "hsl(262 74% 57%)",
+    "count": 258,
+    "modules": [
+      {
+        "path": "src/accounting/fields-money-fix.ts",
+        "section": ""
+      },
+      {
+        "path": "src/accounting/financial-analysis.ts",
+        "section": ""
+      },
+      {
+        "path": "src/accounting/reports.service.ts",
+        "section": ""
+      },
+      {
+        "path": "src/activities/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ai/suggestions/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/analytics/TrendAnalysisCard.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/analytics/types.ts",
+        "section": ""
+      },
+      {
+        "path": "src/app/(frontend)/(sitemaps)/pages-sitemap.xml/route.ts",
+        "section": ""
+      },
+      {
+        "path": "src/app/(frontend)/(sitemaps)/posts-sitemap.xml/route.ts",
+        "section": ""
+      },
+      {
+        "path": "src/app/(frontend)/[locale]/posts/[slug]/page.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/auto/set/timestamp/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/bank/reconciliations/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/bank/transactions/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/payment/runs/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/payroll/runs/hooks/payroll-disbursement.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/payroll/runs/hooks/payroll-run.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/payroll/runs/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/reconciliation.service/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/statement/import.service/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/base/accounting/field/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/billing/stripeWebhookHandlers.ts",
+        "section": ""
+      },
+      {
+        "path": "src/biological/assets/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bookable/resources/bookings/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bookable/resources/index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "EU-2019/1937",
+    "family": "eu-directive",
+    "title": "Directive (EU) 2019/1937 on the protection of persons who report breaches of Union law (Whistleblower Directive)",
+    "uuid": "c5f3ba4f-ac0f-8a21-ade2-261da928b773",
+    "color": "hsl(275 66% 45%)",
+    "count": 258,
+    "modules": [
+      {
+        "path": "src/accounting/fields-money-fix.ts",
+        "section": ""
+      },
+      {
+        "path": "src/accounting/financial-analysis.ts",
+        "section": ""
+      },
+      {
+        "path": "src/accounting/reports.service.ts",
+        "section": ""
+      },
+      {
+        "path": "src/activities/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ai/suggestions/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/analytics/TrendAnalysisCard.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/analytics/types.ts",
+        "section": ""
+      },
+      {
+        "path": "src/app/(frontend)/(sitemaps)/pages-sitemap.xml/route.ts",
+        "section": ""
+      },
+      {
+        "path": "src/app/(frontend)/(sitemaps)/posts-sitemap.xml/route.ts",
+        "section": ""
+      },
+      {
+        "path": "src/app/(frontend)/[locale]/posts/[slug]/page.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/auto/set/timestamp/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/bank/reconciliations/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/bank/transactions/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/payment/runs/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/payroll/runs/hooks/payroll-disbursement.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/payroll/runs/hooks/payroll-run.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/payroll/runs/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/reconciliation.service/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/statement/import.service/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/base/accounting/field/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/billing/stripeWebhookHandlers.ts",
+        "section": ""
+      },
+      {
+        "path": "src/biological/assets/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bookable/resources/bookings/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bookable/resources/index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "EU-2019/2161",
+    "family": "eu-directive",
+    "title": "Modernisation (Omnibus) Directive (Directive (EU) 2019/2161)",
+    "uuid": "0a214c87-43a6-8b4e-9b85-2f6a557ae43e",
+    "color": "hsl(73 61% 53%)",
+    "count": 258,
+    "modules": [
+      {
+        "path": "src/accounting/fields-money-fix.ts",
+        "section": ""
+      },
+      {
+        "path": "src/accounting/financial-analysis.ts",
+        "section": ""
+      },
+      {
+        "path": "src/accounting/reports.service.ts",
+        "section": ""
+      },
+      {
+        "path": "src/activities/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ai/suggestions/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/analytics/TrendAnalysisCard.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/analytics/types.ts",
+        "section": ""
+      },
+      {
+        "path": "src/app/(frontend)/(sitemaps)/pages-sitemap.xml/route.ts",
+        "section": ""
+      },
+      {
+        "path": "src/app/(frontend)/(sitemaps)/posts-sitemap.xml/route.ts",
+        "section": ""
+      },
+      {
+        "path": "src/app/(frontend)/[locale]/posts/[slug]/page.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/auto/set/timestamp/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/bank/reconciliations/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/bank/transactions/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/payment/runs/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/payroll/runs/hooks/payroll-disbursement.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/payroll/runs/hooks/payroll-run.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/payroll/runs/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/reconciliation.service/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/statement/import.service/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/base/accounting/field/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/billing/stripeWebhookHandlers.ts",
+        "section": ""
+      },
+      {
+        "path": "src/biological/assets/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bookable/resources/bookings/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bookable/resources/index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "EU-2019/770",
+    "family": "eu-directive",
+    "title": "Digital Content and Digital Services Directive (Directive (EU) 2019/770)",
+    "uuid": "4223200d-33e6-884d-a7c5-d9ab27af9432",
+    "color": "hsl(11 87% 51%)",
+    "count": 258,
+    "modules": [
+      {
+        "path": "src/accounting/fields-money-fix.ts",
+        "section": ""
+      },
+      {
+        "path": "src/accounting/financial-analysis.ts",
+        "section": ""
+      },
+      {
+        "path": "src/accounting/reports.service.ts",
+        "section": ""
+      },
+      {
+        "path": "src/activities/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ai/suggestions/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/analytics/TrendAnalysisCard.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/analytics/types.ts",
+        "section": ""
+      },
+      {
+        "path": "src/app/(frontend)/(sitemaps)/pages-sitemap.xml/route.ts",
+        "section": ""
+      },
+      {
+        "path": "src/app/(frontend)/(sitemaps)/posts-sitemap.xml/route.ts",
+        "section": ""
+      },
+      {
+        "path": "src/app/(frontend)/[locale]/posts/[slug]/page.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/auto/set/timestamp/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/bank/reconciliations/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/bank/transactions/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/payment/runs/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/payroll/runs/hooks/payroll-disbursement.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/payroll/runs/hooks/payroll-run.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/payroll/runs/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/reconciliation.service/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/statement/import.service/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/base/accounting/field/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/billing/stripeWebhookHandlers.ts",
+        "section": ""
+      },
+      {
+        "path": "src/biological/assets/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bookable/resources/bookings/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bookable/resources/index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "EU-2019/771",
+    "family": "eu-directive",
+    "title": "Sale of Goods Directive (Directive (EU) 2019/771)",
+    "uuid": "8ee63f69-733f-8499-afb5-8fb5554b1711",
+    "color": "hsl(222 83% 47%)",
+    "count": 258,
+    "modules": [
+      {
+        "path": "src/accounting/fields-money-fix.ts",
+        "section": ""
+      },
+      {
+        "path": "src/accounting/financial-analysis.ts",
+        "section": ""
+      },
+      {
+        "path": "src/accounting/reports.service.ts",
+        "section": ""
+      },
+      {
+        "path": "src/activities/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ai/suggestions/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/analytics/TrendAnalysisCard.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/analytics/types.ts",
+        "section": ""
+      },
+      {
+        "path": "src/app/(frontend)/(sitemaps)/pages-sitemap.xml/route.ts",
+        "section": ""
+      },
+      {
+        "path": "src/app/(frontend)/(sitemaps)/posts-sitemap.xml/route.ts",
+        "section": ""
+      },
+      {
+        "path": "src/app/(frontend)/[locale]/posts/[slug]/page.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/auto/set/timestamp/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/bank/reconciliations/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/bank/transactions/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/payment/runs/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/payroll/runs/hooks/payroll-disbursement.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/payroll/runs/hooks/payroll-run.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/payroll/runs/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/reconciliation.service/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/statement/import.service/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/base/accounting/field/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/billing/stripeWebhookHandlers.ts",
+        "section": ""
+      },
+      {
+        "path": "src/biological/assets/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bookable/resources/bookings/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bookable/resources/index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "EU-2015/849",
+    "family": "eu-directive",
+    "title": "Directive (EU) 2015/849 (4th Anti-Money-Laundering Directive, AMLD4) on the prevention of the use of the financial system for the purposes of money laundering or terrorist financing",
+    "uuid": "34a6bbef-0b2e-8a3b-bceb-60f6247a69d6",
+    "color": "hsl(158 67% 61%)",
+    "count": 230,
+    "modules": [
+      {
+        "path": "src/accounting/fields-money-fix.ts",
+        "section": ""
+      },
+      {
+        "path": "src/accounting/financial-analysis.ts",
+        "section": ""
+      },
+      {
+        "path": "src/accounting/reports.service.ts",
+        "section": ""
+      },
+      {
+        "path": "src/analytics/BudgetVsActualCard.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/analytics/KPIDashboard.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/analytics/types.ts",
+        "section": ""
+      },
+      {
+        "path": "src/app/(api)/api/subscriptions/create/route.ts",
+        "section": ""
+      },
+      {
+        "path": "src/app/(frontend)/[locale]/products/[slug]/page.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/app/(frontend)/[locale]/products/page.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/bank/reconciliations/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/bank/transactions/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/payment/runs/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/payroll/runs/hooks/payroll-disbursement.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/payroll/runs/hooks/payroll-run.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/payroll/runs/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/reconciliation.service/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/statement/import.service/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/base/accounting/field/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/billing/stripeWebhookHandlers.ts",
+        "section": ""
+      },
+      {
+        "path": "src/billing/test.ts",
+        "section": ""
+      },
+      {
+        "path": "src/biological/assets/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bookable/resources/bookings/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bookable/resources/index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "EU-2017/1132",
+    "family": "eu-directive",
+    "title": "Directive (EU) 2017/1132 relating to certain aspects of company law (codification)",
+    "uuid": "63d75e4e-138e-8f04-b48e-7e7bd99614ad",
+    "color": "hsl(359 79% 44%)",
+    "count": 123,
+    "modules": [
+      {
+        "path": "src/address/validation/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ai/invoice-ocr.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ai/tax-classification.ts",
+        "section": "§BT-151"
+      },
+      {
+        "path": "src/architecture/invariant/checks.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bookable/resources/bookings/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bulk/op/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/config/address-formats/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/config/country-specifics/index.ts",
+        "section": "§BG-1"
+      },
+      {
+        "path": "src/country/api/client/index.ts",
+        "section": "§B2G"
+      },
+      {
+        "path": "src/country/client/bg-hybrid-invoice.ts",
+        "section": "§6"
+      },
+      {
+        "path": "src/country/client/bg-vat.ts",
+        "section": "§BG-23"
+      },
+      {
+        "path": "src/customers/index.ts",
+        "section": "§BG-7"
+      },
+      {
+        "path": "src/customers/sales/orders/index.ts",
+        "section": "§BG-13"
+      },
+      {
+        "path": "src/customers/sales/orders/shipments/index.ts",
+        "section": "§BG-13"
+      },
+      {
+        "path": "src/decentralization/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/en/16931/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/en/16931/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/en/16931/types.ts",
+        "section": ""
+      },
+      {
+        "path": "src/en/16931/validate.ts",
+        "section": ""
+      },
+      {
+        "path": "src/export/standards-import.ts",
+        "section": ""
+      },
+      {
+        "path": "src/factory/recompute-parent-aggregates.ts",
+        "section": ""
+      },
+      {
+        "path": "src/gl/accounts/tax/calculations/index.ts",
+        "section": "§BG-23"
+      },
+      {
+        "path": "src/internal/controls/audit/findings/court-docket.ts",
+        "section": "§BG-3"
+      },
+      {
+        "path": "src/invoices/credit/memos/index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "EU-2017/828",
+    "family": "eu-directive",
+    "title": "Directive (EU) 2017/828 (SRD II) amending Directive 2007/36/EC as regards the encouragement of long-term shareholder engagement",
+    "uuid": "f46f2c78-bacf-8300-8b17-94d03c390d89",
+    "color": "hsl(295 64% 38%)",
+    "count": 123,
+    "modules": [
+      {
+        "path": "src/address/validation/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ai/invoice-ocr.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ai/tax-classification.ts",
+        "section": "§BT-151"
+      },
+      {
+        "path": "src/architecture/invariant/checks.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bookable/resources/bookings/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bulk/op/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/config/address-formats/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/config/country-specifics/index.ts",
+        "section": "§BG-1"
+      },
+      {
+        "path": "src/country/api/client/index.ts",
+        "section": "§B2G"
+      },
+      {
+        "path": "src/country/client/bg-hybrid-invoice.ts",
+        "section": "§6"
+      },
+      {
+        "path": "src/country/client/bg-vat.ts",
+        "section": "§BG-23"
+      },
+      {
+        "path": "src/customers/index.ts",
+        "section": "§BG-7"
+      },
+      {
+        "path": "src/customers/sales/orders/index.ts",
+        "section": "§BG-13"
+      },
+      {
+        "path": "src/customers/sales/orders/shipments/index.ts",
+        "section": "§BG-13"
+      },
+      {
+        "path": "src/decentralization/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/en/16931/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/en/16931/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/en/16931/types.ts",
+        "section": ""
+      },
+      {
+        "path": "src/en/16931/validate.ts",
+        "section": ""
+      },
+      {
+        "path": "src/export/standards-import.ts",
+        "section": ""
+      },
+      {
+        "path": "src/factory/recompute-parent-aggregates.ts",
+        "section": ""
+      },
+      {
+        "path": "src/gl/accounts/tax/calculations/index.ts",
+        "section": "§BG-23"
+      },
+      {
+        "path": "src/internal/controls/audit/findings/court-docket.ts",
+        "section": "§BG-3"
+      },
+      {
+        "path": "src/invoices/credit/memos/index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "EU-2002/58",
+    "family": "eu-directive",
+    "title": "ePrivacy Directive (Directive 2002/58/EC) — privacy and electronic communications (as amended by Directive 2009/136/EC)",
+    "uuid": "9081a6ca-e6cb-80ae-85d6-3629ba7f928c",
+    "color": "hsl(273 81% 48%)",
+    "count": 105,
+    "modules": [
+      {
+        "path": "src/agents/registered/data.agent.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ai/bank-matching.ts",
+        "section": "§Ntry.RmtInf.Ustrd"
+      },
+      {
+        "path": "src/bank/accounts/bank/reconciliations/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/bank/transactions/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/payment/runs/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/payroll/runs/hooks/payroll-disbursement.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/payroll/runs/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/reconciliation.service/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/statement/import.service/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bulk/op/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/camt053/import.service/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/config/country-apis/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/config/iso-4217-numeric/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/config/iso-4217-special/index.ts",
+        "section": "§Ccy"
+      },
+      {
+        "path": "src/connections/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/country/client/berlin-group-psd2.ts",
+        "section": ""
+      },
+      {
+        "path": "src/country/client/bg-bank-statement-pdf.ts",
+        "section": ""
+      },
+      {
+        "path": "src/currency/fallback/index.ts",
+        "section": "§Ccy"
+      },
+      {
+        "path": "src/edifact/export.service/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/entry/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/export/standards-import.ts",
+        "section": ""
+      },
+      {
+        "path": "src/export/standards.service.ts",
+        "section": ""
+      },
+      {
+        "path": "src/fiscal/period/index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "EU-2022/2555",
+    "family": "eu-directive",
+    "title": "Directive (EU) 2022/2555 (NIS2) — measures for a high common level of cybersecurity across the Union",
+    "uuid": "59418099-8cd2-8635-b5a6-e80008926db9",
+    "color": "hsl(169 78% 47%)",
+    "count": 105,
+    "modules": [
+      {
+        "path": "src/ai/hs-code-suggestion.ts",
+        "section": ""
+      },
+      {
+        "path": "src/analytics/test.ts",
+        "section": ""
+      },
+      {
+        "path": "src/architecture/invariant/checks.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/audit/compliance/reporting/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/audit/compliance/reporting/service.ts",
+        "section": ""
+      },
+      {
+        "path": "src/audit/compliance/reporting/standard.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/bank/transactions/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/payment/runs/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/payroll/runs/hooks/payroll-disbursement.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/payroll/runs/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/reconciliation.service/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/statement/import.service/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/beyond/agent-capability.ts",
+        "section": ""
+      },
+      {
+        "path": "src/beyond/carbon/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/billing/test.ts",
+        "section": ""
+      },
+      {
+        "path": "src/camt053/import.service/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/collections/test.ts",
+        "section": ""
+      },
+      {
+        "path": "src/config/test.ts",
+        "section": ""
+      },
+      {
+        "path": "src/consistency/apply/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/csrd/disclosures/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/employees/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/eu/csrd/esr/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/event/emitter.service/index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "EU-2018/1673",
+    "family": "eu-directive",
+    "title": "Directive (EU) 2018/1673 (6th Anti-Money-Laundering Directive, AMLD6) on combating money laundering by criminal law",
+    "uuid": "02a334a5-9ba2-8d1e-ba8c-66d5d1aea02b",
+    "color": "hsl(315 72% 59%)",
+    "count": 104,
+    "modules": [
+      {
+        "path": "src/agent/memory-writer.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/agents/mcp/tool-defs.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/agents/mcp/tool/batch.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/agents/mcp/tool/events.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/agents/mcp/tool/versions.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/agents/registered/engineering.agent.ts",
+        "section": "§404"
+      },
+      {
+        "path": "src/anchoring/index.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/api/audit/events/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/architecture/invariant/by-agent.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/architecture/invariant/checks.ts",
+        "section": "§6.4"
+      },
+      {
+        "path": "src/audit/events/index.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/audit/trail/write-audit-event.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/base/accounting/field/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/beyond/reversibility/index.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/bookable/resources/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/capture/media/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/cases/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/csrd/disclosures/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/error/uuid/index.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/evidence/attestations/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/fiscal/periods/carbon/emissions/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ghg/protocol/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/internal/controls/audit/findings/court-docket.ts",
+        "section": ""
+      },
+      {
+        "path": "src/internal/controls/audit/findings/index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "EU-2018/843",
+    "family": "eu-directive",
+    "title": "Directive (EU) 2018/843 (5th Anti-Money-Laundering Directive, AMLD5) amending Directive (EU) 2015/849",
+    "uuid": "2c847acc-12ec-8d1f-8d37-2b9374371f64",
+    "color": "hsl(236 72% 50%)",
+    "count": 104,
+    "modules": [
+      {
+        "path": "src/agent/memory-writer.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/agents/mcp/tool-defs.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/agents/mcp/tool/batch.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/agents/mcp/tool/events.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/agents/mcp/tool/versions.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/agents/registered/engineering.agent.ts",
+        "section": "§404"
+      },
+      {
+        "path": "src/anchoring/index.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/api/audit/events/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/architecture/invariant/by-agent.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/architecture/invariant/checks.ts",
+        "section": "§6.4"
+      },
+      {
+        "path": "src/audit/events/index.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/audit/trail/write-audit-event.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/base/accounting/field/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/beyond/reversibility/index.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/bookable/resources/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/capture/media/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/cases/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/csrd/disclosures/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/error/uuid/index.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/evidence/attestations/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/fiscal/periods/carbon/emissions/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ghg/protocol/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/internal/controls/audit/findings/court-docket.ts",
+        "section": ""
+      },
+      {
+        "path": "src/internal/controls/audit/findings/index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "EU-2018/957",
+    "family": "eu-directive",
+    "title": "Revised Posting of Workers Directive — Directive (EU) 2018/957 amending Directive 96/71/EC",
+    "uuid": "0b118902-8406-8152-80c9-61907ed8711b",
+    "color": "hsl(313 87% 40%)",
+    "count": 104,
+    "modules": [
+      {
+        "path": "src/agent/memory-writer.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/agents/mcp/tool-defs.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/agents/mcp/tool/batch.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/agents/mcp/tool/events.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/agents/mcp/tool/versions.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/agents/registered/engineering.agent.ts",
+        "section": "§404"
+      },
+      {
+        "path": "src/anchoring/index.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/api/audit/events/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/architecture/invariant/by-agent.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/architecture/invariant/checks.ts",
+        "section": "§6.4"
+      },
+      {
+        "path": "src/audit/events/index.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/audit/trail/write-audit-event.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/base/accounting/field/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/beyond/reversibility/index.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/bookable/resources/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/capture/media/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/cases/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/csrd/disclosures/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/error/uuid/index.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/evidence/attestations/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/fiscal/periods/carbon/emissions/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ghg/protocol/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/internal/controls/audit/findings/court-docket.ts",
+        "section": ""
+      },
+      {
+        "path": "src/internal/controls/audit/findings/index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "EU-2014/55",
+    "family": "eu-directive",
+    "title": "Directive 2014/55/EU of 16 April 2014 on electronic invoicing in public procurement (the legal mandate for EN 16931 in B2G)",
+    "uuid": "1b10859c-c320-8b9e-a6be-75b85007585c",
+    "color": "hsl(88 83% 50%)",
+    "count": 48,
+    "modules": [
+      {
+        "path": "src/anchor/index.ts",
+        "section": "§2.4"
+      },
+      {
+        "path": "src/anchoring/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bookable/resources/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/customers/contracts/contract/signatures/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/emission/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/evidence/attestation/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/evidence/attestations/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/export/types.ts",
+        "section": ""
+      },
+      {
+        "path": "src/fiscal/period/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/fiscal/periods/fiscal/period/snapshots/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/integrity/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/integrity/signatures.ts",
+        "section": "§3.12"
+      },
+      {
+        "path": "src/iso/14289/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/iso/14289/profile.ts",
+        "section": ""
+      },
+      {
+        "path": "src/items/bills/of/materials/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/items/bills/of/materials/work/orders/operation/runs/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/items/bills/of/materials/work/orders/routings/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/items/packages/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/lot/work/phases/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/lots/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/maintenance/requests/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/maintenance/work/orders/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/period/end/closing/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/properties/index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "EU-CSDDD-2024/1760",
+    "family": "eu-directive",
+    "title": "Corporate Sustainability Due Diligence Directive (EU) 2024/1760",
+    "uuid": "246bba9d-7354-800b-ab82-069f00159cd6",
+    "color": "hsl(323 66% 51%)",
+    "count": 41,
+    "modules": [
+      {
+        "path": "src/admin/TenantFilters.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/admin/TenantManagement.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/ai/models/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ai/models/service.ts",
+        "section": ""
+      },
+      {
+        "path": "src/analytics/BudgetVsActualCard.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/analytics/CostAnalysisCard.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/analytics/FinancialRatiosCard.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/analytics/KPIDashboard.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/analytics/TrendAnalysisCard.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/beyond/ai-audit.ts",
+        "section": "Annex IV"
+      },
+      {
+        "path": "src/beyond/explainability/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/beyond/types/index.ts",
+        "section": "Annex IV"
+      },
+      {
+        "path": "src/blocks/form/Component.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/commerce/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/dashboard/index.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/discriminator/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/eu/ai/act/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ifrs/15/validate.ts",
+        "section": ""
+      },
+      {
+        "path": "src/iso/14289/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/iso/14289/profile.ts",
+        "section": ""
+      },
+      {
+        "path": "src/journal/entries/hooks/balanced-entry.ts",
+        "section": ""
+      },
+      {
+        "path": "src/modal/CreateJournalEntryModal.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/sdk/accounting-client/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "EU-2000/31",
+    "family": "eu-directive",
+    "title": "Directive 2000/31/EC on electronic commerce (e-Commerce Directive)",
+    "uuid": "cb593ad1-0aa1-8e91-8f5d-745c03d4460a",
+    "color": "hsl(217 78% 55%)",
+    "count": 24,
+    "modules": [
+      {
+        "path": "src/country/client/bg-bank-statement-pdf.ts",
+        "section": ""
+      },
+      {
+        "path": "src/country/client/bg-pades-signer.ts",
+        "section": "§12.8"
+      },
+      {
+        "path": "src/country/client/pdf-text-extractor-default.ts",
+        "section": ""
+      },
+      {
+        "path": "src/country/clients/bg/bank/parser/fibank.ts",
+        "section": ""
+      },
+      {
+        "path": "src/country/clients/bg/bank/parser/unicredit-bulbank.ts",
+        "section": ""
+      },
+      {
+        "path": "src/entanglement/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/etsi/en/319/142/index.ts",
+        "section": "§12.8"
+      },
+      {
+        "path": "src/etsi/en/319/142/profile.ts",
+        "section": "§12.8"
+      },
+      {
+        "path": "src/etsi/en/319/142/signature-dictionary.ts",
+        "section": "§12.8"
+      },
+      {
+        "path": "src/evidence/attestation/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/iso/19005/profile.ts",
+        "section": ""
+      },
+      {
+        "path": "src/quantum/entanglement/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/quantum/entanglement/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "Art.6(1"
+      }
+    ]
+  },
+  {
+    "id": "EU-2011/83",
+    "family": "eu-directive",
+    "title": "Consumer Rights Directive (Directive 2011/83/EU)",
+    "uuid": "ef87efa5-1c6a-8c60-9a0a-4ebfb3e5023a",
+    "color": "hsl(119 84% 59%)",
+    "count": 20,
+    "modules": [
+      {
+        "path": "src/beyond/bitemporal/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/evidence/attestation/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/evidence/attestations/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/export/types.ts",
+        "section": ""
+      },
+      {
+        "path": "src/fiscal/periods/carbon/emissions/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ghg/protocol/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/iso/19005/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/iso/19005/profile.ts",
+        "section": ""
+      },
+      {
+        "path": "src/items/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/manufacturing/seed/positions.ts",
+        "section": ""
+      },
+      {
+        "path": "src/manufacturing/seed/standards.ts",
+        "section": ""
+      },
+      {
+        "path": "src/properties/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/properties/spaces/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§7.3"
+      },
+      {
+        "path": "src/tag/field.ts",
+        "section": ""
+      },
+      {
+        "path": "src/tag/list.ts",
+        "section": ""
+      },
+      {
+        "path": "src/tag/setTagList.ts",
+        "section": ""
+      },
+      {
+        "path": "src/tag/taggedWith.ts",
+        "section": ""
+      },
+      {
+        "path": "src/tags/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/tags/taggings/index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "EU-2006/43",
+    "family": "eu-directive",
+    "title": "Directive 2006/43/EC on statutory audits of annual accounts and consolidated accounts (as amended by Directive 2014/56/EU)",
+    "uuid": "4a029e73-4c31-87e6-915f-350094f7a584",
+    "color": "hsl(226 73% 57%)",
+    "count": 14,
+    "modules": [
+      {
+        "path": "src/base/accounting/field/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/localize/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/nace/rev2/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/naredba/n/18/vat-groups.ts",
+        "section": ""
+      },
+      {
+        "path": "src/self/accounting/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/shared/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/shared/field.ts",
+        "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§4"
+      },
+      {
+        "path": "src/taxing/jurisdictions/index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "EU-2003/88/EC",
+    "family": "eu-directive",
+    "title": "Working Time Directive — Directive 2003/88/EC concerning certain aspects of the organisation of working time",
+    "uuid": "b42f23a7-41b8-87cd-9da0-e7b6bece54cd",
+    "color": "hsl(47 55% 61%)",
+    "count": 10,
+    "modules": [
+      {
+        "path": "src/iban/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/iso/13616/iban-bg.ts",
+        "section": ""
+      },
+      {
+        "path": "src/iso/13616/iban.ts",
+        "section": ""
+      },
+      {
+        "path": "src/iso/7064/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/iso/7064/egn-bg.ts",
+        "section": ""
+      },
+      {
+        "path": "src/iso/7064/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "EU-2005/29",
+    "family": "eu-directive",
+    "title": "Unfair Commercial Practices Directive (Directive 2005/29/EC)",
+    "uuid": "83f66cf1-7474-8acb-aa2c-c98df3a073b3",
+    "color": "hsl(302 58% 39%)",
+    "count": 6,
+    "modules": [
+      {
+        "path": "src/bulk/op/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/iso/19005/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/iso/19005/metadata.ts",
+        "section": "§6.7"
+      },
+      {
+        "path": "src/iso/19005/profile.ts",
+        "section": ""
+      },
+      {
+        "path": "src/items/batches/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§8.5.2"
+      }
+    ]
+  },
+  {
+    "id": "EU-96/71/EC",
+    "family": "eu-directive",
+    "title": "Posting of Workers Directive — Directive 96/71/EC concerning the posting of workers in the framework of the provision of services",
+    "uuid": "b50f661b-8de1-889d-a63c-2376a8f59309",
+    "color": "hsl(271 87% 41%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "EU-DAC",
+    "family": "eu-directive",
+    "title": "Council Directive 2011/16/EU on administrative cooperation in the field of taxation (DAC; incl. DAC-4 CbCR Directive (EU) 2016/881 & DAC-7 platforms Directive (EU) 2021/514)",
+    "uuid": "9733a1e8-e157-8852-90f8-d4a20969ec1c",
+    "color": "hsl(187 76% 54%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "EU-2019/1150",
+    "family": "eu-regulation",
+    "title": "Platform-to-Business Regulation — P2B (Regulation (EU) 2019/1150)",
+    "uuid": "48fb65aa-8a32-8dc8-89a1-caa5a1cd4206",
+    "color": "hsl(323 86% 40%)",
+    "count": 258,
+    "modules": [
+      {
+        "path": "src/accounting/fields-money-fix.ts",
+        "section": ""
+      },
+      {
+        "path": "src/accounting/financial-analysis.ts",
+        "section": ""
+      },
+      {
+        "path": "src/accounting/reports.service.ts",
+        "section": ""
+      },
+      {
+        "path": "src/activities/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ai/suggestions/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/analytics/TrendAnalysisCard.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/analytics/types.ts",
+        "section": ""
+      },
+      {
+        "path": "src/app/(frontend)/(sitemaps)/pages-sitemap.xml/route.ts",
+        "section": ""
+      },
+      {
+        "path": "src/app/(frontend)/(sitemaps)/posts-sitemap.xml/route.ts",
+        "section": ""
+      },
+      {
+        "path": "src/app/(frontend)/[locale]/posts/[slug]/page.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/auto/set/timestamp/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/bank/reconciliations/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/bank/transactions/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/payment/runs/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/payroll/runs/hooks/payroll-disbursement.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/payroll/runs/hooks/payroll-run.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/payroll/runs/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/reconciliation.service/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/statement/import.service/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/base/accounting/field/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/billing/stripeWebhookHandlers.ts",
+        "section": ""
+      },
+      {
+        "path": "src/biological/assets/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bookable/resources/bookings/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bookable/resources/index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "EU-Intrastat-Reg-2019/2152",
+    "family": "eu-regulation",
+    "title": "Regulation (EU) 2019/2152 of the European Parliament and of the Council of 27 November 2019 on European business statistics (Intrastat intra-EU trade reporting)",
+    "uuid": "393f35aa-70f5-8281-a57b-81a6dc002ffb",
+    "color": "hsl(255 73% 40%)",
+    "count": 258,
+    "modules": [
+      {
+        "path": "src/accounting/fields-money-fix.ts",
+        "section": ""
+      },
+      {
+        "path": "src/accounting/financial-analysis.ts",
+        "section": ""
+      },
+      {
+        "path": "src/accounting/reports.service.ts",
+        "section": ""
+      },
+      {
+        "path": "src/activities/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ai/suggestions/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/analytics/TrendAnalysisCard.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/analytics/types.ts",
+        "section": ""
+      },
+      {
+        "path": "src/app/(frontend)/(sitemaps)/pages-sitemap.xml/route.ts",
+        "section": ""
+      },
+      {
+        "path": "src/app/(frontend)/(sitemaps)/posts-sitemap.xml/route.ts",
+        "section": ""
+      },
+      {
+        "path": "src/app/(frontend)/[locale]/posts/[slug]/page.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/auto/set/timestamp/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/bank/reconciliations/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/bank/transactions/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/payment/runs/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/payroll/runs/hooks/payroll-disbursement.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/payroll/runs/hooks/payroll-run.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/payroll/runs/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/reconciliation.service/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/statement/import.service/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/base/accounting/field/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/billing/stripeWebhookHandlers.ts",
+        "section": ""
+      },
+      {
+        "path": "src/biological/assets/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bookable/resources/bookings/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bookable/resources/index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "EU-2015/847",
+    "family": "eu-regulation",
+    "title": "Regulation (EU) 2015/847 on information accompanying transfers of funds and repealing Regulation (EC) No 1781/2006 (Wire Transfer Regulation)",
+    "uuid": "2252c071-7947-877b-9c52-536f598bbdc7",
+    "color": "hsl(146 72% 55%)",
+    "count": 230,
+    "modules": [
+      {
+        "path": "src/accounting/fields-money-fix.ts",
+        "section": ""
+      },
+      {
+        "path": "src/accounting/financial-analysis.ts",
+        "section": ""
+      },
+      {
+        "path": "src/accounting/reports.service.ts",
+        "section": ""
+      },
+      {
+        "path": "src/analytics/BudgetVsActualCard.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/analytics/KPIDashboard.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/analytics/types.ts",
+        "section": ""
+      },
+      {
+        "path": "src/app/(api)/api/subscriptions/create/route.ts",
+        "section": ""
+      },
+      {
+        "path": "src/app/(frontend)/[locale]/products/[slug]/page.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/app/(frontend)/[locale]/products/page.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/bank/reconciliations/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/bank/transactions/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/payment/runs/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/payroll/runs/hooks/payroll-disbursement.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/payroll/runs/hooks/payroll-run.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/payroll/runs/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/reconciliation.service/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/statement/import.service/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/base/accounting/field/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/billing/stripeWebhookHandlers.ts",
+        "section": ""
+      },
+      {
+        "path": "src/billing/test.ts",
+        "section": ""
+      },
+      {
+        "path": "src/biological/assets/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bookable/resources/bookings/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bookable/resources/index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "EU-Taxonomy-2020/852",
+    "family": "eu-regulation",
+    "title": "Regulation (EU) 2020/852 on the establishment of a framework to facilitate sustainable investment (Taxonomy Regulation)",
+    "uuid": "97e08408-a2d2-85c3-a62c-d81f42aeeeb5",
+    "color": "hsl(0 82% 46%)",
+    "count": 166,
+    "modules": [
+      {
+        "path": "src/address/validation/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/admin/TenantFilters.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/agents/mcp/tool-defs.ts",
+        "section": ""
+      },
+      {
+        "path": "src/api/audit/events/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/bank/transactions/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/payment/runs/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/payroll/runs/hooks/payroll-disbursement.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/payroll/runs/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/reconciliation.service/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/statement/import.service/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/base/accounting/field/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bookable/resources/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/business/chain/chain-context.ts",
+        "section": ""
+      },
+      {
+        "path": "src/camt053/import.service/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/carriers/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/classify/tax/id/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/config/address-formats/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/config/country-apis/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/config/country-specifics/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/config/examples/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/config/regional-defaults/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/config/types/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/cost/centers/index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "EU-2023/1113",
+    "family": "eu-regulation",
+    "title": "Regulation (EU) 2023/1113 on information accompanying transfers of funds and certain crypto-assets and amending Directive (EU) 2015/849 (recast Transfer of Funds / crypto Travel Rule)",
+    "uuid": "925627ac-ab14-8f08-8fb3-7ca3dfc4141d",
+    "color": "hsl(22 59% 42%)",
+    "count": 163,
+    "modules": [
+      {
+        "path": "src/agent/blocks.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/agent/bootstrap.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/agent/coil.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/agent/context.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/agent/effect-processor.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/agent/index.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/agent/runtime.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/agent/types.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/agents/mcp/auto-generated.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/agents/mcp/dry-clean.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/agents/mcp/in-process-client.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/agents/mcp/rebuild-from-source.ts",
+        "section": "§5.5"
+      },
+      {
+        "path": "src/agents/mcp/self-test.ts",
+        "section": "§5.5"
+      },
+      {
+        "path": "src/agents/mcp/standardization.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/agents/mcp/tool-defs.ts",
+        "section": "§5.3"
+      },
+      {
+        "path": "src/agents/mcp/tool/consistency.ts",
+        "section": "§5.7"
+      },
+      {
+        "path": "src/agents/mcp/tool/index.ts",
+        "section": "§5.7"
+      },
+      {
+        "path": "src/agents/registered/consistency.agent.ts",
+        "section": "§5.7"
+      },
+      {
+        "path": "src/ai/anomaly-detection.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ai/audit-summarisation.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ai/bank-matching.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ai/cloudflare-ai.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ai/document-classification.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ai/durable-objects.ts",
+        "section": "§5.4"
+      }
+    ]
+  },
+  {
+    "id": "EU-2023/2854",
+    "family": "eu-regulation",
+    "title": "Regulation (EU) 2023/2854 — Data Act, on harmonised rules on fair access to and use of data",
+    "uuid": "04602153-952d-846b-9d35-2ec3bb8869ed",
+    "color": "hsl(40 88% 49%)",
+    "count": 163,
+    "modules": [
+      {
+        "path": "src/agent/blocks.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/agent/bootstrap.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/agent/coil.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/agent/context.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/agent/effect-processor.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/agent/index.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/agent/runtime.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/agent/types.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/agents/mcp/auto-generated.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/agents/mcp/dry-clean.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/agents/mcp/in-process-client.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/agents/mcp/rebuild-from-source.ts",
+        "section": "§5.5"
+      },
+      {
+        "path": "src/agents/mcp/self-test.ts",
+        "section": "§5.5"
+      },
+      {
+        "path": "src/agents/mcp/standardization.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/agents/mcp/tool-defs.ts",
+        "section": "§5.3"
+      },
+      {
+        "path": "src/agents/mcp/tool/consistency.ts",
+        "section": "§5.7"
+      },
+      {
+        "path": "src/agents/mcp/tool/index.ts",
+        "section": "§5.7"
+      },
+      {
+        "path": "src/agents/registered/consistency.agent.ts",
+        "section": "§5.7"
+      },
+      {
+        "path": "src/ai/anomaly-detection.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ai/audit-summarisation.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ai/bank-matching.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ai/cloudflare-ai.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ai/document-classification.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ai/durable-objects.ts",
+        "section": "§5.4"
+      }
+    ]
+  },
+  {
+    "id": "EU-2023/956-CBAM",
+    "family": "eu-regulation",
+    "title": "Carbon Border Adjustment Mechanism — Regulation (EU) 2023/956",
+    "uuid": "a893e96a-e3cc-8172-8768-e824ffe83aef",
+    "color": "hsl(315 78% 48%)",
+    "count": 163,
+    "modules": [
+      {
+        "path": "src/agent/blocks.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/agent/bootstrap.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/agent/coil.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/agent/context.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/agent/effect-processor.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/agent/index.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/agent/runtime.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/agent/types.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/agents/mcp/auto-generated.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/agents/mcp/dry-clean.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/agents/mcp/in-process-client.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/agents/mcp/rebuild-from-source.ts",
+        "section": "§5.5"
+      },
+      {
+        "path": "src/agents/mcp/self-test.ts",
+        "section": "§5.5"
+      },
+      {
+        "path": "src/agents/mcp/standardization.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/agents/mcp/tool-defs.ts",
+        "section": "§5.3"
+      },
+      {
+        "path": "src/agents/mcp/tool/consistency.ts",
+        "section": "§5.7"
+      },
+      {
+        "path": "src/agents/mcp/tool/index.ts",
+        "section": "§5.7"
+      },
+      {
+        "path": "src/agents/registered/consistency.agent.ts",
+        "section": "§5.7"
+      },
+      {
+        "path": "src/ai/anomaly-detection.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ai/audit-summarisation.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ai/bank-matching.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ai/cloudflare-ai.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ai/document-classification.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ai/durable-objects.ts",
+        "section": "§5.4"
+      }
+    ]
+  },
+  {
+    "id": "EU-2023/988",
+    "family": "eu-regulation",
+    "title": "General Product Safety Regulation — GPSR (Regulation (EU) 2023/988)",
+    "uuid": "271d5465-3fd0-84a2-93e1-999df7a57d7b",
+    "color": "hsl(293 69% 43%)",
+    "count": 163,
+    "modules": [
+      {
+        "path": "src/agent/blocks.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/agent/bootstrap.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/agent/coil.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/agent/context.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/agent/effect-processor.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/agent/index.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/agent/runtime.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/agent/types.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/agents/mcp/auto-generated.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/agents/mcp/dry-clean.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/agents/mcp/in-process-client.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/agents/mcp/rebuild-from-source.ts",
+        "section": "§5.5"
+      },
+      {
+        "path": "src/agents/mcp/self-test.ts",
+        "section": "§5.5"
+      },
+      {
+        "path": "src/agents/mcp/standardization.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/agents/mcp/tool-defs.ts",
+        "section": "§5.3"
+      },
+      {
+        "path": "src/agents/mcp/tool/consistency.ts",
+        "section": "§5.7"
+      },
+      {
+        "path": "src/agents/mcp/tool/index.ts",
+        "section": "§5.7"
+      },
+      {
+        "path": "src/agents/registered/consistency.agent.ts",
+        "section": "§5.7"
+      },
+      {
+        "path": "src/ai/anomaly-detection.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ai/audit-summarisation.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ai/bank-matching.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ai/cloudflare-ai.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ai/document-classification.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ai/durable-objects.ts",
+        "section": "§5.4"
+      }
+    ]
+  },
+  {
+    "id": "EU-2023/988-GPSR",
+    "family": "eu-regulation",
+    "title": "General Product Safety Regulation — Regulation (EU) 2023/988",
+    "uuid": "270c0686-8800-8028-a596-2f5d1a6f1ebf",
+    "color": "hsl(276 61% 52%)",
+    "count": 163,
+    "modules": [
+      {
+        "path": "src/agent/blocks.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/agent/bootstrap.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/agent/coil.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/agent/context.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/agent/effect-processor.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/agent/index.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/agent/runtime.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/agent/types.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/agents/mcp/auto-generated.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/agents/mcp/dry-clean.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/agents/mcp/in-process-client.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/agents/mcp/rebuild-from-source.ts",
+        "section": "§5.5"
+      },
+      {
+        "path": "src/agents/mcp/self-test.ts",
+        "section": "§5.5"
+      },
+      {
+        "path": "src/agents/mcp/standardization.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/agents/mcp/tool-defs.ts",
+        "section": "§5.3"
+      },
+      {
+        "path": "src/agents/mcp/tool/consistency.ts",
+        "section": "§5.7"
+      },
+      {
+        "path": "src/agents/mcp/tool/index.ts",
+        "section": "§5.7"
+      },
+      {
+        "path": "src/agents/registered/consistency.agent.ts",
+        "section": "§5.7"
+      },
+      {
+        "path": "src/ai/anomaly-detection.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ai/audit-summarisation.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ai/bank-matching.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ai/cloudflare-ai.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ai/document-classification.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ai/durable-objects.ts",
+        "section": "§5.4"
+      }
+    ]
+  },
+  {
+    "id": "EU-2022/1925",
+    "family": "eu-regulation",
+    "title": "Regulation (EU) 2022/1925 — Digital Markets Act (DMA)",
+    "uuid": "1348d974-c7f7-82eb-818a-fce729f3031b",
+    "color": "hsl(256 62% 58%)",
+    "count": 105,
+    "modules": [
+      {
+        "path": "src/ai/hs-code-suggestion.ts",
+        "section": ""
+      },
+      {
+        "path": "src/analytics/test.ts",
+        "section": ""
+      },
+      {
+        "path": "src/architecture/invariant/checks.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/audit/compliance/reporting/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/audit/compliance/reporting/service.ts",
+        "section": ""
+      },
+      {
+        "path": "src/audit/compliance/reporting/standard.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/bank/transactions/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/payment/runs/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/payroll/runs/hooks/payroll-disbursement.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/payroll/runs/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/reconciliation.service/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/statement/import.service/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/beyond/agent-capability.ts",
+        "section": ""
+      },
+      {
+        "path": "src/beyond/carbon/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/billing/test.ts",
+        "section": ""
+      },
+      {
+        "path": "src/camt053/import.service/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/collections/test.ts",
+        "section": ""
+      },
+      {
+        "path": "src/config/test.ts",
+        "section": ""
+      },
+      {
+        "path": "src/consistency/apply/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/csrd/disclosures/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/employees/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/eu/csrd/esr/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/event/emitter.service/index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "EU-2022/2065",
+    "family": "eu-regulation",
+    "title": "Regulation (EU) 2022/2065 — Digital Services Act (DSA)",
+    "uuid": "88a00338-1d2e-826c-a423-f0c413a57c3a",
+    "color": "hsl(56 58% 46%)",
+    "count": 105,
+    "modules": [
+      {
+        "path": "src/ai/hs-code-suggestion.ts",
+        "section": ""
+      },
+      {
+        "path": "src/analytics/test.ts",
+        "section": ""
+      },
+      {
+        "path": "src/architecture/invariant/checks.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/audit/compliance/reporting/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/audit/compliance/reporting/service.ts",
+        "section": ""
+      },
+      {
+        "path": "src/audit/compliance/reporting/standard.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/bank/transactions/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/payment/runs/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/payroll/runs/hooks/payroll-disbursement.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/payroll/runs/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/reconciliation.service/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/statement/import.service/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/beyond/agent-capability.ts",
+        "section": ""
+      },
+      {
+        "path": "src/beyond/carbon/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/billing/test.ts",
+        "section": ""
+      },
+      {
+        "path": "src/camt053/import.service/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/collections/test.ts",
+        "section": ""
+      },
+      {
+        "path": "src/config/test.ts",
+        "section": ""
+      },
+      {
+        "path": "src/consistency/apply/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/csrd/disclosures/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/employees/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/eu/csrd/esr/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/event/emitter.service/index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "EU-2022/2554",
+    "family": "eu-regulation",
+    "title": "Regulation (EU) 2022/2554 (DORA) on digital operational resilience for the financial sector",
+    "uuid": "be8d4b88-6fec-8a8b-bb7f-d8ac35d578c0",
+    "color": "hsl(181 60% 54%)",
+    "count": 105,
+    "modules": [
+      {
+        "path": "src/ai/hs-code-suggestion.ts",
+        "section": ""
+      },
+      {
+        "path": "src/analytics/test.ts",
+        "section": ""
+      },
+      {
+        "path": "src/architecture/invariant/checks.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/audit/compliance/reporting/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/audit/compliance/reporting/service.ts",
+        "section": ""
+      },
+      {
+        "path": "src/audit/compliance/reporting/standard.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/bank/transactions/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/payment/runs/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/payroll/runs/hooks/payroll-disbursement.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/payroll/runs/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/reconciliation.service/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/statement/import.service/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/beyond/agent-capability.ts",
+        "section": ""
+      },
+      {
+        "path": "src/beyond/carbon/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/billing/test.ts",
+        "section": ""
+      },
+      {
+        "path": "src/camt053/import.service/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/collections/test.ts",
+        "section": ""
+      },
+      {
+        "path": "src/config/test.ts",
+        "section": ""
+      },
+      {
+        "path": "src/consistency/apply/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/csrd/disclosures/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/employees/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/eu/csrd/esr/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/event/emitter.service/index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "EU-2022/868",
+    "family": "eu-regulation",
+    "title": "Regulation (EU) 2022/868 — Data Governance Act (DGA), on European data governance and amending Regulation (EU) 2018/1724",
+    "uuid": "c5ada0d4-b20e-8a11-a631-a1490d825d81",
+    "color": "hsl(205 75% 58%)",
+    "count": 105,
+    "modules": [
+      {
+        "path": "src/ai/hs-code-suggestion.ts",
+        "section": ""
+      },
+      {
+        "path": "src/analytics/test.ts",
+        "section": ""
+      },
+      {
+        "path": "src/architecture/invariant/checks.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/audit/compliance/reporting/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/audit/compliance/reporting/service.ts",
+        "section": ""
+      },
+      {
+        "path": "src/audit/compliance/reporting/standard.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/bank/transactions/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/payment/runs/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/payroll/runs/hooks/payroll-disbursement.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/payroll/runs/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/reconciliation.service/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/statement/import.service/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/beyond/agent-capability.ts",
+        "section": ""
+      },
+      {
+        "path": "src/beyond/carbon/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/billing/test.ts",
+        "section": ""
+      },
+      {
+        "path": "src/camt053/import.service/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/collections/test.ts",
+        "section": ""
+      },
+      {
+        "path": "src/config/test.ts",
+        "section": ""
+      },
+      {
+        "path": "src/consistency/apply/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/csrd/disclosures/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/employees/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/eu/csrd/esr/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/event/emitter.service/index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "EU-2018/302",
+    "family": "eu-regulation",
+    "title": "Geo-blocking Regulation (Regulation (EU) 2018/302)",
+    "uuid": "04081417-acfd-81d3-9260-e7df5f52b837",
+    "color": "hsl(312 75% 61%)",
+    "count": 104,
+    "modules": [
+      {
+        "path": "src/agent/memory-writer.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/agents/mcp/tool-defs.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/agents/mcp/tool/batch.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/agents/mcp/tool/events.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/agents/mcp/tool/versions.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/agents/registered/engineering.agent.ts",
+        "section": "§404"
+      },
+      {
+        "path": "src/anchoring/index.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/api/audit/events/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/architecture/invariant/by-agent.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/architecture/invariant/checks.ts",
+        "section": "§6.4"
+      },
+      {
+        "path": "src/audit/events/index.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/audit/trail/write-audit-event.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/base/accounting/field/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/beyond/reversibility/index.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/bookable/resources/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/capture/media/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/cases/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/csrd/disclosures/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/error/uuid/index.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/evidence/attestations/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/fiscal/periods/carbon/emissions/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ghg/protocol/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/internal/controls/audit/findings/court-docket.ts",
+        "section": ""
+      },
+      {
+        "path": "src/internal/controls/audit/findings/index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "EU-2018/389-SCA-RTS",
+    "family": "eu-regulation",
+    "title": "Commission Delegated Regulation (EU) 2018/389 of 27 November 2017 — regulatory technical standards for strong customer authentication and common and secure open standards of communication (SCA-RTS)",
+    "uuid": "498c47b7-8e50-8b20-b729-9306d74719b1",
+    "color": "hsl(108 56% 53%)",
+    "count": 104,
+    "modules": [
+      {
+        "path": "src/agent/memory-writer.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/agents/mcp/tool-defs.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/agents/mcp/tool/batch.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/agents/mcp/tool/events.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/agents/mcp/tool/versions.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/agents/registered/engineering.agent.ts",
+        "section": "§404"
+      },
+      {
+        "path": "src/anchoring/index.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/api/audit/events/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/architecture/invariant/by-agent.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/architecture/invariant/checks.ts",
+        "section": "§6.4"
+      },
+      {
+        "path": "src/audit/events/index.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/audit/trail/write-audit-event.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/base/accounting/field/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/beyond/reversibility/index.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/bookable/resources/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/capture/media/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/cases/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/csrd/disclosures/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/error/uuid/index.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/evidence/attestations/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/fiscal/periods/carbon/emissions/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ghg/protocol/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/internal/controls/audit/findings/court-docket.ts",
+        "section": ""
+      },
+      {
+        "path": "src/internal/controls/audit/findings/index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "EU-537/2014",
+    "family": "eu-regulation",
+    "title": "Regulation (EU) No 537/2014 on specific requirements regarding statutory audit of public-interest entities",
+    "uuid": "dd542c7f-2217-82a5-87f1-31af8de96d12",
+    "color": "hsl(140 64% 45%)",
+    "count": 48,
+    "modules": [
+      {
+        "path": "src/anchor/index.ts",
+        "section": "§2.4"
+      },
+      {
+        "path": "src/anchoring/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bookable/resources/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/customers/contracts/contract/signatures/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/emission/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/evidence/attestation/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/evidence/attestations/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/export/types.ts",
+        "section": ""
+      },
+      {
+        "path": "src/fiscal/period/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/fiscal/periods/fiscal/period/snapshots/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/integrity/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/integrity/signatures.ts",
+        "section": "§3.12"
+      },
+      {
+        "path": "src/iso/14289/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/iso/14289/profile.ts",
+        "section": ""
+      },
+      {
+        "path": "src/items/bills/of/materials/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/items/bills/of/materials/work/orders/operation/runs/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/items/bills/of/materials/work/orders/routings/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/items/packages/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/lot/work/phases/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/lots/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/maintenance/requests/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/maintenance/work/orders/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/period/end/closing/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/properties/index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "EU-2024/1620",
+    "family": "eu-regulation",
+    "title": "Regulation (EU) 2024/1620 establishing the Authority for Anti-Money Laundering and Countering the Financing of Terrorism (AMLA)",
+    "uuid": "716edcde-3fd8-80c6-ad24-2300b9672a93",
+    "color": "hsl(238 65% 44%)",
+    "count": 41,
+    "modules": [
+      {
+        "path": "src/admin/TenantFilters.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/admin/TenantManagement.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/ai/models/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ai/models/service.ts",
+        "section": ""
+      },
+      {
+        "path": "src/analytics/BudgetVsActualCard.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/analytics/CostAnalysisCard.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/analytics/FinancialRatiosCard.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/analytics/KPIDashboard.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/analytics/TrendAnalysisCard.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/beyond/ai-audit.ts",
+        "section": "Annex IV"
+      },
+      {
+        "path": "src/beyond/explainability/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/beyond/types/index.ts",
+        "section": "Annex IV"
+      },
+      {
+        "path": "src/blocks/form/Component.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/commerce/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/dashboard/index.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/discriminator/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/eu/ai/act/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ifrs/15/validate.ts",
+        "section": ""
+      },
+      {
+        "path": "src/iso/14289/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/iso/14289/profile.ts",
+        "section": ""
+      },
+      {
+        "path": "src/journal/entries/hooks/balanced-entry.ts",
+        "section": ""
+      },
+      {
+        "path": "src/modal/CreateJournalEntryModal.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/sdk/accounting-client/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "EU-2024/1624",
+    "family": "eu-regulation",
+    "title": "Regulation (EU) 2024/1624 — the single EU AML/CFT Rulebook (AMLR)",
+    "uuid": "1aa7a215-347e-8c4f-ba1c-9080c85576f3",
+    "color": "hsl(343 77% 59%)",
+    "count": 41,
+    "modules": [
+      {
+        "path": "src/admin/TenantFilters.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/admin/TenantManagement.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/ai/models/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ai/models/service.ts",
+        "section": ""
+      },
+      {
+        "path": "src/analytics/BudgetVsActualCard.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/analytics/CostAnalysisCard.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/analytics/FinancialRatiosCard.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/analytics/KPIDashboard.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/analytics/TrendAnalysisCard.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/beyond/ai-audit.ts",
+        "section": "Annex IV"
+      },
+      {
+        "path": "src/beyond/explainability/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/beyond/types/index.ts",
+        "section": "Annex IV"
+      },
+      {
+        "path": "src/blocks/form/Component.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/commerce/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/dashboard/index.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/discriminator/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/eu/ai/act/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ifrs/15/validate.ts",
+        "section": ""
+      },
+      {
+        "path": "src/iso/14289/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/iso/14289/profile.ts",
+        "section": ""
+      },
+      {
+        "path": "src/journal/entries/hooks/balanced-entry.ts",
+        "section": ""
+      },
+      {
+        "path": "src/modal/CreateJournalEntryModal.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/sdk/accounting-client/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "GDPR",
+    "family": "eu-regulation",
+    "title": "Regulation (EU) 2016/679 (General Data Protection Regulation) — incl. Art. 22 Automated individual decision-making, including profiling",
+    "uuid": "cb947667-f520-8d63-95c4-e24f4e7c74b0",
+    "color": "hsl(276 68% 45%)",
+    "count": 39,
+    "modules": [
+      {
+        "path": "src/agents/registered/legal.agent.ts",
+        "section": ""
+      },
+      {
+        "path": "src/agents/registered/marketing.agent.ts",
+        "section": ""
+      },
+      {
+        "path": "src/audit/compliance/reporting/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/audit/compliance/reporting/service.ts",
+        "section": ""
+      },
+      {
+        "path": "src/audit/compliance/reporting/standard.ts",
+        "section": ""
+      },
+      {
+        "path": "src/beyond/agent-capability.ts",
+        "section": ""
+      },
+      {
+        "path": "src/beyond/reversibility/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/beyond/tenant-isolation.ts",
+        "section": ""
+      },
+      {
+        "path": "src/exchange/index.ts",
+        "section": "Art.5(1"
+      },
+      {
+        "path": "src/fiscal/period/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/fiscal/periods/fiscal/period/snapshots/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/integrity/envelope.ts",
+        "section": ""
+      },
+      {
+        "path": "src/integrity/index.ts",
+        "section": "§32"
+      },
+      {
+        "path": "src/integrity/tamper-reverse-cost.ts",
+        "section": ""
+      },
+      {
+        "path": "src/legal/entities/fiscal/calendars/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/multi/currency/closing/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/period/end/closing/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/self/closure/provider/notification.ts",
+        "section": ""
+      },
+      {
+        "path": "src/shred/index.ts",
+        "section": "Art.17"
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "Art.5(1"
+      },
+      {
+        "path": "src/update/fiscal/calendar/on/period/change/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/uuid/share/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/validate/audit/compliance/reporting/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/validate/fiscal/period/posting/index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "EU-VAT-Implementing-Reg-282/2011",
+    "family": "eu-regulation",
+    "title": "Council Implementing Regulation (EU) No 282/2011 of 15 March 2011 laying down implementing measures for Directive 2006/112/EC on the common system of value added tax (recast)",
+    "uuid": "cf7a4634-f59f-8a59-ba29-49b1f5f9e747",
+    "color": "hsl(194 55% 42%)",
+    "count": 20,
+    "modules": [
+      {
+        "path": "src/beyond/bitemporal/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/evidence/attestation/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/evidence/attestations/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/export/types.ts",
+        "section": ""
+      },
+      {
+        "path": "src/fiscal/periods/carbon/emissions/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ghg/protocol/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/iso/19005/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/iso/19005/profile.ts",
+        "section": ""
+      },
+      {
+        "path": "src/items/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/manufacturing/seed/positions.ts",
+        "section": ""
+      },
+      {
+        "path": "src/manufacturing/seed/standards.ts",
+        "section": ""
+      },
+      {
+        "path": "src/properties/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/properties/spaces/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§7.3"
+      },
+      {
+        "path": "src/tag/field.ts",
+        "section": ""
+      },
+      {
+        "path": "src/tag/list.ts",
+        "section": ""
+      },
+      {
+        "path": "src/tag/setTagList.ts",
+        "section": ""
+      },
+      {
+        "path": "src/tag/taggedWith.ts",
+        "section": ""
+      },
+      {
+        "path": "src/tags/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/tags/taggings/index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "EU-765/2008",
+    "family": "eu-regulation",
+    "title": "Accreditation and market surveillance / CE marking — Regulation (EC) No 765/2008",
+    "uuid": "0112cb10-9cf3-8646-b0f2-192b9c2ae3bd",
+    "color": "hsl(274 83% 54%)",
+    "count": 9,
+    "modules": [
+      {
+        "path": "src/architecture/invariant/checks.ts",
+        "section": "§4"
+      },
+      {
+        "path": "src/country/client/bg-pades-signer.ts",
+        "section": "§12.8"
+      },
+      {
+        "path": "src/etsi/en/319/142/index.ts",
+        "section": "§12.8"
+      },
+      {
+        "path": "src/etsi/en/319/142/profile.ts",
+        "section": "§12.8"
+      },
+      {
+        "path": "src/etsi/en/319/142/signature-dictionary.ts",
+        "section": "§12.8"
+      },
+      {
+        "path": "src/iso/19005/profile.ts",
+        "section": ""
+      },
+      {
+        "path": "src/proof/bitcoin/genesi/index.ts",
+        "section": "§§3–4"
+      },
+      {
+        "path": "src/sectors/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "EU-Admin-Coop-Reg-904/2010",
+    "family": "eu-regulation",
+    "title": "Council Regulation (EU) No 904/2010 of 7 October 2010 on administrative cooperation and combating fraud in the field of value added tax (recast) — VIES legal basis",
+    "uuid": "3b5dc1a1-af61-867a-a706-8cdde7d281c8",
+    "color": "hsl(77 73% 55%)",
+    "count": 3,
+    "modules": [
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§20-25"
+      },
+      {
+        "path": "src/website/marketing-skills.ts",
+        "section": ""
+      },
+      {
+        "path": "src/website/seo-vortex.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "EU-ESEF",
+    "family": "eu-regulation",
+    "title": "European Single Electronic Format (Commission Delegated Regulation (EU) 2019/815, Inline XBRL)",
+    "uuid": "17b5bc71-cc57-8347-b6f3-0da104b2f91f",
+    "color": "hsl(309 68% 55%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "FATF-R.10",
+    "family": "fatf",
+    "title": "FATF Recommendation 10 — Customer Due Diligence (CDD)",
+    "uuid": "fefada6d-3e5f-87de-a52a-e39a7ff84c78",
+    "color": "hsl(114 63% 51%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "FATF-R.12",
+    "family": "fatf",
+    "title": "FATF Recommendation 12 — Politically Exposed Persons (PEPs)",
+    "uuid": "87470ea0-5190-83ef-bdad-7840b59e70f4",
+    "color": "hsl(71 69% 54%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "FATF-R.16",
+    "family": "fatf",
+    "title": "FATF Recommendation 16 — Wire Transfers (the 'Travel Rule')",
+    "uuid": "aff6f4a7-bc1b-8f8e-b948-830989f60e54",
+    "color": "hsl(46 89% 61%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "FATF-Recommendations",
+    "family": "fatf",
+    "title": "FATF International Standards on Combating Money Laundering and the Financing of Terrorism & Proliferation (40 Recommendations)",
+    "uuid": "cfa591d8-6705-863d-8d57-1389b75b0367",
+    "color": "hsl(237 60% 38%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "EU-2018/1725",
+    "family": "gdpr",
+    "title": "Regulation (EU) 2018/1725 — protection of natural persons with regard to the processing of personal data by the Union institutions, bodies, offices and agencies and on the free movement of such data",
+    "uuid": "0d44a96c-9a80-8cc8-bd9d-5a1319876b04",
+    "color": "hsl(156 84% 50%)",
+    "count": 104,
+    "modules": [
+      {
+        "path": "src/agent/memory-writer.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/agents/mcp/tool-defs.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/agents/mcp/tool/batch.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/agents/mcp/tool/events.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/agents/mcp/tool/versions.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/agents/registered/engineering.agent.ts",
+        "section": "§404"
+      },
+      {
+        "path": "src/anchoring/index.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/api/audit/events/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/architecture/invariant/by-agent.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/architecture/invariant/checks.ts",
+        "section": "§6.4"
+      },
+      {
+        "path": "src/audit/events/index.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/audit/trail/write-audit-event.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/base/accounting/field/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/beyond/reversibility/index.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/bookable/resources/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/capture/media/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/cases/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/csrd/disclosures/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/error/uuid/index.ts",
+        "section": "§6.4.6"
+      },
+      {
+        "path": "src/evidence/attestations/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/fiscal/periods/carbon/emissions/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ghg/protocol/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/internal/controls/audit/findings/court-docket.ts",
+        "section": ""
+      },
+      {
+        "path": "src/internal/controls/audit/findings/index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "EU-2016/679",
+    "family": "gdpr",
+    "title": "Regulation (EU) 2016/679 — General Data Protection Regulation (GDPR), on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, repealing Directive 95/46/EC",
+    "uuid": "48f2055d-fc8c-8744-b88d-c1ad05b114e6",
+    "color": "hsl(314 60% 59%)",
+    "count": 26,
+    "modules": [
+      {
+        "path": "src/agent/sync/training-broadcast.ts",
+        "section": ""
+      },
+      {
+        "path": "src/beyond/bitemporal/index.ts",
+        "section": "§4.15.10"
+      },
+      {
+        "path": "src/biological/assets/index.ts",
+        "section": "§30"
+      },
+      {
+        "path": "src/competency/gap/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/competency/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/export/types.ts",
+        "section": ""
+      },
+      {
+        "path": "src/fiscal/period/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/fiscal/periods/fiscal/period/snapshots/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/items/batches/index.ts",
+        "section": "§8.5.2.1"
+      },
+      {
+        "path": "src/legal/entities/fiscal/calendars/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/maintenance/work/orders/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/multi/currency/closing/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/period/end/closing/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/shred/index.ts",
+        "section": "Art.17"
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/spec/generator/i18n-audit.ts",
+        "section": "§8"
+      },
+      {
+        "path": "src/spec/generator/i18n-stub-filler.ts",
+        "section": "§8"
+      },
+      {
+        "path": "src/storage/redundancy/index.ts",
+        "section": "§4.15.10"
+      },
+      {
+        "path": "src/train/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/update/fiscal/calendar/on/period/change/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/validate/fiscal/period/posting/index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "GDPR-Art-32",
+    "family": "gdpr",
+    "title": "Regulation (EU) 2016/679 Article 32 — Security of processing",
+    "uuid": "b376733b-c0c1-8500-a1e9-904e333088b3",
+    "color": "hsl(222 65% 49%)",
+    "count": 1,
+    "modules": [
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "GRI-Standards",
+    "family": "gri",
+    "title": "GRI Sustainability Reporting Standards (Global Reporting Initiative)",
+    "uuid": "72995b33-6db5-86eb-8e9d-635b0358e8b7",
+    "color": "hsl(177 76% 41%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "GS1-EPCIS-2.0",
+    "family": "gs1",
+    "title": "GS1 EPCIS 2.0 — EPC Information Services / Core Business Vocabulary, supply-chain event visibility (EPCIS = ISO/IEC 19987:2024; CBV = ISO/IEC 19988:2024)",
+    "uuid": "9cfb5763-1ee4-82b6-a0eb-a108397664aa",
+    "color": "hsl(227 72% 41%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "INCOTERMS-2020",
+    "family": "icc",
+    "title": "ICC Incoterms 2020 rules (ICC publication No 723E)",
+    "uuid": "fc7a2ae8-d730-865b-a3e0-50b00246a72e",
+    "color": "hsl(194 62% 54%)",
+    "count": 10,
+    "modules": [
+      {
+        "path": "src/carriers/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/customers/sales/orders/shipments/tracking/events/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/incoterms/2020/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/items/purchase/orders/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§404"
+      },
+      {
+        "path": "src/warehouse/locations/consignment/arrangements/index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
     "id": "ISO/IEC-25010",
     "family": "iec",
     "title": "Systems & software quality models",
     "uuid": "3c2f1991-7fa2-8419-9109-b0150b5780ab",
     "color": "hsl(287 80% 39%)",
-    "count": 99,
+    "count": 103,
     "modules": [
       {
         "path": "src/agent/blocks.ts",
@@ -820,16 +5548,16 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": "§5.4"
       },
       {
+        "path": "src/analytics/index.ts",
+        "section": ""
+      },
+      {
         "path": "src/architecture/invariant/by-agent.ts",
         "section": "§5.2"
       },
       {
         "path": "src/architecture/invariant/checks.ts",
         "section": "§5"
-      },
-      {
-        "path": "src/architecture/invariant/index.ts",
-        "section": ""
       }
     ]
   },
@@ -839,10 +5567,14 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Software testing",
     "uuid": "e69bd662-b3ef-8ba7-ac6c-ff5c05fd3db2",
     "color": "hsl(355 59% 40%)",
-    "count": 36,
+    "count": 37,
     "modules": [
       {
         "path": "src/agents/mcp/self-test.ts",
+        "section": ""
+      },
+      {
+        "path": "src/analytics/test.ts",
         "section": ""
       },
       {
@@ -931,10 +5663,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/testing/test-setup/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/work/orders/test.ts",
         "section": ""
       }
     ]
@@ -1179,7 +5907,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Presentation of Financial Statements",
     "uuid": "f0bae7c9-3fa5-8ce5-b51b-b8e884e6c122",
     "color": "hsl(66 76% 47%)",
-    "count": 27,
+    "count": 26,
     "modules": [
       {
         "path": "src/audit/compliance/reporting/index.ts",
@@ -1454,24 +6182,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     ]
   },
   {
-    "id": "IFRS-2",
-    "family": "ifrs",
-    "title": "Share-based Payment",
-    "uuid": "ec2f6c2e-cb86-8e73-be6c-e00e3475f8c1",
-    "color": "hsl(343 58% 60%)",
-    "count": 8,
-    "modules": [
-      {
-        "path": "src/employees/share/based/payments/index.ts",
-        "section": "§10-§13"
-      },
-      {
-        "path": "src/skill/router/skills.index.ts",
-        "section": "§404"
-      }
-    ]
-  },
-  {
     "id": "IAS-2",
     "family": "ifrs",
     "title": "Inventories",
@@ -1504,6 +6214,24 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/skill/router/skills.index.ts",
         "section": "§302/404/906"
+      }
+    ]
+  },
+  {
+    "id": "IFRS-2",
+    "family": "ifrs",
+    "title": "Share-based Payment",
+    "uuid": "ec2f6c2e-cb86-8e73-be6c-e00e3475f8c1",
+    "color": "hsl(343 58% 60%)",
+    "count": 7,
+    "modules": [
+      {
+        "path": "src/employees/share/based/payments/index.ts",
+        "section": "§10-§13"
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§404"
       }
     ]
   },
@@ -1568,6 +6296,394 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       }
     ]
+  },
+  {
+    "id": "IAS-7",
+    "family": "ifrs",
+    "title": "Statement of Cash Flows",
+    "uuid": "f4bb0480-ea9b-8ced-b78d-d13ca581d692",
+    "color": "hsl(11 59% 46%)",
+    "count": 4,
+    "modules": [
+      {
+        "path": "src/agents/accounting/finance.agent.ts",
+        "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§47"
+      }
+    ]
+  },
+  {
+    "id": "IAS-8",
+    "family": "ifrs",
+    "title": "Accounting Policies, Changes in Accounting Estimates and Errors",
+    "uuid": "f76f92c6-8091-8876-8b32-912a99b9a5fe",
+    "color": "hsl(343 61% 44%)",
+    "count": 4,
+    "modules": [
+      {
+        "path": "src/customers/contracts/contract/amendments/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§404"
+      }
+    ]
+  },
+  {
+    "id": "IFRS-18",
+    "family": "ifrs",
+    "title": "Presentation and Disclosure in Financial Statements",
+    "uuid": "e73cd6c2-b462-80fa-8e3c-62b17d3094ea",
+    "color": "hsl(156 59% 40%)",
+    "count": 2,
+    "modules": [
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302"
+      }
+    ]
+  },
+  {
+    "id": "IFRS-S2",
+    "family": "ifrs",
+    "title": "IFRS S2 Climate-related Disclosures (ISSB)",
+    "uuid": "36ac4a32-6bad-8dd9-8a1f-5cfb3444008f",
+    "color": "hsl(316 59% 40%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "IFRS-S1",
+    "family": "ifrs-sustainability",
+    "title": "General Requirements for Disclosure of Sustainability-related Financial Information",
+    "uuid": "fea6ba1d-e475-8832-987e-26042aa593fd",
+    "color": "hsl(30 66% 43%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "ILO-C001",
+    "family": "ilo",
+    "title": "Hours of Work (Industry) Convention, 1919 (No. 1)",
+    "uuid": "27bd9e21-2fea-8b25-94f2-c993242e173d",
+    "color": "hsl(93 73% 47%)",
+    "count": 124,
+    "modules": [
+      {
+        "path": "src/agent/sync/chat-broadcast.ts",
+        "section": ""
+      },
+      {
+        "path": "src/agent/sync/horo.ts",
+        "section": ""
+      },
+      {
+        "path": "src/agent/sync/payload-chat.ts",
+        "section": ""
+      },
+      {
+        "path": "src/agent/sync/society.ts",
+        "section": ""
+      },
+      {
+        "path": "src/agents/mcp/tool-defs.ts",
+        "section": "§A.9.4.5"
+      },
+      {
+        "path": "src/agents/mcp/tool/_guards.ts",
+        "section": ""
+      },
+      {
+        "path": "src/agents/mcp/tool/cloudflare.ts",
+        "section": ""
+      },
+      {
+        "path": "src/agents/mcp/tool/security.ts",
+        "section": "Annex A"
+      },
+      {
+        "path": "src/agents/registered/ops.agent.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ai/cloudflare-ai.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ai/durable-objects.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ai/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ai/suggestions/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/architecture/invariant/checks.ts",
+        "section": ""
+      },
+      {
+        "path": "src/audit/trail/write-audit-event.ts",
+        "section": "Annex A"
+      },
+      {
+        "path": "src/bank/accounts/payment/runs/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/payroll/runs/hooks/payroll-disbursement.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bank/accounts/payroll/runs/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/beyond/tenant-isolation.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bookable/resources/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bulk/op/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/chats/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/cloudflare/plugin-access.ts",
+        "section": ""
+      },
+      {
+        "path": "src/cloudflare/plugin-helper.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "ILO-C100",
+    "family": "ilo",
+    "title": "Equal Remuneration Convention, 1951 (No. 100)",
+    "uuid": "8ce464e7-8720-8a36-9681-ed6f2be26c0b",
+    "color": "hsl(68 85% 53%)",
+    "count": 30,
+    "modules": [
+      {
+        "path": "src/agents/registered/ops.agent.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bookable/resources/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/emission/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/en/16931/types.ts",
+        "section": ""
+      },
+      {
+        "path": "src/en/16931/validate.ts",
+        "section": ""
+      },
+      {
+        "path": "src/insurance/contracts/index.ts",
+        "section": "§B100"
+      },
+      {
+        "path": "src/invoices/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/items/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/legal/entities/risk/registers/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/maintenance/requests/index.ts",
+        "section": "§8.1"
+      },
+      {
+        "path": "src/maintenance/work/orders/index.ts",
+        "section": "§8.1"
+      },
+      {
+        "path": "src/properties/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/properties/spaces/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "ILO-C105",
+    "family": "ilo",
+    "title": "Abolition of Forced Labour Convention, 1957 (No. 105)",
+    "uuid": "2ef4814e-c36b-8cbb-ace7-d00d02514543",
+    "color": "hsl(140 79% 44%)",
+    "count": 19,
+    "modules": [
+      {
+        "path": "src/internal/controls/audit/findings/court-docket.ts",
+        "section": "§404"
+      },
+      {
+        "path": "src/media/audit/evidences/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "ILO-C111",
+    "family": "ilo",
+    "title": "Discrimination (Employment and Occupation) Convention, 1958 (No. 111)",
+    "uuid": "20714cd4-182d-8806-8f8c-d2fc377b93b4",
+    "color": "hsl(25 61% 58%)",
+    "count": 12,
+    "modules": [
+      {
+        "path": "src/pages/hooks/revalidatePage.ts",
+        "section": ""
+      },
+      {
+        "path": "src/posts/hooks/revalidatePost.ts",
+        "section": ""
+      },
+      {
+        "path": "src/revalidate/redirect/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/rfc/9110/cache.ts",
+        "section": ""
+      },
+      {
+        "path": "src/rfc/9110/get-document.ts",
+        "section": ""
+      },
+      {
+        "path": "src/rfc/9110/get-globals.ts",
+        "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "ILO-C138",
+    "family": "ilo",
+    "title": "Minimum Age Convention, 1973 (No. 138)",
+    "uuid": "810fceab-1ae2-8a5f-8972-93173bb98139",
+    "color": "hsl(279 86% 41%)",
+    "count": 11,
+    "modules": [
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "ILO-C087",
+    "family": "ilo",
+    "title": "Freedom of Association and Protection of the Right to Organise Convention, 1948 (No. 87)",
+    "uuid": "0b797d03-4a64-88fb-85c0-aa3534d4f690",
+    "color": "hsl(57 75% 41%)",
+    "count": 8,
+    "modules": [
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§29-124"
+      }
+    ]
+  },
+  {
+    "id": "ILO-C182",
+    "family": "ilo",
+    "title": "Worst Forms of Child Labour Convention, 1999 (No. 182)",
+    "uuid": "4adbb8b6-ecc2-8f25-b01b-c851c2c73627",
+    "color": "hsl(83 64% 52%)",
+    "count": 7,
+    "modules": [
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "ILO-C029",
+    "family": "ilo",
+    "title": "Forced Labour Convention, 1930 (No. 29)",
+    "uuid": "cc636b2c-6b18-8f80-8a36-9c80dd70af16",
+    "color": "hsl(123 57% 58%)",
+    "count": 6,
+    "modules": [
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "ILO-C098",
+    "family": "ilo",
+    "title": "Right to Organise and Collective Bargaining Convention, 1949 (No. 98)",
+    "uuid": "15049c91-e8da-8a7d-a1e2-94e8a6e2c888",
+    "color": "hsl(340 71% 39%)",
+    "count": 4,
+    "modules": [
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "Wolfsberg-AML-Principles",
+    "family": "industry",
+    "title": "Wolfsberg Group Anti-Money-Laundering Principles (private banking / correspondent banking due diligence)",
+    "uuid": "0b493214-5e1a-8d8a-9054-74421b21779c",
+    "color": "hsl(9 70% 58%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "IPCC-GHG-Guidelines",
+    "family": "ipcc",
+    "title": "2006 IPCC Guidelines for National Greenhouse Gas Inventories (with the 2019 Refinement) — emission-factor basis",
+    "uuid": "18ae1f0c-e57c-8dcd-a9a2-4ff9f25d448e",
+    "color": "hsl(198 86% 50%)",
+    "count": 0,
+    "modules": []
   },
   {
     "id": "ISO-8601-1",
@@ -1681,7 +6797,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Currency codes",
     "uuid": "2aa02578-47b5-80bf-ad53-a36e04aaccfb",
     "color": "hsl(112 57% 38%)",
-    "count": 227,
+    "count": 228,
     "modules": [
       {
         "path": "src/accounting/fields-money-fix.ts",
@@ -1787,7 +6903,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Auditing management systems",
     "uuid": "85eb43b8-8305-8b77-948c-93e96eba62e4",
     "color": "hsl(83 87% 54%)",
-    "count": 92,
+    "count": 97,
     "modules": [
       {
         "path": "src/agent/memory-writer.ts",
@@ -1999,7 +7115,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Universal financial industry message scheme",
     "uuid": "37af5d59-91b7-88a5-9a2e-b9f2b1e525ac",
     "color": "hsl(215 78% 55%)",
-    "count": 85,
+    "count": 88,
     "modules": [
       {
         "path": "src/agents/registered/data.agent.ts",
@@ -2105,7 +7221,113 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Information security management system",
     "uuid": "55e0dd80-ff9d-877e-926f-f0e8e91c9254",
     "color": "hsl(24 66% 46%)",
-    "count": 77,
+    "count": 76,
+    "modules": [
+      {
+        "path": "src/agent/sync/chat-broadcast.ts",
+        "section": ""
+      },
+      {
+        "path": "src/agent/sync/horo.ts",
+        "section": ""
+      },
+      {
+        "path": "src/agent/sync/payload-chat.ts",
+        "section": ""
+      },
+      {
+        "path": "src/agent/sync/society.ts",
+        "section": ""
+      },
+      {
+        "path": "src/agents/mcp/tool-defs.ts",
+        "section": "§A.9.4.5"
+      },
+      {
+        "path": "src/agents/mcp/tool/_guards.ts",
+        "section": ""
+      },
+      {
+        "path": "src/agents/mcp/tool/cloudflare.ts",
+        "section": ""
+      },
+      {
+        "path": "src/agents/mcp/tool/security.ts",
+        "section": "Annex A"
+      },
+      {
+        "path": "src/ai/durable-objects.ts",
+        "section": ""
+      },
+      {
+        "path": "src/architecture/invariant/checks.ts",
+        "section": ""
+      },
+      {
+        "path": "src/audit/trail/write-audit-event.ts",
+        "section": "Annex A"
+      },
+      {
+        "path": "src/beyond/tenant-isolation.ts",
+        "section": ""
+      },
+      {
+        "path": "src/chats/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/cloudflare/plugin-access.ts",
+        "section": ""
+      },
+      {
+        "path": "src/cloudflare/plugin-helper.ts",
+        "section": ""
+      },
+      {
+        "path": "src/exchange/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/integrity/envelope.ts",
+        "section": "Annex A"
+      },
+      {
+        "path": "src/integrity/signatures.ts",
+        "section": "Annex A"
+      },
+      {
+        "path": "src/integrity/tenant-key-registry.ts",
+        "section": "Annex A"
+      },
+      {
+        "path": "src/integrity/uuid-short.ts",
+        "section": "§A.9.4.5"
+      },
+      {
+        "path": "src/iso/27002/coverage.ts",
+        "section": ""
+      },
+      {
+        "path": "src/iso/27002/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/iso/27002/types.ts",
+        "section": ""
+      },
+      {
+        "path": "src/iso/27002/validate.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "ISO/IEC-27001:2022",
+    "family": "iso",
+    "title": "Information security, cybersecurity and privacy protection — Information security management systems — Requirements",
+    "uuid": "25b44e57-b2de-8076-83e6-87585eb6cffe",
+    "color": "hsl(292 63% 53%)",
+    "count": 76,
     "modules": [
       {
         "path": "src/agent/sync/chat-broadcast.ts",
@@ -2211,7 +7433,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "IBAN — International Bank Account Number",
     "uuid": "7d425926-b6b5-8210-87c2-e420beb25015",
     "color": "hsl(26 74% 52%)",
-    "count": 39,
+    "count": 42,
     "modules": [
       {
         "path": "src/bank/accounts/bank/transactions/index.ts",
@@ -2382,12 +7604,82 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     ]
   },
   {
+    "id": "ISO/IEC-27002:2022",
+    "family": "iso",
+    "title": "Information security, cybersecurity and privacy protection — Information security controls",
+    "uuid": "a4c07aac-82f5-899f-b921-0cf8be987f95",
+    "color": "hsl(56 72% 42%)",
+    "count": 36,
+    "modules": [
+      {
+        "path": "src/agents/mcp/tool/_guards.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/agents/mcp/tool/batch.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/architecture/invariant/checks.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/beyond/agent-capability.ts",
+        "section": ""
+      },
+      {
+        "path": "src/cloudflare/plugin-access.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/cross/index.ts",
+        "section": "§5.15"
+      },
+      {
+        "path": "src/iso/27002/coverage.ts",
+        "section": ""
+      },
+      {
+        "path": "src/iso/27002/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/iso/27002/types.ts",
+        "section": ""
+      },
+      {
+        "path": "src/iso/27002/validate.ts",
+        "section": ""
+      },
+      {
+        "path": "src/plugins/mcpScopes/index.ts",
+        "section": "§5.15"
+      },
+      {
+        "path": "src/roles/registry/index.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/shared/SKILL.md",
+        "section": "§5.15"
+      },
+      {
+        "path": "src/shared/field.ts",
+        "section": "§5.15"
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§404"
+      }
+    ]
+  },
+  {
     "id": "ISO-9362",
     "family": "iso",
     "title": "BIC — Business Identifier Code (SWIFT)",
     "uuid": "69a1e579-4329-831c-b8c0-d8ec92947245",
     "color": "hsl(41 74% 39%)",
-    "count": 28,
+    "count": 31,
     "modules": [
       {
         "path": "src/bank/accounts/bank/transactions/index.ts",
@@ -2463,7 +7755,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/skill/router/skills.index.ts",
-        "section": "§404"
+        "section": "§5.8"
       },
       {
         "path": "src/types/bank-reconciliation/index.ts",
@@ -2556,6 +7848,80 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     ]
   },
   {
+    "id": "ISO/IEC-27001",
+    "family": "iso",
+    "title": "ISO/IEC 27001:2022 — Information security, cybersecurity and privacy protection — Information security management systems — Requirements",
+    "uuid": "a74d641a-c4ac-854f-b974-1c9ced72ed21",
+    "color": "hsl(349 85% 40%)",
+    "count": 17,
+    "modules": [
+      {
+        "path": "src/agent/sync/horo.ts",
+        "section": ""
+      },
+      {
+        "path": "src/agent/sync/society.ts",
+        "section": ""
+      },
+      {
+        "path": "src/agents/mcp/tool-defs.ts",
+        "section": "§A.9.4.5"
+      },
+      {
+        "path": "src/agents/mcp/tool/security.ts",
+        "section": "Annex A"
+      },
+      {
+        "path": "src/ai/durable-objects.ts",
+        "section": ""
+      },
+      {
+        "path": "src/beyond/tenant-isolation.ts",
+        "section": ""
+      },
+      {
+        "path": "src/exchange/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/integrity/envelope.ts",
+        "section": "Annex A"
+      },
+      {
+        "path": "src/integrity/signatures.ts",
+        "section": "Annex A"
+      },
+      {
+        "path": "src/integrity/tenant-key-registry.ts",
+        "section": "Annex A"
+      },
+      {
+        "path": "src/integrity/uuid-short.ts",
+        "section": "§A.9.4.5"
+      },
+      {
+        "path": "src/plugins/mcpScopes/index.ts",
+        "section": "§A.9.4.1"
+      },
+      {
+        "path": "src/safety/mode/index.ts",
+        "section": "Annex A"
+      },
+      {
+        "path": "src/shares/index.ts",
+        "section": "Annex A"
+      },
+      {
+        "path": "src/uuid/format/coverage.ts",
+        "section": "Annex A"
+      },
+      {
+        "path": "src/uuid/share/index.ts",
+        "section": "Annex A"
+      }
+    ]
+  },
+  {
     "id": "ISO-3166-2",
     "family": "iso",
     "title": "Country subdivision codes",
@@ -2615,7 +7981,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "PDF/A archival format",
     "uuid": "c97ea5e9-eef0-830e-b302-5bc54e88e933",
     "color": "hsl(102 80% 55%)",
-    "count": 12,
+    "count": 14,
     "modules": [
       {
         "path": "src/country/client/bg-hybrid-invoice.ts",
@@ -2647,7 +8013,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/skill/router/skills.index.ts",
-        "section": "§302/404/906"
+        "section": ""
       }
     ]
   },
@@ -2756,6 +8122,116 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     ]
   },
   {
+    "id": "ISO-7064",
+    "family": "iso",
+    "title": "Check character systems",
+    "uuid": "b8d78e45-6f9d-8be4-a422-4d93d1b73fd9",
+    "color": "hsl(159 57% 59%)",
+    "count": 11,
+    "modules": [
+      {
+        "path": "src/bg/identifier/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/iban/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/iso/13616/iban-bg.ts",
+        "section": ""
+      },
+      {
+        "path": "src/iso/13616/iban.ts",
+        "section": ""
+      },
+      {
+        "path": "src/iso/7064/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/iso/7064/egn-bg.ts",
+        "section": ""
+      },
+      {
+        "path": "src/iso/7064/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "ISO-14289-1",
+    "family": "iso",
+    "title": "PDF/UA universally accessible PDF",
+    "uuid": "dda87cbc-f8d4-8932-80fe-ee4c5e7d14fe",
+    "color": "hsl(224 74% 58%)",
+    "count": 10,
+    "modules": [
+      {
+        "path": "src/evidence/attestation/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/evidence/attestations/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/export/types.ts",
+        "section": ""
+      },
+      {
+        "path": "src/iso/14289/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/iso/14289/profile.ts",
+        "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "ISO-9001",
+    "family": "iso",
+    "title": "ISO 9001:2015 — Quality management systems: requirements",
+    "uuid": "bb5f8b75-ed17-82b2-a54e-220f1e08f164",
+    "color": "hsl(87 89% 59%)",
+    "count": 10,
+    "modules": [
+      {
+        "path": "src/internal/policies/policy/versions/index.ts",
+        "section": "§7.5"
+      },
+      {
+        "path": "src/items/batches/index.ts",
+        "section": "§8.5.2"
+      },
+      {
+        "path": "src/items/quality/inspections/index.ts",
+        "section": "§8.7"
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/vendors/vendor/quotes/index.ts",
+        "section": "§8.4"
+      },
+      {
+        "path": "src/vendors/vendor/scorecards/index.ts",
+        "section": "§8.4"
+      }
+    ]
+  },
+  {
     "id": "ISO-37301",
     "family": "iso",
     "title": "Compliance management systems",
@@ -2832,82 +8308,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     ]
   },
   {
-    "id": "ISO-7064",
-    "family": "iso",
-    "title": "Check character systems",
-    "uuid": "b8d78e45-6f9d-8be4-a422-4d93d1b73fd9",
-    "color": "hsl(159 57% 59%)",
-    "count": 9,
-    "modules": [
-      {
-        "path": "src/bg/identifier/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/iban/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/iso/13616/iban-bg.ts",
-        "section": ""
-      },
-      {
-        "path": "src/iso/13616/iban.ts",
-        "section": ""
-      },
-      {
-        "path": "src/iso/7064/README.md",
-        "section": ""
-      },
-      {
-        "path": "src/iso/7064/egn-bg.ts",
-        "section": ""
-      },
-      {
-        "path": "src/iso/7064/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/skill/router/skills.index.ts",
-        "section": "§302/404/906"
-      }
-    ]
-  },
-  {
-    "id": "ISO-14289-1",
-    "family": "iso",
-    "title": "PDF/UA universally accessible PDF",
-    "uuid": "dda87cbc-f8d4-8932-80fe-ee4c5e7d14fe",
-    "color": "hsl(224 74% 58%)",
-    "count": 8,
-    "modules": [
-      {
-        "path": "src/evidence/attestation/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/evidence/attestations/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/export/types.ts",
-        "section": ""
-      },
-      {
-        "path": "src/iso/14289/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/iso/14289/profile.ts",
-        "section": ""
-      },
-      {
-        "path": "src/skill/router/skills.index.ts",
-        "section": "§302/404/906"
-      }
-    ]
-  },
-  {
     "id": "ISO-19160-4",
     "family": "iso",
     "title": "Addressing — components & conceptual model",
@@ -2946,36 +8346,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     ]
   },
   {
-    "id": "ISO-27037",
-    "family": "iso",
-    "title": "Digital evidence identification & preservation",
-    "uuid": "20aa97f1-4b7f-84bd-bbfa-fcae216d745d",
-    "color": "hsl(82 66% 39%)",
-    "count": 8,
-    "modules": [
-      {
-        "path": "src/ai/ai-security.ts",
-        "section": ""
-      },
-      {
-        "path": "src/ai/cloudflare-ai.ts",
-        "section": ""
-      },
-      {
-        "path": "src/architecture/invariant/checks.ts",
-        "section": ""
-      },
-      {
-        "path": "src/audit/events/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/skill/router/skills.index.ts",
-        "section": "§404"
-      }
-    ]
-  },
-  {
     "id": "ISO-55000",
     "family": "iso",
     "title": "Asset management",
@@ -3010,6 +8380,36 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     ]
   },
   {
+    "id": "ISO-27037",
+    "family": "iso",
+    "title": "Digital evidence identification & preservation",
+    "uuid": "20aa97f1-4b7f-84bd-bbfa-fcae216d745d",
+    "color": "hsl(82 66% 39%)",
+    "count": 7,
+    "modules": [
+      {
+        "path": "src/ai/ai-security.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ai/cloudflare-ai.ts",
+        "section": ""
+      },
+      {
+        "path": "src/architecture/invariant/checks.ts",
+        "section": ""
+      },
+      {
+        "path": "src/audit/events/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
+      }
+    ]
+  },
+  {
     "id": "ISO-6523-1",
     "family": "iso",
     "title": "Participant identifier scheme",
@@ -3035,7 +8435,137 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/skill/router/skills.index.ts",
-        "section": "§8.5.2"
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "ISO-14064-1",
+    "family": "iso",
+    "title": "ISO 14064-1:2018 — Greenhouse gases — Part 1: Specification with guidance at the organization level for quantification and reporting of greenhouse gas emissions and removals",
+    "uuid": "bfe84d19-0bee-81a0-bc97-9db9f26ac234",
+    "color": "hsl(168 62% 39%)",
+    "count": 6,
+    "modules": [
+      {
+        "path": "src/csrd/disclosures/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/emission/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/fiscal/periods/carbon/emissions/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ghg/protocol/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "ISO-37000",
+    "family": "iso",
+    "title": "ISO 37000:2021 — Governance of organizations — Guidance",
+    "uuid": "c51a22bd-e4f5-8293-8664-58efac41fe16",
+    "color": "hsl(58 89% 59%)",
+    "count": 6,
+    "modules": [
+      {
+        "path": "src/architecture/invariant/checks.ts",
+        "section": ""
+      },
+      {
+        "path": "src/constitution/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/governance/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/legal/entities/board/actions/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/legislation/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§9"
+      }
+    ]
+  },
+  {
+    "id": "ISO/IEC/IEEE-29119",
+    "family": "iso",
+    "title": "ISO/IEC/IEEE 29119 — Software and systems engineering — Software testing (multi-part; Part 1 General concepts, 29119-1:2022)",
+    "uuid": "ce562864-1c21-8fa5-8eb4-14dfdeb314b7",
+    "color": "hsl(262 60% 42%)",
+    "count": 6,
+    "modules": [
+      {
+        "path": "src/agents/mcp/self-test.ts",
+        "section": ""
+      },
+      {
+        "path": "src/testing/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/testing/test-seed-factory/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/testing/test-setup/index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "ISO/IEC-27002",
+    "family": "iso",
+    "title": "ISO/IEC 27002:2022 — Information security, cybersecurity and privacy protection — Information security controls",
+    "uuid": "f65fbe33-d93d-8841-a94a-05af36052715",
+    "color": "hsl(71 70% 41%)",
+    "count": 3,
+    "modules": [
+      {
+        "path": "src/agents/mcp/tool/batch.ts",
+        "section": "§5.4"
+      },
+      {
+        "path": "src/beyond/agent-capability.ts",
+        "section": ""
+      },
+      {
+        "path": "src/plugins/mcpScopes/index.ts",
+        "section": "§5.15"
+      }
+    ]
+  },
+  {
+    "id": "ISO-22301:2019",
+    "family": "iso",
+    "title": "Security and resilience — Business continuity management systems — Requirements",
+    "uuid": "97a1a77f-ccdc-82bc-912e-6c4166e4300b",
+    "color": "hsl(297 82% 45%)",
+    "count": 2,
+    "modules": [
+      {
+        "path": "src/self/closure/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/self/closure/types.ts",
+        "section": ""
       }
     ]
   },
@@ -3054,12 +8584,120 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     ]
   },
   {
+    "id": "ISO-14001",
+    "family": "iso",
+    "title": "ISO 14001:2015 — Environmental management systems — Requirements with guidance for use",
+    "uuid": "f9767789-d66e-8d7e-a695-7ce571ffdd93",
+    "color": "hsl(142 69% 55%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "ISO-14068-1",
+    "family": "iso",
+    "title": "ISO 14068-1:2023 — Climate change management — Transition to net zero — Part 1: Carbon neutrality",
+    "uuid": "dc3fbbd2-c5d8-8a56-8424-b8a41c96abbd",
+    "color": "hsl(223 67% 56%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "ISO-28000",
+    "family": "iso",
+    "title": "ISO 28000:2022 — Security and resilience: Security management systems — Requirements (supply chain security)",
+    "uuid": "6bea7c37-4ad1-87b3-a829-a3e1a4221338",
+    "color": "hsl(266 74% 45%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "ISO-30414",
+    "family": "iso",
+    "title": "ISO 30414:2018 — Human resource management — Guidelines for internal and external human capital reporting",
+    "uuid": "3c3e5eec-c64c-8689-a780-68a2cfb5e3de",
+    "color": "hsl(302 79% 58%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "ISO/IEC-27017:2015",
+    "family": "iso",
+    "title": "Information technology — Security techniques — Code of practice for information security controls based on ISO/IEC 27002 for cloud services",
+    "uuid": "e9e43e3d-0eeb-86e1-a3be-1c3afdfd5ddf",
+    "color": "hsl(116 82% 51%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "ISO/IEC-27018:2019",
+    "family": "iso",
+    "title": "Information technology — Security techniques — Code of practice for protection of personally identifiable information (PII) in public clouds acting as PII processors",
+    "uuid": "1ce85479-4b47-8c4f-a739-55ed3f2a6cae",
+    "color": "hsl(200 69% 39%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "ISO/IEC-27701",
+    "family": "iso",
+    "title": "ISO/IEC 27701 — Privacy Information Management System (PIMS); the 2019 edition is the extension to ISO/IEC 27001 and ISO/IEC 27002 for privacy information management",
+    "uuid": "7d5e10a0-3002-849a-9117-7ef6ed07f32f",
+    "color": "hsl(54 71% 54%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "ISO/IEC-27701:2019",
+    "family": "iso",
+    "title": "Information technology — Security techniques — Extension to ISO/IEC 27001 and ISO/IEC 27002 for privacy information management — Requirements and guidelines",
+    "uuid": "12646fda-d946-878f-8ba5-40209f16a276",
+    "color": "hsl(28 61% 40%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "ISO/IEC-29115",
+    "family": "iso",
+    "title": "Information technology — Security techniques — Entity authentication assurance framework",
+    "uuid": "3bf0ab74-30c2-865f-8459-24aca63b4e8b",
+    "color": "hsl(224 86% 58%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "ISO/IEC-42005",
+    "family": "iso",
+    "title": "ISO/IEC 42005:2025 — Information technology — Artificial intelligence (AI) — AI system impact assessment",
+    "uuid": "8b863083-9bd8-8128-9e2e-de475bf4fdac",
+    "color": "hsl(78 68% 49%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "ISO/IEC-TR-24028",
+    "family": "iso",
+    "title": "ISO/IEC TR 24028:2020 — Information technology — Artificial intelligence — Overview of trustworthiness in artificial intelligence",
+    "uuid": "287604cf-576e-8ac6-91e6-6b4c76172a80",
+    "color": "hsl(278 59% 53%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "RFC-7519",
+    "family": "jose",
+    "title": "JSON Web Token (JWT)",
+    "uuid": "dd6251df-2e23-8220-abf0-89a51f1255b2",
+    "color": "hsl(154 66% 45%)",
+    "count": 0,
+    "modules": []
+  },
+  {
     "id": "Naredba-N-18",
     "family": "national",
     "title": "BG fiscal-device & SUPTO ordinance",
     "uuid": "6a08f86f-afe0-8049-a445-c03e255093d7",
     "color": "hsl(144 58% 53%)",
-    "count": 280,
+    "count": 314,
     "modules": [
       {
         "path": "src/audit/submissions/index.ts",
@@ -3196,6 +8834,112 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     ]
   },
   {
+    "id": "NIST-SP-800-63",
+    "family": "nist",
+    "title": "Digital Identity Guidelines (identity proofing, authentication & federation assurance levels)",
+    "uuid": "46ed5dc6-a768-8f13-b03e-8a581002bba6",
+    "color": "hsl(157 78% 44%)",
+    "count": 74,
+    "modules": [
+      {
+        "path": "src/agents/mcp/tool-defs.ts",
+        "section": ""
+      },
+      {
+        "path": "src/agents/mcp/tool/_guards.ts",
+        "section": ""
+      },
+      {
+        "path": "src/agents/mcp/tool/security.ts",
+        "section": "§3.4.2"
+      },
+      {
+        "path": "src/agents/mcp/tool/share.ts",
+        "section": ""
+      },
+      {
+        "path": "src/analytics/max-tamper-cost.ts",
+        "section": "§5.1"
+      },
+      {
+        "path": "src/anchor/index.ts",
+        "section": "§5.6.1"
+      },
+      {
+        "path": "src/audit/compliance/reporting/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/audit/compliance/reporting/service.ts",
+        "section": ""
+      },
+      {
+        "path": "src/audit/compliance/reporting/standard.ts",
+        "section": ""
+      },
+      {
+        "path": "src/audit/trail/write-audit-event.ts",
+        "section": "§3.4"
+      },
+      {
+        "path": "src/auth/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/beyond/erasure/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/beyond/pqc/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/beyond/types/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/cost/index.ts",
+        "section": "§5.1"
+      },
+      {
+        "path": "src/error/uuid/index.ts",
+        "section": "§3.4"
+      },
+      {
+        "path": "src/fiscal/period/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/fiscal/periods/fiscal/period/snapshots/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/get/preview/secret/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/integrity/envelope.ts",
+        "section": ""
+      },
+      {
+        "path": "src/integrity/index.ts",
+        "section": "§32"
+      },
+      {
+        "path": "src/integrity/signatures.ts",
+        "section": "§5.6"
+      },
+      {
+        "path": "src/integrity/tamper-reverse-cost.ts",
+        "section": "§5.6"
+      },
+      {
+        "path": "src/integrity/tenant-key-registry.ts",
+        "section": "§5.6"
+      }
+    ]
+  },
+  {
     "id": "NIST-INCITS-359-2012",
     "family": "nist",
     "title": "Role-Based Access Control",
@@ -3307,7 +9051,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Secure Hash Standard (SHA-2)",
     "uuid": "6a25a77c-19fb-8d7f-85f3-a4a0fda1fbc4",
     "color": "hsl(173 82% 42%)",
-    "count": 32,
+    "count": 31,
     "modules": [
       {
         "path": "src/agent/harmonics.ts",
@@ -3528,60 +9272,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     ]
   },
   {
-    "id": "NIST-SP-800-92",
-    "family": "nist",
-    "title": "Log management",
-    "uuid": "20d957c5-70c3-819c-b8a6-fc1b0dc835cf",
-    "color": "hsl(129 72% 43%)",
-    "count": 12,
-    "modules": [
-      {
-        "path": "src/audit/compliance/reporting/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/audit/compliance/reporting/service.ts",
-        "section": ""
-      },
-      {
-        "path": "src/audit/compliance/reporting/standard.ts",
-        "section": ""
-      },
-      {
-        "path": "src/audit/trail/write-audit-event.ts",
-        "section": "§3.4"
-      },
-      {
-        "path": "src/error/uuid/index.ts",
-        "section": "§3.4"
-      },
-      {
-        "path": "src/fiscal/period/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/fiscal/periods/fiscal/period/snapshots/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/multi/currency/closing/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/period/end/closing/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/skill/router/skills.index.ts",
-        "section": "§302"
-      },
-      {
-        "path": "src/validate/audit/compliance/reporting/index.ts",
-        "section": ""
-      }
-    ]
-  },
-  {
     "id": "NIST-SP-800-38D",
     "family": "nist",
     "title": "AES-GCM authenticated encryption",
@@ -3623,6 +9313,60 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/subscription/plans/subscriptions/hooks/encryptSensitiveFields.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "NIST-SP-800-92",
+    "family": "nist",
+    "title": "Log management",
+    "uuid": "20d957c5-70c3-819c-b8a6-fc1b0dc835cf",
+    "color": "hsl(129 72% 43%)",
+    "count": 11,
+    "modules": [
+      {
+        "path": "src/audit/compliance/reporting/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/audit/compliance/reporting/service.ts",
+        "section": ""
+      },
+      {
+        "path": "src/audit/compliance/reporting/standard.ts",
+        "section": ""
+      },
+      {
+        "path": "src/audit/trail/write-audit-event.ts",
+        "section": "§3.4"
+      },
+      {
+        "path": "src/error/uuid/index.ts",
+        "section": "§3.4"
+      },
+      {
+        "path": "src/fiscal/period/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/fiscal/periods/fiscal/period/snapshots/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/multi/currency/closing/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/period/end/closing/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
+      },
+      {
+        "path": "src/validate/audit/compliance/reporting/index.ts",
         "section": ""
       }
     ]
@@ -3675,7 +9419,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Key derivation functions",
     "uuid": "1956d6ff-473e-8900-94f4-bb9afa8b5b86",
     "color": "hsl(6 59% 53%)",
-    "count": 6,
+    "count": 5,
     "modules": [
       {
         "path": "src/get/preview/secret/index.ts",
@@ -3695,10 +9439,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/tenant/remote/secret/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/utilities/README.md",
         "section": ""
       }
     ]
@@ -3730,12 +9470,80 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     ]
   },
   {
+    "id": "NIST-CSF-2.0",
+    "family": "nist",
+    "title": "NIST Cybersecurity Framework (CSF) 2.0 (Govern, Identify, Protect, Detect, Respond, Recover)",
+    "uuid": "89d3ce5d-9136-8c12-bffa-1e76c4f77668",
+    "color": "hsl(3 86% 59%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "RFC-6749",
+    "family": "oauth",
+    "title": "The OAuth 2.0 Authorization Framework",
+    "uuid": "ef1ec1a2-e3ea-842e-ad67-f244bd530cbe",
+    "color": "hsl(14 73% 56%)",
+    "count": 2,
+    "modules": [
+      {
+        "path": "src/country/client/berlin-group-psd2.ts",
+        "section": "§4.4"
+      },
+      {
+        "path": "src/oauth/index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "RFC-6750",
+    "family": "oauth",
+    "title": "The OAuth 2.0 Authorization Framework: Bearer Token Usage",
+    "uuid": "d5f5bb28-a91b-8672-aeac-63ec0386bf99",
+    "color": "hsl(53 67% 54%)",
+    "count": 1,
+    "modules": [
+      {
+        "path": "src/oauth/index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "RFC-7636",
+    "family": "oauth",
+    "title": "Proof Key for Code Exchange by OAuth Public Clients (PKCE)",
+    "uuid": "3aadee7f-07c2-83e8-9cef-50c21ffd4887",
+    "color": "hsl(261 83% 45%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "RFC-8414",
+    "family": "oauth",
+    "title": "OAuth 2.0 Authorization Server Metadata",
+    "uuid": "f6de9784-31ca-804f-b7a4-5b34a7b10926",
+    "color": "hsl(198 66% 50%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "RFC-9700",
+    "family": "oauth",
+    "title": "Best Current Practice for OAuth 2.0 Security",
+    "uuid": "9358567c-f474-8bff-ae8e-9985d8797a0f",
+    "color": "hsl(280 71% 42%)",
+    "count": 0,
+    "modules": []
+  },
+  {
     "id": "SAF-T",
     "family": "oecd",
     "title": "OECD Standard Audit File for Tax",
     "uuid": "3c66b577-efc9-8c9b-bd38-2df00b645605",
     "color": "hsl(342 61% 61%)",
-    "count": 67,
+    "count": 70,
     "modules": [
       {
         "path": "src/audit/compliance/reporting/index.ts",
@@ -3841,7 +9649,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Transfer Pricing Guidelines",
     "uuid": "d3b0647f-ac96-8620-9796-079f0911c721",
     "color": "hsl(192 85% 45%)",
-    "count": 16,
+    "count": 17,
     "modules": [
       {
         "path": "src/audit/compliance/reporting/index.ts",
@@ -3887,7 +9695,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Base Erosion and Profit Shifting",
     "uuid": "a1c51ddc-1803-846e-9ae9-64bb0fdfa83d",
     "color": "hsl(13 84% 42%)",
-    "count": 10,
+    "count": 11,
     "modules": [
       {
         "path": "src/audit/compliance/reporting/index.ts",
@@ -3925,7 +9733,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "GloBE global minimum tax",
     "uuid": "d635bcd7-320b-8d75-8a93-6d0373384af5",
     "color": "hsl(117 68% 61%)",
-    "count": 7,
+    "count": 8,
     "modules": [
       {
         "path": "src/audit/compliance/reporting/index.ts",
@@ -3954,13 +9762,35 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     ]
   },
   {
+    "id": "OECD-G20-Corporate-Governance",
+    "family": "oecd",
+    "title": "G20/OECD Principles of Corporate Governance 2023",
+    "uuid": "83df2ed9-2a61-86bb-9858-16b2bc4d8c01",
+    "color": "hsl(279 66% 39%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "OIDC-Core-1.0",
+    "family": "openid",
+    "title": "OpenID Connect Core 1.0",
+    "uuid": "0425e624-e41e-8122-8358-8d8c73148e71",
+    "color": "hsl(341 75% 50%)",
+    "count": 0,
+    "modules": []
+  },
+  {
     "id": "MCP",
     "family": "other",
     "title": "Model Context Protocol",
     "uuid": "bbe40439-0393-8d8b-a793-b13b3dc80e16",
     "color": "hsl(220 59% 47%)",
-    "count": 31,
+    "count": 32,
     "modules": [
+      {
+        "path": "src/agent/access/SKILL.md",
+        "section": ""
+      },
       {
         "path": "src/agents/mcp/atom-catalogue.generated.ts",
         "section": ""
@@ -4181,7 +10011,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Floating-point arithmetic",
     "uuid": "e650ec1d-f5b4-816d-ab68-180601cc2415",
     "color": "hsl(280 81% 43%)",
-    "count": 17,
+    "count": 18,
     "modules": [
       {
         "path": "src/accounting/fields-money-fix.ts",
@@ -4359,7 +10189,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/skill/router/skills.index.ts",
-        "section": ""
+        "section": "Annex I"
       },
       {
         "path": "src/uuid/format/index.ts",
@@ -4503,7 +10333,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "modules": [
       {
         "path": "src/skill/router/skills.index.ts",
-        "section": "§404"
+        "section": ""
       }
     ]
   },
@@ -4517,7 +10347,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "modules": [
       {
         "path": "src/skill/router/skills.index.ts",
-        "section": "§404"
+        "section": ""
       }
     ]
   },
@@ -4662,6 +10492,139 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     ]
   },
   {
+    "id": "OWASP-ASVS-4.0",
+    "family": "owasp",
+    "title": "OWASP Application Security Verification Standard (ASVS) 4.0",
+    "uuid": "322606a7-d0be-85c2-8f78-3742c4fb134e",
+    "color": "hsl(238 61% 61%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "PCAOB-AS-1105",
+    "family": "pcaob",
+    "title": "AS 1105: Audit Evidence",
+    "uuid": "2cd0499a-c94e-88de-b60b-d37368a92366",
+    "color": "hsl(312 58% 48%)",
+    "count": 2,
+    "modules": [
+      {
+        "path": "src/media/audit/evidences/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§404"
+      }
+    ]
+  },
+  {
+    "id": "RFC-9562",
+    "family": "rfc",
+    "title": "UUID (revised — content/event uuid)",
+    "uuid": "01855583-c244-8103-b379-0ad77888d2c4",
+    "color": "hsl(29 70% 49%)",
+    "count": 125,
+    "modules": [
+      {
+        "path": "src/agent/access/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/agent/index.ts",
+        "section": "§5.8"
+      },
+      {
+        "path": "src/agent/research/index.ts",
+        "section": "§5.8"
+      },
+      {
+        "path": "src/agent/service.ts",
+        "section": "§5.8"
+      },
+      {
+        "path": "src/agent/sync/chat-broadcast.ts",
+        "section": "§5.8"
+      },
+      {
+        "path": "src/agent/sync/discovery.ts",
+        "section": "§5.8"
+      },
+      {
+        "path": "src/agent/sync/horo.ts",
+        "section": "§5.8"
+      },
+      {
+        "path": "src/agent/sync/index.ts",
+        "section": "§5.8"
+      },
+      {
+        "path": "src/agent/sync/payload-chat.ts",
+        "section": "§5.8"
+      },
+      {
+        "path": "src/agent/sync/society.ts",
+        "section": "§5.8"
+      },
+      {
+        "path": "src/agent/team.ts",
+        "section": "§5.8"
+      },
+      {
+        "path": "src/agents/mcp/tool/format.ts",
+        "section": "§5.8"
+      },
+      {
+        "path": "src/ai/suggestions/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/architecture/invariant/checks.ts",
+        "section": ""
+      },
+      {
+        "path": "src/audit/events/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/audit/trail/after/change/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/chats/index.ts",
+        "section": "§5.8"
+      },
+      {
+        "path": "src/cloning/genome.ts",
+        "section": "§5.8"
+      },
+      {
+        "path": "src/cloning/verify.ts",
+        "section": "§5.8"
+      },
+      {
+        "path": "src/communication/SKILL.md",
+        "section": "§5.8"
+      },
+      {
+        "path": "src/communication/index.ts",
+        "section": "§5.8"
+      },
+      {
+        "path": "src/convention/addressed/SKILL.md",
+        "section": "§5.8"
+      },
+      {
+        "path": "src/convention/addressed/index.ts",
+        "section": "§5.8"
+      },
+      {
+        "path": "src/cost/index.ts",
+        "section": "§8"
+      }
+    ]
+  },
+  {
     "id": "BCP-47",
     "family": "rfc",
     "title": "Language tags",
@@ -4763,112 +10726,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/header/config.ts",
-        "section": ""
-      }
-    ]
-  },
-  {
-    "id": "RFC-9562",
-    "family": "rfc",
-    "title": "UUID (revised — content/event uuid)",
-    "uuid": "01855583-c244-8103-b379-0ad77888d2c4",
-    "color": "hsl(29 70% 49%)",
-    "count": 76,
-    "modules": [
-      {
-        "path": "src/agent/index.ts",
-        "section": "§5.8"
-      },
-      {
-        "path": "src/agent/research/index.ts",
-        "section": "§5.8"
-      },
-      {
-        "path": "src/agent/service.ts",
-        "section": "§5.8"
-      },
-      {
-        "path": "src/agent/sync/chat-broadcast.ts",
-        "section": "§5.8"
-      },
-      {
-        "path": "src/agent/sync/discovery.ts",
-        "section": "§5.8"
-      },
-      {
-        "path": "src/agent/sync/horo.ts",
-        "section": "§5.8"
-      },
-      {
-        "path": "src/agent/sync/index.ts",
-        "section": "§5.8"
-      },
-      {
-        "path": "src/agent/sync/payload-chat.ts",
-        "section": "§5.8"
-      },
-      {
-        "path": "src/agent/sync/society.ts",
-        "section": "§5.8"
-      },
-      {
-        "path": "src/agent/team.ts",
-        "section": "§5.8"
-      },
-      {
-        "path": "src/agents/mcp/tool/format.ts",
-        "section": "§5.8"
-      },
-      {
-        "path": "src/ai/suggestions/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/architecture/invariant/checks.ts",
-        "section": ""
-      },
-      {
-        "path": "src/audit/events/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/audit/trail/after/change/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/chats/index.ts",
-        "section": "§5.8"
-      },
-      {
-        "path": "src/cloning/genome.ts",
-        "section": "§5.8"
-      },
-      {
-        "path": "src/cloning/verify.ts",
-        "section": "§5.8"
-      },
-      {
-        "path": "src/currency/fallback/currency-uuid.ts",
-        "section": "§5.8"
-      },
-      {
-        "path": "src/digit/SKILL.md",
-        "section": "§5.8"
-      },
-      {
-        "path": "src/digit/index.ts",
-        "section": "§5.8"
-      },
-      {
-        "path": "src/drone/index.ts",
-        "section": "§5.8"
-      },
-      {
-        "path": "src/emit/domain/event/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/event/emitter.service/index.ts",
         "section": ""
       }
     ]
@@ -5124,12 +10981,21 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     ]
   },
   {
+    "id": "SEC-Rule-10A-3",
+    "family": "sec",
+    "title": "SEC Rule 10A-3 — Listed Company Audit Committees (Exchange Act §10A(m))",
+    "uuid": "cee13fca-213e-8f5c-8e23-d90c9f3774bf",
+    "color": "hsl(41 83% 48%)",
+    "count": 0,
+    "modules": []
+  },
+  {
     "id": "SOX",
     "family": "sox",
     "title": "Sarbanes-Oxley Act §302/404/906",
     "uuid": "a6e18810-badd-8876-9ebc-72c9bc14aa6c",
     "color": "hsl(241 86% 54%)",
-    "count": 51,
+    "count": 50,
     "modules": [
       {
         "path": "src/agents/accounting/finance.agent.ts",
@@ -5294,12 +11160,59 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     ]
   },
   {
+    "id": "CoE-108+",
+    "family": "treaty",
+    "title": "Council of Europe Convention 108+ (CETS No. 108, as modernised by the 2018 amending Protocol CETS No. 223) for the Protection of Individuals with regard to Automatic Processing of Personal Data",
+    "uuid": "b2b6efe2-5b24-82ea-8a58-7f8ef8197488",
+    "color": "hsl(30 84% 48%)",
+    "count": 19,
+    "modules": [
+      {
+        "path": "src/get/preview/secret/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/mala/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/nist/sp/800/108/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/nist/sp/800/108/kdf.ts",
+        "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/tenant/remote/secret/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/types/events/index.ts",
+        "section": "§107"
+      }
+    ]
+  },
+  {
+    "id": "CoE-AI-Convention",
+    "family": "treaty",
+    "title": "Council of Europe Framework Convention on Artificial Intelligence and human rights, democracy and the rule of law (CETS No. 225, 2024)",
+    "uuid": "cc237e48-0d1b-8c88-91bc-2b4cfb8291f2",
+    "color": "hsl(59 76% 38%)",
+    "count": 0,
+    "modules": []
+  },
+  {
     "id": "UBL-2.1",
     "family": "un",
     "title": "Universal Business Language",
     "uuid": "91f2143b-c905-8e7e-8b7f-ccc48a2fd117",
     "color": "hsl(282 75% 49%)",
-    "count": 275,
+    "count": 323,
     "modules": [
       {
         "path": "src/agriculture/accountable.ts",
@@ -5330,6 +11243,18 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
+        "path": "src/convention/import/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/convention/link/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/convention/shallow/SKILL.md",
+        "section": ""
+      },
+      {
         "path": "src/country/client/bg-pades-signer.ts",
         "section": ""
       },
@@ -5339,6 +11264,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/decompression/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/dual/torus/fusion/SKILL.md",
         "section": ""
       },
       {
@@ -5358,6 +11287,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
+        "path": "src/humandesign/SKILL.md",
+        "section": ""
+      },
+      {
         "path": "src/incoterms/2020/index.ts",
         "section": ""
       },
@@ -5374,27 +11307,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/peppol/bis/3/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/peppol/bis/3/types.ts",
-        "section": ""
-      },
-      {
-        "path": "src/peppol/export.service/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/peppol/import.service/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/proof/bitcoin/genesi/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/skill/router/skills.index.ts",
+        "path": "src/payload/command/SKILL.md",
         "section": ""
       }
     ]
@@ -5405,7 +11318,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Global Trade Item Number",
     "uuid": "74c424f5-91d7-89f4-a01e-b807d14807da",
     "color": "hsl(12 56% 43%)",
-    "count": 256,
+    "count": 290,
     "modules": [
       {
         "path": "src/app/(frontend)/[locale]/products/[slug]/page.tsx",
@@ -5443,7 +11356,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "UN/EDIFACT syntax rules",
     "uuid": "d0e6f0db-65b3-82db-b5be-ab1cef0b0e3f",
     "color": "hsl(198 85% 41%)",
-    "count": 44,
+    "count": 46,
     "modules": [
       {
         "path": "src/customers/sales/orders/index.ts",
@@ -5478,7 +11391,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": "§4"
       },
       {
-        "path": "src/un/edifact/README.md",
+        "path": "src/un/edifact/SKILL.md",
         "section": "§LIN"
       },
       {
@@ -5501,7 +11414,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "UN/CEFACT code lists",
     "uuid": "dede9d51-baf4-8850-b74b-2bb9daf9addb",
     "color": "hsl(174 72% 47%)",
-    "count": 30,
+    "count": 33,
     "modules": [
       {
         "path": "src/ai/tax-classification.ts",
@@ -5565,7 +11478,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/skill/router/skills.index.ts",
-        "section": "§B22"
+        "section": "BG-25"
       },
       {
         "path": "src/tax/jurisdictions/tax/codes/index.ts",
@@ -5587,7 +11500,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Harmonized System customs nomenclature",
     "uuid": "735463b1-8b67-83a1-979e-593ca0e4e03d",
     "color": "hsl(4 84% 47%)",
-    "count": 9,
+    "count": 11,
     "modules": [
       {
         "path": "src/ai/hs-code-suggestion.ts",
@@ -5661,7 +11574,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "modules": [
       {
         "path": "src/skill/router/skills.index.ts",
-        "section": "§404"
+        "section": ""
       }
     ]
   },
@@ -5692,6 +11605,15 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": "§302/404/906"
       }
     ]
+  },
+  {
+    "id": "UN-CEFACT-CII-D16B",
+    "family": "un-cefact",
+    "title": "UN/CEFACT Cross Industry Invoice (CII) XML, schema release D16B (SCRDM - CII); the second EN 16931 syntax binding",
+    "uuid": "f5ab571d-38b0-8b33-883d-86e05946310c",
+    "color": "hsl(251 72% 43%)",
+    "count": 0,
+    "modules": []
   },
   {
     "id": "UPU-S42",
@@ -5836,13 +11758,134 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     ]
   },
   {
+    "id": "ASC-842",
+    "family": "us-gaap",
+    "title": "Leases (Topic 842)",
+    "uuid": "bbf5522e-c05a-869f-970a-9447e46f633d",
+    "color": "hsl(237 67% 60%)",
+    "count": 1,
+    "modules": [
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§9"
+      }
+    ]
+  },
+  {
+    "id": "US-CTA-2021",
+    "family": "us-law",
+    "title": "US Corporate Transparency Act 2021 (31 U.S.C. §5336) — beneficial ownership information reporting requirements",
+    "uuid": "c34d4a31-4cb0-8b16-9f7d-80d7ea06b5e1",
+    "color": "hsl(317 59% 39%)",
+    "count": 27,
+    "modules": [
+      {
+        "path": "src/architecture/invariant/checks.ts",
+        "section": ""
+      },
+      {
+        "path": "src/audit/compliance/reporting/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/audit/compliance/reporting/standard.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bookable/resources/bookings/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/bookable/resources/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/compliance/frameworks/compliance/requirements/compliance/gaps/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/compliance/frameworks/compliance/requirements/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/compliance/frameworks/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/constitution/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/governance/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/internal/policies/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/legal/entities/board/actions/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/legal/entities/compliance/deadlines/compliance/notifications/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/legal/entities/compliance/deadlines/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/legislation/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§35"
+      },
+      {
+        "path": "src/tax/period/reconciliation/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/testing/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/testing/test-seed-factory/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/testing/test-setup/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/validate/tax/period/closing/index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "CCPA-CPRA",
+    "family": "us-state-law",
+    "title": "California Consumer Privacy Act of 2018, as amended by the California Privacy Rights Act of 2020 (Cal. Civ. Code §1798.100 et seq.)",
+    "uuid": "9dc6318c-7bc9-8fef-833f-cb805f5322ec",
+    "color": "hsl(70 69% 58%)",
+    "count": 0,
+    "modules": []
+  },
+  {
     "id": "schema.org",
     "family": "w3c",
     "title": "Linked-data type vocabulary",
     "uuid": "9cff4f7f-f5d5-8924-99c4-0d564a3735fb",
     "color": "hsl(231 64% 45%)",
-    "count": 1848,
+    "count": 2347,
     "modules": [
+      {
+        "path": "src/abdomen/SKILL.md",
+        "section": ""
+      },
       {
         "path": "src/about/SKILL.md",
         "section": ""
@@ -5924,19 +11967,15 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
+        "path": "src/activation/SKILL.md",
+        "section": ""
+      },
+      {
         "path": "src/activity/SKILL.md",
         "section": ""
       },
       {
         "path": "src/actor/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/actors/SKILL.md",
-        "section": ""
-      },
-      {
-        "path": "src/ad/SKILL.md",
         "section": ""
       }
     ]
@@ -5947,7 +11986,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Provenance Ontology",
     "uuid": "aab6453e-ed17-8541-a227-c83eb24632af",
     "color": "hsl(142 89% 52%)",
-    "count": 266,
+    "count": 302,
     "modules": [
       {
         "path": "src/beyond/index.ts",
@@ -5967,6 +12006,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/cloning/publish.ts",
+        "section": ""
+      },
+      {
+        "path": "src/cost/index.ts",
         "section": ""
       },
       {
@@ -6017,7 +12060,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "ECMAScript language specification",
     "uuid": "dbd1c6da-73fe-836a-bfb1-1566b9b00b48",
     "color": "hsl(113 78% 40%)",
-    "count": 35,
+    "count": 33,
     "modules": [
       {
         "path": "src/admin/TenantFilters.tsx",
@@ -6084,14 +12127,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
-        "path": "src/navigation/index.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/page/AnalyticsPage.tsx",
-        "section": ""
-      },
-      {
         "path": "src/rfc/3986/url-utils.ts",
         "section": ""
       },
@@ -6113,6 +12148,14 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/widget/AuditLogWidget.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/widget/BalanceSheetWidget.tsx",
+        "section": ""
+      },
+      {
+        "path": "src/widget/CostCentersPanel.tsx",
         "section": ""
       }
     ]
@@ -6217,7 +12260,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "JSON for Linking Data",
     "uuid": "5c0a6a50-8640-8b58-8acf-f76af73f87ed",
     "color": "hsl(162 56% 46%)",
-    "count": 16,
+    "count": 17,
     "modules": [
       {
         "path": "src/agents/mcp/presentation.ts",
@@ -6257,6 +12300,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/registry/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/seo/SKILL.md",
         "section": ""
       },
       {
@@ -6477,7 +12524,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Accessible Rich Internet Applications",
     "uuid": "a46dba6c-64b6-81af-b328-04d4369fa69b",
     "color": "hsl(333 66% 50%)",
-    "count": 298,
+    "count": 340,
     "modules": [
       {
         "path": "src/admin/bar/index.tsx",
@@ -6489,6 +12536,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/agents/registered/design.agent.ts",
+        "section": ""
+      },
+      {
+        "path": "src/analytics/test.ts",
         "section": ""
       },
       {
@@ -6569,10 +12620,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/chains/provision/lifecycle/provision-lifecycle-page.tsx",
-        "section": ""
-      },
-      {
-        "path": "src/chains/record/to/report/record-to-report-page.tsx",
         "section": ""
       }
     ]
@@ -6682,7 +12729,16 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       }
     ]
+  },
+  {
+    "id": "XBRL-2.1",
+    "family": "xbrl",
+    "title": "Extensible Business Reporting Language (XBRL) 2.1",
+    "uuid": "100d6869-35dc-8e21-85c4-840da43511f9",
+    "color": "hsl(149 89% 47%)",
+    "count": 0,
+    "modules": []
   }
 ] as const
 
-export const STANDARDS_COUNT = 142
+export const STANDARDS_COUNT = 260
