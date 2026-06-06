@@ -5719,6 +5719,7 @@ src/payload.config.multi-tenant-admin.test.ts:17: * @audit ISO-19011:2018 audit-
 src/payload.config.ts:518:       * @audit ISO-19011:2018 audit-trail dunning-cycle
 src/payload.config.ts:538:       * @audit ISO-19011:2018 audit-trail external-system-evidence
 src/payload.config.ts:556:       * @audit ISO-19011:2018 §6.4 audit-evidence
+src/payload/command/index.ts:10: * @audit the command list is the installed CLI's; each uuid and the fold are computed
 src/payment/methods/hooks/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
 src/peppol/bis/3/types.test.ts:7: * @audit ISO-19011:2018 audit-trail
 src/peppol/bis/3/types.ts:13: * @audit ISO-19011:2018 audit-trail
