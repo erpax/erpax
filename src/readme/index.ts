@@ -129,7 +129,9 @@ function pluginPipeline(): string[] {
   if (start < 0) return []
   const end = cfg.indexOf('\n  ],', start)
   const region = cfg.slice(start, end < 0 ? undefined : end)
-  return [...region.matchAll(/^ {4}(\w+)\(/gm)].map((m) => m[1]!)
+  // Each pipeline entry is a 4-space-indented call; allow an optional generic
+  // (multiTenantPlugin<Config>(…)) between the name and the opening paren.
+  return [...region.matchAll(/^ {4}([a-zA-Z]\w*)(?:<[^>]*>)?\(/gm)].map((m) => m[1]!)
 }
 
 /** Official Payload packages this app composes (from package.json deps). */
@@ -148,9 +150,60 @@ function localeCount(): number {
   return [...block[1]!.matchAll(/^\s+[a-z]{2}(?::\s*\w+)?,\s*$/gm)].length
 }
 
+/** Strip JSONC comments (string-aware) so commented-out bindings are never parsed as live. */
+function stripJsonc(s: string): string {
+  let out = ''
+  let inStr = false
+  let inLine = false
+  let inBlock = false
+  for (let i = 0; i < s.length; i++) {
+    const c = s[i]!
+    const n = s[i + 1]
+    if (inLine) {
+      if (c === '\n') {
+        inLine = false
+        out += c
+      }
+      continue
+    }
+    if (inBlock) {
+      if (c === '*' && n === '/') {
+        inBlock = false
+        i++
+      }
+      continue
+    }
+    if (inStr) {
+      out += c
+      if (c === '\\') {
+        out += s[i + 1] ?? ''
+        i++
+      } else if (c === '"') inStr = false
+      continue
+    }
+    if (c === '"') {
+      inStr = true
+      out += c
+      continue
+    }
+    if (c === '/' && n === '/') {
+      inLine = true
+      i++
+      continue
+    }
+    if (c === '/' && n === '*') {
+      inBlock = true
+      i++
+      continue
+    }
+    out += c
+  }
+  return out
+}
+
 /** Cloudflare bindings + cron triggers + the binding-kind sections present, from wrangler.jsonc. */
 function cloudflare(): { bindings: string[]; crons: string[]; kinds: string[] } {
-  const w = read(join(ROOT, 'wrangler.jsonc'))
+  const w = stripJsonc(read(join(ROOT, 'wrangler.jsonc')))
   const bindings = [
     ...new Set([...w.matchAll(/"(?:binding|name)":\s*"([A-Z][A-Z0-9_]+)"/g)].map((m) => m[1]!)),
   ].sort()
@@ -181,7 +234,7 @@ function fmValue(fm: string, key: string): string {
   if (!m) return ''
   let v = m[1]!.trim()
   if ((v.startsWith('"') && v.endsWith('"')) || (v.startsWith("'") && v.endsWith("'"))) v = v.slice(1, -1)
-  return v
+  return v.replace(/\\(["'])/g, '$1')
 }
 
 /** A core atom's name + first-sentence blurb, read live from its SKILL.md (null if absent). */
@@ -192,8 +245,15 @@ function atomBlurb(slug: string): { name: string; desc: string } | null {
   if (!fm) return null
   const raw = fmValue(fm[1]!, 'description').replace(/\s+/g, ' ').trim()
   if (!raw) return null
-  let desc = raw.split('. ')[0]!.replace(/\.$/, '') + '.'
-  if (desc.length > 200) desc = desc.slice(0, 197).trimEnd() + '…'
+  // First sentence if it ends within 200 chars; else truncate at a word boundary.
+  let desc = raw
+  const stop = raw.indexOf('. ')
+  if (stop > 0 && stop < 200) {
+    desc = raw.slice(0, stop + 1)
+  } else if (raw.length > 200) {
+    const cut = raw.slice(0, 200)
+    desc = cut.slice(0, cut.lastIndexOf(' ')).trimEnd() + '…'
+  }
   return { name: fmValue(fm[1]!, 'name') || slug, desc }
 }
 
@@ -313,7 +373,7 @@ function build(): string {
   )
 
   // scripts — fully computed, grouped by namespace
-  p('## Scripts', '', `All ${Object.keys(scripts).length} npm scripts, grouped — computed from `, '`package.json`.', '')
+  p('## Scripts', '', `All ${Object.keys(scripts).length} npm scripts, grouped — computed from ${code('package.json')}.`, '')
   const groups = new Map<string, string[]>()
   for (const key of Object.keys(scripts)) {
     const g = key.split(':')[0]!

@@ -135,6 +135,27 @@ else
   fi
 fi
 
+# ── Artefact 3: README.md (computed by src/readme) ───────────────────
+# The README is a render target: src/readme/index.ts derives every figure
+# from package.json / the src/ tree / payload.config.ts / wrangler.jsonc /
+# the standards catalogue. Byte-deterministic, side-effect-free, <1s —
+# regenerate + commit when the live tree has drifted from the doc.
+if command -v pnpm >/dev/null 2>&1; then
+  if ! pnpm exec tsx src/readme/index.ts --verify >/dev/null 2>&1; then
+    echo "auto-heal: README.md is stale — regenerating (pnpm readme)"
+    if [ "$DRY_RUN" = 0 ]; then
+      if ! pnpm exec tsx src/readme/index.ts >/dev/null 2>&1; then
+        echo "ERROR: pnpm readme failed to regenerate README.md."
+        exit 1
+      fi
+      git add README.md 2>/dev/null || true
+      healed+=("README.md")
+    fi
+  fi
+else
+  echo "auto-heal: SKIPPED README regen (pnpm not available in this environment)"
+fi
+
 # ── Future artefacts — wire as they land ─────────────────────────────
 # - src/services/spec-generator/* outputs (chain registry, seeds, tests,
 #   marketing pages, README per collection): when CCCCC pipeline gets

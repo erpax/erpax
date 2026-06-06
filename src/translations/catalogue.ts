@@ -632,7 +632,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a transaction or GL entry references a chart-of-accounts item — bank account, GL account, cost-center account, liability account. Payload relationTo: 'gl-accounts' or 'bank-accounts'; denormalized fields (accountNumber, accountName) wire via account atom.",
-        "uuid": "f4bcde17-a2c3-86f3-9867-1ef49491eee1",
+        "uuid": "e8435931-7542-851c-9778-860337db0bb3",
         "words": [
           "use",
           "when",
@@ -15785,6 +15785,64 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "chart",
+    "path": "chart",
+    "translations": [
+      {
+        "key": "name",
+        "source": "chart",
+        "uuid": "3d287224-65fa-816c-9e40-a1c4653cda20",
+        "words": [
+          "chart"
+        ],
+        "values": {
+          "en": "chart"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when specifying a chart as pure data — a numeric series with its range and a deterministic normalizer to [0,1]; rendering is the quantum facet (colour per value via the analog aura).",
+        "uuid": "8466fc4d-6fa7-815a-b04e-8d807f0f1263",
+        "words": [
+          "use",
+          "when",
+          "specifying",
+          "a",
+          "chart",
+          "as",
+          "pure",
+          "data",
+          "a",
+          "numeric",
+          "series",
+          "with",
+          "its",
+          "range",
+          "and",
+          "a",
+          "deterministic",
+          "normalizer",
+          "to",
+          "rendering",
+          "is",
+          "the",
+          "quantum",
+          "facet",
+          "colour",
+          "per",
+          "value",
+          "via",
+          "the",
+          "analog",
+          "aura"
+        ],
+        "values": {
+          "en": "Use when specifying a chart as pure data — a numeric series with its range and a deterministic normalizer to [0,1]; rendering is the quantum facet (colour per value via the analog aura)."
+        }
+      }
+    ]
+  },
+  {
     "atom": "chat",
     "path": "chat",
     "translations": [
@@ -23389,7 +23447,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when tagging JE lines with a secondary analytical dimension for segment/departmental P&L — regions, countries, business units, departments, teams, projects, profit centers, cost pools with allocation rules — hierarchical via parent; IFRS-8 / ASC-280 segment reporting without polluting the chart of accounts. The canonical cost-center dimension master.",
-        "uuid": "63732dc4-d412-8f3b-b8e5-ce8c9512edc2",
+        "uuid": "5226931b-27fd-8229-b75d-d7e3dba68b57",
         "words": [
           "use",
           "when",
@@ -23465,7 +23523,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when managing org-chart slots, headcount planning, or recruiting — an ESCO/ISCO-08 classified position (vacant, filled, or planned) that drives the recruiting pipeline and IAS-19 headcount accruals. The HR job-position collection.",
-        "uuid": "4554e971-0998-8f6c-ab24-bdcab1acaa0f",
+        "uuid": "0912109f-0862-870a-9b4d-7a5793bb530b",
         "words": [
           "use",
           "when",
@@ -43490,7 +43548,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when maintaining the Chart of Accounts — creating or deactivating GL accounts, assigning accountType (asset/liability/equity/revenue/expense/gain-loss), tagging canonical roles (cash, ar, ap, revenue, IFRS-16 lease accounts) for the gl-account-resolver, tracking balances, and auditing account changes. The SAF-T §2 chart-of-accounts node.",
-        "uuid": "75afa6ec-040c-8a6a-8461-9e405b78a91f",
+        "uuid": "54ed2f9f-f0ba-82eb-aa16-d658e03868b0",
         "words": [
           "use",
           "when",
@@ -81887,6 +81945,82 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "readme",
+    "path": "readme",
+    "translations": [
+      {
+        "key": "name",
+        "source": "readme",
+        "uuid": "7dbcda07-b075-830b-95f4-b933c5a56b43",
+        "words": [
+          "readme"
+        ],
+        "values": {
+          "en": "readme"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when the repository README needs to change — it is COMPUTED, never hand-edited. Edit src/readme/index.ts (the generator) or the source it reads, then run pnpm readme. The README is a render target like a vitepress page; readme:check gates it so it can never drift.",
+        "uuid": "1ec0740e-7cea-8b2f-b835-0216523bd666",
+        "words": [
+          "use",
+          "when",
+          "the",
+          "repository",
+          "readme",
+          "needs",
+          "to",
+          "change",
+          "it",
+          "is",
+          "computed",
+          "never",
+          "hand",
+          "edited",
+          "edit",
+          "src",
+          "readme",
+          "index",
+          "ts",
+          "the",
+          "generator",
+          "or",
+          "the",
+          "source",
+          "it",
+          "reads",
+          "then",
+          "run",
+          "pnpm",
+          "readme",
+          "the",
+          "readme",
+          "is",
+          "a",
+          "render",
+          "target",
+          "like",
+          "a",
+          "vitepress",
+          "page",
+          "readme",
+          "check",
+          "gates",
+          "it",
+          "so",
+          "it",
+          "can",
+          "never",
+          "drift"
+        ],
+        "values": {
+          "en": "Use when the repository README needs to change — it is COMPUTED, never hand-edited. Edit src/readme/index.ts (the generator) or the source it reads, then run pnpm readme. The README is a render target like a vitepress page; readme:check gates it so it can never drift."
+        }
+      }
+    ]
+  },
+  {
     "atom": "readonly",
     "path": "readonly",
     "translations": [
@@ -90551,7 +90685,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when making erpax discoverable — search engine optimization (SEO); the canonical keyword and GitHub-topic strategy plus an on-page relevance scorer that the README and npm package draw from.",
-        "uuid": "ce5ca1de-aa7f-8f79-b815-cfc96e704719",
+        "uuid": "bb3f6496-0dbe-8c88-a5f1-48e59c31e43f",
         "words": [
           "use",
           "when",
@@ -91240,7 +91374,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when seeding a tenant's opening chart-of-accounts + compliance posture from a (country × industry) template — INDUSTRY_TEMPLATES, the BG-NSS statutory chart, resolveTenantCompliance/getCuratedComplianceCountries. Derives every country fact from country-context; nothing is re-typed.",
-        "uuid": "a0d6e31c-9bc6-8e42-ab3f-fb8f0d2d1c74",
+        "uuid": "e79d50a3-b534-8b6f-ab92-3bbccabc7ea1",
         "words": [
           "use",
           "when",
@@ -112779,4 +112913,4 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
   }
 ]
 
-export const TRANSLATIONS_COUNT = 2366
+export const TRANSLATIONS_COUNT = 2368

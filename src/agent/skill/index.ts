@@ -2,7 +2,7 @@
  * agent/skill — an agent loads a SKILL (a capability) by name/route: the agent's competence is the
  * UNION of its loaded skills ([[team]] / [[holographic]] — a skill one agent loads, the team has).
  * Loading is idempotent (set union). This is the user's src/agent/[skill] capability.
- * Composes [[agent]] · [[skills]] · [[team]] · [[holographic]].
+ * Composes [[agent]] · [[team]] · [[holographic]] · [[merge]].
  *
  *   tsx src/agent/skill/index.ts
  *

@@ -2141,6 +2141,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/charge"
   },
   {
+    "atom": "chart",
+    "name": "chart",
+    "description": "Use when specifying a chart as pure data — a numeric series with its range and a deterministic normalizer to [0,1]; rendering is the quantum facet (colour per value via the analog aura).",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/chart"
+  },
+  {
     "atom": "chat",
     "name": "chat",
     "description": "Use when reasoning about a chat thread as a merkle chain — each message a content-uuid, the thread folding to one chain-uuid; reordering or changing any message changes the thread-uuid (tamper-evident history).",
@@ -9873,6 +9879,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "read",
     "description": "A person who reads (performs) the audiobook.",
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/read"
+  },
+  {
+    "atom": "readme",
+    "name": "readme",
+    "description": "Use when the repository README needs to change — it is COMPUTED, never hand-edited. Edit src/readme/index.ts (the generator) or the source it reads, then run pnpm readme. The README is a render target like a vitepress page; readme:check gates it so it can never drift.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/readme"
   },
   {
     "atom": "readonly",
