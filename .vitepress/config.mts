@@ -313,6 +313,26 @@ export default defineConfig({
       // SAME trinity node the panel renders, here projected to meta. The static
       // page carries a machine-readable map to the running backend.
       head.push(...trinityHead(skillDirOf(rel, SKILLS_DIR), TYPES_FILE, rel.split('/')[0], SITE))
+      // ── schema.org JSON-LD — the structured data the seo forcing-function computes ──
+      // The src/seo atom defines the canonical TechArticle shape (name·description·@id·identifier),
+      // verified by its test (the spec). We emit the SAME shape per page, computed from the
+      // frontmatter — so every page carries machine-readable structured data, never hand-authored.
+      const jsonLd = {
+        '@context': 'https://schema.org',
+        '@type': 'TechArticle',
+        '@id': url,
+        name,
+        headline: name,
+        description: desc,
+        url,
+        identifier: route.replace(/^\//, '').replace(/\/SKILL$/, ''),
+        isPartOf: { '@type': 'WebSite', name: 'erpax — the fractal skill corpus', url: SITE || '/' },
+      }
+      ;(pageData.frontmatter.head as unknown as Array<[string, Record<string, string>, string]>).push([
+        'script',
+        { type: 'application/ld+json' },
+        JSON.stringify(jsonLd),
+      ])
     }
   },
   markdown: {
