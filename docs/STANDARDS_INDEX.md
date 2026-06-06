@@ -1898,7 +1898,6 @@ src/naredba/n/18/vat-groups.test.ts:4: * @standard ISO/IEC-29119:2022 software-t
 src/naredba/n/18/vat-groups.test.ts:5: * @standard BG Наредба-Н-18 §Приложение-1 fiscal-device-tax-groups
 src/naredba/n/18/vat-groups.ts:16: * @standard BG Наредба-Н-18 §Приложение-1 fiscal-device-tax-groups данъчни-групи
 src/naredba/n/18/vat-groups.ts:17: * @standard EU 2006/112/EC vat-system-directive (rate bands)
-src/navigation/index.tsx:6: * @standard ECMA-262 ECMAScript-2024 baseline
 src/nist/incits/359/conventions.test.ts:4: * @standard ISO/IEC-29119:2022 software-testing
 src/nist/incits/359/conventions.test.ts:5: * @standard POSIX-1.2017 §1.6.1.1 file-mode-bits
 src/nist/incits/359/conventions.test.ts:6: * @standard NIST INCITS-359-2012 role-based-access-control vocabulary-layer
@@ -1949,7 +1948,6 @@ src/packs/index.ts:31: * @standard ISA-95:2013 §B.5 production-operations dispa
 src/packs/index.ts:32: * @standard UN/CEFACT Rec20 weight (kilogram) · volume (cubic-metre)
 src/packs/index.ts:33: * @standard GS1 logistics SSCC carton-identity (the `number` / `barcode`)
 src/packs/test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
-src/page/AnalyticsPage.tsx:13: * @standard ECMA-262 ECMAScript-2024 baseline
 src/page/range/index.tsx:6: * @standard ECMA-402 internationalization-api Intl.NumberFormat
 src/page/range/index.tsx:7: * @standard BCP-47 language-tag
 src/pages/access/superAdminOrTenantAdmin.ts:6: * @standard NIST INCITS-359-2012 role-based-access-control
@@ -4441,7 +4439,6 @@ src/multi/currency.service/index.ts:17: * @accounting IFRS IAS-29 financial-repo
 src/multi/currency.service/index.ts:18: * @accounting US-GAAP ASC-830 foreign-currency-matters reporting-currency
 src/pack/items/index.ts:30: * @accounting IFRS IAS-2 §10 finished-goods at dispatch
 src/packs/index.ts:34: * @accounting IFRS IAS-2 §10 finished-goods carried to dispatch
-src/page/AnalyticsPage.tsx:14: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/party/aging.service.ts:10: * @accounting US-GAAP ASC-326 credit-losses-cecl
 src/party/aging.service.ts:11: * @accounting US-GAAP ASC-310 receivables
 src/party/aging.service.ts:12: * @accounting US-GAAP ASC-405 liabilities
@@ -6076,7 +6073,5 @@ src/blocks/form/Component.tsx:22: * @quality ISO-25010 usability form-rendering
 src/dashboard/index.tsx:19: * @quality ISO-25010 usability dashboard-presentation
 src/discriminator/index.ts:13: * @quality ISO-25010 maintainability single-discriminator-vocabulary
 src/horo/index.ts:21: * @quality ISO-25010 maintainability bounded-stable-state-space
-src/navigation/index.tsx:7: * @quality ISO-25010 usability navigation
-src/page/AnalyticsPage.tsx:15: * @quality ISO-25010 usability page-composition
 src/types/sti/index.ts:19: * @quality ISO-25010 maintainability discriminated-subtype-safety
 ```
