@@ -54,4 +54,14 @@ describe('harmony: harmony-check a horo band', () => {
     expect(bandHarmony([9]).consonant).toBe(true)
     expect(bandHarmony([9]).worstTenney).toBe(0)
   })
+  it('carries a smooth consonance fraction and mean Tenney height', () => {
+    const full = bandHarmony([5, 7, 8]) // every pair consonant
+    expect(full.consonantFraction).toBe(1)
+    const mixed = bandHarmony([5, 2]) // one dissonant pair
+    expect(mixed.consonantFraction).toBeLessThan(1)
+    expect(mixed.meanTenney).toBeGreaterThan(0)
+    const tone = bandHarmony([9]) // a single tone has no intervals
+    expect(tone.consonantFraction).toBe(1)
+    expect(tone.meanTenney).toBe(0)
+  })
 })

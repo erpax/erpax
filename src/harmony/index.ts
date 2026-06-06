@@ -57,8 +57,12 @@ export type BandHarmony = {
   /** true iff EVERY pair in the band is consonant */
   consonant: boolean
   intervals: IntervalCheck[]
+  /** fraction of pairs that are consonant ∈ [0,1] — the SMOOTH consonance signal (1 for a single tone) */
+  consonantFraction: number
   /** the most dissonant pair's Tenney height (0 for a single tone) */
   worstTenney: number
+  /** the mean Tenney height across all pairs — average dissonance (0 for a single tone) */
+  meanTenney: number
 }
 
 /** Harmony-check a band of horo positions: consonant iff every pair is consonant. */
@@ -70,9 +74,13 @@ export function bandHarmony(steps: readonly HoroStep[]): BandHarmony {
       intervals.push({ pair: [steps[i], steps[j]], ratio, consonance: consonance(ratio) })
     }
   }
+  const tenneys = intervals.map((iv) => tenneyHeight(iv.ratio))
+  const consonantCount = intervals.filter((iv) => iv.consonance !== 'dissonant').length
   return {
-    consonant: intervals.every((iv) => iv.consonance !== 'dissonant'),
+    consonant: consonantCount === intervals.length,
     intervals,
-    worstTenney: intervals.length ? Math.max(...intervals.map((iv) => tenneyHeight(iv.ratio))) : 0,
+    consonantFraction: intervals.length ? consonantCount / intervals.length : 1,
+    worstTenney: tenneys.length ? Math.max(...tenneys) : 0,
+    meanTenney: tenneys.length ? tenneys.reduce((a, b) => a + b, 0) / tenneys.length : 0,
   }
 }

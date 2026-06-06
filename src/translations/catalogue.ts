@@ -4242,6 +4242,76 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "analytics",
+    "path": "analytics",
+    "translations": [
+      {
+        "key": "name",
+        "source": "analytics",
+        "uuid": "e4f35982-507c-8974-ad6d-a0a147fffb76",
+        "words": [
+          "analytics"
+        ],
+        "values": {
+          "en": "analytics"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when you need one computed read-out of the whole erpax corpus across every aspect — structure, entropy, coverage, harmony, trust, and economic health. The all-aspects analyzer; it composes the measures already minted on the live uuid-matrix, never re-deriving them.",
+        "uuid": "9492b2ee-2c91-8537-8a92-715ae4e211ef",
+        "words": [
+          "use",
+          "when",
+          "you",
+          "need",
+          "one",
+          "computed",
+          "read",
+          "out",
+          "of",
+          "the",
+          "whole",
+          "erpax",
+          "corpus",
+          "across",
+          "every",
+          "aspect",
+          "structure",
+          "entropy",
+          "coverage",
+          "harmony",
+          "trust",
+          "and",
+          "economic",
+          "health",
+          "the",
+          "all",
+          "aspects",
+          "analyzer",
+          "it",
+          "composes",
+          "the",
+          "measures",
+          "already",
+          "minted",
+          "on",
+          "the",
+          "live",
+          "uuid",
+          "matrix",
+          "never",
+          "re",
+          "deriving",
+          "them"
+        ],
+        "values": {
+          "en": "Use when you need one computed read-out of the whole erpax corpus across every aspect — structure, entropy, coverage, harmony, trust, and economic health. The all-aspects analyzer; it composes the measures already minted on the live uuid-matrix, never re-deriving them."
+        }
+      }
+    ]
+  },
+  {
     "atom": "anatomical",
     "path": "anatomical",
     "translations": [
@@ -10350,7 +10420,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when wiring, debugging, or cost-tuning erpax's Cloudflare bindings — D1, R2, KV, Durable Objects, Queues, Workers AI, Vectorize, Analytics Engine, Browser, service self-reference, Hyperdrive, cron — or when a binding \"works in config but fails at runtime\" (e.g. \"no such Durable Object class is exported from the worker\"). The map of binding ↔ capability ↔ cost lever ↔ gap for the self-managed edge app.",
-        "uuid": "002666d0-6fc5-86cf-85d6-ab0da9449031",
+        "uuid": "ee72099a-f077-8f09-9525-cbfa99bbbd48",
         "words": [
           "use",
           "when",
@@ -20743,7 +20813,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recording or auditing data-subject consent events — marketing, analytics, profiling, third-party sharing, cookies — with lawful-basis, exact consent text, version, capture method, IP/user-agent evidence, and withdrawal tracking; GDPR Art.6(1)(a)/Art.7 lawful-basis and right-to-withdraw. The append-mostly consent-evidence ledger.",
-        "uuid": "76070012-a2f6-8996-a2b9-a6d9c5298cb1",
+        "uuid": "b5e96ac4-5b40-83d2-bba3-abdfa57d8d78",
         "words": [
           "use",
           "when",
@@ -55439,7 +55509,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "post-close-analytics-reports",
-        "uuid": "07c43c66-98d3-82ca-b71e-fc96ed78167c",
+        "uuid": "05045c07-6885-8d9c-bb55-0d71f7da3a1f",
         "words": [
           "post",
           "close",
@@ -55453,7 +55523,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when generating or reviewing immutable post-close analytics — variance analysis (budget vs. actual), financial ratio analysis, segment reporting (IFRS-8 business and geographic), and management KPI scorecards per IFRS IAS-1 / SOX §404. The post-close analytics report collection.",
-        "uuid": "85c10ce7-04e5-8192-aad5-ae31c6b36ffa",
+        "uuid": "bb6da607-3577-88a7-aa51-79fe10c41427",
         "words": [
           "use",
           "when",
@@ -73489,7 +73559,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "analytics",
-        "uuid": "8e0ea87a-7b97-8e52-8f98-5d45ab392371",
+        "uuid": "e4f35982-507c-8974-ad6d-a0a147fffb76",
         "words": [
           "analytics"
         ],
@@ -108185,4 +108255,4 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
   }
 ]
 
-export const TRANSLATIONS_COUNT = 2275
+export const TRANSLATIONS_COUNT = 2276
