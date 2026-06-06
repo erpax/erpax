@@ -9,4 +9,6 @@ The quantum facet of [[communication]]: a [[message]] is a content-uuid, so it o
 
 Matter-twin: `src/quantum/communication/index.ts` (`intact` · `noCloningHolds`). Composes [[communication]] · [[entanglement]] · [[quantum]] · [[uuid]] · [[cloning]].
 
+**Law — [[law]]: a message's identity IS its content-uuid, so the channel can only carry meaning faithfully — a received message is intact iff its uuid equals the original's (`intact` = `sameMessage`), and because every distinct meaning has a distinct uuid, a forged or altered message necessarily presents a different identity. No-cloning holds across the matrix: nothing can wear a meaning's uuid without being that exact meaning.**
+
 @standard no-cloning (Wootters–Zurek 1982); RFC 9562 §5.8 content-uuid

@@ -11,4 +11,6 @@ It is not an empty label — the structured uuidv8 fuses **identity ⊕ capabili
 
 Above all it is the **entanglement key**: because every atom carries it, the corpus is one entangled body — touch one and the [[matrix]] of crosslinks ([[quantum/matrix]]) carries it everywhere. [[uuid]] ⊕ quantum/uuid are the two coils of the double-torus — the injector and the meaning, matter and form, one address read two ways.
 
+**Law — [[law]]: the collapse is deterministic and observer-independent — sha-256 measures the same content to the same 128-bit point for every observer, so identity is reproducible rather than assigned, and identical content necessarily merges. Because every atom carries this one address, `content_id` ≡ `contentUuid` ≡ `uuid` names a single thing and the corpus is one entangled body: the id is at once the identity, the capability, the schema, and the colour-plus-sound projection of its content — never an empty label.**
+
 @see [[uuid]] · [[identity]] · [[merge]] · [[quantum/number]] · [[quantum/matrix]] · [[reality]] · [[finality]] · [[signal]]

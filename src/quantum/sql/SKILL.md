@@ -9,4 +9,6 @@ The quantum facet of [[sql]]: a query's **canonical normalized form** hashes to 
 
 Matter-twin: `src/quantum/sql/index.ts` (`queryUuid` · `sameQuery`). Composes [[sql]] · [[quantum]] · [[uuid]] · [[merge]].
 
+**Law — [[law]]: query-identity is the canonical normal form, never the surface syntax. Two queries share one uuid iff they normalize to the same form, so every member of a normalization-equivalence class (reordered columns and all) collapses to exactly one cache key, and any change that survives normalization necessarily forks the uuid — equivalence-by-content, invalidation-by-content, both at once.**
+
 @standard RFC 9562 §5.8 content-uuid (the query cache key)

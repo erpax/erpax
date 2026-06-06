@@ -11,4 +11,6 @@ A text is a **superposition** of its readings; **reading is the measurement** th
 
 **Honest split** — content-addressing of texts, citation-as-link, and collision-detection (plagiarism) are real; "superposition of readings" and "reading as measurement" are the interpretive picture, not physics.
 
+**Law — [[law]]: literature is the unbounded word-chain over a bounded alphabet (the gravity reverse), and every text is content-addressed — identical content collapses to one id, so editions and copies are the same work, a quotation is its source's address, and plagiarism is nothing but a detected id-collision.**
+
 @see [[word]] · [[gravity]] · [[linearity]] · [[snapshot]] · [[akashic]] · [[merge]] · [[research]] · [[proof]] · [[translation]]

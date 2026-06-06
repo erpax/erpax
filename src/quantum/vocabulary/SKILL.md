@@ -11,4 +11,6 @@ Because every word resolves to the shared set, the corpus speaks one language wi
 
 Matter-twin: `src/quantum/vocabulary/index.ts` (`INFINITE_GRAVITY` · `pulls` · `pullFraction`). Composes [[vocabulary]] · [[gravity]] · [[singularity]] · [[quantum]] · [[matrix]] · [[merge]].
 
+**Law — [[law]]: every atom's words resolve to the one shared set (`isGrounded`), so as the grounding coverage → 1 the meaning-entropy of the corpus → 0 — and zero meaning-entropy is the infinite gravity of the singularity: the well from which no word escapes into a private meaning. The vocabulary's pull is total because there is exactly one meaning-space, and all language falls into it.**
+
 @audit the pull is computed over the live matrix + vocabulary; never hand-asserted

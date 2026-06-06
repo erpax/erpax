@@ -9,4 +9,6 @@ The quantum facet of [[port]]: an upstream source (a Rails table, a concept from
 
 Matter-twin: `src/quantum/port/index.ts` (`portUuid` · `alreadyPorted`). Composes [[port]] · [[migrate]] · [[merge]] · [[uuid]] · [[quantum]].
 
+**Law — [[law]]: the port-uuid is a pure function of the source content, so re-porting is idempotent — an unchanged source always ports to the same identity and merges to a no-op, while only a genuinely changed source yields a new one; "port all upstreams again" can run any number of times and the ported set is fixed, surfacing only the real gaps.**
+
 @standard RFC 9562 §5.8 content-uuid (the port identity)

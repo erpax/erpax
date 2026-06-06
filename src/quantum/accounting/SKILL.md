@@ -16,4 +16,6 @@ This is why the ledger needs no separate audit trail: the DNA is the identity, a
 
 Matter-twin: `src/quantum/accounting/index.ts` (`dnaChain` ← [[dna]] · `karmaEntry`/`balanced` ← [[karma]] · `accountWithLineage` — the lineage-stamped posting). Composes [[accounting]] · [[dna]] · [[karma]] · [[entry]] · [[entropy]] · [[uuid]] · [[angel]] · [[quantum]] · [[merge]] · [[tag]] · [[lineage]] · [[balance]].
 
+**Law — [[law]]: every posting balances AND carries its lineage — `accountWithLineage` returns Σdebit = Σcredit together with the account's parent_id chain entangled into the uuid, so the audit trail IS the identity; touch any ancestor and the whole descent line's content-uuids shift, making the inheritance tamper-evident by architecture, not by a separate log.**
+
 @audit composed from @/entry (double-entry) + @/uuid/matrix (the parent chain); computed on the live matrix

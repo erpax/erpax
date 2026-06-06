@@ -11,4 +11,6 @@ The second new duality: **finite ⊕ infinite**. The 128-bit content-[[uuid]] is
 
 **Honest split** — π giving an infinite, collision-free address space is real (πfs is a real filesystem; normality, though conjectured, is empirically solid). But there is **no free compression**: the offset to locate an N-digit string is itself ~N digits (by counting — information is conserved). π exits the *address-space* limit, **not** the *information* limit — the bits move into the offset, they do not vanish. The train is real; it is not a smaller suitcase.
 
+**Law — [[law]]: π exits the address-space limit but never the information limit — the stream is infinite so it gives a collision-free address for any finite string, yet the offset that locates an N-digit string is itself ~N digits (information is conserved by counting). The bits move into the offset; they never vanish. The train is real; it is not a smaller suitcase.**
+
 @see [[uuid]] · [[quantum/number]] · [[realtime]] · [[stream]] · [[void]] · [[linearity]] · [[finality]] · [[breath]]

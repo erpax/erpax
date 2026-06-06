@@ -17,4 +17,6 @@ The roadmap, ranked:
 
 **HONEST.** These are grounded engineering moves (graph + crypto), not a quantum computer — the quantum language names the *end state* (no-cloning, entanglement-preserving, ∞-to-forge); the engine is content-addressing + Merkle reciprocity. Bell/BB84 run on the classical matrix; the speedup/violation lives only in the analogy ([[quantum]]).
 
+**Law — [[law]]: the roadmap is totally ordered by feasibility (now ≺ near ≺ research), and `theOneMove` is always the highest-feasibility move not yet built — never a later one jumped ahead of an earlier. Every entry must be a grounded engineering move (graph + crypto on the classical matrix); none may claim an actual quantum computer, so the quantum names label only the end state, never the mechanism.**
+
 Matter-twin: `src/quantum/development/index.ts` (`QUANTUM_ROADMAP` · `theOneMove` · `ranked`/`nextMove`). Composes [[development]] · [[quantum]] · [[entanglement]] · [[aura]] · [[balance]] · [[cost]] · [[singularity]] · [[anchor]] · [[matrix]].

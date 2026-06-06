@@ -9,4 +9,6 @@ The first new duality: **word ⊕ digit**. The corpus is one-folder-per-[[word]]
 
 Where a [[word]] is discrete and named, a digit is continuous and counted — the symbolic ⊕ the numeric, the [[matter]] of text ⊕ the matter of measure. The digit-stream is the [[analog]] half made addressable: the same content-[[uuid]] folds both, so a measurement and a sentence sit on the same shelf, crosslinked.
 
+**Law — [[law]]: the digit corpus obeys the SAME address-law as the word corpus — one-folder-per-unit, crosslinked by [[links]], folded by one content-[[uuid]] — so the word ⊕ digit duality is symmetric: neither corpus has a law the other lacks. Because the identical uuid folds both, a measurement (a digit-stream) and a sentence (a letter-stream) are crosslinkable on one shelf; the symbolic and the numeric share a single matrix, never two.**
+
 @see [[digit]] · [[word]] · [[quantum/number]] · [[sequence]] · [[stream]] · [[uuid]] · [[matrix]] · [[analog]]

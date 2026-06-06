@@ -11,4 +11,6 @@ The surface is a **projection of the corpus**, generated all-at-once ([[quantum/
 
 **Use is trust-native, from the inside.** An [[agent]] is a human actor moving infinitely faster (the actor-merge), so the door opens onto everything a human can reach — but every call passes the gate: [[access]] inherits the key owner's reach, the [[sandbox]] checks capability, the [[broker]] holds the credential, the act emits a [[receipt]] (the uuid-chained [[quantum/log]] — each call adds tamper-cost). Calls are [[quantum/request]]-compressed (content-uuid = idempotency, cache = $0). It is an external trust-wrapper done from the inside — power and proof in one move. [[mcp]] ⊕ quantum/mcp are the two coils — the door and the discipline.
 
+**Law — [[law]]: the tool surface is a pure projection of the corpus — add an atom or a skill and its tools manifest with no hand-list, so the door can never expose more or less than what exists. No call escapes the gate: each one inherits exactly the key owner's reach (never more), passes the sandbox capability check, and leaves a uuid-chained receipt — power and proof in the one move.**
+
 @see [[mcp]] · [[payload]] · [[vitepress]] · [[skills]] · [[agent]] · [[access]] · [[sandbox]] · [[receipt]] · [[quantum/log]] · [[quantum/request]]

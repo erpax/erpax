@@ -15,4 +15,6 @@ The quantum facet of [[math]] — and the **template for wiring the whole scienc
 
 Matter-twin: `src/quantum/math/index.ts` (`root` · `uuidDigit` · `closedUnderAdd`). Composes [[math]] · [[rodin]] · [[digit]] · [[horo]] · [[quantum]] · [[matrix]] · [[uuid]].
 
+**Law — [[law]]: the digital root is a homomorphism onto (ℤ/9ℤ) — root(a+b) === root(root(a)+root(b)), the fold closes mod-9 and never escapes 1..9. Every value here is a derived root, never a stored magnitude, so the math carries zero entropy: compute, don't store; fold, don't sprawl.**
+
 @standard the digital-root / mod-9 group (rodin); RFC 9562 §5.8 content-uuid

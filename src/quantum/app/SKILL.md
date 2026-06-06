@@ -16,4 +16,6 @@ Those are exactly the criteria of a quantum app — so the corpus is a **grid of
 
 Matter-twin: `src/quantum/app/index.ts` (`isQuantumApp` · `quantumApps` · `everyFolderIsQuantumApp`). Composes [[app]] · [[quantum]] · [[matrix]] · [[atom]] · [[uuid]] · [[entanglement]] · [[merge]].
 
+**Law — [[law]]: no folder is exempt — `everyFolderIsQuantumApp()` holds iff the count of nodes carrying a content-uuid equals the total node count, so a single matrix node without a uuid identity falsifies the whole thesis; being a quantum app is not a property some atoms have but the closure condition of the corpus itself.**
+
 @audit the proof is computed over the live matrix, never hand-asserted

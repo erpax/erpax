@@ -9,4 +9,6 @@ The quantum facet of [[cache]]: the content **is its own key** (its content-[[uu
 
 Matter-twin: `src/quantum/cache/index.ts` (`key` · `sameKey`). Composes [[cache]] · [[quantum]] · [[uuid]] · [[merge]].
 
+**Law — [[law]]: identity of content is identity of key — `sameKey(a,b)` is true exactly when `a` and `b` are the same content, because the key is nothing but the content's own uuid; therefore a hit can only ever return the very content asked for, and a changed input is necessarily a different key, so a stale hit is not a bug to guard against but an outcome the addressing makes impossible.**
+
 @standard RFC 9562 §5.8 content-uuid (the cache key)

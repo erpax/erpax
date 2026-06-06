@@ -11,4 +11,6 @@ The quantum facet of [[particle]]: a content-uuid is **both** a **particle** (a 
 
 Matter-twin: `src/quantum/particle/index.ts` (`asParticle` · `asWave` · `isDual`). Composes [[particle]] · [[digit]] · [[signal]] · [[duality]] · [[quantum]] · [[uuid]].
 
+**Law — [[law]]: every atom with a uuid is dual — its particle face (the 128-bit identity, which obeys no-cloning) and its wave face (the digit on the harmonic ring) are derived from the SAME bits, so neither face can exist without the other and the wave is fully determined by the particle. asWave is defined exactly when asParticle is.**
+
 @audit composed from @/particle (uuid) + @/digit (the ring digit); computed

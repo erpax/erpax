@@ -24,7 +24,7 @@ import { createRequire } from 'node:module'
 import { config as loadEnv } from 'dotenv'
 
 import { loadCorpus } from '../.vitepress/corpus.mts'
-import { corpusToSearchDocs, type CorpusAtom } from '@/components/search/corpus'
+import { corpusToSearchDocs, type CorpusAtom } from '@/search'
 import { computeContentUuid } from '@/services/integrity'
 
 ;(globalThis as { require?: unknown }).require ??= createRequire(import.meta.url)

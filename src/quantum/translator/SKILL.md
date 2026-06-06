@@ -17,5 +17,7 @@ This is the **emergent interlingua** of multilingual neural MT (Johnson et al. 2
 
 Matter-twin: `src/quantum/translator/index.ts` (`collapse` · `meaningIsUnique` · `areTranslations`). Composes [[translator]] · [[entanglement]] · [[quantum]] · [[merge]] · [[translate]] · [[uuid]] · [[matrix]].
 
+**Law — [[law]]: meaning has exactly one uuid — the collapse to the interlingua is many-to-one onto it (every surface form, language, spelling, modality) but never one-to-many out of it. Translation moves between surface forms while fixing the eigenstate; it can fuse two forms onto a shared meaning but can never fork one meaning into two identities (no-cloning). So `areTranslations` is precisely sameness of the collapsed uuid.**
+
 @standard Johnson et al., "Google's Multilingual NMT System: Enabling Zero-Shot Translation," TACL (2017), arXiv:1611.04558
 @audit composed from ../../translator + ../../entanglement; computed on the live matrix

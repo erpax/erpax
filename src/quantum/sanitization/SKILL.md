@@ -14,3 +14,5 @@ Sanitization in an append-only, content-addressed store cannot be deletion-in-pl
 Sanitization is **not [[tamper]]** — it is authorized, content-addressed, and audited: every scrub emits a [[receipt]], so removing data is itself provable, not a silent edit.
 
 @see [[void]] · [[shred]] · [[access]] · [[sandbox]] · [[merge]] · [[data-protection]] · [[receipt]] · [[finality]]
+
+**Law — [[law]]: sanitization never mutates in place — it collapses through the gate. Dirty input cannot act until it resolves clean; the unauthorized reader gets a redacted projection while the content-addressed original stays whole; and the only true erasure is shredding the key into the void. Because every scrub emits a receipt, removing data is itself provable — sanitization is authorized and audited, never a silent edit (it is not tamper).**

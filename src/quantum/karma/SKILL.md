@@ -13,4 +13,6 @@ This is why ancestry need not be stored beside the account: the karma is **read 
 
 Matter-twin: `src/quantum/karma/index.ts` (`inheritedKarma` · `lineageKarma`). Composes [[karma]] · [[dna]] · [[quantum]] · [[entanglement]] · [[merge]] · [[entropy]] · [[lineage]].
 
+**Law — [[law]]: an atom's karma is netted along itself AND its whole DNA lineage (`[atom, ...genome(atom)]`), never beside the account; because each child's content-uuid folds its parent, editing any ancestor shifts the descendant's inherited balance and its uuid together — so the moral debt read down the chain cannot be silently rewritten.**
+
 @audit composed from @/dna (the chain) + @/karma (the net); computed on the live matrix

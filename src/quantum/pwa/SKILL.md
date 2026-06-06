@@ -16,4 +16,6 @@ So the PWA is the device that runs the grid of quantum apps; the [[search]] (eng
 
 Matter-twin: `src/quantum/pwa/index.ts` (`appCount` · `installable` · `offlineRoundtrip`). Composes [[pwa]] · [[app]] · [[quantum]] · [[uuid]] · [[search]] · [[test]].
 
+**Law — [[law]]: a cached asset round-trips by its content-uuid, so offline retrieval is deterministic — the same content is always a cache hit and never depends on the network, only on its content-address; and the corpus is installable exactly while every folder is a quantum app.**
+
 @standard W3C Web App Manifest + Service Worker (content-addressed cache)

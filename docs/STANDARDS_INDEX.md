@@ -5432,6 +5432,7 @@ src/dna/index.ts:15: * @audit computed from the live matrix parent-chain; never 
 src/domain/verification/index.ts:15: * @audit the record value is the content-uuid (@/verification); computed, never hand-asserted
 src/drone/index.ts:14: * @audit ISO 19011:2018 §6.4 reconnaissance is read-only evidence-gathering
 src/dry/index.ts:11: * @audit the dry-clean is computed from the tree, never a hand-run script
+src/duality/index.ts:15: * @audit dual pairs are read from the SKILL.md markers and trusted only when intentional — never asserted
 src/dust/index.ts:21: * @audit composed from @/quantum (the live-matrix proof); the dust IS the proof, scattered
 src/ecommerce/hooks/emitOrderLifecycleEvents.ts:26: * @audit ISO-19011:2018 audit-trail order-lifecycle
 src/ecommerce/productValidation/index.ts:8: * @audit ISO-19011:2018 audit-trail
@@ -5468,6 +5469,7 @@ src/etsi/en/319/142/signature-dictionary.ts:23: * @audit ISO-19011:2018 audit-tr
 src/event/emitter.service/index.ts:10: * @audit ISO-19011:2018 audit-trail
 src/evidence/attestation/index.ts:25: * @audit ISO-19011:2018 audit-trail visual-evidence sox-evidence-pack
 src/evidence/attestations/index.ts:17: * @audit ISO-19011:2018 audit-trail attestation-evidence
+src/expense/index.ts:14: * @audit entropy read live from @/entropy + @/tamper/import; billed as a balanced double-entry, never asserted
 src/export/standards-import.ts:26: * @audit ISO-19011:2018 audit-trail
 src/export/standards.service.ts:27: * @audit ISO-19011:2018 audit-trail
 src/factory/auto-populate-tenant.ts:9: * @audit ISO-19011:2018 audit-trail before-validate-hooks
@@ -5661,6 +5663,7 @@ src/lot/work/phases/index.ts:27: * @audit ISO-19011:2018 audit-trail routing-ste
 src/lots/index.ts:29: * @audit ISO-19011:2018 audit-trail lot-lifecycle confirmed·started·finished·closed
 src/maintenance/requests/index.ts:14: * @audit ISO-19011:2018 audit-trail maintenance-request-evidence
 src/maintenance/work/orders/index.ts:21: * @audit ISO-19011:2018 audit-trail work-order-evidence
+src/mala/index.ts:17: * @audit the 108 identities + digital root are computed; the dualities-on-round read live from @/duality
 src/manufacturing/seed/operations.ts:118: * @audit etrima_production.employee_contracts — BGN, min 90 · median 227 · max 960
 src/manufacturing/seed/operations.ts:25: * @audit derived from etrima_production.work_phases — no value re-typed
 src/manufacturing/seed/operations.ts:96: * @audit etrima_production.work_shifts — median 75%, p99 167%, attractor at 100%
@@ -5736,6 +5739,8 @@ src/pwa/index.ts:49: * @audit ISO 19011:2018 §6.4.6 (PWA cache + queue audit-tr
 src/quantum/accounting/index.ts:17: * @audit composed from @/dna (lineage) + @/karma (the double-entry); computed on the live matrix
 src/quantum/app/index.ts:10: * @audit the proof is computed over the live matrix, never hand-asserted
 src/quantum/aura/index.ts:20: * @audit composed from ../../entanglement (reciprocity) + ../../entropy (orphans); computed
+src/quantum/consultant/index.ts:19: * @audit aspects + coverage read live from the corpus; the consultation ROI from quantum/consulting
+src/quantum/consulting/index.ts:19: * @audit marginal cost is 0 on a cache hit; ROI = profit / sunk-cost → ∞ as reuses → ∞
 src/quantum/entanglement/index.ts:19: * @audit composed from ../../entanglement + ../index.ts; computed on the live matrix
 src/quantum/gravity/index.ts:19: * @audit composed from the live matrix mass + the double-torus cost; never hand-asserted
 src/quantum/index.ts:18: * @audit computed from the live matrix, never hand-asserted
@@ -5746,6 +5751,7 @@ src/quantum/math/index.ts:14: * @audit composed from @/horo (number root) + @/di
 src/quantum/matrix/index.ts:20: * @audit computed from the live matrix, never hand-asserted
 src/quantum/particle/index.ts:11: * @audit composed from @/particle (uuid) + @/digit (the ring digit); computed
 src/quantum/reality/index.ts:9: * @audit composed from the live matrix collapse; never hand-asserted
+src/quantum/research/index.ts:14: * @audit cost = agents × tokens (the run's real spend); value = entropy reduced; the ledger balances
 src/quantum/translator/index.ts:19: * @audit composed from ../../translator + ../../entanglement; computed on the live matrix
 src/quantum/vocabulary/index.ts:10: * @audit the pull is computed over the live matrix + vocabulary; never hand-asserted
 src/query/fingerprint/index.test.ts:20: * @audit Conservation Law 8 + Law 47 (content uuid at the type level)
@@ -5861,6 +5867,7 @@ src/tags/taggings/counter.ts:13: * @audit ISO-19011:2018 audit-trail denormalise
 src/tags/taggings/index.ts:32: * @audit ISO-19011:2018 audit-trail tagging-provenance
 src/tamper/cost/index.ts:49: * @audit Conservation Law 55/60 (tamper cost cascades through the uuid-chain)
 src/tamper/cost/index.ts:50: * @audit Conservation Law 62 (coverage) enlarged by the invariant (semantic) + replica axes
+src/tamper/import/index.ts:16: * @audit imports read from source; an index import resolves to a dir carrying index.ts, a deep one to a file
 src/tax/jurisdictions/deferred/tax/items/index.ts:19: * @audit ISO 19011:2018 §6.4.6 audit-evidence-deferred-tax
 src/tax/jurisdictions/tax/returns/index.ts:9: * @audit ISO-19011:2018 audit-trail tax-filing-evidence
 src/tenant/context/index.ts:45: * @audit ISO-19011:2018 audit-trail config-cascade-resolution

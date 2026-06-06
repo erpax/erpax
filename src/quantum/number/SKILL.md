@@ -14,4 +14,6 @@ The (conjectured) **normality** of π — every [[digit]] equally often — *is*
 
 **Honest split** — that the decimal expansion is an infinite, non-terminating stream for irrationals is real mathematics; π's normality is *conjectured, not proven* (only empirical, to trillions of digits); the digit-to-music mapping is an aesthetic reframe, not a theorem.
 
+**Law — [[law]]: the dot collapses iff the number is rational — a rational's digit-stream terminates or repeats, so the measurement finishes to a finite snapshot; an irrational's never repeats, so the dot can never settle it and the stream runs forever. Whether the measurement ends is fixed by the number's arithmetic nature, not by where you stop reading.**
+
 @see [[number]] · [[digit]] · [[stream]] · [[linearity]] · [[finality]] · [[sequence]] · [[breath]] · [[harmony]]

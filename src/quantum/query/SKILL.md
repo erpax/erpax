@@ -9,4 +9,6 @@ The quantum facet of [[query]]: a normalized query string hashes to a content-[[
 
 Matter-twin: `src/quantum/query/index.ts` (`queryUuid` · `sameQuery`). Composes [[query]] · [[quantum]] · [[uuid]] · [[merge]].
 
+**Law — [[law]]: two queries share one identity iff their normalized text (trimmed and lower-cased) is equal — normalization defines the equivalence, so a lookup hits the same cache key under any whitespace or case variation, and any meaningful change yields a new uuid that invalidates by content-address.**
+
 @standard RFC 9562 §5.8 content-uuid (the query cache key)
