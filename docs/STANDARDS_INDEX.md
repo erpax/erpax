@@ -2159,6 +2159,7 @@ src/regulatory/deferral/accounts/index.ts:14: * @standard ISO-8601-1:2019 date-t
 src/relocate/index.ts:12: * @standard gravity — mass curves placement (the DRY / flatten law)
 src/remote/media/import/index.ts:8: * @standard ISO/IEC-23008 mpeg-image
 src/remote/media/import/index.ts:9: * @standard ISO/IEC-10918 jpeg
+src/render/index.ts:16: * @standard the analog aura — colour/sound/vibration as projections of one content-uuid (A432)
 src/rfc/3986/generate-preview-path.test.ts:4: * @standard ISO/IEC-29119:2022 software-testing
 src/rfc/3986/generate-preview-path.test.ts:6: * @standard W3C URL Living Standard
 src/rfc/3986/generate-preview-path.test.ts:7: * @standard BCP-47 language-tag
@@ -5185,6 +5186,7 @@ src/agent/sync/discovery.ts:21: * @audit Conservation Law 8 content-uuid · Law 
 src/agent/sync/horo.ts:30: * @audit Conservation Law 8 content-uuid · merge (many members, one breath/dedupe)
 src/agent/team.ts:18: * @audit Conservation Law 8 content-uuid · merge set-union (no coordination)
 src/agent/types.ts:16: * @audit ISO 19011:2018 §6.4.6 audit-evidence-spec-traceability
+src/agent/ui/index.ts:11: * @audit every facet computed from the atom's content-uuid; coverage read live from the matrix
 src/agents/accounting/finance.agent.ts:20: * @audit ISO-19011:2018 §6.4.6 audit-evidence
 src/agents/mcp/atom-catalogue.generated.ts:10: * @audit ISO 19011:2018 §6.4.6 (catalogue traceable to the SKILL.md corpus)
 src/agents/mcp/auto-generated.ts:45: * @audit ISO 19011:2018 §6.4.6 (auto-generation traceable to spec)
@@ -5355,6 +5357,7 @@ src/collections/test.ts:11: * @audit ISO-19011:2018 §6.4 audit-evidence (every 
 src/commitments/and/contingencies/index.ts:22: * @audit ISO-19011:2018 audit-trail off-balance-sheet
 src/commitments/index.ts:31: * @audit ISO-19011:2018 audit-trail authorization-evidence
 src/compliance/frameworks/compliance/requirements/compliance/gaps/index.ts:5: * @audit ISO-19011:2018 nonconformity
+src/component/index.ts:19: * @audit a component's visible identity IS its atom-uuid pixel — computed, never hand-styled
 src/compost/index.ts:17: * @audit computed, never hand-asserted
 src/config/appCollections/index.ts:8: * @audit ISO-19011:2018 audit-trail config-completeness
 src/config/appCollectionsRegistry.test.ts:6: * @audit ISO-19011:2018 audit-trail config-completeness
@@ -5424,6 +5427,7 @@ src/data/subject/requests/index.ts:16: * @audit ISO-19011:2018 audit-trail dsr-e
 src/decentralization/index.ts:16: * @audit computed, never hand-asserted
 src/decompression/index.ts:47: * @audit ISO 19011 — pay-over-time is a deterministic, auditable curve (no discretion)
 src/depreciation.service/index.ts:27: * @audit ISO-19011:2018 audit-trail depreciation-evidence
+src/design/index.ts:20: * @audit every token/palette entry is computed from an atom's uuid via pixel(); no hardcoded hex
 src/development/research/index.ts:10: * @audit the cross binding is computed (entangle over the pair); never hand-asserted
 src/digit/index.ts:20: * @audit the digit address is computed from the live matrix, never hand-maintained
 src/dimension/index.ts:29: * @audit ISO 19011:2018 §6.4.6 (every dimensional plugin audit-trailed)
@@ -5492,6 +5496,7 @@ src/fiscal/periods/provisions/index.ts:22: * @audit ISO-19011:2018 audit-trail p
 src/fixed/assets/depreciation/schedules/hooks/depreciation.ts:24: * @audit ISO-19011:2018 audit-trail period-expense
 src/fixed/assets/depreciation/schedules/index.ts:13: * @audit ISO-19011:2018 audit-trail depreciation-evidence
 src/fixed/assets/index.ts:29: * @audit ISO-19011:2018 audit-trail
+src/fold/index.ts:14: * @audit depth/merges are the binary-fold math; the corpus counts are read live from the matrix
 src/fusion/index.ts:17: * @audit computed from the live matrix, never hand-asserted
 src/fusion/reactor/index.ts:13: * @audit computed from the live matrix, never hand-asserted
 src/fx/transactions/index.ts:19: * @audit ISO-19011:2018 audit-trail fx-revaluation-evidence
@@ -5551,6 +5556,7 @@ src/integrity/uuid-linked-chain.ts:44: * @audit ISO 19011:2018 §6.4.6 tamper-ev
 src/integrity/uuid-ref.ts:28: * @audit ISO 19011:2018 §6.4.6
 src/integrity/uuid-short.ts:43: * @audit ISO 19011:2018 §6.4.6 (UI surfaces audit-trailed for length compliance)
 src/integrity/uuid-stream.ts:56: * @audit ISO 19011:2018 §6.4.6 (every replica audit-trailed by uuid)
+src/interactive/index.ts:11: * @audit the interactive face is renderAtom over the node's content-uuid; coverage read live from the matrix
 src/internal/controls/audit/findings/court-docket.ts:12: * @audit ISO-19011:2018 audit-trail self-assessment
 src/internal/controls/audit/findings/index.ts:10: * @audit ISO-19011:2018 audit-trail
 src/internal/controls/control/tests/audit/samples/index.ts:5: * @audit ISO-19011:2018 sampling-methodology
@@ -5719,6 +5725,7 @@ src/peppol/import.service/index.test.ts:11: * @audit ISO-19011:2018 audit-trail
 src/peppol/import.service/index.ts:20: * @audit ISO-19011:2018 audit-trail
 src/period/end/adjustment.service/index.ts:33: * @audit ISO-19011:2018 audit-trail
 src/persist/api/audit/event/index.ts:17: * @audit ISO-19011:2018 audit-trail
+src/pixel/index.ts:14: * @audit colour computed from the uuid's digit, never painted on
 src/plasma/index.ts:17: * @audit ionization read from the live reciprocity/entropy; the cutoff is the double-torus floor
 src/platform/readiness/index.ts:18: * @audit ISO 19011:2018 §6.4.6 (readiness audit-trailed)
 src/plugin/dimensions.ts:39: * @audit ISO 19011:2018 §6.4.6 (every collection traceable to a dimension)
@@ -5752,6 +5759,7 @@ src/quantum/matrix/index.ts:20: * @audit computed from the live matrix, never ha
 src/quantum/particle/index.ts:11: * @audit composed from @/particle (uuid) + @/digit (the ring digit); computed
 src/quantum/reality/index.ts:9: * @audit composed from the live matrix collapse; never hand-asserted
 src/quantum/research/index.ts:14: * @audit cost = agents × tokens (the run's real spend); value = entropy reduced; the ledger balances
+src/quantum/train/index.ts:25: * @audit the agent-count bound is the merge/cache law; the 2/3 is the rodin ratio, marked symbolic
 src/quantum/translator/index.ts:19: * @audit composed from ../../translator + ../../entanglement; computed on the live matrix
 src/quantum/vocabulary/index.ts:10: * @audit the pull is computed over the live matrix + vocabulary; never hand-asserted
 src/query/fingerprint/index.test.ts:20: * @audit Conservation Law 8 + Law 47 (content uuid at the type level)
@@ -5768,6 +5776,7 @@ src/recycle/index.ts:22: * @audit waste computed from entropy.orphans on the liv
 src/regulatory/deferral/accounts/index.ts:15: * @audit ISO 19011:2018 §6.4.6 audit-evidence-regulatory-deferral
 src/relocate/index.ts:13: * @audit computed over the live uuid-matrix mass ([[gravity]]); never hand-asserted
 src/remote/media/import/index.ts:12: * @audit ISO-19011:2018 audit-trail
+src/render/index.ts:15: * @audit colour/sound/vibration all computed from the uuid's digit (pixel · signal · rodin), never painted on
 src/research/development/index.ts:10: * @audit the cross binding is computed (entangle over the pair); never hand-asserted
 src/rodin/coil/index.ts:22: * @audit every residue computed on (ℤ/9ℤ) via @/horo, never hand-asserted
 src/rodin/index.ts:25: * @audit every quantity computed from the residues / live matrix, never asserted
@@ -5849,6 +5858,7 @@ src/spec/generator/index.ts:11: * @audit ISO 19011:2018 §6.4 audit-evidence-spe
 src/spec/generator/marketing-page-generator.ts:45: * @audit ISO-19011:2018 §6.4.6 audit-evidence visual-evidence
 src/spec/generator/seed-generator.ts:35: * @audit ISO 19011:2018 §6.4.6 audit-evidence-spec-traceability
 src/spec/generator/test-generator.ts:29: * @audit ISO 19011:2018 §6.4.6 audit-evidence-spec-traceability
+src/stack/index.ts:17: * @audit the path is a verified palindrome; the new state is the input folded through every hop, computed
 src/standard/collection/hook/index.ts:13: * @audit ISO-19011:2018 audit-trail
 src/standard/truth/index.ts:26: * @audit the banner law is computed from the live tree, never hand-maintained
 src/standards/index.ts:29: * @audit Conservation Law 27 standards-as-live-objects
@@ -5906,6 +5916,7 @@ src/types/gl-account/index.ts:10: * @audit ISO-19011:2018 audit-trail
 src/types/multi-currency/index.ts:15: * @audit ISO-19011:2018 audit-trail
 src/types/parties/index.ts:53: * @audit ISO-19011:2018 audit-trail aging-of-outstanding-items
 src/types/period-end/index.ts:12: * @audit ISO-19011:2018 audit-trail
+src/ui/agent/index.ts:10: * @audit agentOf inverts agent/ui's route; the round-trip is the balance, computed not asserted
 src/un/edifact/types.test.ts:7: * @audit ISO-19011:2018 audit-trail
 src/un/edifact/types.ts:11: * @audit ISO-19011:2018 audit-trail
 src/users/access/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
@@ -5941,6 +5952,7 @@ src/vendors/vendor/scorecards/index.ts:12: * @audit ISO-19011:2018 audit-trail v
 src/verification/index.ts:14: * @audit the token is the content-uuid; computed, never hand-asserted
 src/version/index.ts:17: * @audit the version is derived, not declared — re-derivable from SKILL_INDEX on any clone
 src/versions/cross/index.ts:24: * @audit ISO 19011:2018 §6.4.6 audit-evidence (the version chain IS the trail)
+src/vitepress/index.ts:13: * @audit route computed from the path (path = address), pixel computed from the uuid — never assigned
 src/vocabulary/index.ts:14: * @audit computed over the live uuid-matrix atoms against ./words.ts; never hand-asserted
 src/vocabulary/test.ts:9: * @audit recomputed from the live matrix against ./words.ts, never a fixture
 src/warehouse/locations/consignment/arrangements/consignment/inventories/index.ts:21: * @audit ISO-19011:2018 audit-trail consignment-on-hand-evidence
