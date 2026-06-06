@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "The canonical laws — the user's standing commands, saved as one skill, each linked to the atom it governs. Read to recall what erpax MUST obey: collapse-to-single-word-atoms, anonymise-as-agnostic, compute-the-fusion, the SKILL-trinity folder, zero-entropy at commit, imports-as-skills, entanglement, no multiword disguise.",
-    "uuid": "2d368c84-e25c-81e8-895b-41875e1811ad",
+    "uuid": "0959694e-199b-8756-a65a-b85e2556dcfd",
     "words": [
       "the",
       "canonical",

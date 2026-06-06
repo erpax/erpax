@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when delivering, tracking, or assessing skill development — course enrollment, completion, certification, competency gain. The experience record of learning an actor undergoes.",
-    "uuid": "2e4b19b8-97a5-8a75-8786-673b15f646ec",
+    "uuid": "30e4dd83-8ddf-88d5-8c20-017592581302",
     "words": [
       "use",
       "when",

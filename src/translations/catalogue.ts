@@ -2413,6 +2413,174 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "chat",
+    "path": "agent/chat",
+    "translations": [
+      {
+        "key": "name",
+        "source": "chat",
+        "uuid": "55c0d8db-a537-8dc8-8695-8d5252bd4e7a",
+        "words": [
+          "chat"
+        ],
+        "values": {
+          "en": "chat"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when agents converse — an ordered thread of content-uuid messages between agent ids; each message is a communication, the thread tamper-evident via the quantum chat chain.",
+        "uuid": "3c1dd658-d42c-8442-837c-df68d7d51b10",
+        "words": [
+          "use",
+          "when",
+          "agents",
+          "converse",
+          "an",
+          "ordered",
+          "thread",
+          "of",
+          "content",
+          "uuid",
+          "messages",
+          "between",
+          "agent",
+          "ids",
+          "each",
+          "message",
+          "is",
+          "a",
+          "communication",
+          "the",
+          "thread",
+          "tamper",
+          "evident",
+          "via",
+          "the",
+          "quantum",
+          "chat",
+          "chain"
+        ],
+        "values": {
+          "en": "Use when agents converse — an ordered thread of content-uuid messages between agent ids; each message is a communication, the thread tamper-evident via the quantum chat chain."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "communication",
+    "path": "agent/communication",
+    "translations": [
+      {
+        "key": "name",
+        "source": "communication",
+        "uuid": "385fab8f-18f8-8d63-a81c-fb3421e0b46e",
+        "words": [
+          "communication"
+        ],
+        "values": {
+          "en": "communication"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when agents transfer messages — a directed communication between agent ids, the message a content-uuid; relaying preserves the uuid (no-cloning), so the content is never forged in transit.",
+        "uuid": "471a567a-6101-8edf-bdf2-f4e4cfeec529",
+        "words": [
+          "use",
+          "when",
+          "agents",
+          "transfer",
+          "messages",
+          "a",
+          "directed",
+          "communication",
+          "between",
+          "agent",
+          "ids",
+          "the",
+          "message",
+          "a",
+          "content",
+          "uuid",
+          "relaying",
+          "preserves",
+          "the",
+          "uuid",
+          "no",
+          "cloning",
+          "so",
+          "the",
+          "content",
+          "is",
+          "never",
+          "forged",
+          "in",
+          "transit"
+        ],
+        "values": {
+          "en": "Use when agents transfer messages — a directed communication between agent ids, the message a content-uuid; relaying preserves the uuid (no-cloning), so the content is never forged in transit."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "skill",
+    "path": "agent/skill",
+    "translations": [
+      {
+        "key": "name",
+        "source": "skill",
+        "uuid": "1b4a5554-00fc-8a79-a1fb-8c2a8e5bbed7",
+        "words": [
+          "skill"
+        ],
+        "values": {
+          "en": "skill"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when an agent loads a capability — the agent's competence is the union of its loaded skills (a skill one agent loads, the team has); loading is idempotent.",
+        "uuid": "46f8c42d-a2f2-8504-8d4c-a69534613f80",
+        "words": [
+          "use",
+          "when",
+          "an",
+          "agent",
+          "loads",
+          "a",
+          "capability",
+          "the",
+          "agent",
+          "s",
+          "competence",
+          "is",
+          "the",
+          "union",
+          "of",
+          "its",
+          "loaded",
+          "skills",
+          "a",
+          "skill",
+          "one",
+          "agent",
+          "loads",
+          "the",
+          "team",
+          "has",
+          "loading",
+          "is",
+          "idempotent"
+        ],
+        "values": {
+          "en": "Use when an agent loads a capability — the agent's competence is the union of its loaded skills (a skill one agent loads, the team has); loading is idempotent."
+        }
+      }
+    ]
+  },
+  {
     "atom": "sync",
     "path": "agent/sync",
     "translations": [
@@ -6814,7 +6982,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about erpax's irreducible unit — the one-word, content-addressed skill atom everything is composed of. Every entity, collection, agent, interaction, frame, and datum is made of atoms; the corpus is the periodic table, reality its molecules. The ontology beneath every other law.",
-        "uuid": "5ad3d6a9-8d4b-8d6b-8ee7-ee230e79fa2c",
+        "uuid": "c8b21871-0e37-831a-a706-ae46bcbed172",
         "words": [
           "use",
           "when",
@@ -7683,7 +7851,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about a folder/path's collective identity in erpax — the content-uuid Merkle hash of all files within (SKILL.md + matter-twin + relations + sub-folders); folders are content-addressed too, so they merge by design.",
-        "uuid": "6e2d6593-5f50-8f0e-8027-f3c285d4876e",
+        "uuid": "c3112f6e-bdd5-897d-91d2-8cef8e6ddcb1",
         "words": [
           "use",
           "when",
@@ -14390,7 +14558,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modelling a work career as a life-course trajectory — трудова кариера — a sequence of positions on the harmonic allocation ladder walked over time. Late career is a late band on that ring (the maintenance→disengagement stage before decompression/retirement) where accumulated experience peaks against skill obsolescence and the status sign can flip with age. Derive the stage from the sequence and time; never store it.",
-        "uuid": "cbf49d6b-0960-8ab7-8cb7-e1516deec8d3",
+        "uuid": "7a1b9d9f-6a7e-8517-93ba-68510dfa409d",
         "words": [
           "use",
           "when",
@@ -15623,7 +15791,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "chat",
-        "uuid": "759a8029-ab7f-8a15-97b1-0bbb410bd694",
+        "uuid": "55c0d8db-a537-8dc8-8695-8d5252bd4e7a",
         "words": [
           "chat"
         ],
@@ -15634,7 +15802,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about where the erpax agent society convenes — chat.erpax.com, the per-tenant agent-sync room (AGENT_SYNC_HOST venue) — and about the trinity-composition law that every vertex is itself a trinity all the way down to the base atoms.",
-        "uuid": "e414db7b-a8b4-863d-8aaa-d6004b046339",
+        "uuid": "9ea804fe-bcfa-881e-b7fc-5ad6553f2fcc",
         "words": [
           "use",
           "when",
@@ -15694,7 +15862,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "chat",
-        "uuid": "759a8029-ab7f-8a15-97b1-0bbb410bd694",
+        "uuid": "55c0d8db-a537-8dc8-8695-8d5252bd4e7a",
         "words": [
           "chat"
         ],
@@ -15705,7 +15873,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the agent-society room native to Payload — the per-tenant content-addressed event bus where each row is an ErpaxEvent envelope an agent published; the queryable, auditable akashic chat history that replaces the external chat.erpax.com Durable Object. Distinct from messages (user-to-user mail). The agent-bus collection.",
-        "uuid": "38d8a003-6887-8270-a4f1-44d7a718c0d8",
+        "uuid": "b0e334c0-f086-8596-9dc6-226c2ec0c65b",
         "words": [
           "use",
           "when",
@@ -19039,7 +19207,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "communication",
-        "uuid": "b2c5536a-6a65-864f-8759-03aa0910a5ae",
+        "uuid": "385fab8f-18f8-8d63-a81c-fb3421e0b46e",
         "words": [
           "communication"
         ],
@@ -19345,7 +19513,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when mapping the one actor-capability taxonomy — agents load it, employees hold it, jobs require it, the skill-router resolves it. Skills ARE competencies, so the catalogue is COMPUTED from the SKILL.md corpus (no stored collection), and a held/required line references a competency by its content-addressed skillRoute.",
-        "uuid": "40590d40-bb80-8256-800e-03909b2ba7e4",
+        "uuid": "6e83a499-8ce6-876c-961f-55606da222e7",
         "words": [
           "use",
           "when",
@@ -19460,7 +19628,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when computing held-vs-required skill gaps — matches held competencies against job/task requirements and scores on the SFIA 1-7 scale. The pure required − held function (recruiting, performance review, agent task-routing).",
-        "uuid": "ad71773f-bf3c-81fc-b3c7-096595fc074d",
+        "uuid": "5b70f269-0127-8c2b-8ad0-5afa30ede6b2",
         "words": [
           "use",
           "when",
@@ -23358,7 +23526,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when tracking candidate applications, interview stages, offers, and hiring decisions per position — GDPR-compliant funnel (applied→screening→interview→offer→hired/rejected), sourcing, skill-match, and recruiter activity. The GDPR Art.6(1)(b) candidate-pipeline collection.",
-        "uuid": "9dde0d8b-03c0-8aab-8152-ea5cfa17c74b",
+        "uuid": "565bec3b-1bb5-8cb8-9ba6-36941ba953ff",
         "words": [
           "use",
           "when",
@@ -28955,7 +29123,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when skills come from USER CONTENT — an HR job description names the competencies a role requires, and each named skill is content-addressed to a corpus route (same name ⇒ same route ⇒ merge). A route not yet in the corpus is a NEW skill the user content adds — the corpus GROWS from what users write. The dual of generate (which mints from aura gaps): derive mints from user content; both feed one content-addressed corpus.",
-        "uuid": "af35b61e-4c45-8351-99a3-a006bff20d8e",
+        "uuid": "9868b0ad-f9b7-83b2-b0a2-a6ceaa652949",
         "words": [
           "use",
           "when",
@@ -32384,7 +32552,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about erpax's pervasive two-fold law — matter↔antimatter (code↔skill), physical↔metaphysical, give↔take, flow↔balance, build↔bind, learn↔forget, whole↔part, begin↔end, open↔close. The pair that recurs at every scale.",
-        "uuid": "377acd8b-649d-8e21-9185-a6be7009da16",
+        "uuid": "c1e04476-d321-800b-9834-fc70ef5fb117",
         "words": [
           "use",
           "when",
@@ -41304,7 +41472,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about self-similarity in erpax — the same form at every scale (fields→collections→plugins→erpax→agents), the path-as-address law, whole↔part recursion, nested one-word skill folders. Self-similar by design.",
-        "uuid": "e4618ffd-3d33-8c09-baa9-215427ceeea2",
+        "uuid": "7058b041-c93d-85e8-95bc-31b90fb4e789",
         "words": [
           "use",
           "when",
@@ -42834,7 +43002,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the skill corpus should grow itself — continuously mining aura gaps (unlinked/dead-link words) into new atoms and driving the gap to zero, like the tsc tail. The realtime self-generating loop (scan → mint → link → re-scan). Skills generating skills.",
-        "uuid": "ffe211a4-834a-8bca-a705-726f8ec26573",
+        "uuid": "500c25d3-ac2d-8089-b50a-8e85d3dfc66a",
         "words": [
           "use",
           "when",
@@ -46801,7 +46969,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the whole is recoverable from any part — content-uuid encodes the whole, the akashic record regenerates it, each folder/skill loads its own subgraph, each agent is the whole erpax. The whole-in-every-part law; the content-twin of fractal (same form at every scale). Forget the corpus; regenerate from a part.",
-        "uuid": "08872d6e-56bd-846d-bbc4-7dba3aa14bcd",
+        "uuid": "6cd37aca-5bd1-86c8-b856-2530c51e1b39",
         "words": [
           "use",
           "when",
@@ -55630,7 +55798,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "The canonical laws — the user's standing commands, saved as one skill, each linked to the atom it governs. Read to recall what erpax MUST obey: collapse-to-single-word-atoms, anonymise-as-agnostic, compute-the-fusion, the SKILL-trinity folder, zero-entropy at commit, imports-as-skills, entanglement, no multiword disguise.",
-        "uuid": "2d368c84-e25c-81e8-895b-41875e1811ad",
+        "uuid": "0959694e-199b-8756-a65a-b85e2556dcfd",
         "words": [
           "the",
           "canonical",
@@ -63937,7 +64105,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when collapsing each atom's test file to the canonical test.ts — the migrating skill that renames a single <Name>.test.ts to test.ts and flags multi-test folders for sub-atom collision.",
-        "uuid": "f0acf530-9f66-86be-8a77-dacf74506fc2",
+        "uuid": "2594f7b6-34c2-8b6b-974e-c243a2c38d60",
         "words": [
           "use",
           "when",
@@ -63999,7 +64167,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when enforcing the four-file folder law — an atom folder holds only SKILL.md, index.ts, test.ts, translations.ts; any other file is a violation to collide into its own atom.",
-        "uuid": "c24299ce-2dc8-894c-9642-5e5e3a2fd75b",
+        "uuid": "cc2ca613-c502-8547-9f94-8f4d39490fc7",
         "words": [
           "use",
           "when",
@@ -71921,7 +72089,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the matter coil — Payload is the half of every atom that becomes a collection, fields, hooks, access, and a database table; the index.ts twin the SKILL.md form is bound to by content-uuid.",
-        "uuid": "d424efc2-41cb-8968-912d-83403a537623",
+        "uuid": "f710f68c-899b-8c08-8c69-3f67dc782636",
         "words": [
           "use",
           "when",
@@ -77383,7 +77551,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when naming what fails the audit — the lie, the manipulated/tampered datum, the forged record, the unbalanced ledger, the unsourced claim, the dead link. The set of all falsehood-forms; dual of sacred; each named form a detector skill (infinite).",
-        "uuid": "fa77eca7-35c9-80cf-a725-a73170f1f6c1",
+        "uuid": "2526033e-21eb-8a39-93e7-034c6fff8b99",
         "words": [
           "use",
           "when",
@@ -79826,7 +79994,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "chat",
-        "uuid": "759a8029-ab7f-8a15-97b1-0bbb410bd694",
+        "uuid": "55c0d8db-a537-8dc8-8695-8d5252bd4e7a",
         "words": [
           "chat"
         ],
@@ -79837,7 +80005,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about a chat thread as a merkle chain — each message a content-uuid, the thread folding to one chain-uuid; reordering or changing any message changes the thread-uuid (tamper-evident history).",
-        "uuid": "8c41f8fc-fdba-8821-ab7d-9c69e6066c83",
+        "uuid": "2cb77767-703b-8381-9597-77513f7b1259",
         "words": [
           "use",
           "when",
@@ -79888,7 +80056,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "communication",
-        "uuid": "b2c5536a-6a65-864f-8759-03aa0910a5ae",
+        "uuid": "385fab8f-18f8-8d63-a81c-fb3421e0b46e",
         "words": [
           "communication"
         ],
@@ -79899,7 +80067,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about communication on the quantum level — a message is a content-uuid (no-cloning, so a forged message has a different uuid), the channel is entanglement, and a received message is intact iff its uuid matches the original.",
-        "uuid": "87433991-10d8-87e4-b7d4-4e585be64b40",
+        "uuid": "2a744d04-6885-8637-bc2d-6c23a823dfc5",
         "words": [
           "use",
           "when",
@@ -87627,7 +87795,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when defining RBAC roles — global, collection-scoped, or document-scoped — each carrying an optional capability (read/write/sign/admin/audit) and skill routes that users inherit on assignment. The NIST INCITS-359 role-definition collection.",
-        "uuid": "3f87d9fd-0f58-8aa1-b295-04d66c9509da",
+        "uuid": "47eb3402-838b-8dcf-b2b2-718a027122d7",
         "words": [
           "use",
           "when",
@@ -87690,7 +87858,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when assigning or revoking a role definition for a user — the HABTM join that grants a user the capabilities and skill routes of the linked role; duplicate assignments are prevented by hook. The NIST INCITS-359 role-assignment collection.",
-        "uuid": "204192df-2784-8e70-b1b7-44aecf668cef",
+        "uuid": "18583dc1-6b53-8a43-a6b5-f65284fd659e",
         "words": [
           "use",
           "when",
@@ -88117,7 +88285,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when choosing which model/compute tier handles an agent action — route by risk (capability verb + credential touch + harmony fight), not by where the model runs; low-risk reads/chat go local, high-risk write/execute/credential/disharmony go to a strong aligned model; safety is the sandbox gate, not the model tier. The risk-proportionate model-routing service.",
-        "uuid": "01e858bf-c469-8916-8ef5-d391566e07bd",
+        "uuid": "e2d65590-012b-8c4b-a920-103e2fb0c443",
         "words": [
           "use",
           "when",
@@ -92578,7 +92746,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when navigating or composing the erpax Payload single-word skill library — to find the right atomic skill, understand how they interact (with each other, themselves, and external systems), or in what order to apply them. The index over the basic skills, ordered 0·3·6·9·1·2·4·8·7·5.",
-        "uuid": "d80a25d5-a7d2-84f3-b647-294e97497a6d",
+        "uuid": "3d234ee9-9cbc-8d01-b165-c74a567bcca2",
         "words": [
           "use",
           "when",
@@ -94848,7 +95016,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about erpax building itself — the autonomous loop where the agent society (convened at chat) reads its own akashic record and advances one gate-verified step at a time, driving the aura to whole and the collections to their dense core with minimal human footprint. The self-building loop; matter-twin society/build.mjs.",
-        "uuid": "502575fa-501c-8936-83de-583a3c836cba",
+        "uuid": "3e20e85c-748a-8119-ac67-2cf6a45564d0",
         "words": [
           "use",
           "when",
@@ -96606,7 +96774,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when implementing or auditing a compliance standard in erpax — IFRS/US-GAAP/SAF-T/ISO/SOX/EN-16931/NIST. Standards are implemented via the skills (each skill is the answer-path holding a standard's form); @standard banners must be true, not decoration.",
-        "uuid": "2d99c337-8111-852b-9e15-9c0b35691b63",
+        "uuid": "bf81ec14-d83a-8ff6-b178-4e8c87d8ec95",
         "words": [
           "use",
           "when",
@@ -101555,7 +101723,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the society spawns multiple agents that share skills — a team is a set of content-addressed agents whose competence is the UNION of their skills (merge/holographic: a skill one loads, the team has), with distinct purposes preserved. Spawn → share → cover the gap in parallel. Matter-twin services/agent/team.ts.",
-        "uuid": "21eac02e-8ee8-8045-88f6-44bf9cd86e0d",
+        "uuid": "b927201e-87fc-8698-9b57-e5249710731a",
         "words": [
           "use",
           "when",
@@ -104654,7 +104822,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when delivering, tracking, or assessing skill development — course enrollment, completion, certification, competency gain. The experience record of learning an actor undergoes.",
-        "uuid": "2e4b19b8-97a5-8a75-8786-673b15f646ec",
+        "uuid": "30e4dd83-8ddf-88d5-8c20-017592581302",
         "words": [
           "use",
           "when",
@@ -105196,7 +105364,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reading the one canonical content-addressed index of every atom's ported SKILL.md — the mass the collector emits and the coverage guard verifies.",
-        "uuid": "22b850b6-2e5b-834a-aab9-037dd73d14c1",
+        "uuid": "b075318c-51e4-8954-8878-fe8e73d3dcef",
         "words": [
           "use",
           "when",
@@ -105249,7 +105417,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when porting every atom's SKILL.md into code — the collector that harvests translatable strings into a content-addressed per-folder table and the one canonical catalogue.",
-        "uuid": "96d40b18-41dc-8e7c-a6b3-5584634e1f44",
+        "uuid": "f6eb487f-23ee-87b2-b928-19a673d77807",
         "words": [
           "use",
           "when",
@@ -105830,7 +105998,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about how one node is told three times and rendered once — matter (index.ts inline docs) · antimatter (SKILL.md) · backend (the generated payload-types schema), fused into VitePress (the speech). The doc-scale DRY law — the page derives from the code and the backend, never restated.",
-        "uuid": "0b32f62b-5bb1-847e-b4d7-76f7d2a87217",
+        "uuid": "56120323-7f59-808e-84a4-61cf8982b00b",
         "words": [
           "use",
           "when",
@@ -108877,7 +109045,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about erpax's version — it is CONTENT-ADDRESSED and skill-based, a function of the corpus aura (the hash over every atom's content-uuid), so the same skills produce the same version on every clone; automatic tags follow the corpus, and drift or forgery between a tag and the code is caught. The git tag that cannot lie about what it contains.",
-        "uuid": "1431457e-e68b-8811-abe9-b01db43c423e",
+        "uuid": "195ce827-6987-84d3-a813-84c0b33cb2f5",
         "words": [
           "use",
           "when",
@@ -109375,7 +109543,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the form coil — VitePress renders each atom's SKILL.md as its spoken form (docs, frontmatter, the wiki-link graph) and is the speech-gate twin of the Payload matter, bound by content-uuid.",
-        "uuid": "14d65cce-1e6e-8ff6-889e-e508fd62ecd9",
+        "uuid": "49a500fe-3d9e-812c-b7ba-bcddb9d0e047",
         "words": [
           "use",
           "when",
@@ -112611,4 +112779,4 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
   }
 ]
 
-export const TRANSLATIONS_COUNT = 2363
+export const TRANSLATIONS_COUNT = 2366
