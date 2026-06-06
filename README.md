@@ -183,7 +183,7 @@ The `SKILL.md` corpus is served as a VitePress site — run `pnpm docs:dev` and 
 - [`docs/ARCHITECTURE_MAP.md`](docs/ARCHITECTURE_MAP.md) — the layered architecture and collection map
 - [`docs/BUSINESS_CHAINS.md`](docs/BUSINESS_CHAINS.md) — end-to-end business workflows
 - [`docs/STANDARDS.md`](docs/STANDARDS.md) — standards taxonomy and the `@standard` banner grammar
-- [`docs/STANDARDS_INDEX.md`](docs/STANDARDS_INDEX.md) / [`docs/STANDARDS_AUDIT.md`](docs/STANDARDS_AUDIT.md) — generated standards index and audit
+- [`src/standards/SKILL.md`](src/standards/SKILL.md) — the standards index, computed from the `@standard` banners via the catalogue (`pnpm standards:catalogue`)
 - [`docs/MIGRATION_WORKLIST.md`](docs/MIGRATION_WORKLIST.md) — the port from the upstream Rails systems
 - [`src/standards/README.md`](src/standards/README.md) — the standards registry
 

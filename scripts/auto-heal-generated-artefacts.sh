@@ -40,17 +40,10 @@ DRY_RUN=0
 
 healed=()
 
-# ── Artefact 1: docs/STANDARDS_INDEX.md ──────────────────────────────
-if bash scripts/standards-citation-index.sh --verify-index >/dev/null 2>&1; then
-  : # already in sync
-else
-  echo "auto-heal: STANDARDS_INDEX.md is stale — regenerating"
-  if [ "$DRY_RUN" = 0 ]; then
-    bash scripts/standards-citation-index.sh --write-index >/dev/null
-    git add docs/STANDARDS_INDEX.md
-    healed+=("docs/STANDARDS_INDEX.md")
-  fi
-fi
+# ── Artefact 1 (docs/STANDARDS_INDEX.md) REMOVED ─────────────────────
+# The loose generated md violated md-purity (only SKILL.md is allowed) and was
+# superseded by the standards catalogue: scripts/standards-catalogue.ts →
+# src/standards/catalogue.ts → src/standards/SKILL.md. No artefact to heal here.
 
 # ── Artefact 1.5: consistency-apply (Slice IIIIIIII 2026-05-11) ──────
 #

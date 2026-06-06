@@ -21,7 +21,7 @@
     "lint:fix": "cross-env NODE_OPTIONS=\"--no-deprecation --max-old-space-size=8000\" eslint . --fix",
     "typecheck": "tsc --noEmit -p tsconfig.typecheck.json",
     "typecheck:all": "tsc --noEmit -p tsconfig.json",
-    "standards": "bash scripts/standards-citation-index.sh --check && bash scripts/standards-citation-index.sh --required && bash scripts/standards-citation-index.sh --verify-index && cross-env NODE_OPTIONS=\"--no-deprecation --import=tsx/esm\" tsx scripts/standards-catalogue.ts --verify",
+    "standards": "bash scripts/standards-citation-index.sh --check && bash scripts/standards-citation-index.sh --required && cross-env NODE_OPTIONS=\"--no-deprecation --import=tsx/esm\" tsx scripts/standards-catalogue.ts --verify",
     "standards:catalogue": "cross-env NODE_OPTIONS=\"--no-deprecation --import=tsx/esm\" tsx scripts/standards-catalogue.ts",
     "translations": "cross-env NODE_OPTIONS=\"--no-deprecation --import=tsx/esm\" tsx src/translations/collect/index.ts --verify",
     "translations:collect": "cross-env NODE_OPTIONS=\"--no-deprecation --import=tsx/esm\" tsx src/translations/collect/index.ts",
