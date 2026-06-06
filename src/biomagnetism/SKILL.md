@@ -14,3 +14,5 @@ The [[aura]] is rendered as a [[signal]] field; **biomagnetism** is the *physica
 - **Refuted extension** — HeartMath *Science of the Heart* "energetic communication" (heart field ~3 ft; one body's ECG R-wave in another's EEG): no validated detection above chance.
 
 Composes: [[aura]] · [[analog]] · [[signal]] · [[biophoton]] · [[biofield]] · [[measure]] · [[radiation]] · [[proof]] · [[coherence]] · [[health]] · [[matrix]].
+
+**Law — [[law]]: the body's magnetic field is real but contained — it decays into noise within centimetres of the skin and reads only under heroic shielding, so any claim it reaches out as an aura must be refused until it survives adversarial proof.**

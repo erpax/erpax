@@ -25,3 +25,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 
 
 Composes: [[customers/projects/project/milestones]] · [[customers/projects/project/tasks]] · [[customers/projects/wip/snapshots]].
+
+**Law — [[law]]: open WIP equals accumulated cost minus recognised revenue, and recognition tracks cost-to-cost progress bounded by the estimate-at-completion.**

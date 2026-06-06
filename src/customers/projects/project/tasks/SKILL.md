@@ -13,3 +13,5 @@ description: Use when decomposing a project into WBS elements — assigning task
 - IFRS IFRS-15 §B18 cost-to-cost
 - ISO-19011:2018 audit-trail wbs-evidence
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
+
+**Law — [[law]]: every cost posts to a WBS task code, and per-task cost-to-cost percentages roll up to the project's over-time recognition.**

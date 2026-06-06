@@ -11,4 +11,6 @@ Entangled with — [[aggregate]] · [[catalog]] · [[lease]] · [[purchase]] · 
 
 Attested in schema.org — AggregateOffer · Offer · OfferCatalog · OfferForLease · OfferForPurchase · OfferItemCondition · OfferShippingDetails · acceptedOffer · hasOfferCatalog · hasParticipationOffer · hasSponsorshipOffer · makesOffer · offerCount
 
+**Law — [[law]]: an offer carries an explicit businessFunction (sell/lease/repair/dispose); when absent it collapses to the sell identity, so an offer is never function-ambiguous.**
+
 @standard schema.org — the type vocabulary, collided to single words

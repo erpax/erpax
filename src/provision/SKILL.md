@@ -12,3 +12,5 @@ Composes: [[journal/entries]] · [[commitments/and/contingencies]] · [[legal/en
 ## Standards
 - IAS-37 (provisions, contingent liabilities, contingent assets)
 - FASB ASC 450 (contingencies)
+
+**Law — [[law]]: a provision is recognized only when a past event creates a present obligation whose outflow is both probable and reliably measurable; otherwise it stays a disclosed contingency.**

@@ -11,4 +11,6 @@ Entangled with — [[item]] · [[list]] · [[type]] · [[action]] · [[status]] 
 
 Attested in schema.org — ItemListOrderType · Order · OrderAction · OrderItem · OrderStatus · PreOrderAction · itemListOrder · orderDate · orderDelivery · orderItemNumber · orderItemStatus · orderNumber · orderPercentage · orderQuantity · orderStatus · orderValue · partOfOrder · referencesOrder
 
+**Law — [[law]]: an order confirms accepted offers — its value equals the sum of its line items, and it advances through its statuses in one direction.**
+
 @standard schema.org — the type vocabulary, collided to single words

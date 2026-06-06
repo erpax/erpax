@@ -11,4 +11,6 @@ Entangled with — [[action]]
 
 Attested in schema.org — CommunicateAction
 
+**Law — [[law]]: to communicate is an action with a sender and a recipient; a message addressed to no one conveys nothing.**
+
 @standard schema.org — the type vocabulary, collided to single words

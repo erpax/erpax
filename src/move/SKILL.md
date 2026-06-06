@@ -11,4 +11,6 @@ Entangled with — [[action]]
 
 Attested in schema.org — MoveAction
 
+**Law — [[law]]: a move changes only the location of a thing — the thing itself is conserved, never created or destroyed by the transit.**
+
 @standard schema.org — the type vocabulary, collided to single words

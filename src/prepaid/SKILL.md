@@ -12,3 +12,5 @@ Composes: [[journal/entries]] · [[deferral]] · [[fixed/assets]] · [[gl/accoun
 ## Standards
 - IAS-1 §27 (accrual basis reporting)
 - Not IFRS-specific; implicit in expense recognition
+
+**Law — [[law]]: a prepaid is an asset only until its benefit is consumed — it must be drawn down to expense across the period it serves, never recognized all at once or left to overstate assets.**

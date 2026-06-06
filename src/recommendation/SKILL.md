@@ -11,4 +11,6 @@ Entangled with — [[medical]] · [[guideline]] · [[strength]]
 
 Attested in schema.org — MedicalGuidelineRecommendation · Recommendation · recommendationStrength
 
+**Law — [[law]]: a recommendation is a review that picks a winner, so it must carry its strength — a suggestion without a graded confidence is an opinion masquerading as a verdict.**
+
 @standard schema.org — the type vocabulary, collided to single words

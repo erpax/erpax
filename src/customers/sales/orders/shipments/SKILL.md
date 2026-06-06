@@ -19,3 +19,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - SOX §404 internal-controls dispatch-controls
 
 Composes: [[Packages]] · [[customers/sales/orders/shipments/tracking/events]] · [[standard]] · [[customers/sales/orders/shipments/customs/declarations]].
+
+**Law — [[law]]: a shipment dispatches only goods owed by its sales order, advances state monotonically picked→packed→shipped→delivered, and cannot be delivered before it is shipped.**

@@ -39,3 +39,5 @@ This is **agricultural MRP** — a [[manufacturing|bill-of-materials]] explosion
 - Treating the plan as static — yield/spacing/fertility coefficients are farm- and season-specific; re-measure, never copy blind.
 
 Composes [[crop]] · [[livestock]] · [[perennial]] · [[aquaculture]] · [[forestry]] · [[apiculture]] · [[harvest]] · [[yield]] · [[season]] · [[planting]] · [[fertility]] · [[share]] · [[soil]] · [[rotation]] · [[covercrop]] · [[tillage]] · [[cultivation]] · [[irrigation]] · [[postharvest]] · [[grade]] · [[cropplan]] · [[organic]] · [[certification]] · [[permaculture]] · [[pickup]] · [[choice]] · [[enterprisebudget]] · [[biological/assets]] · [[manufacturing]] · [[commerce]] · [[measure]] · [[currency]] · [[conversion]] · [[bottleneck]] · [[capacity]] · [[allocation]] · [[items]] · [[entry]] · [[recognition]] · [[deferral]] · [[ecosystem]].
+
+**Law — [[law]]: plan backward from the harvest you intend to sell, never forward from the land you happen to hold — land × season is the binding bottleneck, and every quantity along the chain carries a unit and a currency that convert automatically and post by double-entry.**

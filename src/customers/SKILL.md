@@ -23,3 +23,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - GDPR Art.5 data-minimization
 
 Composes: [[customers/sales/orders]] · [[identity]] · [[accounting]] · [[tax]] · [[horo]] · [[standard]].
+
+**Law — [[law]]: a customer is the buyer-side party of record whose receivable exposure may never exceed its credit limit, and whose personal data is held only on a lawful basis and minimized.**

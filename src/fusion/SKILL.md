@@ -12,3 +12,5 @@ description: "Use when reasoning about the reactor that builds erpax — gravity
 The reactor **readout** (the dials — gravity ⊕ entropy ⊕ quantum composed over the matrix) is its own atom by gravity-pull: [[reactor]] (`src/fusion/reactor`). The *act* of fusing (`fuse` / `foldToRoot`) stays here; the readout is there.
 
 Matter-twin: `src/uuid/matrix/collide.mjs` (the collider) + `src/society/build.mjs` (the self-build loop) ⊕ `src/fusion/index.ts` (`fuse` / `foldToRoot`, re-exporting `reactor`). Composes: [[merge]] · [[gravity]] · [[entropy]] · [[quantum]] · [[reactor]] · [[mass]] · [[dry]] · [[collapse]] · [[matrix]] · [[society]] · [[breath]] · [[akashic]] · [[torus]] · [[zeropoint]] · [[one]] · [[whole]] · [[tamper]] · [[cost]] · [[anchor]].
+
+**Law — [[law]]: every fusion is a content-uuid collision `merge(a,b) → c` that removes duplication and folds atoms toward the one root — order-independent, so the same inputs always fuse to the same matrix.**

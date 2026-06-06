@@ -11,4 +11,6 @@ Entangled with — [[thing]]
 
 Attested in schema.org — seller
 
+**Law — [[law]]: a seller is a role an entity plays in an offer, not a kind of entity — the same actor that sells here may buy or provide elsewhere, so seller-ness is a directed edge of a transaction, never an intrinsic type.**
+
 @standard schema.org — the type vocabulary, collided to single words

@@ -14,3 +14,5 @@ ET rises with heat, wind, and canopy; it is the water twin of the heat-driven [[
 - METER Group — ET and plant-available water
 
 Composes [[agriculture]] · [[moisture]] · [[irrigation]] · [[balance]] · [[rate]] · [[degreeday]] · [[season]] · [[measure]].
+
+**Law — [[law]]: evapotranspiration is the debit of the water budget, so remaining soil moisture equals deposits (rain + irrigation) minus this withdrawal; the reservoir cannot be drawn past zero without a deposit.**

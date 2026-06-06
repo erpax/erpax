@@ -11,4 +11,6 @@ Entangled with — [[register]] · [[action]]
 
 Attested in schema.org — UnRegisterAction
 
+**Law — [[law]]: the un- prefix inverts its action — applying it twice returns the original state (an involution).**
+
 @standard schema.org — the type vocabulary, collided to single words

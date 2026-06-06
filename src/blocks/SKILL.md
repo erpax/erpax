@@ -11,4 +11,6 @@ Entangled with — [[user]]
 
 Attested in schema.org — UserBlocks
 
+**Law — [[law]]: a block is the one word recording that a [[user]] has barred another — a directed, revocable refusal of connection, never a mutual or permanent state.**
+
 @standard schema.org — the type vocabulary, collided to single words

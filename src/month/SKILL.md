@@ -11,4 +11,6 @@ Entangled with — [[day]] · [[week]]
 
 Attested in schema.org — byMonth · byMonthDay · byMonthWeek
 
+**Law — [[law]]: a month is the integer 1–12 with January fixed at 1 — outside that closed range it does not name a month.**
+
 @standard schema.org — the type vocabulary, collided to single words

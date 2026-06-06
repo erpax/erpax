@@ -11,4 +11,6 @@ Development from the **research side**: building the tooling and systems that en
 
 Matter-twin: `src/research/development/index.ts` (`cross` · `direction`). Composes [[development]] · [[research]] · [[entanglement]] · [[merge]] · [[matrix]] · [[quantum]].
 
+**Law — [[law]]: this direction's cross equals its mirror's — the research↔development pair is one order-free entangled binding, never two independent edges.**
+
 @audit the cross binding is computed (entangle over the pair); never hand-asserted

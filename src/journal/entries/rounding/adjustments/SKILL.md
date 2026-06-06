@@ -22,3 +22,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
 
 Composes: [[journal/entries]] · [[accounting]] · [[standard]] · [[proof]] · [[horo]].
+
+**Law — [[law]]: a rounding plug exists only to close the residual between integer-cents totals and presentation-rounded statements, never exceeding the ±0.01 minimum unit per fragment.**

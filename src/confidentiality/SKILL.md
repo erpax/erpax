@@ -13,3 +13,5 @@ Composes: [[Contracts]] · [[matter]] · [[privilege]] · [[localize]].
 - GDPR-Art-32
 - Trade-Secrets-Directive
 - Common-Law
+
+**Law — [[law]]: disclosure of confidential information is forbidden unless it falls within a permitted use or a defined exception, and the duty survives until the stated duration expires.**

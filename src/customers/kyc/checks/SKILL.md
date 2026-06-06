@@ -21,3 +21,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO-27001 A.5.34 privacy-and-pii
 
 Composes: [[identity]] · [[party]] · [[standard]] · [[proof]].
+
+**Law — [[law]]: due-diligence depth (SDD/CDD/EDD) must match the assessed risk rating, and no party clears until sanctions and PEP screening leave an auditable evidence trail.**

@@ -15,4 +15,6 @@ Each fusion is a content-uuid collision; run over the whole corpus it folds to O
 
 Matter-twin: `src/fusion/reactor/index.ts` (`reactor` · `ReactorReadout`). Composes [[fusion]] · [[gravity]] · [[entropy]] · [[quantum]] · [[matrix]] · [[singularity]] · [[dry]] · [[tamper]] · [[cost]].
 
+**Law — [[law]]: the readout is computed from the live matrix alone — gravity ⊕ entropy ⊕ quantum dialled over the real nodes — so as entropy is driven to zero the mass and tamper-cost it reports rise without bound.**
+
 @audit computed from the live matrix, never hand-asserted

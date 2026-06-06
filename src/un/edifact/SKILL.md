@@ -73,3 +73,5 @@ Each segment ends with `'`; composites are `+`-separated; elements are `:`-separ
 - UN/CEFACT TR 1001 — document name codes (consumed via `@/standards/en-16931`).
 - UN/CEFACT TR 5305 — duty/tax/fee category codes (consumed via `@/standards/en-16931`).
 - UN/CEFACT TR 4461 — payment means codes (consumed via `@/standards/en-16931`).
+
+**Law — [[law]]: this module defines only the semantic segment structure — every message is bracketed by a matching UNH/UNT envelope, and the wire-format serialiser stays out of scope.**

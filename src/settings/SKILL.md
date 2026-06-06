@@ -11,4 +11,6 @@ Entangled with — [[delivery]] · [[time]] · [[shipping]] · [[rate]] · [[lin
 
 Attested in schema.org — DeliveryTimeSettings · ShippingRateSettings · shippingSettingsLink
 
+**Law — [[law]]: settings are reusable named configuration linked into many shipments by reference, so one edit to the setting reprices every shipment that points at it.**
+
 @standard schema.org — the type vocabulary, collided to single words

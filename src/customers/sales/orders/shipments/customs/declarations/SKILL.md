@@ -21,3 +21,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - EU UCC §6 customs-declaration
 - OECD BEPS Action 13 transfer-pricing-documentation
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
+
+**Law — [[law]]: every HS-coded line's declared value reconciles to its shipment item, and no cross-border movement is lawful until the issued MRN reaches customs-release.**

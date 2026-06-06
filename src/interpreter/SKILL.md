@@ -11,4 +11,6 @@ Entangled with — [[claim]]
 
 Attested in schema.org — claimInterpreter
 
+**Law — [[law]]: an interpreter renders a claim into another form without altering its truth value — interpretation preserves the source claim's meaning, so an interpreter that changes what is asserted is a distortion, not an interpreter.**
+
 @standard schema.org — the type vocabulary, collided to single words

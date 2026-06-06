@@ -17,3 +17,5 @@ Composes: [[currency]] · [[measure]] (the two dimensions a rate relates), [[num
 - A magic-literal rate default (`?? 0.21`) — resolve via the cascade; blank routes to the no-op identity (`×1` / `+0%`).
 - A rate stored without its point-in-time ([[versions]]) — yesterday's exchange/VAT rate silently reprices history.
 - Storing a derived rate that should be computed from value ÷ quantity at read.
+
+**Law — [[law]]: a rate is value-per-unit pinned to a point in time; a blank rate resolves to its no-op identity (×1 / +0%) along the jurisdiction cascade, never to a hardcoded literal.**

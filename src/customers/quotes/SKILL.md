@@ -21,3 +21,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO-27002 §5.4 segregation-of-duties
 
 Composes: [[fields]] · [[collections]] · [[transaction]] · [[accounting]] · [[identity]] · [[standard]].
+
+**Law — [[law]]: a quote posts no GL entry until accepted, and its issuer can never be its approver.**

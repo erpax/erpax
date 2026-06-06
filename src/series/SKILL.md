@@ -11,4 +11,6 @@ Entangled with — [[book]] · [[comic]] · [[creative]] · [[work]] · [[event]
 
 Attested in schema.org — BookSeries · ComicSeries · CreativeWorkSeries · EventSeries · MovieSeries · PodcastSeries · RadioSeries · Series · TVSeries · VideoGameSeries · partOfSeries · partOfTVSeries
 
+**Law — [[law]]: a series is identity carried across its members — each item keeps its own uuid yet inherits the series' position, so order is information that no member may contradict.**
+
 @standard schema.org — the type vocabulary, collided to single words

@@ -11,4 +11,6 @@ Entangled with — [[code]]
 
 Attested in schema.org — acrissCode
 
+**Law — [[law]]: an ACRISS code is a fixed four-letter classification (category·type·transmission/drive·fuel/AC) whose meaning is positional, so the four slots are never reordered or partially filled.**
+
 @standard schema.org — the type vocabulary, collided to single words

@@ -22,3 +22,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO-19011:2018 audit-trail e-signature-evidence
 
 Composes: [[identity]] · [[proof]] · [[standard]] · [[transaction]].
+
+**Law — [[law]]: parties sign in the required sequence and each signature record is immutable, so the contract activates only once it is fully executed.**

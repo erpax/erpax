@@ -11,4 +11,6 @@ Entangled with — [[house]]
 
 Attested in schema.org — HousePainter
 
+**Law — [[law]]: a painter is an occupational role, meaningful only in relation to the thing it paints.**
+
 @standard schema.org — the type vocabulary, collided to single words

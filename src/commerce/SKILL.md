@@ -35,3 +35,5 @@ The *which* — which slugs exist, which plugin supplies carts/orders/variants �
 - Integer amounts without `currency` — multi-currency trade needs ISO currency everywhere.
 
 Composes: [[items/inventory/movements]] · [[payment/methods]] · [[dunning]] · [[payment]].
+
+**Law — [[law]]: a party plays infinite roles but the document chain is monotonic and status is derived, never stored — value moves only through balanced steps, so the books cannot disagree with their own counters.**

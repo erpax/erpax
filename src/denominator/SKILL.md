@@ -11,4 +11,6 @@ Entangled with — [[measurement]]
 
 Attested in schema.org — measurementDenominator
 
+**Law — [[law]]: a denominator only has meaning paired with its numerator — it names the base a measurement is taken against, so a ratio is well-defined only when both halves share one consistent unit and the denominator is non-zero.**
+
 @standard schema.org — the type vocabulary, collided to single words

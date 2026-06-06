@@ -11,4 +11,6 @@ Entangled with — [[thing]]
 
 Attested in schema.org — Guide
 
+**Law — [[law]]: a guide must disclose what it recommends and why — every ranked choice carries its reasoning, so the recommendation is auditable and never an unaccountable verdict.**
+
 @standard schema.org — the type vocabulary, collided to single words

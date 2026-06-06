@@ -11,4 +11,6 @@ Entangled with — [[thing]]
 
 Attested in schema.org — Quotation
 
+**Law — [[law]]: a quotation is bound to its source — the words are inseparable from the author or work they are attributed to, so a quote stripped of its origin is a fabrication, not a quotation.**
+
 @standard schema.org — the type vocabulary, collided to single words

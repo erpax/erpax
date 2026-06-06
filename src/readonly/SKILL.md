@@ -11,4 +11,6 @@ Entangled with — [[value]]
 
 Attested in schema.org — readonlyValue
 
+**Law — [[law]]: a readonly field is write-once — its value, fixed at mint, may be read by all but rewritten by none, so the entropy it carries can only ever decrease.**
+
 @standard schema.org — the type vocabulary, collided to single words

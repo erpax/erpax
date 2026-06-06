@@ -11,4 +11,6 @@ Entangled with — [[center]]
 
 Attested in schema.org — RecyclingCenter
 
+**Law — [[law]]: recycling returns spent matter as the input of the next cycle, so every discarded thing it names must route to a center, never to a void.**
+
 @standard schema.org — the type vocabulary, collided to single words

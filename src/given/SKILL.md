@@ -11,4 +11,6 @@ Entangled with — [[name]]
 
 Attested in schema.org — givenName
 
+**Law — [[law]]: the personal-forename qualifier is one collided word, so givenName and its kin fold to the same identity rather than a per-compound duplicate.**
+
 @standard schema.org — the type vocabulary, collided to single words

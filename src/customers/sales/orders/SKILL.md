@@ -26,3 +26,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
 
 Composes: [[Contracts]] · [[Quotes]] · [[Returns]] · [[Shipments]].
+
+**Law — [[law]]: a sales order progresses only forward through its O2C lifecycle, and fulfilled and invoiced quantities can never exceed the confirmed order-line quantities.**

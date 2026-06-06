@@ -20,3 +20,5 @@ Sequence position **7** — a compute/measure surface (like the pure-form calcul
 - Making it a collection or letting it touch the DB — it is a pure function; persist only its *result*.
 - Treating mandatory gaps as advisory — a mandatory line with `gap > 0` blocks the match (`meetsAllMandatory === false`).
 - Inventing a second scale for agents — humans and agents share the one SFIA scale; that shared scale IS the merge.
+
+**Law — [[law]]: the gap is the pure stateless function `max(0, required − held)` per competency, met only at zero, with any mandatory gap > 0 blocking the whole match — it computes, it never persists.**

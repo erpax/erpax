@@ -11,4 +11,6 @@ Entangled with — [[news]] · [[article]]
 
 Attested in schema.org — BackgroundNewsArticle
 
+**Law — [[law]]: background is context for a foreground subject — it must attach to the article or event it contextualises, so background with no subject it serves is orphaned, not background.**
+
 @standard schema.org — the type vocabulary, collided to single words

@@ -11,3 +11,5 @@ Composes: [[Opportunities]] · [[pipeline]] · [[customers/sales/orders]] · [[r
 
 ## Standards
 - CRM-generic
+
+**Law — [[law]]: a forecast is a projection, never a commitment — each amount is the deal value weighted by its probability and stage, so the total is provisional until the close date resolves it to won or lost.**

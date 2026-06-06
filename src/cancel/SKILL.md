@@ -11,4 +11,6 @@ Entangled with — [[action]]
 
 Attested in schema.org — CancelAction
 
+**Law — [[law]]: a cancel never erases the act it negates — it posts a reversing counter-entry, so the original and its cancellation both persist and sum to nil.**
+
 @standard schema.org — the type vocabulary, collided to single words

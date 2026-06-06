@@ -12,4 +12,7 @@ The **uuid is computed from the MATH** (the position's `nodeOf(measure).uuid`), 
 **HONEST.** The traditional role of the sacral center — life-force, creativity, generative flow, desire, the well of vitality — is **cultural convention, not a claim**. This atom asserts nothing about a body or an energy field; only position → note → uuid is computed. Ground it honestly in [[law]]: a center earns its place by zero-entropy uuid-wiring, not by tradition. As a center it sits one step from the [[heart]] (index 3) on the same ring.
 
 Matter-twin: `src/sacral/index.ts` (`INDEX` · `center` · `color` · `uuid`). Composes [[chakra]] · [[horo]] · [[heart]] · [[law]].
+
+**Law — [[law]]: the sacral center is index 1 of the chakra ring, so its note, uuid and colour are read from the shared position math and rendered from that uuid — never recomputed and never asserted from tradition.**
+
 @audit note·colour·uuid computed from the position math, never hand-asserted

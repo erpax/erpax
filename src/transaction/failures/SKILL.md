@@ -25,3 +25,5 @@ Composes: [[accounting]] (control domain) · [[transaction]] (the failed exchang
 - SOC-2 CC7.3 system-incident-response
 - ISO-27001 A.5.24 incident-management-planning
 - ISO-27002 §5.27 information-security-event-correction
+
+**Law — [[law]]: a failed transaction is never silently dropped — it is retained in the queue with its retry count and last error until it succeeds or is dispositioned, leaving an auditable trail of every attempt.**

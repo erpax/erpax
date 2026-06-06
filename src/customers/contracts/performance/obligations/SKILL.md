@@ -25,3 +25,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - SOX §404 internal-controls revenue-recognition
 
 Composes: [[Contracts]] · [[hooks]] · [[accounting]] · [[auth]] · [[standard]].
+
+**Law — [[law]]: the amounts allocated across a contract's distinct obligations sum exactly to its transaction price, each by standalone selling price.**

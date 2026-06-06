@@ -11,4 +11,6 @@ Entangled with — [[fallback]]
 
 Attested in schema.org — isUnlabelledFallback
 
+**Law — [[law]]: the unlabelled state is the fallback of last resort — it holds only what no label has yet claimed, so it must shrink to empty as labelling completes, never become a permanent home.**
+
 @standard schema.org — the type vocabulary, collided to single words

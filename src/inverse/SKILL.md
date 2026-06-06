@@ -11,4 +11,6 @@ Entangled with — [[thing]]
 
 Attested in schema.org — inverseOf
 
+**Law — [[law]]: an inverse relates the same pair in reversed direction — if A→B holds under a property then B→A holds under its inverse, so the two directions must be declared together or the relation is asymmetric and incomplete.**
+
 @standard schema.org — the type vocabulary, collided to single words

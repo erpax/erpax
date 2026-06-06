@@ -11,4 +11,6 @@ Entangled with — [[media]]
 
 Attested in schema.org — duringMedia
 
+**Law — [[law]]: during pins an event to an interval strictly inside its host's span — its start and end must both fall within the containing timeline, never outside it.**
+
 @standard schema.org — the type vocabulary, collided to single words

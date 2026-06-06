@@ -32,3 +32,5 @@ Composes [[sustainability]] · [[decentralization]] · [[conservation]] · [[div
 - `ecosystemHealth(w: Web)` — the fusion function.
 
 `ecosystemHealth` COMPOSES the four imported atoms directly — it calls `conserves` (from `@/conservation`), `isSustainable` (from `@/sustainability`), `nakamoto` (from `@/decentralization`), and `shannon` (from `@/diversity`). No logic from those atoms is re-implemented here; every field of the returned health report is the direct output of the corresponding imported function.
+
+**Law — [[law]]: decentralization and sustainability are one fact — wire local exchanges to balance so every output is another's input, and both no-coordinator and no-waste emerge together; neither can be had without the other.**

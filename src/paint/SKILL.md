@@ -11,4 +11,6 @@ Entangled with — [[action]]
 
 Attested in schema.org — PaintAction
 
+**Law — [[law]]: a paint is an applying-of-coating act on a surface, so it must name the object it covers; an unattached PaintAction is void.**
+
 @standard schema.org — the type vocabulary, collided to single words

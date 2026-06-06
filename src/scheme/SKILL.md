@@ -11,4 +11,6 @@ Entangled with — [[funding]]
 
 Attested in schema.org — FundingScheme
 
+**Law — [[law]]: a scheme is the one structured-rules word governing how funding is granted and disbursed, fused from FundingScheme and entangled to [[funding]].**
+
 @standard schema.org — the type vocabulary, collided to single words

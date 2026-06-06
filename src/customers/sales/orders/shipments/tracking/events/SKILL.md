@@ -21,3 +21,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
 
 Composes: [[Carriers]] · [[Shipments]] · [[accounting]] · [[proof]].
+
+**Law — [[law]]: the event log is append-only, and the `delivered` event is the single point-in-time trigger that transfers control and recognises revenue exactly once.**

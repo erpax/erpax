@@ -11,4 +11,6 @@ Entangled with — [[construction]] · [[business]] · [[goods]] · [[store]] ·
 
 Attested in schema.org — HomeAndConstructionBusiness · HomeGoodsStore · homeLocation · homeTeam
 
+**Law — [[law]]: home is the one canonical anchor of a subject — its base location or host side — against which away/visiting is always defined as the complement.**
+
 @standard schema.org — the type vocabulary, collided to single words

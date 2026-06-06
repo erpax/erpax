@@ -32,3 +32,5 @@ Composes: [[zeropoint]] · [[bottleneck]] · [[routing]] · [[sequence]] · [[ak
 - **Eager activation.** Loading every atom / every expert defeats it. Conditional selection (the router) is the mechanism — without a [[routing]] gate there is no sparsity, only a large dense thing.
 - **Sparsifying the load-bearing factor.** Past the [[bottleneck]] floor, dropping the one active factor that the product depends on zeroes the result. Sparsify redundancy, never the critical path.
 - **Naming only one axis.** Compute-sparsity (fewer FLOPs) and representation-sparsity (fewer stored bits) are different axes; an org can be dense on one and sparse on the other. erpax is sparse on representation and deliberately cheap (regenerable) on compute.
+
+**Law — [[law]]: keep the dormant pool huge and the active set minimal — maximise capability ÷ cost by shrinking activation, never the pool, and never sparsify the load-bearing factor.**

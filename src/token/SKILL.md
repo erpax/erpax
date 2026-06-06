@@ -12,3 +12,5 @@ Composes: [[theme]] · [[component]] · [[standard]] · [[design]].
 ## Standards
 - design-token spec
 - W3C design-tokens format
+
+**Law — [[law]]: a token is one named semantic design decision defined in exactly one place and referenced everywhere — never a duplicated literal value.**

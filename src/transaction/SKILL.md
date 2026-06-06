@@ -19,3 +19,5 @@ Composes: [[give]]/[[take]] (sides) · [[balance]] (Σ=0) · [[flow]] (value mov
 - A collection per kind (`bank-transactions`, `fx-transactions`) — one `transactions`, kind as a [[dimension]] axis.
 - Storing only one side — a transaction is dual; the other side [[balance|balances]] / posts.
 - Conflating the commercial document with its ledger entry — they are [[duality|duals]] linked by *accountable*, not one row.
+
+**Law — [[law]]: every transaction is two-sided and sums to zero — its debit and credit faces must both be recorded so the exchange balances, and no single side may stand alone.**
