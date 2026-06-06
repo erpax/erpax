@@ -34,7 +34,7 @@
     "harmony": "cross-env NODE_OPTIONS=\"--no-deprecation --import=tsx/esm\" tsx src/harmony/scan.ts",
     "atoms:catalogue": "node src/atom/catalogue.mjs",
     "matrix:generate": "node src/uuid/matrix/collide.mjs --emit",
-    "corpus:generate": "pnpm atoms:catalogue && pnpm matrix:generate",
+    "corpus:generate": "pnpm atoms:catalogue && pnpm matrix:generate && pnpm readme",
     "mint:atoms": "node src/generate/mint.mjs",
     "d1:audit": "node src/database/d1-column-audit.mjs",
     "db:regenerate": "bash scripts/db-regenerate.sh",

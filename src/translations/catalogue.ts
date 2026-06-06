@@ -13838,7 +13838,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "calculator",
-        "uuid": "91444aa2-a0a1-8acc-b072-e90526ee89ae",
+        "uuid": "0ba0e38b-b08b-8ad7-bd32-897f051b5bdf",
         "words": [
           "calculator"
         ],
@@ -13849,7 +13849,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "calculator: a schema.org component word, fused from MedicalRiskCalculator",
-        "uuid": "38d4ab4c-6184-88c7-9857-5b228702d699",
+        "uuid": "ebcf1344-3682-88d5-be87-bfc1016bdbbd",
         "words": [
           "calculator",
           "a",
@@ -80046,6 +80046,62 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "calculator",
+    "path": "quantum/calculator",
+    "translations": [
+      {
+        "key": "name",
+        "source": "calculator",
+        "uuid": "0ba0e38b-b08b-8ad7-bd32-897f051b5bdf",
+        "words": [
+          "calculator"
+        ],
+        "values": {
+          "en": "calculator"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when computing in the digital-root substrate — a calculator that folds arithmetic to mod-9 (the rodin group), so every result is a single digit; deterministic and content-addressable.",
+        "uuid": "3ebd0c33-1b15-8b8f-ba48-433bfd43b3c6",
+        "words": [
+          "use",
+          "when",
+          "computing",
+          "in",
+          "the",
+          "digital",
+          "root",
+          "substrate",
+          "a",
+          "calculator",
+          "that",
+          "folds",
+          "arithmetic",
+          "to",
+          "mod",
+          "the",
+          "rodin",
+          "group",
+          "so",
+          "every",
+          "result",
+          "is",
+          "a",
+          "single",
+          "digit",
+          "deterministic",
+          "and",
+          "content",
+          "addressable"
+        ],
+        "values": {
+          "en": "Use when computing in the digital-root substrate — a calculator that folds arithmetic to mod-9 (the rodin group), so every result is a single digit; deterministic and content-addressable."
+        }
+      }
+    ]
+  },
+  {
     "atom": "chat",
     "path": "quantum/chat",
     "translations": [
@@ -112913,4 +112969,4 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
   }
 ]
 
-export const TRANSLATIONS_COUNT = 2368
+export const TRANSLATIONS_COUNT = 2369

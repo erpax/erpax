@@ -18,9 +18,9 @@ Computed from the live tree by `src/readme` — never asserted, never rounded.
 | --- | --- |
 | Collections registered (the `@/collections` barrel) | **210** |
 | Top-level `src/<word>` atom folders | **2169** |
-| Concept atoms (`SKILL.md` files) | **2368** |
-| Data atoms (`index.ts` files) | **655** |
-| Colocated proofs (`test.ts` files) | **339** |
+| Concept atoms (`SKILL.md` files) | **2369** |
+| Data atoms (`index.ts` files) | **656** |
+| Colocated proofs (`test.ts` files) | **340** |
 | Governing standards catalogued | **142** |
 | Payload plugins composed | **13** |
 | Admin UI locales | **30** |
@@ -73,7 +73,7 @@ All 49 npm scripts, grouped — computed from `package.json`.
 | `pnpm codemod` | `bash scripts/payload-codemod.sh` |
 | `pnpm confirm` | `node scripts/confirm.mjs` |
 | `pnpm confirm:full` | `node scripts/confirm.mjs --full` |
-| `pnpm corpus:generate` | `pnpm atoms:catalogue && pnpm matrix:generate` |
+| `pnpm corpus:generate` | `pnpm atoms:catalogue && pnpm matrix:generate && pnpm readme` |
 | `pnpm d1:audit` | `node src/database/d1-column-audit.mjs` |
 | `pnpm db:regenerate` | `bash scripts/db-regenerate.sh` |
 | `pnpm deploy` | `NODE_ENV=production PAYLOAD_SECRET=ignore payload migrate && wrangler d1 execute D1 --command 'PRAGMA optimize' --env=$CLOUDFLARE_ENV --remote && opennextjs-cloudflare build --env=$CLOUDFLARE_ENV && opennextjs-cloudflare deploy --env=$CLOUDFLARE_ENV` |
@@ -215,7 +215,7 @@ The `SKILL.md` corpus is served as a VitePress site — `pnpm docs:dev`. Referen
 ## Project facts
 
 - **Name:** erpax · **Version:** 1.0.0 · **License:** MIT
-- **Scope:** 210 Payload collections · 2368 `SKILL.md` atoms · 142 standards · 13 plugins · 30 locales
+- **Scope:** 210 Payload collections · 2369 `SKILL.md` atoms · 142 standards · 13 plugins · 30 locales
 - **Upstream:** ported from `ceccec/erpax` + `ceccec/etrima` (Rails / ActiveAdmin)
 
 ## License

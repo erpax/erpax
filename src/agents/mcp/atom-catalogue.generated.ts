@@ -1861,8 +1861,8 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "calculator",
     "name": "calculator",
-    "description": "calculator: a schema.org component word, fused from MedicalRiskCalculator",
-    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/calculator"
+    "description": "Use when computing in the digital-root substrate — a calculator that folds arithmetic to mod-9 (the rodin group), so every result is a single digit; deterministic and content-addressable.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/quantum/calculator"
   },
   {
     "atom": "calendar",

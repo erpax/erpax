@@ -6,7 +6,7 @@
  *
  *   tsx src/agent/skill/index.ts
  *
- * @see ../../agent -- ../../skills -- ../../team -- ./SKILL.md
+ * @see ../../agent -- ../../skill -- ../../team -- ./SKILL.md
  */
 export interface AgentSkills {
   readonly agent: string
