@@ -11675,6 +11675,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "spreadsheet"
   },
   {
+    "atom": "sql",
+    "name": "sql",
+    "description": "Use when modelling a SQL query as pure data — a SELECT AST with a deterministic canonical stringifier, so equivalent queries normalize identically and the quantum facet hashes them to one content-uuid.",
+    "path": "sql"
+  },
+  {
     "atom": "src",
     "name": "src",
     "description": "Use when orienting to erpax as a whole — the root an agent reads first. erpax is a fractal, content-addressed skill corpus where every folder under src/ is a one-word atom told three ways (form · code · schema), ordered by the sequence, wired through one content-uuid so the whole carries zero entropy and infinite tamper-cost. Read to learn what erpax IS, how the atoms compose, the one law, the math, the society, and how to navigate and grow the library.",

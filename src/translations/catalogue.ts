@@ -13317,7 +13317,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when optimizing repeated access — cache invalidation strategies, cache-aside vs write-through, TTL/expiry, cache coherency, memoization, query result caching, distributed cache semantics (Cloudflare KV, Redis).",
-        "uuid": "a05ee84e-fd07-82d9-a908-2166b49f980a",
+        "uuid": "7a6f9df0-e103-8966-a379-2cb2356976d2",
         "words": [
           "use",
           "when",
@@ -14294,7 +14294,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when analyzing relationship structure — one-to-one / one-to-many / many-to-many / many-to-one relationships, cardinality constraints, optional vs mandatory participation, relationship counts (query cardinality estimates), foreign-key cardinality.",
-        "uuid": "60fefc90-f3e1-820e-b2aa-19a32d1841bd",
+        "uuid": "753eae1a-dcd6-800b-8ab6-0b5b9fbc9d57",
         "words": [
           "use",
           "when",
@@ -45424,7 +45424,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when hardening a Payload app against abuse/DoS or preparing for production security review — setting query-depth/complexity limits, login lockout, GraphQL exposure, CORS/CSRF, or securing upload collections.",
-        "uuid": "d1f513f9-a1ea-88cc-8745-3149d3599446",
+        "uuid": "70c2c7b6-3592-8b62-9c3c-37e134d87701",
         "words": [
           "use",
           "when",
@@ -55826,7 +55826,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when capturing and qualifying prospects before they become customers — inbound/outbound sourcing, BANT/MEDDIC lead scoring, MQL/SQL progression, and conversion to an opportunity or customer on close-won. The CRM pre-customer lead collection.",
-        "uuid": "70410726-931f-80a9-bb1c-dbfc76e0f5c0",
+        "uuid": "4aae7704-3782-8f26-83a6-6c3d0f296580",
         "words": [
           "use",
           "when",
@@ -59454,7 +59454,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when an LLM completion must become a verifiable address — the exhale of the breath, where a turn is content-addressed into a v8 query-uuid (deterministic, tamper-evident, attestable from the preimage); the LLM forges and the uuid it cannot invert verifies.",
-        "uuid": "4c45188b-dc3a-8863-988c-36b7992cab6e",
+        "uuid": "8eb50c44-3bad-8960-8e2d-ffde3a9d0040",
         "words": [
           "use",
           "when",
@@ -80397,6 +80397,64 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "query",
+    "path": "quantum/query",
+    "translations": [
+      {
+        "key": "name",
+        "source": "query",
+        "uuid": "fdd0b8c5-e10e-8300-b42b-7f093ecc4999",
+        "words": [
+          "query"
+        ],
+        "values": {
+          "en": "query"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when caching or deduping queries by identity — a normalized query string hashes to a content-uuid, so the same query shares one identity and a change invalidates by content-address.",
+        "uuid": "5758c14a-36c7-8b9a-9690-15c95e9d795a",
+        "words": [
+          "use",
+          "when",
+          "caching",
+          "or",
+          "deduping",
+          "queries",
+          "by",
+          "identity",
+          "a",
+          "normalized",
+          "query",
+          "string",
+          "hashes",
+          "to",
+          "a",
+          "content",
+          "uuid",
+          "so",
+          "the",
+          "same",
+          "query",
+          "shares",
+          "one",
+          "identity",
+          "and",
+          "a",
+          "change",
+          "invalidates",
+          "by",
+          "content",
+          "address"
+        ],
+        "values": {
+          "en": "Use when caching or deduping queries by identity — a normalized query string hashes to a content-uuid, so the same query shares one identity and a change invalidates by content-address."
+        }
+      }
+    ]
+  },
+  {
     "atom": "schema",
     "path": "quantum/schema",
     "translations": [
@@ -80456,6 +80514,65 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "Use when reasoning about schema identity and drift on the matrix — a schema as the content-uuid of its canonical form, so identical schemas merge and any change yields a new uuid forcing re-verification by architecture."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "sql",
+    "path": "quantum/sql",
+    "translations": [
+      {
+        "key": "name",
+        "source": "sql",
+        "uuid": "596717c8-fbaa-862e-9f04-00fc502bb7dd",
+        "words": [
+          "sql"
+        ],
+        "values": {
+          "en": "sql"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when caching or deduping SQL queries by identity — the canonical normalized query hashes to a content-uuid, so equivalent queries share one identity and a changed query invalidates by content-address.",
+        "uuid": "1781c020-47c3-854b-bc58-e27199edcd9a",
+        "words": [
+          "use",
+          "when",
+          "caching",
+          "or",
+          "deduping",
+          "sql",
+          "queries",
+          "by",
+          "identity",
+          "the",
+          "canonical",
+          "normalized",
+          "query",
+          "hashes",
+          "to",
+          "a",
+          "content",
+          "uuid",
+          "so",
+          "equivalent",
+          "queries",
+          "share",
+          "one",
+          "identity",
+          "and",
+          "a",
+          "changed",
+          "query",
+          "invalidates",
+          "by",
+          "content",
+          "address"
+        ],
+        "values": {
+          "en": "Use when caching or deduping SQL queries by identity — the canonical normalized query hashes to a content-uuid, so equivalent queries share one identity and a changed query invalidates by content-address."
         }
       }
     ]
@@ -80689,7 +80806,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when building or debugging Payload queries — where filters/operators, sort, pagination, depth, select, populating relationships, joins, or query presets across Local/REST/GraphQL.",
-        "uuid": "3cd14ce3-448b-8874-8784-dcaf558f15d7",
+        "uuid": "6fc561f8-8d6b-89e3-8b29-070768e515ca",
         "words": [
           "use",
           "when",
@@ -80729,7 +80846,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "query",
-        "uuid": "66cb83b4-03ea-8906-aade-11e58e0eac9d",
+        "uuid": "fdd0b8c5-e10e-8300-b42b-7f093ecc4999",
         "words": [
           "query"
         ],
@@ -80740,7 +80857,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "A sub property of instrument. The query used on this action.",
-        "uuid": "bbefab9d-7e1b-8b95-9e06-97ae5de5594c",
+        "uuid": "120b71f3-354d-891f-a1ba-e65f33d83a91",
         "words": [
           "a",
           "sub",
@@ -90026,7 +90143,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when an entity needs quick free-text find across a few key columns — code/name/barcode/number lookup. The SearchConcern/quick_search (ransack) pattern → a Payload where/like query or a search index.",
-        "uuid": "bf1f445c-7650-8c9c-92b4-3ba6d943743e",
+        "uuid": "aca036ea-7d5f-8a5b-847b-d9453dd7cc2a",
         "words": [
           "use",
           "when",
@@ -90087,7 +90204,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when querying the corpus — the search engine that resolves a query to matching atoms, ranked by closeness; a pure read over the live matrix node set.",
-        "uuid": "29964b1b-3fcf-87f9-adeb-e1686d88fd22",
+        "uuid": "6c490b1d-c678-8a2e-a227-7ed6d1c89b23",
         "words": [
           "use",
           "when",
@@ -96141,6 +96258,65 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "spreadsheet: a schema.org component word, fused from SpreadsheetDigitalDocument"
+        }
+      }
+    ]
+  },
+  {
+    "atom": "sql",
+    "path": "sql",
+    "translations": [
+      {
+        "key": "name",
+        "source": "sql",
+        "uuid": "596717c8-fbaa-862e-9f04-00fc502bb7dd",
+        "words": [
+          "sql"
+        ],
+        "values": {
+          "en": "sql"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling a SQL query as pure data — a SELECT AST with a deterministic canonical stringifier, so equivalent queries normalize identically and the quantum facet hashes them to one content-uuid.",
+        "uuid": "eeae6a5c-66bf-85fd-8ed8-f75fe9575b33",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "a",
+          "sql",
+          "query",
+          "as",
+          "pure",
+          "data",
+          "a",
+          "select",
+          "ast",
+          "with",
+          "a",
+          "deterministic",
+          "canonical",
+          "stringifier",
+          "so",
+          "equivalent",
+          "queries",
+          "normalize",
+          "identically",
+          "and",
+          "the",
+          "quantum",
+          "facet",
+          "hashes",
+          "them",
+          "to",
+          "one",
+          "content",
+          "uuid"
+        ],
+        "values": {
+          "en": "Use when modelling a SQL query as pure data — a SELECT AST with a deterministic canonical stringifier, so equivalent queries normalize identically and the quantum facet hashes them to one content-uuid."
         }
       }
     ]
@@ -112310,4 +112486,4 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
   }
 ]
 
-export const TRANSLATIONS_COUNT = 2358
+export const TRANSLATIONS_COUNT = 2361
