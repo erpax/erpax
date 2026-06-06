@@ -5696,6 +5696,7 @@ src/metatron/index.ts:20: * @audit counts computed on the live matrix, never han
 src/middleware/accounting/tenant-scope.ts:19: * @audit ISO-19011:2018 audit-trail
 src/migrate/quaternary/index.ts:20: * @audit the folder law is computed from the live tree, never hand-maintained
 src/mineral/resource/assets/index.ts:18: * @audit ISO 19011:2018 §6.4.6 audit-evidence-EE-assets
+src/mirror/index.ts:14: * @audit forward/backward are the two word-orders; the value is the digital root of a commutative sum
 src/modal/CreateJournalEntryModal.tsx:13: * @audit ISO-19011:2018 audit-trail journal-entry-creation
 src/multi/currency.service/index.ts:19: * @audit ISO-19011:2018 audit-trail
 src/multi/search/index.ts:40: * @audit Conservation Law 53 self-referential-closure (this is the internal half)
