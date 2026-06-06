@@ -9667,8 +9667,8 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "pwa",
     "name": "pwa",
-    "description": "Use when the offline web surface must stay trustworthy — service-worker cache keys, background-sync queue durability, manifest integrity, push dedup; every Progressive Web App pain point collapsed to a content-uuid problem.",
-    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/pwa"
+    "description": "Use when reasoning about erpax as a PWA of quantum apps — a device whose every folder is an installable quantum app, cached offline by content-address (the uuid is the cache key); installable because every folder is a quantum app.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/quantum/pwa"
   },
   {
     "atom": "qa",

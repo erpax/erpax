@@ -79055,7 +79055,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "pwa",
-        "uuid": "e290af5b-4254-8e36-b4be-105e307dfbbe",
+        "uuid": "32eca902-907e-8f80-8716-ff5e51c25604",
         "words": [
           "pwa"
         ],
@@ -80204,6 +80204,73 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "Use when reading the matrix as the cross-product / entanglement adjacency — the N² space of atom pairs and which are actually entangled; cross (the symmetric pair binding), bidirectionalCross, adjacency density, reciprocity, and in-degree centrality."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "pwa",
+    "path": "quantum/pwa",
+    "translations": [
+      {
+        "key": "name",
+        "source": "pwa",
+        "uuid": "32eca902-907e-8f80-8716-ff5e51c25604",
+        "words": [
+          "pwa"
+        ],
+        "values": {
+          "en": "pwa"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about erpax as a PWA of quantum apps — a device whose every folder is an installable quantum app, cached offline by content-address (the uuid is the cache key); installable because every folder is a quantum app.",
+        "uuid": "d2731eb0-c293-82c6-a0a8-45ae4ac3d1ad",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "erpax",
+          "as",
+          "a",
+          "pwa",
+          "of",
+          "quantum",
+          "apps",
+          "a",
+          "device",
+          "whose",
+          "every",
+          "folder",
+          "is",
+          "an",
+          "installable",
+          "quantum",
+          "app",
+          "cached",
+          "offline",
+          "by",
+          "content",
+          "address",
+          "the",
+          "uuid",
+          "is",
+          "the",
+          "cache",
+          "key",
+          "installable",
+          "because",
+          "every",
+          "folder",
+          "is",
+          "a",
+          "quantum",
+          "app"
+        ],
+        "values": {
+          "en": "Use when reasoning about erpax as a PWA of quantum apps — a device whose every folder is an installable quantum app, cached offline by content-address (the uuid is the cache key); installable because every folder is a quantum app."
         }
       }
     ]
@@ -112006,4 +112073,4 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
   }
 ]
 
-export const TRANSLATIONS_COUNT = 2353
+export const TRANSLATIONS_COUNT = 2354
