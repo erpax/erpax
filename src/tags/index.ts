@@ -8,7 +8,7 @@
  * (`categories` → `context:'category'`, etc.). "Less collections, more
  * features." See the `tags` skill.
  *
- * Identity: the row's `uuid` (injected by `contentUuidPlugin`) is the
+ * Identity: the row's `uuid` (injected by `uuidPlugin`) is the
  * content-uuid of its content — derived from `name` (+ tenant) — so the
  * same tag name is the same id on every instance. That single fact
  * REPLACES the gem's `find_or_create_all_with_like_by_name` +

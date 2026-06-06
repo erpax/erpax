@@ -14,7 +14,7 @@ redirectsPlugin({
   overrides: { fields: ({ defaultFields }) => defaultFields },
 })
 ```
-Place it among the content-surface plugins, **before** `taggablePlugin()`/`contentUuidPlugin()` so the injected `redirects` collection is covered by them too (contentUuid runs LAST — see [[identity]]). It does NOT need multi-tenant scoping by default (site-wide redirects).
+Place it among the content-surface plugins, **before** `taggablePlugin()`/`uuidPlugin()` so the injected `redirects` collection is covered by them too (contentUuid runs LAST — see [[identity]]). It does NOT need multi-tenant scoping by default (site-wide redirects).
 
 ## The resolver (SSR, position 7 — [[api]])
 `PayloadRedirects` (a React Server Component) reads the collection cached, matches `from === url`, then calls `next/navigation` `redirect()` / `notFound()`:

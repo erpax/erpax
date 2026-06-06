@@ -29,7 +29,7 @@ import {
 const isNamed = (f: Field): f is Field & { name: string } =>
   'name' in f && typeof (f as { name?: unknown }).name === 'string'
 
-export const contentUuidPlugin =
+export const uuidPlugin =
   (): Plugin =>
   (config: Config): Config => ({
     ...config,

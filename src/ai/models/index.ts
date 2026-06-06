@@ -3,7 +3,7 @@
  *
  * The model registry belongs IN Payload, not in a code constant: each model
  * erpax may fall back to is a row here — admin-editable, tenant-scopable,
- * content-uuid'd (contentUuidPlugin), taggable (taggablePlugin), versioned,
+ * content-uuid'd (uuidPlugin), taggable (taggablePlugin), versioned,
  * and audited like everything else. Inferences are already hosted in
  * `ai-suggestions` (every prompt/model/output/decision — total recall); this
  * is the experts catalog the router dispatches over.

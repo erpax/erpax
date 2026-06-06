@@ -21,7 +21,7 @@
  * globally unique — the logical path guarantees it. An existing `dbName`
  * is always respected.
  *
- * Mirrors `contentUuidPlugin` / `taggablePlugin`: one walker, all
+ * Mirrors `uuidPlugin` / `taggablePlugin`: one walker, all
  * collections, no per-field hand-naming. See the `database` + `identity`
  * skills.
  *

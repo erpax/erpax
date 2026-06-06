@@ -13,7 +13,7 @@ import { formBuilderPlugin } from '@payloadcms/plugin-form-builder'
 import { searchPlugin } from '@payloadcms/plugin-search'
 import { redirectsPlugin } from '@payloadcms/plugin-redirects'
 import { r2Storage } from '@payloadcms/storage-r2'
-import { contentUuidPlugin } from '@/plugins/contentUuid'
+import { uuidPlugin } from '@/uuid'
 import { taggablePlugin } from '@/plugins/taggable'
 import { uuidNamesPlugin } from '@/plugins/naming'
 import { collapseApiKeyScopes } from '@/plugins/mcpScopes'
@@ -424,17 +424,17 @@ export default buildConfig({
         }),
     }),
     // Make every collection taggable — one polymorphic `taggings` join +
-    // a reverse `tags` join injected everywhere. Before contentUuidPlugin
+    // a reverse `tags` join injected everywhere. Before uuidPlugin
     // so the injected `taggable` field is hashed into the tagging's uuid.
     // See the `tags` skill.
     taggablePlugin(),
     // Universal content-addressed identity: inject a content-uuid into
     // every collection. Runs LAST so it covers collections added by the
     // plugins above. See the `identity` + `bindings` skills.
-    contentUuidPlugin(),
+    uuidPlugin(),
     // All is versioned: enable NATIVE Payload versioning (history-only, bounded)
     // on every collection — the native `_versions` chain is the persistent store,
-    // and restoreVersion works everywhere. Runs after contentUuid so each version
+    // and restoreVersion works everywhere. Runs after uuid so each version
     // row carries the content-uuid (the version leaf), before naming so the `_v`
     // tables get derived names. See the `versions` skill + src/versions/cross.
     versionsPlugin(),

@@ -2,7 +2,7 @@
  * Versions plugin — universal NATIVE Payload versioning ("all is versioned").
  *
  * The native way to version everything: enable Payload's built-in `versions`
- * on EVERY collection — the same chokepoint pattern as `contentUuidPlugin`
+ * on EVERY collection — the same chokepoint pattern as `uuidPlugin`
  * (one injector, all collections, no per-collection opt-in/drift). Payload's
  * `_versions` tables ARE the persistent version chain (the store the custom
  * approach would have reinvented), and `restoreVersion` (the `erpax.versions.restore`
@@ -17,7 +17,7 @@
  * version row's content-uuid is the VERSION leaf, its forge cost the TAMPER-COST,
  * and the version series the ANALYTICS stream. Native storage, erpax reading.
  *
- * Decisions (mirroring contentUuidPlugin):
+ * Decisions (mirroring uuidPlugin):
  *   - Plugin, not per-collection opt-in: one place, no duplication/drift.
  *   - Collections already declaring `versions` (e.g. Pages/Posts with drafts)
  *     are left untouched — the richer config wins.

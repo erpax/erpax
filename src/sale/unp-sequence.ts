@@ -4,7 +4,7 @@
  * On CREATE of a sale, assigns the УНП (`XXXXXXXX-ZZZZ-NNNNNNN`) by taking the
  * next sequence for the sale's fiscal device (ФУ) within the tenant: max(prior
  * `unpSequence`) + 1, starting at 1. The number is the human/regulatory handle;
- * the content-`uuid` (injected by the contentUuidPlugin) is the machine/tamper
+ * the content-`uuid` (injected by the uuidPlugin) is the machine/tamper
  * identity. Idempotent — never reassigns an existing УНП; refuses to mutate it
  * on update (the УНП is frozen at creation, Наредба Н-18).
  *

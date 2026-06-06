@@ -25,7 +25,7 @@ Port of Rails `acts_as_taggable_on`: variation lives in **tags + contexts**, not
 ## Tag lists link multiverses (the decoupled relation)
 A shared, content-uuid'd tag is the **loosely-coupled alternative to `relationTo:'specific-slug'`** (which couples plugins — see [[plugins]]). A `project-X` tag on a Customer + Invoice + WorkOrder + Document links them into one cross-domain view with NO inward dependency. Because the tag's id is content-derived, the link holds **across federated instances** (same tag = same id). `find_related` / shared-tag queries surface the links; this is how tags connect the multiverses at the data layer (cf. [[hooks]] connecting them at the lifecycle layer).
 
-## taggablePlugin (mirror of contentUuidPlugin — see [[plugins]])
+## taggablePlugin (mirror of uuidPlugin — see [[plugins]])
 Adds `taggable` (`text` content-uuid) + `taggableType` (`text` slug) to the `taggings` collection — ONE pair of columns that references ANY record by its content-uuid ([[identity]]), the polymorphic-by-uuid form. Taggable collections gain **ZERO columns** (a record is tagged by writing a tagging that points at its uuid; nothing is stored on the record). Reverse lookup ("tags on this record") is the `taggedWith` query, not a stored `join` field — a Payload `join` needs a real relationship `on` target, which the content-uuid column deliberately isn't. One injector, all collections — same pattern as the uuid injector. **Do not** restore the polymorphic `relationTo:[…all]`: it puts one FK column per collection in `taggings_rels` (200+ → over D1's 100-col cap; see the GOTCHA + `pnpm d1:audit`).
 
 ## tagged_with → Payload `where` (see [[queries]])
