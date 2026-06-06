@@ -10490,7 +10490,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when wiring, debugging, or cost-tuning erpax's Cloudflare bindings — D1, R2, KV, Durable Objects, Queues, Workers AI, Vectorize, Analytics Engine, Browser, service self-reference, Hyperdrive, cron — or when a binding \"works in config but fails at runtime\" (e.g. \"no such Durable Object class is exported from the worker\"). The map of binding ↔ capability ↔ cost lever ↔ gap for the self-managed edge app.",
-        "uuid": "fa78125a-fae7-8b5b-8c73-bcd56ae5af53",
+        "uuid": "1b2680b3-c89f-8b5d-8cf4-33160345ee46",
         "words": [
           "use",
           "when",
@@ -20048,7 +20048,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when building or debugging the erpax React UI — server-component-first Next.js App Router views, Lexical/Payload block renderers, admin panels, dashboards, widgets, and shared primitives — the society's FACE, the rendered surface where matter meets the eye.",
-        "uuid": "fe57ea73-40ae-8488-841d-752ccfa92c3a",
+        "uuid": "eac41244-739b-8708-9c10-873a7ed10dd7",
         "words": [
           "use",
           "when",
@@ -28826,7 +28826,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when deploying a Payload app to production or fixing build/migration/env issues — required secrets, running migrations vs dev push, building without a DB connection, file storage, or Cloudflare/Next/Docker specifics.",
-        "uuid": "0dbc1545-2e62-813a-ae30-9d71b3c15897",
+        "uuid": "f10fae71-cd51-838e-9577-d585c00fd3bd",
         "words": [
           "use",
           "when",
@@ -45424,7 +45424,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when hardening a Payload app against abuse/DoS or preparing for production security review — setting query-depth/complexity limits, login lockout, GraphQL exposure, CORS/CSRF, or securing upload collections.",
-        "uuid": "c922ad69-09a0-8067-855b-165f13f415cd",
+        "uuid": "d1f513f9-a1ea-88cc-8745-3149d3599446",
         "words": [
           "use",
           "when",
@@ -56845,7 +56845,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when configuring or auditing deadline-reminder notifications — scheduled email, in-app, SMS, or calendar-event alerts to compliance officers and staff days before a compliance deadline is due per ISO-37301. The compliance-notification dispatch collection.",
-        "uuid": "1877ee29-8933-8266-b211-e07b0e7a72c3",
+        "uuid": "73672f6a-8745-866d-989a-41cdaab0c18c",
         "words": [
           "use",
           "when",
@@ -67181,7 +67181,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the society speaks outward — fanning one message across email, in-app, webhook, and Slack from a single consent-gated, audited entry-point; binding domain events to delivery by a declarative subscription map.",
-        "uuid": "171f4716-482f-8a05-b9a9-3c4a55ddbbfa",
+        "uuid": "a382c63e-5531-8ebc-ac50-f8fdcba69d12",
         "words": [
           "use",
           "when",
@@ -73019,7 +73019,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Permission(s) required to run the app (for example, a mobile app may require full internet access or may run only on wifi).",
-        "uuid": "db286010-9b9a-887f-a0ae-9b3121d249f4",
+        "uuid": "5771b4c3-f7a1-86b2-8232-771b8fd50682",
         "words": [
           "permission",
           "s",
@@ -79066,7 +79066,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the offline web surface must stay trustworthy — service-worker cache keys, background-sync queue durability, manifest integrity, push dedup; every Progressive Web App pain point collapsed to a content-uuid problem.",
-        "uuid": "9b042bf7-f3b2-8ca1-b9c0-3dbbc6ced084",
+        "uuid": "67cb1dbc-f64e-8bf7-9b6a-bd09c5644d3f",
         "words": [
           "use",
           "when",
@@ -79565,6 +79565,69 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "Use when reasoning about accounting on the quantum level — double-entry that balances entropy (karma), inheriting down the uuid parent chain where the parent_id is the DNA; the universal ledger's quantum facet."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "app",
+    "path": "quantum/app",
+    "translations": [
+      {
+        "key": "name",
+        "source": "app",
+        "uuid": "fc40108e-d29e-84f4-91a1-ca33082d833f",
+        "words": [
+          "app"
+        ],
+        "values": {
+          "en": "app"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about erpax as a device of apps — every atom IS a quantum app (a content-uuid identity, entangled links, collapsible by merge); the proof is that every matrix node carries a content-uuid.",
+        "uuid": "b8ffe7b8-805d-8531-98c0-6bc820846e0f",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "erpax",
+          "as",
+          "a",
+          "device",
+          "of",
+          "apps",
+          "every",
+          "atom",
+          "is",
+          "a",
+          "quantum",
+          "app",
+          "a",
+          "content",
+          "uuid",
+          "identity",
+          "entangled",
+          "links",
+          "collapsible",
+          "by",
+          "merge",
+          "the",
+          "proof",
+          "is",
+          "that",
+          "every",
+          "matrix",
+          "node",
+          "carries",
+          "a",
+          "content",
+          "uuid"
+        ],
+        "values": {
+          "en": "Use when reasoning about erpax as a device of apps — every atom IS a quantum app (a content-uuid identity, entangled links, collapsible by merge); the proof is that every matrix node carries a content-uuid."
         }
       }
     ]
@@ -80320,6 +80383,66 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "Use when reasoning about type identity on the matrix — a type as the content-uuid of its structural shape, so type-equality is uuid-equality (structural typing by content-addressing) and identical types merge."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "vocabulary",
+    "path": "quantum/vocabulary",
+    "translations": [
+      {
+        "key": "name",
+        "source": "vocabulary",
+        "uuid": "18d6dfd9-7417-84fa-9a08-8a6f7291d86c",
+        "words": [
+          "vocabulary"
+        ],
+        "values": {
+          "en": "vocabulary"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about the vocabulary as the meaning singularity — every atom's words ground in the shared vocabulary, so it has infinite gravity and pulls all atoms into one shared meaning-space.",
+        "uuid": "5b158572-0068-8d22-8f6c-edf3b38f389b",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "the",
+          "vocabulary",
+          "as",
+          "the",
+          "meaning",
+          "singularity",
+          "every",
+          "atom",
+          "s",
+          "words",
+          "ground",
+          "in",
+          "the",
+          "shared",
+          "vocabulary",
+          "so",
+          "it",
+          "has",
+          "infinite",
+          "gravity",
+          "and",
+          "pulls",
+          "all",
+          "atoms",
+          "into",
+          "one",
+          "shared",
+          "meaning",
+          "space"
+        ],
+        "values": {
+          "en": "Use when reasoning about the vocabulary as the meaning singularity — every atom's words ground in the shared vocabulary, so it has infinite gravity and pulls all atoms into one shared meaning-space."
         }
       }
     ]
@@ -84544,7 +84667,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when bringing outside knowledge into erpax — research ADDS entropy (unverified claims, many divergent sources, disorder); erpax skills CONVERT that entropy into tamper-cost (independent cross-checked levels) and collapse the residue to the zero-entropy core. Inhale entropy, exhale a denser, harder app.",
-        "uuid": "a2d6598f-c045-8d98-b10e-2f800c6680ab",
+        "uuid": "9afbd6cc-6260-89a7-af22-a2143ca49e0f",
         "words": [
           "use",
           "when",
@@ -87776,7 +87899,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use to run, start, launch, boot, dev-serve, smoke-test, or screenshot the erpax app (Payload 4 + Next.js on Cloudflare D1/R2). Drives the running app two ways — a Local API smoke (tsx) for backend/service/collection/hook changes, and a Playwright browser driver for the public frontend + admin. Use when asked to \"run erpax\", \"start the dev server\", \"screenshot the site\", or confirm a change works in the real app.",
-        "uuid": "fff8c03a-dd22-80f9-9903-096925853b39",
+        "uuid": "27d08e55-21b2-8bf8-a89d-2faec9e53e38",
         "words": [
           "use",
           "to",
@@ -89511,7 +89634,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "A link to a screenshot image of the app.",
-        "uuid": "83ed22f7-234a-8052-b640-32f472f1d5b1",
+        "uuid": "5baa3458-73aa-8ab0-b7a7-0e5688f22439",
         "words": [
           "a",
           "link",
@@ -94392,7 +94515,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modelling the living medium a crop grows in — soil as the three-phase (mineral·water·air) body whose texture/structure/tilth, organic matter, biology, moisture and chemistry set what fertility, water, and yield are possible. The parent the fertility/water/cover-crop vocabulary hangs from; a capacity reservoir managed, depleted, and rebuilt.",
-        "uuid": "270c1423-9f1a-88fc-a80a-3082af56f9f9",
+        "uuid": "b767dbba-f57c-8727-b854-57033383b0a9",
         "words": [
           "use",
           "when",
@@ -99339,7 +99462,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when defining or querying reusable labels applied across any collection — tag vocabulary, use-count counter cache, content-uuid dedup (same name = same id everywhere). The universal label-vocabulary collection; pair with taggings for the full polymorphic tagging engine.",
-        "uuid": "cf48b0c0-2f1e-8c21-8d2a-0c5076f47b67",
+        "uuid": "c90dda9f-a1a0-855f-bb65-815873951b54",
         "words": [
           "use",
           "when",
@@ -101959,7 +102082,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when writing or debugging erpax's own tests — discovering the live config to assert against, seeding isolated fixtures by level (unit/integration/e2e), transactional cleanup, parallel runners, or snapshot/restore — the society's self-test infrastructure that validates the running app against its own generated schema.",
-        "uuid": "405cd35a-3c58-8b21-986b-210f00279fa1",
+        "uuid": "995b9331-3293-8f46-9a0d-9e0ddec851e4",
         "words": [
           "use",
           "when",
@@ -102102,7 +102225,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when applying a consistent visual language across an app — color palette, typography, spacing, motion, dark/light mode. The style-system binding that makes components harmonious.",
-        "uuid": "b628163f-4fb7-8fcd-b035-0a4de6fce624",
+        "uuid": "74455e29-be21-822b-9cfe-939105478ce0",
         "words": [
           "use",
           "when",
@@ -103892,7 +104015,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when auto-training an actor (user, employee, or agent) toward best efficiency in the app — closing the competency gap (required − held) by routing each deficit to the skillRoute that fills it, the gap priced as a decompression debt that off-gasses toward the role's M-value. Efficiency IS the pay-fraction (etrima efficiency_percent); training literally raises pay.",
-        "uuid": "745920ed-db0a-86e9-b5cc-bed9190b9a87",
+        "uuid": "dd0fdc1d-a86a-82d7-a9a0-a37597a80f0d",
         "words": [
           "use",
           "when",
@@ -108754,7 +108877,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "vocabulary",
-        "uuid": "8d633ecb-91f1-839c-a4a7-e39e79486ae1",
+        "uuid": "18d6dfd9-7417-84fa-9a08-8a6f7291d86c",
         "words": [
           "vocabulary"
         ],
@@ -108765,7 +108888,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when checking that every word in the corpus comes from the shared standards-grounded vocabulary — the dictionary, schema.org, standard codes, and established domain terms. Whatever the language, words are written only from this one scheme; an ungrounded word is entropy, and the audit computes its zero-entropy solution.",
-        "uuid": "dd86efe6-261d-8680-b77f-22337d8af06f",
+        "uuid": "2431e2e6-b718-8b0a-97de-782e6b09ae4b",
         "words": [
           "use",
           "when",
@@ -110705,7 +110828,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modeling the reusable work-phase (operation) catalog — the routing vocabulary (sewing/cutting/buttonholes/steaming/embroidery/dyeing/finishing) a lot is produced through, a self-referential tree with standard time.",
-        "uuid": "7943f601-fc1f-83d1-8324-b230221d19d1",
+        "uuid": "9220ef75-a316-8f31-b6bf-34fa1b673d56",
         "words": [
           "use",
           "when",
@@ -111883,4 +112006,4 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
   }
 ]
 
-export const TRANSLATIONS_COUNT = 2351
+export const TRANSLATIONS_COUNT = 2353

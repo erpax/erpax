@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when the society speaks outward — fanning one message across email, in-app, webhook, and Slack from a single consent-gated, audited entry-point; binding domain events to delivery by a declarative subscription map.",
-    "uuid": "171f4716-482f-8a05-b9a9-3c4a55ddbbfa",
+    "uuid": "a382c63e-5531-8ebc-ac50-f8fdcba69d12",
     "words": [
       "use",
       "when",

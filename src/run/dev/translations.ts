@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use to run, start, launch, boot, dev-serve, smoke-test, or screenshot the erpax app (Payload 4 + Next.js on Cloudflare D1/R2). Drives the running app two ways — a Local API smoke (tsx) for backend/service/collection/hook changes, and a Playwright browser driver for the public frontend + admin. Use when asked to \"run erpax\", \"start the dev server\", \"screenshot the site\", or confirm a change works in the real app.",
-    "uuid": "fff8c03a-dd22-80f9-9903-096925853b39",
+    "uuid": "27d08e55-21b2-8bf8-a89d-2faec9e53e38",
     "words": [
       "use",
       "to",

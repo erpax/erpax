@@ -815,6 +815,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/apiculture"
   },
   {
+    "atom": "app",
+    "name": "app",
+    "description": "Use when reasoning about erpax as a device of apps — every atom IS a quantum app (a content-uuid identity, entangled links, collapsible by merge); the proof is that every matrix node carries a content-uuid.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/quantum/app"
+  },
+  {
     "atom": "appearance",
     "name": "appearance",
     "description": "Indicates an occurrence of a Claim in some CreativeWork.",

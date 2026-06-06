@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when bringing outside knowledge into erpax — research ADDS entropy (unverified claims, many divergent sources, disorder); erpax skills CONVERT that entropy into tamper-cost (independent cross-checked levels) and collapse the residue to the zero-entropy core. Inhale entropy, exhale a denser, harder app.",
-    "uuid": "a2d6598f-c045-8d98-b10e-2f800c6680ab",
+    "uuid": "9afbd6cc-6260-89a7-af22-a2143ca49e0f",
     "words": [
       "use",
       "when",
