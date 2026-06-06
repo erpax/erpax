@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when persisting MCP tool results or agent state across restarts — fix proposals, strategy decisions, drift-cycle snapshots, agent observations, emerging gaps — keyed by (ownerType, ownerId, kind, key), content-uuid'd for federation (Law 8), with relatedTo graph edges (Law 10). The generic agent-memory persistence layer.",
-    "uuid": "45b817e9-4879-809f-9b88-0dc8c774c3f1",
+    "uuid": "a7ef649b-3d3a-84a5-bef7-b226f91efcf1",
     "words": [
       "use",
       "when",

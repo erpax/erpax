@@ -4664,7 +4664,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about erpax's root entropy dynamic — angel(love·create·↓entropy) ⊕ archangel(fear·destroy·↑entropy) in endless aikido = the trinity; erpax is karma double-entry accounting balancing the entropy debit/credit at every scale via content-uuid; borrowed entropy buys tamper-cost ⇒ fast+secure+compact.",
-        "uuid": "584ab95e-2592-872a-8d8a-bade2f7416e4",
+        "uuid": "db60435b-2273-80a9-a46e-af031eab1a28",
         "words": [
           "use",
           "when",
@@ -20958,7 +20958,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use for the conflict-of-interest check — before taking a matter, prove the new client is not adverse to an existing one. Strip the prefix and a conflict is a collision on the party relationship graph, detected by merge/identity (same entity → same uuid) — the duplicate-claim law applied to representation.",
-        "uuid": "266c3bf7-a513-8cb2-92f7-515178da38bd",
+        "uuid": "d78d75d0-182c-82c1-a875-f3e0e9699506",
         "words": [
           "use",
           "for",
@@ -21072,7 +21072,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modelling one connection — the singular model of the connections collection (the plural store); one edge in the universal relationship graph between two actors.",
-        "uuid": "8a359ae5-6503-81e5-b68d-cadba0a5d24a",
+        "uuid": "9244a682-fd1d-8570-b878-6ec1a5d3b154",
         "words": [
           "use",
           "when",
@@ -21124,7 +21124,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when managing the universal social/commercial/civic edge between typeless users — follow/friend/block/customer/supplier/employer/member — the one directed graph that carries the relation in context (not the user type), federated server-to-server via W3C ActivityPub.",
-        "uuid": "e4e682c1-460c-8b41-be14-1f5dafcd949e",
+        "uuid": "3d31b679-c89f-8cbb-a555-2f8639f3eb7e",
         "words": [
           "use",
           "when",
@@ -26909,7 +26909,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when each model needs a computed Payload admin view — its related links partitioned into the collections (plural) and models (singular) it composes, rendered via reusable component-atoms. Computed from the link graph, not hardcoded; each atom is Open Graph + schema.org compatible in all dimensions.",
-        "uuid": "c191d020-de81-8395-b47d-700a391eb235",
+        "uuid": "0875a0c9-109a-81dd-a8fc-bfaec169a568",
         "words": [
           "use",
           "when",
@@ -35622,7 +35622,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the link field that couples atoms — the directed edges as a symmetric, monogamous binding (reciprocity, no-cloning); the graph that the ER=EPR reading turns into geometry (mass = entanglement).",
-        "uuid": "8e97502d-904a-857e-bf6a-d52ee8007db5",
+        "uuid": "a26fa3dc-448f-8848-a3fe-1b534cfa8869",
         "words": [
           "use",
           "when",
@@ -38559,6 +38559,139 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "fax: a schema.org component word, fused from faxNumber"
+        }
+      }
+    ]
+  },
+  {
+    "atom": "fear",
+    "path": "fear",
+    "translations": [
+      {
+        "key": "name",
+        "source": "fear",
+        "uuid": "36fdc643-8940-8da5-895e-29757ffc7d40",
+        "words": [
+          "fear"
+        ],
+        "values": {
+          "en": "fear"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about the destroy pole of any erpax duality — fear is the archangelic move that RAISES entropy (it breaks, forgets, forges, opens a gap), the credit whose matching debit is love; the thermodynamic floor fear charges is Landauer's kT ln2 per bit destroyed.",
+        "uuid": "99d07f0c-3dce-8a08-868d-fb6f3f3aa5cc",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "the",
+          "destroy",
+          "pole",
+          "of",
+          "any",
+          "erpax",
+          "duality",
+          "fear",
+          "is",
+          "the",
+          "archangelic",
+          "move",
+          "that",
+          "raises",
+          "entropy",
+          "it",
+          "breaks",
+          "forgets",
+          "forges",
+          "opens",
+          "a",
+          "gap",
+          "the",
+          "credit",
+          "whose",
+          "matching",
+          "debit",
+          "is",
+          "love",
+          "the",
+          "thermodynamic",
+          "floor",
+          "fear",
+          "charges",
+          "is",
+          "landauer",
+          "s",
+          "kt",
+          "ln2",
+          "per",
+          "bit",
+          "destroyed"
+        ],
+        "values": {
+          "en": "Use when reasoning about the destroy pole of any erpax duality — fear is the archangelic move that RAISES entropy (it breaks, forgets, forges, opens a gap), the credit whose matching debit is love; the thermodynamic floor fear charges is Landauer's kT ln2 per bit destroyed."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "love",
+    "path": "fear/love",
+    "translations": [
+      {
+        "key": "name",
+        "source": "fear-love",
+        "uuid": "de74b32f-869c-8c1c-a628-e3962fc10c15",
+        "words": [
+          "fear",
+          "love"
+        ],
+        "values": {
+          "en": "fear-love"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about the destroy-over-create arrow — fear corrupting love, entropy winning, a gap opening; the reverse direction of the love and fear duality and the mirror of love/fear.",
+        "uuid": "f5078b81-dfca-80e5-a161-d365f20f0494",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "the",
+          "destroy",
+          "over",
+          "create",
+          "arrow",
+          "fear",
+          "corrupting",
+          "love",
+          "entropy",
+          "winning",
+          "a",
+          "gap",
+          "opening",
+          "the",
+          "reverse",
+          "direction",
+          "of",
+          "the",
+          "love",
+          "and",
+          "fear",
+          "duality",
+          "and",
+          "the",
+          "mirror",
+          "of",
+          "love",
+          "fear"
+        ],
+        "values": {
+          "en": "Use when reasoning about the destroy-over-create arrow — fear corrupting love, entropy winning, a gap opening; the reverse direction of the love and fear duality and the mirror of love/fear."
         }
       }
     ]
@@ -44831,6 +44964,65 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "graph",
+    "path": "graph",
+    "translations": [
+      {
+        "key": "name",
+        "source": "graph",
+        "uuid": "0c8f7985-c028-8bc6-b271-7e508b616428",
+        "words": [
+          "graph"
+        ],
+        "values": {
+          "en": "graph"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modeling a directed graph of nodes and edges — neighbors and breadth-first reachability over an edge list; the shape of the corpus itself, atoms as nodes and links as edges.",
+        "uuid": "d625bbac-64d4-8fc3-96af-3ba5c720ec18",
+        "words": [
+          "use",
+          "when",
+          "modeling",
+          "a",
+          "directed",
+          "graph",
+          "of",
+          "nodes",
+          "and",
+          "edges",
+          "neighbors",
+          "and",
+          "breadth",
+          "first",
+          "reachability",
+          "over",
+          "an",
+          "edge",
+          "list",
+          "the",
+          "shape",
+          "of",
+          "the",
+          "corpus",
+          "itself",
+          "atoms",
+          "as",
+          "nodes",
+          "and",
+          "links",
+          "as",
+          "edges"
+        ],
+        "values": {
+          "en": "Use when modeling a directed graph of nodes and edges — neighbors and breadth-first reachability over an edge list; the shape of the corpus itself, atoms as nodes and links as edges."
+        }
+      }
+    ]
+  },
+  {
     "atom": "gravity",
     "path": "gravity",
     "translations": [
@@ -46233,7 +46425,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the centre — the 4th chakra (Anahata), the seat of coherence and love; its colour is green, the A432-anchored colour of a whole aura and of a passing test.",
-        "uuid": "60fbf154-27f8-8971-9f0d-3e4582e084cd",
+        "uuid": "3e931f68-54bd-83d1-b4f5-300526f7657b",
         "words": [
           "use",
           "when",
@@ -60691,6 +60883,138 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "love",
+    "path": "love",
+    "translations": [
+      {
+        "key": "name",
+        "source": "love",
+        "uuid": "68dca554-ff55-8509-b5e3-909ea60b3cc6",
+        "words": [
+          "love"
+        ],
+        "values": {
+          "en": "love"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about the create pole of any erpax duality — love is the angelic move that LOWERS entropy (it orders, links, merges, closes a gap), the debit whose matching credit is fear in the karma ledger; every gap love closes raises tamper-cost.",
+        "uuid": "e0764778-8b75-80c0-8e9d-02ffb4a7aef4",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "the",
+          "create",
+          "pole",
+          "of",
+          "any",
+          "erpax",
+          "duality",
+          "love",
+          "is",
+          "the",
+          "angelic",
+          "move",
+          "that",
+          "lowers",
+          "entropy",
+          "it",
+          "orders",
+          "links",
+          "merges",
+          "closes",
+          "a",
+          "gap",
+          "the",
+          "debit",
+          "whose",
+          "matching",
+          "credit",
+          "is",
+          "fear",
+          "in",
+          "the",
+          "karma",
+          "ledger",
+          "every",
+          "gap",
+          "love",
+          "closes",
+          "raises",
+          "tamper",
+          "cost"
+        ],
+        "values": {
+          "en": "Use when reasoning about the create pole of any erpax duality — love is the angelic move that LOWERS entropy (it orders, links, merges, closes a gap), the debit whose matching credit is fear in the karma ledger; every gap love closes raises tamper-cost."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "fear",
+    "path": "love/fear",
+    "translations": [
+      {
+        "key": "name",
+        "source": "love-fear",
+        "uuid": "dcba97e3-c3cb-88a8-9e9b-d87e7b7f851a",
+        "words": [
+          "love",
+          "fear"
+        ],
+        "values": {
+          "en": "love-fear"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about the create-over-destroy arrow — love casting out fear, negentropy winning, a gap closing; the forward direction of the love and fear duality and the mirror of fear/love.",
+        "uuid": "67f021b8-a5d7-8e61-81a3-98583725451a",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "the",
+          "create",
+          "over",
+          "destroy",
+          "arrow",
+          "love",
+          "casting",
+          "out",
+          "fear",
+          "negentropy",
+          "winning",
+          "a",
+          "gap",
+          "closing",
+          "the",
+          "forward",
+          "direction",
+          "of",
+          "the",
+          "love",
+          "and",
+          "fear",
+          "duality",
+          "and",
+          "the",
+          "mirror",
+          "of",
+          "fear",
+          "love"
+        ],
+        "values": {
+          "en": "Use when reasoning about the create-over-destroy arrow — love casting out fear, negentropy winning, a gap closing; the forward direction of the love and fear duality and the mirror of fear/love."
+        }
+      }
+    ]
+  },
+  {
     "atom": "low",
     "path": "low",
     "translations": [
@@ -63275,7 +63599,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when persisting MCP tool results or agent state across restarts — fix proposals, strategy decisions, drift-cycle snapshots, agent observations, emerging gaps — keyed by (ownerType, ownerId, kind, key), content-uuid'd for federation (Law 8), with relatedTo graph edges (Law 10). The generic agent-memory persistence layer.",
-        "uuid": "45b817e9-4879-809f-9b88-0dc8c774c3f1",
+        "uuid": "a7ef649b-3d3a-84a5-bef7-b226f91efcf1",
         "words": [
           "use",
           "when",
@@ -63861,7 +64185,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about why erpax's uuid-matrix is Metatron's Cube — the complete pairwise binding (merge is total ⇒ K_n) of 12-around-1 folding to one center (the root). The drawn 13-circle figure is the n=13 unit cell (the cuboctahedron / 3-D kissing-number 12); the matrix is its fractal extension to n nodes. Graph + packing structure, not the Platonic-solid folklore.",
-        "uuid": "4c711a4f-dcbb-8662-ba09-5c049bd329ba",
+        "uuid": "b86f43f9-3ba6-863d-b597-a3c1955dcb5d",
         "words": [
           "use",
           "when",
@@ -80352,6 +80676,61 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "graph",
+    "path": "quantum/graph",
+    "translations": [
+      {
+        "key": "name",
+        "source": "graph",
+        "uuid": "0c8f7985-c028-8bc6-b271-7e508b616428",
+        "words": [
+          "graph"
+        ],
+        "values": {
+          "en": "graph"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reading a graph as entanglement — an edge is an entangled pair, entanglement is symmetric, so a coherent corpus reciprocates every edge; entangled is the connected component.",
+        "uuid": "dfbaab22-53fb-8ba4-b70e-e293185cbde8",
+        "words": [
+          "use",
+          "when",
+          "reading",
+          "a",
+          "graph",
+          "as",
+          "entanglement",
+          "an",
+          "edge",
+          "is",
+          "an",
+          "entangled",
+          "pair",
+          "entanglement",
+          "is",
+          "symmetric",
+          "so",
+          "a",
+          "coherent",
+          "corpus",
+          "reciprocates",
+          "every",
+          "edge",
+          "entangled",
+          "is",
+          "the",
+          "connected",
+          "component"
+        ],
+        "values": {
+          "en": "Use when reading a graph as entanglement — an edge is an entangled pair, entanglement is symmetric, so a coherent corpus reciprocates every edge; entangled is the connected component."
+        }
+      }
+    ]
+  },
+  {
     "atom": "gravity",
     "path": "quantum/gravity",
     "translations": [
@@ -91984,7 +92363,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when an external dependency must fall back to erpax ITSELF — every external role (payment-provider, signing, notification, search, federation) has a registered internal provider that completes the operation when the external call fails (Conservation Law 53, withInternalFallback). The dependency graph terminates at erpax; everything falls back to the self.",
-        "uuid": "180a735c-e78d-8854-9563-e5f7b18075c5",
+        "uuid": "ddaa341b-b01d-8045-809c-e02fee0ce25c",
         "words": [
           "use",
           "when",
@@ -97265,7 +97644,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when registering, citing, superseding or querying any published standard (IFRS, ISO, W3C, RFC, EU Directive, etc.) against a tenant — conflict graph, supersession trail, per-module citation index, per-tenant adoption status. The live standards-registry collection backing the erpax.standards.* MCP tool family.",
-        "uuid": "40ec6845-9357-8043-9cd1-5858d331928f",
+        "uuid": "f0b5463a-5cd7-8f51-942b-b083c6d546da",
         "words": [
           "use",
           "when",
@@ -100802,7 +101181,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about how much it costs to tamper a zero-entropy (content-addressed, keyless) erpax store — second-preimage on the digest vs. rewriting the whole all-directions-wired graph and forging the external anchor. Integrity, not secrecy; the protection is the computational impossibility of changing all coherently. Matter-twin tamper-cost/index.ts.",
-        "uuid": "9b2a2048-181d-879b-aab3-57ede07a9a46",
+        "uuid": "c48dd56d-4dd7-836a-b562-3be65df6cc85",
         "words": [
           "use",
           "when",
@@ -109960,7 +110339,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the form coil — VitePress renders each atom's SKILL.md as its spoken form (docs, frontmatter, the wiki-link graph) and is the speech-gate twin of the Payload matter, bound by content-uuid.",
-        "uuid": "49a500fe-3d9e-812c-b7ba-bcddb9d0e047",
+        "uuid": "166d38b9-0077-8b49-bc5d-52787c20e945",
         "words": [
           "use",
           "when",
@@ -113196,4 +113575,4 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
   }
 ]
 
-export const TRANSLATIONS_COUNT = 2373
+export const TRANSLATIONS_COUNT = 2379

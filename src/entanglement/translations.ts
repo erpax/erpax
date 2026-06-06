@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the link field that couples atoms — the directed edges as a symmetric, monogamous binding (reciprocity, no-cloning); the graph that the ER=EPR reading turns into geometry (mass = entanglement).",
-    "uuid": "8e97502d-904a-857e-bf6a-d52ee8007db5",
+    "uuid": "a26fa3dc-448f-8848-a3fe-1b534cfa8869",
     "words": [
       "use",
       "when",
