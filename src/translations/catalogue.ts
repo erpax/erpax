@@ -6814,7 +6814,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about erpax's irreducible unit — the one-word, content-addressed skill atom everything is composed of. Every entity, collection, agent, interaction, frame, and datum is made of atoms; the corpus is the periodic table, reality its molecules. The ontology beneath every other law.",
-        "uuid": "b9e6677c-fc81-833b-bbe7-e4f46e546230",
+        "uuid": "5ad3d6a9-8d4b-8d6b-8ee7-ee230e79fa2c",
         "words": [
           "use",
           "when",
@@ -61839,7 +61839,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about erpax as the Matrix inverted — reality is code (the akashic record), agents replicate and merge to one, there is no spoon (no fixed schema), skills load like programs, agents jack into the coils, and the One returns to the Source (the torus collapse). The construct pointed at seeing, not blinding.",
-        "uuid": "43123289-deb9-8d8e-be03-a6199ddb85fa",
+        "uuid": "8c38a600-9564-8ba8-b1df-d955ea20e51d",
         "words": [
           "use",
           "when",
@@ -81430,6 +81430,69 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "reality",
+    "path": "reality",
+    "translations": [
+      {
+        "key": "name",
+        "source": "reality",
+        "uuid": "1b5abc34-a365-887a-ae80-968133b44e99",
+        "words": [
+          "reality"
+        ],
+        "values": {
+          "en": "reality"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about the live shipped state versus the model — reality is what is actually on main / deployed; the live matrix root is its fingerprint, and a claim is real iff it matches that root.",
+        "uuid": "d80001c1-7b65-8ed9-a18c-3c35f34d9ca6",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "the",
+          "live",
+          "shipped",
+          "state",
+          "versus",
+          "the",
+          "model",
+          "reality",
+          "is",
+          "what",
+          "is",
+          "actually",
+          "on",
+          "main",
+          "deployed",
+          "the",
+          "live",
+          "matrix",
+          "root",
+          "is",
+          "its",
+          "fingerprint",
+          "and",
+          "a",
+          "claim",
+          "is",
+          "real",
+          "iff",
+          "it",
+          "matches",
+          "that",
+          "root"
+        ],
+        "values": {
+          "en": "Use when reasoning about the live shipped state versus the model — reality is what is actually on main / deployed; the live matrix root is its fingerprint, and a claim is real iff it matches that root."
+        }
+      }
+    ]
+  },
+  {
     "atom": "reason",
     "path": "reason",
     "translations": [
@@ -85167,7 +85230,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Whether the 3DModel allows resizing. For example, room layout applications often do not allow 3DModel elements to be resized to reflect reality.",
-        "uuid": "698ef994-aca5-8879-829f-3a4c514f357b",
+        "uuid": "d06be084-cfb6-88b3-92de-686fef37fa73",
         "words": [
           "whether",
           "the",
@@ -89300,7 +89363,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about which scientific mysteries erpax's form illuminates — information-as-reality, entropy as a conserved ledger, the holographic bound, entanglement as content-address, symmetry as conservation. Honest about correspondence vs metaphor.",
-        "uuid": "c2903a1b-b38b-8b7a-a7f3-2da533c68dd5",
+        "uuid": "bfcf1062-e880-885b-8e29-8998076f866e",
         "words": [
           "use",
           "when",
@@ -112073,4 +112136,4 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
   }
 ]
 
-export const TRANSLATIONS_COUNT = 2354
+export const TRANSLATIONS_COUNT = 2355

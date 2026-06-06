@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Whether the 3DModel allows resizing. For example, room layout applications often do not allow 3DModel elements to be resized to reflect reality.",
-    "uuid": "698ef994-aca5-8879-829f-3a4c514f357b",
+    "uuid": "d06be084-cfb6-88b3-92de-686fef37fa73",
     "words": [
       "whether",
       "the",
