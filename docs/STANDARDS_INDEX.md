@@ -5438,6 +5438,7 @@ src/dna/index.ts:15: * @audit computed from the live matrix parent-chain; never 
 src/domain/verification/index.ts:15: * @audit the record value is the content-uuid (@/verification); computed, never hand-asserted
 src/drone/index.ts:14: * @audit ISO 19011:2018 §6.4 reconnaissance is read-only evidence-gathering
 src/dry/index.ts:11: * @audit the dry-clean is computed from the tree, never a hand-run script
+src/dual/torus/fusion/index.ts:10: * @audit fuse is the merge of two content-addressed poles; the fusion cost is the double-torus ∞ law
 src/duality/index.ts:15: * @audit dual pairs are read from the SKILL.md markers and trusted only when intentional — never asserted
 src/dust/index.ts:21: * @audit composed from @/quantum (the live-matrix proof); the dust IS the proof, scattered
 src/ecommerce/hooks/emitOrderLifecycleEvents.ts:26: * @audit ISO-19011:2018 audit-trail order-lifecycle
@@ -5704,6 +5705,7 @@ src/navel/index.ts:11: * @audit note·colour·uuid computed from the position ma
 src/nist/incits/359/payload.ts:7: * @audit ISO-19011:2018 audit-trail role-assignment
 src/notification/index.ts:21: * @audit ISO-19011:2018 audit-trail notification-evidence
 src/notification/subscriber.ts:16: * @audit ISO-19011:2018 §6.4.6 audit-evidence-notification
+src/observe/index.ts:16: * @audit observe/project are content-address folds; grounded is computed, hallucination is the negative
 src/operators/index.ts:14: * @audit ISO-19011:2018 audit-trail
 src/pack/items/index.ts:31: * @audit ISO-19011:2018 audit-trail dispatch line
 src/packs/index.ts:35: * @audit ISO-19011:2018 audit-trail dispatch
