@@ -2839,6 +2839,7 @@ src/warehouse/locations/index.ts:10: * @standard ISO-3166-2:2020 subdivision-cod
 src/warehouse/locations/index.ts:11: * @standard ISO-6346:2022 freight-container-coding-and-marking
 src/warehouse/locations/index.ts:12: * @standard EN-16931:2017 §BG-15 deliver-to-information
 src/warehouse/locations/index.ts:9: * @standard ISO-3166-1:2020 country-codes location-country
+src/wave/index.ts:27: * @standard RFC 9562 §5.8 content-uuid + the horo digital-root ring
 src/wco/hs/index.ts:10: * @standard EU CN Code (Combined Nomenclature) Regulation (EEC) 2658/87
 src/wco/hs/index.ts:11: * @standard US HTS (Harmonized Tariff Schedule)
 src/wco/hs/index.ts:9: * @standard WCO Harmonised System Convention (effective 1988, latest revision 2022)
@@ -5367,6 +5368,7 @@ src/coherence/index.ts:19: * @audit computed from the input trace, never hand-as
 src/collections/index.test.ts:11: * @audit ISO-19011:2018 §6.4 audit-evidence (every registered collection node verified)
 src/collections/index.test.ts:68: * @audit computed from the live collections barrel + each node's slug, never hand-listed
 src/collections/test.ts:11: * @audit ISO-19011:2018 §6.4 audit-evidence (every registered collection node verified)
+src/collide/index.ts:17: * @audit collide is DEFINED here and DEFERRED — never applied to the live matrix in this atom
 src/collider/index.ts:12: * @audit each check is a live computation in @/convention; the verdict is coverageCostLog2 of the product, never assumed
 src/commitments/and/contingencies/index.ts:22: * @audit ISO-19011:2018 audit-trail off-balance-sheet
 src/commitments/index.ts:31: * @audit ISO-19011:2018 audit-trail authorization-evidence
@@ -5468,6 +5470,7 @@ src/ecommerce/stripe/tenantStripeWebhook.ts:13: * @audit ISO-19011:2018 audit-tr
 src/ecosystem/index.ts:17: * @audit computed, never hand-asserted
 src/edifact/export.service/index.test.ts:10: * @audit ISO-19011:2018 audit-trail
 src/edifact/export.service/index.ts:18: * @audit ISO-19011:2018 audit-trail
+src/emergence/index.ts:20: * @audit thirds are COMPUTED from the poles (horo composeSteps + uuid merge), never asserted
 src/emission/index.ts:19: * @audit computed, never hand-asserted
 src/emit/domain/event/index.ts:16: * @audit ISO-19011:2018 audit-trail event-log
 src/employees/expense/reports/index.ts:15: * @audit ISO-19011:2018 audit-trail expense-evidence
@@ -5496,6 +5499,7 @@ src/etsi/en/319/142/signature-dictionary.ts:23: * @audit ISO-19011:2018 audit-tr
 src/event/emitter.service/index.ts:10: * @audit ISO-19011:2018 audit-trail
 src/evidence/attestation/index.ts:25: * @audit ISO-19011:2018 audit-trail visual-evidence sox-evidence-pack
 src/evidence/attestations/index.ts:17: * @audit ISO-19011:2018 audit-trail attestation-evidence
+src/expand/index.ts:23: * @audit composed from @/entropy + @/uuid/matrix (the live-matrix readings); re-proves nothing
 src/expense/index.ts:14: * @audit entropy read live from @/entropy + @/tamper/import; billed as a balanced double-entry, never asserted
 src/export/standards-import.ts:26: * @audit ISO-19011:2018 audit-trail
 src/export/standards.service.ts:27: * @audit ISO-19011:2018 audit-trail
@@ -5520,6 +5524,7 @@ src/fixed/assets/depreciation/schedules/hooks/depreciation.ts:24: * @audit ISO-1
 src/fixed/assets/depreciation/schedules/index.ts:13: * @audit ISO-19011:2018 audit-trail depreciation-evidence
 src/fixed/assets/index.ts:29: * @audit ISO-19011:2018 audit-trail
 src/fold/index.ts:14: * @audit depth/merges are the binary-fold math; the corpus counts are read live from the matrix
+src/forge/index.ts:16: * @audit every field is read/derived from the live matrix indexes — never hand-asserted
 src/fusion/index.ts:17: * @audit computed from the live matrix, never hand-asserted
 src/fusion/reactor/index.ts:13: * @audit computed from the live matrix, never hand-asserted
 src/fx/transactions/index.ts:19: * @audit ISO-19011:2018 audit-trail fx-revaluation-evidence
@@ -5805,6 +5810,7 @@ src/relocate/index.ts:13: * @audit computed over the live uuid-matrix mass ([[gr
 src/remote/media/import/index.ts:12: * @audit ISO-19011:2018 audit-trail
 src/render/index.ts:15: * @audit colour/sound/vibration all computed from the uuid's digit (pixel · signal · rodin), never painted on
 src/research/development/index.ts:10: * @audit the cross binding is computed (entangle over the pair); never hand-asserted
+src/reveal/index.ts:17: * @audit emergent triads are computed from the live matrix edges, never asserted
 src/rodin/coil/index.ts:22: * @audit every residue computed on (ℤ/9ℤ) via @/horo, never hand-asserted
 src/rodin/index.ts:25: * @audit every quantity computed from the residues / live matrix, never asserted
 src/roles/hooks/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
@@ -5988,6 +5994,7 @@ src/warehouse/locations/consignment/arrangements/consignment/inventories/index.t
 src/warehouse/locations/consignment/arrangements/consignment/sales/index.ts:25: * @audit ISO-19011:2018 audit-trail consignment-sale-evidence
 src/warehouse/locations/consignment/arrangements/index.ts:25: * @audit ISO-19011:2018 audit-trail consignment-arrangement-evidence
 src/warehouse/locations/index.ts:15: * @audit ISO-19011:2018 audit-trail location-master-changes
+src/wave/index.ts:26: * @audit the entropy a wave borrows is read from the live matrix, never hand-asserted
 src/website/seo-vortex.ts:34: * @audit ISO 19011:2018 §6.4.6 (every published SEO artefact audit-trailed)
 src/widget/AccountReconciliationsPanel.tsx:9: * @audit ISO-19011:2018 audit-trail period-end-evidence
 src/widget/AuditLogWidget.tsx:8: * @audit ISO-19011:2018 audit-trail viewer
