@@ -9225,7 +9225,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when processing, auditing, or posting a periodic payroll batch — aggregates approved TimeEntries, computes gross-to-net deductions and employer-side accruals, posts IAS-19/ASC-710 journal entries, emits a pain.001 disbursement file; SOX §404 four-eyes (preparer ≠ authoriser), GDPR-classified personal data. The payroll-run collection.",
-        "uuid": "92494a2e-bb00-864b-8b3f-aca07c13c64b",
+        "uuid": "8dec9f53-7917-88c2-9c7f-7f42377f7769",
         "words": [
           "use",
           "when",
@@ -29231,7 +29231,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Device required to run the application. Used in cases where a specific make/model is required to run the application.",
-        "uuid": "ae389586-7bb8-813f-9fdb-26a7431f5f73",
+        "uuid": "3800f5e8-cc98-898c-890e-2bd8314cdb15",
         "words": [
           "device",
           "required",
@@ -34090,7 +34090,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when logging daily employee work time — regular hours, overtime, night shifts, PTO, sick and parental leave — with kind-based GL allocation, billable-rate project costing, approval workflow, and payroll-run linkage for IAS-19 variable pay. The daily time-entry collection.",
-        "uuid": "1bcefffb-d6f5-84d8-939c-44ccc0faff8d",
+        "uuid": "2c592181-fe8b-8706-bbae-3874cf5d58b2",
         "words": [
           "use",
           "when",
@@ -46387,7 +46387,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when adding or debugging Payload lifecycle hooks — mutating data before/after read or change, encryption, side effects, third-party integration, auto-populating fields, or \"my hook didn't run / ran at the wrong time\".",
-        "uuid": "db3ff6e9-5fd8-80f7-ac22-f68ab4fccc05",
+        "uuid": "38ef7ad4-1d63-856d-b3d0-9eaa800ca92a",
         "words": [
           "use",
           "when",
@@ -53049,7 +53049,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when sequencing the process steps for a work order — operation type, work center, setup time, run-time per unit, UoM, and IAS-2 cost-of-conversion from cycle time. The ordered routing-step collection — the second universal manufacturing primitive alongside the BOM.",
-        "uuid": "c392e808-799c-8a01-af51-23f836e01dab",
+        "uuid": "98656352-3473-8ba0-9645-8f37de30a7e2",
         "words": [
           "use",
           "when",
@@ -60673,7 +60673,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about why a market is small or how to grow it — a market is the PRODUCT (not the sum) of its atoms, so the near-zero atom caps the whole and growth means finding the zero atom and lifting it. Trendsetters are the operator that flips the social-status sign and seeds awareness; convenience lowers friction but decays status (coupled, opposite sign), so you harvest status at high friction then lower friction for the majority — the breath, run on demand.",
-        "uuid": "9bf3e847-88c0-8f09-8e76-5a4200973fd5",
+        "uuid": "018406e1-6770-8eac-85b7-15df2c546111",
         "words": [
           "use",
           "when",
@@ -63199,7 +63199,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when collapsing structural violations into the canonical four-file atom — the computable migrating skills that run with zero manual work.",
-        "uuid": "08c4c1f0-6e5a-88f5-90bc-5bef2b74eedb",
+        "uuid": "834a3962-6fe0-8143-a55c-177aa735fbf1",
         "words": [
           "use",
           "when",
@@ -72329,7 +72329,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Permission(s) required to run the app (for example, a mobile app may require full internet access or may run only on wifi).",
-        "uuid": "e1db99f8-4a09-8f87-94fa-a760f0a70ebd",
+        "uuid": "db286010-9b9a-887f-a0ae-9b3121d249f4",
         "words": [
           "permission",
           "s",
@@ -79474,7 +79474,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a value is a ratio of two dimensions pinned at a point in time — exchange rate, VAT/tax rate, interest rate, unit price (currency per quantity), wage (currency per hour), throughput/capacity (quantity per hour), run-time-per-unit. The RateConcern; a rate is value-per-unit, pinned at a point; blanks route to the no-op identity (cascade-resolved), never a magic literal.",
-        "uuid": "72466a63-63c1-8de2-a598-494d785725fc",
+        "uuid": "55fd27c0-b8f8-8183-b6f0-33b937d44a73",
         "words": [
           "use",
           "when",
@@ -86051,6 +86051,72 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "run",
+    "path": "run",
+    "translations": [
+      {
+        "key": "name",
+        "source": "run",
+        "uuid": "492175a8-b4fd-8f27-91e0-9093619df5c0",
+        "words": [
+          "run"
+        ],
+        "values": {
+          "en": "run"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modeling one execution of a batch process — a payment run, payroll run, or scheduled job run — the singular of the runs collection; one bounded pass that gathers a set, authorises it, executes, and reconciles on a lifecycle.",
+        "uuid": "db324524-3a7a-8f1f-b3c7-7fe5c2beaeb5",
+        "words": [
+          "use",
+          "when",
+          "modeling",
+          "one",
+          "execution",
+          "of",
+          "a",
+          "batch",
+          "process",
+          "a",
+          "payment",
+          "run",
+          "payroll",
+          "run",
+          "or",
+          "scheduled",
+          "job",
+          "run",
+          "the",
+          "singular",
+          "of",
+          "the",
+          "runs",
+          "collection",
+          "one",
+          "bounded",
+          "pass",
+          "that",
+          "gathers",
+          "a",
+          "set",
+          "authorises",
+          "it",
+          "executes",
+          "and",
+          "reconciles",
+          "on",
+          "a",
+          "lifecycle"
+        ],
+        "values": {
+          "en": "Use when modeling one execution of a batch process — a payment run, payroll run, or scheduled job run — the singular of the runs collection; one bounded pass that gathers a set, authorises it, executes, and reconciles on a lifecycle."
+        }
+      }
+    ]
+  },
+  {
     "atom": "dev",
     "path": "run/dev",
     "translations": [
@@ -86068,7 +86134,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use to run, start, launch, boot, dev-serve, smoke-test, or screenshot the erpax app (Payload 4 + Next.js on Cloudflare D1/R2). Drives the running app two ways — a Local API smoke (tsx) for backend/service/collection/hook changes, and a Playwright browser driver for the public frontend + admin. Use when asked to \"run erpax\", \"start the dev server\", \"screenshot the site\", or confirm a change works in the real app.",
-        "uuid": "8c673125-4c6e-890f-90fb-b4058a718d47",
+        "uuid": "fff8c03a-dd22-80f9-9903-096925853b39",
         "words": [
           "use",
           "to",
@@ -86321,7 +86387,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when auditing anything before acting on it — the verified-true: content-uuid recomputes, the books balance, the lineage traces to a real source. The set-apart canonical form that passes verification AND validation; dual of profane; run at every scale before every act.",
-        "uuid": "cf6aa1d4-b0a9-8e24-a526-6844bf25eab7",
+        "uuid": "0a0d2727-db7a-8d4d-85f6-2434e18b99b4",
         "words": [
           "use",
           "when",
@@ -109102,7 +109168,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when tracking the live run of a workflow-definition against a document — current step, assignee, SLA due date, step-history decisions (approved/rejected/delegated/escalated/auto), final outcome, and ISO-19011 §6.4.6 audit-event trail. The workflow execution-instance collection.",
-        "uuid": "b5b8b361-cb5a-8a74-973a-bf82cb589a1f",
+        "uuid": "33d6ec05-42da-8faa-b877-89ac9bf72ea1",
         "words": [
           "use",
           "when",
@@ -109847,4 +109913,4 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
   }
 ]
 
-export const TRANSLATIONS_COUNT = 2319
+export const TRANSLATIONS_COUNT = 2320

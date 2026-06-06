@@ -122,4 +122,21 @@ describe('balance: the live aura measurement', () => {
     expect(coverage(d)).toBeLessThanOrEqual(1)
     expect(disbalance(d)).toBeCloseTo(1 - coverage(d))
   })
+
+  // THE coverage=1 GATE — UNAVOIDABLE. Every plural collection has its singular
+  // model (or is honestly classified NON_PLURAL / PLURAL_ONLY). A new orphan
+  // fails HERE, naming itself; coverage=1 ⇒ tamper-cost is ∞ (the MAX, no slack).
+  // Tighten to one — you cannot add a plural store without its model.
+  it('coverage = 1 — zero orphan collections (max tamper-cost)', () => {
+    const d = auraBalance()
+    if (d.orphanCollections.length) {
+      console.log(
+        `\nmodel⊕collection orphans (mint the singular model, or classify NON_PLURAL/PLURAL_ONLY):\n  ` +
+          d.orphanCollections.join(' '),
+      )
+    }
+    expect(d.orphanCollections).toEqual([])
+    expect(coverage(d)).toBe(1)
+    expect(tamperCostLog2(d)).toBe(Number.POSITIVE_INFINITY)
+  })
 })

@@ -38,6 +38,7 @@ export const NON_PLURAL: ReadonlySet<string> = new Set([
   // Latin/Greek -is / -us / -as / -os singulars
   'analysis', 'crisis', 'axis', 'basis', 'diagnosis', 'prognosis', 'thesis', 'synopsis',
   'genesis', 'oasis', 'ellipsis', 'hypothesis', 'emphasis', 'parenthesis', 'metamorphosis',
+  'symbiosis', 'mitosis', 'osmosis', 'prophylaxis', 'symphysis',
   'status', 'census', 'consensus', 'corpus', 'genus', 'virus', 'focus', 'nucleus',
   'apparatus', 'surplus', 'syllabus', 'stimulus', 'radius', 'bonus', 'campus', 'abacus',
   'atlas', 'canvas', 'bias', 'gas', 'ethos', 'chaos', 'pathos', 'cosmos', 'lens', 'bus',
@@ -70,6 +71,11 @@ export const PLURAL_ONLY: ReadonlySet<string> = new Set([
   'damages', 'proceeds', 'goods', 'premises', 'belongings', 'earnings', 'savings',
   'minutes', 'lyrics', 'analytics', 'settings', 'credentials', 'vitals', 'odds',
   'details', 'hours',
+  // schema.org numberOf-X component words — COUNT attributes (numberOfAirbags,
+  // numberOfBedrooms, additionalNumberOfGuests, cvdNum…Pats, calories…), not
+  // entity stores: a singular model would be the actual error (model-lessness is
+  // correct). The plural is a quantity on another type, never a collection.
+  'airbags', 'axles', 'bathrooms', 'bedrooms', 'calories', 'gears', 'guests', 'pats',
 ])
 
 /** A word is a plural COLLECTION form: ends in -s (not -ss), length > 2, not a known non-plural. */

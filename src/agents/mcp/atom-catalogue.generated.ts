@@ -10619,6 +10619,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/gl/posting/rules"
   },
   {
+    "atom": "run",
+    "name": "run",
+    "description": "Use when modeling one execution of a batch process — a payment run, payroll run, or scheduled job run — the singular of the runs collection; one bounded pass that gathers a set, authorises it, executes, and reconciles on a lifecycle.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/run"
+  },
+  {
     "atom": "runbook",
     "name": "runbook",
     "description": "Use when documenting step-by-step standard operating procedures — incident response, system failover, deployment checklist, maintenance sequence. The executable playbook.",
