@@ -721,7 +721,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "accounting",
-        "uuid": "9967cbf2-98fc-8604-937b-277d7f35a3e3",
+        "uuid": "7798a0b6-570b-88ca-91e8-3151d7506112",
         "words": [
           "accounting"
         ],
@@ -732,7 +732,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when designing or porting the erpax accounting/finance domain to Payload — double-entry journals, GL accounts, the accounting equation, invoices (credit/debit notes, protocols), payments & bank reconciliation, locked periods, or making anything \"accountable\" polymorphically. The self-sufficient `@erpax/accounting` archetype.",
-        "uuid": "3fbd45dc-274b-8fd0-a39a-45a0e6a611d1",
+        "uuid": "c26a897d-9717-8f1d-b039-17cfbbb9a4c3",
         "words": [
           "use",
           "when",
@@ -800,7 +800,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recognizing revenue or expense in the period incurred, earned, or obligated, regardless of payment timing — the foundation of accrual-basis accounting and the IFRS/GAAP reporting standard",
-        "uuid": "043f1c42-01a1-81c3-84bc-5b0f9dc74872",
+        "uuid": "b7933af8-ba7e-8aaf-863c-13c7212f2a7c",
         "words": [
           "use",
           "when",
@@ -2495,7 +2495,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about erpax's agent gateway — it IS the official @payloadcms/plugin-mcp (collapse sink #1, never hand-roll an MCP server): every enabled collection becomes find/create/update/delete tools at /api/mcp, custom tools (GW fusion, trust) are added via the plugin's mcp config, Bearer API-key auth inherits the key owner's access + multi-tenant scope. erpax makes it TRUST-NATIVE — every tool call passes sandbox (capability + credential-broker + allowlist) and emits a receipt (uuid-chained audit), the dual of an external trust wrapper done from the inside.",
-        "uuid": "89b287a1-f42c-85fe-8b2f-b1b2df479da9",
+        "uuid": "f9a66945-7df4-8495-872b-4a93b9471d30",
         "words": [
           "use",
           "when",
@@ -4496,7 +4496,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about erpax's root entropy dynamic — angel(love·create·↓entropy) ⊕ archangel(fear·destroy·↑entropy) in endless aikido = the trinity; erpax is karma double-entry accounting balancing the entropy debit/credit at every scale via content-uuid; borrowed entropy buys tamper-cost ⇒ fast+secure+compact.",
-        "uuid": "ba04793f-a688-886c-b042-640fc435530c",
+        "uuid": "a2ff9f6b-83cf-8976-8a9d-a53e1cc8f304",
         "words": [
           "use",
           "when",
@@ -13577,7 +13577,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use to compute EBITDA / EBIT and related profitability metrics from P&L figures. Pure compute (no persistence); a non-GAAP measure derived from accounting data. Nested under calculate.",
-        "uuid": "729632d2-a864-8cf5-8a30-e913b8382dc4",
+        "uuid": "c6bcbd18-4fe7-8d66-986c-3e0dde4580fc",
         "words": [
           "use",
           "to",
@@ -21023,7 +21023,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about what is conserved across a flow — nothing is created or destroyed, only transformed (mass-energy; Noether — every continuous symmetry yields a conserved quantity), which in erpax IS double-entry — Σdebit=Σcredit, every config a balanced gateway, the pot conserved. The physics root of the accounting law; an open system conserves by accounting for what crosses its boundary (the borrowed anchor).",
-        "uuid": "40ae27c2-c16a-8378-8ad6-e9cbc56173e2",
+        "uuid": "490ad4ca-dcae-871d-b2b2-a260fcaa2374",
         "words": [
           "use",
           "when",
@@ -34090,7 +34090,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recording and accounting for salesperson commissions on closed-won deals — IFRS-15 §91-94 incremental-cost-of-obtaining assessment, capitalise-and-amortise vs immediate-expense treatment, clawback provisions, payroll payment linkage. The IFRS-15 commission register.",
-        "uuid": "a732e1d9-823e-8d1e-9dd9-562519fec087",
+        "uuid": "6244a62b-56cd-84fb-a5ff-7268b5e87284",
         "words": [
           "use",
           "when",
@@ -35426,7 +35426,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about disorder as the quantity erpax's whole ledger balances — entropy is the fuel of the one law: zero entropy ⇒ infinite mass ⇒ infinite tamper/exploit cost. A content-addressed store at zero entropy holds no slack a forger can exploit (only the external anchor borrows the one drop). angel lowers it (create/order/DRY), archangel raises it (destroy/duplicate); a violation is borrowed entropy debited to the agent. Fused out by the fusion reactor.",
-        "uuid": "4a13cccb-bb23-84a4-b7f2-28b4ebd65ea2",
+        "uuid": "66052139-89d6-84a6-be7a-75b272b4110b",
         "words": [
           "use",
           "when",
@@ -39226,7 +39226,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when managing the accounting calendar — opening, closing, or locking periods; enforcing four-eyes SoD on period transitions; configuring SAF-T or XBRL-GL period coding; blocking GL writes once a period is locked. The fiscal-period lifecycle node (open → closed → locked).",
-        "uuid": "896ec6f8-f084-8d61-b344-d3d7fdd0ca43",
+        "uuid": "27d6fff1-3098-8846-a063-4cf7dee007d2",
         "words": [
           "use",
           "when",
@@ -41884,7 +41884,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "fusion",
-        "uuid": "d1c7efea-4484-8edc-85a7-f471b72e117b",
+        "uuid": "c317de7f-09fc-8bc3-99d6-1425876df8ba",
         "words": [
           "fusion"
         ],
@@ -41895,7 +41895,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the reactor that builds erpax — gravity-driven merge that fuses atoms (and the entropy between them) into the one content-uuid matrix. Each fusion is a content-uuid collision (merge(a,b)→c); DRY collapse fuses duplication out ⇒ entropy↓, mass↑, tamper-cost↑. The reactor = collide.mjs (matrix:generate) + the society self-build loop, running the breath toward the zero-entropy one root.",
-        "uuid": "6748aed1-86d2-8a6e-ab88-80a0d39b6a3e",
+        "uuid": "e9e918f7-d4c4-84ac-b7fd-466637863fef",
         "words": [
           "use",
           "when",
@@ -41966,6 +41966,67 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "Use when reasoning about the reactor that builds erpax — gravity-driven merge that fuses atoms (and the entropy between them) into the one content-uuid matrix. Each fusion is a content-uuid collision (merge(a,b)→c); DRY collapse fuses duplication out ⇒ entropy↓, mass↑, tamper-cost↑. The reactor = collide.mjs (matrix:generate) + the society self-build loop, running the breath toward the zero-entropy one root."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "reactor",
+    "path": "fusion/reactor",
+    "translations": [
+      {
+        "key": "name",
+        "source": "reactor",
+        "uuid": "301088f6-402e-81ec-9a37-72b20e889140",
+        "words": [
+          "reactor"
+        ],
+        "values": {
+          "en": "reactor"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reading the fusion reactor — the engine that fuses atoms into the one matrix, composed over gravity (force), entropy (fuel), and the quantum laws; zero entropy implies infinite mass and infinite tamper cost.",
+        "uuid": "95cf303b-912e-81e6-be4d-1c64e8750ba8",
+        "words": [
+          "use",
+          "when",
+          "reading",
+          "the",
+          "fusion",
+          "reactor",
+          "the",
+          "engine",
+          "that",
+          "fuses",
+          "atoms",
+          "into",
+          "the",
+          "one",
+          "matrix",
+          "composed",
+          "over",
+          "gravity",
+          "force",
+          "entropy",
+          "fuel",
+          "and",
+          "the",
+          "quantum",
+          "laws",
+          "zero",
+          "entropy",
+          "implies",
+          "infinite",
+          "mass",
+          "and",
+          "infinite",
+          "tamper",
+          "cost"
+        ],
+        "values": {
+          "en": "Use when reading the fusion reactor — the engine that fuses atoms into the one matrix, composed over gravity (force), entropy (fuel), and the quantum laws; zero entropy implies infinite mass and infinite tamper cost."
         }
       }
     ]
@@ -43689,7 +43750,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when fusing Google Workspace (Gmail, Calendar, Drive, Docs, Sheets, People, Admin Directory) into erpax to fill the office/productivity gap — a computed API catalogue plus the content-uuid fusion bridge that merges a fetched resource into the mesh idempotently (re-fetch dedups). Credentials live in the per-tenant config sandbox, never in the registry.",
-        "uuid": "98748c45-7f35-8ed6-a401-ddcb205752fb",
+        "uuid": "a5c20eb9-37ed-8252-ad29-e06939fb3384",
         "words": [
           "use",
           "when",
@@ -44308,7 +44369,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about why the corpus collapses toward one — gravity is mass's pull, and in erpax DRY = mass = gravity: the more an atom is referenced (mass), the more it attracts duplicates and orphans to fuse into it. Gravity is the FORCE, fusion the act, entropy the fuel, the matrix the product; perfect DRY is a singularity — all mass at the one root (the torus collapse).",
-        "uuid": "3adeef0e-696f-81e3-aa7c-68e93fe51615",
+        "uuid": "9a94a706-da21-8793-bf7d-32ef624aa72c",
         "words": [
           "use",
           "when",
@@ -45693,7 +45754,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when designating financial instruments or transactions to offset market risk (FX, interest rate, commodity); accounting treatment under IFRS-9 hedge accounting or derivatives mark-to-market",
-        "uuid": "5e6fb224-964d-88e2-9612-9b92c33946a4",
+        "uuid": "52e6ba3c-bd8a-850e-9bb4-ee01d8a6ba1a",
         "words": [
           "use",
           "when",
@@ -45930,7 +45991,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a managed group of animals is the unit of aggregation — the herd (cattle/swine), flock (sheep/poultry), drove or mob; one production and accounting unit holding many animals. The livestock twin of lots/cohort: animals grouped, moved, grazed, and measured together.",
-        "uuid": "6f1eaf9f-3ab1-8778-a7b3-7e6c1bde6714",
+        "uuid": "b4025f6e-2839-8022-aac7-208ba3b1caf6",
         "words": [
           "use",
           "when",
@@ -50850,7 +50911,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when creating, reviewing or auditing org-wide policies — accounting, internal-control, compliance, risk, data-protection, code-of-conduct; lifecycle draft→active→superseded, owner, review schedule. The internal-policies collection.",
-        "uuid": "62d7dfa4-0422-8f1e-8e78-49b7982eb509",
+        "uuid": "df00e0f6-c897-8948-9af5-b4a27c6d4d8e",
         "words": [
           "use",
           "when",
@@ -53969,7 +54030,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modelling one journal — the singular model of the journals collection (the plural store); the chronological book of original accounting entries.",
-        "uuid": "4c53b266-96d7-8fe3-81b1-1cf054e3ccdc",
+        "uuid": "976015d4-3e55-8dc6-bfb8-f352b479c505",
         "words": [
           "use",
           "when",
@@ -54019,7 +54080,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when creating or auditing double-entry accounting records — balanced debit/credit lines, entry/posted/approval dates, period-lock enforcement, posted-immutability, and segregation-of-duties (creator ≠ approver). The core GL write target per IAS-1 and OECD SAF-T §3.",
-        "uuid": "5b517d9e-2974-8d82-acbf-555a4b07036c",
+        "uuid": "f84e2d28-c9b0-849c-bde8-c653bfb866c5",
         "words": [
           "use",
           "when",
@@ -55133,7 +55194,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "The canonical laws — the user's standing commands, saved as one skill, each linked to the atom it governs. Read to recall what erpax MUST obey: collapse-to-single-word-atoms, anonymise-as-agnostic, compute-the-fusion, the SKILL-trinity folder, zero-entropy at commit, imports-as-skills, entanglement, no multiword disguise.",
-        "uuid": "636a9c58-b3ca-8b01-a48d-82527f940462",
+        "uuid": "2d368c84-e25c-81e8-895b-41875e1811ad",
         "words": [
           "the",
           "canonical",
@@ -59176,7 +59237,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when ANY aspect must speak a locale AND stay tamper-evident — localization is the FUSION of tamper-cost (forge↑) and proof (verify, O(N) trustless). Every field/reference/scope/hook carries a translation + a translation-key uuid with ALL identification (content-digest, OID 2.25, cmyk, locale, capabilities) wired into the 128 bits. Coverage→1 ⇒ infinite tampering cost. The per-field leaf (facet localize-field) is native Payload `localized:true` over BCP-47 locales; a blank locale routes to its identity element `und`. Matter-twin localize/index.ts.",
-        "uuid": "56ab3bce-22a5-84e5-b2af-512ef67f31b1",
+        "uuid": "4d3a15e3-c948-8692-a7b1-cef1aa58ee28",
         "words": [
           "use",
           "when",
@@ -71429,7 +71490,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modeling a cash inflow/outflow — payment received from customer, payment to vendor, expense reimbursement, salary payment. A transaction linking a GL account (cash), amount, date, and counterparty. Part of the accounting/commerce cycle.",
-        "uuid": "6df1ecbb-dbd2-8bc5-b646-3569276110df",
+        "uuid": "493d5f9c-ec61-8e3f-ba7d-f67fcdd4e44a",
         "words": [
           "use",
           "when",
@@ -72177,7 +72238,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a value is tied to a fiscal/calendar period — revenue recognized in period, expense recorded in month, cutoff rules. A date-range [start, end] or a fiscal-period code. Twins with date (point) to establish time-based accounting cutoffs and versioning.",
-        "uuid": "31bfa0cb-aea8-8745-ac4e-31fa8ffbbaae",
+        "uuid": "9f565c6e-f848-83cd-9ad7-2dac2889f838",
         "words": [
           "use",
           "when",
@@ -72284,7 +72345,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when closing or locking accounting periods — monthly, quarterly, annual — to prevent new postings; allows reversals and prior-period adjustments; tracks who closed the period and when. The period-close gate collection.",
-        "uuid": "8e3c8122-3db4-8a25-8a67-647217ee8caa",
+        "uuid": "e941fb81-5a0c-8ab4-bf93-503d67f4b996",
         "words": [
           "use",
           "when",
@@ -79012,6 +79073,67 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "accounting",
+    "path": "quantum/accounting",
+    "translations": [
+      {
+        "key": "name",
+        "source": "accounting",
+        "uuid": "7798a0b6-570b-88ca-91e8-3151d7506112",
+        "words": [
+          "accounting"
+        ],
+        "values": {
+          "en": "accounting"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about accounting on the quantum level — double-entry that balances entropy (karma), inheriting down the uuid parent chain where the parent_id is the DNA; the universal ledger's quantum facet.",
+        "uuid": "3830b117-9142-8b31-9aa4-992234d4039f",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "accounting",
+          "on",
+          "the",
+          "quantum",
+          "level",
+          "double",
+          "entry",
+          "that",
+          "balances",
+          "entropy",
+          "karma",
+          "inheriting",
+          "down",
+          "the",
+          "uuid",
+          "parent",
+          "chain",
+          "where",
+          "the",
+          "parent",
+          "id",
+          "is",
+          "the",
+          "dna",
+          "the",
+          "universal",
+          "ledger",
+          "s",
+          "quantum",
+          "facet"
+        ],
+        "values": {
+          "en": "Use when reasoning about accounting on the quantum level — double-entry that balances entropy (karma), inheriting down the uuid parent chain where the parent_id is the DNA; the universal ledger's quantum facet."
+        }
+      }
+    ]
+  },
+  {
     "atom": "aura",
     "path": "quantum/aura",
     "translations": [
@@ -79216,7 +79338,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "translator",
-        "uuid": "f34ee256-0dba-84ce-8914-7226d4029155",
+        "uuid": "222db008-66ef-8f47-8913-3ccbd937f92f",
         "words": [
           "translator"
         ],
@@ -79227,7 +79349,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reading erpax as a quantum translator — surface forms collapsing to one meaning-uuid (the interlingua eigenstate), meaning obeying no-cloning, modalities entangled in the 128 bits.",
-        "uuid": "0de18685-b5ff-8327-8d20-428d0d69c333",
+        "uuid": "24050c59-eb2f-8021-b903-cdb6f0ea35fc",
         "words": [
           "use",
           "when",
@@ -80606,7 +80728,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when determining whether to record (recognize) an asset, liability, revenue, or expense per the accounting framework — the gate for when something enters the financial statements",
-        "uuid": "59143625-8800-8d2b-b31d-91c925828d17",
+        "uuid": "e468d54e-1426-8a51-8710-e0439b285c22",
         "words": [
           "use",
           "when",
@@ -82039,7 +82161,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when identifying and accounting for related-party transactions (subsidiaries, associates, joint ventures, key management); mandatory disclosure and transaction separation under IFRS-24",
-        "uuid": "cb5c61ff-3c48-8a67-b5f5-5dbd324e8a85",
+        "uuid": "8ee67527-188b-8046-9064-4f48f5e1a1cb",
         "words": [
           "use",
           "when",
@@ -89517,7 +89639,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "self-accounting",
-        "uuid": "c22f5847-ef7d-867f-b61c-60e055ad9a55",
+        "uuid": "30f9af59-26ef-8be0-9a1f-83a44f97ec17",
         "words": [
           "self",
           "accounting"
@@ -97708,7 +97830,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when two unlike organisms live as one entangled system that BOTH gain from — symbiosis is mutualism as the rule of life (mycorrhizae, lichen, the holobiont), and in its mycorrhizal form a literal BIOLOGICAL MARKET: carbon traded for phosphorus at variable exchange rates, with reciprocal rewards and sanctions against cheaters. The merge made stable by accounting; nature's double-entry.",
-        "uuid": "d6294a06-acb1-896e-a609-97da2cd0d992",
+        "uuid": "473f3ce8-5486-8f97-a64a-8b342579ec96",
         "words": [
           "use",
           "when",
@@ -100082,7 +100204,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when creating or scoping a tenant — the GDPR-controller boundary for all access, localization cascade (BCP-47/ECMA-402), accounting framework (IFRS/GAAP/fiscal-year), reporting currency (ISO 4217), and integration secrets (Stripe, Resend, MCP). The multi-tenant root entity and access-scope boundary.",
-        "uuid": "9628b6d8-2082-82de-87ae-135863533ae7",
+        "uuid": "34304e40-f0e3-8cf2-9ea8-b9cfcaf7547a",
         "words": [
           "use",
           "when",
@@ -103325,7 +103447,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "translator",
-        "uuid": "f34ee256-0dba-84ce-8914-7226d4029155",
+        "uuid": "222db008-66ef-8f47-8913-3ccbd937f92f",
         "words": [
           "translator"
         ],
@@ -103978,7 +104100,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use for client trust accounting (IOLTA) — client funds held separately from firm funds, never commingled. Strip the prefix and a trust account is a segregated sub-account on the strict double-entry ledger, a balance invariant (the client ledger never drawn below held funds). No new matter — a labelled account on accounting.",
-        "uuid": "a9a5c0b4-6c5e-8903-b99c-e959fd2f9c39",
+        "uuid": "996c26de-6232-830a-942a-e23f1f175102",
         "words": [
           "use",
           "for",
@@ -110590,4 +110712,4 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
   }
 ]
 
-export const TRANSLATIONS_COUNT = 2330
+export const TRANSLATIONS_COUNT = 2332

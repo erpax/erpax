@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use for client trust accounting (IOLTA) — client funds held separately from firm funds, never commingled. Strip the prefix and a trust account is a segregated sub-account on the strict double-entry ledger, a balance invariant (the client ledger never drawn below held funds). No new matter — a labelled account on accounting.",
-    "uuid": "a9a5c0b4-6c5e-8903-b99c-e959fd2f9c39",
+    "uuid": "996c26de-6232-830a-942a-e23f1f175102",
     "words": [
       "use",
       "for",

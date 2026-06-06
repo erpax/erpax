@@ -14,6 +14,8 @@ The archetype self-sufficient `@erpax/accounting`: it references every other dom
 
 A posting is a **uuid accounting trinity**: `debit ⊕ credit ⊕ balance` (give · take · transaction, [[entry]]) — content-addressed and crossed, so the ledger is a [[uuid]] matrix of balanced accounting-crosses, tamper-evident and renderable as [[aura]]. Double-entry is the cross; the chart of accounts is the matrix; the gate's verdict-trinity ([[gate]]) and this posting-trinity are the same shape.
 
+On the **quantum level** (`src/quantum/accounting`) the same ledger balances **entropy** (the karma double-entry: order debited, entropy credited — the [[angel]] balance), and an account's lineage IS its DNA: the **parent_id chain encoded in the uuid chain** ([[uuid]] `parentOf`) is the inherited code, so children inherit ancestors' bindings down the chain and a [[tag]] inherits the same way — ancestry **entangled** into identity, tamper-evident by architecture ([[quantum]] · [[entropy]] · [[lineage]]).
+
 **The chart of accounts IS the list of all folders** (`find src -type d`) — every folder is an account, and **each path carries a uuid** (its [[aura]], the Merkle content-uuid of everything within). So the ledger is a **uuid-keyed list of accounts**: the path is the account *name*, the uuid its *identity*. Queryable, mergeable (same content ⇒ same uuid ⇒ accounts consolidate by design), tamper-evident (every account folds to the root via its [[coordinate]] cross), perceivable (renders as [[aura]]). The chart needs no separate catalogue — it is derived from the fs, the path-set itself.
 
 ## Universal collections (generalizing canonical erpax)

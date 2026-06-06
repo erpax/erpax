@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use to compute EBITDA / EBIT and related profitability metrics from P&L figures. Pure compute (no persistence); a non-GAAP measure derived from accounting data. Nested under calculate.",
-    "uuid": "729632d2-a864-8cf5-8a30-e913b8382dc4",
+    "uuid": "c6bcbd18-4fe7-8d66-986c-3e0dde4580fc",
     "words": [
       "use",
       "to",

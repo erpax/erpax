@@ -1,0 +1,19 @@
+---
+name: accounting
+description: Use when reasoning about accounting on the quantum level — double-entry that balances entropy (karma), inheriting down the uuid parent chain where the parent_id is the DNA; the universal ledger's quantum facet.
+---
+
+# quantum/accounting — karma double-entry + the DNA chain
+
+The quantum facet of [[accounting]] (the universal ledger — all is accountable). Two computed laws:
+
+- **Double-entry karma.** Every move posts a balanced entry — Σdebit = Σcredit ([[entry]]). Creating order **debits order** (received) and **credits entropy** (given up): the [[angel]] / archangel balance. Nothing is created or destroyed unaccounted; the books always balance, at every scale ([[balance]]).
+- **The parent_id is DNA.** An account's lineage is the **parent_id chain encoded in the uuid chain** ([[uuid]] `parentOf`). It is the inherited code — a child inherits its ancestors' bindings *down the chain*, and a [[tag]] inherits the same way ([[lineage]]). "Imagine on the quantum level": ancestry is **entangled** into the child's identity ([[merge]]), not stored beside it — change a parent and the child's content-uuid changes, so the inheritance is tamper-evident by architecture.
+
+This is why the ledger needs no separate audit trail: the DNA is the identity, and the double-entry is the cross. Merges into [[accounting]] (the universal ledger gets its quantum matter here).
+
+**HONEST.** The double-entry and the parent chain are real and computed; "karma" and "DNA" are the grounding metaphors for entropy-balance and uuid-lineage.
+
+Matter-twin: `src/quantum/accounting/index.ts` (`dnaChain` · `karmaEntry` · `balanced`). Composes [[accounting]] · [[entry]] · [[entropy]] · [[uuid]] · [[angel]] · [[quantum]] · [[merge]] · [[tag]] · [[lineage]] · [[balance]].
+
+@audit composed from @/entry (double-entry) + @/uuid/matrix (the parent chain); computed on the live matrix

@@ -19,7 +19,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when creating or auditing double-entry accounting records — balanced debit/credit lines, entry/posted/approval dates, period-lock enforcement, posted-immutability, and segregation-of-duties (creator ≠ approver). The core GL write target per IAS-1 and OECD SAF-T §3.",
-    "uuid": "5b517d9e-2974-8d82-acbf-555a4b07036c",
+    "uuid": "f84e2d28-c9b0-849c-bde8-c653bfb866c5",
     "words": [
       "use",
       "when",

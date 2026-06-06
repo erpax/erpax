@@ -17,10 +17,8 @@
  * @audit computed from the live matrix, never hand-asserted
  * @see ../uuid/matrix -- ../gravity (force) -- ../entropy (fuel) -- ../quantum (laws)
  */
-import { merge, UUID_MATRIX_NODES as N, matrixDigest } from '@/uuid/matrix'
-import { well, concentration } from '@/gravity'
-import { entropy } from '@/entropy'
-import { collapse, quantization } from '@/quantum'
+import { merge, UUID_MATRIX_NODES as N } from '@/uuid/matrix'
+import { reactor, type ReactorReadout } from '@/fusion/reactor'
 
 /** A single fusion: the SYMMETRIC content-uuid collision (the entangle binding) of two atoms. */
 export const fuse = (a: string, b: string): string => (a <= b ? merge(a, b) : merge(b, a))
@@ -34,29 +32,8 @@ export function foldToRoot(uuids: readonly string[] = N.map((n) => n.uuid)): str
   return [...uuids].sort().reduce((acc, u) => merge(acc, u))
 }
 
-/** The full reactor readout: gravity (force) ⊕ entropy (fuel) ⊕ quantum (laws) composed over the matrix (product). */
-export function reactor(): {
-  nodes: number
-  edges: number
-  root: string
-  well: { atom: string; mass: number }
-  concentration: number
-  entropy: number
-  collapse: boolean
-  quantized: boolean
-} {
-  const d = matrixDigest()
-  return {
-    nodes: d.nodes,
-    edges: d.edges,
-    root: d.root,
-    well: well(),
-    concentration: concentration(),
-    entropy: entropy(),
-    collapse: collapse(),
-    quantized: quantization().offSequence === 0,
-  }
-}
+/** The reactor READOUT lives in its own atom (gravity-pull, src/fusion/reactor); re-exported here. */
+export { reactor, type ReactorReadout }
 
 if (import.meta.url === 'file://' + process.argv[1]) {
   const r = reactor()
