@@ -12148,7 +12148,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about how erpax grows — it BREATHES: inhale ideas from everywhere (peers like ZeroPoint, frameworks like Payload, the standards, the upstream Rails, user content), exhale DRY clean code (gate-green, content-addressed, collapsed to the dense core). Inhale is merge/derive/generate; exhale is collapse + the gate + minimal cost. The rhythm IS the society loop: never inhale without exhaling clean, never exhale without inhaling.",
-        "uuid": "33090552-90ac-8173-940a-13036d5bc77e",
+        "uuid": "36c8d2d8-245b-8d5f-87ff-bc1a6a13e435",
         "words": [
           "use",
           "when",
@@ -13268,7 +13268,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use for pure financial computation — break-even, EBITDA, EOQ, present value, depreciation, ratios, standard-costing variances. The Calculators::* form-objects — validate inputs → compute (standards-cited formula) → format; no persistence. Composes nested leaves (calculate/depreciate, /amortize, /ebitda).",
-        "uuid": "d62f1a56-985d-8b27-9b36-78a14ea91159",
+        "uuid": "89ca222a-396f-8662-954b-1b6302fbdc66",
         "words": [
           "use",
           "for",
@@ -17771,7 +17771,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reducing collection/table sprawl to its canonical minimum — collapse every collection to one of four sinks (an official Payload plugin/template, the trinity node store, a Lexical content block, or a dimension/state/role of an existing node). The \"collapse all to Payload\" law; one name across every dimension, drawn from the standards.",
-        "uuid": "bc29b206-acee-8590-a10a-5618dc74d11f",
+        "uuid": "7f798bd0-3301-8845-8125-25e3b23b5ce6",
         "words": [
           "use",
           "when",
@@ -43293,7 +43293,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a contract is subject to a specific jurisdiction's law — codified by choice-of-law clause, determines interpretation (UCC vs. Common Law), applicable standards, dispute resolution.",
-        "uuid": "d44a6317-5aa9-86cc-8d9f-9c19e87a8be5",
+        "uuid": "a47c32f2-77e3-827f-b33c-8f24ca54aa2b",
         "words": [
           "use",
           "when",
@@ -43519,7 +43519,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when produce is sorted into quality classes — grading against uniform standards (USDA US No. 1, Fancy), with culling (discarding unmarketable units) and the packout (the marketable fraction packed from a harvested lot). Grade sets price and the gross-vs-marketable yield gap; °Brix, size, color, and defects are the criteria.",
-        "uuid": "b8eab097-7910-8fad-89e7-f177e3b611da",
+        "uuid": "2c125087-1540-81fd-ade1-c8253cad4ed7",
         "words": [
           "use",
           "when",
@@ -67551,7 +67551,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when produce carries a certified-organic claim — the labeling status under USDA NOP (7 CFR 205) and EU 2018/848: the National List of allowed/prohibited substances, excluded methods (GMO/irradiation/sewage sludge banned), the 36-month transition, and the organic system plan verified by an accredited certifier. A standards-backed status the product carries through the chain.",
-        "uuid": "c3162d17-d743-8400-b65f-80cf0110819d",
+        "uuid": "51653421-abf5-8678-965d-63b26d2fbdc2",
         "words": [
           "use",
           "when",
@@ -89430,7 +89430,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Canonical standards-merged atoms — render components (Money, AuditedTimestamp, AddressBlock) and reusable Payload Field factories shared across every domain",
-        "uuid": "e39ed777-9c6c-8a6d-bd97-5c5b507b60fa",
+        "uuid": "d5f6326e-60ab-8ced-bbb9-c44ff6e95799",
         "words": [
           "canonical",
           "standards",
@@ -92693,7 +92693,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when implementing or auditing a compliance standard in erpax — IFRS/US-GAAP/SAF-T/ISO/SOX/EN-16931/NIST. Standards are implemented via the skills (each skill is the answer-path holding a standard's form); @standard banners must be true, not decoration.",
-        "uuid": "951b48fc-6718-81a3-b97b-15fe93d41af3",
+        "uuid": "6caebc7b-9e92-86b7-8b79-21f0ca38579a",
         "words": [
           "use",
           "when",
@@ -92811,7 +92811,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "standards",
-        "uuid": "a8c6124b-b833-8d21-8612-9715c61ebd04",
+        "uuid": "6cead6f0-3a4b-8434-b5fe-ca46232e77c0",
         "words": [
           "standards"
         ],
@@ -92822,7 +92822,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when registering, citing, superseding or querying any published standard (IFRS, ISO, W3C, RFC, EU Directive, etc.) against a tenant — conflict graph, supersession trail, per-module citation index, per-tenant adoption status. The live standards-registry collection backing the erpax.standards.* MCP tool family.",
-        "uuid": "c089d3cb-05be-87ef-8af5-c0a57f7d9f64",
+        "uuid": "40ec6845-9357-8043-9cd1-5858d331928f",
         "words": [
           "use",
           "when",
@@ -97148,7 +97148,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "reporting-standards",
-        "uuid": "71c75b91-02bf-8d35-af7a-7b9c965fe8b0",
+        "uuid": "e18bae14-4da3-852f-abc2-94719bcca71c",
         "words": [
           "reporting",
           "standards"
@@ -103342,7 +103342,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when you need a pure helper, a Payload/Next/tenant glue function, or an admin React hook and it does NOT implement a standard's algorithm — the non-standards helper layer that may cite standards but never implements them.",
-        "uuid": "68a3817b-a693-88e9-ae5a-2b90dde11fe0",
+        "uuid": "71c945b6-3641-8055-9fee-a35e9f0c90d2",
         "words": [
           "use",
           "when",
