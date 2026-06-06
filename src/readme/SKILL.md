@@ -11,15 +11,16 @@ description: Use when the repository README needs to change — it is COMPUTED, 
 
 Every number, list, version, and table row is **derived at generation time**, never asserted:
 
-- **[[package|package.json]]** → name, description, version, license, the whole script table, every tech-stack version, the [[gate]] steps (parsed from the `check` chain).
+- **[[package|package.json]]** → name, description, version, license, the whole script table, every dependency + version, engines, the package manager, the [[gate]] steps (parsed from the `check` chain).
 - **[[collections]] barrel** (`src/collections/index.ts`) → the registered-collection count (the same `Object.values(allCollections)` [[payload]] registers).
-- **the `src/` tree** (an fs scan, symlink-skipping) → top-level [[atom]] folders, `SKILL.md`, `index.ts`, `test.ts` counts — the [[trinity]] coverage made visible.
+- **the `src/` tree** (an fs scan, symlink-skipping) → `SKILL.md`, `index.ts`, `test.ts` counts — the [[trinity]] coverage made visible.
+- **every atom `SKILL.md`** → the wiki-link graph + each atom's own blurb, read live (the [[merge]] of matter and antimatter into one page).
+- **[[horo]] (the math)** → `digitalRoot`, the horo ring, the [[measure]] names — used to compute the core-atom spine, not a hand-picked list.
 - **[[payload]] config** (`src/payload.config.ts`) → the composed plugin pipeline (in order) and the admin UI locale count.
-- **`wrangler.jsonc`** → the Cloudflare [[bindings]] + cron triggers.
-- **[[standards]] catalogue** (`src/standards/catalogue.ts`) → the governing-standards count.
-- **core-atom `SKILL.md`** → the concept blurbs, read live (the [[merge]] of matter and antimatter into one page).
+- **`wrangler.jsonc`** → the Cloudflare binding kinds, [[bindings]] + cron triggers.
+- **[[standards]] catalogue** (`src/standards/catalogue.ts`) → the governing-standards count + families.
 
-The only fixed English is the section skeleton and a few honest framing sentences — exactly as `scripts/standards-catalogue.ts` prints fixed headers over computed rows. No timestamps; stable sorts; side-effect-free — so the output is **byte-deterministic** and `--verify` can gate it.
+There is **no fixed English** — not one authored sentence, tagline, or label. The generator's only string literals are markup glyphs and source *addresses* (a path, an object key, a regex anchor that names a real repo token); every word in `README.md` is read from a source. The corpus describes itself. The **core-atom spine** is computed by the math: in-degree centrality over the code subgraph (atoms that carry an `index.ts`) → the [[balance]] cut (the shortest prefix holding half the centrality mass, Σfeatured = Σrest) → ordered around the horo ring by `digitalRoot` of the centrality, tagged with the horo measure. No timestamps; stable sorts; integer math only — so the output is **byte-deterministic** and `--verify` can gate it.
 
 ## Why this is the [[law]]
 

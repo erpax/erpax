@@ -1,6 +1,6 @@
 ---
 name: covid
-description: "covid: a schema.org component word, fused from CovidTestingFacility"
+description: Use when reasoning about covid as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.
 ---
 
 # covid
@@ -10,5 +10,7 @@ A schema.org component word, collided out of schema.org compounds — fused from
 Entangled with — [[testing]] · [[facility]]
 
 Attested in schema.org — CovidTestingFacility
+
+**Law — [[law]]: covid is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**
 
 @standard schema.org — the type vocabulary, collided to single words

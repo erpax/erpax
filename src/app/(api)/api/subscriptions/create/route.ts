@@ -129,7 +129,7 @@ export async function POST(request: Request) {
     }
 
     const stripe = new Stripe(tenant.stripeSecretKey, {
-      apiVersion: '2026-04-22.dahlia',
+      apiVersion: '2026-05-27.dahlia',
     })
 
     // Get or create Stripe customer

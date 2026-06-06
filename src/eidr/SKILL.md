@@ -1,6 +1,6 @@
 ---
 name: eidr
-description: "eidr: a schema.org component word, fused from editEIDR, titleEIDR"
+description: Use when reasoning about eidr as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.
 ---
 
 # eidr
@@ -10,5 +10,7 @@ A schema.org component word, collided out of schema.org compounds — fused from
 Entangled with — [[edit]] · [[title]]
 
 Attested in schema.org — editEIDR · titleEIDR
+
+**Law — [[law]]: eidr is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**
 
 @standard schema.org — the type vocabulary, collided to single words

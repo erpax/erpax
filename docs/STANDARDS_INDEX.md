@@ -2145,8 +2145,8 @@ src/query/fingerprint/index.test.ts:19: * @standard RFC 8785 JSON Canonicalizati
 src/query/fingerprint/index.ts:57: * @standard ISO/IEC 9075-2 SQL/Foundation (keyword inventory)
 src/query/fingerprint/index.ts:58: * @standard RFC 8785 JSON Canonicalization Scheme (for params digest)
 src/query/fingerprint/index.ts:59: * @standard NIST FIPS 180-4 SHA-256
-src/readme/index.ts:29: * @standard ISO/IEC-25010:2023 §5.4 reusability (one scan → the README)
-src/readme/index.ts:30: * @standard ISO-19011:2018 §6.4 audit-evidence (every number traces to a source)
+src/readme/index.ts:41: * @standard ISO/IEC-25010:2023 §5.4 reusability (one scan → the README)
+src/readme/index.ts:42: * @standard ISO-19011:2018 §6.4 audit-evidence (every word traces to a source)
 src/realtime/index.ts:9: * @standard append-only log + cursor (the pull-based realtime model)
 src/realtime/translator/index.ts:9: * @standard interlingua (language-independent meaning) over the realtime tail
 src/receipt/index.ts:10: * @standard RFC 8785 JSON canonicalization (the content the uuid addresses)
@@ -5797,7 +5797,7 @@ src/query/fingerprint/index.test.ts:20: * @audit Conservation Law 8 + Law 47 (co
 src/query/fingerprint/index.ts:60: * @audit Conservation Law 8  content-addressable integrity (the queryUuid itself)
 src/query/fingerprint/index.ts:61: * @audit Conservation Law 47 type uuid (ContentUuid<SqlQuery> is the type-level brand)
 src/query/fingerprint/index.ts:62: * @audit Conservation Law 53 self-referential-closure (cached query result is the search-index fallback)
-src/readme/index.ts:31: * @audit the README is content-addressed to its sources — readme:check is the trail
+src/readme/index.ts:43: * @audit the README is content-addressed to its sources — readme:check is the trail
 src/reality/index.ts:9: * @audit reality = the live matrix root; computed, never hand-asserted
 src/receipts/index.ts:23: * @audit ISO-19011:2018 audit-trail
 src/receivable/aging.service.ts:11: * @audit ISO-19011:2018 audit-trail

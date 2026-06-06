@@ -71,7 +71,7 @@ export function tenantStripeWebhookEndpoint(props?: WebhookProps) {
       if (!webhookSecret || !secretKey) continue
 
       const stripe = new Stripe(secretKey, {
-        apiVersion: (apiVersion ?? '2026-04-22.dahlia') as '2026-04-22.dahlia',
+        apiVersion: (apiVersion ?? '2026-05-27.dahlia') as '2026-05-27.dahlia',
         appInfo: appInfo || {
           name: 'Stripe Payload Plugin',
           url: 'https://payloadcms.com',
@@ -92,7 +92,7 @@ export function tenantStripeWebhookEndpoint(props?: WebhookProps) {
       const wh = devStripeWebhookFallback()
       if (sk && wh) {
         const stripe = new Stripe(sk, {
-          apiVersion: (apiVersion ?? '2026-04-22.dahlia') as '2026-04-22.dahlia',
+          apiVersion: (apiVersion ?? '2026-05-27.dahlia') as '2026-05-27.dahlia',
           appInfo: appInfo || {
             name: 'Stripe Payload Plugin',
             url: 'https://payloadcms.com',

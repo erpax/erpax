@@ -1,8 +1,8 @@
 import { describe, it, expect } from 'vitest'
 import { render, sameRender } from '@/render'
 import { pixel } from '@/pixel'
-import { signalForStep, type HoroStep } from '@/signal'
-import { isHoroStep, composeSteps } from '@/horo'
+import { signalForStep } from '@/signal'
+import { isHoroStep, composeSteps, type HoroStep } from '@/horo'
 import { DOUBLING } from '@/rodin'
 
 describe('render — the full sensory pixel (uuid → colour + sound + vibration)', () => {

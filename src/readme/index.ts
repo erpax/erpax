@@ -1,51 +1,71 @@
 /**
- * readme — the repository README, COMPUTED.
+ * readme — the repository README, COMPUTED. No encoded prose: not one sentence.
  *
- * The README is not hand-maintained prose; it is a render target, the same as a
- * vitepress page (the SKILL.md corpus) or the standards catalogue. Every FACT in
- * it — the collection count, the atom / SKILL.md / index.ts / test.ts metrics, the
- * tech-stack versions, the whole script table, the gate steps, the Cloudflare
- * bindings + cron triggers, the standards count, the plugin pipeline, the core-atom
- * blurbs — is DERIVED at generation time from the live sources of truth:
+ * The README is a render target, the same as a vitepress page or the standards
+ * catalogue. The earlier generator still hand-wrote a "section skeleton and a few
+ * honest framing sentences" — that prose is now GONE. Every word emitted into
+ * README.md is read from a source of truth at generation time; this file hand-
+ * writes none of it. The corpus describes itself, in its own words.
  *
- *   package.json            → name · description · version · license · scripts · versions
- *   src/collections/index.ts→ the registered-collection count (the @/collections barrel)
- *   the src/ tree (fs scan) → top-level atoms · SKILL.md · index.ts · test.ts counts
- *   src/payload.config.ts   → the composed plugin pipeline + admin UI locales
- *   wrangler.jsonc          → the Cloudflare bindings + cron triggers
- *   src/standards/catalogue.ts → the governing-standards count
- *   <core-atom>/SKILL.md    → the core-concept blurbs (the antimatter, read live)
+ * The discipline, greppable: the ONLY string literals in this file are
+ *   (a) punctuation / markup glyphs — they carry no word, and
+ *   (b) source ADDRESSES — a path, an object key, or a regex anchor that names a
+ *       real, verifiable token in the repo (a file that exists, a config key that
+ *       exists). An address that points at a real thing is not entropy: rename the
+ *       thing and the generator breaks loudly. Many addresses double as the label
+ *       they render (the folder `collections` is both what we read and what we print).
+ * No literal asserts a fact about the project. The facts come from:
  *
- * The only fixed English is the section skeleton and a few honest framing sentences
- * (as in scripts/standards-catalogue.ts, which prints fixed headers over computed
- * rows). No timestamps, stable sorts, side-effect-free — so the output is
- * byte-deterministic and `--verify` can gate it. The README therefore CANNOT drift:
- * change a collection, a script, a binding, a standard, an atom — and the gate
- * (pnpm readme:check) fails until the README is regenerated (pnpm readme).
+ *   package.json              → name · description · version · license · scripts
+ *                               · dependencies (+ versions) · engines
+ *   src/collections/index.ts  → the registered-collection count (the @/collections barrel)
+ *   the src/ tree (fs scan)   → atom folders · SKILL.md · index.ts · test.ts counts
+ *   every atom SKILL.md       → the [[wikilink]] graph + each atom's own blurb (prose, live)
+ *   @/horo (the math)         → digitalRoot · the horo ring · the measure names
+ *   src/payload.config.ts     → the composed plugin pipeline + admin UI locales
+ *   wrangler.jsonc            → the Cloudflare binding kinds · bindings · cron triggers
+ *   src/standards/catalogue.ts→ the governing-standards count + families
  *
- *   pnpm readme           write README.md from the live tree
- *   pnpm readme:check     verify README.md is fresh (gate; exits 1 if stale)
+ * The CORE-ATOM spine is not a hand-picked list — that would be encoded. It is
+ * computed by the math: centrality over the code subgraph (how many of the atoms
+ * that carry an index.ts reference each concept) → the balance cut (the shortest
+ * prefix that holds half the centrality mass, Σfeatured = Σrest, the double-entry
+ * equilibrium) → ordered around the horo ring by digitalRoot of the centrality,
+ * tagged with the horo measure name. Change the corpus and the spine recomputes.
+ *
+ * No timestamps; stable sorts; integer math only (no float → byte-deterministic),
+ * so `--verify` can gate it. The README therefore CANNOT drift: change a collection,
+ * a script, a binding, a standard, an atom, a link — and `pnpm readme:check` fails
+ * until the README is regenerated (`pnpm readme`).
  *
  * @standard ISO/IEC-25010:2023 §5.4 reusability (one scan → the README)
- * @standard ISO-19011:2018 §6.4 audit-evidence (every number traces to a source)
+ * @standard ISO-19011:2018 §6.4 audit-evidence (every word traces to a source)
  * @audit the README is content-addressed to its sources — readme:check is the trail
  */
 import { readFileSync, readdirSync, lstatSync, existsSync, writeFileSync } from 'node:fs'
-import { join, dirname, resolve } from 'node:path'
+import { join, dirname, resolve, relative } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { digitalRoot, HORO_DIGITS, HORO_MEASURE } from '@/horo'
 
-const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..')
+const HERE = dirname(fileURLToPath(import.meta.url))
+const ROOT = resolve(HERE, '..', '..')
 const SRC = join(ROOT, 'src')
 const README = join(ROOT, 'README.md')
+const SELF = relative(ROOT, fileURLToPath(import.meta.url)) // src/readme/index.ts — derived, not typed
+const SELFDIR = relative(ROOT, HERE) // src/readme — used to discover the regen scripts
 const VERIFY = process.argv.includes('--verify')
 
 const read = (p: string): string => readFileSync(p, 'utf8')
 const readJson = (p: string): Record<string, unknown> => JSON.parse(read(p)) as Record<string, unknown>
 
-/** A backtick char, so README markdown code spans never fight the TS template quoting. */
-const BT = String.fromCharCode(96)
+// Glyphs — pure markup, no word. Built from char codes so this file contains no
+// quoted symbol either; extends the backtick precedent the old generator set.
+const BT = String.fromCharCode(96) // `
+const MIDDOT = String.fromCharCode(32, 183, 32) // " · "
+const EMDASH = String.fromCharCode(32, 8212, 32) // " — "
+const ARROW = String.fromCharCode(32, 8594, 32) // " → "
 const code = (s: string): string => BT + s + BT
-const fence = (lines: string[]): string => [BT.repeat(3) + 'bash', ...lines, BT.repeat(3)].join('\n')
+const codes = (xs: readonly string[]): string => xs.map(code).join(MIDDOT)
 
 // ─────────────────────────────────────────────────────────────────────────────
 // derive — every figure below is read from a real source, never asserted
@@ -54,25 +74,44 @@ const fence = (lines: string[]): string => [BT.repeat(3) + 'bash', ...lines, BT.
 const pkg = readJson(join(ROOT, 'package.json'))
 const scripts = (pkg.scripts ?? {}) as Record<string, string>
 const deps = (pkg.dependencies ?? {}) as Record<string, string>
-const devDeps = (pkg.devDependencies ?? {}) as Record<string, string>
 const engines = (pkg.engines ?? {}) as Record<string, string>
-const dep = (name: string): string => deps[name] ?? devDeps[name] ?? '—'
+const RUNNER = String(pkg.packageManager ?? '').split('@')[0]! // the declared package manager, e.g. pnpm
+
+/** Top-level atom names: a real folder under src/ holding a SKILL.md (symlink-skipping). */
+function atomNames(): string[] {
+  const out: string[] = []
+  let entries: string[]
+  try {
+    entries = readdirSync(SRC).sort()
+  } catch {
+    return out
+  }
+  for (const name of entries) {
+    if (name.startsWith('.')) continue
+    const full = join(SRC, name)
+    let st
+    try {
+      st = lstatSync(full)
+    } catch {
+      continue
+    }
+    if (st.isSymbolicLink() || !st.isDirectory()) continue
+    if (existsSync(join(full, 'SKILL.md'))) out.push(name)
+  }
+  return out
+}
 
 /** Walk src/, skipping symlinks (the .claude → src / src/skills → . loops) and dotdirs. */
 interface TreeMetrics {
-  depth1: number
   skill: number
   index: number
   test: number
-  hyphenated: number
 }
 function scanTree(): TreeMetrics {
-  let depth1 = 0
   let skill = 0
   let index = 0
   let test = 0
-  let hyphenated = 0
-  const walk = (dir: string, depth: number): void => {
+  const walk = (dir: string): void => {
     let entries: string[]
     try {
       entries = readdirSync(dir).sort()
@@ -89,18 +128,14 @@ function scanTree(): TreeMetrics {
         continue
       }
       if (st.isSymbolicLink() || !st.isDirectory()) continue
-      if (depth === 0) {
-        depth1++
-        if (name.includes('-')) hyphenated++
-      }
       if (existsSync(join(full, 'SKILL.md'))) skill++
       if (existsSync(join(full, 'index.ts'))) index++
       if (existsSync(join(full, 'test.ts'))) test++
-      walk(full, depth + 1)
+      walk(full)
     }
   }
-  walk(SRC, 0)
-  return { depth1, skill, index, test, hyphenated }
+  walk(SRC)
+  return { skill, index, test }
 }
 
 /** Count exported collections in the @/collections barrel (what Object.values(allCollections) yields). */
@@ -122,6 +157,14 @@ function standardsCount(): number {
   return m ? parseInt(m[1]!, 10) : 0
 }
 
+/** Distinct `family` values across the standards catalogue (the taxonomy buckets). */
+function standardFamilies(): string[] {
+  const cat = read(join(SRC, 'standards', 'catalogue.ts'))
+  const fams = new Set<string>()
+  for (const m of cat.matchAll(/["']?family["']?\s*:\s*["']([^"']+)["']/g)) fams.add(m[1]!)
+  return [...fams].sort()
+}
+
 /** The composed plugin pipeline (top-level calls in payload.config.ts `plugins: [ … ]`, in order). */
 function pluginPipeline(): string[] {
   const cfg = read(join(SRC, 'payload.config.ts'))
@@ -129,17 +172,15 @@ function pluginPipeline(): string[] {
   if (start < 0) return []
   const end = cfg.indexOf('\n  ],', start)
   const region = cfg.slice(start, end < 0 ? undefined : end)
-  // Each pipeline entry is a 4-space-indented call; allow an optional generic
-  // (multiTenantPlugin<Config>(…)) between the name and the opening paren.
   return [...region.matchAll(/^ {4}([a-zA-Z]\w*)(?:<[^>]*>)?\(/gm)].map((m) => m[1]!)
 }
 
-/** Official Payload packages this app composes (from package.json deps). */
-function payloadPackages(): string[] {
+/** Official Payload packages this app composes, each with its pinned version (from package.json deps). */
+function payloadPackages(): Array<[string, string]> {
   return Object.keys(deps)
     .filter((k) => k.startsWith('@payloadcms/'))
-    .map((k) => k.replace('@payloadcms/', ''))
     .sort()
+    .map((k) => [k, deps[k]!])
 }
 
 /** Admin UI locales (keys of payload.config.ts `supportedLanguages: { … }`). */
@@ -201,7 +242,7 @@ function stripJsonc(s: string): string {
   return out
 }
 
-/** Cloudflare bindings + cron triggers + the binding-kind sections present, from wrangler.jsonc. */
+/** Cloudflare binding kinds present + binding names + cron triggers, from wrangler.jsonc. */
 function cloudflare(): { bindings: string[]; crons: string[]; kinds: string[] } {
   const w = stripJsonc(read(join(ROOT, 'wrangler.jsonc')))
   const bindings = [
@@ -237,7 +278,7 @@ function fmValue(fm: string, key: string): string {
   return v.replace(/\\(["'])/g, '$1')
 }
 
-/** A core atom's name + first-sentence blurb, read live from its SKILL.md (null if absent). */
+/** An atom's name + first-sentence blurb, read live from its SKILL.md (null if absent). */
 function atomBlurb(slug: string): { name: string; desc: string } | null {
   const p = join(SRC, slug, 'SKILL.md')
   if (!existsSync(p)) return null
@@ -245,14 +286,13 @@ function atomBlurb(slug: string): { name: string; desc: string } | null {
   if (!fm) return null
   const raw = fmValue(fm[1]!, 'description').replace(/\s+/g, ' ').trim()
   if (!raw) return null
-  // First sentence if it ends within 200 chars; else truncate at a word boundary.
   let desc = raw
   const stop = raw.indexOf('. ')
   if (stop > 0 && stop < 200) {
     desc = raw.slice(0, stop + 1)
   } else if (raw.length > 200) {
     const cut = raw.slice(0, 200)
-    desc = cut.slice(0, cut.lastIndexOf(' ')).trimEnd() + '…'
+    desc = cut.slice(0, cut.lastIndexOf(' ')).trimEnd() + String.fromCharCode(8230)
   }
   return { name: fmValue(fm[1]!, 'name') || slug, desc }
 }
@@ -267,271 +307,213 @@ const clean = (cmd: string): string =>
     .trim()
 
 // ─────────────────────────────────────────────────────────────────────────────
-// build — fixed skeleton, computed substance
+// the math — the core-atom spine, computed (centrality → balance cut → horo ring)
+// ─────────────────────────────────────────────────────────────────────────────
+
+/** The horo ring as integers, computed from the real digitalRoot: the doubling
+ *  orbit of 1 (1·2·4·8·7·5), then the remaining residues (the 3·6·9 axis), 9 last. */
+function horoRing(): number[] {
+  const orbit: number[] = []
+  let x = 1
+  do {
+    orbit.push(x)
+    x = digitalRoot(x * 2)
+  } while (x !== 1)
+  const nine = Math.max(...HORO_DIGITS)
+  const rest = Array.from({ length: nine }, (_, i) => i + 1).filter((n) => !orbit.includes(n))
+  return [...orbit, ...rest]
+}
+
+/** The horo measure name for a ring digit (base/share/weave/crest/descent/round/unity),
+ *  or empty for the off-ring axis digits 3 & 6, which carry no measure. */
+const measureOf = (d: number): string => (HORO_DIGITS.includes(d as 1) ? HORO_MEASURE[HORO_DIGITS.indexOf(d as 1)]! : '')
+
+interface SpineAtom {
+  name: string
+  desc: string
+  digit: number
+  measure: string
+}
+
+/**
+ * The spine: each atom's centrality = how many atoms that carry an index.ts (the
+ * code subgraph) link to it via [[wikilink]] — the engineering core's own
+ * reference graph, which the generated schema.org-leaf boilerplate cannot inflate.
+ * Keep the balance cut (the shortest prefix holding half the total mass), then
+ * order by the horo ring through digitalRoot(centrality).
+ */
+function spine(): SpineAtom[] {
+  const atoms = atomNames()
+  const set = new Set(atoms)
+  const hasCode = (n: string): boolean => existsSync(join(SRC, n, 'index.ts'))
+
+  // out-links (distinct, lower-cased leaf) per atom
+  const outLinks = (a: string): Set<string> => {
+    const body = read(join(SRC, a, 'SKILL.md'))
+    const t = new Set<string>()
+    for (const m of body.matchAll(/\[\[([^\]|]+)(?:\|[^\]]*)?\]\]/g)) {
+      const leaf = m[1]!.trim().split('/').pop()!.toLowerCase()
+      if (set.has(leaf) && leaf !== a) t.add(leaf)
+    }
+    return t
+  }
+
+  // centrality = in-degree counting only links from code atoms
+  const centrality = new Map<string, number>()
+  for (const a of atoms) {
+    if (!hasCode(a)) continue
+    for (const t of outLinks(a)) centrality.set(t, (centrality.get(t) ?? 0) + 1)
+  }
+
+  const ranked = [...centrality.entries()].sort((x, y) => y[1] - x[1] || (x[0] < y[0] ? -1 : 1))
+  const total = ranked.reduce((s, [, v]) => s + v, 0)
+
+  // balance cut: smallest prefix whose mass reaches half of the whole (Σ ≥ Σ)
+  let acc = 0
+  let cut = 0
+  for (const [, v] of ranked) {
+    acc += v
+    cut++
+    if (acc * 2 >= total) break
+  }
+
+  const ring = horoRing()
+  const chosen: SpineAtom[] = []
+  for (const [name, c] of ranked.slice(0, cut)) {
+    const b = atomBlurb(name)
+    if (!b) continue
+    const digit = digitalRoot(c)
+    chosen.push({ name: b.name, desc: b.desc, digit, measure: measureOf(digit) })
+  }
+  // order by the horo ring; within a band by centrality (already ranked) then name
+  return chosen.sort(
+    (a, b) => ring.indexOf(a.digit) - ring.indexOf(b.digit) || (a.name < b.name ? -1 : a.name > b.name ? 1 : 0),
+  )
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// build — markup is logic; every word is read from a source
 // ─────────────────────────────────────────────────────────────────────────────
 
 function build(): string {
   const t = scanTree()
   const collections = countCollections()
   const standards = standardsCount()
+  const families = standardFamilies()
   const pipeline = pluginPipeline()
+  const payload = payloadPackages()
   const locales = localeCount()
   const cf = cloudflare()
-  const name = String(pkg.name ?? 'erpax')
-  const version = String(pkg.version ?? '0.0.0')
-  const license = String(pkg.license ?? 'UNLICENSED')
+  const core = spine()
+
+  const name = String(pkg.name ?? '')
+  const description = String(pkg.description ?? '')
+  const version = String(pkg.version ?? '')
+  const license = String(pkg.license ?? '')
+
+  // the regen commands, discovered (no key typed): the scripts that run this file
+  const regen = Object.keys(scripts)
+    .filter((k) => clean(scripts[k]!).includes(SELFDIR))
+    .map((k) => code(RUNNER + ' ' + k))
 
   const L: string[] = []
   const p = (...lines: string[]): void => {
     L.push(...lines)
   }
+  const H = (slug: string): string => '## ' + slug // heading = a sourced token (folder / pkg key)
 
-  // banner — invisible on GitHub; the contract that this file is generated
+  // banner — the contract that this file is generated; only the generator path,
+  // the source paths it reads, and the regen commands. Not one English word.
   p(
-    '<!-- GENERATED by src/readme — the README is COMPUTED, not hand-written. Do not edit by hand. -->',
-    '<!-- Every figure is derived from: package.json · src/collections · the src/ tree · src/payload.config.ts · wrangler.jsonc · src/standards/catalogue.ts -->',
-    '<!-- Regenerate: pnpm readme   ·   verify (gate): pnpm readme:check -->',
+    '<!-- ' +
+      [
+        SELF,
+        'package.json',
+        join('src', 'collections', 'index.ts'),
+        join('src', '*', 'SKILL.md'),
+        join('src', 'payload.config.ts'),
+        'wrangler.jsonc',
+        join('src', 'standards', 'catalogue.ts'),
+        ...regen.map((r) => r.replace(new RegExp(BT, 'g'), '')),
+      ].join(MIDDOT) +
+      ' -->',
     '',
   )
 
-  // title + tagline (fixed editorial framing — the only prose, kept honest + minimal)
-  p(
-    `# ${name} — multi-tenant ERP & double-entry accounting on Payload CMS + Cloudflare`,
-    '',
-    `> ${String(pkg.description ?? '')}`,
-    '',
-    'erpax is **two true things at once**: a working multi-tenant **ERP / double-entry accounting** platform on Payload CMS v4 (serverless on Cloudflare — D1 + R2 + Workers via OpenNext), and a **content-addressed skill corpus** where every concept is a one-word folder under `src/`. You can run it as a plain ERP and ignore the experiment. It was ported from two ~20-year-old Rails/ActiveAdmin production systems (`ceccec/erpax` + `ceccec/etrima`).',
-    '',
-    '> **This README is generated.** It is a render target like any other — run `pnpm readme` and every number below is recomputed from the live tree, so it cannot drift. Edit `src/readme`, never `README.md`.',
-    '',
-  )
+  // title + tagline — package.json name + description, nothing added
+  p('# ' + name, '', '> ' + description, '')
 
-  // by the numbers — 100% computed
-  p(
-    '## By the numbers',
-    '',
-    'Computed from the live tree by `src/readme` — never asserted, never rounded.',
-    '',
-    '| Metric | Value |',
-    '| --- | --- |',
-    `| Collections registered (the \`@/collections\` barrel) | **${collections}** |`,
-    `| Top-level \`src/<word>\` atom folders | **${t.depth1}** |`,
-    `| Concept atoms (\`SKILL.md\` files) | **${t.skill}** |`,
-    `| Data atoms (\`index.ts\` files) | **${t.index}** |`,
-    `| Colocated proofs (\`test.ts\` files) | **${t.test}** |`,
-    `| Governing standards catalogued | **${standards}** |`,
-    `| Payload plugins composed | **${pipeline.length}** |`,
-    `| Admin UI locales | **${locales}** |`,
-    `| Cloudflare bindings | **${cf.bindings.length}** |`,
-    '',
-  )
-
-  // what it is (fixed, short)
-  p(
-    '## What it is',
-    '',
-    '- **Multi-tenant ERP** — general ledger, multi-currency invoicing, payments, bank reconciliation, tax, inventory, manufacturing, commerce, agriculture, statutory reporting.',
-    '- **Double-entry as an invariant** — `Σdebit = Σcredit` is enforced as a Payload `beforeChange` precondition; an unbalanced write is rejected at validation time, not flagged after.',
-    '- **Content-addressed identity** — object identity is an [RFC 9562](https://www.rfc-editor.org/rfc/rfc9562) v8 UUID derived from content: same content ⇒ same id ⇒ safe dedup / merge / federation, misalignment detectable.',
-    '- **Standards bound to code** — `@standard` JSDoc banners name the governing standard each file implements; a gate verifies them and a generator compiles them into a queryable catalogue that seeds both the data and the docs.',
-    '- **Serverless** — Cloudflare D1 (SQLite), R2 (objects), Workers AI, Queues, Durable Objects, via OpenNext. D1 is free-tier eligible for small/test deployments.',
-    '',
-  )
-
-  // tech stack — computed from package.json
-  const stack: Array<[string, string]> = [
-    ['Backend / CMS', `Payload \`${dep('payload')}\``],
-    ['Front end', `Next.js \`${dep('next')}\`, React \`${dep('react')}\``],
-    ['Language', `TypeScript \`${dep('typescript')}\``],
-    ['Database', `Cloudflare D1 (SQLite) — \`@payloadcms/db-d1-sqlite\` \`${dep('@payloadcms/db-d1-sqlite')}\``],
-    ['Object storage', `Cloudflare R2 — \`@payloadcms/storage-r2\` \`${dep('@payloadcms/storage-r2')}\``],
-    ['Deploy', `\`@opennextjs/cloudflare\` \`${dep('@opennextjs/cloudflare')}\` + Wrangler \`${dep('wrangler')}\``],
-    ['Tests', `Vitest \`${dep('vitest')}\` (integration), Playwright \`${dep('@playwright/test')}\` (e2e)`],
-    ['Docs', `VitePress \`${dep('vitepress')}\``],
-    ['Runtime', `Node \`${engines.node ?? '—'}\`, pnpm \`${engines.pnpm ?? '—'}\``],
+  // the facts — counts, each labelled by the token it was read from
+  const facts: Array<[number, string]> = [
+    [collections, 'collections'],
+    [t.skill, 'SKILL.md'],
+    [t.index, 'index.ts'],
+    [t.test, 'test.ts'],
+    [standards, 'standards'],
+    [pipeline.length, 'plugins'],
+    [locales, 'supportedLanguages'],
+    [cf.bindings.length, 'bindings'],
   ]
-  p('## Tech stack', '', '| Layer | Choice |', '| --- | --- |')
-  for (const [layer, choice] of stack) p(`| ${layer} | ${choice} |`)
-  p(
-    '',
-    '> Payload is pinned to a `4.0.0-internal` build — do not assume public-release semver. The production build uses **webpack** (`next build --webpack`) so OpenNext can resolve package names. **Vitest runs single-threaded on purpose** (D1/SQLite lock contention). Tests are colocated as `src/**/*.test.ts`.',
-    '',
-  )
+  for (const [n, label] of facts) p('- **' + n + '** ' + code(label))
+  p('')
 
-  // quick start (fixed commands; presence is real because they're in scripts)
-  p(
-    '## Quick start',
-    '',
-    fence([
-      'pnpm install        # install dependencies',
-      'pnpm setup          # generate PAYLOAD_SECRET, prompt for Cloudflare bindings, write .env.local',
-      'pnpm dev            # local Payload admin + Next.js on http://localhost:3000',
-    ]),
-    '',
-    'The only strictly required secret is `PAYLOAD_SECRET` (32-byte hex, e.g. `openssl rand -hex 32`); `pnpm setup` generates it. `CLOUDFLARE_ENV` + `NEXT_PUBLIC_SERVER_URL` are needed for deploys. See [`.env.example`](.env.example).',
-    '',
-  )
+  // the spine — core atoms, computed by the math, ordered around the horo ring
+  p(H('atom'), '')
+  for (const a of core) {
+    const tag = a.measure ? ' ' + String.fromCharCode(42) + a.measure + String.fromCharCode(42) : ''
+    p('- **' + a.name + '**' + tag + EMDASH + a.desc)
+  }
+  p('')
 
-  // scripts — fully computed, grouped by namespace
-  p('## Scripts', '', `All ${Object.keys(scripts).length} npm scripts, grouped — computed from ${code('package.json')}.`, '')
+  // scripts — every npm script, grouped by its `:` namespace, key + command both sourced
+  p(H('scripts'), '')
   const groups = new Map<string, string[]>()
   for (const key of Object.keys(scripts)) {
     const g = key.split(':')[0]!
     if (!groups.has(g)) groups.set(g, [])
     groups.get(g)!.push(key)
   }
-  p('| Command | Runs |', '| --- | --- |')
   for (const g of [...groups.keys()].sort()) {
-    for (const key of groups.get(g)!) {
-      p(`| ${code('pnpm ' + key)} | ${code(clean(scripts[key]!))} |`)
-    }
+    for (const key of groups.get(g)!) p('- ' + code('pnpm ' + key) + EMDASH + code(clean(scripts[key]!)))
   }
   p('')
 
-  // the gate — computed by parsing the `check` chain
-  p('## The gate', '', 'One command decides whether a change is acceptable:', '', fence(['pnpm check']), '')
-  const checkCmd = scripts.check ?? ''
-  const steps = checkCmd
-    .split('&&')
-    .map((s) => s.trim())
-    .filter(Boolean)
-  if (steps.length) {
-    p('It runs, in order, and exits non-zero on the **first** failure:', '')
-    let i = 0
-    for (const step of steps) {
-      i++
-      const m = step.match(/pnpm run (\S+)/)
-      const note = m && scripts[m[1]!] ? ` — ${code(clean(scripts[m[1]!]!))}` : ''
-      p(`${i}. ${code(step)}${note}`)
-    }
-    p('', 'Exit 0 only when all pass. A separate pre-push gate adds further checks.', '')
-  }
-
-  // architecture — computed plugin pipeline + computed core atoms + honest note
-  p('## Architecture', '')
+  // plugins — the composed pipeline (in order) + the official packages with versions
   if (pipeline.length) {
+    p(H('plugins'), '', pipeline.map(code).join(ARROW), '')
+    if (payload.length) p(payload.map(([k, v]) => code(k) + ' ' + code(v)).join(MIDDOT), '')
+  }
+
+  // dependencies — the full runtime set, each with its pinned version
+  const runtime = Object.keys(deps).sort()
+  if (runtime.length) {
+    p(H('dependencies'), '', runtime.map((k) => code(k) + ' ' + code(deps[k]!)).join(MIDDOT), '')
+  }
+  if (engines.node || engines.pnpm) {
     p(
-      `### Plugin pipeline (${pipeline.length}, in composition order)`,
-      '',
-      'Payload plugins are pure functions `(config) => config`. erpax composes them, in this order, in `src/payload.config.ts`:',
-      '',
-      pipeline.map((n) => code(n)).join(' → '),
-      '',
-      `Built on the official Payload packages: ${payloadPackages().map(code).join(', ')}.`,
+      Object.keys(engines)
+        .sort()
+        .map((k) => code(k) + ' ' + code(engines[k]!))
+        .join(MIDDOT),
       '',
     )
   }
-  const coreSlugs = [
-    'law',
-    'atom',
-    'trinity',
-    'uuid',
-    'identity',
-    'merge',
-    'sequence',
-    'entry',
-    'balance',
-    'access',
-    'tenants',
-    'standards',
-    'collapse',
-    'horo',
-    'payload',
-    'vitepress',
-  ]
-  const blurbs = coreSlugs.map((s) => ({ slug: s, b: atomBlurb(s) })).filter((x) => x.b)
-  if (blurbs.length) {
-    p(
-      '### Core atoms',
-      '',
-      'The spine of the corpus — each is a one-word folder; its full prose is its `SKILL.md` (read live here):',
-      '',
-    )
-    for (const { slug, b } of blurbs) p(`- **[${b!.name}](src/${slug}/SKILL.md)** — ${b!.desc}`)
-    p('')
-  }
-  p(
-    '### What is real vs an ordering principle',
-    '',
-    'An honest split, kept visible rather than oversold:',
-    '',
-    '- **Real, load-bearing engineering** — the content-UUID identity, the double-entry `beforeChange` invariant, the `@standard` banner gate + catalogue, multi-tenant row-level scoping, the self-documenting "trinity" (`index.ts` + `SKILL.md` + generated `payload-types` fused into one VitePress page), and this computed README.',
-    '- **Aesthetic ordering principle** — the "horo" ring `{1,2,4,8,7,5,9}` and Rodin/digital-root framing are a real, tested *state algebra* (see `src/horo`), but the A432 / musical / numerological narrative around it is a naming convention, not an engineering claim.',
-    '- **A direction of travel, not a finished state** — "collapse" toward a dense core is a goal; ' +
-      `**${collections}** collections exist today.`,
-    '',
-  )
 
-  // cloudflare — computed bindings + crons
-  p(
-    '## Cloudflare',
-    '',
-    `Deployed as a Worker (\`worker.ts\`) via OpenNext. Binding kinds in [\`wrangler.jsonc\`](wrangler.jsonc): ${cf.kinds.map(code).join(', ')}.`,
-    '',
-    `**${cf.bindings.length} bindings:** ${cf.bindings.map(code).join(', ')}.`,
-    '',
-  )
-  if (cf.crons.length) {
-    p(`**Cron triggers:** ${cf.crons.map((c) => code(c)).join(', ')} (Payload job sweep + BG/БНБ daily rates sync).`, '')
-  }
-  p(
-    fence(['pnpm deploy        # migrate D1 → PRAGMA optimize → opennext build + deploy', 'pnpm preview       # local Cloudflare preview']),
-    '',
-  )
+  // standards — the count + the taxonomy families, from the catalogue
+  p(H('standards'), '', '**' + standards + '** ' + code('@standard'), '')
+  if (families.length) p(codes(families), '')
 
-  // standards
-  p(
-    '## Standards',
-    '',
-    `**${standards}** governing standards (IFRS, US-GAAP, ISO, RFC, NIST, GDPR, EN-16931, SAF-T, Bulgarian Наредба Н-18, …) are declared as \`@standard\` banners across \`src/\`, verified by \`pnpm standards\`, and compiled into a queryable catalogue (\`src/standards/catalogue.ts\`) that seeds both the Payload data and the docs site. Compliance is by construction, not post-hoc audit.`,
-    '',
-  )
+  // cloudflare — the binding kinds present, the bindings, the cron triggers
+  p(H('cloudflare'), '')
+  if (cf.kinds.length) p(codes(cf.kinds), '')
+  if (cf.bindings.length) p(codes(cf.bindings), '')
+  if (cf.crons.length) p(codes(cf.crons), '')
 
-  // contributing
-  p(
-    '## Contributing',
-    '',
-    'erpax grows by accretion of atoms, with the gate keeping the whole green.',
-    '',
-    '1. **Write the atom** — create/edit `src/<word>/SKILL.md` (frontmatter `name` + `description`; prose with `[[wikilinks]]`). If it backs data, add `index.ts` (a `CollectionConfig` with `@standard` banners where a standard applies) and a colocated `test.ts`.',
-    '2. **Wire the corpus** — `pnpm atoms:catalogue`, `pnpm aura:scan` (a dead `[[link]]` is a prompt to mint the atom it points at), `pnpm corpus:generate`.',
-    '3. **Confirm + regenerate** — `pnpm confirm` (per-edit) and `pnpm readme` if you touched anything the README counts.',
-    '4. **Pass the gate** — `pnpm check` must exit 0 and `pnpm docs:build` must succeed.',
-    '',
-    'House rules: **DRY, no backward-compat** (delete dead code; the DB + migrations are disposable, regenerated from config) and **name by generic data type, in one word** (`sales`, not `supto-sales`; regulatory refs live in `@standard` banners).',
-    '',
-  )
+  // version · license — package.json
+  p(H('license'), '', code(version) + MIDDOT + code(license), '')
 
-  // documentation
-  p(
-    '## Documentation',
-    '',
-    'The `SKILL.md` corpus is served as a VitePress site — `pnpm docs:dev`. Reference docs:',
-    '',
-    '- [`docs/ARCHITECTURE_MAP.md`](docs/ARCHITECTURE_MAP.md) — layered architecture + collection map',
-    '- [`docs/BUSINESS_CHAINS.md`](docs/BUSINESS_CHAINS.md) — end-to-end business workflows',
-    '- [`docs/STANDARDS.md`](docs/STANDARDS.md) — standards taxonomy + the `@standard` banner grammar',
-    '- Entry points into the corpus: [`src/SKILL.md`](src/SKILL.md), [`src/readme/SKILL.md`](src/readme/SKILL.md), [`src/atom/SKILL.md`](src/atom/SKILL.md), [`src/uuid/SKILL.md`](src/uuid/SKILL.md)',
-    '',
-  )
-
-  // project facts + license — computed
-  p(
-    '## Project facts',
-    '',
-    `- **Name:** ${name} · **Version:** ${version} · **License:** ${license}`,
-    `- **Scope:** ${collections} Payload collections · ${t.skill} \`SKILL.md\` atoms · ${standards} standards · ${pipeline.length} plugins · ${locales} locales`,
-    '- **Upstream:** ported from `ceccec/erpax` + `ceccec/etrima` (Rails / ActiveAdmin)',
-    '',
-    '## License',
-    '',
-    `${license}.`,
-    '',
-    '---',
-    '',
-    '<sub>Generated by [`src/readme/index.ts`](src/readme/index.ts). Do not edit `README.md` by hand — run `pnpm readme`.</sub>',
-    '',
-  )
+  // footer — the generator + the regen commands, derived
+  p('---', '', '<sub>' + code(SELF) + MIDDOT + regen.join(MIDDOT) + '</sub>', '')
 
   return L.join('\n')
 }
@@ -551,8 +533,8 @@ if (VERIFY) {
   console.log('OK — README.md is fresh (computed from the live tree).')
 } else {
   writeFileSync(README, fresh)
-  const t = scanTree()
+  const c = spine().length
   console.log(
-    `readme: wrote README.md — ${countCollections()} collections · ${t.skill} SKILL.md · ${standardsCount()} standards · ${pluginPipeline().length} plugins · ${localeCount()} locales.`,
+    `readme: wrote README.md — ${countCollections()} collections · ${scanTree().skill} SKILL.md · ${standardsCount()} standards · ${pluginPipeline().length} plugins · ${c} core atoms (balance cut · horo ring).`,
   )
 }

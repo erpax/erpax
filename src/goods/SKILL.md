@@ -1,6 +1,6 @@
 ---
 name: goods
-description: "goods: a schema.org component word, fused from HomeGoodsStore, SportingGoodsStore"
+description: Use when reasoning about goods as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.
 ---
 
 # goods
@@ -10,5 +10,7 @@ A schema.org component word, collided out of schema.org compounds — fused from
 Entangled with — [[home]] · [[store]] · [[sporting]]
 
 Attested in schema.org — HomeGoodsStore · SportingGoodsStore
+
+**Law — [[law]]: goods is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**
 
 @standard schema.org — the type vocabulary, collided to single words

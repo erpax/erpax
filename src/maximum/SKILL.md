@@ -1,6 +1,6 @@
 ---
 name: maximum
-description: "maximum: a schema.org component word, fused from MaximumDoseSchedule, maximumAttendeeCapacity, maximumEnrollment, maximumIntake, maximumPhysicalAttendeeCapacity, maximumVirtualAttendeeCapacity"
+description: Use when reasoning about maximum as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.
 ---
 
 # maximum
@@ -10,5 +10,7 @@ A schema.org component word, collided out of schema.org compounds — fused from
 Entangled with — [[dose]] · [[schedule]] · [[attendee]] · [[capacity]] · [[enrollment]] · [[intake]] · [[physical]] · [[virtual]]
 
 Attested in schema.org — MaximumDoseSchedule · maximumAttendeeCapacity · maximumEnrollment · maximumIntake · maximumPhysicalAttendeeCapacity · maximumVirtualAttendeeCapacity
+
+**Law — [[law]]: maximum is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**
 
 @standard schema.org — the type vocabulary, collided to single words

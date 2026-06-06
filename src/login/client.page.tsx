@@ -53,7 +53,7 @@ export const Login = ({ tenantSlug, tenantDomain, labels }: Props) => {
       }
 
       if (json.user) {
-        const redirectTo = searchParams.get('redirect')
+        const redirectTo = searchParams?.get('redirect')
         if (redirectTo) {
           router.push(redirectTo)
           return

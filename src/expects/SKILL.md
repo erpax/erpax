@@ -1,6 +1,6 @@
 ---
 name: expects
-description: "expects: a schema.org component word, fused from expectsAcceptanceOf"
+description: Use when reasoning about expects as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.
 ---
 
 # expects
@@ -10,5 +10,7 @@ A schema.org component word, collided out of schema.org compounds — fused from
 Entangled with — [[acceptance]]
 
 Attested in schema.org — expectsAcceptanceOf
+
+**Law — [[law]]: expects is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**
 
 @standard schema.org — the type vocabulary, collided to single words

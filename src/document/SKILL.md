@@ -1,6 +1,6 @@
 ---
 name: document
-description: "document: a schema.org component word, fused from DigitalDocument, DigitalDocumentPermission, DigitalDocumentPermissionType, NoteDigitalDocument, PresentationDigitalDocument, SpreadsheetDigitalDocumen"
+description: Use when reasoning about document as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.
 ---
 
 # document
@@ -10,5 +10,7 @@ A schema.org component word, collided out of schema.org compounds — fused from
 Entangled with — [[digital]] · [[permission]] · [[type]] · [[note]] · [[presentation]] · [[spreadsheet]] · [[text]] · [[has]]
 
 Attested in schema.org — DigitalDocument · DigitalDocumentPermission · DigitalDocumentPermissionType · NoteDigitalDocument · PresentationDigitalDocument · SpreadsheetDigitalDocument · TextDigitalDocument · hasDigitalDocumentPermission
+
+**Law — [[law]]: document is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**
 
 @standard schema.org — the type vocabulary, collided to single words

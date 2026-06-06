@@ -1,6 +1,6 @@
 ---
 name: year
-description: "year: a schema.org component word, fused from copyrightYear, termsPerYear, yearBuilt"
+description: Use when reasoning about year as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.
 ---
 
 # year
@@ -10,5 +10,7 @@ A schema.org component word, collided out of schema.org compounds — fused from
 Entangled with — [[copyright]] · [[terms]] · [[built]]
 
 Attested in schema.org — copyrightYear · termsPerYear · yearBuilt
+
+**Law — [[law]]: year is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**
 
 @standard schema.org — the type vocabulary, collided to single words

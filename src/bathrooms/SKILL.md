@@ -1,6 +1,6 @@
 ---
 name: bathrooms
-description: "bathrooms: a schema.org component word, fused from numberOfBathroomsTotal, numberOfFullBathrooms, numberOfPartialBathrooms"
+description: Use when reasoning about bathrooms as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.
 ---
 
 # bathrooms
@@ -10,5 +10,7 @@ A schema.org component word, collided out of schema.org compounds — fused from
 Entangled with — [[number]] · [[total]] · [[full]] · [[partial]]
 
 Attested in schema.org — numberOfBathroomsTotal · numberOfFullBathrooms · numberOfPartialBathrooms
+
+**Law — [[law]]: bathrooms is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**
 
 @standard schema.org — the type vocabulary, collided to single words

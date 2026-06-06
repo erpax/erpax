@@ -1,6 +1,6 @@
 ---
 name: diversity
-description: "diversity: a schema.org component word, fused from diversityPolicy, diversityStaffingReport"
+description: Use when reasoning about diversity as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.
 ---
 
 # diversity
@@ -10,6 +10,8 @@ A schema.org component word, collided out of schema.org compounds — fused from
 Entangled with — [[policy]] · [[staffing]] · [[report]]
 
 Attested in schema.org — diversityPolicy · diversityStaffingReport
+
+**Law — [[law]]: diversity is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**
 
 @standard schema.org — the type vocabulary, collided to single words
 

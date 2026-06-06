@@ -1,6 +1,6 @@
 ---
 name: government
-description: "government: a schema.org component word, fused from GovernmentBenefitsType, GovernmentBuilding, GovernmentOffice, GovernmentOrganization, GovernmentPermit, GovernmentService"
+description: Use when reasoning about government as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.
 ---
 
 # government
@@ -10,5 +10,7 @@ A schema.org component word, collided out of schema.org compounds — fused from
 Entangled with — [[benefits]] · [[type]] · [[building]] · [[office]] · [[organization]] · [[permit]] · [[service]] · [[info]]
 
 Attested in schema.org — GovernmentBenefitsType · GovernmentBuilding · GovernmentOffice · GovernmentOrganization · GovernmentPermit · GovernmentService · governmentBenefitsInfo
+
+**Law — [[law]]: government is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**
 
 @standard schema.org — the type vocabulary, collided to single words

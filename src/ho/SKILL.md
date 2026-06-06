@@ -1,6 +1,6 @@
 ---
 name: ho
-description: "ho: a schema.org component word, fused from cvdNumC19HOPats"
+description: Use when reasoning about ho as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.
 ---
 
 # ho
@@ -10,5 +10,7 @@ A schema.org component word, collided out of schema.org compounds — fused from
 Entangled with — [[cvd]] · [[num]] · [[pats]]
 
 Attested in schema.org — cvdNumC19HOPats
+
+**Law — [[law]]: ho is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**
 
 @standard schema.org — the type vocabulary, collided to single words

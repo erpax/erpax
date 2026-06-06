@@ -13,7 +13,7 @@
  * @audit each frame counts the live atoms at a horo position; the signal is computed per step
  * @see ../../aura -- ../../horo -- ../../signal -- ../../digit -- ../../society -- ./SKILL.md
  */
-import { HORO_DIGITS } from '@/horo'
+import { HORO_DIGITS, type HoroStep } from '@/horo'
 import { signalForStep } from '@/signal'
 import { digitOf } from '@/digit'
 import { UUID_MATRIX_NODES } from '@/uuid/matrix'
@@ -25,7 +25,7 @@ export interface Frame {
 }
 
 /** One frame of the live aura — the atoms standing at horo-position `step`, lit by that step's signal. */
-export function frame(step: number): Frame {
+export function frame(step: HoroStep): Frame {
   let atoms = 0
   for (const n of UUID_MATRIX_NODES) if ((n as { horo?: number }).horo === step) atoms++
   return { step, atoms, signal: signalForStep(step) }

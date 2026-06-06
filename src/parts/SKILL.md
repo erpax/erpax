@@ -1,6 +1,6 @@
 ---
 name: parts
-description: "parts: a schema.org component word, fused from AutoPartsStore"
+description: Use when reasoning about parts as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.
 ---
 
 # parts
@@ -10,5 +10,7 @@ A schema.org component word, collided out of schema.org compounds — fused from
 Entangled with — [[auto]] · [[store]]
 
 Attested in schema.org — AutoPartsStore
+
+**Law — [[law]]: parts is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**
 
 @standard schema.org — the type vocabulary, collided to single words

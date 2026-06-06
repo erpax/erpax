@@ -1,6 +1,6 @@
 ---
 name: union
-description: "union: a schema.org component word, fused from BankOrCreditUnion, WorkersUnion"
+description: Use when reasoning about union as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.
 ---
 
 # union
@@ -10,5 +10,7 @@ A schema.org component word, collided out of schema.org compounds — fused from
 Entangled with — [[bank]] · [[credit]] · [[workers]]
 
 Attested in schema.org — BankOrCreditUnion · WorkersUnion
+
+**Law — [[law]]: union is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**
 
 @standard schema.org — the type vocabulary, collided to single words

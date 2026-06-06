@@ -12,7 +12,7 @@ describe('quantum/consultant — covers all aspects of life, trained by coordina
   })
   it('coordinated brainstorming diverges then converges (throws on no perspective)', () => {
     expect(brainstorm(['a', 'b', 'c'], (c) => c.join('+'))).toBe('a+b+c')
-    expect(() => brainstorm([], (c) => c.join('+'))).toThrow()
+    expect(() => brainstorm<string>([], (c) => c.join('+'))).toThrow()
   })
   it('a cache-hit consultation is infinite ROI; a miss amortises its sunk cost', () => {
     expect(consultationRoi(100, true)).toBe(Number.POSITIVE_INFINITY)

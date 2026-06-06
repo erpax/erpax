@@ -1,6 +1,6 @@
 ---
 name: actionable
-description: "actionable: a schema.org component word, fused from actionableFeedbackPolicy"
+description: Use when reasoning about actionable as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.
 ---
 
 # actionable
@@ -10,5 +10,7 @@ A schema.org component word, collided out of schema.org compounds — fused from
 Entangled with — [[feedback]] · [[policy]]
 
 Attested in schema.org — actionableFeedbackPolicy
+
+**Law — [[law]]: actionable is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**
 
 @standard schema.org — the type vocabulary, collided to single words
