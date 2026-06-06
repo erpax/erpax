@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "chem",
-    "uuid": "4df6fdbd-29f0-8b24-91ab-70228b28687d",
+    "uuid": "9fce621d-459f-8248-8464-fc9e9c489672",
     "words": [
       "chem"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "chem: a schema.org component word, fused from BioChemEntity, bioChemInteraction, bioChemSimilarity, encodesBioChemEntity, hasBioChemEntityPart, isEncodedByBioChemEntity",
-    "uuid": "3992d89a-61d8-8323-b0af-e6d5d1a62211",
+    "source": "Use when reasoning about chem as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "1ca292b4-738b-8f77-bff8-8b9ce2723456",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "chem",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "biochementity",
-      "biocheminteraction",
-      "biochemsimilarity",
-      "encodesbiochementity",
-      "hasbiochementitypart",
-      "isencodedbybiochementity"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "chem: a schema.org component word, fused from BioChemEntity, bioChemInteraction, bioChemSimilarity, encodesBioChemEntity, hasBioChemEntityPart, isEncodedByBioChemEntity"
+      "en": "Use when reasoning about chem as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

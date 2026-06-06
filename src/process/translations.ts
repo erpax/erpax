@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "process",
-    "uuid": "ccef0d3f-d4cc-88e7-8a5f-c991bf1e0275",
+    "uuid": "dd32756e-eca3-86c6-9ef7-709b85296b40",
     "words": [
       "process"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "process: a schema.org component word, fused from actionProcess, isInvolvedInBiologicalProcess",
-    "uuid": "49cce2a5-cfdb-8b97-a1e5-1af6b97db8bc",
+    "source": "Use when reasoning about process as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "bffcaa71-e843-8e23-bb05-29c79bc00a75",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "process",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "actionprocess",
-      "isinvolvedinbiologicalprocess"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "process: a schema.org component word, fused from actionProcess, isInvolvedInBiologicalProcess"
+      "en": "Use when reasoning about process as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

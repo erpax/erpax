@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "charge",
-    "uuid": "b6917177-b27f-8be2-be6a-b6be87678ef1",
+    "uuid": "0135b4d8-b315-8dd7-b352-cae5831fafec",
     "words": [
       "charge"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "charge: a schema.org component word, fused from DeliveryChargeSpecification, PaymentChargeSpecification",
-    "uuid": "050e425a-926b-82ee-aea6-0c643f9b30af",
+    "source": "Use when reasoning about charge as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "9a03434c-3c7f-8572-8831-ef4b30ef66eb",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "charge",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "deliverychargespecification",
-      "paymentchargespecification"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "charge: a schema.org component word, fused from DeliveryChargeSpecification, PaymentChargeSpecification"
+      "en": "Use when reasoning about charge as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

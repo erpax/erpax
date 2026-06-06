@@ -1,5 +1,5 @@
 ---
-name: budget-planning
+name: budget-plannings
 description: Use when creating or approving period-budgets by department or cost-center — monthly, quarterly, annual — with GL line items, period-lock enforcement, segregation-of-duties on approval, and fiscal-year comparisons; IAS-1/IAS-8/ASC-270 financial presentation. The budget approval and planning register.
 ---
 

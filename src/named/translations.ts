@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "named",
-    "uuid": "fdf3390b-94ed-872c-80fd-ad1fc9030506",
+    "uuid": "25167d6b-3e8e-8a1e-927b-16d58d3b058c",
     "words": [
       "named"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "named: a schema.org component word, fused from namedPosition",
-    "uuid": "ce1a755a-80b4-84d1-8ae2-4ebe38fa4078",
+    "source": "Use when reasoning about named as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "41bf6a3a-deb4-8cf4-9331-9a024e0561a3",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "named",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "namedposition"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "named: a schema.org component word, fused from namedPosition"
+      "en": "Use when reasoning about named as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

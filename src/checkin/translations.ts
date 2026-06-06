@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "checkin",
-    "uuid": "f274147e-60d6-8d89-8e19-4841b1556fc4",
+    "uuid": "48e8b32c-efa0-8c67-a239-7e6b9375844f",
     "words": [
       "checkin"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "checkin: a schema.org component word, fused from checkinTime, webCheckinTime",
-    "uuid": "df3f3c82-3878-8274-b7ab-44f4ec924f6f",
+    "source": "Use when reasoning about checkin as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "2fe4b0b2-59f1-8d0e-9b80-11963019a422",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "checkin",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "checkintime",
-      "webcheckintime"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "checkin: a schema.org component word, fused from checkinTime, webCheckinTime"
+      "en": "Use when reasoning about checkin as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

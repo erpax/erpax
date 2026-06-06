@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "aircraft",
-    "uuid": "cdce1e34-a63a-8e1d-8143-31297f7132e4",
+    "uuid": "458aa72f-43cc-8633-b2e5-5c9ba8ea2a0a",
     "words": [
       "aircraft"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "The kind of aircraft (e.g., \\\"Boeing 747\\\").",
-    "uuid": "6e03de7a-ecb9-8cf1-9fc5-6b0702b55531",
+    "uuid": "749beaa5-9204-8e1e-8e16-3446b711261a",
     "words": [
       "the",
       "kind",

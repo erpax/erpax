@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "shares",
-    "uuid": "ec05a23a-3794-8e84-b814-53fbd063743a",
+    "uuid": "7abe7948-1544-805c-8cd2-2f23cf1c6bf3",
     "words": [
       "shares"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when granting, checking, or revoking uuid-based RBAC access (Law 59) — share bindings (granteeUuid, accessRole, targetUuid) per tenant over content-uuid-addressed resources; the access-control source of truth checkShare reads at read time, with each grant/revoke attested by a chain-linked audit leaf. Revocation is a soft flag, never a delete. The uuid-share RBAC binding collection.",
-    "uuid": "dfdb0c2d-d073-8168-b822-438516b807fa",
+    "uuid": "3a0f4166-df48-8e1c-b2a9-393d1d2c329e",
     "words": [
       "use",
       "when",

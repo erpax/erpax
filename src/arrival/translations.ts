@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "arrival",
-    "uuid": "ca7beea6-8660-8656-a385-aa9cd676a6e1",
+    "uuid": "e2f3657a-27e0-857c-b542-ef6a8c8e34c8",
     "words": [
       "arrival"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "arrival: a schema.org component word, fused from arrivalAirport, arrivalBoatTerminal, arrivalBusStop, arrivalGate, arrivalPlatform, arrivalStation",
-    "uuid": "67e0d029-ac3f-8d53-ae21-94efdc92fd2f",
+    "source": "Use when reasoning about arrival as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "8fd89194-7fa4-8d94-aadc-bd2e82f54444",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "arrival",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "arrivalairport",
-      "arrivalboatterminal",
-      "arrivalbusstop",
-      "arrivalgate",
-      "arrivalplatform",
-      "arrivalstation"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "arrival: a schema.org component word, fused from arrivalAirport, arrivalBoatTerminal, arrivalBusStop, arrivalGate, arrivalPlatform, arrivalStation"
+      "en": "Use when reasoning about arrival as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

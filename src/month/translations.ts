@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "month",
-    "uuid": "6e57b1e9-3dd5-8410-adeb-eb5132ac23c6",
+    "uuid": "511e9f38-4c00-8d6b-ae36-3d72012dff2e",
     "words": [
       "month"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Defines the month(s) of the year on which a recurring Event takes place. Specified as an Integer between 1-12. January is 1.",
-    "uuid": "f80f6a66-e1be-8f18-82e2-e00ad706c9ad",
+    "uuid": "56a27518-6677-8ab8-9173-29671bf2bfae",
     "words": [
       "defines",
       "the",

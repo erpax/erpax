@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "prevention",
-    "uuid": "5e385126-dfa0-8910-b5ec-a4f35ad87682",
+    "uuid": "6c4532dd-67eb-8c2b-a68e-7c6f61b1816d",
     "words": [
       "prevention"
     ],
@@ -17,24 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "prevention: a schema.org component word, fused from PreventionIndication, diseasePreventionInfo, primaryPrevention, secondaryPrevention",
-    "uuid": "cde3ba2f-2c86-85e2-a408-d0a2c6d80e77",
+    "source": "Use when reasoning about prevention as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "a09271dc-764a-885b-86a7-b4a95d126d3f",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "prevention",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "preventionindication",
-      "diseasepreventioninfo",
-      "primaryprevention",
-      "secondaryprevention"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "prevention: a schema.org component word, fused from PreventionIndication, diseasePreventionInfo, primaryPrevention, secondaryPrevention"
+      "en": "Use when reasoning about prevention as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

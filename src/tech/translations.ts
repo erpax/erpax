@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "tech",
-    "uuid": "ea348ca7-5855-84f5-a38d-57d8014f85b3",
+    "uuid": "41361c4a-cc8a-8754-869a-6bf4c0120088",
     "words": [
       "tech"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "tech: a schema.org component word, fused from TechArticle",
-    "uuid": "69960d2c-dca5-830d-b522-0da13b89f018",
+    "source": "Use when reasoning about tech as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "6061d1eb-d6d0-835c-9404-2d954ab9f353",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "tech",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "techarticle"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "tech: a schema.org component word, fused from TechArticle"
+      "en": "Use when reasoning about tech as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

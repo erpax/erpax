@@ -6,19 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "streams",
-    "uuid": "d5a08b68-93ec-81aa-8b2a-2b00f57d6192",
+    "source": "stream",
+    "uuid": "c83c3129-9323-8101-bdc0-f694664cf690",
     "words": [
-      "streams"
+      "stream"
     ],
     "values": {
-      "en": "streams"
+      "en": "stream"
     }
   },
   {
     "key": "description",
     "source": "Use when events must move as one continuous tamper-proof current rather than discrete steps — turning the event bus into a typed AsyncIterable, windowing it (tumbling/sliding/session), composing blocks stream-to-stream, and verifying causal Lamport order plus the streamUuid hash-chain.",
-    "uuid": "db0eb104-ff71-8820-af19-297ef0187790",
+    "uuid": "eff1c87c-737e-891d-87eb-959c2d128a16",
     "words": [
       "use",
       "when",

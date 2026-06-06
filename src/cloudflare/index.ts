@@ -155,8 +155,11 @@ export async function emitToQueue(env: ErpaxCfEnv, event: unknown): Promise<void
 //
 //   1. **Tenant scoping** — keys are namespaced by tenantId so
 //      cross-tenant reads are impossible without the wrapper consenting.
-//   2. **RBAC** — a `MediatorAuthorizer` callback (optional) is consulted
-//      before any operation; rejects throw before touching the binding.
+//   2. **RBAC** — a `MediatorAuthorizer` callback is consulted before
+//      EVERY operation; rejects throw before touching the binding.
+//      FAIL-CLOSED: if no authorizer is installed, the op is DENIED
+//      (enforceAuthorized throws) — binding access never proceeds
+//      un-gated. The authorizer is required, not optional.
 //   3. **Audit** — every call is journaled via `payload.create({
 //      collection: 'audit-events', data: { ... } })` so SOX §404 +
 //      ISO-19011 §6.4.6 evidence is automatic.
@@ -190,14 +193,64 @@ function nsKey(tenantId: string, key: string): string {
   return `t:${tenantId}/${key}`
 }
 
-/** Audit-trail one mediator call (best-effort; never blocks). */
+/**
+ * Enforce authorization on a binding op — FAIL-CLOSED.
+ *
+ * The previous pattern `await ctx.authorize?.(op)` was fail-OPEN: a
+ * mediator built WITHOUT an authorizer silently allowed every
+ * KV/R2/DO/AI/QUEUE/EMAIL/Vectorize/Browser/Workflows op. That is a
+ * negligent permissive default — an un-gated binding access should be
+ * impossible, not the default.
+ *
+ * This helper DENIES (throws) when no authorizer is installed, so the
+ * only way to touch a binding is to have explicitly wired an authorizer
+ * (e.g. plugin-helper's defaultAuthorize, or a tighter per-plugin one).
+ * On uncertainty we deny — never allow.
+ */
+async function enforceAuthorized(
+  ctx: MediatorContext,
+  op: {
+    binding: keyof ErpaxCfEnv
+    action: string
+    tenantId: string
+    user?: { id: string; role?: string }
+  },
+): Promise<void> {
+  if (!ctx.authorize) {
+    throw new Error(
+      `[cloudflare-mediator] DENIED ${String(op.binding)}/${op.action} — ` +
+        `no authorizer installed on the mediator context. A MediatorAuthorizer ` +
+        `MUST be supplied (see plugin-helper.erpaxMediator); binding access ` +
+        `cannot proceed un-gated (fail-closed).`,
+    )
+  }
+  await ctx.authorize(op)
+}
+
+/**
+ * Audit-trail one mediator call. The write does not block the binding op
+ * (a failed receipt must not take the data path down with it), BUT a
+ * dropped receipt is NEVER silently swallowed: it is surfaced as a
+ * structured warning so the missing-evidence event is observable. The
+ * law "every action is receipted" cannot be satisfied silently — an
+ * un-receipted op MUST leave a trace that the receipt was lost.
+ *
+ * Two distinct drop classes are surfaced:
+ *   - no payload bound (the receipt sink is absent entirely)
+ *   - the payload.create threw (sink present but the write failed)
+ */
 async function auditBindingCall(
   ctx: MediatorContext,
   binding: keyof ErpaxCfEnv,
   action: string,
   detail: Record<string, unknown>,
 ): Promise<void> {
-  if (!ctx.payload) return
+  if (!ctx.payload) {
+    // Fail-closed-with-signal: the op proceeded but produced no receipt
+    // because no audit sink is wired. Surface it — do not swallow.
+    reportAuditDrop({ binding, action, tenantId: ctx.tenantId, reason: 'no-payload-sink' })
+    return
+  }
   try {
     await ctx.payload.create({
       collection: 'audit-events',
@@ -210,15 +263,47 @@ async function auditBindingCall(
         userId: ctx.user?.id ?? 'system',
       },
     })
+  } catch (err) {
+    // The binding op already happened; we cannot un-do it. But we MUST
+    // NOT lose the fact that its receipt was dropped — surface it.
+    reportAuditDrop({
+      binding,
+      action,
+      tenantId: ctx.tenantId,
+      reason: 'audit-write-failed',
+      error: err,
+    })
+  }
+}
+
+/**
+ * Surface a dropped audit receipt. Centralised so the signal is uniform
+ * and a metrics sink can be wired here later without touching every
+ * call-site. NEVER throws (it is itself the last line of defence) but it
+ * NEVER stays silent either — a swallowed receipt is a law violation.
+ */
+function reportAuditDrop(info: {
+  binding: keyof ErpaxCfEnv
+  action: string
+  tenantId: string
+  reason: 'no-payload-sink' | 'audit-write-failed'
+  error?: unknown
+}): void {
+  const msg =
+    `[cloudflare-mediator] AUDIT RECEIPT DROPPED — binding=${String(info.binding)} ` +
+    `action=${info.action} tenant=${info.tenantId} reason=${info.reason}` +
+    (info.error !== undefined ? ` error=${String((info.error as { message?: unknown })?.message ?? info.error)}` : '')
+  try {
+    console.warn(msg)
   } catch {
-    /* swallow — audit best-effort; never block the binding op */
+    /* console itself unavailable — nothing more we can do, but we did not swallow silently. */
   }
 }
 
 /** KV mediator — tenant-scoped, audit-trailed. */
 export async function kvGet(ctx: MediatorContext, key: string): Promise<string | null> {
   if (!ctx.env.KV) return null
-  await ctx.authorize?.({ binding: 'KV', action: 'get', tenantId: ctx.tenantId, user: ctx.user })
+  await enforceAuthorized(ctx, { binding: 'KV', action: 'get', tenantId: ctx.tenantId, user: ctx.user })
   const v = await ctx.env.KV.get(nsKey(ctx.tenantId, key))
   await auditBindingCall(ctx, 'KV', 'get', { key })
   return v
@@ -231,7 +316,7 @@ export async function kvPut(
   opts?: { expirationTtl?: number },
 ): Promise<void> {
   if (!ctx.env.KV) return
-  await ctx.authorize?.({ binding: 'KV', action: 'put', tenantId: ctx.tenantId, user: ctx.user })
+  await enforceAuthorized(ctx, { binding: 'KV', action: 'put', tenantId: ctx.tenantId, user: ctx.user })
   await ctx.env.KV.put(nsKey(ctx.tenantId, key), value, opts)
   await auditBindingCall(ctx, 'KV', 'put', { key, ttl: opts?.expirationTtl })
 }
@@ -243,7 +328,7 @@ export async function r2Put(
   value: ArrayBuffer | string,
 ): Promise<void> {
   if (!ctx.env.R2) return
-  await ctx.authorize?.({ binding: 'R2', action: 'put', tenantId: ctx.tenantId, user: ctx.user })
+  await enforceAuthorized(ctx, { binding: 'R2', action: 'put', tenantId: ctx.tenantId, user: ctx.user })
   await ctx.env.R2.put(nsKey(ctx.tenantId, key), value)
   await auditBindingCall(ctx, 'R2', 'put', {
     key,
@@ -253,7 +338,7 @@ export async function r2Put(
 
 export async function r2Get(ctx: MediatorContext, key: string): Promise<ReadableStream | null> {
   if (!ctx.env.R2) return null
-  await ctx.authorize?.({ binding: 'R2', action: 'get', tenantId: ctx.tenantId, user: ctx.user })
+  await enforceAuthorized(ctx, { binding: 'R2', action: 'get', tenantId: ctx.tenantId, user: ctx.user })
   const obj = await ctx.env.R2.get(nsKey(ctx.tenantId, key))
   await auditBindingCall(ctx, 'R2', 'get', { key })
   return obj?.body ?? null
@@ -290,7 +375,7 @@ export async function auditChainAppend(
 ): Promise<Response | null> {
   const target = pickDoNamespace(ctx.env, 'chain', `tenant:${ctx.tenantId}`)
   if (!target) return null
-  await ctx.authorize?.({ binding: 'AUDIT_CHAIN_DO', action: 'append', tenantId: ctx.tenantId, user: ctx.user })
+  await enforceAuthorized(ctx, { binding: 'AUDIT_CHAIN_DO', action: 'append', tenantId: ctx.tenantId, user: ctx.user })
   const id = target.ns.idFromName(target.name)
   const stub = target.ns.get(id)
   const res = await stub.fetch(new Request('https://do/append', { method: 'POST', body: leafBytes }))
@@ -312,7 +397,7 @@ export async function auditChainAppend(
 export async function counterIncrement(ctx: MediatorContext, scopedKey: string, by = 1): Promise<number> {
   const target = pickDoNamespace(ctx.env, 'counter', nsKey(ctx.tenantId, scopedKey))
   if (!target) return 0
-  await ctx.authorize?.({ binding: 'TENANT_QUOTA', action: 'incr', tenantId: ctx.tenantId, user: ctx.user })
+  await enforceAuthorized(ctx, { binding: 'TENANT_QUOTA', action: 'incr', tenantId: ctx.tenantId, user: ctx.user })
   const id = target.ns.idFromName(target.name)
   const stub = target.ns.get(id)
   const res = await stub.fetch(new Request('https://do/counter/incr', { method: 'POST', body: String(by) }))
@@ -325,7 +410,7 @@ export async function counterIncrement(ctx: MediatorContext, scopedKey: string, 
 export async function counterGet(ctx: MediatorContext, scopedKey: string): Promise<number> {
   const target = pickDoNamespace(ctx.env, 'counter', nsKey(ctx.tenantId, scopedKey))
   if (!target) return 0
-  await ctx.authorize?.({ binding: 'TENANT_QUOTA', action: 'get', tenantId: ctx.tenantId, user: ctx.user })
+  await enforceAuthorized(ctx, { binding: 'TENANT_QUOTA', action: 'get', tenantId: ctx.tenantId, user: ctx.user })
   const id = target.ns.idFromName(target.name)
   const stub = target.ns.get(id)
   const res = await stub.fetch(new Request('https://do/counter/get'))
@@ -368,7 +453,7 @@ export async function auditChainAppendLinked(
 ): Promise<UuidLinkedLeaf | null> {
   const target = pickDoNamespace(ctx.env, 'chain', `tenant:${ctx.tenantId}`)
   if (!target) return null
-  await ctx.authorize?.({ binding: 'AUDIT_CHAIN_DO', action: 'append-linked', tenantId: ctx.tenantId, user: ctx.user })
+  await enforceAuthorized(ctx, { binding: 'AUDIT_CHAIN_DO', action: 'append-linked', tenantId: ctx.tenantId, user: ctx.user })
   const id = target.ns.idFromName(target.name)
   const stub = target.ns.get(id)
   // Phase 1: read head.
@@ -414,7 +499,7 @@ export async function auditChainVerify(
   if (!target) {
     return { ok: false, chainLength: 0, reason: 'no DO binding (ERPAX_DO or AUDIT_CHAIN_DO) available' }
   }
-  await ctx.authorize?.({ binding: 'AUDIT_CHAIN_DO', action: 'verify', tenantId: ctx.tenantId, user: ctx.user })
+  await enforceAuthorized(ctx, { binding: 'AUDIT_CHAIN_DO', action: 'verify', tenantId: ctx.tenantId, user: ctx.user })
   const id = target.ns.idFromName(target.name)
   const stub = target.ns.get(id)
   const q = new URLSearchParams()
@@ -439,7 +524,7 @@ export async function aiRun<T>(
   ctx: MediatorContext,
   args: { model: string; prompt: string; parameters?: Record<string, unknown> },
 ): Promise<T> {
-  await ctx.authorize?.({ binding: 'AI', action: 'run', tenantId: ctx.tenantId, user: ctx.user })
+  await enforceAuthorized(ctx, { binding: 'AI', action: 'run', tenantId: ctx.tenantId, user: ctx.user })
   await auditBindingCall(ctx, 'AI', 'run', { model: args.model })
   return runAi<T>(ctx.env, args)
 }
@@ -447,7 +532,7 @@ export async function aiRun<T>(
 /** Queue mediator — tenant-stamped event before fan-out. */
 export async function queueSend(ctx: MediatorContext, event: Record<string, unknown>): Promise<void> {
   if (!ctx.env.QUEUE) return
-  await ctx.authorize?.({ binding: 'QUEUE', action: 'send', tenantId: ctx.tenantId, user: ctx.user })
+  await enforceAuthorized(ctx, { binding: 'QUEUE', action: 'send', tenantId: ctx.tenantId, user: ctx.user })
   const stamped = { ...event, tenantId: ctx.tenantId, mediatorAt: new Date().toISOString() }
   await ctx.env.QUEUE.send(stamped)
   await auditBindingCall(ctx, 'QUEUE', 'send', {
@@ -478,7 +563,7 @@ export async function vectorizeQuery(
 ): Promise<Array<{ id: string; score: number; metadata?: Record<string, unknown> }>> {
   const idx = ctx.env.VECTORIZE_DOCS
   if (!idx) return []
-  await ctx.authorize?.({ binding: 'VECTORIZE_DOCS' as never, action: 'query', tenantId: ctx.tenantId, user: ctx.user })
+  await enforceAuthorized(ctx, { binding: 'VECTORIZE_DOCS' as never, action: 'query', tenantId: ctx.tenantId, user: ctx.user })
   // Tenant scoping enforced by adding `tenant_id` to the filter — every
   // vector inserted is required to carry tenant_id in metadata.
   const filter = { ...(args.filter ?? {}), tenant_id: ctx.tenantId }
@@ -494,7 +579,7 @@ export async function vectorizeInsert(
 ): Promise<void> {
   const idx = ctx.env.VECTORIZE_DOCS
   if (!idx) return
-  await ctx.authorize?.({ binding: 'VECTORIZE_DOCS' as never, action: 'insert', tenantId: ctx.tenantId, user: ctx.user })
+  await enforceAuthorized(ctx, { binding: 'VECTORIZE_DOCS' as never, action: 'insert', tenantId: ctx.tenantId, user: ctx.user })
   // Force tenant_id into every vector's metadata so cross-tenant
   // queries are filterable + audit-trail proves provenance.
   const stamped = vectors.map((v) => ({
@@ -532,7 +617,7 @@ export async function queueSendNamed(
 ): Promise<void> {
   const q = namedQueueBinding(ctx.env, queueName)
   if (!q) return
-  await ctx.authorize?.({ binding: 'QUEUE' as never, action: `send:${queueName}`, tenantId: ctx.tenantId, user: ctx.user })
+  await enforceAuthorized(ctx, { binding: 'QUEUE' as never, action: `send:${queueName}`, tenantId: ctx.tenantId, user: ctx.user })
   const stamped = { ...event, tenantId: ctx.tenantId, queue: queueName, mediatorAt: new Date().toISOString() }
   await q.send(stamped)
   await auditBindingCall(ctx, 'QUEUE' as never, `send:${queueName}`, {
@@ -547,7 +632,7 @@ export async function browserRender(
 ): Promise<ArrayBuffer | null> {
   const b = ctx.env.BROWSER
   if (!b) return null
-  await ctx.authorize?.({ binding: 'BROWSER' as never, action: `render:${args.format}`, tenantId: ctx.tenantId, user: ctx.user })
+  await enforceAuthorized(ctx, { binding: 'BROWSER' as never, action: `render:${args.format}`, tenantId: ctx.tenantId, user: ctx.user })
   // Call into the Browser binding via fetch — the Worker proxy returns
   // the rendered bytes. Auth + tenant scoping handled in the request body.
   const req = new Request('https://browser/render', {
@@ -573,7 +658,7 @@ export async function emailSend(
 ): Promise<void> {
   const e = ctx.env.EMAIL_SEND
   if (!e) return
-  await ctx.authorize?.({ binding: 'EMAIL_SEND' as never, action: 'send', tenantId: ctx.tenantId, user: ctx.user })
+  await enforceAuthorized(ctx, { binding: 'EMAIL_SEND' as never, action: 'send', tenantId: ctx.tenantId, user: ctx.user })
   await e.send({ from: args.from, to: args.to, raw: args.raw })
   await auditBindingCall(ctx, 'EMAIL_SEND' as never, 'send', {
     from: args.from, to: args.to, bytes: args.raw.length,
@@ -587,7 +672,7 @@ export async function workflowsCreate(
 ): Promise<unknown> {
   const w = ctx.env.WORKFLOWS
   if (!w) return null
-  await ctx.authorize?.({ binding: 'WORKFLOWS' as never, action: 'create', tenantId: ctx.tenantId, user: ctx.user })
+  await enforceAuthorized(ctx, { binding: 'WORKFLOWS' as never, action: 'create', tenantId: ctx.tenantId, user: ctx.user })
   const tenantStampedInput = typeof args.input === 'object' && args.input !== null
     ? { ...(args.input as Record<string, unknown>), tenantId: ctx.tenantId }
     : { input: args.input, tenantId: ctx.tenantId }

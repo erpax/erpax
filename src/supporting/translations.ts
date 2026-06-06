@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "supporting",
-    "uuid": "2af278db-9e57-8585-890a-3675c82e8263",
+    "uuid": "8a8ca371-dafb-85f6-bf61-96493e199f2f",
     "words": [
       "supporting"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "supporting: a schema.org component word, fused from supportingData",
-    "uuid": "a6d1e67a-73e1-8925-b5cb-ddd50daecb89",
+    "source": "Use when reasoning about supporting as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "5d3e25e3-bf10-830f-a8aa-ac0b8af1dee0",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "supporting",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "supportingdata"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "supporting: a schema.org component word, fused from supportingData"
+      "en": "Use when reasoning about supporting as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

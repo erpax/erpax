@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "authenticity",
-    "uuid": "7b961c98-9160-8738-8bba-7a334333086e",
+    "uuid": "621c8c86-d2d3-84f0-927c-b572d5d28a35",
     "words": [
       "authenticity"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "authenticity: a schema.org component word, fused from mediaAuthenticityCategory",
-    "uuid": "1c1127f3-3f5b-8dbf-9878-a791bb6f83a9",
+    "source": "Use when reasoning about authenticity as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "9af30c96-57ec-89ed-92be-68717dc2f514",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "authenticity",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "mediaauthenticitycategory"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "authenticity: a schema.org component word, fused from mediaAuthenticityCategory"
+      "en": "Use when reasoning about authenticity as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

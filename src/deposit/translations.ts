@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "deposit",
-    "uuid": "312f607e-aed0-88c4-a7ac-050f58b72da7",
+    "uuid": "e1d4314c-0b41-8388-99f1-2feeca0b0334",
     "words": [
       "deposit"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "deposit: a schema.org component word, fused from DepositAccount, InvestmentOrDeposit",
-    "uuid": "65045748-35e6-85f0-8114-9e9ffa3eb986",
+    "source": "Use when reasoning about deposit as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "87410b63-a218-890e-8897-006891018132",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "deposit",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "depositaccount",
-      "investmentordeposit"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "deposit: a schema.org component word, fused from DepositAccount, InvestmentOrDeposit"
+      "en": "Use when reasoning about deposit as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "includes",
-    "uuid": "318eb6fd-513b-8589-b59c-317d7e5011a1",
+    "uuid": "dc4d8b45-ae88-8ee1-811d-33ab8ff7d250",
     "words": [
       "includes"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "includes: a schema.org component word, fused from domainIncludes, includesAttraction, includesHealthPlanFormulary, includesHealthPlanNetwork, includesObject, rangeIncludes",
-    "uuid": "e62cb26b-253c-8f7a-ad10-06d30b2696b4",
+    "source": "Use when reasoning about includes as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "9c18fb71-033f-8575-9e32-4525c7f11c97",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "includes",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "domainincludes",
-      "includesattraction",
-      "includeshealthplanformulary",
-      "includeshealthplannetwork",
-      "includesobject",
-      "rangeincludes"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "includes: a schema.org component word, fused from domainIncludes, includesAttraction, includesHealthPlanFormulary, includesHealthPlanNetwork, includesObject, rangeIncludes"
+      "en": "Use when reasoning about includes as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

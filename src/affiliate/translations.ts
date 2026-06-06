@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "affiliate",
-    "uuid": "cb372219-95a5-8793-a585-8647fbd49d52",
+    "uuid": "55aaf4b4-55e2-88ee-ad42-879e6f1aed73",
     "words": [
       "affiliate"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "affiliate: a schema.org component word, fused from broadcastAffiliateOf",
-    "uuid": "f1c836ad-3912-81ae-9e8b-bdca32d818fe",
+    "source": "Use when reasoning about affiliate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "7cb3b45d-9fd2-83bc-a319-bf7a9ef3ddd0",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "affiliate",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "broadcastaffiliateof"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "affiliate: a schema.org component word, fused from broadcastAffiliateOf"
+      "en": "Use when reasoning about affiliate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

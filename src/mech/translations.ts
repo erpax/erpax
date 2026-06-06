@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "mech",
-    "uuid": "c175f580-b376-8843-a523-a20a681897a3",
+    "uuid": "a1b48589-59ed-8fc0-9532-85f20399be18",
     "words": [
       "mech"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "mech: a schema.org component word, fused from cvdNumC19MechVentPats, cvdNumC19OFMechVentPats",
-    "uuid": "23f2b20f-95bd-8fc6-8b79-45887510bc34",
+    "source": "Use when reasoning about mech as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "8d4f8242-1326-88dc-8c84-0a38f6d7eb09",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "mech",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "cvdnumc19mechventpats",
-      "cvdnumc19ofmechventpats"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "mech: a schema.org component word, fused from cvdNumC19MechVentPats, cvdNumC19OFMechVentPats"
+      "en": "Use when reasoning about mech as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "representation",
-    "uuid": "ecbee640-2c3f-83ae-a27f-a207151dad1e",
+    "uuid": "0b41493b-52f8-8897-b4ff-05462bf1e766",
     "words": [
       "representation"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "representation: a schema.org component word, fused from hasRepresentation",
-    "uuid": "e2d8d406-91e6-8b1b-af0b-ebf9fdeb5728",
+    "source": "Use when reasoning about representation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "36e0a028-929f-8c5d-b608-9420b31cba1c",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "representation",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "hasrepresentation"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "representation: a schema.org component word, fused from hasRepresentation"
+      "en": "Use when reasoning about representation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

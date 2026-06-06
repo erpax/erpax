@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "friendly",
-    "uuid": "7cb9bb4f-fb96-8cb5-acff-1ee57cdb6181",
+    "uuid": "b70af739-4668-8c2e-9fbf-ecc7e99f4f60",
     "words": [
       "friendly"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "friendly: a schema.org component word, fused from isFamilyFriendly",
-    "uuid": "310a8f54-0c61-81d9-9a6f-6899d9c56363",
+    "source": "Use when reasoning about friendly as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "93a70979-0df7-863e-a235-f4cd2939dfd6",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "friendly",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "isfamilyfriendly"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "friendly: a schema.org component word, fused from isFamilyFriendly"
+      "en": "Use when reasoning about friendly as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

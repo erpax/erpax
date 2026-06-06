@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "fax",
-    "uuid": "03299f17-5d8c-8279-ac91-f32ee75699ae",
+    "uuid": "a0702d8b-52b9-852a-8576-606bbcbfcb26",
     "words": [
       "fax"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "fax: a schema.org component word, fused from faxNumber",
-    "uuid": "e3a04137-7712-8fb0-8a83-2400463b376c",
+    "source": "Use when reasoning about fax as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "5e67e0ac-1d08-89f3-ba0b-e2230db14947",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "fax",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "faxnumber"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "fax: a schema.org component word, fused from faxNumber"
+      "en": "Use when reasoning about fax as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

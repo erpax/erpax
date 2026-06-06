@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "authority",
-    "uuid": "30549b78-5ffa-8701-9502-274d6a795585",
+    "uuid": "895e0089-72c2-84aa-a60e-435028fc5fa1",
     "words": [
       "authority"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "authority: a schema.org component word, fused from recognizingAuthority",
-    "uuid": "ae94be8f-3d64-8229-a0ba-944b4b77c338",
+    "source": "Use when reasoning about authority as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "35cb21d3-f922-83ad-ad96-287fa77f0436",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "authority",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "recognizingauthority"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "authority: a schema.org component word, fused from recognizingAuthority"
+      "en": "Use when reasoning about authority as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "credits",
-    "uuid": "6e3cbd58-852f-8942-ae11-c603e594e6fa",
+    "uuid": "199dd438-f4c4-8154-af70-ff28ef5f4f53",
     "words": [
       "credits"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "credits: a schema.org component word, fused from numberOfCredits, typicalCreditsPerTerm",
-    "uuid": "ac479111-37d7-87ce-a6fb-23d1035616d7",
+    "source": "Use when reasoning about credits as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "b4b9d67f-1e0a-8b79-ab35-455df4a707af",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "credits",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "numberofcredits",
-      "typicalcreditsperterm"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "credits: a schema.org component word, fused from numberOfCredits, typicalCreditsPerTerm"
+      "en": "Use when reasoning about credits as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

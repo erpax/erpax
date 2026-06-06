@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use for the empirical reference distribution a calibration is computed FROM — the measured input (median / p50 / p99 / attractor of a real metric) a model is fitted to, NOT the fitted constants themselves. Swap the baseline (another tenant, another period) and every derived calibration recomputes. The agnostic home of values once hardcoded against a named source — the values stay, the source name dissolves into [[source]] / [[akashic]].",
-    "uuid": "4899657a-87cb-8571-a488-123c85584084",
+    "uuid": "99a828d5-2a50-8608-8054-4e534ef40c1d",
     "words": [
       "use",
       "for",

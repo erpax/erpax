@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "want",
-    "uuid": "c16bd7b2-74a0-8184-9b60-4aaf63c765b5",
+    "uuid": "35be52f8-2a1f-8bad-b009-9b055c1c55bb",
     "words": [
       "want"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "want: a schema.org component word, fused from WantAction",
-    "uuid": "15590519-db3d-8e00-850d-16aaca37f992",
+    "source": "Use when reasoning about want as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "7dc240a7-4d4d-8100-9444-5db119339939",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "want",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "wantaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "want: a schema.org component word, fused from WantAction"
+      "en": "Use when reasoning about want as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "motorized",
-    "uuid": "7848e3ca-213d-868b-b0f9-1e9d7e1d01b2",
+    "uuid": "7b1b815c-b246-8c78-8ef9-b74151e19579",
     "words": [
       "motorized"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "motorized: a schema.org component word, fused from MotorizedBicycle",
-    "uuid": "37940d83-89f3-8060-9f91-142afd71e3a8",
+    "source": "Use when reasoning about motorized as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "5a394878-ece9-8724-a1f1-9e22d5cc807b",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "motorized",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "motorizedbicycle"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "motorized: a schema.org component word, fused from MotorizedBicycle"
+      "en": "Use when reasoning about motorized as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

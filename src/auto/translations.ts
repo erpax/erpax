@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "auto",
-    "uuid": "2b11921a-6a12-8eba-a1d3-1993913f4e6b",
+    "uuid": "75643502-1919-8f9e-ab01-0b11260bd9d8",
     "words": [
       "auto"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "auto: a schema.org component word, fused from AutoBodyShop, AutoDealer, AutoPartsStore, AutoRental, AutoRepair, AutoWash",
-    "uuid": "fea1e157-d067-885f-b0a4-148b8070805e",
+    "source": "Use when reasoning about auto as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "ee8632f1-e947-88e1-ae88-de2e3adc4fea",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "auto",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "autobodyshop",
-      "autodealer",
-      "autopartsstore",
-      "autorental",
-      "autorepair",
-      "autowash"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "auto: a schema.org component word, fused from AutoBodyShop, AutoDealer, AutoPartsStore, AutoRental, AutoRepair, AutoWash"
+      "en": "Use when reasoning about auto as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "assign",
-    "uuid": "56b4743c-9c5c-8049-8745-74de7fd233ba",
+    "uuid": "954023ec-067a-887e-8935-0783bd78c835",
     "words": [
       "assign"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "assign: a schema.org component word, fused from AssignAction",
-    "uuid": "1259c5cd-589d-80f9-9175-bbcde5c24cf0",
+    "source": "Use when reasoning about assign as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "ecb80d7a-b698-8608-b059-1f18b21deb25",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "assign",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "assignaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "assign: a schema.org component word, fused from AssignAction"
+      "en": "Use when reasoning about assign as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "located",
-    "uuid": "cde6b769-6404-8284-be05-019409eb8376",
+    "uuid": "78816ee7-46e7-8a37-9311-59c13cd3abd3",
     "words": [
       "located"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "located: a schema.org component word, fused from isLocatedInSubcellularLocation",
-    "uuid": "d8f4de1c-82cc-82f9-a310-313a4862cbe4",
+    "source": "Use when reasoning about located as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "12fb08ab-2785-8651-b813-dba59c367ec2",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "located",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "islocatedinsubcellularlocation"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "located: a schema.org component word, fused from isLocatedInSubcellularLocation"
+      "en": "Use when reasoning about located as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

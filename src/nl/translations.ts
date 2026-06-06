@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "nl",
-    "uuid": "9515eadc-af66-8198-a9e8-41d32cf9cdf9",
+    "uuid": "b15f8009-a2f5-894a-a151-9339afeb1a93",
     "words": [
       "nl"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "nl: a schema.org component word, fused from NLNonprofitType",
-    "uuid": "4ecfc6fe-22d3-883f-afac-c1e8487e05e5",
+    "source": "Use when reasoning about nl as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "24c95ea9-9071-8a6c-bf83-f6d1d3e40024",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "nl",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "nlnonprofittype"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "nl: a schema.org component word, fused from NLNonprofitType"
+      "en": "Use when reasoning about nl as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

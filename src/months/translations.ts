@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "months",
-    "uuid": "ebd6b212-5f05-8679-99b8-9b4e289f647c",
+    "uuid": "cb8352f4-ca12-849a-8d2d-475be18f0ba5",
     "words": [
       "months"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "months: a schema.org component word, fused from monthsOfExperience",
-    "uuid": "4a82e31f-6769-89eb-b023-13bd843d38ea",
+    "source": "Use when reasoning about months as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "5b9a086e-bbda-8f56-a723-39001f63743a",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "months",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "monthsofexperience"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "months: a schema.org component word, fused from monthsOfExperience"
+      "en": "Use when reasoning about months as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

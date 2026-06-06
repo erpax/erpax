@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "stand",
-    "uuid": "4ab06e9c-9b74-87a5-9ae0-43a5cfd66d4d",
+    "uuid": "ec1e9c1f-114b-84e9-8032-8b62a9b30eea",
     "words": [
       "stand"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "stand: a schema.org component word, fused from TaxiStand",
-    "uuid": "ea708ffc-0827-8f78-9284-878cacc6acca",
+    "source": "Use when reasoning about stand as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "eef45c2d-6281-810b-a3fa-ce3aff95f320",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "stand",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "taxistand"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "stand: a schema.org component word, fused from TaxiStand"
+      "en": "Use when reasoning about stand as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

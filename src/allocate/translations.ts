@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "allocate",
-    "uuid": "1d26da06-9ff9-8bda-803d-64e301fcecbd",
+    "uuid": "07694411-d7ff-8b3b-a113-b0cf5986774c",
     "words": [
       "allocate"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "allocate: a schema.org component word, fused from AllocateAction",
-    "uuid": "d436a608-80cd-8c5f-802d-d92a37d3d28b",
+    "source": "Use when reasoning about allocate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "0270fc16-5f56-8d39-a49a-2011267ee1a7",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "allocate",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "allocateaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "allocate: a schema.org component word, fused from AllocateAction"
+      "en": "Use when reasoning about allocate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

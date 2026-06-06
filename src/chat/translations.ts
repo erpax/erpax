@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "chat",
-    "uuid": "55c0d8db-a537-8dc8-8695-8d5252bd4e7a",
+    "uuid": "f914c1ec-09d2-8804-ad76-1d86bcfef351",
     "words": [
       "chat"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about where the erpax agent society convenes — chat.erpax.com, the per-tenant agent-sync room (AGENT_SYNC_HOST venue) — and about the trinity-composition law that every vertex is itself a trinity all the way down to the base atoms.",
-    "uuid": "9ea804fe-bcfa-881e-b7fc-5ad6553f2fcc",
+    "uuid": "e69fcf95-f799-87d3-ae8a-216b292e600a",
     "words": [
       "use",
       "when",

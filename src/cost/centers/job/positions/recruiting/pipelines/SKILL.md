@@ -1,5 +1,5 @@
 ---
-name: recruiting-pipeline
+name: recruiting-pipelines
 description: Use when tracking candidate applications, interview stages, offers, and hiring decisions per position — GDPR-compliant funnel (applied→screening→interview→offer→hired/rejected), sourcing, skill-match, and recruiter activity. The GDPR Art.6(1)(b) candidate-pipeline collection.
 ---
 

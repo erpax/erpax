@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "subscription",
-    "uuid": "786b5b33-2159-8d69-a0c5-d1ec4e5fb550",
+    "uuid": "19b8a423-b0e4-8ac5-aef9-2e035d1cc489",
     "words": [
       "subscription"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "subscription: a schema.org component word, fused from MediaSubscription, requiresSubscription",
-    "uuid": "d36e8c5a-dd8f-8db1-8896-53d096e5f616",
+    "source": "Use when reasoning about subscription as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "17967b03-f0ed-86f6-8536-c9970dac4424",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "subscription",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "mediasubscription",
-      "requiressubscription"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "subscription: a schema.org component word, fused from MediaSubscription, requiresSubscription"
+      "en": "Use when reasoning about subscription as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

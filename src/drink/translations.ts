@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "drink",
-    "uuid": "24099a32-1048-8115-8f10-078fcdd3f34c",
+    "uuid": "ef4b9fc4-d826-8439-b82e-d95f8d0ca74d",
     "words": [
       "drink"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "drink: a schema.org component word, fused from DrinkAction",
-    "uuid": "ed8eebdb-271d-8b66-a284-b17d748a711b",
+    "source": "Use when reasoning about drink as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "148572d1-8e34-8651-8a13-af046c934f60",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "drink",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "drinkaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "drink: a schema.org component word, fused from DrinkAction"
+      "en": "Use when reasoning about drink as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

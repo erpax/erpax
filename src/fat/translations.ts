@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "fat",
-    "uuid": "6521fd66-3918-8240-b82f-3baf7ccb958f",
+    "uuid": "13036878-f015-8fb3-aa94-a34bbfd75371",
     "words": [
       "fat"
     ],
@@ -17,24 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "fat: a schema.org component word, fused from fatContent, saturatedFatContent, transFatContent, unsaturatedFatContent",
-    "uuid": "c9a416cf-10b0-89e9-9212-b6538ee1a463",
+    "source": "Use when reasoning about fat as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "78100a42-625c-8ccb-8ba2-c2dd54c32813",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "fat",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "fatcontent",
-      "saturatedfatcontent",
-      "transfatcontent",
-      "unsaturatedfatcontent"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "fat: a schema.org component word, fused from fatContent, saturatedFatContent, transFatContent, unsaturatedFatContent"
+      "en": "Use when reasoning about fat as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

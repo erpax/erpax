@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "gs",
-    "uuid": "be948c8e-935a-85d6-b5c0-36b0f0b2aa25",
+    "uuid": "d2589621-53dd-8c6c-9206-a6ee808f3780",
     "words": [
       "gs"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "gs: a schema.org component word, fused from hasGS1DigitalLink",
-    "uuid": "ee3f4ed2-15bf-84b6-beff-b85c6fda1c5f",
+    "source": "Use when reasoning about gs as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "064fb69f-3a03-8539-9f12-dead5c69a353",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "gs",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "hasgs1digitallink"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "gs: a schema.org component word, fused from hasGS1DigitalLink"
+      "en": "Use when reasoning about gs as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

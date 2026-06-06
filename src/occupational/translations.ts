@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "occupational",
-    "uuid": "5e39e33b-a2c8-8d5f-a5ec-be7ea6833ac6",
+    "uuid": "f9afea3a-556d-8a51-80a9-22993f275347",
     "words": [
       "occupational"
     ],
@@ -17,25 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "occupational: a schema.org component word, fused from EducationalOccupationalCredential, EducationalOccupationalProgram, OccupationalExperienceRequirements, OccupationalTherapy, occupationalCategory, ",
-    "uuid": "958e6bc4-28b1-8cbe-b14a-f39cd2af728a",
+    "source": "Use when reasoning about occupational as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "4e4bacf0-0ce7-8191-9aac-0f1c8e6c5052",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "occupational",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "educationaloccupationalcredential",
-      "educationaloccupationalprogram",
-      "occupationalexperiencerequirements",
-      "occupationaltherapy",
-      "occupationalcategory"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "occupational: a schema.org component word, fused from EducationalOccupationalCredential, EducationalOccupationalProgram, OccupationalExperienceRequirements, OccupationalTherapy, occupationalCategory, "
+      "en": "Use when reasoning about occupational as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

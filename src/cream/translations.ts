@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "cream",
-    "uuid": "ae91295e-cd97-8b82-b5d6-d91be8310c7a",
+    "uuid": "d61b57eb-a301-83e1-95e4-e3a5cc3a5504",
     "words": [
       "cream"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "cream: a schema.org component word, fused from IceCreamShop",
-    "uuid": "e6718f38-130a-8eae-b9a7-9414a579d9e7",
+    "source": "Use when reasoning about cream as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "4e295791-8d33-8068-82ad-9e95cd7724b3",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "cream",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "icecreamshop"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "cream: a schema.org component word, fused from IceCreamShop"
+      "en": "Use when reasoning about cream as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

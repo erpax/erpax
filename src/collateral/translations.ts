@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "collateral",
-    "uuid": "eb87c36c-39f0-8db9-b5e2-8d71a8067ea5",
+    "uuid": "d9a82f2d-20f4-8f40-90cd-5623a28a784a",
     "words": [
       "collateral"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "collateral: a schema.org component word, fused from requiredCollateral",
-    "uuid": "15b9a27c-a6c1-859d-8890-e1104c1a43da",
+    "source": "Use when reasoning about collateral as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "e7337717-70b2-8c77-a8e6-d441b9e91cac",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "collateral",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "requiredcollateral"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "collateral: a schema.org component word, fused from requiredCollateral"
+      "en": "Use when reasoning about collateral as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

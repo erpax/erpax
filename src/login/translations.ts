@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "login",
-    "uuid": "c2cad878-213a-8e6a-a6d3-c317a79aae98",
+    "uuid": "7181aeea-b2b8-8865-92cd-58111184bc20",
     "words": [
       "login"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "login: a schema.org component word, fused from LoginAction",
-    "uuid": "28524d8e-2623-8aea-90c3-9bfd14a3aec9",
+    "source": "Use when reasoning about login as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "e0bec0f4-8519-8f40-927e-5e6b668e4cb2",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "login",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "loginaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "login: a schema.org component word, fused from LoginAction"
+      "en": "Use when reasoning about login as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

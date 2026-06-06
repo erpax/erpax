@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "created",
-    "uuid": "88989e63-faa1-8c55-bf9d-8a6401674c06",
+    "uuid": "c15f7184-78fc-8a6d-8e03-9d788fca2983",
     "words": [
       "created"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "created: a schema.org component word, fused from dateCreated, locationCreated",
-    "uuid": "8cf1a218-dbaf-8f8b-a58a-d1062352dccd",
+    "source": "Use when reasoning about created as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "d30df6c0-5628-8bba-bea5-1c4662411bdd",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "created",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "datecreated",
-      "locationcreated"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "created: a schema.org component word, fused from dateCreated, locationCreated"
+      "en": "Use when reasoning about created as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

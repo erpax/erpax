@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "fixed-assets",
-    "uuid": "3f628acb-2d2f-8833-ba17-b2e49d56dfc0",
+    "uuid": "cc2b3534-39da-8dc5-9266-a36d456e9bcf",
     "words": [
       "fixed",
       "assets"
@@ -19,7 +19,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when managing capitalized PP&E — registering assets (land, buildings, equipment, vehicles, software, intangibles), configuring depreciation method and useful life, computing depreciable base and book value, tracking disposals and maintenance, mapping GL accounts for asset/accumulated-depreciation/expense lines. The IAS-16 asset-master node.",
-    "uuid": "89fc54d3-ea7a-80a9-997f-53ea75f18ada",
+    "uuid": "7ad9546d-983d-8f8c-9615-8d4056d7d9e3",
     "words": [
       "use",
       "when",

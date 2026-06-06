@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "police",
-    "uuid": "34538d1e-5625-8dc1-a383-9a5aa493cad6",
+    "uuid": "dd4567b4-ff54-8f34-a888-974e5a53c590",
     "words": [
       "police"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "police: a schema.org component word, fused from PoliceStation",
-    "uuid": "f55445e1-75ec-8ea8-bf4b-a5cea24cdc59",
+    "source": "Use when reasoning about police as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "e20d78b2-f5ea-898c-b3db-f89a4843f68f",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "police",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "policestation"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "police: a schema.org component word, fused from PoliceStation"
+      "en": "Use when reasoning about police as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

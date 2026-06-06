@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "rental",
-    "uuid": "cc11f998-a7b6-82c8-9265-300cd65ff186",
+    "uuid": "333c2a76-b209-8555-875c-e4d2d0318856",
     "words": [
       "rental"
     ],
@@ -17,24 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "rental: a schema.org component word, fused from AutoRental, MovieRentalStore, RentalCarReservation, VacationRental",
-    "uuid": "3324bd65-3705-8a3a-a7b9-b6e59e7a8c77",
+    "source": "Use when reasoning about rental as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "023f6c60-517a-8a27-b180-e728c978031f",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "rental",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "autorental",
-      "movierentalstore",
-      "rentalcarreservation",
-      "vacationrental"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "rental: a schema.org component word, fused from AutoRental, MovieRentalStore, RentalCarReservation, VacationRental"
+      "en": "Use when reasoning about rental as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

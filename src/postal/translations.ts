@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "postal",
-    "uuid": "4b6d0830-f6d0-862e-aab2-7bda61a18078",
+    "uuid": "e2b47328-aa57-801a-8df9-357504ece288",
     "words": [
       "postal"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "postal: a schema.org component word, fused from PostalAddress, PostalCodeRangeSpecification, postalCode, postalCodeBegin, postalCodeEnd, postalCodePrefix",
-    "uuid": "a572fb8a-314f-8697-abfe-425ca2d965e9",
+    "source": "Use when reasoning about postal as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "8245475f-18e4-8cd3-ac6e-7e285b4724dc",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "postal",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "postaladdress",
-      "postalcoderangespecification",
-      "postalcode",
-      "postalcodebegin",
-      "postalcodeend",
-      "postalcodeprefix"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "postal: a schema.org component word, fused from PostalAddress, PostalCodeRangeSpecification, postalCode, postalCodeBegin, postalCodeEnd, postalCodePrefix"
+      "en": "Use when reasoning about postal as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

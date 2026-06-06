@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "listing",
-    "uuid": "7a377cba-373f-8d47-ad23-e418ddb2ece0",
+    "uuid": "1ae4ceaf-ae89-833e-83a5-b9fb10db06dc",
     "words": [
       "listing"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "listing: a schema.org component word, fused from RealEstateListing",
-    "uuid": "48b95ec2-c0f2-876e-8d1a-903523dc95d7",
+    "source": "Use when reasoning about listing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "93f80101-9d82-8f14-9f60-4630ccb3801b",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "listing",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "realestatelisting"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "listing: a schema.org component word, fused from RealEstateListing"
+      "en": "Use when reasoning about listing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -11,7 +11,6 @@
  * @see ../i18n.ts
  */
 import { z } from 'zod'
-import type { PayloadRequest } from 'payload'
 import { makeToolI18n, registerToolI18n, type LocalizedString } from '@/agents/mcp/i18n'
 import type { ErpaxMcpTool } from '@/agents/mcp/tool-defs'
 
@@ -19,10 +18,6 @@ const text = (s: string) => ({ content: [{ text: s, type: 'text' as const }] })
 const json = (v: unknown) => text(JSON.stringify(v, null, 2))
 
 type ErpaxCfEnvLite = Record<string, unknown>
-function tenantOf(req: PayloadRequest): string {
-  const u = req.user as { tenant?: string } | undefined
-  return u?.tenant ?? 'platform'
-}
 
 const I18N: Record<string, LocalizedString> = {
   vectorizeQuery: {
@@ -94,8 +89,8 @@ export function buildCloudflareTools(): ReadonlyArray<ErpaxMcpTool> {
       async handler({ vector, topK, filter }, req) {
         const env = (req as { env?: unknown }).env as ErpaxCfEnvLite | undefined
         if (!env) return text('CF env not available')
-        const { makeMediator } = await import('@/cloudflare')
-        const m = makeMediator({ env: env as never, tenantId: tenantOf(req), payload: req.payload, user: req.user as never })
+        const { erpaxMediator } = await import('@/cloudflare/plugin-helper')
+        const m = erpaxMediator(req)
         return json(await m.vectorizeQuery({ vector: vector as number[], topK: topK as number | undefined, filter: filter as Record<string, unknown> | undefined }))
       },
     },
@@ -111,8 +106,8 @@ export function buildCloudflareTools(): ReadonlyArray<ErpaxMcpTool> {
       async handler({ vectors }, req) {
         const env = (req as { env?: unknown }).env as ErpaxCfEnvLite | undefined
         if (!env) return text('CF env not available')
-        const { makeMediator } = await import('@/cloudflare')
-        const m = makeMediator({ env: env as never, tenantId: tenantOf(req), payload: req.payload, user: req.user as never })
+        const { erpaxMediator } = await import('@/cloudflare/plugin-helper')
+        const m = erpaxMediator(req)
         await m.vectorizeInsert(vectors as never)
         return json({ ok: true, inserted: (vectors as unknown[]).length })
       },
@@ -127,8 +122,8 @@ export function buildCloudflareTools(): ReadonlyArray<ErpaxMcpTool> {
       async handler({ queueName, event }, req) {
         const env = (req as { env?: unknown }).env as ErpaxCfEnvLite | undefined
         if (!env) return text('CF env not available')
-        const { makeMediator } = await import('@/cloudflare')
-        const m = makeMediator({ env: env as never, tenantId: tenantOf(req), payload: req.payload, user: req.user as never })
+        const { erpaxMediator } = await import('@/cloudflare/plugin-helper')
+        const m = erpaxMediator(req)
         await m.queueSendNamed(queueName as never, event as Record<string, unknown>)
         return json({ ok: true, queueName })
       },
@@ -144,8 +139,8 @@ export function buildCloudflareTools(): ReadonlyArray<ErpaxMcpTool> {
       async handler({ url, html, format, opts }, req) {
         const env = (req as { env?: unknown }).env as ErpaxCfEnvLite | undefined
         if (!env) return text('CF env not available')
-        const { makeMediator } = await import('@/cloudflare')
-        const m = makeMediator({ env: env as never, tenantId: tenantOf(req), payload: req.payload, user: req.user as never })
+        const { erpaxMediator } = await import('@/cloudflare/plugin-helper')
+        const m = erpaxMediator(req)
         const bytes = await m.browserRender({
           url: url as string | undefined, html: html as string | undefined,
           format: format as 'pdf' | 'png', opts: opts as Record<string, unknown> | undefined,
@@ -161,8 +156,8 @@ export function buildCloudflareTools(): ReadonlyArray<ErpaxMcpTool> {
       async handler({ from, to, raw }, req) {
         const env = (req as { env?: unknown }).env as ErpaxCfEnvLite | undefined
         if (!env) return text('CF env not available')
-        const { makeMediator } = await import('@/cloudflare')
-        const m = makeMediator({ env: env as never, tenantId: tenantOf(req), payload: req.payload, user: req.user as never })
+        const { erpaxMediator } = await import('@/cloudflare/plugin-helper')
+        const m = erpaxMediator(req)
         await m.emailSend({ from: from as string, to: to as string, raw: raw as string })
         return json({ ok: true, to })
       },
@@ -174,8 +169,8 @@ export function buildCloudflareTools(): ReadonlyArray<ErpaxMcpTool> {
       async handler({ workflowId, input }, req) {
         const env = (req as { env?: unknown }).env as ErpaxCfEnvLite | undefined
         if (!env) return text('CF env not available')
-        const { makeMediator } = await import('@/cloudflare')
-        const m = makeMediator({ env: env as never, tenantId: tenantOf(req), payload: req.payload, user: req.user as never })
+        const { erpaxMediator } = await import('@/cloudflare/plugin-helper')
+        const m = erpaxMediator(req)
         return json(await m.workflowsCreate({ workflowId: workflowId as string, input }))
       },
     },
@@ -189,8 +184,8 @@ export function buildCloudflareTools(): ReadonlyArray<ErpaxMcpTool> {
       async handler({ dataPoint, dataset }, req) {
         const env = (req as { env?: unknown }).env as ErpaxCfEnvLite | undefined
         if (!env) return text('CF env not available')
-        const { makeMediator } = await import('@/cloudflare')
-        const m = makeMediator({ env: env as never, tenantId: tenantOf(req), payload: req.payload, user: req.user as never })
+        const { erpaxMediator } = await import('@/cloudflare/plugin-helper')
+        const m = erpaxMediator(req)
         m.analyticsWrite(dataPoint as Record<string, unknown>, undefined, (dataset as 'default' | 'ai' | undefined) ?? 'default')
         return json({ ok: true })
       },

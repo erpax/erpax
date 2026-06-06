@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "has",
-    "uuid": "021deb45-219f-8fca-bfd3-54ecc555bb97",
+    "uuid": "5575f445-efac-8932-ae6b-274efac81788",
     "words": [
       "has"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "has: a schema.org component word, fused from hasAdultConsideration, hasBioChemEntityPart, hasBioPolymerSequence, hasBroadcastChannel, hasCategoryCode, hasCertification",
-    "uuid": "c3186e21-5a5b-8229-84e2-8e96320944d2",
+    "source": "Use when reasoning about has as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "dd7485e2-9827-86a3-b583-b51c56a18a96",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "has",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "hasadultconsideration",
-      "hasbiochementitypart",
-      "hasbiopolymersequence",
-      "hasbroadcastchannel",
-      "hascategorycode",
-      "hascertification"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "has: a schema.org component word, fused from hasAdultConsideration, hasBioChemEntityPart, hasBioPolymerSequence, hasBroadcastChannel, hasCategoryCode, hasCertification"
+      "en": "Use when reasoning about has as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

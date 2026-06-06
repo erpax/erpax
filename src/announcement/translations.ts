@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "announcement",
-    "uuid": "7b6a3121-3533-8010-a7a5-7a747208d8e0",
+    "uuid": "a39bb600-4931-8241-aba5-27260d585b4f",
     "words": [
       "announcement"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "announcement: a schema.org component word, fused from SpecialAnnouncement, announcementLocation",
-    "uuid": "70bd7968-785f-8da4-9534-b07a000f7b9d",
+    "source": "Use when reasoning about announcement as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "d9f8b03a-818f-847a-8127-b88e85a4e408",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "announcement",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "specialannouncement",
-      "announcementlocation"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "announcement: a schema.org component word, fused from SpecialAnnouncement, announcementLocation"
+      "en": "Use when reasoning about announcement as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

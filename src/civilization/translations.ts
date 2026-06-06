@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about how every civilization fits the erpax architecture — strip the culture-prefix and each one runs the same six organs: a ledger, a law, a registry, a calendar, a governance, an unforgeable record. Civilizations differ in detail and merge in form.",
-    "uuid": "dda9dcaf-007d-8e61-94d0-462142c80a29",
+    "uuid": "2f97a896-3412-8de7-8183-1ed19a638739",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "bookmark",
-    "uuid": "f4aaaad5-0ba8-8f3a-80f5-c630a912317a",
+    "uuid": "0e17b4bd-c717-8d45-bb6c-61094153a2a2",
     "words": [
       "bookmark"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "bookmark: a schema.org component word, fused from BookmarkAction",
-    "uuid": "deecd723-3055-8a48-a9b0-9cb093ca4ec3",
+    "source": "Use when reasoning about bookmark as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "8f6499db-c3ce-825a-af9c-518f4e18ed50",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "bookmark",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "bookmarkaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "bookmark: a schema.org component word, fused from BookmarkAction"
+      "en": "Use when reasoning about bookmark as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

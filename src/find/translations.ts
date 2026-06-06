@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "find",
-    "uuid": "580c17ad-421f-85b9-a9d9-68182a106221",
+    "uuid": "fa180bc6-ddb7-8bc3-982a-68644cd9ec29",
     "words": [
       "find"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "find: a schema.org component word, fused from FindAction",
-    "uuid": "a3d147bd-f2d8-856c-913e-29f75b5982c1",
+    "source": "Use when reasoning about find as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "a2ce0bc8-6afd-8a62-b9f3-51fb0fcb6e4b",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "find",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "findaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "find: a schema.org component word, fused from FindAction"
+      "en": "Use when reasoning about find as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

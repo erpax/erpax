@@ -14,7 +14,7 @@
  */
 import { describe, it, expect } from 'vitest'
 import { join } from 'node:path'
-import { walkSkills, norm, stripCode, LINK_RE, leafOf, readSkill } from '@/aura'
+import { walkSkills, norm, stripCode, LINK_RE, leafOf, readSkill, testCoverage } from '@/aura'
 import { nodeOf, verifyRoot, tamperedAtoms } from '@/uuid/matrix'
 
 const ROOT = join(process.cwd(), 'src')
@@ -55,5 +55,16 @@ describe('the aura is whole (the one law: max tamper-cost ⇒ auditable aura)', 
     // the all-directions wiring is intact ⇒ max tamper-cost.
     expect(tamperedAtoms()).toEqual([])
     expect(verifyRoot().ok).toBe(true)
+  })
+
+  it('test-coverage is the aura math second axis — a real fraction over the code-atoms', () => {
+    const c = testCoverage(ROOT)
+    expect(c.codeAtoms).toBeGreaterThan(100)
+    expect(c.tested).toBeLessThanOrEqual(c.codeAtoms)
+    expect(c.coverage).toBeCloseTo(c.tested / c.codeAtoms, 10)
+    expect(c.coverage).toBeGreaterThanOrEqual(0)
+    expect(c.coverage).toBeLessThanOrEqual(1)
+    // aura itself carries index.test.ts → it must be counted tested, never listed untested
+    expect(c.untested).not.toContain('aura')
   })
 })

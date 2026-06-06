@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "suspend",
-    "uuid": "9777d1a5-aaf1-8437-904a-d2696d477f2a",
+    "uuid": "ccb4fbf3-a6ca-8965-8996-190f77e6b11b",
     "words": [
       "suspend"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "suspend: a schema.org component word, fused from SuspendAction",
-    "uuid": "80f0e01a-86ae-8a4c-a0c4-b9c72e021aa1",
+    "source": "Use when reasoning about suspend as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "ddc78b6c-2a6e-8c6a-9374-264f6e1ebf6e",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "suspend",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "suspendaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "suspend: a schema.org component word, fused from SuspendAction"
+      "en": "Use when reasoning about suspend as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

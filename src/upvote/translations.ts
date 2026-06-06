@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "upvote",
-    "uuid": "0d7c36aa-1d97-807f-8d4b-83bba5e28f30",
+    "uuid": "42a5d7d9-7e5a-8297-a44a-04c846f4659f",
     "words": [
       "upvote"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "upvote: a schema.org component word, fused from upvoteCount",
-    "uuid": "120729b8-ec5f-8908-b2b1-06caf60f8766",
+    "source": "Use when reasoning about upvote as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "35d39b79-300d-8959-bc6e-bb697bf098c3",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "upvote",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "upvotecount"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "upvote: a schema.org component word, fused from upvoteCount"
+      "en": "Use when reasoning about upvote as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "reporting",
-    "uuid": "373c55ee-dc54-8c1a-9880-730b8d4768a0",
+    "uuid": "caa3c982-4c08-8075-844b-01fe88af0b39",
     "words": [
       "reporting"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "reporting: a schema.org component word, fused from healthcareReportingData",
-    "uuid": "e722a72b-7c40-8e9b-b7ad-e8dfd218af89",
+    "source": "Use when reasoning about reporting as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "04306ddc-3ef9-8ebd-b9d4-4cc772fe32ec",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "reporting",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "healthcarereportingdata"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "reporting: a schema.org component word, fused from healthcareReportingData"
+      "en": "Use when reasoning about reporting as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

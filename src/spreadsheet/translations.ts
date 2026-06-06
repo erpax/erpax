@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "spreadsheet",
-    "uuid": "f98a69ac-3548-8546-8f36-f65e1d822255",
+    "uuid": "3029446b-e19c-82a8-87b5-52c6aea350c0",
     "words": [
       "spreadsheet"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "spreadsheet: a schema.org component word, fused from SpreadsheetDigitalDocument",
-    "uuid": "eaaa932f-5f9c-8e9d-b186-3900479175b2",
+    "source": "Use when reasoning about spreadsheet as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "39b84158-7e0b-871d-b4e5-6a452097cd5c",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "spreadsheet",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "spreadsheetdigitaldocument"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "spreadsheet: a schema.org component word, fused from SpreadsheetDigitalDocument"
+      "en": "Use when reasoning about spreadsheet as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

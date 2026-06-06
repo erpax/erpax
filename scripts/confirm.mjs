@@ -1,17 +1,25 @@
 #!/usr/bin/env node
-// scripts/confirm.mjs — the programmatic dual-confirm: payload twin ⊕ vitepress twin.
+// scripts/confirm.mjs — the programmatic confirm: payload twin ⊕ vitepress twin ⊕ build lane.
 //
-// Every edit is confirmed by BOTH halves of the trinity, deterministically — no human, no LLM,
-// just the program. This is the matter↔speech gate the [[trinity]] law demands, run on demand:
+// Every edit is confirmed deterministically — no human, no LLM, just the program. This is the
+// matter↔speech gate the [[trinity]] law demands, run on demand:
 //   🟦 payload  (matter/backend): the generated payload-types stay in sync with the live config
 //   🟩 vitepress (speech):        every [[link]] resolves to a real SKILL.md + frontmatter YAML parses
+//   ⬛ build     (--full only):    the authoritative CI/pre-push gate — standards · lint · lint:src ·
+//                                  lint:imports · typecheck · test:int (confirm:full ⊇ `pnpm run check`)
 //
 // Modes:
 //   node scripts/confirm.mjs <file...>     scoped, fast, in-process (per-edit confirm)
 //   node scripts/confirm.mjs --hook        read PostToolUse JSON on stdin, scope to the edited file
-//   node scripts/confirm.mjs --full        whole-corpus, shells out to the trusted gate scripts
+//   node scripts/confirm.mjs --full        whole-corpus + the build lane; a true SUPERSET of `pnpm check`
+//                                          (so confirm-green now implies CI-green, not docs-only-green)
 //
-// Exit 0 only when BOTH twins confirm. In --hook mode a real failure exits 2 (surfaced to the agent).
+// Exit 0 only when ALL lanes confirm. In --hook mode a real failure exits 2 (surfaced to the agent).
+// --hook/scoped modes never run the heavy build lane (that is push-time only).
+//
+// FAIL-CLOSED stance: on any error, missing tool, or unresolvable scope we DENY
+// (surface the gap + exit non-zero), never silently report green. A check that
+// cannot run is treated as a check that did not pass.
 import { readFileSync, existsSync, readdirSync, statSync } from 'node:fs'
 import { join, dirname, basename, relative } from 'node:path'
 import { execSync } from 'node:child_process'
@@ -36,6 +44,12 @@ function loadYaml() {
   return null
 }
 const yaml = loadYaml()
+// Observable degradation: when the real parser is unavailable the frontmatter
+// twin can only run a weak regex (catches the ": " hazard, NOT bad indentation /
+// unterminated quotes / tabs that the docs build's js-yaml would reject). We never
+// pretend this is a full confirm — we warn here and FAIL the authoritative --full
+// gate below, rather than trusting frontmatter by default.
+if (!yaml) console.error('⚠️  confirm: js-yaml not loadable — frontmatter checked by weak regex only (run `pnpm install`). --full will FAIL closed.')
 
 // ── the corpus page-set: every dir holding a SKILL.md (the wikiMap targets) ──
 // Resolution matches the aura/VitePress wikilink resolver: case-INSENSITIVE,
@@ -146,11 +160,24 @@ function scopeFiles() {
   }
   const fileArgs = args.filter((a) => !a.startsWith('--'))
   if (fileArgs.length) return fileArgs
-  // default: everything changed vs HEAD
+  // default: everything changed vs HEAD. FAIL-CLOSED: if we cannot determine the
+  // changed set, we must NOT return an empty scope (that would confirm-nothing and
+  // exit green). Each git invocation is run separately so a failure in EITHER is
+  // observed (a `;`-joined sequence masks the first command's exit code). On error
+  // we throw — the caller surfaces it and exits non-zero rather than silently OK.
+  const gitLines = (cmd) =>
+    execSync(cmd, { cwd: ROOT, stdio: ['ignore', 'pipe', 'pipe'] })
+      .toString()
+      .split('\n')
+      .map((s) => s.trim())
+      .filter(Boolean)
+  let changed
   try {
-    const out = execSync('git diff --name-only HEAD; git ls-files --others --exclude-standard', { cwd: ROOT }).toString()
-    return out.split('\n').map((s) => s.trim()).filter(Boolean).map((p) => join(ROOT, p))
-  } catch { return [] }
+    changed = [...gitLines('git diff --name-only HEAD'), ...gitLines('git ls-files --others --exclude-standard')]
+  } catch (e) {
+    throw new Error('cannot resolve changed-file scope via git (' + (e.message.split('\n')[0]) + ') — refusing to confirm an unknown scope')
+  }
+  return [...new Set(changed)].map((p) => join(ROOT, p))
 }
 
 // ── --full delegates to the trusted gate scripts (the authoritative, whole-corpus confirm) ──
@@ -162,21 +189,59 @@ function fullConfirm() {
   const mdStrays = walkMdStrays(ROOT)
   const mdOk = mdStrays.length === 0
   const payErr = run('bash scripts/payload-verify-types.sh')
-  const vpOk = !fmErr && auraOk && mdOk
+  // FAIL-CLOSED: --full is the authoritative push gate; if the real YAML parser
+  // can't load we cannot certify frontmatter the way docs:build will, so DENY.
+  const vpOk = !fmErr && auraOk && mdOk && !!yaml
   const payOk = !payErr
-  console.log(`🟩 vitepress ${vpOk ? '✓' : '✗'}  frontmatter ${fmErr ? 'FAIL' : 'ok'} · aura ${auraOk ? 'gap=0' : 'gap>0 (dead links)'} · md ${mdOk ? 'pure (atoms only)' : mdStrays.length + ' stray(s)'}`)
+
+  // ── ⬛ matter/build lane: confirm:full must be a SUPERSET of `pnpm run check` ──
+  // The speech (vitepress) + payload-types lanes above do NOT cover the authoritative
+  // CI/pre-push gates (lint, lint:src, lint:imports, typecheck, test:int, standards), so
+  // confirm-green used to print ✓ while CI was RED. We now shell those SAME commands here,
+  // each fail-closed: run() returns null on success and the error text on ANY non-zero exit
+  // OR unrunnable command (missing pnpm / throw) — a check that cannot run is a check that did
+  // NOT pass. These tokens MUST stay byte-aligned with the `check` script in package.json
+  // (a guard test asserts confirm:full ⊇ check, so dropping a lane fails CI). test:int is
+  // heavy (~minutes) — acceptable for the authoritative whole-corpus push gate; it is kept
+  // OUT of the fast --hook/scoped modes (which never reach fullConfirm()).
+  const buildChecks = [
+    ['standards', 'pnpm run standards'],
+    ['lint', 'pnpm run lint'],
+    ['lint:src', 'pnpm run lint:src'],
+    ['lint:imports', 'pnpm run lint:imports'],
+    ['typecheck', 'pnpm run typecheck'],
+    ['test:int', 'pnpm run test:int'],
+  ]
+  const buildErrs = []
+  for (const [label, cmd] of buildChecks) {
+    const err = run(cmd)
+    if (err) buildErrs.push([label, err])
+  }
+  const buildOk = buildErrs.length === 0
+
+  console.log(`🟩 vitepress ${vpOk ? '✓' : '✗'}  frontmatter ${fmErr ? 'FAIL' : yaml ? 'ok' : 'UNVERIFIED (js-yaml missing)'} · aura ${auraOk ? 'gap=0' : 'gap>0 (dead links)'} · md ${mdOk ? 'pure (atoms only)' : mdStrays.length + ' stray(s)'}`)
   console.log(`🟦 payload   ${payOk ? '✓' : '✗'}  payload-types ${payErr ? 'OUT OF SYNC' : 'in sync with config'}`)
+  console.log(`⬛ build     ${buildOk ? '✓' : '✗'}  ${buildOk ? 'standards · lint · lint:src · lint:imports · typecheck · test:int all green (= pnpm check)' : buildErrs.map(([l]) => l + ' FAIL').join(' · ')}`)
   if (fmErr) console.error(fmErr.trim().split('\n').slice(-4).join('\n'))
   if (!mdOk) console.error('   md strays (write IN atoms — SKILL.md only):\n' + mdStrays.slice(0, 20).map((s) => '     ' + s).join('\n'))
   if (payErr) console.error(payErr.trim().split('\n').slice(-4).join('\n'))
-  const ok = vpOk && payOk
-  console.log(ok ? '\n✓ confirmed — payload ⊕ vitepress both green (whole corpus)' : '\n✗ NOT confirmed — fix the failing twin above')
+  for (const [label, err] of buildErrs) console.error('   ⬛ ' + label + ' →\n' + err.trim().split('\n').slice(-4).map((s) => '     ' + s).join('\n'))
+  const ok = vpOk && payOk && buildOk
+  console.log(ok ? '\n✓ confirmed — payload ⊕ vitepress ⊕ build all green (whole corpus = CI gate)' : '\n✗ NOT confirmed — fix the failing lane above')
   process.exit(ok ? 0 : 1)
 }
 
 if (FULL) fullConfirm()
 
-const files = scopeFiles()
+let files
+try {
+  files = scopeFiles()
+} catch (e) {
+  // FAIL-CLOSED: scope resolution failed (e.g. git unavailable / no HEAD). We do
+  // NOT proceed with an empty scope and report green — that would confirm nothing.
+  console.error('✗ NOT confirmed — ' + e.message)
+  process.exit(HOOK ? 2 : 1)
+}
 const skillFiles = files.filter((f) => f.endsWith('SKILL.md'))
 const codeChanged = files.some((f) => /\.(ts|tsx|mjs|js)$/.test(f))
 

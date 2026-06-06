@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "until",
-    "uuid": "324c5fad-36a3-8c50-910d-4e8acd58acaa",
+    "uuid": "93348bf5-e678-8fc7-84ac-23e1a577d44a",
     "words": [
       "until"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "until: a schema.org component word, fused from expectedArrivalUntil, priceValidUntil, validUntil",
-    "uuid": "cf091518-ffa6-8f7f-ab0a-e904ffc5677d",
+    "source": "Use when reasoning about until as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "aaa41b4f-97b5-8c49-a3a8-a6026dd2c562",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "until",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "expectedarrivaluntil",
-      "pricevaliduntil",
-      "validuntil"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "until: a schema.org component word, fused from expectedArrivalUntil, priceValidUntil, validUntil"
+      "en": "Use when reasoning about until as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

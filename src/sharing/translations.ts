@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "sharing",
-    "uuid": "ac6826c2-10a9-863e-9a07-1e91455128fe",
+    "uuid": "d3c3a795-6d5e-8c90-ae01-a408ed088e62",
     "words": [
       "sharing"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "sharing: a schema.org component word, fused from HealthPlanCostSharingSpecification, healthPlanCostSharing",
-    "uuid": "e18bb2c4-65e0-895d-8998-1ea722986ff7",
+    "source": "Use when reasoning about sharing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "7f4531e5-9196-8bbc-8a21-af1db2529cb6",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "sharing",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "healthplancostsharingspecification",
-      "healthplancostsharing"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "sharing: a schema.org component word, fused from HealthPlanCostSharingSpecification, healthPlanCostSharing"
+      "en": "Use when reasoning about sharing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

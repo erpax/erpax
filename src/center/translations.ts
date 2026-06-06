@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "center",
-    "uuid": "652e88bf-6450-8391-9881-9febc3fd6d93",
+    "uuid": "68b9b5e9-e1a6-816f-aa46-2f3f8b7c8493",
     "words": [
       "center"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "center: a schema.org component word, fused from RecyclingCenter, ShoppingCenter, TouristInformationCenter",
-    "uuid": "3b5ddce2-aec1-86ce-a36a-e15f18f0d659",
+    "source": "Use when reasoning about center as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "6efe6d5d-af81-8982-b294-d21183135927",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "center",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "recyclingcenter",
-      "shoppingcenter",
-      "touristinformationcenter"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "center: a schema.org component word, fused from RecyclingCenter, ShoppingCenter, TouristInformationCenter"
+      "en": "Use when reasoning about center as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

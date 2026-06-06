@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "threshold",
-    "uuid": "a368cc0f-9e6c-80a5-aabd-576ba03a2e93",
+    "uuid": "dde1f1f6-8a48-8f0d-870d-f6aaa781d2e9",
     "words": [
       "threshold"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "threshold: a schema.org component word, fused from freeShippingThreshold",
-    "uuid": "569ad155-1890-80e8-ba60-7241f4a2eb68",
+    "source": "Use when reasoning about threshold as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "3740fe8c-d05e-8ed5-99f3-6e3d7e39923e",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "threshold",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "freeshippingthreshold"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "threshold: a schema.org component word, fused from freeShippingThreshold"
+      "en": "Use when reasoning about threshold as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

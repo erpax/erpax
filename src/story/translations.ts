@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "story",
-    "uuid": "087f28c0-8b2a-8086-95a2-6766b8d13157",
+    "uuid": "5a16b91c-6a80-8783-919a-ca5acc6b85b9",
     "words": [
       "story"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "story: a schema.org component word, fused from AmpStory, ComicStory, ShortStory",
-    "uuid": "3f08e857-657f-894f-8505-fbb491738c68",
+    "source": "Use when reasoning about story as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "7dac45b8-df3e-823c-9537-3c60da23a936",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "story",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "ampstory",
-      "comicstory",
-      "shortstory"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "story: a schema.org component word, fused from AmpStory, ComicStory, ShortStory"
+      "en": "Use when reasoning about story as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "buy",
-    "uuid": "24b99b89-e918-8438-93f1-9d7beb7fd4e7",
+    "uuid": "2f920d34-1567-8bfb-8874-0facb4f6fd6b",
     "words": [
       "buy"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "buy: a schema.org component word, fused from BuyAction",
-    "uuid": "15325e42-4eb2-8f95-88e7-bbf92501225d",
+    "source": "Use when reasoning about buy as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "ce354349-74c7-8e23-9c6f-fcf9da272168",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "buy",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "buyaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "buy: a schema.org component word, fused from BuyAction"
+      "en": "Use when reasoning about buy as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

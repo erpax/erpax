@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "arrive",
-    "uuid": "588f0918-70d7-8368-8fa2-3907fa77e8ae",
+    "uuid": "26e33656-1af6-812c-b91e-47b296155273",
     "words": [
       "arrive"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "arrive: a schema.org component word, fused from ArriveAction",
-    "uuid": "63038beb-3a9b-87eb-9968-58b36d8a57b8",
+    "source": "Use when reasoning about arrive as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "cd296329-e633-838b-b094-8f69812fc9bb",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "arrive",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "arriveaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "arrive: a schema.org component word, fused from ArriveAction"
+      "en": "Use when reasoning about arrive as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

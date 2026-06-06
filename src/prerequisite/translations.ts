@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "prerequisite",
-    "uuid": "4c5509b7-1392-81c6-8ff1-22956eef3bd9",
+    "uuid": "7e707908-da6a-80bf-965d-7cd422442a7d",
     "words": [
       "prerequisite"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one prerequisite — the singular model of the prerequisites collection (the plural store); a condition that must hold before something may proceed.",
-    "uuid": "fd72595f-6533-88c6-8331-e96692707890",
+    "uuid": "0e7ad1d5-2bc4-8678-a3ef-bb61200005bf",
     "words": [
       "use",
       "when",

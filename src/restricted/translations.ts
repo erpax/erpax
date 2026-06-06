@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "restricted",
-    "uuid": "3c5394dd-b47e-811c-ab4e-1f82d43c02e9",
+    "uuid": "6f58ee76-0705-8241-b0f2-89f6235326de",
     "words": [
       "restricted"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "restricted: a schema.org component word, fused from RestrictedDiet",
-    "uuid": "692af774-5971-82b9-a370-32dc3fd769b1",
+    "source": "Use when reasoning about restricted as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "47476d13-dd11-8d8c-ac74-c0cdcf77e94f",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "restricted",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "restricteddiet"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "restricted: a schema.org component word, fused from RestrictedDiet"
+      "en": "Use when reasoning about restricted as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

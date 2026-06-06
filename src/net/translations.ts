@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "net",
-    "uuid": "f9ad2514-bece-8f51-acf8-0a62c3654986",
+    "uuid": "cdf91f1b-4e93-8925-8cb1-a5a9742f8790",
     "words": [
       "net"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "net: a schema.org component word, fused from netWorth",
-    "uuid": "7c7463cb-0dfc-8fe8-ac9c-08715487daf4",
+    "source": "Use when reasoning about net as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "1eb8001a-4c56-8898-a496-ed046d099a59",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "net",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "networth"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "net: a schema.org component word, fused from netWorth"
+      "en": "Use when reasoning about net as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

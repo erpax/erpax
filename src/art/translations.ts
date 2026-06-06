@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "art",
-    "uuid": "789a656c-d59a-871e-a03f-dda8b8997644",
+    "uuid": "9eea4880-70ec-83a2-9040-10a895423198",
     "words": [
       "art"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "art: a schema.org component word, fused from ArtGallery, ComicCoverArt, CoverArt, SequentialArt, artEdition, artMedium",
-    "uuid": "52d5feae-5a1a-8d7f-b131-d1e557ecad9a",
+    "source": "Use when reasoning about art as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "1e488c95-6f58-81ca-a6b3-03d8c166afea",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "art",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "artgallery",
-      "comiccoverart",
-      "coverart",
-      "sequentialart",
-      "artedition",
-      "artmedium"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "art: a schema.org component word, fused from ArtGallery, ComicCoverArt, CoverArt, SequentialArt, artEdition, artMedium"
+      "en": "Use when reasoning about art as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

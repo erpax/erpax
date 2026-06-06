@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "gravity",
-    "uuid": "6ff743a5-a475-83ef-9fb3-86d747232228",
+    "uuid": "c3d92738-351f-82da-90a1-483440487663",
     "words": [
       "gravity"
     ],
@@ -17,8 +17,8 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "Use when reasoning about why the corpus collapses toward one — gravity is mass's pull, and in erpax DRY = mass = gravity: the more an atom is referenced (mass), the more it attracts duplicates and orphans to fuse into it. Gravity is the FORCE, fusion the act, entropy the fuel, the matrix the product; perfect DRY is a singularity — all mass at the one root (the torus collapse).",
-    "uuid": "f634736f-2a26-8feb-9362-c89ff384a7b9",
+    "source": "Use when reasoning about why the corpus collapses toward one — gravity is mass's pull, and in erpax DRY = mass = gravity: the more an atom is referenced (mass), the more it attracts duplicates and orphans to fuse into it. Gravity is the FORCE, fusion the act, entropy the fuel, the matrix the product; but it is BIDIRECTIONAL — forward it collapses folders to a minimal root, reverse it expands an infinite word-chain along the sequence path, a holographic boundary (not a dead point) where minimal mass means maximal tampering cost.",
+    "uuid": "a904ebbf-ccaf-87f6-a04b-6d9f6878cfb7",
     "words": [
       "use",
       "when",
@@ -73,23 +73,46 @@ export const translations: readonly Translation[] = [
       "matrix",
       "the",
       "product",
-      "perfect",
-      "dry",
+      "but",
+      "it",
       "is",
+      "bidirectional",
+      "forward",
+      "it",
+      "collapses",
+      "folders",
+      "to",
       "a",
-      "singularity",
-      "all",
-      "mass",
-      "at",
-      "the",
-      "one",
+      "minimal",
       "root",
+      "reverse",
+      "it",
+      "expands",
+      "an",
+      "infinite",
+      "word",
+      "chain",
+      "along",
       "the",
-      "torus",
-      "collapse"
+      "sequence",
+      "path",
+      "a",
+      "holographic",
+      "boundary",
+      "not",
+      "a",
+      "dead",
+      "point",
+      "where",
+      "minimal",
+      "mass",
+      "means",
+      "maximal",
+      "tampering",
+      "cost"
     ],
     "values": {
-      "en": "Use when reasoning about why the corpus collapses toward one — gravity is mass's pull, and in erpax DRY = mass = gravity: the more an atom is referenced (mass), the more it attracts duplicates and orphans to fuse into it. Gravity is the FORCE, fusion the act, entropy the fuel, the matrix the product; perfect DRY is a singularity — all mass at the one root (the torus collapse)."
+      "en": "Use when reasoning about why the corpus collapses toward one — gravity is mass's pull, and in erpax DRY = mass = gravity: the more an atom is referenced (mass), the more it attracts duplicates and orphans to fuse into it. Gravity is the FORCE, fusion the act, entropy the fuel, the matrix the product; but it is BIDIRECTIONAL — forward it collapses folders to a minimal root, reverse it expands an infinite word-chain along the sequence path, a holographic boundary (not a dead point) where minimal mass means maximal tampering cost."
     }
   }
 ]

@@ -1,5 +1,5 @@
 ---
-name: contract-performance
+name: contract-performances
 description: Use when tracking performance milestones and control-transfer events that gate revenue recognition — planned vs. actual completion dates, over-time or point-in-time determination per IFRS-15 §31-35, acceptance criteria, and associated invoice link. The milestone control-transfer collection.
 ---
 

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "anatomical",
-    "uuid": "4c0a542e-b622-8105-90ee-118ecf264989",
+    "uuid": "c011cc67-4ba6-8261-b074-51362af20c8d",
     "words": [
       "anatomical"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "anatomical: a schema.org component word, fused from AnatomicalStructure, AnatomicalSystem",
-    "uuid": "d7813b04-5e6e-846f-8eb3-f9e0326e447f",
+    "source": "Use when reasoning about anatomical as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "48cb18e9-07e4-8f81-b990-a452d174e012",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "anatomical",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "anatomicalstructure",
-      "anatomicalsystem"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "anatomical: a schema.org component word, fused from AnatomicalStructure, AnatomicalSystem"
+      "en": "Use when reasoning about anatomical as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

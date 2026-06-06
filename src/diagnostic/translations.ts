@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "diagnostic",
-    "uuid": "f7be7a2b-cb68-8401-a563-5c847f6eca73",
+    "uuid": "3cd246d6-a259-89da-8043-76806fd84c10",
     "words": [
       "diagnostic"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "diagnostic: a schema.org component word, fused from DiagnosticLab, DiagnosticProcedure",
-    "uuid": "7d89f2bb-da67-88d9-be5c-d79b8692be1a",
+    "source": "Use when reasoning about diagnostic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "f5727866-4c41-8222-8d5d-b7ad4e72cc7c",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "diagnostic",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "diagnosticlab",
-      "diagnosticprocedure"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "diagnostic: a schema.org component word, fused from DiagnosticLab, DiagnosticProcedure"
+      "en": "Use when reasoning about diagnostic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

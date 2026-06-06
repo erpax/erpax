@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "infectious",
-    "uuid": "45adf627-0686-86e7-9291-36bc7a7fa25e",
+    "uuid": "de9457f2-d5c6-8ac3-b470-ee316066c307",
     "words": [
       "infectious"
     ],
@@ -17,24 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "infectious: a schema.org component word, fused from InfectiousAgentClass, InfectiousDisease, infectiousAgent, infectiousAgentClass",
-    "uuid": "9b3b1911-eaf5-879a-ae07-e0aa49fae3f5",
+    "source": "Use when reasoning about infectious as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "e6b0a69d-563a-8557-bca9-73bebfe3b32e",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "infectious",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "infectiousagentclass",
-      "infectiousdisease",
-      "infectiousagent",
-      "infectiousagentclass"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "infectious: a schema.org component word, fused from InfectiousAgentClass, InfectiousDisease, infectiousAgent, infectiousAgentClass"
+      "en": "Use when reasoning about infectious as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

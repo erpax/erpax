@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "supplement",
-    "uuid": "1e407823-cab8-8bac-a5c8-c855cc17e771",
+    "uuid": "b3fc2788-3c12-80a8-adcc-07b05f311945",
     "words": [
       "supplement"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "supplement: a schema.org component word, fused from DietarySupplement",
-    "uuid": "f71b0f70-e20c-8689-bc7d-9121fecd39a7",
+    "source": "Use when reasoning about supplement as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "825f3957-bd59-8af6-b770-91d6900f9e7c",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "supplement",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "dietarysupplement"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "supplement: a schema.org component word, fused from DietarySupplement"
+      "en": "Use when reasoning about supplement as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

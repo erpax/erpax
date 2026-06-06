@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "agency",
-    "uuid": "a8757e64-41c3-8473-96e6-4f6053cdc6fb",
+    "uuid": "de318794-2849-88a6-8499-8fea82a98bde",
     "words": [
       "agency"
     ],
@@ -17,24 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "agency: a schema.org component word, fused from EmploymentAgency, FundingAgency, InsuranceAgency, TravelAgency",
-    "uuid": "e6b22202-73ee-8e67-9d03-c4bd43a5b0a2",
+    "source": "Use when reasoning about agency as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "b8a9696e-2e8a-8dc0-b006-b43469892682",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "agency",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "employmentagency",
-      "fundingagency",
-      "insuranceagency",
-      "travelagency"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "agency: a schema.org component word, fused from EmploymentAgency, FundingAgency, InsuranceAgency, TravelAgency"
+      "en": "Use when reasoning about agency as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

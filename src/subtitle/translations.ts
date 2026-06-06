@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "subtitle",
-    "uuid": "f104769d-c7bc-88e3-9760-b328167c6f47",
+    "uuid": "4666120e-ee0e-8c54-bf2d-fa10075c8ed4",
     "words": [
       "subtitle"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "subtitle: a schema.org component word, fused from subtitleLanguage",
-    "uuid": "73b8edb9-d425-8961-8f12-633265fbfa51",
+    "source": "Use when reasoning about subtitle as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "655c00ca-35cc-8db3-b625-5c07b54f695a",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "subtitle",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "subtitlelanguage"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "subtitle: a schema.org component word, fused from subtitleLanguage"
+      "en": "Use when reasoning about subtitle as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one binding — the singular model of the bindings collection (the plural store); a configured link between a name and the resource that backs it.",
-    "uuid": "de02ab3f-8100-8bef-9af9-9be72c371acf",
+    "uuid": "7b88f33c-c7c6-8001-9db2-9f37a0c6f635",
     "words": [
       "use",
       "when",

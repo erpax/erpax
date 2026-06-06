@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "contractor",
-    "uuid": "514a9d25-4059-8340-ae8f-b9fc34b69a91",
+    "uuid": "8fa5835b-fdd7-8d32-92bb-b648615048cf",
     "words": [
       "contractor"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "contractor: a schema.org component word, fused from GeneralContractor, RoofingContractor",
-    "uuid": "28de1fc6-4830-8fd7-8d3e-8a5a5f657fae",
+    "source": "Use when reasoning about contractor as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "86aad1b8-509a-8908-b260-4c52022bac6c",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "contractor",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "generalcontractor",
-      "roofingcontractor"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "contractor: a schema.org component word, fused from GeneralContractor, RoofingContractor"
+      "en": "Use when reasoning about contractor as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

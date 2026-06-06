@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "units",
-    "uuid": "7aa03132-227c-81be-b2ea-0b881f33d6d8",
+    "uuid": "82107c0f-674c-8ab5-b23c-68e1cd81e5e2",
     "words": [
       "units"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "units: a schema.org component word, fused from numberOfAccommodationUnits, numberOfAvailableAccommodationUnits",
-    "uuid": "1b9440f1-434f-82d7-8bf7-08b646c0df42",
+    "source": "Use when reasoning about units as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "c74bca02-ec1b-8721-8b46-19fb80599b73",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "units",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "numberofaccommodationunits",
-      "numberofavailableaccommodationunits"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "units: a schema.org component word, fused from numberOfAccommodationUnits, numberOfAvailableAccommodationUnits"
+      "en": "Use when reasoning about units as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

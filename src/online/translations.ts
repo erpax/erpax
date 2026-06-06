@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "online",
-    "uuid": "6d990ce7-c0ab-849b-aee9-38485b552b97",
+    "uuid": "7160ebea-7597-885f-b7c4-ae0f698c2689",
     "words": [
       "online"
     ],
@@ -17,24 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "online: a schema.org component word, fused from OnlineBusiness, OnlineMarketplace, OnlineStore, playersOnline",
-    "uuid": "1432491b-35f8-84f7-81f8-e2f950fab66c",
+    "source": "Use when reasoning about online as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "7d23ea8c-5b68-8c90-9c63-fc201ca5564c",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "online",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "onlinebusiness",
-      "onlinemarketplace",
-      "onlinestore",
-      "playersonline"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "online: a schema.org component word, fused from OnlineBusiness, OnlineMarketplace, OnlineStore, playersOnline"
+      "en": "Use when reasoning about online as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

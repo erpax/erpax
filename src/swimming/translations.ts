@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "swimming",
-    "uuid": "a466dbb6-50d9-8a52-a3a6-064d1a820d02",
+    "uuid": "9e5c2bc5-1643-8ef7-b217-ef7e3a235451",
     "words": [
       "swimming"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "swimming: a schema.org component word, fused from PublicSwimmingPool",
-    "uuid": "9f54c80b-40f1-84bd-a8e2-1225bfd67edf",
+    "source": "Use when reasoning about swimming as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "fa9d3fb9-dcbc-85bf-865a-de95f68856a9",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "swimming",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "publicswimmingpool"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "swimming: a schema.org component word, fused from PublicSwimmingPool"
+      "en": "Use when reasoning about swimming as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

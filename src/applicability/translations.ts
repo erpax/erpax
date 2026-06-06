@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "applicability",
-    "uuid": "dbaac1a5-485f-872a-aac6-fa9903a79884",
+    "uuid": "3ba76e79-903f-843d-bcaa-0fe973871566",
     "words": [
       "applicability"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "applicability: a schema.org component word, fused from legislationDateOfApplicability",
-    "uuid": "7c6d27ff-454c-8bb5-aef8-1f4b4605b82f",
+    "source": "Use when reasoning about applicability as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "734ae837-5402-826f-a73f-5893d5440b05",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "applicability",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "legislationdateofapplicability"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "applicability: a schema.org component word, fused from legislationDateOfApplicability"
+      "en": "Use when reasoning about applicability as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

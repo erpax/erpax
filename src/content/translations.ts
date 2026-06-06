@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "content",
-    "uuid": "a1324475-a8e3-815b-8f0c-0012ec1b4112",
+    "uuid": "35b52066-2958-8af0-80dd-638729941bf2",
     "words": [
       "content"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "content: a schema.org component word, fused from AdvertiserContentArticle, HealthTopicContent, WebContent, carbohydrateContent, cholesterolContent, contentLocation",
-    "uuid": "7ed4ac3d-539f-87d7-96a7-024fc88f50d8",
+    "source": "Use when reasoning about content as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "2547a9e5-8cfe-88df-bc61-f0bcb66a4c79",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "content",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "advertisercontentarticle",
-      "healthtopiccontent",
-      "webcontent",
-      "carbohydratecontent",
-      "cholesterolcontent",
-      "contentlocation"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "content: a schema.org component word, fused from AdvertiserContentArticle, HealthTopicContent, WebContent, carbohydrateContent, cholesterolContent, contentLocation"
+      "en": "Use when reasoning about content as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

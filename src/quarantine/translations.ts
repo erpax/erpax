@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "quarantine",
-    "uuid": "96f6671b-6769-8e66-8ca7-f4edb40ed131",
+    "uuid": "45b66192-2445-8e2d-b466-491b74d72709",
     "words": [
       "quarantine"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "quarantine: a schema.org component word, fused from quarantineGuidelines",
-    "uuid": "da2dd95e-418a-8e2e-84cc-519bc99156c6",
+    "source": "Use when reasoning about quarantine as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "d086c795-dde6-884c-aa22-5c3e03979327",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "quarantine",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "quarantineguidelines"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "quarantine: a schema.org component word, fused from quarantineGuidelines"
+      "en": "Use when reasoning about quarantine as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

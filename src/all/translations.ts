@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "all",
-    "uuid": "1ac5fbec-77fd-8bbf-b8a7-9ff144644b07",
+    "uuid": "6da5eb4f-4567-8e2d-93f2-9bc4236e4d96",
     "words": [
       "all"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about totality or universality in erpax — \"anything is X\" (accountable/taggable), polymorphic relationTo:[...all], the identity element that defines the empty case. The universal root of totality.",
-    "uuid": "2ef8500d-2179-8b19-b307-8360265f7f82",
+    "uuid": "03c58916-e7c1-85d6-964a-5fa7f80fc0e0",
     "words": [
       "use",
       "when",

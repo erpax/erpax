@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "administration",
-    "uuid": "8ec17d39-f602-8c5c-8500-fc203f0d5936",
+    "uuid": "bf57d465-5b93-8a51-b3b7-23e908ff6e99",
     "words": [
       "administration"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "administration: a schema.org component word, fused from administrationRoute",
-    "uuid": "9f40b5b5-8d36-8916-b7c7-9e9bc7606e46",
+    "source": "Use when reasoning about administration as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "a288dd8e-a0a6-8272-9c42-675b916c41c0",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "administration",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "administrationroute"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "administration: a schema.org component word, fused from administrationRoute"
+      "en": "Use when reasoning about administration as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

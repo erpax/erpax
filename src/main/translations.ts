@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "main",
-    "uuid": "4f1994b7-a0de-8987-98be-8643a6f51307",
+    "uuid": "fcc1aeff-bef7-8a7d-85d2-b594ef6f8358",
     "words": [
       "main"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "main: a schema.org component word, fused from mainContentOfPage, mainEntity, mainEntityOfPage",
-    "uuid": "8b227448-2d03-8da1-8985-57d0f6a123fa",
+    "source": "Use when reasoning about main as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "4dcc3939-b6ca-8867-b826-26a0858f65dc",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "main",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "maincontentofpage",
-      "mainentity",
-      "mainentityofpage"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "main: a schema.org component word, fused from mainContentOfPage, mainEntity, mainEntityOfPage"
+      "en": "Use when reasoning about main as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

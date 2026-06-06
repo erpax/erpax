@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "educational",
-    "uuid": "a2b65cb2-7ce5-8427-841d-8c2d4cc7a500",
+    "uuid": "3f1ad8af-408c-8de4-95d2-e11afe220e4b",
     "words": [
       "educational"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "educational: a schema.org component word, fused from EducationalAudience, EducationalOccupationalCredential, EducationalOccupationalProgram, EducationalOrganization, educationalAlignment, educationalC",
-    "uuid": "c799e92c-8d77-8d31-ae33-59b4155ebcf8",
+    "source": "Use when reasoning about educational as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "fd8adcff-2d8e-8562-8382-12b399c468e0",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "educational",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "educationalaudience",
-      "educationaloccupationalcredential",
-      "educationaloccupationalprogram",
-      "educationalorganization",
-      "educationalalignment",
-      "educationalc"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "educational: a schema.org component word, fused from EducationalAudience, EducationalOccupationalCredential, EducationalOccupationalProgram, EducationalOrganization, educationalAlignment, educationalC"
+      "en": "Use when reasoning about educational as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

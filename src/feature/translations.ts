@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "feature",
-    "uuid": "aa8347ba-419d-8427-ab90-7c3c794870c8",
+    "uuid": "ade24eb4-253c-8dd3-9bf1-d87c6b17e37b",
     "words": [
       "feature"
     ],
@@ -17,24 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "feature: a schema.org component word, fused from LocationFeatureSpecification, accessibilityFeature, amenityFeature, featureList",
-    "uuid": "87730838-57b9-8065-8599-25f1baf61209",
+    "source": "Use when reasoning about feature as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "303cdf96-ac85-8364-8558-d044e6df2dfa",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "feature",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "locationfeaturespecification",
-      "accessibilityfeature",
-      "amenityfeature",
-      "featurelist"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "feature: a schema.org component word, fused from LocationFeatureSpecification, accessibilityFeature, amenityFeature, featureList"
+      "en": "Use when reasoning about feature as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

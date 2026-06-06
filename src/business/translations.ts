@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "business",
-    "uuid": "0c1c636f-b493-834d-a107-eac41ba01aa4",
+    "uuid": "fb566b9c-87b0-8b22-a06a-acb0cc064adb",
     "words": [
       "business"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "business: a schema.org component word, fused from AutomotiveBusiness, BusinessAudience, BusinessEntityType, BusinessEvent, BusinessFunction, EntertainmentBusiness",
-    "uuid": "ec6521a5-d025-8567-9d2a-06c00ac39eab",
+    "source": "Use when reasoning about business as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "c5ab421d-77c0-835c-b4b0-e37952ebfd34",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "business",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "automotivebusiness",
-      "businessaudience",
-      "businessentitytype",
-      "businessevent",
-      "businessfunction",
-      "entertainmentbusiness"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "business: a schema.org component word, fused from AutomotiveBusiness, BusinessAudience, BusinessEntityType, BusinessEvent, BusinessFunction, EntertainmentBusiness"
+      "en": "Use when reasoning about business as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

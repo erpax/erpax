@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "subcellular",
-    "uuid": "21ef4406-90cf-8a63-8f78-d81c8709e9dd",
+    "uuid": "ea4994ef-a73f-8429-9825-0e6c365bc72e",
     "words": [
       "subcellular"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "subcellular: a schema.org component word, fused from isLocatedInSubcellularLocation",
-    "uuid": "c23c1b50-676a-8b5d-b78f-96b140fe5c11",
+    "source": "Use when reasoning about subcellular as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "2a3fd17b-8d7f-8294-8e65-4f0a6854ba17",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "subcellular",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "islocatedinsubcellularlocation"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "subcellular: a schema.org component word, fused from isLocatedInSubcellularLocation"
+      "en": "Use when reasoning about subcellular as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

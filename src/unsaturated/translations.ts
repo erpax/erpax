@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "unsaturated",
-    "uuid": "b5e0aa41-0252-86f4-b9a7-59917cf9a833",
+    "uuid": "fb112432-ba8f-8873-a6a5-192478b35d27",
     "words": [
       "unsaturated"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "unsaturated: a schema.org component word, fused from unsaturatedFatContent",
-    "uuid": "0ff085dc-3560-873b-9c37-8e2af2d7935b",
+    "source": "Use when reasoning about unsaturated as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "a13cbeaa-9fdb-8ad0-9630-c7f3db4db048",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "unsaturated",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "unsaturatedfatcontent"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "unsaturated: a schema.org component word, fused from unsaturatedFatContent"
+      "en": "Use when reasoning about unsaturated as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

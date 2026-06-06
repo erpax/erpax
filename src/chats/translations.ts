@@ -6,19 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "chat",
-    "uuid": "55c0d8db-a537-8dc8-8695-8d5252bd4e7a",
+    "source": "chats",
+    "uuid": "9e795428-4d27-8fa9-b270-55a98f196236",
     "words": [
-      "chat"
+      "chats"
     ],
     "values": {
-      "en": "chat"
+      "en": "chats"
     }
   },
   {
     "key": "description",
     "source": "Use when reasoning about the agent-society room native to Payload — the per-tenant content-addressed event bus where each row is an ErpaxEvent envelope an agent published; the queryable, auditable akashic chat history that replaces the external chat.erpax.com Durable Object. Distinct from messages (user-to-user mail). The agent-bus collection.",
-    "uuid": "b0e334c0-f086-8596-9dc6-226c2ec0c65b",
+    "uuid": "6c8b722a-efea-893b-abfc-197180f0161f",
     "words": [
       "use",
       "when",

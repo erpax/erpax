@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "profile",
-    "uuid": "660b6b3c-9a93-8514-aa53-25ff78b28059",
+    "uuid": "f57e4ec3-f810-89dc-904a-11348fdc2d48",
     "words": [
       "profile"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "profile: a schema.org component word, fused from ProfilePage",
-    "uuid": "2a0bbb0b-3d3a-8f6d-a711-97e804f63bbf",
+    "source": "Use when reasoning about profile as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "d13234e7-574f-8c52-9b44-1343fff13ecd",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "profile",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "profilepage"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "profile: a schema.org component word, fused from ProfilePage"
+      "en": "Use when reasoning about profile as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

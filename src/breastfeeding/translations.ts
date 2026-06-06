@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "breastfeeding",
-    "uuid": "1280008a-3daa-89f0-a07a-43fb3ce5ebd8",
+    "uuid": "3c556d9a-f492-8f4d-bdb5-56c989153bef",
     "words": [
       "breastfeeding"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "breastfeeding: a schema.org component word, fused from breastfeedingWarning",
-    "uuid": "5a8af866-5323-853d-a2df-a22939456a55",
+    "source": "Use when reasoning about breastfeeding as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "b33c6473-4451-83ba-8730-3183bdf92c45",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "breastfeeding",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "breastfeedingwarning"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "breastfeeding: a schema.org component word, fused from breastfeedingWarning"
+      "en": "Use when reasoning about breastfeeding as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

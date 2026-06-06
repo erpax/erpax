@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "fees",
-    "uuid": "4f622093-bcb8-8620-845b-b8396ef5bb09",
+    "uuid": "b7b723dc-4fa2-898d-b459-46a2011a8c55",
     "words": [
       "fees"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "fees: a schema.org component word, fused from ReturnFeesEnumeration, customerRemorseReturnFees, customerRemorseReturnShippingFeesAmount, feesAndCommissionsSpecification, itemDefectReturnFees, itemDefe",
-    "uuid": "1e78b6e2-e3b3-896f-be4e-ff4957b72033",
+    "source": "Use when reasoning about fees as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "9e56c93c-8f68-80cb-a526-27f387a4e9d1",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "fees",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "returnfeesenumeration",
-      "customerremorsereturnfees",
-      "customerremorsereturnshippingfeesamount",
-      "feesandcommissionsspecification",
-      "itemdefectreturnfees",
-      "itemdefe"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "fees: a schema.org component word, fused from ReturnFeesEnumeration, customerRemorseReturnFees, customerRemorseReturnShippingFeesAmount, feesAndCommissionsSpecification, itemDefectReturnFees, itemDefe"
+      "en": "Use when reasoning about fees as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "interact",
-    "uuid": "fed456ec-e923-8095-8ef4-d76c3a12df12",
+    "uuid": "c1ebeb2a-c89b-8b79-bdc9-95e55917a116",
     "words": [
       "interact"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "interact: a schema.org component word, fused from InteractAction",
-    "uuid": "70752dd9-e15b-87bf-97a4-8c4a1aa87a8e",
+    "source": "Use when reasoning about interact as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "5af7678d-b5e3-829d-9e79-7870f5c958f8",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "interact",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "interactaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "interact: a schema.org component word, fused from InteractAction"
+      "en": "Use when reasoning about interact as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

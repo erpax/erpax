@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "dropoff",
-    "uuid": "95aa1c7a-17cd-8093-8582-a19eda026536",
+    "uuid": "079920d5-be91-8822-ab8c-9768369c73eb",
     "words": [
       "dropoff"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "dropoff: a schema.org component word, fused from dropoffLocation, dropoffTime",
-    "uuid": "ab3c2a5a-8638-8c6b-9ba5-cb732bf74d9d",
+    "source": "Use when reasoning about dropoff as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "25dc78a1-2853-8f56-b5d4-366f37177a0a",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "dropoff",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "dropofflocation",
-      "dropofftime"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "dropoff: a schema.org component word, fused from dropoffLocation, dropoffTime"
+      "en": "Use when reasoning about dropoff as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

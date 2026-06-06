@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "percentage",
-    "uuid": "690d91ff-d8ad-8300-9af1-c0322f878262",
+    "uuid": "723de288-6480-8514-bdae-d1c3739a07cf",
     "words": [
       "percentage"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "percentage: a schema.org component word, fused from annualPercentageRate, orderPercentage, weightPercentage",
-    "uuid": "01a1ccd7-4e62-8612-91d0-939d27abaeaf",
+    "source": "Use when reasoning about percentage as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "fd6bc098-f6a9-8a08-8a29-dc9e8a87b95d",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "percentage",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "annualpercentagerate",
-      "orderpercentage",
-      "weightpercentage"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "percentage: a schema.org component word, fused from annualPercentageRate, orderPercentage, weightPercentage"
+      "en": "Use when reasoning about percentage as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

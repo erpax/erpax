@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "steering",
-    "uuid": "5c62b3aa-836b-87cb-8f19-934f4f36974a",
+    "uuid": "7997291b-de3c-8e20-be00-78bda395974b",
     "words": [
       "steering"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "steering: a schema.org component word, fused from SteeringPositionValue, steeringPosition",
-    "uuid": "4a1b46e9-244e-8f4e-afe4-b8893bf124c6",
+    "source": "Use when reasoning about steering as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "65baa0e4-f118-8821-9f12-40589445cca9",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "steering",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "steeringpositionvalue",
-      "steeringposition"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "steering: a schema.org component word, fused from SteeringPositionValue, steeringPosition"
+      "en": "Use when reasoning about steering as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

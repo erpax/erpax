@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "method",
-    "uuid": "2f22feda-48b2-8bb3-a3c6-e84bffb1d595",
+    "uuid": "9ff97d5a-f1a3-88d6-87dd-7cfee5a1a804",
     "words": [
       "method"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "method: a schema.org component word, fused from DeliveryMethod, MeasurementMethodEnum, PaymentMethod, PaymentMethodType, ReturnMethodEnumeration, acceptedPaymentMethod",
-    "uuid": "1fd16312-f7a5-872a-8022-9fadc1bee0e3",
+    "source": "Use when reasoning about method as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "107989fc-1062-8b8e-b4af-20d907ebc5a7",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "method",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "deliverymethod",
-      "measurementmethodenum",
-      "paymentmethod",
-      "paymentmethodtype",
-      "returnmethodenumeration",
-      "acceptedpaymentmethod"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "method: a schema.org component word, fused from DeliveryMethod, MeasurementMethodEnum, PaymentMethod, PaymentMethodType, ReturnMethodEnumeration, acceptedPaymentMethod"
+      "en": "Use when reasoning about method as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one failure — the singular model of the failures collection (the plural store); a recorded instance of something not meeting its requirement.",
-    "uuid": "70daaca5-f84d-884c-96ba-a4ca2e5234f2",
+    "uuid": "f7abdeb1-c014-8494-8719-d0c108c1fddf",
     "words": [
       "use",
       "when",

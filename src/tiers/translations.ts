@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "tiers",
-    "uuid": "ec09dbc3-ebe0-8317-b190-8df092f08298",
+    "uuid": "ec109e82-aa17-889e-9e9e-3aaccac3603c",
     "words": [
       "tiers"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "tiers: a schema.org component word, fused from hasTiers",
-    "uuid": "a3254407-8a36-80b2-85fa-e39a7edfa27f",
+    "source": "Use when reasoning about tiers as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "78458fb0-0e31-8cb8-8858-6f6e30fb21b7",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "tiers",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "hastiers"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "tiers: a schema.org component word, fused from hasTiers"
+      "en": "Use when reasoning about tiers as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

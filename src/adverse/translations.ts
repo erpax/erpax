@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "adverse",
-    "uuid": "6f5253af-285a-8ad9-bf66-7bfe19ae01a3",
+    "uuid": "082d2173-f358-8523-9487-a563c458feac",
     "words": [
       "adverse"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "adverse: a schema.org component word, fused from adverseOutcome, seriousAdverseOutcome",
-    "uuid": "0993e84e-1c33-8c0b-8894-21834188ded5",
+    "source": "Use when reasoning about adverse as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "9cdc0620-ff34-8761-a37c-6ff75078ec43",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "adverse",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "adverseoutcome",
-      "seriousadverseoutcome"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "adverse: a schema.org component word, fused from adverseOutcome, seriousAdverseOutcome"
+      "en": "Use when reasoning about adverse as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

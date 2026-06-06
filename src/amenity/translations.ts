@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "amenity",
-    "uuid": "04683d5a-a18c-8429-ae5d-c97730caee29",
+    "uuid": "21d42c03-dd99-8867-8d4f-b0c1e336e166",
     "words": [
       "amenity"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "amenity: a schema.org component word, fused from amenityFeature",
-    "uuid": "16419689-c87e-8765-ad87-892370948325",
+    "source": "Use when reasoning about amenity as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "b4bf197e-856a-8750-84ee-9f4c1c0d2cee",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "amenity",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "amenityfeature"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "amenity: a schema.org component word, fused from amenityFeature"
+      "en": "Use when reasoning about amenity as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "spread",
-    "uuid": "6355fddb-ed5c-8f61-bbb9-1200d34daa72",
+    "uuid": "e2b16414-1854-8706-9529-5c8df7c6ba6b",
     "words": [
       "spread"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "spread: a schema.org component word, fused from diseaseSpreadStatistics, exchangeRateSpread",
-    "uuid": "eb36f0bc-51e6-8306-8d04-ae2a9b73d666",
+    "source": "Use when reasoning about spread as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "e6046154-0b3f-87cb-aab1-ae1c5bc1ea47",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "spread",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "diseasespreadstatistics",
-      "exchangeratespread"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "spread: a schema.org component word, fused from diseaseSpreadStatistics, exchangeRateSpread"
+      "en": "Use when reasoning about spread as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

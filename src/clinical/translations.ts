@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "clinical",
-    "uuid": "f84828ae-1cb6-8c2f-a4b3-5d6d63ead6c2",
+    "uuid": "ca44338f-458f-8cec-8bc4-a3b2f34950fe",
     "words": [
       "clinical"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "clinical: a schema.org component word, fused from clinicalPharmacology",
-    "uuid": "aa33df4e-ea99-828e-99b1-6b65ed92d22d",
+    "source": "Use when reasoning about clinical as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "fbbb9f9d-7e82-8db3-a421-fa5f98ad1107",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "clinical",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "clinicalpharmacology"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "clinical: a schema.org component word, fused from clinicalPharmacology"
+      "en": "Use when reasoning about clinical as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

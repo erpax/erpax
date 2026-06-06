@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "positive",
-    "uuid": "9c668bd9-4853-847d-b87d-6e5cebb8ac76",
+    "uuid": "4af42787-a61d-82b6-b59f-b3f818a92d87",
     "words": [
       "positive"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "positive: a schema.org component word, fused from positiveNotes",
-    "uuid": "89174c50-d024-808d-8c83-d84fe6746962",
+    "source": "Use when reasoning about positive as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "26f48a24-8075-87ee-84c7-26dd4bf7a266",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "positive",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "positivenotes"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "positive: a schema.org component word, fused from positiveNotes"
+      "en": "Use when reasoning about positive as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

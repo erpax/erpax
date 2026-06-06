@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "offset",
-    "uuid": "5fd42214-6dea-8486-87d8-19861e74a810",
+    "uuid": "db4f37ec-5d90-873e-bb4f-0cda1c356324",
     "words": [
       "offset"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "offset: a schema.org component word, fused from endOffset, startOffset",
-    "uuid": "df4f04c3-a87b-865b-badc-42397941b1cb",
+    "source": "Use when reasoning about offset as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "0c180a21-f4a3-8fb0-9e4c-f620daedf978",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "offset",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "endoffset",
-      "startoffset"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "offset: a schema.org component word, fused from endOffset, startOffset"
+      "en": "Use when reasoning about offset as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

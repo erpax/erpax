@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "cooking",
-    "uuid": "fa973e6f-25e4-838c-a5f9-0dc4e9e55536",
+    "uuid": "2abc5039-805e-8e44-ac09-dbb7644d36ef",
     "words": [
       "cooking"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "cooking: a schema.org component word, fused from cookingMethod",
-    "uuid": "1bb04ed8-e845-8c7a-89e8-69520d68fe8b",
+    "source": "Use when reasoning about cooking as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "ed248351-e724-81bb-9291-4e23ddf64db0",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "cooking",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "cookingmethod"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "cooking: a schema.org component word, fused from cookingMethod"
+      "en": "Use when reasoning about cooking as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "expects",
-    "uuid": "e3f2ae34-a58a-8387-9026-79c54872b1cd",
+    "uuid": "9664deee-98d5-8550-a065-8bd6988df1ed",
     "words": [
       "expects"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "expects: a schema.org component word, fused from expectsAcceptanceOf",
-    "uuid": "411cb15e-e6df-8389-81e4-fecefde93ec8",
+    "source": "Use when reasoning about expects as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "3f2b20f1-3fc1-8efb-ac2c-20d27219fc72",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "expects",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "expectsacceptanceof"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "expects: a schema.org component word, fused from expectsAcceptanceOf"
+      "en": "Use when reasoning about expects as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

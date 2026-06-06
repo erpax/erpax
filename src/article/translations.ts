@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "article",
-    "uuid": "0f3f480b-0ce4-838e-b208-66ae0a57462c",
+    "uuid": "28ccbbb8-1f8f-87af-b87d-475c109eb0de",
     "words": [
       "article"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "An article, such as a news article or piece of investigative report. Newspapers and magazines have articles of many different types and this is intended to cover them all. See also blog post.",
-    "uuid": "62fe878e-53dc-8b18-a7b3-5fbc973f99b0",
+    "uuid": "38153ec7-8c02-80f9-a605-ed6f5be49551",
     "words": [
       "an",
       "article",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "repository",
-    "uuid": "ece2ed34-7d7a-8f28-a8ad-d97a79d2a8fe",
+    "uuid": "5ef0b441-258c-8529-a3c3-2825b96739cf",
     "words": [
       "repository"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "repository: a schema.org component word, fused from codeRepository",
-    "uuid": "ecae2eb7-9773-88e5-87c3-f9a3b5480c11",
+    "source": "Use when reasoning about repository as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "6a23a01c-26f3-87fc-8421-9267505f8f8d",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "repository",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "coderepository"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "repository: a schema.org component word, fused from codeRepository"
+      "en": "Use when reasoning about repository as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

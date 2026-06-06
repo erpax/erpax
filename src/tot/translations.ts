@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "tot",
-    "uuid": "4169514f-30aa-8c95-80ca-43833a8c5b63",
+    "uuid": "b04812ab-9eba-8141-bf24-bc75de58abb0",
     "words": [
       "tot"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "tot: a schema.org component word, fused from cvdNumTotBeds",
-    "uuid": "4578bf09-407b-8f87-ab71-62a026eee021",
+    "source": "Use when reasoning about tot as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "0c0e78f5-6abf-8d5c-bdc0-50c45ebf9fb1",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "tot",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "cvdnumtotbeds"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "tot: a schema.org component word, fused from cvdNumTotBeds"
+      "en": "Use when reasoning about tot as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

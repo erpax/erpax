@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "requirement",
-    "uuid": "47017409-018f-8d66-8f2c-49f59aa9121b",
+    "uuid": "9e25544e-e7a0-8f2d-a463-9620ca0cbf9e",
     "words": [
       "requirement"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "requirement: a schema.org component word, fused from actionAccessibilityRequirement, advanceBookingRequirement, eligibilityToWorkRequirement, hasTierRequirement, physicalRequirement, securityClearance",
-    "uuid": "70ee0cc1-dc3a-8bff-9cb7-521a52a49a1d",
+    "source": "Use when reasoning about requirement as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "f4ca2c5d-914c-8a63-b5c4-6de552244302",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "requirement",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "actionaccessibilityrequirement",
-      "advancebookingrequirement",
-      "eligibilitytoworkrequirement",
-      "hastierrequirement",
-      "physicalrequirement",
-      "securityclearance"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "requirement: a schema.org component word, fused from actionAccessibilityRequirement, advanceBookingRequirement, eligibilityToWorkRequirement, hasTierRequirement, physicalRequirement, securityClearance"
+      "en": "Use when reasoning about requirement as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

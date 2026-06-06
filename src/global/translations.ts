@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "global",
-    "uuid": "953da8cf-67af-89f5-b389-323f12724f56",
+    "uuid": "c73a05e4-1c69-807e-9afc-88010087cfad",
     "words": [
       "global"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "global: a schema.org component word, fused from globalLocationNumber",
-    "uuid": "b03a413d-96a0-8bdd-859d-fc120abfd6ae",
+    "source": "Use when reasoning about global as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "992f49ef-a450-8c6d-901b-e0abf61c0678",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "global",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "globallocationnumber"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "global: a schema.org component word, fused from globalLocationNumber"
+      "en": "Use when reasoning about global as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

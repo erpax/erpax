@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "closing-entries",
-    "uuid": "cb6ef478-9511-8336-9dd8-a6c144b9bd17",
+    "uuid": "5e9561b5-c21f-822b-8db4-2feabfed3a4d",
     "words": [
       "closing",
       "entries"
@@ -19,7 +19,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when executing or auditing period-end close — closing P&L accounts to retained earnings, auto-generating reversing entries, locking the period, and producing an immutable close audit trail per IFRS IAS-1 / SOX §404. The period-close journal-entry collection.",
-    "uuid": "c539bb4c-3421-8d37-93a8-f8a8c58ab661",
+    "uuid": "deb394a1-a775-86c5-a622-22a181c5986b",
     "words": [
       "use",
       "when",

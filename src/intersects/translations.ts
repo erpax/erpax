@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "intersects",
-    "uuid": "0196166f-e289-8de1-a517-4dd2e6572a4a",
+    "uuid": "795c2167-5c3a-8ecd-8374-607358053da7",
     "words": [
       "intersects"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "intersects: a schema.org component word, fused from geoIntersects",
-    "uuid": "f6238a2b-de32-8dac-b7ef-ffcde59f2e44",
+    "source": "Use when reasoning about intersects as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "95833536-763c-8800-ad35-e4b5d8773be9",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "intersects",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "geointersects"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "intersects: a schema.org component word, fused from geoIntersects"
+      "en": "Use when reasoning about intersects as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

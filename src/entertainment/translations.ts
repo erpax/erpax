@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "entertainment",
-    "uuid": "c21c7ff8-4725-8e29-a60e-29211dc445e8",
+    "uuid": "2b4443b0-0e9d-8aec-99fb-7b0daf8e2954",
     "words": [
       "entertainment"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "entertainment: a schema.org component word, fused from AdultEntertainment, EntertainmentBusiness, entertainmentBusiness",
-    "uuid": "f454db06-d148-89ba-a5e4-63b600dd4191",
+    "source": "Use when reasoning about entertainment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "c0ee1e99-8699-8a91-a6a6-a640593188f0",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "entertainment",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "adultentertainment",
-      "entertainmentbusiness",
-      "entertainmentbusiness"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "entertainment: a schema.org component word, fused from AdultEntertainment, EntertainmentBusiness, entertainmentBusiness"
+      "en": "Use when reasoning about entertainment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

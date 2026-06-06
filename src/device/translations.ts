@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "device",
-    "uuid": "f028f640-e216-8d2c-9fd0-a402675c689b",
+    "uuid": "d018e48b-9af3-8f0e-bee8-8d228a17d7a0",
     "words": [
       "device"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Device required to run the application. Used in cases where a specific make/model is required to run the application.",
-    "uuid": "3800f5e8-cc98-898c-890e-2bd8314cdb15",
+    "uuid": "0fdbb464-dce3-8c6c-9cda-40542a00b1c9",
     "words": [
       "device",
       "required",

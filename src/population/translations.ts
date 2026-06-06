@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "population",
-    "uuid": "e44e41ae-0cf0-804e-866e-41beaaf4d8c3",
+    "uuid": "a6018d84-2308-8533-97a0-e92c6bdde92f",
     "words": [
       "population"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "population: a schema.org component word, fused from StatisticalPopulation, populationType, targetPopulation",
-    "uuid": "34b26e75-6682-8201-bebd-9af762744507",
+    "source": "Use when reasoning about population as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "ba7db6ea-e88e-80b3-a5a3-599e3aa6110d",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "population",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "statisticalpopulation",
-      "populationtype",
-      "targetpopulation"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "population: a schema.org component word, fused from StatisticalPopulation, populationType, targetPopulation"
+      "en": "Use when reasoning about population as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

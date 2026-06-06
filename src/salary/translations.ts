@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "salary",
-    "uuid": "d4ad09f1-3536-8205-8e85-f7df2477dcf1",
+    "uuid": "240b853a-9213-8dc6-8f21-1b945bc48ef3",
     "words": [
       "salary"
     ],
@@ -17,25 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "salary: a schema.org component word, fused from baseSalary, estimatedSalary, salaryCurrency, salaryUponCompletion, trainingSalary",
-    "uuid": "57731559-7365-8afd-a0c4-161da398a8bc",
+    "source": "Use when reasoning about salary as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "56c1a856-c7f1-8fd3-b9e4-3149c9713f34",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "salary",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "basesalary",
-      "estimatedsalary",
-      "salarycurrency",
-      "salaryuponcompletion",
-      "trainingsalary"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "salary: a schema.org component word, fused from baseSalary, estimatedSalary, salaryCurrency, salaryUponCompletion, trainingSalary"
+      "en": "Use when reasoning about salary as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

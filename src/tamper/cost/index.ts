@@ -24,14 +24,19 @@
  *      ANCHORED (services/anchoring → RFC-3161/eIDAS TSA or a blockchain leaf).
  *      To finish you must also forge that anchor: ~2^anchorStrengthBits.
  *
- * Binding cost = min(localForge, chosenCollision, globalRewrite). The chosen-
- * collision path binds only when `anchorCommitmentBits` is supplied (the
- * attacker controls pre-commit content). The all-directions wiring is
- * what makes "change one" cost "change all", so the only cheap path (rewrite a
- * *deterministic* store) is closed UNLESS the anchor is absent — then a writer
- * recomputes everything for free and tamper-evidence collapses. The anchor is
- * the single place a zero-entropy app borrows external entropy; it must be at
- * least as strong as the digest, or it is the weak link.
+ * The CRYPTOGRAPHIC FLOOR (real bits, NIST SP 800-107) = min(localForge,
+ * chosenCollision, globalRewrite). The chosen-collision path binds only when
+ * `anchorCommitmentBits` is supplied (the attacker controls pre-commit content).
+ * The all-directions wiring is what makes "change one" cost "change all", so the
+ * only cheap path (rewrite a *deterministic* store) is closed UNLESS the anchor
+ * is absent — then a writer recomputes everything for free and tamper-evidence
+ * collapses. The anchor is the single place a zero-entropy app borrows external
+ * entropy; it must be at least as strong as the digest, or it is the weak link.
+ *
+ * The verdict's `crackCostLog2 = (that floor) + coverageCost` — the coverage
+ * term is ADDED, not part of the min (see `crackVerdict`). It is a STRUCTURAL
+ * amplifier (a completeness count), not measured cryptographic work; with no
+ * coverage supplied it is 0 and the verdict is exactly the floor.
  *
  * The coverage law (Law 62 — every node wired in uuid; → ∞ at 100%) counts the
  * independent checks a coherent tamper must simultaneously evade. Two inhaled
@@ -79,7 +84,7 @@ export type CrackVerdict = {
   birthdayMarginBits: number
   /** log2 years for the whole Bitcoin network to pay crackCost */
   bruteYearsLog2: number
-  /** false ⇒ a writer can tamper without out-computing anything */
+  /** true ONLY when the cheapest forge proven-costs > 2^0; false ⇒ a writer can tamper without out-computing anything (un-anchored OR anchored to a zero/near-zero-strength anchor) */
   tamperEvident: boolean
   note: string
 }
@@ -96,7 +101,14 @@ export function crackVerdict(opts: {
   rows?: number
   anchored?: boolean
   anchorStrengthBits?: number
-  /** fraction of nodes wired in structured uuid (1 = 100% coverage by architecture) */
+  /**
+   * A coverage fraction in [0,1] on SOME named axis — structural node-wiring,
+   * model⊕collection balance, import purity, OR usage-accumulation — the CALLER
+   * states which. crackVerdict is axis-agnostic; → ∞ only at a *measured* 1 for
+   * that axis. (1 ≠ "by architecture" unless the supplied value provably IS the
+   * structural-wiring fraction; a usage axis, e.g. power.coverageFromUsage, is a
+   * different measure and must not be presented as structural completeness.)
+   */
   coverage?: number
   /** independent uuid checks a tamper must evade together (the all-directions cascade) */
   checks?: number
@@ -160,6 +172,12 @@ export function crackVerdict(opts: {
   // Stable argmin: ties keep earlier (collision ≺ second-preimage ≺ anchor).
   const [perRecord, binding] = candidates.reduce((lo, c) => (c[0] < lo[0] ? c : lo))
   const crackCostLog2 = perRecord + coverageCost
+  // FAIL-CLOSED: tamper-evidence is PROVEN by a positive forge cost, never
+  // assumed from the `anchored` flag. A store "anchored" to nothing (the real
+  // ANCHOR_STRENGTH_BITS['none'] = 0, reachable from power/self-sufficient/
+  // security-remote-access) leaves crackCostLog2 = 0 — free to forge — and MUST
+  // NOT be reported tamperEvident. Anything ≤ 0 is unsafe-until-proven.
+  const tamperEvident = crackCostLog2 > 0
   return {
     crackCostLog2,
     binding,
@@ -167,9 +185,10 @@ export function crackVerdict(opts: {
     chosenCollisionLog2,
     birthdayMarginBits: birthdayMarginBits(digestBits, rows),
     bruteYearsLog2: bruteYearsLog2(crackCostLog2, BITCOIN_HASHRATE_LOG2),
-    tamperEvident: true,
-    note:
-      coverageCost === Number.POSITIVE_INFINITY
+    tamperEvident,
+    note: !tamperEvident
+      ? `NOT tamper-evident: the cheapest forge costs 2^${crackCostLog2} (${binding}). An anchor of ${anchorStrengthBits} bits pins nothing — borrow real external entropy (TSA/blockchain ≥ the ${digestBits}-bit digest) or it is a free rewrite.`
+      : coverageCost === Number.POSITIVE_INFINITY
         ? '100% coverage by architecture (all wired in uuid) — no undetected tamper exists; cost is unbounded.'
         : binding === 'collision'
           ? `Chosen-content collision on the ${opts.anchorCommitmentBits}-bit commitment (~2^${perRecord}) is the floor — commit the full ${CONTENT_DIGEST_BITS}-bit content digest, not the ${digestBits}-bit uuid.`

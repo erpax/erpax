@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "tributary",
-    "uuid": "9313e072-dab7-8399-a559-38ca6e80cb22",
+    "uuid": "dfd3df72-0e51-81f1-a657-b1f9b550fcd3",
     "words": [
       "tributary"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "The anatomical or organ system that the vein flows into; a larger structure that the vein connects to.",
-    "uuid": "01a718d6-e295-81d2-bffc-04a4ee8142b4",
+    "uuid": "473fa390-f37c-8f4b-aafd-f2b795b62131",
     "words": [
       "the",
       "anatomical",

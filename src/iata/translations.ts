@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "iata",
-    "uuid": "46e65cfc-c593-8a1d-80a5-cf2929fa865f",
+    "uuid": "9b314b7a-198c-8d6c-9a3b-2bde25ef17da",
     "words": [
       "iata"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "iata: a schema.org component word, fused from iataCode",
-    "uuid": "48317adb-befd-832d-910c-0cfb8f4f9b29",
+    "source": "Use when reasoning about iata as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "33b5027b-c02b-889b-9d32-c0d5e2fac384",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "iata",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "iatacode"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "iata: a schema.org component word, fused from iataCode"
+      "en": "Use when reasoning about iata as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "drive",
-    "uuid": "c3adb0b9-2c6a-875e-a0b6-6ffbc7d28bea",
+    "uuid": "fca19088-1a23-81a7-8108-7cbedb9ef14e",
     "words": [
       "drive"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "drive: a schema.org component word, fused from DriveWheelConfigurationValue, driveWheelConfiguration, hasDriveThroughService",
-    "uuid": "c501f63e-2a86-8f42-b6fa-972f094a93b0",
+    "source": "Use when reasoning about drive as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "f67b1f36-fed7-85d5-98b3-8ce2bd1714be",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "drive",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "drivewheelconfigurationvalue",
-      "drivewheelconfiguration",
-      "hasdrivethroughservice"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "drive: a schema.org component word, fused from DriveWheelConfigurationValue, driveWheelConfiguration, hasDriveThroughService"
+      "en": "Use when reasoning about drive as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

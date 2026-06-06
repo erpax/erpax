@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "rv",
-    "uuid": "754103a2-74ce-8b6c-a4d2-15bf8eb04aa8",
+    "uuid": "e9a18409-e652-85f9-acf3-8dc4dce60bae",
     "words": [
       "rv"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "rv: a schema.org component word, fused from RVPark",
-    "uuid": "c8de6b18-a748-8cd8-a89b-9870e987f278",
+    "source": "Use when reasoning about rv as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "8b0991e2-b035-828e-948a-b265e4e952f4",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "rv",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "rvpark"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "rv: a schema.org component word, fused from RVPark"
+      "en": "Use when reasoning about rv as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

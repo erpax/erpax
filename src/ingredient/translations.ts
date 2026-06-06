@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "ingredient",
-    "uuid": "9068b9be-b74b-88d9-a20f-6f84520f9d65",
+    "uuid": "8c9894ad-939f-860e-abc5-7b144155d9db",
     "words": [
       "ingredient"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "ingredient: a schema.org component word, fused from activeIngredient, recipeIngredient",
-    "uuid": "74393a79-4b8b-8643-99e0-f77086100d81",
+    "source": "Use when reasoning about ingredient as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "5a037007-463e-8244-a769-82ed52e66b63",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "ingredient",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "activeingredient",
-      "recipeingredient"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "ingredient: a schema.org component word, fused from activeIngredient, recipeIngredient"
+      "en": "Use when reasoning about ingredient as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "stat",
-    "uuid": "3211afdc-84bf-80de-aae1-624e0542126b",
+    "uuid": "9931ef56-8420-80ad-9322-a98cb05c0691",
     "words": [
       "stat"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "stat: a schema.org component word, fused from statType",
-    "uuid": "2eb73517-9bbf-8282-a6cd-41997e38840b",
+    "source": "Use when reasoning about stat as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "614b026b-672c-8bcd-a601-e82cf488badd",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "stat",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "stattype"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "stat: a schema.org component word, fused from statType"
+      "en": "Use when reasoning about stat as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

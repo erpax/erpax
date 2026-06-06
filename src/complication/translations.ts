@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "complication",
-    "uuid": "4ec5fea5-ad72-8f3c-a594-08263a9b3aae",
+    "uuid": "2819ad89-1a16-814f-b659-be8c76336e4b",
     "words": [
       "complication"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "complication: a schema.org component word, fused from possibleComplication",
-    "uuid": "1c22e99f-2af0-8cee-9203-33760fefae7e",
+    "source": "Use when reasoning about complication as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "58a8e6ba-abfe-88ed-b96e-60693278a7df",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "complication",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "possiblecomplication"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "complication: a schema.org component word, fused from possibleComplication"
+      "en": "Use when reasoning about complication as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

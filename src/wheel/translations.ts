@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "wheel",
-    "uuid": "08dd2f89-0e1d-8fa5-aaf5-a3541ba32001",
+    "uuid": "6961a739-9f93-8139-9dc4-999a161b3384",
     "words": [
       "wheel"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "wheel: a schema.org component word, fused from DriveWheelConfigurationValue, driveWheelConfiguration",
-    "uuid": "9d3463f5-db35-8907-b451-14559f62b873",
+    "source": "Use when reasoning about wheel as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "d1911015-4903-8617-8897-b02db7ea1369",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "wheel",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "drivewheelconfigurationvalue",
-      "drivewheelconfiguration"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "wheel: a schema.org component word, fused from DriveWheelConfigurationValue, driveWheelConfiguration"
+      "en": "Use when reasoning about wheel as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

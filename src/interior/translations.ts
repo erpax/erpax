@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "interior",
-    "uuid": "a847382a-5333-8b20-82b4-9b6cd5c28080",
+    "uuid": "f979bb91-5b47-8348-87aa-27957696d8fa",
     "words": [
       "interior"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "interior: a schema.org component word, fused from vehicleInteriorColor, vehicleInteriorType",
-    "uuid": "9c9b8bbc-61fc-8711-b564-e7eb871d1fbb",
+    "source": "Use when reasoning about interior as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "aefacfc6-6ffb-8d0e-8320-915c2da6da79",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "interior",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "vehicleinteriorcolor",
-      "vehicleinteriortype"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "interior: a schema.org component word, fused from vehicleInteriorColor, vehicleInteriorType"
+      "en": "Use when reasoning about interior as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -294,13 +294,7 @@ export const PORTED_STANDARDS: ReadonlyArray<RegisteredStandard> = [
     "id": "EU-2023/988",
     "family": "eu-regulation",
     "title": "General Product Safety Regulation — GPSR (Regulation (EU) 2023/988)",
-    "jurisdiction": "EU",
-    "sourceUrl": "https://eur-lex.europa.eu/eli/reg/2023/988/oj/eng"
-  },
-  {
-    "id": "EU-2023/988-GPSR",
-    "family": "eu-regulation",
-    "title": "General Product Safety Regulation — Regulation (EU) 2023/988",
+    "match": "GPSR|2023/988",
     "jurisdiction": "EU",
     "sourceUrl": "https://eur-lex.europa.eu/eli/reg/2023/988/oj/eng"
   },
@@ -368,13 +362,6 @@ export const PORTED_STANDARDS: ReadonlyArray<RegisteredStandard> = [
     "sourceUrl": "https://eur-lex.europa.eu/eli/reg_impl/2011/282/oj/eng"
   },
   {
-    "id": "GDPR",
-    "family": "eu-regulation",
-    "title": "Regulation (EU) 2016/679 (General Data Protection Regulation) — incl. Art. 22 Automated individual decision-making, including profiling",
-    "jurisdiction": "EU",
-    "sourceUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02016R0679-20160504"
-  },
-  {
     "id": "FATF-R.10",
     "family": "fatf",
     "title": "FATF Recommendation 10 — Customer Due Diligence (CDD)",
@@ -405,7 +392,8 @@ export const PORTED_STANDARDS: ReadonlyArray<RegisteredStandard> = [
   {
     "id": "EU-2016/679",
     "family": "gdpr",
-    "title": "Regulation (EU) 2016/679 — General Data Protection Regulation (GDPR), on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, repealing Directive 95/46/EC",
+    "title": "Regulation (EU) 2016/679 — General Data Protection Regulation (GDPR), on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, repealing Directive 95/46/EC (incl. Art. 22 automated individual decision-making / profiling; consolidated text CELEX:02016R0679)",
+    "match": "GDPR|2016/679",
     "jurisdiction": "EU",
     "sourceUrl": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng"
   },
@@ -613,30 +601,18 @@ export const PORTED_STANDARDS: ReadonlyArray<RegisteredStandard> = [
     "sourceUrl": "https://www.iso.org/standard/62085.html"
   },
   {
-    "id": "ISO/IEC-27001",
-    "family": "iso",
-    "title": "ISO/IEC 27001:2022 — Information security, cybersecurity and privacy protection — Information security management systems — Requirements",
-    "jurisdiction": "international",
-    "sourceUrl": "https://www.iso.org/standard/27001"
-  },
-  {
     "id": "ISO/IEC-27001:2022",
     "family": "iso",
-    "title": "Information security, cybersecurity and privacy protection — Information security management systems — Requirements",
+    "title": "ISO/IEC 27001:2022 — Information security, cybersecurity and privacy protection — Information security management systems — Requirements",
+    "match": "27001",
     "jurisdiction": "international",
     "sourceUrl": "https://www.iso.org/standard/27001"
-  },
-  {
-    "id": "ISO/IEC-27002",
-    "family": "iso",
-    "title": "ISO/IEC 27002:2022 — Information security, cybersecurity and privacy protection — Information security controls",
-    "jurisdiction": "international",
-    "sourceUrl": "https://www.iso.org/standard/75652.html"
   },
   {
     "id": "ISO/IEC-27002:2022",
     "family": "iso",
-    "title": "Information security, cybersecurity and privacy protection — Information security controls",
+    "title": "ISO/IEC 27002:2022 — Information security, cybersecurity and privacy protection — Information security controls",
+    "match": "27002",
     "jurisdiction": "international",
     "sourceUrl": "https://www.iso.org/standard/75652.html"
   },
@@ -655,16 +631,10 @@ export const PORTED_STANDARDS: ReadonlyArray<RegisteredStandard> = [
     "sourceUrl": "https://www.iso.org/standard/76559.html"
   },
   {
-    "id": "ISO/IEC-27701",
-    "family": "iso",
-    "title": "ISO/IEC 27701 — Privacy Information Management System (PIMS); the 2019 edition is the extension to ISO/IEC 27001 and ISO/IEC 27002 for privacy information management",
-    "jurisdiction": "international",
-    "sourceUrl": "https://www.iso.org/standard/71670.html"
-  },
-  {
     "id": "ISO/IEC-27701:2019",
     "family": "iso",
-    "title": "Information technology — Security techniques — Extension to ISO/IEC 27001 and ISO/IEC 27002 for privacy information management — Requirements and guidelines",
+    "title": "ISO/IEC 27701:2019 — Privacy Information Management System (PIMS); Extension to ISO/IEC 27001 and ISO/IEC 27002 for privacy information management — Requirements and guidelines",
+    "match": "27701",
     "jurisdiction": "international",
     "sourceUrl": "https://www.iso.org/standard/71670.html"
   },

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "boarding",
-    "uuid": "4598da23-97e7-8323-801e-2fcfd096e1c6",
+    "uuid": "63e1a71d-c159-83c9-913b-699ca08fe6c0",
     "words": [
       "boarding"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "boarding: a schema.org component word, fused from BoardingPolicyType, boardingGroup, boardingPolicy",
-    "uuid": "5e013e21-afc8-8777-a97a-650c2d10d81e",
+    "source": "Use when reasoning about boarding as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "79996985-9a86-871f-b495-6aa19ec3fc82",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "boarding",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "boardingpolicytype",
-      "boardinggroup",
-      "boardingpolicy"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "boarding: a schema.org component word, fused from BoardingPolicyType, boardingGroup, boardingPolicy"
+      "en": "Use when reasoning about boarding as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

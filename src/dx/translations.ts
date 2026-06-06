@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "dx",
-    "uuid": "eed036c3-4a16-882c-9fac-c5f12ec8cec9",
+    "uuid": "fa4ed67b-e0a4-8fc9-9a1a-a88c8abc31f9",
     "words": [
       "dx"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "dx: a schema.org component word, fused from DDxElement",
-    "uuid": "ac5b8727-18bf-8be8-8db6-4f5e9a4470c4",
+    "source": "Use when reasoning about dx as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "4697bc4d-4746-8d73-a6bd-b76c5842947a",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "dx",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "ddxelement"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "dx: a schema.org component word, fused from DDxElement"
+      "en": "Use when reasoning about dx as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

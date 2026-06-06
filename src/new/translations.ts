@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "new",
-    "uuid": "b36a75a3-95fc-8e63-90fe-2f872cf07aec",
+    "uuid": "2dbd11aa-c18a-8d4a-b1b9-5782b0cc1ac5",
     "words": [
       "new"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "new: a schema.org component word, fused from isAcceptingNewPatients",
-    "uuid": "1260c9a0-5081-8501-81bc-7d2457bcc0e9",
+    "source": "Use when reasoning about new as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "820fea0b-0af4-8178-9e74-9ee119eeccb7",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "new",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "isacceptingnewpatients"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "new: a schema.org component word, fused from isAcceptingNewPatients"
+      "en": "Use when reasoning about new as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

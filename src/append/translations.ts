@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "append",
-    "uuid": "4457cd6e-d0a6-8995-8f07-037df2a4f0e7",
+    "uuid": "c3603232-b945-8c7b-8c5f-547497536600",
     "words": [
       "append"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "append: a schema.org component word, fused from AppendAction",
-    "uuid": "7151d2e2-15c4-8778-bd79-491f8a0e071f",
+    "source": "Use when reasoning about append as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "af5b2955-1ed8-8884-92b8-9587698d31eb",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "append",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "appendaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "append: a schema.org component word, fused from AppendAction"
+      "en": "Use when reasoning about append as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

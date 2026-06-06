@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "coinsurance",
-    "uuid": "0573c4be-8f75-80e0-8759-1e2ec3855919",
+    "uuid": "e8c78058-462b-8165-abbc-9adf516820f7",
     "words": [
       "coinsurance"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "coinsurance: a schema.org component word, fused from healthPlanCoinsuranceOption, healthPlanCoinsuranceRate",
-    "uuid": "8a06be84-2ada-86ac-b7bb-bbee9ae73561",
+    "source": "Use when reasoning about coinsurance as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "4f1e6f34-3c10-8979-bf33-e789b8c6bce5",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "coinsurance",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "healthplancoinsuranceoption",
-      "healthplancoinsurancerate"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "coinsurance: a schema.org component word, fused from healthPlanCoinsuranceOption, healthPlanCoinsuranceRate"
+      "en": "Use when reasoning about coinsurance as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "arterial",
-    "uuid": "1260dcf0-698c-817e-9b0b-1cba910e7274",
+    "uuid": "ca1e8319-71e8-87d7-b964-4e467a42e304",
     "words": [
       "arterial"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "arterial: a schema.org component word, fused from arterialBranch",
-    "uuid": "35549b31-9cb1-82b2-a3ef-c06e9ceb9dde",
+    "source": "Use when reasoning about arterial as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "704acba3-e64f-86d5-b191-634a5182502b",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "arterial",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "arterialbranch"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "arterial: a schema.org component word, fused from arterialBranch"
+      "en": "Use when reasoning about arterial as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

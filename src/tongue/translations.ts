@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "tongue",
-    "uuid": "38ebae98-5bf1-834a-965a-dcb9bfdbacd2",
+    "uuid": "d871d830-e810-8409-a878-f147f75ba30a",
     "words": [
       "tongue"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "tongue: a schema.org component word, fused from tongueWeight",
-    "uuid": "45fc85ea-e833-80be-9a0e-2c96a5201f89",
+    "source": "Use when reasoning about tongue as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "ef7d5fc7-a2f8-8dea-9856-d5f0f1b9b53d",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "tongue",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "tongueweight"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "tongue: a schema.org component word, fused from tongueWeight"
+      "en": "Use when reasoning about tongue as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

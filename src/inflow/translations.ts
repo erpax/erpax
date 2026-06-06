@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "inflow",
-    "uuid": "5d0fd207-8d8f-8a95-af24-e4580081e8f2",
+    "uuid": "df652ff7-7127-81b8-9fda-6091ccbd82a7",
     "words": [
       "inflow"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "inflow: a schema.org component word, fused from accountMinimumInflow",
-    "uuid": "7c64606d-36a7-8dff-834d-e5f9cac42cbd",
+    "source": "Use when reasoning about inflow as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "e06edfa0-2bf2-8f31-afc4-d17e94b3cc0c",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "inflow",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "accountminimuminflow"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "inflow: a schema.org component word, fused from accountMinimumInflow"
+      "en": "Use when reasoning about inflow as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

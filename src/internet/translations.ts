@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "internet",
-    "uuid": "a853dbac-2e0e-866d-a05f-c9eec9f00370",
+    "uuid": "37491475-0f5c-8450-99fd-84c17e3274de",
     "words": [
       "internet"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "internet: a schema.org component word, fused from InternetCafe",
-    "uuid": "b06f4317-0e99-8339-8e5f-54c426604be8",
+    "source": "Use when reasoning about internet as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "51004c7a-c917-8ccb-a8d1-5e3a80ecd039",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "internet",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "internetcafe"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "internet: a schema.org component word, fused from InternetCafe"
+      "en": "Use when reasoning about internet as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

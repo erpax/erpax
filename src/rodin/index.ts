@@ -27,7 +27,7 @@
  */
 import { digitalRoot, composeSteps, nextOctave } from '@/horo'
 import { UUID_MATRIX_NODES as N } from '@/uuid/matrix'
-import { digitalRoot as contentDigit } from '@/digit'
+import { digitalRootOfUuid } from '@/digit'
 
 /** The doubling helix -- the units of (ℤ/9ℤ)* in ⟨2⟩ walk order. */
 export const DOUBLING = [1, 2, 4, 8, 7, 5] as const
@@ -125,7 +125,7 @@ export function stateUuids(): { digit: number; channel?: string; count: number; 
       digit: d,
       channel: (CMYK as Record<number, string>)[d],
       count: here.length,
-      sample: s ? { atom: s.atom, uuid: s.uuid, contentDigit: contentDigit(s.uuid) } : undefined,
+      sample: s ? { atom: s.atom, uuid: s.uuid, contentDigit: digitalRootOfUuid(s.uuid) } : undefined,
     }
   })
 }

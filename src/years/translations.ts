@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "years",
-    "uuid": "6a8ace28-e184-8ada-8a33-756af7808792",
+    "uuid": "4d584d93-9e82-8159-9239-73596ba9b78b",
     "words": [
       "years"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "years: a schema.org component word, fused from yearsInOperation",
-    "uuid": "535df546-15ff-88f1-b2f1-61ac72ee9348",
+    "source": "Use when reasoning about years as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "0f6bebcb-011f-89df-98d4-d45c5c944d96",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "years",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "yearsinoperation"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "years: a schema.org component word, fused from yearsInOperation"
+      "en": "Use when reasoning about years as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

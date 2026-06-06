@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "expert",
-    "uuid": "c0a2c9f1-a278-87dc-a799-e8f38f59fbdc",
+    "uuid": "0c3eb66a-3f6c-8a03-bb65-f015f267267c",
     "words": [
       "expert"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "expert: a schema.org component word, fused from expertConsiderations",
-    "uuid": "9366a8a5-a8c1-8f1e-93f5-d6f1467f3def",
+    "source": "Use when reasoning about expert as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "ce97914d-e519-8044-9bbe-b6274720edbb",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "expert",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "expertconsiderations"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "expert: a schema.org component word, fused from expertConsiderations"
+      "en": "Use when reasoning about expert as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

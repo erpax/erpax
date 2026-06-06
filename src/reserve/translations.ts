@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "reserve",
-    "uuid": "08f338c7-f69a-825c-98d7-9844801e6f73",
+    "uuid": "67de5a7d-d858-8b92-b3bf-f6934c16439a",
     "words": [
       "reserve"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "reserve: a schema.org component word, fused from ReserveAction",
-    "uuid": "10d4b9ef-3fe8-8821-b278-121be57d362a",
+    "source": "Use when reasoning about reserve as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "b5c3afa6-2f4b-8976-bf1e-95efb0156ba0",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "reserve",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "reserveaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "reserve: a schema.org component word, fused from ReserveAction"
+      "en": "Use when reasoning about reserve as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

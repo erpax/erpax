@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "override",
-    "uuid": "33cb03c5-a631-8f4a-ba01-0a8b7f31a41c",
+    "uuid": "0a768a8b-3b57-8317-a4ef-c42bb89e2846",
     "words": [
       "override"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "override: a schema.org component word, fused from MerchantReturnPolicySeasonalOverride, returnPolicySeasonalOverride, seasonalOverride",
-    "uuid": "563f1d17-9290-8e57-b344-965c0b2def1a",
+    "source": "Use when reasoning about override as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "65b51ab4-6a4e-8bbc-845f-ff86a0b3178c",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "override",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "merchantreturnpolicyseasonaloverride",
-      "returnpolicyseasonaloverride",
-      "seasonaloverride"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "override: a schema.org component word, fused from MerchantReturnPolicySeasonalOverride, returnPolicySeasonalOverride, seasonalOverride"
+      "en": "Use when reasoning about override as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

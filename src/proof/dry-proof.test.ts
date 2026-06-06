@@ -6,6 +6,7 @@
 import { describe, it, expect } from 'vitest'
 import { proofTamperCost, empiricalProofs } from '@/proof/dry-proof'
 import { jcsCanonicalize } from '@/integrity/content-uuid'
+import { corpusCollider } from '@/collider'
 
 describe('dry-proof: public tamper-cost surfaces the deepseek amplifiers', () => {
   it('without coverage, reports the honest digest floor (2^106), tamper-evident, echoing the invariant count it ran', () => {
@@ -27,14 +28,54 @@ describe('dry-proof: public tamper-cost surfaces the deepseek amplifiers', () =>
     const eventual = proofTamperCost({ invariantsChecked: 43, coverage: 0.99, replicas: 5, strongConsistency: false })
     expect(craq.crackCostLog2).toBeGreaterThan(eventual.crackCostLog2)
   })
-  it('100% coverage by architecture ⇒ ∞ (uncrackable), surfaced publicly', () => {
+  it('a MEASURED 100% coverage ⇒ ∞ (uncrackable) — and the note names the measured axis + source, never a bare "by architecture"', () => {
+    const t = proofTamperCost({
+      invariantsChecked: 43,
+      coverage: 1,
+      coverageAxis: 'convention coverage (import purity)',
+    })
+    expect(t.crackCostLog2).toBe(Number.POSITIVE_INFINITY)
+    // ground-don't-assert: the ∞ note must surface the coverage AXIS + a measured-source
+    // token so a future bare-∞ "by architecture" claim with no grounded axis fails here.
+    expect(t.note).toMatch(/coverage/i)
+    expect(t.note).toMatch(/measured/i)
+    expect(t.note).toMatch(/convention coverage \(import purity\)/)
+  })
+
+  it('a MEASURED ∞ with NO named axis is flagged UNNAMED — the claim is not silently grounded', () => {
     const t = proofTamperCost({ invariantsChecked: 43, coverage: 1 })
     expect(t.crackCostLog2).toBe(Number.POSITIVE_INFINITY)
-    expect(t.note).toMatch(/100% coverage/)
+    expect(t.note).toMatch(/UNNAMED|supply coverageAxis/)
   })
   it('echoes the amplifier inputs so a peer can recompute the claim (verify, do not trust)', () => {
     const t = proofTamperCost({ invariantsChecked: 43, coverage: 0.999, replicas: 3, strongConsistency: true })
     expect(t).toMatchObject({ invariantsChecked: 43, replicas: 3, strongConsistency: true, coverage: 0.999 })
+  })
+})
+
+describe('dry-proof: tamper-cost coverage is GROUNDED in the live corpus collider (wiring lock)', () => {
+  // Locks the self-proof-cluster → proof wiring: the proof's coverage must come
+  // from the LIVE joint convention coverage (corpusCollider), not a hardcoded
+  // floor. A future edit that drops the coverage arg (reverting to the bare 106-bit
+  // floor) makes this fail in CI.
+  it('the live collider yields a residual coverage in (0,1] that raises crackCost STRICTLY above the 2^106 floor', () => {
+    const collider = corpusCollider()
+    // Real corpus has residue ⇒ coverage strictly between 0 and 1 (never an
+    // assumed perfect 1, which would mint an ungrounded ∞ — identity/JCS hazard).
+    expect(collider.coverage).toBeGreaterThan(0)
+    expect(collider.coverage).toBeLessThanOrEqual(1)
+
+    const grounded = proofTamperCost({
+      invariantsChecked: 43,
+      coverage: collider.coverage,
+      coverageAxis: 'joint convention coverage (∏ live convention coverages — @/collider)',
+    })
+    const floor = proofTamperCost({ invariantsChecked: 43 }) // no coverage ⇒ 2^106
+    expect(floor.crackCostLog2).toBe(106)
+    // The whole point: wiring the live coverage in lifts the cost above the floor.
+    expect(grounded.crackCostLog2).toBeGreaterThan(106)
+    expect(grounded.coverage).toBe(collider.coverage)
+    expect(grounded.note).toMatch(/convention coverage/)
   })
 })
 

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "airbags",
-    "uuid": "16262e79-6ec8-8bda-82a4-cf401b6e7288",
+    "uuid": "7097fb80-e9e8-8179-ab54-f63dbc77ed5d",
     "words": [
       "airbags"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "airbags: a schema.org component word, fused from numberOfAirbags",
-    "uuid": "a9868ef0-d68d-89f2-813e-3e478748baeb",
+    "source": "Use when reasoning about airbags as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "062f43fa-beed-8da7-b48a-696e9179a958",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "airbags",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "numberofairbags"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "airbags: a schema.org component word, fused from numberOfAirbags"
+      "en": "Use when reasoning about airbags as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

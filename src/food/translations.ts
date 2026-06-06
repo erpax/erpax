@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "food",
-    "uuid": "ccfba61f-cd76-88ba-9552-59509021a8b6",
+    "uuid": "ac78eae9-997d-8af7-92ea-3e431fce67b2",
     "words": [
       "food"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "food: a schema.org component word, fused from FastFoodRestaurant, FoodEstablishment, FoodEstablishmentReservation, FoodEvent, FoodService, foodEstablishment",
-    "uuid": "d5baacab-891b-828e-84e3-956b3ab4efd1",
+    "source": "Use when reasoning about food as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "3aa0fda3-623a-8c9f-930a-5b5ce59ba63c",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "food",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "fastfoodrestaurant",
-      "foodestablishment",
-      "foodestablishmentreservation",
-      "foodevent",
-      "foodservice",
-      "foodestablishment"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "food: a schema.org component word, fused from FastFoodRestaurant, FoodEstablishment, FoodEstablishmentReservation, FoodEvent, FoodService, foodEstablishment"
+      "en": "Use when reasoning about food as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

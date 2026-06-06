@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "analysis",
-    "uuid": "3a57ae9d-4685-82de-9fa0-58ed111d59d4",
+    "uuid": "bbf7b25d-77c4-88d1-ae64-5a08afe384bb",
     "words": [
       "analysis"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "analysis: a schema.org component word, fused from AnalysisNewsArticle",
-    "uuid": "c15fa539-45ab-830a-9a15-e55a66aba367",
+    "source": "Use when reasoning about analysis as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "1855a4d8-ce71-877b-bdad-49be082a76e2",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "analysis",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "analysisnewsarticle"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "analysis: a schema.org component word, fused from AnalysisNewsArticle"
+      "en": "Use when reasoning about analysis as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

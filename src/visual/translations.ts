@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "visual",
-    "uuid": "55bbac1c-e34f-8752-af0b-69f4a23ea16a",
+    "uuid": "5e1325b8-ad69-8e64-a027-f7f50756a81f",
     "words": [
       "visual"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "visual: a schema.org component word, fused from VisualArtsEvent, VisualArtwork",
-    "uuid": "cdb9aff4-3845-8aaf-8768-898630823484",
+    "source": "Use when reasoning about visual as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "f21eeca2-ca41-87b0-b121-811e610b9d84",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "visual",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "visualartsevent",
-      "visualartwork"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "visual: a schema.org component word, fused from VisualArtsEvent, VisualArtwork"
+      "en": "Use when reasoning about visual as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

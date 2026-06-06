@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "biological-assets",
-    "uuid": "4d310c9e-6c59-8147-b638-27692eee4e6d",
+    "uuid": "e7e34834-325c-8fe0-a949-7eeb4849be89",
     "words": [
       "biological",
       "assets"
@@ -19,7 +19,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when measuring, re-measuring, or disclosing IAS 41 biological assets — livestock, aquaculture, annual/perennial crops, forestry, vineyard produce — at fair-value-less-costs-to-sell; biological-transformation vs. price-change P&L split; bearer-plant IAS-16 carve-out; harvest-event transformation lifecycle. The IAS-41 biological-asset measurement collection.",
-    "uuid": "826a027a-9337-8304-8ae9-3b0a8e80f32c",
+    "uuid": "4595bcfe-19ef-89ec-ab2f-bbaee33e749f",
     "words": [
       "use",
       "when",

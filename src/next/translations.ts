@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "next",
-    "uuid": "4989d9e6-c0f7-8cd4-b5e9-b10d97e01680",
+    "uuid": "ef2f8206-4395-8135-8a4f-b00b17ca2044",
     "words": [
       "next"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "next: a schema.org component word, fused from nextItem",
-    "uuid": "7f93e1d7-e59b-832d-9c7b-af759fed3b06",
+    "source": "Use when reasoning about next as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "ae83c0ce-749c-8952-8e6b-8e56fe898b86",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "next",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "nextitem"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "next: a schema.org component word, fused from nextItem"
+      "en": "Use when reasoning about next as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "shipped",
-    "uuid": "8e8c255c-aefd-84fb-b257-b182bba7cde5",
+    "uuid": "3eeef7dc-de81-88fa-997d-1a5c0c3b9d7d",
     "words": [
       "shipped"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "shipped: a schema.org component word, fused from itemShipped",
-    "uuid": "62a2695b-136f-8eaa-98a8-7fc4a787fce4",
+    "source": "Use when reasoning about shipped as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "9c34b1c7-53d6-86cf-81a4-0dc2a4d5f216",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "shipped",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "itemshipped"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "shipped: a schema.org component word, fused from itemShipped"
+      "en": "Use when reasoning about shipped as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

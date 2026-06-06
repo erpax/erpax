@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "suitable",
-    "uuid": "fb2cf413-8513-812c-83fa-c24cd97fc7d5",
+    "uuid": "ff751613-ca32-8c11-a71b-a3cd49698d7c",
     "words": [
       "suitable"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "suitable: a schema.org component word, fused from suitableForDiet",
-    "uuid": "69806d38-29f1-8ab4-b732-06931fc478da",
+    "source": "Use when reasoning about suitable as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "821f2258-0e9d-8eda-827d-d29aa9700272",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "suitable",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "suitablefordiet"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "suitable: a schema.org component word, fused from suitableForDiet"
+      "en": "Use when reasoning about suitable as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

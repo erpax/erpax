@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "actionable",
-    "uuid": "0906e4ae-67b3-8633-99e5-e0de740e89ed",
+    "uuid": "0d0b8766-fbcf-8cbd-bb81-d800526a2593",
     "words": [
       "actionable"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "actionable: a schema.org component word, fused from actionableFeedbackPolicy",
-    "uuid": "f20f4237-cdc0-8443-8e12-3014c683182c",
+    "source": "Use when reasoning about actionable as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "301cf35e-d5c5-84d6-a64d-83e949942b70",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "actionable",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "actionablefeedbackpolicy"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "actionable: a schema.org component word, fused from actionableFeedbackPolicy"
+      "en": "Use when reasoning about actionable as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

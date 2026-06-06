@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "broker",
-    "uuid": "2223b10e-639d-8032-b15e-7ec7613e81ea",
+    "uuid": "b3896987-ea01-8aad-a352-42347fefad33",
     "words": [
       "broker"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "An entity that arranges for an exchange between a buyer and a seller. In most cases a broker never acquires or releases ownership of a product or service involved in an exchange. If it is not clear wh",
-    "uuid": "39c92790-a6e0-8e87-998f-ab3a7e8bc9e6",
+    "uuid": "f014cd19-88ed-834e-8783-5c2c3417ccb0",
     "words": [
       "an",
       "entity",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "bylines",
-    "uuid": "e98162bc-208f-8035-96a4-657f29713446",
+    "uuid": "ecbb0e4a-6e65-8c22-a9be-6d398d7d142e",
     "words": [
       "bylines"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "bylines: a schema.org component word, fused from noBylinesPolicy",
-    "uuid": "9ceee4d1-26f7-8d5d-9d60-33ef716d3465",
+    "source": "Use when reasoning about bylines as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "d2ab6812-28e9-8f40-b765-7b8b0bc4ae89",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "bylines",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "nobylinespolicy"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "bylines: a schema.org component word, fused from noBylinesPolicy"
+      "en": "Use when reasoning about bylines as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

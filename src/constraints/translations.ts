@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "constraints",
-    "uuid": "713f1590-de1c-8446-b400-dab97cc069fc",
+    "uuid": "5e1be111-cba1-850a-ab8f-b583ea388b0d",
     "words": [
       "constraints"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "constraints: a schema.org component word, fused from numConstraints",
-    "uuid": "e7c1a4b8-7b2f-8328-921c-d9f802494ac9",
+    "source": "Use when reasoning about constraints as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "f98dc6cc-9cff-82bd-8018-afe478fa648a",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "constraints",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "numconstraints"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "constraints: a schema.org component word, fused from numConstraints"
+      "en": "Use when reasoning about constraints as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

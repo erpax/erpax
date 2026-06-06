@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "acceptance",
-    "uuid": "edee26a1-ff1c-8862-a233-a5e5beb9b4df",
+    "uuid": "840be24b-5e1e-84cd-9823-7a1f5634be8a",
     "words": [
       "acceptance"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "acceptance: a schema.org component word, fused from expectsAcceptanceOf",
-    "uuid": "ba9a4985-0a3d-8dbf-9d43-edab4f344929",
+    "source": "Use when reasoning about acceptance as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "25a0f21a-7830-85cb-9b94-20f0f04d95be",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "acceptance",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "expectsacceptanceof"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "acceptance: a schema.org component word, fused from expectsAcceptanceOf"
+      "en": "Use when reasoning about acceptance as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

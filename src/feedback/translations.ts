@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when collecting, structuring, and acting on input from users, employees, or customers — surveys, reviews, suggestions, 360-degree feedback. The structured loop of input → analysis → action.",
-    "uuid": "2c15c372-aee3-8f82-891a-83827c0a8a85",
+    "uuid": "c7d57c2c-46c4-8574-9b46-9015a2f9825d",
     "words": [
       "use",
       "when",

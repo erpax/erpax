@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "permission",
-    "uuid": "0ae34a2a-f23e-8481-8813-2ae28a90503a",
+    "uuid": "efe08a19-63c0-8fe5-a05a-6c1b68ab6856",
     "words": [
       "permission"
     ],
@@ -17,24 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "permission: a schema.org component word, fused from DigitalDocumentPermission, DigitalDocumentPermissionType, hasDigitalDocumentPermission, permissionType",
-    "uuid": "24951d9e-15ff-86be-bab0-fd2e8f1aa7ed",
+    "source": "Use when reasoning about permission as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "8e3604ab-613b-888b-b7b9-897b9921e716",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "permission",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "digitaldocumentpermission",
-      "digitaldocumentpermissiontype",
-      "hasdigitaldocumentpermission",
-      "permissiontype"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "permission: a schema.org component word, fused from DigitalDocumentPermission, DigitalDocumentPermissionType, hasDigitalDocumentPermission, permissionType"
+      "en": "Use when reasoning about permission as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

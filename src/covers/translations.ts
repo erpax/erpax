@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "covers",
-    "uuid": "8604204f-b277-89b6-8e72-3a24fd2a609a",
+    "uuid": "c46a4fe9-f0c9-8936-bba6-519179c67049",
     "words": [
       "covers"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "covers: a schema.org component word, fused from geoCovers",
-    "uuid": "69dca20b-7fe6-8b6b-90b1-35bb54da0508",
+    "source": "Use when reasoning about covers as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "989b8e29-d341-81b0-9ae5-cf1a8cf44f44",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "covers",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "geocovers"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "covers: a schema.org component word, fused from geoCovers"
+      "en": "Use when reasoning about covers as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

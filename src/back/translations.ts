@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "back",
-    "uuid": "7167d077-89c0-835f-9647-6d9f9f5593bd",
+    "uuid": "f323475f-9006-89d2-8280-a1c1f7e71923",
     "words": [
       "back"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "back: a schema.org component word, fused from cashBack",
-    "uuid": "03930702-c4ca-82fb-a0a3-8e0c0edff646",
+    "source": "Use when reasoning about back as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "950395ed-33ab-8815-8ba5-aed446c5aa44",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "back",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "cashback"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "back: a schema.org component word, fused from cashBack"
+      "en": "Use when reasoning about back as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

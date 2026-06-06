@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "similarity",
-    "uuid": "710b58bd-782a-8995-9759-320c035be356",
+    "uuid": "4a7311ee-68c2-8444-b566-fc1e15ceb5e7",
     "words": [
       "similarity"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "similarity: a schema.org component word, fused from bioChemSimilarity",
-    "uuid": "ae597694-542f-8068-a6fd-813fe303b117",
+    "source": "Use when reasoning about similarity as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "b1b169bc-2f63-840a-aefa-cf10abcae9fe",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "similarity",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "biochemsimilarity"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "similarity: a schema.org component word, fused from bioChemSimilarity"
+      "en": "Use when reasoning about similarity as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

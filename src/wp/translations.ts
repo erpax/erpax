@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "wp",
-    "uuid": "d4cbfe16-72db-81e5-a769-d08dfb166681",
+    "uuid": "1684b0bd-778d-8999-ba4e-87f6c72a299d",
     "words": [
       "wp"
     ],
@@ -17,24 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "wp: a schema.org component word, fused from WPAdBlock, WPFooter, WPHeader, WPSideBar",
-    "uuid": "41506d9e-fd20-87d6-a0e4-f319e0107078",
+    "source": "Use when reasoning about wp as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "16a4a5a6-14a8-8f44-a8dc-47d31ca0d319",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "wp",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "wpadblock",
-      "wpfooter",
-      "wpheader",
-      "wpsidebar"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "wp: a schema.org component word, fused from WPAdBlock, WPFooter, WPHeader, WPSideBar"
+      "en": "Use when reasoning about wp as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

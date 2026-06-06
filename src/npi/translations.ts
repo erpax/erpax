@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "npi",
-    "uuid": "a12523f1-30f6-86fb-91ab-8305da6f985f",
+    "uuid": "712974b2-252a-89fd-87c9-5692c4d24d54",
     "words": [
       "npi"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "npi: a schema.org component word, fused from usNPI",
-    "uuid": "57547696-6501-8224-9dc0-7f30cf9e8fb3",
+    "source": "Use when reasoning about npi as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "df7fe5fa-bff7-8059-9e4d-494681029ab3",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "npi",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "usnpi"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "npi: a schema.org component word, fused from usNPI"
+      "en": "Use when reasoning about npi as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

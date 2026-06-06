@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "fast",
-    "uuid": "8fa168b4-2a85-83ee-8fc7-fbd48966e729",
+    "uuid": "5cffaeb9-62fc-850b-a6ac-dff9ca0d24dc",
     "words": [
       "fast"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "fast: a schema.org component word, fused from FastFoodRestaurant",
-    "uuid": "b94ddb2f-19ab-82e7-8dc4-74bd31770b01",
+    "source": "Use when reasoning about fast as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "592c7879-3b86-8337-906a-c72479af36ba",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "fast",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "fastfoodrestaurant"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "fast: a schema.org component word, fused from FastFoodRestaurant"
+      "en": "Use when reasoning about fast as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

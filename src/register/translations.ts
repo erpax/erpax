@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "register",
-    "uuid": "cf0a099f-73ba-856f-bc89-410bdc0a5ec8",
+    "uuid": "86c7ff8f-9189-83fc-9d58-1a2fe7bd188d",
     "words": [
       "register"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "register: a schema.org component word, fused from RegisterAction, UnRegisterAction",
-    "uuid": "b0922b3c-c50f-85d9-bb61-ad3abb31fdb0",
+    "source": "Use when reasoning about register as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "94b7e9cd-19eb-84f8-9029-e81f94106a03",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "register",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "registeraction",
-      "unregisteraction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "register: a schema.org component word, fused from RegisterAction, UnRegisterAction"
+      "en": "Use when reasoning about register as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

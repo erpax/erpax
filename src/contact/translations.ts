@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "contact",
-    "uuid": "49b3bf9e-32da-8026-965f-36b02c0ff503",
+    "uuid": "4e6f8843-42d9-85d3-888c-650f0510b751",
     "words": [
       "contact"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "contact: a schema.org component word, fused from ContactPage, ContactPoint, ContactPointOption, applicationContact, contactOption, contactPoint",
-    "uuid": "f2878bb5-6a63-8b78-974a-411e4f31c342",
+    "source": "Use when reasoning about contact as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "1e169714-823d-892b-85aa-bfac5108c0e3",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "contact",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "contactpage",
-      "contactpoint",
-      "contactpointoption",
-      "applicationcontact",
-      "contactoption",
-      "contactpoint"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "contact: a schema.org component word, fused from ContactPage, ContactPoint, ContactPointOption, applicationContact, contactOption, contactPoint"
+      "en": "Use when reasoning about contact as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

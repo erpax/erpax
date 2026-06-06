@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "plan",
-    "uuid": "9fb0c773-2a59-8d89-ba18-101e657529b1",
+    "uuid": "4860c41a-afd2-8466-98b7-4b7b0744521a",
     "words": [
       "plan"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "plan: a schema.org component word, fused from ExercisePlan, FloorPlan, HealthInsurancePlan, HealthPlanCostSharingSpecification, HealthPlanFormulary, HealthPlanNetwork",
-    "uuid": "e4e8196e-76b9-8dba-a048-958654f96a08",
+    "source": "Use when reasoning about plan as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "4c23ba29-2774-840b-bb49-6c531c671b2d",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "plan",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "exerciseplan",
-      "floorplan",
-      "healthinsuranceplan",
-      "healthplancostsharingspecification",
-      "healthplanformulary",
-      "healthplannetwork"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "plan: a schema.org component word, fused from ExercisePlan, FloorPlan, HealthInsurancePlan, HealthPlanCostSharingSpecification, HealthPlanFormulary, HealthPlanNetwork"
+      "en": "Use when reasoning about plan as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

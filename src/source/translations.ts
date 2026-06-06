@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "source",
-    "uuid": "6133dbb4-5bba-8bb3-98f4-b12cd4dbe386",
+    "uuid": "8ecf42b1-d42a-8792-bea8-02127a87a2a2",
     "words": [
       "source"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when tracking the origin of data — source document (purchase order for invoice), source system (ERP, spreadsheet), source bank account (for transfer), data-import source. Metadata for audit and reconciliation.",
-    "uuid": "b0482f0b-e198-81b0-8d28-fa51f19c79cc",
+    "uuid": "1628be3b-e2d0-8549-9bdb-58bc4570e017",
     "words": [
       "use",
       "when",

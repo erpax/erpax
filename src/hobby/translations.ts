@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "hobby",
-    "uuid": "2ff3044b-6f8a-8fe2-8ecb-1a0e775763a5",
+    "uuid": "4f3ea5e1-df4a-86d9-b575-341e8ba1ede6",
     "words": [
       "hobby"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "hobby: a schema.org component word, fused from HobbyShop",
-    "uuid": "c4d68e1e-a90b-8917-8d77-91ddd6e8007b",
+    "source": "Use when reasoning about hobby as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "764c931d-18e1-89b3-bb6b-09399c09432c",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "hobby",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "hobbyshop"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "hobby: a schema.org component word, fused from HobbyShop"
+      "en": "Use when reasoning about hobby as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

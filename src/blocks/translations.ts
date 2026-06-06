@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "blocks",
-    "uuid": "0d0d91b0-fbe0-8514-9d73-a1dc7b5e05f1",
+    "uuid": "8ce2cc40-5b21-803c-b7da-4f37c0ba399a",
     "words": [
       "blocks"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "blocks: a schema.org component word, fused from UserBlocks",
-    "uuid": "da668bde-f792-847c-a7cc-2b91af216c09",
+    "uuid": "ef937c1a-171c-808d-932f-de6ae5549621",
     "words": [
       "blocks",
       "a",

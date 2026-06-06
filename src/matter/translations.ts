@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use for a professional-services engagement — the legal/consulting CASE as the universal project node. Strip the prefix legal and a matter is an engagement = a transaction-chain (engagement→time→bill→trust-draw) for a client party, staffed by positions, timed by allocation, sealed by proof. No new collection — a matter is a labelled transaction lifecycle.",
-    "uuid": "811aea6e-1975-860c-9602-88950b11b676",
+    "uuid": "06bb6715-0884-8915-8f3d-cf03d3485d7d",
     "words": [
       "use",
       "for",

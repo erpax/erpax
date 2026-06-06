@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "coordinates",
-    "uuid": "ae356160-3a6b-8fb9-89d9-563dea4e7421",
+    "uuid": "89d2487e-f5b2-8ca3-856b-a8152540395a",
     "words": [
       "coordinates"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "coordinates: a schema.org component word, fused from GeoCoordinates",
-    "uuid": "6a0e9a6c-7219-8cd3-9401-da101940ba42",
+    "source": "Use when reasoning about coordinates as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "0a85ac60-9fc7-8691-b765-b92670b51410",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "coordinates",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "geocoordinates"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "coordinates: a schema.org component word, fused from GeoCoordinates"
+      "en": "Use when reasoning about coordinates as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

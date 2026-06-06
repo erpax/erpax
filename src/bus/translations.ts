@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "bus",
-    "uuid": "cf19e95a-93b1-8a03-99c6-519cf7477e6d",
+    "uuid": "807584c4-5f2f-8384-95b4-76d35823e7ef",
     "words": [
       "bus"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "bus: a schema.org component word, fused from BusOrCoach, BusReservation, BusStation, BusStop, BusTrip, arrivalBusStop",
-    "uuid": "cdb6b46e-a202-897e-b96f-467af556bc5d",
+    "source": "Use when reasoning about bus as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "578ee413-901c-80dd-a9ff-e383b124f636",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "bus",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "busorcoach",
-      "busreservation",
-      "busstation",
-      "busstop",
-      "bustrip",
-      "arrivalbusstop"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "bus: a schema.org component word, fused from BusOrCoach, BusReservation, BusStation, BusStop, BusTrip, arrivalBusStop"
+      "en": "Use when reasoning about bus as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

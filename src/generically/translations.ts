@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "generically",
-    "uuid": "90f37316-5a60-8453-9d63-95a135dbea41",
+    "uuid": "53e09c54-5c3b-821d-a791-35d1c4519757",
     "words": [
       "generically"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "generically: a schema.org component word, fused from isAvailableGenerically",
-    "uuid": "c6082d5c-513d-86b9-98ee-0cf0cf70ddac",
+    "source": "Use when reasoning about generically as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "a9200678-1c3c-8ce8-be53-deeeb5ebfb36",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "generically",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "isavailablegenerically"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "generically: a schema.org component word, fused from isAvailableGenerically"
+      "en": "Use when reasoning about generically as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

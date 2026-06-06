@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "floor",
-    "uuid": "eb8277b8-7e10-8c51-a1a1-ed96cf727d91",
+    "uuid": "4a52686d-1552-88d3-8b27-077e60bbcb82",
     "words": [
       "floor"
     ],
@@ -17,25 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "floor: a schema.org component word, fused from FloorPlan, accommodationFloorPlan, floorLevel, floorLimit, floorSize",
-    "uuid": "78aa6e19-b198-8cbc-9291-0eafe4dd1e50",
+    "source": "Use when reasoning about floor as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "2a57b7d1-17b4-8215-942e-4da525846abc",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "floor",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "floorplan",
-      "accommodationfloorplan",
-      "floorlevel",
-      "floorlimit",
-      "floorsize"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "floor: a schema.org component word, fused from FloorPlan, accommodationFloorPlan, floorLevel, floorLimit, floorSize"
+      "en": "Use when reasoning about floor as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

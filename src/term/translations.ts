@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "term",
-    "uuid": "5b2891e0-6b94-803b-87ea-fc990342e032",
+    "uuid": "fcad5566-a96b-81e2-89ea-5ed1846b66ba",
     "words": [
       "term"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "term: a schema.org component word, fused from DefinedTerm, DefinedTermSet, hasDefinedTerm, inDefinedTermSet, loanTerm, termCode",
-    "uuid": "cfcb89d4-c759-8bfa-99f5-1b0790362697",
+    "source": "Use when reasoning about term as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "dac1b294-7b26-806e-aaaa-fb4d94db9ef7",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "term",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "definedterm",
-      "definedtermset",
-      "hasdefinedterm",
-      "indefinedtermset",
-      "loanterm",
-      "termcode"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "term: a schema.org component word, fused from DefinedTerm, DefinedTermSet, hasDefinedTerm, inDefinedTermSet, loanTerm, termCode"
+      "en": "Use when reasoning about term as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

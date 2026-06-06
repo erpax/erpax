@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "structural",
-    "uuid": "8a59c25a-ef28-8dd9-836c-86a1ae5f07ea",
+    "uuid": "3d0086b4-7c09-885c-994a-4dcc1a8db7ea",
     "words": [
       "structural"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "structural: a schema.org component word, fused from structuralClass",
-    "uuid": "ae931d29-03b5-8e95-bf54-5ea1a9131438",
+    "source": "Use when reasoning about structural as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "30fdb8fc-6d55-851c-96f4-8c0b3aba5089",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "structural",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "structuralclass"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "structural: a schema.org component word, fused from structuralClass"
+      "en": "Use when reasoning about structural as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "dance",
-    "uuid": "b003a829-37bd-8fd4-8a6b-bda68a09b834",
+    "uuid": "1f3bc761-e4db-869c-84bc-6ea2edd86a6c",
     "words": [
       "dance"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "dance: a schema.org component word, fused from DanceEvent, DanceGroup",
-    "uuid": "62372c8f-086c-8c7c-80a7-2792cc4a9709",
+    "source": "Use when reasoning about dance as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "c92d25e1-61ba-82d2-a70e-341c8fccd1b6",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "dance",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "danceevent",
-      "dancegroup"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "dance: a schema.org component word, fused from DanceEvent, DanceGroup"
+      "en": "Use when reasoning about dance as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

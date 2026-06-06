@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "activate",
-    "uuid": "48aa4523-9cbb-88c9-932e-77afaf2943d8",
+    "uuid": "d1750dcd-f385-870d-9e17-be1ae10f64f1",
     "words": [
       "activate"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "activate: a schema.org component word, fused from ActivateAction",
-    "uuid": "a4597a49-cd97-8b87-a996-30eea772cb5b",
+    "source": "Use when reasoning about activate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "1fc1c8f7-4305-8c41-b17b-26e7ab38f4d6",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "activate",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "activateaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "activate: a schema.org component word, fused from ActivateAction"
+      "en": "Use when reasoning about activate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "hair",
-    "uuid": "f87ac59d-bcce-8b0f-a139-f73e57732b18",
+    "uuid": "42f3cc99-8633-8891-8833-9e351a0b42c3",
     "words": [
       "hair"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "hair: a schema.org component word, fused from HairSalon",
-    "uuid": "18583635-3e5e-8f13-b629-924753fb8c03",
+    "source": "Use when reasoning about hair as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "25260be6-7176-829b-9ed5-91f8af76ac90",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "hair",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "hairsalon"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "hair: a schema.org component word, fused from HairSalon"
+      "en": "Use when reasoning about hair as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

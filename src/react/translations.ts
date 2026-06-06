@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "react",
-    "uuid": "d9cc3e90-28b9-8c44-a8f7-fd94e5aea413",
+    "uuid": "c6644e8d-14fc-8a5a-8212-6f8121aa24c7",
     "words": [
       "react"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "react: a schema.org component word, fused from ReactAction",
-    "uuid": "db7400cb-95eb-8e49-bf9c-ec0d28afe65f",
+    "source": "Use when reasoning about react as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "6bf238a7-a734-8269-b557-1e9cf0b6ee0c",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "react",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "reactaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "react: a schema.org component word, fused from ReactAction"
+      "en": "Use when reasoning about react as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

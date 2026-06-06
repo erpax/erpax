@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "interactivity",
-    "uuid": "f7f68d5b-38de-8340-9445-cb13f769cb94",
+    "uuid": "ca08a243-697a-8ebd-ba50-11e6151bec4b",
     "words": [
       "interactivity"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "interactivity: a schema.org component word, fused from interactivityType",
-    "uuid": "942c89e0-020b-816a-ab9a-6355a48286b3",
+    "source": "Use when reasoning about interactivity as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "89bb4c17-b513-8f15-82b4-0291fa2be825",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "interactivity",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "interactivitytype"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "interactivity: a schema.org component word, fused from interactivityType"
+      "en": "Use when reasoning about interactivity as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

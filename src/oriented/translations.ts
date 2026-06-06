@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "oriented",
-    "uuid": "70fff492-fbb7-815c-a2cc-c4a00aa97a82",
+    "uuid": "53b64526-7b27-82ea-afe6-666793d88d64",
     "words": [
       "oriented"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "oriented: a schema.org component word, fused from AdultOrientedEnumeration",
-    "uuid": "0ca4fcdd-a58f-85b0-ba76-b6e89f1d5701",
+    "source": "Use when reasoning about oriented as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "71a88926-ba31-8185-a755-515ab01e22a3",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "oriented",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "adultorientedenumeration"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "oriented: a schema.org component word, fused from AdultOrientedEnumeration"
+      "en": "Use when reasoning about oriented as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

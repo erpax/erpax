@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "clinic",
-    "uuid": "499d71f6-d495-8e0d-823a-a648a0e7389e",
+    "uuid": "8501af6c-e673-8e5a-8fa4-7d6cc4c665e3",
     "words": [
       "clinic"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "clinic: a schema.org component word, fused from MedicalClinic",
-    "uuid": "2f18b92b-1785-82fc-897b-5714a2a44487",
+    "source": "Use when reasoning about clinic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "47598fca-661b-8315-b791-0317c0b73379",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "clinic",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "medicalclinic"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "clinic: a schema.org component word, fused from MedicalClinic"
+      "en": "Use when reasoning about clinic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

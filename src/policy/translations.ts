@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "policy",
-    "uuid": "07f15dd5-039f-83f8-99f7-11eb15403094",
+    "uuid": "49db6472-926d-8797-bfab-060aaafd919a",
     "words": [
       "policy"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "policy: a schema.org component word, fused from BoardingPolicyType, MerchantReturnPolicy, MerchantReturnPolicySeasonalOverride, ProductReturnPolicy, actionableFeedbackPolicy, boardingPolicy",
-    "uuid": "9c813fa1-9efa-80bd-b6d2-85f48129200d",
+    "source": "Use when reasoning about policy as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "aecf6f38-5f72-82ad-9a31-2ab3dcf77e4c",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "policy",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "boardingpolicytype",
-      "merchantreturnpolicy",
-      "merchantreturnpolicyseasonaloverride",
-      "productreturnpolicy",
-      "actionablefeedbackpolicy",
-      "boardingpolicy"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "policy: a schema.org component word, fused from BoardingPolicyType, MerchantReturnPolicy, MerchantReturnPolicySeasonalOverride, ProductReturnPolicy, actionableFeedbackPolicy, boardingPolicy"
+      "en": "Use when reasoning about policy as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

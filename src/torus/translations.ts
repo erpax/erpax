@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "torus",
-    "uuid": "b4d6773d-ee3b-8c4b-8ca4-e19e25ab0dac",
+    "uuid": "950be603-c3c9-8d0a-9b9c-25d72587f836",
     "words": [
       "torus"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the two-directional collapse that closes into a donut — erpax falls into Payload (collections → canonical core) AND Payload falls into erpax (primitives are atoms; domains extract as @erpax/* plugins). The implosion (collapse) and the explosion (supernova) are one toroidal flow — the Rodin vortex. The shape of the whole.",
-    "uuid": "950084ff-3027-8e7b-892a-8794c1055a1a",
+    "uuid": "81a8c73d-38f9-892a-8b83-5bcfe2d32b22",
     "words": [
       "use",
       "when",

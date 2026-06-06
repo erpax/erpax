@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "transfer-pricing-adjustments",
-    "uuid": "1d83e0fc-84c2-8a40-9d6b-97d4e765c557",
+    "uuid": "3db978f5-aae8-88fe-ac2f-13c705da0176",
     "words": [
       "transfer",
       "pricing",
@@ -20,7 +20,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when documenting intercompany transfer-pricing adjustments — selecting the OECD method (CUP, cost-plus, resale, profit-split, TNMM), recording original vs arm's-length amounts, attaching contemporaneous documentation, and tracking approval through documented → validated → approved → posted. The OECD BEPS-compliant TP adjustment node.",
-    "uuid": "d9bcd7df-9877-808b-ba47-cbcce56739d4",
+    "uuid": "e9cc1883-b442-86f2-a68c-868505e1c70b",
     "words": [
       "use",
       "when",

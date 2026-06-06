@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "incentive",
-    "uuid": "74936b39-4b0a-8f2b-a80d-c223a1cd0179",
+    "uuid": "44528147-9863-8661-931e-32c4007b0d10",
     "words": [
       "incentive"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "incentive: a schema.org component word, fused from FinancialIncentive, IncentiveQualifiedExpenseType, IncentiveStatus, IncentiveType, incentiveAmount, incentiveCompensation",
-    "uuid": "c4a038b9-0e85-8143-b129-ab84794ea666",
+    "source": "Use when reasoning about incentive as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "59563e13-1c53-8beb-a95e-60c2a898afd3",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "incentive",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "financialincentive",
-      "incentivequalifiedexpensetype",
-      "incentivestatus",
-      "incentivetype",
-      "incentiveamount",
-      "incentivecompensation"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "incentive: a schema.org component word, fused from FinancialIncentive, IncentiveQualifiedExpenseType, IncentiveStatus, IncentiveType, incentiveAmount, incentiveCompensation"
+      "en": "Use when reasoning about incentive as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

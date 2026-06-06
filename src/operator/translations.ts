@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "operator",
-    "uuid": "6e6bbbe7-64b4-8787-925e-38249fcb2f4c",
+    "uuid": "def6e692-6438-88d6-9e16-261627bafa03",
     "words": [
       "operator"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "operator: a schema.org component word, fused from serviceOperator",
-    "uuid": "76342476-5a64-8e20-a4b9-cf2a42e4df5a",
+    "source": "Use when reasoning about operator as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "c971a139-5869-8184-b4e4-a57530017835",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "operator",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "serviceoperator"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "operator: a schema.org component word, fused from serviceOperator"
+      "en": "Use when reasoning about operator as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

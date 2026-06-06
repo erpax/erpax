@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "abstract",
-    "uuid": "60f32a12-5e38-811f-8652-142f97704ab0",
+    "uuid": "d385c183-750c-826b-8a58-3d2d7fc242dc",
     "words": [
       "abstract"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "An abstract is a short description that summarizes a CreativeWork.",
-    "uuid": "afd1b44f-5483-80ac-839c-ab1ceeb7e37a",
+    "uuid": "a3143c6d-a452-8378-909f-55c900103094",
     "words": [
       "an",
       "abstract",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "qualified",
-    "uuid": "6922814a-507f-8851-8090-f2ef9e4c9ff0",
+    "uuid": "d8244197-c539-8995-8ea7-643506f53916",
     "words": [
       "qualified"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "qualified: a schema.org component word, fused from IncentiveQualifiedExpenseType, qualifiedExpense",
-    "uuid": "2d1dbbb9-50c6-81ce-9b34-0fa9725542d4",
+    "source": "Use when reasoning about qualified as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "f32cafe1-9013-8666-93ec-d6ffdc2f1cd4",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "qualified",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "incentivequalifiedexpensetype",
-      "qualifiedexpense"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "qualified: a schema.org component word, fused from IncentiveQualifiedExpenseType, qualifiedExpense"
+      "en": "Use when reasoning about qualified as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "dissolution",
-    "uuid": "2737eea7-ec45-8a4b-a0c0-ac34db6c210b",
+    "uuid": "62168c94-1a8d-89ab-a918-d2d0be8c3181",
     "words": [
       "dissolution"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "dissolution: a schema.org component word, fused from dissolutionDate",
-    "uuid": "a590501a-a4d3-8319-a5b9-5eb7bf38eff4",
+    "source": "Use when reasoning about dissolution as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "39732ffb-e31e-817b-8ee4-9f6934c40761",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "dissolution",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "dissolutiondate"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "dissolution: a schema.org component word, fused from dissolutionDate"
+      "en": "Use when reasoning about dissolution as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

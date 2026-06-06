@@ -20,6 +20,59 @@
 
 import { PORTED_STANDARDS } from './ported'
 
+/**
+ * The canonical `standards.family` enum — the single source of truth, mirrored
+ * from the payload select in `./index.ts`. The registry is grounded to THIS set:
+ * a ported standard's coarse family token (e.g. "eu-regulation", "fatf") is
+ * normalized into one of these 18 values BEFORE it enters STANDARDS_REGISTRY, so
+ * the schema, the seed (`as Standard['family']`), the MCP classifier and the
+ * federation peers all see the same closed enum. The precise standard already
+ * lives in `id`/`title`; the family is a coarse grouping, not the identity.
+ */
+export const STANDARD_FAMILIES = [
+  'ifrs', 'us_gaap', 'iso', 'iec', 'w3c', 'rfc', 'eu', 'oecd', 'nist',
+  'etsi', 'wcag', 'sox', 'gdpr', 'un', 'upu', 'en', 'national', 'other',
+] as const
+
+export type StandardFamily = (typeof STANDARD_FAMILIES)[number]
+
+const STANDARD_FAMILY_SET: ReadonlySet<string> = new Set(STANDARD_FAMILIES)
+
+/**
+ * Map a ported standard's raw family token to the canonical enum (coarse
+ * grouping — the precise norm is the id/title). Already-canonical values pass
+ * through unchanged; anything unmapped fails CLOSED to `other` so a new raw
+ * token can never reach the payload select as an out-of-enum value.
+ */
+export function normalizeFamily(raw: string): StandardFamily {
+  if (STANDARD_FAMILY_SET.has(raw)) return raw as StandardFamily
+  switch (raw) {
+    // EU instruments (regulations/directives/treaties + EU trust frameworks)
+    case 'eu-regulation':
+    case 'eu-directive':
+    case 'treaty':
+    case 'eidas':
+    case 'emv':
+      return 'eu'
+    // US GAAP / SOX-adjacent statutes & oversight
+    case 'us-gaap':
+      return 'us_gaap'
+    case 'us-law':
+    case 'us-state-law':
+    case 'sec':
+      return 'us_gaap'
+    case 'pcaob':
+      return 'sox'
+    case 'un-cefact':
+      return 'un'
+    case 'ifrs-sustainability':
+      return 'ifrs'
+    // grouped under "other" — the precise framework is carried by id/title
+    default:
+      return 'other'
+  }
+}
+
 export interface RegisteredStandard {
   /** Canonical id — the seed `standardId` + catalogue key, e.g. "ISO-4217". */
   readonly id: string
@@ -211,5 +264,14 @@ const CURATED_STANDARDS: ReadonlyArray<RegisteredStandard> = [
   { id: 'Codex-Honey', family: 'un', title: 'Codex honey standard / EU Honey Directive 2001/110', match: 'honey|2001/110' },
 ] as const
 
-/** The registry: the curated spine ⊕ the WebSearch-verified ported governing standards & international laws. */
-export const STANDARDS_REGISTRY: ReadonlyArray<RegisteredStandard> = [...CURATED_STANDARDS, ...PORTED_STANDARDS]
+/**
+ * The registry: the curated spine ⊕ the WebSearch-verified ported governing
+ * standards & international laws. Ported families are normalized to the canonical
+ * enum here (the single source of truth) so every consumer — the payload select,
+ * `seed.ts`'s `as Standard['family']` cast, the MCP classifier, federation peers —
+ * sees only the 18 allowed values. The curated spine is already enum-valid.
+ */
+export const STANDARDS_REGISTRY: ReadonlyArray<RegisteredStandard> = [
+  ...CURATED_STANDARDS,
+  ...PORTED_STANDARDS.map((s) => ({ ...s, family: normalizeFamily(s.family) })),
+]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "lose",
-    "uuid": "16307f9e-047c-8ea1-a48a-be4fe84a60e8",
+    "uuid": "7f301bd9-fecd-8ba8-b8e7-bfeed927a5a1",
     "words": [
       "lose"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "lose: a schema.org component word, fused from LoseAction",
-    "uuid": "de5d532b-3dcd-8187-b5da-1ea09352337b",
+    "source": "Use when reasoning about lose as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "3365d1b8-1530-8bb2-808f-d4791231fc52",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "lose",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "loseaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "lose: a schema.org component word, fused from LoseAction"
+      "en": "Use when reasoning about lose as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

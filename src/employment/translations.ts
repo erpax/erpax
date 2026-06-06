@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "employment",
-    "uuid": "51f54444-fce2-8185-8b3c-08c32066bd63",
+    "uuid": "59bd883d-8a99-88ac-bae2-9b0a5b327980",
     "words": [
       "employment"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "employment: a schema.org component word, fused from EmploymentAgency, employmentType, employmentUnit",
-    "uuid": "77ec233c-530b-806b-a535-76fca7ec8d8b",
+    "source": "Use when reasoning about employment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "7c8c81b2-b049-82ca-8a15-c8b66670b079",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "employment",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "employmentagency",
-      "employmenttype",
-      "employmentunit"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "employment: a schema.org component word, fused from EmploymentAgency, employmentType, employmentUnit"
+      "en": "Use when reasoning about employment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "insert",
-    "uuid": "62620f40-5a37-812e-893f-6a318cd43fe6",
+    "uuid": "7470443d-3ce6-8d84-8d0a-0f3c2d64b8fd",
     "words": [
       "insert"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "insert: a schema.org component word, fused from InsertAction",
-    "uuid": "04248727-6e17-85e3-9417-c2e2cd2f1c72",
+    "source": "Use when reasoning about insert as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "c5e42008-151e-82cf-b114-6f613a8cb5d7",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "insert",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "insertaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "insert: a schema.org component word, fused from InsertAction"
+      "en": "Use when reasoning about insert as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

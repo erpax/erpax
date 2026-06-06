@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "electronics",
-    "uuid": "1c2c4ba3-c51b-82b4-b4cd-26d2da0381d9",
+    "uuid": "df33cf14-912e-8dd6-bdb9-18d0436d9e9b",
     "words": [
       "electronics"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "electronics: a schema.org component word, fused from ElectronicsStore",
-    "uuid": "9d6ea0b3-0a4f-8be7-b657-c297bd1d7135",
+    "source": "Use when reasoning about electronics as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "56b5e4ab-e2c1-8629-89b0-04b0ff338987",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "electronics",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "electronicsstore"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "electronics: a schema.org component word, fused from ElectronicsStore"
+      "en": "Use when reasoning about electronics as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

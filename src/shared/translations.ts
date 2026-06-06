@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Canonical standards-merged atoms — render components (Money, AuditedTimestamp, AddressBlock) and reusable Payload Field factories shared across every domain",
-    "uuid": "aa2329f4-f3b7-8f5d-98a0-66098fb246e8",
+    "uuid": "6787a83a-6e4e-8d42-9b22-348f09ff3327",
     "words": [
       "canonical",
       "standards",

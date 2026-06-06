@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "pregnancy",
-    "uuid": "bbb49dd4-0a60-8c61-8f1a-2866669cca84",
+    "uuid": "b54116de-132c-88f4-858f-047b327450b7",
     "words": [
       "pregnancy"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "pregnancy: a schema.org component word, fused from DrugPregnancyCategory, pregnancyCategory, pregnancyWarning",
-    "uuid": "4b49174f-3966-809a-91d3-5e644f5ae98e",
+    "source": "Use when reasoning about pregnancy as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "ef3534b5-78c8-829f-a65d-9329db51921d",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "pregnancy",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "drugpregnancycategory",
-      "pregnancycategory",
-      "pregnancywarning"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "pregnancy: a schema.org component word, fused from DrugPregnancyCategory, pregnancyCategory, pregnancyWarning"
+      "en": "Use when reasoning about pregnancy as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

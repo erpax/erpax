@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "identifying",
-    "uuid": "b4f9faeb-5b1d-888f-9e7b-5bff13cbe76f",
+    "uuid": "08e11581-cce5-8292-8c13-8f86d03d2a7a",
     "words": [
       "identifying"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "identifying: a schema.org component word, fused from identifyingExam, identifyingTest",
-    "uuid": "55868eb8-38e1-8fae-b7af-b1d88d93dc62",
+    "source": "Use when reasoning about identifying as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "4388f9a7-6c98-8fd5-ac62-30c09d6086d5",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "identifying",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "identifyingexam",
-      "identifyingtest"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "identifying: a schema.org component word, fused from identifyingExam, identifyingTest"
+      "en": "Use when reasoning about identifying as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

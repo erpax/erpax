@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "medical",
-    "uuid": "0873fe35-ede4-8d64-ae21-882967744be3",
+    "uuid": "dd75faed-972f-8872-8664-29d908bdcb9e",
     "words": [
       "medical"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "medical: a schema.org component word, fused from MedicalAudience, MedicalAudienceType, MedicalBusiness, MedicalCause, MedicalClinic, MedicalCode",
-    "uuid": "2e816767-4fc0-8d8e-b588-5b4f8d11d9ac",
+    "source": "Use when reasoning about medical as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "0390b803-463a-8da7-a501-38928829ea21",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "medical",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "medicalaudience",
-      "medicalaudiencetype",
-      "medicalbusiness",
-      "medicalcause",
-      "medicalclinic",
-      "medicalcode"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "medical: a schema.org component word, fused from MedicalAudience, MedicalAudienceType, MedicalBusiness, MedicalCause, MedicalClinic, MedicalCode"
+      "en": "Use when reasoning about medical as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

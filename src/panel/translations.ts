@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "panel",
-    "uuid": "8c50de24-d653-80eb-95bb-78f488344d45",
+    "uuid": "9744121d-1c58-8cc4-8a34-18e40c96e283",
     "words": [
       "panel"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "panel: a schema.org component word, fused from MedicalTestPanel",
-    "uuid": "b530deb1-ae97-848e-8a54-54499d2b9544",
+    "source": "Use when reasoning about panel as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "5edbefbf-9243-83cc-b3ae-4184a8729ee0",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "panel",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "medicaltestpanel"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "panel: a schema.org component word, fused from MedicalTestPanel"
+      "en": "Use when reasoning about panel as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

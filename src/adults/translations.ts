@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "adults",
-    "uuid": "88d65e35-d120-8797-bb67-8216911c7585",
+    "uuid": "08b4b2fc-d776-8dbc-8853-84c5ada7b6e5",
     "words": [
       "adults"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "adults: a schema.org component word, fused from numAdults",
-    "uuid": "10e47072-566f-80c8-9d9e-81cd07810416",
+    "source": "Use when reasoning about adults as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "56bc38c4-e1f2-8ad1-a450-48f645de633d",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "adults",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "numadults"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "adults: a schema.org component word, fused from numAdults"
+      "en": "Use when reasoning about adults as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

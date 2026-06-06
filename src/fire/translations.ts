@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "fire",
-    "uuid": "c98bd092-d3e4-8513-b50a-84cae3e3bab8",
+    "uuid": "7f860b52-5b52-8d8f-9af3-dba4cbad84e2",
     "words": [
       "fire"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "fire: a schema.org component word, fused from FireStation",
-    "uuid": "570e506c-220e-88d4-881e-78c46edfb9bd",
+    "source": "Use when reasoning about fire as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "472e80e2-c2b0-8e3f-af0c-37bb0de11526",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "fire",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "firestation"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "fire: a schema.org component word, fused from FireStation"
+      "en": "Use when reasoning about fire as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

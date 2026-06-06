@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "job",
-    "uuid": "dbbe3148-30ab-8998-88bd-36637674a0cd",
+    "uuid": "552ffef0-c9de-8b63-9624-11b88c3c03e0",
     "words": [
       "job"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "job: a schema.org component word, fused from JobPosting, jobBenefits, jobDuration, jobImmediateStart, jobLocation, jobLocationType",
-    "uuid": "133a5fd0-49af-87f2-b01e-9bb1b0fbaf7a",
+    "source": "Use when reasoning about job as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "ede9ba78-b47d-8f5d-8b8e-42305814cf36",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "job",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "jobposting",
-      "jobbenefits",
-      "jobduration",
-      "jobimmediatestart",
-      "joblocation",
-      "joblocationtype"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "job: a schema.org component word, fused from JobPosting, jobBenefits, jobDuration, jobImmediateStart, jobLocation, jobLocationType"
+      "en": "Use when reasoning about job as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

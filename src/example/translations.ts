@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "example",
-    "uuid": "0387977b-6bdc-8ddc-93c2-03f50b6f0955",
+    "uuid": "29357bb9-8f9e-844f-a8a3-a45f4ce3d1be",
     "words": [
       "example"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "example: a schema.org component word, fused from exampleOfWork, workExample",
-    "uuid": "f49bbcb8-60be-8169-a663-dc54462c6194",
+    "source": "Use when reasoning about example as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "9d7d679b-225d-83bb-bd92-5ea9f5496c9f",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "example",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "exampleofwork",
-      "workexample"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "example: a schema.org component word, fused from exampleOfWork, workExample"
+      "en": "Use when reasoning about example as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

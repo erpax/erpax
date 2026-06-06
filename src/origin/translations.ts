@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "origin",
-    "uuid": "25cc3dab-52ce-8d3f-86c8-ee64c855c380",
+    "uuid": "b8db516d-cd17-88c8-bf98-d93b7647d85b",
     "words": [
       "origin"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "origin: a schema.org component word, fused from costOrigin, countryOfOrigin, evidenceOrigin, originAddress, shippingOrigin, tripOrigin",
-    "uuid": "fcf6545b-a9a2-8d34-ab27-4dde7c36e087",
+    "source": "Use when reasoning about origin as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "e226e19b-880b-8b5f-b6d7-eef21242482f",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "origin",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "costorigin",
-      "countryoforigin",
-      "evidenceorigin",
-      "originaddress",
-      "shippingorigin",
-      "triporigin"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "origin: a schema.org component word, fused from costOrigin, countryOfOrigin, evidenceOrigin, originAddress, shippingOrigin, tripOrigin"
+      "en": "Use when reasoning about origin as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

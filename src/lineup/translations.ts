@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "lineup",
-    "uuid": "55599f68-bbbd-832d-a28e-4d68a9cb5344",
+    "uuid": "1f4af530-7511-80c0-af47-77a4fe207335",
     "words": [
       "lineup"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "lineup: a schema.org component word, fused from inBroadcastLineup",
-    "uuid": "a68d7c39-a9c1-8982-80c1-3921de30c800",
+    "source": "Use when reasoning about lineup as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "d61a996b-a4c8-8a68-bb0a-86410c124f5a",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "lineup",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "inbroadcastlineup"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "lineup: a schema.org component word, fused from inBroadcastLineup"
+      "en": "Use when reasoning about lineup as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

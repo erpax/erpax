@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "computer",
-    "uuid": "eb85b8ff-53e2-8ac2-b45f-cda24a71b68b",
+    "uuid": "ce256c56-84ac-84cc-8824-81fde105bf5b",
     "words": [
       "computer"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "computer: a schema.org component word, fused from ComputerLanguage, ComputerStore",
-    "uuid": "fb34e683-a0e6-8ac8-a7b0-27ee70964fb1",
+    "source": "Use when reasoning about computer as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "97ffe87b-fdb7-8d29-9704-d3e9bc945486",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "computer",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "computerlanguage",
-      "computerstore"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "computer: a schema.org component word, fused from ComputerLanguage, ComputerStore"
+      "en": "Use when reasoning about computer as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

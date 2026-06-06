@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "beds",
-    "uuid": "f02606e0-afd0-8e42-9a35-a6f580d19c32",
+    "uuid": "b8cd8793-1dc8-8866-b59c-98cb159f21b9",
     "words": [
       "beds"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "beds: a schema.org component word, fused from cvdNumBeds, cvdNumBedsOcc, cvdNumICUBeds, cvdNumICUBedsOcc, cvdNumTotBeds, numberOfBeds",
-    "uuid": "fbac0677-ba8f-8550-9d78-891ed767330d",
+    "source": "Use when reasoning about beds as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "145bfb96-61d6-8668-be23-161afe2b0301",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "beds",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "cvdnumbeds",
-      "cvdnumbedsocc",
-      "cvdnumicubeds",
-      "cvdnumicubedsocc",
-      "cvdnumtotbeds",
-      "numberofbeds"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "beds: a schema.org component word, fused from cvdNumBeds, cvdNumBedsOcc, cvdNumICUBeds, cvdNumICUBedsOcc, cvdNumTotBeds, numberOfBeds"
+      "en": "Use when reasoning about beds as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when managing a prioritized list of pending work — features to build, bugs to fix, support tickets, maintenance requests. The work-capture system.",
-    "uuid": "c664421a-936e-8bf3-a04f-922e9805e928",
+    "uuid": "61ca7444-30e5-8c7c-88eb-500994d5227f",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "embedded",
-    "uuid": "0f1d9144-7434-80e6-a543-472df9b48729",
+    "uuid": "d44016e5-2d62-8046-ba6e-40c4ea686738",
     "words": [
       "embedded"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "embedded: a schema.org component word, fused from embeddedTextCaption",
-    "uuid": "8b44f843-4483-80ad-97a5-b0d4fbc58a2d",
+    "source": "Use when reasoning about embedded as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "787c95e2-14b0-850c-a829-eba81210cde2",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "embedded",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "embeddedtextcaption"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "embedded: a schema.org component word, fused from embeddedTextCaption"
+      "en": "Use when reasoning about embedded as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

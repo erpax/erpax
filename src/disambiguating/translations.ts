@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "disambiguating",
-    "uuid": "16871d32-f839-85f9-8d55-95adf3de9421",
+    "uuid": "49357c40-1662-848a-b59d-2bcb173962b2",
     "words": [
       "disambiguating"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "disambiguating: a schema.org component word, fused from disambiguatingDescription",
-    "uuid": "612e23cb-70e9-8ed1-ba8e-cc09d195eb41",
+    "source": "Use when reasoning about disambiguating as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "2840d178-5dca-8161-995b-43abb0230d2a",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "disambiguating",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "disambiguatingdescription"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "disambiguating: a schema.org component word, fused from disambiguatingDescription"
+      "en": "Use when reasoning about disambiguating as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

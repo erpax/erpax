@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "http",
-    "uuid": "e62daec9-b12b-806f-8298-3ceb95679081",
+    "uuid": "1a6d85ad-ad30-83d4-aefb-fb589d99c16f",
     "words": [
       "http"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "http: a schema.org component word, fused from httpMethod",
-    "uuid": "044c55b2-0dc1-81a9-9bc8-fbed4ce4680e",
+    "source": "Use when reasoning about http as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "f871a7f5-fc9a-8b57-a1e5-89c040a61363",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "http",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "httpmethod"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "http: a schema.org component word, fused from httpMethod"
+      "en": "Use when reasoning about http as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

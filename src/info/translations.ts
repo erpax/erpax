@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "info",
-    "uuid": "1253c8ac-bb57-8815-b50b-46dea61fcfe4",
+    "uuid": "ff6dee05-68b2-88de-bc0d-89a6e63e3c6c",
     "words": [
       "info"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "info: a schema.org component word, fused from OwnershipInfo, diseasePreventionInfo, gettingTestedInfo, governmentBenefitsInfo, ownershipFundingInfo, prescribingInfo",
-    "uuid": "baf70996-136c-8e7d-9914-3126d2415cbe",
+    "source": "Use when reasoning about info as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "d04f24ac-b62c-8d56-8b05-9d2d0b6849d2",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "info",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "ownershipinfo",
-      "diseasepreventioninfo",
-      "gettingtestedinfo",
-      "governmentbenefitsinfo",
-      "ownershipfundinginfo",
-      "prescribinginfo"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "info: a schema.org component word, fused from OwnershipInfo, diseasePreventionInfo, gettingTestedInfo, governmentBenefitsInfo, ownershipFundingInfo, prescribingInfo"
+      "en": "Use when reasoning about info as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

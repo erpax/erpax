@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "goods",
-    "uuid": "319b5d97-ad15-8f26-9f8c-b9b049a64a83",
+    "uuid": "eacb4d5f-e731-8680-8782-352cb816eb2f",
     "words": [
       "goods"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "goods: a schema.org component word, fused from HomeGoodsStore, SportingGoodsStore",
-    "uuid": "563c3a02-63ba-836e-9eb4-3da69927a676",
+    "source": "Use when reasoning about goods as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "4bcb1f75-9909-8049-b95c-7c606970a224",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "goods",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "homegoodsstore",
-      "sportinggoodsstore"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "goods: a schema.org component word, fused from HomeGoodsStore, SportingGoodsStore"
+      "en": "Use when reasoning about goods as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

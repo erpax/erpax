@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "relationship",
-    "uuid": "f99dd45c-0839-845b-90c9-6c1734640c16",
+    "uuid": "71cf85cc-0f1b-8894-9754-50d420b44fa3",
     "words": [
       "relationship"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "relationship: a schema.org component word, fused from linkRelationship",
-    "uuid": "37b87977-efa7-8ff9-a09e-16630799a294",
+    "source": "Use when reasoning about relationship as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "28685228-abd0-8066-bcfb-f9cbfd826dfc",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "relationship",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "linkrelationship"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "relationship: a schema.org component word, fused from linkRelationship"
+      "en": "Use when reasoning about relationship as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

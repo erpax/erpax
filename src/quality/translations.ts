@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "quality",
-    "uuid": "fdaa2a55-a2f4-85d1-b4b2-b404012ca4ca",
+    "uuid": "c499bdcb-6cda-876c-90fe-a0e655e26155",
     "words": [
       "quality"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "quality: a schema.org component word, fused from videoQuality",
-    "uuid": "e3fda9b6-4f7c-810e-97e7-e7bcde857133",
+    "source": "Use when reasoning about quality as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "24e2995d-a87e-8b18-99ba-01c11a28a26a",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "quality",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "videoquality"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "quality: a schema.org component word, fused from videoQuality"
+      "en": "Use when reasoning about quality as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

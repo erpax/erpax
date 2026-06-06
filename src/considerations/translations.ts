@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "considerations",
-    "uuid": "6c8ed8e0-25a6-8e0f-8e4b-9decf3c57716",
+    "uuid": "444b3cf3-92e8-883b-9a25-00c86429e2d4",
     "words": [
       "considerations"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "considerations: a schema.org component word, fused from expertConsiderations",
-    "uuid": "7f28157b-2f71-8721-a3a6-ca354f5c5eec",
+    "source": "Use when reasoning about considerations as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "2df6514d-23da-8247-96f0-34ad92290770",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "considerations",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "expertconsiderations"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "considerations: a schema.org component word, fused from expertConsiderations"
+      "en": "Use when reasoning about considerations as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "prefix",
-    "uuid": "ece11d18-adb9-8846-95e5-40734f1eae78",
+    "uuid": "920904cd-1e5a-84a3-aec3-8bc88698909e",
     "words": [
       "prefix"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "prefix: a schema.org component word, fused from honorificPrefix, postalCodePrefix",
-    "uuid": "0b1966f0-0ab3-887b-ac4e-f5227b183cd3",
+    "source": "Use when reasoning about prefix as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "51fbb4da-7a8e-8137-b063-206d231a2340",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "prefix",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "honorificprefix",
-      "postalcodeprefix"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "prefix: a schema.org component word, fused from honorificPrefix, postalCodePrefix"
+      "en": "Use when reasoning about prefix as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

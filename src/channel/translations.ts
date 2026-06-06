@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "channel",
-    "uuid": "69987bc7-e730-8977-a446-ca1fc63afb4f",
+    "uuid": "1f781115-44d5-8838-80d4-4334eed5ad7e",
     "words": [
       "channel"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "channel: a schema.org component word, fused from AMRadioChannel, BroadcastChannel, FMRadioChannel, RadioChannel, ServiceChannel, TelevisionChannel",
-    "uuid": "c9ac76f7-4a50-889f-8d33-fdb824f0bec2",
+    "source": "Use when reasoning about channel as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "c1ca7c9a-e221-8e61-9c09-6dd0926e88c2",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "channel",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "amradiochannel",
-      "broadcastchannel",
-      "fmradiochannel",
-      "radiochannel",
-      "servicechannel",
-      "televisionchannel"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "channel: a schema.org component word, fused from AMRadioChannel, BroadcastChannel, FMRadioChannel, RadioChannel, ServiceChannel, TelevisionChannel"
+      "en": "Use when reasoning about channel as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

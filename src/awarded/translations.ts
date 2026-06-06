@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "awarded",
-    "uuid": "ea3ad60c-52b7-8b1f-a24a-69ea9cb8b476",
+    "uuid": "be196a5a-5f45-84a2-a044-1b03a1d56155",
     "words": [
       "awarded"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "awarded: a schema.org component word, fused from educationalCredentialAwarded, occupationalCredentialAwarded",
-    "uuid": "287fa30c-abfa-8d15-8dfd-df86b8a3ec4f",
+    "source": "Use when reasoning about awarded as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "23811b02-f97d-8924-912d-99fd8a3fa0d1",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "awarded",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "educationalcredentialawarded",
-      "occupationalcredentialawarded"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "awarded: a schema.org component word, fused from educationalCredentialAwarded, occupationalCredentialAwarded"
+      "en": "Use when reasoning about awarded as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

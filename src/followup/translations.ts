@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "followup",
-    "uuid": "54e6b070-9732-8baa-91e7-9308a01ee105",
+    "uuid": "bb9705cf-fc3a-822d-87c7-930f8a1499f7",
     "words": [
       "followup"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Typical or recommended followup care after the procedure is performed.",
-    "uuid": "3e87fdd8-0898-8a7a-b6cc-c1d11bb25464",
+    "uuid": "08629935-947a-88b4-912d-b8d84aaced49",
     "words": [
       "typical",
       "or",

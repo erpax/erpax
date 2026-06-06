@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "points",
-    "uuid": "82f20285-c2b0-8536-8c49-9d0fe8d81dbf",
+    "uuid": "3da94cc8-8ffd-8d80-b52a-eec11b4d62c7",
     "words": [
       "points"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "points: a schema.org component word, fused from contactPoints, membershipPointsEarned",
-    "uuid": "f105d66c-ddbc-8577-be9c-96fdc72e7f7a",
+    "source": "Use when reasoning about points as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "e64c2761-b757-80fd-a7ea-d0a5653bfca5",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "points",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "contactpoints",
-      "membershippointsearned"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "points: a schema.org component word, fused from contactPoints, membershipPointsEarned"
+      "en": "Use when reasoning about points as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

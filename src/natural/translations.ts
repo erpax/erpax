@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "natural",
-    "uuid": "2970f4e3-4064-899e-b940-16b7ef71ff9a",
+    "uuid": "ca76ad09-9596-8ea0-8f89-c0515767e0ce",
     "words": [
       "natural"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "natural: a schema.org component word, fused from naturalProgression",
-    "uuid": "bf73b985-b3e3-8f83-832e-9dab1d763c9d",
+    "source": "Use when reasoning about natural as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "53ee70bd-7d5b-84c2-b93f-97bfec3f347e",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "natural",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "naturalprogression"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "natural: a schema.org component word, fused from naturalProgression"
+      "en": "Use when reasoning about natural as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

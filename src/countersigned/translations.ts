@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "countersigned",
-    "uuid": "0662aa2d-f616-84e0-92ef-9382f618d80d",
+    "uuid": "412a514e-dcee-8f76-b7bd-7fe08d71f492",
     "words": [
       "countersigned"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "countersigned: a schema.org component word, fused from legislationCountersignedBy",
-    "uuid": "87290225-ca17-8b0b-a8d7-566f9d650446",
+    "source": "Use when reasoning about countersigned as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "33c0e0d6-a96f-8f81-936a-06902d40ac27",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "countersigned",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "legislationcountersignedby"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "countersigned: a schema.org component word, fused from legislationCountersignedBy"
+      "en": "Use when reasoning about countersigned as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

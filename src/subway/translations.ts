@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "subway",
-    "uuid": "d2dc6759-4f13-8fb0-8cd1-bdd9a424f97e",
+    "uuid": "7e5b3a3f-0285-892d-8851-2b0c50be6f90",
     "words": [
       "subway"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "subway: a schema.org component word, fused from SubwayStation",
-    "uuid": "474a2e08-99cf-838f-b01a-16dbd3cf2eeb",
+    "source": "Use when reasoning about subway as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "9c37f45f-d04e-855e-b656-85acb088c7c6",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "subway",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "subwaystation"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "subway: a schema.org component word, fused from SubwayStation"
+      "en": "Use when reasoning about subway as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

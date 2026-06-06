@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "accessory",
-    "uuid": "a8c0bf74-d845-8c29-9bf4-30fd79206fed",
+    "uuid": "7ba17c43-b089-8781-a2dc-704577746958",
     "words": [
       "accessory"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "accessory: a schema.org component word, fused from isAccessoryOrSparePartFor",
-    "uuid": "7ea5e70f-f415-8b1f-965c-dade4ee46ec2",
+    "source": "Use when reasoning about accessory as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "d38ff8f1-c01b-805e-983c-96e075b41e5e",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "accessory",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "isaccessoryorsparepartfor"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "accessory: a schema.org component word, fused from isAccessoryOrSparePartFor"
+      "en": "Use when reasoning about accessory as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

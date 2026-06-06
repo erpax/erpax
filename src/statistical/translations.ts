@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "statistical",
-    "uuid": "d884f6a2-5049-88ca-828a-cd10eecfce2e",
+    "uuid": "5419c111-a0bf-8cb0-80f4-17470c3d8bcb",
     "words": [
       "statistical"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "statistical: a schema.org component word, fused from StatisticalPopulation, StatisticalVariable",
-    "uuid": "d2a164d1-f35e-8db2-987b-3acc8b8b2093",
+    "source": "Use when reasoning about statistical as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "600e7382-89ea-8aa3-b9db-472e59c92cb8",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "statistical",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "statisticalpopulation",
-      "statisticalvariable"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "statistical: a schema.org component word, fused from StatisticalPopulation, StatisticalVariable"
+      "en": "Use when reasoning about statistical as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

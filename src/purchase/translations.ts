@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "purchase",
-    "uuid": "a0f325e7-eed8-8418-84a8-0ab1c16b5efc",
+    "uuid": "80b5bd45-ccc2-8242-844c-f77421b0276b",
     "words": [
       "purchase"
     ],
@@ -17,25 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "purchase: a schema.org component word, fused from OfferForPurchase, PurchaseType, purchaseDate, purchasePriceLimit, purchaseType",
-    "uuid": "d4aaec7d-a102-8045-a514-20dd51703714",
+    "source": "Use when reasoning about purchase as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "c5f9ccea-9d0a-8613-a18c-3c2e3eb80814",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "purchase",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "offerforpurchase",
-      "purchasetype",
-      "purchasedate",
-      "purchasepricelimit",
-      "purchasetype"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "purchase: a schema.org component word, fused from OfferForPurchase, PurchaseType, purchaseDate, purchasePriceLimit, purchaseType"
+      "en": "Use when reasoning about purchase as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

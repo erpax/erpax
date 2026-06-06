@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "pharmacology",
-    "uuid": "76a35a36-5690-8171-87e9-7f46efddc9d2",
+    "uuid": "61a559dd-47a4-8351-b5e2-338ac0c6d43d",
     "words": [
       "pharmacology"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "pharmacology: a schema.org component word, fused from clincalPharmacology, clinicalPharmacology",
-    "uuid": "3d45096c-fc30-8de7-bfff-3af531849988",
+    "source": "Use when reasoning about pharmacology as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "0013c463-61b5-8044-9c2e-d831b154a02c",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "pharmacology",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "clincalpharmacology",
-      "clinicalpharmacology"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "pharmacology: a schema.org component word, fused from clincalPharmacology, clinicalPharmacology"
+      "en": "Use when reasoning about pharmacology as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "legal",
-    "uuid": "ee6ffa92-9b48-8b5a-92ea-4adad3952e9b",
+    "uuid": "54d96cb3-8004-8306-948d-a75378f9bc30",
     "words": [
       "legal"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "legal: a schema.org component word, fused from DrugLegalStatus, LegalForceStatus, LegalService, LegalValueLevel, legalAddress, legalName",
-    "uuid": "80fb1075-6117-8022-99e2-e43be5b43f3f",
+    "source": "Use when reasoning about legal as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "853c740b-4d74-8427-b54b-8b6673f3d489",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "legal",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "druglegalstatus",
-      "legalforcestatus",
-      "legalservice",
-      "legalvaluelevel",
-      "legaladdress",
-      "legalname"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "legal: a schema.org component word, fused from DrugLegalStatus, LegalForceStatus, LegalService, LegalValueLevel, legalAddress, legalName"
+      "en": "Use when reasoning about legal as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

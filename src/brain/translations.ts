@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "brain",
-    "uuid": "c5878808-c953-8705-a432-d61f93233524",
+    "uuid": "41266386-e75a-8215-b312-90650d82c817",
     "words": [
       "brain"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "brain: a schema.org component word, fused from BrainStructure",
-    "uuid": "0ab0fbb4-605d-8f11-8b79-36f438312c26",
+    "source": "Use when reasoning about brain as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "344682d4-5a06-8d0c-80f9-d016089ee17a",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "brain",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "brainstructure"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "brain: a schema.org component word, fused from BrainStructure"
+      "en": "Use when reasoning about brain as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "travel",
-    "uuid": "1a82e808-10b6-8261-8695-5cf1886800f3",
+    "uuid": "fc57884e-5062-8fd4-ae8c-325942679002",
     "words": [
       "travel"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "travel: a schema.org component word, fused from TravelAction, TravelAgency, travelBans",
-    "uuid": "b72d3e95-d6bc-8708-b5d9-ce7a51235528",
+    "source": "Use when reasoning about travel as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "8d6e83f5-3ea9-84e2-8dd8-e6b1218f1c93",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "travel",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "travelaction",
-      "travelagency",
-      "travelbans"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "travel: a schema.org component word, fused from TravelAction, TravelAgency, travelBans"
+      "en": "Use when reasoning about travel as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

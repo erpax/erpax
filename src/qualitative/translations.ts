@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "qualitative",
-    "uuid": "a12a98ba-ab55-8b59-94bc-eebb1e4ed636",
+    "uuid": "b0d17e74-e590-8280-bcaa-0cd8685bb257",
     "words": [
       "qualitative"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "qualitative: a schema.org component word, fused from QualitativeValue",
-    "uuid": "4e2e2476-d560-86aa-b3b9-912ee5a795e5",
+    "source": "Use when reasoning about qualitative as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "a06ff218-9ee5-8702-9ae5-18c235bdbac9",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "qualitative",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "qualitativevalue"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "qualitative: a schema.org component word, fused from QualitativeValue"
+      "en": "Use when reasoning about qualitative as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

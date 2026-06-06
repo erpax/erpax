@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "compound",
-    "uuid": "f32e1f49-7bd1-8521-821d-0f55f39b283f",
+    "uuid": "9d0f3db7-e494-81df-ac4d-b0b90eb845f9",
     "words": [
       "compound"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "compound: a schema.org component word, fused from CompoundPriceSpecification",
-    "uuid": "c164d11b-215e-8b24-88ad-b7f7b1bf12c0",
+    "source": "Use when reasoning about compound as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "a3d03f36-0d8d-82ea-aa85-03ddc6f63f0a",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "compound",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "compoundpricespecification"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "compound: a schema.org component word, fused from CompoundPriceSpecification"
+      "en": "Use when reasoning about compound as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "contactless",
-    "uuid": "75da4f54-ad28-8c1f-b7e1-3a0421189d77",
+    "uuid": "f00e50a3-97b6-8a42-91b3-d872238cca9d",
     "words": [
       "contactless"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "contactless: a schema.org component word, fused from contactlessPayment",
-    "uuid": "cf8ac2ae-fcc2-81cb-ad55-ba051c219d13",
+    "source": "Use when reasoning about contactless as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "865fa5bc-2196-8c12-8e25-b54087f66fe2",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "contactless",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "contactlesspayment"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "contactless: a schema.org component word, fused from contactlessPayment"
+      "en": "Use when reasoning about contactless as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

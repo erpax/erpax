@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "lei",
-    "uuid": "0deb375f-0d59-8af0-bee1-cc91b044f496",
+    "uuid": "834832ea-510a-8ab2-ba26-afb20e97f548",
     "words": [
       "lei"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "lei: a schema.org component word, fused from leiCode",
-    "uuid": "2052c3a8-b672-86df-be84-8641ef8c8ff9",
+    "source": "Use when reasoning about lei as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "4ab493c2-5086-80ac-9ed2-115879344f40",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "lei",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "leicode"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "lei: a schema.org component word, fused from leiCode"
+      "en": "Use when reasoning about lei as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

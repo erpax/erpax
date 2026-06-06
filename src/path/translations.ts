@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "path",
-    "uuid": "c5d7259f-fae3-8033-9f86-719e97adf21a",
+    "uuid": "9334e894-59e5-8cd9-ae5f-60e4e4b73cad",
     "words": [
       "path"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "path: a schema.org component word, fused from XPathType",
-    "uuid": "1a49c138-77b6-807e-ab53-f256316def37",
+    "source": "Use when reasoning about path as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "3a9355a5-0b4e-8eab-9b5e-0c88b5e90a2e",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "path",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "xpathtype"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "path: a schema.org component word, fused from XPathType"
+      "en": "Use when reasoning about path as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

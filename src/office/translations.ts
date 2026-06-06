@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "office",
-    "uuid": "1ee07206-ea42-8070-a819-20d454142ba4",
+    "uuid": "3ef2df95-7379-86be-b7a1-cc98ba8a2b6d",
     "words": [
       "office"
     ],
@@ -17,25 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "office: a schema.org component word, fused from GovernmentOffice, OfficeEquipmentStore, PhysiciansOffice, PostOffice, postOfficeBoxNumber",
-    "uuid": "8570aee6-13b3-8ae9-9907-0e84d88f8578",
+    "source": "Use when reasoning about office as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "80349774-db2b-80ec-996e-10b3e1861999",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "office",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "governmentoffice",
-      "officeequipmentstore",
-      "physiciansoffice",
-      "postoffice",
-      "postofficeboxnumber"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "office: a schema.org component word, fused from GovernmentOffice, OfficeEquipmentStore, PhysiciansOffice, PostOffice, postOfficeBoxNumber"
+      "en": "Use when reasoning about office as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

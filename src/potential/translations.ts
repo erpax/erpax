@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "potential",
-    "uuid": "196f120d-f1f8-8ae8-af3c-fe7549d08597",
+    "uuid": "5a52e9fa-36ae-83a5-a61f-0c02baeb80c4",
     "words": [
       "potential"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "potential: a schema.org component word, fused from potentialAction, potentialUse",
-    "uuid": "9b1fadfa-9a93-8814-bf67-7128f67cb8d6",
+    "source": "Use when reasoning about potential as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "511debae-2666-8d7b-b52e-56d81a3b63dc",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "potential",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "potentialaction",
-      "potentialuse"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "potential: a schema.org component word, fused from potentialAction, potentialUse"
+      "en": "Use when reasoning about potential as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

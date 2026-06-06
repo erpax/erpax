@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "eligible",
-    "uuid": "ff38fbd6-c577-8a1f-b35d-0a5549736848",
+    "uuid": "116f6266-b785-8e35-96ae-a4b5a72c13fc",
     "words": [
       "eligible"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "eligible: a schema.org component word, fused from eligibleCustomerType, eligibleDuration, eligibleQuantity, eligibleRegion, eligibleTransactionVolume, eligibleWithSupplier",
-    "uuid": "0bc2cf95-c24c-8f44-92cb-2bdbfa0950e1",
+    "source": "Use when reasoning about eligible as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "8f81d0ff-d5e1-8604-8593-8642538604e8",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "eligible",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "eligiblecustomertype",
-      "eligibleduration",
-      "eligiblequantity",
-      "eligibleregion",
-      "eligibletransactionvolume",
-      "eligiblewithsupplier"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "eligible: a schema.org component word, fused from eligibleCustomerType, eligibleDuration, eligibleQuantity, eligibleRegion, eligibleTransactionVolume, eligibleWithSupplier"
+      "en": "Use when reasoning about eligible as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

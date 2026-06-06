@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "fee",
-    "uuid": "f463ae2a-fa3f-8f14-89ab-cf83bfa3068e",
+    "uuid": "635afee1-f847-8b17-93d5-38d7d1fafdfc",
     "words": [
       "fee"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "fee: a schema.org component word, fused from restockingFee",
-    "uuid": "63bed7bc-103e-81c9-a171-7a0e14563c9a",
+    "source": "Use when reasoning about fee as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "76f6cce8-0753-8ce3-a57d-1e7e64cfa867",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "fee",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "restockingfee"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "fee: a schema.org component word, fused from restockingFee"
+      "en": "Use when reasoning about fee as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

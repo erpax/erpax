@@ -37,10 +37,18 @@ function fakeDo(rec: DoRec, returns: string): DurableObjectNamespace {
     },
   }
 }
-const ctxWith = (env: ErpaxCfEnv, authorize?: MediatorContext['authorize']): MediatorContext => ({
+// Authorization is FAIL-CLOSED: a mediator with no authorizer DENIES every
+// gated binding op (enforceAuthorized throws). So the proceed-path tests
+// install a permissive allow-authorizer by default; the deny-path is asserted
+// explicitly below. Pass `null` to omit the authorizer entirely (un-gated).
+const allowAll: NonNullable<MediatorContext['authorize']> = () => {}
+const ctxWith = (
+  env: ErpaxCfEnv,
+  authorize: MediatorContext['authorize'] | null = allowAll,
+): MediatorContext => ({
   env,
   tenantId: 'acme',
-  authorize,
+  authorize: authorize ?? undefined,
 })
 
 describe('cloudflare: counter DO mediator (the realtime power accumulator)', () => {
@@ -76,6 +84,17 @@ describe('cloudflare: counter DO mediator (the realtime power accumulator)', () 
       throw new Error('denied')
     })
     await expect(counterIncrement(ctx, 'feature/x')).rejects.toThrow('denied')
+  })
+
+  it('FAIL-CLOSED: denies the binding op when NO authorizer is installed', async () => {
+    // A mediator built without an authorizer must NOT silently allow the op.
+    const rec: DoRec = {}
+    const ctx = ctxWith({ ERPAX_DO: fakeDo(rec, '1') }, null)
+    await expect(counterIncrement(ctx, 'feature/x')).rejects.toThrow(/no authorizer installed/)
+    await expect(counterGet(ctx, 'feature/x')).rejects.toThrow(/no authorizer installed/)
+    // The binding was never touched (fail-closed before the DO call).
+    expect(rec.name).toBeUndefined()
+    expect(rec.url).toBeUndefined()
   })
 
   it('makeMediator surfaces counterIncrement + counterGet', async () => {

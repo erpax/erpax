@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "loan",
-    "uuid": "1ee1842b-e36b-8fcd-8a26-6f033f27968b",
+    "uuid": "43f735df-869a-8b0b-91a9-1e366e0f3dc4",
     "words": [
       "loan"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "loan: a schema.org component word, fused from LoanOrCredit, MortgageLoan, loanMortgageMandateAmount, loanPaymentAmount, loanPaymentFrequency, loanRepaymentForm",
-    "uuid": "7c706536-e3f1-88b0-8d72-d7da90aab49d",
+    "source": "Use when reasoning about loan as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "33d23a07-842b-8680-9b00-ce36722c9b8e",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "loan",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "loanorcredit",
-      "mortgageloan",
-      "loanmortgagemandateamount",
-      "loanpaymentamount",
-      "loanpaymentfrequency",
-      "loanrepaymentform"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "loan: a schema.org component word, fused from LoanOrCredit, MortgageLoan, loanMortgageMandateAmount, loanPaymentAmount, loanPaymentFrequency, loanRepaymentForm"
+      "en": "Use when reasoning about loan as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

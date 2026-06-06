@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "workers",
-    "uuid": "85c1d826-585c-8ffd-9d25-d3aceb7ee974",
+    "uuid": "78ad00cf-1174-8b2f-bfc2-87514c2a86f7",
     "words": [
       "workers"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "workers: a schema.org component word, fused from WorkersUnion",
-    "uuid": "b804c089-b7c1-801e-9f3b-17dc8d0d7c84",
+    "source": "Use when reasoning about workers as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "105ef8da-5b10-8678-a8e4-d7c69869c4c9",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "workers",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "workersunion"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "workers: a schema.org component word, fused from WorkersUnion"
+      "en": "Use when reasoning about workers as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

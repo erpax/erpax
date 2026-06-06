@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "delete",
-    "uuid": "315300cf-a4a7-8e78-92aa-826bdf7111a0",
+    "uuid": "a1341a29-4dd1-89ac-bc51-ad63cda7cbd3",
     "words": [
       "delete"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "delete: a schema.org component word, fused from DeleteAction",
-    "uuid": "e8321e03-d8cc-8d5a-8387-fb2616c290f7",
+    "source": "Use when reasoning about delete as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "9f08a092-ed68-86bb-a694-c6b5724d965e",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "delete",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "deleteaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "delete: a schema.org component word, fused from DeleteAction"
+      "en": "Use when reasoning about delete as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

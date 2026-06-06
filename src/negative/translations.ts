@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "negative",
-    "uuid": "68715693-c0dc-8607-b90c-2bdd062f1f4e",
+    "uuid": "ed90061d-0475-88b6-9f31-0eeeccdf326d",
     "words": [
       "negative"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "negative: a schema.org component word, fused from negativeNotes",
-    "uuid": "7197c63f-8033-80d1-9689-6c1c16c5349d",
+    "source": "Use when reasoning about negative as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "96e1dc08-b3ec-8225-beb2-5faf5eba6c84",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "negative",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "negativenotes"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "negative: a schema.org component word, fused from negativeNotes"
+      "en": "Use when reasoning about negative as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "footer",
-    "uuid": "9d8a0477-2271-886d-a495-26c87e6097ad",
+    "uuid": "a6d072f6-9117-870b-aa31-d47240b40cc7",
     "words": [
       "footer"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "footer: a schema.org component word, fused from WPFooter",
-    "uuid": "e9d8c117-cccf-86c9-bb8f-072e7da07456",
+    "source": "Use when reasoning about footer as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "cf0b82ea-852a-86bd-9f93-151db6fafe0a",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "footer",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "wpfooter"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "footer: a schema.org component word, fused from WPFooter"
+      "en": "Use when reasoning about footer as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

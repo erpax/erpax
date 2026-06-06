@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "fiber",
-    "uuid": "ac9f371b-1ab8-8a95-970a-e66fb5cd275b",
+    "uuid": "c15c10ef-de6b-85a6-b818-bc46b5294f3a",
     "words": [
       "fiber"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "fiber: a schema.org component word, fused from fiberContent",
-    "uuid": "b6ed56da-03fe-8a78-9a61-797cef0138f2",
+    "source": "Use when reasoning about fiber as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "b85ea9af-6349-8c62-b630-aef3f8aeb07f",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "fiber",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "fibercontent"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "fiber: a schema.org component word, fused from fiberContent"
+      "en": "Use when reasoning about fiber as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

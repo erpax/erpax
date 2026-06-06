@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "sports",
-    "uuid": "c542a4a7-46ab-8085-8025-09e8f27ff304",
+    "uuid": "c7485e03-7f58-8c81-b00e-4b838ce709c5",
     "words": [
       "sports"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "sports: a schema.org component word, fused from SportsActivityLocation, SportsClub, SportsEvent, SportsOrganization, SportsTeam, sportsActivityLocation",
-    "uuid": "65fcf180-1363-8bc7-b11e-95216501486b",
+    "source": "Use when reasoning about sports as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "b579b687-b506-892c-98e9-37964e33641b",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "sports",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "sportsactivitylocation",
-      "sportsclub",
-      "sportsevent",
-      "sportsorganization",
-      "sportsteam",
-      "sportsactivitylocation"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "sports: a schema.org component word, fused from SportsActivityLocation, SportsClub, SportsEvent, SportsOrganization, SportsTeam, sportsActivityLocation"
+      "en": "Use when reasoning about sports as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

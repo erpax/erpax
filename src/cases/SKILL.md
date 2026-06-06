@@ -1,5 +1,5 @@
 ---
-name: Cases
+name: cases
 description: "Use when modelling a legal matter as a docket — case lifecycle, parties under roles, append-only evidence, judgments, offences and dispute resolution; the harmony-checked Payload realization of the justice docket."
 ---
 

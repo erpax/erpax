@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "configuration",
-    "uuid": "fe0d8c32-ca52-8eec-817e-655a672c0d0b",
+    "uuid": "9b3f533c-15e4-87f3-8a82-edf6eba946a1",
     "words": [
       "configuration"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "configuration: a schema.org component word, fused from DriveWheelConfigurationValue, driveWheelConfiguration, vehicleConfiguration",
-    "uuid": "bb497b90-4917-8e21-90f9-d389cd8b1ce4",
+    "source": "Use when reasoning about configuration as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "2a9fe081-2f35-8619-9cc7-b676da7b19b4",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "configuration",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "drivewheelconfigurationvalue",
-      "drivewheelconfiguration",
-      "vehicleconfiguration"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "configuration: a schema.org component word, fused from DriveWheelConfigurationValue, driveWheelConfiguration, vehicleConfiguration"
+      "en": "Use when reasoning about configuration as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

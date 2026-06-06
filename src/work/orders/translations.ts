@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "orders",
-    "uuid": "d0588728-74f7-86c7-aa52-7e0ed6982ed3",
+    "uuid": "321e385f-eb0d-80a3-998d-dd6c4e018486",
     "words": [
       "orders"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when booking shop-floor production — the per-phase per-worker execution leaf with an options array, derived double-entry totals, a derived horo lifecycle, the forward conveyor between routing phases, and the piece-rate wage; evolved from 2.05M rows of the etrima work_orders ledger.",
-    "uuid": "ed7c7475-8615-807d-b4af-579986903590",
+    "uuid": "3d7bd9a4-09ee-8343-a1eb-b4c9bff46fa7",
     "words": [
       "use",
       "when",

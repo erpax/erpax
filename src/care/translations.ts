@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "care",
-    "uuid": "d4253e1d-3009-8ba9-956d-57b3a01d82de",
+    "uuid": "2911ce57-820d-80ce-b735-590c06934766",
     "words": [
       "care"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "care: a schema.org component word, fused from ChildCare, VeterinaryCare",
-    "uuid": "c0c81ddc-c97b-8fe6-975c-199e6a4dd6c3",
+    "source": "Use when reasoning about care as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "8dc246bf-ea83-870e-a674-c186784114c0",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "care",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "childcare",
-      "veterinarycare"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "care: a schema.org component word, fused from ChildCare, VeterinaryCare"
+      "en": "Use when reasoning about care as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

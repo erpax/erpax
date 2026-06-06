@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "format",
-    "uuid": "84d4dec9-dd8c-8928-b31c-a1dd0ef279ee",
+    "uuid": "cd8a94c8-4369-82bb-9780-9c32b9d51b51",
     "words": [
       "format"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "format: a schema.org component word, fused from BookFormatType, MusicReleaseFormatType, bookFormat, encodingFormat, fileFormat, musicReleaseFormat",
-    "uuid": "35cb6fdd-1945-8fa4-b7e8-d337d76af639",
+    "source": "Use when reasoning about format as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "bd354381-3d0e-871a-b734-a93066a134bd",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "format",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "bookformattype",
-      "musicreleaseformattype",
-      "bookformat",
-      "encodingformat",
-      "fileformat",
-      "musicreleaseformat"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "format: a schema.org component word, fused from BookFormatType, MusicReleaseFormatType, bookFormat, encodingFormat, fileFormat, musicReleaseFormat"
+      "en": "Use when reasoning about format as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

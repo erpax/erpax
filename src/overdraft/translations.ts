@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "overdraft",
-    "uuid": "da892d70-e53e-89b4-a339-7ddb7052a341",
+    "uuid": "d878575a-17d0-884f-8a1a-3c10e1cb67b5",
     "words": [
       "overdraft"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "overdraft: a schema.org component word, fused from accountOverdraftLimit",
-    "uuid": "b28cb8bc-d9a8-8da5-baea-9c10c1075b66",
+    "source": "Use when reasoning about overdraft as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "da8e5eee-af55-88fa-b5eb-ee2ebd55a1b0",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "overdraft",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "accountoverdraftlimit"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "overdraft: a schema.org component word, fused from accountOverdraftLimit"
+      "en": "Use when reasoning about overdraft as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "length",
-    "uuid": "49786d29-774e-8cc3-a6b2-510c86f371eb",
+    "uuid": "5fde7ce6-d789-83e9-85f4-6df69bf822cf",
     "words": [
       "length"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "length: a schema.org component word, fused from leaseLength, valueMaxLength, valueMinLength",
-    "uuid": "b67de4cd-71aa-8e58-8db2-c8b5a7b70803",
+    "source": "Use when reasoning about length as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "fe322d22-61bc-8782-9fcd-11d4191c71ef",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "length",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "leaselength",
-      "valuemaxlength",
-      "valueminlength"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "length: a schema.org component word, fused from leaseLength, valueMaxLength, valueMinLength"
+      "en": "Use when reasoning about length as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

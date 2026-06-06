@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "meets",
-    "uuid": "e56817d3-a9cf-8626-ade7-a7faef596c70",
+    "uuid": "5e76df75-93ab-81b2-8dc9-d5059215dd9e",
     "words": [
       "meets"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "meets: a schema.org component word, fused from meetsEmissionStandard",
-    "uuid": "f6f59bdf-f728-8702-903b-4988ce098337",
+    "source": "Use when reasoning about meets as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "51adc5f2-8f0d-8cc1-b31e-fdd0dddcde1e",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "meets",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "meetsemissionstandard"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "meets: a schema.org component word, fused from meetsEmissionStandard"
+      "en": "Use when reasoning about meets as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

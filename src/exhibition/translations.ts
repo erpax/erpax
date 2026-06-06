@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "exhibition",
-    "uuid": "11fea64f-129f-856a-a3f2-8876d49188e0",
+    "uuid": "9c4d6703-1f5a-887e-98c3-4d56f23d8b12",
     "words": [
       "exhibition"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "exhibition: a schema.org component word, fused from ExhibitionEvent",
-    "uuid": "20edd8bd-3392-8a48-87e6-2f290a0d5c8a",
+    "source": "Use when reasoning about exhibition as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "987227ce-1956-8f17-ba7d-b294af3e9b4b",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "exhibition",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "exhibitionevent"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "exhibition: a schema.org component word, fused from ExhibitionEvent"
+      "en": "Use when reasoning about exhibition as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

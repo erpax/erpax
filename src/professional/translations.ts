@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "professional",
-    "uuid": "f6bfb121-dcf7-81bb-8767-674fdcdebb25",
+    "uuid": "b813d254-a20b-86c5-8125-2c07bd16b43f",
     "words": [
       "professional"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "professional: a schema.org component word, fused from ProfessionalService",
-    "uuid": "457743be-8066-8ef8-8cc8-9a2bd70fd1ae",
+    "source": "Use when reasoning about professional as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "993fbf9d-8122-85fc-b632-e7eb5ddcb00a",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "professional",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "professionalservice"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "professional: a schema.org component word, fused from ProfessionalService"
+      "en": "Use when reasoning about professional as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

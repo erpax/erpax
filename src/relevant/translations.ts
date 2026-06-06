@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "relevant",
-    "uuid": "e8636316-f90b-81f4-b137-09cc053ce12c",
+    "uuid": "c020f7f3-216f-8ec5-bbbc-a1ca83c17769",
     "words": [
       "relevant"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "relevant: a schema.org component word, fused from relevantOccupation, relevantSpecialty",
-    "uuid": "c83de5c0-fb75-8209-8bf2-381c1219c7d5",
+    "source": "Use when reasoning about relevant as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "b2871abb-5604-859b-b91d-fd2948116d83",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "relevant",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "relevantoccupation",
-      "relevantspecialty"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "relevant: a schema.org component word, fused from relevantOccupation, relevantSpecialty"
+      "en": "Use when reasoning about relevant as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

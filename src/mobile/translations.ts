@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "mobile",
-    "uuid": "73818372-c2a4-88af-aa05-e972ea5d4fab",
+    "uuid": "dca9d830-7326-88ab-ac40-6594ea3f02d6",
     "words": [
       "mobile"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "mobile: a schema.org component word, fused from MobileApplication, MobilePhoneStore, mobileUrl",
-    "uuid": "9252441f-5017-8ba8-97f3-5a0f429924f2",
+    "source": "Use when reasoning about mobile as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "8ea61448-c909-84d6-aa9a-865b6999232b",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "mobile",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "mobileapplication",
-      "mobilephonestore",
-      "mobileurl"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "mobile: a schema.org component word, fused from MobileApplication, MobilePhoneStore, mobileUrl"
+      "en": "Use when reasoning about mobile as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

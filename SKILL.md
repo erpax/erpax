@@ -1,6 +1,6 @@
 ---
 name: erpax
-description: Use when orienting an agent to the erpax repository as a whole — a multi-tenant ERP and double-entry accounting platform on Payload CMS plus Cloudflare that is also a fractal, content-addressed skill corpus. Read first to learn what erpax IS, how to navigate the single-word src/<word> atom corpus, the trinity (SKILL.md plus index.ts plus test.ts), the laws (content-uuid, merge, zero-entropy gives infinite tamper-cost), and the gates (typecheck, lint, vitest, aura, confirm) any change must pass.
+description: Use when orienting an agent to the erpax repository as a whole — a multi-tenant ERP and double-entry accounting platform on Payload CMS plus Cloudflare that is also a fractal, content-addressed skill corpus. Read first to learn what erpax IS, how to navigate the single-word src/<word> atom corpus, the trinity (SKILL.md plus index.ts plus test.ts), the laws (content-uuid, merge, and that wiring raises coverage so the modelled tamper-cost rises toward its coverage=1 limit — distinct from reciprocity-entropy), and the gates (typecheck, lint, vitest, aura, confirm) any change must pass.
 ---
 
 # erpax — the root an agent reads first
@@ -14,7 +14,7 @@ When you act on this repo, you are editing both at once. The same file is a Payl
 
 ## Navigate the atom corpus
 
-- **One concept = one word = one folder.** `src/<word>/`. To find a concept, resolve it to its single generic word and look there. Strip any domain prefix first — `transaction` is one atom shared by commerce, accounting, and agent-billing; there is no `sales-transaction`.
+- **One concept = one word = one folder.** `src/<word>/`. To find a concept, resolve it to its single generic word and look there. Strip any domain prefix first — `transaction` is one atom shared by commerce, accounting, and agent-billing; there is no `sales-transaction`. A nested atom carries its disambiguating compound in the PATH and renders it as the hyphen-joined frontmatter `name` ending in the leaf folder (`src/bank/accounts/bank/transactions` ⇒ `name: bank-transactions`), never as a hyphenated FOLDER. **Enforced by `scripts/check-skill-frontmatter.mjs`** (pre-push + pre-commit): a new hyphenated atom folder fails the push, and a frontmatter `name` that does not equal its folder or end with `-<folder>` fails it too. Six legacy hyphenated folders + a short singular↔plural name set are grandfathered there and shrink as they are reconciled.
 - **Derive from the filesystem, never from a snapshot.** Generated caches (atom catalogue, uuid matrix) DRIFT. The source of truth is the live tree: `find src -name SKILL.md`, `rg` the prose, `ls src/<word>/`. Read the file, do not trust a stale index.
 - **Start here, in order:** [[law]] (the standing commands you MUST obey) → `src/SKILL.md` (the whole) → [[atom]] · [[trinity]] · [[uuid]] · [[identity]] · [[merge]] · [[sequence]] (the index over the basic skills) → [[payload]] · [[vitepress]] (the two render targets).
 - **Compose, don't silo.** Domains (`accounting`, `commerce`, `manufacturing`, `agriculture`) are cross-cutting molecules layered over flat, data-typed collections — not folders that own everything. A collection is a molecule of atoms: [[fields]] · [[hooks]] · [[access]].
@@ -37,7 +37,7 @@ The `description` MUST start with "Use when" and MUST NOT contain a colon-space 
 
 ## The laws (obey [[law]])
 
-- **The one law: zero [[entropy]] ⇒ infinite tamper-[[cost]].** Wire every dimension through the content-[[uuid]] with only **computed** chains, never a hand-set value. Then any input is **ACCEPTED and VERIFIED in harmony with the whole**: [[merge]] never rejects at the door, [[proof]] always catches disharmony. The forging cost expands exponentially (a forgery must re-harmonise with every uuid-chained dimension at once) while verification stays cheap — that asymmetry IS the trust.
+- **The one law: wire every dimension ⇒ coverage rises, and the modelled tamper-[[cost]] rises toward its coverage=1 limit.** Wire every dimension through the content-[[uuid]] with only **computed** chains, never a hand-set value. Then any input is **ACCEPTED and VERIFIED in harmony with the whole**: [[merge]] never rejects at the door, [[proof]] catches disharmony. The forging cost (`coverageCostLog2`) grows with coverage — reaching +∞ ONLY at coverage = 1, for the coverage axis measured, under an external [[anchor]]; finite below — while verification stays cheap; that forge≫verify asymmetry IS the trust. **Do not conflate two distinct measures:** reciprocity-[[entropy]] (`src/entropy`, matrix symmetry — currently 0) is an audit signal, NOT an input to the cost; coverage is the [0,1] fraction that prices it. reciprocity = 1 does NOT imply coverage = 1 (the live tree: entropy 0, coverage < 1, cost finite).
 - **Content-[[uuid]] / [[identity]].** sha-256 → UUIDv8 (RFC 9562 §5.8) carries slot + capability + schema + digest in 128 bits. **Same content ⇒ same id everywhere.** Identity is the address; there is no side-table lookup.
 - **[[merge]] / federation.** Same content ⇒ same id; same address ⇒ same path. Data and structure set-union with zero coordination. Harmonising naming (one word, generic, by type) makes identical concepts collide by themselves — collision is creation (two → one). **Reuse, never re-mint.**
 - **Double-entry as invariant.** Every config is a double-entry gateway flowing through `index.ts`: debit ([[entry]]) ⊕ credit, and Σ balances ([[balance]]). In `journal-entries`, `Σdebit = Σcredit` is a `beforeChange` precondition — an unbalanced write is rejected, not flagged. Imbalance IS the tamper.
@@ -57,7 +57,7 @@ The `description` MUST start with "Use when" and MUST NOT contain a colon-space 
 
 Beyond `check`:
 
-- **aura** — `pnpm aura:scan` finds gaps (dead/unlinked `[[links]]`). A dead link is a prompt to mint the atom it points at (`pnpm mint:atoms`); the goal is gap → 0 (matrix-complete ⟺ aura-gap-0 ⟺ zero entropy).
+- **aura** — `pnpm aura:scan` finds gaps (dead/unlinked `[[links]]`). A dead link is a prompt to mint the atom it points at (`pnpm mint:atoms`); the goal is gap → 0 (matrix-complete ⟺ aura-gap-0). Reciprocity-[[entropy]] → 0 (symmetric binding) is the adjacent matrix condition; both are audit signals and are distinct from the coverage that prices tamper-cost.
 - **confirm** — `pnpm confirm` (per-edit) / `pnpm confirm:full` (whole-corpus): generated Payload types and VitePress links stay consistent with your edit.
 - **docs** — `pnpm docs:build` fails on any unresolved `[[wikilink]]`. Verify path-form links resolve to a real `src/<path>/SKILL.md`, or use the bare unique leaf (aura resolves by leaf, VitePress path-form resolves by full path — a link can pass aura yet 404 in docs).
 

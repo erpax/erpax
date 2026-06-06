@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "tissue",
-    "uuid": "0314db0a-defa-8f5f-aa3f-2cbc40590da2",
+    "uuid": "18f6335e-2fee-83e6-bff0-c003da56e7ca",
     "words": [
       "tissue"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "tissue: a schema.org component word, fused from tissueSample",
-    "uuid": "497f8f2f-2cb4-8235-b0b7-ceba4c745ed5",
+    "source": "Use when reasoning about tissue as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "bb4980df-746c-8cf0-ae7b-092f66532cb4",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "tissue",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "tissuesample"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "tissue: a schema.org component word, fused from tissueSample"
+      "en": "Use when reasoning about tissue as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "cholesterol",
-    "uuid": "1b834cf1-db0e-8a3b-8082-9e5e57c10279",
+    "uuid": "f530b042-8971-8e12-8874-31984ff719dd",
     "words": [
       "cholesterol"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "cholesterol: a schema.org component word, fused from cholesterolContent",
-    "uuid": "f0d4d6f0-5a13-8e00-b887-568026daeffe",
+    "source": "Use when reasoning about cholesterol as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "eab12f93-1b60-803b-b5e3-a515120cc4e5",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "cholesterol",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "cholesterolcontent"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "cholesterol: a schema.org component word, fused from cholesterolContent"
+      "en": "Use when reasoning about cholesterol as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

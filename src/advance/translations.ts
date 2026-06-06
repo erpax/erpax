@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "advance",
-    "uuid": "8bfb7281-54b7-89ef-928a-24112bce29d2",
+    "uuid": "a0349113-ef37-8927-a334-d2aa9d1326d5",
     "words": [
       "advance"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "advance: a schema.org component word, fused from advanceBookingRequirement",
-    "uuid": "fc579e6f-a34e-813c-95fc-1eb297d7252a",
+    "source": "Use when reasoning about advance as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "25c915d8-c3af-899a-976a-f1e6a395331e",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "advance",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "advancebookingrequirement"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "advance: a schema.org component word, fused from advanceBookingRequirement"
+      "en": "Use when reasoning about advance as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

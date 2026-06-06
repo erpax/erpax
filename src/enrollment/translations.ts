@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "enrollment",
-    "uuid": "e108b07d-0443-8733-8430-a11ed286501f",
+    "uuid": "43ea80a8-f377-8017-98a9-fc52b9eb623a",
     "words": [
       "enrollment"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "enrollment: a schema.org component word, fused from maximumEnrollment, totalHistoricalEnrollment",
-    "uuid": "6fbfa13b-5b78-84c1-a80d-d9ccd3368bfd",
+    "source": "Use when reasoning about enrollment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "80aebb01-9a83-84e7-9252-e8c18f72f7c8",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "enrollment",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "maximumenrollment",
-      "totalhistoricalenrollment"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "enrollment: a schema.org component word, fused from maximumEnrollment, totalHistoricalEnrollment"
+      "en": "Use when reasoning about enrollment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

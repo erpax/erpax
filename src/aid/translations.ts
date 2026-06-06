@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "aid",
-    "uuid": "db502e38-8367-8d4b-b4b1-ecd137d92630",
+    "uuid": "940266a9-53ac-8953-8853-42029f66f972",
     "words": [
       "aid"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "aid: a schema.org component word, fused from financialAidEligible",
-    "uuid": "e4ccf6b4-9d81-86cc-baf3-eb1fb297a515",
+    "source": "Use when reasoning about aid as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "b19b996f-e88e-84bb-bc1b-fe9f061d8f6a",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "aid",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "financialaideligible"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "aid: a schema.org component word, fused from financialAidEligible"
+      "en": "Use when reasoning about aid as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

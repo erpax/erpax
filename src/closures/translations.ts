@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "closures",
-    "uuid": "f7a5e225-e4e1-89ec-a264-b3167d6903a7",
+    "uuid": "c83038f0-ab08-8b67-b286-701381bd80b9",
     "words": [
       "closures"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "closures: a schema.org component word, fused from publicTransportClosuresInfo, schoolClosuresInfo",
-    "uuid": "39219a86-4cb8-87d8-ba30-ef8979c48c97",
+    "source": "Use when reasoning about closures as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "0ea3f43c-2bda-8eb8-bca5-57676c53d97b",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "closures",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "publictransportclosuresinfo",
-      "schoolclosuresinfo"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "closures: a schema.org component word, fused from publicTransportClosuresInfo, schoolClosuresInfo"
+      "en": "Use when reasoning about closures as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

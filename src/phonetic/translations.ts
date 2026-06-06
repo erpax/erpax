@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "phonetic",
-    "uuid": "f87c62c7-b24a-8333-9846-198c1c477841",
+    "uuid": "de46de97-b2e0-8442-aa7c-4bf89d5ccb8b",
     "words": [
       "phonetic"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "phonetic: a schema.org component word, fused from phoneticText",
-    "uuid": "3bbe3e1f-2b51-8a50-8385-2a7c86ebdce1",
+    "source": "Use when reasoning about phonetic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "2335fc85-d9e2-80fe-9872-bcfaec8079b7",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "phonetic",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "phonetictext"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "phonetic: a schema.org component word, fused from phoneticText"
+      "en": "Use when reasoning about phonetic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

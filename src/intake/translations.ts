@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "intake",
-    "uuid": "20e72bab-f3d2-8646-aa70-5d33c2542648",
+    "uuid": "11db3421-3ee7-84fd-9818-d9fa62a1fa43",
     "words": [
       "intake"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "intake: a schema.org component word, fused from maximumIntake, recommendedIntake",
-    "uuid": "2936a948-af5a-8a19-adf9-128b29e60526",
+    "source": "Use when reasoning about intake as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "69cd6b4e-4448-85a1-9878-2e33997728b2",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "intake",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "maximumintake",
-      "recommendedintake"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "intake: a schema.org component word, fused from maximumIntake, recommendedIntake"
+      "en": "Use when reasoning about intake as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

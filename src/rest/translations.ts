@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "rest",
-    "uuid": "11ebe94d-70b2-8052-b8da-602c574a3fa6",
+    "uuid": "7f8d1dea-f1f1-8670-ad42-0cbb31ff14b4",
     "words": [
       "rest"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "rest: a schema.org component word, fused from restPeriods",
-    "uuid": "d4bb17a2-ecfe-8ca0-bf84-19a2842681cb",
+    "source": "Use when reasoning about rest as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "e5bb2139-6ea3-85af-9486-e4da93853aea",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "rest",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "restperiods"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "rest: a schema.org component word, fused from restPeriods"
+      "en": "Use when reasoning about rest as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

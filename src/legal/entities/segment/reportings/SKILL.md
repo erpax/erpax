@@ -1,5 +1,5 @@
 ---
-name: segment-reporting
+name: segment-reportings
 description: Use when preparing IFRS-8/ASC-280 operating-segment disclosures — revenue, operating profit, assets, liabilities, CapEx, major-customer dependency, intersegment transfer pricing, and reconciliation to consolidated totals per fiscal period per entity. The segment-reporting disclosure register.
 ---
 

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "childrens",
-    "uuid": "a83b35a8-8a61-8d54-aa3b-50ad984a7195",
+    "uuid": "06ef19d1-552b-8477-a0d4-f4093054d609",
     "words": [
       "childrens"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "childrens: a schema.org component word, fused from ChildrensEvent",
-    "uuid": "d21173b3-5e5e-85b4-9c47-6ab153a206c0",
+    "source": "Use when reasoning about childrens as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "863d8a07-13c8-80cc-bd88-9a8b1322e3a2",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "childrens",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "childrensevent"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "childrens: a schema.org component word, fused from ChildrensEvent"
+      "en": "Use when reasoning about childrens as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

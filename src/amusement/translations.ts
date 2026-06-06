@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "amusement",
-    "uuid": "da79c51e-4b9b-8cc1-9e8b-10be81729997",
+    "uuid": "797e0538-dfe5-8580-aa62-1bff0545c4ce",
     "words": [
       "amusement"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "amusement: a schema.org component word, fused from AmusementPark",
-    "uuid": "78325b45-d85a-8286-924f-4e80f890ee0f",
+    "source": "Use when reasoning about amusement as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "cd70d297-70cf-8676-90a1-14513f040acf",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "amusement",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "amusementpark"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "amusement: a schema.org component word, fused from AmusementPark"
+      "en": "Use when reasoning about amusement as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

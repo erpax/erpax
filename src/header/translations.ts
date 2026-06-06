@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "header",
-    "uuid": "eea5a023-d0a7-8ce7-a58e-e2d4c3cfdcc3",
+    "uuid": "38745e62-d5c2-804a-9777-c475c0d873a9",
     "words": [
       "header"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "header: a schema.org component word, fused from WPHeader",
-    "uuid": "08665405-c026-8c24-9e62-cdb4ba3de168",
+    "source": "Use when reasoning about header as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "823b1d5b-23da-82cb-b32e-dccdf843a0c1",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "header",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "wpheader"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "header: a schema.org component word, fused from WPHeader"
+      "en": "Use when reasoning about header as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

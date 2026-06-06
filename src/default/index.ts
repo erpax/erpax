@@ -12,13 +12,13 @@
  * @see ../name -- ../digit -- ../uuid/matrix -- ../collider -- ./SKILL.md
  */
 import { uuidOfName } from '@/name'
-import { digitalRoot } from '@/digit'
+import { digitalRootOfUuid } from '@/digit'
 
 /** The architectural default of a name — its identity, COMPUTED from the architecture (the content-uuid),
  *  never assigned. There is nothing to define: the architecture already determined the value. */
 export function architecturalDefault(name: string): { uuid: string; digit: number } {
   const uuid = uuidOfName(name)
-  return { uuid, digit: digitalRoot(uuid) }
+  return { uuid, digit: digitalRootOfUuid(uuid) }
 }
 
 /** A value is BY ARCHITECTURE iff it equals what the architecture computes for the name — derived, not

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "strength",
-    "uuid": "e7ec67aa-4834-8a2e-823f-6b8022363a41",
+    "uuid": "290ca453-b7d8-81b8-894e-1c248d3c18d1",
     "words": [
       "strength"
     ],
@@ -17,25 +17,47 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "strength: a schema.org component word, fused from DrugStrength, availableStrength, recommendationStrength, strengthUnit, strengthValue",
-    "uuid": "17de7bfc-8498-8297-9bc7-25faef1cac0d",
+    "source": "Use when reasoning about the corpus's strength — its DRY-ness amplified by its dimensional slices; strength = coverageCostLog2(dryness, slices), infinite at perfect DRY (zero duplication residue), one slice (the digit's 88.4%) only one term.",
+    "uuid": "63d522c2-5a2b-8a46-9ccc-f1f13e534bab",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "the",
+      "corpus",
+      "s",
       "strength",
-      "a",
-      "schema",
-      "org",
-      "component",
-      "word",
-      "fused",
-      "from",
-      "drugstrength",
-      "availablestrength",
-      "recommendationstrength",
-      "strengthunit",
-      "strengthvalue"
+      "its",
+      "dry",
+      "ness",
+      "amplified",
+      "by",
+      "its",
+      "dimensional",
+      "slices",
+      "strength",
+      "coveragecostlog2",
+      "dryness",
+      "slices",
+      "infinite",
+      "at",
+      "perfect",
+      "dry",
+      "zero",
+      "duplication",
+      "residue",
+      "one",
+      "slice",
+      "the",
+      "digit",
+      "s",
+      "only",
+      "one",
+      "term"
     ],
     "values": {
-      "en": "strength: a schema.org component word, fused from DrugStrength, availableStrength, recommendationStrength, strengthUnit, strengthValue"
+      "en": "Use when reasoning about the corpus's strength — its DRY-ness amplified by its dimensional slices; strength = coverageCostLog2(dryness, slices), infinite at perfect DRY (zero duplication residue), one slice (the digit's 88.4%) only one term."
     }
   }
 ]

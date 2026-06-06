@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "cheat",
-    "uuid": "52c38cb0-fa4d-82ab-998b-19002be50b2c",
+    "uuid": "d953bfd3-9b23-8751-895a-9a089dcbc278",
     "words": [
       "cheat"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "cheat: a schema.org component word, fused from cheatCode",
-    "uuid": "6621c406-5871-87db-8954-80e9b06b341d",
+    "source": "Use when reasoning about cheat as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "7f53e2bb-1616-8378-ac6b-d6dc28bcaa66",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "cheat",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "cheatcode"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "cheat: a schema.org component word, fused from cheatCode"
+      "en": "Use when reasoning about cheat as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

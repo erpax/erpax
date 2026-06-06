@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "prescription",
-    "uuid": "7882984c-72f4-8fe5-b232-ce3c1e6ee3a1",
+    "uuid": "ead2d4d8-80a8-8dc8-857a-8aafd255e1ba",
     "words": [
       "prescription"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "prescription: a schema.org component word, fused from DrugPrescriptionStatus, offersPrescriptionByMail, prescriptionStatus",
-    "uuid": "cbb6c4d4-1b08-86c0-8c77-9b31e775981b",
+    "source": "Use when reasoning about prescription as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "018516dd-7d36-81ad-badb-f272c736acef",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "prescription",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "drugprescriptionstatus",
-      "offersprescriptionbymail",
-      "prescriptionstatus"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "prescription: a schema.org component word, fused from DrugPrescriptionStatus, offersPrescriptionByMail, prescriptionStatus"
+      "en": "Use when reasoning about prescription as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when the soil surface is covered to suppress weeds and moderate temperature/moisture — plastic film (warms soil + blocks weeds), woven landscape fabric (reusable, burn-holed for transplants), and organic straw/leaf mulch. The smother alternative to cultivation; a soil-surface cover with weed, water, and heat functions.",
-    "uuid": "30937f25-caa5-8da3-a742-cde185e071c0",
+    "uuid": "15c18b25-c8c9-81e2-96a5-c3891ebc9f52",
     "words": [
       "use",
       "when",

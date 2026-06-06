@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "critic",
-    "uuid": "7ea4db9e-133b-8b3b-9256-ba0840dd7473",
+    "uuid": "a13c2cb1-886c-8d46-8f75-707a69ee1333",
     "words": [
       "critic"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "critic: a schema.org component word, fused from CriticReview",
-    "uuid": "d8e52769-a628-8f08-9619-2e1a43acea3b",
+    "source": "Use when reasoning about critic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "499ac445-b712-8740-b392-b6743e8c849d",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "critic",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "criticreview"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "critic: a schema.org component word, fused from CriticReview"
+      "en": "Use when reasoning about critic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

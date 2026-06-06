@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "hosting",
-    "uuid": "c5010542-deba-85de-a9aa-91210e1abb90",
+    "uuid": "9da01192-1889-8e1a-83b5-92de0b92f364",
     "words": [
       "hosting"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "hosting: a schema.org component word, fused from hostingOrganization",
-    "uuid": "d56da0db-ff65-8378-b478-7c27a4eb509d",
+    "source": "Use when reasoning about hosting as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "ba2e7448-6896-8d74-8c62-028b142e7fea",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "hosting",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "hostingorganization"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "hosting: a schema.org component word, fused from hostingOrganization"
+      "en": "Use when reasoning about hosting as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

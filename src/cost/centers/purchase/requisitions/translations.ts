@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "purchase-requisitions",
-    "uuid": "7bdccb5f-5929-8665-8915-633985eadee1",
+    "uuid": "5cce99a8-5900-8158-8876-b6ce68a15a7a",
     "words": [
       "purchase",
       "requisitions"
@@ -19,7 +19,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when capturing spend requests before a purchase order is issued — SOX §404 four-eyes gate (requisitioner ≠ approver), multi-line item costing, GL account, preferred vendor, and auditor-traceable PO→requisition→approval chain. The pre-PO approval-gate collection.",
-    "uuid": "cc80b7f6-4a02-8402-91b6-8522e7ccb41b",
+    "uuid": "4133e626-52b4-824f-bb4a-e0557b036d7f",
     "words": [
       "use",
       "when",

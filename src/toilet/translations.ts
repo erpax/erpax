@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "toilet",
-    "uuid": "e9f8d07a-364d-894c-8723-698ccbd6e117",
+    "uuid": "706eb5f0-865a-87dd-9f61-d9cd69996c7f",
     "words": [
       "toilet"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "toilet: a schema.org component word, fused from PublicToilet",
-    "uuid": "f9d7bdcc-d99e-87b7-bfbd-15ac47757996",
+    "source": "Use when reasoning about toilet as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "d050ef6d-8165-88e7-b2c0-2eca7b41ee3c",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "toilet",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "publictoilet"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "toilet: a schema.org component word, fused from PublicToilet"
+      "en": "Use when reasoning about toilet as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

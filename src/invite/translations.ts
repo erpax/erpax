@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "invite",
-    "uuid": "69247efc-0b40-806e-a25c-6057f7bf0848",
+    "uuid": "f6f27cf1-77fa-88d3-97e3-25f7352df29d",
     "words": [
       "invite"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "invite: a schema.org component word, fused from InviteAction",
-    "uuid": "3f493e44-1db7-8b84-8aa4-291f80c9d5c5",
+    "source": "Use when reasoning about invite as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "9082a6f7-f71e-8377-82bb-426a34a35acd",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "invite",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "inviteaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "invite: a schema.org component word, fused from InviteAction"
+      "en": "Use when reasoning about invite as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

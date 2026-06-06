@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "administrative",
-    "uuid": "8a17ee3c-2139-886a-be4d-9c99a911563b",
+    "uuid": "25dfe206-e6c7-8bed-8f54-16c439892e28",
     "words": [
       "administrative"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "administrative: a schema.org component word, fused from AdministrativeArea",
-    "uuid": "477d4493-eeef-8a87-97e7-0057c7e2e848",
+    "source": "Use when reasoning about administrative as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "7869bf66-05e6-83a2-8d1e-06530b8b474c",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "administrative",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "administrativearea"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "administrative: a schema.org component word, fused from AdministrativeArea"
+      "en": "Use when reasoning about administrative as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

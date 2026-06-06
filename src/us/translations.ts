@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "us",
-    "uuid": "281a5b0a-6a2a-8fc5-94ee-986f305f02ef",
+    "uuid": "bae973a8-4e30-8d13-a06c-9071c1803bd2",
     "words": [
       "us"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "us: a schema.org component word, fused from USNonprofitType, usNPI",
-    "uuid": "11fcd81e-8ee3-8832-a716-205082f8bb95",
+    "source": "Use when reasoning about us as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "c3fdab3c-44a9-862f-a1eb-749445323213",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "us",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "usnonprofittype",
-      "usnpi"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "us: a schema.org component word, fused from USNonprofitType, usNPI"
+      "en": "Use when reasoning about us as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

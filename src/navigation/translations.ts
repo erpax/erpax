@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "navigation",
-    "uuid": "721bdcd9-0404-8ba6-a6fe-bda4507d4102",
+    "uuid": "a0514b42-5583-858b-b6a7-941c83a8d4c7",
     "words": [
       "navigation"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "navigation: a schema.org component word, fused from SiteNavigationElement",
-    "uuid": "d36f6094-ef53-87bf-9f3d-e31a3836c6b0",
+    "source": "Use when reasoning about navigation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "194df962-caa6-8e2e-aa5a-cbb90f8b37a5",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "navigation",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "sitenavigationelement"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "navigation: a schema.org component word, fused from SiteNavigationElement"
+      "en": "Use when reasoning about navigation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

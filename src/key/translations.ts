@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "key",
-    "uuid": "70f6bfcc-156f-8bd8-b8a1-393872a53115",
+    "uuid": "04e7333f-3be1-8a56-9c13-8b937b48df7a",
     "words": [
       "key"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "key: a schema.org component word, fused from inChIKey, musicalKey",
-    "uuid": "e48925f2-03ed-8ca4-bcd7-e4c3a85d0c05",
+    "source": "Use when reasoning about key as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "9f4909dd-b73d-8711-b7dd-d4e58c670b34",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "key",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "inchikey",
-      "musicalkey"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "key: a schema.org component word, fused from inChIKey, musicalKey"
+      "en": "Use when reasoning about key as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

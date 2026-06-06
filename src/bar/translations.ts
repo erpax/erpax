@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "bar",
-    "uuid": "204706a3-f97c-85fb-a9ae-07c799b3fb64",
+    "uuid": "a40fb56e-2d86-83cb-846e-33609413f096",
     "words": [
       "bar"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "bar: a schema.org component word, fused from BarOrPub, WPSideBar",
-    "uuid": "75bc2681-534a-80a4-b037-ff19b175bd97",
+    "source": "Use when reasoning about bar as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "629e4c40-d176-8edd-8bef-e9aa3e8b9a53",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "bar",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "barorpub",
-      "wpsidebar"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "bar: a schema.org component word, fused from BarOrPub, WPSideBar"
+      "en": "Use when reasoning about bar as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

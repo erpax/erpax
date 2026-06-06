@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "ad",
-    "uuid": "f240de6b-6125-83b9-b7c3-ecf4e96ac3b7",
+    "uuid": "542fb21d-2875-89c1-a1c2-d96941471ab1",
     "words": [
       "ad"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "ad: a schema.org component word, fused from WPAdBlock",
-    "uuid": "9f7d2fbe-bbc3-8362-b621-7a85c42bb96e",
+    "source": "Use when reasoning about ad as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "14f91999-4bfd-8588-ac96-e29f560ac551",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "ad",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "wpadblock"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "ad: a schema.org component word, fused from WPAdBlock"
+      "en": "Use when reasoning about ad as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "physiological",
-    "uuid": "eafd4e74-fd52-8ccb-988d-ef0475cf954b",
+    "uuid": "021ffa8c-8263-8b3c-8ca2-f39a6131280d",
     "words": [
       "physiological"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "physiological: a schema.org component word, fused from physiologicalBenefits",
-    "uuid": "3f61abe7-2925-81d5-86ba-21353e060594",
+    "source": "Use when reasoning about physiological as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "329ebaba-f95f-8297-b7f2-a5d6f14db190",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "physiological",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "physiologicalbenefits"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "physiological: a schema.org component word, fused from physiologicalBenefits"
+      "en": "Use when reasoning about physiological as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

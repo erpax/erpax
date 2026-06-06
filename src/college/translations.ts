@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "college",
-    "uuid": "e8572bca-9b90-8594-a7f9-a1a0281e1abb",
+    "uuid": "24c5f117-6eba-82fc-a7b9-31afd6fabdf0",
     "words": [
       "college"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "college: a schema.org component word, fused from CollegeOrUniversity",
-    "uuid": "a15a83b2-c9a8-8f01-a5db-8d1fa8148d53",
+    "source": "Use when reasoning about college as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "562cbaa9-81fe-8bd0-bc1f-0646deeb4d51",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "college",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "collegeoruniversity"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "college: a schema.org component word, fused from CollegeOrUniversity"
+      "en": "Use when reasoning about college as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

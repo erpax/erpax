@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "street",
-    "uuid": "935da76e-718d-8e43-94c8-5e2f4d197aa7",
+    "uuid": "e876bdf7-a394-8500-a956-fa0ff1515c47",
     "words": [
       "street"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "street: a schema.org component word, fused from streetAddress",
-    "uuid": "817167c7-702a-8b54-bcc7-c170ca3bb479",
+    "source": "Use when reasoning about street as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "1445f28a-b719-8df2-867b-1f46ec275645",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "street",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "streetaddress"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "street: a schema.org component word, fused from streetAddress"
+      "en": "Use when reasoning about street as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

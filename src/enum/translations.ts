@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "enum",
-    "uuid": "a8d2bf57-4537-8135-9246-8a795e26cf96",
+    "uuid": "a2aa3509-f3a5-8194-8712-78b3d1673dfc",
     "words": [
       "enum"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "enum: a schema.org component word, fused from MeasurementMethodEnum",
-    "uuid": "073a1a20-d128-8151-a6e6-ea5ecd7c3656",
+    "source": "Use when reasoning about enum as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "0ab3e7d0-33bf-84c4-bf5c-3cdfd52e85d9",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "enum",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "measurementmethodenum"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "enum: a schema.org component word, fused from MeasurementMethodEnum"
+      "en": "Use when reasoning about enum as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

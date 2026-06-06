@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "estimated",
-    "uuid": "e48c7877-eeb6-8188-8cc5-93c60cbb1157",
+    "uuid": "b3c7ed41-b0ff-888d-b559-b2c0410e630f",
     "words": [
       "estimated"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "estimated: a schema.org component word, fused from estimatedCost, estimatedFlightDuration, estimatedSalary",
-    "uuid": "bea2e276-ee74-8098-8a21-4afc539996f3",
+    "source": "Use when reasoning about estimated as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "74da9c6f-46a9-80ed-b665-67fcf72b52ea",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "estimated",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "estimatedcost",
-      "estimatedflightduration",
-      "estimatedsalary"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "estimated: a schema.org component word, fused from estimatedCost, estimatedFlightDuration, estimatedSalary"
+      "en": "Use when reasoning about estimated as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

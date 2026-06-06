@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "rooms",
-    "uuid": "c129bfe9-608a-8123-b966-90cd985ad5e2",
+    "uuid": "e04e11e6-1a5e-8c53-a76e-4a8838057322",
     "words": [
       "rooms"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "rooms: a schema.org component word, fused from numberOfRooms",
-    "uuid": "000319e9-5025-8cee-a4d0-ee55c4196d3b",
+    "source": "Use when reasoning about rooms as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "e6f634b7-b444-839e-8617-72aaff1e02de",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "rooms",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "numberofrooms"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "rooms: a schema.org component word, fused from numberOfRooms"
+      "en": "Use when reasoning about rooms as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "automotive",
-    "uuid": "693ebd40-76e7-86fe-ac78-46ee79b38654",
+    "uuid": "ffef17bb-00f1-869f-a259-77a8e37ee264",
     "words": [
       "automotive"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "automotive: a schema.org component word, fused from AutomotiveBusiness",
-    "uuid": "eb564581-f4b7-8404-a86a-e5637d49c734",
+    "source": "Use when reasoning about automotive as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "b2e1a0bd-6942-8f83-b834-c1407f1ab82e",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "automotive",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "automotivebusiness"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "automotive: a schema.org component word, fused from AutomotiveBusiness"
+      "en": "Use when reasoning about automotive as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

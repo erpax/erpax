@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "css",
-    "uuid": "0fc3c02b-5663-8438-ba56-7d522b385ea4",
+    "uuid": "7b31a48a-afbd-8fd0-8b89-b62b275d2e16",
     "words": [
       "css"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "css: a schema.org component word, fused from CssSelectorType, cssSelector",
-    "uuid": "de19145c-302b-8b4c-950d-9c2fb82ba5f5",
+    "source": "Use when reasoning about css as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "bf5f71e3-a9f3-8ef6-b9c1-72a222e3aaa8",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "css",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "cssselectortype",
-      "cssselector"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "css: a schema.org component word, fused from CssSelectorType, cssSelector"
+      "en": "Use when reasoning about css as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "shipping",
-    "uuid": "cfcca54d-d7b3-8520-ae20-8d5b751248b0",
+    "uuid": "6dd477fd-f372-868b-967c-08efb0ab10e9",
     "words": [
       "shipping"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "shipping: a schema.org component word, fused from OfferShippingDetails, ShippingConditions, ShippingDeliveryTime, ShippingRateSettings, ShippingService, customerRemorseReturnShippingFeesAmount",
-    "uuid": "5063b498-bfe4-862d-becc-341298f76e14",
+    "source": "Use when reasoning about shipping as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "730245dd-35c4-88f1-9e72-1b4d775a980a",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "shipping",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "offershippingdetails",
-      "shippingconditions",
-      "shippingdeliverytime",
-      "shippingratesettings",
-      "shippingservice",
-      "customerremorsereturnshippingfeesamount"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "shipping: a schema.org component word, fused from OfferShippingDetails, ShippingConditions, ShippingDeliveryTime, ShippingRateSettings, ShippingService, customerRemorseReturnShippingFeesAmount"
+      "en": "Use when reasoning about shipping as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

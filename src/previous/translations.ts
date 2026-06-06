@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "previous",
-    "uuid": "5cf02d0c-4910-83fb-9f67-a45cbe6884e0",
+    "uuid": "34755b98-e25a-8f3d-81df-e44642b54366",
     "words": [
       "previous"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "previous: a schema.org component word, fused from numberOfPreviousOwners, previousItem, previousStartDate",
-    "uuid": "44cfa656-0776-869a-a772-cec085d7d437",
+    "source": "Use when reasoning about previous as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "f69007c8-bdcb-88d9-8d54-7f004b424fea",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "previous",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "numberofpreviousowners",
-      "previousitem",
-      "previousstartdate"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "previous: a schema.org component word, fused from numberOfPreviousOwners, previousItem, previousStartDate"
+      "en": "Use when reasoning about previous as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

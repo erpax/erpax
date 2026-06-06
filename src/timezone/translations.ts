@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "timezone",
-    "uuid": "e6a1069a-0000-8c13-b4ce-9b42135fd3a5",
+    "uuid": "ff8797d6-1c0b-852c-8f5a-7aeac4d6a2f6",
     "words": [
       "timezone"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "timezone: a schema.org component word, fused from broadcastTimezone, scheduleTimezone",
-    "uuid": "571eb9fb-00db-8793-be7a-83d7e52e7abf",
+    "source": "Use when reasoning about timezone as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "fe401645-5b0c-89d4-be8e-00cb4d134a23",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "timezone",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "broadcasttimezone",
-      "scheduletimezone"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "timezone: a schema.org component word, fused from broadcastTimezone, scheduleTimezone"
+      "en": "Use when reasoning about timezone as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "therapeutic",
-    "uuid": "8766c5b2-935c-81cb-8597-200aad935b84",
+    "uuid": "9bd4395b-1f38-8f2c-9e11-25cf5e547741",
     "words": [
       "therapeutic"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "therapeutic: a schema.org component word, fused from TherapeuticProcedure",
-    "uuid": "cbb97482-5058-8ef7-bf9e-6173002d9881",
+    "source": "Use when reasoning about therapeutic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "5449935a-a4b1-8876-b90c-357ff024bd66",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "therapeutic",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "therapeuticprocedure"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "therapeutic: a schema.org component word, fused from TherapeuticProcedure"
+      "en": "Use when reasoning about therapeutic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "control",
-    "uuid": "d2968291-cad1-83dd-99be-9782ac2a1942",
+    "uuid": "d2febfdf-b01f-8579-b9fe-c957ded90b0d",
     "words": [
       "control"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "control: a schema.org component word, fused from ControlAction, accessibilityControl",
-    "uuid": "f0b8798e-b8e9-875e-8167-e8b2f130932b",
+    "source": "Use when reasoning about control as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "26807695-1b44-83bc-9082-ad7993db52f6",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "control",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "controlaction",
-      "accessibilitycontrol"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "control: a schema.org component word, fused from ControlAction, accessibilityControl"
+      "en": "Use when reasoning about control as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

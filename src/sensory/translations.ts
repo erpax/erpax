@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "sensory",
-    "uuid": "e94a38ae-461b-86ac-855e-76ec8cbfd70c",
+    "uuid": "97124444-e0a2-827d-a953-9df62854936c",
     "words": [
       "sensory"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "sensory: a schema.org component word, fused from sensoryRequirement, sensoryUnit",
-    "uuid": "0af14514-c112-8af9-9651-cdc7533e4131",
+    "source": "Use when reasoning about sensory as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "3c1b9a02-4cd1-8f9f-a605-984ae3ec4f8a",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "sensory",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "sensoryrequirement",
-      "sensoryunit"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "sensory: a schema.org component word, fused from sensoryRequirement, sensoryUnit"
+      "en": "Use when reasoning about sensory as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

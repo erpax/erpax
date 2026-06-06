@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "hindu",
-    "uuid": "7b316bc5-2c71-8cb6-ad48-77593b0c88cf",
+    "uuid": "8c0781ef-23eb-8545-a818-bbb3d4a58170",
     "words": [
       "hindu"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "hindu: a schema.org component word, fused from HinduTemple",
-    "uuid": "ecc79c95-606a-8ea2-8be5-1a4c84c2b3d0",
+    "source": "Use when reasoning about hindu as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "e29ab863-b5d7-8444-8528-acedd67c8dc6",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "hindu",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "hindutemple"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "hindu: a schema.org component word, fused from HinduTemple"
+      "en": "Use when reasoning about hindu as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

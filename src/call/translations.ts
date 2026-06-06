@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "call",
-    "uuid": "cb51ff46-25ad-8849-bf88-be88015815a8",
+    "uuid": "c0c82bb0-d4ac-8117-a62e-beaa0ea1922a",
     "words": [
       "call"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "call: a schema.org component word, fused from callSign",
-    "uuid": "ef70603c-4d80-8957-9a3f-c0082ec8de0a",
+    "source": "Use when reasoning about call as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "d7691959-ac33-8989-8e25-6ba07212b7e3",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "call",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "callsign"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "call: a schema.org component word, fused from callSign"
+      "en": "Use when reasoning about call as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

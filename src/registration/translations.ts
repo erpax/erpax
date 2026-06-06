@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "registration",
-    "uuid": "769056e3-9e51-8d32-859d-838f992c378e",
+    "uuid": "13adc0a6-4a30-831e-b55c-582668bcd6cf",
     "words": [
       "registration"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "registration: a schema.org component word, fused from companyRegistration",
-    "uuid": "41d38c15-11f1-892e-8872-31d6410c81a1",
+    "source": "Use when reasoning about registration as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "ce6722dd-f2e5-8e11-840c-f799ee257ee5",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "registration",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "companyregistration"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "registration: a schema.org component word, fused from companyRegistration"
+      "en": "Use when reasoning about registration as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

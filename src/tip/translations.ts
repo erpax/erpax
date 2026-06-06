@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "tip",
-    "uuid": "f982c8b7-a4e9-8c97-b8c3-433a13b1035b",
+    "uuid": "15b23f65-522b-8ca3-a39f-935ecb0b8b2b",
     "words": [
       "tip"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "tip: a schema.org component word, fused from HowToTip, TipAction, gameTip",
-    "uuid": "5edd93d1-fb2a-8a37-b7e1-cb3c15c5c5ae",
+    "source": "Use when reasoning about tip as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "481efbe9-ad3a-857b-a868-8c13c9397e12",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "tip",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "howtotip",
-      "tipaction",
-      "gametip"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "tip: a schema.org component word, fused from HowToTip, TipAction, gameTip"
+      "en": "Use when reasoning about tip as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "mortgage",
-    "uuid": "473bedbf-a95c-897a-ae5f-ceb242ee8a55",
+    "uuid": "b60d3248-f185-8e7a-8a51-d04390421cd7",
     "words": [
       "mortgage"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "mortgage: a schema.org component word, fused from MortgageLoan, domiciledMortgage, loanMortgageMandateAmount",
-    "uuid": "39417572-b2dd-89e9-9922-d4b90fb0412a",
+    "source": "Use when reasoning about mortgage as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "fa157121-7fa8-8824-9136-2c6934428f6b",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "mortgage",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "mortgageloan",
-      "domiciledmortgage",
-      "loanmortgagemandateamount"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "mortgage: a schema.org component word, fused from MortgageLoan, domiciledMortgage, loanMortgageMandateAmount"
+      "en": "Use when reasoning about mortgage as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

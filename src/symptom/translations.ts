@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "symptom",
-    "uuid": "df5edc6f-fa7f-81af-a68e-547c5559241b",
+    "uuid": "aee585c8-5807-80df-935d-dd925753d8fe",
     "words": [
       "symptom"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "symptom: a schema.org component word, fused from MedicalSignOrSymptom, MedicalSymptom, signOrSymptom",
-    "uuid": "4805ba1b-8dc5-84ea-ac0c-5483785543ba",
+    "source": "Use when reasoning about symptom as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "62ba4a5b-5d76-866b-87e5-29b83e015686",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "symptom",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "medicalsignorsymptom",
-      "medicalsymptom",
-      "signorsymptom"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "symptom: a schema.org component word, fused from MedicalSignOrSymptom, MedicalSymptom, signOrSymptom"
+      "en": "Use when reasoning about symptom as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "lake",
-    "uuid": "fc9bb0b1-d12a-8b8b-9b7d-35ddaa2dc0d8",
+    "uuid": "e75764f6-2e7a-83fb-ae09-6239844aae9e",
     "words": [
       "lake"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "lake: a schema.org component word, fused from LakeBodyOfWater",
-    "uuid": "6df1a1b7-6fdb-8a48-8bb9-0a165b389a86",
+    "source": "Use when reasoning about lake as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "c6284797-b643-8928-8286-b8d2bf289262",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "lake",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "lakebodyofwater"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "lake: a schema.org component word, fused from LakeBodyOfWater"
+      "en": "Use when reasoning about lake as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

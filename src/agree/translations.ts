@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "agree",
-    "uuid": "e49ede9c-b8c1-8c58-a37e-c4be57acf0e6",
+    "uuid": "a918ed9c-4f6b-888d-9a40-370389e011cd",
     "words": [
       "agree"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "agree: a schema.org component word, fused from AgreeAction",
-    "uuid": "d8b00563-7a86-8cc4-83c9-b89c765b599e",
+    "source": "Use when reasoning about agree as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "17ccee52-92e8-8a2b-8e70-6408e1fe5b63",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "agree",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "agreeaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "agree: a schema.org component word, fused from AgreeAction"
+      "en": "Use when reasoning about agree as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

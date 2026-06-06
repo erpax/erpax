@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "overflow",
-    "uuid": "7c67d881-a2d9-8107-90ba-1d8671ee2a77",
+    "uuid": "62d7ae20-b910-8c4e-bd39-cf78c823408f",
     "words": [
       "overflow"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "overflow: a schema.org component word, fused from cvdNumC19OverflowPats",
-    "uuid": "d235436d-92e0-847c-97a9-a90577573918",
+    "source": "Use when reasoning about overflow as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "d03803db-8cd3-862e-84cf-9c4212d29667",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "overflow",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "cvdnumc19overflowpats"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "overflow: a schema.org component word, fused from cvdNumC19OverflowPats"
+      "en": "Use when reasoning about overflow as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

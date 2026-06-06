@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "biological",
-    "uuid": "52090253-739b-8235-a518-c5c7daa619c6",
+    "uuid": "03133be3-3898-86a1-b8a7-61e2b335847d",
     "words": [
       "biological"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "biological: a schema.org component word, fused from biologicalRole, isInvolvedInBiologicalProcess",
-    "uuid": "72ad779e-b630-87a4-81e4-a66d67fafb4c",
+    "source": "Use when reasoning about biological as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "40e36362-8797-815d-8c4e-e830c4f6eb6a",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "biological",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "biologicalrole",
-      "isinvolvedinbiologicalprocess"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "biological: a schema.org component word, fused from biologicalRole, isInvolvedInBiologicalProcess"
+      "en": "Use when reasoning about biological as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

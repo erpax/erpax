@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "prescribing",
-    "uuid": "1387971a-f638-8d42-b871-9a3555e145a4",
+    "uuid": "4e6ee463-a1b5-8f01-a5af-82a74a5e6bd3",
     "words": [
       "prescribing"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "prescribing: a schema.org component word, fused from prescribingInfo",
-    "uuid": "d9974c21-da77-8b86-ba30-7a8791166455",
+    "source": "Use when reasoning about prescribing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "637c8fb4-de68-833b-9c16-869dafc91737",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "prescribing",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "prescribinginfo"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "prescribing: a schema.org component word, fused from prescribingInfo"
+      "en": "Use when reasoning about prescribing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

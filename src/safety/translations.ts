@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "safety",
-    "uuid": "29f14d56-341e-8c65-8cdf-ebd8ed7dc76a",
+    "uuid": "d648e0ec-bb89-8a60-99e3-fa412418d7ee",
     "words": [
       "safety"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "safety: a schema.org component word, fused from safetyConsideration",
-    "uuid": "49fe5818-1f6b-89fd-8528-a21a7044a80c",
+    "source": "Use when reasoning about safety as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "64a9e233-77dc-8c28-ac56-2124683355fc",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "safety",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "safetyconsideration"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "safety: a schema.org component word, fused from safetyConsideration"
+      "en": "Use when reasoning about safety as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

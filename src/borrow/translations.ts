@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "borrow",
-    "uuid": "06481e6a-4985-8517-bff7-1d729b428cdb",
+    "uuid": "6dbd2777-6d1e-8a95-ba5b-250858302358",
     "words": [
       "borrow"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "borrow: a schema.org component word, fused from BorrowAction",
-    "uuid": "597233b0-a3d3-8684-a7fd-16cae44d50ae",
+    "source": "Use when reasoning about borrow as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "3dc5ab00-635a-85cb-8190-ba739e6d40ff",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "borrow",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "borrowaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "borrow: a schema.org component word, fused from BorrowAction"
+      "en": "Use when reasoning about borrow as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

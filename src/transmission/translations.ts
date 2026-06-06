@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "transmission",
-    "uuid": "d7b8ed03-ce77-84c0-a4c0-554b3b08067f",
+    "uuid": "187dd773-9888-8409-8713-a87f7c34ca21",
     "words": [
       "transmission"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "transmission: a schema.org component word, fused from transmissionMethod, vehicleTransmission",
-    "uuid": "da805c8d-47ea-8e5d-b9a7-a44273b05928",
+    "source": "Use when reasoning about transmission as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "6b97bb0e-74f2-87b3-9b27-4746ed456664",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "transmission",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "transmissionmethod",
-      "vehicletransmission"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "transmission: a schema.org component word, fused from transmissionMethod, vehicleTransmission"
+      "en": "Use when reasoning about transmission as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

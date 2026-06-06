@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "body",
-    "uuid": "1066e919-e799-8ba5-97f4-8bc6dd43917f",
+    "uuid": "d68083f2-b185-8ac1-9877-dd905455281a",
     "words": [
       "body"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "body: a schema.org component word, fused from AutoBodyShop, BodyMeasurementTypeEnumeration, BodyOfWater, LakeBodyOfWater, OceanBodyOfWater, RiverBodyOfWater",
-    "uuid": "8cc39332-f4ff-837c-810c-ff20dcf50388",
+    "source": "Use when reasoning about body as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "dd065c8a-677e-8f73-889f-d7a0687cb01f",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "body",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "autobodyshop",
-      "bodymeasurementtypeenumeration",
-      "bodyofwater",
-      "lakebodyofwater",
-      "oceanbodyofwater",
-      "riverbodyofwater"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "body: a schema.org component word, fused from AutoBodyShop, BodyMeasurementTypeEnumeration, BodyOfWater, LakeBodyOfWater, OceanBodyOfWater, RiverBodyOfWater"
+      "en": "Use when reasoning about body as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

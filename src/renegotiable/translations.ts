@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "renegotiable",
-    "uuid": "0f077029-a357-89bf-8eeb-067505a9ec55",
+    "uuid": "cc7597d3-953f-8ec8-8248-fa49f79276a1",
     "words": [
       "renegotiable"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "renegotiable: a schema.org component word, fused from renegotiableLoan",
-    "uuid": "c6cc485b-fac4-83fd-b8dc-8956fb9d0de7",
+    "source": "Use when reasoning about renegotiable as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "a6824765-903a-8866-8059-89cfee1eb236",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "renegotiable",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "renegotiableloan"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "renegotiable: a schema.org component word, fused from renegotiableLoan"
+      "en": "Use when reasoning about renegotiable as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "downloads",
-    "uuid": "95117ec0-7c07-80bd-8d2e-c0c4d1a56fb3",
+    "uuid": "1a932005-ce68-8e52-9f77-09af8b2fec38",
     "words": [
       "downloads"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "downloads: a schema.org component word, fused from UserDownloads",
-    "uuid": "cd756033-28f2-8c62-bbb3-9f33671a5f77",
+    "source": "Use when reasoning about downloads as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "9127f4fa-f905-896b-953a-445ed7626426",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "downloads",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "userdownloads"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "downloads: a schema.org component word, fused from UserDownloads"
+      "en": "Use when reasoning about downloads as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "checking",
-    "uuid": "3b208643-964c-8394-9cb2-a09027bdb36c",
+    "uuid": "db9919cb-d3e5-8609-bc36-fc8de3474420",
     "words": [
       "checking"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "checking: a schema.org component word, fused from verificationFactCheckingPolicy",
-    "uuid": "f98bf5e4-d5b7-88f3-a595-cac3c2ba51d3",
+    "source": "Use when reasoning about checking as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "577df4a5-192d-8813-886b-bd4139c5b98d",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "checking",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "verificationfactcheckingpolicy"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "checking: a schema.org component word, fused from verificationFactCheckingPolicy"
+      "en": "Use when reasoning about checking as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

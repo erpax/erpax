@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "performing",
-    "uuid": "82d013b1-6688-8e50-854f-c04fa4a9faab",
+    "uuid": "ed064305-85ea-888e-85e0-93cb9d6721b1",
     "words": [
       "performing"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "performing: a schema.org component word, fused from PerformingArtsEvent, PerformingArtsTheater, PerformingGroup",
-    "uuid": "0140c401-54a0-8aa5-b696-2e56a89a32ad",
+    "source": "Use when reasoning about performing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "e4a0a161-8e3d-8538-a8f3-a844f1f00f3b",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "performing",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "performingartsevent",
-      "performingartstheater",
-      "performinggroup"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "performing: a schema.org component word, fused from PerformingArtsEvent, PerformingArtsTheater, PerformingGroup"
+      "en": "Use when reasoning about performing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

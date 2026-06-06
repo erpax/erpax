@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when identifying or tracking the limiting factor in a flow — the slowest operation in a sequence, the resource with lowest capacity. The theory-of-constraints node.",
-    "uuid": "b9327548-9d5b-8cef-a54a-d4f0cdcc5569",
+    "uuid": "f003e9bc-556b-8564-84a5-1d80cc0773ca",
     "words": [
       "use",
       "when",

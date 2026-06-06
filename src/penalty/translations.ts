@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "penalty",
-    "uuid": "b9125cc1-c63b-86bf-8950-5854802ea9c0",
+    "uuid": "37649311-1996-8fb1-ba13-5ef30e3e2661",
     "words": [
       "penalty"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "penalty: a schema.org component word, fused from earlyPrepaymentPenalty",
-    "uuid": "39369698-9ecb-8206-884e-5ae1ef48ac0b",
+    "source": "Use when reasoning about penalty as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "23ac74a6-2081-841f-beb7-0f4cc83dc5ce",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "penalty",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "earlyprepaymentpenalty"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "penalty: a schema.org component word, fused from earlyPrepaymentPenalty"
+      "en": "Use when reasoning about penalty as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

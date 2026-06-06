@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "agriculture",
-    "uuid": "b09139ef-492f-82b3-890e-dd9a4b2f484f",
+    "uuid": "d65965f6-9220-88d9-949e-9cb968223e53",
     "words": [
       "agriculture"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about growing living produce to a market — agriculture is the domain molecule whose production is planned BACKWARD: from a sales plan (CSA shares + market channels) through per-crop demand to the land, seed, and fertility the season requires. The agricultural twin of manufacturing; every quantity carries a unit and a currency that convert automatically and account by double-entry.",
-    "uuid": "4f488b2a-689b-84cd-b31c-140a4745ca0a",
+    "uuid": "75fbf117-cff6-8d18-986a-f5e5475eda16",
     "words": [
       "use",
       "when",

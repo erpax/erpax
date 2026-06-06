@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "allowed",
-    "uuid": "11419f34-b909-815d-bca8-ad466b24955f",
+    "uuid": "3a0f058f-b058-8dbd-9e3a-037d3a026bd7",
     "words": [
       "allowed"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "allowed: a schema.org component word, fused from petsAllowed, regionsAllowed, smokingAllowed",
-    "uuid": "3ff4f0ad-3dee-8dd5-b8d3-32b9d87bec81",
+    "source": "Use when reasoning about allowed as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "aed64540-7028-8fd1-afa8-54a8cccd8973",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "allowed",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "petsallowed",
-      "regionsallowed",
-      "smokingallowed"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "allowed: a schema.org component word, fused from petsAllowed, regionsAllowed, smokingAllowed"
+      "en": "Use when reasoning about allowed as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

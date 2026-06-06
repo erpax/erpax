@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "significant",
-    "uuid": "348432e5-8463-8e07-9c4b-0da4a56a6ae7",
+    "uuid": "1a787c15-e60d-86c2-853d-3ff381b0fd3d",
     "words": [
       "significant"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "significant: a schema.org component word, fused from significantLink, significantLinks",
-    "uuid": "00389a3b-92b1-856d-b9f4-004e0fdea941",
+    "source": "Use when reasoning about significant as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "83da7220-72b5-870b-9dbc-5a420982a535",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "significant",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "significantlink",
-      "significantlinks"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "significant: a schema.org component word, fused from significantLink, significantLinks"
+      "en": "Use when reasoning about significant as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "instantaneous",
-    "uuid": "1acc6c65-ec4e-84f0-b11e-728cd614f7fe",
+    "uuid": "6d912f2b-6bb0-8312-b260-59f701ac2de3",
     "words": [
       "instantaneous"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "instantaneous: a schema.org component word, fused from InstantaneousEvent",
-    "uuid": "255250b0-a91c-816b-ba52-e0d935f57aa1",
+    "source": "Use when reasoning about instantaneous as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "56781eda-4c73-8859-bdb7-37ea689b80ca",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "instantaneous",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "instantaneousevent"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "instantaneous: a schema.org component word, fused from InstantaneousEvent"
+      "en": "Use when reasoning about instantaneous as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "throughput",
-    "uuid": "92882c14-5dac-86bf-90bf-f196c2173453",
+    "uuid": "461eae4d-dc01-8e26-8db6-f875ae6dd8ea",
     "words": [
       "throughput"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when measuring the quantity-per-unit-time flowing through a process — items per hour, transactions per second, units completed per shift. The rate of productive output.",
-    "uuid": "0f72ffe5-25ab-80db-b5ed-e5f9a929b937",
+    "uuid": "ed9ef91a-cb90-8545-b2b5-6ae6bb118768",
     "words": [
       "use",
       "when",

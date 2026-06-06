@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "de",
-    "uuid": "716a188a-ff50-8b5f-aaa1-466f633f130c",
+    "uuid": "225d04ca-ef7e-8685-bdb3-02737a2d38ee",
     "words": [
       "de"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "de: a schema.org component word, fused from DENonprofitType",
-    "uuid": "75d4b2a3-a4e4-8e11-a6fe-c73a4204cef8",
+    "source": "Use when reasoning about de as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "0af2859e-74ff-8158-b47c-f92c98a86a79",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "de",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "denonprofittype"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "de: a schema.org component word, fused from DENonprofitType"
+      "en": "Use when reasoning about de as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

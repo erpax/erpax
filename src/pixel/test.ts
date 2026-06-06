@@ -1,14 +1,14 @@
 import { describe, it, expect } from 'vitest'
 import { pixel, samePixel } from '@/pixel'
-import { digitalRoot } from '@/digit'
+import { digitalRootOfUuid } from '@/digit'
 import { colorOf } from '@/color'
 
 describe('pixel — the atom rendered (uuid → colour)', () => {
   it('a pixel is the uuid rendered: its digit and the colour that digit shows', () => {
     const u = '12345678-1234-8123-8123-123456789abc'
     const p = pixel(u)
-    expect(p.digit).toBe(digitalRoot(u))
-    expect(p.color).toBe(colorOf(digitalRoot(u)))
+    expect(p.digit).toBe(digitalRootOfUuid(u))
+    expect(p.color).toBe(colorOf(digitalRootOfUuid(u)))
     expect(typeof p.color).toBe('string')
     expect(p.color.length).toBeGreaterThan(0)
   })

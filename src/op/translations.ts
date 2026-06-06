@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "op",
-    "uuid": "aab85edc-94d6-83e6-ab4b-9a15807e8342",
+    "uuid": "c17a82bb-b12a-8d0a-887c-e93cfee768a7",
     "words": [
       "op"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "op: a schema.org component word, fused from postOp, preOp",
-    "uuid": "9496d100-4d99-83a5-ae6e-f96b41904865",
+    "source": "Use when reasoning about op as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "aee1c81a-7731-8d4a-a993-684ab8832707",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "op",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "postop",
-      "preop"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "op: a schema.org component word, fused from postOp, preOp"
+      "en": "Use when reasoning about op as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

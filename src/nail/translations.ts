@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "nail",
-    "uuid": "48cbcfbe-3a40-8365-93e1-272682c7ff62",
+    "uuid": "5cf97c83-ca53-8d2d-bb61-4fa0b4a16846",
     "words": [
       "nail"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "nail: a schema.org component word, fused from NailSalon",
-    "uuid": "004bfb3d-a998-82c1-b762-0a411e637695",
+    "source": "Use when reasoning about nail as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "8b434dc7-5246-894e-a492-82cffd57a359",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "nail",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "nailsalon"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "nail: a schema.org component word, fused from NailSalon"
+      "en": "Use when reasoning about nail as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

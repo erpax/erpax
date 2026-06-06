@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "destination",
-    "uuid": "c4e5c146-1c56-83c9-b103-74208ed7fa9f",
+    "uuid": "7c214c30-acf8-8970-b236-ba3962ead456",
     "words": [
       "destination"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "destination: a schema.org component word, fused from TouristDestination, shippingDestination",
-    "uuid": "2c645af3-5654-87fe-981e-e50674c9123f",
+    "source": "Use when reasoning about destination as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "e709f094-78b2-8e82-b434-0eec50cca194",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "destination",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "touristdestination",
-      "shippingdestination"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "destination: a schema.org component word, fused from TouristDestination, shippingDestination"
+      "en": "Use when reasoning about destination as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

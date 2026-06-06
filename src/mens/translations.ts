@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "mens",
-    "uuid": "b4bbc58b-904d-822c-8448-7c674b6a2854",
+    "uuid": "789fa2ff-48da-8c7b-8aca-22dd08398ffd",
     "words": [
       "mens"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "mens: a schema.org component word, fused from MensClothingStore",
-    "uuid": "4413fb34-f394-860c-b9a2-5c3eb1e38ba4",
+    "source": "Use when reasoning about mens as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "fbd0d8ef-2a7c-8e4c-9d4e-b2edc4d7d106",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "mens",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "mensclothingstore"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "mens: a schema.org component word, fused from MensClothingStore"
+      "en": "Use when reasoning about mens as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

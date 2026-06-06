@@ -15,9 +15,9 @@
  * @see ../merge -- ../collapse -- ../matrix -- ../rodin -- ../mala -- ./SKILL.md
  */
 import { UUID_MATRIX_NODES as N } from '@/uuid/matrix'
-
-/** The digital-root fold (the rodin reduction): collapse a count to its single digit 1..9 (0 → 0). */
-export const digitalRootFold = (n: number): number => (n === 0 ? 0 : 1 + ((Math.abs(n) - 1) % 9))
+// The digital-root fold (the rodin reduction, count → single digit 1..9) is the
+// canonical integer `digitalRoot` from @/horo — one implementation, not a copy.
+import { digitalRoot } from '@/horo'
 
 /** Fold DEPTH — folds to collapse n leaves to one root (the binary Merkle fold): ceil(log2 n). */
 export const foldDepth = (n: number): number => (n <= 1 ? 0 : Math.ceil(Math.log2(n)))
@@ -39,12 +39,12 @@ export function halving(n: number): number[] {
 /** The live corpus fold: every atom collapses to one root in `depth` folds by `merges` merges. */
 export function corpusFold(): { atoms: number; depth: number; merges: number; rootDigit: number } {
   const n = N.length
-  return { atoms: n, depth: foldDepth(n), merges: foldCount(n), rootDigit: digitalRootFold(n) }
+  return { atoms: n, depth: foldDepth(n), merges: foldCount(n), rootDigit: digitalRoot(n) }
 }
 
 if (import.meta.url === 'file://' + process.argv[1]) {
   const f = corpusFold()
   console.log('fold — the math of the folding (' + f.atoms + ' atoms → one root):')
   console.log('  depth ' + f.depth + ' folds · ' + f.merges + ' merges · halving ' + halving(f.atoms).join('→'))
-  console.log('  digital-root fold: dr(atoms)=' + digitalRootFold(f.atoms) + ' dr(merges)=' + digitalRootFold(f.merges) + ' dr(108)=' + digitalRootFold(108))
+  console.log('  digital-root fold: dr(atoms)=' + digitalRoot(f.atoms) + ' dr(merges)=' + digitalRoot(f.merges) + ' dr(108)=' + digitalRoot(108))
 }

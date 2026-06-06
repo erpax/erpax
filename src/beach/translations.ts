@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "beach",
-    "uuid": "5d6ced22-4d98-80c9-89bb-8955f431fbef",
+    "uuid": "9367614f-4c85-80d7-b4fd-aa15b206638e",
     "words": [
       "beach"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Beach.",
-    "uuid": "5d6ced22-4d98-80c9-89bb-8955f431fbef",
+    "uuid": "9367614f-4c85-80d7-b4fd-aa15b206638e",
     "words": [
       "beach"
     ],

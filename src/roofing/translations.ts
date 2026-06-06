@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "roofing",
-    "uuid": "a6b3fe01-da31-8d89-905d-f034f180ed60",
+    "uuid": "f5f8d3dc-f56c-8c15-af76-2339b7921515",
     "words": [
       "roofing"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "roofing: a schema.org component word, fused from RoofingContractor",
-    "uuid": "6768d77d-e4a9-8b7b-a85b-258261183932",
+    "source": "Use when reasoning about roofing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "5d4c64d7-b372-89f9-8676-aa7fdfecf069",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "roofing",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "roofingcontractor"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "roofing: a schema.org component word, fused from RoofingContractor"
+      "en": "Use when reasoning about roofing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

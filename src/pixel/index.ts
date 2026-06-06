@@ -14,7 +14,7 @@
  * @audit colour computed from the uuid's digit, never painted on
  * @see ../digit -- ../color -- ../aura -- ../component -- ../vitepress -- ./SKILL.md
  */
-import { digitalRoot } from '@/digit'
+import { digitalRootOfUuid } from '@/digit'
 import { colorOf } from '@/color'
 
 /** A pixel — a content-uuid rendered: its digit (position on the ring) and the colour that digit shows. */
@@ -25,7 +25,7 @@ export interface Pixel {
 
 /** Render a content-uuid to its pixel — the atom's visible face, computed from the uuid alone. */
 export function pixel(uuid: string): Pixel {
-  const digit = digitalRoot(uuid)
+  const digit = digitalRootOfUuid(uuid)
   return { digit, color: colorOf(digit) }
 }
 

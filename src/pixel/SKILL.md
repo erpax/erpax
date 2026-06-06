@@ -22,5 +22,5 @@ Matter-twin: `src/pixel/index.ts` (`pixel` · `samePixel` · `Pixel`). Composes 
 
 **Law — [[law]]: the atom and the pixel are one identity at two scales — the content-uuid and its rendered colour. Everything shown is pixels, every pixel an atom's uuid-colour, computed never assigned. To render is to read the identity, not to paint over it.**
 
-@audit colour computed from the uuid's digit (digitalRoot → colorOf), never hand-assigned
+@audit colour computed from the uuid's digit (digitalRootOfUuid → colorOf), never hand-assigned
 @standard the analog aura — colour/sound/vibration as projections of one content-uuid

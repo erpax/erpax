@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "rank",
-    "uuid": "d9747f71-3055-8350-bb15-f14f84a131d5",
+    "uuid": "34ba1952-84d1-8e60-bdc0-a7e56aeaf72c",
     "words": [
       "rank"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "rank: a schema.org component word, fused from taxonRank",
-    "uuid": "370c5b0a-bf0d-8f0c-81bb-c3812827590a",
+    "source": "Use when reasoning about rank as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "951e6d2a-8b97-8a63-a1d5-af99c5050930",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "rank",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "taxonrank"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "rank: a schema.org component word, fused from taxonRank"
+      "en": "Use when reasoning about rank as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

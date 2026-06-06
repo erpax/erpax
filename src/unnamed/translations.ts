@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "unnamed",
-    "uuid": "7280d529-cb00-8c0f-9f63-7d9d3f84f181",
+    "uuid": "fd9b5010-66d0-813d-9c93-03c40efd9368",
     "words": [
       "unnamed"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "unnamed: a schema.org component word, fused from unnamedSourcesPolicy",
-    "uuid": "1d7c4019-5481-8a65-b947-e7872d79fd35",
+    "source": "Use when reasoning about unnamed as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "27b1fc1c-55a4-85b1-8150-c8c43fb9b5b8",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "unnamed",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "unnamedsourcespolicy"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "unnamed: a schema.org component word, fused from unnamedSourcesPolicy"
+      "en": "Use when reasoning about unnamed as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when building or browsing hierarchical content or product taxonomies — title, URL slug (per-tenant unique), parent relationship, breadcrumb trail — for posts, catalogue products, or any schema.org DefinedTerm classification. The tenant-scoped category taxonomy node.",
-    "uuid": "6f3b93b1-9217-83ed-9a78-53c16e266155",
+    "uuid": "337bd3c7-9b78-89b4-ac0d-5053eb86b892",
     "words": [
       "use",
       "when",

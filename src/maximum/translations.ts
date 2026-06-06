@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "maximum",
-    "uuid": "134c8829-73ba-88a5-81f7-75360cdcaffe",
+    "uuid": "a4ca3f2d-f7a3-8a61-8e84-d7dd9913e488",
     "words": [
       "maximum"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "maximum: a schema.org component word, fused from MaximumDoseSchedule, maximumAttendeeCapacity, maximumEnrollment, maximumIntake, maximumPhysicalAttendeeCapacity, maximumVirtualAttendeeCapacity",
-    "uuid": "79ae11a8-fed1-87ab-b59d-5fc37d8ac40a",
+    "source": "Use when reasoning about maximum as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "274c928b-54bc-8e38-9e76-4347ce9e7cf4",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "maximum",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "maximumdoseschedule",
-      "maximumattendeecapacity",
-      "maximumenrollment",
-      "maximumintake",
-      "maximumphysicalattendeecapacity",
-      "maximumvirtualattendeecapacity"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "maximum: a schema.org component word, fused from MaximumDoseSchedule, maximumAttendeeCapacity, maximumEnrollment, maximumIntake, maximumPhysicalAttendeeCapacity, maximumVirtualAttendeeCapacity"
+      "en": "Use when reasoning about maximum as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

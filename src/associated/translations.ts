@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "associated",
-    "uuid": "b42f5b60-1cae-8035-92fb-af6c2d3f7b0c",
+    "uuid": "3fbf4c2a-f67e-8c00-afb6-4e553cb5e5a2",
     "words": [
       "associated"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "associated: a schema.org component word, fused from associatedAnatomy, associatedArticle, associatedClaimReview, associatedDisease, associatedMedia, associatedMediaReview",
-    "uuid": "aae64e60-ca33-83de-bcc1-5b87de18b0d7",
+    "source": "Use when reasoning about associated as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "3424e884-2a26-8676-b289-d1f0fc74d737",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "associated",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "associatedanatomy",
-      "associatedarticle",
-      "associatedclaimreview",
-      "associateddisease",
-      "associatedmedia",
-      "associatedmediareview"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "associated: a schema.org component word, fused from associatedAnatomy, associatedArticle, associatedClaimReview, associatedDisease, associatedMedia, associatedMediaReview"
+      "en": "Use when reasoning about associated as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

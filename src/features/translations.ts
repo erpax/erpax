@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "features",
-    "uuid": "4d4b3b93-1d0b-8c94-b9bf-a8c0ad5459a2",
+    "uuid": "8270fa19-6883-8a89-b6d6-7feeb1d48b15",
     "words": [
       "features"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "features: a schema.org component word, fused from dietFeatures",
-    "uuid": "a828a5d8-0951-8fa2-8246-ab01916d3395",
+    "source": "Use when reasoning about features as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "77887784-0cc4-8859-b0b1-cdb338f335f9",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "features",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "dietfeatures"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "features: a schema.org component word, fused from dietFeatures"
+      "en": "Use when reasoning about features as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

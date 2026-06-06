@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "furniture",
-    "uuid": "95883d06-d1ee-8e80-88fa-2ffbad9e1a86",
+    "uuid": "ccb80e62-c1af-81de-a7d3-abbc451220b1",
     "words": [
       "furniture"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "furniture: a schema.org component word, fused from FurnitureStore",
-    "uuid": "24f0c4fa-652c-8df7-b3cd-023bebe3eab6",
+    "source": "Use when reasoning about furniture as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "c081eaaf-559b-8a23-88e4-6b2d811aa7a0",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "furniture",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "furniturestore"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "furniture: a schema.org component word, fused from FurnitureStore"
+      "en": "Use when reasoning about furniture as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

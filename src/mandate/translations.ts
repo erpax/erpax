@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "mandate",
-    "uuid": "30ef825c-78e8-864f-8a02-f0dd7e473069",
+    "uuid": "99064461-7a54-8025-b99f-7e3aafda0ce1",
     "words": [
       "mandate"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "mandate: a schema.org component word, fused from loanMortgageMandateAmount",
-    "uuid": "521a9768-ad65-81df-86e0-d84cf813d368",
+    "source": "Use when reasoning about mandate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "b12e5b75-01b8-80bf-b47d-6d959c7e43be",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "mandate",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "loanmortgagemandateamount"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "mandate: a schema.org component word, fused from loanMortgageMandateAmount"
+      "en": "Use when reasoning about mandate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

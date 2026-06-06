@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "tv",
-    "uuid": "c38ffa15-367f-8c82-9d2b-f1046c8e41a4",
+    "uuid": "a5989c63-1488-8735-bb2a-469cabba79a8",
     "words": [
       "tv"
     ],
@@ -17,25 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "tv: a schema.org component word, fused from TVClip, TVEpisode, TVSeason, TVSeries, partOfTVSeries",
-    "uuid": "29347b6e-05f0-84f8-9db5-bd3a520f1f88",
+    "source": "Use when reasoning about tv as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "e8c292c9-daad-806d-b7c2-4de0132ff6a3",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "tv",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "tvclip",
-      "tvepisode",
-      "tvseason",
-      "tvseries",
-      "partoftvseries"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "tv: a schema.org component word, fused from TVClip, TVEpisode, TVSeason, TVSeries, partOfTVSeries"
+      "en": "Use when reasoning about tv as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

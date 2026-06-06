@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "government",
-    "uuid": "a4222caa-40df-83d8-aba1-aa99246fe1ca",
+    "uuid": "82ee9cc2-2ba4-8e49-b950-f3ae1e0aaac4",
     "words": [
       "government"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "government: a schema.org component word, fused from GovernmentBenefitsType, GovernmentBuilding, GovernmentOffice, GovernmentOrganization, GovernmentPermit, GovernmentService",
-    "uuid": "2b6c1b2e-1905-81ed-b261-d2962f2516e7",
+    "source": "Use when reasoning about government as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "b6a76471-5675-8adf-8330-1dd625615948",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "government",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "governmentbenefitstype",
-      "governmentbuilding",
-      "governmentoffice",
-      "governmentorganization",
-      "governmentpermit",
-      "governmentservice"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "government: a schema.org component word, fused from GovernmentBenefitsType, GovernmentBuilding, GovernmentOffice, GovernmentOrganization, GovernmentPermit, GovernmentService"
+      "en": "Use when reasoning about government as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

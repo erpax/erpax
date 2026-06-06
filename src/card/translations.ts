@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "card",
-    "uuid": "5ea47e9c-e9c9-8130-beba-acbe0eed76ac",
+    "uuid": "ef9bb310-1a1c-8891-bb10-320a87c0520a",
     "words": [
       "card"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "card: a schema.org component word, fused from CreditCard, PaymentCard",
-    "uuid": "d2cf4446-1deb-850d-9ce9-171c6c854ad2",
+    "source": "Use when reasoning about card as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "a37cd5a9-83a1-8f63-88ef-5f8bcc7ded6b",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "card",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "creditcard",
-      "paymentcard"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "card: a schema.org component word, fused from CreditCard, PaymentCard"
+      "en": "Use when reasoning about card as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

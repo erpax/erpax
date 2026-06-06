@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "frame",
-    "uuid": "718c0e00-86c4-84e6-8be9-7530ce3b38d8",
+    "uuid": "d2b412da-9b2b-8275-8331-1ce776a2561c",
     "words": [
       "frame"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "frame: a schema.org component word, fused from videoFrameSize",
-    "uuid": "029f1985-c793-80bb-82a3-e0dbf0842ad8",
+    "source": "Use when reasoning about frame as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "c58f0a92-7774-8ee6-bc94-d72ea8e92506",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "frame",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "videoframesize"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "frame: a schema.org component word, fused from videoFrameSize"
+      "en": "Use when reasoning about frame as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

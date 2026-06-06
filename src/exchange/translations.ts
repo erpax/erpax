@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "exchange",
-    "uuid": "49448b96-f270-8c88-96ff-04e6aa4a9043",
+    "uuid": "d46c03f7-124f-8fb6-8180-c9b87a9d117d",
     "words": [
       "exchange"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use for a governed cross-domain data exchange — party A requests data from party B (different domains, each its own content-addressed identity); the holder's grant gates the capability, the fields are SANITIZED to the releasable set, and the exchange is RECEIPTED, so A receives the data AND a provenance chain proving what was accessed, by whom, under what authority. Encodes cross-domain trust with no shared infrastructure: each party content-addresses and receipts; the provenance merges.",
-    "uuid": "3d387fd0-c1d4-8978-ab08-c7ceb74e053c",
+    "uuid": "bee47de9-8ec2-8491-b644-44a55837ea54",
     "words": [
       "use",
       "for",

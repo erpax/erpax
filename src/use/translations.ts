@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "use",
-    "uuid": "7e55383d-0b80-8808-82d0-b428f2b95860",
+    "uuid": "8586a40a-62d1-86e7-8ba8-71bdb84ba054",
     "words": [
       "use"
     ],
@@ -17,24 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "use: a schema.org component word, fused from UseAction, cvdNumVentUse, educationalUse, potentialUse",
-    "uuid": "68c7a5bc-665e-8fca-946a-a48189e5ca00",
+    "source": "Use when reasoning about use as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "b9d79290-c19c-8c86-8676-819fa82d8c08",
     "words": [
       "use",
+      "when",
+      "reasoning",
+      "about",
+      "use",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "useaction",
-      "cvdnumventuse",
-      "educationaluse",
-      "potentialuse"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "use: a schema.org component word, fused from UseAction, cvdNumVentUse, educationalUse, potentialUse"
+      "en": "Use when reasoning about use as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

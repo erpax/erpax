@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "processor",
-    "uuid": "be093d48-6cfa-80df-9858-dab221334a3d",
+    "uuid": "988a85de-f044-8449-98ee-0a2c50f09794",
     "words": [
       "processor"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "processor: a schema.org component word, fused from processorRequirements",
-    "uuid": "42ff031f-b528-8ecf-80d7-c5b4bb4e7d2c",
+    "source": "Use when reasoning about processor as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "e0ef1de2-7244-808b-8f59-956a4e31fa8a",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "processor",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "processorrequirements"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "processor: a schema.org component word, fused from processorRequirements"
+      "en": "Use when reasoning about processor as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

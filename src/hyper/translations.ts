@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "hyper",
-    "uuid": "d9a38da9-8328-8105-a1b5-b6da69243a81",
+    "uuid": "b14c5b55-cb73-8cf5-b3e5-97fa4f9fead7",
     "words": [
       "hyper"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "hyper: a schema.org component word, fused from HyperToc, HyperTocEntry",
-    "uuid": "8a4eb463-eb18-8d6c-90c3-b78a58f0aecd",
+    "source": "Use when reasoning about hyper as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "c4184bdd-a468-800d-b335-9d441a01b623",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "hyper",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "hypertoc",
-      "hypertocentry"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "hyper: a schema.org component word, fused from HyperToc, HyperTocEntry"
+      "en": "Use when reasoning about hyper as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

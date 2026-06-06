@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "parking",
-    "uuid": "2ab756eb-e74e-87d9-afa6-a60cfd5737ed",
+    "uuid": "f5451ab7-54ba-8ad9-9d02-5e683290fa32",
     "words": [
       "parking"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "parking: a schema.org component word, fused from ParkingFacility",
-    "uuid": "53ed0f30-36b8-866e-8061-3fcf245e7c4a",
+    "source": "Use when reasoning about parking as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "4f943d38-1db9-8c04-80ce-6bb159c39dd7",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "parking",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "parkingfacility"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "parking: a schema.org component word, fused from ParkingFacility"
+      "en": "Use when reasoning about parking as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

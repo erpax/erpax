@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "remorse",
-    "uuid": "32b68c55-1fa1-8f1f-be8f-d38e90a74c06",
+    "uuid": "37ebf746-20a1-812c-a974-1ca3a0feb84f",
     "words": [
       "remorse"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "remorse: a schema.org component word, fused from customerRemorseReturnFees, customerRemorseReturnLabelSource, customerRemorseReturnShippingFeesAmount",
-    "uuid": "50c83c1d-e126-838e-8743-9611c783fc3c",
+    "source": "Use when reasoning about remorse as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "a0148591-45e1-87ae-a7ff-2e75eb49e94f",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "remorse",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "customerremorsereturnfees",
-      "customerremorsereturnlabelsource",
-      "customerremorsereturnshippingfeesamount"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "remorse: a schema.org component word, fused from customerRemorseReturnFees, customerRemorseReturnLabelSource, customerRemorseReturnShippingFeesAmount"
+      "en": "Use when reasoning about remorse as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

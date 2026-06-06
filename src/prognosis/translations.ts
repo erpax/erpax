@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "prognosis",
-    "uuid": "27864dfe-d6ae-85c5-8376-0f8937d0b3f1",
+    "uuid": "95be6bf7-1a3e-895b-846a-7a8d3284df52",
     "words": [
       "prognosis"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "prognosis: a schema.org component word, fused from expectedPrognosis",
-    "uuid": "af60af9e-f4c3-8866-8432-edc3d798cdee",
+    "source": "Use when reasoning about prognosis as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "a0f36518-5b2e-8e49-a271-c5782947d0f0",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "prognosis",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "expectedprognosis"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "prognosis: a schema.org component word, fused from expectedPrognosis"
+      "en": "Use when reasoning about prognosis as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

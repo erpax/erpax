@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "bans",
-    "uuid": "d3436ce0-8f4c-8d58-9eaf-a86715a38fd2",
+    "uuid": "2d0d37b8-35ba-8539-8cc4-6fbf0e41afa1",
     "words": [
       "bans"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "bans: a schema.org component word, fused from travelBans",
-    "uuid": "2d99ecee-d09f-8abc-a72e-dea1fa56a76e",
+    "source": "Use when reasoning about bans as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "ff762cff-7dd7-8721-b745-fc04e61649f9",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "bans",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "travelbans"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "bans: a schema.org component word, fused from travelBans"
+      "en": "Use when reasoning about bans as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

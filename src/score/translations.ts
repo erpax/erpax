@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "score",
-    "uuid": "bdf5c962-ac75-8c85-8afa-2cde50fa7b31",
+    "uuid": "6de74571-44c2-8a94-b712-09735d9b18dc",
     "words": [
       "score"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "score: a schema.org component word, fused from MedicalRiskScore",
-    "uuid": "30b14d92-57d3-8e99-a020-89d401592f25",
+    "source": "Use when reasoning about score as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "f847873a-67df-85bc-8834-bec502a95998",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "score",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "medicalriskscore"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "score: a schema.org component word, fused from MedicalRiskScore"
+      "en": "Use when reasoning about score as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

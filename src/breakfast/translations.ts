@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "breakfast",
-    "uuid": "40ceb83e-4c9d-88ad-bed2-3703312c6e6c",
+    "uuid": "18638372-aa81-83d2-ab8f-ec4ff0636473",
     "words": [
       "breakfast"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "breakfast: a schema.org component word, fused from BedAndBreakfast",
-    "uuid": "45e1bf95-cfd4-87b3-b063-7b75748ee30a",
+    "source": "Use when reasoning about breakfast as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "63814702-9e76-8ae3-9c27-0429fbfdee7e",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "breakfast",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "bedandbreakfast"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "breakfast: a schema.org component word, fused from BedAndBreakfast"
+      "en": "Use when reasoning about breakfast as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

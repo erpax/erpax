@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "convenience",
-    "uuid": "b8671c5f-8234-8f73-ab71-dd1cd61d69e6",
+    "uuid": "3d3f3a4b-f647-86a8-b127-721d3b28e7e0",
     "words": [
       "convenience"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "convenience: a schema.org component word, fused from ConvenienceStore",
-    "uuid": "3cb60b6a-d73c-8b1b-bc6a-07764aa4f831",
+    "source": "Use when reasoning about convenience as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "57a0aa59-380c-815b-b81d-047d16d39243",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "convenience",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "conveniencestore"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "convenience: a schema.org component word, fused from ConvenienceStore"
+      "en": "Use when reasoning about convenience as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "individual",
-    "uuid": "3bbec902-e7bd-8a93-a03b-4594e9b1a762",
+    "uuid": "651a358f-99ab-8196-b5a1-e7188a16cb8e",
     "words": [
       "individual"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "individual: a schema.org component word, fused from IndividualPhysician, IndividualProduct",
-    "uuid": "e8c48120-5a88-87a8-9b62-9884c7194b91",
+    "source": "Use when reasoning about individual as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "fdd1f947-a49d-8459-a04f-1e40e41ef950",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "individual",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "individualphysician",
-      "individualproduct"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "individual: a schema.org component word, fused from IndividualPhysician, IndividualProduct"
+      "en": "Use when reasoning about individual as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

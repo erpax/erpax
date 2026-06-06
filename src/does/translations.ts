@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "does",
-    "uuid": "0abbc220-980a-8dc9-b4de-f306e897962a",
+    "uuid": "b9e8be7d-3508-8a4a-8699-a85b5980d08d",
     "words": [
       "does"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "does: a schema.org component word, fused from doesNotShip",
-    "uuid": "2182e7b0-e0cc-820b-8450-f6c06dabd1be",
+    "source": "Use when reasoning about does as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "30781818-bdc9-849f-865b-0fce20bbae9c",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "does",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "doesnotship"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "does: a schema.org component word, fused from doesNotShip"
+      "en": "Use when reasoning about does as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

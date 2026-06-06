@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "monetary",
-    "uuid": "ce8b5d10-f0da-8840-bbcb-454c513f6f38",
+    "uuid": "79830e1a-dd1d-803f-8367-f3158f08c499",
     "words": [
       "monetary"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "monetary: a schema.org component word, fused from MonetaryAmount, MonetaryAmountDistribution, MonetaryGrant",
-    "uuid": "f3084b39-2329-8fb8-883d-b2692bcf0ef2",
+    "source": "Use when reasoning about monetary as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "1fd3aa2c-7b03-8139-a56d-a5ebb7f9180d",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "monetary",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "monetaryamount",
-      "monetaryamountdistribution",
-      "monetarygrant"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "monetary: a schema.org component word, fused from MonetaryAmount, MonetaryAmountDistribution, MonetaryGrant"
+      "en": "Use when reasoning about monetary as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

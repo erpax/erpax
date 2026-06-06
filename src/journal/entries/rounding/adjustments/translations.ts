@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "rounding-adjustments",
-    "uuid": "cad12120-b505-87ac-87e6-9df1e4903aff",
+    "uuid": "b242b141-a0ad-8e08-baf5-3915c933ad1c",
     "words": [
       "rounding",
       "adjustments"
@@ -19,7 +19,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when recording the small ±0.01 plug entries that reconcile integer-cents ledger totals to presentation-rounded statements — IAS-1 §51(e) rounding plugs and IAS-21 §39 FX-translation fragments by type (presentation, FX, tax, cash-settlement). The rounding-adjustments GL sub-collection.",
-    "uuid": "d1f94c7e-6968-896a-a4b2-9a24d79a60e5",
+    "uuid": "ddd052de-85b7-8cd4-b624-242b3fb53152",
     "words": [
       "use",
       "when",

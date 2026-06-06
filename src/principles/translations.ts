@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "principles",
-    "uuid": "17114bd8-a6fe-8e5c-b22a-cacfb144b005",
+    "uuid": "6eb2ed72-4e79-8095-a4ac-ae2082748253",
     "words": [
       "principles"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "principles: a schema.org component word, fused from publishingPrinciples",
-    "uuid": "07736bb9-33c6-8723-9514-655cc24ad4ae",
+    "source": "Use when reasoning about principles as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "0469d2cd-d210-8ba3-bbfa-0a7b2abdcba7",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "principles",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "publishingprinciples"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "principles: a schema.org component word, fused from publishingPrinciples"
+      "en": "Use when reasoning about principles as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

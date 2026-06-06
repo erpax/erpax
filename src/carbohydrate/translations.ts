@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "carbohydrate",
-    "uuid": "2a981524-1026-83bf-ab83-0f5858ebf348",
+    "uuid": "639a20eb-afe1-88f3-9759-4582678d9edc",
     "words": [
       "carbohydrate"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "carbohydrate: a schema.org component word, fused from carbohydrateContent",
-    "uuid": "ee3498b8-b4fd-8a23-97c4-973db4faf507",
+    "source": "Use when reasoning about carbohydrate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "aa6966da-d907-87b0-a33f-3fba7632b8b1",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "carbohydrate",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "carbohydratecontent"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "carbohydrate: a schema.org component word, fused from carbohydrateContent"
+      "en": "Use when reasoning about carbohydrate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

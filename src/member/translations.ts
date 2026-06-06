@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "member",
-    "uuid": "b4fef1f1-a0c7-807a-a370-7a58a9024339",
+    "uuid": "880dcb05-b1ba-86cb-bd88-c69f43a6b13e",
     "words": [
       "member"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "A member of an Organization or a ProgramMembership. Organizations can be members of organizations; ProgramMembership is typically for individuals.",
-    "uuid": "77aa585f-b0cb-83d3-a324-fe73d3f5381e",
+    "uuid": "a89aa121-4351-86fd-ae51-33b97dbbb3e2",
     "words": [
       "a",
       "member",

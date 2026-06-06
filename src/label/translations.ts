@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "label",
-    "uuid": "f33bcd7c-5b64-89c7-9a38-d8a9c7b566ba",
+    "uuid": "d382ecc0-87f7-823a-bc18-c41f6e29d772",
     "words": [
       "label"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "label: a schema.org component word, fused from ReturnLabelSourceEnumeration, customerRemorseReturnLabelSource, itemDefectReturnLabelSource, labelDetails, recordLabel, returnLabelSource",
-    "uuid": "ffe4e998-82ed-83d6-ad43-5e18caf9d3cc",
+    "source": "Use when reasoning about label as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "82e8f9c0-ea44-885d-9ae1-ab96a6601458",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "label",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "returnlabelsourceenumeration",
-      "customerremorsereturnlabelsource",
-      "itemdefectreturnlabelsource",
-      "labeldetails",
-      "recordlabel",
-      "returnlabelsource"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "label: a schema.org component word, fused from ReturnLabelSourceEnumeration, customerRemorseReturnLabelSource, itemDefectReturnLabelSource, labelDetails, recordLabel, returnLabelSource"
+      "en": "Use when reasoning about label as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

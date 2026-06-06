@@ -105,6 +105,15 @@ const eslintConfig = defineConfig([
     'next-env.d.ts',
     'src/payload-types.ts',
     'src/payload-generated-schema.ts',
+    // Generated corpus caches — derived from the tree, never hand-authored (same class as the
+    // payload-types/schema above). Vitepress computes from src directly; these feed the
+    // seed/router/analytics at build time. Lint rules don't apply to generated output, and the
+    // 70MB skill-index OOMs eslint. (Removing them entirely is a rewire-refactor, tracked separately.)
+    'src/skill/router/skills.index.ts',
+    'src/translations/catalogue.ts',
+    'src/standards/catalogue.ts',
+    '**/*.generated.ts',
+    '**/translations.ts',
     // Playwright + auto-generated test artefacts — minified third-party bundles
     // shipped inside trace viewers. Never hand-authored; lint rules don't apply.
     'tests/evidence/_report/**',

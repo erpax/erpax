@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "install",
-    "uuid": "db47d891-1522-8df2-ba4b-416a730ea9ff",
+    "uuid": "7b754096-8c40-86a7-984e-a48b1ab2aa01",
     "words": [
       "install"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "install: a schema.org component word, fused from InstallAction, installUrl",
-    "uuid": "86faa125-2da1-8e0d-9677-74964eec0439",
+    "source": "Use when reasoning about install as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "5caef5c8-07e5-8e09-a510-d2763f7cd761",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "install",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "installaction",
-      "installurl"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "install: a schema.org component word, fused from InstallAction, installUrl"
+      "en": "Use when reasoning about install as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

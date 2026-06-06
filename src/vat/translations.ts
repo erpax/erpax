@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "vat",
-    "uuid": "bee5efc3-030f-846c-b703-73d93470d86e",
+    "uuid": "0400246b-0499-82d4-abf8-57fc6220dea4",
     "words": [
       "vat"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "vat: a schema.org component word, fused from vatID",
-    "uuid": "1a5527f7-71f2-871e-9b40-eb517919e0d7",
+    "source": "Use when reasoning about vat as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "ea77cc68-25bc-818e-9f42-5640a339672a",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "vat",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "vatid"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "vat: a schema.org component word, fused from vatID"
+      "en": "Use when reasoning about vat as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

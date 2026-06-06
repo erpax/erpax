@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "taxonomic",
-    "uuid": "ba54dfa5-b381-8217-b080-35765ac24f3c",
+    "uuid": "0f978433-9e07-8b4f-a007-5de353b31a11",
     "words": [
       "taxonomic"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "taxonomic: a schema.org component word, fused from taxonomicRange",
-    "uuid": "d1779297-1763-85b1-822d-a84d406068a4",
+    "source": "Use when reasoning about taxonomic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "d2c9d3f1-40b4-8f42-88c7-cd4cc604555f",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "taxonomic",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "taxonomicrange"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "taxonomic: a schema.org component word, fused from taxonomicRange"
+      "en": "Use when reasoning about taxonomic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

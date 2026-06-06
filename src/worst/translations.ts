@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "worst",
-    "uuid": "8ddbc274-b5c0-8c29-9e99-4ef9e5eb40f9",
+    "uuid": "b8847e2c-fc22-817c-8e10-48cec75ad4b2",
     "words": [
       "worst"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "worst: a schema.org component word, fused from worstRating",
-    "uuid": "72f23618-f4a5-8f07-a819-cbe96e9c9d51",
+    "source": "Use when reasoning about worst as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "74bcd62c-4aea-83bf-9fa1-3775bc7255c0",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "worst",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "worstrating"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "worst: a schema.org component word, fused from worstRating"
+      "en": "Use when reasoning about worst as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

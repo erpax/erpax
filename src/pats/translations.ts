@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "pats",
-    "uuid": "c20237db-3cf6-822e-9625-f105d7f30ce0",
+    "uuid": "d1f40252-c4bd-8fc6-8f76-ecc1e198eb59",
     "words": [
       "pats"
     ],
@@ -17,25 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "pats: a schema.org component word, fused from cvdNumC19HOPats, cvdNumC19HospPats, cvdNumC19MechVentPats, cvdNumC19OFMechVentPats, cvdNumC19OverflowPats",
-    "uuid": "02707564-dbfc-8a95-89d3-94b3485ee820",
+    "source": "Use when reasoning about pats as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "2c72525d-295b-8be4-ad1c-49b60a3a49c7",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "pats",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "cvdnumc19hopats",
-      "cvdnumc19hosppats",
-      "cvdnumc19mechventpats",
-      "cvdnumc19ofmechventpats",
-      "cvdnumc19overflowpats"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "pats: a schema.org component word, fused from cvdNumC19HOPats, cvdNumC19HospPats, cvdNumC19MechVentPats, cvdNumC19OFMechVentPats, cvdNumC19OverflowPats"
+      "en": "Use when reasoning about pats as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

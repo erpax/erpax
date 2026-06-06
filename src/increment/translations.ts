@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "increment",
-    "uuid": "249a2c6d-b9ea-8261-a2f7-665de0d24462",
+    "uuid": "b6e06bea-1632-8983-a57e-9f8ddd4a1408",
     "words": [
       "increment"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "increment: a schema.org component word, fused from billingIncrement",
-    "uuid": "5cbe2968-4bf5-8958-99ee-c66bf4c38214",
+    "source": "Use when reasoning about increment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "f62bcd15-53c2-8df2-89ca-1797ea8d69b0",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "increment",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "billingincrement"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "increment: a schema.org component word, fused from billingIncrement"
+      "en": "Use when reasoning about increment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "fiscal-calendars",
-    "uuid": "66799003-8631-8775-b815-32d376900179",
+    "uuid": "e25abaec-4031-8d9e-be11-6febad43805a",
     "words": [
       "fiscal",
       "calendars"
@@ -19,7 +19,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when resolving a GL posting date to its fiscal year, period, quarter, week, or regulatory SAF-T code — pre-computed O(1) date-to-period lookup table bulk-generated from FiscalPeriods config per IAS-34 / ISO-8601 / SAF-T 3.0.2. The denormalized fiscal-calendar lookup collection.",
-    "uuid": "3d957d56-dd95-83fa-9b1b-f455141339ff",
+    "uuid": "e27dc1bd-c33b-8998-b97d-9b4c9223da70",
     "words": [
       "use",
       "when",

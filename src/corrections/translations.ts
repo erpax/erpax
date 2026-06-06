@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "corrections",
-    "uuid": "105e2b16-a108-862b-9b52-3e4c8324e5a5",
+    "uuid": "1e2a0981-2dea-8d8a-a322-568d9e99ddcd",
     "words": [
       "corrections"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "corrections: a schema.org component word, fused from correctionsPolicy",
-    "uuid": "1235655f-5359-8141-af81-255d743cc229",
+    "source": "Use when reasoning about corrections as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "bd69ae1c-23ea-8396-8eba-e5fb0b5af5df",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "corrections",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "correctionspolicy"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "corrections: a schema.org component word, fused from correctionsPolicy"
+      "en": "Use when reasoning about corrections as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

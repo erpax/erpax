@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "special",
-    "uuid": "bb23ef5b-b824-8689-9d0f-c686c6dc67db",
+    "uuid": "8b2d10f0-b2b4-88bc-8da2-39fd470c9ed3",
     "words": [
       "special"
     ],
@@ -17,24 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "special: a schema.org component word, fused from SpecialAnnouncement, specialCommitments, specialOpeningHoursSpecification, vehicleSpecialUsage",
-    "uuid": "7513f0e0-7c02-88ce-a5a1-7c28375912dd",
+    "source": "Use when reasoning about special as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "8681b29c-9940-8033-b914-02ac2657e98f",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "special",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "specialannouncement",
-      "specialcommitments",
-      "specialopeninghoursspecification",
-      "vehiclespecialusage"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "special: a schema.org component word, fused from SpecialAnnouncement, specialCommitments, specialOpeningHoursSpecification, vehicleSpecialUsage"
+      "en": "Use when reasoning about special as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

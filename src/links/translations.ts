@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "links",
-    "uuid": "73a71436-3768-8257-934a-17ea73d77520",
+    "uuid": "786990e6-a5b8-8d3f-aa16-de392dea9ca5",
     "words": [
       "links"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "links: a schema.org component word, fused from significantLinks",
-    "uuid": "b963e745-212b-8d92-99ef-2758980d452f",
+    "source": "Use when reasoning about links as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "0733cb61-8dde-8b95-9370-f8ca232fe608",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "links",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "significantlinks"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "links: a schema.org component word, fused from significantLinks"
+      "en": "Use when reasoning about links as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

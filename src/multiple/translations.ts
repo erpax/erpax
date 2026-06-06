@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "multiple",
-    "uuid": "768fadba-4dc0-8715-a5cb-a37c78d918de",
+    "uuid": "174076e3-095f-804b-8a3a-fe13a026e89f",
     "words": [
       "multiple"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "multiple: a schema.org component word, fused from multipleValues",
-    "uuid": "9d581be4-68b5-8929-8676-c02d795c5405",
+    "source": "Use when reasoning about multiple as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "40c4d39d-02bc-8282-9041-744498c5709c",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "multiple",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "multiplevalues"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "multiple: a schema.org component word, fused from multipleValues"
+      "en": "Use when reasoning about multiple as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -6,21 +6,21 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "internal-audit-function",
-    "uuid": "8f2c50a4-c26d-82b0-b3ed-85e8d1536ce4",
+    "source": "internal-audit-functions",
+    "uuid": "3e3c89c3-9766-8128-bb50-a0fae59b776f",
     "words": [
       "internal",
       "audit",
-      "function"
+      "functions"
     ],
     "values": {
-      "en": "internal-audit-function"
+      "en": "internal-audit-functions"
     }
   },
   {
     "key": "description",
     "source": "Use when establishing or governing an internal audit department — charter management, CAE reporting line, audit committee linkage, annual audit plan, resource budgeting, and IIA IPPF/COSO alignment per IIA IPPF / ISO-19011 / SOX §404. The internal-audit-function governance collection.",
-    "uuid": "4cee46a2-b55b-8242-96fb-db285fae06b3",
+    "uuid": "4b0e1022-7cc6-8845-a475-dd36f9134a22",
     "words": [
       "use",
       "when",

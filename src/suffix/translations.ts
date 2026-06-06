@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "suffix",
-    "uuid": "5a66761d-1431-89bc-b8ca-b0f42da91849",
+    "uuid": "5bbc796f-3b4b-859f-801b-cc5434cde198",
     "words": [
       "suffix"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "suffix: a schema.org component word, fused from honorificSuffix, subStageSuffix",
-    "uuid": "b24bafe3-5e00-8445-af5e-2882144c4ba3",
+    "source": "Use when reasoning about suffix as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "4a87aa0f-e8a1-811e-a191-4bb345a2b40d",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "suffix",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "honorificsuffix",
-      "substagesuffix"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "suffix: a schema.org component word, fused from honorificSuffix, subStageSuffix"
+      "en": "Use when reasoning about suffix as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

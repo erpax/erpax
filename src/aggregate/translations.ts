@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "aggregate",
-    "uuid": "c0ce1226-b3ab-88ea-99d6-b431b1ce337f",
+    "uuid": "1745aca3-ee06-85e6-8e51-442e0e4e4d84",
     "words": [
       "aggregate"
     ],
@@ -17,25 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "aggregate: a schema.org component word, fused from AggregateOffer, AggregateRating, EmployerAggregateRating, aggregateElement, aggregateRating",
-    "uuid": "26dadbec-bac3-88c7-82dd-6fd256bf64d2",
+    "source": "Use when reasoning about aggregate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "0d43ae67-1a3b-8518-a586-b6d0e7acfb45",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "aggregate",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "aggregateoffer",
-      "aggregaterating",
-      "employeraggregaterating",
-      "aggregateelement",
-      "aggregaterating"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "aggregate: a schema.org component word, fused from AggregateOffer, AggregateRating, EmployerAggregateRating, aggregateElement, aggregateRating"
+      "en": "Use when reasoning about aggregate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

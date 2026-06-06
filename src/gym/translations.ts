@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "gym",
-    "uuid": "92441302-023d-84e1-bdf2-20a46aa412d0",
+    "uuid": "c9b06502-01cd-84f1-b521-3296eef0d92c",
     "words": [
       "gym"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "gym: a schema.org component word, fused from ExerciseGym",
-    "uuid": "0609016e-95a4-895f-991b-eeb2b448765b",
+    "source": "Use when reasoning about gym as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "62f1904c-ec9d-8c97-b754-ef201bd4e782",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "gym",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "exercisegym"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "gym: a schema.org component word, fused from ExerciseGym"
+      "en": "Use when reasoning about gym as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "measurement",
-    "uuid": "14951b71-fc66-82d8-b826-7f96d307b19b",
+    "uuid": "b0a58c8f-c81c-8f15-97bc-3013b0b8435d",
     "words": [
       "measurement"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "measurement: a schema.org component word, fused from BodyMeasurementTypeEnumeration, MeasurementMethodEnum, MeasurementTypeEnumeration, WearableMeasurementTypeEnumeration, hasMeasurement, measurementD",
-    "uuid": "44c4a1ff-3cce-80b4-a983-88fc83eef4db",
+    "source": "Use when reasoning about measurement as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "fea34d74-b8a5-8a53-a771-10225b50f9d6",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "measurement",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "bodymeasurementtypeenumeration",
-      "measurementmethodenum",
-      "measurementtypeenumeration",
-      "wearablemeasurementtypeenumeration",
-      "hasmeasurement",
-      "measurementd"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "measurement: a schema.org component word, fused from BodyMeasurementTypeEnumeration, MeasurementMethodEnum, MeasurementTypeEnumeration, WearableMeasurementTypeEnumeration, hasMeasurement, measurementD"
+      "en": "Use when reasoning about measurement as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

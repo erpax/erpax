@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "statistics",
-    "uuid": "916805a1-5f1a-86eb-93ad-c3e4776461e9",
+    "uuid": "e0f90c12-3f03-894a-8091-e83f17272ad1",
     "words": [
       "statistics"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "statistics: a schema.org component word, fused from diseaseSpreadStatistics",
-    "uuid": "fce45db8-71da-8268-bc8a-03b2121c54a9",
+    "uuid": "79e40576-04a8-893f-bdf1-f8f116f6bb32",
     "words": [
       "statistics",
       "a",

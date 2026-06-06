@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "subscribe",
-    "uuid": "cb37b59d-ecb4-86d1-95d7-30550e247b08",
+    "uuid": "4ffb838b-45bc-80f7-9cc2-7712c988ca1f",
     "words": [
       "subscribe"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "subscribe: a schema.org component word, fused from SubscribeAction",
-    "uuid": "5e0d44a9-75f6-86f3-85cb-7bfa0ed25293",
+    "source": "Use when reasoning about subscribe as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "e0ce9f19-19b8-8beb-8c7a-f2549486b4c8",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "subscribe",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "subscribeaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "subscribe: a schema.org component word, fused from SubscribeAction"
+      "en": "Use when reasoning about subscribe as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

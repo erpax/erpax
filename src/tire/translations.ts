@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "tire",
-    "uuid": "58ebc93a-2a2c-8371-8192-ff8ada3038e4",
+    "uuid": "1c5beaa4-69b7-862a-b325-6e6d2fec8c42",
     "words": [
       "tire"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "tire: a schema.org component word, fused from TireShop",
-    "uuid": "b2c63fb7-f996-8c6e-8e72-fbfabac13e73",
+    "source": "Use when reasoning about tire as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "02b44e64-92f4-8223-9c16-0492b59646e4",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "tire",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "tireshop"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "tire: a schema.org component word, fused from TireShop"
+      "en": "Use when reasoning about tire as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

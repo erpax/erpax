@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "depart",
-    "uuid": "9bf93e1a-8f53-80c6-b24a-d507d31a83a8",
+    "uuid": "947d4f35-e990-83c4-897a-9b01087a30d0",
     "words": [
       "depart"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "depart: a schema.org component word, fused from DepartAction",
-    "uuid": "b28eaca7-aba7-8545-8858-6d983f744ceb",
+    "source": "Use when reasoning about depart as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "62016f20-d06e-8067-936e-af39aedfb90d",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "depart",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "departaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "depart: a schema.org component word, fused from DepartAction"
+      "en": "Use when reasoning about depart as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "estimator",
-    "uuid": "bcc12495-a399-8574-8e1d-efabae993f43",
+    "uuid": "010b1a3f-b3fc-8c28-9e45-23f95d636dc3",
     "words": [
       "estimator"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "estimator: a schema.org component word, fused from MedicalRiskEstimator",
-    "uuid": "dfb9f9eb-0d08-88c6-9263-2720fbfe7ad9",
+    "source": "Use when reasoning about estimator as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "f4357523-b192-819e-a2ec-cdf22163d683",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "estimator",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "medicalriskestimator"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "estimator: a schema.org component word, fused from MedicalRiskEstimator"
+      "en": "Use when reasoning about estimator as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

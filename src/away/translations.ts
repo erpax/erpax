@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "away",
-    "uuid": "da0c09c9-0c6c-85e9-998e-c705b2318301",
+    "uuid": "8f5e5ce7-b6f3-854e-b0a7-6f19f9af6f43",
     "words": [
       "away"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "away: a schema.org component word, fused from awayTeam",
-    "uuid": "68297628-d9e1-823d-9247-58cb3d734437",
+    "source": "Use when reasoning about away as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "910f19dc-0c23-8f1e-9b89-8d18a888cb82",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "away",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "awayteam"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "away: a schema.org component word, fused from awayTeam"
+      "en": "Use when reasoning about away as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

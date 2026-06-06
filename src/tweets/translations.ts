@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "tweets",
-    "uuid": "e4ee4cb0-03da-89b1-a7a8-ee6ea0a08eaa",
+    "uuid": "8702b3f6-90d9-8e19-9306-4509137152e2",
     "words": [
       "tweets"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "tweets: a schema.org component word, fused from UserTweets",
-    "uuid": "1546d76d-9fa3-8f36-b2d6-b62f598ae139",
+    "source": "Use when reasoning about tweets as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "8032c372-07ea-8f6b-bd58-e8c85dc5cfaa",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "tweets",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "usertweets"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "tweets: a schema.org component word, fused from UserTweets"
+      "en": "Use when reasoning about tweets as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

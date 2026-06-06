@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "platform",
-    "uuid": "7416a963-175e-8b82-813f-d9d7cd37ff3d",
+    "uuid": "45b3d167-ee20-87b0-bd66-8d70697e877f",
     "words": [
       "platform"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "platform: a schema.org component word, fused from DigitalPlatformEnumeration, RuntimePlatform, actionPlatform, arrivalPlatform, departurePlatform, gamePlatform",
-    "uuid": "5ab1746b-66a1-8e09-83f3-79ce98412d33",
+    "source": "Use when reasoning about platform as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "ef62bd91-549f-8740-a399-ed992864f003",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "platform",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "digitalplatformenumeration",
-      "runtimeplatform",
-      "actionplatform",
-      "arrivalplatform",
-      "departureplatform",
-      "gameplatform"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "platform: a schema.org component word, fused from DigitalPlatformEnumeration, RuntimePlatform, actionPlatform, arrivalPlatform, departurePlatform, gamePlatform"
+      "en": "Use when reasoning about platform as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

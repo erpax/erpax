@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "building",
-    "uuid": "91f7ec54-c3f4-8bc9-94e8-bfdae46b169f",
+    "uuid": "6d12a113-eb54-8e0b-8ea1-5336bde92093",
     "words": [
       "building"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "building: a schema.org component word, fused from GovernmentBuilding, LegislativeBuilding",
-    "uuid": "60d1f9f0-c80c-8402-881f-cb518d4bdb93",
+    "source": "Use when reasoning about building as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "81acfe98-64db-845d-bb92-f4dfde9da314",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "building",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "governmentbuilding",
-      "legislativebuilding"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "building: a schema.org component word, fused from GovernmentBuilding, LegislativeBuilding"
+      "en": "Use when reasoning about building as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "trans",
-    "uuid": "feaef388-a8ff-88d3-a42b-bc9391a62c92",
+    "uuid": "e801510b-f82a-8553-99e1-a76274850fb1",
     "words": [
       "trans"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "trans: a schema.org component word, fused from transFatContent",
-    "uuid": "fc239f41-b94f-8510-8667-6c4058b73c70",
+    "source": "Use when reasoning about trans as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "6f731916-1f10-8707-8043-bbb94a32d9f7",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "trans",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "transfatcontent"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "trans: a schema.org component word, fused from transFatContent"
+      "en": "Use when reasoning about trans as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "rsvp",
-    "uuid": "2f502322-9ce2-88a8-a4fe-12f5d25b007a",
+    "uuid": "907fe590-952a-84dc-9e1b-e14781ac82c8",
     "words": [
       "rsvp"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "rsvp: a schema.org component word, fused from RsvpAction, RsvpResponseType, rsvpResponse",
-    "uuid": "204ecf38-f6a4-8cc7-bb82-82317d80a29c",
+    "source": "Use when reasoning about rsvp as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "28269e3e-e408-8499-8747-dfa5bbebd288",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "rsvp",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "rsvpaction",
-      "rsvpresponsetype",
-      "rsvpresponse"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "rsvp: a schema.org component word, fused from RsvpAction, RsvpResponseType, rsvpResponse"
+      "en": "Use when reasoning about rsvp as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

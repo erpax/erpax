@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "vital",
-    "uuid": "4604bec5-b250-82f8-8f58-7af3145b4551",
+    "uuid": "b3cb1a69-3b4c-8a54-b5b9-58132fafca82",
     "words": [
       "vital"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "vital: a schema.org component word, fused from VitalSign",
-    "uuid": "b0476851-781d-8a97-9dbe-95f0c7084b99",
+    "source": "Use when reasoning about vital as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "c8840d8d-6d62-8f19-a43f-b8012bd25d18",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "vital",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "vitalsign"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "vital: a schema.org component word, fused from VitalSign"
+      "en": "Use when reasoning about vital as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

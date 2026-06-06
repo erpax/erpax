@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "social",
-    "uuid": "0de5ce9b-49e6-8db4-961e-78ae3f2eba53",
+    "uuid": "b873dd58-e24e-8945-bcf5-b2f48b603e43",
     "words": [
       "social"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "social: a schema.org component word, fused from SocialEvent, SocialMediaPosting",
-    "uuid": "5886660d-173d-8a83-93fb-7ed9f4be440a",
+    "source": "Use when reasoning about social as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "92d094fc-b48d-8e09-8865-fa1256e8c423",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "social",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "socialevent",
-      "socialmediaposting"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "social: a schema.org component word, fused from SocialEvent, SocialMediaPosting"
+      "en": "Use when reasoning about social as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "operating",
-    "uuid": "bff317ca-2e69-843b-8542-60d49bf7927c",
+    "uuid": "c5a28633-31a7-8787-bdd9-94653ee9321d",
     "words": [
       "operating"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "operating: a schema.org component word, fused from OperatingSystem, operatingSystem",
-    "uuid": "5ca84137-f907-859a-b4a2-0d17cb850f3d",
+    "source": "Use when reasoning about operating as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "6c0f2449-8a6c-8d58-ba59-5ae318dabfdc",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "operating",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "operatingsystem",
-      "operatingsystem"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "operating: a schema.org component word, fused from OperatingSystem, operatingSystem"
+      "en": "Use when reasoning about operating as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "under",
-    "uuid": "2d826116-3dc2-86c7-b84d-12800e86de25",
+    "uuid": "256fc91f-fd3e-82fd-8d48-0313930e566f",
     "words": [
       "under"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "under: a schema.org component word, fused from underName",
-    "uuid": "c23a222d-6fc9-8c83-ba45-cf667bb44c16",
+    "source": "Use when reasoning about under as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "493238c7-84ef-84e6-a6d9-8ce15af8a293",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "under",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "undername"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "under: a schema.org component word, fused from underName"
+      "en": "Use when reasoning about under as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "locality",
-    "uuid": "db12aca0-317c-8ed6-93f0-32cc5f718ea6",
+    "uuid": "68aec34a-87bd-87f4-b1ee-a927ac18f3e3",
     "words": [
       "locality"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "locality: a schema.org component word, fused from addressLocality",
-    "uuid": "f9859418-be63-8928-b9c0-e54dc3651250",
+    "source": "Use when reasoning about locality as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "3d92bc0a-7982-8e39-a694-52af6abbb471",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "locality",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "addresslocality"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "locality: a schema.org component word, fused from addressLocality"
+      "en": "Use when reasoning about locality as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "functional",
-    "uuid": "14ef5907-55fc-8fca-bf38-8fe6bc928493",
+    "uuid": "6d0eebd3-6e1f-871b-8081-7e539b141e2e",
     "words": [
       "functional"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "functional: a schema.org component word, fused from functionalClass",
-    "uuid": "168c0a35-e0c9-8849-ab12-3c23244167ef",
+    "source": "Use when reasoning about functional as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "a74419a7-8e3e-8994-8467-070c99c90edd",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "functional",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "functionalclass"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "functional: a schema.org component word, fused from functionalClass"
+      "en": "Use when reasoning about functional as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

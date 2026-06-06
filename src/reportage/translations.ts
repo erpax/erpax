@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "reportage",
-    "uuid": "08fd8a9e-9d45-8a80-b44c-9b5fe46e7128",
+    "uuid": "a50fc365-b316-8f42-905c-2f2d02449a4f",
     "words": [
       "reportage"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "reportage: a schema.org component word, fused from ReportageNewsArticle",
-    "uuid": "57063a3b-9514-846b-9ef2-6461492ef8db",
+    "source": "Use when reasoning about reportage as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "50ff32c6-3eaa-8aaf-8816-f6a04c90945b",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "reportage",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "reportagenewsarticle"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "reportage: a schema.org component word, fused from ReportageNewsArticle"
+      "en": "Use when reasoning about reportage as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

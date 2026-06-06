@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "before",
-    "uuid": "a78decb4-e9ae-8c6b-aefa-343195777503",
+    "uuid": "c4d44480-de75-8d94-b65b-bf9633b1befb",
     "words": [
       "before"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "before: a schema.org component word, fused from beforeMedia",
-    "uuid": "1b1ce625-d921-8a05-8666-82cc6594d83c",
+    "source": "Use when reasoning about before as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "7dd26bc5-e8c4-87da-95a7-782d453bd937",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "before",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "beforemedia"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "before: a schema.org component word, fused from beforeMedia"
+      "en": "Use when reasoning about before as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

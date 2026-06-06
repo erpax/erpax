@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "posting",
-    "uuid": "1b1eb91b-1abf-8e22-ac2d-d02bf212b87b",
+    "uuid": "713750d3-45a8-843b-8b31-60792d2a47cc",
     "words": [
       "posting"
     ],
@@ -17,25 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "posting: a schema.org component word, fused from BlogPosting, DiscussionForumPosting, JobPosting, LiveBlogPosting, SocialMediaPosting",
-    "uuid": "66ef4629-52b4-80d3-8c51-4f90aa4eb81d",
+    "source": "Use when reasoning about posting as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "78c010ee-b122-86b5-9a21-271252bb52a9",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "posting",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "blogposting",
-      "discussionforumposting",
-      "jobposting",
-      "liveblogposting",
-      "socialmediaposting"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "posting: a schema.org component word, fused from BlogPosting, DiscussionForumPosting, JobPosting, LiveBlogPosting, SocialMediaPosting"
+      "en": "Use when reasoning about posting as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

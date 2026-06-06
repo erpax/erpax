@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use to compute depreciation — straight-line, declining-balance (DDB), sum-of-years-digits, units-of-activity. Pure compute (no persistence); cites IAS-16 / US-GAAP ASC-360. Nested under calculate.",
-    "uuid": "bb17265d-4e00-8378-8065-3f69cb78b7a6",
+    "uuid": "a51b3312-6d32-8ca6-9ed7-d1542bedf3c0",
     "words": [
       "use",
       "to",

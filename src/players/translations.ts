@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "players",
-    "uuid": "9706b41d-3821-8827-8979-0769a502a02e",
+    "uuid": "0ff84bd9-8de0-8c30-a001-5915556123af",
     "words": [
       "players"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "players: a schema.org component word, fused from numberOfPlayers, playersOnline",
-    "uuid": "f2459833-d15e-83cb-a639-724816c5a8f8",
+    "source": "Use when reasoning about players as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "96a0a0c3-c819-8290-9004-82974f0de27c",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "players",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "numberofplayers",
-      "playersonline"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "players: a schema.org component word, fused from numberOfPlayers, playersOnline"
+      "en": "Use when reasoning about players as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

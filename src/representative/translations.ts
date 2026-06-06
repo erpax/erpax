@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "representative",
-    "uuid": "76bc107b-19c8-8ffa-8232-39f42a8450cd",
+    "uuid": "334a97a3-1c05-80b1-88af-aff41391d612",
     "words": [
       "representative"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "representative: a schema.org component word, fused from legalRepresentative, representativeOfPage",
-    "uuid": "b820dc5f-4be4-896c-9edd-4b325dd72e15",
+    "source": "Use when reasoning about representative as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "6720fb48-96b7-8176-84c9-8fe63f461ea0",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "representative",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "legalrepresentative",
-      "representativeofpage"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "representative: a schema.org component word, fused from legalRepresentative, representativeOfPage"
+      "en": "Use when reasoning about representative as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

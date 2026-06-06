@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "district",
-    "uuid": "93cdf629-c2dc-8f9b-9a63-47ac49562bb9",
+    "uuid": "76480dcc-2dbb-838a-b5be-a59222444c23",
     "words": [
       "district"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "district: a schema.org component word, fused from SchoolDistrict",
-    "uuid": "ecf65e56-f76c-84ab-9407-bd9411addc7d",
+    "source": "Use when reasoning about district as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "89f2056d-5ef5-81b7-9bd1-d51563d216b8",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "district",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "schooldistrict"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "district: a schema.org component word, fused from SchoolDistrict"
+      "en": "Use when reasoning about district as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

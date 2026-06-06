@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "company",
-    "uuid": "c0f44e16-8d60-8799-8f8a-b4f1a1913441",
+    "uuid": "06f69e34-07fb-8b0c-b41a-935381cbbabf",
     "words": [
       "company"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "company: a schema.org component word, fused from MovingCompany, companyRegistration, productionCompany",
-    "uuid": "8b138fc8-9b2d-80e6-ab2e-2490b85e3047",
+    "source": "Use when reasoning about company as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "0db4ef6c-b4ae-8d64-889e-8f8083806ce5",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "company",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "movingcompany",
-      "companyregistration",
-      "productioncompany"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "company: a schema.org component word, fused from MovingCompany, companyRegistration, productionCompany"
+      "en": "Use when reasoning about company as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

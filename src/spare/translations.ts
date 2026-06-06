@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "spare",
-    "uuid": "032535f7-0d4d-8e4c-809c-e241c3929345",
+    "uuid": "ec88c6c1-1a09-8b66-b2f9-065749561590",
     "words": [
       "spare"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "spare: a schema.org component word, fused from isAccessoryOrSparePartFor",
-    "uuid": "d38a5dfe-0a8b-8c2e-a440-ca6f29797b96",
+    "source": "Use when reasoning about spare as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "7dde2d03-c6c6-820d-9eca-5c43c87c4f6a",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "spare",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "isaccessoryorsparepartfor"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "spare: a schema.org component word, fused from isAccessoryOrSparePartFor"
+      "en": "Use when reasoning about spare as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

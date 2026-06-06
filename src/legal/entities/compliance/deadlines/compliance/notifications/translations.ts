@@ -19,7 +19,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when configuring or auditing deadline-reminder notifications — scheduled email, in-app, SMS, or calendar-event alerts to compliance officers and staff days before a compliance deadline is due per ISO-37301. The compliance-notification dispatch collection.",
-    "uuid": "73672f6a-8745-866d-989a-41cdaab0c18c",
+    "uuid": "d9732145-565a-85bf-8023-6293f8839223",
     "words": [
       "use",
       "when",

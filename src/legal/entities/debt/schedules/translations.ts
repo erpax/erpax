@@ -6,20 +6,20 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "debt-schedule",
-    "uuid": "e5aacd95-86eb-8b28-9736-ce1810e93778",
+    "source": "debt-schedules",
+    "uuid": "c31b74f8-bf67-8e7d-ac88-ad9cc86fca3a",
     "words": [
       "debt",
-      "schedule"
+      "schedules"
     ],
     "values": {
-      "en": "debt-schedule"
+      "en": "debt-schedules"
     }
   },
   {
     "key": "description",
     "source": "Use when managing or reporting a legal entity's debt instruments — bank term/revolving loans, bonds, finance and operating leases, convertible notes, covenant tracking, repayment schedules, and IFRS-9 current/non-current classification per IFRS-9 / IAS-1 / ASC-470. The debt-instrument register collection.",
-    "uuid": "ccc2d4e2-cb21-8eed-a363-ae7a158561c3",
+    "uuid": "8c418a80-6568-89f1-aa3c-071a4fe1443d",
     "words": [
       "use",
       "when",

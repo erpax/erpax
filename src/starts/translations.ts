@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "starts",
-    "uuid": "65da1f24-bd98-830a-a245-9072171fc54f",
+    "uuid": "405fa0b1-2bcf-8423-be9f-a2f635e25acc",
     "words": [
       "starts"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "starts: a schema.org component word, fused from availabilityStarts",
-    "uuid": "55d2b3df-7f56-835f-adfb-719dd10b6b0b",
+    "source": "Use when reasoning about starts as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "d90eb74f-feaf-88e2-8fd7-2d93f26cb184",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "starts",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "availabilitystarts"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "starts: a schema.org component word, fused from availabilityStarts"
+      "en": "Use when reasoning about starts as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

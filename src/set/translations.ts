@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "set",
-    "uuid": "07ed1778-0525-82b2-8917-9a5a5353a497",
+    "uuid": "80f83bee-8b6d-8bcc-ae58-46c073fb9cb4",
     "words": [
       "set"
     ],
@@ -17,24 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "set: a schema.org component word, fused from CategoryCodeSet, DefinedTermSet, inCodeSet, inDefinedTermSet",
-    "uuid": "9f14db58-941c-89db-aa68-dbc0803946f1",
+    "source": "Use when reasoning about set as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "f8406ed9-358c-8d44-92c0-3d4cb4f81e9d",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "set",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "categorycodeset",
-      "definedtermset",
-      "incodeset",
-      "indefinedtermset"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "set: a schema.org component word, fused from CategoryCodeSet, DefinedTermSet, inCodeSet, inDefinedTermSet"
+      "en": "Use when reasoning about set as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

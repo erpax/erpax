@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "seating",
-    "uuid": "4ede40b9-b005-8088-a547-749d8e044e81",
+    "uuid": "0de3c59d-2060-8b6a-b967-c7e1b654cd97",
     "words": [
       "seating"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "seating: a schema.org component word, fused from seatingCapacity, seatingType, vehicleSeatingCapacity",
-    "uuid": "7e4388d6-dd2c-821f-b70d-b76fafc1e1dd",
+    "source": "Use when reasoning about seating as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "aadba037-3bef-8613-ba19-5d9ba5cd2e63",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "seating",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "seatingcapacity",
-      "seatingtype",
-      "vehicleseatingcapacity"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "seating: a schema.org component word, fused from seatingCapacity, seatingType, vehicleSeatingCapacity"
+      "en": "Use when reasoning about seating as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

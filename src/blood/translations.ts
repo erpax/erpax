@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "blood",
-    "uuid": "5ffbc884-230d-89a3-a500-24c58b40c660",
+    "uuid": "3ac547fc-faa1-8b42-8597-f4605777ac28",
     "words": [
       "blood"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "blood: a schema.org component word, fused from BloodTest, bloodSupply",
-    "uuid": "b085d0c0-4921-813a-8fb5-913a4e004ece",
+    "source": "Use when reasoning about blood as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "7736d3b3-90eb-8eed-893d-483860e22b4e",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "blood",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "bloodtest",
-      "bloodsupply"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "blood: a schema.org component word, fused from BloodTest, bloodSupply"
+      "en": "Use when reasoning about blood as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

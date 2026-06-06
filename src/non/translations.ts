@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "non",
-    "uuid": "fd1e72b7-8a4f-8892-b25e-d1a915c05220",
+    "uuid": "c8750c62-c665-8d88-afa6-915d796f72fb",
     "words": [
       "non"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "non: a schema.org component word, fused from nonEqual, nonProprietaryName",
-    "uuid": "d94feb31-9280-8a29-9cd7-5156d96c099b",
+    "source": "Use when reasoning about non as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "94fdb5ab-f334-8f67-aa8d-84637b1f896e",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "non",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "nonequal",
-      "nonproprietaryname"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "non: a schema.org component word, fused from nonEqual, nonProprietaryName"
+      "en": "Use when reasoning about non as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

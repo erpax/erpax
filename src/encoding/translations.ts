@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "encoding",
-    "uuid": "e74aefd1-4830-8a02-b33b-a674594bf182",
+    "uuid": "67e38870-07dc-8f2b-ba40-4b08705019b6",
     "words": [
       "encoding"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "A media object that encodes this CreativeWork. This property is a synonym for associatedMedia.",
-    "uuid": "d6851311-b456-819e-a115-ec543c0ee479",
+    "uuid": "fd6dc55a-0954-871c-a03c-8fbad60ee863",
     "words": [
       "a",
       "media",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "plus",
-    "uuid": "349a09c9-21d2-8a9d-b4c1-817b8711757f",
+    "uuid": "8b4d5df7-e17e-81e5-932e-a3310f41016a",
     "words": [
       "plus"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "plus: a schema.org component word, fused from UserPlusOnes",
-    "uuid": "df197b57-df8a-8d39-88f1-f2f06c52d569",
+    "source": "Use when reasoning about plus as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "d4931289-56e8-86db-9159-e40cf95c5dfc",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "plus",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "userplusones"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "plus: a schema.org component word, fused from UserPlusOnes"
+      "en": "Use when reasoning about plus as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

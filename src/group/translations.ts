@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "group",
-    "uuid": "94c85b1a-3e8a-8b01-bfba-eb735d6580e1",
+    "uuid": "ebb26ebf-366d-8d80-b854-a06c8f6d301f",
     "words": [
       "group"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "group: a schema.org component word, fused from DanceGroup, MusicGroup, PerformingGroup, ProductGroup, SizeGroupEnumeration, TheaterGroup",
-    "uuid": "aa8c8d43-d630-81ad-95bf-614f71edcad7",
+    "source": "Use when reasoning about group as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "0b54c0af-4cf7-864b-8e3c-29f0c94fd888",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "group",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "dancegroup",
-      "musicgroup",
-      "performinggroup",
-      "productgroup",
-      "sizegroupenumeration",
-      "theatergroup"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "group: a schema.org component word, fused from DanceGroup, MusicGroup, PerformingGroup, ProductGroup, SizeGroupEnumeration, TheaterGroup"
+      "en": "Use when reasoning about group as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

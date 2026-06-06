@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "added",
-    "uuid": "a0ae9eaf-614d-8dc9-84ff-af45ba4f35b4",
+    "uuid": "52bb124e-bd77-8157-8805-66256fcacf1e",
     "words": [
       "added"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "added: a schema.org component word, fused from valueAddedTaxIncluded",
-    "uuid": "f89b6c03-b320-8c78-94ac-70c1103e6b3d",
+    "source": "Use when reasoning about added as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "56d10577-2d6a-8b29-a643-fc34c62bcb69",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "added",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "valueaddedtaxincluded"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "added: a schema.org component word, fused from valueAddedTaxIncluded"
+      "en": "Use when reasoning about added as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

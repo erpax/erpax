@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "lymphatic",
-    "uuid": "a443b017-32b1-86d6-9a34-67960dfcf168",
+    "uuid": "b36eed61-4e70-89a6-aff4-9d9991587a8b",
     "words": [
       "lymphatic"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "lymphatic: a schema.org component word, fused from LymphaticVessel",
-    "uuid": "8aa7f0c6-49de-85fd-8bff-3ddeb21a60c7",
+    "source": "Use when reasoning about lymphatic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "3827e57e-511b-8f1d-b9fc-2f4d5ce8fcbb",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "lymphatic",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "lymphaticvessel"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "lymphatic: a schema.org component word, fused from LymphaticVessel"
+      "en": "Use when reasoning about lymphatic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

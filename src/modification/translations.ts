@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "modification",
-    "uuid": "00a5b41a-3eef-8c71-a054-5a1d44aab8da",
+    "uuid": "956a7d99-c23a-86f9-9a9a-e9e04001a17b",
     "words": [
       "modification"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "modification: a schema.org component word, fused from LifestyleModification",
-    "uuid": "109b933a-ce0a-81ff-af1d-d2dee5b71c64",
+    "source": "Use when reasoning about modification as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "fafa2571-cc81-8c80-8df0-78ed7442f82a",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "modification",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "lifestylemodification"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "modification: a schema.org component word, fused from LifestyleModification"
+      "en": "Use when reasoning about modification as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

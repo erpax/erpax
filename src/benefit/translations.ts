@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "benefit",
-    "uuid": "1abf87d5-c7cb-8f8e-a80a-6d64d6994092",
+    "uuid": "09970ead-eb19-88f7-9579-4e49c28afa61",
     "words": [
       "benefit"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "benefit: a schema.org component word, fused from TierBenefitEnumeration, hasTierBenefit",
-    "uuid": "d1b9d018-1b46-8655-a4ba-e488946b5da1",
+    "source": "Use when reasoning about benefit as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "608e89b8-fbed-8605-bd4e-f27b02fd2953",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "benefit",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "tierbenefitenumeration",
-      "hastierbenefit"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "benefit: a schema.org component word, fused from TierBenefitEnumeration, hasTierBenefit"
+      "en": "Use when reasoning about benefit as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

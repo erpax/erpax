@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "sms",
-    "uuid": "7d9f548b-ef28-8798-9db4-0eda9172a5b0",
+    "uuid": "6afb0274-4b66-866f-b760-fad5ee6e3bff",
     "words": [
       "sms"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "sms: a schema.org component word, fused from serviceSmsNumber",
-    "uuid": "bcdc9571-97d4-846d-b34d-fffe48791316",
+    "source": "Use when reasoning about sms as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "7a2b7a26-8393-8636-9114-51d6d36d9c05",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "sms",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "servicesmsnumber"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "sms: a schema.org component word, fused from serviceSmsNumber"
+      "en": "Use when reasoning about sms as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

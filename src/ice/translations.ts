@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "ice",
-    "uuid": "f5b72370-e01d-85e8-a8f0-e911d1ffcb13",
+    "uuid": "16bbecb6-aa9b-8ff6-a0de-3c06285ea47e",
     "words": [
       "ice"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "ice: a schema.org component word, fused from IceCreamShop",
-    "uuid": "803ad01d-e796-8a9c-b375-85bfcb3f908c",
+    "source": "Use when reasoning about ice as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "1bbcc5ef-cb5c-8f73-81d8-5d0e60452714",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "ice",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "icecreamshop"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "ice: a schema.org component word, fused from IceCreamShop"
+      "en": "Use when reasoning about ice as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

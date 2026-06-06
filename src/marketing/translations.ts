@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "marketing",
-    "uuid": "52978a29-185f-889b-a6d7-2864ec15e2d0",
+    "uuid": "5494e8f5-d321-8da6-a8a9-99e80e369d49",
     "words": [
       "marketing"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "marketing: a schema.org component word, fused from healthPlanMarketingUrl",
-    "uuid": "b3bc1bf4-4790-8129-9839-8963dce4792c",
+    "source": "Use when reasoning about marketing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "eec2c8d7-dd6f-87ab-b112-b07521f05c0a",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "marketing",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "healthplanmarketingurl"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "marketing: a schema.org component word, fused from healthPlanMarketingUrl"
+      "en": "Use when reasoning about marketing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

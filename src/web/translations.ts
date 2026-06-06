@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "web",
-    "uuid": "d171ff3c-2639-8044-b0eb-928b0a66daa3",
+    "uuid": "7d79dc84-188e-840f-9c24-5209f8d7a81e",
     "words": [
       "web"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "web: a schema.org component word, fused from MedicalWebPage, WebAPI, WebApplication, WebContent, WebPage, WebPageElement",
-    "uuid": "60aee277-f264-864f-9905-c1ad803ecb07",
+    "source": "Use when reasoning about web as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "9fa19899-7f02-83fa-85e6-b428b30ee978",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "web",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "medicalwebpage",
-      "webapi",
-      "webapplication",
-      "webcontent",
-      "webpage",
-      "webpageelement"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "web: a schema.org component word, fused from MedicalWebPage, WebAPI, WebApplication, WebContent, WebPage, WebPageElement"
+      "en": "Use when reasoning about web as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

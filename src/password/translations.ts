@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "password",
-    "uuid": "591b0408-03dd-8552-bd53-5214869813aa",
+    "uuid": "a217e95d-362f-82be-a297-4e2db60e3d14",
     "words": [
       "password"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "password: a schema.org component word, fused from ResetPasswordAction",
-    "uuid": "1e6ffa02-286c-865c-afcd-991e4b372757",
+    "source": "Use when reasoning about password as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "0fef8947-9b95-8b42-8a14-a3b64cb7c8ac",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "password",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "resetpasswordaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "password: a schema.org component word, fused from ResetPasswordAction"
+      "en": "Use when reasoning about password as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

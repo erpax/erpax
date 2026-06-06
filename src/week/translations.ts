@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "week",
-    "uuid": "8f4fd16b-bba0-8e48-b268-00728e220511",
+    "uuid": "8f7200a5-dc4c-855b-bd90-78f3a017caf4",
     "words": [
       "week"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "week: a schema.org component word, fused from DayOfWeek, byMonthWeek, dayOfWeek",
-    "uuid": "8f6caafb-9636-8cba-8d5a-46e022df70f5",
+    "source": "Use when reasoning about week as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "c6304a84-d92f-8fca-b6f6-7e4d68f9da87",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "week",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "dayofweek",
-      "bymonthweek",
-      "dayofweek"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "week: a schema.org component word, fused from DayOfWeek, byMonthWeek, dayOfWeek"
+      "en": "Use when reasoning about week as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

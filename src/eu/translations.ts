@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "eu",
-    "uuid": "907f1aed-ccb8-8416-8577-7bd026a10f62",
+    "uuid": "7a6e9dfd-0f49-8c3a-8b70-1d5a4f033789",
     "words": [
       "eu"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "eu: a schema.org component word, fused from EUEnergyEfficiencyEnumeration",
-    "uuid": "938c4315-4282-85d2-8cac-14a56d08ebf5",
+    "source": "Use when reasoning about eu as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "cd8f8c08-92c6-80fb-952b-75f50afbedab",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "eu",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "euenergyefficiencyenumeration"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "eu: a schema.org component word, fused from EUEnergyEfficiencyEnumeration"
+      "en": "Use when reasoning about eu as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

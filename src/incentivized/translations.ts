@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "incentivized",
-    "uuid": "24d9783a-aa88-8620-b0a0-455d94ec96a7",
+    "uuid": "74ab56a6-e4fd-856a-9814-0b6455c4b966",
     "words": [
       "incentivized"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "incentivized: a schema.org component word, fused from incentivizedItem",
-    "uuid": "5f02c484-7951-8965-84b2-7434c9f05a0a",
+    "source": "Use when reasoning about incentivized as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "d1e78317-8e0a-8340-a6cc-2ce3487ec770",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "incentivized",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "incentivizeditem"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "incentivized: a schema.org component word, fused from incentivizedItem"
+      "en": "Use when reasoning about incentivized as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

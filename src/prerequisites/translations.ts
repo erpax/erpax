@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "prerequisites",
-    "uuid": "6d7061fb-e965-8f31-9a46-04d8a35cf5d2",
+    "uuid": "40bcc534-c51b-861a-9bb2-a21288c3b114",
     "words": [
       "prerequisites"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "prerequisites: a schema.org component word, fused from coursePrerequisites, programPrerequisites",
-    "uuid": "1010b127-56f6-8f84-aa62-3422c5a0b50c",
+    "source": "Use when reasoning about prerequisites as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "cc68fe9a-d4ca-883d-9117-1f7796ff6180",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "prerequisites",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "courseprerequisites",
-      "programprerequisites"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "prerequisites: a schema.org component word, fused from coursePrerequisites, programPrerequisites"
+      "en": "Use when reasoning about prerequisites as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

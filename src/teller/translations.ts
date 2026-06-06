@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "teller",
-    "uuid": "3777b16b-6f5d-8d7d-a826-05854f1fefee",
+    "uuid": "59adb2ed-0c12-85c5-a2ee-02c2182e67bf",
     "words": [
       "teller"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "teller: a schema.org component word, fused from AutomatedTeller",
-    "uuid": "f70ed054-b57d-8db0-9b07-12d727817c94",
+    "source": "Use when reasoning about teller as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "6d31f6b4-20c2-87ec-8c07-dc1929fd7dbe",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "teller",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "automatedteller"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "teller: a schema.org component word, fused from AutomatedTeller"
+      "en": "Use when reasoning about teller as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

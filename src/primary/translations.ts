@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "primary",
-    "uuid": "59e4f442-049f-870a-8da0-005c75a1d04b",
+    "uuid": "ef40813f-c984-8a6c-a24d-bb76b47533fb",
     "words": [
       "primary"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "primary: a schema.org component word, fused from primaryImageOfPage, primaryPrevention",
-    "uuid": "54ffcdd0-44cd-8bb8-84f5-af561b1feda9",
+    "source": "Use when reasoning about primary as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "d2d895c8-bad5-87d9-9419-4828b2f74ebc",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "primary",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "primaryimageofpage",
-      "primaryprevention"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "primary: a schema.org component word, fused from primaryImageOfPage, primaryPrevention"
+      "en": "Use when reasoning about primary as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

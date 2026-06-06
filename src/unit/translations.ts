@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "unit",
-    "uuid": "a7cd0b12-d6d7-8119-bad8-f831c663e26c",
+    "uuid": "386818e0-1e6d-827e-9ec1-30882e147e45",
     "words": [
       "unit"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "unit: a schema.org component word, fused from UnitPriceSpecification, costPerUnit, doseUnit, drugUnit, employmentUnit, lodgingUnitDescription",
-    "uuid": "7c7eed83-863e-8f00-8c57-9e4642cd2d5f",
+    "source": "Use when reasoning about unit as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "4c485aba-166f-85ad-bfb7-16002a073b3f",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "unit",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "unitpricespecification",
-      "costperunit",
-      "doseunit",
-      "drugunit",
-      "employmentunit",
-      "lodgingunitdescription"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "unit: a schema.org component word, fused from UnitPriceSpecification, costPerUnit, doseUnit, drugUnit, employmentUnit, lodgingUnitDescription"
+      "en": "Use when reasoning about unit as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

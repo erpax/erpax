@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "discussion",
-    "uuid": "2162c014-9d1c-8031-bb76-49482ed18a6e",
+    "uuid": "14e7db66-18e9-8d03-a7ca-0f804c183550",
     "words": [
       "discussion"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "discussion: a schema.org component word, fused from DiscussionForumPosting, discussionUrl",
-    "uuid": "cd8b2407-c487-8a4b-bc1b-0c78abb54a4c",
+    "source": "Use when reasoning about discussion as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "a4e33e80-b3c2-8663-bcd0-de9aca169e24",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "discussion",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "discussionforumposting",
-      "discussionurl"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "discussion: a schema.org component word, fused from DiscussionForumPosting, discussionUrl"
+      "en": "Use when reasoning about discussion as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

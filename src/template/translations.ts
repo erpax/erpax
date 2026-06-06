@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "template",
-    "uuid": "a0504e2e-89cf-8016-9f74-fac8d49f2a17",
+    "uuid": "a400d29a-ca2f-8006-ab50-5312ab358df8",
     "words": [
       "template"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "template: a schema.org component word, fused from checkoutPageURLTemplate, urlTemplate",
-    "uuid": "208114b9-3ebb-87fe-a0e3-d85f1a80a63d",
+    "source": "Use when reasoning about template as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "8b8942d3-4751-83ca-94f8-a6021174e7c2",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "template",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "checkoutpageurltemplate",
-      "urltemplate"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "template: a schema.org component word, fused from checkoutPageURLTemplate, urlTemplate"
+      "en": "Use when reasoning about template as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

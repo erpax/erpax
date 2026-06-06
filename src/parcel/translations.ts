@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "parcel",
-    "uuid": "89ff1376-d527-8ded-9972-a99ef91e7e5f",
+    "uuid": "ae677579-72a0-8aac-b020-035f1bcb7f2b",
     "words": [
       "parcel"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "parcel: a schema.org component word, fused from ParcelDelivery",
-    "uuid": "e70078b6-5f21-8e31-8cef-4e756971291b",
+    "source": "Use when reasoning about parcel as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "75db1f54-696d-86b7-af83-103f520b3538",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "parcel",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "parceldelivery"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "parcel: a schema.org component word, fused from ParcelDelivery"
+      "en": "Use when reasoning about parcel as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

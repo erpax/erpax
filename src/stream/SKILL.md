@@ -1,5 +1,5 @@
 ---
-name: streams
+name: stream
 description: Use when events must move as one continuous tamper-proof current rather than discrete steps — turning the event bus into a typed AsyncIterable, windowing it (tumbling/sliding/session), composing blocks stream-to-stream, and verifying causal Lamport order plus the streamUuid hash-chain.
 ---
 

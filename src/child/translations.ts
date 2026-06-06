@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "child",
-    "uuid": "2a3ba9b3-2fd1-8dd7-8164-3042f359598f",
+    "uuid": "c0aea1a5-5b1f-8211-b83c-d44fbbc34095",
     "words": [
       "child"
     ],
@@ -17,24 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "child: a schema.org component word, fused from ChildCare, childMaxAge, childMinAge, childTaxon",
-    "uuid": "6b4ae4ad-6a7c-8a3c-acb9-1de12e5e67c4",
+    "source": "Use when reasoning about child as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "d1c1343a-92f6-82a9-858d-44011c2ac69b",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "child",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "childcare",
-      "childmaxage",
-      "childminage",
-      "childtaxon"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "child: a schema.org component word, fused from ChildCare, childMaxAge, childMinAge, childTaxon"
+      "en": "Use when reasoning about child as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

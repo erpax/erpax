@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "radio",
-    "uuid": "92648f48-5287-8cd9-8dea-8341b2a380a5",
+    "uuid": "951af94d-8b45-8c5d-a312-fd9c4479ee67",
     "words": [
       "radio"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "radio: a schema.org component word, fused from AMRadioChannel, FMRadioChannel, RadioBroadcastService, RadioChannel, RadioClip, RadioEpisode",
-    "uuid": "b9fa1134-b269-82dc-81a7-21e8fc0b5f0c",
+    "source": "Use when reasoning about radio as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "fd205ae6-a77f-8f00-96e8-80582e39d5e0",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "radio",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "amradiochannel",
-      "fmradiochannel",
-      "radiobroadcastservice",
-      "radiochannel",
-      "radioclip",
-      "radioepisode"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "radio: a schema.org component word, fused from AMRadioChannel, FMRadioChannel, RadioBroadcastService, RadioChannel, RadioClip, RadioEpisode"
+      "en": "Use when reasoning about radio as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

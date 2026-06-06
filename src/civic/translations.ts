@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "civic",
-    "uuid": "2689a15d-34f3-891d-aea1-ce6acdc23bc2",
+    "uuid": "24d8851b-d74b-8b9d-be4d-cc9eca6f1714",
     "words": [
       "civic"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "civic: a schema.org component word, fused from CivicStructure",
-    "uuid": "ab189977-14ab-8da3-9f99-9eff3cada5fe",
+    "source": "Use when reasoning about civic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "3ccce78a-80e2-8559-997b-78d006b136d0",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "civic",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "civicstructure"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "civic: a schema.org component word, fused from CivicStructure"
+      "en": "Use when reasoning about civic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

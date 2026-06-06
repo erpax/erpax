@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "update",
-    "uuid": "3194f1eb-b2b9-82e2-8a02-efad86ad7f21",
+    "uuid": "040afe80-4350-88d6-aa29-c1b2932135f0",
     "words": [
       "update"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "update: a schema.org component word, fused from UpdateAction, liveBlogUpdate",
-    "uuid": "2d09e8ba-d5d3-8ef9-a4fa-5caaec37cb55",
+    "source": "Use when reasoning about update as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "bd1be36b-82c7-89d2-8dd9-a9017c609f51",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "update",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "updateaction",
-      "liveblogupdate"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "update: a schema.org component word, fused from UpdateAction, liveBlogUpdate"
+      "en": "Use when reasoning about update as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

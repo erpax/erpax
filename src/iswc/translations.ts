@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "iswc",
-    "uuid": "3fa5b059-d7d9-8e69-9ac8-3d6dc3b89e69",
+    "uuid": "61c48713-4f83-851a-8a2b-7a59b1ce7bf4",
     "words": [
       "iswc"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "iswc: a schema.org component word, fused from iswcCode",
-    "uuid": "11810aa7-223e-8cf5-a08b-9604133a5b38",
+    "source": "Use when reasoning about iswc as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "17f4321d-6238-8da0-956d-d69c9babc346",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "iswc",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "iswccode"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "iswc: a schema.org component word, fused from iswcCode"
+      "en": "Use when reasoning about iswc as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

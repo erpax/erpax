@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "fuel",
-    "uuid": "20021999-f7e9-809b-82be-f6a5285c8d45",
+    "uuid": "f61f3886-a0d1-83b0-a86b-2262246d5489",
     "words": [
       "fuel"
     ],
@@ -17,24 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "fuel: a schema.org component word, fused from fuelCapacity, fuelConsumption, fuelEfficiency, fuelType",
-    "uuid": "eafec68d-7404-886c-9710-0210ce0a3f56",
+    "source": "Use when reasoning about fuel as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "c6362bae-86bc-81ec-b096-e5489bac8bc8",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "fuel",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "fuelcapacity",
-      "fuelconsumption",
-      "fuelefficiency",
-      "fueltype"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "fuel: a schema.org component word, fused from fuelCapacity, fuelConsumption, fuelEfficiency, fuelType"
+      "en": "Use when reasoning about fuel as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

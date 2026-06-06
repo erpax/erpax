@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "sporting",
-    "uuid": "ad856e08-3ad4-8e7b-8ee9-db76a2a2d096",
+    "uuid": "d6a171a9-f824-8630-866a-72a7ba071631",
     "words": [
       "sporting"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "sporting: a schema.org component word, fused from SportingGoodsStore",
-    "uuid": "6c3e62f2-5b81-8c33-ac48-a6b601d4cf9f",
+    "source": "Use when reasoning about sporting as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "89b9b440-1f1d-849a-bcb3-e089e6610697",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "sporting",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "sportinggoodsstore"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "sporting: a schema.org component word, fused from SportingGoodsStore"
+      "en": "Use when reasoning about sporting as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

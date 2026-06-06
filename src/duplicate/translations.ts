@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "duplicate",
-    "uuid": "7824e059-c8f0-883a-b8f4-bb02ffa7ce53",
+    "uuid": "666ef318-a68a-8f0a-baa4-0d3ae8c7d113",
     "words": [
       "duplicate"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "duplicate: a schema.org component word, fused from duplicateTherapy",
-    "uuid": "8e692fe1-77e1-8e99-b601-db2ae66aa9a3",
+    "source": "Use when reasoning about duplicate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "ca0210e7-00a9-837f-ac6b-023d38d8f04c",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "duplicate",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "duplicatetherapy"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "duplicate: a schema.org component word, fused from duplicateTherapy"
+      "en": "Use when reasoning about duplicate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "eidr",
-    "uuid": "e6b46660-fbaa-85ca-aae6-52b2c246aaf3",
+    "uuid": "86b7a736-b212-819d-be4d-a6d907212a2b",
     "words": [
       "eidr"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "eidr: a schema.org component word, fused from editEIDR, titleEIDR",
-    "uuid": "6a97214d-5409-8a86-9b66-51a68b722b2b",
+    "source": "Use when reasoning about eidr as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "87df53a7-a69d-850b-9e01-ee5992e4595d",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "eidr",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "editeidr",
-      "titleeidr"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "eidr: a schema.org component word, fused from editEIDR, titleEIDR"
+      "en": "Use when reasoning about eidr as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

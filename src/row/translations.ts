@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "row",
-    "uuid": "dd218cda-dabd-8f59-9d50-461705b08b81",
+    "uuid": "31d9a354-9365-850a-b4b5-4dc80d05a906",
     "words": [
       "row"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "row: a schema.org component word, fused from seatRow",
-    "uuid": "d45f1624-9a06-82f1-8681-34e47b2bbf1c",
+    "source": "Use when reasoning about row as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "0291b9af-3beb-8939-964c-7c8bdf0c0ff7",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "row",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "seatrow"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "row: a schema.org component word, fused from seatRow"
+      "en": "Use when reasoning about row as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "mechanism",
-    "uuid": "000d5c58-0964-8a9a-a460-5495738b4775",
+    "uuid": "110cd494-6200-8645-919c-168f35286774",
     "words": [
       "mechanism"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "mechanism: a schema.org component word, fused from mechanismOfAction",
-    "uuid": "c2eefaf4-9673-8d17-a4f1-ee14f2543e05",
+    "source": "Use when reasoning about mechanism as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "bce9cf5b-5b06-8e8f-9ac1-bea19a6d123f",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "mechanism",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "mechanismofaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "mechanism: a schema.org component word, fused from mechanismOfAction"
+      "en": "Use when reasoning about mechanism as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

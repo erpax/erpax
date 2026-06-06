@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "arrangement",
-    "uuid": "28682554-5973-8898-8132-131ed3560787",
+    "uuid": "685e89fc-8a0e-8463-986d-f2368a81bda3",
     "words": [
       "arrangement"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "arrangement: a schema.org component word, fused from musicArrangement",
-    "uuid": "51ba982c-e227-8941-8237-52c667800756",
+    "source": "Use when reasoning about arrangement as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "aff976ff-9850-8c20-9d15-259629df828d",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "arrangement",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "musicarrangement"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "arrangement: a schema.org component word, fused from musicArrangement"
+      "en": "Use when reasoning about arrangement as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "live",
-    "uuid": "128ba47c-a94b-8953-aa6e-627fe1d084bb",
+    "uuid": "544e30b6-8262-8445-8c58-048cced2e033",
     "words": [
       "live"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "live: a schema.org component word, fused from LiveBlogPosting, isLiveBroadcast, liveBlogUpdate",
-    "uuid": "c2c57807-0185-8b7b-8ae0-0ee4f3d1a8f5",
+    "source": "Use when reasoning about live as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "30be257a-618d-86c7-b455-a569f42b9337",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "live",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "liveblogposting",
-      "islivebroadcast",
-      "liveblogupdate"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "live: a schema.org component word, fused from LiveBlogPosting, isLiveBroadcast, liveBlogUpdate"
+      "en": "Use when reasoning about live as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

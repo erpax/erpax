@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "possible",
-    "uuid": "293051d0-a864-824f-9a4d-f10489088e5e",
+    "uuid": "95535a6d-5725-853f-ba86-1c5c1bbdcdec",
     "words": [
       "possible"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "possible: a schema.org component word, fused from possibleComplication, possibleTreatment",
-    "uuid": "35e921f6-97aa-8ee2-a6aa-4dd9d3adaf81",
+    "source": "Use when reasoning about possible as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "8b207989-9c52-8582-942a-427dd32578c0",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "possible",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "possiblecomplication",
-      "possibletreatment"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "possible: a schema.org component word, fused from possibleComplication, possibleTreatment"
+      "en": "Use when reasoning about possible as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

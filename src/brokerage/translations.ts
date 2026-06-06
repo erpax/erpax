@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "brokerage",
-    "uuid": "9e597632-d2f9-8a21-96a8-f2047a025d1d",
+    "uuid": "c01008ae-d2bb-8b51-ab17-e5c1a61f6db8",
     "words": [
       "brokerage"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "brokerage: a schema.org component word, fused from BrokerageAccount",
-    "uuid": "e7ff0090-a1ec-8afd-88e9-93da94baf762",
+    "source": "Use when reasoning about brokerage as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "2db026c9-c9ce-8266-87f1-174ec92e01d1",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "brokerage",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "brokerageaccount"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "brokerage: a schema.org component word, fused from BrokerageAccount"
+      "en": "Use when reasoning about brokerage as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

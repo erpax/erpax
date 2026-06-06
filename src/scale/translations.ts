@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "scale",
-    "uuid": "22919e51-0935-8f19-9ca1-e48fb57023cc",
+    "uuid": "9c0e994c-2d6e-86c2-b290-5c56f04ec39a",
     "words": [
       "scale"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "scale: a schema.org component word, fused from energyEfficiencyScaleMax, energyEfficiencyScaleMin",
-    "uuid": "cba3475c-a38b-8096-a4dd-6af62faecad7",
+    "source": "Use when reasoning about scale as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "b734807f-0561-8361-aa74-43247522664d",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "scale",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "energyefficiencyscalemax",
-      "energyefficiencyscalemin"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "scale: a schema.org component word, fused from energyEfficiencyScaleMax, energyEfficiencyScaleMin"
+      "en": "Use when reasoning about scale as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

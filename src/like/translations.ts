@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "like",
-    "uuid": "ee0dfbfb-c881-8543-8ea9-8c0d2ad8acf0",
+    "uuid": "20f7e656-febb-838b-8795-19ea6ab855e0",
     "words": [
       "like"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "like: a schema.org component word, fused from LikeAction",
-    "uuid": "5e8d496c-c4e3-858a-b87b-9387a02ea109",
+    "source": "Use when reasoning about like as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "692c2eee-6a9d-8ff3-a8a4-176db486b6b0",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "like",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "likeaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "like: a schema.org component word, fused from LikeAction"
+      "en": "Use when reasoning about like as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

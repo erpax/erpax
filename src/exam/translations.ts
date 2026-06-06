@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "exam",
-    "uuid": "19676299-88ec-8be8-9490-c9531138f26e",
+    "uuid": "09a1e102-3a3a-81b1-a50c-adfa82d0c333",
     "words": [
       "exam"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "exam: a schema.org component word, fused from PhysicalExam, identifyingExam",
-    "uuid": "60101fa2-9553-8c54-9fd1-336829ff4a9e",
+    "source": "Use when reasoning about exam as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "3b95f228-8ecc-862a-98fa-06e60f85ef07",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "exam",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "physicalexam",
-      "identifyingexam"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "exam: a schema.org component word, fused from PhysicalExam, identifyingExam"
+      "en": "Use when reasoning about exam as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

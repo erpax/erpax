@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "medicine",
-    "uuid": "9589c333-e763-8bc6-816e-2ac5a32ad600",
+    "uuid": "09b9b2bc-7229-84ff-b2e2-31c44602b20a",
     "words": [
       "medicine"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "medicine: a schema.org component word, fused from MedicineSystem, medicineSystem",
-    "uuid": "71adf5f8-69ce-820a-8a03-97e0742292a7",
+    "source": "Use when reasoning about medicine as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "821e4022-cfb2-8d83-b5c9-fe598abf8ef4",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "medicine",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "medicinesystem",
-      "medicinesystem"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "medicine: a schema.org component word, fused from MedicineSystem, medicineSystem"
+      "en": "Use when reasoning about medicine as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

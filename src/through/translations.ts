@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "through",
-    "uuid": "afaff58d-b424-8c9c-812c-e0df17a21841",
+    "uuid": "3ef35100-47b9-8fb9-ba23-81e05787520f",
     "words": [
       "through"
     ],
@@ -17,25 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "through: a schema.org component word, fused from availableThrough, hasDriveThroughService, issuedThrough, ownedThrough, validThrough",
-    "uuid": "a6fd7312-31dc-80d1-99d1-a20c56ef1386",
+    "source": "Use when reasoning about through as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "60057434-3ceb-8f1c-9cc9-4998f27c44f7",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "through",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "availablethrough",
-      "hasdrivethroughservice",
-      "issuedthrough",
-      "ownedthrough",
-      "validthrough"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "through: a schema.org component word, fused from availableThrough, hasDriveThroughService, issuedThrough, ownedThrough, validThrough"
+      "en": "Use when reasoning about through as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

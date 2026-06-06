@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "crop",
-    "uuid": "d9d28add-cfbd-878c-9bd1-a5186fa3d306",
+    "uuid": "80757938-9cc0-8ea1-9413-e237670b2bf6",
     "words": [
       "crop"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling a cultivated plant type as the agricultural SKU — the produce-catalogue row carrying its sale unit (1 bunch, 100 g, 1 head), unit price, and the agronomic constants (yield per area, plant spacing, N·K₂O need, plantings & harvests per season) that explode a demand quantity into land, seed, and fertility. The crop is the bill-of-materials line of a farm; its heterogeneous sale unit is why automatic unit conversion is non-negotiable.",
-    "uuid": "3a823b65-197b-89dd-8f6c-9d07b99481c5",
+    "uuid": "f0760ebc-9192-861e-bc23-e58f9484d330",
     "words": [
       "use",
       "when",

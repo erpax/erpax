@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "used",
-    "uuid": "5c3d5757-514e-8c02-a1cf-54ef993c903d",
+    "uuid": "3ba90e45-e8fe-8008-b7ff-7c81c6f97579",
     "words": [
       "used"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "used: a schema.org component word, fused from programMembershipUsed, usedToDiagnose",
-    "uuid": "a302c3d5-d035-87ab-bb8b-191c28f30f12",
+    "source": "Use when reasoning about used as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "e5c1f8e3-80c9-812d-9224-3625a0d76ccd",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "used",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "programmembershipused",
-      "usedtodiagnose"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "used: a schema.org component word, fused from programMembershipUsed, usedToDiagnose"
+      "en": "Use when reasoning about used as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

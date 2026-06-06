@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "interacting",
-    "uuid": "6f5b7225-5d7f-8541-9093-398f9d274119",
+    "uuid": "6bc6d42e-b87b-8442-a0ca-4c70bc7b89bf",
     "words": [
       "interacting"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "interacting: a schema.org component word, fused from interactingDrug",
-    "uuid": "3df96e0d-bb13-8f43-ba1d-1b86b76d5872",
+    "source": "Use when reasoning about interacting as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "7edf515a-1cd4-8136-aa87-f43f888a6668",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "interacting",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "interactingdrug"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "interacting: a schema.org component word, fused from interactingDrug"
+      "en": "Use when reasoning about interacting as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "pub",
-    "uuid": "2aacc454-db7b-8398-86c0-903e3bf0bcdb",
+    "uuid": "cffd790c-3dbe-8dde-80dc-2c26b526fc1a",
     "words": [
       "pub"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "pub: a schema.org component word, fused from BarOrPub",
-    "uuid": "123b5022-a19b-8506-b4d0-7e6d0f47f6cc",
+    "source": "Use when reasoning about pub as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "3fa311de-383b-86df-a1bb-773f626ae460",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "pub",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "barorpub"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "pub: a schema.org component word, fused from BarOrPub"
+      "en": "Use when reasoning about pub as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

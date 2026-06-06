@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "formulary",
-    "uuid": "b8beea94-3662-84fd-9c6e-80cbd7ae9471",
+    "uuid": "2e5bd938-0c51-8d69-b052-2b18e6bdffc6",
     "words": [
       "formulary"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "formulary: a schema.org component word, fused from HealthPlanFormulary, includesHealthPlanFormulary",
-    "uuid": "9264a6cd-15c0-8cf8-812e-a836ff83cfea",
+    "source": "Use when reasoning about formulary as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "fd008052-1106-8f95-bad6-94edeb4e4f6c",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "formulary",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "healthplanformulary",
-      "includeshealthplanformulary"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "formulary: a schema.org component word, fused from HealthPlanFormulary, includesHealthPlanFormulary"
+      "en": "Use when reasoning about formulary as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "shopping",
-    "uuid": "0f722eda-aae8-8968-b176-7fd1060186f8",
+    "uuid": "efa27506-28f8-8022-ad7d-670898088d94",
     "words": [
       "shopping"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "shopping: a schema.org component word, fused from ShoppingCenter",
-    "uuid": "a40b38ac-007c-8cec-9c3f-399b5cb27395",
+    "source": "Use when reasoning about shopping as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "dc0afd1d-defa-8439-a4e2-e0ddb5709949",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "shopping",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "shoppingcenter"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "shopping: a schema.org component word, fused from ShoppingCenter"
+      "en": "Use when reasoning about shopping as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

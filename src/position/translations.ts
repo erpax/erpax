@@ -6,19 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "positions",
-    "uuid": "81496ca7-d971-8226-8bb2-35b75a2fdb33",
+    "source": "position",
+    "uuid": "59bfbf93-8cbd-8c08-93ad-acf7bde6c77c",
     "words": [
-      "positions"
+      "position"
     ],
     "values": {
-      "en": "positions"
+      "en": "position"
     }
   },
   {
     "key": "description",
     "source": "Use when defining job positions, the rate ladder, or government/society role structure. Each position is a rung on the harmonic ladder; its job description is computed; its conditions are content-addressed on the uuid chain (blockchain); government and society share one ladder.",
-    "uuid": "3d021cf4-528c-832d-abfc-78cfbc7ea4b6",
+    "uuid": "61431ce5-f439-835b-9d0d-2bb25e6cf6e8",
     "words": [
       "use",
       "when",

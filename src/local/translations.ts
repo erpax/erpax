@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "local",
-    "uuid": "97d5e65e-959b-874e-b3b5-6a35ac7515cb",
+    "uuid": "9a664cfb-579d-83e8-a811-829dd61840ee",
     "words": [
       "local"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "local: a schema.org component word, fused from LocalBusiness",
-    "uuid": "cdc3db6b-d57a-81e9-baab-7c1ae2f5a47a",
+    "source": "Use when reasoning about local as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "34b74f4e-063f-8f5f-8e05-ae7901fc687f",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "local",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "localbusiness"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "local: a schema.org component word, fused from LocalBusiness"
+      "en": "Use when reasoning about local as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

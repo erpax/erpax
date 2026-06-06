@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "compliance-deadlines",
-    "uuid": "2dc3da93-80f8-8dde-a12d-d132158387ef",
+    "uuid": "ee737fb7-ef6e-8b45-a98b-515ecd68cc6e",
     "words": [
       "compliance",
       "deadlines"
@@ -19,7 +19,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when tracking filing, audit, certification, reporting, payment, or disclosure deadlines per legal entity and jurisdiction — due-date management, on-track/at-risk/overdue status, and compliance calendar oversight per ISO-37301. The compliance-deadline calendar collection.",
-    "uuid": "2e7af6f4-46b7-803d-91d1-077ec0fb730e",
+    "uuid": "3ed464a7-c379-8318-9c65-c992e09740e4",
     "words": [
       "use",
       "when",

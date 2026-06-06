@@ -26,7 +26,7 @@
  * @compliance WCAG-2.1 §1.2.2 captions-prerecorded
  * @compliance WCAG-2.1 §1.2.5 audio-description-prerecorded
  * @audit ISO-19011:2018 audit-trail test-recording-provenance
- * @see src/endpoints/seed/erpax-product-pages.ts
+ * @see src/seed/erpax-product-pages.ts
  */
 
 import { promises as fs } from 'fs'

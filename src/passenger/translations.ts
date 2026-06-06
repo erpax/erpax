@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "passenger",
-    "uuid": "b72505e6-e491-8364-9508-cd246d3f452c",
+    "uuid": "addaccba-14b8-87e5-b32d-eb67bc4623d2",
     "words": [
       "passenger"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "passenger: a schema.org component word, fused from passengerPriorityStatus, passengerSequenceNumber",
-    "uuid": "778b4e1b-ab00-8ea5-91e9-25dda0661e77",
+    "source": "Use when reasoning about passenger as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "29068d08-199a-8f34-a507-9ef75e2a0380",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "passenger",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "passengerprioritystatus",
-      "passengersequencenumber"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "passenger: a schema.org component word, fused from passengerPriorityStatus, passengerSequenceNumber"
+      "en": "Use when reasoning about passenger as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

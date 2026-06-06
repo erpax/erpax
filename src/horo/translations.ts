@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "horo",
-    "uuid": "6ecf091f-c5aa-8a4d-b0b5-6a3c1cda5519",
+    "uuid": "d9405f16-f225-8313-b871-1fad0192d3f4",
     "words": [
       "horo"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "The seven-position state ring {1,2,4,8,7,5,9} (base·share·weave·crest·descent·round·unity) — the bounded, closed set every erpax flow/lifecycle STATE lives on. Read when modelling a state enum, per-state aggregate, state transition, or the A432 value anchor.",
-    "uuid": "2bc1aa24-c79e-8b3f-9dc1-4e106ea7bbfc",
+    "uuid": "2b449118-3331-8577-b106-700da31e9fa7",
     "words": [
       "the",
       "seven",

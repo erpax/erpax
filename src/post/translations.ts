@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "post",
-    "uuid": "9bd184d8-72a6-815d-901c-78a8f95961c4",
+    "uuid": "a2cf4b66-6d1c-8631-a1c9-d487d4c561fb",
     "words": [
       "post"
     ],
@@ -17,24 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "post: a schema.org component word, fused from PostOffice, blogPost, postOfficeBoxNumber, postOp",
-    "uuid": "45a8dac4-3b84-8164-a606-659b4d9f8beb",
+    "source": "Use when reasoning about post as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "39cabfe1-f324-8440-8007-cb06d3f876e2",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "post",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "postoffice",
-      "blogpost",
-      "postofficeboxnumber",
-      "postop"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "post: a schema.org component word, fused from PostOffice, blogPost, postOfficeBoxNumber, postOp"
+      "en": "Use when reasoning about post as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

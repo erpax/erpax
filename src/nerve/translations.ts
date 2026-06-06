@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "nerve",
-    "uuid": "ec5a845f-2ca9-835b-a786-afb29561e270",
+    "uuid": "76cb2aea-c68a-841d-b3d0-d408b8b48825",
     "words": [
       "nerve"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "A common pathway for the electrochemical nerve impulses that are transmitted along each of the axons.",
-    "uuid": "969e894a-940c-8a6b-b4b6-70167e397cc6",
+    "uuid": "1f749f0d-f951-835f-acf9-807ed918798c",
     "words": [
       "a",
       "common",

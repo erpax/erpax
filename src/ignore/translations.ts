@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "ignore",
-    "uuid": "dfddfb18-db96-8aa7-a625-799c1b1a5621",
+    "uuid": "13de5785-f2f7-8896-8a6e-2571c752920c",
     "words": [
       "ignore"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "ignore: a schema.org component word, fused from IgnoreAction",
-    "uuid": "18fc8ca9-ca01-8d5b-b4d0-5177891aa798",
+    "source": "Use when reasoning about ignore as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "f0d37761-2be4-8361-84c8-dc071b082dbf",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "ignore",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "ignoreaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "ignore: a schema.org component word, fused from IgnoreAction"
+      "en": "Use when reasoning about ignore as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

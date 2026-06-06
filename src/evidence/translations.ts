@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "evidence",
-    "uuid": "b263df3c-af22-865a-a82e-04628d4b8686",
+    "uuid": "1c8e0ab4-22eb-85f4-9e64-5b980febad20",
     "words": [
       "evidence"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "evidence: a schema.org component word, fused from MedicalEvidenceLevel, evidenceLevel, evidenceOrigin",
-    "uuid": "831c551d-00ce-8b9a-a31a-e053bc0a05b9",
+    "source": "Use when reasoning about evidence as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "4ab1c4be-367f-8b12-b087-f9ed04ca833b",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "evidence",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "medicalevidencelevel",
-      "evidencelevel",
-      "evidenceorigin"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "evidence: a schema.org component word, fused from MedicalEvidenceLevel, evidenceLevel, evidenceOrigin"
+      "en": "Use when reasoning about evidence as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

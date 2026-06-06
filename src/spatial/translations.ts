@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "spatial",
-    "uuid": "ca80f311-6d33-8544-918a-5d85bc06685a",
+    "uuid": "3cc88950-1b62-8921-99e3-a5a383ad3a37",
     "words": [
       "spatial"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "The \\\"spatial\\\" property can be used in cases when more specific properties (e.g. locationCreated, spatialCoverage, contentLocation) are not known to be appropriate.",
-    "uuid": "b659536a-312e-8802-860e-12b2283becba",
+    "uuid": "a8e3073e-b411-8163-a5dd-005b1a1de205",
     "words": [
       "the",
       "spatial",

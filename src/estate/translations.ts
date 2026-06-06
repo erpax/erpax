@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "estate",
-    "uuid": "466237ab-303d-82c4-adac-af5a0c7fdad4",
+    "uuid": "2be84810-00e0-8a2d-a491-a205c9bbcd61",
     "words": [
       "estate"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "estate: a schema.org component word, fused from RealEstateAgent, RealEstateListing, realEstateAgent",
-    "uuid": "7acb6d95-8166-85f3-9596-c4a487ee78ab",
+    "source": "Use when reasoning about estate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "75d775c0-dcfc-8c0f-9211-3ea478e6b499",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "estate",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "realestateagent",
-      "realestatelisting",
-      "realestateagent"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "estate: a schema.org component word, fused from RealEstateAgent, RealEstateListing, realEstateAgent"
+      "en": "Use when reasoning about estate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

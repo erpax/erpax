@@ -34,10 +34,26 @@ describe('projection: the analog negative (private key) is the maximum tamper co
     expect(p.inverse.binding).toBe('digest')
   })
 
-  it('a finite asymmetric anchor (ECDSA P-256) makes the key-recovery cost exactly 128 bits', () => {
+  it('a finite asymmetric anchor (ECDSA P-256) makes the key-recovery cost exactly 128 bits — and the prose never inherits "unbounded"', () => {
     const e = projectionProof('rfc3161-ecdsa-p256')
     expect(e.inverse.decryptKeyLog2).toBe(128)
     expect(e.inverse.unbounded).toBe(false)
+    // ground-don't-assert: a finite anchor must NOT carry the unbounded wording.
+    expect(e.note).not.toMatch(/unbounded|∞/)
+    expect(e.claim).not.toMatch(/unbounded|∞/)
+    expect(e.note).toMatch(/2\^128/)
+    expect(e.claim).toMatch(/rfc3161-ecdsa-p256/)
+  })
+
+  it('the no-anchor case (none ⇒ 0) claims no maximum — the inverse cost is 0, a free rewrite, never "unbounded"', () => {
+    const n = projectionProof('none')
+    expect(n.inverse.anchorKind).toBe('none')
+    expect(n.inverse.unbounded).toBe(false)
+    expect(n.inverse.decryptKeyLog2).toBe(0) // ANCHOR_STRENGTH_BITS['none'] = 0
+    expect(n.inverse.cheapestForgeLog2).toBe(0) // min(106-bit digest, 0) = 0
+    expect(n.inverse.binding).toBe('none')
+    expect(n.note).not.toMatch(/unbounded|∞/)
+    expect(n.note).toMatch(/free rewrite|no anchor/i)
   })
 
   it('names the construction (analog negative · reverse entropy) and is deterministic', () => {

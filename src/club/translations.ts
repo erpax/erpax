@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "club",
-    "uuid": "c479616d-309c-8e68-95e3-38d9871b5b34",
+    "uuid": "26cb8b07-808d-8701-92f5-a9e51e4c0987",
     "words": [
       "club"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "club: a schema.org component word, fused from ComedyClub, HealthClub, NightClub, SportsClub",
-    "uuid": "895321c8-6fb0-8fa0-8e9f-36931f1e3ff6",
+    "uuid": "656edfb9-3363-832d-9905-c18bc48cd02d",
     "words": [
       "club",
       "a",

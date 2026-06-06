@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "sodium",
-    "uuid": "a6258157-5a26-8b18-bdcf-f3b8f3c0d005",
+    "uuid": "fd3b0ad9-adf7-82aa-88b1-9fe82b8b56d3",
     "words": [
       "sodium"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "sodium: a schema.org component word, fused from sodiumContent",
-    "uuid": "6d3c5f77-64ff-8ab4-94d8-b74ed15b8efe",
+    "source": "Use when reasoning about sodium as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "003c3ee3-ac1a-8e96-9811-93bfc4bd7aef",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "sodium",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "sodiumcontent"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "sodium: a schema.org component word, fused from sodiumContent"
+      "en": "Use when reasoning about sodium as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

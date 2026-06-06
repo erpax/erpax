@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "extent",
-    "uuid": "8bf4f258-f54d-8ab3-9e48-82ca5f2cfe77",
+    "uuid": "9cccacd1-d699-8492-9e21-78eec9e74314",
     "words": [
       "extent"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "extent: a schema.org component word, fused from materialExtent",
-    "uuid": "860fa71d-441a-82a1-ae12-7bc37f2ed41a",
+    "source": "Use when reasoning about extent as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "75cd488c-aeb6-8a7a-9b38-48e53f14ad4f",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "extent",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "materialextent"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "extent: a schema.org component word, fused from materialExtent"
+      "en": "Use when reasoning about extent as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

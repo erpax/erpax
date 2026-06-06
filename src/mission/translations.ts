@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "mission",
-    "uuid": "dfac985e-cce4-8703-af9d-785d5f68c0e6",
+    "uuid": "c8c9ffc0-d555-87a4-bba5-180f8204846f",
     "words": [
       "mission"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "mission: a schema.org component word, fused from missionCoveragePrioritiesPolicy",
-    "uuid": "58e6cfa9-8d96-8dd7-a3c2-14d40e0595f7",
+    "source": "Use when reasoning about mission as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "d6d2eaa8-3af5-8d4f-a36a-7b0a31fda62f",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "mission",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "missioncoverageprioritiespolicy"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "mission: a schema.org component word, fused from missionCoveragePrioritiesPolicy"
+      "en": "Use when reasoning about mission as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

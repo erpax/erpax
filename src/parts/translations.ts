@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "parts",
-    "uuid": "f862e0f9-24ea-8820-8dd2-08e341ab00e3",
+    "uuid": "89fc724d-a107-8db1-a9ba-1281313078cf",
     "words": [
       "parts"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "parts: a schema.org component word, fused from AutoPartsStore",
-    "uuid": "136e3eee-fcb1-8602-b8d3-d559275d103b",
+    "source": "Use when reasoning about parts as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "c61e2e49-7c8e-8a7c-9238-fd771d8d65a4",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "parts",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "autopartsstore"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "parts: a schema.org component word, fused from AutoPartsStore"
+      "en": "Use when reasoning about parts as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

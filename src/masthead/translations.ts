@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "masthead",
-    "uuid": "af52220e-d8b1-8279-9153-bb0afdecac54",
+    "uuid": "31e9c6ac-0c91-80db-83e8-a522f779ad95",
     "words": [
       "masthead"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "For a NewsMediaOrganization, a link to the masthead page or a page listing top editorial management.",
-    "uuid": "d336484d-c7c6-80b7-947a-72a9e75d5b1d",
+    "uuid": "122e482f-698e-8920-8e91-f46f2d57ec5f",
     "words": [
       "for",
       "a",

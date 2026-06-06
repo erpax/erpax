@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "count",
-    "uuid": "03bc50c3-3ab3-84a3-ad2b-6ae47f38164f",
+    "uuid": "02362896-62bc-880d-8c80-fede53614d83",
     "words": [
       "count"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "count: a schema.org component word, fused from answerCount, commentCount, downvoteCount, interactionCount, offerCount, ratingCount",
-    "uuid": "346a13a2-9ceb-8938-8c1b-023c954cd917",
+    "source": "Use when reasoning about count as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "bd4c4433-3158-8d6b-9de5-926d82853ff4",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "count",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "answercount",
-      "commentcount",
-      "downvotecount",
-      "interactioncount",
-      "offercount",
-      "ratingcount"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "count: a schema.org component word, fused from answerCount, commentCount, downvoteCount, interactionCount, offerCount, ratingCount"
+      "en": "Use when reasoning about count as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "increases",
-    "uuid": "35b13e1f-da87-8680-848b-416ee5f50d6b",
+    "uuid": "b9322efb-b6ca-8393-8c1b-377ecdc6ce17",
     "words": [
       "increases"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "increases: a schema.org component word, fused from increasesRiskOf",
-    "uuid": "634126f9-af5a-81bb-ace7-8b3d9fd965fa",
+    "source": "Use when reasoning about increases as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "c17c63a6-d3d6-8623-bf6e-dae21e9287a3",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "increases",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "increasesriskof"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "increases: a schema.org component word, fused from increasesRiskOf"
+      "en": "Use when reasoning about increases as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "wholesale",
-    "uuid": "9dde5184-ecdd-89df-8019-7e042125fdec",
+    "uuid": "9f9e903e-b3fe-808b-89e1-313723e8fe0e",
     "words": [
       "wholesale"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "wholesale: a schema.org component word, fused from WholesaleStore",
-    "uuid": "243f86aa-0bbc-824c-ba4a-8a961e3c84ce",
+    "source": "Use when reasoning about wholesale as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "6a00fb6d-b5cc-888f-9158-7e21c14ae89f",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "wholesale",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "wholesalestore"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "wholesale: a schema.org component word, fused from WholesaleStore"
+      "en": "Use when reasoning about wholesale as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

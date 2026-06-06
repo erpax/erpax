@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "topic",
-    "uuid": "7bac5aba-6415-8c29-a7fd-421163ecd2d2",
+    "uuid": "fcba9063-5862-8caf-b5c6-ad0ce91822fd",
     "words": [
       "topic"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "topic: a schema.org component word, fused from HealthTopicContent",
-    "uuid": "aa033df6-c73c-8849-a9da-027e561fc58d",
+    "source": "Use when reasoning about topic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "2c6658e9-9b9e-80ef-bf78-22d89e117b4e",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "topic",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "healthtopiccontent"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "topic: a schema.org component word, fused from HealthTopicContent"
+      "en": "Use when reasoning about topic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "ho",
-    "uuid": "9e6221d4-5cbf-8311-a5af-2e1e706a0979",
+    "uuid": "24873b6d-7b38-835d-bef4-1eebe61d107f",
     "words": [
       "ho"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "ho: a schema.org component word, fused from cvdNumC19HOPats",
-    "uuid": "6cae3456-0299-8e5f-82fc-7f2980a32f44",
+    "source": "Use when reasoning about ho as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "5f056f21-418d-80d2-ada8-f9d6a723665d",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "ho",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "cvdnumc19hopats"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "ho: a schema.org component word, fused from cvdNumC19HOPats"
+      "en": "Use when reasoning about ho as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

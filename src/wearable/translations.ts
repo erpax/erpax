@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "wearable",
-    "uuid": "559445c5-7ead-8f21-ac3f-4bb28a7af271",
+    "uuid": "17041b2a-ccf3-8bb0-85f9-0be4e3597433",
     "words": [
       "wearable"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "wearable: a schema.org component word, fused from WearableMeasurementTypeEnumeration, WearableSizeGroupEnumeration, WearableSizeSystemEnumeration",
-    "uuid": "7fb4a665-05ea-8767-a3ea-bf70cc21ba4e",
+    "source": "Use when reasoning about wearable as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "b53a9b71-85d5-8007-b367-2af1714bd1bc",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "wearable",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "wearablemeasurementtypeenumeration",
-      "wearablesizegroupenumeration",
-      "wearablesizesystemenumeration"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "wearable: a schema.org component word, fused from WearableMeasurementTypeEnumeration, WearableSizeGroupEnumeration, WearableSizeSystemEnumeration"
+      "en": "Use when reasoning about wearable as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

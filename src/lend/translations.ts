@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "lend",
-    "uuid": "501534ff-987b-8352-a515-76084eb11479",
+    "uuid": "11da4c96-4fc1-8653-b475-0d0634cef6dc",
     "words": [
       "lend"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "lend: a schema.org component word, fused from LendAction",
-    "uuid": "e34ff893-b355-8757-b23f-145b49cf9a09",
+    "source": "Use when reasoning about lend as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "f090d72d-0f61-8ee5-9e0d-c47f90d78389",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "lend",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "lendaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "lend: a schema.org component word, fused from LendAction"
+      "en": "Use when reasoning about lend as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

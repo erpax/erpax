@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "denominator",
-    "uuid": "97603b43-b121-8a0e-b680-2855741d2940",
+    "uuid": "b609e8f1-a401-82ba-b5c5-8c145dd18f82",
     "words": [
       "denominator"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "denominator: a schema.org component word, fused from measurementDenominator",
-    "uuid": "45cf87b9-c425-8031-bec2-e8468ef08342",
+    "uuid": "c05a0dc0-d1a3-87aa-9556-77f5c6ce9433",
     "words": [
       "denominator",
       "a",

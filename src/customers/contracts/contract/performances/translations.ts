@@ -6,20 +6,20 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "contract-performance",
-    "uuid": "97b1e71c-72b8-8fff-a9c7-03a37cb084e8",
+    "source": "contract-performances",
+    "uuid": "5ec65a47-3304-88c1-8f52-79a3f7211596",
     "words": [
       "contract",
-      "performance"
+      "performances"
     ],
     "values": {
-      "en": "contract-performance"
+      "en": "contract-performances"
     }
   },
   {
     "key": "description",
     "source": "Use when tracking performance milestones and control-transfer events that gate revenue recognition — planned vs. actual completion dates, over-time or point-in-time determination per IFRS-15 §31-35, acceptance criteria, and associated invoice link. The milestone control-transfer collection.",
-    "uuid": "e6dc3ad3-d4c8-8e80-a914-ff30e59d0081",
+    "uuid": "3cd6aaec-0aa0-8957-8305-715ec2889217",
     "words": [
       "use",
       "when",

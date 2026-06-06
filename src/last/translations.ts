@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "last",
-    "uuid": "cbed6fe8-ca33-820a-b1a9-e122eb69554f",
+    "uuid": "7a0b19d8-a5e9-8daf-96ab-ca6e3ff0925c",
     "words": [
       "last"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "last: a schema.org component word, fused from countryOfLastProcessing, lastReviewed",
-    "uuid": "aecf7a21-e9b0-82a8-a65f-8efef8b0eb65",
+    "source": "Use when reasoning about last as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "eb5f0645-c9ad-8c46-a613-8845cfb5beb0",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "last",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "countryoflastprocessing",
-      "lastreviewed"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "last: a schema.org component word, fused from countryOfLastProcessing, lastReviewed"
+      "en": "Use when reasoning about last as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

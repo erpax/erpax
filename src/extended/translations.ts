@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "extended",
-    "uuid": "fd3d0093-f55b-8901-b233-1b80f7985158",
+    "uuid": "96125ab2-a5e7-8671-bdbd-25eaa2fb80ab",
     "words": [
       "extended"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "extended: a schema.org component word, fused from extendedAddress",
-    "uuid": "0a186afd-998f-87a0-9cec-5cfd06b79528",
+    "source": "Use when reasoning about extended as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "eebf2a53-c92b-8fd5-a8c3-458459b8d568",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "extended",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "extendedaddress"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "extended: a schema.org component word, fused from extendedAddress"
+      "en": "Use when reasoning about extended as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "opinion",
-    "uuid": "d9da5764-842e-86ac-a344-77314422e547",
+    "uuid": "3d49fba9-7404-8b22-9e59-5f80ee46ea53",
     "words": [
       "opinion"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "opinion: a schema.org component word, fused from OpinionNewsArticle",
-    "uuid": "92c55d3e-335d-8622-a3b9-9b1065453da7",
+    "source": "Use when reasoning about opinion as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "1c824541-72fa-81bc-9148-0ea28cdd6a49",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "opinion",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "opinionnewsarticle"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "opinion: a schema.org component word, fused from OpinionNewsArticle"
+      "en": "Use when reasoning about opinion as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

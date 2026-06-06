@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "facility",
-    "uuid": "e2af5659-47a7-8d55-957d-32e3c59661f9",
+    "uuid": "166456b9-83e8-83c8-85b7-687c074bc48c",
     "words": [
       "facility"
     ],
@@ -17,24 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "facility: a schema.org component word, fused from CovidTestingFacility, ParkingFacility, cvdFacilityCounty, cvdFacilityId",
-    "uuid": "f3d0631e-2096-8904-85a7-455e146aadfd",
+    "source": "Use when reasoning about facility as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "e246e6b5-a5f3-8743-a513-2b6bde6d2da9",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "facility",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "covidtestingfacility",
-      "parkingfacility",
-      "cvdfacilitycounty",
-      "cvdfacilityid"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "facility: a schema.org component word, fused from CovidTestingFacility, ParkingFacility, cvdFacilityCounty, cvdFacilityId"
+      "en": "Use when reasoning about facility as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

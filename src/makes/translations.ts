@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "makes",
-    "uuid": "9c55e6fe-51a4-8ff6-9306-5044ff88fb3c",
+    "uuid": "570ab0c9-b7a3-8c2f-9c10-fcd633edf8c8",
     "words": [
       "makes"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "makes: a schema.org component word, fused from makesOffer",
-    "uuid": "d2260e6f-4c0e-8937-b20a-0ff1c7320f7d",
+    "source": "Use when reasoning about makes as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "5c55249d-b198-8f2d-869f-01df8f1adf63",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "makes",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "makesoffer"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "makes: a schema.org component word, fused from makesOffer"
+      "en": "Use when reasoning about makes as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

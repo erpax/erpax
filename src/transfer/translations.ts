@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "transfer",
-    "uuid": "24a9c08e-95dc-8b96-807c-038f421e9839",
+    "uuid": "95fb336d-0c45-8cad-9604-8f0e5922f4da",
     "words": [
       "transfer"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "transfer: a schema.org component word, fused from MoneyTransfer, TransferAction",
-    "uuid": "4f109a3d-426b-8c47-91ee-179806bcafd2",
+    "source": "Use when reasoning about transfer as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "6ef6b4f2-8b1e-85ef-9b5e-54cb4ac8cd22",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "transfer",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "moneytransfer",
-      "transferaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "transfer: a schema.org component word, fused from MoneyTransfer, TransferAction"
+      "en": "Use when reasoning about transfer as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

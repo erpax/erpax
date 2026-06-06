@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "progression",
-    "uuid": "dffa7ed7-6a42-850d-9d9e-5e790f3d092e",
+    "uuid": "9ded40e1-f024-817d-bd31-ed4c3d2d212b",
     "words": [
       "progression"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "progression: a schema.org component word, fused from naturalProgression",
-    "uuid": "ccc182ca-f448-84c0-a8a3-ffccae2c6f74",
+    "source": "Use when reasoning about progression as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "04c65768-54be-86bb-8e55-a6c9b5beb91f",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "progression",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "naturalprogression"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "progression: a schema.org component word, fused from naturalProgression"
+      "en": "Use when reasoning about progression as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

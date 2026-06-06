@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "measured",
-    "uuid": "c332007a-d3da-81fc-9d90-337b023a058f",
+    "uuid": "4310d31e-f902-8894-8043-1a5134d8c199",
     "words": [
       "measured"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "measured: a schema.org component word, fused from measuredProperty, variableMeasured, variablesMeasured",
-    "uuid": "8f527d99-0db3-83e8-b13b-e6090c4083ea",
+    "source": "Use when reasoning about measured as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "922117f1-020a-8f3a-bf1a-73e1bdca9d67",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "measured",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "measuredproperty",
-      "variablemeasured",
-      "variablesmeasured"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "measured: a schema.org component word, fused from measuredProperty, variableMeasured, variablesMeasured"
+      "en": "Use when reasoning about measured as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

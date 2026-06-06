@@ -7,12 +7,63 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "analytics",
-    "uuid": "e4f35982-507c-8974-ad6d-a0a147fffb76",
+    "uuid": "1e1d4000-e724-879d-846e-e62b59be6535",
     "words": [
       "analytics"
     ],
     "values": {
       "en": "analytics"
+    }
+  },
+  {
+    "key": "description",
+    "source": "Use when generating post-close financial analytics — budget-vs-actual and period-over-period variance with waterfall decomposition, the sixteen liquidity/profitability/solvency/efficiency ratios, IFRS-8 business and geographic segment reporting, and executive KPI dashboards, once audit and consolidation are approved.",
+    "uuid": "ba985329-cb7a-8f4b-9016-a2193e8700c3",
+    "words": [
+      "use",
+      "when",
+      "generating",
+      "post",
+      "close",
+      "financial",
+      "analytics",
+      "budget",
+      "vs",
+      "actual",
+      "and",
+      "period",
+      "over",
+      "period",
+      "variance",
+      "with",
+      "waterfall",
+      "decomposition",
+      "the",
+      "sixteen",
+      "liquidity",
+      "profitability",
+      "solvency",
+      "efficiency",
+      "ratios",
+      "ifrs",
+      "business",
+      "and",
+      "geographic",
+      "segment",
+      "reporting",
+      "and",
+      "executive",
+      "kpi",
+      "dashboards",
+      "once",
+      "audit",
+      "and",
+      "consolidation",
+      "are",
+      "approved"
+    ],
+    "values": {
+      "en": "Use when generating post-close financial analytics — budget-vs-actual and period-over-period variance with waterfall decomposition, the sixteen liquidity/profitability/solvency/efficiency ratios, IFRS-8 business and geographic segment reporting, and executive KPI dashboards, once audit and consolidation are approved."
     }
   }
 ]

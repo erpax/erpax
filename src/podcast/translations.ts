@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "podcast",
-    "uuid": "b061daa8-2bd3-8a81-8800-891161c88b7a",
+    "uuid": "975b2bcd-74af-8f20-93ea-005f3536e7d5",
     "words": [
       "podcast"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "podcast: a schema.org component word, fused from PodcastEpisode, PodcastSeason, PodcastSeries",
-    "uuid": "ebaf1522-dbd9-8e09-b8da-4816f9eff866",
+    "source": "Use when reasoning about podcast as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "b1f261e7-5711-8839-a5fc-123bc4548672",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "podcast",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "podcastepisode",
-      "podcastseason",
-      "podcastseries"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "podcast: a schema.org component word, fused from PodcastEpisode, PodcastSeason, PodcastSeries"
+      "en": "Use when reasoning about podcast as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

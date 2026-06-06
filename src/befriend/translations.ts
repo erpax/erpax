@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "befriend",
-    "uuid": "dad2afe0-66ca-87f9-9c0d-052e7d942509",
+    "uuid": "796f0521-699a-8aa0-8a1d-8702e4a79e0d",
     "words": [
       "befriend"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "befriend: a schema.org component word, fused from BefriendAction",
-    "uuid": "9194ba97-d236-8d1d-aabf-64f4774ed134",
+    "source": "Use when reasoning about befriend as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "151ba1c3-ecf9-8291-be47-a7a0acfd5058",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "befriend",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "befriendaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "befriend: a schema.org component word, fused from BefriendAction"
+      "en": "Use when reasoning about befriend as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "variables",
-    "uuid": "fdb75b74-fc22-8d43-bcb0-6d4d65258079",
+    "uuid": "c887f2e6-3a2b-88c1-a10f-9227aae13486",
     "words": [
       "variables"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "variables: a schema.org component word, fused from variablesMeasured",
-    "uuid": "a681d873-e402-86e0-b98f-2ac7f838abde",
+    "source": "Use when reasoning about variables as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "c94ac497-7d5c-8032-a089-e40b4d3920ea",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "variables",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "variablesmeasured"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "variables: a schema.org component word, fused from variablesMeasured"
+      "en": "Use when reasoning about variables as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

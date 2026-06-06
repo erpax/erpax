@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "eat",
-    "uuid": "0b3c6fb7-ceae-88b0-97b8-26a2f9e43112",
+    "uuid": "4a9bb9fb-a1a4-8169-82b5-fe0528b1e7fc",
     "words": [
       "eat"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "eat: a schema.org component word, fused from EatAction",
-    "uuid": "058eae8a-5141-87f4-8a82-bd51c0bab253",
+    "source": "Use when reasoning about eat as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "fc941a60-c6c3-88be-ba40-ca65c40b1b0a",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "eat",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "eataction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "eat: a schema.org component word, fused from EatAction"
+      "en": "Use when reasoning about eat as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

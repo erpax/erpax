@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "graft",
-    "uuid": "f187b068-f02f-8181-8036-c5ee5fa2ed2c",
+    "uuid": "087f3103-c86f-8f62-8b81-0d2da42fe9dc",
     "words": [
       "graft"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when joining a scion to a rootstock into one plant — the graft is the propagation union (variety on top, root system below), and field top-working to change variety. The perennial's clonal propagation event; the plant is not seeded but assembled from two chosen parts.",
-    "uuid": "9bd5f048-bdef-86c9-b285-c4f39ad3e8dd",
+    "uuid": "6a18c81f-c2c7-8f23-9ca5-60091464f52d",
     "words": [
       "use",
       "when",

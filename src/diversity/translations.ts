@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "diversity",
-    "uuid": "3c966a46-4cf8-8102-bc4f-c153ddef8ef9",
+    "uuid": "98c56cae-47f1-8a0b-8214-112cd3026c76",
     "words": [
       "diversity"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "diversity: a schema.org component word, fused from diversityPolicy, diversityStaffingReport",
-    "uuid": "5836a1d8-b8e4-867c-814e-a5cba942857e",
+    "source": "Use when reasoning about diversity as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "53e1c87b-8d75-8a35-8aff-f407354d77ec",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "diversity",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "diversitypolicy",
-      "diversitystaffingreport"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "diversity: a schema.org component word, fused from diversityPolicy, diversityStaffingReport"
+      "en": "Use when reasoning about diversity as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

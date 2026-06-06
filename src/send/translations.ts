@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "send",
-    "uuid": "0694bed0-8b97-8f66-9e77-52aecd897c6d",
+    "uuid": "7aef3441-0676-86b7-8c30-f55bd3bfa15b",
     "words": [
       "send"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "send: a schema.org component word, fused from SendAction",
-    "uuid": "e7cd2db9-1694-884c-a5b5-0f1b12f25f50",
+    "source": "Use when reasoning about send as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "bafb29f6-a0b1-8856-8b5c-e122bf4fe612",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "send",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "sendaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "send: a schema.org component word, fused from SendAction"
+      "en": "Use when reasoning about send as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

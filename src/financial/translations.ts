@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "financial",
-    "uuid": "061631f6-2c20-8fbf-8ffa-64087cc1494c",
+    "uuid": "aa0a41bc-f87e-88d6-98e1-1f0d38cade35",
     "words": [
       "financial"
     ],
@@ -17,24 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "financial: a schema.org component word, fused from FinancialIncentive, FinancialProduct, FinancialService, financialAidEligible",
-    "uuid": "36a71920-908d-8689-aac0-b2eb872f3495",
+    "source": "Use when reasoning about financial as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "b23a4a5b-5deb-812d-af95-6792c7b5cd75",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "financial",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "financialincentive",
-      "financialproduct",
-      "financialservice",
-      "financialaideligible"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "financial: a schema.org component word, fused from FinancialIncentive, FinancialProduct, FinancialService, financialAidEligible"
+      "en": "Use when reasoning about financial as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

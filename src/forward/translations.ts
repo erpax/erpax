@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "forward",
-    "uuid": "2c662bdc-6af4-8718-8e9a-2caa8ae61d97",
+    "uuid": "5374879f-e16b-8d5a-8efb-7da5ca540017",
     "words": [
       "forward"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "forward: a schema.org component word, fused from numberOfForwardGears",
-    "uuid": "4a988c84-5537-82b9-9fff-5f93fefc044c",
+    "source": "Use when reasoning about forward as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "fa28c649-1e8f-89aa-9885-cdd46705a8a8",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "forward",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "numberofforwardgears"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "forward: a schema.org component word, fused from numberOfForwardGears"
+      "en": "Use when reasoning about forward as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

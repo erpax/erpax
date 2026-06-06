@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "radiation",
-    "uuid": "2be8bfc8-94f1-8368-a4a5-9bfada76066b",
+    "uuid": "0aa3449f-abd6-8caa-979f-854cd0499d71",
     "words": [
       "radiation"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "radiation: a schema.org component word, fused from RadiationTherapy",
-    "uuid": "e0687adc-e5cd-894b-aa5e-ad9999b0907f",
+    "source": "Use when reasoning about radiation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "5ca9aa20-5842-8907-92ff-d7d7b19e3ce8",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "radiation",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "radiationtherapy"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "radiation: a schema.org component word, fused from RadiationTherapy"
+      "en": "Use when reasoning about radiation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

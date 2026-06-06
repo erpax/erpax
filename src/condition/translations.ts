@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "condition",
-    "uuid": "e333abdd-5997-895a-8a91-3afa291acfb2",
+    "uuid": "74234198-dae7-832d-8709-749dbeb93bdb",
     "words": [
       "condition"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "condition: a schema.org component word, fused from MedicalCondition, MedicalConditionStage, OfferItemCondition, healthCondition, itemCondition, relatedCondition",
-    "uuid": "6213db8a-fff2-8bb2-b8d4-e691776125f8",
+    "source": "Use when reasoning about condition as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "00800b3b-7582-88f3-9334-9b64c65f42e1",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "condition",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "medicalcondition",
-      "medicalconditionstage",
-      "offeritemcondition",
-      "healthcondition",
-      "itemcondition",
-      "relatedcondition"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "condition: a schema.org component word, fused from MedicalCondition, MedicalConditionStage, OfferItemCondition, healthCondition, itemCondition, relatedCondition"
+      "en": "Use when reasoning about condition as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

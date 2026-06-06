@@ -16,7 +16,7 @@
  * @audit every field is read/derived from the live matrix indexes — never hand-asserted
  * @see ./SKILL.md -- ../uuid/matrix (the collider + its query surface) -- ../entropy -- ../horo -- ../fusion
  */
-import { UUID_MATRIX_NODES, UUID_MATRIX_EDGES, matrixDigest, verifyRoot } from '@/uuid/matrix'
+import { matrixDigest, verifyRoot } from '@/uuid/matrix'
 import { entropy, orphans } from '@/entropy'
 import { composeSteps, HORO_DIGITS } from '@/horo'
 import { TRINITY_FILES } from '@/trinity'

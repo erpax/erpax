@@ -226,7 +226,12 @@ export interface LocalizationFusionInput {
   readonly levels?: number
   /** Lexical rich-text nodes — the densest surface (a whole tree per locale). */
   readonly lexicalNodes?: number
-  /** fraction of the store wired in content-addressed identity, 0..1 (default 1). */
+  /**
+   * MEASURED fraction of the store wired in content-addressed identity, 0..1.
+   * OMIT it (the conservative default) and the fusion degrades to the finite
+   * 2^106 digest floor — fail-closed; the unbounded forge is claimed ONLY from a
+   * supplied measured coverage, never assumed.
+   */
   readonly coverage?: number
   /** chain depth to genesis for the verifier (default: elements). */
   readonly chainDepth?: number
@@ -250,7 +255,7 @@ export interface LocalizationFusion {
   readonly tamper: CrackVerdict
   /** proof nucleus — the O(N) verifier cost to audit the same surface. */
   readonly proof: TamperReverseCost
-  /** forge cost in bits (∞ at full coverage). */
+  /** forge cost in bits — the finite 2^106 floor when coverage is omitted, ∞ only at a MEASURED full coverage. */
   readonly forgeBits: number
   /** verify cost in bits — O(N) ⇒ log2 N. */
   readonly verifyBits: number
@@ -259,14 +264,22 @@ export interface LocalizationFusion {
 }
 
 /**
- * The reaction. Localize all aspects ⇒ coverage → 1 ⇒ forge → ∞, while the
- * proof side stays O(N): the gap (fusionBits) is the trust released without a
- * trusted party. "Localisation further increases the tamper cost" and its dual
- * "proof", fused into one verdict.
+ * The reaction. A MEASURED localize of all aspects ⇒ coverage → 1 ⇒ forge → ∞,
+ * while the proof side stays O(N): the gap (fusionBits) is the trust released
+ * without a trusted party. "Localisation further increases the tamper cost" and
+ * its dual "proof", fused into one verdict. When coverage is NOT supplied the
+ * fusion is honest-by-default — the finite 2^106 digest floor, never an assumed ∞.
  */
 export function localizationFusion(input: LocalizationFusionInput): LocalizationFusion {
   const checks = localizationChecks(input)
-  const coverage = input.coverage ?? 1
+  // Fail-closed / ground-don't-assert: an OMITTED coverage degrades to the
+  // conservative no-coverage digest floor (crackVerdict with coverage=undefined
+  // ⇒ coverageCost 0 ⇒ the finite 2^106 second-preimage), NOT optimistically to
+  // ∞. localizationFusion may only claim the unbounded forge when a MEASURED
+  // coverage is supplied — never from a missing input. Mirrors dry-proof's honest
+  // default (omit coverage ⇒ floor). The old `coverage ?? 1` minted a bare ∞ with
+  // zero grounding; removed.
+  const coverage = input.coverage
   const tamper = crackVerdict({ coverage, checks })
   const depth = Math.max(input.chainDepth ?? input.elements, 1)
   const proof = computeTamperReverseCost({

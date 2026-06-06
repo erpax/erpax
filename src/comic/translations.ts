@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "comic",
-    "uuid": "73f998f8-4d93-8411-8c7e-9cce1149af15",
+    "uuid": "8e1b204a-5c82-8f1c-a5fc-eb8d32c6b244",
     "words": [
       "comic"
     ],
@@ -17,24 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "comic: a schema.org component word, fused from ComicCoverArt, ComicIssue, ComicSeries, ComicStory",
-    "uuid": "da8cdf72-4e0f-8dc5-89d2-b059c319c3e9",
+    "source": "Use when reasoning about comic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "758ae9e8-89f4-8b42-9e99-1848689c3e0f",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "comic",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "comiccoverart",
-      "comicissue",
-      "comicseries",
-      "comicstory"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "comic: a schema.org component word, fused from ComicCoverArt, ComicIssue, ComicSeries, ComicStory"
+      "en": "Use when reasoning about comic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "copyright",
-    "uuid": "fa055dc3-a17a-8f99-accf-7ba5514c5f95",
+    "uuid": "85497d95-8bf3-8d0f-b273-51028a660ce7",
     "words": [
       "copyright"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "copyright: a schema.org component word, fused from copyrightHolder, copyrightNotice, copyrightYear",
-    "uuid": "8eb48c64-3793-8bec-b99a-77a98820720f",
+    "source": "Use when reasoning about copyright as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "065ac646-3236-8775-97f1-589b96f46e3b",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "copyright",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "copyrightholder",
-      "copyrightnotice",
-      "copyrightyear"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "copyright: a schema.org component word, fused from copyrightHolder, copyrightNotice, copyrightYear"
+      "en": "Use when reasoning about copyright as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

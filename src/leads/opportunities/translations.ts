@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "opportunities",
-    "uuid": "5fd86686-99f0-8e75-ab0c-145eb2881ae8",
+    "uuid": "68a6c2d6-35dd-8769-913f-86605a52e5f6",
     "words": [
       "opportunities"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when tracking deals through the sales pipeline — stage progression from qualification to close-won/close-lost, weighted forecast (amount × probability), forecast categories, and contract creation on close-won. The CRM deal-pipeline collection.",
-    "uuid": "94c9857b-1e83-87df-9aee-ac928a844585",
+    "uuid": "76f068ce-7521-841f-bd33-46c4b8d39617",
     "words": [
       "use",
       "when",

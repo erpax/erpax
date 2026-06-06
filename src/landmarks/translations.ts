@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "landmarks",
-    "uuid": "dda607e3-e6a7-8fdd-bc05-efe6e5b6dac8",
+    "uuid": "b9696c3b-9d70-880b-87ae-afc6c4bdd6a2",
     "words": [
       "landmarks"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "landmarks: a schema.org component word, fused from LandmarksOrHistoricalBuildings",
-    "uuid": "3f083b90-2d88-8f32-a07b-717a5eb0fdbf",
+    "source": "Use when reasoning about landmarks as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "c8dedab3-9e55-84ea-a83a-41b0eb8496ef",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "landmarks",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "landmarksorhistoricalbuildings"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "landmarks: a schema.org component word, fused from LandmarksOrHistoricalBuildings"
+      "en": "Use when reasoning about landmarks as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

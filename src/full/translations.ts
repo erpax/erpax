@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "full",
-    "uuid": "c439479e-0f41-822f-9a1d-785995e66339",
+    "uuid": "1e0ec79d-4b3f-82b0-9776-9f63adf0f5ba",
     "words": [
       "full"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "full: a schema.org component word, fused from numberOfFullBathrooms",
-    "uuid": "07e9e774-e29d-8e2c-914d-f845824d9e86",
+    "source": "Use when reasoning about full as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "98a6511b-26a1-8ffe-9092-59a199a584f2",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "full",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "numberoffullbathrooms"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "full: a schema.org component word, fused from numberOfFullBathrooms"
+      "en": "Use when reasoning about full as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

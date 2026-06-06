@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "ownership",
-    "uuid": "2af3a54b-ae34-8f6d-a826-f40897a565e1",
+    "uuid": "6136c334-e519-88de-baa3-db352cbdccfc",
     "words": [
       "ownership"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "ownership: a schema.org component word, fused from OwnershipInfo, ownershipFundingInfo",
-    "uuid": "dbd3e75b-ad62-864a-ac0d-b1a5c91f513c",
+    "source": "Use when reasoning about ownership as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "bbf073de-885d-8610-84c4-2fbc7c2d0538",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "ownership",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "ownershipinfo",
-      "ownershipfundinginfo"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "ownership: a schema.org component word, fused from OwnershipInfo, ownershipFundingInfo"
+      "en": "Use when reasoning about ownership as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

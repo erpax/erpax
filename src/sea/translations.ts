@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "sea",
-    "uuid": "e74ef119-2358-8b12-9cc9-63c39d072141",
+    "uuid": "9214b8a0-5fe8-8e46-9728-cd7a46b9c4db",
     "words": [
       "sea"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "sea: a schema.org component word, fused from SeaBodyOfWater",
-    "uuid": "7246df89-b4a9-80c6-b039-d7a78c5928b3",
+    "source": "Use when reasoning about sea as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "86d22672-ed80-857c-8f2d-97cd6e039ffd",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "sea",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "seabodyofwater"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "sea: a schema.org component word, fused from SeaBodyOfWater"
+      "en": "Use when reasoning about sea as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

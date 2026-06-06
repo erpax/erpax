@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "supto",
-    "uuid": "836c5e4c-8733-81e1-83d7-423d5a702fd7",
+    "uuid": "c46bf388-4572-8578-bd20-836eb1d59b0f",
     "words": [
       "supto"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Bulgarian Наредба Н-18 / СУПТО retail fiscal regime — the УНП (unique sales number XXXXXXXX-ZZZZ-0000001), no-delete / reversal-only immutability, read-only audit profile, the monthly standardized audit (XML, Appendix 38), and fiscal-device (ФУ) receipt linkage. Read when implementing BG point-of-sale compliance, or as the worked example of mapping a government audit regime onto the content-uuid model — СУПТО ≈ a state-mandated content-addressed audit system.",
-    "uuid": "f6aaa6bb-b739-8494-826f-98ab34a4c0b4",
+    "uuid": "72b278db-853d-8b8b-8514-f015135978c3",
     "words": [
       "bulgarian",
       "retail",

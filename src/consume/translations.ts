@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "consume",
-    "uuid": "6b3b5e35-0c29-89cf-8c24-8110bb156e96",
+    "uuid": "63385108-daf1-8094-b5e9-542505bfe0e7",
     "words": [
       "consume"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "consume: a schema.org component word, fused from ConsumeAction",
-    "uuid": "58f7a3b8-b603-8a9d-822c-5ad4a5205ef3",
+    "source": "Use when reasoning about consume as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "b1ead8ec-2ea9-8dc8-87a7-a1153be8feb9",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "consume",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "consumeaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "consume: a schema.org component word, fused from ConsumeAction"
+      "en": "Use when reasoning about consume as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

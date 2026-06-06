@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "how",
-    "uuid": "834c9c80-6aa6-8df1-bb2a-9c6006a73bf4",
+    "uuid": "1c46a400-4063-8087-ba9f-54933c53617b",
     "words": [
       "how"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Instructions that explain how to achieve a result by performing a sequence of steps.",
-    "uuid": "598a98bf-8eb7-8d32-b369-99721c9baea5",
+    "uuid": "dbbe8e1b-a2ed-809d-b3a1-c153084400e6",
     "words": [
       "instructions",
       "that",

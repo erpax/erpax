@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "drained",
-    "uuid": "ab7e38a9-ade9-8663-8b7e-59e6d23ab008",
+    "uuid": "64e12568-0eac-8576-bf68-084e984fec84",
     "words": [
       "drained"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "drained: a schema.org component word, fused from regionDrained",
-    "uuid": "502f6ce2-c560-8c35-9897-caae99b75a1d",
+    "source": "Use when reasoning about drained as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "336eb5c4-7a1a-850f-abb9-a00ff415fd05",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "drained",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "regiondrained"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "drained: a schema.org component word, fused from regionDrained"
+      "en": "Use when reasoning about drained as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

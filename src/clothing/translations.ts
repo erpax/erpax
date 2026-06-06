@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "clothing",
-    "uuid": "5919f634-c97f-8cc0-89d6-ae0ad26a7ebf",
+    "uuid": "4fd198af-8df3-8452-91e0-a98e585d92f1",
     "words": [
       "clothing"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "clothing: a schema.org component word, fused from ClothingStore, MensClothingStore",
-    "uuid": "dda884aa-1675-8430-b75d-1909549f2cd5",
+    "source": "Use when reasoning about clothing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "26102459-2957-8eaa-8569-f699a8b65797",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "clothing",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "clothingstore",
-      "mensclothingstore"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "clothing: a schema.org component word, fused from ClothingStore, MensClothingStore"
+      "en": "Use when reasoning about clothing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

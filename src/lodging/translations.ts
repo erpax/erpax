@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "lodging",
-    "uuid": "fe047a7e-62b9-8a19-86f3-a99d474c1ddf",
+    "uuid": "da0485f7-b477-8c50-a331-a7f07db5ea23",
     "words": [
       "lodging"
     ],
@@ -17,24 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "lodging: a schema.org component word, fused from LodgingBusiness, LodgingReservation, lodgingUnitDescription, lodgingUnitType",
-    "uuid": "df48acbb-9392-859f-a840-25ccb9b987f4",
+    "source": "Use when reasoning about lodging as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "7c6f6161-c1f3-8b3c-ae48-18db48b742d9",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "lodging",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "lodgingbusiness",
-      "lodgingreservation",
-      "lodgingunitdescription",
-      "lodgingunittype"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "lodging: a schema.org component word, fused from LodgingBusiness, LodgingReservation, lodgingUnitDescription, lodgingUnitType"
+      "en": "Use when reasoning about lodging as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

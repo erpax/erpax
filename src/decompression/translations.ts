@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "decompression",
-    "uuid": "cc63cc9e-c934-8715-ab70-c0834276135a",
+    "uuid": "4ea923f2-d487-810b-80e5-3b314ab97aac",
     "words": [
       "decompression"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the dive/decompression metaphor for erpax math — on-gas/off-gas as take/give, the gas debt as a conserved transaction balanced before close, half-time doubling as the rodin coil, deco stops as horo positions, M-values as the harmony bound, and the {1,2,3} basic-team basis (cave·recreational·technical = self·duality·trinity).",
-    "uuid": "f14ea30f-e14c-82ab-9252-a109ac881ef0",
+    "uuid": "bfe98e91-21cf-817b-b612-5c2a007c6254",
     "words": [
       "use",
       "when",

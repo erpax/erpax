@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "tour",
-    "uuid": "7ab27cad-2c19-87a6-bf76-0cd3e9d049e7",
+    "uuid": "637b4252-b673-87bb-8f8f-73c9fbba0ed3",
     "words": [
       "tour"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "tour: a schema.org component word, fused from tourBookingPage",
-    "uuid": "f8b7b023-8595-8027-a91f-26faca572e93",
+    "source": "Use when reasoning about tour as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "391dba30-b3e7-8f27-af4d-8f3a9b4377ef",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "tour",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "tourbookingpage"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "tour: a schema.org component word, fused from tourBookingPage"
+      "en": "Use when reasoning about tour as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

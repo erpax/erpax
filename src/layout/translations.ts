@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "layout",
-    "uuid": "56639598-cf0b-816f-8de6-07ca73605316",
+    "uuid": "0e9db199-b4db-8aac-b067-755c2b7c79e4",
     "words": [
       "layout"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "layout: a schema.org component word, fused from layoutImage",
-    "uuid": "844d7ebe-5f0f-800a-bca1-60fff2216283",
+    "source": "Use when reasoning about layout as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "a2f820ab-99de-8409-a451-06963a5b7bb2",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "layout",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "layoutimage"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "layout: a schema.org component word, fused from layoutImage"
+      "en": "Use when reasoning about layout as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

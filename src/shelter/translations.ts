@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "shelter",
-    "uuid": "24f76ed9-df2b-8bea-b316-a6fc71778895",
+    "uuid": "e78dadd1-3c80-8f29-b688-33dccf19b6a1",
     "words": [
       "shelter"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "shelter: a schema.org component word, fused from AnimalShelter",
-    "uuid": "72b2e3d1-ea8c-8f0b-8821-9622a5d7852e",
+    "source": "Use when reasoning about shelter as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "7b482811-6123-807d-89d2-679f4b53ea57",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "shelter",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "animalshelter"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "shelter: a schema.org component word, fused from AnimalShelter"
+      "en": "Use when reasoning about shelter as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

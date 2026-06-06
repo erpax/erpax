@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "countries",
-    "uuid": "a0bdcdb0-5be5-8ee3-aac7-9bbeb160a78c",
+    "uuid": "293a4b6f-12f9-8640-bd96-1a190f99a73c",
     "words": [
       "countries"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "countries: a schema.org component word, fused from countriesNotSupported, countriesSupported",
-    "uuid": "d936d0f9-b91a-84c4-b787-e724c8ef6683",
+    "source": "Use when reasoning about countries as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "39ec00a9-5fe9-8bd7-a151-58d50142d17a",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "countries",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "countriesnotsupported",
-      "countriessupported"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "countries: a schema.org component word, fused from countriesNotSupported, countriesSupported"
+      "en": "Use when reasoning about countries as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

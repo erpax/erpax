@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "framework",
-    "uuid": "217de520-2c09-8a9b-8ac4-fa73f7632c95",
+    "uuid": "5fb795f6-a50b-81e4-a11b-5c35c62fcea2",
     "words": [
       "framework"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "framework: a schema.org component word, fused from educationalFramework",
-    "uuid": "dc743595-5611-8eae-bd0b-c313df39317a",
+    "source": "Use when reasoning about framework as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "d4e6eeb0-c8f0-88ab-8d64-001f6283be92",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "framework",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "educationalframework"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "framework: a schema.org component word, fused from educationalFramework"
+      "en": "Use when reasoning about framework as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

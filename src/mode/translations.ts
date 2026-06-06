@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "mode",
-    "uuid": "1745416f-ae2b-8036-a128-27d4c811ac8e",
+    "uuid": "92a41e93-c4b4-8ac5-bb07-03733ce65eae",
     "words": [
       "mode"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "mode: a schema.org component word, fused from EventAttendanceModeEnumeration, GamePlayMode, accessMode, accessModeSufficient, courseMode, educationalProgramMode",
-    "uuid": "52cba5e5-6359-8c16-b5f2-0fa9fa7e7497",
+    "source": "Use when reasoning about mode as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "9a41adfc-abb3-85ad-bcd4-af3ee7215083",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "mode",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "eventattendancemodeenumeration",
-      "gameplaymode",
-      "accessmode",
-      "accessmodesufficient",
-      "coursemode",
-      "educationalprogrammode"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "mode: a schema.org component word, fused from EventAttendanceModeEnumeration, GamePlayMode, accessMode, accessModeSufficient, courseMode, educationalProgramMode"
+      "en": "Use when reasoning about mode as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

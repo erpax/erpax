@@ -91,6 +91,16 @@ describe('localize: the fusion — forge↑ and proof O(N)', () => {
     expect(f.tamper.note).toMatch(/100% coverage/)
   })
 
+  it('fail-closed: with NO coverage supplied the fusion degrades to the finite 2^106 floor — never an assumed ∞', () => {
+    // ground-don't-assert: the optimistic `coverage ?? 1` default is gone, so a
+    // MISSING coverage must report the conservative digest floor, not unbounded.
+    const f = localizationFusion({ elements: 1000 })
+    expect(Number.isFinite(f.forgeBits)).toBe(true)
+    expect(f.forgeBits).not.toBe(Number.POSITIVE_INFINITY)
+    expect(f.forgeBits).toBe(106) // the bare 2^106 second-preimage floor (crackVerdict, coverage=undefined)
+    expect(f.tamper.note).not.toMatch(/100% coverage/)
+  })
+
   it('below full coverage, more locales raise forge cost while verify stays O(N)', () => {
     const few = localizationFusion({ elements: 100, locales: 2, coverage: 0.9 })
     const many = localizationFusion({ elements: 100, locales: 30, coverage: 0.9 })

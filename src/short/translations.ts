@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "short",
-    "uuid": "a909e520-1869-82ac-92cf-3f727d843838",
+    "uuid": "482ec0cd-e882-8645-8ad1-978330343f2b",
     "words": [
       "short"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "short: a schema.org component word, fused from ShortStory",
-    "uuid": "32bd9bec-85e5-81bd-b037-fb532d94ac13",
+    "source": "Use when reasoning about short as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "c5b0dec1-8e1a-87ae-89e0-1708c96f6d4f",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "short",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "shortstory"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "short: a schema.org component word, fused from ShortStory"
+      "en": "Use when reasoning about short as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

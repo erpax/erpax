@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "openings",
-    "uuid": "ef374f1a-7f97-8414-b02e-fc29d3c6e35c",
+    "uuid": "c7516be6-539f-8e81-aa85-7b88932dca35",
     "words": [
       "openings"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "openings: a schema.org component word, fused from totalJobOpenings",
-    "uuid": "709342af-be7e-8a3a-845e-fbd1dac0bd44",
+    "source": "Use when reasoning about openings as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "88895340-5f47-810c-b155-61b0736bef1b",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "openings",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "totaljobopenings"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "openings: a schema.org component word, fused from totalJobOpenings"
+      "en": "Use when reasoning about openings as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

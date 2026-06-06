@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "icu",
-    "uuid": "aa7e0446-0ceb-83b5-96ce-2ef5ae419675",
+    "uuid": "272173f6-c72d-857d-a257-af9dbd5d9fe8",
     "words": [
       "icu"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "icu: a schema.org component word, fused from cvdNumICUBeds, cvdNumICUBedsOcc",
-    "uuid": "879c257d-5d72-8d90-8678-41408f0a62fe",
+    "source": "Use when reasoning about icu as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "ee594749-560b-8073-b5d1-0c9ef60857d1",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "icu",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "cvdnumicubeds",
-      "cvdnumicubedsocc"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "icu: a schema.org component word, fused from cvdNumICUBeds, cvdNumICUBedsOcc"
+      "en": "Use when reasoning about icu as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

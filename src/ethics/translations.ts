@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "ethics",
-    "uuid": "a1544538-cdc9-83bb-9e59-4c610ebe489d",
+    "uuid": "421ec7a8-f70b-8495-abb6-8ddd6c7abd74",
     "words": [
       "ethics"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "ethics: a schema.org component word, fused from ethicsPolicy",
-    "uuid": "dc142537-7fb3-8781-a29d-624edb9a99a4",
+    "source": "Use when reasoning about ethics as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "9c42fd52-878c-88f0-a32e-319320c24b95",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "ethics",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "ethicspolicy"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "ethics: a schema.org component word, fused from ethicsPolicy"
+      "en": "Use when reasoning about ethics as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

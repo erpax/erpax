@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "healthcare",
-    "uuid": "09cdcc76-3f17-8eda-87db-d97d183f6230",
+    "uuid": "b8f3829e-5aa7-8ee4-bc8a-eb3c9fb2d0c1",
     "words": [
       "healthcare"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "healthcare: a schema.org component word, fused from healthcareReportingData",
-    "uuid": "1532a8ea-8350-800c-8fef-44562cdfa2df",
+    "source": "Use when reasoning about healthcare as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "736354ec-1c55-8a59-8e79-a3ff82fa17b6",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "healthcare",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "healthcarereportingdata"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "healthcare: a schema.org component word, fused from healthcareReportingData"
+      "en": "Use when reasoning about healthcare as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

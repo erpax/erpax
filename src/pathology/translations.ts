@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "pathology",
-    "uuid": "9311ae38-d537-87e3-ac2a-dc917c43739e",
+    "uuid": "fbe101a7-4257-8d97-b4ff-6935643176ff",
     "words": [
       "pathology"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "pathology: a schema.org component word, fused from PathologyTest",
-    "uuid": "bbfb211a-0b6e-8632-a500-301b1b5d4892",
+    "source": "Use when reasoning about pathology as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "9189bb3d-a08b-8899-821a-857ecbb93a89",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "pathology",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "pathologytest"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "pathology: a schema.org component word, fused from PathologyTest"
+      "en": "Use when reasoning about pathology as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

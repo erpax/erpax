@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "aquaculture",
-    "uuid": "5c1f1a34-39a0-8ab3-9ca5-7db811bc4ae2",
+    "uuid": "8cd5f771-0517-87a8-bfa5-08f9243fb1f2",
     "words": [
       "aquaculture"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when farming aquatic organisms under managed conditions — fish/shellfish raised in ponds, cages, or recirculating systems as biological assets valued by standing biomass (IAS-41); stocked, grown out through life stages, fed (FCR), bound by water quality (oxygen, salinity), then harvested and depurated. A living-production domain anchor alongside agriculture and livestock.",
-    "uuid": "1b694fbe-44d3-8d99-8d67-83331391ab55",
+    "uuid": "ca1a05e0-f535-8b7c-860f-a9b2f6137ce4",
     "words": [
       "use",
       "when",

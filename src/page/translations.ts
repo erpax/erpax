@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "page",
-    "uuid": "ab7b6240-b59f-8694-af0c-38c3817d7688",
+    "uuid": "35dc5f33-4f1c-88b5-a005-f78765dc3a60",
     "words": [
       "page"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "page: a schema.org component word, fused from AboutPage, CheckoutPage, CollectionPage, ContactPage, FAQPage, ItemPage",
-    "uuid": "efc1d146-5921-807d-b6ac-d1dc5341951c",
+    "source": "Use when reasoning about page as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "1f0f01b5-9336-8b92-8ef4-cc72b0b9cb16",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "page",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "aboutpage",
-      "checkoutpage",
-      "collectionpage",
-      "contactpage",
-      "faqpage",
-      "itempage"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "page: a schema.org component word, fused from AboutPage, CheckoutPage, CollectionPage, ContactPage, FAQPage, ItemPage"
+      "en": "Use when reasoning about page as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "advertiser",
-    "uuid": "e66fa6bd-75ba-8301-a780-3bff272d7bc8",
+    "uuid": "da24e449-64f5-870d-8eea-e206f743e361",
     "words": [
       "advertiser"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "advertiser: a schema.org component word, fused from AdvertiserContentArticle",
-    "uuid": "000fd2fc-b1a6-84b8-b9fd-7e111fd12693",
+    "source": "Use when reasoning about advertiser as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "4a347f4a-c9c3-8de8-810a-f8baf9ad9500",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "advertiser",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "advertisercontentarticle"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "advertiser: a schema.org component word, fused from AdvertiserContentArticle"
+      "en": "Use when reasoning about advertiser as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "dealer",
-    "uuid": "f85e564a-d3e0-83a9-920c-3dc96cedbe5c",
+    "uuid": "46f64c70-94d8-839a-a55e-20bb1c44ffb1",
     "words": [
       "dealer"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "dealer: a schema.org component word, fused from AutoDealer, MotorcycleDealer",
-    "uuid": "585fe102-c35a-85a0-be48-1ff3b7d77af1",
+    "source": "Use when reasoning about dealer as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "32e0fe8e-6bde-8032-9919-40c0705fd337",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "dealer",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "autodealer",
-      "motorcycledealer"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "dealer: a schema.org component word, fused from AutoDealer, MotorcycleDealer"
+      "en": "Use when reasoning about dealer as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

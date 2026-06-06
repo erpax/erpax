@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "conference",
-    "uuid": "c14afd9a-57d8-8a4e-8602-377fe987daa7",
+    "uuid": "fcde9e1d-c6f2-8ef1-86b7-520f1271c3dd",
     "words": [
       "conference"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "conference: a schema.org component word, fused from ConferenceEvent",
-    "uuid": "8be6e837-dd28-80c0-bfbf-405915d40759",
+    "source": "Use when reasoning about conference as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "8c532560-3fbb-8b4b-a2f1-25d9b790e1df",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "conference",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "conferenceevent"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "conference: a schema.org component word, fused from ConferenceEvent"
+      "en": "Use when reasoning about conference as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

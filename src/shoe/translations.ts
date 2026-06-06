@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "shoe",
-    "uuid": "47fdc48a-292d-89ad-aa2f-22b7adfc4d52",
+    "uuid": "1e93f4c3-565f-8489-8ecd-5ee725c9899b",
     "words": [
       "shoe"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "shoe: a schema.org component word, fused from ShoeStore",
-    "uuid": "c19f34c6-03e5-8ce3-9f84-ef1d8ab762bd",
+    "source": "Use when reasoning about shoe as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "9fb9df89-29c4-8aef-9ac4-191b85db4eba",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "shoe",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "shoestore"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "shoe: a schema.org component word, fused from ShoeStore"
+      "en": "Use when reasoning about shoe as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

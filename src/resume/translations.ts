@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "resume",
-    "uuid": "e2ef4b34-5275-8082-bfb2-0e3268377027",
+    "uuid": "8b95483c-df38-8e31-8020-b4091fb8d426",
     "words": [
       "resume"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "resume: a schema.org component word, fused from ResumeAction",
-    "uuid": "e3d1c21a-cbcc-8e02-b988-e040eb347af7",
+    "source": "Use when reasoning about resume as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "a221c0a9-687b-8127-9d42-7d090705412d",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "resume",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "resumeaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "resume: a schema.org component word, fused from ResumeAction"
+      "en": "Use when reasoning about resume as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

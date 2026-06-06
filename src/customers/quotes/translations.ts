@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "quotes",
-    "uuid": "3879754f-9e21-82ab-824a-a7bc8337c1b0",
+    "uuid": "a4474109-d68c-840d-b618-8d81a3c6d064",
     "words": [
       "quotes"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when creating or approving pre-contract proposals — line-item pricing, issuer/approver SoD enforcement, sending to customer, accepting, and converting to a sales order. No GL impact until accepted. The IFRS-15 §10 contract-origination collection.",
-    "uuid": "f334357d-33da-87d6-acc3-ebf0cdbc8dc5",
+    "uuid": "9de2bf68-2c39-8980-adc4-065f470e0fac",
     "words": [
       "use",
       "when",

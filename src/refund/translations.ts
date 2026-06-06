@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "refund",
-    "uuid": "8172beef-1d89-8a98-964a-8e5e13b7760c",
+    "uuid": "831814aa-b9c4-81ff-afa1-fc1b26e012b6",
     "words": [
       "refund"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "refund: a schema.org component word, fused from RefundTypeEnumeration, refundType",
-    "uuid": "f185542c-ed71-82c6-a953-8d6fcc07a66e",
+    "source": "Use when reasoning about refund as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "0b9c910e-931e-8dbc-9ac5-a6bea1ffc6a9",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "refund",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "refundtypeenumeration",
-      "refundtype"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "refund: a schema.org component word, fused from RefundTypeEnumeration, refundType"
+      "en": "Use when reasoning about refund as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

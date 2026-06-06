@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "document",
-    "uuid": "98a46f52-ae0d-863b-b386-fcaf6ded6571",
+    "uuid": "f5b4ca93-28bf-8140-b762-3b18d3d5c11f",
     "words": [
       "document"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "document: a schema.org component word, fused from DigitalDocument, DigitalDocumentPermission, DigitalDocumentPermissionType, NoteDigitalDocument, PresentationDigitalDocument, SpreadsheetDigitalDocumen",
-    "uuid": "318eba21-16e4-8b88-b126-0ca2872487d4",
+    "source": "Use when reasoning about document as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "2c4d9344-82e2-8c38-b6c6-a1cfd95cf3fa",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "document",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "digitaldocument",
-      "digitaldocumentpermission",
-      "digitaldocumentpermissiontype",
-      "notedigitaldocument",
-      "presentationdigitaldocument",
-      "spreadsheetdigitaldocumen"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "document: a schema.org component word, fused from DigitalDocument, DigitalDocumentPermission, DigitalDocumentPermissionType, NoteDigitalDocument, PresentationDigitalDocument, SpreadsheetDigitalDocumen"
+      "en": "Use when reasoning about document as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

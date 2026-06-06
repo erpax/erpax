@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "catholic",
-    "uuid": "2759c9e9-f2f4-87c7-a983-f6ebc2d2ab90",
+    "uuid": "d2eee81d-b2bf-838e-98f7-7bb8f057a3b8",
     "words": [
       "catholic"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "catholic: a schema.org component word, fused from CatholicChurch",
-    "uuid": "60308c28-7453-8bfe-8408-4661ed5b5a6b",
+    "source": "Use when reasoning about catholic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "14b2c5a6-41a3-884f-a5e4-8cdd27b1ead2",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "catholic",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "catholicchurch"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "catholic: a schema.org component word, fused from CatholicChurch"
+      "en": "Use when reasoning about catholic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -22,8 +22,11 @@
  */
 import { UUID_MATRIX_NODES, nodeOf } from '@/uuid/matrix'
 
-/** Digital root (base-10) of a content-uuid's hex digits -> 1..9 (0 only for nil). */
-export function digitalRoot(uuid: string): number {
+/** Digital root (base-10) of a content-uuid's hex digits -> 1..9 (0 only for nil).
+ *  The uuid-content form; the integer reduction is `digitalRoot` in @/horo. The
+ *  self-describing name keeps the word↔digit duality legible (@/horo = integer
+ *  reduction, @/digit = uuid-content reduction) so co-importers need no alias. */
+export function digitalRootOfUuid(uuid: string): number {
   const n = (uuid.match(/[0-9a-f]/gi) || []).reduce((s, h) => s + parseInt(h, 16), 0)
   return n === 0 ? 0 : ((n - 1) % 9) + 1
 }
@@ -34,14 +37,14 @@ export const digitOf = (atom: string): number | undefined => nodeOf(atom)?.horo
 /** The DIGIT address dual to the WORD address: `<horo>/<digital-root(uuid)>`. */
 export function digitAddress(atom: string): string | undefined {
   const n = nodeOf(atom)
-  return n ? n.horo + '/' + digitalRoot(n.uuid) : undefined
+  return n ? n.horo + '/' + digitalRootOfUuid(n.uuid) : undefined
 }
 
 /** The computed trace ledger: every atom folded into its `<d>/<d>` digit cell. */
 export function digitTrace(): Map<string, string[]> {
   const trace = new Map<string, string[]>()
   for (const n of UUID_MATRIX_NODES) {
-    const cell = n.horo + '/' + digitalRoot(n.uuid)
+    const cell = n.horo + '/' + digitalRootOfUuid(n.uuid)
     const arr = trace.get(cell) ?? []
     arr.push(n.atom)
     trace.set(cell, arr)

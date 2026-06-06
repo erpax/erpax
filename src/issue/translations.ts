@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "issue",
-    "uuid": "d0234cba-6308-8b88-8584-a73b5120e5cb",
+    "uuid": "0c810b86-dc70-89f8-b46f-4a7ae3b8e3de",
     "words": [
       "issue"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "issue: a schema.org component word, fused from ComicIssue, PublicationIssue, issueNumber",
-    "uuid": "bf3fd10e-7ff5-82e2-8387-d8ff13d84868",
+    "source": "Use when reasoning about issue as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "8bbc86d9-964e-8a9c-9ee3-c2984533fa4e",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "issue",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "comicissue",
-      "publicationissue",
-      "issuenumber"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "issue: a schema.org component word, fused from ComicIssue, PublicationIssue, issueNumber"
+      "en": "Use when reasoning about issue as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

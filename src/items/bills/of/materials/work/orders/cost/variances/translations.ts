@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "cost-variances",
-    "uuid": "f8080bc2-c916-831e-a9cd-a3294e2d0729",
+    "uuid": "81085dc6-3798-8971-9106-a78fb054901b",
     "words": [
       "cost",
       "variances"
@@ -19,7 +19,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when closing a work order and reconciling standard vs actual manufacturing costs — material price/quantity, labour rate/efficiency, and overhead spending/volume variances per IAS-2 §21. The variance-decomposition record generated on work-order close.",
-    "uuid": "778eebce-5146-88dc-96c8-94755cb09359",
+    "uuid": "4188e549-0d1a-81f9-8743-b04c09315bfa",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "isrc",
-    "uuid": "5eacfdb3-1432-8b99-b198-8c9de0034129",
+    "uuid": "3656a9fe-22a4-8b81-9ed6-800242f5b23a",
     "words": [
       "isrc"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "isrc: a schema.org component word, fused from isrcCode",
-    "uuid": "8eed132f-f056-8672-9555-9c0efe976c34",
+    "source": "Use when reasoning about isrc as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "7f6e2570-0939-8eb9-ad50-9d84daf509c7",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "isrc",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "isrccode"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "isrc: a schema.org component word, fused from isrcCode"
+      "en": "Use when reasoning about isrc as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

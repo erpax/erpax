@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "choose",
-    "uuid": "ca4960e2-cdbb-8724-a9c8-fb5e0e7acd3f",
+    "uuid": "b146a741-355e-89b0-a771-782e5e094f9d",
     "words": [
       "choose"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "choose: a schema.org component word, fused from ChooseAction",
-    "uuid": "21236558-82c4-8ca7-a9bb-9ace36ebdf34",
+    "source": "Use when reasoning about choose as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "6324ed5a-0199-8604-876c-dce684e27907",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "choose",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "chooseaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "choose: a schema.org component word, fused from ChooseAction"
+      "en": "Use when reasoning about choose as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

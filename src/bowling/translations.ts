@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "bowling",
-    "uuid": "1f3285a0-435e-835c-ae6f-5705ef085725",
+    "uuid": "2a61d26b-0edc-819c-97b7-bb7548334b31",
     "words": [
       "bowling"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "bowling: a schema.org component word, fused from BowlingAlley",
-    "uuid": "2ece9841-b715-864c-8306-2a33d20af12d",
+    "source": "Use when reasoning about bowling as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "b0c79b9e-0d6b-8635-9fdc-99311fb18545",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "bowling",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "bowlingalley"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "bowling: a schema.org component word, fused from BowlingAlley"
+      "en": "Use when reasoning about bowling as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

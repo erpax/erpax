@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "imprint",
-    "uuid": "04d15e4a-02e0-855c-a13f-2e69dff35f9e",
+    "uuid": "b0c0c240-81d9-89fc-b7d6-0552533a9c44",
     "words": [
       "imprint"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "imprint: a schema.org component word, fused from publisherImprint",
-    "uuid": "896610e0-18ba-83d8-a2cc-c18ee6138bde",
+    "source": "Use when reasoning about imprint as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "968cb9d3-ef11-8d23-92e5-bf32fd5b7bb4",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "imprint",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "publisherimprint"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "imprint: a schema.org component word, fused from publisherImprint"
+      "en": "Use when reasoning about imprint as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

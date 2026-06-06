@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "implementation",
-    "uuid": "134f954a-b502-8981-9668-50390d685c00",
+    "uuid": "f0678e8a-2d7c-8598-81f5-49440b1cc829",
     "words": [
       "implementation"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "implementation: a schema.org component word, fused from legislationEnsuresImplementationOf",
-    "uuid": "b5b8b2e9-fa4c-83e8-8444-78ed0cc06f88",
+    "source": "Use when reasoning about implementation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "b19a4c24-67ca-8de8-9fbb-9135fd242101",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "implementation",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "legislationensuresimplementationof"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "implementation: a schema.org component word, fused from legislationEnsuresImplementationOf"
+      "en": "Use when reasoning about implementation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

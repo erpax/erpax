@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "birth",
-    "uuid": "805244f8-0fc1-8f4e-a56d-3f6bf0b3d950",
+    "uuid": "d3404b95-9780-8e47-becb-d2d8a7d733ff",
     "words": [
       "birth"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "birth: a schema.org component word, fused from birthDate, birthPlace",
-    "uuid": "3139fdd1-a2b6-8d2d-83af-2894b8a51de4",
+    "source": "Use when reasoning about birth as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "17e0db32-b18d-83fa-bc7b-150ba4b230c8",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "birth",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "birthdate",
-      "birthplace"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "birth: a schema.org component word, fused from birthDate, birthPlace"
+      "en": "Use when reasoning about birth as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

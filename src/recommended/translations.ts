@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "recommended",
-    "uuid": "3b308fd0-fcf4-800d-a31b-264955abfd59",
+    "uuid": "b3c96078-6a9e-8035-8e26-8341b8b08c54",
     "words": [
       "recommended"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "recommended: a schema.org component word, fused from RecommendedDoseSchedule, recommendedIntake",
-    "uuid": "fc62495d-568a-8c29-bd11-2806ac6173f0",
+    "source": "Use when reasoning about recommended as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "f1f203f2-d74b-8ea0-8b42-053506923e7b",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "recommended",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "recommendeddoseschedule",
-      "recommendedintake"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "recommended: a schema.org component word, fused from RecommendedDoseSchedule, recommendedIntake"
+      "en": "Use when reasoning about recommended as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

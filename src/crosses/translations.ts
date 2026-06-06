@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "crosses",
-    "uuid": "00b64a07-1057-835d-81f8-e82ac3e5a279",
+    "uuid": "fcfa845c-08ff-8ba9-8047-50a61cf95de0",
     "words": [
       "crosses"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "crosses: a schema.org component word, fused from geoCrosses",
-    "uuid": "bdc526f3-ed9f-82af-8d48-89cae411de62",
+    "source": "Use when reasoning about crosses as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "ba0702b9-e829-802a-99de-240f764f95e6",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "crosses",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "geocrosses"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "crosses: a schema.org component word, fused from geoCrosses"
+      "en": "Use when reasoning about crosses as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

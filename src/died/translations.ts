@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "died",
-    "uuid": "1ef53305-2d9b-82be-b7ea-f18af77824ab",
+    "uuid": "b1731b8d-c2d9-8df5-a4be-220e22dd6af4",
     "words": [
       "died"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "died: a schema.org component word, fused from cvdNumC19Died",
-    "uuid": "8b8a20a3-b665-8d0f-b4bc-564de885288e",
+    "source": "Use when reasoning about died as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "c676ca60-94f3-8ffa-b80b-2e60b2c70a11",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "died",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "cvdnumc19died"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "died: a schema.org component word, fused from cvdNumC19Died"
+      "en": "Use when reasoning about died as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

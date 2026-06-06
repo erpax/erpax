@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "amends",
-    "uuid": "f0585bc4-2f71-89f0-8a76-96a4afe7a9a2",
+    "uuid": "36bf4b2f-999a-8382-9d17-32d175a3f85e",
     "words": [
       "amends"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "amends: a schema.org component word, fused from legislationAmends",
-    "uuid": "e7131ca7-5171-807d-a0d0-6f083c058b72",
+    "source": "Use when reasoning about amends as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "945a5ba0-12f2-8142-ac8a-53da0de07873",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "amends",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "legislationamends"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "amends: a schema.org component word, fused from legislationAmends"
+      "en": "Use when reasoning about amends as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

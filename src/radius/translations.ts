@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "radius",
-    "uuid": "57e166c7-268b-8faa-9f60-2cf5a8573293",
+    "uuid": "dd008d77-3dd4-8a58-b0d2-c4b7e7cb427e",
     "words": [
       "radius"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "radius: a schema.org component word, fused from geoRadius",
-    "uuid": "d83b16ed-c5c3-8398-8869-3b27d1394bf6",
+    "source": "Use when reasoning about radius as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "35f84df8-4d4c-8335-bbe1-96b5b663980e",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "radius",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "georadius"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "radius: a schema.org component word, fused from geoRadius"
+      "en": "Use when reasoning about radius as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

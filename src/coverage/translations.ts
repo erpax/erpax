@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "coverage",
-    "uuid": "359f3737-1e5b-8a5c-8075-01738bb7d61b",
+    "uuid": "b7e72d8d-aa00-8779-b000-abe97f55ef75",
     "words": [
       "coverage"
     ],
@@ -17,25 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "coverage: a schema.org component word, fused from coverageEndTime, coverageStartTime, missionCoveragePrioritiesPolicy, spatialCoverage, temporalCoverage",
-    "uuid": "2e3f63fb-9ea9-8b28-924d-e05d1c123099",
+    "source": "Use when reasoning about coverage as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "33335a91-529d-8ce7-8485-8772d9f696c6",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "coverage",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "coverageendtime",
-      "coveragestarttime",
-      "missioncoverageprioritiespolicy",
-      "spatialcoverage",
-      "temporalcoverage"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "coverage: a schema.org component word, fused from coverageEndTime, coverageStartTime, missionCoveragePrioritiesPolicy, spatialCoverage, temporalCoverage"
+      "en": "Use when reasoning about coverage as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

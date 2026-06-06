@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "property",
-    "uuid": "14536688-0589-8ec3-8ac5-efdac217d2bf",
+    "uuid": "fead4df5-57ff-82fd-87f5-5dca6f62be54",
     "words": [
       "property"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "A property, used to indicate attributes and relationships of some Thing; equivalent to rdf:Property.",
-    "uuid": "56ee295f-4dbe-8c21-83cf-a6f1f1fbb80d",
+    "uuid": "1e8d582b-ea73-8e7b-9b78-201f6f2773fb",
     "words": [
       "a",
       "property",

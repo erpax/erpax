@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "domiciled",
-    "uuid": "96caeded-85b1-8743-bd1e-8e6e3f93e0ea",
+    "uuid": "850014e4-65f3-8b59-aac6-530bc1389916",
     "words": [
       "domiciled"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "domiciled: a schema.org component word, fused from domiciledMortgage",
-    "uuid": "f765b34c-e5a5-8878-8074-4cbadd2ba34c",
+    "source": "Use when reasoning about domiciled as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "8491123e-b73d-802d-83ba-976aa2fed98b",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "domiciled",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "domiciledmortgage"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "domiciled: a schema.org component word, fused from domiciledMortgage"
+      "en": "Use when reasoning about domiciled as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

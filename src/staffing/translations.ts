@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "staffing",
-    "uuid": "e91ae0a7-ccc3-8f7d-a0fa-1f59b9dc9c91",
+    "uuid": "56b80e16-042e-8fab-b1a2-eff16485ae5e",
     "words": [
       "staffing"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "staffing: a schema.org component word, fused from diversityStaffingReport",
-    "uuid": "3dd973f1-bc10-8cbd-88e6-29f784735332",
+    "source": "Use when reasoning about staffing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "8917e066-6e5e-8776-b484-26897f3fbf44",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "staffing",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "diversitystaffingreport"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "staffing: a schema.org component word, fused from diversityStaffingReport"
+      "en": "Use when reasoning about staffing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

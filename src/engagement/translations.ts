@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when measuring or improving involvement/participation — employee engagement, customer engagement, learning engagement. The observed commitment/interaction level.",
-    "uuid": "be780f1c-dbd0-8424-ba13-d2ff9201baac",
+    "uuid": "eedb8ba6-0c24-83f8-b62d-7935a7d91508",
     "words": [
       "use",
       "when",

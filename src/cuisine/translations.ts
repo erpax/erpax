@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "cuisine",
-    "uuid": "0318908c-e7a7-803d-ac90-71495f9f4db6",
+    "uuid": "0fdc2b0f-79fe-88f3-a4ea-8f1f1a566ceb",
     "words": [
       "cuisine"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "cuisine: a schema.org component word, fused from recipeCuisine, servesCuisine",
-    "uuid": "978d86b8-8436-8400-a56c-4def75fe6196",
+    "source": "Use when reasoning about cuisine as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "2877cfa4-d9ec-8cbe-8488-e90b25c6ae09",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "cuisine",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "recipecuisine",
-      "servescuisine"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "cuisine: a schema.org component word, fused from recipeCuisine, servesCuisine"
+      "en": "Use when reasoning about cuisine as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

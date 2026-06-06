@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "disjoint",
-    "uuid": "df7ad37b-defa-8fbd-8bdd-e67030b180c9",
+    "uuid": "19dbc598-934e-8e73-9039-6172aebf9cf1",
     "words": [
       "disjoint"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "disjoint: a schema.org component word, fused from geoDisjoint",
-    "uuid": "5bfac6ab-48ed-849e-a209-d29d5ad32dac",
+    "source": "Use when reasoning about disjoint as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "620ff948-f606-8654-b2cb-173aa27d259c",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "disjoint",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "geodisjoint"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "disjoint: a schema.org component word, fused from geoDisjoint"
+      "en": "Use when reasoning about disjoint as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

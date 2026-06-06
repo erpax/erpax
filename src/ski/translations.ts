@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "ski",
-    "uuid": "515b3116-e2c6-8ee1-878a-b69fdf31e661",
+    "uuid": "8aa63b81-864e-84f9-be87-a50c5060d373",
     "words": [
       "ski"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "ski: a schema.org component word, fused from SkiResort",
-    "uuid": "320c8dac-184a-8819-8e4c-1f9019c66728",
+    "source": "Use when reasoning about ski as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "fc2c7b47-60b8-84c9-a6c6-e6e6d96de77f",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "ski",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "skiresort"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "ski: a schema.org component word, fused from SkiResort"
+      "en": "Use when reasoning about ski as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

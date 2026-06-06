@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "cover",
-    "uuid": "8dcf7482-fb60-8667-81f9-b9a63b98641f",
+    "uuid": "7d4ff821-0b8e-86bf-ba9b-af9c73b577bc",
     "words": [
       "cover"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "cover: a schema.org component word, fused from ComicCoverArt, CoverArt, variantCover",
-    "uuid": "a825228c-852a-818d-af0f-4e78d0253bd0",
+    "source": "Use when reasoning about cover as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "0cf066c6-4458-809b-99f7-125ac2b67e38",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "cover",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "comiccoverart",
-      "coverart",
-      "variantcover"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "cover: a schema.org component word, fused from ComicCoverArt, CoverArt, variantCover"
+      "en": "Use when reasoning about cover as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

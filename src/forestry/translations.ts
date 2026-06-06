@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when managing standing timber's biological transformation for produce — trees grown in stands as IAS-41 biological assets (standing biomass at fair value; the land separate), on a rotation set by mean annual increment, tended by silviculture (thinning/regeneration), felled to merchantable volume. Carbon stock is the cross-cutting ESG output; FSC/PEFC certification with chain-of-custody.",
-    "uuid": "ce005e37-0c9f-8bdf-8d3b-39eb0fc35438",
+    "uuid": "980ae1f0-b734-8668-9ecd-67251849c229",
     "words": [
       "use",
       "when",

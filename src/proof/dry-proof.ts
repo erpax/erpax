@@ -74,6 +74,7 @@ export interface DryProofBundle {
   readonly mcpSelfTest: ReadonlyArray<{ tool: string; verdict: 'pass' | 'skip' | 'fail'; reason?: string }>
   readonly tamperCost: TamperCostProof                    // forge≫verify, deepseek-amplified
   readonly corpusMatrix: { readonly root: string; readonly nodes: number; readonly edges: number } // whole corpus → one 128-bit root
+  readonly corpusSelfProof?: CorpusSelfProof              // the live self-proof cluster (collider/strength/emergence) that GROUNDS tamperCost.coverage
   readonly empiricalProofs: EmpiricalProofs               // forge≫verify decoded on real blockchains, recomputable by anyone
   readonly publicUrl: string                              // /proof/ on this origin
   readonly federable: true
@@ -128,6 +129,27 @@ export interface TamperCostProof {
   readonly note: string
 }
 
+/**
+ * The corpus self-proof cluster — the LIVE, fs-read measurement that GROUNDS the
+ * proof's `tamperCost.coverage` (instead of a hardcoded floor or an assumed ∞).
+ *
+ *   - `collider`  : joint convention coverage = ∏ every convention's live coverage
+ *                   (@/collider · @/convention) — the honest "fraction of dimensions
+ *                   wired" the crackVerdict doc describes. This number IS the
+ *                   tamperCost.coverage, with `coverageAxis` naming its source.
+ *   - `strength`  : DRY-ness × dimensional slices (@/strength) — diagnostic.
+ *   - `emergence` : fraction of dualities whose trinity has emerged (@/emergence).
+ *
+ * These read the live src tree (fs), so they are computed at BUILD time in the
+ * Node MCP handler and passed IN — `buildDryProofBundle` itself stays fs-free so
+ * the edge proof path never touches the filesystem (the data is plain JSON).
+ */
+export interface CorpusSelfProof {
+  readonly collider: { readonly coverage: number; readonly violations: number; readonly tamperCost: number }
+  readonly strength: { readonly atoms: number; readonly residue: number; readonly dryness: number; readonly slices: number; readonly strength: number }
+  readonly emergence: { readonly dualities: number; readonly emerged: number; readonly coverage: number }
+}
+
 // ─── Build the proof bundle ────────────────────────────────────────
 
 export interface BuildProofArgs {
@@ -138,10 +160,38 @@ export interface BuildProofArgs {
   readonly replicas?: number
   /** CRAQ strong consistency: no stale-read window, so all replicas' checks count. */
   readonly strongConsistency?: boolean
-  /** measured fraction of nodes wired in structured uuid; omit for the conservative digest-floor report. */
+  /**
+   * MEASURED fraction of nodes wired in structured uuid. Omit for the conservative
+   * digest-floor report. When `corpusSelfProof` is supplied and this is omitted,
+   * coverage is derived from `corpusSelfProof.collider.coverage` (the live joint
+   * convention coverage) — grounding the claim in the real tree, not a hardcoded floor.
+   */
   readonly coverage?: number
+  /** names the axis `coverage` measures (e.g. 'convention coverage (import purity)'); grounds the ∞ note. */
+  readonly coverageAxis?: string
+  /**
+   * The live self-proof cluster (collider/strength/emergence), computed at BUILD
+   * time in the Node handler (it reads fs) and passed in as plain JSON so the edge
+   * proof path stays fs-free. Its `collider.coverage` grounds `tamperCost.coverage`.
+   */
+  readonly corpusSelfProof?: CorpusSelfProof
   /** git Merkle-DAG facts captured at build time by a git collector (edge runtime has no git). */
   readonly merkleDag?: MerkleDagFacts
+}
+
+/**
+ * Replace any non-finite number in a self-proof block with `null` so the bundle
+ * stays JCS-serializable (JCS rejects Infinity/NaN — see dry-proof.test). A
+ * perfect-DRY corpus yields strength/tamperCost = ∞; we TAG it as null rather than
+ * leak a raw Infinity into the content-uuid'd body (same discipline as projection).
+ */
+function jcsSafeSelfProof(p: CorpusSelfProof): CorpusSelfProof {
+  const fin = (n: number): number | null => (Number.isFinite(n) ? n : null)
+  return {
+    collider: { ...p.collider, tamperCost: fin(p.collider.tamperCost) as number },
+    strength: { ...p.strength, strength: fin(p.strength.strength) as number },
+    emergence: { ...p.emergence },
+  } as CorpusSelfProof
 }
 
 /**
@@ -155,6 +205,8 @@ export function proofTamperCost(args: {
   replicas?: number
   strongConsistency?: boolean
   coverage?: number
+  /** name of the axis the supplied `coverage` MEASURES (e.g. 'convention coverage (import purity)'); grounds the ∞ claim. */
+  coverageAxis?: string
 }): TamperCostProof {
   const replicas = args.replicas ?? 1
   const strongConsistency = args.strongConsistency ?? false
@@ -164,6 +216,18 @@ export function proofTamperCost(args: {
     replicas,
     strongConsistency,
   })
+  // GROUND-don't-assert: whenever a `coverage` is used it must be DISCLOSED as a
+  // MEASURED number for a NAMED axis — never assumed "by architecture". The
+  // unbounded (∞) case is the sharpest: it is honest ONLY at a measured 1. In every
+  // coverage-supplied case the note names the axis + its source so a peer reading
+  // /proof/ recomputes the same coverage rather than trusting a bare headline.
+  const axisName = args.coverageAxis ?? 'UNNAMED — supply coverageAxis to ground this claim'
+  const note =
+    args.coverage === undefined
+      ? v.note // no coverage ⇒ the conservative digest-floor note, unchanged
+      : v.crackCostLog2 === Number.POSITIVE_INFINITY
+        ? `Unbounded tamper-cost ONLY because coverage is a MEASURED ${args.coverage} for the axis "${axisName}" (read live from the corpus, not assumed by architecture). A peer recomputes the same coverage from the same source. ${v.note}`
+        : `Tamper-cost grounded in a MEASURED coverage ${args.coverage} for the axis "${axisName}" (read live from the corpus). A peer recomputes the same coverage from the same source. ${v.note}`
   return {
     crackCostLog2: v.crackCostLog2,
     binding: v.binding,
@@ -173,7 +237,7 @@ export function proofTamperCost(args: {
     replicas,
     strongConsistency,
     coverage: args.coverage,
-    note: v.note,
+    note,
   }
 }
 
@@ -186,6 +250,17 @@ export async function buildDryProofBundle(args: BuildProofArgs): Promise<DryProo
   const summary = summarize(invariantSuite, selfTest, args.tools.length)
   const generatedAt = new Date().toISOString()
   const publicUrl = `${args.origin.replace(/\/$/, '')}/proof/`
+
+  // Ground the tamper-cost coverage in the LIVE corpus self-proof. When the Node
+  // handler supplied `corpusSelfProof` (collider/strength/emergence read from the
+  // tree) and no explicit `coverage`, the joint convention coverage IS the measured
+  // coverage — so the proof reflects the real tree, not a hardcoded 106-bit floor.
+  // `buildDryProofBundle` itself never reads fs; it only consumes the passed number.
+  const selfProof = args.corpusSelfProof
+  const groundedCoverage = args.coverage ?? selfProof?.collider.coverage
+  const coverageAxis =
+    args.coverageAxis ??
+    (selfProof !== undefined ? 'joint convention coverage (∏ live convention coverages — @/collider)' : undefined)
 
   // Bundle body BEFORE uuid so the uuid covers the body.
   const body = {
@@ -205,9 +280,11 @@ export async function buildDryProofBundle(args: BuildProofArgs): Promise<DryProo
       invariantsChecked: summary.conservationLawsTotal,
       replicas: args.replicas,
       strongConsistency: args.strongConsistency,
-      coverage: args.coverage,
+      coverage: groundedCoverage,
+      coverageAxis,
     }),
     corpusMatrix: matrixDigest(),
+    ...(selfProof !== undefined ? { corpusSelfProof: jcsSafeSelfProof(selfProof) } : {}),
     empiricalProofs: empiricalProofs(args.merkleDag),
     publicUrl,
     federable: true as const,

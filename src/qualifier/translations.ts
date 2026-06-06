@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "qualifier",
-    "uuid": "46f57501-2bbc-8aca-bdab-46e34909600d",
+    "uuid": "f748e54c-6ace-80fd-b1b5-7eeb0d54df69",
     "words": [
       "qualifier"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "qualifier: a schema.org component word, fused from measurementQualifier",
-    "uuid": "ce02a85b-f64e-8492-8888-66a1040c0c7f",
+    "source": "Use when reasoning about qualifier as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "216389cc-b5f7-8f96-8661-68e07d163222",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "qualifier",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "measurementqualifier"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "qualifier: a schema.org component word, fused from measurementQualifier"
+      "en": "Use when reasoning about qualifier as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

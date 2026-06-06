@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "composition",
-    "uuid": "19f5541e-2b3a-81d7-997c-6fe58e020ea5",
+    "uuid": "a9fb8a0e-624e-80f8-84bd-9399ea158977",
     "words": [
       "composition"
     ],
@@ -17,24 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "composition: a schema.org component word, fused from MusicComposition, chemicalComposition, includedComposition, musicCompositionForm",
-    "uuid": "ae1a7fb7-6a6e-8857-99a3-0a32ae712e89",
+    "source": "Use when reasoning about composition as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "58908f3c-11c1-8ec4-8c13-070002807eae",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "composition",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "musiccomposition",
-      "chemicalcomposition",
-      "includedcomposition",
-      "musiccompositionform"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "composition: a schema.org component word, fused from MusicComposition, chemicalComposition, includedComposition, musicCompositionForm"
+      "en": "Use when reasoning about composition as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

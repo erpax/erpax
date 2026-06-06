@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "interest",
-    "uuid": "d368e602-a809-8d85-a210-fd8990d0c0c7",
+    "uuid": "c5fa2264-805a-85e2-a2f8-a8ed6d91b363",
     "words": [
       "interest"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "interest: a schema.org component word, fused from interestRate",
-    "uuid": "4265d760-0651-8b4c-ba66-08810eca18a5",
+    "source": "Use when reasoning about interest as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "cce23d71-dcd4-8e90-baaa-adfc17bde4ec",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "interest",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "interestrate"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "interest: a schema.org component word, fused from interestRate"
+      "en": "Use when reasoning about interest as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

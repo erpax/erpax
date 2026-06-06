@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "shop",
-    "uuid": "4be908a4-c0df-8484-b7c6-490a0f5a9e61",
+    "uuid": "b89199a9-e6dd-8b46-9dab-8453b17b373c",
     "words": [
       "shop"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "shop: a schema.org component word, fused from AutoBodyShop, CafeOrCoffeeShop, HobbyShop, IceCreamShop, PawnShop, TireShop",
-    "uuid": "3b0a29e9-102d-821c-bd77-7b16ab486fa0",
+    "source": "Use when reasoning about shop as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "9f2fe821-3da5-855d-8435-a1452f139119",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "shop",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "autobodyshop",
-      "cafeorcoffeeshop",
-      "hobbyshop",
-      "icecreamshop",
-      "pawnshop",
-      "tireshop"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "shop: a schema.org component word, fused from AutoBodyShop, CafeOrCoffeeShop, HobbyShop, IceCreamShop, PawnShop, TireShop"
+      "en": "Use when reasoning about shop as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

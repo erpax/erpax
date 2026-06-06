@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "applicant",
-    "uuid": "1410c171-9a5f-81d5-8df8-2c3227ea7676",
+    "uuid": "2fe9fdd8-c6c9-848e-abcc-b30a6925d32d",
     "words": [
       "applicant"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "applicant: a schema.org component word, fused from applicantLocationRequirements",
-    "uuid": "ebeb07dd-a681-8f67-8e8b-928b71fbadec",
+    "source": "Use when reasoning about applicant as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "e93f09bf-efe5-8863-b59b-552393120312",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "applicant",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "applicantlocationrequirements"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "applicant: a schema.org component word, fused from applicantLocationRequirements"
+      "en": "Use when reasoning about applicant as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

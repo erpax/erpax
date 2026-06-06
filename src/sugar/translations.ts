@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "sugar",
-    "uuid": "1b71b845-1b63-8497-a7e7-904a0af7888a",
+    "uuid": "dfed5419-7176-89e0-9c49-41e876eb9089",
     "words": [
       "sugar"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "sugar: a schema.org component word, fused from sugarContent",
-    "uuid": "c439df04-ec4f-87eb-ac6d-f72edec46209",
+    "source": "Use when reasoning about sugar as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "9cab4606-6077-8dfc-81f7-bb7831e59b8c",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "sugar",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "sugarcontent"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "sugar: a schema.org component word, fused from sugarContent"
+      "en": "Use when reasoning about sugar as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

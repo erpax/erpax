@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "honorific",
-    "uuid": "b21f47ad-9ebb-8694-bf71-a3ab74ecd191",
+    "uuid": "30695db1-a98a-8662-b206-fbda778e026d",
     "words": [
       "honorific"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "honorific: a schema.org component word, fused from honorificPrefix, honorificSuffix",
-    "uuid": "81b5dc7e-d7b6-8c96-b532-5641ca8b4d85",
+    "source": "Use when reasoning about honorific as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "609380f7-6f9b-8fbe-ab8d-1c59efc0c0ab",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "honorific",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "honorificprefix",
-      "honorificsuffix"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "honorific: a schema.org component word, fused from honorificPrefix, honorificSuffix"
+      "en": "Use when reasoning about honorific as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

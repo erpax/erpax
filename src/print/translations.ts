@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "print",
-    "uuid": "612b1b96-cd71-8251-ba63-48c2ff23f8b8",
+    "uuid": "33478ec3-e826-8f25-9a8f-e3bd4e3a5bf7",
     "words": [
       "print"
     ],
@@ -17,24 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "print: a schema.org component word, fused from printColumn, printEdition, printPage, printSection",
-    "uuid": "63f2bb5c-081e-811c-9d1d-904476c43fcc",
+    "source": "Use when reasoning about print as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "193d2d6e-0d4f-89b1-b3ac-d3227329c283",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "print",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "printcolumn",
-      "printedition",
-      "printpage",
-      "printsection"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "print: a schema.org component word, fused from printColumn, printEdition, printPage, printSection"
+      "en": "Use when reasoning about print as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

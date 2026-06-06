@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "pre",
-    "uuid": "4b2d4f5e-c75c-81bb-8742-74f253c3ac97",
+    "uuid": "93c59cab-66e0-88d9-8eb2-d60a2c6dfebb",
     "words": [
       "pre"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "pre: a schema.org component word, fused from PreOrderAction, preOp",
-    "uuid": "6a74623d-e29c-8f23-97e7-b2c34abe622b",
+    "source": "Use when reasoning about pre as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "2e89766c-d5de-849a-84e9-a48ee635c08b",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "pre",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "preorderaction",
-      "preop"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "pre: a schema.org component word, fused from PreOrderAction, preOp"
+      "en": "Use when reasoning about pre as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

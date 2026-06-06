@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "emergency",
-    "uuid": "8a9b5e56-47f3-84ea-8b7d-db5467cd645b",
+    "uuid": "a6c6f6ec-946c-8ff9-9dd3-edc1922dca54",
     "words": [
       "emergency"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "emergency: a schema.org component word, fused from EmergencyService",
-    "uuid": "6a218016-be78-81a7-9f4d-a0289209c061",
+    "source": "Use when reasoning about emergency as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "98456921-877f-87dc-b573-9caa36d707f0",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "emergency",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "emergencyservice"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "emergency: a schema.org component word, fused from EmergencyService"
+      "en": "Use when reasoning about emergency as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

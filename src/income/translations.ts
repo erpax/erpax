@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "income",
-    "uuid": "a7a7c88b-9429-8f27-8caf-4a8f12d8eed7",
+    "uuid": "0bb343f9-6c8d-8836-990e-28d9c0c377e3",
     "words": [
       "income"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "income: a schema.org component word, fused from incomeLimit",
-    "uuid": "afc08f0c-28da-8b2b-921b-4ef197662591",
+    "source": "Use when reasoning about income as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "08800818-a3bf-8429-a0a7-6d78fd8db495",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "income",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "incomelimit"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "income: a schema.org component word, fused from incomeLimit"
+      "en": "Use when reasoning about income as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

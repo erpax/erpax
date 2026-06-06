@@ -1,5 +1,5 @@
 ---
-name: bg-identifiers
+name: bg-identifier
 description: Use when validating Bulgarian identity numbers — ЕГН (person), ЕИК/БУЛСТАТ (entity), or decoding birth date and sex from an ЕГН. The entry gate for BG society into erpax (Наредба РД-02-20-9/2012 + БУЛСТАТ two-stage modulo-11).
 ---
 

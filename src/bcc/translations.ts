@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "bcc",
-    "uuid": "e95c95ba-d0e5-8503-b475-5f3a6664d51d",
+    "uuid": "08dffde5-594e-81cc-8328-4f0d980cb95f",
     "words": [
       "bcc"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "bcc: a schema.org component word, fused from bccRecipient",
-    "uuid": "32c1806e-4db5-84d7-ad47-3e7ca7572e40",
+    "source": "Use when reasoning about bcc as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "8b435b0d-ccbf-87fb-a287-c7bea7236ed0",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "bcc",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "bccrecipient"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "bcc: a schema.org component word, fused from bccRecipient"
+      "en": "Use when reasoning about bcc as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

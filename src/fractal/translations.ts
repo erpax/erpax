@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about self-similarity in erpax — the same form at every scale (fields→collections→plugins→erpax→agents), the path-as-address law, whole↔part recursion, nested one-word skill folders. Self-similar by design.",
-    "uuid": "7058b041-c93d-85e8-95bc-31b90fb4e789",
+    "uuid": "faa7f132-5cb8-8c6b-9593-526a199ac207",
     "words": [
       "use",
       "when",

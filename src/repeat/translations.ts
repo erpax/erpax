@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "repeat",
-    "uuid": "10779aad-1d90-86b2-b851-d5e8f9d1cc4e",
+    "uuid": "1e6de538-c266-8c91-999c-183d9cec2ee5",
     "words": [
       "repeat"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "repeat: a schema.org component word, fused from repeatCount, repeatFrequency",
-    "uuid": "08ee1c5f-a226-8b9f-a721-38b4f55e7912",
+    "source": "Use when reasoning about repeat as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "35162a85-22fb-81e9-841e-13f9cbd95283",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "repeat",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "repeatcount",
-      "repeatfrequency"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "repeat: a schema.org component word, fused from repeatCount, repeatFrequency"
+      "en": "Use when reasoning about repeat as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

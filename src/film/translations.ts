@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "film",
-    "uuid": "4a9a6ea8-3fb2-8243-bb09-f0b2b0fafef1",
+    "uuid": "71c042c3-053c-8959-9dbb-7b7df88a619d",
     "words": [
       "film"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "film: a schema.org component word, fused from FilmAction",
-    "uuid": "d48c1daa-280b-8810-bcb6-f8ae815c25ac",
+    "source": "Use when reasoning about film as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "5f45a01a-0363-86a3-b78d-da23e5b9f68d",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "film",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "filmaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "film: a schema.org component word, fused from FilmAction"
+      "en": "Use when reasoning about film as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

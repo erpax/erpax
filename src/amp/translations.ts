@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "amp",
-    "uuid": "cf084c00-00ad-8afc-91e1-2a80fbd321ff",
+    "uuid": "88ab2a62-7546-8071-be88-ae3959477da0",
     "words": [
       "amp"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "amp: a schema.org component word, fused from AmpStory",
-    "uuid": "e5c9ae5c-bdeb-8107-bd05-0e571b8d0d0e",
+    "source": "Use when reasoning about amp as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "ac4328a0-25e2-8f55-aff9-2446e3a50773",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "amp",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "ampstory"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "amp: a schema.org component word, fused from AmpStory"
+      "en": "Use when reasoning about amp as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

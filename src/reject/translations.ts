@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "reject",
-    "uuid": "4fc3cf2f-9681-8fc5-b96f-dc1972e2522d",
+    "uuid": "22bb68fd-c115-885f-bf6f-34297a736d47",
     "words": [
       "reject"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "reject: a schema.org component word, fused from RejectAction",
-    "uuid": "bbe52a2d-be18-8dfb-864b-eb4a705ab8c4",
+    "source": "Use when reasoning about reject as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "1b2c3831-f8b7-860c-b648-43d380f4c807",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "reject",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "rejectaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "reject: a schema.org component word, fused from RejectAction"
+      "en": "Use when reasoning about reject as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

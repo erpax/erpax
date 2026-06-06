@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "cdcpmd",
-    "uuid": "16ce52f2-9ca3-89c3-a2a5-a3997689760a",
+    "uuid": "a9aae335-464f-800f-ad6d-812bf79b5ad2",
     "words": [
       "cdcpmd"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "cdcpmd: a schema.org component word, fused from CDCPMDRecord",
-    "uuid": "5c082bde-0bf9-8ea2-93ee-993f4c9f5e97",
+    "source": "Use when reasoning about cdcpmd as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "9578a8ea-c0d7-817d-b6d3-ed67acb5ca7b",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "cdcpmd",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "cdcpmdrecord"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "cdcpmd: a schema.org component word, fused from CDCPMDRecord"
+      "en": "Use when reasoning about cdcpmd as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

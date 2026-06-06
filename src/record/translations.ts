@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "record",
-    "uuid": "3ef15ebf-7889-8d98-9e89-55ece58e11b6",
+    "uuid": "3fb075db-2d98-8e00-9a9e-437b8aa16601",
     "words": [
       "record"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "record: a schema.org component word, fused from CDCPMDRecord, recordLabel",
-    "uuid": "90fb03d5-a5ee-80d3-9240-c5bc981daf0f",
+    "source": "Use when reasoning about record as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "ccf121ff-b9b1-84d7-a31b-ddc3b3844a96",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "record",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "cdcpmdrecord",
-      "recordlabel"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "record: a schema.org component word, fused from CDCPMDRecord, recordLabel"
+      "en": "Use when reasoning about record as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

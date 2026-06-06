@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "exercise",
-    "uuid": "a15cc4dc-01b8-8011-b36a-070b5e2d8f05",
+    "uuid": "42e59fe6-fbc0-84ea-83b6-89bd01165742",
     "words": [
       "exercise"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "exercise: a schema.org component word, fused from ExerciseAction, ExerciseGym, ExercisePlan, exerciseCourse, exercisePlan, exerciseRelatedDiet",
-    "uuid": "3ef978e6-f36e-894c-b4e6-49bb64fd2884",
+    "source": "Use when reasoning about exercise as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "a9e7b728-3b30-86e2-88c0-0936f67616a8",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "exercise",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "exerciseaction",
-      "exercisegym",
-      "exerciseplan",
-      "exercisecourse",
-      "exerciseplan",
-      "exerciserelateddiet"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "exercise: a schema.org component word, fused from ExerciseAction, ExerciseGym, ExercisePlan, exerciseCourse, exercisePlan, exerciseRelatedDiet"
+      "en": "Use when reasoning about exercise as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

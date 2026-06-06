@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "hall",
-    "uuid": "e6165a31-3f2b-8af1-908a-6a334b6362b0",
+    "uuid": "752fd298-19b1-844b-9d03-fdddcd409dd4",
     "words": [
       "hall"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "hall: a schema.org component word, fused from CityHall",
-    "uuid": "12d8233e-9048-8704-8d7e-468510c0c05b",
+    "source": "Use when reasoning about hall as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "cde34b60-0b41-8071-8118-70131c0265a6",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "hall",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "cityhall"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "hall: a schema.org component word, fused from CityHall"
+      "en": "Use when reasoning about hall as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

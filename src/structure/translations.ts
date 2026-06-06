@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "structure",
-    "uuid": "b5bf1bd9-bd95-8cba-9de3-fc7ca8ded577",
+    "uuid": "d637ea13-7272-8a6c-84a9-813aa7a86f8e",
     "words": [
       "structure"
     ],
@@ -17,25 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "structure: a schema.org component word, fused from AnatomicalStructure, BrainStructure, CivicStructure, relatedStructure, subStructure",
-    "uuid": "fc97bf6c-8216-8c89-8685-eb4e75d96ffe",
+    "source": "Use when reasoning about structure as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "a2d90a49-0e88-81af-8c97-7c08877859e0",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "structure",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "anatomicalstructure",
-      "brainstructure",
-      "civicstructure",
-      "relatedstructure",
-      "substructure"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "structure: a schema.org component word, fused from AnatomicalStructure, BrainStructure, CivicStructure, relatedStructure, subStructure"
+      "en": "Use when reasoning about structure as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

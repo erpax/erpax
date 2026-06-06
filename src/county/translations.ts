@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "county",
-    "uuid": "270ac906-64ef-8cd1-8958-7757849215d4",
+    "uuid": "d0801e11-ae5c-8a21-a4c3-eba4a6e82bd2",
     "words": [
       "county"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "county: a schema.org component word, fused from cvdFacilityCounty",
-    "uuid": "b9d0cfaa-2048-800f-9f6d-d7e00ff65358",
+    "source": "Use when reasoning about county as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "ed2b2c8e-286a-8e6a-9b57-5c5b07d42992",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "county",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "cvdfacilitycounty"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "county: a schema.org component word, fused from cvdFacilityCounty"
+      "en": "Use when reasoning about county as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

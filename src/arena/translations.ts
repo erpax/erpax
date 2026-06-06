@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "arena",
-    "uuid": "a2c7e167-4f44-87cd-9184-a09be9b2d0a9",
+    "uuid": "7f82d3a6-2313-8bfe-97f5-70664eeb3ed2",
     "words": [
       "arena"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "arena: a schema.org component word, fused from StadiumOrArena",
-    "uuid": "23e82c18-b8cd-88fa-86f4-e6a5b5a09a27",
+    "source": "Use when reasoning about arena as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "dad02cd2-b162-8a7b-a74d-c80134aaeac2",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "arena",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "stadiumorarena"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "arena: a schema.org component word, fused from StadiumOrArena"
+      "en": "Use when reasoning about arena as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

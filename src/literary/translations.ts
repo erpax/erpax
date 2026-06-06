@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "literary",
-    "uuid": "919096f6-3d1f-82b9-a157-ea52f87e552b",
+    "uuid": "eeedfa0f-fef3-8707-8d0b-1cefa86c7c38",
     "words": [
       "literary"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "literary: a schema.org component word, fused from LiteraryEvent",
-    "uuid": "29b10d54-88ff-8bb7-b25c-72968fd19fac",
+    "source": "Use when reasoning about literary as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "91626051-dc97-88eb-89c7-54dfca5b8439",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "literary",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "literaryevent"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "literary: a schema.org component word, fused from LiteraryEvent"
+      "en": "Use when reasoning about literary as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

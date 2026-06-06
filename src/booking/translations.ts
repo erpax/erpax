@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "booking",
-    "uuid": "068c40bd-a0ad-8597-8cde-1a22ea57b279",
+    "uuid": "e1778417-9ecd-8679-9ccc-79eabab26480",
     "words": [
       "booking"
     ],
@@ -17,24 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "booking: a schema.org component word, fused from advanceBookingRequirement, bookingAgent, bookingTime, tourBookingPage",
-    "uuid": "dbf5babc-7276-83e0-9ff8-e46449238425",
+    "source": "Use when reasoning about booking as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "ae500186-f849-82a5-853a-61839807d484",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "booking",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "advancebookingrequirement",
-      "bookingagent",
-      "bookingtime",
-      "tourbookingpage"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "booking: a schema.org component word, fused from advanceBookingRequirement, bookingAgent, bookingTime, tourBookingPage"
+      "en": "Use when reasoning about booking as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

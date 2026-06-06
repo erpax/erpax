@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "form",
-    "uuid": "06d73cb1-24c8-8c9c-9d6f-c08e01c23d08",
+    "uuid": "517d76c6-1976-802d-8b41-086efdc591fd",
     "words": [
       "form"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "form: a schema.org component word, fused from dosageForm, loanRepaymentForm, musicCompositionForm",
-    "uuid": "febea360-3f70-86c7-870c-a83e4bf7f43f",
+    "source": "Use when reasoning about form as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "808d789b-62fa-8533-b85c-de2432801120",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "form",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "dosageform",
-      "loanrepaymentform",
-      "musiccompositionform"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "form: a schema.org component word, fused from dosageForm, loanRepaymentForm, musicCompositionForm"
+      "en": "Use when reasoning about form as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

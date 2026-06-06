@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "handling",
-    "uuid": "4489abb8-0129-8c28-8fba-b5a644d1c0d9",
+    "uuid": "bbbc8030-9706-88ef-954c-6d8e1c6bcbc0",
     "words": [
       "handling"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "handling: a schema.org component word, fused from handlingTime",
-    "uuid": "b88f979f-5fda-8894-8cb9-c89871b712af",
+    "source": "Use when reasoning about handling as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "530d3dce-9a38-83e6-9747-91a890fde8b5",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "handling",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "handlingtime"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "handling: a schema.org component word, fused from handlingTime"
+      "en": "Use when reasoning about handling as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

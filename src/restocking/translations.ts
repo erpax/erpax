@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "restocking",
-    "uuid": "568bc619-6096-88fd-96e9-6dc8be4cb5b2",
+    "uuid": "8f8ed18c-7f8c-8b1b-a301-bba159becb89",
     "words": [
       "restocking"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "restocking: a schema.org component word, fused from restockingFee",
-    "uuid": "2a0e3210-f800-875d-a7c3-2b0103df155e",
+    "source": "Use when reasoning about restocking as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "441eb64d-477c-8d7c-8931-62735bcd3b50",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "restocking",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "restockingfee"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "restocking: a schema.org component word, fused from restockingFee"
+      "en": "Use when reasoning about restocking as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

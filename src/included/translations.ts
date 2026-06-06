@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "included",
-    "uuid": "0da6a360-8cde-871a-b2fb-09bb48d54bd1",
+    "uuid": "f76d0a53-3068-8799-baa1-c46053972652",
     "words": [
       "included"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "included: a schema.org component word, fused from includedComposition, includedDataCatalog, includedInDataCatalog, includedInHealthInsurancePlan, includedRiskFactor, valueAddedTaxIncluded",
-    "uuid": "f2342a5f-a4d4-8718-85fb-b747ef3fa0d6",
+    "source": "Use when reasoning about included as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "de2b429c-d707-8a26-96c1-5a396017fb78",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "included",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "includedcomposition",
-      "includeddatacatalog",
-      "includedindatacatalog",
-      "includedinhealthinsuranceplan",
-      "includedriskfactor",
-      "valueaddedtaxincluded"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "included: a schema.org component word, fused from includedComposition, includedDataCatalog, includedInDataCatalog, includedInHealthInsurancePlan, includedRiskFactor, valueAddedTaxIncluded"
+      "en": "Use when reasoning about included as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

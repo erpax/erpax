@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "buddhist",
-    "uuid": "30abc345-1bfc-851b-93ee-c5de2261c383",
+    "uuid": "405571da-9653-8ad4-a328-726ce611e855",
     "words": [
       "buddhist"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "buddhist: a schema.org component word, fused from BuddhistTemple",
-    "uuid": "5d3fa932-2065-8606-8ed2-5d867bd86d50",
+    "source": "Use when reasoning about buddhist as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "2633581d-453b-838b-9ad4-adb5c0756bf6",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "buddhist",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "buddhisttemple"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "buddhist: a schema.org component word, fused from BuddhistTemple"
+      "en": "Use when reasoning about buddhist as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

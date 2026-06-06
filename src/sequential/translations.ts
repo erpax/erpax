@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "sequential",
-    "uuid": "12358a7d-0b0a-82b5-bf19-b9b57d12d640",
+    "uuid": "04b897c6-27a0-8a0e-a02f-14f92820cbce",
     "words": [
       "sequential"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "sequential: a schema.org component word, fused from SequentialArt",
-    "uuid": "bbe232fd-ebb5-8b4b-b739-51b2808638fb",
+    "source": "Use when reasoning about sequential as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "d58d0115-fe66-8cae-9f83-049d0cb6e4e2",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "sequential",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "sequentialart"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "sequential: a schema.org component word, fused from SequentialArt"
+      "en": "Use when reasoning about sequential as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

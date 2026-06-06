@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "typical",
-    "uuid": "0450b6a8-9847-83ed-9cbc-d5d299f3bdb4",
+    "uuid": "d7636052-71f3-8734-844e-1ffe20214813",
     "words": [
       "typical"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "typical: a schema.org component word, fused from typicalAgeRange, typicalCreditsPerTerm, typicalTest",
-    "uuid": "47d652a4-148d-8484-85be-f0780e4b2ed3",
+    "source": "Use when reasoning about typical as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "9fbaa3db-8fe2-894f-bb0c-04ee073ff006",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "typical",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "typicalagerange",
-      "typicalcreditsperterm",
-      "typicaltest"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "typical: a schema.org component word, fused from typicalAgeRange, typicalCreditsPerTerm, typicalTest"
+      "en": "Use when reasoning about typical as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "cargo",
-    "uuid": "5eb55893-8123-863e-985c-c8679f581b90",
+    "uuid": "75deeea9-65e9-868d-a2e6-7899f0cc0961",
     "words": [
       "cargo"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "cargo: a schema.org component word, fused from cargoVolume",
-    "uuid": "3cccf1a9-eaa8-8437-a6e3-62a57f6b1cf8",
+    "source": "Use when reasoning about cargo as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "a1ef27ce-b17a-8077-a37c-f8e0f58d2a1f",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "cargo",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "cargovolume"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "cargo: a schema.org component word, fused from cargoVolume"
+      "en": "Use when reasoning about cargo as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

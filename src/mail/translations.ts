@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "mail",
-    "uuid": "7f49e099-4f99-8c92-96fe-b9d97c6f48fd",
+    "uuid": "b94d4ecd-6ad3-8c2e-9b7d-1dc568d607d9",
     "words": [
       "mail"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "mail: a schema.org component word, fused from offersPrescriptionByMail",
-    "uuid": "0b12a14a-f845-8d8b-81c8-e6cfd93c76b8",
+    "source": "Use when reasoning about mail as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "1df7f532-bc9b-8d07-ad62-4eea373218ec",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "mail",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "offersprescriptionbymail"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "mail: a schema.org component word, fused from offersPrescriptionByMail"
+      "en": "Use when reasoning about mail as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

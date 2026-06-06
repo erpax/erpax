@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "transit",
-    "uuid": "de487923-0ff8-853c-ba6d-3683cb240583",
+    "uuid": "c7c10af3-7cd2-8a57-add6-81b969bf3d7e",
     "words": [
       "transit"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "transit: a schema.org component word, fused from transitTime, transitTimeLabel",
-    "uuid": "2b0ba328-becc-8150-a25f-4e4cf6288021",
+    "source": "Use when reasoning about transit as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "8e9390c6-4ecf-8c79-b233-992823482df1",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "transit",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "transittime",
-      "transittimelabel"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "transit: a schema.org component word, fused from transitTime, transitTimeLabel"
+      "en": "Use when reasoning about transit as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "join",
-    "uuid": "40a121a8-2d87-807e-9426-c6a2c085412f",
+    "uuid": "c25d6c6b-3585-8a91-a89f-30029ec9006b",
     "words": [
       "join"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "join: a schema.org component word, fused from JoinAction",
-    "uuid": "040df538-23d0-8b9b-b4ac-52df96d3478d",
+    "source": "Use when reasoning about join as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "0e14993b-e31e-8b1f-9018-c5a96927bf19",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "join",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "joinaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "join: a schema.org component word, fused from JoinAction"
+      "en": "Use when reasoning about join as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

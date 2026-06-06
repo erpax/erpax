@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "pos",
-    "uuid": "c045d439-aef1-8e5d-b957-8a4ec9c5034c",
+    "uuid": "945282cf-893e-8fc3-8b40-00f340dbb6f3",
     "words": [
       "pos"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "pos: a schema.org component word, fused from hasPOS",
-    "uuid": "30a9864a-4ebc-8d27-bb9b-6e11d843073c",
+    "source": "Use when reasoning about pos as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "83cc84b7-60bb-84bb-97a1-e3e79e5a4b75",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "pos",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "haspos"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "pos: a schema.org component word, fused from hasPOS"
+      "en": "Use when reasoning about pos as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

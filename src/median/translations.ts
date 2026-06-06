@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "median",
-    "uuid": "70cbeb3c-fd25-8f49-9b37-48ff64820162",
+    "uuid": "df5fb9c1-29f4-87f5-ab48-722930cabde2",
     "words": [
       "median"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "The median value.",
-    "uuid": "c8478d3d-c208-8913-9aef-3efb771592c4",
+    "uuid": "763289d1-149a-8428-ae52-073747b63f84",
     "words": [
       "the",
       "median",

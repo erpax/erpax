@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "departure",
-    "uuid": "aaf9b6b6-c119-856b-a042-0f555d086fd7",
+    "uuid": "644ab8b0-5a4f-8acf-bf1d-9c0ef9874e9d",
     "words": [
       "departure"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "departure: a schema.org component word, fused from departureAirport, departureBoatTerminal, departureBusStop, departureGate, departurePlatform, departureStation",
-    "uuid": "a238fd90-e147-8d6e-8be5-336821c9ba6a",
+    "source": "Use when reasoning about departure as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "28ce6938-5027-86c6-8383-433e1c7bcc2c",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "departure",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "departureairport",
-      "departureboatterminal",
-      "departurebusstop",
-      "departuregate",
-      "departureplatform",
-      "departurestation"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "departure: a schema.org component word, fused from departureAirport, departureBoatTerminal, departureBusStop, departureGate, departurePlatform, departureStation"
+      "en": "Use when reasoning about departure as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

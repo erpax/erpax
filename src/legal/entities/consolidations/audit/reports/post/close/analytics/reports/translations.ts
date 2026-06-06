@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "post-close-analytics-reports",
-    "uuid": "05045c07-6885-8d9c-bb55-0d71f7da3a1f",
+    "uuid": "a12c52f7-4c23-8000-b431-639d61653406",
     "words": [
       "post",
       "close",
@@ -21,7 +21,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when generating or reviewing immutable post-close analytics — variance analysis (budget vs. actual), financial ratio analysis, segment reporting (IFRS-8 business and geographic), and management KPI scorecards per IFRS IAS-1 / SOX §404. The post-close analytics report collection.",
-    "uuid": "92b8297f-6228-8527-827a-c69914133a32",
+    "uuid": "72ad40f3-931c-813f-bec9-63f142b3403b",
     "words": [
       "use",
       "when",

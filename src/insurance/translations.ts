@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "insurance",
-    "uuid": "708ab7cb-fa38-8114-88ce-c14ce2480d31",
+    "uuid": "a921fb85-8319-84d4-bb13-7e70e7e787d7",
     "words": [
       "insurance"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "insurance: a schema.org component word, fused from HealthInsurancePlan, InsuranceAgency, includedInHealthInsurancePlan",
-    "uuid": "8e8f0cfb-513d-830f-9daf-87ff68c49c67",
+    "source": "Use when reasoning about insurance as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "5e064585-ad55-8ba6-8e42-d4c2a46c83df",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "insurance",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "healthinsuranceplan",
-      "insuranceagency",
-      "includedinhealthinsuranceplan"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "insurance: a schema.org component word, fused from HealthInsurancePlan, InsuranceAgency, includedInHealthInsurancePlan"
+      "en": "Use when reasoning about insurance as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

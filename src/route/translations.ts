@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "route",
-    "uuid": "75b2ff12-78ec-8231-b210-348ffe0e8eee",
+    "uuid": "16177fa9-ec86-8e39-9ee8-db515b12971f",
     "words": [
       "route"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "route: a schema.org component word, fused from administrationRoute",
-    "uuid": "8e6aabf3-60e2-8e1a-b979-e1d65f53415c",
+    "source": "Use when reasoning about route as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "fb51a133-0c3f-85e9-8075-a3034cf0a256",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "route",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "administrationroute"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "route: a schema.org component word, fused from administrationRoute"
+      "en": "Use when reasoning about route as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

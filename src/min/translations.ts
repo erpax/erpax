@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "min",
-    "uuid": "929b3423-49fc-8682-b588-04b3923ecd17",
+    "uuid": "bb2ec3d1-5afc-85d2-a60f-df72e959e938",
     "words": [
       "min"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "min: a schema.org component word, fused from childMinAge, energyEfficiencyScaleMin, minPrice, minValue, requiredMinAge, suggestedMinAge",
-    "uuid": "68805306-da12-8caf-8b55-5ac2eb511053",
+    "source": "Use when reasoning about min as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "0e77c21a-770c-8f0a-824a-503db1d6fc3d",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "min",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "childminage",
-      "energyefficiencyscalemin",
-      "minprice",
-      "minvalue",
-      "requiredminage",
-      "suggestedminage"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "min: a schema.org component word, fused from childMinAge, energyEfficiencyScaleMin, minPrice, minValue, requiredMinAge, suggestedMinAge"
+      "en": "Use when reasoning about min as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

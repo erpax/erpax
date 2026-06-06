@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "wear",
-    "uuid": "94357b35-978d-8555-8572-736012edaa57",
+    "uuid": "c451e494-e74c-8653-8b34-a91f49287dc2",
     "words": [
       "wear"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "wear: a schema.org component word, fused from WearAction",
-    "uuid": "afc65bb6-3a87-87e9-bacd-d29904cf325e",
+    "source": "Use when reasoning about wear as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "6c9ece6f-7529-83c5-a830-ad5a94dcf878",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "wear",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "wearaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "wear: a schema.org component word, fused from WearAction"
+      "en": "Use when reasoning about wear as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

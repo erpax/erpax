@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "deadline",
-    "uuid": "6d73324a-ff7f-8517-8660-33091a9e9382",
+    "uuid": "1bc7fc2d-e6d6-8034-9584-3d97b4b946a9",
     "words": [
       "deadline"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "deadline: a schema.org component word, fused from applicationDeadline",
-    "uuid": "94e31694-9e77-85ad-ab77-e5fb005eff54",
+    "source": "Use when reasoning about deadline as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "a94bb3ed-f158-87c2-bb93-00fa081dc09e",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "deadline",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "applicationdeadline"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "deadline: a schema.org component word, fused from applicationDeadline"
+      "en": "Use when reasoning about deadline as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

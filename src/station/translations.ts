@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "station",
-    "uuid": "5179bed9-f79d-8a81-9148-d98e6de3c139",
+    "uuid": "5728ae10-b18a-8d27-8e19-e80da57c18b9",
     "words": [
       "station"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "station: a schema.org component word, fused from BusStation, FireStation, GasStation, PoliceStation, RadioStation, SubwayStation",
-    "uuid": "02104793-e6c1-8564-9888-5cb6550ddd40",
+    "source": "Use when reasoning about station as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "3a53f742-6cc0-8288-8d93-ae39002adb32",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "station",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "busstation",
-      "firestation",
-      "gasstation",
-      "policestation",
-      "radiostation",
-      "subwaystation"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "station: a schema.org component word, fused from BusStation, FireStation, GasStation, PoliceStation, RadioStation, SubwayStation"
+      "en": "Use when reasoning about station as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

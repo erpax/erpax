@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "lifestyle",
-    "uuid": "518d8b52-820f-8077-96df-1690a54bc9c5",
+    "uuid": "b2954b2e-506d-8085-a82f-9117dbbbcb69",
     "words": [
       "lifestyle"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "lifestyle: a schema.org component word, fused from LifestyleModification",
-    "uuid": "704ae0ae-2e45-8374-a1ee-5c56ed56e6a8",
+    "source": "Use when reasoning about lifestyle as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "75ea215b-50f6-8af0-824d-4cc501798002",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "lifestyle",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "lifestylemodification"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "lifestyle: a schema.org component word, fused from LifestyleModification"
+      "en": "Use when reasoning about lifestyle as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

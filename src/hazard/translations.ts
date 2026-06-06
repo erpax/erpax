@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "hazard",
-    "uuid": "119064df-782f-8186-be3b-e55aaff2fad2",
+    "uuid": "9f4b6cbb-1ae6-856d-a510-5488168e7b6d",
     "words": [
       "hazard"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "hazard: a schema.org component word, fused from accessibilityHazard",
-    "uuid": "8749bbb7-2340-827f-ad5f-c0fb186ab840",
+    "source": "Use when reasoning about hazard as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "58315222-822a-8e2a-a06e-466a499cae11",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "hazard",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "accessibilityhazard"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "hazard: a schema.org component word, fused from accessibilityHazard"
+      "en": "Use when reasoning about hazard as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

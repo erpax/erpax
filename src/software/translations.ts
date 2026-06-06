@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "software",
-    "uuid": "f13a3b44-07f5-835a-8fbd-f6c52c77955d",
+    "uuid": "da356f49-e12a-842f-aaf0-dcfcc3c52808",
     "words": [
       "software"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "software: a schema.org component word, fused from SoftwareApplication, SoftwareSourceCode, softwareAddOn, softwareHelp, softwareRequirements, softwareVersion",
-    "uuid": "4f7f5e7a-43df-8c52-9760-866d9a18b51e",
+    "source": "Use when reasoning about software as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "1b29951b-a10b-8482-8d8f-65b2d3e22ade",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "software",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "softwareapplication",
-      "softwaresourcecode",
-      "softwareaddon",
-      "softwarehelp",
-      "softwarerequirements",
-      "softwareversion"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "software: a schema.org component word, fused from SoftwareApplication, SoftwareSourceCode, softwareAddOn, softwareHelp, softwareRequirements, softwareVersion"
+      "en": "Use when reasoning about software as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

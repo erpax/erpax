@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "solver",
-    "uuid": "408adac3-358d-88ed-adde-2e31edee49e8",
+    "uuid": "85ec1bb9-8d4d-818d-871b-f84681a6395b",
     "words": [
       "solver"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "solver: a schema.org component word, fused from MathSolver",
-    "uuid": "3c5d1155-0e03-8c73-a919-739b1840c09d",
+    "source": "Use when reasoning about solver as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "999373ce-420e-8eea-aa5d-3e53d5c81f72",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "solver",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "mathsolver"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "solver: a schema.org component word, fused from MathSolver"
+      "en": "Use when reasoning about solver as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

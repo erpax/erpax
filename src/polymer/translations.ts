@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "polymer",
-    "uuid": "f41f6963-f01c-80e4-9c0b-41525695303d",
+    "uuid": "213d5187-8e27-89e0-b195-8007107326e7",
     "words": [
       "polymer"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "polymer: a schema.org component word, fused from hasBioPolymerSequence",
-    "uuid": "2ec232cb-5f97-8e25-9c72-2429270e8d70",
+    "source": "Use when reasoning about polymer as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "ce712abf-41eb-83ce-a17b-8e61146d4d0e",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "polymer",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "hasbiopolymersequence"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "polymer: a schema.org component word, fused from hasBioPolymerSequence"
+      "en": "Use when reasoning about polymer as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

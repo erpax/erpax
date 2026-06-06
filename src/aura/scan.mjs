@@ -10,6 +10,7 @@
 // Loop:   node .claude/skills/aura/scan.mjs --watch   (re-scans on any SKILL.md change)
 
 import { readdir, readFile, watch } from 'node:fs/promises'
+import { existsSync } from 'node:fs'
 import { join, dirname, basename } from 'node:path'
 
 // The corpus lives in src/ (VitePress srcDir), NOT in .claude/skills. Point the speech gate
@@ -63,14 +64,31 @@ async function scan() {
   const dead = [...links.keys()].filter((w) => !slugs.has(w)).sort()
   const referenced = new Set(links.keys())
   const orphans = [...slugs.keys()].filter((s) => !referenced.has(s)).sort()
-  return { files, slugs, links, refCount, dead, orphans }
+  // Test-coverage — the SECOND completeness axis of the aura math, beside link resolution. Of the
+  // CODE-atoms (a folder carrying an index.ts), the fraction that also carry a test.ts. A code-atom
+  // with no test is a gap in the field the same way a dead link is. Pure-skill / vocabulary atoms
+  // (no index.ts) are not counted — nothing to test. matrix-complete ⟺ aura-gap-0 AND coverage→1.
+  let codeAtoms = 0
+  let tested = 0
+  const untested = []
+  for (const f of files) {
+    const dir = dirname(f)
+    if (!existsSync(join(dir, 'index.ts'))) continue
+    codeAtoms++
+    // tested = the folder carries a test.ts (the trinity leg) OR any *.test.ts (index.test.ts etc.)
+    if ((await readdir(dir)).some((s) => s === 'test.ts' || s.endsWith('.test.ts'))) tested++
+    else untested.push(norm(basename(dir)))
+  }
+  const coverage = codeAtoms ? tested / codeAtoms : 1
+  return { files, slugs, links, refCount, dead, orphans, codeAtoms, tested, coverage, untested: untested.sort() }
 }
 
-function report({ files, slugs, dead, orphans, refCount }) {
+function report({ files, slugs, dead, orphans, refCount, codeAtoms, tested, coverage, untested }) {
   const L = []
   const collections = [...slugs].filter(([, ps]) => ps.length > 1)
   L.push(`aura scan — ${files.length} SKILL.md, ${slugs.size} atoms, ${collections.length} accountable collections`)
   L.push(`gap = ${dead.length}  (dead links; ${orphans.length} orphans advisory)`)
+  L.push(`test-coverage = ${(coverage * 100).toFixed(1)}%  (${tested}/${codeAtoms} code-atoms carry test.ts; ${untested.length} untested)`)
   if (collections.length) {
     L.push('')
     L.push('COLLECTIONS (one word, many paths — accountable merges, not last-wins):')
@@ -94,7 +112,7 @@ function report({ files, slugs, dead, orphans, refCount }) {
 const json = process.argv.includes('--json')
 const out = async () => {
   const r = await scan()
-  console.log(json ? JSON.stringify({ atoms: r.slugs.size, dead: r.dead, orphans: r.orphans }, null, 2) : report(r))
+  console.log(json ? JSON.stringify({ atoms: r.slugs.size, dead: r.dead, orphans: r.orphans, testCoverage: r.coverage, codeAtoms: r.codeAtoms, tested: r.tested, untested: r.untested }, null, 2) : report(r))
   return r.dead.length + r.orphans.length
 }
 

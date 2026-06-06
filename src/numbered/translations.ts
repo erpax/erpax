@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "numbered",
-    "uuid": "4caaf4fb-0c8a-897e-ae3d-215f532a7112",
+    "uuid": "e67e1ba4-bc51-8709-a9d3-3618bad32224",
     "words": [
       "numbered"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "numbered: a schema.org component word, fused from numberedPosition",
-    "uuid": "34f8be31-3a09-80be-9f7d-e997a697a462",
+    "source": "Use when reasoning about numbered as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "8dc91e6d-c0e1-8a97-adf0-9bea816e2859",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "numbered",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "numberedposition"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "numbered: a schema.org component word, fused from numberedPosition"
+      "en": "Use when reasoning about numbered as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

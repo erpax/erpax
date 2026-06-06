@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "regions",
-    "uuid": "1ee9b86e-8cd2-8dd3-ac1c-3feae35dbe07",
+    "uuid": "9ce3589c-939e-8afd-8c99-f239e42a87d1",
     "words": [
       "regions"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "regions: a schema.org component word, fused from regionsAllowed",
-    "uuid": "c2537fe6-89f1-8a4d-95bb-f86e1e4b0bfe",
+    "source": "Use when reasoning about regions as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "300ea6ac-25c0-82b5-8eef-bf7cc49e0cd0",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "regions",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "regionsallowed"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "regions: a schema.org component word, fused from regionsAllowed"
+      "en": "Use when reasoning about regions as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,8 +7,12 @@
  * could ride one way. The reciprocal-edge fraction (the SAME number quantum's
  * entanglement reports) measures how symmetric the matrix is; the slack left
  * over -- 1 - that fraction -- is the borrowed disorder. Orphans (atoms bound
- * by nothing, binding nothing) are pure unfused disorder. Zero entropy ⇒
- * infinite mass ⇒ infinite tamper/exploit cost.
+ * by nothing, binding nothing) are pure unfused disorder. entropy() is an
+ * audit/aura signal, NOT an input to crackVerdict/coverageCostLog2: it is a
+ * DISTINCT measure from coverage (the [0,1] fraction that prices tamper-cost),
+ * so zero entropy does NOT by itself yield infinite cost. The cost reaches its
+ * +∞ limit ONLY at coverage = 1 (the live tree is the counter-example: entropy
+ * 0, coverage < 1, cost finite -- see ../balance).
  *
  *   tsx src/entropy/index.ts
  *

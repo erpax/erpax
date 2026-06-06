@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "force",
-    "uuid": "a303c4d7-7ad2-8a70-801c-9f7445e64ebe",
+    "uuid": "8ff753f5-a1bf-8aa6-99d2-6c7282a72137",
     "words": [
       "force"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "force: a schema.org component word, fused from LegalForceStatus, legislationLegalForce",
-    "uuid": "b4f0df8b-f8dd-8036-9bd0-d7a24a75e0ce",
+    "source": "Use when reasoning about force as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "11dfe6bb-f2b2-854a-9f71-19e4bb5a39e9",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "force",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "legalforcestatus",
-      "legislationlegalforce"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "force: a schema.org component word, fused from LegalForceStatus, legislationLegalForce"
+      "en": "Use when reasoning about force as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

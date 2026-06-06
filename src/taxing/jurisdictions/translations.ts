@@ -19,7 +19,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when looking up or seeding read-only reference data for tax authority geographies — country, region, local and supranational levels with ISO-3166 codes, primary currency, languages, regulatory characteristics, banking requirements, filing deadlines and applicable compliance frameworks. The super-admin-maintained jurisdiction reference collection.",
-    "uuid": "39cc0104-c87c-8342-95e3-4a60399af028",
+    "uuid": "432b25c0-f79c-8367-a253-e718470c4eca",
     "words": [
       "use",
       "when",

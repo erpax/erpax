@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "iptc",
-    "uuid": "b9c9d69e-dc08-8d08-8838-a6ece0fbc5f7",
+    "uuid": "f5d6d372-ae7a-8cae-8a30-076a52990322",
     "words": [
       "iptc"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "iptc: a schema.org component word, fused from IPTCDigitalSourceEnumeration",
-    "uuid": "d8fba36f-8cfa-895a-8279-fcf28a42a6bd",
+    "source": "Use when reasoning about iptc as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "455975af-acfb-860c-8a08-973198ff3cc6",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "iptc",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "iptcdigitalsourceenumeration"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "iptc: a schema.org component word, fused from IPTCDigitalSourceEnumeration"
+      "en": "Use when reasoning about iptc as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

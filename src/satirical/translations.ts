@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "satirical",
-    "uuid": "b0694e96-91cc-890f-b9d3-7e287d19cbbe",
+    "uuid": "566ac1b1-0e43-8319-bdd1-4a8712b6c0e0",
     "words": [
       "satirical"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "satirical: a schema.org component word, fused from SatiricalArticle",
-    "uuid": "fc06b88f-2cdc-845a-94eb-94ef870c708b",
+    "source": "Use when reasoning about satirical as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "d6fe3794-4363-8b1a-8911-1429fe9d44d2",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "satirical",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "satiricalarticle"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "satirical: a schema.org component word, fused from SatiricalArticle"
+      "en": "Use when reasoning about satirical as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

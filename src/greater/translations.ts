@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "greater",
-    "uuid": "fe7747a1-c854-8d83-9fed-2c305617f0b8",
+    "uuid": "7b21cb9b-f451-8fe2-8eaa-d921de25df34",
     "words": [
       "greater"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "This ordering relation for qualitative values indicates that the subject is greater than the object.",
-    "uuid": "5a973bf4-e87a-8254-a4b6-6ff8d2fdbe74",
+    "uuid": "6d921e08-62c5-8066-9927-13efb0bd6125",
     "words": [
       "this",
       "ordering",

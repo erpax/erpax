@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "attraction",
-    "uuid": "1e4349fb-22cd-847d-b139-4939e1349dbc",
+    "uuid": "210cac67-e232-8ece-97f0-9e7d343d203c",
     "words": [
       "attraction"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "attraction: a schema.org component word, fused from TouristAttraction, includesAttraction",
-    "uuid": "5e976ea9-4d71-814e-baae-f060fa7013df",
+    "source": "Use when reasoning about attraction as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "2a17c8ad-e618-8c7f-8438-215b3911093f",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "attraction",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "touristattraction",
-      "includesattraction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "attraction: a schema.org component word, fused from TouristAttraction, includesAttraction"
+      "en": "Use when reasoning about attraction as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

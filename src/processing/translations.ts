@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "processing",
-    "uuid": "43c5fe52-c066-89c7-8590-fe90c7267db9",
+    "uuid": "f545dd3d-93c6-82d3-b01a-1d383d133699",
     "words": [
       "processing"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "processing: a schema.org component word, fused from countryOfLastProcessing, processingTime",
-    "uuid": "5306b5ee-fe82-8f43-ac00-7c0b4d8aba5d",
+    "source": "Use when reasoning about processing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "76163eb9-9812-85a9-ab26-f49650c96ff7",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "processing",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "countryoflastprocessing",
-      "processingtime"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "processing: a schema.org component word, fused from countryOfLastProcessing, processingTime"
+      "en": "Use when reasoning about processing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "upon",
-    "uuid": "27e89bd9-77c4-8d06-b7df-4ababf75d87a",
+    "uuid": "c98d7093-9257-8fb2-b62b-b198f5833f7a",
     "words": [
       "upon"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "upon: a schema.org component word, fused from salaryUponCompletion",
-    "uuid": "eaf591e9-0309-8e35-b0fc-cc974e231f7b",
+    "source": "Use when reasoning about upon as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "43b5789f-0454-816b-9831-c916a6f88246",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "upon",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "salaryuponcompletion"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "upon: a schema.org component word, fused from salaryUponCompletion"
+      "en": "Use when reasoning about upon as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

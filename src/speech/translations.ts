@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "speech",
-    "uuid": "e5683ff4-1912-82ab-841d-4a88be3b499c",
+    "uuid": "505c2ca3-1e6d-8d10-8fc8-af9722a4e9a0",
     "words": [
       "speech"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "speech: a schema.org component word, fused from speechToTextMarkup",
-    "uuid": "521f72db-682a-8679-b101-54787ad28f5f",
+    "source": "Use when reasoning about speech as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "4be3f235-01be-8af3-82bb-5bbfaf6b143b",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "speech",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "speechtotextmarkup"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "speech: a schema.org component word, fused from speechToTextMarkup"
+      "en": "Use when reasoning about speech as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

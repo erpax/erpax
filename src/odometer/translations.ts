@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "odometer",
-    "uuid": "dbd8de58-74c5-84b5-a47a-6dab8d1deb57",
+    "uuid": "973de0a1-0692-86ba-ac94-642c2e4540d1",
     "words": [
       "odometer"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "odometer: a schema.org component word, fused from mileageFromOdometer",
-    "uuid": "7a2fc698-5c36-8a6a-8c64-7159b0a22b74",
+    "source": "Use when reasoning about odometer as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "5e801e48-3312-8ee9-9d7f-b3d1cc2b3aba",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "odometer",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "mileagefromodometer"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "odometer: a schema.org component word, fused from mileageFromOdometer"
+      "en": "Use when reasoning about odometer as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

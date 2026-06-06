@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "manipulation",
-    "uuid": "402f05d6-eedb-800c-8ca8-1d08581dd75b",
+    "uuid": "12fcb628-429a-8575-a9d6-ab434d16a791",
     "words": [
       "manipulation"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "manipulation: a schema.org component word, fused from MediaManipulationRatingEnumeration",
-    "uuid": "613820e3-a233-89ed-8b43-147cb7bffbc5",
+    "source": "Use when reasoning about manipulation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "8d9add2a-5244-857d-bd5e-4009d039a303",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "manipulation",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "mediamanipulationratingenumeration"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "manipulation: a schema.org component word, fused from MediaManipulationRatingEnumeration"
+      "en": "Use when reasoning about manipulation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

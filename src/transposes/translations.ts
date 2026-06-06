@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "transposes",
-    "uuid": "31ef507e-dcac-8429-89bd-9e259d4fad4c",
+    "uuid": "1292b749-caa0-841c-a4d1-973f6f92e118",
     "words": [
       "transposes"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "transposes: a schema.org component word, fused from legislationTransposes",
-    "uuid": "5fd016b6-3b9a-89f8-b6b9-c43d57613ad8",
+    "source": "Use when reasoning about transposes as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "317b3de0-0fb9-8e0a-8cba-a2c898dc2c88",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "transposes",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "legislationtransposes"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "transposes: a schema.org component word, fused from legislationTransposes"
+      "en": "Use when reasoning about transposes as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

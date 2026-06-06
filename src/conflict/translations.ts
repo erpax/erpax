@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use for the conflict-of-interest check — before taking a matter, prove the new client is not adverse to an existing one. Strip the prefix and a conflict is a collision on the party relationship graph, detected by merge/identity (same entity → same uuid) — the duplicate-claim law applied to representation.",
-    "uuid": "d78d75d0-182c-82c1-a875-f3e0e9699506",
+    "uuid": "30beca72-5ed5-89f5-bd15-4df088a2e882",
     "words": [
       "use",
       "for",

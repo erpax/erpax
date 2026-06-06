@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "fallback",
-    "uuid": "3f576f01-31e0-8cf9-affb-0a40d54ab62f",
+    "uuid": "42746b65-8828-897b-b149-91b213d85557",
     "words": [
       "fallback"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "fallback: a schema.org component word, fused from isUnlabelledFallback",
-    "uuid": "a4490265-c261-8859-918d-6605b03f5f6b",
+    "source": "Use when reasoning about fallback as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "aa6fc17f-44e3-883e-83b0-281ee37c3813",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "fallback",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "isunlabelledfallback"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "fallback: a schema.org component word, fused from isUnlabelledFallback"
+      "en": "Use when reasoning about fallback as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

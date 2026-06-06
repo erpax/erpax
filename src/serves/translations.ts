@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "serves",
-    "uuid": "3eb016bf-3073-84e2-879d-100bfe99fbaf",
+    "uuid": "9b9bfe7a-e3d7-8ee4-a052-286ef423ef75",
     "words": [
       "serves"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "serves: a schema.org component word, fused from servesCuisine",
-    "uuid": "5c0088de-1faf-8f73-b221-ea12870057fc",
+    "source": "Use when reasoning about serves as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "d1421419-ddca-8097-ac15-1b0496ae385a",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "serves",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "servescuisine"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "serves: a schema.org component word, fused from servesCuisine"
+      "en": "Use when reasoning about serves as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

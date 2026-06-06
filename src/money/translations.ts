@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "money",
-    "uuid": "b47a68c7-34dd-8378-ba0b-682c11f6605c",
+    "uuid": "8b9410ac-9cd7-8f49-8f2e-0ac62e0e5279",
     "words": [
       "money"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "money: a schema.org component word, fused from DatedMoneySpecification, MoneyTransfer",
-    "uuid": "6d8e30d5-4a52-8021-b891-24f9a699bee4",
+    "source": "Use when reasoning about money as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "4391c9e0-8164-8cc9-b115-cb25956aa1e1",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "money",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "datedmoneyspecification",
-      "moneytransfer"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "money: a schema.org component word, fused from DatedMoneySpecification, MoneyTransfer"
+      "en": "Use when reasoning about money as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

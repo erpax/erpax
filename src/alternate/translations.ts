@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "alternate",
-    "uuid": "48666793-0924-89f3-a6c8-b6933fdbd25e",
+    "uuid": "b3258c21-dc68-81e2-8eb6-28e5c5f7ea58",
     "words": [
       "alternate"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "alternate: a schema.org component word, fused from alternateName",
-    "uuid": "ccc243ce-7567-8368-9f9d-0cd8731cda76",
+    "source": "Use when reasoning about alternate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "8d023df9-50cc-85f2-9126-00a2eb897a12",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "alternate",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "alternatename"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "alternate: a schema.org component word, fused from alternateName"
+      "en": "Use when reasoning about alternate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

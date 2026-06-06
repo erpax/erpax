@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "responsible",
-    "uuid": "09a51777-a68a-8895-8806-e5aa779a2633",
+    "uuid": "f1052b2e-ed32-803a-a48d-07a98507b9d2",
     "words": [
       "responsible"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "responsible: a schema.org component word, fused from legislationResponsible",
-    "uuid": "36177b75-cc30-8822-866c-34c32b1c5322",
+    "source": "Use when reasoning about responsible as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "83db811f-278e-82be-bf5c-86d822b8e720",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "responsible",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "legislationresponsible"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "responsible: a schema.org component word, fused from legislationResponsible"
+      "en": "Use when reasoning about responsible as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

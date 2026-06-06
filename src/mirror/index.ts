@@ -15,7 +15,7 @@
  * @see ../horo -- ../name -- ../digit -- ../duality -- ./SKILL.md
  */
 import { uuidOfName } from '@/name'
-import { digitalRoot as drUuid } from '@/digit'
+import { digitalRootOfUuid as drUuid } from '@/digit'
 import { digitalRoot as drInt } from '@/horo'
 
 const words = (path: string): string[] => path.split('/').filter(Boolean)

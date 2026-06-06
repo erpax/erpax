@@ -1,5 +1,5 @@
 ---
-name: consignment-inventory
+name: consignment-inventories
 description: Use when tracking per-SKU on-hand inventory balance at a consignee location — shipments in, sales out, returns, cycle-count reconciliation, IAS-2 §6 balance-sheet ownership retained by consignor, valuation method, and GL account mapping. The consignment per-SKU running-balance collection.
 ---
 

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "pawn",
-    "uuid": "ada774ae-4dc6-860a-9fbd-24094f5c81c7",
+    "uuid": "baa11e40-b41f-8a3d-8cf6-63dd4a3cbceb",
     "words": [
       "pawn"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "pawn: a schema.org component word, fused from PawnShop",
-    "uuid": "e6f19002-40af-84b3-a5d1-268aab98b777",
+    "source": "Use when reasoning about pawn as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "d7e835dd-959a-8d5c-8aca-2df10292df45",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "pawn",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "pawnshop"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "pawn: a schema.org component word, fused from PawnShop"
+      "en": "Use when reasoning about pawn as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

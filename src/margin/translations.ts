@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "margin",
-    "uuid": "f0445adc-d9d2-873f-83f3-176db1fa2c53",
+    "uuid": "460a93ce-d66d-8368-b972-a981a55f4cba",
     "words": [
       "margin"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "margin: a schema.org component word, fused from marginOfError",
-    "uuid": "9e8e3d40-5c74-8ae9-b417-92e3ae43aad1",
+    "source": "Use when reasoning about margin as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "8e2214fa-e2e4-8933-8c3e-7f721ebecdd4",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "margin",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "marginoferror"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "margin: a schema.org component word, fused from marginOfError"
+      "en": "Use when reasoning about margin as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

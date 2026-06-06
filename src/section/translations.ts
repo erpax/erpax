@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "section",
-    "uuid": "93371466-5770-85e1-8880-6931a61d67dc",
+    "uuid": "9bcf5df2-4f72-8b17-8708-09e3df807ace",
     "words": [
       "section"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "section: a schema.org component word, fused from HowToSection, MenuSection, articleSection, hasMenuSection, printSection, seatSection",
-    "uuid": "41517ac0-c83e-8c93-8c3b-3ef872afabee",
+    "source": "Use when reasoning about section as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "12d07e31-c319-8a17-89b6-4af6af51eb43",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "section",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "howtosection",
-      "menusection",
-      "articlesection",
-      "hasmenusection",
-      "printsection",
-      "seatsection"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "section: a schema.org component word, fused from HowToSection, MenuSection, articleSection, hasMenuSection, printSection, seatSection"
+      "en": "Use when reasoning about section as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

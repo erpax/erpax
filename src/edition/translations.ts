@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "edition",
-    "uuid": "94526bbe-525a-8eb8-9e8d-2c726b12f505",
+    "uuid": "60dfcd77-e5f9-8693-8b91-4c78bc2a5a60",
     "words": [
       "edition"
     ],
@@ -17,24 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "edition: a schema.org component word, fused from artEdition, bookEdition, gameEdition, printEdition",
-    "uuid": "a3f5f35b-2f54-89fb-bddc-14eb6175c03c",
+    "source": "Use when reasoning about edition as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "2cb59258-028d-8a00-901b-ee2501a40138",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "edition",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "artedition",
-      "bookedition",
-      "gameedition",
-      "printedition"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "edition: a schema.org component word, fused from artEdition, bookEdition, gameEdition, printEdition"
+      "en": "Use when reasoning about edition as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

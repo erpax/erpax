@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "interaction",
-    "uuid": "c3388c66-286f-8fa5-a679-8eb9c873fb87",
+    "uuid": "af4f1877-1cca-8bfa-aa7e-897ba9116d13",
     "words": [
       "interaction"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "interaction: a schema.org component word, fused from InteractionCounter, UserInteraction, agentInteractionStatistic, bioChemInteraction, interactionCount, interactionService",
-    "uuid": "5803bb02-6697-893a-8a77-c21b6ebdbd8a",
+    "source": "Use when reasoning about interaction as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "786e53eb-858e-823b-8d36-bf94ca6dd85e",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "interaction",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "interactioncounter",
-      "userinteraction",
-      "agentinteractionstatistic",
-      "biocheminteraction",
-      "interactioncount",
-      "interactionservice"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "interaction: a schema.org component word, fused from InteractionCounter, UserInteraction, agentInteractionStatistic, bioChemInteraction, interactionCount, interactionService"
+      "en": "Use when reasoning about interaction as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

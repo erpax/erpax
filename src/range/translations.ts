@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "range",
-    "uuid": "4f86bb9a-ebd7-8d14-b8a5-5f867e1ae963",
+    "uuid": "a5f41e7e-a425-8375-8dcb-3d9784a7ad41",
     "words": [
       "range"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "range: a schema.org component word, fused from PostalCodeRangeSpecification, normalRange, postalCodeRange, priceRange, rangeIncludes, taxonomicRange",
-    "uuid": "b3b68bf8-a26d-8103-9391-211e8869ad5c",
+    "source": "Use when reasoning about range as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "6fa2ff3f-4331-8cf3-bfbf-2d295f037eb7",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "range",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "postalcoderangespecification",
-      "normalrange",
-      "postalcoderange",
-      "pricerange",
-      "rangeincludes",
-      "taxonomicrange"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "range: a schema.org component word, fused from PostalCodeRangeSpecification, normalRange, postalCodeRange, priceRange, rangeIncludes, taxonomicRange"
+      "en": "Use when reasoning about range as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

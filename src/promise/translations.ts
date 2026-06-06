@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "promise",
-    "uuid": "1793b8ae-37a2-8c58-a19a-c4233e81380a",
+    "uuid": "f5e3809c-cc48-8d5c-9a2a-51dc99f4c962",
     "words": [
       "promise"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "promise: a schema.org component word, fused from WarrantyPromise, warrantyPromise",
-    "uuid": "cc8b38b7-a992-8eec-b280-0f7253f32701",
+    "source": "Use when reasoning about promise as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "99b1ff40-ea9b-8ad3-a781-ed4ff04d493a",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "promise",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "warrantypromise",
-      "warrantypromise"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "promise: a schema.org component word, fused from WarrantyPromise, warrantyPromise"
+      "en": "Use when reasoning about promise as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

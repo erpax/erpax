@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "carrier",
-    "uuid": "2d3ce5a1-4cce-80dc-bdb2-1832e1cdb1d9",
+    "uuid": "91f74222-a844-82c2-816c-a9e458310b04",
     "words": [
       "carrier"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "'carrier' is an out-dated term indicating the 'provider' for parcel delivery and flights.",
-    "uuid": "2b866d93-189c-8f12-96d2-6fa4117024a0",
+    "uuid": "2571bef0-ec27-8823-a8b6-244256e6a5dd",
     "words": [
       "carrier",
       "is",

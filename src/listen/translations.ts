@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "listen",
-    "uuid": "2e49874a-0b2e-8f92-bd06-e54ed3f5b5e1",
+    "uuid": "f3b61f78-43cc-8827-85b1-7b82b0eafe30",
     "words": [
       "listen"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "listen: a schema.org component word, fused from ListenAction",
-    "uuid": "3cc00fe8-6516-8342-94de-f6adcda2623f",
+    "source": "Use when reasoning about listen as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "81345162-88d5-881d-b0bb-9eea0084d0b4",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "listen",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "listenaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "listen: a schema.org component word, fused from ListenAction"
+      "en": "Use when reasoning about listen as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "covid",
-    "uuid": "a84f2f4d-35dd-803e-a7ec-64f8f7600665",
+    "uuid": "744258de-1ba1-837e-9a14-2efa0cdff635",
     "words": [
       "covid"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "covid: a schema.org component word, fused from CovidTestingFacility",
-    "uuid": "98b28cd8-7288-83f1-92e2-19146b1ad917",
+    "source": "Use when reasoning about covid as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "d7217caf-cf8d-8969-8aca-7740777f95c3",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "covid",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "covidtestingfacility"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "covid: a schema.org component word, fused from CovidTestingFacility"
+      "en": "Use when reasoning about covid as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

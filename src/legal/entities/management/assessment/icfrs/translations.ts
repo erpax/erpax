@@ -6,21 +6,21 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "management-assessment-icfr",
-    "uuid": "5c8ec914-141b-8d36-82ea-6f68c2102275",
+    "source": "management-assessment-icfrs",
+    "uuid": "abc85cd0-4db4-8900-bacc-9b30392c5f16",
     "words": [
       "management",
       "assessment",
-      "icfr"
+      "icfrs"
     ],
     "values": {
-      "en": "management-assessment-icfr"
+      "en": "management-assessment-icfrs"
     }
   },
   {
     "key": "description",
     "source": "Use when performing or documenting management's SOX §404(a) assessment of internal controls over financial reporting — COSO-2013 framework evaluation across control environment, risk assessment, control activities, information, and monitoring per SOX §404(a) / COSO-2013 / PCAOB AS 2201. The management ICFR assessment collection.",
-    "uuid": "7aa8e115-f2a6-805d-8104-7bd68ac78bea",
+    "uuid": "a8b873c3-83f1-8df9-bb9e-5723a44517ca",
     "words": [
       "use",
       "when",

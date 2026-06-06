@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "forum",
-    "uuid": "79373c6d-fa3f-864c-8fb2-5492ef992e19",
+    "uuid": "e759c5ef-3cdf-895c-877f-52ff0228b05e",
     "words": [
       "forum"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "forum: a schema.org component word, fused from DiscussionForumPosting",
-    "uuid": "e27d840b-0c06-8156-b30c-6e5c1efa4cbe",
+    "source": "Use when reasoning about forum as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "683c0c94-c398-8d43-9bb5-c1be0dbb8ea0",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "forum",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "discussionforumposting"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "forum: a schema.org component word, fused from DiscussionForumPosting"
+      "en": "Use when reasoning about forum as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

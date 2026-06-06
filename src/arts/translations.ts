@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "arts",
-    "uuid": "e2e8688e-541c-8360-8424-d1335f79689f",
+    "uuid": "b12a2109-820c-8122-9829-6eaceeef64a3",
     "words": [
       "arts"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "arts: a schema.org component word, fused from PerformingArtsEvent, PerformingArtsTheater, VisualArtsEvent",
-    "uuid": "1cce2bf2-d438-8f07-9412-e5b4983ccacb",
+    "source": "Use when reasoning about arts as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "fdf89fb2-7d22-829c-bbf0-35ad224ddf9b",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "arts",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "performingartsevent",
-      "performingartstheater",
-      "visualartsevent"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "arts: a schema.org component word, fused from PerformingArtsEvent, PerformingArtsTheater, VisualArtsEvent"
+      "en": "Use when reasoning about arts as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

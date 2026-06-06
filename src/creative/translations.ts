@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "creative",
-    "uuid": "96bef91c-7441-8cbe-bc44-a4b6a2d544f4",
+    "uuid": "3f9cd0d1-bb8e-86af-8162-c37b2e500ed2",
     "words": [
       "creative"
     ],
@@ -17,25 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "creative: a schema.org component word, fused from CreativeWork, CreativeWorkSeason, CreativeWorkSeries, creativeWorkStatus, encodesCreativeWork",
-    "uuid": "e13b9023-4eee-8da2-bb30-334ffe819fce",
+    "source": "Use when reasoning about creative as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "b596b530-5351-883c-b137-b7bcbe3f468a",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "creative",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "creativework",
-      "creativeworkseason",
-      "creativeworkseries",
-      "creativeworkstatus",
-      "encodescreativework"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "creative: a schema.org component word, fused from CreativeWork, CreativeWorkSeason, CreativeWorkSeries, creativeWorkStatus, encodesCreativeWork"
+      "en": "Use when reasoning about creative as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

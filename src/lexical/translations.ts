@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "lexical",
-    "uuid": "fd51e8b5-28ee-859c-a29b-23d2d4ed7b79",
+    "uuid": "a839cd92-4dae-8ddc-bfb7-9efe75c858d6",
     "words": [
       "lexical"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use for rich-text content in erpax — the Payload Lexical editor (config editor: lexicalEditor()). Localized, content-addressed rich text is the DENSEST tamper surface (a whole node-tree per locale) and the collapse sink every prose/document field reduces to. Matter-twin the root config editor + shared Lexical blocks.",
-    "uuid": "88db64d0-8d5b-859b-8520-ff9a7335900e",
+    "uuid": "8ca47173-7f23-8241-a1b1-8003c7cc3ea6",
     "words": [
       "use",
       "for",

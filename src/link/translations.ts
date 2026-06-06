@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "link",
-    "uuid": "08179e44-b1ba-8417-b362-66d13edd4d7c",
+    "uuid": "16105c24-b4e4-8ff6-b4bb-b1c5e698299e",
     "words": [
       "link"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "link: a schema.org component word, fused from LinkRole, hasGS1DigitalLink, linkRelationship, merchantReturnLink, originalMediaLink, productReturnLink",
-    "uuid": "6d3e197b-78c5-8327-b876-7b751ddc24b2",
+    "source": "Use when reasoning about link as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "9ab65add-056f-80a3-bd6a-cc62cbf58403",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "link",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "linkrole",
-      "hasgs1digitallink",
-      "linkrelationship",
-      "merchantreturnlink",
-      "originalmedialink",
-      "productreturnlink"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "link: a schema.org component word, fused from LinkRole, hasGS1DigitalLink, linkRelationship, merchantReturnLink, originalMediaLink, productReturnLink"
+      "en": "Use when reasoning about link as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

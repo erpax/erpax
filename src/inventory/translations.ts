@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "inventory",
-    "uuid": "5bb00cbc-f831-84c9-87d9-cf91a5a68c61",
+    "uuid": "1a3a0401-bc11-840a-bf54-dda78b5a4a73",
     "words": [
       "inventory"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "inventory: a schema.org component word, fused from inventoryLevel",
-    "uuid": "53bd4aad-4166-8fc0-b55c-ab0502dc223c",
+    "source": "Use when reasoning about inventory as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "1e1c4ee4-544f-8b6a-aaf5-e17b8aaaa00d",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "inventory",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "inventorylevel"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "inventory: a schema.org component word, fused from inventoryLevel"
+      "en": "Use when reasoning about inventory as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

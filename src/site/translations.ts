@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "site",
-    "uuid": "82f904a2-3b95-8e91-9df6-b6e9b54b9df9",
+    "uuid": "e22dd034-7a1b-82c8-ba6c-0b59f3fd6f9f",
     "words": [
       "site"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "site: a schema.org component word, fused from SiteNavigationElement, WebSite",
-    "uuid": "5edd0396-d0da-82bb-b513-9d32fa4472af",
+    "source": "Use when reasoning about site as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "107a7c71-5561-88f1-816c-dc9043085141",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "site",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "sitenavigationelement",
-      "website"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "site: a schema.org component word, fused from SiteNavigationElement, WebSite"
+      "en": "Use when reasoning about site as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

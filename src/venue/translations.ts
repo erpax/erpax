@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "venue",
-    "uuid": "9d99f16c-c16d-81e0-beaa-b3ddda755a7f",
+    "uuid": "3ed7f35b-1619-8baa-ac6a-82e51b24c31b",
     "words": [
       "venue"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "venue: a schema.org component word, fused from EventVenue, MusicVenue",
-    "uuid": "97861d87-abcf-809d-8e4d-d6b26e6a9f63",
+    "source": "Use when reasoning about venue as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "c64b8442-21d2-8c82-a9e3-0261e1584a22",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "venue",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "eventvenue",
-      "musicvenue"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "venue: a schema.org component word, fused from EventVenue, MusicVenue"
+      "en": "Use when reasoning about venue as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

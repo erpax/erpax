@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "watch",
-    "uuid": "00c61e55-4d50-8045-9bdc-ea9e4d30d028",
+    "uuid": "1eb667a7-9864-8a8b-8b49-53c3b04d7ed8",
     "words": [
       "watch"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "watch: a schema.org component word, fused from WatchAction",
-    "uuid": "afbf2ac7-eebc-8aa9-8ac8-05345a47684d",
+    "source": "Use when reasoning about watch as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "aadb867a-e3ea-8f8d-abd3-35e3e67f783d",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "watch",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "watchaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "watch: a schema.org component word, fused from WatchAction"
+      "en": "Use when reasoning about watch as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

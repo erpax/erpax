@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "camping",
-    "uuid": "6bceb4a4-b418-8936-baa6-ddd7e8613ce6",
+    "uuid": "c9557763-3903-8fd8-8a3d-c196df954673",
     "words": [
       "camping"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "camping: a schema.org component word, fused from CampingPitch",
-    "uuid": "f23f12c6-6eb0-8972-80a0-829e278b6dce",
+    "source": "Use when reasoning about camping as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "3c7b4cca-04c9-8e5e-b8b2-d7366df72aef",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "camping",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "campingpitch"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "camping: a schema.org component word, fused from CampingPitch"
+      "en": "Use when reasoning about camping as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

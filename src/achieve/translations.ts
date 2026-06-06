@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "achieve",
-    "uuid": "2a698099-87fe-868f-975f-0a15045af6ec",
+    "uuid": "1ba479ed-ff60-8dee-ae6a-7897f8f74143",
     "words": [
       "achieve"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "achieve: a schema.org component word, fused from AchieveAction",
-    "uuid": "33eda54d-3d4b-8546-acf1-8a662462c0ca",
+    "source": "Use when reasoning about achieve as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "ef2cf738-10c7-866d-8699-1e2e0309743a",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "achieve",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "achieveaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "achieve: a schema.org component word, fused from AchieveAction"
+      "en": "Use when reasoning about achieve as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

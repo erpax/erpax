@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "references",
-    "uuid": "466235bd-43ab-86ff-a61e-673cbc7493c6",
+    "uuid": "6bf01c5a-f5d1-8de2-8e4c-1bf3fc26ee5c",
     "words": [
       "references"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "references: a schema.org component word, fused from referencesOrder",
-    "uuid": "5663acab-2c17-8c93-8322-31ac9faa4c24",
+    "source": "Use when reasoning about references as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "6fa840ef-7596-83f8-bd6f-209646210756",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "references",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "referencesorder"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "references: a schema.org component word, fused from referencesOrder"
+      "en": "Use when reasoning about references as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

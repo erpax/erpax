@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "participation",
-    "uuid": "7a90fa07-991a-82dc-8af5-bd5796d0345e",
+    "uuid": "0f1f1a69-addd-8b05-bf9d-19bf25d6aafc",
     "words": [
       "participation"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "participation: a schema.org component word, fused from hasParticipationOffer",
-    "uuid": "ac4cd843-eaf9-8b49-900a-68e831bfbb20",
+    "source": "Use when reasoning about participation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "74690ae2-c6c9-85fd-b61e-e68543ceed00",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "participation",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "hasparticipationoffer"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "participation: a schema.org component word, fused from hasParticipationOffer"
+      "en": "Use when reasoning about participation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

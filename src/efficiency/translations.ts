@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "efficiency",
-    "uuid": "c9684c1e-99b7-8fbe-9ce5-2f648327b555",
+    "uuid": "07a47822-bde7-8dcf-8ba7-8d40ffec2969",
     "words": [
       "efficiency"
     ],
@@ -17,25 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "efficiency: a schema.org component word, fused from EUEnergyEfficiencyEnumeration, EnergyEfficiencyEnumeration, EnergyStarEnergyEfficiencyEnumeration, energyEfficiencyScaleMax, energyEfficiencyScaleMi",
-    "uuid": "e68c1da1-0ffc-852f-ba74-a147e388b493",
+    "source": "Use when reasoning about efficiency as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "986e665f-43f4-8af1-a1bc-e1b07328b180",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "efficiency",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "euenergyefficiencyenumeration",
-      "energyefficiencyenumeration",
-      "energystarenergyefficiencyenumeration",
-      "energyefficiencyscalemax",
-      "energyefficiencyscalemi"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "efficiency: a schema.org component word, fused from EUEnergyEfficiencyEnumeration, EnergyEfficiencyEnumeration, EnergyStarEnergyEfficiencyEnumeration, energyEfficiencyScaleMax, energyEfficiencyScaleMi"
+      "en": "Use when reasoning about efficiency as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

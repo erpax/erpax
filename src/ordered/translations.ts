@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "ordered",
-    "uuid": "deb8ec6c-69c8-866d-b1d3-12aa8dd623df",
+    "uuid": "2692e2cc-b116-8643-8639-f61cb67dc1b2",
     "words": [
       "ordered"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "ordered: a schema.org component word, fused from orderedItem",
-    "uuid": "38eb6b6d-89af-8a9a-9d23-a83ed1a501d4",
+    "source": "Use when reasoning about ordered as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "5c155c0c-e165-8b1b-a4a8-49ba0a2ad0f6",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "ordered",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "ordereditem"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "ordered: a schema.org component word, fused from orderedItem"
+      "en": "Use when reasoning about ordered as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "secondary",
-    "uuid": "fb97298a-49a3-8d23-a420-4cf151983cd5",
+    "uuid": "354be15b-da9d-8c75-bc2e-81a06a4ee61f",
     "words": [
       "secondary"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "secondary: a schema.org component word, fused from secondaryPrevention",
-    "uuid": "b02b6437-b269-89bd-8e70-24b29e2e7a27",
+    "source": "Use when reasoning about secondary as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "0a305a8a-9942-8b12-9fb0-793fbc9df963",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "secondary",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "secondaryprevention"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "secondary: a schema.org component word, fused from secondaryPrevention"
+      "en": "Use when reasoning about secondary as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

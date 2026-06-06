@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "cable",
-    "uuid": "a37cb7ba-04eb-8cfd-baf1-bf0ec34d470f",
+    "uuid": "9eae32db-3705-8f1e-b190-9d8ecb959e25",
     "words": [
       "cable"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "cable: a schema.org component word, fused from CableOrSatelliteService",
-    "uuid": "64c66703-5a86-8bca-a36c-c7478d6a22e5",
+    "source": "Use when reasoning about cable as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "2a12b9d6-1226-8267-8d54-74b6a1fb30a6",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "cable",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "cableorsatelliteservice"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "cable: a schema.org component word, fused from CableOrSatelliteService"
+      "en": "Use when reasoning about cable as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

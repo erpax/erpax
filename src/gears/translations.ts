@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "gears",
-    "uuid": "538cca4e-1926-825c-baee-83e08e1dea6b",
+    "uuid": "90f8e21e-4b82-8e6c-8fec-ae9ce0bbf82b",
     "words": [
       "gears"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "gears: a schema.org component word, fused from numberOfForwardGears",
-    "uuid": "e2f593ec-cd4b-80cd-b0c9-18ddb95e4b01",
+    "source": "Use when reasoning about gears as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "5fcae94f-c79d-8d8a-a239-715888cc94fb",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "gears",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "numberofforwardgears"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "gears: a schema.org component word, fused from numberOfForwardGears"
+      "en": "Use when reasoning about gears as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

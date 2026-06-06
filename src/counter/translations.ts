@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "counter",
-    "uuid": "d164c26a-7b77-8b70-9fa0-929379acb154",
+    "uuid": "f91dc1f2-aa4d-81aa-ba3c-6aad88b2cdfc",
     "words": [
       "counter"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "counter: a schema.org component word, fused from InteractionCounter",
-    "uuid": "4244e490-000f-8356-98ff-8ddff5acd689",
+    "source": "Use when reasoning about counter as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "165ffa9b-255e-86f9-a0a6-7da8cdbeac75",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "counter",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "interactioncounter"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "counter: a schema.org component word, fused from InteractionCounter"
+      "en": "Use when reasoning about counter as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

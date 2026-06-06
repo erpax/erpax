@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "symbol",
-    "uuid": "31ffeaf4-7f50-8176-bb55-3909fa43f4b9",
+    "uuid": "1cfc88f5-c32c-8c4f-b013-ea9d9937eabb",
     "words": [
       "symbol"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "symbol: a schema.org component word, fused from tickerSymbol",
-    "uuid": "59b85cc7-9727-8650-b82a-c67bce024488",
+    "source": "Use when reasoning about symbol as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "461abae1-212b-8ddc-9f38-8cbd27af8f4e",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "symbol",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "tickersymbol"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "symbol: a schema.org component word, fused from tickerSymbol"
+      "en": "Use when reasoning about symbol as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

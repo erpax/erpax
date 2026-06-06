@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "delivery",
-    "uuid": "6f1c6979-4bdf-8d68-9c26-58a6b8c75bf2",
+    "uuid": "c6b3f6e3-5b97-812d-abe4-39f0cf9b31a9",
     "words": [
       "delivery"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "delivery: a schema.org component word, fused from DeliveryChargeSpecification, DeliveryEvent, DeliveryMethod, DeliveryTimeSettings, ParcelDelivery, ShippingDeliveryTime",
-    "uuid": "19e50aa5-750e-8bb6-9fb1-c051e927224b",
+    "source": "Use when reasoning about delivery as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "5da80b2b-2bf5-82f4-91c7-08aec569daa2",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "delivery",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "deliverychargespecification",
-      "deliveryevent",
-      "deliverymethod",
-      "deliverytimesettings",
-      "parceldelivery",
-      "shippingdeliverytime"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "delivery: a schema.org component word, fused from DeliveryChargeSpecification, DeliveryEvent, DeliveryMethod, DeliveryTimeSettings, ParcelDelivery, ShippingDeliveryTime"
+      "en": "Use when reasoning about delivery as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

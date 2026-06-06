@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "learning",
-    "uuid": "9db91e61-202b-8126-adad-63f07f3c4bc9",
+    "uuid": "13d0ec7e-2d2f-8ed4-8d11-4ed66c56c355",
     "words": [
       "learning"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "learning: a schema.org component word, fused from LearningResource, learningResourceType",
-    "uuid": "784a26cb-c931-8844-b5ba-3f932a33c70e",
+    "source": "Use when reasoning about learning as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "2ad9803a-7c1f-8edd-be26-e4ba72f6b86c",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "learning",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "learningresource",
-      "learningresourcetype"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "learning: a schema.org component word, fused from LearningResource, learningResourceType"
+      "en": "Use when reasoning about learning as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

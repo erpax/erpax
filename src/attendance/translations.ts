@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "attendance",
-    "uuid": "018a1b79-3dbd-8c1c-b5b9-ddc14455f8f9",
+    "uuid": "11f9fbfe-bb0c-8f75-b68e-165054ece615",
     "words": [
       "attendance"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "attendance: a schema.org component word, fused from EventAttendanceModeEnumeration, eventAttendanceMode",
-    "uuid": "012eba8b-4738-8568-8c8a-7cb7cc5538d8",
+    "uuid": "64b97652-b563-818c-b65c-51ca0cbc9ce7",
     "words": [
       "attendance",
       "a",

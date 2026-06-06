@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "beauty",
-    "uuid": "6ec6db26-e97c-8b51-8bb1-1852f486e816",
+    "uuid": "bb80f344-d2e9-8521-8600-eafaebef45b2",
     "words": [
       "beauty"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "beauty: a schema.org component word, fused from BeautySalon, HealthAndBeautyBusiness",
-    "uuid": "baeb20a3-f0e6-8c73-a4ca-48625abc9fa7",
+    "source": "Use when reasoning about beauty as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "129aa545-33ed-80b3-b5eb-4fc43b8f8512",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "beauty",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "beautysalon",
-      "healthandbeautybusiness"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "beauty: a schema.org component word, fused from BeautySalon, HealthAndBeautyBusiness"
+      "en": "Use when reasoning about beauty as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

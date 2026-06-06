@@ -12,7 +12,7 @@
  * @see ../../particle -- ../../digit -- ../../signal -- ../../duality -- ./SKILL.md
  */
 import { particle } from '@/particle'
-import { digitalRoot } from '@/digit'
+import { digitalRootOfUuid as digitalRoot } from '@/digit'
 
 /** The PARTICLE face: the discrete content-uuid identity. */
 export const asParticle = (atom: string): string | undefined => particle(atom)?.uuid

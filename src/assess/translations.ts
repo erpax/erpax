@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "assess",
-    "uuid": "21743720-4050-844e-91ea-6b6a365f94c1",
+    "uuid": "3b5216e4-cbd8-89f6-9818-f52ed3308d14",
     "words": [
       "assess"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "assess: a schema.org component word, fused from AssessAction",
-    "uuid": "326f3605-2ba2-8d22-b2ce-2c7034a31f30",
+    "source": "Use when reasoning about assess as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "eb6728e5-7b86-8bd6-bf62-05a3b79b84ae",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "assess",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "assessaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "assess: a schema.org component word, fused from AssessAction"
+      "en": "Use when reasoning about assess as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

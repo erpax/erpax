@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "tourist",
-    "uuid": "399b8311-0914-8aac-a78f-04fb2fcc0e38",
+    "uuid": "5b81fa0b-36de-827d-887e-d7f027d7c8f5",
     "words": [
       "tourist"
     ],
@@ -17,25 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "tourist: a schema.org component word, fused from TouristAttraction, TouristDestination, TouristInformationCenter, TouristTrip, touristType",
-    "uuid": "0de0b50c-2167-8412-bd4b-42e8d1ce8f88",
+    "source": "Use when reasoning about tourist as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "a84db639-8240-8406-88ba-df1564ae8f18",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "tourist",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "touristattraction",
-      "touristdestination",
-      "touristinformationcenter",
-      "touristtrip",
-      "touristtype"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "tourist: a schema.org component word, fused from TouristAttraction, TouristDestination, TouristInformationCenter, TouristTrip, touristType"
+      "en": "Use when reasoning about tourist as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

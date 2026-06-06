@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "sub",
-    "uuid": "0f8da6c9-c255-8788-bb03-1f4e891c6d37",
+    "uuid": "efecf5b1-1a55-85c2-93e6-9bc9b5b2041f",
     "words": [
       "sub"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "sub: a schema.org component word, fused from applicationSubCategory, broadcastSubChannel, subEvent, subEvents, subOrganization, subReservation",
-    "uuid": "42de055b-0104-86d4-a2a1-864532a538dd",
+    "source": "Use when reasoning about sub as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "c7f34e9d-1685-8a39-880c-7cf1c9012619",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "sub",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "applicationsubcategory",
-      "broadcastsubchannel",
-      "subevent",
-      "subevents",
-      "suborganization",
-      "subreservation"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "sub: a schema.org component word, fused from applicationSubCategory, broadcastSubChannel, subEvent, subEvents, subOrganization, subReservation"
+      "en": "Use when reasoning about sub as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

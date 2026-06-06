@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "stop",
-    "uuid": "411aa1af-14ac-8a2c-a7b8-6d82e45286ec",
+    "uuid": "659b5521-313d-8634-a385-205d96698c3e",
     "words": [
       "stop"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "stop: a schema.org component word, fused from BusStop, arrivalBusStop, departureBusStop",
-    "uuid": "7b58cf12-8339-801a-8052-d0cc94b9d5d0",
+    "source": "Use when reasoning about stop as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "71bb88e7-5521-8bcc-85a2-be461719fef3",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "stop",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "busstop",
-      "arrivalbusstop",
-      "departurebusstop"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "stop: a schema.org component word, fused from BusStop, arrivalBusStop, departureBusStop"
+      "en": "Use when reasoning about stop as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

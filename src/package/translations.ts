@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "package",
-    "uuid": "6dfec735-9964-822a-8bbf-3ec4c536fbe6",
+    "uuid": "9b839802-b336-8834-b64b-b0a1eb5eaafe",
     "words": [
       "package"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "package: a schema.org component word, fused from ReservationPackage",
-    "uuid": "43b30a19-95ad-82eb-a0ec-abcf6600ec63",
+    "source": "Use when reasoning about package as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "c3513dbc-86b1-88f0-b386-27255ffabd16",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "package",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "reservationpackage"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "package: a schema.org component word, fused from ReservationPackage"
+      "en": "Use when reasoning about package as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

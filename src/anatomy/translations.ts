@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "anatomy",
-    "uuid": "836be332-940d-8703-afc2-ab72348b3743",
+    "uuid": "12a41b57-7381-88d5-9fde-0839f0438177",
     "words": [
       "anatomy"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "anatomy: a schema.org component word, fused from SuperficialAnatomy, associatedAnatomy, relatedAnatomy",
-    "uuid": "d1cde29a-d006-85ec-ae85-8a264cd68686",
+    "source": "Use when reasoning about anatomy as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "7edc7912-6bdf-8f92-a290-ebde2a00e8e5",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "anatomy",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "superficialanatomy",
-      "associatedanatomy",
-      "relatedanatomy"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "anatomy: a schema.org component word, fused from SuperficialAnatomy, associatedAnatomy, relatedAnatomy"
+      "en": "Use when reasoning about anatomy as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

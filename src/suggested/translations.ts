@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "suggested",
-    "uuid": "eaee1075-ed3e-8248-8d39-bc0ea9ccab7e",
+    "uuid": "38e4bff1-27d1-8d51-8265-eb1e2f637544",
     "words": [
       "suggested"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "suggested: a schema.org component word, fused from suggestedAge, suggestedAnswer, suggestedGender, suggestedMaxAge, suggestedMeasurement, suggestedMinAge",
-    "uuid": "ed440239-133f-8a78-a1a8-064659b9f002",
+    "source": "Use when reasoning about suggested as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "ea176154-c583-863a-b3d8-cf52132fe3d7",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "suggested",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "suggestedage",
-      "suggestedanswer",
-      "suggestedgender",
-      "suggestedmaxage",
-      "suggestedmeasurement",
-      "suggestedminage"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "suggested: a schema.org component word, fused from suggestedAge, suggestedAnswer, suggestedGender, suggestedMaxAge, suggestedMeasurement, suggestedMinAge"
+      "en": "Use when reasoning about suggested as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

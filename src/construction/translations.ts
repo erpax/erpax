@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "construction",
-    "uuid": "243da712-a1ae-8a63-ba37-8518eaccec7e",
+    "uuid": "8fd3777b-cbdb-8760-8ada-3334dc204f14",
     "words": [
       "construction"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "construction: a schema.org component word, fused from HomeAndConstructionBusiness",
-    "uuid": "8316a0c8-5679-8904-9eb6-ef548d17954a",
+    "source": "Use when reasoning about construction as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "2a3c9d67-66b4-8428-af95-1018dc3e077c",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "construction",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "homeandconstructionbusiness"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "construction: a schema.org component word, fused from HomeAndConstructionBusiness"
+      "en": "Use when reasoning about construction as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

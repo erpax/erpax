@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "fm",
-    "uuid": "2472795d-22ae-88a6-b883-20e7c303d4a5",
+    "uuid": "d10520c6-9dbf-8033-aa9d-67a2ad661ad9",
     "words": [
       "fm"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "fm: a schema.org component word, fused from FMRadioChannel",
-    "uuid": "5cc3dca4-f147-8bd9-af6d-2f1ac93e18e6",
+    "source": "Use when reasoning about fm as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "9b52c934-2587-8bda-b7b7-3cc5caffc885",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "fm",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "fmradiochannel"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "fm: a schema.org component word, fused from FMRadioChannel"
+      "en": "Use when reasoning about fm as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

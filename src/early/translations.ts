@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "early",
-    "uuid": "e8d2b516-b9d6-8b09-a28a-98f51a100db4",
+    "uuid": "cdbf2ea5-17d7-8c9e-ac73-b666fd078893",
     "words": [
       "early"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "early: a schema.org component word, fused from earlyPrepaymentPenalty",
-    "uuid": "7605ccfb-d041-89e6-9d73-6c577878dbb9",
+    "source": "Use when reasoning about early as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "68894383-1d21-8c86-8090-4144390ea96c",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "early",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "earlyprepaymentpenalty"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "early: a schema.org component word, fused from earlyPrepaymentPenalty"
+      "en": "Use when reasoning about early as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "temple",
-    "uuid": "133d0b8a-ac4b-817f-a3c9-10fcd607df96",
+    "uuid": "1ae79732-06f6-8f33-9f59-2cc35fbcd827",
     "words": [
       "temple"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "temple: a schema.org component word, fused from BuddhistTemple, HinduTemple",
-    "uuid": "4775bb6e-69f5-8c96-a844-e179c0529da1",
+    "source": "Use when reasoning about temple as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "bff74225-a2ad-86b8-90d3-66264104ca21",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "temple",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "buddhisttemple",
-      "hindutemple"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "temple: a schema.org component word, fused from BuddhistTemple, HinduTemple"
+      "en": "Use when reasoning about temple as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

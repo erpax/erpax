@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "server",
-    "uuid": "61ffa81a-ee0a-83ac-9ff1-a85c470c4a84",
+    "uuid": "c2b23919-359a-831d-bb0d-aecb45198c2a",
     "words": [
       "server"
     ],
@@ -17,24 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "server: a schema.org component word, fused from GameServer, GameServerStatus, gameServer, serverStatus",
-    "uuid": "a57776d5-5dd4-8d55-bc60-1dd3445e1716",
+    "source": "Use when reasoning about server as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "bb957439-02ea-8159-98f2-445f088e3abd",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "server",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "gameserver",
-      "gameserverstatus",
-      "gameserver",
-      "serverstatus"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "server: a schema.org component word, fused from GameServer, GameServerStatus, gameServer, serverStatus"
+      "en": "Use when reasoning about server as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

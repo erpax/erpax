@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "modified",
-    "uuid": "edaff048-c18d-8e16-be86-5bfce17f7c18",
+    "uuid": "5cde30d7-150d-811e-9288-d217aeafe865",
     "words": [
       "modified"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "modified: a schema.org component word, fused from dateModified, modifiedTime",
-    "uuid": "29cdf9c7-c0da-879b-906d-cb9e27b57518",
+    "source": "Use when reasoning about modified as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "32e27863-8d23-8f2a-896b-2b81969ba387",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "modified",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "datemodified",
-      "modifiedtime"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "modified: a schema.org component word, fused from dateModified, modifiedTime"
+      "en": "Use when reasoning about modified as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -6,19 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "notifications",
-    "uuid": "b3c1a0e4-794c-892d-b8e2-cc37799fe6d7",
+    "source": "notification",
+    "uuid": "d1730275-6194-8ffa-a643-62b5509a207d",
     "words": [
-      "notifications"
+      "notification"
     ],
     "values": {
-      "en": "notifications"
+      "en": "notification"
     }
   },
   {
     "key": "description",
     "source": "Use when the society speaks outward — fanning one message across email, in-app, webhook, and Slack from a single consent-gated, audited entry-point; binding domain events to delivery by a declarative subscription map.",
-    "uuid": "a382c63e-5531-8ebc-ac50-f8fdcba69d12",
+    "uuid": "ce64bd31-86ad-8096-ab12-37c445ca68e9",
     "words": [
       "use",
       "when",

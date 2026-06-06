@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "node",
-    "uuid": "8f4d3d2b-7d8b-8066-b9bd-1df05c925e35",
+    "uuid": "4ec81ff2-6f34-8c25-9957-c8140d8e4905",
     "words": [
       "node"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "node: a schema.org component word, fused from ConstraintNode, TypeAndQuantityNode",
-    "uuid": "41b79c00-6b31-8a1b-8e7c-2b1b1858fea7",
+    "source": "Use when reasoning about node as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "b737bbaa-c80b-87fb-9ca3-9b13b3c95fd7",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "node",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "constraintnode",
-      "typeandquantitynode"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "node: a schema.org component word, fused from ConstraintNode, TypeAndQuantityNode"
+      "en": "Use when reasoning about node as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

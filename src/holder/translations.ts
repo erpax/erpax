@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "holder",
-    "uuid": "97460a23-708e-8d56-8a68-1f39dc08f78c",
+    "uuid": "7e147c1a-aa61-804f-b82d-68a938ef1ca2",
     "words": [
       "holder"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "holder: a schema.org component word, fused from copyrightHolder",
-    "uuid": "44edb167-f078-8556-9632-98c5697efd7e",
+    "source": "Use when reasoning about holder as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "c85019ef-e151-87be-a076-1a57e08a4629",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "holder",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "copyrightholder"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "holder: a schema.org component word, fused from copyrightHolder"
+      "en": "Use when reasoning about holder as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

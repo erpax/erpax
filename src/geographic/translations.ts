@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "geographic",
-    "uuid": "2da87bc1-5259-8aae-85ff-e3051458ce8a",
+    "uuid": "ebcf3d00-f6c2-894b-b374-2245c8a34836",
     "words": [
       "geographic"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "geographic: a schema.org component word, fused from geographicArea",
-    "uuid": "ee873459-2fe4-86be-8e40-6149ec10a8af",
+    "source": "Use when reasoning about geographic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "fa440d49-300d-8d19-a56b-426de3c700f6",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "geographic",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "geographicarea"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "geographic: a schema.org component word, fused from geographicArea"
+      "en": "Use when reasoning about geographic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

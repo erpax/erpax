@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "dosage",
-    "uuid": "720314f5-85de-836a-b64b-1a594ff18d01",
+    "uuid": "e0afd2ff-7a39-8b88-8f24-5276649c12fc",
     "words": [
       "dosage"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "dosage: a schema.org component word, fused from dosageForm",
-    "uuid": "d17d3002-bf90-8060-b529-9d80a734fbbd",
+    "source": "Use when reasoning about dosage as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "b1ae77a4-7086-85dc-93d3-2892b2bcd01a",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "dosage",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "dosageform"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "dosage: a schema.org component word, fused from dosageForm"
+      "en": "Use when reasoning about dosage as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

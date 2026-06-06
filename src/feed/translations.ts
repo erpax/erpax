@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "feed",
-    "uuid": "510c2ce2-86fa-8d72-b39e-6f7aab2a5899",
+    "uuid": "a4127391-c051-89ef-883f-a2ee0a8500b8",
     "words": [
       "feed"
     ],
@@ -17,25 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "feed: a schema.org component word, fused from CompleteDataFeed, DataFeed, DataFeedItem, dataFeedElement, webFeed",
-    "uuid": "7dd80167-1288-85b3-ba87-ba88af953c42",
+    "source": "Use when reasoning about feed as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "d7ce1bf5-9c86-8f0a-b9f8-fec02e0ce1ec",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "feed",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "completedatafeed",
-      "datafeed",
-      "datafeeditem",
-      "datafeedelement",
-      "webfeed"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "feed: a schema.org component word, fused from CompleteDataFeed, DataFeed, DataFeedItem, dataFeedElement, webFeed"
+      "en": "Use when reasoning about feed as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

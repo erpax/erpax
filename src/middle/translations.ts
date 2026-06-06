@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "middle",
-    "uuid": "1101575c-99a6-819f-9438-0505893e2e11",
+    "uuid": "9b39ad05-a616-8fa3-af45-4d2cb1b134ad",
     "words": [
       "middle"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "middle: a schema.org component word, fused from MiddleSchool",
-    "uuid": "a85e63b3-147e-8f24-819b-9431941a59e1",
+    "source": "Use when reasoning about middle as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "35b5b152-1d8a-83cc-af4a-1dea2592e52b",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "middle",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "middleschool"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "middle: a schema.org component word, fused from MiddleSchool"
+      "en": "Use when reasoning about middle as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "checkout",
-    "uuid": "63540dd4-6be9-8c5b-82fa-2c31dc79afdb",
+    "uuid": "aa763508-a9bc-8e98-99e1-4e44d0f40c66",
     "words": [
       "checkout"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "checkout: a schema.org component word, fused from CheckoutPage, checkoutPageURLTemplate, checkoutTime",
-    "uuid": "4ecab2bf-ee11-889a-9e58-cf81d5bfd394",
+    "source": "Use when reasoning about checkout as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "1bd9ba10-787f-8649-b9a7-7904e2eca6a3",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "checkout",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "checkoutpage",
-      "checkoutpageurltemplate",
-      "checkouttime"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "checkout: a schema.org component word, fused from CheckoutPage, checkoutPageURLTemplate, checkoutTime"
+      "en": "Use when reasoning about checkout as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

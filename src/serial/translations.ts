@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "serial",
-    "uuid": "2f20e0a4-34e1-8816-978c-31ddc24798de",
+    "uuid": "f20ed395-4fa7-8984-becc-f9ce5863c9db",
     "words": [
       "serial"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "serial: a schema.org component word, fused from serialNumber",
-    "uuid": "bb8e1328-a767-85e5-9cf0-c4daf37072e5",
+    "source": "Use when reasoning about serial as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "fb16e26d-267c-8b68-991b-ee03f66d4609",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "serial",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "serialnumber"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "serial: a schema.org component word, fused from serialNumber"
+      "en": "Use when reasoning about serial as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

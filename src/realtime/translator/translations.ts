@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "translator",
-    "uuid": "f1d608f6-e47e-820e-8f6b-a84500ba3a8c",
+    "uuid": "a6355c66-c01c-8acd-bd25-55d134af0fb2",
     "words": [
       "translator"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when translating a live event tail as it arrives — each realtime message reduced to its language-independent meaning so any EU-language subscriber reads the same thing zero-shot.",
-    "uuid": "f751f4e3-500d-803b-85cb-caf75c5b0f5f",
+    "uuid": "acf0ee6d-24e8-82fd-a6fe-9c8c4a3d94fe",
     "words": [
       "use",
       "when",

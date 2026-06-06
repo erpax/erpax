@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "virtual",
-    "uuid": "c477d14b-ca92-81e1-8e5a-b7e5ef99d4ba",
+    "uuid": "2ea3e5ee-5bca-8668-b3fb-d3df9b402cf2",
     "words": [
       "virtual"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "virtual: a schema.org component word, fused from VirtualLocation, maximumVirtualAttendeeCapacity",
-    "uuid": "b4028d2a-ff32-8ff0-b48f-02e80df46be3",
+    "source": "Use when reasoning about virtual as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "7bbf02b7-a97c-8427-8bcc-b07dc070fd94",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "virtual",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "virtuallocation",
-      "maximumvirtualattendeecapacity"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "virtual: a schema.org component word, fused from VirtualLocation, maximumVirtualAttendeeCapacity"
+      "en": "Use when reasoning about virtual as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "legislative",
-    "uuid": "5d4be9b3-b589-8287-a032-babaa35b45bd",
+    "uuid": "7a650bc6-6af4-81fd-bb1a-35edd69f11f2",
     "words": [
       "legislative"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "legislative: a schema.org component word, fused from LegislativeBuilding",
-    "uuid": "53920a2d-5a42-8739-ad0f-fe2ca17807d2",
+    "source": "Use when reasoning about legislative as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "783a3f5b-089c-8612-94fd-1d1b7c12193a",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "legislative",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "legislativebuilding"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "legislative: a schema.org component word, fused from LegislativeBuilding"
+      "en": "Use when reasoning about legislative as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

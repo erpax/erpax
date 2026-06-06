@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "display",
-    "uuid": "39944099-e6f6-8f6b-a48b-ee17aa54316d",
+    "uuid": "7975c75d-cd3f-8430-a2f3-99e51c124aa3",
     "words": [
       "display"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "display: a schema.org component word, fused from broadcastDisplayName, displayLocation",
-    "uuid": "1876a479-1562-8ad1-9197-2aac31306002",
+    "source": "Use when reasoning about display as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "34a3e12c-42c8-8ba3-a1ce-2a87799fdbac",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "display",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "broadcastdisplayname",
-      "displaylocation"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "display: a schema.org component word, fused from broadcastDisplayName, displayLocation"
+      "en": "Use when reasoning about display as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

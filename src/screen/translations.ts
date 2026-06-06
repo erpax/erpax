@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "screen",
-    "uuid": "8e6eed20-63f7-8b18-acfc-2ce96d34f979",
+    "uuid": "1fb71606-1175-8ec9-9a4d-5d9f62ad3e59",
     "words": [
       "screen"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "screen: a schema.org component word, fused from screenCount",
-    "uuid": "21c7a065-5edd-8966-a8fc-bea6a636a66b",
+    "source": "Use when reasoning about screen as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "aa515b13-9890-8d95-ad3b-63f26fce7d20",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "screen",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "screencount"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "screen: a schema.org component word, fused from screenCount"
+      "en": "Use when reasoning about screen as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

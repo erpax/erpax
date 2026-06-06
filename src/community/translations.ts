@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "community",
-    "uuid": "5cf8939c-b4b1-8f31-9252-6734eb0f5af4",
+    "uuid": "fd273b4f-6859-81e9-b8ed-d084097ef1c5",
     "words": [
       "community"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "community: a schema.org component word, fused from GatedResidenceCommunity",
-    "uuid": "ed5b48d1-cde0-86f1-8077-2d258201cd2a",
+    "source": "Use when reasoning about community as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "fe8df6f6-863d-8551-b7be-e97f30ed0a72",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "community",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "gatedresidencecommunity"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "community: a schema.org component word, fused from GatedResidenceCommunity"
+      "en": "Use when reasoning about community as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "archive",
-    "uuid": "237e7d69-1a0e-8acb-ba38-792da0926df2",
+    "uuid": "006ff0dc-e769-8607-ad74-01e16ba75941",
     "words": [
       "archive"
     ],
@@ -17,24 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "archive: a schema.org component word, fused from ArchiveComponent, ArchiveOrganization, archiveHeld, holdingArchive",
-    "uuid": "846d2bc8-18c2-8f93-a1f2-b9d3a8f02de3",
+    "source": "Use when reasoning about archive as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "63ec463d-7851-8049-963c-bd0fe648a829",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "archive",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "archivecomponent",
-      "archiveorganization",
-      "archiveheld",
-      "holdingarchive"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "archive: a schema.org component word, fused from ArchiveComponent, ArchiveOrganization, archiveHeld, holdingArchive"
+      "en": "Use when reasoning about archive as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

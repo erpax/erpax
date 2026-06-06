@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "technique",
-    "uuid": "daa1d780-9541-8c20-b9a9-fceb9b84b562",
+    "uuid": "ee2dffcd-ee7c-8cbf-8859-9e949b375c48",
     "words": [
       "technique"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "technique: a schema.org component word, fused from MedicalImagingTechnique, imagingTechnique, measurementTechnique",
-    "uuid": "65fafcba-3267-8936-b686-5bd437a0e00c",
+    "source": "Use when reasoning about technique as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "84ae7fcf-a48b-87a6-916b-69354469733b",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "technique",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "medicalimagingtechnique",
-      "imagingtechnique",
-      "measurementtechnique"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "technique: a schema.org component word, fused from MedicalImagingTechnique, imagingTechnique, measurementTechnique"
+      "en": "Use when reasoning about technique as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

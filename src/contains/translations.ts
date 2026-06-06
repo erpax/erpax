@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "contains",
-    "uuid": "d851ef0d-8bac-8215-9f90-a25b2ac467b6",
+    "uuid": "a31b83d9-6879-8b20-a2a1-b78c26e2a2fd",
     "words": [
       "contains"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "contains: a schema.org component word, fused from containsPlace, containsSeason, geoContains",
-    "uuid": "a4a3de00-c3c1-87a7-b329-951a2b7f30b6",
+    "source": "Use when reasoning about contains as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "755b3eb8-948d-8502-82e9-98aea0cc27e2",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "contains",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "containsplace",
-      "containsseason",
-      "geocontains"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "contains: a schema.org component word, fused from containsPlace, containsSeason, geoContains"
+      "en": "Use when reasoning about contains as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

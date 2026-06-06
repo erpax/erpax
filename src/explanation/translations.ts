@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "explanation",
-    "uuid": "4374501a-d3d0-82f4-a13c-41594c4dc0de",
+    "uuid": "be6c8775-74b2-8c3b-8fc1-e58d3853a83f",
     "words": [
       "explanation"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "explanation: a schema.org component word, fused from answerExplanation, ratingExplanation",
-    "uuid": "bc966d7f-74d5-84b1-9a14-b57d049d65b0",
+    "source": "Use when reasoning about explanation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "5c43a546-b998-8c98-8237-182f11386d9d",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "explanation",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "answerexplanation",
-      "ratingexplanation"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "explanation: a schema.org component word, fused from answerExplanation, ratingExplanation"
+      "en": "Use when reasoning about explanation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "surgical",
-    "uuid": "8adabad7-0796-8819-8c15-a6239fccd9b9",
+    "uuid": "7a10c8c7-5c52-8982-bd17-344d3181dc1e",
     "words": [
       "surgical"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "surgical: a schema.org component word, fused from SurgicalProcedure",
-    "uuid": "03776a46-e3be-8536-a702-f8153b8c2feb",
+    "source": "Use when reasoning about surgical as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "33b524cf-afcd-8514-a50c-dc23fcf58270",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "surgical",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "surgicalprocedure"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "surgical: a schema.org component word, fused from SurgicalProcedure"
+      "en": "Use when reasoning about surgical as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

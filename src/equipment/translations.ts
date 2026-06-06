@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "equipment",
-    "uuid": "75182c81-97a2-8536-9295-e00804c654b3",
+    "uuid": "0dd81905-fa69-8c4b-9d76-65eadcdb4b5c",
     "words": [
       "equipment"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "equipment: a schema.org component word, fused from OfficeEquipmentStore",
-    "uuid": "6ff7ca30-9523-82de-938b-678f523b537f",
+    "source": "Use when reasoning about equipment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "29c0b695-f918-8620-bc5b-f2b9100d152f",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "equipment",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "officeequipmentstore"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "equipment: a schema.org component word, fused from OfficeEquipmentStore"
+      "en": "Use when reasoning about equipment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

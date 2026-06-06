@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "sample",
-    "uuid": "a18e11d8-4455-8998-b780-fc3838dfa9c8",
+    "uuid": "d41cb4a7-14e5-8b21-b675-9291201a89d5",
     "words": [
       "sample"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "sample: a schema.org component word, fused from codeSampleType, sampleType, tissueSample",
-    "uuid": "002d0a2c-ee4a-8cc0-a94a-f9a704dfc219",
+    "source": "Use when reasoning about sample as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "87d79e24-a029-83dc-a149-10cd02fde4e4",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "sample",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "codesampletype",
-      "sampletype",
-      "tissuesample"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "sample: a schema.org component word, fused from codeSampleType, sampleType, tissueSample"
+      "en": "Use when reasoning about sample as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

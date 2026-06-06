@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "conditions",
-    "uuid": "e53d027a-1617-8fc6-bfad-2604a7e3507b",
+    "uuid": "d038aebf-cc47-86ae-af92-996178d5f5c6",
     "words": [
       "conditions"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "conditions: a schema.org component word, fused from ShippingConditions, conditionsOfAccess, shippingConditions",
-    "uuid": "fd19494e-97e4-8e4b-937c-a238df4c9c79",
+    "source": "Use when reasoning about conditions as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "122605d3-3227-82d0-8b8a-22314df971d4",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "conditions",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "shippingconditions",
-      "conditionsofaccess",
-      "shippingconditions"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "conditions: a schema.org component word, fused from ShippingConditions, conditionsOfAccess, shippingConditions"
+      "en": "Use when reasoning about conditions as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

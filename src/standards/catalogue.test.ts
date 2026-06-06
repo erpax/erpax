@@ -16,11 +16,11 @@ import collectionConfig from '@/standards'
 import { uuid } from '@/integrity/content-uuid'
 import { uuidColor } from '@/uuid/projection'
 
-// The payload `standards.family` enum (mirrors src/standards/index.ts).
-const FAMILIES = new Set([
-  'ifrs', 'us_gaap', 'iso', 'iec', 'w3c', 'rfc', 'eu', 'oecd', 'nist',
-  'etsi', 'wcag', 'sox', 'gdpr', 'un', 'upu', 'en', 'national', 'other',
-])
+// The payload `standards.family` enum — DERIVED from the live collection config
+// (not hand-duplicated), so this test set can never drift from the schema.
+const familyField = (collectionConfig.fields as Array<{ name?: string; options?: Array<{ value: string }> }>)
+  .find((f) => f.name === 'family')
+const FAMILIES = new Set((familyField?.options ?? []).map((o) => o.value))
 
 describe('standards catalogue — the shared uuid-native index', () => {
   it('catalogues every registered standard, 1:1 (registry ≡ catalogue keys)', () => {

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "hardware",
-    "uuid": "e5b02cb1-d148-8ad3-b08e-04289405dbe9",
+    "uuid": "e813542a-4231-8eca-bb8a-0a1279f08ee2",
     "words": [
       "hardware"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "hardware: a schema.org component word, fused from HardwareStore",
-    "uuid": "18ae7db4-aba3-8126-b982-9249b3fbc4b0",
+    "source": "Use when reasoning about hardware as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "0c13a7c0-dc72-8e7d-a012-03e4971d86ee",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "hardware",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "hardwarestore"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "hardware: a schema.org component word, fused from HardwareStore"
+      "en": "Use when reasoning about hardware as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

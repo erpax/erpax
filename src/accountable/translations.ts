@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "accountable",
-    "uuid": "cffd98e2-ba66-8300-9f34-2327cb9cb668",
+    "uuid": "1978d6d4-d3ba-8630-974e-50a4c1c7e8a1",
     "words": [
       "accountable"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "accountable: a schema.org component word, fused from accountablePerson",
-    "uuid": "ce2b5f6f-f82d-847d-8532-5198c6e09b13",
+    "source": "Use when reasoning about accountable as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "c94ccef7-8d72-86d1-b60a-0b13b1225a5f",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "accountable",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "accountableperson"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "accountable: a schema.org component word, fused from accountablePerson"
+      "en": "Use when reasoning about accountable as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "follow",
-    "uuid": "af2eb97a-0635-8401-a17c-52cbc2c4f85f",
+    "uuid": "ac79df2f-7381-8431-833f-e4c0440f4e17",
     "words": [
       "follow"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "follow: a schema.org component word, fused from FollowAction",
-    "uuid": "19de3d45-cd5a-8fdf-9d2f-af170e3084b8",
+    "source": "Use when reasoning about follow as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "f538b4a2-5b17-8d14-8234-60d89c47feb7",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "follow",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "followaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "follow: a schema.org component word, fused from FollowAction"
+      "en": "Use when reasoning about follow as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

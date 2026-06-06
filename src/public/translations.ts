@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "public",
-    "uuid": "1458b7d0-afc7-88da-a475-94b7079cbe26",
+    "uuid": "b71a7f32-a4aa-8f47-98b4-2ab763b1da37",
     "words": [
       "public"
     ],
@@ -17,25 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "public: a schema.org component word, fused from AskPublicNewsArticle, PublicSwimmingPool, PublicToilet, publicAccess, publicTransportClosuresInfo",
-    "uuid": "f7b08617-4305-8c2d-a3a9-b2b8abdd18a9",
+    "source": "Use when reasoning about public as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "d4528bde-b923-84e5-9135-6edcaf50bcbc",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "public",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "askpublicnewsarticle",
-      "publicswimmingpool",
-      "publictoilet",
-      "publicaccess",
-      "publictransportclosuresinfo"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "public: a schema.org component word, fused from AskPublicNewsArticle, PublicSwimmingPool, PublicToilet, publicAccess, publicTransportClosuresInfo"
+      "en": "Use when reasoning about public as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

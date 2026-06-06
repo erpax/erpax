@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "cutoff",
-    "uuid": "9470de94-68e4-8e76-8a93-7d70c25ba485",
+    "uuid": "9bd7a315-b87f-8cf6-b77a-a1229757d93a",
     "words": [
       "cutoff"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "cutoff: a schema.org component word, fused from cutoffTime",
-    "uuid": "9781ecae-97fc-89b3-a84e-88224af79137",
+    "source": "Use when reasoning about cutoff as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "62aeb52e-6d8a-86f2-afaa-1dd8fd39fa8a",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "cutoff",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "cutofftime"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "cutoff: a schema.org component word, fused from cutoffTime"
+      "en": "Use when reasoning about cutoff as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

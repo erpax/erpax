@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "encodes",
-    "uuid": "276e58ec-8cf9-892c-9698-3470547d29be",
+    "uuid": "91dfd217-37c8-82d6-850d-97419378c6d1",
     "words": [
       "encodes"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "encodes: a schema.org component word, fused from encodesBioChemEntity, encodesCreativeWork",
-    "uuid": "4814d279-0f1e-8b85-a503-676df918e23e",
+    "source": "Use when reasoning about encodes as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "4d0a9ca0-dde5-8853-9159-fd747ef1d014",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "encodes",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "encodesbiochementity",
-      "encodescreativework"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "encodes: a schema.org component word, fused from encodesBioChemEntity, encodesCreativeWork"
+      "en": "Use when reasoning about encodes as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

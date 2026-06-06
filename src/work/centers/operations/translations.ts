@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "operations",
-    "uuid": "fe47f4c7-fa11-8382-87b4-7b406211a08b",
+    "uuid": "0dec84a6-49b0-8c38-b7db-22749a5a5af4",
     "words": [
       "operations"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when defining reusable process-step types (Cut, Sew, Mix, Assemble, Inspect, Pack) that routings compose — with ISA-95 operation-type hierarchy, default work-center, and KPI anchors independent of any specific product. The operation-type catalog collection.",
-    "uuid": "12515099-57b0-8b1a-8c31-3e15c72e00c7",
+    "uuid": "c61c9e45-5c85-8ea5-96bf-92eceed7de6a",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "enumeration",
-    "uuid": "a25a2732-8988-85f5-a4bb-93581d43add3",
+    "uuid": "4f261a01-cc1b-88e7-9042-a622ee6c0606",
     "words": [
       "enumeration"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Lists or enumerations—for example, a list of cuisines or music genres, etc.",
-    "uuid": "7ffdd5bc-98e5-86fe-bad3-beed1397d9bf",
+    "uuid": "d2c0a0f6-271e-8b03-b9ac-428f98e48625",
     "words": [
       "lists",
       "or",

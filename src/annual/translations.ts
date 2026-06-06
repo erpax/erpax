@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "annual",
-    "uuid": "4917a556-fd51-8257-8994-05ff06a88523",
+    "uuid": "fb3ca921-bd8a-8bb5-a9a0-f14708f04b10",
     "words": [
       "annual"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "annual: a schema.org component word, fused from annualPercentageRate",
-    "uuid": "930da601-28d0-8e38-b1db-0b1aede65261",
+    "source": "Use when reasoning about annual as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "86225303-1388-87bd-a0df-8c4c5ab87489",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "annual",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "annualpercentagerate"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "annual: a schema.org component word, fused from annualPercentageRate"
+      "en": "Use when reasoning about annual as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "original",
-    "uuid": "15d1342a-40c2-8822-b0c6-49fc76dbfe66",
+    "uuid": "8ab495b2-db33-823a-a896-6c4e45737aac",
     "words": [
       "original"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "original: a schema.org component word, fused from originalMediaContextDescription, originalMediaLink",
-    "uuid": "c37debe8-ce13-84e8-b56a-ba3c50b5f4b1",
+    "source": "Use when reasoning about original as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "989de733-cbc4-824c-8ef6-e246d671a2aa",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "original",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "originalmediacontextdescription",
-      "originalmedialink"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "original: a schema.org component word, fused from originalMediaContextDescription, originalMediaLink"
+      "en": "Use when reasoning about original as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

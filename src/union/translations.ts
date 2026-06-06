@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "union",
-    "uuid": "92049f41-d409-87e6-93f4-9a99fdf82517",
+    "uuid": "3cba9e22-4ebe-8d5e-849e-98ffb1e113b1",
     "words": [
       "union"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "union: a schema.org component word, fused from BankOrCreditUnion, WorkersUnion",
-    "uuid": "f1fc475a-07fe-8d09-a3c8-f9adf0ba0bb2",
+    "source": "Use when reasoning about union as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "27820d3d-e3bd-860e-ba1c-217f6c405eba",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "union",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "bankorcreditunion",
-      "workersunion"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "union: a schema.org component word, fused from BankOrCreditUnion, WorkersUnion"
+      "en": "Use when reasoning about union as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

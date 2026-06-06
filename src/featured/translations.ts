@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "featured",
-    "uuid": "8a8bcbc4-64db-892d-b271-e1df9bf936b1",
+    "uuid": "4405a51c-8173-8d7d-933c-6926ceb7b8f9",
     "words": [
       "featured"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "featured: a schema.org component word, fused from workFeatured",
-    "uuid": "b1282a9c-1ecd-883a-ad0e-22bedb68045d",
+    "source": "Use when reasoning about featured as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "2f1c8ef9-4832-8c71-a530-81872645e14c",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "featured",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "workfeatured"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "featured: a schema.org component word, fused from workFeatured"
+      "en": "Use when reasoning about featured as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -15,7 +15,7 @@
  * @see ../../math -- ../../rodin -- ../../digit -- ../../horo -- ./SKILL.md
  */
 import { digitalRoot as numberRoot } from '@/horo'
-import { digitalRoot as uuidDigitalRoot } from '@/digit'
+import { digitalRootOfUuid as uuidDigitalRoot } from '@/digit'
 
 /** The digital root of a number — the mod-9 fold to 1..9 (the [[rodin]] arithmetic). */
 export const root = (n: number): number => numberRoot(n)

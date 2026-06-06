@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "sd",
-    "uuid": "ed5e9661-5b8f-8909-b7c1-f0a249fd34cb",
+    "uuid": "bce8f3ed-2f10-8a31-96be-00f49b0e07a2",
     "words": [
       "sd"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "sd: a schema.org component word, fused from sdDatePublished, sdLicense, sdPublisher",
-    "uuid": "aed94564-836d-8888-9b6a-192738e30ff4",
+    "source": "Use when reasoning about sd as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "38e34672-cc38-893f-a7dc-f1a4eca47b81",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "sd",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "sddatepublished",
-      "sdlicense",
-      "sdpublisher"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "sd: a schema.org component word, fused from sdDatePublished, sdLicense, sdPublisher"
+      "en": "Use when reasoning about sd as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

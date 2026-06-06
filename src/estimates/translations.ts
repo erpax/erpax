@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "estimates",
-    "uuid": "ce69c03a-5188-816c-9c2e-2b9b0789fd9b",
+    "uuid": "d8b3572c-025a-874f-aed3-54c7dc66606b",
     "words": [
       "estimates"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "estimates: a schema.org component word, fused from estimatesRiskOf",
-    "uuid": "744e09e4-5426-89c6-94c9-f83f2689c542",
+    "source": "Use when reasoning about estimates as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "4df72717-a44c-82b6-b85e-d8823f771675",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "estimates",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "estimatesriskof"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "estimates: a schema.org component word, fused from estimatesRiskOf"
+      "en": "Use when reasoning about estimates as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

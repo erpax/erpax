@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "referee",
-    "uuid": "07c1fb1c-3303-8a27-adac-49d3cde13cab",
+    "uuid": "19bdc4f4-d8f9-8209-a9c1-0f7361ac6a5f",
     "words": [
       "referee"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "An official who watches a game or match closely to enforce the rules and arbitrate on matters arising from the play such as referees, umpires or judges. The name of the effective function can vary acc",
-    "uuid": "48843d15-6951-850f-8ee4-6d3b43dcfb52",
+    "uuid": "1991f7e2-fad4-825d-b9a5-296c5de3e6c5",
     "words": [
       "an",
       "official",

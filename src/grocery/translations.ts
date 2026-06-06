@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "grocery",
-    "uuid": "d22a7189-53ae-8afd-aef9-017b15402aed",
+    "uuid": "dd8b8fe6-af11-8901-8300-5e1530b38f20",
     "words": [
       "grocery"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "grocery: a schema.org component word, fused from GroceryStore",
-    "uuid": "b3fbe11e-0945-8e9a-9a2c-4dd7093dcfbf",
+    "source": "Use when reasoning about grocery as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "2c49a061-ecf4-815f-b079-593bb5f04eb7",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "grocery",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "grocerystore"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "grocery: a schema.org component word, fused from GroceryStore"
+      "en": "Use when reasoning about grocery as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

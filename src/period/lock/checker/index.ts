@@ -49,6 +49,22 @@ export class PeriodLockChecker {
   ): PeriodCheckResult {
     const postingDateObj = new Date(postingDate)
 
+    // Fail closed on an unparseable posting date. An `Invalid Date` compares
+    // `false` against every period boundary, so it would otherwise match NO
+    // period and fall through to `allowNewPostings: true` — silently bypassing
+    // the lock. A date we cannot place in the fiscal calendar must NOT be
+    // freely postable: deny new postings and require an explicit admin override.
+    if (Number.isNaN(postingDateObj.getTime())) {
+      return {
+        isLocked: true,
+        allowNewPostings: false,
+        allowReversals: false,
+        allowPriorPeriodAdjustments: false,
+        requiresAdminOverride: true,
+        message: `Posting date "${postingDate}" is not a valid date — cannot determine the fiscal period (denied; admin override required)`,
+      }
+    }
+
     // Find period containing posting date
     let matchingPeriod: PeriodLock | null = null
     for (const period of periodLocks) {

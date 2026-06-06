@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "default",
-    "uuid": "839e1e46-1e61-8371-9412-07c0c0df2ead",
+    "uuid": "a58f5bc3-b73e-8d88-bd53-1d143a39d2e0",
     "words": [
       "default"
     ],
@@ -17,21 +17,50 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "default: a schema.org component word, fused from defaultValue",
-    "uuid": "1a8b8302-89c5-8ef9-874b-a7bddcaf9c01",
+    "source": "Use when reasoning about defaults — nothing defines a default; the default is by architecture, derived from the content-uuid and the path, never a hardcoded fallback, because a defined default is an assumption and an assumption is entropy.",
+    "uuid": "bfd7e2a9-f651-8bf7-a813-1cbae7bda538",
     "words": [
-      "default",
+      "use",
+      "when",
+      "reasoning",
+      "about",
+      "defaults",
+      "nothing",
+      "defines",
       "a",
-      "schema",
-      "org",
-      "component",
-      "word",
-      "fused",
+      "default",
+      "the",
+      "default",
+      "is",
+      "by",
+      "architecture",
+      "derived",
       "from",
-      "defaultvalue"
+      "the",
+      "content",
+      "uuid",
+      "and",
+      "the",
+      "path",
+      "never",
+      "a",
+      "hardcoded",
+      "fallback",
+      "because",
+      "a",
+      "defined",
+      "default",
+      "is",
+      "an",
+      "assumption",
+      "and",
+      "an",
+      "assumption",
+      "is",
+      "entropy"
     ],
     "values": {
-      "en": "default: a schema.org component word, fused from defaultValue"
+      "en": "Use when reasoning about defaults — nothing defines a default; the default is by architecture, derived from the content-uuid and the path, never a hardcoded fallback, because a defined default is an assumption and an assumption is entropy."
     }
   }
 ]

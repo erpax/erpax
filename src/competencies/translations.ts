@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when mapping the one actor-capability taxonomy — agents load it, employees hold it, jobs require it, the skill-router resolves it. Skills ARE competencies, so the catalogue is COMPUTED from the SKILL.md corpus (no stored collection), and a held/required line references a competency by its content-addressed skillRoute.",
-    "uuid": "6e83a499-8ce6-876c-961f-55606da222e7",
+    "uuid": "d90574ef-657b-89cf-ac5b-c4934cd50ca8",
     "words": [
       "use",
       "when",

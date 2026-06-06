@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "immediate",
-    "uuid": "7218208c-389c-8c13-9343-6cb46eaa7a47",
+    "uuid": "d08db2bc-155d-8767-bac9-f7b810e87965",
     "words": [
       "immediate"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "immediate: a schema.org component word, fused from jobImmediateStart",
-    "uuid": "2b578f93-d215-8b43-a1e7-369ea92b8f70",
+    "source": "Use when reasoning about immediate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "3289aaad-d986-8ce0-8059-32074f4399b7",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "immediate",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "jobimmediatestart"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "immediate: a schema.org component word, fused from jobImmediateStart"
+      "en": "Use when reasoning about immediate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -6,19 +6,19 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "Cases",
-    "uuid": "5f14ad2a-fcd8-8226-a486-e5b018b5539a",
+    "source": "cases",
+    "uuid": "e87cc0cf-ba13-8f29-8ba1-8e0622203cb4",
     "words": [
       "cases"
     ],
     "values": {
-      "en": "Cases"
+      "en": "cases"
     }
   },
   {
     "key": "description",
     "source": "Use when modelling a legal matter as a docket — case lifecycle, parties under roles, append-only evidence, judgments, offences and dispute resolution; the harmony-checked Payload realization of the justice docket.",
-    "uuid": "1d781fef-91eb-8d75-9c2a-800492ab4d4e",
+    "uuid": "a6d06647-ea8e-80f3-8265-cdc9da67cad0",
     "words": [
       "use",
       "when",

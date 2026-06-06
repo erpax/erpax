@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "view",
-    "uuid": "3469d6d2-761c-80b2-ab9b-7302a2977ad4",
+    "uuid": "32f59b83-64c9-85f6-80d0-09f9e7bf6127",
     "words": [
       "view"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "view: a schema.org component word, fused from ViewAction",
-    "uuid": "f17d31ff-61f6-89ce-af8c-f45fbe5316cf",
+    "source": "Use when reasoning about view as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "cc4156b6-d16e-80d0-9d0f-02343e922fd0",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "view",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "viewaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "view: a schema.org component word, fused from ViewAction"
+      "en": "Use when reasoning about view as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

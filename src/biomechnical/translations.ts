@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "biomechnical",
-    "uuid": "83a812e1-1097-8b9b-a1d8-000b9df22ff6",
+    "uuid": "27342001-5d00-8a09-a759-e2b7db1ddb37",
     "words": [
       "biomechnical"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "biomechnical: a schema.org component word, fused from biomechnicalClass",
-    "uuid": "6cdfb654-277f-8181-af38-bbf4401a9ada",
+    "source": "Use when reasoning about biomechnical as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "c823c97f-a274-8bb7-909e-d4c97fcde395",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "biomechnical",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "biomechnicalclass"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "biomechnical: a schema.org component word, fused from biomechnicalClass"
+      "en": "Use when reasoning about biomechnical as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

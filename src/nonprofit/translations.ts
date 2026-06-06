@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "nonprofit",
-    "uuid": "2b0168ff-1a59-812b-8a5d-20eeef29acb7",
+    "uuid": "e04d766c-af24-836a-ae26-9bad3be872bb",
     "words": [
       "nonprofit"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "nonprofit: a schema.org component word, fused from DENonprofitType, ITNonprofitType, NLNonprofitType, NonprofitType, UKNonprofitType, USNonprofitType",
-    "uuid": "bd1c4539-ee35-8a4c-b0a8-159c2f6a63a9",
+    "source": "Use when reasoning about nonprofit as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "93de5ec3-9fa8-8cd4-a65e-56cce31981b1",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "nonprofit",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "denonprofittype",
-      "itnonprofittype",
-      "nlnonprofittype",
-      "nonprofittype",
-      "uknonprofittype",
-      "usnonprofittype"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "nonprofit: a schema.org component word, fused from DENonprofitType, ITNonprofitType, NLNonprofitType, NonprofitType, UKNonprofitType, USNonprofitType"
+      "en": "Use when reasoning about nonprofit as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

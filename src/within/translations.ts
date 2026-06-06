@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "within",
-    "uuid": "14054d0d-622b-8a52-8f2f-49f1f17912cd",
+    "uuid": "fb599772-a1e0-873a-a6ca-15d0ac27d8a6",
     "words": [
       "within"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "within: a schema.org component word, fused from geoWithin",
-    "uuid": "5e4df68a-4b27-874b-985b-736c722b53ba",
+    "source": "Use when reasoning about within as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "2818cb6a-7d2d-8903-b3a8-3d46a9100f3d",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "within",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "geowithin"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "within: a schema.org component word, fused from geoWithin"
+      "en": "Use when reasoning about within as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

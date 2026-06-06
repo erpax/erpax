@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "donate",
-    "uuid": "4a214e7c-9738-8e21-94e4-bb8fd2f09209",
+    "uuid": "3b3456d9-212a-81b0-9448-98bbc2cfccd0",
     "words": [
       "donate"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "donate: a schema.org component word, fused from DonateAction",
-    "uuid": "40faec00-0fe4-868f-8959-a8742e0b68e5",
+    "source": "Use when reasoning about donate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "4366996b-ae40-8e76-8f63-5558c904e050",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "donate",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "donateaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "donate: a schema.org component word, fused from DonateAction"
+      "en": "Use when reasoning about donate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

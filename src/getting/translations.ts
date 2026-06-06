@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "getting",
-    "uuid": "b5cae6a7-1e28-8df6-a27b-c4f95c1d1f91",
+    "uuid": "5c555003-2488-83b3-8684-3e99bb471daf",
     "words": [
       "getting"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "getting: a schema.org component word, fused from gettingTestedInfo",
-    "uuid": "93cc2898-d122-89c7-98ba-3fa876df1742",
+    "source": "Use when reasoning about getting as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "260b3ab0-c2a7-8bab-a7cb-5eee60a2c8cc",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "getting",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "gettingtestedinfo"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "getting: a schema.org component word, fused from gettingTestedInfo"
+      "en": "Use when reasoning about getting as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

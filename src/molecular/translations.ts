@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "molecular",
-    "uuid": "8b62d8c8-e120-8458-9c34-91ef6f489410",
+    "uuid": "8c75afc0-537d-8a09-82fd-da842b78a8e3",
     "words": [
       "molecular"
     ],
@@ -17,25 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "molecular: a schema.org component word, fused from MolecularEntity, hasMolecularFunction, molecularFormula, molecularWeight, monoisotopicMolecularWeight",
-    "uuid": "02452710-4ff8-8305-a7ad-9777935ecf27",
+    "source": "Use when reasoning about molecular as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "b8ecef7e-8c95-8d06-b364-aad40d1fbcf6",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "molecular",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "molecularentity",
-      "hasmolecularfunction",
-      "molecularformula",
-      "molecularweight",
-      "monoisotopicmolecularweight"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "molecular: a schema.org component word, fused from MolecularEntity, hasMolecularFunction, molecularFormula, molecularWeight, monoisotopicMolecularWeight"
+      "en": "Use when reasoning about molecular as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

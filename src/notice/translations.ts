@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "notice",
-    "uuid": "9c1fee4d-0bcc-8554-a3cf-e73dbd98e00f",
+    "uuid": "2b7f414d-e0e6-81ce-bb32-4e0407263e18",
     "words": [
       "notice"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "notice: a schema.org component word, fused from copyrightNotice",
-    "uuid": "3f506529-6ce9-8b73-acd5-5df840faf83d",
+    "source": "Use when reasoning about notice as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "533b2263-792a-8f51-850f-906aad021340",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "notice",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "copyrightnotice"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "notice: a schema.org component word, fused from copyrightNotice"
+      "en": "Use when reasoning about notice as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

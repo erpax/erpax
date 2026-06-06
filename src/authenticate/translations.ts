@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "authenticate",
-    "uuid": "0612c8e0-d636-8529-a817-a61eefbeb4a9",
+    "uuid": "1bc11e06-2d5b-81b9-bc95-f32ed66b351f",
     "words": [
       "authenticate"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "authenticate: a schema.org component word, fused from AuthenticateAction",
-    "uuid": "eccc9b14-fdd2-83d1-9504-c24a4f9a2ad1",
+    "source": "Use when reasoning about authenticate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "fc36975a-df8b-8dfc-b305-6185c06542fa",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "authenticate",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "authenticateaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "authenticate: a schema.org component word, fused from AuthenticateAction"
+      "en": "Use when reasoning about authenticate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

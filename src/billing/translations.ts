@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "billing",
-    "uuid": "bb7326ad-6c73-8cd6-9e1f-08de2aa1086d",
+    "uuid": "00104ff6-0f74-81d1-8b48-3be285fb3eff",
     "words": [
       "billing"
     ],
@@ -17,25 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "billing: a schema.org component word, fused from billingAddress, billingDuration, billingIncrement, billingPeriod, billingStart",
-    "uuid": "8245152f-8ba2-8c30-a33f-17d14e61c288",
+    "source": "Use when reasoning about billing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "c3dfc27b-de74-8411-9242-5ab25e551816",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "billing",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "billingaddress",
-      "billingduration",
-      "billingincrement",
-      "billingperiod",
-      "billingstart"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "billing: a schema.org component word, fused from billingAddress, billingDuration, billingIncrement, billingPeriod, billingStart"
+      "en": "Use when reasoning about billing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

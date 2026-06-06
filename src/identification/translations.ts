@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "identification",
-    "uuid": "573ebf55-5c27-8019-95f9-93cc8c129c51",
+    "uuid": "5e6e10c8-3f63-8e7e-a94b-8d5eb6b2df9b",
     "words": [
       "identification"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "identification: a schema.org component word, fused from certificationIdentification, vehicleIdentificationNumber",
-    "uuid": "ff21c9f3-2ee6-8402-a8fc-fa1313192abc",
+    "source": "Use when reasoning about identification as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "5097a309-60e0-8712-9edc-83e56706aac2",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "identification",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "certificationidentification",
-      "vehicleidentificationnumber"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "identification: a schema.org component word, fused from certificationIdentification, vehicleIdentificationNumber"
+      "en": "Use when reasoning about identification as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

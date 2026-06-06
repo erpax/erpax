@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "parlor",
-    "uuid": "ba2e7981-02da-80fc-8646-7930ee7707f5",
+    "uuid": "653a40f1-13c4-8f47-b1de-ff3ac4d37174",
     "words": [
       "parlor"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "parlor: a schema.org component word, fused from TattooParlor",
-    "uuid": "d7977a46-0606-852d-b7c6-2e1c2c1ceb7c",
+    "source": "Use when reasoning about parlor as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "f2dba018-faa8-8847-96e4-cdb4ce999dc2",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "parlor",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "tattooparlor"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "parlor: a schema.org component word, fused from TattooParlor"
+      "en": "Use when reasoning about parlor as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

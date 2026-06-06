@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "river",
-    "uuid": "863976cf-1b7c-8546-8a78-38393accb497",
+    "uuid": "27b1d870-05f9-86d7-8dc6-5ee1c552496e",
     "words": [
       "river"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "river: a schema.org component word, fused from RiverBodyOfWater",
-    "uuid": "8fe732d4-f3d8-8c9a-a559-b3eb5de5d0a8",
+    "source": "Use when reasoning about river as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "c411e2e1-979f-8c18-a4b4-5e1e37c51290",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "river",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "riverbodyofwater"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "river: a schema.org component word, fused from RiverBodyOfWater"
+      "en": "Use when reasoning about river as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

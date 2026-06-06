@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "repeals",
-    "uuid": "c1e4365a-2cdd-8a29-a057-03fefe95cd28",
+    "uuid": "6368b789-0f78-8d20-9b2e-b03ed924dd70",
     "words": [
       "repeals"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "repeals: a schema.org component word, fused from legislationRepeals",
-    "uuid": "01d1d6f0-cc25-8938-89af-87755a3be485",
+    "source": "Use when reasoning about repeals as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "3d67198c-d5a0-8e21-a3a8-088f3c2794f3",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "repeals",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "legislationrepeals"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "repeals: a schema.org component word, fused from legislationRepeals"
+      "en": "Use when reasoning about repeals as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

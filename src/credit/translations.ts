@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "credit",
-    "uuid": "b593a18d-dcd7-85b7-8595-2f27339f2cc4",
+    "uuid": "bd2a38fc-ac8d-8111-b6e2-a09458afb81d",
     "words": [
       "credit"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "credit: a schema.org component word, fused from BankOrCreditUnion, CreditCard, LoanOrCredit, creditText",
-    "uuid": "692bedcb-c725-82ce-8fc9-7a828be564fa",
+    "uuid": "2349cf12-2e43-8d89-9947-02f200cfbd2c",
     "words": [
       "credit",
       "a",

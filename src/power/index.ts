@@ -83,6 +83,14 @@ export interface PowerReading {
  * Coverage from usage: events / (events + corpusNodes). Saturating — 0 at no usage,
  * strictly increasing, < 1 for any finite usage (so the cost stays finite + JCS-safe),
  * and → 1 only as events → ∞. The corpus size is the whole-matrix node count.
+ *
+ * AXIS — this is the **usage-accumulation** coverage axis, NOT structural
+ * node-wiring coverage. It measures how much the live network has been exercised
+ * (event volume saturating against corpus size), not what fraction of nodes are
+ * wired in structured uuid. crackVerdict.coverage is axis-agnostic; this caller
+ * supplies the usage axis. The STRUCTURAL-wiring fraction is a different measure
+ * — see `corpusCollider().coverage` / import purity (`@/tamper/import`) — and a
+ * busy store with un-wired nodes is high HERE yet low there; do not conflate them.
  */
 export function coverageFromUsage(events: number, corpusNodes: number = matrixDigest().nodes): number {
   const e = Math.max(events, 0)
@@ -105,6 +113,10 @@ export function accumulatePower(u: UsageSnapshot): PowerReading {
   const strongConsistency = u.strongConsistency ?? true
   const coverage = coverageFromUsage(u.events)
   // One crackVerdict call with the raw usage — the amplifiers run inside it.
+  // NOTE: `coverage` here is the USAGE-accumulation axis (coverageFromUsage),
+  // not structural node-wiring; crackVerdict is axis-agnostic and prices
+  // whichever axis the caller supplies. It stays < 1 for finite usage, so
+  // powerLog2 is finite (no usage-driven ∞ "by architecture" claim).
   const v = crackVerdict({
     coverage,
     checks: Math.max(u.streams, 1),

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "lead-score",
-    "uuid": "461488c2-9be9-8819-883c-880370f91582",
+    "uuid": "e89205dc-6476-8d9d-8102-abee23d0a91a",
     "words": [
       "lead",
       "score"
@@ -19,7 +19,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when ranking prospect/lead quality — behavioral signals, firmographic attributes, scoring model, threshold for handoff to sales.",
-    "uuid": "5bf9a382-1822-8f53-9c68-c97a6d7727d6",
+    "uuid": "50489694-e3ad-8918-99b8-f1a724e4156c",
     "words": [
       "use",
       "when",

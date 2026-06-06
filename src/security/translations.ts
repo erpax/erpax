@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "security",
-    "uuid": "97ac4461-1c37-8efc-8bb8-27d40e4a7f45",
+    "uuid": "77b56802-f1c9-8cc7-a042-dbfb947e665f",
     "words": [
       "security"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "security: a schema.org component word, fused from securityClearanceRequirement, securityScreening",
-    "uuid": "17c6a0d2-1de9-80f8-bb25-688105555009",
+    "source": "Use when reasoning about security as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "fed392b1-6b5a-8596-9d45-b43085b4abd7",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "security",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "securityclearancerequirement",
-      "securityscreening"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "security: a schema.org component word, fused from securityClearanceRequirement, securityScreening"
+      "en": "Use when reasoning about security as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

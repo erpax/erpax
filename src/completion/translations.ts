@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "completion",
-    "uuid": "e95f822d-a95d-8bb6-abe1-563faffd0396",
+    "uuid": "d42f2db5-7f54-872c-940e-8e91c6ad2683",
     "words": [
       "completion"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "completion: a schema.org component word, fused from salaryUponCompletion",
-    "uuid": "0e62d948-0456-8946-a27b-981d54533c40",
+    "source": "Use when reasoning about completion as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "5aaeebd2-c925-8e1b-85a6-18a2b766e2e2",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "completion",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "salaryuponcompletion"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "completion: a schema.org component word, fused from salaryUponCompletion"
+      "en": "Use when reasoning about completion as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "perform",
-    "uuid": "49a9f329-c4cc-8c48-b041-f3ee47073afb",
+    "uuid": "a0922b97-03c5-86db-a3e9-a63541815c15",
     "words": [
       "perform"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "perform: a schema.org component word, fused from PerformAction, performTime",
-    "uuid": "5eec0a8b-de68-86a3-a561-36d17dd1cafa",
+    "source": "Use when reasoning about perform as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "ad962e7d-e7be-81fc-97c6-c7c5c8cd5f47",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "perform",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "performaction",
-      "performtime"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "perform: a schema.org component word, fused from PerformAction, performTime"
+      "en": "Use when reasoning about perform as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

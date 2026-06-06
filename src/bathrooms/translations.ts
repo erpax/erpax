@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "bathrooms",
-    "uuid": "a839b3d9-963f-8543-9191-05d703a4e9b0",
+    "uuid": "d140a039-836d-812f-b2bc-e678680dcec3",
     "words": [
       "bathrooms"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "bathrooms: a schema.org component word, fused from numberOfBathroomsTotal, numberOfFullBathrooms, numberOfPartialBathrooms",
-    "uuid": "0ed73f0a-8eaa-8b95-979d-ac96ca25036a",
+    "source": "Use when reasoning about bathrooms as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "31ec32bf-2066-8184-81bd-c1ad79f7fd77",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "bathrooms",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "numberofbathroomstotal",
-      "numberoffullbathrooms",
-      "numberofpartialbathrooms"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "bathrooms: a schema.org component word, fused from numberOfBathroomsTotal, numberOfFullBathrooms, numberOfPartialBathrooms"
+      "en": "Use when reasoning about bathrooms as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

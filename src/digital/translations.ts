@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "digital",
-    "uuid": "0eaf25a9-0eac-8fbc-baa2-626a76c83d7c",
+    "uuid": "fc8dbf80-3261-8082-8728-331022d0db0d",
     "words": [
       "digital"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "digital: a schema.org component word, fused from DigitalDocument, DigitalDocumentPermission, DigitalDocumentPermissionType, DigitalPlatformEnumeration, IPTCDigitalSourceEnumeration, NoteDigitalDocumen",
-    "uuid": "83c660a6-aef6-87f6-920c-cfc62b48d60c",
+    "source": "Use when reasoning about digital as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "61dee6da-2cc5-8607-a2b1-476ee8816ef7",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "digital",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "digitaldocument",
-      "digitaldocumentpermission",
-      "digitaldocumentpermissiontype",
-      "digitalplatformenumeration",
-      "iptcdigitalsourceenumeration",
-      "notedigitaldocumen"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "digital: a schema.org component word, fused from DigitalDocument, DigitalDocumentPermission, DigitalDocumentPermissionType, DigitalPlatformEnumeration, IPTCDigitalSourceEnumeration, NoteDigitalDocumen"
+      "en": "Use when reasoning about digital as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

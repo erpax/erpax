@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "serious",
-    "uuid": "6751177c-3a4c-8902-9004-d62c75a7af35",
+    "uuid": "2f83ba57-1405-8a57-a2a6-e8f504e518e0",
     "words": [
       "serious"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "serious: a schema.org component word, fused from seriousAdverseOutcome",
-    "uuid": "67ba1dac-3761-8076-a0a6-236c2f18d327",
+    "source": "Use when reasoning about serious as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "d5f2c308-f18c-83e9-b25f-102c9930e0a4",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "serious",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "seriousadverseoutcome"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "serious: a schema.org component word, fused from seriousAdverseOutcome"
+      "en": "Use when reasoning about serious as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "days",
-    "uuid": "bdff9cfd-feee-8cad-8d34-a89036b91aaa",
+    "uuid": "836ae87d-0d03-8c78-9dd1-3aaec443666b",
     "words": [
       "days"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "days: a schema.org component word, fused from businessDays, merchantReturnDays, productReturnDays",
-    "uuid": "c2861017-08e2-8ff5-a3b5-39dc517e5995",
+    "source": "Use when reasoning about days as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "0670a99c-deef-896d-9e98-6605304d242e",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "days",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "businessdays",
-      "merchantreturndays",
-      "productreturndays"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "days: a schema.org component word, fused from businessDays, merchantReturnDays, productReturnDays"
+      "en": "Use when reasoning about days as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

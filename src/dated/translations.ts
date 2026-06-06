@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "dated",
-    "uuid": "dc0e7278-5e6c-8380-8299-6b8e45cd4009",
+    "uuid": "ed7fdf63-8e62-8d10-b3b8-5c0f588faf79",
     "words": [
       "dated"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "dated: a schema.org component word, fused from DatedMoneySpecification",
-    "uuid": "581811de-8e9d-819e-87c4-20c768037a1a",
+    "source": "Use when reasoning about dated as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "575b9100-e67a-862e-a6af-b11554c02588",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "dated",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "datedmoneyspecification"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "dated: a schema.org component word, fused from DatedMoneySpecification"
+      "en": "Use when reasoning about dated as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

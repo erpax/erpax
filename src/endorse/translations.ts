@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "endorse",
-    "uuid": "a6f75a39-f39a-8768-a6be-110f691e7cec",
+    "uuid": "26274cb3-27d0-8c95-8400-4fa802db253d",
     "words": [
       "endorse"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "endorse: a schema.org component word, fused from EndorseAction",
-    "uuid": "34bfcecf-eb56-8526-8749-f47e2bfc207d",
+    "source": "Use when reasoning about endorse as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "2d211349-1d35-8a86-9795-92218f2478fa",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "endorse",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "endorseaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "endorse: a schema.org component word, fused from EndorseAction"
+      "en": "Use when reasoning about endorse as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

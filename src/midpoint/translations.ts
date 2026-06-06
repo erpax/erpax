@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "midpoint",
-    "uuid": "d5429e05-55d3-8ba5-a0b5-987fa1f91ba4",
+    "uuid": "b493edf9-d684-851f-86d5-4eb4057739da",
     "words": [
       "midpoint"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "midpoint: a schema.org component word, fused from geoMidpoint",
-    "uuid": "0f396899-77d2-8eef-8cc5-94dccdaba776",
+    "source": "Use when reasoning about midpoint as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "4dedc589-6b65-83dd-adc8-cd8a66a3f1c2",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "midpoint",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "geomidpoint"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "midpoint: a schema.org component word, fused from geoMidpoint"
+      "en": "Use when reasoning about midpoint as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

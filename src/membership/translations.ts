@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "membership",
-    "uuid": "0649d96c-bce9-8cbc-ae94-4621ddcf68cd",
+    "uuid": "a7f656ac-9d3c-888a-b208-e4aad92839a2",
     "words": [
       "membership"
     ],
@@ -17,24 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "membership: a schema.org component word, fused from ProgramMembership, membershipNumber, membershipPointsEarned, programMembershipUsed",
-    "uuid": "b8e5be93-200c-87ba-a5d6-f99371347b7d",
+    "source": "Use when reasoning about membership as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "35500066-2d63-89d7-a04e-f2b105cef23b",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "membership",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "programmembership",
-      "membershipnumber",
-      "membershippointsearned",
-      "programmembershipused"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "membership: a schema.org component word, fused from ProgramMembership, membershipNumber, membershipPointsEarned, programMembershipUsed"
+      "en": "Use when reasoning about membership as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

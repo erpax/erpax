@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "cvd",
-    "uuid": "721cea1e-9c90-8cb7-93c2-0370da609e94",
+    "uuid": "e16434f0-473d-8c53-934d-739d7d961418",
     "words": [
       "cvd"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "cvd: a schema.org component word, fused from cvdCollectionDate, cvdFacilityCounty, cvdFacilityId, cvdNumBeds, cvdNumBedsOcc, cvdNumC19Died",
-    "uuid": "d841114f-56c0-8d78-a4c7-35a7b78ac6a0",
+    "source": "Use when reasoning about cvd as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "3bb3b4ce-39fe-8d12-bcb8-d7879006d5b5",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "cvd",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "cvdcollectiondate",
-      "cvdfacilitycounty",
-      "cvdfacilityid",
-      "cvdnumbeds",
-      "cvdnumbedsocc",
-      "cvdnumc19died"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "cvd: a schema.org component word, fused from cvdCollectionDate, cvdFacilityCounty, cvdFacilityId, cvdNumBeds, cvdNumBedsOcc, cvdNumC19Died"
+      "en": "Use when reasoning about cvd as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

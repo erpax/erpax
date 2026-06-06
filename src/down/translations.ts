@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "down",
-    "uuid": "29eca18c-c86f-8f4e-ae99-6a880d9d455a",
+    "uuid": "78ed3133-86af-88a5-b029-3b64adbb5998",
     "words": [
       "down"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "down: a schema.org component word, fused from downPayment",
-    "uuid": "33988b85-d750-8dac-a18d-e59a52540956",
+    "source": "Use when reasoning about down as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "8dba9700-2c1d-8610-9f99-4d64b688d672",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "down",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "downpayment"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "down: a schema.org component word, fused from downPayment"
+      "en": "Use when reasoning about down as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

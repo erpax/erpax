@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "prepend",
-    "uuid": "cb8f7438-d652-8b66-97dd-087e804a476e",
+    "uuid": "a851db16-6865-83c8-9426-fa6b06e57f12",
     "words": [
       "prepend"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "prepend: a schema.org component word, fused from PrependAction",
-    "uuid": "16743b56-c4fd-81d1-a78f-c184879ecf7f",
+    "source": "Use when reasoning about prepend as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "c921873e-00dd-8da3-8e56-baa56f9e674b",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "prepend",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "prependaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "prepend: a schema.org component word, fused from PrependAction"
+      "en": "Use when reasoning about prepend as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

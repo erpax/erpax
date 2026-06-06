@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "clearance",
-    "uuid": "92de761f-3e15-8a72-a132-463148a3e381",
+    "uuid": "584b2cce-394e-8680-bd5c-651b99695230",
     "words": [
       "clearance"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "clearance: a schema.org component word, fused from securityClearanceRequirement",
-    "uuid": "8abde898-f805-8b73-8d25-2a41ec22d7a9",
+    "uuid": "06db33cb-335c-8b27-bb9d-72ac7c18e56a",
     "words": [
       "clearance",
       "a",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "laundry",
-    "uuid": "d553c4ac-56d1-8076-beaa-902273bcdc83",
+    "uuid": "bb9a0da1-9d1f-89ad-a770-b4b6bba73811",
     "words": [
       "laundry"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "laundry: a schema.org component word, fused from DryCleaningOrLaundry",
-    "uuid": "4aaa3162-ea8d-8135-834e-c9b558659898",
+    "source": "Use when reasoning about laundry as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "977e74a4-d890-86d1-8d4c-3b49ef65a630",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "laundry",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "drycleaningorlaundry"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "laundry: a schema.org component word, fused from DryCleaningOrLaundry"
+      "en": "Use when reasoning about laundry as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

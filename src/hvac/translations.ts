@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "hvac",
-    "uuid": "f848a67e-1c85-8bb2-90ee-44ea8ef4d8f2",
+    "uuid": "8c94d8b9-27ac-898c-bb01-c188802b2dbb",
     "words": [
       "hvac"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "hvac: a schema.org component word, fused from HVACBusiness",
-    "uuid": "ece1b108-b96c-8deb-8ad9-63dff8183da5",
+    "source": "Use when reasoning about hvac as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "a80a94dc-5867-8f47-a756-ca8b1aa6fe73",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "hvac",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "hvacbusiness"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "hvac: a schema.org component word, fused from HVACBusiness"
+      "en": "Use when reasoning about hvac as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

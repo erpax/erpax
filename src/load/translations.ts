@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "load",
-    "uuid": "abdac180-4835-8801-abab-ae7e8d833e97",
+    "uuid": "91e3837b-e442-8195-9f87-df5ab494d7d9",
     "words": [
       "load"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "load: a schema.org component word, fused from roofLoad",
-    "uuid": "7f28ff89-aeb6-8c83-a592-fe572e44cb04",
+    "source": "Use when reasoning about load as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "132d548e-ef53-8c1c-a007-9c7c29b0ee89",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "load",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "roofload"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "load: a schema.org component word, fused from roofLoad"
+      "en": "Use when reasoning about load as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "scheduled",
-    "uuid": "ded75ac8-16d4-86b8-9a37-f74f99fecda0",
+    "uuid": "2caee6ed-0362-8f0f-82df-51e8e65c5faf",
     "words": [
       "scheduled"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "scheduled: a schema.org component word, fused from scheduledPaymentDate, scheduledTime",
-    "uuid": "03e3e84f-93f3-838a-b2c1-28297ac6de07",
+    "source": "Use when reasoning about scheduled as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "352ccc57-d4ca-80b9-8276-513ca51a5c5f",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "scheduled",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "scheduledpaymentdate",
-      "scheduledtime"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "scheduled: a schema.org component word, fused from scheduledPaymentDate, scheduledTime"
+      "en": "Use when reasoning about scheduled as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

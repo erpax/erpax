@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when eliminating duplicate records — duplicate detection (exact/fuzzy), merge strategies, idempotency to prevent re-ingestion, duplicate scope (entity/transaction/field-level), dedup window/time-range.",
-    "uuid": "4031d112-5e31-8944-9d54-62d4ed664b9d",
+    "uuid": "fdd75b8b-c93a-8161-ab32-68c335694b07",
     "words": [
       "use",
       "when",

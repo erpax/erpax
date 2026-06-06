@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "vacation",
-    "uuid": "03718cdc-acb9-886e-992b-2ae85d5723e8",
+    "uuid": "a51dad4c-ebe7-847f-84ba-f5e3be113d47",
     "words": [
       "vacation"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "vacation: a schema.org component word, fused from VacationRental",
-    "uuid": "6f4c6c9a-148e-8876-934e-6cc78dd103c3",
+    "source": "Use when reasoning about vacation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "f8ca7232-663e-8e2e-8e61-ab177806d371",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "vacation",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "vacationrental"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "vacation: a schema.org component word, fused from VacationRental"
+      "en": "Use when reasoning about vacation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

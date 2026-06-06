@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "displacement",
-    "uuid": "87df6218-a3ec-87e2-a2f6-fc4a61ecb7aa",
+    "uuid": "ed452bfb-a95d-851a-970b-095bcbd0c12b",
     "words": [
       "displacement"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "displacement: a schema.org component word, fused from engineDisplacement",
-    "uuid": "b611d07a-4d54-87bf-9976-5bfa1638fdea",
+    "source": "Use when reasoning about displacement as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "d1bdd652-b708-834a-84fa-34a9e746f0fe",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "displacement",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "enginedisplacement"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "displacement: a schema.org component word, fused from engineDisplacement"
+      "en": "Use when reasoning about displacement as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

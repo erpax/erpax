@@ -6,20 +6,20 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "audit-evidence",
-    "uuid": "97c85fd3-05a1-8c16-b0a6-6eefda5d6cd1",
+    "source": "audit-evidences",
+    "uuid": "ef58789f-f922-8a12-9759-03858ff407a5",
     "words": [
       "audit",
-      "evidence"
+      "evidences"
     ],
     "values": {
-      "en": "audit-evidence"
+      "en": "audit-evidences"
     }
   },
   {
     "key": "description",
     "source": "Use when attaching or retrieving documentary evidence for audit work — PDF documents, bank statements, GL printouts, reconciliations, signed approvals, workpapers — with chain-of-custody log, confidentiality classification, retention schedule, and links to controls, control tests, samples, and findings. The ISA-500/PCAOB-AS-1105 audit-evidence register.",
-    "uuid": "5bab3166-b582-8946-bdc4-3cb86efa640a",
+    "uuid": "ae1687f5-3061-8da6-afca-004d8d1d719a",
     "words": [
       "use",
       "when",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "historical",
-    "uuid": "384f7fa0-4714-8dbf-9a92-e2790e38919e",
+    "uuid": "1f820393-a646-894e-8f71-1229517c8368",
     "words": [
       "historical"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "historical: a schema.org component word, fused from LandmarksOrHistoricalBuildings, totalHistoricalEnrollment",
-    "uuid": "e17ec732-75f8-8d5b-b374-cbf18fb95a48",
+    "source": "Use when reasoning about historical as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "9683c9d0-b990-8b67-9ad3-b2fd6cadb137",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "historical",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "landmarksorhistoricalbuildings",
-      "totalhistoricalenrollment"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "historical: a schema.org component word, fused from LandmarksOrHistoricalBuildings, totalHistoricalEnrollment"
+      "en": "Use when reasoning about historical as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

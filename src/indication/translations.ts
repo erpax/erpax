@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "indication",
-    "uuid": "3431ca4c-1b52-8b69-ac0f-89d99299592b",
+    "uuid": "e6d9e18c-8592-81b3-a175-7e376a67b9ea",
     "words": [
       "indication"
     ],
@@ -17,24 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "indication: a schema.org component word, fused from ApprovedIndication, MedicalIndication, PreventionIndication, TreatmentIndication",
-    "uuid": "69b1cd53-6f84-8829-b433-be93d022caf1",
+    "source": "Use when reasoning about indication as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "a7aaaff6-8ec9-8a5f-9d88-2fdf464377c4",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "indication",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "approvedindication",
-      "medicalindication",
-      "preventionindication",
-      "treatmentindication"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "indication: a schema.org component word, fused from ApprovedIndication, MedicalIndication, PreventionIndication, TreatmentIndication"
+      "en": "Use when reasoning about indication as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

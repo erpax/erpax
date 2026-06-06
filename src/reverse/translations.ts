@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Reversing/correcting a posted entry — the source entry with debit↔credit swapped on the SAME accounts, balanced by construction. Read when generating reversing entries, credit notes, void/correction postings, or period-close reversals.",
-    "uuid": "2bc8ca7d-f89e-8e33-8c4a-e02d6473f776",
+    "uuid": "d6b11db2-70a2-84be-b961-3981eedd012e",
     "words": [
       "reversing",
       "correcting",

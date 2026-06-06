@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "volume",
-    "uuid": "e01bd724-9156-8c55-95f3-b2f664e81d61",
+    "uuid": "f71a0208-a6a5-82b5-ad1b-e09037bbe3a0",
     "words": [
       "volume"
     ],
@@ -17,24 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "volume: a schema.org component word, fused from PublicationVolume, cargoVolume, eligibleTransactionVolume, volumeNumber",
-    "uuid": "9e962559-2f61-83e2-8950-b2c1f91d407a",
+    "source": "Use when reasoning about volume as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "7b706fe9-9911-8e78-b41b-c342fc058c23",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "volume",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "publicationvolume",
-      "cargovolume",
-      "eligibletransactionvolume",
-      "volumenumber"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "volume: a schema.org component word, fused from PublicationVolume, cargoVolume, eligibleTransactionVolume, volumeNumber"
+      "en": "Use when reasoning about volume as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

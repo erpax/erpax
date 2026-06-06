@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "smoking",
-    "uuid": "3a2ed272-4f15-8aea-aeff-3c57f3b6398e",
+    "uuid": "1abdd068-a84b-8791-bb43-071b4cf60eac",
     "words": [
       "smoking"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "smoking: a schema.org component word, fused from smokingAllowed",
-    "uuid": "198e3706-0639-86dc-934a-afffcc899cb3",
+    "source": "Use when reasoning about smoking as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "2b9730ce-60a7-8319-9aee-b48860b79d58",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "smoking",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "smokingallowed"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "smoking: a schema.org component word, fused from smokingAllowed"
+      "en": "Use when reasoning about smoking as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

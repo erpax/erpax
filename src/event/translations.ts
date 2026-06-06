@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "The domain-event atom — an afterChange [[hooks]] hook emits a content-uuid-keyed envelope that in-process subscribers AND federation peers consume. Read when emitting/consuming a domain event (invoice:activated, payment:received, inventory:adjusted…), wiring chainEventEmitters/subscribers, or whenever an event's aggregateId is set. The aggregate identity MUST be the content-`uuid` (the 0), never the instance-local row id.",
-    "uuid": "3cefffc1-0987-8e63-a9ee-1d44edd512d4",
+    "uuid": "e0d6f6bc-294b-889e-bd7a-4722899115a0",
     "words": [
       "the",
       "domain",

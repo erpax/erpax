@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "veterinary",
-    "uuid": "f1fedeec-7bd4-8a65-b227-6fe67a866a01",
+    "uuid": "bd5d5c41-9c85-8663-acc0-2955aadb8d70",
     "words": [
       "veterinary"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "veterinary: a schema.org component word, fused from VeterinaryCare",
-    "uuid": "a06e9a94-a755-8f55-8459-f5ffcd843bde",
+    "source": "Use when reasoning about veterinary as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "356f7c1f-a51d-8623-8967-1ae8e36b6305",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "veterinary",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "veterinarycare"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "veterinary: a schema.org component word, fused from VeterinaryCare"
+      "en": "Use when reasoning about veterinary as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

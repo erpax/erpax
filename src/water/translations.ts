@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "water",
-    "uuid": "4b9a1dc2-2d72-8417-b117-4203b757bd87",
+    "uuid": "758772df-1aba-8a1f-ae24-e7d26ff924af",
     "words": [
       "water"
     ],
@@ -17,25 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "water: a schema.org component word, fused from BodyOfWater, LakeBodyOfWater, OceanBodyOfWater, RiverBodyOfWater, SeaBodyOfWater",
-    "uuid": "54441151-1e94-8ec7-b6b5-542583827c5e",
+    "source": "Use when reasoning about water as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "61ac92f8-c06c-8f28-988d-97aac59507e2",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "water",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "bodyofwater",
-      "lakebodyofwater",
-      "oceanbodyofwater",
-      "riverbodyofwater",
-      "seabodyofwater"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "water: a schema.org component word, fused from BodyOfWater, LakeBodyOfWater, OceanBodyOfWater, RiverBodyOfWater, SeaBodyOfWater"
+      "en": "Use when reasoning about water as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

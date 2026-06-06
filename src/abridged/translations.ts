@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "abridged",
-    "uuid": "af35995b-8d71-8010-8f13-5e5530481092",
+    "uuid": "d7351ed5-d510-8a91-83f9-b14d9988c0c3",
     "words": [
       "abridged"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Indicates whether the book is an abridged edition.",
-    "uuid": "981f6445-9c13-84c6-9531-b4780f0784d0",
+    "uuid": "378b2a33-9021-8f4b-86a5-f76ef9e8868f",
     "words": [
       "indicates",
       "whether",

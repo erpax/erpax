@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "good",
-    "uuid": "e186efe0-0af4-8cd8-9bef-bc79efcecf87",
+    "uuid": "652f1693-44cd-8ba6-9cc2-545099414fef",
     "words": [
       "good"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "good: a schema.org component word, fused from amountOfThisGood, typeOfGood",
-    "uuid": "fb7a26c2-04e5-801f-b85d-54a89ffc5c11",
+    "source": "Use when reasoning about good as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "c0613523-f5df-8363-9518-9038c3df48c5",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "good",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "amountofthisgood",
-      "typeofgood"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "good: a schema.org component word, fused from amountOfThisGood, typeOfGood"
+      "en": "Use when reasoning about good as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

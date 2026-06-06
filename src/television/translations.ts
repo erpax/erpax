@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "television",
-    "uuid": "7906218d-a937-874d-b3a1-86120f6651c0",
+    "uuid": "57d0d188-4b23-83f4-a3ac-9130840f5072",
     "words": [
       "television"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "television: a schema.org component word, fused from TelevisionChannel, TelevisionStation",
-    "uuid": "c4abd611-6c2e-80f9-bb40-c33648d7ea71",
+    "source": "Use when reasoning about television as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "20d58e3f-9b96-8174-aebb-c48af0967194",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "television",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "televisionchannel",
-      "televisionstation"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "television: a schema.org component word, fused from TelevisionChannel, TelevisionStation"
+      "en": "Use when reasoning about television as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

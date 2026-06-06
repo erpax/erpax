@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "mobility",
-    "uuid": "8ef27656-0e9f-8940-973e-81af28c1b7dd",
+    "uuid": "e345ae17-8589-8e0c-8d2c-0be4fd302ede",
     "words": [
       "mobility"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "mobility: a schema.org component word, fused from providerMobility",
-    "uuid": "b8e17579-4fdd-86b6-9eae-df4d6fbd0507",
+    "source": "Use when reasoning about mobility as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "1976fa2f-7d23-8ce1-8123-1f1f6e22fb21",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "mobility",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "providermobility"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "mobility: a schema.org component word, fused from providerMobility"
+      "en": "Use when reasoning about mobility as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

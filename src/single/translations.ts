@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "single",
-    "uuid": "47f430fd-a53e-8dc0-b8be-50b54c99cedf",
+    "uuid": "6dda3cba-7dd1-85d4-b6b6-85b90f631bf5",
     "words": [
       "single"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "single: a schema.org component word, fused from SingleFamilyResidence",
-    "uuid": "100501ce-1023-8393-afc1-d5f59b36b643",
+    "source": "Use when reasoning about single as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "8c9bbbca-851f-8e7b-90f7-c86128193a6e",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "single",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "singlefamilyresidence"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "single: a schema.org component word, fused from SingleFamilyResidence"
+      "en": "Use when reasoning about single as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

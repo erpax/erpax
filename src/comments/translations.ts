@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "comments",
-    "uuid": "28ee0802-f059-8b6e-978a-2318a7bf831a",
+    "uuid": "752060b2-8570-8b7d-a700-cd2f4a6002bc",
     "words": [
       "comments"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "comments: a schema.org component word, fused from UserComments",
-    "uuid": "304fb7a3-147c-8dac-8601-e5690511f0b0",
+    "source": "Use when reasoning about comments as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "fb4acffe-3864-8806-a35d-217ec7333e64",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "comments",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "usercomments"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "comments: a schema.org component word, fused from UserComments"
+      "en": "Use when reasoning about comments as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

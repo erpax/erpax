@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "level",
-    "uuid": "71358833-4e4a-8470-baae-6983bed0a332",
+    "uuid": "08b31149-6a2e-8e1c-baf1-8887c5e0882b",
     "words": [
       "level"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "level: a schema.org component word, fused from LegalValueLevel, MedicalEvidenceLevel, educationalLevel, evidenceLevel, floorLevel, inventoryLevel",
-    "uuid": "989846d5-6fc8-85f5-8dd6-d1941ced9844",
+    "source": "Use when reasoning about level as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "fb0125b0-8865-818e-a954-c45cc39b2418",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "level",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "legalvaluelevel",
-      "medicalevidencelevel",
-      "educationallevel",
-      "evidencelevel",
-      "floorlevel",
-      "inventorylevel"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "level: a schema.org component word, fused from LegalValueLevel, MedicalEvidenceLevel, educationalLevel, evidenceLevel, floorLevel, inventoryLevel"
+      "en": "Use when reasoning about level as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

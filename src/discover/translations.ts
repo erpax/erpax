@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "discover",
-    "uuid": "7401a078-5b5c-8ea3-b9d4-17c7125e94db",
+    "uuid": "acc6be38-6c9e-8cfe-9886-b9426987c7d7",
     "words": [
       "discover"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "discover: a schema.org component word, fused from DiscoverAction",
-    "uuid": "aa6fc12b-f9fb-8095-9b77-3106aac42fc3",
+    "source": "Use when reasoning about discover as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "f4279c27-7c77-8852-8e2b-2635fd149502",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "discover",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "discoveraction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "discover: a schema.org component word, fused from DiscoverAction"
+      "en": "Use when reasoning about discover as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

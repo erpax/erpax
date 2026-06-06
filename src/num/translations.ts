@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "num",
-    "uuid": "9df145a4-6e0b-8003-a70b-ba4bd9a3e61b",
+    "uuid": "bf32736b-1dfc-8d69-a011-16e3c4dc8b90",
     "words": [
       "num"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "num: a schema.org component word, fused from cvdNumBeds, cvdNumBedsOcc, cvdNumC19Died, cvdNumC19HOPats, cvdNumC19HospPats, cvdNumC19MechVentPats",
-    "uuid": "18f80168-a6c5-8075-82e5-9309b5a6bded",
+    "source": "Use when reasoning about num as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "9616794a-f6bb-8902-929b-510632965890",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "num",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "cvdnumbeds",
-      "cvdnumbedsocc",
-      "cvdnumc19died",
-      "cvdnumc19hopats",
-      "cvdnumc19hosppats",
-      "cvdnumc19mechventpats"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "num: a schema.org component word, fused from cvdNumBeds, cvdNumBedsOcc, cvdNumC19Died, cvdNumC19HOPats, cvdNumC19HospPats, cvdNumC19MechVentPats"
+      "en": "Use when reasoning about num as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

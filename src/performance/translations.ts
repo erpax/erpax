@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "performance",
-    "uuid": "7f5a2bdf-8ad9-82e8-b203-5329c1f0dec6",
+    "uuid": "94343679-6f08-8c92-a061-89df4d0a7fb5",
     "words": [
       "performance"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "performance: a schema.org component word, fused from PerformanceRole, firstPerformance",
-    "uuid": "c383a21a-960d-8418-bdc3-a96a76174754",
+    "source": "Use when reasoning about performance as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "cb0a00b6-d19e-845c-8e06-3a3b2276e43b",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "performance",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "performancerole",
-      "firstperformance"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "performance: a schema.org component word, fused from PerformanceRole, firstPerformance"
+      "en": "Use when reasoning about performance as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

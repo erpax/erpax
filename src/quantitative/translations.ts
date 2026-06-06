@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "quantitative",
-    "uuid": "df7f56b1-50fa-8bf3-adda-3cf679fa0cb8",
+    "uuid": "6d82e628-e638-8343-9710-b8578ab7385d",
     "words": [
       "quantitative"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "quantitative: a schema.org component word, fused from QuantitativeValue, QuantitativeValueDistribution",
-    "uuid": "fa47b301-6c97-8066-a363-7df12d9a9626",
+    "uuid": "6fb59634-26a0-8021-9b24-82c903f1d090",
     "words": [
       "quantitative",
       "a",

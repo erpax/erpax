@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "iso",
-    "uuid": "d68a3e56-9552-830c-ad2f-4de4491bc9b1",
+    "uuid": "efa22990-6103-8c3e-8275-8d6362ef7ac4",
     "words": [
       "iso"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "iso: a schema.org component word, fused from iso6523Code",
-    "uuid": "e7ba6b0c-0ce5-8eb7-8e84-fb8fa3c13b1f",
+    "source": "Use when reasoning about iso as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "67f4062f-c6d4-8e23-a415-168f828edd96",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "iso",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "iso6523code"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "iso: a schema.org component word, fused from iso6523Code"
+      "en": "Use when reasoning about iso as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

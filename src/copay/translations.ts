@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "copay",
-    "uuid": "ed43c3c8-e103-8969-8b90-0c85efe23796",
+    "uuid": "0587d678-8f5f-8586-b4e6-39010c0b4320",
     "words": [
       "copay"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "copay: a schema.org component word, fused from healthPlanCopay, healthPlanCopayOption",
-    "uuid": "d3693fdd-6d88-88e3-b824-9d0ace2845c5",
+    "source": "Use when reasoning about copay as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "f234845c-20a1-8102-b533-451caa5af5eb",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "copay",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "healthplancopay",
-      "healthplancopayoption"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "copay: a schema.org component word, fused from healthPlanCopay, healthPlanCopayOption"
+      "en": "Use when reasoning about copay as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "lead",
-    "uuid": "40475eec-8708-8880-88f5-2303b1c6b3a7",
+    "uuid": "870651e4-f6f1-8ac6-8f68-3236f7e9d5fb",
     "words": [
       "lead"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "lead: a schema.org component word, fused from deliveryLeadTime",
-    "uuid": "bc1b50f9-6c96-8c4b-838e-36fd2998fce1",
+    "source": "Use when reasoning about lead as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "5ad094f7-ea89-82d4-a920-7930564de94d",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "lead",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "deliveryleadtime"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "lead: a schema.org component word, fused from deliveryLeadTime"
+      "en": "Use when reasoning about lead as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

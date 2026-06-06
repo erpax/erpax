@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "treatment",
-    "uuid": "f3031a0a-b7c3-8c2d-8064-877ff3540e57",
+    "uuid": "b41df446-6c94-8d12-93a6-d4cf3dd01a79",
     "words": [
       "treatment"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "treatment: a schema.org component word, fused from PsychologicalTreatment, TreatmentIndication, possibleTreatment",
-    "uuid": "9daa4681-afb7-88f2-b445-c8df36a3a158",
+    "source": "Use when reasoning about treatment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "2d839b1b-4c15-8fcc-bed3-a6a5060ba9f7",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "treatment",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "psychologicaltreatment",
-      "treatmentindication",
-      "possibletreatment"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "treatment: a schema.org component word, fused from PsychologicalTreatment, TreatmentIndication, possibleTreatment"
+      "en": "Use when reasoning about treatment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

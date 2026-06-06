@@ -1,5 +1,5 @@
 ---
-name: positions
+name: position
 description: Use when defining job positions, the rate ladder, or government/society role structure. Each position is a rung on the harmonic ladder; its job description is computed; its conditions are content-addressed on the uuid chain (blockchain); government and society share one ladder.
 ---
 

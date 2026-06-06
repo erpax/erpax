@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "replace",
-    "uuid": "ef8a9083-8788-8de0-8a9a-8905aa59f8d5",
+    "uuid": "94bc2512-cf5a-85d2-898c-9afe60bc62d1",
     "words": [
       "replace"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "replace: a schema.org component word, fused from ReplaceAction",
-    "uuid": "c39f8bc2-8da4-81a3-8c0d-4523ab9e6ac7",
+    "source": "Use when reasoning about replace as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "80dff319-5538-87a4-8310-0faba060e951",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "replace",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "replaceaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "replace: a schema.org component word, fused from ReplaceAction"
+      "en": "Use when reasoning about replace as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

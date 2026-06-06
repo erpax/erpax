@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "attachment",
-    "uuid": "421bb331-88d7-8bcb-b7ef-3f2da594b38c",
+    "uuid": "2e5ee7eb-2417-8503-b8ea-54d284c7662f",
     "words": [
       "attachment"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "attachment: a schema.org component word, fused from messageAttachment",
-    "uuid": "c9cdb383-314f-8163-b62a-9727c2e3389e",
+    "source": "Use when reasoning about attachment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "fde73d24-6970-850f-b755-5a79c79545f5",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "attachment",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "messageattachment"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "attachment: a schema.org component word, fused from messageAttachment"
+      "en": "Use when reasoning about attachment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

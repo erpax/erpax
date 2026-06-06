@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "hiring",
-    "uuid": "3108ea9d-172b-8f52-bb0c-7c611d8921f8",
+    "uuid": "d315685a-3920-816a-8616-6aa4041fd97b",
     "words": [
       "hiring"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "hiring: a schema.org component word, fused from hiringOrganization",
-    "uuid": "b70dd7c1-cc6c-8888-babd-7ec7da79efaa",
+    "source": "Use when reasoning about hiring as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "f0a065c2-ce3f-8880-a102-5657b06db227",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "hiring",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "hiringorganization"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "hiring: a schema.org component word, fused from hiringOrganization"
+      "en": "Use when reasoning about hiring as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

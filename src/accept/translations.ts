@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "accept",
-    "uuid": "091afbcc-9a06-82a0-afae-452869e539fc",
+    "uuid": "66716a5e-a58a-8cc2-b3c1-f05a3bfed2b6",
     "words": [
       "accept"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "accept: a schema.org component word, fused from AcceptAction",
-    "uuid": "5b976d93-925e-8551-bb21-b87bf69c420a",
+    "source": "Use when reasoning about accept as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "94352228-c085-82d5-a8bc-7fe3eff63354",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "accept",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "acceptaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "accept: a schema.org component word, fused from AcceptAction"
+      "en": "Use when reasoning about accept as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

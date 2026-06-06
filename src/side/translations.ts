@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "side",
-    "uuid": "f27e60fb-7167-808d-8a56-f522bf829523",
+    "uuid": "d4a39978-b213-8536-9a22-8c8868a03233",
     "words": [
       "side"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "side: a schema.org component word, fused from WPSideBar",
-    "uuid": "cb05c684-77db-8df3-b5fb-2b4d9142cd22",
+    "source": "Use when reasoning about side as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "bfeaf37a-6eb1-86ca-a50c-8ce6c1f79abd",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "side",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "wpsidebar"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "side: a schema.org component word, fused from WPSideBar"
+      "en": "Use when reasoning about side as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

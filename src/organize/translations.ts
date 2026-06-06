@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "organize",
-    "uuid": "5745ccbd-cc80-840a-ac90-d950cfc621f9",
+    "uuid": "89969462-290a-8c18-a595-95d3b0e5ed02",
     "words": [
       "organize"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "organize: a schema.org component word, fused from OrganizeAction",
-    "uuid": "0e7795ca-dd22-8651-a8ac-0a3b12df2e6f",
+    "source": "Use when reasoning about organize as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "bb242def-8659-817d-b02b-a84dace01495",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "organize",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "organizeaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "organize: a schema.org component word, fused from OrganizeAction"
+      "en": "Use when reasoning about organize as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

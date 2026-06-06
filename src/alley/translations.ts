@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "alley",
-    "uuid": "19de3c4e-18d7-8ade-892f-c3714ca190a8",
+    "uuid": "1e4cb938-0c1e-85a5-94cf-455b36f1a8a2",
     "words": [
       "alley"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "alley: a schema.org component word, fused from BowlingAlley",
-    "uuid": "932d2ded-31df-8593-8a47-be974746bd75",
+    "source": "Use when reasoning about alley as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "eccd1590-70cd-8451-a17e-e462d70452e9",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "alley",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "bowlingalley"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "alley: a schema.org component word, fused from BowlingAlley"
+      "en": "Use when reasoning about alley as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

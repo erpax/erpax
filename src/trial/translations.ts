@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "trial",
-    "uuid": "d07c11de-d397-8657-86ef-7a73f39810ef",
+    "uuid": "bd661690-5c9c-85fe-a52b-51442f224871",
     "words": [
       "trial"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "trial: a schema.org component word, fused from MedicalTrial, MedicalTrialDesign, trialDesign",
-    "uuid": "ca03f4e6-e40a-8848-a19a-55a53087cf36",
+    "source": "Use when reasoning about trial as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "39973b19-bcdf-8e6d-83c9-428dc229a98b",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "trial",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "medicaltrial",
-      "medicaltrialdesign",
-      "trialdesign"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "trial: a schema.org component word, fused from MedicalTrial, MedicalTrialDesign, trialDesign"
+      "en": "Use when reasoning about trial as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

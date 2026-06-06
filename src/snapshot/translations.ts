@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "snapshot",
-    "uuid": "f2a68145-38cb-842f-9f7d-598941f4961b",
+    "uuid": "63e55f02-ff14-8913-b307-299f7f9114ee",
     "words": [
       "snapshot"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "snapshot: a schema.org component word, fused from AudioObjectSnapshot, ImageObjectSnapshot, VideoObjectSnapshot",
-    "uuid": "7ddabebd-7709-8144-8673-6573d1ef810c",
+    "source": "Use when reasoning about snapshot as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "3d83d484-d5d5-86f1-ad4f-ef1b7f97b1d6",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "snapshot",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "audioobjectsnapshot",
-      "imageobjectsnapshot",
-      "videoobjectsnapshot"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "snapshot: a schema.org component word, fused from AudioObjectSnapshot, ImageObjectSnapshot, VideoObjectSnapshot"
+      "en": "Use when reasoning about snapshot as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "dietary",
-    "uuid": "1be743e4-790c-88f7-b4a9-cb2e1e25653b",
+    "uuid": "3f80f57a-dff9-8258-8301-212d6e1e7654",
     "words": [
       "dietary"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "dietary: a schema.org component word, fused from DietarySupplement",
-    "uuid": "8bea1015-21b1-89e7-bd50-b8380dd635b4",
+    "source": "Use when reasoning about dietary as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "2a2625f5-ad52-8b48-9f38-6f0f46b3e445",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "dietary",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "dietarysupplement"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "dietary: a schema.org component word, fused from DietarySupplement"
+      "en": "Use when reasoning about dietary as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

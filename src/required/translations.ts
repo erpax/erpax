@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "required",
-    "uuid": "dcda875f-0372-8f78-8125-dcd1e3b89e81",
+    "uuid": "48c00789-6703-8bb1-8dd7-6d27178951a0",
     "words": [
       "required"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "required: a schema.org component word, fused from competencyRequired, requiredCollateral, requiredGender, requiredMaxAge, requiredMinAge, requiredQuantity",
-    "uuid": "f31b8c3c-16e4-868a-b039-1a0a9c2e3dbb",
+    "source": "Use when reasoning about required as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "92705f9b-0281-8e75-b7d6-f85c6b6561af",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "required",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "competencyrequired",
-      "requiredcollateral",
-      "requiredgender",
-      "requiredmaxage",
-      "requiredminage",
-      "requiredquantity"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "required: a schema.org component word, fused from competencyRequired, requiredCollateral, requiredGender, requiredMaxAge, requiredMinAge, requiredQuantity"
+      "en": "Use when reasoning about required as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

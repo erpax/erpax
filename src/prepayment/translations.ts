@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "prepayment",
-    "uuid": "9c146395-c00f-838a-9bad-58197236b462",
+    "uuid": "20d51746-78e7-8d79-9d3a-53f141e1a1b8",
     "words": [
       "prepayment"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "prepayment: a schema.org component word, fused from earlyPrepaymentPenalty",
-    "uuid": "b5a934d5-4179-8843-aeb4-cfd5742057c2",
+    "source": "Use when reasoning about prepayment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "00f72cb7-66cc-8213-89d4-a0847be678b2",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "prepayment",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "earlyprepaymentpenalty"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "prepayment: a schema.org component word, fused from earlyPrepaymentPenalty"
+      "en": "Use when reasoning about prepayment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

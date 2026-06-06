@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "founding",
-    "uuid": "2de0d4aa-1799-86db-b8db-e1da1c3f35bf",
+    "uuid": "66684f37-854f-8181-8491-aab218df70fd",
     "words": [
       "founding"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "founding: a schema.org component word, fused from foundingDate, foundingLocation",
-    "uuid": "3bb32e69-f14d-8bcc-a43b-0fceaf1d999d",
+    "source": "Use when reasoning about founding as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "8a1140b2-5786-8ef6-a8f4-cc7391a891e8",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "founding",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "foundingdate",
-      "foundinglocation"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "founding: a schema.org component word, fused from foundingDate, foundingLocation"
+      "en": "Use when reasoning about founding as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

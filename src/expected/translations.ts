@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "expected",
-    "uuid": "383c160a-52d8-8c62-aad5-e4c780065702",
+    "uuid": "3e4d2879-9414-8e13-9505-b4cd8f24b7cc",
     "words": [
       "expected"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "expected: a schema.org component word, fused from expectedArrivalFrom, expectedArrivalUntil, expectedPrognosis",
-    "uuid": "310c7af5-1285-8274-a55a-9fbc9441fd05",
+    "source": "Use when reasoning about expected as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "663456f6-2221-8ef4-a4ad-091e220f7765",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "expected",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "expectedarrivalfrom",
-      "expectedarrivaluntil",
-      "expectedprognosis"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "expected: a schema.org component word, fused from expectedArrivalFrom, expectedArrivalUntil, expectedPrognosis"
+      "en": "Use when reasoning about expected as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,6 +7,25 @@ import { trinityHtml, trinityHead, skillDirOf } from './trinity.mts'
 // search ingest (scripts/ingest-corpus-to-search.ts) — DRY, no parallel walk.
 import { SKILLS_DIR, wikiMap, allSkills, routeOf, walk, norm, dualOf } from '../src/corpus/index.mts'
 
+// ── Heap budget for `docs:build` (the OOM note — MEASURED) ─────────────────
+// `vitepress build` holds every rendered SKILL.md page (≈2906 today) in V8's
+// old space during the bundle phase. The budget is set in package.json
+// `docs:build`: NODE_OPTIONS=--max-old-space-size=16000 (raised from 8000; the
+// flag must be a process arg, not a vitepress option, so it is NOT in this
+// config). `docs:dev` needs no flag (the dev server renders lazily).
+//
+// HONEST STATUS (measured 2026-06-06, node 26, 32GB host): the heap raise alone
+// does NOT make this build pass at the current corpus size — it OOMs at 16000
+// (~6.5 min) AND at 24000 (the practical ceiling on a 32GB box). The page count
+// has outgrown a single-pass V8 heap. So the chunked/per-section build (or a
+// vitepress/rolldown upgrade) is now a REQUIRED follow-up, not a speculative
+// one. Until that lands, `docs:build` is the one gate left UN-wired into
+// pre-push/CI on purpose: enabling it would fail-closed-block every push on a
+// build that cannot complete (a gate that blocks unrelated work, not just
+// regressions). The cheap matter-twin of the speech gate — aura (gap=0, dead
+// [[link]]s) — DOES run at pre-push and confirm:full and catches the same
+// dead-link class the build's `ignoreDeadLinks: false` (below) would.
+
 // ── The fractal skill tree IS the docs structure ──────────────────────────
 // VitePress's directory→sidebar→route mapping is the same path-as-address law
 // the skills follow, so the tree maps 1:1: folder→nav group, SKILL.md→page,

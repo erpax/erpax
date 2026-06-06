@@ -1,5 +1,5 @@
 ---
-name: notifications
+name: notification
 description: Use when the society speaks outward — fanning one message across email, in-app, webhook, and Slack from a single consent-gated, audited entry-point; binding domain events to delivery by a declarative subscription map.
 ---
 

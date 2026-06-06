@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "cafe",
-    "uuid": "6989c139-b31b-838b-87f3-4448f94d45a6",
+    "uuid": "860439e6-58e8-8f99-beb2-f0b9814a57b8",
     "words": [
       "cafe"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "cafe: a schema.org component word, fused from CafeOrCoffeeShop, InternetCafe",
-    "uuid": "fc9c5427-156a-8ab6-870d-c2d2bad3af79",
+    "source": "Use when reasoning about cafe as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "515882b8-3708-8920-a2f1-051b704bd6e0",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "cafe",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "cafeorcoffeeshop",
-      "internetcafe"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "cafe: a schema.org component word, fused from CafeOrCoffeeShop, InternetCafe"
+      "en": "Use when reasoning about cafe as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

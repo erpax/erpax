@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "accessible",
-    "uuid": "e1e67895-f8ff-8096-8fe8-a32a0ae47059",
+    "uuid": "e6ae8f1f-2872-8781-bb92-c9a9bfbe77b0",
     "words": [
       "accessible"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "accessible: a schema.org component word, fused from isAccessibleForFree",
-    "uuid": "efa3f423-dccc-8837-a9e9-bbe9b61f4d21",
+    "source": "Use when reasoning about accessible as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "d6e01975-606f-8cbe-abd5-b2f8c2c6e4ec",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "accessible",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "isaccessibleforfree"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "accessible: a schema.org component word, fused from isAccessibleForFree"
+      "en": "Use when reasoning about accessible as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "political",
-    "uuid": "8acb517a-a363-8bbb-8714-a338e7b8a879",
+    "uuid": "3413d025-f7cb-823d-9e8a-ee5592b051bf",
     "words": [
       "political"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "political: a schema.org component word, fused from PoliticalParty",
-    "uuid": "58f4d858-4eee-8c31-89c1-2e15c3eb51c5",
+    "source": "Use when reasoning about political as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "01ac23b4-4d15-83c0-a346-d2c2a42e61d8",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "political",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "politicalparty"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "political: a schema.org component word, fused from PoliticalParty"
+      "en": "Use when reasoning about political as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

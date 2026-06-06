@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "meeting",
-    "uuid": "9a758211-a8e8-80e2-8ec4-004a5fa20b9a",
+    "uuid": "5f4aec97-f419-818a-9050-815eb711abd2",
     "words": [
       "meeting"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "meeting: a schema.org component word, fused from MeetingRoom",
-    "uuid": "1d8c777f-17ee-8764-9dab-ef78a249690b",
+    "source": "Use when reasoning about meeting as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "83f5bf5d-ef31-8609-939e-687be0367c20",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "meeting",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "meetingroom"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "meeting: a schema.org component word, fused from MeetingRoom"
+      "en": "Use when reasoning about meeting as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

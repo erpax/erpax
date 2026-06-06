@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "communicate",
-    "uuid": "91200380-1d4d-85af-8c19-fc992d3717cc",
+    "uuid": "dede6cf1-3a85-85bf-86dc-b7a36b6b0503",
     "words": [
       "communicate"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "communicate: a schema.org component word, fused from CommunicateAction",
-    "uuid": "8b9f4ae9-6794-8a08-ae96-005e252011e6",
+    "uuid": "27e66fbb-de8a-83df-a399-2e38a99472b2",
     "words": [
       "communicate",
       "a",

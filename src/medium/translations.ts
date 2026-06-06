@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "medium",
-    "uuid": "1d656d2c-546d-8220-b015-7e9b1682e01d",
+    "uuid": "47421163-3d42-8fa7-994f-0b3fd6afa1cb",
     "words": [
       "medium"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "medium: a schema.org component word, fused from artMedium",
-    "uuid": "bdc7578d-7ae4-8400-b2c7-9bf77ba00912",
+    "source": "Use when reasoning about medium as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "8cfc92ea-9f16-8a0c-ad24-4935bbcfa83b",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "medium",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "artmedium"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "medium: a schema.org component word, fused from artMedium"
+      "en": "Use when reasoning about medium as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

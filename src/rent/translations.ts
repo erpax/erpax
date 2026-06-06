@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "rent",
-    "uuid": "ad39e6bc-e1d1-8896-895f-8d1480258662",
+    "uuid": "aecdaac1-5e87-8a92-b936-49914d0ada43",
     "words": [
       "rent"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "rent: a schema.org component word, fused from RentAction",
-    "uuid": "50e92413-a82c-8d50-8373-9ec90696d7b4",
+    "source": "Use when reasoning about rent as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "f3b95fd7-e15b-8ef2-bf88-f18e9818e350",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "rent",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "rentaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "rent: a schema.org component word, fused from RentAction"
+      "en": "Use when reasoning about rent as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

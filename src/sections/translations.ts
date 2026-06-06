@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "sections",
-    "uuid": "e8ed5e0f-dfb3-8eae-bbea-92a7dc11ca12",
+    "uuid": "8f2c139f-197e-8803-9470-1374cae0d30f",
     "words": [
       "sections"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "sections: a schema.org component word, fused from syllabusSections",
-    "uuid": "e05c316a-a569-87c6-b9ec-329335f3f8b6",
+    "source": "Use when reasoning about sections as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "3a311dc9-9770-8649-af8f-bd0cadd357de",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "sections",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "syllabussections"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "sections: a schema.org component word, fused from syllabusSections"
+      "en": "Use when reasoning about sections as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

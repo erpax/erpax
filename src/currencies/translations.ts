@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "currencies",
-    "uuid": "203709a9-87fb-89b2-8f05-93fa7e83f2f8",
+    "uuid": "32cb9160-bc9d-8a86-8d77-e75ec2ccfaa0",
     "words": [
       "currencies"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "currencies: a schema.org component word, fused from currenciesAccepted",
-    "uuid": "a3549754-4562-86d0-b39f-e517dba9cd69",
+    "source": "Use when reasoning about currencies as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "d0d8283e-0413-8551-b4c4-212ddb5e4bd9",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "currencies",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "currenciesaccepted"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "currencies: a schema.org component word, fused from currenciesAccepted"
+      "en": "Use when reasoning about currencies as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "case",
-    "uuid": "0707386f-dcdb-80f2-95de-588e6820dfb0",
+    "uuid": "1951ec1e-c6fd-83fc-b878-e93362c766eb",
     "words": [
       "case"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one case — the singular model of the cases collection (the plural store); one matter under adjudication or handling, with its parties and lifecycle.",
-    "uuid": "8ad85e36-3156-8602-8354-16714d028804",
+    "uuid": "e580a7eb-42be-8201-afcc-aee19cf090d8",
     "words": [
       "use",
       "when",

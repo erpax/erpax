@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "singularity",
-    "uuid": "80fdd035-7a17-8fd2-889f-8572fff64fef",
+    "uuid": "501e3aaf-f3d8-80a5-b18c-1716c46b7f50",
     "words": [
       "singularity"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the gravity well where the corpus collapses to one center — the maximally-entangled atom as a trapped surface, the double-torus closing to infinite tamper cost (the event horizon), perfect DRY.",
-    "uuid": "b09b9326-174e-8ff1-8c15-0fc3997fba4c",
+    "uuid": "c73074b5-0517-86b9-88a9-801134abc783",
     "words": [
       "use",
       "when",

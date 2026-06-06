@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "worker",
-    "uuid": "d20c295e-b5e8-8dd6-8536-7ecbe9a83878",
+    "uuid": "428a4c23-72fd-8b99-9dbd-8433f23ae48b",
     "words": [
       "worker"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one worker — the singular model of the workers collection (the plural store); a person who performs labor for the organization.",
-    "uuid": "1d838ee1-4c4f-8cfb-ad94-8703bdc32450",
+    "uuid": "65698902-8498-884a-8e4c-649a7dbbe594",
     "words": [
       "use",
       "when",

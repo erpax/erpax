@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "edit",
-    "uuid": "2655e784-445e-8a26-9bcf-c97e8d455073",
+    "uuid": "695f6041-2500-88e9-9d0a-cbcac2ddb516",
     "words": [
       "edit"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "edit: a schema.org component word, fused from editEIDR",
-    "uuid": "f64517a2-6fa1-8dff-9d7d-79672a6a65e3",
+    "source": "Use when reasoning about edit as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "7ad4e5ea-ca4d-8328-8b3c-abd3178628ae",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "edit",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "editeidr"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "edit: a schema.org component word, fused from editEIDR"
+      "en": "Use when reasoning about edit as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

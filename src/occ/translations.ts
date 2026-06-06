@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "occ",
-    "uuid": "755de445-e669-8ef6-9fa5-4332e7e8b0ea",
+    "uuid": "8d2f33d3-de67-8ee1-90d5-3b51c615cc42",
     "words": [
       "occ"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "occ: a schema.org component word, fused from cvdNumBedsOcc, cvdNumICUBedsOcc",
-    "uuid": "1a10aa2b-4110-85a3-a4ba-d90b383769ae",
+    "source": "Use when reasoning about occ as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "d8baaf35-fdc3-840f-9009-e9faf491e9e4",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "occ",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "cvdnumbedsocc",
-      "cvdnumicubedsocc"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "occ: a schema.org component word, fused from cvdNumBedsOcc, cvdNumICUBedsOcc"
+      "en": "Use when reasoning about occ as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

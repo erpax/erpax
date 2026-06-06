@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "alignment",
-    "uuid": "b231b004-e521-8fce-83eb-4152d526da2d",
+    "uuid": "2fb4cc40-07aa-834d-b51b-116a784af341",
     "words": [
       "alignment"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "alignment: a schema.org component word, fused from AlignmentObject, alignmentType, educationalAlignment",
-    "uuid": "0888c385-8110-8874-ba53-739c464a71c4",
+    "source": "Use when reasoning about alignment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "59372da3-021b-8f26-aef9-e83f878be141",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "alignment",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "alignmentobject",
-      "alignmenttype",
-      "educationalalignment"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "alignment: a schema.org component word, fused from AlignmentObject, alignmentType, educationalAlignment"
+      "en": "Use when reasoning about alignment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

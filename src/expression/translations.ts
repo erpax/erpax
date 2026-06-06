@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "expression",
-    "uuid": "cec88ab3-d2f8-873a-827e-0392e35215dd",
+    "uuid": "3159e20c-698a-8376-b359-d66b3604093c",
     "words": [
       "expression"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "expression: a schema.org component word, fused from mathExpression",
-    "uuid": "7a7a1277-5475-830f-b21f-003a28ebde5b",
+    "source": "Use when reasoning about expression as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "4138b0e3-0949-883c-bec1-c3df36f9ef6d",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "expression",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "mathexpression"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "expression: a schema.org component word, fused from mathExpression"
+      "en": "Use when reasoning about expression as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

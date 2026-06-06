@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "trade",
-    "uuid": "3181704e-582d-8db6-be67-7fc5beccecf2",
+    "uuid": "36d44fbf-a602-82d7-a22e-8086cad633c3",
     "words": [
       "trade"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "trade: a schema.org component word, fused from TradeAction",
-    "uuid": "29055044-ec15-8f96-b6a3-25858ef3f43b",
+    "source": "Use when reasoning about trade as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "9fb4dd44-67aa-8ce6-a3d9-46c410fbbc73",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "trade",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "tradeaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "trade: a schema.org component word, fused from TradeAction"
+      "en": "Use when reasoning about trade as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

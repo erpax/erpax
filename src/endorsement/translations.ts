@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "endorsement",
-    "uuid": "724fb8f0-0939-8e65-bd89-a97554204a6e",
+    "uuid": "94f29161-677a-87f5-ab2b-e7b7b69cc6fb",
     "words": [
       "endorsement"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "endorsement: a schema.org component word, fused from EndorsementRating",
-    "uuid": "0861f4e8-29a4-8ec4-83b6-5bafe741c74a",
+    "source": "Use when reasoning about endorsement as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "a61d2097-b823-8d26-916c-eb9d0d34dd6f",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "endorsement",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "endorsementrating"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "endorsement: a schema.org component word, fused from EndorsementRating"
+      "en": "Use when reasoning about endorsement as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

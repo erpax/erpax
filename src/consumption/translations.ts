@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "consumption",
-    "uuid": "9b3ff8ee-b091-825f-8657-ddab1049485f",
+    "uuid": "740291a7-9381-8bb6-8649-4185d461764f",
     "words": [
       "consumption"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "consumption: a schema.org component word, fused from EnergyConsumptionDetails, fuelConsumption, hasEnergyConsumptionDetails",
-    "uuid": "716662d0-eee4-829c-aee0-1a45a6435e57",
+    "source": "Use when reasoning about consumption as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "1f734d7f-1cb4-8cb1-b222-f636cc3d8ca5",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "consumption",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "energyconsumptiondetails",
-      "fuelconsumption",
-      "hasenergyconsumptiondetails"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "consumption: a schema.org component word, fused from EnergyConsumptionDetails, fuelConsumption, hasEnergyConsumptionDetails"
+      "en": "Use when reasoning about consumption as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "ineligible",
-    "uuid": "e939b29c-a1ed-8df8-8243-5516e1a0894d",
+    "uuid": "3b111d1d-8875-86c1-b0fd-85c6aeb011d2",
     "words": [
       "ineligible"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "ineligible: a schema.org component word, fused from ineligibleRegion",
-    "uuid": "0c89bd04-26be-86ef-9a3a-401bfbd42d51",
+    "source": "Use when reasoning about ineligible as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "9e92cf6d-8f45-8b0d-8417-0ab08cb21dc1",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "ineligible",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "ineligibleregion"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "ineligible: a schema.org component word, fused from ineligibleRegion"
+      "en": "Use when reasoning about ineligible as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

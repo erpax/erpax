@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "geospatial",
-    "uuid": "3f713465-6389-897a-a6a8-dd7d62e6b462",
+    "uuid": "7ecc1c4c-1d46-8450-8e1c-5b31f7592b4a",
     "words": [
       "geospatial"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "geospatial: a schema.org component word, fused from GeospatialGeometry",
-    "uuid": "035fc161-84c2-8928-9bb7-c50b353bc7ed",
+    "source": "Use when reasoning about geospatial as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "ca1c6d9b-a34c-85c6-a7d4-4dcab0a27cf2",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "geospatial",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "geospatialgeometry"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "geospatial: a schema.org component word, fused from GeospatialGeometry"
+      "en": "Use when reasoning about geospatial as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

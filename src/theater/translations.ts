@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "theater",
-    "uuid": "3792d006-d135-8691-a7f1-19dca2957d31",
+    "uuid": "701c2f67-e6b1-88a1-ae91-010499250222",
     "words": [
       "theater"
     ],
@@ -17,24 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "theater: a schema.org component word, fused from MovieTheater, PerformingArtsTheater, TheaterEvent, TheaterGroup",
-    "uuid": "dee2e79c-aa8d-8257-bbd1-c26aa3a1b6c1",
+    "source": "Use when reasoning about theater as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "72e64fea-696b-81d6-8462-561afccaaa10",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "theater",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "movietheater",
-      "performingartstheater",
-      "theaterevent",
-      "theatergroup"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "theater: a schema.org component word, fused from MovieTheater, PerformingArtsTheater, TheaterEvent, TheaterGroup"
+      "en": "Use when reasoning about theater as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

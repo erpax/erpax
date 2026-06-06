@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "max",
-    "uuid": "8ccf9ddc-e672-8a58-a175-c1f52fc49ae1",
+    "uuid": "e43ef302-a45c-8dbf-b8f9-900763f8cdd9",
     "words": [
       "max"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "max: a schema.org component word, fused from childMaxAge, energyEfficiencyScaleMax, maxPrice, maxValue, requiredMaxAge, suggestedMaxAge",
-    "uuid": "653d7419-6f1b-8484-a9df-1cef1f2b1c0e",
+    "source": "Use when reasoning about max as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "c6b2191f-6305-8322-b8ac-a4c920455239",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "max",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "childmaxage",
-      "energyefficiencyscalemax",
-      "maxprice",
-      "maxvalue",
-      "requiredmaxage",
-      "suggestedmaxage"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "max: a schema.org component word, fused from childMaxAge, energyEfficiencyScaleMax, maxPrice, maxValue, requiredMaxAge, suggestedMaxAge"
+      "en": "Use when reasoning about max as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

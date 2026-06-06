@@ -1,5 +1,5 @@
 ---
-name: risk-register
+name: risk-registers
 description: Use when cataloguing enterprise risks per legal entity — inherent and residual likelihood/impact scoring (COSO/ISO-31000), mitigating internal controls, risk appetite assessment, next-assessment scheduling, linked audit findings. The COSO ERM risk register.
 ---
 

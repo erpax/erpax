@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "sheet",
-    "uuid": "c1ae6119-addd-8434-b5ef-947d67bab01b",
+    "uuid": "1276409e-f003-8d85-968b-3af330dfb7b2",
     "words": [
       "sheet"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "sheet: a schema.org component word, fused from SheetMusic",
-    "uuid": "38975b55-a89d-8355-b588-4bf0b1ce1be8",
+    "source": "Use when reasoning about sheet as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "0c84a953-becd-88cb-acc9-edbb023f0b17",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "sheet",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "sheetmusic"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "sheet: a schema.org component word, fused from SheetMusic"
+      "en": "Use when reasoning about sheet as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

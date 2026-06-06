@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "saturated",
-    "uuid": "e5611c3b-1ab5-8e62-a9e2-25d0081f69c8",
+    "uuid": "ae8ef0ca-e94e-86f2-9298-b10ce3365e07",
     "words": [
       "saturated"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "saturated: a schema.org component word, fused from saturatedFatContent",
-    "uuid": "e3b3703d-64e2-8dd9-afa1-77bc95411b7f",
+    "source": "Use when reasoning about saturated as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "109b38d4-8ca0-8605-b974-41452d9832a5",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "saturated",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "saturatedfatcontent"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "saturated: a schema.org component word, fused from saturatedFatContent"
+      "en": "Use when reasoning about saturated as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

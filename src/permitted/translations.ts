@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "permitted",
-    "uuid": "817884fe-29c5-8d8d-b4bc-1c13bd8ca914",
+    "uuid": "d01b11bb-398e-81aa-b57d-530bd664e619",
     "words": [
       "permitted"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "permitted: a schema.org component word, fused from permittedUsage",
-    "uuid": "798675e6-638d-83d0-8ffa-1500198fa89d",
+    "source": "Use when reasoning about permitted as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "d4114e08-e076-8c56-9b07-a653a8f48756",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "permitted",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "permittedusage"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "permitted: a schema.org component word, fused from permittedUsage"
+      "en": "Use when reasoning about permitted as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

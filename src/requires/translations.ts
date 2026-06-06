@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "requires",
-    "uuid": "634477b0-8884-86d2-ab77-96dcf132d84c",
+    "uuid": "768b3fc9-34f7-8e56-8144-d8876657bdf9",
     "words": [
       "requires"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "requires: a schema.org component word, fused from requiresSubscription",
-    "uuid": "ffb85912-bbbc-8311-af02-7e8286670e5b",
+    "source": "Use when reasoning about requires as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "8e6eb2eb-3b6c-8078-b09e-918677aa337f",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "requires",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "requiressubscription"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "requires: a schema.org component word, fused from requiresSubscription"
+      "en": "Use when reasoning about requires as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

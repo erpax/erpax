@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "toc",
-    "uuid": "37c10623-c6e4-8b97-b86a-55f16675b06b",
+    "uuid": "56aa9b4e-690c-8bbe-b210-55269d628674",
     "words": [
       "toc"
     ],
@@ -17,24 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "toc: a schema.org component word, fused from HyperToc, HyperTocEntry, tocContinuation, tocEntry",
-    "uuid": "9bbf586f-c286-862c-adf4-37ce44b2afef",
+    "source": "Use when reasoning about toc as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "54bbdbfa-c2aa-8e15-a672-95582a54e18b",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "toc",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "hypertoc",
-      "hypertocentry",
-      "toccontinuation",
-      "tocentry"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "toc: a schema.org component word, fused from HyperToc, HyperTocEntry, tocContinuation, tocEntry"
+      "en": "Use when reasoning about toc as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "physical",
-    "uuid": "34cc418a-e023-8a57-b183-b81cc2e97743",
+    "uuid": "62dc3dab-16c4-8bc9-a9f0-b99ce33d46b3",
     "words": [
       "physical"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "physical: a schema.org component word, fused from PhysicalActivity, PhysicalActivityCategory, PhysicalExam, PhysicalTherapy, maximumPhysicalAttendeeCapacity, physicalRequirement",
-    "uuid": "10fb319b-7877-89d8-8e10-2c08a1dd11fa",
+    "source": "Use when reasoning about physical as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "44dd9b5e-3401-8415-b17b-a0364785799e",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "physical",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "physicalactivity",
-      "physicalactivitycategory",
-      "physicalexam",
-      "physicaltherapy",
-      "maximumphysicalattendeecapacity",
-      "physicalrequirement"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "physical: a schema.org component word, fused from PhysicalActivity, PhysicalActivityCategory, PhysicalExam, PhysicalTherapy, maximumPhysicalAttendeeCapacity, physicalRequirement"
+      "en": "Use when reasoning about physical as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

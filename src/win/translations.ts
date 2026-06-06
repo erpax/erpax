@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "win",
-    "uuid": "25c5ab78-5cdc-8ab4-bbc3-128c6bb0048b",
+    "uuid": "9291f71d-db32-8aa0-8998-ad0af1006f74",
     "words": [
       "win"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "win: a schema.org component word, fused from WinAction",
-    "uuid": "6318d030-ab61-8dd2-a26d-5c51ffccc64a",
+    "source": "Use when reasoning about win as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "bd77019e-027f-8bb1-a4f4-e7eebf4369d1",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "win",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "winaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "win: a schema.org component word, fused from WinAction"
+      "en": "Use when reasoning about win as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

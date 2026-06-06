@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "plugin",
-    "uuid": "780db5e7-4afa-86ca-b8e7-68e966acbcf1",
+    "uuid": "b2fb9284-ac96-8df7-8c9b-fcc82baad032",
     "words": [
       "plugin"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one plugin — the singular model of the plugins collection (the plural store); a self-contained module that extends the platform.",
-    "uuid": "ac79b50e-5fb5-8f72-969c-02af18907ec6",
+    "uuid": "22388e93-420f-875b-95d5-6dad3549f3aa",
     "words": [
       "use",
       "when",

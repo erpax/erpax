@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "user",
-    "uuid": "d75136c6-8c58-8a33-a818-a1a7949b26eb",
+    "uuid": "70e970f7-2f54-885c-aafd-540c190a16c9",
     "words": [
       "user"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "user: a schema.org component word, fused from UserBlocks, UserCheckins, UserComments, UserDownloads, UserInteraction, UserLikes",
-    "uuid": "710b68cb-6d0a-8220-9fd1-a4d724c4dce6",
+    "source": "Use when reasoning about user as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "c3a41d58-9321-8bcd-a8db-2783ee96d83a",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "user",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "userblocks",
-      "usercheckins",
-      "usercomments",
-      "userdownloads",
-      "userinteraction",
-      "userlikes"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "user: a schema.org component word, fused from UserBlocks, UserCheckins, UserComments, UserDownloads, UserInteraction, UserLikes"
+      "en": "Use when reasoning about user as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

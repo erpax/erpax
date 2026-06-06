@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "entity",
-    "uuid": "baae41cd-0195-8517-b746-caa6186be238",
+    "uuid": "bb3b702b-1730-874f-89ec-66fbe1c67698",
     "words": [
       "entity"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "entity: a schema.org component word, fused from BioChemEntity, BusinessEntityType, MedicalEntity, MolecularEntity, encodesBioChemEntity, hasBioChemEntityPart",
-    "uuid": "39354164-c0a7-8e90-b53d-baa84c2a04ce",
+    "source": "Use when reasoning about entity as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "fa870462-ab36-8814-ad34-09f6c959b90b",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "entity",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "biochementity",
-      "businessentitytype",
-      "medicalentity",
-      "molecularentity",
-      "encodesbiochementity",
-      "hasbiochementitypart"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "entity: a schema.org component word, fused from BioChemEntity, BusinessEntityType, MedicalEntity, MolecularEntity, encodesBioChemEntity, hasBioChemEntityPart"
+      "en": "Use when reasoning about entity as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

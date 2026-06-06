@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "provides",
-    "uuid": "4f4e7f4a-53d3-86cf-ae52-7b667ef04546",
+    "uuid": "814b0134-63e4-83d2-95ff-7442b651d5b5",
     "words": [
       "provides"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "provides: a schema.org component word, fused from providesBroadcastService, providesService",
-    "uuid": "e3b7e8af-4f6e-8fff-a857-8b00e9583d8a",
+    "source": "Use when reasoning about provides as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "a2ae5f3d-c097-8d92-a518-44c00b2c5ec7",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "provides",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "providesbroadcastservice",
-      "providesservice"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "provides: a schema.org component word, fused from providesBroadcastService, providesService"
+      "en": "Use when reasoning about provides as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

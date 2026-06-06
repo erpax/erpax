@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "imaging",
-    "uuid": "9e1df67c-6e86-8844-820f-67a83fc4fbc7",
+    "uuid": "35eaf5ee-bdad-83a2-8b72-249600a61280",
     "words": [
       "imaging"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "imaging: a schema.org component word, fused from ImagingTest, MedicalImagingTechnique, imagingTechnique",
-    "uuid": "32f1ce63-3d19-8a67-8f0e-ce85f5d0ecb7",
+    "source": "Use when reasoning about imaging as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "6d693f71-6f68-8cae-a905-7c1bf225af5e",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "imaging",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "imagingtest",
-      "medicalimagingtechnique",
-      "imagingtechnique"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "imaging: a schema.org component word, fused from ImagingTest, MedicalImagingTechnique, imagingTechnique"
+      "en": "Use when reasoning about imaging as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

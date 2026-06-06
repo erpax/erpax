@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "outlet",
-    "uuid": "884c04b4-e504-8396-be80-a9bffc4298f7",
+    "uuid": "97f70e10-e829-8632-9341-70ebe0e6264a",
     "words": [
       "outlet"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "outlet: a schema.org component word, fused from OutletStore",
-    "uuid": "dd503c27-4ff6-837a-aace-b8b1d32c998a",
+    "source": "Use when reasoning about outlet as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "2482f6a7-304d-8832-a678-c15e847233fd",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "outlet",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "outletstore"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "outlet: a schema.org component word, fused from OutletStore"
+      "en": "Use when reasoning about outlet as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

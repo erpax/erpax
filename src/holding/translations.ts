@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "holding",
-    "uuid": "7332205e-5b6d-8de8-be54-08b5743bf64b",
+    "uuid": "ab7e4f9c-91c3-808e-a9d8-37a1059b0032",
     "words": [
       "holding"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "holding: a schema.org component word, fused from holdingArchive",
-    "uuid": "37439afc-ad99-83c9-be7f-ad5d10209ef0",
+    "source": "Use when reasoning about holding as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "bafa33db-e2c7-8ad9-bd6b-de53c413d2c7",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "holding",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "holdingarchive"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "holding: a schema.org component word, fused from holdingArchive"
+      "en": "Use when reasoning about holding as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

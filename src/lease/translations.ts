@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "lease",
-    "uuid": "322aed1b-4432-81ff-9862-5f4ecb6173ef",
+    "uuid": "f307c62c-953e-8a57-bfdd-2686a04d0763",
     "words": [
       "lease"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "lease: a schema.org component word, fused from OfferForLease, leaseLength",
-    "uuid": "3c7fcf93-ef05-8162-b0f9-41bb61be8aa2",
+    "source": "Use when reasoning about lease as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "3d7a6c1d-5853-813c-9d94-4beb700c7580",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "lease",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "offerforlease",
-      "leaselength"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "lease: a schema.org component word, fused from OfferForLease, leaseLength"
+      "en": "Use when reasoning about lease as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

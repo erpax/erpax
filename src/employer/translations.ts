@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "employer",
-    "uuid": "66c3bf9e-1b37-882a-bd6a-612b67d0778c",
+    "uuid": "65a67077-07c5-84b0-94d7-9f50752139fa",
     "words": [
       "employer"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "employer: a schema.org component word, fused from EmployerAggregateRating, EmployerReview, employerOverview",
-    "uuid": "ab584aaf-46bf-8d3d-888d-32c48653ad84",
+    "source": "Use when reasoning about employer as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "effb1e2f-ae32-8bdd-b468-ab23511f541b",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "employer",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "employeraggregaterating",
-      "employerreview",
-      "employeroverview"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "employer: a schema.org component word, fused from EmployerAggregateRating, EmployerReview, employerOverview"
+      "en": "Use when reasoning about employer as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

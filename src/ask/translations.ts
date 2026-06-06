@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "ask",
-    "uuid": "6aa15d5f-4816-80f2-8bca-bbce0331c969",
+    "uuid": "4e299202-a6fd-89c3-9b0f-b8b2eec5c3b6",
     "words": [
       "ask"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "ask: a schema.org component word, fused from AskAction, AskPublicNewsArticle",
-    "uuid": "9ee6a8fb-f5f1-8863-9fec-d4b80e863ef0",
+    "source": "Use when reasoning about ask as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "2f8cd68b-b50b-852d-8343-04ac4a4640b2",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "ask",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "askaction",
-      "askpublicnewsarticle"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "ask: a schema.org component word, fused from AskAction, AskPublicNewsArticle"
+      "en": "Use when reasoning about ask as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

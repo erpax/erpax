@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "outcome",
-    "uuid": "3f4e35d4-7558-8335-8dad-44039f712935",
+    "uuid": "be763025-d6be-81b2-8558-17e785355f7c",
     "words": [
       "outcome"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "outcome: a schema.org component word, fused from adverseOutcome, seriousAdverseOutcome",
-    "uuid": "9e6e0f7c-be2a-86a1-ad0e-27f95af6ac59",
+    "source": "Use when reasoning about outcome as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "66009805-73c6-8cdb-95d8-6de8bf0831dc",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "outcome",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "adverseoutcome",
-      "seriousadverseoutcome"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "outcome: a schema.org component word, fused from adverseOutcome, seriousAdverseOutcome"
+      "en": "Use when reasoning about outcome as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

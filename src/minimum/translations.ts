@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "minimum",
-    "uuid": "15acff8b-7bd6-8ef8-9bde-a2959cb21674",
+    "uuid": "20f0f589-5c23-8201-8166-6bd2ea422c48",
     "words": [
       "minimum"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "minimum: a schema.org component word, fused from accountMinimumInflow, minimumPaymentDue, monthlyMinimumRepaymentAmount",
-    "uuid": "c2090fc8-ef30-8f27-a07b-5f262d64adf3",
+    "source": "Use when reasoning about minimum as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "56de8f8c-c312-8688-aeb2-3871cdfa98cd",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "minimum",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "accountminimuminflow",
-      "minimumpaymentdue",
-      "monthlyminimumrepaymentamount"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "minimum: a schema.org component word, fused from accountMinimumInflow, minimumPaymentDue, monthlyMinimumRepaymentAmount"
+      "en": "Use when reasoning about minimum as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

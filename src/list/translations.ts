@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "list",
-    "uuid": "70038ad5-e6ca-8d30-bec8-ef4aaeb87fd2",
+    "uuid": "76f41c53-81b9-856c-920c-7a8bdac59e1e",
     "words": [
       "list"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "list: a schema.org component word, fused from BreadcrumbList, ItemList, ItemListOrderType, ListItem, featureList, itemListElement",
-    "uuid": "570675c1-4d4e-8589-ab14-1e41c8335a4e",
+    "source": "Use when reasoning about list as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "7108ea92-ab50-8eee-959f-cb2e527e4945",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "list",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "breadcrumblist",
-      "itemlist",
-      "itemlistordertype",
-      "listitem",
-      "featurelist",
-      "itemlistelement"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "list: a schema.org component word, fused from BreadcrumbList, ItemList, ItemListOrderType, ListItem, featureList, itemListElement"
+      "en": "Use when reasoning about list as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

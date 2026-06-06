@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "roof",
-    "uuid": "d95c22d9-88a9-8a4b-9189-17c586b15efa",
+    "uuid": "8ddd83fc-dcdb-8134-9e8b-92caef54d644",
     "words": [
       "roof"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "roof: a schema.org component word, fused from roofLoad",
-    "uuid": "c21ece63-8426-835f-8615-5ebf2e834a5e",
+    "source": "Use when reasoning about roof as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "56bdd1b1-b5eb-8fa8-8475-a26b1b3f633f",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "roof",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "roofload"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "roof: a schema.org component word, fused from roofLoad"
+      "en": "Use when reasoning about roof as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

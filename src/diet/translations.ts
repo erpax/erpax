@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "diet",
-    "uuid": "9526a2dc-789d-825e-aa38-9de91afb857d",
+    "uuid": "052faa5a-2aad-8127-a192-95790fdd36d4",
     "words": [
       "diet"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "A strategy of regulating the intake of food to achieve or maintain a specific health-related goal.",
-    "uuid": "7ee918bc-1568-8c52-a5c4-54dcc1324966",
+    "uuid": "7a1ad228-06f5-839c-ac5b-703f80df5482",
     "words": [
       "a",
       "strategy",

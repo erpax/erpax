@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "system",
-    "uuid": "15e57e0f-e4dc-80a3-955f-84451293ad04",
+    "uuid": "638f38cb-d832-88f8-9c74-9df87732e7bf",
     "words": [
       "system"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "system: a schema.org component word, fused from AnatomicalSystem, LibrarySystem, MedicineSystem, OperatingSystem, SizeSystemEnumeration, WearableSizeSystemEnumeration",
-    "uuid": "9d8902e6-540a-82d1-b425-f2b80c4def2b",
+    "source": "Use when reasoning about system as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "953b8a05-e667-8e29-ba83-813e865c02d0",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "system",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "anatomicalsystem",
-      "librarysystem",
-      "medicinesystem",
-      "operatingsystem",
-      "sizesystemenumeration",
-      "wearablesizesystemenumeration"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "system: a schema.org component word, fused from AnatomicalSystem, LibrarySystem, MedicineSystem, OperatingSystem, SizeSystemEnumeration, WearableSizeSystemEnumeration"
+      "en": "Use when reasoning about system as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

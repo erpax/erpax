@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "fact",
-    "uuid": "d9322d00-14b1-8892-bd6c-fffc1902e1c7",
+    "uuid": "9a1d9ad4-74ef-8781-93ba-bacd151e5892",
     "words": [
       "fact"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "fact: a schema.org component word, fused from verificationFactCheckingPolicy",
-    "uuid": "adbf95ac-8a50-8985-97f1-e8e84224d3e1",
+    "source": "Use when reasoning about fact as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "c20f9ea4-3697-87e5-bbcc-3831e96f3826",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "fact",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "verificationfactcheckingpolicy"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "fact: a schema.org component word, fused from verificationFactCheckingPolicy"
+      "en": "Use when reasoning about fact as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

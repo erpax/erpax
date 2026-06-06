@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "recourse",
-    "uuid": "88af7219-b522-8a9c-890b-e48948e3382b",
+    "uuid": "42680b66-06a1-82c4-b888-05f5329ac745",
     "words": [
       "recourse"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "recourse: a schema.org component word, fused from recourseLoan",
-    "uuid": "d51ed944-8c74-8b5b-8100-de3a28724ec8",
+    "source": "Use when reasoning about recourse as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "60ab0d2f-45b6-8321-99af-ff4b154bb28f",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "recourse",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "recourseloan"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "recourse: a schema.org component word, fused from recourseLoan"
+      "en": "Use when reasoning about recourse as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

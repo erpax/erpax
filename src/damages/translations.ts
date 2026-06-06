@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "damages",
-    "uuid": "0900b2e0-9909-8272-abb1-817591af583b",
+    "uuid": "92bec025-ab35-8ed8-8c9e-38bad155af85",
     "words": [
       "damages"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "damages: a schema.org component word, fused from knownVehicleDamages",
-    "uuid": "71a6283e-5dc1-8891-9c25-16558527798e",
+    "source": "Use when reasoning about damages as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "2fce7814-a6c4-8661-b61e-655a396e3f39",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "damages",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "knownvehicledamages"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "damages: a schema.org component word, fused from knownVehicleDamages"
+      "en": "Use when reasoning about damages as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

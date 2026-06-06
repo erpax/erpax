@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "pay",
-    "uuid": "8a9e25fb-bb10-88bb-b4cc-f1f006a39e25",
+    "uuid": "1ad98d6f-cc5a-88e7-ac92-c2927c19e65d",
     "words": [
       "pay"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "pay: a schema.org component word, fused from PayAction",
-    "uuid": "d7b40055-637f-852e-9f85-bf6ba656e7ba",
+    "source": "Use when reasoning about pay as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "0b3a470e-3bee-8657-9f29-a8b26620aa65",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "pay",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "payaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "pay: a schema.org component word, fused from PayAction"
+      "en": "Use when reasoning about pay as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

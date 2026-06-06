@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "axles",
-    "uuid": "a08a4b6e-8a9c-8a7e-8235-670ae50e512d",
+    "uuid": "0f98c8a7-77ad-8308-85ca-d7d153478f55",
     "words": [
       "axles"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "axles: a schema.org component word, fused from numberOfAxles",
-    "uuid": "0ecf0deb-d680-8e22-b1e1-2ef4bf02bfed",
+    "source": "Use when reasoning about axles as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "c3cefceb-f5a8-8e97-8fc2-48567f9d32e4",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "axles",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "numberofaxles"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "axles: a schema.org component word, fused from numberOfAxles"
+      "en": "Use when reasoning about axles as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

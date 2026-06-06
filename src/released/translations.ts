@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "released",
-    "uuid": "5908241d-3229-85ae-8110-ee9e88f00ee1",
+    "uuid": "79ef5067-96ab-8a93-9a94-a24232e40616",
     "words": [
       "released"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "released: a schema.org component word, fused from releasedEvent",
-    "uuid": "d66576bc-d094-80ed-80bd-c4a7fe7825eb",
+    "source": "Use when reasoning about released as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "c0c5cf34-cd3f-8f6b-838e-b2a1f0330abc",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "released",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "releasedevent"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "released: a schema.org component word, fused from releasedEvent"
+      "en": "Use when reasoning about released as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "shape",
-    "uuid": "5c875c6c-8abb-8364-9fd1-a39529db5164",
+    "uuid": "3f863f76-65e3-87c4-ae84-d84037f2ed03",
     "words": [
       "shape"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "shape: a schema.org component word, fused from GeoShape",
-    "uuid": "8e5e1783-9a7c-8c3f-8b99-bd46215dd64b",
+    "source": "Use when reasoning about shape as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "d478d4f6-a92f-8e8d-abc7-8ac39440f0f3",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "shape",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "geoshape"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "shape: a schema.org component word, fused from GeoShape"
+      "en": "Use when reasoning about shape as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

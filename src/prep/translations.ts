@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "prep",
-    "uuid": "1d80c4bb-ce43-88ad-bc41-86843f92e151",
+    "uuid": "f32b7fb9-d17e-86e2-baf3-064d566b6eeb",
     "words": [
       "prep"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "prep: a schema.org component word, fused from prepTime",
-    "uuid": "7fbe3835-7336-88b5-88a4-88a590511810",
+    "source": "Use when reasoning about prep as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "2a84db16-30c7-8f48-b2aa-7e2f7003d013",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "prep",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "preptime"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "prep: a schema.org component word, fused from prepTime"
+      "en": "Use when reasoning about prep as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "life",
-    "uuid": "05221d1e-1584-87ca-8db2-42eb9e36bd2f",
+    "uuid": "134baa70-fed0-880a-bbec-454c8121c04a",
     "words": [
       "life"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "life: a schema.org component word, fused from lifeEvent",
-    "uuid": "b53e9b69-b93c-88ae-9f96-86f97e8f95a2",
+    "source": "Use when reasoning about life as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "6c8b226c-6260-875d-9254-30b14f9639da",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "life",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "lifeevent"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "life: a schema.org component word, fused from lifeEvent"
+      "en": "Use when reasoning about life as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

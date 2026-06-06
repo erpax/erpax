@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "screening",
-    "uuid": "fcabd8f3-332c-8fd7-92b5-9f04b44f3ab7",
+    "uuid": "bbaf7ba9-91c5-8317-96eb-ccd5c09d89af",
     "words": [
       "screening"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "screening: a schema.org component word, fused from ScreeningEvent, securityScreening",
-    "uuid": "d959978a-0de3-8565-92d7-b59bb3ce6e97",
+    "source": "Use when reasoning about screening as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "58e1bce0-d03f-8ea0-8736-0240017d8328",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "screening",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "screeningevent",
-      "securityscreening"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "screening: a schema.org component word, fused from ScreeningEvent, securityScreening"
+      "en": "Use when reasoning about screening as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

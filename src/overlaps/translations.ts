@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "overlaps",
-    "uuid": "a432b7aa-05c3-8fbc-96b6-8bd7cabdf7e8",
+    "uuid": "d719fb95-cc5c-8376-b65b-d44404ca501b",
     "words": [
       "overlaps"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "overlaps: a schema.org component word, fused from geoOverlaps",
-    "uuid": "1fbdc0a0-44ed-8284-b2eb-8d76603ecd4f",
+    "source": "Use when reasoning about overlaps as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "61931b54-32bd-8869-b313-444b033e4aa9",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "overlaps",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "geooverlaps"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "overlaps: a schema.org component word, fused from geoOverlaps"
+      "en": "Use when reasoning about overlaps as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

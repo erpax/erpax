@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "irrigation",
-    "uuid": "cd990625-7498-8b1a-9671-44a45394e600",
+    "uuid": "d7857ec9-719b-8e71-beb9-6e292cf813d6",
     "words": [
       "irrigation"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when water is supplied to a crop on a managed schedule — drip/trickle vs overhead application, fertigation (fertilizer through the line), and evapotranspiration-based scheduling (the water budget). Irrigation credits the soil-water reservoir that evapotranspiration debits; schedule it like a checkbook — replace the deficit before the crop hits stress.",
-    "uuid": "d3566dd1-4720-81cc-9d87-b0fbd630c7ce",
+    "uuid": "37c50233-f1c8-8d2f-8f40-0c139fc892a3",
     "words": [
       "use",
       "when",

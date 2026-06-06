@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "night",
-    "uuid": "8ff66a1b-25a7-8238-9fe0-081992788e0d",
+    "uuid": "6780b825-7af9-84a5-9fbd-4bcabbcabd6b",
     "words": [
       "night"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "night: a schema.org component word, fused from NightClub",
-    "uuid": "33002011-c532-8454-bace-d5ce99c96961",
+    "source": "Use when reasoning about night as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "341d1214-5ade-8694-a91d-19664203a2f8",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "night",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "nightclub"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "night: a schema.org component word, fused from NightClub"
+      "en": "Use when reasoning about night as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "best",
-    "uuid": "e12fdc0b-8e9b-876a-b924-feb9c47c717a",
+    "uuid": "9ccb2c89-7f21-8a81-ae8a-d3ab0c562ec8",
     "words": [
       "best"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "best: a schema.org component word, fused from bestRating",
-    "uuid": "e13dcd71-02db-8861-aec0-e43f2791c606",
+    "source": "Use when reasoning about best as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "792855cd-952c-827f-ae02-fe43d15cb08d",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "best",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "bestrating"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "best: a schema.org component word, fused from bestRating"
+      "en": "Use when reasoning about best as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

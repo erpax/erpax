@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "interval",
-    "uuid": "bac6c9bc-3703-89fe-8f1b-8994e1363d58",
+    "uuid": "f9cab71d-24da-8aa3-98d8-1b2af0acb22f",
     "words": [
       "interval"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "interval: a schema.org component word, fused from datasetTimeInterval",
-    "uuid": "1d7e5cd8-35b6-8ac3-9142-4349c32301b5",
+    "source": "Use when reasoning about interval as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "fe0b36f2-a626-8123-8e80-3bc0c269355a",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "interval",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "datasettimeinterval"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "interval: a schema.org component word, fused from datasetTimeInterval"
+      "en": "Use when reasoning about interval as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "priorities",
-    "uuid": "e6cd7e87-2ff7-8942-a5eb-21bc169f8e43",
+    "uuid": "c2adf8f6-e0d1-809f-8560-8b7288da4a38",
     "words": [
       "priorities"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "priorities: a schema.org component word, fused from missionCoveragePrioritiesPolicy",
-    "uuid": "934229e6-7ca0-8a6b-bf51-cb111a460ea9",
+    "source": "Use when reasoning about priorities as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "ddd13d48-a054-8583-9bd0-84a4f49a02f6",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "priorities",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "missioncoverageprioritiespolicy"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "priorities: a schema.org component word, fused from missionCoveragePrioritiesPolicy"
+      "en": "Use when reasoning about priorities as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

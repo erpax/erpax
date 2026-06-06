@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "tracking",
-    "uuid": "9eff1bfd-19b6-87cd-a6e8-dcf09a33b32a",
+    "uuid": "7da8956d-771d-802d-bf12-07504b72e0a0",
     "words": [
       "tracking"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "tracking: a schema.org component word, fused from trackingNumber, trackingUrl",
-    "uuid": "03b7e1a1-bf0d-8405-a54f-5e3138c6633e",
+    "source": "Use when reasoning about tracking as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "268658c3-efda-8efb-92b1-34337bd97246",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "tracking",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "trackingnumber",
-      "trackingurl"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "tracking: a schema.org component word, fused from trackingNumber, trackingUrl"
+      "en": "Use when reasoning about tracking as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

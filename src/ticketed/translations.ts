@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "ticketed",
-    "uuid": "d42976d3-0930-8f0a-a5ef-500394bc846e",
+    "uuid": "56e45f6e-dd56-842b-b951-b694f7934c34",
     "words": [
       "ticketed"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "ticketed: a schema.org component word, fused from ticketedSeat",
-    "uuid": "d2eb0728-4488-8c7e-a3df-6a792110dea6",
+    "source": "Use when reasoning about ticketed as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "5ff42784-6f23-8315-a0bc-a81de11505e9",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "ticketed",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "ticketedseat"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "ticketed: a schema.org component word, fused from ticketedSeat"
+      "en": "Use when reasoning about ticketed as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

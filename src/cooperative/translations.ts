@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "cooperative",
-    "uuid": "bf687eee-c4fe-84d0-a5f9-d83b23476a14",
+    "uuid": "902543fb-400c-8a98-8a09-fc7503079b1c",
     "words": [
       "cooperative"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "An organization that is a joint project of multiple organizations or persons.",
-    "uuid": "f5f245ec-37f7-89fc-8375-12babace4a37",
+    "uuid": "3c1303cb-db0b-8a50-a4bb-bdba72b6efc4",
     "words": [
       "an",
       "organization",

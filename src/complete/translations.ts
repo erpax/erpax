@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "complete",
-    "uuid": "793d6ba8-fb2a-8dad-a6ca-8a4b6c84367d",
+    "uuid": "2fca8ba6-1fcc-8bdc-a85c-75d86215aecf",
     "words": [
       "complete"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "complete: a schema.org component word, fused from CompleteDataFeed, timeToComplete",
-    "uuid": "832d5f24-c8d6-8319-b56e-b11cadcffe94",
+    "source": "Use when reasoning about complete as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "f6a2a17f-0a12-817c-a4b8-efaa046c2e5e",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "complete",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "completedatafeed",
-      "timetocomplete"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "complete: a schema.org component word, fused from CompleteDataFeed, timeToComplete"
+      "en": "Use when reasoning about complete as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

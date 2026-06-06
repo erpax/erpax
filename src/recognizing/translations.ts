@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "recognizing",
-    "uuid": "aff5fc1d-aa8b-8e96-b542-f7e2ee0a90c7",
+    "uuid": "4dce068a-32db-87d0-903a-5e027c5512cd",
     "words": [
       "recognizing"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "recognizing: a schema.org component word, fused from recognizingAuthority",
-    "uuid": "800a85bb-495d-8c40-a196-cf148c187cdf",
+    "source": "Use when reasoning about recognizing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "c445288b-63fb-81b8-93e5-62a95b7124ca",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "recognizing",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "recognizingauthority"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "recognizing: a schema.org component word, fused from recognizingAuthority"
+      "en": "Use when reasoning about recognizing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

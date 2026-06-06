@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "physicians",
-    "uuid": "1fc3021c-17f2-8645-923f-4c640c81775f",
+    "uuid": "7c61ee8b-744e-8b34-81e0-54c453affe06",
     "words": [
       "physicians"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "physicians: a schema.org component word, fused from PhysiciansOffice",
-    "uuid": "4149af8d-42ea-82be-a695-56c757dd4a80",
+    "source": "Use when reasoning about physicians as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "4fce40df-fd0e-8b83-984e-49d655a5bc3a",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "physicians",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "physiciansoffice"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "physicians: a schema.org component word, fused from PhysiciansOffice"
+      "en": "Use when reasoning about physicians as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

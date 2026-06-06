@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "instance",
-    "uuid": "c95d1b44-4f61-8bab-883e-0e2bad0d7c61",
+    "uuid": "70231d13-3d70-8676-9254-c9a6fd715ff2",
     "words": [
       "instance"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "instance: a schema.org component word, fused from CourseInstance, hasCourseInstance",
-    "uuid": "866d7ef5-2c50-89f5-9432-84de7d2e431a",
+    "source": "Use when reasoning about instance as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "7d698c89-e54b-8780-8432-75347c36a76b",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "instance",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "courseinstance",
-      "hascourseinstance"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "instance: a schema.org component word, fused from CourseInstance, hasCourseInstance"
+      "en": "Use when reasoning about instance as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

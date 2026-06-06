@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "therapy",
-    "uuid": "7eef7b9a-b943-8224-8ebb-1376914e071b",
+    "uuid": "a19dc180-dcc5-8a04-bd86-d6165a873d35",
     "words": [
       "therapy"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "therapy: a schema.org component word, fused from MedicalTherapy, OccupationalTherapy, PhysicalTherapy, RadiationTherapy, duplicateTherapy, relatedTherapy",
-    "uuid": "d797c4e1-13e0-842a-81d3-32c8e3d452c7",
+    "source": "Use when reasoning about therapy as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "d5ecaff1-8d3c-8b8d-8e14-a98c578aaad2",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "therapy",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "medicaltherapy",
-      "occupationaltherapy",
-      "physicaltherapy",
-      "radiationtherapy",
-      "duplicatetherapy",
-      "relatedtherapy"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "therapy: a schema.org component word, fused from MedicalTherapy, OccupationalTherapy, PhysicalTherapy, RadiationTherapy, duplicateTherapy, relatedTherapy"
+      "en": "Use when reasoning about therapy as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "motor",
-    "uuid": "1599a3d0-31df-81a9-8a5a-9d536df22d8c",
+    "uuid": "fff76384-733a-8817-be56-ab45adcf4671",
     "words": [
       "motor"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "motor: a schema.org component word, fused from nerveMotor",
-    "uuid": "f6b74382-a8f1-87b8-9624-ec1ea6125113",
+    "source": "Use when reasoning about motor as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "7da69bb6-12f8-84aa-9c57-7be6dbcb2b4b",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "motor",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "nervemotor"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "motor: a schema.org component word, fused from nerveMotor"
+      "en": "Use when reasoning about motor as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

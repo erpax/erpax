@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "factor",
-    "uuid": "125d8158-aa78-8893-a914-5a338b41b84d",
+    "uuid": "baf1a507-67a3-8dec-a67e-fe0377c39a10",
     "words": [
       "factor"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "factor: a schema.org component word, fused from MedicalRiskFactor, includedRiskFactor, riskFactor",
-    "uuid": "e352b342-4b88-857e-87d1-248c16da7869",
+    "source": "Use when reasoning about factor as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "5ec60f95-a2d4-81fd-a0ec-df0b828bd2e0",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "factor",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "medicalriskfactor",
-      "includedriskfactor",
-      "riskfactor"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "factor: a schema.org component word, fused from MedicalRiskFactor, includedRiskFactor, riskFactor"
+      "en": "Use when reasoning about factor as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

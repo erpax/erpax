@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "eligibility",
-    "uuid": "38318a69-74dd-81e4-8496-bf35d588eb76",
+    "uuid": "2ff520cc-6814-8d59-b612-251cfbb0f26e",
     "words": [
       "eligibility"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "eligibility: a schema.org component word, fused from eligibilityToWorkRequirement",
-    "uuid": "cdda4bc0-5384-8970-914c-59227a8321cc",
+    "source": "Use when reasoning about eligibility as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "7bd9a377-c99a-8a4d-860f-cba40bff5020",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "eligibility",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "eligibilitytoworkrequirement"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "eligibility: a schema.org component word, fused from eligibilityToWorkRequirement"
+      "en": "Use when reasoning about eligibility as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

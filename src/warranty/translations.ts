@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when a party makes a binding representation or guarantee about a fact/condition — express (stated) vs. implied (statutory), scope, duration, remedy (repair/replace/indemnify), breach consequences.",
-    "uuid": "ca05217f-c00d-8b72-94c5-3bae55ff6ed5",
+    "uuid": "2bdb2693-92eb-8241-8025-12f14afbdc04",
     "words": [
       "use",
       "when",

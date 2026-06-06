@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "confirm",
-    "uuid": "d1524ab6-fc31-8010-87c4-89e1559cfa11",
+    "uuid": "1d9ffd48-8dd0-8834-b690-ad65220843b6",
     "words": [
       "confirm"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "confirm: a schema.org component word, fused from ConfirmAction",
-    "uuid": "d06e1c48-e700-8a2d-8e72-500aab55bc51",
+    "source": "Use when reasoning about confirm as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "6d40ba63-cc6c-8ae9-ad16-7ba78dc06666",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "confirm",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "confirmaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "confirm: a schema.org component word, fused from ConfirmAction"
+      "en": "Use when reasoning about confirm as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

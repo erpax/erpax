@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "ensures",
-    "uuid": "54604208-fe80-8637-aa49-a994cdc90e24",
+    "uuid": "d05331b9-8436-8624-af63-f2ff30086a7b",
     "words": [
       "ensures"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "ensures: a schema.org component word, fused from legislationEnsuresImplementationOf",
-    "uuid": "7b94cb14-4f63-85f6-8808-d854b58d837f",
+    "source": "Use when reasoning about ensures as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "0d88b8f0-86fe-84bb-aec8-e746831cb643",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "ensures",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "legislationensuresimplementationof"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "ensures: a schema.org component word, fused from legislationEnsuresImplementationOf"
+      "en": "Use when reasoning about ensures as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

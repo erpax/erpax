@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "calculator",
-    "uuid": "0ba0e38b-b08b-8ad7-bd32-897f051b5bdf",
+    "uuid": "2b3e0125-2630-8299-89c1-25dd93ff963e",
     "words": [
       "calculator"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "calculator: a schema.org component word, fused from MedicalRiskCalculator",
-    "uuid": "ebcf1344-3682-88d5-be87-bfc1016bdbbd",
+    "source": "Use when reasoning about calculator as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "6bac5616-31e0-8cec-8161-35d6d5177982",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "calculator",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "medicalriskcalculator"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "calculator: a schema.org component word, fused from MedicalRiskCalculator"
+      "en": "Use when reasoning about calculator as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

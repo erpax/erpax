@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "spa",
-    "uuid": "4f78d0af-78e9-865e-900e-7b15523226b3",
+    "uuid": "d2498baf-1b4f-8faa-af6d-efcd539a67eb",
     "words": [
       "spa"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "spa: a schema.org component word, fused from DaySpa",
-    "uuid": "31c69d41-b833-8ba1-a950-1ee14638e566",
+    "source": "Use when reasoning about spa as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "76fdf417-4af7-8020-89d6-ee99a4846145",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "spa",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "dayspa"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "spa: a schema.org component word, fused from DaySpa"
+      "en": "Use when reasoning about spa as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "ticker",
-    "uuid": "7bc14031-81c3-8993-aa2d-f07c8d2a89df",
+    "uuid": "1acdda75-aac5-848e-9a79-d305c8f5e4da",
     "words": [
       "ticker"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "ticker: a schema.org component word, fused from tickerSymbol",
-    "uuid": "cfca2ce0-06d0-84e0-b382-1e8d8da5d76f",
+    "source": "Use when reasoning about ticker as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "5093e9db-d92a-8b57-9f48-d9c3d7edf2df",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "ticker",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "tickersymbol"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "ticker: a schema.org component word, fused from tickerSymbol"
+      "en": "Use when reasoning about ticker as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

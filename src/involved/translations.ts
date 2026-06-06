@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "involved",
-    "uuid": "7911566f-d762-8e88-9e20-5081bc38afe3",
+    "uuid": "73384ac7-18f4-827c-94a6-31de8a372c8f",
     "words": [
       "involved"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "involved: a schema.org component word, fused from isInvolvedInBiologicalProcess",
-    "uuid": "04c515b9-e56b-84dd-a73d-283954665042",
+    "source": "Use when reasoning about involved as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "e181a31d-719e-8be1-9e7d-7ee311d0e605",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "involved",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "isinvolvedinbiologicalprocess"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "involved: a schema.org component word, fused from isInvolvedInBiologicalProcess"
+      "en": "Use when reasoning about involved as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

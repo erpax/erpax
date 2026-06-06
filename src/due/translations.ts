@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "due",
-    "uuid": "58b95248-125a-8e91-b37d-256b901d3882",
+    "uuid": "eb97f827-81fd-872c-8d2b-9a35ec47633b",
     "words": [
       "due"
     ],
@@ -17,24 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "due: a schema.org component word, fused from minimumPaymentDue, paymentDue, paymentDueDate, totalPaymentDue",
-    "uuid": "a4876297-4d5a-8dc1-a32f-8c6d5d4df9fc",
+    "source": "Use when reasoning about due as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "9bab7fa5-3844-8439-9025-51dad92ac1ea",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "due",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "minimumpaymentdue",
-      "paymentdue",
-      "paymentduedate",
-      "totalpaymentdue"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "due: a schema.org component word, fused from minimumPaymentDue, paymentDue, paymentDueDate, totalPaymentDue"
+      "en": "Use when reasoning about due as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

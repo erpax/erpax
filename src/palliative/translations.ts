@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "palliative",
-    "uuid": "9d3a8583-2c8d-8e5c-b616-4f4cf4362a85",
+    "uuid": "080e13ca-1d11-827d-9f6a-4b9ce14e0383",
     "words": [
       "palliative"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "palliative: a schema.org component word, fused from PalliativeProcedure",
-    "uuid": "a88abaf9-55cb-89c0-84c2-16c5bdfdf1d5",
+    "source": "Use when reasoning about palliative as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "69f0f5c6-4c2a-8405-ab68-fd705969e714",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "palliative",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "palliativeprocedure"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "palliative: a schema.org component word, fused from PalliativeProcedure"
+      "en": "Use when reasoning about palliative as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "storage",
-    "uuid": "feea7402-fcf4-8efb-b2a1-a3e38893fea3",
+    "uuid": "6e1ce95a-c600-89ac-b1db-808c92efe6df",
     "words": [
       "storage"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "storage: a schema.org component word, fused from SelfStorage, storageRequirements",
-    "uuid": "e1c1c247-1875-8557-888d-8067a8c6bb0c",
+    "source": "Use when reasoning about storage as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "bf062964-cdbd-89b4-a0d9-f5ef21a2d765",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "storage",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "selfstorage",
-      "storagerequirements"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "storage: a schema.org component word, fused from SelfStorage, storageRequirements"
+      "en": "Use when reasoning about storage as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

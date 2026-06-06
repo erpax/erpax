@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "built",
-    "uuid": "e8f2c646-9bdc-8bc1-856c-f44e3c6d3f47",
+    "uuid": "073c9912-7433-8ef1-b170-f8e8daad7f23",
     "words": [
       "built"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "built: a schema.org component word, fused from yearBuilt",
-    "uuid": "f7e9570c-676a-8444-8912-264e5dc5bb50",
+    "source": "Use when reasoning about built as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "6280b1b1-2b8e-8d0d-9d5f-032e463dc9ae",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "built",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "yearbuilt"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "built: a schema.org component word, fused from yearBuilt"
+      "en": "Use when reasoning about built as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

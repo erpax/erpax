@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "epidemiology",
-    "uuid": "507c5376-645b-8f77-8225-b1b61bada746",
+    "uuid": "05343d99-102b-8a74-b11b-177cd966472a",
     "words": [
       "epidemiology"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "The characteristics of associated patients, such as age, gender, race etc.",
-    "uuid": "28c3e790-4b6a-87ff-9f27-3aa0e2c4c6c9",
+    "uuid": "74c40a6d-56c8-80a6-b2a4-039fe3f775aa",
     "words": [
       "the",
       "characteristics",

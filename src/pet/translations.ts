@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "pet",
-    "uuid": "1134c751-d52a-8f5e-8266-28d9d8b54e5c",
+    "uuid": "3a6f45ae-c047-8ddd-b806-b80bf8e5822e",
     "words": [
       "pet"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "pet: a schema.org component word, fused from PetStore",
-    "uuid": "73c06e8c-a7e3-8310-8eda-ddc1f92f2e90",
+    "source": "Use when reasoning about pet as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "fa0143d5-2368-8cd4-bb70-b6b01908526c",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "pet",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "petstore"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "pet: a schema.org component word, fused from PetStore"
+      "en": "Use when reasoning about pet as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

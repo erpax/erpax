@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "current",
-    "uuid": "9e959486-4bc5-8cc2-809f-34b3d6c91660",
+    "uuid": "cf315546-05d3-824e-9f08-a91c612c2003",
     "words": [
       "current"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "current: a schema.org component word, fused from currentExchangeRate",
-    "uuid": "5ff009de-9a5e-8dad-aa0a-3eb3243086f4",
+    "source": "Use when reasoning about current as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "e048b54e-08c6-8ca0-aa7b-d35fe5fc7ff8",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "current",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "currentexchangerate"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "current: a schema.org component word, fused from currentExchangeRate"
+      "en": "Use when reasoning about current as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

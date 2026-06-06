@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "distinguishing",
-    "uuid": "43e0a878-394f-8937-857a-bb64315c648b",
+    "uuid": "9264ddc2-6d8f-8d3f-93b0-195a15e53d4e",
     "words": [
       "distinguishing"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "distinguishing: a schema.org component word, fused from distinguishingSign",
-    "uuid": "c05ca591-ab19-8ffe-899b-854b40d0266a",
+    "source": "Use when reasoning about distinguishing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "fa20fb9f-52b1-8b6d-9b75-28f89ebb5de6",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "distinguishing",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "distinguishingsign"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "distinguishing: a schema.org component word, fused from distinguishingSign"
+      "en": "Use when reasoning about distinguishing as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

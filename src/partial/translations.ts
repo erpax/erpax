@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "partial",
-    "uuid": "aa17a873-1bbd-87c9-8f85-28b9639c87de",
+    "uuid": "64637808-e64b-8509-a550-7b94237301ea",
     "words": [
       "partial"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "partial: a schema.org component word, fused from numberOfPartialBathrooms",
-    "uuid": "acd11f43-3ccf-880b-8004-ce8c349cd386",
+    "source": "Use when reasoning about partial as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "4f22418e-71e8-8289-bbe6-0fc29a6f6c0c",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "partial",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "numberofpartialbathrooms"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "partial: a schema.org component word, fused from numberOfPartialBathrooms"
+      "en": "Use when reasoning about partial as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

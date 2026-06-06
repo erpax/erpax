@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "faq",
-    "uuid": "8c6a3e60-0c1d-8524-abe5-ea716d8d4293",
+    "uuid": "7ac07ad3-2db6-8b3a-886e-c43d63b660a5",
     "words": [
       "faq"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "faq: a schema.org component word, fused from FAQPage",
-    "uuid": "1d5836db-f374-85be-a894-926f08813204",
+    "source": "Use when reasoning about faq as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "b031cc9d-8e36-83e8-be52-ff8df5f9948a",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "faq",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "faqpage"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "faq: a schema.org component word, fused from FAQPage"
+      "en": "Use when reasoning about faq as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

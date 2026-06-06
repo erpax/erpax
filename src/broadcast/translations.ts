@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "broadcast",
-    "uuid": "430f32c4-9438-8f4a-9a6b-6eeefb1fc9fd",
+    "uuid": "6c3bfef7-56df-87f2-99e6-27d6a5bd6677",
     "words": [
       "broadcast"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "broadcast: a schema.org component word, fused from BroadcastChannel, BroadcastEvent, BroadcastFrequencySpecification, BroadcastService, RadioBroadcastService, broadcastAffiliateOf",
-    "uuid": "78b71182-94a0-8cd9-bbc3-fc6cd9137057",
+    "source": "Use when reasoning about broadcast as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "39f014fc-96c0-84cb-8db6-adf2ab695d76",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "broadcast",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "broadcastchannel",
-      "broadcastevent",
-      "broadcastfrequencyspecification",
-      "broadcastservice",
-      "radiobroadcastservice",
-      "broadcastaffiliateof"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "broadcast: a schema.org component word, fused from BroadcastChannel, BroadcastEvent, BroadcastFrequencySpecification, BroadcastService, RadioBroadcastService, broadcastAffiliateOf"
+      "en": "Use when reasoning about broadcast as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

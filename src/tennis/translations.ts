@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "tennis",
-    "uuid": "b2314808-c39f-8ade-a94f-750ec01934c8",
+    "uuid": "1538b6dd-d13d-8110-a3d4-40b09f1d2373",
     "words": [
       "tennis"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "tennis: a schema.org component word, fused from TennisComplex",
-    "uuid": "b66be48a-598b-8fae-bfe1-4f75f56d581e",
+    "source": "Use when reasoning about tennis as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "dfc4e6f2-0e5a-8223-a989-c5bfcc5a3649",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "tennis",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "tenniscomplex"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "tennis: a schema.org component word, fused from TennisComplex"
+      "en": "Use when reasoning about tennis as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

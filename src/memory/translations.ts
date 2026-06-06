@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "memory",
-    "uuid": "ad51b8a2-cd93-843f-9bc7-1a92bfdb6348",
+    "uuid": "2d3e45c3-92ec-87d3-802c-6f3f07b555c5",
     "words": [
       "memory"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "memory: a schema.org component word, fused from memoryRequirements",
-    "uuid": "989cc30c-9238-89b5-becc-9d2b04091c2b",
+    "source": "Use when reasoning about memory as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "23f316ec-99ae-8428-9f00-56a527326c1f",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "memory",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "memoryrequirements"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "memory: a schema.org component word, fused from memoryRequirements"
+      "en": "Use when reasoning about memory as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "information",
-    "uuid": "f9b611b4-a53d-8d33-a8ca-9df96a71f504",
+    "uuid": "a1442341-3315-8370-be47-dfb4d819ca29",
     "words": [
       "information"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "information: a schema.org component word, fused from NutritionInformation, TouristInformationCenter",
-    "uuid": "cb8804f8-047d-8e51-a360-2c1c6a747747",
+    "source": "Use when reasoning about information as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "71c56dee-83f4-86be-9fa8-33f8cae2987e",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "information",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "nutritioninformation",
-      "touristinformationcenter"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "information: a schema.org component word, fused from NutritionInformation, TouristInformationCenter"
+      "en": "Use when reasoning about information as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

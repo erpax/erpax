@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "fund",
-    "uuid": "5c4c60b9-7bd3-8252-9e70-592b62052dd8",
+    "uuid": "0bfbd06e-cf2c-8a42-b3f4-ad77ac6a8d34",
     "words": [
       "fund"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "fund: a schema.org component word, fused from InvestmentFund",
-    "uuid": "72f28e2f-c984-888f-b9bb-63abe1cdf2c9",
+    "source": "Use when reasoning about fund as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "edc45aef-b6c8-8693-8c50-0d7a8eadfe46",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "fund",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "investmentfund"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "fund: a schema.org component word, fused from InvestmentFund"
+      "en": "Use when reasoning about fund as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

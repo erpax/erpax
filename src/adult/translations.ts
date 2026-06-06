@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "adult",
-    "uuid": "65ee839d-13f7-85d9-bf9e-8ca4e94568e0",
+    "uuid": "3a1cd771-aa8f-8c4e-99e6-07ed0a9ce11e",
     "words": [
       "adult"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "adult: a schema.org component word, fused from AdultEntertainment, AdultOrientedEnumeration, hasAdultConsideration",
-    "uuid": "45a922c0-606a-847a-8fc3-26369b88dca9",
+    "source": "Use when reasoning about adult as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "3eed4f15-ef9f-8573-aace-b8410def7cde",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "adult",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "adultentertainment",
-      "adultorientedenumeration",
-      "hasadultconsideration"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "adult: a schema.org component word, fused from AdultEntertainment, AdultOrientedEnumeration, hasAdultConsideration"
+      "en": "Use when reasoning about adult as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

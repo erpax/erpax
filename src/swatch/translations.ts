@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "swatch",
-    "uuid": "8a39dca9-7e6f-87fd-a1e6-0406863bc43a",
+    "uuid": "cd3ab18c-86ca-8282-85e3-7d0e92a908b1",
     "words": [
       "swatch"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "swatch: a schema.org component word, fused from colorSwatch",
-    "uuid": "7ccbf1e9-e00a-8270-9d62-cc11e157e6cf",
+    "source": "Use when reasoning about swatch as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "081d1a93-5b02-8946-b969-cf4bb44a13dd",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "swatch",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "colorswatch"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "swatch: a schema.org component word, fused from colorSwatch"
+      "en": "Use when reasoning about swatch as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

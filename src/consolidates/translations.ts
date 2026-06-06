@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "consolidates",
-    "uuid": "01a75623-9fcb-8479-8b2b-cc5278723560",
+    "uuid": "b2485e94-1e0d-845e-ac62-b7ae40c299d3",
     "words": [
       "consolidates"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "consolidates: a schema.org component word, fused from legislationConsolidates",
-    "uuid": "b574d420-6d78-803d-b9f7-49c502e8a445",
+    "source": "Use when reasoning about consolidates as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "1346ea91-bca2-828c-ba20-0d060571aaec",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "consolidates",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "legislationconsolidates"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "consolidates: a schema.org component word, fused from legislationConsolidates"
+      "en": "Use when reasoning about consolidates as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

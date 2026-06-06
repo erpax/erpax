@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "worth",
-    "uuid": "2e253be3-d312-88a1-86b5-50312c361394",
+    "uuid": "df30c7bd-b187-8864-95f7-9e94ed3944b7",
     "words": [
       "worth"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "worth: a schema.org component word, fused from netWorth",
-    "uuid": "a0434a89-04c2-8423-81ee-762f6844c25f",
+    "source": "Use when reasoning about worth as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "aea1e56f-4549-8ae2-8639-16abe9e4623e",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "worth",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "networth"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "worth: a schema.org component word, fused from netWorth"
+      "en": "Use when reasoning about worth as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

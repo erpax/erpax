@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "commences",
-    "uuid": "d3d00fb9-9632-8ba9-bc8d-ce0b26e72c96",
+    "uuid": "08cc1975-6ba3-8f09-ac04-df3207fa51e7",
     "words": [
       "commences"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "commences: a schema.org component word, fused from legislationCommences",
-    "uuid": "6149f0d0-1401-89f2-913a-b10abec2466b",
+    "source": "Use when reasoning about commences as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "2a75201d-3815-834b-800c-fbe8bc03b4a6",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "commences",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "legislationcommences"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "commences: a schema.org component word, fused from legislationCommences"
+      "en": "Use when reasoning about commences as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

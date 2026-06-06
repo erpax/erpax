@@ -119,6 +119,12 @@ export interface ChainVerifyResult {
  * The retrievePayload callback fetches the payload for a leaf so the
  * canonical uuid can be re-derived. Returns ChainVerifyResult; ok=false
  * with brokenAtSeq pinpoints the tampered leaf.
+ *
+ * Fail-closed: when retrievePayload is provided, a leaf whose payload comes
+ * back undefined/null is reported as ok=false (payload unavailable), NOT
+ * skipped and NOT thrown — a missing payload is treated as an unverifiable
+ * (therefore failing) link, so callers cannot mistake a retrieval gap for
+ * trust. This verifier never throws on payload content; it returns a result.
  */
 export async function verifyUuidLinkedChain(args: {
   leaves: ReadonlyArray<UuidLinkedLeaf>
@@ -157,6 +163,19 @@ export async function verifyUuidLinkedChain(args: {
     }
     if (retrievePayload) {
       const payload = await retrievePayload(leaf)
+      // Fail-closed: a caller that supplies retrievePayload is asserting it can
+      // produce the payload for every leaf. A missing payload (undefined/null —
+      // e.g. retrieval failed or the decisions array is short of the chain) must
+      // be an explicit verification FAILURE, never a thrown exception. Without
+      // this guard, payloadContentUuid(undefined) calls createHash().update(undefined)
+      // which THROWS (ERR_INVALID_ARG_TYPE): a thrown verifier is a DoS hazard and
+      // can flip fail-open if a caller try/catches the throw and treats it as trust.
+      if (payload === undefined || payload === null) {
+        return {
+          ok: false, chainLength: leaves.length, brokenAtSeq: leaf.seq,
+          reason: `payload unavailable at seq ${leaf.seq}: cannot verify payloadUuid ${leaf.payloadUuid} against a missing payload`,
+        }
+      }
       const computedPayloadUuid = payloadContentUuid(payload)
       if (computedPayloadUuid !== leaf.payloadUuid) {
         return {

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "golf",
-    "uuid": "d77b86c0-b99b-8d38-a8bd-513a125dc933",
+    "uuid": "91d52ee9-7e4d-8bf3-a861-c75332a6065b",
     "words": [
       "golf"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "golf: a schema.org component word, fused from GolfCourse",
-    "uuid": "1c6035d6-9908-880a-903e-20002bd4d17f",
+    "source": "Use when reasoning about golf as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "b11bdd9a-dbc5-8c87-a4be-04ea91d9ba28",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "golf",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "golfcourse"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "golf: a schema.org component word, fused from GolfCourse"
+      "en": "Use when reasoning about golf as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

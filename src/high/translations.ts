@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "high",
-    "uuid": "0852b8e9-0ce4-8079-be0e-6dbba5e342e3",
+    "uuid": "7ebcd599-e605-8008-ad92-78d3956017b8",
     "words": [
       "high"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "high: a schema.org component word, fused from HighSchool, highPrice",
-    "uuid": "b2419d8f-635a-8269-a02e-ee92472d798a",
+    "source": "Use when reasoning about high as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "4747315d-39cd-8011-a023-7a8040b88388",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "high",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "highschool",
-      "highprice"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "high: a schema.org component word, fused from HighSchool, highPrice"
+      "en": "Use when reasoning about high as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

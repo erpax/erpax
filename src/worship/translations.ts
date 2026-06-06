@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "worship",
-    "uuid": "3850ad1a-020d-8fd8-9418-b9d4054dfdd9",
+    "uuid": "1ea0eae4-829c-8dfd-beed-0c185acc9edd",
     "words": [
       "worship"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "worship: a schema.org component word, fused from PlaceOfWorship",
-    "uuid": "e8e508a8-e0a9-8f61-9a7a-ba92daad540f",
+    "source": "Use when reasoning about worship as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "2db11d41-cb17-8e1a-9bc7-95d8f8a5ff26",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "worship",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "placeofworship"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "worship: a schema.org component word, fused from PlaceOfWorship"
+      "en": "Use when reasoning about worship as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

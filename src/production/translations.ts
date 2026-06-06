@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "production",
-    "uuid": "87fa067c-579c-8970-86ce-bc2119aac7f4",
+    "uuid": "b6cee662-db61-82e5-839e-0c2d9d3d5a5d",
     "words": [
       "production"
     ],
@@ -17,24 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "production: a schema.org component word, fused from MusicAlbumProductionType, albumProductionType, productionCompany, productionDate",
-    "uuid": "2a14c2ec-6266-8418-9080-0655779c74c6",
+    "source": "Use when reasoning about production as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "a55a53db-a84d-89df-9d10-3dde45292caa",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "production",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "musicalbumproductiontype",
-      "albumproductiontype",
-      "productioncompany",
-      "productiondate"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "production: a schema.org component word, fused from MusicAlbumProductionType, albumProductionType, productionCompany, productionDate"
+      "en": "Use when reasoning about production as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

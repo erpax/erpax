@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "wash",
-    "uuid": "5ff7e505-3e9f-84be-9da2-bb7169253cfc",
+    "uuid": "6781545e-810f-88c7-a896-b0e32bdc7203",
     "words": [
       "wash"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "wash: a schema.org component word, fused from AutoWash",
-    "uuid": "267dde9d-912b-8216-993d-d9f9422bf94c",
+    "source": "Use when reasoning about wash as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "6f46025c-068f-857b-87d9-e8c381d37673",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "wash",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "autowash"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "wash: a schema.org component word, fused from AutoWash"
+      "en": "Use when reasoning about wash as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

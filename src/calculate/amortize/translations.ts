@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use to compute amortization — bond discount/premium (effective-interest), intangible/loan amortization schedules. Pure compute (no persistence); cites IFRS-9 / US-GAAP. Nested under calculate.",
-    "uuid": "406e093d-01bf-8e9d-92ab-203096e661ac",
+    "uuid": "c879fc88-e8c9-8ef8-9b5a-6bcb558dd0f1",
     "words": [
       "use",
       "to",

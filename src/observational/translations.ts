@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "observational",
-    "uuid": "e04421fe-30ec-8eee-8ce9-e984a2362c81",
+    "uuid": "f148da50-075f-8339-a36b-96c2ade842a3",
     "words": [
       "observational"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "observational: a schema.org component word, fused from MedicalObservationalStudy, MedicalObservationalStudyDesign",
-    "uuid": "fc38c081-735b-879a-ba3f-a8896884dde2",
+    "source": "Use when reasoning about observational as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "d31727a7-926d-849e-b94e-8f014871b411",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "observational",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "medicalobservationalstudy",
-      "medicalobservationalstudydesign"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "observational: a schema.org component word, fused from MedicalObservationalStudy, MedicalObservationalStudyDesign"
+      "en": "Use when reasoning about observational as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

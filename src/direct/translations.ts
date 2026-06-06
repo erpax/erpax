@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "direct",
-    "uuid": "1f732a9c-1650-820b-a645-91a7c5087885",
+    "uuid": "589b8c95-bf13-83fb-8b3f-fe0bbf8cc817",
     "words": [
       "direct"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "direct: a schema.org component word, fused from directApply",
-    "uuid": "ab62696e-b68b-8a78-bc14-e7cacc1a4356",
+    "source": "Use when reasoning about direct as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "d491def0-cdf2-8b18-940e-d499314ddc84",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "direct",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "directapply"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "direct: a schema.org component word, fused from directApply"
+      "en": "Use when reasoning about direct as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

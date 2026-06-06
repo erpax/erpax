@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "after",
-    "uuid": "af13602d-5cc8-8132-bdf9-90bbbeb0e22f",
+    "uuid": "44cf8029-4a6a-89af-ad1e-08d95b8e015c",
     "words": [
       "after"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "after: a schema.org component word, fused from afterMedia",
-    "uuid": "d72ac075-8051-8299-9239-14aab4349770",
+    "source": "Use when reasoning about after as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "c03fef3c-2311-8723-847c-c2b6b5f18d40",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "after",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "aftermedia"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "after: a schema.org component word, fused from afterMedia"
+      "en": "Use when reasoning about after as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

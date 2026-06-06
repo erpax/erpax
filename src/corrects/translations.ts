@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "corrects",
-    "uuid": "30d8aaa6-b6c9-8fd4-9f6d-692b43107c78",
+    "uuid": "d3189eab-a6be-8324-9e92-5e15f03d514c",
     "words": [
       "corrects"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "corrects: a schema.org component word, fused from legislationCorrects",
-    "uuid": "33b66b8e-81bb-8bf2-86bd-220e9062c5f9",
+    "source": "Use when reasoning about corrects as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "e2855ccf-21cf-8d8e-bf1d-d20141f6e5ca",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "corrects",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "legislationcorrects"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "corrects: a schema.org component word, fused from legislationCorrects"
+      "en": "Use when reasoning about corrects as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

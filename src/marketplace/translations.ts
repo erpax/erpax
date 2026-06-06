@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "marketplace",
-    "uuid": "f1eb9777-224b-8536-a49d-67d3201e50d1",
+    "uuid": "fb022657-cf96-8df7-b38b-97069b5b28e2",
     "words": [
       "marketplace"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "marketplace: a schema.org component word, fused from OnlineMarketplace",
-    "uuid": "8d998c42-6d7f-8436-bb62-587c6d53749e",
+    "source": "Use when reasoning about marketplace as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "f2d3233f-cc44-8360-9cae-de1e000d2b01",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "marketplace",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "onlinemarketplace"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "marketplace: a schema.org component word, fused from OnlineMarketplace"
+      "en": "Use when reasoning about marketplace as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

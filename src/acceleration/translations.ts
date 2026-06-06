@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "acceleration",
-    "uuid": "091907e9-2080-8583-9ed7-8fda54773a6b",
+    "uuid": "1c9fed34-3d55-8f29-836c-0f0921689b42",
     "words": [
       "acceleration"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "acceleration: a schema.org component word, fused from accelerationTime",
-    "uuid": "18e19275-5471-832f-a63a-dd3aedf77a80",
+    "source": "Use when reasoning about acceleration as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "053cfce3-9a2f-8258-9377-f01d288bd1df",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "acceleration",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "accelerationtime"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "acceleration: a schema.org component word, fused from accelerationTime"
+      "en": "Use when reasoning about acceleration as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "salon",
-    "uuid": "a81307b9-35a5-821a-9c1a-820c7ec7a3f8",
+    "uuid": "f49c7be9-de92-80b9-bbd7-be80e6017ed2",
     "words": [
       "salon"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "salon: a schema.org component word, fused from BeautySalon, HairSalon, NailSalon",
-    "uuid": "81fd5b1f-3179-81d6-aa9e-2e00ad03c240",
+    "source": "Use when reasoning about salon as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "e5fe9ee0-f703-8b47-a2ea-e5deea0f9635",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "salon",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "beautysalon",
-      "hairsalon",
-      "nailsalon"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "salon: a schema.org component word, fused from BeautySalon, HairSalon, NailSalon"
+      "en": "Use when reasoning about salon as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

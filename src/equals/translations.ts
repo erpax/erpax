@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "equals",
-    "uuid": "ed3c8c68-6025-8fc8-af51-8d09770a4215",
+    "uuid": "356ba8e1-b2f3-84e7-9394-beadf2a4ad08",
     "words": [
       "equals"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "equals: a schema.org component word, fused from geoEquals",
-    "uuid": "b23f4af8-3f5f-8240-b36a-a39b907ac30b",
+    "source": "Use when reasoning about equals as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "1f604953-1225-839f-bbd4-b78625f5dc70",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "equals",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "geoequals"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "equals: a schema.org component word, fused from geoEquals"
+      "en": "Use when reasoning about equals as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

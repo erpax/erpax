@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "additional",
-    "uuid": "46acdd8a-afa5-8b1f-81bd-cac7390f4505",
+    "uuid": "56f849e8-e482-8dd5-bd84-b7a8ede4fffe",
     "words": [
       "additional"
     ],
@@ -17,25 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "additional: a schema.org component word, fused from additionalName, additionalNumberOfGuests, additionalProperty, additionalType, additionalVariable",
-    "uuid": "19f6c03a-7628-87d9-80fa-fa9ef437c640",
+    "source": "Use when reasoning about additional as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "eae483dd-0aaf-8a27-83ed-9946ef14e918",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "additional",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "additionalname",
-      "additionalnumberofguests",
-      "additionalproperty",
-      "additionaltype",
-      "additionalvariable"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "additional: a schema.org component word, fused from additionalName, additionalNumberOfGuests, additionalProperty, additionalType, additionalVariable"
+      "en": "Use when reasoning about additional as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

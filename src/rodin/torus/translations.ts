@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "torus",
-    "uuid": "b4d6773d-ee3b-8c4b-8ca4-e19e25ab0dac",
+    "uuid": "950be603-c3c9-8d0a-9b9c-25d72587f836",
     "words": [
       "torus"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when reasoning about the closed surface the rodin vortex winds on in erpax — the doubling helix on a donut, inward (state×state) and outward (×10 octave) both closing; why the sequence is a ring with no top/bottom. Nested under rodin.",
-    "uuid": "c236e69f-2477-8093-a07b-e8c3efe352e2",
+    "uuid": "e348b0bc-6784-818f-b5b5-b984196e4279",
     "words": [
       "use",
       "when",

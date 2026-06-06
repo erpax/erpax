@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "general",
-    "uuid": "9180abb5-1079-8574-b17e-e3e90baad3bb",
+    "uuid": "8f4c864f-4fc6-8c49-99a0-8d7852348a50",
     "words": [
       "general"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "general: a schema.org component word, fused from GeneralContractor",
-    "uuid": "94723113-2d28-837c-8a7e-97ac85d3e01c",
+    "source": "Use when reasoning about general as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "d3c48535-7f6b-8427-a539-a3055ac21fef",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "general",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "generalcontractor"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "general: a schema.org component word, fused from GeneralContractor"
+      "en": "Use when reasoning about general as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

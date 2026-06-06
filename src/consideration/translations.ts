@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "consideration",
-    "uuid": "fb5c5163-ba27-8de2-baaf-f9be352fd7ac",
+    "uuid": "292e7adc-a61f-83ad-a2e0-498eccc51d27",
     "words": [
       "consideration"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "consideration: a schema.org component word, fused from hasAdultConsideration, safetyConsideration",
-    "uuid": "a107b7c6-1b8c-8214-abc3-2a77cb80295a",
+    "source": "Use when reasoning about consideration as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "3261e9bb-efb6-8556-9125-7e692fa006df",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "consideration",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "hasadultconsideration",
-      "safetyconsideration"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "consideration: a schema.org component word, fused from hasAdultConsideration, safetyConsideration"
+      "en": "Use when reasoning about consideration as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "iupac",
-    "uuid": "77bfe312-2e8b-81d4-a40a-9b02969c3ce6",
+    "uuid": "d4338da9-4cd2-8ac8-9873-ffebbb2fde52",
     "words": [
       "iupac"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "iupac: a schema.org component word, fused from iupacName",
-    "uuid": "2b969cb7-b190-875a-b88a-9f8956bd0279",
+    "source": "Use when reasoning about iupac as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "c9aba1a7-ac05-8059-b400-64ea7bc56460",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "iupac",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "iupacname"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "iupac: a schema.org component word, fused from iupacName"
+      "en": "Use when reasoning about iupac as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -66,6 +66,21 @@ describe('tamper-cost: the anchor is what makes a zero-entropy store tamper-proo
     expect(v.crackCostLog2).toBe(64)
     expect(v.note).toMatch(/weaker/)
   })
+  it('FAIL-CLOSED: "anchored" to a ZERO-strength anchor (ANCHOR_STRENGTH_BITS.none) is NOT tamper-evident — cost 0 must never report trust', () => {
+    // Reachable from power/self-sufficient/security-remote-access passing
+    // ANCHOR_STRENGTH_BITS['none'] = 0. tamperEvidence is PROVEN by positive cost,
+    // not assumed from the anchored flag.
+    const v = crackVerdict({ anchored: true, anchorStrengthBits: 0 })
+    expect(v.crackCostLog2).toBe(0)
+    expect(v.tamperEvident).toBe(false)
+    expect(v.note).toMatch(/NOT tamper-evident/)
+  })
+  it('a weak-but-POSITIVE anchor is tamper-evident (true) yet flagged as the weak link (binding) — the weak channel is `binding`/`note`, not a false tamperEvident:false', () => {
+    const v = crackVerdict({ anchored: true, anchorStrengthBits: 1 })
+    expect(v.crackCostLog2).toBe(1)
+    expect(v.tamperEvident).toBe(true) // 2^1 ops > 2^0 — a (tiny) real barrier exists
+    expect(v.binding).toBe('anchor') // surfaced as the weak link, honestly
+  })
 })
 
 describe('tamper-cost: coverage increases the cost exponentially (Law 62)', () => {
@@ -96,6 +111,27 @@ describe('tamper-cost: the headline answer', () => {
     expect(v.tamperEvident).toBe(true)
     expect(v.crackCostLog2).toBe(106)
     expect(2 ** v.bruteYearsLog2).toBeGreaterThan(1000) // millennia of global hashpower
+  })
+})
+
+describe('tamper-cost: the two layers are honestly distinct — cryptographic floor + structural amplifier', () => {
+  it('no coverage ⇒ the verdict IS the cryptographic floor (the digest bits), standing ALONE', () => {
+    // The SKILL.md relabel made true-by-test: with coverage===undefined the
+    // coverage term is 0, so crackCostLog2 collapses to the NIST-grounded floor,
+    // and the binding is always a real cryptographic/anchor path — never coverage.
+    const v = crackVerdict({})
+    expect(v.crackCostLog2).toBe(ERPAX_DIGEST_BITS)
+    expect(['second-preimage', 'anchor', 'collision']).toContain(v.binding)
+  })
+  it('coverage is ADDED on top of the floor (structural amplifier), not folded into the min', () => {
+    // For 0<c<1 the cost is STRICTLY GREATER than the same call without coverage —
+    // proving coverageCost is an additive layer above the floor, not the floor.
+    const floor = crackVerdict({ anchored: true, anchorStrengthBits: 128 }).crackCostLog2
+    for (const c of [0.1, 0.5, 0.9, 0.99]) {
+      const v = crackVerdict({ anchored: true, anchorStrengthBits: 128, coverage: c, checks: 8 })
+      expect(v.crackCostLog2).toBeGreaterThan(floor)
+      expect(Number.isFinite(v.crackCostLog2)).toBe(true) // finite below coverage=1
+    }
   })
 })
 

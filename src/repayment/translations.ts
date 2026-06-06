@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "repayment",
-    "uuid": "56593db8-68d4-8ed4-a4ad-24149239eac8",
+    "uuid": "c9f5dee5-2dc2-8fe7-a816-3000596b866d",
     "words": [
       "repayment"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "repayment: a schema.org component word, fused from RepaymentSpecification, loanRepaymentForm, monthlyMinimumRepaymentAmount",
-    "uuid": "adc7e179-94f4-8134-87b5-54ec5907f36d",
+    "source": "Use when reasoning about repayment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "04762e2f-04ad-86cf-88c6-d9827663c57a",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "repayment",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "repaymentspecification",
-      "loanrepaymentform",
-      "monthlyminimumrepaymentamount"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "repayment: a schema.org component word, fused from RepaymentSpecification, loanRepaymentForm, monthlyMinimumRepaymentAmount"
+      "en": "Use when reasoning about repayment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

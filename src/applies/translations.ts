@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "applies",
-    "uuid": "8cc6e3c4-9c59-8612-b30d-05ee4e4eadd6",
+    "uuid": "892bee00-43ce-8920-a045-9fe1f29239d4",
     "words": [
       "applies"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "applies: a schema.org component word, fused from appliesToDeliveryMethod, appliesToPaymentMethod, legislationApplies",
-    "uuid": "46aaed46-5740-8df9-8da9-5ea030df4ae8",
+    "source": "Use when reasoning about applies as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "887d9eb6-495d-86ab-a654-aba2df20ddeb",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "applies",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "appliestodeliverymethod",
-      "appliestopaymentmethod",
-      "legislationapplies"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "applies: a schema.org component word, fused from appliesToDeliveryMethod, appliesToPaymentMethod, legislationApplies"
+      "en": "Use when reasoning about applies as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

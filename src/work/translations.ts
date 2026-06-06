@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "work",
-    "uuid": "b8f99fc5-5e3d-8c21-ad6d-46288a9b803e",
+    "uuid": "25ae33f9-27be-8109-a9a5-87ff1266b052",
     "words": [
       "work"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "work: a schema.org component word, fused from CreativeWork, CreativeWorkSeason, CreativeWorkSeries, WorkBasedProgram, creativeWorkStatus, eligibilityToWorkRequirement",
-    "uuid": "de9e0c27-81ad-83f4-b9fc-9de851454579",
+    "source": "Use when reasoning about work as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "9304d578-f650-8489-992f-f3b35beacfa4",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "work",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "creativework",
-      "creativeworkseason",
-      "creativeworkseries",
-      "workbasedprogram",
-      "creativeworkstatus",
-      "eligibilitytoworkrequirement"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "work: a schema.org component word, fused from CreativeWork, CreativeWorkSeason, CreativeWorkSeries, WorkBasedProgram, creativeWorkStatus, eligibilityToWorkRequirement"
+      "en": "Use when reasoning about work as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

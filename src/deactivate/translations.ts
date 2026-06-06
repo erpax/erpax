@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "deactivate",
-    "uuid": "b905c724-3582-8ec7-8fea-c3e280ab9871",
+    "uuid": "af9fa42f-7d06-8d75-9ae1-90f9e17fb591",
     "words": [
       "deactivate"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "deactivate: a schema.org component word, fused from DeactivateAction",
-    "uuid": "cb002d60-49e9-8fe7-a77a-1cfe4d919dd6",
+    "source": "Use when reasoning about deactivate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "a3332146-7698-83d6-8df8-fdc82af96b1e",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "deactivate",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "deactivateaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "deactivate: a schema.org component word, fused from DeactivateAction"
+      "en": "Use when reasoning about deactivate as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "reserved",
-    "uuid": "039b238c-2d0c-8eff-9735-cef5d8d72d4b",
+    "uuid": "328e2b0b-ab81-8bb6-bacd-bea7fe500bfd",
     "words": [
       "reserved"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "reserved: a schema.org component word, fused from reservedTicket",
-    "uuid": "d2e01117-5ad9-8b68-a536-0cf275a2efa1",
+    "source": "Use when reasoning about reserved as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "33e4a076-4229-823e-95fd-c97787305e9b",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "reserved",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "reservedticket"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "reserved: a schema.org component word, fused from reservedTicket"
+      "en": "Use when reasoning about reserved as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "passed",
-    "uuid": "c49cfcb2-a7da-8e86-88dc-2f9097212cd9",
+    "uuid": "916fa309-8ad6-8242-9703-d1b0900c316c",
     "words": [
       "passed"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "passed: a schema.org component word, fused from legislationPassedBy",
-    "uuid": "5b49c5a9-5fe5-8795-a71a-2ddcbdd953e4",
+    "source": "Use when reasoning about passed as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "a458bdef-67ad-8bab-943a-2ab3d7bac905",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "passed",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "legislationpassedby"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "passed: a schema.org component word, fused from legislationPassedBy"
+      "en": "Use when reasoning about passed as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

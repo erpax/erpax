@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "guidelines",
-    "uuid": "2ebd1dc8-293a-88fa-a465-e7447c8176e1",
+    "uuid": "b3e89019-e901-8c11-acd2-aa9b44ad8dbe",
     "words": [
       "guidelines"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "guidelines: a schema.org component word, fused from newsUpdatesAndGuidelines, quarantineGuidelines",
-    "uuid": "b50b4653-16f8-861f-b93b-1a96e24bd158",
+    "source": "Use when reasoning about guidelines as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "08b6fc82-7944-8624-8a59-aeb0ef5e723a",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "guidelines",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "newsupdatesandguidelines",
-      "quarantineguidelines"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "guidelines: a schema.org component word, fused from newsUpdatesAndGuidelines, quarantineGuidelines"
+      "en": "Use when reasoning about guidelines as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

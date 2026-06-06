@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "post-balance-sheet-events",
-    "uuid": "1a90b381-2d4f-825c-8e6a-a5d43b56bd24",
+    "uuid": "89e2a277-e3ed-87ba-baa1-ccea581a6fa7",
     "words": [
       "post",
       "balance",
@@ -21,7 +21,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when capturing events between the reporting date and FS-authorisation date — classifying them as adjusting (IAS 10 §8 — book) or non-adjusting (§10 — disclose); assessing going-concern impact; linking booked journal entries; meeting §21 disclosure requirements. The IAS 10 subsequent-events register.",
-    "uuid": "4a6304c7-965a-8513-8e1b-aa31229f19a9",
+    "uuid": "6d64bcc4-a6e4-8df9-9f41-c92464c5db86",
     "words": [
       "use",
       "when",

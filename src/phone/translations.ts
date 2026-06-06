@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "phone",
-    "uuid": "dd494748-0bc9-8aa8-8022-78e77e37024d",
+    "uuid": "240de62d-b4ed-856b-b341-eba5abdf10de",
     "words": [
       "phone"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "phone: a schema.org component word, fused from MobilePhoneStore, servicePhone",
-    "uuid": "21864160-5cfa-84c2-b347-24180ca25ee5",
+    "source": "Use when reasoning about phone as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "2c8ffbe4-e865-8803-a57d-dbe6f42c8d68",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "phone",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "mobilephonestore",
-      "servicephone"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "phone: a schema.org component word, fused from MobilePhoneStore, servicePhone"
+      "en": "Use when reasoning about phone as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

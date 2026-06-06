@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "remaining",
-    "uuid": "7be4462a-dd01-8fc3-90a2-d5a36579237c",
+    "uuid": "add4777b-8199-8bd8-bf29-ca40b03d74e4",
     "words": [
       "remaining"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "remaining: a schema.org component word, fused from remainingAttendeeCapacity",
-    "uuid": "aa7240b5-482a-8dbe-abc9-61adb16116ca",
+    "source": "Use when reasoning about remaining as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "ad0157f6-1489-8d23-bf22-c2a93433acfa",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "remaining",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "remainingattendeecapacity"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "remaining: a schema.org component word, fused from remainingAttendeeCapacity"
+      "en": "Use when reasoning about remaining as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

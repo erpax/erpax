@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "bike",
-    "uuid": "518b67da-49b1-8d2f-a8d5-a3ca8f5151ec",
+    "uuid": "dcbcff65-9da7-823d-87fa-6902c7e6c0f4",
     "words": [
       "bike"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "bike: a schema.org component word, fused from BikeStore",
-    "uuid": "422a60ff-6a8a-8bee-9ffe-85978d3354a7",
+    "source": "Use when reasoning about bike as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "065a029c-865a-8691-8869-7ba109291ffc",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "bike",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "bikestore"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "bike: a schema.org component word, fused from BikeStore"
+      "en": "Use when reasoning about bike as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

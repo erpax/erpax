@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "purpose",
-    "uuid": "4a2dfdb2-179f-85c3-b9ff-6ffab9e55a7b",
+    "uuid": "c52bd316-b98c-885c-8ce3-f2874579281a",
     "words": [
       "purpose"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "purpose: a schema.org component word, fused from MedicalDevicePurpose",
-    "uuid": "d3f87d86-4a30-844f-925a-1ef7f738fa59",
+    "source": "Use when reasoning about purpose as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "dea0540b-2abc-89ce-8230-fcc5b4dad413",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "purpose",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "medicaldevicepurpose"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "purpose: a schema.org component word, fused from MedicalDevicePurpose"
+      "en": "Use when reasoning about purpose as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

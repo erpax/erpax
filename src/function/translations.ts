@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "function",
-    "uuid": "f4b75376-54dd-8403-8d62-b13a20be3046",
+    "uuid": "1c3829a4-686c-87cb-bbab-dc6dcde8978b",
     "words": [
       "function"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "function: a schema.org component word, fused from BusinessFunction, businessFunction, hasMolecularFunction",
-    "uuid": "9fe78f78-f14b-8e0c-86b3-05b86c747d54",
+    "source": "Use when reasoning about function as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "ae90a38f-b74c-8494-95d9-f702aab254d9",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "function",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "businessfunction",
-      "businessfunction",
-      "hasmolecularfunction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "function: a schema.org component word, fused from BusinessFunction, businessFunction, hasMolecularFunction"
+      "en": "Use when reasoning about function as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

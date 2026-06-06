@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "stupid",
-    "uuid": "1420fbda-fe4c-80f8-9936-6466d0c3de18",
+    "uuid": "78311084-88aa-880f-a5ce-f379249ebecf",
     "words": [
       "stupid"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "stupid: a schema.org component word, fused from StupidType, stupidProperty",
-    "uuid": "6b79cb51-0677-80f4-8c6e-e555b0a7b94d",
+    "source": "Use when reasoning about stupid as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "ba29d7a0-2914-86b1-9f05-2bf5113aa552",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "stupid",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "stupidtype",
-      "stupidproperty"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "stupid: a schema.org component word, fused from StupidType, stupidProperty"
+      "en": "Use when reasoning about stupid as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

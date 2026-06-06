@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "programming",
-    "uuid": "e7918d57-f4f2-8e19-9fda-4cb2d24212e8",
+    "uuid": "151f81f3-1f31-868d-a115-378d0264d4a0",
     "words": [
       "programming"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "programming: a schema.org component word, fused from programmingLanguage, programmingModel",
-    "uuid": "c9d7c3ec-8eba-864b-8da5-b0745a1f81ef",
+    "source": "Use when reasoning about programming as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "0b0494e5-5440-8b92-a758-cb859057cae6",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "programming",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "programminglanguage",
-      "programmingmodel"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "programming: a schema.org component word, fused from programmingLanguage, programmingModel"
+      "en": "Use when reasoning about programming as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

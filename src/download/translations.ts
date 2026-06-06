@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "download",
-    "uuid": "5460c2c1-a71b-8f9b-8107-fd4535142401",
+    "uuid": "4706f157-5b10-8915-876a-a0ac4f2251a8",
     "words": [
       "download"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "download: a schema.org component word, fused from DataDownload, DownloadAction, downloadUrl",
-    "uuid": "1350b9c9-8927-88ae-9929-6af9f322b2a0",
+    "source": "Use when reasoning about download as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "2bcb61d1-4c97-8ea3-aad4-cbc62c3767d1",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "download",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "datadownload",
-      "downloadaction",
-      "downloadurl"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "download: a schema.org component word, fused from DataDownload, DownloadAction, downloadUrl"
+      "en": "Use when reasoning about download as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

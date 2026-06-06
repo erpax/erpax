@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "lab",
-    "uuid": "723890a4-2e08-8955-ad3b-e1f508c55e92",
+    "uuid": "08cbebc2-4fa0-829a-8f37-c3e20cd25fe3",
     "words": [
       "lab"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "lab: a schema.org component word, fused from DiagnosticLab",
-    "uuid": "6eade593-ab8a-83da-af7b-f3542a6fcde7",
+    "source": "Use when reasoning about lab as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "0ac2d727-3dc4-8795-8f66-48e84c42d977",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "lab",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "diagnosticlab"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "lab: a schema.org component word, fused from DiagnosticLab"
+      "en": "Use when reasoning about lab as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

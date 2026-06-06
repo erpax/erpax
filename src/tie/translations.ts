@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "tie",
-    "uuid": "dfe114cf-ea28-83ee-9102-0a9eb171679a",
+    "uuid": "da7038e0-10db-8fca-b8fa-0f596124a8cc",
     "words": [
       "tie"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "tie: a schema.org component word, fused from TieAction",
-    "uuid": "3d193c25-5dcc-8761-96d0-892f60b56603",
+    "source": "Use when reasoning about tie as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "0555def2-b5c7-8f45-8c6e-56837c02b7cd",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "tie",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "tieaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "tie: a schema.org component word, fused from TieAction"
+      "en": "Use when reasoning about tie as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -48,11 +48,19 @@ bash scripts/payload-verify-types.sh
 # unanswered question (the docs build's ignoreDeadLinks twin, but cheap + matter-side).
 # Dead links slipped through twice this build ([[skill]], [[links]]) because this gate
 # was not enforced at push. Orphans stay advisory — gate on DEAD links only.
-AURA_OUT="$(node .claude/skills/aura/scan.mjs 2>/dev/null || true)"
+# Canonical scanner is src/aura/scan.mjs (matches package.json aura:scan + confirm.mjs);
+# the old .claude/skills/aura/scan.mjs path does NOT resolve in the live tree. FAIL-CLOSED:
+# the `|| true` is dropped so a scanner CRASH aborts under `set -e` (cannot-run = did-not-pass)
+# rather than being swallowed into an empty AURA_OUT.
+AURA_OUT="$(node src/aura/scan.mjs 2>/dev/null)"
 case "$AURA_OUT" in
   *"gap = 0 "*) : ;;
   *) echo "✖ aura: dead [[link]](s) found (gap>0) — run: pnpm aura:scan"; exit 1 ;;
 esac
+# Import-convention RATCHET (the wire): a non-index/deep import lowers coverage; this fails
+# the push when the live non-index count EXCEEDS the committed baseline. Fail-closed (a scan
+# error exits non-zero). The convention now HOLDS because this gate holds it.
+cross-env NODE_OPTIONS="--no-deprecation --import=tsx/esm" node src/convention/import/gate.mjs
 # Skill frontmatter YAML safety — an unquoted description with ": " breaks the docs
 # YAML parse (bit access/sacred). Another step of the one horo gate (who can't dance can't join).
 node scripts/check-skill-frontmatter.mjs

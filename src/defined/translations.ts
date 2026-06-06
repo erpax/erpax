@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "defined",
-    "uuid": "233ef87f-ea39-8794-84a6-f0fd21af7c61",
+    "uuid": "bbfc6683-2ef5-8999-aa5d-2fa3fea97bab",
     "words": [
       "defined"
     ],
@@ -17,25 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "defined: a schema.org component word, fused from DefinedRegion, DefinedTerm, DefinedTermSet, hasDefinedTerm, inDefinedTermSet",
-    "uuid": "7d06a00e-92f2-8d4c-b864-ed07aa168484",
+    "source": "Use when reasoning about defined as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "8c407b5f-dc05-8380-9887-edcb0a02ced9",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "defined",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "definedregion",
-      "definedterm",
-      "definedtermset",
-      "hasdefinedterm",
-      "indefinedtermset"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "defined: a schema.org component word, fused from DefinedRegion, DefinedTerm, DefinedTermSet, hasDefinedTerm, inDefinedTermSet"
+      "en": "Use when reasoning about defined as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

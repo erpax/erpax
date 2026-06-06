@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "complex",
-    "uuid": "1794e057-00ca-8eaf-9370-291619f46caf",
+    "uuid": "95a1c89b-7814-8321-a35a-0c0b5beeb55a",
     "words": [
       "complex"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "complex: a schema.org component word, fused from ApartmentComplex, TennisComplex",
-    "uuid": "20e167bd-c92f-8708-b250-d739eeae2ced",
+    "source": "Use when reasoning about complex as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "2b717c6c-ed73-864b-a8b0-ef3a2f8adb86",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "complex",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "apartmentcomplex",
-      "tenniscomplex"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "complex: a schema.org component word, fused from ApartmentComplex, TennisComplex"
+      "en": "Use when reasoning about complex as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

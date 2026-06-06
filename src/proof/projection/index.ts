@@ -11,9 +11,13 @@
  * private key, the pre-image — from the positive. Reconstructing order from a
  * maximal-entropy projection IS reverse entropy, and by the 2nd law it is the
  * costliest direction. Its price is the external anchor erpax borrows
- * (services/anchor): rfc3161-ecdsa-p256 ⇒ 2^128, blockchain-pow ⇒ unbounded
- * (cumulative proof-of-work). For the biggest blockchain the entire unclaimed
- * bounty sitting on exposed public keys is the live proof nobody pays it.
+ * (services/anchor) and is FINITE OR UNBOUNDED STRICTLY BY THAT ANCHOR — never
+ * unbounded by default: `none` ⇒ 0 (no anchor pins nothing), rfc3161-ecdsa-p256
+ * ⇒ 2^128 (finite), blockchain-pow ⇒ unbounded (cumulative proof-of-work). Only
+ * under blockchain-pow is the inverse unbounded; for the biggest blockchain the
+ * entire unclaimed bounty sitting on exposed public keys is the live proof nobody
+ * pays it. The proof's `note` always names the ACTUAL `anchorKind` so a finite
+ * anchor never inherits the unbounded wording (ground-don't-assert).
  *
  * The 106-bit content-digest second-preimage (services/tamper-cost ERPAX_DIGEST_BITS)
  * is the CHEAPER hash-collision path — the honest overall forge floor — but it is
@@ -74,10 +78,16 @@ export function projectionProof(anchorKind: AnchorKind = 'blockchain-pow'): Proj
   const deterministic = uuid === computeContentUuid(SAMPLE, PROJECTION_TENANT)
   const strength = ANCHOR_STRENGTH_BITS[anchorKind]
   const unbounded = !Number.isFinite(strength)
+  // The inverse cost is STRICTLY a function of the supplied anchor — surfaced in
+  // prose so a finite (or absent) anchor never inherits the "unbounded" wording.
+  const inverseCost = unbounded
+    ? `unbounded (cumulative proof-of-work — ${anchorKind})`
+    : strength === 0
+      ? `0 — no anchor (${anchorKind}) pins nothing, so the inverse is NOT a maximum and the store is a free rewrite`
+      : `a finite 2^${strength} (${anchorKind})`
   return {
     space: 'uuid-matrix',
-    claim:
-      'The maximum tamper cost is the inverse projection — recovering the analog negative (the private key) from its public positive on the uuid matrix.',
+    claim: `Under the ${anchorKind} anchor the maximum tamper cost is the inverse projection — recovering the analog negative (the private key) from its public positive on the uuid matrix costs ${inverseCost}.`,
     forward: {
       sample: JSON.stringify(SAMPLE),
       uuid,
@@ -93,8 +103,8 @@ export function projectionProof(anchorKind: AnchorKind = 'blockchain-pow'): Proj
       binding: anchorBinding(anchorKind, ERPAX_DIGEST_BITS),
     },
     reverseEntropy:
-      'Forward projection mints an atom (content → uuid) for one hash — reverse entropy bought cheaply through the trapdoor (the held key/content). Recovering the analog negative WITHOUT the key costs the anchor: blockchain-pow ⇒ unbounded. Order created vs entropy spent, balanced double-entry.',
+      'Forward projection mints an atom (content → uuid) for one hash — reverse entropy bought cheaply through the trapdoor (the held key/content). Recovering the analog negative WITHOUT the key costs the anchor, and ONLY blockchain-pow makes it unbounded; a finite anchor (e.g. rfc3161-ecdsa-p256 ⇒ 2^128) caps it, and no anchor (none ⇒ 0) leaves no cost at all. Order created vs entropy spent, balanced double-entry.',
     note:
-      'Forward (project) is free + deterministic; the inverse (decrypt the private key / forge the anchor — the analog negative) is the maximum. The 106-bit digest second-preimage is the cheaper hash-collision path, not the maximum — the anchor is. For the biggest blockchain the anchor is cumulative proof-of-work: unbounded.',
+      `Forward (project) is free + deterministic; the inverse (decrypt the private key / forge the anchor — the analog negative) costs ${inverseCost} under the supplied ${anchorKind} anchor. The honest overall forge floor is min(106-bit digest, anchor) = 2^${anchoredFloorLog2(anchorKind, ERPAX_DIGEST_BITS)}. The 106-bit digest second-preimage is the cheaper hash-collision path${unbounded ? ' — and only this cumulative-proof-of-work anchor makes the inverse the unbounded maximum' : '; this finite anchor is the maximum, NOT a default-infinity'}.`,
   }
 }

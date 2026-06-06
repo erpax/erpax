@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "supplier",
-    "uuid": "715616ff-fc0f-8da1-a46b-2bcfd4acab7a",
+    "uuid": "11f966a6-86bd-8ec8-ad14-8457bc79d8c5",
     "words": [
       "supplier"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "supplier: a schema.org component word, fused from eligibleWithSupplier",
-    "uuid": "f297fcc7-ce01-8513-95bd-94f180a221d5",
+    "source": "Use when reasoning about supplier as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "db5d8f84-06aa-8f7c-ad35-5491c9535ecd",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "supplier",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "eligiblewithsupplier"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "supplier: a schema.org component word, fused from eligibleWithSupplier"
+      "en": "Use when reasoning about supplier as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

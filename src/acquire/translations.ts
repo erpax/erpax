@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "acquire",
-    "uuid": "c4f3eb77-c272-8a95-8901-c61deb510b9a",
+    "uuid": "3d42582f-c007-82ce-a8ac-92a2b0f9ba8e",
     "words": [
       "acquire"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "acquire: a schema.org component word, fused from acquireLicensePage",
-    "uuid": "954003fa-3a21-85ab-8667-83e82e80b6fd",
+    "source": "Use when reasoning about acquire as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "3163bd1e-c088-8a65-adc2-bded24f38038",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "acquire",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "acquirelicensepage"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "acquire: a schema.org component word, fused from acquireLicensePage"
+      "en": "Use when reasoning about acquire as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

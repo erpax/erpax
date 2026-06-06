@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "coding",
-    "uuid": "50f00199-3e53-8492-9649-f2de2cf0243f",
+    "uuid": "4cb6b71c-dd52-85d8-92a4-103300170bd3",
     "words": [
       "coding"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "coding: a schema.org component word, fused from codingSystem",
-    "uuid": "f2498a3c-445a-8496-9a5d-ed4f157969a1",
+    "source": "Use when reasoning about coding as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "b3200bbf-9305-8c4e-9808-b863f085d46f",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "coding",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "codingsystem"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "coding: a schema.org component word, fused from codingSystem"
+      "en": "Use when reasoning about coding as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "continuation",
-    "uuid": "e2a0ccf3-bac8-8590-9676-8ddb74551e1d",
+    "uuid": "9a5acd66-7cca-891b-a9b4-11571d08cbec",
     "words": [
       "continuation"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "continuation: a schema.org component word, fused from tocContinuation",
-    "uuid": "116a9e1d-7979-85c2-ba85-14f1b28f2287",
+    "source": "Use when reasoning about continuation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "2c003763-6d16-8f98-b4e9-4b5e56466aeb",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "continuation",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "toccontinuation"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "continuation: a schema.org component word, fused from tocContinuation"
+      "en": "Use when reasoning about continuation as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "comedy",
-    "uuid": "10584b13-fefc-80fe-87e8-93f85b3fe87c",
+    "uuid": "a3dd765a-db7a-8cbd-897e-57e59b5267d7",
     "words": [
       "comedy"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "comedy: a schema.org component word, fused from ComedyClub, ComedyEvent",
-    "uuid": "718a1e73-c5c5-8e5e-9825-5d7ce45f0524",
+    "source": "Use when reasoning about comedy as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "a7643d80-2c64-827d-8439-d2bef242912d",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "comedy",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "comedyclub",
-      "comedyevent"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "comedy: a schema.org component word, fused from ComedyClub, ComedyEvent"
+      "en": "Use when reasoning about comedy as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

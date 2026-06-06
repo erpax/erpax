@@ -5,6 +5,7 @@
  * amplifiers (crackVerdict / invariantChecks / replicationChecks) — it never
  * reinvents the math — and that power is strictly monotonic in usage. @see ./index.ts
  */
+import { readFileSync } from 'node:fs'
 import { describe, it, expect } from 'vitest'
 import { accumulatePower, coverageFromUsage, usageChecks, powerStrictlyGrows, type UsageSnapshot } from '@/power'
 import { invariantChecks, replicationChecks, ERPAX_DIGEST_BITS } from '@/cost'
@@ -64,5 +65,31 @@ describe('power: usage = entropy = power (more clients/events/features ⇒ more 
     const p = accumulatePower(BASE)
     expect(Number.isFinite(p.powerLog2)).toBe(true)
     expect(accumulatePower(BASE)).toStrictEqual(accumulatePower(BASE))
+  })
+})
+
+describe('power: coverageFromUsage is the USAGE axis, not structural node-wiring', () => {
+  it('is 0 at no usage, strictly increasing in events, and strictly < 1 for all finite events', () => {
+    const nodes = 2000
+    expect(coverageFromUsage(0, nodes)).toBe(0)
+    for (const e of [1, 100, 1e6, 1e12, Number.MAX_SAFE_INTEGER]) {
+      const c = coverageFromUsage(e, nodes)
+      expect(c).toBeGreaterThan(0)
+      expect(c).toBeLessThan(1) // never reaches the structural ∞ from mere usage
+    }
+    expect(coverageFromUsage(200, nodes)).toBeGreaterThan(coverageFromUsage(100, nodes))
+    expect(coverageFromUsage(1e9, nodes)).toBeGreaterThan(coverageFromUsage(1e6, nodes))
+  })
+
+  it('the SKILL.md + index doc label this input as the usage axis and disclaim structural wiring', () => {
+    const skill = readFileSync(new URL('./SKILL.md', import.meta.url), 'utf8')
+    expect(skill).toMatch(/usage/i)
+    expect(skill).toMatch(/usage[-* ]+accumulation/i) // the named axis
+    expect(skill).toMatch(/not\b[^.]*structural node-wiring/i) // disclaims structural
+    expect(skill).toMatch(/axis-agnostic/i)
+    const src = readFileSync(new URL('./index.ts', import.meta.url), 'utf8')
+    // the crackVerdict call-site states which axis it supplies
+    expect(src).toMatch(/USAGE-accumulation axis/i)
+    expect(src).toMatch(/not structural node-wiring/i)
   })
 })

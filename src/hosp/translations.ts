@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "hosp",
-    "uuid": "49c027df-2478-8bb1-90f6-1f06c5300e07",
+    "uuid": "f8feff88-0281-863e-9683-91dffd9b0018",
     "words": [
       "hosp"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "hosp: a schema.org component word, fused from cvdNumC19HospPats",
-    "uuid": "a3e439ea-c1ae-8b67-b799-03d530abf2ee",
+    "source": "Use when reasoning about hosp as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "31e58310-712c-897d-8985-5f47cee8ce90",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "hosp",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "cvdnumc19hosppats"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "hosp: a schema.org component word, fused from cvdNumC19HospPats"
+      "en": "Use when reasoning about hosp as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

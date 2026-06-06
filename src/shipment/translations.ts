@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "shipment",
-    "uuid": "0de8ac63-bf72-8272-a8c4-0fe53088f725",
+    "uuid": "78a4578d-fece-8a77-a156-ab71af8f1dc7",
     "words": [
       "shipment"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one shipment — the singular model of the shipments collection (the plural store); a consignment of goods moved from origin to destination.",
-    "uuid": "cbb4b8b3-e576-8c00-94ef-d5e4eaeb82de",
+    "uuid": "b1993080-2f9b-868d-a1bc-499906b973af",
     "words": [
       "use",
       "when",

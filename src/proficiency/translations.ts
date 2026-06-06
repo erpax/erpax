@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "proficiency",
-    "uuid": "8ab9a53c-da4e-8774-91f5-bab25ad16ff0",
+    "uuid": "9ab3b689-4c17-8832-9b2c-050bb05b7d7a",
     "words": [
       "proficiency"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "proficiency: a schema.org component word, fused from proficiencyLevel",
-    "uuid": "4fd66b4a-1c51-8525-bad9-df24c56d1827",
+    "source": "Use when reasoning about proficiency as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "920bffda-cd28-8c15-9f9d-6317541a1345",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "proficiency",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "proficiencylevel"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "proficiency: a schema.org component word, fused from proficiencyLevel"
+      "en": "Use when reasoning about proficiency as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "summary",
-    "uuid": "a36d609f-4f89-851f-a0a0-d6fbba875e04",
+    "uuid": "4ae95de6-2297-8883-83c7-22c08344921b",
     "words": [
       "summary"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "summary: a schema.org component word, fused from accessibilitySummary, benefitsSummaryUrl",
-    "uuid": "bd62cffe-c79f-8c79-854b-4910d6b1ff3d",
+    "source": "Use when reasoning about summary as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "31fb7538-6724-8f65-8a94-ee6e79629777",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "summary",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "accessibilitysummary",
-      "benefitssummaryurl"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "summary: a schema.org component word, fused from accessibilitySummary, benefitsSummaryUrl"
+      "en": "Use when reasoning about summary as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

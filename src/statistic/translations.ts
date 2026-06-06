@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "statistic",
-    "uuid": "dd01b53c-2c14-80e8-bdc4-3f3dc6158021",
+    "uuid": "89e5cb33-b1e0-899f-8399-f261c7d70097",
     "words": [
       "statistic"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "statistic: a schema.org component word, fused from agentInteractionStatistic, interactionStatistic",
-    "uuid": "4f0bc6f9-c8d0-8161-a12a-a7c8d8267f35",
+    "source": "Use when reasoning about statistic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "0248f6ba-4221-89cc-bf0b-6107131b3ee6",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "statistic",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "agentinteractionstatistic",
-      "interactionstatistic"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "statistic: a schema.org component word, fused from agentInteractionStatistic, interactionStatistic"
+      "en": "Use when reasoning about statistic as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

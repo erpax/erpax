@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "disagree",
-    "uuid": "fbae443b-0fdc-81da-94ef-1d1b8905b5cd",
+    "uuid": "099e8f5e-01c7-866f-8935-04d0158f001e",
     "words": [
       "disagree"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "disagree: a schema.org component word, fused from DisagreeAction",
-    "uuid": "53b14c20-293b-8576-976d-26d06109d469",
+    "source": "Use when reasoning about disagree as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "0271a554-5f56-8b4b-ab20-eabd04015289",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "disagree",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "disagreeaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "disagree: a schema.org component word, fused from DisagreeAction"
+      "en": "Use when reasoning about disagree as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

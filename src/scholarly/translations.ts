@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "scholarly",
-    "uuid": "ef806bb6-2a5e-89ce-8808-da00b4377b03",
+    "uuid": "13083889-652b-8a30-8c38-7898fe3250ee",
     "words": [
       "scholarly"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "scholarly: a schema.org component word, fused from MedicalScholarlyArticle, ScholarlyArticle",
-    "uuid": "56091984-3f5a-8bfb-b641-36b718266ce3",
+    "source": "Use when reasoning about scholarly as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "933cfdea-c1c7-8962-88bf-f1774a290495",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "scholarly",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "medicalscholarlyarticle",
-      "scholarlyarticle"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "scholarly: a schema.org component word, fused from MedicalScholarlyArticle, ScholarlyArticle"
+      "en": "Use when reasoning about scholarly as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

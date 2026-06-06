@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "fulfillment",
-    "uuid": "d9c7c7f0-ec37-813d-9ad3-2eb19539ec08",
+    "uuid": "1081cbb0-6d58-86fc-aa9b-db811c208c41",
     "words": [
       "fulfillment"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "fulfillment: a schema.org component word, fused from FulfillmentTypeEnumeration, fulfillmentType",
-    "uuid": "05b07fa2-2795-876d-939d-d25c36e0f044",
+    "source": "Use when reasoning about fulfillment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "ac312b1e-c566-887e-a05c-9c7e332b5efd",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "fulfillment",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "fulfillmenttypeenumeration",
-      "fulfillmenttype"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "fulfillment: a schema.org component word, fused from FulfillmentTypeEnumeration, fulfillmentType"
+      "en": "Use when reasoning about fulfillment as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "volcano",
-    "uuid": "bebef988-b166-8800-b912-92b04c8a7052",
+    "uuid": "bbecc8a7-a656-802c-96e5-35640d020b9b",
     "words": [
       "volcano"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "A volcano, like Fujisan.",
-    "uuid": "31ff55db-fbe7-8d4b-8ca1-c341c5c6a230",
+    "uuid": "a529814d-0726-863c-86c4-106f2e675466",
     "words": [
       "a",
       "volcano",

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "normal",
-    "uuid": "0ca29ae2-f8a0-8fdf-ad29-e3266f8edea9",
+    "uuid": "3ca77cc3-8ea0-8fbf-a74c-e6fbe7c7cc9a",
     "words": [
       "normal"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "normal: a schema.org component word, fused from normalRange",
-    "uuid": "55e529f5-6cad-84af-8011-e06b8b42e2c8",
+    "source": "Use when reasoning about normal as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "c1a8413b-b6e2-8f7d-9ff1-7fc91d94da85",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "normal",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "normalrange"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "normal: a schema.org component word, fused from normalRange"
+      "en": "Use when reasoning about normal as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

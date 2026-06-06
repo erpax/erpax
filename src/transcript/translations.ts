@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "transcript",
-    "uuid": "fae5fcfc-bbf7-8e8a-9cd1-c4aeb04fbf4e",
+    "uuid": "a3bf64f4-bbca-8ae0-b088-6aa7ee9087a8",
     "words": [
       "transcript"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "If this MediaObject is an AudioObject or VideoObject, the transcript of that object.",
-    "uuid": "250cecc1-c3cd-8a16-81a4-808e20aef1e7",
+    "uuid": "77a94a66-9227-8cab-aa24-1f90c3bace49",
     "words": [
       "if",
       "this",

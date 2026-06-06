@@ -6,20 +6,20 @@ import type { Translation } from '@/translation'
 export const translations: readonly Translation[] = [
   {
     "key": "name",
-    "source": "bg-identifiers",
-    "uuid": "6ee8740a-008d-88a2-a04e-66bcf0bf8c74",
+    "source": "bg-identifier",
+    "uuid": "6421d752-5441-84cf-b27f-820293567626",
     "words": [
       "bg",
-      "identifiers"
+      "identifier"
     ],
     "values": {
-      "en": "bg-identifiers"
+      "en": "bg-identifier"
     }
   },
   {
     "key": "description",
     "source": "Use when validating Bulgarian identity numbers — ЕГН (person), ЕИК/БУЛСТАТ (entity), or decoding birth date and sex from an ЕГН. The entry gate for BG society into erpax (Наредба РД-02-20-9/2012 + БУЛСТАТ two-stage modulo-11).",
-    "uuid": "6518b8c2-0fae-8a36-815d-af288650aeee",
+    "uuid": "aebfcad6-83b8-8f49-9117-12311d2133ee",
     "words": [
       "use",
       "when",

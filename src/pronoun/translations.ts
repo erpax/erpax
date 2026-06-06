@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "pronoun",
-    "uuid": "76b7b712-0fad-822c-be7d-ce08f338c51b",
+    "uuid": "14c0fbda-2a3c-8b26-a578-b66178a63692",
     "words": [
       "pronoun"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one pronoun — the singular model of the pronouns collection (the plural store); a term by which a person chooses to be referred to.",
-    "uuid": "d495f5e2-d305-8d65-8bfb-c3ea990cffda",
+    "uuid": "6e14f7b1-6950-84e9-825a-83d7b79e41fa",
     "words": [
       "use",
       "when",

@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling one movement — the singular model of the movements collection (the plural store); a recorded transfer of stock or value between locations.",
-    "uuid": "6fac705a-170c-8683-b618-c6f7bcd65d71",
+    "uuid": "43f6eeb0-7b28-84d4-857c-489affa665c4",
     "words": [
       "use",
       "when",

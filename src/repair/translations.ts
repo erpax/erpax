@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "repair",
-    "uuid": "b7dceeaf-f721-8c27-b8fd-730b10b48fe7",
+    "uuid": "a77d6696-22f7-828b-8bf9-ecee790a4a7f",
     "words": [
       "repair"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "repair: a schema.org component word, fused from AutoRepair, MotorcycleRepair",
-    "uuid": "8f428c05-24f5-88b7-9306-0968ba86ccc2",
+    "source": "Use when reasoning about repair as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "48afe2ab-6dfb-805a-8afd-e6723c69f01f",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "repair",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "autorepair",
-      "motorcyclerepair"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "repair: a schema.org component word, fused from AutoRepair, MotorcycleRepair"
+      "en": "Use when reasoning about repair as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

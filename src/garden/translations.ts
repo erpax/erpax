@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "garden",
-    "uuid": "1eef778a-9bf0-8bcb-963e-4df6f3b93a10",
+    "uuid": "37f1bed3-a172-870b-8a9a-197a93c4114b",
     "words": [
       "garden"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "garden: a schema.org component word, fused from GardenStore",
-    "uuid": "028cc91d-0b13-880b-8d93-5ca7dcccc838",
+    "source": "Use when reasoning about garden as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "ce154f18-1c0c-87de-9e17-03a45b4ae5b0",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "garden",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "gardenstore"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "garden: a schema.org component word, fused from GardenStore"
+      "en": "Use when reasoning about garden as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

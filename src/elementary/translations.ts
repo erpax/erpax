@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "elementary",
-    "uuid": "09508c2b-5804-89cd-952d-9e2d5e9dbe48",
+    "uuid": "93c18b3b-6e07-88f3-9cf9-dbd7b959e56a",
     "words": [
       "elementary"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "elementary: a schema.org component word, fused from ElementarySchool",
-    "uuid": "4febd05b-8adb-8c3b-800b-cc2c1201fde5",
+    "source": "Use when reasoning about elementary as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "51312a69-b0b7-8a22-939b-fd0cb4757d7a",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "elementary",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "elementaryschool"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "elementary: a schema.org component word, fused from ElementarySchool"
+      "en": "Use when reasoning about elementary as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

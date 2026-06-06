@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "return",
-    "uuid": "2027c703-9660-8eed-a40b-671ff4f345f3",
+    "uuid": "1727599e-a2b7-8703-bd64-f30c31bfa7a6",
     "words": [
       "return"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "return: a schema.org component word, fused from MerchantReturnEnumeration, MerchantReturnPolicy, MerchantReturnPolicySeasonalOverride, ProductReturnEnumeration, ProductReturnPolicy, ReturnAction",
-    "uuid": "1aa6f965-d9b8-8304-9c3b-e05cc5d278da",
+    "source": "Use when reasoning about return as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "f37a9b0d-9cf4-80ae-a3f9-128d65d1fb9a",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "return",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "merchantreturnenumeration",
-      "merchantreturnpolicy",
-      "merchantreturnpolicyseasonaloverride",
-      "productreturnenumeration",
-      "productreturnpolicy",
-      "returnaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "return: a schema.org component word, fused from MerchantReturnEnumeration, MerchantReturnPolicy, MerchantReturnPolicySeasonalOverride, ProductReturnEnumeration, ProductReturnPolicy, ReturnAction"
+      "en": "Use when reasoning about return as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

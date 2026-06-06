@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when modelling a tenant's domain — NOT tenant isolation (the multi-tenant plugin does that), but the domain as the tenant's identity and managed entity: the name that routes the request to the tenant, its hierarchy, status lifecycle, SSL, billing, and — the key — proof of domain ownership, which IS the computational admin grant: prove you control the domain and the tenant is yours.",
-    "uuid": "078df74e-5ed9-8024-95fb-c98178d7cb7c",
+    "uuid": "a7c51d8c-2d7f-82ca-b4d8-def324dcb6f0",
     "words": [
       "use",
       "when",

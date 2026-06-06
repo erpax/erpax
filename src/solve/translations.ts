@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "solve",
-    "uuid": "2615e38b-91fb-89b1-b392-dd9143788f92",
+    "uuid": "4b4aa806-b6fc-8fac-b3f3-26d5e163986b",
     "words": [
       "solve"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "solve: a schema.org component word, fused from SolveMathAction",
-    "uuid": "a8b94487-1770-84d5-8580-cff5bd9510a9",
+    "source": "Use when reasoning about solve as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "8cb94c36-ecda-83e3-9ba7-546933000689",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "solve",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "solvemathaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "solve: a schema.org component word, fused from SolveMathAction"
+      "en": "Use when reasoning about solve as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

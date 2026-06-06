@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "disease",
-    "uuid": "e589e2e1-141e-8685-9f0d-0e6132acedf1",
+    "uuid": "60ee29ff-60b3-8537-8c39-f8deebe0a766",
     "words": [
       "disease"
     ],
@@ -17,24 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "disease: a schema.org component word, fused from InfectiousDisease, associatedDisease, diseasePreventionInfo, diseaseSpreadStatistics",
-    "uuid": "fbd2a7c2-2901-84a7-9589-3cb85078d78e",
+    "source": "Use when reasoning about disease as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "a152e8a7-04de-851e-a96c-70b3df6e4da3",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "disease",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "infectiousdisease",
-      "associateddisease",
-      "diseasepreventioninfo",
-      "diseasespreadstatistics"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "disease: a schema.org component word, fused from InfectiousDisease, associatedDisease, diseasePreventionInfo, diseaseSpreadStatistics"
+      "en": "Use when reasoning about disease as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

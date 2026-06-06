@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "math",
-    "uuid": "a44b845c-dd6a-8d0b-919c-987a880a069d",
+    "uuid": "ec8b01d1-80e2-816b-b802-3efdefe60fc9",
     "words": [
       "math"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "math: a schema.org component word, fused from MathSolver, SolveMathAction, mathExpression",
-    "uuid": "16370cd5-a5af-8e98-b1b2-838b3514ddc2",
+    "source": "Use when reasoning about math as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "c8ba03e2-0bd1-8e1c-99e4-cf918a76a8c0",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "math",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "mathsolver",
-      "solvemathaction",
-      "mathexpression"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "math: a schema.org component word, fused from MathSolver, SolveMathAction, mathExpression"
+      "en": "Use when reasoning about math as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "file",
-    "uuid": "b247fdad-ef54-8c6d-a801-0ff091858ef6",
+    "uuid": "0ac5a363-b626-8be1-ac11-3fc6fc72d561",
     "words": [
       "file"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "file: a schema.org component word, fused from fileFormat, fileSize",
-    "uuid": "a18683bb-490d-8c22-b095-b890d42c830d",
+    "source": "Use when reasoning about file as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "df7bf8b7-b499-8ddc-aa4f-0fe6a94e22f2",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "file",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "fileformat",
-      "filesize"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "file: a schema.org component word, fused from fileFormat, fileSize"
+      "en": "Use when reasoning about file as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

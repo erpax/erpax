@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "sign",
-    "uuid": "222b53ac-436f-814e-9ff8-9d0e5ce7f32a",
+    "uuid": "e1e53939-66c8-89de-a585-7cfe1f4b360d",
     "words": [
       "sign"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "sign: a schema.org component word, fused from MedicalSign, MedicalSignOrSymptom, VitalSign, callSign, distinguishingSign, signDetected",
-    "uuid": "7ba85e13-3a4b-8e31-8bb7-4bcfc3a926fd",
+    "source": "Use when reasoning about sign as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "92940164-ca25-8a73-8ca7-c98f3af9cf21",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "sign",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "medicalsign",
-      "medicalsignorsymptom",
-      "vitalsign",
-      "callsign",
-      "distinguishingsign",
-      "signdetected"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "sign: a schema.org component word, fused from MedicalSign, MedicalSignOrSymptom, VitalSign, callSign, distinguishingSign, signDetected"
+      "en": "Use when reasoning about sign as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

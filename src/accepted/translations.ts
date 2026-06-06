@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "accepted",
-    "uuid": "4c711682-adf8-8f89-bdc9-7ac33e81787c",
+    "uuid": "3e1cd6f1-6632-8951-b3fd-fd308c16092a",
     "words": [
       "accepted"
     ],
@@ -17,25 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "accepted: a schema.org component word, fused from acceptedAnswer, acceptedOffer, acceptedPaymentMethod, currenciesAccepted, paymentAccepted",
-    "uuid": "e2763e92-9cf2-8b9c-babc-5267c92473fc",
+    "source": "Use when reasoning about accepted as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "8dc00b56-3e80-8d07-842e-ea1b2928fc14",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "accepted",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "acceptedanswer",
-      "acceptedoffer",
-      "acceptedpaymentmethod",
-      "currenciesaccepted",
-      "paymentaccepted"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "accepted: a schema.org component word, fused from acceptedAnswer, acceptedOffer, acceptedPaymentMethod, currenciesAccepted, paymentAccepted"
+      "en": "Use when reasoning about accepted as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

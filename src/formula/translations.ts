@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "formula",
-    "uuid": "32dae4f6-e286-8467-97e8-e3c861c875f7",
+    "uuid": "958555c3-c607-84a3-aeb2-ec4e01555a77",
     "words": [
       "formula"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "formula: a schema.org component word, fused from molecularFormula",
-    "uuid": "bfe32cd9-077f-8766-992f-7dfa86fff36f",
+    "source": "Use when reasoning about formula as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "33c5c5e5-a610-8fe9-a66b-c21665e5ca30",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "formula",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "molecularformula"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "formula: a schema.org component word, fused from molecularFormula"
+      "en": "Use when reasoning about formula as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

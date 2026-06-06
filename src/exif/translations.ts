@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "exif",
-    "uuid": "9d7c6de4-a4e2-840e-b902-91b990ff9d4b",
+    "uuid": "bb6afa0e-6fd6-81f9-a279-edd9fc7666f1",
     "words": [
       "exif"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "exif: a schema.org component word, fused from exifData",
-    "uuid": "b043c5c8-f6ce-8450-ab92-afb7e9f12478",
+    "source": "Use when reasoning about exif as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "b1a077f5-b78b-83fb-9b78-671910e32ac4",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "exif",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "exifdata"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "exif: a schema.org component word, fused from exifData"
+      "en": "Use when reasoning about exif as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

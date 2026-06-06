@@ -53,4 +53,25 @@ describe('receipt — the governance receipt IS a uuid (wire all through uuid)',
     expect(v.ok).toBe(false)
     expect(v.brokenAtSeq).toBe(1)
   })
+
+  it('fail-closed: a SHORT decisions array fails (does not leave tail receipts unchecked / throw)', async () => {
+    const d0 = decision({ action: 'read' })
+    const d1 = decision({ action: 'deploy', outcome: 'block' })
+    const r0 = issueReceipt({ decision: d0, head: null, timestampIso: TS })
+    const r1 = issueReceipt({ decision: d1, head: r0, timestampIso: TS })
+    // Pass only one decision for a two-receipt chain. Previously decisions[1]
+    // was undefined → the verifier threw; now the length mismatch is an explicit
+    // verification failure (every receipt's content must be verifiable).
+    const v = await verifyReceiptChain([r0, r1], [d0])
+    expect(v.ok).toBe(false)
+    expect(v.reason).toMatch(/length mismatch/)
+  })
+
+  it('fail-closed: a LONG decisions array fails (extra decisions with no receipt to bind)', async () => {
+    const d0 = decision({ action: 'read' })
+    const r0 = issueReceipt({ decision: d0, head: null, timestampIso: TS })
+    const v = await verifyReceiptChain([r0], [d0, decision({ action: 'extra' })])
+    expect(v.ok).toBe(false)
+    expect(v.reason).toMatch(/length mismatch/)
+  })
 })

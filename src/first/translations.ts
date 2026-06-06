@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "first",
-    "uuid": "407803ef-f6f5-8f87-9679-85833fdd519e",
+    "uuid": "2a5b3690-eed8-824a-b2ed-4fb2fabf31cf",
     "words": [
       "first"
     ],
@@ -17,23 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "first: a schema.org component word, fused from dateVehicleFirstRegistered, firstAppearance, firstPerformance",
-    "uuid": "46b4c854-10ee-8316-b4d6-608fc093b33a",
+    "source": "Use when reasoning about first as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "04dc9ec5-ce13-863d-b883-1d8f427fb404",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "first",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "datevehiclefirstregistered",
-      "firstappearance",
-      "firstperformance"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "first: a schema.org component word, fused from dateVehicleFirstRegistered, firstAppearance, firstPerformance"
+      "en": "Use when reasoning about first as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

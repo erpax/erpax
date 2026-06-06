@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "dose",
-    "uuid": "eca6a932-7bb9-870e-8e73-76792dccb9a0",
+    "uuid": "fb86aea1-1288-8cee-8847-fe863a4c3844",
     "words": [
       "dose"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "dose: a schema.org component word, fused from DoseSchedule, MaximumDoseSchedule, RecommendedDoseSchedule, ReportedDoseSchedule, doseSchedule, doseUnit",
-    "uuid": "80a0593b-672b-83f5-ba56-f55fddadbafb",
+    "source": "Use when reasoning about dose as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "d53b2182-cfbd-8895-bb79-84332dd62f04",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "dose",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "doseschedule",
-      "maximumdoseschedule",
-      "recommendeddoseschedule",
-      "reporteddoseschedule",
-      "doseschedule",
-      "doseunit"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "dose: a schema.org component word, fused from DoseSchedule, MaximumDoseSchedule, RecommendedDoseSchedule, ReportedDoseSchedule, doseSchedule, doseUnit"
+      "en": "Use when reasoning about dose as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

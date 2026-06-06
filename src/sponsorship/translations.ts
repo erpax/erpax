@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "sponsorship",
-    "uuid": "f2ce61bf-4d11-89ee-a701-6b3f2778d2af",
+    "uuid": "7e0ed4b2-f4aa-8d84-8f9b-7426d5387ec1",
     "words": [
       "sponsorship"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "sponsorship: a schema.org component word, fused from hasSponsorshipOffer",
-    "uuid": "5d5b2ab2-a603-8480-8870-073e968a89c9",
+    "source": "Use when reasoning about sponsorship as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "466c06d2-7aa7-8920-b9e4-31a41cd7b86b",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "sponsorship",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "hassponsorshipoffer"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "sponsorship: a schema.org component word, fused from hasSponsorshipOffer"
+      "en": "Use when reasoning about sponsorship as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

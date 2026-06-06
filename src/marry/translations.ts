@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "marry",
-    "uuid": "eda56881-8cf0-81f8-a951-84664c2b034d",
+    "uuid": "d0c8c408-4c04-857a-b703-e1ac1c615679",
     "words": [
       "marry"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "marry: a schema.org component word, fused from MarryAction",
-    "uuid": "ea805e98-61d4-8430-9a6d-ef244bc7e72f",
+    "source": "Use when reasoning about marry as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "709d4dd2-0b68-8bbf-b66a-196d4524257d",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "marry",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "marryaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "marry: a schema.org component word, fused from MarryAction"
+      "en": "Use when reasoning about marry as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

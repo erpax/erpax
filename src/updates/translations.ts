@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "updates",
-    "uuid": "00bca708-64df-8418-9a76-d8cf41cca752",
+    "uuid": "722557bc-9bfa-84bc-a505-6e41c0e37c57",
     "words": [
       "updates"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "updates: a schema.org component word, fused from newsUpdatesAndGuidelines",
-    "uuid": "4c00fe92-3977-84ce-897d-4f6fac49be97",
+    "source": "Use when reasoning about updates as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "4bbe839a-2297-8e69-a5fe-4b6583c8cd08",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "updates",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "newsupdatesandguidelines"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "updates: a schema.org component word, fused from newsUpdatesAndGuidelines"
+      "en": "Use when reasoning about updates as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

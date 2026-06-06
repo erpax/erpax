@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "people",
-    "uuid": "709ac530-811e-8149-bcad-18df57cba9c0",
+    "uuid": "e6e4678b-42de-83d5-b237-d8f76789787c",
     "words": [
       "people"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "people: a schema.org component word, fused from PeopleAudience",
-    "uuid": "7a4be20f-7b4b-8afb-982d-82ac0e0d3b24",
+    "source": "Use when reasoning about people as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "4cae2f9e-9e1d-810f-a92f-574ca4dce441",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "people",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "peopleaudience"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "people: a schema.org component word, fused from PeopleAudience"
+      "en": "Use when reasoning about people as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

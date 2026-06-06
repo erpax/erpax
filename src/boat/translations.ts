@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "boat",
-    "uuid": "5afe268b-1032-8e5e-9002-3f06e3a54414",
+    "uuid": "760d8366-c7cc-8c12-ae63-3cfaf8d20de3",
     "words": [
       "boat"
     ],
@@ -17,25 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "boat: a schema.org component word, fused from BoatReservation, BoatTerminal, BoatTrip, arrivalBoatTerminal, departureBoatTerminal",
-    "uuid": "d4acea62-d0d0-8264-80e2-37be344941bb",
+    "source": "Use when reasoning about boat as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "82ab3b15-1e79-8a14-9193-099cff65cb58",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "boat",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "boatreservation",
-      "boatterminal",
-      "boattrip",
-      "arrivalboatterminal",
-      "departureboatterminal"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "boat: a schema.org component word, fused from BoatReservation, BoatTerminal, BoatTrip, arrivalBoatTerminal, departureBoatTerminal"
+      "en": "Use when reasoning about boat as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

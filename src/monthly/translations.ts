@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "monthly",
-    "uuid": "97005042-aa5a-8ce3-b71c-56ea9a48ad80",
+    "uuid": "55fc283e-82fe-8e25-8f75-a77c312869eb",
     "words": [
       "monthly"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "monthly: a schema.org component word, fused from monthlyMinimumRepaymentAmount",
-    "uuid": "b668a865-ee88-85ef-bc40-c892f1794a90",
+    "source": "Use when reasoning about monthly as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "b661dbb4-e688-8016-88b4-3e68ed23953e",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "monthly",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "monthlyminimumrepaymentamount"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "monthly: a schema.org component word, fused from monthlyMinimumRepaymentAmount"
+      "en": "Use when reasoning about monthly as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

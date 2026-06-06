@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "news",
-    "uuid": "da13ba5e-2fb8-8877-9fa2-c7b2ac8d59d7",
+    "uuid": "727e546b-6ad3-8437-b140-73511a2fda3b",
     "words": [
       "news"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "news: a schema.org component word, fused from AnalysisNewsArticle, AskPublicNewsArticle, BackgroundNewsArticle, NewsArticle, NewsMediaOrganization, OpinionNewsArticle",
-    "uuid": "35468878-a51d-8458-b5b7-26ca81e76532",
+    "source": "Use when reasoning about news as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "afbf61b0-4ac9-8bce-85bb-c25ed7c310d8",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "news",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "analysisnewsarticle",
-      "askpublicnewsarticle",
-      "backgroundnewsarticle",
-      "newsarticle",
-      "newsmediaorganization",
-      "opinionnewsarticle"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "news: a schema.org component word, fused from AnalysisNewsArticle, AskPublicNewsArticle, BackgroundNewsArticle, NewsArticle, NewsMediaOrganization, OpinionNewsArticle"
+      "en": "Use when reasoning about news as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

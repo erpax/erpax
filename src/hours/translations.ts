@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "hours",
-    "uuid": "aa891d18-7750-8c72-b49c-988a9c0bae48",
+    "uuid": "e08756b5-a2a7-892f-8e8e-88af825e19ee",
     "words": [
       "hours"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "hours: a schema.org component word, fused from OpeningHoursSpecification, hoursAvailable, openingHours, openingHoursSpecification, specialOpeningHoursSpecification, workHours",
-    "uuid": "0d600f18-b751-8296-ad6e-509f362d9b67",
+    "source": "Use when reasoning about hours as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "5b2d361e-cb9a-8acf-985a-122ba82044fd",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "hours",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "openinghoursspecification",
-      "hoursavailable",
-      "openinghours",
-      "openinghoursspecification",
-      "specialopeninghoursspecification",
-      "workhours"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "hours: a schema.org component word, fused from OpeningHoursSpecification, hoursAvailable, openingHours, openingHoursSpecification, specialOpeningHoursSpecification, workHours"
+      "en": "Use when reasoning about hours as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

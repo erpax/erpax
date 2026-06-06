@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "seek",
-    "uuid": "a0df9bf6-d361-8014-af66-e812e06adfcc",
+    "uuid": "3990e818-1633-8f12-8145-1432bb2ecbc8",
     "words": [
       "seek"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "seek: a schema.org component word, fused from SeekToAction",
-    "uuid": "904f4a41-f0a6-810b-9f44-6dcb7f46a7b6",
+    "source": "Use when reasoning about seek as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "9bb746ad-b2ca-86c9-b4b8-f69b9b835384",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "seek",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "seektoaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "seek: a schema.org component word, fused from SeekToAction"
+      "en": "Use when reasoning about seek as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

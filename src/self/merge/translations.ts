@@ -19,7 +19,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use when the self WEAVES back to one — all selves dedupe to a single content-uuid, the same thought by two agents merges to one (self-applied merge at forward-coil position 4/weave). The many selves returning toward one.",
-    "uuid": "f70d7e7a-55ff-8642-b3ba-f08f4930cafa",
+    "uuid": "044f125e-ee46-831e-8d54-7d6b9aa09a34",
     "words": [
       "use",
       "when",

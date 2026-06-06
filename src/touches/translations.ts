@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "touches",
-    "uuid": "6eff3651-56a4-8f7a-891c-9997218a5040",
+    "uuid": "cfdc627c-9361-8c73-9516-23f05d6cbc9c",
     "words": [
       "touches"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "touches: a schema.org component word, fused from geoTouches",
-    "uuid": "94885597-e25d-8c3b-89ac-45c84c9048d2",
+    "source": "Use when reasoning about touches as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "32adda4d-2bb5-8e17-bf85-bcf86531d2d4",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "touches",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "geotouches"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "touches: a schema.org component word, fused from geoTouches"
+      "en": "Use when reasoning about touches as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "details",
-    "uuid": "7e2c72a5-2261-8026-8786-48a82bddd60e",
+    "uuid": "cc73e3fc-dd6d-8e9c-a2a5-de6da52de2c1",
     "words": [
       "details"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "details: a schema.org component word, fused from BedDetails, EnergyConsumptionDetails, OfferShippingDetails, hasEnergyConsumptionDetails, labelDetails, shippingDetails",
-    "uuid": "e87645a0-97b7-8cb5-9383-4c863e35e7e9",
+    "source": "Use when reasoning about details as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "4651479d-74f9-8c5c-a231-aa472eb52aa3",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "details",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "beddetails",
-      "energyconsumptiondetails",
-      "offershippingdetails",
-      "hasenergyconsumptiondetails",
-      "labeldetails",
-      "shippingdetails"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "details: a schema.org component word, fused from BedDetails, EnergyConsumptionDetails, OfferShippingDetails, hasEnergyConsumptionDetails, labelDetails, shippingDetails"
+      "en": "Use when reasoning about details as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

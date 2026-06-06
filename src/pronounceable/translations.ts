@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "pronounceable",
-    "uuid": "0b302f27-7547-89a0-84dd-4823ee1b13c1",
+    "uuid": "c44ae00d-9a83-807e-b69d-84538ee1246b",
     "words": [
       "pronounceable"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "pronounceable: a schema.org component word, fused from PronounceableText",
-    "uuid": "86badd67-a12b-8be5-b5f2-f7b8f7fcb5c1",
+    "source": "Use when reasoning about pronounceable as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "b5d9c06a-bc4b-8d89-bc90-62584ab9bbb4",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "pronounceable",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "pronounceabletext"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "pronounceable: a schema.org component word, fused from PronounceableText"
+      "en": "Use when reasoning about pronounceable as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

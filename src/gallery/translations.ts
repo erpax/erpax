@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "gallery",
-    "uuid": "1f4631a7-23e4-809f-9942-214e6ea866ff",
+    "uuid": "8fd02d1a-2f1d-8e16-b787-e4582e2492bb",
     "words": [
       "gallery"
     ],
@@ -17,24 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "gallery: a schema.org component word, fused from ArtGallery, ImageGallery, MediaGallery, VideoGallery",
-    "uuid": "28cdf920-12d4-8d05-9bb6-4722e4afb802",
+    "source": "Use when reasoning about gallery as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "5bef9459-9c99-8b69-8818-08dcbd4fe21d",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "gallery",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "artgallery",
-      "imagegallery",
-      "mediagallery",
-      "videogallery"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "gallery: a schema.org component word, fused from ArtGallery, ImageGallery, MediaGallery, VideoGallery"
+      "en": "Use when reasoning about gallery as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

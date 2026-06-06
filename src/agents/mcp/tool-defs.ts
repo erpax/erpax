@@ -185,7 +185,21 @@ import { checkTorusBounded, traceTorusRoundTrip, TORUS_DEFAULT_ENVELOPE, TORUS_V
 import {
   buildDryProofBundle, publishDryProofBundle, getCurrentProofBundle,
   checkDryProofPublished, asFederationEnvelope, MAX_PROOF_AGE_HOURS,
+  type CorpusSelfProof,
 } from '@/proof/dry-proof'
+// The corpus self-proof cluster — collider (joint convention coverage),
+// strength (DRY×slices), emergence (dualities forged). They read the live src
+// tree (fs), so they run HERE in the Node MCP handler and the resulting plain
+// numbers are passed into buildDryProofBundle, which stays fs-free for the edge.
+import { corpusCollider } from '@/collider'
+import { corpusStrength } from '@/strength'
+import { emergenceCoverage } from '@/emergence'
+// Multi-currency GL (FX gain/loss + IAS-21/ASC-830 revaluation) and bulk
+// import/export + Playwright test-artifact uploader — wired to real consumers.
+import { multiCurrencyService } from '@/multi/currency.service'
+import { enqueueBulkOperation, type BulkFormat, type BulkOperationKind } from '@/bulk/op'
+import { uploadTestArtifacts } from '@/capture/media'
+import * as allCollections from '@/collections'
 import {
   LAW_CATALOG, buildAgentLawProfile, buildAllAgentLawProfiles, checkAgentLawCoverage,
 } from '@/architecture/invariant/by-agent'
@@ -236,6 +250,37 @@ export interface ErpaxMcpTool {
 
 const text = (s: string) => ({ content: [{ text: s, type: 'text' as const }] })
 const json = (v: unknown) => text(JSON.stringify(v, null, 2))
+
+/**
+ * Resolve the live corpus self-proof (collider/strength/emergence) at BUILD time
+ * (Node — these read the src tree via fs). The numbers GROUND the proof bundle's
+ * tamper-cost coverage instead of a hardcoded floor. FAIL-CLOSED: if the tree scan
+ * is unavailable (e.g. invoked outside a checkout), return undefined so the bundle
+ * degrades to the honest 2^106 digest floor rather than crashing or over-claiming.
+ */
+function resolveCorpusSelfProof(): CorpusSelfProof | undefined {
+  try {
+    return {
+      collider: corpusCollider(),
+      strength: corpusStrength(),
+      emergence: emergenceCoverage(),
+    }
+  } catch {
+    return undefined
+  }
+}
+
+/**
+ * The known Payload collection slugs, computed from the collections module
+ * (the SAME `Object.values(allCollections)` the config registers). The bulk
+ * tool validates `targetCollection` against this set so an arbitrary slug can
+ * never reach `payload.create` (fail-closed; tenant-isolation guard).
+ */
+const KNOWN_COLLECTION_SLUGS: ReadonlySet<string> = new Set(
+  (Object.values(allCollections) as Array<{ slug?: unknown }>)
+    .map((c) => c.slug)
+    .filter((s): s is string => typeof s === 'string'),
+)
 
 /**
  * Derive the caller's OWN footprint: fan the computed identity-bindings (schema-derived)
@@ -658,6 +703,58 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
         return json(checkSelfAccountingComplete(platformTenantId as string))
       },
     },
+    // ── Multi-currency GL — IAS-21 / ASC-830 (wire the FX service) ──
+    {
+      name: 'erpax.accounting.currencySetup',
+      description: 'Establish a tenant\'s functional/reporting currency profile (base + supported + unrealized-gain account) for FX translation. Derives missing fields from the tenant country via the canonical regional defaults. IFRS IAS-21 (functional currency) + US-GAAP ASC-830 (reporting currency) + ISO-4217 currency-codes.',
+      parameters: {
+        tenantId: z.string(),
+        baseCurrency: z.string().optional(),
+        supportedCurrencies: z.array(z.string()).optional(),
+        unrealizedGainAccountId: z.string().optional(),
+        realizedGainAccountId: z.string().optional(),
+        tenantCountry: z.string().optional(),
+      },
+      async handler(args, req) {
+        // db-dependent (downstream journalEntryService uses the Local API); the
+        // req reference also routes it to the integration-test lane via self-test.
+        void req.payload
+        const config = await multiCurrencyService.setupCurrencyConfig(
+          args.tenantId as string,
+          {
+            tenantId: args.tenantId as string,
+            ...(args.baseCurrency !== undefined ? { baseCurrency: args.baseCurrency as never } : {}),
+            ...(args.supportedCurrencies !== undefined ? { supportedCurrencies: args.supportedCurrencies as never } : {}),
+            ...(args.unrealizedGainAccountId !== undefined ? { unrealizedGainAccountId: args.unrealizedGainAccountId as string } : {}),
+            ...(args.realizedGainAccountId !== undefined ? { realizedGainAccountId: args.realizedGainAccountId as string } : {}),
+          },
+          args.tenantCountry as string | undefined,
+        )
+        return json(config)
+      },
+    },
+    {
+      name: 'erpax.accounting.currencyRevalue',
+      description: 'Run the month-end FX gain/loss revaluation for a tenant: compute the period-end currency adjustments then post the (balanced) gain/loss journal entry to the GL via the canonical journal-entry service. IFRS IAS-21 §28-§34 (exchange differences) + US-GAAP ASC-830-20 (foreign-currency transactions) + ISO-8601 period-end date.',
+      parameters: {
+        tenantId: z.string(),
+        periodEnd: z.string(),
+        tenantCountry: z.string().optional(),
+      },
+      async handler(args, req) {
+        void req.payload // db-dependent — posts real journal entries via getPayload()
+        const tenantId = args.tenantId as string
+        // Ensure a currency profile exists (lazy-init from country defaults) so the
+        // adjustment + posting path can resolve the base currency + gain account.
+        multiCurrencyService.getOrInitConfig(tenantId, args.tenantCountry as string | undefined)
+        const adjustment = await multiCurrencyService.calculateMonthEndCurrencyAdjustments(
+          tenantId,
+          new Date(args.periodEnd as string),
+        )
+        const journalEntryId = await multiCurrencyService.postCurrencyAdjustments(tenantId, adjustment)
+        return json({ journalEntryId, status: adjustment.status, totalGain: adjustment.totalGain, totalLoss: adjustment.totalLoss })
+      },
+    },
     // ── Slice DDDDDD — DID resolver ──
     {
       name: 'erpax.did.create',
@@ -850,6 +947,65 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
       description: 'Slice MMMMMM: parse a federation-broadcast ndjson bundle into PageSeed[] and return it for ingestion into the local Payload pages collection.',
       parameters: { ndjson: z.string() },
       async handler({ ndjson }) { return json(importMediaBundle(ndjson as string)) },
+    },
+    {
+      name: 'erpax.website.uploadTestArtifacts',
+      description: 'Walk a Playwright test-results directory (manifest.json + .png/.webm), upload each screenshot/video — and a generated WebVTT subtitle track per video — to the Media collection, and return the Media id map so the product-pages seed can reference them in hero.media. Node/CI only (reads the filesystem; not edge-safe). W3C WebVTT + WCAG-2.1 §1.2.2 captions + ISO 19011 audit-evidence.',
+      parameters: {
+        artifactsDir: z.string(),
+        tenantId: z.string().optional(),
+        manifestFile: z.string().optional(),
+      },
+      async handler(args, req) {
+        void req.payload // db-dependent (writes Media) + filesystem-reading ⇒ Node-only, self-test skips it
+        const result = await uploadTestArtifacts(
+          req.payload,
+          args.artifactsDir as string,
+          {
+            ...(args.tenantId !== undefined ? { tenantId: args.tenantId as string } : {}),
+            ...(args.manifestFile !== undefined ? { manifestFile: args.manifestFile as string } : {}),
+          },
+        )
+        return json(result)
+      },
+    },
+    // ── Bulk operations — unified CSV/EDI/camt.053/pain.001 import/export ──
+    {
+      name: 'erpax.bulk.enqueue',
+      description: 'Enqueue a bulk import/export/reprocess/reverse operation (CSV / xlsx / json(l) / UBL / CII / camt.053-054 / pain.001-008 / EDIFACT / PDF-OCR). Writes an audit-events row immediately (operation visible before the queue consumer wakes) and returns the operationId for progress tracking. ISO 20022 + EN-16931 + RFC 4180 + SOX §404 import-completeness.',
+      parameters: {
+        tenantId: z.string(),
+        targetCollection: z.string(),
+        kind: z.enum(['import', 'export', 'reprocess', 'reverse']),
+        format: z.enum(['csv', 'xlsx', 'json', 'jsonl', 'xml_ubl', 'xml_cii', 'camt_053', 'camt_054', 'pain_001', 'pain_008', 'edifact', 'pdf_ocr']),
+        sourceUrl: z.string().optional(),
+        sourceContent: z.string().optional(),
+        operationId: z.string().optional(),
+        notifyUserId: z.string().optional(),
+      },
+      async handler(args, req) {
+        // FAIL-CLOSED: never let an arbitrary slug reach payload.create — validate
+        // against the computed known-collection set before enqueue (tenant guard).
+        const targetCollection = args.targetCollection as string
+        if (!KNOWN_COLLECTION_SLUGS.has(targetCollection)) {
+          return json({ ok: false, reason: `unknown targetCollection '${targetCollection}'` })
+        }
+        const result = await enqueueBulkOperation(
+          req.payload,
+          {
+            tenantId: args.tenantId as string,
+            targetCollection,
+            kind: args.kind as BulkOperationKind,
+            format: args.format as BulkFormat,
+            ...(args.sourceUrl !== undefined ? { sourceUrl: args.sourceUrl as string } : {}),
+            ...(args.sourceContent !== undefined ? { sourceContent: args.sourceContent as string } : {}),
+            ...(args.operationId !== undefined ? { operationId: args.operationId as string } : {}),
+            ...(args.notifyUserId !== undefined ? { notifyUserId: args.notifyUserId as string } : {}),
+          },
+          req,
+        )
+        return json(result)
+      },
     },
     // ── Slice NNNNNN — SEO-as-vortices (Law 29) ──
     {
@@ -2081,24 +2237,26 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     // ── Slice DDDDDDD — public DRY conformance proof (Law 44) ──
     {
       name: 'erpax.platform.dryProofBuild',
-      description: 'Per user "now when al is dry clean in theory tests need to prove it and present it to the world" — run every conservation invariant + every MCP self-test; roll into a Schema.org Dataset JSON-LD bundle (W3C JSON-LD 1.1 + W3C VC Data Model 2.0); content-uuid the bundle (Conservation Law 8). Returns the bundle without publishing.',
+      description: 'Per user "now when al is dry clean in theory tests need to prove it and present it to the world" — run every conservation invariant + every MCP self-test; ground the tamper-cost in the LIVE corpus self-proof (collider joint convention coverage + strength + emergence, read from the tree); roll into a Schema.org Dataset JSON-LD bundle (W3C JSON-LD 1.1 + W3C VC Data Model 2.0); content-uuid the bundle (Conservation Law 8). Returns the bundle without publishing.',
       parameters: { origin: z.string() },
       async handler({ origin }, req) {
         const bundle = await buildDryProofBundle({
           invariantCtx: { payload: req.payload },
           tools, origin: origin as string,
+          corpusSelfProof: resolveCorpusSelfProof(),
         })
         return json(bundle)
       },
     },
     {
       name: 'erpax.platform.dryProofPublish',
-      description: 'Slice DDDDDDD — build the proof bundle AND register it as an SeoVortexFace at /proof/ (W3C Microdata 1.1 + Open Graph). After this, anyone hitting /proof/ can verify the conformance themselves; federation peers can ingest the bundle directly (slice AAAAAA).',
+      description: 'Slice DDDDDDD — build the proof bundle (tamper-cost grounded in the live corpus self-proof: collider/strength/emergence) AND register it as an SeoVortexFace at /proof/ (W3C Microdata 1.1 + Open Graph). After this, anyone hitting /proof/ can verify the conformance themselves; federation peers can ingest the bundle directly (slice AAAAAA).',
       parameters: { origin: z.string() },
       async handler({ origin }, req) {
         const bundle = await publishDryProofBundle({
           invariantCtx: { payload: req.payload },
           tools, origin: origin as string,
+          corpusSelfProof: resolveCorpusSelfProof(),
         })
         return json({ ok: true, contentUuid: bundle.contentUuid, summary: bundle.summary, publicUrl: bundle.publicUrl })
       },
@@ -2149,13 +2307,8 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
         if (!env?.AUDIT_CHAIN_DO) {
           return text('AUDIT_CHAIN_DO binding not available in this runtime')
         }
-        const { makeMediator } = await import('@/cloudflare')
-        const m = makeMediator({
-          env: env as never,
-          tenantId: (req.user as { tenant?: string } | undefined)?.tenant ?? 'platform',
-          payload: req.payload,
-          user: req.user as never,
-        })
+        const { erpaxMediator } = await import('@/cloudflare/plugin-helper')
+        const m = erpaxMediator(req)
         const leaf = await m.auditChainAppendLinked(payload as Record<string, unknown>)
         return json(leaf)
       },
@@ -2169,13 +2322,8 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
         if (!env?.AUDIT_CHAIN_DO) {
           return text('AUDIT_CHAIN_DO binding not available in this runtime')
         }
-        const { makeMediator } = await import('@/cloudflare')
-        const m = makeMediator({
-          env: env as never,
-          tenantId: (req.user as { tenant?: string } | undefined)?.tenant ?? 'platform',
-          payload: req.payload,
-          user: req.user as never,
-        })
+        const { erpaxMediator } = await import('@/cloudflare/plugin-helper')
+        const m = erpaxMediator(req)
         const result = await m.auditChainVerify({
           fromSeq: fromSeq as number | undefined,
           toSeq: toSeq as number | undefined,

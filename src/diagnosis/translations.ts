@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "diagnosis",
-    "uuid": "8e8770c5-1ec0-82de-b611-47c6ed6b57ae",
+    "uuid": "baeb194e-02f1-8464-82ba-efc3024d907c",
     "words": [
       "diagnosis"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "One or more alternative conditions considered in the differential diagnosis process as output of a diagnosis process.",
-    "uuid": "0707a192-a628-86ce-b616-1b290f808d69",
+    "uuid": "55889260-4dd2-82d0-9237-73bc1130d0a1",
     "words": [
       "one",
       "or",

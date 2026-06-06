@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "beneficiary",
-    "uuid": "12a491be-e421-802f-b1bb-0cbb877a50f8",
+    "uuid": "e3eaeff2-7299-846f-9a78-3f13637884ce",
     "words": [
       "beneficiary"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "beneficiary: a schema.org component word, fused from beneficiaryBank",
-    "uuid": "beb22412-8eea-8f34-ba51-ae19e311566f",
+    "source": "Use when reasoning about beneficiary as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "52016e56-0841-8dfc-b501-08cf07cfb135",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "beneficiary",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "beneficiarybank"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "beneficiary: a schema.org component word, fused from beneficiaryBank"
+      "en": "Use when reasoning about beneficiary as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -63,8 +63,24 @@ export function verifyReceiptChain(
   receipts: readonly Receipt[],
   decisions?: readonly Decision[],
 ): Promise<ChainVerifyResult> {
+  // Fail-closed: passing `decisions` is a request to verify EVERY receipt's
+  // decision content. If the array length doesn't match the receipts, the
+  // request cannot be honored for every leaf — a short array would leave tail
+  // receipts unchecked (decisions[seq] === undefined) and a long array carries
+  // decisions with no receipt to bind. Surface this as an explicit verification
+  // failure rather than silently verifying only the overlap.
+  if (decisions && decisions.length !== receipts.length) {
+    return Promise.resolve({
+      ok: false,
+      chainLength: receipts.length,
+      brokenAtSeq: Math.min(decisions.length, receipts.length),
+      reason: `decisions/receipts length mismatch: ${decisions.length} decisions for ${receipts.length} receipts — cannot verify every receipt's content`,
+    })
+  }
   return verifyUuidLinkedChain({
     leaves: receipts,
+    // The underlying verifier is fail-closed on a missing payload: if a decision
+    // is absent it returns ok:false (payload unavailable), never throws.
     ...(decisions ? { retrievePayload: async (leaf: Receipt) => decisions[leaf.seq] } : {}),
   })
 }

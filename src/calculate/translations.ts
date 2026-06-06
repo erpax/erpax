@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "calculate",
-    "uuid": "f4530186-4694-81c3-b9d8-8d59844d3385",
+    "uuid": "1329395a-1c61-869f-a01b-cbe619ab591f",
     "words": [
       "calculate"
     ],
@@ -18,7 +18,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "description",
     "source": "Use for pure financial computation — break-even, EBITDA, EOQ, present value, depreciation, ratios, standard-costing variances. The Calculators::* form-objects — validate inputs → compute (standards-cited formula) → format; no persistence. Composes nested leaves (calculate/depreciate, /amortize, /ebitda).",
-    "uuid": "89ca222a-396f-8662-954b-1b6302fbdc66",
+    "uuid": "34a2b734-4417-8691-8290-abd85c831598",
     "words": [
       "use",
       "for",

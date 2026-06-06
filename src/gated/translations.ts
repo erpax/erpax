@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "gated",
-    "uuid": "dc7bd7ab-967d-8811-bbc9-3c0eda27f0cc",
+    "uuid": "d2c3a361-4734-8813-ade3-4c37391860ae",
     "words": [
       "gated"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "gated: a schema.org component word, fused from GatedResidenceCommunity",
-    "uuid": "e03c801c-8087-830b-a0f8-ff5a09df0f0e",
+    "source": "Use when reasoning about gated as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "3ad1bb08-09c8-8955-97a1-fb1900d0962e",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "gated",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "gatedresidencecommunity"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "gated: a schema.org component word, fused from GatedResidenceCommunity"
+      "en": "Use when reasoning about gated as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

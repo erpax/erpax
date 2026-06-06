@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "star",
-    "uuid": "77a9495c-f918-888a-8fc0-776ed3d6ce14",
+    "uuid": "a5583f5a-d626-8a10-b24e-1488f47cd8a8",
     "words": [
       "star"
     ],
@@ -17,22 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "star: a schema.org component word, fused from EnergyStarEnergyEfficiencyEnumeration, starRating",
-    "uuid": "142704a0-5b93-8e1e-ba1f-fc42ca56a09f",
+    "source": "Use when reasoning about star as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "ff280545-690a-808c-9330-a9d6cdf4b339",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "star",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "energystarenergyefficiencyenumeration",
-      "starrating"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "star: a schema.org component word, fused from EnergyStarEnergyEfficiencyEnumeration, starRating"
+      "en": "Use when reasoning about star as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

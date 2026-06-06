@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "draw",
-    "uuid": "93949928-9321-8ad7-bc46-713539e1ae44",
+    "uuid": "6690e5d2-a2ed-8436-b81f-a1fa06f4f276",
     "words": [
       "draw"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "draw: a schema.org component word, fused from DrawAction",
-    "uuid": "141a7a4b-4fff-8c58-ae8a-9e065303b263",
+    "source": "Use when reasoning about draw as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "d2a3a7de-9935-8519-8890-3ab7477b3c8e",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "draw",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "drawaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "draw: a schema.org component word, fused from DrawAction"
+      "en": "Use when reasoning about draw as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

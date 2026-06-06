@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "activity",
-    "uuid": "3b48b027-a1dd-81ca-bea9-13c9142c3a08",
+    "uuid": "ecabb7df-49b9-882b-8191-d325777fad39",
     "words": [
       "activity"
     ],
@@ -17,26 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "activity: a schema.org component word, fused from PhysicalActivity, PhysicalActivityCategory, SportsActivityLocation, activityDuration, activityFrequency, sportsActivityLocation",
-    "uuid": "c3fa7626-2c1a-8b36-a775-d40286b4c038",
+    "source": "Use when reasoning about activity as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "5855c2e5-1f1e-87d3-937d-6f1e66499f4a",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "activity",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "physicalactivity",
-      "physicalactivitycategory",
-      "sportsactivitylocation",
-      "activityduration",
-      "activityfrequency",
-      "sportsactivitylocation"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "activity: a schema.org component word, fused from PhysicalActivity, PhysicalActivityCategory, SportsActivityLocation, activityDuration, activityFrequency, sportsActivityLocation"
+      "en": "Use when reasoning about activity as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

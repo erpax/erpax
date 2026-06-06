@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "no",
-    "uuid": "8432a771-a99b-87e8-8368-07db2c9e8965",
+    "uuid": "732e17d1-e1d4-8ce4-9664-11134286c095",
     "words": [
       "no"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "no: a schema.org component word, fused from noBylinesPolicy",
-    "uuid": "5824e498-35cb-850d-9013-e7be21470d65",
+    "source": "Use when reasoning about no as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "c2fe7d6b-85f7-82b9-ac85-705c83c1a0ad",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "no",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "nobylinespolicy"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "no: a schema.org component word, fused from noBylinesPolicy"
+      "en": "Use when reasoning about no as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

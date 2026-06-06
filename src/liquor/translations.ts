@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "liquor",
-    "uuid": "6a547212-7295-8f03-b9d1-decc940265ee",
+    "uuid": "ff654b7e-6957-8816-83d6-8a0feecbbcac",
     "words": [
       "liquor"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "liquor: a schema.org component word, fused from LiquorStore",
-    "uuid": "2b90941b-cb49-8c15-b5b2-65350ec61761",
+    "source": "Use when reasoning about liquor as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "5f8002a1-69d6-810a-a3db-9ad578562082",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "liquor",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "liquorstore"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "liquor: a schema.org component word, fused from LiquorStore"
+      "en": "Use when reasoning about liquor as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

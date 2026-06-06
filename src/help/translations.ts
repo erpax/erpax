@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "help",
-    "uuid": "17558fa6-cf26-8eda-a56f-0d95244092a5",
+    "uuid": "b29f8f63-7fd2-8b75-877e-988407a5a09a",
     "words": [
       "help"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "help: a schema.org component word, fused from softwareHelp",
-    "uuid": "973efe1e-d061-8362-9151-874755a92ab0",
+    "source": "Use when reasoning about help as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "35d912b1-2f50-88f8-b5da-2746d74328d7",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "help",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "softwarehelp"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "help: a schema.org component word, fused from softwareHelp"
+      "en": "Use when reasoning about help as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

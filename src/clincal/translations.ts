@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "clincal",
-    "uuid": "9d0bb5cc-e4ed-8350-849b-3649e0722421",
+    "uuid": "b5519ea5-0361-824b-acf3-3273b40a9702",
     "words": [
       "clincal"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "clincal: a schema.org component word, fused from clincalPharmacology",
-    "uuid": "9b9aa659-77c3-83bd-99c2-9714cfa36ae0",
+    "source": "Use when reasoning about clincal as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "e8ca533b-7418-8345-9588-7d416a7217fb",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "clincal",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "clincalpharmacology"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "clincal: a schema.org component word, fused from clincalPharmacology"
+      "en": "Use when reasoning about clincal as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

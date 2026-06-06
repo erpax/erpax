@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "leave",
-    "uuid": "62a48e3f-5dcc-8bac-950f-b979fc04fd84",
+    "uuid": "2c732e76-de39-85da-b0d4-e41f8b4bc6b6",
     "words": [
       "leave"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "leave: a schema.org component word, fused from LeaveAction",
-    "uuid": "d3b4980e-ff6b-855c-baf9-25dd61a4a13e",
+    "source": "Use when reasoning about leave as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "51353886-53fd-87a2-8991-ca8e8e0519ba",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "leave",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "leaveaction"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "leave: a schema.org component word, fused from LeaveAction"
+      "en": "Use when reasoning about leave as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "browser",
-    "uuid": "3176f7b8-05f7-84fb-9573-81dfafce9705",
+    "uuid": "b6dbe14c-b90d-85a0-91c1-dbab826e9d4e",
     "words": [
       "browser"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "browser: a schema.org component word, fused from browserRequirements",
-    "uuid": "7a0b92ad-2d39-84b1-8296-5857df08f123",
+    "source": "Use when reasoning about browser as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "b2678aff-ea4b-86b0-906e-af009b169a80",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "browser",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "browserrequirements"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "browser: a schema.org component word, fused from browserRequirements"
+      "en": "Use when reasoning about browser as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]

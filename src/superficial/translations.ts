@@ -7,7 +7,7 @@ export const translations: readonly Translation[] = [
   {
     "key": "name",
     "source": "superficial",
-    "uuid": "5f07c229-08c6-8c01-a704-d0d4dd89cfc6",
+    "uuid": "c7be8545-df4d-849e-85a1-404827240d98",
     "words": [
       "superficial"
     ],
@@ -17,21 +17,40 @@ export const translations: readonly Translation[] = [
   },
   {
     "key": "description",
-    "source": "superficial: a schema.org component word, fused from SuperficialAnatomy",
-    "uuid": "2c02871b-4f81-8fe0-8cdf-791c29fc854b",
+    "source": "Use when reasoning about superficial as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
+    "uuid": "fa765c34-722e-8e08-bbea-9a2af05d2bb1",
     "words": [
+      "use",
+      "when",
+      "reasoning",
+      "about",
       "superficial",
+      "as",
       "a",
       "schema",
       "org",
-      "component",
+      "vocabulary",
       "word",
-      "fused",
+      "the",
+      "single",
+      "word",
+      "collided",
       "from",
-      "superficialanatomy"
+      "the",
+      "schema",
+      "org",
+      "terms",
+      "that",
+      "contain",
+      "it",
+      "content",
+      "addressed",
+      "into",
+      "the",
+      "corpus"
     ],
     "values": {
-      "en": "superficial: a schema.org component word, fused from SuperficialAnatomy"
+      "en": "Use when reasoning about superficial as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
     }
   }
 ]
