@@ -48,3 +48,25 @@ export function isViolation(relPath: string): boolean {
 export function findViolations(relPaths: readonly string[]): string[] {
   return relPaths.filter(isViolation).sort()
 }
+
+/**
+ * Markdown is the ANTIMATTER form — and the only place it may live is an atom's
+ * SKILL.md. Writing IN atoms is unavoidable: every other `.md` fails the gate,
+ * so an agent cannot leave a stray doc beside the code — it must fold its words
+ * into a SKILL.md (an atom). The only non-atom markdown allowed is the repo-root
+ * infrastructure: the main `README.md` and the VitePress home `index.md`.
+ */
+export const MD_INFRA: ReadonlySet<string> = new Set(['README.md', 'index.md'])
+
+/** Is this repo-relative `.md` path a STRAY — markdown that is not an atom's SKILL.md, nor root infra? */
+export function isMdStray(relPath: string): boolean {
+  if (!/\.md$/i.test(relPath)) return false
+  const base = relPath.slice(relPath.lastIndexOf('/') + 1)
+  if (base === 'SKILL.md') return false
+  return !MD_INFRA.has(relPath)
+}
+
+/** The stray markdown among a list of repo-relative paths, sorted (must be empty). */
+export function findMdStrays(relPaths: readonly string[]): string[] {
+  return relPaths.filter(isMdStray).sort()
+}

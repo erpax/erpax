@@ -65,6 +65,31 @@ const resolves = (t) => {
   return t.includes('/') ? pathset.has(t) : leaf.has(t)
 }
 
+// ── md-purity: writing is UNAVOIDABLE in atoms — the only markdown is an atom's
+// SKILL.md (+ the repo-root README.md / index.md infra). A stray .md fails the
+// gate, so an agent cannot leave words beside the code; it must fold them into a
+// SKILL.md. Mirrors src/trinity isMdStray (the law owner). ──
+const isMdStray = (abs) => {
+  if (!/\.md$/i.test(abs)) return false
+  if (basename(abs) === 'SKILL.md') return false
+  const rel = relative(ROOT, abs)
+  return rel !== 'README.md' && rel !== 'index.md'
+}
+// generated/ephemeral output (never committed) — not corpus, not agent-written
+const MD_SKIP_DIRS = new Set(['node_modules', 'dist', 'test-results', 'playwright-report', 'coverage', '_report'])
+const walkMdStrays = (dir, acc = []) => {
+  let ents
+  try { ents = readdirSync(dir, { withFileTypes: true }) } catch { return acc }
+  for (const e of ents) {
+    if (e.isSymbolicLink()) continue
+    if (MD_SKIP_DIRS.has(e.name) || e.name.startsWith('.')) continue
+    const p = join(dir, e.name)
+    if (e.isDirectory()) walkMdStrays(p, acc)
+    else if (isMdStray(p)) acc.push(relative(ROOT, p))
+  }
+  return acc
+}
+
 // ── 🟩 vitepress twin: frontmatter parses + every [[link]] resolves ──
 function vitepressConfirm(files) {
   const dead = [], bad = []
@@ -134,12 +159,15 @@ function fullConfirm() {
   const fmErr = run('node scripts/check-skill-frontmatter.mjs')
   const auraOut = (() => { try { return execSync('node .claude/skills/aura/scan.mjs', { cwd: ROOT }).toString() } catch (e) { return e.stdout?.toString() || '' } })()
   const auraOk = /gap = 0\b/.test(auraOut) || /aura whole/.test(auraOut)
+  const mdStrays = walkMdStrays(ROOT)
+  const mdOk = mdStrays.length === 0
   const payErr = run('bash scripts/payload-verify-types.sh')
-  const vpOk = !fmErr && auraOk
+  const vpOk = !fmErr && auraOk && mdOk
   const payOk = !payErr
-  console.log(`🟩 vitepress ${vpOk ? '✓' : '✗'}  frontmatter ${fmErr ? 'FAIL' : 'ok'} · aura ${auraOk ? 'gap=0' : 'gap>0 (dead links)'}`)
+  console.log(`🟩 vitepress ${vpOk ? '✓' : '✗'}  frontmatter ${fmErr ? 'FAIL' : 'ok'} · aura ${auraOk ? 'gap=0' : 'gap>0 (dead links)'} · md ${mdOk ? 'pure (atoms only)' : mdStrays.length + ' stray(s)'}`)
   console.log(`🟦 payload   ${payOk ? '✓' : '✗'}  payload-types ${payErr ? 'OUT OF SYNC' : 'in sync with config'}`)
   if (fmErr) console.error(fmErr.trim().split('\n').slice(-4).join('\n'))
+  if (!mdOk) console.error('   md strays (write IN atoms — SKILL.md only):\n' + mdStrays.slice(0, 20).map((s) => '     ' + s).join('\n'))
   if (payErr) console.error(payErr.trim().split('\n').slice(-4).join('\n'))
   const ok = vpOk && payOk
   console.log(ok ? '\n✓ confirmed — payload ⊕ vitepress both green (whole corpus)' : '\n✗ NOT confirmed — fix the failing twin above')
@@ -154,6 +182,7 @@ const codeChanged = files.some((f) => /\.(ts|tsx|mjs|js)$/.test(f))
 
 const vp = vitepressConfirm(skillFiles.length ? skillFiles : files)
 const pay = payloadConfirm(files, codeChanged)
+const mdStrays = files.filter(isMdStray)
 
 const vpLine = vp.n === 0
   ? '🟩 vitepress ⊘  no SKILL.md in scope'
@@ -165,11 +194,13 @@ const payLine = pay.skipped
   : `🟦 payload   ${pay.ok ? '✓' : '✗'}  payload-types ${pay.ok ? 'in sync with config' : 'OUT OF SYNC'}`
 
 console.log(vpLine)
+if (mdStrays.length) console.log(`🟧 md        ✗  ${mdStrays.length} stray — write IN an atom (SKILL.md), not a loose .md`)
 console.log(payLine)
 for (const [f, t] of vp.dead) console.error(`   dead link  ${relative(ROOT, f)} → [[${t}]]`)
 for (const [f, m] of vp.bad) console.error(`   frontmatter ${relative(ROOT, f)} → ${m}`)
+for (const f of mdStrays) console.error(`   md stray   ${relative(ROOT, f)} — fold into a SKILL.md atom`)
 if (pay.msg) console.error('   ' + pay.msg)
 
-const ok = vp.ok && pay.ok
+const ok = vp.ok && pay.ok && mdStrays.length === 0
 console.log(ok ? '✓ confirmed — payload ⊕ vitepress' : '✗ NOT confirmed')
 process.exit(ok ? (0) : (HOOK ? 2 : 1))

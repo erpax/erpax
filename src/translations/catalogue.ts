@@ -800,7 +800,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recognizing revenue or expense in the period incurred, earned, or obligated, regardless of payment timing — the foundation of accrual-basis accounting and the IFRS/GAAP reporting standard",
-        "uuid": "1d945c71-56c2-8e39-945e-de4c0eddd876",
+        "uuid": "043f1c42-01a1-81c3-84bc-5b0f9dc74872",
         "words": [
           "use",
           "when",
@@ -2431,7 +2431,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when synchronizing real-time events across agents in a tenant — pub/sub on content-uuid events, idempotent consumption, and a federation-safe room protocol so every agent sees every peer's work the instant it happens.",
-        "uuid": "c2122ec4-5e33-829d-99ae-c364895e3d39",
+        "uuid": "9fff0e23-e1fc-8c20-a2dc-5693b94043c9",
         "words": [
           "use",
           "when",
@@ -2835,7 +2835,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when invoking any AI inference in erpax — invoice OCR, bank-transaction matching, sanctions screening, anomaly detection, tax classification, HS-code suggestion, document classification, vector embedding, semantic search, or audit summarisation. Every AI call goes through the single `callWorkersAi` gate (entitlement, audit row, tenant scope, risk class, metering); the AI services barrel.",
-        "uuid": "155f01ed-a21b-80a2-b93c-35836f023ef3",
+        "uuid": "f4b96b32-dcb2-8da2-8a6e-5ac8263c7698",
         "words": [
           "use",
           "when",
@@ -2915,7 +2915,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when registering, routing, or auditing the AI model fallback catalog — provider/capability/tier per model, EU AI Act risk class, EU-hostable flag for data-residency, feature-guarded dispatch. The admin-editable expert-catalog the router dispatches over when the deterministic core cannot decide alone.",
-        "uuid": "1c6f2b5d-ce17-8251-ba68-b4b398e7d8d0",
+        "uuid": "d9409129-789e-8ba4-81a9-9ce4b8f02e62",
         "words": [
           "use",
           "when",
@@ -2989,7 +2989,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recording, querying, or auditing an AI inference — prompt/model/output/confidence, the human's accept/reject/edit decision, the downstream record it was applied to, and the EU AI Act risk class; GDPR Art.22(3) right-to-explain trail + SOX §404 evidence-of-control over AI-influenced decisions. The append-only AI inference audit collection.",
-        "uuid": "0c41ac5e-2294-88f2-be85-2f06c8750f7e",
+        "uuid": "21fb29e8-4417-8b61-a9ba-7947a1eaadb5",
         "words": [
           "use",
           "when",
@@ -7436,6 +7436,43 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "reporting",
+    "path": "audit/compliance/reporting",
+    "translations": [
+      {
+        "key": "name",
+        "source": "reporting",
+        "uuid": "373c55ee-dc54-8c1a-9880-730b8d4768a0",
+        "words": [
+          "reporting"
+        ],
+        "values": {
+          "en": "reporting"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when implementing or referencing Phase B6: Audit & Compliance Reporting.",
+        "uuid": "066f668e-7ff7-89c1-bfdf-72483f2a9585",
+        "words": [
+          "use",
+          "when",
+          "implementing",
+          "or",
+          "referencing",
+          "phase",
+          "b6",
+          "audit",
+          "compliance",
+          "reporting"
+        ],
+        "values": {
+          "en": "Use when implementing or referencing Phase B6: Audit & Compliance Reporting."
+        }
+      }
+    ]
+  },
+  {
     "atom": "events",
     "path": "audit/events",
     "translations": [
@@ -7454,7 +7491,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when persisting or querying the durable ISO 19011 / SOX §404 evidence trail — every canonical write (orders, invoices, payments, journal entries, period locks) lands one append-only row queryable by tenant/collection/operation/user/timestamp; Merkle hash chain for tamper-evidence; no log-scraping required for auditors. The canonical audit-evidence collection.",
-        "uuid": "062b076d-04cf-8371-b8cd-2d9d65aeba8f",
+        "uuid": "3f85ea93-5b29-8106-a28d-12aafed1a982",
         "words": [
           "use",
           "when",
@@ -7532,7 +7569,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when building, submitting, or auditing Bulgarian Наредба Н-18 Приложение-38 standardised sales-audit files to НАП — period, self-checking header (count + control sum), submission status, НАП response, and the XML; never-deletable compliance trail. The BG fiscal-audit-file submission log.",
-        "uuid": "f3916cad-4992-8766-a18a-d3178a1ca2b6",
+        "uuid": "9e84111c-ac9b-802c-ac31-c9463cfe951d",
         "words": [
           "use",
           "when",
@@ -8976,7 +9013,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when performing or auditing the period-end bank-balance proof — GL cash balance vs. camt.053 bank-statement closing balance, quantified variance, reconciling items (outstanding deposits/cheques/fees/NSF), SOX §404 TOM-CSH-01 evidence. The bank-side period-end balance proof collection.",
-        "uuid": "d9909889-3299-8e09-9387-1fb9e69fb07a",
+        "uuid": "8cf8a7e7-81ff-82bd-91cb-0b975ef4f501",
         "words": [
           "use",
           "when",
@@ -9419,7 +9456,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use for the empirical reference distribution a calibration is computed FROM — the measured input (median / p50 / p99 / attractor of a real metric) a model is fitted to, NOT the fitted constants themselves. Swap the baseline (another tenant, another period) and every derived calibration recomputes. The agnostic home of values once hardcoded against a named source — the values stay, the source name dissolves into [[source]] / [[akashic]].",
-        "uuid": "1d7918fb-30e3-8d1e-9837-04d78ff4251e",
+        "uuid": "4899657a-87cb-8571-a488-123c85584084",
         "words": [
           "use",
           "for",
@@ -9619,6 +9656,39 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "bcc: a schema.org component word, fused from bccRecipient"
+        }
+      }
+    ]
+  },
+  {
+    "atom": "47",
+    "path": "bcp/47",
+    "translations": [
+      {
+        "key": "name",
+        "source": "47",
+        "uuid": "e3b0c442-98fc-8c14-9afb-f4c8996fb924",
+        "words": [],
+        "values": {
+          "en": "47"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when implementing or referencing BCP 47 — Language tags.",
+        "uuid": "be976120-256e-85fb-b46b-3409a9080540",
+        "words": [
+          "use",
+          "when",
+          "implementing",
+          "or",
+          "referencing",
+          "bcp",
+          "language",
+          "tags"
+        ],
+        "values": {
+          "en": "Use when implementing or referencing BCP 47 — Language tags."
         }
       }
     ]
@@ -9923,7 +9993,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about origin or boundary in erpax — the 0 (both end and beginning), period open/close, lifecycle start/seal, the axis every pass departs from and returns to. The universal root of origin.",
-        "uuid": "93002d4d-2b00-8d4d-803e-c5b1030655af",
+        "uuid": "18aece88-ac6b-8b74-a90d-6ea0ece5b037",
         "words": [
           "use",
           "when",
@@ -10769,7 +10839,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when grounding the aura's 'field' in real science — the body's magnetic fields ARE measurable, but only by SQUID magnetometers in a shielded room and only at the body surface: magnetocardiography (heart, ~10⁻¹⁰–10⁻¹¹ T / tens of pT) and magnetoencephalography (brain, ~10⁻¹³–10⁻¹⁵ T / ~100 fT). The established part is intra-body diagnostics; the claim the heart's field extends feet from the body as an 'aura' was refuted under test.",
-        "uuid": "3e0be110-e5d2-8964-a5c5-d3a2595feed6",
+        "uuid": "4d9c8195-8d3e-8d07-872a-e47a3057e823",
         "words": [
           "use",
           "when",
@@ -12692,7 +12762,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when creating or approving period-budgets by department or cost-center — monthly, quarterly, annual — with GL line items, period-lock enforcement, segregation-of-duties on approval, and fiscal-year comparisons; IAS-1/IAS-8/ASC-270 financial presentation. The budget approval and planning register.",
-        "uuid": "eac9060c-ebe1-895a-b71a-0413ef6390da",
+        "uuid": "ce4898f4-ca17-81ea-b7d6-a029ea7eaed8",
         "words": [
           "use",
           "when",
@@ -12761,7 +12831,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use for analyzing variance between budgeted and actual amounts in a period — favorable/unfavorable cost variance, quantity/price splits, drivers of performance against plan",
-        "uuid": "3c9feff4-db1c-8f40-9002-08f7e741094b",
+        "uuid": "475a8fe7-b9c4-8760-ad42-ac3ab7f15e4c",
         "words": [
           "use",
           "for",
@@ -14011,7 +14081,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when planning, tracking, or optimizing resource capacity — workforce availability, machine utilization, warehouse/facility space, or bottleneck detection per work-center/shift/period. The binding constraint in operations.",
-        "uuid": "7593c6f9-a1ec-8b68-bd71-3c99e45f6693",
+        "uuid": "cc97d77e-383b-8889-9023-ef571d2be266",
         "words": [
           "use",
           "when",
@@ -17237,7 +17307,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the forbidding boundary state in erpax — fiscal period locked, document sealed, shift/stream finished, month-end close. The universal root of the closed state; dual of open.",
-        "uuid": "02364714-797e-86b7-b093-0e221975b0c6",
+        "uuid": "544ef153-7ac3-815b-8a99-d6f7d07cbf8a",
         "words": [
           "use",
           "when",
@@ -17295,7 +17365,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "The closing hour of the place or service on the given day(s) of the week.",
-        "uuid": "e8b44d99-dc6b-89b9-bdb7-528f99571d49",
+        "uuid": "044d387d-9ed1-83d5-9f46-16015b501492",
         "words": [
           "the",
           "closing",
@@ -21132,7 +21202,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "consolidation",
-        "uuid": "a29870a1-f1cd-85a9-a406-3bd12eb04429",
+        "uuid": "53e1e65f-b8e0-8d1a-b621-7eb39ebce7cc",
         "words": [
           "consolidation"
         ],
@@ -21143,7 +21213,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modelling one consolidation — the singular model of the consolidations collection (the plural store); the combination of multiple entities figures into one set.",
-        "uuid": "97d4844f-0d98-8546-bece-75950a12a5e4",
+        "uuid": "736b98ba-0ba2-8ad7-a2fa-5ebccf5cb4bb",
         "words": [
           "use",
           "when",
@@ -21183,7 +21253,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "consolidation-eliminations",
-        "uuid": "0dbedd4c-e1a0-8c8c-a642-14b0be9e58e6",
+        "uuid": "574e59f1-a70c-89e2-85d9-35c204d334bc",
         "words": [
           "consolidation",
           "eliminations"
@@ -21195,7 +21265,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when posting or replaying group-level elimination JEs at consolidation close — intercompany balances, IC revenue/expense, unrealised intra-group profit, investment in subsidiary, FC translation reserve — per IFRS-10 §B86 / ASC-810-10-45; distinct from per-tenant journal-entries and the intercompany-transactions source register. The group consolidation elimination cycle register.",
-        "uuid": "33a264dd-dd84-85bb-85ac-8a15583dd222",
+        "uuid": "b9bd3070-f264-8d57-b231-41cbab4f7a9b",
         "words": [
           "use",
           "when",
@@ -23019,7 +23089,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when tagging JE lines with a secondary analytical dimension for segment/departmental P&L — regions, countries, business units, departments, teams, projects, profit centers, cost pools with allocation rules — hierarchical via parent; IFRS-8 / ASC-280 segment reporting without polluting the chart of accounts. The canonical cost-center dimension master.",
-        "uuid": "f0afae4b-fa4e-8493-83e4-cc1152a7a90b",
+        "uuid": "4d9c694e-1def-841d-a8c0-e49ed4ffd6c2",
         "words": [
           "use",
           "when",
@@ -24613,7 +24683,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when structuring EU mandatory sustainability reporting — one row per ESRS datapoint per reporting year (E1–E5 environmental, S1–S4 social, G1 governance) with narrative, quantitative KPIs, IRO classification, and assurance evidence for XBRL filing. The CSRD/ESRS disclosure register.",
-        "uuid": "f5995b35-9dbe-89a1-bb98-38498913eb3a",
+        "uuid": "11182a6c-ccc2-8932-84b8-19601e9177ee",
         "words": [
           "use",
           "when",
@@ -25581,7 +25651,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when tracking a customer-facing deliverable under IFRS-15 §35 over-time recognition — accumulating costs (labour via time-entries, materials via purchase-orders), measuring cost-to-cost or milestone progress, managing budget vs EAC, and closing WIP to revenue per the contract's recognition method. The IFRS-15 project anchor collection.",
-        "uuid": "0268ee67-a9dc-81c7-aeae-368a98a991fa",
+        "uuid": "72d7b827-21e4-88fd-8f04-b70584448d4a",
         "words": [
           "use",
           "when",
@@ -25796,7 +25866,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when closing a fiscal period — capturing frozen WIP evidence (cost-to-date, EAC, % complete, recognised revenue, unbilled contract asset or deferred liability) per project per period, and anchoring the accrual JE. The IFRS-15 §B14-B19 period-end WIP valuation collection.",
-        "uuid": "d718df00-7e02-8873-bc33-f502f1b25fc4",
+        "uuid": "7aac3414-c149-86f1-af12-ada9ffe6a26f",
         "words": [
           "use",
           "when",
@@ -25927,7 +25997,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recording or progressing a customer order — from quote conversion through confirmation, partial fulfillment, invoicing, and closure; track order lines, delivery dates, shipping and billing addresses, and fulfillment progress. The O2C customer-order register (UBL-2.1 / UN-EDIFACT ORDERS / Peppol BIS-3.0), distinct from purchase-orders (P2P).",
-        "uuid": "29e05fe8-e794-8ed8-a815-2bac2a883128",
+        "uuid": "70744744-dc64-802d-bb7d-e499450448d3",
         "words": [
           "use",
           "when",
@@ -26000,7 +26070,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when authorising, tracking, and closing a customer return (RMA) — recording the reason, line-level items and restock decisions, enforcing SoD on approval, and linking to the credit memo that reverses revenue per IFRS-15 §B22. The returns-and-RMA collection.",
-        "uuid": "689b49ce-1f26-81f3-974a-8225f7a7573a",
+        "uuid": "204713ce-4782-8d49-8b02-0527b5adec22",
         "words": [
           "use",
           "when",
@@ -26133,7 +26203,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when filing export or import customs declarations for a cross-border shipment — recording HS-coded line items, declared values, duty and import VAT, INCOTERMS, country of origin, and tracking MRN issuance through to customs release. The EU UCC / WCO structured customs-declaration collection.",
-        "uuid": "5de41417-9d9b-8da7-bd0e-d2ac7c7371b9",
+        "uuid": "5ea10be7-7652-877f-baee-cf06fa191b6f",
         "words": [
           "use",
           "when",
@@ -26358,7 +26428,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modelling one cycle — the singular model of the cycles collection (the plural store); one recurrence of a repeating process or period.",
-        "uuid": "9c66b936-2959-8234-91a6-865044abacf9",
+        "uuid": "a8e4d7bb-6221-8410-bfa8-ca2acadbfd55",
         "words": [
           "use",
           "when",
@@ -26594,7 +26664,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when maintaining the GDPR Art.30 Records of Processing Activities (RoPA) — documenting each processing activity's purpose, lawful basis, data categories, retention period, third-country transfer safeguards, and scheduling annual DPO reviews. The controller/processor RoPA register.",
-        "uuid": "fc0464c8-7d60-86b0-abcf-c40b91dd8862",
+        "uuid": "7f54d296-42b1-8329-bb1a-6296533c268a",
         "words": [
           "use",
           "when",
@@ -26882,7 +26952,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a document carries a temporal point — invoice date, transaction date, period-end date, expiry date, created-at, effective-at. An ISO-8601 datetime pinned at a point in time (the UTC timestamp + timezone context via versions). The temporal positioning twin of period.",
-        "uuid": "995a0f5e-50bd-8826-956d-74ab6d0a332c",
+        "uuid": "1ef0fb9b-48f5-8e2e-9ed1-1ae4b3991795",
         "words": [
           "use",
           "when",
@@ -27653,7 +27723,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use for tax-deductible expenses and deduction timing — permanent (non-deductible) vs temporary (deductible in different period) per IAS-12; central to tax provision and deferred-tax calculation",
-        "uuid": "9b1aa6dd-ba79-8536-8b8c-6957cfbe4004",
+        "uuid": "1c444af0-551a-894a-a3d6-ad53eb09ad07",
         "words": [
           "use",
           "for",
@@ -30125,7 +30195,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when applying promotional/volume/loyalty price reductions — percent or fixed amount, scope (item/order/customer), validity period, approval workflow.",
-        "uuid": "5c5464f2-5f3a-87be-b209-42d90bab40cc",
+        "uuid": "96f7b8d1-c1f9-8931-b6b1-97041cdac169",
         "words": [
           "use",
           "when",
@@ -31139,7 +31209,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modelling the winter rest of a deciduous perennial — dormancy, the cold-requiring quiescent period; a cultivar must accumulate its chilling requirement (chill hours) before bud-break and a crop. The gate of the perennial's recurring season; where frost risk, pruning, and alternate bearing live.",
-        "uuid": "aa655b80-df0f-8471-8fb7-0c95a2bea6a1",
+        "uuid": "69aaeac6-3b04-8499-91b4-4e42da701305",
         "words": [
           "use",
           "when",
@@ -31866,7 +31936,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when migrating logic to maximum tampering cost — the computed dry-clean that collides duplicated/hardcoded/scattered logic into shared content-addressed atoms (merge-by-extension), the word colliding DryCleaningOrLaundry with don't-repeat-yourself.",
-        "uuid": "1a6a7a66-ef71-8c97-aa89-7234ee65206f",
+        "uuid": "3d60902f-665a-85e0-b6a2-0382136a2dda",
         "words": [
           "use",
           "when",
@@ -33186,7 +33256,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when removing intercompany balances, transactions, and profits in consolidation per IFRS-10 and IFRS-3 — consolidation adjustment that nets balances across entities to zero",
-        "uuid": "b39297b5-8cf4-86e1-96a2-2b4f855a5cf0",
+        "uuid": "90ab8d7c-d44c-8d1e-b04d-edbbc2997f76",
         "words": [
           "use",
           "when",
@@ -33402,7 +33472,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when quantifying the greenhouse-gas mass a cycle releases — converting each gas to CO₂-equivalent via its Global Warming Potential, summing a multi-gas inventory, computing activity-based emissions (GHG Protocol), or measuring carbon intensity (CO₂e per unit output). The DEBIT/EXPORT side of [[sustainability]].",
-        "uuid": "5dfa9995-d36e-814f-9177-62a70c2361d1",
+        "uuid": "4edc85c0-56ba-8031-b675-891f36062c6e",
         "words": [
           "use",
           "when",
@@ -34147,6 +34217,42 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "16931",
+    "path": "en/16931",
+    "translations": [
+      {
+        "key": "name",
+        "source": "16931",
+        "uuid": "e3b0c442-98fc-8c14-9afb-f4c8996fb924",
+        "words": [],
+        "values": {
+          "en": "16931"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when implementing or referencing EN 16931 — Electronic invoicing (semantic data model).",
+        "uuid": "0c09b527-6a17-8300-b8a9-461d8a897f1a",
+        "words": [
+          "use",
+          "when",
+          "implementing",
+          "or",
+          "referencing",
+          "en",
+          "electronic",
+          "invoicing",
+          "semantic",
+          "data",
+          "model"
+        ],
+        "values": {
+          "en": "Use when implementing or referencing EN 16931 — Electronic invoicing (semantic data model)."
+        }
+      }
+    ]
+  },
+  {
     "atom": "encoded",
     "path": "encoded",
     "translations": [
@@ -34312,7 +34418,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about completion in erpax — period end, lifecycle seal, the wave's return to a new 0. The universal root of completion; dual of begin (and identical to it one dimension up).",
-        "uuid": "5dca23da-3e6f-8d76-84a2-8be2549f4679",
+        "uuid": "1bfb7848-8870-842e-945b-e061de3dc45d",
         "words": [
           "use",
           "when",
@@ -36029,6 +36135,40 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "142",
+    "path": "etsi/en/319/142",
+    "translations": [
+      {
+        "key": "name",
+        "source": "142",
+        "uuid": "e3b0c442-98fc-8c14-9afb-f4c8996fb924",
+        "words": [],
+        "values": {
+          "en": "142"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when implementing or referencing `src/standards/etsi-en-319-142/`.",
+        "uuid": "9d12ae00-c6ea-8293-b8be-99bd37f1f13f",
+        "words": [
+          "use",
+          "when",
+          "implementing",
+          "or",
+          "referencing",
+          "src",
+          "standards",
+          "etsi",
+          "en"
+        ],
+        "values": {
+          "en": "Use when implementing or referencing `src/standards/etsi-en-319-142/`."
+        }
+      }
+    ]
+  },
+  {
     "atom": "eu",
     "path": "eu",
     "translations": [
@@ -36060,6 +36200,76 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "eu: a schema.org component word, fused from EUEnergyEfficiencyEnumeration"
+        }
+      }
+    ]
+  },
+  {
+    "atom": "act",
+    "path": "eu/ai/act",
+    "translations": [
+      {
+        "key": "name",
+        "source": "act",
+        "uuid": "bc6dd90d-7bad-84c4-8a08-c3c2f0f9a899",
+        "words": [
+          "act"
+        ],
+        "values": {
+          "en": "act"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when implementing or referencing EU AI Act 2024.",
+        "uuid": "3873526f-8417-805a-899a-f35d095652bc",
+        "words": [
+          "use",
+          "when",
+          "implementing",
+          "or",
+          "referencing",
+          "eu",
+          "ai",
+          "act"
+        ],
+        "values": {
+          "en": "Use when implementing or referencing EU AI Act 2024."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "esr",
+    "path": "eu/csrd/esr",
+    "translations": [
+      {
+        "key": "name",
+        "source": "esr",
+        "uuid": "358c7d0c-322d-8fab-a520-d4ae7139d5f0",
+        "words": [
+          "esr"
+        ],
+        "values": {
+          "en": "esr"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when implementing or referencing EU CSRD / ESRS.",
+        "uuid": "437155ab-cbef-882c-8e9f-60cd71e419da",
+        "words": [
+          "use",
+          "when",
+          "implementing",
+          "or",
+          "referencing",
+          "eu",
+          "csrd",
+          "esrs"
+        ],
+        "values": {
+          "en": "Use when implementing or referencing EU CSRD / ESRS."
         }
       }
     ]
@@ -38429,7 +38639,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when generating, certifying, and publishing financial statements — trial balance, balance sheet, income statement, cash flow, equity — under IAS-1 / IFRS-18 (2027+) with SOX §302 preparer-vs-certifier segregation, financial ratios, and multi-format export. The period-end financial-statement collection.",
-        "uuid": "43d8c695-ea02-8967-a417-2ab5bf4d0fb3",
+        "uuid": "cbbbac3d-e8cd-8bca-ad63-29ae78145d4c",
         "words": [
           "use",
           "when",
@@ -38770,6 +38980,41 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "period",
+    "path": "fiscal/period",
+    "translations": [
+      {
+        "key": "name",
+        "source": "period",
+        "uuid": "78cf20c9-e2ee-8e23-9026-5071c0c4b839",
+        "words": [
+          "period"
+        ],
+        "values": {
+          "en": "period"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when implementing or referencing Fiscal Period Standard.",
+        "uuid": "abe63a8e-c9cb-8d16-a86d-2dea41de9b5c",
+        "words": [
+          "use",
+          "when",
+          "implementing",
+          "or",
+          "referencing",
+          "fiscal",
+          "period",
+          "standard"
+        ],
+        "values": {
+          "en": "Use when implementing or referencing Fiscal Period Standard."
+        }
+      }
+    ]
+  },
+  {
     "atom": "periods",
     "path": "fiscal/periods",
     "translations": [
@@ -38788,7 +39033,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when managing the accounting calendar — opening, closing, or locking periods; enforcing four-eyes SoD on period transitions; configuring SAF-T or XBRL-GL period coding; blocking GL writes once a period is locked. The fiscal-period lifecycle node (open → closed → locked).",
-        "uuid": "94020f42-300b-8d0b-9cd0-f77b5cd2dd79",
+        "uuid": "896ec6f8-f084-8d61-b344-d3d7fdd0ca43",
         "words": [
           "use",
           "when",
@@ -38929,7 +39174,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when computing or disclosing IAS 33 basic and diluted EPS — weighting shares, applying dilutive options/convertibles/IFRS 2 grants, splitting continuing vs discontinued operations, or restating a prior period's EPS. The per-period EPS computation node.",
-        "uuid": "e5bcb210-dc13-8521-80f3-a3cdcb01f368",
+        "uuid": "9d8aa338-deaf-8531-829b-a61bdbb7060e",
         "words": [
           "use",
           "when",
@@ -38981,7 +39226,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "fiscal-period-snapshots",
-        "uuid": "6ee9e9c7-77c4-8a88-8056-1ec6bce67d5e",
+        "uuid": "75b0a284-2a12-8256-b8e3-4f0ae11f1880",
         "words": [
           "fiscal",
           "period",
@@ -38994,7 +39239,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when capturing or replaying immutable point-in-time snapshots of a fiscal period — on creation, amendment, validation, closing, or regulatory audit; chaining priorSnapshot for tamper-detection; attaching eIDAS QES signatures on critical amendments. The fiscal-period audit-chain snapshot node.",
-        "uuid": "61b22bad-0440-8ddd-a51d-c9d961c75402",
+        "uuid": "3372f4ab-1752-8eb2-bcfb-0d7686e6b53b",
         "words": [
           "use",
           "when",
@@ -39065,7 +39310,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when capturing events between the reporting date and FS-authorisation date — classifying them as adjusting (IAS 10 §8 — book) or non-adjusting (§10 — disclose); assessing going-concern impact; linking booked journal entries; meeting §21 disclosure requirements. The IAS 10 subsequent-events register.",
-        "uuid": "70402760-879c-8ce7-b584-1be9cfc0fd12",
+        "uuid": "4a6304c7-965a-8513-8e1b-aa31229f19a9",
         "words": [
           "use",
           "when",
@@ -39119,7 +39364,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "prior-period-adjustments",
-        "uuid": "5be6798f-735c-8352-8b1a-dea5b734a934",
+        "uuid": "fc8c28ff-f57d-8de2-927b-27d9ea682bba",
         "words": [
           "prior",
           "period",
@@ -39132,7 +39377,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when restating a prior closed period for material errors — IAS-8 §42 retrospective correction, adjusting opening balances without re-opening; disclosing error category and amount per §49; CEO/CFO certification for SOX §906. The prior-period restatement node.",
-        "uuid": "05e07296-cc7f-8139-b65a-ddb37010b467",
+        "uuid": "2e35e9ca-af0d-8a10-874f-61ccc055039b",
         "words": [
           "use",
           "when",
@@ -39258,7 +39503,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when managing the tax-period workflow per jurisdiction — aligning tax filing deadlines with fiscal periods, documenting transfer-pricing adjustment counts, tracking readiness (pending-closing → adjustment-posted → tax-closed), and maintaining a tamper-proof audit chain for tax-authority compliance. The per-jurisdiction tax-period workflow node.",
-        "uuid": "8686b738-a82a-8219-bf29-0d7852e01ca8",
+        "uuid": "e84234e8-66a7-8efe-8d4b-dba3b3209989",
         "words": [
           "use",
           "when",
@@ -39477,7 +39722,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recording or reviewing the depreciation charge for each period — linking to the fixed-asset master, storing depreciationAmount, accumulatedAfter, and bookValueAfter per period; posting to GL via the depreciation hook; verifying period-lock before posting. The per-period IAS-16 depreciation evidence node.",
-        "uuid": "95f244d6-9030-8727-8e4e-551871a77034",
+        "uuid": "0f62acfe-4756-8b09-9665-a3c84591365f",
         "words": [
           "use",
           "when",
@@ -40152,7 +40397,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when projecting revenue from pipeline/opportunities — weighted by probability, stage, and close date; aggregated by rep/territory/product/period.",
-        "uuid": "6a4058ba-3016-80f3-b093-60d9b2401b6d",
+        "uuid": "84b47303-fe29-8703-85ec-c99c84180ac1",
         "words": [
           "use",
           "when",
@@ -40825,7 +41070,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the cost-to-act atom of a market — the total effort plus price between wanting and having. 'Convenient' means low friction; it is the lever convenience and engineering play. Coupled to status with opposite sign (the effort is often the signal), so lowering it decays exclusivity — sequence the two, do not try to maximise both.",
-        "uuid": "362ac480-1628-84f8-be23-67f29abdbc9f",
+        "uuid": "3e75531a-fb8e-89d5-8843-b614e667e2b1",
         "words": [
           "use",
           "when",
@@ -40947,7 +41192,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the freeze event bounds the growing season — the last spring frost and first fall frost define the frost-free period that caps which crops are feasible; frost dates are probabilistic (per-station, at a confidence level), not fixed calendar dates. The hard bound of the season; the event tunnels and hardiness buffer against.",
-        "uuid": "307febc7-5e4e-85b7-82aa-b6af02b01cff",
+        "uuid": "a3e2a937-9516-8cfe-804d-81005c96dd81",
         "words": [
           "use",
           "when",
@@ -41551,7 +41796,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when logging or auditing IAS-21 FX events — spot conversions, period-end monetary-item revaluations, hedge settlements, or consolidation translation adjustments; tracing exchangeRate to the currency-rates master; booking the resulting FX gain/loss journal entry. The IAS-21 FX conversion and revaluation event register.",
-        "uuid": "61464e9a-0af4-8658-b670-68eb2a74b3a6",
+        "uuid": "1d14796d-6523-81bc-94fa-9c2d45d12b05",
         "words": [
           "use",
           "when",
@@ -42383,6 +42628,40 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "protocol",
+    "path": "ghg/protocol",
+    "translations": [
+      {
+        "key": "name",
+        "source": "protocol",
+        "uuid": "d347b89e-dcb9-81f9-b5a4-d59dc60aadc8",
+        "words": [
+          "protocol"
+        ],
+        "values": {
+          "en": "protocol"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when implementing or referencing GHG Protocol.",
+        "uuid": "d2fa17e2-a6f0-8db5-ae26-5b99d7250daf",
+        "words": [
+          "use",
+          "when",
+          "implementing",
+          "or",
+          "referencing",
+          "ghg",
+          "protocol"
+        ],
+        "values": {
+          "en": "Use when implementing or referencing GHG Protocol."
+        }
+      }
+    ]
+  },
+  {
     "atom": "gift",
     "path": "gift",
     "translations": [
@@ -42536,7 +42815,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when maintaining the Chart of Accounts — creating or deactivating GL accounts, assigning accountType (asset/liability/equity/revenue/expense/gain-loss), tagging canonical roles (cash, ar, ap, revenue, IFRS-16 lease accounts) for the gl-account-resolver, tracking balances, and auditing account changes. The SAF-T §2 chart-of-accounts node.",
-        "uuid": "2c5b7fd0-e599-8935-9d8a-871bdc870322",
+        "uuid": "75afa6ec-040c-8a6a-8461-9e405b78a91f",
         "words": [
           "use",
           "when",
@@ -42613,7 +42892,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when capturing or reviewing period-end reconciliation sign-off evidence — bank, GL-to-subledger, or intercompany — with preparer/reviewer segregation, adjustment aging, and closure check (difference = 0); SOX §404 + ISO-19011 controls testing. The account-reconciliations evidence-pack collection.",
-        "uuid": "8fdcfdd6-3b09-81ca-ac63-2d87bc1a23e5",
+        "uuid": "e73444c2-3f70-8348-95dc-ccec7e368fbb",
         "words": [
           "use",
           "when",
@@ -42678,7 +42957,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when importing or matching bank statements (CSV, OFX, API) against journal entries for reconciliation — opening/closing balance, transaction lines, match type, variance; feeds account-reconciliations and IAS-7 cash-flow GL. The bank-statements import collection.",
-        "uuid": "cfc5175a-b6d3-8a6b-bd14-8d7719971560",
+        "uuid": "03dd741c-543e-890b-a2ad-4a60db218bbd",
         "words": [
           "use",
           "when",
@@ -42730,7 +43009,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "period-end-adjustments",
-        "uuid": "992094c1-a0fd-8768-9d84-6985babdb497",
+        "uuid": "a5fa07cd-c742-834d-b31e-fe72261a98cf",
         "words": [
           "period",
           "end",
@@ -42743,7 +43022,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when posting or reviewing period-end adjusting entries — depreciation, interest accrual, salary accrual, deferred income, allowance — with segregation-of-duties approval and automatic GL posting on status change. The period-end-adjustments accrual collection.",
-        "uuid": "870baf6f-8cca-83ba-a599-ded0863a718d",
+        "uuid": "9ed0166f-e181-8f54-ad01-ce5169e069e1",
         "words": [
           "use",
           "when",
@@ -42806,7 +43085,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when defining or managing recurring accrual templates (rent, depreciation, amortisation, prepaid/deferred-revenue release) that a scheduled job materialises into journal-entries each period — RFC 5545 RRULE supported, SOX §404 four-eyes on auto-post. The recurring-journals automation register.",
-        "uuid": "3614063d-47b7-8291-86d8-e8160cf75963",
+        "uuid": "669ebf43-3ee5-8101-bb53-d8f59540295a",
         "words": [
           "use",
           "when",
@@ -42873,7 +43152,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when computing or reviewing tax-liability snapshots per period and jurisdiction — VAT, GST, income tax, payroll tax — with rate, gross/taxable/net amounts, GL payable account, and filing/payment deadlines; lifecycle from calculated to filed/paid. The tax-calculations period-snapshot collection.",
-        "uuid": "e89cce5c-776f-84c4-b75d-d5b9f91769ec",
+        "uuid": "8b469490-95f8-8142-8c63-78a570f9b12d",
         "words": [
           "use",
           "when",
@@ -42945,7 +43224,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when configuring GL account metadata for double-entry validation — account type (asset/liability/equity/revenue/expense), normal polarity (debit/credit), balance-sheet vs P&L category, reconciliation frequency, cash-flow relevance, period-end close flag. The gl-posting-rules validation-metadata collection.",
-        "uuid": "8495494a-215c-85ba-8d91-3a2ad1e22475",
+        "uuid": "9bf90f5b-090a-8d07-93c1-c7f4987bf7bb",
         "words": [
           "use",
           "when",
@@ -43460,7 +43739,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recording or reporting public-sector grants, EU funds, or national subsidies — award, conditions, recognition method (deferred-income vs net-against-asset), clawback provisions, CSRD/BEPS traceability; IAS-20 §7-§39 + ASC 958-605. The government-grants IAS-20 register.",
-        "uuid": "eb1f9349-466f-84f9-9873-8d906727d020",
+        "uuid": "fa0d4a83-6c25-8c21-8ee5-3522f5ad24e4",
         "words": [
           "use",
           "when",
@@ -43836,7 +44115,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about why the corpus collapses toward one — gravity is mass's pull, and in erpax DRY = mass = gravity: the more an atom is referenced (mass), the more it attracts duplicates and orphans to fuse into it. Gravity is the FORCE, fusion the act, entropy the fuel, the matrix the product; perfect DRY is a singularity — all mass at the one root (the torus collapse).",
-        "uuid": "62b2f49d-c103-805b-b6d6-b6664d5e071f",
+        "uuid": "21e8f276-6ce8-8d6d-90e3-54e560bb5fc0",
         "words": [
           "use",
           "when",
@@ -45053,7 +45332,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "header",
-        "uuid": "ae999f63-54aa-8cbf-a47a-eafb627df5e4",
+        "uuid": "eea5a023-d0a7-8ce7-a58e-e2d4c3cfdcc3",
         "words": [
           "header"
         ],
@@ -45064,7 +45343,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "header: a schema.org component word, fused from WPHeader",
-        "uuid": "489a6600-be30-8a9a-bbb2-f800432c64f1",
+        "uuid": "df54df6a-d295-8679-9e5c-040722282dfe",
         "words": [
           "header",
           "a",
@@ -46108,7 +46387,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when adding or debugging Payload lifecycle hooks — mutating data before/after read or change, encryption, side effects, third-party integration, auto-populating fields, or \"my hook didn't run / ran at the wrong time\".",
-        "uuid": "646cfbe2-492b-857a-8607-20c3be3864eb",
+        "uuid": "db3ff6e9-5fd8-80f7-ac22-f68ab4fccc05",
         "words": [
           "use",
           "when",
@@ -46583,7 +46862,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the closing position of the horo state ring — digit 9, \"the ring closes\", the settle/merge step where a flow completes and re-opens one octave up (settled, sealed, closed, reconciled). Closes the descent/return arc; nested under horo.",
-        "uuid": "5fee1f8f-c871-84ea-8b5b-ec1ad0750c60",
+        "uuid": "5cbeff6e-2202-8a88-95e7-581fbf8e3a33",
         "words": [
           "use",
           "when",
@@ -47659,6 +47938,76 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "15",
+    "path": "ifrs/15",
+    "translations": [
+      {
+        "key": "name",
+        "source": "15",
+        "uuid": "e3b0c442-98fc-8c14-9afb-f4c8996fb924",
+        "words": [],
+        "values": {
+          "en": "15"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when implementing or referencing IFRS 15 / ASC 606 — Revenue from Contracts with Customers.",
+        "uuid": "3d5f0ff3-c972-8c16-a351-5680eecb85e2",
+        "words": [
+          "use",
+          "when",
+          "implementing",
+          "or",
+          "referencing",
+          "ifrs",
+          "asc",
+          "revenue",
+          "from",
+          "contracts",
+          "with",
+          "customers"
+        ],
+        "values": {
+          "en": "Use when implementing or referencing IFRS 15 / ASC 606 — Revenue from Contracts with Customers."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "16",
+    "path": "ifrs/16",
+    "translations": [
+      {
+        "key": "name",
+        "source": "16",
+        "uuid": "e3b0c442-98fc-8c14-9afb-f4c8996fb924",
+        "words": [],
+        "values": {
+          "en": "16"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when implementing or referencing IFRS 16 / ASC 842 — Leases.",
+        "uuid": "fd69f879-9c8e-81ea-9afc-8fb36507b5be",
+        "words": [
+          "use",
+          "when",
+          "implementing",
+          "or",
+          "referencing",
+          "ifrs",
+          "asc",
+          "leases"
+        ],
+        "values": {
+          "en": "Use when implementing or referencing IFRS 16 / ASC 842 — Leases."
+        }
+      }
+    ]
+  },
+  {
     "atom": "ignore",
     "path": "ignore",
     "translations": [
@@ -48247,6 +48596,37 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "income: a schema.org component word, fused from incomeLimit"
+        }
+      }
+    ]
+  },
+  {
+    "atom": "2020",
+    "path": "incoterms/2020",
+    "translations": [
+      {
+        "key": "name",
+        "source": "2020",
+        "uuid": "e3b0c442-98fc-8c14-9afb-f4c8996fb924",
+        "words": [],
+        "values": {
+          "en": "2020"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when implementing or referencing INCOTERMS 2020.",
+        "uuid": "b2840ea1-522c-8d27-8657-5385f1403905",
+        "words": [
+          "use",
+          "when",
+          "implementing",
+          "or",
+          "referencing",
+          "incoterms"
+        ],
+        "values": {
+          "en": "Use when implementing or referencing INCOTERMS 2020."
         }
       }
     ]
@@ -49821,6 +50201,45 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "consolidation",
+    "path": "intercompany/consolidation",
+    "translations": [
+      {
+        "key": "name",
+        "source": "consolidation",
+        "uuid": "53e1e65f-b8e0-8d1a-b621-7eb39ebce7cc",
+        "words": [
+          "consolidation"
+        ],
+        "values": {
+          "en": "consolidation"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when implementing or referencing Phase B4: Intercompany Fiscal Alignment — Standards & Implementation.",
+        "uuid": "a807a5d8-8660-8dc3-b516-1b0d127bfdf4",
+        "words": [
+          "use",
+          "when",
+          "implementing",
+          "or",
+          "referencing",
+          "phase",
+          "b4",
+          "intercompany",
+          "fiscal",
+          "alignment",
+          "standards",
+          "implementation"
+        ],
+        "values": {
+          "en": "Use when implementing or referencing Phase B4: Intercompany Fiscal Alignment — Standards & Implementation."
+        }
+      }
+    ]
+  },
+  {
     "atom": "interest",
     "path": "interest",
     "translations": [
@@ -50852,7 +51271,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when issuing, receiving or auditing AR/AP invoices — EN-16931 BG-1 header, BG-22 document totals, BG-23 VAT breakdown, fiscal device fields, period-lock guard, GL posting and audit trail. The invoices collection.",
-        "uuid": "8bde7e6e-8ef4-8d4b-bd82-f5a468f2c4dc",
+        "uuid": "a3110025-fe2d-81ec-9e71-77c990acd4cc",
         "words": [
           "use",
           "when",
@@ -51162,7 +51581,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recording or auditing cash received or sent against an invoice — AR/AP GL posting, ISO-20022 pain/pacs message types, IBAN/BIC, period-lock guard, cash-flow classification (IAS-7 / ASC-230). The payments collection.",
-        "uuid": "24cb0565-055f-8266-9ac5-4aecfbd98685",
+        "uuid": "0954deed-cb74-8d30-ad57-a30ee7d2c6e1",
         "words": [
           "use",
           "when",
@@ -51531,6 +51950,409 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "iso: a schema.org component word, fused from iso6523Code"
+        }
+      }
+    ]
+  },
+  {
+    "atom": "13616",
+    "path": "iso/13616",
+    "translations": [
+      {
+        "key": "name",
+        "source": "13616",
+        "uuid": "e3b0c442-98fc-8c14-9afb-f4c8996fb924",
+        "words": [],
+        "values": {
+          "en": "13616"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when implementing or referencing ISO 13616 — IBAN.",
+        "uuid": "7558a56c-4c98-8872-969e-66bc0226feaa",
+        "words": [
+          "use",
+          "when",
+          "implementing",
+          "or",
+          "referencing",
+          "iso",
+          "iban"
+        ],
+        "values": {
+          "en": "Use when implementing or referencing ISO 13616 — IBAN."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "14289",
+    "path": "iso/14289",
+    "translations": [
+      {
+        "key": "name",
+        "source": "14289",
+        "uuid": "e3b0c442-98fc-8c14-9afb-f4c8996fb924",
+        "words": [],
+        "values": {
+          "en": "14289"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when implementing or referencing `src/standards/iso-14289/`.",
+        "uuid": "9f2e839c-4b77-8492-8675-5f852d76039a",
+        "words": [
+          "use",
+          "when",
+          "implementing",
+          "or",
+          "referencing",
+          "src",
+          "standards",
+          "iso"
+        ],
+        "values": {
+          "en": "Use when implementing or referencing `src/standards/iso-14289/`."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "19005",
+    "path": "iso/19005",
+    "translations": [
+      {
+        "key": "name",
+        "source": "19005",
+        "uuid": "e3b0c442-98fc-8c14-9afb-f4c8996fb924",
+        "words": [],
+        "values": {
+          "en": "19005"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when implementing or referencing `src/standards/iso-19005/`.",
+        "uuid": "9f2e839c-4b77-8492-8675-5f852d76039a",
+        "words": [
+          "use",
+          "when",
+          "implementing",
+          "or",
+          "referencing",
+          "src",
+          "standards",
+          "iso"
+        ],
+        "values": {
+          "en": "Use when implementing or referencing `src/standards/iso-19005/`."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "19011",
+    "path": "iso/19011",
+    "translations": [
+      {
+        "key": "name",
+        "source": "19011",
+        "uuid": "e3b0c442-98fc-8c14-9afb-f4c8996fb924",
+        "words": [],
+        "values": {
+          "en": "19011"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when implementing or referencing ISO 19011 — Guidelines for auditing management systems.",
+        "uuid": "1636cc4e-ddc8-8816-99ee-e97dce7405cd",
+        "words": [
+          "use",
+          "when",
+          "implementing",
+          "or",
+          "referencing",
+          "iso",
+          "guidelines",
+          "for",
+          "auditing",
+          "management",
+          "systems"
+        ],
+        "values": {
+          "en": "Use when implementing or referencing ISO 19011 — Guidelines for auditing management systems."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "20022",
+    "path": "iso/20022",
+    "translations": [
+      {
+        "key": "name",
+        "source": "20022",
+        "uuid": "e3b0c442-98fc-8c14-9afb-f4c8996fb924",
+        "words": [],
+        "values": {
+          "en": "20022"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when implementing or referencing ISO 20022 — Universal financial industry message scheme.",
+        "uuid": "4486efcd-a255-80f7-8dd0-acd524d6154a",
+        "words": [
+          "use",
+          "when",
+          "implementing",
+          "or",
+          "referencing",
+          "iso",
+          "universal",
+          "financial",
+          "industry",
+          "message",
+          "scheme"
+        ],
+        "values": {
+          "en": "Use when implementing or referencing ISO 20022 — Universal financial industry message scheme."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "27002",
+    "path": "iso/27002",
+    "translations": [
+      {
+        "key": "name",
+        "source": "27002",
+        "uuid": "e3b0c442-98fc-8c14-9afb-f4c8996fb924",
+        "words": [],
+        "values": {
+          "en": "27002"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when implementing or referencing ISO 27002 — Information security controls.",
+        "uuid": "b169369a-3a4b-86ff-b9ec-8fb2e38b761c",
+        "words": [
+          "use",
+          "when",
+          "implementing",
+          "or",
+          "referencing",
+          "iso",
+          "information",
+          "security",
+          "controls"
+        ],
+        "values": {
+          "en": "Use when implementing or referencing ISO 27002 — Information security controls."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "1",
+    "path": "iso/3166/1",
+    "translations": [
+      {
+        "key": "name",
+        "source": "1",
+        "uuid": "e3b0c442-98fc-8c14-9afb-f4c8996fb924",
+        "words": [],
+        "values": {
+          "en": "1"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when implementing or referencing ISO 3166-1 — Country codes.",
+        "uuid": "d7dc9dcc-2a67-819e-a2b9-848332223863",
+        "words": [
+          "use",
+          "when",
+          "implementing",
+          "or",
+          "referencing",
+          "iso",
+          "country",
+          "codes"
+        ],
+        "values": {
+          "en": "Use when implementing or referencing ISO 3166-1 — Country codes."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "2",
+    "path": "iso/3166/2",
+    "translations": [
+      {
+        "key": "name",
+        "source": "2",
+        "uuid": "e3b0c442-98fc-8c14-9afb-f4c8996fb924",
+        "words": [],
+        "values": {
+          "en": "2"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when implementing or referencing ISO 3166-2 — Country subdivisions.",
+        "uuid": "088ef2ed-7d6a-8922-bafc-19c018c8563c",
+        "words": [
+          "use",
+          "when",
+          "implementing",
+          "or",
+          "referencing",
+          "iso",
+          "country",
+          "subdivisions"
+        ],
+        "values": {
+          "en": "Use when implementing or referencing ISO 3166-2 — Country subdivisions."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "4217",
+    "path": "iso/4217",
+    "translations": [
+      {
+        "key": "name",
+        "source": "4217",
+        "uuid": "e3b0c442-98fc-8c14-9afb-f4c8996fb924",
+        "words": [],
+        "values": {
+          "en": "4217"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when implementing or referencing ISO 4217 — Currency codes.",
+        "uuid": "8f9d6ba4-ec3f-8461-9c41-59d2bc92fc17",
+        "words": [
+          "use",
+          "when",
+          "implementing",
+          "or",
+          "referencing",
+          "iso",
+          "currency",
+          "codes"
+        ],
+        "values": {
+          "en": "Use when implementing or referencing ISO 4217 — Currency codes."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "7064",
+    "path": "iso/7064",
+    "translations": [
+      {
+        "key": "name",
+        "source": "7064",
+        "uuid": "e3b0c442-98fc-8c14-9afb-f4c8996fb924",
+        "words": [],
+        "values": {
+          "en": "7064"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when implementing or referencing `src/standards/iso-7064/`.",
+        "uuid": "9f2e839c-4b77-8492-8675-5f852d76039a",
+        "words": [
+          "use",
+          "when",
+          "implementing",
+          "or",
+          "referencing",
+          "src",
+          "standards",
+          "iso"
+        ],
+        "values": {
+          "en": "Use when implementing or referencing `src/standards/iso-7064/`."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "8601",
+    "path": "iso/8601",
+    "translations": [
+      {
+        "key": "name",
+        "source": "8601",
+        "uuid": "e3b0c442-98fc-8c14-9afb-f4c8996fb924",
+        "words": [],
+        "values": {
+          "en": "8601"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when implementing or referencing ISO 8601 — Date and time.",
+        "uuid": "1b179703-e146-8ab6-aea2-078bf78ae1f6",
+        "words": [
+          "use",
+          "when",
+          "implementing",
+          "or",
+          "referencing",
+          "iso",
+          "date",
+          "and",
+          "time"
+        ],
+        "values": {
+          "en": "Use when implementing or referencing ISO 8601 — Date and time."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "9362",
+    "path": "iso/9362",
+    "translations": [
+      {
+        "key": "name",
+        "source": "9362",
+        "uuid": "e3b0c442-98fc-8c14-9afb-f4c8996fb924",
+        "words": [],
+        "values": {
+          "en": "9362"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when implementing or referencing ISO 9362 — BIC / SWIFT.",
+        "uuid": "91a366f2-f017-85e4-999b-5322c844c5f8",
+        "words": [
+          "use",
+          "when",
+          "implementing",
+          "or",
+          "referencing",
+          "iso",
+          "bic",
+          "swift"
+        ],
+        "values": {
+          "en": "Use when implementing or referencing ISO 9362 — BIC / SWIFT."
         }
       }
     ]
@@ -52033,7 +52855,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when closing a work order and reconciling standard vs actual manufacturing costs — material price/quantity, labour rate/efficiency, and overhead spending/volume variances per IAS-2 §21. The variance-decomposition record generated on work-order close.",
-        "uuid": "e1752bd1-0141-8726-9d51-8df6a7735af9",
+        "uuid": "778eebce-5146-88dc-96c8-94755cb09359",
         "words": [
           "use",
           "when",
@@ -52439,7 +53261,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when raising or reviewing a vendor purchase commitment — line items, Incoterms 2020 delivery terms and location (FOB/CIF/DDP/EXW), order/due dates, currency, and SOX three-way-match (PO → goods receipt → invoice). The procure-to-pay header that gates GL posting timing by FOB point per IFRS-15 §38-42.",
-        "uuid": "800c1227-a36e-8824-94d5-070a06e6a108",
+        "uuid": "a87a218c-427a-8bf6-988c-debf26d345c7",
         "words": [
           "use",
           "when",
@@ -53004,7 +53826,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when creating or auditing double-entry accounting records — balanced debit/credit lines, entry/posted/approval dates, period-lock enforcement, posted-immutability, and segregation-of-duties (creator ≠ approver). The core GL write target per IAS-1 and OECD SAF-T §3.",
-        "uuid": "046536c3-3a33-860c-a492-a22e7b253f06",
+        "uuid": "5b517d9e-2974-8d82-acbf-555a4b07036c",
         "words": [
           "use",
           "when",
@@ -53658,7 +54480,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modelling the dairy production phase — lactation, the milk-producing interval of a dairy female between parturition and dry-off, with its yield curve, parity (lactation number), and the dry period before the next cycle. The per-animal dairy season; milk is the agricultural produce realized at each milking (harvest).",
-        "uuid": "111418e7-937f-89ab-8fbc-14ea6898d81e",
+        "uuid": "ffba5708-a823-83c2-87ff-c687eb3495a2",
         "words": [
           "use",
           "when",
@@ -54512,7 +55334,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recognising and tracking IFRS 16 / ASC 842 lessee leases — ROU asset initial measurement, lease liability PV calculation, discount rate, payment frequency/timing, modifications, and period-end carrying amounts. The lease master-data collection.",
-        "uuid": "2bb86b8d-4a56-8409-9964-940fcb56064c",
+        "uuid": "c2720739-2d0f-8d61-9778-5e3d49b28740",
         "words": [
           "use",
           "when",
@@ -54619,7 +55441,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "lease-period-postings",
-        "uuid": "c5b537e1-a520-881f-b6a4-b9c134185ca8",
+        "uuid": "d1d9e180-1f6e-88ba-ad45-200d9df531c0",
         "words": [
           "lease",
           "period",
@@ -54632,7 +55454,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when posting period-end lease amortisation — one row per lease × period capturing interest accretion, principal repayment, ROU amortisation, and opening/closing carrying amounts; JE fires on status → posted. The IFRS 16 §36-38 period evidence collection.",
-        "uuid": "1f037d66-03f4-8492-97dc-f5861e64faf7",
+        "uuid": "61db4df8-106f-88b8-840b-4fa4e367e7bf",
         "words": [
           "use",
           "when",
@@ -54771,7 +55593,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when registering subsidiaries, associates, joint ventures or the group head for consolidation — legal name, LEI, registration number, functional/presentation currency, ownership %, consolidation method, and reporting framework. The IFRS-10 §B86 entity master distinct from DB tenants.",
-        "uuid": "ac574de6-afd1-8930-a1b5-ced3e180cb4f",
+        "uuid": "bebf9be9-de2d-87d0-b7cf-a2c3ddfec7b3",
         "words": [
           "use",
           "when",
@@ -55015,7 +55837,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when registering ultimate beneficial owners of a legal entity — direct/indirect ownership percent, control type, PEP status, KYC check link, and AMLD-5/CTA-required identification. The AML/Corporate-Transparency-Act UBO register.",
-        "uuid": "e711de39-a8f3-8df5-95f3-c8dbd1d1ed46",
+        "uuid": "735a28f6-1701-88a9-b258-89ed2e46eded",
         "words": [
           "use",
           "when",
@@ -55136,7 +55958,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recording an acquisition — asset deal, share deal, reverse acquisition, or NCI step-up — including IFRS 3 §32 goodwill computation, purchase price allocation (PPA) by asset/liability category, and measurement-period tracking. The IFRS 3 acquirer-side M&A register.",
-        "uuid": "26314f47-2f89-80cc-8ceb-484d3e71e3f7",
+        "uuid": "fb2c1b7b-5e87-875a-bfaf-2e095f980a99",
         "words": [
           "use",
           "when",
@@ -55190,7 +56012,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "closing-entries",
-        "uuid": "df7dd03c-2b92-82d0-bd82-822a7df61bb3",
+        "uuid": "cb6ef478-9511-8336-9dd8-a6c144b9bd17",
         "words": [
           "closing",
           "entries"
@@ -55202,7 +56024,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when executing or auditing period-end close — closing P&L accounts to retained earnings, auto-generating reversing entries, locking the period, and producing an immutable close audit trail per IFRS IAS-1 / SOX §404. The period-close journal-entry collection.",
-        "uuid": "51587273-997a-8edf-94b8-67b897da0555",
+        "uuid": "c539bb4c-3421-8d37-93a8-f8a8c58ab661",
         "words": [
           "use",
           "when",
@@ -55269,7 +56091,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when tracking filing, audit, certification, reporting, payment, or disclosure deadlines per legal entity and jurisdiction — due-date management, on-track/at-risk/overdue status, and compliance calendar oversight per ISO-37301. The compliance-deadline calendar collection.",
-        "uuid": "8d850f24-e040-8af7-8b41-16d8205bf1cb",
+        "uuid": "2e7af6f4-46b7-803d-91d1-077ec0fb730e",
         "words": [
           "use",
           "when",
@@ -55396,7 +56218,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when running or auditing a multi-entity group consolidation — entity closure readiness, intercompany balance reconciliation, elimination entry preparation, and consolidation workflow per IFRS-10 / IAS-27 / ASC-810. The group-consolidation process collection.",
-        "uuid": "95a5fdbf-8311-8ccc-b6c4-d45530b8ce6d",
+        "uuid": "db1c5e64-745f-8ac0-87ef-279495cb481a",
         "words": [
           "use",
           "when",
@@ -55455,7 +56277,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when generating or tracking immutable audit reports and regulatory filings — SAF-T 3.0.2 audit files, jurisdiction-specific tax filings, transfer-pricing documentation packages, and cross-jurisdiction optimization analysis per ISA-700 / SOX §404. The audit-report generation and submission collection.",
-        "uuid": "b9eddacc-8b15-896a-885b-2b96feef3c68",
+        "uuid": "7e7e1ad4-3790-8734-9e0a-d471ba517182",
         "words": [
           "use",
           "when",
@@ -55523,7 +56345,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when generating or reviewing immutable post-close analytics — variance analysis (budget vs. actual), financial ratio analysis, segment reporting (IFRS-8 business and geographic), and management KPI scorecards per IFRS IAS-1 / SOX §404. The post-close analytics report collection.",
-        "uuid": "bb6da607-3577-88a7-aa51-79fe10c41427",
+        "uuid": "92b8297f-6228-8527-827a-c69914133a32",
         "words": [
           "use",
           "when",
@@ -55588,7 +56410,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when managing or reporting a legal entity's debt instruments — bank term/revolving loans, bonds, finance and operating leases, convertible notes, covenant tracking, repayment schedules, and IFRS-9 current/non-current classification per IFRS-9 / IAS-1 / ASC-470. The debt-instrument register collection.",
-        "uuid": "e5f1b691-cb65-82b5-b188-dc295e0e1fd5",
+        "uuid": "ccc2d4e2-cb21-8eed-a363-ae7a158561c3",
         "words": [
           "use",
           "when",
@@ -55723,7 +56545,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when resolving a GL posting date to its fiscal year, period, quarter, week, or regulatory SAF-T code — pre-computed O(1) date-to-period lookup table bulk-generated from FiscalPeriods config per IAS-34 / ISO-8601 / SAF-T 3.0.2. The denormalized fiscal-calendar lookup collection.",
-        "uuid": "0498e8e2-5942-8074-897d-79db7e634a90",
+        "uuid": "3d957d56-dd95-83fa-9b1b-f455141339ff",
         "words": [
           "use",
           "when",
@@ -55794,7 +56616,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recording or reconciling paired source-document transactions between two group tenants or legal entities — cash transfers, service charges, goods transfers, loans, capital contributions, and cost allocations that must net to zero on consolidation per IFRS-10 §B86 / ASC-810 / SOX §404. The intercompany paired-document register collection.",
-        "uuid": "544de4c9-2ffb-8076-8042-bc5235ea078a",
+        "uuid": "b68fe320-54c0-8d35-84b2-21e1daf358b2",
         "words": [
           "use",
           "when",
@@ -55869,7 +56691,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when establishing or governing an internal audit department — charter management, CAE reporting line, audit committee linkage, annual audit plan, resource budgeting, and IIA IPPF/COSO alignment per IIA IPPF / ISO-19011 / SOX §404. The internal-audit-function governance collection.",
-        "uuid": "9fefdaa6-1c4f-882e-89f4-8951efd6646b",
+        "uuid": "4cee46a2-b55b-8242-96fb-db285fae06b3",
         "words": [
           "use",
           "when",
@@ -55936,7 +56758,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when performing or documenting management's SOX §404(a) assessment of internal controls over financial reporting — COSO-2013 framework evaluation across control environment, risk assessment, control activities, information, and monitoring per SOX §404(a) / COSO-2013 / PCAOB AS 2201. The management ICFR assessment collection.",
-        "uuid": "a8859324-c698-8169-80c9-d3967001ade5",
+        "uuid": "7aa8e115-f2a6-805d-8104-7bd68ac78bea",
         "words": [
           "use",
           "when",
@@ -56248,7 +57070,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "segment-reporting",
-        "uuid": "7841569f-1ac5-8662-bafc-ac523e29d052",
+        "uuid": "e884c6e7-03f3-885a-a30c-53290b2149de",
         "words": [
           "segment",
           "reporting"
@@ -56260,7 +57082,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when preparing IFRS-8/ASC-280 operating-segment disclosures — revenue, operating profit, assets, liabilities, CapEx, major-customer dependency, intersegment transfer pricing, and reconciliation to consolidated totals per fiscal period per entity. The segment-reporting disclosure register.",
-        "uuid": "7c68b8e0-81c2-8222-8381-0387be8921c6",
+        "uuid": "f36326f0-632a-8b91-a65c-ac2e854ba186",
         "words": [
           "use",
           "when",
@@ -60237,7 +61059,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when assessing the qualitative and quantitative thresholds for disclosure, adjustment, or audit scope — the audit and reporting gate that distinguishes significant from immaterial items",
-        "uuid": "43eafe88-bd68-8d12-902c-3ff6272fd5ff",
+        "uuid": "d983f41b-baa6-871b-bab9-21803c6431d1",
         "words": [
           "use",
           "when",
@@ -62676,7 +63498,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when registering or reporting IFRS 6 exploration & evaluation assets — wells, mines, concessions, quarries — capitalised under the §8 cost or revaluation policy, reclassified to PPE/intangibles once commercial viability is demonstrated (§17), or impaired (§18–22). The IFRS 6 E&E asset register.",
-        "uuid": "49054ce5-6ff0-893b-8bb3-efd57f8c4d6b",
+        "uuid": "2795ba81-3cd4-846e-b8a0-94a9eeca34cb",
         "words": [
           "use",
           "when",
@@ -64035,6 +64857,42 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "closing",
+    "path": "multi/currency/closing",
+    "translations": [
+      {
+        "key": "name",
+        "source": "closing",
+        "uuid": "daaa8528-f584-87cc-a50c-0115e609cbd7",
+        "words": [
+          "closing"
+        ],
+        "values": {
+          "en": "closing"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when implementing or referencing Multi-Currency Closing Standard.",
+        "uuid": "b6a7f3e3-993b-8c37-9dda-f46833616f4b",
+        "words": [
+          "use",
+          "when",
+          "implementing",
+          "or",
+          "referencing",
+          "multi",
+          "currency",
+          "closing",
+          "standard"
+        ],
+        "values": {
+          "en": "Use when implementing or referencing Multi-Currency Closing Standard."
+        }
+      }
+    ]
+  },
+  {
     "atom": "multiple",
     "path": "multiple",
     "translations": [
@@ -64384,6 +65242,40 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "Use when modelling the root–fungus symbiosis that mines nutrients and water for the plant — arbuscular mycorrhizal fungi colonize >90% of crops, extending hyphae to acquire phosphorus and water in exchange for plant carbon, and binding soil aggregates with glomalin. The living merge at the root zone; tillage and high-P fertilization suppress it."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "rev2",
+    "path": "nace/rev2",
+    "translations": [
+      {
+        "key": "name",
+        "source": "rev2",
+        "uuid": "47807909-03dd-8d86-91bb-b9e018e849f8",
+        "words": [
+          "rev2"
+        ],
+        "values": {
+          "en": "rev2"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when implementing or referencing NACE Rev. 2.",
+        "uuid": "11a54f3e-5381-89fa-9c46-1423c0d690e3",
+        "words": [
+          "use",
+          "when",
+          "implementing",
+          "or",
+          "referencing",
+          "nace",
+          "rev"
+        ],
+        "values": {
+          "en": "Use when implementing or referencing NACE Rev. 2."
         }
       }
     ]
@@ -65112,6 +66004,115 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "359",
+    "path": "nist/incits/359",
+    "translations": [
+      {
+        "key": "name",
+        "source": "359",
+        "uuid": "e3b0c442-98fc-8c14-9afb-f4c8996fb924",
+        "words": [],
+        "values": {
+          "en": "359"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when implementing or referencing NIST INCITS 359 — Role-Based Access Control.",
+        "uuid": "bd0e14d2-69a6-85e5-8778-e46147a80639",
+        "words": [
+          "use",
+          "when",
+          "implementing",
+          "or",
+          "referencing",
+          "nist",
+          "incits",
+          "role",
+          "based",
+          "access",
+          "control"
+        ],
+        "values": {
+          "en": "Use when implementing or referencing NIST INCITS 359 — Role-Based Access Control."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "108",
+    "path": "nist/sp/800/108",
+    "translations": [
+      {
+        "key": "name",
+        "source": "108",
+        "uuid": "e3b0c442-98fc-8c14-9afb-f4c8996fb924",
+        "words": [],
+        "values": {
+          "en": "108"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when implementing or referencing NIST SP 800-108 — Recommendation for Key Derivation.",
+        "uuid": "88b0327e-2e33-8546-b05f-f16628338927",
+        "words": [
+          "use",
+          "when",
+          "implementing",
+          "or",
+          "referencing",
+          "nist",
+          "sp",
+          "recommendation",
+          "for",
+          "key",
+          "derivation"
+        ],
+        "values": {
+          "en": "Use when implementing or referencing NIST SP 800-108 — Recommendation for Key Derivation."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "38",
+    "path": "nist/sp/800/38",
+    "translations": [
+      {
+        "key": "name",
+        "source": "38",
+        "uuid": "e3b0c442-98fc-8c14-9afb-f4c8996fb924",
+        "words": [],
+        "values": {
+          "en": "38"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when implementing or referencing NIST SP 800-38 — Block Cipher Modes of Operation.",
+        "uuid": "d5cfb9e0-19af-8627-aec0-fc04031996c8",
+        "words": [
+          "use",
+          "when",
+          "implementing",
+          "or",
+          "referencing",
+          "nist",
+          "sp",
+          "block",
+          "cipher",
+          "modes",
+          "of",
+          "operation"
+        ],
+        "values": {
+          "en": "Use when implementing or referencing NIST SP 800-38 — Block Cipher Modes of Operation."
+        }
+      }
+    ]
+  },
+  {
     "atom": "nl",
     "path": "nl",
     "translations": [
@@ -65722,7 +66723,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a document needs a human-readable sequential number — invoice/order/protocol numbering per scope. The NumberConcern/InvoiceNumberingConcern field + sequence hook; the number is the human handle, the content-uuid the machine identity.",
-        "uuid": "1ddfc80c-6d97-8dd7-af82-65ab57a7319d",
+        "uuid": "e5b77e38-daf2-8118-ac84-b5aef95f1495",
         "words": [
           "use",
           "when",
@@ -66426,6 +67427,42 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "tpg",
+    "path": "oecd/tpg",
+    "translations": [
+      {
+        "key": "name",
+        "source": "tpg",
+        "uuid": "227f289c-ade6-8b9d-b7fe-c6a92045d4e1",
+        "words": [
+          "tpg"
+        ],
+        "values": {
+          "en": "tpg"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when implementing or referencing OECD Transfer Pricing Guidelines.",
+        "uuid": "87118c78-f0e1-8f8a-8f9c-5bf2c8c70edc",
+        "words": [
+          "use",
+          "when",
+          "implementing",
+          "or",
+          "referencing",
+          "oecd",
+          "transfer",
+          "pricing",
+          "guidelines"
+        ],
+        "values": {
+          "en": "Use when implementing or referencing OECD Transfer Pricing Guidelines."
+        }
+      }
+    ]
+  },
+  {
     "atom": "offer",
     "path": "offer",
     "translations": [
@@ -66691,7 +67728,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when an identity needs its ISO/ITU-T Object Identifier — every uuid is 2.25.<128-bit integer> (X.667), urn:oid (RFC 3061): the hierarchical dotted-path dual of the flat content-uuid. A derived, lossless re-encoding — another independently-verifiable level, another increment of tamper cost. Matter-twin localize (uuidToOid).",
-        "uuid": "225b2c88-12dc-8b83-b3a6-2985c206a5d7",
+        "uuid": "5c072dfc-fc41-88a4-bf26-2535b28c647e",
         "words": [
           "use",
           "when",
@@ -66935,7 +67972,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the permitting boundary state in erpax — fiscal period open (postable), draft editable, session/stream open. The universal root of the open state; dual of close.",
-        "uuid": "34b2cc84-287d-86af-b5be-ab88f5005e25",
+        "uuid": "58604d62-d457-8d03-8df3-c75a4b75f653",
         "words": [
           "use",
           "when",
@@ -68066,7 +69103,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when detecting or handling statistical anomalies — outlier detection methods (z-score, IQR, isolation-forest), treatment (trim, robust stats, flag, investigate), impact on metrics and reporting.",
-        "uuid": "d74d97d1-be6e-8ed4-873c-72bb6c50da85",
+        "uuid": "7ce3c049-36c6-8f5e-8dce-ee181e892387",
         "words": [
           "use",
           "when",
@@ -68573,7 +69610,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modeling a pack line — the units of one produced lot-variant packed into one carton; header-primary with an optional option breakdown whose double-entry holds when supplied. Evolved from 200,993 rows of etrima pack_items.",
-        "uuid": "75202088-9bf7-8ceb-831f-2ddf67b3d2df",
+        "uuid": "06ff47f0-690b-8e46-9276-4f038824d102",
         "words": [
           "use",
           "when",
@@ -70508,6 +71545,39 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "3",
+    "path": "peppol/bis/3",
+    "translations": [
+      {
+        "key": "name",
+        "source": "3",
+        "uuid": "e3b0c442-98fc-8c14-9afb-f4c8996fb924",
+        "words": [],
+        "values": {
+          "en": "3"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when implementing or referencing Peppol BIS Billing 3.0.",
+        "uuid": "2c8e0ea2-0a64-8958-819d-3ab8db5b2545",
+        "words": [
+          "use",
+          "when",
+          "implementing",
+          "or",
+          "referencing",
+          "peppol",
+          "bis",
+          "billing"
+        ],
+        "values": {
+          "en": "Use when implementing or referencing Peppol BIS Billing 3.0."
+        }
+      }
+    ]
+  },
+  {
     "atom": "percentage",
     "path": "percentage",
     "translations": [
@@ -70903,7 +71973,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "period",
-        "uuid": "3826d6f9-4955-80de-9d9a-3da687063fbc",
+        "uuid": "78cf20c9-e2ee-8e23-9026-5071c0c4b839",
         "words": [
           "period"
         ],
@@ -70914,7 +71984,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a value is tied to a fiscal/calendar period — revenue recognized in period, expense recorded in month, cutoff rules. A date-range [start, end] or a fiscal-period code. Twins with date (point) to establish time-based accounting cutoffs and versioning.",
-        "uuid": "8cfad845-ff40-832b-aec4-175d51d2da33",
+        "uuid": "31bfa0cb-aea8-8745-ac4e-31fa8ffbbaae",
         "words": [
           "use",
           "when",
@@ -70967,13 +72037,49 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "closing",
+    "path": "period/end/closing",
+    "translations": [
+      {
+        "key": "name",
+        "source": "closing",
+        "uuid": "daaa8528-f584-87cc-a50c-0115e609cbd7",
+        "words": [
+          "closing"
+        ],
+        "values": {
+          "en": "closing"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when implementing or referencing Period-End Closing Standard.",
+        "uuid": "d6169245-91d0-8d22-ae12-0b2d3345415f",
+        "words": [
+          "use",
+          "when",
+          "implementing",
+          "or",
+          "referencing",
+          "period",
+          "end",
+          "closing",
+          "standard"
+        ],
+        "values": {
+          "en": "Use when implementing or referencing Period-End Closing Standard."
+        }
+      }
+    ]
+  },
+  {
     "atom": "locks",
     "path": "period/locks",
     "translations": [
       {
         "key": "name",
         "source": "period-locks",
-        "uuid": "77f045da-5163-8fbb-a448-89d3195f8de2",
+        "uuid": "76758c66-197f-8e5e-b49d-8660af1dbeda",
         "words": [
           "period",
           "locks"
@@ -70985,7 +72091,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when closing or locking accounting periods — monthly, quarterly, annual — to prevent new postings; allows reversals and prior-period adjustments; tracks who closed the period and when. The period-close gate collection.",
-        "uuid": "b9ac0391-cf37-8769-837b-f252601534de",
+        "uuid": "8e3c8122-3db4-8a25-8a67-647217ee8caa",
         "words": [
           "use",
           "when",
@@ -74273,7 +75379,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use for advance payments for future services or goods (insurance premiums, rent, subscriptions) — an asset that is drawn down to expense over the benefit period",
-        "uuid": "488c0c2e-d3a6-84ef-942c-a465a22294e0",
+        "uuid": "933701f4-0c24-8c22-98dd-fc5ac57fbea0",
         "words": [
           "use",
           "for",
@@ -76601,7 +77707,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when early-stage contact hasn't yet qualified as a lead — prospect→lead→opportunity progression in CRM. A party in discovery/research phase before qualification.",
-        "uuid": "3f808134-efe2-853b-bfb5-aa47dcbc2600",
+        "uuid": "d6ff7ae8-32d6-88fa-a55c-68a84b9a51db",
         "words": [
           "use",
           "when",
@@ -78035,7 +79141,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when setting or tracking rep/team/territory sales targets — period quota, attainment %, variance to goal; often linked to compensation.",
-        "uuid": "d34eb333-2144-8beb-89b6-42b530e7845b",
+        "uuid": "24a858f0-6784-8558-88ed-55525fb698f1",
         "words": [
           "use",
           "when",
@@ -79702,7 +80808,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a moved/renamed URL must resolve to its new target (301/302) — the official @payloadcms/plugin-redirects `redirects` collection + the SSR PayloadRedirects resolver. Read before wiring URL redirection, or when a `'redirects'` slug is \"not assignable to CollectionSlug\" (the plugin isn't registered).",
-        "uuid": "808727ee-c664-8b5e-8f9c-927203b4a0e1",
+        "uuid": "e65cd3ba-97aa-8e37-af3b-973f486fed29",
         "words": [
           "use",
           "when",
@@ -80346,7 +81452,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recognising IFRS 14 regulatory-deferral balances — under-recovery assets or over-recovery liabilities — for utilities or telcos under price-cap regimes on first-time IFRS adoption (§16 continuation of previous GAAP), tracking recovery period and period movements. The IFRS 14 regulatory-deferral register.",
-        "uuid": "95525f7f-ed17-8438-9a39-65b6316443c0",
+        "uuid": "c7bd279a-81e7-8e82-b661-a1eff7186da7",
         "words": [
           "use",
           "when",
@@ -80716,7 +81822,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a contract specifies the remedy for breach — payment, replacement, repair, specific performance, cure period, calculation (liquidated damages, penalties, attorney fees).",
-        "uuid": "d860ec3c-d27b-8f23-9953-e9ea56025100",
+        "uuid": "6e5f4a06-8053-8213-b4e1-26168d063d98",
         "words": [
           "use",
           "when",
@@ -81445,7 +82551,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "reporting",
-        "uuid": "4973108f-8f21-8e25-b5a3-9ed43f4953b4",
+        "uuid": "373c55ee-dc54-8c1a-9880-730b8d4768a0",
         "words": [
           "reporting"
         ],
@@ -81456,7 +82562,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "reporting: a schema.org component word, fused from healthcareReportingData",
-        "uuid": "23445de3-5ce1-88df-8ac2-1f5a664f1a88",
+        "uuid": "dad9056f-ed56-8d48-abcc-aa420b3053c6",
         "words": [
           "reporting",
           "a",
@@ -82278,7 +83384,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when closing or resolving a ticket, issue, or complaint — root-cause analysis, solution implementation, confirmation, closure. The endpoint of a support lifecycle.",
-        "uuid": "a11e2b74-7c91-81b6-a126-da8496838439",
+        "uuid": "93aa058f-5002-8a6f-b30a-8440e23e689f",
         "words": [
           "use",
           "when",
@@ -83008,7 +84114,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Reversing/correcting a posted entry — the source entry with debit↔credit swapped on the SAME accounts, balanced by construction. Read when generating reversing entries, credit notes, void/correction postings, or period-close reversals.",
-        "uuid": "5cd60c7a-e7c3-86d2-9b44-aff31d0b5d40",
+        "uuid": "2bc8ca7d-f89e-8e33-8c4a-e02d6473f776",
         "words": [
           "reversing",
           "correcting",
@@ -83130,6 +84236,108 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "People or organizations that have reviewed the content on this web page for accuracy and/or completeness."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "3986",
+    "path": "rfc/3986",
+    "translations": [
+      {
+        "key": "name",
+        "source": "3986",
+        "uuid": "e3b0c442-98fc-8c14-9afb-f4c8996fb924",
+        "words": [],
+        "values": {
+          "en": "3986"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when implementing or referencing RFC 3986 — Uniform Resource Identifier.",
+        "uuid": "715523a3-94f5-8bb9-8fb8-c237160d6b03",
+        "words": [
+          "use",
+          "when",
+          "implementing",
+          "or",
+          "referencing",
+          "rfc",
+          "uniform",
+          "resource",
+          "identifier"
+        ],
+        "values": {
+          "en": "Use when implementing or referencing RFC 3986 — Uniform Resource Identifier."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "6585",
+    "path": "rfc/6585",
+    "translations": [
+      {
+        "key": "name",
+        "source": "6585",
+        "uuid": "e3b0c442-98fc-8c14-9afb-f4c8996fb924",
+        "words": [],
+        "values": {
+          "en": "6585"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when implementing or referencing RFC 6585 — Additional HTTP Status Codes.",
+        "uuid": "c5ea81c6-e1ae-82e7-bb21-62aa8dc38ccf",
+        "words": [
+          "use",
+          "when",
+          "implementing",
+          "or",
+          "referencing",
+          "rfc",
+          "additional",
+          "http",
+          "status",
+          "codes"
+        ],
+        "values": {
+          "en": "Use when implementing or referencing RFC 6585 — Additional HTTP Status Codes."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "9110",
+    "path": "rfc/9110",
+    "translations": [
+      {
+        "key": "name",
+        "source": "9110",
+        "uuid": "e3b0c442-98fc-8c14-9afb-f4c8996fb924",
+        "words": [],
+        "values": {
+          "en": "9110"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when implementing or referencing RFC 9110 — HTTP Semantics.",
+        "uuid": "c6a22184-72a5-8b70-9fb2-a8eda7d047be",
+        "words": [
+          "use",
+          "when",
+          "implementing",
+          "or",
+          "referencing",
+          "rfc",
+          "http",
+          "semantics"
+        ],
+        "values": {
+          "en": "Use when implementing or referencing RFC 9110 — HTTP Semantics."
         }
       }
     ]
@@ -83814,7 +85022,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about WHERE on the cycle something sits in erpax — the 120° offset of the three axis coils (0°/120°/240°), the ⅓-period animation tick at A432 ms, the moment a version captures. The time-position of a state. Nested under rodin.",
-        "uuid": "f56eeef5-91da-8724-adb8-aad5fee98737",
+        "uuid": "894cdc14-a9d3-87b7-bb26-084ef0a145d2",
         "words": [
           "use",
           "when",
@@ -83945,7 +85153,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the closed surface the rodin vortex winds on in erpax — the doubling helix on a donut, inward (state×state) and outward (×10 octave) both closing; why the sequence is a ring with no top/bottom. Nested under rodin.",
-        "uuid": "973360f5-b9ac-88ce-9ec9-c94ed50c6ecb",
+        "uuid": "c236e69f-2477-8093-a07b-e8c3efe352e2",
         "words": [
           "use",
           "when",
@@ -85113,7 +86321,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when auditing anything before acting on it — the verified-true: content-uuid recomputes, the books balance, the lineage traces to a real source. The set-apart canonical form that passes verification AND validation; dual of profane; run at every scale before every act.",
-        "uuid": "bf7841c1-10f6-8dea-9e76-775f2e84f1a3",
+        "uuid": "cf6aa1d4-b0a9-8e24-a526-6844bf25eab7",
         "words": [
           "use",
           "when",
@@ -85162,6 +86370,46 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "Use when auditing anything before acting on it — the verified-true: content-uuid recomputes, the books balance, the lineage traces to a real source. The set-apart canonical form that passes verification AND validation; dual of profane; run at every scale before every act."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "t",
+    "path": "saf/t",
+    "translations": [
+      {
+        "key": "name",
+        "source": "t",
+        "uuid": "7afc7f35-fefb-8ced-83cd-72f1d860751d",
+        "words": [
+          "t"
+        ],
+        "values": {
+          "en": "t"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when implementing or referencing OECD SAF-T — Standard Audit File for Tax.",
+        "uuid": "98fc40dd-3d4a-828e-9b7b-c53bff828469",
+        "words": [
+          "use",
+          "when",
+          "implementing",
+          "or",
+          "referencing",
+          "oecd",
+          "saf",
+          "t",
+          "standard",
+          "audit",
+          "file",
+          "for",
+          "tax"
+        ],
+        "values": {
+          "en": "Use when implementing or referencing OECD SAF-T — Standard Audit File for Tax."
         }
       }
     ]
@@ -86401,7 +87649,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when monitoring fields for pest, disease, and crop status — scouting is the systematic field-walk that drives integrated pest management (IPM): observe, identify, count against an economic threshold, then act (cultural/biological/mechanical/chemical) only when damage cost exceeds control cost. The monitoring backbone; turns pest control from calendar-spray into measured decision.",
-        "uuid": "ece974e6-d4fa-8efa-9a8a-330112a6532f",
+        "uuid": "66c68147-d66f-8cd2-88a2-9eb67f14e615",
         "words": [
           "use",
           "when",
@@ -86757,7 +88005,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when output is bounded by a recurring climate window in the annual cycle — the growing/harvest season set by the frost-free period, the cool- vs warm-season crop split, and heat accumulation (growing degree days) rather than the calendar. The season is the time-axis bottleneck of agriculture: land × season caps how much can be grown; it is regional and probabilistic, never a copied calendar.",
-        "uuid": "c753456f-88dc-8262-aebc-d3b3f9d9c8f5",
+        "uuid": "a309c493-db91-8152-8ef4-28bd4caf1784",
         "words": [
           "use",
           "when",
@@ -87242,6 +88490,45 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "header",
+    "path": "security/header",
+    "translations": [
+      {
+        "key": "name",
+        "source": "header",
+        "uuid": "eea5a023-d0a7-8ce7-a58e-e2d4c3cfdcc3",
+        "words": [
+          "header"
+        ],
+        "values": {
+          "en": "header"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when implementing or referencing `_security-headers/` — Composite HTTP security-headers module.",
+        "uuid": "c2f5c5c4-8152-8f41-8c1f-8820125a0e79",
+        "words": [
+          "use",
+          "when",
+          "implementing",
+          "or",
+          "referencing",
+          "security",
+          "headers",
+          "composite",
+          "http",
+          "security",
+          "headers",
+          "module"
+        ],
+        "values": {
+          "en": "Use when implementing or referencing `_security-headers/` — Composite HTTP security-headers module."
+        }
+      }
+    ]
+  },
+  {
     "atom": "access",
     "path": "security/remote/access",
     "translations": [
@@ -87490,7 +88777,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when identifying and reporting operating segments per IFRS-8 — revenue/expense/asset/liability grouping for disclosure and management reporting; distinct from cost-center dimension",
-        "uuid": "babec370-dc08-8515-bf4b-845522197e23",
+        "uuid": "d31343d2-fdee-8605-9c84-04f80a6c6e8a",
         "words": [
           "use",
           "when",
@@ -88374,7 +89661,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when deciding whether to act from internal knowledge vs. ask externally — totality/completeness, the identity-element guarantee that every case is defined, the bounded form holding the unbounded answer. Nested under self → self-sufficiency: derive the next move, don't break flow with questions.",
-        "uuid": "d95a3227-80f3-879e-9179-5bd7bb5148df",
+        "uuid": "4e957ebb-ffc2-8835-ac37-6dfd48d231ba",
         "words": [
           "use",
           "when",
@@ -92763,7 +94050,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when implementing or auditing a compliance standard in erpax — IFRS/US-GAAP/SAF-T/ISO/SOX/EN-16931/NIST. Standards are implemented via the skills (each skill is the answer-path holding a standard's form); @standard banners must be true, not decoration.",
-        "uuid": "6caebc7b-9e92-86b7-8b79-21f0ca38579a",
+        "uuid": "da7a2b66-6947-8b19-b9cf-1c97b2943a3d",
         "words": [
           "use",
           "when",
@@ -93000,7 +94287,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a date-range or period begins — contract start date, employment start date, fiscal period start, promotion period start. Pairs with end (or duration, or another date atom) to define a temporal span. ISO-8601 datetime.",
-        "uuid": "4794c1cb-436c-85b3-8e5f-372ec0509f65",
+        "uuid": "bea7d49c-bade-800a-b061-1dada630f05b",
         "words": [
           "use",
           "when",
@@ -94410,7 +95697,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when managing a tenant's active subscription — plan binding, billing-period dates, trial/active/past-due/grace/suspended/cancelled state machine, Stripe subscription and customer IDs, cancellation and pause events, IFRS-15/ASC-606 deferred-revenue lifecycle hooks. The tenant-to-plan binding collection.",
-        "uuid": "91a17f2b-a0fa-8cda-8c95-674a2cb940a1",
+        "uuid": "3e5696ad-1b95-8b9f-85d5-706eedbeb8d8",
         "words": [
           "use",
           "when",
@@ -94481,7 +95768,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recording or aggregating metered-billing events — per-tenant per-feature countable occurrences (invoices issued, signed PAdES attestations, country-bundle calls) with quantity, rate snapshot, billing-period bucket and idempotency key, rolled into IFRS-15 §B16 usage-based invoice lines. The metered-billing event-log collection.",
-        "uuid": "d3df20b4-88fc-84f9-9e59-18d84fbbff78",
+        "uuid": "8faafc5d-c1e8-887c-a865-04e637ace852",
         "words": [
           "use",
           "when",
@@ -96120,7 +97407,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modelling one tagging — the singular model of the taggings collection (the plural store); the act of attaching a tag to a record.",
-        "uuid": "2bb8a8ae-6343-81ea-aa4e-90c1b9ee1e4f",
+        "uuid": "b48bd9bd-da80-8249-8583-38a15f1b2dfa",
         "words": [
           "use",
           "when",
@@ -96635,7 +97922,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a value bears VAT/GST/sales/withholding tax — a rate on a taxable base, UN/CEFACT 5305 category codes, EN-16931 VAT breakdown, inclusive/exclusive pricing, exemption, reverse-charge, the tax point. The TaxConcern; tax is a cascade-resolved rate on a base, one engine feeding receipt+total+SAF-T, never a baked literal.",
-        "uuid": "06e6693a-a3a7-830b-ba41-54237a4c5f7c",
+        "uuid": "b22e2ed1-124d-8369-aa22-c939e4b22407",
         "words": [
           "use",
           "when",
@@ -96928,7 +98215,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when filing or tracking tax returns — VAT monthly/quarterly/annual, EC Sales List, Intrastat, SAF-T, US sales tax, GST, corporate income or withholding returns — with period, output/input tax, net liability, authority confirmation reference, filedAt/paidAt timestamps and attachment evidence. The filed-return record collection (distinct from the TaxCalculations snapshot).",
-        "uuid": "2e78f9a8-bd65-8284-9b31-0a722069ac18",
+        "uuid": "8f71f1e1-d913-81f0-9566-f3701741974a",
         "words": [
           "use",
           "when",
@@ -96985,6 +98272,45 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "Use when filing or tracking tax returns — VAT monthly/quarterly/annual, EC Sales List, Intrastat, SAF-T, US sales tax, GST, corporate income or withholding returns — with period, output/input tax, net liability, authority confirmation reference, filedAt/paidAt timestamps and attachment evidence. The filed-return record collection (distinct from the TaxCalculations snapshot)."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "integration",
+    "path": "tax/period/integration",
+    "translations": [
+      {
+        "key": "name",
+        "source": "integration",
+        "uuid": "9b2fcb73-3740-88c1-950a-6f71248f7ed7",
+        "words": [
+          "integration"
+        ],
+        "values": {
+          "en": "integration"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when implementing or referencing Phase B5: Tax Period Integration — Standards & Implementation.",
+        "uuid": "a4571f3e-0b5b-8cf0-b9e6-b32bcb5df4ab",
+        "words": [
+          "use",
+          "when",
+          "implementing",
+          "or",
+          "referencing",
+          "phase",
+          "b5",
+          "tax",
+          "period",
+          "integration",
+          "standards",
+          "implementation"
+        ],
+        "values": {
+          "en": "Use when implementing or referencing Phase B5: Tax Period Integration — Standards & Implementation."
         }
       }
     ]
@@ -97218,7 +98544,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "reporting-standards",
-        "uuid": "e18bae14-4da3-852f-abc2-94719bcca71c",
+        "uuid": "d7fb8191-9a30-8f84-820d-e2c8c75e2e3e",
         "words": [
           "reporting",
           "standards"
@@ -97230,7 +98556,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when registering or querying GAAP/IFRS/SOX/Tax reporting frameworks per jurisdiction — standard name, code, type, effective date, and reference material. The per-jurisdiction reporting-standard catalogue node.",
-        "uuid": "737ab384-cd62-8cc1-94d6-1ab9e3ab12bd",
+        "uuid": "eee551c8-bae0-83b2-9011-3d1fd019f22d",
         "words": [
           "use",
           "when",
@@ -97275,7 +98601,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "reporting-mappings",
-        "uuid": "ae2db5b5-e165-89e7-b6c6-e8886286f762",
+        "uuid": "b8e9dfd4-aa48-8eeb-b4d3-7f769ed5f9fd",
         "words": [
           "reporting",
           "mappings"
@@ -97287,7 +98613,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when translating elements across reporting frameworks — account/line-item/disclosure/metric mappings between a source and target standard (XBRL-GL, IFRS-Taxonomy, SAF-T). The cross-standard element-mapping node.",
-        "uuid": "836396c1-ada1-8bf7-938b-9190c372f755",
+        "uuid": "fec34258-43f4-8b6a-b8b9-fb2018b115c7",
         "words": [
           "use",
           "when",
@@ -97409,7 +98735,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when wiring source collection fields to statutory report template slots — mapping field names, types, transformations, and validation rules for SAF-T/XBRL/EN-16931 filings. The field-level mapping node for statutory report templates.",
-        "uuid": "e52639ad-e7b4-8db5-a0f9-4c7dd0aafc9a",
+        "uuid": "0457bc58-af9b-8b55-8867-20c1d8466980",
         "words": [
           "use",
           "when",
@@ -98105,7 +99431,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when creating or scoping a tenant — the GDPR-controller boundary for all access, localization cascade (BCP-47/ECMA-402), accounting framework (IFRS/GAAP/fiscal-year), reporting currency (ISO 4217), and integration secrets (Stripe, Resend, MCP). The multi-tenant root entity and access-scope boundary.",
-        "uuid": "dd540807-cbc1-8d68-bc8a-e9b91f9d8fa9",
+        "uuid": "9628b6d8-2082-82de-87ae-135863533ae7",
         "words": [
           "use",
           "when",
@@ -98402,7 +99728,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modeling contract end conditions — termination for convenience, termination for cause, notice period, effect (wind-down obligations, survival clauses), remedies on termination.",
-        "uuid": "cc93c6eb-2362-8c69-928a-8fc27aedffc2",
+        "uuid": "ed869238-0a71-827c-953b-faa8eeb79747",
         "words": [
           "use",
           "when",
@@ -98689,7 +100015,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when writing or debugging erpax's own tests — discovering the live config to assert against, seeding isolated fixtures by level (unit/integration/e2e), transactional cleanup, parallel runners, or snapshot/restore — the society's self-test infrastructure that validates the running app against its own generated schema.",
-        "uuid": "502ab14f-8ca1-8606-9628-f993e5d7a7b3",
+        "uuid": "fb45b90c-6459-8894-89e2-106bf175a800",
         "words": [
           "use",
           "when",
@@ -100622,7 +101948,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when auto-training an actor (user, employee, or agent) toward best efficiency in the app — closing the competency gap (required − held) by routing each deficit to the skillRoute that fills it, the gap priced as a decompression debt that off-gasses toward the role's M-value. Efficiency IS the pay-fraction (etrima efficiency_percent); training literally raises pay.",
-        "uuid": "38347be5-e371-812e-94fc-b307862a8e08",
+        "uuid": "745920ed-db0a-86e9-b5cc-bed9190b9a87",
         "words": [
           "use",
           "when",
@@ -102495,6 +103821,160 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "un: a schema.org component word, fused from UnRegisterAction"
+        }
+      }
+    ]
+  },
+  {
+    "atom": "5305",
+    "path": "un/cefact/5305",
+    "translations": [
+      {
+        "key": "name",
+        "source": "5305",
+        "uuid": "e3b0c442-98fc-8c14-9afb-f4c8996fb924",
+        "words": [],
+        "values": {
+          "en": "5305"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when implementing or referencing UN/CEFACT 5305 — Duty / Tax / Fee Category Code.",
+        "uuid": "4f637430-3f20-86b0-9ac5-5f1392c39fac",
+        "words": [
+          "use",
+          "when",
+          "implementing",
+          "or",
+          "referencing",
+          "un",
+          "cefact",
+          "duty",
+          "tax",
+          "fee",
+          "category",
+          "code"
+        ],
+        "values": {
+          "en": "Use when implementing or referencing UN/CEFACT 5305 — Duty / Tax / Fee Category Code."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "edifact",
+    "path": "un/edifact",
+    "translations": [
+      {
+        "key": "name",
+        "source": "edifact",
+        "uuid": "2221901c-09f9-8e8e-8eb0-4d68376af7b6",
+        "words": [
+          "edifact"
+        ],
+        "values": {
+          "en": "edifact"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when implementing or referencing UN/EDIFACT — UN rules for Electronic Data Interchange For Administration, Commerce and Transport.",
+        "uuid": "85217803-6bf3-8937-b1a3-65f42c988883",
+        "words": [
+          "use",
+          "when",
+          "implementing",
+          "or",
+          "referencing",
+          "un",
+          "edifact",
+          "un",
+          "rules",
+          "for",
+          "electronic",
+          "data",
+          "interchange",
+          "for",
+          "administration",
+          "commerce",
+          "and",
+          "transport"
+        ],
+        "values": {
+          "en": "Use when implementing or referencing UN/EDIFACT — UN rules for Electronic Data Interchange For Administration, Commerce and Transport."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "unavoidable",
+    "path": "unavoidable",
+    "translations": [
+      {
+        "key": "name",
+        "source": "unavoidable",
+        "uuid": "4b5f74c6-06b3-814d-bddc-a61e7840e614",
+        "words": [
+          "unavoidable"
+        ],
+        "values": {
+          "en": "unavoidable"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when hardening erpax toward infinite tamper-cost — why every security lever must be gate-FORCED (a stray fails, exit 2), never merely advisory. The cost is the minimum across dimensions, so the weakest avoidable gap is the cheapest forgery; only the unavoidable raises the floor.",
+        "uuid": "825335c9-290a-8d44-84b8-54703ad5d7ec",
+        "words": [
+          "use",
+          "when",
+          "hardening",
+          "erpax",
+          "toward",
+          "infinite",
+          "tamper",
+          "cost",
+          "why",
+          "every",
+          "security",
+          "lever",
+          "must",
+          "be",
+          "gate",
+          "forced",
+          "a",
+          "stray",
+          "fails",
+          "exit",
+          "never",
+          "merely",
+          "advisory",
+          "the",
+          "cost",
+          "is",
+          "the",
+          "minimum",
+          "across",
+          "dimensions",
+          "so",
+          "the",
+          "weakest",
+          "avoidable",
+          "gap",
+          "is",
+          "the",
+          "cheapest",
+          "forgery",
+          "only",
+          "the",
+          "unavoidable",
+          "raises",
+          "the",
+          "floor"
+        ],
+        "values": {
+          "en": "Use when hardening erpax toward infinite tamper-cost — why every security lever must be gate-FORCED (a stray fails, exit 2), never merely advisory. The cost is the minimum across dimensions, so the weakest avoidable gap is the cheapest forgery; only the unavoidable raises the floor."
         }
       }
     ]
@@ -106073,6 +107553,41 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "hs",
+    "path": "wco/hs",
+    "translations": [
+      {
+        "key": "name",
+        "source": "hs",
+        "uuid": "858b623f-4cdb-8f1c-bd55-0ee0a0d0b79d",
+        "words": [
+          "hs"
+        ],
+        "values": {
+          "en": "hs"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when implementing or referencing WCO Harmonised System.",
+        "uuid": "746d5b21-d7ba-82ca-bd77-21ff5d66303b",
+        "words": [
+          "use",
+          "when",
+          "implementing",
+          "or",
+          "referencing",
+          "wco",
+          "harmonised",
+          "system"
+        ],
+        "values": {
+          "en": "Use when implementing or referencing WCO Harmonised System."
+        }
+      }
+    ]
+  },
+  {
     "atom": "wear",
     "path": "wear",
     "translations": [
@@ -106526,7 +108041,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about composition in erpax — whole↔part, fields→collections→plugins→erpax, BOM, consolidation, the fractal self-similar levels. The universal root of composition.",
-        "uuid": "abfde71a-74ad-8d59-b00d-ed96e831e870",
+        "uuid": "949fbfc4-af2b-8c59-8ee3-293651dbe01f",
         "words": [
           "use",
           "when",
@@ -106748,7 +108263,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a treated animal's produce cannot yet be sold — the withdrawal period: the mandatory days after a drug/vaccine/treatment before milk/meat/eggs are residue-safe to market. A food-safety embargo that gates saleability (the accountable cannot-sell-yet state); the livestock twin of a quarantine or lock-up period.",
-        "uuid": "c8693235-2a54-868f-b76c-cbb0258a9349",
+        "uuid": "eb89bf0e-593e-827f-bcca-d841edaa782c",
         "words": [
           "use",
           "when",
@@ -108255,4 +109770,4 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
   }
 ]
 
-export const TRANSLATIONS_COUNT = 2276
+export const TRANSLATIONS_COUNT = 2318

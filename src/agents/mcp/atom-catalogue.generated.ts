@@ -23,6 +23,162 @@ export interface AtomSkill {
 
 export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
+    "atom": "1",
+    "name": "1",
+    "description": "Use when implementing or referencing ISO 3166-1 — Country codes.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/iso/3166/1"
+  },
+  {
+    "atom": "108",
+    "name": "108",
+    "description": "Use when implementing or referencing NIST SP 800-108 — Recommendation for Key Derivation.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/nist/sp/800/108"
+  },
+  {
+    "atom": "13616",
+    "name": "13616",
+    "description": "Use when implementing or referencing ISO 13616 — IBAN.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/iso/13616"
+  },
+  {
+    "atom": "142",
+    "name": "142",
+    "description": "Use when implementing or referencing `src/standards/etsi-en-319-142/`.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/etsi/en/319/142"
+  },
+  {
+    "atom": "14289",
+    "name": "14289",
+    "description": "Use when implementing or referencing `src/standards/iso-14289/`.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/iso/14289"
+  },
+  {
+    "atom": "15",
+    "name": "15",
+    "description": "Use when implementing or referencing IFRS 15 / ASC 606 — Revenue from Contracts with Customers.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/ifrs/15"
+  },
+  {
+    "atom": "16",
+    "name": "16",
+    "description": "Use when implementing or referencing IFRS 16 / ASC 842 — Leases.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/ifrs/16"
+  },
+  {
+    "atom": "16931",
+    "name": "16931",
+    "description": "Use when implementing or referencing EN 16931 — Electronic invoicing (semantic data model).",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/en/16931"
+  },
+  {
+    "atom": "19005",
+    "name": "19005",
+    "description": "Use when implementing or referencing `src/standards/iso-19005/`.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/iso/19005"
+  },
+  {
+    "atom": "19011",
+    "name": "19011",
+    "description": "Use when implementing or referencing ISO 19011 — Guidelines for auditing management systems.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/iso/19011"
+  },
+  {
+    "atom": "2",
+    "name": "2",
+    "description": "Use when implementing or referencing ISO 3166-2 — Country subdivisions.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/iso/3166/2"
+  },
+  {
+    "atom": "20022",
+    "name": "20022",
+    "description": "Use when implementing or referencing ISO 20022 — Universal financial industry message scheme.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/iso/20022"
+  },
+  {
+    "atom": "2020",
+    "name": "2020",
+    "description": "Use when implementing or referencing INCOTERMS 2020.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/incoterms/2020"
+  },
+  {
+    "atom": "27002",
+    "name": "27002",
+    "description": "Use when implementing or referencing ISO 27002 — Information security controls.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/iso/27002"
+  },
+  {
+    "atom": "3",
+    "name": "3",
+    "description": "Use when implementing or referencing Peppol BIS Billing 3.0.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/peppol/bis/3"
+  },
+  {
+    "atom": "359",
+    "name": "359",
+    "description": "Use when implementing or referencing NIST INCITS 359 — Role-Based Access Control.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/nist/incits/359"
+  },
+  {
+    "atom": "38",
+    "name": "38",
+    "description": "Use when implementing or referencing NIST SP 800-38 — Block Cipher Modes of Operation.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/nist/sp/800/38"
+  },
+  {
+    "atom": "3986",
+    "name": "3986",
+    "description": "Use when implementing or referencing RFC 3986 — Uniform Resource Identifier.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/rfc/3986"
+  },
+  {
+    "atom": "4217",
+    "name": "4217",
+    "description": "Use when implementing or referencing ISO 4217 — Currency codes.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/iso/4217"
+  },
+  {
+    "atom": "47",
+    "name": "47",
+    "description": "Use when implementing or referencing BCP 47 — Language tags.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/bcp/47"
+  },
+  {
+    "atom": "5305",
+    "name": "5305",
+    "description": "Use when implementing or referencing UN/CEFACT 5305 — Duty / Tax / Fee Category Code.",
+    "path": "un/cefact/5305"
+  },
+  {
+    "atom": "6585",
+    "name": "6585",
+    "description": "Use when implementing or referencing RFC 6585 — Additional HTTP Status Codes.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/rfc/6585"
+  },
+  {
+    "atom": "7064",
+    "name": "7064",
+    "description": "Use when implementing or referencing `src/standards/iso-7064/`.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/iso/7064"
+  },
+  {
+    "atom": "8601",
+    "name": "8601",
+    "description": "Use when implementing or referencing ISO 8601 — Date and time.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/iso/8601"
+  },
+  {
+    "atom": "9110",
+    "name": "9110",
+    "description": "Use when implementing or referencing RFC 9110 — HTTP Semantics.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/rfc/9110"
+  },
+  {
+    "atom": "9362",
+    "name": "9362",
+    "description": "Use when implementing or referencing ISO 9362 — BIC / SWIFT.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/iso/9362"
+  },
+  {
     "atom": "about",
     "name": "about",
     "description": "The subject matter of an object.",
@@ -171,6 +327,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "acriss",
     "description": "acriss: a schema.org component word, fused from acrissCode",
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/acriss"
+  },
+  {
+    "atom": "act",
+    "name": "act",
+    "description": "Use when implementing or referencing EU AI Act 2024.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/eu/ai/act"
   },
   {
     "atom": "action",
@@ -2219,6 +2381,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/closes"
   },
   {
+    "atom": "closing",
+    "name": "closing",
+    "description": "Use when implementing or referencing Period-End Closing Standard.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/period/end/closing"
+  },
+  {
     "atom": "closure",
     "name": "closure",
     "description": "Use when an external dependency must fall back to erpax ITSELF — every external role (payment-provider, signing, notification, search, federation) has a registered internal provider that completes the operation when the external call fails (Conservation Law 53, withInternalFallback). The dependency graph terminates at erpax; everything falls back to the self.",
@@ -2695,8 +2863,8 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "consolidation",
     "name": "consolidation",
-    "description": "Use when modelling one consolidation — the singular model of the consolidations collection (the plural store); the combination of multiple entities figures into one set.",
-    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/consolidation"
+    "description": "Use when implementing or referencing Phase B4: Intercompany Fiscal Alignment — Standards & Implementation.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/intercompany/consolidation"
   },
   {
     "atom": "consolidations",
@@ -4043,6 +4211,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/ecosystem"
   },
   {
+    "atom": "edifact",
+    "name": "edifact",
+    "description": "Use when implementing or referencing UN/EDIFACT — UN rules for Electronic Data Interchange For Administration, Commerce and Transport.",
+    "path": "un/edifact"
+  },
+  {
     "atom": "edit",
     "name": "edit",
     "description": "edit: a schema.org component word, fused from editEIDR",
@@ -4431,6 +4605,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "escrow",
     "description": "Use when funds are held by a third party (escrow agent) pending satisfaction of contract conditions — separate legal/financial status from held-to-maturity or restricted cash per IAS-7",
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/escrow"
+  },
+  {
+    "atom": "esr",
+    "name": "esr",
+    "description": "Use when implementing or referencing EU CSRD / ESRS.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/eu/csrd/esr"
   },
   {
     "atom": "establishment",
@@ -5485,8 +5665,8 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "header",
     "name": "header",
-    "description": "header: a schema.org component word, fused from WPHeader",
-    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/header"
+    "description": "Use when implementing or referencing `_security-headers/` — Composite HTTP security-headers module.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/security/header"
   },
   {
     "atom": "headline",
@@ -5673,6 +5853,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "how",
     "description": "Instructions that explain how to achieve a result by performing a sequence of steps.",
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/how"
+  },
+  {
+    "atom": "hs",
+    "name": "hs",
+    "description": "Use when implementing or referencing WCO Harmonised System.",
+    "path": "wco/hs"
   },
   {
     "atom": "http",
@@ -6039,6 +6225,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "integer",
     "description": "Data type: Integer.",
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/integer"
+  },
+  {
+    "atom": "integration",
+    "name": "integration",
+    "description": "Use when implementing or referencing Phase B5: Tax Period Integration — Standards & Implementation.",
+    "path": "tax/period/integration"
   },
   {
     "atom": "integrity",
@@ -9323,6 +9515,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/protein"
   },
   {
+    "atom": "protocol",
+    "name": "protocol",
+    "description": "Use when implementing or referencing GHG Protocol.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/ghg/protocol"
+  },
+  {
     "atom": "provider",
     "name": "provider",
     "description": "The service provider, service operator, or service performer; the goods producer. Another party (a seller) may offer those services or goods on behalf of the provider. A provider may also serve as the",
@@ -10257,6 +10455,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "tax-returns",
     "description": "Use when filing or tracking tax returns — VAT monthly/quarterly/annual, EC Sales List, Intrastat, SAF-T, US sales tax, GST, corporate income or withholding returns — with period, output/input tax, net liability, authority confirmation reference, filedAt/paidAt timestamps and attachment evidence. The filed-return record collection (distinct from the TaxCalculations snapshot).",
     "path": "tax/jurisdictions/tax/returns"
+  },
+  {
+    "atom": "rev2",
+    "name": "rev2",
+    "description": "Use when implementing or referencing NACE Rev. 2.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/nace/rev2"
   },
   {
     "atom": "revenue",
@@ -11855,6 +12059,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "system"
   },
   {
+    "atom": "t",
+    "name": "t",
+    "description": "Use when implementing or referencing OECD SAF-T — Standard Audit File for Tax.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/saf/t"
+  },
+  {
     "atom": "table",
     "name": "table",
     "description": "A table on a Web page.",
@@ -12347,6 +12557,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "toy"
   },
   {
+    "atom": "tpg",
+    "name": "tpg",
+    "description": "Use when implementing or referencing OECD Transfer Pricing Guidelines.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/oecd/tpg"
+  },
+  {
     "atom": "track",
     "name": "track",
     "description": "A music recording (track)&#x2014;usually a single song. If an ItemList is given, the list should contain items of type MusicRecording.",
@@ -12585,6 +12801,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "un",
     "description": "un: a schema.org component word, fused from UnRegisterAction",
     "path": "un"
+  },
+  {
+    "atom": "unavoidable",
+    "name": "unavoidable",
+    "description": "Use when hardening erpax toward infinite tamper-cost — why every security lever must be gate-FORCED (a stray fails, exit 2), never merely advisory. The cost is the minimum across dimensions, so the weakest avoidable gap is the cheapest forgery; only the unavoidable raises the floor.",
+    "path": "unavoidable"
   },
   {
     "atom": "under",
