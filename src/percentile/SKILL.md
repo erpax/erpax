@@ -7,6 +7,8 @@ description: "The 10th percentile value."
 
 The 10th percentile value.
 
+Entangled with — [[thing]]
+
 Attested in schema.org — percentile10 · percentile25 · percentile75 · percentile90
 
 @standard schema.org — the type vocabulary, collided to single words

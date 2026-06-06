@@ -7,6 +7,8 @@ description: "Specifies the CreativeWork associated with the UserComment."
 
 Specifies the CreativeWork associated with the UserComment.
 
+Entangled with — [[thing]]
+
 Attested in schema.org — discusses
 
 @standard schema.org — the type vocabulary, collided to single words

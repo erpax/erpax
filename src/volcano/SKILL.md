@@ -7,6 +7,8 @@ description: "A volcano, like Fujisan."
 
 A volcano, like Fujisan.
 
+Entangled with — [[thing]]
+
 Attested in schema.org — Volcano
 
 @standard schema.org — the type vocabulary, collided to single words

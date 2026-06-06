@@ -7,6 +7,8 @@ description: "An embassy."
 
 An embassy.
 
+Entangled with — [[thing]]
+
 Attested in schema.org — Embassy
 
 @standard schema.org — the type vocabulary, collided to single words

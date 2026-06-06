@@ -7,6 +7,8 @@ description: "Specifies the Person who edited the CreativeWork."
 
 Specifies the Person who edited the CreativeWork.
 
+Entangled with — [[thing]]
+
 Attested in schema.org — editor
 
 @standard schema.org — the type vocabulary, collided to single words

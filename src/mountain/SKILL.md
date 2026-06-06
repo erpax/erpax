@@ -7,6 +7,8 @@ description: "A mountain, like Mount Whitney or Mount Everest."
 
 A mountain, like Mount Whitney or Mount Everest.
 
+Entangled with — [[thing]]
+
 Attested in schema.org — Mountain
 
 @standard schema.org — the type vocabulary, collided to single words

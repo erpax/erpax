@@ -7,6 +7,8 @@ description: "An actor, e.g. in TV, radio, movie, video games etc. Actors can be
 
 An actor, e.g. in TV, radio, movie, video games etc. Actors can be associated with individual items or with a series, episode, clip.
 
+Entangled with — [[person]] · [[thing]]
+
 Attested in schema.org — actors
 
 @standard schema.org — the type vocabulary, collided to single words

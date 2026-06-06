@@ -7,6 +7,8 @@ description: "The neurological pathway that originates the neurons."
 
 The neurological pathway that originates the neurons.
 
+Entangled with — [[thing]]
+
 Attested in schema.org — sourcedFrom
 
 @standard schema.org — the type vocabulary, collided to single words

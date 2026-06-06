@@ -7,6 +7,8 @@ description: "Things owned by the organization or person."
 
 Things owned by the organization or person.
 
+Entangled with — [[thing]]
+
 Attested in schema.org — owns
 
 @standard schema.org — the type vocabulary, collided to single words

@@ -7,6 +7,8 @@ description: "A polygon is the area enclosed by a point-to-point path for which 
 
 A polygon is the area enclosed by a point-to-point path for which the starting and ending points are the same. A polygon is expressed as a series of four or more space delimited points where the first and final points are identical.
 
+Entangled with — [[thing]]
+
 Attested in schema.org — polygon
 
 @standard schema.org — the type vocabulary, collided to single words

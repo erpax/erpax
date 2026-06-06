@@ -7,6 +7,8 @@ description: "Further documentation describing the Web API in more detail."
 
 Further documentation describing the Web API in more detail.
 
+Entangled with — [[thing]]
+
 Attested in schema.org — documentation
 
 @standard schema.org — the type vocabulary, collided to single words

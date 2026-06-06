@@ -7,6 +7,8 @@ description: "A locksmith."
 
 A locksmith.
 
+Entangled with — [[place]] · [[thing]]
+
 Attested in schema.org — Locksmith
 
 @standard schema.org — the type vocabulary, collided to single words

@@ -7,6 +7,8 @@ description: "Number of times one should repeat the activity."
 
 Number of times one should repeat the activity.
 
+Entangled with — [[thing]]
+
 Attested in schema.org — repetitions
 
 @standard schema.org — the type vocabulary, collided to single words

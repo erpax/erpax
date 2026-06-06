@@ -7,6 +7,8 @@ description: "The depth of the item."
 
 The depth of the item.
 
+Entangled with — [[thing]]
+
 Attested in schema.org — depth
 
 @standard schema.org — the type vocabulary, collided to single words

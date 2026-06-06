@@ -7,6 +7,8 @@ description: "Typical preparation that a patient must undergo before having the 
 
 Typical preparation that a patient must undergo before having the procedure performed.
 
+Entangled with — [[thing]]
+
 Attested in schema.org — preparation
 
 @standard schema.org — the type vocabulary, collided to single words

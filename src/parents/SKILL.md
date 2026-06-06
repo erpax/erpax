@@ -7,6 +7,8 @@ description: "A parents of the person."
 
 A parents of the person.
 
+Entangled with — [[person]]
+
 Attested in schema.org — parents
 
 @standard schema.org — the type vocabulary, collided to single words

@@ -7,6 +7,8 @@ description: "Typical or recommended followup care after the procedure is perfor
 
 Typical or recommended followup care after the procedure is performed.
 
+Entangled with — [[thing]]
+
 Attested in schema.org — followup
 
 @standard schema.org — the type vocabulary, collided to single words

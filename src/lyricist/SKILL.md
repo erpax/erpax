@@ -7,6 +7,8 @@ description: "The person who wrote the words."
 
 The person who wrote the words.
 
+Entangled with — [[thing]]
+
 Attested in schema.org — lyricist
 
 @standard schema.org — the type vocabulary, collided to single words

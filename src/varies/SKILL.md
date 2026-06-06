@@ -7,6 +7,8 @@ description: "Indicates the property or properties by which the variants in a Pr
 
 Indicates the property or properties by which the variants in a ProductGroup vary, e.g. their size, color etc. Schema.org properties can be referenced by their short name e.g. "color"; terms defined elsewhere can be referenced with their URIs.
 
+Entangled with — [[thing]]
+
 Attested in schema.org — variesBy
 
 @standard schema.org — the type vocabulary, collided to single words

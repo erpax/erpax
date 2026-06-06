@@ -7,6 +7,8 @@ description: "Event type: Festival."
 
 Event type: Festival.
 
+Entangled with — [[thing]]
+
 Attested in schema.org — Festival
 
 @standard schema.org — the type vocabulary, collided to single words

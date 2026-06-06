@@ -7,6 +7,8 @@ description: "A short band of tough, flexible, fibrous connective tissue that fu
 
 A short band of tough, flexible, fibrous connective tissue that functions to connect multiple bones, cartilages, and structurally support joints.
 
+Entangled with — [[thing]]
+
 Attested in schema.org — Ligament
 
 @standard schema.org — the type vocabulary, collided to single words

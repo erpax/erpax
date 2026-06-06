@@ -7,6 +7,8 @@ description: "The telephone number."
 
 The telephone number.
 
+Entangled with — [[thing]]
+
 Attested in schema.org — telephone
 
 @standard schema.org — the type vocabulary, collided to single words

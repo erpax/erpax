@@ -7,6 +7,8 @@ description: "A piece of sculpture."
 
 A piece of sculpture.
 
+Entangled with — [[thing]]
+
 Attested in schema.org — Sculpture
 
 @standard schema.org — the type vocabulary, collided to single words

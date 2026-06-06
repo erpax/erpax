@@ -7,6 +7,8 @@ description: "An entity which offers (sells / leases / lends / loans) the servic
 
 An entity which offers (sells / leases / lends / loans) the services / goods. A seller may also be a provider.
 
+Entangled with — [[thing]]
+
 Attested in schema.org — seller
 
 @standard schema.org — the type vocabulary, collided to single words

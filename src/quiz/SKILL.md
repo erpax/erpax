@@ -7,6 +7,8 @@ description: "Quiz: A test of knowledge, skills and abilities."
 
 Quiz: A test of knowledge, skills and abilities.
 
+Entangled with — [[thing]]
+
 Attested in schema.org — Quiz
 
 @standard schema.org — the type vocabulary, collided to single words

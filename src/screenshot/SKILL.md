@@ -7,6 +7,8 @@ description: "A link to a screenshot image of the app."
 
 A link to a screenshot image of the app.
 
+Entangled with — [[thing]]
+
 Attested in schema.org — screenshot
 
 @standard schema.org — the type vocabulary, collided to single words

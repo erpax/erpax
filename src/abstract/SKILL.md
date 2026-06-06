@@ -7,6 +7,8 @@ description: "An abstract is a short description that summarizes a CreativeWork.
 
 An abstract is a short description that summarizes a CreativeWork.
 
+Entangled with — [[creative]] · [[thing]]
+
 Attested in schema.org — abstract
 
 @standard schema.org — the type vocabulary, collided to single words

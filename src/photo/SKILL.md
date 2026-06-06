@@ -7,6 +7,8 @@ description: "A photograph of this place."
 
 A photograph of this place.
 
+Entangled with — [[creative]]
+
 Attested in schema.org — photo
 
 @standard schema.org — the type vocabulary, collided to single words

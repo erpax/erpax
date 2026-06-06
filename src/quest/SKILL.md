@@ -7,6 +7,8 @@ description: "The task that a player-controlled character, or group of character
 
 The task that a player-controlled character, or group of characters may complete in order to gain a reward.
 
+Entangled with — [[thing]]
+
 Attested in schema.org — quest
 
 @standard schema.org — the type vocabulary, collided to single words

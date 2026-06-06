@@ -1,20 +1,20 @@
 {
-  "name": "payload-marketplace",
-  "version": "0.0.1",
-  "description": "Development marketplace for Payload",
+  "name": "erpax",
+  "version": "1.0.0",
+  "description": "The erpax akashic corpus as a Claude Code plugin — single-word skill atoms plus the MCP gateway.",
   "owner": {
-    "name": "Payload",
-    "email": "info@payloadcms.com"
+    "name": "erpax",
+    "url": "https://github.com/erpax/erpax"
   },
   "plugins": [
     {
-      "name": "payload",
-      "description": "Payload Development plugin - covers collections, fields, hooks, access control, plugins, and database adapters.",
-      "version": "0.0.1",
-      "source": "./tools/claude-plugin",
+      "name": "erpax",
+      "source": "./",
+      "description": "Open-source multi-tenant ERP & double-entry accounting on Payload CMS v4 + Cloudflare (D1 + R2 + Workers via OpenNext) — content-addressed, tamper-evident, standards-bound",
+      "version": "1.0.0",
       "author": {
-        "name": "Payload",
-        "email": "info@payloadcms.com"
+        "name": "erpax",
+        "url": "https://github.com/erpax/erpax"
       }
     }
   ]

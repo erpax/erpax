@@ -40,7 +40,7 @@ const SEQUENCE = [
     pos: 3,
     name: 'aura', // close the aura: a dead [[link]] is the mint queue (generate)
     compute() {
-      const aura = JSON.parse(sh('node .claude/skills/aura/scan.mjs --json'))
+      const aura = JSON.parse(sh('node src/aura/scan.mjs --json'))
       if (!Array.isArray(aura.dead) || !aura.dead.length) return null
       return {
         kind: 'mint',

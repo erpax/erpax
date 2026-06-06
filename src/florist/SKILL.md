@@ -7,6 +7,8 @@ description: "A florist."
 
 A florist.
 
+Entangled with — [[thing]]
+
 Attested in schema.org — Florist
 
 @standard schema.org — the type vocabulary, collided to single words

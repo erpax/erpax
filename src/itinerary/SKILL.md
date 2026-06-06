@@ -7,6 +7,8 @@ description: "Destination(s) ( Place ) that make up a trip. For a trip where des
 
 Destination(s) ( Place ) that make up a trip. For a trip where destination order is important use ItemList to specify that order (see examples).
 
+Entangled with — [[place]] · [[thing]]
+
 Attested in schema.org — itinerary
 
 @standard schema.org — the type vocabulary, collided to single words

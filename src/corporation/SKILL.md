@@ -7,6 +7,8 @@ description: "Organization: A business corporation."
 
 Organization: A business corporation.
 
+Entangled with — [[organization]] · [[thing]]
+
 Attested in schema.org — Corporation
 
 @standard schema.org — the type vocabulary, collided to single words

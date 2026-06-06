@@ -7,6 +7,8 @@ description: "A Consortium is a membership Organization whose members are typica
 
 A Consortium is a membership Organization whose members are typically Organizations.
 
+Entangled with — [[organization]] · [[thing]]
+
 Attested in schema.org — Consortium
 
 @standard schema.org — the type vocabulary, collided to single words

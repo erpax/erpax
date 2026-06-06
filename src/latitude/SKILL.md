@@ -7,6 +7,8 @@ description: "The latitude of a location. For example ```37.42242``` (WGS 84)."
 
 The latitude of a location. For example ```37.42242``` (WGS 84).
 
+Entangled with — [[place]] · [[thing]]
+
 Attested in schema.org — latitude
 
 @standard schema.org — the type vocabulary, collided to single words

@@ -7,6 +7,8 @@ description: "A bridge."
 
 A bridge.
 
+Entangled with — [[place]] · [[thing]]
+
 Attested in schema.org — Bridge
 
 @standard schema.org — the type vocabulary, collided to single words

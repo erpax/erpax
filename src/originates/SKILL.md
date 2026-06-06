@@ -7,6 +7,8 @@ description: "The vasculature the lymphatic structure originates, or afferents, 
 
 The vasculature the lymphatic structure originates, or afferents, from.
 
+Entangled with — [[thing]]
+
 Attested in schema.org — originatesFrom
 
 @standard schema.org — the type vocabulary, collided to single words

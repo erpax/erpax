@@ -7,6 +7,8 @@ description: "The kind of aircraft (e.g., \"Boeing 747\")."
 
 The kind of aircraft (e.g., "Boeing 747").
 
+Entangled with — [[vehicle]] · [[thing]]
+
 Attested in schema.org — aircraft
 
 @standard schema.org — the type vocabulary, collided to single words

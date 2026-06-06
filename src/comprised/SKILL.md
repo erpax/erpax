@@ -7,6 +7,8 @@ description: "Specifying something physically contained by something else. Typic
 
 Specifying something physically contained by something else. Typically used here for the underlying anatomical structures, such as organs, that comprise the anatomical system.
 
+Entangled with — [[thing]]
+
 Attested in schema.org — comprisedOf
 
 @standard schema.org — the type vocabulary, collided to single words

@@ -7,6 +7,8 @@ description: "A hackathon event."
 
 A hackathon event.
 
+Entangled with — [[thing]]
+
 Attested in schema.org — Hackathon
 
 @standard schema.org — the type vocabulary, collided to single words

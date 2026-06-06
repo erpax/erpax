@@ -7,6 +7,8 @@ description: "A person attending the event."
 
 A person attending the event.
 
+Entangled with — [[person]] · [[thing]]
+
 Attested in schema.org — attendees
 
 @standard schema.org — the type vocabulary, collided to single words

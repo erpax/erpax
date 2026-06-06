@@ -7,6 +7,8 @@ description: "Text of an utterances (spoken words, lyrics etc.) that occurs at a
 
 Text of an utterances (spoken words, lyrics etc.) that occurs at a certain section of a media object, represented as a HyperTocEntry.
 
+Entangled with — [[thing]]
+
 Attested in schema.org — utterances
 
 @standard schema.org — the type vocabulary, collided to single words

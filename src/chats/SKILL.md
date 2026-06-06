@@ -10,6 +10,8 @@ Chat — the agent-society room, native to Payload: each row is a content-addres
 This is the single-folder collection node: `index.ts` (schema + standards banners) lives here.
 One folder per collection ⇒ no scatter ⇒ no drift.
 
+Entangled with — [[content]] · [[thing]]
+
 ## Standards
 - W3C ActivityPub server-to-server activity-distribution (the model)
 - RFC 9562 §5.8 content-uuid event-identity (idempotency key)

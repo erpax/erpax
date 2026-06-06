@@ -7,6 +7,8 @@ description: "A person or organization that supports a thing through a pledge, p
 
 A person or organization that supports a thing through a pledge, promise, or financial contribution. E.g. a sponsor of a Medical Study or a corporate sponsor of an event.
 
+Entangled with — [[thing]]
+
 Attested in schema.org — sponsor
 
 @standard schema.org — the type vocabulary, collided to single words

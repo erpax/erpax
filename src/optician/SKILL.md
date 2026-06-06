@@ -7,6 +7,8 @@ description: "A store that sells reading glasses and similar devices for improvi
 
 A store that sells reading glasses and similar devices for improving vision.
 
+Entangled with — [[thing]]
+
 Attested in schema.org — Optician
 
 @standard schema.org — the type vocabulary, collided to single words

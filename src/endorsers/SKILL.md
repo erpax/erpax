@@ -7,6 +7,8 @@ description: "People or organizations that endorse the plan."
 
 People or organizations that endorse the plan.
 
+Entangled with — [[thing]]
+
 Attested in schema.org — endorsers
 
 @standard schema.org — the type vocabulary, collided to single words

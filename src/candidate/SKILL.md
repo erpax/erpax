@@ -7,6 +7,8 @@ description: "A sub property of object. The candidate subject of this action."
 
 A sub property of object. The candidate subject of this action.
 
+Entangled with — [[thing]]
+
 Attested in schema.org — candidate
 
 @standard schema.org — the type vocabulary, collided to single words

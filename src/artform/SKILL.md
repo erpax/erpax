@@ -7,6 +7,8 @@ description: "e.g. Painting, Drawing, Sculpture, Print, Photograph, Assemblage, 
 
 e.g. Painting, Drawing, Sculpture, Print, Photograph, Assemblage, Collage, etc.
 
+Entangled with — [[creative]] · [[thing]]
+
 Attested in schema.org — artform
 
 @standard schema.org — the type vocabulary, collided to single words

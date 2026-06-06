@@ -7,6 +7,8 @@ description: "The RxCUI drug identifier from RXNORM."
 
 The RxCUI drug identifier from RXNORM.
 
+Entangled with — [[thing]]
+
 Attested in schema.org — rxcui
 
 @standard schema.org — the type vocabulary, collided to single words

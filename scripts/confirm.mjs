@@ -157,7 +157,7 @@ function scopeFiles() {
 function fullConfirm() {
   const run = (cmd) => { try { execSync(cmd, { cwd: ROOT, stdio: 'pipe' }); return null } catch (e) { return (e.stdout?.toString() || e.message) } }
   const fmErr = run('node scripts/check-skill-frontmatter.mjs')
-  const auraOut = (() => { try { return execSync('node .claude/skills/aura/scan.mjs', { cwd: ROOT }).toString() } catch (e) { return e.stdout?.toString() || '' } })()
+  const auraOut = (() => { try { return execSync('node src/aura/scan.mjs', { cwd: ROOT }).toString() } catch (e) { return e.stdout?.toString() || '' } })()
   const auraOk = /gap = 0\b/.test(auraOut) || /aura whole/.test(auraOut)
   const mdStrays = walkMdStrays(ROOT)
   const mdOk = mdStrays.length === 0

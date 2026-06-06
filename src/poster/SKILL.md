@@ -7,6 +7,8 @@ description: "A large, usually printed placard, bill, or announcement, often ill
 
 A large, usually printed placard, bill, or announcement, often illustrated, that is posted to advertise or publicize something.
 
+Entangled with — [[creative]]
+
 Attested in schema.org — Poster
 
 @standard schema.org — the type vocabulary, collided to single words

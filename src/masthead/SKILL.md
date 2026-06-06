@@ -7,6 +7,8 @@ description: "For a NewsMediaOrganization, a link to the masthead page or a page
 
 For a NewsMediaOrganization, a link to the masthead page or a page listing top editorial management.
 
+Entangled with — [[thing]]
+
 Attested in schema.org — masthead
 
 @standard schema.org — the type vocabulary, collided to single words

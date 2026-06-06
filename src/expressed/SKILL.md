@@ -7,6 +7,8 @@ description: "Tissue, organ, biological sample, etc in which activity of this ge
 
 Tissue, organ, biological sample, etc in which activity of this gene has been observed experimentally. For example brain, digestive system.
 
+Entangled with — [[thing]]
+
 Attested in schema.org — expressedIn
 
 @standard schema.org — the type vocabulary, collided to single words

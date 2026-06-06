@@ -7,6 +7,8 @@ description: "The median value."
 
 The median value.
 
+Entangled with — [[thing]]
+
 Attested in schema.org — median
 
 @standard schema.org — the type vocabulary, collided to single words

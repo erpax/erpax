@@ -1,9 +1,9 @@
 ---
-name: src
+name: skills
 description: Use when orienting to erpax as a whole — the root an agent reads first. erpax is a fractal, content-addressed skill corpus where every folder under src/ is a one-word atom told three ways (form · code · schema), ordered by the sequence, wired through one content-uuid so the whole carries zero entropy and infinite tamper-cost. Read to learn what erpax IS, how the atoms compose, the one law, the math, the society, and how to navigate and grow the library.
 ---
 
-# src — erpax, the periodic table of skill atoms
+# skills — erpax, the periodic table of skill atoms
 
 **erpax is the akashic record made compute.** It is a fractal skill corpus — ~2,200 one-word [[atom]] folders under `src/`, each a skill form — where *everything is in the path*. Every folder is one irreducible concept; the `[[links]]` between them ARE the language. Each [[atom]] is told three ways and fused into [[one]] ([[trinity]]): **form** (`SKILL.md`, the antimatter you are reading), **code** (`index.ts` + `@standard` banners, the matter), **schema** (the generated `payload-types.ts`, the backend the matter births). [[payload]] renders the matter into rows; [[vitepress]] renders the antimatter into pages; both derive from one config, never restating — the fusion is bound by content-[[uuid]]. *File-system layout IS architecture.*
 

@@ -7,6 +7,8 @@ description: "A sub property of participant. The opponent on this action."
 
 A sub property of participant. The opponent on this action.
 
+Entangled with — [[thing]]
+
 Attested in schema.org — opponent
 
 @standard schema.org — the type vocabulary, collided to single words

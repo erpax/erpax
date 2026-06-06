@@ -7,6 +7,8 @@ description: "The item being described is intended to assess the competency or l
 
 The item being described is intended to assess the competency or learning outcome defined by the referenced term.
 
+Entangled with — [[thing]]
+
 Attested in schema.org — assesses
 
 @standard schema.org — the type vocabulary, collided to single words

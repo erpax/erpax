@@ -7,6 +7,8 @@ description: "The bitrate of the media object."
 
 The bitrate of the media object.
 
+Entangled with — [[thing]]
+
 Attested in schema.org — bitrate
 
 @standard schema.org — the type vocabulary, collided to single words

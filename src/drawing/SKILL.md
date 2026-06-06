@@ -7,6 +7,8 @@ description: "A picture or diagram made with a pencil, pen, or crayon rather tha
 
 A picture or diagram made with a pencil, pen, or crayon rather than paint.
 
+Entangled with — [[thing]]
+
 Attested in schema.org — Drawing
 
 @standard schema.org — the type vocabulary, collided to single words

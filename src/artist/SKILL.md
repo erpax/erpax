@@ -7,6 +7,8 @@ description: "The primary artist for a work in a medium other than pencils or di
 
 The primary artist for a work in a medium other than pencils or digital line art--for example, if the primary artwork is done in watercolors or digital paints.
 
+Entangled with — [[thing]]
+
 Attested in schema.org — artist · byArtist
 
 @standard schema.org — the type vocabulary, collided to single words

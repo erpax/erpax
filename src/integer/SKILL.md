@@ -7,6 +7,8 @@ description: "Data type: Integer."
 
 Data type: Integer.
 
+Entangled with — [[thing]]
+
 Attested in schema.org — Integer
 
 @standard schema.org — the type vocabulary, collided to single words
