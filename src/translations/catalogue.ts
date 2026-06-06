@@ -71135,6 +71135,67 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "particle",
+    "path": "particle",
+    "translations": [
+      {
+        "key": "name",
+        "source": "particle",
+        "uuid": "715fb1d5-94bb-8bcb-b1bc-07b5dbb0d7c9",
+        "words": [
+          "particle"
+        ],
+        "values": {
+          "en": "particle"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reading an atom as a particle in the matrix field — a content-uuid is the particle's identity, links are the forces it interacts through, and mass is its in-degree charge.",
+        "uuid": "7dd8dbb0-5a37-8d03-b51f-6751c7d2dfa6",
+        "words": [
+          "use",
+          "when",
+          "reading",
+          "an",
+          "atom",
+          "as",
+          "a",
+          "particle",
+          "in",
+          "the",
+          "matrix",
+          "field",
+          "a",
+          "content",
+          "uuid",
+          "is",
+          "the",
+          "particle",
+          "s",
+          "identity",
+          "links",
+          "are",
+          "the",
+          "forces",
+          "it",
+          "interacts",
+          "through",
+          "and",
+          "mass",
+          "is",
+          "its",
+          "in",
+          "degree",
+          "charge"
+        ],
+        "values": {
+          "en": "Use when reading an atom as a particle in the matrix field — a content-uuid is the particle's identity, links are the forces it interacts through, and mass is its in-degree charge."
+        }
+      }
+    ]
+  },
+  {
     "atom": "partition",
     "path": "partition",
     "translations": [
@@ -80204,6 +80265,66 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "Use when reading the matrix as the cross-product / entanglement adjacency — the N² space of atom pairs and which are actually entangled; cross (the symmetric pair binding), bidirectionalCross, adjacency density, reciprocity, and in-degree centrality."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "particle",
+    "path": "quantum/particle",
+    "translations": [
+      {
+        "key": "name",
+        "source": "particle",
+        "uuid": "715fb1d5-94bb-8bcb-b1bc-07b5dbb0d7c9",
+        "words": [
+          "particle"
+        ],
+        "values": {
+          "en": "particle"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reading a content-uuid as wave-particle duality — the same uuid is both a particle (a discrete identity, no-cloning) and a wave (its digit, the position on the harmonic ring).",
+        "uuid": "9c7276ff-b2a9-8344-b2dc-c00fa284a8b1",
+        "words": [
+          "use",
+          "when",
+          "reading",
+          "a",
+          "content",
+          "uuid",
+          "as",
+          "wave",
+          "particle",
+          "duality",
+          "the",
+          "same",
+          "uuid",
+          "is",
+          "both",
+          "a",
+          "particle",
+          "a",
+          "discrete",
+          "identity",
+          "no",
+          "cloning",
+          "and",
+          "a",
+          "wave",
+          "its",
+          "digit",
+          "the",
+          "position",
+          "on",
+          "the",
+          "harmonic",
+          "ring"
+        ],
+        "values": {
+          "en": "Use when reading a content-uuid as wave-particle duality — the same uuid is both a particle (a discrete identity, no-cloning) and a wave (its digit, the position on the harmonic ring)."
         }
       }
     ]
@@ -109256,6 +109377,59 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "wallet",
+    "path": "wallet",
+    "translations": [
+      {
+        "key": "name",
+        "source": "wallet",
+        "uuid": "e0ae4ff9-a8b8-8692-a78a-cfa91f4069d7",
+        "words": [
+          "wallet"
+        ],
+        "values": {
+          "en": "wallet"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when holding value — a balance under an owner identity; double-entry and content-addressed, so the wallet state is tamper-evident and every move balances.",
+        "uuid": "cfce573b-f06c-8643-acbf-de47da529703",
+        "words": [
+          "use",
+          "when",
+          "holding",
+          "value",
+          "a",
+          "balance",
+          "under",
+          "an",
+          "owner",
+          "identity",
+          "double",
+          "entry",
+          "and",
+          "content",
+          "addressed",
+          "so",
+          "the",
+          "wallet",
+          "state",
+          "is",
+          "tamper",
+          "evident",
+          "and",
+          "every",
+          "move",
+          "balances"
+        ],
+        "values": {
+          "en": "Use when holding value — a balance under an owner identity; double-entry and content-addressed, so the wallet state is tamper-evident and every move balances."
+        }
+      }
+    ]
+  },
+  {
     "atom": "want",
     "path": "want",
     "translations": [
@@ -112136,4 +112310,4 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
   }
 ]
 
-export const TRANSLATIONS_COUNT = 2355
+export const TRANSLATIONS_COUNT = 2358
