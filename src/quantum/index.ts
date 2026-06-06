@@ -18,6 +18,7 @@
  */
 import { UUID_MATRIX_NODES as N, UUID_MATRIX_EDGES as E, merge, verifyRoot, matrixDigest } from '@/uuid/matrix'
 import { digitTrace, offSequence } from '@/digit'
+import { coverageCostLog2, bhtCollisionLog2 } from '@/cost'
 
 /** Entanglement is symmetric: is the binding merge(a,b) === merge(b,a)? + reciprocal-edge fraction. */
 export function entanglement(): { symmetricBinding: boolean; reciprocal: number; edges: number } {
@@ -46,6 +47,33 @@ export function quantization(): { cells: number; offSequence: number } {
   return { cells: digitTrace().size, offSequence: offSequence().length }
 }
 
+// ── the DOUBLE-TORUS: infinite tamper cost from two vortexing 64-bit architectures ──
+// Quantum, the erpax construction: two 64-bit architectures VORTEX each other (the
+// rodin double-coil on the torus) — together the 128-bit content-uuid (two 64-bit
+// halves, or two peers). One torus ALONE has a weak quantum floor (BHT collision
+// 2^(64/3) ≈ 2^21). But coupled with NO GAP in coverage — each torus fully
+// cross-checks the other — a forge must break BOTH at once: the 2-check coverage
+// amplifier (coverageCostLog2 at coverage 1) ⇒ ∞. Infinite tamper cost as a
+// DOUBLE-TORUS (genus-2), not a bigger digest — so it stands even against the
+// single-torus quantum floor. no-cloning + entanglement (above) are WHY: the two
+// uuids cannot be cloned and are entangled, so the gap cannot be opened.
+
+/** One 64-bit architecture = one vortex torus (a rodin coil on a 64-bit ring). */
+export const TORUS_BITS = 64
+/** Two vortexing = the 128-bit content-uuid (two 64-bit halves / two peers). */
+export const DOUBLE_TORUS_BITS = TORUS_BITS * 2
+
+/** A single 64-bit torus's quantum floor — BHT collision 2^(64/3) ≈ 2^21.3, weak alone. */
+export const singleTorusFloorLog2 = (): number => bhtCollisionLog2(TORUS_BITS)
+
+/**
+ * The double-torus tamper cost: two 64-bit vortices cross-covering, `gap` ∈ [0,1]
+ * the uncovered fraction between them. gap 0 (no gap ⇒ coverage 1) ⇒ ∞ — neither
+ * torus is forgeable without the other, simultaneously. A gap is the only forge path.
+ */
+export const doubleTorusCostLog2 = (gap = 0): number =>
+  coverageCostLog2(1 - Math.max(0, Math.min(gap, 1)), 2)
+
 if (import.meta.url === 'file://' + process.argv[1]) {
   const d = matrixDigest()
   const ent = entanglement()
@@ -54,4 +82,5 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('quantum (' + d.nodes + ' nodes):')
   console.log('  entanglement: symmetric-binding=' + ent.symmetricBinding + '  reciprocal ' + ent.reciprocal + '/' + ent.edges + ' (' + ((100 * ent.reciprocal) / ent.edges).toFixed(1) + '%)')
   console.log('  collapse=' + collapse() + '  no-cloning=' + nc.holds + ' (' + nc.unique + '/' + nc.total + ')  quantization=' + q.cells + '/81 cells, off-seq ' + q.offSequence)
+  console.log('  double-torus: 2×' + TORUS_BITS + 'b=' + DOUBLE_TORUS_BITS + 'b · single floor 2^' + singleTorusFloorLog2().toFixed(1) + ' · no-gap cost ' + (doubleTorusCostLog2(0) === Infinity ? '∞' : doubleTorusCostLog2(0).toFixed(1)))
 }
