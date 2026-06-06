@@ -12911,6 +12911,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "typical"
   },
   {
+    "atom": "typography",
+    "name": "typography",
+    "description": "Use when measuring or rendering the vitepress typographic feature-set of a SKILL.md page — headings, code, links, tables, containers, math; coverage is the fraction of features used.",
+    "path": "typography"
+  },
+  {
     "atom": "uk",
     "name": "uk",
     "description": "uk: a schema.org component word, fused from UKNonprofitType",

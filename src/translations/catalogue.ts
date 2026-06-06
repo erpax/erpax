@@ -81100,6 +81100,62 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "typography",
+    "path": "quantum/typography",
+    "translations": [
+      {
+        "key": "name",
+        "source": "typography",
+        "uuid": "2c263d2f-b1e8-8dd1-85d1-d2955c54216d",
+        "words": [
+          "typography"
+        ],
+        "values": {
+          "en": "typography"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when treating typographic richness as tamper-cost — each vitepress feature a page uses is a dimension a forger must reproduce, so fuller (gapless) typography costs more to forge.",
+        "uuid": "d9377f54-bd58-8779-8ff4-a8c8f4e15608",
+        "words": [
+          "use",
+          "when",
+          "treating",
+          "typographic",
+          "richness",
+          "as",
+          "tamper",
+          "cost",
+          "each",
+          "vitepress",
+          "feature",
+          "a",
+          "page",
+          "uses",
+          "is",
+          "a",
+          "dimension",
+          "a",
+          "forger",
+          "must",
+          "reproduce",
+          "so",
+          "fuller",
+          "gapless",
+          "typography",
+          "costs",
+          "more",
+          "to",
+          "forge"
+        ],
+        "values": {
+          "en": "Use when treating typographic richness as tamper-cost — each vitepress feature a page uses is a dimension a forger must reproduce, so fuller (gapless) typography costs more to forge."
+        }
+      }
+    ]
+  },
+  {
     "atom": "vocabulary",
     "path": "quantum/vocabulary",
     "translations": [
@@ -103135,7 +103191,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when applying a consistent visual language across an app — color palette, typography, spacing, motion, dark/light mode. The style-system binding that makes components harmonious.",
-        "uuid": "74455e29-be21-822b-9cfe-939105478ce0",
+        "uuid": "a4c1ec79-ae2b-8076-8a83-739838ba87a0",
         "words": [
           "use",
           "when",
@@ -106726,6 +106782,61 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "typical: a schema.org component word, fused from typicalAgeRange, typicalCreditsPerTerm, typicalTest"
+        }
+      }
+    ]
+  },
+  {
+    "atom": "typography",
+    "path": "typography",
+    "translations": [
+      {
+        "key": "name",
+        "source": "typography",
+        "uuid": "2c263d2f-b1e8-8dd1-85d1-d2955c54216d",
+        "words": [
+          "typography"
+        ],
+        "values": {
+          "en": "typography"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when measuring or rendering the vitepress typographic feature-set of a SKILL.md page — headings, code, links, tables, containers, math; coverage is the fraction of features used.",
+        "uuid": "91e108b0-ec7e-83e3-ae92-a1b471dbfc6f",
+        "words": [
+          "use",
+          "when",
+          "measuring",
+          "or",
+          "rendering",
+          "the",
+          "vitepress",
+          "typographic",
+          "feature",
+          "set",
+          "of",
+          "a",
+          "skill",
+          "md",
+          "page",
+          "headings",
+          "code",
+          "links",
+          "tables",
+          "containers",
+          "math",
+          "coverage",
+          "is",
+          "the",
+          "fraction",
+          "of",
+          "features",
+          "used"
+        ],
+        "values": {
+          "en": "Use when measuring or rendering the vitepress typographic feature-set of a SKILL.md page — headings, code, links, tables, containers, math; coverage is the fraction of features used."
         }
       }
     ]
@@ -112969,4 +113080,4 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
   }
 ]
 
-export const TRANSLATIONS_COUNT = 2369
+export const TRANSLATIONS_COUNT = 2371
