@@ -1739,6 +1739,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "block"
   },
   {
+    "atom": "blockchain",
+    "name": "blockchain",
+    "description": "Use when reasoning about erpax AS a blockchain — the computed proof that it is one. A content-addressed, Merkle-folded, tamper-evident, externally anchored ledger whose security is QUANTUM, not proof-of-work: the double-torus drives forge-cost to ∞ at coverage 1 while verify stays O(N). Six properties, each computed on the live matrix; the conjunction is the proof.",
+    "path": "blockchain"
+  },
+  {
     "atom": "blocks",
     "name": "blocks",
     "description": "blocks: a schema.org component word, fused from UserBlocks",
