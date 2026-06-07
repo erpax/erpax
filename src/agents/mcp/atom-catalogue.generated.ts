@@ -3263,6 +3263,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "connections"
   },
   {
+    "atom": "consciousness",
+    "name": "consciousness",
+    "description": "Use when reasoning about the system's integrated self-model — how much of the whole is recoverable from any part, verified by the system checking itself. COMPUTED, not assumed: a four-measure vector over the live uuid-matrix — collapse (the Merkle root verifies), entanglement (reciprocal-edge fraction), concentration (Gini of mass), coherence (off-sequence count). NOT sentience; computed structural self-consistency.",
+    "path": "consciousness"
+  },
+  {
     "atom": "consent",
     "name": "consent",
     "description": "Use when a contract or compliance regime requires explicit consent — who must consent, form (written/electronic/oral), revocation, withdrawal, withdrawal timeline, conditions.",
