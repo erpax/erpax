@@ -113,7 +113,12 @@ import {
   buildBatchTools, buildVersionsTools,
 } from '@/agents/mcp/tool'
 import { wrapToolsWithTenantGuard } from '@/agents/mcp/tool/_guards'
-import { nodeOf, neighborsOf, backlinksOf, bindingOf, matrixDigest } from '@/uuid/matrix'
+import { nodeOf, neighborsOf, backlinksOf, bindingOf, matrixDigest, UUID_MATRIX_NODES } from '@/uuid/matrix'
+// ── the quantum-leap atoms, wired onto the live MCP matrix surface (the society's tool) ──
+import { leap as quantumLeap } from '@/leap'
+import { lines as spectrumLines } from '@/spectrum'
+import { superpose, collapse as collapseState, probabilities } from '@/superposition'
+import { HORO_DIGITS, type HoroStep } from '@/horo'
 
 /**
  * State-mutating tools that need an admin/auditor role check beyond
@@ -372,21 +377,43 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.matrix.query',
-      description: 'Query the content-addressed corpus uuid matrix. op="digest" → the whole corpus as one 128-bit root + node/edge counts; "node" → the atom\'s content-uuid + structural dimension + harmonic band + horo position; "neighbors" → atoms it links to; "backlinks" → atoms linking to it (empty ⇒ orphan); "binding" → the merge-uuid of the edge atom→to (the collision), or null. In-memory + content-addressed: no DB, deterministic.',
+      description: 'Query the content-addressed corpus uuid matrix (content-uuids per RFC 9562 §5.8). op="digest" → the whole corpus as one 128-bit root + counts; "node" → an atom\'s content-uuid + dimension + band + horo position; "neighbors"/"backlinks" → its out/in edges; "binding" → the merge-uuid of edge atom→to. QUANTUM ops over the horo energy-ladder: "leap" → the discrete transition between atom and to (their horo rungs) — emit/absorb, gap-frequency, the photon, and the symmetric spectral line-uuid; "spectrum" → every distinct line of the seven-rung system; "collapse" → measure the corpus superposition over the seven horo bands at r∈[0,1) to one band (amplitudes ∝ √(atoms per band), the Born rule). In-memory + content-addressed: no DB, deterministic.',
       parameters: {
-        op: z.enum(['digest', 'node', 'neighbors', 'backlinks', 'binding']),
+        op: z.enum(['digest', 'node', 'neighbors', 'backlinks', 'binding', 'leap', 'spectrum', 'collapse']),
         atom: z.string().optional(),
         to: z.string().optional(),
+        r: z.number().optional(),
       },
-      async handler({ op, atom, to }) {
+      async handler({ op, atom, to, r }) {
         const a = typeof atom === 'string' ? atom : ''
         const b = typeof to === 'string' ? to : ''
+        const rungs = HORO_DIGITS as readonly number[]
         switch (op) {
           case 'digest': return json(matrixDigest())
           case 'node': return json(nodeOf(a) ?? { error: `no atom '${a}'` })
           case 'neighbors': return json({ atom: a, neighbors: neighborsOf(a).map((n) => n.atom) })
           case 'backlinks': return json({ atom: a, backlinks: backlinksOf(a).map((n) => n.atom) })
           case 'binding': return json({ from: a, to: b, binding: bindingOf(a, b) ?? null })
+          case 'leap': {
+            const fn = nodeOf(a)
+            const tn = nodeOf(b)
+            if (!fn || !tn) return json({ error: `leap needs two known atoms (atom + to); got atom='${a}', to='${b}'` })
+            if (!rungs.includes(fn.horo) || !rungs.includes(tn.horo)) {
+              return json({ error: `both atoms must sit on a diatonic rung; got horo ${fn.horo} / ${tn.horo}` })
+            }
+            const l = quantumLeap(fn.horo as HoroStep, tn.horo as HoroStep)
+            return json({ from: { atom: fn.atom, horo: fn.horo }, to: { atom: tn.atom, horo: tn.horo }, kind: l.kind, gapHz: l.gapHz, photon: l.photon, line: l.uuid })
+          }
+          case 'spectrum': return json({ lines: spectrumLines() })
+          case 'collapse': {
+            const counts = Object.fromEntries(HORO_DIGITS.map((d) => [d, 0])) as Record<HoroStep, number>
+            for (const n of UUID_MATRIX_NODES) if (rungs.includes(n.horo)) counts[n.horo as HoroStep]++
+            const amps = Object.fromEntries(HORO_DIGITS.map((d) => [d, Math.sqrt(counts[d])])) as Record<HoroStep, number>
+            if (HORO_DIGITS.reduce((s, d) => s + amps[d], 0) === 0) return json({ error: 'no atoms on diatonic rungs to superpose' })
+            const state = superpose(amps)
+            const rr = typeof r === 'number' && Number.isFinite(r) ? ((r % 1) + 1) % 1 : 0
+            return json({ measured: collapseState(state, rr), r: rr, probabilities: probabilities(state) })
+          }
           default: return text(`unknown op '${op as string}'`)
         }
       },
