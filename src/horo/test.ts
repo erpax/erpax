@@ -97,7 +97,7 @@ describe('horo', () => {
   it('horoStateField returns a select field sorted in measure order', () => {
     const field = horoStateField('status', FULL_RING, { defaultValue: 'base', required: false })
     expect(field.type).toBe('select')
-    expect(field.name).toBe('status')
+    expect((field as { name: string }).name).toBe('status')
     // @ts-expect-error payload Field union — options exists on select
     const labels = (field.options as Array<{ value: string }>).map((o) => o.value)
     expect(labels).toEqual(HORO_MEASURE.slice())

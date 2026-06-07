@@ -149,6 +149,7 @@ case "$mode" in
     # CI runs --verify-index to enforce the committed file matches a fresh
     # generation; contributors regenerate via `pnpm standards:write-index`.
     out="docs/STANDARDS_INDEX.md"
+    mkdir -p "$(dirname "$out")"
     {
       cat <<'HEADER'
 # Standards citation index (generated)
@@ -170,6 +171,7 @@ HEADER
   --verify-index)
     # Generate fresh index to a temp file, diff against the committed copy.
     out="docs/STANDARDS_INDEX.md"
+    mkdir -p "$(dirname "$out")"
     tmp=$(mktemp)
     trap 'rm -f "$tmp"' EXIT
     {

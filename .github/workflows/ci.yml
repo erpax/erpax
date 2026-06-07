@@ -27,6 +27,9 @@ jobs:
       - name: Verify every src/standards/<id>/ implementation file cites @standard or @rfc
         run: bash scripts/standards-citation-index.sh --required
 
+      - name: Generate docs/STANDARDS_INDEX.md (gitignored, generated at CI time)
+        run: bash scripts/standards-citation-index.sh --write-index
+
       - name: Verify docs/STANDARDS_INDEX.md is in sync with current banners
         run: bash scripts/standards-citation-index.sh --verify-index
 
@@ -72,6 +75,11 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
+      # payload.config imports @/skill/router/skills.index, which is gitignored
+      # and generated. Generate it before any step that loads the config.
+      - name: Generate skill index
+        run: pnpm run skill:index
+
       # Slice TTT: regenerate payload-types from the live config and fail if
       # the committed payload-types.ts is out of sync. Stale types let tsc
       # pass in dev but break in fresh checkouts.
@@ -100,6 +108,11 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
+
+      # payload.config imports @/skill/router/skills.index, which is gitignored
+      # and generated. Generate it before any step that loads the config.
+      - name: Generate skill index
+        run: pnpm run skill:index
 
       - name: Run integration tests
         run: pnpm run test:int
