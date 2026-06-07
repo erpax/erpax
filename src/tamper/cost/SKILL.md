@@ -17,6 +17,8 @@ erpax holds **no secret**: every id is a deterministic v8 content-[[uuid]] (SHA-
 
 That is your law: *the computational impossibility of changing **all** coherently is the protection*, and a zero-entropy app earns it not despite having no key but **because** it has none. The floor is real and anchor-bounded; the amplifier prices structural completeness, separately.
 
+The README front page is this verdict made public — the rungs computed live from `index.test.ts` and narrated in [[proof]] (*the front page is a proof*).
+
 ## Four honest edges (asserted in the test)
 
 - **No anchor ⇒ no protection.** A keyless deterministic store with no external anchor is rewritable *for free* by anyone with write access — the cascade is cheap when you own every row. The external anchor is the single drop of borrowed entropy that makes the zero-entropy whole tamper-evident. It is mandatory, and must be ≥ the digest in strength or it is the weak link.
