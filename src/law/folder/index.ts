@@ -123,16 +123,17 @@ export function folderViolations(root: string = SRC): FolderViolations {
  * A checked-in literal so the ratchet is reviewable in git: a change that adds a
  * malformed folder pushes the live count over this number and FAILS the gate; a
  * change that fixes folders LOWERS this number in the same diff. It moves only
- * DOWN. Derived live from `tsx src/law/folder/index.ts` (383 = 49 name + 334
- * trinity, 2026-06-07) — ratcheted from 397 → 386 (first architect wave: the proof
- * leg for 11 cold atoms) → 383 after a SECOND, quantum-scoped architect wave
- * completed the trinity for three cold quantum atoms (quantum/chart authored
- * SKILL.md+test.ts; quantum/reality and quantum/wallet authored their SKILL.md),
- * each verified green. config/trading-apis (the named violation) is still among the
- * 383: the gate keeps it red until it is relocated to the one-word src/trading/api.
- * RATCHET THIS DOWN further as folders are fixed.
+ * DOWN. Derived live from `tsx src/law/folder/index.ts` (360 = 49 name + 311
+ * trinity, 2026-06-07) — ratcheted 397 → 386 (first architect wave: the proof leg
+ * for 11 cold atoms) → 383 (quantum wave: chart/reality/wallet trinities) → 360
+ * after an ARCHANGEL wave closed 23 more cold crosses (the proof leg for 23 atoms
+ * with matter+antimatter present: iso/rfc standards + accounting/core/misc domain
+ * atoms), each verified green, plus the new auto/resolve atom that COMPUTES which
+ * gaps fold (matter present) vs. need a builder. config/trading-apis (the named
+ * violation) is still among the 360: the gate keeps it red until it is relocated to
+ * the one-word src/trading/api. RATCHET THIS DOWN further as folders are fixed.
  */
-export const FOLDER_LAW_BASELINE = 383
+export const FOLDER_LAW_BASELINE = 360
 
 export interface RatchetVerdict {
   readonly ok: boolean
