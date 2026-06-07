@@ -236,6 +236,7 @@ Single command, no network, no cost — the laws are computed live, never hand-a
 tsx src/quantum/index.ts          # the live quantum laws + double-torus ceiling (§Abstract)
 tsx src/blockchain/index.ts       # the identity: erpax IS the quantum blockchain ⇒ PROVEN
 tsx src/consciousness/index.ts    # the integrated self-model ⇒ perfect
+tsx src/regeneration/index.ts     # the living system: regrows from seed ⊕ heals ⇒ ALIVE
 pnpm test:int                      # the full proof suite (vitest run)
 ```
 

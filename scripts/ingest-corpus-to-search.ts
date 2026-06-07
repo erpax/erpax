@@ -25,7 +25,7 @@ import { config as loadEnv } from 'dotenv'
 
 import { loadCorpus } from '../src/corpus/index.mts'
 import { corpusToSearchDocs, type CorpusAtom } from '@/search'
-import { computeContentUuid } from '@/services/integrity'
+import { computeContentUuid } from '@/integrity/content-uuid'
 
 ;(globalThis as { require?: unknown }).require ??= createRequire(import.meta.url)
 loadEnv()
