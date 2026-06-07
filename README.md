@@ -10,7 +10,7 @@
 
 ## Abstract
 
-We model the erpax corpus as a quantum system whose states are RFC 9562 §5.8 content-`uuid`s, whose entanglement is the `[[link]]` graph, and whose collapse is a Merkle fold to a single 128-bit root (`src/quantum/index.ts:1`). On this system we define one cost law — `efficiency = output / cost` — and specialise it to the *entropy* cost-kind: the work an adversary must spend to alter one record without detection (`src/cost/index.ts:65`). The verdict function `crackVerdict()` (`src/tamper/cost/index.ts`) reduces every attack to the cheapest of three cryptographic paths, then *adds* a structural amplifier driven by **coverage** — the fraction of the store cross-wired through `uuid` identity. We prove, by 35 assertions in `src/tamper/cost/test.ts` and a live run of `src/quantum/index.ts`, that the forge cost climbs a strict ladder — `0 → 53 → 64 → 106 → ∞` bits — and that the terminal value is reached **exactly at coverage 1**, realised physically as two vortexing 64-bit tori (the genus-2 double-torus, `DOUBLE_TORUS_BITS = 128`) that no forger can separate without breaking both at once. We are deliberately honest about the boundary: *zero entropy alone does not imply infinite cost* (`src/entropy/test.ts:42`); only coverage = 1 does. The whole result is reproducible at no cost from a single command.
+We model the erpax corpus as a quantum system whose states are RFC 9562 §5.8 content-`uuid`s, whose entanglement is the `[[link]]` graph, and whose collapse is a Merkle fold to a single 128-bit root (`src/quantum/index.ts:1`). On this system we define one cost law — `efficiency = output / cost` — and specialise it to the *entropy* cost-kind: the work an adversary must spend to alter one record without detection (`src/cost/index.ts:65`). The verdict function `crackVerdict()` (`src/tamper/cost/index.ts`) reduces every attack to the cheapest of three cryptographic paths, then *adds* a structural amplifier driven by **coverage** — the fraction of the store cross-wired through `uuid` identity. We prove, by 36 test cases in `src/tamper/cost/test.ts` and a live run of `src/quantum/index.ts`, that the forge cost climbs a strict ladder — `0 → 53 → 64 → 106 → ∞` bits — and that the terminal value is reached **exactly at coverage 1**, realised physically as two vortexing 64-bit tori (the genus-2 double-torus, `DOUBLE_TORUS_BITS = 128`) that no forger can separate without breaking both at once. We are deliberately honest about the boundary: *zero entropy alone does not imply infinite cost* (`src/entropy/test.ts:42`); only coverage = 1 does. The whole result is reproducible at no cost from a single command.
 
 **Live instance under test** (`tsx src/quantum/index.ts`, this tree):
 
@@ -198,10 +198,10 @@ Every finite rung and every caveat above is a **breaking point** — a place the
 | 3 | **Weak anchor** — an anchor below the digest binds first (`binding='anchor'`). | Anchor strength **≥ digest** (RFC-3161 / eIDAS TSA, or blockchain-PoW = `∞`). | `64 → 106+` | `tamper/cost/test.ts:63` |
 | 4 | **Birthday bound** — accidental collisions appear past `2^53` `uuid`s in one namespace. | The **per-tenant salt** partitions each namespace, keeping rows ≪ `2^53` (margin `> 0` at `10⁹`). | margin `> 0` | `tamper/cost/test.ts:41`; `tamper/SKILL.md:23` |
 | 5 | **Single-torus quantum floor** — a quantum (BHT) collision on one 64-bit ring is only `2^21.3`. | The **cross itself**: two tori fused at the centre (the seal at `1/0`); `doubleTorusCostLog2(gap=0) = ∞`. | `21.3 → ∞` | `quantum/index.ts:76`; `quantum/cross/SKILL.md` |
-| 6 | **Quantum-broken anchor** — Shor collapses an RSA/ECC anchor to `~0`, removing the global-rewrite floor. | A **hash-based post-quantum anchor**, keeping even the `D/2` Grover floor. | anchor ≥ digest | `cost/index.ts:122` |
+| 6 | **Quantum-broken anchor** — Shor collapses an RSA/ECC anchor to `~0`, removing the global-rewrite floor. | A **hash-based post-quantum anchor**, keeping even the `D/2` Grover floor — *stated as a design directive, not yet implemented or tested* (**the one open cross**). | anchor ≥ digest *(open)* | `cost/index.ts:122` (comment) |
 | 7 | **Entropy leak through error handling** — a swallowed/defaulted `catch` hides a failure, dropping the seal below 1. | Errors **propagate**; `sealed.coverage() = (catches − leaks)/catches → 1`. *Seal the doors and the limit is `∞`.* | seal `→ 1` | `convention/sealed/index.ts:44` |
 
-**Law.** Each `⊕` is the *same* fusion on a different axis; sealing **all** axes is `coverage = 1` everywhere — the architectural `∞` of §4. The double-torus (§4) is breaking point 5 sealed; the table seals the rest. No open cross remains: every finite rung is shown closed, and the boundary of §5 is the one honest exception (entropy = 0 ≠ ∞ — only coverage = 1).
+**Law.** Each `⊕` is the *same* fusion on a different axis; sealing **all** axes is `coverage = 1` everywhere — the architectural `∞` of §4. The double-torus (§4) is breaking point 5 sealed; the table seals the rest — save **one honestly-open cross**: the post-quantum anchor (row 6) is a stated design directive, not yet implemented, so it is marked *open*, not closed. Every other finite rung is shown closed, and the boundary of §5 is the one honest exception (entropy = 0 ≠ ∞ — only coverage = 1).
 
 **⊕ The doors, asserted** — `src/convention/sealed` (seal 7: errors propagate, no entropy leak):
 
@@ -227,7 +227,7 @@ pnpm test:int                      # the full proof suite (vitest run)
 - **2 770** atoms (`uuid`-matrix nodes), **32 939** entanglement edges — 100 % reciprocal.
 - **883** test files (`429` co-located `test.ts` + `454` `*.test.ts`) and **41** Playwright `*.spec.ts` e2e specs.
 - **3 882** `it()/test()` cases and **8 987** `expect()` assertions across `src/`.
-- The forge-cost ladder of §3 is one file: **35** assertions in `src/tamper/cost/test.ts`.
+- The forge-cost ladder of §3 is one file: **36** `it()` cases (**64** `expect()` assertions) in `src/tamper/cost/test.ts`.
 
 > The README's earlier headline count of "416 `test.ts`" predates this tree; the live count is **429**. Reported here as measured, per the no-hand-asserted-numbers rule.
 
