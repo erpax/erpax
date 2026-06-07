@@ -136,11 +136,15 @@ export function folderViolations(root: string = SRC): FolderViolations {
  * green → 281 after the first ANTIMATTER wave authored BOTH SKILL.md + test.ts for
  * 24 matter-only atoms (beyond/* feature set, access-control fns, audit/capture
  * hooks, calculator/field/validator), each proof green and the whole-tree aura scan
- * held at gap=0. config/trading-apis (the named violation) is still among the 281:
- * the gate keeps it red until it is relocated to the one-word src/trading/api.
- * RATCHET THIS DOWN further as folders are fixed.
+ * held at gap=0 → 261 after antimatter wave 2 completed 20 more matter-only atoms
+ * (auto/agent hooks, classify/closing/config/consistency/cross, country/currency,
+ * deep/merge, agents/mcp/tool, cloudflare; dashboard/* + the bg-bank parser deferred
+ * — server-actions / an agents-mcp init cycle / a parser-fixture nuance), each proof
+ * green and the whole-tree aura held at gap=0. config/trading-apis (the named
+ * violation) is still among the 261: the gate keeps it red until it is relocated to
+ * the one-word src/trading/api. RATCHET THIS DOWN further as folders are fixed.
  */
-export const FOLDER_LAW_BASELINE = 281
+export const FOLDER_LAW_BASELINE = 261
 
 export interface RatchetVerdict {
   readonly ok: boolean
