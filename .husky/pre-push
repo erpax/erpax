@@ -61,6 +61,13 @@ esac
 # the push when the live non-index count EXCEEDS the committed baseline. Fail-closed (a scan
 # error exits non-zero). The convention now HOLDS because this gate holds it.
 cross-env NODE_OPTIONS="--no-deprecation --import=tsx/esm" node src/convention/import/gate.mjs
+# Folder-shape law RATCHET (src/law/folder): every atom is ONE generic lowercase word
+# holding only its SKILL.md / index.ts / test.ts trinity (translations.ts / seed.ts
+# allowed). Fails when the live violation count EXCEEDS the committed FOLDER_LAW_BASELINE
+# — so no new non-one-word folder (e.g. trading-apis) and no trinity-incomplete code
+# folder can be pushed. This is the gate that would have stopped config/trading-apis.
+# Fail-closed: a scan error exits non-zero under `set -e` (cannot-run = did-not-pass).
+tsx src/law/folder/index.ts --check
 # Skill frontmatter YAML safety — an unquoted description with ": " breaks the docs
 # YAML parse (bit access/sacred). Another step of the one horo gate (who can't dance can't join).
 node scripts/check-skill-frontmatter.mjs

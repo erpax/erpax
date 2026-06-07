@@ -107,6 +107,31 @@ const walkMdStrays = (dir, acc = []) => {
   return acc
 }
 
+// ── 🟪 folder-law (NAME) advisory: every atom folder is ONE generic lowercase
+// word ([[law]]/folder). A malformed name (hyphen / camelCase / .suffix) is
+// unambiguous the instant a file is written into it — surface it now, but DEFER
+// the hard fail to the push gate (`pnpm lint:folders` + the law/folder test),
+// exactly as the payload-types lane defers above. The canonical counting law is
+// src/law/folder/index.ts (single source); this is only the cheap name regex. ──
+const FOLDER_ONE_WORD = /^[a-z][a-z0-9]*$/
+const isFolderFrameworkSeg = (n) =>
+  /^\([^)]*\)$/.test(n) || /^\[.*\]$/.test(n) || n.startsWith('@') || /^[0-9]+$/.test(n)
+function folderNameWarnings(files) {
+  const bad = new Set()
+  for (const f of files) {
+    const rel = relative(SRC, f)
+    if (rel.startsWith('..') || !rel) continue // outside src
+    const segs = rel.split('/').slice(0, -1) // folder segments only (drop the filename)
+    if (segs[0] === 'app' || segs[0] === 'migrations') continue // generated/framework trees
+    const acc = []
+    for (const s of segs) {
+      acc.push(s)
+      if (!isFolderFrameworkSeg(s) && !FOLDER_ONE_WORD.test(s)) bad.add(acc.join('/'))
+    }
+  }
+  return [...bad]
+}
+
 // ── 🟩 vitepress twin: frontmatter parses + every [[link]] resolves ──
 function vitepressConfirm(files) {
   const dead = [], bad = []
@@ -212,6 +237,7 @@ function fullConfirm() {
     ['lint', 'pnpm run lint'],
     ['lint:src', 'pnpm run lint:src'],
     ['lint:imports', 'pnpm run lint:imports'],
+    ['lint:folders', 'pnpm run lint:folders'],
     ['typecheck', 'pnpm run typecheck'],
     ['test:int', 'pnpm run test:int'],
   ]
@@ -261,8 +287,10 @@ const payLine = pay.skipped
   ? '🟦 payload   ⏏  code changed — run `pnpm confirm:full` before push (type-sync deferred to gate)'
   : `🟦 payload   ${pay.ok ? '✓' : '✗'}  payload-types ${pay.ok ? 'in sync with config' : 'OUT OF SYNC'}`
 
+const folderWarn = folderNameWarnings(files)
 console.log(vpLine)
 if (mdStrays.length) console.log(`🟧 md        ✗  ${mdStrays.length} stray — write IN an atom (SKILL.md), not a loose .md`)
+if (folderWarn.length) console.log(`🟪 folder    ⏏  ${folderWarn.length} non-one-word folder(s) in scope — name every atom ONE generic word (the push gate \`pnpm lint:folders\` + law/folder test FAIL): ${folderWarn.join(', ')}`)
 console.log(payLine)
 for (const [f, t] of vp.dead) console.error(`   dead link  ${relative(ROOT, f)} → [[${t}]]`)
 for (const [f, m] of vp.bad) console.error(`   frontmatter ${relative(ROOT, f)} → ${m}`)

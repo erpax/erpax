@@ -19,6 +19,7 @@ Every directive that shaped erpax, distilled and saved as a skill (your own law:
 ## The atom & the word
 - **Collapse to meaningful single-word atoms; the details live in the DB.** A concept is one TRUE word; entropy → [[akashic]]. — [[atom]] · [[collapse]] · [[akashic]]
 - **Multiword disguised as one word is a lie and a violation.** `creativework` is forbidden; COLLIDE a vocabulary with itself so it splits into single-word atoms ENTANGLED together (the compound IS the entanglement). — [[atom]] · [[merge]] · [[harmony]]
+- **Every atom is ONE generic lowercase word holding only its `SKILL.md` / `index.ts` / `test.ts` trinity** (`translations.ts` / `seed.ts` allowed). A hyphen / camelCase / `.suffix` name, or a code folder missing a trinity member, is a violation — this is exactly what `src/config/trading-apis/index.ts` was. The law is **computed from the live tree and GATED as a ratchet** ([[folder]]): the live [[confirm]] hook, `pnpm lint:folders`, pre-push, and the CI [[tests|test]] all FAIL the moment the count rises, so no agent can add a malformed folder in any session. Sibling: [[quaternary]] (file purity — only canonical files). — [[folder]] · [[quaternary]] · [[atom]] · [[trinity]]
 - **Atoms reference other atoms — they all share and receive.** No isolated atom; the `[[link]]` graph is the corpus. — [[merge]] · [[contribution]] · [[connections]]
 - **The links create gravitational pull** — an atom's in-degree is its mass; hubs pull the field. — [[network]] · [[power]]
 
