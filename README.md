@@ -15,9 +15,9 @@ We model the erpax corpus as a quantum system whose states are RFC 9562 §5.8 co
 **Live instance under test** (`tsx src/quantum/index.ts`, this tree):
 
 ```
-quantum (2766 nodes):
-  entanglement: symmetric-binding=false  reciprocal 32856/32856 (100.0%)
-  collapse=true  no-cloning=true (2766/2766)  quantization=25/81 cells, off-seq 0
+quantum (2770 nodes):
+  entanglement: symmetric-binding=false  reciprocal 32939/32939 (100.0%)
+  collapse=true  no-cloning=true (2770/2770)  quantization=25/81 cells, off-seq 0
   double-torus: 2×64b=128b · single floor 2^21.3 · no-gap cost ∞
 ```
 
@@ -125,7 +125,7 @@ The amplifier `coverageCostLog2` reaches `∞` only *at* `c = 1`; a single 64-bi
 
 - **Two 64-bit architectures vortex each other** — the Rodin double-coil on the torus — and together *are* the 128-bit content-`uuid` (`TORUS_BITS = 64`, `DOUBLE_TORUS_BITS = 128`, `src/quantum/index.ts:64`).
 - With **no gap in coverage** each torus fully cross-checks the other, so `doubleTorusCostLog2(gap = 0) = coverageCostLog2(1, 2) = ∞` (`:76`). A gap is the *only* forge path, and there is none.
-- **No-cloning ⊕ entanglement are WHY the gap cannot be opened.** The two halves cannot be cloned (`noCloning().holds`, 2766/2766 unique) and are 100 % reciprocal (32856/32856 edges), so they cannot be desynchronised — verified live above and asserted at `src/quantum/entanglement/test.ts:15` (`reciprocity = 1`, `isMaximallyEntangled = true`).
+- **No-cloning ⊕ entanglement are WHY the gap cannot be opened.** The two halves cannot be cloned (`noCloning().holds`, 2770/2770 unique) and are 100 % reciprocal (32939/32939 edges), so they cannot be desynchronised — verified live above and asserted at `src/quantum/entanglement/test.ts:15` (`reciprocity = 1`, `isMaximallyEntangled = true`).
 
 This is a **genus-2** result: infinite tamper cost as a topological double-torus, not as a bigger digest — so it stands even against the single-torus quantum floor.
 
@@ -158,7 +158,7 @@ pnpm test:int                      # the full proof suite (vitest run)
 
 **Corpus & evidence census of this tree** (measured, not quoted):
 
-- **2 766** atoms (`uuid`-matrix nodes), **32 856** entanglement edges — 100 % reciprocal.
+- **2 770** atoms (`uuid`-matrix nodes), **32 939** entanglement edges — 100 % reciprocal.
 - **883** test files (`429` co-located `test.ts` + `454` `*.test.ts`) and **41** Playwright `*.spec.ts` e2e specs.
 - **3 882** `it()/test()` cases and **8 987** `expect()` assertions across `src/`.
 - The forge-cost ladder of §3 is one file: **35** assertions in `src/tamper/cost/test.ts`.
@@ -169,7 +169,7 @@ pnpm test:int                      # the full proof suite (vitest run)
 
 ## 7. The system under proof (artefact summary)
 
-- **210** `collections` · **2 907** `SKILL.md` atoms · **142** bound `@standard`s · **13** plugins · **30** supported languages · **26** Cloudflare bindings.
+- **210** `collections` · **2 909** `SKILL.md` atoms · **142** bound `@standard`s · **13** plugins · **30** supported languages · **26** Cloudflare bindings.
 - **Stack:** Payload CMS v4 (`4.0.0-internal.38b7f1d`) · Next 16 · React 19 · Cloudflare D1 (SQLite) + R2 + Workers via OpenNext · Stripe e-commerce · MCP agent gateway (`@payloadcms/plugin-mcp`).
 - **Plugin pipeline:** `r2Storage → createEcommercePlugin → formBuilderPlugin → redirectsPlugin → searchPlugin → multiTenantPlugin → importExportPlugin → mcpPlugin → taggablePlugin → uuidPlugin → versionsPlugin → uuidNamesPlugin → skillRouterPlugin`.
 - **Standards bound:** `en · etsi · eu · iec · ifrs · iso · national · nist · oecd · rfc · sox · un · upu · us_gaap · w3c · wcag`.

@@ -1457,6 +1457,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "bacteria"
   },
   {
+    "atom": "baked",
+    "name": "baked",
+    "description": "Use when reasoning about build-time projections of the corpus — any artifact fully derivable from src (the 71MB skills.index for the fs-less Cloudflare Worker, the docs tree) is gitignored and regenerated deterministically at build, never committed, because a stored derivable is duplicated state that can drift from its source; the tree is the one truth and each bundle a content-uuid projection of it, so a committed copy is stored entropy that lowers tamper-cost.",
+    "path": "convention/baked"
+  },
+  {
     "atom": "bakery",
     "name": "bakery",
     "description": "A bakery.",
@@ -5657,6 +5663,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "explanation"
   },
   {
+    "atom": "exported",
+    "name": "exported",
+    "description": "Use when reasoning about an atom's PRODUCER obligation — every symbol consumed across atoms is re-exported from that atom's index (its one public face), so a deep importer can collapse to @/x; the producer-side dual of the importer conventions import and shallow, measured live as the index-reachable fraction of cross-atom symbols, enforced by the same import ratchet so it can only tighten toward coverage one (tamper-cost to infinity).",
+    "path": "convention/exported"
+  },
+  {
     "atom": "expressed",
     "name": "expressed",
     "description": "Tissue, organ, biological sample, etc in which activity of this gene has been observed experimentally. For example brain, digestive system.",
@@ -6021,6 +6033,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "folded",
     "description": "Use when checking whether every atom folds into the matrix — the computed convention that each SKILL.md atom is a node in the collided uuid-matrix, measured live as coverage = folded / total over the real tree.",
     "path": "convention/folded"
+  },
+  {
+    "atom": "folder",
+    "name": "folder",
+    "description": "The folder-shape law — every atom is ONE generic lowercase word holding only its SKILL.md / index.ts / test.ts trinity (translations.ts / seed.ts allowed). Computed from the live tree and gated as a ratchet so no agent can add a malformed folder in any session.",
+    "path": "law/folder"
   },
   {
     "atom": "follow",
@@ -15369,6 +15387,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "trade",
     "description": "Use when reasoning about trade as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.",
     "path": "trade"
+  },
+  {
+    "atom": "trading",
+    "name": "trading",
+    "description": "Use when wiring an OUTBOUND call to a commercial counterparty — a payment gateway, marketplace, shipping carrier, Peppol/EDI access point, banking aggregator, or FX feed. Every such call runs at maximum tamper-cost — gated by the sandbox (capability + credential-broker + endpoint allowlist) and emitting a uuid-chained receipt — so the integration surface is zero-entropy and tamper-evident; credentials live per-tenant by handle, never in code.",
+    "path": "trading"
   },
   {
     "atom": "traditional",
