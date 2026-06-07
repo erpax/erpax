@@ -128,11 +128,13 @@ export function folderViolations(root: string = SRC): FolderViolations {
  * → 383 (quantum wave: chart/reality/wallet) → 360 (archangel wave 1: 23 crosses +
  * the auto/resolve atom) → 331 after archangel wave 2 closed 29 more cold crosses
  * (the proof leg for standards atoms — iso/ifrs/nist/etsi/eu/un/wco/oecd/ghg/nace/
- * incoterms/peppol/bcp/saf + self/lot domain atoms), each verified green.
- * config/trading-apis (the named violation) is still among the 331: the gate keeps
+ * incoterms/peppol/bcp/saf + self/lot domain atoms), each verified green → 323
+ * after archangel wave 3 (first increment: website/work/workers/workflow +
+ * federation/post-close/pwa/sectors), each verified green.
+ * config/trading-apis (the named violation) is still among the 323: the gate keeps
  * it red until it is relocated to the one-word src/trading/api. RATCHET DOWN further.
  */
-export const FOLDER_LAW_BASELINE = 331
+export const FOLDER_LAW_BASELINE = 323
 
 export interface RatchetVerdict {
   readonly ok: boolean
