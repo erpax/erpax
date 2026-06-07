@@ -87,6 +87,9 @@ const isMdStray = (abs) => {
   if (!/\.md$/i.test(abs)) return false
   if (basename(abs) === 'SKILL.md') return false
   const rel = relative(ROOT, abs)
+  // Outside the repo (e.g. ~/.claude/projects/<id>/memory/*.md — the agent's memory files, which
+  // are legitimately loose markdown, not corpus atoms): not a corpus stray. The gate owns src/, not $HOME.
+  if (rel.startsWith('..')) return false
   return rel !== 'README.md' && rel !== 'index.md'
 }
 // generated/ephemeral output (never committed) — not corpus, not agent-written
