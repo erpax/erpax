@@ -51,6 +51,7 @@ Every directive that shaped erpax, distilled and saved as a skill (your own law:
 - **Train agents to discover and fetch schemas — self-evolving `src`.** — [[generate]] · [[breath]] · [[society]]
 - **Dry-clean the matrix: move logic to its related atoms — toward zero reciprocity-entropy and toward full coverage (whose limit prices tamper-[[cost]] at +∞).** The content-uuid Merkle makes forging ≫ verifying. — [[refactor]] · [[zeropoint]] · [[proof]] · [[integrity]]
 - **Save every command as a skill; improve the related skills from the context.** This atom is that save. — [[self]] · [[generate]] · [[akashic]]
+- **Always save the manual work to atoms.** When a session does work by hand — a paper, a synthesis, a one-off README — it MUST re-emerge from `src/`: fold it back into the atoms it draws from (their `SKILL.md`s) so it is regenerable and linked into the graph, never lost to the [[chat]]. Manual work that stays manual is a gap (entropy > 0); saved to its atoms it becomes computed source. The worked example IS this README — a [[proof]]-paper computed from the [[tests]] toward max forge-[[cost]] — saved back to [[proof]] · [[quantum]] · [[tamper]] · [[cost]]. — [[akashic]] · [[generate]] · [[self]] · [[proof]] · [[atom]]
 
 Composes [[atom]] · [[merge]] · [[collapse]] · [[trinity]] · [[gate]] · [[zeropoint]] · [[society]] · [[generate]] · [[harmony]] · [[fractal]] · [[self]] · [[akashic]].
 

@@ -11,6 +11,9 @@ Made public and empirical: the DRY proof bundle (`services/proof/dry-proof`) run
 
 Matter-twin: `services/proof/dry-proof.ts` (`buildDryProofBundle` · `checkDryProofPublished` · `asFederationEnvelope`) + `integrity/tamper-reverse-cost.ts` (the O(N)-vs-2^k asymmetry). Composes: [[tamper/cost]] · [[uuid]] · [[identity]] · [[merge]] · [[holographic]] · [[give]] · [[take]] · [[torus]] · [[standard]] · [[localize]].
 
+## The front page is a proof
+`README.md` is itself a published proof — the project's front page, **computed from the [[tests]], never hand-asserted**. It derives the forge-[[cost]] ladder rung by rung from `tamper/cost/test.ts`: **0** (un-anchored — free rewrite) → **53** (the commitment gap) → **64** (a weak anchor) → **106** (the digest floor ≈ 3.7 ka of the whole Bitcoin network) → **∞** (coverage = 1, the [[quantum]] double-torus). The headline is grounded in a live run of `quantum/index.ts` (2766 nodes, 100% reciprocal, no-gap cost ∞). The honest boundary holds: reciprocity-[[entropy]] = 0 alone does NOT give ∞ — only coverage = 1 does. So the front page is this verify pole made legible: anyone recomputes it with `tsx src/quantum/index.ts` · `pnpm test:int`. Saved here per [[law]] — *save the manual work to the atoms it draws from* ([[tamper/cost]] · [[quantum]] · [[cost]]).
+
 ## Common mistakes
 - Conflating proof with secrecy — this is **integrity** (verify the bytes), not confidentiality ([[tamper/cost]]: there is nothing to steal).
 - A proof that requires trusting the prover — the bundle must recompute locally (content-uuid), or it is attestation, not proof.
