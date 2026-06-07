@@ -53,7 +53,16 @@ import { localeRecord, supportedLocales, type SupportedLocale } from '@/i18n'
 import { BUSINESS_CHAINS } from '@/business/chain/registry'
 import { getTradingApis, getTradingApisByCategory, type TradingApiCategory } from '@/config/trading-apis'
 import { verifyContentUuid, TAMPER_PROOF_COLLECTIONS_REGISTRY, UUID_REF_REGISTRY, resolveByUuid, findDanglingRefs } from '@/integrity'
-import { publishSelf, bootFromFederation, type GenomePublication } from '@/cloning'
+// `@/cloning` is imported for TYPES ONLY at module scope (erased at runtime). Its
+// runtime fns (publishSelf / bootFromFederation) are pulled LAZILY inside the two
+// handlers below via `await import('@/cloning')`. WHY: tool-defs ⇄ @/cloning is a
+// boot cycle (@/cloning → genome → @/agent/bootstrap, which CALLS buildErpaxMcpTools
+// at module-eval). An eager `import` here makes that cycle fire the heavy builder
+// while tool-defs is still mid-evaluation — its later consts/helpers are then in the
+// temporal dead zone and the eval throws (e.g. for any barrel importer like
+// @/dashboard/spec). Deferring the runtime edge to the async handlers breaks the
+// eager arm of the cycle with zero behaviour change (the handlers already await).
+import type { GenomePublication } from '@/cloning'
 import { checkout, provisionInstance, listSubscriptions, checkCommerceLifecycle } from '@/commerce'
 import { bookRevenue, bookCost, scheduleFiling, scheduleObligation, checkSelfAccountingComplete } from '@/self/accounting'
 import { createDid, resolveDid, listDids } from '@/did'
@@ -528,6 +537,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
         tenantId: z.string().optional(),
       },
       async handler({ sourceDid, scope, tenantId }) {
+        const { publishSelf } = await import('@/cloning')
         const pub = publishSelf({
           tenantId: (tenantId as string | undefined) ?? 'erpax-self',
           sourceDid: sourceDid as string,
@@ -547,6 +557,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
         requireScope: z.enum(['genome', 'genome+state']).optional(),
       },
       async handler({ publication, cloneTenantId, cloneDid, sandbox, requireScope }) {
+        const { bootFromFederation } = await import('@/cloning')
         const result = await bootFromFederation({
           publication: publication as unknown as GenomePublication,
           cloneTenantId: cloneTenantId as string,
