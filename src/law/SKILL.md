@@ -42,6 +42,7 @@ Every directive that shaped erpax, distilled and saved as a skill (your own law:
 
 ## The gate & the tests
 - **Tighten the gate to ZERO — only zero-entropy code passes COMMIT.** — [[gate]] · [[zeropoint]]
+- **All workflows and commands are computed to max tamper-cost and sealed with crosses by archangels.** Every CI [[workflow|workflow]] ⊕ every command is a [[gate]]: wired so its coverage rises toward the `coverageCostLog2` ceiling ([[tamper/cost]]), sealed with the ⊕ [[cross]] ([[sealed]]: no entropy leak), and adversarially verified by the [[angel|archangel]]s ([[proof]]) — what survives the assault ships. — [[gate]] · [[tamper/cost]] · [[sealed]] · [[cross]] · [[angel]] · [[proof]]
 - **Test for inconsistencies, not consistencies** — one consistency-invariant that FAILS the instant any inconsistency appears; tests test themselves. — [[testing]] · [[consistency]] · [[gate]]
 - **Minimal tests, maximum coverage; one boilerplate for all; all config-driven.** Delete the redundant, keep + wire the atom-specific. — [[testing]] · [[collapse]]
 - **All standards covered in dedicated shared tests.** — [[standards]] · [[standard]]
