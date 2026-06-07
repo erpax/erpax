@@ -29,6 +29,7 @@ Every directive that shaped erpax, distilled and saved as a skill (your own law:
 ## Compute, don't assume
 - **Compute the fusion, do NOT assume it.** Derive the set from the filesystem (the collider), never a hand-maintained registry/barrel. — [[merge]] · [[uuid]] · [[collapse]]
 - **All computed — derive from the fs first.** — [[derive]] · [[generate]]
+- **All statements need proof — computed, never asserted.** Every claim (a law, an identity, a README sentence, a number) MUST be a function ⊕ a test that recomputes it on the live [[matrix]]; a statement without a proof is an assumption — borrowed [[entropy]] that lowers tamper-[[cost]]. Proven, it folds into the [[gate]] and the [[matrix]] root ([[proof]]: forge ≫ verify). The quantum-blockchain identity is the worked example — `isQuantumBlockchain()` ([[blockchain]]) computes six properties ⇒ PROVEN. — [[proof]] · [[gate]] · [[testing]] · [[tamper/cost]] · [[zeropoint]]
 - **Reference the imports to skills ⇒ DRY, clean, auto-configurable.** The import graph IS the config; the system wires itself. — [[plugins]] · [[merge]] · [[self]]
 - **The vocabulary consolidates — and consolidates all dimensions with it, programmatically.** One vocabulary, projected to payload · vitepress · tests · types · the matrix. — [[harmony]] · [[merge]] · [[collapse]]
 - **schema.org is encoded in the fractal architecture itself** — encode the whole vocabulary as related single-word atoms, programmatically, with skills; **no `schema` prefix**. — [[sti]] · [[fractal]] · [[schema]]
