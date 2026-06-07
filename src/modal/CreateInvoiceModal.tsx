@@ -1,15 +1,13 @@
 import React, { useState } from 'react';
-import { AccountingClient } from '@/sdk/accounting-client';
+import { createSalesInvoiceAction } from '@/dashboard/actions';
 import Modal from '@/modal/Modal';
 
 interface CreateInvoiceModalProps {
-  client: AccountingClient;
   onClose: () => void;
   onSuccess: (message: string) => void;
 }
 
 const CreateInvoiceModal: React.FC<CreateInvoiceModalProps> = ({
-  client,
   onClose,
   onSuccess,
 }) => {
@@ -48,7 +46,7 @@ const CreateInvoiceModal: React.FC<CreateInvoiceModalProps> = ({
       setLoading(true);
       const amountInCents = Math.round(parseFloat(formData.amount) * 100);
 
-      const response = await client.createSalesInvoice({
+      const response = await createSalesInvoiceAction({
         invoiceNumber: formData.invoiceNumber,
         customerName: formData.customerName,
         invoiceDate: formData.invoiceDate,
@@ -57,7 +55,7 @@ const CreateInvoiceModal: React.FC<CreateInvoiceModalProps> = ({
       });
 
       if (response.success) {
-        onSuccess(`Invoice ${formData.invoiceNumber} created successfully`);
+        onSuccess(response.message);
       } else {
         setError(response.message || 'Failed to create invoice');
       }

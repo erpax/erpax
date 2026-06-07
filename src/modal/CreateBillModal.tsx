@@ -1,15 +1,13 @@
 import React, { useState } from 'react';
-import { AccountingClient } from '@/sdk/accounting-client';
+import { createVendorBillAction } from '@/dashboard/actions';
 import Modal from '@/modal/Modal';
 
 interface CreateBillModalProps {
-  client: AccountingClient;
   onClose: () => void;
   onSuccess: (message: string) => void;
 }
 
 const CreateBillModal: React.FC<CreateBillModalProps> = ({
-  client,
   onClose,
   onSuccess,
 }) => {
@@ -46,7 +44,7 @@ const CreateBillModal: React.FC<CreateBillModalProps> = ({
       setLoading(true);
       const amountInCents = Math.round(parseFloat(formData.amount) * 100);
 
-      const response = await client.createVendorBill({
+      const response = await createVendorBillAction({
         billNumber: formData.billNumber,
         vendorName: formData.vendorName,
         billDate: formData.billDate,
@@ -55,7 +53,7 @@ const CreateBillModal: React.FC<CreateBillModalProps> = ({
       });
 
       if (response.success) {
-        onSuccess(`Bill ${formData.billNumber} created successfully`);
+        onSuccess(response.message);
       } else {
         setError(response.message || 'Failed to create bill');
       }

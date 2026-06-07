@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { AccountingClient } from '@/sdk/accounting-client';
+import { createJournalEntryAction } from '@/dashboard/actions';
 import Modal from '@/modal/Modal';
 
 /**
@@ -16,7 +16,6 @@ import Modal from '@/modal/Modal';
 
 
 interface CreateJournalEntryModalProps {
-  client: AccountingClient;
   onClose: () => void;
   onSuccess: (message: string) => void;
 }
@@ -29,7 +28,6 @@ interface _JournalLine {
 }
 
 const CreateJournalEntryModal: React.FC<CreateJournalEntryModalProps> = ({
-  client,
   onClose,
   onSuccess,
 }) => {
@@ -141,14 +139,14 @@ const CreateJournalEntryModal: React.FC<CreateJournalEntryModalProps> = ({
         description: line.description,
       }));
 
-      const response = await client.createJournalEntry({
+      const response = await createJournalEntryAction({
         transactionDate: formData.transactionDate,
         description: formData.description,
         lines,
       });
 
       if (response.success) {
-        onSuccess('Journal entry created successfully');
+        onSuccess(response.message);
       } else {
         setError(response.message || 'Failed to create journal entry');
       }

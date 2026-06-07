@@ -34,6 +34,20 @@ import { STANDARDS_CATALOGUE, STANDARDS_COUNT } from '@/standards/catalogue'
 // The deep security capability — the weakest link relating to MAX tamper cost.
 export { maxTamperCost, type MaxTamperCostReport, type TamperLever } from './max-tamper-cost'
 
+// The render-time view-model shapes — the single projection of the financial
+// statements every analytics card + dashboard widget consumes. Re-exported here so
+// importers seal against the atom's INDEX (`@/analytics`), not the deep `./types`
+// file (the import convention — [[tamper]]/import). The widgets and the dashboard
+// projection MUST NOT redefine a local copy (the two drift and the compiler can no
+// longer prove a widget renders what a page passes it).
+export type {
+  AccountLine,
+  TrialBalanceAccount,
+  TrialBalanceData,
+  BalanceSheetData,
+  IncomeStatementData,
+} from './types'
+
 /** Geometric mean of [0,1] signals — a single zero caps the whole (the bottleneck law). */
 export const geometricMean = (xs: readonly number[]): number =>
   xs.length ? xs.reduce((a, b) => a * b, 1) ** (1 / xs.length) : 1

@@ -7,18 +7,15 @@
  * @compliance SOX §404 internal-controls
  */
 import React, { useState } from 'react';
-import { AccountingClient } from '@/sdk/accounting-client';
 import CreateInvoiceModal from '@/modal/CreateInvoiceModal';
 import CreateBillModal from '@/modal/CreateBillModal';
 import CreateJournalEntryModal from '@/modal/CreateJournalEntryModal';
 
 interface QuickActionsWidgetProps {
-  client: AccountingClient;
   userRole: 'admin' | 'accountant';
 }
 
 const QuickActionsWidget: React.FC<QuickActionsWidgetProps> = ({
-  client,
   userRole: _userRole,
 }) => {
   const [showInvoiceModal, setShowInvoiceModal] = useState(false);
@@ -79,7 +76,6 @@ const QuickActionsWidget: React.FC<QuickActionsWidgetProps> = ({
       {/* Modals */}
       {showInvoiceModal && (
         <CreateInvoiceModal
-          client={client}
           onClose={() => setShowInvoiceModal(false)}
           onSuccess={(msg) => {
             handleSuccess(msg);
@@ -90,7 +86,6 @@ const QuickActionsWidget: React.FC<QuickActionsWidgetProps> = ({
 
       {showBillModal && (
         <CreateBillModal
-          client={client}
           onClose={() => setShowBillModal(false)}
           onSuccess={(msg) => {
             handleSuccess(msg);
@@ -101,7 +96,6 @@ const QuickActionsWidget: React.FC<QuickActionsWidgetProps> = ({
 
       {showJournalEntryModal && (
         <CreateJournalEntryModal
-          client={client}
           onClose={() => setShowJournalEntryModal(false)}
           onSuccess={(msg) => {
             handleSuccess(msg);

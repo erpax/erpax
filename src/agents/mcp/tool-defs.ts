@@ -51,6 +51,7 @@ import {
 } from '@/spec/generator'
 import { localeRecord, supportedLocales, type SupportedLocale } from '@/i18n'
 import { BUSINESS_CHAINS } from '@/business/chain/registry'
+import { getTradingApis, getTradingApisByCategory, type TradingApiCategory } from '@/config/trading-apis'
 import { verifyContentUuid, TAMPER_PROOF_COLLECTIONS_REGISTRY, UUID_REF_REGISTRY, resolveByUuid, findDanglingRefs } from '@/integrity'
 import { publishSelf, bootFromFederation, type GenomePublication } from '@/cloning'
 import { checkout, provisionInstance, listSubscriptions, checkCommerceLifecycle } from '@/commerce'
@@ -346,6 +347,19 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
       description: 'List every BusinessChain — id, title, steps (collection + action + emits + requires), feature gate, standards cited.',
       parameters: {},
       async handler() { return json(Object.values(BUSINESS_CHAINS)) },
+    },
+    {
+      name: 'erpax.trading.list',
+      description:
+        'List the commercial trading-integration APIs in scope for a region — the commercial sibling of the official country-apis registry. Covers payment_gateway / direct_debit / payout_provider, ecommerce_platform / marketplace, shipping_carrier / shipping_aggregator, peppol_access_point / edi_network / product_data / doc_validation, banking_aggregator and fx_rates. `region` is an ISO 3166-1 alpha-2 code (or "EU" / "GLOBAL"); GLOBAL and (for EU members) EU-wide providers are always unioned in. Optional `category` filters to one taxonomy slot. Returns catalogue metadata only — endpoint, auth model, format, docs — never credentials (those resolve per-tenant). Spans PSD2 (Berlin Group) banking aggregators, Peppol BIS / EN 16931 e-invoicing access points, and ISO 4217 FX feeds.',
+      parameters: { region: z.string(), category: z.string().optional() },
+      async handler({ region, category }) {
+        const r = String(region)
+        const list = category
+          ? getTradingApisByCategory(r, String(category) as TradingApiCategory)
+          : getTradingApis(r)
+        return json(list)
+      },
     },
     {
       name: 'erpax.matrix.query',

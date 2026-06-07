@@ -59,6 +59,10 @@ export const CANONICAL_AREAS: ReadonlyArray<string> = [
   //   versions — version restore / reify (erpax.versions.restore)
   // Added explicitly per the Law 38 conscious-taxonomy gate.
   'batch', 'versions',
+  // Commercial trading-API registry surface (src/config/trading-apis) — the
+  // commercial sibling of country-apis: erpax.trading.list lets agents discover
+  // which payment/marketplace/shipping/banking/FX integrations a region supports.
+  'trading',
 ] as const
 
 /**

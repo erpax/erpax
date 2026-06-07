@@ -1,25 +1,33 @@
-import React, { useState, useEffect, useCallback } from 'react';
-import { AccountingClient } from '@/sdk/accounting-client';
-import { FinancialAnalysisEngine } from '@/accounting/financial-analysis';
+import React from 'react';
+import { FinancialAnalysisEngine, generateIncomeStatement } from '@/accounting';
+import {
+  projectIncomeStatement,
+  type DashboardContext,
+  type LocalApiSource,
+  type WidgetSpec,
+} from '@/dashboard/spec';
 
 /**
  * Trend / forecast card — historical line + 3-month projection.
+ *
+ * PURE WIDGET (the dashboard/spec contract): it receives a resolved
+ * `TrendAnalysisData` view-model and renders it; it NEVER fetches. The previous
+ * shape self-fetched via the REST `AccountingClient.getIncomeStatement` (then in
+ * fact fell back to hardcoded mock data). The series now comes from the REAL
+ * ledger: the `trendAnalysisSource` localApi DataSource composes
+ * `generateIncomeStatement` + `projectIncomeStatement` over a trailing window of
+ * periods (SERVER-side, under the actor's request, `overrideAccess:false`) and
+ * runs the same `FinancialAnalysisEngine.calculateTrend` over the resulting
+ * revenue / net-income / margin series.
  *
  * @standard ECMA-262 ECMAScript-2024 baseline
  * @standard ISO-8601-1:2019 date-time period
  * @audit ISO-19011:2018 audit-trail trend-analysis
  * @quality ISO-25010 functional-suitability historical-projection
- * @see docs/STANDARDS.md §4.2
+ * @see src/dashboard/spec/index.ts            (WIDGETS ARE PURE — the DataSource/resolver framework)
+ * @see src/accounting/reports.service.ts      (generateIncomeStatement — the per-period source)
+ * @see src/dashboard/spec/projection.ts       (projectIncomeStatement — DTO → view-model)
  */
-
-
-interface TrendAnalysisCardProps {
-  client: AccountingClient;
-  dateRange: {
-    start: string;
-    end: string;
-  };
-}
 
 function getTrendIcon(trendType: string) {
   switch (trendType) {
@@ -38,6 +46,13 @@ interface TrendData {
   trend: string;
   trendStrength: number;
   forecast?: number[];
+}
+
+/** The resolved view-model this pure widget renders. */
+export interface TrendAnalysisData {
+  revenue: TrendData;
+  netIncome: TrendData;
+  margin: TrendData;
 }
 
 function TrendRow({ label, data }: { label: string; data: TrendData }) {
@@ -65,81 +80,83 @@ function TrendRow({ label, data }: { label: string; data: TrendData }) {
   );
 }
 
-const TrendAnalysisCard: React.FC<TrendAnalysisCardProps> = ({ client: _client, dateRange }) => {
-  const [trend, setTrend] = useState<{
-    revenue: TrendData;
-    netIncome: TrendData;
-    margin: TrendData;
-  } | null>(null);
-  const [loading, setLoading] = useState(true);
+/** First day of the month `offset` months before `from` (offset 0 = `from`'s month). */
+function monthStart(from: Date, offset: number): Date {
+  return new Date(from.getFullYear(), from.getMonth() - offset, 1);
+}
 
-  const loadTrendData = useCallback(async () => {
-    try {
-      setLoading(true);
+/** Last day of the month that `start` opens. */
+function monthEnd(start: Date): Date {
+  return new Date(start.getFullYear(), start.getMonth() + 1, 0);
+}
 
-      // For demo purposes, use mock historical data
-      // In production, this would fetch actual historical data
-      const mockData = {
-        revenue: [50000, 52000, 55000, 53000, 56000, 58000],
-        netIncome: [8000, 8500, 9200, 8800, 9500, 10000],
-        netMargin: [16, 16.3, 16.7, 16.6, 17, 17.2],
-      };
+/**
+ * The localApi DataSource backing the trend card — composes the income statement
+ * over a trailing 6-month window (ending at the context's `asOfDate`), projects
+ * each period's DTO into the view-model, then derives the revenue / net-income /
+ * net-margin trend + 3-month forecast via the `FinancialAnalysisEngine`. Reads
+ * the ledger through the existing pure `generateIncomeStatement` service, so it
+ * runs in the actor's request (`overrideAccess:false`).
+ */
+export const trendAnalysisSource: LocalApiSource<TrendAnalysisData> = {
+  kind: 'localApi',
+  load: async (ctx: DashboardContext): Promise<TrendAnalysisData> => {
+    const MONTHS = 6;
+    // Oldest → newest so the series reads forward in time for the trend fit.
+    const starts = Array.from({ length: MONTHS }, (_, i) => monthStart(ctx.asOfDate, MONTHS - 1 - i));
 
-      const engine = new FinancialAnalysisEngine();
-      const revenueTrend = engine.calculateTrend(
-        'Revenue',
-        ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
-        mockData.revenue
-      );
-
-      setTrend({
-        revenue: revenueTrend,
-        netIncome: engine.calculateTrend(
-          'Net Income',
-          ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
-          mockData.netIncome
+    const statements = await Promise.all(
+      starts.map(async (start) =>
+        projectIncomeStatement(
+          await generateIncomeStatement(ctx.payload, ctx.tenantId, start, monthEnd(start)),
         ),
-        margin: engine.calculateTrend(
-          'Net Margin %',
-          ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
-          mockData.netMargin
-        ),
-      });
-    } finally {
-      setLoading(false);
-    }
-  }, []);
+      ),
+    );
 
-  useEffect(() => {
-    loadTrendData();
-  }, [dateRange, loadTrendData]);
+    const labels = starts.map((s) => s.toLocaleString('en', { month: 'short' }));
+    const revenue = statements.map((s) => s.totalRevenues);
+    const netIncome = statements.map((s) => s.netIncome);
+    const margin = statements.map((s) => (s.totalRevenues ? (s.netIncome / s.totalRevenues) * 100 : 0));
 
-  if (loading) {
-    return <div className="bg-white rounded-lg shadow p-6 border border-gray-200">Loading...</div>;
+    const engine = new FinancialAnalysisEngine();
+    return {
+      revenue: engine.calculateTrend('Revenue', labels, revenue),
+      netIncome: engine.calculateTrend('Net Income', labels, netIncome),
+      margin: engine.calculateTrend('Net Margin %', labels, margin),
+    };
+  },
+};
+
+const TrendAnalysisCard: React.FC<{ data: TrendAnalysisData | null }> = ({ data }) => {
+  if (!data) {
+    return (
+      <div className="bg-white rounded-lg shadow p-6 border border-gray-200">
+        <h3 className="text-lg font-semibold text-gray-900 mb-4">Trend Analysis</h3>
+        <p className="text-gray-500">No trend data available for this period.</p>
+      </div>
+    );
   }
 
   return (
     <div className="bg-white rounded-lg shadow p-6 border border-gray-200">
       <h3 className="text-lg font-semibold text-gray-900 mb-4">Trend Analysis</h3>
 
-      {trend && (
-        <div className="space-y-2">
-          <TrendRow label="Revenue" data={trend.revenue} />
-          <TrendRow label="Net Income" data={trend.netIncome} />
-          <TrendRow label="Net Margin %" data={trend.margin} />
-        </div>
-      )}
+      <div className="space-y-2">
+        <TrendRow label="Revenue" data={data.revenue} />
+        <TrendRow label="Net Income" data={data.netIncome} />
+        <TrendRow label="Net Margin %" data={data.margin} />
+      </div>
 
       <div className="mt-4 pt-4 border-t border-gray-200">
         <p className="text-xs text-gray-600 mb-2">Key Observations</p>
         <ul className="space-y-1 text-sm">
-          {trend?.revenue.trend === 'increasing' && (
+          {data.revenue.trend === 'increasing' && (
             <li className="text-green-700">✓ Revenue showing upward trend</li>
           )}
-          {trend?.margin.trend === 'increasing' && (
+          {data.margin.trend === 'increasing' && (
             <li className="text-green-700">✓ Profit margins improving</li>
           )}
-          {trend?.netIncome.trend === 'stable' && (
+          {data.netIncome.trend === 'stable' && (
             <li className="text-blue-700">→ Earnings stable</li>
           )}
         </ul>
@@ -149,3 +166,13 @@ const TrendAnalysisCard: React.FC<TrendAnalysisCardProps> = ({ client: _client, 
 };
 
 export default TrendAnalysisCard;
+
+/** Composable spec: a read-tier trend card (cached by default). */
+export const trendAnalysisWidget: WidgetSpec<TrendAnalysisData> = {
+  id: 'trend-analysis',
+  Component: TrendAnalysisCard,
+  source: trendAnalysisSource,
+  minCapability: 'read',
+  title: 'Trend Analysis',
+  lane: 'tailwind',
+};

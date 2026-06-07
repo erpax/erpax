@@ -78,6 +78,47 @@ export async function resolveStripeSecretForTransaction(
   return devStripeSecretFallback()
 }
 
+/**
+ * Per-tenant credential for a commercial trading API (see `src/config/trading-apis/`).
+ * Permissive by design — different providers need different fields (key, secret,
+ * OAuth client pair, Basic user/pass, a per-merchant base-URL override like Adyen's
+ * `{PREFIX}` or a self-hosted store host). All optional; the client reads what its
+ * `auth` model requires.
+ */
+export interface TradingApiCredential {
+  readonly apiKey?: string
+  readonly secret?: string
+  readonly clientId?: string
+  readonly clientSecret?: string
+  readonly username?: string
+  readonly password?: string
+  readonly token?: string
+  /** Per-tenant base-URL override (Adyen {PREFIX}, self-hosted store, Checkout.com subdomain). */
+  readonly baseUrl?: string
+  readonly [key: string]: unknown
+}
+
+/**
+ * Resolve a tenant's stored credential for a trading-API provider from the
+ * per-tenant config sandbox (`tenant.integrationSettings.tradingApis[provider]`).
+ * Returns null when the tenant has no credential configured for that provider —
+ * the caller then degrades (catalogue-only) rather than calling unauthenticated.
+ * The trading-APIs registry itself holds NO secrets; they live only here.
+ */
+export async function resolveTradingApiCredential(
+  payload: Payload,
+  tenantRef: Tenant | string | null | undefined,
+  provider: string,
+): Promise<TradingApiCredential | null> {
+  const tenantId = typeof tenantRef === 'string' ? tenantRef : tenantIdFromRelation(tenantRef)
+  const tenant = await getTenantById(payload, tenantId)
+  const settings = (tenant?.integrationSettings ?? null) as
+    | { tradingApis?: Record<string, TradingApiCredential> }
+    | null
+  const cred = settings?.tradingApis?.[provider]
+  return cred && typeof cred === 'object' ? cred : null
+}
+
 function normalizeToEmails(to: unknown): string[] {
   if (!to) return []
   if (typeof to === 'string') return [to.toLowerCase()]

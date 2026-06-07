@@ -1,127 +1,189 @@
-import React, { useState, useEffect, useCallback } from 'react';
-import { AccountingClient } from '@/sdk/accounting-client';
-import TrialBalanceWidget from '@/widget/TrialBalanceWidget';
-import BalanceSheetWidget from '@/widget/BalanceSheetWidget';
-import IncomeStatementWidget from '@/widget/IncomeStatementWidget';
-import QuickActionsWidget from '@/widget/QuickActionsWidget';
-import AuditLogWidget from '@/widget/AuditLogWidget';
+import type React from 'react';
+import type { Payload, PayloadRequest } from 'payload';
 
-import type { AccountLine, BalanceSheetData, IncomeStatementData, TrialBalanceData } from '@/analytics/types';
+import { TrialBalanceWidget, BalanceSheetWidget, IncomeStatementWidget } from '@/widget';
+
+import {
+  generateTrialBalance,
+  generateBalanceSheet,
+  generateIncomeStatement,
+} from '@/accounting';
+import {
+  resolveDashboard,
+  selectDashboard,
+  projectTrialBalance,
+  projectBalanceSheet,
+  projectIncomeStatement,
+  type DashboardContext,
+  type DashboardSpec,
+  type ResolvedWidget,
+  type AnyWidgetSpec,
+} from '@/dashboard/spec';
+
+import { getUserContext } from '@/auth';
+import { actorCapabilityResolved } from '@/cross';
+import type {
+  AccountLine,
+  BalanceSheetData,
+  IncomeStatementData,
+  TrialBalanceData,
+} from '@/analytics';
 import { singularOf } from '@/translate';
 
 /**
- * Accounting Dashboard — top-level renderer for trial balance, balance sheet,
- * income statement, KPIs, audit log, and quick actions.
+ * Accounting Dashboard — the SERVER-rendered top-level renderer for trial
+ * balance, balance sheet, and income statement.
+ *
+ * THE DATA-FLOW FIX (the corpus violation this corrects): the previous shape was
+ * a CLIENT component that fetched via the REST `AccountingClient` (a hardcoded
+ * `localhost` baseUrl + a Bearer token in the browser + an ad-hoc `userRole`
+ * string union gated inline). This is now an async SERVER component (runs in the
+ * Cloudflare Worker, where the D1 / Local API binding lives). It reads financial
+ * data via the Payload Local API by calling the EXISTING pure services in
+ * `@/accounting/reports.service` (generateTrialBalance / BalanceSheet /
+ * IncomeStatement), projects the DTOs into the widget view-models, and gates
+ * visibility via the access cross (`@/cross`) on the REAL `UserRole` union —
+ * never the ad-hoc string union, never the REST client. The widgets stay PURE:
+ * they receive a resolved view-model and render it; they never fetch.
  *
  * @standard ECMA-262 ECMAScript-2024 baseline
  * @standard ISO-4217:2015 currency-codes monetary-display
+ * @standard NIST INCITS-359 role-based-access-control
  * @accounting IFRS IAS-1 presentation-of-financial-statements
  * @quality ISO-25010 usability dashboard-presentation
+ * @see src/dashboard/spec/index.ts  (the WidgetSpec / DataSource / resolver framework)
+ * @see src/cross/index.ts           (the access cross — capability + visibility)
  * @see docs/STANDARDS.md §4.2
  */
 
-
 interface DashboardProps {
-  client: AccountingClient;
-  userRole: 'admin' | 'accountant' | 'auditor' | 'readonly';
-  tenantName: string;
+  /** The actor's Payload request — its `.payload` is the Local API, its `.user` drives the cross. */
+  readonly req: PayloadRequest;
+  /** Display name for the active tenant. */
+  readonly tenantName: string;
+  /** Balance-sheet / trial-balance as-of date (defaults to today). */
+  readonly asOfDate?: Date;
 }
 
-const Dashboard: React.FC<DashboardProps> = ({
-  client,
-  userRole,
-  tenantName,
-}) => {
-  const [trialBalance, setTrialBalance] = useState<TrialBalanceData | null>(null);
-  const [balanceSheet, setBalanceSheet] = useState<BalanceSheetData | null>(null);
-  const [incomeStatement, setIncomeStatement] = useState<IncomeStatementData | null>(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
-  const [selectedDate, setSelectedDate] = useState(
-    new Date().toISOString().split('T')[0]
+// ─── The financial statement dashboard — three pure widgets, three
+//     localApi DataSources backed by the existing reports.service. ─────
+
+const balanceSheetWidget: AnyWidgetSpec = {
+  id: 'balance-sheet',
+  Component: BalanceSheetWidget,
+  minCapability: 'read',
+  title: 'Balance Sheet',
+  lane: 'tailwind',
+  source: {
+    kind: 'localApi',
+    load: async (ctx: DashboardContext): Promise<BalanceSheetData> =>
+      projectBalanceSheet(await generateBalanceSheet(ctx.payload, ctx.tenantId, ctx.asOfDate)),
+  },
+};
+
+const incomeStatementWidget: AnyWidgetSpec = {
+  id: 'income-statement',
+  Component: IncomeStatementWidget,
+  minCapability: 'read',
+  title: 'Income Statement',
+  lane: 'tailwind',
+  source: {
+    kind: 'localApi',
+    load: async (ctx: DashboardContext): Promise<IncomeStatementData> =>
+      projectIncomeStatement(
+        await generateIncomeStatement(ctx.payload, ctx.tenantId, ctx.periodStart, ctx.periodEnd),
+      ),
+  },
+};
+
+const trialBalanceWidget: AnyWidgetSpec = {
+  id: 'trial-balance',
+  Component: TrialBalanceWidget,
+  minCapability: 'read',
+  title: 'Trial Balance',
+  lane: 'tailwind',
+  source: {
+    kind: 'localApi',
+    load: async (ctx: DashboardContext): Promise<TrialBalanceData> =>
+      projectTrialBalance(await generateTrialBalance(ctx.payload, ctx.tenantId, ctx.asOfDate)),
+  },
+};
+
+/**
+ * The Read-only Overview composition (the statement core every tier inherits).
+ * Higher tiers add action / audit widgets in their own slices; this slice ships
+ * the read foundation, gated at `minCapability: 'read'`.
+ */
+export const financialStatementsDashboard: DashboardSpec = {
+  id: 'financial-statements',
+  title: 'Accounting Dashboard',
+  audience: 'read',
+  widgets: [trialBalanceWidget, balanceSheetWidget, incomeStatementWidget],
+};
+
+/** The capability-keyed registry selectDashboard walks (the read base for now). */
+const DASHBOARD_REGISTRY = {
+  read: financialStatementsDashboard,
+} as const;
+
+/** Build the loader context from the actor's request + the as-of date. */
+function dashboardContext(req: PayloadRequest, asOfDate: Date): DashboardContext {
+  const ctx = getUserContext(req);
+  const tenantId = ctx?.tenant ?? '';
+  const periodStart = new Date(asOfDate.getFullYear(), asOfDate.getMonth(), 1);
+  return {
+    payload: req.payload as Payload,
+    req,
+    tenantId,
+    asOfDate,
+    periodStart,
+    periodEnd: asOfDate,
+  };
+}
+
+/** Render one resolved widget with its (typed) view-model. */
+function renderWidget(rw: ResolvedWidget): React.ReactElement {
+  const Component = rw.spec.Component;
+  return (
+    <div className="col-span-1" key={rw.spec.id}>
+      <Component data={rw.data} />
+    </div>
   );
+}
 
-  const loadDashboardData = useCallback(async () => {
-    try {
-      setLoading(true);
-      setError(null);
+/**
+ * The server-rendered dashboard. Resolves the actor's capability via the access
+ * cross, SELECTS the dashboard for that tier, RESOLVES every visible widget's
+ * data in parallel (overrideAccess:false at the data layer), and paints the pure
+ * widgets. No client data client, no Bearer token, no `localhost` baseUrl.
+ */
+const Dashboard = async ({
+  req,
+  tenantName,
+  asOfDate = new Date(),
+}: DashboardProps): Promise<React.ReactElement> => {
+  const capability = await actorCapabilityResolved(req);
+  const spec = selectDashboard(capability, DASHBOARD_REGISTRY);
 
-      // Load trial balance
-      const tbResponse = await client.getTrialBalance(selectedDate);
-      if (tbResponse.success) {
-        setTrialBalance(tbResponse.data as TrialBalanceData);
-      }
-
-      // Load balance sheet
-      const bsResponse = await client.getBalanceSheet(selectedDate);
-      if (bsResponse.success) {
-        setBalanceSheet(bsResponse.data as BalanceSheetData);
-      }
-
-      // Load income statement (for current period)
-      const today = new Date();
-      const periodStart = new Date(today.getFullYear(), today.getMonth(), 1)
-        .toISOString()
-        .split('T')[0];
-      const isResponse = await client.getIncomeStatement(periodStart, selectedDate);
-      if (isResponse.success) {
-        setIncomeStatement(isResponse.data as IncomeStatementData);
-      }
-    } catch (err) {
-      setError(err instanceof Error ? err.message : 'Failed to load dashboard');
-    } finally {
-      setLoading(false);
-    }
-  }, [client, selectedDate]);
-
-  useEffect(() => {
-    loadDashboardData();
-  }, [loadDashboardData]);
-
-  const getMetricCards = () => {
-    if (!balanceSheet) return null;
-
-    const assets = balanceSheet.assets?.reduce(
-      (sum: number, acc: AccountLine) => sum + acc.balance,
-      0
-    ) || 0;
-    const liabilities = balanceSheet.liabilities?.reduce(
-      (sum: number, acc: AccountLine) => sum + acc.balance,
-      0
-    ) || 0;
-    const equity = balanceSheet.equity?.reduce(
-      (sum: number, acc: AccountLine) => sum + acc.balance,
-      0
-    ) || 0;
-    const netIncome = incomeStatement?.netIncome || 0;
-
+  if (!spec) {
     return (
-      <div className="grid grid-cols-4 gap-4 mb-6">
-        <MetricCard
-          title="Total Assets"
-          value={formatCurrency(assets)}
-          trend="up"
-        />
-        <MetricCard
-          title="Total Liabilities"
-          value={formatCurrency(liabilities)}
-          trend="down"
-        />
-        <MetricCard
-          title="Total Equity"
-          value={formatCurrency(equity)}
-          trend="up"
-        />
-        <MetricCard
-          title="Net Income (Period)"
-          value={formatCurrency(netIncome)}
-          trend={netIncome >= 0 ? 'up' : 'down'}
-        />
+      <div className="p-6 bg-gray-50 min-h-screen">
+        <p className="text-gray-600">No dashboard available for your access level.</p>
       </div>
     );
-  };
+  }
 
-  const canViewAuditLog = userRole === 'admin' || userRole === 'auditor';
+  const ctx = dashboardContext(req, asOfDate);
+  const resolved = await resolveDashboard(spec, ctx);
+
+  const balanceSheet = resolved.find((r) => r.spec.id === 'balance-sheet')?.data as
+    | BalanceSheetData
+    | null
+    | undefined;
+  const incomeStatement = resolved.find((r) => r.spec.id === 'income-statement')?.data as
+    | IncomeStatementData
+    | null
+    | undefined;
 
   return (
     <div className="p-6 bg-gray-50 min-h-screen">
@@ -129,67 +191,49 @@ const Dashboard: React.FC<DashboardProps> = ({
       <div className="flex justify-between items-center mb-6">
         <div>
           <h1 className="text-3xl font-bold text-gray-900">
-            {tenantName} - Accounting Dashboard
+            {tenantName} - {spec.title}
           </h1>
-          <p className="text-gray-600">Role: {userRole}</p>
+          <p className="text-gray-600">Access: {capability ?? 'none'}</p>
         </div>
-        <input
-          type="date"
-          value={selectedDate}
-          onChange={(e) => setSelectedDate(e.target.value)}
-          className="px-3 py-2 border border-gray-300 rounded-md"
-        />
+        <p className="text-gray-600 text-sm">
+          As of {asOfDate.toISOString().split('T')[0]}
+        </p>
       </div>
 
-      {error && (
-        <div className="mb-4 p-4 bg-red-50 border border-red-200 rounded-md">
-          <p className="text-red-800">{error}</p>
-        </div>
-      )}
+      {/* Metric Cards (computed server-side from the resolved balance sheet) */}
+      <MetricCards balanceSheet={balanceSheet ?? null} incomeStatement={incomeStatement ?? null} />
 
-      {loading ? (
-        <div className="text-center py-12">
-          <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
-          <p className="mt-4 text-gray-600">Loading dashboard...</p>
-        </div>
-      ) : (
-        <>
-          {/* Metric Cards */}
-          {getMetricCards()}
+      {/* Statement widgets — pure, fed the resolved view-models */}
+      <div className="grid grid-cols-3 gap-6 mb-6">{resolved.map(renderWidget)}</div>
+    </div>
+  );
+};
 
-          {/* Main Content Grid */}
-          <div className="grid grid-cols-3 gap-6 mb-6">
-            {/* Left Column: Trial Balance */}
-            <div className="col-span-1">
-              <TrialBalanceWidget data={trialBalance} />
-            </div>
+interface MetricCardsProps {
+  readonly balanceSheet: BalanceSheetData | null;
+  readonly incomeStatement: IncomeStatementData | null;
+}
 
-            {/* Middle Column: Balance Sheet */}
-            <div className="col-span-1">
-              <BalanceSheetWidget data={balanceSheet} />
-            </div>
+const sumBalances = (lines: AccountLine[] | undefined): number =>
+  (lines ?? []).reduce((sum, acc) => sum + acc.balance, 0);
 
-            {/* Right Column: Income Statement */}
-            <div className="col-span-1">
-              <IncomeStatementWidget data={incomeStatement} />
-            </div>
-          </div>
+const MetricCards: React.FC<MetricCardsProps> = ({ balanceSheet, incomeStatement }) => {
+  if (!balanceSheet) return null;
+  const assets = sumBalances(balanceSheet.assets);
+  const liabilities = sumBalances(balanceSheet.liabilities);
+  const equity = sumBalances(balanceSheet.equity);
+  const netIncome = incomeStatement?.netIncome ?? 0;
 
-          {/* Quick Actions */}
-          {(userRole === 'admin' || userRole === 'accountant') && (
-            <QuickActionsWidget client={client} userRole={userRole} />
-          )}
-
-          {/* Audit Log - Auditors and Admins Only */}
-          {canViewAuditLog && (
-            <AuditLogWidget
-              client={client}
-              startDate={selectedDate}
-              endDate={selectedDate}
-            />
-          )}
-        </>
-      )}
+  return (
+    <div className="grid grid-cols-4 gap-4 mb-6">
+      <MetricCard title="Total Assets" value={formatCurrency(assets)} trend="up" />
+      <MetricCard title="Total Liabilities" value={formatCurrency(liabilities)} trend="down" />
+      <MetricCard title="Total Equity" value={formatCurrency(equity)} trend="up" />
+      <MetricCard
+        title="Net Income (Period)"
+        value={formatCurrency(netIncome)}
+        trend={netIncome >= 0 ? 'up' : 'down'}
+      />
     </div>
   );
 };

@@ -1,18 +1,28 @@
-import React, { useState, useEffect, useCallback } from 'react';
-import { AccountingClient } from '@/sdk/accounting-client';
+import React, { useState } from 'react';
+import type { DashboardContext, LocalApiSource, WidgetSpec } from '@/dashboard/spec';
 
 /**
  * Audit log viewer widget — read-only timeline of administrative actions.
+ *
+ * PURE WIDGET (the dashboard/spec contract): it receives an already-resolved,
+ * typed `AuditLogData` view-model and renders it; it NEVER fetches. The previous
+ * shape self-fetched via the REST `AccountingClient.getAuditTrail` (a browser
+ * Bearer token + a hardcoded `localhost` baseUrl — the corpus violation). The
+ * data now flows from the `audit-events` collection through the `auditLogSource`
+ * localApi DataSource below, resolved SERVER-side by `resolveDashboard` (under the
+ * actor's request, `overrideAccess:false`), and projected into this view-model.
+ * It is a LIVE candidate — compose it with `live: true` (see `auditLogWidget`).
  *
  * @standard ECMA-262 ECMAScript-2024 baseline
  * @audit ISO-19011:2018 audit-trail viewer
  * @compliance SOC-2 CC4.1 monitoring-and-evaluation
  * @compliance SOX §404 internal-controls
- * @see docs/STANDARDS.md §4.4
+ * @see src/dashboard/spec/index.ts  (WIDGETS ARE PURE — the DataSource/resolver framework)
+ * @see src/audit/events/index.ts    (the audit-events collection — the source of record)
  */
 
-
-interface AuditLogEntry {
+/** One administrative action in the audit timeline (the render-time projection). */
+export interface AuditLogEntry {
   id: string;
   timestamp: string;
   userId: string;
@@ -27,40 +37,94 @@ interface AuditLogEntry {
   ipAddress?: string;
 }
 
-interface AuditLogWidgetProps {
-  client: AccountingClient;
+/** The resolved view-model this pure widget renders. */
+export interface AuditLogData {
+  entries: AuditLogEntry[];
   startDate: string;
   endDate: string;
 }
 
-const AuditLogWidget: React.FC<AuditLogWidgetProps> = ({
-  client,
-  startDate,
-  endDate,
-}) => {
-  const [logs, setLogs] = useState<AuditLogEntry[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+/** Shape of the audit-events rows the projection reads (only the fields it uses). */
+interface AuditEventDoc {
+  id: string | number;
+  timestamp?: string;
+  createdAt?: string;
+  operation?: string;
+  eventType?: string;
+  collectionSlug?: string;
+  documentId?: string;
+  user?: unknown;
+  changeSummary?: { before?: Record<string, unknown>; after?: Record<string, unknown> } | null;
+}
+
+/** Resolve the (possibly-populated) `user` relationship to an email + id pair. */
+function projectActor(user: unknown): { userId: string; userEmail: string } {
+  if (user && typeof user === 'object') {
+    const u = user as { id?: unknown; email?: unknown };
+    return {
+      userId: u.id != null ? String(u.id) : '',
+      userEmail: typeof u.email === 'string' ? u.email : '',
+    };
+  }
+  return { userId: user != null ? String(user) : '', userEmail: '' };
+}
+
+/** Project one `audit-events` row into the widget's `AuditLogEntry`. */
+function projectAuditEvent(doc: AuditEventDoc): AuditLogEntry {
+  const { userId, userEmail } = projectActor(doc.user);
+  return {
+    id: String(doc.id),
+    timestamp: doc.timestamp ?? doc.createdAt ?? '',
+    userId,
+    userEmail,
+    action: doc.operation ?? doc.eventType ?? 'update',
+    resourceType: doc.collectionSlug ?? '',
+    resourceId: doc.documentId ?? '',
+    changes: doc.changeSummary ?? undefined,
+  };
+}
+
+/**
+ * The localApi DataSource backing the audit widget — reads the durable
+ * `audit-events` collection (the SOX §404 / ISO 19011 evidence trail) via the
+ * Payload Local API for the context's tenant + as-of window, newest first, and
+ * projects each row into the pure view-model. Runs in the actor's request so
+ * tenant scope + the access cross apply (`overrideAccess:false`).
+ */
+export const auditLogSource: LocalApiSource<AuditLogData> = {
+  kind: 'localApi',
+  load: async (ctx: DashboardContext): Promise<AuditLogData> => {
+    const startDate = ctx.periodStart.toISOString();
+    const endDate = ctx.asOfDate.toISOString();
+    const { docs } = await ctx.payload.find({
+      collection: 'audit-events',
+      where: {
+        and: [
+          { tenant: { equals: ctx.tenantId } },
+          { timestamp: { greater_than_equal: startDate } },
+          { timestamp: { less_than_equal: endDate } },
+        ],
+      },
+      sort: '-timestamp',
+      depth: 1,
+      limit: 200,
+      req: ctx.req,
+      overrideAccess: false,
+    });
+    return {
+      entries: (docs as unknown as AuditEventDoc[]).map(projectAuditEvent),
+      startDate,
+      endDate,
+    };
+  },
+};
+
+const AuditLogWidget: React.FC<{ data: AuditLogData | null }> = ({ data }) => {
   const [expandedId, setExpandedId] = useState<string | null>(null);
 
-  const loadAuditLog = useCallback(async () => {
-    try {
-      setLoading(true);
-      setError(null);
-      const response = await client.getAuditTrail(startDate, endDate);
-      if (response.success && response.data) {
-        setLogs((response.data as { entries?: AuditLogEntry[] }).entries || []);
-      }
-    } catch (err) {
-      setError(err instanceof Error ? err.message : 'Failed to load audit log');
-    } finally {
-      setLoading(false);
-    }
-  }, [client, startDate, endDate]);
-
-  useEffect(() => {
-    loadAuditLog();
-  }, [loadAuditLog]);
+  const logs = data?.entries ?? [];
+  const startDate = data?.startDate ?? '';
+  const endDate = data?.endDate ?? '';
 
   const getActionColor = (action: string) => {
     switch (action.toLowerCase()) {
@@ -81,27 +145,21 @@ const AuditLogWidget: React.FC<AuditLogWidgetProps> = ({
 
   const getResourceIcon = (resourceType: string) => {
     switch (resourceType.toLowerCase()) {
+      case 'journal-entries':
       case 'journalentry':
         return '📓';
+      case 'invoices':
       case 'salesinvoice':
         return '📄';
       case 'vendorbill':
         return '📋';
+      case 'users':
       case 'user':
         return '👤';
       default:
         return '📌';
     }
   };
-
-  if (loading) {
-    return (
-      <div className="bg-white rounded-lg shadow p-6 border border-gray-200">
-        <h2 className="text-xl font-semibold mb-4">Audit Trail</h2>
-        <p className="text-gray-500">Loading audit log...</p>
-      </div>
-    );
-  }
 
   return (
     <div className="bg-white rounded-lg shadow p-6 border border-gray-200">
@@ -111,12 +169,6 @@ const AuditLogWidget: React.FC<AuditLogWidgetProps> = ({
           Export
         </button>
       </div>
-
-      {error && (
-        <div className="mb-4 p-3 bg-red-50 border border-red-200 rounded text-red-800 text-sm">
-          {error}
-        </div>
-      )}
 
       {logs.length === 0 ? (
         <p className="text-gray-500">No audit log entries found for this period</p>
@@ -146,7 +198,7 @@ const AuditLogWidget: React.FC<AuditLogWidgetProps> = ({
                     </div>
                     <div className="text-xs text-gray-600 mt-1">
                       {entry.userEmail} at{' '}
-                      {new Date(entry.timestamp).toLocaleString()}
+                      {entry.timestamp ? new Date(entry.timestamp).toLocaleString() : '—'}
                     </div>
                   </div>
                 </div>
@@ -187,12 +239,27 @@ const AuditLogWidget: React.FC<AuditLogWidgetProps> = ({
       )}
 
       <div className="text-xs text-gray-500 mt-4">
-        Showing {logs.length} entries from{' '}
-        {new Date(startDate).toLocaleDateString()} to{' '}
-        {new Date(endDate).toLocaleDateString()}
+        Showing {logs.length} entries
+        {startDate && endDate ? (
+          <>
+            {' '}from {new Date(startDate).toLocaleDateString()} to{' '}
+            {new Date(endDate).toLocaleDateString()}
+          </>
+        ) : null}
       </div>
     </div>
   );
 };
 
 export default AuditLogWidget;
+
+/** Composable spec: audit-overlay widget, LIVE (re-requests the loader each tick). */
+export const auditLogWidget: WidgetSpec<AuditLogData> = {
+  id: 'audit-log',
+  Component: AuditLogWidget,
+  source: auditLogSource,
+  minCapability: 'audit',
+  title: 'Audit Trail',
+  live: true,
+  lane: 'tailwind',
+};

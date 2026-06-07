@@ -49,6 +49,8 @@ import {
 } from '@/config/country-specifics'
 import type { CountryApi } from '@/config/country-apis'
 import { COUNTRY_APIS, BANK_APIS, hasEInvoicingPortal } from '@/config/country-apis'
+import type { TradingApi } from '@/config/trading-apis'
+import { getTradingApis } from '@/config/trading-apis'
 import { extractIbanCountry, isValidIban } from '@/iban'
 
 export interface CountryContext {
@@ -62,6 +64,13 @@ export interface CountryContext {
   readonly specifics: CountrySpecifics | null
   /** Every official API catalogued for the country. */
   readonly apis: ReadonlyArray<CountryApi>
+  /**
+   * Every commercial trading API in scope for the country (payment gateways,
+   * marketplaces, carriers, Peppol/EDI, banking aggregators, FX) — the
+   * commercial sibling of `apis`. GLOBAL + (for EU members) EU-wide providers
+   * are unioned in. See `src/config/trading-apis/`.
+   */
+  readonly tradingApis: ReadonlyArray<TradingApi>
   /** Bound helpers — branch on country without reaching into the registries. */
   readonly helpers: {
     validateTaxId: (value: string) => string | null
@@ -70,6 +79,7 @@ export interface CountryContext {
     fiscalYearStartMonth: () => number
     currencyDecimals: (code?: string) => number
     apisOfKind: (kind: CountryApi['kind']) => ReadonlyArray<CountryApi>
+    tradingApisOfCategory: (category: TradingApi['category']) => ReadonlyArray<TradingApi>
   }
   /** Diagnostic — how was the country chosen? */
   readonly source: 'explicit' | 'iban' | 'address' | 'tenant' | 'default'
@@ -131,6 +141,7 @@ function buildContext(country: string, source: CountryContext['source']): Countr
     ...(BANK_APIS[country] ?? []),
     ...(BANK_APIS.GLOBAL ?? []),
   ] as ReadonlyArray<CountryApi>
+  const tradingApis = getTradingApis(country)
 
   return {
     country,
@@ -138,6 +149,7 @@ function buildContext(country: string, source: CountryContext['source']): Countr
     profile,
     specifics,
     apis,
+    tradingApis,
     source,
     helpers: {
       validateTaxId: (value: string) => classifyTaxId(country, value),
@@ -150,6 +162,7 @@ function buildContext(country: string, source: CountryContext['source']): Countr
       fiscalYearStartMonth: () => getFiscalYearStartMonth(country),
       currencyDecimals: (code?: string) => getCurrencyDecimals(code ?? profile.currency),
       apisOfKind: (kind) => apis.filter((a) => a.kind === kind),
+      tradingApisOfCategory: (category) => tradingApis.filter((a) => a.category === category),
     },
   }
 }

@@ -275,6 +275,9 @@ export const Tenants: CollectionConfig = {
         description: localeRecord('tenants.integrationSettingsHelp'),
         position: 'sidebar',
       },
+      // Holds per-tenant trading-API credentials (integrationSettings.tradingApis[provider],
+      // resolved by resolveTradingApiCredential) — guard as a secret like stripeSecretKey.
+      access: superAdminSecretsAccess,
     },
     {
       name: 'resendApiKey',
