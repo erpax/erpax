@@ -248,6 +248,11 @@ function wikilinks(md: MarkdownIt): void {
 export default defineConfig({
   title: 'erpax',
   description: 'The fractal skill corpus — all in the path; the links are the language.',
+  // GitHub Pages base path. erpax/erpax deploys as a PROJECT page at
+  // https://erpax.github.io/erpax/, so the base is `/erpax/` in CI (set via
+  // ERPAX_DOCS_BASE in .github/workflows/deploy-docs.yml). Local dev / a custom
+  // domain → `/`. Must keep the leading+trailing slash.
+  base: process.env.ERPAX_DOCS_BASE ?? '/',
   // The corpus lives in a dot-dir (.claude/skills) that VitePress's page scanner
   // skips by default. Pointing srcDir at it makes the .md pages render — the dot
   // is now in the base, not the glob match — and everything outside (src/, docs/,
