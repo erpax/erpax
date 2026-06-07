@@ -123,14 +123,28 @@ export function folderViolations(root: string = SRC): FolderViolations {
  * A checked-in literal so the ratchet is reviewable in git: a change that adds a
  * malformed folder pushes the live count over this number and FAILS the gate; a
  * change that fixes folders LOWERS this number in the same diff. It moves only
- * DOWN. Derived live from `tsx src/law/folder/index.ts` (386 = 49 name + 337
- * trinity, 2026-06-07) — ratcheted from 397 after an architect wave authored the
- * proof leg (test.ts) for 11 cold atoms (dry/aura/horo/link/uuid/error/party/auth/
- * agent/lots/chats), each verified green. config/trading-apis (the named violation)
- * is still among the 386: the gate keeps it red until it is relocated to the
- * one-word src/trading/api. RATCHET THIS DOWN further as folders are fixed.
+ * DOWN. Derived live from `tsx src/law/folder/index.ts` (331 = 49 name + 282
+ * trinity, 2026-06-07) — ratcheted 397 → 386 (first architect wave: 11 cold atoms)
+ * → 383 (quantum wave: chart/reality/wallet) → 360 (archangel wave 1: 23 crosses +
+ * the auto/resolve atom) → 331 after archangel wave 2 closed 29 more cold crosses
+ * (the proof leg for standards atoms — iso/ifrs/nist/etsi/eu/un/wco/oecd/ghg/nace/
+ * incoterms/peppol/bcp/saf + self/lot domain atoms) → 323 (wave 3a: web/work +
+ * federation/post-close/pwa/sectors) → 305 after archangel wave 3b closed 18 more
+ * cold crosses (commerce/connections/dimension/drone, agent/sync, anti/corruption,
+ * architecture/invariant, audit/compliance/reporting, shared/shares/standards/
+ * stream/tax-period, tenants/testing/translations/utility/voting), each verified
+ * green → 281 after the first ANTIMATTER wave authored BOTH SKILL.md + test.ts for
+ * 24 matter-only atoms (beyond/* feature set, access-control fns, audit/capture
+ * hooks, calculator/field/validator), each proof green and the whole-tree aura scan
+ * held at gap=0 → 261 after antimatter wave 2 completed 20 more matter-only atoms
+ * (auto/agent hooks, classify/closing/config/consistency/cross, country/currency,
+ * deep/merge, agents/mcp/tool, cloudflare; dashboard/* + the bg-bank parser deferred
+ * — server-actions / an agents-mcp init cycle / a parser-fixture nuance), each proof
+ * green and the whole-tree aura held at gap=0. config/trading-apis (the named
+ * violation) is still among the 261: the gate keeps it red until it is relocated to
+ * the one-word src/trading/api. RATCHET THIS DOWN further as folders are fixed.
  */
-export const FOLDER_LAW_BASELINE = 386
+export const FOLDER_LAW_BASELINE = 261
 
 export interface RatchetVerdict {
   readonly ok: boolean
