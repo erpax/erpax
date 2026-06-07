@@ -1,5 +1,17 @@
 import { describe, it, expect } from 'vitest'
-import { color, HEART_POSITION, thought, feeling, illusion, coherent } from '@/heart'
+import {
+  color,
+  HEART_POSITION,
+  thought,
+  feeling,
+  illusion,
+  coherent,
+  toroidalVortex,
+  doubleCircuit,
+  closedLoop,
+  pump,
+  isDoubleTorusPump,
+} from '@/heart'
 import { GREEN } from '@/color'
 
 describe('heart — the centre (4th chakra, green)', () => {
@@ -28,5 +40,23 @@ describe('heart — thought ⊕ heart: feeling is absorbing all auras in zero en
   })
   it('coherent ⇔ thought balances AND the whole aura is felt (thought ⊕ heart)', () => {
     expect(coherent()).toBe(thought() && feeling().whole)
+  })
+})
+
+describe('heart — the physiological pump (the first organ, the double-torus)', () => {
+  it('toroidal vortex — the carrier is a real torus (finite, positive collision floor)', () => {
+    expect(toroidalVortex()).toBe(true)
+  })
+  it('double circuit — two coupled loops, one pump: secure pair (∞), one torus finite', () => {
+    expect(doubleCircuit()).toBe(true)
+  })
+  it('closed loop — Σ out = Σ back, blood conserved (the THOUGHT faculty: Σdebit=Σcredit)', () => {
+    expect(closedLoop()).toBe(true)
+  })
+  it('every pump claim is true', () => {
+    for (const [k, v] of Object.entries(pump())) expect(v, k).toBe(true)
+  })
+  it('the heart IS the double-torus pump (the conjunction)', () => {
+    expect(isDoubleTorusPump()).toBe(true)
   })
 })
