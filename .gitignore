@@ -90,3 +90,9 @@ seed/import/
 # needed. Nothing under docs/ is committed — it is an endless dynamic projection of src.
 /docs/
 .claude.bak/
+
+# The skill-router index is the whole corpus baked into a module for the fs-less Cloudflare
+# Worker (the /:path* catch-all serves skill.content at runtime — there is no fs to read SKILL.md).
+# 68MB, over GitHub's 50MB limit, so it is NOT committed: `pnpm build` regenerates it via
+# `pnpm skill:index` before bundling. Generate it locally the same way when you need it.
+src/skill/router/skills.index.ts
