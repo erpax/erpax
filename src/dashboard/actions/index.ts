@@ -149,17 +149,12 @@ async function findGlAccountId(
 }
 
 /**
- * Find — or create — an `addresses` row for a party NAME (the only party handle
- * the invoice/bill modals collect). The `invoices.parties.seller`/`buyer`
- * relationships are REQUIRED, so a name-only form cannot post an invoice without
- * an address id; this resolves the named party to a real row (matched on
- * `company` within the tenant) so the create type-checks and persists.
- *
- * MAPPING STUB (noted in the task): the modals capture ONE party name, but an
- * invoice is a two-party document. Until the modals collect both sides (or the
- * tenant's own legal entity is wired as the implicit counterparty), the resolved
- * named-party address is used for the party the modal is about; the caller fills
- * the opposite side with the same address as a minimal, clearly-flagged stub.
+ * Find — or create — an `addresses` row for a party NAME, matched on `company`
+ * within the tenant. The `invoices.parties.{seller,buyer}` relationships are
+ * REQUIRED, so a name-only form needs a real address id; this resolves the named
+ * party — the EXTERNAL counterparty (the customer on a sales invoice, the vendor
+ * on a bill) — to a row so the create type-checks and persists. `country`
+ * defaults to BG (the app's native fiscal locale) when a row must be created.
  */
 async function findOrCreateAddressByName(
   { payload, req, tenantId }: ActorScope,
@@ -179,17 +174,37 @@ async function findOrCreateAddressByName(
 
   const created = await payload.create({
     collection: 'addresses',
-    data: {
-      tenant: tenantId,
-      company: name,
-      // `country` is the only required scalar on addresses; default to BG (the
-      // app's native fiscal locale). Refine when the modals collect an address.
-      country: 'BG',
-    },
+    data: { tenant: tenantId, company: name, country: 'BG' },
     req,
     overrideAccess: false,
   })
   return String(created.id)
+}
+
+/**
+ * Resolve the TENANT'S OWN legal entity as an `addresses` row — the implicit
+ * counterparty on every invoice (the SELLER on a sales invoice we issue, the
+ * BUYER on a vendor bill we receive). Derived from the tenant's registered
+ * identity (`config.identity.legalName`), falling back to the tenant display name,
+ * so the modals only need to collect the EXTERNAL party (its country defaults to BG).
+ * Find-or-create + tenant-scoped, so the same own-entity row is reused across
+ * documents. THIS is the fix for the former one-party stub (the two sides are now
+ * a real legal entity and a real counterparty, never the same address twice).
+ */
+async function tenantOwnEntityAddress(scope: ActorScope): Promise<string> {
+  const tenant = await scope.payload.findByID({
+    collection: 'tenants',
+    id: scope.tenantId,
+    depth: 0,
+    req: scope.req,
+    overrideAccess: false,
+  })
+  const identity = tenant.config?.identity
+  const legalName =
+    (typeof identity?.legalName === 'string' && identity.legalName.trim()) ||
+    (typeof tenant.name === 'string' && tenant.name) ||
+    'Our Company'
+  return findOrCreateAddressByName(scope, legalName)
 }
 
 // ─── The three write actions (replacing AccountingClient.createX) ────────────
@@ -251,14 +266,15 @@ export async function createJournalEntryAction(input: JournalEntryInput): Promis
 }
 
 /**
- * Record a sales invoice (`invoices` with `invoiceType: 'invoice'`). The modal's
- * `customerName` resolves to the BUYER address; the SELLER is stubbed to the same
- * address until the form captures both parties (see findOrCreateAddressByName).
- * Amount is in cents; it lands on both the required line/total fields.
+ * Record a sales invoice (`invoices` with `invoiceType: 'invoice'`). The SELLER is
+ * the tenant's OWN legal entity (the implicit counterparty, from config.identity);
+ * the modal's `customerName` resolves to the external BUYER. Amount is in cents;
+ * it lands on the required line/total fields.
  */
 export async function createSalesInvoiceAction(input: SalesInvoiceInput): Promise<ActionResult> {
   try {
     const scope = await actorScope()
+    const seller = await tenantOwnEntityAddress(scope)
     const buyer = await findOrCreateAddressByName(scope, input.customerName)
 
     const created = await scope.payload.create({
@@ -267,9 +283,8 @@ export async function createSalesInvoiceAction(input: SalesInvoiceInput): Promis
         number: input.invoiceNumber,
         status: 'issued',
         typeStatus: { invoiceType: 'invoice' },
-        // STUB: one-party form → seller reuses the buyer address until the modal
-        // collects the selling legal entity.
-        parties: { seller: buyer, buyer },
+        // Two-party: we (the tenant's legal entity) sell to the named customer.
+        parties: { seller, buyer },
         dates: { date: input.invoiceDate, dueAt: input.dueDate },
         amounts: { itemTotal: input.amount, totalAmount: input.amount, totalDue: input.amount },
         billingTax: { currencyCode: 'EUR' },
@@ -289,14 +304,15 @@ export async function createSalesInvoiceAction(input: SalesInvoiceInput): Promis
 }
 
 /**
- * Record a vendor bill (`invoices` with `invoiceType: 'bill'`). The modal's
- * `vendorName` resolves to the SELLER address; the BUYER (us) is stubbed to the
- * same address until the form captures our own legal entity.
+ * Record a vendor bill (`invoices` with `invoiceType: 'bill'`). The BUYER is the
+ * tenant's OWN legal entity (the implicit counterparty, from config.identity); the
+ * modal's `vendorName` resolves to the external SELLER.
  */
 export async function createVendorBillAction(input: VendorBillInput): Promise<ActionResult> {
   try {
     const scope = await actorScope()
     const seller = await findOrCreateAddressByName(scope, input.vendorName)
+    const buyer = await tenantOwnEntityAddress(scope)
 
     const created = await scope.payload.create({
       collection: 'invoices',
@@ -304,9 +320,8 @@ export async function createVendorBillAction(input: VendorBillInput): Promise<Ac
         number: input.billNumber,
         status: 'issued',
         typeStatus: { invoiceType: 'bill' },
-        // STUB: one-party form → buyer reuses the seller address until the modal
-        // collects our own legal entity.
-        parties: { seller, buyer: seller },
+        // Two-party: the named vendor sells to us (the tenant's legal entity).
+        parties: { seller, buyer },
         dates: { date: input.billDate, dueAt: input.dueDate },
         amounts: { itemTotal: input.amount, totalAmount: input.amount, totalDue: input.amount },
         billingTax: { currencyCode: 'EUR' },
