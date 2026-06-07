@@ -44,7 +44,7 @@ describe('uuid', () => {
       collections: [{ slug: 'items', fields: [], hooks: { beforeChange: [existingHook] } }],
     } as Parameters<ReturnType<typeof uuidPlugin>>[0]
     const result = plugin(config)
-    const hooks = result.collections![0].hooks?.beforeChange!
+    const hooks = result.collections![0].hooks!.beforeChange!
     expect(hooks).toHaveLength(2)
     expect(hooks[0]).toBe(existingHook)
   })
