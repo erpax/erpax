@@ -2,7 +2,7 @@
 
 # erpax — A Quantum-Scale Forge-Cost Proof for a Content-Addressed Ledger
 
-> Open-source multi-tenant ERP & double-entry accounting on Payload CMS v4 + Cloudflare (D1 + R2 + Workers via OpenNext) — content-addressed, tamper-evident, standards-bound.
+> **erpax — the universal quantum double-entry accounting system.** Open-source, multi-tenant, on Payload CMS v4 + Cloudflare (D1 + R2 + Workers via OpenNext): every value content-addressed (**quantum** — the `uuid`-matrix), every flow a balanced **double-entry** (debit ⊕ credit — the cross, accountable in all states and directions), every record tamper-evident and standards-bound. One ledger for all costs (ai · money · energy · time · labor · entropy) — and this README is its **accounting statement**.
 
 **A proof, computed from the tests.** This document is the README *and* the paper. Every quantity below is computed on the live `uuid`-matrix or asserted by an executable test in this repository; none is hand-set. We derive the cost to forge an undetected record and follow it, rung by rung, from **0 bits** (an un-anchored store) to its architectural ceiling of **∞** (the double-torus at full coverage). The path *is* the contribution.
 
