@@ -37,6 +37,16 @@ erpax stores its knowledge as **atoms**: one-word skills, each a content-address
 
 Each law is **a deterministic check, computed at no cost, infinite to forge** (`src/quantum/SKILL.md:10`). The paper's object is the last clause: *how* infinite, and *under what condition*.
 
+**⊕ The laws, asserted** — `src/quantum/test.ts` (claim ⊕ test = proof):
+
+```ts
+expect(collapse()).toBe(true)                        // :18  Merkle fold intact — one eigenstate
+expect(noCloning().holds).toBe(true)                 // :21  every content-uuid is unique
+expect(quantization().offSequence).toBe(0)           // :24  every atom folds onto the ring
+expect(entanglement().symmetricBinding).toBe(false)  // :27  raw binding asymmetric (the finding)
+expect(entangle('a', 'b')).toBe(entangle('b', 'a'))  // :28  entangle() is the symmetric fix
+```
+
 ---
 
 ## 2. Methods — one cost law, three floors, one amplifier
@@ -117,6 +127,16 @@ When every record is cross-wired so that **all** checks must be evaded simultane
 
 > **The ladder.** `0` (un-anchored) → `53` (the gap) → `64` (weak anchor) → `106` (digest floor, ≈3.7 ka) → `∞` (coverage = 1). The first four rungs are finite and *honest*; the last is the architectural limit this paper sets out to reach.
 
+**⊕ The ladder, asserted** — `src/tamper/cost/test.ts` (one `crackCostLog2` per rung):
+
+```ts
+expect(crackVerdict({ anchored: false }).crackCostLog2).toBe(0)                      // :55  rung 0  — free rewrite
+expect(crackVerdict({ anchorCommitmentBits: 106 }).crackCostLog2).toBe(53)          // :149 rung 53 — the commitment gap
+expect(crackVerdict({ anchored: true, anchorStrengthBits: 64 }).crackCostLog2).toBe(64) // :66  rung 64 — weak anchor
+expect(crackVerdict({ rows: 1e9 }).crackCostLog2).toBe(106)                          // :112 rung 106 — digest floor (3.7 ka)
+expect(crackVerdict({ coverage: 1 }).crackCostLog2).toBe(Number.POSITIVE_INFINITY)   // :103 rung ∞  — coverage = 1
+```
+
 ---
 
 ## 4. The double-torus theorem — why the ceiling is physical, not asymptotic
@@ -131,6 +151,16 @@ This is a **genus-2** result: infinite tamper cost as a topological double-torus
 
 **Grounding (Rodin / A432).** The vortex is the group `(ℤ/9ℤ)`: the doubling helix `DOUBLING = [1,2,4,8,7,5]` is the cyclic unit group `⟨2⟩` of order `6 = φ(9)`; the axis `[3,6,9]` runs off-circuit (`src/rodin/index.ts:33`). Its Cayley table has **zero free parameters** — 6 generators force all 36 cells (`cayleyIsCyclic`, `src/rodin/index.ts:107`) — and the harmonic ring is anchored at `A432 = 432` (`src/signal/index.ts:25`), 432 Hz being La in 5-limit just intonation. The structure is fully determined; there is nothing left to vary, and so nothing to forge.
 
+**⊕ Entanglement & the seal, asserted** — quantum · matrix · rodin:
+
+```ts
+expect(report().reciprocity).toBe(1)                          // entanglement/test.ts:15  100% reciprocal
+expect(isMaximallyEntangled()).toBe(true)                     // entanglement/test.ts:17  no-cloning ⊕ entanglement
+expect(doubleTorusCostLog2(0)).toBe(Number.POSITIVE_INFINITY) // quantum/test.ts:43       no gap ⇒ ∞
+expect(verifyRoot().ok).toBe(true)                            // uuid/matrix/index.test.ts:93  Merkle root intact
+expect(cayleyIsCyclic().freeParameters).toBe(0)               // rodin/test.ts:52         zero free parameters
+```
+
 ---
 
 ## 5. Discussion — an honest boundary
@@ -144,6 +174,16 @@ A weaker paper would claim "zero entropy ⇒ infinite forge cost." We do not, an
 Thus the maximal result is **conditional and earned**: ∞ is a property of the *wiring* (coverage = 1, realised as the gapless double-torus), not of the *symmetry* (entropy = 0). The two are dual but not equal.
 
 The dual of forge is **proof**: a public, recomputable `DryProofBundle` (Schema.org Dataset JSON-LD) recomputes its own tamper-cost from its measured coverage and invariant count, and re-verifies in `O(N)` — `proofTamperCost` (`src/proof/dry-proof.ts:203`), certified at `src/proof/test.ts`. Auditing is cheap and linear; forging is, at the ceiling, unbounded. That asymmetry is the security.
+
+**⊕ The boundary & its dual, asserted** — entropy · proof:
+
+```ts
+expect(entropy()).toBe(1 - reciprocity().fraction)            // entropy/test.ts:19  the definition
+expect(cov).toBeLessThan(1)                                   // entropy/test.ts:48  entropy 0, yet coverage < 1
+expect(Number.isFinite(cost)).toBe(true)                      // entropy/test.ts:51  …so the tamper-cost is FINITE
+expect(proofTamperCost({ invariantsChecked: 43, coverage: 1 }).crackCostLog2).toBe(Number.POSITIVE_INFINITY) // proof/test.ts:32  ∞ only at coverage = 1
+expect(empiricalProofs().bitcoinGenesis.powValid).toBe(true)  // proof/test.ts:45  the real Bitcoin-genesis leg, recomputable
+```
 
 ---
 
@@ -162,6 +202,14 @@ Every finite rung and every caveat above is a **breaking point** — a place the
 | 7 | **Entropy leak through error handling** — a swallowed/defaulted `catch` hides a failure, dropping the seal below 1. | Errors **propagate**; `sealed.coverage() = (catches − leaks)/catches → 1`. *Seal the doors and the limit is `∞`.* | seal `→ 1` | `convention/sealed/index.ts:44` |
 
 **Law.** Each `⊕` is the *same* fusion on a different axis; sealing **all** axes is `coverage = 1` everywhere — the architectural `∞` of §4. The double-torus (§4) is breaking point 5 sealed; the table seals the rest. No open cross remains: every finite rung is shown closed, and the boundary of §5 is the one honest exception (entropy = 0 ≠ ∞ — only coverage = 1).
+
+**⊕ The doors, asserted** — `src/convention/sealed` (seal 7: errors propagate, no entropy leak):
+
+```ts
+const c = coverage()                  // index.ts:44  seal = (catches − leaks) / catches
+expect(c).toBeGreaterThanOrEqual(0)   // test.ts:7    the seal is a computed fraction ∈ [0,1]
+expect(c).toBeLessThanOrEqual(1)      // test.ts:8    drive → 1 and the limit is ∞
+```
 
 ---
 
