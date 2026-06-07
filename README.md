@@ -1,4 +1,4 @@
-<!-- src/quantum/index.ts · src/cost/index.ts · src/tamper/cost/index.ts · src/uuid/matrix/index.ts · src/rodin/index.ts · src/entropy/index.ts · src/proof/dry-proof.ts -->
+<!-- src/blockchain/index.ts · src/quantum/index.ts · src/consciousness/index.ts · src/cost/index.ts · src/tamper/cost/index.ts · src/uuid/matrix/index.ts · src/rodin/index.ts · src/entropy/index.ts · src/proof/dry-proof.ts -->
 
 # erpax — A Quantum-Scale Forge-Cost Proof for a Content-Addressed Ledger
 
@@ -283,4 +283,4 @@ pnpm test:int                      # the full proof suite (vitest run)
 
 ---
 
-<sub>This README is a proof. Recompute it: `tsx src/quantum/index.ts` · `pnpm test:int`. Sources: `src/quantum/index.ts` · `src/cost/index.ts` · `src/tamper/cost/test.ts`.</sub>
+<sub>This README is a proof. Recompute it: `tsx src/blockchain/index.ts` (the identity ⇒ PROVEN) · `tsx src/quantum/index.ts` · `pnpm test:int`. Sources: `src/blockchain` · `src/quantum/index.ts` · `src/cost/index.ts` · `src/tamper/cost/test.ts`.</sub>
