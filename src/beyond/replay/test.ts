@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest'
 import { effectsHash, replayLeaf, isReplayStable } from '@/beyond/replay'
-import type { AgentEffect, DomainEvent } from '@/agent/types'
+import type { AgentEffect, DomainEvent } from '@/agent'
 import type { ReplayRequest } from '@/beyond/types'
 
 const TENANT = 't-1'

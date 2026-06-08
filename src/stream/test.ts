@@ -8,7 +8,7 @@ import {
   pipeBlocks,
   type ClockedEvent,
 } from '@/stream'
-import type { DomainEvent } from '@/agent/types'
+import type { DomainEvent } from '@/agent'
 
 // Minimal DomainEvent stub — only the fields the stream layer reads (id,
 // tenantId) need real values; the rest is structural payload.

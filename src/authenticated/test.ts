@@ -11,7 +11,7 @@ import type { AccessArgs } from 'payload'
 
 import { describe, it, expect } from 'vitest'
 
-import type { User } from '@/payload-types'
+import type { User } from '@/types'
 
 import { authenticated, controlsApplied } from '@/authenticated'
 

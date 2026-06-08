@@ -6,7 +6,7 @@ import {
   listAttachedDimensions,
   domainDimensionPlugin,
 } from '@/dimension'
-import { DIMENSIONAL_PLUGINS } from '@/plugin/dimensions'
+import { DIMENSIONAL_PLUGINS } from '@/plugin'
 import type { Config } from 'payload'
 
 // dimension — the 10 dimensional-plugin entry-points (./index.ts). Conservation

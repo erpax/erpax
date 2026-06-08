@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest'
 import { inverseOf, isFullyReversible } from '@/beyond/reversibility'
-import type { AgentEffect, DomainEvent } from '@/agent/types'
+import type { AgentEffect, DomainEvent } from '@/agent'
 
 const event = (id = 'invoice:activated'): DomainEvent => ({
   id,

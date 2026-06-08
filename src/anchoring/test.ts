@@ -9,7 +9,7 @@ import {
   type ChainBackend,
   type AnchorReceipt,
 } from '@/anchoring'
-import { computeContentDigest } from '@/integrity/content-uuid'
+import { computeContentDigest } from '@/integrity'
 
 // anchoring (./index.ts): the anchor is the one borrowed external entropy. A
 // backend that does NOT pin to entropy no party controls is not tamper-evidence,
