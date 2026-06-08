@@ -1,0 +1,28 @@
+{
+  "_law": "emit-only — automate manifest; never hand-edit; re-run pnpm erpax automate to refresh",
+  "cycleId": "a00fd73acad0",
+  "completedAt": "2026-06-08T22:11:54.278Z",
+  "dryRun": true,
+  "inventory": {
+    "atoms": 3174,
+    "trinityPct": 8.6,
+    "activeAgents": 135,
+    "duplicateAgents": 130
+  },
+  "tamper": {
+    "product": null,
+    "tamperCostLog2": null,
+    "coverage": 1,
+    "contentUuidPct": 88.3,
+    "matrixEdges": 45.02,
+    "sealedPct": 88.3,
+    "violationFloorDistance": 52
+  },
+  "tamperDelta": null,
+  "ratchetOk": true,
+  "freeEnergyBits": null,
+  "emitted": [
+    "src/apply/efficiency.generated.json",
+    "src/apply/automate.manifest.generated.json"
+  ]
+}

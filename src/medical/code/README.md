@@ -2,7 +2,7 @@
 
 # code
 
-> atom `medical/code` · horo `1` `base` · [[balance]] `0` · [[seal]] `0`
+> atom `medical/code` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -13,7 +13,7 @@
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
 | [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
 | [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
@@ -21,7 +21,7 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
-> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## quantum thinking
 
@@ -30,26 +30,18 @@ collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc s
 
 ### superposition
 
-- `explore:diamond`
-- `explore:hallucination`
-- `explore:purity`
-- `gap:ancestor:[[gap]]/[[path]]/ancestor`
-- `gap:unfolded:[[gap]]/[[lattice]]/unfolded`
+- `dispatch:eb=1.585`
 
 ### collapse
 
-- `balance:variance=1`
-- `law:medical/code names code under medical — one word, content-addressed, nested not duplicated.`
-- `seal:unsealed`
-- `trigger:Use when reasoning about code as a medical facet of [[medical]] — vocabulary pivot to @/code; nested not duplicated.`
-- `trigger:medical/code names code under medical — one word, content-addressed, nested not duplicated.`
-- `trigger:schema.org — the type vocabulary, collided to single words`
+- `balance:conserved`
+- `seal:sealed`
 
 ### seal
 
-- path follow `0` · receipt `1` · sealed `0`
-- entry uuids `060c3ed7-2b5d-816f-9cb1-a464ddb2ba70` · `3298ae5b-0e3b-816f-a98f-7f4980927abe`
-- content uuids `508dd141-f5f0-834b-b9e8-13c18d5ee092` · `e09bf185-af04-8183-9df8-7b41cf1160c5`
+- path follow `1` · receipt `1` · sealed `1`
+- entry uuids `08a7ad00-1516-8a2f-952c-33577cab3372`
+- content uuids `2ab9bd29-4f94-85a7-b571-6ddffe068e22` · `85272e66-30fb-8964-b8d9-be76fb7038e9`
 
 ## [[entropy]] — gaps · seals
 
@@ -59,25 +51,28 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 
 | [[gap]] debit (eb) | [[seal]] credit (eb) |
 | -----------------: | -------------------: |
-| [[gap]]/[[lattice]]/unfolded `2` eb | [[seal]]/[[trinity]]/form `1` eb |
-| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
 |  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
 |  | [[seal]]/[[links]]/resolved `1` eb |
 |  | [[seal]]/[[horo]]/ring `0.1` eb |
 |  | [[seal]]/[[identity]]/uuid `1` eb |
 |  | [[seal]]/[[boundary]]/barrel `1` eb |
 |  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[diamond]]/sealed `1.585` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
 |  | [[seal]]/[[gravity]]/held `1` eb |
 |  | [[seal]]/[[diamond]]/membership `1` eb |
-| Σ gap `3` eb | Σ seal `9.1` eb |
+| Σ gap `0` eb | Σ seal `12.685` eb |
 
-> net residual `-6.1` eb · seal/gap ratio `3.033` · [[entropy]] · [[seal]]
+> net residual `-12.685` eb · seal/gap ratio `1` · [[entropy]] · [[seal]]
 
 ## typography graph
 
-- partition `medical` · sub-root `c90f878e-321a-8525-874f-7a54ccac9aa3`
-- bond degree `111` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `18ba71ef-f698-8bfa-ab3f-a1f658df4222`
+- partition `medical` · sub-root `899adc2a-46e4-8b55-a72f-0ac5adb7ca8c`
+- bond degree `110` · analysis neighbors —
+- graph root `9eb764d2-12af-88d1-a220-afe79901fdba`
 
 ## [[cloudflare]] bindings
 
@@ -93,14 +88,14 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 
 | state | count | share % |
 | ----- | ----: | ------: |
-| unsealed | 1 | 100 |
+| sealed | 1 | 100 |
 | **Σ** | **1** | **100** |
 
 ### [[balance]]
 
 | state | count | share % |
 | ----- | ----: | ------: |
-| unbalanced | 1 | 100 |
+| balanced | 1 | 100 |
 | **Σ** | **1** | **100** |
 
 ### [[gravity]]
@@ -127,22 +122,22 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 
 ## analytics
 
-- bond degree `111` · sealed `0` · horo `1`
-- variance `1` · balanced `0` · trinity sum `3`
+- bond degree `110` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `1`
 
 ## identity
 
-- uuid `9f0ba9d5-7d1c-898c-a6f7-8b25d8c78343`
-- bonds in `34` · out `34`
+- uuid `2ab9bd29-4f94-85a7-b571-6ddffe068e22`
+- bonds in `35` · out `35`
 - trinity form·code·proof `1`·`1`·`1`
 - links `5` / `5`
-- folded `0` · escapes `0`
+- folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `5f6b86b7-eddc-8499-8073-e8616935aee7` · framed by typography partition `medical` bonds `111` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `94733eec-d4d0-88d1-8d44-b4886a1eba2f` · framed by typography partition `medical` bonds `110` · `pnpm readme` · `pnpm readme:check`</sub>

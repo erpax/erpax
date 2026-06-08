@@ -3,15 +3,15 @@
 
 # code
 
-path `medical/code` · uuid `9f0ba9d5-7d1c-898c-a6f7-8b25d8c78343` · diamond `c7b4f18e-35a3-8a5b-9fae-68f31084f777`
-horo `1` `base` · trinity `1·1·1` · sealed `0`
+path `medical/code` · uuid `2ab9bd29-4f94-85a7-b571-6ddffe068e22` · diamond `8759739d-2589-8264-883d-f9647af427c7`
+horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports — · exports const·stub · escapes —
-links `5/5` · folded `0` · bonds in `34` out `34`
+links `5/5` · folded `1` · bonds in `35` out `35`
 faces worker·plugin·pwa `1·0·0`
-neighbors → account·accounting·acriss·branch·category·cheat·collapse·course·derive·error·fields·generate·has·hooks·iata·icao·identity·iso·isrc·iswc·law·lei·medical·postal·prefix·range·repository·sample·seed·set·software·specification·term·unit · ← account·accounting·acriss·branch·category·cheat·collapse·course·derive·error·fields·generate·has·hooks·iata·icao·identity·iso·isrc·iswc·law·lei·medical·postal·prefix·range·repository·sample·seed·set·software·specification·term·unit
-analysis diamond·hallucination·purity
+neighbors → account·accounting·acriss·branch·category·cheat·code·collapse·course·derive·error·fields·generate·has·hooks·iata·icao·identity·iso·isrc·iswc·law·lei·medical·postal·prefix·range·repository·sample·seed·set·software·specification·term·unit · ← account·accounting·acriss·branch·category·cheat·code·collapse·course·derive·error·fields·generate·has·hooks·iata·icao·identity·iso·isrc·iswc·law·lei·medical·postal·prefix·range·repository·sample·seed·set·software·specification·term·unit
+analysis —
 law medical/code names code under medical — one word, content-addressed, nested not duplicated.
 
 ---
 
-<sub>content-uuid `d5234c5b-7c98-870b-a650-7cc82057275b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6c1cffdf-7fbd-8d12-9411-3c51ddc75a83` · `pnpm readme` · `pnpm computed:check`</sub>
