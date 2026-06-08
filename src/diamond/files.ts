@@ -12,7 +12,7 @@
  * @audit allowed sets + violation scan computed from live tree; baseline ratchets DOWN only
  * @see ./SKILL.md — ../readme — ../guardian — ../law/folder
  */
-import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs'
+import { existsSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { guardian } from '@/guardian'
 import { seal, type SealVerdict } from '@/seal'
@@ -69,13 +69,6 @@ export interface DiamondAuditContext {
 /** membership = stray files/dirs only; full = membership + computed-face drift verify. */
 export type DiamondFileAuditMode = 'membership' | 'full'
 
-const isDir = (p: string): boolean => {
-  try {
-    return statSync(p).isDirectory()
-  } catch {
-    return false
-  }
-}
 
 /** Allowed basenames for this kind (does not include pattern allowlist). */
 export function allowedDiamondFiles(kind: DiamondAtomKind): ReadonlySet<string> {
