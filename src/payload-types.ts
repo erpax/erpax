@@ -9118,6 +9118,10 @@ export interface Chat {
    * Cascade hop count — the broadcast hook stops re-dispatching past MAX_BROADCAST_DEPTH (runaway-loop guard). An original publish is 0; an agent reaction is parent+1.
    */
   depth?: number | null;
+  /**
+   * ISO-8601 emit time stamped when the envelope uuid was derived — used by team/comms to re-verify eventUuid at write time.
+   */
+  emittedAt?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -21173,6 +21177,7 @@ export interface ChatSelect<T extends boolean = true> {
   agent?: T;
   payload?: T;
   depth?: T;
+  emittedAt?: T;
   updatedAt?: T;
   createdAt?: T;
 }
