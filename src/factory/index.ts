@@ -6,3 +6,4 @@
  */
 
 export * from './collection-factory';
+export * from './recompute-parent-aggregates';

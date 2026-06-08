@@ -2,7 +2,7 @@ import React from 'react'
 
 import type { Page } from '@/types'
 
-import { CMSLink } from '@/link'
+import { CMSLink } from '@/link/component'
 import { Media } from '@/media'
 import RichText from '@/rich/text'
 

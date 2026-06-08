@@ -49,7 +49,7 @@
 
 import { ANCHOR } from '@/allocation'
 import { HORO_DIGITS, type HoroStep } from '@/horo'
-import { basicTeams } from '@/agent'
+import { basicTeams } from '@/agent/team'
 
 const clamp01 = (x: number): number => (x < 0 ? 0 : x > 1 ? 1 : x)
 

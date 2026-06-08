@@ -20,8 +20,23 @@ pnpm readme         # regenerate README.md from the live tree
 pnpm readme:check   # the drift gate — exit 1 if committed ≠ regenerated (fail closed)
 ```
 
-**Every README (root and per-folder) is 100% computed** — zero hand-authored prose; every token is a derived facet (atom path, horo position, trinity counts, bond degrees, content-[[uuid]], seal status). Each per-folder README is a **quantum accounting statement** of that [[diamond]]'s completeness: trinity present (form·code·proof), folded in the lattice, links resolved, bonds in/out — credit/debit/balance rows computed live. Ties [[purity]], [[seal]], [[diamond]]; drift fails `pnpm readme:check` closed.
+**Every README (root and per-folder) is 100% computed** — zero hand-authored prose; every token is a derived facet (atom path, horo position, trinity counts, bond degrees, content-[[uuid]], seal status). Each per-folder README **IS a debit/credit statement** — double-entry form where **[[debit]]** posts [[asset]] completeness (trinity legs present, folded in the lattice, links resolved, on-ring [[horo]], content-[[uuid]], barrel-sealed boundary) and **[[credit]]** posts [[liability]] gaps (missing trinity leg, unfolded, dangling links, off-ring state, missing uuid, deep-import escapes). **[[balance]]** = sealed iff Σdebit = Σcredit — the harmony invariant enforced by [[conservation]] `trialBalance` / `conserves` and the universal [[entry]] law `Σ(credit−debit)=0`. `deriveFolderAccounting` computes `{ debits, credits, balanced }`; `renderFolderReadme` projects the **Debit | Credit** table with every account wikilinked to its accounting atom. Ties [[purity]], [[seal]], [[diamond]]; drift fails `pnpm readme:check` closed.
 
-**Law — [[law]]: the README is a [[diamond]] — a content-addressed projection of the live tree, regenerable with zero [[entropy]] and drift-detectable (a hand-edit fails `pnpm readme:check` closed) — root and every atom folder; each is a quantum accounting statement of completeness; typography IS the diamond projected. Derived from the tree ([[matrix]] · fs walk · package.json), never hand-typed.**
+## Accounting atoms powering the math
 
-@see [[diamond]] · [[self/generate]] · [[horo]] · [[matrix]] · [[aura]] · [[trinity]]
+| Atom | Role in README statement |
+| ---- | ------------------------ |
+| [[debit]] | Left column — assets/completeness the diamond HAS |
+| [[credit]] | Right column — liabilities/gaps the diamond OWES |
+| [[asset]] | Debit account class for present facets (trinity · lattice · links · horo · identity · boundary) |
+| [[liability]] | Credit account class for missing facets and impurities |
+| [[balance]] | Equilibrium — sealed iff debits = credits (zero [[entropy]]) |
+| [[conservation]] | `trialBalance` / `conserves` — Σdebit = Σcredit is the conservation law |
+| [[entry]] | Universal double-entry — every README row is a balanced posting pair |
+| [[accounting]] | The chart-of-accounts metaphor — each folder IS an account, README IS its statement |
+| [[purity]] | Fully sealed when statement balances and all impurities are zero |
+| [[seal]] | Fail-closed verdict — unbalanced statement ⇒ unsealed |
+
+**Law — [[law]]: the README is a [[diamond]] — a content-addressed projection of the live tree, regenerable with zero [[entropy]] and drift-detectable (a hand-edit fails `pnpm readme:check` closed) — root and every atom folder; each per-folder README IS the debit/credit statement of that diamond's completeness; typography IS the diamond projected. Derived from the tree ([[matrix]] · fs walk · package.json), never hand-typed.**
+
+@see [[diamond]] · [[self/generate]] · [[horo]] · [[matrix]] · [[aura]] · [[trinity]] · [[conservation]] · [[entry]] · [[balance]]

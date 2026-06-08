@@ -19,7 +19,7 @@ import {
   lexicalEditor,
 } from '@payloadcms/richtext-lexical'
 
-import { linkGroup } from '@/link'
+import { linkGroup } from '@/link/group'
 import { localeRecord } from '@/i18n'
 
 export const hero: Field = {

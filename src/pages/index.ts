@@ -1,11 +1,7 @@
 import type { CollectionConfig } from 'payload'
 
 import { authenticatedOrPublished } from '@/authenticated/or/published'
-import { Archive } from '@/blocks'
-import { CallToAction } from '@/blocks'
-import { Content } from '@/blocks'
-import { FormBlock } from '@/blocks'
-import { MediaBlock } from '@/blocks'
+import { Archive, CallToAction, Content, FormBlock, MediaBlock } from '@/blocks/config'
 import { hero } from '@/hero'
 import { slugField } from 'payload'
 import { documentPreviewAdmin } from '@/shareds'

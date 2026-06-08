@@ -15,17 +15,22 @@
  * (`deriveModel`/`generateReadme`) which reads the static matrix + a fs walk.
  */
 import { describe, it, expect } from 'vitest'
+import { join } from 'node:path'
 import {
   deriveModel,
   renderReadme,
   generateReadme,
   readmeUuid,
   deriveFolderModel,
+  deriveFolderAccounting,
+  buildFolderReadmeContext,
+  buildReadmeTypographyGraph,
   renderFolderReadme,
   folderReadmeUuid,
   listAtomPaths,
   type ReadmeModel,
 } from '@/readme'
+import { conserves } from '@/conservation'
 import { HORO_DIGITS, HORO_MEASURE } from '@/horo'
 
 const FIXED: ReadmeModel = {
@@ -107,26 +112,72 @@ describe('readme — the README is a diamond', () => {
   })
 })
 
-describe('readme — per-folder quantum accounting', () => {
+describe('readme — per-folder debit/credit statement', () => {
   it('deriveFolderModel is computed from the live tree', () => {
     const m = deriveFolderModel('readme')
     expect(m.atomPath).toBe('readme')
     expect(m.form).toBe(1)
     expect(m.code).toBe(1)
-    expect(m.accounting.length).toBeGreaterThan(0)
+    expect(m.statement.debits.length).toBeGreaterThan(0)
+    expect(m.statement.credits.length).toBeGreaterThan(0)
   })
 
-  it('renderFolderReadme is stable and contains accounting lines', () => {
+  it('deriveFolderAccounting uses [[conservation]] — balanced ⇔ Σdebit = Σcredit', () => {
+    const m = deriveFolderModel('readme')
+    const stmt = deriveFolderAccounting(m)
+    expect(stmt.totalDebits - stmt.totalCredits).toBe(stmt.variance)
+    const ledger = stmt.debits
+      .map((d) => ({ debit: d.amount, credit: 0 }))
+      .concat(stmt.credits.map((c) => ({ debit: 0, credit: c.amount })))
+    expect(stmt.balanced).toBe(conserves(ledger))
+    expect(stmt.debits.some((d) => d.account.includes('[[asset]]'))).toBe(true)
+    expect(stmt.credits.some((c) => c.account.includes('[[liability]]'))).toBe(true)
+  })
+
+  it('renderFolderReadme is stable and renders debit · credit table', () => {
     const m = deriveFolderModel('readme')
     const md = renderFolderReadme(m)
     expect(renderFolderReadme(m)).toBe(md)
-    expect(md).toContain('## quantum accounting')
-    expect(md).toContain('| trinity.form |')
+    expect(md).toContain('## [[debit]] · [[credit]]')
+    expect(md).toContain('| [[debit]] | [[credit]] |')
+    expect(md).toContain('[[asset]]/[[trinity]]/form')
+    expect(md).toContain('[[conservation]]')
     expect(md).toContain(folderReadmeUuid(m))
   })
 
   it('lists atom paths from SKILL.md walk', () => {
     expect(listAtomPaths().length).toBeGreaterThan(100)
     expect(listAtomPaths()).toContain('readme')
+  })
+
+  it('renderFolderReadme includes typography graph frame', () => {
+    const graph = buildReadmeTypographyGraph()
+    const ctx = buildFolderReadmeContext(join(process.cwd(), 'src'))
+    const m = deriveFolderModel('typography', process.cwd(), ctx, graph)
+    const md = renderFolderReadme(m)
+    expect(md).toContain('## typography graph')
+    expect(md).toContain('partition `typography`')
+    expect(m.typography.graphRoot).toMatch(/^[0-9a-f-]{36}$/)
+  })
+
+  it('sealed sample atom has balanced debit/credit journal', () => {
+    const graph = buildReadmeTypographyGraph()
+    const ctx = buildFolderReadmeContext(join(process.cwd(), 'src'))
+    const sealed = deriveFolderModel('typography', process.cwd(), ctx, graph)
+    if (!sealed.sealed) return
+    const stmt = sealed.statement
+    const ledger = stmt.debits
+      .map((d) => ({ debit: d.amount, credit: 0 }))
+      .concat(stmt.credits.map((c) => ({ debit: 0, credit: c.amount })))
+    expect(stmt.balanced).toBe(true)
+    expect(conserves(ledger)).toBe(true)
+    expect(stmt.totalDebits).toBe(stmt.totalCredits)
+  })
+
+  it('buildReadmeTypographyGraph merges wikilink and analysis edges', () => {
+    const g = buildReadmeTypographyGraph()
+    expect(g.wikilinkCount).toBeGreaterThan(100)
+    expect(g.analysisCount).toBeGreaterThan(0)
+    expect(g.organs.length).toBeGreaterThanOrEqual(8)
   })
 })

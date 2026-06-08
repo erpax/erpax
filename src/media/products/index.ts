@@ -1,6 +1,4 @@
-import { CallToAction } from '@/blocks'
-import { Content } from '@/blocks'
-import { MediaBlock } from '@/blocks'
+import { CallToAction, Content, MediaBlock } from '@/blocks/config'
 import { slugField } from 'payload'
 import type { PayloadRequest } from 'payload'
 import { generatePreviewPath } from '@/rfc/3986'

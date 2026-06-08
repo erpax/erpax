@@ -11,5 +11,6 @@
 export * from './afterChange'
 export * from './beforeChange'
 export * from './beforeValidate'
+export * from './recomputeInvoicePaid'
 // GL posting hook (dissolved from the former accounting/hooks slice).
 export * from './payment'

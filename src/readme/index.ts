@@ -40,7 +40,16 @@ import {
   backlinksOf,
 } from '@/uuid/matrix'
 import { HORO_DIGITS, HORO_MEASURE } from '@/horo'
-import { walkSkills, LINK_RE, stripCode } from '@/aura'
+import { walkSkills, LINK_RE, stripCode, crossSeals } from '@/aura'
+import { computeBoundary } from '@/quantum/boundary'
+import {
+  buildAnalysisTypographyGraph,
+  atomTypographyContext,
+  type AnalysisTypographyGraph,
+  type AtomImpuritySignals,
+  type SkillPage,
+} from '@/typography'
+import { conserves, trialBalance } from '@/conservation'
 
 /** One facet of the diamond: a position on the closed horo ring + the atoms riding it. */
 export interface RingFacet {
@@ -314,12 +323,29 @@ export function generateReadme(cwd: string = process.cwd()): string {
   return renderReadme(deriveModel(cwd))
 }
 
-/** One line of the quantum accounting statement — credit/debit/balance are computed counts. */
-export interface AccountingLine {
-  readonly facet: string
-  readonly credit: number
-  readonly debit: number
-  readonly balance: number
+/** One posting on the debit or credit side — account is an atom wikilink path. */
+export interface StatementLine {
+  readonly account: string
+  readonly amount: number
+}
+
+/** Double-entry statement — debits = assets/completeness, credits = liabilities/gaps. */
+export interface FolderAccounting {
+  readonly debits: readonly StatementLine[]
+  readonly credits: readonly StatementLine[]
+  readonly totalDebits: number
+  readonly totalCredits: number
+  readonly variance: number
+  readonly balanced: boolean
+}
+
+/** Typography frame for an atom — partition · analysis graph bonds. */
+export interface FolderTypographyFrame {
+  readonly partition: string
+  readonly partitionRoot: string
+  readonly bondDegree: number
+  readonly analysisNeighbors: readonly string[]
+  readonly graphRoot: string
 }
 
 /** Per-atom README model — 100% derived from the live tree (zero hand prose). */
@@ -337,8 +363,10 @@ export interface FolderReadmeModel {
   readonly folded: boolean
   readonly linksResolved: number
   readonly linksTotal: number
+  readonly escapes: number
+  readonly typography: FolderTypographyFrame
   readonly sealed: boolean
-  readonly accounting: readonly AccountingLine[]
+  readonly statement: FolderAccounting
 }
 
 const measureOf = (digit: number | null): string | null => {
@@ -361,6 +389,175 @@ export interface FolderReadmeContext {
   readonly folded: Set<string>
 }
 
+const sumAmounts = (lines: readonly StatementLine[]): number =>
+  lines.reduce((s, l) => s + l.amount, 0)
+
+const onHoroRing = (horo: number | null): boolean =>
+  horo !== null && HORO_DIGITS.includes(horo as (typeof HORO_DIGITS)[number])
+
+type FolderAccountingInput = Pick<
+  FolderReadmeModel,
+  | 'form'
+  | 'code'
+  | 'proof'
+  | 'folded'
+  | 'linksResolved'
+  | 'linksTotal'
+  | 'escapes'
+  | 'horo'
+  | 'uuid'
+  | 'bondsIn'
+  | 'bondsOut'
+  | 'typography'
+>
+
+/** Build debit/credit lines from completeness signals — pure, no fs. */
+function buildFolderAccounting(fields: FolderAccountingInput): FolderAccounting {
+  const debits: StatementLine[] = []
+  const credits: StatementLine[] = []
+  const post = (debitAccount: string, debit: number, creditAccount: string, credit: number): void => {
+    if (debit > 0) debits.push({ account: debitAccount, amount: debit })
+    if (credit > 0) credits.push({ account: creditAccount, amount: credit })
+  }
+  const codeRequired = fields.code ? 1 : 0
+  post('[[asset]]/[[trinity]]/form', fields.form, '[[liability]]/[[trinity]]/form', 1 - fields.form)
+  post('[[asset]]/[[trinity]]/code', fields.code, '[[liability]]/[[trinity]]/code', codeRequired - fields.code)
+  post(
+    '[[asset]]/[[trinity]]/proof',
+    fields.proof,
+    '[[liability]]/[[trinity]]/proof',
+    codeRequired - fields.proof,
+  )
+  post(
+    '[[asset]]/[[lattice]]/folded',
+    fields.folded ? 1 : 0,
+    '[[liability]]/[[lattice]]/unfolded',
+    fields.folded ? 0 : 1,
+  )
+  const linksSealed = fields.linksTotal === 0 || fields.linksResolved === fields.linksTotal
+  post(
+    '[[asset]]/[[links]]/resolved',
+    linksSealed ? 1 : fields.linksResolved,
+    '[[liability]]/[[links]]/dangling',
+    linksSealed ? 0 : fields.linksTotal - fields.linksResolved,
+  )
+  const ring = onHoroRing(fields.horo)
+  post('[[asset]]/[[horo]]/ring', ring ? 1 : 0, '[[liability]]/[[horo]]/off-ring', ring ? 0 : 1)
+  post(
+    '[[asset]]/[[identity]]/uuid',
+    fields.uuid ? 1 : 0,
+    '[[liability]]/[[identity]]/uuid',
+    fields.uuid ? 0 : 1,
+  )
+  post(
+    '[[asset]]/[[boundary]]/barrel',
+    fields.escapes === 0 ? 1 : 0,
+    '[[liability]]/[[boundary]]/escape',
+    fields.escapes,
+  )
+  post(
+    '[[asset]]/[[typography]]/partition',
+    fields.typography.partitionRoot ? 1 : 0,
+    '[[liability]]/[[typography]]/partition',
+    fields.typography.partitionRoot ? 0 : 1,
+  )
+  const bondDegree = fields.bondsIn + fields.bondsOut
+  post(
+    '[[asset]]/[[bonds]]/degree',
+    bondDegree,
+    '[[liability]]/[[bonds]]/isolated',
+    bondDegree > 0 ? 0 : 1,
+  )
+  post(
+    '[[asset]]/[[typography]]/neighbors',
+    fields.typography.analysisNeighbors.length,
+    '[[liability]]/[[typography]]/analysis-gap',
+    fields.typography.graphRoot ? 0 : 1,
+  )
+  const totalDebits = sumAmounts(debits)
+  const totalCredits = sumAmounts(credits)
+  const ledger = debits.map((d) => ({ debit: d.amount, credit: 0 })).concat(
+    credits.map((c) => ({ debit: 0, credit: c.amount })),
+  )
+  const variance = trialBalance(ledger)
+  return {
+    debits,
+    credits,
+    totalDebits,
+    totalCredits,
+    variance,
+    balanced: conserves(ledger),
+  }
+}
+
+/**
+ * Derive the debit/credit statement for a folder diamond.
+ * Debits = [[asset]] completeness; credits = [[liability]] gaps/impurities.
+ * Balanced ⇔ [[conservation]] conserves (Σdebit = Σcredit) ⇔ zero [[entropy]].
+ */
+export function deriveFolderAccounting(
+  input: FolderReadmeModel | string,
+  cwd: string = process.cwd(),
+  ctx?: FolderReadmeContext,
+): FolderAccounting {
+  if (typeof input === 'string') return deriveFolderModel(input, cwd, ctx).statement
+  return buildFolderAccounting(input)
+}
+
+/** Load every SKILL.md as a typography page (one corpus scan). */
+export function loadSkillPages(cwd: string = process.cwd()): SkillPage[] {
+  const srcRoot = join(cwd, SRC)
+  return walkSkills(srcRoot)
+    .map((sk) => ({
+      path: relative(srcRoot, dirname(sk)).replace(/\\/g, '/'),
+      text: readFileSync(sk, 'utf8'),
+    }))
+    .sort((a, b) => a.path.localeCompare(b.path))
+}
+
+/** Impurity signals for analysis-graph levers — derived from folder facts + boundary + crosses. */
+export function collectImpuritySignals(
+  cwd: string = process.cwd(),
+  ctx: FolderReadmeContext = buildFolderReadmeContext(join(cwd, SRC)),
+): Record<string, AtomImpuritySignals> {
+  const srcRoot = join(cwd, SRC)
+  const { unsealed } = crossSeals(srcRoot)
+  const unsealedBases = new Set(unsealed.map((c) => c.base))
+  const out: Record<string, AtomImpuritySignals> = {}
+  for (const atomPath of listAtomPaths(cwd)) {
+    const m = deriveFolderModel(atomPath, cwd, ctx)
+    const deadLinks = m.linksTotal - m.linksResolved
+    const sig: AtomImpuritySignals = {}
+    if (deadLinks > 0) sig.deadLinks = deadLinks
+    if (!m.sealed) {
+      let impurities = 0
+      if (m.code && (!m.form || !m.proof)) impurities++
+      if (!m.folded) impurities++
+      if (deadLinks > 0) impurities++
+      if (m.horo !== null && m.measure === String(m.horo)) impurities++
+      if (impurities > 0) sig.diamondImpurities = impurities
+    }
+    if (unsealedBases.has(m.leaf)) sig.unsealedCross = true
+    const barrel = join(srcRoot, atomPath, 'index.ts')
+    if (existsSync(barrel)) {
+      try {
+        const escapes = computeBoundary(barrel, srcRoot).escapes.length
+        if (escapes > 0) sig.escapes = escapes
+      } catch {
+        /* no boundary */
+      }
+    }
+    if (Object.keys(sig).length > 0) out[atomPath] = sig
+  }
+  return out
+}
+
+/** Build the unified typography graph once per readme materialize pass. */
+export function buildReadmeTypographyGraph(cwd: string = process.cwd()): AnalysisTypographyGraph {
+  const ctx = buildFolderReadmeContext(join(cwd, SRC))
+  return buildAnalysisTypographyGraph(loadSkillPages(cwd), collectImpuritySignals(cwd, ctx))
+}
+
 /** Build link resolver + fold ledger once per corpus scan. */
 export function buildFolderReadmeContext(srcRoot: string): FolderReadmeContext {
   const pathset = new Set<string>()
@@ -378,11 +575,32 @@ export function buildFolderReadmeContext(srcRoot: string): FolderReadmeContext {
   return { resolver, folded: foldedPathSet() }
 }
 
+const frameOf = (
+  graph: AnalysisTypographyGraph | undefined,
+  atomPath: string,
+  bondsIn: number,
+  bondsOut: number,
+): FolderTypographyFrame => {
+  if (!graph) {
+    const partition = atomPath.split('/')[0] ?? atomPath
+    return { partition, partitionRoot: '', bondDegree: bondsIn + bondsOut, analysisNeighbors: [], graphRoot: '' }
+  }
+  const ctx = atomTypographyContext(graph, atomPath, bondsIn, bondsOut)
+  return {
+    partition: ctx.partition,
+    partitionRoot: ctx.partitionRoot,
+    bondDegree: ctx.bondDegree,
+    analysisNeighbors: ctx.analysisNeighbors,
+    graphRoot: graph.root,
+  }
+}
+
 /** Derive the per-folder completeness model — impure (reads fs + matrix). */
 export function deriveFolderModel(
   atomPath: string,
   cwd: string = process.cwd(),
   ctx: FolderReadmeContext = buildFolderReadmeContext(join(cwd, SRC)),
+  graph?: AnalysisTypographyGraph,
 ): FolderReadmeModel {
   const dir = join(cwd, SRC, atomPath)
   const form = (existsSync(join(dir, 'SKILL.md')) ? 1 : 0) as 0 | 1
@@ -410,40 +628,46 @@ export function deriveFolderModel(
   } catch {
     /* no SKILL.md — links stay 0 */
   }
-  const codeRequired = code ? 1 : 0
-  const trinityCredit = form + code + proof
-  const trinityDebit = (code ? 3 : 1) - trinityCredit
-  const linkDebit = linksTotal - linksResolved
-  const accounting: AccountingLine[] = [
-    { facet: 'trinity.form', credit: form, debit: 1 - form, balance: 2 * form - 1 },
-    { facet: 'trinity.code', credit: code, debit: codeRequired - code, balance: code - (codeRequired - code) },
-    { facet: 'trinity.proof', credit: proof, debit: codeRequired - proof, balance: proof - (codeRequired - proof) },
-    { facet: 'lattice.folded', credit: folded ? 1 : 0, debit: folded ? 0 : 1, balance: folded ? 1 : -1 },
-    { facet: 'links.resolve', credit: linksResolved, debit: linkDebit, balance: linksResolved - linkDebit },
-    { facet: 'bonds.in', credit: bondsIn, debit: 0, balance: bondsIn },
-    { facet: 'bonds.out', credit: bondsOut, debit: 0, balance: bondsOut },
-  ]
+  let escapes = 0
+  const barrel = join(dir, 'index.ts')
+  if (existsSync(barrel)) {
+    try {
+      escapes = computeBoundary(barrel, join(cwd, SRC)).escapes.length
+    } catch {
+      escapes = 0
+    }
+  }
+  const typography = frameOf(graph, atomPath, bondsIn, bondsOut)
+  const fields: FolderAccountingInput = {
+    form,
+    code,
+    proof,
+    folded,
+    linksResolved,
+    linksTotal,
+    escapes,
+    horo,
+    uuid,
+    bondsIn,
+    bondsOut,
+    typography,
+  }
+  const statement = buildFolderAccounting(fields)
   const sealed =
     (!code || (form && code && proof)) &&
     folded &&
     linksResolved === linksTotal &&
-    (horo === null || HORO_DIGITS.includes(horo as (typeof HORO_DIGITS)[number]))
+    onHoroRing(horo) &&
+    uuid !== null &&
+    escapes === 0 &&
+    statement.balanced
   return {
     atomPath,
     leaf,
-    form,
-    code,
-    proof,
-    uuid,
-    horo,
+    ...fields,
     measure: measureOf(horo),
-    bondsIn,
-    bondsOut,
-    folded,
-    linksResolved,
-    linksTotal,
     sealed,
-    accounting,
+    statement,
   }
 }
 
@@ -452,25 +676,43 @@ export function folderReadmeUuid(model: FolderReadmeModel): string {
   return toUuid(Buffer.from(stableStringify(model), 'utf8'))
 }
 
+const fmtLine = (line: StatementLine | undefined): string =>
+  line ? `${line.account} \`${line.amount}\`` : ''
+
 /** Render folder README — pure; every token is a computed facet ([[diamond]] · [[purity]] · [[seal]]). */
 export function renderFolderReadme(model: FolderReadmeModel): string {
   const uuid = folderReadmeUuid(model)
+  const { statement } = model
+  const rows = Math.max(statement.debits.length, statement.credits.length)
   const L: string[] = [
-    '<!-- GENERATED by src/readme/index.ts — quantum accounting statement; do NOT edit by hand. -->',
+    '<!-- GENERATED by src/readme/index.ts — debit/credit statement; do NOT edit by hand. -->',
     '',
     `# ${model.leaf}`,
     '',
-    `> atom \`${model.atomPath}\` · horo \`${model.horo ?? '—'}\` \`${model.measure ?? '—'}\` · sealed \`${model.sealed ? 1 : 0}\``,
+    `> atom \`${model.atomPath}\` · horo \`${model.horo ?? '—'}\` \`${model.measure ?? '—'}\` · [[balance]] \`${statement.balanced ? 1 : 0}\` · [[seal]] \`${model.sealed ? 1 : 0}\``,
     '',
-    '## quantum accounting',
+    '## [[debit]] · [[credit]]',
     '',
-    '| facet | credit | debit | balance |',
-    '| ----- | -----: | ----: | ------: |',
+    '| [[debit]] | [[credit]] |',
+    '| -------- | --------- |',
   ]
-  for (const row of model.accounting) {
-    L.push(`| ${row.facet} | ${row.credit} | ${row.debit} | ${row.balance} |`)
+  for (let i = 0; i < rows; i++) {
+    L.push(`| ${fmtLine(statement.debits[i])} | ${fmtLine(statement.credits[i])} |`)
   }
   L.push(
+    `| Σ \`${statement.totalDebits}\` | Σ \`${statement.totalCredits}\` |`,
+    '',
+    `> [[balance]] \`${statement.variance}\` · [[conservation]] \`${statement.balanced ? 1 : 0}\` · [[entry]] · [[purity]]`,
+    '',
+    '## typography graph',
+    '',
+    `- partition \`${model.typography.partition}\` · sub-root \`${model.typography.partitionRoot || '—'}\``,
+    `- bond degree \`${model.typography.bondDegree}\` · analysis neighbors ${
+      model.typography.analysisNeighbors.length > 0
+        ? model.typography.analysisNeighbors.map((n) => `\`${n}\``).join(' · ')
+        : '—'
+    }`,
+    `- graph root \`${model.typography.graphRoot || '—'}\``,
     '',
     '## identity',
     '',
@@ -478,15 +720,23 @@ export function renderFolderReadme(model: FolderReadmeModel): string {
     `- bonds in \`${model.bondsIn}\` · out \`${model.bondsOut}\``,
     `- trinity form·code·proof \`${model.form}\`·\`${model.code}\`·\`${model.proof}\``,
     `- links \`${model.linksResolved}\` / \`${model.linksTotal}\``,
-    `- folded \`${model.folded ? 1 : 0}\``,
+    `- folded \`${model.folded ? 1 : 0}\` · escapes \`${model.escapes}\``,
     '',
-    '## seal',
+    '## typography graph',
+    '',
+    `- partition \`${model.typography.partition}\``,
+    `- partition root \`${model.typography.partitionRoot || '—'}\``,
+    `- bond degree \`${model.typography.bondDegree}\``,
+    `- analysis neighbors \`${model.typography.analysisNeighbors.length}\``,
+    `- graph root \`${model.typography.graphRoot || '—'}\``,
+    '',
+    '## [[seal]]',
     '',
     `- \`${model.sealed ? 'sealed' : 'unsealed'}\` — [[purity]] · [[seal]] · [[diamond]]`,
     '',
     '---',
     '',
-    `<sub>content-uuid \`${uuid}\` · \`pnpm readme\` · \`pnpm readme:check\`</sub>`,
+    `<sub>content-uuid \`${uuid}\` · framed by typography partition \`${model.typography.partition}\` bonds \`${model.typography.bondDegree}\` · \`pnpm readme\` · \`pnpm readme:check\`</sub>`,
     '',
   )
   return L.join('\n')
@@ -501,16 +751,18 @@ export function listAtomPaths(cwd: string = process.cwd()): string[] {
 }
 
 export function generateFolderReadme(atomPath: string, cwd: string = process.cwd()): string {
+  const graph = buildReadmeTypographyGraph(cwd)
   const ctx = buildFolderReadmeContext(join(cwd, SRC))
-  return renderFolderReadme(deriveFolderModel(atomPath, cwd, ctx))
+  return renderFolderReadme(deriveFolderModel(atomPath, cwd, ctx, graph))
 }
 
 /** Write README.md in every atom folder; returns count written. */
 export function materializeFolderReadmes(cwd: string = process.cwd()): number {
+  const graph = buildReadmeTypographyGraph(cwd)
   const ctx = buildFolderReadmeContext(join(cwd, SRC))
   let n = 0
   for (const atomPath of listAtomPaths(cwd)) {
-    const body = renderFolderReadme(deriveFolderModel(atomPath, cwd, ctx))
+    const body = renderFolderReadme(deriveFolderModel(atomPath, cwd, ctx, graph))
     writeFileSync(join(cwd, SRC, atomPath, 'README.md'), body)
     n++
   }
@@ -518,10 +770,11 @@ export function materializeFolderReadmes(cwd: string = process.cwd()): number {
 }
 
 export function verifyFolderReadmes(cwd: string = process.cwd()): { ok: boolean; drift: string[] } {
+  const graph = buildReadmeTypographyGraph(cwd)
   const ctx = buildFolderReadmeContext(join(cwd, SRC))
   const drift: string[] = []
   for (const atomPath of listAtomPaths(cwd)) {
-    const expected = renderFolderReadme(deriveFolderModel(atomPath, cwd, ctx))
+    const expected = renderFolderReadme(deriveFolderModel(atomPath, cwd, ctx, graph))
     const path = join(cwd, SRC, atomPath, 'README.md')
     let actual = ''
     try {

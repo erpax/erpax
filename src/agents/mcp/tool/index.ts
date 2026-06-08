@@ -14,6 +14,12 @@
  *
  * @standard ISO/IEC 25010:2023 §5.7 modularity
  */
+export {
+  assertAdminOnTenant,
+  assertTenantMatch,
+  wrapToolsWithTenantGuard,
+  type WrappableTool,
+} from './_guards'
 export { buildConsistencyTools } from './consistency'
 export { buildEventsTools } from './events'
 export { buildCloudflareTools } from './cloudflare'

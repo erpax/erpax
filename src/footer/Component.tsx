@@ -5,7 +5,7 @@ import { Link } from '@/i18n/routing'
 import React from 'react'
 
 import { ThemeSelector } from '@/providers/theme/theme/selector'
-import { CMSLink } from '@/link'
+import { CMSLink } from '@/link/component'
 import { Logo } from '@/logo'
 
 export async function Footer({ locale }: { locale: SupportedLocale }) {

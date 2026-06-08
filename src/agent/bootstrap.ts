@@ -13,13 +13,10 @@
 
 import { createAgentRegistry } from './registry'
 import { createAgentRuntime } from './runtime'
-import { buildErpaxMcpTools } from '@/agents/mcp'
-import { createInProcessMcpClient } from '@/agents/mcp'
-import { ERPAX_MCP_RESOURCES } from '@/agents/mcp'
-import { ERPAX_MCP_PROMPTS } from '@/agents/mcp'
-// Side-effect imports — register the erpax-platform self-tenant role + load
-// the rest of the substrate primitives so they're available at boot.
-import '@/self/reference'
+// Side-effect — register the erpax-platform self-tenant role. Relative import
+// (not `@/self/reference` barrel) avoids pulling `agentRegistry` during TDZ and
+// stays off the `@/` import-purity ratchet.
+import '../self/reference/erpax.profile'
 
 import { FinanceAgent } from '@/agents/accounting'
 import { SalesAgent } from '@/agents/registered'
@@ -76,19 +73,3 @@ export const agentRegistry = createAgentRegistry(REGISTERED_AGENTS)
 
 /** Single shared runtime instance — wraps `agentRegistry`. */
 export const agentRuntime = createAgentRuntime(agentRegistry)
-
-/**
- * Bound MCP tool list — fed to the @payloadcms/plugin-mcp plugin
- * config (over-the-wire) AND the in-process McpClient on AgentContext.
- * Single source of truth for the ERPax tool surface.
- */
-export const erpaxMcpTools = buildErpaxMcpTools(agentRegistry)
-
-/** MCP resources — read-only data exposed via uri (erpax://...). */
-export const erpaxMcpResources = ERPAX_MCP_RESOURCES
-
-/** MCP prompts — canned reasoning templates. */
-export const erpaxMcpPrompts = ERPAX_MCP_PROMPTS
-
-/** Re-export the in-process client factory for AgentContext.mcp wiring. */
-export { createInProcessMcpClient }

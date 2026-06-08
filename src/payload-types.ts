@@ -7059,6 +7059,8 @@ export interface Shipment {
 /**
  * Customer-side order register (O2C). Distinct from purchase-orders (P2P). UN-EDIFACT ORDERS d96a + UBL-2.1 Order + Peppol BIS-3.0 Order. IFRS-15 §10 contract-with-customer feed.
  *
+ * — diamond-uuid: 154f727a-568d-8ca4-a2e5-e124b331a01a
+ *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "sales-orders".
  */
@@ -8087,6 +8089,8 @@ export interface Property {
   createdAt: string;
 }
 /**
+ * diamond-uuid: bb5230a4-d513-89bd-97bb-66b8cd32535e
+ *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "fixed-assets".
  */
@@ -13532,6 +13536,8 @@ export interface LeasePeriodPosting {
 /**
  * Vacation / sick / parental / unpaid leave register. Approved requests decrement entitlement balance + feed IAS-19 accrual.
  *
+ * — diamond-uuid: 2b5d8003-f52b-89f4-9678-6e90e688fabd
+ *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "leave-requests".
  */
@@ -14677,6 +14683,8 @@ export interface ManagementCertification {
 /**
  * Localized + tenant-extensible metadata overlay for every registered erpax.* MCP tool. Translators fill description.<locale> via the admin UI; the catalog overlays the row's values at request time.
  *
+ * — diamond-uuid: 207df9ef-db52-82ab-aeeb-5e6c859697a9
+ *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "mcp-tool-metadata".
  */
@@ -14762,6 +14770,8 @@ export interface McpToolMetadatum {
 }
 /**
  * Generic persistence layer for MCP tools + DomainAgent in-memory state: fix proposals, strategy decisions, drift-cycle snapshots, agent observations, emerging gaps. Every row is content-uuid'd (Law 8) and can declare relatedTo edges (Law 10).
+ *
+ * — diamond-uuid: 2222b4c2-6f03-8149-8c96-9437b441020c
  *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "memories".
@@ -17762,6 +17772,8 @@ export interface Share {
 /**
  * Live registry of every cited published standard (IFRS / ISO / W3C / RFC / Directive / etc.) + per-tenant citation graph. Backs the erpax.standards.* MCP family with persistent storage. Standards-as-vortices (Law 27) + supersession trail (Law 28).
  *
+ * — diamond-uuid: 9c84941f-ef65-81ec-85d8-2d7ce0adecec
+ *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "standards".
  */
@@ -18655,6 +18667,8 @@ export interface TransferPricingFile {
 }
 /**
  * Per-tenant override layer above the platform-default localizations. Resolution order: tenant translation > mcp-tool-metadata > code default. Edit value.<locale> via admin UI; runtime resolver picks it up automatically (Payload i18n).
+ *
+ * — diamond-uuid: 83873b7f-adfe-8467-b870-171264a7fcdf
  *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "translations".

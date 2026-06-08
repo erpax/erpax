@@ -9,10 +9,10 @@
 
 import type { ArrayField, Field } from 'payload'
 
-import type { LinkAppearances } from './field'
+import type { LinkAppearances } from '../field'
 
 import deepMerge from '@/deep/merge'
-import { link } from './field'
+import { link } from '../field'
 
 type LinkGroupType = (options?: {
   appearances?: LinkAppearances[] | false

@@ -14,7 +14,7 @@
 # @standard ISO-25010:2023 quality-model maintainability automation
 cd "$(dirname "$0")/.." || exit 1
 export PATH="$PWD/node_modules/.bin:$PATH"
-export NODE_OPTIONS=--no-deprecation
+export NODE_OPTIONS="--no-deprecation --import=./src/css/load-hook.mjs"
 set -e
 
 staged=$(git diff --cached --name-only --diff-filter=ACMR)

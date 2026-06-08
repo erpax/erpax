@@ -20,7 +20,7 @@ import React, { cache } from 'react'
 import { homeStatic } from '@/seed'
 
 import { RenderBlocks } from '@/block'
-import { RenderHero } from '@/hero'
+import { RenderHero } from '@/hero/render'
 import { generateMeta } from '@/generate/meta'
 import PageClient from './page.client'
 import { LivePreviewListener } from '@/live/preview/listener'

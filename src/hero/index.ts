@@ -1,2 +1,2 @@
-/** hero — page hero renderer barrel. */
-export { RenderHero } from './RenderHero'
+/** hero — page hero field config (server-safe; no client renderer on this face). */
+export { hero } from './config'

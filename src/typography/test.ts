@@ -8,6 +8,9 @@ import {
   typographyGuardian,
   TYPOGRAPHY_BASELINE,
   buildIndex,
+  buildAnalysisTypographyGraph,
+  atomTypographyContext,
+  ANALYSIS_ORGANS,
   partitionByFolder,
   partitionRoot,
   titleOf,
@@ -122,6 +125,38 @@ describe('typography — the self-computing navigational + search INDEX', () => 
     expect(e.headings).toEqual(['Atom', 'Uses'])
     expect(e.links).toEqual(['seal'])
     expect(e.terms).toContain('irreducible')
+  })
+})
+
+describe('typography — analysis ⊕ quantum unified graph', () => {
+  const pages = [
+    clean('analytics', '# a\n\n[[purity]] · [[aura]]\n'),
+    clean('purity', '# p\n\n[[seal]]\n'),
+    clean('aura', '# u\n\n[[diamond]]\n'),
+  ]
+
+  it('buildAnalysisTypographyGraph is DETERMINISTIC', () => {
+    const a = buildAnalysisTypographyGraph(pages)
+    const b = buildAnalysisTypographyGraph(pages)
+    expect(b).toEqual(a)
+    expect(b.root).toMatch(/^[0-9a-f-]{36}$/)
+  })
+
+  it('wires analysis organs as first-class vertices', () => {
+    const g = buildAnalysisTypographyGraph(pages)
+    for (const o of ANALYSIS_ORGANS) expect(g.vertices).toContain(o)
+    expect(g.analysisCount).toBeGreaterThan(0)
+    expect(g.wikilinkCount).toBeGreaterThan(0)
+  })
+
+  it('atomTypographyContext frames partition and neighbors', () => {
+    const g = buildAnalysisTypographyGraph(pages, {
+      analytics: { diamondImpurities: 1 },
+    })
+    const ctx = atomTypographyContext(g, 'analytics', 1, 2)
+    expect(ctx.partition).toBe('analytics')
+    expect(ctx.bondDegree).toBeGreaterThan(0)
+    expect(ctx.analysisNeighbors.some((n) => n.includes('purity') || n.includes('diamond'))).toBe(true)
   })
 })
 

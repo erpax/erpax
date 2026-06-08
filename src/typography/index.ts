@@ -260,6 +260,21 @@ export function partitionByFolder(index: TypographyIndex, depth = 1): Record<str
 /** The content-address (sub-root) of one folder partition — fold of its entry uuids. */
 export const partitionRoot = (entries: readonly TypographyEntry[]): string => indexRoot(entries.map((e) => e.uuid))
 
+// ───────────────────────── analysis ⊕ quantum unified graph ─────────────────────────
+
+export {
+  ANALYSIS_ORGANS,
+  buildAnalysisTypographyGraph,
+  atomTypographyContext,
+  analysisGraphEdgeRoot,
+  type AnalysisOrgan,
+  type AnalysisEdgeKind,
+  type AnalysisTypographyEdge,
+  type AnalysisTypographyGraph,
+  type AtomImpuritySignals,
+  type AtomTypographyContext,
+} from './analysis-graph'
+
 // ───────────────────────── thin CLI (the live tree → verdict + root) ─────────────────────────
 
 if (import.meta.url === 'file://' + process.argv[1]) {

@@ -4,7 +4,7 @@ import RichText from '@/rich/text'
 
 import type { ContentBlock as ContentBlockProps } from '@/types'
 
-import { CMSLink } from '@/link'
+import { CMSLink } from '@/link/component'
 
 export const ContentBlock: React.FC<ContentBlockProps> = (props) => {
   const { columns } = props

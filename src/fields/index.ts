@@ -9,7 +9,7 @@
  */
 
 // Shared fields (used everywhere)
-export * from '@/shared/field'
+export * from '../shared/field'
 
 // Domain-specific named exports
 export { createInvoiceNumberField, createInvoiceStatusField, createDueDateField, createPaymentTermsField, createARAnalysisFields } from '@/receivable'

@@ -9,3 +9,5 @@
  */
 
 export * from './beforeValidate'
+export * from './recomputeInvoiceTotals'
+export * from './recomputeItemInventory'

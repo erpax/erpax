@@ -291,11 +291,18 @@ function resolveCorpusSelfProof(): CorpusSelfProof | undefined {
  * tool validates `targetCollection` against this set so an arbitrary slug can
  * never reach `payload.create` (fail-closed; tenant-isolation guard).
  */
-const KNOWN_COLLECTION_SLUGS: ReadonlySet<string> = new Set(
-  (Object.values(allCollections) as Array<{ slug?: unknown }>)
-    .map((c) => c.slug)
-    .filter((s): s is string => typeof s === 'string'),
-)
+let knownCollectionSlugsCache: ReadonlySet<string> | undefined
+/** Lazy — `tool-defs` and `@/collections` share an import cycle; top-level `Object.values` ran before every re-export finished. */
+function knownCollectionSlugs(): ReadonlySet<string> {
+  if (!knownCollectionSlugsCache) {
+    knownCollectionSlugsCache = new Set(
+      (Object.values(allCollections) as Array<{ slug?: unknown }>)
+        .map((c) => c.slug)
+        .filter((s): s is string => typeof s === 'string'),
+    )
+  }
+  return knownCollectionSlugsCache
+}
 
 /**
  * Derive the caller's OWN footprint: fan the computed identity-bindings (schema-derived)
@@ -1039,7 +1046,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
         // FAIL-CLOSED: never let an arbitrary slug reach payload.create — validate
         // against the computed known-collection set before enqueue (tenant guard).
         const targetCollection = args.targetCollection as string
-        if (!KNOWN_COLLECTION_SLUGS.has(targetCollection)) {
+        if (!knownCollectionSlugs().has(targetCollection)) {
           return json({ ok: false, reason: `unknown targetCollection '${targetCollection}'` })
         }
         const result = await enqueueBulkOperation(

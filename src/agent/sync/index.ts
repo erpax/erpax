@@ -177,3 +177,5 @@ export * from './discovery'
 export * from './payload-chat'
 // The broadcast — a new chat row dispatches its embedded event into the runtime.
 export * from './chat-broadcast'
+// Training lifecycle — job-positions afterChange fans out to the agent room.
+export * from './training-broadcast'

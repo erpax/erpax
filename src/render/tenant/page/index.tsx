@@ -1,7 +1,7 @@
 import type { Page } from '@/types'
 
 import { RenderBlocks } from '@/block'
-import { RenderHero } from '@/hero'
+import { RenderHero } from '@/hero/render'
 
 /** Public tenant route renderer (matches `(frontend)/[slug]` article layout). */
 export function RenderTenantPage({ data }: { data: Page }) {

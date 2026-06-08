@@ -2,6 +2,7 @@
  * agent — the one accountable object, barrel of all its facets.
  */
 export * from './service'
+export { createAgentContext } from './context'
 
 export type {
   AgentId, DomainAgent, AgentContext, AgentEffect,
@@ -23,5 +24,6 @@ export { ERPAX_MCP_RESOURCES } from '@/agents/mcp'
 export type { ErpaxMcpPrompt } from '@/agents/mcp'
 export { ERPAX_MCP_PROMPTS } from '@/agents/mcp'
 
-export { agentRegistry, agentRuntime, erpaxMcpTools, erpaxMcpResources, erpaxMcpPrompts } from './bootstrap'
+export { agentRegistry, agentRuntime } from './bootstrap'
+export { erpaxMcpTools, erpaxMcpResources, erpaxMcpPrompts } from './mcp-surface'
 export { manifestOf, buildBlockCatalog, composeBlocks, validateComposition, chainBlocks, checkRegistryCoupling, chainsAsBlockCompositions } from './blocks'

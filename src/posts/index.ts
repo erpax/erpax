@@ -13,7 +13,7 @@ import { createMembershipAdminMutateAccess } from '@/membership/admin/mutate/acc
 import { tenantScopedPostsReadAccess } from '@/tenant/scoped/read'
 import { documentPreviewAdmin } from '@/shareds'
 import { defaultVersionedDrafts } from '@/shareds'
-import { Banner, Code, MediaBlockPayload as MediaBlock } from '@/blocks'
+import { Banner, Code, MediaBlock } from '@/blocks/config'
 import { ensureUniqueSlugWithinTenant } from '@/ensure/unique/slug/within/tenant'
 import { postsBeforeChange } from '@/posts/hooks'
 import { populateAuthors } from '@/posts/hooks'

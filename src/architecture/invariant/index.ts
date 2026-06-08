@@ -38,6 +38,28 @@ export type {
 } from './types'
 
 export { runInvariantsAtBoot } from './onInit'
+export {
+  TRINITY,
+  rollUpToTrinity,
+  trinityForPriorLaw,
+  trinityGrouping,
+  type TrinityDimension,
+  type TrinityGrouping,
+  type TrinityLaw,
+  type TrinityLawDescriptor,
+  type TrinityVerdict,
+} from './trinity'
+export {
+  LAW_CATALOG,
+  buildAgentLawProfile,
+  buildAllAgentLawProfiles,
+  checkAgentLawCoverage,
+  inferEmittedEffectKinds,
+  type AgentLawCoverageResult,
+  type AgentLawProfile,
+  type LawCategory,
+  type LawDescriptor,
+} from './by-agent'
 
 /** Run all invariants. Skips axes listed in `ctx.skipAxes`. */
 export async function runAllInvariants(

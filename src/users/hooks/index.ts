@@ -9,4 +9,5 @@
  */
 
 export * from './ensureUniqueUsername'
+export * from './firstUserSuperAdmin'
 export * from './setCookieBasedOnDomain'

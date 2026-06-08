@@ -146,7 +146,14 @@ export function folderViolations(root: string = SRC): FolderViolations {
  * violation) is still among the 261: the gate keeps it red until it is relocated to
  * the one-word src/trading/api. RATCHET THIS DOWN further as folders are fixed.
  */
+/** @deprecated summed ceiling — use the split guardians below */
 export const FOLDER_LAW_BASELINE = 261
+
+/** NAME guardian ceiling — one-word atom folders (live 49, 2026-06-08). */
+export const NAME_BASELINE = 49
+
+/** TRINITY guardian ceiling — code folders missing SKILL/index/test (live 216, 2026-06-08). */
+export const TRINITY_BASELINE = 216
 
 export interface RatchetVerdict {
   readonly ok: boolean

@@ -319,3 +319,12 @@ export const Tenants: CollectionConfig = {
     },
   ],
 }
+
+export {
+  GLOBAL_SPINE,
+  PLUGIN_TENANT_SLUGS,
+  TENANT_GLOBAL,
+  TENANT_PARTY_SCOPED,
+  tenantCollectionsConfig,
+  tenantScopedSlugs,
+} from './scope'

@@ -35,3 +35,17 @@ export type {
 
 // The trend / ratio analysis engine (the analytics cards + trend widget compose it).
 export { FinancialAnalysisEngine } from './financial-analysis'
+
+// Debit/credit lattice — journal hooks and reconciliation services reach the face, not the leaf.
+export {
+  AccountingEntryBuilder,
+  AccountQueries,
+  DebitCreditLogic,
+  StandardTransactions,
+} from './debit-credit'
+export type {
+  AccountType,
+  DebitCreditRule,
+  JournalEntryLine,
+  ValidatedEntry,
+} from './debit-credit'

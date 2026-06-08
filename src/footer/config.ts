@@ -11,7 +11,7 @@
 
 import type { GlobalConfig } from 'payload'
 
-import { link } from '@/link'
+import { link } from '@/link/field'
 import { localeRecord } from '@/i18n'
 import { revalidateFooter } from './hook/revalidateFooter'
 
