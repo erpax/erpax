@@ -2,6 +2,12 @@ declare global {
   namespace NodeJS {
     interface ProcessEnv {
       PAYLOAD_SECRET: string
+      /** Bootstrap key for sealed secrets at rest (hex or base64). See src/secret/SKILL.md. */
+      ERPAX_SEAL_KEY?: string
+      /** Sealed PAYLOAD_SECRET blob (JSON) or path to sealed file. */
+      PAYLOAD_SECRET_SEALED?: string
+      /** Optional JSON identity descriptor for sealed PAYLOAD_SECRET ceremony. */
+      PAYLOAD_SECRET_IDENTITY_JSON?: string
       /** Canonical site URL; when omitted, URL derives from request Host (and tenant `publicSiteUrl`). */
       NEXT_PUBLIC_SERVER_URL?: string
       /** Slug of the tenant whose pages power root `(frontend)/[slug]` URLs */

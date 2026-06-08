@@ -68,6 +68,7 @@ import {
   deriveSecretFromPayloadSecret,
   internalSecretPurpose,
 } from '@/nist/sp/800/108'
+import { resolvePayloadSecret } from '@/secret'
 import { getServerSideURL } from '@/rfc/3986'
 import { getUserTenantIDs } from '@/get/user/tenant/i/ds'
 import { tenantAwareResendEmailAdapter } from '@/email/tenantAwareResendEmailAdapter'
@@ -102,10 +103,11 @@ const isProduction = process.env.NODE_ENV === 'production'
 // runtime with an empty / zero-entropy secret (a silent KDF-defeating fallback).
 // Build & CLI phases carry no runtime secrets, so an inert placeholder is tolerated
 // there only — it is never used for any cryptographic operation.
-const payloadSecret = process.env.PAYLOAD_SECRET
+const payloadSecret = resolvePayloadSecret()
 if (!payloadSecret && !isCLI && process.env.NEXT_PHASE !== PHASE_PRODUCTION_BUILD) {
   throw new Error(
-    'PAYLOAD_SECRET is required and must not be empty. Generate one with: openssl rand -hex 32',
+    'PAYLOAD_SECRET is required and must not be empty. Set PAYLOAD_SECRET in .env, or seal it ' +
+      '(PAYLOAD_SECRET_SEALED + ERPAX_SEAL_KEY — see src/secret/SKILL.md). Generate: openssl rand -hex 32',
   )
 }
 
