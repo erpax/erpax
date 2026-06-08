@@ -2,34 +2,142 @@
 
 # import
 
-> atom `quantum/import` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `quantum/import` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
+
+> account code `quantum/import` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
+| [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
 | [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
 | [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
 | [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
 | [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
-| Σ `7` | Σ `7` |
+| Σ `9` | Σ `9` |
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `explore:aura`
+- `explore:quantum/boundary`
+- `explore:tamper/import`
+
+### collapse
+
+- `balance:conserved`
+- `law:quantum computed import — entanglement with atom barrels only, derived from live source, never hand-drawn; deep imports are escapes that must collapse to `@/x`.`
+- `seal:sealed`
+- `trigger:Use when reasoning about quantum computed import — barrel entanglement derived from each file's live import/wikilink set, never hand-annotated; deep paths are escapes that collapse to @/x.`
+- `trigger:import set = parseTsImports / parseSkillImports — computed live`
+- `trigger:quantum computed import — entanglement with atom barrels only, derived from live source, never hand-drawn; deep imports are escapes that must collapse to `@/x`.`
+- `trigger:the import graph is the config — barrels are the only public faces`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `1`
+- entry uuids `845a9ef9-650e-8120-a5fb-b3aca16d4686`
+- content uuids `7ee018b6-c6db-82fa-a771-3986e2fc95db` · `8398ef95-1ecf-8f12-83d6-1ee0182facb9`
+
+## [[entropy]] — gaps · seals
+
+> account code `quantum/import` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+|  | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.1` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[diamond]]/sealed `1.585` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `0` eb | Σ seal `12.685` eb |
+
+> net residual `-12.685` eb · seal/gap ratio `1` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `quantum` · sub-root `539df73c-956d-8aae-b36f-47cf0d3aaff7`
-- bond degree `60` · analysis neighbors `aura` · `quantum/boundary` · `tamper/import`
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- partition `quantum` · sub-root `4bd9112d-9a3f-8146-bb6c-413c226a9d24`
+- bond degree `40` · analysis neighbors `aura` · `quantum/boundary` · `tamper/import`
+- graph root `cb2d7c04-e361-8701-b4c0-f4ef248a4fa5`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `the import graph is the config — barrels are the only public faces` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·1 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `40` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `1`
 
 ## identity
 
-- uuid `c34cceb3-27b2-85b2-882e-8e29e097983a`
-- bonds in `14` · out `20`
-- trinity form·code·proof `1`·`0`·`0`
+- uuid `7ee018b6-c6db-82fa-a771-3986e2fc95db`
+- bonds in `7` · out `7`
+- trinity form·code·proof `1`·`1`·`1`
 - links `12` / `12`
 - folded `1` · escapes `0`
 
@@ -39,4 +147,4 @@
 
 ---
 
-<sub>content-uuid `fd819b14-26c8-81f0-affe-33ceeaa9e94c` · framed by typography partition `quantum` bonds `60` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `03fc719e-faaf-8f4b-9b84-9a60b24c75cf` · framed by typography partition `quantum` bonds `40` · `pnpm readme` · `pnpm readme:check`</sub>

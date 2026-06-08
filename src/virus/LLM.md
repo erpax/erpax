@@ -3,15 +3,15 @@
 
 # virus
 
-path `virus` · uuid `f6709678-4dad-81f4-a057-bde31ebb29a5` · diamond `02a52acc-8371-814c-8cca-0c291b03f566`
+path `virus` · uuid `f6709678-4dad-81f4-a057-bde31ebb29a5` · diamond `719ff51a-5f23-87fc-a89c-dc3a6f8d76f2`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports virus · escapes —
-links `4/4` · folded `1` · bonds in `18` out `18`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → angel·aura·breakfast·catalogue·deduplication·drive·dropoff·entertainment·game·handling·landmarks·marine·marry·memories·pats·sell·symbol·tax · ← angel·aura·breakfast·catalogue·deduplication·drive·dropoff·entertainment·game·handling·landmarks·marine·marry·memories·pats·sell·symbol·tax
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law virus is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `8ab89c76-4f3d-8497-ab64-47daca9eadc6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2cf58334-0eb7-8ae4-885a-6a1259a2eadb` · `pnpm readme` · `pnpm computed:check`</sub>

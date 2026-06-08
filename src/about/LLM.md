@@ -3,7 +3,7 @@
 
 # about
 
-path `about` · uuid `bcce305e-e515-8cae-bfa2-5baeda4c3f31` · diamond `24a46530-8540-8fb3-9a94-b506d543735f`
+path `about` · uuid `995d7d7c-830d-8db0-883c-ab8c13ae4e3c` · diamond `ebf73969-c7fa-8ce7-91d9-01889f87aa06`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports knows·law·observation·page · exports about · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
@@ -14,4 +14,4 @@ law about is one schema.org word, content-addressed; the same word collides ever
 
 ---
 
-<sub>content-uuid `131d7aca-73c8-87f6-9aa7-e856a8658f7e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `09f5ed0d-d8c3-85d2-9cf7-c180d2389712` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -36,6 +36,8 @@ export function ratchetContentUuid(axes: Readonly<Partial<Record<RatchetAxis, nu
 export type RecomputeRatchetOpts = {
   /** When true, set each axis to mathCeiling(live) — bootstrap from live math. */
   readonly bootstrap?: boolean
+  /** Precomputed live counts — avoids double-scan drift in regression tests. */
+  readonly live?: Readonly<Record<RatchetAxis, number>>
 }
 
 /** Recompute committed ceilings from live scans + DOWN-only ratchet vs prior emit. */
@@ -44,7 +46,7 @@ export function recomputeRatchetSnapshot(
   prior: Readonly<Partial<Record<RatchetAxis, number>>> = RATCHET_GENERATED.axes,
   opts?: RecomputeRatchetOpts,
 ): RatchetSnapshot {
-  const live = liveViolationCounts(cwd)
+  const live = opts?.live ?? liveViolationCounts(cwd)
   const axes: Partial<Record<RatchetAxis, number>> = {}
   for (const axis of RATCHET_AXES) {
     axes[axis] = opts?.bootstrap

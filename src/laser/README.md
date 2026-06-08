@@ -23,7 +23,21 @@
 
 - partition `laser` · sub-root `5dec0a24-0dc2-8995-91ea-2c6ff88f68c8`
 - bond degree `12` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `12` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `52ed0824-553a-853e-ac60-7fdd502e2768` · framed by typography partition `laser` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e8c1dd6d-0b54-8f49-94ac-abe024d3bfc4` · framed by typography partition `laser` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

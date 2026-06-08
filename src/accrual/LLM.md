@@ -3,8 +3,8 @@
 
 # accrual
 
-path `accrual` · uuid `66e37f7c-b9d2-8153-a80d-1f65f135c4f0` · diamond `fe2e65ee-8d73-84df-96fe-6b45ac3806ec`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `accrual` · uuid `c92e1a91-db2e-8fb8-9b4f-4be8434a9cfc` · diamond `dcd952f7-d415-8637-b63e-4839cd6d676b`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports balance·fiscal·gl·journal · exports accrual · escapes —
 links `5/5` · folded `1` · bonds in `12` out `12`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `b2349406-cfe5-874c-8462-4b01fdd29a8f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7c64827c-3947-87ab-aa1e-6bbca2a2b0e4` · `pnpm readme` · `pnpm computed:check`</sub>

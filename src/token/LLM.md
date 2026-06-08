@@ -8,10 +8,10 @@ horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports component·design·law·standard·theme · exports token · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat·statistic · ← cohort·landmarks·memories·stat·statistic
+neighbors → component·design·law·standard·theme · ← component·design·law·standard·theme
 analysis —
 law a token is one named semantic design decision defined in exactly one place and referenced everywhere — never a duplicated literal value.
 
 ---
 
-<sub>content-uuid `735c4143-ed8c-8a97-b0ea-906b4b859ec5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1876b5f8-e2d1-8722-b2bb-979fc270d08b` · `pnpm readme` · `pnpm computed:check`</sub>

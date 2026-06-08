@@ -3,8 +3,8 @@
 
 # dentist
 
-path `dentist` · uuid `f381adf9-8f30-81f4-a064-64ecfd5d664e` · diamond `12592783-f560-80c9-8778-63847c7487ca`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `dentist` · uuid `11d4eca6-a58c-8de6-8a2d-455908eabdb7` · diamond `b62463e6-273c-8253-9d8b-f4ad2f4261aa`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports law·person · exports dentist · escapes —
 links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law dentist is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `3f3f52b8-b2fd-829d-b0a4-e7866ffd214b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8d94ee36-9d22-8ca7-957e-4465cb5ef20d` · `pnpm readme` · `pnpm computed:check`</sub>

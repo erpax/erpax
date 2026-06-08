@@ -3,15 +3,15 @@
 
 # vitepress
 
-path `vitepress` · uuid `f426f668-922b-8d87-ab22-5134835d9529` · diamond `56ee6089-cc8e-88d4-8731-2a3841ecd65f`
+path `vitepress` · uuid `f426f668-922b-8d87-ab22-5134835d9529` · diamond `553a1e84-40d4-82c6-b2c7-126c360e22eb`
 horo `2` `share` · trinity `1·1·1` · sealed `1`
-imports @/pixel·@/uuid/matrix · exports const·function·interface · escapes —
-links `22/22` · folded `1` · bonds in `8` out `8`
+imports @/navigation·@/pixel·@/uuid/matrix · exports NavGroup·NavManifestEntry·PathNavMeta·adminGroupOf·const·function·interface·navManifestFromPaths·navigationGroupsFromPaths·pathNavMeta·routeOfPath·topNavAnchorsFromSequence · escapes —
+links `22/22` · folded `1` · bonds in `25` out `25`
 faces worker·plugin·pwa `0·1·0`
-neighbors → dunning·income·lend·mass·professional·related·scale·segments · ← dunning·income·lend·mass·professional·related·scale·segments
+neighbors → config·diamond·duality·gate·identity·invariant·law·mcp·merge·path·payload·pixel·plugin·refactor·seo·sequence·skills·speech·stack·testing·types·typography·ui·unavoidable·zeropoint · ← config·diamond·duality·gate·identity·invariant·law·mcp·merge·path·payload·pixel·plugin·refactor·seo·sequence·skills·speech·stack·testing·types·typography·ui·unavoidable·zeropoint
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `a544ee9e-82b8-8911-9ab7-57ea44400cf6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2abcde6a-b1d1-8b7c-b136-d73f6d136805` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,8 +3,8 @@
 
 # correlation
 
-path `correlation` · uuid `fd2c7336-1c8c-86b8-a7a9-d0a940bf4188` · diamond `e7454c2a-763c-8526-82cd-44eeec73506b`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `correlation` · uuid `0b4cf3c6-ad37-8b4c-998a-7c2b85bd05c1` · diamond `a8491f9c-71e6-892a-8339-d9804c4152c2`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports calculate·law · exports correlation · escapes —
 links `3/3` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law correlation measures a variable relationship, never asserts cause — spurio
 
 ---
 
-<sub>content-uuid `d2bae8b3-6a72-8bfa-a646-b799dc578d8f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0d9d80f0-a6f7-85b2-a0cc-d0f165af32f4` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -1,8 +1,65 @@
 ---
 name: contractual
-description: Use when reasoning about contractual as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.
+description: "Use when reasoning about contractual as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
+atomPath: contractual
+coordinate: contractual · 1/base · 8290ca36
+contentUuid: "985ccc84-20a5-5584-96c9-f582813ebd64"
+diamondUuid: "8c5041a2-d3a4-88ea-b381-4bebe4cdca0f"
+uuid: "8290ca36-9e5c-8405-819c-4dd9852f910f"
+horo: 1
+bonds:
+  in:
+    - collapse
+    - law
+    - merge
+    - sti
+  out:
+    - collapse
+    - law
+    - merge
+    - sti
+typography:
+  partition: contractual
+  bondDegree: 12
+  neighbors: []
+standards:
+  - "schema.org — the type vocabulary, collided to single words"
+bindings: []
+neighbors:
+  wikilink:
+    - collapse
+    - law
+    - merge
+    - sti
+  matrix:
+    - collapse
+    - law
+    - merge
+    - sti
+  backlinks:
+    - collapse
+    - law
+    - merge
+    - sti
+signatures:
+  computationUuid: "ac3c5002-ee0f-8fd0-9ff0-cfff405220be"
+  stages:
+    - stage: path
+      stageUuid: "9b8a2b20-2db3-86b4-90e8-bd676ef58676"
+    - stage: trinity
+      stageUuid: "ba19791a-d457-8308-8a2b-283129b3f85b"
+    - stage: boundary
+      stageUuid: "605d8868-6a6b-8daf-bf10-e23affaae8a6"
+    - stage: links
+      stageUuid: "0552b5fa-3a06-89b2-90b2-68183fbfd084"
+    - stage: horo
+      stageUuid: "5940b154-0892-89f6-9e99-317d6c3a2afd"
+    - stage: seal
+      stageUuid: "11b3c9a6-3337-8b41-85eb-6ede5c052365"
+    - stage: uuid
+      stageUuid: "d3d108bf-d666-83ac-a0e2-b0f230c7e990"
+version: 2
 ---
-
 # contractual
 
 A schema.org vocabulary word, collided from the schema.org compounds that contain it — MutualContractualAgreement ([[sti]] · [[collapse]] · [[merge]]).

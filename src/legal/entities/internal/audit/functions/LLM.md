@@ -3,8 +3,8 @@
 
 # functions
 
-path `legal/entities/internal/audit/functions` · uuid `ac7acdc3-19f4-8af6-ad49-8f734ef62fd5` · diamond `03b6415d-075b-8d2a-b29a-06bd29359e47`
-horo `5` `round` · trinity `1·1·1` · sealed `1`
+path `legal/entities/internal/audit/functions` · uuid `b8c0e0aa-6913-84db-90b8-56934ade626f` · diamond `7eb336ea-8b1e-84e1-b9a6-e7bb505866b3`
+horo `2` `share` · trinity `1·1·1` · sealed `0`
 imports @/role/based/access · exports const · escapes —
 links `2/2` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law the internal-audit function is the independent assurance organ — a charter
 
 ---
 
-<sub>content-uuid `43b6040d-998b-8edf-b011-23de207a9a9c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e12593ef-d054-8aea-9551-8589c8023612` · `pnpm readme` · `pnpm computed:check`</sub>

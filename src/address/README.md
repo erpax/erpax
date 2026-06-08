@@ -2,9 +2,11 @@
 
 # address
 
-> atom `address` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
+> atom `address` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
+
+> account code `address` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -19,11 +21,34 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## [[entropy]] — gaps · seals
+
+> account code `address` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[trinity]]/code `1.585` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[trinity]]/proof `1.585` eb | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.8` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[diamond]]/sealed `1.585` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `3.17` eb | Σ seal `11.385` eb |
+
+> net residual `-8.215` eb · seal/gap ratio `3.591` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `address` · sub-root `dbe3663f-52b1-8624-94cf-89b280b1265a`
+- partition `address` · sub-root `d9592fde-d49a-80d2-9667-90a27e7748f5`
 - bond degree `50` · analysis neighbors —
-- graph root `06810c2c-2396-831f-a2b3-a58706a17051`
+- graph root `841a8e48-08eb-8dfa-9b96-29beea086012`
 
 ## [[cloudflare]] bindings
 
@@ -40,15 +65,53 @@
 - `schema.org — the type vocabulary, collided to single words` · banner
 - `UPU-S42` · catalogue
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·8 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `50` · sealed `1` · horo `1`
+- bond degree `50` · sealed `1` · horo `8`
 - variance `0` · balanced `1` · trinity sum `1`
 - bindings `0` · standards `8`
 
 ## identity
 
-- uuid `e1e1efe0-acef-8e3c-8ed6-a0b751257128`
+- uuid `31b63bb1-0f2b-8fc0-9804-527f3505ca24`
 - bonds in `13` · out `13`
 - trinity form·code·proof `1`·`0`·`0`
 - links `12` / `12`
@@ -60,4 +123,4 @@
 
 ---
 
-<sub>content-uuid `a48a168e-6c21-892b-830b-2425eb48013d` · framed by typography partition `address` bonds `50` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `296ac1be-7c09-8730-a11f-a4ad1b0b2b3c` · framed by typography partition `address` bonds `50` · `pnpm readme` · `pnpm readme:check`</sub>

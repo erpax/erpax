@@ -2,9 +2,11 @@
 
 # quotes
 
-> atom `vendors/vendor/quotes` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
+> atom `vendors/vendor/quotes` · horo `8` `crest` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `vendors/vendor/quotes` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,24 +23,129 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+
+### collapse
+
+- `balance:conserved`
+- `law:a vendor-quote is one supplier's RFQ response with its award decision and rationale — the competitive-bid record that stands as arm's-length transfer-pricing evidence (BEPS Action 13 / SOX §404).`
+- `seal:unsealed`
+- `trigger:Use when capturing or evaluating vendor RFQ responses — quote lines, pricing, INCOTERMS, lead time, award decision and rationale for OECD BEPS Action 13 and SOX §404 arm's-length evidence. The per-vendor RFQ response and competitive-bid award record.`
+- `trigger:a vendor-quote is one supplier's RFQ response with its award decision and rationale — the competitive-bid record that stands as arm's-length transfer-pricing evidence (BEPS Action 13 / SOX §404).`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `9da916b4-8ce8-8564-9893-611bbf345309` · `f1afa219-679e-81e2-9c8c-3a6ff5a4b8a7`
+- content uuids `0db35b26-2adc-8314-9e9b-6ee430290f88` · `261def1c-01f2-8148-8601-8cab15d3ed1c`
+
+## [[entropy]] — gaps · seals
+
+> account code `vendors/vendor/quotes` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.8` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `1` eb | Σ seal `11.8` eb |
+
+> net residual `-10.8` eb · seal/gap ratio `11.8` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `vendors` · sub-root `87705490-5db6-87cf-8583-872ea1e7406a`
-- bond degree `44` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- partition `vendors` · sub-root `67bdefbd-02b1-858f-a7c8-4b79ec04b5d4`
+- bond degree `33` · analysis neighbors —
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ISO 9001:2015 §8.4 control-of-externally-provided-processes` · banner
+- `ISO-4217:2015 currency-codes` · banner
+- `ISO-8601-1:2019 date-time` · banner
+- `ISO-9001` · catalogue
+- `OECD BEPS Action 13 transfer-pricing-evidence` · banner
+- `SOX §404 internal-controls vendor-selection` · banner
+- `W3C-PROV-O` · catalogue
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·8 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `33` · sealed `0` · horo `8`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `7`
 
 ## identity
 
-- uuid `a4474109-d68c-840d-b618-8d81a3c6d064`
-- bonds in `13` · out `16`
+- uuid `b868e63d-9994-8299-9bb3-69e7054e34c9`
+- bonds in `9` · out `9`
 - trinity form·code·proof `1`·`1`·`1`
 - links `5` / `5`
 - folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `d96185d4-0228-82bf-ba9b-a8bd939dd51b` · framed by typography partition `vendors` bonds `44` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e0086e77-6e8e-8159-83f8-9a9d6ae046b3` · framed by typography partition `vendors` bonds `33` · `pnpm readme` · `pnpm readme:check`</sub>

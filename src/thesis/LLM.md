@@ -3,15 +3,15 @@
 
 # thesis
 
-path `thesis` · uuid `8b1b33d6-d5ec-893f-a06f-36abbaa34dda` · diamond `b7e540c8-08cd-85ca-98bc-221c5e47a2c2`
+path `thesis` · uuid `8b1b33d6-d5ec-893f-a06f-36abbaa34dda` · diamond `3ddc156a-63da-8d85-a476-c4f5a40b2123`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports thesis · escapes —
-links `2/2` · folded `1` · bonds in `13` out `13`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → agriculture·balance·composite·cover·css·landmarks·mobile·moved·muscle·performance·pickup·sell·sla · ← agriculture·balance·composite·cover·css·landmarks·mobile·moved·muscle·performance·pickup·sell·sla
+neighbors → law·thing · ← law·thing
 analysis —
 law thesis is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `15ce8a9e-4582-89da-bd80-fc9ff1e8d03a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b3a68f11-b250-8e40-bc4c-ccc4b17ee071` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -2,17 +2,17 @@
 
 # taoism
 
-> atom `taoism` · horo `—` `—` · [[balance]] `1` · [[seal]] `0`
+> atom `taoism` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[horo]]/off-ring `1` |
-| [[balance]] `1` | [[liability]]/[[identity]]/uuid `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
 | [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `7` | Σ `7` |
@@ -22,21 +22,21 @@
 ## typography graph
 
 - partition `taoism` · sub-root `0aca1519-7afd-8a05-8867-a99e0cc9a641`
-- bond degree `27` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `68` · analysis neighbors `diamond`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
-- uuid `—`
-- bonds in `0` · out `0`
+- uuid `0aca1519-7afd-8a05-8867-a99e0cc9a641`
+- bonds in `22` · out `22`
 - trinity form·code·proof `1`·`0`·`0`
 - links `53` / `53`
-- folded `0` · escapes `0`
+- folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `e82ceef2-ab2b-8ee6-b505-29186e467e0f` · framed by typography partition `taoism` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c49002e7-4fde-8479-a674-8e7770afdac9` · framed by typography partition `taoism` bonds `68` · `pnpm readme` · `pnpm readme:check`</sub>

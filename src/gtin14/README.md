@@ -23,7 +23,21 @@
 
 - partition `gtin14` · sub-root `e8c58cd0-819c-8fdb-8cd1-94a9eddf56bf`
 - bond degree `12` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `12` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `8b8f5694-0e1a-8839-8a91-053b2544f8eb` · framed by typography partition `gtin14` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d66da3c0-e610-8b7a-8bc8-7333f252ddd7` · framed by typography partition `gtin14` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

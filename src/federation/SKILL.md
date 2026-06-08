@@ -1,8 +1,136 @@
 ---
 name: federation
-description: Use when designing inter-tenant content exchange, activity distribution, or federation protocols following ActivityPub / W3C Activity Streams — content-addressed row exchange between erpax tenants with independent peer verification, trust boundaries, and content-delivery semantics.
+description: "Use when designing inter-tenant content exchange, activity distribution, or federation protocols following ActivityPub / W3C Activity Streams — content-addressed row exchange between erpax tenants with independent peer verification, trust boundaries, and content-delivery semantics."
+atomPath: federation
+coordinate: federation · 1/base · e2404b71
+contentUuid: "4dc97ef9-42ed-5e84-bfd2-f262a21e75ae"
+diamondUuid: "c326f4ad-0382-8238-a27a-c1110928ef4f"
+uuid: "e2404b71-58b1-819e-b84e-35e585cfab09"
+horo: 1
+bonds:
+  in:
+    - access
+    - decentralization
+    - duality
+    - ecosystem
+    - event
+    - exchange
+    - fractal
+    - holographic
+    - hooks
+    - identity
+    - ingest
+    - law
+    - lineage
+    - merge
+    - replication
+    - sequence
+    - standard
+    - uuid
+    - workspace
+  out:
+    - access
+    - decentralization
+    - duality
+    - ecosystem
+    - event
+    - exchange
+    - fractal
+    - holographic
+    - hooks
+    - identity
+    - ingest
+    - law
+    - lineage
+    - merge
+    - replication
+    - sequence
+    - standard
+    - uuid
+    - workspace
+typography:
+  partition: federation
+  bondDegree: 57
+  neighbors: []
+standards:
+  - W3C Activity Streams 2.0 + ActivityPub + LDN
+  - W3C Verifiable Credentials Data Model 2.0
+  - "W3C-ActivityPub"
+  - "W3C-VC-2.0"
+bindings: []
+neighbors:
+  wikilink:
+    - access
+    - duality
+    - event
+    - fractal
+    - holographic
+    - hooks
+    - identity
+    - law
+    - merge
+    - sequence
+    - standard
+    - uuid
+  matrix:
+    - access
+    - decentralization
+    - duality
+    - ecosystem
+    - event
+    - exchange
+    - fractal
+    - holographic
+    - hooks
+    - identity
+    - ingest
+    - law
+    - lineage
+    - merge
+    - replication
+    - sequence
+    - standard
+    - uuid
+    - workspace
+  backlinks:
+    - access
+    - decentralization
+    - duality
+    - ecosystem
+    - event
+    - exchange
+    - fractal
+    - holographic
+    - hooks
+    - identity
+    - ingest
+    - law
+    - lineage
+    - merge
+    - replication
+    - sequence
+    - standard
+    - uuid
+    - workspace
+signatures:
+  computationUuid: "acc1bd5b-d0cb-8d4f-95f2-a958a6b08deb"
+  stages:
+    - stage: path
+      stageUuid: "7f9947bd-55cd-81c7-b4fe-3a1431596330"
+    - stage: trinity
+      stageUuid: "0baa64b3-8ce0-804d-b728-b64a480632e8"
+    - stage: boundary
+      stageUuid: "4375a09a-e0f8-8f28-949f-06c2b599bb8b"
+    - stage: links
+      stageUuid: "73c3b056-6c5d-856b-be2e-f199cb01267b"
+    - stage: horo
+      stageUuid: "968016f3-63d6-8a4a-9279-89200c16b69f"
+    - stage: seal
+      stageUuid: "e1bf4311-68bf-8c5a-81b5-6cc7f1321eb8"
+    - stage: uuid
+      stageUuid: "17574c77-5b96-84af-b810-9d11a7ce737e"
+version: 2
 ---
-
 # federation
 
 The delivery answer-path of [[merge]]: two erpax tenants converge on the same row **without trusting each other and without coordination** — same content ⇒ same id ([[identity]]), so a peer recomputes the content-uuid locally and either it matches or the envelope is rejected. Federation is the wire and handshake under merge; merge is the law, federation is how a row actually crosses the boundary.

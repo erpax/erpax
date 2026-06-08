@@ -2,7 +2,7 @@
 
 # ecommerce
 
-> atom `ecommerce` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `ecommerce` · horo `7` `descent` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -17,13 +17,13 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `7` | Σ `7` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `7` · [[conservation]] `0` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `ecommerce` · sub-root `0aebf1e8-6dd6-8ac9-ad29-8f86cf41b1e4`
-- bond degree `33` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- bond degree `0` · analysis neighbors —
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
 
 ## [[cloudflare]] bindings
 
@@ -36,8 +36,8 @@
 
 ## analytics
 
-- bond degree `33` · sealed `1` · horo `7`
-- variance `0` · balanced `1` · trinity sum `1`
+- bond degree `0` · sealed `0` · horo `7`
+- variance `7` · balanced `0` · trinity sum `1`
 - bindings `0` · standards `2`
 
 ## identity
@@ -50,8 +50,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `c84bb531-d3eb-89cb-a4f2-2a97d1e0bad3` · framed by typography partition `ecommerce` bonds `33` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `8ada08a9-0e92-8482-b80d-36398e4356fc` · framed by typography partition `ecommerce` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

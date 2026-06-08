@@ -3,15 +3,15 @@
 
 # port
 
-path `port` · uuid `b0215b4d-6fc3-8ccd-9b93-67f551dcea9a` · diamond `54d0e416-2358-82f6-80bb-3770fe54bc10`
-horo `8` `crest` · trinity `1·1·1` · sealed `1`
+path `port` · uuid `c7bd792c-3eae-8f20-bfea-1b31110c9d9f` · diamond `02f830b3-2a3f-8304-9e68-781aceb627a3`
+horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports @/diamond·@/integrity · exports function·interface · escapes —
-links `40/40` · folded `1` · bonds in `40` out `42`
+links `40/40` · folded `1` · bonds in `37` out `37`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·accounting·admin·amortize·api·calculate·chat·collapse·collections·commerce·config·database·depreciate·domain·ebitda·empirical·fields·fractal·generate·hooks·identity·jobs·law·law·manufacturing·measure·merge·merge·migrate·plugins·port·profane·quantum·queries·recover·sacred·sequence·spec·standard·sti·trinity·uuid · ← access·accounting·admin·amortize·api·calculate·chat·collapse·collections·commerce·config·database·depreciate·domain·ebitda·empirical·fields·fractal·generate·hooks·identity·jobs·law·manufacturing·measure·merge·migrate·plugins·port·profane·quantum·queries·recover·sacred·sequence·spec·standard·sti·trinity·uuid
+neighbors → access·accounting·admin·amortize·api·calculate·chat·collapse·collections·commerce·config·database·depreciate·domain·ebitda·empirical·fields·fractal·generate·hooks·identity·jobs·law·manufacturing·measure·merge·plugins·port·profane·queries·recover·sacred·sequence·spec·standard·sti·trinity · ← access·accounting·admin·amortize·api·calculate·chat·collapse·collections·commerce·config·database·depreciate·domain·ebitda·empirical·fields·fractal·generate·hooks·identity·jobs·law·manufacturing·measure·merge·plugins·port·profane·queries·recover·sacred·sequence·spec·standard·sti·trinity
 analysis —
 law every Rails/ActiveAdmin construct has one mechanical Payload home (the Rosetta map), and a port is done only as a complete [[trinity]] — matter (code) · antimatter (SKILL) · backend (generated schema) — that all agree.
 
 ---
 
-<sub>content-uuid `bb71bc82-def5-8d20-ac2f-52f91db030bf` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `80a3155c-76f7-8d99-a1eb-b1a736b6324d` · `pnpm readme` · `pnpm computed:check`</sub>

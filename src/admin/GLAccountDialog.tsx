@@ -3,9 +3,9 @@
  * Modal for creating or editing GL accounts
  */
 
-'use client';
+'use client'
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react'
 import {
   GLAccount,
   CreateGLAccountRequest,
@@ -13,17 +13,37 @@ import {
   AccountType,
   AnalyticType,
   GL_ACCOUNT_RULES,
-} from '@/types/gl-account';
-import { glAccountService } from '@/gl/account.service';
+} from '@/types/gl-account'
+import { glAccountService } from '@/gl/account.service'
+import {
+  Alert,
+  AlertDescription,
+  Button,
+  Checkbox,
+  Dialog,
+  DialogContent,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  Input,
+  Label,
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+  Separator,
+  Textarea,
+} from '@/ui'
 
 interface GLAccountDialogProps {
-  open: boolean;
-  mode: 'create' | 'edit';
-  tenantId: string;
-  account?: GLAccount;
-  parentId?: string;
-  onClose: () => void;
-  onSave: (account: GLAccount) => void;
+  open: boolean
+  mode: 'create' | 'edit'
+  tenantId: string
+  account?: GLAccount
+  parentId?: string
+  onClose: () => void
+  onSave: (account: GLAccount) => void
 }
 
 const ACCOUNT_TYPES: AccountType[] = [
@@ -35,7 +55,7 @@ const ACCOUNT_TYPES: AccountType[] = [
   'expense',
   'other_income',
   'other_expense',
-];
+]
 
 const ANALYTIC_TYPES: AnalyticType[] = [
   'none',
@@ -44,7 +64,7 @@ const ANALYTIC_TYPES: AnalyticType[] = [
   'location',
   'customer',
   'project',
-];
+]
 
 export default function GLAccountDialog({
   open,
@@ -63,11 +83,11 @@ export default function GLAccountDialog({
     type: 'asset',
     normalBalance: 'debit',
     currencyCode: 'EUR',
-  });
+  })
 
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState<string | null>(null);
-  const [codeError, setCodeError] = useState<string | null>(null);
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState<string | null>(null)
+  const [codeError, setCodeError] = useState<string | null>(null)
 
   useEffect(() => {
     if (mode === 'edit' && account) {
@@ -84,7 +104,7 @@ export default function GLAccountDialog({
         isTaxable: account.isTaxable,
         taxCode: account.taxCode,
         displayOrder: account.displayOrder,
-      });
+      })
     } else {
       setFormData({
         code: '',
@@ -93,61 +113,59 @@ export default function GLAccountDialog({
         normalBalance: 'debit',
         currencyCode: 'EUR',
         parentId,
-      });
+      })
     }
-    setError(null);
-    setCodeError(null);
-  }, [mode, account, open, parentId]);
+    setError(null)
+    setCodeError(null)
+  }, [mode, account, open, parentId])
 
   const validateCode = async () => {
     if (!formData.code) {
-      setCodeError('Account code is required');
-      return false;
+      setCodeError('Account code is required')
+      return false
     }
 
     if (formData.code.length < GL_ACCOUNT_RULES.minCodeLength) {
-      setCodeError(`Code must be at least ${GL_ACCOUNT_RULES.minCodeLength} characters`);
-      return false;
+      setCodeError(`Code must be at least ${GL_ACCOUNT_RULES.minCodeLength} characters`)
+      return false
     }
 
     if (formData.code.length > GL_ACCOUNT_RULES.maxCodeLength) {
-      setCodeError(`Code must not exceed ${GL_ACCOUNT_RULES.maxCodeLength} characters`);
-      return false;
+      setCodeError(`Code must not exceed ${GL_ACCOUNT_RULES.maxCodeLength} characters`)
+      return false
     }
 
     if (!GL_ACCOUNT_RULES.codePattern.test(formData.code)) {
-      setCodeError('Code can only contain numbers, dots, hyphens, and underscores');
-      return false;
+      setCodeError('Code can only contain numbers, dots, hyphens, and underscores')
+      return false
     }
 
-    // Check uniqueness in backend
     try {
-      const isValid = await glAccountService.validateAccountCode(tenantId, formData.code);
+      const isValid = await glAccountService.validateAccountCode(tenantId, formData.code)
       if (!isValid && mode === 'create') {
-        setCodeError('This account code already exists');
-        return false;
+        setCodeError('This account code already exists')
+        return false
       }
     } catch (_err) {
       // Continue if validation service fails
     }
 
-    setCodeError(null);
-    return true;
-  };
+    setCodeError(null)
+    return true
+  }
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
+    e.preventDefault()
 
-    // Validate code first
     if (!(await validateCode())) {
-      return;
+      return
     }
 
-    setLoading(true);
-    setError(null);
+    setLoading(true)
+    setError(null)
 
     try {
-      let savedAccount: GLAccount;
+      let savedAccount: GLAccount
 
       if (mode === 'create') {
         const request: CreateGLAccountRequest = {
@@ -156,253 +174,236 @@ export default function GLAccountDialog({
           type: formData.type,
           normalBalance: formData.normalBalance,
           currencyCode: formData.currencyCode,
-        };
+        }
 
-        if (formData.description) request.description = formData.description;
-        if (parentId) request.parentId = parentId;
-        if (formData.analyticType) request.analyticType = formData.analyticType;
+        if (formData.description) request.description = formData.description
+        if (parentId) request.parentId = parentId
+        if (formData.analyticType) request.analyticType = formData.analyticType
         if (formData.requiresAnalyticDimension !== undefined)
-          request.requiresAnalyticDimension = formData.requiresAnalyticDimension;
-        if (formData.isTaxable !== undefined) request.isTaxable = formData.isTaxable;
-        if (formData.taxCode) request.taxCode = formData.taxCode;
-        if (formData.displayOrder !== undefined) request.displayOrder = formData.displayOrder;
+          request.requiresAnalyticDimension = formData.requiresAnalyticDimension
+        if (formData.isTaxable !== undefined) request.isTaxable = formData.isTaxable
+        if (formData.taxCode) request.taxCode = formData.taxCode
+        if (formData.displayOrder !== undefined) request.displayOrder = formData.displayOrder
 
-        savedAccount = await glAccountService.createAccount(tenantId, request);
+        savedAccount = await glAccountService.createAccount(tenantId, request)
       } else if (account) {
-        const request: UpdateGLAccountRequest = {};
+        const request: UpdateGLAccountRequest = {}
 
-        if (formData.name !== account.name) request.name = formData.name;
-        if (formData.description !== account.description) request.description = formData.description;
+        if (formData.name !== account.name) request.name = formData.name
+        if (formData.description !== account.description) request.description = formData.description
         if (formData.normalBalance !== account.normalBalance)
-          request.normalBalance = formData.normalBalance;
+          request.normalBalance = formData.normalBalance
         if (formData.analyticType !== account.analyticType)
-          request.analyticType = formData.analyticType;
+          request.analyticType = formData.analyticType
         if (formData.requiresAnalyticDimension !== account.requiresAnalyticDimension)
-          request.requiresAnalyticDimension = formData.requiresAnalyticDimension;
-        if (formData.isTaxable !== account.isTaxable) request.isTaxable = formData.isTaxable;
-        if (formData.taxCode !== account.taxCode) request.taxCode = formData.taxCode;
+          request.requiresAnalyticDimension = formData.requiresAnalyticDimension
+        if (formData.isTaxable !== account.isTaxable) request.isTaxable = formData.isTaxable
+        if (formData.taxCode !== account.taxCode) request.taxCode = formData.taxCode
         if (formData.displayOrder !== account.displayOrder)
-          request.displayOrder = formData.displayOrder;
+          request.displayOrder = formData.displayOrder
 
-        savedAccount = await glAccountService.updateAccount(tenantId, account.id, request);
+        savedAccount = await glAccountService.updateAccount(tenantId, account.id, request)
       } else {
-        throw new Error('Invalid state');
+        throw new Error('Invalid state')
       }
 
-      onSave(savedAccount);
-      onClose();
+      onSave(savedAccount)
+      onClose()
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Failed to save account');
+      setError(err instanceof Error ? err.message : 'Failed to save account')
     } finally {
-      setLoading(false);
+      setLoading(false)
     }
-  };
-
-  if (!open) return null;
+  }
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-      <div className="bg-white rounded-lg shadow-xl max-w-2xl w-full mx-4 max-h-[90vh] overflow-y-auto">
-        {/* Header */}
-        <div className="flex items-center justify-between p-6 border-b">
-          <h2 className="text-2xl font-bold text-gray-900">
-            {mode === 'create' ? 'Create GL Account' : 'Edit GL Account'}
-          </h2>
-          <button
-            onClick={onClose}
-            className="text-gray-400 hover:text-gray-600 text-2xl"
-          >
-            ×
-          </button>
-        </div>
+    <Dialog open={open} onOpenChange={(next) => !next && onClose()}>
+      <DialogContent className="max-h-[90vh] overflow-y-auto sm:max-w-2xl">
+        <DialogHeader>
+          <DialogTitle>{mode === 'create' ? 'Create GL Account' : 'Edit GL Account'}</DialogTitle>
+        </DialogHeader>
 
-        {/* Form */}
-        <form onSubmit={handleSubmit} className="p-6 space-y-6">
-          {error && (
-            <div className="p-4 bg-red-50 border border-red-200 rounded-lg">
-              <p className="text-sm text-red-800">{error}</p>
+        <form onSubmit={handleSubmit} className="space-y-6">
+          {error ? (
+            <Alert variant="destructive">
+              <AlertDescription>{error}</AlertDescription>
+            </Alert>
+          ) : null}
+
+          <div className="space-y-4">
+            <h3 className="text-sm font-semibold">Basic Information</h3>
+            <div className="space-y-2">
+              <Label htmlFor="gl-code">
+                Account Code <span className="text-destructive">*</span>
+              </Label>
+              <Input
+                id="gl-code"
+                value={formData.code}
+                onChange={(e) => setFormData({ ...formData, code: e.target.value })}
+                onBlur={() => void validateCode()}
+                placeholder="e.g., 1000, 1010.01"
+                disabled={mode === 'edit'}
+                required
+                aria-invalid={!!codeError}
+              />
+              {codeError ? <p className="text-sm text-destructive">{codeError}</p> : null}
+              <p className="text-xs text-muted-foreground">
+                Unique identifier. {mode === 'edit' ? 'Cannot be changed.' : 'Required.'}
+              </p>
             </div>
-          )}
 
-          {/* Basic Information */}
-          <div>
-            <h3 className="text-lg font-semibold text-gray-900 mb-4">Basic Information</h3>
-            <div className="space-y-4">
-              <div>
-                <label className="block text-sm font-medium text-gray-900 mb-1">
-                  Account Code <span className="text-red-500">*</span>
-                </label>
-                <input
-                  type="text"
-                  value={formData.code}
-                  onChange={(e) => setFormData({ ...formData, code: e.target.value })}
-                  onBlur={validateCode}
-                  placeholder="e.g., 1000, 1010.01"
-                  className={`w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 ${
-                    codeError ? 'border-red-300 focus:ring-red-500' : 'border-gray-300 focus:ring-blue-500'
-                  }`}
-                  disabled={mode === 'edit'}
-                  required
-                />
-                {codeError && <p className="text-sm text-red-600 mt-1">{codeError}</p>}
-                <p className="text-xs text-gray-500 mt-1">
-                  Unique identifier. {mode === 'edit' ? 'Cannot be changed.' : 'Required.'}
-                </p>
-              </div>
+            <div className="space-y-2">
+              <Label htmlFor="gl-name">
+                Account Name <span className="text-destructive">*</span>
+              </Label>
+              <Input
+                id="gl-name"
+                value={formData.name}
+                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                placeholder="e.g., Cash on Hand"
+                required
+              />
+            </div>
 
-              <div>
-                <label className="block text-sm font-medium text-gray-900 mb-1">
-                  Account Name <span className="text-red-500">*</span>
-                </label>
-                <input
-                  type="text"
-                  value={formData.name}
-                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  placeholder="e.g., Cash on Hand"
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  required
-                />
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium text-gray-900 mb-1">Description</label>
-                <textarea
-                  value={formData.description || ''}
-                  onChange={(e) => setFormData({ ...formData, description: e.target.value })}
-                  placeholder="Optional description"
-                  rows={2}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
-              </div>
+            <div className="space-y-2">
+              <Label htmlFor="gl-description">Description</Label>
+              <Textarea
+                id="gl-description"
+                value={formData.description || ''}
+                onChange={(e) => setFormData({ ...formData, description: e.target.value })}
+                placeholder="Optional description"
+                rows={2}
+              />
             </div>
           </div>
 
-          {/* Account Configuration */}
-          <div>
-            <h3 className="text-lg font-semibold text-gray-900 mb-4">Account Configuration</h3>
+          <Separator />
+
+          <div className="space-y-4">
+            <h3 className="text-sm font-semibold">Account Configuration</h3>
             <div className="grid grid-cols-2 gap-4">
-              <div>
-                <label className="block text-sm font-medium text-gray-900 mb-1">
-                  Account Type <span className="text-red-500">*</span>
-                </label>
-                <select
+              <div className="space-y-2">
+                <Label>
+                  Account Type <span className="text-destructive">*</span>
+                </Label>
+                <Select
                   value={formData.type}
-                  onChange={(e) => setFormData({ ...formData, type: e.target.value as AccountType })}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  onValueChange={(type) =>
+                    setFormData({ ...formData, type: type as AccountType })
+                  }
                   disabled={mode === 'edit'}
-                  required
                 >
-                  {ACCOUNT_TYPES.map((t) => (
-                    <option key={t} value={t}>
-                      {t.replace(/_/g, ' ')}
-                    </option>
-                  ))}
-                </select>
+                  <SelectTrigger>
+                    <SelectValue />
+                  </SelectTrigger>
+                  <SelectContent>
+                    {ACCOUNT_TYPES.map((t) => (
+                      <SelectItem key={t} value={t}>
+                        {t.replace(/_/g, ' ')}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
               </div>
 
-              <div>
-                <label className="block text-sm font-medium text-gray-900 mb-1">
-                  Normal Balance <span className="text-red-500">*</span>
-                </label>
-                <select
+              <div className="space-y-2">
+                <Label>
+                  Normal Balance <span className="text-destructive">*</span>
+                </Label>
+                <Select
                   value={formData.normalBalance}
-                  onChange={(e) =>
+                  onValueChange={(normalBalance) =>
                     setFormData({
                       ...formData,
-                      normalBalance: e.target.value as 'debit' | 'credit',
+                      normalBalance: normalBalance as 'debit' | 'credit',
                     })
                   }
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  required
                 >
-                  <option value="debit">Debit</option>
-                  <option value="credit">Credit</option>
-                </select>
+                  <SelectTrigger>
+                    <SelectValue />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="debit">Debit</SelectItem>
+                    <SelectItem value="credit">Credit</SelectItem>
+                  </SelectContent>
+                </Select>
               </div>
 
-              <div>
-                <label className="block text-sm font-medium text-gray-900 mb-1">
-                  Currency <span className="text-red-500">*</span>
-                </label>
-                <input
-                  type="text"
+              <div className="space-y-2">
+                <Label htmlFor="gl-currency">
+                  Currency <span className="text-destructive">*</span>
+                </Label>
+                <Input
+                  id="gl-currency"
                   value={formData.currencyCode}
                   onChange={(e) => setFormData({ ...formData, currencyCode: e.target.value })}
                   maxLength={3}
                   placeholder="USD"
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                   required
                 />
               </div>
 
-              <div>
-                <label className="block text-sm font-medium text-gray-900 mb-1">
-                  Analytic Type
-                </label>
-                <select
+              <div className="space-y-2">
+                <Label>Analytic Type</Label>
+                <Select
                   value={formData.analyticType || 'none'}
-                  onChange={(e) =>
+                  onValueChange={(analyticType) =>
                     setFormData({
                       ...formData,
-                      analyticType: e.target.value as AnalyticType,
+                      analyticType: analyticType as AnalyticType,
                     })
                   }
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                 >
-                  {ANALYTIC_TYPES.map((t) => (
-                    <option key={t} value={t}>
-                      {t.replace(/_/g, ' ')}
-                    </option>
-                  ))}
-                </select>
+                  <SelectTrigger>
+                    <SelectValue />
+                  </SelectTrigger>
+                  <SelectContent>
+                    {ANALYTIC_TYPES.map((t) => (
+                      <SelectItem key={t} value={t}>
+                        {t.replace(/_/g, ' ')}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
               </div>
             </div>
 
-            {/* Checkboxes */}
-            <div className="mt-4 space-y-3">
+            <div className="space-y-3">
               <label className="flex items-center gap-3">
-                <input
-                  type="checkbox"
+                <Checkbox
                   checked={formData.requiresAnalyticDimension || false}
-                  onChange={(e) =>
-                    setFormData({ ...formData, requiresAnalyticDimension: e.target.checked })
+                  onCheckedChange={(checked) =>
+                    setFormData({
+                      ...formData,
+                      requiresAnalyticDimension: checked === true,
+                    })
                   }
-                  className="w-4 h-4 rounded border-gray-300"
                 />
-                <span className="text-sm text-gray-900">Requires Analytic Dimension</span>
+                <span className="text-sm">Requires Analytic Dimension</span>
               </label>
 
               <label className="flex items-center gap-3">
-                <input
-                  type="checkbox"
+                <Checkbox
                   checked={formData.isTaxable || false}
-                  onChange={(e) => setFormData({ ...formData, isTaxable: e.target.checked })}
-                  className="w-4 h-4 rounded border-gray-300"
+                  onCheckedChange={(checked) =>
+                    setFormData({ ...formData, isTaxable: checked === true })
+                  }
                 />
-                <span className="text-sm text-gray-900">Taxable Account</span>
+                <span className="text-sm">Taxable Account</span>
               </label>
             </div>
           </div>
 
-          {/* Footer */}
-          <div className="flex justify-end gap-4 pt-6 border-t">
-            <button
-              type="button"
-              onClick={onClose}
-              className="px-6 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 font-medium"
-            >
+          <DialogFooter>
+            <Button type="button" variant="outline" onClick={onClose}>
               Cancel
-            </button>
-            <button
-              type="submit"
-              disabled={loading}
-              className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 font-medium disabled:opacity-50"
-            >
+            </Button>
+            <Button type="submit" disabled={loading}>
               {loading ? 'Saving...' : mode === 'create' ? 'Create Account' : 'Update Account'}
-            </button>
-          </div>
+            </Button>
+          </DialogFooter>
         </form>
-      </div>
-    </div>
-  );
+      </DialogContent>
+    </Dialog>
+  )
 }

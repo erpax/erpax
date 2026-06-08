@@ -23,7 +23,21 @@
 
 - partition `hair` · sub-root `42f3cc99-8633-8891-8833-9e351a0b42c3`
 - bond degree `16` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `16` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `7ecf295d-5eab-851c-8f7d-1e180e3904cd` · framed by typography partition `hair` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `7a20e1ec-26f5-81b6-960a-ab20cd767b71` · framed by typography partition `hair` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

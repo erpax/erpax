@@ -3,7 +3,7 @@
 
 # calendar
 
-path `calendar` · uuid `8c6d5f75-c8c8-8356-ac83-d6a65b5b2c29` · diamond `66df522f-889f-8f29-a8fe-fd7a09959f55`
+path `calendar` · uuid `160c7fed-08d2-84f7-89fa-9533e52bba12` · diamond `a814496b-2100-8693-8660-672dd9c86ac7`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports balance·calendars·event·law · exports calendar · escapes —
 links `8/8` · folded `1` · bonds in `4` out `4`
@@ -14,4 +14,4 @@ law calendar is the singular model of one scheme of dates against which events a
 
 ---
 
-<sub>content-uuid `c230924b-9c08-8a0d-ad7a-7dd12b2978ba` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0408377a-d2b0-889e-8000-80ef21f9a4ed` · `pnpm readme` · `pnpm computed:check`</sub>

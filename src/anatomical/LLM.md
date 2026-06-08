@@ -3,7 +3,7 @@
 
 # anatomical
 
-path `anatomical` · uuid `c011cc67-4ba6-8261-b074-51362af20c8d` · diamond `7034fffc-0ea6-8a9a-bca4-b85e2a465ff1`
+path `anatomical` · uuid `c00f1f31-aee4-85f3-bfec-a2d6649d16af` · diamond `0f6228ef-4273-8825-ae0b-56e92b98f4c1`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·structure·system · exports anatomical · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
@@ -14,4 +14,4 @@ law anatomical is one schema.org word, content-addressed; the same word collides
 
 ---
 
-<sub>content-uuid `f8d89c0e-f5bf-837e-be42-e307e0a2e7af` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `bee9b305-5b93-83cd-8b93-e0bb46fd8d88` · `pnpm readme` · `pnpm computed:check`</sub>

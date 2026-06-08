@@ -3,7 +3,7 @@
 
 # conflict
 
-path `conflict` · uuid `b250f888-0f13-8388-95c6-e47c338d5372` · diamond `d9f33b33-5d91-8ee0-804c-9cb62bfed56d`
+path `conflict` · uuid `2462c0b5-2d6d-8566-8b39-454457817d53` · diamond `46f8d97e-d5ad-8956-a9f1-1f80fe178415`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports akashic·identity·matter·merge·party·privilege·proof·society · exports conflict · escapes —
 links `16/16` · folded `1` · bonds in `8` out `8`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `c9b4e119-aa42-850c-8aec-fc0a34732a76` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4d522edc-a137-8c66-9776-a765c0f632db` · `pnpm readme` · `pnpm computed:check`</sub>

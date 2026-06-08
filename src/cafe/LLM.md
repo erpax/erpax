@@ -3,8 +3,8 @@
 
 # cafe
 
-path `cafe` · uuid `860439e6-58e8-8f99-beb2-f0b9814a57b8` · diamond `256b2dff-eb27-8575-8162-5ed86cbe0913`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `cafe` · uuid `1204946a-895b-87a9-864b-d8f1008c4d67` · diamond `0f7daf76-1b22-8868-b039-afd2e039ccf7`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports coffee·collapse·internet·law·merge·shop·sti · exports cafe · escapes —
 links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law cafe is one schema.org word, content-addressed; the same word collides every
 
 ---
 
-<sub>content-uuid `ffc65279-2b82-8e56-9ec6-322f832dd26a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `17ee4b00-d53c-82a4-8885-e8d8ce0b5917` · `pnpm readme` · `pnpm computed:check`</sub>

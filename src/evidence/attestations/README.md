@@ -2,7 +2,7 @@
 
 # attestations
 
-> atom `evidence/attestations` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
+> atom `evidence/attestations` · horo `5` `round` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -25,7 +25,48 @@
 
 - partition `evidence` · sub-root `c9293446-e98c-84cb-9d11-661f18844599`
 - bond degree `30` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ETSI-EN-319-142` · catalogue
+- `ETSI-EN-319-142-1 v1.1.1 pades-baseline-profile` · banner
+- `ETSI-EN-319-142-1 v1.1.1 pades-baseline-profile signature-fields` · banner
+- `EU 910/2014 eidas Art.28 qualified-electronic-signature` · banner
+- `EU 910/2014 eidas qualified-electronic-signature` · banner
+- `EU-2011/83` · catalogue
+- `EU-2014/55` · catalogue
+- `EU-2018/1673` · catalogue
+- `EU-2018/1725` · catalogue
+- `EU-2018/302` · catalogue
+- `EU-2018/389-SCA-RTS` · catalogue
+- `EU-2018/843` · catalogue
+- `EU-2018/957` · catalogue
+- `EU-537/2014` · catalogue
+- `EU-910/2014` · catalogue
+- `EU-VAT-Implementing-Reg-282/2011` · catalogue
+- `ISO-14289-1` · catalogue
+- `ISO-14289-1:2014 pdf-ua-1` · banner
+- `ISO-19005` · catalogue
+- `ISO-19005-2:2011 pdf-a-2` · banner
+- `ISO-19011` · catalogue
+- `ISO-19011:2018 audit-trail attestation-evidence` · banner
+- `ISO-19011:2018 audit-trail visual-evidence` · banner
+- `NIST FIPS-180-4 sha-256 message-digest` · banner
+- `NIST-FIPS-180-4` · catalogue
+- `RFC-5652` · catalogue
+- `rfc-5652 cms-detached-signature` · banner
+- `SOX §404 internal-controls process-walk-through` · banner
+
+## analytics
+
+- bond degree `30` · sealed `0` · horo `5`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `28`
 
 ## identity
 
@@ -37,8 +78,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `4162ceed-fc53-8cfa-b57d-f40e3086daa1` · framed by typography partition `evidence` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0bd9ba3b-8a0e-8c45-90ac-d01558927fb8` · framed by typography partition `evidence` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>

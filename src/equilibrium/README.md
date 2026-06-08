@@ -25,7 +25,21 @@
 
 - partition `equilibrium` · sub-root `4f244741-bb69-863c-9bb3-155322a46537`
 - bond degree `23` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `detailed-balance residual |fwd·pᵢ − rev·pⱼ|; reciprocity fraction -- computed, never asserted` · banner
+
+## analytics
+
+- bond degree `23` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -41,4 +55,4 @@
 
 ---
 
-<sub>content-uuid `0ae2f707-f619-87c1-9af9-2df49e4ed211` · framed by typography partition `equilibrium` bonds `23` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `526b8811-2904-8726-83b5-1f9a530bb14d` · framed by typography partition `equilibrium` bonds `23` · `pnpm readme` · `pnpm readme:check`</sub>

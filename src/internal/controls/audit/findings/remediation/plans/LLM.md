@@ -3,15 +3,15 @@
 
 # plans
 
-path `internal/controls/audit/findings/remediation/plans` · uuid `a4f8320e-4c9c-8e22-a2bf-6fae63b80e70` · diamond `bf0a759f-7b22-8f0c-ace7-b40300600e75`
-horo `5` `round` · trinity `1·1·1` · sealed `1`
+path `internal/controls/audit/findings/remediation/plans` · uuid `bec94f20-4f43-8f72-aadf-284dd08706b2` · diamond `f592997b-54cb-854b-b768-7497c6e8c2d2`
+horo `7` `descent` · trinity `1·1·1` · sealed `0`
 imports @/audit/trail/after/change·@/auth·@/authenticated · exports const · escapes —
-links `1/1` · folded `1` · bonds in `8` out `8`
+links `1/1` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·accounting·commerce·fields·findings·law·standard·subscriptions · ← access·accounting·commerce·fields·findings·law·standard·subscriptions
+neighbors → access·accounting·commerce·fields·standard·subscriptions · ← access·accounting·commerce·fields·standard·subscriptions
 analysis —
 law a remediation plan is the corrective response to an audit finding or compliance gap — action steps each bearing owner, target date, priority and approval chain — that drives the deficiency back to a controlled state.
 
 ---
 
-<sub>content-uuid `1320640b-8884-8eda-bb50-cc2fa513d4c3` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `85931e0d-ecd0-8f45-8aae-c633165d3dee` · `pnpm readme` · `pnpm computed:check`</sub>

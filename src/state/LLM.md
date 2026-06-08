@@ -3,15 +3,15 @@
 
 # state
 
-path `state` · uuid `a7f84b21-7e1d-8200-922b-a204ef32f996` · diamond `680325b5-7d62-82f7-9527-ffc9012c1626`
+path `state` · uuid `a7f84b21-7e1d-8200-922b-a204ef32f996` · diamond `4cc71442-0ba6-889b-8950-2e344059b328`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports state · escapes —
-links `2/2` · folded `1` · bonds in `4` out `4`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → law·thing · ← law·thing
 analysis —
 law state is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `7ba6283c-97b5-8822-98db-4618aa0439e8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `65dc7a2a-4ae7-8376-bbe3-d2f52d87ed87` · `pnpm readme` · `pnpm computed:check`</sub>

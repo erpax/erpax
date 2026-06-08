@@ -3,15 +3,15 @@
 
 # runs
 
-path `items/bills/of/materials/work/orders/operation/runs` · uuid `580005e3-30f4-86a6-8087-68d1126e7f6d` · diamond `aabf26c1-0b41-83aa-baa5-32df56668181`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+path `items/bills/of/materials/work/orders/operation/runs` · uuid `a10a01e4-8daa-83e6-81a7-e88210122e5f` · diamond `57e72888-569c-8ddf-ad48-68e05eec00b7`
+horo `8` `crest` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/chain/event/emitter·@/standard/collection/hook · exports default · escapes —
-links `4/4` · folded `1` · bonds in `22` out `25`
+links `4/4` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `1·0·0`
-neighbors → accounting·accounting·accounts·adjustments·balance·centers·close·compensation·employees·entries·entry·give·horo·identity·law·mandates·orders·party·privilege·proof·proof·runs·standard·transaction·transaction · ← accounting·accounts·adjustments·balance·centers·close·compensation·employees·entries·entry·give·horo·identity·law·mandates·orders·party·privilege·proof·runs·standard·transaction
+neighbors → accounting·accounts·mandates·proof·runs·standard·transaction · ← accounting·accounts·mandates·proof·runs·standard·transaction
 analysis —
 law the execution record of one routing step on a [[work/orders|work order]] — quantities ordered/produced/scrapped/backordered at one operation × work-center, yielding the ISA-95 yield and scrap KPIs.
 
 ---
 
-<sub>content-uuid `e8040ff2-8b23-8e79-9ed4-0d2c49cbad27` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `03431894-9c18-83f4-a9f7-7766ac7fce16` · `pnpm readme` · `pnpm computed:check`</sub>

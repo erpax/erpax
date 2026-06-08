@@ -2,7 +2,7 @@
 
 # memories
 
-> atom `memories` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
+> atom `memories` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -24,13 +24,34 @@
 ## typography graph
 
 - partition `memories` · sub-root `f4fe6fc0-a363-8387-b615-aa07ab52a034`
-- bond degree `33` · analysis neighbors `diamond`
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- bond degree `43` · analysis neighbors `diamond`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `Conservation Law 10 referential-harmony (relatedTo graph)` · banner
+- `Conservation Law 8 content-uuid (per-memory contentUuid)` · banner
+- `ISO 19011:2018 §6.4.6 audit-evidence (memory history audit-trailed)` · banner
+- `ISO-19011:2018` · collection
+- `ISO/IEC 25010:2023 §5.7 modifiability — persistent memory layer` · banner
+- `ISO/IEC-25010:2023` · collection
+- `RFC-4122` · collection
+- `W3C-JSON-LD-1.1` · collection
+
+## analytics
+
+- bond degree `43` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `8`
 
 ## identity
 
-- uuid `e91563e7-305c-8295-b910-ea8040579d7d`
-- bonds in `8` · out `8`
+- uuid `f4fe6fc0-a363-8387-b615-aa07ab52a034`
+- bonds in `13` · out `13`
 - trinity form·code·proof `1`·`1`·`1`
 - links `17` / `17`
 - folded `1` · escapes `0`
@@ -41,4 +62,4 @@
 
 ---
 
-<sub>content-uuid `89334b68-652a-8011-b84f-374cb829b2ec` · framed by typography partition `memories` bonds `33` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `417c42c8-8a25-861d-ac5f-535fdc9c0e14` · framed by typography partition `memories` bonds `43` · `pnpm readme` · `pnpm readme:check`</sub>

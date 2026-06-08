@@ -3,15 +3,15 @@
 
 # superposition
 
-path `superposition` · uuid `44a1f023-92f5-8bb7-8705-1835897b6bfe` · diamond `5d6852fb-c0cb-82b4-9352-4e527c93a2f5`
+path `superposition` · uuid `44a1f023-92f5-8bb7-8705-1835897b6bfe` · diamond `def00ab0-6ce2-88aa-afb8-707cbdf7dc96`
 horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports @/horo · exports const·function·interface · escapes —
-links `18/18` · folded `1` · bonds in `5` out `5`
-faces worker·plugin·pwa `0·0·0`
-neighbors → action·cohort·landmarks·memories·stat · ← action·cohort·landmarks·memories·stat
+links `18/18` · folded `1` · bonds in `13` out `13`
+faces worker·plugin·pwa `1·0·0`
+neighbors → accept·balance·collapse·decoherence·hamiltonian·harmony·horo·interference·law·leap·level·quantum·wave · ← accept·balance·collapse·decoherence·hamiltonian·harmony·horo·interference·law·leap·level·quantum·wave
 analysis —
 law a superposition accepts any amplitudes and normalises so Σ|cₙ|² = 1 (the books of possibility balance at unity); measurement is the collapse to one eigenstate with probability |cₙ|² — accept-always, then verify-in-harmony, made literal.
 
 ---
 
-<sub>content-uuid `c400761b-c2a3-8c37-8258-a95cc02d358a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `dff55292-b666-8c1d-9661-5fbf28e1ea8d` · `pnpm readme` · `pnpm computed:check`</sub>

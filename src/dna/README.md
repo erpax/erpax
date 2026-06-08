@@ -25,7 +25,7 @@
 
 - partition `dna` · sub-root `b8a42a0a-29e8-898c-bcb7-e81bfa836033`
 - bond degree `66` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
 
 ## [[cloudflare]] bindings
 
@@ -55,4 +55,4 @@
 
 ---
 
-<sub>content-uuid `d51c33ad-b2ea-89f1-8efa-ce1321e6d566` · framed by typography partition `dna` bonds `66` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `3d19c379-fd81-8c8b-b70d-b9591766d9d8` · framed by typography partition `dna` bonds `66` · `pnpm readme` · `pnpm readme:check`</sub>

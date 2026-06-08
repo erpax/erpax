@@ -3,8 +3,8 @@
 
 # chest
 
-path `chest` · uuid `fd184d6f-51e4-8d7c-bdee-ea1e48f91ade` · diamond `12f1c71f-d0a6-8493-927b-87b429ceac5a`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `chest` · uuid `54299f22-7ded-85f4-9fa1-a1ef86338e47` · diamond `cfed642a-3be5-8b3d-a2cb-13892a86f4ff`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports chest · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law chest is one schema.org word, content-addressed; the same word collides ever
 
 ---
 
-<sub>content-uuid `72d10ee1-531c-8db9-ad94-411d4d989681` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `dd650c05-e756-8143-a73d-52a162e91924` · `pnpm readme` · `pnpm computed:check`</sub>

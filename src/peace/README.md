@@ -25,7 +25,22 @@
 
 - partition `peace` · sub-root `3f9f881a-a4f3-8828-b639-0eead99886fe`
 - bond degree `113` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `NIST FIPS 180-4 SHA-256 (the content-addressing destruction cannot undo)` · banner
+- `NIST-FIPS-180-4` · catalogue
+
+## analytics
+
+- bond degree `113` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `2`
 
 ## identity
 
@@ -41,4 +56,4 @@
 
 ---
 
-<sub>content-uuid `520e0e9c-4b7e-8f5c-afd1-caab3684a386` · framed by typography partition `peace` bonds `113` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a15344cf-8604-8eb7-9968-6568367e41a0` · framed by typography partition `peace` bonds `113` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,8 +3,8 @@
 
 # charge
 
-path `charge` · uuid `0135b4d8-b315-8dd7-b352-cae5831fafec` · diamond `f34501ea-2687-873d-a285-92f4c24b3ca7`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `charge` · uuid `1ce2ffdd-302a-8cb5-8d5e-b570b8914682` · diamond `66f2ceae-5434-8a77-a806-d1d35f714b02`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·delivery·law·merge·payment·specification·sti · exports charge · escapes —
 links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law charge is one schema.org word, content-addressed; the same word collides eve
 
 ---
 
-<sub>content-uuid `d47703d1-e7d6-811b-8d47-9405acaefb36` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1028f21a-350a-8c32-8cae-a611aac04bd6` · `pnpm readme` · `pnpm computed:check`</sub>

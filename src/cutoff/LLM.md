@@ -3,8 +3,8 @@
 
 # cutoff
 
-path `cutoff` · uuid `9bd7a315-b87f-8cf6-b77a-a1229757d93a` · diamond `333df8c4-251d-8a8d-ab30-072d3debf659`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `cutoff` · uuid `ca9e2783-55b9-86ab-9706-9e013ee2a2cc` · diamond `5804ff73-f7a3-8877-a926-4e06985ef2de`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·time · exports cutoff · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law cutoff is one schema.org word, content-addressed; the same word collides eve
 
 ---
 
-<sub>content-uuid `e01f4228-7bb8-8cb3-b57e-123ed81d75d3` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `26dbdd5c-bb1c-8441-ad96-b4f27b531472` · `pnpm readme` · `pnpm computed:check`</sub>

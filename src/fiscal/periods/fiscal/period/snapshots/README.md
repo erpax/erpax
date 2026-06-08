@@ -2,9 +2,11 @@
 
 # snapshots
 
-> atom `fiscal/periods/fiscal/period/snapshots` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
+> atom `fiscal/periods/fiscal/period/snapshots` · horo `2` `share` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `fiscal/periods/fiscal/period/snapshots` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,24 +23,135 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `law:a fiscal-period snapshot is an immutable point-in-time capture chained to its prior snapshot — the priorSnapshot link makes any hidden amendment detectable, and critical amendments carry an eIDAS QES signature, so the period's history is replayable and tamper-evident.`
+- `seal:unsealed`
+- `trigger:Use when capturing or replaying immutable point-in-time snapshots of a fiscal period — on creation, amendment, validation, closing, or regulatory audit; chaining priorSnapshot for tamper-detection; attaching eIDAS QES signatures on critical amendments. The fiscal-period audit-chain snapshot node.`
+- `trigger:a fiscal-period snapshot is an immutable point-in-time capture chained to its prior snapshot — the priorSnapshot link makes any hidden amendment detectable, and critical amendments carry an eIDAS QES signature, so the period's history is replayable and tamper-evident.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `872a6385-594d-8589-8aae-f6f4581d5372` · `92cb285d-3c0f-8e7c-896e-20f9aa67244c` · `c17dd5b7-d0a3-8349-959c-659601042361`
+- content uuids `2a9f9b3c-12df-8fb0-87f1-cdbe47f11d57` · `31078819-554d-8509-895f-d7b63883dcca` · `dfd71f2d-790d-8a1b-a4c3-44ef3accf1a0`
+
+## [[entropy]] — gaps · seals
+
+> account code `fiscal/periods/fiscal/period/snapshots` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.2` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `2` eb | Σ seal `11.2` eb |
+
+> net residual `-9.2` eb · seal/gap ratio `5.6` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `fiscal` · sub-root `cf5aa98e-ebac-8e2a-ac4c-50b4ac28b0e6`
-- bond degree `36` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- partition `fiscal` · sub-root `750f5b34-3dbd-8426-a310-55cde4a93bd3`
+- bond degree `28` · analysis neighbors —
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `eIDAS` · catalogue
+- `eIDAS:2014/910/EU (signature on critical amendments)` · banner
+- `EU-2014/55` · catalogue
+- `EU-2016/679` · catalogue
+- `EU-537/2014` · catalogue
+- `EU-910/2014` · catalogue
+- `GDPR:2016/679 Art. 32 (audit evidence, access control, encryption)` · banner
+- `NIST-SP-800-63` · catalogue
+- `NIST-SP-800-92` · catalogue
+- `NIST-SP-800-92 (audit logging, integrity verification)` · banner
+- `SOX` · catalogue
+- `SOX:2002 (access control audit evidence, change log)` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·2 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `28` · sealed `0` · horo `2`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `12`
 
 ## identity
 
-- uuid `f4bd1b21-dd8c-88d7-bbce-a530c718983c`
-- bonds in `10` · out `12`
+- uuid `8e93c024-f3cd-8826-bfbe-d1ab2562a563`
+- bonds in `7` · out `7`
 - trinity form·code·proof `1`·`1`·`1`
 - links `5` / `5`
 - folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `37b1c3ec-ea99-80ae-8bad-edfd8a265837` · framed by typography partition `fiscal` bonds `36` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `06453849-f61a-891f-91f7-425eb8dba860` · framed by typography partition `fiscal` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,21 @@
 
 - partition `fees` · sub-root `b7b723dc-4fa2-898d-b459-46a2011a8c55`
 - bond degree `49` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `49` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `868c6402-63f9-87c6-a7b8-b43defd3a8c7` · framed by typography partition `fees` bonds `49` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `2f6875ef-e481-8990-8d7b-e79a19dbc5ff` · framed by typography partition `fees` bonds `49` · `pnpm readme` · `pnpm readme:check`</sub>

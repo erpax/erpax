@@ -4,7 +4,7 @@
 # ecommerce
 
 path `ecommerce` · uuid `0aebf1e8-6dd6-8ac9-ad29-8f86cf41b1e4` · diamond `41a84471-d4cf-8d04-ae32-f90624187c32`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+horo `7` `descent` · trinity `1·0·0` · sealed `0`
 imports access·accounting·collapse·commerce·config·hooks·identity·law·plugins·tax·transaction · exports ecommerce · escapes —
 links `19/19` · folded `1` · bonds in `11` out `11`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law "data is money" — every storefront sale becomes a GL double-entry keyed by
 
 ---
 
-<sub>content-uuid `c3b1fab4-572d-8bf4-b75a-cad726a29dc5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c6204a96-1405-8acf-b07f-09ab12677106` · `pnpm readme` · `pnpm computed:check`</sub>

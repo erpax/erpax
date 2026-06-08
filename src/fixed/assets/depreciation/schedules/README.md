@@ -2,9 +2,11 @@
 
 # schedules
 
-> atom `fixed/assets/depreciation/schedules` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
+> atom `fixed/assets/depreciation/schedules` · horo `7` `descent` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `fixed/assets/depreciation/schedules` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -19,26 +21,127 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
+
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+- `gap:stray:[[gap]]/[[diamond]]/stray/hooks/`
+
+### collapse
+
+- `balance:variance=1`
+- `seal:unsealed`
+- `trigger:Use when recording or reviewing the depreciation charge for each period — linking to the fixed-asset master, storing depreciationAmount, accumulatedAfter, and bookValueAfter per period; posting to GL via the depreciation hook; verifying period-lock before posting. The per-period IAS-16 depreciation evidence node.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `1f650863-56a6-8e4e-a507-eb49ca74755b` · `6c54fc31-bc8d-8d28-9fda-38b23e466735` · `b03b686f-f95d-896d-a558-12a320464eb8` · `e5bc2b2b-b7d4-8ce1-af05-97f8fc964f59`
+- content uuids `a613cf99-a974-830b-be47-5497b297fcf0` · `ba0e8219-6af4-86db-9e59-0db58b3980a1` · `edbe0298-35e6-8586-b135-51e7361ef05d` · `f8ded063-e364-8e55-a629-5fe7fc33cff1`
+
+## [[entropy]] — gaps · seals
+
+> account code `fixed/assets/depreciation/schedules` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[diamond]]/stray/hooks/ `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.7` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+| Σ gap `3` eb | Σ seal `8.7` eb |
+
+> net residual `-5.7` eb · seal/gap ratio `2.9` · [[entropy]] · [[seal]]
 
 ## typography graph
 
-- partition `fixed` · sub-root `b2917309-346d-8f65-88a0-44ba41040e22`
-- bond degree `30` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- partition `fixed` · sub-root `05dc48e0-8694-850e-9c66-54f76dfe1623`
+- bond degree `0` · analysis neighbors —
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `IFRS IAS-16 property-plant-and-equipment depreciation` · banner
+- `IFRS IAS-36 impairment-of-assets` · banner
+- `ISO-4217:2015 currency-codes` · banner
+- `ISO-8601-1:2019 date-time period-end` · banner
+- `SOX §404 internal-controls` · banner
+- `US-GAAP ASC-360 property-plant-and-equipment` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unbalanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| not-held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·7 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `0` · sealed `0` · horo `7`
+- variance `1` · balanced `0` · trinity sum `3`
+- bindings `0` · standards `6`
 
 ## identity
 
-- uuid `021bba8b-136a-860a-8802-68fee80e709a`
-- bonds in `10` · out `10`
+- uuid `dab1b731-0ea9-8759-ba04-97bb568437b9`
+- bonds in `8` · out `8`
 - trinity form·code·proof `1`·`1`·`1`
 - links `6` / `6`
 - folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `5ac4c453-65cd-824c-8385-b344b7c6ce61` · framed by typography partition `fixed` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ba5607d9-65d7-8e88-b985-faa1ae646a91` · framed by typography partition `fixed` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

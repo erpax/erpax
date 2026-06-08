@@ -3,15 +3,15 @@
 
 # development
 
-path `development` · uuid `68775545-1723-8452-a806-bc6502ece6f7` · diamond `14c3f0f7-3173-860a-bb80-b6a31158a5ea`
-horo `8` `crest` · trinity `1·1·1` · sealed `1`
+path `development` · uuid `a2e2bd19-dac0-8791-acc1-b2d2476112b3` · diamond `1b8f713c-dc99-8632-b0c9-7ecedb32c095`
+horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports — · exports Feasibility·Roadmap·const·interface · escapes —
-links `15/15` · folded `1` · bonds in `26` out `33`
+links `15/15` · folded `1` · bonds in `16` out `16`
 faces worker·plugin·pwa `1·0·0`
-neighbors → analog·anchor·aura·aura·balance·breath·collide·cost·development·development·entanglement·entanglement·expand·fusion·generate·law·law·law·links·matrix·matrix·merge·quantum·quantum·quantum·research·reveal·roadmap·sequence·singularity·society·uuid·wave · ← analog·anchor·aura·balance·breath·collide·cost·development·development·entanglement·expand·fusion·generate·law·links·matrix·merge·quantum·research·reveal·roadmap·sequence·singularity·society·uuid·wave
+neighbors → aura·breath·collide·development·development·expand·generate·law·matrix·quantum·research·reveal·roadmap·sequence·society·wave · ← aura·breath·collide·development·development·expand·generate·law·matrix·quantum·research·reveal·roadmap·sequence·society·wave
 analysis aura
 law development is a feasibility-ranked roadmap of named capabilities; `nextMove` always picks the highest-feasibility one, and the society advances exactly one gate-verified step at a time.
 
 ---
 
-<sub>content-uuid `49fe087e-d8ab-823e-9cc1-773da9a984fc` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f2ebe5bb-428d-8a02-9656-538a81ab5a01` · `pnpm readme` · `pnpm computed:check`</sub>

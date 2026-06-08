@@ -3,15 +3,15 @@
 
 # conservation
 
-path `conservation` · uuid `64a4f4c7-7be3-8423-b46e-32f965b45152` · diamond `5f5932dc-1e5e-8677-963f-62fb9b68d6cd`
+path `conservation` · uuid `0bcabad1-b4fd-8015-bfe7-acb9dd492acc` · diamond `c387f89d-977a-895d-9339-a272a5b6ccf2`
 horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports — · exports Entry·const · escapes —
-links `28/28` · folded `1` · bonds in `29` out `29`
+links `28/28` · folded `1` · bonds in `30` out `30`
 faces worker·plugin·pwa `1·0·0`
-neighbors → accounting·anchor·artery·balance·biomass·blockchain·blood·compost·ecosystem·emission·energy·entropy·entry·equity·gate·heart·hooks·law·lung·mycelium·proof·readme·reconcile·skills·soil·sustainability·unavoidable·uuid·vein · ← accounting·anchor·artery·balance·biomass·blockchain·blood·compost·ecosystem·emission·energy·entropy·entry·equity·gate·heart·hooks·law·lung·mycelium·proof·readme·reconcile·skills·soil·sustainability·unavoidable·uuid·vein
+neighbors → accounting·anchor·artery·balance·biomass·blockchain·blood·compost·ecosystem·emission·energy·entropy·entry·equity·gate·heart·hooks·law·lung·mycelium·proof·quantum·readme·reconcile·skills·soil·sustainability·unavoidable·uuid·vein · ← accounting·anchor·artery·balance·biomass·blockchain·blood·compost·ecosystem·emission·energy·entropy·entry·equity·gate·heart·hooks·law·lung·mycelium·proof·quantum·readme·reconcile·skills·soil·sustainability·unavoidable·uuid·vein
 analysis —
 law across any boundary a quantity is neither created nor destroyed, only transformed (Noether: every continuous symmetry yields a conserved quantity) — which IS double-entry, Σdebit=Σcredit ([[balance]]); an open system stays honest by [[accounting]] for what crosses the boundary (the borrowed [[anchor]]), so an unbalanced post is the bug the [[proof]] catches, never stores.
 
 ---
 
-<sub>content-uuid `3c605d32-4ba5-8e46-a3d1-9fa4399276bc` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `45f2847c-ba2e-8c05-bd20-b7e9939258d2` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,8 +3,8 @@
 
 # active
 
-path `active` · uuid `cda13d33-306a-816d-b4b6-533197a713ad` · diamond `1777ba5e-75ce-8d55-adaa-6071b1000bcc`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `active` · uuid `ca07ff7c-c5e4-8090-ae3c-b209bf05407f` · diamond `c994781f-0ef4-8d84-9b37-45f37571c9dc`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports fields·law·status · exports active · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law active is the lifecycle toggle (active/inactive) that archives or disables a
 
 ---
 
-<sub>content-uuid `08f2cd31-2519-891b-85c3-ea16102989f5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ac70ddda-79db-82fa-b04e-b39127e1d82f` · `pnpm readme` · `pnpm computed:check`</sub>

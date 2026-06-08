@@ -3,8 +3,8 @@
 
 # lines
 
-path `invoices/invoice/lines` · uuid `098bc3f2-4883-8aea-a422-a6c5268e2fa2` · diamond `7da5f641-f655-80cf-9a80-47070a720318`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+path `invoices/invoice/lines` · uuid `1280ed6a-ddef-833f-bb16-f3e770a3679c` · diamond `a8c8d662-978e-8506-90f0-e967d99b3023`
+horo `4` `weave` · trinity `1·1·1` · sealed `0`
 imports @/audit/trail/after/change·@/auth·@/authenticated·@/auto/populate/tenant·@/invoices/invoice/lines/hooks·@/un/cefact/5305 · exports but·const·when · escapes —
 links `8/8` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law each EN-16931 BG-25 line carries its own net + VAT (BG-30) that feed the GL 
 
 ---
 
-<sub>content-uuid `71a1269e-31cb-834e-b0d5-26acd68d6698` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `db71052a-30f6-8997-9a84-1390be8605cc` · `pnpm readme` · `pnpm computed:check`</sub>

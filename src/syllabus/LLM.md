@@ -3,15 +3,15 @@
 
 # syllabus
 
-path `syllabus` · uuid `c0e83ce8-b7ee-8ba8-8990-b57b7d6069f4` · diamond `7c835719-efde-80eb-9405-08eb3ff30798`
+path `syllabus` · uuid `c0e83ce8-b7ee-8ba8-8990-b57b7d6069f4` · diamond `3cc9144e-2c2d-84f9-9d15-e00fa05150dc`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports law·sections · exports syllabus · escapes —
-links `2/2` · folded `1` · bonds in `35` out `35`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → 9110·access·accounting·angel·atom·attestations·balance·breakfast·catalogue·chat·clip·conventional·declaration·diffusion·dropoff·entity·finite·flight·getting·governinglaw·landmarks·llm·muscle·permaculture·pickup·progression·project·results·river·roadmap·seed·supported·syllabus·tax·tour · ← 9110·access·accounting·angel·atom·attestations·balance·breakfast·catalogue·chat·clip·conventional·declaration·diffusion·dropoff·entity·finite·flight·getting·governinglaw·landmarks·llm·muscle·permaculture·pickup·progression·project·results·river·roadmap·seed·supported·syllabus·tax·tour
+neighbors → law·sections · ← law·sections
 analysis —
 law syllabus is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `45032c46-7478-83f0-9f5b-95c69c5b31fc` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9c924877-f771-8b0f-a85e-18c27073a0a0` · `pnpm readme` · `pnpm computed:check`</sub>

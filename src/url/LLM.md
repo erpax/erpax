@@ -3,15 +3,15 @@
 
 # url
 
-path `url` · uuid `f3b8d441-9cf0-8dd2-a5c6-e08ba0c7f8e0` · diamond `d1b7a137-e83b-8b1c-af31-198a547e9ca9`
+path `url` · uuid `f3b8d441-9cf0-8dd2-a5c6-e08ba0c7f8e0` · diamond `20694976-9743-8e4b-a77e-fae2f10f4990`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports based·benefits·checkout·content·discussion·download·embed·health·install·law·marketing·mobile·page·payment·plan·reply·service·summary·target·template·thumbnail·tracking · exports url · escapes —
-links `22/22` · folded `1` · bonds in `5` out `5`
+links `22/22` · folded `1` · bonds in `26` out `26`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·relocate·stat · ← cohort·landmarks·memories·relocate·stat
+neighbors → api·based·benefits·checkout·content·discussion·download·embed·fs·github·health·install·law·marketing·mobile·page·payment·plan·redirect·reply·service·summary·target·template·thumbnail·tracking · ← api·based·benefits·checkout·content·discussion·download·embed·fs·github·health·install·law·marketing·mobile·page·payment·plan·redirect·reply·service·summary·target·template·thumbnail·tracking
 analysis —
 law url is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `dbc16c51-cd31-8586-ab15-b1fec84d7737` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5e1f60f5-2a9a-8f46-83a4-f749f38a10d8` · `pnpm readme` · `pnpm computed:check`</sub>

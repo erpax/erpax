@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `virus` · sub-root `f6709678-4dad-81f4-a057-bde31ebb29a5`
-- bond degree `40` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `12` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `f6709678-4dad-81f4-a057-bde31ebb29a5`
-- bonds in `18` · out `18`
+- bonds in `4` · out `4`
 - trinity form·code·proof `1`·`0`·`0`
 - links `4` / `4`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `3b97007d-597b-8630-a9d1-24409d7e30de` · framed by typography partition `virus` bonds `40` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `301b0e4d-b7d6-838f-8e73-b9150d48df18` · framed by typography partition `virus` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

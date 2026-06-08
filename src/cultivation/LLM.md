@@ -3,8 +3,8 @@
 
 # cultivation
 
-path `cultivation` · uuid `897e96d9-a40b-80e2-8318-269acdb2aab5` · diamond `2623a468-d179-8db5-bd13-11a266b95d07`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `cultivation` · uuid `201ede07-2303-8d1c-a92d-41ac1b5b1a3f` · diamond `561141d7-3c75-8eb4-bb10-ce94b85fb1d4`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports agriculture·cost·crop·manufacturing·mulch·scouting·season·tillage · exports cultivation · escapes —
 links `17/17` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `d32db92a-04df-899f-9a82-bf0273dd0e55` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b4bcd3ed-668a-86a2-920d-43560bfcaa59` · `pnpm readme` · `pnpm computed:check`</sub>

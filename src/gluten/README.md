@@ -23,7 +23,21 @@
 
 - partition `gluten` · sub-root `a47df7a9-eae2-8c3f-8474-2e66da643c48`
 - bond degree `12` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `12` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `e07a0928-aa61-84d6-a3f5-e55b11c8b0ff` · framed by typography partition `gluten` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e92b142e-160e-88b8-bfb6-b5cd2e97eaaf` · framed by typography partition `gluten` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

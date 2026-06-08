@@ -3,8 +3,8 @@
 
 # arrive
 
-path `arrive` · uuid `26e33656-1af6-812c-b91e-47b296155273` · diamond `76f13c27-ac33-8e11-92ea-f10baa945c96`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `arrive` · uuid `23dead65-0eed-8e32-996c-2f08e0db6b86` · diamond `ec01ab55-9ea9-875d-9792-1dfcba868315`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti · exports arrive · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law arrive is one schema.org word, content-addressed; the same word collides eve
 
 ---
 
-<sub>content-uuid `e6c4302f-7ebc-84bd-b35f-31a851bef419` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `554fd7de-46d4-8cf3-8725-b8a49177a2d6` · `pnpm readme` · `pnpm computed:check`</sub>

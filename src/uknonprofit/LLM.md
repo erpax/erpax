@@ -3,15 +3,15 @@
 
 # uknonprofit
 
-path `uknonprofit` · uuid `06cb6d52-009c-820d-adbe-0a1e9890dbdd` · diamond `a0a75af4-3741-85af-ab38-e1769210f918`
+path `uknonprofit` · uuid `06cb6d52-009c-820d-adbe-0a1e9890dbdd` · diamond `098ccfc1-619c-850b-a5a2-29006468bb55`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports uknonprofit · escapes —
-links `4/4` · folded `1` · bonds in `7` out `7`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accommodation·available·cohort·landmarks·memories·notice·stat · ← accommodation·available·cohort·landmarks·memories·notice·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law uknonprofit is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `836d5012-836b-8545-a03e-d6b40cb38ddc` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `558d34b9-599a-8b29-adcb-8154858bb8aa` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -5,6 +5,7 @@ import type { SkillNode } from './resolve'
 const atom = (name: string): SkillNode => ({
   route: `/${name}/SKILL`, path: [name], name, description: `${name} root`,
   content: '', ancestors: [], siblings: [], children: [], related: [],
+  nav: [], group: name,
 })
 
 const BASE: SkillNode[] = [atom('horo'), atom('merge'), atom('train')]

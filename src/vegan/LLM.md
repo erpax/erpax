@@ -8,10 +8,10 @@ horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports vegan · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law vegan is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `9121e6cb-841d-8eb1-8df4-0aa5b367bb54` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4d615418-68ec-8b78-9246-8c709d9dc15a` · `pnpm readme` · `pnpm computed:check`</sub>

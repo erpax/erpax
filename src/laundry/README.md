@@ -23,7 +23,21 @@
 
 - partition `laundry` · sub-root `bb9a0da1-9d1f-89ad-a770-b4b6bba73811`
 - bond degree `20` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `20` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `5d399ac5-9553-895f-99bb-415f5e65051a` · framed by typography partition `laundry` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a55fa8df-7955-8d98-989b-35eccb912d26` · framed by typography partition `laundry` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>

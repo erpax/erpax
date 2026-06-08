@@ -3,8 +3,8 @@
 
 # birth
 
-path `birth` · uuid `d3404b95-9780-8e47-becb-d2d8a7d733ff` · diamond `95578d12-aa96-895d-9c10-9533f4eded1c`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `birth` · uuid `4a453ee0-8375-8a49-8907-1e0149a84c78` · diamond `3a0ad984-b9a0-88d4-a1d4-06420be46984`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·date·law·merge·place·sti · exports birth · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law birth is one schema.org word, content-addressed; the same word collides ever
 
 ---
 
-<sub>content-uuid `099caa6c-4721-8136-9385-f5e25049600f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c899b060-020e-837f-866d-9062280f00e8` · `pnpm readme` · `pnpm computed:check`</sub>

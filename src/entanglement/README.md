@@ -6,6 +6,8 @@
 
 ## [[debit]] · [[credit]]
 
+> account code `entanglement` · currency `eb` (entropy-bit)
+
 | [[debit]] | [[credit]] |
 | -------- | --------- |
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
@@ -21,16 +23,115 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `dispatch:eb=1`
+
+### collapse
+
+- `balance:conserved`
+- `seal:sealed`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `1`
+- entry uuids `ee89f9e1-1a5c-85d7-a372-95fe188c1712`
+- content uuids `262042d0-e09b-8a81-b204-6fb1b167b604` · `30a71f33-1855-82be-b877-728dd8aeb046`
+
+## [[entropy]] — gaps · seals
+
+> account code `entanglement` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+|  | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.1` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[diamond]]/sealed `1.585` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `0` eb | Σ seal `12.685` eb |
+
+> net residual `-12.685` eb · seal/gap ratio `1` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `entanglement` · sub-root `6682e649-5672-8655-b92e-eb470d882c57`
-- bond degree `104` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- partition `entanglement` · sub-root `262042d0-e09b-8a81-b204-6fb1b167b604`
+- bond degree `106` · analysis neighbors —
+- graph root `e2ef5c1f-42ed-8f9f-ac69-25711349ebff`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ER=EPR — Maldacena & Susskind, "Cool horizons for entangled black holes" (2013)` · banner
+- `ER=EPR — Maldacena & Susskind, "Cool horizons for entangled black holes" (2013); monogamy — Coffman–Kundu–Wootters, PRA 61 052306 (2000)` · banner
+- `EU-2000/31` · catalogue
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·1 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `106` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `3`
 
 ## identity
 
-- uuid `23b597f1-d923-8704-a9f8-d652775bf0d0`
-- bonds in `29` · out `34`
+- uuid `262042d0-e09b-8a81-b204-6fb1b167b604`
+- bonds in `32` · out `32`
 - trinity form·code·proof `1`·`1`·`1`
 - links `15` / `15`
 - folded `1` · escapes `0`
@@ -41,4 +142,4 @@
 
 ---
 
-<sub>content-uuid `912fd58f-78d6-8a49-9b29-37bedd0ce742` · framed by typography partition `entanglement` bonds `104` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `bda63077-fc74-8c6b-8a1b-44305ef31742` · framed by typography partition `entanglement` bonds `106` · `pnpm readme` · `pnpm readme:check`</sub>

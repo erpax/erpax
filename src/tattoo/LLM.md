@@ -3,15 +3,15 @@
 
 # tattoo
 
-path `tattoo` · uuid `0d9700ac-7770-8dce-ba29-597ba8fa9c7f` · diamond `033bc8f2-0152-8c3b-a909-a0e298cc932e`
+path `tattoo` · uuid `0d9700ac-7770-8dce-ba29-597ba8fa9c7f` · diamond `ffca0782-029c-8f59-813d-3b9b7bd29949`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·parlor·sti · exports tattoo · escapes —
-links `5/5` · folded `1` · bonds in `2` out `2`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → collapse·law·merge·parlor·sti · ← collapse·law·merge·parlor·sti
 analysis —
 law tattoo is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `eb4e8621-fa2b-8aae-801f-d39d3becd9ea` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1592d0df-5b3c-8bbc-af04-63c51728a56b` · `pnpm readme` · `pnpm computed:check`</sub>

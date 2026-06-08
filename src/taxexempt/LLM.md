@@ -3,15 +3,15 @@
 
 # taxexempt
 
-path `taxexempt` · uuid `554032ca-3307-87c7-94b5-4b8b690519cd` · diamond `2cfe4b20-16af-8931-91af-272de950950a`
+path `taxexempt` · uuid `554032ca-3307-87c7-94b5-4b8b690519cd` · diamond `a53859f7-bc74-8b63-97df-523aa629e7e6`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports disclosure·gl·legal·standard·tax · exports taxexempt · escapes —
-links `6/6` · folded `1` · bonds in `6` out `6`
+links `6/6` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → change·cohort·landmarks·memories·stages·stat · ← change·cohort·landmarks·memories·stages·stat
+neighbors → calculations·deduction·disclosure·entities·items·standard·tax · ← calculations·deduction·disclosure·entities·items·standard·tax
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `e2f0b50a-cbb1-853a-a078-0ef327c00892` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a0a82000-fa54-8526-b7d2-7bd47fe64492` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,8 +3,8 @@
 
 # accessory
 
-path `accessory` · uuid `7ba17c43-b089-8781-a2dc-704577746958` · diamond `daa613af-72a5-882c-a93e-95a6151e39b6`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `accessory` · uuid `6cc09aa6-4320-81f8-9565-4dcd0d65a18f` · diamond `b1ef433b-c222-8131-8610-790fc6302f90`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·part·spare·sti · exports accessory · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law accessory is one schema.org word, content-addressed; the same word collides 
 
 ---
 
-<sub>content-uuid `ad85a99c-5bbd-8950-984a-5039705e704f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `00c7fca2-c7c2-837a-837f-38c819aa5c1f` · `pnpm readme` · `pnpm computed:check`</sub>

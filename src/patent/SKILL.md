@@ -1,8 +1,88 @@
 ---
 name: patent
-description: Use when challenging an over-broad or illegally granted patent — encode the claim as a content-digest and test it on three computable grounds (prior art via anchored anteriority, obviousness via merge identity, abstract-math via §101); defensive only, not legal advice.
+description: "Use when challenging an over-broad or illegally granted patent — encode the claim as a content-digest and test it on three computable grounds (prior art via anchored anteriority, obviousness via merge identity, abstract-math via §101); defensive only, not legal advice."
+atomPath: patent
+coordinate: patent · 7/descent · e6534b5b
+contentUuid: "65f24ac8-7544-5770-b364-d311a531993b"
+diamondUuid: "d7c5a294-d373-8999-bffb-87b6e61fb569"
+uuid: "e6534b5b-be65-8ee7-acf1-c0bf07ec2c9a"
+horo: 7
+bonds:
+  in:
+    - akashic
+    - anchor
+    - history
+    - law
+    - merge
+    - proof
+    - tamper
+    - uuid
+  out:
+    - akashic
+    - anchor
+    - history
+    - law
+    - merge
+    - proof
+    - tamper
+    - uuid
+typography:
+  partition: patent
+  bondDegree: 24
+  neighbors: []
+standards:
+  - "35 U.S.C. §§101–103; RFC 3161 / eIDAS anchored timestamps (the anteriority proof)"
+  - "anteriority is a timestamp comparison over anchor-bound digests; obviousness is a merge identity"
+  - "anteriority is a timestamp comparison over anchor-bound digests; obviousness is a merge identity; defensive only"
+  - eIDAS
+bindings: []
+neighbors:
+  wikilink:
+    - akashic
+    - anchor
+    - history
+    - law
+    - merge
+    - proof
+    - tamper
+    - uuid
+  matrix:
+    - akashic
+    - anchor
+    - history
+    - law
+    - merge
+    - proof
+    - tamper
+    - uuid
+  backlinks:
+    - akashic
+    - anchor
+    - history
+    - law
+    - merge
+    - proof
+    - tamper
+    - uuid
+signatures:
+  computationUuid: "1a22c221-11d5-87f8-9478-d3239e3111cd"
+  stages:
+    - stage: path
+      stageUuid: "7eece577-454d-86ea-b63b-a6207db8a551"
+    - stage: trinity
+      stageUuid: "dd9b40ff-2b45-8854-b9ac-bad16b2e7fbc"
+    - stage: boundary
+      stageUuid: "128c01b9-350a-86df-9244-64140dfc1cbc"
+    - stage: links
+      stageUuid: "106e2a9a-1fb3-8fd5-a623-1cad776d5753"
+    - stage: horo
+      stageUuid: "02995f6c-7c15-8b37-bb7e-38696daf32ca"
+    - stage: seal
+      stageUuid: "8c445b9d-a54d-8af9-ade8-9003c6e72e7a"
+    - stage: uuid
+      stageUuid: "67e8d8d9-f764-8d96-8650-67e7bf1ac933"
+version: 2
 ---
-
 # patent — challenge illegal patents, encoded in math
 
 A patent is a time-limited monopoly the public grants only for something **new, non-obvious, and patentable**. When one is granted for what fails those tests, it is illegitimate — and erpax's proof primitives are exactly the instruments to show it. Encode the claim as a content-digest and test three grounds, each computable:

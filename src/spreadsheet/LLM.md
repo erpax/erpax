@@ -3,15 +3,15 @@
 
 # spreadsheet
 
-path `spreadsheet` · uuid `3029446b-e19c-82a8-87b5-52c6aea350c0` · diamond `5108b1fa-e343-8db1-9dc7-dd0d29e2028b`
+path `spreadsheet` · uuid `3029446b-e19c-82a8-87b5-52c6aea350c0` · diamond `ee46755d-5ffc-8919-86f6-1d5d6f61ba36`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·digital·document·law·merge·sti · exports spreadsheet · escapes —
-links `6/6` · folded `1` · bonds in `19` out `19`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·agriculture·analytics·center·government·id·landmarks·language·opportunity·progression·recycling·sealed·security·sign·spouse·spread·table·tall·tinid · ← accounting·agriculture·analytics·center·government·id·landmarks·language·opportunity·progression·recycling·sealed·security·sign·spouse·spread·table·tall·tinid
+neighbors → collapse·digital·document·law·merge·sti · ← collapse·digital·document·law·merge·sti
 analysis —
 law spreadsheet is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `2abd405e-6b81-867a-826c-78826321fedc` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `74405ced-c752-87a8-9292-3716b03ef310` · `pnpm readme` · `pnpm computed:check`</sub>

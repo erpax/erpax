@@ -3,15 +3,15 @@
 
 # theme
 
-path `theme` · uuid `0f17a4eb-d096-80dc-bf1a-6c4f20e8ef4b` · diamond `b5352b89-1614-80c9-a801-05e2ea3754b7`
+path `theme` · uuid `0f17a4eb-d096-80dc-bf1a-6c4f20e8ef4b` · diamond `b583552a-9de9-8d13-9d07-1dcf3d751f9c`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports accessibility·cmyk·component·design·law·token · exports theme · escapes —
-links `6/6` · folded `1` · bonds in `5` out `5`
+links `6/6` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·cohort·landmarks·memories·stat · ← action·cohort·landmarks·memories·stat
+neighbors → accessibility·cmyk·component·components·design·law·token · ← accessibility·cmyk·component·components·design·law·token
 analysis —
 law a theme is the one style-system binding (colour palette · typography · spacing · motion · dark/light mode) applied consistently across an app so every component is harmonious.
 
 ---
 
-<sub>content-uuid `790001a9-1bf8-882d-a2ad-bed6871ed71e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `824667f7-615a-84e5-a2b9-bc5de19b5886` · `pnpm readme` · `pnpm computed:check`</sub>

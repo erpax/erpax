@@ -3,7 +3,7 @@
 
 # administration
 
-path `administration` · uuid `bf57d465-5b93-8a51-b3b7-23e908ff6e99` · diamond `8995b876-95ff-8345-b73e-226fe433be84`
+path `administration` · uuid `864ebbed-72bd-86b3-9655-15eaf3d322d6` · diamond `a3faac72-ecd2-81a9-acfc-43ca29fdbeb2`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·route·sti · exports administration · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
@@ -14,4 +14,4 @@ law administration is one schema.org word, content-addressed; the same word coll
 
 ---
 
-<sub>content-uuid `6b5c721b-0943-87a5-a113-5c92bd6e1139` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `277c37f6-baf8-80ea-902b-cefd94315af8` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -2,7 +2,7 @@
 
 # branch
 
-> atom `branch` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
+> atom `branch` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -21,9 +21,9 @@
 
 ## typography graph
 
-- partition `branch` · sub-root `c79cd065-bc05-893c-9ea7-10663b5a7649`
+- partition `branch` · sub-root `98a1decf-54a5-89c6-96aa-8d62a93c29c8`
 - bond degree `10` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- graph root `1cef4f02-a3fa-83a5-8ea0-120b724ef456`
 
 ## [[cloudflare]] bindings
 
@@ -33,15 +33,53 @@
 
 - `schema.org — the type vocabulary, collided to single words` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·8 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `10` · sealed `1` · horo `2`
+- bond degree `10` · sealed `1` · horo `8`
 - variance `0` · balanced `1` · trinity sum `1`
 - bindings `0` · standards `1`
 
 ## identity
 
-- uuid `c79cd065-bc05-893c-9ea7-10663b5a7649`
+- uuid `98a1decf-54a5-89c6-96aa-8d62a93c29c8`
 - bonds in `3` · out `3`
 - trinity form·code·proof `1`·`0`·`0`
 - links `3` / `3`
@@ -53,4 +91,4 @@
 
 ---
 
-<sub>content-uuid `7d6faad7-be01-8462-a69f-e2cc683bc1f4` · framed by typography partition `branch` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `78d3529f-1136-8017-a7e2-cfaedfb39243` · framed by typography partition `branch` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>

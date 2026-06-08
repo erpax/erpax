@@ -2,10 +2,10 @@
  * uuid-matrix — the stable query surface over the generated corpus matrix.
  *
  * The matrix (./matrix.generated.ts, built by `pnpm matrix:generate`) is every
- * atom as a v8 content-uuid (node) and every [[link]] as a merge(from,to)
+ * atom path as a v8 content-uuid (node) and every [[link]] as a merge(from,to)
  * binding-uuid (edge), tagged by structural dimension + harmonic direction. The
- * data is generated; this barrel is the hand-authored, stable API over it so
- * callers query atoms/edges/bindings without touching the raw arrays.
+ * folder path IS the matrix address — one node per src/{atomPath}/, not leaf-only
+ * collision. The data is generated; this barrel is the stable API over it.
  *
  * @see ./matrix.generated.ts (the data) · ./collide.mjs (the collider)
  */
@@ -51,13 +51,28 @@ export const merge = (a: string, b: string): string => toUuid(Buffer.concat([uby
 
 const byAtom = new Map<string, number>()
 const byPath = new Map<string, number>()
+/** When homonym leaves share an atom key, prefer root path then shortest path. */
+const preferAtomIndex = (current: number, candidate: number): number => {
+  const ca = UUID_MATRIX_NODES[current]!
+  const cb = UUID_MATRIX_NODES[candidate]!
+  const pa = ca.path ?? ca.atom
+  const pb = cb.path ?? cb.atom
+  const da = pa.split('/').length
+  const db = pb.split('/').length
+  if (da !== db) return db < da ? candidate : current
+  if (!pa.includes('/') && pb.includes('/')) return current
+  if (pa.includes('/') && !pb.includes('/')) return candidate
+  return pa.localeCompare(pb) <= 0 ? current : candidate
+}
 UUID_MATRIX_NODES.forEach((n, i) => {
-  byAtom.set(n.atom, i)
+  const prev = byAtom.get(n.atom)
+  byAtom.set(n.atom, prev === undefined ? i : preferAtomIndex(prev, i))
   if (n.path) byPath.set(n.path, i)
-  if (n.members) for (const m of n.members) byPath.set(m, i)
 })
 
-/** Resolve a node index: full path → atom key → member path (never hand-named). */
+const NIL_PARENT = '00000000-0000-8000-8000-000000000000'
+
+/** Resolve a node index: full path → atom key (prefer root when homonym). */
 const nodeIndexOf = (key: string): number | undefined => {
   const pathKey = key.replace(/\\/g, '/')
   if (pathKey.includes('/')) {
@@ -68,6 +83,19 @@ const nodeIndexOf = (key: string): number | undefined => {
   if (ai !== undefined) return ai
   return byPath.get(pathKey)
 }
+
+/** Resolve a node index for edge/cross queries — path-first. */
+const indexOf = (key: string): number | undefined => nodeIndexOf(key)
+
+/** Direct children on the folder tree axis (parent↔child bidirectional cross). */
+const childrenByParentUuid = new Map<string, string[]>()
+UUID_MATRIX_NODES.forEach((n) => {
+  if (n.parent && n.parent !== NIL_PARENT) {
+    const arr = childrenByParentUuid.get(n.parent) ?? []
+    arr.push(n.path)
+    childrenByParentUuid.set(n.parent, arr)
+  }
+})
 
 /**
  * Resolve a node by its content-uuid (the neighbour pointers — parent/prev/next
@@ -107,31 +135,36 @@ export const coordinateAddress = (atomPath: string): string => {
   return `${path} · ${n.horo}/${measure} · ${n.uuid.slice(0, 8)}`
 }
 
-/** Atoms this atom links TO (outgoing edges). */
+/** Rodin control triad — governs off the flow ring; not an off-ring escape. */
+const CONTROL_HORO = new Set([3, 6, 9])
+
+/** Horo axis crossed — flow ring digit OR matrix `band:control` on 3·6·9. */
+export const horoCrossed = (atomPath: string, horo: number | null): boolean => {
+  if (horo === null) return false
+  if (HORO_DIGITS.includes(horo as (typeof HORO_DIGITS)[number])) return true
+  const leaf = atomPath.split('/').pop() ?? atomPath
+  const node = nodeOf(atomPath) ?? nodeOf(leaf)
+  return node?.band === 'control' && CONTROL_HORO.has(horo)
+}
+
+/** Atoms this atom path links TO (outgoing edges — path-aware). */
 export const neighborsOf = (atom: string): MatrixNode[] => {
-  const ma = matrixAtomOf(atom)
-  if (ma === undefined) return []
-  const i = byAtom.get(ma)
+  const i = indexOf(atom)
   if (i === undefined) return []
   return UUID_MATRIX_EDGES.filter((e) => e.f === i).map((e) => at(e.t)).filter(isNode)
 }
 
-/** Atoms that link TO this atom (incoming edges — its backlinks; empty ⇒ orphan). */
+/** Atoms that link TO this atom path (incoming edges — path-aware backlinks). */
 export const backlinksOf = (atom: string): MatrixNode[] => {
-  const ma = matrixAtomOf(atom)
-  if (ma === undefined) return []
-  const i = byAtom.get(ma)
+  const i = indexOf(atom)
   if (i === undefined) return []
   return UUID_MATRIX_EDGES.filter((e) => e.t === i).map((e) => at(e.f)).filter(isNode)
 }
 
-/** The binding-uuid of the edge a→b (the collision), or undefined if no such edge. */
+/** The binding-uuid of the edge a→b (path-aware), or undefined if no such edge. */
 export const bindingOf = (a: string, b: string): string | undefined => {
-  const fa = matrixAtomOf(a)
-  const ta = matrixAtomOf(b)
-  if (fa === undefined || ta === undefined) return undefined
-  const fi = byAtom.get(fa)
-  const ti = byAtom.get(ta)
+  const fi = indexOf(a)
+  const ti = indexOf(b)
   if (fi === undefined || ti === undefined) return undefined
   const edge = UUID_MATRIX_EDGES.find((e) => e.f === fi && e.t === ti)
   return edge === undefined ? undefined : edge.binding
@@ -174,6 +207,41 @@ export const prevOf = (atom: string): MatrixNode | undefined => nodeByUuid(nodeO
 
 /** The next node on the sequence ring (forward coil), or undefined. */
 export const nextOf = (atom: string): MatrixNode | undefined => nodeByUuid(nodeOf(atom)?.next)
+
+/** Direct child nodes on the folder tree axis (parent↔child bidirectional cross). */
+export const childrenOf = (atom: string): MatrixNode[] => {
+  const n = nodeOf(atom)
+  if (!n) return []
+  const paths = childrenByParentUuid.get(n.uuid) ?? []
+  return paths.map((p) => nodeOf(p)).filter(isNode)
+}
+
+/** Every bidirectional cross at an atom path — tree · ring · wikilink entanglement. */
+export interface BidirectionalCross {
+  readonly path: string
+  readonly parent: MatrixNode | undefined
+  readonly children: readonly MatrixNode[]
+  readonly prev: MatrixNode | undefined
+  readonly next: MatrixNode | undefined
+  readonly neighbors: readonly MatrixNode[]
+  readonly backlinks: readonly MatrixNode[]
+}
+
+/** Folder crosses read both ways — parent↔child, prev↔next, neighbor↔backlink. */
+export const bidirectionalCrossOf = (atom: string): BidirectionalCross | undefined => {
+  const n = nodeOf(atom)
+  if (!n) return undefined
+  const path = n.path ?? atom
+  return {
+    path,
+    parent: parentOf(atom),
+    children: childrenOf(atom),
+    prev: prevOf(atom),
+    next: nextOf(atom),
+    neighbors: neighborsOf(atom),
+    backlinks: backlinksOf(atom),
+  }
+}
 
 /**
  * The full coordinate of an atom: the three neighbour uuids + the merged

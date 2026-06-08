@@ -3,8 +3,8 @@
 
 # ebitda
 
-path `calculate/ebitda` · uuid `2629469a-fd40-849c-ad92-f723337b4965` · diamond `7f7815c0-feac-873e-aa0f-8bc6b15e89fe`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `calculate/ebitda` · uuid `558b8d9a-50cb-8b53-9f53-a8bd0ff4fcaf` · diamond `70ceaace-5ccb-88af-82c0-b92e0a2bc260`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports accounting·calculate·currency·port · exports ebitda · escapes —
 links `6/6` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `4fc220eb-04a0-8040-8f76-f27bfd7e1349` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7eadbcaa-33e3-806a-a777-e788f26b82f3` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -2,7 +2,7 @@
 
 # biometric
 
-> atom `biometric` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
+> atom `biometric` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -21,9 +21,9 @@
 
 ## typography graph
 
-- partition `biometric` · sub-root `4d930689-daf1-8cbd-9be0-638eae66884b`
-- bond degree `49` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- partition `biometric` · sub-root `f9197fdf-5dc1-8873-86fe-109885aa4b27`
+- bond degree `52` · analysis neighbors —
+- graph root `1cef4f02-a3fa-83a5-8ea0-120b724ef456`
 
 ## [[cloudflare]] bindings
 
@@ -33,16 +33,54 @@
 
 —
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·7 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `49` · sealed `1` · horo `1`
+- bond degree `52` · sealed `1` · horo `7`
 - variance `0` · balanced `1` · trinity sum `1`
 - bindings `0` · standards `0`
 
 ## identity
 
-- uuid `4d930689-daf1-8cbd-9be0-638eae66884b`
-- bonds in `16` · out `16`
+- uuid `f9197fdf-5dc1-8873-86fe-109885aa4b27`
+- bonds in `17` · out `17`
 - trinity form·code·proof `1`·`0`·`0`
 - links `25` / `25`
 - folded `1` · escapes `0`
@@ -53,4 +91,4 @@
 
 ---
 
-<sub>content-uuid `d44ffe57-d8dc-881b-a5b8-22562b06cfec` · framed by typography partition `biometric` bonds `49` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ddd33419-7914-8b08-9369-8325edfe0a00` · framed by typography partition `biometric` bonds `52` · `pnpm readme` · `pnpm readme:check`</sub>

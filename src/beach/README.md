@@ -2,7 +2,7 @@
 
 # beach
 
-> atom `beach` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
+> atom `beach` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -21,9 +21,9 @@
 
 ## typography graph
 
-- partition `beach` · sub-root `9367614f-4c85-80d7-b4fd-aa15b206638e`
+- partition `beach` · sub-root `05b06183-6db6-85fe-8dd8-77b1ad2f72e1`
 - bond degree `6` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- graph root `1cef4f02-a3fa-83a5-8ea0-120b724ef456`
 
 ## [[cloudflare]] bindings
 
@@ -33,15 +33,53 @@
 
 - `schema.org — the type vocabulary, collided to single words` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·2 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `6` · sealed `1` · horo `5`
+- bond degree `6` · sealed `1` · horo `2`
 - variance `0` · balanced `1` · trinity sum `1`
 - bindings `0` · standards `1`
 
 ## identity
 
-- uuid `9367614f-4c85-80d7-b4fd-aa15b206638e`
+- uuid `05b06183-6db6-85fe-8dd8-77b1ad2f72e1`
 - bonds in `2` · out `2`
 - trinity form·code·proof `1`·`0`·`0`
 - links `2` / `2`
@@ -53,4 +91,4 @@
 
 ---
 
-<sub>content-uuid `e3e36e74-d204-815d-a807-d1ad59dfb413` · framed by typography partition `beach` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `4638b4e7-01b1-8b8b-a79b-ad2b7a35e4b6` · framed by typography partition `beach` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>

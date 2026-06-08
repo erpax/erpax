@@ -3,8 +3,8 @@
 
 # boltzmann
 
-path `boltzmann` · uuid `4618156b-109a-8e4d-bbfc-b8a26cd61225` · diamond `6623075b-88e3-8481-b484-2127b2c552f6`
-horo `8` `crest` · trinity `1·1·1` · sealed `1`
+path `boltzmann` · uuid `91d2f972-b0d0-8b3f-b5a8-54475e147f17` · diamond `e92d63f7-6b7b-86b6-9ab0-061aa3b49427`
+horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports — · exports const·function · escapes —
 links `16/16` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law entropy is the log of the microstate count, S = k·ln W — zero for one arr
 
 ---
 
-<sub>content-uuid `8d5470fe-031a-89e7-8ad7-5c2331bbe4ff` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7c950b9b-822e-821e-a191-8c98137cca18` · `pnpm readme` · `pnpm computed:check`</sub>

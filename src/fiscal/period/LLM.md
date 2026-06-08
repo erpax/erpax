@@ -4,7 +4,7 @@
 # period
 
 path `fiscal/period` · uuid `30e05202-9953-85fe-b814-e7b20a36244a` · diamond `09d8cd26-b62a-87dd-af3e-1b4c06938a62`
-horo `4` `weave` · trinity `1·1·1` · sealed `1`
+horo `4` `weave` · trinity `1·1·1` · sealed `0`
 imports @/fiscal/period/resolver · exports ...·FiscalPeriodConfig·FiscalPeriodResolver·PeriodResolution·barrel · escapes —
 links `1/1` · folded `1` · bonds in `17` out `18`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law the fiscal calendar is fully reproducible from its configuration plus the im
 
 ---
 
-<sub>content-uuid `310bfde5-95ec-8fea-882d-72fd61cb36d3` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b5fef5dc-af68-808c-a9f3-acfdc96e0ccc` · `pnpm readme` · `pnpm computed:check`</sub>

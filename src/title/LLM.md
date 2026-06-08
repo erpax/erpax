@@ -3,15 +3,15 @@
 
 # title
 
-path `title` · uuid `8bc99b25-bbad-8fa8-8675-237b134aa3fe` · diamond `7623e213-3b29-8abc-bb44-965c7823ef2d`
+path `title` · uuid `8bc99b25-bbad-8fa8-8675-237b134aa3fe` · diamond `fddc8c0b-a316-8dd2-9cc7-0a1e3ee7974c`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports eidr·job·law · exports title · escapes —
-links `3/3` · folded `1` · bonds in `5` out `5`
+links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·generically·landmarks·memories·stat · ← cohort·generically·landmarks·memories·stat
+neighbors → eidr·job·law · ← eidr·job·law
 analysis —
 law title is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `41c9e036-9e4e-8af9-88f8-0e0345b20da4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6f238ea6-2b18-86b2-aa87-0635f5caa9e5` · `pnpm readme` · `pnpm computed:check`</sub>

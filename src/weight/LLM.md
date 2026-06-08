@@ -3,15 +3,15 @@
 
 # weight
 
-path `weight` · uuid `6764fcbe-ca72-867a-ba82-e8cf6ca63806` · diamond `f8b248b1-88a5-8dfa-a7a9-673556b085da`
+path `weight` · uuid `6764fcbe-ca72-867a-ba82-e8cf6ca63806` · diamond `58e2bb61-344d-8861-a5d2-7be003bb12dc`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports law·molecular·monoisotopic·percentage·tongue·total·trailer · exports weight · escapes —
-links `7/7` · folded `1` · bonds in `4` out `4`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → law·molecular·monoisotopic·percentage·tongue·total·trailer · ← law·molecular·monoisotopic·percentage·tongue·total·trailer
 analysis —
 law weight is a measured mass that must carry its unit — a bare number is meaningless, and the same substance weighed differently (molecular, monoisotopic, trailer, tongue) is one quantity expressed against different references, never different things.
 
 ---
 
-<sub>content-uuid `a00eabc2-9979-82e5-bd80-942f7bdd089c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `fd69a3b0-30e2-87d4-939d-b8371dbde24c` · `pnpm readme` · `pnpm computed:check`</sub>

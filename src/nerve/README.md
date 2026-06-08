@@ -25,7 +25,23 @@
 
 - partition `nerve` · sub-root `05d8fb87-d556-8ee1-abf2-209adb2e7433`
 - bond degree `19` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `computed from first principles (threshold step · refractory window · saltatory speed)` · banner
+- `Hodgkin–Huxley action potential · resting ≈−70 mV, threshold ≈−55 mV, spike ≈+40 mV` · banner
+- `Hodgkin–Huxley action potential · resting ≈−70 mV, threshold ≈−55 mV, spike ≈+40 mV, refractory ~2 ms, saltatory up to ≈120 m/s` · banner
+
+## analytics
+
+- bond degree `19` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `3`
 
 ## identity
 
@@ -41,4 +57,4 @@
 
 ---
 
-<sub>content-uuid `9ea4d88b-f31f-85e7-888c-75f8c029007b` · framed by typography partition `nerve` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `27628c8b-0c36-8d53-a90d-affdcc9a4aad` · framed by typography partition `nerve` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>

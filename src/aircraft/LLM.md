@@ -3,8 +3,8 @@
 
 # aircraft
 
-path `aircraft` · uuid `458aa72f-43cc-8633-b2e5-5c9ba8ea2a0a` · diamond `09b314d5-9655-82f8-b17c-78f11c4a7a68`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `aircraft` · uuid `4d430491-e3da-88d8-a24a-30b1bf813c67` · diamond `ec80ae2f-4c2b-866b-b7e3-ebfd3a4950b2`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports law·thing·vehicle · exports aircraft · escapes —
 links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law aircraft is one schema.org word, content-addressed; the same word collides e
 
 ---
 
-<sub>content-uuid `397c6af5-4e8a-8e96-b1ef-7f6d816290e2` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `27f6aa54-ae5b-8f45-b824-9e0e09e409fc` · `pnpm readme` · `pnpm computed:check`</sub>

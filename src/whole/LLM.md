@@ -3,15 +3,15 @@
 
 # whole
 
-path `whole` · uuid `3848860b-acb8-84a5-8324-379b0cebd3cc` · diamond `5618c6c9-7aad-8313-94a7-f35c2bc4b4a4`
+path `whole` · uuid `3848860b-acb8-84a5-8324-379b0cebd3cc` · diamond `2f5457d8-e8d4-8037-a5f2-7ad697f5e903`
 horo `9` `unity` · trinity `1·0·0` · sealed `1`
 imports accounting·all·begin·close·collapse·collections·config·duality·end·fields·fractal·generate·give·holographic·identity·manufacturing·merge·one·open·part·plugins·sequence·take·versions·whole · exports whole · escapes —
-links `29/29` · folded `1` · bonds in `9` out `9`
+links `29/29` · folded `1` · bonds in `107` out `107`
 faces worker·plugin·pwa `0·0·0`
-neighbors → balance·calendars·corruption·dropoff·eliminations·founder·good·landmarks·marine · ← balance·calendars·corruption·dropoff·eliminations·founder·good·landmarks·marine
+neighbors → accounting·agent·agriculture·akashic·all·animism·archangel·atom·aura·begin·bogomilism·catholicism·chat·christianity·close·coherence·coil·collapse·collections·config·consciousness·cost·decentralization·decompression·diamond·dimension·domain·duality·ecosystem·element·end·entropy·entry·fields·forge·fractal·fusion·gate·generate·give·gnosticism·gravity·hallucination·herd·hermeticism·hinduism·holographic·holographic·identity·judaism·kabbalah·law·lexical·lichen·manichaeism·manufacturing·matrix·memory·merge·metatron·one·one·open·paganism·part·peace·permaculture·plugins·prayer·protestantism·purity·readme·reference·regeneration·religion·reverse·ritual·science·sectors·self·sequence·shamanism·share·shinto·similar·sin·skills·society·suffering·sustainability·sync·take·tamper·taoism·team·thought·torus·trinity·uuid·vedanta·versions·void·weave·whole·whole·wisdom·yield · ← accounting·agent·agriculture·akashic·all·animism·archangel·atom·aura·begin·bogomilism·catholicism·chat·christianity·close·coherence·coil·collapse·collections·config·consciousness·cost·decentralization·decompression·diamond·dimension·domain·duality·ecosystem·element·end·entropy·entry·fields·forge·fractal·fusion·gate·generate·give·gnosticism·gravity·hallucination·herd·hermeticism·hinduism·holographic·identity·judaism·kabbalah·law·lexical·lichen·manichaeism·manufacturing·matrix·memory·merge·metatron·one·open·paganism·part·peace·permaculture·plugins·prayer·protestantism·purity·readme·reference·regeneration·religion·reverse·ritual·science·sectors·self·sequence·shamanism·share·shinto·similar·sin·skills·society·suffering·sustainability·sync·take·tamper·taoism·team·thought·torus·torus·trinity·uuid·uuid·vedanta·versions·void·weave·whole·whole·wisdom·yield
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `f1b35877-f9db-8817-a125-4f26e9aa244f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9570fc7f-3d16-856c-a25c-1b396f6f0f80` · `pnpm readme` · `pnpm computed:check`</sub>

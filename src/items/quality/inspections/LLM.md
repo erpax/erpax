@@ -3,8 +3,8 @@
 
 # inspections
 
-path `items/quality/inspections` · uuid `ba2d22e6-2ec8-847b-bf8a-76bb35c038b9` · diamond `3d8620f7-d464-801e-92f7-55aacb5116d8`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+path `items/quality/inspections` · uuid `46c9af13-f2c1-87a2-bc07-ce274ada67b0` · diamond `d6905e7d-a4f1-8db9-b459-dd3a07a310ae`
+horo `1` `base` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/chain/event/emitter·@/standard/collection/hook · exports default · escapes —
 links `7/7` · folded `1` · bonds in `11` out `11`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law every inspection records an outcome disposition (pass/fail/conditional) with
 
 ---
 
-<sub>content-uuid `b5ee7603-cfab-8ee8-8ce7-0b578fc17368` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `925583db-4bc0-8d63-b24f-c0b4038bf9e5` · `pnpm readme` · `pnpm computed:check`</sub>

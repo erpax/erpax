@@ -3,8 +3,8 @@
 
 # career
 
-path `career` · uuid `b3c32b22-999c-8354-9604-623582f52a4a` · diamond `d6124338-b48a-8a89-90bc-efb0d2a58ca0`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `career` · uuid `3cce1e87-031e-847b-8096-c9c0ad1bd63e` · diamond `8740fe6c-3a74-8642-a8e3-81b38e966183`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports age·allocation·cohort·crisis·decompression·health·horo·law·market·positions·sequence·status·time·wellbeing · exports career · escapes —
 links `42/42` · folded `1` · bonds in `14` out `14`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law a career is not a job but a trajectory — one actor's ordered [[sequence]] 
 
 ---
 
-<sub>content-uuid `39f162fd-11d5-876b-bec9-e6cd116056c8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `36e2e02e-2f29-80a5-93c8-26e2bb9e77cd` · `pnpm readme` · `pnpm computed:check`</sub>

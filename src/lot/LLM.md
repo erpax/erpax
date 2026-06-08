@@ -4,7 +4,7 @@
 # lot
 
 path `lot` · uuid `a9babe43-21a0-8f81-ab45-db3f18b35430` · diamond `7835e597-a35c-8a7f-83c3-72f83e7550db`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+horo `4` `weave` · trinity `1·0·0` · sealed `0`
 imports balance·law·lots·manufacturing · exports lot · escapes —
 links `9/9` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law a lot is the singular model of one row — a tracked batch of like units pro
 
 ---
 
-<sub>content-uuid `deb61eed-3886-856d-9c2e-9adef61685f1` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3dea5df0-7384-89ed-afcd-5e49f621365d` · `pnpm readme` · `pnpm computed:check`</sub>

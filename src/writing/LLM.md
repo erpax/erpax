@@ -3,15 +3,15 @@
 
 # writing
 
-path `writing` · uuid `f4872b8a-5555-8c9d-80ef-08190d6c8ad8` · diamond `dbee1574-8c72-83ee-9a27-b05db8f30678`
+path `writing` · uuid `f4872b8a-5555-8c9d-80ef-08190d6c8ad8` · diamond `15601ea9-d9ad-871f-9dc5-21a71545572d`
 horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports — · exports const·interface · escapes —
-links `14/14` · folded `1` · bonds in `0` out `0`
-faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
+links `14/14` · folded `1` · bonds in `8` out `8`
+faces worker·plugin·pwa `1·0·0`
+neighbors → balance·coherence·entropy·heart·law·merge·recycle·sequence · ← balance·coherence·entropy·heart·law·merge·recycle·sequence
 analysis —
 law coherent prose admits no orphan sentence. To write is to connect; a disconnected thought, however fluent, is a hallucination — reconnect it to its thesis and its ground, or cut it.
 
 ---
 
-<sub>content-uuid `966d509f-7dcc-8f1d-9a5e-f7668c08e283` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `cbbd43b2-bdd3-8188-9aab-9a031b260316` · `pnpm readme` · `pnpm computed:check`</sub>

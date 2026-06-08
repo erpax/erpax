@@ -3,15 +3,15 @@
 
 # spread
 
-path `spread` · uuid `e2b16414-1854-8706-9529-5c8df7c6ba6b` · diamond `7d88dfa7-ae62-85b7-b9c2-76b55fc5939a`
+path `spread` · uuid `e2b16414-1854-8706-9529-5c8df7c6ba6b` · diamond `a129ec55-a222-829c-bbe8-5704fa1c08be`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·disease·exchange·law·merge·rate·statistics·sti · exports spread · escapes —
-links `8/8` · folded `1` · bonds in `7` out `7`
+links `8/8` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·audit·memories·progression·spouse·spreadsheet·symbol · ← access·audit·memories·progression·spouse·spreadsheet·symbol
+neighbors → collapse·disease·exchange·law·merge·rate·statistics·sti · ← collapse·disease·exchange·law·merge·rate·statistics·sti
 analysis —
 law spread is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `da7f5dfe-eb9e-8bee-9e71-baad43805837` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ae50c6b3-786e-8509-97cb-77c4273439da` · `pnpm readme` · `pnpm computed:check`</sub>

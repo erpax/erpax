@@ -3,8 +3,8 @@
 
 # arterial
 
-path `arterial` · uuid `ca1e8319-71e8-87d7-b964-4e467a42e304` · diamond `6afe0804-5c19-89d0-a21c-55e7258a1d80`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `arterial` · uuid `cfba1dce-af84-804b-a9ad-73817efe4bbe` · diamond `cd59c0db-43a9-8a3e-9ef5-6cbea33d0643`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports branch·collapse·law·merge·sti · exports arterial · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law arterial is one schema.org word, content-addressed; the same word collides e
 
 ---
 
-<sub>content-uuid `44314a4f-dc4a-8bc9-8a66-0c85768e72bf` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8c117bb4-5710-83f3-ad96-a161a574d88e` · `pnpm readme` · `pnpm computed:check`</sub>

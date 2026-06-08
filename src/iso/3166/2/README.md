@@ -2,9 +2,11 @@
 
 # 2
 
-> atom `iso/3166/2` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
+> atom `iso/3166/2` · horo `1` `base` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `iso/3166/2` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,15 +23,116 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `law:a subdivision code is only valid as `<alpha-2>-<subdivision>` — a region is always named relative to its country, never standalone, so the parent country is inseparable from the subnational jurisdiction.`
+- `seal:unsealed`
+- `trigger:Use when implementing or referencing ISO 3166-2 — Country subdivisions.`
+- `trigger:a subdivision code is only valid as `<alpha-2>-<subdivision>` — a region is always named relative to its country, never standalone, so the parent country is inseparable from the subnational jurisdiction.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `36a6a620-c2a2-8379-bd7d-2bb9f1ae9243` · `53883a4c-1867-8e42-af07-2972dd971b45` · `634914e8-0306-8e62-b25c-20c295c96bd5`
+- content uuids `4da10071-f466-86d3-9012-06df8a9fad9a` · `a58d5413-145f-8ed8-a182-511c114eb8a4` · `ca5836ce-bed5-8fcc-8d82-7d17b9717c34`
+
+## [[entropy]] — gaps · seals
+
+> account code `iso/3166/2` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.1` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `2` eb | Σ seal `11.1` eb |
+
+> net residual `-9.1` eb · seal/gap ratio `5.55` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `iso` · sub-root `ea5c4346-ba0e-8fac-9959-143d07932374`
+- partition `iso` · sub-root `054a78e4-75b2-8683-a561-b45329572e8f`
 - bond degree `3` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ISO-3166-2` · catalogue
+- `ISO-3166-2:2020 subdivision-codes` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·1 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `3` · sealed `0` · horo `1`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `2`
 
 ## identity
 
-- uuid `5dfa5ebd-025f-8835-8b94-96adc1d2d74a`
+- uuid `d9198d40-e78b-8cfb-9e10-15b04fa80640`
 - bonds in `1` · out `1`
 - trinity form·code·proof `1`·`1`·`1`
 - links `1` / `1`
@@ -37,8 +140,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `a3e4ec99-353a-86ab-8db2-b92097e06191` · framed by typography partition `iso` bonds `3` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0ab48098-481c-87fe-b28c-f7cc1e821b75` · framed by typography partition `iso` bonds `3` · `pnpm readme` · `pnpm readme:check`</sub>

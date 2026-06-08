@@ -3,15 +3,15 @@
 
 # withdrawal
 
-path `withdrawal` · uuid `6cf8dc40-4e6d-8785-9ef5-0eda33a7cb0c` · diamond `93690636-a653-856e-b61b-1662444ae9c0`
+path `withdrawal` · uuid `6cf8dc40-4e6d-8785-9ef5-0eda33a7cb0c` · diamond `dbdf743f-41d2-8572-8ce9-a8c3190ae419`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports animal·certification·grade·harvest·health·lactation·law·livestock·period·risk · exports withdrawal · escapes —
-links `20/20` · folded `1` · bonds in `2` out `2`
+links `20/20` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → animal·certification·grade·harvest·health·lactation·law·livestock·period·risk · ← animal·certification·grade·harvest·health·lactation·law·livestock·period·risk
 analysis —
 law a withdrawal period is the residue-safety embargo that gates saleability — the mandatory days after a treatment before an [[animal]]'s produce is residue-safe to sell; produce is accountable only once the clock clears.
 
 ---
 
-<sub>content-uuid `1fdd5948-4a60-8dec-8c68-83646e998856` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `957ebc29-5426-8792-b771-ec1a87d5270f` · `pnpm readme` · `pnpm computed:check`</sub>

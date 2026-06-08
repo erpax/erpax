@@ -2,7 +2,7 @@
 
 # page
 
-> atom `page` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
+> atom `page` · horo `5` `round` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -17,13 +17,28 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `7` | Σ `7` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `page` · sub-root `35dc5f33-4f1c-88b5-a005-f78765dc3a60`
-- bond degree `126` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- bond degree `0` · analysis neighbors —
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ECMA-402` · catalogue
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `0` · sealed `0` · horo `5`
+- variance `1` · balanced `0` · trinity sum `1`
+- bindings `0` · standards `2`
 
 ## identity
 
@@ -35,8 +50,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `46d71609-0cc8-8c86-a5d3-c481e1d7cc9f` · framed by typography partition `page` bonds `126` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `03a878ac-7b6b-8d96-aba4-f36be45cd1bd` · framed by typography partition `page` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

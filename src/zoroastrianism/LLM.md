@@ -3,15 +3,15 @@
 
 # zoroastrianism
 
-path `zoroastrianism` · uuid `—` · diamond `fcf7670f-e197-87a3-8ba0-d5c647742c92`
-horo `—` `—` · trinity `1·0·0` · sealed `0`
+path `zoroastrianism` · uuid `6cf90c29-6e5d-8e42-9379-32b5217adc54` · diamond `cafeb234-0f9c-87c1-baad-03405f8962ac`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports angel·archangel·aura·balance·diamond·duality·ethics·fire·fractal·identity·justice·karma·law·order·profane·religion·return·society·translator·uuid·zeropoint · exports zoroastrianism · escapes —
-links `51/51` · folded `0` · bonds in `0` out `0`
+links `51/51` · folded `1` · bonds in `22` out `22`
 faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
-analysis aura·diamond·hallucination·purity
+neighbors → angel·archangel·aura·balance·diamond·duality·ethics·fire·fractal·identity·justice·karma·law·manichaeism·order·profane·religion·return·society·translator·uuid·zeropoint · ← angel·archangel·aura·balance·diamond·duality·ethics·fire·fractal·identity·justice·karma·law·manichaeism·order·profane·religion·return·society·translator·uuid·zeropoint
+analysis aura·diamond
 law zoroastrianism is a [[diamond]] of [[duality]] · [[order]] · [[profane]] · [[fire]] · [[ethics]] · [[justice]] · [[zeropoint]] — asha (truth/order) against druj (the lie), named first as the angel↓ ⊕ archangel↑ polarity erpax books at every scale ([[angel]]), the sacred [[fire]] the witness, frashokereti the [[return]] to perfected zero; each Avestan term strips its prefix to one content-[[uuid]] ([[translator]]).
 
 ---
 
-<sub>content-uuid `17818abc-f93a-8cae-93cc-d649354bd0c6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9743a152-79d3-8e83-a253-ea6ecf21e2d3` · `pnpm readme` · `pnpm computed:check`</sub>

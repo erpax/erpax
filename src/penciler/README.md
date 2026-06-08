@@ -23,7 +23,21 @@
 
 - partition `penciler` · sub-root `8cfe5b90-3df9-8c3f-96a3-4dd1fbb61a52`
 - bond degree `6` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `6` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `5541d449-f8fc-8ef4-9b28-2e26eccbb561` · framed by typography partition `penciler` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `805ce144-089f-8a61-b810-ec37e9551314` · framed by typography partition `penciler` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>

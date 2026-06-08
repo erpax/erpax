@@ -2,9 +2,11 @@
 
 # accounts
 
-> atom `bank/accounts` · horo `1` `base` · [[balance]] `1` · [[seal]] `0`
+> atom `bank/accounts` · horo `8` `crest` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `bank/accounts` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -19,13 +21,59 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `3` · [[conservation]] `0` · [[entry]] · [[purity]]
+
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+- `gap:stray:[[gap]]/[[diamond]]/stray/bank/`
+- `gap:stray:[[gap]]/[[diamond]]/stray/payment/`
+- `gap:stray:[[gap]]/[[diamond]]/stray/payroll/`
+
+### collapse
+
+- `balance:variance=3`
+- `seal:unsealed`
+- `trigger:Use when managing bank account master data — IBAN (ISO-13616 mod-97 validated), BIC, account name, purpose (operating/payroll/tax/reserve/FX), GL cash account link, currency, country auto-derived from IBAN; separate from statement transactions. The cash-account master collection.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `40d0aee7-1dd7-8afb-a443-d0fdaced0f29` · `77b9d6c0-6489-8fff-b24d-d1811340180e` · `a2fc5127-c0b5-85fb-9a01-5c6c7bab432c` · `b803fd51-bdcb-8df4-8493-f94c9590f403` · +2 more
+- content uuids `19124747-d5ae-8b55-a912-fda3c54f876e` · `3b75667b-3a52-8201-a9c3-7cbace257b66` · `887f22f2-0d29-847b-8a95-26374c0469f7` · `b6ac22ba-f934-8402-a9f3-6baf03cf50fe` · +2 more
+
+## [[entropy]] — gaps · seals
+
+> account code `bank/accounts` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[diamond]]/stray/bank/ `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[diamond]]/stray/payment/ `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+| [[gap]]/[[diamond]]/stray/payroll/ `1` eb | [[seal]]/[[trinity]]/proof `1` eb |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[lattice]]/folded `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.8` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+| Σ gap `5` eb | Σ seal `8.8` eb |
+
+> net residual `-3.8` eb · seal/gap ratio `1.76` · [[entropy]] · [[seal]]
 
 ## typography graph
 
-- partition `bank` · sub-root `87606df1-5071-8b98-ac3b-0b1f53544470`
-- bond degree `65` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- partition `bank` · sub-root `04fbb928-276c-8212-a5e8-bb8be5c2fc18`
+- bond degree `0` · analysis neighbors —
+- graph root `86252db0-c776-84eb-b8e4-c884dca3a3ba`
 
 ## [[cloudflare]] bindings
 
@@ -53,7 +101,6 @@
 - `ILO-C001` · catalogue
 - `ISO-13616-1` · catalogue
 - `ISO-13616-1:2020 iban` · banner
-- `ISO-19011:2018 audit-trail bank-account-master` · banner
 - `ISO-20022` · catalogue
 - `ISO-20022 financial-messaging account-identification` · banner
 - `ISO-4217` · catalogue
@@ -63,16 +110,54 @@
 - `ISO-9362:2022 bic` · banner
 - `SOX §404 internal-controls cash-management` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unbalanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| not-held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·8 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `65` · sealed `0` · horo `1`
-- variance `0` · balanced `1` · trinity sum `3`
-- bindings `0` · standards `29`
+- bond degree `0` · sealed `0` · horo `8`
+- variance `3` · balanced `0` · trinity sum `3`
+- bindings `0` · standards `28`
 
 ## identity
 
-- uuid `afb97329-3149-81a6-a9b4-65c605b99d4c`
-- bonds in `19` · out `22`
+- uuid `ce2bb801-5cd9-8fca-9fd1-c5973fabeab3`
+- bonds in `10` · out `10`
 - trinity form·code·proof `1`·`1`·`1`
 - links `7` / `7`
 - folded `1` · escapes `0`
@@ -83,4 +168,4 @@
 
 ---
 
-<sub>content-uuid `b1f4e1e8-885f-82b5-a66c-b18103f1e379` · framed by typography partition `bank` bonds `65` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `784d5dd6-fea8-8aab-9205-cbfa49431a73` · framed by typography partition `bank` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

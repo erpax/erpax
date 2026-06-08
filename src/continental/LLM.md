@@ -3,8 +3,8 @@
 
 # continental
 
-path `continental` · uuid `65667d33-8ef4-8dd8-a7a5-23596e808991` · diamond `3b92677b-35ac-8b92-aa51-bb86a311edc8`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `continental` · uuid `c706d85d-1557-88a9-9854-10fc8c8444e4` · diamond `8de97b56-387a-8d93-a31d-b65b34541870`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports continental · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law continental is one schema.org word, content-addressed; the same word collide
 
 ---
 
-<sub>content-uuid `1db36ba9-68ee-8131-9705-c66a07eafd8c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `da36e178-9e68-83cf-aad4-17590cc49ce4` · `pnpm readme` · `pnpm computed:check`</sub>

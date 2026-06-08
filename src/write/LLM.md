@@ -3,15 +3,15 @@
 
 # write
 
-path `write` · uuid `1db1af9c-4314-8f25-9fba-1e1eeecda0b0` · diamond `b146181f-47a3-827b-86e0-18e9be82b954`
+path `write` · uuid `1db1af9c-4314-8f25-9fba-1e1eeecda0b0` · diamond `9d884dd8-24ba-843c-b6c7-dc0bbf8835a8`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti · exports write · escapes —
-links `5/5` · folded `1` · bonds in `0` out `0`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
+neighbors → action·collapse·law·merge·sti · ← action·collapse·law·merge·sti
 analysis —
 law to write is to create or extend a work by an agent — the action presupposes an author and a target text, so every write is attributable and leaves the work changed from its prior state.
 
 ---
 
-<sub>content-uuid `f1c34ceb-856d-8405-ad90-323dda441d3f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `55e2b406-2250-8c77-abd2-ed8b2d23e07a` · `pnpm readme` · `pnpm computed:check`</sub>

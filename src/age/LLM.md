@@ -3,8 +3,8 @@
 
 # age
 
-path `age` · uuid `80f88272-c47a-8da1-98ce-fafab0cff77d` · diamond `11ee4942-8de2-8779-a04f-c242ed4f41e1`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `age` · uuid `b685306b-5748-8509-a776-594858440e52` · diamond `cd843add-643a-8251-a5d0-64fe6c21eecb`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports allocation·balance·career·cohort·crisis·decompression·dimension·health·horo·market·power·sequence·society·status·time·wellbeing · exports age · escapes —
 links `39/39` · folded `1` · bonds in `23` out `23`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `db705aa7-fae5-808c-abad-3bab3faaff93` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1c7c6b88-2c54-8bac-b2b9-4e81c68eb34d` · `pnpm readme` · `pnpm computed:check`</sub>

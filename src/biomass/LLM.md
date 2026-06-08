@@ -3,8 +3,8 @@
 
 # biomass
 
-path `biomass` · uuid `a21b1c67-45fa-80e3-989c-5310f4cc1e72` · diamond `0fd12c5e-adba-875d-b46a-c7a20099f32e`
-horo `2` `share` · trinity `1·1·1` · sealed `1`
+path `biomass` · uuid `16a20495-5696-8302-afb0-f6546d668344` · diamond `86ce2aa0-55e9-84f8-8b91-f6f77fb0cf33`
+horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports — · exports const · escapes —
 links `30/30` · folded `1` · bonds in `18` out `18`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `8af46ec7-fc0b-8d65-9dab-8dc2a36c639c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1b71ea46-5c01-8148-adf3-6a14a0c875a4` · `pnpm readme` · `pnpm computed:check`</sub>

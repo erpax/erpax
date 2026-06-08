@@ -3,15 +3,15 @@
 
 # substance
 
-path `substance` · uuid `9460a006-aad7-8772-a07c-4a0bb57d77c3` · diamond `6e24a218-9342-8a8a-b9e5-3d70aad692bd`
+path `substance` · uuid `9460a006-aad7-8772-a07c-4a0bb57d77c3` · diamond `fc86c898-b64b-89db-bf6a-9ddc19f58ad0`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports chemical·law · exports substance · escapes —
-links `2/2` · folded `1` · bonds in `7` out `7`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accessibility·benefit·cohort·landmarks·memories·stat·unlimited · ← accessibility·benefit·cohort·landmarks·memories·stat·unlimited
+neighbors → chemical·law · ← chemical·law
 analysis —
 law substance is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `77b558e9-8921-82fe-9609-7fab0ae8ab4a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `40869374-e582-85b3-ac72-a579718f78a1` · `pnpm readme` · `pnpm computed:check`</sub>

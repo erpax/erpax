@@ -3,15 +3,15 @@
 
 # entries
 
-path `employees/time/entries` · uuid `903df318-70a5-8608-9f3f-52170c6a3cd9` · diamond `dd8cae99-6cb0-84ba-a28d-cadb4cdd3594`
-horo `5` `round` · trinity `1·1·1` · sealed `1`
+path `employees/time/entries` · uuid `d9e0132b-e72c-80cb-8e24-366602ff56ec` · diamond `9a6560b1-4cd9-8057-9a9f-280a5b9e05a4`
+horo `1` `base` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/auto/set/timestamp·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
-links `7/7` · folded `1` · bonds in `37` out `40`
+links `7/7` · folded `1` · bonds in `34` out `34`
 faces worker·plugin·pwa `1·0·0`
-neighbors → accounting·accounting·accrual·adjustments·assets·bookings·classifications·combinations·cycles·deduction·deferral·deferredrevenue·elimination·eliminations·employees·events·harvest·horo·identity·identity·journals·law·law·law·modifications·orders·postings·prepaid·proof·proof·provision·recognition·reconciliations·refunds·runs·sales·standard·standard·transaction·transactions · ← accounting·accrual·adjustments·adjustments·adjustments·assets·bookings·classifications·combinations·cycles·deduction·deferral·deferredrevenue·elimination·eliminations·employees·events·harvest·horo·identity·journals·law·modifications·orders·postings·prepaid·proof·provision·recognition·reconciliations·refunds·runs·sales·standard·transaction·transactions·transactions
+neighbors → accounting·accrual·adjustments·adjustments·adjustments·assets·bookings·classifications·combinations·cycles·deduction·deferral·deferredrevenue·elimination·eliminations·events·harvest·identity·journals·law·modifications·orders·postings·prepaid·proof·provision·recognition·reconciliations·refunds·runs·sales·standard·transactions·transactions · ← accounting·accrual·adjustments·adjustments·adjustments·assets·bookings·classifications·combinations·cycles·deduction·deferral·deferredrevenue·elimination·eliminations·events·harvest·identity·journals·law·modifications·orders·postings·prepaid·proof·provision·recognition·reconciliations·refunds·runs·sales·standard·transactions·transactions
 analysis —
 law one row per day/task of employee work time — its kind drives GL allocation and billable-rate project costing, gated by approval and linked to a payroll run for IAS-19 variable pay; a single-folder collection node (no scatter, no drift).
 
 ---
 
-<sub>content-uuid `827798bf-589c-8402-aaa0-903f64273a6c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `67e5623e-9c5d-8340-9cea-28d2d25c208d` · `pnpm readme` · `pnpm computed:check`</sub>

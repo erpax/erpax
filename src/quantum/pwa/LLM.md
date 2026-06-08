@@ -3,15 +3,15 @@
 
 # pwa
 
-path `quantum/pwa` · uuid `04abbc62-235f-8e2d-8ae3-6a04152cbf53` · diamond `a4f6a554-b68e-8f5d-83d8-cc80a77b1952`
+path `quantum/pwa` · uuid `82d5c1c8-3b2e-8689-a193-1ff13b197a6c` · diamond `03475bec-f52a-8175-b58c-9df0dc795395`
 horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports @/pwa·@/quantum/app · exports const · escapes —
-links `14/14` · folded `1` · bonds in `21` out `23`
+links `14/14` · folded `1` · bonds in `18` out `18`
 faces worker·plugin·pwa `1·0·0`
-neighbors → app·cache·cost·diamond·duality·fractal·identity·law·law·merge·plugin·proof·public·pwa·quantum·queue·search·sequence·standard·test·uuid·uuid·worker · ← app·cache·cost·diamond·duality·fractal·identity·law·merge·plugin·proof·public·pwa·quantum·queue·search·sequence·standard·test·uuid·worker
+neighbors → cache·cache·cost·diamond·duality·fractal·identity·law·merge·plugin·proof·public·pwa·queue·sequence·standard·uuid·worker · ← cache·cache·cost·diamond·duality·fractal·identity·law·merge·plugin·proof·public·pwa·queue·sequence·standard·uuid·worker
 analysis diamond
 law a cached asset round-trips by its content-uuid, so offline retrieval is deterministic — the same content is always a cache hit and never depends on the network, only on its content-address; and the corpus is installable exactly while every folder is a quantum app.
 
 ---
 
-<sub>content-uuid `27ae426b-703e-8619-9f93-42574684470e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8b1b6407-65df-8f7b-839e-243bea3b7ca1` · `pnpm readme` · `pnpm computed:check`</sub>

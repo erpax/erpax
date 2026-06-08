@@ -3,15 +3,15 @@
 
 # color
 
-path `color` · uuid `955e8ae5-e8e3-89e3-b818-b2129c86809b` · diamond `3bbe06d2-f8c7-8adc-8bbc-ea734a6c9f06`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+path `color` · uuid `b060a371-7eac-81be-b8c7-e54e98a2fd7c` · diamond `5bbd5032-55fb-89a4-9523-bee034f4b0c8`
+horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports — · exports const · escapes —
-links `4/4` · folded `1` · bonds in `16` out `16`
+links `4/4` · folded `1` · bonds in `13` out `13`
 faces worker·plugin·pwa `0·0·0`
-neighbors → chakra·chart·coherence·color·design·heart·hooks·interior·law·law·photon·pixel·render·swatch·test·vehicle · ← chakra·chart·chart·coherence·color·design·heart·hooks·interior·law·photon·pixel·render·swatch·test·vehicle
+neighbors → chart·chart·color·design·heart·hooks·interior·law·photon·pixel·render·swatch·vehicle · ← chart·chart·color·design·heart·hooks·interior·law·photon·pixel·render·swatch·vehicle
 analysis —
 law color is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `c4f9ae13-25f1-8ef4-a155-beb350eb1847` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0cb69470-02b7-8d7b-b6e2-b0e23368d3a8` · `pnpm readme` · `pnpm computed:check`</sub>

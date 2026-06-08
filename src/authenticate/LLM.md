@@ -3,8 +3,8 @@
 
 # authenticate
 
-path `authenticate` · uuid `1bc11e06-2d5b-81b9-bc95-f32ed66b351f` · diamond `423db766-3ba1-89de-9450-758471cb3086`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `authenticate` · uuid `3d7094d2-a4e0-89c4-a4c7-3b9ab5c5dd5e` · diamond `29cd1ad1-70fc-8a4a-9c48-a6e3466a5070`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti · exports authenticate · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law authenticate is one schema.org word, content-addressed; the same word collid
 
 ---
 
-<sub>content-uuid `9fdd926e-5ccf-88d7-97b9-9f1ceab175d4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `07acb295-f11b-83a2-9cf1-b9512982b1be` · `pnpm readme` · `pnpm computed:check`</sub>

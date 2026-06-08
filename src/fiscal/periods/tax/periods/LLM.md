@@ -3,15 +3,15 @@
 
 # periods
 
-path `fiscal/periods/tax/periods` · uuid `5a460662-0765-8b8e-adb7-2e6d1a33202d` · diamond `f24aaf69-5ef7-8da2-b13f-a5c811b4b917`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+path `fiscal/periods/tax/periods` · uuid `36c65d7d-6be8-881d-983e-c353a84a9526` · diamond `54a0e57e-b1c7-81a5-a230-b99bf37a89ac`
+horo `5` `round` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/validate/tax/period/closing · exports const · escapes —
-links `2/2` · folded `1` · bonds in `12` out `13`
+links `2/2` · folded `1` · bonds in `12` out `12`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·accrual·adjustments·events·law·law·periods·periods·quota·rest·share·shares·snapshots · ← accounting·accrual·adjustments·events·law·periods·periods·quota·rest·share·shares·snapshots
+neighbors → accounting·accrual·adjustments·events·law·periods·quota·rest·share·shares·snapshots·snapshots · ← accounting·accrual·adjustments·events·law·periods·quota·rest·share·shares·snapshots·snapshots
 analysis —
 law a tax period is per-jurisdiction and advances pending-closing → adjustment-posted → tax-closed, aligned to the underlying [[fiscal/periods]] — transfer-pricing adjustments are counted and the transitions are kept as a tamper-proof chain for the tax authority, never reordered freely.
 
 ---
 
-<sub>content-uuid `42049f1c-31f9-8d48-9cfe-64924c89ca3b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1f04f941-6e5c-8668-93f8-9aa7e4631299` · `pnpm readme` · `pnpm computed:check`</sub>

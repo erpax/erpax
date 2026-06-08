@@ -3,15 +3,15 @@
 
 # tax
 
-path `tax` · uuid `1e9f97a6-69d0-859a-9037-691370e42e2c` · diamond `31691803-4bc3-86e8-b711-716c8b37d21f`
+path `tax` · uuid `1e9f97a6-69d0-859a-9037-691370e42e2c` · diamond `62c43671-9a77-8ca5-8938-f195d1d5512f`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports accounting·currency·fields·identity·law·party·rate·standard·supto·versions · exports tax · escapes —
-links `29/29` · folded `1` · bonds in `35` out `34`
+links `29/29` · folded `1` · bonds in `21` out `21`
 faces worker·plugin·pwa `0·0·0`
-neighbors → 3986·6585·agent·akashic·away·boys·breakfast·catalogue·chat·classified·contractual·corrects·declaration·drive·dropoff·founder·getting·hobby·hold·homeopathic·landmarks·marine·memories·office·parent·pats·satire·sections·seed·sign·skill·specialty·syllabus·virus · ← 3986·6585·agent·akashic·away·boys·breakfast·catalogue·chat·classified·contractual·corrects·declaration·drive·dropoff·founder·getting·hobby·hold·homeopathic·landmarks·marine·marine·memories·office·parent·pats·satire·sections·seed·sign·skill·specialty·syllabus·virus
+neighbors → accounting·added·calculations·currency·customers·deduction·ecommerce·fields·id·identity·included·items·law·lines·party·rate·standard·supto·taxexempt·transaction·versions · ← accounting·added·calculations·currency·customers·deduction·ecommerce·fields·id·identity·included·items·law·lines·party·rate·standard·supto·taxexempt·transaction·versions
 analysis —
 law a tax is a [[rate]] on a taxable [[currency]] base, categorized by a [[standard]] code (UN/CEFACT 5305) — the rate is cascade-resolved at the tax point (never a baked literal) and one engine feeds the receipt, the total, and the SAF-T file (never re-computed per surface).
 
 ---
 
-<sub>content-uuid `15927f41-ff1a-8d9c-8ac4-1cec57e65214` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8e138a2b-4299-88a8-9c13-3242ee78d70a` · `pnpm readme` · `pnpm computed:check`</sub>

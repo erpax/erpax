@@ -3,8 +3,8 @@
 
 # data
 
-path `data` · uuid `ace29e68-7da5-8cf2-93d7-e4653e8f1912` · diamond `3e0bf20f-646b-8b67-8472-ae16e41a9069`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `data` · uuid `ca6e59f7-3ad3-883e-bac8-0a081b517d3a` · diamond `5cda76dd-4f8d-836d-b25e-8a54562ea07f`
+horo `7` `descent` · trinity `1·0·0` · sealed `0`
 imports catalog·complete·download·element·exif·feed·healthcare·included·item·law·reporting·supporting·type · exports data · escapes —
 links `13/13` · folded `1` · bonds in `14` out `14`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law data is one schema.org word, content-addressed; the same word collides every
 
 ---
 
-<sub>content-uuid `029c8773-3b59-8566-a1bf-2fb7426818c7` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `feaeb255-b9a1-8630-9a01-74d27779dfca` · `pnpm readme` · `pnpm computed:check`</sub>

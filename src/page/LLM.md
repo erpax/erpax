@@ -4,7 +4,7 @@
 # page
 
 path `page` · uuid `35dc5f33-4f1c-88b5-a005-f78765dc3a60` · diamond `6bd892af-b9f0-8fc8-ab03-8344ed85e813`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+horo `5` `round` · trinity `1·0·0` · sealed `0`
 imports about·acquire·booking·checkout·collapse·collection·contact·content·element·end·entity·faq·image·item·law·license·main·medical·merge·primary·print·profile·qa·representative·results·search·start·sti·template·tour·url·user·visits·web · exports page · escapes —
 links `34/34` · folded `1` · bonds in `34` out `34`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law page is one schema.org word, content-addressed; the same word collides every
 
 ---
 
-<sub>content-uuid `3b6fc8d7-ac28-877e-87bb-51ff86866116` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d7e803c5-ac0f-87fe-a023-f62ab2c24504` · `pnpm readme` · `pnpm computed:check`</sub>

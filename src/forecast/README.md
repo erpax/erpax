@@ -23,7 +23,21 @@
 
 - partition `forecast` · sub-root `4f60e0f0-81e7-84e4-a12d-6050a4994a4f`
 - bond degree `62` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `62` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `c04a2260-ad1f-8061-b52c-a6107066ade5` · framed by typography partition `forecast` bonds `62` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `6b70581d-e68d-87e8-8568-15b54ddaeaf5` · framed by typography partition `forecast` bonds `62` · `pnpm readme` · `pnpm readme:check`</sub>

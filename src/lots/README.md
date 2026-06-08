@@ -25,7 +25,30 @@
 
 - partition `lots` · sub-root `a5018200-a52d-8ba6-a2d1-f54041036141`
 - bond degree `49` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `double-entry — the lot total IS the sum of its variant postings;` · banner
+- `EU-2014/55` · catalogue
+- `EU-537/2014` · catalogue
+- `EU-910/2014` · catalogue
+- `ISA-95` · catalogue
+- `ISA-95:2013 / IEC-62264-1 §B.3 production-schedule production-order` · banner
+- `ISO-19011:2018 audit-trail lot-lifecycle confirmed·started·finished·closed` · banner
+- `ISO-22400-2` · catalogue
+- `ISO-22400-2:2014 manufacturing-operations throughput` · banner
+- `SOX §404 internal-controls production-control` · banner
+
+## analytics
+
+- bond degree `49` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `10`
 
 ## identity
 
@@ -41,4 +64,4 @@
 
 ---
 
-<sub>content-uuid `de07aa5f-6537-8872-a45a-4b0c55d05584` · framed by typography partition `lots` bonds `49` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `28e25316-1fc5-816f-a8e3-ba322200e0aa` · framed by typography partition `lots` bonds `49` · `pnpm readme` · `pnpm readme:check`</sub>

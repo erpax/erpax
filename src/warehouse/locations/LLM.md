@@ -3,15 +3,15 @@
 
 # locations
 
-path `warehouse/locations` · uuid `ef636750-09e5-8f92-b0ab-35c7f378bdd8` · diamond `35674ef5-3557-80c6-a541-da0953e31e34`
+path `warehouse/locations` · uuid `ef636750-09e5-8f92-b0ab-35c7f378bdd8` · diamond `a833293b-0205-80d6-bad4-e0e5dec933eb`
 horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
-links `5/5` · folded `1` · bonds in `13` out `13`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → akashic·city·dance·dropoff·flight·founder·gears·hobby·landmarks·marine·memories·sell·spouse · ← akashic·city·dance·dropoff·flight·founder·gears·hobby·landmarks·marine·memories·sell·spouse
+neighbors → accounts·arrangements·law·movements·shipments · ← accounts·arrangements·law·movements·shipments
 analysis —
 law the inventory location master — every physical or logical place stock can sit, with GL-account defaults that segregate cost-flow for inventory controls.
 
 ---
 
-<sub>content-uuid `03483f4d-ce90-8bbf-a2a2-fd91593edae8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `dbdb0624-9c07-813f-b6a3-0f699a78abb4` · `pnpm readme` · `pnpm computed:check`</sub>

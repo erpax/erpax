@@ -1,8 +1,345 @@
 ---
 name: has
-description: Use when reasoning about has as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.
+description: "Use when reasoning about has as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
+atomPath: has
+coordinate: has · 1/base · b326676f
+contentUuid: "4058814d-4231-5cdc-acf2-3f1f284939dc"
+diamondUuid: "c9faa87c-ab23-8ae8-8b4f-f9f75ffbbcab"
+uuid: "b326676f-9294-8c9f-a5e2-ee55af2179c3"
+horo: 1
+bonds:
+  in:
+    - adult
+    - aspect
+    - benefit
+    - bio
+    - broadcast
+    - catalog
+    - category
+    - certification
+    - channel
+    - chem
+    - code
+    - collapse
+    - consideration
+    - consumption
+    - course
+    - credential
+    - defined
+    - delivery
+    - details
+    - digital
+    - document
+    - drive
+    - efficiency
+    - energy
+    - entity
+    - function
+    - gs
+    - health
+    - instance
+    - item
+    - law
+    - link
+    - map
+    - measurement
+    - member
+    - menu
+    - merchant
+    - merge
+    - method
+    - molecular
+    - occupation
+    - offer
+    - part
+    - participation
+    - permission
+    - policy
+    - polymer
+    - pos
+    - product
+    - program
+    - representation
+    - requirement
+    - return
+    - section
+    - sequence
+    - service
+    - shipping
+    - sponsorship
+    - sti
+    - store
+    - term
+    - through
+    - tier
+    - tiers
+  out:
+    - adult
+    - aspect
+    - benefit
+    - bio
+    - broadcast
+    - catalog
+    - category
+    - certification
+    - channel
+    - chem
+    - code
+    - collapse
+    - consideration
+    - consumption
+    - course
+    - credential
+    - defined
+    - delivery
+    - details
+    - digital
+    - document
+    - drive
+    - efficiency
+    - energy
+    - entity
+    - function
+    - gs
+    - health
+    - instance
+    - item
+    - law
+    - link
+    - map
+    - measurement
+    - member
+    - menu
+    - merchant
+    - merge
+    - method
+    - molecular
+    - occupation
+    - offer
+    - part
+    - participation
+    - permission
+    - policy
+    - polymer
+    - pos
+    - product
+    - program
+    - representation
+    - requirement
+    - return
+    - section
+    - sequence
+    - service
+    - shipping
+    - sponsorship
+    - sti
+    - store
+    - term
+    - through
+    - tier
+    - tiers
+typography:
+  partition: has
+  bondDegree: 226
+  neighbors: []
+standards:
+  - "schema.org — the type vocabulary, collided to single words"
+bindings: []
+neighbors:
+  wikilink:
+    - adult
+    - aspect
+    - bio
+    - broadcast
+    - category
+    - certification
+    - channel
+    - chem
+    - code
+    - collapse
+    - consideration
+    - consumption
+    - course
+    - credential
+    - defined
+    - delivery
+    - details
+    - digital
+    - document
+    - drive
+    - efficiency
+    - energy
+    - entity
+    - gs
+    - health
+    - instance
+    - item
+    - law
+    - link
+    - map
+    - measurement
+    - member
+    - menu
+    - merge
+    - method
+    - part
+    - permission
+    - polymer
+    - program
+    - sequence
+    - service
+    - sti
+    - term
+    - through
+  matrix:
+    - adult
+    - aspect
+    - benefit
+    - bio
+    - broadcast
+    - catalog
+    - category
+    - certification
+    - channel
+    - chem
+    - code
+    - collapse
+    - consideration
+    - consumption
+    - course
+    - credential
+    - defined
+    - delivery
+    - details
+    - digital
+    - document
+    - drive
+    - efficiency
+    - energy
+    - entity
+    - function
+    - gs
+    - health
+    - instance
+    - item
+    - law
+    - link
+    - map
+    - measurement
+    - member
+    - menu
+    - merchant
+    - merge
+    - method
+    - molecular
+    - occupation
+    - offer
+    - part
+    - participation
+    - permission
+    - policy
+    - polymer
+    - pos
+    - product
+    - program
+    - representation
+    - requirement
+    - return
+    - section
+    - sequence
+    - service
+    - shipping
+    - sponsorship
+    - sti
+    - store
+    - term
+    - through
+    - tier
+    - tiers
+  backlinks:
+    - adult
+    - aspect
+    - benefit
+    - bio
+    - broadcast
+    - catalog
+    - category
+    - certification
+    - channel
+    - chem
+    - code
+    - collapse
+    - consideration
+    - consumption
+    - course
+    - credential
+    - defined
+    - delivery
+    - details
+    - digital
+    - document
+    - drive
+    - efficiency
+    - energy
+    - entity
+    - function
+    - gs
+    - health
+    - instance
+    - item
+    - law
+    - link
+    - map
+    - measurement
+    - member
+    - menu
+    - merchant
+    - merge
+    - method
+    - molecular
+    - occupation
+    - offer
+    - part
+    - participation
+    - permission
+    - policy
+    - polymer
+    - pos
+    - product
+    - program
+    - representation
+    - requirement
+    - return
+    - section
+    - sequence
+    - service
+    - shipping
+    - sponsorship
+    - sti
+    - store
+    - term
+    - through
+    - tier
+    - tiers
+signatures:
+  computationUuid: "ed2c671a-b596-8c3c-93d5-38e07fc62c08"
+  stages:
+    - stage: path
+      stageUuid: "7415a7d3-0a8b-8cc7-9421-d4bfcd2e589e"
+    - stage: trinity
+      stageUuid: "d10ddc3c-3286-8b60-b433-82446ae876af"
+    - stage: boundary
+      stageUuid: "3eaecbde-8cdb-802b-9ec5-4b62bda86e13"
+    - stage: links
+      stageUuid: "c400178d-d388-83ba-a9f5-2879945197b2"
+    - stage: horo
+      stageUuid: "4a633d70-2bc5-815b-9bbc-15101af1db05"
+    - stage: seal
+      stageUuid: "8d14b7bf-78e1-8ac4-8707-05f3163f0fb3"
+    - stage: uuid
+      stageUuid: "a664353c-b0d5-8a0c-bd68-3d11ef9cb6a4"
+version: 2
 ---
-
 # has
 
 A schema.org component word, collided out of schema.org compounds — fused from hasAdultConsideration · hasBioChemEntityPart · hasBioPolymerSequence · hasBroadcastChannel · hasCategoryCode · hasCertification · hasCourse · hasCourseInstance · hasCredential · hasDefinedTerm · hasDeliveryMethod · hasDigitalDocumentPermission · hasDriveThroughService · hasEnergyConsumptionDetails · hasEnergyEfficiencyCategory · hasGS1DigitalLink · hasHealthAspect · hasMap · hasMeasurement · hasMemberProgram · hasMenu · hasMenuItem · hasMenuSection · hasMerchantReturnPolicy ([[sti]] · [[collapse]] · [[merge]]).

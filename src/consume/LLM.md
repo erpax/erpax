@@ -3,8 +3,8 @@
 
 # consume
 
-path `consume` · uuid `63385108-daf1-8094-b5e9-542505bfe0e7` · diamond `7ec3ee1d-e968-8658-8f62-2a13c226a228`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `consume` · uuid `2af8f440-d63a-8909-824b-177ff8587207` · diamond `5203b73c-2a35-894f-af14-7ca44cfd1d09`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti · exports consume · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law consume is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `fab4ea22-c580-828a-8e68-6c6d368570e3` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b1458e38-7eec-893e-9268-767e9db8b16b` · `pnpm readme` · `pnpm computed:check`</sub>

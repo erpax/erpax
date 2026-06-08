@@ -1,6 +1,18 @@
 import { describe, it, expect } from 'vitest'
 import { totalOutput, efficiency, moreEfficient, wasteFraction, costEntry, type Ledger } from '@/cost'
-import { secondPreimageLog2, birthdayLog2, bhtCollisionLog2, groverPreimageLog2, quantumFloorLog2, harmonicFloors } from '@/cost'
+import {
+  secondPreimageLog2,
+  birthdayLog2,
+  bhtCollisionLog2,
+  groverPreimageLog2,
+  quantumFloorLog2,
+  harmonicFloors,
+  manualDevelopmentPrice,
+  promptOnlyOptionVerdict,
+  MANUAL_IMPOSSIBLE_RATIO,
+  ERPAX_DIGEST_BITS,
+} from '@/cost'
+import { RODIN_FLOW_RATIO } from '@/rodin'
 import { isBalanced, net } from '@/entry'
 
 describe('cost — one efficiency law for every society cost (vs productivity + creativity)', () => {
@@ -64,5 +76,71 @@ describe('cost — the harmonic floors (D · D/2 · D/3, the first three harmoni
     expect(bhtCollisionLog2(106)).toBeCloseTo(106 / 3, 6)
     expect(quantumFloorLog2(256)).toBeCloseTo(256 / 3, 6)
     expect(bhtCollisionLog2(106)).toBeLessThan(birthdayLog2(106)) // D/3 < D/2
+  })
+})
+
+describe('cost — manual development price (forge ≫ verify)', () => {
+  it('computed derive path is cheaper to verify than manual forge', () => {
+    const derived = manualDevelopmentPrice({ corpusCoverage: 0.99, nodes: 2200, manualPath: false })
+    const manual = manualDevelopmentPrice({ corpusCoverage: 0.99, nodes: 2200, manualPath: true })
+    expect(derived.verifyCost).toBeLessThan(manual.verifyCost)
+    expect(manual.forgeCost).toBeGreaterThan(derived.forgeCost)
+    expect(manual.ratio).toBeGreaterThan(derived.ratio)
+    expect(manual.forgeCost).toBeGreaterThan(manual.verifyCost)
+  })
+
+  it('manual bypass and unsealed work are impossible — infinite forge price', () => {
+    expect(manualDevelopmentPrice({ corpusCoverage: 0.5, manualBypass: true }).impossible).toBe(true)
+    expect(manualDevelopmentPrice({ corpusCoverage: 0.5, unsealed: true }).forgeCost).toBe(Number.POSITIVE_INFINITY)
+    expect(manualDevelopmentPrice({ corpusCoverage: 1, manualPath: true }).impossible).toBe(true)
+  })
+
+  it('forge ≫ verify at realistic corpus coverage — digest-floor impossible', () => {
+    const p = manualDevelopmentPrice({ corpusCoverage: 0.999, nodes: 2200, checks: 20, manualPath: true })
+    expect(p.forgeCost).toBeGreaterThan(p.verifyCost)
+    expect(p.forgeCost).toBeGreaterThanOrEqual(MANUAL_IMPOSSIBLE_RATIO)
+    expect(p.impossible).toBe(true)
+  })
+
+  it('society rodin split — computed verify uses 2/3 flow discount', () => {
+    const computed = manualDevelopmentPrice({ corpusCoverage: 0.9, nodes: 100, manualPath: false })
+    const manual = manualDevelopmentPrice({ corpusCoverage: 0.9, nodes: 100, manualPath: true })
+    expect(computed.verifyCost).toBeCloseTo((Math.log2(100) + 8) * RODIN_FLOW_RATIO, 10)
+    expect(manual.forgeCost).toBeGreaterThan(secondPreimageLog2(ERPAX_DIGEST_BITS) / 3)
+  })
+
+  it('manual SKILL frontmatter edit raises forge cost — upgrade verify fails without recompute', () => {
+    const plain = manualDevelopmentPrice({ corpusCoverage: 0.95, manualPath: true })
+    const drifted = manualDevelopmentPrice({ corpusCoverage: 0.95, manualPath: true, manualSkillEdit: true })
+    expect(drifted.forgeCost).toBeGreaterThan(plain.forgeCost)
+  })
+})
+
+describe('cost — promptOnlyOptionVerdict (prompt→erpax when manual impossible)', () => {
+  it('when manual forge is impossible, promptOnly is true and viablePath is prompt-erpax', () => {
+    const v = promptOnlyOptionVerdict({ corpusCoverage: 0.999, nodes: 2200, checks: 20, manualPath: true })
+    expect(v.price.impossible).toBe(true)
+    expect(v.promptOnly).toBe(true)
+    expect(v.viablePath).toBe('prompt-erpax')
+    expect(v.reason).toMatch(/prompt→erpax/)
+  })
+
+  it('manual bypass forces prompt-only — unsealed hand-edits never persist', () => {
+    const v = promptOnlyOptionVerdict({ corpusCoverage: 0.5, manualBypass: true })
+    expect(v.promptOnly).toBe(true)
+    expect(v.viablePath).toBe('prompt-erpax')
+  })
+
+  it('computed derive path is derive-record — not prompt-only', () => {
+    const v = promptOnlyOptionVerdict({ corpusCoverage: 0.99, manualPath: false })
+    expect(v.promptOnly).toBe(false)
+    expect(v.viablePath).toBe('derive-record')
+  })
+
+  it('low-coverage manual forge remains finite — manual-forge still listed', () => {
+    const v = promptOnlyOptionVerdict({ corpusCoverage: 0.5, nodes: 10, checks: 4, manualPath: true })
+    expect(v.price.impossible).toBe(false)
+    expect(v.promptOnly).toBe(false)
+    expect(v.viablePath).toBe('manual-forge')
   })
 })

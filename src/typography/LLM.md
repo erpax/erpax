@@ -3,15 +3,15 @@
 
 # typography
 
-path `typography` · uuid `0a0bf935-75e3-8ad9-8fdc-9f0146ef8c7d` · diamond `04f4732e-9097-80f4-9368-ce9a3a4e9667`
+path `typography` · uuid `82ab24f4-005d-8182-bac5-66672634808c` · diamond `46aa0a50-e02d-8c83-8c7c-49d2244f1e05`
 horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports @/guardian·@/seal·@/uuid/matrix · exports ANALYSIS_ORGANS·Feature·analysisGraphEdgeRoot·atomTypographyContext·buildAnalysisTypographyGraph·const·function·interface·type · escapes —
-links `84/84` · folded `1` · bonds in `7` out `7`
+links `84/84` · folded `1` · bonds in `42` out `46`
 faces worker·plugin·pwa `1·0·0`
-neighbors → emission·employees·first·foot·government·landmarks·template · ← emission·employees·first·foot·government·landmarks·template
+neighbors → analytics·atom·aura·blockchain·collapse·cost·css·diamond·digit·entanglement·form·fractal·gate·guardian·harmony·holographic·holographic·horo·identity·law·law·link·matrix·metatron·name·navigation·payload·proof·purity·quantum·rodin·seal·search·search·sequence·skill·tamper·tamper·text·trinity·typography·typography·uuid·vitepress·word·worker · ← analytics·atom·aura·blockchain·collapse·cost·css·diamond·digit·entanglement·form·fractal·gate·guardian·harmony·holographic·horo·identity·law·link·matrix·metatron·name·navigation·payload·proof·purity·quantum·rodin·seal·search·sequence·skill·tamper·text·trinity·typography·typography·uuid·vitepress·word·worker
 analysis analytics·aura·diamond·purity
 law coverage is the fraction of the [[vitepress]] typographic feature-set a SKILL.md page actually renders — each feature used is a dimension the [[search]] index entangles and a forger must reproduce ([[tamper]]-cost).
 
 ---
 
-<sub>content-uuid `a28111c8-42c2-851f-b9ef-cb7a1bdbd891` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9fb2de39-3b47-8e05-9c95-fc59c1af7d06` · `pnpm readme` · `pnpm computed:check`</sub>

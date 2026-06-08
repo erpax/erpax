@@ -25,7 +25,24 @@
 
 - partition `metatron` · sub-root `3cc1c0c2-2085-8b5c-941b-e752bd338f7d`
 - bond degree `60` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `counts computed on the live matrix, never hand-asserted` · banner
+- `every count computed on the live matrix, never hand-asserted` · banner
+- `RFC 9562 §5.8 content-uuid (the total merge) + K₁₃ / cuboctahedron geometry` · banner
+- `RFC 9562 §5.8 content-uuid (total merge) + K13 / cuboctahedron` · banner
+
+## analytics
+
+- bond degree `60` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `4`
 
 ## identity
 
@@ -41,4 +58,4 @@
 
 ---
 
-<sub>content-uuid `6758d99f-5673-800c-b56c-4d64e31cc921` · framed by typography partition `metatron` bonds `60` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `33c0cd0b-dd62-89e3-b40a-4d7e06b9693f` · framed by typography partition `metatron` bonds `60` · `pnpm readme` · `pnpm readme:check`</sub>

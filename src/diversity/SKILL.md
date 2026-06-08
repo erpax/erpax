@@ -1,8 +1,100 @@
 ---
 name: diversity
-description: Use when reasoning about diversity as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.
+description: "Use when reasoning about diversity as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
+atomPath: diversity
+coordinate: diversity · 1/base · 4c75680e
+contentUuid: "b8e83eba-e178-5c8d-8e37-5c0c7a61a26f"
+diamondUuid: "18e4b542-43db-8638-84b2-018e9ef9c247"
+uuid: "4c75680e-adba-82ec-b86e-fedf0e861237"
+horo: 1
+bonds:
+  in:
+    - collapse
+    - decentralization
+    - ecosystem
+    - law
+    - lichen
+    - merge
+    - policy
+    - report
+    - staffing
+    - sti
+    - sustainability
+  out:
+    - collapse
+    - decentralization
+    - ecosystem
+    - law
+    - lichen
+    - merge
+    - policy
+    - report
+    - staffing
+    - sti
+    - sustainability
+typography:
+  partition: diversity
+  bondDegree: 36
+  neighbors: []
+standards:
+  - Pielou (1966) The Measurement of Diversity in Different Types of Biological Collections
+  - Shannon (1948) A Mathematical Theory of Communication — information entropy
+  - "Simpson (1949) Measurement of Diversity — Nature 163:688"
+  - "computed, never hand-asserted"
+  - "schema.org — the type vocabulary, collided to single words"
+bindings: []
+neighbors:
+  wikilink:
+    - collapse
+    - law
+    - merge
+    - policy
+    - report
+    - staffing
+    - sti
+  matrix:
+    - collapse
+    - decentralization
+    - ecosystem
+    - law
+    - lichen
+    - merge
+    - policy
+    - report
+    - staffing
+    - sti
+    - sustainability
+  backlinks:
+    - collapse
+    - decentralization
+    - ecosystem
+    - law
+    - lichen
+    - merge
+    - policy
+    - report
+    - staffing
+    - sti
+    - sustainability
+signatures:
+  computationUuid: "8a607062-7cdd-856e-9dc8-11f73928f4b1"
+  stages:
+    - stage: path
+      stageUuid: "9f49f81e-351f-86a2-b999-4c9d3cd3b5c0"
+    - stage: trinity
+      stageUuid: "e03f5338-a717-823b-baf7-b2175dda4ef9"
+    - stage: boundary
+      stageUuid: "7ba47b39-6294-878e-8631-a215eeb967cd"
+    - stage: links
+      stageUuid: "c67e6e1d-a34c-8373-b542-220a083d4917"
+    - stage: horo
+      stageUuid: "73058294-44a9-8880-ab94-7643e7081c83"
+    - stage: seal
+      stageUuid: "a48a657e-d90c-8cf5-a3f7-40bf23264622"
+    - stage: uuid
+      stageUuid: "d3f390f6-4a01-8c95-b790-93d4c48e684a"
+version: 2
 ---
-
 # diversity
 
 A schema.org component word, collided out of schema.org compounds — fused from diversityPolicy · diversityStaffingReport ([[sti]] · [[collapse]] · [[merge]]).

@@ -3,8 +3,8 @@
 
 # activate
 
-path `activate` · uuid `d1750dcd-f385-870d-9e17-be1ae10f64f1` · diamond `2c651222-20ea-8c25-9681-f07c132493a2`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `activate` · uuid `470fe2d4-61eb-87da-97b3-d64e1d451559` · diamond `525c7426-8d67-86a0-85b7-f9ab9d88c239`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti · exports activate · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law activate is one schema.org word, content-addressed; the same word collides e
 
 ---
 
-<sub>content-uuid `87f85460-d1d5-8961-87c3-f8e4b1cd56f5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7c20a0f7-8715-82bb-abec-6fbede2711e2` · `pnpm readme` · `pnpm computed:check`</sub>

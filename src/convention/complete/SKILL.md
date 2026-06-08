@@ -1,8 +1,107 @@
 ---
 name: complete
-description: Use when checking whether the corpus stays whole — the computed convention that every atom is the full trinity {SKILL.md, index.ts, test.ts}, measured live as coverage = complete / total over the real tree.
+description: "Use when checking whether the corpus stays whole — the computed convention that every atom is the full trinity {SKILL.md, index.ts, test.ts}, measured live as coverage = complete / total over the real tree."
+atomPath: convention/complete
+coordinate: convention/complete · 2/share · f57f2c6a
+contentUuid: "affa25ab-fbfd-5078-8356-d494b34b2860"
+diamondUuid: "d75b273c-637f-844e-8a58-26572267cf54"
+uuid: "f57f2c6a-a5a2-837a-a895-5bdb0665f946"
+horo: 2
+bonds:
+  in:
+    - collapse
+    - convention
+    - data
+    - feed
+    - folded
+    - fronted
+    - honest
+    - law
+    - merge
+    - named
+    - sti
+    - time
+    - triggered
+    - twinned
+  out:
+    - collapse
+    - data
+    - feed
+    - folded
+    - fronted
+    - honest
+    - law
+    - merge
+    - named
+    - sti
+    - time
+    - triggered
+    - twinned
+typography:
+  partition: convention
+  bondDegree: 50
+  neighbors:
+    - aura
+standards:
+  - "schema.org — the type vocabulary, collided to single words"
+bindings: []
+neighbors:
+  wikilink:
+    - aura
+    - collapse
+    - cost
+    - dry
+    - gravity
+    - law
+    - merge
+    - trinity
+  matrix:
+    - collapse
+    - data
+    - feed
+    - folded
+    - fronted
+    - honest
+    - law
+    - merge
+    - named
+    - sti
+    - time
+    - triggered
+    - twinned
+  backlinks:
+    - collapse
+    - data
+    - feed
+    - folded
+    - fronted
+    - honest
+    - law
+    - merge
+    - named
+    - sti
+    - time
+    - triggered
+    - twinned
+signatures:
+  computationUuid: "18a7443b-ce4e-852b-981a-fbeb7930737d"
+  stages:
+    - stage: path
+      stageUuid: "9a0444b1-1fce-8095-8864-9ed8f536acf3"
+    - stage: trinity
+      stageUuid: "9a260560-dfcb-8ac5-8b1b-b9437504c2ef"
+    - stage: boundary
+      stageUuid: "1ff60921-e61e-879a-a971-f62ccda039de"
+    - stage: links
+      stageUuid: "2d0a3719-cc44-88f0-b791-426d2df685d7"
+    - stage: horo
+      stageUuid: "34620ef3-ba0f-8b27-ac91-359beeac8ff7"
+    - stage: seal
+      stageUuid: "7679672e-0fc5-8ff5-9667-428baded47e7"
+    - stage: uuid
+      stageUuid: "ee8966b1-0d6e-8052-a794-98d11900ff95"
+version: 2
 ---
-
 # convention/complete — every atom is the full trinity {SKILL.md, index.ts, test.ts}
 
 The completeness convention, written as a self-measuring atom. It states one rule and computes its own compliance — it does not re-implement the corpus walk, it **composes** the canonical one:

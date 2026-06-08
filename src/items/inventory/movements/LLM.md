@@ -3,8 +3,8 @@
 
 # movements
 
-path `items/inventory/movements` · uuid `e2b16d2a-a8a6-8fcc-8938-e22aec2fb54d` · diamond `1c8e1981-dccf-812e-9c74-ae72c5dcb361`
-horo `5` `round` · trinity `1·1·1` · sealed `1`
+path `items/inventory/movements` · uuid `5ccc3079-0a39-8bd4-9a04-053790c1031d` · diamond `91ef041f-c177-8c92-b524-bdb8ad7a5357`
+horo `1` `base` · trinity `1·1·1` · sealed `0`
 imports @/audit/trail/after/change·@/auth·@/auto/populate/created/by·@/auto/populate/tenant·@/auto/set/timestamp·@/base/accounting/field·@/utility · exports default · escapes —
 links `6/6` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law the append-only stock ledger — every quantity change records its source an
 
 ---
 
-<sub>content-uuid `ff1ae69b-5cd6-8638-abde-b4cc17591868` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9dbcc704-0679-859c-8b20-107e5cef4ef2` · `pnpm readme` · `pnpm computed:check`</sub>

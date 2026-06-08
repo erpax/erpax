@@ -3,8 +3,8 @@
 
 # condition
 
-path `condition` · uuid `74234198-dae7-832d-8709-749dbeb93bdb` · diamond `c57bdac8-15ff-83e0-8312-7d567705f950`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `condition` · uuid `7bcfe59e-4293-8714-a956-1b1e4c88190e` · diamond `2924f033-2484-8e48-89e4-9a2e12007617`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·health·item·law·medical·merge·offer·related·stage·sti · exports condition · escapes —
 links `10/10` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law condition is one schema.org word, content-addressed; the same word collides 
 
 ---
 
-<sub>content-uuid `9ab50701-5cc7-86f8-b8d1-f0472c764f89` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `69f69ad3-1dfd-838f-8607-ae873b84df91` · `pnpm readme` · `pnpm computed:check`</sub>

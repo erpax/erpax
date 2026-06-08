@@ -3,15 +3,15 @@
 
 # speech
 
-path `speech` · uuid `505c2ca3-1e6d-8d10-8fc8-af9722a4e9a0` · diamond `6a3beff3-bac5-83cd-9c4e-0a82d7d9daf8`
+path `speech` · uuid `505c2ca3-1e6d-8d10-8fc8-af9722a4e9a0` · diamond `2d199a4a-476b-853d-a543-fb887ec814cf`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·markup·merge·sti·text · exports speech · escapes —
-links `6/6` · folded `1` · bonds in `4` out `4`
+links `6/6` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·markup·merge·sti·text·vitepress · ← collapse·law·markup·merge·sti·text·vitepress
 analysis —
 law speech is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `feb32014-244c-8817-a196-7f20b60f24ac` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d9f606f3-37ca-8000-9c92-69b9c8372c53` · `pnpm readme` · `pnpm computed:check`</sub>

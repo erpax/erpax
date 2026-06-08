@@ -23,7 +23,21 @@
 
 - partition `motorcycle` · sub-root `0617262f-902a-83b6-a1d6-eca8b3eb36d1`
 - bond degree `11` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `11` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `90d5afe9-8218-83d5-bec3-32a367170148` · framed by typography partition `motorcycle` bonds `11` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `025c1da9-0997-899b-9fb5-a0d00725bfec` · framed by typography partition `motorcycle` bonds `11` · `pnpm readme` · `pnpm readme:check`</sub>

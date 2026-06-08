@@ -1,8 +1,206 @@
 ---
 name: yield
 description: "Use when a bound resource is converted to output at a realized rate — crop yield (output per unit land: lbs/acre, kg/decare) and its inverse, the land a demanded quantity requires. Yield is the bidirectional conversion factor between a resource and its product (area × yield = output; output ÷ yield = area); inverted through unit weight it gives row-length per saleable unit — the number that turns a demand plan into a planting plan."
+atomPath: yield
+coordinate: yield · 4/weave · 67fecad1
+contentUuid: "f038febd-e971-568c-9a7a-22cf68072454"
+diamondUuid: "e12e44d2-20c6-86da-9feb-10f5cfe8e0f6"
+uuid: "67fecad1-5311-8aae-9a9c-58b97816d44b"
+horo: 4
+bonds:
+  in:
+    - agriculture
+    - apiculture
+    - aquaculture
+    - biomass
+    - bottleneck
+    - capacity
+    - conversion
+    - covercrop
+    - crop
+    - cropplan
+    - enterprisebudget
+    - fertility
+    - forestry
+    - grade
+    - harvest
+    - herd
+    - lactation
+    - law
+    - market
+    - measure
+    - mortality
+    - perennial
+    - planting
+    - pollination
+    - postharvest
+    - pruning
+    - rate
+    - recipe
+    - revenue
+    - share
+    - soil
+    - spacing
+    - throughput
+    - trellis
+    - variant
+    - whole
+  out:
+    - agriculture
+    - apiculture
+    - aquaculture
+    - biomass
+    - bottleneck
+    - capacity
+    - conversion
+    - covercrop
+    - crop
+    - cropplan
+    - enterprisebudget
+    - fertility
+    - forestry
+    - grade
+    - harvest
+    - herd
+    - lactation
+    - law
+    - market
+    - measure
+    - mortality
+    - perennial
+    - planting
+    - pollination
+    - postharvest
+    - pruning
+    - rate
+    - recipe
+    - revenue
+    - share
+    - soil
+    - spacing
+    - throughput
+    - trellis
+    - variant
+    - whole
+typography:
+  partition: yield
+  bondDegree: 114
+  neighbors: []
+standards: []
+bindings: []
+neighbors:
+  wikilink:
+    - agriculture
+    - bottleneck
+    - capacity
+    - conversion
+    - crop
+    - fertility
+    - grade
+    - harvest
+    - law
+    - market
+    - measure
+    - rate
+    - revenue
+    - share
+    - soil
+    - spacing
+    - throughput
+    - whole
+  matrix:
+    - agriculture
+    - apiculture
+    - aquaculture
+    - biomass
+    - bottleneck
+    - capacity
+    - conversion
+    - covercrop
+    - crop
+    - cropplan
+    - enterprisebudget
+    - fertility
+    - forestry
+    - grade
+    - harvest
+    - herd
+    - lactation
+    - law
+    - market
+    - measure
+    - mortality
+    - perennial
+    - planting
+    - pollination
+    - postharvest
+    - pruning
+    - rate
+    - recipe
+    - revenue
+    - share
+    - soil
+    - spacing
+    - throughput
+    - trellis
+    - variant
+    - whole
+  backlinks:
+    - agriculture
+    - apiculture
+    - aquaculture
+    - biomass
+    - bottleneck
+    - capacity
+    - conversion
+    - covercrop
+    - crop
+    - cropplan
+    - enterprisebudget
+    - fertility
+    - forestry
+    - grade
+    - harvest
+    - herd
+    - lactation
+    - law
+    - market
+    - measure
+    - mortality
+    - perennial
+    - planting
+    - pollination
+    - postharvest
+    - pruning
+    - rate
+    - recipe
+    - revenue
+    - share
+    - soil
+    - spacing
+    - throughput
+    - trellis
+    - variant
+    - whole
+signatures:
+  computationUuid: "db344f4b-4da6-880f-8391-a1f52b4cbfcd"
+  stages:
+    - stage: path
+      stageUuid: "6eea17f6-493e-8479-8f2c-ea370adbe871"
+    - stage: trinity
+      stageUuid: "755d195c-7375-84c8-96e9-8425157477db"
+    - stage: boundary
+      stageUuid: "86882033-5fce-8cf8-b1dd-4a5f31a39a3a"
+    - stage: links
+      stageUuid: "0f0156f8-fab1-8360-b007-25180f4fa037"
+    - stage: horo
+      stageUuid: "5353eb3f-1a74-8185-a3b3-7c04dfa1308d"
+    - stage: seal
+      stageUuid: "d8f0acd3-a350-8cb8-b4c0-f34b3a938be5"
+    - stage: uuid
+      stageUuid: "bbccc8d4-1fda-8faf-b7e8-aec2a1d8af82"
+version: 2
 ---
-
 # yield — realized output per unit of a bound resource (and its inverse)
 
 **yield** is output per unit of a bound resource — crop yield is harvested weight per unit **land** (*lbs/acre · kg/ha · kg/decare*), the central agronomic [[measure]] of productivity. Its power is that it runs **both ways**, a [[rate]] and its reciprocal:

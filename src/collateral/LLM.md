@@ -3,8 +3,8 @@
 
 # collateral
 
-path `collateral` · uuid `d9a82f2d-20f4-8f40-90cd-5623a28a784a` · diamond `7c99f75a-6706-8fac-bf21-7336169a675a`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `collateral` · uuid `4dca6564-c3c9-8688-afb9-8a96683b63d4` · diamond `06cf9d3c-19aa-8a2f-b014-dffb4469a9ab`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·required·sti · exports collateral · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law collateral is one schema.org word, content-addressed; the same word collides
 
 ---
 
-<sub>content-uuid `9ed45d92-7382-85fa-a88e-6be7b7b4d185` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9033a989-e262-83bb-807d-3f9bd45500cd` · `pnpm readme` · `pnpm computed:check`</sub>

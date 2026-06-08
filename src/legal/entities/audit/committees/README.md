@@ -2,9 +2,11 @@
 
 # committees
 
-> atom `legal/entities/audit/committees` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
+> atom `legal/entities/audit/committees` · horo `5` `round` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `legal/entities/audit/committees` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -19,17 +21,114 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
+
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+- `gap:stray:[[gap]]/[[diamond]]/stray/audit/`
+
+### collapse
+
+- `balance:variance=1`
+- `seal:unsealed`
+- `trigger:Use when managing the audit committee for a legal entity — charter upload, meeting frequency, membership roster, and status lifecycle. The SOX §301 audit-committee master for corporate governance oversight.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `3948fee9-2df0-8fba-abd1-db660542fadf` · `50438c5a-4ad8-84ac-a8e0-4dfb95836e99` · `754bd07a-ee40-82a3-80ae-c12f0da91bcc` · `85346a4a-7ba8-8725-8c0d-097ce6550a6e`
+- content uuids `6d05f92b-32cf-8fb8-9412-ed426e030042` · `864e4e5e-6806-8bb8-930b-5bb18b484efc` · `cadd06e4-aea9-8199-9fc7-0dfc12bb8fe8` · `f344bf5f-6a1a-85c9-9fb4-9fff63b5252e`
+
+## [[entropy]] — gaps · seals
+
+> account code `legal/entities/audit/committees` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[diamond]]/stray/audit/ `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.5` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+| Σ gap `3` eb | Σ seal `8.5` eb |
+
+> net residual `-5.5` eb · seal/gap ratio `2.833` · [[entropy]] · [[seal]]
 
 ## typography graph
 
-- partition `legal` · sub-root `1fd2f1ff-ccee-87e0-8d80-12345443fed8`
-- bond degree `12` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- partition `legal` · sub-root `e259934b-eccd-8e89-bfbe-04889c9debb1`
+- bond degree `0` · analysis neighbors —
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `SEC Rule 10A-3 audit-committee` · banner
+- `SOX §301 audit-committee` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unbalanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| not-held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·5 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `0` · sealed `0` · horo `5`
+- variance `1` · balanced `0` · trinity sum `3`
+- bindings `0` · standards `2`
 
 ## identity
 
-- uuid `5c11ad0f-15f6-88d0-8a23-1c5cd8fb2114`
+- uuid `b6609291-d7a8-84c1-a3bd-93d8cd242a28`
 - bonds in `4` · out `4`
 - trinity form·code·proof `1`·`1`·`1`
 - links `2` / `2`
@@ -37,8 +136,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `d9023e8a-2c45-89b9-bacc-a1b3907ea75c` · framed by typography partition `legal` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `96cd4b76-8e1d-89b7-b549-8e5f416cba3b` · framed by typography partition `legal` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

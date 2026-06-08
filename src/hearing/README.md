@@ -23,7 +23,21 @@
 
 - partition `hearing` · sub-root `f5905787-cd42-8d43-afb3-6ef0f071c8bc`
 - bond degree `12` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `12` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `bc6af3b0-fa09-8e58-b733-269e5f76cf53` · framed by typography partition `hearing` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f4df9309-aa68-82c1-b0fc-95e987d3c0d1` · framed by typography partition `hearing` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

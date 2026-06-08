@@ -3,7 +3,7 @@
 
 # admin
 
-path `admin` · uuid `ce84b495-c8c5-82dd-93b4-144c06e69c35` · diamond `71aa852f-788f-8b64-bfd2-a34914750682`
+path `admin` · uuid `ba92aaec-4648-8102-8235-9c5ba5a3d6a2` · diamond `8b85cbbb-b746-8cc4-9ca5-76232bce511b`
 horo `8` `crest` · trinity `1·0·0` · sealed `0`
 imports auth·hooks·law·optimize · exports admin · escapes —
 links `5/5` · folded `1` · bonds in `12` out `12`
@@ -14,4 +14,4 @@ law the Admin Panel is a React app auto-generated from the config; custom compon
 
 ---
 
-<sub>content-uuid `e8527416-cbca-8e7e-a32c-8464169fd49c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `171d3e4d-c420-8f16-9dc3-9f6b36367152` · `pnpm readme` · `pnpm computed:check`</sub>

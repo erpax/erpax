@@ -2,7 +2,7 @@
 
 # evidence
 
-> atom `evidence` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
+> atom `evidence` · horo `1` `base` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -17,13 +17,46 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `7` | Σ `7` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `evidence` · sub-root `c9293446-e98c-84cb-9d11-661f18844599`
-- bond degree `24` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- bond degree `0` · analysis neighbors —
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ETSI-EN-319-142` · catalogue
+- `EU-2000/31` · catalogue
+- `EU-2011/83` · catalogue
+- `EU-2014/55` · catalogue
+- `EU-2018/1673` · catalogue
+- `EU-2018/1725` · catalogue
+- `EU-2018/302` · catalogue
+- `EU-2018/389-SCA-RTS` · catalogue
+- `EU-2018/843` · catalogue
+- `EU-2018/957` · catalogue
+- `EU-537/2014` · catalogue
+- `EU-910/2014` · catalogue
+- `EU-VAT-Implementing-Reg-282/2011` · catalogue
+- `ISO-14289-1` · catalogue
+- `ISO-19005` · catalogue
+- `ISO-19011` · catalogue
+- `ISO-32000` · catalogue
+- `NIST-FIPS-180-4` · catalogue
+- `RFC-5652` · catalogue
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `0` · sealed `0` · horo `1`
+- variance `1` · balanced `0` · trinity sum `1`
+- bindings `0` · standards `20`
 
 ## identity
 
@@ -35,8 +68,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `9040077e-0e6c-855e-8459-71cb9f68cfa1` · framed by typography partition `evidence` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `234f3451-1940-8f83-8eb8-0922c606f787` · framed by typography partition `evidence` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

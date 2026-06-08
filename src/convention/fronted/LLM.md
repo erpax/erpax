@@ -3,15 +3,15 @@
 
 # fronted
 
-path `convention/fronted` · uuid `e1c52e25-48a2-8d1b-9d5d-38b6b46b62d5` · diamond `4167c381-2042-88b6-bfb2-b24736452b77`
-horo `2` `share` · trinity `1·1·1` · sealed `1`
+path `convention/fronted` · uuid `f0d4b2ac-e78c-8153-842b-48887b14eddd` · diamond `8b38f633-8084-8a43-a2fb-f34d61a94a8d`
+horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/corpus · exports const·function · escapes —
-links `15/15` · folded `1` · bonds in `9` out `9`
+links `15/15` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `1·0·0`
-neighbors → akashic·collapse·complete·cost·exported·law·lawful·merge·named · ← akashic·collapse·complete·cost·exported·law·lawful·merge·named
+neighbors → akashic·collapse·complete·cost·exported·law·lawful·merge·named·named · ← akashic·collapse·complete·cost·exported·law·lawful·merge·named·named
 analysis —
 law every atom carries valid name + description frontmatter — a SKILL.md missing either field has no front door, addressable by neither name nor intent; the corpus is fronted iff coverage = fronted / total = 1, and any frontless atom is a gap driving tamper-cost below infinity.
 
 ---
 
-<sub>content-uuid `55473f2d-bba2-8d26-a651-e9d5ac413b88` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4bb145f1-77a8-85d3-9148-a10b23466fda` · `pnpm readme` · `pnpm computed:check`</sub>

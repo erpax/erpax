@@ -23,7 +23,21 @@
 
 - partition `fractal` · sub-root `9fffbbc0-237b-827c-bec2-18b5a5e0e8db`
 - bond degree `339` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `339` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `5bd7b352-25e8-8e21-8e67-1dbfc2d2ef0b` · framed by typography partition `fractal` bonds `339` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `5dd5db7e-e21f-8210-81b5-363ad719dc6e` · framed by typography partition `fractal` bonds `339` · `pnpm readme` · `pnpm readme:check`</sub>

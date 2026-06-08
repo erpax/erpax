@@ -4,7 +4,7 @@
 # assets
 
 path `fixed/assets` · uuid `303ae367-4c71-8291-9728-9f736ba9e6ce` · diamond `13087ac5-3ff5-89ea-b4c0-5562ab0c67ff`
-horo `2` `share` · trinity `1·1·1` · sealed `1`
+horo `2` `share` · trinity `1·1·1` · sealed `0`
 imports @/audit/trail/after/change·@/auto/populate/created/by·@/auto/set/timestamp·@/factory·@/fields·@/utility · exports default · escapes —
 links `4/4` · folded `1` · bonds in `45` out `51`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `d4eff9b2-e019-8b2d-a326-911b68778ed7` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e1160e54-682e-842e-9647-66f788c66afa` · `pnpm readme` · `pnpm computed:check`</sub>

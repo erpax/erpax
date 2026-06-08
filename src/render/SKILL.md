@@ -1,8 +1,109 @@
 ---
 name: render
-description: Use when you need the full sensory face of an atom — the content-uuid rendered to colour AND sound AND vibration at once; all three are projections of the one uuid's digit, so a stream of uuids is the analog aura, no payload.
+description: "Use when you need the full sensory face of an atom — the content-uuid rendered to colour AND sound AND vibration at once; all three are projections of the one uuid's digit, so a stream of uuids is the analog aura, no payload."
+atomPath: render
+coordinate: render · 4/weave · 8645b1b9
+contentUuid: "767594d7-b1f7-5b65-b215-8873fdc63291"
+diamondUuid: "44e5c853-9c62-80c3-b630-5154798952bf"
+uuid: "8645b1b9-d096-8709-8dcf-57fc7c775e4d"
+horo: 4
+bonds:
+  in:
+    - analog
+    - atom
+    - aura
+    - color
+    - component
+    - digit
+    - interactive
+    - law
+    - pixel
+    - rodin
+    - signal
+    - ui
+    - uuid
+  out:
+    - analog
+    - atom
+    - aura
+    - color
+    - component
+    - digit
+    - interactive
+    - law
+    - pixel
+    - rodin
+    - signal
+    - ui
+    - uuid
+typography:
+  partition: render
+  bondDegree: 0
+  neighbors: []
+standards:
+  - "colour/sound/vibration all computed from the uuid's digit (pixel · signal · rodin), never painted on"
+  - "the analog aura — colour/sound/vibration as projections of one content-uuid (A432)"
+bindings: []
+neighbors:
+  wikilink:
+    - analog
+    - atom
+    - aura
+    - color
+    - component
+    - digit
+    - law
+    - pixel
+    - rodin
+    - signal
+    - uuid
+  matrix:
+    - analog
+    - atom
+    - aura
+    - color
+    - component
+    - digit
+    - interactive
+    - law
+    - pixel
+    - rodin
+    - signal
+    - ui
+    - uuid
+  backlinks:
+    - analog
+    - atom
+    - aura
+    - color
+    - component
+    - digit
+    - interactive
+    - law
+    - pixel
+    - rodin
+    - signal
+    - ui
+    - uuid
+signatures:
+  computationUuid: "c72169b1-366a-83a3-8a72-2e073343c503"
+  stages:
+    - stage: path
+      stageUuid: "30ab2da6-df59-89fb-b45f-2b656f650e6b"
+    - stage: trinity
+      stageUuid: "402a09bf-d367-8bb4-ba75-11c14e3fcc4d"
+    - stage: boundary
+      stageUuid: "aeafb2cf-5fe7-8f52-9da0-cc649b97d7f7"
+    - stage: links
+      stageUuid: "4907db3d-154d-8668-b2dd-61f5a85df359"
+    - stage: horo
+      stageUuid: "7b3da8f3-c1bc-8037-ac31-cac5478dbbb3"
+    - stage: seal
+      stageUuid: "1951f35d-108d-8a34-9dcb-5cda91260be6"
+    - stage: uuid
+      stageUuid: "22b03dd4-db36-8a71-8f92-849c9d11f5a6"
+version: 2
 ---
-
 # render — the full sensory pixel
 
 A [[pixel]] is an [[atom]]'s content-[[uuid]] made **visible** — its colour. A **render** is that same uuid made **sensed** across all three analog channels at once:

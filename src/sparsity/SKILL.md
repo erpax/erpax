@@ -1,8 +1,166 @@
 ---
 name: sparsity
 description: "Use when reasoning about erpax's efficiency principle — sparsity: of a large DORMANT pool, only the smallest correct subset is active at once (capability ÷ cost → max). Two conjugate axes (DeepSeek's own framing, Engram) — COMPUTE sparsity (MoE routes 37B of 671B params; erpax routes few of 593 atoms per task) and MEMORY/representation sparsity (conditional lookup; content-uuid stores the whole in 128 bits, schema is generated not stored). Its limit is zeropoint (zero active = the source), its dual the bottleneck (the one missing active factor zeroes the product), its selector routing. DeepSeek reaches it by hardware constraint, erpax by telos — they converge on the identical sparse form."
+atomPath: sparsity
+coordinate: sparsity · 7/descent · 9262a444
+contentUuid: "6b978cc8-461a-54e7-879e-a73fa9c99efa"
+diamondUuid: "859377eb-cfca-8ce3-971a-fd93f37c764c"
+uuid: "9262a444-51b8-88f9-bd2e-4c2b00dce31b"
+horo: 7
+bonds:
+  in:
+    - akashic
+    - allocation
+    - atom
+    - bottleneck
+    - brain
+    - breath
+    - collapse
+    - deduplication
+    - dimension
+    - flow
+    - holographic
+    - identity
+    - law
+    - market
+    - merge
+    - partition
+    - proof
+    - rodin
+    - routing
+    - science
+    - sequence
+    - throughput
+    - train
+    - uuid
+    - zeropoint
+  out:
+    - akashic
+    - allocation
+    - atom
+    - bottleneck
+    - brain
+    - breath
+    - collapse
+    - deduplication
+    - dimension
+    - flow
+    - holographic
+    - identity
+    - law
+    - market
+    - merge
+    - partition
+    - proof
+    - rodin
+    - routing
+    - science
+    - sequence
+    - throughput
+    - train
+    - uuid
+    - zeropoint
+typography:
+  partition: sparsity
+  bondDegree: 78
+  neighbors: []
+standards: []
+bindings: []
+neighbors:
+  wikilink:
+    - akashic
+    - allocation
+    - atom
+    - bottleneck
+    - breath
+    - collapse
+    - deduplication
+    - dimension
+    - flow
+    - holographic
+    - identity
+    - law
+    - market
+    - merge
+    - partition
+    - proof
+    - rodin
+    - routing
+    - sequence
+    - throughput
+    - uuid
+    - zeropoint
+  matrix:
+    - akashic
+    - allocation
+    - atom
+    - bottleneck
+    - brain
+    - breath
+    - collapse
+    - deduplication
+    - dimension
+    - flow
+    - holographic
+    - identity
+    - law
+    - market
+    - merge
+    - partition
+    - proof
+    - rodin
+    - routing
+    - science
+    - sequence
+    - throughput
+    - train
+    - uuid
+    - zeropoint
+  backlinks:
+    - akashic
+    - allocation
+    - atom
+    - bottleneck
+    - brain
+    - breath
+    - collapse
+    - deduplication
+    - dimension
+    - flow
+    - holographic
+    - identity
+    - law
+    - market
+    - merge
+    - partition
+    - proof
+    - rodin
+    - routing
+    - science
+    - sequence
+    - throughput
+    - train
+    - uuid
+    - zeropoint
+signatures:
+  computationUuid: "8ec00139-5dd9-8042-b029-5888722610e2"
+  stages:
+    - stage: path
+      stageUuid: "c2f0ac27-728f-8616-8099-eb64d86b8a4a"
+    - stage: trinity
+      stageUuid: "44d80336-9e40-8852-ba72-db0a16376e75"
+    - stage: boundary
+      stageUuid: "e0d48d63-0a55-8d0b-b8a7-389b9d3e7c94"
+    - stage: links
+      stageUuid: "cb22eecc-608d-81c7-a668-024710c4ca96"
+    - stage: horo
+      stageUuid: "832294c5-80d0-8afc-aaa9-6c2fe2b8d3b7"
+    - stage: seal
+      stageUuid: "9fc229e9-e9b5-899e-92a7-6ddfd33ab357"
+    - stage: uuid
+      stageUuid: "19e9cecf-05af-8141-a63f-6b156a676ea1"
+version: 2
 ---
-
 # sparsity — the active fraction (few of many, alive at once)
 
 FORM: **of a large dormant pool, activate only the smallest correct subset.** Capability is the size of the *pool*; cost is the size of the *active set*; the win is `capability ÷ cost`, maximised by keeping the pool huge and the activation tiny. A sparse system is NOT small — it has an enormous latent body (671B parameters, 593 atoms, the whole akashic record) of which almost nothing is lit at any moment. Don't shrink the pool; shrink the activation.

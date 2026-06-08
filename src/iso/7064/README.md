@@ -2,7 +2,7 @@
 
 # 7064
 
-> atom `iso/7064` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
+> atom `iso/7064` · horo `1` `base` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -25,7 +25,24 @@
 
 - partition `iso` · sub-root `ea5c4346-ba0e-8fac-9959-143d07932374`
 - bond degree `3` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `EU-2003/88/EC` · catalogue
+- `ISO-7064` · catalogue
+- `ISO-7064:2003 check-character-systems` · banner
+- `ISO-7064:2003 mod-XX` plus the issuing` · banner
+
+## analytics
+
+- bond degree `3` · sealed `0` · horo `1`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `4`
 
 ## identity
 
@@ -37,8 +54,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `a3f118fd-e775-8211-8b3f-71509a8840c2` · framed by typography partition `iso` bonds `3` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `5bb88840-1e52-8e91-ab3f-0e96b4a9eb29` · framed by typography partition `iso` bonds `3` · `pnpm readme` · `pnpm readme:check`</sub>

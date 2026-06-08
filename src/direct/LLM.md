@@ -3,8 +3,8 @@
 
 # direct
 
-path `direct` · uuid `589b8c95-bf13-83fb-8b3f-fe0bbf8cc817` · diamond `c4faf3bb-294e-8bbb-95ba-86ddac12b764`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `direct` · uuid `633cd24c-d33f-8a9f-a164-de3ccf8ca059` · diamond `9fd030b3-d35d-8d9a-bcf1-069e4f3cb85c`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports apply·collapse·law·merge·sti · exports direct · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law direct is one schema.org word, content-addressed; the same word collides eve
 
 ---
 
-<sub>content-uuid `cefa9c45-2c24-8d66-87ef-0af78581599a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a29fd360-371f-8490-9f06-295fa52b944a` · `pnpm readme` · `pnpm computed:check`</sub>

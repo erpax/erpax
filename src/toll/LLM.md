@@ -3,15 +3,15 @@
 
 # toll
 
-path `toll` · uuid `736abdff-ecdc-8caa-af25-98d5d13dda72` · diamond `c20b1f07-582b-8547-bfa4-57804b104226`
+path `toll` · uuid `736abdff-ecdc-8caa-af25-98d5d13dda72` · diamond `8421f50b-2775-85bd-bad2-47543624183e`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports toll · escapes —
-links `4/4` · folded `1` · bonds in `2` out `2`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·landmarks · ← action·landmarks
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law toll is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `82932067-200d-8ed5-a894-4f74dfcc9f07` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ce3e24cb-a089-878d-ab01-96f05d2ecbb7` · `pnpm readme` · `pnpm computed:check`</sub>

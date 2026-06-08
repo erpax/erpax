@@ -2,7 +2,7 @@
 
 # decentralization
 
-> atom `decentralization` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
+> atom `decentralization` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -23,9 +23,9 @@
 
 ## typography graph
 
-- partition `decentralization` · sub-root `7dd4fb78-345c-8528-9ba4-cd754cb5bf87`
+- partition `decentralization` · sub-root `4f73df07-f422-8bd2-a899-786b80160423`
 - bond degree `44` · analysis neighbors `agent`
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -42,15 +42,53 @@
 - `Herfindahl–Hirschman Index (HHI)` · banner
 - `Nakamoto coefficient (Srinivasan & Lee, 2017)` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·1 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `44` · sealed `1` · horo `5`
+- bond degree `44` · sealed `1` · horo `1`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `8`
 
 ## identity
 
-- uuid `7dd4fb78-345c-8528-9ba4-cd754cb5bf87`
+- uuid `4f73df07-f422-8bd2-a899-786b80160423`
 - bonds in `13` · out `13`
 - trinity form·code·proof `1`·`1`·`1`
 - links `20` / `20`
@@ -62,4 +100,4 @@
 
 ---
 
-<sub>content-uuid `d79aa0d8-57f1-846f-92a5-92f7f1187516` · framed by typography partition `decentralization` bonds `44` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `2a735319-b332-8d32-bd18-6bd212ca6fae` · framed by typography partition `decentralization` bonds `44` · `pnpm readme` · `pnpm readme:check`</sub>

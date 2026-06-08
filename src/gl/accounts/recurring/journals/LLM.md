@@ -3,8 +3,8 @@
 
 # journals
 
-path `gl/accounts/recurring/journals` · uuid `351d815f-6ec0-8f8d-9b69-7865c480bfda` · diamond `5085c861-5333-8653-9ec9-b7d692b20d70`
-horo `1` `base` · trinity `1·1·1` · sealed `1`
+path `gl/accounts/recurring/journals` · uuid `66912f9a-a3e0-8f7c-af61-ccdbf66163d3` · diamond `0654cbb3-5d70-83d6-921c-b9e784df3ee6`
+horo `4` `weave` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
 links `5/5` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law a recurring journal is a template, not an entry — a scheduled job material
 
 ---
 
-<sub>content-uuid `742e9f83-d4a3-87fc-8716-5f4e12db4268` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `93b60a3a-751b-8f98-aa4e-e2c2800f8034` · `pnpm readme` · `pnpm computed:check`</sub>

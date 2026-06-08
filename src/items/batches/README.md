@@ -2,7 +2,7 @@
 
 # batches
 
-> atom `items/batches` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `items/batches` · horo `7` `descent` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -25,7 +25,32 @@
 
 - partition `items` · sub-root `1341dba3-9395-8200-8e47-ea3dc4d4b9e9`
 - bond degree `21` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `EU Regulation 178/2002 Art 18 one-step-back-one-step-forward` · banner
+- `EU-2005/29` · catalogue
+- `FDA 21 CFR 211.122 211.130 pharma-lot-control` · banner
+- `GS1 General Specifications AI(10) batch/lot AI(17) expiry AI(11) production-date` · banner
+- `IATF 16949:2016 §8.5.2.1 automotive-traceability` · banner
+- `IFRS IAS-2 §23-§27 cost-formula-specific-identification` · banner
+- `ISO 22005:2007 feed-and-food-chain-traceability` · banner
+- `ISO 9001:2015 §8.5.2 identification-and-traceability` · banner
+- `ISO-19011:2018 audit-trail lot-genealogy-evidence` · banner
+- `ISO-8601-1:2019 date-time manufacture-expiry-dates` · banner
+- `ISO-9001` · catalogue
+- `SOX §404 internal-controls traceability-control TOM-TRACE-01` · banner
+
+## analytics
+
+- bond degree `21` · sealed `0` · horo `7`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `12`
 
 ## identity
 
@@ -37,8 +62,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `d514b844-43c4-84c1-806f-6b71841109ca` · framed by typography partition `items` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a1d76171-6634-82a2-8091-7fbbe1d81001` · framed by typography partition `items` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,8 +3,8 @@
 
 # confirmed
 
-path `confirmed` · uuid `c42707ad-f2cf-8f9a-9709-eb6f05b64a1a` · diamond `28b73f07-b2ee-8295-9d02-83efc1afa30b`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `confirmed` · uuid `96902b8b-cb91-8953-9a07-479bda7e3a86` · diamond `e235c50c-6b4e-8e42-933a-f1b96961c9e0`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports confirmed · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law confirmed is one schema.org word, content-addressed; the same word collides 
 
 ---
 
-<sub>content-uuid `7eac1224-521d-889e-ae18-7d3ee3b76a96` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c5d41bce-4423-8811-b444-7ec98764f9de` · `pnpm readme` · `pnpm computed:check`</sub>

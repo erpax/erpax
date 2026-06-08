@@ -1,8 +1,115 @@
 ---
 name: lexical
-description: "Use for rich-text content in erpax — the Payload Lexical editor (config editor: lexicalEditor()). Localized, content-addressed rich text is the DENSEST tamper surface (a whole node-tree per locale) and the collapse sink every prose/document field reduces to. Matter-twin the root config editor + shared Lexical blocks."
+description: "Use when reasoning about lexical — is erpax's **rich-text** substrate: the Payload Lexical editor (config ), a structured JSON **node-tree** — not an opaque string. Two consequences make it central:"
+atomPath: lexical
+coordinate: lexical · 5/round · 31ba2e95
+contentUuid: "31f4526e-e14b-5ba7-8bdd-93fed9563996"
+diamondUuid: "56c98ae3-dd71-86e0-a433-cc820f7deef8"
+uuid: "31ba2e95-2bdf-82f8-a75f-5a8f91b41d4a"
+horo: 5
+bonds:
+  in:
+    - begin
+    - chat
+    - collapse
+    - components
+    - config
+    - cost
+    - fields
+    - fractal
+    - identity
+    - law
+    - localize
+    - media
+    - part
+    - uuid
+    - whole
+  out:
+    - begin
+    - chat
+    - collapse
+    - components
+    - config
+    - cost
+    - fields
+    - fractal
+    - identity
+    - law
+    - localize
+    - media
+    - part
+    - uuid
+    - whole
+typography:
+  partition: lexical
+  bondDegree: 48
+  neighbors: []
+standards: []
+bindings: []
+neighbors:
+  wikilink:
+    - collapse
+    - config
+    - cost
+    - fields
+    - fractal
+    - identity
+    - law
+    - localize
+    - part
+    - uuid
+    - whole
+  matrix:
+    - begin
+    - chat
+    - collapse
+    - components
+    - config
+    - cost
+    - fields
+    - fractal
+    - identity
+    - law
+    - localize
+    - media
+    - part
+    - uuid
+    - whole
+  backlinks:
+    - begin
+    - chat
+    - collapse
+    - components
+    - config
+    - cost
+    - fields
+    - fractal
+    - identity
+    - law
+    - localize
+    - media
+    - part
+    - uuid
+    - whole
+signatures:
+  computationUuid: "d1a4d903-18fb-8b74-95d4-7e798f09f52f"
+  stages:
+    - stage: path
+      stageUuid: "f38f818f-ce64-838a-b256-4942ed7b12d0"
+    - stage: trinity
+      stageUuid: "da868dc3-57fa-8835-90cb-f8833335ab54"
+    - stage: boundary
+      stageUuid: "238aa7c5-e33a-862d-b7ac-536c353e8b6d"
+    - stage: links
+      stageUuid: "30f246e8-8b39-8add-a5d1-859efb35b219"
+    - stage: horo
+      stageUuid: "94441453-9daa-8a51-9345-7a4bb8e6888b"
+    - stage: seal
+      stageUuid: "9e072fa7-9cca-8aa9-8614-b70d08853ab1"
+    - stage: uuid
+      stageUuid: "63a652ad-ab89-8e96-8489-1ad876088f34"
+version: 2
 ---
-
 # lexical — rich text as the densest content surface
 
 `lexical` is erpax's **rich-text** substrate: the Payload Lexical editor ([[config]] `editor: lexicalEditor()`), a structured JSON **node-tree** — not an opaque string. Two consequences make it central:

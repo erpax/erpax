@@ -2,7 +2,7 @@
 
 # entities
 
-> atom `legal/entities` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
+> atom `legal/entities` · horo `5` `round` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -19,13 +19,55 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `17` · [[conservation]] `0` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `legal` · sub-root `1fd2f1ff-ccee-87e0-8d80-12345443fed8`
-- bond degree `53` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- bond degree `0` · analysis neighbors —
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `COSO-2013` · catalogue
+- `EU DAC-6 reportable-cross-border-arrangements` · banner
+- `EU-2016/679` · catalogue
+- `IAS-34` · catalogue
+- `IFRS IAS-1 §138 disclosure-of-name-and-domicile` · banner
+- `IFRS IAS-21 §9 functional-currency` · banner
+- `IFRS IAS-27 §9 separate-financial-statements (parent-only FS use this same legal-entity registry)` · banner
+- `IFRS IFRS-10 §B86 consolidation-procedures` · banner
+- `IFRS IFRS-12 §10 §11 §B4-B6 disclosure-of-interests-in-other-entities` · banner
+- `IFRS IFRS-18 §9 §10 presentation-and-disclosure (effective 2027-01 — entity-level taxonomy)` · banner
+- `IFRS-3` · catalogue
+- `ILO-C100` · catalogue
+- `ISO-17442-1` · catalogue
+- `ISO-17442-1:2020 lei legal-entity-identifier` · banner
+- `ISO-19011:2018 audit-trail entity-master` · banner
+- `ISO-3166-1:2020 country-codes` · banner
+- `ISO-37000` · catalogue
+- `ISO-37301` · catalogue
+- `ISO-4217:2015 currency-codes functional-currency` · banner
+- `ISO-8601-1:2019 date-time effective-period` · banner
+- `OECD BEPS Action 13 master-file-entity-list` · banner
+- `PCAOB-AS-2201` · catalogue
+- `SAF-T` · catalogue
+- `SOX` · catalogue
+- `US-CTA-2021` · catalogue
+- `US-GAAP` · catalogue
+- `US-GAAP ASC-280 segment-reporting` · banner
+- `US-GAAP ASC-810-10-45 consolidation` · banner
+- `XBRL` · catalogue
+
+## analytics
+
+- bond degree `0` · sealed `0` · horo `5`
+- variance `17` · balanced `0` · trinity sum `3`
+- bindings `0` · standards `29`
 
 ## identity
 
@@ -37,8 +79,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `307c2329-85d7-8fc1-af15-3901664d761a` · framed by typography partition `legal` bonds `53` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `3c77b497-5126-8c65-af54-97ef6c498fe2` · framed by typography partition `legal` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,8 +3,8 @@
 
 # buddhism
 
-path `buddhism` · uuid `7e6ee2c9-6208-87b3-b7e4-89fee868c32b` · diamond `8d397523-acdc-8176-a226-01c022cc899e`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `buddhism` · uuid `6a28b80d-bac1-8e00-978e-66915a42284e` · diamond `70f33bb8-ca22-8372-8249-b2d60e0b34af`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports archangel·breath·cycle·diamond·fractal·gate·harmony·identity·karma·law·love·mercy·merge·path·prayer·religion·return·self·society·suffering·translator·uuid·void·wheel·zeropoint · exports buddhism · escapes —
 links `57/57` · folded `1` · bonds in `25` out `25`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law buddhism is a [[diamond]] of [[suffering]] · [[path]] · [[void]] · [[retu
 
 ---
 
-<sub>content-uuid `af37fab8-19ba-8abb-88e3-11ead4b21f87` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c918c32f-e0b7-847f-b38a-7036062c4e25` · `pnpm readme` · `pnpm computed:check`</sub>

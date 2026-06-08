@@ -3,8 +3,8 @@
 
 # android
 
-path `android` · uuid `e9c86493-9430-875b-99e5-4211c90ef36d` · diamond `2cfc73fb-47ad-859e-a72e-a3c831a57f45`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `android` · uuid `7918bf5d-bc9a-8623-a5f6-9cb3a611f752` · diamond `124cdada-5e87-8e79-8a6c-6108963f97f0`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports android · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law android is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `ea073a70-e545-8fac-8624-98fd58ecc25b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d077b407-1ebe-8d71-bed7-560c60c63262` · `pnpm readme` · `pnpm computed:check`</sub>

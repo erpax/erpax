@@ -3,8 +3,8 @@
 
 # dealer
 
-path `dealer` · uuid `46f64c70-94d8-839a-a55e-20bb1c44ffb1` · diamond `b7095ec0-9c60-8331-843d-c028750106c5`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `dealer` · uuid `2a634532-099b-87d9-b40d-f21bb28ffdec` · diamond `32c7d934-3579-82f3-a41b-1053f8e395b1`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports auto·collapse·law·merge·motorcycle·sti · exports dealer · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law dealer is one schema.org word, content-addressed; the same word collides eve
 
 ---
 
-<sub>content-uuid `cc3bf5d0-7b2f-81f2-9b13-2e839949f924` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d435e26a-23a5-826e-8ef2-23465db72a71` · `pnpm readme` · `pnpm computed:check`</sub>

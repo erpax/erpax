@@ -3,15 +3,15 @@
 
 # coherence
 
-path `coherence` · uuid `e46ab8e5-28f7-8a8a-87f5-6c5f0945ba11` · diamond `e7d6f4da-f8fe-83bc-8016-daee6c0c7cbe`
-horo `4` `weave` · trinity `1·1·1` · sealed `1`
+path `coherence` · uuid `d4f5c0ff-26bf-85b6-892b-cc726978aef6` · diamond `c3fadb34-36bc-806e-9a7e-10a7438d850f`
+horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports — · exports const·function·interface · escapes —
-links `20/20` · folded `1` · bonds in `22` out `21`
+links `20/20` · folded `1` · bonds in `22` out `22`
 faces worker·plugin·pwa `1·0·0`
-neighbors → analog·aura·balance·biofield·biomagnetism·biometric·biophoton·body·color·device·duality·harmony·heart·hooks·law·proof·recycle·signal·tamper·whole·writing · ← analog·aura·aura·balance·biofield·biomagnetism·biometric·biophoton·body·color·device·duality·harmony·heart·hooks·law·proof·recycle·signal·tamper·whole·writing
+neighbors → analog·aura·aura·balance·biofield·biomagnetism·biometric·biophoton·body·color·device·duality·harmony·heart·hooks·law·proof·recycle·signal·tamper·whole·writing · ← analog·aura·aura·balance·biofield·biomagnetism·biometric·biophoton·body·color·device·duality·harmony·heart·hooks·law·proof·recycle·signal·tamper·whole·writing
 analysis aura
 law —
 
 ---
 
-<sub>content-uuid `5ba42157-3d42-8e1b-b4cd-f89c0be459bf` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e5939754-741f-8515-ac7f-ad6a2cc0c313` · `pnpm readme` · `pnpm computed:check`</sub>

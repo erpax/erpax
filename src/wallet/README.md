@@ -2,7 +2,7 @@
 
 # wallet
 
-> atom `wallet` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
+> atom `wallet` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -24,13 +24,13 @@
 ## typography graph
 
 - partition `wallet` · sub-root `359504fb-5948-8313-aeac-16da7383f4a8`
-- bond degree `30` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `45` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
-- uuid `359504fb-5948-8313-aeac-16da7383f4a8`
-- bonds in `5` · out `5`
+- uuid `f3e13781-1ca1-8237-873d-d1a523c50e59`
+- bonds in `12` · out `16`
 - trinity form·code·proof `1`·`1`·`1`
 - links `16` / `16`
 - folded `1` · escapes `0`
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `696bb677-ff2e-857d-9dad-19f8dc86f3e4` · framed by typography partition `wallet` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `7d60ac9d-0b69-873f-8b31-84489bd9c66c` · framed by typography partition `wallet` bonds `45` · `pnpm readme` · `pnpm readme:check`</sub>

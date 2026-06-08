@@ -23,7 +23,21 @@
 
 - partition `kiosk` · sub-root `e41b7364-3bd4-868b-b478-a5df9c1c0fb5`
 - bond degree `12` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `12` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `b955b9c4-da48-8fa4-b746-85373449d871` · framed by typography partition `kiosk` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c21d01f6-84c6-8dd1-ae93-aad8231033d9` · framed by typography partition `kiosk` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

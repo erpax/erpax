@@ -3,15 +3,15 @@
 
 # virtual
 
-path `virtual` · uuid `2ea3e5ee-5bca-8668-b3fb-d3df9b402cf2` · diamond `97e5c521-aac6-8b8e-9a52-45bd90f0f27f`
+path `virtual` · uuid `2ea3e5ee-5bca-8668-b3fb-d3df9b402cf2` · diamond `87e997f7-81b8-8184-b745-87f4bb87fb84`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports attendee·capacity·collapse·law·location·maximum·merge·sti · exports virtual · escapes —
-links `8/8` · folded `1` · bonds in `5` out `5`
+links `8/8` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·cohort·landmarks·memories·stat · ← action·cohort·landmarks·memories·stat
+neighbors → attendee·capacity·collapse·law·location·maximum·merge·sti · ← attendee·capacity·collapse·law·location·maximum·merge·sti
 analysis —
 law virtual is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `97d0cf67-9297-898d-b0ff-292626fdb8a3` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a254be25-5e87-8519-945c-3171f8e19bdd` · `pnpm readme` · `pnpm computed:check`</sub>

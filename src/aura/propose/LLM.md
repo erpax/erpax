@@ -3,15 +3,15 @@
 
 # propose
 
-path `aura/propose` · uuid `943f7ea6-8071-8fbf-a1d8-e37edbbbbb02` · diamond `1673fa35-a2bc-8f4c-9591-4a926fa4fc24`
+path `aura/propose` · uuid `c65a1b6b-fae5-8f8b-8f9f-77af168042d8` · diamond `11e33748-54c8-8c58-a65e-5efd859c3afc`
 horo `8` `crest` · trinity `1·1·0` · sealed `0`
 imports @/aura · exports function·interface · escapes —
 links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `1·0·0`
 neighbors → aura·generate·law·mass·merge·regeneration·weave · ← aura·generate·law·mass·merge·regeneration·weave
-analysis aura·diamond·hallucination·purity
+analysis —
 law every weave proposal is a true co-occurrence the live tree witnesses (the highest-[[mass]] atom that actually mentions the orphan), never invented — an orphan no atom mentions stays orphan.
 
 ---
 
-<sub>content-uuid `b05d19fd-1c7d-8d16-a36d-1f978d5e5969` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1b565860-edaf-8a45-acaf-cac85376be4c` · `pnpm readme` · `pnpm computed:check`</sub>

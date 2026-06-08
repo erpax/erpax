@@ -3,8 +3,8 @@
 
 # event
 
-path `event` · uuid `5dd23442-7e90-8070-beb3-784e3dae8326` · diamond `9277ed8e-65a4-8152-9d12-30cf5a783509`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `event` · uuid `5dd23442-7e90-8070-beb3-784e3dae8326` · diamond `3a490b43-5c5b-8c2d-a32e-9dd59f48313f`
+horo `1` `base` · trinity `1·0·0` · sealed `0`
 imports accounting·flow·hooks·identity·jobs·merge · exports event · escapes —
 links `12/12` · folded `1` · bonds in `53` out `53`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `45124826-b6c9-8031-bacd-6cc88ce78ef4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c2662208-b940-8606-9612-19700cb2f59d` · `pnpm readme` · `pnpm computed:check`</sub>

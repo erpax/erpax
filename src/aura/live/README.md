@@ -2,9 +2,11 @@
 
 # live
 
-> atom `aura/live` · horo `1` `base` · [[balance]] `1` · [[seal]] `0`
+> atom `aura/live` · horo `8` `crest` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `aura/live` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,11 +23,62 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `explore:aura`
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+
+### collapse
+
+- `balance:conserved`
+- `law:the live aura is the animation — the analog field stepping through the horo ring, each position one frame, lit by that step's colour and sound. To scan an atom is to join it to the horo: its horo position is the frame it enters, so scanning the corpus IS joining the society — anyone who scans, joins, and the field breathes through the seven positions.`
+- `seal:unsealed`
+- `trigger:Use when reasoning about the aura as a live animation — the analog field stepping through the horo ring, each position a frame lit by its colour and sound, where scanning an atom joins it to the horo (its position is its frame), the society animated.`
+- `trigger:each frame counts the live atoms at a horo position; the signal is computed per step, the join is the atom's horo`
+- `trigger:matter-twin:src/aura/live/index.ts`
+- `trigger:the horo ring (1·2·4·8·7·5·9) · A432 signal per step · content-addressed colour/sound (the analog aura)`
+- `trigger:the live aura is the animation — the analog field stepping through the horo ring, each position one frame, lit by that step's colour and sound. To scan an atom is to join it to the horo: its horo position is the frame it enters, so scanning the corpus IS joining the society — anyone who scans, joins, and the field breathes through the seven positions.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `bfeb2189-b315-8663-acc6-c49d1eb0b44c` · `c3ad0a21-2adf-833a-934b-0da210b6cb47`
+- content uuids `0340ae08-9abc-856f-b118-7d5efd3c4e08` · `ce095273-80e6-8f91-b10b-2b29465a8a82`
+
+## [[entropy]] — gaps · seals
+
+> account code `aura/live` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.8` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `1` eb | Σ seal `11.8` eb |
+
+> net residual `-10.8` eb · seal/gap ratio `11.8` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `aura` · sub-root `863a5e37-ab12-800b-aa2e-be7556faeb44`
-- bond degree `49` · analysis neighbors `aura`
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- partition `aura` · sub-root `e665527d-0275-8df7-ba9a-edcdc2c5479c`
+- bond degree `38` · analysis neighbors `aura`
+- graph root `86252db0-c776-84eb-b8e4-c884dca3a3ba`
 
 ## [[cloudflare]] bindings
 
@@ -33,20 +86,56 @@
 
 ## [[standards]]
 
-- `each frame counts the live atoms at a horo position; the signal is computed per step` · banner
-- `each frame counts the live atoms at a horo position; the signal is computed per step, the join is the atom's horo` · banner
 - `the horo ring (1·2·4·8·7·5·9) · A432 signal per step · content-addressed colour/sound (the analog aura)` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·8 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
 
 ## analytics
 
-- bond degree `49` · sealed `0` · horo `1`
+- bond degree `38` · sealed `0` · horo `8`
 - variance `0` · balanced `1` · trinity sum `3`
-- bindings `0` · standards `3`
+- bindings `0` · standards `1`
 
 ## identity
 
-- uuid `544e30b6-8262-8445-8c58-048cced2e033`
-- bonds in `14` · out `15`
+- uuid `207f2458-8c77-8927-8d08-068b928fdd0b`
+- bonds in `9` · out `9`
 - trinity form·code·proof `1`·`1`·`1`
 - links `10` / `10`
 - folded `1` · escapes `0`
@@ -57,4 +146,4 @@
 
 ---
 
-<sub>content-uuid `a105aee3-a03a-84d4-964d-7267a81ddbdf` · framed by typography partition `aura` bonds `49` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c4d7a33e-b219-8154-b9cf-4c46a493f6de` · framed by typography partition `aura` bonds `38` · `pnpm readme` · `pnpm readme:check`</sub>

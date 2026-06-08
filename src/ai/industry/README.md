@@ -2,9 +2,11 @@
 
 # industry
 
-> atom `ai/industry` · horo `4` `weave` · [[balance]] `1` · [[seal]] `0`
+> atom `ai/industry` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
+
+> account code `ai/industry` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,11 +23,56 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `explore:diamond`
+
+### collapse
+
+- `balance:conserved`
+- `seal:sealed`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `1`
+- entry uuids `0c49d205-b7c4-8a42-976c-5221db493297`
+- content uuids `56acaf86-33f1-8e51-903a-9750a22b8351` · `64870a03-5a7f-8b88-b57e-f15c9faaec42`
+
+## [[entropy]] — gaps · seals
+
+> account code `ai/industry` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+|  | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.2` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[diamond]]/sealed `1.585` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `0` eb | Σ seal `12.785` eb |
+
+> net residual `-12.785` eb · seal/gap ratio `1` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `ai` · sub-root `2d3a90be-68d2-8eac-ba70-c4c58554dc58`
-- bond degree `64` · analysis neighbors `diamond`
-- graph root `06810c2c-2396-831f-a2b3-a58706a17051`
+- partition `ai` · sub-root `00f1dddc-4124-8f45-b06e-3569a314cc18`
+- bond degree `29` · analysis neighbors `diamond`
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
 
 ## [[cloudflare]] bindings
 
@@ -37,24 +84,62 @@
 - `ISO/IEC 42001:2023 ai-management-system` · banner
 - `OWASP-LLM-Top-10:2025 LLM01 prompt-injection` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·2 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `64` · sealed `0` · horo `4`
+- bond degree `29` · sealed `1` · horo `2`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `3`
 
 ## identity
 
-- uuid `1419d023-4718-8c52-985e-21600d5ddac0`
-- bonds in `20` · out `21`
+- uuid `64870a03-5a7f-8b88-b57e-f15c9faaec42`
+- bonds in `3` · out `3`
 - trinity form·code·proof `1`·`1`·`1`
 - links `40` / `40`
 - folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `4f645b2a-dc18-8722-a4ac-af6bcb8a3166` · framed by typography partition `ai` bonds `64` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e96613c6-bf11-82ce-8395-27252b528d93` · framed by typography partition `ai` bonds `29` · `pnpm readme` · `pnpm readme:check`</sub>

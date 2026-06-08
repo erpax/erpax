@@ -3,8 +3,8 @@
 
 # deadlines
 
-path `legal/entities/compliance/deadlines` · uuid `c1dbacc2-aec6-8745-a6bc-86d21c524e33` · diamond `5bedbc1f-7af4-8373-b20b-43620b2762b5`
-horo `5` `round` · trinity `1·1·1` · sealed `1`
+path `legal/entities/compliance/deadlines` · uuid `26a44c55-2557-8d6b-88b7-4281fc879f16` · diamond `8b77986e-e051-83ff-a7c1-099e35940ed9`
+horo `5` `round` · trinity `1·1·1` · sealed `0`
 imports @/role/based/access · exports const · escapes —
 links `2/2` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law every compliance obligation carries a due date with a derived on-track/at-ri
 
 ---
 
-<sub>content-uuid `1624aadf-6bb6-8993-8afd-b288bda8ba68` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1f2be914-2ff0-833f-bd94-1bdf717b59e9` · `pnpm readme` · `pnpm computed:check`</sub>

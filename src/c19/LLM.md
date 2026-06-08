@@ -3,8 +3,8 @@
 
 # c19
 
-path `c19` · uuid `45e631c2-a430-8cbf-b837-9bd555611347` · diamond `6a52c64b-e353-8567-9f67-5f937e0d26a5`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `c19` · uuid `d13c313f-aa75-8ce6-bcc6-c221a2038dac` · diamond `0de59f82-7811-840b-896c-c3eebcbdc749`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports c19 · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law c19 is one schema.org word, content-addressed; the same word collides every 
 
 ---
 
-<sub>content-uuid `242f61a0-bbb3-8fd6-b112-bab80cd44ce7` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3242740b-26aa-81e0-b11a-9cb72218a12a` · `pnpm readme` · `pnpm computed:check`</sub>

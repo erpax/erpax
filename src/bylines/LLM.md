@@ -3,7 +3,7 @@
 
 # bylines
 
-path `bylines` · uuid `ecbb0e4a-6e65-8c22-a9be-6d398d7d142e` · diamond `978622ae-f0ca-883e-b552-714ec46a60d9`
+path `bylines` · uuid `963e64de-a41f-8a9b-aa30-1b40db08475e` · diamond `f6adbc8f-4045-8aba-9071-7bd77d311eb6`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·no·policy·sti · exports bylines · escapes —
 links `6/6` · folded `1` · bonds in `7` out `7`
@@ -14,4 +14,4 @@ law bylines is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `13483f85-0fb2-8269-aeaa-4fe3d176de57` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `eb4aa73c-696f-8c2b-a3ab-965454b3e9a7` · `pnpm readme` · `pnpm computed:check`</sub>

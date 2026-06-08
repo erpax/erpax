@@ -3,8 +3,8 @@
 
 # coverage
 
-path `coverage` · uuid `b7e72d8d-aa00-8779-b000-abe97f55ef75` · diamond `58cc7a3a-d5ae-87df-ad68-3077a2c68ac4`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `coverage` · uuid `fa14f6c1-66ef-8ccd-adca-4cf862f65ba5` · diamond `3c91bd64-5b90-8e94-aeed-5fe24ffdfff9`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·end·law·merge·mission·policy·priorities·spatial·start·sti·temporal·time · exports coverage · escapes —
 links `12/12` · folded `1` · bonds in `23` out `23`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law coverage is one schema.org word, content-addressed; the same word collides e
 
 ---
 
-<sub>content-uuid `b9685130-7f6b-83ff-ac71-2879d79493eb` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `00f86f49-2113-8afe-915b-be3ef523c129` · `pnpm readme` · `pnpm computed:check`</sub>

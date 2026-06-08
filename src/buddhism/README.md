@@ -2,7 +2,7 @@
 
 # buddhism
 
-> atom `buddhism` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
+> atom `buddhism` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -21,9 +21,9 @@
 
 ## typography graph
 
-- partition `buddhism` · sub-root `7e6ee2c9-6208-87b3-b7e4-89fee868c32b`
+- partition `buddhism` · sub-root `6a28b80d-bac1-8e00-978e-66915a42284e`
 - bond degree `77` · analysis neighbors `diamond`
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- graph root `1cef4f02-a3fa-83a5-8ea0-120b724ef456`
 
 ## [[cloudflare]] bindings
 
@@ -33,15 +33,53 @@
 
 —
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·7 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `77` · sealed `1` · horo `5`
+- bond degree `77` · sealed `1` · horo `7`
 - variance `0` · balanced `1` · trinity sum `1`
 - bindings `0` · standards `0`
 
 ## identity
 
-- uuid `7e6ee2c9-6208-87b3-b7e4-89fee868c32b`
+- uuid `6a28b80d-bac1-8e00-978e-66915a42284e`
 - bonds in `25` · out `25`
 - trinity form·code·proof `1`·`0`·`0`
 - links `57` / `57`
@@ -53,4 +91,4 @@
 
 ---
 
-<sub>content-uuid `c61d73ae-6c5e-88db-8eb1-ce6c0afccb8a` · framed by typography partition `buddhism` bonds `77` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e189defb-324c-80b1-bcfb-0690384ac63e` · framed by typography partition `buddhism` bonds `77` · `pnpm readme` · `pnpm readme:check`</sub>

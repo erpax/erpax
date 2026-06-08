@@ -3,8 +3,8 @@
 
 # deleted
 
-path `deleted` · uuid `cb9557d5-9038-8961-a2aa-e8ba9bec8d88` · diamond `187242ea-31ee-8793-b7d2-39e7410552a0`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `deleted` · uuid `d47ca753-5daa-8dbf-8b11-e2f86c655f92` · diamond `7f277635-e379-8dfb-b999-0561fb6e6f08`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·date·law·merge·sti · exports deleted · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law deleted is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `28461158-e271-8acc-b99b-3009cc6bc5d9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4f24e353-784d-8044-8b9d-230c0246435d` · `pnpm readme` · `pnpm computed:check`</sub>

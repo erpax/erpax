@@ -3,8 +3,8 @@
 
 # am
 
-path `am` · uuid `d3e1ccdb-eebd-8544-a0ee-8b926751a5f7` · diamond `2bfe0642-489f-884f-982d-a462b7205c9a`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `am` · uuid `3caa063c-fb97-8ed7-a613-389d0b465d1a` · diamond `d4ede315-ace1-81bb-93db-3200210e1c6c`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports channel·collapse·law·merge·radio·sti · exports am · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law am is one schema.org word, content-addressed; the same word collides every s
 
 ---
 
-<sub>content-uuid `53a06dd0-3d66-84b5-af6e-461df61bf7f7` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c8e83ec2-2156-8c9e-822a-a109457944e7` · `pnpm readme` · `pnpm computed:check`</sub>

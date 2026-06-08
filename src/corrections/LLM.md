@@ -3,7 +3,7 @@
 
 # corrections
 
-path `corrections` · uuid `1e2a0981-2dea-8d8a-a322-568d9e99ddcd` · diamond `8bf41358-cb87-8173-b6f4-63bf1129b1dd`
+path `corrections` · uuid `38d63b54-1248-8216-bacd-d552056e9bf6` · diamond `6aa1b66f-3518-8383-86d3-61ca0463f24c`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·policy·sti · exports corrections · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
@@ -14,4 +14,4 @@ law corrections is one schema.org word, content-addressed; the same word collide
 
 ---
 
-<sub>content-uuid `4ef8f26c-e958-88a6-ba05-0563542f5d3e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9f0eb0eb-e781-82fc-900f-98d6301d3b44` · `pnpm readme` · `pnpm computed:check`</sub>

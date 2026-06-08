@@ -3,8 +3,8 @@
 
 # copay
 
-path `copay` · uuid `0587d678-8f5f-8586-b4e6-39010c0b4320` · diamond `94c9a254-db39-8fd4-98bb-c583ad52a02c`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `copay` · uuid `ad361fba-cf9a-8d4c-aed8-2ffa8b52cb35` · diamond `ea6118d1-b634-8e8b-bdda-3508b78173f4`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·health·law·merge·option·plan·sti · exports copay · escapes —
 links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law copay is one schema.org word, content-addressed; the same word collides ever
 
 ---
 
-<sub>content-uuid `9a5bc291-a4eb-8470-a816-86bf47275674` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d04e6bc5-8814-8f29-abf0-565b0c05e802` · `pnpm readme` · `pnpm computed:check`</sub>

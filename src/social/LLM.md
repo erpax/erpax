@@ -3,15 +3,15 @@
 
 # social
 
-path `social` · uuid `b873dd58-e24e-8945-bcf5-b2f48b603e43` · diamond `1a480da5-7f18-8418-b8b8-0595105ef681`
+path `social` · uuid `b873dd58-e24e-8945-bcf5-b2f48b603e43` · diamond `2e3c8fbf-c377-8312-b972-9e1404224997`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·event·law·media·merge·posting·sti · exports social · escapes —
-links `7/7` · folded `1` · bonds in `6` out `6`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → 5305·cohort·landmarks·memories·plugins·stat · ← 5305·cohort·landmarks·memories·plugins·stat
+neighbors → collapse·event·law·media·merge·posting·sti · ← collapse·event·law·media·merge·posting·sti
 analysis —
 law social is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `5b28bf9b-4f4b-8626-8230-ccb0411e84fa` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4ee6f8b5-836b-8e76-9cf2-9ed3fb7ce82e` · `pnpm readme` · `pnpm computed:check`</sub>

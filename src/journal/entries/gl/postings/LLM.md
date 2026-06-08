@@ -3,15 +3,15 @@
 
 # postings
 
-path `journal/entries/gl/postings` · uuid `0113c14d-b124-8310-a56e-81704c7a9ab8` · diamond `036bf686-838b-8045-9692-b18cf2dfdba7`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+path `journal/entries/gl/postings` · uuid `0d01c048-9f46-8fef-b356-855de2df9f79` · diamond `d58bc3b4-87da-849c-a7b8-b42efa510afa`
+horo `8` `crest` · trinity `1·1·1` · sealed `0`
 imports @/audit/trail/after/change·@/auth·@/auto/populate/created/by·@/auto/populate/tenant·@/auto/set/timestamp·@/base/accounting/field·@/chain/event/emitter·@/utility · exports default · escapes —
-links `7/7` · folded `1` · bonds in `10` out `11`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·accounting·entries·horo·identity·law·leases·modifications·proof·standard·transaction · ← accounting·entries·horo·identity·law·leases·modifications·proof·standard·transaction
+neighbors → accounting·horo·identity·law·proof·standard·transaction · ← accounting·horo·identity·law·proof·standard·transaction
 analysis —
 law each posting is exactly one debit-or-credit line bound to a single GL account and parent entry, and its posted-date is auto-set the moment status becomes posted.
 
 ---
 
-<sub>content-uuid `ceab4459-254b-8cab-9a9f-9c6bf143366e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e55ee6bb-48be-8a58-ad36-500ba989ba08` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -1,8 +1,192 @@
 ---
-name: self-research
+name: research
 description: "Use when an actor must find where its own identity (an email) is used across the corpus and secure those accounts — self-research over the COMPUTED Payload MCP find-surface, scoped to the caller's own access so there is no bypass, with each reset/recover sandbox-gated and receipted. Agnostic — collections and services live in the DB, never hardcoded."
+atomPath: self/research
+coordinate: self/research · 2/share · aec41c5c
+contentUuid: "266b8634-3e9c-5bfc-81b3-1a7eadbfe4eb"
+diamondUuid: "ba506f69-1556-8c9f-a6cf-2c9deefef33d"
+uuid: "aec41c5c-f27d-81b1-ba89-1692a0a3785e"
+horo: 2
+bonds:
+  in:
+    - accounting
+    - akashic
+    - anchor
+    - angel
+    - breath
+    - civilization
+    - collapse
+    - consultant
+    - consulting
+    - design
+    - development
+    - drone
+    - feedback
+    - history
+    - interview
+    - law
+    - literature
+    - localize
+    - merge
+    - oid
+    - organization
+    - profane
+    - project
+    - proof
+    - research
+    - sacred
+    - science
+    - self
+    - uuid
+    - zeropoint
+  out:
+    - accounting
+    - akashic
+    - anchor
+    - angel
+    - breath
+    - civilization
+    - collapse
+    - consultant
+    - consulting
+    - design
+    - development
+    - drone
+    - feedback
+    - history
+    - interview
+    - law
+    - literature
+    - localize
+    - merge
+    - oid
+    - organization
+    - profane
+    - project
+    - proof
+    - research
+    - sacred
+    - science
+    - uuid
+    - zeropoint
+typography:
+  partition: self
+  bondDegree: 149
+  neighbors:
+    - agent
+standards:
+  - "NIST SP 800-162 ABAC — the access scope is the ownership boundary"
+  - "NIST SP 800-63B §6.1.3 — owner-authorized credential recovery"
+  - "NIST-SP-800-162"
+  - "OWASP ASVS V5 — least-privilege / IDOR-prevention (no cross-actor read)"
+  - "OWASP-ASVS"
+bindings: []
+neighbors:
+  wikilink:
+    - accept
+    - access
+    - account
+    - broker
+    - collapse
+    - cost
+    - email
+    - entropy
+    - entry
+    - gate
+    - harmony
+    - identity
+    - law
+    - mcp
+    - plugins
+    - proof
+    - receipt
+    - recover
+    - research
+    - reset
+    - sandbox
+    - security
+    - self
+    - tamper
+    - zeropoint
+  matrix:
+    - accounting
+    - akashic
+    - anchor
+    - angel
+    - breath
+    - civilization
+    - collapse
+    - consultant
+    - consulting
+    - design
+    - development
+    - drone
+    - feedback
+    - history
+    - interview
+    - law
+    - literature
+    - localize
+    - merge
+    - oid
+    - organization
+    - profane
+    - project
+    - proof
+    - research
+    - sacred
+    - science
+    - uuid
+    - zeropoint
+  backlinks:
+    - accounting
+    - akashic
+    - anchor
+    - angel
+    - breath
+    - civilization
+    - collapse
+    - consultant
+    - consulting
+    - design
+    - development
+    - drone
+    - feedback
+    - history
+    - interview
+    - law
+    - literature
+    - localize
+    - merge
+    - oid
+    - organization
+    - profane
+    - project
+    - proof
+    - research
+    - sacred
+    - science
+    - uuid
+    - zeropoint
+signatures:
+  computationUuid: "a6185544-5788-8ec5-b41a-7169c95a382b"
+  stages:
+    - stage: path
+      stageUuid: "81cc84ac-f2f5-85e2-b9ed-0e66364b833b"
+    - stage: trinity
+      stageUuid: "9ed414e6-e71f-8850-b1c5-0c9e8c874528"
+    - stage: boundary
+      stageUuid: "cce8a619-53ab-8d0b-8db5-9f4d05825fc0"
+    - stage: links
+      stageUuid: "beb763c0-e731-870a-943d-a5491b766541"
+    - stage: horo
+      stageUuid: "12f5288f-46fc-8933-a368-cb3651979d58"
+    - stage: seal
+      stageUuid: "12b22568-903a-881f-8644-479291fef1d8"
+    - stage: uuid
+      stageUuid: "a15527c8-0dcb-8e00-a759-d3f6a62939c9"
+version: 2
 ---
-
 # self-research — find where your identity is used, and secure it (under [[self]])
 
 **Name — the [[law]].** Per *the atom & the word* (the first canonical law, from which the rest emerges): a concept is one TRUE word, and **the compound IS the entanglement**. So `self-research` is the entanglement of the single-word atoms [[self]] ⊗ [[research]] — the path `self/research` is the composition, the dash is its visible entanglement. Collapsing it to one word (`selfresearch`, like the forbidden `creativework`) would be the multiword-disguise violation; the camelCase [[mcp]] verb `selfResearch` is only the `erpax.<area>.<verb>` tool-namespace form, never the atom name.

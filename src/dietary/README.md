@@ -2,7 +2,7 @@
 
 # dietary
 
-> atom `dietary` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
+> atom `dietary` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -21,9 +21,9 @@
 
 ## typography graph
 
-- partition `dietary` · sub-root `3f80f57a-dff9-8258-8301-212d6e1e7654`
+- partition `dietary` · sub-root `6d7ab555-677a-8049-8aaa-0d3cd226bd20`
 - bond degree `16` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -33,15 +33,53 @@
 
 - `schema.org — the type vocabulary, collided to single words` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·8 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `16` · sealed `1` · horo `1`
+- bond degree `16` · sealed `1` · horo `8`
 - variance `0` · balanced `1` · trinity sum `1`
 - bindings `0` · standards `1`
 
 ## identity
 
-- uuid `3f80f57a-dff9-8258-8301-212d6e1e7654`
+- uuid `6d7ab555-677a-8049-8aaa-0d3cd226bd20`
 - bonds in `5` · out `5`
 - trinity form·code·proof `1`·`0`·`0`
 - links `5` / `5`
@@ -53,4 +91,4 @@
 
 ---
 
-<sub>content-uuid `def06858-2136-8790-acb7-edb70d747e8a` · framed by typography partition `dietary` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `295d5a9f-b415-8023-8c51-607eb7cc8078` · framed by typography partition `dietary` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,21 @@
 
 - partition `infectious` · sub-root `de9457f2-d5c6-8ac3-b470-ee316066c307`
 - bond degree `24` · analysis neighbors `agent`
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `24` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `9b1bb714-8012-8496-890b-6b5bb0daa54d` · framed by typography partition `infectious` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `707b732c-6a85-847e-8680-e6f357ac1f6b` · framed by typography partition `infectious` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>

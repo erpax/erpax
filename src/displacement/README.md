@@ -23,7 +23,7 @@
 
 - partition `displacement` · sub-root `ed452bfb-a95d-851a-970b-095bcbd0c12b`
 - bond degree `15` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `881e9e56-d4e6-81f5-8f06-e0cb1fd5a16c` · framed by typography partition `displacement` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `6f0b5049-1e83-8694-a937-a7bd60b184ba` · framed by typography partition `displacement` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

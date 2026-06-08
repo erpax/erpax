@@ -3,8 +3,8 @@
 
 # airbags
 
-path `airbags` · uuid `7097fb80-e9e8-8179-ab54-f63dbc77ed5d` · diamond `030e1c62-b957-8ca8-ad40-ccf10873a559`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `airbags` · uuid `4f80235f-4d42-85df-9e8b-218953444089` · diamond `f6095c24-4861-84d7-a72c-04ed8e36c1b9`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·number·sti · exports airbags · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law airbags is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `c51c2454-bef7-852f-80e7-a811aa830f42` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1d1fc236-1db3-823b-aad7-e2794afb27c4` · `pnpm readme` · `pnpm computed:check`</sub>

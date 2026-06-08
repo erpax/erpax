@@ -3,8 +3,8 @@
 
 # decooperative
 
-path `decooperative` · uuid `f67ad194-b89f-8ff0-96d8-0567a488c0b3` · diamond `fbcc38fd-ed27-8a33-8d4e-2f50b7a283ac`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `decooperative` · uuid `2dbd0d8a-d15e-8fd1-8226-d19853c5850b` · diamond `907e3c7c-936f-848c-9c4d-9f44c50813cc`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports decooperative · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law decooperative is one schema.org word, content-addressed; the same word colli
 
 ---
 
-<sub>content-uuid `f9ef914a-ba5d-8112-b58f-d75dd162b21f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `49b0d07c-4b21-8e26-b8a8-081dc7fb7198` · `pnpm readme` · `pnpm computed:check`</sub>

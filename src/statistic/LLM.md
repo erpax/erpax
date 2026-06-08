@@ -3,15 +3,15 @@
 
 # statistic
 
-path `statistic` · uuid `89e5cb33-b1e0-899f-8399-f261c7d70097` · diamond `eb798547-83ca-8c04-ac23-a7c98390274a`
+path `statistic` · uuid `89e5cb33-b1e0-899f-8399-f261c7d70097` · diamond `3c69390e-b5b4-882e-ac1d-172e66228ac8`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports agent·collapse·interaction·law·merge·sti · exports statistic · escapes —
-links `6/6` · folded `1` · bonds in `36` out `36`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → auto·big·boltzmann·closes·closing·comprised·control·dentist·eidr·eprelease·funder·furniture·global·graphic·hand·harden·hold·itmutual·landmarks·limit·meeting·minor·motor·occupation·occurrence·offline·original·part·permanently·person·quotes·relocate·shape·special·token·wave · ← auto·big·boltzmann·closes·closing·comprised·control·dentist·eidr·eprelease·funder·furniture·global·graphic·hand·harden·hold·itmutual·landmarks·limit·meeting·minor·motor·occupation·occurrence·offline·original·part·permanently·person·quotes·relocate·shape·special·token·wave
+neighbors → agent·collapse·interaction·law·merge·sti · ← agent·collapse·interaction·law·merge·sti
 analysis agent
 law statistic is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `95af7040-3470-8df6-a519-0ae92ea7698e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a863dc1a-26e6-8272-ad8f-99ee1f62f3f8` · `pnpm readme` · `pnpm computed:check`</sub>

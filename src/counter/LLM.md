@@ -3,8 +3,8 @@
 
 # counter
 
-path `counter` · uuid `f91dc1f2-aa4d-81aa-ba3c-6aad88b2cdfc` · diamond `10cd0e4e-949b-83b8-aa2a-37c53d489e1b`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `counter` · uuid `5eb0c772-50df-8a68-948d-c4e98d8892a1` · diamond `4e7966fd-bed1-80f2-a31c-948e423f05ce`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·interaction·law·merge·sti · exports counter · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law counter is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `702d423b-6448-819f-9bbd-e1aad5ec6824` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6f27d1c7-15e7-89da-9bf9-ca0bd6dbcf3c` · `pnpm readme` · `pnpm computed:check`</sub>

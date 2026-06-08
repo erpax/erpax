@@ -3,15 +3,15 @@
 
 # wpfooter
 
-path `wpfooter` · uuid `2ae71806-2bc3-8249-be1c-c15798755951` · diamond `35a573a0-a1b7-8de6-b778-59fe4a563157`
+path `wpfooter` · uuid `2ae71806-2bc3-8249-be1c-c15798755951` · diamond `38cb078f-0c82-86a1-ac30-7a321d723079`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports wpfooter · escapes —
-links `4/4` · folded `1` · bonds in `2` out `2`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law wpfooter is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `33712372-1128-8902-a40d-8dd8188ad9c3` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `471981c1-5af5-890f-afb8-1ff0904a5fc1` · `pnpm readme` · `pnpm computed:check`</sub>

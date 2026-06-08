@@ -2,9 +2,11 @@
 
 # bookings
 
-> atom `bookable/resources/bookings` · horo `5` `round` · [[balance]] `1` · [[seal]] `0`
+> atom `bookable/resources/bookings` · horo `2` `share` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `bookable/resources/bookings` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,11 +23,59 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `law:a booking is the canonical reservation event against a [[bookable/resources]] — IFRS-15 over-time / point-in-time revenue recognition decided by the resource's use, accountable OUT to [[accounting]].`
+- `seal:unsealed`
+- `trigger:Use when recording or querying reservation events — hotel check-in/out, vehicle rental, equipment hire, meeting-room holds, field-service slots — against a bookable-resource; IFRS-15 over-time / point-in-time revenue recognition, cancellation policy, deposit, invoice linkage, multi-channel (direct/OTA/GDS). The canonical reservation primitive.`
+- `trigger:a booking is the canonical reservation event against a [[bookable/resources]] — IFRS-15 over-time / point-in-time revenue recognition decided by the resource's use, accountable OUT to [[accounting]].`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `87f1bb34-303e-8bdf-bd95-14adcd7ade66` · `bea64faf-273d-88e1-b0bc-7e29cc88aff3` · `c906108b-c6f6-8434-a7b5-7a3080f65c09`
+- content uuids `86487bf5-0e84-8e30-861c-ecd563eda4a9` · `b0884f7c-e0bb-8129-bc85-782a685cd24e` · `e6bb2f44-81d0-8cc7-be2f-a3557c129b13`
+
+## [[entropy]] — gaps · seals
+
+> account code `bookable/resources/bookings` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.2` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `2` eb | Σ seal `11.2` eb |
+
+> net residual `-9.2` eb · seal/gap ratio `5.6` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `bookable` · sub-root `81a5c4cf-d55f-83da-84b6-028a286649f2`
-- bond degree `25` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- partition `bookable` · sub-root `0fbb8584-2be2-8d8c-b71f-c692ff3a833e`
+- bond degree `26` · analysis neighbors —
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
 
 ## [[cloudflare]] bindings
 
@@ -51,7 +101,6 @@
 - `IFRS IFRS-15 §38 point-in-time-recognition (single-use)` · banner
 - `IFRS IFRS-15 §B20-B27 right-of-return cancellation-policy` · banner
 - `ISO-18513:2021 tourism-services-vocabulary check-in check-out` · banner
-- `ISO-19011:2018 audit-trail booking-lifecycle` · banner
 - `ISO-4217` · catalogue
 - `ISO-4217:2015 currency-codes pricing` · banner
 - `ISO-8601-1` · catalogue
@@ -63,16 +112,54 @@
 - `US-CTA-2021` · catalogue
 - `US-GAAP ASC-606-10-25-27 over-time-criteria` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·2 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `25` · sealed `0` · horo `5`
+- bond degree `26` · sealed `0` · horo `2`
 - variance `0` · balanced `1` · trinity sum `3`
-- bindings `0` · standards `29`
+- bindings `0` · standards `28`
 
 ## identity
 
-- uuid `0223db2e-bce0-8252-9914-ad421f8bb526`
-- bonds in `8` · out `8`
+- uuid `9e4e03ce-cece-89a8-aee8-6e43ad1233f0`
+- bonds in `9` · out `8`
 - trinity form·code·proof `1`·`1`·`1`
 - links `9` / `9`
 - folded `1` · escapes `0`
@@ -83,4 +170,4 @@
 
 ---
 
-<sub>content-uuid `3c360121-aa3e-8976-b8ae-36ee90928a92` · framed by typography partition `bookable` bonds `25` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `29684828-e3fe-8a3c-a275-6d4b69f1a305` · framed by typography partition `bookable` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>

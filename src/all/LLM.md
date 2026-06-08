@@ -3,8 +3,8 @@
 
 # all
 
-path `all` · uuid `6da5eb4f-4567-8e2d-93f2-9bc4236e4d96` · diamond `e564f086-0493-8ced-a95e-dfd8fba3fe06`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `all` · uuid `2857eeef-42c6-82ca-854b-fd4043bcacfd` · diamond `4038ff56-12da-8b98-81a0-ad546192d334`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports accounting·collapse·comment·dimension·identity·law·merge·one·pages·plugins·standard·sti·sufficient·tags·uuid · exports all · escapes —
 links `22/22` · folded `1` · bonds in `28` out `28`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law `all` is totality — a reference may point at ANY entity polymorphically an
 
 ---
 
-<sub>content-uuid `d3566baa-66fa-8e9f-85bf-326ff38c371f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b4dd78f1-8406-83ee-b447-efef566172db` · `pnpm readme` · `pnpm computed:check`</sub>

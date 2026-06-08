@@ -3,8 +3,8 @@
 
 # bust
 
-path `bust` · uuid `d01612a2-b681-8362-bf72-1c42b26d83f0` · diamond `b4804e54-e9c6-80ef-ab0c-5aae850a07e6`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `bust` · uuid `bda33db0-6a73-88ba-b074-37d8bd2cf8d4` · diamond `582faf86-bafe-8584-b3b5-9a54e31055f9`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports bust · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law bust is one schema.org word, content-addressed; the same word collides every
 
 ---
 
-<sub>content-uuid `f8ac93b7-f899-83b1-a367-c790bfb479e5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5ee41f59-e776-8bed-8a09-94f737e64fda` · `pnpm readme` · `pnpm computed:check`</sub>

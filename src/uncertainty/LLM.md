@@ -3,15 +3,15 @@
 
 # uncertainty
 
-path `uncertainty` · uuid `e584c996-ed05-8239-ace8-54f7bef8dc80` · diamond `dfe15cb4-6ca3-8ec1-9a21-44da03ec8e2a`
+path `uncertainty` · uuid `e584c996-ed05-8239-ace8-54f7bef8dc80` · diamond `6cf27dce-30de-8e3d-9c08-d9a25da5fbbf`
 horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports @/photon · exports const · escapes —
-links `16/16` · folded `1` · bonds in `6` out `6`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·contained·family·landmarks·memories·stat · ← cohort·contained·family·landmarks·memories·stat
+links `16/16` · folded `1` · bonds in `9` out `9`
+faces worker·plugin·pwa `1·0·0`
+neighbors → design·entropy·law·leap·limit·photon·quantum·spectrum·wave · ← design·entropy·law·leap·limit·photon·quantum·spectrum·wave
 analysis —
 law conjugate spreads obey Δa·Δb ≥ ħ/2 — a hard floor computed from Planck's h, never zero; it is a design limit (the irreducible slack) and the natural linewidth ΔE ≥ ħ/2Δt that broadens every spectral line.
 
 ---
 
-<sub>content-uuid `ce608a45-b06f-8b0f-88cf-551d50c3be9a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3687eb03-23d3-860c-8638-79a8b07e718b` · `pnpm readme` · `pnpm computed:check`</sub>

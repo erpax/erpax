@@ -1,8 +1,70 @@
 ---
 name: buddhist
-description: Use when reasoning about buddhist as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.
+description: "Use when reasoning about buddhist as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
+atomPath: buddhist
+coordinate: buddhist · 8/crest · 465add24
+contentUuid: "8f6c140b-c642-5937-ba73-ac688e7482dd"
+diamondUuid: "230941fc-d199-8628-b549-ee5098dd81fa"
+uuid: "465add24-a8c8-88e3-9d78-5d17c226e961"
+horo: 8
+bonds:
+  in:
+    - collapse
+    - law
+    - merge
+    - sti
+    - temple
+  out:
+    - collapse
+    - law
+    - merge
+    - sti
+    - temple
+typography:
+  partition: buddhist
+  bondDegree: 16
+  neighbors: []
+standards:
+  - "schema.org — the type vocabulary, collided to single words"
+bindings: []
+neighbors:
+  wikilink:
+    - collapse
+    - law
+    - merge
+    - sti
+    - temple
+  matrix:
+    - collapse
+    - law
+    - merge
+    - sti
+    - temple
+  backlinks:
+    - collapse
+    - law
+    - merge
+    - sti
+    - temple
+signatures:
+  computationUuid: "a337ba91-f043-8d0a-a850-984ef006134e"
+  stages:
+    - stage: path
+      stageUuid: "cd096d17-939a-89c5-9953-2c5edd99d038"
+    - stage: trinity
+      stageUuid: "1de3fe76-3123-862f-a958-ff0e34177505"
+    - stage: boundary
+      stageUuid: "7eefe4d7-896b-8fa2-91fb-8399c8b3528c"
+    - stage: links
+      stageUuid: "1443c114-e0af-84ec-853f-012ec5ecf7f6"
+    - stage: horo
+      stageUuid: "8b76d828-19aa-8129-851a-7aecabb7b70d"
+    - stage: seal
+      stageUuid: "1e1bbff6-1de8-8e54-a513-ab42f35d14c6"
+    - stage: uuid
+      stageUuid: "36a9863d-5363-8b46-814c-3e3ce8491d53"
+version: 2
 ---
-
 # buddhist
 
 A schema.org component word, collided out of schema.org compounds — fused from BuddhistTemple ([[sti]] · [[collapse]] · [[merge]]).

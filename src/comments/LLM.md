@@ -3,8 +3,8 @@
 
 # comments
 
-path `comments` · uuid `752060b2-8570-8b7d-a700-cd2f4a6002bc` · diamond `89b43c3d-d1d5-89a6-b47a-29b70377b330`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `comments` · uuid `52b647c2-6475-859d-9443-c9d4a46bcb0d` · diamond `800a7703-2e0b-8818-8ee3-689e51809839`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·user · exports comments · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law comments is one schema.org word, content-addressed; the same word collides e
 
 ---
 
-<sub>content-uuid `44ce2d69-e6ed-8a13-917d-0d7704ac9e79` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3d9b52c5-5b63-8ab3-a88a-f88cf1bf84c8` · `pnpm readme` · `pnpm computed:check`</sub>

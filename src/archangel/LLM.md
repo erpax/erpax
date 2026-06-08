@@ -3,8 +3,8 @@
 
 # archangel
 
-path `archangel` · uuid `31a26713-d5af-82be-be2d-6d96a1ef635d` · diamond `4da8f13f-1047-811e-a86b-14aab81722b4`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `archangel` · uuid `bb59554c-6ade-8df2-8f22-98ff440c9ef2` · diamond `71b6dfcd-b053-8bfb-b7cd-9fb28b0ddafc`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports angel·architect·atom·diamond·duality·entropy·fractal·karma·law·mercy·merge·order·population·prayer·religion·ritual·sin·society·trinity·uuid·whole · exports archangel · escapes —
 links `45/45` · folded `1` · bonds in `49` out `49`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law an archangel is the principal [[angel]] that governs a whole domain of the l
 
 ---
 
-<sub>content-uuid `43ea7417-5d19-8f8d-8cdd-8d0918978f32` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8d46e684-1e2a-8654-bab5-43b0b256ae87` · `pnpm readme` · `pnpm computed:check`</sub>

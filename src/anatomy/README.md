@@ -2,7 +2,7 @@
 
 # anatomy
 
-> atom `anatomy` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
+> atom `anatomy` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -21,9 +21,9 @@
 
 ## typography graph
 
-- partition `anatomy` · sub-root `12a41b57-7381-88d5-9fde-0839f0438177`
-- bond degree `24` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- partition `anatomy` · sub-root `91e95ccd-b6df-8434-be56-08e07363a39c`
+- bond degree `50` · analysis neighbors —
+- graph root `67d11a43-67e0-8dde-afd8-ecbed950ff42`
 
 ## [[cloudflare]] bindings
 
@@ -33,16 +33,54 @@
 
 - `schema.org — the type vocabulary, collided to single words` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·2 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `24` · sealed `1` · horo `1`
+- bond degree `50` · sealed `1` · horo `2`
 - variance `0` · balanced `1` · trinity sum `1`
 - bindings `0` · standards `1`
 
 ## identity
 
-- uuid `12a41b57-7381-88d5-9fde-0839f0438177`
-- bonds in `7` · out `7`
+- uuid `91e95ccd-b6df-8434-be56-08e07363a39c`
+- bonds in `14` · out `14`
 - trinity form·code·proof `1`·`0`·`0`
 - links `7` / `7`
 - folded `1` · escapes `0`
@@ -53,4 +91,4 @@
 
 ---
 
-<sub>content-uuid `6450dce4-0b1d-8e75-82af-f9c6782630ca` · framed by typography partition `anatomy` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a12da8e8-d96b-87aa-86c5-32bac127f3b6` · framed by typography partition `anatomy` bonds `50` · `pnpm readme` · `pnpm readme:check`</sub>

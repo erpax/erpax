@@ -3,8 +3,8 @@
 
 # data-protection
 
-path `data-protection` · uuid `ef988b96-e67c-81a6-97a5-c545fea5dc69` · diamond `13ba94ef-9e5a-817a-b177-72abee92ff1a`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `data-protection` · uuid `11c34328-346f-80a7-9c38-ddac64c97e59` · diamond `6d4c4df3-f724-80cf-be36-28b6ddb4425c`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports consent·contracts·data·law·matter · exports data-protection · escapes —
 links `7/7` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law a data-protection clause fixes the processor/controller roles and the permit
 
 ---
 
-<sub>content-uuid `1da3f85c-d882-871b-a988-631fe614d852` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `68b5de27-e44a-8d8b-88cc-b8f359bd7994` · `pnpm readme` · `pnpm computed:check`</sub>

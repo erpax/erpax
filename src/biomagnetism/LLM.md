@@ -3,7 +3,7 @@
 
 # biomagnetism
 
-path `biomagnetism` · uuid `9d517f80-7f00-8bb2-afdb-524682db5790` · diamond `2f2a6b56-15b4-8faf-a0d5-c97a819c48be`
+path `biomagnetism` · uuid `384be47b-746b-8d41-bd00-eac39fb93040` · diamond `eda64818-37e1-897d-826a-bbcb10be815f`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports analog·aura·biofield·biophoton·coherence·health·law·matrix·measure·proof·radiation·signal · exports biomagnetism · escapes —
 links `18/18` · folded `1` · bonds in `13` out `13`
@@ -14,4 +14,4 @@ law the body's magnetic field is real but contained — it decays into noise wit
 
 ---
 
-<sub>content-uuid `6136c6eb-abfc-8da6-a55d-d66318a6d773` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `da38eccb-a452-848c-b7e3-466078f139bf` · `pnpm readme` · `pnpm computed:check`</sub>

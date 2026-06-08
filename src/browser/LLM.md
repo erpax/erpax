@@ -3,7 +3,7 @@
 
 # browser
 
-path `browser` · uuid `b6dbe14c-b90d-85a0-91c1-dbab826e9d4e` · diamond `8869e75d-6f26-87a0-93fa-b91728e43190`
+path `browser` · uuid `6ad89fae-c0ab-814d-847b-63c165d9fc97` · diamond `edd97fdc-2fe6-8ce9-aec5-c6397edc01ea`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·requirements·sti · exports browser · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
@@ -14,4 +14,4 @@ law browser is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `97337aad-5402-8fb6-8593-4f53edbca60e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d73f1c01-1b41-86e1-a3b8-34fe6a69fa8c` · `pnpm readme` · `pnpm computed:check`</sub>

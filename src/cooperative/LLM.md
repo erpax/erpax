@@ -3,8 +3,8 @@
 
 # cooperative
 
-path `cooperative` · uuid `902543fb-400c-8a98-8a09-fc7503079b1c` · diamond `7f777673-3487-81b0-aa17-c03024eea89b`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `cooperative` · uuid `1d1bd77a-8cf1-82cf-89c7-b9f1cd309337` · diamond `57a1d40d-a2c6-8d69-9157-828969386669`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports law·organization·thing · exports cooperative · escapes —
 links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law cooperative is one schema.org word, content-addressed; the same word collide
 
 ---
 
-<sub>content-uuid `46c69e33-ec5c-8b90-b16b-19822bc727db` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8814cd9e-e49c-8c1b-8f42-c5e41a50114d` · `pnpm readme` · `pnpm computed:check`</sub>

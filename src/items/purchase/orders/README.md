@@ -2,9 +2,11 @@
 
 # orders
 
-> atom `items/purchase/orders` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `items/purchase/orders` · horo `2` `share` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `items/purchase/orders` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -19,26 +21,134 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
+
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:stray:[[gap]]/[[diamond]]/stray/goods/`
+
+### collapse
+
+- `balance:variance=1`
+- `law:a purchase order is the vendor purchase commitment and first leg of the three-way match (PO → [[items/purchase/orders/goods/receipts|receipt]] → invoice), whose Incoterms FOB point gates the timing of GL posting (IFRS-15 §38-42).`
+- `seal:unsealed`
+- `trigger:Use when raising or reviewing a vendor purchase commitment — line items, Incoterms 2020 delivery terms and location (FOB/CIF/DDP/EXW), order/due dates, currency, and SOX three-way-match (PO → goods receipt → invoice). The procure-to-pay header that gates GL posting timing by FOB point per IFRS-15 §38-42.`
+- `trigger:a purchase order is the vendor purchase commitment and first leg of the three-way match (PO → [[items/purchase/orders/goods/receipts|receipt]] → invoice), whose Incoterms FOB point gates the timing of GL posting (IFRS-15 §38-42).`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `861562ea-0734-828a-b508-8eb4965c95ac` · `c8084e4b-cb79-87e0-8a37-a9294dd8ce5b` · `ccda86d3-7fdc-8a7b-a674-5cffaaae347f`
+- content uuids `2b74c5c8-156c-8d83-b558-a01c68c40f60` · `3189f737-a6db-83c8-9229-081a0d723546` · `350c5506-0748-8a59-8b2a-cafd58f81356`
+
+## [[entropy]] — gaps · seals
+
+> account code `items/purchase/orders` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[diamond]]/stray/goods/ `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.2` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+| Σ gap `2` eb | Σ seal `8.2` eb |
+
+> net residual `-6.2` eb · seal/gap ratio `4.1` · [[entropy]] · [[seal]]
 
 ## typography graph
 
-- partition `items` · sub-root `1341dba3-9395-8200-8e47-ea3dc4d4b9e9`
-- bond degree `157` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- partition `items` · sub-root `e1747762-a2bb-8ab4-aaeb-99c9513102fb`
+- bond degree `0` · analysis neighbors —
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `EN-16931:2017 §BG-13 buyer-reference` · banner
+- `IFRS IAS-37 provisions-and-contingent-liabilities commitment` · banner
+- `IFRS-15 §38-42 revenue-recognition FOB-driven-GL-posting-timing` · banner
+- `INCOTERMS-2020` · catalogue
+- `INCOTERMS-2020 delivery-responsibility-consistency` · banner
+- `INCOTERMS-2020 delivery-terms-and-risk-transfer` · banner
+- `ISO-4217:2015 currency-codes` · banner
+- `ISO-8601-1:2019 date-time order-date due-date` · banner
+- `ISO-9735` · catalogue
+- `SOX §404 internal-controls three-way-match` · banner
+- `UN-EDIFACT ORDERS d96a` · banner
+- `US-GAAP ASC 405 liabilities accounts-payable` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unbalanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| not-held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·2 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `0` · sealed `0` · horo `2`
+- variance `1` · balanced `0` · trinity sum `3`
+- bindings `0` · standards `12`
 
 ## identity
 
-- uuid `321e385f-eb0d-80a3-998d-dd6c4e018486`
-- bonds in `48` · out `51`
+- uuid `34b025bb-5eb3-8a5f-900b-b0e35c3684fd`
+- bonds in `19` · out `19`
 - trinity form·code·proof `1`·`1`·`1`
 - links `7` / `7`
 - folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `079de945-dd55-892b-8270-8e0b4746f3b3` · framed by typography partition `items` bonds `157` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b4ff00fe-7ce6-81e5-ad26-2411073f7517` · framed by typography partition `items` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

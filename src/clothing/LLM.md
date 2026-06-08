@@ -3,8 +3,8 @@
 
 # clothing
 
-path `clothing` · uuid `4fd198af-8df3-8452-91e0-a98e585d92f1` · diamond `afc797bc-eafd-87df-94eb-3619ab729cb0`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `clothing` · uuid `4062d871-fddf-8bcb-9d0a-9a8d2b430fdc` · diamond `620b5bf9-f1f9-81b5-91ce-b3211ecabb73`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·mens·merge·sti·store · exports clothing · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law clothing is one schema.org word, content-addressed; the same word collides e
 
 ---
 
-<sub>content-uuid `f822e8b1-ad78-8e85-990c-e9b6638bd7ba` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c8b1dfd6-86e1-8cf0-b5f2-b1d19ff1a037` · `pnpm readme` · `pnpm computed:check`</sub>

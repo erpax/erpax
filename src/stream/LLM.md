@@ -3,15 +3,15 @@
 
 # stream
 
-path `stream` · uuid `c83c3129-9323-8101-bdc0-f694664cf690` · diamond `4b71497c-c70b-8390-af88-f52b84c6888a`
-horo `2` `share` · trinity `1·1·1` · sealed `1`
+path `stream` · uuid `4b9aa452-a0c4-8f4a-ab76-747933032515` · diamond `90ea7da6-0e38-8326-8693-62c9e585a377`
+horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports @/agent·@/integrity·@/uuid/format · exports async·function·interface · escapes —
-links `33/33` · folded `1` · bonds in `6` out `6`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·lnid·memories·stat·uuid · ← cohort·landmarks·lnid·memories·stat·uuid
+links `33/33` · folded `1` · bonds in `29` out `29`
+faces worker·plugin·pwa `1·0·0`
+neighbors → akashic·blockchain·breath·cost·digit·distribution·duality·entropy·event·flow·fractal·generate·holographic·horo·identity·integrity·log·merge·number·pi·proof·realtime·seal·sequence·snapshot·standard·sync·thought·uuid · ← akashic·blockchain·breath·cost·digit·distribution·duality·entropy·event·flow·fractal·generate·holographic·horo·identity·integrity·log·merge·number·pi·proof·realtime·seal·sequence·snapshot·standard·sync·thought·uuid
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `3a670999-a810-8f2c-8685-b1519691b3c2` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `61ab1361-7206-82e3-9f0f-f7ede573b1ec` · `pnpm readme` · `pnpm computed:check`</sub>

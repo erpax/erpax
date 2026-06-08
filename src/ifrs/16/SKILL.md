@@ -1,8 +1,53 @@
 ---
 name: "16"
-description: "Use when implementing or referencing IFRS 16 / ASC 842 — Leases."
+description: Use when implementing or referencing IFRS 16 / ASC 842 — Leases.
+atomPath: ifrs/16
+coordinate: ifrs/16 · 7/descent · aa454e4b
+contentUuid: "1640814f-1bae-52ae-b6a5-4161db5d8466"
+diamondUuid: "c1509f53-2712-87b8-b60f-ed370e20499e"
+uuid: "aa454e4b-db5b-8eb3-b331-fab092b17046"
+horo: 7
+bonds:
+  in:
+    - law
+  out:
+    - law
+typography:
+  partition: ifrs
+  bondDegree: 3
+  neighbors: []
+standards:
+  - "IFRS IFRS-16 leases"
+  - "ISO-4217:2015 currency-codes"
+  - "ISO/IEC-29119"
+  - "US-GAAP ASC-842-20 lessee-accounting"
+bindings: []
+neighbors:
+  wikilink:
+    - law
+  matrix:
+    - law
+  backlinks:
+    - law
+signatures:
+  computationUuid: "812725fb-2048-8b3a-a2fb-6d4afb9e2bf8"
+  stages:
+    - stage: path
+      stageUuid: "ee6b2a65-3f6f-8d24-96d4-001ede700d7e"
+    - stage: trinity
+      stageUuid: "b9160e99-c709-8dc3-8d85-67277f6f7828"
+    - stage: boundary
+      stageUuid: "78d90d82-94b1-806f-bede-b85d060ed22b"
+    - stage: links
+      stageUuid: "26c3fcd9-b624-894e-8ee4-ad57756f0fe8"
+    - stage: horo
+      stageUuid: "60683946-0c4b-8caf-8a97-e85d9c4540f6"
+    - stage: seal
+      stageUuid: "25a8b629-5593-8310-8a41-90429c4a99e3"
+    - stage: uuid
+      stageUuid: "a54ecd78-3503-8810-addd-1fe123678d4a"
+version: 2
 ---
-
 # IFRS 16 / ASC 842 — Leases
 
 **IFRS edition:** IFRS 16 (January 2016, effective 2019).

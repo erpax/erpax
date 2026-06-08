@@ -3,15 +3,15 @@
 
 # factory
 
-path `factory` · uuid `610e42a6-9bde-8c95-b745-c26303e3e010` · diamond `c708371b-5023-8b91-bca7-b91ba3511897`
-horo `4` `weave` · trinity `1·1·1` · sealed `1`
+path `factory` · uuid `610e42a6-9bde-8c95-b745-c26303e3e010` · diamond `3ea21452-a52a-82be-a65f-d1d6f8320361`
+horo `4` `weave` · trinity `1·1·0` · sealed `0`
 imports — · exports *:./collection-factory·*:./recompute-parent-aggregates · escapes —
 links `16/16` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `1·0·0`
 neighbors → collections·diamond·dimension·fields·hooks·horo·law·standards·uuid · ← collections·diamond·dimension·fields·hooks·horo·law·standards·uuid
-analysis diamond
+analysis —
 law the factory is the DRY collapse of collection boilerplate — one declarative `createAccountingCollection` injects audit, uuid, horo, standards, and event hooks so every collection shares one shape and one verifier.
 
 ---
 
-<sub>content-uuid `e363dd89-7e59-8f97-9140-f5a4233c8040` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5f95f1f3-c218-8bd7-ae67-64f4990c6f50` · `pnpm readme` · `pnpm computed:check`</sub>

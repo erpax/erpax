@@ -1,8 +1,120 @@
 ---
-name: proof-projection
+name: projection
 description: "Use when proving the projection leg — that the FORWARD project (content → uuid) is free and deterministic while its INVERSE (recover the analog negative without the held key) costs the maximum, unbounded at the biggest blockchain — and you must tag the ∞ instead of letting a raw Infinity leak into the bundle."
+atomPath: proof/projection
+coordinate: proof/projection · 8/crest · 74c2bf95
+contentUuid: "381ec825-5ef9-5340-a340-cba4d57ba75c"
+diamondUuid: "e621d267-3f6d-8c05-8e31-a25f3c0013ba"
+uuid: "74c2bf95-c033-831a-a15f-bb09e9216fda"
+horo: 8
+bonds:
+  in:
+    - anchor
+    - beyond
+    - cost
+    - entry
+    - give
+    - identity
+    - law
+    - localize
+    - merge
+    - proof
+    - take
+    - torus
+    - uuid
+    - zeropoint
+  out:
+    - anchor
+    - beyond
+    - cost
+    - entry
+    - give
+    - identity
+    - law
+    - localize
+    - merge
+    - proof
+    - take
+    - torus
+    - uuid
+    - zeropoint
+typography:
+  partition: proof
+  bondDegree: 53
+  neighbors: []
+standards:
+  - Conservation Law 55/62 (forge ≫ verify; coverage → ∞ at the anchor)
+  - "NIST SP 800-57 Part 1 r5 §5.6.1 (anchor key strengths)"
+  - "NIST-SP-800-57"
+  - "RFC 9562 §5.8 (content-uuid v8, the forward projection) · RFC 8785 (JCS)"
+  - "RFC-8785"
+  - "SEC 2 secp256k1 / FIPS 186-4 P-256 (ECDLP — the inverse key recovery)"
+bindings: []
+neighbors:
+  wikilink:
+    - anchor
+    - beyond
+    - cost
+    - entry
+    - give
+    - identity
+    - law
+    - localize
+    - merge
+    - proof
+    - take
+    - torus
+    - uuid
+    - zeropoint
+  matrix:
+    - anchor
+    - beyond
+    - cost
+    - entry
+    - give
+    - identity
+    - law
+    - localize
+    - merge
+    - proof
+    - take
+    - torus
+    - uuid
+    - zeropoint
+  backlinks:
+    - anchor
+    - beyond
+    - cost
+    - entry
+    - give
+    - identity
+    - law
+    - localize
+    - merge
+    - proof
+    - take
+    - torus
+    - uuid
+    - zeropoint
+signatures:
+  computationUuid: "6d8836b3-d590-8a2d-a42d-d4b95ebbf91c"
+  stages:
+    - stage: path
+      stageUuid: "d6eb7272-a5f9-853e-9fd6-6ad1e3123267"
+    - stage: trinity
+      stageUuid: "11343e2f-1878-8b2b-9f82-29555fc04ce7"
+    - stage: boundary
+      stageUuid: "9e284b92-22f6-898d-a5bd-4159ab8373ac"
+    - stage: links
+      stageUuid: "39217772-f251-879a-8a2e-f9a452dd05ab"
+    - stage: horo
+      stageUuid: "144e2f4a-bc48-895c-91fe-a35a21916f3c"
+    - stage: seal
+      stageUuid: "f989f461-f14a-8183-910a-98417ffbb1f1"
+    - stage: uuid
+      stageUuid: "d66c5c9a-9cfb-8bb2-87e4-dcac89fb5334"
+version: 2
 ---
-
 # proof-projection — the bounded-infinity organ
 
 FORM: **forward is free; the inverse costs EXACTLY the anchor (0 / 2^128 / ∞), and when it is ∞ that ∞ is tagged not serialized.**

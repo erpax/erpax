@@ -3,15 +3,15 @@
 
 # database
 
-path `database` · uuid `b341472b-4fb0-82c6-81f5-d1d04a2fc8d4` · diamond `78f3d057-7924-82c7-a30a-0f79ffe93044`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `database` · uuid `f4d0d06c-d9a2-806c-b4a6-afd77a91389b` · diamond `7c93e65f-cd73-8d60-a20f-a8d1233d8f38`
+horo `5` `round` · trinity `1·0·0` · sealed `0`
 imports deploy·fields·identity·law·recover · exports database · escapes —
-links `6/6` · folded `1` · bonds in `27` out `26`
+links `6/6` · folded `1` · bonds in `27` out `27`
 faces worker·plugin·pwa `0·0·0`
-neighbors → backup·bindings·cardinality·chat·config·consistency·constraint·deploy·dev·fields·id·identity·law·merge·nullability·partition·payload·port·recover·replication·schema·skills·society·tag·torus·weave · ← backup·bindings·cardinality·chat·config·consistency·constraint·deploy·deploy·dev·fields·id·identity·law·merge·nullability·partition·payload·port·recover·replication·schema·skills·society·tag·torus·weave
+neighbors → backup·bindings·cardinality·chat·config·consistency·constraint·deploy·deploy·dev·fields·id·identity·law·merge·nullability·partition·payload·port·recover·replication·schema·skills·society·tag·torus·weave · ← backup·bindings·cardinality·chat·config·consistency·constraint·deploy·deploy·dev·fields·id·identity·law·merge·nullability·partition·payload·port·recover·replication·schema·skills·society·tag·torus·weave
 analysis —
 law the schema is generated from config, never hand-authored — migrations are derived artefacts (drop and regenerate, no backward-compat), and every id is a content-addressed uuid so rows merge collision-free.
 
 ---
 
-<sub>content-uuid `ffccc7f8-7ade-813c-aebc-67c942afd8ae` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `65c030c2-77fb-81fb-b908-8dae50717031` · `pnpm readme` · `pnpm computed:check`</sub>

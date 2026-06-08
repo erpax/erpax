@@ -2,7 +2,7 @@
 
 # coordinate
 
-> atom `coordinate` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
+> atom `coordinate` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -21,9 +21,9 @@
 
 ## typography graph
 
-- partition `coordinate` · sub-root `dd317801-0b51-877a-9a12-18903b32f0e8`
-- bond degree `91` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- partition `coordinate` · sub-root `38727e7d-2a5e-8fbf-a078-a670c97f05b2`
+- bond degree `92` · analysis neighbors —
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -33,16 +33,54 @@
 
 —
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·7 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `91` · sealed `1` · horo `5`
+- bond degree `92` · sealed `1` · horo `7`
 - variance `0` · balanced `1` · trinity sum `1`
 - bindings `0` · standards `0`
 
 ## identity
 
-- uuid `dd317801-0b51-877a-9a12-18903b32f0e8`
-- bonds in `30` · out `29`
+- uuid `38727e7d-2a5e-8fbf-a078-a670c97f05b2`
+- bonds in `30` · out `30`
 - trinity form·code·proof `1`·`0`·`0`
 - links `26` / `26`
 - folded `1` · escapes `0`
@@ -53,4 +91,4 @@
 
 ---
 
-<sub>content-uuid `0f3e0844-74e4-8dbc-a2e4-c9da907ffe58` · framed by typography partition `coordinate` bonds `91` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `4a6d1070-167b-8c7b-92ee-146048048392` · framed by typography partition `coordinate` bonds `92` · `pnpm readme` · `pnpm readme:check`</sub>

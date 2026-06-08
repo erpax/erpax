@@ -2,7 +2,7 @@
 
 # artery
 
-> atom `artery` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
+> atom `artery` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -23,9 +23,9 @@
 
 ## typography graph
 
-- partition `artery` · sub-root `c902da2e-92b5-80f6-bcfd-f5dd676f48f8`
-- bond degree `19` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- partition `artery` · sub-root `5bb32f58-1ceb-82ed-b4e7-388c5531e086`
+- bond degree `26` · analysis neighbors —
+- graph root `30ef7fae-4ee3-8746-b14a-915657036770`
 
 ## [[cloudflare]] bindings
 
@@ -37,16 +37,54 @@
 - `Frank's Windkessel model — aortic elastic storage smooths cardiac output; arterial pressure ≈120/80 mmHg` · banner
 - `Frank's Windkessel model; aortic elastic storage smooths cardiac output` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·7 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `19` · sealed `1` · horo `5`
+- bond degree `26` · sealed `1` · horo `7`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `3`
 
 ## identity
 
-- uuid `c902da2e-92b5-80f6-bcfd-f5dd676f48f8`
-- bonds in `6` · out `6`
+- uuid `5bb32f58-1ceb-82ed-b4e7-388c5531e086`
+- bonds in `7` · out `7`
 - trinity form·code·proof `1`·`1`·`1`
 - links `11` / `11`
 - folded `1` · escapes `0`
@@ -57,4 +95,4 @@
 
 ---
 
-<sub>content-uuid `06fd2b26-7c43-8c93-92a7-e14c66655fcd` · framed by typography partition `artery` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a4b767b2-a011-8bd4-a49a-be2b7bc130a7` · framed by typography partition `artery` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>

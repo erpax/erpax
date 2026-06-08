@@ -3,15 +3,15 @@
 
 # used
 
-path `used` · uuid `3ba90e45-e8fe-8008-b7ff-7c81c6f97579` · diamond `b0a35b0f-682c-8eb6-86ca-148477f08c26`
+path `used` · uuid `3ba90e45-e8fe-8008-b7ff-7c81c6f97579` · diamond `2c9191ae-2973-846b-8596-2d21a6cb2581`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·diagnose·law·membership·merge·program·sti · exports used · escapes —
-links `7/7` · folded `1` · bonds in `8` out `8`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → browser·buddhist·corrects·debit·decompression·film·it·landmarks · ← browser·buddhist·corrects·debit·decompression·film·it·landmarks
+neighbors → collapse·diagnose·law·membership·merge·program·sti · ← collapse·diagnose·law·membership·merge·program·sti
 analysis —
 law used is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `beb6cdd5-015a-87eb-9a52-fef92381dfe8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `bdc9cd4f-ddfe-84d1-a585-392730c9442c` · `pnpm readme` · `pnpm computed:check`</sub>

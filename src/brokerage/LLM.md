@@ -3,8 +3,8 @@
 
 # brokerage
 
-path `brokerage` · uuid `c01008ae-d2bb-8b51-ab17-e5c1a61f6db8` · diamond `d0e65598-297c-84b0-87a7-2e020c31661d`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `brokerage` · uuid `2c1d56c4-96f1-8304-997c-64add4c053d6` · diamond `78c3e574-bb1b-80b9-adf6-f67b86f707e9`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports account·collapse·law·merge·sti · exports brokerage · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law brokerage is one schema.org word, content-addressed; the same word collides 
 
 ---
 
-<sub>content-uuid `dd8f93dd-0ca7-84cb-8c91-9987d537311a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `93065119-3bd0-85d8-9b08-c44992ac899b` · `pnpm readme` · `pnpm computed:check`</sub>

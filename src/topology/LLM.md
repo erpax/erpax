@@ -3,15 +3,15 @@
 
 # topology
 
-path `topology` · uuid `—` · diamond `8ad5731f-9bb0-84d8-90e0-a51778942419`
-horo `—` `—` · trinity `1·1·1` · sealed `0`
+path `topology` · uuid `1d049862-1cb0-8697-8072-00a44c56fb1c` · diamond `297546c1-5c0e-8d99-99f2-c784c94c1b60`
+horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports — · exports CIRCUMFERENCE_SOFT_LIMIT_CHAIN_STEPS·TORUS_DEFAULT_ENVELOPE·TORUS_EDGES·TORUS_VERTICES·TorusBoundednessResult·TorusEnvelope·TorusTrace·TorusVertex·checkTorusBounded·traceTorusRoundTrip · escapes —
-links `1/1` · folded `0` · bonds in `0` out `0`
+links `1/1` · folded `1` · bonds in `1` out `1`
 faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
-analysis diamond·hallucination·purity
+neighbors → law · ← law
+analysis —
 law barrel re-export at `@/topology`; trinity sealed for import purity.
 
 ---
 
-<sub>content-uuid `fbaa793a-0951-84fb-9b35-135674fcb7ba` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4bf769bc-6b38-8531-a5ff-a9071b62a712` · `pnpm readme` · `pnpm computed:check`</sub>

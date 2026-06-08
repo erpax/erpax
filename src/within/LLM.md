@@ -8,10 +8,10 @@ horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·geo·law·merge·sti · exports within · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·radiation·stat · ← cohort·landmarks·memories·radiation·stat
+neighbors → collapse·geo·law·merge·sti · ← collapse·geo·law·merge·sti
 analysis —
 law within is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `2f02fe8a-2bc4-8303-8d8b-3b775754fccf` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `65a3031e-ab46-8a40-ba4a-086aded930f5` · `pnpm readme` · `pnpm computed:check`</sub>

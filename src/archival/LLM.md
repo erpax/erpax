@@ -3,8 +3,8 @@
 
 # archival
 
-path `archival` · uuid `316a7a5b-5727-8d9c-a083-ed7f95e6114b` · diamond `ba812b01-2a9e-857e-8b9e-881c4d50c95c`
-horo `8` `crest` · trinity `1·1·1` · sealed `1`
+path `archival` · uuid `5ac9e205-cd35-86e6-972a-ebb346a88284` · diamond `d42fbac0-9c64-8aff-b04b-a72d65be9167`
+horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports — · exports ArchiveBackendId·async·function·interface · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law long-retention content is pinned to every backend for defense-in-depth — a
 
 ---
 
-<sub>content-uuid `d229a331-8650-8fa6-b8b4-cf3278ccf273` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `72b2d88f-9187-84e1-8892-f0e1f4595441` · `pnpm readme` · `pnpm computed:check`</sub>

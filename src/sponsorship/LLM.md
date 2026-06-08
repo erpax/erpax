@@ -8,10 +8,10 @@ horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·has·law·merge·offer·sti · exports sponsorship · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → computational·landmarks·measurement·notice·story·submission · ← computational·landmarks·measurement·notice·story·submission
+neighbors → collapse·has·law·merge·offer·sti · ← collapse·has·law·merge·offer·sti
 analysis —
 law sponsorship is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `8e3355b0-c26c-85e9-bc50-239b07910620` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `cb0d06e5-3759-8085-a0b4-4aae7bec87ef` · `pnpm readme` · `pnpm computed:check`</sub>

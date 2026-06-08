@@ -3,8 +3,8 @@
 
 # audiobook
 
-path `audiobook` · uuid `2c54409f-2555-861c-a697-020eef5a7624` · diamond `2fc3b1ad-4ce0-8339-b7c0-15b515d06e4c`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `audiobook` · uuid `9069009e-0f5f-8c4c-839b-fe95f33eedb8` · diamond `92618e96-da4c-898f-b4fb-06aecbbee540`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports creative·law·thing · exports audiobook · escapes —
 links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law audiobook is one schema.org word, content-addressed; the same word collides 
 
 ---
 
-<sub>content-uuid `f44ef806-0b2c-80c6-a6cf-2b6fa7849b54` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2cb7f3e6-62a4-8255-85e5-77bfd35b4cf1` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,8 +3,8 @@
 
 # backlog
 
-path `backlog` · uuid `48be0aed-b4b8-8105-bafc-a7e552a36316` · diamond `54c681b7-e2aa-8b2f-a19e-36ee6a9688f5`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `backlog` · uuid `fa6134f0-ddc2-8807-97cf-a09d313f330d` · diamond `f850d1a5-3189-82e6-a4f2-80af869190b7`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports customers·priority·schedule·ticket·workflow · exports backlog · escapes —
 links `5/5` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `3c0fe6ea-1527-89fa-a3b9-19b37ee06b23` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `cdf3a76c-8892-8c67-b23b-eaa9b5cbbdeb` · `pnpm readme` · `pnpm computed:check`</sub>

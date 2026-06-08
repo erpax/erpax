@@ -2,7 +2,7 @@
 
 # chemical
 
-> atom `chemical` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
+> atom `chemical` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -21,9 +21,9 @@
 
 ## typography graph
 
-- partition `chemical` · sub-root `4fa0f631-ec49-8cc4-ba9c-9188c5548c9c`
+- partition `chemical` · sub-root `716b93eb-d3f4-87e5-9c56-85170cf4af14`
 - bond degree `24` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -33,15 +33,53 @@
 
 - `schema.org — the type vocabulary, collided to single words` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·4 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `24` · sealed `1` · horo `8`
+- bond degree `24` · sealed `1` · horo `4`
 - variance `0` · balanced `1` · trinity sum `1`
 - bindings `0` · standards `1`
 
 ## identity
 
-- uuid `4fa0f631-ec49-8cc4-ba9c-9188c5548c9c`
+- uuid `716b93eb-d3f4-87e5-9c56-85170cf4af14`
 - bonds in `7` · out `7`
 - trinity form·code·proof `1`·`0`·`0`
 - links `7` / `7`
@@ -53,4 +91,4 @@
 
 ---
 
-<sub>content-uuid `410637ae-5044-8277-b72c-44a04fc33c6d` · framed by typography partition `chemical` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a2036334-2a28-8167-af87-77612ef81507` · framed by typography partition `chemical` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>

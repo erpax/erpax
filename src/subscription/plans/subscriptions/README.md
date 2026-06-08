@@ -2,9 +2,11 @@
 
 # subscriptions
 
-> atom `subscription/plans/subscriptions` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
+> atom `subscription/plans/subscriptions` · horo `1` `base` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `subscription/plans/subscriptions` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -19,26 +21,130 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `2` · [[conservation]] `0` · [[entry]] · [[purity]]
+
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+- `gap:stray:[[gap]]/[[diamond]]/stray/hooks/`
+- `gap:stray:[[gap]]/[[diamond]]/stray/usage/`
+
+### collapse
+
+- `balance:variance=2`
+- `seal:unsealed`
+- `trigger:Use when managing a tenant's active subscription — plan binding, billing-period dates, trial/active/past-due/grace/suspended/cancelled state machine, Stripe subscription and customer IDs, cancellation and pause events, IFRS-15/ASC-606 deferred-revenue lifecycle hooks. The tenant-to-plan binding collection.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `4a8641fa-7a7a-8564-9ccb-f3ea1e0ff203` · `68e53946-04ca-8800-a333-04bf90b87910` · `96fff440-a406-81c0-8a5a-1512f9cda104` · `9f871dcf-b3ea-839b-ad38-35924ed3beee` · +1 more
+- content uuids `07f4e66d-a66d-85c7-8936-29d802fea352` · `53cc087a-2e64-8059-add7-83ada870033a` · `6c62eba0-cfb2-8843-9d20-c9035131b47f` · `7aea1ddd-8289-815a-951f-ed0e18450f34` · +1 more
+
+## [[entropy]] — gaps · seals
+
+> account code `subscription/plans/subscriptions` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[diamond]]/stray/hooks/ `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[diamond]]/stray/usage/ `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/proof `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.1` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+| Σ gap `4` eb | Σ seal `8.1` eb |
+
+> net residual `-4.1` eb · seal/gap ratio `2.025` · [[entropy]] · [[seal]]
 
 ## typography graph
 
-- partition `subscription` · sub-root `1c44c787-507f-8447-8ad3-d6cd2569f415`
-- bond degree `17` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- partition `subscription` · sub-root `65526dc7-933d-8750-b375-b6241780a4e2`
+- bond degree `0` · analysis neighbors —
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `GDPR Art.6(1)(b) lawful-basis-contract` · banner
+- `IFRS IFRS-15 revenue-from-contracts-with-customers` · banner
+- `ISO-4217:2015 currency-codes` · banner
+- `ISO-8601-1:2019 date-time period-start period-end` · banner
+- `NIST-SP-800-38D` · catalogue
+- `SOX §404 internal-controls` · banner
+- `US-GAAP ASC-340-40 deferred-contract-costs` · banner
+- `US-GAAP ASC-606 revenue-from-contracts-with-customers` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unbalanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| not-held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·1 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `0` · sealed `0` · horo `1`
+- variance `2` · balanced `0` · trinity sum `3`
+- bindings `0` · standards `8`
 
 ## identity
 
-- uuid `43aa7895-db1e-861d-9d74-49e9b61cf634`
-- bonds in `4` · out `4`
+- uuid `f153f7bc-88c7-8e82-a1f9-8e8b8c9d1d05`
+- bonds in `9` · out `9`
 - trinity form·code·proof `1`·`1`·`1`
 - links `7` / `7`
 - folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `2ed7ce89-fcd8-8790-b025-0aa2ccfeb5c4` · framed by typography partition `subscription` bonds `17` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `6da9c938-54c0-8c67-aff9-37495b7028c5` · framed by typography partition `subscription` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

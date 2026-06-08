@@ -3,8 +3,8 @@
 
 # audience
 
-path `audience` · uuid `e9622cec-3af8-81b9-933d-c080e397c444` · diamond `5972376e-9b20-8491-be3a-6384518a7149`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `audience` · uuid `02452d02-124c-802d-8c33-efe46d1151c7` · diamond `d0b6aaf0-ffa5-82fa-b0d8-9c4945142237`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports business·educational·law·medical·parent·people·permit·service·type · exports audience · escapes —
 links `9/9` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law audience is one schema.org word, content-addressed; the same word collides e
 
 ---
 
-<sub>content-uuid `abc5c020-1aee-8ed0-9692-fc2a5599adf5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7bc5425b-b43d-8dbc-bcd7-4c361c1b65e6` · `pnpm readme` · `pnpm computed:check`</sub>

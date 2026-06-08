@@ -3,8 +3,8 @@
 
 # applicability
 
-path `applicability` · uuid `3ba76e79-903f-843d-bcaa-0fe973871566` · diamond `de5f522d-e5d7-8d7f-96ca-1530b93f6671`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `applicability` · uuid `bad1d7ed-c7c7-8ce4-9ffe-b32ff010ae26` · diamond `99fd2480-ace7-8439-a073-cce858d0fa50`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·date·law·legislation·merge·sti · exports applicability · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law applicability is one schema.org word, content-addressed; the same word colli
 
 ---
 
-<sub>content-uuid `1b654ef1-1a2b-87db-a87f-6023e2717f1e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `867ced13-a661-8309-8517-fb525a894e14` · `pnpm readme` · `pnpm computed:check`</sub>

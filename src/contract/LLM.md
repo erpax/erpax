@@ -3,8 +3,8 @@
 
 # contract
 
-path `contract` · uuid `52e24f8f-6f3f-8cd5-b2bd-4978e1bd09a3` · diamond `96bb8f17-5b3f-8ad5-84ac-a533a90ee8d5`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `contract` · uuid `f88c4370-a82f-8cad-9c09-03711081c04a` · diamond `551de4e8-6fe2-86e3-b15d-7745968b6372`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports balance·contracts·law·legal · exports contract · escapes —
 links `8/8` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law one contract is the singular model of exactly one contracts row — a legall
 
 ---
 
-<sub>content-uuid `91425a8f-5c77-8df3-acce-5591a92f1aeb` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4219241c-710c-82ea-b71f-6f3e3fdf1e87` · `pnpm readme` · `pnpm computed:check`</sub>

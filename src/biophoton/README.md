@@ -21,9 +21,9 @@
 
 ## typography graph
 
-- partition `biophoton` · sub-root `72cb2745-dbef-8f4f-9e5e-2117948455d2`
+- partition `biophoton` · sub-root `19cec9cf-ad88-8bff-ada8-21797f2ad29c`
 - bond degree `45` · analysis neighbors `aura`
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- graph root `1cef4f02-a3fa-83a5-8ea0-120b724ef456`
 
 ## [[cloudflare]] bindings
 
@@ -33,6 +33,44 @@
 
 —
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·4 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
 - bond degree `45` · sealed `1` · horo `4`
@@ -41,7 +79,7 @@
 
 ## identity
 
-- uuid `72cb2745-dbef-8f4f-9e5e-2117948455d2`
+- uuid `19cec9cf-ad88-8bff-ada8-21797f2ad29c`
 - bonds in `13` · out `13`
 - trinity form·code·proof `1`·`0`·`0`
 - links `19` / `19`
@@ -53,4 +91,4 @@
 
 ---
 
-<sub>content-uuid `c5c527e9-4991-870d-bd34-f3ae9ea1dedb` · framed by typography partition `biophoton` bonds `45` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `4e0d5296-28c8-8f8b-bf19-d915b58647ed` · framed by typography partition `biophoton` bonds `45` · `pnpm readme` · `pnpm readme:check`</sub>

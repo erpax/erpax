@@ -2,7 +2,7 @@
 
 # transactions
 
-> atom `fx/transactions` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
+> atom `fx/transactions` · horo `8` `crest` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -25,7 +25,30 @@
 
 - partition `fx` · sub-root `e7cd9849-59df-8c81-af52-ab4b26bc280a`
 - bond degree `83` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `IFRS IAS-21 §21 §23 §28 §29 effects-of-changes-in-foreign-exchange-rates` · banner
+- `IFRS IAS-21 §39 foreign-currency-translation` · banner
+- `IFRS IAS-32 §11 financial-instruments-presentation (every FX-revaluation row meets the IAS-32 financial-instrument definition)` · banner
+- `IFRS IFRS-7 §22 hedging-disclosures (when FX-revaluation is part of a designated hedge per IFRS-9)` · banner
+- `ISO-19011:2018 audit-trail fx-revaluation-evidence` · banner
+- `ISO-4217:2015 currency-codes from-to-currency-pair` · banner
+- `ISO-8601-1:2019 date-time transaction-date` · banner
+- `SOX §404 internal-controls fx-control TOM-FX-01` · banner
+- `US-GAAP ASC-830-10-45 foreign-currency-translation` · banner
+- `US-GAAP ASC-830-20 foreign-currency-transactions` · banner
+
+## analytics
+
+- bond degree `83` · sealed `0` · horo `8`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `10`
 
 ## identity
 
@@ -37,8 +60,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `d18fef80-d77d-8870-ba70-eb8dc9879f21` · framed by typography partition `fx` bonds `83` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `93494c51-a94a-8604-ab55-d89b3560499c` · framed by typography partition `fx` bonds `83` · `pnpm readme` · `pnpm readme:check`</sub>

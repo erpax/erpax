@@ -3,8 +3,8 @@
 
 # segments
 
-path `customer/segments` · uuid `24320dbd-ef69-814d-91fa-d608bf522832` · diamond `f587ded7-1a5d-8c70-abe0-add00b6127f4`
-horo `1` `base` · trinity `1·1·1` · sealed `1`
+path `customer/segments` · uuid `cff6eb42-bb0c-8b96-a9a2-de833d63521a` · diamond `fdfcc0ea-a1e7-8800-8802-7da1a51ba836`
+horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
 links `8/8` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `b4af6c2a-a325-8e96-9c5a-7e9ccf6f5816` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `30c2da31-b808-8de4-9078-3b05e6214e2c` · `pnpm readme` · `pnpm computed:check`</sub>

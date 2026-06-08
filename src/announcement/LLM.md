@@ -3,8 +3,8 @@
 
 # announcement
 
-path `announcement` · uuid `a39bb600-4931-8241-aba5-27260d585b4f` · diamond `ea9c2d30-66f8-8634-b53a-3ac5df472b09`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `announcement` · uuid `801cfc4e-d1cd-853d-8691-28223f1e4523` · diamond `9b781302-1642-8fe5-a8fd-a940458f64d0`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·location·merge·special·sti · exports announcement · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law announcement is one schema.org word, content-addressed; the same word collid
 
 ---
 
-<sub>content-uuid `65ef3e20-3650-87a3-ac4b-bc71c8423225` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8e84e3f5-1fd8-869b-b13c-9c7deccefba0` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -23,7 +23,21 @@
 
 - partition `nonprofit501c2` · sub-root `5700199d-b07b-84aa-9e06-96241f0305cc`
 - bond degree `12` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `12` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `d4289103-148f-830a-9b3e-cbf9d42c86f8` · framed by typography partition `nonprofit501c2` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `9b0d5f49-1b73-81f6-9d09-4511bee28884` · framed by typography partition `nonprofit501c2` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

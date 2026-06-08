@@ -3,8 +3,8 @@
 
 # conference
 
-path `conference` · uuid `fcde9e1d-c6f2-8ef1-86b7-520f1271c3dd` · diamond `12488623-4ea9-851b-928e-7caf49e12fb8`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `conference` · uuid `4a1cb783-5964-8760-880d-83c77e11563b` · diamond `152ed041-1502-896c-ae3b-429b933d6e43`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·event·law·merge·sti · exports conference · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law conference is one schema.org word, content-addressed; the same word collides
 
 ---
 
-<sub>content-uuid `a44202eb-2453-8cdc-9f97-c2091cb03f6a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1d16fa03-8883-85d8-afa4-d93d2e8f8739` · `pnpm readme` · `pnpm computed:check`</sub>

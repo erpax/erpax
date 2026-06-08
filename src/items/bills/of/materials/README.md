@@ -2,9 +2,11 @@
 
 # materials
 
-> atom `items/bills/of/materials` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `items/bills/of/materials` · horo `1` `base` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `items/bills/of/materials` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -19,17 +21,125 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
+
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:stray:[[gap]]/[[diamond]]/stray/work/`
+
+### collapse
+
+- `balance:variance=1`
+- `law:the versioned recipe of components + quantities per finished good, controlled per engineering change, that seeds [[work/orders|work-order]] execution and cost-of-conversion absorption.`
+- `seal:unsealed`
+- `trigger:Use when defining or querying the component recipe for a finished good — BOM lines, component quantities, version control per ECO, effective date ranges, and IAS-2 §10 cost-of-conversion lookup. The versioned bill-of-materials collection that seeds work-order execution and overhead absorption.`
+- `trigger:the versioned recipe of components + quantities per finished good, controlled per engineering change, that seeds [[work/orders|work-order]] execution and cost-of-conversion absorption.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `1e31026d-d36a-8236-a92b-e4b6bfebddbf` · `23d90d1e-4f1f-8534-9095-72c6c4025647` · `b647580a-0be0-8b0d-8637-bcbe2d094bb5`
+- content uuids `449cb6df-bedd-83df-9ea5-c93c737324d5` · `5bf40648-95f4-8c8a-a4ac-bcd11ca2bde5` · `f6b5e56a-735d-8bd9-bc2a-5b75c07063b6`
+
+## [[entropy]] — gaps · seals
+
+> account code `items/bills/of/materials` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[diamond]]/stray/work/ `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.1` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+| Σ gap `2` eb | Σ seal `8.1` eb |
+
+> net residual `-6.1` eb · seal/gap ratio `4.05` · [[entropy]] · [[seal]]
 
 ## typography graph
 
-- partition `items` · sub-root `1341dba3-9395-8200-8e47-ea3dc4d4b9e9`
-- bond degree `16` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- partition `items` · sub-root `e1747762-a2bb-8ab4-aaeb-99c9513102fb`
+- bond degree `0` · analysis neighbors —
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `EU-2014/55` · catalogue
+- `EU-537/2014` · catalogue
+- `EU-910/2014` · catalogue
+- `IFRS IAS-2 §10 §13 cost-of-conversion` · banner
+- `IFRS IAS-2 §13 systematic-allocation-of-fixed-overheads` · banner
+- `ISA-95` · catalogue
+- `ISA-95:2013 enterprise-control-system-integration §B.4` · banner
+- `ISO 22400:2014 manufacturing-operations-management KPIs` · banner
+- `ISO-22400-2` · catalogue
+- `ISO-8601-1:2019 date-time effective-from / to` · banner
+- `SOX §404 internal-controls bom-engineering-change-control` · banner
+- `US-GAAP ASC-330-10-30 inventory-cost` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unbalanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| not-held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·1 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `0` · sealed `0` · horo `1`
+- variance `1` · balanced `0` · trinity sum `3`
+- bindings `0` · standards `12`
 
 ## identity
 
-- uuid `ebf56f60-61ac-83ff-aeb4-df838a9d8663`
+- uuid `6a6ebefe-9020-8614-bc7b-61ca3e587ebc`
 - bonds in `5` · out `5`
 - trinity form·code·proof `1`·`1`·`1`
 - links `5` / `5`
@@ -37,8 +147,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `fd3efcc0-d7d5-8bf9-bfde-d2000045760d` · framed by typography partition `items` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b2c04af0-971d-8eb3-b471-8a1a74a59aaf` · framed by typography partition `items` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

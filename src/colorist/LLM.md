@@ -3,8 +3,8 @@
 
 # colorist
 
-path `colorist` · uuid `0433a5dc-d502-814b-9c0f-c7238be687ab` · diamond `e3b10f4c-cadd-891d-b158-c9e6f161e6e2`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `colorist` · uuid `33baf086-c861-85b4-bffd-59e64af533b2` · diamond `7eaaac09-e71d-8e2b-942f-80edc6bd97bf`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports law·person·thing · exports colorist · escapes —
 links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law colorist is one schema.org word, content-addressed; the same word collides e
 
 ---
 
-<sub>content-uuid `fc1b5557-d15c-8ece-9ada-1dabeca1a3ac` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `24a7ece4-c479-8005-a025-e8dc9e993b37` · `pnpm readme` · `pnpm computed:check`</sub>

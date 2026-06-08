@@ -2,9 +2,11 @@
 
 # 108
 
-> atom `nist/sp/800/108` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
+> atom `nist/sp/800/108` · horo `5` `round` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `nist/sp/800/108` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,15 +23,115 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+
+### collapse
+
+- `balance:conserved`
+- `seal:unsealed`
+- `trigger:Use when implementing or referencing NIST SP 800-108 — Recommendation for Key Derivation.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `72880264-ff66-8a89-b0b0-cf6efdc197ae` · `b69ff4a5-cbfd-80bc-9c5e-c0b20be246ce`
+- content uuids `b745b116-049f-8efb-856b-13f9514e1a0f` · `f9c8bc7f-166f-86c9-823b-bf9541cbf415`
+
+## [[entropy]] — gaps · seals
+
+> account code `nist/sp/800/108` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.5` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `1` eb | Σ seal `11.5` eb |
+
+> net residual `-10.5` eb · seal/gap ratio `11.5` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `nist` · sub-root `0f1c4f5f-986c-87d7-8f47-9317941a72ee`
+- partition `nist` · sub-root `d20aeddb-3850-863b-9a7e-00da9d4375b1`
 - bond degree `0` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `CoE-108+` · catalogue
+- `NIST SP-800-108 key-derivation-function` · banner
+- `NIST-FIPS-180-4` · catalogue
+- `NIST-SP-800-108` · catalogue
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| not-held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·5 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `0` · sealed `0` · horo `5`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `4`
 
 ## identity
 
-- uuid `c7569585-f1ea-8855-aead-319c4e740ed0`
+- uuid `90307b56-db01-829d-996e-006e5366fd32`
 - bonds in `0` · out `0`
 - trinity form·code·proof `1`·`1`·`1`
 - links `0` / `0`
@@ -37,8 +139,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `d6fa6c2f-c1dd-8752-a650-36cba3bc557c` · framed by typography partition `nist` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ab67b753-620b-8d67-9fbb-b3381234e8e6` · framed by typography partition `nist` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

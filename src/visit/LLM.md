@@ -3,15 +3,15 @@
 
 # visit
 
-path `visit` · uuid `36a1c7dc-a2c6-8aa7-bc50-90289b3aeb6a` · diamond `925213fb-c231-822d-bf78-326bdda726e6`
+path `visit` · uuid `36a1c7dc-a2c6-8aa7-bc50-90289b3aeb6a` · diamond `bd53f5c3-b727-8a12-933f-a065aa4cd14b`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports balance·event·visits · exports visit · escapes —
-links `6/6` · folded `1` · bonds in `5` out `5`
+links `6/6` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounts·items·landmarks·orders·visits · ← accounts·items·landmarks·orders·visits
+neighbors → balance·event·visits · ← balance·event·visits
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `a6d55b25-7242-845a-b961-0bb1b9fa9fae` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2ee031ba-3aac-8c84-b79e-d374c1e02db4` · `pnpm readme` · `pnpm computed:check`</sub>

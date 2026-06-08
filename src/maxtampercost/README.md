@@ -2,7 +2,7 @@
 
 # maxtampercost
 
-> atom `maxtampercost` · horo `7` `descent` · [[balance]] `1` · [[seal]] `0`
+> atom `maxtampercost` · horo `7` `descent` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -18,13 +18,27 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `16` | Σ `16` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `2` · [[conservation]] `0` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `maxtampercost` · sub-root `79ec51aa-2f49-8f41-b2f7-a1d7f44efa7d`
-- bond degree `27` · analysis neighbors `analytics` · `analytics/max-tamper-cost` · `aura` · `diamond` · `hallucination` · `purity`
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- bond degree `28` · analysis neighbors `analytics` · `analytics/max-tamper-cost` · `aura` · `diamond` · `hallucination` · `purity`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `28` · sealed `0` · horo `7`
+- variance `2` · balanced `0` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -40,4 +54,4 @@
 
 ---
 
-<sub>content-uuid `825db406-b487-82a0-9900-d291795c4343` · framed by typography partition `maxtampercost` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `6da7e71b-ab01-8a18-9212-df338e103ae5` · framed by typography partition `maxtampercost` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>

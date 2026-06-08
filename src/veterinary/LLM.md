@@ -8,10 +8,10 @@ horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports care·collapse·law·merge·sti · exports veterinary · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·cohort·landmarks·memories·stat · ← action·cohort·landmarks·memories·stat
+neighbors → care·collapse·law·merge·sti · ← care·collapse·law·merge·sti
 analysis —
 law veterinary is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `ce79c4ee-7c08-8c8b-8421-520777e622dd` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `31b42a1f-fe1b-8d04-be2c-2b17fbcb2c52` · `pnpm readme` · `pnpm computed:check`</sub>

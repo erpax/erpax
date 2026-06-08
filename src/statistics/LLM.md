@@ -3,15 +3,15 @@
 
 # statistics
 
-path `statistics` · uuid `e0f90c12-3f03-894a-8091-e83f17272ad1` · diamond `6718a6a7-fa64-889b-aef5-493fc6e942e2`
+path `statistics` · uuid `e0f90c12-3f03-894a-8091-e83f17272ad1` · diamond `923c56b7-8531-8402-a8b3-6e258ed16b77`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·disease·law·merge·spread·sti · exports statistics · escapes —
-links `6/6` · folded `1` · bonds in `17` out `17`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → consultant·corrects·dietary·dropoff·euenergy·flight·founder·homeopathic·id·list·memories·notice·progression·quantum·rank·sell·spouse · ← consultant·corrects·dietary·dropoff·euenergy·flight·founder·homeopathic·id·list·memories·notice·progression·quantum·rank·sell·spouse
+neighbors → collapse·disease·law·merge·spread·sti · ← collapse·disease·law·merge·spread·sti
 analysis —
 law a statistic is only as true as the population it summarises — every reported figure must trace back to the underlying observations it aggregates, so an unsourced number is a gap.
 
 ---
 
-<sub>content-uuid `5fcb9750-08e7-8874-9ed7-c235d79d52b6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0abef8a8-7e6c-8ed1-b658-4a01a98051f7` · `pnpm readme` · `pnpm computed:check`</sub>

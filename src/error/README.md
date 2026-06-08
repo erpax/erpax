@@ -2,7 +2,7 @@
 
 # error
 
-> atom `error` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
+> atom `error` · horo `2` `share` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -19,13 +19,43 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `error` · sub-root `41e87302-d141-81d3-b164-3dc4c10ed46c`
-- bond degree `10` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- bond degree `0` · analysis neighbors —
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `7807 problem-details-for-http-apis` · banner
+- `9110 §10.3 error-responses` · banner
+- `9110 §15 status-codes` · banner
+- `EU-2018/1673` · catalogue
+- `EU-2018/1725` · catalogue
+- `EU-2018/302` · catalogue
+- `EU-2018/389-SCA-RTS` · catalogue
+- `EU-2018/843` · catalogue
+- `EU-2018/957` · catalogue
+- `ISO-19011` · catalogue
+- `ISO-19011:2018 audit-trail error-tracing` · banner
+- `NIST-SP-800-63` · catalogue
+- `NIST-SP-800-92` · catalogue
+- `OWASP-ASVS` · catalogue
+- `OWASP-ASVS V7 error-handling-and-logging` · banner
+- `schema.org — the type vocabulary, collided to single words` · banner
+- `SOC-2 CC4.1 monitoring-and-evaluation` · banner
+
+## analytics
+
+- bond degree `0` · sealed `0` · horo `2`
+- variance `1` · balanced `0` · trinity sum `3`
+- bindings `0` · standards `17`
 
 ## identity
 
@@ -37,8 +67,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `0327757f-e00c-8a54-a76c-9d6c7713c745` · framed by typography partition `error` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `2ce0ad65-99e6-83f6-9f17-aa78a6e6791d` · framed by typography partition `error` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

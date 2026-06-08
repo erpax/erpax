@@ -2,17 +2,17 @@
 
 # sunni
 
-> atom `sunni` · horo `—` `—` · [[balance]] `1` · [[seal]] `0`
+> atom `sunni` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[horo]]/off-ring `1` |
-| [[balance]] `1` | [[liability]]/[[identity]]/uuid `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
 | [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `7` | Σ `7` |
@@ -22,21 +22,21 @@
 ## typography graph
 
 - partition `sunni` · sub-root `03da439d-c455-865f-ad36-9d9987338d64`
-- bond degree `21` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `50` · analysis neighbors `diamond`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
-- uuid `—`
-- bonds in `0` · out `0`
+- uuid `03da439d-c455-865f-ad36-9d9987338d64`
+- bonds in `16` · out `16`
 - trinity form·code·proof `1`·`0`·`0`
 - links `41` / `41`
-- folded `0` · escapes `0`
+- folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `08b4cc7e-714d-8099-b50d-bf4cbcf628b1` · framed by typography partition `sunni` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b2f254ab-86df-80c2-b681-a8dc5ae1ef4a` · framed by typography partition `sunni` bonds `50` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -1,8 +1,111 @@
 ---
 name: competencies
-description: Use when mapping the one actor-capability taxonomy — agents load it, employees hold it, jobs require it, the skill-router resolves it. Skills ARE competencies, so the catalogue is COMPUTED from the SKILL.md corpus (no stored collection), and a held/required line references a competency by its content-addressed skillRoute.
+description: "Use when mapping the one actor-capability taxonomy — agents load it, employees hold it, jobs require it, the skill-router resolves it. Skills ARE competencies, so the catalogue is COMPUTED from the SKILL.md corpus (no stored collection), and a held/required line references a competency by its content-addressed skillRoute."
+atomPath: competencies
+coordinate: competencies · 5/round · e475a942
+contentUuid: "ba8f2f46-7ccd-5e4b-9404-54516c873cb1"
+diamondUuid: "80e64ee7-a59e-8bdc-ab2f-116f0abb0540"
+uuid: "e475a942-187f-8003-bc0b-1c73928b519d"
+horo: 5
+bonds:
+  in:
+    - accounting
+    - collapse
+    - derive
+    - duality
+    - education
+    - employees
+    - fractal
+    - holographic
+    - identity
+    - merge
+    - sequence
+    - standard
+    - train
+    - training
+  out:
+    - accounting
+    - collapse
+    - derive
+    - duality
+    - education
+    - employees
+    - fractal
+    - holographic
+    - identity
+    - merge
+    - sequence
+    - standard
+    - train
+    - training
+typography:
+  partition: competencies
+  bondDegree: 42
+  neighbors: []
+standards: []
+bindings: []
+neighbors:
+  wikilink:
+    - accounting
+    - duality
+    - education
+    - employees
+    - fractal
+    - holographic
+    - identity
+    - merge
+    - sequence
+    - standard
+    - train
+  matrix:
+    - accounting
+    - collapse
+    - derive
+    - duality
+    - education
+    - employees
+    - fractal
+    - holographic
+    - identity
+    - merge
+    - sequence
+    - standard
+    - train
+    - training
+  backlinks:
+    - accounting
+    - collapse
+    - derive
+    - duality
+    - education
+    - employees
+    - fractal
+    - holographic
+    - identity
+    - merge
+    - sequence
+    - standard
+    - train
+    - training
+signatures:
+  computationUuid: "9de848f8-f44f-87bf-b668-aa0007f42348"
+  stages:
+    - stage: path
+      stageUuid: "db860e3d-9d24-8b5a-b88d-49e6e2abfa32"
+    - stage: trinity
+      stageUuid: "e33229fd-f6c5-8b3f-b16c-1bb8553747f3"
+    - stage: boundary
+      stageUuid: "c8014664-2d43-8804-ae0a-f6d5f741930d"
+    - stage: links
+      stageUuid: "f7945035-3f2a-8209-a997-a272da461822"
+    - stage: horo
+      stageUuid: "84e056f8-8bc9-8c5e-ab10-8ff0279d07e2"
+    - stage: seal
+      stageUuid: "ba46ad8e-d5df-8dd1-b877-1749bc777e20"
+    - stage: uuid
+      stageUuid: "29cdf694-693d-89d9-8495-24fed80d6594"
+version: 2
 ---
-
 # competencies — the ONE actor-capability taxonomy (computed from the corpus)
 
 The **form**: every actor-capability — a skill an **agent** loads, a competency an **employee** holds, a requirement a **job** demands — is one node of the `SKILL.md` corpus, named once. User = Employee = Agent are projections of one party; the shared vocabulary that joins them IS the skill corpus. So competencies are not a stored collection — they are COMPUTED from the merged corpus (`services/skill-router/competencies` · `competencyCatalogue()`), and a held/required line carries the competency's **content-addressed `skillRoute`**, not a foreign key. Same content ⇒ same competency ([[merge]], [[identity]]); the agent's skill and the employee's competency are the identical corpus node ([[duality]]: the `SKILL.md` antimatter and its computed competency view are duals).

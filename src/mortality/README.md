@@ -23,7 +23,21 @@
 
 - partition `mortality` · sub-root `5ce4dd0a-5110-8dfd-9ead-dac9fb506c6c`
 - bond degree `51` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `51` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `27938c5d-648c-8fd4-8131-33b73b662d4d` · framed by typography partition `mortality` bonds `51` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f0969d9e-5fdf-8b40-aea2-dd09753dff0b` · framed by typography partition `mortality` bonds `51` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,8 +3,8 @@
 
 # communicate
 
-path `communicate` · uuid `dede6cf1-3a85-85bf-86dc-b7a36b6b0503` · diamond `d4ed2dc0-1998-8f59-8373-001c0d09840d`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `communicate` · uuid `a231969e-17cc-8e68-bd7a-6ab7a0f5298e` · diamond `0a1b93c9-5fd3-8e4d-b405-93ad8a22791e`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti · exports communicate · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law to communicate is an action with a sender and a recipient; a message address
 
 ---
 
-<sub>content-uuid `deac19c8-f2f4-87be-b7e0-284eb1d33cd0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `13c361d5-0f7a-8ce5-84d7-49f9849b4392` · `pnpm readme` · `pnpm computed:check`</sub>

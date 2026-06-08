@@ -3,8 +3,8 @@
 
 # coinsurance
 
-path `coinsurance` · uuid `e8c78058-462b-8165-abbc-9adf516820f7` · diamond `2de797c8-6dc6-84ab-92b7-b63804cc6dd1`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `coinsurance` · uuid `8ec76ef4-cec8-89d8-892e-afabfce8f77d` · diamond `73c668b4-fb6d-8cff-b3f6-a98f82674602`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·health·law·merge·option·plan·rate·sti · exports coinsurance · escapes —
 links `8/8` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law coinsurance is one schema.org word, content-addressed; the same word collide
 
 ---
 
-<sub>content-uuid `a81d55a1-17a0-804d-8ca1-41f355ef87fb` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d2a33a57-4f00-8342-8e0c-4754e4b0da42` · `pnpm readme` · `pnpm computed:check`</sub>

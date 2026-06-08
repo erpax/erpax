@@ -3,8 +3,8 @@
 
 # anchoring
 
-path `anchoring` · uuid `d680be10-fe5c-87ae-b7e2-eb63119945e5` · diamond `958d540e-5324-8047-82a9-98059b2d3dc5`
-horo `4` `weave` · trinity `1·1·1` · sealed `1`
+path `anchoring` · uuid `297e937e-6c67-883b-8501-816d66c34d19` · diamond `295512d8-ddd9-8fbc-949e-01093fd743a6`
+horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports @/integrity · exports ChainKind·async·const·function·interface · escapes —
 links `7/7` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law a backend that does not pin to entropy no party controls is not tamper-evide
 
 ---
 
-<sub>content-uuid `38661241-4a82-870c-aa0a-edfa0b9c4ca8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a3a4042d-d532-8e35-9289-658dbeb76287` · `pnpm readme` · `pnpm computed:check`</sub>

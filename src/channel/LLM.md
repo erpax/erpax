@@ -3,8 +3,8 @@
 
 # channel
 
-path `channel` · uuid `1f781115-44d5-8838-80d4-4334eed5ad7e` · diamond `ed383f3b-5aac-87a7-a06d-423722d12e33`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `channel` · uuid `2b34ef61-1809-8a3b-bc6c-588dfa9b94b9` · diamond `679d8a4e-8fa2-8e4d-b222-e996e17c4cc8`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports am·available·broadcast·collapse·fm·has·id·law·merge·radio·service·sti·sub·television · exports channel · escapes —
 links `14/14` · folded `1` · bonds in `15` out `15`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law channel is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `38b454d3-b592-8f27-b2aa-177d42b243f1` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f0d38788-4c9b-883e-99a3-03e55413966c` · `pnpm readme` · `pnpm computed:check`</sub>

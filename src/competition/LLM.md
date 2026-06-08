@@ -3,8 +3,8 @@
 
 # competition
 
-path `competition` · uuid `fd4da768-c567-8844-93ef-8efee42195ab` · diamond `06257a22-0a7c-8f16-945e-db7056d010bc`
-horo `4` `weave` · trinity `1·1·1` · sealed `1`
+path `competition` · uuid `bb22262d-24f7-8dbc-a009-2161ae25e8d7` · diamond `66c59467-d303-87fe-81c5-101b328c2611`
+horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports — · exports function·interface · escapes —
 links `24/24` · folded `1` · bonds in `19` out `19`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law the fastest CORRECT candidate wins (correctness is the gate, [[proof]], not 
 
 ---
 
-<sub>content-uuid `efa8e917-5bb9-827e-a745-3eb513b168da` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d9a93df4-fa6c-831b-a5f5-025d5d2aa313` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -2,7 +2,7 @@
 
 # confirm
 
-> atom `confirm` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
+> atom `confirm` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -23,9 +23,9 @@
 
 ## typography graph
 
-- partition `confirm` · sub-root `079e8289-1a74-8e03-bcc1-94b92adcae4a`
-- bond degree `78` · analysis neighbors `purity`
-- graph root `0349017a-99bf-8657-ae7e-21b09f363ed4`
+- partition `confirm` · sub-root `ee0471cb-c1ea-8ac4-98ce-4f559a62acbb`
+- bond degree `92` · analysis neighbors `purity`
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -36,16 +36,54 @@
 - `ISO/IEC 25010:2023 §5.5 testability — gate decisions are pure fns + shell only where unavoidable` · banner
 - `schema.org — the type vocabulary, collided to single words` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·7 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `78` · sealed `1` · horo `5`
+- bond degree `92` · sealed `1` · horo `7`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `2`
 
 ## identity
 
-- uuid `079e8289-1a74-8e03-bcc1-94b92adcae4a`
-- bonds in `24` · out `24`
+- uuid `ee0471cb-c1ea-8ac4-98ce-4f559a62acbb`
+- bonds in `29` · out `29`
 - trinity form·code·proof `1`·`1`·`1`
 - links `15` / `15`
 - folded `1` · escapes `0`
@@ -56,4 +94,4 @@
 
 ---
 
-<sub>content-uuid `ad1eae46-dc5a-80fe-8217-f615f35551aa` · framed by typography partition `confirm` bonds `78` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `2d183bb9-ca60-8693-a5e0-c821fbff3927` · framed by typography partition `confirm` bonds `92` · `pnpm readme` · `pnpm readme:check`</sub>

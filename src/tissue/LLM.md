@@ -3,15 +3,15 @@
 
 # tissue
 
-path `tissue` · uuid `18f6335e-2fee-83e6-bff0-c003da56e7ca` · diamond `a1dcf064-8a03-86e3-91b2-90d7567e5660`
+path `tissue` · uuid `18f6335e-2fee-83e6-bff0-c003da56e7ca` · diamond `34e0bcda-26f5-8112-a533-d78e7d72bc53`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sample·sti · exports tissue · escapes —
-links `5/5` · folded `1` · bonds in `13` out `13`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → amount·batch·cache·cup·drug·engagement·fertility·herd·itnonprofit·max·one·prerequisites·warning · ← amount·batch·cache·cup·drug·engagement·fertility·herd·itnonprofit·max·one·prerequisites·warning
+neighbors → collapse·law·merge·sample·sti · ← collapse·law·merge·sample·sti
 analysis —
 law tissue is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `aaf06b88-ca96-8f42-bd79-898980b19d72` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c2e4deeb-af8f-8b0c-a67b-c9a191999bc1` · `pnpm readme` · `pnpm computed:check`</sub>

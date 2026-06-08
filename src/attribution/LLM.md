@@ -3,7 +3,7 @@
 
 # attribution
 
-path `attribution` · uuid `3ab4d9ba-e15f-867d-9599-0ac54147c656` · diamond `d40e59ac-c66a-87e3-b56e-b1cb0c675c03`
+path `attribution` · uuid `d1fbecd1-11a7-8c80-a4c9-5fba5853d59e` · diamond `d9999f41-8439-83b4-aa5b-a932500aa42e`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports activities·campaign·conversion·customers·law·opportunities · exports attribution · escapes —
 links `7/7` · folded `1` · bonds in `6` out `6`
@@ -14,4 +14,4 @@ law a [[conversion]]'s credit is allocated back across the touchpoints that caus
 
 ---
 
-<sub>content-uuid `274ceb1c-94b9-8779-ac18-dc0abf534aca` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3981e2cd-e927-846e-b8e5-3d6ff5d83546` · `pnpm readme` · `pnpm computed:check`</sub>

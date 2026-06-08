@@ -3,15 +3,15 @@
 
 # tunnel
 
-path `tunnel` · uuid `7ef5abfe-9d02-82d1-b00d-bc9cf836d274` · diamond `07c539d1-8f81-827a-97c2-ca15510ec65a`
+path `tunnel` · uuid `7ef5abfe-9d02-82d1-b00d-bc9cf836d274` · diamond `7fc07f03-f206-8790-aad1-2c0fd7f19261`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports agriculture·bottleneck·capacity·cost·frost·hardiness·harvest·maturity·propagation·season · exports tunnel · escapes —
-links `21/21` · folded `1` · bonds in `1` out `1`
+links `21/21` · folded `1` · bonds in `12` out `12`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks · ← landmarks
+neighbors → agriculture·bottleneck·capacity·cost·frost·hardiness·harvest·maturity·pollination·propagation·season·trellis · ← agriculture·bottleneck·capacity·cost·frost·hardiness·harvest·maturity·pollination·propagation·season·trellis
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `19664c54-7f82-8f50-8178-bd2c96d954fd` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1162b668-ff22-8148-a00b-beebb8e926c8` · `pnpm readme` · `pnpm computed:check`</sub>

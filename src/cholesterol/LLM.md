@@ -3,8 +3,8 @@
 
 # cholesterol
 
-path `cholesterol` · uuid `f530b042-8971-8e12-8874-31984ff719dd` · diamond `75a3d870-7ae1-8cf6-a1a4-a856cd3059f6`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `cholesterol` · uuid `6476e43a-0c8e-80d5-ad01-2edc21731f8a` · diamond `ff011524-97c2-843a-b11b-6edd256beb9a`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·content·law·merge·sti · exports cholesterol · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law cholesterol is one schema.org word, content-addressed; the same word collide
 
 ---
 
-<sub>content-uuid `1dc1c62d-ef3b-80b4-9f1b-e4408fc745c9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8dbc93da-4d72-8520-9aaa-00de80104ede` · `pnpm readme` · `pnpm computed:check`</sub>

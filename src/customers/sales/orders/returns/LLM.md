@@ -3,15 +3,15 @@
 
 # returns
 
-path `customers/sales/orders/returns` · uuid `c407251c-2232-897a-bced-499226386838` · diamond `60e4db01-5622-8a39-ad27-cb24f2d42ad7`
-horo `8` `crest` · trinity `1·1·1` · sealed `1`
+path `customers/sales/orders/returns` · uuid `d720d6ee-f33f-8941-96a5-055a0cce8faf` · diamond `21b8247a-229c-8f8a-a684-d9047d6fc25e`
+horo `5` `round` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/auto/set/timestamp·@/base/accounting/field·@/enforce/segregation/of/duty·@/standard/collection/hook · exports default · escapes —
-links `7/7` · folded `1` · bonds in `13` out `16`
+links `7/7` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `1·0·0`
-neighbors → accounting·accounting·calculations·fields·hooks·identity·jurisdictions·law·offered·orders·proof·proof·standard·standard·store·transaction · ← accounting·calculations·fields·hooks·identity·jurisdictions·law·offered·orders·proof·standard·store·transaction
+neighbors → accounting·fields·hooks·law·offered·orders·proof·standard·store·transaction · ← accounting·fields·hooks·law·offered·orders·proof·standard·store·transaction
 analysis —
 law every authorised return links to the credit memo that reverses its original revenue, and restocked quantity never exceeds what was shipped.
 
 ---
 
-<sub>content-uuid `f890dfff-a16f-8a8c-9213-4017241a9732` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7ef6acbf-4312-8918-bd9f-e65f35e4cf76` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -370,26 +370,38 @@ export function automateCycle(opts: AutomateCycleOpts = {}): AutomateCycleResult
     totalSealEb: corpus.entropy.totalSealEb,
   })
 
+  const store = loadEfficiencyStore(cwd)
+  const priorMetrics = store.latest
+
+  /** Light pass — reuse prior heavy probes; only refresh tamper · entropy · violations. */
+  const lightBase = (extra: Partial<EfficiencyMetrics> = {}): Partial<EfficiencyMetrics> => ({
+    skillContextBytes: opts.metrics?.skillContextBytes ?? priorMetrics?.skillContextBytes ?? 0,
+    rulesOfMs: opts.metrics?.rulesOfMs ?? priorMetrics?.rulesOfMs ?? 0,
+    readmeWaveDurationMs: opts.metrics?.readmeWaveDurationMs ?? 0,
+    concentrationTopScore:
+      opts.metrics?.concentrationTopScore ?? priorMetrics?.concentrationTopScore ?? 0,
+    constantsCount: opts.metrics?.constantsCount ?? priorMetrics?.constantsCount ?? 0,
+    ...opts.metrics,
+    ...extra,
+  })
+
   const before = efficiencySnapshot(passId, {
     cwd,
-    metrics: opts.metrics,
-    workTamperProduct: tamper.priorProduct ?? tamper.product,
+    metrics: lightBase({ workTamperProduct: tamper.priorProduct ?? tamper.product }),
   })
 
   phase = 'ratchet'
   const after = efficiencySnapshot(passId, {
     cwd,
-    metrics: {
-      ...opts.metrics,
+    metrics: lightBase({
       workTamperProduct: tamper.product,
       entropyEb: corpus.entropy.netEntropyEb,
       freeEnergyBits: freeEnergy.freeEnergyBits,
       violationCount,
-    },
+    }),
   })
 
-  const store = loadEfficiencyStore(cwd)
-  const ratchet = efficiencyRatchet(store.latest, after.metrics)
+  const ratchet = efficiencyRatchet(priorMetrics, after.metrics)
 
   phase = 'emit'
   const emitted: string[] = []
@@ -467,7 +479,37 @@ function abortedResult(
   clean: DryCleanCycleResult | null = null,
   rules: RulesLightScanResult = { axes: scanCleanAxes(cwd).axes, totalOverBaseline: 0, fingerprint: '' },
 ): AutomateCycleResult {
-  const snap = efficiencySnapshot('automate:cycle', { cwd })
+  const emptyMetrics: EfficiencyMetrics = {
+    skillContextBytes: 0,
+    rulesOfMs: 0,
+    readmeWaveDurationMs: 0,
+    violationCount: 0,
+    concentrationTopScore: 0,
+    constantsCount: 0,
+    workTamperProduct: priorManifest?.tamper.product ?? 0,
+    entropyEb: 0,
+    freeEnergyBits: 0,
+  }
+  const snap: EfficiencySnapshot = {
+    passId: 'automate:cycle',
+    capturedAt: new Date().toISOString(),
+    metrics: emptyMetrics,
+  }
+  const priorTamper = priorManifest?.tamper
+  const tamper: TamperCostReport = priorTamper
+    ? { ...priorTamper, priorProduct: priorTamper.product, delta: null, monotone: true }
+    : {
+        product: 0,
+        tamperCostLog2: 0,
+        coverage: 0,
+        contentUuidPct: 0,
+        matrixEdges: 0,
+        sealedPct: 0,
+        violationFloorDistance: 0,
+        priorProduct: null,
+        delta: null,
+        monotone: true,
+      }
   const manifest: AutomateManifest = {
     _law: MANIFEST_LAW,
     cycleId: priorManifest?.cycleId ?? 'aborted',

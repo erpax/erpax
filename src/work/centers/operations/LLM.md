@@ -3,15 +3,15 @@
 
 # operations
 
-path `work/centers/operations` · uuid `0dec84a6-49b0-8c38-b7db-22749a5a5af4` · diamond `5f5bc3b1-6d16-8f23-ad6c-a9e2095c604b`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+path `work/centers/operations` · uuid `83aa00bd-c952-8520-959b-ac21273f7b01` · diamond `cae0c6a9-f0de-8c56-96fa-6492ee87d539`
+horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
-links `6/6` · folded `1` · bonds in `4` out `4`
+links `6/6` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → accounting·fields·hooks·law·phases·rodin·routings·standard · ← accounting·fields·hooks·law·phases·rodin·routings·standard
 analysis —
 law operations is the reusable operation-type catalog (Cut · Sew · Mix · Assemble · Inspect · Pack) that routings compose — an ISA-95 operation-type hierarchy with default work-center and KPI anchors, defined independently of any specific product.
 
 ---
 
-<sub>content-uuid `0115f66c-6983-858a-8988-d07d2af95a46` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4c2096bf-a116-8a41-9cac-f4cbea576019` · `pnpm readme` · `pnpm computed:check`</sub>

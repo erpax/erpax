@@ -2,7 +2,7 @@
 
 # financial
 
-> atom `financial` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
+> atom `financial` · horo `5` `round` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -17,13 +17,29 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `7` | Σ `7` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `financial` · sub-root `1a9944f1-a00b-8415-a29e-0b574f211f2d`
-- bond degree `32` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- bond degree `0` · analysis neighbors —
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `BCP-47` · catalogue
+- `schema.org — the type vocabulary, collided to single words` · banner
+- `W3C-PROV-O` · catalogue
+
+## analytics
+
+- bond degree `0` · sealed `0` · horo `5`
+- variance `1` · balanced `0` · trinity sum `1`
+- bindings `0` · standards `3`
 
 ## identity
 
@@ -35,8 +51,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `7cfadf9d-087c-8227-8149-9ef512820b18` · framed by typography partition `financial` bonds `32` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `8f407bb8-32b9-8f1c-a856-a60375d1d711` · framed by typography partition `financial` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,15 +3,15 @@
 
 # client
 
-path `country/client` · uuid `839fa652-3310-8567-84ec-d780a4ba0b22` · diamond `41868a84-1ab2-84c7-a375-bc07dae49496`
-horo `8` `crest` · trinity `1·1·1` · sealed `1`
+path `country/client` · uuid `f5e182cf-6079-80e1-b8c8-96d3bf925969` · diamond `0ab4dcfe-c332-81c8-aaa1-61848b521331`
+horo `2` `share` · trinity `1·1·1` · sealed `0`
 imports — · exports *:./berlin-group-psd2·*:./bg-bank-statement-pdf·*:./bg-holidays·*:./bg-hybrid-invoice·*:./bg-nap-mtls·*:./bg-pades-signer·*:./bg-vat·*:./pdf-text-extractor-default·*:./sign-cms-node · escapes —
-links `1/1` · folded `1` · bonds in `3` out `4`
+links `1/1` · folded `1` · bonds in `1` out `1`
 faces worker·plugin·pwa `0·0·0`
-neighbors → api·country·law·law · ← api·country·law
+neighbors → law · ← law
 analysis —
 law barrel re-export at `@/country/client`; trinity sealed for import purity.
 
 ---
 
-<sub>content-uuid `5e2a5bea-3b42-8699-9223-ad39c0214ddf` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `447c6e21-bc8c-8628-921d-477d0d60f250` · `pnpm readme` · `pnpm computed:check`</sub>

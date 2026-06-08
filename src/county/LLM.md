@@ -3,8 +3,8 @@
 
 # county
 
-path `county` · uuid `d0801e11-ae5c-8a21-a4c3-eba4a6e82bd2` · diamond `3ba6645d-cfca-87d7-9c34-c034eebfefa6`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `county` · uuid `6678bd03-09cb-886b-b0c2-f6e5bb04ecad` · diamond `5aac887b-670e-840d-8ced-d2a6660e89b2`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·cvd·facility·law·merge·sti · exports county · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law county is one schema.org word, content-addressed; the same word collides eve
 
 ---
 
-<sub>content-uuid `69b646c5-1e49-835a-b2f2-61328078cfc7` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `323514e5-cf05-8129-a1e8-fe377f9c9606` · `pnpm readme` · `pnpm computed:check`</sub>

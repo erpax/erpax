@@ -3,8 +3,8 @@
 
 # scopes
 
-path `plugins/mcp/scopes` · uuid `03cf6368-d501-828f-854e-64659e8b20ee` · diamond `3c9a5e57-6499-8444-a7b2-01b4205909d4`
-horo `2` `share` · trinity `1·1·1` · sealed `1`
+path `plugins/mcp/scopes` · uuid `fe5be69e-5087-8798-8ab2-2c5d3affe9a0` · diamond `6a0b7493-cf4f-8591-bb64-397503571130`
+horo `1` `base` · trinity `1·1·1` · sealed `0`
 imports — · exports const · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·1·0`
@@ -14,4 +14,4 @@ law scopes is one word on the plugins/mcp diamond path — `plugins/mcp/scopes`,
 
 ---
 
-<sub>content-uuid `a32f6888-1b10-8f2b-915a-d34e20b0bfed` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c857e983-ffe3-8aee-9d5b-3607ef6d2a28` · `pnpm readme` · `pnpm computed:check`</sub>

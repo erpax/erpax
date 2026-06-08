@@ -23,7 +23,21 @@
 
 - partition `hotel` · sub-root `d554dcb3-b055-8b42-b281-f1a2b763045a`
 - bond degree `7` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `7` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `42969e76-1946-86b7-bfaa-da061ded81fc` · framed by typography partition `hotel` bonds `7` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f664f9dc-be1c-89d7-a3f8-119eb68d450b` · framed by typography partition `hotel` bonds `7` · `pnpm readme` · `pnpm readme:check`</sub>

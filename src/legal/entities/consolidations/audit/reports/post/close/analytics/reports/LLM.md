@@ -3,15 +3,15 @@
 
 # reports
 
-path `legal/entities/consolidations/audit/reports/post/close/analytics/reports` · uuid `16427f51-fd9f-823f-88d3-5987411e2dc6` · diamond `2d4fbd54-bb9c-8c78-8f97-49f23a3c7716`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+path `legal/entities/consolidations/audit/reports/post/close/analytics/reports` · uuid `432c75cc-a375-8423-bffe-0cd493b2d631` · diamond `2bebf395-a5be-8bb4-a48f-74f139980379`
+horo `1` `base` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/validate/post/close/analytics · exports const · escapes —
-links `1/1` · folded `1` · bonds in `11` out `11`
+links `1/1` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·employees·entities·identity·law·projects·proof·reports·reports·standard·transaction · ← accounting·employees·entities·identity·law·projects·proof·reports·reports·standard·transaction
-analysis —
+neighbors → accounting·employees·identity·law·projects·proof·standard·transaction · ← accounting·employees·identity·law·projects·proof·standard·transaction
+analysis diamond·hallucination·purity
 law —
 
 ---
 
-<sub>content-uuid `a6023910-f3fe-8148-a49f-fa37329dabf5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5edbe5bc-e969-8bcb-85ed-d7d4381027b8` · `pnpm readme` · `pnpm computed:check`</sub>

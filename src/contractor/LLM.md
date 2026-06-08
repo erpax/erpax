@@ -3,8 +3,8 @@
 
 # contractor
 
-path `contractor` · uuid `8fa5835b-fdd7-8d32-92bb-b648615048cf` · diamond `aef79cde-e084-8ddc-b198-92c9edc66fb0`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `contractor` · uuid `216ef2fe-d56b-8457-91be-c9b6edcd110b` · diamond `c264b795-bc26-8920-ae2f-601b062df409`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·general·law·merge·roofing·sti · exports contractor · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law contractor is one schema.org word, content-addressed; the same word collides
 
 ---
 
-<sub>content-uuid `249e995b-0cf4-8340-a308-5bf10e959b16` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d65e6845-d115-8fde-b01d-250e912e4ff1` · `pnpm readme` · `pnpm computed:check`</sub>

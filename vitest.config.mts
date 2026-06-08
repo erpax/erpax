@@ -54,8 +54,10 @@ export default defineConfig({
     // Payload-integration tests boot a real Payload + D1 store per file (~35s cold);
     // the 5s/10s defaults time out before boot completes. Raise both so a genuine
     // integration test has room to run (a real hang still fails, just later).
+    // skill/router/upgrade caches buildUpgradeContext in beforeAll(120s); connectFrontmatter
+    // tests inherit 120s per-test overrides — hookTimeout must cover the cold graph build.
     testTimeout: 60_000,
-    hookTimeout: 60_000,
+    hookTimeout: 120_000,
     // Fail tests that retry too many times (strict mode)
     maxConcurrency: 1,
     // Clear mocks between tests

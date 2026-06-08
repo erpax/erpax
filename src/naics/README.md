@@ -23,7 +23,21 @@
 
 - partition `naics` · sub-root `955983a8-df55-850f-a1f5-fee172c8c38a`
 - bond degree `6` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `6` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `9432d045-399f-8f7c-b5a7-f986fff9f8e0` · framed by typography partition `naics` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d21bd621-e579-8baa-9772-4345806dc52e` · framed by typography partition `naics` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>

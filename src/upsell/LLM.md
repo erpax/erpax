@@ -3,15 +3,15 @@
 
 # upsell
 
-path `upsell` · uuid `aafad036-7c66-8b21-85f6-2a284e39f0c9` · diamond `bb927afe-2ef8-80e2-a16c-4e068caae69b`
+path `upsell` · uuid `aafad036-7c66-8b21-85f6-2a284e39f0c9` · diamond `4575784c-291a-83e6-b0b7-ef8ee84fb57d`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports campaign·customers·forecast·items·segment · exports upsell · escapes —
-links `6/6` · folded `1` · bonds in `4` out `4`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → balance·landmarks·twinned·upvote · ← balance·landmarks·twinned·upvote
+neighbors → campaign·customers·forecast·items·orders·segment · ← campaign·customers·forecast·items·orders·segment
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `d0b5df25-6e2a-83ba-8021-8b7a28be6f6c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `82eb4875-80b3-8e95-9492-1d2b6e08f0b5` · `pnpm readme` · `pnpm computed:check`</sub>

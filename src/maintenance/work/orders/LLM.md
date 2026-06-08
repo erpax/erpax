@@ -3,15 +3,15 @@
 
 # orders
 
-path `maintenance/work/orders` · uuid `321e385f-eb0d-80a3-998d-dd6c4e018486` · diamond `f161ecc7-d173-85d1-aeeb-d5f451bf4ab8`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+path `maintenance/work/orders` · uuid `a42fa201-77fb-8959-bcde-632c63cc03e0` · diamond `bc8c71e4-8cbf-8850-be71-7e1948efd4f1`
+horo `2` `share` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/auto/set/timestamp·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
-links `17/17` · folded `1` · bonds in `48` out `51`
+links `17/17` · folded `1` · bonds in `19` out `19`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·accounts·agriculture·allocation·assets·attribution·bundle·choice·commitments·contracts·conversion·customers·discount·duality·entries·entry·forecast·fractal·funnel·hooks·horo·inspections·invoices·items·law·law·law·law·materials·movements·orders·packs·party·pipeline·properties·quotes·receipts·refunds·requests·returns·routings·runs·share·shift·shifts·shipments·standard·territory·upsell·utility·variances · ← accounting·accounts·agriculture·allocation·assets·attribution·bundle·choice·commitments·contracts·conversion·customers·discount·duality·entries·entry·forecast·fractal·funnel·hooks·horo·inspections·invoices·items·law·materials·movements·orders·packs·party·pipeline·properties·quotes·receipts·refunds·requests·returns·routings·runs·share·shift·shifts·shipments·standard·territory·upsell·utility·variances
+neighbors → accounting·allocation·duality·fractal·hooks·horo·law·materials·orders·packs·party·receipts·routings·runs·shift·shifts·standard·utility·variances · ← accounting·allocation·duality·fractal·hooks·horo·law·materials·orders·packs·party·receipts·routings·runs·shift·shifts·standard·utility·variances
 analysis —
 law a work order is the executable FM job promoted from a [[maintenance/requests]] request, tracking parts/labour/cost and posting a [[journal/entries]] [[entry]] on completion whose IAS-16 capex-vs-opex split is set by `capitalisationTreatment`.
 
 ---
 
-<sub>content-uuid `f18a5883-a3b3-8d68-acdb-d688f9a58daa` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `77589863-5134-8c84-b089-8204995b0144` · `pnpm readme` · `pnpm computed:check`</sub>

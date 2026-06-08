@@ -3,8 +3,8 @@
 
 # bottleneck
 
-path `bottleneck` · uuid `b1aaeacd-b609-8ee4-b5dd-5d048c44d41f` · diamond `529c70bc-ce5e-8769-aa39-010c61c45493`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `bottleneck` · uuid `0a4dcd10-bc69-8e48-8abd-def041344d29` · diamond `513fd392-f4b5-85c5-9881-4153782b1d9d`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports capacity·flow·throughput·work · exports bottleneck · escapes —
 links `4/4` · folded `1` · bonds in `23` out `23`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `46e941ad-b82b-8c10-bfa1-f847d114f066` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1a694362-c095-8239-ba24-458db4db0da1` · `pnpm readme` · `pnpm computed:check`</sub>

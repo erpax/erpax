@@ -8,10 +8,10 @@ horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports character·collapse·law·merge·sti · exports spoken · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → arena·cohort·landmarks·memories·stat · ← arena·cohort·landmarks·memories·stat
+neighbors → character·collapse·law·merge·sti · ← character·collapse·law·merge·sti
 analysis —
 law spoken is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `acb3306d-f619-808c-a41b-b043964e4161` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `763690a7-a543-8b23-8448-981ad5d9d19b` · `pnpm readme` · `pnpm computed:check`</sub>

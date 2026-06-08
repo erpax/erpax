@@ -3,15 +3,15 @@
 
 # termination
 
-path `termination` · uuid `31229b06-3fa1-845a-ae1f-eaccedb624c5` · diamond `cd23dee6-2acd-8daa-898b-052d7477b06f`
+path `termination` · uuid `31229b06-3fa1-845a-ae1f-eaccedb624c5` · diamond `326938ec-3e91-83be-81b6-1e5f1f2795bb`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports close·contracts·horo·law·liability·matter·remediation · exports termination · escapes —
-links `7/7` · folded `1` · bonds in `3` out `3`
+links `7/7` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `0·0·0`
-neighbors → certified·homeopathic·landmarks · ← certified·homeopathic·landmarks
+neighbors → close·contracts·forcemajeure·horo·law·liability·license·matter·remediation · ← close·contracts·forcemajeure·horo·law·liability·license·matter·remediation
 analysis —
 law termination ends a contract's forward obligations but not its survivors — wind-down duties, survival clauses, and remedies persist past the end date; ending is a controlled transition, not erasure.
 
 ---
 
-<sub>content-uuid `05a8961b-04d8-8843-a2c9-b7742ed0001e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `083e02af-7843-8093-aaf2-40c08fecbba4` · `pnpm readme` · `pnpm computed:check`</sub>

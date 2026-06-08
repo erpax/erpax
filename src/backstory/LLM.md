@@ -3,8 +3,8 @@
 
 # backstory
 
-path `backstory` · uuid `de655087-5aed-8344-a63d-65106fbc37f9` · diamond `a24074f5-e13f-822c-9bd8-f602f971458d`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `backstory` · uuid `d2f45170-f543-86fa-aadd-ab18bb0ae196` · diamond `ca7970d8-43c3-838b-be58-202b5185c4e4`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports creative·law·thing · exports backstory · escapes —
 links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law backstory is one schema.org word, content-addressed; the same word collides 
 
 ---
 
-<sub>content-uuid `0c2bd5fa-87b2-8ac4-ae6b-4e644217d081` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ba259166-ad24-8755-87e9-4b6f8d823aeb` · `pnpm readme` · `pnpm computed:check`</sub>

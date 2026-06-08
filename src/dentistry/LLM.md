@@ -3,8 +3,8 @@
 
 # dentistry
 
-path `dentistry` · uuid `8db364e1-d679-81f3-9ae3-86bd00b70acd` · diamond `aa186bef-a0b1-8f91-bd34-4be088b1178b`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `dentistry` · uuid `a62df4c4-3fc5-88e9-983b-21428b7ddd40` · diamond `486ea0a0-8659-825e-9116-409e1daa75cd`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports dentistry · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law dentistry is one schema.org word, content-addressed; the same word collides 
 
 ---
 
-<sub>content-uuid `f5269da8-7980-8933-9de5-de39bbae711a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2170eae3-4160-87ba-90bb-2ee9ab3faaa4` · `pnpm readme` · `pnpm computed:check`</sub>

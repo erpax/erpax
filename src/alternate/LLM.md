@@ -3,8 +3,8 @@
 
 # alternate
 
-path `alternate` · uuid `b3258c21-dc68-81e2-8eb6-28e5c5f7ea58` · diamond `cca10868-b2d1-84b4-bba1-e6c80fecda37`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `alternate` · uuid `43cb2a7b-f4ca-8a71-9273-418182ab5973` · diamond `5a7a68ca-2577-8568-8b16-878c6bc8282d`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·name·sti · exports alternate · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law alternate is one schema.org word, content-addressed; the same word collides 
 
 ---
 
-<sub>content-uuid `0d4dce74-181b-8398-ac93-f064b3b5156f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `bee509a5-b3af-8f96-8198-7a471fb6f252` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # utterance
 
-path `utterance` · uuid `18c5e3a7-c92e-85a3-b8a0-188980e9594c` · diamond `ad73346b-5f5c-83b8-b20e-94a5cfd8b1c7`
+path `utterance` · uuid `18c5e3a7-c92e-85a3-b8a0-188980e9594c` · diamond `53802fea-237d-8822-b596-9e2887b5ae4e`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports balance·conversation·law·utterances · exports utterance · escapes —
-links `9/9` · folded `1` · bonds in `20` out `20`
+links `9/9` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → aircraft·candidate·collide·confidentiality·cycle·database·find·ice·interacting·karma·landmarks·misses·notice·reference·sanitization·scorecard·sd·source·trained·unsaturated · ← aircraft·candidate·collide·confidentiality·cycle·database·find·ice·interacting·karma·landmarks·misses·notice·reference·sanitization·scorecard·sd·source·trained·unsaturated
+neighbors → balance·conversation·law·utterances · ← balance·conversation·law·utterances
 analysis —
 law one utterance is the singular model of exactly one [[utterances]] row — every collection has its model ([[balance]]), the plural store and its singular type two halves of one node.
 
 ---
 
-<sub>content-uuid `a4fbbe0e-fc2f-84c7-9877-7a957569b855` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `70316948-f28f-8831-93a0-c71d05f9d9e8` · `pnpm readme` · `pnpm computed:check`</sub>

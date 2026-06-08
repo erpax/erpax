@@ -2,7 +2,7 @@
 
 # coffee
 
-> atom `coffee` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
+> atom `coffee` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -21,9 +21,9 @@
 
 ## typography graph
 
-- partition `coffee` · sub-root `468116b0-3e33-8e4d-b3f0-7604c5d01958`
+- partition `coffee` · sub-root `f04327d1-5154-833b-9216-a3c1e65140e3`
 - bond degree `20` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -33,15 +33,53 @@
 
 - `schema.org — the type vocabulary, collided to single words` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·4 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `20` · sealed `1` · horo `1`
+- bond degree `20` · sealed `1` · horo `4`
 - variance `0` · balanced `1` · trinity sum `1`
 - bindings `0` · standards `1`
 
 ## identity
 
-- uuid `468116b0-3e33-8e4d-b3f0-7604c5d01958`
+- uuid `f04327d1-5154-833b-9216-a3c1e65140e3`
 - bonds in `6` · out `6`
 - trinity form·code·proof `1`·`0`·`0`
 - links `6` / `6`
@@ -53,4 +91,4 @@
 
 ---
 
-<sub>content-uuid `d7cd4541-7c50-8bcb-9f28-d518c1bb67b9` · framed by typography partition `coffee` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c17b2a82-e1db-8c58-9dfb-025671157b01` · framed by typography partition `coffee` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>

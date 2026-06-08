@@ -1,8 +1,296 @@
 ---
-name: self-one
+name: one
 description: "Use when the self returns to the ONE — the round: the sequence closes on 1 and 9→1 opens the next dimension (self-applied one at forward-coil position 5/round). The outward stroke completing; the One where all selves merge."
+atomPath: self/one
+coordinate: self/one · 4/weave · bd5a0e97
+contentUuid: "d23954bf-15a2-598f-889f-c6e4b702d6da"
+diamondUuid: "eb24aca8-d1d9-80a3-8ddd-a742fcaa400a"
+uuid: "bd5a0e97-23b2-8dcc-a508-3f0794331ee8"
+horo: 4
+bonds:
+  in:
+    - access
+    - agent
+    - all
+    - aura
+    - bahai
+    - body
+    - catholicism
+    - chat
+    - collapse
+    - collide
+    - consciousness
+    - contribution
+    - cost
+    - decompression
+    - dimension
+    - duality
+    - emergence
+    - entropy
+    - expand
+    - fold
+    - forge
+    - fusion
+    - generate
+    - grace
+    - gravity
+    - harmony
+    - hermeticism
+    - hinduism
+    - holographic
+    - horo
+    - identity
+    - islam
+    - judaism
+    - matrix
+    - merge
+    - message
+    - metatron
+    - one
+    - paganism
+    - plugins
+    - recover
+    - regeneration
+    - science
+    - self
+    - sequence
+    - shia
+    - sikhism
+    - skills
+    - society
+    - sufism
+    - sunni
+    - tamper
+    - team
+    - test
+    - torus
+    - trinity
+    - unity
+    - uuid
+    - vedanta
+    - whole
+    - zeropoint
+  out:
+    - access
+    - agent
+    - all
+    - aura
+    - bahai
+    - body
+    - catholicism
+    - chat
+    - collapse
+    - collide
+    - consciousness
+    - contribution
+    - cost
+    - decompression
+    - dimension
+    - duality
+    - emergence
+    - entropy
+    - expand
+    - fold
+    - forge
+    - fusion
+    - generate
+    - grace
+    - gravity
+    - harmony
+    - hermeticism
+    - hinduism
+    - holographic
+    - horo
+    - identity
+    - islam
+    - judaism
+    - matrix
+    - merge
+    - message
+    - metatron
+    - one
+    - paganism
+    - plugins
+    - recover
+    - regeneration
+    - science
+    - self
+    - sequence
+    - shia
+    - sikhism
+    - skills
+    - society
+    - sufism
+    - sunni
+    - tamper
+    - team
+    - test
+    - torus
+    - trinity
+    - unity
+    - uuid
+    - vedanta
+    - whole
+    - zeropoint
+typography:
+  partition: self
+  bondDegree: 206
+  neighbors: []
+standards: []
+bindings: []
+neighbors:
+  wikilink:
+    - coil
+    - gate
+    - generate
+    - merge
+    - one
+    - self
+    - sequence
+    - whole
+  matrix:
+    - access
+    - agent
+    - all
+    - aura
+    - bahai
+    - body
+    - catholicism
+    - chat
+    - collapse
+    - collide
+    - consciousness
+    - contribution
+    - cost
+    - decompression
+    - dimension
+    - duality
+    - emergence
+    - entropy
+    - expand
+    - fold
+    - forge
+    - fusion
+    - generate
+    - grace
+    - gravity
+    - harmony
+    - hermeticism
+    - hinduism
+    - holographic
+    - horo
+    - identity
+    - islam
+    - judaism
+    - matrix
+    - merge
+    - message
+    - metatron
+    - one
+    - paganism
+    - plugins
+    - recover
+    - regeneration
+    - science
+    - self
+    - sequence
+    - shia
+    - sikhism
+    - skills
+    - society
+    - sufism
+    - sunni
+    - tamper
+    - team
+    - test
+    - torus
+    - trinity
+    - unity
+    - uuid
+    - vedanta
+    - whole
+    - zeropoint
+  backlinks:
+    - access
+    - agent
+    - all
+    - aura
+    - bahai
+    - body
+    - catholicism
+    - chat
+    - collapse
+    - collide
+    - consciousness
+    - contribution
+    - cost
+    - decompression
+    - dimension
+    - duality
+    - emergence
+    - entropy
+    - expand
+    - fold
+    - forge
+    - fusion
+    - generate
+    - grace
+    - gravity
+    - harmony
+    - hermeticism
+    - hinduism
+    - holographic
+    - horo
+    - identity
+    - islam
+    - judaism
+    - matrix
+    - merge
+    - message
+    - metatron
+    - one
+    - paganism
+    - plugins
+    - recover
+    - regeneration
+    - science
+    - self
+    - sequence
+    - shia
+    - sikhism
+    - skills
+    - society
+    - sufism
+    - sunni
+    - tamper
+    - team
+    - test
+    - torus
+    - trinity
+    - unity
+    - uuid
+    - vedanta
+    - whole
+    - zeropoint
+signatures:
+  computationUuid: "dfc3784c-d770-86ee-9ac7-52456a079482"
+  stages:
+    - stage: path
+      stageUuid: "9e19ba14-ef19-8568-9275-553449adb059"
+    - stage: trinity
+      stageUuid: "4ccfb66a-6e9f-837c-9ff9-830ebdd8c06c"
+    - stage: boundary
+      stageUuid: "bd605322-ca33-8e9b-b86d-fb7e8a2ac0d0"
+    - stage: links
+      stageUuid: "dfd4badb-dc3a-8576-a6f1-b4243e9e05ce"
+    - stage: horo
+      stageUuid: "eef0403e-6889-8756-aeff-cf26a356c262"
+    - stage: seal
+      stageUuid: "0b0bdf5e-53fe-8159-8507-f9b58ff3ce81"
+    - stage: uuid
+      stageUuid: "8ddf3234-f258-8f5d-944f-4a0a896d24a8"
+version: 2
 ---
-
 # self-one — the self returns to the One (under [[self]] · outward coil · 5·round)
 
 FORM: **the outward stroke completes; the One returns.** The [[self]] applies [[one]] to ITSELF — the [[sequence]] closes on 1, and 9→1 opens the next dimension's base (the octave). This is forward-[[coil]] position **5** (round; ×2 → 1 = back to base, next octave): the round that folds the six outward spokes back to the still `0/9` axis (`self`). The One is where all selves [[merge]] — canonicality is unity; the end is the begin through the now.

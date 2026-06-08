@@ -3,8 +3,8 @@
 
 # consent
 
-path `consent` · uuid `c4c20b42-b217-8e82-8993-fc05ddcca864` · diamond `696f470b-df57-85f0-9ae6-eddf2e62ddad`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `consent` · uuid `808f8bb1-5791-8051-8bc2-1004c4670528` · diamond `4089b6f8-7f84-823a-941c-ab838ba4c508`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports consent·contracts·matter · exports consent · escapes —
 links `3/3` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `86955bf3-c168-8927-b07f-6e3a6738f822` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2454c353-5d5f-8dd8-92cf-92de4eaa8783` · `pnpm readme` · `pnpm computed:check`</sub>

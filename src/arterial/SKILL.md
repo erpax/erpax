@@ -1,8 +1,70 @@
 ---
 name: arterial
-description: Use when reasoning about arterial as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.
+description: "Use when reasoning about arterial as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus."
+atomPath: arterial
+coordinate: arterial · 5/round · cfba1dce
+contentUuid: "0bb7c06c-165a-5c38-8a2b-af923f3c325e"
+diamondUuid: "cd59c0db-43a9-8a3e-9ef5-6cbea33d0643"
+uuid: "cfba1dce-af84-804b-a9ad-73817efe4bbe"
+horo: 5
+bonds:
+  in:
+    - branch
+    - collapse
+    - law
+    - merge
+    - sti
+  out:
+    - branch
+    - collapse
+    - law
+    - merge
+    - sti
+typography:
+  partition: arterial
+  bondDegree: 16
+  neighbors: []
+standards:
+  - "schema.org — the type vocabulary, collided to single words"
+bindings: []
+neighbors:
+  wikilink:
+    - branch
+    - collapse
+    - law
+    - merge
+    - sti
+  matrix:
+    - branch
+    - collapse
+    - law
+    - merge
+    - sti
+  backlinks:
+    - branch
+    - collapse
+    - law
+    - merge
+    - sti
+signatures:
+  computationUuid: "081480d5-4a6b-8369-bcc9-0644d21a67d8"
+  stages:
+    - stage: path
+      stageUuid: "765bd653-1fe2-86fe-83f2-c4377bdacebb"
+    - stage: trinity
+      stageUuid: "fd83bcf4-59de-8531-8ede-60735b9b8011"
+    - stage: boundary
+      stageUuid: "07e1fc6b-a6b8-810d-8994-18cc3a68c391"
+    - stage: links
+      stageUuid: "d37cb39b-eef1-8df7-99a8-d0f26e91799b"
+    - stage: horo
+      stageUuid: "e5073a44-dba5-8de1-8cef-586ddaa08b7c"
+    - stage: seal
+      stageUuid: "ee1905af-12ae-8444-8043-e4a2bbaf19b3"
+    - stage: uuid
+      stageUuid: "8a94daab-accc-833d-8f1e-cc9a0d96a0b2"
+version: 2
 ---
-
 # arterial
 
 A schema.org component word, collided out of schema.org compounds — fused from arterialBranch ([[sti]] · [[collapse]] · [[merge]]).

@@ -2,9 +2,11 @@
 
 # reviews
 
-> atom `employees/performance/reviews` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
+> atom `employees/performance/reviews` · horo `8` `crest` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `employees/performance/reviews` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,11 +23,58 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+
+### collapse
+
+- `balance:conserved`
+- `law:one record per employee performance cycle — self-assessment plus manager review, competency ratings, and merit/promotion recommendations, processed under GDPR; a single-folder collection node (no scatter, no drift).`
+- `seal:unsealed`
+- `trigger:Use when running employee performance cycles — annual, mid-year, quarterly, probation, PIP, 360 — self-assessment plus manager review, competency ratings, merit-increase and promotion recommendations, and GDPR-compliant processing. The employee performance-review collection.`
+- `trigger:one record per employee performance cycle — self-assessment plus manager review, competency ratings, and merit/promotion recommendations, processed under GDPR; a single-folder collection node (no scatter, no drift).`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `03afdf50-d69e-826f-a07b-9b5833964a90` · `74b30406-9a94-847a-b1e6-b830b4bcca0b`
+- content uuids `bf5186de-28d8-849f-a1d5-14124f2ec199` · `e313176e-b6af-8a3a-b8b8-4408a28037c3`
+
+## [[entropy]] — gaps · seals
+
+> account code `employees/performance/reviews` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.8` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `1` eb | Σ seal `11.8` eb |
+
+> net residual `-10.8` eb · seal/gap ratio `11.8` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `employees` · sub-root `b4e809aa-fd27-86f6-90b9-75ec1197d4f1`
+- partition `employees` · sub-root `44323281-3d17-8530-94e1-e2b6734dac06`
 - bond degree `27` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
 
 ## [[cloudflare]] bindings
 
@@ -35,18 +84,55 @@
 
 - `EU Equal Treatment Directive 2000/78` · banner
 - `GDPR Art.5 PII processing` · banner
-- `ISO-19011:2018 audit-trail performance-evidence` · banner
 - `ISO-8601-1:2019 date-time` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·8 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
 
 ## analytics
 
-- bond degree `27` · sealed `1` · horo `2`
+- bond degree `27` · sealed `0` · horo `8`
 - variance `0` · balanced `1` · trinity sum `3`
-- bindings `0` · standards `4`
+- bindings `0` · standards `3`
 
 ## identity
 
-- uuid `ed88010a-3d76-8ccb-abb9-f1480a6b67ae`
+- uuid `e7d9287c-fa7c-8da4-9840-2f2399eb1aee`
 - bonds in `9` · out `9`
 - trinity form·code·proof `1`·`1`·`1`
 - links `6` / `6`
@@ -54,8 +140,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `4257b3ce-8cd3-88b0-9bee-ace358152fc0` · framed by typography partition `employees` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e29d5c92-e0bf-8c3d-ab41-7b874fac725a` · framed by typography partition `employees` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,8 +3,8 @@
 
 # count
 
-path `count` · uuid `02362896-62bc-880d-8c80-fede53614d83` · diamond `b940a76f-c0bd-8e78-9c4c-dc19bfa9fa16`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `count` · uuid `7ec4f297-c914-8814-a292-aa7ee72ab768` · diamond `e42858fa-e1f2-8339-8003-932d1147f304`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports answer·collapse·comment·downvote·interaction·law·merge·offer·rating·repeat·review·screen·sti·upvote·user·word · exports count · escapes —
 links `16/16` · folded `1` · bonds in `16` out `16`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law count is one schema.org word, content-addressed; the same word collides ever
 
 ---
 
-<sub>content-uuid `0dbf19be-25c1-8408-9f70-7d4bd0449188` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `875fbb6a-edbe-8f2b-bafa-1d30af66e0a3` · `pnpm readme` · `pnpm computed:check`</sub>

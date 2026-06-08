@@ -3,8 +3,8 @@
 
 # resolve
 
-path `auto/resolve` · uuid `e68a3ce1-835f-8a1a-b580-16e7138d8b01` · diamond `d7c9f43b-88a0-8e01-bc89-e3994d0036d4`
-horo `8` `crest` · trinity `1·1·1` · sealed `0`
+path `auto/resolve` · uuid `fb639137-b168-8f0b-a7d4-9d03f31ee866` · diamond `6aea614d-3f77-8cea-83f2-bdf5af022d6d`
+horo `2` `share` · trinity `1·1·1` · sealed `0`
 imports @/law/folder · exports const·function·interface · escapes —
 links `17/17` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law a folder-shape gap auto-resolves iff its matter (`index.ts`) is present — 
 
 ---
 
-<sub>content-uuid `a604c857-1ecc-8c3f-8c8b-37fa46c9a416` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6199a61f-30ee-88b7-a6ad-2fb5f2200383` · `pnpm readme` · `pnpm computed:check`</sub>

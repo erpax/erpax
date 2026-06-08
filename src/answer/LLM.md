@@ -3,7 +3,7 @@
 
 # answer
 
-path `answer` · uuid `29b8168e-3e31-8543-9643-1a797d97cd9e` · diamond `6421eb19-d5f5-8382-9189-260fada7fd1b`
+path `answer` · uuid `2406832e-7ce0-81cc-bd9f-d6a27d3d7297` · diamond `eb1e2b41-ca9f-8fb1-a774-50ddd42bb205`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports accepted·concatenate·count·explanation·law·question·self·step·suggested · exports answer · escapes —
 links `9/9` · folded `1` · bonds in `11` out `11`
@@ -14,4 +14,4 @@ law answer is one schema.org word, content-addressed; the same word collides eve
 
 ---
 
-<sub>content-uuid `a26afb37-0685-8adb-8909-4ef325f46321` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8e596025-32a9-8ff0-ae27-c33a95c865ca` · `pnpm readme` · `pnpm computed:check`</sub>

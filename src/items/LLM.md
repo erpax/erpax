@@ -4,7 +4,7 @@
 # items
 
 path `items` · uuid `b090fe53-32ee-84e4-aa66-70edea05367e` · diamond `3e9fbfda-19c1-8015-9743-99894071a5b3`
-horo `5` `round` · trinity `1·1·1` · sealed `1`
+horo `5` `round` · trinity `1·1·1` · sealed `0`
 imports @/audit/trail/after/change·@/auth·@/authenticated·@/auto/populate/tenant·@/items/hooks · exports const · escapes —
 links `18/18` · folded `1` · bonds in `44` out `48`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law one catalog/inventory model — garments, produce, and [[seed]] strip their 
 
 ---
 
-<sub>content-uuid `61aed925-bd8c-8fe0-8778-8e7b1fda2049` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `83baf026-2dd2-8d0c-b9ad-b3ee7bc6123e` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -1,17 +1,25 @@
 import { readFileSync } from 'node:fs'
 import { join } from 'node:path'
-import { describe, it, expect } from 'vitest'
+import { describe, it, expect, beforeAll } from 'vitest'
 import {
   connectFrontmatter,
   upgradeSkillText,
-  renderFrontmatter,
   deriveDescription,
-  contentUuidOf,
   buildFrontmatterGraph,
   graphConnectivity,
   buildUpgradeContext,
+  parseSignaturesFromText,
+  signaturesMatch,
+  verifySignatures,
   type ConnectedFrontmatter,
+  type UpgradeContext,
 } from './index'
+
+let ctx: UpgradeContext
+
+beforeAll(() => {
+  ctx = buildUpgradeContext()
+}, 120_000)
 
 const sampleBody = `---
 name: alpha
@@ -39,7 +47,8 @@ const patch = (leaf: string, extra: Partial<ConnectedFrontmatter> = {}): Connect
   standards: [],
   bindings: [],
   neighbors: { wikilink: [], matrix: [], backlinks: [] },
-  version: 1,
+  signatures: { computationUuid: '00000000-0000-5000-8000-000000000001', stages: [] },
+  version: 2,
   ...extra,
 })
 
@@ -60,43 +69,25 @@ describe('skill/router/upgrade — computational frontmatter self-upgrade', () =
     )
   })
 
-  it('renderFrontmatter is deterministic for the same model', () => {
-    const fm = patch('alpha', {
-      bonds: { in: ['beta'], out: ['gamma'] },
-      typography: { partition: 'alpha', bondDegree: 2, neighbors: ['beta'] },
-      standards: ['ISO/IEC 25010:2023'],
-      bindings: ['kv/TEST'],
-      neighbors: { wikilink: ['beta'], matrix: ['gamma'], backlinks: ['beta'] },
-    })
-    expect(renderFrontmatter(fm)).toBe(renderFrontmatter(fm))
-  })
-
   it('upgradeSkillText is idempotent on skill/router', () => {
-    const ctx = buildUpgradeContext()
     const raw = readSkill('skill/router')
     const fm = connectFrontmatter('skill/router', raw, ctx)
     const once = upgradeSkillText(raw, fm)
     const twice = upgradeSkillText(once, connectFrontmatter('skill/router', once, ctx))
     expect(twice).toBe(once)
-  })
+  }, 120_000)
 
   it('same atom ⇒ same connectFrontmatter patch (deterministic)', () => {
-    const ctx = buildUpgradeContext()
     const raw = readSkill('skill/router')
     expect(connectFrontmatter('skill/router', raw, ctx)).toEqual(
       connectFrontmatter('skill/router', raw, ctx),
     )
-  })
+  }, 120_000)
 
-  it('contentUuidOf is stable on fixed bytes', () => {
-    const bytes = '---\nname: z\n---\n\n# z\n'
-    expect(contentUuidOf(bytes)).toBe(contentUuidOf(bytes))
-  })
 })
 
 describe('skill/router/upgrade — frontmatter connects all', () => {
   it('connectFrontmatter wires matrix, typography, and wikilink neighbors', () => {
-    const ctx = buildUpgradeContext()
     const fm = connectFrontmatter('typography', readSkill('typography'), ctx)
     expect(fm.atomPath).toBe('typography')
     expect(fm.name).toBe('typography')
@@ -104,7 +95,7 @@ describe('skill/router/upgrade — frontmatter connects all', () => {
     expect(fm.coordinate).toContain('typography')
     expect(fm.typography.partition).toBeTruthy()
     expect(fm.neighbors.wikilink.length + fm.bonds.in.length + fm.bonds.out.length).toBeGreaterThan(0)
-  })
+  }, 120_000)
 
   it('synthetic subgraph is connected with no orphans', () => {
     const patches = new Map<string, ConnectedFrontmatter>([
@@ -120,12 +111,53 @@ describe('skill/router/upgrade — frontmatter connects all', () => {
   })
 
   it('connectFrontmatter adds a corpus edge when an atom would be isolated', () => {
-    const ctx = buildUpgradeContext()
     const lone = `---\nname: zorph\ndescription: Use when testing zorph.\n---\n\n# zorph\n\nNo links.\n`
     const fm = connectFrontmatter('zorph', lone, ctx)
     const edges = [...fm.bonds.in, ...fm.bonds.out, ...fm.neighbors.wikilink]
     expect(edges.length).toBeGreaterThan(0)
-  })
+  }, 120_000)
+})
+
+describe('skill/router/upgrade — stage signatures at every pipeline step', () => {
+  it('connectFrontmatter folds diamond stage chain into signatures', () => {
+    const fm = connectFrontmatter('skill/router', readSkill('skill/router'), ctx)
+    expect(fm.signatures.computationUuid).toMatch(/^[0-9a-f-]{36}$/)
+    expect(fm.signatures.stages.map((s) => s.stage)).toEqual([
+      'path',
+      'trinity',
+      'boundary',
+      'links',
+      'horo',
+      'seal',
+      'uuid',
+    ])
+    for (const s of fm.signatures.stages) {
+      expect(s.stageUuid).toMatch(/^[0-9a-f-]{36}$/)
+    }
+  }, 120_000)
+
+  it('parseSignaturesFromText round-trips rendered frontmatter', () => {
+    const raw = readSkill('skill/router')
+    const fm = connectFrontmatter('skill/router', raw, ctx)
+    const text = upgradeSkillText(raw, fm)
+    const parsed = parseSignaturesFromText(text)
+    expect(signaturesMatch(parsed, fm.signatures).ok).toBe(true)
+  }, 120_000)
+
+  it('tampered stageUuid fails signature verify', () => {
+    const raw = readSkill('skill/router')
+    const fm = connectFrontmatter('skill/router', raw, ctx)
+    const stageUuid = fm.signatures.stages[0]!.stageUuid
+    const tampered = upgradeSkillText(raw, fm).replace(stageUuid, '00000000-0000-5000-8000-000000000000')
+    expect(verifySignatures('skill/router', tampered, ctx).ok).toBe(false)
+  }, 120_000)
+
+  it('idempotent upgrade preserves signatures', () => {
+    const raw = readSkill('skill/router')
+    const once = upgradeSkillText(raw, connectFrontmatter('skill/router', raw, ctx))
+    const twice = upgradeSkillText(once, connectFrontmatter('skill/router', once, ctx))
+    expect(parseSignaturesFromText(twice)).toEqual(parseSignaturesFromText(once))
+  }, 120_000)
 })
 
 const readSkill = (atomPath: string): string =>

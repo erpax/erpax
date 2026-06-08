@@ -3,15 +3,15 @@
 
 # engine
 
-path `workflow/engine` · uuid `c250c0c9-143d-83f5-84e9-3046afa4d36c` · diamond `5b4cc4de-d1a3-81bb-9a52-2959f4300a15`
+path `workflow/engine` · uuid `c250c0c9-143d-83f5-84e9-3046afa4d36c` · diamond `ca743446-ec55-87b8-92c2-50da1536c666`
 horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports — · exports function·interface · escapes —
-links `17/17` · folded `1` · bonds in `4` out `4`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+links `17/17` · folded `1` · bonds in `18` out `18`
+faces worker·plugin·pwa `1·0·0`
+neighbors → aura·displacement·event·find·flow·hooks·horo·identity·law·matrix·merge·query·rank·search·specification·standard·vehicle·workflow · ← aura·displacement·event·find·flow·hooks·horo·identity·law·matrix·merge·query·rank·search·specification·standard·vehicle·workflow
 analysis aura
 law the engine is the pure reader of an inert state machine — it PERMITS a transition iff an edge {from, on} exists (else a typed reason) and it AUDITS the graph's harmony (a non-terminal state with no outgoing edge is a dead-end, one with no inbound is unreachable — the [[aura]] holes), never mutating; the same code that runs the organism finds where it is incomplete.
 
 ---
 
-<sub>content-uuid `a4fb4a01-e0ea-80ef-b15c-f078495408d1` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9f9784ac-47b6-8430-88e7-0e85d15f8226` · `pnpm readme` · `pnpm computed:check`</sub>

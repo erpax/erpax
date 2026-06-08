@@ -3,15 +3,15 @@
 
 # wpside
 
-path `wpside` · uuid `8e00a6bf-7049-861c-af8f-0e425cad54fc` · diamond `28c051c4-2ee4-8a07-893f-9d17cfa10e5d`
+path `wpside` · uuid `8e00a6bf-7049-861c-af8f-0e425cad54fc` · diamond `aa45fd93-41b7-8047-9a55-1a7e4aae920e`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports wpside · escapes —
-links `4/4` · folded `1` · bonds in `0` out `0`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law wpside is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `617e636f-d0fc-85d4-bf0e-08650fe462d2` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e31bad4e-e04d-807d-b89b-ccce6c39af73` · `pnpm readme` · `pnpm computed:check`</sub>

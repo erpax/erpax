@@ -23,7 +23,21 @@
 
 - partition `governing-law` · sub-root `b78ec19e-f3b5-80de-bb69-37f8303a083d`
 - bond degree `21` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `21` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `119de253-fc85-85d4-a9db-238023cd51e4` · framed by typography partition `governing-law` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `bd3c13c4-e808-8e20-8acf-eaf088b036c3` · framed by typography partition `governing-law` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>

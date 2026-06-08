@@ -3,8 +3,8 @@
 
 # obligations
 
-path `customers/contracts/performance/obligations` · uuid `315288f7-1546-8230-ae73-5d38d0640327` · diamond `f1d0c080-abc4-8b3d-9583-75fa1f32af93`
-horo `5` `round` · trinity `1·1·1` · sealed `1`
+path `customers/contracts/performance/obligations` · uuid `b585e77e-ac22-8205-a154-99245c79e546` · diamond `fab0ef29-bec8-82e1-becf-f0370174a7b4`
+horo `4` `weave` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/auto/set/timestamp·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
 links `6/6` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law the amounts allocated across a contract's distinct obligations sum exactly t
 
 ---
 
-<sub>content-uuid `031e2904-c3e2-84bb-a58d-deecd7a66e70` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0ddc6b85-f07c-8e81-9299-6b8086d040b6` · `pnpm readme` · `pnpm computed:check`</sub>

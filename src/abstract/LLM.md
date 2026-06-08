@@ -3,8 +3,8 @@
 
 # abstract
 
-path `abstract` · uuid `d385c183-750c-826b-8a58-3d2d7fc242dc` · diamond `c060f993-cc80-8cbe-9d70-e0dadcc273fa`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `abstract` · uuid `ba44d764-0e4c-8841-bef4-ceca1058952d` · diamond `1c9fd447-2871-8e67-94ae-24f6fba6bd4d`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports creative·law·thing · exports abstract · escapes —
 links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law an abstract is a lossy summary of a CreativeWork, so it derives from that wo
 
 ---
 
-<sub>content-uuid `7fb174d7-2dad-8d52-91a5-c417b3832a13` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0d25a02e-c767-8ce5-8290-f3de727eb9c2` · `pnpm readme` · `pnpm computed:check`</sub>

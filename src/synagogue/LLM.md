@@ -3,15 +3,15 @@
 
 # synagogue
 
-path `synagogue` · uuid `79dc06ec-cde9-8fc1-b6e1-a33c5bca048a` · diamond `aa07bac1-9a4f-8b87-9c7d-fbb1d0b2ee98`
+path `synagogue` · uuid `79dc06ec-cde9-8fc1-b6e1-a33c5bca048a` · diamond `06f4e224-c63d-8dcd-a231-740cb108a27d`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports synagogue · escapes —
-links `2/2` · folded `1` · bonds in `4` out `4`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → balance·landmarks·projects·western · ← balance·landmarks·projects·western
+neighbors → law·thing · ← law·thing
 analysis —
 law synagogue is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `af183a5e-a04f-8055-b964-15f818565814` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `dda17263-5d0c-8dbc-8d74-b40773e57cd8` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # yield
 
-path `yield` · uuid `eefa8d1b-c5e6-84ee-9861-2e7f738027e0` · diamond `a0c826ec-095f-8269-9d10-5af9f0093d43`
+path `yield` · uuid `eefa8d1b-c5e6-84ee-9861-2e7f738027e0` · diamond `74d12449-21bc-8266-9eba-9b76e31f66a1`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports agriculture·bottleneck·capacity·conversion·crop·fertility·grade·harvest·law·market·measure·rate·revenue·share·soil·spacing·throughput·whole · exports yield · escapes —
-links `30/30` · folded `1` · bonds in `0` out `0`
+links `30/30` · folded `1` · bonds in `36` out `36`
 faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
+neighbors → agriculture·apiculture·aquaculture·biomass·bottleneck·capacity·conversion·covercrop·crop·cropplan·enterprisebudget·fertility·forestry·grade·harvest·herd·lactation·law·market·measure·mortality·perennial·planting·pollination·postharvest·pruning·rate·recipe·revenue·share·soil·spacing·throughput·trellis·variant·whole · ← agriculture·apiculture·aquaculture·biomass·bottleneck·capacity·conversion·covercrop·crop·cropplan·enterprisebudget·fertility·forestry·grade·harvest·herd·lactation·law·market·measure·mortality·perennial·planting·pollination·postharvest·pruning·rate·recipe·revenue·share·soil·spacing·throughput·trellis·variant·whole
 analysis —
 law yield is output per unit of a bound resource, a bidirectional [[rate]] (area × yield = output; output ÷ yield = area) — so its inverse, through unit weight, turns a demand plan into a planting plan.
 
 ---
 
-<sub>content-uuid `0fa2f2ca-23f9-85ff-881d-ea3dc292685d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d6034068-2dce-8e6d-857c-b158967a0a88` · `pnpm readme` · `pnpm computed:check`</sub>

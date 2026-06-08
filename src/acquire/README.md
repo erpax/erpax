@@ -6,6 +6,8 @@
 
 ## [[debit]] · [[credit]]
 
+> account code `acquire` · currency `eb` (entropy-bit)
+
 | [[debit]] | [[credit]] |
 | -------- | --------- |
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
@@ -19,11 +21,59 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:trinity:[[gap]]/[[trinity]]/code`
+- `gap:trinity:[[gap]]/[[trinity]]/proof`
+
+### collapse
+
+- `balance:conserved`
+- `law:acquire is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.`
+- `seal:sealed`
+- `trigger:Use when reasoning about acquire as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.`
+- `trigger:acquire is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.`
+- `trigger:schema.org — the type vocabulary, collided to single words`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `1`
+- entry uuids `0bb4a05a-ec5e-8087-a9b0-938671a161c7` · `22e3cdf2-2d14-83e5-8468-840827d51d0c` · `a80573d7-a134-8c38-994f-258ae561b2c4`
+- content uuids `0d6dc344-7f55-8f74-8da6-959b18a198d0` · `13df2a06-d4aa-8d40-a4f8-09ebc8f58ee1` · `2a99c33d-c3cc-8801-b355-db478cb31727` · `e643b7e9-f49d-81d5-a160-5db558deceba`
+
+## [[entropy]] — gaps · seals
+
+> account code `acquire` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[trinity]]/code `1.585` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[trinity]]/proof `1.585` eb | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.4` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[diamond]]/sealed `1.585` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `3.17` eb | Σ seal `10.985` eb |
+
+> net residual `-7.815` eb · seal/gap ratio `3.465` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `acquire` · sub-root `3d42582f-c007-82ce-a8ac-92a2b0f9ba8e`
+- partition `acquire` · sub-root `0d6dc344-7f55-8f74-8da6-959b18a198d0`
 - bond degree `19` · analysis neighbors —
-- graph root `06810c2c-2396-831f-a2b3-a58706a17051`
+- graph root `e9e46cd3-af78-8539-bcbd-58a485afeb8e`
 
 ## [[cloudflare]] bindings
 
@@ -34,6 +84,44 @@
 - `schema.org` · catalogue
 - `schema.org — the type vocabulary, collided to single words` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·4 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
 - bond degree `19` · sealed `1` · horo `4`
@@ -42,7 +130,7 @@
 
 ## identity
 
-- uuid `3d42582f-c007-82ce-a8ac-92a2b0f9ba8e`
+- uuid `0d6dc344-7f55-8f74-8da6-959b18a198d0`
 - bonds in `6` · out `6`
 - trinity form·code·proof `1`·`0`·`0`
 - links `6` / `6`
@@ -54,4 +142,4 @@
 
 ---
 
-<sub>content-uuid `f25c28bf-82c1-84eb-b4d6-aa03b965ddc1` · framed by typography partition `acquire` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `59df5e48-5a21-8282-a2e8-836ca60855d3` · framed by typography partition `acquire` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>

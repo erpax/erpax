@@ -3,15 +3,15 @@
 
 # wholesale
 
-path `wholesale` · uuid `9f9e903e-b3fe-808b-89e1-313723e8fe0e` · diamond `64dd5d03-0eb5-88c7-9b74-b963305a7f0f`
+path `wholesale` · uuid `9f9e903e-b3fe-808b-89e1-313723e8fe0e` · diamond `6e795d4b-fda9-863d-83a6-dd8e53cadb6d`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·store · exports wholesale · escapes —
-links `5/5` · folded `1` · bonds in `6` out `6`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat·typical·where · ← cohort·landmarks·memories·stat·typical·where
+neighbors → collapse·law·merge·sti·store · ← collapse·law·merge·sti·store
 analysis —
 law wholesale is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `1f380b46-8975-85ac-ba58-46a517661b27` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `330e0e4d-7b00-8fde-b250-414789aa16f6` · `pnpm readme` · `pnpm computed:check`</sub>

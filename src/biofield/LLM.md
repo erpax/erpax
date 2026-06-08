@@ -3,8 +3,8 @@
 
 # biofield
 
-path `biofield` · uuid `85bfe319-dff3-88d8-bd31-df58e478c523` · diamond `433ddfcb-9bbc-852d-bf99-3d70e9bfff86`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `biofield` · uuid `003148e4-bd99-8ac1-992d-6503a5238c56` · diamond `ca3332de-80f3-8b5b-b90d-30aa6539138f`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports analog·aura·biomagnetism·biophoton·coherence·fractal·law·measure·proof·tamper · exports biofield · escapes —
 links `18/18` · folded `1` · bonds in `13` out `13`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law the biofield is a claim with NO signal detected above chance (Rosa, JAMA 199
 
 ---
 
-<sub>content-uuid `b231bca7-cce9-8073-8328-2d76b728c630` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c309d6e5-b751-8004-9550-51318d106178` · `pnpm readme` · `pnpm computed:check`</sub>

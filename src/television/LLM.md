@@ -3,15 +3,15 @@
 
 # television
 
-path `television` · uuid `57d0d188-4b23-83f4-a3ac-9130840f5072` · diamond `58de689d-90f9-8046-b86e-743d5b9db4c5`
+path `television` · uuid `57d0d188-4b23-83f4-a3ac-9130840f5072` · diamond `b4d635e6-0585-83eb-bf15-6db0050f747d`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports channel·collapse·law·merge·station·sti · exports television · escapes —
-links `6/6` · folded `1` · bonds in `4` out `4`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → channel·collapse·law·merge·station·sti · ← channel·collapse·law·merge·station·sti
 analysis —
 law television is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `ad665a47-0176-8f6b-81ac-ce581fda3ca0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a4533648-2d97-8045-a766-51230924900c` · `pnpm readme` · `pnpm computed:check`</sub>

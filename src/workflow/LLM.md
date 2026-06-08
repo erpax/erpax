@@ -3,15 +3,15 @@
 
 # workflow
 
-path `workflow` · uuid `3db24fae-9cf1-896a-bcd4-97784101b14a` · diamond `39cf2cfb-c220-8e64-9ae8-aec6070e3ef9`
+path `workflow` · uuid `3db24fae-9cf1-896a-bcd4-97784101b14a` · diamond `eaf91a60-c02e-8db6-91d3-3a001a6393fc`
 horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports @/auth · exports WorkflowDecision·async·function·interface · escapes —
-links `32/32` · folded `1` · bonds in `8` out `8`
-faces worker·plugin·pwa `0·0·0`
-neighbors → balance·coding·entertainment·header·landmarks·memories·reconcile·sell · ← balance·coding·entertainment·header·landmarks·memories·reconcile·sell
+links `32/32` · folded `1` · bonds in `29` out `29`
+faces worker·plugin·pwa `1·0·0`
+neighbors → access·answer·approved·begin·close·command·concatenate·defect·definitions·end·engine·event·flow·hooks·horo·identity·incident·instances·law·merge·open·question·request·risk·scouting·sla·standard·step·submission · ← access·answer·approved·begin·close·command·concatenate·defect·definitions·end·engine·event·flow·hooks·horo·identity·incident·instances·law·merge·open·question·request·risk·scouting·sla·standard·step·submission
 analysis —
 law a process is the execution of an inert definition over people and time — it decides WHEN and TO WHOM a transition is offered (spawn on trigger, advance on each step decision, escalate on SLA lapse, delegate service-tasks), appending every decision IMMUTABLY to stepHistory; it is the orchestration twin of [[workflow/engine]], which decides WHETHER an offered transition is legal.
 
 ---
 
-<sub>content-uuid `026760f8-d5b3-88be-a61b-35bb95547403` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `eef47d25-084b-8d00-94ae-7a4cd7e91732` · `pnpm readme` · `pnpm computed:check`</sub>

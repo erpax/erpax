@@ -3,8 +3,8 @@
 
 # accountable
 
-path `accountable` · uuid `1978d6d4-d3ba-8630-974e-50a4c1c7e8a1` · diamond `b0a23673-46f5-8ae0-911a-97c5d9512bd1`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `accountable` · uuid `d09f7317-f5fb-8d29-8f50-458696ef971a` · diamond `5c637e12-3706-8f75-a0c1-33286656dcff`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·person·sti · exports accountable · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law accountable is one schema.org word, content-addressed; the same word collide
 
 ---
 
-<sub>content-uuid `90af20cd-edea-82a9-aca2-1239db9cacec` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ffbcea3c-ab20-8f8d-97c0-4a16a05dd7e8` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,8 +3,8 @@
 
 # company
 
-path `company` · uuid `06f69e34-07fb-8b0c-b41a-935381cbbabf` · diamond `89ab8047-f5ea-8312-acec-51ac751d88a7`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `company` · uuid `a40d0ff9-9404-8ab6-b579-511fe707c7c5` · diamond `6ec8a140-f648-8317-91b6-12714ace2d4a`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·moving·production·registration·sti · exports company · escapes —
 links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law company is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `8f340b82-3d3c-8417-862c-0548831ab329` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `cd2d72f9-9125-847d-a224-eac09e591e7d` · `pnpm readme` · `pnpm computed:check`</sub>

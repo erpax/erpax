@@ -25,7 +25,21 @@
 
 - partition `name` · sub-root `9d6d5cf7-eee2-8583-adcc-7a64da5c2060`
 - bond degree `135` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `uuidOfName is total — defined for ANY name, so every name folds; the identity is computed` · banner
+
+## analytics
+
+- bond degree `135` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -41,4 +55,4 @@
 
 ---
 
-<sub>content-uuid `d2d1ddb0-2de0-8b2f-860d-03eb4c9e5b98` · framed by typography partition `name` bonds `135` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `1071b049-80d4-8d71-9bd8-d2cc15ab72d0` · framed by typography partition `name` bonds `135` · `pnpm readme` · `pnpm readme:check`</sub>

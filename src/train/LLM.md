@@ -3,15 +3,15 @@
 
 # train
 
-path `train` · uuid `08e6d577-34a3-8970-9b06-5e005f3ed873` · diamond `41bc05d7-afd1-8e55-a250-0a1672bec35c`
+path `train` · uuid `08e6d577-34a3-8970-9b06-5e005f3ed873` · diamond `dc8ba9d4-7cfc-839b-91e8-e39405254481`
 horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports @/allocation·@/competency/gap·@/decompression · exports function·interface · escapes —
-links `29/29` · folded `1` · bonds in `8` out `8`
-faces worker·plugin·pwa `0·0·0`
-neighbors → answer·comedy·edition·landmarks·sanitization·start·width·win · ← answer·comedy·edition·landmarks·sanitization·start·width·win
+links `29/29` · folded `1` · bonds in `35` out `37`
+faces worker·plugin·pwa `1·0·0`
+neighbors → akashic·allocation·aura·breath·classroom·command·competencies·db·decompression·derive·education·entropy·gap·generate·hooks·horo·law·law·llm·manufacturing·merge·merge·positions·reservation·rodin·routing·science·self·sequence·society·sparsity·station·train·training·trip·users·uuid · ← akashic·allocation·aura·breath·classroom·command·competencies·db·decompression·derive·education·entropy·gap·generate·hooks·horo·law·llm·manufacturing·merge·positions·reservation·rodin·routing·science·self·sequence·society·sparsity·station·train·training·trip·users·uuid
 analysis aura
 law efficiency (the fraction of required competencies met) IS the pay-fraction — training routes each [[competency/gap]] deficit to its gap-closing `skillRoute`, off-gassing the [[decompression]] debt, and the same one number prices the pay.
 
 ---
 
-<sub>content-uuid `4ff7b9eb-2da3-8539-99e7-7aa873cbc0f0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0aa307bd-30cc-8f58-8608-940a2bf4e373` · `pnpm readme` · `pnpm computed:check`</sub>

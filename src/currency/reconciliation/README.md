@@ -2,7 +2,7 @@
 
 # reconciliation
 
-> atom `currency/reconciliation` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
+> atom `currency/reconciliation` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -23,9 +23,9 @@
 
 ## typography graph
 
-- partition `currency` · sub-root `8d392f75-40f3-8871-ad7a-af6fcfb2b6a0`
-- bond degree `25` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- partition `currency` · sub-root `f08d3b0c-89b2-86fd-abca-489af8fef80a`
+- bond degree `17` · analysis neighbors —
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -42,16 +42,54 @@
 - `SAF-T` · catalogue
 - `SAF-T:3.0.2 (multi-currency period coding)` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·7 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `25` · sealed `1` · horo `1`
+- bond degree `17` · sealed `1` · horo `7`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `8`
 
 ## identity
 
-- uuid `d115bcee-2e37-81a3-8f37-212ce4e9e48d`
-- bonds in `7` · out `9`
+- uuid `f42ca11c-d7cf-8c4f-ac60-e3d180dc20e2`
+- bonds in `4` · out `4`
 - trinity form·code·proof `1`·`1`·`1`
 - links `10` / `10`
 - folded `1` · escapes `0`
@@ -62,4 +100,4 @@
 
 ---
 
-<sub>content-uuid `444fd75c-962d-8a95-ae9d-c2fb7274b224` · framed by typography partition `currency` bonds `25` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `06f14dc3-e128-8efc-a55e-af5dcd675835` · framed by typography partition `currency` bonds `17` · `pnpm readme` · `pnpm readme:check`</sub>

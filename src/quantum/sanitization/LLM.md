@@ -3,8 +3,8 @@
 
 # sanitization
 
-path `quantum/sanitization` · uuid `7a8ca2d0-9d66-82fb-b9b6-3a848f8bdb80` · diamond `9c834b40-dd9e-823e-92d5-ba376dbde9c9`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+path `quantum/sanitization` · uuid `a79bea99-97a4-8db5-a05e-8c2e2978ef97` · diamond `bbb6fe3e-2a19-8702-93b8-83eeaf920e37`
+horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports @/integrity·@/memory/architecture·@/receipt·@/shred · exports SanitizeBoundary·function · escapes —
 links `24/24` · folded `1` · bonds in `15` out `15`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law sanitization never mutates in place — it collapses through the gate. Dirty
 
 ---
 
-<sub>content-uuid `e9c1c4d6-80ee-8e6a-adc5-6483f94bfcd1` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `51269c32-3242-884b-81ef-5701b77d9324` · `pnpm readme` · `pnpm computed:check`</sub>

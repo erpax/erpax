@@ -3,15 +3,15 @@
 
 # id
 
-path `classify/tax/id` · uuid `4d14ca07-5246-8437-a2b3-de2258936261` · diamond `6880e4b5-b23d-8159-b774-35eebbfbb447`
-horo `7` `descent` · trinity `1·1·1` · sealed `0`
+path `classify/tax/id` · uuid `2e8b9817-fbcc-822a-96d2-8d9c9ef647f2` · diamond `6cd6ab44-7f65-8315-863a-3eaad18baea1`
+horo `8` `crest` · trinity `1·1·1` · sealed `0`
 imports @/config/country-specifics · exports function · escapes —
-links `6/6` · folded `1` · bonds in `21` out `22`
+links `6/6` · folded `1` · bonds in `19` out `19`
 faces worker·plugin·pwa `0·0·0`
-neighbors → animal·broadcast·channel·country·cvd·database·facility·group·id·identity·law·law·merge·number·plan·product·property·reservation·tax·uses·uuid·vat · ← animal·broadcast·channel·country·cvd·database·facility·group·id·identity·law·merge·number·plan·product·property·reservation·tax·uses·uuid·vat
+neighbors → animal·broadcast·channel·cvd·database·facility·group·id·identity·law·merge·number·plan·product·property·reservation·uses·uuid·vat · ← animal·broadcast·channel·cvd·database·facility·group·id·identity·law·merge·number·plan·product·property·reservation·uses·uuid·vat
 analysis —
 law the type-label is derived once, at write time, from the [[country]] registry — so downstream branches on a normalised label, never a free-form regex; an unrecognised id leaves the document untouched (no false label).
 
 ---
 
-<sub>content-uuid `2b608fec-bbbb-89c1-854c-355e425fe242` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `14ffc80c-3aaa-8712-899f-ba083f6ec015` · `pnpm readme` · `pnpm computed:check`</sub>

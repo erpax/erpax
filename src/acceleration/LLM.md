@@ -3,8 +3,8 @@
 
 # acceleration
 
-path `acceleration` · uuid `1c9fed34-3d55-8f29-836c-0f0921689b42` · diamond `8d2e586e-f9ea-876e-931d-56c76b790b10`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `acceleration` · uuid `2431b9c2-f1b1-843f-be5e-fca683e7d25c` · diamond `2dcd4ca8-3507-8c4d-af55-6bd636dc7dac`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·time · exports acceleration · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law acceleration is one schema.org word, content-addressed; the same word collid
 
 ---
 
-<sub>content-uuid `6648afa2-03f6-82fc-9559-aa2853bead1b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ce27d897-fc9c-8152-83ad-22f57d53074a` · `pnpm readme` · `pnpm computed:check`</sub>

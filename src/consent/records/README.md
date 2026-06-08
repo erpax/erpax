@@ -2,7 +2,7 @@
 
 # records
 
-> atom `consent/records` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
+> atom `consent/records` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -23,9 +23,9 @@
 
 ## typography graph
 
-- partition `consent` · sub-root `abe2a446-e3e5-846b-9d19-aa90e515df2d`
-- bond degree `40` · analysis neighbors —
-- graph root `0349017a-99bf-8657-ae7e-21b09f363ed4`
+- partition `consent` · sub-root `7c22d3b5-965f-8422-a252-1ed40f2b4723`
+- bond degree `30` · analysis neighbors —
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -40,16 +40,54 @@
 - `ISO-27701:2019 §6.3.1.4 record-of-consent` · banner
 - `ISO-8601-1:2019 date-time given-at withdrawn-at` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·1 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `40` · sealed `1` · horo `8`
+- bond degree `30` · sealed `1` · horo `1`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `6`
 
 ## identity
 
-- uuid `9e218633-37a6-882e-b6eb-03df4067243a`
-- bonds in `12` · out `14`
+- uuid `30f1204c-0a78-89f3-8d09-69ef49907f3d`
+- bonds in `8` · out `8`
 - trinity form·code·proof `1`·`1`·`1`
 - links `5` / `5`
 - folded `1` · escapes `0`
@@ -60,4 +98,4 @@
 
 ---
 
-<sub>content-uuid `6ccb2aff-8271-8a17-b777-657330fdd517` · framed by typography partition `consent` bonds `40` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `2272d60d-6e9b-8e8e-8139-617dccee7983` · framed by typography partition `consent` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>

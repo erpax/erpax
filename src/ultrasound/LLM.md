@@ -3,15 +3,15 @@
 
 # ultrasound
 
-path `ultrasound` · uuid `450dd900-55dc-8269-957e-2dfd64d9a66d` · diamond `cebd93a1-f762-8228-9a0b-64c6524ac040`
+path `ultrasound` · uuid `450dd900-55dc-8269-957e-2dfd64d9a66d` · diamond `dca1ba20-993c-889a-803b-84151eeeb90e`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports ultrasound · escapes —
-links `4/4` · folded `1` · bonds in `5` out `5`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·failed·landmarks·memories·stat · ← cohort·failed·landmarks·memories·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law ultrasound is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `47e96ddf-b9b1-8004-bf82-2e38d712fc4d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5e34096e-7a99-8ba0-93d9-9cef2d3b80b8` · `pnpm readme` · `pnpm computed:check`</sub>

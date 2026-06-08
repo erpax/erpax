@@ -2,9 +2,11 @@
 
 # checks
 
-> atom `customers/kyc/checks` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
+> atom `customers/kyc/checks` · horo `5` `round` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `customers/kyc/checks` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,11 +23,58 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+
+### collapse
+
+- `balance:conserved`
+- `law:due-diligence depth (SDD/CDD/EDD) must match the assessed risk rating, and no party clears until sanctions and PEP screening leave an auditable evidence trail.`
+- `seal:unsealed`
+- `trigger:Use when performing AML / CDD screening on a customer, vendor, beneficial owner, or signatory — SDD/CDD/EDD level, identity documents, sanctions screening (OFAC/EU/UN), PEP check, risk rating, and FATF Recommendation 10 audit evidence. The AML customer-due-diligence collection.`
+- `trigger:due-diligence depth (SDD/CDD/EDD) must match the assessed risk rating, and no party clears until sanctions and PEP screening leave an auditable evidence trail.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `1aa2c234-0bde-8c0c-9ce5-926233aa42cb` · `5d3b65fb-b444-8dad-9423-53abd374b41b`
+- content uuids `23fbb124-39e7-8d07-85bf-1f008aa46cfe` · `2f4299a8-d137-8316-83a7-3528c901e582`
+
+## [[entropy]] — gaps · seals
+
+> account code `customers/kyc/checks` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.5` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `1` eb | Σ seal `11.5` eb |
+
+> net residual `-10.5` eb · seal/gap ratio `11.5` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `customers` · sub-root `85792e9b-a9f4-8af5-a801-0895f2af65cf`
+- partition `customers` · sub-root `83c78df0-4d66-80df-ab25-5ba350869cf1`
 - bond degree `15` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
 
 ## [[cloudflare]] bindings
 
@@ -36,19 +85,56 @@
 - `EU-AMLD-6 Directive-2018/1673 anti-money-laundering` · banner
 - `EU-Regulation-2015/847 wire-transfers` · banner
 - `FATF-Recommendation-10 customer-due-diligence` · banner
-- `ISO-19011:2018 audit-trail kyc-evidence` · banner
 - `ISO/IEC-19794 biometric-data-interchange-formats` · banner
 - `USA-PATRIOT-Act §326 customer-identification-program` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·5 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `15` · sealed `1` · horo `1`
+- bond degree `15` · sealed `0` · horo `5`
 - variance `0` · balanced `1` · trinity sum `3`
-- bindings `0` · standards `6`
+- bindings `0` · standards `5`
 
 ## identity
 
-- uuid `c2a92b07-4497-8693-908a-f4174b3fb17d`
+- uuid `9afe6471-627f-8fb9-9dc5-863e4c78713c`
 - bonds in `5` · out `5`
 - trinity form·code·proof `1`·`1`·`1`
 - links `5` / `5`
@@ -56,8 +142,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `b2b08504-5eda-830b-80c4-19b1860d81a6` · framed by typography partition `customers` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `87397837-7d89-8ce8-8d70-36c7401f7d03` · framed by typography partition `customers` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -1,104 +1,92 @@
 /**
  * TrialBalanceWidget — pre-statement debit/credit symmetry evidence.
- *
- * @standard ECMA-262 ECMAScript-2024 baseline
- * @accounting IFRS IAS-1 §54 statement-of-financial-position
- * @accounting US-GAAP ASC-205-10 presentation-of-financial-statements
- * @audit ISO-19011:2018 audit-trail debit-credit-symmetry
- * @compliance SOX §404 internal-controls trial-balance-evidence
  */
-import React from 'react';
-import { formatCurrency } from '@/dashboard';
-import type { TrialBalanceData } from '@/analytics';
+
+import React from 'react'
+import { formatCurrency } from '@/dashboard'
+import type { TrialBalanceData } from '@/analytics'
+import {
+  Badge,
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+  Table,
+  TableBody,
+  TableCell,
+  TableFooter,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from '@/ui'
 
 interface TrialBalanceWidgetProps {
-  data: TrialBalanceData | null;
+  data: TrialBalanceData | null
 }
 
 const TrialBalanceWidget: React.FC<TrialBalanceWidgetProps> = ({ data }) => {
   if (!data) {
     return (
-      <div className="bg-white rounded-lg shadow p-4">
-        <h2 className="text-lg font-semibold mb-4">Trial Balance</h2>
-        <p className="text-gray-500">Loading...</p>
-      </div>
-    );
+      <Card>
+        <CardHeader>
+          <CardTitle>Trial Balance</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <p className="text-muted-foreground">Loading...</p>
+        </CardContent>
+      </Card>
+    )
   }
 
-  const getStatusColor = () => {
-    return data.isBalanced
-      ? 'bg-green-50 border-green-200'
-      : 'bg-red-50 border-red-200';
-  };
-
-  const getStatusText = () => {
-    return data.isBalanced ? (
-      <span className="text-green-700 font-semibold">✓ Balanced</span>
-    ) : (
-      <span className="text-red-700 font-semibold">✗ Unbalanced</span>
-    );
-  };
-
   return (
-    <div className={`${getStatusColor()} rounded-lg shadow p-4 border`}>
-      <h2 className="text-lg font-semibold mb-4">Trial Balance</h2>
-
-      {/* Status */}
-      <div className="mb-4 p-3 bg-white rounded border">
-        <div className="flex justify-between items-center text-sm">
-          <span className="text-gray-600">Status:</span>
-          {getStatusText()}
+    <Card className={data.isBalanced ? 'border-success/50' : 'border-error/50'}>
+      <CardHeader className="flex-row items-center justify-between space-y-0">
+        <CardTitle>Trial Balance</CardTitle>
+        <Badge variant={data.isBalanced ? 'secondary' : 'destructive'}>
+          {data.isBalanced ? 'Balanced' : 'Unbalanced'}
+        </Badge>
+      </CardHeader>
+      <CardContent>
+        <div className="max-h-96 overflow-y-auto">
+          <Table>
+            <TableHeader>
+              <TableRow>
+                <TableHead>Account</TableHead>
+                <TableHead className="text-right">Debit</TableHead>
+                <TableHead className="text-right">Credit</TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {data.accounts.map((account) => (
+                <TableRow key={account.accountCode}>
+                  <TableCell>
+                    <div className="font-medium">{account.accountCode}</div>
+                    <div className="text-muted-foreground text-xs">{account.accountName}</div>
+                  </TableCell>
+                  <TableCell className="text-right">
+                    {account.debitBalance ? formatCurrency(account.debitBalance) : '-'}
+                  </TableCell>
+                  <TableCell className="text-right">
+                    {account.creditBalance ? formatCurrency(account.creditBalance) : '-'}
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+            <TableFooter>
+              <TableRow>
+                <TableCell>TOTALS</TableCell>
+                <TableCell className="text-right">{formatCurrency(data.totalDebits)}</TableCell>
+                <TableCell className="text-right">{formatCurrency(data.totalCredits)}</TableCell>
+              </TableRow>
+            </TableFooter>
+          </Table>
         </div>
-      </div>
+        <p className="text-muted-foreground mt-3 text-xs">
+          As of {new Date(data.asOfDate).toLocaleDateString()}
+        </p>
+      </CardContent>
+    </Card>
+  )
+}
 
-      {/* Accounts Table */}
-      <div className="overflow-y-auto max-h-96">
-        <table className="w-full text-xs">
-          <thead className="bg-gray-100 sticky top-0">
-            <tr>
-              <th className="text-left px-2 py-2">Account</th>
-              <th className="text-right px-2 py-2">Debit</th>
-              <th className="text-right px-2 py-2">Credit</th>
-            </tr>
-          </thead>
-          <tbody>
-            {data.accounts.map((account) => (
-              <tr key={account.accountCode} className="border-b hover:bg-gray-50">
-                <td className="px-2 py-2">
-                  <div className="font-medium text-gray-900">
-                    {account.accountCode}
-                  </div>
-                  <div className="text-gray-600">{account.accountName}</div>
-                </td>
-                <td className="text-right px-2 py-2 text-gray-700">
-                  {account.debitBalance ? formatCurrency(account.debitBalance) : '-'}
-                </td>
-                <td className="text-right px-2 py-2 text-gray-700">
-                  {account.creditBalance ? formatCurrency(account.creditBalance) : '-'}
-                </td>
-              </tr>
-            ))}
-          </tbody>
-          <tfoot className="bg-gray-100 font-semibold border-t-2">
-            <tr>
-              <td className="px-2 py-2">TOTALS</td>
-              <td className="text-right px-2 py-2">
-                {formatCurrency(data.totalDebits)}
-              </td>
-              <td className="text-right px-2 py-2">
-                {formatCurrency(data.totalCredits)}
-              </td>
-            </tr>
-          </tfoot>
-        </table>
-      </div>
-
-      {/* Date */}
-      <div className="text-xs text-gray-500 mt-3">
-        As of {new Date(data.asOfDate).toLocaleDateString()}
-      </div>
-    </div>
-  );
-};
-
-export default TrialBalanceWidget;
+export default TrialBalanceWidget

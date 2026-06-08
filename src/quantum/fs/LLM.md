@@ -3,15 +3,15 @@
 
 # fs
 
-path `quantum/fs` · uuid `e254f12b-a87e-8f88-8fb1-ae1d14dc6a14` · diamond `791d8597-2427-86e3-b342-c4336cc81695`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
-imports akashic·file·finality·fs·law·love·merge·path·reality·reverse·snapshot·tamper·uuid·versions · exports fs · escapes —
-links `22/22` · folded `1` · bonds in `25` out `30`
+path `quantum/fs` · uuid `0c11da1e-e962-88ac-8b8d-a5504ecda7fc` · diamond `7b0afd0e-08d4-8e68-8317-89da8223018b`
+horo `2` `share` · trinity `1·1·1` · sealed `1`
+imports @/integrity·@/path · exports const·function · escapes —
+links `33/33` · folded `1` · bonds in `16` out `16`
 faces worker·plugin·pwa `1·0·0`
-neighbors → akashic·api·atom·deploy·dimension·file·file·finality·fs·generate·github·law·law·love·matter·mcp·merge·path·path·reality·reference·reverse·snapshot·snapshot·tamper·url·uuid·uuid·versions·word · ← akashic·api·atom·deploy·dimension·file·finality·fs·generate·github·law·love·matter·mcp·merge·path·reality·reference·reverse·snapshot·tamper·url·uuid·versions·word
+neighbors → api·atom·dimension·file·fs·generate·github·law·matter·mcp·path·reference·snapshot·url·uuid·word · ← api·atom·dimension·file·fs·generate·github·law·matter·mcp·path·reference·snapshot·url·uuid·word
 analysis —
 law in the content-addressed filesystem you never overwrite — you snapshot; every state is an immutable content-[[uuid]] (identical content [[merge]]s to one, nothing is erased), so the store is [[tamper]]-evident by construction and any past moment is reconstructable.
 
 ---
 
-<sub>content-uuid `6b5bbdc7-73f3-8f61-85de-3eeda3bbe296` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `33d498f1-055f-825e-b239-607c05d373f3` · `pnpm readme` · `pnpm computed:check`</sub>

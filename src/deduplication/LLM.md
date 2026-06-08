@@ -3,8 +3,8 @@
 
 # deduplication
 
-path `deduplication` · uuid `d0312a2e-1f01-897e-9466-0ca615f7bc43` · diamond `72a42f37-f423-8802-8384-c2d189c8fda4`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `deduplication` · uuid `315576bc-dd88-81df-aed1-c36281178076` · diamond `200c3cb8-fe8f-840c-b1a5-efa8730b7b20`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports idempotency·identity·ingest·merge·reconcile · exports deduplication · escapes —
 links `5/5` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `238f7f02-8710-8ab6-9905-7de703af7487` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `522f5dc9-5e75-820b-8cb6-52db7419660b` · `pnpm readme` · `pnpm computed:check`</sub>

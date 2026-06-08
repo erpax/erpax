@@ -25,7 +25,23 @@
 
 - partition `observe` · sub-root `0e55d318-e531-814e-b59e-a779a05bb994`
 - bond degree `28` · analysis neighbors `agent`
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `observe/project are content-address folds; grounded is computed, hallucination is its negative` · banner
+- `observe/project are content-address folds; grounded is computed, hallucination is the negative` · banner
+- `the agent loop (observe → project) · content-addressed grounding (a projection carries its observation)` · banner
+
+## analytics
+
+- bond degree `28` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `3`
 
 ## identity
 
@@ -41,4 +57,4 @@
 
 ---
 
-<sub>content-uuid `1bd3b77d-e257-8909-9514-877e3439baa7` · framed by typography partition `observe` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d49d6024-c6f0-81b7-89eb-0161cae4f692` · framed by typography partition `observe` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>

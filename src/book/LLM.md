@@ -3,8 +3,8 @@
 
 # book
 
-path `book` · uuid `25f11b60-f6b7-8fbe-a760-b2972b45d462` · diamond `50f19283-81a9-8da0-abe8-e051ae32d9d1`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `book` · uuid `88339b69-01b9-8ed1-bb35-27fba865a593` · diamond `e01ec8ea-11b3-896b-aaf5-f4b65909bada`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports edition·format·law·series·store·type · exports book · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law book is one schema.org word, content-addressed; the same word collides every
 
 ---
 
-<sub>content-uuid `3833cbb2-e621-80f9-9109-d6ca13113339` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a5f42e4d-8194-849b-967a-0f4fd7b4ef33` · `pnpm readme` · `pnpm computed:check`</sub>

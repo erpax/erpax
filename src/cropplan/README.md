@@ -2,7 +2,7 @@
 
 # cropplan
 
-> atom `cropplan` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
+> atom `cropplan` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -21,9 +21,9 @@
 
 ## typography graph
 
-- partition `cropplan` · sub-root `2d047a59-bc1d-8a19-a325-3d5ff900c143`
+- partition `cropplan` · sub-root `000a71f1-3c4b-875a-bc12-e032bd32da23`
 - bond degree `53` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -33,15 +33,53 @@
 
 —
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·7 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `53` · sealed `1` · horo `5`
+- bond degree `53` · sealed `1` · horo `7`
 - variance `0` · balanced `1` · trinity sum `1`
 - bindings `0` · standards `0`
 
 ## identity
 
-- uuid `2d047a59-bc1d-8a19-a325-3d5ff900c143`
+- uuid `000a71f1-3c4b-875a-bc12-e032bd32da23`
 - bonds in `17` · out `17`
 - trinity form·code·proof `1`·`0`·`0`
 - links `32` / `32`
@@ -53,4 +91,4 @@
 
 ---
 
-<sub>content-uuid `9fa8bd31-d832-847e-ab7c-7b0f4a378b51` · framed by typography partition `cropplan` bonds `53` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `4ee94c84-52e9-8ddd-a319-cc9a7dee1871` · framed by typography partition `cropplan` bonds `53` · `pnpm readme` · `pnpm readme:check`</sub>

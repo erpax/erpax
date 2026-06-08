@@ -3,8 +3,8 @@
 
 # cycle
 
-path `cycle` · uuid `33df03d6-53c1-8e7f-82cc-cdf946f633cd` · diamond `c51efaac-a4b5-87e8-85cb-399cc754df6a`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `cycle` · uuid `b6b2df14-f172-88d8-9f5d-db66b9cc8169` · diamond `b46e10f4-55a1-8a53-aae9-18b228f0b102`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports balance·cycles·time · exports cycle · escapes —
 links `6/6` · folded `1` · bonds in `17` out `17`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `4102e809-7b05-83ea-99c7-a429dfd207bc` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d64daf41-a519-8d86-b2b6-521f115dd5a4` · `pnpm readme` · `pnpm computed:check`</sub>

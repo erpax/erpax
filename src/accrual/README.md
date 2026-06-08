@@ -2,9 +2,11 @@
 
 # accrual
 
-> atom `accrual` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `accrual` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
+
+> account code `accrual` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -19,11 +21,56 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:trinity:[[gap]]/[[trinity]]/code`
+- `gap:trinity:[[gap]]/[[trinity]]/proof`
+
+### collapse
+
+- `balance:conserved`
+- `seal:sealed`
+- `trigger:Use when recognizing revenue or expense in the period incurred, earned, or obligated, regardless of payment timing — the foundation of accrual-basis accounting and the IFRS/GAAP reporting standard`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `1`
+- entry uuids `1cd3e100-cc10-82a8-b602-9cc83c61fe5a` · `5137f361-100a-8b78-ac75-84d753b853ac` · `799c2aa1-cab6-842e-9e43-8aafb84ca698`
+- content uuids `745eeaa0-6227-833c-9528-ffc99ded324a` · `910ed71e-92e3-84ca-9142-5057c4105f65` · `c92e1a91-db2e-8fb8-9b4f-4be8434a9cfc` · `deb25229-6813-8c49-bf5a-7b3bf58f7306`
+
+## [[entropy]] — gaps · seals
+
+> account code `accrual` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[trinity]]/code `1.585` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[trinity]]/proof `1.585` eb | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.1` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[diamond]]/sealed `1.585` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `3.17` eb | Σ seal `10.685` eb |
+
+> net residual `-7.515` eb · seal/gap ratio `3.371` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `accrual` · sub-root `66e37f7c-b9d2-8153-a80d-1f65f135c4f0`
+- partition `accrual` · sub-root `c92e1a91-db2e-8fb8-9b4f-4be8434a9cfc`
 - bond degree `36` · analysis neighbors —
-- graph root `06810c2c-2396-831f-a2b3-a58706a17051`
+- graph root `e9e46cd3-af78-8539-bcbd-58a485afeb8e`
 
 ## [[cloudflare]] bindings
 
@@ -33,15 +80,53 @@
 
 —
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·1 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `36` · sealed `1` · horo `7`
+- bond degree `36` · sealed `1` · horo `1`
 - variance `0` · balanced `1` · trinity sum `1`
 - bindings `0` · standards `0`
 
 ## identity
 
-- uuid `66e37f7c-b9d2-8153-a80d-1f65f135c4f0`
+- uuid `c92e1a91-db2e-8fb8-9b4f-4be8434a9cfc`
 - bonds in `12` · out `12`
 - trinity form·code·proof `1`·`0`·`0`
 - links `5` / `5`
@@ -53,4 +138,4 @@
 
 ---
 
-<sub>content-uuid `aa6938b0-93ed-8990-9360-e10b61262ad1` · framed by typography partition `accrual` bonds `36` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0e6f4b05-db63-8b32-ae86-ec872b18d363` · framed by typography partition `accrual` bonds `36` · `pnpm readme` · `pnpm readme:check`</sub>

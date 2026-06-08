@@ -3,8 +3,8 @@
 
 # cdcpmd
 
-path `cdcpmd` · uuid `a9aae335-464f-800f-ad6d-812bf79b5ad2` · diamond `961d3c06-93a9-83e2-b83e-920cc189fd2e`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `cdcpmd` · uuid `ad79eb94-e8be-8f5a-8c90-51d986fade73` · diamond `89dfb4db-5c8c-8d51-b2b6-cf397152e436`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·record·sti · exports cdcpmd · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law cdcpmd is one schema.org word, content-addressed; the same word collides eve
 
 ---
 
-<sub>content-uuid `8fce36c7-e30a-8237-ad4b-289d01a922ec` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9283adc3-3ae5-82c2-9b05-b7470275f3b9` · `pnpm readme` · `pnpm computed:check`</sub>

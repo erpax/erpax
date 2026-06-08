@@ -6,6 +6,8 @@
 
 ## [[debit]] · [[credit]]
 
+> account code `administration` · currency `eb` (entropy-bit)
+
 | [[debit]] | [[credit]] |
 | -------- | --------- |
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
@@ -19,11 +21,34 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## [[entropy]] — gaps · seals
+
+> account code `administration` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[trinity]]/code `1.585` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[trinity]]/proof `1.585` eb | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.4` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[diamond]]/sealed `1.585` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `3.17` eb | Σ seal `10.985` eb |
+
+> net residual `-7.815` eb · seal/gap ratio `3.465` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `administration` · sub-root `bf57d465-5b93-8a51-b3b7-23e908ff6e99`
+- partition `administration` · sub-root `864ebbed-72bd-86b3-9655-15eaf3d322d6`
 - bond degree `16` · analysis neighbors —
-- graph root `06810c2c-2396-831f-a2b3-a58706a17051`
+- graph root `841a8e48-08eb-8dfa-9b96-29beea086012`
 
 ## [[cloudflare]] bindings
 
@@ -33,6 +58,44 @@
 
 - `schema.org — the type vocabulary, collided to single words` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·4 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
 - bond degree `16` · sealed `1` · horo `4`
@@ -41,7 +104,7 @@
 
 ## identity
 
-- uuid `bf57d465-5b93-8a51-b3b7-23e908ff6e99`
+- uuid `864ebbed-72bd-86b3-9655-15eaf3d322d6`
 - bonds in `5` · out `5`
 - trinity form·code·proof `1`·`0`·`0`
 - links `5` / `5`
@@ -53,4 +116,4 @@
 
 ---
 
-<sub>content-uuid `f042de16-9c86-801f-8177-abafb8a16c31` · framed by typography partition `administration` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `71d490c1-d7f7-8173-b456-12301b2d116c` · framed by typography partition `administration` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,21 @@
 
 - partition `movie` · sub-root `b8ac1403-f4bf-8b17-961f-7eddc29313c1`
 - bond degree `23` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `23` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `15efe1a5-23e3-8ef9-9c2a-da6a3b5f88b0` · framed by typography partition `movie` bonds `23` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `46d3300b-97c2-82c6-8a71-15a93f83d968` · framed by typography partition `movie` bonds `23` · `pnpm readme` · `pnpm readme:check`</sub>

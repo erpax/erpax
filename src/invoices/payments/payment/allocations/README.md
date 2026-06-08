@@ -2,9 +2,11 @@
 
 # allocations
 
-> atom `invoices/payments/payment/allocations` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
+> atom `invoices/payments/payment/allocations` · horo `7` `descent` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `invoices/payments/payment/allocations` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,15 +23,119 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+
+### collapse
+
+- `balance:conserved`
+- `law:an allocation explicitly maps one payment onto the specific invoices/bills it settles — the sum of allocations cannot exceed the payment, and the settle is auditable evidence (FIFO or manual), never an implicit guess about which debt the cash cleared.`
+- `seal:unsealed`
+- `trigger:Use when allocating a single payment across one or more invoices, bills or credit memos — FIFO or manual split, FX gain/loss, fully-settling flag, SOX §404 TOM-AR-02 cash-receipt audit evidence. The payment-allocations collection.`
+- `trigger:an allocation explicitly maps one payment onto the specific invoices/bills it settles — the sum of allocations cannot exceed the payment, and the settle is auditable evidence (FIFO or manual), never an implicit guess about which debt the cash cleared.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `07434805-5800-8e27-be4f-9a883f8dc7e7` · `a37674f1-69ff-87c0-b700-18ca9453fef5`
+- content uuids `46e865be-7c5b-8fe6-baee-d7ebbc32e118` · `f15c09d2-002b-88e2-9f64-29fa4c90dc6a`
+
+## [[entropy]] — gaps · seals
+
+> account code `invoices/payments/payment/allocations` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.7` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `1` eb | Σ seal `11.7` eb |
+
+> net residual `-10.7` eb · seal/gap ratio `11.7` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `invoices` · sub-root `ef180ebe-02df-87e7-bd19-e59ea8c64805`
+- partition `invoices` · sub-root `b70d85ab-64bf-818d-a26e-523e5fa58b35`
 - bond degree `24` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `a0b4e6a6-0230-8b95-a98c-2d4cf71fcc77`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `IFRS IAS-7 §6 cash-flow-classification` · banner
+- `IFRS IFRS-15 §47 §53 transaction-price-allocation` · banner
+- `ISO-4217:2015 currency-codes` · banner
+- `ISO-8601-1:2019 date-time allocation-date` · banner
+- `SOX §404 internal-controls cash-allocation TOM-AR-02` · banner
+- `US-GAAP ASC-606-10-32 transaction-price` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·7 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `24` · sealed `0` · horo `7`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `6`
 
 ## identity
 
-- uuid `0b50d883-bb8c-83b3-966b-32c409b16b25`
+- uuid `a6c1e0ec-73fa-88a0-8600-dd28a0bd9e76`
 - bonds in `8` · out `8`
 - trinity form·code·proof `1`·`1`·`1`
 - links `7` / `7`
@@ -37,8 +143,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `72ee1d51-8978-8341-ad1b-337c05aed4e6` · framed by typography partition `invoices` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `4629acda-65ee-8300-8430-b874eeae6a4d` · framed by typography partition `invoices` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>

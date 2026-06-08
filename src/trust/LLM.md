@@ -3,15 +3,15 @@
 
 # trust
 
-path `trust` · uuid `d6903ff4-23be-8123-b3e3-a5cca3d196df` · diamond `e313bc3c-4e82-8d99-9871-595ae008ce57`
+path `trust` · uuid `d6903ff4-23be-8123-b3e3-a5cca3d196df` · diamond `7aebf929-c50f-8d84-958e-14469e6955e7`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports accounting·allocation·balance·entry·law·matter·proof·transaction · exports trust · escapes —
-links `17/17` · folded `1` · bonds in `4` out `4`
+links `17/17` · folded `1` · bonds in `12` out `12`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → access·accounting·allocation·balance·entry·law·matter·mcp·proof·security·society·transaction · ← access·accounting·allocation·balance·entry·law·matter·mcp·proof·security·society·transaction
 analysis —
 law a trust account is a segregated sub-account on the one double-entry ledger — client funds are a liability, every draw is a double [[entry]] against billed work, and the per-client trust ledger may never go negative or commingle ([[balance]]).
 
 ---
 
-<sub>content-uuid `92aa7209-621c-8990-8737-b4248df91193` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6257d868-ac40-89c6-a10b-df027d073e38` · `pnpm readme` · `pnpm computed:check`</sub>

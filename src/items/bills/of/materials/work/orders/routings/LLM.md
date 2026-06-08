@@ -3,8 +3,8 @@
 
 # routings
 
-path `items/bills/of/materials/work/orders/routings` · uuid `b7bb1407-4054-8648-8d1f-3bd24613d051` · diamond `70be9834-90a3-82f6-b65a-5cb184241f9c`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+path `items/bills/of/materials/work/orders/routings` · uuid `dc3d5944-d04c-80cf-8c97-31f9296d4434` · diamond `ff8ffe2d-f568-8822-bc79-9d9b7af00e21`
+horo `4` `weave` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/chain/event/emitter·@/standard/collection/hook · exports default · escapes —
 links `8/8` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law the ordered process steps that make a [[work/orders|work order]] — each st
 
 ---
 
-<sub>content-uuid `a22735b8-bdcd-8f0b-a22a-0675df3e407b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3ee838c8-a88d-8755-a865-bb9afbdaf9bb` · `pnpm readme` · `pnpm computed:check`</sub>

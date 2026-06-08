@@ -3,15 +3,15 @@
 
 # station
 
-path `station` · uuid `5728ae10-b18a-8d27-8e19-e80da57c18b9` · diamond `af35b271-0cbc-8838-bebd-56f5c2882e3b`
+path `station` · uuid `5728ae10-b18a-8d27-8e19-e80da57c18b9` · diamond `2e04635a-4529-8055-aac8-60417cd888de`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports arrival·bus·collapse·departure·fire·gas·law·merge·police·radio·sti·subway·television·train · exports station · escapes —
-links `14/14` · folded `1` · bonds in `7` out `7`
+links `14/14` · folded `1` · bonds in `14` out `14`
 faces worker·plugin·pwa `0·0·0`
-neighbors → binding·cohort·complex·landmarks·memories·sections·stat · ← binding·cohort·complex·landmarks·memories·sections·stat
+neighbors → arrival·bus·collapse·departure·fire·gas·law·merge·police·radio·sti·subway·television·train · ← arrival·bus·collapse·departure·fire·gas·law·merge·police·radio·sti·subway·television·train
 analysis —
 law station is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `3aad93f6-6170-84b0-bc02-98e41c6943b0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f85f7820-4f0a-8512-9a71-6fe60214c5de` · `pnpm readme` · `pnpm computed:check`</sub>

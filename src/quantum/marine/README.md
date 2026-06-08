@@ -23,13 +23,67 @@
 
 ## typography graph
 
-- partition `quantum` · sub-root `539df73c-956d-8aae-b36f-47cf0d3aaff7`
+- partition `quantum` · sub-root `752ec37e-713d-87b7-a64c-41cefcda190a`
 - bond degree `30` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `767556c1-6cb2-8c6a-8d8b-18641569b2ed`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `UNCLOS (1982) Arts. 3·33·57·86·92; the York-Antwerp general-average principle` · banner
+- `zones are computed from distance; general average is proportional to value — never asserted` · banner
+- `zones computed from distance, general average proportional to value — never asserted` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·4 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `30` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `3`
 
 ## identity
 
-- uuid `ede57021-d23c-8359-bfc1-f9b6903c66f6`
+- uuid `abe9cb7c-8b86-8717-85f3-787a9b0bcf9f`
 - bonds in `10` · out `10`
 - trinity form·code·proof `1`·`1`·`1`
 - links `18` / `18`
@@ -41,4 +95,4 @@
 
 ---
 
-<sub>content-uuid `aa4147f7-7cbb-8b2a-9e30-26aa15c6ced1` · framed by typography partition `quantum` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f7e545aa-8cbc-8218-b39f-f595c5e54960` · framed by typography partition `quantum` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>

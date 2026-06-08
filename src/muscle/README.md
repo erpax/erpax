@@ -23,7 +23,21 @@
 
 - partition `muscle` · sub-root `c3ac508c-7e29-8369-8286-d209fcd382a2`
 - bond degree `6` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `6` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `05f6bb56-f660-8295-a5b6-48e4315695ba` · framed by typography partition `muscle` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `61c4aa03-6782-878f-8283-0bad4f3354f0` · framed by typography partition `muscle` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>

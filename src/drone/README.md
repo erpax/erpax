@@ -25,7 +25,7 @@
 
 - partition `drone` · sub-root `2ed3cbf6-baa6-803c-8ca9-23d8511235bf`
 - bond degree `52` · analysis neighbors `agent` · `aura`
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
 
 ## [[cloudflare]] bindings
 
@@ -56,4 +56,4 @@
 
 ---
 
-<sub>content-uuid `3ef8c8b8-1532-89f9-828a-e8f06441477d` · framed by typography partition `drone` bonds `52` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f43fc4cc-3756-8967-8f6c-e0bca0dd5eb2` · framed by typography partition `drone` bonds `52` · `pnpm readme` · `pnpm readme:check`</sub>

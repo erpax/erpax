@@ -3,15 +3,15 @@
 
 # travel
 
-path `travel` · uuid `fc57884e-5062-8fd4-ae8c-325942679002` · diamond `ff14b050-7078-86f1-90c6-ea73370f4ca0`
+path `travel` · uuid `fc57884e-5062-8fd4-ae8c-325942679002` · diamond `2f3c1457-844f-89ed-b4c1-d74f0f2ab6cf`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports action·agency·bans·collapse·law·merge·sti · exports travel · escapes —
-links `7/7` · folded `1` · bonds in `12` out `12`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → agriculture·borrow·candidate·corrects·friction·hamiltonian·hardcover·masthead·plus·promise·screen·transit · ← agriculture·borrow·candidate·corrects·friction·hamiltonian·hardcover·masthead·plus·promise·screen·transit
+neighbors → action·agency·bans·collapse·law·merge·sti · ← action·agency·bans·collapse·law·merge·sti
 analysis —
 law travel is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `c7ee337f-3b02-8418-8cbd-afb37daf5ac7` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1c45b767-161d-8fb2-86b3-22b3ff983b8a` · `pnpm readme` · `pnpm computed:check`</sub>

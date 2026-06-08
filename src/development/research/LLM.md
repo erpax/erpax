@@ -3,15 +3,15 @@
 
 # research
 
-path `development/research` · uuid `d4d6de7f-c43c-89df-90a7-a6439ccfa4f4` · diamond `9edc32ed-4750-81d8-9e90-b5b5d44ad03e`
-horo `1` `base` · trinity `1·1·1` · sealed `1`
+path `development/research` · uuid `55a01707-95c8-8bc4-9ded-7457be6bbc0e` · diamond `ef6db99c-20ab-8cf2-b5ab-5c36777b7982`
+horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports @/entanglement · exports const · escapes —
-links `14/14` · folded `1` · bonds in `61` out `76`
+links `14/14` · folded `1` · bonds in `31` out `31`
 faces worker·plugin·pwa `1·0·0`
-neighbors → accept·access·account·accounting·agent·agent·akashic·anchor·angel·audit·balance·breath·broker·civilization·collapse·collapse·consultant·consulting·cost·cost·cross·design·development·drone·email·entanglement·entropy·entropy·entry·entry·expense·feedback·gate·harmony·history·identity·identity·interview·law·law·law·law·law·literature·localize·matrix·mcp·merge·merge·merge·oid·organization·plugins·profane·project·proof·proof·quantum·receipt·receipt·recover·research·research·research·reset·sacred·sandbox·science·security·self·tamper·tenant·user·uuid·zeropoint·zeropoint · ← accept·access·account·accounting·agent·akashic·anchor·angel·audit·balance·breath·broker·civilization·collapse·consultant·consulting·cost·cross·design·development·drone·email·entanglement·entropy·entry·expense·feedback·gate·harmony·history·identity·interview·law·literature·localize·matrix·mcp·merge·oid·organization·plugins·profane·project·proof·quantum·receipt·recover·research·research·research·reset·sacred·sandbox·science·security·self·tamper·tenant·user·uuid·zeropoint
+neighbors → accounting·akashic·anchor·angel·breath·civilization·collapse·consultant·consulting·design·development·drone·feedback·history·interview·law·literature·localize·merge·oid·organization·profane·project·proof·research·research·research·sacred·science·uuid·zeropoint · ← accounting·akashic·anchor·angel·breath·civilization·collapse·consultant·consulting·design·development·drone·feedback·history·interview·law·literature·localize·merge·oid·organization·profane·project·proof·research·research·research·sacred·science·uuid·zeropoint
 analysis agent
 law research↔development is one entangled binding — the cross is order-free, so `development/research` equals `research/development`; the complete set of such X/Y⊕Y/X pairs IS the [[quantum]]/[[matrix]].
 
 ---
 
-<sub>content-uuid `d3973945-cb40-854a-bc6b-1c9a7c1024d8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `02dbe9af-007a-8048-9f2e-e15f92be0173` · `pnpm readme` · `pnpm computed:check`</sub>

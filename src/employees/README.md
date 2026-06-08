@@ -2,7 +2,7 @@
 
 # employees
 
-> atom `employees` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
+> atom `employees` · horo `4` `weave` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -19,13 +19,13 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `6` · [[conservation]] `0` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `employees` · sub-root `b4e809aa-fd27-86f6-90b9-75ec1197d4f1`
-- bond degree `62` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- bond degree `0` · analysis neighbors —
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
 
 ## [[cloudflare]] bindings
 
@@ -62,8 +62,8 @@
 
 ## analytics
 
-- bond degree `62` · sealed `1` · horo `4`
-- variance `0` · balanced `1` · trinity sum `3`
+- bond degree `0` · sealed `0` · horo `4`
+- variance `6` · balanced `0` · trinity sum `3`
 - bindings `0` · standards `26`
 
 ## identity
@@ -76,8 +76,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `0a320723-e37b-8ccf-9fff-1a5bd135d29e` · framed by typography partition `employees` bonds `62` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f587649a-efcb-8a86-b680-a67aacdef972` · framed by typography partition `employees` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

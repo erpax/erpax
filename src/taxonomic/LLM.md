@@ -3,15 +3,15 @@
 
 # taxonomic
 
-path `taxonomic` · uuid `0f978433-9e07-8b4f-a007-5de353b31a11` · diamond `493a3f49-8bc3-8ef7-ad9c-f0d614750771`
+path `taxonomic` · uuid `0f978433-9e07-8b4f-a007-5de353b31a11` · diamond `447af19b-d796-884d-9001-ce7105700b02`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·range·sti · exports taxonomic · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → balance·landmarks·optician·taxonomy · ← balance·landmarks·optician·taxonomy
+neighbors → collapse·law·merge·range·sti · ← collapse·law·merge·range·sti
 analysis —
 law taxonomic is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `2be02ecc-4a2b-8c96-98b6-04068e269de7` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b8376b14-1c2c-80ee-9214-74003f58d636` · `pnpm readme` · `pnpm computed:check`</sub>

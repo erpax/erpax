@@ -3,15 +3,15 @@
 
 # sourced
 
-path `convention/sourced` · uuid `e76eeca7-aa28-874f-974c-d15ee8114bf3` · diamond `b7006563-6557-8377-911d-6161c077805f`
-horo `8` `crest` · trinity `1·1·1` · sealed `1`
+path `convention/sourced` · uuid `8ddbd614-594d-8f09-a9a2-ee43510746bd` · diamond `7460ca79-2980-809a-8588-bc3b55acdadd`
+horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/aura · exports const·function · escapes —
-links `12/12` · folded `1` · bonds in `6` out `7`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `1·0·0`
-neighbors → aura·cost·honest·law·law·standards·thing · ← aura·cost·honest·law·standards·thing
+neighbors → law·thing · ← law·thing
 analysis aura
 law every atom cites its @standard. An atom's claim is anchored to a named external standard in its SKILL.md or its index.ts, and an uncited atom is a measured gap that lowers tamper-cost. Cite the standard in every atom and the corpus seals sourced to ∞ — coverage = sourced / total = 1.
 
 ---
 
-<sub>content-uuid `cf9e8ffc-e2a7-86ed-93de-bf46238a93c8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9550eee6-1fa0-8bd7-a55e-27838de1063d` · `pnpm readme` · `pnpm computed:check`</sub>

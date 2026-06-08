@@ -1,8 +1,174 @@
 ---
 name: coordinate
-description: Use when reasoning about where an atom sits in the whole — its coordinate is the cross of three neighbor uuids (parent, prev, next), binding it into the tree and the sequence ring. The uuid is the coordinate system; this cross is the next uuid trinity.
+description: "Use when reasoning about where an atom sits in the whole — its coordinate is the cross of three neighbor uuids (parent, prev, next), binding it into the tree and the sequence ring. The uuid is the coordinate system; this cross is the next uuid trinity."
+atomPath: coordinate
+coordinate: coordinate · 7/descent · 38727e7d
+contentUuid: "553eab29-3685-5726-8df4-04825558987c"
+diamondUuid: "4fcc759a-a2c0-8a0d-93af-11e7ddc4c028"
+uuid: "38727e7d-2a5e-8fbf-a078-a670c97f05b2"
+horo: 7
+bonds:
+  in:
+    - accounting
+    - addressed
+    - agent
+    - analog
+    - aura
+    - balance
+    - coil
+    - dna
+    - fields
+    - gate
+    - harmony
+    - hooks
+    - horo
+    - identity
+    - invariant
+    - items
+    - law
+    - lots
+    - merge
+    - octave
+    - packs
+    - phases
+    - proof
+    - quaternary
+    - regeneration
+    - sequence
+    - tenants
+    - unavoidable
+    - variants
+  out:
+    - accounting
+    - addressed
+    - agent
+    - analog
+    - aura
+    - balance
+    - coil
+    - dna
+    - fields
+    - gate
+    - harmony
+    - hooks
+    - horo
+    - identity
+    - invariant
+    - items
+    - law
+    - lots
+    - merge
+    - octave
+    - packs
+    - phases
+    - proof
+    - quaternary
+    - regeneration
+    - sequence
+    - tenants
+    - unavoidable
+    - variants
+typography:
+  partition: coordinate
+  bondDegree: 92
+  neighbors: []
+standards: []
+bindings: []
+neighbors:
+  wikilink:
+    - balance
+    - coil
+    - fields
+    - harmony
+    - hooks
+    - horo
+    - identity
+    - invariant
+    - law
+    - merge
+    - octave
+    - proof
+    - sequence
+    - tenants
+  matrix:
+    - accounting
+    - addressed
+    - agent
+    - analog
+    - aura
+    - balance
+    - coil
+    - dna
+    - fields
+    - gate
+    - harmony
+    - hooks
+    - horo
+    - identity
+    - invariant
+    - items
+    - law
+    - lots
+    - merge
+    - octave
+    - packs
+    - phases
+    - proof
+    - quaternary
+    - regeneration
+    - sequence
+    - tenants
+    - unavoidable
+    - variants
+  backlinks:
+    - accounting
+    - addressed
+    - agent
+    - analog
+    - aura
+    - balance
+    - coil
+    - dna
+    - fields
+    - gate
+    - harmony
+    - hooks
+    - horo
+    - identity
+    - invariant
+    - items
+    - law
+    - lots
+    - merge
+    - octave
+    - packs
+    - phases
+    - proof
+    - quaternary
+    - regeneration
+    - sequence
+    - tenants
+    - unavoidable
+    - variants
+signatures:
+  computationUuid: "658c5034-6b41-827c-99e4-18bc71f56305"
+  stages:
+    - stage: path
+      stageUuid: "36bd5574-3d92-8883-83ed-c680842a90a8"
+    - stage: trinity
+      stageUuid: "6ecb6a36-99f0-81f9-8861-85ed30c92d7f"
+    - stage: boundary
+      stageUuid: "f60b4ba1-65d5-8336-ba24-0e7c9dde26a2"
+    - stage: links
+      stageUuid: "4330c029-834c-8c7a-968a-7caced2f4b0c"
+    - stage: horo
+      stageUuid: "2a62c1b1-e18d-82ad-8c67-124d64ca0558"
+    - stage: seal
+      stageUuid: "4cd5a159-fb5b-8737-864f-8b41d3c70adc"
+    - stage: uuid
+      stageUuid: "547d413f-f0e8-8f67-b160-bf3cf519813f"
+version: 2
 ---
-
 # coordinate — the uuid is the coordinate system
 
 An atom's own identity is its **content-uuid** (`v8(sha256(bytes))` — *what* it is, [[identity]]). Its **coordinate** is *where* it sits, given by **the cross of three neighbor uuids**:

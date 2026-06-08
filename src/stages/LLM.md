@@ -3,15 +3,15 @@
 
 # stages
 
-path `stages` · uuid `77507385-b6a4-83f8-b0b9-64d89a15dfc4` · diamond `ddd4d0c0-5764-876b-a3cc-9887a881ef30`
+path `stages` · uuid `77507385-b6a4-83f8-b0b9-64d89a15dfc4` · diamond `b2849f50-1eb1-84b3-99f9-d2c98da2bd84`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports stages · escapes —
-links `4/4` · folded `1` · bonds in `14` out `14`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → arrival·built·cohort·dentistry·landmarks·memories·plugin·query·quest·reactor·stat·statements·subdivision·taxexempt · ← arrival·built·cohort·dentistry·landmarks·memories·plugin·query·quest·reactor·stat·statements·subdivision·taxexempt
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law stages is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `f5fff709-d867-882b-b1c8-d9883c9ae7b9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d6a379ba-1665-80e6-b147-ef6e209c9233` · `pnpm readme` · `pnpm computed:check`</sub>

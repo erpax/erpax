@@ -1,8 +1,77 @@
 ---
 name: baked
-description: Use when reasoning about build-time projections of the corpus — any artifact fully derivable from src (the 71MB skills.index for the fs-less Cloudflare Worker, the docs tree) is gitignored and regenerated deterministically at build, never committed, because a stored derivable is duplicated state that can drift from its source; the tree is the one truth and each bundle a content-uuid projection of it, so a committed copy is stored entropy that lowers tamper-cost.
+description: "Use when reasoning about build-time projections of the corpus — any artifact fully derivable from src (the 71MB skills.index for the fs-less Cloudflare Worker, the docs tree) is gitignored and regenerated deterministically at build, never committed, because a stored derivable is duplicated state that can drift from its source; the tree is the one truth and each bundle a content-uuid projection of it, so a committed copy is stored entropy that lowers tamper-cost."
+atomPath: convention/baked
+coordinate: convention/baked · 8/crest · 4d0abb6c
+contentUuid: "51e6f999-ff56-5a89-ab87-0326c8f337dc"
+diamondUuid: "7990de69-0e3e-8adf-ba74-e763cdfa5861"
+uuid: "4d0abb6c-9ecc-8655-b393-9e569b68339e"
+horo: 8
+bonds:
+  in:
+    - akashic
+    - convention
+    - cost
+    - fresh
+    - law
+    - skill
+    - tamper
+  out:
+    - akashic
+    - cost
+    - fresh
+    - law
+    - skill
+    - tamper
+typography:
+  partition: convention
+  bondDegree: 19
+  neighbors: []
+standards:
+  - "derivable artifacts (skills.index, docs/) are gitignored — regenerated at build from src"
+  - one source of truth — a committed derivable is duplicated state that can drift
+bindings: []
+neighbors:
+  wikilink:
+    - akashic
+    - cost
+    - fresh
+    - law
+    - skill
+    - tamper
+  matrix:
+    - akashic
+    - cost
+    - fresh
+    - law
+    - skill
+    - tamper
+  backlinks:
+    - akashic
+    - cost
+    - fresh
+    - law
+    - skill
+    - tamper
+signatures:
+  computationUuid: "6ff4c900-e416-8ca7-8ead-df9f510c04b1"
+  stages:
+    - stage: path
+      stageUuid: "8db66e94-b952-8139-813f-5fbe931215b7"
+    - stage: trinity
+      stageUuid: "8016196e-f845-8bb3-8a4f-0fa8215e1256"
+    - stage: boundary
+      stageUuid: "0a7d6a18-a68e-85cf-8449-b310eed0b828"
+    - stage: links
+      stageUuid: "6b3b890c-f80b-806e-a646-3ef26c689261"
+    - stage: horo
+      stageUuid: "42d8e0c1-9d15-8dbc-997f-050b8a4e5259"
+    - stage: seal
+      stageUuid: "19c91b28-2185-8fd7-9234-edb3527b2a88"
+    - stage: uuid
+      stageUuid: "614fe562-b10b-8dc0-a6be-bb667df3247b"
+version: 2
 ---
-
 # convention/baked — derivable artifacts are regenerated at build, never committed
 
 THE CONVENTION: **any artifact fully derivable from `src/` is gitignored and regenerated deterministically at build — never committed.** A stored derivable is duplicated state: a second copy of the [[akashic]] source that can DRIFT from it. The tree is the one truth; each bundle is a content-uuid projection of it, so a committed copy is stored entropy that lowers tamper-[[cost]] (two sources, one forgeable without the other noticing).

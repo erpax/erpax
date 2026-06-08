@@ -3,8 +3,8 @@
 
 # charity
 
-path `charity` · uuid `d791c9ca-aa72-8643-a1eb-425a2637a227` · diamond `98c14636-3ce9-88a4-92d4-be345753d84f`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `charity` · uuid `07926bae-9e95-8f54-b730-2349630b0f2d` · diamond `1f4e5d63-5213-84fa-bf5a-b96325888f77`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports charity · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law charity is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `73571b4a-b253-8d47-89ae-93d82ee17777` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `bd430f87-c859-8472-8fce-49e64fbaafd2` · `pnpm readme` · `pnpm computed:check`</sub>

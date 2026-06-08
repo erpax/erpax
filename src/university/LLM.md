@@ -3,15 +3,15 @@
 
 # university
 
-path `university` · uuid `db196d35-dc6c-8ee5-abd4-2cc28f113d44` · diamond `70471ac8-9264-8d2b-8ef6-852f43cedf22`
+path `university` · uuid `db196d35-dc6c-8ee5-abd4-2cc28f113d44` · diamond `9eb0fc2b-9fd2-8493-9f3a-4aa2515e76ef`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·college·law·merge·sti · exports university · escapes —
-links `5/5` · folded `1` · bonds in `6` out `6`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → calorie·customer·foot·issue·section·snapshots · ← calorie·customer·foot·issue·section·snapshots
+neighbors → collapse·college·law·merge·sti · ← collapse·college·law·merge·sti
 analysis —
 law university is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `4565c583-9a21-8e67-89a4-bfd1cf5e5930` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d6359dfe-a7b9-833e-9888-ce5a1ee10c5d` · `pnpm readme` · `pnpm computed:check`</sub>

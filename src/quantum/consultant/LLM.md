@@ -3,8 +3,8 @@
 
 # consultant
 
-path `quantum/consultant` · uuid `7f4348e7-787b-81d1-8b4f-f6414e339792` · diamond `42eaad41-a6e6-8a35-8ab7-adc95363e3c6`
-horo `5` `round` · trinity `1·1·1` · sealed `1`
+path `quantum/consultant` · uuid `c578eb30-696c-898b-81ec-33b669e113eb` · diamond `7a771317-e8ad-8f76-8357-da570c6a3bb1`
+horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports @/quantum/consulting · exports const·function · escapes —
 links `15/15` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law a quantum consultant covers all aspects of life because it consults the whol
 
 ---
 
-<sub>content-uuid `ab737932-7f01-8aad-9749-0a777b91db5f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `28bb37c9-c6ae-853d-99da-99d16119df15` · `pnpm readme` · `pnpm computed:check`</sub>

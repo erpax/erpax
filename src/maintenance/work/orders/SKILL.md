@@ -1,8 +1,146 @@
 ---
-name: maintenance-work-orders
-description: Use when executing FM work — corrective/preventive/predictive maintenance, statutory inspections, refurbishments — tracking parts issued, labour hours, vendor cost, IAS-16 capex/opex classification, permit-to-work, failure codes, and GL journal-entry on completion. The CMMS work-order execution register per ISO 55000.
+name: orders
+description: "Use when executing FM work — corrective/preventive/predictive maintenance, statutory inspections, refurbishments — tracking parts issued, labour hours, vendor cost, IAS-16 capex/opex classification, permit-to-work, failure codes, and GL journal-entry on completion. The CMMS work-order execution register per ISO 55000."
+atomPath: maintenance/work/orders
+coordinate: maintenance/work/orders · 2/share · a42fa201
+contentUuid: "b870ddb8-5284-578f-8c8f-cc3720f1cd04"
+diamondUuid: "bc8c71e4-8cbf-8850-be71-7e1948efd4f1"
+uuid: "a42fa201-77fb-8959-bcde-632c63cc03e0"
+horo: 2
+bonds:
+  in:
+    - accounting
+    - allocation
+    - duality
+    - fractal
+    - hooks
+    - horo
+    - law
+    - materials
+    - orders
+    - packs
+    - party
+    - receipts
+    - routings
+    - runs
+    - shift
+    - shifts
+    - standard
+    - utility
+    - variances
+    - work
+  out:
+    - accounting
+    - allocation
+    - duality
+    - fractal
+    - hooks
+    - horo
+    - law
+    - materials
+    - orders
+    - packs
+    - party
+    - receipts
+    - routings
+    - runs
+    - shift
+    - shifts
+    - standard
+    - utility
+    - variances
+typography:
+  partition: maintenance
+  bondDegree: 96
+  neighbors: []
+standards:
+  - "EN-13306:2017 maintenance-terminology"
+  - "EU-2014/55"
+  - "EU-537/2014"
+  - "EU-910/2014"
+  - "IFRS IAS-16 §12 §13 capitalisable-vs-expense routine-maintenance"
+  - "IFRS IAS-2 §10 cost-of-purchase materials-issued"
+  - "ILO-C100"
+  - "ISO-14224:2016 reliability-and-maintenance-data"
+  - "ISO-19011:2018 audit-trail work-order-evidence"
+  - "ISO-41001"
+  - "ISO-41001:2018 §8.1 facility-management operational-control"
+  - "ISO-55000"
+  - "ISO-55000:2014 asset-management work-management"
+  - "ISO-55001:2014 asset-management management-systems"
+  - "ISO-8601-1:2019 date-time scheduled-actual"
+  - "SOX §404 internal-controls capex-vs-opex-classification"
+  - "US-GAAP ASC-360 ppe-maintenance"
+bindings: []
+neighbors:
+  wikilink:
+    - assets
+    - entries
+    - entry
+    - inspections
+    - law
+    - movements
+    - properties
+    - requests
+  matrix:
+    - accounting
+    - allocation
+    - duality
+    - fractal
+    - hooks
+    - horo
+    - law
+    - materials
+    - orders
+    - packs
+    - party
+    - receipts
+    - routings
+    - runs
+    - shift
+    - shifts
+    - standard
+    - utility
+    - variances
+  backlinks:
+    - accounting
+    - allocation
+    - duality
+    - fractal
+    - hooks
+    - horo
+    - law
+    - materials
+    - orders
+    - packs
+    - party
+    - receipts
+    - routings
+    - runs
+    - shift
+    - shifts
+    - standard
+    - utility
+    - variances
+signatures:
+  computationUuid: "8e275220-b1fd-893b-ad01-6f9a3e84e43e"
+  stages:
+    - stage: path
+      stageUuid: "c6a956bb-34cd-84a7-b807-39badf6e89da"
+    - stage: trinity
+      stageUuid: "75a83c7c-d08c-8e9f-9852-5a6a33b581b8"
+    - stage: boundary
+      stageUuid: "7d14719f-571c-8ece-8308-3d03f6901764"
+    - stage: links
+      stageUuid: "afa49f3d-cc19-8e84-99cd-a1f133da0d11"
+    - stage: horo
+      stageUuid: "6b1f4791-8ee0-83fa-b5eb-eec977f482f1"
+    - stage: seal
+      stageUuid: "fd8140a2-dc6f-82f2-ae3f-e9d01a693246"
+    - stage: uuid
+      stageUuid: "20bc4b25-2f55-8153-a67d-77571cff2110"
+version: 2
 ---
-
 # maintenance-work-orders
 
 The executable side of the FM ticket flow. Promoted from [[maintenance/requests]] (or raised pre-emptively for preventive / scheduled work). Tracks parts issued, labour hours, and cost — feeds GL via [[items/inventory/movements]] (parts) + [[employees/time/entries]] (labour) + capitalised work via [[fixed/assets]] (when work is capitalisable per IAS-16 §13).

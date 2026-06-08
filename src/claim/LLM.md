@@ -3,8 +3,8 @@
 
 # claim
 
-path `claim` · uuid `8899a65f-662d-8349-8cb5-995f89cfd557` · diamond `c6ad9702-cf8a-86e9-be5f-9ae7c70f855c`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `claim` · uuid `41f6bd70-4109-8507-861d-3dfbeabecb75` · diamond `27a7c1d9-f667-857a-87fd-adcee5fbb1ca`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports associated·interpreted·interpreter·law·review·reviewed · exports claim · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law claim is one schema.org word, content-addressed; the same word collides ever
 
 ---
 
-<sub>content-uuid `1ee478b7-d754-8886-a5b4-efd96ee23e81` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9ab085c7-08f7-84f9-a3a7-466c47718ae4` · `pnpm readme` · `pnpm computed:check`</sub>

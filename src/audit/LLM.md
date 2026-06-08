@@ -3,15 +3,15 @@
 
 # audit
 
-path `audit` · uuid `ad9f3271-fbf4-876f-a76a-b6da7a1ac515` · diamond `05d1e1ee-0900-802b-abf7-255c891ca06a`
+path `audit` · uuid `15c9b6da-13f6-8eb5-bdde-16b39325eed3` · diamond `9b0dbc27-0e79-83c3-a538-a49154143282`
 horo `2` `share` · trinity `1·0·0` · sealed `0`
 imports access·accounting·description·fields·versions · exports audit · escapes —
-links `5/5` · folded `1` · bonds in `30` out `29`
+links `5/5` · folded `1` · bonds in `31` out `31`
 faces worker·plugin·pwa `1·0·0`
-neighbors → access·accounting·anchoring·approved·attestation·by·certification·chain·change·closure·cloudflare·description·emitter·empirical·engineering·fields·finding·media·organic·pqc·provenance·reason·replay·research·source·timestamp·truth·types·versions · ← access·accounting·anchoring·approved·attestation·by·certification·chain·change·change·closure·cloudflare·description·emitter·empirical·engineering·fields·finding·media·organic·pqc·provenance·reason·replay·research·source·timestamp·truth·types·versions
+neighbors → access·access·accounting·anchoring·approved·attestation·by·certification·chain·change·change·closure·cloudflare·description·emitter·empirical·engineering·fields·finding·media·organic·pqc·provenance·reason·replay·research·source·timestamp·truth·types·versions · ← access·access·accounting·anchoring·approved·attestation·by·certification·chain·change·change·closure·cloudflare·description·emitter·empirical·engineering·fields·finding·media·organic·pqc·provenance·reason·replay·research·source·timestamp·truth·types·versions
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `fe16d9dd-0a3a-8e9c-aa24-d23c0ce6bd26` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ec6a31f6-617e-8c26-bf37-b5dbb6f4fb34` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -2,9 +2,11 @@
 
 # 3
 
-> atom `peppol/bis/3` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
+> atom `peppol/bis/3` · horo `4` `weave` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `peppol/bis/3` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,15 +23,123 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `law:Peppol BIS Billing 3.0 wraps an EN-16931 semantic invoice (UBL 2.1 syntax) in the network envelope — CustomizationID + ProfileID + ISO-6523 ParticipantIdentifier + EndpointID; a message is Peppol-conformant only when both the semantic model and that envelope are present.`
+- `seal:unsealed`
+- `trigger:Peppol BIS Billing 3.0 wraps an EN-16931 semantic invoice (UBL 2.1 syntax) in the network envelope — CustomizationID + ProfileID + ISO-6523 ParticipantIdentifier + EndpointID; a message is Peppol-conformant only when both the semantic model and that envelope are present.`
+- `trigger:Use when implementing or referencing Peppol BIS Billing 3.0.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `12022536-9521-8f2d-b860-e005c08e820a` · `3d0a1f77-e4c0-8080-83a2-5f07e9193010` · `666c96c1-3cd6-87ee-9e62-07cd02955e93`
+- content uuids `48b74f3d-4569-8edd-bfe6-7608d993ccf9` · `69f54782-9c6d-86cd-862b-f4064fc2865c` · `78dc664d-dc15-83f8-870b-817ff6ae5606`
+
+## [[entropy]] — gaps · seals
+
+> account code `peppol/bis/3` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.4` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `2` eb | Σ seal `11.4` eb |
+
+> net residual `-9.4` eb · seal/gap ratio `5.7` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `peppol` · sub-root `c4ea32d7-f8e8-82f9-9e8b-df9c50272dce`
+- partition `peppol` · sub-root `c5d85ceb-7298-820b-8ab3-bdd97f6c60ce`
 - bond degree `3` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `EN-16931:2017+A1:2019 semantic-model-electronic-invoice` · banner
+- `ISO-6523-1` · catalogue
+- `ISO-6523-1:1998 participant-identifier-scheme` · banner
+- `Peppol-BIS-3.0` · catalogue
+- `Peppol-BIS-3.0 billing` · banner
+- `Peppol-BIS-3.0 billing line-detail` on InvoiceLines and Invoices. That citation grounds the wire format the EU's e-invoicing network expects. The EN-16931 module (already shipped) covers the semantic model; this module covers the Peppol-specific envelope (CustomizationID + ProfileID + ParticipantIdentifier + EndpointID) so the e-invoice export service can construct a complete Peppol-compliant message without composing types from two modules in user code.` · banner
+- `Peppol-BIS-3.0 billing line-detail`.` · banner
+- `Peppol-BIS-3.0`.` · banner
+- `UBL-2.1 universal-business-language` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·4 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `3` · sealed `0` · horo `4`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `9`
 
 ## identity
 
-- uuid `c4ea32d7-f8e8-82f9-9e8b-df9c50272dce`
+- uuid `c80c4942-c6f3-82f0-b194-32053295d603`
 - bonds in `1` · out `1`
 - trinity form·code·proof `1`·`1`·`1`
 - links `1` / `1`
@@ -37,8 +147,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `2b388fb2-18f1-8245-9733-97ab5792a89d` · framed by typography partition `peppol` bonds `3` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `78272621-e341-8812-87f5-a1265efe21eb` · framed by typography partition `peppol` bonds `3` · `pnpm readme` · `pnpm readme:check`</sub>

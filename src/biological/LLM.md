@@ -3,8 +3,8 @@
 
 # biological
 
-path `biological` · uuid `03133be3-3898-86a1-b8a7-61e2b335847d` · diamond `730423e2-777c-8766-bf42-85bc0c73c93b`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `biological` · uuid `ae48e97b-0cb7-8645-8f4b-a31a5d10d2c1` · diamond `d7ce9e30-8506-8c72-932c-e6a76eb5dcc5`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·involved·law·merge·process·role·sti · exports biological · escapes —
 links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law biological is one schema.org word, content-addressed; the same word collides
 
 ---
 
-<sub>content-uuid `c3a1901b-6486-8eab-9d06-22ed752cdcbf` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `cf4e19da-7bf8-8bab-862a-e69f0862e8e1` · `pnpm readme` · `pnpm computed:check`</sub>

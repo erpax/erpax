@@ -2,9 +2,11 @@
 
 # variances
 
-> atom `items/bills/of/materials/work/orders/cost/variances` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
+> atom `items/bills/of/materials/work/orders/cost/variances` · horo `5` `round` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `items/bills/of/materials/work/orders/cost/variances` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,15 +23,117 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+
+### collapse
+
+- `balance:conserved`
+- `law:generated on [[work/orders|work-order]] close, it decomposes standard vs actual cost into material/labour/overhead variances whose disposition journal entries must balance (debit = credit, [[balance]]).`
+- `seal:unsealed`
+- `trigger:Use when closing a work order and reconciling standard vs actual manufacturing costs — material price/quantity, labour rate/efficiency, and overhead spending/volume variances per IAS-2 §21. The variance-decomposition record generated on work-order close.`
+- `trigger:generated on [[work/orders|work-order]] close, it decomposes standard vs actual cost into material/labour/overhead variances whose disposition journal entries must balance (debit = credit, [[balance]]).`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `e54e7478-5c62-8b23-a9cb-4a83856d0869` · `ef341307-92f1-8314-b666-86f1caa36791`
+- content uuids `7d8ff9a1-35e7-812a-a868-874a5812b2b5` · `e894ae58-8634-8c34-a8ca-8dc0da82365d`
+
+## [[entropy]] — gaps · seals
+
+> account code `items/bills/of/materials/work/orders/cost/variances` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.5` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `1` eb | Σ seal `11.5` eb |
+
+> net residual `-10.5` eb · seal/gap ratio `11.5` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `items` · sub-root `1341dba3-9395-8200-8e47-ea3dc4d4b9e9`
+- partition `items` · sub-root `e1747762-a2bb-8ab4-aaeb-99c9513102fb`
 - bond degree `36` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `a0b4e6a6-0230-8b95-a98c-2d4cf71fcc77`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `IFRS IAS-2 §21 standard-cost-method` · banner
+- `ISO-8601-1:2019 date-time variance-date` · banner
+- `SOX §404 internal-controls variance-disposition TOM-PROD-03` · banner
+- `US-GAAP ASC-330-10-30 standard-cost-variance-recognition` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·5 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `36` · sealed `0` · horo `5`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `4`
 
 ## identity
 
-- uuid `8abf0e36-4073-8865-acc9-55d99ee44045`
+- uuid `f909ffb5-b172-86d8-bacc-05034f921adf`
 - bonds in `12` · out `12`
 - trinity form·code·proof `1`·`1`·`1`
 - links `12` / `12`
@@ -37,8 +141,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `cbedd713-55ac-8bae-873f-d0f57476c228` · framed by typography partition `items` bonds `36` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f0d69e2d-37b5-8927-87ce-3378e832facc` · framed by typography partition `items` bonds `36` · `pnpm readme` · `pnpm readme:check`</sub>

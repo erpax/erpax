@@ -3,8 +3,8 @@
 
 # abridged
 
-path `abridged` · uuid `d7351ed5-d510-8a91-83f9-b14d9988c0c3` · diamond `404c3675-fc43-8362-bd70-66b86bec3c0f`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `abridged` · uuid `582c7123-57ce-8936-b6aa-5997d28a0873` · diamond `cc104ffb-4664-8090-9910-97676b05230d`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports creative·law·thing · exports abridged · escapes —
 links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law abridged is one schema.org word, content-addressed; the same word collides e
 
 ---
 
-<sub>content-uuid `b87f5d99-5e15-8522-ae50-0f40da6bf71c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5452e0ef-1e6e-8759-96f9-2f8a86a637c8` · `pnpm readme` · `pnpm computed:check`</sub>

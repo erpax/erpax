@@ -3,15 +3,15 @@
 
 # registered
 
-path `agents/registered` · uuid `a5099e24-ed4b-8741-a28f-5c2acd661d93` · diamond `44b6081d-e49c-815e-b750-64ca3564d924`
-horo `4` `weave` · trinity `1·1·1` · sealed `0`
+path `agents/registered` · uuid `661f54cc-743f-8ab8-9263-81f4db8ebd4b` · diamond `0ea18312-7e7d-8d17-b79e-395a1cf078a7`
+horo `5` `round` · trinity `1·1·1` · sealed `0`
 imports — · exports ConsistencyAgent·CustomerSupportAgent·DataAgent·DesignAgent·EngineeringAgent·EnterpriseSearchAgent·HrAgent·LegalAgent·MarketingAgent·MetaSkillAgent·OpsAgent·PluginsAgent·ProductAgent·ProductivityAgent·SalesAgent·TRAINING_EMIT·TRAINING_TRIGGER·planTrainingEffects · escapes —
-links `1/1` · folded `1` · bonds in `7` out `8`
+links `1/1` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·1·0`
-neighbors → collapse·date·first·law·law·merge·sti·vehicle · ← collapse·date·first·law·merge·sti·vehicle
+neighbors → collapse·date·first·law·merge·sti·vehicle · ← collapse·date·first·law·merge·sti·vehicle
 analysis —
 law barrel re-export at `@/agents/registered`; trinity sealed for import purity.
 
 ---
 
-<sub>content-uuid `77fa0aa3-a242-82be-b429-a6171fe543fb` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `fa0f5bb1-823d-8b14-b677-6ec8a123f3f2` · `pnpm readme` · `pnpm computed:check`</sub>

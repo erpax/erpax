@@ -3,8 +3,8 @@
 
 # destination
 
-path `destination` · uuid `7c214c30-acf8-8970-b236-ba3962ead456` · diamond `b950bb6a-5dcb-8ef5-a15f-c3e24a47d72d`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `destination` · uuid `8a77af32-1872-854a-8e3a-095d0616082f` · diamond `3a7f0654-42a0-8e0a-b3e8-c498471c3c59`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·shipping·sti·tourist · exports destination · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law destination is one schema.org word, content-addressed; the same word collide
 
 ---
 
-<sub>content-uuid `b6ea29a1-190f-846f-a1d1-b8ad437cadd8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7375ac0a-04e7-88f2-9232-248e1649ddfb` · `pnpm readme` · `pnpm computed:check`</sub>

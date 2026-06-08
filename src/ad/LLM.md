@@ -3,8 +3,8 @@
 
 # ad
 
-path `ad` · uuid `542fb21d-2875-89c1-a1c2-d96941471ab1` · diamond `b4c44c33-ca7a-8613-bb0c-46e1b73ea9a0`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `ad` · uuid `02bc18d1-3cec-8fde-8bcb-bfe612fcb6fd` · diamond `007a1cbe-c32f-869f-96e1-96fdd933ae17`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports block·collapse·law·merge·sti·wp · exports ad · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law ad is one schema.org word, content-addressed; the same word collides every s
 
 ---
 
-<sub>content-uuid `95ca7f37-968f-8a46-a749-eed61674db1f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2312a7d9-f060-8b8b-8c7f-247a58d21cb9` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -23,7 +23,21 @@
 
 - partition `golf` · sub-root `91d52ee9-7e4d-8bf3-a861-c75332a6065b`
 - bond degree `16` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `16` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `029f87fa-5d25-8223-9118-a7c7114457e6` · framed by typography partition `golf` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d7139492-fad4-8f0b-9819-59422acf27e6` · framed by typography partition `golf` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

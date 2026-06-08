@@ -2,9 +2,11 @@
 
 # admin
 
-> atom `admin` · horo `8` `crest` · [[balance]] `1` · [[seal]] `0`
+> atom `admin` · horo `8` `crest` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `admin` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -17,13 +19,40 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `7` | Σ `7` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `12` · [[conservation]] `0` · [[entry]] · [[purity]]
+
+## [[entropy]] — gaps · seals
+
+> account code `admin` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[diamond]]/stray/BatchActionsBar.tsx `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[diamond]]/stray/GLAccountDetailDialog.tsx `1` eb | [[seal]]/[[lattice]]/folded `1` eb |
+| [[gap]]/[[diamond]]/stray/GLAccountDialog.tsx `1` eb | [[seal]]/[[links]]/resolved `1` eb |
+| [[gap]]/[[diamond]]/stray/GLAccountFilters.tsx `1` eb | [[seal]]/[[horo]]/ring `0.8` eb |
+| [[gap]]/[[diamond]]/stray/GLAccountManagement.tsx `1` eb | [[seal]]/[[identity]]/uuid `1` eb |
+| [[gap]]/[[diamond]]/stray/GLAccountTree.tsx `1` eb | [[seal]]/[[boundary]]/barrel `1` eb |
+| [[gap]]/[[diamond]]/stray/TenantDialog.tsx `1` eb | [[seal]]/[[typography]]/partition `1` eb |
+| [[gap]]/[[diamond]]/stray/TenantFilters.tsx `1` eb |  |
+| [[gap]]/[[diamond]]/stray/TenantManagement.tsx `1` eb |  |
+| [[gap]]/[[diamond]]/stray/TenantTable.tsx `1` eb |  |
+| [[gap]]/[[diamond]]/stray/bar/ `1` eb |  |
+| [[gap]]/[[diamond]]/stray/ui/ `1` eb |  |
+| [[gap]]/[[trinity]]/code `1.585` eb |  |
+| [[gap]]/[[trinity]]/proof `1.585` eb |  |
+| [[gap]]/[[path]]/ancestor `1` eb |  |
+| Σ gap `16.17` eb | Σ seal `6.8` eb |
+
+> net residual `9.37` eb · seal/gap ratio `0.421` · [[entropy]] · [[seal]]
 
 ## typography graph
 
-- partition `admin` · sub-root `ce84b495-c8c5-82dd-93b4-144c06e69c35`
-- bond degree `36` · analysis neighbors —
-- graph root `06810c2c-2396-831f-a2b3-a58706a17051`
+- partition `admin` · sub-root `ba92aaec-4648-8102-8235-9c5ba5a3d6a2`
+- bond degree `0` · analysis neighbors —
+- graph root `841a8e48-08eb-8dfa-9b96-29beea086012`
 
 ## [[cloudflare]] bindings
 
@@ -40,15 +69,53 @@
 - `ISO-3166-1` · catalogue
 - `W3C-WAI-ARIA-1.2` · catalogue
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unbalanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| not-held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·8 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `36` · sealed `0` · horo `8`
-- variance `0` · balanced `1` · trinity sum `1`
+- bond degree `0` · sealed `0` · horo `8`
+- variance `12` · balanced `0` · trinity sum `1`
 - bindings `0` · standards `8`
 
 ## identity
 
-- uuid `ce84b495-c8c5-82dd-93b4-144c06e69c35`
+- uuid `ba92aaec-4648-8102-8235-9c5ba5a3d6a2`
 - bonds in `12` · out `12`
 - trinity form·code·proof `1`·`0`·`0`
 - links `5` / `5`
@@ -60,4 +127,4 @@
 
 ---
 
-<sub>content-uuid `610a692a-37b1-8785-90ea-36a0debd5d72` · framed by typography partition `admin` bonds `36` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `6967c503-8f49-8545-85d0-87b73bf3989e` · framed by typography partition `admin` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

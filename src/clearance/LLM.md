@@ -3,8 +3,8 @@
 
 # clearance
 
-path `clearance` · uuid `584b2cce-394e-8680-bd5c-651b99695230` · diamond `b3790d4e-470c-809d-b3dc-5b262dfb08b2`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `clearance` · uuid `fdae391d-fc1e-8161-9bdd-08a73bc42f55` · diamond `dfc64186-d126-8d64-a8a5-6eb89661d6b4`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·requirement·security·sti · exports clearance · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law clearance is a granted threshold — access is permitted only when the holde
 
 ---
 
-<sub>content-uuid `26953e11-117e-8fe9-9b98-473d34d9c0f6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `11ae6049-e10b-80ca-99bb-d6572fbe300c` · `pnpm readme` · `pnpm computed:check`</sub>

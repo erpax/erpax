@@ -23,7 +23,21 @@
 
 - partition `notary` · sub-root `3a4bbcd9-a861-89ce-92e6-209aa4b2cd98`
 - bond degree `6` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `6` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `6a857999-f766-8df6-a725-f4afef0e9bde` · framed by typography partition `notary` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `3be9fb6a-08d9-897f-b945-db09030d9ec1` · framed by typography partition `notary` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>

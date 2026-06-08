@@ -3,8 +3,8 @@
 
 # checking
 
-path `checking` · uuid `db9919cb-d3e5-8609-bc36-fc8de3474420` · diamond `6c81f829-df2b-86fb-b687-25a336a9c7bf`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `checking` · uuid `6cad5a89-da75-85e6-af58-fe9730ae26e5` · diamond `80929c0f-1012-8519-95b7-d983a9fa54f7`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·fact·law·merge·policy·sti·verification · exports checking · escapes —
 links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law checking is one schema.org word, content-addressed; the same word collides e
 
 ---
 
-<sub>content-uuid `6aa4c826-e5a2-8f96-ad39-cf89f32e5873` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1d0335b7-5840-8126-8453-992ab81d22aa` · `pnpm readme` · `pnpm computed:check`</sub>

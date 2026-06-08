@@ -25,7 +25,22 @@
 
 - partition `forge` · sub-root `4e3c0ee8-15f0-8786-bdfb-4d9521ee9e98`
 - bond degree `44` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `every field is read/derived from the live matrix indexes — never hand-asserted` · banner
+- `RFC 9562 §5.8 (uuidv8 content-uuid) + the horo digital-root ring — the forge measures, never mints.` · banner
+
+## analytics
+
+- bond degree `44` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `2`
 
 ## identity
 
@@ -41,4 +56,4 @@
 
 ---
 
-<sub>content-uuid `b2be089a-a094-83e9-8843-d8771bc3f138` · framed by typography partition `forge` bonds `44` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `27b8d73e-e51f-8505-8eea-536533781d64` · framed by typography partition `forge` bonds `44` · `pnpm readme` · `pnpm readme:check`</sub>

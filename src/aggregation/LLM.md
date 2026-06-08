@@ -3,8 +3,8 @@
 
 # aggregation
 
-path `aggregation` · uuid `516e97b1-5150-81a7-833f-85d3bf4d420d` · diamond `3d1d30b0-bed6-8c24-aa32-b98575c9ce6f`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `aggregation` · uuid `2f524358-417b-8d2d-b13d-6139cb8b20a0` · diamond `4b99de90-4839-8c46-80df-494b7495d7bb`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports calculate·dimension·law·outlier·queries · exports aggregation · escapes —
 links `5/5` · folded `1` · bonds in `11` out `11`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law every summarized metric is fully derived from its grouped base rows, so an a
 
 ---
 
-<sub>content-uuid `92007e11-0402-8665-a188-4cfb70d0093c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `94668ee6-90ea-88f7-9a2a-1b49572fb6d1` · `pnpm readme` · `pnpm computed:check`</sub>

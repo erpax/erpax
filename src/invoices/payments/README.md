@@ -2,7 +2,7 @@
 
 # payments
 
-> atom `invoices/payments` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
+> atom `invoices/payments` · horo `1` `base` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -19,13 +19,39 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `2` · [[conservation]] `0` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `invoices` · sub-root `ef180ebe-02df-87e7-bd19-e59ea8c64805`
-- bond degree `50` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- bond degree `0` · analysis neighbors —
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `IFRS IAS-7 statement-of-cash-flows` · banner
+- `ISO-13616-1` · catalogue
+- `ISO-13616-1:2020 iban` · banner
+- `ISO-19011:2018 audit-trail` · banner
+- `ISO-20022 pacs.008 fi-to-fi-customer-credit-transfer` · banner
+- `ISO-20022 pain.001 customer-credit-transfer-initiation` · banner
+- `ISO-20022 pain.008 customer-direct-debit-initiation` · banner
+- `ISO-4217:2015 currency-codes` · banner
+- `ISO-8601-1:2019 date-time payment-date value-date` · banner
+- `ISO-9362` · catalogue
+- `ISO-9362:2022 bic` · banner
+- `SOX §404 internal-controls` · banner
+- `US-GAAP ASC-230 statement-of-cash-flows` · banner
+
+## analytics
+
+- bond degree `0` · sealed `0` · horo `1`
+- variance `2` · balanced `0` · trinity sum `3`
+- bindings `0` · standards `13`
 
 ## identity
 
@@ -37,8 +63,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `b5adf678-556e-8202-a67d-dcaafb67e9ac` · framed by typography partition `invoices` bonds `50` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `926b247b-8884-8e60-8b24-fd07d5af96d2` · framed by typography partition `invoices` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

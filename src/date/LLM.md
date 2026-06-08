@@ -3,8 +3,8 @@
 
 # date
 
-path `date` · uuid `d67bd5bc-daba-845b-a32c-b50bb436bdcc` · diamond `b8ea93c8-4c9b-8d1e-b8f6-e1adfb03e743`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `date` · uuid `90611e12-ec2d-82c8-8e4f-19fc5eaf62a2` · diamond `691a87f4-1f67-81e4-a7e3-9051da278d02`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports fields·identity·law·period·versions · exports date · escapes —
 links `6/6` · folded `1` · bonds in `40` out `40`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law a date is an ISO-8601 datetime pinned at one point in time (UTC timestamp + 
 
 ---
 
-<sub>content-uuid `ab9d844b-43b6-8529-8193-c49b3473a6bd` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9c955417-ce07-8779-91d8-7fbd715033aa` · `pnpm readme` · `pnpm computed:check`</sub>

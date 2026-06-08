@@ -2,9 +2,11 @@
 
 # identifier
 
-> atom `bg/identifier` · horo `4` `weave` · [[balance]] `1` · [[seal]] `0`
+> atom `bg/identifier` · horo `5` `round` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `bg/identifier` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,11 +23,35 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## [[entropy]] — gaps · seals
+
+> account code `bg/identifier` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.5` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `2` eb | Σ seal `11.5` eb |
+
+> net residual `-9.5` eb · seal/gap ratio `5.75` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `bg` · sub-root `e8c8b64e-7061-8f4f-8616-6a17230e37f8`
+- partition `bg` · sub-root `23fe5468-5fd3-8477-b4c4-7bdb43b3476a`
 - bond degree `37` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- graph root `582b8568-4f46-80fc-8473-2ca7bdc1071f`
 
 ## [[cloudflare]] bindings
 
@@ -38,15 +64,53 @@
 - `БУЛСТАТ register law (Закон за регистър БУЛСТАТ) — ЕИК checksum` · banner
 - `ЕГН regulation (Наредба РД-02-20-9/2012 on the population register)` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·5 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `37` · sealed `0` · horo `4`
+- bond degree `37` · sealed `0` · horo `5`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `4`
 
 ## identity
 
-- uuid `e8c8b64e-7061-8f4f-8616-6a17230e37f8`
+- uuid `cfb5fef4-a8fb-89f8-afc5-83558bb09529`
 - bonds in `12` · out `12`
 - trinity form·code·proof `1`·`1`·`1`
 - links `21` / `21`
@@ -58,4 +122,4 @@
 
 ---
 
-<sub>content-uuid `b95d19e8-6e41-8553-8984-59f72f06e797` · framed by typography partition `bg` bonds `37` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `6e175fdd-7584-8b71-89bd-14c554c4421c` · framed by typography partition `bg` bonds `37` · `pnpm readme` · `pnpm readme:check`</sub>

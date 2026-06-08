@@ -3,8 +3,8 @@
 
 # bone
 
-path `bone` · uuid `d3281fe2-5135-86f9-a299-adbba3361968` · diamond `f9a2d266-987e-8736-bac0-478e260a6017`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `bone` · uuid `1359119f-88f4-8505-a56a-daf3a1595a98` · diamond `8a92df65-e73f-8b1f-a3eb-ee4180011e6a`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports bone · escapes —
 links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law bone is one schema.org word, content-addressed; the same word collides every
 
 ---
 
-<sub>content-uuid `d5c9b9ca-2078-8c92-ae0e-66a76d5816a9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `44d989f3-2a21-82ab-81f5-f31dc06d50bd` · `pnpm readme` · `pnpm computed:check`</sub>

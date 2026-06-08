@@ -3,8 +3,8 @@
 
 # cheat
 
-path `cheat` · uuid `d953bfd3-9b23-8751-895a-9a089dcbc278` · diamond `39b069b3-6f65-873e-9991-3f67afbed913`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `cheat` · uuid `e648f078-9231-8217-9c41-09f6c47d0d7d` · diamond `56268b0d-6ddd-8700-aee0-5b3419e56a5f`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports code·collapse·law·merge·sti · exports cheat · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law cheat is one schema.org word, content-addressed; the same word collides ever
 
 ---
 
-<sub>content-uuid `9f11ed67-6752-8549-a0f1-d6843aa8227d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `61841968-e108-8d0b-aade-ac10537a65df` · `pnpm readme` · `pnpm computed:check`</sub>

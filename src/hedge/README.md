@@ -23,7 +23,21 @@
 
 - partition `hedge` · sub-root `cb21fc44-9d39-8c82-8e31-84dd5375a02b`
 - bond degree `30` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `30` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `145ea923-33f6-8142-943c-a1faec95ac52` · framed by typography partition `hedge` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b6b6137a-7527-8dc3-96bb-2f43c0e107c3` · framed by typography partition `hedge` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>

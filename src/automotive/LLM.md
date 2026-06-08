@@ -3,8 +3,8 @@
 
 # automotive
 
-path `automotive` · uuid `ffef17bb-00f1-869f-a259-77a8e37ee264` · diamond `e660c125-72bb-81a0-9282-90591b7162dd`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `automotive` · uuid `428b4cef-c459-8861-94b5-590f641a67ba` · diamond `4f913674-d925-8239-bc81-e64619407909`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports business·collapse·law·merge·sti · exports automotive · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law automotive is one schema.org word, content-addressed; the same word collides
 
 ---
 
-<sub>content-uuid `fc5a3327-bea8-8e3c-8263-665aa114cc30` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8c9265bb-e38f-8a05-bfb5-8167f0d6d133` · `pnpm readme` · `pnpm computed:check`</sub>

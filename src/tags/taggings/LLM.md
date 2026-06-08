@@ -3,15 +3,15 @@
 
 # taggings
 
-path `tags/taggings` · uuid `f779a0b2-9ef8-884b-906d-6458bc61b5b9` · diamond `d3c08a1d-551c-86fc-90ff-4db38895f770`
+path `tags/taggings` · uuid `f779a0b2-9ef8-884b-906d-6458bc61b5b9` · diamond `cc2304f9-b51f-87b8-ada6-830b072262eb`
 horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
-links `3/3` · folded `1` · bonds in `4` out `4`
-faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·representation·separation·sports · ← landmarks·representation·separation·sports
+links `3/3` · folded `1` · bonds in `5` out `5`
+faces worker·plugin·pwa `1·0·0`
+neighbors → identity·standard·tag·tagging·tags · ← identity·standard·tag·tagging·tags
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `14c426f8-1fbd-825b-ae9b-6a8f749bd529` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0e96f4ac-a978-8c32-825b-99e9d41b3591` · `pnpm readme` · `pnpm computed:check`</sub>

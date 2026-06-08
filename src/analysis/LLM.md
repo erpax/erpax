@@ -3,8 +3,8 @@
 
 # analysis
 
-path `analysis` · uuid `bbf7b25d-77c4-88d1-ae64-5a08afe384bb` · diamond `40189a52-ebde-8fa8-b078-0dea2e120851`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `analysis` · uuid `08755c11-124f-840c-8cb9-7d4c5006f66b` · diamond `3e9bbf28-dd64-8e43-a7a8-e7d41c68b956`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports article·collapse·law·merge·news·sti · exports analysis · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law analysis is one schema.org word, content-addressed; the same word collides e
 
 ---
 
-<sub>content-uuid `f04e85ff-5971-8f97-825e-72541f470202` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `35927d14-6cd8-8a67-9742-d2953073451c` · `pnpm readme` · `pnpm computed:check`</sub>

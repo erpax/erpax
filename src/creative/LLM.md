@@ -3,8 +3,8 @@
 
 # creative
 
-path `creative` · uuid `3f9cd0d1-bb8e-86af-8162-c37b2e500ed2` · diamond `53a39d3c-0402-8be0-bd54-a3440710cf48`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `creative` · uuid `c78bd623-a6b2-8cb0-bcc8-2230e5a8b918` · diamond `4620691e-9af5-8134-8044-d3ec2e4d990f`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·encodes·law·merge·season·series·status·sti·work · exports creative · escapes —
 links `9/9` · folded `1` · bonds in `29` out `29`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law creative is one schema.org word, content-addressed; the same word collides e
 
 ---
 
-<sub>content-uuid `ab34fc18-571f-8e74-999f-95b0dd5a50b5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `12f49433-47cb-8467-9181-dff3693ca376` · `pnpm readme` · `pnpm computed:check`</sub>

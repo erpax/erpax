@@ -3,8 +3,8 @@
 
 # materials
 
-path `items/bills/of/materials` · uuid `ebf56f60-61ac-83ff-aeb4-df838a9d8663` · diamond `56dc4dc1-d457-8733-beaf-1765c03e7523`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+path `items/bills/of/materials` · uuid `6a6ebefe-9020-8614-bc7b-61ca3e587ebc` · diamond `3b82799a-aebf-8d63-ae82-164014fc184e`
+horo `1` `base` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law the versioned recipe of components + quantities per finished good, controlle
 
 ---
 
-<sub>content-uuid `e9e1cd42-099b-8071-84fa-a8d6e9062a7c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a46a667c-b9d0-8296-8e47-5d489e2d4c6c` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,8 +3,8 @@
 
 # action
 
-path `action` · uuid `c2e9d738-cada-84a9-981d-b5a14f7656d9` · diamond `18d78bc8-bd8f-853e-9d5b-25be60a8aa17`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `action` · uuid `888a20a5-bbbc-8f75-98ea-7dbbeca70c9a` · diamond `66b0c295-0c94-83a7-9785-17ce6b2f08c0`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports accept·access·achieve·activate·add·agree·allocate·append·apply·arrive·ask·assess·assign·authenticate·authorize·befriend·bookmark·borrow·buy·cancel·check·choose·comment·communicate·confirm·consume·control·cook·create·deactivate·delete·depart·disagree·discover·dislike·donate·law·out·specification·status·type · exports action · escapes —
 links `41/41` · folded `1` · bonds in `123` out `123`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law action is one schema.org word, content-addressed; the same word collides eve
 
 ---
 
-<sub>content-uuid `ea5540b6-04e2-86e0-a01d-ad860bda8ca4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `54e03216-652d-82b5-bcbb-040abb2fa399` · `pnpm readme` · `pnpm computed:check`</sub>

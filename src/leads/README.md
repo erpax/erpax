@@ -25,7 +25,25 @@
 
 - partition `leads` · sub-root `40526f3a-84ce-8c79-8315-8293b3fb83b4`
 - bond degree `34` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `GDPR Art.5 data-minimisation` · banner
+- `GDPR Art.6(1)(f) legitimate-interest (B2B prospecting)` · banner
+- `ISO-19011:2018 audit-trail crm-pipeline` · banner
+- `ISO-3166-1:2020 country-codes` · banner
+- `ISO-8601-1:2019 date-time` · banner
+
+## analytics
+
+- bond degree `34` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `5`
 
 ## identity
 
@@ -41,4 +59,4 @@
 
 ---
 
-<sub>content-uuid `b6cc7cc1-a149-82b9-a427-5cf3a0e7fac5` · framed by typography partition `leads` bonds `34` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `bee6dc10-a308-88af-b362-4cce7d75dcc0` · framed by typography partition `leads` bonds `34` · `pnpm readme` · `pnpm readme:check`</sub>

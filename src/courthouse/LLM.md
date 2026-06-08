@@ -3,8 +3,8 @@
 
 # courthouse
 
-path `courthouse` · uuid `61f27c87-bef7-8628-b651-86b7ce5314a7` · diamond `f2dd7228-44c5-8b4a-8d23-071bacc08453`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `courthouse` · uuid `c183c378-a10e-827b-8ec5-8b2baed310b0` · diamond `c47431f8-fd30-8434-bd79-a159bbf5bd79`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports law·place·thing · exports courthouse · escapes —
 links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law courthouse is one schema.org word, content-addressed; the same word collides
 
 ---
 
-<sub>content-uuid `e81b421e-49fb-8685-87d0-cd8d8d5b4898` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a7b84982-ac79-8a85-b769-21d38016bd56` · `pnpm readme` · `pnpm computed:check`</sub>

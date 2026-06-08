@@ -3,8 +3,8 @@
 
 # child
 
-path `child` · uuid `c0aea1a5-5b1f-8211-b83c-d44fbbc34095` · diamond `77760377-1c79-8687-8865-245d71fd1c82`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `child` · uuid `e1e5434c-29b7-8092-9c88-0a1d58c0e060` · diamond `bbd6aa1b-3fe9-8f38-97b9-102acd36e2ba`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports age·care·collapse·law·max·merge·min·sti·taxon · exports child · escapes —
 links `9/9` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law child is one schema.org word, content-addressed; the same word collides ever
 
 ---
 
-<sub>content-uuid `c59823aa-5069-8cc8-a166-4bc1d46f9669` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `288c029c-ad08-883c-9b64-87fcd213784f` · `pnpm readme` · `pnpm computed:check`</sub>

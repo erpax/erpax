@@ -2,9 +2,11 @@
 
 # signatures
 
-> atom `customers/contracts/contract/signatures` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
+> atom `customers/contracts/contract/signatures` · horo `2` `share` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `customers/contracts/contract/signatures` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,11 +23,58 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+
+### collapse
+
+- `balance:conserved`
+- `law:parties sign in the required sequence and each signature record is immutable, so the contract activates only once it is fully executed.`
+- `seal:unsealed`
+- `trigger:Use when collecting or auditing e-signatures for contract execution — sequenced multi-party approval (legal→customer→company rep), eIDAS-compliant immutable signature records, provider verification URL, and fully-executed trigger for IFRS-15 §10 contract activation. The e-signature audit-trail collection.`
+- `trigger:parties sign in the required sequence and each signature record is immutable, so the contract activates only once it is fully executed.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `64cc33b0-b74e-8a6b-a486-c4981e0e786b` · `a481e36e-f797-82cf-9b29-ac8f64572028`
+- content uuids `1cf432f3-51ae-8d8f-b7ca-1cdb47915aaa` · `ba94ad20-6499-8249-a87b-9fd367a29f7b`
+
+## [[entropy]] — gaps · seals
+
+> account code `customers/contracts/contract/signatures` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.2` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `1` eb | Σ seal `11.2` eb |
+
+> net residual `-10.2` eb · seal/gap ratio `11.2` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `customers` · sub-root `85792e9b-a9f4-8af5-a801-0895f2af65cf`
+- partition `customers` · sub-root `83c78df0-4d66-80df-ab25-5ba350869cf1`
 - bond degree `21` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
 
 ## [[cloudflare]] bindings
 
@@ -43,22 +92,59 @@
 - `IFRS IFRS-15 §10 contract-with-customer` · banner
 - `IFRS IFRS-15 §23 contract-identification` · banner
 - `IFRS-15` · catalogue
-- `ISO-19011:2018 audit-trail e-signature-evidence` · banner
 - `ISO-8601-1:2019 date-time signature-timestamp` · banner
 - `SOX` · catalogue
 - `SOX §302 management-certification audit-trail` · banner
 - `US-GAAP` · catalogue
 - `US-GAAP ASC-606-10-25-1 contract-existence` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·2 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `21` · sealed `1` · horo `4`
+- bond degree `21` · sealed `0` · horo `2`
 - variance `0` · balanced `1` · trinity sum `3`
-- bindings `0` · standards `16`
+- bindings `0` · standards `15`
 
 ## identity
 
-- uuid `121a7f05-72a8-8327-8b79-e08e71620c97`
+- uuid `c370de75-cd3c-82ed-9083-126ea94f20aa`
 - bonds in `7` · out `7`
 - trinity form·code·proof `1`·`1`·`1`
 - links `5` / `5`
@@ -66,8 +152,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `70ca1aec-4e87-8d54-b473-093fb552f47f` · framed by typography partition `customers` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `3ea342ac-5698-85ea-8b26-2cda05428c9f` · framed by typography partition `customers` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>

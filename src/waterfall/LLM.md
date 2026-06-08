@@ -3,15 +3,15 @@
 
 # waterfall
 
-path `waterfall` · uuid `0807eb73-37c9-8665-a40e-7fb24740d359` · diamond `53778ee0-0b75-820b-860e-c3bf8333bec5`
+path `waterfall` · uuid `0807eb73-37c9-8665-a40e-7fb24740d359` · diamond `5c1ac2eb-7d91-8813-a5b2-26cfd2cb1838`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports waterfall · escapes —
-links `2/2` · folded `1` · bonds in `4` out `4`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → law·thing · ← law·thing
 analysis —
 law waterfall is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `c82bce50-daea-8b85-beb8-eacedeb4ac8f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e3420c6d-8355-809d-8fff-e89ca8b57d75` · `pnpm readme` · `pnpm computed:check`</sub>

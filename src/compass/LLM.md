@@ -3,7 +3,7 @@
 
 # compass
 
-path `compass` · uuid `1dd09c48-7c78-800c-afd9-704ee2d2be26` · diamond `cc65f832-14d9-8c67-b538-3bad9507c6ac`
+path `compass` · uuid `fa3df3eb-7be4-8078-91eb-a55b9507df70` · diamond `ea0fb67e-9736-8d59-a9a3-48d00fdcb5b7`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports akashic·dimension·generate·holographic·law·merge·self·sequence·zeropoint · exports compass · escapes —
 links `19/19` · folded `1` · bonds in `13` out `13`
@@ -14,4 +14,4 @@ law navigation is not authored but self-generates from structure (parent · prev
 
 ---
 
-<sub>content-uuid `49e34ec2-c4fc-87e2-ae49-b9e068d84c8a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `dc64cc2e-db0e-8ce3-aed6-c3f4d0fd4985` · `pnpm readme` · `pnpm computed:check`</sub>

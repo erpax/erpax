@@ -3,15 +3,15 @@
 
 # events
 
-path `api/audit/events` · uuid `6197c33f-5deb-8007-bd53-cf9866a7afb3` · diamond `169e6403-7cb1-8478-9e1c-e4a3a7ea1edb`
-horo `8` `crest` · trinity `1·1·1` · sealed `0`
+path `api/audit/events` · uuid `71bda6a3-8347-87c1-a6c8-0015914f3b0f` · diamond `7992c0ee-771b-815f-a932-380178387091`
+horo `7` `descent` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
-links `6/6` · folded `1` · bonds in `23` out `27`
+links `6/6` · folded `1` · bonds in `12` out `12`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·accounting·auditright·auth·carriers·currency·entries·fields·hooks·horo·identity·incident·instances·law·law·law·lineage·materiality·observability·party·periods·proof·proof·shipments·standard·standard·sub · ← access·accounting·auditright·auth·carriers·currency·entries·fields·hooks·horo·identity·incident·instances·law·lineage·materiality·observability·party·periods·proof·shipments·standard·sub
+neighbors → auditright·horo·identity·incident·instances·lineage·materiality·observability·party·proof·standard·sub · ← auditright·horo·identity·incident·instances·lineage·materiality·observability·party·proof·standard·sub
 analysis —
 law every outbound external-API call lands one immutable row — kind-bucketed, country-scoped, source-attributed, result and error captured — so every external system contacted is provable evidence, never an untracked side-channel.
 
 ---
 
-<sub>content-uuid `f4b15f5d-308e-8e92-a65c-2ebd7a3d1303` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `123067fe-3a09-8848-9b45-69772e4024b5` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # staged
 
-path `staged` · uuid `b0693c8d-ef5f-874f-b717-fa93de38398e` · diamond `c274af41-2099-8936-834b-323d23d0e1e0`
+path `staged` · uuid `b0693c8d-ef5f-874f-b717-fa93de38398e` · diamond `5268ae9b-efbe-8995-9c39-a0827075140f`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports staged · escapes —
-links `4/4` · folded `1` · bonds in `2` out `2`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law staged is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `4064e60d-dca5-8f7c-b860-47c77075ee24` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ec19eed1-02fa-838b-a7b9-bc81d1e4580d` · `pnpm readme` · `pnpm computed:check`</sub>

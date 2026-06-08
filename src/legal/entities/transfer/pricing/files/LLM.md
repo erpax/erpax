@@ -3,8 +3,8 @@
 
 # files
 
-path `legal/entities/transfer/pricing/files` · uuid `d2d0ac0f-32e8-8f85-be9b-e4456b2ae600` · diamond `4f5bbea7-5cd0-8491-a751-c227c770b98f`
-horo `1` `base` · trinity `1·1·1` · sealed `1`
+path `legal/entities/transfer/pricing/files` · uuid `3f477147-e711-8574-854b-50f4cf294758` · diamond `e5d5f337-9751-8a3b-8247-64b6d28df87c`
+horo `4` `weave` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/oecd/tpg·@/standard/collection/hook · exports default · escapes —
 links `5/5` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `f308dfe3-386f-85c3-97ce-1274338bbade` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d6b644ee-b5b4-8b90-93ce-5936a4a71349` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -2,9 +2,11 @@
 
 # samples
 
-> atom `internal/controls/control/tests/audit/samples` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
+> atom `internal/controls/control/tests/audit/samples` · horo `2` `share` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `internal/controls/control/tests/audit/samples` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,15 +23,116 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `law:an audit sample is one item drawn for a control test, carrying its pass/fail result, exception category, tester and amount — the ISA-530 per-item evidence that rolls up into the test's deviation rate.`
+- `seal:unsealed`
+- `trigger:Use when recording or reviewing individual sample items drawn for a control test — pass/fail results, exception categories, tested-by, amount; ISA-530 statistical-sampling evidence per control test execution. The audit-samples collection.`
+- `trigger:an audit sample is one item drawn for a control test, carrying its pass/fail result, exception category, tester and amount — the ISA-530 per-item evidence that rolls up into the test's deviation rate.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `198e4957-f669-83cf-bd01-aa3b50753d3f` · `56aa4d31-df0b-8a2f-8474-650e7f923708` · `fbe54e0f-9e58-8e3f-a152-27c6559af7a3`
+- content uuids `3830583c-35b3-8c41-9164-93be44c2cdc5` · `b64eb15b-bd64-89dd-857d-c8c8227ee5d1` · `f8d58a1b-e078-8078-b4a1-f7ccb123ec50`
+
+## [[entropy]] — gaps · seals
+
+> account code `internal/controls/control/tests/audit/samples` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.2` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `2` eb | Σ seal `11.2` eb |
+
+> net residual `-9.2` eb · seal/gap ratio `5.6` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `internal` · sub-root `a3719802-d526-8179-9ae4-637b20c53cac`
+- partition `internal` · sub-root `420a9910-05e6-86dd-9eed-ecde159d99e3`
 - bond degree `6` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `9c2fb72d-3e2b-8cb0-8bca-0ef7345627af`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ISA-530` · catalogue
+- `ISA-530 audit-sampling` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·2 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `6` · sealed `0` · horo `2`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `2`
 
 ## identity
 
-- uuid `1ce8eb8a-48fd-8338-bfec-d5019f59b86d`
+- uuid `42bc5864-9226-80d4-9867-39237f354175`
 - bonds in `2` · out `2`
 - trinity form·code·proof `1`·`1`·`1`
 - links `1` / `1`
@@ -37,8 +140,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `d8b8d01a-eaaf-88af-924a-44ad8927d16f` · framed by typography partition `internal` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `18ce3205-c063-8b64-a86a-61dcce4befea` · framed by typography partition `internal` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>

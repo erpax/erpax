@@ -3,15 +3,15 @@
 
 # stage
 
-path `stage` · uuid `1aa66d7b-d2d0-88eb-b16f-4b17aef20d2a` · diamond `3aa833fd-dbbf-8327-806d-0a0c75a3329d`
+path `stage` · uuid `1aa66d7b-d2d0-88eb-b16f-4b17aef20d2a` · diamond `da1eb623-fe2e-8b76-b066-e22161b83de4`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports condition·law·medical·number·sub·suffix · exports stage · escapes —
-links `6/6` · folded `1` · bonds in `2` out `2`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → condition·law·medical·number·sub·suffix · ← condition·law·medical·number·sub·suffix
 analysis —
 law stage is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `ba7c4fe3-edfd-823d-9be4-9faa9d4eca23` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7c06d477-9b1a-8d86-9434-8394acb99da5` · `pnpm readme` · `pnpm computed:check`</sub>

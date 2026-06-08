@@ -2,41 +2,141 @@
 
 # standard
 
-> atom `standard` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
+> atom `standard` · horo `7` `descent` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `standard` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
+| [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
 | [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
 | [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
 | [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
 | [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
-| Σ `7` | Σ `7` |
+| Σ `9` | Σ `9` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
+
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+- `gap:stray:[[gap]]/[[diamond]]/stray/collection/`
+
+### collapse
+
+- `balance:variance=1`
+- `seal:unsealed`
+- `trigger:Use when implementing or auditing a compliance standard in erpax — IFRS/US-GAAP/SAF-T/ISO/SOX/EN-16931/NIST. Standards are implemented via the skills (each skill is the answer-path holding a standard's form); @standard banners must be true, not decoration.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `7c712826-cb3b-8383-9bc0-d386600b74bf` · `84e02e3c-a34b-8496-a0e9-cddb0a8b7b8f` · `a0b81489-17a8-8aeb-802b-4388d418427d` · `d34d5787-70df-8839-891b-41f1fec6a2f2`
+- content uuids `3c9176bf-a36b-8c58-b171-32d1fb48e9ec` · `6f7ab41c-2ff0-826e-8e1a-e3d0c1ecdbed` · `7e13d1d3-7c80-8c36-ad85-cb416ecf53d0` · `fd7cbf88-6449-8158-ac63-4174da7126f9`
+
+## [[entropy]] — gaps · seals
+
+> account code `standard` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[diamond]]/stray/collection/ `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.7` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+| Σ gap `3` eb | Σ seal `8.7` eb |
+
+> net residual `-5.7` eb · seal/gap ratio `2.9` · [[entropy]] · [[seal]]
 
 ## typography graph
 
-- partition `standard` · sub-root `cb501f25-39a7-883a-8e59-c63a4743ca2a`
-- bond degree `207` · analysis neighbors `aura`
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- partition `standard` · sub-root `f910ce31-612d-873b-bf95-d7659c207cd6`
+- bond degree `0` · analysis neighbors —
+- graph root `8ae3c782-7e14-8d31-8757-b5f5002ee21d`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `banners must be true, not decoration."` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unbalanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| not-held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·7 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `0` · sealed `0` · horo `7`
+- variance `1` · balanced `0` · trinity sum `3`
+- bindings `0` · standards `1`
 
 ## identity
 
-- uuid `fdc09867-104a-8f6a-a56f-be1a97cbafee`
-- bonds in `6` · out `6`
-- trinity form·code·proof `1`·`0`·`0`
+- uuid `9a72be84-1f69-8eb2-823b-b222cf71438a`
+- bonds in `184` · out `184`
+- trinity form·code·proof `1`·`1`·`1`
 - links `16` / `16`
 - folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `be3238d7-2f0e-8914-a081-f22efdce1770` · framed by typography partition `standard` bonds `207` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `3e74f87f-59c1-889c-be40-8501c639c9e0` · framed by typography partition `standard` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

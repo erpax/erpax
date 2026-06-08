@@ -2,7 +2,7 @@
 
 # pages
 
-> atom `pages` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
+> atom `pages` · horo `2` `share` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -19,13 +19,36 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `2` · [[conservation]] `0` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `pages` · sub-root `efaf9fa1-250a-8c7b-b175-554924a386b0`
-- bond degree `18` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- bond degree `0` · analysis neighbors —
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `3986 uri slug-to-url` · banner
+- `BCP-47 language-tag i18n-routing` · banner
+- `ECMA-402` · catalogue
+- `ECMA-402 internationalization-api` · banner
+- `ILO-C111` · catalogue
+- `NIST-INCITS-359-2012` · catalogue
+- `schema.org WebPage` · banner
+- `UBL-2.1` · catalogue
+- `W3C HTML5 Living Standard` · banner
+- `WCAG-2.1 level-AA accessibility` · banner
+
+## analytics
+
+- bond degree `0` · sealed `0` · horo `2`
+- variance `2` · balanced `0` · trinity sum `3`
+- bindings `0` · standards `10`
 
 ## identity
 
@@ -37,8 +60,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `dda01b3c-fa7b-853c-9d76-8eb32d9e362f` · framed by typography partition `pages` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b9294929-21d4-813d-aa7a-f2a8356ed7c5` · framed by typography partition `pages` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

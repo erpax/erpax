@@ -2,41 +2,142 @@
 
 # identity
 
-> atom `identity` · horo `9` `unity` · [[balance]] `1` · [[seal]] `1`
+> atom `identity` · horo `9` `unity` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `identity` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
+| [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
 | [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
 | [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
 | [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
 | [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
-| Σ `7` | Σ `7` |
+| Σ `9` | Σ `9` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
+
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+- `gap:stray:[[gap]]/[[diamond]]/stray/element/`
+
+### collapse
+
+- `balance:variance=1`
+- `seal:unsealed`
+- `trigger:Use when working with erpax object identity or content-addressed UUIDs — computing a content-uuid (sha→uuidv8, RFC 9562 §5.8), the self-describing structured uuidv8 (slot + capability flags), categorical identity elements (currency/locale/country blanks), uuid-based RBAC sharing, deduplicated (\\\`
+- `trigger:Use when working with erpax object identity or content-addressed UUIDs — computing a content-uuid (sha→uuidv8, RFC 9562 §5.8), the self-describing structured uuidv8 (slot + capability flags), categorical identity elements (currency/locale/country blanks), uuid-based RBAC sharing, deduplicated (\\\"dry\\\") file storage, or cross-instance merge/federation. The map to erpax's content-uuid framework; which version per case is [[uuid]].`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `0e221301-e43d-8d87-a0a4-c4b6fc53390f` · `267f134a-96c0-8cc9-a4ab-d1b48521faf8` · `3a64808b-74e8-8f55-bc37-2f46028a6fa5` · `b7e0aaf4-c2f0-8af5-87af-56499ebbee52`
+- content uuids `4962510a-1c65-8ef8-955a-db1cb876b88c` · `6ca40288-b747-88a2-88cb-e8329e722cc9` · `c6a34cf4-87a1-830b-895c-b09dd064cf2f` · `cf422950-7f98-8879-8e85-82c4116d9842`
+
+## [[entropy]] — gaps · seals
+
+> account code `identity` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[diamond]]/stray/element/ `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.9` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+| Σ gap `3` eb | Σ seal `8.9` eb |
+
+> net residual `-5.9` eb · seal/gap ratio `2.967` · [[entropy]] · [[seal]]
 
 ## typography graph
 
-- partition `identity` · sub-root `b7e2b408-e05c-80ec-894d-7da74fa699c1`
-- bond degree `882` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- partition `identity` · sub-root `f1def6a9-e347-81b1-871c-b9f76f73a54e`
+- bond degree `0` · analysis neighbors —
+- graph root `0f16f22c-f5e7-8383-a22e-f3df1a3e38c5`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `NIST-FIPS-180-4` · catalogue
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unbalanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| not-held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·9 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `0` · sealed `0` · horo `9`
+- variance `1` · balanced `0` · trinity sum `3`
+- bindings `0` · standards `1`
 
 ## identity
 
-- uuid `ba77be71-cffe-854f-9400-e563f7627c3b`
-- bonds in `293` · out `279`
-- trinity form·code·proof `1`·`0`·`0`
+- uuid `35ab7464-6f2c-83fb-860b-7c805dfd22d2`
+- bonds in `298` · out `298`
+- trinity form·code·proof `1`·`1`·`1`
 - links `30` / `30`
 - folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `8234181a-f254-88a2-a06b-fdd50be8e823` · framed by typography partition `identity` bonds `882` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `87e07d9d-65c2-8d5a-9d5c-369b9b69fbd8` · framed by typography partition `identity` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -6,6 +6,8 @@
 
 ## [[debit]] · [[credit]]
 
+> account code `bank/accounts/payment/runs` · currency `eb` (entropy-bit)
+
 | [[debit]] | [[credit]] |
 | -------- | --------- |
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
@@ -21,11 +23,57 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `seal:unsealed`
+- `trigger:Use when assembling, authorising, exporting, or reconciling an ISO 20022 batch payment — pain.001 AP credit-transfer or pain.008 AR direct-debit; draft → pending-review → approved → exported → submitted → settled lifecycle; SOX §404 preparer-authoriser segregation of duties. The treasury batch-payment initiation collection.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `5301b735-fb57-8589-8d53-bd7902fa418f` · `61ea2a81-d630-89b2-84b3-c2c5dd8cb9f7` · `bed9e7a6-31d4-8149-87ec-a4ea49e30116`
+- content uuids `5e1466e8-bc85-8917-94d1-df9efc1aab5f` · `d7c0cf42-8d52-8dbe-b49c-0933fa637323` · `f03d5d92-48ab-8a14-8909-3893df5eb455`
+
+## [[entropy]] — gaps · seals
+
+> account code `bank/accounts/payment/runs` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.7` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `2` eb | Σ seal `11.7` eb |
+
+> net residual `-9.7` eb · seal/gap ratio `5.85` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `bank` · sub-root `87606df1-5071-8b98-ac3b-0b1f53544470`
-- bond degree `74` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- partition `bank` · sub-root `04fbb928-276c-8212-a5e8-bb8be5c2fc18`
+- bond degree `41` · analysis neighbors —
+- graph root `86252db0-c776-84eb-b8e4-c884dca3a3ba`
 
 ## [[cloudflare]] bindings
 
@@ -53,7 +101,6 @@
 - `ILO-C001` · catalogue
 - `ISO-13616-1` · catalogue
 - `ISO-13616-1:2020 iban` · banner
-- `ISO-19011:2018 audit-trail` · banner
 - `ISO-20022` · catalogue
 - `ISO-20022 pain.001 customer-credit-transfer-initiation` · banner
 - `ISO-20022 pain.008 customer-direct-debit-initiation` · banner
@@ -67,16 +114,54 @@
 - `SOX §404 internal-controls preparer-authoriser-segregation` · banner
 - `US-GAAP ASC-230 statement-of-cash-flows` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·7 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `74` · sealed `0` · horo `7`
+- bond degree `41` · sealed `0` · horo `7`
 - variance `0` · balanced `1` · trinity sum `3`
-- bindings `0` · standards `33`
+- bindings `0` · standards `32`
 
 ## identity
 
-- uuid `580005e3-30f4-86a6-8087-68d1126e7f6d`
-- bonds in `22` · out `25`
+- uuid `df12e7ba-16e3-8b64-8f7a-36a29ff64ec0`
+- bonds in `7` · out `7`
 - trinity form·code·proof `1`·`1`·`1`
 - links `5` / `5`
 - folded `1` · escapes `0`
@@ -87,4 +172,4 @@
 
 ---
 
-<sub>content-uuid `7154691d-2793-8d9d-b1a4-287c5cef562a` · framed by typography partition `bank` bonds `74` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `022e0bc0-2002-8057-b33f-9465408ee4e4` · framed by typography partition `bank` bonds `41` · `pnpm readme` · `pnpm readme:check`</sub>

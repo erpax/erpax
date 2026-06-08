@@ -8,10 +8,10 @@ horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports torque · escapes —
 links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·warning · ← landmarks·warning
+neighbors → law·thing · ← law·thing
 analysis —
 law torque is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `ddf743b9-b6db-8b27-a6be-879eeb7ed895` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `22c76a41-8ae8-8b50-974e-cc4e22906ace` · `pnpm readme` · `pnpm computed:check`</sub>

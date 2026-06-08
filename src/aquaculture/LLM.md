@@ -3,8 +3,8 @@
 
 # aquaculture
 
-path `aquaculture` · uuid `8cd5f771-0517-87a8-bfa5-08f9243fb1f2` · diamond `c83bfc9d-69b7-880b-a8cb-7bffdbbe83d9`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `aquaculture` · uuid `bf9371cc-47a7-8e02-825e-e1733bc2c9f5` · diamond `366143f3-2997-8a02-a27b-3a5019e304d7`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports agriculture·biological·biomass·capacity·certification·conversion·harvest·items·law·lineage·livestock·maturity·mortality·postharvest·rate·salinity·taxonomy·yield · exports aquaculture · escapes —
 links `39/39` · folded `1` · bonds in `19` out `19`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law aquaculture farms aquatic organisms under managed conditions as IAS-41 [[bio
 
 ---
 
-<sub>content-uuid `c18e7cba-312f-8947-88e3-f0b79a51f734` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ac20e3b7-c61f-8e6c-bad8-3bfd4c390186` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # upvote
 
-path `upvote` · uuid `42a5d7d9-7e5a-8297-a44a-04c846f4659f` · diamond `85cb36bf-5180-8f76-b613-07d67a4408f3`
+path `upvote` · uuid `42a5d7d9-7e5a-8297-a44a-04c846f4659f` · diamond `ceaa01c6-0ce6-8133-952b-e7e35a590fe2`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·count·law·merge·sti · exports upvote · escapes —
-links `5/5` · folded `1` · bonds in `3` out `3`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals·upsell · ← landmarks·terminals·upsell
+neighbors → collapse·count·law·merge·sti · ← collapse·count·law·merge·sti
 analysis —
 law upvote is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `c140f23f-c6ac-8a39-abf0-b50bb698e752` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9923488a-b801-8fb2-91f3-edf3c0cacd1d` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # teaches
 
-path `teaches` · uuid `c412cfba-5b71-8d47-9c6f-c6a85b96bbcd` · diamond `bc20a83c-621b-8b88-a813-b8be700884be`
+path `teaches` · uuid `c412cfba-5b71-8d47-9c6f-c6a85b96bbcd` · diamond `97977186-a460-85c3-a506-183bb16c4f85`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports teaches · escapes —
-links `2/2` · folded `1` · bonds in `5` out `5`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·completed·landmarks·memories·stat · ← cohort·completed·landmarks·memories·stat
+neighbors → law·thing · ← law·thing
 analysis —
 law teaches is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `3d70b2eb-ab6d-89c3-82b8-a593e7c895cc` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e16fe517-f156-8569-816b-50bcabdbb639` · `pnpm readme` · `pnpm computed:check`</sub>

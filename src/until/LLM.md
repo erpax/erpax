@@ -3,15 +3,15 @@
 
 # until
 
-path `until` · uuid `93348bf5-e678-8fc7-84ac-23e1a577d44a` · diamond `3fdc580a-0e77-82e9-9e83-3b3c0a52538d`
+path `until` · uuid `93348bf5-e678-8fc7-84ac-23e1a577d44a` · diamond `3a151001-ab35-81f5-9722-725f9aa65e0f`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports arrival·collapse·expected·law·merge·price·sti·valid · exports until · escapes —
-links `8/8` · folded `1` · bonds in `18` out `18`
+links `8/8` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → blockchain·checkin·cohort·commences·double·integer·landmarks·library·memories·official·owned·pipelines·plasma·player·retail·stat·tributary·vendor · ← blockchain·checkin·cohort·commences·double·integer·landmarks·library·memories·official·owned·pipelines·plasma·player·retail·stat·tributary·vendor
+neighbors → arrival·collapse·expected·law·merge·price·sti·valid · ← arrival·collapse·expected·law·merge·price·sti·valid
 analysis —
 law until is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `a9c41fee-478e-8d46-936d-a01e33688e12` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3d9d7a3e-a3b9-8ea7-8303-5c02f3921e9a` · `pnpm readme` · `pnpm computed:check`</sub>

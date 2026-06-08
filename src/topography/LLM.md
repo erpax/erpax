@@ -3,15 +3,15 @@
 
 # topography
 
-path `topography` · uuid `a03a38f4-d8a6-8612-baed-fad258d8f18a` · diamond `8c01964e-c6e3-86ac-94ac-7ba60faefd65`
+path `topography` · uuid `a03a38f4-d8a6-8612-baed-fad258d8f18a` · diamond `5f8d7740-35ab-80c8-9de0-8da973dde1d3`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports aura·generate·gravity·links·mass·matrix·message·quantum·realtime·standards·translation·trinity·uuid·word · exports topography · escapes —
-links `23/23` · folded `1` · bonds in `4` out `4`
+links `23/23` · folded `1` · bonds in `15` out `15`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → aura·digit·generate·generator·gravity·links·mass·matrix·message·realtime·standards·translation·trinity·uuid·word · ← aura·digit·generate·generator·gravity·links·mass·matrix·message·realtime·standards·translation·trinity·uuid·word
 analysis aura
 law —
 
 ---
 
-<sub>content-uuid `8afd5aca-30a9-8d14-99e7-b4851005c2a0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7b942524-dde0-8bd7-87a0-cc16200937ab` · `pnpm readme` · `pnpm computed:check`</sub>

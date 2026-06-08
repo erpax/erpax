@@ -1,10 +1,246 @@
 ---
 name: commerce
-description: Use when designing or porting the erpax commerce/trade domain to Payload — parties under many roles (seller/buyer/agent/supplier/consignee/carrier), the cart→quote→order→invoice→note document chain, payments/allocations/refunds, subscriptions & metered usage, inventory/stock movement, packing & shipment, dunning/credit terms. The transactional-flow `@erpax/commerce` twin (sequence 4·8).
-sessions:
-  - 776a49cb-8dfb-45ab-88ff-956e3b613adf
+description: "Use when designing or porting the erpax commerce/trade domain to Payload — parties under many roles (seller/buyer/agent/supplier/consignee/carrier), the cart→quote→order→invoice→note document chain, payments/allocations/refunds, subscriptions & metered usage, inventory/stock movement, packing & shipment, dunning/credit terms. The transactional-flow `@erpax/commerce` twin (sequence 4·8)."
+atomPath: commerce
+coordinate: commerce · 5/round · 1b8ad812
+contentUuid: "29a7ae90-c364-5cc6-a556-676fbc7f1237"
+diamondUuid: "543ddec0-1f0b-8483-ace2-7f6f1ea61d23"
+uuid: "1b8ad812-51af-8771-880d-6dfc1e21d0f1"
+horo: 5
+bonds:
+  in:
+    - accounting
+    - agriculture
+    - amount
+    - api
+    - atom
+    - choice
+    - collapse
+    - crop
+    - currency
+    - domain
+    - dunning
+    - ecommerce
+    - education
+    - endpoints
+    - fields
+    - flow
+    - give
+    - harvest
+    - hooks
+    - identity
+    - law
+    - manufacturing
+    - market
+    - measure
+    - methods
+    - movements
+    - number
+    - party
+    - payment
+    - pickup
+    - plans
+    - plugins
+    - port
+    - postharvest
+    - queries
+    - reconcile
+    - records
+    - resources
+    - sequence
+    - spec
+    - tag
+    - tags
+    - trading
+    - variant
+  out:
+    - accounting
+    - agriculture
+    - amount
+    - api
+    - atom
+    - choice
+    - collapse
+    - crop
+    - currency
+    - domain
+    - dunning
+    - ecommerce
+    - education
+    - endpoints
+    - fields
+    - flow
+    - give
+    - harvest
+    - hooks
+    - identity
+    - law
+    - manufacturing
+    - market
+    - measure
+    - methods
+    - movements
+    - number
+    - party
+    - payment
+    - pickup
+    - plans
+    - plugins
+    - port
+    - postharvest
+    - queries
+    - reconcile
+    - records
+    - resources
+    - sequence
+    - spec
+    - tag
+    - tags
+    - trading
+    - variant
+typography:
+  partition: commerce
+  bondDegree: 138
+  neighbors: []
+standards:
+  - "Cloudflare Workers API (deployments + durable-object namespaces)"
+  - "EU-2024/1183"
+  - "EU-2024/1620"
+  - "EU-2024/1624"
+  - "EU-CSDDD-2024/1760"
+  - "Stripe API v2024-10-28-acacia"
+  - W3C Verifiable Credentials Data Model 2.0 (subscription receipts)
+  - "W3C-VC-2.0"
+bindings: []
+neighbors:
+  wikilink:
+    - accounting
+    - currency
+    - dunning
+    - fields
+    - hooks
+    - identity
+    - law
+    - manufacturing
+    - measure
+    - methods
+    - movements
+    - party
+    - payment
+    - plugins
+    - port
+    - queries
+    - sequence
+    - tags
+  matrix:
+    - accounting
+    - agriculture
+    - amount
+    - api
+    - atom
+    - choice
+    - collapse
+    - crop
+    - currency
+    - domain
+    - dunning
+    - ecommerce
+    - education
+    - endpoints
+    - fields
+    - flow
+    - give
+    - harvest
+    - hooks
+    - identity
+    - law
+    - manufacturing
+    - market
+    - measure
+    - methods
+    - movements
+    - number
+    - party
+    - payment
+    - pickup
+    - plans
+    - plugins
+    - port
+    - postharvest
+    - queries
+    - reconcile
+    - records
+    - resources
+    - sequence
+    - spec
+    - tag
+    - tags
+    - trading
+    - variant
+  backlinks:
+    - accounting
+    - agriculture
+    - amount
+    - api
+    - atom
+    - choice
+    - collapse
+    - crop
+    - currency
+    - domain
+    - dunning
+    - ecommerce
+    - education
+    - endpoints
+    - fields
+    - flow
+    - give
+    - harvest
+    - hooks
+    - identity
+    - law
+    - manufacturing
+    - market
+    - measure
+    - methods
+    - movements
+    - number
+    - party
+    - payment
+    - pickup
+    - plans
+    - plugins
+    - port
+    - postharvest
+    - queries
+    - reconcile
+    - records
+    - resources
+    - sequence
+    - spec
+    - tag
+    - tags
+    - trading
+    - variant
+signatures:
+  computationUuid: "6a0110fe-4b03-855a-9aa2-49a0d9397778"
+  stages:
+    - stage: path
+      stageUuid: "eefc9b09-1e71-8151-a18f-4a4dd3a90971"
+    - stage: trinity
+      stageUuid: "cae28de4-b154-8ba9-ab39-b11fb16d689e"
+    - stage: boundary
+      stageUuid: "4e7c555b-76b2-8ae9-8acd-37fe0d6aa7dd"
+    - stage: links
+      stageUuid: "0d7d9807-5562-81e6-bf28-25342dec37a5"
+    - stage: horo
+      stageUuid: "82e85e2f-24fe-840c-8347-9ec73a29539d"
+    - stage: seal
+      stageUuid: "3237e960-7e1b-88d1-9faa-fbfdfeb7c744"
+    - stage: uuid
+      stageUuid: "b0693675-99bb-8348-a300-893e26b18392"
+version: 2
 ---
-
 # commerce — the transactional-flow plugin (one party, infinite roles)
 
 `@erpax/commerce` is sequence **4·8** — the build→bind arc of the material cycle: value moves between **parties** through a **document chain**, then at **8** ([[tags]]) the roles and external multiverses merge into one. Self-sufficient: it references [[accounting]] and any entity **OUT polymorphically** (a doc *is accountable* — it never holds a GL account inward, see [[plugins]]). The 4·8 sibling of [[manufacturing]] (1·2 makes what flows). Built by mapping each Rails **concern** to one reusable field-object ([[fields]],[[hooks]]). Ordered by the [[sequence]].

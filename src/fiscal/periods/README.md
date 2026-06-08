@@ -2,7 +2,7 @@
 
 # periods
 
-> atom `fiscal/periods` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `fiscal/periods` · horo `7` `descent` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -19,13 +19,61 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `6` · [[conservation]] `0` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `fiscal` · sub-root `cf5aa98e-ebac-8e2a-ac4c-50b4ac28b0e6`
-- bond degree `43` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- bond degree `0` · analysis neighbors —
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `eIDAS` · catalogue
+- `eIDAS Regulation 910/2014 qualified-electronic-signature on-amendments` · banner
+- `EU-2011/83` · catalogue
+- `EU-2014/55` · catalogue
+- `EU-2016/679` · catalogue
+- `EU-2018/1673` · catalogue
+- `EU-2018/1725` · catalogue
+- `EU-2018/302` · catalogue
+- `EU-2018/389-SCA-RTS` · catalogue
+- `EU-2018/843` · catalogue
+- `EU-2018/957` · catalogue
+- `EU-537/2014` · catalogue
+- `EU-910/2014` · catalogue
+- `EU-ESRS` · catalogue
+- `EU-VAT-Implementing-Reg-282/2011` · catalogue
+- `GDPR Art 5(1)(f) audit-trail-integrity` · banner
+- `GHG-Protocol` · catalogue
+- `IAS-34` · catalogue
+- `IAS-34:2023 interim-financial-reporting period-structure quarterly-alignment` · banner
+- `IFRS IAS-1 presentation-of-financial-statements` · banner
+- `ISO-14064-1` · catalogue
+- `ISO-19011:2018 audit-trail status-transition` · banner
+- `ISO-4217:2015 currency-code per-fiscal-configuration` · banner
+- `ISO-8601-1:2019 date-time start-date end-date closed-at locked-at reopened-at week-numbering` · banner
+- `NIST-SP-800-63` · catalogue
+- `NIST-SP-800-92` · catalogue
+- `OECD-Transfer-Pricing` · catalogue
+- `SAF-T` · catalogue
+- `SAF-T 3.0.2 regulatory-period-coding audit-file-structure` · banner
+- `SOX` · catalogue
+- `SOX §404 period-close-integrity access-control-evidence` · banner
+- `US-GAAP` · catalogue
+- `US-GAAP ASC-210 balance-sheet` · banner
+- `XBRL` · catalogue
+- `XBRL-GL fiscal-context general-ledger-reporting` · banner
+
+## analytics
+
+- bond degree `0` · sealed `0` · horo `7`
+- variance `6` · balanced `0` · trinity sum `3`
+- bindings `0` · standards `35`
 
 ## identity
 
@@ -37,8 +85,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `5b63661b-7ab7-87f3-860c-6675221bbc1b` · framed by typography partition `fiscal` bonds `43` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f107686d-a3c4-8ad8-9d64-be3c896f3ea8` · framed by typography partition `fiscal` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

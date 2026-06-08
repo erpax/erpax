@@ -2,7 +2,7 @@
 
 # sealed
 
-> atom `convention/sealed` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
+> atom `convention/sealed` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -23,9 +23,9 @@
 
 ## typography graph
 
-- partition `convention` · sub-root `38cd2282-f75a-84ce-b2c7-ff7cff0bfb4c`
+- partition `convention` · sub-root `a93daa45-addb-8b21-89cd-ab385bae0306`
 - bond degree `19` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -36,15 +36,53 @@
 - `catches + leaks scanned live from src; coverage = (catches − leaks)/catches, never assumed` · banner
 - `error propagation over swallow/default · no defined fallback · zero-entropy (no hidden state)` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·8 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `19` · sealed `1` · horo `5`
+- bond degree `19` · sealed `1` · horo `8`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `2`
 
 ## identity
 
-- uuid `d8c8eebf-7446-8f32-8373-ac2be46f8994`
+- uuid `f7bf6b1c-96d2-8a76-81d7-d43c93ee4590`
 - bonds in `6` · out `6`
 - trinity form·code·proof `1`·`1`·`1`
 - links `7` / `7`
@@ -56,4 +94,4 @@
 
 ---
 
-<sub>content-uuid `a858ba87-f609-81ad-9da0-cfb9ae595c10` · framed by typography partition `convention` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f2d1a876-13fb-83c9-a769-65f5527c35a8` · framed by typography partition `convention` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { PRINCIPLES, principle, coherentProse } from '@/writing'
+import { PRINCIPLES, principle, coherentProse, computedWritingForPath } from '@/writing'
 
 describe('writing — the craft of connected thoughts', () => {
   it('the principles are coherence moves (thesis..revision), each named with a move', () => {
@@ -15,5 +15,11 @@ describe('writing — the craft of connected thoughts', () => {
   it('coherent prose ⇔ no orphan sentence (the same test as the corpus)', () => {
     expect(coherentProse(0)).toBe(true)
     expect(coherentProse(3)).toBe(false)
+  })
+
+  it('computedWritingForPath is exported from the matter twin', () => {
+    const w = computedWritingForPath('writing')
+    expect(w.atomPath).toBe('writing')
+    expect(w.score).toBeGreaterThan(0)
   })
 })

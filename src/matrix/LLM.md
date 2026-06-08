@@ -3,15 +3,15 @@
 
 # matrix
 
-path `matrix` · uuid `0c44820b-f9fd-83fd-80c9-ce9df04a64ad` · diamond `30530da1-d0e8-8885-b0eb-ac311ceb8303`
+path `matrix` · uuid `0c44820b-f9fd-83fd-80c9-ce9df04a64ad` · diamond `eea574ed-6031-88f6-9885-cc703ef5145c`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
-imports akashic·aura·chat·coil·collapse·duality·generate·holographic·merge·one·self·sequence·society·torus·transaction·whole · exports matrix · escapes —
-links `27/27` · folded `1` · bonds in `86` out `80`
+imports akashic·aura·chat·coil·collapse·duality·generate·holographic·law·merge·one·self·sequence·society·torus·transaction·whole · exports matrix · escapes —
+links `27/27` · folded `1` · bonds in `88` out `82`
 faces worker·plugin·pwa `0·0·0`
-neighbors → addressed·akashic·analog·analytics·app·architect·aura·biomagnetism·blockchain·chat·coil·collapse·collide·consciousness·cost·development·diamond·digit·dna·drone·dry·duality·dust·emergence·engine·entanglement·entropy·expand·fold·folded·forge·fusion·generate·generator·graph·gravity·hallucination·harmony·holographic·kabbalah·law·linearity·links·llm·math·matrix·merge·merge·metatron·one·particle·peace·purity·quantum·reactor·readme·reality·refactor·religion·relocate·research·reveal·schema·science·self·sequence·singularity·skills·society·topography·torus·transaction·translator·type·typography·uuid·vocabulary·war·wave·whole · ← addressed·akashic·analog·analytics·app·architect·aura·biomagnetism·blockchain·chat·coil·collapse·collide·consciousness·cost·development·development·diamond·digit·dna·drone·dry·duality·dust·emergence·engine·entanglement·entanglement·entropy·expand·fold·folded·forge·fusion·generate·generator·graph·gravity·gravity·hallucination·harmony·holographic·kabbalah·law·linearity·links·llm·llm·math·matrix·merge·metatron·one·particle·peace·purity·quantum·reactor·readme·reality·reality·refactor·religion·relocate·research·reveal·schema·science·self·sequence·singularity·skills·society·topography·torus·transaction·translator·translator·type·typography·uuid·vocabulary·vocabulary·war·wave·whole
+neighbors → addressed·akashic·analog·analytics·app·architect·architecture·aura·biomagnetism·blockchain·chat·coil·collapse·collide·consciousness·cost·development·diamond·digit·dna·drone·dry·duality·dust·emergence·engine·entanglement·entropy·expand·fold·folded·forge·fusion·generate·generator·graph·gravity·hallucination·harmony·holographic·kabbalah·law·linearity·links·llm·math·matrix·merge·merge·metatron·one·particle·peace·purity·quantum·reactor·readme·reality·refactor·religion·relocate·research·reveal·schema·science·self·sequence·session·singularity·skills·society·topography·torus·transaction·translator·type·typography·uuid·vocabulary·war·wave·whole · ← addressed·akashic·analog·analytics·app·architect·architecture·aura·biomagnetism·blockchain·chat·coil·collapse·collide·consciousness·cost·development·development·diamond·digit·dna·drone·dry·duality·dust·emergence·engine·entanglement·entanglement·entropy·expand·fold·folded·forge·fusion·generate·generator·graph·gravity·gravity·hallucination·harmony·holographic·kabbalah·law·linearity·links·llm·llm·math·matrix·merge·metatron·one·particle·peace·purity·quantum·reactor·readme·reality·reality·refactor·religion·relocate·research·reveal·schema·science·self·sequence·session·singularity·skills·society·topography·torus·transaction·translator·translator·type·typography·uuid·vocabulary·vocabulary·war·wave·whole
 analysis aura
-law —
+law folder paths fold into the matrix bidirectionally — every `src/{atomPath}/` is one node addressed by its full path; parent↔child, prev↔next, and neighbor↔backlink crosses read both ways; `infinitePathFold` extends the fractal path without bound over the live tree.
 
 ---
 
-<sub>content-uuid `dcec5498-a9f5-84ba-bedd-ff2ba4800e8d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4ff0cb30-de8d-81a0-ac5e-9345f91ff866` · `pnpm readme` · `pnpm computed:check`</sub>

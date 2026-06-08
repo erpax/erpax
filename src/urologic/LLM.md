@@ -3,15 +3,15 @@
 
 # urologic
 
-path `urologic` · uuid `c513e81d-ffef-8e75-a823-c28c29b4a3f0` · diamond `8449cf28-3424-8c5c-8d91-81a4f11fecdd`
+path `urologic` · uuid `c513e81d-ffef-8e75-a823-c28c29b4a3f0` · diamond `3f782ff3-5da1-8eb1-a6d2-35a8f39a79d8`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports urologic · escapes —
-links `4/4` · folded `1` · bonds in `36` out `36`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → added·brewery·cache·confidentiality·cup·decooperative·doors·draw·enrollment·fertility·files·fractal·inactive·landmarks·learning·lei·material·max·midpoint·opinion·patent·pronoun·purpose·qa·quote·radiation·radius·recycling·replacer·spa·star·start·steering·stock·tenant·watch · ← added·brewery·cache·confidentiality·cup·decooperative·doors·draw·enrollment·fertility·files·fractal·inactive·landmarks·learning·lei·material·max·midpoint·opinion·patent·pronoun·purpose·qa·quote·radiation·radius·recycling·replacer·spa·star·start·steering·stock·tenant·watch
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law urologic is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `6cf2d483-12f2-8ba6-bc66-0b80d0da15c9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4409fecc-fb30-83e2-9113-62b42f81bbc4` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -2,9 +2,11 @@
 
 # checklists
 
-> atom `legal/entities/disclosure/checklists` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `legal/entities/disclosure/checklists` · horo `1` `base` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `legal/entities/disclosure/checklists` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,15 +23,114 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `seal:unsealed`
+- `trigger:Use when preparing or auditing financial-statement disclosure completeness — IFRS/SEC/compliance-framework checklist items, applicability assessment, evidence attachment, and preparer/reviewer sign-off per IFRS IAS-1 / SEC Regulation S-K / ISO-19011. The disclosure-checklist sign-off collection.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `4c79789e-2c03-82ec-9e15-cf484a1791c1` · `58a99ac4-5fa2-85d4-afe2-5deb7c9bf738` · `ca94746c-b1ad-8c33-b30e-464d664a68b6`
+- content uuids `04bd008b-321a-885d-b190-c3875e460820` · `9d9f54ed-beca-8457-b037-6767b19857f4` · `ac1b5364-e224-8fbd-a31e-b28457abf3c4`
+
+## [[entropy]] — gaps · seals
+
+> account code `legal/entities/disclosure/checklists` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.1` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `2` eb | Σ seal `11.1` eb |
+
+> net residual `-9.1` eb · seal/gap ratio `5.55` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `legal` · sub-root `1fd2f1ff-ccee-87e0-8d80-12345443fed8`
+- partition `legal` · sub-root `e259934b-eccd-8e89-bfbe-04889c9debb1`
 - bond degree `18` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `IFRS IAS-1 disclosure-requirements` · banner
+- `SEC Regulation S-K disclosure` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·1 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `18` · sealed `0` · horo `1`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `2`
 
 ## identity
 
-- uuid `cf262122-d6b9-8e13-9156-f279dbd6cda2`
+- uuid `7d011570-851e-8f0f-b4d3-176eddd9b979`
 - bonds in `6` · out `6`
 - trinity form·code·proof `1`·`1`·`1`
 - links `0` / `0`
@@ -37,8 +138,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `a28631a2-7b15-8320-b4dd-1c5853510d53` · framed by typography partition `legal` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a89802a1-7e56-8e17-a361-79f5e1c83cd6` · framed by typography partition `legal` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>

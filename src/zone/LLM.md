@@ -3,15 +3,15 @@
 
 # zone
 
-path `zone` · uuid `29ad1dc5-1d60-8a5f-9a2a-365aeb804c7e` · diamond `f37e62f0-d877-8433-8278-c8e494f5adf5`
+path `zone` · uuid `29ad1dc5-1d60-8a5f-9a2a-365aeb804c7e` · diamond `dae761f4-cd69-854a-aba8-3cc4d52dbff6`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports zone · escapes —
-links `4/4` · folded `1` · bonds in `0` out `0`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law zone is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `094d8ec6-fbaf-8b27-bafd-c1349bec9c0b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ddde6def-8585-8455-ab4e-77a8f6a59f88` · `pnpm readme` · `pnpm computed:check`</sub>

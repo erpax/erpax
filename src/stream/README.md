@@ -2,7 +2,7 @@
 
 # stream
 
-> atom `stream` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
+> atom `stream` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -24,13 +24,13 @@
 ## typography graph
 
 - partition `stream` · sub-root `4b9aa452-a0c4-8f4a-ab76-747933032515`
-- bond degree `42` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `88` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
-- uuid `c83c3129-9323-8101-bdc0-f694664cf690`
-- bonds in `6` · out `6`
+- uuid `4b9aa452-a0c4-8f4a-ab76-747933032515`
+- bonds in `29` · out `29`
 - trinity form·code·proof `1`·`1`·`1`
 - links `33` / `33`
 - folded `1` · escapes `0`
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `7166ca6b-e11d-8ada-916f-4b8c284daece` · framed by typography partition `stream` bonds `42` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `3fc347b1-6a88-8f7d-9443-43ab2fe9eaac` · framed by typography partition `stream` bonds `88` · `pnpm readme` · `pnpm readme:check`</sub>

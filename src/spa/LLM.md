@@ -3,15 +3,15 @@
 
 # spa
 
-path `spa` · uuid `d2498baf-1b4f-8faa-af6d-efcd539a67eb` · diamond `0e58546d-a288-8b81-bc05-996037c4d4b7`
+path `spa` · uuid `d2498baf-1b4f-8faa-af6d-efcd539a67eb` · diamond `733dee2d-8653-85a5-a8c6-e047f795c1c3`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·day·law·merge·sti · exports spa · escapes —
-links `5/5` · folded `1` · bonds in `38` out `38`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·action·attestations·brewery·chapter·coach·cohort·composition·corrects·dataset·deleted·employees·fdacategory·federation·fractal·has·hosp·landmarks·lnid·memories·modification·oncologic·patient·physiological·pool·prerequisites·pronoun·quota·quote·remediation·scorecard·services·siblings·some·source·stat·uk·urologic · ← access·action·attestations·brewery·chapter·coach·cohort·composition·corrects·dataset·deleted·employees·fdacategory·federation·fractal·has·hosp·landmarks·lnid·memories·modification·oncologic·patient·physiological·pool·prerequisites·pronoun·quota·quote·remediation·scorecard·services·siblings·some·source·stat·uk·urologic
+neighbors → collapse·day·law·merge·sti · ← collapse·day·law·merge·sti
 analysis —
 law spa is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `a43f341d-c352-807b-91ac-84e21f404326` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9a946fde-fbf2-8429-86c2-d17f3cdfe5ef` · `pnpm readme` · `pnpm computed:check`</sub>

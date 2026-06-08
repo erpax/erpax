@@ -23,7 +23,21 @@
 
 - partition `lactation` · sub-root `b590a495-f82a-8c7f-8799-7340721c8693`
 - bond degree `39` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `39` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `8c2a7c19-1466-8065-b916-588d526d4722` · framed by typography partition `lactation` bonds `39` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `65a01d56-61bc-8bc1-86e5-19d8f8bd1adb` · framed by typography partition `lactation` bonds `39` · `pnpm readme` · `pnpm readme:check`</sub>

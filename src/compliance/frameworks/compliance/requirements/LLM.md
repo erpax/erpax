@@ -3,8 +3,8 @@
 
 # requirements
 
-path `compliance/frameworks/compliance/requirements` · uuid `bdb9d68b-e5d5-8475-8f10-5189d89d018b` · diamond `e694b16a-0598-8e49-a800-a6c9786fed2b`
-horo `7` `descent` · trinity `1·1·1` · sealed `0`
+path `compliance/frameworks/compliance/requirements` · uuid `13aaf2c7-0a12-8ee7-bb31-a9acb5aac02a` · diamond `b0964d4c-2d24-8248-bcf8-2127a3bb1577`
+horo `8` `crest` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/authenticated · exports const · escapes —
 links `1/1` · folded `1` · bonds in `12` out `12`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `30616865-f1ca-8468-92d4-240a9e0ec5c2` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e776d84c-cd82-8b96-b6e7-b9016dc6b74d` · `pnpm readme` · `pnpm computed:check`</sub>

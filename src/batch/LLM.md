@@ -3,8 +3,8 @@
 
 # batch
 
-path `batch` · uuid `8a8cd98b-344b-80d9-bd3f-4e2021079fcd` · diamond `5948b23d-c591-8f37-9e41-5e29f3a61a1f`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `batch` · uuid `a58f059f-2eeb-8ac7-a9f8-b6ae92c5c67c` · diamond `abcdd39b-6443-80d6-8c4a-5e57056b5db7`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports ingest·jobs·reconcile·transaction · exports batch · escapes —
 links `4/4` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `3cc473fa-9f03-8be2-9900-5254e6b4f02f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3e3f9a46-0878-829a-bfe4-e6f2286efe88` · `pnpm readme` · `pnpm computed:check`</sub>

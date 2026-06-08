@@ -2,7 +2,7 @@
 
 # audit
 
-> atom `audit` · horo `2` `share` · [[balance]] `1` · [[seal]] `0`
+> atom `audit` · horo `2` `share` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -17,13 +17,13 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `7` | Σ `7` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
 
 ## typography graph
 
-- partition `audit` · sub-root `798aecfe-af8a-8d6c-9989-a51055e00adf`
-- bond degree `91` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- partition `audit` · sub-root `48070694-a00b-8cc8-bfb8-cb74cba5b6b6`
+- bond degree `0` · analysis neighbors —
+- graph root `30ef7fae-4ee3-8746-b14a-915657036770`
 
 ## [[cloudflare]] bindings
 
@@ -64,16 +64,54 @@
 - `SOX` · catalogue
 - `US-CTA-2021` · catalogue
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unbalanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| not-held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·2 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `91` · sealed `0` · horo `2`
-- variance `0` · balanced `1` · trinity sum `1`
+- bond degree `0` · sealed `0` · horo `2`
+- variance `1` · balanced `0` · trinity sum `1`
 - bindings `4` · standards `29`
 
 ## identity
 
-- uuid `ad9f3271-fbf4-876f-a76a-b6da7a1ac515`
-- bonds in `30` · out `29`
+- uuid `15c9b6da-13f6-8eb5-bdde-16b39325eed3`
+- bonds in `31` · out `31`
 - trinity form·code·proof `1`·`0`·`0`
 - links `5` / `5`
 - folded `1` · escapes `0`
@@ -84,4 +122,4 @@
 
 ---
 
-<sub>content-uuid `7c21cc98-ad8b-8e40-bd12-64149f9638d5` · framed by typography partition `audit` bonds `91` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b6824ae2-1474-8db6-a560-38604fb64905` · framed by typography partition `audit` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

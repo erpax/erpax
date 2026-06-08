@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `surgery` · sub-root `25c666cd-28ad-8f16-8db8-86181816f3d4`
-- bond degree `8` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `12` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `25c666cd-28ad-8f16-8db8-86181816f3d4`
-- bonds in `2` · out `2`
+- bonds in `4` · out `4`
 - trinity form·code·proof `1`·`0`·`0`
 - links `4` / `4`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `9d43b69d-6513-8fa0-86f1-4dc39787953d` · framed by typography partition `surgery` bonds `8` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c2c1aac9-5820-82c7-8af8-124f8c712ee0` · framed by typography partition `surgery` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

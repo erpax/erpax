@@ -4,7 +4,7 @@
 # requests
 
 path `maintenance/requests` · uuid `b4a902f2-885d-8c4e-bf89-5308d5f2348a` · diamond `13d6bd9b-8d4a-8013-a6ba-adc40a9908b7`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+horo `7` `descent` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/auto/set/timestamp·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
 links `8/8` · folded `1` · bonds in `16` out `20`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law a maintenance request is the FM service-ticket intake raised against a prope
 
 ---
 
-<sub>content-uuid `87dffca9-b8cb-8b9b-ab2d-dc64bb0be0b3` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `716aa456-f493-820a-8bf8-b05ed1213c3c` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,8 +3,8 @@
 
 # buyer
 
-path `buyer` · uuid `03ee15dd-b3ed-86ec-9187-6ad8f7da7cf5` · diamond `6a1798e0-561f-8ae6-b92e-5d94cd10802d`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `buyer` · uuid `fb75d508-5d61-830c-a6a6-9b8cd763b274` · diamond `e0846ba1-4345-8ef2-b08e-e6280c0f000c`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports law·person·thing · exports buyer · escapes —
 links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law buyer is one schema.org word, content-addressed; the same word collides ever
 
 ---
 
-<sub>content-uuid `f8996fb8-a792-8306-b624-1aa8b6bbc464` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1a0a6d80-9196-8f5a-b24d-881c6bc12bac` · `pnpm readme` · `pnpm computed:check`</sub>

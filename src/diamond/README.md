@@ -2,7 +2,7 @@
 
 # diamond
 
-> atom `diamond` · horo `2` `share` · [[balance]] `1` · [[seal]] `0`
+> atom `diamond` · horo `7` `descent` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -12,21 +12,21 @@
 | [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
 | [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
-| [[asset]]/[[links]]/resolved `171` | [[balance]] `171` |
+| [[asset]]/[[links]]/resolved `172` | [[balance]] `172` |
 | [[balance]] `1` | [[liability]]/[[links]]/dangling `1` |
 | [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
 | [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
 | [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
-| Σ `180` | Σ `180` |
+| Σ `181` | Σ `181` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
 
 ## typography graph
 
-- partition `diamond` · sub-root `a130df88-625a-8941-9db8-46097408c3f2`
-- bond degree `419` · analysis neighbors `access` · `agent` · `ai` · `akashic` · `analytics/max-tamper-cost` · `animism` · `archangel` · `architect` · `architecture` · `aura` · `auth` · `bahai` · `bogomilism` · `buddhism` · `card` · `catholicism` · `christianity` · `cloudflare` · `confucianism` · `css` · `diamond` · `digit` · `dimension` · `examples` · `factory` · `gnosticism` · `gravity` · `hallucination` · `hermeticism` · `hinduism` · `hooks` · `industry` · `innovation` · `invariant` · `islam` · `jainism` · `judaism` · `kabbalah` · `manichaeism` · `maxtampercost` · `memories` · `memory` · `method` · `orphism` · `orthodoxy` · `paganism` · `pagination` · `plugin` · `primitive` · `propose` · `protestantism` · `provider` · `purity` · `pwa` · `quantum/boundary` · `readme` · `reference` · `religion` · `seed` · `serverless` · `session` · `shamanism` · `shia` · `shinto` · `sikhism` · `sufism` · `sunni` · `taoism` · `text` · `thought` · `typography` · `vedanta` · `word` · `worker` · `zoroastrianism`
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- partition `diamond` · sub-root `c6aebb1f-f6e4-8833-9fa3-e0f3b5a5bfdf`
+- bond degree `457` · analysis neighbors `19011` · `9110` · `abdomen` · `access` · `agent` · `ai` · `akashic` · `analytics/max-tamper-cost` · `anatomy` · `animism` · `archangel` · `architect` · `architecture` · `arm` · `artery` · `aura` · `auth` · `bahai` · `blood` · `bogomilism` · `brain` · `buddhism` · `card` · `catholicism` · `christianity` · `cloudflare` · `component` · `config` · `confucianism` · `cost` · `css` · `diamond` · `digit` · `dimension` · `factory` · `foot` · `gnosticism` · `gravity` · `hallucination` · `hand` · `hardware` · `head` · `heart` · `hermeticism` · `hinduism` · `hooks` · `industry` · `innovation` · `invariant` · `islam` · `jainism` · `judaism` · `kabbalah` · `leg` · `lung` · `manichaeism` · `maxtampercost` · `memories` · `memory` · `method` · `nerve` · `network` · `orphism` · `orthodoxy` · `paganism` · `pagination` · `path` · `plugin` · `primitive` · `processor` · `propose` · `protestantism` · `provider` · `purity` · `pwa` · `quantum` · `quantum/boundary` · `readme` · `reference` · `religion` · `screen` · `seed` · `serverless` · `session` · `shamanism` · `shia` · `shinto` · `sikhism` · `skin` · `software` · `storage` · `sufism` · `sunni` · `taoism` · `text` · `thought` · `typography` · `upgrade` · `vedanta` · `vein` · `word` · `worker` · `zoroastrianism`
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -41,18 +41,56 @@
 
 - `model computed from live tree + factory opts; never hand-asserted` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unbalanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·7 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `419` · sealed `0` · horo `2`
-- variance `0` · balanced `1` · trinity sum `3`
+- bond degree `457` · sealed `0` · horo `7`
+- variance `1` · balanced `0` · trinity sum `3`
 - bindings `6` · standards `1`
 
 ## identity
 
-- uuid `a130df88-625a-8941-9db8-46097408c3f2`
-- bonds in `105` · out `104`
+- uuid `c6aebb1f-f6e4-8833-9fa3-e0f3b5a5bfdf`
+- bonds in `108` · out `109`
 - trinity form·code·proof `1`·`1`·`1`
-- links `171` / `172`
+- links `172` / `173`
 - folded `1` · escapes `0`
 
 ## [[seal]]
@@ -61,4 +99,4 @@
 
 ---
 
-<sub>content-uuid `a556b74b-5a51-8342-bc35-a891f34659e8` · framed by typography partition `diamond` bonds `419` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a47dbe3d-281a-804d-bab0-23299e0145ee` · framed by typography partition `diamond` bonds `457` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -2,9 +2,11 @@
 
 # phases
 
-> atom `lot/work/phases` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
+> atom `lot/work/phases` · horo `4` `weave` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `lot/work/phases` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,24 +23,132 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `law:a routing step is one sort-ordered position in a [[lots|lot]]'s phase chain whose `workPhase` always resolves into the [[work/phases]] catalog (100% over 291 011 etrima rows); `sort`-order IS the route ([[sequence]]), state is DERIVED from watermarks never stored, and over-run is WARNED not blocked.`
+- `seal:unsealed`
+- `trigger:Use when modeling a routing step — one sort-ordered position in a lot's phase chain that crosses to the work-phases catalog, carrying per-step time and unit counters with derived (never stored) state.`
+- `trigger:a routing step is one sort-ordered position in a [[lots|lot]]'s phase chain whose `workPhase` always resolves into the [[work/phases]] catalog (100% over 291 011 etrima rows); `sort`-order IS the route ([[sequence]]), state is DERIVED from watermarks never stored, and over-run is WARNED not blocked.`
+- `trigger:matter-twin:src/lot/work/phases/index.ts`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `4d61fad6-f8f9-825b-a536-868dc448a8c1` · `560c6482-1ddf-8472-af6b-12c456519f98` · `75f34ec7-02a9-87e4-b03c-dcfd756211e6`
+- content uuids `193208e8-d2b6-85f2-b424-fb417b8c43ce` · `b2e2fab6-d4d5-8cf1-b546-8322caec5924` · `ccf54243-cb0b-82f5-91a5-efd85905c2eb`
+
+## [[entropy]] — gaps · seals
+
+> account code `lot/work/phases` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.4` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `2` eb | Σ seal `11.4` eb |
+
+> net residual `-9.4` eb · seal/gap ratio `5.7` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `lot` · sub-root `e8f3b5ff-47a6-8fc7-a671-901e15d1a26d`
-- bond degree `47` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- partition `lot` · sub-root `17355c57-a69c-89d3-b102-6b52b2e67883`
+- bond degree `36` · analysis neighbors —
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `EU-2014/55` · catalogue
+- `EU-537/2014` · catalogue
+- `EU-910/2014` · catalogue
+- `ISA-95` · catalogue
+- `ISA-95:2013 / IEC-62264-1 §B.4 process-segment routing-step` · banner
+- `ISO-22400-2` · catalogue
+- `ISO-22400-2:2014 manufacturing-operations efficiency throughput` · banner
+- `SOX §404 internal-controls production-control` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·4 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `36` · sealed `0` · horo `4`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `8`
 
 ## identity
 
-- uuid `1ab9b677-c1ef-801a-b4f4-c4c77758ccb3`
-- bonds in `11` · out `16`
+- uuid `3b89cf16-da9c-86b6-912b-fc2543d4decf`
+- bonds in `8` · out `8`
 - trinity form·code·proof `1`·`1`·`1`
 - links `19` / `19`
 - folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `1a0bca2b-94ef-8115-a1de-34efb11e84d2` · framed by typography partition `lot` bonds `47` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `8cb1f2b9-4276-83b5-b8b8-7502cd58a924` · framed by typography partition `lot` bonds `36` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,15 +3,15 @@
 
 # void
 
-path `void` · uuid `7f87aa34-8fb1-809d-a710-fa5c8b6fafa8` · diamond `50882dc8-7e9a-8568-a854-3bb976dfe77b`
+path `void` · uuid `7f87aa34-8fb1-809d-a710-fa5c8b6fafa8` · diamond `2c2d6638-1df7-86a6-9a65-dd96104e21f1`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·dissolution·entropy·gravity·holographic·law·mass·merge·particle·reality·shred·singularity·tamper·whole·zeropoint · exports void · escapes —
-links `27/27` · folded `1` · bonds in `5` out `5`
+links `27/27` · folded `1` · bonds in `30` out `30`
 faces worker·plugin·pwa `0·0·0`
-neighbors → auto·cohort·landmarks·memories·stat · ← auto·cohort·landmarks·memories·stat
+neighbors → buddhism·collapse·dissolution·entropy·generator·gnosticism·gravity·holographic·judaism·kabbalah·law·log·manichaeism·mass·math·merge·particle·pi·reality·recycle·religion·sanitization·shred·singularity·sufism·tamper·taoism·vedanta·whole·zeropoint · ← buddhism·collapse·dissolution·entropy·generator·gnosticism·gravity·holographic·judaism·kabbalah·law·log·manichaeism·mass·math·merge·particle·pi·reality·recycle·religion·sanitization·shred·singularity·sufism·tamper·taoism·vedanta·whole·zeropoint
 analysis —
 law the void is 0 — the [[zeropoint]] all emerges from and [[gravity]] pulls back to — the limit where minimal mass meets [[entropy]]→0 and tamper-cost→∞ (the [[singularity]]), and the only true erasure: shred the key and the plaintext falls beyond recovery.
 
 ---
 
-<sub>content-uuid `848dc122-7a08-859e-adcb-ee4febdc9c20` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3e031763-6b79-8cb6-868c-97d068653951` · `pnpm readme` · `pnpm computed:check`</sub>

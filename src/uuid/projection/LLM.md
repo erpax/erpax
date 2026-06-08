@@ -3,15 +3,15 @@
 
 # projection
 
-path `uuid/projection` · uuid `ebeee172-bd6d-803b-8da7-cd992c20ec58` · diamond `da5773fd-8f7b-88b4-8e56-88b429694700`
+path `uuid/projection` · uuid `ebeee172-bd6d-803b-8da7-cd992c20ec58` · diamond `a9bba399-b62d-855d-8313-b86aee1e5b4a`
 horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/integrity · exports function·interface · escapes —
-links `21/21` · folded `1` · bonds in `4` out `4`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+links `21/21` · folded `1` · bonds in `19` out `24`
+faces worker·plugin·pwa `1·0·0`
+neighbors → all·anchor·beyond·cost·entry·give·history·holographic·identity·identity·law·law·llm·localize·localize·merge·merge·proof·take·torus·uuid·uuid·version·zeropoint · ← all·anchor·beyond·cost·entry·give·history·holographic·identity·law·llm·localize·merge·proof·take·torus·uuid·version·zeropoint
 analysis —
 law identity, search, locale, version and colour all DRY-derive from ONE `projectContent(record)` — they can never disagree about what a record IS, because each is a facet the [[uuid]] radiates from the same bytes, never a second declaration ([[holographic]]: the whole recovered from the seed).
 
 ---
 
-<sub>content-uuid `44ed797a-9df9-83e4-9d13-d7352c5d79ee` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8e110301-b391-85aa-848a-461d8d01b992` · `pnpm readme` · `pnpm computed:check`</sub>

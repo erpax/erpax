@@ -3,8 +3,8 @@
 
 # projects
 
-path `customers/projects` · uuid `897d73df-2061-815c-9ad3-33f03f9608f7` · diamond `b65669e9-ca70-8a82-81f0-f5f12d8cc561`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+path `customers/projects` · uuid `06cbb2ac-d5b3-8242-91f3-918531f998d5` · diamond `b3d0bd88-5077-8732-8e85-4cb28c12a041`
+horo `7` `descent` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
 links `4/4` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law open WIP equals accumulated cost minus recognised revenue, and recognition t
 
 ---
 
-<sub>content-uuid `4bf3da3e-61a9-8aab-8752-b67f6a87c596` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e643a0f1-4aa0-86e1-8edc-10924ffeb404` · `pnpm readme` · `pnpm computed:check`</sub>

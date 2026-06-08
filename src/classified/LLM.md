@@ -3,8 +3,8 @@
 
 # classified
 
-path `classified` · uuid `a1ce4419-c2d5-8fe8-a553-7fac7e5d1e75` · diamond `6cb0044f-067e-8b5b-8cbf-43941c96363e`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `classified` · uuid `05ef455c-e17c-8cd5-a3d8-fdbe43cd8f25` · diamond `0a910283-9cd4-8cbe-b68b-9c10a6933cd8`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports classified · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law classified is one schema.org word, content-addressed; the same word collides
 
 ---
 
-<sub>content-uuid `4df0d3eb-a5ea-8f1e-ba1e-6f53a3b9c6ed` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `382ba5bb-3e98-856a-b88b-713fb2f3291b` · `pnpm readme` · `pnpm computed:check`</sub>

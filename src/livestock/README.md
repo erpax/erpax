@@ -23,7 +23,21 @@
 
 - partition `livestock` · sub-root `e65257f2-eec5-8b15-aeec-66366f6b248d`
 - bond degree `83` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `83` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `809f6ea3-1914-8630-b91a-b4573eb5dd7f` · framed by typography partition `livestock` bonds `83` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `26881e70-7e10-86e1-b625-6a49cfb4471d` · framed by typography partition `livestock` bonds `83` · `pnpm readme` · `pnpm readme:check`</sub>

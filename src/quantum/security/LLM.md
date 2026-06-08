@@ -3,15 +3,15 @@
 
 # security
 
-path `quantum/security` · uuid `77b56802-f1c9-8cc7-a042-dbfb947e665f` · diamond `f30f439f-4495-8e01-8285-51e4490e36dd`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
-imports cost·duality·entry·fear·law·love·proof·quantum·receipt·sandbox·security·tamper·trust·uuid · exports security · escapes —
-links `19/19` · folded `1` · bonds in `25` out `26`
+path `quantum/security` · uuid `14244216-6de7-8993-89ad-bb272768e175` · diamond `675bd901-f9d1-804b-8399-a786ddf1dd98`
+horo `2` `share` · trinity `1·1·1` · sealed `1`
+imports @/path · exports function·interface · escapes —
+links `28/28` · folded `1` · bonds in `13` out `13`
 faces worker·plugin·pwa `1·0·0`
-neighbors → access·biometric·clearance·collapse·cost·duality·engineering·entry·fear·law·law·love·merge·proof·quantum·receipt·requirement·research·sandbox·screening·security·sti·tamper·testing·trust·uuid · ← access·biometric·clearance·collapse·cost·duality·engineering·entry·fear·law·love·merge·proof·quantum·receipt·requirement·research·sandbox·screening·security·sti·tamper·testing·trust·uuid
+neighbors → access·biometric·clearance·collapse·engineering·law·merge·requirement·research·screening·security·sti·testing · ← access·biometric·clearance·collapse·engineering·law·merge·requirement·research·screening·security·sti·testing
 analysis —
 law security is bidirectional, so a finding is never one-sided — every control is read both ways at once and reported as the balanced blue/red pair (verify it holds ⊕ price forging past it), the same double-entry as everything else. The conjugate law binds the two: the cost to forge past a control equals its compression — squeeze it to the 128-bit uuid and the forging temperature rises, depth being tamper-cost. Red prices the attack but never ships it; coverage (proven vs assumed) is the metric.
 
 ---
 
-<sub>content-uuid `367f4148-dc8b-8b8f-9b27-c0109af8d28a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `981a8837-9001-83a2-86cd-d89c6032a1fa` · `pnpm readme` · `pnpm computed:check`</sub>

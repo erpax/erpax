@@ -3,8 +3,8 @@
 
 # buy
 
-path `buy` · uuid `2f920d34-1567-8bfb-8874-0facb4f6fd6b` · diamond `4208cbf3-8d7f-863e-9087-daccdeba51c1`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `buy` · uuid `31b01e4a-bc44-8558-938e-6c5c4e74cad0` · diamond `01c9a2bc-5814-84b8-b02c-fdba1636f474`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti · exports buy · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law buy is one schema.org word, content-addressed; the same word collides every 
 
 ---
 
-<sub>content-uuid `84fc852f-358a-8a4e-988a-97949ce5d043` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `fadff148-56d3-8d18-8edb-83a59b2c1606` · `pnpm readme` · `pnpm computed:check`</sub>

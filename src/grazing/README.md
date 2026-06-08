@@ -23,7 +23,21 @@
 
 - partition `grazing` · sub-root `6115244c-80ae-87e5-b7c8-4d34477889ec`
 - bond degree `47` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `47` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `9640b28e-0e0e-82e6-86d8-71f6f7d3ebf8` · framed by typography partition `grazing` bonds `47` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f244f298-f577-81ed-bf8a-4c7f36292e64` · framed by typography partition `grazing` bonds `47` · `pnpm readme` · `pnpm readme:check`</sub>

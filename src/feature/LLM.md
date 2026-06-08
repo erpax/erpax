@@ -4,7 +4,7 @@
 # feature
 
 path `feature` · uuid `ade24eb4-253c-8dd3-9bf1-d87c6b17e37b` · diamond `6886d5a7-ff94-89ef-8fe0-1059fb54e835`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+horo `1` `base` · trinity `1·0·0` · sealed `0`
 imports accessibility·amenity·collapse·law·list·location·merge·specification·sti · exports feature · escapes —
 links `9/9` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law feature is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `e81c6906-f501-8ead-a22b-a2b18d13bfaa` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0a4cbd07-a225-8d81-b2c5-4674ac5474db` · `pnpm readme` · `pnpm computed:check`</sub>

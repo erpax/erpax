@@ -2,7 +2,7 @@
 
 # api
 
-> atom `api` · horo `8` `crest` · [[balance]] `1` · [[seal]] `0`
+> atom `api` · horo `5` `round` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -17,13 +17,13 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `7` | Σ `7` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
 
 ## typography graph
 
-- partition `api` · sub-root `e53ea2d8-2396-80bf-8228-b488f4a66500`
-- bond degree `110` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- partition `api` · sub-root `bc7db5f9-7487-8726-9edd-b9ae476febf2`
+- bond degree `0` · analysis neighbors —
+- graph root `67d11a43-67e0-8dde-afd8-ecbed950ff42`
 
 ## [[cloudflare]] bindings
 
@@ -40,16 +40,54 @@
 - `EU-Taxonomy-2020/852` · catalogue
 - `ISO-19011` · catalogue
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unbalanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| not-held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·5 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `110` · sealed `0` · horo `8`
-- variance `0` · balanced `1` · trinity sum `1`
+- bond degree `0` · sealed `0` · horo `5`
+- variance `1` · balanced `0` · trinity sum `1`
 - bindings `0` · standards `8`
 
 ## identity
 
-- uuid `eeb3decd-2ac3-8363-b7f9-03f64061e086`
-- bonds in `32` · out `33`
+- uuid `b2d03bcd-4a60-8e7c-a819-eb838cb0bba1`
+- bonds in `26` · out `26`
 - trinity form·code·proof `1`·`0`·`0`
 - links `21` / `21`
 - folded `1` · escapes `0`
@@ -60,4 +98,4 @@
 
 ---
 
-<sub>content-uuid `b2cb2ea2-87b2-8df4-9c38-7167bbaa5793` · framed by typography partition `api` bonds `110` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f6348755-aabc-8cdf-8345-7466b580c81c` · framed by typography partition `api` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

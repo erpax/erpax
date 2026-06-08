@@ -23,7 +23,21 @@
 
 - partition `iupac` · sub-root `d4338da9-4cd2-8ac8-9873-ffebbb2fde52`
 - bond degree `15` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `15` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `75e22220-bdc7-82b9-8fb5-7c9881b10f35` · framed by typography partition `iupac` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `cc90e314-6069-8d29-b65d-84e8a0504539` · framed by typography partition `iupac` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

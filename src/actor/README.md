@@ -2,9 +2,11 @@
 
 # actor
 
-> atom `actor` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
+> atom `actor` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
+
+> account code `actor` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -19,11 +21,34 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## [[entropy]] — gaps · seals
+
+> account code `actor` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[trinity]]/code `1.585` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[trinity]]/proof `1.585` eb | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.4` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[diamond]]/sealed `1.585` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `3.17` eb | Σ seal `10.985` eb |
+
+> net residual `-7.815` eb · seal/gap ratio `3.465` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `actor` · sub-root `9d6716fd-f205-8c1d-ba71-0a0d71f6bfea`
+- partition `actor` · sub-root `7d6e6ae1-7ffb-8c61-9100-95df0838eaa0`
 - bond degree `9` · analysis neighbors —
-- graph root `06810c2c-2396-831f-a2b3-a58706a17051`
+- graph root `841a8e48-08eb-8dfa-9b96-29beea086012`
 
 ## [[cloudflare]] bindings
 
@@ -34,15 +59,53 @@
 - `schema.org` · catalogue
 - `schema.org — the type vocabulary, collided to single words` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·4 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `9` · sealed `1` · horo `5`
+- bond degree `9` · sealed `1` · horo `4`
 - variance `0` · balanced `1` · trinity sum `1`
 - bindings `0` · standards `2`
 
 ## identity
 
-- uuid `9d6716fd-f205-8c1d-ba71-0a0d71f6bfea`
+- uuid `7d6e6ae1-7ffb-8c61-9100-95df0838eaa0`
 - bonds in `3` · out `3`
 - trinity form·code·proof `1`·`0`·`0`
 - links `3` / `3`
@@ -54,4 +117,4 @@
 
 ---
 
-<sub>content-uuid `701ac4e7-5c8c-8bed-af0d-e47f2d66d7ba` · framed by typography partition `actor` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `4517c7c6-a28d-8992-8423-a50c0a0ca8da` · framed by typography partition `actor` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,15 +3,15 @@
 
 # symptoms
 
-path `symptoms` · uuid `507ed293-2e9f-89f4-800a-1c4489454811` · diamond `1ab4a798-f7ab-8de8-aa9d-20b490ec88ca`
+path `symptoms` · uuid `507ed293-2e9f-89f4-800a-1c4489454811` · diamond `31a2bb14-ef5e-8890-80d6-665f6ba72a4d`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports symptoms · escapes —
-links `4/4` · folded `1` · bonds in `8` out `8`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → colleague·dermatologic·landmarks·musical·pixel·police·privilege·unlimited · ← colleague·dermatologic·landmarks·musical·pixel·police·privilege·unlimited
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law symptoms is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `0d86747b-c342-8221-8a14-8de4563d9021` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f27084d8-eca1-89ce-a06e-063b06c663d9` · `pnpm readme` · `pnpm computed:check`</sub>

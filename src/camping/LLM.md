@@ -3,8 +3,8 @@
 
 # camping
 
-path `camping` · uuid `c9557763-3903-8fd8-8a3d-c196df954673` · diamond `c0ac3593-d098-8e61-8e37-29d547e1a60c`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `camping` · uuid `b27f0ef2-93bf-84ff-86d8-2dc0084e2251` · diamond `28e96ed5-b2c9-8bce-9e04-f79571b6ca0f`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·pitch·sti · exports camping · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law camping is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `e44cbfbf-3e5d-831d-8096-0767be8fbc87` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `26bd6cce-f671-8673-acac-a081c6234f00` · `pnpm readme` · `pnpm computed:check`</sub>

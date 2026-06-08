@@ -3,8 +3,8 @@
 
 # address
 
-path `address` · uuid `e1e1efe0-acef-8e3c-8ed6-a0b751257128` · diamond `90b19b5a-4246-89f3-ac69-e2adf14039cd`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `address` · uuid `31b63bb1-0f2b-8fc0-9804-527f3505ca24` · diamond `f41cabec-c0d4-88f6-992b-16fc1eb75de7`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports billing·country·delivery·extended·law·legal·locality·origin·postal·region·service·street · exports address · escapes —
 links `12/12` · folded `1` · bonds in `13` out `13`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law address is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `3a2155ef-9113-8763-8908-8f66265d644d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9acf2e40-9328-8071-80ef-19c9d8724efc` · `pnpm readme` · `pnpm computed:check`</sub>

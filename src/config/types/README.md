@@ -2,7 +2,7 @@
 
 # types
 
-> atom `config/types` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
+> atom `config/types` · horo `9` `unity` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -23,9 +23,9 @@
 
 ## typography graph
 
-- partition `config` · sub-root `6d70e9e7-e633-855e-84ff-572e1aab45d0`
-- bond degree `75` · analysis neighbors `agent`
-- graph root `0349017a-99bf-8657-ae7e-21b09f363ed4`
+- partition `config` · sub-root `c9f7efd9-b1c7-84e6-886d-4c6b7e88b2c1`
+- bond degree `66` · analysis neighbors `agent`
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -44,24 +44,62 @@
 - `ISO-3166-1:2020 country-codes` · banner
 - `ISO-4217:2015 currency-codes` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·9 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `75` · sealed `1` · horo `4`
+- bond degree `66` · sealed `0` · horo `9`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `10`
 
 ## identity
 
-- uuid `e0930aad-a89b-8e34-a6f3-cbbc597aab59`
-- bonds in `21` · out `24`
+- uuid `38c73c81-b5ec-858a-a7e0-70fc75fb5b83`
+- bonds in `18` · out `18`
 - trinity form·code·proof `1`·`1`·`1`
 - links `3` / `3`
 - folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `08047a1d-66d8-869d-ab4c-67e4117f5882` · framed by typography partition `config` bonds `75` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `6b41e6bb-a9cf-81c2-8269-290645af4b45` · framed by typography partition `config` bonds `66` · `pnpm readme` · `pnpm readme:check`</sub>

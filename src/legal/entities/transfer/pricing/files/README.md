@@ -2,9 +2,11 @@
 
 # files
 
-> atom `legal/entities/transfer/pricing/files` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
+> atom `legal/entities/transfer/pricing/files` · horo `4` `weave` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `legal/entities/transfer/pricing/files` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,15 +23,119 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `seal:unsealed`
+- `trigger:Use when documenting intercompany transfer pricing per OECD BEPS Action 13 — Master File, Local File, and Country-by-Country Report per jurisdiction per fiscal year — TP method, CbCR aggregates, Pillar Two applicability, filing deadlines and status. The BEPS Action 13 TP documentation register.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `19477665-7dc9-8d4e-a98d-2182037edba9` · `9fa83d10-ea73-8269-9565-f5e7299f23d5` · `f8f5e8a4-cc73-846f-ba90-3db0f93ebefa`
+- content uuids `2bdc3bc0-f3c5-8e90-87af-e4bc2c77e561` · `8fcb781a-724e-8a22-96ba-cb64bff9c678` · `afc81b56-f809-8641-ac8f-509284a4a545`
+
+## [[entropy]] — gaps · seals
+
+> account code `legal/entities/transfer/pricing/files` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.4` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `2` eb | Σ seal `11.4` eb |
+
+> net residual `-9.4` eb · seal/gap ratio `5.7` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `legal` · sub-root `1fd2f1ff-ccee-87e0-8d80-12345443fed8`
+- partition `legal` · sub-root `e259934b-eccd-8e89-bfbe-04889c9debb1`
 - bond degree `18` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `EU 2016/881 administrative-cooperation-tax` · banner
+- `EU DAC-4 country-by-country-reporting` · banner
+- `ISO-4217:2015 currency-codes` · banner
+- `ISO-8601-1:2019 date-time` · banner
+- `OECD BEPS Action 13 transfer-pricing-documentation` · banner
+- `OECD Pillar Two GloBE (15% global minimum tax)` · banner
+- `OECD TPG 2022 transfer-pricing-guidelines` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·4 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `18` · sealed `0` · horo `4`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `7`
 
 ## identity
 
-- uuid `d2d0ac0f-32e8-8f85-be9b-e4456b2ae600`
+- uuid `3f477147-e711-8574-854b-50f4cf294758`
 - bonds in `6` · out `6`
 - trinity form·code·proof `1`·`1`·`1`
 - links `5` / `5`
@@ -37,8 +143,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `e0a733f1-10b7-8a5d-9f77-118329fc1fa6` · framed by typography partition `legal` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f43dbb1e-ab80-83d5-97cb-b532013d8c39` · framed by typography partition `legal` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>

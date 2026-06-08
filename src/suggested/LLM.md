@@ -3,15 +3,15 @@
 
 # suggested
 
-path `suggested` · uuid `38e4bff1-27d1-8d51-8265-eb1e2f637544` · diamond `0e50b350-b338-8317-b2f1-7f30bb09ee3c`
+path `suggested` · uuid `38e4bff1-27d1-8d51-8265-eb1e2f637544` · diamond `dad9e11e-ffec-8e4f-a125-a786353c767a`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports age·answer·collapse·gender·law·max·measurement·merge·min·sti · exports suggested · escapes —
-links `10/10` · folded `1` · bonds in `2` out `2`
+links `10/10` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → age·answer·collapse·gender·law·max·measurement·merge·min·sti · ← age·answer·collapse·gender·law·max·measurement·merge·min·sti
 analysis —
 law suggested is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `d47afcd5-68d7-8b71-8812-32440e302d2e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `60cee24e-5333-89c4-9023-85a33019e05a` · `pnpm readme` · `pnpm computed:check`</sub>

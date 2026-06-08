@@ -23,7 +23,21 @@
 
 - partition `llm` · sub-root `1dc20a80-a088-8179-af1d-9b43e719cfdb`
 - bond degree `78` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `NIST-FIPS-180-4` · catalogue
+
+## analytics
+
+- bond degree `78` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `9447d9bb-744b-8ebb-b02c-8ba3ac8edb04` · framed by typography partition `llm` bonds `78` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ea9e0d26-786c-8147-a7d6-ff5ee1cabd30` · framed by typography partition `llm` bonds `78` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -2,9 +2,11 @@
 
 # mandates
 
-> atom `media/sepa/mandates` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
+> atom `media/sepa/mandates` · horo `2` `share` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `media/sepa/mandates` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,15 +23,123 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+
+### collapse
+
+- `balance:conserved`
+- `law:a SEPA mandate is the debtor's standing authorization (pain.008) — its sequence-state walks FRST → RCUR on the [[horo]] ring, it expires 36 months after the last collection, and a revoked or expired mandate can authorize no PaymentRun.`
+- `seal:unsealed`
+- `trigger:Use when managing SEPA Direct Debit mandates (pain.008) — mandate id, debtor IBAN/BIC, creditor identifier, signature date, CORE/B2B instrument, sequence-state (FRST→RCUR), 36-month expiry rule, revocation, and linkage to PaymentRuns. The EPC130-08 SDD mandate register.`
+- `trigger:a SEPA mandate is the debtor's standing authorization (pain.008) — its sequence-state walks FRST → RCUR on the [[horo]] ring, it expires 36 months after the last collection, and a revoked or expired mandate can authorize no PaymentRun.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `3623c0ad-ac6e-8525-972d-c6b1d770ffbb` · `eac0c429-ab39-89d5-a9f7-b6a097c9c364`
+- content uuids `82ff08b7-cc8c-877f-8e1c-a6d213c3a7c3` · `e010faf7-2ea2-8d7c-9496-e7cea23dff05`
+
+## [[entropy]] — gaps · seals
+
+> account code `media/sepa/mandates` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.2` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `1` eb | Σ seal `11.2` eb |
+
+> net residual `-10.2` eb · seal/gap ratio `11.2` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `media` · sub-root `a1c1ad6f-08f5-8c32-bcee-7d006a1c377c`
+- partition `media` · sub-root `b8e195d9-663a-8b20-8071-b28828447b28`
 - bond degree `24` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `EPC130-08 sepa-direct-debit-rulebook` · banner
+- `GDPR Art.6(1)(b) lawful-basis-contract` · banner
+- `IFRS IFRS-9 financial-instruments` · banner
+- `ISO-13616-1:2020 iban` · banner
+- `ISO-20022 pain.008 customer-direct-debit-initiation` · banner
+- `ISO-8601-1:2019 date-time signature-date expiry-date` · banner
+- `ISO-9362` · catalogue
+- `ISO-9362:2022 bic` · banner
+- `SOX §404 internal-controls` · banner
+- `US-GAAP ASC-310 receivables` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·2 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `24` · sealed `0` · horo `2`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `10`
 
 ## identity
 
-- uuid `6aa80160-9705-876c-a605-814996966ed6`
+- uuid `c83fd891-ef16-8015-9d66-873b7ddfb573`
 - bonds in `8` · out `8`
 - trinity form·code·proof `1`·`1`·`1`
 - links `8` / `8`
@@ -37,8 +147,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `a9d61410-db89-8da2-ac5d-047fb4d2b6ab` · framed by typography partition `media` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d529de28-3056-840c-94db-58dcab4c8535` · framed by typography partition `media` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>

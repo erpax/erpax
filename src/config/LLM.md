@@ -3,15 +3,15 @@
 
 # config
 
-path `config` · uuid `1645ca1a-f87c-8d2e-987f-ed0746699325` · diamond `b37834c9-75e0-8efd-bc47-dec2421a28a1`
-horo `9` `unity` · trinity `1·0·1` · sealed `1`
+path `config` · uuid `0f5bc7f7-7b2d-82b7-a177-7a7d67321252` · diamond `8ed88c73-9f8b-844b-b51d-64f88fed9868`
+horo `6` `6` · trinity `1·0·0` · sealed `0`
 imports aura·collections·database·duality·gate·harden·identity·law·merge·name·optimize·payload·redirects·self·standard·types·uuid·vitepress · exports config · escapes —
-links `30/30` · folded `1` · bonds in `52` out `52`
+links `30/30` · folded `1` · bonds in `53` out `53`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·akashic·atom·aura·auth·axis·begin·binding·bindings·chat·cmyk·collections·components·database·deploy·duality·ecommerce·endpoints·examples·gate·harden·holographic·horo·identity·law·lexical·localize·merge·metadata·name·optimize·payload·plugins·port·recover·redirects·rodin·secret·self·sequence·skills·society·standard·testing·torus·types·upload·users·utilities·uuid·vitepress·whole · ← access·akashic·atom·aura·auth·axis·begin·binding·bindings·chat·cmyk·collections·components·database·deploy·duality·ecommerce·endpoints·examples·gate·harden·holographic·horo·identity·law·lexical·localize·merge·metadata·name·optimize·payload·plugins·port·recover·redirects·rodin·secret·self·sequence·skills·society·standard·testing·torus·types·upload·users·utilities·uuid·vitepress·whole
-analysis aura
+neighbors → access·akashic·atom·aura·auth·axis·begin·binding·bindings·chat·cmyk·collections·components·database·deploy·duality·ecommerce·endpoints·examples·gate·harden·holographic·horo·identity·law·lexical·localize·merge·metadata·name·optimize·payload·plugins·port·recover·redirects·rodin·secret·self·sequence·skills·society·standard·testing·torus·types·types·upload·users·utilities·uuid·vitepress·whole · ← access·akashic·atom·aura·auth·axis·begin·binding·bindings·chat·cmyk·collections·components·database·deploy·duality·ecommerce·endpoints·examples·gate·harden·holographic·horo·identity·law·lexical·localize·merge·metadata·name·optimize·payload·plugins·port·recover·redirects·rodin·secret·self·sequence·skills·society·standard·testing·torus·types·types·upload·users·utilities·uuid·vitepress·whole
+analysis —
 law every atom's `index.ts` IS the one shared config both [[payload]] and [[vitepress]] derive from — self-describing (kind, fields, relations, position all declared by it + its [[name]] + content-[[uuid]]); `find src` is the registry, so identical configs [[merge]] and nothing outside classifies an atom.
 
 ---
 
-<sub>content-uuid `18d1deb5-1dff-8f50-8395-c588a3ad1d73` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `62607a8c-70f8-859d-bcd2-1bc0b53d3257` · `pnpm readme` · `pnpm computed:check`</sub>

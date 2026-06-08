@@ -2,9 +2,11 @@
 
 # access
 
-> atom `security/remote/access` · horo `6` `6` · [[balance]] `1` · [[seal]] `0`
+> atom `security/remote/access` · horo `6` `6` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `security/remote/access` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -19,18 +21,121 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
+
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `explore:diamond`
+- `explore:hallucination`
+- `explore:purity`
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+- `gap:horo:[[gap]]/[[horo]]/off-ring`
+
+### collapse
+
+- `balance:variance=1`
+- `seal:unsealed`
+- `trigger:Use when proving a remote-access product's PUBLIC vulnerability classes with erpax's own trust primitives — each flaw is a missing primitive and the verdict is a receipted, content-addressed proof. The AnyDesk case (SYSTEM file-read LPE, a stolen code-signing cert, coarse unattended-access) folded onto sandbox, tamper-cost and the receipt. Defensive modeling over public CVEs, never an exploit.`
+- `trigger:`proveScopeGap` (over [[sandbox]]) · `proveAuthenticityGap` (over [[tamper]] + [[anchor]]) · `test.ts` (the AnyDesk proof — a verified [[receipt]] chain that pinpoints any doctored verdict at its seq).`
+- `trigger:matter-twin:src/security/remote/access/index.ts`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `22518e37-a385-81f7-86f3-b4332049c085` · `504d3457-b60a-8625-adab-c3f28acf7fb2` · `a3777a0c-5a3c-89be-8019-49c1edbafbb5` · `fa18ce4a-ed82-81f5-9c6e-0bab37ac8293`
+- content uuids `4a2b0d8c-8bfe-8817-858e-9781be9785da` · `a60fe2bf-a9b3-80ce-a108-6e942a403b34` · `adbd9fb2-fe93-8bf8-89fd-c9ec31468a47` · `ef56ef35-72bf-8ce7-87ed-f3a971b19c5b`
+
+## [[entropy]] — gaps · seals
+
+> account code `security/remote/access` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[horo]]/off-ring `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `3` eb | Σ seal `10` eb |
+
+> net residual `-7` eb · seal/gap ratio `3.333` · [[entropy]] · [[seal]]
 
 ## typography graph
 
-- partition `security` · sub-root `da81a80d-93db-8c19-bf20-e979dd9a8f3b`
-- bond degree `426` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- partition `security` · sub-root `aa962df9-c370-855d-8049-3b39cec1b611`
+- bond degree `415` · analysis neighbors `diamond` · `hallucination` · `purity`
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `NIST SP 800-162 ABAC · NIST SP 800-107r1 §5.1 · CWE-59` · banner
+- `NIST-SP-800-162` · catalogue
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unbalanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| off-ring·6 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `415` · sealed `0` · horo `6`
+- variance `1` · balanced `0` · trinity sum `3`
+- bindings `0` · standards `2`
 
 ## identity
 
-- uuid `72acef20-9204-8da3-8dfe-2fc2ef695141`
-- bonds in `130` · out `133`
+- uuid `3023f0b9-198f-8bba-88ea-5b6107f8822e`
+- bonds in `124` · out `124`
 - trinity form·code·proof `1`·`1`·`1`
 - links `40` / `40`
 - folded `1` · escapes `0`
@@ -41,4 +146,4 @@
 
 ---
 
-<sub>content-uuid `cd7667ca-5287-82f6-86f2-689da8858177` · framed by typography partition `security` bonds `426` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a0225c70-c194-89b2-8114-d8f6c2d29328` · framed by typography partition `security` bonds `415` · `pnpm readme` · `pnpm readme:check`</sub>

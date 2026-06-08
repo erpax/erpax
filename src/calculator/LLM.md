@@ -3,15 +3,15 @@
 
 # calculator
 
-path `calculator` · uuid `67c1eebb-3f2c-8804-bd8f-0156116af0ea` · diamond `878cdbc7-653b-83cd-b9a0-47ec677f178e`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `calculator` · uuid `c1a730aa-34b8-8a3b-a9ec-154ec551d021` · diamond `e41d23bb-c0ef-810a-8b4f-12b849dc49d6`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·medical·merge·risk·sti · exports calculator · escapes —
-links `6/6` · folded `1` · bonds in `11` out `13`
+links `6/6` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → calculator·collapse·dry·law·law·law·math·medical·merge·quantum·risk·rodin·sti · ← calculator·collapse·dry·law·math·medical·merge·quantum·risk·rodin·sti
+neighbors → calculator·collapse·law·medical·merge·risk·sti · ← calculator·collapse·law·medical·merge·risk·sti
 analysis —
 law calculator is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `ae75ca86-0ca3-8681-aca9-b5f29a53e501` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6a168070-4323-811c-ae8b-47638cdfe808` · `pnpm readme` · `pnpm computed:check`</sub>

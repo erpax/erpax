@@ -23,7 +23,21 @@
 
 - partition `juniors` · sub-root `3b7a762f-17d1-815d-9b6e-6bb9e2770c4c`
 - bond degree `12` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `12` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `9fff0275-8e91-88a1-9a46-886a0c28fefa` · framed by typography partition `juniors` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f018d48f-51c1-8ecf-aacf-e37e48d7d234` · framed by typography partition `juniors` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

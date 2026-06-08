@@ -4,7 +4,7 @@
 # 27002
 
 path `iso/27002` · uuid `c619cc6f-3f1e-8f66-a7b6-7fa5099f55e7` · diamond `886f97ad-2ac2-8000-bcbd-c10567886f71`
-horo `8` `crest` · trinity `1·1·1` · sealed `1`
+horo `8` `crest` · trinity `1·1·1` · sealed `0`
 imports — · exports ControlCoverageRow·ISO_27002_CATALOG·Iso27002ControlId·Iso27002Theme·aggregateCoverage·coverageByTheme·isIso27002ControlId·iso27002Theme·iso27002Title·parseIso27002ControlId·resolveCoverage · escapes —
 links `0/0` · folded `1` · bonds in `0` out `0`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `462b84c3-7a9a-89f4-a738-5e7c41f4d4c8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e18820de-afc3-83ec-8864-709c7126772b` · `pnpm readme` · `pnpm computed:check`</sub>

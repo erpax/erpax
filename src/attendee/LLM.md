@@ -3,8 +3,8 @@
 
 # attendee
 
-path `attendee` · uuid `29145450-ae94-8fc7-8965-04a3053bac9d` · diamond `a16ebc56-5a97-82b5-bb14-c76582ed08bc`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `attendee` · uuid `c673e433-231e-8617-a2ea-1d31d67506d0` · diamond `dbdb0e30-3973-8191-9091-c58ee17b6fb4`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports capacity·law·maximum·physical·remaining·virtual · exports attendee · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law attendee is one schema.org word, content-addressed; the same word collides e
 
 ---
 
-<sub>content-uuid `9bdb58f1-c6f9-8063-a9e4-1c4735585784` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `cc310db4-caca-8024-8093-4b1ae290f2ba` · `pnpm readme` · `pnpm computed:check`</sub>

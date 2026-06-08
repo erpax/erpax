@@ -3,8 +3,8 @@
 
 # collar
 
-path `collar` · uuid `cdd2fc19-d735-8f25-9cbd-4f938e455d99` · diamond `ef80c259-8c69-853b-84cc-ab57af54bc80`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `collar` · uuid `6c90ed23-35f2-89c1-a91f-4d26ac762252` · diamond `78f30bae-3bce-8f14-bf3f-7849a93f06bf`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports collar · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law collar is one schema.org word, content-addressed; the same word collides eve
 
 ---
 
-<sub>content-uuid `96f94d93-75d6-8786-b242-cb97378135a6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `488e35c3-bdd2-84d2-b0d9-4aff61942aa3` · `pnpm readme` · `pnpm computed:check`</sub>

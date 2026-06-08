@@ -3,8 +3,8 @@
 
 # applicant
 
-path `applicant` · uuid `2fe9fdd8-c6c9-848e-abcc-b30a6925d32d` · diamond `38e3d820-8f3f-8fbd-9907-c8caddab4a93`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `applicant` · uuid `0f687455-9feb-8e93-8b48-34144cee9059` · diamond `e7588a37-36fc-8be1-941e-abc4d11745bf`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·location·merge·requirements·sti · exports applicant · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law applicant is one schema.org word, content-addressed; the same word collides 
 
 ---
 
-<sub>content-uuid `606c12b1-4d68-8938-98b7-86718e72a97f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0b3c41b5-5967-886f-9a9e-ada326d328a2` · `pnpm readme` · `pnpm computed:check`</sub>

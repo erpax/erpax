@@ -3,8 +3,8 @@
 
 # dateline
 
-path `dateline` · uuid `1af4581f-9748-85f0-b4d3-c0a0d5d65a11` · diamond `fd3be0d4-b1d1-881b-bb9c-2a0dc28ad5d1`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `dateline` · uuid `cdb9a61b-32f3-8878-84a9-f65d5824d0e4` · diamond `bf2ae736-8745-884f-ae3c-a653a82a0da3`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports content·law · exports dateline · escapes —
 links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law dateline is one schema.org word, content-addressed; the same word collides e
 
 ---
 
-<sub>content-uuid `03735e30-48eb-8c7e-ba13-c8cf6aad90ba` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `34c1d231-325c-85b2-b8b7-f7bdb3d3ef53` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,7 +3,7 @@
 
 # algorithm
 
-path `algorithm` · uuid `ca3ebbcb-4c23-8fa6-a3a2-251902866486` · diamond `8586106e-d329-83d2-b101-b4059dc9edb1`
+path `algorithm` · uuid `9981d5fa-7e1d-8e9d-889a-ac2773308b5d` · diamond `63b0fa2b-3b09-819c-94f2-71f7e9f423fe`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports algorithm · escapes —
 links `2/2` · folded `1` · bonds in `2` out `2`
@@ -14,4 +14,4 @@ law algorithm is one schema.org word, content-addressed; the same word collides 
 
 ---
 
-<sub>content-uuid `56367f5c-91c3-87b2-8af1-ae465038171c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0f284f93-bde4-8bd2-b05e-9f7a39dbe833` · `pnpm readme` · `pnpm computed:check`</sub>

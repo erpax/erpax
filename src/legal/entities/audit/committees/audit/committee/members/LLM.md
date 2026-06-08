@@ -3,8 +3,8 @@
 
 # members
 
-path `legal/entities/audit/committees/audit/committee/members` · uuid `6693ae12-d59d-81b4-941f-2d3daaf858b9` · diamond `befbb485-d490-834a-afff-efd5de6cc3ca`
-horo `4` `weave` · trinity `1·1·1` · sealed `1`
+path `legal/entities/audit/committees/audit/committee/members` · uuid `6668c189-7935-817d-ac18-f95abc8f5a22` · diamond `422fd72a-ef34-80bf-8f41-f3fe9e5f3c14`
+horo `7` `descent` · trinity `1·1·1` · sealed `0`
 imports @/role/based/access · exports const · escapes —
 links `0/0` · folded `1` · bonds in `1` out `1`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `9889eeb4-cfa7-8cf0-b090-6400d4c1a06e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b3f7d428-2dee-866d-9a47-23aad67d7d74` · `pnpm readme` · `pnpm computed:check`</sub>

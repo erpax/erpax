@@ -3,15 +3,15 @@
 
 # trip
 
-path `trip` · uuid `28331155-84fc-8484-a336-6838bf8e1bd5` · diamond `0e8222fd-a1b2-8650-ad1c-49537dfb9e2d`
+path `trip` · uuid `28331155-84fc-8484-a336-6838bf8e1bd5` · diamond `5ba010ad-3dc3-8fda-b02e-fd64e92bdfba`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports boat·bus·law·origin·part·sub·tourist·train · exports trip · escapes —
-links `8/8` · folded `1` · bonds in `6` out `6`
+links `8/8` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → 38·cohort·landmarks·memories·sanitization·stat · ← 38·cohort·landmarks·memories·sanitization·stat
+neighbors → boat·bus·law·origin·part·sub·tourist·train · ← boat·bus·law·origin·part·sub·tourist·train
 analysis —
 law trip is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `60c55f95-e8bf-8ada-ad31-1e36dd85f8c8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `22f6fd1c-1264-8fde-a79c-e961529039a7` · `pnpm readme` · `pnpm computed:check`</sub>

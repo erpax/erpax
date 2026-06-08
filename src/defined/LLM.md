@@ -3,8 +3,8 @@
 
 # defined
 
-path `defined` · uuid `bbfc6683-2ef5-8999-aa5d-2fa3fea97bab` · diamond `364439e9-6632-8408-977a-e6ba1d74064d`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `defined` · uuid `aeaacd30-bec7-8008-b243-c8cdc3f8bd41` · diamond `2c91fc57-f17f-8a0b-925c-bfee4c6be470`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·has·law·merge·region·set·sti·term · exports defined · escapes —
 links `8/8` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law defined is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `9ab50b65-4d1a-84a4-ba24-a9d5db86c11e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `fe87a7e6-1fe8-85b4-8696-feccceaaaf3d` · `pnpm readme` · `pnpm computed:check`</sub>

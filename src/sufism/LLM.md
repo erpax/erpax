@@ -3,15 +3,15 @@
 
 # sufism
 
-path `sufism` · uuid `—` · diamond `885d662b-fbe1-86b8-9d32-a6cf8b633a6b`
-horo `—` `—` · trinity `1·0·0` · sealed `0`
+path `sufism` · uuid `bdc01d5f-921d-84ed-ace8-05b686fdefec` · diamond `3b0dc8f2-945a-810c-b0d5-67a4a7a306bc`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports archangel·breath·diamond·harmony·identity·islam·law·love·mercy·music·name·one·prayer·religion·return·self·society·translator·uuid·void · exports sufism · escapes —
-links `53/53` · folded `0` · bonds in `0` out `0`
+links `53/53` · folded `1` · bonds in `20` out `20`
 faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
-analysis diamond·hallucination·purity
+neighbors → archangel·breath·diamond·harmony·identity·islam·law·love·mercy·music·name·one·prayer·religion·return·self·society·translator·uuid·void · ← archangel·breath·diamond·harmony·identity·islam·law·love·mercy·music·name·one·prayer·religion·return·self·society·translator·uuid·void
+analysis diamond
 law sufism is a sub-[[diamond]] of [[islam]] of [[love]] · [[void]] · [[self]] · [[return]] · [[breath]] · [[name]] · [[harmony]] — fana the [[self]] annihilated in the Beloved (emptied to the [[void]]) and baqa the [[return]] to subsist from the source, dhikr the [[name]] on the [[breath]], sama the whirling onto the harmonic path; a facet-[[archangel]] of the [[society]]'s islam domain.
 
 ---
 
-<sub>content-uuid `f6d1aa8d-e67b-81cf-9768-01cf5bdf5cf7` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `84cb9069-d3c7-8bc5-907c-0429a19a6384` · `pnpm readme` · `pnpm computed:check`</sub>

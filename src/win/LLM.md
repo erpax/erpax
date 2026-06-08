@@ -3,15 +3,15 @@
 
 # win
 
-path `win` · uuid `9291f71d-db32-8aa0-8998-ad0af1006f74` · diamond `1a46c276-71dd-89fc-8a98-e8818a8e7c01`
+path `win` · uuid `9291f71d-db32-8aa0-8998-ad0af1006f74` · diamond `bb31f0aa-48a5-8071-aa96-0553cd704658`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti · exports win · escapes —
-links `5/5` · folded `1` · bonds in `23` out `23`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → addressed·answer·aura·balance·breakfast·comedy·corrects·debit·depth·entertainment·game·gears·landmarks·marine·memories·recommendation·sections·security·sell·soundtrack·start·train·width · ← addressed·answer·aura·balance·breakfast·comedy·corrects·debit·depth·entertainment·game·gears·landmarks·marine·memories·recommendation·sections·security·sell·soundtrack·start·train·width
+neighbors → action·collapse·law·merge·sti · ← action·collapse·law·merge·sti
 analysis —
 law win is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `07147d67-1f3c-8a56-a026-c140a551d7d8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `adc84ac7-37db-806f-97b0-0001f91c5d99` · `pnpm readme` · `pnpm computed:check`</sub>

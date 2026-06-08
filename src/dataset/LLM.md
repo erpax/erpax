@@ -3,8 +3,8 @@
 
 # dataset
 
-path `dataset` · uuid `9f996d3c-f979-8499-9c9f-54ea7290d872` · diamond `879d0760-cb4e-8e9e-b2ac-b86e35971fb2`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `dataset` · uuid `22b6cf58-ddc5-8b2a-9a97-9f1bea627b38` · diamond `11a3e8f0-49ec-8f38-802b-73a22d1b7875`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports interval·law·time · exports dataset · escapes —
 links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law dataset is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `6e36d90c-a141-8267-90b4-71992b913449` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d91e5464-fce7-8a96-bd5f-b2dd6c321b6e` · `pnpm readme` · `pnpm computed:check`</sub>

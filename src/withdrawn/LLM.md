@@ -3,15 +3,15 @@
 
 # withdrawn
 
-path `withdrawn` · uuid `e2363b5e-4b36-8928-9fb7-38421d971c3f` · diamond `b5277402-2907-852c-a559-2d464d0ee2b2`
+path `withdrawn` · uuid `e2363b5e-4b36-8928-9fb7-38421d971c3f` · diamond `bafeaf0e-c044-8c18-9ead-43eeeea465de`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports withdrawn · escapes —
-links `4/4` · folded `1` · bonds in `5` out `5`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·physician·stat · ← cohort·landmarks·memories·physician·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law withdrawn is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `67479ffb-0ab9-892a-ac91-6e0d5a20689e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `50791875-be54-85e6-8433-27a9ec176972` · `pnpm readme` · `pnpm computed:check`</sub>

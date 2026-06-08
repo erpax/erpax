@@ -25,7 +25,21 @@
 
 - partition `fields` · sub-root `98899790-31b6-84ac-a358-0c0549fc9852`
 - bond degree `326` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `Flat namespace to eliminate circular imports and duplicate definitions.` · banner
+
+## analytics
+
+- bond degree `326` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -41,4 +55,4 @@
 
 ---
 
-<sub>content-uuid `350b4a68-7069-80cf-b73f-444dfe0caceb` · framed by typography partition `fields` bonds `326` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `8b41fdca-eb48-84ec-b6c4-c7bb34d03975` · framed by typography partition `fields` bonds `326` · `pnpm readme` · `pnpm readme:check`</sub>

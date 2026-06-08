@@ -13,6 +13,8 @@ const node = (name: string, related: string[] = []): SkillNode => ({
   siblings: [],
   children: [],
   related,
+  nav: [],
+  group: name,
 })
 
 describe('rating — every [[link]] is a vote; rating = distinct incoming attestations', () => {

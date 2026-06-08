@@ -3,8 +3,8 @@
 
 # breakfast
 
-path `breakfast` · uuid `18638372-aa81-83d2-ab8f-ec4ff0636473` · diamond `395b57d4-a9c4-8620-9dbc-d8e5fd4b5344`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `breakfast` · uuid `f0bda643-ac01-83b5-8785-00a04425bd2a` · diamond `af79816b-0690-8b61-bb21-0a42274348e7`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports bed·collapse·law·merge·sti · exports breakfast · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law breakfast is one schema.org word, content-addressed; the same word collides 
 
 ---
 
-<sub>content-uuid `3502abc1-4752-863f-a41f-d1411062eb71` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6b01186f-b75e-8f28-8534-52d46857444c` · `pnpm readme` · `pnpm computed:check`</sub>

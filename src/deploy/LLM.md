@@ -3,15 +3,15 @@
 
 # deploy
 
-path `deploy` · uuid `5099ae95-1544-8d9a-b3bf-8f073689ed2c` · diamond `7ef4adf4-0c28-8560-8239-004ab613502e`
-horo `1` `base` · trinity `1·1·1` · sealed `1`
+path `deploy` · uuid `6d29bc8e-8025-824d-b43d-4e45ea2e4a6c` · diamond `c23a0fe5-c101-80b5-9c0b-6a64ba00bcfa`
+horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports @/harmony·@/horo · exports const·function · escapes —
-links `16/16` · folded `1` · bonds in `33` out `37`
+links `16/16` · folded `1` · bonds in `21` out `21`
 faces worker·plugin·pwa `1·0·0`
-neighbors → anchor·backup·bindings·bindings·command·config·confirm·database·database·deploy·dev·finality·fs·gate·gate·harden·harmony·law·law·mcp·measurement·migrate·observability·optimize·payload·proof·quantum·reality·reality·rodin·secret·serverless·snapshot·stack·upload·versions·worker · ← anchor·backup·bindings·bindings·command·config·confirm·database·deploy·dev·finality·fs·gate·harden·harmony·law·mcp·measurement·migrate·observability·optimize·payload·proof·quantum·reality·rodin·secret·serverless·snapshot·stack·upload·versions·worker
-analysis —
+neighbors → backup·bindings·bindings·command·config·database·deploy·dev·gate·harden·harmony·law·mcp·observability·optimize·reality·rodin·secret·serverless·stack·upload · ← backup·bindings·bindings·command·config·database·deploy·dev·gate·harden·harmony·law·mcp·observability·optimize·reality·rodin·secret·serverless·stack·upload
+analysis cloudflare
 law the deploy is harmonized only in the one true order — gate · migrate · build · push (the doubling band 1·2·4·8). The gate-green order is the *lawful* one; any other forges reality. The band's musical consonance is computed honestly (the doubling is no perfect chord) — the harmony that ships is the order, and out of order ships a lie.
 
 ---
 
-<sub>content-uuid `d54371db-3826-83e9-b292-8a650afb325c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b288b503-dd12-864a-bedd-88da6cca7ed5` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -6,6 +6,8 @@
 
 ## [[debit]] · [[credit]]
 
+> account code `audit/trail/access` · currency `eb` (entropy-bit)
+
 | [[debit]] | [[credit]] |
 | -------- | --------- |
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
@@ -13,7 +15,7 @@
 | [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
 | [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[horo]]/off-ring `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
 | [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
 | [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
@@ -21,11 +23,63 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `explore:diamond`
+- `explore:hallucination`
+- `explore:purity`
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `law:the audit trail is append-only — read is tenant-scoped (super-admin sees all), create is super-admin-only, and update/delete is denied outright so evidence can never be forged.`
+- `seal:unsealed`
+- `trigger:Use when gating reads, creates and mutations of the audit trail — authenticated users see only their own tenant's events, super-admins see all, and update/delete is denied outright so the trail stays append-only tamper-evident.`
+- `trigger:matter-twin:src/audit/trail/access/index.ts`
+- `trigger:the audit trail is append-only — read is tenant-scoped (super-admin sees all), create is super-admin-only, and update/delete is denied outright so evidence can never be forged.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `2cc61b2c-511f-8c00-a555-4ea55ad69e37` · `7c973b60-6570-89f2-be6a-4d16a06964a0` · `a5b250c6-4a71-87fb-b2fa-bb2d418e79a3`
+- content uuids `10c5ff2e-c190-8717-ac12-f67f8d88173f` · `ec0c1acf-7988-8ff0-8af1-f0912c921293` · `fbe6aaec-6982-82d9-b4b0-41eee84f4639`
+
+## [[entropy]] — gaps · seals
+
+> account code `audit/trail/access` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `1` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `2` eb | Σ seal `12` eb |
+
+> net residual `-10` eb · seal/gap ratio `6` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `audit` · sub-root `798aecfe-af8a-8d6c-9989-a51055e00adf`
-- bond degree `426` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- partition `audit` · sub-root `886efad5-9cfb-87e4-a30b-a445ae4c7a71`
+- bond degree `415` · analysis neighbors `diamond` · `hallucination` · `purity`
+- graph root `86252db0-c776-84eb-b8e4-c884dca3a3ba`
 
 ## [[cloudflare]] bindings
 
@@ -35,16 +89,54 @@
 
 —
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| off-ring·6 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `426` · sealed `0` · horo `6`
+- bond degree `415` · sealed `0` · horo `6`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `0`
 
 ## identity
 
-- uuid `72acef20-9204-8da3-8dfe-2fc2ef695141`
-- bonds in `130` · out `133`
+- uuid `c8a8cb83-d7da-80c9-9a98-f72dc17706d2`
+- bonds in `124` · out `124`
 - trinity form·code·proof `1`·`1`·`1`
 - links `6` / `6`
 - folded `1` · escapes `0`
@@ -55,4 +147,4 @@
 
 ---
 
-<sub>content-uuid `a76cea1f-fe00-8eae-b53d-2d94a032f8a8` · framed by typography partition `audit` bonds `426` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `3f9e5442-738d-8594-9dfc-7f51d4599432` · framed by typography partition `audit` bonds `415` · `pnpm readme` · `pnpm readme:check`</sub>

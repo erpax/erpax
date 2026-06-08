@@ -2,9 +2,11 @@
 
 # media
 
-> atom `capture/media` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `capture/media` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
+
+> account code `capture/media` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,11 +23,36 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## [[entropy]] — gaps · seals
+
+> account code `capture/media` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.5` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[diamond]]/sealed `1.585` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `1` eb | Σ seal `13.085` eb |
+
+> net residual `-12.085` eb · seal/gap ratio `13.085` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `capture` · sub-root `2434236d-08b0-8501-a972-dc5bd6591c23`
-- bond degree `93` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- partition `capture` · sub-root `3f6fd05a-d18a-8c07-96cd-b3d741a4f3fc`
+- bond degree `90` · analysis neighbors —
+- graph root `582b8568-4f46-80fc-8473-2ca7bdc1071f`
 
 ## [[cloudflare]] bindings
 
@@ -48,16 +75,54 @@
 - `WCAG-2.1 §1.2.2 captions-prerecorded` · banner
 - `WCAG-2.1 §1.2.5 audio-description-prerecorded` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·5 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `93` · sealed `1` · horo `7`
+- bond degree `90` · sealed `1` · horo `5`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `14`
 
 ## identity
 
-- uuid `7b517e9c-e681-80b1-94a0-2efb4181418a`
-- bonds in `30` · out `31`
+- uuid `f992f1b1-f565-8a98-913b-8d0055f057f7`
+- bonds in `29` · out `29`
 - trinity form·code·proof `1`·`1`·`1`
 - links `5` / `5`
 - folded `1` · escapes `0`
@@ -68,4 +133,4 @@
 
 ---
 
-<sub>content-uuid `56cebaca-812b-8c56-bc2f-4382e329bb9c` · framed by typography partition `capture` bonds `93` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `bd319ebc-3413-8ed6-a9e0-4802852d4d1c` · framed by typography partition `capture` bonds `90` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,21 @@
 
 - partition `health` · sub-root `8aab4a63-a581-81c6-9897-a0bbc2ccd3b4`
 - bond degree `156` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `156` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `51c5aeb3-2ce6-8e35-9e52-5ca44fcd9275` · framed by typography partition `health` bonds `156` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f8062aea-57c4-831c-8d93-54c90d9207f9` · framed by typography partition `health` bonds `156` · `pnpm readme` · `pnpm readme:check`</sub>

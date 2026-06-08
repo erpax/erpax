@@ -2,9 +2,11 @@
 
 # optimization
 
-> atom `search/engine/optimization` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
+> atom `search/engine/optimization` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
+
+> account code `search/engine/optimization` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,15 +23,115 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `seal:sealed`
+- `trigger:Use when making erpax discoverable — search engine optimization (SEO); the canonical keyword and GitHub-topic strategy plus an on-page relevance scorer that the README and npm package draw from.`
+- `trigger:matter-twin:src/search/engine/optimization/index.ts`
+- `trigger:schema.org + Open Graph discoverability; on-page keyword coverage`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `1`
+- entry uuids `d33688b8-7be2-8e54-a4eb-215a67cc3c4d` · `e28a228a-7be0-83b6-8629-ad8f8b984a4c`
+- content uuids `897a3722-39d8-8127-aed5-930e1d73941e` · `b6239a26-5b87-88b7-bb31-f65d1acf7a14` · `d591aaac-0425-8ed1-99b6-3d906db1c102`
+
+## [[entropy]] — gaps · seals
+
+> account code `search/engine/optimization` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.4` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[diamond]]/sealed `1.585` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `1` eb | Σ seal `12.985` eb |
+
+> net residual `-11.985` eb · seal/gap ratio `12.985` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `search` · sub-root `c26d8b05-2fc5-8f58-9fe5-cbadcd4b7bdd`
+- partition `search` · sub-root `08b1b391-d9e7-84a5-8326-25981742cd0f`
 - bond degree `15` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org + Open Graph discoverability; on-page keyword coverage` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·4 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `15` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `1`
 
 ## identity
 
-- uuid `7543ee31-eefd-8f1c-a4ca-b0f222056cc5`
+- uuid `b6239a26-5b87-88b7-bb31-f65d1acf7a14`
 - bonds in `5` · out `5`
 - trinity form·code·proof `1`·`1`·`1`
 - links `7` / `7`
@@ -41,4 +143,4 @@
 
 ---
 
-<sub>content-uuid `8e1ec844-dee3-881e-9df6-a9df773d31db` · framed by typography partition `search` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `cd5137d4-1d08-8a14-b796-636d68fcfb9a` · framed by typography partition `search` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

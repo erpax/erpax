@@ -23,7 +23,21 @@
 
 - partition `hindu` · sub-root `8c0781ef-23eb-8545-a818-bbb3d4a58170`
 - bond degree `16` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `16` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `3514bdf1-23f9-8f01-a29d-0eb5632f2cf5` · framed by typography partition `hindu` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `473aa19c-fc41-8d85-bbe4-fcb3ca6fc01e` · framed by typography partition `hindu` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

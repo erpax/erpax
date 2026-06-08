@@ -3,8 +3,8 @@
 
 # connection
 
-path `connection` · uuid `664c8867-56c6-85e7-a41c-4f329ca3a982` · diamond `8fa37238-032a-8425-93e4-3371d2df134e`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `connection` · uuid `0c395c07-90e0-841a-8ade-0847e974baa6` · diamond `8dd4484f-9abf-8f53-9c92-7796ae616cfc`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports balance·connections·law·network · exports connection · escapes —
 links `9/9` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law connection is the singular model of exactly one [[connections]] row — one 
 
 ---
 
-<sub>content-uuid `c32b8626-bf18-8fac-aac5-68df6b87da8a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e100ac37-aeff-8762-8d6a-3f00cc153f39` · `pnpm readme` · `pnpm computed:check`</sub>

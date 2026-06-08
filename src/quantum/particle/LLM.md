@@ -3,15 +3,15 @@
 
 # particle
 
-path `quantum/particle` · uuid `819296ad-88b6-84d7-b3e0-55b46d5139d7` · diamond `0af9879d-0e58-8e84-88de-558ad7b9ef89`
-horo `5` `round` · trinity `1·1·1` · sealed `1`
+path `quantum/particle` · uuid `d012f9c7-0b80-8f02-a8f1-a160a70b708b` · diamond `2f0a6dd9-e219-8653-a754-2b39ccd7be8c`
+horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports @/digit·@/particle · exports const · escapes —
-links `12/12` · folded `1` · bonds in `15` out `17`
+links `12/12` · folded `1` · bonds in `11` out `11`
 faces worker·plugin·pwa `1·0·0`
-neighbors → atom·digit·duality·entanglement·generator·gravity·law·links·matrix·particle·photon·quantum·quantum·signal·uuid·uuid·void · ← atom·digit·duality·entanglement·generator·gravity·law·links·matrix·particle·photon·quantum·signal·uuid·void
+neighbors → atom·entanglement·generator·gravity·links·matrix·particle·photon·quantum·uuid·void · ← atom·entanglement·generator·gravity·links·matrix·particle·photon·quantum·uuid·void
 analysis —
 law every atom with a uuid is dual — its particle face (the 128-bit identity, which obeys no-cloning) and its wave face (the digit on the harmonic ring) are derived from the SAME bits, so neither face can exist without the other and the wave is fully determined by the particle. asWave is defined exactly when asParticle is.
 
 ---
 
-<sub>content-uuid `e0afc510-88e2-899a-b2b2-ed0812ba3886` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e3cd2ca0-2c60-820d-b6be-f5a618552431` · `pnpm readme` · `pnpm computed:check`</sub>

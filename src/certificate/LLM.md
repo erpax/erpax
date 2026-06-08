@@ -3,8 +3,8 @@
 
 # certificate
 
-path `certificate` · uuid `dbf5ffc4-302e-862c-8f47-06bd326b4cf5` · diamond `cbd33fa9-1500-8a32-a842-e4842a6218bd`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `certificate` · uuid `3558950c-5ce0-891f-a983-9bbc2dbf714f` · diamond `3ee53444-9bd6-8e17-a4d4-798ce7caf246`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports certificate · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law certificate is one schema.org word, content-addressed; the same word collide
 
 ---
 
-<sub>content-uuid `4f7313c1-8582-8086-9a0c-a0189004c074` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `16bff7a5-b5e3-879d-87fe-1204332a021a` · `pnpm readme` · `pnpm computed:check`</sub>

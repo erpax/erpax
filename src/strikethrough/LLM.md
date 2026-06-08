@@ -3,15 +3,15 @@
 
 # strikethrough
 
-path `strikethrough` · uuid `72b0f306-df99-8e88-ba72-729f49ed94f5` · diamond `a2f52e88-af24-8aff-b124-f8b08c03eb59`
+path `strikethrough` · uuid `72b0f306-df99-8e88-ba72-729f49ed94f5` · diamond `063cb1c5-81dd-8ec2-81de-be3e0c6f3389`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports strikethrough · escapes —
-links `4/4` · folded `1` · bonds in `3` out `3`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → balance·submissions·width · ← balance·submissions·width
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law strikethrough is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `e2a48eeb-7bb6-8d81-adf4-9b4ebfe38f23` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4f9c8f07-acb2-8843-84f1-7068ba16afa9` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,8 +3,8 @@
 
 # decompression
 
-path `decompression` · uuid `4ea923f2-d487-810b-80e5-3b314ab97aac` · diamond `27869856-b312-81e0-8590-63f7ce9bb933`
-horo `2` `share` · trinity `1·1·1` · sealed `1`
+path `decompression` · uuid `51d09de6-25c4-8a67-a9f1-7f04ef95f1b2` · diamond `358411c7-34c9-881e-a08b-513da0329324`
+horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports @/agent/team·@/allocation·@/horo · exports const·function·interface · escapes —
 links `95/95` · folded `1` · bonds in `46` out `46`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law a dive IS the erpax ledger worn as flesh — dissolved gas is a conserved do
 
 ---
 
-<sub>content-uuid `3683fde8-f96c-8757-8018-57ab1af54f0a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a223124c-2730-8cf3-9f80-2425d0d010fc` · `pnpm readme` · `pnpm computed:check`</sub>

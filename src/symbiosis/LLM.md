@@ -3,15 +3,15 @@
 
 # symbiosis
 
-path `symbiosis` · uuid `c9bc5508-0a38-8b1b-be80-8e4cf3e627a6` · diamond `e79e5393-f001-804e-98dd-3a0a2967adfe`
+path `symbiosis` · uuid `c9bc5508-0a38-8b1b-be80-8e4cf3e627a6` · diamond `e1a2e94c-6cbe-8d28-98cb-346d9bc09f77`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports balance·ecosystem·entry·exchange·give·identity·law·lichen·market·merge·mycorrhizae·proof·sustainability·take·tamper · exports symbiosis · escapes —
-links `31/31` · folded `1` · bonds in `4` out `4`
+links `31/31` · folded `1` · bonds in `16` out `16`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → balance·ecosystem·entry·exchange·give·identity·law·lichen·market·merge·mycelium·mycorrhizae·proof·sustainability·take·tamper · ← balance·ecosystem·entry·exchange·give·identity·law·lichen·market·merge·mycelium·mycorrhizae·proof·sustainability·take·tamper
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `dbc0a661-5e12-81c0-8845-04f8d18617a1` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `66ca3fab-d675-854b-a16c-1789a12b2f4c` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # variance
 
-path `variance` · uuid `b3d3d58c-26c5-84ed-a27c-2d648ffbc912` · diamond `9ee0719b-3830-8a33-97a8-91cca33ca0ea`
+path `variance` · uuid `b3d3d58c-26c5-84ed-a27c-2d648ffbc912` · diamond `87619b5f-bb3b-8d6a-92af-12d4c71bf90b`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports budget·budgetvariance·cost·decide·financial·items·law · exports variance · escapes —
-links `9/9` · folded `1` · bonds in `3` out `3`
+links `9/9` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → app·landmarks·variants · ← app·landmarks·variants
+neighbors → budgetvariance·cost·decide·deduction·law·plannings·statements·variances · ← budgetvariance·cost·decide·deduction·law·plannings·statements·variances
 analysis —
 law variance is the gap between planned (budget/standard) and actual, split into its price/volume/efficiency drivers; it is the signal [[decide]] consumes and the [[cost]] axis management performance is measured on.
 
 ---
 
-<sub>content-uuid `6abd3f99-ec9a-87a1-97db-ee324d71f49c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a48f68cc-fbbe-8eb1-9e5a-e87a7c9a8f53` · `pnpm readme` · `pnpm computed:check`</sub>

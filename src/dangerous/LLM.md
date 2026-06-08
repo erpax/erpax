@@ -3,8 +3,8 @@
 
 # dangerous
 
-path `dangerous` · uuid `e346f583-73ce-8a36-a40e-4efcde09b43c` · diamond `f41bac87-38ca-84c9-9a72-81bafb169983`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `dangerous` · uuid `9b3ae6c8-b3a7-8566-9abc-bf9f919f777f` · diamond `ec28fb95-e406-8bb1-b7d0-b1c5e04ecc2e`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports dangerous · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law dangerous is one schema.org word, content-addressed; the same word collides 
 
 ---
 
-<sub>content-uuid `62737506-7933-813a-aa24-4141d4512636` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `40f8763b-5d61-8980-9c47-eb49c61d00dd` · `pnpm readme` · `pnpm computed:check`</sub>

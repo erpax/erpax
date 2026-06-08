@@ -4,7 +4,7 @@
 # 19005
 
 path `iso/19005` · uuid `53b6e569-cfb8-8dd9-b099-abc20a3d44ca` · diamond `bb3b7272-3ed9-8ff3-99ab-a5895954ff77`
-horo `2` `share` · trinity `1·1·1` · sealed `1`
+horo `2` `share` · trinity `1·1·1` · sealed `0`
 imports — · exports PDF_A_DEFAULT·PDF_A_HYBRID_INVOICE·buildPdfAXmp·pdfAProfileToXmp·type · escapes —
 links `1/1` · folded `1` · bonds in `1` out `1`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law every PDF the project emits for archival must declare a PDF/A conformance le
 
 ---
 
-<sub>content-uuid `ccdf36ca-309c-8a37-9390-10b7d02d06e1` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d0b4501f-5f06-886f-9838-18c2098fefb7` · `pnpm readme` · `pnpm computed:check`</sub>

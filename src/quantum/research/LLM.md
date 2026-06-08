@@ -3,15 +3,15 @@
 
 # research
 
-path `quantum/research` · uuid `d4d6de7f-c43c-89df-90a7-a6439ccfa4f4` · diamond `23b96711-6a07-8bdd-80f5-f68c638ffef2`
-horo `1` `base` · trinity `1·1·1` · sealed `1`
+path `quantum/research` · uuid `62532bc3-6e15-8e64-be04-3913894b45ed` · diamond `005a23f9-e4a1-803a-abb3-3cdd3161400d`
+horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports @/entry · exports const·function·interface · escapes —
-links `16/16` · folded `1` · bonds in `61` out `76`
+links `16/16` · folded `1` · bonds in `31` out `31`
 faces worker·plugin·pwa `1·0·0`
-neighbors → accept·access·account·accounting·agent·agent·akashic·anchor·angel·audit·balance·breath·broker·civilization·collapse·collapse·consultant·consulting·cost·cost·cross·design·development·drone·email·entanglement·entropy·entropy·entry·entry·expense·feedback·gate·harmony·history·identity·identity·interview·law·law·law·law·law·literature·localize·matrix·mcp·merge·merge·merge·oid·organization·plugins·profane·project·proof·proof·quantum·receipt·receipt·recover·research·research·research·reset·sacred·sandbox·science·security·self·tamper·tenant·user·uuid·zeropoint·zeropoint · ← accept·access·account·accounting·agent·akashic·anchor·angel·audit·balance·breath·broker·civilization·collapse·consultant·consulting·cost·cross·design·development·drone·email·entanglement·entropy·entry·expense·feedback·gate·harmony·history·identity·interview·law·literature·localize·matrix·mcp·merge·oid·organization·plugins·profane·project·proof·quantum·receipt·recover·research·research·research·reset·sacred·sandbox·science·security·self·tamper·tenant·user·uuid·zeropoint
+neighbors → accounting·akashic·anchor·angel·breath·civilization·collapse·consultant·consulting·design·development·drone·feedback·history·interview·law·literature·localize·merge·oid·organization·profane·project·proof·research·research·research·sacred·science·uuid·zeropoint · ← accounting·akashic·anchor·angel·breath·civilization·collapse·consultant·consulting·design·development·drone·feedback·history·interview·law·literature·localize·merge·oid·organization·profane·project·proof·research·research·research·sacred·science·uuid·zeropoint
 analysis agent
 law research is a billable expense, and its worth is the entropy it reduces. A run debits the resources it consumes (agents × tokens) and credits the disorder it closes; it is worthwhile only when it reduces more entropy than it costs.
 
 ---
 
-<sub>content-uuid `20364a1b-aba8-86b0-b656-f3b469433bd1` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `504ba749-4175-8b2e-9035-ebaab7847eef` · `pnpm readme` · `pnpm computed:check`</sub>

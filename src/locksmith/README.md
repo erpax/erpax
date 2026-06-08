@@ -23,7 +23,21 @@
 
 - partition `locksmith` · sub-root `4fd752ee-5bc2-8639-a6bd-64a14d114b0a`
 - bond degree `9` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `9` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `e9187d68-b843-8dfd-946b-ae15605b5e85` · framed by typography partition `locksmith` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `09cdc320-c5d0-8568-9679-f48345802edb` · framed by typography partition `locksmith` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>

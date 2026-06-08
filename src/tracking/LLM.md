@@ -8,10 +8,10 @@ horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·number·sti·url · exports tracking · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·kiosk·landmarks·memories·stat·thing · ← cohort·kiosk·landmarks·memories·stat·thing
+neighbors → collapse·law·merge·number·sti·url · ← collapse·law·merge·number·sti·url
 analysis —
 law tracking is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `a81f27c4-14e7-8f15-838f-b7262a0e3851` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `39449055-8e25-8bad-aa52-5eb488cb512e` · `pnpm readme` · `pnpm computed:check`</sub>

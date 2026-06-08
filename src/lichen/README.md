@@ -23,7 +23,21 @@
 
 - partition `lichen` · sub-root `8c636999-b08a-8c3d-8c34-77eb47ad5f59`
 - bond degree `28` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `28` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `7bd03bd2-8adf-8dd4-82d3-aeb0827e5887` · framed by typography partition `lichen` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `250293f1-f72a-89f2-b056-0685c0a2daf5` · framed by typography partition `lichen` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>

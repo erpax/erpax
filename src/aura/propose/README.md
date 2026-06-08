@@ -2,9 +2,11 @@
 
 # propose
 
-> atom `aura/propose` · horo `8` `crest` · [[balance]] `1` · [[seal]] `0`
+> atom `aura/propose` · horo `8` `crest` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `aura/propose` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -19,13 +21,33 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `2` · [[conservation]] `0` · [[entry]] · [[purity]]
+
+## [[entropy]] — gaps · seals
+
+> account code `aura/propose` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[trinity]]/proof `1.585` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[diamond]]/stray/.proposals.json `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.8` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+| Σ gap `3.585` eb | Σ seal `7.8` eb |
+
+> net residual `-4.215` eb · seal/gap ratio `2.176` · [[entropy]] · [[seal]]
 
 ## typography graph
 
-- partition `aura` · sub-root `863a5e37-ab12-800b-aa2e-be7556faeb44`
-- bond degree `25` · analysis neighbors `aura` · `diamond` · `hallucination` · `purity`
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- partition `aura` · sub-root `e665527d-0275-8df7-ba9a-edcdc2c5479c`
+- bond degree `0` · analysis neighbors —
+- graph root `582b8568-4f46-80fc-8473-2ca7bdc1071f`
 
 ## [[cloudflare]] bindings
 
@@ -36,15 +58,53 @@
 - `no link invented -- every proposal is a co-occurrence the tree witnesses` · banner
 - `no link invented — every proposal is a co-occurrence the live tree witnesses` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unbalanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| not-held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| incomplete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·8 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `25` · sealed `0` · horo `8`
-- variance `0` · balanced `1` · trinity sum `2`
+- bond degree `0` · sealed `0` · horo `8`
+- variance `2` · balanced `0` · trinity sum `2`
 - bindings `0` · standards `2`
 
 ## identity
 
-- uuid `943f7ea6-8071-8fbf-a1d8-e37edbbbbb02`
+- uuid `c65a1b6b-fae5-8f8b-8f9f-77af168042d8`
 - bonds in `7` · out `7`
 - trinity form·code·proof `1`·`1`·`0`
 - links `7` / `7`
@@ -56,4 +116,4 @@
 
 ---
 
-<sub>content-uuid `6a673e63-acba-8db3-90d1-468f60b4c509` · framed by typography partition `aura` bonds `25` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `96b9883c-faae-8bc5-ad86-c61cf0c49bfb` · framed by typography partition `aura` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

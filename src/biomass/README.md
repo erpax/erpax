@@ -2,7 +2,7 @@
 
 # biomass
 
-> atom `biomass` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
+> atom `biomass` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -23,9 +23,9 @@
 
 ## typography graph
 
-- partition `biomass` · sub-root `a21b1c67-45fa-80e3-989c-5310f4cc1e72`
+- partition `biomass` · sub-root `16a20495-5696-8302-afb0-f6546d668344`
 - bond degree `59` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- graph root `1cef4f02-a3fa-83a5-8ea0-120b724ef456`
 
 ## [[cloudflare]] bindings
 
@@ -38,15 +38,53 @@
 - `IAS-41` · catalogue
 - `IFRS IAS-41 — biological assets: fair-value-less-costs-to-sell; transformation-vs-price split` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·8 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `59` · sealed `1` · horo `2`
+- bond degree `59` · sealed `1` · horo `8`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `4`
 
 ## identity
 
-- uuid `a21b1c67-45fa-80e3-989c-5310f4cc1e72`
+- uuid `16a20495-5696-8302-afb0-f6546d668344`
 - bonds in `18` · out `18`
 - trinity form·code·proof `1`·`1`·`1`
 - links `30` / `30`
@@ -58,4 +96,4 @@
 
 ---
 
-<sub>content-uuid `55e4701e-132b-8da8-87c6-13a47f8fcd3e` · framed by typography partition `biomass` bonds `59` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ce2ed9e8-a65c-847d-832f-28346fbc4320` · framed by typography partition `biomass` bonds `59` · `pnpm readme` · `pnpm readme:check`</sub>

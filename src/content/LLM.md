@@ -3,8 +3,8 @@
 
 # content
 
-path `content` · uuid `35b52066-2958-8af0-80dd-638729941bf2` · diamond `0e2dffe7-f8bc-8e32-b8ef-b8975423a743`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `content` · uuid `c85ef0e5-7776-80ce-a64b-3a0b54ccdde4` · diamond `e38d8a82-84de-86aa-94d5-9a32b41d1879`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports advertiser·article·carbohydrate·cholesterol·collapse·fat·fiber·health·law·location·main·merge·page·protein·rating·reference·saturated·shared·size·sodium·sti·sugar·time·topic·trans·type·unsaturated·url·web · exports content · escapes —
 links `29/29` · folded `1` · bonds in `34` out `34`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law content is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `8c475c8a-c070-86af-ba38-ae799e642be0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b2822c25-6284-88f4-8397-3bac3e444204` · `pnpm readme` · `pnpm computed:check`</sub>

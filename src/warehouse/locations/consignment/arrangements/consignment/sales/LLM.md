@@ -3,15 +3,15 @@
 
 # sales
 
-path `warehouse/locations/consignment/arrangements/consignment/sales` · uuid `5c839d12-9323-88a8-9458-a3d71964161c` · diamond `a113f151-362f-8cf6-8d15-1d3cb6061703`
-horo `5` `round` · trinity `1·1·1` · sealed `1`
+path `warehouse/locations/consignment/arrangements/consignment/sales` · uuid `997adbe8-1256-86d0-88db-b5c3c987d8c2` · diamond `ea37e63a-aa7f-86c2-ab39-fc707cc0bfe5`
+horo `8` `crest` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
-links `19/19` · folded `1` · bonds in `6` out `7`
+links `19/19` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·first·id·landmarks·landmarks·progression·spouse · ← accounting·first·id·landmarks·progression·spouse
+neighbors → access·accounting·commission·devices·law·opportunity·receipts·standard · ← access·accounting·commission·devices·law·opportunity·receipts·standard
 analysis —
 law the sale date IS the control-transfer moment — it derecognises consignment inventory and books one balanced [[entry]] (Dr Cash/AR + Commission + COGS = Cr Revenue + Inventory), reversal-only, never a destructive edit ([[balance]]).
 
 ---
 
-<sub>content-uuid `cfd11739-462f-8bfa-a2ce-fe767a0e0336` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `bc3c393f-776e-86ac-99fc-c6e23da4601b` · `pnpm readme` · `pnpm computed:check`</sub>

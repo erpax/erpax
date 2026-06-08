@@ -21,9 +21,9 @@
 
 ## typography graph
 
-- partition `biomagnetism` · sub-root `9d517f80-7f00-8bb2-afdb-524682db5790`
+- partition `biomagnetism` · sub-root `384be47b-746b-8d41-bd00-eac39fb93040`
 - bond degree `43` · analysis neighbors `aura`
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- graph root `1cef4f02-a3fa-83a5-8ea0-120b724ef456`
 
 ## [[cloudflare]] bindings
 
@@ -33,6 +33,44 @@
 
 —
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·5 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
 - bond degree `43` · sealed `1` · horo `5`
@@ -41,7 +79,7 @@
 
 ## identity
 
-- uuid `9d517f80-7f00-8bb2-afdb-524682db5790`
+- uuid `384be47b-746b-8d41-bd00-eac39fb93040`
 - bonds in `13` · out `13`
 - trinity form·code·proof `1`·`0`·`0`
 - links `18` / `18`
@@ -53,4 +91,4 @@
 
 ---
 
-<sub>content-uuid `1f7f9250-f704-8533-924f-ee859935ade5` · framed by typography partition `biomagnetism` bonds `43` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b4448be6-ff61-80cd-b98e-3b471cbbad7a` · framed by typography partition `biomagnetism` bonds `43` · `pnpm readme` · `pnpm readme:check`</sub>

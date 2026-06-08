@@ -2,9 +2,11 @@
 
 # navigation
 
-> atom `navigation` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
+> atom `navigation` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
+
+> account code `navigation` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,15 +23,93 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## [[entropy]] — gaps · seals
+
+> account code `navigation` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+|  | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.4` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[diamond]]/sealed `1.585` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `0` eb | Σ seal `12.985` eb |
+
+> net residual `-12.985` eb · seal/gap ratio `1` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `navigation` · sub-root `a0514b42-5583-858b-b6a7-941c83a8d4c7`
+- partition `navigation` · sub-root `2f13d67f-ce51-8175-8b6d-fa7bbf6ee96c`
 - bond degree `22` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `ec673811-cc2c-8848-bd41-d0c818433cd7`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `nav · group · route computed from the path only — never assigned` · banner
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·4 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `22` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `2`
 
 ## identity
 
-- uuid `a0514b42-5583-858b-b6a7-941c83a8d4c7`
+- uuid `f6120685-a866-8b90-84b5-3bbdf166261e`
 - bonds in `7` · out `7`
 - trinity form·code·proof `1`·`1`·`1`
 - links `6` / `6`
@@ -41,4 +121,4 @@
 
 ---
 
-<sub>content-uuid `1e37805f-7b30-8981-a9a5-a622cb50d471` · framed by typography partition `navigation` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `aef28df2-fd51-8017-a8ae-0d94da0e2773` · framed by typography partition `navigation` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>

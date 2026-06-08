@@ -3,15 +3,15 @@
 
 # country
 
-path `country` · uuid `24c78c98-2472-870d-a708-8b616c83dbea` · diamond `73d52bf1-99a4-80df-87e1-8c523ae632a6`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `country` · uuid `611252a6-7a64-8bf2-8282-26fe595a603d` · diamond `d9684fad-49a2-816c-b58c-99a2e76af311`
+horo `1` `base` · trinity `1·0·0` · sealed `0`
 imports address·applicable·assembly·last·law·origin·policy·processing·return · exports country · escapes —
-links `9/9` · folded `1` · bonds in `16` out `16`
+links `9/9` · folded `1` · bonds in `17` out `17`
 faces worker·plugin·pwa `0·0·0`
-neighbors → address·api·applicable·assembly·client·context·fallback·id·last·law·origin·policy·processing·return·trading·validation · ← address·api·applicable·assembly·client·context·fallback·id·last·law·origin·policy·processing·return·trading·validation
+neighbors → address·api·api·applicable·assembly·client·context·fallback·id·last·law·origin·policy·processing·return·trading·validation · ← address·api·api·applicable·assembly·client·context·fallback·id·last·law·origin·policy·processing·return·trading·validation
 analysis —
 law country is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `dc257a27-1422-8454-90cd-b3af1c02ee61` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a980a492-4479-8b05-9f52-82ea7738c70a` · `pnpm readme` · `pnpm computed:check`</sub>

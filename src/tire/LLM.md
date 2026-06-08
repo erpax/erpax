@@ -3,15 +3,15 @@
 
 # tire
 
-path `tire` · uuid `1c5beaa4-69b7-862a-b325-6e6d2fec8c42` · diamond `138bb564-8f4d-8e97-84ba-db30ee67027e`
+path `tire` · uuid `1c5beaa4-69b7-862a-b325-6e6d2fec8c42` · diamond `d711ff01-0bf8-847b-9d74-7af791f04a11`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·shop·sti · exports tire · escapes —
-links `5/5` · folded `1` · bonds in `7` out `7`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → bedrooms·cohort·declarations·landmarks·memories·note·stat · ← bedrooms·cohort·declarations·landmarks·memories·note·stat
+neighbors → collapse·law·merge·shop·sti · ← collapse·law·merge·shop·sti
 analysis —
 law tire is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `a7482308-03ca-8f48-a690-f9654b06afd4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0418a59d-5f68-8b75-8392-8c5d12775013` · `pnpm readme` · `pnpm computed:check`</sub>

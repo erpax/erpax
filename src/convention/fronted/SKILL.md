@@ -1,8 +1,91 @@
 ---
 name: fronted
-description: Use when checking whether every atom has a front door — the computed convention that each SKILL.md carries valid name and description frontmatter, measured live as coverage = fronted / total over the real corpus tree.
+description: "Use when checking whether every atom has a front door — the computed convention that each SKILL.md carries valid name and description frontmatter, measured live as coverage = fronted / total over the real corpus tree."
+atomPath: convention/fronted
+coordinate: convention/fronted · 5/round · f0d4b2ac
+contentUuid: "2a3bd429-2426-54a6-816a-f5415565584a"
+diamondUuid: "8b38f633-8084-8a43-a2fb-f34d61a94a8d"
+uuid: "f0d4b2ac-e78c-8153-842b-48887b14eddd"
+horo: 5
+bonds:
+  in:
+    - akashic
+    - collapse
+    - complete
+    - convention
+    - cost
+    - exported
+    - law
+    - lawful
+    - merge
+    - named
+  out:
+    - akashic
+    - collapse
+    - complete
+    - cost
+    - exported
+    - law
+    - lawful
+    - merge
+    - named
+typography:
+  partition: convention
+  bondDegree: 31
+  neighbors: []
+standards:
+  - "schema.org — the type vocabulary, collided to single words"
+bindings: []
+neighbors:
+  wikilink:
+    - akashic
+    - collapse
+    - complete
+    - cost
+    - exported
+    - law
+    - lawful
+    - merge
+    - named
+  matrix:
+    - akashic
+    - collapse
+    - complete
+    - cost
+    - exported
+    - law
+    - lawful
+    - merge
+    - named
+  backlinks:
+    - akashic
+    - collapse
+    - complete
+    - cost
+    - exported
+    - law
+    - lawful
+    - merge
+    - named
+signatures:
+  computationUuid: "f5fef8cc-2b94-863f-819b-ebca9a61848d"
+  stages:
+    - stage: path
+      stageUuid: "36fcaff5-aec2-895f-974a-ce889f71d491"
+    - stage: trinity
+      stageUuid: "a7629fe9-3766-8921-9637-0df9e6e0245c"
+    - stage: boundary
+      stageUuid: "d4191e99-6b96-80e9-a752-f851d98eaae7"
+    - stage: links
+      stageUuid: "b38c3fbd-1ff6-8166-b76b-98c824abc5fe"
+    - stage: horo
+      stageUuid: "43a41101-46de-8c02-8b19-275e7f432909"
+    - stage: seal
+      stageUuid: "b2df40a5-ca58-8194-b601-63e732eef378"
+    - stage: uuid
+      stageUuid: "851962a1-2c1e-8491-a500-75d2b7ccd80e"
+version: 2
 ---
-
 # convention/fronted — every SKILL.md has valid name + description frontmatter
 
 The fronted convention, written as a self-measuring atom. The frontmatter is the atom's front door — `name` is its identity (the slug the router speaks) and `description` is its "Use when…" trigger (how an agent decides to read it). A SKILL.md missing either field has no front: it cannot be addressed by name nor selected by intent, so it is invisible to the router and the agent alike. This convention closes that gap — every atom's frontmatter carries BOTH a `name:` line and a `description:` line ([[law]]).

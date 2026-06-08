@@ -3,7 +3,7 @@
 
 # business
 
-path `business` · uuid `fb566b9c-87b0-8b22-a06a-acb0cc064adb` · diamond `faf4c11a-0307-8d27-bf39-2507116d87c9`
+path `business` · uuid `50fe359c-0894-8f5d-a1cf-8ae6845b62cb` · diamond `50fd9ac2-4d7d-8ae1-a6e5-4ef67dd0fd88`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports audience·automotive·beauty·collapse·construction·days·entertainment·entity·event·function·health·home·hvac·law·local·lodging·medical·merge·online·sti·type · exports business · escapes —
 links `21/21` · folded `1` · bonds in `22` out `22`
@@ -14,4 +14,4 @@ law business is one schema.org word, content-addressed; the same word collides e
 
 ---
 
-<sub>content-uuid `b2e4920b-1915-85a8-a42a-96738762ba1b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f8b9b742-d5ca-8e52-9b7e-b2611a367af6` · `pnpm readme` · `pnpm computed:check`</sub>

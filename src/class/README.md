@@ -2,7 +2,7 @@
 
 # class
 
-> atom `class` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
+> atom `class` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -21,9 +21,9 @@
 
 ## typography graph
 
-- partition `class` · sub-root `1debef4f-1c02-8493-a0dc-a5843ff8f8c3`
+- partition `class` · sub-root `3a3eeffd-f1f2-8199-8e60-4bf69efe72c6`
 - bond degree `27` · analysis neighbors `agent`
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -33,15 +33,53 @@
 
 - `schema.org — the type vocabulary, collided to single words` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·4 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `27` · sealed `1` · horo `1`
+- bond degree `27` · sealed `1` · horo `4`
 - variance `0` · balanced `1` · trinity sum `1`
 - bindings `0` · standards `1`
 
 ## identity
 
-- uuid `1debef4f-1c02-8493-a0dc-a5843ff8f8c3`
+- uuid `3a3eeffd-f1f2-8199-8e60-4bf69efe72c6`
 - bonds in `7` · out `7`
 - trinity form·code·proof `1`·`0`·`0`
 - links `7` / `7`
@@ -53,4 +91,4 @@
 
 ---
 
-<sub>content-uuid `a99f8d1f-0ad3-86c2-bbd1-2c56111df1ce` · framed by typography partition `class` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c15d7d35-546e-8a5e-92b3-f2b607a00294` · framed by typography partition `class` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>

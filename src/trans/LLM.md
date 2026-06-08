@@ -3,15 +3,15 @@
 
 # trans
 
-path `trans` · uuid `e801510b-f82a-8553-99e1-a76274850fb1` · diamond `1c044859-d9bb-8111-99c7-9977f26a9b9b`
+path `trans` · uuid `e801510b-f82a-8553-99e1-a76274850fb1` · diamond `fc8c479f-7fc2-8cd5-886e-0e83280ae620`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·content·fat·law·merge·sti · exports trans · escapes —
-links `6/6` · folded `1` · bonds in `8` out `8`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → airline·close·cohort·industry·landmarks·memories·provider·stat · ← airline·close·cohort·industry·landmarks·memories·provider·stat
+neighbors → collapse·content·fat·law·merge·sti · ← collapse·content·fat·law·merge·sti
 analysis —
 law trans is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `68a03c78-7bba-81f6-ac49-4d1afce425bf` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `539313f8-0b9f-8a40-9a73-16d5331aa9bd` · `pnpm readme` · `pnpm computed:check`</sub>

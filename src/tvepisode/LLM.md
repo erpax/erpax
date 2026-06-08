@@ -8,10 +8,10 @@ horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports tvepisode · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law tvepisode is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `200ea45c-384d-8597-8b08-65fd453a9cc1` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3e056662-582f-829a-b2b9-314d5b812b4c` · `pnpm readme` · `pnpm computed:check`</sub>

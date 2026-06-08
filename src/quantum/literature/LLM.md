@@ -3,10 +3,10 @@
 
 # literature
 
-path `quantum/literature` · uuid `d8b50e24-5a85-80a6-bbac-23c94813287b` · diamond `b7321039-cacc-8d17-8db2-c30d37408e38`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
-imports akashic·gravity·law·linearity·merge·proof·reality·research·snapshot·translation·uuid·word · exports literature · escapes —
-links `22/22` · folded `1` · bonds in `12` out `12`
+path `quantum/literature` · uuid `227a39ea-2cb3-8cce-8f89-771a166abe77` · diamond `914cf25c-82b8-8232-b597-a20a7a77190c`
+horo `1` `base` · trinity `1·1·1` · sealed `1`
+imports @/integrity·@/path · exports const·function · escapes —
+links `31/31` · folded `1` · bonds in `12` out `12`
 faces worker·plugin·pwa `1·0·0`
 neighbors → akashic·gravity·law·linearity·merge·proof·reality·research·snapshot·translation·uuid·word · ← akashic·gravity·law·linearity·merge·proof·reality·research·snapshot·translation·uuid·word
 analysis —
@@ -14,4 +14,4 @@ law literature is the unbounded word-chain over a bounded alphabet (the gravity 
 
 ---
 
-<sub>content-uuid `6c403de6-1dc6-8956-b028-3b86b7d0cc49` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `65f7bea8-713b-863d-9f64-da632ef6f77f` · `pnpm readme` · `pnpm computed:check`</sub>

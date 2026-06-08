@@ -3,15 +3,15 @@
 
 # voting
 
-path `voting` · uuid `d2466ea2-b080-8d66-a059-ea5c412a5956` · diamond `a46b55a2-b15b-8922-b332-1eccabd43d6b`
+path `voting` · uuid `d2466ea2-b080-8d66-a059-ea5c412a5956` · diamond `a3496ffe-9675-86bf-b19b-8943893d30c2`
 horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports @/integrity · exports BallotKind·VoteValue·bundles·function·interface · escapes —
-links `10/10` · folded `1` · bonds in `14` out `14`
-faces worker·plugin·pwa `0·0·0`
-neighbors → breakfast·catalogue·cohort·destination·dropoff·entertainment·fdacategory·flight·homeopathic·landmarks·list·marry·memories·sell · ← breakfast·catalogue·cohort·destination·dropoff·entertainment·fdacategory·flight·homeopathic·landmarks·list·marry·memories·sell
+links `10/10` · folded `1` · bonds in `10` out `10`
+faces worker·plugin·pwa `1·0·0`
+neighbors → corruption·cost·duality·fractal·governance·history·identity·merge·proof·society · ← corruption·cost·duality·fractal·governance·history·identity·merge·proof·society
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `e86f1c3b-d8ee-87f3-b8b5-8bbe7c4c67a4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `55b9e7f1-7e28-85d0-abf0-edf66491fc46` · `pnpm readme` · `pnpm computed:check`</sub>

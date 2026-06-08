@@ -2,7 +2,7 @@
 
 # email
 
-> atom `email` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
+> atom `email` · horo `1` `base` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -17,13 +17,13 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `7` | Σ `7` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `email` · sub-root `92d28840-d260-8e3b-83f6-7f8b7795e559`
-- bond degree `12` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- bond degree `0` · analysis neighbors —
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
 
 ## [[cloudflare]] bindings
 
@@ -36,8 +36,8 @@
 
 ## analytics
 
-- bond degree `12` · sealed `1` · horo `1`
-- variance `0` · balanced `1` · trinity sum `1`
+- bond degree `0` · sealed `0` · horo `1`
+- variance `1` · balanced `0` · trinity sum `1`
 - bindings `0` · standards `2`
 
 ## identity
@@ -50,8 +50,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `3ea3e6c1-f72b-8018-8df9-ddef30a17011` · framed by typography partition `email` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d7fa4aa1-7cb9-8fcd-bf32-406e87d6f7a5` · framed by typography partition `email` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

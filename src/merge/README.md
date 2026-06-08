@@ -2,41 +2,142 @@
 
 # merge
 
-> atom `merge` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
+> atom `merge` · horo `8` `crest` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `merge` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
+| [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
 | [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
 | [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
 | [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
 | [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
-| Σ `7` | Σ `7` |
+| Σ `9` | Σ `9` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
+
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+- `gap:stray:[[gap]]/[[diamond]]/stray/open/`
+
+### collapse
+
+- `balance:variance=1`
+- `seal:unsealed`
+- `trigger:Use when reasoning about convergence/federation in erpax — same content ⇒ same id (content-uuid), same (domain×position×element) ⇒ same path; data and structure set-union with no coordination. Federation, dedup, \\\`
+- `trigger:Use when reasoning about convergence/federation in erpax — same content ⇒ same id (content-uuid), same (domain×position×element) ⇒ same path; data and structure set-union with no coordination. Federation, dedup, \\\"all agents one erpax\\\".`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `13a8eedf-8f9a-800a-9749-b26256981853` · `79cad518-611e-850a-a0a0-f40f74418887` · `e17f1a12-86f5-8097-98f3-3ab8de8d8802` · `f3a5c5d5-777c-80f6-a239-bd6da261012a`
+- content uuids `03c3ed78-3bc8-8b0d-a654-c4a8d91c631f` · `1e5b2e19-eb7f-89e9-a4f7-dca4f55ab8d7` · `b0df6904-55c8-87be-8e50-6b21d6812577` · `fa6185d1-4182-81da-a9e2-d54371d8c9f4`
+
+## [[entropy]] — gaps · seals
+
+> account code `merge` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[diamond]]/stray/open/ `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.8` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+| Σ gap `3` eb | Σ seal `8.8` eb |
+
+> net residual `-5.8` eb · seal/gap ratio `2.933` · [[entropy]] · [[seal]]
 
 ## typography graph
 
-- partition `merge` · sub-root `dbe80a0f-2a68-84e7-b5d0-7aab701c3d9f`
-- bond degree `5364` · analysis neighbors `aura`
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- partition `merge` · sub-root `7e40bf96-d40d-83f9-b83a-1d2333d9b3b8`
+- bond degree `0` · analysis neighbors —
+- graph root `13b11924-c79c-81e8-a3e1-60d201bfa5cd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unbalanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| not-held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·8 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `0` · sealed `0` · horo `8`
+- variance `1` · balanced `0` · trinity sum `3`
+- bindings `0` · standards `0`
 
 ## identity
 
-- uuid `2091437a-c6eb-8672-91c7-1797d57f8f23`
-- bonds in `1788` · out `1755`
-- trinity form·code·proof `1`·`0`·`0`
+- uuid `7e40bf96-d40d-83f9-b83a-1d2333d9b3b8`
+- bonds in `1871` · out `1871`
+- trinity form·code·proof `1`·`1`·`1`
 - links `30` / `30`
 - folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `cf73e617-f66c-8894-8d64-0aedb09d30ac` · framed by typography partition `merge` bonds `5364` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `7684b790-7e39-8a12-af1d-66bbe4d6eb87` · framed by typography partition `merge` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

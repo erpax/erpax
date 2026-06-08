@@ -9,3 +9,4 @@
  */
 
 export * from './initializeTrial'
+export * from './normalizeRouting'

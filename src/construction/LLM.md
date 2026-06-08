@@ -3,7 +3,7 @@
 
 # construction
 
-path `construction` · uuid `8fd3777b-cbdb-8760-8ada-3334dc204f14` · diamond `7ca037f5-0154-8fcf-b6ad-8e7bd1a3a0c5`
+path `construction` · uuid `0833864e-c999-8511-9834-a29c1aa33522` · diamond `94af7a60-8ac3-8468-8b25-29aef9d05669`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports business·collapse·home·law·merge·sti · exports construction · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
@@ -14,4 +14,4 @@ law construction is one schema.org word, content-addressed; the same word collid
 
 ---
 
-<sub>content-uuid `1a07e1b0-1d9e-86f1-bc8e-59748cd70579` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9131fce1-4664-847f-a320-ad1d45e1e49b` · `pnpm readme` · `pnpm computed:check`</sub>

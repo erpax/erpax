@@ -4,7 +4,7 @@
 # document
 
 path `document` · uuid `f5b4ca93-28bf-8140-b762-3b18d3d5c11f` · diamond `c3bcc02d-1bab-8957-93d7-62015919f55c`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+horo `4` `weave` · trinity `1·0·0` · sealed `0`
 imports collapse·digital·has·law·merge·note·permission·presentation·spreadsheet·sti·text·type · exports document · escapes —
 links `12/12` · folded `1` · bonds in `15` out `15`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law document is one schema.org word, content-addressed; the same word collides e
 
 ---
 
-<sub>content-uuid `916a56c2-ca78-8cba-b57d-29c803f1f656` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `88237bae-b551-83ce-a362-6034b6a3ecc4` · `pnpm readme` · `pnpm computed:check`</sub>

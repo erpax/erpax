@@ -8,10 +8,10 @@ horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports tape · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → chemical·landmarks·painting·quotation · ← chemical·landmarks·painting·quotation
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law tape is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `157a80eb-10a4-898f-b8ba-8586ff082649` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3f297b97-d325-8913-a9b9-e6820c78aa21` · `pnpm readme` · `pnpm computed:check`</sub>

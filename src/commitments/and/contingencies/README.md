@@ -6,6 +6,8 @@
 
 ## [[debit]] · [[credit]]
 
+> account code `commitments/and/contingencies` · currency `eb` (entropy-bit)
+
 | [[debit]] | [[credit]] |
 | -------- | --------- |
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
@@ -21,11 +23,58 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+
+### collapse
+
+- `balance:conserved`
+- `law:an off-balance-sheet obligation is disclosed in the notes under the IAS-37 likelihood ladder but recognition is prohibited until it crosses the probable+measurable threshold — at which point it reclassifies to a recognised provision, never the reverse silently.`
+- `seal:unsealed`
+- `trigger:Use when disclosing off-balance-sheet obligations in financial statement notes — capex commitments, purchase obligations, litigation, guarantees, performance bonds, tax disputes, insurance recoveries — with IAS-37 likelihood ladder and reclassification-to-provision workflow; IAS-37 §86-92 / ASC-440 / ASC-450 disclosure. The structured notes-disclosure register distinct from recognised provisions.`
+- `trigger:an off-balance-sheet obligation is disclosed in the notes under the IAS-37 likelihood ladder but recognition is prohibited until it crosses the probable+measurable threshold — at which point it reclassifies to a recognised provision, never the reverse silently.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `1a17e3eb-56ca-8afc-b1f3-26be6ae28bd6` · `af0534fd-1311-8db1-bbcd-2b2d027bb527`
+- content uuids `12a6625b-a5c9-8111-ae62-98ee50d6f8d4` · `51215616-c1a6-8ea7-8f55-0c39ef26d21d`
+
+## [[entropy]] — gaps · seals
+
+> account code `commitments/and/contingencies` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.7` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `1` eb | Σ seal `11.7` eb |
+
+> net residual `-10.7` eb · seal/gap ratio `11.7` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `commitments` · sub-root `98330a8e-5a19-8bf9-933b-24c323542f1f`
+- partition `commitments` · sub-root `07fd58f4-d8dd-8358-8e78-3adb94d1616a`
 - bond degree `31` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
 
 ## [[cloudflare]] bindings
 
@@ -38,22 +87,59 @@
 - `IFRS IAS-37 §27-30 recognition-prohibition` · banner
 - `IFRS IAS-37 §86-92 disclosure-requirements` · banner
 - `IFRS IFRS-15 §B50 onerous-contract-disclosure` · banner
-- `ISO-19011:2018 audit-trail off-balance-sheet` · banner
 - `ISO-4217:2015 currency-codes` · banner
 - `ISO-8601-1:2019 date-time` · banner
 - `SOX §404 internal-controls disclosure-completeness` · banner
 - `US-GAAP ASC-440 commitments` · banner
 - `US-GAAP ASC-450-20-50 loss-contingency-disclosure` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·7 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
 - bond degree `31` · sealed `0` · horo `7`
 - variance `0` · balanced `1` · trinity sum `3`
-- bindings `0` · standards `11`
+- bindings `0` · standards `10`
 
 ## identity
 
-- uuid `05fb6530-62f2-8853-b471-1b0388782190`
+- uuid `a0765a06-cfcc-8e03-9a22-cf685f918079`
 - bonds in `10` · out `10`
 - trinity form·code·proof `1`·`1`·`1`
 - links `7` / `7`
@@ -65,4 +151,4 @@
 
 ---
 
-<sub>content-uuid `7fa87fb7-192c-8f24-bb89-cbd12b3faaa3` · framed by typography partition `commitments` bonds `31` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `42b5ed08-ab0a-8267-9d7b-8441c94fb38d` · framed by typography partition `commitments` bonds `31` · `pnpm readme` · `pnpm readme:check`</sub>

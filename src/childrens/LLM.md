@@ -3,8 +3,8 @@
 
 # childrens
 
-path `childrens` · uuid `06ef19d1-552b-8477-a0d4-f4093054d609` · diamond `fec7e4a0-73cb-83c7-b253-1891456dad4c`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `childrens` · uuid `1b726f15-cef0-8728-a656-9b84c4152427` · diamond `0731fa41-963e-8e98-aa67-7cc6b53b450a`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·event·law·merge·sti · exports childrens · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law childrens is one schema.org word, content-addressed; the same word collides 
 
 ---
 
-<sub>content-uuid `424abaa6-ff06-886f-8e8f-e01ddf93ab8e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `fecb9f72-3f1b-82f4-8e48-6be5ac24b328` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # events
 
-path `audit/events` · uuid `6197c33f-5deb-8007-bd53-cf9866a7afb3` · diamond `c655200f-fbb2-83cb-94f1-85f08bd069bc`
+path `audit/events` · uuid `cedd07f4-fd1e-81d6-a879-2e1c8c6e875d` · diamond `d5eba42c-8ae1-8698-9790-f408930773f9`
 horo `8` `crest` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/auto/populate/tenant · exports default · escapes —
-links `5/5` · folded `1` · bonds in `23` out `27`
+links `5/5` · folded `1` · bonds in `12` out `12`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·accounting·auditright·auth·carriers·currency·entries·fields·hooks·horo·identity·incident·instances·law·law·law·lineage·materiality·observability·party·periods·proof·proof·shipments·standard·standard·sub · ← access·accounting·auditright·auth·carriers·currency·entries·fields·hooks·horo·identity·incident·instances·law·lineage·materiality·observability·party·periods·proof·shipments·standard·sub
+neighbors → auditright·horo·identity·incident·instances·lineage·materiality·observability·party·proof·standard·sub · ← auditright·horo·identity·incident·instances·lineage·materiality·observability·party·proof·standard·sub
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `b96e64dc-8d08-8054-aa88-c5023530fd0e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7ccbf786-e21b-80ec-aaad-9b8d66f79317` · `pnpm readme` · `pnpm computed:check`</sub>

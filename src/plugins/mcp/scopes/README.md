@@ -2,9 +2,11 @@
 
 # scopes
 
-> atom `plugins/mcp/scopes` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
+> atom `plugins/mcp/scopes` · horo `1` `base` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `plugins/mcp/scopes` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,15 +23,121 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+
+### collapse
+
+- `balance:conserved`
+- `law:scopes is one word on the plugins/mcp diamond path — `plugins/mcp/scopes`, not camelCase `mcpScopes`.`
+- `seal:unsealed`
+- `trigger:Use when collapsing MCP api-key capability columns to a compact deny-list — the matrix→cross collapse for @payloadcms/plugin-mcp at erpax scale (D1 100-col cap); virtual afterRead repopulates the handler's read shape default-open, narrowed by scopes.deny.`
+- `trigger:[[access]]`
+- `trigger:[[cross]]`
+- `trigger:[[mcp]]`
+- `trigger:[[plugins]]`
+- `trigger:`toCamelCase` · `capabilitiesFor` · `collapseApiKeyScopes`. Wired in `payload.config.ts` on the api-keys collection.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `9f1daba7-ade1-875b-a394-c329134f2387` · `e89b84ba-80af-8654-8e8c-4e79b8fcdd23`
+- content uuids `3b919bfd-ae44-825a-bc74-d7b0ab7c4037` · `631a861b-63f5-8b0d-8e1d-a984d865350c`
+
+## [[entropy]] — gaps · seals
+
+> account code `plugins/mcp/scopes` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.1` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `1` eb | Σ seal `11.1` eb |
+
+> net residual `-10.1` eb · seal/gap ratio `11.1` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `plugins` · sub-root `cf2d3a11-45d9-8fc6-8741-3ab870dea972`
+- partition `plugins` · sub-root `8e9cd352-bbbf-89be-8081-9bc36b5b4a1f`
 - bond degree `15` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ISO-27002` · catalogue
+- `ISO/IEC 27001 §A.9.4.1 information access restriction` · banner
+- `ISO/IEC 27002 §5.15 access-control + §5.18 access-rights (per-key narrowing)` · banner
+- `ISO/IEC-27002:2022` · catalogue
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·1 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `15` · sealed `0` · horo `1`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `4`
 
 ## identity
 
-- uuid `03cf6368-d501-828f-854e-64659e8b20ee`
+- uuid `fe5be69e-5087-8798-8ab2-2c5d3affe9a0`
 - bonds in `5` · out `5`
 - trinity form·code·proof `1`·`1`·`1`
 - links `5` / `5`
@@ -37,8 +145,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `4e1e4512-5184-8007-8b24-0244b9be477e` · framed by typography partition `plugins` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `1e4734a1-e55e-8a49-9310-a84c83f5261c` · framed by typography partition `plugins` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

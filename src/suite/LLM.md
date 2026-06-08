@@ -3,15 +3,15 @@
 
 # suite
 
-path `suite` · uuid `a84007bb-bfcb-8ccf-993a-cc4b328fb740` · diamond `a6e4e3c6-784d-8ddf-b767-54ed686c8352`
+path `suite` · uuid `a84007bb-bfcb-8ccf-993a-cc4b328fb740` · diamond `5fc95a89-2149-8156-8888-3e7be0f8708e`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports application·law · exports suite · escapes —
-links `2/2` · folded `1` · bonds in `20` out `20`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·accounting·binding·corruption·dropoff·euenergy·finding·holographic·id·itcooperative·itsocial·landmarks·lifestyle·list·notice·results·spouse·stat·submissions·system · ← access·accounting·binding·corruption·dropoff·euenergy·finding·holographic·id·itcooperative·itsocial·landmarks·lifestyle·list·notice·results·spouse·stat·submissions·system
+neighbors → application·law · ← application·law
 analysis —
 law suite is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `fe13265b-c210-86b4-a5ae-1a22d873066d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6e22273a-2b71-80a6-a56d-0effc80fa6dc` · `pnpm readme` · `pnpm computed:check`</sub>

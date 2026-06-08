@@ -3,8 +3,8 @@
 
 # catholic
 
-path `catholic` · uuid `d2eee81d-b2bf-838e-98f7-7bb8f057a3b8` · diamond `b3a318a4-3c81-89ef-b8c9-d812b5318372`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `catholic` · uuid `a92baee9-850a-8d65-a057-d41212c924a3` · diamond `d281c1fe-3d2b-868a-8305-3b44cc47a42e`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports church·collapse·law·merge·sti · exports catholic · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law catholic is one schema.org word, content-addressed; the same word collides e
 
 ---
 
-<sub>content-uuid `2334b04b-b2e2-8e73-a04d-ab5125da3ba6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f0532532-5998-8719-aab6-5144f9e2f071` · `pnpm readme` · `pnpm computed:check`</sub>

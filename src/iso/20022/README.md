@@ -2,7 +2,7 @@
 
 # 20022
 
-> atom `iso/20022` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
+> atom `iso/20022` · horo `1` `base` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -25,7 +25,25 @@
 
 - partition `iso` · sub-root `ea5c4346-ba0e-8fac-9959-143d07932374`
 - bond degree `0` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ISO-13616-1` · catalogue
+- `ISO-17442-1` · catalogue
+- `ISO-20022:2022 universal-financial-industry-message-scheme` · banner
+- `ISO-20022` should grep to a single home that owns the types. Before this module, four places defined overlapping shapes:` · banner
+- `ISO-9362` · catalogue
+
+## analytics
+
+- bond degree `0` · sealed `0` · horo `1`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `5`
 
 ## identity
 
@@ -37,8 +55,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `1c083bfd-de66-8ad6-80e4-c441beea3f66` · framed by typography partition `iso` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a00d0ec5-fc4b-8c28-84e9-c4dd4404f86d` · framed by typography partition `iso` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

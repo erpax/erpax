@@ -3,7 +3,7 @@
 
 # acceptance
 
-path `acceptance` · uuid `840be24b-5e1e-84cd-9823-7a1f5634be8a` · diamond `ad9aac89-8f30-8aa6-a635-385c5a9dc5b9`
+path `acceptance` · uuid `3b75d6e8-4fab-8e55-8ac3-0699553b5f3d` · diamond `9bac2632-c828-8a19-bcc5-445cff50020f`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·expects·law·merge·sti · exports acceptance · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
@@ -14,4 +14,4 @@ law acceptance is one schema.org word, content-addressed; the same word collides
 
 ---
 
-<sub>content-uuid `ed23ff3a-8bee-8571-b8b8-1406c63cdf23` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a53c9797-32df-817f-8c95-e4c2830dd99c` · `pnpm readme` · `pnpm computed:check`</sub>

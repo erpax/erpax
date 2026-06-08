@@ -3,8 +3,8 @@
 
 # blog
 
-path `blog` · uuid `e553a5c5-5541-8f6e-b0d1-9ce78a529b24` · diamond `90eca578-bb6a-8f0a-bf40-4d9f97df9e06`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `blog` · uuid `f80c8864-3751-8b6f-a532-e227096a4276` · diamond `3ecff3f8-18f4-845d-92dd-f0434908f7ec`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports law·live·post·posting·posts·update · exports blog · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law blog is one schema.org word, content-addressed; the same word collides every
 
 ---
 
-<sub>content-uuid `19ba0467-9dda-892c-97d1-ccce71a6c8cc` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2ec90b1e-14b6-84a5-8fed-5103f9fc0855` · `pnpm readme` · `pnpm computed:check`</sub>

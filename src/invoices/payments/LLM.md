@@ -4,7 +4,7 @@
 # payments
 
 path `invoices/payments` · uuid `e2d3c3c6-bde2-8ba9-a943-00c36ccb2ea7` · diamond `cea304aa-7217-82cc-af62-502550eb8f76`
-horo `1` `base` · trinity `1·1·1` · sealed `1`
+horo `1` `base` · trinity `1·1·1` · sealed `0`
 imports @/audit/trail/after/change·@/auth·@/authenticated·@/auto/populate/tenant·@/invoices/payments/hooks · exports const · escapes —
 links `7/7` · folded `1` · bonds in `12` out `18`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law every payment is double-entry money-movement posted to the GL and guarded by
 
 ---
 
-<sub>content-uuid `0d8dcdb9-b222-8feb-8839-c3d8a8531b7e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `391dd679-1c03-8292-90bf-c64e18a6d024` · `pnpm readme` · `pnpm computed:check`</sub>

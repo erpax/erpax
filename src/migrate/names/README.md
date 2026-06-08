@@ -25,7 +25,21 @@
 
 - partition `migrate` · sub-root `ed81d63e-1293-89a0-bf2e-6fe5928ff55c`
 - bond degree `15` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `15` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -41,4 +55,4 @@
 
 ---
 
-<sub>content-uuid `54871021-e40a-8797-8097-4f089e1ca4f0` · framed by typography partition `migrate` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `94bd2108-6bc5-832b-9ebe-64a5194d3e1e` · framed by typography partition `migrate` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

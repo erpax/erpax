@@ -3,8 +3,8 @@
 
 # agreement
 
-path `agreement` · uuid `84a55b78-0d4a-8017-bd46-cae7ed5f552f` · diamond `c7b8e61b-790c-875a-943b-83c27fcf0d2d`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `agreement` · uuid `fb82f3d0-a609-8b05-93ac-be154302d691` · diamond `e36d702a-b461-868d-b85a-4bb949912bec`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports agreement · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law agreement is one schema.org word, content-addressed; the same word collides 
 
 ---
 
-<sub>content-uuid `94c707bf-e573-8cf3-bef1-5bdf62ed443c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1c37e90d-aa34-88c7-9683-38da672c5a11` · `pnpm readme` · `pnpm computed:check`</sub>

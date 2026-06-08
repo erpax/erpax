@@ -3,15 +3,15 @@
 
 # tier
 
-path `tier` · uuid `fcaf1bf1-3269-8512-a4c9-652711800ea4` · diamond `9f33bc8f-7cd5-839f-b9f1-37f89627b080`
+path `tier` · uuid `fcaf1bf1-3269-8512-a4c9-652711800ea4` · diamond `b6c3dbfe-d518-8a23-a7ce-ce817e25ce72`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports benefit·broadcast·drug·enumeration·has·health·law·member·network·plan·program·requirement·service·valid · exports tier · escapes —
-links `14/14` · folded `1` · bonds in `5` out `5`
+links `14/14` · folded `1` · bonds in `14` out `14`
 faces worker·plugin·pwa `0·0·0`
-neighbors → complication·dermatology·landmarks·spouse·tennis · ← complication·dermatology·landmarks·spouse·tennis
+neighbors → benefit·broadcast·drug·enumeration·has·health·law·member·network·plan·program·requirement·service·valid · ← benefit·broadcast·drug·enumeration·has·health·law·member·network·plan·program·requirement·service·valid
 analysis —
 law tier is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `f73ea2b4-eec8-857f-a2e0-bfee05f55edb` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5e2c25df-8a3e-89f6-9eb7-9862574b421b` · `pnpm readme` · `pnpm computed:check`</sub>

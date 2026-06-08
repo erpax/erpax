@@ -2,28 +2,81 @@
 
 # collapse
 
-> atom `collapse` · horo `4` `weave` · [[balance]] `1` · [[seal]] `0`
+> atom `collapse` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
+
+> account code `collapse` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
+| [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
 | [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
 | [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
 | [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
 | [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
-| Σ `7` | Σ `7` |
+| Σ `9` | Σ `9` |
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `explore:aura`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `seal:sealed`
+- `trigger:Use when reducing collection/table sprawl to its canonical minimum — collapse every collection to one of four sinks (an official Payload plugin/template, the trinity node store, a Lexical content block, or a dimension/state/role of an existing node). The \\\`
+- `trigger:Use when reducing collection/table sprawl to its canonical minimum — collapse every collection to one of four sinks (an official Payload plugin/template, the trinity node store, a Lexical content block, or a dimension/state/role of an existing node). The \\\"collapse all to Payload\\\" law; one name across every dimension, drawn from the standards.`
+- `trigger:matter-twin:audit.mjs`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `1`
+- entry uuids `e6f43d57-77a4-8760-acc7-631cd3973d79` · `ed705145-389e-89e2-a74f-8d42177d0bc8`
+- content uuids `36860d60-f6c7-870b-8fc4-52001a179d03` · `4f176398-2993-8695-831a-e0ffc86fb895` · `ed790017-ece4-8c45-9813-f0e9296cfd1d`
+
+## [[entropy]] — gaps · seals
+
+> account code `collapse` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.1` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[diamond]]/sealed `1.585` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `1` eb | Σ seal `12.685` eb |
+
+> net residual `-11.685` eb · seal/gap ratio `12.685` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `collapse` · sub-root `5c3cb38e-0a65-8fb1-a7a5-158f54af9308`
-- bond degree `4790` · analysis neighbors `aura`
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- partition `collapse` · sub-root `36860d60-f6c7-870b-8fc4-52001a179d03`
+- bond degree `4794` · analysis neighbors `aura`
+- graph root `61e567e6-8644-82b2-b3e8-ebb7a3c918b0`
 
 ## [[cloudflare]] bindings
 
@@ -33,24 +86,62 @@
 
 —
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·1 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `4790` · sealed `0` · horo `4`
-- variance `0` · balanced `1` · trinity sum `1`
+- bond degree `4794` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `0`
 
 ## identity
 
-- uuid `5c3cb38e-0a65-8fb1-a7a5-158f54af9308`
-- bonds in `1594` · out `1589`
-- trinity form·code·proof `1`·`0`·`0`
+- uuid `36860d60-f6c7-870b-8fc4-52001a179d03`
+- bonds in `1594` · out `1594`
+- trinity form·code·proof `1`·`1`·`1`
 - links `78` / `78`
 - folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `b3a7f3cb-542a-81d8-9350-f44ee15916aa` · framed by typography partition `collapse` bonds `4790` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ef936a2f-3bdd-8f2c-ab14-1b3b938fcfc1` · framed by typography partition `collapse` bonds `4794` · `pnpm readme` · `pnpm readme:check`</sub>

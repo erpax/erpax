@@ -23,7 +23,21 @@
 
 - partition `hinduism` · sub-root `a75f7f0e-b7f1-82c4-be87-cef2b24f564e`
 - bond degree `92` · analysis neighbors `diamond`
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `92` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `5e4ae63d-517e-88f3-a1cd-e4110679551d` · framed by typography partition `hinduism` bonds `92` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `07d8dce4-26f8-8ca0-a2a8-93739af04077` · framed by typography partition `hinduism` bonds `92` · `pnpm readme` · `pnpm readme:check`</sub>

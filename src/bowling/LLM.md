@@ -3,8 +3,8 @@
 
 # bowling
 
-path `bowling` · uuid `2a61d26b-0edc-819c-97b7-bb7548334b31` · diamond `17a2f37f-e03b-89a6-9cd1-8117fd5a493c`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `bowling` · uuid `5ad0b360-b37a-8f36-8d84-b9db8b83a934` · diamond `0add39a5-5574-8be0-b3db-9640fc6351b2`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports alley·collapse·law·merge·sti · exports bowling · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law bowling is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `2ba41839-c81c-8185-aa1d-217c7ec5cc4a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d2a58684-4670-83e9-92a5-9342904f068a` · `pnpm readme` · `pnpm computed:check`</sub>

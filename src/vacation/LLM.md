@@ -3,15 +3,15 @@
 
 # vacation
 
-path `vacation` · uuid `a51dad4c-ebe7-847f-84ba-f5e3be113d47` · diamond `1312e5fb-e57e-8770-82ae-8ff796d457b3`
+path `vacation` · uuid `a51dad4c-ebe7-847f-84ba-f5e3be113d47` · diamond `1e0880c3-f9f8-8008-831f-ddce7ccb7a2f`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·rental·sti · exports vacation · escapes —
-links `5/5` · folded `1` · bonds in `2` out `2`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → collapse·law·merge·rental·sti · ← collapse·law·merge·rental·sti
 analysis —
 law vacation is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `15b9219c-42b6-8986-ab45-37857c83bf83` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1564e4ed-bbb8-8992-8547-957e375730ac` · `pnpm readme` · `pnpm computed:check`</sub>

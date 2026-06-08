@@ -3,8 +3,8 @@
 
 # cargo
 
-path `cargo` · uuid `75deeea9-65e9-868d-a2e6-7899f0cc0961` · diamond `3ebe8daf-632e-8b8a-b723-e276988896bc`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `cargo` · uuid `88a16200-7e21-8017-bfdb-8cb31ad8865a` · diamond `bb110fd3-9d6f-8fa3-b5b6-b11580613a74`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·volume · exports cargo · escapes —
 links `5/5` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law cargo is one schema.org word, content-addressed; the same word collides ever
 
 ---
 
-<sub>content-uuid `45f87882-b2b4-88b0-b010-bad709607739` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c865fbff-f171-82ff-b035-ee8e88a1814a` · `pnpm readme` · `pnpm computed:check`</sub>

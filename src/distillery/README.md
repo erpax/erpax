@@ -23,7 +23,7 @@
 
 - partition `distillery` · sub-root `ff20de8a-4b39-830f-90ce-8fa9ece7d486`
 - bond degree `6` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `6d10ca9f-e388-820a-9eac-055293f4b20f` · framed by typography partition `distillery` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `358ae8b3-1104-86c0-9b87-a279da70bec0` · framed by typography partition `distillery` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>

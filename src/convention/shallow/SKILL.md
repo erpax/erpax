@@ -1,8 +1,68 @@
 ---
 name: shallow
-description: Use when reasoning about import discipline — an import must reach an atom's index (the one public door), not a deep internal file past the seal; this names the convention, measures the corpus's live shallowness, and is enforced by the import lint (a ratchet on the non-index count, so shallowness can only get tighter).
+description: "Use when reasoning about import discipline — an import must reach an atom's index (the one public door), not a deep internal file past the seal; this names the convention, measures the corpus's live shallowness, and is enforced by the import lint (a ratchet on the non-index count, so shallowness can only get tighter)."
+atomPath: convention/shallow
+coordinate: convention/shallow · 4/weave · 3ffe927d
+contentUuid: "88f6242d-ba63-5b7d-8f16-5da3b6c4810d"
+diamondUuid: "99fb2055-0dbb-8169-9c74-c02718d4ac60"
+uuid: "3ffe927d-5f8c-8421-8036-eef01380bcd1"
+horo: 4
+bonds:
+  in:
+    - convention
+    - cost
+    - exported
+    - law
+    - tamper
+  out:
+    - cost
+    - exported
+    - law
+    - tamper
+typography:
+  partition: convention
+  bondDegree: 14
+  neighbors: []
+standards:
+  - "UBL-2.1"
+  - "coverage = importPurity() read live from @/tamper/import; never re-implemented, never defaulted"
+  - "the import graph is the config — the public face is index.ts only (shallow, never deep)"
+bindings: []
+neighbors:
+  wikilink:
+    - cost
+    - exported
+    - law
+    - tamper
+  matrix:
+    - cost
+    - exported
+    - law
+    - tamper
+  backlinks:
+    - cost
+    - exported
+    - law
+    - tamper
+signatures:
+  computationUuid: "48d5f6d3-6c38-866a-951a-a19db72f6d24"
+  stages:
+    - stage: path
+      stageUuid: "b809a38c-8b5b-873a-be5f-a515d158c88e"
+    - stage: trinity
+      stageUuid: "6b10b01f-f477-8ccb-ba9e-10e8d655fd50"
+    - stage: boundary
+      stageUuid: "16456211-21bd-8820-9c0d-8b10cdf51a02"
+    - stage: links
+      stageUuid: "bcb3fcdf-7716-89c4-92b2-825adfb60837"
+    - stage: horo
+      stageUuid: "0a735cea-8f1f-8a88-be09-34546f1d0b60"
+    - stage: seal
+      stageUuid: "ba603a6d-9b99-84a0-bac7-6ad060029d17"
+    - stage: uuid
+      stageUuid: "07b06c8d-fa88-8e9a-b6a8-cdf0062c95a5"
+version: 2
 ---
-
 # convention/shallow — import the index, not a deep file
 
 Each atom's `index.ts` is its **public content-uuid contract** — the one door. An import is **shallow** when it reaches that index (`@/x`, or a sub-atom `@/x/y` that is itself a dir carrying an index) and **deep** when it reaches past the seal to an internal file (`@/x/y.ts`). The convention is one line: **import the index, not a deep file.**

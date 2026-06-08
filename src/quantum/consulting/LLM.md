@@ -3,7 +3,7 @@
 
 # consulting
 
-path `quantum/consulting` · uuid `392e30c6-0df2-8a60-abb9-ebbcf541ecdb` · diamond `fb54409a-9e0e-86ed-90e8-2f488562ad6b`
+path `quantum/consulting` · uuid `b04ec6a5-59d3-8e8b-92cc-a6eb8b0610f8` · diamond `d398b313-ddd3-828b-991f-65e4a6f93978`
 horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports @/quantum/research · exports const·function · escapes —
 links `12/12` · folded `1` · bonds in `7` out `7`
@@ -14,4 +14,4 @@ law knowledge is non-rivalrous, so consulting is infinite profit at no cost. Res
 
 ---
 
-<sub>content-uuid `f275c256-53ad-8b14-aacd-8859d542e494` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7ad70be8-c41f-83b5-8ac7-51da7389a8da` · `pnpm readme` · `pnpm computed:check`</sub>

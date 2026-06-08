@@ -3,8 +3,8 @@
 
 # box
 
-path `box` · uuid `1bb05e9f-0688-80f1-a239-df93ace1019b` · diamond `564b7b5e-da71-836c-b884-478629dafb4c`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `box` · uuid `75e76ac0-61c4-8c3b-b422-79ccc223831d` · diamond `89d106c4-1335-84b5-9b87-6c276dd4d9cf`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports law·number·office·post · exports box · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law box is one schema.org word, content-addressed; the same word collides every 
 
 ---
 
-<sub>content-uuid `c4d2a2f3-a645-8e01-9367-c3a8d6d99d89` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `895875ee-2804-87ae-b9aa-1cb5519f9d31` · `pnpm readme` · `pnpm computed:check`</sub>

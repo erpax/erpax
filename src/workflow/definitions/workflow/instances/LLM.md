@@ -3,15 +3,15 @@
 
 # instances
 
-path `workflow/definitions/workflow/instances` · uuid `248c8e4a-80e7-867c-b822-c53b3b0dc379` · diamond `e1c377b4-eb73-83e3-b654-d145aa009883`
-horo `5` `round` · trinity `1·1·1` · sealed `1`
+path `workflow/definitions/workflow/instances` · uuid `27a86996-3efd-845f-9abc-90801f13fb96` · diamond `027f8f01-ff33-846a-be38-23f8324d08bb`
+horo `5` `round` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
-links `10/10` · folded `1` · bonds in `7` out `7`
-faces worker·plugin·pwa `0·0·0`
-neighbors → building·cohort·coordinates·landmarks·memories·stat·temperature · ← building·cohort·coordinates·landmarks·memories·stat·temperature
+links `10/10` · folded `1` · bonds in `12` out `12`
+faces worker·plugin·pwa `1·0·0`
+neighbors → access·approved·definitions·escalation·events·fields·hooks·law·resolution·ticket·users·workflow · ← access·approved·definitions·escalation·events·fields·hooks·law·resolution·ticket·users·workflow
 analysis —
 law one instance per (definition × document) walks the steps, appending every decision to `stepHistory` and emitting an audit event per transition — the live run is its own tamper-evident evidence trail.
 
 ---
 
-<sub>content-uuid `94444a80-a0d3-856e-8203-f3c8f2eb8785` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0a9ba8d1-3166-81cb-ac23-fca0fc4835ca` · `pnpm readme` · `pnpm computed:check`</sub>

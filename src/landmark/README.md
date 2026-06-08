@@ -23,7 +23,21 @@
 
 - partition `landmark` · sub-root `263cd5bd-a45b-89ae-b32d-f2cc07bb68b1`
 - bond degree `12` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `12` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `64438b8f-5261-8bfa-b8a9-269921aa40ed` · framed by typography partition `landmark` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b848fe87-f513-8e1d-97f5-47c6e2a183b5` · framed by typography partition `landmark` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

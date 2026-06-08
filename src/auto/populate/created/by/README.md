@@ -2,9 +2,11 @@
 
 # by
 
-> atom `auto/populate/created/by` · horo `2` `share` · [[balance]] `1` · [[seal]] `0`
+> atom `auto/populate/created/by` · horo `5` `round` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `auto/populate/created/by` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,11 +23,62 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `law:authorship is stamped by the server, never the client — `createdBy` is set once, only on create, only from the request [[user]], and only when absent, so the [[audit]] trail's author cannot be forged.`
+- `seal:unsealed`
+- `trigger:ISO-19011:2018 audit-trail authorship-attribution`
+- `trigger:Use when stamping the authoring user onto a row on first save without trusting client input — a beforeChange hook that auto-populates createdBy from the request user, only on create, only when not already set.`
+- `trigger:`autoPopulateCreatedBy` (a `CollectionBeforeChangeHook`). One of the [[auto]]-populate control gates ([[hooks]]).`
+- `trigger:authorship is stamped by the server, never the client — `createdBy` is set once, only on create, only from the request [[user]], and only when absent, so the [[audit]] trail's author cannot be forged.`
+- `trigger:matter-twin:src/auto/populate/created/by/index.ts`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `39a35bda-7d0b-8a50-996b-ff48fae010be` · `798a6215-cd18-82a6-a972-46231bf75634` · `b57a0fde-ac08-8149-9001-b42f2c4b1a7f`
+- content uuids `7f8e1eb7-276a-8add-b526-e53e33cd5d1d` · `8eca08b1-993e-8257-9891-643d55d7f36e` · `fbc93ccb-35cd-8383-9a42-e3d6f0db5a09`
+
+## [[entropy]] — gaps · seals
+
+> account code `auto/populate/created/by` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.5` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `2` eb | Σ seal `11.5` eb |
+
+> net residual `-9.5` eb · seal/gap ratio `5.75` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `auto` · sub-root `fb1afd9b-bd8f-8c8d-8f4e-d2d40410747f`
+- partition `auto` · sub-root `f4fab508-f961-864c-be0f-f7a7df045e62`
 - bond degree `15` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- graph root `86252db0-c776-84eb-b8e4-c884dca3a3ba`
 
 ## [[cloudflare]] bindings
 
@@ -33,19 +86,56 @@
 
 ## [[standards]]
 
-- `ISO-19011:2018 audit-trail authorship-attribution` · banner
 - `SOC-2 CC4.1 monitoring-and-evaluation` · banner
 - `SOX §404 internal-controls` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·5 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `15` · sealed `0` · horo `2`
+- bond degree `15` · sealed `0` · horo `5`
 - variance `0` · balanced `1` · trinity sum `3`
-- bindings `0` · standards `3`
+- bindings `0` · standards `2`
 
 ## identity
 
-- uuid `4e3c7334-b1c1-8588-bdf9-44453db61332`
+- uuid `410069fd-0437-889e-b86d-e94188ace311`
 - bonds in `5` · out `5`
 - trinity form·code·proof `1`·`1`·`1`
 - links `7` / `7`
@@ -57,4 +147,4 @@
 
 ---
 
-<sub>content-uuid `da078cd4-7bf2-8e1c-b92c-c98204c9ea05` · framed by typography partition `auto` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d4a1ebef-5a30-8bbd-ad08-0594dc74a536` · framed by typography partition `auto` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

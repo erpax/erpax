@@ -3,8 +3,8 @@
 
 # checkout
 
-path `checkout` · uuid `aa763508-a9bc-8e98-99e1-4e44d0f40c66` · diamond `f132fcfa-d7f1-8d8d-91d7-ec6383f91a93`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `checkout` · uuid `b86ddca3-90ff-8bcc-8270-fab7e84e77cb` · diamond `abaac0a3-f193-87e8-ae15-680b1c91f1ee`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·page·sti·template·time·url · exports checkout · escapes —
 links `8/8` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law checkout is one schema.org word, content-addressed; the same word collides e
 
 ---
 
-<sub>content-uuid `c4281e6e-f760-82ee-9ca1-f3fcc003024f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `fafb12d7-c5ca-8663-b647-f73f3e7c11fd` · `pnpm readme` · `pnpm computed:check`</sub>

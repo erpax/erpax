@@ -8,10 +8,10 @@ horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports tall · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·mandate·spreadsheet·tamper · ← landmarks·mandate·spreadsheet·tamper
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law tall is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `fe9946a2-661d-8f26-8c6d-90ce84054e94` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `58c704e0-dca9-8659-a001-6dde9ea72656` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # fallback
 
-path `currency/fallback` · uuid `f3f780cd-92f5-8d97-b005-9a31da4f3822` · diamond `cb46e7e6-7ecb-8087-99e5-c3c46e30c5f6`
-horo `8` `crest` · trinity `1·1·1` · sealed `1`
+path `currency/fallback` · uuid `fc53af55-fea5-828a-b5ab-4f1c6819df8d` · diamond `ae8d804e-21b7-8acd-bf6c-d17d1e27afe4`
+horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports @/config/country-specifics·@/config/regional-defaults·@/safety/mode · exports BlankCurrency·async·computeCurrencyUuid·computeExchangeUuid·computeRateQuoteUuid·const·function·interface·the·type · escapes —
-links `9/9` · folded `1` · bonds in `11` out `13`
+links `9/9` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `1·0·0`
-neighbors → balance·collapse·country·currency·integrity·law·law·law·merge·science·sti·unlabelled·uuid · ← balance·collapse·country·currency·integrity·law·merge·science·sti·unlabelled·uuid
+neighbors → collapse·law·merge·science·sti·unlabelled · ← collapse·law·merge·science·sti·unlabelled
 analysis —
 law the blank [[currency]] XXX is the identity element of the currency category — every missing/blank/unknown value resolves to it, it is compatible with every code, and every conversion touching it degrades to the identity rate so the platform never crashes on a missing currency.
 
 ---
 
-<sub>content-uuid `b18c4864-a16a-884b-9462-808ba10f7ded` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `dbef8009-69c0-8e5e-b971-6ca7ae66f6e8` · `pnpm readme` · `pnpm computed:check`</sub>

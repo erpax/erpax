@@ -2,7 +2,7 @@
 
 # default
 
-> atom `default` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
+> atom `default` · horo `4` `weave` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -19,13 +19,13 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
 
 ## typography graph
 
-- partition `default` · sub-root `a58f5bc3-b73e-8d88-bd53-1d143a39d2e0`
-- bond degree `22` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- partition `default` · sub-root `4571afd1-034a-8ae4-9083-c9782058b045`
+- bond degree `0` · analysis neighbors —
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -37,15 +37,53 @@
 - `computed-not-hardcoded · content-addressed identity (RFC 9562) · no free parameters (zero entropy)` · banner
 - `the architectural default is computed from the name (uuid → digit); nothing is assigned` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unbalanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| not-held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·4 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `22` · sealed `1` · horo `1`
-- variance `0` · balanced `1` · trinity sum `3`
+- bond degree `0` · sealed `0` · horo `4`
+- variance `1` · balanced `0` · trinity sum `3`
 - bindings `0` · standards `3`
 
 ## identity
 
-- uuid `a58f5bc3-b73e-8d88-bd53-1d143a39d2e0`
+- uuid `4571afd1-034a-8ae4-9083-c9782058b045`
 - bonds in `7` · out `7`
 - trinity form·code·proof `1`·`1`·`1`
 - links `10` / `10`
@@ -53,8 +91,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `877afa18-dcc1-890c-8c6d-6d9f8b16e020` · framed by typography partition `default` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e15c0e35-4516-8efe-b59e-a2fcaf2df4fc` · framed by typography partition `default` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

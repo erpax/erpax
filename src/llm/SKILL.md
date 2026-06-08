@@ -1,8 +1,133 @@
 ---
 name: llm
-description: Use when wiring a language model into erpax — the LLM is the forge (cheap to generate, costly to trust) and the uuid is the verify; AI-self-sufficient first, the model is the fallback tier behind the 9-layer gate, and every turn is content-addressed so generation only ever works the cheap side of the forge-beats-verify asymmetry.
+description: "Use when wiring a language model into erpax — the LLM is the forge (cheap to generate, costly to trust) and the uuid is the verify; AI-self-sufficient first, the model is the fallback tier behind the 9-layer gate, and every turn is content-addressed so generation only ever works the cheap side of the forge-beats-verify asymmetry."
+atomPath: llm
+coordinate: llm · 1/base · 480842fd
+contentUuid: "1b790e04-1213-56b8-aa72-1bf2e32ff344"
+diamondUuid: "6926ee3d-5b5c-8e8a-8f02-95b4547a29cb"
+uuid: "480842fd-e08e-8865-970c-890c15e9f0e2"
+horo: 1
+bonds:
+  in:
+    - angel
+    - breath
+    - chat
+    - cost
+    - entry
+    - law
+    - limit
+    - llm
+    - matrix
+    - merge
+    - message
+    - observe
+    - projection
+    - proof
+    - self
+    - signal
+    - train
+    - uuid
+  out:
+    - angel
+    - breath
+    - chat
+    - cost
+    - entry
+    - law
+    - limit
+    - llm
+    - matrix
+    - merge
+    - message
+    - observe
+    - projection
+    - proof
+    - self
+    - signal
+    - train
+    - uuid
+typography:
+  partition: llm
+  bondDegree: 67
+  neighbors: []
+standards:
+  - "NIST-FIPS-180-4"
+bindings: []
+neighbors:
+  wikilink:
+    - angel
+    - breath
+    - chat
+    - cost
+    - entry
+    - law
+    - limit
+    - matrix
+    - merge
+    - message
+    - projection
+    - proof
+    - self
+    - signal
+    - train
+    - uuid
+  matrix:
+    - angel
+    - breath
+    - chat
+    - cost
+    - entry
+    - law
+    - limit
+    - llm
+    - matrix
+    - merge
+    - message
+    - observe
+    - projection
+    - proof
+    - self
+    - signal
+    - train
+    - uuid
+  backlinks:
+    - angel
+    - breath
+    - chat
+    - cost
+    - entry
+    - law
+    - limit
+    - llm
+    - matrix
+    - merge
+    - message
+    - observe
+    - projection
+    - proof
+    - self
+    - signal
+    - train
+    - uuid
+signatures:
+  computationUuid: "5ca6148e-fdef-8240-90c4-c3503c48fa85"
+  stages:
+    - stage: path
+      stageUuid: "9631ea9e-406f-87ce-addd-b5d3841a46d7"
+    - stage: trinity
+      stageUuid: "ec945da3-573b-8185-a676-74aeb398e6f3"
+    - stage: boundary
+      stageUuid: "a44aab4f-e00d-866b-a4c1-a2216911c3e0"
+    - stage: links
+      stageUuid: "bef12944-cb6a-88d2-9982-8b2322c55698"
+    - stage: horo
+      stageUuid: "ac586bbd-c000-89aa-a3ad-1f1e27a33c90"
+    - stage: seal
+      stageUuid: "9d574004-5c5a-8819-8388-470144de8a2e"
+    - stage: uuid
+      stageUuid: "5e180472-2d36-841d-8d1f-35e02c4d7a5d"
+version: 2
 ---
-
 # llm — the forge; the uuid is the verify
 
 A language model is a pure **forge**: it projects, cheaply, and is expensive to trust. erpax already has the dual — the [[uuid]] is a pure **verify**: O(1) to decode, impossible to invert ([[tamper/cost]]: the 106-bit one-way floor). So the whole bridge is one constraint — **the LLM forges, a 128-bit address it cannot fake decides.** The model never leaves the cheap side of the forge≫verify asymmetry; this is the [[angel]]⊕archangel dynamic (create ⊕ verify) at the inference scale.

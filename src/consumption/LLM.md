@@ -3,8 +3,8 @@
 
 # consumption
 
-path `consumption` · uuid `740291a7-9381-8bb6-8649-4185d461764f` · diamond `84e8c050-49ef-8f10-9877-95d337e74a05`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `consumption` · uuid `d0a7dc69-da21-8bd5-a69b-06fce1ce3afc` · diamond `f665a052-85eb-8e08-9984-1b82767d3628`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·details·energy·fuel·has·law·merge·sti · exports consumption · escapes —
 links `8/8` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law consumption is one schema.org word, content-addressed; the same word collide
 
 ---
 
-<sub>content-uuid `8410c61d-402f-86f1-89c8-42825b5bfcd1` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1e99755b-734b-84a4-8b97-aa250cf1d20e` · `pnpm readme` · `pnpm computed:check`</sub>

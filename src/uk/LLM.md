@@ -3,15 +3,15 @@
 
 # uk
 
-path `uk` · uuid `1e409d63-c71a-825f-ad3c-b468486a4306` · diamond `0b7a5fd0-eb8e-8a3c-a956-74911f46d74b`
+path `uk` · uuid `1e409d63-c71a-825f-ad3c-b468486a4306` · diamond `cad75b10-87f4-8fe2-9620-06620f8d142f`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·nonprofit·sti·type · exports uk · escapes —
-links `6/6` · folded `1` · bonds in `17` out `17`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → coach·cohort·corrects·dermatologic·doors·driving·landmarks·locality·memories·payments·prerequisites·sanitization·self·spa·stat·steering·tenant · ← coach·cohort·corrects·dermatologic·doors·driving·landmarks·locality·memories·payments·prerequisites·sanitization·self·spa·stat·steering·tenant
+neighbors → collapse·law·merge·nonprofit·sti·type · ← collapse·law·merge·nonprofit·sti·type
 analysis —
 law uk is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `bee97ed6-2b25-801d-a54d-86ecc41a69df` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `faf65db7-f8ae-8b43-9d2c-2a5f4c6fb0de` · `pnpm readme` · `pnpm computed:check`</sub>

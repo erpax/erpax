@@ -25,7 +25,22 @@
 
 - partition `hamiltonian` · sub-root `5916b22b-0498-8ab9-942a-d855ef5b7c8d`
 - bond degree `39` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `CODATA-2018 ħ, h (via ../photon); Schrödinger time evolution e^(−iHt/ħ)` · banner
+- `eigenvalues Eₙ = h·νₙ from the rung frequencies; ⟨H⟩ a |cₙ|²-weighted average — all computed` · banner
+
+## analytics
+
+- bond degree `39` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `2`
 
 ## identity
 
@@ -41,4 +56,4 @@
 
 ---
 
-<sub>content-uuid `fcacb146-9db6-8c36-9b44-cfa6f2b5000f` · framed by typography partition `hamiltonian` bonds `39` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `6262d41a-792f-8927-94e9-569b05218629` · framed by typography partition `hamiltonian` bonds `39` · `pnpm readme` · `pnpm readme:check`</sub>

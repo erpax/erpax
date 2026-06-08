@@ -3,8 +3,8 @@
 
 # buddhist
 
-path `buddhist` · uuid `405571da-9653-8ad4-a328-726ce611e855` · diamond `903054d8-d52f-8d65-8c29-2d216092ed5a`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `buddhist` · uuid `465add24-a8c8-88e3-9d78-5d17c226e961` · diamond `230941fc-d199-8628-b549-ee5098dd81fa`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·temple · exports buddhist · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law buddhist is one schema.org word, content-addressed; the same word collides e
 
 ---
 
-<sub>content-uuid `dc02e84d-4d7b-8d90-9e66-3b9b2694c52c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ab0bec33-9507-8f57-b74e-207a154f3be5` · `pnpm readme` · `pnpm computed:check`</sub>

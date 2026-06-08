@@ -3,15 +3,15 @@
 
 # start
 
-path `start` · uuid `3e20e602-696d-80b1-9c49-c81485b4042c` · diamond `2136c50c-26e3-84fe-8c70-26347f6b79c3`
+path `start` · uuid `3e20e602-696d-80b1-9c49-c81485b4042c` · diamond `a96dccf7-273b-825b-967e-c86a8ffdcfcc`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports date·end·fields·law·period · exports start · escapes —
-links `7/7` · folded `1` · bonds in `10` out `10`
+links `7/7` · folded `1` · bonds in `13` out `13`
 faces worker·plugin·pwa `0·0·0`
-neighbors → answer·breakfast·comedy·hostel·landmarks·lyricist·train·urologic·width·win · ← answer·breakfast·comedy·hostel·landmarks·lyricist·train·urologic·width·win
+neighbors → application·billing·coverage·date·end·fields·immediate·job·law·offset·page·period·previous · ← application·billing·coverage·date·end·fields·immediate·job·law·offset·page·period·previous
 analysis —
 law start is the ISO-8601 instant a span begins; paired with [[end]] (or a duration) it defines a temporal [[period]].
 
 ---
 
-<sub>content-uuid `df934b48-62e2-8070-a0c2-248cd33a4998` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `efe05810-87b4-82b6-b38a-11d2da5f076e` · `pnpm readme` · `pnpm computed:check`</sub>

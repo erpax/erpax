@@ -23,9 +23,9 @@
 
 ## typography graph
 
-- partition `compost` · sub-root `cda9024a-3a6e-850b-b561-e11c1c1ea90c`
+- partition `compost` · sub-root `d39344c4-cd27-8c54-a1db-4331691987b9`
 - bond degree `56` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -39,6 +39,44 @@
 - `USDA NOP 7 CFR §205.203 — compost and raw-manure rules` · banner
 - `USDA-NOP` · catalogue
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·4 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
 - bond degree `56` · sealed `1` · horo `4`
@@ -47,7 +85,7 @@
 
 ## identity
 
-- uuid `cda9024a-3a6e-850b-b561-e11c1c1ea90c`
+- uuid `d39344c4-cd27-8c54-a1db-4331691987b9`
 - bonds in `17` · out `17`
 - trinity form·code·proof `1`·`1`·`1`
 - links `27` / `27`
@@ -59,4 +97,4 @@
 
 ---
 
-<sub>content-uuid `ee44d7d2-e39e-81e2-8ded-c9e4460c958a` · framed by typography partition `compost` bonds `56` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `390a037e-c19b-82c2-8daf-b42ce3039fc8` · framed by typography partition `compost` bonds `56` · `pnpm readme` · `pnpm readme:check`</sub>

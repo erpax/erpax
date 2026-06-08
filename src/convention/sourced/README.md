@@ -2,7 +2,7 @@
 
 # sourced
 
-> atom `convention/sourced` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
+> atom `convention/sourced` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -23,9 +23,9 @@
 
 ## typography graph
 
-- partition `convention` · sub-root `38cd2282-f75a-84ce-b2c7-ff7cff0bfb4c`
-- bond degree `21` · analysis neighbors `aura`
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- partition `convention` · sub-root `a93daa45-addb-8b21-89cd-ab385bae0306`
+- bond degree `12` · analysis neighbors `aura`
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -36,22 +36,60 @@
 - `<id> …` line names the external standard it` · banner
 - `<id> …` line names the external standard it realises — schema.org, an ISO/IEC code, a W3C spec, a national regulation. The marker may live in the `SKILL.md` body or in the sibling `index.ts` JSDoc; both are the atom's public face. It states one rule and computes its own compliance, and it does not re-implement the corpus walk or the SKILL reader — it` · banner
 - `<id> …` marker — a JSDoc/prose tag that names the external standard the atom cites.` · banner
-- `marker (in its SKILL.md or its sibling index.ts), never grounding itself in nothing but itself; this atom measures the corpus's live sourcing as coverage = sourced / total over the real tree.` · banner
+- `marker (in its SKILL.md or its sibling index.ts), never grounding itself in nothing but itself; this atom measures the corpus's live sourcing as coverage = sourced / total over the real tree."` · banner
 - `schema.org — the type vocabulary, collided to single words` · banner
 - `THE LAW, written as a self-measuring atom:` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·5 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `21` · sealed `1` · horo `8`
+- bond degree `12` · sealed `1` · horo `5`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `6`
 
 ## identity
 
-- uuid `e76eeca7-aa28-874f-974c-d15ee8114bf3`
-- bonds in `6` · out `7`
+- uuid `8ddbd614-594d-8f09-a9a2-ee43510746bd`
+- bonds in `2` · out `2`
 - trinity form·code·proof `1`·`1`·`1`
-- links `12` / `12`
+- links `2` / `2`
 - folded `1` · escapes `0`
 
 ## [[seal]]
@@ -60,4 +98,4 @@
 
 ---
 
-<sub>content-uuid `1e89251f-7f97-8280-ad52-207b77728033` · framed by typography partition `convention` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `4ead0783-9349-8e07-8154-cefa47b8e17f` · framed by typography partition `convention` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

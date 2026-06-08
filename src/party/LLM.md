@@ -4,7 +4,7 @@
 # party
 
 path `party` · uuid `dea176fb-ed60-8e65-8c80-f0bd6450dc90` · diamond `7f2c41a1-b416-82ae-83a5-0e0e3926f544`
-horo `2` `share` · trinity `1·1·1` · sealed `1`
+horo `2` `share` · trinity `1·1·1` · sealed `0`
 imports @/types/parties · exports *:./aging.service·*:./workflow.service·AgingBucket·AgingBucketKey·BucketDefinition·DEFAULT_AGING_BUCKETS · escapes —
 links `24/24` · folded `1` · bonds in `40` out `40`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law one party is seen through infinitely many roles via a single context-keyed r
 
 ---
 
-<sub>content-uuid `53d6fa5f-a09a-8130-8c21-522e79d9d56d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `df2809ed-3ea6-8c31-8b76-2b6779662094` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # transactions
 
-path `bank/accounts/bank/transactions` · uuid `de64d7c1-15fd-8ae5-a415-173b51516c8d` · diamond `d0548bfc-a496-84de-adb0-6841b3cf1a38`
-horo `8` `crest` · trinity `1·1·1` · sealed `0`
+path `bank/accounts/bank/transactions` · uuid `0b0dea24-595d-8ce2-9738-6b0ecb624299` · diamond `f421df37-e346-8148-8d52-650e115b99a0`
+horo `7` `descent` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/auto/set/timestamp·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
-links `12/12` · folded `1` · bonds in `22` out `29`
+links `12/12` · folded `1` · bonds in `11` out `11`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·accounting·accounting·adjustments·elimination·eliminations·entities·entries·entries·entry·evidences·fractal·hedge·horo·identity·law·party·proof·proof·rates·reconciliations·relatedparty·standard·standard·tenants·transaction·transaction·transaction·trinity · ← accounting·adjustments·elimination·eliminations·entities·entries·entry·evidences·fractal·hedge·horo·identity·law·party·proof·rates·reconciliations·relatedparty·standard·tenants·transaction·trinity
+neighbors → accounting·entries·fractal·hedge·horo·law·proof·rates·standard·transaction·trinity · ← accounting·entries·fractal·hedge·horo·law·proof·rates·standard·transaction·trinity
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `bad8398d-65ea-8331-a8a8-8430897d51ac` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b7707077-8ce2-8e41-b50e-a89cfaf58cba` · `pnpm readme` · `pnpm computed:check`</sub>

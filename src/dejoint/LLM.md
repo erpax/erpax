@@ -3,8 +3,8 @@
 
 # dejoint
 
-path `dejoint` · uuid `019391f6-11a0-810b-b9a5-f5b4ec0769bc` · diamond `11c4dd98-2410-8029-88ae-2374d2b94b07`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `dejoint` · uuid `30ac9b1c-a04a-8d41-8def-f6df7398cd0a` · diamond `5f9969f7-deb5-8741-a271-4480184b16d4`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports dejoint · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law dejoint is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `6075e142-3ba5-88ca-96f6-5d25b8a49714` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1d52fa88-ac9f-81ce-9570-54672c5cb6d3` · `pnpm readme` · `pnpm computed:check`</sub>

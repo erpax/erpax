@@ -3,7 +3,7 @@
 
 # christianity
 
-path `christianity` · uuid `b6a3ced0-08b4-845b-b6b5-b4ed50e046be` · diamond `5151384e-6c52-8605-b5d7-53c575de19e7`
+path `christianity` · uuid `b4274e33-2214-8671-b9b1-c9985c42461c` · diamond `830a0389-3395-847a-bcc6-0a10cca260bf`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports archangel·breath·covenant·cross·diamond·dna·faith·fractal·grace·harmony·identity·law·love·mercy·merge·prayer·religion·return·ritual·sin·society·suffering·translator·uuid·whole·word·zeropoint · exports christianity · escapes —
 links `61/61` · folded `1` · bonds in `30` out `30`
@@ -14,4 +14,4 @@ law christianity is a [[diamond]] of [[cross]] · [[suffering]] · [[mercy]] · 
 
 ---
 
-<sub>content-uuid `c619a1c8-5e52-8b3f-8465-1ee4de7d630a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `41c735f2-3142-8f7e-8fa0-0577ce1973ce` · `pnpm readme` · `pnpm computed:check`</sub>

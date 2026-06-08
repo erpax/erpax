@@ -3,8 +3,8 @@
 
 # samples
 
-path `internal/controls/control/tests/audit/samples` · uuid `1ce8eb8a-48fd-8338-bfec-d5019f59b86d` · diamond `188ec937-36a0-8ac9-ab45-53a829351296`
-horo `5` `round` · trinity `1·1·1` · sealed `1`
+path `internal/controls/control/tests/audit/samples` · uuid `42bc5864-9226-80d4-9867-39237f354175` · diamond `02d3b2ed-3a3e-835c-9c73-1bfa935d3fa6`
+horo `2` `share` · trinity `1·1·1` · sealed `0`
 imports @/audit/trail/after/change·@/auth·@/authenticated · exports const · escapes —
 links `1/1` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law an audit sample is one item drawn for a control test, carrying its pass/fail
 
 ---
 
-<sub>content-uuid `d3d6c505-c113-8a42-9dbd-571579d9f8bc` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `bc9b6dcc-4e84-8b77-b43c-9ed2031011e9` · `pnpm readme` · `pnpm computed:check`</sub>

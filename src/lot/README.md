@@ -2,7 +2,7 @@
 
 # lot
 
-> atom `lot` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
+> atom `lot` · horo `4` `weave` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -17,13 +17,32 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `7` | Σ `7` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `lot` · sub-root `e8f3b5ff-47a6-8fc7-a671-901e15d1a26d`
-- bond degree `12` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- bond degree `0` · analysis neighbors —
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `EU-2014/55` · catalogue
+- `EU-537/2014` · catalogue
+- `EU-910/2014` · catalogue
+- `ISA-95` · catalogue
+- `ISO-22400-2` · catalogue
+- `UBL-2.1` · catalogue
+
+## analytics
+
+- bond degree `0` · sealed `0` · horo `4`
+- variance `1` · balanced `0` · trinity sum `1`
+- bindings `0` · standards `6`
 
 ## identity
 
@@ -35,8 +54,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `a2d3ce11-09a3-8281-9eda-7724f1853cc8` · framed by typography partition `lot` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f09e3927-cf07-8a16-b81d-5708a9839e5d` · framed by typography partition `lot` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

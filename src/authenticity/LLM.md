@@ -3,8 +3,8 @@
 
 # authenticity
 
-path `authenticity` · uuid `621c8c86-d2d3-84f0-927c-b572d5d28a35` · diamond `b4755813-496d-89aa-a09f-1bf6618dc6d0`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `authenticity` · uuid `88dab724-c2cb-8632-a43b-f5559b615f44` · diamond `c75ef75a-5c9a-83fa-bacc-66eedab2fc81`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports category·collapse·law·media·merge·sti · exports authenticity · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law authenticity is one schema.org word, content-addressed; the same word collid
 
 ---
 
-<sub>content-uuid `35721739-dca0-857e-9a56-76a74530022e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4d571b76-bbfd-86d4-ad85-fcaffe5956de` · `pnpm readme` · `pnpm computed:check`</sub>

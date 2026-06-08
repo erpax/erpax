@@ -4,14 +4,14 @@
 # link
 
 path `link` · uuid `16105c24-b4e4-8ff6-b4bb-b1c5e698299e` · diamond `caca1ac7-f23f-8d51-ba88-13bbe0ebe03d`
-horo `5` `round` · trinity `1·1·1` · sealed `1`
+horo `5` `round` · trinity `1·1·1` · sealed `0`
 imports — · exports appearanceOptions·link·linkGroup·type · escapes —
 links `18/18` · folded `1` · bonds in `51` out `50`
 faces worker·plugin·pwa `0·0·0`
 neighbors → analog·aura·balance·collapse·convention·dashboard·digital·entropy·fear·forge·fractal·fresh·fusion·generate·graph·gravity·gs·harmony·has·heart·interference·law·law·link·love·media·merchant·merge·original·product·purity·reciprocal·regeneration·related·relationship·religion·return·reveal·role·search·self·settings·shipping·significant·sti·superdense·tamper·triggered·typography·uuid · ← analog·aura·aura·balance·collapse·convention·dashboard·digital·entropy·fear·fear·forge·fractal·fresh·fusion·generate·graph·gravity·gs·harmony·has·heart·interference·law·link·love·media·merchant·merge·original·product·purity·reciprocal·regeneration·related·relationship·religion·return·reveal·role·search·self·settings·shipping·significant·sti·superdense·tamper·triggered·typography·uuid
-analysis aura
+analysis —
 law link is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `f4e1973a-b18b-8aa8-95db-aebec62a9067` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3975347a-8fe0-88b3-87bb-a036673bc3b8` · `pnpm readme` · `pnpm computed:check`</sub>

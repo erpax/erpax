@@ -3,15 +3,15 @@
 
 # trade
 
-path `trade` · uuid `36d44fbf-a602-82d7-a22e-8086cad633c3` · diamond `0805c2d9-6b54-8c45-8e80-c06cd2e2e324`
+path `trade` · uuid `36d44fbf-a602-82d7-a22e-8086cad633c3` · diamond `7599d2aa-6844-8dad-92c2-8f3423672900`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti · exports trade · escapes —
-links `5/5` · folded `1` · bonds in `14` out `14`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·llm·memories·memory·quantity·request·tinid·tracks·trading·traditional·trailer·wellbeing·western · ← cohort·landmarks·llm·memories·memory·quantity·request·tinid·tracks·trading·traditional·trailer·wellbeing·western
+neighbors → action·collapse·law·merge·sti · ← action·collapse·law·merge·sti
 analysis —
 law trade is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `0c23ff77-af04-8f30-a1e6-7dddd66a95e1` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `265b753c-00b0-820e-bfd5-ef8c71d83219` · `pnpm readme` · `pnpm computed:check`</sub>

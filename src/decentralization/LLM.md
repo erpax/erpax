@@ -3,8 +3,8 @@
 
 # decentralization
 
-path `decentralization` · uuid `7dd4fb78-345c-8528-9ba4-cd754cb5bf87` · diamond `b0c17050-cfe3-81c5-a376-0f03b26d7f46`
-horo `5` `round` · trinity `1·1·1` · sealed `1`
+path `decentralization` · uuid `4f73df07-f422-8bd2-a899-786b80160423` · diamond `66ba2c6d-6552-8505-bf27-e61deb7cedc2`
+horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports — · exports const · escapes —
 links `20/20` · folded `1` · bonds in `13` out `13`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law decentralization is global order as the fixed point of LOCAL rules with no c
 
 ---
 
-<sub>content-uuid `8c0de6eb-74e2-8749-9bd6-36ba2b60d382` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `befa2ad5-8463-8058-ba36-832b5f393f27` · `pnpm readme` · `pnpm computed:check`</sub>

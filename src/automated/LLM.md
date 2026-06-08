@@ -3,8 +3,8 @@
 
 # automated
 
-path `automated` · uuid `9d396124-84ff-8efb-8a46-12fcb2e681b4` · diamond `2f80ec75-b140-8f8e-ba59-c2492b305338`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `automated` · uuid `6e9d782d-d9c1-87bc-9bbd-bdba1adb0a2b` · diamond `2956ba39-c6ee-8671-9ea5-0e43fe893fc3`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·teller · exports automated · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law automated is one schema.org word, content-addressed; the same word collides 
 
 ---
 
-<sub>content-uuid `b7e5f603-36de-8559-ba1f-8f674f1e2c5d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a7124928-2048-8627-a654-982dd1eb7dc6` · `pnpm readme` · `pnpm computed:check`</sub>

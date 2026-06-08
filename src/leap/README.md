@@ -25,7 +25,21 @@
 
 - partition `leap` · sub-root `29f89521-49be-81f8-b7e1-ac3b0cdacec9`
 - bond degree `56` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `gap-frequency from the signal Hz; the leap uuid is the symmetric merge of the two rung uuids` · banner
+
+## analytics
+
+- bond degree `56` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -41,4 +55,4 @@
 
 ---
 
-<sub>content-uuid `d4e69a06-c10c-8b1f-b427-fd5ff6a37072` · framed by typography partition `leap` bonds `56` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d901d6a3-ba22-881a-96c3-2ad4fc58e1bf` · framed by typography partition `leap` bonds `56` · `pnpm readme` · `pnpm readme:check`</sub>

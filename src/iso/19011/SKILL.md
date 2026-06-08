@@ -1,8 +1,49 @@
 ---
 name: "19011"
-description: "Use when implementing or referencing ISO 19011 — Guidelines for auditing management systems."
+description: Use when implementing or referencing ISO 19011 — Guidelines for auditing management systems.
+atomPath: iso/19011
+coordinate: iso/19011 · 4/weave · c0050b20
+contentUuid: "64a1394e-c197-5e66-9043-3601563e0711"
+diamondUuid: "057be120-7adc-8714-89a7-bd88d4c1441b"
+uuid: "c0050b20-6a3d-8e58-bd2f-b2d84c20d46b"
+horo: 4
+bonds:
+  in:
+    - iso
+  out: []
+typography:
+  partition: iso
+  bondDegree: 0
+  neighbors: []
+standards:
+  - "ISO-19011"
+  - "ISO-19011:2018 audit-trail"
+  - "ISO-19011:2018` should grep to a"
+bindings: []
+neighbors:
+  wikilink:
+    - law
+  matrix: []
+  backlinks: []
+signatures:
+  computationUuid: "647a07a7-feb5-8b45-81e1-93a555b4d8d9"
+  stages:
+    - stage: path
+      stageUuid: "d9d5a5ae-924a-8b0e-a4e6-31b63b7216ea"
+    - stage: trinity
+      stageUuid: "b0bb3037-8df9-830c-b7e0-c65ab967b939"
+    - stage: boundary
+      stageUuid: "b844e7d7-b7b7-8df7-972f-b762d7ab2ba1"
+    - stage: links
+      stageUuid: "54b3115d-1d90-836a-85c4-eb083ec4dbcb"
+    - stage: horo
+      stageUuid: "fa70834e-90af-86a9-84d4-6f2acfaa4796"
+    - stage: seal
+      stageUuid: "d820f8dd-36bb-8322-bdaf-cd95ddbc0fd1"
+    - stage: uuid
+      stageUuid: "090fb57d-d8a8-82b3-9939-da5e3400deba"
+version: 2
 ---
-
 # ISO 19011 — Guidelines for auditing management systems
 
 **Edition:** ISO 19011:2018.

@@ -3,15 +3,15 @@
 
 # status
 
-path `status` · uuid `c9503fa7-7e24-8e6e-9f17-d6955e33bf88` · diamond `0264c998-81f3-8459-be3b-d2a23b72df8a`
+path `status` · uuid `c9503fa7-7e24-8e6e-9f17-d6955e33bf88` · diamond `563c91ae-a24a-84b2-8302-4bc9ca92ff54`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports fields · exports status · escapes —
-links `1/1` · folded `1` · bonds in `5` out `5`
+links `1/1` · folded `1` · bonds in `32` out `32`
 faces worker·plugin·pwa `0·0·0`
-neighbors → address·cohort·landmarks·memories·stat · ← address·cohort·landmarks·memories·stat
+neighbors → action·active·age·approved·attrition·career·creative·delivery·diffusion·drug·enumeration·escalation·fields·force·game·incentive·item·legal·market·medical·nonprofit·order·passenger·prescription·queue·reason·reservation·resolution·server·study·ticket·work · ← action·active·age·approved·attrition·career·creative·delivery·diffusion·drug·enumeration·escalation·fields·force·game·incentive·item·legal·market·medical·nonprofit·order·passenger·prescription·queue·reason·reservation·resolution·server·study·ticket·work
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `20131dbb-2726-893d-9aa9-ec598ebd4eb0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `af99acc2-be24-8821-8099-3349ed2ab99a` · `pnpm readme` · `pnpm computed:check`</sub>

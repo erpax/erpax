@@ -6,6 +6,8 @@
 
 ## [[debit]] · [[credit]]
 
+> account code `address/validation` · currency `eb` (entropy-bit)
+
 | [[debit]] | [[credit]] |
 | -------- | --------- |
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
@@ -21,11 +23,61 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `law:an address is valid only against its declared country's format — required components and the postal pattern are looked up, never US-centric hard-coded; empty country ⇒ draft ⇒ valid, empty errors ⇒ valid.`
+- `seal:sealed`
+- `trigger:ISO-19160-4:2017 addressing · UPU-S42 international-postal-addressing`
+- `trigger:Use when checking that a postal address is complete and well-formed for its declared country — country-aware required components and postal-code pattern checks, returning human-readable errors (empty ⇒ valid) ready for a Payload beforeValidate throw.`
+- `trigger:an address is valid only against its declared country's format — required components and the postal pattern are looked up, never US-centric hard-coded; empty country ⇒ draft ⇒ valid, empty errors ⇒ valid.`
+- `trigger:matter-twin:src/address/validation/index.ts`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `1`
+- entry uuids `26b57c65-233f-890c-ae0a-9d341d7038d1` · `fe4cf66f-a5d6-8b3b-97e6-179dbdb79956`
+- content uuids `0e25a609-ac72-80d8-b518-1b016ca9513b` · `7c60afaf-fecb-863c-9e26-b2860dda0ced` · `b515a916-d134-8a99-b0d8-45499661e595`
+
+## [[entropy]] — gaps · seals
+
+> account code `address/validation` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.2` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[diamond]]/sealed `1.585` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `1` eb | Σ seal `12.785` eb |
+
+> net residual `-11.785` eb · seal/gap ratio `12.785` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `address` · sub-root `dbe3663f-52b1-8624-94cf-89b280b1265a`
+- partition `address` · sub-root `af0eea30-a2fc-8893-9db5-3fde8e44445a`
 - bond degree `18` · analysis neighbors —
-- graph root `06810c2c-2396-831f-a2b3-a58706a17051`
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
 
 ## [[cloudflare]] bindings
 
@@ -39,7 +91,6 @@
 - `EU-Taxonomy-2020/852` · catalogue
 - `GDPR Art.5(1)(c) data-minimisation — only the fields the format requires` · banner
 - `GDPR Art.5(1)(c) data-minimisation collect-only-fields-the-format-requires` · banner
-- `ISO-19011:2018 audit-trail address-validation` · banner
 - `ISO-19160-4` · catalogue
 - `ISO-19160-4:2017 addressing · UPU-S42 international-postal-addressing` · banner
 - `ISO-19160-4:2017 addressing components-and-conceptual-model` · banner
@@ -48,15 +99,53 @@
 - `UPU-S42` · catalogue
 - `UPU-S42 international-postal-addressing` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·2 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
 - bond degree `18` · sealed `1` · horo `2`
 - variance `0` · balanced `1` · trinity sum `3`
-- bindings `0` · standards `14`
+- bindings `0` · standards `13`
 
 ## identity
 
-- uuid `82e7f69d-08e5-8876-b507-de0d10f49eef`
+- uuid `7c60afaf-fecb-863c-9e26-b2860dda0ced`
 - bonds in `6` · out `6`
 - trinity form·code·proof `1`·`1`·`1`
 - links `6` / `6`
@@ -68,4 +157,4 @@
 
 ---
 
-<sub>content-uuid `628a624d-2525-86dc-9d88-6b27be5ab39e` · framed by typography partition `address` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `49cbf066-084b-8b7d-9705-4de467ac472a` · framed by typography partition `address` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>

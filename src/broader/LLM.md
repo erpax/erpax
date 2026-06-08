@@ -3,8 +3,8 @@
 
 # broader
 
-path `broader` · uuid `4adde349-e491-812d-a9c0-2da926713f2c` · diamond `ea5506fc-3d32-8e2e-a69e-8f6b9327eed8`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `broader` · uuid `d31410fc-4552-850d-9fab-3265462d0e7c` · diamond `be9745e7-fee2-83b9-b206-b1f9be9231e3`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports broader · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law broader is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `49dd1301-3592-8832-8040-1b03466dbd5c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0c090599-560f-8746-a4d3-ce2b12a79832` · `pnpm readme` · `pnpm computed:check`</sub>

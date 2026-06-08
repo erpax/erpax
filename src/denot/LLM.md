@@ -3,8 +3,8 @@
 
 # denot
 
-path `denot` · uuid `73e321e7-d6ef-89ef-bec6-eecc755a0307` · diamond `9c2df1d6-3155-8e9f-b632-e3d071e45f7e`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `denot` · uuid `931cc6cc-c9cb-87ce-ad50-079004cbaebf` · diamond `2a0a09e4-b005-8423-b9a7-93833c746cd1`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports denot · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law denot is one schema.org word, content-addressed; the same word collides ever
 
 ---
 
-<sub>content-uuid `16b4aba4-01b2-8486-89bc-0a4df33a22ab` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7a93de40-782f-8a60-9857-4d0374ded189` · `pnpm readme` · `pnpm computed:check`</sub>

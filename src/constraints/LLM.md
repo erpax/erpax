@@ -3,8 +3,8 @@
 
 # constraints
 
-path `constraints` · uuid `5e1be111-cba1-850a-ab8f-b583ea388b0d` · diamond `0f336070-421b-8f7c-995b-098ec2a24329`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `constraints` · uuid `2ba6830d-aee8-8fd1-92ba-d9b50d108c77` · diamond `80232685-2fd1-84e2-89c6-92ca36e5b836`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·num·sti · exports constraints · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law constraints is one schema.org word, content-addressed; the same word collide
 
 ---
 
-<sub>content-uuid `2b4ef3f4-c272-830c-8f69-724476ef1b96` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `09007823-de7e-8861-a8a3-01b2cbcee4bb` · `pnpm readme` · `pnpm computed:check`</sub>

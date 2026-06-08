@@ -3,8 +3,8 @@
 
 # consignment
 
-path `consignment` · uuid `c665c964-60e4-808c-a095-84783df6892a` · diamond `557adf2f-7db8-8e02-86e4-a09da4ca92e4`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `consignment` · uuid `e17f5b35-6e49-8333-afff-fb29d7db9ad2` · diamond `1a867f0f-cc65-8510-978a-f45fec258cd9`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports consignment · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law consignment is one schema.org word, content-addressed; the same word collide
 
 ---
 
-<sub>content-uuid `74dfd041-10ff-8a78-bb38-726b032c12a3` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `42a9e6ec-f141-8bf9-996c-c287f0a99cc4` · `pnpm readme` · `pnpm computed:check`</sub>

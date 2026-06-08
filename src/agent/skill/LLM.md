@@ -3,15 +3,15 @@
 
 # skill
 
-path `agent/skill` · uuid `08b35a76-d37a-8616-b024-420fe1fce83b` · diamond `ef482508-48f9-896a-9ab6-8ee3dc47af00`
-horo `2` `share` · trinity `1·1·1` · sealed `0`
-imports @/agents/mcp · exports *:./service·AGENT_RUNTIME_GRANT·AgentContext·AgentEffect·AgentId·AgentLawState·AgentRegistry·AgentRuntime·AuditLeaf·DomainAgent·DomainEvent·ERPAX_MCP_PROMPTS·ERPAX_MCP_RESOURCES·ErpaxMcpPrompt·ErpaxMcpResource·ErpaxMcpTool·EvidenceFrame·GapSeverity·McpClient·McpToolDescriptor·StrictApplyViolation·agentRegistry·agentRuntime·assertStrictDispatch·assertStrictEffect·assertStrictMcpCall·buildBlockCatalog·buildErpaxMcpTools·chainBlocks·chainsAsBlockCompositions·checkRegistryCoupling·composeBlocks·conveneAgentSociety·createAgentContext·createAgentRegistry·createAgentRuntime·createInProcessMcpClient·defaultAgentLawState·disbandAgentSociety·erpaxMcpPrompts·erpaxMcpResources·erpaxMcpTools·manifestOf·processEffect·processEffects·strictApplyDispatch·strictApplyEffect·strictApplyMcpCall·validateComposition · escapes —
-links `10/10` · folded `1` · bonds in `7` out `7`
+path `agent/skill` · uuid `188e0a5b-9923-80b7-b2eb-bcf00ddcc1ed` · diamond `1aef51a8-6d61-81af-95ee-cbe6984d0dd2`
+horo `4` `weave` · trinity `1·1·1` · sealed `0`
+imports @/agents/mcp·@/wave · exports *:./service·AGENT_RUNTIME_GRANT·AGENT_SKILL_CONTEXT_CACHE_TTL_MS·AgentContext·AgentEffect·AgentId·AgentLawState·AgentRegistry·AgentRuntime·AuditLeaf·DomainAgent·DomainEvent·ERPAX_MCP_PROMPTS·ERPAX_MCP_RESOURCES·ErpaxMcpPrompt·ErpaxMcpResource·ErpaxMcpTool·EvidenceFrame·GapSeverity·MAX_AGENT_SKILL_CONTEXT_BYTES·McpClient·McpToolDescriptor·StrictApplyViolation·agentCostPolicy·agentLawWithPathSession·agentRegistry·agentRuntime·agentSkillContextForDispatch·assertStrictDispatch·assertStrictEffect·assertStrictMcpCall·atomPathFromInput·bondedNeighborPaths·buildBlockCatalog·buildErpaxMcpTools·chainBlocks·chainsAsBlockCompositions·cheapAgentDispatch·checkRegistryCoupling·clearAgentSkillContextCache·compactRulesSnapshot·completeWaveHop·composeBlocks·conveneAgentSociety·corpusPathWaveBatches·createAgentContext·createAgentRegistry·createAgentRuntime·createInProcessMcpClient·createPathSession·createWaveSession·defaultAgentLawState·disbandAgentSociety·dispatchPathsFrom·domainHubFor·erpaxMcpPrompts·erpaxMcpResources·erpaxMcpTools·fullSkillIndexContextBytes·getAgentSkillContextCache·isProseSkillFace·isWaveSessionReady·loadSealedSkill·manifestOf·pathComparableUnits·processEffect·processEffects·realiseSkillsForPath·recordPathVisits·resolveSkillLoadOpts·scheduleCorpusPathsInWaves·selfBalancingWaveLoad·skillBearingAtomPath·skillContextCacheKey·skillsForImport·strictApplyDispatch·strictApplyEffect·strictApplyMcpCall·tamperCostForWave·type·validateComposition·waveDispatchCost·waveSessionVerdict · escapes —
+links `10/10` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `1·0·0`
-neighbors → agent·baked·holographic·law·merge·team·typography · ← agent·baked·holographic·law·merge·team·typography
+neighbors → agent·baked·holographic·law·merge·team·typography·upgrade · ← agent·baked·holographic·law·merge·team·typography·upgrade
 analysis agent
 law an agent's competence is the UNION of its loaded skills (a skill one agent loads, the [[team]] has); loading is idempotent (set union), so re-loading is free and two agents converge on the same competence by [[merge]].
 
 ---
 
-<sub>content-uuid `3bb7e431-66f1-80b6-8f5c-ac2e684e99df` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e999d68b-51f5-840d-8100-cbc9288eb39f` · `pnpm readme` · `pnpm computed:check`</sub>

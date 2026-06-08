@@ -3,15 +3,15 @@
 
 # through
 
-path `through` · uuid `3ef35100-47b9-8fb9-ba23-81e05787520f` · diamond `f5fc0b2d-e54a-82d5-b116-e9b413d83fad`
+path `through` · uuid `3ef35100-47b9-8fb9-ba23-81e05787520f` · diamond `440e3365-bc55-8288-a152-d9e8a980cd20`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports available·collapse·drive·has·issued·law·merge·owned·service·sti·valid · exports through · escapes —
-links `11/11` · folded `1` · bonds in `4` out `4`
+links `11/11` · folded `1` · bonds in `11` out `11`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → available·collapse·drive·has·issued·law·merge·owned·service·sti·valid · ← available·collapse·drive·has·issued·law·merge·owned·service·sti·valid
 analysis —
 law through is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `90561113-8604-899e-b304-cee43d2907d9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5d08ddbd-906e-8509-a894-d096bcd86aa5` · `pnpm readme` · `pnpm computed:check`</sub>

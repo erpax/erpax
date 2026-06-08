@@ -1,0 +1,83 @@
+.erpax-computed {
+  &--panel {
+    margin-top: 8px;
+    padding: 8px;
+    font-size: 12px;
+    border-radius: 4px;
+    background: var(--theme-elevation-50);
+    border: 1px solid var(--theme-warning-150);
+  }
+
+  &--text-warning {
+    margin: 0;
+    color: var(--theme-warning-600);
+  }
+
+  &--text-body {
+    margin: 6px 0 0;
+    color: var(--theme-elevation-800);
+  }
+
+  &--text-muted {
+    margin: 6px 0 0;
+    color: var(--theme-elevation-600);
+  }
+
+  &--chip {
+    background: var(--theme-elevation-100);
+  }
+
+  &--seal-ok {
+    background: var(--theme-success-100);
+    color: var(--theme-success-800);
+    border-color: var(--theme-success-200);
+  }
+
+  &--seal-gap {
+    background: var(--theme-warning-100);
+    color: var(--theme-warning-800);
+    border-color: var(--theme-warning-200);
+  }
+
+  &--nav {
+    margin-bottom: var(--base);
+  }
+
+  &--nav-title {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--theme-elevation-500);
+    margin-bottom: 8px;
+  }
+
+  &--nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &--nav-group {
+    margin-bottom: 4px;
+  }
+
+  &--nav-link {
+    font-size: 13px;
+  }
+
+  &--nav-child-list {
+    list-style: none;
+    margin: 4px 0 0 12px;
+    padding: 0;
+  }
+
+  &--nav-child-link {
+    font-size: 12px;
+  }
+
+  &--meta {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+}

@@ -2,7 +2,7 @@
 
 # pagination
 
-> atom `pagination` · horo `1` `base` · [[balance]] `1` · [[seal]] `0`
+> atom `pagination` · horo `1` `base` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -19,13 +19,27 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `pagination` · sub-root `730a7749-ae8d-8c65-aa66-30d84028c96e`
-- bond degree `9` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- bond degree `0` · analysis neighbors —
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `0` · sealed `0` · horo `1`
+- variance `1` · balanced `0` · trinity sum `2`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -41,4 +55,4 @@
 
 ---
 
-<sub>content-uuid `a33e505a-2430-8598-8b4c-fc84b3d21e51` · framed by typography partition `pagination` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `dd7f4e30-872b-80d4-a150-18e55ec44490` · framed by typography partition `pagination` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

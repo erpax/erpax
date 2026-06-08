@@ -3,15 +3,15 @@
 
 # wpheader
 
-path `wpheader` · uuid `a3f0b743-a0ec-84c6-9e8d-a1f2452d0aa9` · diamond `05e0530d-6b67-8772-aca3-86e3e3e2311d`
+path `wpheader` · uuid `a3f0b743-a0ec-84c6-9e8d-a1f2452d0aa9` · diamond `11ca8478-6091-84fd-bdb4-f20e29655def`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports wpheader · escapes —
-links `4/4` · folded `1` · bonds in `0` out `0`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law wpheader is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `b031002d-8d65-8109-a10a-2b94352b8abf` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8529ed49-829a-81bf-a2f6-70bd0c631277` · `pnpm readme` · `pnpm computed:check`</sub>

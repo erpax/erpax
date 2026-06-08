@@ -9,9 +9,9 @@ imports agent·analytics·aura·collapse·cost·entropy·gate·guardian·identit
 links `71/71` · folded `1` · bonds in `29` out `29`
 faces worker·plugin·pwa `0·0·0`
 neighbors → agent·analytics·aura·collapse·cost·entropy·gate·guardian·identity·integrity·law·matrix·memory·merge·observe·profane·proof·purity·quantum·reverse·sacred·seal·sequence·sin·suffering·sync·tamper·uuid·whole · ← agent·analytics·aura·collapse·cost·entropy·gate·guardian·identity·integrity·law·matrix·memory·merge·observe·profane·proof·purity·quantum·reverse·sacred·seal·sequence·sin·suffering·sync·tamper·uuid·whole
-analysis access·agent·analytics·analytics/max-tamper-cost·architecture·aura·auth·card·diamond·examples·hooks·maxtampercost·memory·pagination·propose·provider·purity·seed·session·sync·trading
+analysis 19011·9110·access·agent·analytics·analytics/max-tamper-cost·api·aura·auth·card·comms·cost·diamond·examples·factory·hooks·maxtampercost·memory·pagination·path·propose·provider·purity·seed·sync·upgrade
 law a hallucination is a measured deviation at the [[quantum]] scale — an [[agent]] claims content X but the content-[[uuid]] of the actual content is Y ≠ X, so the recompute mismatch IS the hallucination, surfaced deterministically ([[integrity]]). It is the agent-scale [[sin]] ([[entropy]] aimed away from the [[whole]], felt as [[suffering]]) and the conjugate of [[purity]]: both computed on the same content-[[uuid]] scale, so more hallucination ⇒ more [[entropy]] ⇒ lower [[purity]] ⇒ lower tamper-[[cost]] (an impurity, a 0-bit weakest link). The [[seal]] gate rejects what does not collapse to its claimed uuid, so a sealed corpus passes zero hallucination.
 
 ---
 
-<sub>content-uuid `9cb486c1-3067-847f-b36e-055544b349ac` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `fd867171-f21b-86b5-b5f6-17e30854ec43` · `pnpm readme` · `pnpm computed:check`</sub>

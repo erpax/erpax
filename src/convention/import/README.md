@@ -2,7 +2,7 @@
 
 # import
 
-> atom `convention/import` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `convention/import` · horo `5` `round` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -19,13 +19,13 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
 
 ## typography graph
 
-- partition `convention` · sub-root `38cd2282-f75a-84ce-b2c7-ff7cff0bfb4c`
-- bond degree `60` · analysis neighbors `aura` · `quantum/boundary` · `tamper/import`
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- partition `convention` · sub-root `a93daa45-addb-8b21-89cd-ab385bae0306`
+- bond degree `0` · analysis neighbors —
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -37,24 +37,62 @@
 - `the import graph is the config (imported↔declared) — an atom's only public face is its index.ts` · banner
 - `UBL-2.1` · catalogue
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unbalanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| not-held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·5 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `60` · sealed `1` · horo `7`
-- variance `0` · balanced `1` · trinity sum `3`
+- bond degree `0` · sealed `0` · horo `5`
+- variance `1` · balanced `0` · trinity sum `3`
 - bindings `0` · standards `3`
 
 ## identity
 
-- uuid `c34cceb3-27b2-85b2-882e-8e29e097983a`
-- bonds in `14` · out `20`
+- uuid `205b5b61-bacf-88dc-82c9-59a95df6b8b9`
+- bonds in `7` · out `7`
 - trinity form·code·proof `1`·`1`·`1`
 - links `9` / `9`
 - folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `14089b03-b0c4-89c1-869d-d75e36add9f5` · framed by typography partition `convention` bonds `60` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c3e9cbc2-645d-8b0a-8e2d-1dabcf7404cf` · framed by typography partition `convention` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

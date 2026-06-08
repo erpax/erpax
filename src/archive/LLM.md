@@ -3,8 +3,8 @@
 
 # archive
 
-path `archive` · uuid `006ff0dc-e769-8607-ad74-01e16ba75941` · diamond `90acd3be-bcb3-8a3e-b755-e0f493ac8ae7`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `archive` · uuid `43a23d74-3b51-8459-889a-1c1452504a18` · diamond `e8358dc7-f796-8a38-8488-5860f4f7c136`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·component·held·holding·law·merge·organization·sti · exports archive · escapes —
 links `8/8` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law archive is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `16b38c1a-c3e7-89e5-af59-4ba9c1cf9fa6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0be468a2-d325-88b2-b13f-cb07f57cfbe7` · `pnpm readme` · `pnpm computed:check`</sub>

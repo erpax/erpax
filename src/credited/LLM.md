@@ -3,8 +3,8 @@
 
 # credited
 
-path `credited` · uuid `09679f07-6302-85ee-afdf-66b218d80f83` · diamond `c26fb39e-fe40-8f71-8347-c43ffd8b87f7`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `credited` · uuid `971c5ceb-9155-8554-8bba-1d5894b4efba` · diamond `331771f8-8528-850f-91e0-14b25d8c738b`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports law·music · exports credited · escapes —
 links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law credited is one schema.org word, content-addressed; the same word collides e
 
 ---
 
-<sub>content-uuid `01907de2-9c5f-8989-aa01-877e772fe2b7` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `027101cd-3158-8861-a2f9-0b169c584b52` · `pnpm readme` · `pnpm computed:check`</sub>

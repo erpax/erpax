@@ -3,8 +3,8 @@
 
 # cases
 
-path `cases` · uuid `e87cc0cf-ba13-8f29-8ba1-8e0622203cb4` · diamond `9800bc8b-8069-87b1-87d1-8fb64d1a7c8d`
-horo `4` `weave` · trinity `1·1·1` · sealed `1`
+path `cases` · uuid `b20b0cda-a2aa-84ea-a000-247d6404302f` · diamond `89c21c2f-788d-8364-b03c-6d0e865cf21a`
+horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/auth·@/discriminator·@/fields·@/horo·@/standard/collection/hook · exports const·default · escapes —
 links `24/24` · folded `1` · bonds in `21` out `21`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law a case is a docket whose status moves along the closed [[horo]] ring `1·2·
 
 ---
 
-<sub>content-uuid `cb42329f-22e0-8665-88e7-5d65a0b63c50` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c0b4adfd-3ed9-8cf0-93de-1b6960cd4634` · `pnpm readme` · `pnpm computed:check`</sub>

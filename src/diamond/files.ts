@@ -16,6 +16,7 @@ import { existsSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { guardian } from '@/guardian'
 import { seal, type SealVerdict } from '@/seal'
+import { computedBaseline } from '@/law/folder/baseline'
 import {
   deriveFolderModel,
   buildFolderReadmeContext,
@@ -173,17 +174,10 @@ export function diamondFileViolations(
   return out
 }
 
-/**
- * THE COMMITTED CEILING — live membership violations (stray files/dirs/dotfiles).
- * Computed-face drift is gated separately by `pnpm readme:check`. Ratchet DOWN only.
- * Derived: `tsx src/diamond/index.ts --audit-files` (645, 2026-06-08).
- */
-export const DIAMOND_FILES_BASELINE = 645
-
-/** Diamond-files guardian — one axis, baseline ratchet (mirrors typography). */
+/** Diamond-files guardian — baseline from ratchet.json. */
 export function diamondFilesGuardian(
   violations: number = diamondFileViolations().length,
-  baseline: number = DIAMOND_FILES_BASELINE,
+  baseline: number = computedBaseline('diamond-membership'),
 ): SealVerdict {
   return seal([guardian({ axis: 'diamond-files', violations, baseline })])
 }

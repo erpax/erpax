@@ -3,7 +3,7 @@
 
 # creator
 
-path `creator` · uuid `3af5a469-f44f-8aab-8f85-ad4e0c223a72` · diamond `7bc164db-4eae-8670-80a4-59be7ef0002f`
+path `creator` · uuid `18646a59-72fb-8e33-8a0f-92cea61c36f1` · diamond `4866998e-b65b-88c9-a3f9-2741e9bcd04f`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports law·person·thing · exports creator · escapes —
 links `3/3` · folded `1` · bonds in `3` out `3`
@@ -14,4 +14,4 @@ law a creator is identical to the author of its CreativeWork — the two propert
 
 ---
 
-<sub>content-uuid `3bb2cfe4-d1f5-84bc-ae1b-74b2c2f3cf57` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e5a1d5f5-7318-83cc-a3d5-a42da7458c36` · `pnpm readme` · `pnpm computed:check`</sub>

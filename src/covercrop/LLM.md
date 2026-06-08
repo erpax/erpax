@@ -3,8 +3,8 @@
 
 # covercrop
 
-path `covercrop` · uuid `4f319e04-27b8-814a-9e97-32096e947ef9` · diamond `adb25ae8-f0a6-8ff4-9a64-8d9210e1146b`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `covercrop` · uuid `03399816-e5af-8934-9303-37e9470006de` · diamond `e7a8f494-763f-80d7-bb0b-e02ec7a4b6b7`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports agriculture·balance·capacity·crop·fertility·harvest·mulch·rotation·season·soil·tillage·yield · exports covercrop · escapes —
 links `22/22` · folded `1` · bonds in `16` out `16`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `ce5f90aa-29db-84be-add9-93b47fc9cee9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c953a4fd-a9c9-8723-a8cf-2d0f5342dd5e` · `pnpm readme` · `pnpm computed:check`</sub>

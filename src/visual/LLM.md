@@ -3,15 +3,15 @@
 
 # visual
 
-path `visual` · uuid `5e1325b8-ad69-8e64-a027-f7f50756a81f` · diamond `3983974a-d5c1-8ed7-b28e-b34ab46598e6`
+path `visual` · uuid `5e1325b8-ad69-8e64-a027-f7f50756a81f` · diamond `b8a55a04-f0f3-8052-9671-72b24a65dd79`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports arts·artwork·collapse·event·law·merge·sti · exports visual · escapes —
-links `7/7` · folded `1` · bonds in `10` out `10`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·balance·finite·id·items·landmarks·progression·spouse·tour·visits · ← accounting·balance·finite·id·items·landmarks·progression·spouse·tour·visits
+neighbors → arts·artwork·collapse·event·law·merge·sti · ← arts·artwork·collapse·event·law·merge·sti
 analysis —
 law visual is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `f14618f6-6091-8f66-a33d-94e9f9e7d328` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f41c0b9e-7c76-86d9-95c9-39d1e72351eb` · `pnpm readme` · `pnpm computed:check`</sub>

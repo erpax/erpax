@@ -3,15 +3,15 @@
 
 # carbon
 
-path `beyond/carbon` · uuid `0d9f34bd-dc5f-8d20-a4a3-29f189a062da` · diamond `400409b2-6a41-8a26-be43-3de3eda2de4c`
+path `beyond/carbon` · uuid `22dd6c72-29a9-815b-8a48-ad82e45a7ffc` · diamond `ac4cfc70-6c7a-88cc-a1b6-f4ca33e8c393`
 horo `5` `round` · trinity `1·1·1` · sealed `0`
 imports @/beyond/types · exports function · escapes —
-links `6/6` · folded `1` · bonds in `5` out `5`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `1·0·0`
-neighbors → beyond·cost·law·standard·trinity · ← beyond·cost·law·standard·trinity
+neighbors → beyond·cost·cost·law·standard·trinity · ← beyond·cost·cost·law·standard·trinity
 analysis —
 law compute is never carbon-free; every step's gCO2e is estimated from energy and grid intensity ([[standard]] ESRS E1 / GHG Protocol Scope-2) and conserved per tenant — the [[trinity]] proof holds the accumulation invariant.
 
 ---
 
-<sub>content-uuid `6fc3e5d6-b464-804d-aec1-33b8f226ae19` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2b2122e1-b302-8250-8239-63c027e3b0df` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # cache
 
-path `quantum/cache` · uuid `ce746170-18e5-8091-81f0-849dca8972e0` · diamond `e510ec7f-8426-80a9-ae0e-ee3ab77ee5f0`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+path `quantum/cache` · uuid `50cc99be-73d4-8f3b-bab6-b06f8b087e6f` · diamond `38939db8-c746-8d2a-be8b-f004b371d7e2`
+horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/uuid/matrix · exports const · escapes —
-links `11/11` · folded `1` · bonds in `14` out `15`
+links `11/11` · folded `1` · bonds in `12` out `12`
 faces worker·plugin·pwa `1·0·0`
-neighbors → artery·bindings·cache·diamond·holographic·law·law·merge·optimize·pwa·quantum·queries·redirects·request·uuid · ← artery·bindings·cache·diamond·holographic·law·merge·optimize·pwa·quantum·queries·redirects·request·uuid
+neighbors → artery·bindings·bindings·cache·diamond·holographic·law·optimize·pwa·queries·redirects·request · ← artery·bindings·bindings·cache·diamond·holographic·law·optimize·pwa·queries·redirects·request
 analysis —
 law identity of content is identity of key — `sameKey(a,b)` is true exactly when `a` and `b` are the same content, because the key is nothing but the content's own uuid; therefore a hit can only ever return the very content asked for, and a changed input is necessarily a different key, so a stale hit is not a bug to guard against but an outcome the addressing makes impossible.
 
 ---
 
-<sub>content-uuid `817f6373-8d6e-8674-a4e9-fece75803d6a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4b497895-6a51-84ae-b6be-0449bb2b99e0` · `pnpm readme` · `pnpm computed:check`</sub>

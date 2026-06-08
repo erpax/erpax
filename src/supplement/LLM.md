@@ -3,15 +3,15 @@
 
 # supplement
 
-path `supplement` · uuid `b3fc2788-3c12-80a8-adcc-07b05f311945` · diamond `c2a0c7bd-a873-86d6-914a-aa13b5321a75`
+path `supplement` · uuid `b3fc2788-3c12-80a8-adcc-07b05f311945` · diamond `e56a35a8-b0be-8bd8-aefd-4ce1e8349ad8`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·dietary·law·merge·sti · exports supplement · escapes —
-links `5/5` · folded `1` · bonds in `18` out `18`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → anchor·balance·biomagnetism·candidate·composite·consent·death·distinguishing·eat·embedded·entertainment·entity·landmarks·progression·seed·sla·supported·symbol · ← anchor·balance·biomagnetism·candidate·composite·consent·death·distinguishing·eat·embedded·entertainment·entity·landmarks·progression·seed·sla·supported·symbol
+neighbors → collapse·dietary·law·merge·sti · ← collapse·dietary·law·merge·sti
 analysis —
 law supplement is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `b998f216-9963-8ed1-974d-6aeaf4f300b0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `081a4ae5-cd4c-81da-a4ce-bf9ba1deadeb` · `pnpm readme` · `pnpm computed:check`</sub>

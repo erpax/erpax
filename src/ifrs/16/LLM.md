@@ -4,7 +4,7 @@
 # 16
 
 path `ifrs/16` · uuid `5a20f026-5620-8f75-98eb-01758f828476` · diamond `ceaf2493-e497-8ba4-88fe-00a8d54b859e`
-horo `1` `base` · trinity `1·1·1` · sealed `1`
+horo `1` `base` · trinity `1·1·1` · sealed `0`
 imports — · exports DiscountRateBasis·Lease·LeaseClassification·LeaseLiability·LeaseModification·LeaseModificationKind·LeasePayment·LeaseStatus·PaymentFrequency·PaymentTiming·RouAsset·UnderlyingAssetCategory·isDiscountRateBasis·isLeaseClassification·isLeaseModificationKind·isLeaseStatus·isPaymentFrequency·isPaymentTiming·qualifiesForShortTermExemption · escapes —
 links `1/1` · folded `1` · bonds in `1` out `1`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law IFRS 16 / ASC 842 owns the canonical lessee types — every lease, bar the t
 
 ---
 
-<sub>content-uuid `b821d9f6-89ee-8093-9938-d19cdfe9f9ce` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `521466da-37c1-87ac-b6ef-38ea207854f7` · `pnpm readme` · `pnpm computed:check`</sub>

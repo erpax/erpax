@@ -23,7 +23,21 @@
 
 - partition `fmradio` · sub-root `276b86d2-31e7-8644-a357-4d35ae668b24`
 - bond degree `12` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `12` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `9de018de-a245-8a59-9903-e8f3762b3d0e` · framed by typography partition `fmradio` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f0e2794e-c1a7-8106-a38e-62373a5bc4ac` · framed by typography partition `fmradio` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

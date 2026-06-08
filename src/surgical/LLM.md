@@ -3,15 +3,15 @@
 
 # surgical
 
-path `surgical` · uuid `7a10c8c7-5c52-8982-bd17-344d3181dc1e` · diamond `610ce018-e80a-873d-8926-b68208519ed6`
+path `surgical` · uuid `7a10c8c7-5c52-8982-bd17-344d3181dc1e` · diamond `9c91df61-e6c0-8596-bac5-e58abc1650b5`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·procedure·sti · exports surgical · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·procedure·sti · ← collapse·law·merge·procedure·sti
 analysis —
 law surgical is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `3b37d18f-bc91-84fe-bf68-c7cdd48c361b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b4f7f0fa-2eb4-8181-a534-0422c443fee7` · `pnpm readme` · `pnpm computed:check`</sub>

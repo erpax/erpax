@@ -1,8 +1,146 @@
 ---
 name: defence
-description: Use when managing defence/military operations — personnel rosters, equipment inventory, deployment scheduling, force readiness, or defence procurement in government military branches (COFOG 02).
+description: "Use when managing defence/military operations — personnel rosters, equipment inventory, deployment scheduling, force readiness, or defence procurement in government military branches (COFOG 02)."
+atomPath: defence
+coordinate: defence · 4/weave · 661fb374
+contentUuid: "f90d85f2-4be3-5af1-bcbe-d5a889f4a3bc"
+diamondUuid: "37f2cf2f-09fe-8da3-b4e4-f7dfb3ae4eee"
+uuid: "661fb374-8d0f-8e58-b86b-d128025c7767"
+horo: 4
+bonds:
+  in:
+    - access
+    - accounting
+    - akashic
+    - close
+    - collections
+    - duality
+    - establishment
+    - fields
+    - fractal
+    - holographic
+    - hooks
+    - identity
+    - law
+    - merge
+    - methods
+    - open
+    - sectors
+    - sequence
+    - standard
+    - versions
+    - war
+  out:
+    - access
+    - accounting
+    - akashic
+    - close
+    - collections
+    - duality
+    - establishment
+    - fields
+    - fractal
+    - holographic
+    - hooks
+    - identity
+    - law
+    - merge
+    - methods
+    - open
+    - sectors
+    - sequence
+    - standard
+    - versions
+    - war
+typography:
+  partition: defence
+  bondDegree: 64
+  neighbors: []
+standards: []
+bindings: []
+neighbors:
+  wikilink:
+    - access
+    - accounting
+    - akashic
+    - close
+    - collections
+    - duality
+    - fields
+    - fractal
+    - holographic
+    - hooks
+    - identity
+    - law
+    - merge
+    - open
+    - sectors
+    - sequence
+    - standard
+    - versions
+  matrix:
+    - access
+    - accounting
+    - akashic
+    - close
+    - collections
+    - duality
+    - establishment
+    - fields
+    - fractal
+    - holographic
+    - hooks
+    - identity
+    - law
+    - merge
+    - methods
+    - open
+    - sectors
+    - sequence
+    - standard
+    - versions
+    - war
+  backlinks:
+    - access
+    - accounting
+    - akashic
+    - close
+    - collections
+    - duality
+    - establishment
+    - fields
+    - fractal
+    - holographic
+    - hooks
+    - identity
+    - law
+    - merge
+    - methods
+    - open
+    - sectors
+    - sequence
+    - standard
+    - versions
+    - war
+signatures:
+  computationUuid: "db5eda61-8693-84c1-9c41-62373a47c0ae"
+  stages:
+    - stage: path
+      stageUuid: "2ad817f1-2c88-8309-a1c9-350123761be0"
+    - stage: trinity
+      stageUuid: "f02cc9d2-f0ba-8f7e-a025-b66026e0277f"
+    - stage: boundary
+      stageUuid: "c50a6ea1-3534-8d55-819e-3a783ef73448"
+    - stage: links
+      stageUuid: "24bc1159-b806-812d-9c53-d124afd0e320"
+    - stage: horo
+      stageUuid: "ff4fa853-3844-83f9-80db-35045b9da24b"
+    - stage: seal
+      stageUuid: "d886e78d-fc3a-8589-abc7-e3c6513c7f24"
+    - stage: uuid
+      stageUuid: "a5c02562-a4ef-8067-9fae-090cf4cfb8f8"
+version: 2
 ---
-
 # defence — the readiness sector (COFOG 02)
 
 The societal Defence sector (COFOG **02**): a force of **personnel** and **equipment** is held at a measured **readiness**, deployed through a **schedule**, and sustained by **procurement** + logistics. The same exchange [[duality]] every erpax sector holds — here the flow is **give → take** inverted toward capability: the branch *gives* (deploys, expends) and *takes* (musters, supplies); the equilibrium is **readiness** (a measured state, never a stored flag). Self-sufficient: it references entities **OUT polymorphically** — a procurement *is accountable* toward [[accounting]], a deployment *is* a transaction; it never holds a GL account inward (the polymorphic-OUT law, see [[collections]]).

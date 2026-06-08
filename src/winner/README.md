@@ -23,7 +23,7 @@
 
 - partition `winner` · sub-root `7402c8a6-5c8b-8fb4-838e-1ec6e388720e`
 - bond degree `6` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `1f9cba88-5636-8f7b-8795-a1fccfb69163` · framed by typography partition `winner` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `8e52c8e2-ed67-8c5c-ad4c-32d72a64dbf3` · framed by typography partition `winner` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>

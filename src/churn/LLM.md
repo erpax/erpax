@@ -3,7 +3,7 @@
 
 # churn
 
-path `churn` · uuid `e15b5534-96d5-8d77-8427-1573ffa36eb4` · diamond `68b94ab8-e68a-8d62-9d00-5ce390246ac2`
+path `churn` · uuid `0ab90dca-1515-8519-beff-c4f662e26048` · diamond `40e12eb3-7a01-8cc1-9c48-4f69363dae2b`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports cohort·customers·forecast·law·revenue·subscriptions · exports churn · escapes —
 links `6/6` · folded `1` · bonds in `8` out `8`
@@ -14,4 +14,4 @@ law churn measures customer attrition — the rate (monthly/annual %), the cohor
 
 ---
 
-<sub>content-uuid `b06866fd-c1d9-893a-8330-3b3d03cf2dc5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `54914986-8d54-838c-8f3c-bba37768b46c` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -1,8 +1,188 @@
 ---
 name: stream
-description: Use when events must move as one continuous tamper-proof current rather than discrete steps — turning the event bus into a typed AsyncIterable, windowing it (tumbling/sliding/session), composing blocks stream-to-stream, and verifying causal Lamport order plus the streamUuid hash-chain.
+description: "Use when events must move as one continuous tamper-proof current rather than discrete steps — turning the event bus into a typed AsyncIterable, windowing it (tumbling/sliding/session), composing blocks stream-to-stream, and verifying causal Lamport order plus the streamUuid hash-chain."
+atomPath: stream
+coordinate: stream · 7/descent · 2de735a0
+contentUuid: "4e3521f6-31a4-5d0c-9a30-93ddb8124124"
+diamondUuid: "f37edfd0-a54d-8c33-991e-a8767b7cf0d4"
+uuid: "2de735a0-ea50-8687-8a3a-87a251af7150"
+horo: 7
+bonds:
+  in:
+    - akashic
+    - blockchain
+    - breath
+    - cost
+    - digit
+    - distribution
+    - duality
+    - entropy
+    - event
+    - flow
+    - fractal
+    - generate
+    - holographic
+    - horo
+    - identity
+    - integrity
+    - log
+    - merge
+    - number
+    - pi
+    - proof
+    - realtime
+    - seal
+    - sequence
+    - snapshot
+    - standard
+    - sync
+    - thought
+    - uuid
+  out:
+    - akashic
+    - blockchain
+    - breath
+    - cost
+    - digit
+    - distribution
+    - duality
+    - entropy
+    - event
+    - flow
+    - fractal
+    - generate
+    - holographic
+    - horo
+    - identity
+    - integrity
+    - log
+    - merge
+    - number
+    - pi
+    - proof
+    - realtime
+    - seal
+    - sequence
+    - snapshot
+    - standard
+    - sync
+    - thought
+    - uuid
+typography:
+  partition: stream
+  bondDegree: 88
+  neighbors: []
+standards:
+  - "ISO 19011:2018 §6.4.6 (every stream window audit-trailed)"
+  - "ISO/IEC 25010:2023 §5.2 performance — throughput"
+  - "Lamport 1978 — distributed-system causal ordering"
+  - ReactiveX / W3C Streams API (AsyncIterable surface)
+bindings: []
+neighbors:
+  wikilink:
+    - akashic
+    - blockchain
+    - breath
+    - cost
+    - distribution
+    - duality
+    - entropy
+    - event
+    - flow
+    - fractal
+    - generate
+    - holographic
+    - horo
+    - identity
+    - integrity
+    - merge
+    - proof
+    - realtime
+    - seal
+    - sequence
+    - snapshot
+    - standard
+    - sync
+    - uuid
+  matrix:
+    - akashic
+    - blockchain
+    - breath
+    - cost
+    - digit
+    - distribution
+    - duality
+    - entropy
+    - event
+    - flow
+    - fractal
+    - generate
+    - holographic
+    - horo
+    - identity
+    - integrity
+    - log
+    - merge
+    - number
+    - pi
+    - proof
+    - realtime
+    - seal
+    - sequence
+    - snapshot
+    - standard
+    - sync
+    - thought
+    - uuid
+  backlinks:
+    - akashic
+    - blockchain
+    - breath
+    - cost
+    - digit
+    - distribution
+    - duality
+    - entropy
+    - event
+    - flow
+    - fractal
+    - generate
+    - holographic
+    - horo
+    - identity
+    - integrity
+    - log
+    - merge
+    - number
+    - pi
+    - proof
+    - realtime
+    - seal
+    - sequence
+    - snapshot
+    - standard
+    - sync
+    - thought
+    - uuid
+signatures:
+  computationUuid: "5b563618-1772-87c8-bd45-dc3f4c40c4ac"
+  stages:
+    - stage: path
+      stageUuid: "51d134f1-3abd-8c47-9170-1321d632d4a4"
+    - stage: trinity
+      stageUuid: "0680b2a9-ad50-86a2-b2ea-2d261b80d049"
+    - stage: boundary
+      stageUuid: "473e8e1a-a875-84fe-9a31-9f331c638811"
+    - stage: links
+      stageUuid: "2e395970-a8a8-86ba-ab3e-ef62dc6cd545"
+    - stage: horo
+      stageUuid: "51a3be7c-01e9-8e7f-b461-bc1caabf0d7f"
+    - stage: seal
+      stageUuid: "c342d8d6-199a-8b00-acb2-c5c86894d203"
+    - stage: uuid
+      stageUuid: "f61c4a18-93de-89a9-a597-bafbab503761"
+version: 2
 ---
-
 # streams — the quantum, continuous dual of discrete events
 
 FORM: **events are one continuous current, not a sequence of steps.** The discrete chain-of-blocks is the classical view — agents fire in turn, [[event]]s hop step-by-step. The stream is the quantum view: every event flows through every surface in superposition, and a step boundary is just an observation that collapses the current into a definite next state. Both views co-exist; this is the [[duality]] — the discrete chain for orchestration, the continuous stream for high-throughput, partial-failure-tolerant [[flow]] (CDC, telemetry, agent-to-agent dialog, federation broadcast). Proven pure.

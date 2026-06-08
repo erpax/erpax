@@ -2,7 +2,7 @@
 
 # church
 
-> atom `church` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
+> atom `church` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -21,9 +21,9 @@
 
 ## typography graph
 
-- partition `church` · sub-root `46484840-5321-8cba-8c77-778c60438a60`
+- partition `church` · sub-root `d3df9b74-f576-8b9d-8247-5e37f6daf3b9`
 - bond degree `7` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -33,15 +33,53 @@
 
 - `schema.org — the type vocabulary, collided to single words` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·4 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `7` · sealed `1` · horo `8`
+- bond degree `7` · sealed `1` · horo `4`
 - variance `0` · balanced `1` · trinity sum `1`
 - bindings `0` · standards `1`
 
 ## identity
 
-- uuid `46484840-5321-8cba-8c77-778c60438a60`
+- uuid `d3df9b74-f576-8b9d-8247-5e37f6daf3b9`
 - bonds in `2` · out `2`
 - trinity form·code·proof `1`·`0`·`0`
 - links `2` / `2`
@@ -53,4 +91,4 @@
 
 ---
 
-<sub>content-uuid `17e04c88-b00a-8caa-bd59-2ef0aa99dda6` · framed by typography partition `church` bonds `7` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `8e50795b-bad9-8207-9111-80f79ec935f2` · framed by typography partition `church` bonds `7` · `pnpm readme` · `pnpm readme:check`</sub>

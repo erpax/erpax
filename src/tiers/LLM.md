@@ -3,15 +3,15 @@
 
 # tiers
 
-path `tiers` · uuid `ec109e82-aa17-889e-9e9e-3aaccac3603c` · diamond `e084da41-df2f-89f5-962c-056eb6c5f1e8`
+path `tiers` · uuid `ec109e82-aa17-889e-9e9e-3aaccac3603c` · diamond `74509ca0-8d8d-8e59-8e20-af57b4ca9688`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·has·law·merge·sti · exports tiers · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·has·law·merge·sti · ← collapse·has·law·merge·sti
 analysis —
 law tiers is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `65acbdf5-e01a-802f-9e6c-ef2c33d8a18a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d270dd6d-bdfc-83f0-b68c-2c146a7bd81f` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -25,7 +25,23 @@
 
 - partition `fold` · sub-root `ff1ed43c-cea6-8315-83bd-08b6714b4688`
 - bond degree `39` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `depth/merges are the binary-fold math; the corpus counts are read live from the matrix` · banner
+- `depth/merges are the binary-fold math; the corpus counts read live from the matrix, never asserted` · banner
+- `the Merkle binary fold (depth ⌈log2 N⌉) · the base-10 digital root (the rodin reduction)` · banner
+
+## analytics
+
+- bond degree `39` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `3`
 
 ## identity
 
@@ -41,4 +57,4 @@
 
 ---
 
-<sub>content-uuid `b7273d2a-980f-87f3-af11-e277aaf7eb9c` · framed by typography partition `fold` bonds `39` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `75f8b52a-af8d-8a7b-bf3a-af133472c919` · framed by typography partition `fold` bonds `39` · `pnpm readme` · `pnpm readme:check`</sub>

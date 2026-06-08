@@ -23,7 +23,21 @@
 
 - partition `escrow` · sub-root `b2953fea-36a2-89c3-a9a6-ff86a38052c6`
 - bond degree `24` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `24` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `54ffc76c-310d-8334-8c1b-64aae435738a` · framed by typography partition `escrow` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ad01c9a7-fa1c-8efe-9fee-6a4b710a1aad` · framed by typography partition `escrow` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>

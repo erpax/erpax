@@ -2,9 +2,11 @@
 
 # esr
 
-> atom `eu/csrd/esr` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
+> atom `eu/csrd/esr` · horo `5` `round` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `eu/csrd/esr` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,15 +23,130 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `law:the CSRD/ESRS topic + double-materiality + assurance-level taxonomy consumed for disclosure tagging and ESRS E1 emissions roll-up — the standard's scales, not the per-company materiality assessment.`
+- `seal:unsealed`
+- `trigger:Use when implementing or referencing EU CSRD / ESRS.`
+- `trigger:the CSRD/ESRS topic + double-materiality + assurance-level taxonomy consumed for disclosure tagging and ESRS E1 emissions roll-up — the standard's scales, not the per-company materiality assessment.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `17b1a33c-c7bb-823b-8e0b-7c17747064e1` · `435db44b-ea88-8d3e-9b55-d4c1f3635f7b` · `f874a828-9019-88b4-833e-1f8ed385a502`
+- content uuids `15376a32-d359-8d32-b1ae-6cc035224512` · `6ef56485-e3ff-8ef0-a3ba-9df23d2e3252` · `8571ff5f-8bed-8881-a081-5303332072a3`
+
+## [[entropy]] — gaps · seals
+
+> account code `eu/csrd/esr` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.5` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `2` eb | Σ seal `11.5` eb |
+
+> net residual `-9.5` eb · seal/gap ratio `5.75` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `eu` · sub-root `eecedda0-dfbe-8981-8981-b15910f59ecc`
+- partition `eu` · sub-root `b206ff5c-5134-8325-b4f6-18d58cd57858`
 - bond degree `3` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `EU CSRD Directive 2022/2464` · banner
+- `EU EFRAG ESRS-XBRL taxonomy` · banner
+- `EU ESRS 1 General Requirements` · banner
+- `EU ESRS 2 General Disclosures` · banner
+- `EU ESRS E1 Climate Change (companion to GHG Protocol)` · banner
+- `EU-2022/1925` · catalogue
+- `EU-2022/2065` · catalogue
+- `EU-2022/2554` · catalogue
+- `EU-2022/2555` · catalogue
+- `EU-2022/868` · catalogue
+- `EU-CSRD` · catalogue
+- `EU-ESRS` · catalogue
+- `GHG-Protocol` · catalogue
+- `IFRS S1 General Sustainability Disclosures` · banner
+- `IFRS S2 Climate-Related Disclosures` · banner
+- `XBRL` · catalogue
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·5 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `3` · sealed `0` · horo `5`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `16`
 
 ## identity
 
-- uuid `d3f14fc2-dfdd-8975-a375-af68314b1d5b`
+- uuid `bca075d1-29eb-8005-84e8-f3cecbdb9f36`
 - bonds in `1` · out `1`
 - trinity form·code·proof `1`·`1`·`1`
 - links `1` / `1`
@@ -37,8 +154,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `810c21cf-be4f-8524-ae44-a757d76edf6a` · framed by typography partition `eu` bonds `3` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `60d43c41-fcd9-8602-a508-e824b73b3033` · framed by typography partition `eu` bonds `3` · `pnpm readme` · `pnpm readme:check`</sub>

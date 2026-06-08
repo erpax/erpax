@@ -3,7 +3,7 @@
 
 # classroom
 
-path `classroom` · uuid `fd251259-8a4e-87fe-83ba-d74ee3023855` · diamond `f56b7cc7-f603-841b-8ba0-b44a7806f1c3`
+path `classroom` · uuid `5fba7100-e3f2-8bfd-bbc3-ec1c4fa9e9f2` · diamond `1ba7513d-d48c-84de-9329-c84bca6e0302`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports breath·chat·competition·decide·derive·education·holographic·law·merge·proof·self·society·team·train · exports classroom · escapes —
 links `40/40` · folded `1` · bonds in `17` out `17`
@@ -14,4 +14,4 @@ law a learning session is a [[team]] of agents in pedagogical roles run as a tur
 
 ---
 
-<sub>content-uuid `ad578fa2-20c7-8ac9-8af3-9f96b4372538` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4e2684f9-dcba-8806-a101-bcb0e891e0a7` · `pnpm readme` · `pnpm computed:check`</sub>

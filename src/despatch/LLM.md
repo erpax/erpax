@@ -3,8 +3,8 @@
 
 # despatch
 
-path `despatch` · uuid `628241e3-49d5-8e2c-880e-514a91c1b19a` · diamond `4168e81c-aceb-88bb-923d-e80f7b4028b4`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `despatch` · uuid `7ff294ea-60cf-8e03-8fcd-c34bb978c603` · diamond `524648c5-753b-8777-9b03-24c485778488`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports despatch · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law despatch is one schema.org word, content-addressed; the same word collides e
 
 ---
 
-<sub>content-uuid `8b41165c-b8f7-87d6-99b7-d4a0c8ccca4b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `129d370c-c657-84d1-bfac-5d00758f6d2d` · `pnpm readme` · `pnpm computed:check`</sub>

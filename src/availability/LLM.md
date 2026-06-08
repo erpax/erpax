@@ -3,8 +3,8 @@
 
 # availability
 
-path `availability` · uuid `d00b21f8-1c97-820c-839b-0d68df018c79` · diamond `71906577-accc-8c43-a56f-af54f06d4713`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `availability` · uuid `1f251db8-fdab-876c-8605-ad30b271df5c` · diamond `fcfe133f-6da4-84b9-947b-912e36081e05`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports ends·enumeration·game·item·law·starts·type · exports availability · escapes —
 links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law availability is one schema.org word, content-addressed; the same word collid
 
 ---
 
-<sub>content-uuid `a19f2bf4-5bd7-8225-9208-4d700b0d0adc` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7c101fb6-332d-8c22-b127-fac2b31559c2` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # srp
 
-path `srp` · uuid `ea6f5dee-7f49-854a-8fb7-c643ee4e2c2d` · diamond `b4e3ff2f-343d-8a8d-8e98-60c97517af18`
+path `srp` · uuid `ea6f5dee-7f49-854a-8fb7-c643ee4e2c2d` · diamond `8eb013bf-5cd5-8b2b-be79-08f49a0e299e`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports srp · escapes —
-links `4/4` · folded `1` · bonds in `14` out `14`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → atom·cohort·drone·duplicate·effective·endpoint·entropy·grant·landmarks·list·memories·qualification·radiation·stat · ← atom·cohort·drone·duplicate·effective·endpoint·entropy·grant·landmarks·list·memories·qualification·radiation·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law srp is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `a38edd5a-7881-86d0-aa7c-d3ddfad75db8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `70030cd7-c765-8cae-9c41-c965d6f61284` · `pnpm readme` · `pnpm computed:check`</sub>

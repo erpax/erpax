@@ -2,7 +2,7 @@
 
 # 19005
 
-> atom `iso/19005` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
+> atom `iso/19005` · horo `2` `share` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -25,7 +25,30 @@
 
 - partition `iso` · sub-root `ea5c4346-ba0e-8fac-9959-143d07932374`
 - bond degree `3` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `EU-2000/31` · catalogue
+- `EU-2005/29` · catalogue
+- `EU-2011/83` · catalogue
+- `EU-765/2008` · catalogue
+- `EU-VAT-Implementing-Reg-282/2011` · catalogue
+- `ISO-19005` · catalogue
+- `ISO-19005-1:2005 pdf-a-1` · banner
+- `ISO-19005-2:2011 pdf-a-2` · banner
+- `ISO-19005-3:2012 pdf-a-3` · banner
+- `ISO-32000` · catalogue
+
+## analytics
+
+- bond degree `3` · sealed `0` · horo `2`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `10`
 
 ## identity
 
@@ -37,8 +60,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `ea51df0f-51f7-84e7-862b-469d33b89582` · framed by typography partition `iso` bonds `3` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `df39b223-7237-8bcd-bdbc-a980a1a7224f` · framed by typography partition `iso` bonds `3` · `pnpm readme` · `pnpm readme:check`</sub>

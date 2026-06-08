@@ -1,8 +1,108 @@
 ---
-name: google-workspace
+name: workspace
 description: "Use when fusing Google Workspace (Gmail, Calendar, Drive, Docs, Sheets, People, Admin Directory) into erpax to fill the office/productivity gap — a computed API catalogue plus the content-uuid fusion bridge that merges a fetched resource into the mesh idempotently (re-fetch dedups). Credentials live in the per-tenant config sandbox, never in the registry."
+atomPath: google/workspace
+coordinate: google/workspace · 8/crest · f245cf32
+contentUuid: "7eb0d38b-7f87-527d-beb0-a77a9d6d1b29"
+diamondUuid: "fbd6a530-a0ce-83f1-9aa6-7b00c1e283ad"
+uuid: "f245cf32-fc61-841c-8aa5-e6308fc6cd43"
+horo: 8
+bonds:
+  in:
+    - accounting
+    - api
+    - connections
+    - entry
+    - federation
+    - flow
+    - identity
+    - ingest
+    - law
+    - mcp
+    - merge
+    - oauth
+    - standard
+  out:
+    - accounting
+    - api
+    - connections
+    - entry
+    - federation
+    - flow
+    - identity
+    - ingest
+    - law
+    - mcp
+    - merge
+    - oauth
+    - standard
+typography:
+  partition: google
+  bondDegree: 0
+  neighbors: []
+standards:
+  - "UBL-2.1"
+bindings: []
+neighbors:
+  wikilink:
+    - accounting
+    - api
+    - connections
+    - entry
+    - federation
+    - flow
+    - identity
+    - ingest
+    - law
+    - merge
+    - standard
+  matrix:
+    - accounting
+    - api
+    - connections
+    - entry
+    - federation
+    - flow
+    - identity
+    - ingest
+    - law
+    - mcp
+    - merge
+    - oauth
+    - standard
+  backlinks:
+    - accounting
+    - api
+    - connections
+    - entry
+    - federation
+    - flow
+    - identity
+    - ingest
+    - law
+    - mcp
+    - merge
+    - oauth
+    - standard
+signatures:
+  computationUuid: "4b72a9cd-eda3-8806-b326-b10f06d50ba4"
+  stages:
+    - stage: path
+      stageUuid: "6dcd48d9-2c9f-843f-80e2-28174a5bc520"
+    - stage: trinity
+      stageUuid: "a4dad793-6394-81bf-8158-01e8c18cd94a"
+    - stage: boundary
+      stageUuid: "3c7756dd-0a67-8b27-ad79-9191f41208d9"
+    - stage: links
+      stageUuid: "21036d64-d02f-8033-8666-b6ed631aad30"
+    - stage: horo
+      stageUuid: "27fd6b80-2454-8410-bde4-48adcba0e645"
+    - stage: seal
+      stageUuid: "637b755a-4f50-8150-b288-8d50ea49275b"
+    - stage: uuid
+      stageUuid: "60112701-e727-8c64-844a-2868d0c81eda"
+version: 2
 ---
-
 # google-workspace — the office layer fused into the mesh
 
 FORM: **erpax models the business; Google Workspace supplies the office — and the fusion is the [[merge]] law, not a bolted-on client.** A fetched resource (a Gmail message, a Calendar event, a Drive file, a directory user) is CONTENT-ADDRESSED: tagged with its `source` + a cross-system `externalRef` (`service:nativeId`), then given a content-uuid ([[identity]]). Same resource ⇒ same uuid ⇒ the upsert dedups — so fusion is idempotent, and two erpax instances that fetch the same resource converge with no coordination ([[federation]]). `fuseWorkspaceResource(res, tenantId)` returns `{ target, record, uuid }`; the caller upserts into `target` keyed by `uuid`.

@@ -1,10 +1,274 @@
 ---
 name: part
-description: Use when reasoning about membership in erpax — a field of a collection, a line of an entry, a component of a BOM, a plugin of erpax. The universal root of membership; dual of whole.
-sessions:
-  - 776a49cb-8dfb-45ab-88ff-956e3b613adf
+description: "Use when reasoning about membership in erpax — a field of a collection, a line of an entry, a component of a BOM, a plugin of erpax. The universal root of membership; dual of whole."
+atomPath: part
+coordinate: part · 4/weave · cad4dede
+contentUuid: "b0c67bf5-c6fe-5416-b2af-60db1d2b5af7"
+diamondUuid: "0fdb3f95-1f8b-8fb4-b03a-ff77bf720458"
+uuid: "cad4dede-7cf3-8905-a9a4-9e7d745f7b4f"
+horo: 4
+bonds:
+  in:
+    - accessory
+    - accounting
+    - animism
+    - atom
+    - bio
+    - chat
+    - chem
+    - collapse
+    - collections
+    - decompression
+    - diamond
+    - domain
+    - duality
+    - element
+    - entity
+    - episode
+    - fields
+    - fractal
+    - generate
+    - has
+    - herd
+    - hermeticism
+    - identity
+    - invoice
+    - law
+    - lexical
+    - manufacturing
+    - memory
+    - metatron
+    - order
+    - paganism
+    - plugins
+    - protestantism
+    - reference
+    - religion
+    - reverse
+    - sequence
+    - series
+    - session
+    - share
+    - shinto
+    - skills
+    - spare
+    - sync
+    - system
+    - team
+    - thought
+    - torus
+    - transaction
+    - trinity
+    - trip
+    - tv
+    - uuid
+    - whole
+    - wisdom
+  out:
+    - accessory
+    - accounting
+    - animism
+    - atom
+    - bio
+    - chat
+    - chem
+    - collapse
+    - collections
+    - decompression
+    - diamond
+    - domain
+    - duality
+    - element
+    - entity
+    - episode
+    - fields
+    - fractal
+    - generate
+    - has
+    - herd
+    - hermeticism
+    - identity
+    - invoice
+    - law
+    - lexical
+    - manufacturing
+    - memory
+    - metatron
+    - order
+    - paganism
+    - plugins
+    - protestantism
+    - reference
+    - religion
+    - reverse
+    - sequence
+    - series
+    - session
+    - share
+    - shinto
+    - skills
+    - spare
+    - sync
+    - system
+    - team
+    - thought
+    - torus
+    - transaction
+    - trinity
+    - trip
+    - tv
+    - uuid
+    - whole
+    - wisdom
+typography:
+  partition: part
+  bondDegree: 171
+  neighbors: []
+standards: []
+bindings: []
+neighbors:
+  wikilink:
+    - accounting
+    - collections
+    - fields
+    - identity
+    - law
+    - manufacturing
+    - plugins
+    - sequence
+    - uuid
+    - whole
+  matrix:
+    - accessory
+    - accounting
+    - animism
+    - atom
+    - bio
+    - chat
+    - chem
+    - collapse
+    - collections
+    - decompression
+    - diamond
+    - domain
+    - duality
+    - element
+    - entity
+    - episode
+    - fields
+    - fractal
+    - generate
+    - has
+    - herd
+    - hermeticism
+    - identity
+    - invoice
+    - law
+    - lexical
+    - manufacturing
+    - memory
+    - metatron
+    - order
+    - paganism
+    - plugins
+    - protestantism
+    - reference
+    - religion
+    - reverse
+    - sequence
+    - series
+    - session
+    - share
+    - shinto
+    - skills
+    - spare
+    - sync
+    - system
+    - team
+    - thought
+    - torus
+    - transaction
+    - trinity
+    - trip
+    - tv
+    - uuid
+    - whole
+    - wisdom
+  backlinks:
+    - accessory
+    - accounting
+    - animism
+    - atom
+    - bio
+    - chat
+    - chem
+    - collapse
+    - collections
+    - decompression
+    - diamond
+    - domain
+    - duality
+    - element
+    - entity
+    - episode
+    - fields
+    - fractal
+    - generate
+    - has
+    - herd
+    - hermeticism
+    - identity
+    - invoice
+    - law
+    - lexical
+    - manufacturing
+    - memory
+    - metatron
+    - order
+    - paganism
+    - plugins
+    - protestantism
+    - reference
+    - religion
+    - reverse
+    - sequence
+    - series
+    - session
+    - share
+    - shinto
+    - skills
+    - spare
+    - sync
+    - system
+    - team
+    - thought
+    - torus
+    - transaction
+    - trinity
+    - trip
+    - tv
+    - uuid
+    - whole
+    - wisdom
+signatures:
+  computationUuid: "0c831bc9-4fd5-8591-b0c3-10707fe2c5e2"
+  stages:
+    - stage: path
+      stageUuid: "739c634d-36d3-8019-845e-825fd727198d"
+    - stage: trinity
+      stageUuid: "58222a26-636e-8e3f-90fd-6feadce5acd6"
+    - stage: boundary
+      stageUuid: "ec39ab56-1b24-8e9f-8c00-2e296ea78a7b"
+    - stage: links
+      stageUuid: "ba3b6d82-787f-8d47-9365-d9664f086062"
+    - stage: horo
+      stageUuid: "624a7240-c6e6-8596-af68-ecf466edac58"
+    - stage: seal
+      stageUuid: "4640e8d7-88b8-80bc-ab93-f79f84fec52e"
+    - stage: uuid
+      stageUuid: "34425103-3838-8777-b6c8-775b6a797d43"
+version: 2
 ---
-
 # part — the member (of a whole)
 
 `part` is the universal root of **membership**: a [[fields]] field is part of a collection ([[collections]]); a journal line is part of an entry ([[accounting]]); a component is part of a BOM ([[manufacturing]]); a plugin is part of the one erpax ([[plugins]]). Dual of [[whole]]: the whole is its parts, self-similarly, at every scale ([[sequence]]). A part carries its own content-uuid ([[identity]]), so the whole's aura is the Merkle of its parts.

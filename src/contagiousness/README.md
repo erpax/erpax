@@ -2,7 +2,7 @@
 
 # contagiousness
 
-> atom `contagiousness` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
+> atom `contagiousness` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -21,9 +21,9 @@
 
 ## typography graph
 
-- partition `contagiousness` · sub-root `c96ac9bf-e714-8eea-aa2e-0d4400a9f188`
+- partition `contagiousness` · sub-root `eec54664-de96-88fa-a191-1fb49c877347`
 - bond degree `12` · analysis neighbors —
-- graph root `0349017a-99bf-8657-ae7e-21b09f363ed4`
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -33,15 +33,53 @@
 
 - `schema.org — the type vocabulary, collided to single words` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·5 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `12` · sealed `1` · horo `8`
+- bond degree `12` · sealed `1` · horo `5`
 - variance `0` · balanced `1` · trinity sum `1`
 - bindings `0` · standards `1`
 
 ## identity
 
-- uuid `c96ac9bf-e714-8eea-aa2e-0d4400a9f188`
+- uuid `eec54664-de96-88fa-a191-1fb49c877347`
 - bonds in `4` · out `4`
 - trinity form·code·proof `1`·`0`·`0`
 - links `4` / `4`
@@ -53,4 +91,4 @@
 
 ---
 
-<sub>content-uuid `679db14a-303c-8e0a-8e82-9859f09f60df` · framed by typography partition `contagiousness` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `be78e854-cb45-8ea0-b371-81423b91fc83` · framed by typography partition `contagiousness` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

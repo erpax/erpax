@@ -3,8 +3,8 @@
 
 # confirmation
 
-path `confirmation` · uuid `837e028a-2186-8e6b-a9b8-7bed33a269e5` · diamond `0edfc38a-b6a7-8299-8479-cbc31c00e572`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `confirmation` · uuid `3ca13581-2956-8cb6-9896-6a90e4e5e774` · diamond `efda65e5-e42a-8044-96bd-b880459d8ea0`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·number·sti · exports confirmation · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law confirmation is one schema.org word, content-addressed; the same word collid
 
 ---
 
-<sub>content-uuid `71585378-0b94-8b4f-b4db-3f323d9af405` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e87fd669-37b7-82f2-8a42-034a794c22c0` · `pnpm readme` · `pnpm computed:check`</sub>

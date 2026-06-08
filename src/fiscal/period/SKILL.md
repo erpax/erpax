@@ -1,8 +1,133 @@
 ---
-name: "period"
-description: "Use when implementing or referencing Fiscal Period Standard."
+name: period
+description: Use when implementing or referencing Fiscal Period Standard.
+atomPath: fiscal/period
+coordinate: fiscal/period · 1/base · 86a77c31
+contentUuid: "fbeddd06-0130-5f06-9ae0-01e3dea5e2b8"
+diamondUuid: "af561fe7-4593-8254-a824-55b3b194a370"
+uuid: "86a77c31-a345-8618-a651-5dd2a4015483"
+horo: 1
+bonds:
+  in:
+    - accounting
+    - billing
+    - breed
+    - certification
+    - checker
+    - date
+    - fields
+    - integration
+    - law
+    - locks
+    - observation
+    - organic
+    - season
+    - service
+    - start
+    - versions
+    - withdrawal
+  out:
+    - accounting
+    - billing
+    - breed
+    - certification
+    - checker
+    - date
+    - fields
+    - integration
+    - law
+    - locks
+    - observation
+    - organic
+    - season
+    - service
+    - start
+    - versions
+    - withdrawal
+typography:
+  partition: fiscal
+  bondDegree: 0
+  neighbors: []
+standards:
+  - "EU-2014/55"
+  - "EU-2016/679"
+  - "EU-537/2014"
+  - "EU-910/2014"
+  - "GDPR:2016/679 Art. 32 Security of processing"
+  - "IAS-34"
+  - "IAS-34:2023 Interim Financial Reporting"
+  - "ISO-4217:2023 Currency codes"
+  - "ISO-8601:2019 Date/Time representation"
+  - "NIST-SP-800-63"
+  - "NIST-SP-800-92"
+  - "NIST-SP-800-92 Audit logging"
+  - "SAF-T"
+  - "SAF-T:3.0.2 Standard Audit File for Tax"
+  - SOX
+  - "SOX:2002 Sec. 404 Internal control assessment"
+  - XBRL
+  - "XBRL-GL General Ledger"
+  - eIDAS
+  - "eIDAS:2014/910/EU Electronic signatures"
+bindings: []
+neighbors:
+  wikilink:
+    - law
+  matrix:
+    - accounting
+    - billing
+    - breed
+    - certification
+    - checker
+    - date
+    - fields
+    - integration
+    - law
+    - locks
+    - observation
+    - organic
+    - season
+    - service
+    - start
+    - versions
+    - withdrawal
+  backlinks:
+    - accounting
+    - billing
+    - breed
+    - certification
+    - checker
+    - date
+    - fields
+    - integration
+    - law
+    - locks
+    - observation
+    - organic
+    - season
+    - service
+    - start
+    - versions
+    - withdrawal
+signatures:
+  computationUuid: "f83c3cb9-561f-8e0f-b7c7-b07f32b1534a"
+  stages:
+    - stage: path
+      stageUuid: "43d2a82b-4cc1-8c35-98fd-4b088ad6b0dc"
+    - stage: trinity
+      stageUuid: "2d2c753a-b1ae-894e-908b-02e162b3b593"
+    - stage: boundary
+      stageUuid: "ba8ae51b-6df7-8689-b62b-7ea709e2682c"
+    - stage: links
+      stageUuid: "e0a2eb50-ddcf-8b0a-b156-a3644b939b67"
+    - stage: horo
+      stageUuid: "914175df-9706-80d9-8c71-b89bedef7943"
+    - stage: seal
+      stageUuid: "e088a7d9-7200-8e03-9a8b-3dd6e3ab2989"
+    - stage: uuid
+      stageUuid: "b8d36a6a-7640-8a90-9888-f8a7613ffb19"
+version: 2
 ---
-
 # Fiscal Period Standard
 
 **Publisher:** International Accounting Standards Board (IASB), OECD, ISO, W3C  

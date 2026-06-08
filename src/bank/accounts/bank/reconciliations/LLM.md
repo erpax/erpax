@@ -3,15 +3,15 @@
 
 # reconciliations
 
-path `bank/accounts/bank/reconciliations` · uuid `82a12496-eb74-84d9-9f85-27ef78add94d` · diamond `acfffdab-0131-872f-a50b-105df5aed8bf`
-horo `1` `base` · trinity `1·1·1` · sealed `0`
+path `bank/accounts/bank/reconciliations` · uuid `695409c0-205f-8063-8f1b-a8e46d3661cb` · diamond `a83ca792-35dc-85c0-8e23-fe62524a9365`
+horo `8` `crest` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
-links `5/5` · folded `1` · bonds in `9` out `12`
+links `5/5` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·accounting·accounts·accounts·entries·law·proof·reconciliation·statements·statements·transaction·transactions · ← accounting·accounts·entries·law·proof·reconciliation·statements·transaction·transactions
+neighbors → accounting·accounts·proof·reconciliation·statements·transaction · ← accounting·accounts·proof·reconciliation·statements·transaction
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `72422cae-7e44-82e9-8504-6d7c3b8f4d6d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b44935cf-2b2d-8a47-9bf1-3d591a78c78a` · `pnpm readme` · `pnpm computed:check`</sub>

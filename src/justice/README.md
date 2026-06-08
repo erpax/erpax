@@ -2,7 +2,7 @@
 
 # justice
 
-> atom `justice` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `justice` · horo `7` `descent` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -17,13 +17,27 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `7` | Σ `7` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `justice` · sub-root `bd0d41f0-e714-878a-954a-c26bc310bf6f`
-- bond degree `64` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- bond degree `0` · analysis neighbors —
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `0` · sealed `0` · horo `7`
+- variance `1` · balanced `0` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -35,8 +49,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `d9df2e9b-5506-86ae-8906-f36d2c3996ec` · framed by typography partition `justice` bonds `64` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `9671ae38-7da2-858c-bf87-1db5f2da238e` · framed by typography partition `justice` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

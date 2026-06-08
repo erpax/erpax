@@ -3,15 +3,15 @@
 
 # tenant
 
-path `auto/populate/tenant` · uuid `1a876b1c-4264-8aea-9978-f539bcc9d5da` · diamond `029b888a-3000-8735-85de-36bc43dfb60e`
-horo `8` `crest` · trinity `1·1·1` · sealed `0`
+path `auto/populate/tenant` · uuid `65597364-6af4-86a1-a5b4-cb29b301f573` · diamond `8357ad2d-7375-8d63-8d83-e74cc2a00a95`
+horo `2` `share` · trinity `1·1·1` · sealed `0`
 imports — · exports const · escapes —
-links `8/8` · folded `1` · bonds in `12` out `14`
+links `8/8` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·auto·balance·hooks·law·law·law·organization·research·scope·tenant·tenant·tenants·user · ← access·auto·balance·hooks·law·organization·research·scope·tenant·tenant·tenants·user
+neighbors → balance·law·organization·research·tenant·tenant·tenants · ← balance·law·organization·research·tenant·tenant·tenants
 analysis —
 law a row's [[tenant]] is derived from the request [[user]], not the client — the first `req.user.tenants[]` reference is stamped onto the data before validation, the seam of cloud-tenant isolation.
 
 ---
 
-<sub>content-uuid `d46faaa2-c967-8e17-83b4-dbe9c7894f4d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9e0b6c8d-db09-85c3-91ca-3e34d6ad21c8` · `pnpm readme` · `pnpm computed:check`</sub>

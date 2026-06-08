@@ -3,8 +3,8 @@
 
 # bus
 
-path `bus` · uuid `807584c4-5f2f-8384-95b4-76d35823e7ef` · diamond `7e0076eb-936a-8faa-9c0e-53c748f4d58b`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `bus` · uuid `b3eedd02-be2e-8ae3-b25c-dfdbf47ea4fb` · diamond `ba760fb3-7197-8727-8d73-fa4fc1e843ab`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports arrival·coach·collapse·departure·law·merge·name·number·reservation·station·sti·stop·trip · exports bus · escapes —
 links `13/13` · folded `1` · bonds in `13` out `13`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law bus is one schema.org word, content-addressed; the same word collides every 
 
 ---
 
-<sub>content-uuid `510d5c9f-8b9e-8260-b9dd-7f1e8f90d4c5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `af4b8d74-075c-8d43-87d9-50ae20d1338d` · `pnpm readme` · `pnpm computed:check`</sub>

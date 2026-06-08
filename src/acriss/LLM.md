@@ -3,8 +3,8 @@
 
 # acriss
 
-path `acriss` · uuid `5d4d9e3e-4f18-82e6-a282-b6e72e18064a` · diamond `cc8d5903-ab24-8f94-bcfa-ffb78de8f885`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `acriss` · uuid `d0889b99-9b20-812a-b6b0-186a37c95aa0` · diamond `f67038dd-e711-8085-a273-c689e81e0b7e`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports code·collapse·law·merge·sti · exports acriss · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law an ACRISS code is a fixed four-letter classification (category·type·transm
 
 ---
 
-<sub>content-uuid `a4957c05-1de5-8955-8e66-cdf6dec2e4c9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `73bfa473-e015-8bf3-8222-980bb709cc52` · `pnpm readme` · `pnpm computed:check`</sub>

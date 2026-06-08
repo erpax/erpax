@@ -3,15 +3,15 @@
 
 # unlimited
 
-path `unlimited` · uuid `4bf51a8f-8a8d-8e52-9889-e7c612256a23` · diamond `886cf3f8-9a81-854d-9396-10baa755e882`
+path `unlimited` · uuid `4bf51a8f-8a8d-8e52-9889-e7c612256a23` · diamond `1300a169-5aee-80fa-8b88-1011fab51e8b`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports unlimited · escapes —
-links `4/4` · folded `1` · bonds in `23` out `23`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → barrier·benefit·checkins·contained·discount·dose·elimination·has·inseam·landmarks·manure·minor·owned·patient·physiological·record·repayment·separation·structures·substance·symptoms·terroir·tongue · ← barrier·benefit·checkins·contained·discount·dose·elimination·has·inseam·landmarks·manure·minor·owned·patient·physiological·record·repayment·separation·structures·substance·symptoms·terroir·tongue
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law unlimited is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `df879131-a9fe-8c50-b61b-71afb1ab50aa` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a08b17ba-7e77-820e-b622-844ee2e0913f` · `pnpm readme` · `pnpm computed:check`</sub>

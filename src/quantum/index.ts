@@ -76,6 +76,56 @@ export const singleTorusFloorLog2 = (): number => bhtCollisionLog2(TORUS_BITS)
 export const doubleTorusCostLog2 = (gap = 0): number =>
   coverageCostLog2(1 - Math.max(0, Math.min(gap, 1)), 2)
 
+export {
+  interact64,
+  architectureBond,
+  architectureBondStable,
+  architectureMask,
+  architectureBits,
+  doubleArchitectureBits,
+  combineArchitectures,
+  architectureFoldPaths,
+  recordWordOnPath,
+  recordArchitectureFoldOnPath,
+  wordAddress,
+} from './word'
+
+export {
+  cell2DKey,
+  basis2D,
+  superpose2D,
+  probabilities2D,
+  total2D,
+  collapse2D,
+  seal2D,
+  uniform2D,
+  quantum2dHolds,
+  quantumInAllDimensions,
+  PARTITION2D_SAMPLES,
+  type Grid2DCell,
+  type State2D,
+  type QuantumProjectionDimension,
+  type QuantumDimensionCoverage,
+} from './dimensions'
+
+export {
+  DIMENSION_ATOM_PATHS,
+  buildDimensionSnapshot,
+  collapseDimensionState,
+  dimensionRealtimeEmit,
+  dimensionSessionUuid,
+  dimensionSnapshotFingerprint,
+  dimensionWaveCorrelationUuid,
+  appendDimensionToLog,
+  dimensionLogAdvance,
+  type DimensionAxisState,
+  type DimensionSnapshot,
+  type DimensionRealtimeEvent,
+  type DimensionRealtimeEmitResult,
+  type DimensionRealtimeEmitOpts,
+} from './dimension-realtime'
+
+
 if (import.meta.url === 'file://' + process.argv[1]) {
   const d = matrixDigest()
   const ent = entanglement()

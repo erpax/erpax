@@ -3,15 +3,15 @@
 
 # currency
 
-path `currency` · uuid `1bc8366e-ffb2-8e1d-a3f5-1a2c79aa68bc` · diamond `d865692a-ad51-8c8e-abe4-3d5d8efd53ba`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `currency` · uuid `ce402df1-cf04-8421-8ec1-e328d6a0dd50` · diamond `344b4e0e-b3f4-8ad8-85e6-42fb95d30f3c`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports accounting·bindings·commerce·fields·hooks·identity·jobs·measure·rate·standard·versions · exports currency · escapes —
-links `13/13` · folded `1` · bonds in `44` out `43`
+links `13/13` · folded `1` · bonds in `44` out `44`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·agriculture·amortize·amount·bindings·calculate·commerce·compensation·conversion·crop·decompression·depreciate·dimension·discount·ebitda·enterprisebudget·events·fallback·field·fields·hedge·hooks·identity·items·jobs·measure·payment·price·rate·rates·reconcile·reconciliation·resources·revenue·salary·seed·service·standard·tax·total·transaction·value·versions · ← accounting·agriculture·amortize·amount·bindings·calculate·commerce·compensation·conversion·crop·decompression·depreciate·dimension·discount·ebitda·enterprisebudget·events·fallback·field·fields·hedge·hooks·identity·items·items·jobs·measure·payment·price·rate·rates·reconcile·reconciliation·resources·revenue·salary·seed·service·standard·tax·total·transaction·value·versions
+neighbors → accounting·agriculture·amortize·amount·bindings·calculate·commerce·compensation·conversion·crop·decompression·depreciate·dimension·discount·ebitda·enterprisebudget·events·fallback·field·fields·hedge·hooks·identity·items·items·jobs·measure·payment·price·rate·rates·reconcile·reconciliation·resources·revenue·salary·seed·service·standard·tax·total·transaction·value·versions · ← accounting·agriculture·amortize·amount·bindings·calculate·commerce·compensation·conversion·crop·decompression·depreciate·dimension·discount·ebitda·enterprisebudget·events·fallback·field·fields·hedge·hooks·identity·items·items·jobs·measure·payment·price·rate·rates·reconcile·reconciliation·resources·revenue·salary·seed·service·standard·tax·total·transaction·value·versions
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `11efa9dd-d9ab-88b1-a067-eda2e3034a3d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f0b594da-8330-899f-a90a-f5240a5684c9` · `pnpm readme` · `pnpm computed:check`</sub>

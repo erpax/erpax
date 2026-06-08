@@ -3,8 +3,8 @@
 
 # character
 
-path `character` · uuid `e6f627b5-004f-8d5d-9106-7aabfaf1f3e4` · diamond `94385de3-6509-8e87-a712-bf042c3430fc`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `character` · uuid `0253a126-e305-813c-ae23-1e10a8efc958` · diamond `bf2831d4-d35e-8954-95a6-21d37970a542`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports attribute·law·name·spoken · exports character · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law character is one schema.org word, content-addressed; the same word collides 
 
 ---
 
-<sub>content-uuid `8b8dfffb-3d3f-8d97-aea9-3ee48302c7d0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e1e60074-4196-80b0-b57c-a0a7307e3262` · `pnpm readme` · `pnpm computed:check`</sub>

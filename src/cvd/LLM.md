@@ -3,8 +3,8 @@
 
 # cvd
 
-path `cvd` · uuid `e16434f0-473d-8c53-934d-739d7d961418` · diamond `d05e6f3a-9b33-8804-a2a5-b58b6aa4e5c2`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `cvd` · uuid `52bba662-0d0f-8eeb-bb2a-5b6fca79a58a` · diamond `bce005c3-27eb-812b-81b0-5fb7d7435f7d`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports beds·collapse·collection·county·date·died·facility·ho·hosp·icu·id·law·mech·merge·num·occ·overflow·pats·sti·tot·use·vent · exports cvd · escapes —
 links `22/22` · folded `1` · bonds in `22` out `22`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law cvd is one schema.org word, content-addressed; the same word collides every 
 
 ---
 
-<sub>content-uuid `978bce51-a180-879c-9292-c84bbcfecc8d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0829ea4f-3a1b-8348-aa74-c59c8a31034d` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -23,7 +23,21 @@
 
 - partition `holidays` · sub-root `2e2aa4fd-3b69-89eb-91e6-7076d26b78f7`
 - bond degree `12` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `12` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `eba78929-fd12-823c-ba8b-529133386044` · framed by typography partition `holidays` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `6edf437a-4e18-8df4-90b8-2f8e309895cf` · framed by typography partition `holidays` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -2,35 +2,143 @@
 
 # number
 
-> atom `quantum/number` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
+> atom `quantum/number` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
+
+> account code `quantum/number` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
+| [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
 | [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
 | [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
 | [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
 | [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
-| Σ `7` | Σ `7` |
+| Σ `9` | Σ `9` |
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `dispatch:eb=1.585`
+
+### collapse
+
+- `balance:conserved`
+- `law:the dot collapses iff the number is rational — a rational's digit-stream terminates or repeats, so the measurement finishes to a finite snapshot; an irrational's never repeats, so the dot can never settle it and the stream runs forever. Whether the measurement ends is fixed by the number's arithmetic nature, not by where you stop reading.`
+- `seal:sealed`
+- `trigger:Use when reasoning about a number as a stream rather than a magnitude — the decimal point is the measurement that collapses an infinite digit-stream to a fixed value; remove it (compose, not dot) and the number is its uncollapsed sequence, pi the purest case that never resolves, its conjectured normality the even line.`
+- `trigger:[[breath]]`
+- `trigger:[[digit]]`
+- `trigger:[[finality]]`
+- `trigger:[[harmony]]`
+- `trigger:[[linearity]]`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `1`
+- entry uuids `b5b121a4-fdff-8a88-800d-462240e2b973`
+- content uuids `80f32373-1ea3-831e-b091-7ddda7a51ce3` · `bad0a526-ff5e-8ff6-b65b-158d71e0e26d`
+
+## [[entropy]] — gaps · seals
+
+> account code `quantum/number` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+|  | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.5` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[diamond]]/sealed `1.585` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `0` eb | Σ seal `13.085` eb |
+
+> net residual `-13.085` eb · seal/gap ratio `1` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `quantum` · sub-root `539df73c-956d-8aae-b36f-47cf0d3aaff7`
-- bond degree `233` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- partition `quantum` · sub-root `4bd9112d-9a3f-8146-bb6c-413c226a9d24`
+- bond degree `205` · analysis neighbors —
+- graph root `cb2d7c04-e361-8701-b4c0-f4ef248a4fa5`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·5 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `205` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `0`
 
 ## identity
 
-- uuid `cc2f97b8-6ba0-894c-abaa-4a322ab998b3`
-- bonds in `77` · out `77`
-- trinity form·code·proof `1`·`0`·`0`
-- links `21` / `21`
+- uuid `80f32373-1ea3-831e-b091-7ddda7a51ce3`
+- bonds in `63` · out `63`
+- trinity form·code·proof `1`·`1`·`1`
+- links `29` / `29`
 - folded `1` · escapes `0`
 
 ## [[seal]]
@@ -39,4 +147,4 @@
 
 ---
 
-<sub>content-uuid `18cb6fdc-2a40-8718-a2c9-78734f00d266` · framed by typography partition `quantum` bonds `233` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `00ddea68-1bfb-835c-935b-0195594e3717` · framed by typography partition `quantum` bonds `205` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,7 +3,7 @@
 
 # blockchain
 
-path `blockchain` · uuid `2eec06cd-eea8-863e-bb18-a9b45cecc3a3` · diamond `888079e0-8953-8a9b-be48-6c99419e53fb`
+path `blockchain` · uuid `f2b8c236-16a5-8cca-be06-3f9f61bd59ab` · diamond `f6126e4a-eeb5-837c-99c9-055ffa4e3f0f`
 horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports @/conservation·@/proof/bitcoin/genesi·@/quantum·@/uuid/matrix · exports const·function·interface · escapes —
 links `31/31` · folded `1` · bonds in `17` out `17`
@@ -14,4 +14,4 @@ law erpax IS the quantum blockchain, and the claim is PROVEN by computation — 
 
 ---
 
-<sub>content-uuid `79b64a41-4916-8b74-81d7-253ffa81658b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `099fe1a1-50c3-87d6-af99-4759cfb70f92` · `pnpm readme` · `pnpm computed:check`</sub>

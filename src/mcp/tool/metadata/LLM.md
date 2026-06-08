@@ -3,15 +3,15 @@
 
 # metadata
 
-path `mcp/tool/metadata` · uuid `61f20092-1e51-864b-8108-cf601bc9d742` · diamond `a98b617c-c0d9-8fa3-a2d2-9c104c50b7cb`
-horo `4` `weave` · trinity `1·1·1` · sealed `1`
+path `mcp/tool/metadata` · uuid `bc50002b-a5e9-8870-93ef-ddbc44e81e07` · diamond `b819fe18-6dc1-868a-9770-2769f4c17c78`
+horo `2` `share` · trinity `1·1·1` · sealed `0`
 imports @/base/accounting/field·@/factory · exports default · escapes —
-links `3/3` · folded `1` · bonds in `7` out `9`
+links `3/3` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·config·fields·fields·identity·identity·mcp·queries·tags · ← accounting·config·fields·identity·mcp·queries·tags
+neighbors → config·fields·identity·queries·tags · ← config·fields·identity·queries·tags
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `7794e682-5f80-85f7-bd1b-8b7b786f1bae` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `46dc7f71-b17c-8562-a5e8-dfdd7cbee4a5` · `pnpm readme` · `pnpm computed:check`</sub>

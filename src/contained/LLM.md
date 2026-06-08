@@ -3,7 +3,7 @@
 
 # contained
 
-path `contained` · uuid `70c6266d-9233-8978-b367-dcb46a865cf5` · diamond `134a68f9-c6ff-863b-b9d6-a340775bc3b9`
+path `contained` · uuid `15943c8b-e1ca-837e-8884-5114d865daf4` · diamond `3fd572e7-5d34-823f-bde7-563fce40816f`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports law·place · exports contained · escapes —
 links `2/2` · folded `1` · bonds in `2` out `2`
@@ -14,4 +14,4 @@ law containment is a one-directional place-within-place relation — the contain
 
 ---
 
-<sub>content-uuid `1f39dd68-97ea-8393-94c3-ad859dc64bf7` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d91025c3-31f3-8ae9-995b-296f569ccfb0` · `pnpm readme` · `pnpm computed:check`</sub>

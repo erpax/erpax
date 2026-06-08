@@ -3,7 +3,7 @@
 
 # died
 
-path `died` · uuid `b1731b8d-c2d9-8df5-a4be-220e22dd6af4` · diamond `6f4fa605-d85d-8796-9e79-64572620828d`
+path `died` · uuid `2f7c1479-7761-8c84-a409-08c6ac39bd19` · diamond `5c50c053-3cbe-8c41-a052-5d55735089fc`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·cvd·law·merge·num·sti · exports died · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
@@ -14,4 +14,4 @@ law died is one schema.org word, content-addressed; the same word collides every
 
 ---
 
-<sub>content-uuid `88ff8923-c61b-812a-a349-d2355eaebbbc` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `bb559707-13f7-8432-b48f-629b65a2e116` · `pnpm readme` · `pnpm computed:check`</sub>

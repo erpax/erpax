@@ -3,8 +3,8 @@
 
 # bitemporal
 
-path `beyond/bitemporal` · uuid `a696e6a1-0f72-8e2e-90cd-1549a84ee706` · diamond `bf1c9dba-d07c-84df-a4f7-44ba2d5be5a6`
-horo `1` `base` · trinity `1·1·1` · sealed `0`
+path `beyond/bitemporal` · uuid `43be20f7-9a04-8e73-9b7e-618838c37978` · diamond `c9eac81e-44d0-8af6-a577-3c7718d41b37`
+horo `2` `share` · trinity `1·1·1` · sealed `0`
 imports @/beyond/types · exports async·function · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law a value carries two clocks ([[standard]] SQL:2011 system-time × valid-time)
 
 ---
 
-<sub>content-uuid `ed8b580c-2ab1-828d-a3ee-04aab96adc33` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4a41518f-c705-8551-a329-38990510f471` · `pnpm readme` · `pnpm computed:check`</sub>

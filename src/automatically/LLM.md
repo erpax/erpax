@@ -3,7 +3,7 @@
 
 # automatically
 
-path `automatically` · uuid `f03d65d0-6949-89c5-bf5f-a96c055ecdf6` · diamond `f45058ac-1947-8dea-b286-2b9168e611fa`
+path `automatically` · uuid `8fc47ae2-667b-841e-b8f7-1a5cdcb04515` · diamond `0e65d43f-d65a-8970-862c-e9553c343b84`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports automatically · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
@@ -14,4 +14,4 @@ law automatically is one schema.org word, content-addressed; the same word colli
 
 ---
 
-<sub>content-uuid `4a41d0d9-8b60-83db-95b0-9cc366037f51` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ab7b8f88-739d-89f7-a7c4-1fd6319a7764` · `pnpm readme` · `pnpm computed:check`</sub>

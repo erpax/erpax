@@ -3,15 +3,15 @@
 
 # temporarily
 
-path `temporarily` · uuid `6d755efa-3ae5-86d8-a8a5-3d0047981775` · diamond `f4163206-0e19-806f-a02e-0b8c4c8343f3`
+path `temporarily` · uuid `6d755efa-3ae5-86d8-a8a5-3d0047981775` · diamond `62a01923-bc7d-8234-b8fa-110df30f1574`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports temporarily · escapes —
-links `4/4` · folded `1` · bonds in `25` out `25`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → akashic·aura·cohort·colleagues·conference·considerations·courthouse·covered·entertainment·extended·founder·game·generator·handling·id·landmarks·literature·marine·memories·progression·qualification·satire·seat·soundtrack·vent · ← akashic·aura·cohort·colleagues·conference·considerations·courthouse·covered·entertainment·extended·founder·game·generator·handling·id·landmarks·literature·marine·memories·progression·qualification·satire·seat·soundtrack·vent
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law temporarily is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `682631c0-043f-8063-986d-2e744df1d3d8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `bc0448c9-fb29-848a-9b12-47be8df362a7` · `pnpm readme` · `pnpm computed:check`</sub>

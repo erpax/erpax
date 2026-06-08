@@ -21,9 +21,9 @@
 
 ## typography graph
 
-- partition `appearance` · sub-root `39acc287-af1f-876e-a03e-4fa1d3871b26`
+- partition `appearance` · sub-root `8ef92c24-42fe-8197-8fdc-336d5d7988e2`
 - bond degree `14` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- graph root `67d11a43-67e0-8dde-afd8-ecbed950ff42`
 
 ## [[cloudflare]] bindings
 
@@ -33,6 +33,44 @@
 
 - `schema.org — the type vocabulary, collided to single words` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·7 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
 - bond degree `14` · sealed `1` · horo `7`
@@ -41,7 +79,7 @@
 
 ## identity
 
-- uuid `39acc287-af1f-876e-a03e-4fa1d3871b26`
+- uuid `8ef92c24-42fe-8197-8fdc-336d5d7988e2`
 - bonds in `4` · out `4`
 - trinity form·code·proof `1`·`0`·`0`
 - links `4` / `4`
@@ -53,4 +91,4 @@
 
 ---
 
-<sub>content-uuid `83bf36fa-07ef-80d0-949e-0f626add2cb3` · framed by typography partition `appearance` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `9d3ed13f-532e-8f7a-831a-cd6b6c64d7ed` · framed by typography partition `appearance` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>

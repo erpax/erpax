@@ -3,8 +3,8 @@
 
 # brewery
 
-path `brewery` · uuid `f988cf53-357c-8764-b09b-980f697a81e4` · diamond `a2e6d725-8121-8218-a2a7-186c5a305a61`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `brewery` · uuid `9089d843-fa42-8932-a2ef-b71e71db6a1d` · diamond `0d26605f-6619-8c10-aab9-eb4cb212966e`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports law·place·thing · exports brewery · escapes —
 links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law brewery is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `d0faf244-88c8-84a5-bdce-bfb29f644ea8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2fda586c-f9a1-8b4e-bce3-ea8b3001fc8d` · `pnpm readme` · `pnpm computed:check`</sub>

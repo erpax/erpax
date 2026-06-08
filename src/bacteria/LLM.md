@@ -3,8 +3,8 @@
 
 # bacteria
 
-path `bacteria` · uuid `87b8fa0a-742c-8852-851c-1a47ab18d506` · diamond `b86c463a-8234-884d-a37c-926e5f3ff355`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `bacteria` · uuid `8cfcb5c1-7ed6-8794-9ce3-dcc5167c57a6` · diamond `ae95189e-4768-8041-b4ca-5dc73d161cf8`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports bacteria · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law bacteria is one schema.org word, content-addressed; the same word collides e
 
 ---
 
-<sub>content-uuid `f5b1de0e-2f2d-8349-a4c1-65266b680a50` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1bfd7bd7-0988-8e32-9fff-5f94833525a9` · `pnpm readme` · `pnpm computed:check`</sub>

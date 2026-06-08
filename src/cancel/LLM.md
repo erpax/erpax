@@ -3,8 +3,8 @@
 
 # cancel
 
-path `cancel` · uuid `d9eb4bcd-4afb-8244-955e-4d1dc1b26bcf` · diamond `8235ee03-aca7-8cfd-9352-d559d1209bf3`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `cancel` · uuid `779fcf78-3edf-8909-b57a-6c3648101a7b` · diamond `b47ca8ce-091f-8213-ba8e-3134ec4820ea`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti · exports cancel · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law a cancel never erases the act it negates — it posts a reversing counter-en
 
 ---
 
-<sub>content-uuid `e2363e8d-446c-8046-b7a1-e30090fe6291` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `19062bac-a54a-84a3-baa9-7ff3d894d030` · `pnpm readme` · `pnpm computed:check`</sub>

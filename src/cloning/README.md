@@ -2,7 +2,7 @@
 
 # cloning
 
-> atom `cloning` · horo `7` `descent` · [[balance]] `1` · [[seal]] `0`
+> atom `cloning` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -23,9 +23,9 @@
 
 ## typography graph
 
-- partition `cloning` · sub-root `4ea131a4-5375-89da-a0b2-61d7c6b569d7`
-- bond degree `53` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- partition `cloning` · sub-root `84c0f801-3e9f-8ffb-b92d-bb09628208bf`
+- bond degree `54` · analysis neighbors —
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -40,24 +40,62 @@
 - `W3C-PROV-O` · catalogue
 - `W3C-VC-2.0` · catalogue
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·2 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `53` · sealed `0` · horo `7`
+- bond degree `54` · sealed `1` · horo `2`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `6`
 
 ## identity
 
-- uuid `4ea131a4-5375-89da-a0b2-61d7c6b569d7`
-- bonds in `18` · out `17`
+- uuid `84c0f801-3e9f-8ffb-b92d-bb09628208bf`
+- bonds in `18` · out `18`
 - trinity form·code·proof `1`·`1`·`1`
 - links `15` / `15`
 - folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `ab1ce69d-6a24-87c6-9955-60ed2c126889` · framed by typography partition `cloning` bonds `53` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0df706f9-f9fa-8c80-9a8d-ddc6ad79df80` · framed by typography partition `cloning` bonds `54` · `pnpm readme` · `pnpm readme:check`</sub>

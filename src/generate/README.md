@@ -2,7 +2,7 @@
 
 # generate
 
-> atom `generate` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
+> atom `generate` · horo `1` `base` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -17,26 +17,41 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `7` | Σ `7` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `3` · [[conservation]] `0` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `generate` · sub-root `a620f060-8e35-8d7f-a033-815c6e8245e4`
-- bond degree `231` · analysis neighbors `aura`
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- bond degree `0` · analysis neighbors —
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `IAS-34` · catalogue
+- `SAF-T` · catalogue
+
+## analytics
+
+- bond degree `0` · sealed `0` · horo `1`
+- variance `3` · balanced `0` · trinity sum `1`
+- bindings `0` · standards `2`
 
 ## identity
 
 - uuid `869a8d0b-90ba-8b19-8644-b49b26ff6f6f`
-- bonds in `70` · out `74`
+- bonds in `71` · out `75`
 - trinity form·code·proof `1`·`0`·`0`
 - links `30` / `30`
 - folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `0bc3020b-157a-8a4c-8814-c92ad2d6ab23` · framed by typography partition `generate` bonds `231` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `762e8fe7-9084-899d-80da-97da225ce478` · framed by typography partition `generate` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

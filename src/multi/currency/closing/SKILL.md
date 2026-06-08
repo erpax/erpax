@@ -1,8 +1,66 @@
 ---
-name: "closing"
+name: closing
 description: "Use when implementing or referencing Multi-Currency Closing Standard."
+atomPath: multi/currency/closing
+coordinate: multi/currency/closing · 8/crest · b60da4bf
+contentUuid: "e136a8ef-80cb-5782-9a88-9a3f5841fb2f"
+diamondUuid: "527b84c2-9185-8984-963a-025da228db05"
+uuid: "b60da4bf-e41e-8312-98ec-0f8f38998db2"
+horo: 8
+bonds:
+  in:
+    - checker
+    - currency
+    - law
+  out:
+    - checker
+    - law
+typography:
+  partition: multi
+  bondDegree: 8
+  neighbors: []
+standards:
+  - "EU-2016/679"
+  - "GDPR:2016/679 Art. 32 Security of processing"
+  - "IFRS-21:2023 Translation of foreign operations"
+  - "IFRS-9"
+  - "IFRS-9:2023 Foreign exchange gains/losses"
+  - "ISO-4217:2023 Currency codes"
+  - "NIST-SP-800-92"
+  - "NIST-SP-800-92 Audit logging"
+  - "SAF-T"
+  - "SAF-T:3.0.2 Standard Audit File for Tax (multi-currency)"
+  - XBRL
+  - "XBRL-GL General Ledger (multi-currency)"
+bindings: []
+neighbors:
+  wikilink:
+    - law
+  matrix:
+    - checker
+    - law
+  backlinks:
+    - checker
+    - law
+signatures:
+  computationUuid: "d0787cc4-1fea-8dc2-adbb-3005a8c26503"
+  stages:
+    - stage: path
+      stageUuid: "ee296f9c-14ae-88ee-b819-bc23bebfb1f0"
+    - stage: trinity
+      stageUuid: "41245ba3-ec94-83bf-aaa7-be9995949f04"
+    - stage: boundary
+      stageUuid: "2c85414f-ae80-8278-bf29-b7dfd9b631e5"
+    - stage: links
+      stageUuid: "30df3af0-a1a0-89ff-84b6-af7314a98975"
+    - stage: horo
+      stageUuid: "307a2635-062c-800d-a2fe-234e64ab2910"
+    - stage: seal
+      stageUuid: "f3e26392-4109-8e84-ab19-f0edfaa5b97b"
+    - stage: uuid
+      stageUuid: "a485fd0f-0436-8bc2-b3f4-a79c2b6ccc1a"
+version: 2
 ---
-
 # Multi-Currency Closing Standard
 
 **Publisher:** International Accounting Standards Board (IASB), OECD, ISO  

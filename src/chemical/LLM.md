@@ -3,8 +3,8 @@
 
 # chemical
 
-path `chemical` · uuid `4fa0f631-ec49-8cc4-ba9c-9188c5548c9c` · diamond `7c0055b5-96a3-88fb-b1cc-f259455f2571`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `chemical` · uuid `716b93eb-d3f4-87e5-9c56-85170cf4af14` · diamond `9433cfac-a807-8b90-8df5-8a3eaa84a55b`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·composition·law·merge·role·sti·substance · exports chemical · escapes —
 links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law chemical is one schema.org word, content-addressed; the same word collides e
 
 ---
 
-<sub>content-uuid `6b1afb9a-1664-8bcb-a370-cd87ef1ca3dd` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e9324a72-a89e-8356-abf2-2009ada775c0` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -2,7 +2,7 @@
 
 # variants
 
-> atom `lot/variants` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
+> atom `lot/variants` · horo `8` `crest` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -25,7 +25,25 @@
 
 - partition `lot` · sub-root `e8f3b5ff-47a6-8fc7-a671-901e15d1a26d`
 - bond degree `26` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `double-entry — every counter is a balanced number; the variant` · banner
+- `ISA-95` · catalogue
+- `ISA-95:2013 / IEC-62264-1 material-lot sublot` · banner
+- `ISO-19011:2018 audit-trail variant-counter-changes` · banner
+- `UBL-2.1` · catalogue
+
+## analytics
+
+- bond degree `26` · sealed `0` · horo `8`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `5`
 
 ## identity
 
@@ -37,8 +55,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `4f01ed2f-1cb4-800d-8e1b-ffca1c5d90df` · framed by typography partition `lot` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ad553fef-5270-8377-b25f-1d6ac2797d4c` · framed by typography partition `lot` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>

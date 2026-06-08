@@ -3,15 +3,15 @@
 
 # western
 
-path `western` · uuid `bbb1ebd3-f177-830d-a065-31451f1bd614` · diamond `20366771-f0f6-8cc2-ad81-44d655ddac23`
+path `western` · uuid `bbb1ebd3-f177-830d-a065-31451f1bd614` · diamond `9fc7707a-795c-8cc4-9a72-c27810018068`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports western · escapes —
-links `4/4` · folded `1` · bonds in `22` out `22`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → 16931·barrier·cohort·create·element·event·fdanot·hosp·landmarks·lnid·memories·percentile25·prepayment·product·replication·screen·sender·standards·stat·synagogue·trade·translator · ← 16931·barrier·cohort·create·element·event·fdanot·hosp·landmarks·lnid·memories·percentile25·prepayment·product·replication·screen·sender·standards·stat·synagogue·trade·translator
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law western is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `f79e1d46-ed3e-86af-b4bf-16a709219dd9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9a5af42e-f1df-80eb-94fb-42cf80e2accb` · `pnpm readme` · `pnpm computed:check`</sub>

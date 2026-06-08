@@ -3,15 +3,15 @@
 
 # wear
 
-path `wear` · uuid `c451e494-e74c-8653-8b34-a91f49287dc2` · diamond `2fa4d419-4952-88e9-90ed-d048383837ca`
+path `wear` · uuid `c451e494-e74c-8653-8b34-a91f49287dc2` · diamond `e118ebf2-26ad-8085-b4dd-98d0cbd973de`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti · exports wear · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → action·collapse·law·merge·sti · ← action·collapse·law·merge·sti
 analysis —
 law wear is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `31581175-bd13-8ba1-bbbe-8aabc6db2959` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `41e48188-4aad-8d70-9d51-b25062b4b3c3` · `pnpm readme` · `pnpm computed:check`</sub>

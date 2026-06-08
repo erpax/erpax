@@ -3,15 +3,15 @@
 
 # translator
 
-path `translator` · uuid `a6355c66-c01c-8acd-bd25-55d134af0fb2` · diamond `3f544e3e-81ff-864f-a856-8a2041d526b9`
+path `translator` · uuid `a6355c66-c01c-8acd-bd25-55d134af0fb2` · diamond `e4eb3a20-2a7b-83f8-ae41-5c05c6cd6aec`
 horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports @/uuid/matrix · exports const·interface · escapes —
-links `17/17` · folded `1` · bonds in `13` out `13`
-faces worker·plugin·pwa `0·0·0`
-neighbors → activities·assignment·backlog·binding·cross·landmarks·previous·public·significant·standards·text·update·western · ← activities·assignment·backlog·binding·cross·landmarks·previous·public·significant·standards·text·update·western
+links `17/17` · folded `1` · bonds in `45` out `50`
+faces worker·plugin·pwa `1·0·0`
+neighbors → animism·bahai·bogomilism·buddhism·catholicism·christianity·confucianism·entanglement·eu·gnosticism·hermeticism·hinduism·islam·jainism·judaism·kabbalah·language·law·localize·manichaeism·matrix·matrix·merge·merge·orphism·orthodoxy·paganism·protestantism·quantum·quantum·realtime·religion·sensory·shamanism·shia·shinto·sikhism·sufism·sunni·taoism·translate·translate·translation·translations·translator·translator·uuid·uuid·vedanta·zoroastrianism · ← animism·bahai·bogomilism·buddhism·catholicism·christianity·confucianism·entanglement·eu·gnosticism·hermeticism·hinduism·islam·jainism·judaism·kabbalah·language·law·localize·manichaeism·matrix·merge·orphism·orthodoxy·paganism·protestantism·quantum·realtime·religion·sensory·shamanism·shia·shinto·sikhism·sufism·sunni·taoism·translate·translation·translations·translator·translator·uuid·vedanta·zoroastrianism
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `a61781a5-b9e5-8283-9904-a9be1e9b52ae` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `20b24514-442b-8b30-905f-7ca5f0819d2f` · `pnpm readme` · `pnpm computed:check`</sub>

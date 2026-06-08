@@ -3,7 +3,7 @@
 
 # attachment
 
-path `attachment` · uuid `2e5ee7eb-2417-8503-b8ea-54d284c7662f` · diamond `ac0dc40c-03ce-8e6c-9b2a-cf42597057e4`
+path `attachment` · uuid `6a4f250c-989a-8c17-8f42-7f646e5b333e` · diamond `f2d55d26-8560-8416-83c4-6584ffd87f61`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·message·sti · exports attachment · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
@@ -14,4 +14,4 @@ law attachment is one schema.org word, content-addressed; the same word collides
 
 ---
 
-<sub>content-uuid `4a6176da-981f-81ae-abf6-eb4d8ba1dabc` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3070023d-970a-8e03-a264-21da6fc00670` · `pnpm readme` · `pnpm computed:check`</sub>

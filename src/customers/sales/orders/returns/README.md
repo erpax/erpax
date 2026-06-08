@@ -2,9 +2,11 @@
 
 # returns
 
-> atom `customers/sales/orders/returns` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
+> atom `customers/sales/orders/returns` · horo `5` `round` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `customers/sales/orders/returns` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,11 +23,58 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+
+### collapse
+
+- `balance:conserved`
+- `law:every authorised return links to the credit memo that reverses its original revenue, and restocked quantity never exceeds what was shipped.`
+- `seal:unsealed`
+- `trigger:Use when authorising, tracking, and closing a customer return (RMA) — recording the reason, line-level items and restock decisions, enforcing SoD on approval, and linking to the credit memo that reverses revenue per IFRS-15 §B22. The returns-and-RMA collection.`
+- `trigger:every authorised return links to the credit memo that reverses its original revenue, and restocked quantity never exceeds what was shipped.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `3f008e03-3bff-8f6a-a286-f42f432440a3` · `dea8984b-9beb-882b-8673-0c5217aed8c6`
+- content uuids `96c012b5-c00f-8046-b149-e3af254741c9` · `b5a11703-48f5-8836-a15f-fa8d1f2a724d`
+
+## [[entropy]] — gaps · seals
+
+> account code `customers/sales/orders/returns` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.5` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `1` eb | Σ seal `11.5` eb |
+
+> net residual `-10.5` eb · seal/gap ratio `11.5` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `customers` · sub-root `85792e9b-a9f4-8af5-a801-0895f2af65cf`
-- bond degree `45` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- partition `customers` · sub-root `83c78df0-4d66-80df-ab25-5ba350869cf1`
+- bond degree `36` · analysis neighbors —
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
 
 ## [[cloudflare]] bindings
 
@@ -35,30 +84,67 @@
 
 - `IFRS IAS-2 inventories return-to-stock` · banner
 - `IFRS IFRS-15 §B22 right-of-return-revenue-reversal` · banner
-- `ISO-19011:2018 audit-trail rma-evidence` · banner
 - `ISO-8601-1:2019 date-time` · banner
 - `SOX §404 internal-controls return-approval` · banner
 - `US-GAAP ASC-330 inventory cost-flow` · banner
 - `US-GAAP ASC-606-10-32-10 variable-consideration` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·5 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `45` · sealed `1` · horo `8`
+- bond degree `36` · sealed `0` · horo `5`
 - variance `0` · balanced `1` · trinity sum `3`
-- bindings `0` · standards `7`
+- bindings `0` · standards `6`
 
 ## identity
 
-- uuid `c407251c-2232-897a-bced-499226386838`
-- bonds in `13` · out `16`
+- uuid `d720d6ee-f33f-8941-96a5-055a0cce8faf`
+- bonds in `10` · out `10`
 - trinity form·code·proof `1`·`1`·`1`
 - links `7` / `7`
 - folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `14501732-50a4-86bb-83a7-4b1741e3b1f3` · framed by typography partition `customers` bonds `45` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d019e3e0-c604-8abd-8406-7c75c03f8369` · framed by typography partition `customers` bonds `36` · `pnpm readme` · `pnpm readme:check`</sub>

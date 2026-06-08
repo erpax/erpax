@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
-import type { DashboardContext, LocalApiSource, WidgetSpec } from '@/dashboard/spec';
+import React, { useState } from 'react'
+import type { DashboardContext, LocalApiSource, WidgetSpec } from '@/dashboard/spec'
+import { Badge, Button, Card, CardContent, CardHeader, CardTitle } from '@/ui'
 
 /**
  * Audit log viewer widget — read-only timeline of administrative actions.
@@ -129,17 +130,17 @@ const AuditLogWidget: React.FC<{ data: AuditLogData | null }> = ({ data }) => {
   const getActionColor = (action: string) => {
     switch (action.toLowerCase()) {
       case 'create':
-        return 'text-green-700 bg-green-50';
+        return 'text-success bg-green-50';
       case 'update':
         return 'text-blue-700 bg-blue-50';
       case 'delete':
-        return 'text-red-700 bg-red-50';
+        return 'text-error bg-red-50';
       case 'approve':
         return 'text-purple-700 bg-purple-50';
       case 'reject':
         return 'text-orange-700 bg-orange-50';
       default:
-        return 'text-gray-700 bg-gray-50';
+        return 'text-gray-700 bg-muted';
     }
   };
 
@@ -162,25 +163,26 @@ const AuditLogWidget: React.FC<{ data: AuditLogData | null }> = ({ data }) => {
   };
 
   return (
-    <div className="bg-white rounded-lg shadow p-6 border border-gray-200">
-      <div className="flex justify-between items-center mb-4">
-        <h2 className="text-xl font-semibold">Audit Trail</h2>
-        <button className="text-sm bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700">
+    <Card>
+      <CardHeader className="flex-row items-center justify-between space-y-0">
+        <CardTitle>Audit Trail</CardTitle>
+        <Button type="button" size="sm">
           Export
-        </button>
-      </div>
+        </Button>
+      </CardHeader>
+      <CardContent>
 
       {logs.length === 0 ? (
-        <p className="text-gray-500">No audit log entries found for this period</p>
+        <p className="text-muted-foreground">No audit log entries found for this period</p>
       ) : (
         <div className="space-y-2">
           {logs.map((entry) => (
-            <div key={entry.id} className="border border-gray-200 rounded">
+            <div key={entry.id} className="border border-border rounded">
               <button
                 onClick={() =>
                   setExpandedId(expandedId === entry.id ? null : entry.id)
                 }
-                className="w-full text-left p-3 hover:bg-gray-50 flex justify-between items-center"
+                className="w-full text-left p-3 hover:bg-muted flex justify-between items-center"
               >
                 <div className="flex items-center gap-3 flex-1">
                   <span className="text-lg">
@@ -188,34 +190,34 @@ const AuditLogWidget: React.FC<{ data: AuditLogData | null }> = ({ data }) => {
                   </span>
                   <div className="flex-1">
                     <div className="flex items-center gap-2">
-                      <span className={`text-xs font-bold px-2 py-1 rounded ${getActionColor(entry.action)}`}>
+                      <Badge variant="outline" className={getActionColor(entry.action)}>
                         {entry.action.toUpperCase()}
-                      </span>
+                      </Badge>
                       <span className="font-semibold text-gray-900">
                         {entry.resourceType}
                       </span>
-                      <span className="text-sm text-gray-600">{entry.resourceId}</span>
+                      <span className="text-sm text-muted-foreground">{entry.resourceId}</span>
                     </div>
-                    <div className="text-xs text-gray-600 mt-1">
+                    <div className="text-xs text-muted-foreground mt-1">
                       {entry.userEmail} at{' '}
                       {entry.timestamp ? new Date(entry.timestamp).toLocaleString() : '—'}
                     </div>
                   </div>
                 </div>
-                <span className="text-gray-400">
+                <span className="text-muted-foreground">
                   {expandedId === entry.id ? '▼' : '▶'}
                 </span>
               </button>
 
               {expandedId === entry.id && entry.changes && (
-                <div className="bg-gray-50 border-t p-3 text-xs">
+                <div className="bg-muted border-t p-3 text-xs">
                   <div className="grid grid-cols-2 gap-4">
                     {entry.changes.before && (
                       <div>
                         <h4 className="font-semibold text-gray-700 mb-2">
                           Before
                         </h4>
-                        <pre className="bg-white p-2 rounded border border-gray-200 overflow-x-auto text-gray-600">
+                        <pre className="bg-white p-2 rounded border border-border overflow-x-auto text-muted-foreground">
                           {JSON.stringify(entry.changes.before, null, 2)}
                         </pre>
                       </div>
@@ -225,7 +227,7 @@ const AuditLogWidget: React.FC<{ data: AuditLogData | null }> = ({ data }) => {
                         <h4 className="font-semibold text-gray-700 mb-2">
                           After
                         </h4>
-                        <pre className="bg-white p-2 rounded border border-gray-200 overflow-x-auto text-gray-600">
+                        <pre className="bg-white p-2 rounded border border-border overflow-x-auto text-muted-foreground">
                           {JSON.stringify(entry.changes.after, null, 2)}
                         </pre>
                       </div>
@@ -238,18 +240,21 @@ const AuditLogWidget: React.FC<{ data: AuditLogData | null }> = ({ data }) => {
         </div>
       )}
 
-      <div className="text-xs text-gray-500 mt-4">
-        Showing {logs.length} entries
-        {startDate && endDate ? (
-          <>
-            {' '}from {new Date(startDate).toLocaleDateString()} to{' '}
-            {new Date(endDate).toLocaleDateString()}
-          </>
-        ) : null}
-      </div>
-    </div>
-  );
-};
+        <p className="text-muted-foreground mt-4 text-xs">
+          Showing {logs.length} entries
+          {startDate && endDate ? (
+            <>
+              {' '}
+              from {new Date(startDate).toLocaleDateString()} to{' '}
+              {new Date(endDate).toLocaleDateString()}
+            </>
+          ) : null}
+        </p>
+
+      </CardContent>
+    </Card>
+  )
+}
 
 export default AuditLogWidget;
 

@@ -3,7 +3,7 @@
 
 # animism
 
-path `animism` · uuid `2d2cea7d-1084-8a5f-9d73-0f608e322c86` · diamond `c0f3aa23-119b-8a2d-8c4b-5bfe0703b105`
+path `animism` · uuid `6a410989-c56b-8a12-973d-acff4c3ab5e5` · diamond `5ba968c0-0492-8844-9a4f-fab5ec5b0527`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports archangel·atom·aura·balance·breath·cycle·diamond·dna·fractal·gift·holographic·identity·law·name·part·religion·ritual·sacred·signal·society·translator·uuid·whole · exports animism · escapes —
 links `54/54` · folded `1` · bonds in `23` out `23`
@@ -14,4 +14,4 @@ law animism is a [[diamond]] of [[breath]] · [[sacred]] · [[holographic]] · [
 
 ---
 
-<sub>content-uuid `ffb53aa3-77c0-8fcf-a836-367075db7044` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e094947e-c31e-84d4-a276-3a4eadb66a37` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -21,9 +21,9 @@
 
 ## typography graph
 
-- partition `carbohydrate` · sub-root `639a20eb-afe1-88f3-9759-4582678d9edc`
+- partition `carbohydrate` · sub-root `689fd174-99e7-86f2-a999-30ce0283b4ed`
 - bond degree `16` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- graph root `1cef4f02-a3fa-83a5-8ea0-120b724ef456`
 
 ## [[cloudflare]] bindings
 
@@ -33,6 +33,44 @@
 
 - `schema.org — the type vocabulary, collided to single words` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·4 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
 - bond degree `16` · sealed `1` · horo `4`
@@ -41,7 +79,7 @@
 
 ## identity
 
-- uuid `639a20eb-afe1-88f3-9759-4582678d9edc`
+- uuid `689fd174-99e7-86f2-a999-30ce0283b4ed`
 - bonds in `5` · out `5`
 - trinity form·code·proof `1`·`0`·`0`
 - links `5` / `5`
@@ -53,4 +91,4 @@
 
 ---
 
-<sub>content-uuid `1fac5ee5-4554-807f-87d9-fa33d0e9807a` · framed by typography partition `carbohydrate` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `28141dad-0714-8313-8875-769975e09bf5` · framed by typography partition `carbohydrate` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

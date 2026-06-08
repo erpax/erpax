@@ -3,8 +3,8 @@
 
 # account
 
-path `account` · uuid `a84cab76-b536-87b3-ab37-b7cc770721d7` · diamond `40c8930d-0d7d-894c-8ee9-1dc737d633dc`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `account` · uuid `d5d23d0e-39e7-856a-acba-8cad7811a81e` · diamond `484b09d9-2579-830f-9ae9-a683c4425a36`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports accounting·amount·bank·code·fields·identity·law · exports account · escapes —
 links `8/8` · folded `1` · bonds in `14` out `14`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law an account is the chart-of-accounts item a transaction or GL entry reference
 
 ---
 
-<sub>content-uuid `3e739729-afaa-860a-a21b-d0f220b14ff7` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4e45289b-0ed1-8010-9a5f-f059e50ba449` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -23,7 +23,21 @@
 
 - partition `incentive` · sub-root `44528147-9863-8661-931e-32c4007b0d10`
 - bond degree `36` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `36` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `f75b503d-c856-8b5e-b92e-b7e7fb608356` · framed by typography partition `incentive` bonds `36` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `aa3f943a-4415-89d0-b25e-da8fc78d0783` · framed by typography partition `incentive` bonds `36` · `pnpm readme` · `pnpm readme:check`</sub>

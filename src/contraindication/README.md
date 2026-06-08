@@ -2,7 +2,7 @@
 
 # contraindication
 
-> atom `contraindication` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
+> atom `contraindication` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -21,9 +21,9 @@
 
 ## typography graph
 
-- partition `contraindication` · sub-root `f2054bcd-3394-8205-bee6-f0de3fa0b008`
+- partition `contraindication` · sub-root `0445154f-f87a-88f0-af72-1d3f897508c3`
 - bond degree `11` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -33,15 +33,53 @@
 
 - `schema.org — the type vocabulary, collided to single words` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·5 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `11` · sealed `1` · horo `4`
+- bond degree `11` · sealed `1` · horo `5`
 - variance `0` · balanced `1` · trinity sum `1`
 - bindings `0` · standards `1`
 
 ## identity
 
-- uuid `f2054bcd-3394-8205-bee6-f0de3fa0b008`
+- uuid `0445154f-f87a-88f0-af72-1d3f897508c3`
 - bonds in `3` · out `3`
 - trinity form·code·proof `1`·`0`·`0`
 - links `3` / `3`
@@ -53,4 +91,4 @@
 
 ---
 
-<sub>content-uuid `2f3db2dd-ef8c-8cb2-b21d-d81593ad53dd` · framed by typography partition `contraindication` bonds `11` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ca0317c2-337d-8c81-a3a3-5d53dfb52d2e` · framed by typography partition `contraindication` bonds `11` · `pnpm readme` · `pnpm readme:check`</sub>

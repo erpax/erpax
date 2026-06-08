@@ -2,7 +2,7 @@
 
 # link
 
-> atom `link` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
+> atom `link` · horo `5` `round` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -19,13 +19,34 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `3` · [[conservation]] `0` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `link` · sub-root `1e20a89d-e0ac-8525-b99b-720c9adae99c`
-- bond degree `169` · analysis neighbors `aura`
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- bond degree `0` · analysis neighbors —
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `3986 uniform-resource-identifier` · banner
+- `BCP-47 language-tag locale-aware-routing` · banner
+- `schema.org — the type vocabulary, collided to single words` · banner
+- `W3C HTML5 anchor-element` · banner
+- `W3C HTML5 nav-element` · banner
+- `W3C URL Living Standard` · banner
+- `WCAG-2.1 §2.4.4 link-purpose-in-context` · banner
+- `WCAG-2.1 §2.4.9 link-purpose-link-only` · banner
+
+## analytics
+
+- bond degree `0` · sealed `0` · horo `5`
+- variance `3` · balanced `0` · trinity sum `3`
+- bindings `0` · standards `8`
 
 ## identity
 
@@ -37,8 +58,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `bdfc616c-c6ac-8f8e-9835-9065fcf6a7ca` · framed by typography partition `link` bonds `169` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f215fdd7-4ab1-886c-9046-3730890870d2` · framed by typography partition `link` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

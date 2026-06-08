@@ -3,15 +3,15 @@
 
 # integrity
 
-path `integrity` · uuid `ebabaf5c-1569-8e44-80ce-39525495bea1` · diamond `b8dcd42f-b066-8512-b1bd-c834a77563d7`
-horo `4` `weave` · trinity `1·1·1` · sealed `1`
+path `integrity` · uuid `797b228e-19d3-89b7-a84a-dbe2db72ba7f` · diamond `2a55704a-1cda-86f1-86a0-1755acf75153`
+horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports — · exports BuildReportArgs·ChainVerifyResult·CipherEnvelope·ContentUuid·DanglingRef·DisplayUuid·ERPAX_NAMESPACE_ROOT·EnvelopeAlg·GENESIS_PREV_UUID·InMemoryKeyResolver·InfiniteFinitenessReport·InfiniteFinitenessVerdict·KeyPurpose·LANDAUER_FLOOR_JOULES·NON_CONTENT_FIELDS·RESOURCE_BUDGETS·RegisteredType·RegulatoryThreshold·ResourceBudget·ResourceVerdict·SHORT_UUID_POLICY·ShortLookupResult·ShortUuidKind·SignatureAlg·SignedUuid·TAMPER_PROOF_COLLECTIONS_REGISTRY·TamperReverseCost·TamperReverseCostInput·TenantKeyResolver·TypeDescriptor·TypeUuidCoverageResult·TypeVerification·UUID_REF_REGISTRY·UuidDisplayCompliance·UuidEntry·UuidLinkedLeaf·UuidSource·UuidStreamFilter·__resetUuidStreamForTests·beyondUniverse·buildInfiniteFinitenessReport·buildNextLeaf·canonicalJson·checkInfiniteFiniteness·checkTypeUuidCoverage·checkUuidShortDisplay·computeContentDigest·computeContentUuid·computeLeafUuid·computeTamperReverseCost·computeTypeUuid·decryptBytesEnvelope·decryptEnvelope·descriptorFromZod·displayUuid·encryptBytesEnvelope·encryptEnvelope·energyLog10Joules·ensureBaselineTypesRegistered·findDanglingRefs·fromJws·getDefaultKeyResolver·getType·getTypeByUuid·isTamperProofCollection·jcsCanonicalize·largestBudgetExceeded·listTypes·lookupShort·meetsThreshold·nameDigest·nameUuid·parseShortUuid·payloadContentUuid·proveBeyondResources·provisionTestKek·provisionTestSigningKey·queryUuidStream·recordManyUuids·recordUuid·registerTamperProofCollection·registerType·registerTypeFromZod·registerUuidRef·resolveByUuid·setDefaultKeyResolver·shortUuid·signContentUuid·snapshotFromRegistries·stripNonContentFields·tamperProofBeforeChangeHook·tamperProofUuidField·tenantNamespace·toJws·uuid·uuidRef·verifyContentUuid·verifyContentUuidSignature·verifyType·verifyUuidLinkedChain · escapes —
-links `19/19` · folded `1` · bonds in `34` out `34`
+links `19/19` · folded `1` · bonds in `35` out `35`
 faces worker·plugin·pwa `1·0·0`
-neighbors → akashic·anchoring·api·archival·boundary·certification·confirm·contribution·cost·duality·fallback·fractal·hallucination·hooks·horo·identity·law·merge·organic·path·payload·power·pqc·proof·provenance·purity·refactor·replay·secret·society·standard·stream·sync·zeropoint · ← akashic·anchoring·api·archival·boundary·certification·confirm·contribution·cost·duality·fallback·fractal·hallucination·hooks·horo·identity·law·merge·organic·path·payload·power·pqc·proof·provenance·purity·refactor·replay·secret·society·standard·stream·sync·zeropoint
+neighbors → akashic·anchoring·api·architecture·archival·boundary·certification·confirm·contribution·cost·duality·fallback·fractal·hallucination·hooks·horo·identity·law·merge·organic·path·payload·power·pqc·proof·provenance·purity·refactor·replay·secret·society·standard·stream·sync·zeropoint · ← akashic·anchoring·api·architecture·archival·boundary·certification·confirm·contribution·cost·duality·fallback·fractal·hallucination·hooks·horo·identity·law·merge·organic·path·payload·power·pqc·proof·provenance·purity·refactor·replay·secret·society·standard·stream·sync·zeropoint
 analysis —
 law all is passed with uuids without [[payload]] — integrity verification is content-address first; [[payload]] is optional backend matter, not a prerequisite for the seal (`pnpm confirm:uuid`).
 
 ---
 
-<sub>content-uuid `ff67f1d2-b451-8cf7-9355-980c16e19148` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `12271c74-7b60-8d6a-99f8-8367fbbe5761` · `pnpm readme` · `pnpm computed:check`</sub>

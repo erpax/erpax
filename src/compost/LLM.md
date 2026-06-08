@@ -3,7 +3,7 @@
 
 # compost
 
-path `compost` · uuid `cda9024a-3a6e-850b-b561-e11c1c1ea90c` · diamond `9d8f780f-1a50-8664-8ba2-fc73557b4a91`
+path `compost` · uuid `d39344c4-cd27-8c54-a1db-4331691987b9` · diamond `ed054997-0048-83d4-84e1-b6ad7022c435`
 horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports @/conservation · exports Decompose·const·to · escapes —
 links `27/27` · folded `1` · bonds in `17` out `17`
@@ -14,4 +14,4 @@ law the literal entropy→[[soil]] recycling node — spent residue decomposed a
 
 ---
 
-<sub>content-uuid `8495f1cd-43bb-8615-acb0-acfc6e0631ef` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `43453b33-524f-84b4-b0eb-3a1519ba9b9c` · `pnpm readme` · `pnpm computed:check`</sub>

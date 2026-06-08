@@ -3,8 +3,8 @@
 
 # consolidations
 
-path `legal/entities/consolidations` · uuid `d1b1fdf0-0223-81d5-a699-ed925933e328` · diamond `5f5835e1-2597-839f-8cb2-2e627577e246`
-horo `8` `crest` · trinity `1·1·1` · sealed `1`
+path `legal/entities/consolidations` · uuid `a610cef7-4ac0-8275-a08f-b144507150b8` · diamond `c4bdf077-4886-88e2-b8f0-03d2e423196e`
+horo `5` `round` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/validate/consolidation/readiness · exports const · escapes —
 links `2/2` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law a group consolidation only proceeds when every entity is closure-ready and i
 
 ---
 
-<sub>content-uuid `bfb4f6f0-0fa8-8797-9b11-b362163f62b7` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ebf7038d-65a7-8eaa-9658-1fe573e199e8` · `pnpm readme` · `pnpm computed:check`</sub>

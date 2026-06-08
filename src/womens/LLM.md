@@ -3,15 +3,15 @@
 
 # womens
 
-path `womens` · uuid `b48a795c-4c19-8d94-81ee-7addbf82f0bf` · diamond `b212b033-882a-80a0-a26b-339050d4b57b`
+path `womens` · uuid `b48a795c-4c19-8d94-81ee-7addbf82f0bf` · diamond `c2d7feb3-8f10-8c60-af8e-d00bb023e8db`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports womens · escapes —
-links `4/4` · folded `1` · bonds in `5` out `5`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·nationality·stat · ← cohort·landmarks·memories·nationality·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law womens is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `6ab12035-0749-8460-904d-2e74a3074dee` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `99ffbc84-8d38-8806-bc07-bb5663408c43` · `pnpm readme` · `pnpm computed:check`</sub>

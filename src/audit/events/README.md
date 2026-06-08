@@ -6,6 +6,8 @@
 
 ## [[debit]] · [[credit]]
 
+> account code `audit/events` · currency `eb` (entropy-bit)
+
 | [[debit]] | [[credit]] |
 | -------- | --------- |
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
@@ -21,11 +23,57 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `seal:unsealed`
+- `trigger:Use when persisting or querying the durable ISO 19011 / SOX §404 evidence trail — every canonical write (orders, invoices, payments, journal entries, period locks) lands one append-only row queryable by tenant/collection/operation/user/timestamp; Merkle hash chain for tamper-evidence; no log-scraping required for auditors. The canonical audit-evidence collection.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `6510cfa5-1160-8e27-b8ff-83e4d209c7a7` · `822ba40c-924c-832c-8c1c-01f7f3bc6efa` · `96a64023-46a7-88c8-ad7c-4085d38a42c4`
+- content uuids `a2424352-8417-8f69-818c-77c13c7ede49` · `fa75b2da-56d5-83c0-b9f0-68397139d165` · `fc79f8e5-d5f4-876a-8697-462159372335`
+
+## [[entropy]] — gaps · seals
+
+> account code `audit/events` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.8` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `2` eb | Σ seal `11.8` eb |
+
+> net residual `-9.8` eb · seal/gap ratio `5.9` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `audit` · sub-root `798aecfe-af8a-8d6c-9989-a51055e00adf`
-- bond degree `80` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- partition `audit` · sub-root `886efad5-9cfb-87e4-a30b-a445ae4c7a71`
+- bond degree `54` · analysis neighbors —
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
 
 ## [[cloudflare]] bindings
 
@@ -44,10 +92,7 @@
 - `ISO 27037:2012 evidence-preservation` · banner
 - `ISO-19011` · catalogue
 - `ISO-19011:2018 §6.4.6 audit-evidence-collection` · banner
-- `ISO-19011:2018 §6.4.6 audit-evidence-collection unique-event-identifier` · banner
-- `ISO-19011:2018 §6.4.6 audit-evidence-immutability` · banner
 - `ISO-19011:2018 §6.5 audit-conclusions` · banner
-- `ISO-19011:2018 audit-trail` · banner
 - `ISO-27037` · catalogue
 - `ISO/IEC 27037:2012 evidence-preservation` · banner
 - `NIST FIPS-180-4 sha-256` · banner
@@ -59,16 +104,54 @@
 - `SOX §404 internal-controls audit-tamper-evidence` · banner
 - `SOX §404 internal-controls evidence-preservation` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·8 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `80` · sealed `0` · horo `8`
+- bond degree `54` · sealed `0` · horo `8`
 - variance `0` · balanced `1` · trinity sum `3`
-- bindings `0` · standards `25`
+- bindings `0` · standards `22`
 
 ## identity
 
-- uuid `6197c33f-5deb-8007-bd53-cf9866a7afb3`
-- bonds in `23` · out `27`
+- uuid `cedd07f4-fd1e-81d6-a879-2e1c8c6e875d`
+- bonds in `12` · out `12`
 - trinity form·code·proof `1`·`1`·`1`
 - links `5` / `5`
 - folded `1` · escapes `0`
@@ -79,4 +162,4 @@
 
 ---
 
-<sub>content-uuid `da5cbc37-f608-8674-9976-ca684441b2f2` · framed by typography partition `audit` bonds `80` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `27ff720a-c6ac-87b3-8ef7-c2f1f2229d76` · framed by typography partition `audit` bonds `54` · `pnpm readme` · `pnpm readme:check`</sub>

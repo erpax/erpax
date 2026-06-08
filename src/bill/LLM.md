@@ -3,8 +3,8 @@
 
 # bill
 
-path `bill` · uuid `2c328c56-758b-82f1-a1b8-a7e5b992b320` · diamond `f23b76ec-2b73-85d2-88ec-3f64325ec8b6`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `bill` · uuid `46fe2538-7902-88b3-9969-ca756d082b23` · diamond `bf14ba41-193d-8302-ba44-7f482c3ee790`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports bill · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law bill is one schema.org word, content-addressed; the same word collides every
 
 ---
 
-<sub>content-uuid `8557d112-72f3-8865-ab48-4ba0ca869747` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `047aad89-68ca-82c2-bc63-b4b7dbe80864` · `pnpm readme` · `pnpm computed:check`</sub>

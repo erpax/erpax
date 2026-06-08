@@ -3,15 +3,15 @@
 
 # union
 
-path `union` · uuid `3cba9e22-4ebe-8d5e-849e-98ffb1e113b1` · diamond `fe51ab9b-29ed-806f-807f-66b291e63d55`
+path `union` · uuid `3cba9e22-4ebe-8d5e-849e-98ffb1e113b1` · diamond `b9e64494-8ba7-8e3d-afee-0c7c07c59b34`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports bank·collapse·credit·law·merge·sti·workers · exports union · escapes —
-links `7/7` · folded `1` · bonds in `9` out `9`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·accounting·colleagues·conference·departure·hall·holographic·id·meal · ← access·accounting·colleagues·conference·departure·hall·holographic·id·meal
+neighbors → bank·collapse·credit·law·merge·sti·workers · ← bank·collapse·credit·law·merge·sti·workers
 analysis —
 law union is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `514bd62b-8464-8321-97ca-591844750a26` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `622915f2-f66d-8b41-8385-12147a6741c6` · `pnpm readme` · `pnpm computed:check`</sub>

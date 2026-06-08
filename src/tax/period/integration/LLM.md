@@ -3,15 +3,15 @@
 
 # integration
 
-path `tax/period/integration` · uuid `f3a21858-8e75-86ff-8eca-57814db01fe0` · diamond `f2554c05-4b70-80ea-ad29-7c03c183938d`
-horo `2` `share` · trinity `1·1·1` · sealed `1`
+path `tax/period/integration` · uuid `f6f13c4b-e93f-84ba-b955-44dc0c05884f` · diamond `35b74b6e-36b0-8ae9-80f8-b351ec0bcd23`
+horo `7` `descent` · trinity `1·1·1` · sealed `0`
 imports @/tax/period/reconciliation · exports TaxPeriodReconciliation·for · escapes —
 links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → law·period · ← law·period
 analysis —
 law a tax period is separate from its fiscal [[period]] (same period-end date, different process) and closes only when it aligns with that fiscal period, every transfer-pricing adjustment is documented (OECD / BEPS-13) and authority compliance is verified — then tax adjustment entries are prepared, never auto-posted.
 
 ---
 
-<sub>content-uuid `ce0e6361-e9e3-8599-b38d-61c34fff1354` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5833db0e-53fc-8c43-acde-dbb269514907` · `pnpm readme` · `pnpm computed:check`</sub>

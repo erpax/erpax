@@ -3,8 +3,8 @@
 
 # barcode
 
-path `barcode` · uuid `efb58195-0ddd-8fcc-a18c-2f7d92ddb663` · diamond `35bbecdd-ed00-8d61-ade3-5a138026da61`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `barcode` · uuid `11c56a52-c1ae-8927-9d60-d2ae80dfcbfa` · diamond `bd8dd3f1-33a8-8e1f-84d2-bbac9ae8dbcd`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports creative·law·thing · exports barcode · escapes —
 links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law barcode is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `55a2f9a5-8ed9-858f-80b9-749e2180b8bf` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `49cb6853-f26b-8980-8723-cf98fdde2975` · `pnpm readme` · `pnpm computed:check`</sub>

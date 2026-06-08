@@ -2,7 +2,7 @@
 
 # leases
 
-> atom `leases` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
+> atom `leases` · horo `1` `base` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -19,13 +19,36 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `leases` · sub-root `cae8cdb5-1757-821f-a7f6-3ea5fe499c3b`
-- bond degree `25` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- bond degree `0` · analysis neighbors —
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `IFRS IFRS-16 §22-§35 initial-measurement-rou-asset` · banner
+- `IFRS IFRS-16 §26-§28 initial-measurement-lease-liability` · banner
+- `IFRS IFRS-16 §29-§31 subsequent-measurement-rou` · banner
+- `IFRS IFRS-16 leases lessee-recognition` · banner
+- `ISO-19011:2018 audit-trail` · banner
+- `ISO-4217:2015 currency-codes` · banner
+- `ISO-8601-1:2019 date-time commencement-date end-date` · banner
+- `SOX §404 internal-controls capital-asset-register` · banner
+- `US-GAAP ASC-842-20 lessee-accounting` · banner
+- `US-GAAP ASC-842-20-25 finance-vs-operating-lease` · banner
+
+## analytics
+
+- bond degree `0` · sealed `0` · horo `1`
+- variance `1` · balanced `0` · trinity sum `3`
+- bindings `0` · standards `10`
 
 ## identity
 
@@ -37,8 +60,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `89581d39-d736-8f8d-8a5f-0d19e4e41d89` · framed by typography partition `leases` bonds `25` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c01b7dd7-50ce-86fe-8973-e05dd1424e79` · framed by typography partition `leases` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

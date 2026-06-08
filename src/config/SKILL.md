@@ -1,10 +1,293 @@
 ---
 name: config
-description: Use when authoring or modifying the root Payload config (payload.config.ts / buildConfig) — wiring db, collections, globals, plugins, editor, secret, cors/csrf, localization, i18n, admin, graphQL, email, typescript output, depth defaults, or custom endpoints.
-sessions:
-  - 776a49cb-8dfb-45ab-88ff-956e3b613adf
+description: "Use when authoring or modifying the root Payload config (payload.config.ts / buildConfig) — wiring db, collections, globals, plugins, editor, secret, cors/csrf, localization, i18n, admin, graphQL, email, typescript output, depth defaults, or custom endpoints."
+atomPath: config
+coordinate: config · 6/6 · 0f5bc7f7
+contentUuid: "21d07feb-9d8c-5fbb-85e7-cc4c9b644b66"
+diamondUuid: "8ed88c73-9f8b-844b-b51d-64f88fed9868"
+uuid: "0f5bc7f7-7b2d-82b7-a177-7a7d67321252"
+horo: 6
+bonds:
+  in:
+    - access
+    - akashic
+    - atom
+    - aura
+    - auth
+    - axis
+    - begin
+    - binding
+    - bindings
+    - chat
+    - cmyk
+    - collections
+    - components
+    - database
+    - deploy
+    - duality
+    - ecommerce
+    - endpoints
+    - examples
+    - gate
+    - harden
+    - holographic
+    - horo
+    - identity
+    - law
+    - lexical
+    - localize
+    - merge
+    - metadata
+    - name
+    - optimize
+    - payload
+    - plugins
+    - port
+    - recover
+    - redirects
+    - rodin
+    - secret
+    - self
+    - sequence
+    - skills
+    - society
+    - standard
+    - testing
+    - torus
+    - types
+    - upload
+    - users
+    - utilities
+    - uuid
+    - vitepress
+    - whole
+  out:
+    - access
+    - akashic
+    - atom
+    - aura
+    - auth
+    - axis
+    - begin
+    - binding
+    - bindings
+    - chat
+    - cmyk
+    - collections
+    - components
+    - database
+    - deploy
+    - duality
+    - ecommerce
+    - endpoints
+    - examples
+    - gate
+    - harden
+    - holographic
+    - horo
+    - identity
+    - law
+    - lexical
+    - localize
+    - merge
+    - metadata
+    - name
+    - optimize
+    - payload
+    - plugins
+    - port
+    - recover
+    - redirects
+    - rodin
+    - secret
+    - self
+    - sequence
+    - skills
+    - society
+    - standard
+    - testing
+    - torus
+    - types
+    - upload
+    - users
+    - utilities
+    - uuid
+    - vitepress
+    - whole
+typography:
+  partition: config
+  bondDegree: 0
+  neighbors: []
+standards:
+  - "BCP-47"
+  - "Berlin-Group-PSD2"
+  - "COSO-ERM-2017"
+  - "EN-16931"
+  - "EU-2002/58"
+  - "EU-2017/1132"
+  - "EU-2017/828"
+  - "EU-2022/1925"
+  - "EU-2022/2065"
+  - "EU-2022/2554"
+  - "EU-2022/2555"
+  - "EU-2022/868"
+  - "EU-Taxonomy-2020/852"
+  - "IFRS-9"
+  - "ISO-13616-1"
+  - "ISO-17442-1"
+  - "ISO-19160-4"
+  - "ISO-20022"
+  - "ISO-3166-1"
+  - "ISO-3166-2"
+  - "ISO/IEC-29119"
+  - "SWIFT-MT"
+  - "UPU-S42"
+bindings: []
+neighbors:
+  wikilink:
+    - aura
+    - collections
+    - database
+    - duality
+    - gate
+    - harden
+    - identity
+    - law
+    - merge
+    - name
+    - optimize
+    - payload
+    - redirects
+    - self
+    - standard
+    - types
+    - uuid
+    - vitepress
+  matrix:
+    - access
+    - akashic
+    - atom
+    - aura
+    - auth
+    - axis
+    - begin
+    - binding
+    - bindings
+    - chat
+    - cmyk
+    - collections
+    - components
+    - database
+    - deploy
+    - duality
+    - ecommerce
+    - endpoints
+    - examples
+    - gate
+    - harden
+    - holographic
+    - horo
+    - identity
+    - law
+    - lexical
+    - localize
+    - merge
+    - metadata
+    - name
+    - optimize
+    - payload
+    - plugins
+    - port
+    - recover
+    - redirects
+    - rodin
+    - secret
+    - self
+    - sequence
+    - skills
+    - society
+    - standard
+    - testing
+    - torus
+    - types
+    - upload
+    - users
+    - utilities
+    - uuid
+    - vitepress
+    - whole
+  backlinks:
+    - access
+    - akashic
+    - atom
+    - aura
+    - auth
+    - axis
+    - begin
+    - binding
+    - bindings
+    - chat
+    - cmyk
+    - collections
+    - components
+    - database
+    - deploy
+    - duality
+    - ecommerce
+    - endpoints
+    - examples
+    - gate
+    - harden
+    - holographic
+    - horo
+    - identity
+    - law
+    - lexical
+    - localize
+    - merge
+    - metadata
+    - name
+    - optimize
+    - payload
+    - plugins
+    - port
+    - recover
+    - redirects
+    - rodin
+    - secret
+    - self
+    - sequence
+    - skills
+    - society
+    - standard
+    - testing
+    - torus
+    - types
+    - upload
+    - users
+    - utilities
+    - uuid
+    - vitepress
+    - whole
+signatures:
+  computationUuid: "50f0a9fa-460f-8857-bea1-fb310b806f3d"
+  stages:
+    - stage: path
+      stageUuid: "3ea2c96b-64d2-8e0c-b61e-db0ac10ea1f1"
+    - stage: trinity
+      stageUuid: "1805fadb-3e2b-880c-a863-d6d6bb170f6a"
+    - stage: boundary
+      stageUuid: "176b0d5a-ccca-80a0-8f22-59e035deb757"
+    - stage: links
+      stageUuid: "6936ccc4-f826-8824-8772-a6ad7df4491f"
+    - stage: horo
+      stageUuid: "9e9ceefe-e5e8-8efd-8e75-0b7a5aedcf25"
+    - stage: seal
+      stageUuid: "ca1308e8-ea13-8a77-b0e3-ce99b983e68f"
+    - stage: uuid
+      stageUuid: "e67a082e-41ac-8c99-9c78-e02e6ff115b3"
+version: 2
 ---
-
 # config — the root Payload config (buildConfig)
 
 The config is the single source everything extends: a fully-typed object passed to `buildConfig`. A plugin is a function `(config) => config` that mutates/returns it. Position 0 — every other concern hangs off this.

@@ -3,8 +3,8 @@
 
 # covid
 
-path `covid` · uuid `744258de-1ba1-837e-9a14-2efa0cdff635` · diamond `5298290b-776b-8923-9d1e-710253f8ae72`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `covid` · uuid `8d907adf-0847-8689-8f96-224840cd5f4f` · diamond `9abbe05a-471f-89a3-b3e4-aa603319b18b`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·facility·law·merge·sti·testing · exports covid · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law covid is one schema.org word, content-addressed; the same word collides ever
 
 ---
 
-<sub>content-uuid `a6062152-e1fa-8cb7-b78b-cfdf9931a20f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8db46ede-4e2d-8541-9fe0-73293b2ac42f` · `pnpm readme` · `pnpm computed:check`</sub>

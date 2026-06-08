@@ -2,7 +2,7 @@
 
 # archival
 
-> atom `archival` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
+> atom `archival` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -23,9 +23,9 @@
 
 ## typography graph
 
-- partition `archival` · sub-root `316a7a5b-5727-8d9c-a083-ed7f95e6114b`
+- partition `archival` · sub-root `5ac9e205-cd35-86e6-972a-ebb346a88284`
 - bond degree `18` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- graph root `67d11a43-67e0-8dde-afd8-ecbed950ff42`
 
 ## [[cloudflare]] bindings
 
@@ -37,15 +37,53 @@
 - `Filecoin storage proofs (Spacegap / Spacetime)` · banner
 - `W3C IPFS CID v1 — sha-256 maps to ERPax content-uuid` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·2 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `18` · sealed `1` · horo `8`
+- bond degree `18` · sealed `1` · horo `2`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `3`
 
 ## identity
 
-- uuid `316a7a5b-5727-8d9c-a083-ed7f95e6114b`
+- uuid `5ac9e205-cd35-86e6-972a-ebb346a88284`
 - bonds in `6` · out `6`
 - trinity form·code·proof `1`·`1`·`1`
 - links `6` / `6`
@@ -57,4 +95,4 @@
 
 ---
 
-<sub>content-uuid `d18e3e6d-3118-88ed-a5bb-2640ab7f934b` · framed by typography partition `archival` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ec5f368c-268f-8e7c-9d9d-f7397ebb8a0d` · framed by typography partition `archival` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>

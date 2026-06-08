@@ -3,15 +3,15 @@
 
 # solve
 
-path `solve` · uuid `4b4aa806-b6fc-8fac-b3f3-26d5e163986b` · diamond `6afe750a-16d8-8a89-a3d8-fffa76e69b1d`
+path `solve` · uuid `4b4aa806-b6fc-8fac-b3f3-26d5e163986b` · diamond `d0f75dae-03ca-83f9-b6f1-926d3cbaaf18`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·math·merge·sti · exports solve · escapes —
-links `6/6` · folded `1` · bonds in `24` out `24`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → 3986·akashic·allocation·atom·borrow·breakfast·cohort·decontextualized·diffusion·flight·hobby·id·landmarks·list·manufacturing·memories·parody·progression·query·roles·saturday·sell·territory·wp · ← 3986·akashic·allocation·atom·borrow·breakfast·cohort·decontextualized·diffusion·flight·hobby·id·landmarks·list·manufacturing·memories·parody·progression·query·roles·saturday·sell·territory·wp
+neighbors → action·collapse·law·math·merge·sti · ← action·collapse·law·math·merge·sti
 analysis —
 law solve is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `2a209fd2-b57c-8dc9-9d57-8634b0754f8d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0c440e10-3352-8945-b082-6a2463d28abd` · `pnpm readme` · `pnpm computed:check`</sub>

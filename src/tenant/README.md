@@ -2,7 +2,7 @@
 
 # tenant
 
-> atom `tenant` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `tenant` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -24,13 +24,13 @@
 ## typography graph
 
 - partition `tenant` · sub-root `9c6b3124-60eb-81cd-9fe5-e5b776688568`
-- bond degree `50` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `42` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
-- uuid `9c6b3124-60eb-81cd-9fe5-e5b776688568`
-- bonds in `14` · out `14`
+- uuid `1a876b1c-4264-8aea-9978-f539bcc9d5da`
+- bonds in `12` · out `14`
 - trinity form·code·proof `1`·`1`·`1`
 - links `7` / `7`
 - folded `1` · escapes `0`
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `0b21361f-b563-87a6-817c-ea0dbd8847d0` · framed by typography partition `tenant` bonds `50` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `24976cd9-0611-80be-a89d-ba0219315c14` · framed by typography partition `tenant` bonds `42` · `pnpm readme` · `pnpm readme:check`</sub>

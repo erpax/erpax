@@ -3,8 +3,8 @@
 
 # clip
 
-path `clip` · uuid `b9f21fe7-42d9-8095-85c2-55059028dc27` · diamond `0f455d7f-18ba-8389-b648-e858d3cec406`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `clip` · uuid `470066aa-b931-82a8-a3a7-65f1a998149a` · diamond `62ecd130-9186-8f29-a9af-44346bf03adf`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports game·law·movie·number·radio·tv·video · exports clip · escapes —
 links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law clip is one schema.org word, content-addressed; the same word collides every
 
 ---
 
-<sub>content-uuid `f94e61f2-90f2-88c6-9ab5-5489dac859f9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ae2ed38c-caeb-89f0-9012-fb655c65e76c` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # transport
 
-path `transport` · uuid `22a1d2e5-06ba-8b79-afa0-04761245780a` · diamond `ed81700e-1009-8a94-9f94-7684ff7348d5`
+path `transport` · uuid `22a1d2e5-06ba-8b79-afa0-04761245780a` · diamond `8956ca83-6ed2-8e73-a97f-fd48afe04228`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports closures·collapse·info·law·merge·public·sti · exports transport · escapes —
-links `7/7` · folded `1` · bonds in `12` out `12`
+links `7/7` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·accounting·allocation·balance·entity·landmarks·literature·marine·mass·mcp·progression·tour · ← access·accounting·allocation·balance·entity·landmarks·literature·marine·mass·mcp·progression·tour
+neighbors → airline·closures·collapse·info·law·merge·public·sti · ← airline·closures·collapse·info·law·merge·public·sti
 analysis —
 law transport is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `9029f58d-44f8-8f9e-89b4-bf4dba976c0c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7f035564-94eb-89d9-a9bd-6dbb03395f18` · `pnpm readme` · `pnpm computed:check`</sub>

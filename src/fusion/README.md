@@ -25,7 +25,21 @@
 
 - partition `fusion` · sub-root `4f84cf55-4b34-8e43-8e98-0838be298488`
 - bond degree `113` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `computed from the live matrix, never hand-asserted` · banner
+
+## analytics
+
+- bond degree `113` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -41,4 +55,4 @@
 
 ---
 
-<sub>content-uuid `deee83b0-f017-8b95-9daf-477d505107e3` · framed by typography partition `fusion` bonds `113` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ea5becd7-8262-8952-a779-d92df1bcad81` · framed by typography partition `fusion` bonds `113` · `pnpm readme` · `pnpm readme:check`</sub>

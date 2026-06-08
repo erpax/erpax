@@ -3,15 +3,15 @@
 
 # vendor
 
-path `vendor` · uuid `71404be7-4351-80e5-8dfe-0d4fb7a417e7` · diamond `85205387-813b-8197-8f30-d9b1ac9ea91f`
+path `vendor` · uuid `71404be7-4351-80e5-8dfe-0d4fb7a417e7` · diamond `380d5365-c897-8662-a5f0-da10d871db61`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports vendor · escapes —
-links `2/2` · folded `1` · bonds in `7` out `7`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·owned·stat·until·vein · ← cohort·landmarks·memories·owned·stat·until·vein
+neighbors → law·thing · ← law·thing
 analysis —
 law vendor is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `1752a5f9-d96a-8260-a210-75b6a521fe05` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0a045fcc-111b-8ed8-a993-5fdb0d87bca0` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -2,7 +2,7 @@
 
 # invoices
 
-> atom `invoices` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
+> atom `invoices` · horo `1` `base` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -19,13 +19,56 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `4` · [[conservation]] `0` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `invoices` · sub-root `ef180ebe-02df-87e7-bd19-e59ea8c64805`
-- bond degree `53` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- bond degree `0` · analysis neighbors —
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `COSO-ERM-2017` · catalogue
+- `EN-16931` · catalogue
+- `EN-16931:2017 §BG-22 document-totals` · banner
+- `EN-16931:2017 §BG-23 vat-breakdown` · banner
+- `EN-16931:2017 BT-3 invoice-type-code` · banner
+- `EN-16931:2017 BT-5 invoice-currency-code` · banner
+- `EN-16931:2017 semantic-data-model-electronic-invoice` · banner
+- `EU-2017/1132` · catalogue
+- `EU-2017/828` · catalogue
+- `IFRS IFRS-15 revenue-from-contracts-with-customers` · banner
+- `ILO-C100` · catalogue
+- `ISO-13616-1` · catalogue
+- `ISO-19011:2018 audit-trail` · banner
+- `ISO-19011:2018 audit-trail`.` · banner
+- `ISO-4217:2015 currency-codes` · banner
+- `ISO-8601-1:2019 date-time invoice-date due-date` · banner
+- `ISO-9362` · catalogue
+- `ISO-9735` · catalogue
+- `NIST-SP-800-38D` · catalogue
+- `Peppol-BIS-3.0` · catalogue
+- `Peppol-BIS-3.0 billing electronic-invoicing` · banner
+- `SOX §404 internal-controls` · banner
+- `UBL-2.1` · catalogue
+- `UBL-2.1 universal-business-language` · banner
+- `UN-CEFACT` · catalogue
+- `UN-CEFACT 1001 document-name-code` · banner
+- `UN-CEFACT 5305 duty-tax-fee-category-code` · banner
+- `UN-EDIFACT INVOIC d96a` · banner
+- `US-GAAP` · catalogue
+- `US-GAAP ASC-606 revenue-from-contracts-with-customers` · banner
+
+## analytics
+
+- bond degree `0` · sealed `0` · horo `1`
+- variance `4` · balanced `0` · trinity sum `3`
+- bindings `0` · standards `30`
 
 ## identity
 
@@ -37,8 +80,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `f9a7bf95-066f-81a0-a2ff-0f1aa7df9069` · framed by typography partition `invoices` bonds `53` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `81dc1fa8-1e45-89f9-aeee-ba6acbecffc7` · framed by typography partition `invoices` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

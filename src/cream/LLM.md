@@ -3,8 +3,8 @@
 
 # cream
 
-path `cream` · uuid `d61b57eb-a301-83e1-95e4-e3a5cc3a5504` · diamond `919d8da3-9318-884a-8c4e-33dec46888ab`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `cream` · uuid `2cd661a3-0b3f-8d14-bf1d-1fdfb7ac695f` · diamond `05423d59-f4ba-87b7-921d-004b04dad95f`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·ice·law·merge·shop·sti · exports cream · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law cream is one schema.org word, content-addressed; the same word collides ever
 
 ---
 
-<sub>content-uuid `169ee202-743c-8473-99c7-c8fc5602bf5e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ae5c5ad9-7cc9-8e01-bba4-c0886307c39b` · `pnpm readme` · `pnpm computed:check`</sub>

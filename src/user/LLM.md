@@ -3,15 +3,15 @@
 
 # user
 
-path `user` · uuid `70e970f7-2f54-885c-aafd-540c190a16c9` · diamond `a2155b1b-71ba-8cb5-b9a6-42d7dae0bc5a`
+path `user` · uuid `70e970f7-2f54-885c-aafd-540c190a16c9` · diamond `bc96c7a2-bac3-8a6d-b91c-787f67d2e332`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports blocks·checkins·collapse·comments·count·downloads·interaction·law·likes·merge·ones·page·plays·plus·review·sti·tweets·visits · exports user · escapes —
-links `18/18` · folded `1` · bonds in `17` out `17`
+links `18/18` · folded `1` · bonds in `21` out `21`
 faces worker·plugin·pwa `0·0·0`
-neighbors → agriculture·buildings·comment·course·crisis·crop·hamiltonian·issue·landmarks·maintainer·masthead·measurements·sbbi·seat·swatch·task·worth · ← agriculture·buildings·comment·course·crisis·crop·hamiltonian·issue·landmarks·maintainer·masthead·measurements·sbbi·seat·swatch·task·worth
+neighbors → blocks·by·checkins·collapse·comments·count·downloads·interaction·law·likes·merge·ones·page·plays·plus·research·review·sti·tenant·tweets·visits · ← blocks·by·checkins·collapse·comments·count·downloads·interaction·law·likes·merge·ones·page·plays·plus·research·review·sti·tenant·tweets·visits
 analysis —
 law user is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `430f8b4e-eb45-820a-a9e4-6dafa5d72867` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c349f9d4-a1d6-8682-9c7e-085f42bd7f58` · `pnpm readme` · `pnpm computed:check`</sub>

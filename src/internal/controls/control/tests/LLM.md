@@ -3,8 +3,8 @@
 
 # tests
 
-path `internal/controls/control/tests` · uuid `2f0526b4-9b02-8436-9679-dbde1ac51417` · diamond `439fee84-d0af-854a-8e42-2a89fbec2de7`
-horo `2` `share` · trinity `1·1·1` · sealed `1`
+path `internal/controls/control/tests` · uuid `eb01287d-bcbe-8309-975b-4262122d48f9` · diamond `e0cf9541-d6f3-85d0-b44d-f9a5d0334d84`
+horo `5` `round` · trinity `1·1·1` · sealed `0`
 imports @/audit/trail/after/change·@/auth·@/authenticated · exports const · escapes —
 links `1/1` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law a control test records its sampling method, assertion, sample size, toleranc
 
 ---
 
-<sub>content-uuid `b53630b1-2dc4-8a69-8040-8680a1052ba9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `117baf8b-04ec-8a80-8920-5dfe179c3984` · `pnpm readme` · `pnpm computed:check`</sub>

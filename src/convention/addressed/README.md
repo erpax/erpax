@@ -2,7 +2,7 @@
 
 # addressed
 
-> atom `convention/addressed` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
+> atom `convention/addressed` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -23,9 +23,9 @@
 
 ## typography graph
 
-- partition `convention` · sub-root `38cd2282-f75a-84ce-b2c7-ff7cff0bfb4c`
+- partition `convention` · sub-root `a93daa45-addb-8b21-89cd-ab385bae0306`
 - bond degree `19` · analysis neighbors `aura`
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -36,15 +36,53 @@
 - `RFC 9562 §5.8 (uuidv8 content-uuid) + §4.1 variant — identity derived from content` · banner
 - `RFC-9562` · catalogue
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·1 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `19` · sealed `1` · horo `4`
+- bond degree `19` · sealed `1` · horo `1`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `2`
 
 ## identity
 
-- uuid `6a5f13ba-7f31-8c7a-b107-5ef8502cd145`
+- uuid `297fe354-dfc7-8be4-9b05-3dc5dab3e4a1`
 - bonds in `6` · out `6`
 - trinity form·code·proof `1`·`1`·`1`
 - links `14` / `14`
@@ -56,4 +94,4 @@
 
 ---
 
-<sub>content-uuid `2a67b90d-332b-80d3-a23c-fdc89dd20996` · framed by typography partition `convention` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e793a5d9-1696-8759-b8ec-99380f254ef7` · framed by typography partition `convention` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>

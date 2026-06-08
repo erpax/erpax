@@ -3,8 +3,8 @@
 
 # completed
 
-path `completed` · uuid `a3e1e975-f85f-890f-b511-2d0fc8520255` · diamond `2a3f0de4-f5b1-86c1-87b0-185135b90133`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `completed` · uuid `3c37a3d4-e645-8472-96fa-4928ace2fc2d` · diamond `f2950190-89c4-8e86-be24-68146421cae5`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports completed · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law completed is one schema.org word, content-addressed; the same word collides 
 
 ---
 
-<sub>content-uuid `84d9bf33-b3cc-8df7-b47d-d1ea2737525a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `557d453c-ba98-832f-817c-45848e1a2f0e` · `pnpm readme` · `pnpm computed:check`</sub>

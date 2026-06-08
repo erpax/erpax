@@ -3,8 +3,8 @@
 
 # arrangement
 
-path `arrangement` · uuid `685e89fc-8a0e-8463-986d-f2368a81bda3` · diamond `ea98551d-da28-8723-839c-1fe3978db138`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `arrangement` · uuid `c2c00f35-704e-88a4-a61b-2f7dc81357cb` · diamond `bd26a549-c714-8776-8de9-cdd31536021d`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·music·sti · exports arrangement · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law arrangement is one schema.org word, content-addressed; the same word collide
 
 ---
 
-<sub>content-uuid `653da8fa-25c2-8e12-996b-3a48484f6cfc` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0b2b72c4-1992-870d-ae7f-80f7283cd30d` · `pnpm readme` · `pnpm computed:check`</sub>

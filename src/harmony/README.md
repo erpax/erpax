@@ -25,7 +25,22 @@
 
 - partition `harmony` · sub-root `6fcd4d80-b87f-8f55-9cee-bf67b1474273`
 - bond degree `199` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `harmony-checked horo bands (the horo state-ring law)` · banner
+- `just intonation (5-limit) — the perfect (1:1, 2:1, 3:2, 4:3) and` · banner
+
+## analytics
+
+- bond degree `199` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `2`
 
 ## identity
 
@@ -41,4 +56,4 @@
 
 ---
 
-<sub>content-uuid `a1ae9c16-01d1-8925-899d-4e49ee6f29ed` · framed by typography partition `harmony` bonds `199` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `6d9e4b03-6c0d-8d4b-84cc-6704ba53401a` · framed by typography partition `harmony` bonds `199` · `pnpm readme` · `pnpm readme:check`</sub>

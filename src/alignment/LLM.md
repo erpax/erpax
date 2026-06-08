@@ -3,8 +3,8 @@
 
 # alignment
 
-path `alignment` · uuid `2fb4cc40-07aa-834d-b51b-116a784af341` · diamond `4f3bce32-900c-818d-84cb-8fba01836f17`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `alignment` · uuid `69f52a97-97ac-8b56-81d8-9629e322a76f` · diamond `a88d0d74-7cdf-891a-bf68-8b73eeed0ba3`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·educational·law·merge·object·sti·type · exports alignment · escapes —
 links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law alignment is one schema.org word, content-addressed; the same word collides 
 
 ---
 
-<sub>content-uuid `4bbc2c2f-35ef-878f-af79-c68ab5a36f28` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1c9bf090-e3fe-88a1-a5bd-8ddd391e521a` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # router
 
-path `skill/router` · uuid `2bbdffe5-9fda-874a-ae4c-05894539a20b` · diamond `cceb0116-ffbd-8283-bb96-110ad588f462`
-horo `2` `share` · trinity `1·1·1` · sealed `1`
-imports — · exports SKILL_INDEX·buildFrontmatterGraph·connectCorpus·connectFrontmatter·graphConnectivity·materializeSkillFrontmatter·renderFrontmatter·skillRouterPlugin·type·upgradeSkillText·verifySkillFrontmatter · escapes —
-links `1/1` · folded `1` · bonds in `1` out `1`
+path `skill/router` · uuid `8bee018c-4cfe-8896-82bd-eb56ac6f496c` · diamond `c9685123-e2cf-8db2-a416-8f0b02923dee`
+horo `1` `base` · trinity `1·1·1` · sealed `0`
+imports — · exports DEFAULT_SKILL_EXCERPT_CHARS·ERPAX_AGENT_SURFACES·ERPAX_CANONICAL_REPO·ERPAX_SKILL_ENTRY·ERPAX_SKILL_ENTRY_ALT·ERPAX_SKILL_ENTRY_CONTENT_UUID·SKILL_INDEX·buildFrontmatterGraph·collapseTriggersOf·connectCorpus·connectFrontmatter·entangledFieldsOf·generateQuantumSkill·graphConnectivity·inferQuantumEnvironment·isQuantumSkillPath·loadSkillByAtomPath·materializeSkillFrontmatter·mergeEntangledFields·normalizeErpaxRepoUrl·parseQuantumSkill·parseSignaturesFromText·renderFrontmatter·sealSkillExcerpt·signaturesFromStages·signaturesMatch·skillFileForAtomPath·skillRouterPlugin·type·upgradeQuantumSkillText·upgradeSkillText·verifySignatures·verifySkillFrontmatter·wireFromRepoUrl · escapes —
+links `1/1` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·1·0`
-neighbors → law · ← law
+neighbors → build·law·upgrade·wire · ← build·law·upgrade·wire
 analysis —
 law barrel re-export at `@/skill/router`; trinity sealed for import purity.
 
 ---
 
-<sub>content-uuid `2d067066-3762-8e72-973b-9ca58440c3b6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `fe63c6f4-a6e4-8d0e-b4b0-d135b6228a96` · `pnpm readme` · `pnpm computed:check`</sub>

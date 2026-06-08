@@ -3,15 +3,15 @@
 
 # sync
 
-path `agent/sync` · uuid `5e46aec2-1452-8280-89ed-e8779874a699` · diamond `6189732b-bd01-862f-9292-f82484efdad1`
+path `agent/sync` · uuid `ce290ce1-ad52-879e-ad17-d90028f4e392` · diamond `d441b24c-d11e-830b-aafa-9417ee87f385`
 horo `4` `weave` · trinity `1·1·1` · sealed `0`
 imports @/integrity · exports *:./chat-broadcast·*:./discovery·*:./horo·*:./payload-chat·*:./society·*:./training-broadcast·function·interface · escapes —
-links `12/12` · folded `1` · bonds in `26` out `31`
+links `12/12` · folded `1` · bonds in `24` out `24`
 faces worker·plugin·pwa `1·0·0`
-neighbors → agent·atom·blockchain·collapse·distribution·duality·entropy·fractal·fractal·generate·hallucination·holographic·holographic·identity·identity·integrity·law·law·linearity·memory·merge·merge·part·peace·purity·snapshot·standard·stream·sync·uuid·whole · ← agent·atom·blockchain·collapse·distribution·duality·entropy·fractal·generate·hallucination·holographic·identity·integrity·law·linearity·memory·merge·part·peace·purity·snapshot·standard·stream·sync·uuid·whole
+neighbors → atom·blockchain·collapse·distribution·entropy·fractal·generate·hallucination·holographic·identity·integrity·law·linearity·memory·memory·merge·part·peace·purity·snapshot·stream·sync·uuid·whole · ← atom·blockchain·collapse·distribution·entropy·fractal·generate·hallucination·holographic·identity·integrity·law·linearity·memory·memory·merge·part·peace·purity·snapshot·stream·sync·uuid·whole
 analysis hallucination·purity
 law every agent publishes into one per-tenant room that broadcasts to every peer, and consumption is idempotent on the content-uuid event id (same content ⇒ same id ⇒ never processed twice), so the parts converge with no coordination ([[merge]]) and the shared bus never crosses tenant isolation.
 
 ---
 
-<sub>content-uuid `62f41470-54c9-8af6-a7cb-dfe28fe1c042` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `920d5468-8251-8a3a-9123-6a8744b54da8` · `pnpm readme` · `pnpm computed:check`</sub>

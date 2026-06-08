@@ -1,8 +1,114 @@
 ---
 name: career
 description: "Use when modelling a work career as a life-course trajectory — трудова кариера — a sequence of positions on the harmonic allocation ladder walked over time. Late career is a late band on that ring (the maintenance→disengagement stage before decompression/retirement) where accumulated experience peaks against skill obsolescence and the status sign can flip with age. Derive the stage from the sequence and time; never store it."
+atomPath: career
+coordinate: career · 1/base · 3cce1e87
+contentUuid: "b1f927bc-1b64-5d95-86ec-9cc1f57561a5"
+diamondUuid: "8740fe6c-3a74-8642-a8e3-81b38e966183"
+uuid: "3cce1e87-031e-847b-8096-c9c0ad1bd63e"
+horo: 1
+bonds:
+  in:
+    - age
+    - allocation
+    - cohort
+    - crisis
+    - decompression
+    - health
+    - horo
+    - law
+    - market
+    - positions
+    - sequence
+    - status
+    - time
+    - wellbeing
+  out:
+    - age
+    - allocation
+    - cohort
+    - crisis
+    - decompression
+    - health
+    - horo
+    - law
+    - market
+    - positions
+    - sequence
+    - status
+    - time
+    - wellbeing
+typography:
+  partition: career
+  bondDegree: 45
+  neighbors: []
+standards: []
+bindings: []
+neighbors:
+  wikilink:
+    - age
+    - allocation
+    - cohort
+    - crisis
+    - decompression
+    - health
+    - horo
+    - law
+    - market
+    - positions
+    - sequence
+    - status
+    - time
+    - wellbeing
+  matrix:
+    - age
+    - allocation
+    - cohort
+    - crisis
+    - decompression
+    - health
+    - horo
+    - law
+    - market
+    - positions
+    - sequence
+    - status
+    - time
+    - wellbeing
+  backlinks:
+    - age
+    - allocation
+    - cohort
+    - crisis
+    - decompression
+    - health
+    - horo
+    - law
+    - market
+    - positions
+    - sequence
+    - status
+    - time
+    - wellbeing
+signatures:
+  computationUuid: "6c5ef82b-5c26-843e-a237-670c5bf1f4d0"
+  stages:
+    - stage: path
+      stageUuid: "1f10997f-d335-85d2-8b50-538c4fff47ff"
+    - stage: trinity
+      stageUuid: "60507b89-692b-8b8b-b7cf-02761fb5d08a"
+    - stage: boundary
+      stageUuid: "5c1d2c4c-5f72-85cc-a4b6-6985355e50fd"
+    - stage: links
+      stageUuid: "02114f3f-0dd1-8208-8ccd-80b78d603ff7"
+    - stage: horo
+      stageUuid: "6e70b40e-8443-8cb0-a8c0-e39a686ec939"
+    - stage: seal
+      stageUuid: "79441d6a-951e-8437-9fb8-d33ae5406b3e"
+    - stage: uuid
+      stageUuid: "2fec4e8b-03ec-8de7-921e-3ccc441125b2"
+version: 2
 ---
-
 # career — the life-course work trajectory, a sequence of positions (трудова кариера)
 
 A **career** (*трудова кариера*) is not a job but a **trajectory**: a [[sequence]] of [[positions]] on the [[allocation]] harmonic ladder, walked by one actor over [[time]] — the ordered prev/next [[horo]] ring of a working life. Life-course theory reads it as a path shaped by **timing, [[cohort]], linked lives, and agency** (Elder): the same position entered early vs late, in boom vs [[crisis]], yields different lives.

@@ -23,7 +23,21 @@
 
 - partition `lexical` · sub-root `a839cd92-4dae-8ddc-bfb7-9efe75c858d6`
 - bond degree `46` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `46` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `e2932c35-1c60-88a8-bc98-dc5360b54c09` · framed by typography partition `lexical` bonds `46` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c3f6026d-c663-8f16-8373-9913a1647926` · framed by typography partition `lexical` bonds `46` · `pnpm readme` · `pnpm readme:check`</sub>

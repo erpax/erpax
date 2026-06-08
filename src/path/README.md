@@ -2,9 +2,11 @@
 
 # path
 
-> atom `path` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
+> atom `path` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
+
+> account code `path` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,18 +23,117 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `explore:cloudflare`
+
+### collapse
+
+- `balance:conserved`
+- `seal:sealed`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `1`
+- entry uuids `dac3f8cc-58bc-8021-87c3-47a1e4909240`
+- content uuids `06a24127-7340-8190-b947-6f3aca141abe` · `497404c5-ead4-897a-b6a1-cd4ae7471e56`
+
+## [[entropy]] — gaps · seals
+
+> account code `path` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+|  | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.5` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[diamond]]/sealed `1.585` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `0` eb | Σ seal `13.085` eb |
+
+> net residual `-13.085` eb · seal/gap ratio `1` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `path` · sub-root `ffe8628d-ff57-8b56-84fa-02fee1cfb601`
-- bond degree `83` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- partition `path` · sub-root `497404c5-ead4-897a-b6a1-cd4ae7471e56`
+- bond degree `114` · analysis neighbors `cloudflare`
+- graph root `8ae3c782-7e14-8d31-8757-b5f5002ee21d`
+
+## [[cloudflare]] bindings
+
+- `d1_databases`/`D1` · atom `cloudflare/d1-databases/D1`
+- `kv_namespaces`/`AI_CACHE` · atom `cloudflare/kv-namespaces/AI_CACHE`
+- `r2_buckets`/`R2` · atom `cloudflare/r2-buckets/R2`
+
+## [[standards]]
+
+- `schema.org — XPathType vocabulary word (collided via [[sti]])` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·5 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `114` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `3` · standards `1`
 
 ## identity
 
-- uuid `ffe8628d-ff57-8b56-84fa-02fee1cfb601`
-- bonds in `26` · out `25`
+- uuid `497404c5-ead4-897a-b6a1-cd4ae7471e56`
+- bonds in `32` · out `32`
 - trinity form·code·proof `1`·`1`·`1`
-- links `26` / `26`
+- links `39` / `39`
 - folded `1` · escapes `0`
 
 ## [[seal]]
@@ -41,4 +142,4 @@
 
 ---
 
-<sub>content-uuid `0cfe902f-9630-84d2-b2ba-949b5450235b` · framed by typography partition `path` bonds `83` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `2f116132-e270-8c93-b1f4-9fc2eec4a754` · framed by typography partition `path` bonds `114` · `pnpm readme` · `pnpm readme:check`</sub>

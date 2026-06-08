@@ -3,15 +3,15 @@
 
 # table
 
-path `table` · uuid `6908ad88-0356-8296-9480-a2a7947a8fa2` · diamond `5b43af6e-cc43-841c-9a66-3b6bf9a2dfab`
+path `table` · uuid `6908ad88-0356-8296-9480-a2a7947a8fa2` · diamond `84a822cf-11d1-8661-ab83-de7b198b9e36`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports table · escapes —
-links `2/2` · folded `1` · bonds in `6` out `6`
+links `2/2` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → issue·quotes·spreadsheet·tag·take·tamper · ← issue·quotes·spreadsheet·tag·take·tamper
+neighbors → law·sql·thing · ← law·sql·thing
 analysis —
 law table is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `31aa9e5e-ccad-8d97-9064-6743d82b9a16` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6430f1d5-930a-8e7e-88de-d9bbccc76dab` · `pnpm readme` · `pnpm computed:check`</sub>

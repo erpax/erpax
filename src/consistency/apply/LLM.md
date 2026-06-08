@@ -3,15 +3,15 @@
 
 # apply
 
-path `consistency/apply` · uuid `b2b8c8f3-88bf-8d69-bd90-5d899c63b4b0` · diamond `31cd7c01-83bf-86b4-98fe-75a8f93bd756`
-horo `4` `weave` · trinity `1·1·1` · sealed `1`
+path `consistency/apply` · uuid `1e1a16a7-0cfe-8c3d-a2ee-acc131e1440f` · diamond `1f7797ee-0add-84de-833a-db0efc501087`
+horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports — · exports const·default·function·interface · escapes —
-links `3/3` · folded `1` · bonds in `8` out `9`
+links `3/3` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·apply·collapse·consistency·direct·law·law·merge·sti · ← action·apply·collapse·consistency·direct·law·merge·sti
+neighbors → action·apply·collapse·direct·law·merge·sti · ← action·apply·collapse·direct·law·merge·sti
 analysis —
 law every consistency fix is a deterministic, idempotent, audited transform — read · rewrite · write-back · report — so re-running is a no-op and a missing target is the empty summary.
 
 ---
 
-<sub>content-uuid `300dac25-9d67-8daf-ac21-737b9e060579` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1d47f85b-3878-8e3e-a148-b77c4cd39b9b` · `pnpm readme` · `pnpm computed:check`</sub>

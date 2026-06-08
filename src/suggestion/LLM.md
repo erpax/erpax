@@ -3,15 +3,15 @@
 
 # suggestion
 
-path `suggestion` · uuid `cc2bf39e-af57-8697-954e-172725362392` · diamond `31e691f3-c050-86ab-997c-d75106bb152e`
+path `suggestion` · uuid `cc2bf39e-af57-8697-954e-172725362392` · diamond `50f3b88c-8c4e-899d-86bd-a5a5a80db614`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports balance·feedback·law·suggestions · exports suggestion · escapes —
-links `8/8` · folded `1` · bonds in `7` out `7`
+links `8/8` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·counter·landmarks·memories·nonprofit501f·privilege·stat · ← cohort·counter·landmarks·memories·nonprofit501f·privilege·stat
+neighbors → balance·feedback·law·suggestions · ← balance·feedback·law·suggestions
 analysis —
 law a suggestion is a proposed change held for consideration — it is offered, not applied; it carries no authority until accepted, the unaccepted twin of committed [[feedback]].
 
 ---
 
-<sub>content-uuid `6fcdcf3e-6666-840a-9831-a1944d3fdbb0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9112da44-f005-8696-84b1-8872d031b505` · `pnpm readme` · `pnpm computed:check`</sub>

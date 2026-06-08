@@ -3,8 +3,8 @@
 
 # beneficiary
 
-path `beneficiary` · uuid `e3eaeff2-7299-846f-9a78-3f13637884ce` · diamond `7509cebe-db82-8005-8620-beefa9b9a57c`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `beneficiary` · uuid `0cb3b62a-5306-8f47-adb8-2e16aca999a7` · diamond `9d39f1c3-1ed3-8342-a5a2-0e1ea61b8692`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports bank·collapse·law·merge·sti · exports beneficiary · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law beneficiary is one schema.org word, content-addressed; the same word collide
 
 ---
 
-<sub>content-uuid `4144b1f5-c68c-84b8-bee4-cd59d8f3be3f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `56ebd6e9-ee13-8b14-a787-e12ef8249ce7` · `pnpm readme` · `pnpm computed:check`</sub>

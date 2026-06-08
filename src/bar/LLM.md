@@ -3,8 +3,8 @@
 
 # bar
 
-path `bar` · uuid `a40fb56e-2d86-83cb-846e-33609413f096` · diamond `0e2f07e9-b7b2-8af4-bb58-0f7973a2e36f`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `bar` · uuid `82949de1-6ebe-8162-bb69-71eec1f201e2` · diamond `19e3e8de-d8f8-881d-bef4-dc49d075203b`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·pub·side·sti·wp · exports bar · escapes —
 links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law bar is one schema.org word, content-addressed; the same word collides every 
 
 ---
 
-<sub>content-uuid `eada2e58-18f5-8045-98f3-0319cd2d02f9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `258935cd-e226-8d47-af8c-ae29c3566dbe` · `pnpm readme` · `pnpm computed:check`</sub>

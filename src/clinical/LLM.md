@@ -3,8 +3,8 @@
 
 # clinical
 
-path `clinical` · uuid `ca44338f-458f-8cec-8bc4-a3b2f34950fe` · diamond `5d2ff1ee-7367-8448-b26f-734053c1a933`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `clinical` · uuid `20804f45-b9ec-835b-a72b-5e88e04b7124` · diamond `8f8e1b35-2c13-8124-94af-6b258f04bbd4`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·pharmacology·sti · exports clinical · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law clinical is one schema.org word, content-addressed; the same word collides e
 
 ---
 
-<sub>content-uuid `8baac359-9816-817d-9475-c659ae051f6c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7cd4f346-ac07-83e9-aab7-7b73e6039c02` · `pnpm readme` · `pnpm computed:check`</sub>

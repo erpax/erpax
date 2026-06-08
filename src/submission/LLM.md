@@ -3,15 +3,15 @@
 
 # submission
 
-path `submission` · uuid `0c9996e7-c358-8fdc-9ee7-6c865838c5f6` · diamond `d88d54a3-6301-8c32-93cc-dfbe379c8475`
+path `submission` · uuid `0c9996e7-c358-8fdc-9ee7-6c865838c5f6` · diamond `9a72c366-eb4a-8459-86fe-411bca5892c7`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports balance·submissions·workflow · exports submission · escapes —
-links `6/6` · folded `1` · bonds in `7` out `7`
+links `6/6` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·holding·landmarks·memories·sponsorship·stat·story · ← cohort·holding·landmarks·memories·sponsorship·stat·story
+neighbors → balance·submissions·workflow · ← balance·submissions·workflow
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `a6d69125-669e-84ed-bef4-9692eb77c7e9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ab0d43e0-778a-87ef-a096-ca7dedcfd780` · `pnpm readme` · `pnpm computed:check`</sub>

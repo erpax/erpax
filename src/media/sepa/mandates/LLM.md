@@ -3,8 +3,8 @@
 
 # mandates
 
-path `media/sepa/mandates` · uuid `6aa80160-9705-876c-a605-814996966ed6` · diamond `3339744a-c995-8784-bfea-dd087d0b38d2`
-horo `8` `crest` · trinity `1·1·1` · sealed `1`
+path `media/sepa/mandates` · uuid `c83fd891-ef16-8015-9d66-873b7ddfb573` · diamond `75b450c1-f952-8c9c-9b84-67d008c05dc9`
+horo `2` `share` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/auto/set/timestamp·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
 links `8/8` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law a SEPA mandate is the debtor's standing authorization (pain.008) — its seq
 
 ---
 
-<sub>content-uuid `0b0556f2-3bd1-89bf-8343-8bf4c3e72bae` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a467eeda-e2fc-8990-9267-0f298f9bd0ac` · `pnpm readme` · `pnpm computed:check`</sub>

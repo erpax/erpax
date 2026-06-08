@@ -3,8 +3,8 @@
 
 # advertised
 
-path `advertised` · uuid `afd6c6cd-4898-8d6d-8a0e-08f3f467c5c9` · diamond `b907a261-17e4-8001-ab97-32a0290a01c0`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `advertised` · uuid `150cc1cd-d7cc-89ec-9aed-c8aac470c8d3` · diamond `2f5a6886-75e5-8e0b-9dcf-5d23681adff9`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports advertised · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law advertised is one schema.org word, content-addressed; the same word collides
 
 ---
 
-<sub>content-uuid `62635c21-2b45-8a21-a85f-c2e09ac24f33` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0d6245e5-eed8-895f-92a1-aa118cf58446` · `pnpm readme` · `pnpm computed:check`</sub>

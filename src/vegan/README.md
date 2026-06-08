@@ -23,7 +23,7 @@
 
 - partition `vegan` · sub-root `e4e31cb8-4eac-8c25-8c8d-ac74754282df`
 - bond degree `12` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `91b952c8-93e4-8813-be8a-7f39bd3178c2` · framed by typography partition `vegan` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `7422bf16-4d8f-8902-9d92-5364d2e4e9a6` · framed by typography partition `vegan` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,8 +3,8 @@
 
 # 142
 
-path `etsi/en/319/142` · uuid `42ad887a-1499-8765-be85-acada751e24f` · diamond `78f28dc1-a261-890a-a662-5d92550131ba`
-horo `8` `crest` · trinity `1·1·1` · sealed `1`
+path `etsi/en/319/142` · uuid `08974c4b-672d-8a28-8f4a-0845e206e698` · diamond `3ccaad28-2e2f-80cc-82ba-a0862e9c7422`
+horo `4` `weave` · trinity `1·1·1` · sealed `0`
 imports — · exports PADES_DEFAULT_LEVEL·PADES_DEFAULT_SUBFILTER·buildPadesSignatureDictionary·padesLevelOid·type · escapes —
 links `0/0` · folded `1` · bonds in `0` out `0`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `0c2192b3-d59f-8223-89ea-03c2413ba009` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4c10096b-3554-8377-9604-46b9e3505ba9` · `pnpm readme` · `pnpm computed:check`</sub>

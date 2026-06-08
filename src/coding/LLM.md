@@ -3,8 +3,8 @@
 
 # coding
 
-path `coding` · uuid `4cb6b71c-dd52-85d8-92a4-103300170bd3` · diamond `2e4d179b-261f-8999-b2c4-df3cf8f2d360`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `coding` · uuid `43ccf5b6-9b47-83e6-b582-1c1ed20f30e8` · diamond `8180c784-883b-80d0-84ae-2382619b8f55`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·system · exports coding · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law coding is one schema.org word, content-addressed; the same word collides eve
 
 ---
 
-<sub>content-uuid `b19bbacd-27a9-8805-ab58-fdd09d4766a1` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2384c1f2-09c9-8f94-8b3e-653757571a35` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,8 +3,8 @@
 
 # basic
 
-path `basic` · uuid `de647b8b-06aa-86d8-b6ac-c40bcbd92eb9` · diamond `95365bc2-fb4d-892f-bc5d-6dfee1691bf4`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `basic` · uuid `87e0164e-e565-848b-bed4-96ed18dcf6d1` · diamond `09b0c30f-31cf-8caf-9dcf-929e9517b3ea`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports basic · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law basic is one schema.org word, content-addressed; the same word collides ever
 
 ---
 
-<sub>content-uuid `f9c07d77-3697-8d94-8d97-521a7176774e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9a88d62c-d2ae-896b-8334-3b741abbd20c` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -2,9 +2,11 @@
 
 # integration
 
-> atom `tax/period/integration` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
+> atom `tax/period/integration` · horo `7` `descent` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `tax/period/integration` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,15 +23,115 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `law:a tax period is separate from its fiscal [[period]] (same period-end date, different process) and closes only when it aligns with that fiscal period, every transfer-pricing adjustment is documented (OECD / BEPS-13) and authority compliance is verified — then tax adjustment entries are prepared, never auto-posted.`
+- `seal:unsealed`
+- `trigger:Use when implementing or referencing Phase B5: Tax Period Integration — Standards & Implementation.`
+- `trigger:a tax period is separate from its fiscal [[period]] (same period-end date, different process) and closes only when it aligns with that fiscal period, every transfer-pricing adjustment is documented (OECD / BEPS-13) and authority compliance is verified — then tax adjustment entries are prepared, never auto-posted.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `33701d95-61a7-81f0-acd4-bf8c2b1d3f30` · `71cabd5e-9f67-85f1-9e45-6981cfda88f0` · `f46b1b6e-3072-804c-b332-80a4e669de8e`
+- content uuids `33427c18-8f3d-8981-add0-d5a1489f1f43` · `4435ac92-b481-87d4-865e-f9060d9ef9c5` · `dc1cc150-21db-8e17-8441-2ed2c0716d5a`
+
+## [[entropy]] — gaps · seals
+
+> account code `tax/period/integration` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.7` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `2` eb | Σ seal `11.7` eb |
+
+> net residual `-9.7` eb · seal/gap ratio `5.85` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `tax` · sub-root `94db23f9-1cc9-8309-92c8-a21dfe445e59`
+- partition `tax` · sub-root `ee17b9ab-708d-85b0-b210-7574c7531c53`
 - bond degree `6` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·7 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `6` · sealed `0` · horo `7`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `0`
 
 ## identity
 
-- uuid `f3a21858-8e75-86ff-8eca-57814db01fe0`
+- uuid `f6f13c4b-e93f-84ba-b955-44dc0c05884f`
 - bonds in `2` · out `2`
 - trinity form·code·proof `1`·`1`·`1`
 - links `2` / `2`
@@ -37,8 +139,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `0e4acf5a-2415-859a-8687-0cd0267f6036` · framed by typography partition `tax` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a346e9cc-ba7e-81a4-bdd1-7ca0fbbc832c` · framed by typography partition `tax` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>

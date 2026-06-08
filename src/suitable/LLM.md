@@ -8,10 +8,10 @@ horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·diet·law·merge·sti · exports suitable · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·dangerous·landmarks·memories·stat · ← cohort·dangerous·landmarks·memories·stat
+neighbors → collapse·diet·law·merge·sti · ← collapse·diet·law·merge·sti
 analysis —
 law suitable is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `c202a572-345f-8e01-8714-3409c6d81b6f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `32477f5a-62c1-8e95-bd3b-50ad98cb9963` · `pnpm readme` · `pnpm computed:check`</sub>

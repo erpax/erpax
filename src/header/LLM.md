@@ -4,7 +4,7 @@
 # header
 
 path `header` · uuid `38745e62-d5c2-804a-9777-c475c0d873a9` · diamond `081d2838-fe6b-8dcb-be1d-132117e605f1`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+horo `7` `descent` · trinity `1·1·1` · sealed `0`
 imports — · exports Header·HeaderGlobal · escapes —
 links `5/5` · folded `1` · bonds in `5` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law header is one schema.org word, content-addressed; the same word collides eve
 
 ---
 
-<sub>content-uuid `0e5b0fab-d4fc-8593-901c-3db7f0b6c20e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `dc8d02b5-acca-8a79-a795-abfa5eaeae60` · `pnpm readme` · `pnpm computed:check`</sub>

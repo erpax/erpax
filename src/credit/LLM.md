@@ -3,8 +3,8 @@
 
 # credit
 
-path `credit` · uuid `bd2a38fc-ac8d-8111-b6e2-a09458afb81d` · diamond `079bf821-19ee-826b-969f-0b442d3d9169`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `credit` · uuid `1a6f1795-6816-8ea5-a35f-c9a65eac399f` · diamond `e38e62cc-2ed1-8a5a-bbfe-f2702490ebce`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports bank·card·collapse·law·loan·merge·sti·text·union · exports credit · escapes —
 links `9/9` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law credit is value advanced ahead of payment, so every credit extended is a lia
 
 ---
 
-<sub>content-uuid `2490265b-b967-8058-aa72-5b563026a38b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f60008de-f865-813b-98d0-29f9da17a892` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,8 +3,8 @@
 
 # accepting
 
-path `accepting` · uuid `785a01e2-8e0e-8a54-b60e-42664d3fb240` · diamond `ea015fb6-85d8-8e37-a1e2-60a461a3db72`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `accepting` · uuid `d7c8c3fb-f6d9-80cd-be6e-190d2ff49ffe` · diamond `3ce6ae34-97d3-834d-a32f-c211760a13e4`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·new·patients·sti · exports accepting · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law accepting is one schema.org word, content-addressed; the same word collides 
 
 ---
 
-<sub>content-uuid `e7752990-0605-8ca7-bbb5-abf538d678b8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4b95721b-c317-8ed2-9f57-05475aa84cd1` · `pnpm readme` · `pnpm computed:check`</sub>

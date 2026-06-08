@@ -2,9 +2,11 @@
 
 # field
 
-> atom `base/accounting/field` · horo `8` `crest` · [[balance]] `1` · [[seal]] `0`
+> atom `base/accounting/field` · horo `5` `round` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `base/accounting/field` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,11 +23,61 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `law:every recurring accounting field is built by one factory — currency is amount+code (never a code-baked name), measure is value+unit (blank ⇒ C62) — so the field shape lives in exactly one place ([[dry]]).`
+- `seal:unsealed`
+- `trigger:ISO-4217:2015 currency-codes · UN/CEFACT Rec 20 unit-of-measure-codes`
+- `trigger:Use when a Payload collection needs a shared accounting field — currency, unit-of-measure, measured quantity, status, reference, GL account, country/legal-entity/NACE, audit/timestamp/notes — built from one factory instead of an inlined field literal.`
+- `trigger:every recurring accounting field is built by one factory — currency is amount+code (never a code-baked name), measure is value+unit (blank ⇒ C62) — so the field shape lives in exactly one place ([[dry]]).`
+- `trigger:matter-twin:src/base/accounting/field/index.ts`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `4d2ea94b-d332-8541-99a8-abd8ea47dae1` · `59c23a03-2761-84d8-a45c-58387ded5469` · `d524cb3a-6f92-8fc1-9532-14fe16e56664`
+- content uuids `c77e1d36-de24-8883-8853-360c4efd9ea9` · `d213db2e-8795-8224-a58e-1e1871a07cd3` · `f6b0f024-1ee2-8d60-8703-7b9dde19b7e6`
+
+## [[entropy]] — gaps · seals
+
+> account code `base/accounting/field` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.5` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `2` eb | Σ seal `11.5` eb |
+
+> net residual `-9.5` eb · seal/gap ratio `5.75` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `base` · sub-root `45bd7de8-16bd-841a-bf9e-3f6c7b69a95d`
-- bond degree `27` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- partition `base` · sub-root `843e5166-3208-8af6-9e30-23c546e2de00`
+- bond degree `15` · analysis neighbors —
+- graph root `86252db0-c776-84eb-b8e4-c884dca3a3ba`
 
 ## [[cloudflare]] bindings
 
@@ -57,7 +109,6 @@
 - `ISO 3166-1:2020 country-codes` · banner
 - `ISO-19011` · catalogue
 - `ISO-19011:2018 audit-trail` · banner
-- `ISO-19011:2018 audit-trail registry-traceability` · banner
 - `ISO-3166-1` · catalogue
 - `ISO-4217` · catalogue
 - `ISO-4217:2015 currency-codes` · banner
@@ -69,16 +120,54 @@
 - `UN-CEFACT` · catalogue
 - `UN/CEFACT Recommendation 20 unit-of-measure-codes` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·5 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `27` · sealed `0` · horo `8`
+- bond degree `15` · sealed `0` · horo `5`
 - variance `0` · balanced `1` · trinity sum `3`
-- bindings `0` · standards `35`
+- bindings `0` · standards `34`
 
 ## identity
 
-- uuid `23770393-a143-8c85-adc5-86018040c085`
-- bonds in `9` · out `9`
+- uuid `843e5166-3208-8af6-9e30-23c546e2de00`
+- bonds in `3` · out `3`
 - trinity form·code·proof `1`·`1`·`1`
 - links `6` / `6`
 - folded `1` · escapes `0`
@@ -89,4 +178,4 @@
 
 ---
 
-<sub>content-uuid `f8943cf2-a445-8fbb-ab86-552599133944` · framed by typography partition `base` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0206cd4d-6360-88ad-be2c-af82905c31e9` · framed by typography partition `base` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

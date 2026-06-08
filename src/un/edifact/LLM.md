@@ -3,15 +3,15 @@
 
 # edifact
 
-path `un/edifact` · uuid `91e123cd-32e2-8375-8dd7-45176d697b77` · diamond `73d29aec-c4e4-848b-96f2-4f437dcbd698`
+path `un/edifact` · uuid `91e123cd-32e2-8375-8dd7-45176d697b77` · diamond `52a3caa6-3e3a-8c64-9100-4d3627a794a7`
 horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports — · exports EdifactBGM·EdifactDTM·EdifactDesadv·EdifactIMD·EdifactInterchange·EdifactInvoic·EdifactInvoicLine·EdifactLIN·EdifactMOA·EdifactMessageType·EdifactNAD·EdifactPRI·EdifactPaymul·EdifactQTY·EdifactSyntaxId·EdifactTAX·EdifactUNB·EdifactUNH·EdifactUNT·EdifactUNZ·isBalancedInvoicNet·isEdifactMessageType·isEdifactSyntaxId · escapes —
-links `1/1` · folded `1` · bonds in `4` out `4`
+links `1/1` · folded `1` · bonds in `1` out `1`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → law · ← law
 analysis —
 law this module defines only the semantic segment structure — every message is bracketed by a matching UNH/UNT envelope, and the wire-format serialiser stays out of scope.
 
 ---
 
-<sub>content-uuid `9eff49df-b787-897f-8381-ac23246e0ee2` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0069dc37-6110-8ebb-adb1-5204fdc9440f` · `pnpm readme` · `pnpm computed:check`</sub>

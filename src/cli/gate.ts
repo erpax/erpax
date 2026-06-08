@@ -2,6 +2,7 @@
  * cli/gate — authoritative CI/pre-push gate lanes (confirm:full ⊇ gate).
  */
 import { spawnSync } from 'node:child_process'
+import { inventoryGateWarnings } from '@/agent/inventory'
 import { startProgressHeartbeat } from './progress-heartbeat'
 
 /** Label + shell command. Labels are stable for confirm/matter reporting. */
@@ -26,6 +27,9 @@ export function runShell(cmd: string, passthrough: readonly string[] = [], heart
 }
 
 export function runGate(): number {
+  for (const warn of inventoryGateWarnings()) {
+    console.warn(`⚠ ${warn}`)
+  }
   const total = GATE_LANES.length
   for (let i = 0; i < total; i++) {
     const [label, cmd] = GATE_LANES[i]!

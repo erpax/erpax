@@ -4,7 +4,7 @@
 # held
 
 path `held` · uuid `32219131-bde9-824e-93da-a2faa41a722f` · diamond `b3905898-e937-8532-85e1-757c4dd44522`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+horo `2` `share` · trinity `1·0·0` · sealed `0`
 imports archive·collapse·law·merge·sti · exports held · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law held is one schema.org word, content-addressed; the same word collides every
 
 ---
 
-<sub>content-uuid `0c91d374-3f29-8b44-9846-93da5231a2de` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b8e61fcc-0436-8876-9385-4040d0acdca4` · `pnpm readme` · `pnpm computed:check`</sub>

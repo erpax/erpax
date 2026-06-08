@@ -3,8 +3,8 @@
 
 # chem
 
-path `chem` · uuid `9fce621d-459f-8248-8464-fc9e9c489672` · diamond `785e3730-3a18-85fd-b342-fab21ce75ce4`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `chem` · uuid `8fb72c20-b3f6-879f-bd19-e7b5deeb2a00` · diamond `211be93e-7719-84da-9633-098532c6957d`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports bio·collapse·encoded·encodes·entity·has·interaction·law·merge·part·similarity·sti · exports chem · escapes —
 links `12/12` · folded `1` · bonds in `12` out `12`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law chem is one schema.org word, content-addressed; the same word collides every
 
 ---
 
-<sub>content-uuid `31944475-a220-8d71-8264-1819a1c45bdb` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e1fd826b-7c04-80f5-bd64-51409e0ecb78` · `pnpm readme` · `pnpm computed:check`</sub>

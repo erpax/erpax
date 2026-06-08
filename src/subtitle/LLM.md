@@ -8,10 +8,10 @@ horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·language·law·merge·sti · exports subtitle · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → anatomy·cohort·landmarks·memories·stat · ← anatomy·cohort·landmarks·memories·stat
+neighbors → collapse·language·law·merge·sti · ← collapse·language·law·merge·sti
 analysis —
 law subtitle is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `1e120a02-5692-8470-8ab9-74de518bfa07` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `478d2f2b-7590-8f00-aafd-be2ba4230bbf` · `pnpm readme` · `pnpm computed:check`</sub>

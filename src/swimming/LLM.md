@@ -3,15 +3,15 @@
 
 # swimming
 
-path `swimming` · uuid `9e5c2bc5-1643-8ef7-b217-ef7e3a235451` · diamond `779aa980-91f2-8af0-9f43-d603f5fdcad4`
+path `swimming` · uuid `9e5c2bc5-1643-8ef7-b217-ef7e3a235451` · diamond `ad0f9fc2-fc64-8a98-be19-475521de5d3a`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·pool·public·sti · exports swimming · escapes —
-links `6/6` · folded `1` · bonds in `5` out `5`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → id·spouse·suspended·sustainability·swatch · ← id·spouse·suspended·sustainability·swatch
+neighbors → collapse·law·merge·pool·public·sti · ← collapse·law·merge·pool·public·sti
 analysis —
 law swimming is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `0dbef5d8-41c9-85b0-adc0-a39c62a5c51c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `fe6217bc-3b2c-831e-8dfb-8eb4d76229e5` · `pnpm readme` · `pnpm computed:check`</sub>

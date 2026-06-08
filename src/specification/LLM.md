@@ -3,15 +3,15 @@
 
 # specification
 
-path `specification` · uuid `22fd83b0-6fb3-8447-8a02-93e0f0c3d21a` · diamond `9cf3db12-b018-80d7-9fa2-42f4b5ab94d7`
+path `specification` · uuid `22fd83b0-6fb3-8447-8a02-93e0f0c3d21a` · diamond `55eea168-635c-86ad-8170-3de0d484b030`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports access·action·broadcast·charge·code·collapse·commissions·compound·cost·dated·delivery·engine·exchange·feature·fees·frequency·health·hours·law·location·merge·money·opening·payment·plan·postal·price·property·range·rate·repayment·sharing·size·speakable·special·sti·unit·value · exports specification · escapes —
-links `38/38` · folded `1` · bonds in `2` out `2`
+links `38/38` · folded `1` · bonds in `38` out `38`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → access·action·broadcast·charge·code·collapse·commissions·compound·cost·dated·delivery·engine·exchange·feature·fees·frequency·health·hours·law·location·merge·money·opening·payment·plan·postal·price·property·range·rate·repayment·sharing·size·speakable·special·sti·unit·value · ← access·action·broadcast·charge·code·collapse·commissions·compound·cost·dated·delivery·engine·exchange·feature·fees·frequency·health·hours·law·location·merge·money·opening·payment·plan·postal·price·property·range·rate·repayment·sharing·size·speakable·special·sti·unit·value
 analysis —
 law specification is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `3471b8f8-8b81-8c60-863c-d64ac73b9cb7` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f2aca3f0-b672-8107-a921-bbe843085213` · `pnpm readme` · `pnpm computed:check`</sub>

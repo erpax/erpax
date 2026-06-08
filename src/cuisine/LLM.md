@@ -3,8 +3,8 @@
 
 # cuisine
 
-path `cuisine` · uuid `0fdc2b0f-79fe-88f3-a4ea-8f1f1a566ceb` · diamond `cf4f900d-4fd5-859d-ae73-a1a13b00cb2f`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `cuisine` · uuid `f9f76067-86aa-8ade-8949-e0d5a66ffbae` · diamond `6767fa16-929d-83cc-9330-0308bfae0e0a`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·recipe·serves·sti · exports cuisine · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law cuisine is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `38a8ca8d-f4bc-8443-a11e-a3ccc988e33c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9830525a-8cfa-87d7-8261-ff4d0283e4b1` · `pnpm readme` · `pnpm computed:check`</sub>

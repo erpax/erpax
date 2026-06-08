@@ -2,9 +2,11 @@
 
 # sales
 
-> atom `fiscal/devices/sales` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
+> atom `fiscal/devices/sales` · horo `1` `base` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `fiscal/devices/sales` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,24 +23,128 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `law:every sale receives an immutable, gapless УНП and is frozen on close — there is no delete; a mistake is corrected only by a сторно reversal, and the content-uuid hash makes the closed sale tamper-proof (Наредба Н-18 СУПТО).`
+- `seal:unsealed`
+- `trigger:Use when fiscalizing revenue under Наредба Н-18 СУПТО — each sale receives an immutable gapless УНП, is frozen on close (no delete — corrections via сторно reversals), emits sale:closed event with content-uuid tamper-proof hash, covering orders, subscriptions, invoices and POS. The СУПТО sale register.`
+- `trigger:every sale receives an immutable, gapless УНП and is frozen on close — there is no delete; a mistake is corrected only by a сторно reversal, and the content-uuid hash makes the closed sale tamper-proof (Наредба Н-18 СУПТО).`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `5577a69c-f5b0-8250-905f-4ce72b5ddb28` · `d25e4251-1abd-80cb-b0f2-de4c0015cf91` · `d3cecf3c-c6a6-8180-ac29-fe4ecc52c0f1`
+- content uuids `4c092a28-6dd2-8554-9f05-22078272187c` · `ca5c8bdd-6c16-8c06-8036-8426c6797d2a` · `faba5c15-54af-850b-aa71-b4f00c6a64bf`
+
+## [[entropy]] — gaps · seals
+
+> account code `fiscal/devices/sales` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.1` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `2` eb | Σ seal `11.1` eb |
+
+> net residual `-9.1` eb · seal/gap ratio `5.55` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `fiscal` · sub-root `cf5aa98e-ebac-8e2a-ac4c-50b4ac28b0e6`
-- bond degree `57` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- partition `fiscal` · sub-root `750f5b34-3dbd-8426-a310-55cde4a93bd3`
+- bond degree `37` · analysis neighbors —
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `BG Наредба-Н-18 §СУПТО sale-register · УНП · no-delete · сторно` · banner
+- `IFRS IFRS-15 revenue-from-contracts-with-customers` · banner
+- `Naredba-N-18` · catalogue
+- `SOX §404 internal-controls` · banner
+- `US-GAAP ASC-606 revenue-from-contracts-with-customers` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·1 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `37` · sealed `0` · horo `1`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `5`
 
 ## identity
 
-- uuid `5c839d12-9323-88a8-9458-a3d71964161c`
-- bonds in `17` · out `19`
+- uuid `1bf0cda9-c432-82f7-9ddc-7b5ffc5d4036`
+- bonds in `8` · out `8`
 - trinity form·code·proof `1`·`1`·`1`
 - links `5` / `5`
 - folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `fc2f869b-f6be-8625-8929-76700de88d70` · framed by typography partition `fiscal` bonds `57` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `7bdb4232-9112-8e82-9d17-b98fa29907cd` · framed by typography partition `fiscal` bonds `37` · `pnpm readme` · `pnpm readme:check`</sub>

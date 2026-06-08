@@ -3,8 +3,8 @@
 
 # commitment
 
-path `commitment` · uuid `d4c73766-a114-878e-8227-2a332929f881` · diamond `c21cd6dd-442a-860b-a908-b3e1cceb83b8`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `commitment` · uuid `a0c24652-b165-80d4-bc47-4aaad2bef82b` · diamond `e143cf9b-db56-8726-8c5f-c981086e3f70`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports balance·commitments·legal · exports commitment · escapes —
 links `6/6` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `3448ce5e-28d3-89b9-bc4a-8b9f83cba4fc` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b36dcea4-7558-8202-9fb7-c69eaaa53982` · `pnpm readme` · `pnpm computed:check`</sub>

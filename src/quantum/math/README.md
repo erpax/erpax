@@ -2,7 +2,7 @@
 
 # math
 
-> atom `quantum/math` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
+> atom `quantum/math` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -23,16 +23,70 @@
 
 ## typography graph
 
-- partition `quantum` · sub-root `539df73c-956d-8aae-b36f-47cf0d3aaff7`
-- bond degree `84` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- partition `quantum` · sub-root `752ec37e-713d-87b7-a64c-41cefcda190a`
+- bond degree `55` · analysis neighbors —
+- graph root `767556c1-6cb2-8c6a-8d8b-18641569b2ed`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `composed from @/horo (number root) + @/digit (uuid root); computed` · banner
+- `the digital-root / mod-9 group ([[rodin]]); RFC 9562 §5.8 content-uuid` · banner
+- `the digital-root / mod-9 group (rodin); RFC 9562 §5.8 content-uuid` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·4 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `55` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `3`
 
 ## identity
 
-- uuid `ec8b01d1-80e2-816b-b802-3efdefe60fc9`
-- bonds in `26` · out `27`
+- uuid `c4e7e2f2-ee19-8cb4-9b1e-d798e6a34392`
+- bonds in `12` · out `12`
 - trinity form·code·proof `1`·`1`·`1`
-- links `24` / `24`
+- links `25` / `25`
 - folded `1` · escapes `0`
 
 ## [[seal]]
@@ -41,4 +95,4 @@
 
 ---
 
-<sub>content-uuid `87f288d5-20f2-8db7-8bf5-b775e1ab7a9d` · framed by typography partition `quantum` bonds `84` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ee5ffdc0-17cd-8f6f-bb28-00d7df10593d` · framed by typography partition `quantum` bonds `55` · `pnpm readme` · `pnpm readme:check`</sub>

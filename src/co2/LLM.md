@@ -3,7 +3,7 @@
 
 # co2
 
-path `co2` · uuid `42e64318-8710-834e-9477-84c069c8d7d1` · diamond `20f22175-1af5-8261-b53e-38823dd94588`
+path `co2` · uuid `be85a471-d7c7-8f4d-970f-9e6af8cbb943` · diamond `13906334-5b6d-8eb3-8f8d-205dc226d5fa`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports co2 · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
@@ -14,4 +14,4 @@ law co2 is one schema.org word, content-addressed; the same word collides every 
 
 ---
 
-<sub>content-uuid `3ee40e35-3c8a-848a-9399-3669eca4e761` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `80af726d-b1cc-8672-81ce-69f56ab64f69` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # vein
 
-path `vein` · uuid `2bf1955b-8dd9-8f2e-9502-b836b1ec81a8` · diamond `44a97dd6-ffa6-8936-a821-39f8cf7ea310`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+path `vein` · uuid `c768a6c9-b7da-8704-b1ff-29bb4b8a39ac` · diamond `11ff496f-b478-8a01-bd42-c39cc7dd4052`
+horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports @/conservation·@/horo · exports const·function·interface · escapes —
-links `10/10` · folded `1` · bonds in `3` out `3`
-faces worker·plugin·pwa `0·0·0`
-neighbors → balance·euenergy·vendor · ← balance·euenergy·vendor
+links `10/10` · folded `1` · bonds in `6` out `6`
+faces worker·plugin·pwa `1·0·0`
+neighbors → artery·body·conservation·heart·law·receipt · ← artery·body·conservation·heart·law·receipt
 analysis —
 law the vein is the one-way return — valves forbid backflow (the append-only ratchet), it holds ~70% of the volume (the capacitance reservoir), and with the artery it closes the reciprocal loop (every outbound link has its return, conserved).
 
 ---
 
-<sub>content-uuid `4a2ae913-ee88-807e-b52c-e751a007f4e1` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8aa3cb4e-0772-8a0f-be55-55ae6bc428f8` · `pnpm readme` · `pnpm computed:check`</sub>

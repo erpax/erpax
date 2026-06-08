@@ -2,7 +2,7 @@
 
 # cook
 
-> atom `cook` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
+> atom `cook` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -21,9 +21,9 @@
 
 ## typography graph
 
-- partition `cook` · sub-root `e4a175fc-8e46-8fdd-8efe-fbbf909e2a4c`
+- partition `cook` · sub-root `cb22e9b2-d37c-87d6-8708-b40385bed5b4`
 - bond degree `19` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -33,15 +33,53 @@
 
 - `schema.org — the type vocabulary, collided to single words` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·7 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `19` · sealed `1` · horo `1`
+- bond degree `19` · sealed `1` · horo `7`
 - variance `0` · balanced `1` · trinity sum `1`
 - bindings `0` · standards `1`
 
 ## identity
 
-- uuid `e4a175fc-8e46-8fdd-8efe-fbbf909e2a4c`
+- uuid `cb22e9b2-d37c-87d6-8708-b40385bed5b4`
 - bonds in `6` · out `6`
 - trinity form·code·proof `1`·`0`·`0`
 - links `6` / `6`
@@ -53,4 +91,4 @@
 
 ---
 
-<sub>content-uuid `68063a6b-6546-8791-867f-1bea1ef1e91b` · framed by typography partition `cook` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `22d25597-6093-8e53-a43b-44177434e541` · framed by typography partition `cook` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>

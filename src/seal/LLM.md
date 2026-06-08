@@ -3,15 +3,15 @@
 
 # seal
 
-path `seal` · uuid `b2f34d53-f985-8a70-95e5-7ffa287bab52` · diamond `aaedd1c2-63a3-8a11-bfc8-3a7fa2627cb9`
-horo `4` `weave` · trinity `1·1·1` · sealed `1`
-imports @/guardian · exports function·interface · escapes —
-links `23/23` · folded `1` · bonds in `28` out `27`
+path `seal` · uuid `19a6e79a-4941-8436-ad95-1156a3d8bfac` · diamond `5cc493f2-a6ca-867e-a4c0-61d81d9e814d`
+horo `8` `crest` · trinity `1·1·1` · sealed `1`
+imports @/diamond·@/guardian·@/horo·@/path·@/uuid/matrix · exports assertEveryPathFollowed·followEveryPath·function·interface·pathWalkCoverage·type · escapes —
+links `25/25` · folded `1` · bonds in `37` out `37`
 faces worker·plugin·pwa `1·0·0`
-neighbors → blockchain·breath·confirm·cost·covenant·css·diamond·gate·guardian·hallucination·identity·innovation·law·memory·merge·payload·primitive·purity·quantum·readme·reference·ritual·secret·stream·thought·typography·uuid · ← blockchain·breath·confirm·cost·covenant·css·diamond·gate·guardian·hallucination·identity·innovation·law·memory·memory·merge·payload·primitive·purity·quantum·readme·reference·ritual·secret·stream·thought·typography·uuid
+neighbors → architecture·blockchain·breath·comms·confirm·cost·cost·covenant·css·diamond·folder·gate·guardian·hallucination·identity·industry·innovation·law·memory·memory·merge·payload·pivot·primitive·purity·quantum·readme·reference·ritual·secret·session·society·stream·thought·typography·uuid·uuid · ← architecture·blockchain·breath·comms·confirm·cost·cost·covenant·css·diamond·folder·gate·guardian·hallucination·identity·industry·innovation·law·memory·memory·merge·payload·pivot·primitive·purity·quantum·readme·reference·ritual·secret·session·society·stream·thought·typography·uuid·uuid
 analysis purity
-law all is passed with uuids without [[payload]] — `pnpm confirm:uuid` crosses uuid-pure guardians (aura · folders · imports · readme · boundary · diamond · typography) without loading Payload; the seal is substrate-independent.
+law a finished idea is a sealed diamond crossed in ALL directions — `finishedIdeaCrossed(model)` holds iff verifyDiamond is sealed AND every axis crosses: path (ancestor propagation) · matrix parent/prev/next (`verifyBind`, ≥2 crosses, reciprocal bonds) · trinity complete (form·code·proof) · horo on-ring · deployment faces · 2D partition plane (`coordinateAddress`). Unfinished ideas are not saved.
 
 ---
 
-<sub>content-uuid `66820e2f-a0bf-8055-ab78-d23bbf7a2a82` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `cc85068a-0f71-8fd9-8e0d-cfae61792c83` · `pnpm readme` · `pnpm computed:check`</sub>

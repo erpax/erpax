@@ -3,15 +3,15 @@
 
 # step
 
-path `step` · uuid `a0e774e2-cf5b-87ae-9ffb-7660099849e7` · diamond `2fc2dce1-383e-8291-a518-2afa6bb4c867`
+path `step` · uuid `a0e774e2-cf5b-87ae-9ffb-7660099849e7` · diamond `2f0283c5-7ea1-8031-bc77-301ddc95eff1`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports answer·breath·command·concatenate·how·law·question·value·workflow · exports step · escapes —
-links `9/9` · folded `1` · bonds in `4` out `4`
+links `9/9` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → answer·breath·command·concatenate·how·law·mala·question·value·workflow · ← answer·breath·command·concatenate·how·law·mala·question·value·workflow
 analysis —
 law step is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `6f6c7eb4-d517-8e98-8c30-9580f59219a4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ea05b2d3-80a2-8a52-a054-e8c1d5ed537a` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -2,9 +2,11 @@
 
 # dom
 
-> atom `can/use/dom` · horo `1` `base` · [[balance]] `1` · [[seal]] `0`
+> atom `can/use/dom` · horo `2` `share` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `can/use/dom` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,11 +23,60 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `law:branch on DOM availability through this one guard — never poke `window` or `document` directly — so browser-only work is inert on the server.`
+- `seal:unsealed`
+- `trigger:Use when code must branch on whether a real browser DOM is available — a default boolean that is true only when window, window.document and document.createElement all exist, guarding browser-only work on the server or in non-DOM runtimes.`
+- `trigger:branch on DOM availability through this one guard — never poke `window` or `document` directly — so browser-only work is inert on the server.`
+- `trigger:matter-twin:src/can/use/dom/index.ts`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `0fe6861c-1bca-8040-8140-4ba6b3a2ed2e` · `ba18ee8e-c4f2-826e-a482-2286de504720` · `d4750e2d-0c5b-8f74-a3f6-abf642b38f34`
+- content uuids `1034849b-c643-8eae-a119-bb6b6e08e671` · `17f2c0df-521c-819e-9faf-98ae82fd815c` · `c2256e19-f857-8771-83cb-c0f82761b938`
+
+## [[entropy]] — gaps · seals
+
+> account code `can/use/dom` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.2` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `2` eb | Σ seal `11.2` eb |
+
+> net residual `-9.2` eb · seal/gap ratio `5.6` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `can` · sub-root `2180c717-8b06-8a97-a587-5719462f670f`
+- partition `can` · sub-root `d50f3213-e216-829c-b78b-7eab97194fcf`
 - bond degree `3` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
 
 ## [[cloudflare]] bindings
 
@@ -35,15 +86,53 @@
 
 —
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·2 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `3` · sealed `0` · horo `1`
+- bond degree `3` · sealed `0` · horo `2`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `0`
 
 ## identity
 
-- uuid `2180c717-8b06-8a97-a587-5719462f670f`
+- uuid `06d96242-c7e9-8efd-9105-965595e70440`
 - bonds in `1` · out `1`
 - trinity form·code·proof `1`·`1`·`1`
 - links `1` / `1`
@@ -55,4 +144,4 @@
 
 ---
 
-<sub>content-uuid `c91538dd-0b29-83cd-99ac-2f0198c67cdf` · framed by typography partition `can` bonds `3` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c8f0122c-f15d-8ad5-879a-18da31e18117` · framed by typography partition `can` bonds `3` · `pnpm readme` · `pnpm readme:check`</sub>

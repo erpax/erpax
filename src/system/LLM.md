@@ -3,15 +3,15 @@
 
 # system
 
-path `system` · uuid `638f38cb-d832-88f8-9c74-9df87732e7bf` · diamond `c7eb1307-8fd3-8e94-957a-b5394c37d689`
+path `system` · uuid `638f38cb-d832-88f8-9c74-9df87732e7bf` · diamond `35ab58a4-0ea8-8371-b128-edab056e744f`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports anatomical·coding·collapse·enumeration·law·library·medicine·merge·operating·part·size·sti·wearable · exports system · escapes —
-links `13/13` · folded `1` · bonds in `20` out `20`
+links `13/13` · folded `1` · bonds in `13` out `13`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·added·cup·customer·decompression·earned·fertility·findings·girls·id·inactive·invite·issue·landmarks·partial·quote·spouse·suite·tags·tour · ← accounting·added·cup·customer·decompression·earned·fertility·findings·girls·id·inactive·invite·issue·landmarks·partial·quote·spouse·suite·tags·tour
+neighbors → anatomical·coding·collapse·enumeration·law·library·medicine·merge·operating·part·size·sti·wearable · ← anatomical·coding·collapse·enumeration·law·library·medicine·merge·operating·part·size·sti·wearable
 analysis —
 law system is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `ff3ce1dc-f1f7-8d64-a87d-5e59263a6aee` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f63174a5-21c7-88db-9ce8-069868d99b2a` · `pnpm readme` · `pnpm computed:check`</sub>

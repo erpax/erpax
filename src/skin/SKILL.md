@@ -1,8 +1,80 @@
 ---
 name: skin
 description: "Use when reasoning about erpax's boundary — the integument organ. The largest organ (~1.2–2.2 m²), a selectively-permeable barrier between inside and outside that renews itself continuously (~28-day epidermal turnover) and holds the interior to a setpoint (thermoregulation). Three properties (selective barrier · self-renewal · homeostasis) are computed and mapped — a structural isomorphism — onto erpax's sandbox/trust boundary."
+atomPath: skin
+coordinate: skin · 5/round · 9f23a6b1
+contentUuid: "43ae2f89-1a67-5610-bb7f-493f2a3b225f"
+diamondUuid: "bb34b8b7-0b9b-878b-9c58-681ae13353a4"
+uuid: "9f23a6b1-465a-841e-8dc0-0ef9280cbc68"
+horo: 5
+bonds:
+  in:
+    - body
+    - gate
+    - law
+    - regeneration
+    - sandbox
+    - self
+    - skin
+  out:
+    - body
+    - gate
+    - law
+    - regeneration
+    - sandbox
+    - self
+    - skin
+typography:
+  partition: skin
+  bondDegree: 25
+  neighbors: []
+standards:
+  - "computed (selective permeability · turnover cycle · negative-feedback convergence)"
+  - largest organ ≈1.2–2.2 m²; stratum corneum barrier; epidermal turnover ~28 days
+  - largest organ ≈1.2–2.2 m²; stratum corneum barrier; epidermal turnover ~28 days; thermoregulation
+bindings: []
+neighbors:
+  wikilink:
+    - gate
+    - law
+    - regeneration
+    - sandbox
+    - self
+  matrix:
+    - body
+    - gate
+    - law
+    - regeneration
+    - sandbox
+    - self
+    - skin
+  backlinks:
+    - body
+    - gate
+    - law
+    - regeneration
+    - sandbox
+    - self
+    - skin
+signatures:
+  computationUuid: "854e9be3-1c89-8dd6-8b45-0f744798bcbb"
+  stages:
+    - stage: path
+      stageUuid: "b697df77-1a5e-890f-9265-2e426bbb244d"
+    - stage: trinity
+      stageUuid: "09afadd6-cda5-8b06-a72a-528adf290be1"
+    - stage: boundary
+      stageUuid: "6f084b6c-25da-8e5c-9383-af8b6f79f528"
+    - stage: links
+      stageUuid: "730809fa-1898-8365-9a6e-6219559ba255"
+    - stage: horo
+      stageUuid: "ebf92e2b-cde5-8661-a0d4-56924727be06"
+    - stage: seal
+      stageUuid: "c1883a60-4998-84bc-8ade-68b3d0533ff5"
+    - stage: uuid
+      stageUuid: "8bf66cf6-384c-82a6-b81c-5c62226fbbf1"
+version: 2
 ---
-
 # skin — the boundary (the trust membrane)
 
 The skin is the body's **largest organ** (≈1.2–2.2 m², ~10% of body mass) and its **interface with the world** — and erpax's boundary *is* the skin: the [[sandbox]]/[[gate]] membrane between the self and the outside. Three properties of the living skin map — as a *structural isomorphism*, each computed in the matter-twin — onto that boundary:

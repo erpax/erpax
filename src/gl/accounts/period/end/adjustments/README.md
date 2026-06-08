@@ -2,9 +2,11 @@
 
 # adjustments
 
-> atom `gl/accounts/period/end/adjustments` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
+> atom `gl/accounts/period/end/adjustments` · horo `2` `share` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `gl/accounts/period/end/adjustments` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -19,26 +21,128 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
+
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+- `gap:stray:[[gap]]/[[diamond]]/stray/hooks/`
+
+### collapse
+
+- `balance:variance=1`
+- `law:period-end adjustments are the accrual-basis entries (depreciation, accruals, deferrals, allowances) that align the period to the framework — segregation-gated on approval and auto-posted to the GL on status change.`
+- `seal:unsealed`
+- `trigger:Use when posting or reviewing period-end adjusting entries — depreciation, interest accrual, salary accrual, deferred income, allowance — with segregation-of-duties approval and automatic GL posting on status change. The period-end-adjustments accrual collection.`
+- `trigger:period-end adjustments are the accrual-basis entries (depreciation, accruals, deferrals, allowances) that align the period to the framework — segregation-gated on approval and auto-posted to the GL on status change.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `2a202eaa-5e98-8197-9ec0-fdaa925ff550` · `bb182ad7-0bba-882d-a4e5-25d2d2785b1a` · `be95173f-fd86-8e13-a60a-f39c745c1d3d` · `f68f9253-2de0-8854-b7b2-e28d8554e2f3`
+- content uuids `043c480c-c889-84af-b430-3817298a3303` · `1e3da491-85ed-8a78-9776-229460c4b535` · `22db98ba-4c47-8e2b-b42b-95ae43b1626d` · `f3225232-553b-8862-97de-172e85e19b78`
+
+## [[entropy]] — gaps · seals
+
+> account code `gl/accounts/period/end/adjustments` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[diamond]]/stray/hooks/ `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.2` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+| Σ gap `3` eb | Σ seal `8.2` eb |
+
+> net residual `-5.2` eb · seal/gap ratio `2.733` · [[entropy]] · [[seal]]
 
 ## typography graph
 
-- partition `gl` · sub-root `39b5ff82-5c79-838f-86f8-aeacb304fdf3`
-- bond degree `70` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- partition `gl` · sub-root `966861c1-a32f-8ea4-b6bc-4e2bf862678d`
+- bond degree `0` · analysis neighbors —
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `IFRS IAS-1 presentation-of-financial-statements` · banner
+- `IFRS IAS-8 accounting-policies-changes-and-errors` · banner
+- `ISO-8601-1:2019 date-time period posted-at` · banner
+- `SOX §404 internal-controls` · banner
+- `US-GAAP ASC-250 accounting-changes-and-error-corrections` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unbalanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| not-held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·2 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `0` · sealed `0` · horo `2`
+- variance `1` · balanced `0` · trinity sum `3`
+- bindings `0` · standards `5`
 
 ## identity
 
-- uuid `5727c556-3390-885f-864c-8023b4811026`
-- bonds in `18` · out `25`
+- uuid `4db77e37-8661-877e-807d-a89077c551b6`
+- bonds in `7` · out `7`
 - trinity form·code·proof `1`·`1`·`1`
 - links `4` / `4`
 - folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `e5aa9476-fab5-88e4-95ef-52ff40ef2152` · framed by typography partition `gl` bonds `70` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `6d185b06-3648-8449-b87e-296529aa3d57` · framed by typography partition `gl` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

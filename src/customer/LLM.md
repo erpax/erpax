@@ -3,7 +3,7 @@
 
 # customer
 
-path `customer` · uuid `e0dbd1c3-3c3d-8ad3-9bed-a6d548231fe7` · diamond `5db5e6f2-f305-8bd5-bca9-903db302b044`
+path `customer` · uuid `d37d5a1d-f27b-8a89-82e1-89c44363b88a` · diamond `55bb482c-1eb6-80ff-a086-c76e80fa0c15`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports amount·eligible·fees·label·law·remorse·return·shipping·source·type · exports customer · escapes —
 links `10/10` · folded `1` · bonds in `10` out `10`
@@ -14,4 +14,4 @@ law customer is one schema.org word, content-addressed; the same word collides e
 
 ---
 
-<sub>content-uuid `dec2103f-6c8b-8fcc-b502-d0e78a705282` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b06f2d44-e900-8e73-b016-54e340b8c24b` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -23,7 +23,21 @@
 
 - partition `music` · sub-root `88870852-ae4f-81ca-8e57-2142ac0569fe`
 - bond degree `88` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `88` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `4e226cf9-928d-8d31-a399-232dc81e1eb7` · framed by typography partition `music` bonds `88` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `058d129b-9e3c-8acb-a951-7c6e76e09236` · framed by typography partition `music` bonds `88` · `pnpm readme` · `pnpm readme:check`</sub>

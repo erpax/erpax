@@ -2,9 +2,11 @@
 
 # commissions
 
-> atom `employees/sales/commissions` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
+> atom `employees/sales/commissions` · horo `4` `weave` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `employees/sales/commissions` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,11 +23,58 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+
+### collapse
+
+- `balance:conserved`
+- `law:every closed-won commission is an IFRS-15 §91-94 incremental cost double-entry [[accounting]]ed — capitalise-and-amortise or immediately expensed by the same rule, clawbacks reversed not erased.`
+- `seal:unsealed`
+- `trigger:Use when recording and accounting for salesperson commissions on closed-won deals — IFRS-15 §91-94 incremental-cost-of-obtaining assessment, capitalise-and-amortise vs immediate-expense treatment, clawback provisions, payroll payment linkage. The IFRS-15 commission register.`
+- `trigger:every closed-won commission is an IFRS-15 §91-94 incremental cost double-entry [[accounting]]ed — capitalise-and-amortise or immediately expensed by the same rule, clawbacks reversed not erased.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `d3dfabd3-ed2b-8989-b410-db371a173229` · `d7ac392a-254c-866f-a5d7-cc3d17d8a287`
+- content uuids `807b3b13-9da3-89ce-8e33-c6243262622d` · `866b24ce-8716-84fe-8e73-51d8f8ea04ee`
+
+## [[entropy]] — gaps · seals
+
+> account code `employees/sales/commissions` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.4` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `1` eb | Σ seal `11.4` eb |
+
+> net residual `-10.4` eb · seal/gap ratio `11.4` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `employees` · sub-root `b4e809aa-fd27-86f6-90b9-75ec1197d4f1`
+- partition `employees` · sub-root `44323281-3d17-8530-94e1-e2b6734dac06`
 - bond degree `33` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
 
 ## [[cloudflare]] bindings
 
@@ -35,21 +84,58 @@
 
 - `IFRS IFRS-15 §91 §92 §93 §94 incremental-costs-of-obtaining` · banner
 - `IFRS IFRS-15 §99 §103 §104 §105 §106 amortisation` · banner
-- `ISO-19011:2018 audit-trail commission-evidence` · banner
 - `ISO-4217:2015 currency-codes` · banner
 - `ISO-8601-1:2019 date-time` · banner
 - `SOX §404 internal-controls commission-completeness` · banner
 - `US-GAAP ASC-340-40-25-1 incremental-costs` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·4 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `33` · sealed `1` · horo `1`
+- bond degree `33` · sealed `0` · horo `4`
 - variance `0` · balanced `1` · trinity sum `3`
-- bindings `0` · standards `7`
+- bindings `0` · standards `6`
 
 ## identity
 
-- uuid `dac96b0b-5fd5-8b67-8bf7-58aeef2f9d24`
+- uuid `f4396700-7fcd-8393-a501-47af5dd169cb`
 - bonds in `11` · out `11`
 - trinity form·code·proof `1`·`1`·`1`
 - links `7` / `7`
@@ -57,8 +143,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `75f550b9-2a10-8ef1-9052-e35a5e35d20b` · framed by typography partition `employees` bonds `33` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f4e0439d-09bd-8bf5-85ad-5baad781a7ee` · framed by typography partition `employees` bonds `33` · `pnpm readme` · `pnpm readme:check`</sub>

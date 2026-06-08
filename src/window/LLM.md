@@ -3,15 +3,15 @@
 
 # window
 
-path `window` · uuid `8566a26e-a9c1-81e5-89b4-d1a0940be887` · diamond `aa88e384-11bc-8110-8bc4-88f11b9d8190`
+path `window` · uuid `8566a26e-a9c1-81e5-89b4-d1a0940be887` · diamond `71de282f-bea7-8a11-8aba-7d85c3e137e0`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports window · escapes —
-links `4/4` · folded `1` · bonds in `15` out `15`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·backlog·colleagues·deferral·fertility·holographic·homeopathic·id·landmarks·previous·progression·rootstock·spouse·width·winery · ← access·backlog·colleagues·deferral·fertility·holographic·homeopathic·id·landmarks·previous·progression·rootstock·spouse·width·winery
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law window is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `4a93b25e-5eb3-8b38-b6dd-e2405435e035` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9be8cf27-a882-846b-ae59-a8be8f6df7be` · `pnpm readme` · `pnpm computed:check`</sub>

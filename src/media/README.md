@@ -2,7 +2,7 @@
 
 # media
 
-> atom `media` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `media` · horo `7` `descent` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -19,13 +19,41 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `6` · [[conservation]] `0` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `media` · sub-root `a1c1ad6f-08f5-8c32-bcee-7d006a1c377c`
-- bond degree `93` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- bond degree `0` · analysis neighbors —
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `6838 mime-type media-type` · banner
+- `GDPR Art.32 security-of-processing` · banner
+- `GDPR Art.5(1)(c) data-minimization no-pii-in-filenames` · banner
+- `GS1-GTIN` · catalogue
+- `ILO-C105` · catalogue
+- `ISA-500` · catalogue
+- `ISO-9362` · catalogue
+- `ISO/IEC-10918` · catalogue
+- `ISO/IEC-10918 jpeg` · banner
+- `ISO/IEC-23008 high-efficiency-coding` · banner
+- `PCAOB-AS-1105` · catalogue
+- `UN-CEFACT` · catalogue
+- `UNSPSC` · catalogue
+- `W3C PNG image` · banner
+- `W3C SVG` · banner
+
+## analytics
+
+- bond degree `0` · sealed `0` · horo `7`
+- variance `6` · balanced `0` · trinity sum `3`
+- bindings `0` · standards `15`
 
 ## identity
 
@@ -37,8 +65,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `bbb2f482-f3de-8132-9ca2-b2d9fb4ddbaa` · framed by typography partition `media` bonds `93` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `07a2c61e-5dc2-85b0-8c92-c9cf556ba9a1` · framed by typography partition `media` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

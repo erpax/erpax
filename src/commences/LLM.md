@@ -3,7 +3,7 @@
 
 # commences
 
-path `commences` · uuid `08cc1975-6ba3-8f09-ac04-df3207fa51e7` · diamond `75124942-2009-8170-8103-7be912e902c7`
+path `commences` · uuid `b0e3fe55-4386-89ee-ac9e-983fcc7e2ef5` · diamond `d0089b56-4955-87e8-8f62-acb075d04427`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·legislation·merge·sti · exports commences · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
@@ -14,4 +14,4 @@ law commences is one schema.org word, content-addressed; the same word collides 
 
 ---
 
-<sub>content-uuid `aa1c3972-0aa6-8e9c-b90a-066383bd07b0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f6dce020-2f17-84a5-87ce-07a2e43b6a68` · `pnpm readme` · `pnpm computed:check`</sub>

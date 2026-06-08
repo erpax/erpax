@@ -23,7 +23,21 @@
 
 - partition `obstetric` · sub-root `b7e9cc77-876a-8344-b3a1-740619678e4b`
 - bond degree `12` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `12` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `a37689f7-4526-88e4-b249-572af370f167` · framed by typography partition `obstetric` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `4c4b022b-853f-8980-9a6b-f900592fc398` · framed by typography partition `obstetric` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

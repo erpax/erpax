@@ -23,7 +23,7 @@
 
 - partition `endocrine` · sub-root `754c79b9-f304-8632-800b-5421cc280807`
 - bond degree `12` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `7e40bf52-aefc-8457-a225-0187dead731f` · framed by typography partition `endocrine` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `68d83ab6-836d-8323-9515-bbaa00dba52b` · framed by typography partition `endocrine` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

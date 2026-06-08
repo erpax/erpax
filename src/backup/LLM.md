@@ -3,8 +3,8 @@
 
 # backup
 
-path `backup` · uuid `02546dfa-a699-831e-9bb3-6d537d2dcceb` · diamond `5450dda2-f8ea-8561-bf04-c1dd836002a7`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `backup` · uuid `7e61aef7-6b82-8df9-889f-920e50048ff0` · diamond `47d79b66-2d65-8545-a287-5d8073214e70`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports database·deploy·law · exports backup · escapes —
 links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law data recovery is guaranteed by a tested strategy (full/incremental/different
 
 ---
 
-<sub>content-uuid `c5f0eabc-c918-8003-b296-58f42b7c4405` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `53ed9ede-0be6-8d94-94d7-d6ab6fc09593` · `pnpm readme` · `pnpm computed:check`</sub>

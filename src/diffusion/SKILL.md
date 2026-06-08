@@ -1,8 +1,124 @@
 ---
 name: diffusion
 description: "Use when reasoning about HOW a small market becomes big over time — the time-axis the static market product is missing. Adoption spreads as a contagion (Bass: rate = (p + q·F)·(1−F)·m; word-of-mouth q≈0.38 far exceeds advertising p≈0.03), filling the adopter sequence innovators → early-adopters → majority → laggards. Trendsetters are the seed the imitation engine amplifies; the chasm is where that engine stalls and most small markets stay small."
+atomPath: diffusion
+coordinate: diffusion · 8/crest · da56f2b1
+contentUuid: "199c9bc6-376c-5752-abe8-112953ef4995"
+diamondUuid: "8e3302f2-086f-8650-9f4f-40a2ec34ca5e"
+uuid: "da56f2b1-934c-8a36-a3c0-e83de9fe31f9"
+horo: 8
+bonds:
+  in:
+    - awareness
+    - bottleneck
+    - breath
+    - cohort
+    - desire
+    - distribution
+    - friction
+    - habit
+    - market
+    - network
+    - power
+    - proof
+    - segment
+    - signal
+    - status
+    - trend
+  out:
+    - awareness
+    - bottleneck
+    - breath
+    - cohort
+    - desire
+    - distribution
+    - friction
+    - habit
+    - market
+    - network
+    - power
+    - proof
+    - segment
+    - signal
+    - status
+    - trend
+typography:
+  partition: diffusion
+  bondDegree: 50
+  neighbors: []
+standards: []
+bindings: []
+neighbors:
+  wikilink:
+    - awareness
+    - bottleneck
+    - breath
+    - cohort
+    - desire
+    - distribution
+    - friction
+    - habit
+    - market
+    - network
+    - power
+    - proof
+    - segment
+    - signal
+    - status
+    - trend
+  matrix:
+    - awareness
+    - bottleneck
+    - breath
+    - cohort
+    - desire
+    - distribution
+    - friction
+    - habit
+    - market
+    - network
+    - power
+    - proof
+    - segment
+    - signal
+    - status
+    - trend
+  backlinks:
+    - awareness
+    - bottleneck
+    - breath
+    - cohort
+    - desire
+    - distribution
+    - friction
+    - habit
+    - market
+    - network
+    - power
+    - proof
+    - segment
+    - signal
+    - status
+    - trend
+signatures:
+  computationUuid: "48c48660-9f83-8551-9cb7-e7c625447cdd"
+  stages:
+    - stage: path
+      stageUuid: "ffb36692-907c-8eb6-9063-d922328772cd"
+    - stage: trinity
+      stageUuid: "8d2dd7ed-42ae-8626-9aaf-ad56c731455f"
+    - stage: boundary
+      stageUuid: "6290dadf-8fea-8d47-a215-1dc5bc8bc11d"
+    - stage: links
+      stageUuid: "80ad7b96-be63-8c3a-a009-feafb5795db4"
+    - stage: horo
+      stageUuid: "b141dc53-a10b-8806-b23e-18f0239a77b0"
+    - stage: seal
+      stageUuid: "35d1a57e-b015-8b48-9190-47e770e9677c"
+    - stage: uuid
+      stageUuid: "ed886144-214e-82e5-8d76-f8bbc6d4dd62"
+version: 2
 ---
-
 # diffusion — how a market fills over time (the dynamic the product law is missing)
 
 [[market]] is a *snapshot* — the product of atoms at one instant. **diffusion** is its **time axis**: how a small market becomes big, or stalls and dies. A market does not fill uniformly; it fills as a **contagion**, each adopter lowering the [[awareness]] and [[proof]] cost for the next.

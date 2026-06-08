@@ -23,7 +23,21 @@
 
 - partition `market` · sub-root `9d1eccfe-a2a2-8f17-83fc-e2607e6559c5`
 - bond degree `94` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `94` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `e4d0921e-0997-8b69-be85-07fa57aeac88` · framed by typography partition `market` bonds `94` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `522c9e44-eb71-86ed-a299-2094f4191c3f` · framed by typography partition `market` bonds `94` · `pnpm readme` · `pnpm readme:check`</sub>

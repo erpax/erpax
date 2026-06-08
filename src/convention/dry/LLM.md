@@ -3,15 +3,15 @@
 
 # dry
 
-path `convention/dry` · uuid `b3969ad6-693e-86f7-8880-5820114900f8` · diamond `dfcc2e33-e50d-875c-afb2-74fecd9b2330`
-horo `5` `round` · trinity `1·1·1` · sealed `1`
+path `convention/dry` · uuid `e91f73bb-3172-808a-ba33-bcd0fbd3ab0a` · diamond `27885498-b213-8cc3-aa4e-8b3e37eea214`
+horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports @/dry·@/uuid/matrix · exports function · escapes —
-links `14/14` · folded `1` · bonds in `35` out `37`
+links `14/14` · folded `1` · bonds in `33` out `33`
 faces worker·plugin·pwa `1·0·0`
-neighbors → analytics·calculator·cleaning·collapse·collapse·collide·collider·command·complete·concatenate·convention·cost·dry·entropy·expand·field·fusion·gravity·laundry·law·law·lawful·math·matrix·merge·merge·migrate·op·quaternary·reactor·singularity·sti·strength·tamper·test·uuid·vocabulary · ← analytics·calculator·cleaning·collapse·collide·collider·command·complete·concatenate·convention·cost·dry·entropy·expand·field·fusion·gravity·gravity·laundry·law·lawful·math·matrix·merge·migrate·op·quaternary·reactor·singularity·sti·strength·tamper·test·uuid·vocabulary
+neighbors → analytics·calculator·cleaning·collapse·collide·collider·command·complete·concatenate·convention·dry·entropy·expand·field·fusion·gravity·gravity·laundry·law·lawful·math·merge·merge·migrate·op·quaternary·reactor·singularity·sti·strength·tamper·test·vocabulary · ← analytics·calculator·cleaning·collapse·collide·collider·command·complete·concatenate·convention·dry·entropy·expand·field·fusion·gravity·gravity·laundry·law·lawful·math·merge·merge·migrate·op·quaternary·reactor·singularity·sti·strength·tamper·test·vocabulary
 analysis —
 law no duplication — every reference folded to one source; the corpus is DRY iff coverage = atoms / (atoms + residue) = 1, and any residue is duplication driving tamper-cost below infinity.
 
 ---
 
-<sub>content-uuid `2a40d458-9e54-88d3-870c-e82c09e9c810` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7f070cf0-a732-89ad-a456-8a60f6892806` · `pnpm readme` · `pnpm computed:check`</sub>

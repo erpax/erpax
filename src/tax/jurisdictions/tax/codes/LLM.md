@@ -3,15 +3,15 @@
 
 # codes
 
-path `tax/jurisdictions/tax/codes` · uuid `61490b20-da15-8a4b-9e23-8359c4e651a5` · diamond `d0320b37-457e-8045-8f9f-0a383a4b5ffd`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+path `tax/jurisdictions/tax/codes` · uuid `43e28114-41f4-81ed-a485-7a55732b565c` · diamond `e12f1f99-1bbe-8732-a1ea-6242ec69303e`
+horo `2` `share` · trinity `1·1·1` · sealed `0`
 imports @/audit/trail/after/change·@/auth·@/auto/populate/tenant·@/base/accounting/field·@/un/cefact/5305 · exports const · escapes —
-links `5/5` · folded `1` · bonds in `7` out `7`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → 16·cohort·landmarks·may·measurement·memories·stat · ← 16·cohort·landmarks·may·measurement·memories·stat
+neighbors → accounting·identity·jurisdictions·proof·standard · ← accounting·identity·jurisdictions·proof·standard
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `796c90d6-36c1-8f63-9bc0-2dbd166ae9de` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5038872f-e175-8e02-9205-29e7d8ce0a38` · `pnpm readme` · `pnpm computed:check`</sub>

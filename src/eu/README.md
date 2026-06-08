@@ -2,7 +2,7 @@
 
 # eu
 
-> atom `eu` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
+> atom `eu` · horo `1` `base` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -17,13 +17,44 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `7` | Σ `7` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `2` · [[conservation]] `0` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `eu` · sub-root `eecedda0-dfbe-8981-8981-b15910f59ecc`
-- bond degree `27` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- bond degree `0` · analysis neighbors —
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `EU-2022/1925` · catalogue
+- `EU-2022/2065` · catalogue
+- `EU-2022/2554` · catalogue
+- `EU-2022/2555` · catalogue
+- `EU-2022/868` · catalogue
+- `EU-2024/1183` · catalogue
+- `EU-2024/1620` · catalogue
+- `EU-2024/1624` · catalogue
+- `EU-AI-Act` · catalogue
+- `EU-CSDDD-2024/1760` · catalogue
+- `EU-CSRD` · catalogue
+- `EU-ESRS` · catalogue
+- `GHG-Protocol` · catalogue
+- `ISO/IEC-23894` · catalogue
+- `ISO/IEC-42001` · catalogue
+- `NIST-AI-RMF` · catalogue
+- `schema.org — the type vocabulary, collided to single words` · banner
+- `XBRL` · catalogue
+
+## analytics
+
+- bond degree `0` · sealed `0` · horo `1`
+- variance `2` · balanced `0` · trinity sum `1`
+- bindings `0` · standards `18`
 
 ## identity
 
@@ -35,8 +66,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `1f04baf6-74a2-81fa-a662-46ca42db2b98` · framed by typography partition `eu` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `7c3cbd32-0e80-8f08-9489-51abb5868f9c` · framed by typography partition `eu` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

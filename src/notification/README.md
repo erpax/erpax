@@ -2,7 +2,7 @@
 
 # notification
 
-> atom `notification` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `notification` · horo `7` `descent` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -19,13 +19,31 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `notification` · sub-root `d1730275-6194-8ffa-a643-62b5509a207d`
-- bond degree `30` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- bond degree `0` · analysis neighbors —
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `GDPR Art.7 transactional-email-consent` · banner
+- `ISO-19011:2018 audit-trail notification-evidence` · banner
+- `rfc-2616 §14.10 https-keep-alive` · banner
+- `rfc-5321 simple-mail-transfer-protocol` · banner
+- `rfc-5322 internet-message-format` · banner
+
+## analytics
+
+- bond degree `0` · sealed `0` · horo `7`
+- variance `1` · balanced `0` · trinity sum `3`
+- bindings `0` · standards `5`
 
 ## identity
 
@@ -37,8 +55,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `1f68bd2c-7930-81d7-bf36-21bb054b11ae` · framed by typography partition `notification` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b6e3613d-5bc2-89bb-8bfb-210e4633296c` · framed by typography partition `notification` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

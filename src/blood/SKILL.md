@@ -1,8 +1,98 @@
 ---
 name: blood
 description: "Use when reasoning about erpax's carrier — the courier organ that delivers accounted value to every node and carries entropy away. Blood is the receipt flow through the closed loop the heart drives and the lung charges: three properties of living blood (cooperative Hill binding · steady-state turnover by Little's law · conserved delivery) are computed and mapped — a structural isomorphism — onto erpax's coverage, regeneration, and double-entry."
+atomPath: blood
+coordinate: blood · 2/share · 64c6394c
+contentUuid: "032bd537-187c-5c54-94ce-aaf667db7ece"
+diamondUuid: "120affa0-02c5-8e27-a7c6-18efb1ea5a43"
+uuid: "64c6394c-8450-8ecf-81c8-5d5134a2b234"
+horo: 2
+bonds:
+  in:
+    - blood
+    - body
+    - conservation
+    - coverage
+    - heart
+    - law
+    - lung
+    - receipt
+    - regeneration
+    - supply
+    - test
+  out:
+    - blood
+    - body
+    - conservation
+    - coverage
+    - heart
+    - law
+    - lung
+    - receipt
+    - regeneration
+    - supply
+    - test
+typography:
+  partition: blood
+  bondDegree: 37
+  neighbors: []
+standards:
+  - "A. V. Hill,"
+  - "Hill, J. Physiol. 1910 (cooperativity) · erythropoiesis (≈2M RBC/s, ≈120 d)"
+  - "computed (Hill equation · Little's law · mass balance) from cited constants"
+bindings: []
+neighbors:
+  wikilink:
+    - conservation
+    - coverage
+    - heart
+    - law
+    - lung
+    - receipt
+    - regeneration
+  matrix:
+    - blood
+    - body
+    - conservation
+    - coverage
+    - heart
+    - law
+    - lung
+    - receipt
+    - regeneration
+    - supply
+    - test
+  backlinks:
+    - blood
+    - body
+    - conservation
+    - coverage
+    - heart
+    - law
+    - lung
+    - receipt
+    - regeneration
+    - supply
+    - test
+signatures:
+  computationUuid: "1c95c1ac-0c58-87da-82c3-a24992866677"
+  stages:
+    - stage: path
+      stageUuid: "2cdf2439-8f4a-8dd6-8571-6697ceba1894"
+    - stage: trinity
+      stageUuid: "fa857cd0-e7c0-806b-9bbd-9aade5e8edc8"
+    - stage: boundary
+      stageUuid: "2ca8e915-7941-8806-b409-0b2a82a4b486"
+    - stage: links
+      stageUuid: "5bfa5375-0785-85f9-bde0-1cfb8bb4268d"
+    - stage: horo
+      stageUuid: "fbbce37e-0a99-89bf-901a-4305f380228d"
+    - stage: seal
+      stageUuid: "a8b3335a-ce75-8438-8ef7-d5ff8c42a6a6"
+    - stage: uuid
+      stageUuid: "0bb14ce6-97b6-8a5b-b323-c57c9ae6b5dd"
+version: 2
 ---
-
 # blood — the courier (cooperative delivery · regenerated · conserved)
 
 Blood is erpax's **carrier**: the body's [[receipt]] flow, moving accounted value to every cell and carrying entropy away through the closed loop the [[heart]] pumps and the [[lung]] charges. Three properties of living blood map — as a *structural isomorphism*, each computed in the matter-twin — onto erpax:

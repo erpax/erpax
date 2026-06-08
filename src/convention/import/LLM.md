@@ -3,15 +3,15 @@
 
 # import
 
-path `convention/import` · uuid `c34cceb3-27b2-85b2-882e-8e29e097983a` · diamond `f619799d-a6b5-8eb5-969a-87470b3660ff`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+path `convention/import` · uuid `205b5b61-bacf-88dc-82c9-59a95df6b8b9` · diamond `a95fbc7f-82f9-8f37-8ea3-6074d30d746c`
+horo `5` `round` · trinity `1·1·1` · sealed `0`
 imports @/tamper/import · exports const · escapes —
-links `9/9` · folded `1` · bonds in `14` out `20`
+links `9/9` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `1·0·0`
-neighbors → aura·boundary·convention·cost·cost·cost·duality·entanglement·expense·exported·fresh·import·law·law·law·lawful·method·tamper·tamper·tamper · ← aura·boundary·convention·cost·duality·entanglement·expense·exported·fresh·import·law·lawful·method·tamper
-analysis aura·quantum/boundary·tamper/import
+neighbors → cost·exported·import·law·lawful·method·tamper · ← cost·exported·import·law·lawful·method·tamper
+analysis —
 law every import is from an atom index (`@/x`), never a deep file or a relative path. The index is the atom's public seal; an import past it is an uncovered coupling. Coverage = importPurity (the index-only fraction, live over the tree). The convention is enforced by the import lint — a ratchet that fails the build when non-index imports rise above the committed baseline — so it can only get tighter; coverage 1 (tamper-cost → ∞) is the limit it climbs toward.
 
 ---
 
-<sub>content-uuid `e092680b-1537-8bfa-87c9-0bf2a9d54104` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d3eb3459-371d-8ee9-bb77-8d31e43ea6a0` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # target
 
-path `target` · uuid `02a9d935-ae0b-8846-84a5-0d64e0a5318b` · diamond `e4f3bc73-f463-8b68-befc-f8943ae2fa5f`
+path `target` · uuid `02a9d935-ae0b-8846-84a5-0d64e0a5318b` · diamond `abbb0099-ec6a-87b6-9430-c67c32dcb0ba`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collection·description·law·name·platform·population·product·url · exports target · escapes —
-links `8/8` · folded `1` · bonds in `5` out `5`
+links `8/8` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·quota·stat · ← cohort·landmarks·memories·quota·stat
+neighbors → collection·description·law·name·platform·population·product·url · ← collection·description·law·name·platform·population·product·url
 analysis —
 law target is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `9cd26cc6-c827-8f20-9615-1e78d1cd799d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a3c2ec16-25b6-880e-acd2-8b25d7b65428` · `pnpm readme` · `pnpm computed:check`</sub>

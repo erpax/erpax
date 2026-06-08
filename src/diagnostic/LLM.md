@@ -3,8 +3,8 @@
 
 # diagnostic
 
-path `diagnostic` · uuid `3cd246d6-a259-89da-8043-76806fd84c10` · diamond `2d3e5a4c-e55b-891b-94e2-5962297c348b`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `diagnostic` · uuid `dc379497-6429-8538-ae6b-e26e20b9c0c3` · diamond `34ac721a-9ed4-8118-ab8b-d32c2d79597d`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·lab·law·merge·procedure·sti · exports diagnostic · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law diagnostic is one schema.org word, content-addressed; the same word collides
 
 ---
 
-<sub>content-uuid `922506e3-882a-8da5-858f-aad89b7ad434` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `69211189-8679-87fb-b80f-d273442912e7` · `pnpm readme` · `pnpm computed:check`</sub>

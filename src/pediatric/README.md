@@ -23,7 +23,21 @@
 
 - partition `pediatric` · sub-root `cdb76453-eb36-8f32-aa6d-d1c2a2441188`
 - bond degree `12` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `12` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `74b03fba-189a-89a6-8255-cf29b7d3c326` · framed by typography partition `pediatric` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `72bc6746-1d2d-8d90-9edd-abd5f4415167` · framed by typography partition `pediatric` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

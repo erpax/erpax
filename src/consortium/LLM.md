@@ -3,8 +3,8 @@
 
 # consortium
 
-path `consortium` · uuid `6c8cfd46-7c7d-8ce2-8c03-fb248c2acf39` · diamond `4ac82386-cf75-827a-9ee7-3c534c42bfdc`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `consortium` · uuid `a0f4c019-f2bc-82b9-9e3b-3bae33977128` · diamond `a161b8b8-42a9-8c53-9b58-81fc2082667e`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports law·organization·thing · exports consortium · escapes —
 links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law consortium is one schema.org word, content-addressed; the same word collides
 
 ---
 
-<sub>content-uuid `5431a2c2-29ad-8eed-a8d1-d6ef08342151` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `14932a12-d2b6-8035-85bb-4f9cd983bf25` · `pnpm readme` · `pnpm computed:check`</sub>

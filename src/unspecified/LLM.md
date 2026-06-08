@@ -3,15 +3,15 @@
 
 # unspecified
 
-path `unspecified` · uuid `4e46dd42-76b5-85e3-8f7a-afc293dc07a2` · diamond `32be5369-a52d-8eab-b7c3-9482479f382b`
+path `unspecified` · uuid `4e46dd42-76b5-85e3-8f7a-afc293dc07a2` · diamond `9bf1256f-5f13-8a39-879c-e24f8e70e584`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports unspecified · escapes —
-links `4/4` · folded `1` · bonds in `7` out `7`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·median·memories·product·research·stat · ← cohort·landmarks·median·memories·product·research·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law unspecified is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `c3f1a5ad-0a70-8a86-ba4f-1988360007dd` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `31c84abb-e5ab-80e0-b9e9-017c33b9a6d0` · `pnpm readme` · `pnpm computed:check`</sub>

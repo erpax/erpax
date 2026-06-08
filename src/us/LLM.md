@@ -3,15 +3,15 @@
 
 # us
 
-path `us` · uuid `bae973a8-4e30-8d13-a06c-9071c1803bd2` · diamond `b4792be5-cfd5-8e5a-981d-4ab1754dfeb7`
+path `us` · uuid `bae973a8-4e30-8d13-a06c-9071c1803bd2` · diamond `76ed3136-c8e0-8589-a52a-7538c1ff2fec`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·nonprofit·npi·sti·type · exports us · escapes —
-links `7/7` · folded `1` · bonds in `5` out `5`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·mpn·stat · ← cohort·landmarks·memories·mpn·stat
+neighbors → collapse·law·merge·nonprofit·npi·sti·type · ← collapse·law·merge·nonprofit·npi·sti·type
 analysis —
 law us is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `1f226cf2-9d50-8acc-bcfb-f329f23ced19` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `698a0aea-6d59-8b78-967f-bbc3a0c44421` · `pnpm readme` · `pnpm computed:check`</sub>

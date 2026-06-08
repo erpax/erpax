@@ -2,7 +2,7 @@
 
 # auto
 
-> atom `auto` · horo `8` `crest` · [[balance]] `1` · [[seal]] `0`
+> atom `auto` · horo `8` `crest` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -17,13 +17,13 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `7` | Σ `7` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `2` · [[conservation]] `0` · [[entry]] · [[purity]]
 
 ## typography graph
 
-- partition `auto` · sub-root `fb1afd9b-bd8f-8c8d-8f4e-d2d40410747f`
-- bond degree `52` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- partition `auto` · sub-root `ff10dd97-5f55-89fd-9956-c029c315c9cf`
+- bond degree `0` · analysis neighbors —
+- graph root `1cef4f02-a3fa-83a5-8ea0-120b724ef456`
 
 ## [[cloudflare]] bindings
 
@@ -41,15 +41,53 @@
 - `ISO-8601-1` · catalogue
 - `schema.org — the type vocabulary, collided to single words` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unbalanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| not-held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·8 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `52` · sealed `0` · horo `8`
-- variance `0` · balanced `1` · trinity sum `1`
+- bond degree `0` · sealed `0` · horo `8`
+- variance `2` · balanced `0` · trinity sum `1`
 - bindings `0` · standards `9`
 
 ## identity
 
-- uuid `75643502-1919-8f9e-ab01-0b11260bd9d8`
+- uuid `58d8d39b-5b3a-8f73-9b23-c2232df681eb`
 - bonds in `15` · out `15`
 - trinity form·code·proof `1`·`0`·`0`
 - links `12` / `12`
@@ -61,4 +99,4 @@
 
 ---
 
-<sub>content-uuid `fc791c50-2604-8fd9-9f3f-d5f444f48f58` · framed by typography partition `auto` bonds `52` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `facdd1a7-c498-85f1-9aa5-411c81302eaa` · framed by typography partition `auto` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

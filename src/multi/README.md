@@ -2,7 +2,7 @@
 
 # multi
 
-> atom `multi` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `multi` · horo `7` `descent` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -17,13 +17,33 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `7` | Σ `7` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `4` · [[conservation]] `0` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `multi` · sub-root `fa645340-43f3-897a-88a4-e34adc345590`
-- bond degree `12` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- bond degree `0` · analysis neighbors —
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `EU-2016/679` · catalogue
+- `IFRS-9` · catalogue
+- `MCP` · catalogue
+- `NIST-SP-800-92` · catalogue
+- `SAF-T` · catalogue
+- `schema.org — the type vocabulary, collided to single words` · banner
+- `XBRL` · catalogue
+
+## analytics
+
+- bond degree `0` · sealed `0` · horo `7`
+- variance `4` · balanced `0` · trinity sum `1`
+- bindings `0` · standards `7`
 
 ## identity
 
@@ -35,8 +55,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `55824c23-f13e-8fa4-876d-a0848d98ff4a` · framed by typography partition `multi` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ba649acc-b4b8-8e6d-bfec-7a841f36a6dc` · framed by typography partition `multi` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

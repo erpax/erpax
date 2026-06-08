@@ -25,7 +25,7 @@
 
 - partition `diversity` · sub-root `98c56cae-47f1-8a0b-8214-112cd3026c76`
 - bond degree `36` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
 
 ## [[cloudflare]] bindings
 
@@ -59,4 +59,4 @@
 
 ---
 
-<sub>content-uuid `738b3152-3702-8014-bd8d-ebe9204f1663` · framed by typography partition `diversity` bonds `36` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `999daddd-d23d-8846-bd5c-f47023738525` · framed by typography partition `diversity` bonds `36` · `pnpm readme` · `pnpm readme:check`</sub>

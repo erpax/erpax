@@ -3,8 +3,8 @@
 
 # actionable
 
-path `actionable` · uuid `0d0b8766-fbcf-8cbd-bb81-d800526a2593` · diamond `8b07bc42-7805-8b6e-b5aa-f96dfcf2a587`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `actionable` · uuid `129b21ef-014d-849d-9e5a-0deadf47f2b3` · diamond `76047d32-6c16-8049-95e9-097daa9a5e67`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·feedback·law·merge·policy·sti · exports actionable · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law actionable is one schema.org word, content-addressed; the same word collides
 
 ---
 
-<sub>content-uuid `208f5152-ba98-80da-b1f6-a315f4e843e5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b9d8627a-40be-8bd7-8672-f88901e01219` · `pnpm readme` · `pnpm computed:check`</sub>

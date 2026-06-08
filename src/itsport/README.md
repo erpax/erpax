@@ -23,7 +23,21 @@
 
 - partition `itsport` · sub-root `86f5cd64-d7f7-8b3d-9473-7a3aaabb3b2f`
 - bond degree `12` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `12` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `55b39984-f0f7-8343-affd-d3e8c7cb0e59` · framed by typography partition `itsport` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d136f095-dbde-8f97-8305-b63ae0a17a87` · framed by typography partition `itsport` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

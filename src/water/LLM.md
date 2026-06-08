@@ -3,15 +3,15 @@
 
 # water
 
-path `water` · uuid `758772df-1aba-8a1f-ae24-e7d26ff924af` · diamond `562126b6-6816-86ff-bcff-29ec8361acb1`
+path `water` · uuid `758772df-1aba-8a1f-ae24-e7d26ff924af` · diamond `fc5ba043-23d1-8f64-88e8-2040203d18b7`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports body·collapse·lake·law·merge·ocean·river·sea·sti · exports water · escapes —
-links `9/9` · folded `1` · bonds in `2` out `2`
+links `9/9` · folded `1` · bonds in `12` out `12`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → body·collapse·lake·law·merge·ocean·paganism·river·sea·shinto·sti·taoism · ← body·collapse·lake·law·merge·ocean·paganism·river·sea·shinto·sti·taoism
 analysis —
 law water is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `e4ae0095-2de0-86f6-af3e-f3c824b97ff9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `86b990f2-80e8-89be-bd06-99c616bade87` · `pnpm readme` · `pnpm computed:check`</sub>

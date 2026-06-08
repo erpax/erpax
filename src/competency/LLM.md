@@ -3,8 +3,8 @@
 
 # competency
 
-path `competency` · uuid `e700665f-16eb-875b-b1ec-e203dfbff705` · diamond `f9e960be-eff9-8697-bc59-2abee3257301`
-horo `5` `round` · trinity `1·1·1` · sealed `1`
+path `competency` · uuid `58d5d8fd-b51c-8e59-b8cb-46b2fec641fa` · diamond `b0f46587-9e58-85c7-a281-0d75d4083b46`
+horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports — · exports const · escapes —
 links `5/5` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law a competency is the one held-or-required capability word — the same axis a
 
 ---
 
-<sub>content-uuid `f1cb278f-d7c2-8e0f-b282-1ec17429bae0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5503a806-ee48-887c-b1ff-6489847cdfcc` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # staffing
 
-path `staffing` · uuid `56b80e16-042e-8fab-b1a2-eff16485ae5e` · diamond `a4e553dc-7033-8686-8875-8a55ecf26fc9`
+path `staffing` · uuid `56b80e16-042e-8fab-b1a2-eff16485ae5e` · diamond `13779128-099e-8eef-a8f9-bdf545d7fb6d`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·diversity·law·merge·report·sti · exports staffing · escapes —
-links `6/6` · folded `1` · bonds in `5` out `5`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·sanitization·stat · ← cohort·landmarks·memories·sanitization·stat
+neighbors → collapse·diversity·law·merge·report·sti · ← collapse·diversity·law·merge·report·sti
 analysis —
 law staffing is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `0fafd0ce-77de-813a-8927-90eb37478cf0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `50a91f34-51e2-8ce9-a028-fe274cd80453` · `pnpm readme` · `pnpm computed:check`</sub>

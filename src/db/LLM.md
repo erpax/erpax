@@ -3,8 +3,8 @@
 
 # db
 
-path `db` · uuid `db14bd7d-6f1e-8b90-b30f-25a8e48592b1` · diamond `1271bb08-79f0-8d80-b06e-c0718add4ef8`
-horo `4` `weave` · trinity `1·1·1` · sealed `1`
+path `db` · uuid `b63f12d5-a96f-876a-a9fe-82131fe05f79` · diamond `3337a72c-c550-82a2-b186-326d9d69c90a`
+horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports @/uuid/matrix · exports const · escapes —
 links `17/17` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law the db is the content-addressed store — the key IS the content's uuid, app
 
 ---
 
-<sub>content-uuid `1cabbba3-c803-8e68-9c90-8e8a76de9b1d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4293cee7-c3e9-8ae2-9588-4c2a99eacc76` · `pnpm readme` · `pnpm computed:check`</sub>

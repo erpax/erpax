@@ -2,7 +2,7 @@
 
 # held
 
-> atom `held` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
+> atom `held` · horo `2` `share` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -17,13 +17,30 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `7` | Σ `7` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `held` · sub-root `1ca92b43-e8f4-8dba-bcbb-6a439add8841`
-- bond degree `16` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- bond degree `0` · analysis neighbors —
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `IFRS-13` · catalogue
+- `IFRS-5` · catalogue
+- `schema.org — the type vocabulary, collided to single words` · banner
+- `US-GAAP` · catalogue
+
+## analytics
+
+- bond degree `0` · sealed `0` · horo `2`
+- variance `1` · balanced `0` · trinity sum `1`
+- bindings `0` · standards `4`
 
 ## identity
 
@@ -35,8 +52,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `f423014e-7597-8ae2-a89d-34cf5845b41d` · framed by typography partition `held` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a8efbb07-378b-8bcf-8476-24cbe8a23b2e` · framed by typography partition `held` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -2,7 +2,7 @@
 
 # tpg
 
-> atom `oecd/tpg` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `oecd/tpg` · horo `7` `descent` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -25,7 +25,27 @@
 
 - partition `oecd` · sub-root `227f289c-ade6-8b9d-b7fe-c6a92045d4e1`
 - bond degree `0` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `BEPS` · catalogue
+- `EU DAC-4 country-by-country-reporting` · banner
+- `OECD BEPS Action 13 master-file-local-file-cbcr` · banner
+- `OECD Pillar Two GloBE 15% global minimum tax (companion)` · banner
+- `OECD TPG 2022 transfer-pricing-guidelines` · banner
+- `OECD-Pillar-Two` · catalogue
+- `OECD-Transfer-Pricing` · catalogue
+
+## analytics
+
+- bond degree `0` · sealed `0` · horo `7`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `7`
 
 ## identity
 
@@ -37,8 +57,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `908b20b8-ed3e-8505-b61b-ba6d13e634fe` · framed by typography partition `oecd` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `5e2e3a8d-a303-87d9-a64b-92e272407da6` · framed by typography partition `oecd` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

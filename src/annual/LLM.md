@@ -3,8 +3,8 @@
 
 # annual
 
-path `annual` · uuid `fb3ca921-bd8a-8bb5-a9a0-f14708f04b10` · diamond `7a78777b-ed87-8f82-bc4a-e88fe4138120`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `annual` · uuid `5b5b8f08-52db-8224-ab0e-8d0998417a3f` · diamond `29043ef5-8070-8d67-8737-2d69c105000e`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·percentage·rate·sti · exports annual · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law annual is one schema.org word, content-addressed; the same word collides eve
 
 ---
 
-<sub>content-uuid `09e5fbda-4fd4-82fe-a601-2810b99b74db` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a6470454-2bd5-8f12-aecb-9361dcaee584` · `pnpm readme` · `pnpm computed:check`</sub>

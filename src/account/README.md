@@ -2,9 +2,11 @@
 
 # account
 
-> atom `account` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
+> atom `account` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
+
+> account code `account` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -19,11 +21,58 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:trinity:[[gap]]/[[trinity]]/code`
+- `gap:trinity:[[gap]]/[[trinity]]/proof`
+
+### collapse
+
+- `balance:conserved`
+- `law:an account is the chart-of-accounts item a transaction or GL entry references (bank/GL/cost-center/liability) — the relation through which denormalized accountNumber/accountName wire, never the [[amount]] itself.`
+- `seal:sealed`
+- `trigger:Use when a transaction or GL entry references a chart-of-accounts item — bank account, GL account, cost-center account, liability account. Payload relationTo: 'gl-accounts' or 'bank-accounts'; denormalized fields (accountNumber, accountName) wire via account atom.`
+- `trigger:an account is the chart-of-accounts item a transaction or GL entry references (bank/GL/cost-center/liability) — the relation through which denormalized accountNumber/accountName wire, never the [[amount]] itself.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `1`
+- entry uuids `1a3dbc1d-74dd-8532-bac8-03f59ee76c8d` · `246d7aea-a3aa-8093-9732-e09007b9686d` · `99dafb37-760b-8997-960f-5ea35d60b440`
+- content uuids `4f87eb2b-beea-8df7-821d-4541aa713939` · `5a58b1c9-1570-8244-8b4b-67c426e12346` · `643b6fe2-c076-8829-8f58-b73f43237273` · `d5d23d0e-39e7-856a-acba-8cad7811a81e`
+
+## [[entropy]] — gaps · seals
+
+> account code `account` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[trinity]]/code `1.585` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[trinity]]/proof `1.585` eb | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.8` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[diamond]]/sealed `1.585` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `3.17` eb | Σ seal `11.385` eb |
+
+> net residual `-8.215` eb · seal/gap ratio `3.591` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `account` · sub-root `a84cab76-b536-87b3-ab37-b7cc770721d7`
+- partition `account` · sub-root `d5d23d0e-39e7-856a-acba-8cad7811a81e`
 - bond degree `43` · analysis neighbors —
-- graph root `06810c2c-2396-831f-a2b3-a58706a17051`
+- graph root `e9e46cd3-af78-8539-bcbd-58a485afeb8e`
 
 ## [[cloudflare]] bindings
 
@@ -33,15 +82,53 @@
 
 —
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·8 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `43` · sealed `1` · horo `5`
+- bond degree `43` · sealed `1` · horo `8`
 - variance `0` · balanced `1` · trinity sum `1`
 - bindings `0` · standards `0`
 
 ## identity
 
-- uuid `a84cab76-b536-87b3-ab37-b7cc770721d7`
+- uuid `d5d23d0e-39e7-856a-acba-8cad7811a81e`
 - bonds in `14` · out `14`
 - trinity form·code·proof `1`·`0`·`0`
 - links `8` / `8`
@@ -53,4 +140,4 @@
 
 ---
 
-<sub>content-uuid `f6caa2fb-9fdf-8cd5-9a0a-1489f9ef3bd2` · framed by typography partition `account` bonds `43` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c1114f80-5742-88b1-8fa9-669140d1066d` · framed by typography partition `account` bonds `43` · `pnpm readme` · `pnpm readme:check`</sub>

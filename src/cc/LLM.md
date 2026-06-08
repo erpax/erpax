@@ -3,7 +3,7 @@
 
 # cc
 
-path `cc` · uuid `4ec19413-e4b9-8a5a-8433-e994ab577bba` · diamond `0573eb42-8834-81d9-85ef-84e06c105b69`
+path `cc` · uuid `25f2f5f9-5647-82a9-841f-d8f5dff7ae13` · diamond `61e7bbfa-00c8-8db9-b9f5-39bc327fdbfb`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·recipient·sti · exports cc · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
@@ -14,4 +14,4 @@ law cc is one schema.org word, content-addressed; the same word collides every s
 
 ---
 
-<sub>content-uuid `ecd740b8-fcc6-8b34-af1e-0c788987ae82` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `84337410-20b4-8317-b986-d595a71559bd` · `pnpm readme` · `pnpm computed:check`</sub>

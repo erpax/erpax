@@ -3,7 +3,7 @@
 
 # depreciate
 
-path `calculate/depreciate` · uuid `83f14f3f-f19a-8a94-89f1-9de6e166b0d2` · diamond `0b6aa304-7b1f-8772-8635-bd93f0b50c63`
+path `calculate/depreciate` · uuid `27db78ce-d56b-8fed-81d5-e9a43eb91459` · diamond `e1f3724a-44ba-876c-8032-34d0f01c856e`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports accounting·calculate·currency·port · exports depreciate · escapes —
 links `5/5` · folded `1` · bonds in `4` out `4`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `f70a7c84-390a-8734-b9e7-e255ade60c39` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d8d4ff24-119c-8ceb-a391-74d00225b3dc` · `pnpm readme` · `pnpm computed:check`</sub>

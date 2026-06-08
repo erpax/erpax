@@ -23,7 +23,21 @@
 
 - partition `fear` · sub-root `fc8ab069-8153-8831-88c8-2c3b940ccbdd`
 - bond degree `76` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `76` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `2713bb23-b491-8fef-b428-417e48f860b3` · framed by typography partition `fear` bonds `76` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `683efcfe-1021-80e4-961b-a69b2ed366c4` · framed by typography partition `fear` bonds `76` · `pnpm readme` · `pnpm readme:check`</sub>

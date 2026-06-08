@@ -25,7 +25,24 @@
 
 - partition `leads` · sub-root `40526f3a-84ce-8c79-8315-8293b3fb83b4`
 - bond degree `35` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `IFRS IFRS-15 §9 contract-existence-criteria` · banner
+- `ISO-19011:2018 audit-trail crm-pipeline` · banner
+- `ISO-4217:2015 currency-codes` · banner
+- `ISO-8601-1:2019 date-time` · banner
+
+## analytics
+
+- bond degree `35` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `4`
 
 ## identity
 
@@ -41,4 +58,4 @@
 
 ---
 
-<sub>content-uuid `d209e8d1-5fdb-838a-8bc6-da6f0684c593` · framed by typography partition `leads` bonds `35` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `2052950e-f940-88e5-90e9-cd6427419e70` · framed by typography partition `leads` bonds `35` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,8 +3,8 @@
 
 # commission
 
-path `commission` · uuid `e4b9639b-9aa5-8e35-bbbc-408dcc549109` · diamond `5d06d71f-7fc6-86d9-aa40-39e03d68c7cc`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `commission` · uuid `cd695b72-0a90-8de1-ae26-965d58ef0b14` · diamond `d9f54a1f-5102-88a9-9802-7249399799a6`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports balance·commissions·law·sales · exports commission · escapes —
 links `8/8` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law commission is the singular model of one earned-compensation row tied to a sa
 
 ---
 
-<sub>content-uuid `478bf198-dec7-8be5-b974-1aa35544c228` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a981f184-e468-8a8c-9275-0094c1a58401` · `pnpm readme` · `pnpm computed:check`</sub>

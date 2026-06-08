@@ -23,7 +23,21 @@
 
 - partition `horo` · sub-root `2cd52f5e-6d33-8f01-b0c1-ca7c8d435134`
 - bond degree `53` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `53` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `3bb9ed8a-7da7-8225-9c7c-2744163c76ba` · framed by typography partition `horo` bonds `53` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b01a6c2c-7e38-85fc-bd0e-3d5e2fc613a6` · framed by typography partition `horo` bonds `53` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `vinyl` · sub-root `a99dad6e-b688-8c39-b911-e45541f5ddea`
 - bond degree `12` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `93bc1c5f-c336-87e0-96fd-2865b0112663` · framed by typography partition `vinyl` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c741d792-c832-8557-bdf3-e813061231f0` · framed by typography partition `vinyl` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

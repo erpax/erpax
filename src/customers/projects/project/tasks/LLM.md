@@ -3,8 +3,8 @@
 
 # tasks
 
-path `customers/projects/project/tasks` · uuid `3d5aa61e-0f34-8540-a320-7516e8da1f0c` · diamond `757d13c5-37ad-83d7-85a2-1c2dfa019302`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+path `customers/projects/project/tasks` · uuid `f02c94ec-4379-84a0-bbe3-930c567daf7c` · diamond `d6709a03-c760-8771-942d-f7a0dceaf9d9`
+horo `5` `round` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
 links `6/6` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law every cost posts to a WBS task code, and per-task cost-to-cost percentages r
 
 ---
 
-<sub>content-uuid `a4bae669-6c04-8575-9022-d9c926d65a71` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `111817c3-1695-8430-9c99-84a4af0f6892` · `pnpm readme` · `pnpm computed:check`</sub>

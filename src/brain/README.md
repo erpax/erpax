@@ -2,7 +2,7 @@
 
 # brain
 
-> atom `brain` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
+> atom `brain` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -23,9 +23,9 @@
 
 ## typography graph
 
-- partition `brain` · sub-root `702f6ecf-ff93-858c-8bb5-de7778aa50f4`
-- bond degree `27` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- partition `brain` · sub-root `736759f0-cb8c-8daa-9486-543bf419f8f0`
+- bond degree `34` · analysis neighbors —
+- graph root `1cef4f02-a3fa-83a5-8ea0-120b724ef456`
 
 ## [[cloudflare]] bindings
 
@@ -37,16 +37,54 @@
 - `≈86×10⁹ neurons, ≈1.5×10¹⁴ synapses; brain networks are small-world (Bassett, Bullmore)` · banner
 - `computed (small-world path length log(N)/log(k) · sparsity k/N · scale cross-check)` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·2 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `27` · sealed `1` · horo `4`
+- bond degree `34` · sealed `1` · horo `2`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `3`
 
 ## identity
 
-- uuid `702f6ecf-ff93-858c-8bb5-de7778aa50f4`
-- bonds in `9` · out `9`
+- uuid `736759f0-cb8c-8daa-9486-543bf419f8f0`
+- bonds in `10` · out `10`
 - trinity form·code·proof `1`·`1`·`1`
 - links `11` / `11`
 - folded `1` · escapes `0`
@@ -57,4 +95,4 @@
 
 ---
 
-<sub>content-uuid `bea8ec81-06c8-88cd-914d-db9399b58f8c` · framed by typography partition `brain` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a424f6c1-8dc8-8862-8b85-61f3c295d6ee` · framed by typography partition `brain` bonds `34` · `pnpm readme` · `pnpm readme:check`</sub>

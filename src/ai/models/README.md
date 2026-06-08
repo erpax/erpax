@@ -2,9 +2,11 @@
 
 # models
 
-> atom `ai/models` · horo `7` `descent` · [[balance]] `1` · [[seal]] `0`
+> atom `ai/models` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
+
+> account code `ai/models` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,11 +23,56 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `dispatch:eb=1.585`
+
+### collapse
+
+- `balance:conserved`
+- `seal:sealed`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `1`
+- entry uuids `f48d480a-aafd-8d9a-8781-cc77a655f37a`
+- content uuids `50578fd2-6188-8a15-9b43-250b8d32989d` · `ab88f245-9120-8798-8a36-f786ffd678b9`
+
+## [[entropy]] — gaps · seals
+
+> account code `ai/models` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+|  | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.4` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[diamond]]/sealed `1.585` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `0` eb | Σ seal `12.985` eb |
+
+> net residual `-12.985` eb · seal/gap ratio `1` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `ai` · sub-root `2d3a90be-68d2-8eac-ba70-c4c58554dc58`
+- partition `ai` · sub-root `00f1dddc-4124-8f45-b06e-3569a314cc18`
 - bond degree `27` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
 
 ## [[cloudflare]] bindings
 
@@ -40,20 +87,57 @@
 - `EU-AI-Act` · catalogue
 - `EU-CSDDD-2024/1760` · catalogue
 - `GDPR data-residency (`euHostable` — EU PoPs for EU tenants)` · banner
-- `ISO-19011:2018 audit-trail model-catalogue-changes` · banner
 - `RFC-4122` · catalogue
 - `RFC-4122 §4.3 uuid (content-addressed model identity)` · banner
 - `SOX §404 internal-controls` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·4 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `27` · sealed `0` · horo `7`
+- bond degree `27` · sealed `1` · horo `4`
 - variance `0` · balanced `1` · trinity sum `3`
-- bindings `0` · standards `11`
+- bindings `0` · standards `10`
 
 ## identity
 
-- uuid `62bd9410-68a2-8fef-bbac-b62afa9be411`
+- uuid `50578fd2-6188-8a15-9b43-250b8d32989d`
 - bonds in `9` · out `9`
 - trinity form·code·proof `1`·`1`·`1`
 - links `9` / `9`
@@ -61,8 +145,8 @@
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `f0f9bf87-3d84-809d-9386-bfbaff9b25a1` · framed by typography partition `ai` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `180c15cf-33d4-86af-9bc8-dec5ab0d02ef` · framed by typography partition `ai` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>

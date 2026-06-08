@@ -3,15 +3,15 @@
 
 # llm
 
-path `uuid/llm` · uuid `b3e17aff-611f-87ac-8f80-64e40e78bae2` · diamond `1f515928-6ca7-88bc-9728-217addea1922`
+path `uuid/llm` · uuid `b3e17aff-611f-87ac-8f80-64e40e78bae2` · diamond `bd150f5f-ada7-8df7-a087-97256a42d278`
 horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports @/horo·@/localize·@/signal·@/uuid/matrix · exports function·interface · escapes —
-links `21/21` · folded `1` · bonds in `36` out `35`
-faces worker·plugin·pwa `0·0·0`
-neighbors → 9110·angel·conditions·conference·conventional·corrects·declaration·details·diffusion·fertility·findings·founder·getting·homeopathic·id·leisure·liquor·list·mass·memories·memory·offered·price·progression·project·request·roadmap·seat·society·spouse·swatch·syllabus·tracks·trade·trading · ← 9110·angel·conditions·conference·conventional·corrects·declaration·details·diffusion·fertility·findings·founder·getting·homeopathic·id·leisure·liquor·list·mass·memories·memory·offered·price·progression·project·project·request·roadmap·seat·society·spouse·swatch·syllabus·tracks·trade·trading
+links `21/21` · folded `1` · bonds in `22` out `27`
+faces worker·plugin·pwa `1·0·0`
+neighbors → angel·breath·breath·chat·cost·entry·entry·holographic·identity·law·limit·llm·localize·matrix·matrix·merge·message·observe·oid·projection·proof·self·signal·signal·train·uuid·uuid · ← angel·breath·chat·cost·entry·holographic·identity·law·limit·llm·localize·matrix·merge·message·observe·oid·projection·proof·self·signal·train·uuid
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `30e64322-f28d-8d5d-b7e2-258770e05b74` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0fadf2ad-75ff-81fb-b3d7-c4ab63b854c5` · `pnpm readme` · `pnpm computed:check`</sub>

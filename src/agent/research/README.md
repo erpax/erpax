@@ -6,6 +6,8 @@
 
 ## [[debit]] · [[credit]]
 
+> account code `agent/research` · currency `eb` (entropy-bit)
+
 | [[debit]] | [[credit]] |
 | -------- | --------- |
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
@@ -21,11 +23,62 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `explore:agent`
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+
+### collapse
+
+- `balance:conserved`
+- `law:an [[agent]] IS a [[user]] (the actor-merge), so a finding is content-addressed (same find ⇒ one row) and only a tenant-admin approver may issue the allow-[[receipt]] that lets it LAND — the gate chains into the uuid-linked [[audit]], tamper-evident end to end.`
+- `seal:unsealed`
+- `trigger:RFC 9562 §5.8 content-addressed identity (agent uuid, finding uuid)`
+- `trigger:Use when registering an agent R&D society as tenant users with assigned roles, coordinating findings over the chat bus, and gating each finding behind tamper-evident tenant-admin approval — the actor-merge made operational (an agent IS a user).`
+- `trigger:`researchSociety` · `memberCapability` · `isApprover` · `agentEmail`/`agentSlug` · `findingUuid`/`findingToDiscovery` · `approveFinding`/`approveFindings` · `ensureTenant`/`ensureMemberUser`/`registerResearchSociety`. Composes [[agent]] [[identity]] · the [[cross]] (role→capability) · [[receipt]] (the audited approval) · [[tenant]] · [[user]] · [[merge]].`
+- `trigger:an [[agent]] IS a [[user]] (the actor-merge), so a finding is content-addressed (same find ⇒ one row) and only a tenant-admin approver may issue the allow-[[receipt]] that lets it LAND — the gate chains into the uuid-linked [[audit]], tamper-evident end to end.`
+- `trigger:matter-twin:src/agent/research/index.ts`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `7e348885-89a4-8cad-8c1e-17cece791eb4` · `b5f8de4a-44cb-85c3-900d-0152a7b45154`
+- content uuids `080865d1-6996-88e9-b4df-ca7d59f244a0` · `515f8a0e-2ad4-8c3a-8c50-0b4da2fc44c7`
+
+## [[entropy]] — gaps · seals
+
+> account code `agent/research` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.1` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `1` eb | Σ seal `11.1` eb |
+
+> net residual `-10.1` eb · seal/gap ratio `11.1` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `agent` · sub-root `6c7e3159-1d51-809d-a4e0-83db8d6c35d5`
-- bond degree `224` · analysis neighbors `agent`
-- graph root `06810c2c-2396-831f-a2b3-a58706a17051`
+- partition `agent` · sub-root `1488bd5f-84f8-8dcb-9d93-550b9453341d`
+- bond degree `149` · analysis neighbors `agent`
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
 
 ## [[cloudflare]] bindings
 
@@ -36,16 +89,54 @@
 - `RFC 9562 §5.8 content-addressed identity (agent uuid, finding uuid)` · banner
 - `RFC-9562` · catalogue
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·1 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `224` · sealed `0` · horo `1`
+- bond degree `149` · sealed `0` · horo `1`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `2`
 
 ## identity
 
-- uuid `d4d6de7f-c43c-89df-90a7-a6439ccfa4f4`
-- bonds in `61` · out `76`
+- uuid `cb7a0ecc-fce0-8e62-957c-ae004c9a3daf`
+- bonds in `31` · out `31`
 - trinity form·code·proof `1`·`1`·`1`
 - links `18` / `18`
 - folded `1` · escapes `0`
@@ -56,4 +147,4 @@
 
 ---
 
-<sub>content-uuid `f5ff7591-841b-85fa-8565-c1db12c495eb` · framed by typography partition `agent` bonds `224` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `7a97a51c-f557-8cff-b713-d84d36b5b60d` · framed by typography partition `agent` bonds `149` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,8 +3,8 @@
 
 # civilization
 
-path `civilization` · uuid `e7a9d3d8-63a9-8e2b-8d56-8ec5d95a2033` · diamond `ff4d34f2-d799-81f5-9aaf-939484058d83`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `civilization` · uuid `11d9dd88-20b9-8bcc-8dab-19b24de80488` · diamond `f02c15cd-0843-8dc2-a99a-3cfbd32cebc3`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports access·accounting·akashic·balance·give·horo·identity·merge·profane·proof·research·sacred·society·standard · exports civilization · escapes —
 links `31/31` · folded `1` · bonds in `21` out `21`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `7f26095c-57c7-832c-993c-b7ef6c56624c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `45c390a3-8d02-8003-8de5-c11d79bfc2a2` · `pnpm readme` · `pnpm computed:check`</sub>

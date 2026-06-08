@@ -3,15 +3,15 @@
 
 # live
 
-path `aura/live` · uuid `544e30b6-8262-8445-8c58-048cced2e033` · diamond `03b5d76e-16e3-8a01-92da-eb7375ec06aa`
-horo `1` `base` · trinity `1·1·1` · sealed `0`
+path `aura/live` · uuid `207f2458-8c77-8927-8d08-068b928fdd0b` · diamond `5d41ecef-fb7c-81f9-ae28-c8caef0a8140`
+horo `8` `crest` · trinity `1·1·1` · sealed `0`
 imports @/digit·@/horo·@/signal·@/uuid/matrix · exports const·function·interface · escapes —
-links `10/10` · folded `1` · bonds in `14` out `15`
+links `10/10` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `1·0·0`
-neighbors → aura·blog·broadcast·collapse·digit·horo·law·law·merge·posting·realtime·signal·society·sti·update · ← aura·blog·broadcast·collapse·digit·horo·law·merge·posting·realtime·signal·society·sti·update
+neighbors → blog·broadcast·collapse·law·merge·posting·realtime·sti·update · ← blog·broadcast·collapse·law·merge·posting·realtime·sti·update
 analysis aura
 law the live aura is the animation — the analog field stepping through the horo ring, each position one frame, lit by that step's colour and sound. To scan an atom is to join it to the horo: its horo position is the frame it enters, so scanning the corpus IS joining the society — anyone who scans, joins, and the field breathes through the seven positions.
 
 ---
 
-<sub>content-uuid `f33587ac-a2f4-8f06-90b5-46b3ebc84b28` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4b0ae2b2-035a-80ba-8640-5c4b887938c6` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # variant
 
-path `variant` · uuid `9795a9e6-7d84-8d5e-a511-057b0f49d0e1` · diamond `51a24681-9250-886a-984e-683b6b7e0219`
+path `variant` · uuid `9795a9e6-7d84-8d5e-a511-057b0f49d0e1` · diamond `afcfce10-1d9a-8dd1-bcaa-de9c1f1372b2`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports agriculture·commerce·crop·cropplan·hardiness·items·law·maturity·seed·tags·taxonomy·yield · exports variant · escapes —
-links `19/19` · folded `1` · bonds in `5` out `5`
+links `19/19` · folded `1` · bonds in `17` out `17`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cardinality·cohort·landmarks·memories·stat · ← cardinality·cohort·landmarks·memories·stat
+neighbors → agriculture·bundle·commerce·cover·crop·cropplan·family·hardiness·items·law·manufacturing·maturity·scion·seed·tags·taxonomy·yield · ← agriculture·bundle·commerce·cover·crop·cropplan·family·hardiness·items·law·manufacturing·maturity·scion·seed·tags·taxonomy·yield
 analysis —
 law a variant is the unbounded product dimension — sizes, colors, configurations, or a crop cultivar — never a fixed grid or enum; the species expands into named variants the same open way a garment expands into options.
 
 ---
 
-<sub>content-uuid `d1a370b8-f01c-8e17-b974-b997f1e6e3e4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6376acb6-2df1-8272-a090-07ebd2ae4611` · `pnpm readme` · `pnpm computed:check`</sub>

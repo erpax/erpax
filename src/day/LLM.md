@@ -3,8 +3,8 @@
 
 # day
 
-path `day` · uuid `5594014d-1fd1-8bb6-8279-3ae69256afba` · diamond `7a726570-0d8f-812a-9ca9-0eb56b74bb1e`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `day` · uuid `449be7d0-b912-8ae4-b81c-d65919d3468b` · diamond `fe50be69-96a5-8780-ac8f-74201a8bece3`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports law·month·spa·time·week · exports day · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law day is one schema.org word, content-addressed; the same word collides every 
 
 ---
 
-<sub>content-uuid `fd018280-045c-8de8-96ed-07f8b0b61dda` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f464487f-f61e-802a-95a9-6857518e4ca0` · `pnpm readme` · `pnpm computed:check`</sub>

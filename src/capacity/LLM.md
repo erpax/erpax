@@ -3,8 +3,8 @@
 
 # capacity
 
-path `capacity` · uuid `02a9adfc-6753-8b8d-b46d-6b144a2f48d9` · diamond `800361a9-b3c9-8658-a6d7-ad579f18d4ff`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `capacity` · uuid `243947bb-d86c-8717-a619-a0c3e5e956ce` · diamond `1f998b7b-950c-8c04-b1fe-4624e06f9741`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports bottleneck·measure·rate·work · exports capacity · escapes —
 links `5/5` · folded `1` · bonds in `31` out `31`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `6428a956-0495-883e-98b0-248b06bd9b10` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a735876d-705e-8446-8a33-9684cf50d5b6` · `pnpm readme` · `pnpm computed:check`</sub>

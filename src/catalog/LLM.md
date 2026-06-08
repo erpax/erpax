@@ -3,8 +3,8 @@
 
 # catalog
 
-path `catalog` · uuid `e075d170-fd82-873c-812a-4e47080eb697` · diamond `185a6b8d-0f94-8bea-ac5c-417980323f8c`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `catalog` · uuid `aaa5dd39-ad85-81e4-be38-c6cd00f0df2c` · diamond `a783f39c-183e-81d4-802e-73cfb871219a`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports data·has·included·law·number·offer · exports catalog · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law catalog is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `45632c50-aa98-8abc-b38a-ee10ef63c9b5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `db6917ff-9ed5-8820-8cfb-fa0c3fa91cd3` · `pnpm readme` · `pnpm computed:check`</sub>

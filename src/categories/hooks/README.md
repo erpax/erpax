@@ -2,9 +2,11 @@
 
 # hooks
 
-> atom `categories/hooks` · horo `3` `3` · [[balance]] `1` · [[seal]] `0`
+> atom `categories/hooks` · horo `6` `6` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `categories/hooks` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -19,13 +21,35 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
+
+## [[entropy]] — gaps · seals
+
+> account code `categories/hooks` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[horo]]/off-ring `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `2` eb | Σ seal `10` eb |
+
+> net residual `-8` eb · seal/gap ratio `5` · [[entropy]] · [[seal]]
 
 ## typography graph
 
-- partition `categories` · sub-root `8327e755-6fa3-8a4b-b084-a90724a32919`
-- bond degree `357` · analysis neighbors `analytics` · `aura` · `diamond` · `hallucination` · `purity`
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- partition `categories` · sub-root `1e2e0062-b9a6-8f4a-bb32-410c0e7296c3`
+- bond degree `338` · analysis neighbors `analytics` · `aura` · `diamond` · `hallucination` · `purity`
+- graph root `582b8568-4f46-80fc-8473-2ca7bdc1071f`
 
 ## [[cloudflare]] bindings
 
@@ -35,16 +59,54 @@
 
 - `ISO-19011:2018 audit-trail collection-module-boundary` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unbalanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| off-ring·6 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `357` · sealed `0` · horo `3`
-- variance `0` · balanced `1` · trinity sum `3`
+- bond degree `338` · sealed `0` · horo `6`
+- variance `1` · balanced `0` · trinity sum `3`
 - bindings `0` · standards `1`
 
 ## identity
 
-- uuid `742779e4-53e2-8c02-b0ce-00cd526850d0`
-- bonds in `113` · out `113`
+- uuid `404e657d-1644-8b22-bbac-e50f247a5389`
+- bonds in `105` · out `105`
 - trinity form·code·proof `1`·`1`·`1`
 - links `3` / `3`
 - folded `1` · escapes `0`
@@ -55,4 +117,4 @@
 
 ---
 
-<sub>content-uuid `887ae7af-cb98-8c75-8d5b-9fcdab5740db` · framed by typography partition `categories` bonds `357` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d1cc8a3b-0318-80e4-b966-3eb08691f21b` · framed by typography partition `categories` bonds `338` · `pnpm readme` · `pnpm readme:check`</sub>

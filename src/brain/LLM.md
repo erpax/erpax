@@ -3,15 +3,15 @@
 
 # brain
 
-path `brain` · uuid `702f6ecf-ff93-858c-8bb5-de7778aa50f4` · diamond `2d9d5d03-1b0a-8819-96cb-e3d3cbce5128`
-horo `4` `weave` · trinity `1·1·1` · sealed `1`
+path `brain` · uuid `736759f0-cb8c-8daa-9486-543bf419f8f0` · diamond `14bcce18-8ece-8ad8-b039-0592fb42e346`
+horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports — · exports const·function·interface · escapes —
-links `11/11` · folded `1` · bonds in `9` out `9`
+links `11/11` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `1·0·0`
-neighbors → body·consciousness·gravity·law·merge·network·sparsity·structure·uuid · ← body·consciousness·gravity·law·merge·network·sparsity·structure·uuid
+neighbors → body·brain·consciousness·gravity·law·merge·network·sparsity·structure·uuid · ← body·brain·consciousness·gravity·law·merge·network·sparsity·structure·uuid
 analysis —
 law the brain is the small-world connectome — ~86B neurons reachable in ~3 hops (short path, high clustering: the holographic merge), wired with vanishing sparsity yet total reach (minimal cost), at a self-consistent scale; the network's integration is what the consciousness atom measures.
 
 ---
 
-<sub>content-uuid `d8ce5260-c850-8378-a74e-9f0564f0fb7c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `829e21d6-906a-8b6c-b297-d192eabaa85c` · `pnpm readme` · `pnpm computed:check`</sub>

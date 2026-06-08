@@ -23,7 +23,21 @@
 
 - partition `manure` · sub-root `1a0a51ac-9a39-8486-aeeb-32a9a5bbf4c8`
 - bond degree `41` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `41` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `58ee492f-d1b7-8e19-8955-ab7b3b538370` · framed by typography partition `manure` bonds `41` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e4221edd-6dd1-8411-92eb-68979463a4ab` · framed by typography partition `manure` bonds `41` · `pnpm readme` · `pnpm readme:check`</sub>

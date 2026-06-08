@@ -20,7 +20,8 @@ import {
   type AnyWidgetSpec,
 } from '@/dashboard/spec';
 import { DASHBOARD_REGISTRY, DASHBOARDS } from './dashboards';
-import { Nav } from '@/dashboard/nav';
+import { Card, CardContent, CardHeader, CardTitle } from '@/ui'
+import { Nav } from '@/dashboard/nav'
 
 import { getUserContext } from '@/auth';
 import { actorCapabilityResolved } from '@/cross';
@@ -257,22 +258,24 @@ interface MetricCardProps {
 }
 
 const MetricCard: React.FC<MetricCardProps> = ({ title, value, trend }) => {
-  const bgColor =
-    trend === 'up' ? 'bg-green-50' : trend === 'down' ? 'bg-red-50' : 'bg-blue-50';
-  const textColor =
+  const trendClass =
     trend === 'up'
-      ? 'text-green-700'
+      ? 'border-success/30 bg-success/10 text-green-700'
       : trend === 'down'
-        ? 'text-red-700'
-        : 'text-blue-700';
+        ? 'border-error/30 bg-error/10 text-red-700'
+        : 'border-border bg-muted text-foreground'
 
   return (
-    <div className={`${bgColor} rounded-lg p-4 border border-gray-200`}>
-      <p className="text-gray-600 text-sm mb-1">{title}</p>
-      <p className={`${textColor} text-2xl font-bold`}>{value}</p>
-    </div>
-  );
-};
+    <Card className={trendClass}>
+      <CardHeader className="pb-2">
+        <CardTitle className="text-muted-foreground text-sm font-normal">{title}</CardTitle>
+      </CardHeader>
+      <CardContent>
+        <p className="text-2xl font-bold">{value}</p>
+      </CardContent>
+    </Card>
+  )
+}
 
 export function formatCurrency(cents: number): string {
   return `$${(cents / 100).toFixed(2)}`;

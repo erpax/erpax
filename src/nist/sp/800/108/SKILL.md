@@ -1,8 +1,49 @@
 ---
 name: "108"
 description: "Use when implementing or referencing NIST SP 800-108 — Recommendation for Key Derivation."
+atomPath: nist/sp/800/108
+coordinate: nist/sp/800/108 · 5/round · 90307b56
+contentUuid: "659c31cc-ceb1-5dc3-8ec6-6bb53537ff2b"
+diamondUuid: "9775656e-641f-88de-aa48-36c082de2494"
+uuid: "90307b56-db01-829d-996e-006e5366fd32"
+horo: 5
+bonds:
+  in: []
+  out:
+    - "359"
+typography:
+  partition: nist
+  bondDegree: 0
+  neighbors: []
+standards:
+  - "CoE-108+"
+  - "NIST SP-800-108 key-derivation-function"
+  - "NIST-FIPS-180-4"
+  - "NIST-SP-800-108"
+bindings: []
+neighbors:
+  wikilink: []
+  matrix: []
+  backlinks: []
+signatures:
+  computationUuid: "61711bd0-38c7-8657-b57c-d1c3c07bbdf2"
+  stages:
+    - stage: path
+      stageUuid: "f8c8ccb7-85e6-8279-a498-ab67ffac6e22"
+    - stage: trinity
+      stageUuid: "e560e31e-13f1-8fc2-bcd5-0fe56ba96d4a"
+    - stage: boundary
+      stageUuid: "fb2e7d6a-5c5c-85a5-a2a7-dbd592f9ab22"
+    - stage: links
+      stageUuid: "04479110-e782-8523-8dda-5ee4ce7957fb"
+    - stage: horo
+      stageUuid: "5c4ed5b9-ef12-8df8-bd16-896e20090e95"
+    - stage: seal
+      stageUuid: "3eccab13-08e9-8d8e-87c0-10a5b728b585"
+    - stage: uuid
+      stageUuid: "cd2088e6-f50d-8261-a601-8943c69435ff"
+version: 2
 ---
-
 # NIST SP 800-108 — Recommendation for Key Derivation
 
 **Edition in use:** NIST SP 800-108r1:2022 (HMAC counter-mode KDF).

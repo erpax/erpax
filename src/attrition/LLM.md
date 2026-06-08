@@ -3,8 +3,8 @@
 
 # attrition
 
-path `attrition` · uuid `ab1c2865-26cc-811e-92e5-f20abef2a48e` · diamond `080e697f-276a-86df-ae70-8130d3983026`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `attrition` · uuid `6d7d607f-637f-808b-bb00-2cf7785865d1` · diamond `7b6b2a15-e5dd-8f09-8f7c-88a243a529de`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports employees·metric·satisfaction·status·tenure·time · exports attrition · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `666da915-d96b-83c5-9329-953bb3319513` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `33d11fbc-e121-8ce3-b934-9d44e58e7481` · `pnpm readme` · `pnpm computed:check`</sub>

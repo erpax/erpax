@@ -3,7 +3,7 @@
 
 # aerobic
 
-path `aerobic` · uuid `b879bac1-e3b2-84b8-be13-fae83dd189ef` · diamond `19811a62-3b82-8813-98a9-ca538f683a50`
+path `aerobic` · uuid `e0994730-4389-860f-a44f-248fe0a4cf00` · diamond `9c2e7717-e328-803c-ae77-2852baad6832`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports aerobic · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
@@ -14,4 +14,4 @@ law aerobic is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `93f57359-a074-885a-b763-4c308d080580` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f1539ec0-aa9e-8f5c-bcbf-601f14c93886` · `pnpm readme` · `pnpm computed:check`</sub>

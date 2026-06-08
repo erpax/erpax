@@ -1,10 +1,137 @@
 ---
 name: deploy
-description: Use when deploying a Payload app to production or fixing build/migration/env issues — required secrets, running migrations vs dev push, building without a DB connection, file storage, or Cloudflare/Next/Docker specifics.
-sessions:
-  - 776a49cb-8dfb-45ab-88ff-956e3b613adf
+description: "Use when deploying a Payload app to production or fixing build/migration/env issues — required secrets, running migrations vs dev push, building without a DB connection, file storage, or Cloudflare/Next/Docker specifics."
+atomPath: deploy
+coordinate: deploy · 7/descent · 6d29bc8e
+contentUuid: "5cc71a67-76fa-54f8-ac60-ae652d497e9d"
+diamondUuid: "c23a0fe5-c101-80b5-9c0b-6a64ba00bcfa"
+uuid: "6d29bc8e-8025-824d-b43d-4e45ea2e4a6c"
+horo: 7
+bonds:
+  in:
+    - backup
+    - bindings
+    - command
+    - config
+    - database
+    - deploy
+    - dev
+    - gate
+    - harden
+    - harmony
+    - law
+    - mcp
+    - observability
+    - optimize
+    - reality
+    - rodin
+    - secret
+    - serverless
+    - stack
+    - upload
+  out:
+    - backup
+    - bindings
+    - command
+    - config
+    - database
+    - deploy
+    - dev
+    - gate
+    - harden
+    - harmony
+    - law
+    - mcp
+    - observability
+    - optimize
+    - reality
+    - rodin
+    - secret
+    - serverless
+    - stack
+    - upload
+typography:
+  partition: deploy
+  bondDegree: 90
+  neighbors:
+    - cloudflare
+standards:
+  - "the band is the doubling 1·2·4·8; its consonance is computed by @/harmony, the order never assumed"
+bindings: []
+neighbors:
+  wikilink:
+    - bindings
+    - config
+    - database
+    - gate
+    - harden
+    - harmony
+    - law
+    - reality
+    - rodin
+    - stack
+    - upload
+  matrix:
+    - backup
+    - bindings
+    - command
+    - config
+    - database
+    - deploy
+    - dev
+    - gate
+    - harden
+    - harmony
+    - law
+    - mcp
+    - observability
+    - optimize
+    - reality
+    - rodin
+    - secret
+    - serverless
+    - stack
+    - upload
+  backlinks:
+    - backup
+    - bindings
+    - command
+    - config
+    - database
+    - deploy
+    - dev
+    - gate
+    - harden
+    - harmony
+    - law
+    - mcp
+    - observability
+    - optimize
+    - reality
+    - rodin
+    - secret
+    - serverless
+    - stack
+    - upload
+signatures:
+  computationUuid: "548ed4f0-be02-84af-8699-38b07e33dbdb"
+  stages:
+    - stage: path
+      stageUuid: "b2dec97d-58be-8973-929d-1384ec4ddcf8"
+    - stage: trinity
+      stageUuid: "d1605ecd-c2ca-8852-a285-06f33468fde4"
+    - stage: boundary
+      stageUuid: "a6be035f-89e5-84b6-abe3-d9b2b5510ee9"
+    - stage: links
+      stageUuid: "d3db1d99-7bf0-8094-9885-10212d437084"
+    - stage: horo
+      stageUuid: "b5e85a3a-b277-81c7-9056-7df373b85df1"
+    - stage: seal
+      stageUuid: "27d11275-ff81-8418-b2b1-3e4c7625928e"
+    - stage: uuid
+      stageUuid: "2e5dc4f3-fb36-80a8-94be-4a9de8e4f9ee"
+version: 2
 ---
-
 # deploy — Payload production deployment
 
 Source: payloadcms.com/docs/production/deployment + /building-without-a-db-connection.

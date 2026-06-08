@@ -2,7 +2,7 @@
 
 # quotes
 
-> atom `customers/quotes` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
+> atom `customers/quotes` · horo `1` `base` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -23,9 +23,9 @@
 
 ## typography graph
 
-- partition `customers` · sub-root `85792e9b-a9f4-8af5-a801-0895f2af65cf`
-- bond degree `40` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- partition `customers` · sub-root `90301314-1363-8d40-8074-17ef0ba20d4c`
+- bond degree `33` · analysis neighbors —
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -40,24 +40,62 @@
 - `SOX §404 internal-controls quote-approval` · banner
 - `US-GAAP ASC-606-10-25 contract-existence` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·1 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `40` · sealed `1` · horo `8`
+- bond degree `33` · sealed `0` · horo `1`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `6`
 
 ## identity
 
-- uuid `a4474109-d68c-840d-b618-8d81a3c6d064`
-- bonds in `12` · out `13`
+- uuid `1b87138f-de36-8272-9fc9-b1a90b173bb5`
+- bonds in `9` · out `9`
 - trinity form·code·proof `1`·`1`·`1`
 - links `7` / `7`
 - folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `3b419e05-5224-8ef1-b8d7-6d43d29ea88e` · framed by typography partition `customers` bonds `40` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `6aaa736a-1815-8d96-8a10-3668867877ef` · framed by typography partition `customers` bonds `33` · `pnpm readme` · `pnpm readme:check`</sub>

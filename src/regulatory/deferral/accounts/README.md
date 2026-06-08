@@ -2,9 +2,11 @@
 
 # accounts
 
-> atom `regulatory/deferral/accounts` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
+> atom `regulatory/deferral/accounts` · horo `1` `base` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `regulatory/deferral/accounts` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,24 +23,127 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `seal:unsealed`
+- `trigger:Use when recognising IFRS 14 regulatory-deferral balances — under-recovery assets or over-recovery liabilities — for utilities or telcos under price-cap regimes on first-time IFRS adoption (§16 continuation of previous GAAP), tracking recovery period and period movements. The IFRS 14 regulatory-deferral register.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `3b1e18e0-c976-80c5-aba8-2dd9a61486d1` · `9590a347-39cd-8ad4-86f6-e89b8e208694` · `a973f200-3b07-82b6-8775-f796103cb7a2`
+- content uuids `70f96c16-182c-87b2-8ea6-75520c590b8b` · `de21add4-531f-89b0-9a2c-adc3a2c18648` · `f9e20f72-dde0-8efa-b72a-81624dd4937a`
+
+## [[entropy]] — gaps · seals
+
+> account code `regulatory/deferral/accounts` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.1` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `2` eb | Σ seal `11.1` eb |
+
+> net residual `-9.1` eb · seal/gap ratio `5.55` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `regulatory` · sub-root `cde9ea39-5ba4-8b83-aff8-8c740ff85d60`
-- bond degree `65` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- partition `regulatory` · sub-root `4a8b1007-7044-8b3b-a641-4672e7809871`
+- bond degree `44` · analysis neighbors —
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `IFRS IFRS-14 §16 continuation-of-previous-GAAP` · banner
+- `IFRS IFRS-14 §27 disclosure-requirements` · banner
+- `IFRS IFRS-14 §3 scope-first-time-adopter` · banner
+- `ISO-4217:2015 currency-codes` · banner
+- `ISO-8601-1:2019 date-time` · banner
+- `SOX §404 internal-controls` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·1 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `44` · sealed `0` · horo `1`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `6`
 
 ## identity
 
-- uuid `afb97329-3149-81a6-a9b4-65c605b99d4c`
-- bonds in `19` · out `22`
+- uuid `15b5affa-5db0-8e0d-8a2a-177a2309e4c2`
+- bonds in `10` · out `10`
 - trinity form·code·proof `1`·`1`·`1`
 - links `2` / `2`
 - folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `f2686b60-148f-8dbd-8107-35772211cabc` · framed by typography partition `regulatory` bonds `65` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `81520140-1ecd-823c-ad4c-85b650c54d13` · framed by typography partition `regulatory` bonds `44` · `pnpm readme` · `pnpm readme:check`</sub>

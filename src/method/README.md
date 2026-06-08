@@ -25,7 +25,23 @@
 
 - partition `method` · sub-root `0faf1d19-1570-8c19-8b95-672cd61e52f1`
 - bond degree `98` · analysis neighbors `diamond` · `quantum/boundary` · `tamper/import`
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `paths computed from live index.ts exports via parseMethodExports` · banner
+- `paths computed from live index.ts exports; never hand-listed` · banner
+- `schema.org — method vocabulary (collided homonym); ISO/IEC 25010:2023 §5.5 testability — pure path functions regression-locked` · banner
+
+## analytics
+
+- bond degree `98` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `3`
 
 ## identity
 
@@ -41,4 +57,4 @@
 
 ---
 
-<sub>content-uuid `a44d4b2c-672d-84e4-9721-3c8b54219d79` · framed by typography partition `method` bonds `98` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f25b1bb8-7f79-8994-ac65-4ea01b4459d2` · framed by typography partition `method` bonds `98` · `pnpm readme` · `pnpm readme:check`</sub>

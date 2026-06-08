@@ -3,8 +3,8 @@
 
 # barrier
 
-path `barrier` · uuid `52489704-67d5-86a9-b1ca-5cce213a2287` · diamond `be9d8231-35ef-88d6-9274-7d87bcda5884`
-horo `5` `round` · trinity `1·1·1` · sealed `1`
+path `barrier` · uuid `a4768324-4808-8424-99d5-72018a18d733` · diamond `7748f1be-4d11-8cc3-8e71-02942eaac9e8`
+horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports @/photon · exports const·function · escapes —
 links `14/14` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law tunnelling makes no barrier absolute — transmission T ≈ e^(−2κa) is e
 
 ---
 
-<sub>content-uuid `37698431-6f6b-8a72-b423-b709f94795b8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `17f2737d-0e28-8d2a-a621-145494ddb975` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # requests
 
-path `employees/leave/requests` · uuid `b4a902f2-885d-8c4e-bf89-5308d5f2348a` · diamond `e8643f62-f1e5-8a7a-a364-3abf46a4e39b`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+path `employees/leave/requests` · uuid `3feea78f-cac3-84ea-a33f-e3d6cc1da4d6` · diamond `36db970e-3c4d-8de2-b35c-aab7b03a8f71`
+horo `1` `base` · trinity `1·1·1` · sealed `0`
 imports @/base/accounting/field·@/factory · exports default · escapes —
-links `6/6` · folded `1` · bonds in `16` out `20`
+links `6/6` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `1·0·0`
-neighbors → access·accounting·assets·employees·identity·identity·law·law·orders·proof·proof·properties·request·resources·shred·spaces·standard·standard·transaction·users · ← access·accounting·assets·employees·identity·law·orders·proof·properties·request·resources·shred·spaces·standard·transaction·users
+neighbors → assets·law·orders·properties·request·resources·spaces·users · ← assets·law·orders·properties·request·resources·spaces·users
 analysis —
 law one row per employee leave request — its approval decrements the entitlement balance and feeds the IAS-19 accrual, checked against multi-jurisdiction minimum-leave rules; a single-folder collection node (no scatter, no drift).
 
 ---
 
-<sub>content-uuid `6e066746-7ad1-8fa0-88d1-c7eb034704bb` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d142b959-e69d-8722-bcf5-33c2a9c9b227` · `pnpm readme` · `pnpm computed:check`</sub>

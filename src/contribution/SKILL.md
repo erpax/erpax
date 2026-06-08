@@ -1,8 +1,158 @@
 ---
 name: contribution
-description: Use when many agents fill the society's gaps in parallel — shared discoveries (a minted atom, a closed gap, an internalised dependency) broadcast over the agent-sync bus, content-addressed so the same fill by two agents merges to one. Gaps filled by many; every contributor credited; recorded in git history. Matter-twin services/agent-sync/discovery.ts.
+description: "Use when many agents fill the society's gaps in parallel — shared discoveries (a minted atom, a closed gap, an internalised dependency) broadcast over the agent-sync bus, content-addressed so the same fill by two agents merges to one. Gaps filled by many; every contributor credited; recorded in git history. Matter-twin services/agent-sync/discovery.ts."
+atomPath: contribution
+coordinate: contribution · 1/base · 3efd58e0
+contentUuid: "2ad1e5d4-e127-53c1-9ebc-784a7cbafb10"
+diamondUuid: "3c8d05be-6a99-8633-8f50-07db7d4bd00c"
+uuid: "3efd58e0-70c7-86c1-9c67-d56fe62197ba"
+horo: 1
+bonds:
+  in:
+    - agent
+    - akashic
+    - aura
+    - chat
+    - competition
+    - cost
+    - derive
+    - faith
+    - generate
+    - give
+    - history
+    - holographic
+    - identity
+    - integrity
+    - law
+    - merge
+    - one
+    - proof
+    - refactor
+    - sacred
+    - self
+    - session
+    - society
+    - team
+  out:
+    - agent
+    - akashic
+    - aura
+    - chat
+    - competition
+    - cost
+    - derive
+    - faith
+    - generate
+    - give
+    - history
+    - holographic
+    - identity
+    - integrity
+    - law
+    - merge
+    - one
+    - proof
+    - refactor
+    - sacred
+    - self
+    - session
+    - society
+    - team
+typography:
+  partition: contribution
+  bondDegree: 74
+  neighbors:
+    - aura
+standards: []
+bindings: []
+neighbors:
+  wikilink:
+    - akashic
+    - aura
+    - chat
+    - cost
+    - derive
+    - generate
+    - give
+    - history
+    - holographic
+    - identity
+    - integrity
+    - merge
+    - one
+    - proof
+    - refactor
+    - self
+    - society
+  matrix:
+    - agent
+    - akashic
+    - aura
+    - chat
+    - competition
+    - cost
+    - derive
+    - faith
+    - generate
+    - give
+    - history
+    - holographic
+    - identity
+    - integrity
+    - law
+    - merge
+    - one
+    - proof
+    - refactor
+    - sacred
+    - self
+    - session
+    - society
+    - team
+  backlinks:
+    - agent
+    - akashic
+    - aura
+    - chat
+    - competition
+    - cost
+    - derive
+    - faith
+    - generate
+    - give
+    - history
+    - holographic
+    - identity
+    - integrity
+    - law
+    - merge
+    - one
+    - proof
+    - refactor
+    - sacred
+    - self
+    - session
+    - society
+    - team
+signatures:
+  computationUuid: "fc75491f-1296-8615-8792-1be7b516ef62"
+  stages:
+    - stage: path
+      stageUuid: "b6e73425-ef5b-877d-be0f-cdd04ca5c43f"
+    - stage: trinity
+      stageUuid: "56548cb6-80ac-8b2d-9c68-73030fc9ac47"
+    - stage: boundary
+      stageUuid: "b35fe55e-59d8-8fdb-ae1b-1e30f3ef1280"
+    - stage: links
+      stageUuid: "7152869c-e536-8dde-8f00-da35d170f8c5"
+    - stage: horo
+      stageUuid: "00beeeab-09ce-80d6-aa56-ff299eccdec4"
+    - stage: seal
+      stageUuid: "d9711e67-55a3-8806-8023-862118a171eb"
+    - stage: uuid
+      stageUuid: "5fd893e8-395c-8eca-b5a5-f7b09df74cbf"
+version: 2
 ---
-
 # contribution — shared discoveries fill gaps by many
 
 The [[society]]'s self-build step is one agent, one gate-verified move. `contribution` is the **many-agents** dimension: each move is a **discovery** — `mint` an atom, `weave` an orphan, `collapse` a node, `fix` an error, `internalise` a dependency ([[self]]-sufficiency), `proof` a bundle — broadcast over the agent-sync bus so every agent sees every other's work the instant it lands. *Shared discoveries improve development as gaps are filled by many.*

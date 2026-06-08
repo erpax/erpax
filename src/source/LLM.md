@@ -3,15 +3,15 @@
 
 # source
 
-path `source` · uuid `8ecf42b1-d42a-8792-bea8-02127a87a2a2` · diamond `488f5858-6fc4-8260-8990-4eacb217a86c`
+path `source` · uuid `8ecf42b1-d42a-8792-bea8-02127a87a2a2` · diamond `86a12e47-a70b-8122-9db9-8af92248a76f`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports accounting·audit·fields·identity·law · exports source · escapes —
-links `6/6` · folded `1` · bonds in `11` out `11`
+links `6/6` · folded `1` · bonds in `18` out `18`
 faces worker·plugin·pwa `0·0·0`
-neighbors → announcement·cohort·commission·hosp·landmarks·memories·oncologic·spa·stat·unsaturated·utterance · ← announcement·cohort·commission·hosp·landmarks·memories·oncologic·spa·stat·unsaturated·utterance
+neighbors → accounting·audit·baseline·customer·digital·empirical·enumeration·fields·generate·identity·iptc·item·label·law·organization·remorse·return·software · ← accounting·audit·baseline·customer·digital·empirical·enumeration·fields·generate·identity·iptc·item·label·law·organization·remorse·return·software
 analysis —
 law source is the origin metadata of data — the document, system, or account a record came from; what every proper noun anonymizes to, kept for [[audit]] and reconciliation.
 
 ---
 
-<sub>content-uuid `c5d82ebc-6511-8bd4-a344-52f749fd2ea2` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8b91f3c9-e775-89ab-bc9a-e9b1e6c70191` · `pnpm readme` · `pnpm computed:check`</sub>

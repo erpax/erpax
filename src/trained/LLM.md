@@ -3,15 +3,15 @@
 
 # trained
 
-path `trained` · uuid `8234aff0-9feb-88ae-8725-f32b575c0096` · diamond `c4b02a5a-ad9d-81ae-9b35-74f6fcd2eab0`
+path `trained` · uuid `8234aff0-9feb-88ae-8725-f32b575c0096` · diamond `072cf2c8-6d76-87b8-9ecf-0aed167a3c20`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports trained · escapes —
-links `4/4` · folded `1` · bonds in `6` out `6`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·mentions·stat·utterance · ← cohort·landmarks·memories·mentions·stat·utterance
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law trained is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `bd157050-5cb0-8fad-8d36-b495fc9bc99e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6b5ef246-4fd9-848e-9662-9c952eb7c399` · `pnpm readme` · `pnpm computed:check`</sub>

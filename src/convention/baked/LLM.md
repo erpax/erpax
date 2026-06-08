@@ -3,8 +3,8 @@
 
 # baked
 
-path `convention/baked` · uuid `a001bba0-9fa9-8838-80e5-2e8301a7e02c` · diamond `92c5c45d-b9f8-857f-adaf-24012f2d9dac`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `convention/baked` · uuid `4d0abb6c-9ecc-8655-b393-9e569b68339e` · diamond `7990de69-0e3e-8adf-ba74-e763cdfa5861`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports akashic·cost·fresh·law·skill·tamper · exports baked · escapes —
 links `12/12` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law any artifact fully derivable from src is gitignored and regenerated at build
 
 ---
 
-<sub>content-uuid `e34c6fb6-16fd-806b-8378-3f485d1485af` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `99188ae6-d4ec-83a1-932e-355438844a8e` · `pnpm readme` · `pnpm computed:check`</sub>

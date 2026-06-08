@@ -23,7 +23,21 @@
 
 - partition `parking` · sub-root `f5451ab7-54ba-8ad9-9d02-5e683290fa32`
 - bond degree `16` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `16` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `ea515729-0ab5-839f-8834-71959e60df87` · framed by typography partition `parking` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `586633b4-f4e8-8a19-88ff-96f57f9d470d` · framed by typography partition `parking` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

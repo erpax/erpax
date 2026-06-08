@@ -6,6 +6,8 @@
 
 ## [[debit]] · [[credit]]
 
+> account code `audit/trail/after/change` · currency `eb` (entropy-bit)
+
 | [[debit]] | [[credit]] |
 | -------- | --------- |
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
@@ -21,11 +23,60 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `law:every write emits a canonical audit entry on two channels — a streaming log and a Merkle-chained durable row — and the source write is never blocked by an audit failure.`
+- `seal:unsealed`
+- `trigger:Use when emitting an audit event after a Payload write — the afterChange hook builds a canonical AuditEntry, logs it to the streaming aggregator, and persists a durable, Merkle-chained row to the audit-events collection for tamper-evident SOX evidence.`
+- `trigger:every write emits a canonical audit entry on two channels — a streaming log and a Merkle-chained durable row — and the source write is never blocked by an audit failure.`
+- `trigger:matter-twin:src/audit/trail/after/change/index.ts`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `1a19ee64-eadc-8eda-b6db-c0b5f549f96d` · `70987c33-067b-8095-a2c7-3edb797f46d9` · `d9f2057f-2c7a-8107-9db1-10411e13ddde`
+- content uuids `45306e76-3500-8951-a477-946fa76c870d` · `8f5bb47c-f55c-8987-a30f-517ad51efbcb` · `f1838dc3-7ef8-88f0-a958-394d0dc0defe`
+
+## [[entropy]] — gaps · seals
+
+> account code `audit/trail/after/change` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.8` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `2` eb | Σ seal `11.8` eb |
+
+> net residual `-9.8` eb · seal/gap ratio `5.9` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `audit` · sub-root `798aecfe-af8a-8d6c-9989-a51055e00adf`
-- bond degree `19` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- partition `audit` · sub-root `886efad5-9cfb-87e4-a30b-a445ae4c7a71`
+- bond degree `15` · analysis neighbors —
+- graph root `86252db0-c776-84eb-b8e4-c884dca3a3ba`
 
 ## [[cloudflare]] bindings
 
@@ -33,7 +84,6 @@
 
 ## [[standards]]
 
-- `ISO-19011:2018 §6.4.6 audit-evidence-collection` · banner
 - `NIST FIPS-180-4 sha-256` · banner
 - `NIST-FIPS-180-4` · catalogue
 - `RFC-9562` · catalogue
@@ -41,16 +91,54 @@
 - `SOC-2 CC4.1 monitoring-and-evaluation` · banner
 - `SOX §404 internal-controls evidence-preservation` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·8 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `19` · sealed `0` · horo `8`
+- bond degree `15` · sealed `0` · horo `8`
 - variance `0` · balanced `1` · trinity sum `3`
-- bindings `0` · standards `7`
+- bindings `0` · standards `6`
 
 ## identity
 
-- uuid `21431e57-6817-8be0-ac40-c56c7e91f317`
-- bonds in `5` · out `7`
+- uuid `3a0ad4cf-5e0f-8d05-b18c-de47528c2263`
+- bonds in `4` · out `4`
 - trinity form·code·proof `1`·`1`·`1`
 - links `4` / `4`
 - folded `1` · escapes `0`
@@ -61,4 +149,4 @@
 
 ---
 
-<sub>content-uuid `4cad43e9-5d5a-89c7-abe5-2cb867720ac0` · framed by typography partition `audit` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `58a99730-08be-8d80-b6e5-570866749718` · framed by typography partition `audit` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

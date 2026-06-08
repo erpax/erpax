@@ -2,13 +2,16 @@
 
 # sti
 
-> atom `sti` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
+> atom `sti` · horo `7` `descent` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `sti` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
 | [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
@@ -16,28 +19,124 @@
 | [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
 | [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
-| Σ `8` | Σ `8` |
+| Σ `9` | Σ `9` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
+
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+- `gap:stray:[[gap]]/[[diamond]]/stray/vocabulary/`
+
+### collapse
+
+- `balance:variance=1`
+- `seal:unsealed`
+- `trigger:Use when reasoning about sti — Payload has no class inheritance. The STI analog is **one collections collection + a flat discriminator** (Rails' default) — is the polymorphic-*association* analog, blocks the het`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `1bfaeb6f-3ee1-8e1e-91ef-248279d3ea80` · `5e8247f1-96af-814d-ac4c-b2cd0b7394fb` · `6ad3bfd7-7a5e-84eb-aa8c-5e47086d9dc9` · `94e1e1aa-961c-8462-b31c-c355977d26ab`
+- content uuids `071be12b-7969-8c56-b392-eb26b43c7cc9` · `24ce5d4a-d69e-879e-95e8-958c0d03de07` · `7f74d4ee-d975-8067-8e9b-de6166f39d18` · `d2295984-16ad-8b92-b7f9-9927369c7616`
+
+## [[entropy]] — gaps · seals
+
+> account code `sti` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[diamond]]/stray/vocabulary/ `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.7` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+| Σ gap `3` eb | Σ seal `8.7` eb |
+
+> net residual `-5.7` eb · seal/gap ratio `2.9` · [[entropy]] · [[seal]]
 
 ## typography graph
 
-- partition `sti` · sub-root `6ce99b82-ecb3-870b-bd57-baef872a8a25`
-- bond degree `1531` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- partition `sti` · sub-root `2db48ab1-fee6-85c9-abc3-753421572f2c`
+- bond degree `0` · analysis neighbors —
+- graph root `33a1ea6e-dc58-8009-b0f9-2114d20f9dca`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `W3C-JSON-LD-1.1` · catalogue
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unbalanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| not-held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·7 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `0` · sealed `0` · horo `7`
+- variance `1` · balanced `0` · trinity sum `3`
+- bindings `0` · standards `1`
 
 ## identity
 
-- uuid `6ce99b82-ecb3-870b-bd57-baef872a8a25`
-- bonds in `9` · out `9`
-- trinity form·code·proof `1`·`0`·`1`
+- uuid `2db48ab1-fee6-85c9-abc3-753421572f2c`
+- bonds in `1511` · out `1511`
+- trinity form·code·proof `1`·`1`·`1`
 - links `21` / `21`
 - folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `dd8542da-182e-89de-953c-2d99359d17e1` · framed by typography partition `sti` bonds `1531` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f689b0b6-bad4-8baa-baa2-eb116f36cd5a` · framed by typography partition `sti` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

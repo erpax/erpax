@@ -3,8 +3,8 @@
 
 # class
 
-path `class` · uuid `1debef4f-1c02-8493-a0dc-a5843ff8f8c3` · diamond `65415e35-1d50-84fc-b44e-41615a2a8129`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `class` · uuid `3a3eeffd-f1f2-8199-8e60-4bf69efe72c6` · diamond `b9e5a924-5f91-81c1-8904-f0c2e7845db4`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports agent·biomechnical·drug·functional·infectious·law·structural · exports class · escapes —
 links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law class is one schema.org word, content-addressed; the same word collides ever
 
 ---
 
-<sub>content-uuid `ace47748-e8de-899c-9fd4-3df969d6563c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `147df09b-3108-8899-aef7-26dc212125ed` · `pnpm readme` · `pnpm computed:check`</sub>

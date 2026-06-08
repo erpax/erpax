@@ -3,8 +3,8 @@
 
 # chain
 
-path `business/chain` · uuid `1bb5f966-b73e-826e-bb0d-51e0fd4a5901` · diamond `4e61e2dc-2434-800f-93f0-abca9a44563a`
-horo `7` `descent` · trinity `1·1·1` · sealed `0`
+path `business/chain` · uuid `61d97984-1155-8640-9576-60c39d8687d4` · diamond `b2bcf49e-b199-86d7-b0ea-4966db947af9`
+horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports — · exports BUSINESS_CHAINS·BUSINESS_CHAIN_IDS·BusinessChain·BusinessChainRegistry·ChainRunResult·ChainStep·ChainStepProducer·SocraticCheck·chainsForCollection·chainsForFeature·createChainContext·runChain·teardownChainContext·type·wireChainProducersFor · escapes —
 links `3/3` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law each business chain is encoded ONCE — its steps, standards, and Socratic c
 
 ---
 
-<sub>content-uuid `00f74ca7-90f9-8f31-b134-44369eeca78e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a667b0b0-e683-876f-947c-dc11d395378d` · `pnpm readme` · `pnpm computed:check`</sub>

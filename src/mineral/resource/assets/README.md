@@ -2,9 +2,11 @@
 
 # assets
 
-> atom `mineral/resource/assets` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
+> atom `mineral/resource/assets` · horo `1` `base` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `mineral/resource/assets` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,24 +23,130 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `seal:unsealed`
+- `trigger:Use when registering or reporting IFRS 6 exploration & evaluation assets — wells, mines, concessions, quarries — capitalised under the §8 cost or revaluation policy, reclassified to PPE/intangibles once commercial viability is demonstrated (§17), or impaired (§18–22). The IFRS 6 E&E asset register.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `13460851-2afd-841a-87dc-05c55f34bb60` · `19969940-58bf-8bed-b44a-fb216abf6244` · `2c2f64e1-0207-84b7-ab2a-4b11c3b76167`
+- content uuids `3d6202ff-e81c-8dd2-a6b1-18985fdac805` · `b8cc9508-1fb1-8f08-bc4d-ed0ae1321c0b` · `dd50012f-e3e1-897e-838f-35ae82c84426`
+
+## [[entropy]] — gaps · seals
+
+> account code `mineral/resource/assets` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.1` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `2` eb | Σ seal `11.1` eb |
+
+> net residual `-9.1` eb · seal/gap ratio `5.55` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `mineral` · sub-root `217367ac-3732-8a4f-b2cb-a36333e63787`
-- bond degree `150` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- partition `mineral` · sub-root `a26409fa-adba-88b6-a804-209bcec6f18d`
+- bond degree `120` · analysis neighbors —
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `IFRS IFRS-6 §17 reclassification-to-PPE-or-intangibles` · banner
+- `IFRS IFRS-6 §18-§22 impairment-of-EE-assets` · banner
+- `IFRS IFRS-6 §23-§25 disclosure` · banner
+- `IFRS IFRS-6 §3 scope-exploration-and-evaluation` · banner
+- `IFRS IFRS-6 §8 measurement-policy-cost-or-revaluation` · banner
+- `IFRS-6` · catalogue
+- `ISO-4217:2015 currency-codes` · banner
+- `ISO-8601-1:2019 date-time` · banner
+- `SOX §404 internal-controls` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·1 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `120` · sealed `0` · horo `1`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `9`
 
 ## identity
 
-- uuid `303ae367-4c71-8291-9728-9f736ba9e6ce`
-- bonds in `45` · out `51`
+- uuid `d61a1052-8260-81e2-a844-74f7e927f09a`
+- bonds in `33` · out `33`
 - trinity form·code·proof `1`·`1`·`1`
 - links `6` / `6`
 - folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `5b1b2310-0ca1-809f-9168-331b00e0300a` · framed by typography partition `mineral` bonds `150` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0d85aace-8cda-846d-a5d3-46b0d7f047fa` · framed by typography partition `mineral` bonds `120` · `pnpm readme` · `pnpm readme:check`</sub>

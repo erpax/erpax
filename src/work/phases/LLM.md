@@ -3,15 +3,15 @@
 
 # phases
 
-path `work/phases` · uuid `1ab9b677-c1ef-801a-b4f4-c4c77758ccb3` · diamond `f3d259f7-d230-8a1f-b043-dfa421029874`
+path `work/phases` · uuid `1ab9b677-c1ef-801a-b4f4-c4c77758ccb3` · diamond `0ed864e1-6d11-8010-95ab-b3980d80d7af`
 horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
-links `18/18` · folded `1` · bonds in `2` out `2`
+links `18/18` · folded `1` · bonds in `11` out `16`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → accounting·accounting·balance·coordinate·coordinate·law·law·lots·lots·merge·merge·operations·phases·phases·sequence·variants · ← accounting·balance·coordinate·law·lots·merge·operations·phases·phases·sequence·variants
 analysis —
 law a work-phase is a product-independent KIND of process step (an open-vocabulary self-referential tree, acyclic) carrying the STANDARD time/resource that is the rate anchor; the catalog has no funnel of its own — its [[balance]] comes from being referenced, every [[lot/work/phases]] routing step resolving to a phase here (100% in etrima, [[merge]]: same phase ⇒ same id).
 
 ---
 
-<sub>content-uuid `230fbb38-3a87-8881-94a5-a3e6317feb65` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7a9f806a-1632-82c3-8f09-d9f7a26aa5a3` · `pnpm readme` · `pnpm computed:check`</sub>

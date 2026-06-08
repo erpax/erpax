@@ -1,8 +1,56 @@
 ---
-name: "edifact"
+name: edifact
 description: "Use when implementing or referencing UN/EDIFACT — UN rules for Electronic Data Interchange For Administration, Commerce and Transport."
+atomPath: un/edifact
+coordinate: un/edifact · 2/share · e09f5762
+contentUuid: "6d4f1dba-63d6-58be-aa21-23ee75381108"
+diamondUuid: "773ec984-51db-8b93-918e-5fc501a5d89a"
+uuid: "e09f5762-0a1b-89c0-bd0a-3bf4f507ebe8"
+horo: 2
+bonds:
+  in:
+    - law
+    - un
+  out:
+    - law
+typography:
+  partition: un
+  bondDegree: 3
+  neighbors: []
+standards:
+  - "ISO-9735"
+  - "ISO-9735:2002 edifact-syntax-rules"
+  - "UN-EDIFACT D.96A"
+  - "UN-EDIFACT INVOIC d96a`."
+  - "UN-EDIFACT INVOIC §LIN line-segment` — owning the canonical types here means the future EDI gateway service can project the project's data onto a typed structure before serialising the segment-based wire format."
+  - "UN-EDIFACT INVOIC §LIN line-segment`."
+bindings: []
+neighbors:
+  wikilink:
+    - law
+  matrix:
+    - law
+  backlinks:
+    - law
+signatures:
+  computationUuid: "ba20aba6-c378-8b54-bf89-6994c99c5de4"
+  stages:
+    - stage: path
+      stageUuid: "bad7961c-0a8e-8779-8ccb-34853ae787e1"
+    - stage: trinity
+      stageUuid: "e1122048-645d-8e53-b1b1-a36f6e2876cf"
+    - stage: boundary
+      stageUuid: "b1481376-3c6b-8f81-ac82-1c2c02cfdda5"
+    - stage: links
+      stageUuid: "ad32b6c8-d115-8968-8ddf-666869482ea0"
+    - stage: horo
+      stageUuid: "cde4beb0-f597-83a3-839e-a03e94111ace"
+    - stage: seal
+      stageUuid: "bb1b27c6-a15d-80ed-9f42-cd1835036ff5"
+    - stage: uuid
+      stageUuid: "66feff12-e8aa-8695-abda-9aa21a28d0c6"
+version: 2
 ---
-
 # UN/EDIFACT — UN rules for Electronic Data Interchange For Administration, Commerce and Transport
 
 **Edition:** UN/EDIFACT D.96A (the version cited in this codebase). UN/CEFACT publishes a new directory roughly twice a year (D.YYA / D.YYB); the syntax + segment grammar are stable across directories.

@@ -1,59 +1,29 @@
 'use client'
 
 /**
- * Generic form field wrapper component
- * Provides consistent label, error display, width layout, and required indicator
- * Eliminates duplication across Text, Email, Number, Textarea, Checkbox, etc.
- *
- * @example
- * <FormField name="email" label="Email" required errors={errors} width="full">
- *   <Input type="email" {...register('email')} />
- * </FormField>
+ * Generic form field wrapper — shadcn FormItem layout + Payload form errors.
  */
 
 import type { FieldErrorsImpl } from 'react-hook-form'
 import type { ReactNode } from 'react'
 import React from 'react'
-import { Label } from '@/ui'
+import { FormItem, Label } from '@/ui'
 import { useTranslations } from 'next-intl'
 import { Error } from '@/blocks/form/error'
 import { Width } from '@/blocks/form/width'
 
 export interface FormFieldProps {
-  /** Form field name (must match register name) */
   name: string
-  /** Label text to display above the input */
   label?: ReactNode
-  /** Whether the field is required (shows asterisk) */
   required?: boolean
-  /** Layout width (Payload form-builder uses numeric %; legacy fields may use string tokens) */
   width?: number | string
-  /** Form errors from react-hook-form */
   errors: Partial<FieldErrorsImpl>
-  /** The input component (Input, Textarea, Checkbox, Select, etc.) */
   children: ReactNode
-  /** Optional className to add to wrapper */
   className?: string
-  /** Optional hint text below the label */
   hint?: ReactNode
-  /** Show label above input (default: true) */
   showLabel?: boolean
 }
 
-/**
- * FormField component: Generic wrapper for all form input types
- * Handles: label, required indicator, error messages, layout
- *
- * Provides:
- * - Consistent styling across all input types
- * - Proper accessibility with labels and error messages
- * - Required field indicator
- * - Error display below input
- * - Optional hint text
- * - Flexible width support
- *
- * Eliminates duplication in Text, Email, Number, Textarea, Checkbox, Select, etc.
- */
 export const FormField: React.FC<FormFieldProps> = ({
   name,
   label,
@@ -70,25 +40,22 @@ export const FormField: React.FC<FormFieldProps> = ({
 
   return (
     <Width width={width}>
-      <div className={className}>
-        {showLabel && label && (
-          <Label htmlFor={name} className={hasError ? 'text-red-600' : ''}>
+      <FormItem className={className}>
+        {showLabel && label ? (
+          <Label htmlFor={name} className={hasError ? 'text-destructive' : undefined}>
             {label}
-            {required && (
+            {required ? (
               <span className="required">
                 {' '}
                 * <span className="sr-only">({t('required')})</span>
               </span>
-            )}
+            ) : null}
           </Label>
-        )}
-
-        {hint && <p className="text-sm text-gray-600 mt-1">{hint}</p>}
-
+        ) : null}
+        {hint ? <p className="text-muted-foreground text-sm">{hint}</p> : null}
         {children}
-
-        {hasError && <Error name={name} />}
-      </div>
+        {hasError ? <Error name={name} /> : null}
+      </FormItem>
     </Width>
   )
 }

@@ -2,7 +2,7 @@
 
 # blood
 
-> atom `blood` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
+> atom `blood` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -23,9 +23,9 @@
 
 ## typography graph
 
-- partition `blood` · sub-root `016700eb-d572-8a5f-86eb-a56dbf097a32`
-- bond degree `30` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- partition `blood` · sub-root `64c6394c-8450-8ecf-81c8-5d5134a2b234`
+- bond degree `37` · analysis neighbors —
+- graph root `1cef4f02-a3fa-83a5-8ea0-120b724ef456`
 
 ## [[cloudflare]] bindings
 
@@ -37,16 +37,54 @@
 - `computed (Hill equation · Little's law · mass balance) from cited constants` · banner
 - `Hill, J. Physiol. 1910 (cooperativity) · erythropoiesis (≈2M RBC/s, ≈120 d)` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·2 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `30` · sealed `1` · horo `1`
+- bond degree `37` · sealed `1` · horo `2`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `3`
 
 ## identity
 
-- uuid `016700eb-d572-8a5f-86eb-a56dbf097a32`
-- bonds in `10` · out `10`
+- uuid `64c6394c-8450-8ecf-81c8-5d5134a2b234`
+- bonds in `11` · out `11`
 - trinity form·code·proof `1`·`1`·`1`
 - links `14` / `14`
 - folded `1` · escapes `0`
@@ -57,4 +95,4 @@
 
 ---
 
-<sub>content-uuid `5fb1ee87-b171-888b-971e-5d8fc57b083b` · framed by typography partition `blood` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `11ed6e04-7b72-83b9-8c53-f1180ba7bad9` · framed by typography partition `blood` bonds `37` · `pnpm readme` · `pnpm readme:check`</sub>

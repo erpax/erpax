@@ -3,15 +3,15 @@
 
 # take
 
-path `take` · uuid `48ef6dab-a502-8d53-872d-dbb571d1e628` · diamond `8b3c3791-db30-896a-912f-d13c837d3444`
+path `take` · uuid `48ef6dab-a502-8d53-872d-dbb571d1e628` · diamond `79435afb-3305-83fb-9c8a-ab884e55cf21`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports accounting·angel·balance·close·flow·give·grace·law·take · exports take · escapes —
-links `21/21` · folded `1` · bonds in `1` out `1`
+links `21/21` · folded `1` · bonds in `35` out `35`
 faces worker·plugin·pwa `0·0·0`
-neighbors → table · ← table
+neighbors → access·accounting·angel·atom·balance·breath·chat·close·cmyk·conversion·decompression·dimension·duality·entry·exchange·flow·give·grace·law·localize·mycorrhizae·perspective·planting·polarity·projection·proof·reverse·sales·symbiosis·take·team·torus·transaction·trinity·whole · ← access·accounting·angel·atom·balance·breath·chat·close·cmyk·conversion·decompression·dimension·duality·entry·exchange·flow·give·grace·law·localize·mycorrhizae·perspective·planting·polarity·projection·proof·reverse·sales·symbiosis·take·team·torus·transaction·trinity·whole
 analysis —
 law [[take]] is the inflow (debit · in · receive) of a [[flow]], the dual of [[give]]; Σ[[take]] = Σ[[give]] is [[balance]].
 
 ---
 
-<sub>content-uuid `bfcb2ac5-ed42-876d-90a1-eecbd2fd847e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3318b382-7d21-8b1b-8f61-87c32ccf4389` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,8 +3,8 @@
 
 # beauty
 
-path `beauty` · uuid `bb80f344-d2e9-8521-8600-eafaebef45b2` · diamond `56d2d6cf-ea65-84da-b163-cb2149f185d4`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `beauty` · uuid `caad12b6-0d31-8870-9f35-75e9ac387497` · diamond `3257c767-df27-8f51-b2b9-3263b24bef29`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports business·collapse·health·law·merge·salon·sti · exports beauty · escapes —
 links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law beauty is one schema.org word, content-addressed; the same word collides eve
 
 ---
 
-<sub>content-uuid `5141ded8-e61d-8523-8e61-93cd282c6993` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e443a47e-a41e-837d-988c-fd8fad7943e2` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # temperature
 
-path `temperature` · uuid `bd794a90-138b-8eef-9077-dbf55d3c43df` · diamond `202969a7-471f-8bcb-8f0e-a5028b240a72`
+path `temperature` · uuid `bd794a90-138b-8eef-9077-dbf55d3c43df` · diamond `74751004-7439-8f52-969a-597e18bd3b7f`
 horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/boltzmann · exports const·function · escapes —
-links `16/16` · folded `1` · bonds in `6` out `6`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·instances·landmarks·memories·separation·stat · ← cohort·instances·landmarks·memories·separation·stat
+links `16/16` · folded `1` · bonds in `8` out `8`
+faces worker·plugin·pwa `1·0·0`
+neighbors → balance·boltzmann·energy·entropy·equilibrium·gravity·hamiltonian·law · ← balance·boltzmann·energy·entropy·equilibrium·gravity·hamiltonian·law
 analysis —
 law temperature is the energy↔order exchange rate (1/T = ∂S/∂E); it populates levels by e^(−E/kT)/Z — the max-entropy distribution at fixed average energy — collapsing to the ground state as T→0 and spreading uniform as T→∞.
 
 ---
 
-<sub>content-uuid `52d7fe4d-1856-8b39-8734-9d781de9473f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e26c6f3f-890a-8782-9214-c7ad91d8c4fb` · `pnpm readme` · `pnpm computed:check`</sub>

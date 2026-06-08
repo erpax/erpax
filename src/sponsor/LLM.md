@@ -3,15 +3,15 @@
 
 # sponsor
 
-path `sponsor` · uuid `174b1dc7-3db4-8bd2-930a-f910d018af4c` · diamond `1f0966bd-5b6f-8cb6-bfb7-15e3b7068eff`
+path `sponsor` · uuid `174b1dc7-3db4-8bd2-930a-f910d018af4c` · diamond `ad464012-324d-837d-a5c1-09c0e4ca62ea`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports sponsor · escapes —
-links `2/2` · folded `1` · bonds in `6` out `6`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·distinguishing·landmarks·memories·repeals·stat · ← cohort·distinguishing·landmarks·memories·repeals·stat
+neighbors → law·thing · ← law·thing
 analysis —
 law sponsor is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `7f6e320c-56af-8553-bb70-22b1684e4c21` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `54ed99fb-2604-8cad-9cb5-d304d1b40e44` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # ticker
 
-path `ticker` · uuid `1acdda75-aac5-848e-9a79-d305c8f5e4da` · diamond `6ee6f939-27cf-85e0-a55a-4646cd06bb8a`
+path `ticker` · uuid `1acdda75-aac5-848e-9a79-d305c8f5e4da` · diamond `a8876f8d-af05-858b-aeb2-d51e484fe63c`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·symbol · exports ticker · escapes —
-links `5/5` · folded `1` · bonds in `3` out `3`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → effectiveness·itnonprofit·landmarks · ← effectiveness·itnonprofit·landmarks
+neighbors → collapse·law·merge·sti·symbol · ← collapse·law·merge·sti·symbol
 analysis —
 law ticker is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `a8f68f38-028a-8190-b581-8361d30a507f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2eb92591-93bd-8dd7-a845-5c11a613255e` · `pnpm readme` · `pnpm computed:check`</sub>

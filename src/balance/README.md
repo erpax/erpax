@@ -2,7 +2,7 @@
 
 # balance
 
-> atom `balance` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
+> atom `balance` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -23,9 +23,9 @@
 
 ## typography graph
 
-- partition `balance` · sub-root `a333c702-6daf-8ba4-ab67-5e3a393db9fc`
-- bond degree `664` · analysis neighbors `aura`
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- partition `balance` · sub-root `300e9664-f5db-845f-ad87-f0fba1d2a3d8`
+- bond degree `671` · analysis neighbors `aura`
+- graph root `1cef4f02-a3fa-83a5-8ea0-120b724ef456`
 
 ## [[cloudflare]] bindings
 
@@ -37,16 +37,54 @@
 - `double-entry bookkeeping (Pacioli, 1494) — every credit a debit; imbalance is the bug` · banner
 - `UBL-2.1` · catalogue
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·4 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `664` · sealed `1` · horo `8`
+- bond degree `671` · sealed `1` · horo `4`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `3`
 
 ## identity
 
-- uuid `a333c702-6daf-8ba4-ab67-5e3a393db9fc`
-- bonds in `220` · out `216`
+- uuid `300e9664-f5db-845f-ad87-f0fba1d2a3d8`
+- bonds in `221` · out `221`
 - trinity form·code·proof `1`·`1`·`1`
 - links `32` / `32`
 - folded `1` · escapes `0`
@@ -57,4 +95,4 @@
 
 ---
 
-<sub>content-uuid `263e8b25-4e05-8869-b10c-60cc4828c743` · framed by typography partition `balance` bonds `664` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `115c7cdf-ed99-8a0c-ac97-8f67361f3d6f` · framed by typography partition `balance` bonds `671` · `pnpm readme` · `pnpm readme:check`</sub>

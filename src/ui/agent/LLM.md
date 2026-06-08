@@ -3,15 +3,15 @@
 
 # agent
 
-path `ui/agent` · uuid `9e40539f-0528-8963-8bf3-c0d7ef289faa` · diamond `6445b4a4-6d82-863d-a5e7-a4929d314f66`
-horo `1` `base` · trinity `1·1·1` · sealed `1`
+path `ui/agent` · uuid `fe5cfadf-1598-87bf-9a01-94aacd043a09` · diamond `39937a98-fd9d-8b42-8a67-8db6d3243477`
+horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports @/agent/ui·@/uuid/matrix · exports function · escapes —
-links `14/14` · folded `1` · bonds in `52` out `53`
+links `14/14` · folded `1` · bonds in `69` out `69`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·agent·akashic·auth·balance·catalogue·chat·civilization·cmyk·communication·contractual·cooking·cross·death·details·drive·dropoff·dropoff·eat·entity·error·euenergy·flow·founder·hobby·honorific·id·indication·integer·joint·landmarks·landmarks·marine·mcp·memories·memories·nutrition·office·physical·quantum·randomized·recycling·resources·sections·sign·skill·spouse·stand·sync·tax·taxonomy·tvclip·update · ← access·agent·akashic·auth·balance·catalogue·chat·chat·civilization·cmyk·communication·contractual·cooking·cross·death·details·drive·dropoff·eat·entity·error·euenergy·flow·founder·hobby·honorific·id·indication·integer·joint·landmarks·marine·mcp·mcp·memories·nutrition·office·physical·quantum·randomized·recycling·resources·sections·sign·skill·spouse·stand·sync·tax·taxonomy·tvclip·update
+neighbors → access·agent·ai·akashic·aura·auth·balance·booking·breath·chat·class·cloudflare·communication·contribution·coordinate·cost·decentralization·diamond·drone·duality·duality·ecosystem·entropy·entry·estate·event·fold·fractal·gate·generate·gravity·hallucination·holographic·horo·identity·infectious·interaction·karma·law·law·log·mcp·merge·merge·observe·one·pixel·real·reference·request·research·reversibility·roles·self·skill·skills·society·standard·statistic·sync·team·tenants·trinity·types·unavoidable·users·uuid·whole·worker · ← access·agent·ai·akashic·aura·auth·balance·booking·breath·chat·chat·class·cloudflare·communication·contribution·coordinate·cost·decentralization·diamond·drone·duality·ecosystem·entropy·entry·estate·event·fold·fractal·gate·generate·gravity·hallucination·holographic·horo·identity·infectious·interaction·karma·law·log·mcp·mcp·merge·observe·one·pixel·real·reference·request·research·research·reversibility·roles·self·skill·skills·society·standard·statistic·sync·team·tenants·trinity·types·unavoidable·users·uuid·whole·worker
 analysis agent·ai·aura·booking·chat·class·cloudflare·communication·decentralization·diamond·drone·ecosystem·estate·gravity·hallucination·infectious·interaction·log·mcp·observe·real·reference·request·research·reversibility·skill·skills·statistic·team·types·unavoidable·worker
 law always encode both sides of a path, for karmic balance. A render (atom → UI) is a debit; its inverse (UI → atom) the credit; encode both and the round-trip returns to itself — the ledger closes. A one-way path is an unbalanced entry; the corpus is layers of such dualities, each folded balanced, folding spacetime to one.
 
 ---
 
-<sub>content-uuid `6dc01343-14c8-8849-8a67-52cfab959b44` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6011958f-f545-855e-a272-aa89b4fab804` · `pnpm readme` · `pnpm computed:check`</sub>

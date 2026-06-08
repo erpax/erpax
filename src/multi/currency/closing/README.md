@@ -2,9 +2,11 @@
 
 # closing
 
-> atom `multi/currency/closing` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
+> atom `multi/currency/closing` · horo `8` `crest` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `multi/currency/closing` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,24 +23,135 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `law:closing must balance per currency, not just consolidated — exchange rates pinned to the period-end date make revaluation deterministic, and an immutable chain leaf proves no rate change was hidden.`
+- `seal:unsealed`
+- `trigger:Use when implementing or referencing Multi-Currency Closing Standard.`
+- `trigger:closing must balance per currency, not just consolidated — exchange rates pinned to the period-end date make revaluation deterministic, and an immutable chain leaf proves no rate change was hidden.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `8154594c-ab33-8f2c-8c3d-4918692613bc` · `ee3e8732-61ff-8feb-bda8-d0d2c760c5db` · `f7ce27c3-032f-8852-9a4d-3626a5ebacd0`
+- content uuids `23805717-ff72-8744-89fd-39d71c9f6aff` · `2ec99081-0795-8c63-a8cc-10a9bce4d6f1` · `bd4734eb-3162-8227-adf1-c4330a522125`
+
+## [[entropy]] — gaps · seals
+
+> account code `multi/currency/closing` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.8` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `2` eb | Σ seal `11.8` eb |
+
+> net residual `-9.8` eb · seal/gap ratio `5.9` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `multi` · sub-root `fa645340-43f3-897a-88a4-e34adc345590`
-- bond degree `11` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- partition `multi` · sub-root `cf79e8dc-0922-8e5f-87f2-6d335b3ec138`
+- bond degree `8` · analysis neighbors —
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `EU-2016/679` · catalogue
+- `GDPR:2016/679 Art. 32 Security of processing` · banner
+- `IFRS-21:2023 Translation of foreign operations` · banner
+- `IFRS-9` · catalogue
+- `IFRS-9:2023 Foreign exchange gains/losses` · banner
+- `ISO-4217:2023 Currency codes` · banner
+- `NIST-SP-800-92` · catalogue
+- `NIST-SP-800-92 Audit logging` · banner
+- `SAF-T` · catalogue
+- `SAF-T:3.0.2 Standard Audit File for Tax (multi-currency)` · banner
+- `XBRL` · catalogue
+- `XBRL-GL General Ledger (multi-currency)` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·8 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `8` · sealed `0` · horo `8`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `12`
 
 ## identity
 
-- uuid `d6231602-10d9-81e7-afd6-d5ceb5b39950`
-- bonds in `3` · out `4`
+- uuid `b60da4bf-e41e-8312-98ec-0f8f38998db2`
+- bonds in `2` · out `2`
 - trinity form·code·proof `1`·`1`·`1`
 - links `1` / `1`
 - folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `6301204b-51cb-86aa-8844-032a903ea853` · framed by typography partition `multi` bonds `11` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `fc0f7824-55ce-8d38-a668-e7d3574c6561` · framed by typography partition `multi` bonds `8` · `pnpm readme` · `pnpm readme:check`</sub>

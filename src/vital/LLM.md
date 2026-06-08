@@ -3,15 +3,15 @@
 
 # vital
 
-path `vital` · uuid `b3cb1a69-3b4c-8a54-b5b9-58132fafca82` · diamond `5c69247b-9af4-8d37-8ea0-6f082162021a`
+path `vital` · uuid `b3cb1a69-3b4c-8a54-b5b9-58132fafca82` · diamond `0528c35c-ab8a-8c6d-95d7-fb7a2e3549dc`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sign·sti · exports vital · escapes —
-links `5/5` · folded `1` · bonds in `5` out `5`
+links `5/5` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → alcohol·breadcrumb·follow·landmarks·posts · ← alcohol·breadcrumb·follow·landmarks·posts
+neighbors → biometric·collapse·law·merge·sign·sti · ← biometric·collapse·law·merge·sign·sti
 analysis —
 law vital is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `113bd721-cb9d-8293-bbfc-a740c69ec83d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3dc8520f-6b15-83de-9b22-84180bbbf8a8` · `pnpm readme` · `pnpm computed:check`</sub>

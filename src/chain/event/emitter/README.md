@@ -2,9 +2,11 @@
 
 # emitter
 
-> atom `chain/event/emitter` · horo `4` `weave` · [[balance]] `1` · [[seal]] `0`
+> atom `chain/event/emitter` · horo `8` `crest` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `chain/event/emitter` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,11 +23,59 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+
+### collapse
+
+- `balance:conserved`
+- `law:a status-transition emit fires once and only on the entry edge (prev ≠ toStatus = next) and only with a tenant — so the chain registry's declared emits is exactly what fires, leaving one [[audit]] event per real transition.`
+- `seal:unsealed`
+- `trigger:Use when an afterChange transition must fire a business-chain domain event — the wiring layer that maps a status change (or row-create) to one emitDomainEvent call so the chain registry's declared emits matches what actually fires.`
+- `trigger:a status-transition emit fires once and only on the entry edge (prev ≠ toStatus = next) and only with a tenant — so the chain registry's declared emits is exactly what fires, leaving one [[audit]] event per real transition.`
+- `trigger:matter-twin:src/chain/event/emitter/index.ts`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `3096a689-813d-8c2c-bf30-e874a3c72c8e` · `5cf70eca-480d-847e-8a88-3a08f5a702b1`
+- content uuids `157fb393-6a32-8803-b7a6-941a642dc6e0` · `97d26a81-1941-8039-9806-3b0c873d84f8`
+
+## [[entropy]] — gaps · seals
+
+> account code `chain/event/emitter` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.8` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `1` eb | Σ seal `11.8` eb |
+
+> net residual `-10.8` eb · seal/gap ratio `11.8` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `chain` · sub-root `78522b2d-1585-8a0c-a12e-0e5a1e0c78e1`
+- partition `chain` · sub-root `2f5c8da7-ea20-8616-9c80-e37c65717cca`
 - bond degree `12` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
 
 ## [[cloudflare]] bindings
 
@@ -33,18 +83,55 @@
 
 ## [[standards]]
 
-- `ISO-19011:2018 audit-trail event-emit` · banner
 - `SOX §404 internal-controls process-evidence` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·8 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
 
 ## analytics
 
-- bond degree `12` · sealed `0` · horo `4`
+- bond degree `12` · sealed `0` · horo `8`
 - variance `0` · balanced `1` · trinity sum `3`
-- bindings `0` · standards `2`
+- bindings `0` · standards `1`
 
 ## identity
 
-- uuid `78522b2d-1585-8a0c-a12e-0e5a1e0c78e1`
+- uuid `8bb68427-89cb-87bf-80ec-b581bd95d5bc`
 - bonds in `4` · out `4`
 - trinity form·code·proof `1`·`1`·`1`
 - links `7` / `7`
@@ -56,4 +143,4 @@
 
 ---
 
-<sub>content-uuid `2d368bc2-2550-88f4-8809-0b13975e7f86` · framed by typography partition `chain` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d0c1ec32-12dc-85b1-92d5-5b03781dd801` · framed by typography partition `chain` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

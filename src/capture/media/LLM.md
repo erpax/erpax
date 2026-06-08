@@ -3,15 +3,15 @@
 
 # media
 
-path `capture/media` · uuid `7b517e9c-e681-80b1-94a0-2efb4181418a` · diamond `105f846b-40c6-8e07-8755-1c46f8676042`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+path `capture/media` · uuid `f992f1b1-f565-8a98-913b-8d0055f057f7` · diamond `32cee6b0-997c-8c1c-8f2a-3b125ce81fcc`
+horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports — · exports async·function·interface · escapes —
-links `5/5` · folded `1` · bonds in `30` out `31`
+links `5/5` · folded `1` · bonds in `29` out `29`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·after·appearance·associated·audit·authenticity·before·category·context·during·enumeration·gallery·hooks·item·law·law·lexical·link·manipulation·media·news·object·organization·original·posting·posts·rating·review·social·subscription·upload · ← access·after·appearance·associated·audit·authenticity·before·category·context·during·enumeration·gallery·hooks·item·law·lexical·link·manipulation·media·news·object·organization·original·posting·posts·rating·review·social·subscription·upload
+neighbors → access·after·appearance·associated·authenticity·before·category·context·during·enumeration·gallery·hooks·item·law·lexical·link·manipulation·media·news·object·organization·original·posting·posts·rating·review·social·subscription·upload · ← access·after·appearance·associated·authenticity·before·category·context·during·enumeration·gallery·hooks·item·law·lexical·link·manipulation·media·news·object·organization·original·posting·posts·rating·review·social·subscription·upload
 analysis —
 law every recorded test artifact becomes a [[media]] record, and every video carries a WebVTT track built from its step titles — captured evidence is always captioned and provenance-bearing.
 
 ---
 
-<sub>content-uuid `6754559a-fc3f-8404-88e0-d4c67c34a38a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ec04a97a-f7a7-8540-a8d4-ce58440852c7` · `pnpm readme` · `pnpm computed:check`</sub>

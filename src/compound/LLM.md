@@ -3,8 +3,8 @@
 
 # compound
 
-path `compound` · uuid `9d0f3db7-e494-81df-ac4d-b0b90eb845f9` · diamond `c4c07fb8-6c16-8d72-bb22-9f19769d9862`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `compound` · uuid `45a1532b-768f-8418-bcb8-f74a9567de58` · diamond `825d6522-eddf-8294-b659-c7fb65be5c4d`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·price·specification·sti · exports compound · escapes —
 links `6/6` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law compound is one schema.org word, content-addressed; the same word collides e
 
 ---
 
-<sub>content-uuid `b65e4094-534e-8ed1-929a-e8bb67c1ad53` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0a21c2f2-e65c-8985-83fc-e75334bcfc59` · `pnpm readme` · `pnpm computed:check`</sub>

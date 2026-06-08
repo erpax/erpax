@@ -3,8 +3,8 @@
 
 # awarded
 
-path `awarded` · uuid `be196a5a-5f45-84a2-a044-1b03a1d56155` · diamond `f833a10c-349f-8f8d-8424-42b0af6ad692`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `awarded` · uuid `5115259a-1248-88d4-b514-0fdfe90b1beb` · diamond `400ae972-86ca-82f5-a4b2-f606a716cf1c`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·credential·educational·law·merge·occupational·sti · exports awarded · escapes —
 links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law awarded is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `2528d462-0f0d-85ac-ad97-4ea4266bca42` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `27df2d83-2cd9-8dcc-836b-ada79961eee8` · `pnpm readme` · `pnpm computed:check`</sub>

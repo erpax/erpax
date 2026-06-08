@@ -3,7 +3,7 @@
 
 # carbohydrate
 
-path `carbohydrate` · uuid `639a20eb-afe1-88f3-9759-4582678d9edc` · diamond `de671e8c-9b12-80fe-bbb5-7c77cbba941f`
+path `carbohydrate` · uuid `689fd174-99e7-86f2-a999-30ce0283b4ed` · diamond `6ed98427-d598-8f8e-bcf8-143135cae1eb`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·content·law·merge·sti · exports carbohydrate · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
@@ -14,4 +14,4 @@ law carbohydrate is one schema.org word, content-addressed; the same word collid
 
 ---
 
-<sub>content-uuid `87b55eb7-58dd-8a13-bd14-f7aebc064100` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `388e2dc7-8b84-8a1f-bf8c-f176b3fee209` · `pnpm readme` · `pnpm computed:check`</sub>

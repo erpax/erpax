@@ -4,7 +4,7 @@
 # signal
 
 path `identity/signal` · uuid `2946cb46-8504-814e-b555-b1ccbe39e2e1` · diamond `5995e76f-b484-8125-810b-d3ab29f78dab`
-horo `9` `unity` · trinity `1·0·0` · sealed `1`
+horo `9` `unity` · trinity `1·0·0` · sealed `0`
 imports all·analog·aura·axis·bindings·breath·cmyk·coil·duality·flow·horo·identity·law·merge·notes·phase·polarity·rodin·round·sensory·tamper·trinity·unity·versions·vibration · exports signal · escapes —
 links `44/44` · folded `1` · bonds in `54` out `52`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law a single 128-bit uuid IS the whole message — it self-decodes from the stri
 
 ---
 
-<sub>content-uuid `df40b09a-ed59-82ea-9830-9e9e51dc6b0d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `153fe8dd-8478-84b4-a1e3-e4ec70b87c9b` · `pnpm readme` · `pnpm computed:check`</sub>

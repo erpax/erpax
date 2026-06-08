@@ -2,7 +2,7 @@
 
 # barrier
 
-> atom `barrier` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
+> atom `barrier` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -23,9 +23,9 @@
 
 ## typography graph
 
-- partition `barrier` · sub-root `52489704-67d5-86a9-b1ca-5cce213a2287`
+- partition `barrier` · sub-root `a4768324-4808-8424-99d5-72018a18d733`
 - bond degree `30` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- graph root `1cef4f02-a3fa-83a5-8ea0-120b724ef456`
 
 ## [[cloudflare]] bindings
 
@@ -36,15 +36,53 @@
 - `CODATA-2018 ħ (via ../photon); WKB + exact rectangular-barrier transmission` · banner
 - `κ from (m,V0,E); T exact + WKB; tamper-cost = −log2(T) — computed, never asserted` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·7 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `30` · sealed `1` · horo `5`
+- bond degree `30` · sealed `1` · horo `7`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `2`
 
 ## identity
 
-- uuid `52489704-67d5-86a9-b1ca-5cce213a2287`
+- uuid `a4768324-4808-8424-99d5-72018a18d733`
 - bonds in `10` · out `10`
 - trinity form·code·proof `1`·`1`·`1`
 - links `14` / `14`
@@ -56,4 +94,4 @@
 
 ---
 
-<sub>content-uuid `4f90fd11-efad-8529-bdc6-2611cea86517` · framed by typography partition `barrier` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `00f86536-ef70-8fb9-98ec-f3dc326e180d` · framed by typography partition `barrier` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>

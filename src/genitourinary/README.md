@@ -23,7 +23,21 @@
 
 - partition `genitourinary` · sub-root `686decf2-f5d7-8232-beb2-0f3c2b438676`
 - bond degree `12` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `12` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `4789fd21-9837-8cc2-b3e3-42ebf1ff7c83` · framed by typography partition `genitourinary` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c522e491-e9c9-8ba0-a7df-ba1e5593c7d7` · framed by typography partition `genitourinary` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

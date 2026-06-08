@@ -3,15 +3,15 @@
 
 # trellis
 
-path `trellis` · uuid `e3a6d276-5d31-8fda-8d39-db48c5a48776` · diamond `9a1fcf39-eb24-8b18-b205-72e4dad39b85`
+path `trellis` · uuid `e3a6d276-5d31-8fda-8d39-db48c5a48776` · diamond `a78965e3-8228-801c-854d-5669a5b0d6df`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports agriculture·cost·crop·grade·law·pruning·scouting·tunnel·yield · exports trellis · escapes —
-links `19/19` · folded `1` · bonds in `4` out `4`
+links `19/19` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → agriculture·cost·crop·grade·law·pruning·scouting·tunnel·yield · ← agriculture·cost·crop·grade·law·pruning·scouting·tunnel·yield
 analysis —
 law a trellis is vertical support for a vining/heavy [[crop]] that trades a labor-and-materials [[cost]] for higher marketable [[yield]], better [[grade]], and lower disease pressure.
 
 ---
 
-<sub>content-uuid `02fc951c-ddcf-8c97-a890-4cfc205620cd` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f30b6b2b-f720-83ea-bf63-547e58c36808` · `pnpm readme` · `pnpm computed:check`</sub>

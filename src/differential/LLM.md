@@ -3,8 +3,8 @@
 
 # differential
 
-path `differential` · uuid `ea451907-d09f-809b-8aa9-047314c5ccce` · diamond `cfc07c39-2c8b-8ce2-88ff-43d11ab01c2c`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `differential` · uuid `b5fc7d30-cd28-8109-96b8-2782620f0345` · diamond `d8be8030-786c-8e65-9773-a68a3f8af91b`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·diagnosis·law·merge·sti · exports differential · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law the differential is the set of candidates not yet excluded; it narrows monot
 
 ---
 
-<sub>content-uuid `337f06f5-06cb-8659-b9f9-756feadc0c4b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `adcaabf1-56c3-81e6-aba2-76e28932d5b9` · `pnpm readme` · `pnpm computed:check`</sub>

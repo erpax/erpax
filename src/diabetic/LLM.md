@@ -3,8 +3,8 @@
 
 # diabetic
 
-path `diabetic` · uuid `eedfb2d0-caeb-8d5a-bf84-fb43ef9ef430` · diamond `ea92ef6d-afa0-8d84-9d0c-f174d652c75b`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `diabetic` · uuid `941bb276-8f6b-827d-b2b2-ea728ee4d6ec` · diamond `84a7c564-45b7-87f5-bc72-c26b2339f970`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports diabetic · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law diabetic is one schema.org word, content-addressed; the same word collides e
 
 ---
 
-<sub>content-uuid `1ddb1e9c-6748-860d-bc69-b2cab5413096` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `26c9f3dd-03ad-8b96-b91f-9f13f692841f` · `pnpm readme` · `pnpm computed:check`</sub>

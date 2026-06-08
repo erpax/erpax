@@ -3,8 +3,8 @@
 
 # considerations
 
-path `considerations` · uuid `444b3cf3-92e8-883b-9a25-00c86429e2d4` · diamond `e8822c85-04ef-8ab9-b686-036814da1110`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `considerations` · uuid `d9af5441-9c1e-8cff-86a1-e9f55a81d637` · diamond `fbea776f-3d0a-8192-8149-80dffa903d13`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·expert·law·merge·sti · exports considerations · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law considerations is one schema.org word, content-addressed; the same word coll
 
 ---
 
-<sub>content-uuid `5a5f7a22-541b-8755-afd6-abeb13a202c8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `63705ac7-d58b-8a7a-8e54-fc776914c9a2` · `pnpm readme` · `pnpm computed:check`</sub>

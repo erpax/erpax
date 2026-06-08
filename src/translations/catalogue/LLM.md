@@ -3,15 +3,15 @@
 
 # catalogue
 
-path `translations/catalogue` · uuid `74843589-709d-8177-ac5c-c7c4cad0a742` · diamond `0039b34f-cb72-819d-8aec-93d31668da66`
+path `translations/catalogue` · uuid `74843589-709d-8177-ac5c-c7c4cad0a742` · diamond `b4079921-6b01-85bf-bc40-ae84e418f8f5`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collect·law·translation·translations · exports catalogue · escapes —
-links `5/5` · folded `1` · bonds in `65` out `65`
-faces worker·plugin·pwa `0·0·0`
-neighbors → 3986·access·agent·akashic·analytics·angel·atom·aura·auth·balance·befriend·certified·chat·cohort·collections·competitor·complications·dance·declaration·dietary·diffusion·dropoff·embassy·encodes·enterprisebudget·flight·force·founder·gears·getting·hobby·holographic·id·idempotency·integrity·landmarks·license·log·memories·method·office·parent·pathophysiology·pats·policy·process·restriction·rodin·rule·satire·security·seed·sell·sequence·sign·soundtrack·spouse·syllabus·tax·tinid·transactions·tvclip·virus·voting·wp · ← 3986·access·agent·akashic·analytics·angel·atom·aura·auth·balance·befriend·certified·chat·cohort·collections·competitor·complications·dance·declaration·dietary·diffusion·dropoff·embassy·encodes·enterprisebudget·flight·force·founder·gears·getting·hobby·holographic·id·idempotency·integrity·landmarks·license·log·memories·method·office·parent·pathophysiology·pats·policy·process·restriction·rodin·rule·satire·security·seed·sell·sequence·sign·soundtrack·spouse·syllabus·tax·tinid·transactions·tvclip·virus·voting·wp
+links `5/5` · folded `1` · bonds in `4` out `4`
+faces worker·plugin·pwa `1·0·0`
+neighbors → collect·law·translation·translations · ← collect·law·translation·translations
 analysis —
 law the one canonical content-addressed index (the mass) of every atom's ported SKILL.md, recomputed from source by the coverage guard — the per-folder files are massless projections, no hallucination, zero entropy.
 
 ---
 
-<sub>content-uuid `d0f9df0d-fb7e-83fc-b3f1-9941b302835c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0eb16e20-5cbe-8f46-85fc-5f337c5b9166` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -23,7 +23,21 @@
 
 - partition `hobby` · sub-root `4f3ea5e1-df4a-86d9-b575-341e8ba1ede6`
 - bond degree `16` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `16` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `a2d056d3-cc67-84f3-b57b-b681aae632f4` · framed by typography partition `hobby` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `eb6a28ee-dbe1-8378-945b-b7b6ad128655` · framed by typography partition `hobby` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

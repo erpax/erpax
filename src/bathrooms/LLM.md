@@ -3,8 +3,8 @@
 
 # bathrooms
 
-path `bathrooms` · uuid `d140a039-836d-812f-b2bc-e678680dcec3` · diamond `fd013dc8-ebdd-8a6d-ac43-977986d43245`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `bathrooms` · uuid `d7c72558-7de0-885b-a97c-503969f7e372` · diamond `57f90b54-2a83-83ce-8a92-8e36df4d9460`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·full·law·merge·number·partial·sti·total · exports bathrooms · escapes —
 links `8/8` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law bathrooms is one schema.org word, content-addressed; the same word collides 
 
 ---
 
-<sub>content-uuid `1143bbc0-9196-8878-bafb-b8a9ddb82129` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8376adf8-9743-8d95-b850-8be1ee2cbd8e` · `pnpm readme` · `pnpm computed:check`</sub>

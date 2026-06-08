@@ -2,9 +2,11 @@
 
 # entries
 
-> atom `legal/entities/closing/entries` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
+> atom `legal/entities/closing/entries` · horo `5` `round` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `legal/entities/closing/entries` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,24 +23,126 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `law:period-end close zeroes the P&L accounts to retained earnings, auto-generates the reversing entries, locks the period, and leaves an immutable close audit trail.`
+- `seal:unsealed`
+- `trigger:Use when executing or auditing period-end close — closing P&L accounts to retained earnings, auto-generating reversing entries, locking the period, and producing an immutable close audit trail per IFRS IAS-1 / SOX §404. The period-close journal-entry collection.`
+- `trigger:period-end close zeroes the P&L accounts to retained earnings, auto-generates the reversing entries, locks the period, and leaves an immutable close audit trail.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `04450ea2-43f7-8871-947d-2aab26dc5ca9` · `a0d9ec68-c879-87c8-a1ae-adf681d1619d` · `a89c2ae5-dae8-83b4-8b4b-a1ddf1a4eb43`
+- content uuids `2a33ed4f-1133-87f8-b782-e344b3bc9dd8` · `5f8c2273-6a21-888d-9194-b9f28ff679cb` · `9f531657-ad2b-840d-8aa6-aef14183d58a`
+
+## [[entropy]] — gaps · seals
+
+> account code `legal/entities/closing/entries` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.5` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `2` eb | Σ seal `11.5` eb |
+
+> net residual `-9.5` eb · seal/gap ratio `5.75` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `legal` · sub-root `1fd2f1ff-ccee-87e0-8d80-12345443fed8`
-- bond degree `122` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- partition `legal` · sub-root `e259934b-eccd-8e89-bfbe-04889c9debb1`
+- bond degree `113` · analysis neighbors —
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `IFRS IAS-1 presentation-of-financial-statements` · banner
+- `SOX §404 period-close-integrity` · banner
+- `US-GAAP ASC-205 presentation` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·5 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `113` · sealed `0` · horo `5`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `3`
 
 ## identity
 
-- uuid `903df318-70a5-8608-9f3f-52170c6a3cd9`
-- bonds in `37` · out `40`
+- uuid `f0205628-43e1-894a-a16a-2bf0f0a7913c`
+- bonds in `34` · out `34`
 - trinity form·code·proof `1`·`1`·`1`
 - links `1` / `1`
 - folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `7bc0e7fa-2cd0-89e0-8249-a5b45611dfad` · framed by typography partition `legal` bonds `122` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `58d70298-ff53-8f33-817f-e1e365143baa` · framed by typography partition `legal` bonds `113` · `pnpm readme` · `pnpm readme:check`</sub>

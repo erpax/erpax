@@ -23,7 +23,21 @@
 
 - partition `paint` · sub-root `738ec5d1-4973-8784-900c-c8123a427630`
 - bond degree `15` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `15` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `cdaecea4-2865-8257-8264-0d4504a2838a` · framed by typography partition `paint` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `4a22e18b-d729-8d18-bb07-ebd9491f8720` · framed by typography partition `paint` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

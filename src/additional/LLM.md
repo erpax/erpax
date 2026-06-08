@@ -3,8 +3,8 @@
 
 # additional
 
-path `additional` · uuid `56f849e8-e482-8dd5-bd84-b7a8ede4fffe` · diamond `e1ddc78b-5400-8745-bfa3-6dff46e62a6a`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `additional` · uuid `85f826cc-6c52-804e-abf8-67c93924aabd` · diamond `9641e905-8f7a-801e-b24d-d2b8b5b73981`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·guests·law·merge·name·number·property·sti·type·variable · exports additional · escapes —
 links `10/10` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law additional is one schema.org word, content-addressed; the same word collides
 
 ---
 
-<sub>content-uuid `271692fa-1808-823f-8d39-34f7b8011c18` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0e20dc9e-7084-8b45-b669-938935012bff` · `pnpm readme` · `pnpm computed:check`</sub>

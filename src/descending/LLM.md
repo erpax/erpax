@@ -3,8 +3,8 @@
 
 # descending
 
-path `descending` · uuid `94a8c481-f484-81b5-8897-9eb80db1a80f` · diamond `d0d75da1-83e2-843e-909d-a3f5cc40d066`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `descending` · uuid `5dccbfad-118c-89d4-9ee2-e5b92b9e9862` · diamond `2d646fe4-e1e7-835a-b5cc-ea2068993c55`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports descending · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law descending is one schema.org word, content-addressed; the same word collides
 
 ---
 
-<sub>content-uuid `324499b8-b059-8ce6-bd8b-534fce9444ec` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3e49a71c-18cd-8a32-bf4f-b509c66a1e8d` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -2,9 +2,11 @@
 
 # chat
 
-> atom `agent/chat` · horo `8` `crest` · [[balance]] `1` · [[seal]] `0`
+> atom `agent/chat` · horo `4` `weave` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `agent/chat` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,11 +23,61 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `explore:agent`
+- `explore:aura`
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+
+### collapse
+
+- `balance:conserved`
+- `law:an agent chat is an ordered thread of content-[[uuid]] [[message]]s that folds to a chain-uuid — reorder or change any message and the thread's id changes, so the conversation is tamper-evident.`
+- `seal:unsealed`
+- `trigger:Use when agents converse — an ordered thread of content-uuid messages between agent ids; each message is a communication, the thread tamper-evident via the quantum chat chain.`
+- `trigger:an agent chat is an ordered thread of content-[[uuid]] [[message]]s that folds to a chain-uuid — reorder or change any message and the thread's id changes, so the conversation is tamper-evident.`
+- `trigger:matter-twin:src/agent/chat/index.ts`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `ad0d5906-76e8-8996-99ac-8c61233265e4` · `d0d05483-e5bf-88a2-88d4-1f8badea8c7b`
+- content uuids `1251466f-210a-8792-9034-1867c31659cd` · `4ef9d260-b236-80f8-81c1-f9597d3225aa`
+
+## [[entropy]] — gaps · seals
+
+> account code `agent/chat` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.4` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `1` eb | Σ seal `11.4` eb |
+
+> net residual `-10.4` eb · seal/gap ratio `11.4` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `agent` · sub-root `6c7e3159-1d51-809d-a4e0-83db8d6c35d5`
+- partition `agent` · sub-root `1488bd5f-84f8-8dcb-9d93-550b9453341d`
 - bond degree `213` · analysis neighbors `agent` · `aura`
-- graph root `06810c2c-2396-831f-a2b3-a58706a17051`
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
 
 ## [[cloudflare]] bindings
 
@@ -35,16 +87,54 @@
 
 —
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·4 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `213` · sealed `0` · horo `8`
+- bond degree `213` · sealed `0` · horo `4`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `0`
 
 ## identity
 
-- uuid `f914c1ec-09d2-8804-ad76-1d86bcfef351`
-- bonds in `60` · out `67`
+- uuid `714f462d-5d9a-8c45-b8c1-a1cd65fc8994`
+- bonds in `63` · out `63`
 - trinity form·code·proof `1`·`1`·`1`
 - links `12` / `12`
 - folded `1` · escapes `0`
@@ -55,4 +145,4 @@
 
 ---
 
-<sub>content-uuid `aae4a7f4-9e44-87ec-8b9f-69c187a3e544` · framed by typography partition `agent` bonds `213` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `999b5193-684c-86c2-a648-5c56dbc7c17e` · framed by typography partition `agent` bonds `213` · `pnpm readme` · `pnpm readme:check`</sub>

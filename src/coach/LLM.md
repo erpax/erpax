@@ -3,8 +3,8 @@
 
 # coach
 
-path `coach` · uuid `75c376eb-5dc1-8940-8dcb-6b9d820b9ee9` · diamond `d88719f0-c103-8286-88eb-96bc0cf4a392`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `coach` · uuid `0b9741bc-9b19-8ced-8ccc-0bdd5285a454` · diamond `f231d40f-5951-8e03-8c03-0226d9dbed40`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports bus·law · exports coach · escapes —
 links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law coach is one schema.org word, content-addressed; the same word collides ever
 
 ---
 
-<sub>content-uuid `022bbe5f-0f18-8910-9077-79d3647f7f66` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `32da775e-b0ff-8aa1-abfd-4d4d8116b51d` · `pnpm readme` · `pnpm computed:check`</sub>

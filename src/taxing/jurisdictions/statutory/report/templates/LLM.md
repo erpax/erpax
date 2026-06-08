@@ -3,15 +3,15 @@
 
 # templates
 
-path `taxing/jurisdictions/statutory/report/templates` · uuid `58a16b69-95a7-80fb-b842-726b18df5294` · diamond `f2658ed9-1653-8673-83fc-ebdbb1e2dac0`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+path `taxing/jurisdictions/statutory/report/templates` · uuid `d9612b98-8bac-8259-9705-a10e84d5359b` · diamond `9f38c168-67a4-8f5b-ba51-8bd1f7776b1a`
+horo `8` `crest` · trinity `1·1·1` · sealed `0`
 imports @/role/based/access · exports const · escapes —
 links `1/1` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → courthouse·landmarks · ← courthouse·landmarks
+neighbors → jurisdictions·mappings · ← jurisdictions·mappings
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `caf560f8-9be9-85bb-94b0-355c0ba8bf63` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7ea04e93-2a70-8438-ac45-9ac591438409` · `pnpm readme` · `pnpm computed:check`</sub>

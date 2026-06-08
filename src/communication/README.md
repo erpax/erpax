@@ -2,7 +2,7 @@
 
 # communication
 
-> atom `communication` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `communication` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -23,9 +23,9 @@
 
 ## typography graph
 
-- partition `communication` · sub-root `aea7ad79-ea24-8ce2-9e90-a4b0a9ed88ec`
-- bond degree `72` · analysis neighbors `agent`
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- partition `communication` · sub-root `bf773ac8-c02a-8ebd-aea5-fcff19e04a68`
+- bond degree `60` · analysis neighbors `agent`
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -36,16 +36,54 @@
 - `RFC-9562` · catalogue
 - `the message-uuid (self-decoding); RFC 9562 §5.8 content-uuid` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·1 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `72` · sealed `1` · horo `7`
+- bond degree `60` · sealed `1` · horo `1`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `2`
 
 ## identity
 
-- uuid `4216c47d-0575-848a-910e-ec04c82c54d8`
-- bonds in `17` · out `25`
+- uuid `bf773ac8-c02a-8ebd-aea5-fcff19e04a68`
+- bonds in `15` · out `15`
 - trinity form·code·proof `1`·`1`·`1`
 - links `16` / `16`
 - folded `1` · escapes `0`
@@ -56,4 +94,4 @@
 
 ---
 
-<sub>content-uuid `4d9d30c8-3ee6-801f-8711-d0239407a198` · framed by typography partition `communication` bonds `72` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f8286d3c-792b-8a8a-b587-a3d7019bbc3f` · framed by typography partition `communication` bonds `60` · `pnpm readme` · `pnpm readme:check`</sub>

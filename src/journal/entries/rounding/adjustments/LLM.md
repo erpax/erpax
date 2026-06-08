@@ -3,15 +3,15 @@
 
 # adjustments
 
-path `journal/entries/rounding/adjustments` · uuid `5727c556-3390-885f-864c-8023b4811026` · diamond `b3990b02-e944-8d93-8a8a-8601b2bd1504`
-horo `5` `round` · trinity `1·1·1` · sealed `1`
+path `journal/entries/rounding/adjustments` · uuid `1fa3539c-888c-82a0-91d9-30bfba4353b8` · diamond `e6ac93e4-f34a-8dac-89b3-bfbbda196017`
+horo `4` `weave` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
-links `6/6` · folded `1` · bonds in `18` out `25`
+links `6/6` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·accounting·accounting·accounting·accounts·accrual·adjustment·close·deferral·entries·entries·entries·fields·hooks·horo·law·law·law·law·periods·proof·runs·snapshots·standard·transactions · ← access·accounting·accounts·accrual·adjustment·close·deferral·entries·fields·hooks·horo·law·periods·proof·runs·snapshots·standard·transactions
+neighbors → accounting·adjustment·entries·horo·law·proof·standard · ← accounting·adjustment·entries·horo·law·proof·standard
 analysis —
 law a rounding plug exists only to close the residual between integer-cents totals and presentation-rounded statements, never exceeding the ±0.01 minimum unit per fragment.
 
 ---
 
-<sub>content-uuid `2b86c962-9ed7-8683-b3e0-960c6184860c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c919d957-ac95-8afa-84ec-0d909c85820b` · `pnpm readme` · `pnpm computed:check`</sub>

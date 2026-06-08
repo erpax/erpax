@@ -23,7 +23,21 @@
 
 - partition `optician` · sub-root `d3f415a5-8bf9-85e8-9caf-14e6b6bc9e14`
 - bond degree `6` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `6` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `63e114ef-54d2-8843-bcb3-bdd2c66ea2d7` · framed by typography partition `optician` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `7a3d1440-77ce-887e-b42c-b1f59a5b556d` · framed by typography partition `optician` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>

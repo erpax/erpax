@@ -3,8 +3,8 @@
 
 # column
 
-path `column` · uuid `ad6599fa-3200-8c30-89d8-dcc75faaf553` · diamond `5f12b8d1-320d-87f7-adc8-f0cf725ac087`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `column` · uuid `28bd1655-ddd1-8896-9e0f-c181dc60b017` · diamond `4c5507a9-1969-87cf-b833-23e9c4274ff0`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·print·sti · exports column · escapes —
 links `5/5` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law column is one schema.org word, content-addressed; the same word collides eve
 
 ---
 
-<sub>content-uuid `ff185772-0ea9-8c27-9456-ed1863683a1b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `399ad16e-b21b-8b06-9893-c41fa37bdc00` · `pnpm readme` · `pnpm computed:check`</sub>

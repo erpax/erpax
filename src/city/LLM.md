@@ -3,8 +3,8 @@
 
 # city
 
-path `city` · uuid `67a42720-40ed-8afb-8fef-cc4ac4c9f75d` · diamond `914bd1b3-460c-838a-945a-5865249fab8f`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `city` · uuid `f9da58c7-ead8-8645-8aab-23e9a2216cef` · diamond `dbdee4ce-3c30-82c8-9bce-bc889cd55f69`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports hall·law · exports city · escapes —
 links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law city is one schema.org word, content-addressed; the same word collides every
 
 ---
 
-<sub>content-uuid `63349fc0-e502-8f19-b6f0-b88fb638afbf` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `58e693c6-4cf7-8a1f-b5b5-522c7fa5fe00` · `pnpm readme` · `pnpm computed:check`</sub>

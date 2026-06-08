@@ -3,15 +3,15 @@
 
 # mcp
 
-path `mcp` · uuid `5f105b12-20b5-82f1-8c73-516cf2a12909` · diamond `b1eba652-bfbc-8ffc-8557-313c90d4f7c1`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `mcp` · uuid `5f105b12-20b5-82f1-8c73-516cf2a12909` · diamond `2ae976aa-ad11-831c-af7d-955a5ec96d43`
+horo `8` `crest` · trinity `1·0·0` · sealed `0`
 imports access·agent·api·atom·collections·dimension·fs·generate·github·path·payload·quantum·trust·uuid · exports mcp · escapes —
-links `25/25` · folded `1` · bonds in `44` out `52`
+links `25/25` · folded `1` · bonds in `45` out `53`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·access·access·agent·agent·angel·api·atom·atom·auth·bindings·broker·chat·collapse·collections·cost·deploy·dimension·domain·fs·generate·generator·github·identity·law·law·limit·log·mcp·mcp·memories·metadata·path·payload·payload·plugins·receipt·receipt·reference·request·research·sandbox·sandbox·scopes·self·skills·society·tool·trust·uuid·vitepress·workspace · ← access·agent·angel·api·atom·auth·bindings·broker·chat·collapse·collections·cost·deploy·dimension·domain·fs·generate·generator·github·identity·law·limit·log·mcp·mcp·memories·metadata·path·payload·plugins·receipt·reference·request·research·sandbox·scopes·self·skills·society·tool·trust·uuid·vitepress·workspace
-analysis agent
+neighbors → access·access·access·agent·agent·angel·api·atom·atom·auth·bindings·broker·chat·collapse·collections·cost·deploy·dimension·domain·fs·generate·generator·github·identity·industry·law·law·limit·log·mcp·mcp·memories·metadata·path·payload·payload·plugins·receipt·receipt·reference·request·research·sandbox·sandbox·scopes·self·skills·society·tool·trust·uuid·vitepress·workspace · ← access·agent·angel·api·atom·auth·bindings·broker·chat·collapse·collections·cost·deploy·dimension·domain·fs·generate·generator·github·identity·industry·law·limit·log·mcp·mcp·memories·metadata·path·payload·plugins·receipt·reference·request·research·sandbox·scopes·self·skills·society·tool·trust·uuid·vitepress·workspace
+analysis —
 law —
 
 ---
 
-<sub>content-uuid `2bdc579c-acc1-81f1-906b-82b4c3edb10d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6e4b4ff5-b28b-8034-83a4-9cfee83e296f` · `pnpm readme` · `pnpm computed:check`</sub>

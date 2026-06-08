@@ -2,9 +2,11 @@
 
 # 142
 
-> atom `etsi/en/319/142` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
+> atom `etsi/en/319/142` · horo `4` `weave` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `etsi/en/319/142` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,15 +23,120 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `seal:unsealed`
+- `trigger:Use when implementing or referencing `src/standards/etsi-en-319-142/`.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `04cc160d-77a4-8971-8e7d-184539adf154` · `27594638-30d3-81bd-88b3-b0d206ab5a3b` · `a8007922-0abe-844e-8e11-0065fa97d52e`
+- content uuids `17b0b1aa-194e-8af0-a6dc-a7093a105825` · `6bc98b84-064e-8825-9ce1-551b56b54093` · `a2e6daf4-6410-81f5-a2d6-08c8d9b5a06d`
+
+## [[entropy]] — gaps · seals
+
+> account code `etsi/en/319/142` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.4` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `2` eb | Σ seal `11.4` eb |
+
+> net residual `-9.4` eb · seal/gap ratio `5.7` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `etsi` · sub-root `42ad887a-1499-8765-be85-acada751e24f`
+- partition `etsi` · sub-root `8fc523b5-cfc6-8c69-99d9-25debcbe8666`
 - bond degree `0` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ETSI-EN-319-142` · catalogue
+- `ETSI-EN-319-142-1 v1.1.1 pades-baseline-profile` · banner
+- `EU 910/2014 eidas qualified-electronic-signature` · banner
+- `EU-2000/31` · catalogue
+- `EU-765/2008` · catalogue
+- `ISO-32000` · catalogue
+- `ISO-32000-1:2008 §12.8 pdf-signature-dictionary` · banner
+- `RFC-5652` · catalogue
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| not-held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·4 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `0` · sealed `0` · horo `4`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `8`
 
 ## identity
 
-- uuid `42ad887a-1499-8765-be85-acada751e24f`
+- uuid `08974c4b-672d-8a28-8f4a-0845e206e698`
 - bonds in `0` · out `0`
 - trinity form·code·proof `1`·`1`·`1`
 - links `0` / `0`
@@ -37,8 +144,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `8de629c4-2822-805c-a25f-a6fe1fe2b904` · framed by typography partition `etsi` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `7f431c77-0d6d-8a27-9354-d8142b8b506f` · framed by typography partition `etsi` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -2,9 +2,11 @@
 
 # registered
 
-> atom `agents/registered` · horo `4` `weave` · [[balance]] `1` · [[seal]] `0`
+> atom `agents/registered` · horo `5` `round` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `agents/registered` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,11 +23,58 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+
+### collapse
+
+- `balance:conserved`
+- `law:barrel re-export at `@/agents/registered`; trinity sealed for import purity.`
+- `seal:unsealed`
+- `trigger:Use when reasoning about registered — **Law — law: barrel re-export at ; trinity sealed for import purity.**`
+- `trigger:barrel re-export at `@/agents/registered`; trinity sealed for import purity.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `7e1550c7-dc9b-8d5f-bf4a-7ab42a7e1da3` · `ac67fff1-aeec-8832-bbb3-265d0a74f88a`
+- content uuids `0f0940f7-1d98-81fb-80a8-ff3b5b84bb73` · `687d8eed-e154-8147-a9ad-09b07dec7f79`
+
+## [[entropy]] — gaps · seals
+
+> account code `agents/registered` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.5` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `1` eb | Σ seal `11.5` eb |
+
+> net residual `-10.5` eb · seal/gap ratio `11.5` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `agents` · sub-root `d61c922b-8275-8cea-b2f7-58d389dcbd08`
-- bond degree `25` · analysis neighbors —
-- graph root `06810c2c-2396-831f-a2b3-a58706a17051`
+- partition `agents` · sub-root `ebb64057-771d-8596-aa2c-0ae29c531a68`
+- bond degree `24` · analysis neighbors —
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
 
 ## [[cloudflare]] bindings
 
@@ -59,16 +108,54 @@
 - `W3C-WAI-ARIA-1.2` · catalogue
 - `WCAG-2.1` · catalogue
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·5 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `25` · sealed `0` · horo `4`
+- bond degree `24` · sealed `0` · horo `5`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `25`
 
 ## identity
 
-- uuid `a5099e24-ed4b-8741-a28f-5c2acd661d93`
-- bonds in `7` · out `8`
+- uuid `661f54cc-743f-8ab8-9263-81f4db8ebd4b`
+- bonds in `7` · out `7`
 - trinity form·code·proof `1`·`1`·`1`
 - links `1` / `1`
 - folded `1` · escapes `0`
@@ -79,4 +166,4 @@
 
 ---
 
-<sub>content-uuid `9e78df2c-6adc-8650-af49-43f8ea3b5dcc` · framed by typography partition `agents` bonds `25` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `8574fe2b-43fd-877a-8cf5-24d2eac5bb09` · framed by typography partition `agents` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>

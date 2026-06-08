@@ -3,8 +3,8 @@
 
 # denonprofit
 
-path `denonprofit` · uuid `d8d19a3f-a909-854a-adb7-9e0094c1ce18` · diamond `c13e4073-dc40-8d72-a6df-c1fe05cff156`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `denonprofit` · uuid `7d6fd863-b36e-8379-bef7-efe14f2e82b7` · diamond `e89f1727-1193-893c-8dce-cac28e0f7d0a`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports denonprofit · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law denonprofit is one schema.org word, content-addressed; the same word collide
 
 ---
 
-<sub>content-uuid `1684f0ea-1f6f-8258-ae8c-6c4ecf849484` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2ae84682-87f8-8132-86b6-70077c20e7e4` · `pnpm readme` · `pnpm computed:check`</sub>

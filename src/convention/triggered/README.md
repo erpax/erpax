@@ -2,7 +2,7 @@
 
 # triggered
 
-> atom `convention/triggered` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
+> atom `convention/triggered` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -23,9 +23,9 @@
 
 ## typography graph
 
-- partition `convention` · sub-root `38cd2282-f75a-84ce-b2c7-ff7cff0bfb4c`
+- partition `convention` · sub-root `a93daa45-addb-8b21-89cd-ab385bae0306`
 - bond degree `25` · analysis neighbors `aura`
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -35,15 +35,53 @@
 
 - `schema.org — the type vocabulary, collided to single words` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·4 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `25` · sealed `1` · horo `1`
+- bond degree `25` · sealed `1` · horo `4`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `1`
 
 ## identity
 
-- uuid `8bcf5e04-3f10-8b44-92fd-eaaa81e3289f`
+- uuid `d159844c-ca25-8956-a198-469e13cdd90e`
 - bonds in `8` · out `8`
 - trinity form·code·proof `1`·`1`·`1`
 - links `13` / `13`
@@ -55,4 +93,4 @@
 
 ---
 
-<sub>content-uuid `3e771105-d884-837f-a247-8bf874d13e77` · framed by typography partition `convention` bonds `25` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `dcb71832-48a2-8780-8a34-264269f15c07` · framed by typography partition `convention` bonds `25` · `pnpm readme` · `pnpm readme:check`</sub>

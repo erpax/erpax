@@ -3,8 +3,8 @@
 
 # description
 
-path `description` · uuid `e75534a4-96f9-8453-929a-274ee7026823` · diamond `b9800251-12c9-8d50-8608-ec1883390a17`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `description` · uuid `97f6b2d3-c65b-8a14-aa51-41faca1d17d2` · diamond `3cbb75b8-ae71-8923-a5a8-93b5d7e02baf`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports audit·fields · exports description · escapes —
 links `2/2` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `30ad1d47-ac31-8221-a077-4d34e5809f70` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f0c0d10b-a7af-866e-a7e7-856c46f5bf19` · `pnpm readme` · `pnpm computed:check`</sub>

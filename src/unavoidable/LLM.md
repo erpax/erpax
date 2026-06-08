@@ -3,15 +3,15 @@
 
 # unavoidable
 
-path `unavoidable` · uuid `4b5f74c6-06b3-814d-bddc-a61e7840e614` · diamond `bc52b9ad-d033-8012-9268-ceacf4d6e09d`
+path `unavoidable` · uuid `4b5f74c6-06b3-814d-bddc-a61e7840e614` · diamond `84d07f7b-c639-891f-bec3-8427420cf4b7`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports agent·analytics·anchor·append·atom·aura·balance·bottleneck·collections·conservation·coordinate·cost·entropy·entry·gate·identity·law·merge·payload·proof·trinity·uuid·vitepress · exports unavoidable · escapes —
-links `24/24` · folded `1` · bonds in `4` out `4`
+links `24/24` · folded `1` · bonds in `25` out `25`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → agent·analytics·anchor·append·atom·aura·balance·bottleneck·collections·conservation·coordinate·cost·entropy·entry·gate·identity·law·merge·payload·proof·purity·trinity·uuid·vitepress·vocabulary · ← agent·analytics·anchor·append·atom·aura·balance·bottleneck·collections·conservation·coordinate·cost·entropy·entry·gate·identity·law·merge·payload·proof·purity·trinity·uuid·vitepress·vocabulary
 analysis agent·analytics·aura
 law —
 
 ---
 
-<sub>content-uuid `cac6be42-f10d-83e7-905c-9d5d3d167f8a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6115968c-b4b1-8208-b7cb-cdf35dea76e2` · `pnpm readme` · `pnpm computed:check`</sub>

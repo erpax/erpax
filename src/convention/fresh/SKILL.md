@@ -1,8 +1,60 @@
 ---
 name: fresh
-description: Use when reasoning about stale references as entropy — an import whose target does not exist on disk is a dead wire that lowers tamper-cost; this scans every `@/` import across src/scripts/.vitepress and reports the live fraction that resolves to a real file.
+description: "Use when reasoning about stale references as entropy — an import whose target does not exist on disk is a dead wire that lowers tamper-cost; this scans every `@/` import across src/scripts/.vitepress and reports the live fraction that resolves to a real file."
+atomPath: convention/fresh
+coordinate: convention/fresh · 5/round · cb062ec4
+contentUuid: "29b4a4d2-9414-565e-a35c-dfc1061b48b4"
+diamondUuid: "99285a10-b45f-8a03-af39-5f89948d6e42"
+uuid: "cb062ec4-bfa1-88ed-bf87-bc6d270d65ed"
+horo: 5
+bonds:
+  in:
+    - baked
+    - convention
+  out:
+    - baked
+typography:
+  partition: convention
+  bondDegree: 11
+  neighbors:
+    - tamper/import
+standards:
+  - "TypeScript module resolution (tsconfig `@/"
+  - "imports + existence scanned LIVE from src/scripts/.vitepress; coverage never hand-asserted"
+  - "imports + on-disk existence scanned LIVE from src/scripts/.vitepress; coverage = resolving/total, never hand-asserted"
+bindings: []
+neighbors:
+  wikilink:
+    - baked
+    - cost
+    - import
+    - law
+    - link
+    - shallow
+    - tamper
+  matrix:
+    - baked
+  backlinks:
+    - baked
+signatures:
+  computationUuid: "e1e4dfae-6750-8212-b6a4-ce2d7a0858b6"
+  stages:
+    - stage: path
+      stageUuid: "102fb3c0-d0a4-8e13-bf98-c3ab5266f117"
+    - stage: trinity
+      stageUuid: "a42741ce-c1d8-8741-8845-0963be4601f2"
+    - stage: boundary
+      stageUuid: "bddc46d3-0765-87a4-9ef0-f347e253b389"
+    - stage: links
+      stageUuid: "f1360c9e-4ecc-82d7-a420-5a3708ff0b2b"
+    - stage: horo
+      stageUuid: "34773975-cc76-8e2d-b238-c8596598a0d2"
+    - stage: seal
+      stageUuid: "80291566-8584-8b8c-9847-5cc952e9c605"
+    - stage: uuid
+      stageUuid: "014df213-c784-81b6-bc48-1211e51ddbd8"
+version: 2
 ---
-
 # convention/fresh — no stale refs, every import target exists on disk
 
 An `@/x` import is a **wire** from one atom to another. If the target does not exist on disk — a renamed atom, a deleted file, a typo, a generator template that emits an unresolvable path — the wire is **dead**: a *stale ref*. A stale ref is entropy that raises no tamper-[[cost]], and it is a latent break (the build, or the next reader, trips on it). So the convention is simple and absolute: **every import resolves to a real file.**

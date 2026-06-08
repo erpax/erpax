@@ -3,8 +3,8 @@
 
 # 19011
 
-path `iso/19011` · uuid `50128731-5b5b-8939-aa11-d034123f4a2a` · diamond `36b4a300-4f7c-848e-83c8-d2e04c673013`
-horo `1` `base` · trinity `1·1·1` · sealed `1`
+path `iso/19011` · uuid `50128731-5b5b-8939-aa11-d034123f4a2a` · diamond `9c4f5b85-f9a1-8bb5-9295-c499a62bc646`
+horo `1` `base` · trinity `1·1·0` · sealed `0`
 imports — · exports AuditChangeRecord·AuditEntry·AuditEntryInput·AuditOperation·AuditSeverity·AuditTrailContext · escapes —
 links `1/1` · folded `1` · bonds in `1` out `1`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law the audit-trail shape (`AuditEntry` who/what/when/why) has exactly one canon
 
 ---
 
-<sub>content-uuid `1a00a645-56f2-8863-9b78-e926fd1f9ee5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `25c8233d-2740-8761-849d-282da11aac1b` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -8,10 +8,10 @@ horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports balance·law·post·tweets · exports tweet · escapes —
 links `7/7` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → balance·law·post·tweets · ← balance·law·post·tweets
 analysis —
 law a tweet is a public post bound to its author and instant; once broadcast it is a fixed record, edited only by a new post that supersedes it.
 
 ---
 
-<sub>content-uuid `d45ea6c7-a82b-8d89-b0de-1b60d1466d9c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `668478da-a4e9-8aa1-ba26-db109af76506` · `pnpm readme` · `pnpm computed:check`</sub>

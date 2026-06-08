@@ -3,15 +3,15 @@
 
 # theater
 
-path `theater` · uuid `701c2f67-e6b1-88a1-ae91-010499250222` · diamond `e4b64ca8-67ef-8ace-bff8-ac4a6a979f55`
+path `theater` · uuid `701c2f67-e6b1-88a1-ae91-010499250222` · diamond `f97ea995-83be-82f4-8e05-853868c3b00f`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports arts·collapse·event·group·law·merge·movie·performing·sti · exports theater · escapes —
-links `9/9` · folded `1` · bonds in `5` out `5`
+links `9/9` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·sculpture·stat · ← cohort·landmarks·memories·sculpture·stat
+neighbors → arts·collapse·event·group·law·merge·movie·performing·sti · ← arts·collapse·event·group·law·merge·movie·performing·sti
 analysis —
 law theater is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `2b7cda68-1c97-865f-8cf4-367a1b15852e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `429b9341-6b64-885e-b5a1-f7ac88b35f92` · `pnpm readme` · `pnpm computed:check`</sub>

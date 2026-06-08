@@ -23,7 +23,21 @@
 
 - partition `mortgage` · sub-root `b60d3248-f185-8e7a-8a51-d04390421cd7`
 - bond degree `27` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `27` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `17d08258-6763-810c-b8d5-d46d9aa036b8` · framed by typography partition `mortgage` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ea8f83fc-9a6d-83be-91dd-ea070f5096ac` · framed by typography partition `mortgage` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>

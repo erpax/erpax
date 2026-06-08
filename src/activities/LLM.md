@@ -3,15 +3,15 @@
 
 # activities
 
-path `activities` · uuid `4a014d12-f969-891a-850d-7a18eebf73d5` · diamond `62548e3d-24a0-801d-879b-f1aa9e4e646e`
-horo `4` `weave` · trinity `1·1·1` · sealed `1`
+path `activities` · uuid `683e3f56-ae03-8d1c-be34-b392e91bbcf9` · diamond `28f0a268-5bb9-84bd-8a59-078d44227ee7`
+horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
-links `6/6` · folded `1` · bonds in `23` out `23`
+links `6/6` · folded `1` · bonds in `17` out `17`
 faces worker·plugin·pwa `1·0·0`
-neighbors → access·attribution·customers·dataprotection·engagement·escalation·fields·hooks·interview·law·leads·leadscore·opportunities·privilege·prospect·queue·records·retention·sentiment·sla·ticket·users·vendors · ← access·attribution·customers·dataprotection·engagement·escalation·fields·hooks·interview·law·leads·leadscore·opportunities·privilege·prospect·queue·records·retention·sentiment·sla·ticket·users·vendors
+neighbors → attribution·customers·engagement·escalation·interview·law·leads·leadscore·opportunities·prospect·queue·retention·sentiment·sla·ticket·users·vendors · ← attribution·customers·engagement·escalation·interview·law·leads·leadscore·opportunities·prospect·queue·retention·sentiment·sla·ticket·users·vendors
 analysis —
 law every CRM touch-point is one append-only logged activity — typed, directional (inbound/outbound), timestamped, attributed to a rep and a counterparty — so relationship history and last-touch are recoverable, never inferred.
 
 ---
 
-<sub>content-uuid `29835f83-f3e6-83b2-a9ee-287e53726b0b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7eff9be4-9529-82ca-b2a1-6a0091c6e745` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # properties
 
-path `properties/investment/properties` · uuid `bf1a0fd6-5666-8be1-8753-c3c46cb4a444` · diamond `264ff7c1-44d6-8b8c-954d-20f6512045da`
-horo `8` `crest` · trinity `1·1·1` · sealed `1`
+path `properties/investment/properties` · uuid `1ea523fa-07e8-8c38-a453-0ac55b096b5f` · diamond `a1994066-8c79-8bd0-81ac-c7c124571841`
+horo `8` `crest` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
-links `3/3` · folded `1` · bonds in `9` out `10`
+links `3/3` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `1·0·0`
-neighbors → classifications·impairment·leases·leases·measurements·orders·properties·properties·requests·spaces · ← classifications·impairment·leases·measurements·orders·properties·properties·requests·spaces
+neighbors → leases·orders·properties·requests·spaces · ← leases·orders·properties·requests·spaces
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `4a895060-3a7c-857c-842c-61786eca77c5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c4ea121e-efe3-89f2-89e4-32dd72a5c0a5` · `pnpm readme` · `pnpm computed:check`</sub>

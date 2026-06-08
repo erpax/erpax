@@ -1,8 +1,362 @@
 ---
 name: rodin
-description: Use when reasoning about the number substrate under erpax's state/sequence math — the Rodin vortex sequence 0·3·6·9·1·2·4·8·7·5 over the A432 anchor, digital-root (mod-9) arithmetic, the 3·6·9 triad axis vs the 1·2·4·8·7·5 doubling helix. The root the horo ring and the sequence both express.
+description: "Use when reasoning about the number substrate under erpax's state/sequence math — the Rodin vortex sequence 0·3·6·9·1·2·4·8·7·5 over the A432 anchor, digital-root (mod-9) arithmetic, the 3·6·9 triad axis vs the 1·2·4·8·7·5 doubling helix. The root the horo ring and the sequence both express."
+atomPath: rodin
+coordinate: rodin · 4/weave · 6fde7492
+contentUuid: "59aa568c-f159-5158-a5ae-8d42c82fc749"
+diamondUuid: "e09f53b4-d7b2-8a44-8734-7d1318e5d5ee"
+uuid: "6fde7492-b8b6-87fd-8fe5-091244e2dbc3"
+horo: 4
+bonds:
+  in:
+    - access
+    - akashic
+    - analog
+    - angel
+    - atom
+    - aura
+    - auth
+    - axis
+    - balance
+    - baseline
+    - boltzmann
+    - breath
+    - calculator
+    - chakra
+    - chat
+    - cmyk
+    - coil
+    - collapse
+    - config
+    - consciousness
+    - cost
+    - decompression
+    - deploy
+    - diamond
+    - duality
+    - dust
+    - element
+    - fold
+    - fractal
+    - hamiltonian
+    - harmony
+    - heart
+    - holographic
+    - honest
+    - hooks
+    - horo
+    - humandesign
+    - identity
+    - law
+    - leap
+    - linearity
+    - logic
+    - mala
+    - math
+    - merge
+    - metatron
+    - method
+    - notes
+    - octave
+    - operations
+    - phase
+    - polarity
+    - quantum
+    - religion
+    - render
+    - roles
+    - science
+    - self
+    - sequence
+    - signal
+    - similar
+    - skills
+    - society
+    - sparsity
+    - team
+    - torus
+    - train
+    - trinity
+    - typography
+    - uuid
+    - vibration
+    - zeropoint
+  out:
+    - access
+    - akashic
+    - analog
+    - angel
+    - atom
+    - aura
+    - auth
+    - axis
+    - balance
+    - baseline
+    - boltzmann
+    - breath
+    - calculator
+    - chakra
+    - chat
+    - cmyk
+    - coil
+    - collapse
+    - config
+    - consciousness
+    - cost
+    - decompression
+    - deploy
+    - diamond
+    - duality
+    - dust
+    - element
+    - fold
+    - fractal
+    - hamiltonian
+    - harmony
+    - heart
+    - holographic
+    - honest
+    - hooks
+    - horo
+    - humandesign
+    - identity
+    - law
+    - leap
+    - linearity
+    - logic
+    - mala
+    - math
+    - merge
+    - metatron
+    - method
+    - notes
+    - octave
+    - operations
+    - phase
+    - polarity
+    - quantum
+    - religion
+    - render
+    - roles
+    - science
+    - self
+    - sequence
+    - signal
+    - similar
+    - skills
+    - society
+    - sparsity
+    - team
+    - torus
+    - train
+    - trinity
+    - typography
+    - uuid
+    - vibration
+    - zeropoint
+typography:
+  partition: rodin
+  bondDegree: 239
+  neighbors: []
+standards:
+  - "RFC 9562 §5.8 content-uuid + the horo digital-root ring (mod 9)"
+  - "every quantity computed from the residues / live matrix, never asserted"
+bindings: []
+neighbors:
+  wikilink:
+    - access
+    - auth
+    - axis
+    - balance
+    - breath
+    - chakra
+    - cmyk
+    - coil
+    - config
+    - duality
+    - fractal
+    - holographic
+    - hooks
+    - horo
+    - identity
+    - merge
+    - metatron
+    - notes
+    - octave
+    - phase
+    - polarity
+    - sequence
+    - signal
+    - society
+    - team
+    - torus
+    - trinity
+    - vibration
+  matrix:
+    - access
+    - akashic
+    - analog
+    - angel
+    - atom
+    - aura
+    - auth
+    - axis
+    - balance
+    - baseline
+    - boltzmann
+    - breath
+    - calculator
+    - chakra
+    - chat
+    - cmyk
+    - coil
+    - collapse
+    - config
+    - consciousness
+    - cost
+    - decompression
+    - deploy
+    - diamond
+    - duality
+    - dust
+    - element
+    - fold
+    - fractal
+    - hamiltonian
+    - harmony
+    - heart
+    - holographic
+    - honest
+    - hooks
+    - horo
+    - humandesign
+    - identity
+    - law
+    - leap
+    - linearity
+    - logic
+    - mala
+    - math
+    - merge
+    - metatron
+    - method
+    - notes
+    - octave
+    - operations
+    - phase
+    - polarity
+    - quantum
+    - religion
+    - render
+    - roles
+    - science
+    - self
+    - sequence
+    - signal
+    - similar
+    - skills
+    - society
+    - sparsity
+    - team
+    - torus
+    - train
+    - trinity
+    - typography
+    - uuid
+    - vibration
+    - zeropoint
+  backlinks:
+    - access
+    - akashic
+    - analog
+    - angel
+    - atom
+    - aura
+    - auth
+    - axis
+    - balance
+    - baseline
+    - boltzmann
+    - breath
+    - calculator
+    - chakra
+    - chat
+    - cmyk
+    - coil
+    - collapse
+    - config
+    - consciousness
+    - cost
+    - decompression
+    - deploy
+    - diamond
+    - duality
+    - dust
+    - element
+    - fold
+    - fractal
+    - hamiltonian
+    - harmony
+    - heart
+    - holographic
+    - honest
+    - hooks
+    - horo
+    - humandesign
+    - identity
+    - law
+    - leap
+    - linearity
+    - logic
+    - mala
+    - math
+    - merge
+    - metatron
+    - method
+    - notes
+    - octave
+    - operations
+    - phase
+    - polarity
+    - quantum
+    - religion
+    - render
+    - roles
+    - science
+    - self
+    - sequence
+    - signal
+    - similar
+    - skills
+    - society
+    - sparsity
+    - team
+    - torus
+    - train
+    - trinity
+    - typography
+    - uuid
+    - vibration
+    - zeropoint
+signatures:
+  computationUuid: "e06c7e59-4e59-8a6c-96d3-f5d74e180e45"
+  stages:
+    - stage: path
+      stageUuid: "0cd2e29f-fd6c-835b-b528-bd3a2fbce4e8"
+    - stage: trinity
+      stageUuid: "0c037f50-0dc9-8f69-83eb-c0fd8c414fc0"
+    - stage: boundary
+      stageUuid: "cbcf5f17-901a-822a-89ea-5beef35be88b"
+    - stage: links
+      stageUuid: "162529bb-fc0d-8415-b46c-c7e64060efa3"
+    - stage: horo
+      stageUuid: "998d7f2d-08e7-8820-aa7c-0502e7be3d10"
+    - stage: seal
+      stageUuid: "db564569-a5dc-8f7b-b189-85c924420d69"
+    - stage: uuid
+      stageUuid: "a7c606b9-8b6b-8f14-90cc-ce58183911a8"
+version: 2
 ---
-
 # rodin — the vortex sequence (0·3·6·9·1·2·4·8·7·5 over A432)
 
 `rodin` is the number substrate every erpax order rides. One root integer — **A432** (the [[identity]] `0`, no displacement from the anchor) — and one sequence of ratios folding around it: `0 · 3·6·9 · 1·2·4·8·7·5`.

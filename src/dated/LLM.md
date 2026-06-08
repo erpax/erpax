@@ -3,8 +3,8 @@
 
 # dated
 
-path `dated` · uuid `ed7fdf63-8e62-8d10-b3b8-5c0f588faf79` · diamond `5379cec0-46c2-881f-b204-b25edc371d15`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `dated` · uuid `b52b6bd7-8a89-8255-95bc-f70c35e7bcb8` · diamond `a77819a5-7921-8f8e-925e-99fcc2f8715c`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·money·specification·sti · exports dated · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law dated is one schema.org word, content-addressed; the same word collides ever
 
 ---
 
-<sub>content-uuid `989a70ee-6201-81a0-aadf-a7097dbce109` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4c5ba9e8-c89a-8c67-b370-3f248ef12852` · `pnpm readme` · `pnpm computed:check`</sub>

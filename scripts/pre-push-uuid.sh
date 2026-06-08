@@ -18,4 +18,4 @@ cd "$(dirname "$0")/.." || exit 1
 export PATH="$PWD/node_modules/.bin:$PATH"
 export NODE_OPTIONS=--no-deprecation
 set -e
-pnpm run -s confirm:uuid
+pnpm erpax confirm uuid

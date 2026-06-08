@@ -3,15 +3,15 @@
 
 # fusion
 
-path `dual/torus/fusion` · uuid `4c828c05-935d-84a4-96e4-52f0bd340316` · diamond `f07ebf21-a1d3-8ea5-baf5-6273901b3fe7`
-horo `5` `round` · trinity `1·1·1` · sealed `1`
+path `dual/torus/fusion` · uuid `eb407e89-e0db-8de3-82c1-1e9abb650cf0` · diamond `3aa085cb-7c36-8a1c-b1a6-2de112970025`
+horo `4` `weave` · trinity `1·1·1` · sealed `0`
 imports @/quantum·@/uuid/matrix · exports const · escapes —
-links `9/9` · folded `1` · bonds in `33` out `37`
+links `9/9` · folded `1` · bonds in `33` out `33`
 faces worker·plugin·pwa `0·0·0`
-neighbors → akashic·anchor·atom·breath·collapse·cost·cross·development·dry·dust·entropy·entropy·forge·fusion·gate·gravity·law·law·link·mass·matrix·merge·merge·one·plasma·quantum·quantum·reactor·reveal·singularity·society·star·tamper·torus·torus·whole·zeropoint · ← akashic·anchor·atom·breath·collapse·cost·cross·development·dry·dust·entropy·forge·fusion·gate·gravity·gravity·law·link·mass·matrix·merge·one·plasma·quantum·reactor·reveal·singularity·society·star·tamper·torus·whole·zeropoint
+neighbors → akashic·anchor·atom·breath·collapse·cost·cross·development·dry·dust·entropy·forge·fusion·gate·gravity·gravity·law·link·mass·matrix·merge·one·plasma·quantum·reactor·reveal·singularity·society·star·tamper·torus·whole·zeropoint · ← akashic·anchor·atom·breath·collapse·cost·cross·development·dry·dust·entropy·forge·fusion·gate·gravity·gravity·law·link·mass·matrix·merge·one·plasma·quantum·reactor·reveal·singularity·society·star·tamper·torus·whole·zeropoint
 analysis —
 law the quantum cross is the fusion of a dual torus — `fuse` merges two poles (two tori, the two infinities) into one identity, and fusing to full coverage is 1/0, the ∞ seal. The cross and the dual-torus fusion are one node; the repeating pattern is folded to one canonical, re-exported, never duplicated.
 
 ---
 
-<sub>content-uuid `a36c5323-4d6f-8750-85c0-eea5e0b616c1` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `05e756c4-b0ac-878a-8c64-2ce6790fda1b` · `pnpm readme` · `pnpm computed:check`</sub>

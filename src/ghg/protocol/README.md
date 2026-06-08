@@ -2,7 +2,7 @@
 
 # protocol
 
-> atom `ghg/protocol` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
+> atom `ghg/protocol` · horo `4` `weave` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -25,7 +25,37 @@
 
 - partition `ghg` · sub-root `e342a455-3316-8de0-91ca-e267255f4406`
 - bond degree `3` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `EU ESRS E1 §44-50 ghg-emissions-disclosure (companion)` · banner
+- `EU-2011/83` · catalogue
+- `EU-2018/1673` · catalogue
+- `EU-2018/1725` · catalogue
+- `EU-2018/302` · catalogue
+- `EU-2018/389-SCA-RTS` · catalogue
+- `EU-2018/843` · catalogue
+- `EU-2018/957` · catalogue
+- `EU-ESRS` · catalogue
+- `EU-VAT-Implementing-Reg-282/2011` · catalogue
+- `GHG Protocol Corporate Standard (revised 2015)` · banner
+- `GHG Protocol Scope 2 Guidance (2015)` · banner
+- `GHG Protocol Scope 3 Standard (2011)` · banner
+- `GHG-Protocol` · catalogue
+- `IFRS S2 §29-32 climate-related-metrics (companion)` · banner
+- `ISO 14064-1:2018 organisation-level-ghg-quantification` · banner
+- `ISO-14064-1` · catalogue
+
+## analytics
+
+- bond degree `3` · sealed `0` · horo `4`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `17`
 
 ## identity
 
@@ -37,8 +67,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `f70f4b06-8742-88c2-ba97-e11211792fc2` · framed by typography partition `ghg` bonds `3` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c9d0e3ce-f266-8729-95aa-5c52dfb4db84` · framed by typography partition `ghg` bonds `3` · `pnpm readme` · `pnpm readme:check`</sub>

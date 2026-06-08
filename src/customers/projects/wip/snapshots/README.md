@@ -2,9 +2,11 @@
 
 # snapshots
 
-> atom `customers/projects/wip/snapshots` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
+> atom `customers/projects/wip/snapshots` · horo `7` `descent` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `customers/projects/wip/snapshots` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,11 +23,58 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+
+### collapse
+
+- `balance:conserved`
+- `law:each closed period freezes one immutable WIP valuation per project (cost-to-date, EAC, % complete, contract asset/liability) whose accrual JE balances — a sealed snapshot, never re-opened or recomputed.`
+- `seal:unsealed`
+- `trigger:Use when closing a fiscal period — capturing frozen WIP evidence (cost-to-date, EAC, % complete, recognised revenue, unbilled contract asset or deferred liability) per project per period, and anchoring the accrual JE. The IFRS-15 §B14-B19 period-end WIP valuation collection.`
+- `trigger:each closed period freezes one immutable WIP valuation per project (cost-to-date, EAC, % complete, contract asset/liability) whose accrual JE balances — a sealed snapshot, never re-opened or recomputed.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `736589e3-5a9e-8568-8d03-3b2ef567f2d6` · `f92e20f8-88e1-819a-a147-62a50dde696f`
+- content uuids `03917584-c1cc-8fb6-8273-bc53e717c785` · `d9aae621-b219-8e07-bbed-6942b3f1d432`
+
+## [[entropy]] — gaps · seals
+
+> account code `customers/projects/wip/snapshots` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.7` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `1` eb | Σ seal `11.7` eb |
+
+> net residual `-10.7` eb · seal/gap ratio `11.7` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `customers` · sub-root `85792e9b-a9f4-8af5-a801-0895f2af65cf`
-- bond degree `36` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- partition `customers` · sub-root `83c78df0-4d66-80df-ab25-5ba350869cf1`
+- bond degree `28` · analysis neighbors —
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
 
 ## [[cloudflare]] bindings
 
@@ -35,30 +84,67 @@
 
 - `IFRS IFRS-15 §107 §108 §109 contract-asset-contract-liability` · banner
 - `IFRS IFRS-15 §B14 §B15 §B16 §B17 §B18 §B19 measurement-of-progress` · banner
-- `ISO-19011:2018 audit-trail wip-evidence` · banner
 - `ISO-4217:2015 currency-codes` · banner
 - `ISO-8601-1:2019 date-time` · banner
 - `SOX §404 internal-controls revenue-recognition` · banner
 - `US-GAAP ASC-606-10-45-1 contract-asset` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·7 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `36` · sealed `1` · horo `4`
+- bond degree `28` · sealed `0` · horo `7`
 - variance `0` · balanced `1` · trinity sum `3`
-- bindings `0` · standards `7`
+- bindings `0` · standards `6`
 
 ## identity
 
-- uuid `f4bd1b21-dd8c-88d7-bbce-a530c718983c`
-- bonds in `10` · out `12`
+- uuid `23f12d2c-5fb9-8adf-86f4-334ceb670d08`
+- bonds in `7` · out `7`
 - trinity form·code·proof `1`·`1`·`1`
 - links `7` / `7`
 - folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `711755e3-1e88-87a1-a7f5-bba5efd30b9f` · framed by typography partition `customers` bonds `36` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `2e5cf3f8-38a0-8c4e-a534-cc1dab353f3e` · framed by typography partition `customers` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>

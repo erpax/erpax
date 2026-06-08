@@ -3,15 +3,15 @@
 
 # events
 
-path `fiscal/periods/post/balance/sheet/events` · uuid `6197c33f-5deb-8007-bd53-cf9866a7afb3` · diamond `2d0afce5-b72a-8594-a8b6-ee73d290a7af`
-horo `8` `crest` · trinity `1·1·1` · sealed `1`
+path `fiscal/periods/post/balance/sheet/events` · uuid `fa605346-3e46-8164-9047-7afa8c16746a` · diamond `eaf2d2c2-5f48-8380-b97f-28ba0f2b1299`
+horo `2` `share` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
-links `4/4` · folded `1` · bonds in `23` out `27`
+links `4/4` · folded `1` · bonds in `12` out `12`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·accounting·auditright·auth·carriers·currency·entries·fields·hooks·horo·identity·incident·instances·law·law·law·lineage·materiality·observability·party·periods·proof·proof·shipments·standard·standard·sub · ← access·accounting·auditright·auth·carriers·currency·entries·fields·hooks·horo·identity·incident·instances·law·lineage·materiality·observability·party·periods·proof·shipments·standard·sub
+neighbors → auditright·horo·identity·incident·instances·lineage·materiality·observability·party·proof·standard·sub · ← auditright·horo·identity·incident·instances·lineage·materiality·observability·party·proof·standard·sub
 analysis —
 law an event after the reporting date is either adjusting (IAS 10 §8 — book it) or non-adjusting (§10 — disclose only); the classification, fixed by whether it evidences a condition existing at the reporting date, decides whether a journal entry is posted.
 
 ---
 
-<sub>content-uuid `074b7a68-ba76-85e5-98f3-bdabef26855b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `83437b5c-4d83-8294-80c5-e5455d093a2b` · `pnpm readme` · `pnpm computed:check`</sub>

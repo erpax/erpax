@@ -2,7 +2,7 @@
 
 # decompression
 
-> atom `decompression` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
+> atom `decompression` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -23,9 +23,9 @@
 
 ## typography graph
 
-- partition `decompression` · sub-root `4ea923f2-d487-810b-80e5-3b314ab97aac`
+- partition `decompression` · sub-root `51d09de6-25c4-8a67-a9f1-7f04ef95f1b2`
 - bond degree `141` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -40,15 +40,53 @@
 - `SFIA 8 responsibility-levels (1..7) — the M-value depth axis` · banner
 - `UBL-2.1` · catalogue
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·4 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `141` · sealed `1` · horo `2`
+- bond degree `141` · sealed `1` · horo `4`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `6`
 
 ## identity
 
-- uuid `4ea923f2-d487-810b-80e5-3b314ab97aac`
+- uuid `51d09de6-25c4-8a67-a9f1-7f04ef95f1b2`
 - bonds in `46` · out `46`
 - trinity form·code·proof `1`·`1`·`1`
 - links `95` / `95`
@@ -60,4 +98,4 @@
 
 ---
 
-<sub>content-uuid `1fb24624-04ab-816b-802b-fe9a3cb0183d` · framed by typography partition `decompression` bonds `141` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `baa8efda-3dfd-8c82-8af2-8e64881b52cd` · framed by typography partition `decompression` bonds `141` · `pnpm readme` · `pnpm readme:check`</sub>

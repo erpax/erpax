@@ -3,15 +3,15 @@
 
 # truth
 
-path `standard/truth` · uuid `2b14c6d3-c197-8b2a-9851-690ee7854a53` · diamond `b9d97156-a057-8365-9b36-c3de96beb792`
+path `standard/truth` · uuid `2b14c6d3-c197-8b2a-9851-690ee7854a53` · diamond `ffbc9a6e-a7d9-87a7-9712-6ea17c3a2529`
 horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports — · exports function·interface · escapes —
-links `7/7` · folded `1` · bonds in `6` out `6`
+links `7/7` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·discover·landmarks·memories·specified·stat · ← cohort·discover·landmarks·memories·specified·stat
+neighbors → access·audit·merge·proof·standard·standards·tamper·wisdom · ← access·audit·merge·proof·standard·standards·tamper·wisdom
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `241fba9c-b62e-8674-a14d-fdd4f36e4693` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e805ba56-e32c-8a1f-aa96-eb8d6acece69` · `pnpm readme` · `pnpm computed:check`</sub>

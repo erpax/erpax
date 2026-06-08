@@ -3,15 +3,15 @@
 
 # mappings
 
-path `taxing/jurisdictions/reporting/standards/reporting/mappings` · uuid `b645497a-f1fc-8b23-8a39-90b0db54bbb7` · diamond `a23ef691-96fa-8dae-9a5b-fa6f5f7ecabc`
-horo `8` `crest` · trinity `1·1·1` · sealed `1`
+path `taxing/jurisdictions/reporting/standards/reporting/mappings` · uuid `0b74309b-8e3e-82cd-9b95-6e6217d380c3` · diamond `14fb2788-6932-8089-a4e5-f1f2fa74f984`
+horo `1` `base` · trinity `1·1·1` · sealed `0`
 imports @/role/based/access · exports const · escapes —
-links `1/1` · folded `1` · bonds in `6` out `6`
+links `1/1` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → brow·classifications·cohort·landmarks·memories·stat · ← brow·classifications·cohort·landmarks·memories·stat
+neighbors → law·mapping·standards · ← law·mapping·standards
 analysis —
 law reporting-mappings is the cross-standard element-mapping node — each row binds one source element to its target (account · line-item · disclosure · metric) across reporting frameworks (XBRL-GL · IFRS-Taxonomy · SAF-T).
 
 ---
 
-<sub>content-uuid `a7d5bc1f-e0d8-8f8a-89a4-9791a35b0bc4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `dc868ada-437b-8dc8-b482-4e349f3e299f` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -23,7 +23,21 @@
 
 - partition `lineage` · sub-root `d2716b54-26bb-878e-bd2f-be75d6687051`
 - bond degree `97` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `97` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `415b4084-3a81-868b-bc7f-8331f63697d2` · framed by typography partition `lineage` bonds `97` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `2e112a86-4754-87e2-8024-b05b10bfa938` · framed by typography partition `lineage` bonds `97` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -4,7 +4,7 @@
 # marketing
 
 path `marketing` · uuid `5494e8f5-d321-8da6-a8a9-99e80e369d49` · diamond `00cb125e-a94e-86dd-af79-8fcad72451ae`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+horo `1` `base` · trinity `1·0·0` · sealed `0`
 imports collapse·health·law·merge·plan·sti·url · exports marketing · escapes —
 links `7/7` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law marketing is one schema.org word, content-addressed; the same word collides 
 
 ---
 
-<sub>content-uuid `e9596f18-3368-859a-9ff3-df29894f860f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `353bcf0d-e2a0-8a7a-b330-e89fedd3f4fa` · `pnpm readme` · `pnpm computed:check`</sub>

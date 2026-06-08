@@ -3,15 +3,15 @@
 
 # records
 
-path `consent/records` · uuid `9e218633-37a6-882e-b6eb-03df4067243a` · diamond `fef472cf-f109-866b-9982-8ef4cbec300c`
-horo `8` `crest` · trinity `1·1·1` · sealed `1`
+path `consent/records` · uuid `30f1204c-0a78-89f3-8d09-69ef49907f3d` · diamond `37d21ee2-ac5b-8720-b375-836ce23d9642`
+horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports @/auth·@/auto/set/timestamp·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
-links `5/5` · folded `1` · bonds in `12` out `14`
+links `5/5` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·accounting·activities·commerce·consent·dataprotection·fields·hooks·identity·identity·standard·standard·suggestions·transaction · ← access·accounting·activities·commerce·consent·dataprotection·fields·hooks·identity·standard·suggestions·transaction
+neighbors → access·activities·consent·dataprotection·fields·hooks·identity·standard · ← access·activities·consent·dataprotection·fields·hooks·identity·standard
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `7465f18e-dc3e-8f5f-aaf6-0642f6abedd4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `17270089-9fe8-8505-a179-6047be307646` · `pnpm readme` · `pnpm computed:check`</sub>

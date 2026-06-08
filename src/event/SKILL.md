@@ -1,8 +1,268 @@
 ---
 name: event
-description: The domain-event atom — an afterChange [[hooks]] hook emits a content-uuid-keyed envelope that in-process subscribers AND federation peers consume. Read when emitting/consuming a domain event (invoice:activated, payment:received, inventory:adjusted…), wiring chainEventEmitters/subscribers, or whenever an event's aggregateId is set. The aggregate identity MUST be the content-`uuid` (the 0), never the instance-local row id.
+description: "Use when reasoning about event — A domain **event** is the matter that crosses the hooks seam: a collection's hook detects a state transition and emits an envelope; subscribers (the GL-posting handler, audit, noti"
+atomPath: event
+coordinate: event · 5/round · 8e1db417
+contentUuid: "3587e270-6d4a-583b-9316-c2a947fe8c89"
+diamondUuid: "b9084953-8843-859b-bfb4-2fc4fb7a56e6"
+uuid: "8e1db417-8eaf-884f-92ba-11ad5a58eb90"
+horo: 5
+bonds:
+  in:
+    - accounting
+    - agent
+    - arts
+    - attendance
+    - beyond
+    - broadcast
+    - business
+    - calendar
+    - childrens
+    - comedy
+    - conference
+    - connections
+    - corruption
+    - dance
+    - delivery
+    - demand
+    - emitter
+    - engine
+    - enumeration
+    - exhibition
+    - federation
+    - flow
+    - food
+    - hook
+    - hooks
+    - identity
+    - instantaneous
+    - jobs
+    - life
+    - literary
+    - merge
+    - mode
+    - music
+    - notification
+    - performing
+    - publication
+    - realtime
+    - released
+    - reservation
+    - sale
+    - screening
+    - sectors
+    - series
+    - social
+    - sports
+    - stream
+    - sub
+    - supto
+    - theater
+    - venue
+    - visit
+    - visual
+    - workflow
+  out:
+    - accounting
+    - agent
+    - arts
+    - attendance
+    - beyond
+    - broadcast
+    - business
+    - calendar
+    - childrens
+    - comedy
+    - conference
+    - connections
+    - corruption
+    - dance
+    - delivery
+    - demand
+    - emitter
+    - engine
+    - enumeration
+    - exhibition
+    - federation
+    - flow
+    - food
+    - hook
+    - hooks
+    - identity
+    - instantaneous
+    - jobs
+    - life
+    - literary
+    - merge
+    - mode
+    - music
+    - notification
+    - performing
+    - publication
+    - realtime
+    - released
+    - reservation
+    - sale
+    - screening
+    - sectors
+    - series
+    - social
+    - sports
+    - stream
+    - sub
+    - supto
+    - theater
+    - venue
+    - visit
+    - visual
+    - workflow
+typography:
+  partition: event
+  bondDegree: 0
+  neighbors: []
+standards:
+  - "EU-2022/1925"
+  - "EU-2022/2065"
+  - "EU-2022/2554"
+  - "EU-2022/2555"
+  - "EU-2022/868"
+  - "ISO/IEC-29119"
+bindings: []
+neighbors:
+  wikilink:
+    - accounting
+    - flow
+    - hooks
+    - identity
+    - jobs
+    - merge
+  matrix:
+    - accounting
+    - agent
+    - arts
+    - attendance
+    - beyond
+    - broadcast
+    - business
+    - calendar
+    - childrens
+    - comedy
+    - conference
+    - connections
+    - corruption
+    - dance
+    - delivery
+    - demand
+    - emitter
+    - engine
+    - enumeration
+    - exhibition
+    - federation
+    - flow
+    - food
+    - hook
+    - hooks
+    - identity
+    - instantaneous
+    - jobs
+    - life
+    - literary
+    - merge
+    - mode
+    - music
+    - notification
+    - performing
+    - publication
+    - realtime
+    - released
+    - reservation
+    - sale
+    - screening
+    - sectors
+    - series
+    - social
+    - sports
+    - stream
+    - sub
+    - supto
+    - theater
+    - venue
+    - visit
+    - visual
+    - workflow
+  backlinks:
+    - accounting
+    - agent
+    - arts
+    - attendance
+    - beyond
+    - broadcast
+    - business
+    - calendar
+    - childrens
+    - comedy
+    - conference
+    - connections
+    - corruption
+    - dance
+    - delivery
+    - demand
+    - emitter
+    - engine
+    - enumeration
+    - exhibition
+    - federation
+    - flow
+    - food
+    - hook
+    - hooks
+    - identity
+    - instantaneous
+    - jobs
+    - life
+    - literary
+    - merge
+    - mode
+    - music
+    - notification
+    - performing
+    - publication
+    - realtime
+    - released
+    - reservation
+    - sale
+    - screening
+    - sectors
+    - series
+    - social
+    - sports
+    - stream
+    - sub
+    - supto
+    - theater
+    - venue
+    - visit
+    - visual
+    - workflow
+signatures:
+  computationUuid: "e3769ee7-6c86-8524-91f5-805e66663216"
+  stages:
+    - stage: path
+      stageUuid: "0e27f2e5-b2cd-8864-bfb3-cd85b8e484e3"
+    - stage: trinity
+      stageUuid: "479b28d9-bb55-8ddd-a4bc-4de1b08de0c1"
+    - stage: boundary
+      stageUuid: "855d87ff-0d9f-8d77-9bb5-6559d5c7cc8c"
+    - stage: links
+      stageUuid: "53d1601d-fb16-8e8a-8a1e-20606f84b737"
+    - stage: horo
+      stageUuid: "a0510628-61b9-82ba-a684-8533641d25cc"
+    - stage: seal
+      stageUuid: "0505bbbd-26fd-8001-826a-802a7cbcacee"
+    - stage: uuid
+      stageUuid: "8e6c040a-bcf7-84ae-b57a-08f6b0ddb0f1"
+version: 2
 ---
-
 # event — the content-uuid-keyed domain event (the membrane payload)
 
 A domain **event** is the matter that crosses the [[hooks]] seam: a collection's `afterChange` hook detects a state transition and emits an envelope; subscribers (the GL-posting handler, audit, notifications) AND **other erpax instances** (federation peers) consume it. The event is how universes connect (see [[hooks]] "Hooks are where multiverses connect", [[flow]] event streams).

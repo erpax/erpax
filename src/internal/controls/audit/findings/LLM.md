@@ -3,8 +3,8 @@
 
 # findings
 
-path `internal/controls/audit/findings` · uuid `c2be9c7a-6b9c-8c70-8c4e-a01ebdfd9de4` · diamond `55d2bbbc-fb3b-8ea8-84ad-99a2151c632e`
-horo `1` `base` · trinity `1·1·1` · sealed `1`
+path `internal/controls/audit/findings` · uuid `f136fef9-7ef3-88b3-b4e9-1e6d1bd2cb67` · diamond `c5c2fc74-032f-8636-b97a-bdeed4f8342e`
+horo `8` `crest` · trinity `1·1·1` · sealed `0`
 imports @/audit/trail/after/change·@/auth·@/authenticated · exports const · escapes —
 links `9/9` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law an audit finding is an issue raised against a control — classified by seve
 
 ---
 
-<sub>content-uuid `3500a1d9-cfca-8199-a55b-c486e9fd384e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `39179bd5-0d36-88a8-960d-e39596fd3fd6` · `pnpm readme` · `pnpm computed:check`</sub>

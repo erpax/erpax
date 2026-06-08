@@ -3,15 +3,15 @@
 
 # spatial
 
-path `spatial` · uuid `3cc88950-1b62-8921-99e3-a5a383ad3a37` · diamond `e0a6a2ce-6296-86a0-acb9-9459461f4bce`
+path `spatial` · uuid `3cc88950-1b62-8921-99e3-a5a383ad3a37` · diamond `fa460ce9-52b9-8d7e-9db0-d3193d83ffec`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports coverage·law · exports spatial · escapes —
-links `2/2` · folded `1` · bonds in `3` out `3`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → chat·landmarks·terminals · ← chat·landmarks·terminals
+neighbors → coverage·law · ← coverage·law
 analysis —
 law spatial is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `ad652b1b-c1bf-8ab6-be82-22bcb1fceaaa` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5fcceed0-61ad-8686-96e4-d344763cb2a2` · `pnpm readme` · `pnpm computed:check`</sub>

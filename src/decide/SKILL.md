@@ -1,8 +1,129 @@
 ---
 name: decide
 description: "Use when the society must pick a winner among candidate solutions — the composed decision wiring the three selection laws into one: gate-CORRECT (competition, the referee is the gate not a vote), HARMONIC-preferred (logic, the self-consistent resolve first), MOST-EFFICIENT (cost, max output per spend), cheapest, deterministic by content-uuid. decide(candidates) is the single function the agent society runs to choose; the runtime dispatch it drives is the boundary."
+atomPath: decide
+coordinate: decide · 4/weave · 3d07e328
+contentUuid: "82850011-1cd2-5afc-82ba-f8645cb082d0"
+diamondUuid: "225b2ad0-f150-81cb-881d-23f5fcd92137"
+uuid: "3d07e328-586b-83bb-8744-7e9b0cd9d4b3"
+horo: 4
+bonds:
+  in:
+    - budgetvariance
+    - classroom
+    - competition
+    - concatenate
+    - cost
+    - decompression
+    - gate
+    - harmony
+    - law
+    - logic
+    - materiality
+    - merge
+    - peace
+    - proof
+    - self
+    - society
+    - uuid
+    - variance
+  out:
+    - budgetvariance
+    - classroom
+    - competition
+    - concatenate
+    - cost
+    - decompression
+    - gate
+    - harmony
+    - law
+    - logic
+    - materiality
+    - merge
+    - peace
+    - proof
+    - self
+    - society
+    - uuid
+    - variance
+typography:
+  partition: decide
+  bondDegree: 54
+  neighbors: []
+standards: []
+bindings: []
+neighbors:
+  wikilink:
+    - competition
+    - cost
+    - decompression
+    - gate
+    - harmony
+    - law
+    - logic
+    - merge
+    - peace
+    - proof
+    - self
+    - society
+    - uuid
+  matrix:
+    - budgetvariance
+    - classroom
+    - competition
+    - concatenate
+    - cost
+    - decompression
+    - gate
+    - harmony
+    - law
+    - logic
+    - materiality
+    - merge
+    - peace
+    - proof
+    - self
+    - society
+    - uuid
+    - variance
+  backlinks:
+    - budgetvariance
+    - classroom
+    - competition
+    - concatenate
+    - cost
+    - decompression
+    - gate
+    - harmony
+    - law
+    - logic
+    - materiality
+    - merge
+    - peace
+    - proof
+    - self
+    - society
+    - uuid
+    - variance
+signatures:
+  computationUuid: "8235ded0-c6c7-8705-9272-8ccd953cdad9"
+  stages:
+    - stage: path
+      stageUuid: "e30bdc24-cda7-8b6c-b830-b96a3a530e7b"
+    - stage: trinity
+      stageUuid: "b1f3dfe2-8a50-8664-85b3-8608546644ef"
+    - stage: boundary
+      stageUuid: "bfc91b27-bc84-8f12-9b42-00d83ea20f87"
+    - stage: links
+      stageUuid: "b3636052-6fe6-84bb-885b-6f5a4655d589"
+    - stage: horo
+      stageUuid: "fdb3553f-46b7-8d32-ac02-909d97237150"
+    - stage: seal
+      stageUuid: "a71e6871-50b3-8535-a33d-4e3f641b4bfe"
+    - stage: uuid
+      stageUuid: "359c5887-65c0-8d99-8d5d-6a94fa91aca8"
+version: 2
 ---
-
 # decide — the society's composed decision (correct · harmonic · efficient)
 
 FORM: **the society decides by composing its three selection laws into ONE winner.** `decide(candidates)`:

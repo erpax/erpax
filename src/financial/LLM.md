@@ -4,7 +4,7 @@
 # financial
 
 path `financial` · uuid `aa0a41bc-f87e-88d6-98e1-1f0d38cade35` · diamond `288de767-0f2f-854e-a78a-d73557f3996e`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+horo `5` `round` · trinity `1·0·0` · sealed `0`
 imports aid·collapse·eligible·incentive·law·merge·product·service·sti · exports financial · escapes —
 links `9/9` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law financial is one schema.org word, content-addressed; the same word collides 
 
 ---
 
-<sub>content-uuid `33ee8d53-c565-8467-a188-f82b6ffa5593` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b9de1da8-2e08-82f9-aad5-495fe7e843d0` · `pnpm readme` · `pnpm computed:check`</sub>

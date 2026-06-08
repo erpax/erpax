@@ -3,15 +3,15 @@
 
 # entanglement
 
-path `entanglement` · uuid `23b597f1-d923-8704-a9f8-d652775bf0d0` · diamond `1901e583-176c-8efb-925d-717997e30d17`
+path `entanglement` · uuid `262042d0-e09b-8a81-b204-6fb1b167b604` · diamond `9b75abf6-2ba1-8e9b-8bf6-adaf6e1f4126`
 horo `1` `base` · trinity `1·1·1` · sealed `1`
-imports @/quantum · exports const · escapes —
-links `15/15` · folded `1` · bonds in `29` out `34`
+imports @/uuid/matrix · exports EntanglementSeverity·FieldEntanglementWarning·const·fieldEntanglementOf · escapes —
+links `15/15` · folded `1` · bonds in `32` out `32`
 faces worker·plugin·pwa `1·0·0`
-neighbors → app·aura·boundary·cloning·cloning·communication·development·dust·entanglement·export·graph·gravity·gravity·import·karma·key·law·law·links·matrix·matrix·merge·merge·particle·quantum·quantum·reciprocal·research·singularity·singularity·superdense·teleportation·translator·typography · ← app·aura·boundary·cloning·communication·development·development·dust·entanglement·export·graph·graph·gravity·import·karma·key·law·links·matrix·merge·particle·quantum·reciprocal·research·singularity·superdense·teleportation·translator·typography
+neighbors → app·aura·boundary·cloning·communication·development·development·dust·entanglement·export·graph·graph·gravity·gravity·import·karma·key·law·links·matrix·matrix·merge·particle·quantum·reciprocal·research·serverless·singularity·superdense·teleportation·translator·typography · ← app·aura·boundary·cloning·communication·development·development·dust·entanglement·export·graph·graph·gravity·gravity·import·karma·key·law·links·matrix·matrix·merge·particle·quantum·reciprocal·research·serverless·singularity·superdense·teleportation·translator·typography
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `f0c74a52-c21a-8f2e-a3aa-a3c539002109` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9f416d83-01da-81dc-84d0-97c681b87d06` · `pnpm readme` · `pnpm computed:check`</sub>

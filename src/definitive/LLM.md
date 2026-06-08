@@ -3,8 +3,8 @@
 
 # definitive
 
-path `definitive` · uuid `454d8515-2db6-850e-9f01-2a3189d465dc` · diamond `a8e4ed5e-f334-8ac8-8667-5e45eea42193`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `definitive` · uuid `ba62275d-3a22-80f0-9a13-8f3cc516687c` · diamond `45bfa330-1605-8b67-b34f-b20ad00ade09`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports definitive · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law definitive is one schema.org word, content-addressed; the same word collides
 
 ---
 
-<sub>content-uuid `bdc56381-caf3-8f5c-885e-4100d916740b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c98ed3ec-6e56-88f9-97f5-72c4cc734197` · `pnpm readme` · `pnpm computed:check`</sub>

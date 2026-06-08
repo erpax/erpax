@@ -23,7 +23,21 @@
 
 - partition `newspaper` · sub-root `80622aeb-5958-8ba3-a842-3f94425f8997`
 - bond degree `6` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `6` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `239fcbce-a069-8dec-bb44-f30ba8f98739` · framed by typography partition `newspaper` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ec8416d0-2391-8083-8e9c-90040ef30612` · framed by typography partition `newspaper` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>

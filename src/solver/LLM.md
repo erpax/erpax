@@ -3,15 +3,15 @@
 
 # solver
 
-path `solver` · uuid `85ec1bb9-8d4d-818d-871b-f84681a6395b` · diamond `aa77f24a-3341-8108-996c-c197fa513011`
+path `solver` · uuid `85ec1bb9-8d4d-818d-871b-f84681a6395b` · diamond `7123b3ad-a868-82ad-abf5-737754a97b97`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·math·merge·sti · exports solver · escapes —
-links `5/5` · folded `1` · bonds in `2` out `2`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → courthouse·landmarks · ← courthouse·landmarks
+neighbors → collapse·law·math·merge·sti · ← collapse·law·math·merge·sti
 analysis —
 law solver is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `1f161814-c2c9-8ec0-b10b-b891286a3b8d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `da7db445-8032-813c-8958-e1dec3acf827` · `pnpm readme` · `pnpm computed:check`</sub>

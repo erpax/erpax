@@ -3,15 +3,15 @@
 
 # tool
 
-path `agents/mcp/tool` · uuid `4f4610e2-8769-816b-8544-8f265cc4a990` · diamond `bd0685d1-c641-85d6-98c5-52262a68e0b1`
-horo `4` `weave` · trinity `1·1·1` · sealed `0`
+path `agents/mcp/tool` · uuid `5eda549c-da2a-8fc8-a6e6-7af878675c79` · diamond `a2924ee5-28d7-8a48-8d43-47ac8d1ace32`
+horo `5` `round` · trinity `1·1·1` · sealed `0`
 imports — · exports assertAdminOnTenant·assertTenantMatch·buildBatchTools·buildChainTools·buildCloudflareTools·buildConsistencyTools·buildErrorTools·buildEventsTools·buildFormatTools·buildGovernanceTools·buildIntegrityExtensionTools·buildKvTools·buildSecurityTools·buildShareTools·buildVersionsTools·type·wrapToolsWithTenantGuard · escapes —
-links `9/9` · folded `1` · bonds in `5` out `6`
+links `9/9` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → how·law·law·mcp·tool·uuid · ← how·law·mcp·tool·uuid
+neighbors → how·law·tool · ← how·law·tool
 analysis —
 law each MCP area is a self-contained builder exporting one buildXxxTools factory, and every [[tool]] it yields carries the erpax.<area>.* name prefix — so the barrel concatenates the surface and a tool's name alone resolves its area; the uuid-family tools compute the same content-[[uuid]] as the in-process surface.
 
 ---
 
-<sub>content-uuid `a00d32b9-b85a-8b54-a124-e7f87dad0aba` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b234c45c-6697-869c-98b3-9959fae2d921` · `pnpm readme` · `pnpm computed:check`</sub>

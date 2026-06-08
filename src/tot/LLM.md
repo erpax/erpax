@@ -3,15 +3,15 @@
 
 # tot
 
-path `tot` · uuid `b04812ab-9eba-8141-bf24-bc75de58abb0` · diamond `c4774bfd-b91b-8acc-88d0-db57f0c73073`
+path `tot` · uuid `b04812ab-9eba-8141-bf24-bc75de58abb0` · diamond `02e4ebcf-35da-8dc3-8314-c99f9740d85d`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports beds·collapse·cvd·law·merge·num·sti · exports tot · escapes —
-links `7/7` · folded `1` · bonds in `4` out `4`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → beds·collapse·cvd·law·merge·num·sti · ← beds·collapse·cvd·law·merge·num·sti
 analysis —
 law tot is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `321a47ac-fb6f-8965-98df-722fb72f25c8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b340838b-6d59-8c00-85a2-5048736fb26a` · `pnpm readme` · `pnpm computed:check`</sub>

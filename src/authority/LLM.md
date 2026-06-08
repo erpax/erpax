@@ -3,7 +3,7 @@
 
 # authority
 
-path `authority` · uuid `895e0089-72c2-84aa-a60e-435028fc5fa1` · diamond `734c5aea-ac1e-8791-a365-847f26b8acc2`
+path `authority` · uuid `4b63db5c-14aa-853b-85fa-2289e9dd5753` · diamond `c0c7ffa7-ffaf-892a-8459-5eac503397f8`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·recognizing·sti · exports authority · escapes —
 links `5/5` · folded `1` · bonds in `6` out `6`
@@ -14,4 +14,4 @@ law authority is one schema.org word, content-addressed; the same word collides 
 
 ---
 
-<sub>content-uuid `670d66f0-f0ef-8051-92e8-2b47bc07c891` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b6bc2dcd-e3aa-8e4e-8667-9b50b55cff7a` · `pnpm readme` · `pnpm computed:check`</sub>

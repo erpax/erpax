@@ -3,8 +3,8 @@
 
 # conversion
 
-path `conversion` · uuid `1a3488d9-0f78-8a53-80a8-e5ec343e424e` · diamond `32c6033a-fc5d-80a7-87d6-472dbc8f3be5`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `conversion` · uuid `670658d7-5f84-8c82-be66-f4f7579f0702` · diamond `6f6c83e0-5dad-839c-b542-d6547d59d43c`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports accounting·amount·attribution·balance·currency·customers·dimension·entry·funnel·give·hooks·identity·law·localize·measure·rate·take·versions · exports conversion · escapes —
 links `44/44` · folded `1` · bonds in `27` out `27`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law a conversion re-expresses a quantity on another basis through a [[rate]] pin
 
 ---
 
-<sub>content-uuid `53a1bcab-5541-86b8-924c-90b898526946` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3509bd3c-ac7f-828d-a0aa-bc0877d55b77` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -4,7 +4,7 @@
 # entities
 
 path `legal/entities` · uuid `2046f58e-868a-8d9d-a590-07f08cf6e000` · diamond `bbb6393d-b085-8bf8-aa05-b549c106eb9a`
-horo `5` `round` · trinity `1·1·1` · sealed `1`
+horo `5` `round` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
 links `15/15` · folded `1` · bonds in `17` out `17`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `cfb187e7-b22f-8bbd-926e-dea9b08dc296` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2798e3df-8b06-85f2-b88d-9669ae33dee6` · `pnpm readme` · `pnpm computed:check`</sub>

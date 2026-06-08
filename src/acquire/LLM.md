@@ -3,7 +3,7 @@
 
 # acquire
 
-path `acquire` · uuid `3d42582f-c007-82ce-a8ac-92a2b0f9ba8e` · diamond `14e5e574-e9c6-886b-95dd-28c46a3f2fab`
+path `acquire` · uuid `0d6dc344-7f55-8f74-8da6-959b18a198d0` · diamond `6025a836-c796-8ad7-9d22-506f53eab2f1`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·license·merge·page·sti · exports acquire · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
@@ -14,4 +14,4 @@ law acquire is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `5534949c-a1c7-8702-ba25-251ded475490` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2ab1face-825c-8dd3-8f8f-f15738c2444b` · `pnpm readme` · `pnpm computed:check`</sub>

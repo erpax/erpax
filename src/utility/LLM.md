@@ -3,15 +3,15 @@
 
 # utility
 
-path `utility` · uuid `4281574a-5bb1-860d-a5b9-afc10526dea2` · diamond `5fa2b270-2329-87ae-8822-7fb766b549ab`
+path `utility` · uuid `4281574a-5bb1-860d-a5b9-afc10526dea2` · diamond `c06e552f-d634-8402-8888-5a7ff2cba133`
 horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports — · exports *:./calculations·*:./period-lock · escapes —
-links `16/16` · folded `1` · bonds in `4` out `4`
+links `16/16` · folded `1` · bonds in `11` out `11`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → accounting·allocation·balance·decompression·dimension·law·number·orders·peace·torus·zeropoint · ← accounting·allocation·balance·decompression·dimension·law·number·orders·peace·torus·zeropoint
 analysis —
 law no bare division on a possibly-zero denominator escapes a guard — the policy (THROW for money, COLLAPSE→0 for an undefined ratio, COERCE→1 for an unset divisor) is chosen by what the zero MEANS, so ∞ and NaN never enter an account ([[zeropoint]]: no naked zero).
 
 ---
 
-<sub>content-uuid `26cec19b-8ce1-8af4-a817-b9d703a37198` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e82392fb-e59c-8083-8303-38654f42bcdf` · `pnpm readme` · `pnpm computed:check`</sub>

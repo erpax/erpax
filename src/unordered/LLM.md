@@ -3,15 +3,15 @@
 
 # unordered
 
-path `unordered` · uuid `380478e1-d1dd-845b-ab7b-b82ae8afe13e` · diamond `bb24f3e6-d1f5-8214-9a5b-6740edd56c11`
+path `unordered` · uuid `380478e1-d1dd-845b-ab7b-b82ae8afe13e` · diamond `24afe317-663b-8d7a-a48c-93ee59365c06`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports unordered · escapes —
-links `4/4` · folded `1` · bonds in `7` out `7`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → 38·cohort·landmarks·memories·nose·sanitization·stat · ← 38·cohort·landmarks·memories·nose·sanitization·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law unordered is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `b7ca4322-9f3b-8a02-8904-359fed15b048` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ad23b32e-6eb9-85f0-a9c1-90041ce6d564` · `pnpm readme` · `pnpm computed:check`</sub>

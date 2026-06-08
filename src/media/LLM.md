@@ -4,7 +4,7 @@
 # media
 
 path `media` · uuid `7b517e9c-e681-80b1-94a0-2efb4181418a` · diamond `a2559340-b438-8773-9116-e4b80232271b`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+horo `7` `descent` · trinity `1·1·1` · sealed `0`
 imports @/i18n·@/media/hooks·@/membership/admin/mutate/access·@/tenant/scoped/read · exports MediaComponent·const · escapes —
 links `4/4` · folded `1` · bonds in `30` out `31`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law one media object lives as coexisting facets in a single folder — the Paylo
 
 ---
 
-<sub>content-uuid `22907e41-ed69-8188-a2da-e7d4fab7a6da` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c5776438-3e59-8733-87f8-24979cf6cf3b` · `pnpm readme` · `pnpm computed:check`</sub>

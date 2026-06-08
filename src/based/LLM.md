@@ -3,8 +3,8 @@
 
 # based
 
-path `based` · uuid `cf89934b-94bf-89b9-97e0-991a24acc8fc` · diamond `460cbbba-ea22-8154-a329-382f2b394f91`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `based` · uuid `ce07dc93-23ac-87e6-b6e1-b82e15e82795` · diamond `b3e1a9f9-5935-8b2c-a7af-427bf2994e3b`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports law·program·url·work · exports based · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law based is one schema.org word, content-addressed; the same word collides ever
 
 ---
 
-<sub>content-uuid `e817fcf8-e1ed-831c-bb20-4cbe20da6e3b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `fd0a3148-8010-89c8-a7f4-8bdd6ad66f50` · `pnpm readme` · `pnpm computed:check`</sub>

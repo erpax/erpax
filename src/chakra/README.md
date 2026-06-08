@@ -23,9 +23,9 @@
 
 ## typography graph
 
-- partition `chakra` · sub-root `0b1b99f8-aafb-8c47-bab7-f0593c4d948e`
+- partition `chakra` · sub-root `9de6754c-1b6d-85ef-9f47-b685fdaced57`
 - bond degree `80` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- graph root `1cef4f02-a3fa-83a5-8ea0-120b724ef456`
 
 ## [[cloudflare]] bindings
 
@@ -37,6 +37,44 @@
 - `note, colour and uuid all computed from the position math, never hand-asserted` · banner
 - `note, colour and uuid computed from the position math, never hand-asserted` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·1 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
 - bond degree `80` · sealed `1` · horo `1`
@@ -45,7 +83,7 @@
 
 ## identity
 
-- uuid `0b1b99f8-aafb-8c47-bab7-f0593c4d948e`
+- uuid `9de6754c-1b6d-85ef-9f47-b685fdaced57`
 - bonds in `26` · out `26`
 - trinity form·code·proof `1`·`1`·`1`
 - links `33` / `33`
@@ -57,4 +95,4 @@
 
 ---
 
-<sub>content-uuid `bf377e7a-425e-8c49-8736-a825d9c941df` · framed by typography partition `chakra` bonds `80` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b05f0460-cd41-811c-8051-2ec6acb1c966` · framed by typography partition `chakra` bonds `80` · `pnpm readme` · `pnpm readme:check`</sub>

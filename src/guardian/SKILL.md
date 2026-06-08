@@ -1,8 +1,108 @@
 ---
 name: guardian
-description: Use when reasoning about a single immune-cell of the corpus — a guardian watches exactly ONE violation axis against its own committed baseline with a fail-closed ratchet, so a rise on its axis reddens the gate on its own and can never be masked by a fix on another axis. Many guardians cross into one seal.
+description: "Use when reasoning about a single immune-cell of the corpus — a guardian watches exactly ONE violation axis against its own committed baseline with a fail-closed ratchet, so a rise on its axis reddens the gate on its own and can never be masked by a fix on another axis. Many guardians cross into one seal."
+atomPath: guardian
+coordinate: guardian · 8/crest · b1cb4a58
+contentUuid: "25ce54cf-353c-539c-95f6-c0bdcf7c4615"
+diamondUuid: "e0f47419-c5dd-8ce7-8857-eeaff5953895"
+uuid: "b1cb4a58-cf01-891e-ba0d-b7f3040133bb"
+horo: 8
+bonds:
+  in:
+    - convention
+    - cost
+    - diamond
+    - gate
+    - hallucination
+    - identity
+    - law
+    - proof
+    - seal
+    - session
+    - sin
+    - thought
+    - typography
+    - worker
+  out:
+    - convention
+    - cost
+    - diamond
+    - gate
+    - hallucination
+    - identity
+    - law
+    - proof
+    - seal
+    - session
+    - sin
+    - thought
+    - typography
+    - worker
+typography:
+  partition: guardian
+  bondDegree: 43
+  neighbors: []
+standards:
+  - "ISO/IEC 25010:2023 §5.5 testability — the decision is a pure function"
+bindings: []
+neighbors:
+  wikilink:
+    - convention
+    - cost
+    - gate
+    - identity
+    - law
+    - proof
+    - seal
+  matrix:
+    - convention
+    - cost
+    - diamond
+    - gate
+    - hallucination
+    - identity
+    - law
+    - proof
+    - seal
+    - session
+    - sin
+    - thought
+    - typography
+    - worker
+  backlinks:
+    - convention
+    - cost
+    - diamond
+    - gate
+    - hallucination
+    - identity
+    - law
+    - proof
+    - seal
+    - session
+    - sin
+    - thought
+    - typography
+    - worker
+signatures:
+  computationUuid: "1a37faec-de26-889c-b4f0-64b8c8d73425"
+  stages:
+    - stage: path
+      stageUuid: "83e530d4-1142-8bf7-b8c4-6462dc97de15"
+    - stage: trinity
+      stageUuid: "1b2a3bd8-7b72-8687-a35b-b9be066ee8d1"
+    - stage: boundary
+      stageUuid: "8ba289f9-3046-8359-9e5b-6aab9896923c"
+    - stage: links
+      stageUuid: "9f877aac-b513-8a1e-a9be-fa493fccba5f"
+    - stage: horo
+      stageUuid: "2b40f15d-2f09-88c9-9bff-72a9606ab9c7"
+    - stage: seal
+      stageUuid: "017a9fe5-3053-8b14-962e-7863b73eb8c2"
+    - stage: uuid
+      stageUuid: "71496d6e-cf3f-812c-ab20-e371458079ab"
+version: 2
 ---
-
 # guardian — one axis, one baseline, fail-closed
 
 A [[gate]] is the immune system; a **guardian is one immune cell**. It watches exactly **one axis** of violation (naming, trinity, import coverage, …) against its own committed baseline, and rules with a fail-closed ratchet:

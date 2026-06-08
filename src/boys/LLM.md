@@ -3,8 +3,8 @@
 
 # boys
 
-path `boys` · uuid `c2521845-31e0-89cd-b605-1e9072e2d6a9` · diamond `bf14bceb-6785-8fa1-924b-3ce993f2ebf8`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `boys` · uuid `6088ac8c-d303-846a-84de-b4a80dc5bdfa` · diamond `5d7186a1-af20-8e04-99a1-31af6bdb8844`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports boys · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law boys is one schema.org word, content-addressed; the same word collides every
 
 ---
 
-<sub>content-uuid `106e06a4-fc33-86ea-97f3-3225962ccb60` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b23721fc-84e6-89ee-8c6a-305e8589b2bf` · `pnpm readme` · `pnpm computed:check`</sub>

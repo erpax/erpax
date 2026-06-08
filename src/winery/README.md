@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `winery` · sub-root `f3df3d0f-f5a4-8f7e-9ac9-cd4ca6941aa0`
-- bond degree `26` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `6` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `f3df3d0f-f5a4-8f7e-9ac9-cd4ca6941aa0`
-- bonds in `12` · out `12`
+- bonds in `2` · out `2`
 - trinity form·code·proof `1`·`0`·`0`
 - links `2` / `2`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `4635062c-6720-8ee1-8fe2-4a28e1cb6aca` · framed by typography partition `winery` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `02899e42-6f58-829c-a573-146f54aa8080` · framed by typography partition `winery` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>

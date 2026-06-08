@@ -3,15 +3,15 @@
 
 # reconciliations
 
-path `gl/accounts/account/reconciliations` · uuid `82a12496-eb74-84d9-9f85-27ef78add94d` · diamond `cb7d0d84-2342-8f06-83de-89d43bb08b70`
-horo `1` `base` · trinity `1·1·1` · sealed `1`
+path `gl/accounts/account/reconciliations` · uuid `69021456-278c-8441-9caa-563546e981fe` · diamond `a0031f89-b96b-866d-979e-f4b81170b690`
+horo `1` `base` · trinity `1·1·1` · sealed `0`
 imports @/audit/trail/after/change·@/auth·@/auto/populate/created/by·@/auto/populate/tenant·@/auto/set/timestamp·@/base/accounting/field·@/utility · exports default · escapes —
-links `7/7` · folded `1` · bonds in `9` out `12`
+links `7/7` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·accounting·accounts·accounts·entries·law·proof·reconciliation·statements·statements·transaction·transactions · ← accounting·accounts·entries·law·proof·reconciliation·statements·transaction·transactions
+neighbors → accounting·accounts·proof·reconciliation·statements·transaction · ← accounting·accounts·proof·reconciliation·statements·transaction
 analysis —
 law a reconciliation is signed-off evidence that the difference is zero — GL against subledger/bank/intercompany — with preparer/reviewer segregation; an unclosed reconciliation is an unbalanced book.
 
 ---
 
-<sub>content-uuid `c241e3c6-01f0-892d-808f-8a6c36305640` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `966ec4fd-8bc8-85a9-b3f5-6d7b6e2237b3` · `pnpm readme` · `pnpm computed:check`</sub>

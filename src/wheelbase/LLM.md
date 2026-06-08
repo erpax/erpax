@@ -3,15 +3,15 @@
 
 # wheelbase
 
-path `wheelbase` · uuid `27801b12-c3b1-8ee1-a23c-dec08a1e741c` · diamond `2ce4c19a-c8a4-8c4f-bfed-8954b697c4aa`
+path `wheelbase` · uuid `27801b12-c3b1-8ee1-a23c-dec08a1e741c` · diamond `50a15c8f-5e49-8d32-a03a-274247e0cd4d`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports wheelbase · escapes —
-links `2/2` · folded `1` · bonds in `11` out `11`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·candidate·carriers·correlation·dropoff·emission·homeopathic·landmarks·sandbox·settings·snapshots · ← accounting·candidate·carriers·correlation·dropoff·emission·homeopathic·landmarks·sandbox·settings·snapshots
+neighbors → law·thing · ← law·thing
 analysis —
 law wheelbase is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `fc101d35-c64c-8eda-a7bc-018f11428fcc` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8bf61c74-6618-8b9b-9264-7c69cb1d54b4` · `pnpm readme` · `pnpm computed:check`</sub>

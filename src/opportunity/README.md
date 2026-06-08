@@ -23,7 +23,21 @@
 
 - partition `opportunity` · sub-root `edebdfda-c15d-840a-870d-3e99c2e75507`
 - bond degree `12` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `12` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `a9a4bb41-27c3-8c06-a0e2-0072285cfb3f` · framed by typography partition `opportunity` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b8c8372d-92f4-835b-9576-0432f004081d` · framed by typography partition `opportunity` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

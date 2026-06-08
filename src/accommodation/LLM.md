@@ -3,7 +3,7 @@
 
 # accommodation
 
-path `accommodation` · uuid `9a378d18-5c1d-8779-9158-fe529599a743` · diamond `096962ce-cba5-81e8-9841-de42782b6b3c`
+path `accommodation` · uuid `a209d30f-efbb-8998-8d0e-a3b49c158b20` · diamond `ac0af32b-55e2-86e6-beab-8384cf87cc1d`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports available·category·floor·law·number·plan·units · exports accommodation · escapes —
 links `7/7` · folded `1` · bonds in `7` out `7`
@@ -14,4 +14,4 @@ law accommodation is one schema.org word, content-addressed; the same word colli
 
 ---
 
-<sub>content-uuid `6d7b486c-85c7-8526-b23b-9df5640bb114` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `bf50c78a-e86f-80af-acff-f6bd964e4167` · `pnpm readme` · `pnpm computed:check`</sub>

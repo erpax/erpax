@@ -2,9 +2,11 @@
 
 # reports
 
-> atom `legal/entities/consolidations/audit/reports` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `legal/entities/consolidations/audit/reports` · horo `4` `weave` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `legal/entities/consolidations/audit/reports` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -19,26 +21,123 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
+
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+- `gap:stray:[[gap]]/[[diamond]]/stray/post/`
+
+### collapse
+
+- `balance:variance=1`
+- `seal:unsealed`
+- `trigger:Use when generating or tracking immutable audit reports and regulatory filings — SAF-T 3.0.2 audit files, jurisdiction-specific tax filings, transfer-pricing documentation packages, and cross-jurisdiction optimization analysis per ISA-700 / SOX §404. The audit-report generation and submission collection.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `199578e5-ce0e-813f-910a-64e0efef0c2d` · `24605170-a046-8460-be21-b953ba553589` · `6dc3a079-2590-877c-bbdb-5ed5ade47523` · `8f016a88-edf5-861d-9a25-e258479948db`
+- content uuids `158cc28a-5241-8efb-b9d9-cab454044490` · `313f8c32-759c-87a4-9a1c-356544d04f0d` · `5fb54a6e-787f-85b1-81e5-48bc37a85c1e` · `7a86c1dd-2151-809c-b95e-6430df164e27`
+
+## [[entropy]] — gaps · seals
+
+> account code `legal/entities/consolidations/audit/reports` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[diamond]]/stray/post/ `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.4` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+| Σ gap `3` eb | Σ seal `8.4` eb |
+
+> net residual `-5.4` eb · seal/gap ratio `2.8` · [[entropy]] · [[seal]]
 
 ## typography graph
 
-- partition `legal` · sub-root `1fd2f1ff-ccee-87e0-8d80-12345443fed8`
-- bond degree `35` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- partition `legal` · sub-root `e259934b-eccd-8e89-bfbe-04889c9debb1`
+- bond degree `0` · analysis neighbors —
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ISA-700 auditor-report` · banner
+- `SOX §404 internal-controls` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unbalanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| not-held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·4 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `0` · sealed `0` · horo `4`
+- variance `1` · balanced `0` · trinity sum `3`
+- bindings `0` · standards `2`
 
 ## identity
 
-- uuid `16427f51-fd9f-823f-88d3-5987411e2dc6`
-- bonds in `11` · out `11`
+- uuid `9eb8e064-0a3a-8cd4-bbfc-cbd8cf30a3a0`
+- bonds in `8` · out `8`
 - trinity form·code·proof `1`·`1`·`1`
 - links `1` / `1`
 - folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `25a3a285-2ce3-82ee-bd1b-8944aa38b92d` · framed by typography partition `legal` bonds `35` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `5f5d11c0-05b0-823b-a1e9-f6df740afde7` · framed by typography partition `legal` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,8 +3,8 @@
 
 # broadcaster
 
-path `broadcaster` · uuid `78a632fe-d283-8ad2-b239-923d009c037d` · diamond `d8948150-b923-87e3-949a-63c1db43233e`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `broadcaster` · uuid `e830e1e4-89b1-80ee-952c-02e1938c5a93` · diamond `e9bf9011-48e4-8169-ac78-a276925214b8`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports law·organization·thing · exports broadcaster · escapes —
 links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law broadcaster is one schema.org word, content-addressed; the same word collide
 
 ---
 
-<sub>content-uuid `54a340c5-e2ea-8508-bc50-6a2566329668` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `406fc269-b072-8971-add2-5c7fbb6896b7` · `pnpm readme` · `pnpm computed:check`</sub>

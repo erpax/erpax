@@ -1,8 +1,165 @@
 ---
 name: ecosystem
 description: "Use when sustainability and decentralisation must be seen as ONE — a food web is a coordinator-free network (decentralised) that wastes nothing (sustainable) for the SAME reason: local agents posting balanced metabolic exchanges, every output another's input, so global conservation and global order both emerge from local balance. erpax IS an ecosystem; nature is the empirical proof of the law."
+atomPath: ecosystem
+coordinate: ecosystem · 5/round · 4f5ba0f9
+contentUuid: "5966fc15-d82e-5d0e-aa21-b56db323f89f"
+diamondUuid: "979d0b32-5ea0-8cc7-b66b-62184f9db106"
+uuid: "4f5ba0f9-0f3f-81fa-a30d-0a0042cf63a9"
+horo: 5
+bonds:
+  in:
+    - agent
+    - agriculture
+    - balance
+    - biomass
+    - compost
+    - conservation
+    - decentralization
+    - diversity
+    - emission
+    - entropy
+    - entry
+    - federation
+    - fractal
+    - gate
+    - law
+    - lichen
+    - merge
+    - mycelium
+    - network
+    - society
+    - soil
+    - sustainability
+    - symbiosis
+    - whole
+  out:
+    - agent
+    - agriculture
+    - balance
+    - biomass
+    - compost
+    - conservation
+    - decentralization
+    - diversity
+    - emission
+    - entropy
+    - entry
+    - federation
+    - fractal
+    - gate
+    - law
+    - lichen
+    - merge
+    - mycelium
+    - network
+    - society
+    - soil
+    - sustainability
+    - symbiosis
+    - whole
+typography:
+  partition: ecosystem
+  bondDegree: 81
+  neighbors:
+    - agent
+standards:
+  - "EU-1958"
+  - "Elton (1958) vs May, Will a Large Complex System be Stable? (1972) — diversity–stability debate"
+  - "Lindeman, The Trophic-Dynamic Aspect of Ecology (1942) — ~10% energy per level"
+  - "Tansley (1935) — coined \"ecosystem\": organisms plus environment as one system"
+  - "computed, never hand-asserted"
+bindings: []
+neighbors:
+  wikilink:
+    - agent
+    - balance
+    - biomass
+    - compost
+    - conservation
+    - decentralization
+    - diversity
+    - entropy
+    - entry
+    - federation
+    - fractal
+    - gate
+    - law
+    - merge
+    - network
+    - society
+    - soil
+    - sustainability
+    - whole
+  matrix:
+    - agent
+    - agriculture
+    - balance
+    - biomass
+    - compost
+    - conservation
+    - decentralization
+    - diversity
+    - emission
+    - entropy
+    - entry
+    - federation
+    - fractal
+    - gate
+    - law
+    - lichen
+    - merge
+    - mycelium
+    - network
+    - society
+    - soil
+    - sustainability
+    - symbiosis
+    - whole
+  backlinks:
+    - agent
+    - agriculture
+    - balance
+    - biomass
+    - compost
+    - conservation
+    - decentralization
+    - diversity
+    - emission
+    - entropy
+    - entry
+    - federation
+    - fractal
+    - gate
+    - law
+    - lichen
+    - merge
+    - mycelium
+    - network
+    - society
+    - soil
+    - sustainability
+    - symbiosis
+    - whole
+signatures:
+  computationUuid: "b933459e-5626-8aa1-9408-e38efbf9be26"
+  stages:
+    - stage: path
+      stageUuid: "a45bd5cc-b586-84b5-9859-e0f78950a89c"
+    - stage: trinity
+      stageUuid: "18a13540-0013-8161-96c0-871a96728730"
+    - stage: boundary
+      stageUuid: "c1c22109-a193-8428-ba7b-0390ca49c64d"
+    - stage: links
+      stageUuid: "0e692a18-8740-86e7-94a2-9616ed3d40c2"
+    - stage: horo
+      stageUuid: "51993fe1-4eb6-836e-9b82-b2060cf04596"
+    - stage: seal
+      stageUuid: "aad7fd2c-ebfc-8145-9a41-4ff6f6559703"
+    - stage: uuid
+      stageUuid: "9d63b9e0-75bd-87fc-a365-f167c58be669"
+version: 2
 ---
-
 # ecosystem — where decentralization and sustainability are one phenomenon
 
 An **ecosystem** is a web of organisms and their flows in which **no one is in charge** and **nothing is wasted** — and the deep claim of this atom is that those two facts are **the same fact seen twice**. A food web is decentralized ([[decentralization]]): no manager sets the trophic levels; each organism follows local rules. It is sustainable ([[sustainability]]): matter cycles end to end — producers fix the sun's energy, roughly 10% passes up each level (Lindeman), and **decomposers close the loop**, returning every body to [[soil]] as the input of the next cycle ([[compost]]). Both hold for **one** underlying reason: the web is a set of **local agents posting balanced metabolic exchanges** — each eats ⊕ excretes, and every output is another's input ([[conservation]]). Global conservation and global order both **emerge from local balance**, with no coordinator holding either.

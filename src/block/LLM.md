@@ -3,8 +3,8 @@
 
 # block
 
-path `block` · uuid `2bef3190-9778-84ea-ac39-a94720118625` · diamond `bee943b5-d6e1-8293-b38e-d9e95e644f96`
-horo `2` `share` · trinity `1·1·1` · sealed `1`
+path `block` · uuid `319ae0d3-519b-8774-96fa-446bc818a935` · diamond `158eed54-8109-8de5-b242-5eb000d3291e`
+horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports — · exports RenderBlocks · escapes —
 links `6/6` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law block is one schema.org word, content-addressed; the same word collides ever
 
 ---
 
-<sub>content-uuid `8507a0a1-12b7-828e-9ae9-0e8aeac22d47` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `df5e748d-4268-8e22-b608-f4df23040113` · `pnpm readme` · `pnpm computed:check`</sub>

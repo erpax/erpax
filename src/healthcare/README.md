@@ -23,7 +23,21 @@
 
 - partition `healthcare` · sub-root `b8f3829e-5aa7-8ee4-bc8a-eb3c9fb2d0c1`
 - bond degree `20` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `20` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `b8f2833d-cebf-87ea-ba12-8ffba5ebb49b` · framed by typography partition `healthcare` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `8cce59f3-f2d8-8fce-b7a5-1cc12013316f` · framed by typography partition `healthcare` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>

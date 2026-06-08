@@ -3,8 +3,8 @@
 
 # advertiser
 
-path `advertiser` · uuid `da24e449-64f5-870d-8eea-e206f743e361` · diamond `3a36b942-b4b8-89fc-ac3b-d6e2e60500fd`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `advertiser` · uuid `6312a843-c30a-8352-8b77-9c6ae06ae897` · diamond `76964544-a7fb-8e7b-9d46-ce08efcf9da5`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports article·collapse·content·law·merge·sti · exports advertiser · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law advertiser is one schema.org word, content-addressed; the same word collides
 
 ---
 
-<sub>content-uuid `f1b01f67-7460-8e74-ba30-059664e28e62` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4c37fc5f-51c0-8475-ac4a-e7bfa421126e` · `pnpm readme` · `pnpm computed:check`</sub>

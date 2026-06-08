@@ -3,15 +3,15 @@
 
 # unemployment
 
-path `unemployment` · uuid `0df42498-8753-8317-a673-8fb6e564a892` · diamond `34cce6c3-3b06-8db3-86bb-2353a06ea369`
+path `unemployment` · uuid `0df42498-8753-8317-a673-8fb6e564a892` · diamond `e5942931-2d5e-8ea8-acc6-2cc1b4841b8c`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports unemployment · escapes —
-links `4/4` · folded `1` · bonds in `7` out `7`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·blocks·cohort·landmarks·live·memories·stat · ← action·blocks·cohort·landmarks·live·memories·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law unemployment is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `ff0dcaf3-70f7-867f-8619-db5035385fc7` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4fe9e88a-a75f-84b6-8693-0d10494ed929` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # assets
 
-path `biological/assets` · uuid `303ae367-4c71-8291-9728-9f736ba9e6ce` · diamond `8a251d3f-db13-8e12-9f27-a179107604e0`
-horo `2` `share` · trinity `1·1·1` · sealed `1`
+path `biological/assets` · uuid `c44886d9-3ea3-8f13-8f74-a56bad0f080f` · diamond `2ad2703c-fce8-87d9-93d6-84e2b40e0d95`
+horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
-links `13/13` · folded `1` · bonds in `45` out `51`
+links `13/13` · folded `1` · bonds in `33` out `33`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·accounting·accounting·accounting·agriculture·animal·apiculture·aquaculture·asset·assets·balance·biomass·breed·classifications·collections·collections·combinations·crop·entries·fertility·fields·fields·forestry·fractal·goodwill·graft·grants·harvest·herd·hooks·hooks·identity·impairment·intangible·lactation·law·livestock·measurements·merge·mortality·orders·perennial·postharvest·prepaid·proof·requests·rootstock·schedules·soil·standard·standard · ← access·accounting·agriculture·animal·apiculture·aquaculture·asset·assets·balance·biomass·breed·classifications·collections·combinations·crop·entries·fertility·fields·forestry·fractal·goodwill·graft·grants·harvest·herd·hooks·identity·impairment·intangible·lactation·law·livestock·measurements·merge·mortality·orders·perennial·postharvest·prepaid·proof·requests·rootstock·schedules·soil·standard
+neighbors → access·accounting·agriculture·animal·apiculture·aquaculture·asset·balance·biomass·breed·collections·crop·entries·fertility·fields·forestry·fractal·graft·harvest·herd·hooks·identity·impairment·lactation·law·livestock·measurements·merge·mortality·perennial·postharvest·rootstock·soil · ← access·accounting·agriculture·animal·apiculture·aquaculture·asset·balance·biomass·breed·collections·crop·entries·fertility·fields·forestry·fractal·graft·harvest·herd·hooks·identity·impairment·lactation·law·livestock·measurements·merge·mortality·perennial·postharvest·rootstock·soil
 analysis —
 law a living class is carried at fair-value-less-costs-to-sell (never cost), re-measured each reporting date, with the change split into biological-transformation vs price-change; bearer plants are carved out to IAS-16.
 
 ---
 
-<sub>content-uuid `cc54408c-f830-8853-a0fa-78d5e0583083` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `821ca829-783f-8d70-81fd-582815a9bd3b` · `pnpm readme` · `pnpm computed:check`</sub>

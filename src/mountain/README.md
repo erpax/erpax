@@ -23,7 +23,21 @@
 
 - partition `mountain` · sub-root `5d4077c2-575b-8d9c-81d4-ea82077f4520`
 - bond degree `6` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `6` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `bc3589cd-0c76-87f6-9183-de57f4b62628` · framed by typography partition `mountain` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `7cb6bdcf-18f8-88a1-8971-4ad6fd44acfc` · framed by typography partition `mountain` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>

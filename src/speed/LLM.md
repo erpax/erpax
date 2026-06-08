@@ -3,15 +3,15 @@
 
 # speed
 
-path `speed` · uuid `b57c2655-41d2-849b-970e-259bddd96739` · diamond `bfe80c19-a7c4-8747-9982-d7bb24e19d3e`
+path `speed` · uuid `b57c2655-41d2-849b-970e-259bddd96739` · diamond `7fc86b70-e31f-8b4a-8e88-183aaecc6c5c`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports speed · escapes —
-links `2/2` · folded `1` · bonds in `12` out `12`
+links `2/2` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → consultant·day·departure·detected·entertainment·flow·landmarks·list·memories·pathophysiology·roadmap·vent · ← consultant·day·departure·detected·entertainment·flow·landmarks·list·memories·pathophysiology·roadmap·vent
+neighbors → finality·law·thing · ← finality·law·thing
 analysis —
 law speed is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `46059028-72e5-8e9c-8238-96e35c2a8ff3` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0e6ab650-4cba-8b3a-9964-97624de443f6` · `pnpm readme` · `pnpm computed:check`</sub>

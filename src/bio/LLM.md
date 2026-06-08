@@ -3,8 +3,8 @@
 
 # bio
 
-path `bio` · uuid `f1f2def2-61fe-8a27-afc1-33eb5e1ac0ae` · diamond `2d3403d8-586b-8dfd-a57b-cbe04e9e2192`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `bio` · uuid `603f9ed1-3752-8e11-ab35-06cd9b02ccc2` · diamond `4028e5a4-581a-8e69-96dd-1d9ca5ae14f7`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports chem·collapse·encoded·encodes·entity·has·interaction·law·merge·part·polymer·sequence·similarity·sti · exports bio · escapes —
 links `14/14` · folded `1` · bonds in `14` out `14`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law bio is one schema.org word, content-addressed; the same word collides every 
 
 ---
 
-<sub>content-uuid `c3aae298-3f4a-8010-adc4-226cde5c09d1` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c068b83e-f05d-8aa6-910c-f395e10ed1f9` · `pnpm readme` · `pnpm computed:check`</sub>

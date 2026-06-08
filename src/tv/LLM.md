@@ -3,15 +3,15 @@
 
 # tv
 
-path `tv` · uuid `a5989c63-1488-8735-bb2a-469cabba79a8` · diamond `39953c3f-5ee2-82ae-ac2a-39ccbe351ac2`
+path `tv` · uuid `a5989c63-1488-8735-bb2a-469cabba79a8` · diamond `7b41d7b8-2fe1-8918-a3a5-99a6a5d98d07`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports clip·collapse·episode·law·merge·part·season·series·sti · exports tv · escapes —
-links `9/9` · folded `1` · bonds in `1` out `1`
+links `9/9` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks · ← landmarks
+neighbors → clip·collapse·episode·law·merge·part·season·series·sti · ← clip·collapse·episode·law·merge·part·season·series·sti
 analysis —
 law tv is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `857d4da6-6c98-8837-ae91-c79b83cb05dd` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `535b71ee-9eff-87be-af66-675ba5ffed9c` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -4,7 +4,7 @@
 # 9362
 
 path `iso/9362` · uuid `c5aec3f3-b632-889d-a8e3-49418f9472db` · diamond `04c96173-4963-816a-86a5-ff9a7953d597`
-horo `2` `share` · trinity `1·1·1` · sealed `1`
+horo `2` `share` · trinity `1·1·1` · sealed `0`
 imports — · exports isSwiftBic · escapes —
 links `0/0` · folded `1` · bonds in `0` out `0`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `3846c82a-1672-8ef6-a477-084c9ce4c1ef` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b6178113-b05b-8b35-905f-345eb6deb38a` · `pnpm readme` · `pnpm computed:check`</sub>

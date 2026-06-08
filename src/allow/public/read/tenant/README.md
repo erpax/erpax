@@ -2,9 +2,11 @@
 
 # tenant
 
-> atom `allow/public/read/tenant` · horo `8` `crest` · [[balance]] `1` · [[seal]] `0`
+> atom `allow/public/read/tenant` · horo `7` `descent` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `allow/public/read/tenant` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,11 +23,60 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `law:public read is tenant-scoped opt-in — only tenants flagged `allowPublicRead` expose published content to anonymous callers, resolved through a TTL cache to bound D1 row-reads.`
+- `seal:unsealed`
+- `trigger:Use when resolving which tenants expose published content to anonymous callers — the TTL-cached lookup of tenant ids flagged `allowPublicRead = true`, minimizing D1 row-reads on cold anonymous paths.`
+- `trigger:matter-twin:src/allow/public/read/tenant/index.ts`
+- `trigger:public read is tenant-scoped opt-in — only tenants flagged `allowPublicRead` expose published content to anonymous callers, resolved through a TTL cache to bound D1 row-reads.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `2d1dea68-0407-8ecd-9687-73449406858b` · `39d0965a-c0e4-8d4c-8f48-5734184f553e` · `3f64087e-9928-8873-92e7-a1900799b88d`
+- content uuids `00cb89b6-2b94-8d2f-8616-e0bb017d7c79` · `0200ebfc-e799-8b88-b5b1-858196308115` · `adcdd982-bbbe-8187-93b6-46752634f156`
+
+## [[entropy]] — gaps · seals
+
+> account code `allow/public/read/tenant` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.7` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `2` eb | Σ seal `11.7` eb |
+
+> net residual `-9.7` eb · seal/gap ratio `5.85` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `allow` · sub-root `4ee982fc-d3e7-8ba2-8093-14447a5c479d`
-- bond degree `42` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- partition `allow` · sub-root `89e32db7-0902-878b-8f9c-a3d35cc76a0d`
+- bond degree `30` · analysis neighbors —
+- graph root `86252db0-c776-84eb-b8e4-c884dca3a3ba`
 
 ## [[cloudflare]] bindings
 
@@ -36,16 +87,54 @@
 - `9110 §13 caching` · banner
 - `GDPR Art.5(1)(c) data-minimization` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·7 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `42` · sealed `0` · horo `8`
+- bond degree `30` · sealed `0` · horo `7`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `2`
 
 ## identity
 
-- uuid `1a876b1c-4264-8aea-9978-f539bcc9d5da`
-- bonds in `12` · out `14`
+- uuid `89e32db7-0902-878b-8f9c-a3d35cc76a0d`
+- bonds in `7` · out `7`
 - trinity form·code·proof `1`·`1`·`1`
 - links `5` / `5`
 - folded `1` · escapes `0`
@@ -56,4 +145,4 @@
 
 ---
 
-<sub>content-uuid `9d2bd037-1aa2-8777-b1c8-72699a4a1783` · framed by typography partition `allow` bonds `42` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ca4b69be-e53a-8852-9701-68c6fad8ebfc` · framed by typography partition `allow` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>

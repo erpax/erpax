@@ -24,13 +24,27 @@
 ## typography graph
 
 - partition `guardian` · sub-root `62f76764-ae40-83ba-b8a9-e3550560d678`
-- bond degree `41` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- bond degree `43` · analysis neighbors —
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ISO/IEC 25010:2023 §5.5 testability — the decision is a pure function` · banner
+
+## analytics
+
+- bond degree `43` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `1`
 
 ## identity
 
 - uuid `62f76764-ae40-83ba-b8a9-e3550560d678`
-- bonds in `13` · out `13`
+- bonds in `14` · out `14`
 - trinity form·code·proof `1`·`1`·`1`
 - links `11` / `11`
 - folded `1` · escapes `0`
@@ -41,4 +55,4 @@
 
 ---
 
-<sub>content-uuid `ee3fd30d-daab-8d3b-9bf4-427ea50d15ec` · framed by typography partition `guardian` bonds `41` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `63a7c507-59be-85dc-b72f-820755a8bf82` · framed by typography partition `guardian` bonds `43` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -2,7 +2,7 @@
 
 # policies
 
-> atom `internal/policies` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `internal/policies` · horo `7` `descent` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -19,13 +19,30 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `internal` · sub-root `a3719802-d526-8179-9ae4-637b20c53cac`
-- bond degree `9` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- bond degree `0` · analysis neighbors —
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ISO-37301` · catalogue
+- `ISO-37301:2021 compliance-policy` · banner
+- `ISO-9001` · catalogue
+- `US-CTA-2021` · catalogue
+
+## analytics
+
+- bond degree `0` · sealed `0` · horo `7`
+- variance `1` · balanced `0` · trinity sum `3`
+- bindings `0` · standards `4`
 
 ## identity
 
@@ -37,8 +54,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `f00bc4a5-63a4-8015-8faa-7683087d54dd` · framed by typography partition `internal` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b1f86727-6b7a-8ffc-ac3d-6f3e40c04181` · framed by typography partition `internal` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

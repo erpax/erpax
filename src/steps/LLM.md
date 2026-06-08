@@ -3,15 +3,15 @@
 
 # steps
 
-path `steps` · uuid `b54db468-5ac3-8a10-ad20-24d8c2707163` · diamond `69c8f0cf-e481-85c3-b64f-90ce6bfc1f3a`
+path `steps` · uuid `b54db468-5ac3-8a10-ad20-24d8c2707163` · diamond `329aa2a3-1f91-8556-b20c-490a83626ee9`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports steps · escapes —
-links `2/2` · folded `1` · bonds in `5` out `5`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → civilization·cohort·landmarks·memories·stat · ← civilization·cohort·landmarks·memories·stat
+neighbors → law·thing · ← law·thing
 analysis —
 law steps is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `54868742-e006-8c8b-9638-bc2e52106116` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `bf807440-fcf3-8fb8-a945-7ddbe8a5b71e` · `pnpm readme` · `pnpm computed:check`</sub>

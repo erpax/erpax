@@ -23,7 +23,21 @@
 
 - partition `irrigation` · sub-root `d7857ec9-719b-8e71-beb9-6e292cf813d6`
 - bond degree `50` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `50` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `878ff960-b8d9-85fb-b9fb-83655f23dd39` · framed by typography partition `irrigation` bonds `50` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `120c0589-3cc6-863d-a73f-d183b9580e09` · framed by typography partition `irrigation` bonds `50` · `pnpm readme` · `pnpm readme:check`</sub>

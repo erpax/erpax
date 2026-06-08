@@ -3,8 +3,8 @@
 
 # assembly
 
-path `assembly` · uuid `aa3dab24-5486-8501-a0d5-bf7a25846b5f` · diamond `bcf7d23f-2ff6-8605-8b5d-a65a97d39be8`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `assembly` · uuid `f1fa6ef2-ce3b-8999-97d8-67769d437c9f` · diamond `af22101d-c627-897e-865e-3706cb91fccb`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports country·law·version · exports assembly · escapes —
 links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law assembly is one schema.org word, content-addressed; the same word collides e
 
 ---
 
-<sub>content-uuid `b2dfc1c9-58e9-87a0-803e-4593d52ccc42` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `bbd4db31-6893-8b37-87a5-fcc361478b9f` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -2,7 +2,7 @@
 
 # commerce
 
-> atom `commerce` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
+> atom `commerce` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -23,9 +23,9 @@
 
 ## typography graph
 
-- partition `commerce` · sub-root `f7fcd544-d657-81f0-8cbb-1fdd2ab2f1c3`
+- partition `commerce` · sub-root `1b8ad812-51af-8771-880d-6dfc1e21d0f1`
 - bond degree `138` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -42,15 +42,53 @@
 - `W3C Verifiable Credentials Data Model 2.0 (subscription receipts)` · banner
 - `W3C-VC-2.0` · catalogue
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·5 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `138` · sealed `1` · horo `8`
+- bond degree `138` · sealed `1` · horo `5`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `8`
 
 ## identity
 
-- uuid `f7fcd544-d657-81f0-8cbb-1fdd2ab2f1c3`
+- uuid `1b8ad812-51af-8771-880d-6dfc1e21d0f1`
 - bonds in `44` · out `44`
 - trinity form·code·proof `1`·`1`·`1`
 - links `24` / `24`
@@ -62,4 +100,4 @@
 
 ---
 
-<sub>content-uuid `0c230c69-a74e-8826-8e51-af6eb86677d1` · framed by typography partition `commerce` bonds `138` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `3d7dcee5-ee69-89c7-afaf-70005d021915` · framed by typography partition `commerce` bonds `138` · `pnpm readme` · `pnpm readme:check`</sub>

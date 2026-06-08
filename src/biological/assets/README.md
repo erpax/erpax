@@ -2,9 +2,11 @@
 
 # assets
 
-> atom `biological/assets` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
+> atom `biological/assets` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
+
+> account code `biological/assets` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,11 +23,36 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## [[entropy]] — gaps · seals
+
+> account code `biological/assets` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.4` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[diamond]]/sealed `1.585` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `1` eb | Σ seal `12.985` eb |
+
+> net residual `-11.985` eb · seal/gap ratio `12.985` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `biological` · sub-root `40a0b53b-7053-8f4a-b5ab-1d7131414b2d`
-- bond degree `150` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- partition `biological` · sub-root `ab3d5220-1513-816e-8db6-98b66fd2a6db`
+- bond degree `120` · analysis neighbors —
+- graph root `582b8568-4f46-80fc-8473-2ca7bdc1071f`
 
 ## [[cloudflare]] bindings
 
@@ -58,16 +85,54 @@
 - `ISO-8601-1:2019 date-time` · banner
 - `SOX §404 internal-controls TOM-AGRI-01` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·4 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `150` · sealed `1` · horo `2`
+- bond degree `120` · sealed `1` · horo `4`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `24`
 
 ## identity
 
-- uuid `303ae367-4c71-8291-9728-9f736ba9e6ce`
-- bonds in `45` · out `51`
+- uuid `c44886d9-3ea3-8f13-8f74-a56bad0f080f`
+- bonds in `33` · out `33`
 - trinity form·code·proof `1`·`1`·`1`
 - links `13` / `13`
 - folded `1` · escapes `0`
@@ -78,4 +143,4 @@
 
 ---
 
-<sub>content-uuid `93d6e3f1-2ee7-80b5-bc86-1b392eed6787` · framed by typography partition `biological` bonds `150` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e3785a4e-c324-80f5-9d41-68a885f4ec10` · framed by typography partition `biological` bonds `120` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,21 @@
 
 - partition `fax` · sub-root `a0702d8b-52b9-852a-8576-606bbcbfcb26`
 - bond degree `15` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `15` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `f2b10cea-4a82-8e95-8f3f-d40c4fbcbe60` · framed by typography partition `fax` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `028db912-539f-8791-9752-4fb150358d83` · framed by typography partition `fax` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

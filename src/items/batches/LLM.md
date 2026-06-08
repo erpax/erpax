@@ -4,7 +4,7 @@
 # batches
 
 path `items/batches` · uuid `980d0d8c-3dec-885b-955b-5148dfb10fca` · diamond `7493f11c-6f9e-847e-b018-aa48c3ffe71a`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+horo `7` `descent` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
 links `6/6` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law a batch carries lot identity and parent-batch genealogy (one-step-back, one-
 
 ---
 
-<sub>content-uuid `6ce641d5-e3a6-8a24-9b5d-2b34bae06b81` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8eaf4785-06e0-8afe-8277-9b88607be325` · `pnpm readme` · `pnpm computed:check`</sub>

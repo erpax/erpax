@@ -3,15 +3,15 @@
 
 # valid
 
-path `valid` · uuid `d7693bea-fe27-81c2-89ca-d90240b7c62e` · diamond `dc8d1318-e7de-8d53-a9dd-a8d463e21e3b`
+path `valid` · uuid `d7693bea-fe27-81c2-89ca-d90240b7c62e` · diamond `bad155e4-e986-83cd-af77-9f87e36dcc69`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports law·member·price·through·tier·until · exports valid · escapes —
-links `6/6` · folded `1` · bonds in `7` out `7`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → activities·id·landmarks·partial·spouse·tasks·value · ← activities·id·landmarks·partial·spouse·tasks·value
+neighbors → law·member·price·through·tier·until · ← law·member·price·through·tier·until
 analysis —
 law a thing is valid only inside its from→through window; outside that interval the permit does not hold.
 
 ---
 
-<sub>content-uuid `450ec696-d249-81cc-84dd-1aeb15f73a02` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `69197137-f34f-8e76-8fa6-7e992939d925` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -2,7 +2,7 @@
 
 # agent
 
-> atom `ui/agent` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
+> atom `ui/agent` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -24,13 +24,13 @@
 ## typography graph
 
 - partition `ui` · sub-root `e426b88f-b143-8f66-bf3d-7a7b9766a41b`
-- bond degree `218` · analysis neighbors `agent` · `ai` · `aura` · `booking` · `chat` · `class` · `cloudflare` · `communication` · `decentralization` · `diamond` · `drone` · `ecosystem` · `estate` · `gravity` · `hallucination` · `infectious` · `interaction` · `log` · `mcp` · `observe` · `real` · `reference` · `request` · `research` · `reversibility` · `skill` · `skills` · `statistic` · `team` · `types` · `unavoidable` · `worker`
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `251` · analysis neighbors `agent` · `ai` · `aura` · `booking` · `chat` · `class` · `cloudflare` · `communication` · `decentralization` · `diamond` · `drone` · `ecosystem` · `estate` · `gravity` · `hallucination` · `infectious` · `interaction` · `log` · `mcp` · `observe` · `real` · `reference` · `request` · `research` · `reversibility` · `skill` · `skills` · `statistic` · `team` · `types` · `unavoidable` · `worker`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
-- uuid `9e40539f-0528-8963-8bf3-c0d7ef289faa`
-- bonds in `52` · out `53`
+- uuid `fe5cfadf-1598-87bf-9a01-94aacd043a09`
+- bonds in `69` · out `69`
 - trinity form·code·proof `1`·`1`·`1`
 - links `14` / `14`
 - folded `1` · escapes `0`
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `ec7f3625-2791-86f2-9f42-d8f11cf40c8e` · framed by typography partition `ui` bonds `218` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `1de886ba-1748-8c65-ada3-57b10ad87c4d` · framed by typography partition `ui` bonds `251` · `pnpm readme` · `pnpm readme:check`</sub>

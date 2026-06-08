@@ -24,13 +24,27 @@
 ## typography graph
 
 - partition `horo` · sub-root `2cd52f5e-6d33-8f01-b0c1-ca7c8d435134`
-- bond degree `420` · analysis neighbors `aura`
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- bond degree `426` · analysis neighbors `aura`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ISO-16:1975 a432-tuning-reference (the anchor; value from position)` · banner
+
+## analytics
+
+- bond degree `426` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `1`
 
 ## identity
 
 - uuid `07087838-3aed-86c6-b88c-42689b789787`
-- bonds in `133` · out `131`
+- bonds in `135` · out `133`
 - trinity form·code·proof `1`·`1`·`1`
 - links `63` / `63`
 - folded `1` · escapes `0`
@@ -41,4 +55,4 @@
 
 ---
 
-<sub>content-uuid `4ad7cff0-c170-8b8d-a1a0-bbc291235d4c` · framed by typography partition `horo` bonds `420` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `6b2a8c0e-7e2b-8d91-838b-0a47cfcde2b1` · framed by typography partition `horo` bonds `426` · `pnpm readme` · `pnpm readme:check`</sub>

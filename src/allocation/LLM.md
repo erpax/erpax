@@ -3,8 +3,8 @@
 
 # allocation
 
-path `allocation` · uuid `c9bf5689-48f9-85ad-99d2-1dce65710963` · diamond `94e4777e-7850-8640-874d-a3e45033f2d1`
-horo `4` `weave` · trinity `1·1·1` · sealed `1`
+path `allocation` · uuid `2174b923-0ac9-8c41-8fbf-541e24c274c8` · diamond `e4e49336-67da-8d33-a889-9e7dd45ef798`
+horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports — · exports const·function·interface · escapes —
 links `26/26` · folded `1` · bonds in `31` out `31`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law reward is a pure function of verified time leveraged (same work ⇒ same rew
 
 ---
 
-<sub>content-uuid `ca820ee8-80c3-8467-b87c-988314336e81` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `57d9b91d-bf26-8c39-8ffe-dec2aef369fb` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -1,9 +1,11 @@
 import type { CollectionConfig } from 'payload'
 
 import { authenticated } from '@/authenticated'
+import { auditTrailAfterChange } from '@/audit/trail/after/change'
 import { isSuperAdminAccess, isSuperAdminFieldAccess } from '@/is/super/admin'
 import { localeRecord } from '@/i18n'
 import { updateAndDeleteAccess } from '@/tenants/access'
+import { normalizeTenantDomain, normalizeTenantSlug } from '@/tenants/hooks'
 
 const superAdminSecretsAccess = {
   read: isSuperAdminFieldAccess,
@@ -57,6 +59,9 @@ export const Tenants: CollectionConfig = {
       admin: {
         description: localeRecord('tenants.domainHelp'),
       },
+      hooks: {
+        beforeValidate: [normalizeTenantDomain],
+      },
     },
     {
       name: 'slug',
@@ -67,6 +72,9 @@ export const Tenants: CollectionConfig = {
       },
       index: true,
       required: true,
+      hooks: {
+        beforeValidate: [normalizeTenantSlug],
+      },
     },
     {
       name: 'locales',
@@ -318,6 +326,10 @@ export const Tenants: CollectionConfig = {
       access: superAdminSecretsAccess,
     },
   ],
+  hooks: {
+    afterChange: [auditTrailAfterChange('tenants')],
+  },
+  timestamps: true,
 }
 
 export {

@@ -3,15 +3,15 @@
 
 # types
 
-path `config/types` · uuid `e0930aad-a89b-8e34-a6f3-cbbc597aab59` · diamond `07b64085-8ba8-8161-b4b0-9a6d7a7e5d19`
-horo `4` `weave` · trinity `1·1·1` · sealed `1`
+path `config/types` · uuid `38c73c81-b5ec-858a-a7e0-70fc75fb5b83` · diamond `6f9ce139-488a-86d2-8795-decff0426986`
+horo `9` `unity` · trinity `1·1·1` · sealed `0`
 imports — · exports FeatureLimit·FeatureLimits·interface · escapes —
-links `3/3` · folded `1` · bonds in `21` out `24`
+links `3/3` · folded `1` · bonds in `18` out `18`
 faces worker·plugin·pwa `0·0·0`
-neighbors → agent·audit·beyond·chat·collapse·config·decompression·examples·gate·law·law·law·law·optimize·payload·recover·schema·society·sti·test·torus·trinity·types·vitepress · ← agent·audit·beyond·chat·collapse·config·decompression·examples·gate·law·optimize·payload·recover·schema·society·sti·test·torus·trinity·types·vitepress
+neighbors → chat·collapse·config·decompression·examples·gate·law·optimize·payload·recover·schema·society·sti·test·torus·trinity·types·vitepress · ← chat·collapse·config·decompression·examples·gate·law·optimize·payload·recover·schema·society·sti·test·torus·trinity·types·vitepress
 analysis agent
 law a tenant's entire business surface (branding, model, plans, marketing, flags, localization) is one agnostic typed seed — `TenantConfig` — so onboarding a tenant is authoring one conforming object, never editing code.
 
 ---
 
-<sub>content-uuid `c9615a94-d99f-8374-bed3-75c708d500d8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0c76223c-4d32-8e5f-913a-04d3eeb1e0ce` · `pnpm readme` · `pnpm computed:check`</sub>

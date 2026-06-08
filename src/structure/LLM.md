@@ -3,15 +3,15 @@
 
 # structure
 
-path `structure` · uuid `d637ea13-7272-8a6c-84a9-813aa7a86f8e` · diamond `35b12046-f54c-858a-abd3-e3250985a624`
+path `structure` · uuid `d637ea13-7272-8a6c-84a9-813aa7a86f8e` · diamond `a5c3ee2d-70ce-8839-8cf5-2826a160dd74`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports anatomical·brain·civic·collapse·law·merge·related·sti·sub · exports structure · escapes —
-links `9/9` · folded `1` · bonds in `6` out `6`
+links `9/9` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·meal·memories·reply·stat · ← cohort·landmarks·meal·memories·reply·stat
+neighbors → anatomical·brain·civic·collapse·law·merge·related·sti·sub · ← anatomical·brain·civic·collapse·law·merge·related·sti·sub
 analysis —
 law structure is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `6e3bcc06-4020-8ad4-972a-cb525796c54e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9f75827d-cc63-8f21-96ca-41bb8c0d2753` · `pnpm readme` · `pnpm computed:check`</sub>

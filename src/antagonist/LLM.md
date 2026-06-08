@@ -3,8 +3,8 @@
 
 # antagonist
 
-path `antagonist` · uuid `1612f455-fb92-8a83-8134-7935ba1b6ca9` · diamond `4540ef95-8ffb-8d0a-b96b-464d48a91e39`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `antagonist` · uuid `b851a9bb-adfd-8314-9dd9-4ed8998c8c38` · diamond `07e7d469-1010-875a-87f5-4897dfeb77bb`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports antagonist · escapes —
 links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law antagonist is one schema.org word, content-addressed; the same word collides
 
 ---
 
-<sub>content-uuid `3879bea6-1b9f-86f5-87b7-5da62921a68c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `680a74cd-ab4f-8efe-8ea6-0fde08664be8` · `pnpm readme` · `pnpm computed:check`</sub>

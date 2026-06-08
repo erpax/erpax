@@ -3,15 +3,15 @@
 
 # term
 
-path `term` · uuid `fcad5566-a96b-81e2-89ea-5ed1846b66ba` · diamond `2ef84e1e-eedd-85cd-814c-64d737e000b5`
+path `term` · uuid `fcad5566-a96b-81e2-89ea-5ed1846b66ba` · diamond `8133edbe-c2b0-8b36-a7c9-4012fa4cd197`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports code·collapse·credits·defined·duration·has·law·loan·merge·set·sti·typical · exports term · escapes —
-links `12/12` · folded `1` · bonds in `10` out `10`
+links `12/12` · folded `1` · bonds in `12` out `12`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·due·landmarks·measurement·memories·observation·pharmacology·queries·region·stat · ← cohort·due·landmarks·measurement·memories·observation·pharmacology·queries·region·stat
+neighbors → code·collapse·credits·defined·duration·has·law·loan·merge·set·sti·typical · ← code·collapse·credits·defined·duration·has·law·loan·merge·set·sti·typical
 analysis —
 law term is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `e7e02ea2-7873-8e5c-9e54-a0d250aea95e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `31336c2c-9f60-88d1-92a4-376aa4ff8d07` · `pnpm readme` · `pnpm computed:check`</sub>

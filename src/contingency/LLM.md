@@ -3,8 +3,8 @@
 
 # contingency
 
-path `contingency` · uuid `215cf9dd-3d8e-8919-a525-8e95249f0941` · diamond `5163bac6-4a00-85a8-b64f-f0e376c358ce`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `contingency` · uuid `865683fc-7ffb-8d21-a0c0-ebce169a0dbe` · diamond `4ac1b515-9ccd-8457-9ec3-7eb1979f0390`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports accounting·balance·contingencies · exports contingency · escapes —
 links `6/6` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `082ecb60-d9f4-8a6e-b0dd-d0d41d558f37` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `bfae0328-c8cb-8091-8dd7-5346881ce0b3` · `pnpm readme` · `pnpm computed:check`</sub>

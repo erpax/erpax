@@ -16,16 +16,16 @@
 | [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
 | [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
 | [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[typography]]/partition `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
-- partition `memory` · sub-root `—`
-- bond degree `214` · analysis neighbors —
-- graph root `—`
+- partition `memory` · sub-root `eb81a305-e908-8a4d-9c54-91a1b18b12fa`
+- bond degree `346` · analysis neighbors `aura` · `cloudflare`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
 
 ## [[cloudflare]] bindings
 
@@ -37,7 +37,7 @@
 
 ## analytics
 
-- bond degree `214` · sealed `1` · horo `5`
+- bond degree `346` · sealed `1` · horo `5`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `0`
 
@@ -55,4 +55,4 @@
 
 ---
 
-<sub>content-uuid `c8d6c2dd-6a8e-8fc6-9080-84905c70aa93` · framed by typography partition `memory` bonds `214` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `65fbda06-412b-8c4e-8a46-5674fc9dafa5` · framed by typography partition `memory` bonds `346` · `pnpm readme` · `pnpm readme:check`</sub>

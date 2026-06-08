@@ -3,8 +3,8 @@
 
 # budgetvariance
 
-path `budgetvariance` · uuid `3f6c75a0-3cc4-8c7e-8ea9-85e6f355bf1f` · diamond `3f4237f1-e311-89f5-963c-194db0967c26`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `budgetvariance` · uuid `2622eb1a-aba5-806a-9a34-787823c6a6e5` · diamond `c3a486dd-0fdf-8e86-9f81-4992337851d8`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports accounting·budget·cost·decide·financial·forecast·law·transaction·variance · exports budgetvariance · escapes —
 links `9/9` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law variance is actual minus budget decomposed into its drivers — favorable/un
 
 ---
 
-<sub>content-uuid `5be73c8a-0232-8cf5-8b34-99339660a3bb` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d0fe3081-2402-8836-b39d-cd91a67f11ef` · `pnpm readme` · `pnpm computed:check`</sub>

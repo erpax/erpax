@@ -3,8 +3,8 @@
 
 # built
 
-path `built` · uuid `073c9912-7433-8ef1-b170-f8e8daad7f23` · diamond `79427bf2-0811-813d-b5e5-77c14d36b358`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `built` · uuid `17524035-e229-8346-91ee-430623e3a235` · diamond `f92c468d-6ad0-811f-8689-deb144d12733`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·year · exports built · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law built is one schema.org word, content-addressed; the same word collides ever
 
 ---
 
-<sub>content-uuid `c4c55806-8db3-8c4a-9dd5-07f815dcd7bc` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ce6b3b59-1b73-8bcb-a9da-c29b8575bbd9` · `pnpm readme` · `pnpm computed:check`</sub>

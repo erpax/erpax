@@ -23,7 +23,21 @@
 
 - partition `funnel` · sub-root `5c072a83-cf61-8634-b705-24bc5244868a`
 - bond degree `22` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `22` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `27a28967-3e85-899b-aa0c-861fadec3d74` · framed by typography partition `funnel` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `47a923b9-0635-876f-bc08-05b1c5efb05d` · framed by typography partition `funnel` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>

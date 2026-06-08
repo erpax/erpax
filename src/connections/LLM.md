@@ -3,8 +3,8 @@
 
 # connections
 
-path `connections` · uuid `eb793249-1b5f-8bae-b67d-c288257f782b` · diamond `bb17a0a6-8664-844f-b539-9bf75acc9553`
-horo `1` `base` · trinity `1·1·1` · sealed `1`
+path `connections` · uuid `9ab5856a-9ee7-8bc1-8add-a4ac6cfefdd3` · diamond `90141d14-7852-88e0-bf20-9092dad2ab4a`
+horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
 links `14/14` · folded `1` · bonds in `20` out `20`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `19231119-bcaf-87a1-a7ff-7876f5871763` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `54d60f8e-abcc-8ed5-bd4f-db612aa197ac` · `pnpm readme` · `pnpm computed:check`</sub>

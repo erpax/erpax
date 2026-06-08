@@ -25,7 +25,21 @@
 
 - partition `particle` · sub-root `4db7f4e0-2b20-8614-a3f7-57784975cb9f`
 - bond degree `50` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `composed from the live matrix node + its mass; never hand-asserted` · banner
+
+## analytics
+
+- bond degree `50` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -41,4 +55,4 @@
 
 ---
 
-<sub>content-uuid `c732caa9-cfad-8f85-bfb0-92bc3f7b5e8f` · framed by typography partition `particle` bonds `50` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `630370ec-7f9a-832b-9dab-bbc4d08c345a` · framed by typography partition `particle` bonds `50` · `pnpm readme` · `pnpm readme:check`</sub>

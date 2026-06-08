@@ -25,7 +25,23 @@
 
 - partition `mirror` · sub-root `ffd55b5b-dce6-804f-8b89-b9b59ec55b56`
 - bond degree `21` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `forward/backward are the two word-orders; the value is the digital root of a commutative sum` · banner
+- `forward/backward are the two word-orders; the value is the digital root of a commutative sum, computed` · banner
+- `the base-10 digital root (direction-invariant) · the horo ring read both ways · duality (L→R ⊕ R→L)` · banner
+
+## analytics
+
+- bond degree `21` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `3`
 
 ## identity
 
@@ -41,4 +57,4 @@
 
 ---
 
-<sub>content-uuid `a02c15d5-42cb-8eea-bd53-e6c554a26ca9` · framed by typography partition `mirror` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a30de954-2847-8f37-97c6-1233bf28d4f7` · framed by typography partition `mirror` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>

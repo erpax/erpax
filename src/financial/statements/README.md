@@ -2,7 +2,7 @@
 
 # statements
 
-> atom `financial/statements` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `financial/statements` · horo `7` `descent` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -25,7 +25,34 @@
 
 - partition `financial` · sub-root `1a9944f1-a00b-8415-a29e-0b574f211f2d`
 - bond degree `65` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `BCP-47` · catalogue
+- `BCP-47 language-tag` · banner
+- `IFRS IAS-1 presentation-of-financial-statements` · banner
+- `IFRS IAS-34 §8 §10 interim-financial-reporting (when statementType ∈ Q1/Q2/Q3 the §10 condensed format applies)` · banner
+- `IFRS IFRS-18 §9 §10 §40 presentation-and-disclosure (effective 2027-01 — replaces IAS-1 with structured operating/investing/financing categories)` · banner
+- `IFRS IFRS-7 §31-§42 financial-instruments-disclosures (statement notes consume IFRS-7 risk-management disclosures)` · banner
+- `ISO-19011:2018 audit-trail` · banner
+- `ISO-4217:2015 currency-codes` · banner
+- `ISO-8601-1:2019 date-time fiscal-period-end generated-at issued-at approved-at` · banner
+- `SOX §302 disclosure-controls` · banner
+- `SOX §404 internal-controls` · banner
+- `US-GAAP ASC-205 presentation-of-financial-statements` · banner
+- `US-GAAP ASC-270 interim-reporting` · banner
+- `W3C-PROV-O` · catalogue
+
+## analytics
+
+- bond degree `65` · sealed `0` · horo `7`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `14`
 
 ## identity
 
@@ -37,8 +64,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `0552e29c-2073-89eb-b489-02ed7cf52912` · framed by typography partition `financial` bonds `65` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `2b58671e-1a89-8be4-90ef-90e609799232` · framed by typography partition `financial` bonds `65` · `pnpm readme` · `pnpm readme:check`</sub>

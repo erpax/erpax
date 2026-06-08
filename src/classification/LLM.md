@@ -3,8 +3,8 @@
 
 # classification
 
-path `classification` · uuid `500e64ce-b09a-814c-9740-b991a7f01d02` · diamond `e0869b17-163e-8f18-9d12-347467c934e0`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `classification` · uuid `96fca173-5e36-8060-abdc-863476c960ac` · diamond `4ff6c1d1-6f52-8425-9ff2-6aac6424651f`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports balance·classifications·law·taxonomy · exports classification · escapes —
 links `7/7` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law a classification assigns a thing to a category within one scheme — the sch
 
 ---
 
-<sub>content-uuid `8eab5e10-b690-8d0c-9f1f-b700568f1457` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0ef5cb0c-0ba8-88af-a344-d2050b6299dd` · `pnpm readme` · `pnpm computed:check`</sub>

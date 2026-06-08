@@ -3,15 +3,15 @@
 
 # throughput
 
-path `throughput` · uuid `461eae4d-dc01-8e26-8db6-f875ae6dd8ea` · diamond `2d0e931e-b458-8e67-b292-59b8be3f829b`
+path `throughput` · uuid `461eae4d-dc01-8e26-8db6-f875ae6dd8ea` · diamond `ea2ce16e-2247-8c8a-82c3-9d996e289584`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports bottleneck·flow·law·measure·rate·work · exports throughput · escapes —
-links `8/8` · folded `1` · bonds in `7` out `7`
+links `8/8` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·cohort·funnel·hostel·landmarks·memories·stat · ← action·cohort·funnel·hostel·landmarks·memories·stat
+neighbors → bottleneck·centers·flow·fodder·grazing·law·measure·rate·sparsity·yield · ← bottleneck·centers·flow·fodder·grazing·law·measure·rate·sparsity·yield
 analysis —
 law throughput is the [[rate]] of productive output — quantity per unit time flowing through a process — and the [[bottleneck]] resource caps it.
 
 ---
 
-<sub>content-uuid `ccda74e8-e465-82d0-84f5-d9f837bb7c2f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `bcf151be-a8df-8537-9eee-39c75bea5f71` · `pnpm readme` · `pnpm computed:check`</sub>

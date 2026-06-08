@@ -3,8 +3,8 @@
 
 # attribute
 
-path `attribute` · uuid `58e4a910-cd46-844b-9fc0-f0d9044cd163` · diamond `5726d1b8-f746-8176-a0ed-1523f85f8e16`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `attribute` · uuid `13e622d8-31e2-8feb-8187-325cc7057694` · diamond `c0cfe8f6-ade7-8db1-afca-9f0fb60f0881`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports character·collapse·law·merge·sti · exports attribute · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law attribute is one schema.org word, content-addressed; the same word collides 
 
 ---
 
-<sub>content-uuid `0d576edf-d8bd-84b5-a4aa-1046fa19fbb5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2df923e4-e0da-80a2-8845-8aa8df41d161` · `pnpm readme` · `pnpm computed:check`</sub>

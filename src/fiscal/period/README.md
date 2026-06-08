@@ -2,7 +2,7 @@
 
 # period
 
-> atom `fiscal/period` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
+> atom `fiscal/period` · horo `4` `weave` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -19,13 +19,46 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `fiscal` · sub-root `cf5aa98e-ebac-8e2a-ac4c-50b4ac28b0e6`
-- bond degree `55` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- bond degree `0` · analysis neighbors —
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `eIDAS` · catalogue
+- `eIDAS:2014/910/EU Electronic signatures` · banner
+- `EU-2014/55` · catalogue
+- `EU-2016/679` · catalogue
+- `EU-537/2014` · catalogue
+- `EU-910/2014` · catalogue
+- `GDPR:2016/679 Art. 32 Security of processing` · banner
+- `IAS-34` · catalogue
+- `IAS-34:2023 Interim Financial Reporting` · banner
+- `ISO-4217:2023 Currency codes` · banner
+- `ISO-8601:2019 Date/Time representation` · banner
+- `NIST-SP-800-63` · catalogue
+- `NIST-SP-800-92` · catalogue
+- `NIST-SP-800-92 Audit logging` · banner
+- `SAF-T` · catalogue
+- `SAF-T:3.0.2 Standard Audit File for Tax` · banner
+- `SOX` · catalogue
+- `SOX:2002 Sec. 404 Internal control assessment` · banner
+- `XBRL` · catalogue
+- `XBRL-GL General Ledger` · banner
+
+## analytics
+
+- bond degree `0` · sealed `0` · horo `4`
+- variance `1` · balanced `0` · trinity sum `3`
+- bindings `0` · standards `20`
 
 ## identity
 
@@ -37,8 +70,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `1363abee-b5b9-8920-b51f-1bb2d304de43` · framed by typography partition `fiscal` bonds `55` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `343a2146-ba2e-8622-94b8-ae8cfd0bac2c` · framed by typography partition `fiscal` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

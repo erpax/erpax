@@ -25,6 +25,9 @@
 import { guardian } from '@/guardian'
 import { seal, type SealVerdict } from '@/seal'
 import { toUuid, merge } from '@/uuid/matrix'
+import { norm, linksOf } from './links'
+
+export { norm, linksOf }
 
 // ───────────────────────── coverage (the rendered feature-set) ─────────────────────────
 
@@ -78,9 +81,6 @@ const FRONTMATTER = /^---\n([\s\S]*?)\n---/
 const headingRe = (): RegExp => /^(#{1,6})\s+(.+?)\s*$/gm
 const wikilinkRe = (): RegExp => /\[\[([^\]]+)\]\]/g
 
-/** Canonical link/leaf key — identical to aura/scan.mjs `norm` so resolution agrees across gates. */
-export const norm = (s: string): string => s.toLowerCase().replace(/[-_]/g, '')
-
 /** The H1 (`# title`) text of a page, or '' when none. */
 export const titleOf = (text: string): string => {
   for (const m of text.matchAll(headingRe())) if (m[1]!.length === 1) return m[2]!.trim()
@@ -93,16 +93,6 @@ export const headingsOf = (text: string): string[] => [...text.matchAll(headingR
 /** Strip the frontmatter block, then fenced + inline code — so links/terms read prose only. */
 const prose = (text: string): string =>
   text.replace(FRONTMATTER, ' ').replace(/```[\s\S]*?```/g, ' ').replace(/`[^`]*`/g, ' ')
-
-/** The outgoing wikilink targets of a page, normalized to their resolvable leaf. */
-export const linksOf = (text: string): string[] => {
-  const out = new Set<string>()
-  for (const m of prose(text).matchAll(wikilinkRe())) {
-    const leaf = m[1]!.split('|')[0]!.split('/').pop()
-    if (leaf) out.add(norm(leaf))
-  }
-  return [...out].sort()
-}
 
 /** The search terms of a page: unique, sorted prose tokens (≥3 letters) — the search facet. */
 export const termsOf = (text: string): string[] => {

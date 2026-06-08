@@ -3,8 +3,8 @@
 
 # co
 
-path `co` · uuid `a8f69018-60f7-881f-8e78-e711168d146b` · diamond `878a15d5-5850-8c58-8808-e35c7c209db0`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `co` · uuid `8c5ad48e-f618-8ece-8bc1-1ae7e80312a4` · diamond `4a0e4fd7-3d9b-87b2-8f99-fa460ab0ceca`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·emissions·law·merge·sti · exports co · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law co is one schema.org word, content-addressed; the same word collides every s
 
 ---
 
-<sub>content-uuid `1eeb2b43-0dd3-81d2-9503-1668ee3d3e13` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `04766a40-6703-8be9-b053-b6f41ec1e92f` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -23,7 +23,21 @@
 
 - partition `islam` · sub-root `ef861c49-da1e-8844-b24d-fd7665da9e27`
 - bond degree `86` · analysis neighbors `diamond`
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `86` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `4a2b536c-4e7d-84c4-831e-ac7ed4d9ccc9` · framed by typography partition `islam` bonds `86` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `4214b710-0dae-85cb-b570-3276fa4c0625` · framed by typography partition `islam` bonds `86` · `pnpm readme` · `pnpm readme:check`</sub>

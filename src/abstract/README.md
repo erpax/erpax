@@ -2,9 +2,11 @@
 
 # abstract
 
-> atom `abstract` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
+> atom `abstract` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
+
+> account code `abstract` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -19,11 +21,59 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:trinity:[[gap]]/[[trinity]]/code`
+- `gap:trinity:[[gap]]/[[trinity]]/proof`
+
+### collapse
+
+- `balance:conserved`
+- `law:an abstract is a lossy summary of a CreativeWork, so it derives from that work and cannot exist without it; it is never the source of truth, only its projection.`
+- `seal:sealed`
+- `trigger:Use when reasoning about abstract — An abstract is a short description that summarizes a CreativeWork.`
+- `trigger:an abstract is a lossy summary of a CreativeWork, so it derives from that work and cannot exist without it; it is never the source of truth, only its projection.`
+- `trigger:schema.org — the type vocabulary, collided to single words`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `1`
+- entry uuids `5074e253-9b44-8813-be07-635998c3dc47` · `c72dfdb1-bb31-8585-9dde-ecc471e54274` · `e3b323e1-23a7-8628-b05e-84ef4060ccb3`
+- content uuids `4a127de7-408a-8d4c-ab4d-1c99818c0922` · `ac7a23fd-1abe-8f0c-9e23-e4fcfa179170` · `ba44d764-0e4c-8841-bef4-ceca1058952d` · `c440f40e-fdb6-8b03-8bb9-33c7138f7cd6`
+
+## [[entropy]] — gaps · seals
+
+> account code `abstract` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[trinity]]/code `1.585` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[trinity]]/proof `1.585` eb | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.4` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[diamond]]/sealed `1.585` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `3.17` eb | Σ seal `10.985` eb |
+
+> net residual `-7.815` eb · seal/gap ratio `3.465` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `abstract` · sub-root `d385c183-750c-826b-8a58-3d2d7fc242dc`
+- partition `abstract` · sub-root `ba44d764-0e4c-8841-bef4-ceca1058952d`
 - bond degree `9` · analysis neighbors —
-- graph root `06810c2c-2396-831f-a2b3-a58706a17051`
+- graph root `e2ef5c1f-42ed-8f9f-ac69-25711349ebff`
 
 ## [[cloudflare]] bindings
 
@@ -34,15 +84,53 @@
 - `schema.org` · catalogue
 - `schema.org — the type vocabulary, collided to single words` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·4 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `9` · sealed `1` · horo `5`
+- bond degree `9` · sealed `1` · horo `4`
 - variance `0` · balanced `1` · trinity sum `1`
 - bindings `0` · standards `2`
 
 ## identity
 
-- uuid `d385c183-750c-826b-8a58-3d2d7fc242dc`
+- uuid `ba44d764-0e4c-8841-bef4-ceca1058952d`
 - bonds in `3` · out `3`
 - trinity form·code·proof `1`·`0`·`0`
 - links `3` / `3`
@@ -54,4 +142,4 @@
 
 ---
 
-<sub>content-uuid `f99f1427-96ce-824a-a7ad-f0e6010bfab1` · framed by typography partition `abstract` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `463fb605-3ab4-8900-81dc-a07d23cb9bc8` · framed by typography partition `abstract` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>

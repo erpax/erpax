@@ -3,15 +3,15 @@
 
 # unnamed
 
-path `unnamed` · uuid `fd9b5010-66d0-813d-9c93-03c40efd9368` · diamond `961c10f9-7776-87ba-b28a-8c163520aae7`
+path `unnamed` · uuid `fd9b5010-66d0-813d-9c93-03c40efd9368` · diamond `e4c3a0ba-a175-8a1c-8794-3c5e25687d70`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·policy·sources·sti · exports unnamed · escapes —
-links `6/6` · folded `1` · bonds in `4` out `4`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·policy·sources·sti · ← collapse·law·merge·policy·sources·sti
 analysis —
 law unnamed is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `cca52f11-8da0-877b-ae2c-2a1b5793fa24` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6056780e-b2c4-80dd-b000-2b4497bd90db` · `pnpm readme` · `pnpm computed:check`</sub>

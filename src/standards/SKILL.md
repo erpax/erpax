@@ -1,8 +1,137 @@
 ---
 name: standards
-description: Use when registering, citing, superseding or querying any published standard (IFRS, ISO, W3C, RFC, EU Directive, etc.) against a tenant — conflict graph, supersession trail, per-module citation index, per-tenant adoption status. The live standards-registry collection backing the erpax.standards.* MCP tool family.
+description: "Use when registering, citing, superseding or querying any published standard (IFRS, ISO, W3C, RFC, EU Directive, etc.) against a tenant — conflict graph, supersession trail, per-module citation index, per-tenant adoption status. The live standards-registry collection backing the erpax.standards.* MCP tool family."
+atomPath: standards
+coordinate: standards · 5/round · 0a4f370e
+contentUuid: "025124a1-4218-5da1-a79b-7c810d8bd274"
+diamondUuid: "29285d89-b2e9-8df6-8236-e0b3250ce42a"
+uuid: "0a4f370e-f3b0-8e5c-9dc2-3a765924c519"
+horo: 5
+bonds:
+  in:
+    - accounting
+    - agriculture
+    - analytics
+    - api
+    - certification
+    - factory
+    - folder
+    - grade
+    - identity
+    - law
+    - organic
+    - proof
+    - reference
+    - skills
+    - sourced
+    - standard
+    - topography
+    - truth
+    - vocabulary
+  out:
+    - accounting
+    - agriculture
+    - analytics
+    - api
+    - certification
+    - factory
+    - folder
+    - grade
+    - identity
+    - law
+    - organic
+    - proof
+    - reference
+    - skills
+    - sourced
+    - standard
+    - topography
+    - truth
+    - vocabulary
+typography:
+  partition: standards
+  bondDegree: 61
+  neighbors: []
+standards:
+  - "Conservation Law 27 standards-as-live-objects"
+  - "Conservation Law 28 standards-supersession-tracking"
+  - "Conservation Law 38 mcp-tool-standardization"
+  - "ISO 19011:2018 §6.4.6 audit-evidence (citation changes audit-trailed)"
+  - "ISO-19011:2018"
+  - "ISO/IEC 25010:2023 §5.1 functional-completeness"
+  - "ISO/IEC-25010:2023"
+  - "RFC-8259"
+  - "W3C JSON-LD 1.1 (citation as live linked-data)"
+  - "W3C-JSON-LD-1.1"
+  - "banners by scripts/standards-catalogue.ts. Do not edit by hand. -->"
+  - "tag pointing at this standardId. Populated by the citation-index gate (Slice QQQQQQQQ companion).' },"
+bindings: []
+neighbors:
+  wikilink:
+    - accounting
+    - identity
+    - law
+    - proof
+    - standard
+  matrix:
+    - accounting
+    - agriculture
+    - analytics
+    - api
+    - certification
+    - factory
+    - folder
+    - grade
+    - identity
+    - law
+    - organic
+    - proof
+    - reference
+    - skills
+    - sourced
+    - standard
+    - topography
+    - truth
+    - vocabulary
+  backlinks:
+    - accounting
+    - agriculture
+    - analytics
+    - api
+    - certification
+    - factory
+    - folder
+    - grade
+    - identity
+    - law
+    - organic
+    - proof
+    - reference
+    - skills
+    - sourced
+    - standard
+    - topography
+    - truth
+    - vocabulary
+signatures:
+  computationUuid: "7f649ece-1c8b-8dfd-a33b-8cd9d7d16897"
+  stages:
+    - stage: path
+      stageUuid: "e4d21269-1c37-8fe4-85da-1900af3645f0"
+    - stage: trinity
+      stageUuid: "4d6b8103-7297-8bd1-a011-ba1bc9680168"
+    - stage: boundary
+      stageUuid: "fe032e88-3d46-80f9-8c29-55c390e50fc3"
+    - stage: links
+      stageUuid: "ce14a10d-8dd0-8830-b2ef-cf5cffbeec8e"
+    - stage: horo
+      stageUuid: "9879dd67-43f5-81c9-9eac-0381c83ed451"
+    - stage: seal
+      stageUuid: "7b4499bc-f117-8590-9608-a84661bebd42"
+    - stage: uuid
+      stageUuid: "9339f706-45b8-8e95-b3ab-b58f49f031ca"
+version: 2
 ---
-
 # standards
 
 The persistent registry of every published standard erpax cites. Standards are **not folders** — they are *everywhere*, dissolved across `src/` as `@standard` / `@rfc` banners (the usage truth). This is where that vocabulary **meets**: one computed scan — the curated `registry.ts` ⊕ the live banners (`scripts/standards-catalogue.mjs`) — emits a single `catalogue.ts` that BOTH seeds the payload `standards` collection (queryable, per-tenant, MCP-backed) AND renders the index below (vitepress). One scan, two indices; the banners stay the source of truth.

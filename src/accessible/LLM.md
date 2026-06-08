@@ -3,7 +3,7 @@
 
 # accessible
 
-path `accessible` · uuid `e6ae8f1f-2872-8781-bb92-c9a9bfbe77b0` · diamond `ad986e69-f98f-8e87-bb03-699f9f4137e1`
+path `accessible` · uuid `f96a1a3e-13c3-8bc0-b826-57e8f7cf80a8` · diamond `43a86db8-02c5-8408-b33e-1773b76598b6`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·free·law·merge·sti · exports accessible · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
@@ -14,4 +14,4 @@ law accessible is one schema.org word, content-addressed; the same word collides
 
 ---
 
-<sub>content-uuid `4b8afbfa-5cd5-86e6-8230-4e6edecdd738` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4f505887-e555-86b0-a884-39e7cec589bb` · `pnpm readme` · `pnpm computed:check`</sub>

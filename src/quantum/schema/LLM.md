@@ -3,15 +3,15 @@
 
 # schema
 
-path `quantum/schema` · uuid `569c450d-b910-83ec-ad69-566a96e9a9ed` · diamond `cd13eb23-995a-83a4-860b-f422ef4b8e4c`
+path `quantum/schema` · uuid `5d9e1c43-d8dd-8a37-a27e-05a2b4e1f687` · diamond `46bcb362-f229-8ee3-8dbc-f01fe53542ef`
 horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports @/uuid/matrix · exports const · escapes —
-links `13/13` · folded `1` · bonds in `20` out `20`
+links `13/13` · folded `1` · bonds in `15` out `15`
 faces worker·plugin·pwa `1·0·0`
-neighbors → cardinality·collections·constraint·database·field·fields·law·matrix·merge·partition·payload·quantum·schema·sti·test·testing·type·types·uuid·verification · ← cardinality·collections·constraint·database·field·fields·law·matrix·merge·partition·payload·quantum·schema·sti·test·testing·type·types·uuid·verification
+neighbors → cardinality·collections·constraint·database·field·fields·law·partition·payload·schema·sti·test·testing·type·types · ← cardinality·collections·constraint·database·field·fields·law·partition·payload·schema·sti·test·testing·type·types
 analysis —
 law a schema's identity is exactly the content-uuid of its canonical form, so two shapes are the same schema if and only if their uuids match — identical schemas merge to one, and any change to the shape yields a different uuid. Drift is therefore detectable by architecture: the moment the shape changes its uuid no longer matches the published version, forcing re-verification — versioning is structural, not by convention.
 
 ---
 
-<sub>content-uuid `f3fbda2b-5555-8434-83ff-f2c8ae396c3c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c9d2d557-1d5f-8c0d-b267-8a4bb4920fd6` · `pnpm readme` · `pnpm computed:check`</sub>

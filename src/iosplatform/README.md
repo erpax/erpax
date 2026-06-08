@@ -23,7 +23,21 @@
 
 - partition `iosplatform` · sub-root `1c3ee1c5-c15e-8c62-af59-15fd52d2214d`
 - bond degree `12` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `12` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `8ed2145f-00b8-843f-b346-472c6fa11e2a` · framed by typography partition `iosplatform` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `98c33b55-c102-89e3-8c58-9d42ef946396` · framed by typography partition `iosplatform` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

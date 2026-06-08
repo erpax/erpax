@@ -3,8 +3,8 @@
 
 # by
 
-path `auto/populate/created/by` · uuid `4e3c7334-b1c1-8588-bdf9-44453db61332` · diamond `252b5527-9419-8a5b-b231-cc14b08af769`
-horo `2` `share` · trinity `1·1·1` · sealed `0`
+path `auto/populate/created/by` · uuid `410069fd-0437-889e-b86d-e94188ace311` · diamond `c141f4ba-b7dd-8e7a-80ee-b9bcdc8a0eeb`
+horo `5` `round` · trinity `1·1·1` · sealed `0`
 imports — · exports const · escapes —
 links `7/7` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law authorship is stamped by the server, never the client — `createdBy` is set
 
 ---
 
-<sub>content-uuid `b00e4459-81a9-8a67-846b-c4b950eefb39` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ed042c6f-d826-8878-a8d1-f12aad879ce8` · `pnpm readme` · `pnpm computed:check`</sub>

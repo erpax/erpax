@@ -23,7 +23,21 @@
 
 - partition `gynecologic` · sub-root `ee9742f1-a4d7-8d6e-ba57-2d861b2e9cb4`
 - bond degree `12` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `12` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `5b6999cb-ef56-8079-8d21-36200b705b11` · framed by typography partition `gynecologic` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0b5712be-bdcc-8cef-b732-0a9c1add5765` · framed by typography partition `gynecologic` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

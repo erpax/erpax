@@ -2,9 +2,11 @@
 
 # authenticated
 
-> atom `authenticated` · horo `4` `weave` · [[balance]] `1` · [[seal]] `0`
+> atom `authenticated` · horo `1` `base` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `authenticated` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -19,13 +21,59 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
+
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:stray:[[gap]]/[[diamond]]/stray/or/`
+
+### collapse
+
+- `balance:variance=1`
+- `law:presence of a verified `req.user` is the gate — `authenticated` grants iff a session exists ([[auth]]), denying every anonymous caller.`
+- `seal:unsealed`
+- `trigger:Use when gating a Payload collection or field on a logged-in session — the access predicate that grants only when `req.user` exists, denying every anonymous caller.`
+- `trigger:matter-twin:src/authenticated/index.ts`
+- `trigger:presence of a verified `req.user` is the gate — `authenticated` grants iff a session exists ([[auth]]), denying every anonymous caller.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `2a1be260-3091-8c33-bd6a-254863b0f0f6` · `640ee27b-dbcc-80ab-bd14-dca482974ebb` · `69c9a509-e6f2-8b7f-8e60-47a3da445e49`
+- content uuids `4f5c71f9-45e0-8130-b8fc-03b9130095ca` · `8f20138d-fcf6-8b5f-8cd2-71bd65ff280b` · `c39ed64a-1d00-825c-9c4b-05ea8c07506d`
+
+## [[entropy]] — gaps · seals
+
+> account code `authenticated` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[diamond]]/stray/or/ `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.1` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+| Σ gap `2` eb | Σ seal `8.1` eb |
+
+> net residual `-6.1` eb · seal/gap ratio `4.05` · [[entropy]] · [[seal]]
 
 ## typography graph
 
-- partition `authenticated` · sub-root `4895a042-0394-8153-9779-6b0606cc1249`
-- bond degree `9` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- partition `authenticated` · sub-root `faf4d8ac-793e-8f8c-bf58-51557cba9111`
+- bond degree `0` · analysis neighbors —
+- graph root `86252db0-c776-84eb-b8e4-c884dca3a3ba`
 
 ## [[cloudflare]] bindings
 
@@ -35,15 +83,53 @@
 
 - `SOC-2 CC6.1 logical-access-controls` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unbalanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| not-held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·1 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `9` · sealed `0` · horo `4`
-- variance `0` · balanced `1` · trinity sum `3`
+- bond degree `0` · sealed `0` · horo `1`
+- variance `1` · balanced `0` · trinity sum `3`
 - bindings `0` · standards `1`
 
 ## identity
 
-- uuid `c4849e96-80aa-8957-8c97-0ec77464cf23`
+- uuid `8d232ac2-7397-8457-a24d-4d69a42e68f6`
 - bonds in `3` · out `3`
 - trinity form·code·proof `1`·`1`·`1`
 - links `6` / `6`
@@ -55,4 +141,4 @@
 
 ---
 
-<sub>content-uuid `784e758a-4512-8dd9-976f-5a0dfb04ebf6` · framed by typography partition `authenticated` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `981b9a3c-7a26-8950-9721-053c97ec6005` · framed by typography partition `authenticated` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

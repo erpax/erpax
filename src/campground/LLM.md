@@ -3,8 +3,8 @@
 
 # campground
 
-path `campground` · uuid `74ada8cd-faeb-8e28-be29-0c818ec21a07` · diamond `985acf69-df5b-8a0b-86a1-50488737e748`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `campground` · uuid `6e25dfc3-d024-8680-8630-ed8916fd2865` · diamond `9aad2263-31d0-83b6-bbba-20f9956bcf68`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports law·place·thing · exports campground · escapes —
 links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law campground is one schema.org word, content-addressed; the same word collides
 
 ---
 
-<sub>content-uuid `21570054-8337-89a1-879c-b34cd5000140` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8a6c1711-b623-8a62-a0f7-de6b127ef477` · `pnpm readme` · `pnpm computed:check`</sub>

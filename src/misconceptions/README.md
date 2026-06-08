@@ -23,7 +23,21 @@
 
 - partition `misconceptions` · sub-root `ff4946a3-c31c-8d53-87a0-fdc97a9d9f1a`
 - bond degree `12` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `12` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `93f3502f-f9d9-8aa2-ba6c-fa4549a8ec0b` · framed by typography partition `misconceptions` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e7de612c-9636-87a1-a0c9-36acbc8759b8` · framed by typography partition `misconceptions` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,8 +3,8 @@
 
 # cdcpmdrecord
 
-path `cdcpmdrecord` · uuid `1e205f38-bd3c-88e3-8480-3c9d28cafb37` · diamond `cc06c3ff-3fde-8c26-b179-1c78f591a58f`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `cdcpmdrecord` · uuid `2e1348e5-c2e4-89c6-b247-3034ba419b33` · diamond `c465bd2e-a8f0-8a29-825d-3c3411d1a1f1`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports cdcpmdrecord · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law cdcpmdrecord is one schema.org word, content-addressed; the same word collid
 
 ---
 
-<sub>content-uuid `bfaef244-9e93-8eae-8709-f2848522ae18` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ec0677b1-d33b-8f03-88e7-7741f41b6e7d` · `pnpm readme` · `pnpm computed:check`</sub>

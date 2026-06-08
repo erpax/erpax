@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest'
 import { pathNavMeta, navManifestFromPaths } from '@/navigation'
 
-/** Mirrors build-index.mjs `pathNavMeta(segments)` — kept in sync by law, not import. */
+/** Mirrors build/index.ts nav fields — kept in sync by law, not import. */
 function indexNavOf(segments: readonly string[]) {
   return {
     nav: segments.slice(0, -1),
@@ -11,7 +11,7 @@ function indexNavOf(segments: readonly string[]) {
 }
 
 describe('skill/router — nav manifest aligned with path groups', () => {
-  it('build-index nav · group fields match pathNavMeta (vitepress law)', () => {
+  it('build nav · group fields match pathNavMeta (vitepress law)', () => {
     for (const p of ['agents/mcp/tool', 'vitepress', 'skill/router'] as const) {
       const meta = pathNavMeta(p)
       const segs = p.split('/')

@@ -4,7 +4,7 @@
 # methods
 
 path `payment/methods` · uuid `f0ac8880-4e2a-83af-8ed4-9723b118b04c` · diamond `4ecdc3f2-fa31-878a-8675-b5b668dc419f`
-horo `2` `share` · trinity `1·1·1` · sealed `1`
+horo `2` `share` · trinity `1·1·1` · sealed `0`
 imports @/is/super/admin·@/payment/methods/hooks · exports const · escapes —
 links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law a payment-method is a tokenized billing-instrument vault — Stripe tokens a
 
 ---
 
-<sub>content-uuid `02bf5367-3aed-8e08-a6b0-fedea105d34e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ac6bf5e4-07fd-811d-a362-7a66ae7f83ce` · `pnpm readme` · `pnpm computed:check`</sub>

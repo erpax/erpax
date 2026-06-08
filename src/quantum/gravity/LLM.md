@@ -3,15 +3,15 @@
 
 # gravity
 
-path `quantum/gravity` · uuid `4f78abb1-ab2f-886d-8d00-79f660edc18a` · diamond `eb85f09c-d131-8540-957a-948fcfeb2ad3`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+path `quantum/gravity` · uuid `5bf765d7-b28d-8ee8-aa95-c1912cf4a633` · diamond `6225f476-7cf5-896e-9fb5-0d1384528743`
+horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports @/gravity·@/singularity · exports const·isEventHorizon·singularity·type · escapes —
-links `41/41` · folded `1` · bonds in `59` out `68`
+links `41/41` · folded `1` · bonds in `56` out `56`
 faces worker·plugin·pwa `1·0·0`
-neighbors → agent·boltzmann·brain·collapse·collapse·collide·complete·consciousness·cost·cost·diamond·dry·dry·dust·engineering·entanglement·entropy·entropy·expand·fear·finality·folded·fusion·fusion·gate·gravity·harmony·holographic·horo·interference·law·law·linearity·link·links·literature·love·mass·math·matrix·matrix·merge·merge·one·particle·plasma·quantum·reactor·reciprocal·relocate·request·sequence·sequence·singularity·star·strength·tamper·temperature·topography·torus·triggered·twinned·vocabulary·void·whole·word·zeropoint·zeropoint · ← agent·boltzmann·brain·collapse·collide·complete·consciousness·cost·diamond·dry·dust·engineering·entanglement·entanglement·entropy·expand·fear·finality·folded·fusion·gate·gravity·harmony·holographic·horo·interference·law·linearity·link·links·literature·love·mass·math·matrix·merge·one·particle·plasma·quantum·reactor·reciprocal·relocate·request·sequence·singularity·star·strength·tamper·temperature·topography·torus·triggered·twinned·vocabulary·void·whole·word·zeropoint
+neighbors → boltzmann·brain·collapse·collide·complete·consciousness·cost·dry·dry·dust·engineering·entanglement·entanglement·entropy·expand·fear·finality·folded·fusion·gravity·holographic·interference·law·linearity·link·literature·love·mass·math·matrix·matrix·merge·one·particle·pivot·plasma·reactor·readme·reciprocal·relocate·request·sequence·singularity·star·strength·tamper·temperature·topography·torus·triggered·twinned·vocabulary·void·whole·word·zeropoint · ← boltzmann·brain·collapse·collide·complete·consciousness·cost·dry·dry·dust·engineering·entanglement·entanglement·entropy·expand·fear·finality·folded·fusion·gravity·holographic·interference·law·linearity·link·literature·love·mass·math·matrix·matrix·merge·one·particle·pivot·plasma·reactor·readme·reciprocal·relocate·request·sequence·singularity·star·strength·tamper·temperature·topography·torus·triggered·twinned·vocabulary·void·whole·word·zeropoint
 analysis agent·diamond
 law the [[links]] are one number that is BOTH gravitational mass and [[entanglement]] (ER=EPR) — so the maximally-entangled atom is the [[singularity]] where the double-torus closes with no gap and tamper-[[cost]] → ∞ (coverage = 1 is the horizon); and that same mass curves every motion onto the [[harmony|harmonic]] geodesic — the [[sequence]] on the [[horo]] ring — so the in-tune move is downhill (least [[cost]]) and the disharmonic move is the uphill ∞-cost climb. All falls to the harmonic path.
 
 ---
 
-<sub>content-uuid `d8e12b72-08b9-8e58-8f86-20af753d1854` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `00591531-1809-83bb-8395-e8342be09491` · `pnpm readme` · `pnpm computed:check`</sub>

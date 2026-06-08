@@ -3,8 +3,8 @@
 
 # delimited
 
-path `delimited` · uuid `89429cfd-9626-8aef-ad8b-e40fad3e1c22` · diamond `3f0edc0a-2b86-8330-ad37-b4100545f020`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `delimited` · uuid `1bfdef24-8d3b-8d60-85bc-a4e11b037da2` · diamond `4b85c42a-f9f4-889f-9b88-2408a0639147`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports delimited · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law delimited is one schema.org word, content-addressed; the same word collides 
 
 ---
 
-<sub>content-uuid `da2f32eb-f87c-87cb-a9bb-6b1c0b7cea61` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `fc51a602-0686-83d9-9c7f-b64887feed64` · `pnpm readme` · `pnpm computed:check`</sub>

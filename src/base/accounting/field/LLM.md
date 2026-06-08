@@ -3,15 +3,15 @@
 
 # field
 
-path `base/accounting/field` · uuid `23770393-a143-8c85-adc5-86018040c085` · diamond `b1ab4b04-3a86-8a6b-b694-cd7de9df8763`
-horo `8` `crest` · trinity `1·1·1` · sealed `0`
+path `base/accounting/field` · uuid `843e5166-3208-8af6-9e30-23c546e2de00` · diamond `7101355c-07ea-892b-94d1-068cc0849acd`
+horo `5` `round` · trinity `1·1·1` · sealed `0`
 imports @/config/regional-defaults · exports DEFAULT_CURRENCY·SUPPORTED_CURRENCIES·const·currencyOptions · escapes —
-links `6/6` · folded `1` · bonds in `9` out `9`
+links `6/6` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·balance·base·currency·dry·fields·law·measure·schema · ← accounting·balance·base·currency·dry·fields·law·measure·schema
+neighbors → balance·fields·schema · ← balance·fields·schema
 analysis —
 law every recurring accounting field is built by one factory — currency is amount+code (never a code-baked name), measure is value+unit (blank ⇒ C62) — so the field shape lives in exactly one place ([[dry]]).
 
 ---
 
-<sub>content-uuid `d99f3c86-e369-8b78-855a-f397806dfa93` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `cfeca742-f8d5-8f2c-abed-8184d4bf080b` · `pnpm readme` · `pnpm computed:check`</sub>

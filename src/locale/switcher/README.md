@@ -2,7 +2,7 @@
 
 # switcher
 
-> atom `locale/switcher` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
+> atom `locale/switcher` · horo `5` `round` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -25,7 +25,21 @@
 
 - partition `locale` · sub-root `073f2301-e08a-8875-9bb6-85e0b1705ccf`
 - bond degree `3` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `3` · sealed `0` · horo `5`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -37,8 +51,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `42d7fcc2-9156-8901-8c4e-551e24936736` · framed by typography partition `locale` bonds `3` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `eabb95b6-d9d1-8b13-b908-48d798753d1b` · framed by typography partition `locale` bonds `3` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -1,8 +1,150 @@
 ---
 name: sandbox
 description: "Use when running an UNTRUSTED, agent-built tool safely — erpax encodes capability-scoping, credential-protection, endpoint-allowlisting and a receipted audit NATIVELY (content-uuid tool identity + the receipt + the gate), depending on nothing external. The tool's identity is its content-uuid; its grant is {capabilities, allowedHosts, credentialHandles}; every action is policy-evaluated and receipted; the WASM/worker isolation is the runtime boundary the pure policy rides on."
+atomPath: sandbox
+coordinate: sandbox · 1/base · 364ff396
+contentUuid: "6b0d3f3a-0ea7-58b2-90f7-e48d8d6dd428"
+diamondUuid: "b320474e-8e85-8259-a273-f7eb001e0b55"
+uuid: "364ff396-6afe-8c16-ba8d-153f0df9d89d"
+horo: 1
+bonds:
+  in:
+    - access
+    - bindings
+    - comms
+    - exchange
+    - identity
+    - industry
+    - law
+    - mcp
+    - merge
+    - oauth
+    - peace
+    - proof
+    - receipt
+    - research
+    - routing
+    - sanitization
+    - security
+    - self
+    - skin
+    - society
+    - team
+    - trading
+    - uuid
+  out:
+    - access
+    - bindings
+    - comms
+    - exchange
+    - identity
+    - industry
+    - law
+    - mcp
+    - merge
+    - oauth
+    - peace
+    - proof
+    - receipt
+    - research
+    - routing
+    - sanitization
+    - security
+    - self
+    - skin
+    - society
+    - team
+    - trading
+    - uuid
+typography:
+  partition: sandbox
+  bondDegree: 79
+  neighbors: []
+standards:
+  - "NIST SP-800-162 ABAC (capability-scoped authorization)"
+  - "NIST-SP-800-162"
+  - "OWASP-ASVS"
+  - "OWASP-ASVS V5 untrusted-input / least-privilege"
+bindings: []
+neighbors:
+  wikilink:
+    - access
+    - identity
+    - law
+    - merge
+    - peace
+    - proof
+    - receipt
+    - self
+    - society
+    - uuid
+  matrix:
+    - access
+    - bindings
+    - comms
+    - exchange
+    - identity
+    - industry
+    - law
+    - mcp
+    - merge
+    - oauth
+    - peace
+    - proof
+    - receipt
+    - research
+    - routing
+    - sanitization
+    - security
+    - self
+    - skin
+    - society
+    - team
+    - trading
+    - uuid
+  backlinks:
+    - access
+    - bindings
+    - comms
+    - exchange
+    - identity
+    - industry
+    - law
+    - mcp
+    - merge
+    - oauth
+    - peace
+    - proof
+    - receipt
+    - research
+    - routing
+    - sanitization
+    - security
+    - self
+    - skin
+    - society
+    - team
+    - trading
+    - uuid
+signatures:
+  computationUuid: "49acf77d-42ee-8ac0-8571-732c7e36d00d"
+  stages:
+    - stage: path
+      stageUuid: "5f4d1904-144d-859d-8226-20252d2ad276"
+    - stage: trinity
+      stageUuid: "32c9b744-31f9-8eee-8fb9-1392754644f9"
+    - stage: boundary
+      stageUuid: "3a433d93-ca05-80f5-ad4b-eaff00510bd8"
+    - stage: links
+      stageUuid: "03ec28a6-9039-872a-bf72-75d8459f08b7"
+    - stage: horo
+      stageUuid: "4303e0f8-0222-86bb-a7b1-56f86d657a81"
+    - stage: seal
+      stageUuid: "4c38ca85-d268-8a0e-8dee-5ee2d39286b8"
+    - stage: uuid
+      stageUuid: "2876fe7f-3a66-8188-aa81-4f01130cd82b"
+version: 2
 ---
-
 # sandbox — running untrusted tools, encoded natively (no external trust layer)
 
 FORM: **an untrusted, agent-built tool runs under a content-addressed GRANT, and every action is policy-evaluated and receipted — erpax encodes this itself.** The tool's identity is its content-uuid ([[identity]]: the code IS the id, so a tool cannot lie about what it is). Its `ToolGrant` is `{ toolUuid, capabilities, allowedHosts, credentialHandles }` — what verbs it may use ([[access]]), which hosts it may reach (endpoint allowlist), which secrets it may touch (by handle, never value). `permits(grant, action)` decides allow/block; `brokerCredential` resolves a secret ONLY for a granted handle, so the tool gets it at the host boundary and never holds it in scope (credential-protection + leak-containment); `evaluate` emits a [[receipt]] for every action (the uuid-chained audit — no receipt, no proof).

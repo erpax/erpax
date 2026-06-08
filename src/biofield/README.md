@@ -2,7 +2,7 @@
 
 # biofield
 
-> atom `biofield` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
+> atom `biofield` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -21,9 +21,9 @@
 
 ## typography graph
 
-- partition `biofield` · sub-root `85bfe319-dff3-88d8-bd31-df58e478c523`
+- partition `biofield` · sub-root `003148e4-bd99-8ac1-992d-6503a5238c56`
 - bond degree `45` · analysis neighbors `aura`
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- graph root `1cef4f02-a3fa-83a5-8ea0-120b724ef456`
 
 ## [[cloudflare]] bindings
 
@@ -33,15 +33,53 @@
 
 —
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·7 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `45` · sealed `1` · horo `8`
+- bond degree `45` · sealed `1` · horo `7`
 - variance `0` · balanced `1` · trinity sum `1`
 - bindings `0` · standards `0`
 
 ## identity
 
-- uuid `85bfe319-dff3-88d8-bd31-df58e478c523`
+- uuid `003148e4-bd99-8ac1-992d-6503a5238c56`
 - bonds in `13` · out `13`
 - trinity form·code·proof `1`·`0`·`0`
 - links `18` / `18`
@@ -53,4 +91,4 @@
 
 ---
 
-<sub>content-uuid `957cfe5f-ea75-88a6-b981-1a7a8d4af05f` · framed by typography partition `biofield` bonds `45` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `2f3f4919-57c6-8369-bb11-fcac013f7c65` · framed by typography partition `biofield` bonds `45` · `pnpm readme` · `pnpm readme:check`</sub>

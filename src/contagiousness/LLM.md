@@ -3,8 +3,8 @@
 
 # contagiousness
 
-path `contagiousness` · uuid `c96ac9bf-e714-8eea-aa2e-0d4400a9f188` · diamond `e3ef95fe-40c3-83a5-b21d-4499eec0d701`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `contagiousness` · uuid `eec54664-de96-88fa-a191-1fb49c877347` · diamond `11d509c8-d2ae-8d53-a24d-22947c184cb9`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports contagiousness · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law contagiousness is one schema.org word, content-addressed; the same word coll
 
 ---
 
-<sub>content-uuid `f1bbca07-7ce3-8900-aa87-d6d25c205355` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e76fb7f4-bb91-8b4e-95f9-a51aebc1eaab` · `pnpm readme` · `pnpm computed:check`</sub>

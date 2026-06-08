@@ -21,9 +21,9 @@
 
 ## typography graph
 
-- partition `bahai` · sub-root `e3b63286-3fbf-801b-aa1d-374c44cd05a1`
+- partition `bahai` · sub-root `b68e9f2f-5842-8070-bd33-3125d057ee8a`
 - bond degree `47` · analysis neighbors `diamond`
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- graph root `1cef4f02-a3fa-83a5-8ea0-120b724ef456`
 
 ## [[cloudflare]] bindings
 
@@ -33,6 +33,44 @@
 
 —
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·2 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
 - bond degree `47` · sealed `1` · horo `2`
@@ -41,7 +79,7 @@
 
 ## identity
 
-- uuid `e3b63286-3fbf-801b-aa1d-374c44cd05a1`
+- uuid `b68e9f2f-5842-8070-bd33-3125d057ee8a`
 - bonds in `15` · out `15`
 - trinity form·code·proof `1`·`0`·`0`
 - links `43` / `43`
@@ -53,4 +91,4 @@
 
 ---
 
-<sub>content-uuid `0d137445-b0f0-853e-ad60-37fde57c8082` · framed by typography partition `bahai` bonds `47` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d1182a2f-846b-87e3-8571-414132677db3` · framed by typography partition `bahai` bonds `47` · `pnpm readme` · `pnpm readme:check`</sub>

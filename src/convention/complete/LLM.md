@@ -3,15 +3,15 @@
 
 # complete
 
-path `convention/complete` · uuid `2fca8ba6-1fcc-8bdc-a85c-75d86215aecf` · diamond `a56b910e-6cb1-8b51-beb4-20ca8bcdb84f`
-horo `8` `crest` · trinity `1·1·1` · sealed `1`
+path `convention/complete` · uuid `f57f2c6a-a5a2-837a-a895-5bdb0665f946` · diamond `d75b273c-637f-844e-8a58-26572267cf54`
+horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports @/aura · exports const·function · escapes —
-links `13/13` · folded `1` · bonds in `18` out `21`
+links `13/13` · folded `1` · bonds in `13` out `13`
 faces worker·plugin·pwa `1·0·0`
-neighbors → aura·collapse·collapse·cost·data·dry·feed·folded·fronted·gravity·honest·law·law·merge·merge·named·sti·time·triggered·trinity·twinned · ← aura·collapse·cost·data·dry·feed·folded·fronted·gravity·honest·law·merge·named·sti·time·triggered·trinity·twinned
+neighbors → collapse·data·feed·folded·fronted·honest·law·merge·named·sti·time·triggered·twinned · ← collapse·data·feed·folded·fronted·honest·law·merge·named·sti·time·triggered·twinned
 analysis aura
 law an atom is the trinity {SKILL.md, index.ts, test.ts}; the corpus is complete iff coverage = complete / total = 1, and any pure-skill atom missing its matter-twin is the only gap driving tamper-cost below infinity.
 
 ---
 
-<sub>content-uuid `80b5a865-1f75-8f72-ad3f-2314dd148935` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `362fb813-8e1c-8806-a214-d42695cea941` · `pnpm readme` · `pnpm computed:check`</sub>

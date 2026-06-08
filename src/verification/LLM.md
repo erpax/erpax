@@ -3,15 +3,15 @@
 
 # verification
 
-path `verification` · uuid `631bb0d4-abc8-86c6-b183-8ff9ef9b717d` · diamond `41f40bdd-421c-8ef3-b685-c6b5235a346c`
+path `verification` · uuid `631bb0d4-abc8-86c6-b183-8ff9ef9b717d` · diamond `dad078bb-1e86-8017-b2b1-ff57f65b204b`
 horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/uuid/matrix · exports const · escapes —
-links `15/15` · folded `1` · bonds in `5` out `5`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat·thing · ← cohort·landmarks·memories·stat·thing
+links `15/15` · folded `1` · bonds in `16` out `21`
+faces worker·plugin·pwa `1·0·0`
+neighbors → anchor·anchor·checking·collapse·domain·domain·fact·identity·law·merge·policy·proof·proof·reality·schema·sti·tamper·tamper·uuid·uuid·verification · ← anchor·checking·collapse·domain·fact·identity·law·merge·policy·proof·reality·schema·sti·tamper·uuid·verification
 analysis —
 law verification is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `8a90b560-5aa4-879b-9b21-d69c40fc872a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `72346e84-0472-8d18-b003-55c1ac089612` · `pnpm readme` · `pnpm computed:check`</sub>

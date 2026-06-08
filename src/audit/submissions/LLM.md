@@ -3,8 +3,8 @@
 
 # submissions
 
-path `audit/submissions` · uuid `e6176860-6ebf-8d92-8b4e-55627f3606f6` · diamond `0ccb33fa-45de-8802-86c8-1773b9ef2808`
-horo `4` `weave` · trinity `1·1·1` · sealed `0`
+path `audit/submissions` · uuid `0110258d-a3f7-89cb-a952-515c086a07ed` · diamond `5e183a57-28e5-89c1-b6ee-0dc44e3eeaac`
+horo `5` `round` · trinity `1·1·1` · sealed `0`
 imports @/audit/trail/after/change·@/auth·@/auto/populate/tenant·@/fields · exports default · escapes —
 links `7/7` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `4188c126-45cc-892a-a3e3-be68bb209b07` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6dc9d840-d22d-87a8-a398-e317f6d09fee` · `pnpm readme` · `pnpm computed:check`</sub>

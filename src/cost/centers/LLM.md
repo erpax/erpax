@@ -3,15 +3,15 @@
 
 # centers
 
-path `cost/centers` · uuid `0eef6c5e-d9ff-8690-b65a-bdcec917487c` · diamond `f3b1c0d6-6ee7-8133-b684-31823069042d`
-horo `1` `base` · trinity `1·1·1` · sealed `1`
+path `cost/centers` · uuid `1c9da18a-a4fa-827f-acae-e58a0c1a369d` · diamond `65fdedda-a2c0-8276-80bb-a3a2cbafb8a5`
+horo `5` `round` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
-links `8/8` · folded `1` · bonds in `20` out `22`
+links `8/8` · folded `1` · bonds in `12` out `12`
 faces worker·plugin·pwa `1·0·0`
-neighbors → access·accounting·accounting·bottleneck·budgetvariance·capacity·fields·hooks·identity·journals·law·law·manufacturing·materials·positions·proof·routings·runs·segment·shift·shifts·throughput · ← access·accounting·bottleneck·budgetvariance·capacity·fields·hooks·identity·journals·law·manufacturing·materials·positions·proof·routings·runs·segment·shift·shifts·throughput
+neighbors → access·accounting·budgetvariance·fields·hooks·identity·journals·law·positions·proof·runs·segment · ← access·accounting·budgetvariance·fields·hooks·identity·journals·law·positions·proof·runs·segment
 analysis —
 law a cost-center is a SECONDARY analytical dimension on GL postings (region·unit·department·project, hierarchical via parent) for segment/departmental P&L — it tags JE lines without polluting the chart of accounts.
 
 ---
 
-<sub>content-uuid `9c51642d-053c-874c-814f-b24899e3587b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b9fbe3c0-8f32-8266-83f8-a567f9977d3d` · `pnpm readme` · `pnpm computed:check`</sub>

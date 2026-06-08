@@ -2,7 +2,7 @@
 
 # karma
 
-> atom `quantum/karma` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
+> atom `quantum/karma` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -23,14 +23,66 @@
 
 ## typography graph
 
-- partition `quantum` · sub-root `539df73c-956d-8aae-b36f-47cf0d3aaff7`
-- bond degree `106` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- partition `quantum` · sub-root `752ec37e-713d-87b7-a64c-41cefcda190a`
+- bond degree `95` · analysis neighbors —
+- graph root `767556c1-6cb2-8c6a-8d8b-18641569b2ed`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `composed from @/dna (the chain) + @/karma (the net); computed on the live matrix` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·7 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `95` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `1`
 
 ## identity
 
-- uuid `e70d8816-0afe-80d9-8354-fe381dc4e796`
-- bonds in `33` · out `34`
+- uuid `759c8a71-7ad6-82da-b8e9-713341411211`
+- bonds in `28` · out `28`
 - trinity form·code·proof `1`·`1`·`1`
 - links `17` / `17`
 - folded `1` · escapes `0`
@@ -41,4 +93,4 @@
 
 ---
 
-<sub>content-uuid `5fc4288a-cd4f-8d66-a56a-36c4cf597589` · framed by typography partition `quantum` bonds `106` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `3f5f9ffd-49c3-8ac6-9c22-e77cec14ba60` · framed by typography partition `quantum` bonds `95` · `pnpm readme` · `pnpm readme:check`</sub>

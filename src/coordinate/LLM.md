@@ -3,15 +3,15 @@
 
 # coordinate
 
-path `coordinate` · uuid `dd317801-0b51-877a-9a12-18903b32f0e8` · diamond `a7c48b2e-e57a-88c9-a568-a4af86137b6c`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `coordinate` · uuid `38727e7d-2a5e-8fbf-a078-a670c97f05b2` · diamond `4fcc759a-a2c0-8a0d-93af-11e7ddc4c028`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports architecture·balance·coil·fields·harmony·hooks·horo·identity·law·merge·octave·proof·sequence·tenants · exports coordinate · escapes —
-links `26/26` · folded `1` · bonds in `30` out `29`
+links `26/26` · folded `1` · bonds in `30` out `30`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·addressed·agent·analog·aura·balance·coil·dna·fields·gate·harmony·hooks·horo·identity·invariant·items·law·lots·merge·octave·packs·phases·proof·quaternary·regeneration·sequence·tenants·unavoidable·variants · ← accounting·addressed·agent·analog·aura·balance·coil·dna·fields·gate·harmony·hooks·horo·identity·invariant·items·law·lots·merge·octave·packs·phases·phases·proof·quaternary·regeneration·sequence·tenants·unavoidable·variants
+neighbors → accounting·addressed·agent·analog·aura·balance·coil·dna·fields·gate·harmony·hooks·horo·identity·invariant·items·law·lots·merge·octave·packs·phases·phases·proof·quaternary·regeneration·sequence·tenants·unavoidable·variants · ← accounting·addressed·agent·analog·aura·balance·coil·dna·fields·gate·harmony·hooks·horo·identity·invariant·items·law·lots·merge·octave·packs·phases·phases·proof·quaternary·regeneration·sequence·tenants·unavoidable·variants
 analysis —
 law an atom's coordinate is the cross of its three neighbour uuids (parent · prev · next) — a folder communicates only through that cross (locality), carries ≥2 crosses or is unbalanced (structural double-entry, [[balance]]), and every cross folds into the one root (zero entropy).
 
 ---
 
-<sub>content-uuid `8c4acb03-dc29-8bd5-a784-8550fe00abe9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `bdc2709b-2c23-8183-b3dd-e2b4a9c187df` · `pnpm readme` · `pnpm computed:check`</sub>

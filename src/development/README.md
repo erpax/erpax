@@ -2,7 +2,7 @@
 
 # development
 
-> atom `development` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
+> atom `development` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -23,9 +23,9 @@
 
 ## typography graph
 
-- partition `development` · sub-root `91f0328b-2317-8a07-916a-8a6bd4bf3306`
-- bond degree `98` · analysis neighbors `aura`
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- partition `development` · sub-root `47d53a47-5e41-8384-976c-74b30eeb3bbc`
+- bond degree `71` · analysis neighbors `aura`
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -35,16 +35,54 @@
 
 —
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·7 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `98` · sealed `1` · horo `8`
+- bond degree `71` · sealed `1` · horo `7`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `0`
 
 ## identity
 
-- uuid `68775545-1723-8452-a806-bc6502ece6f7`
-- bonds in `26` · out `33`
+- uuid `a2e2bd19-dac0-8791-acc1-b2d2476112b3`
+- bonds in `16` · out `16`
 - trinity form·code·proof `1`·`1`·`1`
 - links `15` / `15`
 - folded `1` · escapes `0`
@@ -55,4 +93,4 @@
 
 ---
 
-<sub>content-uuid `17119bf2-dc84-8691-b957-a41f47d64cf3` · framed by typography partition `development` bonds `98` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `174e30ce-3fe7-8738-bc2b-5ebb690db2a0` · framed by typography partition `development` bonds `71` · `pnpm readme` · `pnpm readme:check`</sub>

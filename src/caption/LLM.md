@@ -3,8 +3,8 @@
 
 # caption
 
-path `caption` · uuid `cfc5ba9b-92d9-8e56-883d-324270e61f23` · diamond `95e851b6-2544-8290-b3d4-58ca830907fc`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `caption` · uuid `f81b7f1b-11d5-88b1-a95e-1f2d79002513` · diamond `4dee89ea-5fe7-86cd-bc3c-da323a07c582`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports embedded·law·text · exports caption · escapes —
 links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law a caption is human-readable text bound to its object inline; a machine-forma
 
 ---
 
-<sub>content-uuid `391aa3ad-124b-8fc0-b13e-032cedee8576` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4785d803-fc0f-87ab-8677-a86f749e50c2` · `pnpm readme` · `pnpm computed:check`</sub>

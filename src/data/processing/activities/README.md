@@ -2,9 +2,11 @@
 
 # activities
 
-> atom `data/processing/activities` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
+> atom `data/processing/activities` · horo `8` `crest` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `data/processing/activities` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,11 +23,57 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `seal:unsealed`
+- `trigger:Use when maintaining the GDPR Art.30 Records of Processing Activities (RoPA) — documenting each processing activity's purpose, lawful basis, data categories, retention period, third-country transfer safeguards, and scheduling annual DPO reviews. The controller/processor RoPA register.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `705542be-419d-8a46-a6d5-edb96486b233` · `72205348-5e72-8a77-ba34-33cc63ad9f48` · `aec034ac-dd66-8f15-ac9c-60429f03a121`
+- content uuids `4640e1ee-808a-8ce7-b987-8f8e84184637` · `e05b1948-9d5b-89d9-9c9b-9279664bde52` · `e5c27021-a696-8795-bd6f-07233a5e3a12`
+
+## [[entropy]] — gaps · seals
+
+> account code `data/processing/activities` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.8` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `2` eb | Σ seal `11.8` eb |
+
+> net residual `-9.8` eb · seal/gap ratio `5.9` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `data` · sub-root `57efddc7-808a-83f8-bfed-9ab404ae86c8`
-- bond degree `70` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- partition `data` · sub-root `f1c88cdf-e5cb-84b7-9c13-0fae2c5c4b4b`
+- bond degree `58` · analysis neighbors —
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
 
 ## [[cloudflare]] bindings
 
@@ -36,28 +84,65 @@
 - `GDPR Art.30(1) records-controller` · banner
 - `GDPR Art.30(2) records-processor` · banner
 - `GDPR Art.5(1)(e) storage-limitation` · banner
-- `ISO-19011:2018 audit-trail ropa-evidence` · banner
 - `ISO-27701:2019 §6.3.1 records-of-processing` · banner
 - `ISO-8601-1:2019 date-time review-due-at` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·8 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `70` · sealed `1` · horo `4`
+- bond degree `58` · sealed `0` · horo `8`
 - variance `0` · balanced `1` · trinity sum `3`
-- bindings `0` · standards `6`
+- bindings `0` · standards `5`
 
 ## identity
 
-- uuid `4a014d12-f969-891a-850d-7a18eebf73d5`
-- bonds in `23` · out `23`
+- uuid `02336b30-a4c2-8230-8598-0d81cf0d216d`
+- bonds in `17` · out `17`
 - trinity form·code·proof `1`·`1`·`1`
 - links `7` / `7`
 - folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `2e1634a9-b253-8383-b01c-5d26b988ae68` · framed by typography partition `data` bonds `70` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f30684ab-110d-8942-b87e-a43348144aed` · framed by typography partition `data` bonds `58` · `pnpm readme` · `pnpm readme:check`</sub>

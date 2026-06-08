@@ -2,7 +2,7 @@
 
 # condition
 
-> atom `condition` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
+> atom `condition` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -21,9 +21,9 @@
 
 ## typography graph
 
-- partition `condition` · sub-root `74234198-dae7-832d-8709-749dbeb93bdb`
+- partition `condition` · sub-root `7bcfe59e-4293-8714-a956-1b1e4c88190e`
 - bond degree `35` · analysis neighbors —
-- graph root `0349017a-99bf-8657-ae7e-21b09f363ed4`
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -33,15 +33,53 @@
 
 - `schema.org — the type vocabulary, collided to single words` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·7 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `35` · sealed `1` · horo `5`
+- bond degree `35` · sealed `1` · horo `7`
 - variance `0` · balanced `1` · trinity sum `1`
 - bindings `0` · standards `1`
 
 ## identity
 
-- uuid `74234198-dae7-832d-8709-749dbeb93bdb`
+- uuid `7bcfe59e-4293-8714-a956-1b1e4c88190e`
 - bonds in `10` · out `10`
 - trinity form·code·proof `1`·`0`·`0`
 - links `10` / `10`
@@ -53,4 +91,4 @@
 
 ---
 
-<sub>content-uuid `254fd526-13c4-8375-99cf-cf783638e4f6` · framed by typography partition `condition` bonds `35` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `66d732be-f5d5-8f08-a867-23055767cca3` · framed by typography partition `condition` bonds `35` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,15 +3,15 @@
 
 # phases
 
-path `lot/work/phases` · uuid `1ab9b677-c1ef-801a-b4f4-c4c77758ccb3` · diamond `f2e15a39-c42b-81c1-913b-b83adbbc4315`
-horo `5` `round` · trinity `1·1·1` · sealed `1`
+path `lot/work/phases` · uuid `3b89cf16-da9c-86b6-912b-fc2543d4decf` · diamond `fbfa8cfa-6af1-8894-9a86-afd2701ca071`
+horo `4` `weave` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports const·default · escapes —
-links `19/19` · folded `1` · bonds in `11` out `16`
+links `19/19` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·accounting·balance·coordinate·coordinate·law·law·lots·lots·merge·merge·operations·phases·phases·sequence·variants · ← accounting·balance·coordinate·law·lots·merge·operations·phases·phases·sequence·variants
+neighbors → accounting·balance·coordinate·law·lots·merge·operations·phases · ← accounting·balance·coordinate·law·lots·merge·operations·phases
 analysis —
 law a routing step is one sort-ordered position in a [[lots|lot]]'s phase chain whose `workPhase` always resolves into the [[work/phases]] catalog (100% over 291 011 etrima rows); `sort`-order IS the route ([[sequence]]), state is DERIVED from watermarks never stored, and over-run is WARNED not blocked.
 
 ---
 
-<sub>content-uuid `707014f2-610e-8ab7-8ff0-a59f8ee19814` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `04999b3d-b289-8ee2-9f1a-afdf324b0a88` · `pnpm readme` · `pnpm computed:check`</sub>

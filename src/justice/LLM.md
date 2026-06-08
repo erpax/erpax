@@ -4,7 +4,7 @@
 # justice
 
 path `justice` · uuid `bd0d41f0-e714-878a-954a-c26bc310bf6f` · diamond `50256f12-30e7-8ea9-adca-1049226937de`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+horo `7` `descent` · trinity `1·0·0` · sealed `0`
 imports access·accounting·collections·duality·fields·fractal·holographic·hooks·identity·law·merge·standard·transaction · exports justice · escapes —
 links `15/15` · folded `1` · bonds in `21` out `21`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law adjudication is a balanced state-machine over a docket — a case moves file
 
 ---
 
-<sub>content-uuid `ee7a468e-c57e-83bf-a514-4fa5d4097cf8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d3e2040d-026a-8764-8179-07c6049ea71d` · `pnpm readme` · `pnpm computed:check`</sub>

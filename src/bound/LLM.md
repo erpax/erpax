@@ -3,8 +3,8 @@
 
 # bound
 
-path `bound` · uuid `6966fcea-29d6-8897-9a71-7a6309112f06` · diamond `51869e89-c46e-8598-b498-9fd8ea3a96b8`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `bound` · uuid `1eb03041-0299-86e9-85b9-d934eb4d9a81` · diamond `ce484686-dd29-8620-bdd5-aa7baa1390cc`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports bound · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law bound is one schema.org word, content-addressed; the same word collides ever
 
 ---
 
-<sub>content-uuid `eeb116c4-33ae-8072-8220-d9874be94ca8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2da8d27a-9fad-81e9-a4ee-cffa061420d3` · `pnpm readme` · `pnpm computed:check`</sub>

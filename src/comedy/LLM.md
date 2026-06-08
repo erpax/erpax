@@ -3,8 +3,8 @@
 
 # comedy
 
-path `comedy` · uuid `a3dd765a-db7a-8cbd-897e-57e59b5267d7` · diamond `94c02164-3c1d-83e0-acb3-fb99a96071c3`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `comedy` · uuid `62595bbc-b65c-8be2-9c7e-bbb369509012` · diamond `371e5c40-f891-8bad-b98c-7199dc779d11`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports club·collapse·event·law·merge·sti · exports comedy · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law comedy is one schema.org word, content-addressed; the same word collides eve
 
 ---
 
-<sub>content-uuid `fc6fd9c2-8423-816c-9435-ae89f8f25d60` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1234e43b-032c-82df-988b-0fc9e2259ec5` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # cost
 
-path `tamper/cost` · uuid `d9fd816f-6fed-8ade-ae02-4efe49b83c14` · diamond `24ecc0cc-b36c-8893-8012-8a7fb9715ca5`
+path `tamper/cost` · uuid `806c15e6-dc68-8594-93cb-076001eef221` · diamond `7133fd38-8596-88d2-a1cd-1d1f5a0126b9`
 horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports @/cost · exports CrackVerdict·function · escapes —
-links `29/29` · folded `1` · bonds in `13` out `13`
+links `29/29` · folded `1` · bonds in `151` out `150`
 faces worker·plugin·pwa `0·0·0`
-neighbors → allocation·cardiovascular·company·correlation·declaration·id·landmarks·mass·photon·progression·query·spouse·team · ← allocation·cardiovascular·company·correlation·declaration·id·landmarks·mass·photon·progression·query·spouse·team
-analysis analytics·aura·diamond·hallucination·purity
+neighbors → accounting·addressed·agent·analog·analytics·anchor·anchor·anchoring·angel·aura·baked·balance·barrier·beyond·blockchain·breath·carbon·category·chat·collapse·collider·competition·complete·concatenate·consciousness·consistency·consulting·contribution·coverage·cultivation·decide·decompression·development·diamond·digit·drug·dry·duality·dust·enterprisebudget·entropy·entry·estimated·expand·exported·fear·finality·fodder·folded·folder·fresh·fronted·fusion·gate·gravity·guardian·hallucination·harmony·history·holographic·holographic·honest·identity·import·integrity·karma·law·law·lawful·lexical·llm·localize·log·love·math·matrix·maxtampercost·mcp·merge·merge·message·mulch·named·notification·oid·one·origin·peace·pickup·plan·plasma·power·profane·projection·proof·proof·propagation·pruning·purity·pwa·quantum·reactor·reciprocal·redundancy·relocate·replication·request·research·resolve·sacred·science·scouting·seal·security·shallow·shannon·sharing·shred·singularity·skills·society·sourced·specification·standard·standard·stream·strength·suffering·sufficient·surprisal·tamper·team·trading·translate·trellis·triggered·trinity·tunnel·twinned·typography·unavoidable·unit·uuid·variance·versions·vibration·voting·wallet·whole·zeropoint · ← accounting·addressed·agent·analog·analytics·anchor·anchoring·angel·aura·baked·balance·barrier·beyond·blockchain·breath·carbon·category·chat·collapse·collider·competition·complete·concatenate·consciousness·consistency·consulting·contribution·coverage·cultivation·decide·decompression·development·diamond·digit·drug·dry·duality·dust·enterprisebudget·entropy·entry·estimated·expand·exported·fear·fear·finality·fodder·folded·folder·fresh·fronted·fusion·gate·gravity·gravity·guardian·hallucination·harmony·history·holographic·honest·identity·import·import·import·integrity·karma·law·lawful·lexical·llm·localize·log·love·love·math·matrix·maxtampercost·mcp·merge·message·mulch·named·notification·oid·one·origin·peace·pickup·plan·plasma·power·profane·projection·proof·propagation·pruning·purity·pwa·quantum·reactor·reciprocal·redundancy·relocate·replication·request·research·research·resolve·sacred·science·scouting·seal·security·shallow·shannon·sharing·shred·singularity·skills·society·sourced·specification·standard·stream·strength·suffering·sufficient·surprisal·tamper·team·trading·translate·trellis·triggered·trinity·tunnel·twinned·typography·unavoidable·unit·uuid·uuid·variance·versions·vibration·voting·wallet·whole·zeropoint
+analysis analytics·aura
 law —
 
 ---
 
-<sub>content-uuid `422aa8ad-329e-8f65-a781-f511fd2c2aa6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `031f598b-813f-8359-a175-1f489caecd38` · `pnpm readme` · `pnpm computed:check`</sub>

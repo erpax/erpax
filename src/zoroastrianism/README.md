@@ -2,17 +2,17 @@
 
 # zoroastrianism
 
-> atom `zoroastrianism` · horo `—` `—` · [[balance]] `1` · [[seal]] `0`
+> atom `zoroastrianism` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[horo]]/off-ring `1` |
-| [[balance]] `1` | [[liability]]/[[identity]]/uuid `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
 | [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `7` | Σ `7` |
@@ -22,21 +22,21 @@
 ## typography graph
 
 - partition `zoroastrianism` · sub-root `6cf90c29-6e5d-8e42-9379-32b5217adc54`
-- bond degree `28` · analysis neighbors `aura` · `diamond` · `hallucination` · `purity`
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `69` · analysis neighbors `aura` · `diamond`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
-- uuid `—`
-- bonds in `0` · out `0`
+- uuid `6cf90c29-6e5d-8e42-9379-32b5217adc54`
+- bonds in `22` · out `22`
 - trinity form·code·proof `1`·`0`·`0`
 - links `51` / `51`
-- folded `0` · escapes `0`
+- folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `93f880a6-76fa-8da8-8232-a50181adf47f` · framed by typography partition `zoroastrianism` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `daa33731-4ef3-8b35-abc9-230fa87ece8e` · framed by typography partition `zoroastrianism` bonds `69` · `pnpm readme` · `pnpm readme:check`</sub>

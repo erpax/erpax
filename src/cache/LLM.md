@@ -3,15 +3,15 @@
 
 # cache
 
-path `cache` · uuid `ce746170-18e5-8091-81f0-849dca8972e0` · diamond `6687f926-030d-8b8c-adca-63333197399a`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+path `cache` · uuid `cac9148f-cb9c-8362-9f8d-6427f3c53e34` · diamond `47db4b79-68e6-834e-9031-c08ef2ce0818`
+horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports — · exports const·interface · escapes —
-links `7/7` · folded `1` · bonds in `14` out `15`
+links `7/7` · folded `1` · bonds in `12` out `12`
 faces worker·plugin·pwa `0·0·0`
-neighbors → artery·bindings·cache·diamond·holographic·law·law·merge·optimize·pwa·quantum·queries·redirects·request·uuid · ← artery·bindings·cache·diamond·holographic·law·merge·optimize·pwa·quantum·queries·redirects·request·uuid
+neighbors → artery·bindings·bindings·cache·diamond·holographic·law·optimize·pwa·queries·redirects·request · ← artery·bindings·bindings·cache·diamond·holographic·law·optimize·pwa·queries·redirects·request
 analysis —
 law a cache trades recompute for staleness — its one hard problem is invalidation (TTL, write-through vs cache-aside, coherency); the [[holographic]] move is to store the small seed and recompute the rest cheaper, never the whole.
 
 ---
 
-<sub>content-uuid `980f10bc-39bd-88ed-b607-259c8f8e957a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e5e79938-96a2-8b4c-be24-f2a9be379b46` · `pnpm readme` · `pnpm computed:check`</sub>

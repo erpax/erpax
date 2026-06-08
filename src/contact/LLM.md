@@ -3,7 +3,7 @@
 
 # contact
 
-path `contact` · uuid `4e6f8843-42d9-85d3-888c-650f0510b751` · diamond `bf78e9fd-e7f7-8484-9a3b-07ef1821877f`
+path `contact` · uuid `01ede04f-6597-83cc-8472-1d57d3d177c3` · diamond `86c22d93-80fe-899e-8ec2-c4e18b25813e`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports application·collapse·law·merge·option·page·point·points·sti·type · exports contact · escapes —
 links `10/10` · folded `1` · bonds in `10` out `10`
@@ -14,4 +14,4 @@ law contact is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `0834ebe7-7386-8cbe-bb07-3c468e7179b8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b7e6cfd3-a51a-89fd-82b4-6765fba1f2d3` · `pnpm readme` · `pnpm computed:check`</sub>

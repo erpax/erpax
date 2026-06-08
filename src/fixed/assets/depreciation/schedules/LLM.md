@@ -3,15 +3,15 @@
 
 # schedules
 
-path `fixed/assets/depreciation/schedules` · uuid `021bba8b-136a-860a-8802-68fee80e709a` · diamond `d66615f0-97d0-8be3-a20b-53b852909cfe`
-horo `5` `round` · trinity `1·1·1` · sealed `1`
+path `fixed/assets/depreciation/schedules` · uuid `dab1b731-0ea9-8759-ba04-97bb568437b9` · diamond `2b770529-64bc-8b19-92e3-99bfac04dd56`
+horo `7` `descent` · trinity `1·1·1` · sealed `0`
 imports @/audit/trail/after/change·@/auth·@/auto/populate/created/by·@/auto/populate/tenant·@/auto/set/timestamp·@/base/accounting/field·@/utility · exports default · escapes —
-links `6/6` · folded `1` · bonds in `10` out `10`
+links `6/6` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·assets·balance·entities·identity·intangible·law·proof·standard·transaction · ← accounting·assets·balance·entities·identity·intangible·law·proof·standard·transaction
+neighbors → accounting·assets·balance·identity·intangible·proof·standard·transaction · ← accounting·assets·balance·identity·intangible·proof·standard·transaction
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `2b9c59db-3b43-8932-82c0-84cfa7f317b9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `edf61b5e-7938-867a-9fd4-d68acf169643` · `pnpm readme` · `pnpm computed:check`</sub>

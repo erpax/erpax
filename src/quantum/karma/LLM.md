@@ -3,15 +3,15 @@
 
 # karma
 
-path `quantum/karma` · uuid `e70d8816-0afe-80d9-8354-fe381dc4e796` · diamond `9191794a-32be-85ba-adb1-821e877a4b0e`
-horo `1` `base` · trinity `1·1·1` · sealed `1`
+path `quantum/karma` · uuid `759c8a71-7ad6-82da-b8e9-713341411211` · diamond `55aed31b-4f88-8a10-a325-51ad47336e71`
+horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports @/dna·@/karma · exports const · escapes —
-links `17/17` · folded `1` · bonds in `33` out `34`
+links `17/17` · folded `1` · bonds in `28` out `28`
 faces worker·plugin·pwa `1·0·0`
-neighbors → accounting·agent·angel·archangel·balance·buddhism·command·cost·db·dna·dna·entanglement·entropy·entropy·entry·expense·fear·heart·hinduism·jainism·karma·law·lineage·love·mercy·merge·peace·quantum·quantum·religion·tag·tamper·wallet·zoroastrianism · ← accounting·agent·angel·archangel·balance·buddhism·command·cost·db·dna·entanglement·entropy·entry·expense·fear·fear·heart·hinduism·jainism·karma·law·lineage·love·love·mercy·merge·peace·quantum·religion·tag·tamper·wallet·zoroastrianism
+neighbors → accounting·accounting·agent·angel·archangel·balance·buddhism·command·cost·db·dna·entropy·entry·expense·fear·fear·heart·hinduism·jainism·karma·love·love·mercy·peace·quantum·religion·wallet·zoroastrianism · ← accounting·accounting·agent·angel·archangel·balance·buddhism·command·cost·db·dna·entropy·entry·expense·fear·fear·heart·hinduism·jainism·karma·love·love·mercy·peace·quantum·religion·wallet·zoroastrianism
 analysis —
 law an atom's karma is netted along itself AND its whole DNA lineage (`[atom, ...genome(atom)]`), never beside the account; because each child's content-uuid folds its parent, editing any ancestor shifts the descendant's inherited balance and its uuid together — so the moral debt read down the chain cannot be silently rewritten.
 
 ---
 
-<sub>content-uuid `88adb149-264d-84a2-aca1-e74e425e8c99` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `313516e9-a496-86ff-9325-c3433a9bdbe1` · `pnpm readme` · `pnpm computed:check`</sub>

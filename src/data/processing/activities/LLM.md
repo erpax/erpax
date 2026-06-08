@@ -3,15 +3,15 @@
 
 # activities
 
-path `data/processing/activities` · uuid `4a014d12-f969-891a-850d-7a18eebf73d5` · diamond `400c2072-e57e-8e96-86a7-91b789f62a68`
-horo `4` `weave` · trinity `1·1·1` · sealed `1`
+path `data/processing/activities` · uuid `02336b30-a4c2-8230-8598-0d81cf0d216d` · diamond `7f6455be-ba91-88b5-9187-7e0dd8f5feec`
+horo `8` `crest` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
-links `7/7` · folded `1` · bonds in `23` out `23`
+links `7/7` · folded `1` · bonds in `17` out `17`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·attribution·customers·dataprotection·engagement·escalation·fields·hooks·interview·law·leads·leadscore·opportunities·privilege·prospect·queue·records·retention·sentiment·sla·ticket·users·vendors · ← access·attribution·customers·dataprotection·engagement·escalation·fields·hooks·interview·law·leads·leadscore·opportunities·privilege·prospect·queue·records·retention·sentiment·sla·ticket·users·vendors
+neighbors → attribution·customers·engagement·escalation·interview·law·leads·leadscore·opportunities·prospect·queue·retention·sentiment·sla·ticket·users·vendors · ← attribution·customers·engagement·escalation·interview·law·leads·leadscore·opportunities·prospect·queue·retention·sentiment·sla·ticket·users·vendors
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `61c70e3e-9830-8d74-89a8-ba412ecfd5b9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a9b180d3-6b16-8ea1-9be7-a88b88a0c664` · `pnpm readme` · `pnpm computed:check`</sub>

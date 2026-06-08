@@ -2,9 +2,11 @@
 
 # act
 
-> atom `eu/ai/act` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
+> atom `eu/ai/act` · horo `4` `weave` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `eu/ai/act` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,15 +23,127 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `law:the registry of the four-class AI risk taxonomy (minimal/limited/high/prohibited) and the `canAutoAccept(riskClass)` predicate that forces human-in-the-loop for high-risk — the registry, not the per-handler classification.`
+- `seal:unsealed`
+- `trigger:Use when implementing or referencing EU AI Act 2024.`
+- `trigger:the registry of the four-class AI risk taxonomy (minimal/limited/high/prohibited) and the `canAutoAccept(riskClass)` predicate that forces human-in-the-loop for high-risk — the registry, not the per-handler classification.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `2ff47e08-6e37-84da-83c4-5156f0c1f332` · `7fc8d282-be2a-8d06-b303-4e9655fd58b2` · `dccc5dda-04fb-87e3-9752-1465c9799435`
+- content uuids `1d36c122-5ed5-8770-a127-979ca682707b` · `98476c1b-f28d-8b55-bdd4-c52510922b63` · `d35b49f5-b52f-8efa-ae17-28a410244029`
+
+## [[entropy]] — gaps · seals
+
+> account code `eu/ai/act` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.4` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `2` eb | Σ seal `11.4` eb |
+
+> net residual `-9.4` eb · seal/gap ratio `5.7` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `eu` · sub-root `eecedda0-dfbe-8981-8981-b15910f59ecc`
+- partition `eu` · sub-root `b206ff5c-5134-8325-b4f6-18d58cd57858`
 - bond degree `3` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `EU AI Act 2024 Regulation (EU) 2024/1689` · banner
+- `EU-2024/1183` · catalogue
+- `EU-2024/1620` · catalogue
+- `EU-2024/1624` · catalogue
+- `EU-AI-Act` · catalogue
+- `EU-CSDDD-2024/1760` · catalogue
+- `GDPR Art.22 automated-individual-decision-making` · banner
+- `ISO/IEC 23894:2023 ai-risk-management` · banner
+- `ISO/IEC 42001:2023 ai-management-system` · banner
+- `ISO/IEC-23894` · catalogue
+- `ISO/IEC-42001` · catalogue
+- `NIST AI-RMF-1.0 ai-risk-management-framework` · banner
+- `NIST-AI-RMF` · catalogue
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·4 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `3` · sealed `0` · horo `4`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `13`
 
 ## identity
 
-- uuid `62df40cc-b18c-8bf0-a0a6-13c88f79e2cf`
+- uuid `d2920fce-f7be-8062-ba7d-6b69969813d8`
 - bonds in `1` · out `1`
 - trinity form·code·proof `1`·`1`·`1`
 - links `1` / `1`
@@ -37,8 +151,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `a949643f-5b8a-8a7f-ba5e-9328d112fadd` · framed by typography partition `eu` bonds `3` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `417f4f52-a854-8516-a029-a6be83585210` · framed by typography partition `eu` bonds `3` · `pnpm readme` · `pnpm readme:check`</sub>

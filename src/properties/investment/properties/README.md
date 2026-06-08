@@ -2,9 +2,11 @@
 
 # properties
 
-> atom `properties/investment/properties` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
+> atom `properties/investment/properties` · horo `8` `crest` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `properties/investment/properties` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,24 +23,134 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+
+### collapse
+
+- `balance:conserved`
+- `seal:unsealed`
+- `trigger:Use when recognising or remeasuring IAS 40 investment property — land or buildings held to earn rental income or capital appreciation — under the §30 fair-value or cost model election, with transfer-of-use triggers (§57–65) and IFRS 13 hierarchy classification. The IAS 40 investment-property register.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `3b0120dd-2e28-89c6-9c74-8b5949ff4911` · `3c55783a-6d6f-841d-a2a3-4dfd39445dc7`
+- content uuids `179bdc89-e2dd-8f41-b4a2-c918fb8b876a` · `7f2cfaaa-7be4-8a72-8d0b-b3cbe6ddd846`
+
+## [[entropy]] — gaps · seals
+
+> account code `properties/investment/properties` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.8` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `1` eb | Σ seal `11.8` eb |
+
+> net residual `-10.8` eb · seal/gap ratio `11.8` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `properties` · sub-root `76e25ce1-4d4b-8d90-971e-ac1477bf571c`
-- bond degree `32` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- partition `properties` · sub-root `863a954e-ff0c-8366-b3bd-a0d2fa3d4859`
+- bond degree `23` · analysis neighbors —
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `IAS-40` · catalogue
+- `IFRS IAS-40 §30 measurement-model-election` · banner
+- `IFRS IAS-40 §33 fair-value-model` · banner
+- `IFRS IAS-40 §5 definition-investment-property` · banner
+- `IFRS IAS-40 §56 cost-model` · banner
+- `IFRS IAS-40 §57-§65 transfers-into-out-of-investment-property` · banner
+- `IFRS IAS-40 §74 disclosure-requirements` · banner
+- `IFRS IFRS-13 fair-value-input-hierarchy` · banner
+- `IFRS-13` · catalogue
+- `ISO-4217:2015 currency-codes` · banner
+- `ISO-8601-1:2019 date-time` · banner
+- `SOX §404 internal-controls` · banner
+- `US-GAAP` · catalogue
+- `US-GAAP ASC-360 long-lived-assets (no separate IP standard)` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·8 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `23` · sealed `0` · horo `8`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `14`
 
 ## identity
 
-- uuid `bf1a0fd6-5666-8be1-8753-c3c46cb4a444`
-- bonds in `9` · out `10`
+- uuid `1ea523fa-07e8-8c38-a453-0ac55b096b5f`
+- bonds in `5` · out `5`
 - trinity form·code·proof `1`·`1`·`1`
 - links `3` / `3`
 - folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `93ee98f1-a0f0-872f-be91-f783d6b9d4d8` · framed by typography partition `properties` bonds `32` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `12d18afe-4e1c-8875-8d3f-09bd71d26220` · framed by typography partition `properties` bonds `23` · `pnpm readme` · `pnpm readme:check`</sub>

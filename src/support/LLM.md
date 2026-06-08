@@ -8,10 +8,10 @@ horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports support · escapes —
 links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·optimization · ← landmarks·optimization
+neighbors → law·thing · ← law·thing
 analysis —
 law support is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `02a96808-01e4-87bb-8182-1b42966ebf68` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `fd571589-50b9-81dc-b632-043267693945` · `pnpm readme` · `pnpm computed:check`</sub>

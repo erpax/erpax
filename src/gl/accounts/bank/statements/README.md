@@ -2,9 +2,11 @@
 
 # statements
 
-> atom `gl/accounts/bank/statements` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `gl/accounts/bank/statements` · horo `1` `base` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `gl/accounts/bank/statements` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -19,26 +21,133 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
+
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+- `gap:stray:[[gap]]/[[diamond]]/stray/hooks/`
+
+### collapse
+
+- `balance:variance=1`
+- `law:a bank statement is the external [[proof]] of cash — imported lines (CSV/OFX/API) matched against journal entries with a typed match and variance, feeding reconciliation; the bank is the [[anchor]] the ledger reconciles to.`
+- `seal:unsealed`
+- `trigger:Use when importing or matching bank statements (CSV, OFX, API) against journal entries for reconciliation — opening/closing balance, transaction lines, match type, variance; feeds account-reconciliations and IAS-7 cash-flow GL. The bank-statements import collection.`
+- `trigger:a bank statement is the external [[proof]] of cash — imported lines (CSV/OFX/API) matched against journal entries with a typed match and variance, feeding reconciliation; the bank is the [[anchor]] the ledger reconciles to.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `06b614cf-b7f5-8b33-babd-96fbd7693bec` · `0706e72a-4f03-8095-bbfd-c2f33a933fd5` · `1e63fcb0-fcf2-89d8-b7f1-2ed58cf39b6d` · `b15ca024-b5de-8755-91e0-bc559ec67b8f`
+- content uuids `28e403a5-cb59-8496-92a8-36cf35ada3be` · `8a0f6dc3-7c72-861f-9ecd-f00640e06359` · `8cb16312-9fa2-8a2d-8924-40b78e137e4d` · `f2aeda8b-d44e-847b-b895-bced9db84359`
+
+## [[entropy]] — gaps · seals
+
+> account code `gl/accounts/bank/statements` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[diamond]]/stray/hooks/ `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.1` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+| Σ gap `3` eb | Σ seal `8.1` eb |
+
+> net residual `-5.1` eb · seal/gap ratio `2.7` · [[entropy]] · [[seal]]
 
 ## typography graph
 
-- partition `gl` · sub-root `39b5ff82-5c79-838f-86f8-aeacb304fdf3`
-- bond degree `65` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- partition `gl` · sub-root `966861c1-a32f-8ea4-b6bc-4e2bf862678d`
+- bond degree `0` · analysis neighbors —
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `IFRS IAS-7 statement-of-cash-flows` · banner
+- `ISO-13616-1` · catalogue
+- `ISO-13616-1:2020 iban` · banner
+- `ISO-20022` · catalogue
+- `ISO-20022 camt.053 bank-to-customer-statement` · banner
+- `ISO-4217:2015 currency-codes` · banner
+- `ISO-8601-1:2019 date-time statement-date period-start reconciled-at` · banner
+- `ISO-9362` · catalogue
+- `ISO-9362:2022 bic` · banner
+- `SOX §404 internal-controls reconciliation-evidence` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unbalanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| not-held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·1 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `0` · sealed `0` · horo `1`
+- variance `1` · balanced `0` · trinity sum `3`
+- bindings `0` · standards `10`
 
 ## identity
 
-- uuid `f3831dc7-ef5c-8890-a515-6fde9703b11d`
-- bonds in `17` · out `23`
+- uuid `32cb5a4c-6508-8272-b929-0f31b912452e`
+- bonds in `14` · out `14`
 - trinity form·code·proof `1`·`1`·`1`
 - links `9` / `9`
 - folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `2d281623-fc5e-8cf5-afb1-eab201926786` · framed by typography partition `gl` bonds `65` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `259cb79b-425a-82b5-a7cf-91f1799ec83f` · framed by typography partition `gl` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

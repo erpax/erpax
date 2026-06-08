@@ -3,8 +3,8 @@
 
 # adult
 
-path `adult` · uuid `3a1cd771-aa8f-8c4e-99e6-07ed0a9ce11e` · diamond `4559ee0c-4d9f-8cc8-89ef-99f7943396ba`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `adult` · uuid `4da3ae26-149e-8b6e-9da3-6c8af5a12d98` · diamond `95b8ab31-7208-8c6b-8071-194bc87a2d3d`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·consideration·entertainment·enumeration·has·law·merge·oriented·sti · exports adult · escapes —
 links `9/9` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law adult is one schema.org word, content-addressed; the same word collides ever
 
 ---
 
-<sub>content-uuid `6a25d5fe-8509-8a51-8a69-16af763d3398` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3ab25fa1-4e61-80bf-a45c-580d99eb378e` · `pnpm readme` · `pnpm computed:check`</sub>

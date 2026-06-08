@@ -3,8 +3,8 @@
 
 # case
 
-path `case` · uuid `1951ec1e-c6fd-83fc-b878-e93362c766eb` · diamond `1fb3f7b8-ddc2-8f8d-929f-cbc03b06f367`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `case` · uuid `91668b88-fc9e-8d58-96d5-9276ce22f9c4` · diamond `e65ee821-f794-877c-a054-5731b7895b6f`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports balance·cases·justice·law · exports case · escapes —
 links `9/9` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law a case is the singular model of one matter under adjudication, with its part
 
 ---
 
-<sub>content-uuid `bd4816b5-4953-8cfd-8a94-6bbf955ebe5e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `cb3388ea-3e16-860f-8b59-34855c81e7d5` · `pnpm readme` · `pnpm computed:check`</sub>

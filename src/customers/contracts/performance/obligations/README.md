@@ -2,9 +2,11 @@
 
 # obligations
 
-> atom `customers/contracts/performance/obligations` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
+> atom `customers/contracts/performance/obligations` · horo `4` `weave` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `customers/contracts/performance/obligations` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,11 +23,58 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+
+### collapse
+
+- `balance:conserved`
+- `law:the amounts allocated across a contract's distinct obligations sum exactly to its transaction price, each by standalone selling price.`
+- `seal:unsealed`
+- `trigger:Use when decomposing a contract into its distinct promises for IFRS-15 §22 revenue allocation — kind (distinct or series), recognition timing (point-in-time §38 or over-time §35), progress measurement method, standalone selling price, and allocated amount. The IFRS-15 performance-obligation collection.`
+- `trigger:the amounts allocated across a contract's distinct obligations sum exactly to its transaction price, each by standalone selling price.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `757252d9-a2e9-8107-a54e-13661954eca9` · `799b9603-0cd9-8cb2-82e4-7c24219449a0`
+- content uuids `6261f566-b0fe-8ec7-b71c-a75de75ac12e` · `ca75cc54-6751-8e93-9e6d-986e65032b29`
+
+## [[entropy]] — gaps · seals
+
+> account code `customers/contracts/performance/obligations` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.4` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `1` eb | Σ seal `11.4` eb |
+
+> net residual `-10.4` eb · seal/gap ratio `11.4` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `customers` · sub-root `85792e9b-a9f4-8af5-a801-0895f2af65cf`
+- partition `customers` · sub-root `83c78df0-4d66-80df-ab25-5ba350869cf1`
 - bond degree `28` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
 
 ## [[cloudflare]] bindings
 
@@ -38,22 +87,59 @@
 - `IFRS IFRS-15 §35 over-time-recognition` · banner
 - `IFRS IFRS-15 §38 point-in-time-recognition` · banner
 - `IFRS IFRS-15 §41-§43 progress-measurement` · banner
-- `ISO-19011:2018 audit-trail po-satisfaction` · banner
 - `ISO-4217:2015 currency-codes` · banner
 - `ISO-8601-1:2019 date-time satisfaction-date` · banner
 - `SOX §404 internal-controls revenue-recognition` · banner
 - `US-GAAP ASC-606-10-25-14 distinct-goods-services` · banner
 - `US-GAAP ASC-606-10-25-31 progress-measurement` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·4 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `28` · sealed `1` · horo `5`
+- bond degree `28` · sealed `0` · horo `4`
 - variance `0` · balanced `1` · trinity sum `3`
-- bindings `0` · standards `11`
+- bindings `0` · standards `10`
 
 ## identity
 
-- uuid `315288f7-1546-8230-ae73-5d38d0640327`
+- uuid `b585e77e-ac22-8205-a154-99245c79e546`
 - bonds in `9` · out `9`
 - trinity form·code·proof `1`·`1`·`1`
 - links `6` / `6`
@@ -61,8 +147,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `569ade19-01ad-8d91-b3d1-54312a583f25` · framed by typography partition `customers` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `1b4e8f60-49bb-86a5-9644-168c4cdf143d` · framed by typography partition `customers` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>

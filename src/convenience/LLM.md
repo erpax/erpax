@@ -3,8 +3,8 @@
 
 # convenience
 
-path `convenience` · uuid `3d3f3a4b-f647-86a8-b127-721d3b28e7e0` · diamond `f1a20511-15d7-893c-857c-908b1f957d9d`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `convenience` · uuid `fe67222f-3191-8312-96b3-94bd3a2a1d90` · diamond `09bb0233-6feb-8912-88a7-f50508e8d9c6`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·store · exports convenience · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law convenience is one schema.org word, content-addressed; the same word collide
 
 ---
 
-<sub>content-uuid `10d0ba60-40e6-81aa-8cd5-5cf758d63c0c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1ee24a9f-e69f-8010-805d-4de62f7ec16c` · `pnpm readme` · `pnpm computed:check`</sub>

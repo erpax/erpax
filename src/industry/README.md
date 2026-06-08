@@ -2,7 +2,7 @@
 
 # industry
 
-> atom `industry` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
+> atom `industry` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -22,13 +22,27 @@
 ## typography graph
 
 - partition `industry` · sub-root `a713f0f5-7d70-8a2a-8295-05c926a85b63`
-- bond degree `9` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- bond degree `64` · analysis neighbors `diamond`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `64` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
-- uuid `a713f0f5-7d70-8a2a-8295-05c926a85b63`
-- bonds in `3` · out `3`
+- uuid `1419d023-4718-8c52-985e-21600d5ddac0`
+- bonds in `20` · out `21`
 - trinity form·code·proof `1`·`0`·`0`
 - links `2` / `2`
 - folded `1` · escapes `0`
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `b6472858-d94b-8114-82fb-02070978d14a` · framed by typography partition `industry` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `152baa47-4514-85d0-bec8-b4bdf9b3e0e3` · framed by typography partition `industry` bonds `64` · `pnpm readme` · `pnpm readme:check`</sub>

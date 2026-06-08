@@ -3,8 +3,8 @@
 
 # death
 
-path `death` · uuid `30ddabaa-e7d6-89f5-8b6f-7897197c796b` · diamond `698bfabf-4c93-8657-94c1-65f73a3f1e4c`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `death` · uuid `e1262f16-b75a-8563-8c0a-b440c8b573fa` · diamond `42a1c693-2424-81f3-90f3-c5154c0fd4e6`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·date·law·merge·place·sti · exports death · escapes —
 links `6/6` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law death is one schema.org word, content-addressed; the same word collides ever
 
 ---
 
-<sub>content-uuid `8d5b7118-8350-81c2-863a-ba5136ad2326` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `bb30b9f4-0689-83a2-804f-747d2215bbf6` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -2,17 +2,17 @@ import { readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { describe, it, expect } from 'vitest'
 import { execSync } from 'node:child_process'
+import { LEGACY_ALIASES } from '@/cli/registry'
 
 const ROOT = process.cwd()
 
 describe('confirm:uuid — substrate-independent gate stack (no Payload typegen)', () => {
-  it('package.json wires confirm:uuid to src/confirm/index.ts', () => {
+  it('legacy alias wires confirm:uuid to src/confirm/index.ts', () => {
+    expect(LEGACY_ALIASES['confirm:uuid']).toBe('erpax confirm uuid')
     const pkg = JSON.parse(readFileSync(join(ROOT, 'package.json'), 'utf8')) as {
       scripts: Record<string, string>
     }
-    expect(pkg.scripts['confirm:uuid']).toMatch(/src\/confirm\/index\.ts/)
-    expect(pkg.scripts['confirm:uuid']).not.toMatch(/payload generate:types/)
-    expect(pkg.scripts['confirm:uuid']).not.toMatch(/payload-verify-types/)
+    expect(pkg.scripts['erpax']).toMatch(/src\/cli\/index\.ts/)
   })
 
   it('confirm index encodes the uuid-without-payload law', () => {
@@ -56,9 +56,9 @@ describe('confirm:uuid — substrate-independent gate stack (no Payload typegen)
   })
 
   it('confirm:full remains separate — still references payload-verify-types', () => {
-    const confirmMjs = readFileSync(join(ROOT, 'scripts/confirm.mjs'), 'utf8')
-    expect(confirmMjs).toMatch(/payload-verify-types/)
-    expect(confirmMjs).toMatch(/confirm:uuid/)
+    const matter = readFileSync(join(ROOT, 'src/confirm/matter.ts'), 'utf8')
+    expect(matter).toMatch(/payload-verify-types/)
+    expect(readFileSync(join(ROOT, 'src/confirm/index.ts'), 'utf8')).toMatch(/confirm:uuid/)
   })
 
   it('pre-push documents uuid-only alternative', () => {
@@ -80,6 +80,6 @@ describe('confirm:uuid — substrate-independent gate stack (no Payload typegen)
   })
 
   it('confirm:uuid exits 0 on the live tree (integration)', () => {
-    execSync('pnpm run -s confirm:uuid', { cwd: ROOT, stdio: 'pipe' })
+    execSync('pnpm erpax confirm uuid', { cwd: ROOT, stdio: 'pipe' })
   }, 120_000)
 })

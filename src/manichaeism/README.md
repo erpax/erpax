@@ -23,7 +23,21 @@
 
 - partition `manichaeism` · sub-root `3d67453e-7371-8806-bb19-686cf683213a`
 - bond degree `63` · analysis neighbors `aura` · `diamond`
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `63` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `c10c9a06-0524-898a-9442-36ca0dda3b35` · framed by typography partition `manichaeism` bonds `63` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `6136d6a0-215b-8cff-918b-b075c8abe87f` · framed by typography partition `manichaeism` bonds `63` · `pnpm readme` · `pnpm readme:check`</sub>

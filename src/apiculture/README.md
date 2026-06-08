@@ -2,7 +2,7 @@
 
 # apiculture
 
-> atom `apiculture` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `apiculture` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -21,9 +21,9 @@
 
 ## typography graph
 
-- partition `apiculture` · sub-root `db77d786-3cf4-8a05-b0a6-00d9e5a8d5ad`
+- partition `apiculture` · sub-root `e58f818e-0e4e-86df-84f3-d07034104d2b`
 - bond degree `45` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- graph root `67d11a43-67e0-8dde-afd8-ecbed950ff42`
 
 ## [[cloudflare]] bindings
 
@@ -33,15 +33,53 @@
 
 —
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·2 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `45` · sealed `1` · horo `7`
+- bond degree `45` · sealed `1` · horo `2`
 - variance `0` · balanced `1` · trinity sum `1`
 - bindings `0` · standards `0`
 
 ## identity
 
-- uuid `db77d786-3cf4-8a05-b0a6-00d9e5a8d5ad`
+- uuid `e58f818e-0e4e-86df-84f3-d07034104d2b`
 - bonds in `14` · out `14`
 - trinity form·code·proof `1`·`0`·`0`
 - links `26` / `26`
@@ -53,4 +91,4 @@
 
 ---
 
-<sub>content-uuid `4fa62808-9c9f-8cba-8cbd-2d11fd95c9be` · framed by typography partition `apiculture` bonds `45` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `4a17888d-afd4-83c6-bd03-86666b93134a` · framed by typography partition `apiculture` bonds `45` · `pnpm readme` · `pnpm readme:check`</sub>

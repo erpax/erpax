@@ -3,15 +3,15 @@
 
 # structures
 
-path `taxing/jurisdictions/entity/legal/structures` · uuid `04760edb-e8b1-853c-8e76-bd4983687b92` · diamond `d5aed92d-0c1c-8c97-be67-2c5084aaa4b0`
-horo `8` `crest` · trinity `1·1·1` · sealed `1`
+path `taxing/jurisdictions/entity/legal/structures` · uuid `f975e9f5-425a-88cf-9715-ad1c6f1c3e2d` · diamond `65dd90bd-4b1e-8186-9810-b71a5984614d`
+horo `1` `base` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/authenticated · exports const · escapes —
-links `1/1` · folded `1` · bonds in `7` out `7`
+links `1/1` · folded `1` · bonds in `1` out `1`
 faces worker·plugin·pwa `0·0·0`
-neighbors → checkins·cohort·landmarks·memories·owned·stat·unlimited · ← checkins·cohort·landmarks·memories·owned·stat·unlimited
+neighbors → jurisdictions · ← jurisdictions
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `ace161a8-ea7c-8f27-ba2f-6572b932c4b0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `cc235b80-7297-8470-9171-9d79d1ef3d4e` · `pnpm readme` · `pnpm computed:check`</sub>

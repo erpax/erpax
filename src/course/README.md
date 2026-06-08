@@ -2,7 +2,7 @@
 
 # course
 
-> atom `course` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
+> atom `course` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -21,9 +21,9 @@
 
 ## typography graph
 
-- partition `course` · sub-root `674c780a-25b3-8ec0-802e-dfd8cc116964`
+- partition `course` · sub-root `f2d59556-2a19-86a3-895e-14e1279062aa`
 - bond degree `37` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -33,15 +33,53 @@
 
 - `schema.org — the type vocabulary, collided to single words` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·2 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `37` · sealed `1` · horo `4`
+- bond degree `37` · sealed `1` · horo `2`
 - variance `0` · balanced `1` · trinity sum `1`
 - bindings `0` · standards `1`
 
 ## identity
 
-- uuid `674c780a-25b3-8ec0-802e-dfd8cc116964`
+- uuid `f2d59556-2a19-86a3-895e-14e1279062aa`
 - bonds in `10` · out `10`
 - trinity form·code·proof `1`·`0`·`0`
 - links `10` / `10`
@@ -53,4 +91,4 @@
 
 ---
 
-<sub>content-uuid `381ba958-a436-86ff-8a73-82d2d596c00b` · framed by typography partition `course` bonds `37` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `faa8cf8b-3e33-88c4-aac9-31348cefe5de` · framed by typography partition `course` bonds `37` · `pnpm readme` · `pnpm readme:check`</sub>

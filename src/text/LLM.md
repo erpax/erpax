@@ -3,15 +3,15 @@
 
 # text
 
-path `text` · uuid `8a548400-f905-8026-8a9d-19f1e11d04c5` · diamond `dc78faaf-f559-8f27-aa6b-90a8f632b440`
+path `text` · uuid `01491c0c-41f4-8bf1-bf04-cfe7b5a6d4a1` · diamond `04ba243b-00d5-8cd3-a388-8225efde234e`
 horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports @/digit·@/typography·@/word · exports TextTokenKind·const·function·interface · escapes —
-links `23/23` · folded `1` · bonds in `11` out `11`
-faces worker·plugin·pwa `0·0·0`
-neighbors → activities·backlog·command·equals·landmarks·requirement·researcher·standards·translator·update·winery · ← activities·backlog·command·equals·landmarks·requirement·researcher·standards·translator·update·winery
+links `23/23` · folded `1` · bonds in `18` out `18`
+faces worker·plugin·pwa `1·0·0`
+neighbors → atom·boundary·caption·credit·diamond·digit·digital·document·embedded·law·markup·object·phonetic·pronounceable·speech·typography·unit·word · ← atom·boundary·caption·credit·diamond·digit·digital·document·embedded·law·markup·object·phonetic·pronounceable·speech·typography·unit·word
 analysis diamond·quantum/boundary
 law text is words ⊕ digits at the token layer — parse emits a positioned word/digit sequence, each token content-addressed as a [[diamond]]; save persists into the computed index and folds a [[typography]]-style root, never one src/ folder per English word.
 
 ---
 
-<sub>content-uuid `8511474d-c9ad-82cf-b204-17697a8ca4f9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3572c7f2-10bf-8a48-98e4-660d883ebbf9` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -2,9 +2,11 @@
 
 # records
 
-> atom `subscription/plans/subscriptions/usage/records` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
+> atom `subscription/plans/subscriptions/usage/records` · horo `7` `descent` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `subscription/plans/subscriptions/usage/records` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,24 +23,128 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `seal:unsealed`
+- `trigger:Use when recording or aggregating metered-billing events — per-tenant per-feature countable occurrences (invoices issued, signed PAdES attestations, country-bundle calls) with quantity, rate snapshot, billing-period bucket and idempotency key, rolled into IFRS-15 §B16 usage-based invoice lines. The metered-billing event-log collection.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `32534daf-6c95-80c7-be86-c338c6f3b13c` · `b27eb8fc-2791-8d6d-8d79-d5407fd81a08` · `c7b32463-9c29-8674-8582-063b68c3b4bf`
+- content uuids `a0617b16-f39b-854f-a360-cacb46f93988` · `b0cc7b62-19f8-86c1-813e-a8aafdfc80fd` · `de9f8dd4-d291-8f1c-9f6e-26389a3eecfc`
+
+## [[entropy]] — gaps · seals
+
+> account code `subscription/plans/subscriptions/usage/records` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.7` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `2` eb | Σ seal `11.7` eb |
+
+> net residual `-9.7` eb · seal/gap ratio `5.85` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `subscription` · sub-root `1c44c787-507f-8447-8ad3-d6cd2569f415`
-- bond degree `28` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- partition `subscription` · sub-root `65526dc7-933d-8750-b375-b6241780a4e2`
+- bond degree `30` · analysis neighbors —
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `IFRS IFRS-15 §B16 §B17 §B18 §B19 usage-based-revenue` · banner
+- `ISO-4217:2015 currency-codes` · banner
+- `ISO-8601-1:2019 date-time event-time billing-period` · banner
+- `rfc-9562 uuid event-id` · banner
+- `SOC-2 CC4.1 monitoring-and-evaluation` · banner
+- `SOC-2 CC7.4 system-monitoring-and-detection` · banner
+- `US-GAAP ASC-606-10-32-40 usage-based-pricing` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·7 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `30` · sealed `0` · horo `7`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `7`
 
 ## identity
 
-- uuid `9e218633-37a6-882e-b6eb-03df4067243a`
-- bonds in `7` · out `7`
+- uuid `24310927-ac53-8a8d-99e2-8577349f8194`
+- bonds in `8` · out `8`
 - trinity form·code·proof `1`·`1`·`1`
 - links `5` / `5`
 - folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `c8dfc991-4dcb-89ff-a22c-9d857452c4fc` · framed by typography partition `subscription` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `149a1606-6504-8a45-a9a3-f43bda306b6f` · framed by typography partition `subscription` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>

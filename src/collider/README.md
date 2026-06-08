@@ -2,7 +2,7 @@
 
 # collider
 
-> atom `collider` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
+> atom `collider` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -23,9 +23,9 @@
 
 ## typography graph
 
-- partition `collider` · sub-root `e6c1fdc9-b8b5-8ad9-a83a-77cd10dc6bef`
+- partition `collider` · sub-root `35baa33a-2646-880f-a884-4a24ff0ba834`
 - bond degree `28` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -37,15 +37,53 @@
 - `each check is a live computation in @/convention; the verdict is coverageCostLog2 of the product, never assumed` · banner
 - `every check is a live computation; coverages bounded by construction, atom count positive by architecture; the verdict is never assumed` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·2 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `28` · sealed `1` · horo `5`
+- bond degree `28` · sealed `1` · horo `2`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `3`
 
 ## identity
 
-- uuid `e6c1fdc9-b8b5-8ad9-a83a-77cd10dc6bef`
+- uuid `35baa33a-2646-880f-a884-4a24ff0ba834`
 - bonds in `9` · out `9`
 - trinity form·code·proof `1`·`1`·`1`
 - links `10` / `10`
@@ -57,4 +95,4 @@
 
 ---
 
-<sub>content-uuid `b57c1585-0807-85d3-9628-be7072161444` · framed by typography partition `collider` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `69d7df1b-1d8c-871c-b037-e831c3f097ba` · framed by typography partition `collider` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>

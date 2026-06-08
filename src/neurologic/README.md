@@ -23,7 +23,21 @@
 
 - partition `neurologic` · sub-root `7dd5903b-3125-8582-9fd5-2a6ce30218ee`
 - bond degree `12` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `12` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `87b862ed-feeb-871e-8864-290eaa192c57` · framed by typography partition `neurologic` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `75a6f0eb-230c-8a53-b2b1-af7efd9a3ecf` · framed by typography partition `neurologic` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

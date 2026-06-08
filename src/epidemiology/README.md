@@ -23,7 +23,21 @@
 
 - partition `epidemiology` · sub-root `05343d99-102b-8a74-b11b-177cd966472a`
 - bond degree `6` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `6` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `e8e5db4e-b44a-85f1-8607-f220419f4bc9` · framed by typography partition `epidemiology` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d13d7b27-3398-8bdd-af3a-c1c5f5057fc4` · framed by typography partition `epidemiology` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>

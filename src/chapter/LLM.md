@@ -3,7 +3,7 @@
 
 # chapter
 
-path `chapter` · uuid `810e624b-fa0c-887e-b3f7-b6165c11936a` · diamond `75be2a72-de4e-85cd-84a2-6794507aad48`
+path `chapter` · uuid `37e37879-2ba3-8cb9-8873-7225e6fd5e15` · diamond `233730e0-ae07-8bd4-a13b-ab9959379d61`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports creative·law·thing · exports chapter · escapes —
 links `3/3` · folded `1` · bonds in `3` out `3`
@@ -14,4 +14,4 @@ law chapter is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `373d2fb1-e8c3-8a49-a40d-f38c36b42fcf` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `db02c8cb-243a-89aa-aaa8-9f576249b226` · `pnpm readme` · `pnpm computed:check`</sub>

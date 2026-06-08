@@ -3,8 +3,8 @@
 
 # arrival
 
-path `arrival` · uuid `e2f3657a-27e0-857c-b542-ef6a8c8e34c8` · diamond `643ab8b5-a641-824e-a702-9a2358407d6d`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `arrival` · uuid `efaa88b7-9b0b-8109-8ca9-74a29dd934d4` · diamond `1c3bea15-f88e-8d3c-b93f-6d1744b51473`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports airport·boat·bus·collapse·expected·gate·law·merge·platform·station·sti·stop·terminal·time·until · exports arrival · escapes —
 links `15/15` · folded `1` · bonds in `15` out `15`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law arrival is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `4a93154b-4578-8ea6-bc1a-7657482acc17` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `cb452f37-19a3-816c-a4c6-347608377339` · `pnpm readme` · `pnpm computed:check`</sub>

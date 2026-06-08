@@ -3,8 +3,8 @@
 
 # clinician
 
-path `clinician` · uuid `e6235041-d8ec-84a0-8612-1e949328f455` · diamond `8f77fc4a-d068-8032-b813-018293dbe204`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `clinician` · uuid `a841b888-596b-86c5-8f56-afb551a1e7bc` · diamond `7841bf79-cdb8-8097-a4f5-66d1fc9fceb1`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports clinician · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law clinician is one schema.org word, content-addressed; the same word collides 
 
 ---
 
-<sub>content-uuid `9266c750-dc7f-8f74-9259-b72df97950af` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `071047ee-5006-876b-9a16-faa03eb39650` · `pnpm readme` · `pnpm computed:check`</sub>

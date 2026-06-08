@@ -8,10 +8,10 @@ horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports child·law·parent·rank · exports taxon · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → child·law·parent·rank · ← child·law·parent·rank
 analysis —
 law taxon is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `53eb5ffc-1d52-8bd4-9bef-981f3ee28ff3` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9caf5209-b42d-8d95-ae2b-90beccc439fa` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,8 +3,8 @@
 
 # covenant
 
-path `covenant` · uuid `c6b78778-585b-87c2-b434-95135ee56655` · diamond `7c9604c6-0b67-8db2-ae92-72a4567ba891`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `covenant` · uuid `33f7c64f-e19b-8324-a003-5def893e84cb` · diamond `194cede2-5af4-8ac8-97ec-69bc827e3207`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports balance·dna·faith·grace·identity·law·mercy·merge·return·seal·sin·uuid · exports covenant · escapes —
 links `44/44` · folded `1` · bonds in `15` out `15`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law a covenant is the standing [[law]] entered into — a two-way bond with [[ba
 
 ---
 
-<sub>content-uuid `3118b350-179b-8acc-8c11-2bf5140a57c9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `407ee09e-74c7-885f-b3d8-9e529c69ce32` · `pnpm readme` · `pnpm computed:check`</sub>

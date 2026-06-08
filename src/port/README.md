@@ -2,9 +2,11 @@
 
 # port
 
-> atom `port` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
+> atom `port` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
+
+> account code `port` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,11 +23,59 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `law:every Rails/ActiveAdmin construct has one mechanical Payload home (the Rosetta map), and a port is done only as a complete [[trinity]] — matter (code) · antimatter (SKILL) · backend (generated schema) — that all agree.`
+- `seal:sealed`
+- `trigger:Use when porting a Rails/ActiveAdmin ERP feature (from etrima or ceccec/erpax) into Payload/Next — mapping ActiveAdmin resource registrations to CollectionConfig, Rails concerns to reusable field-factories/skills, controllers/callbacks to endpoints/hooks, CanCan authorization to access control, polymorphic/self-referential associations to relationships. The Rails↔Next / ActiveAdmin↔Payload Rosetta Stone.`
+- `trigger:every Rails/ActiveAdmin construct has one mechanical Payload home (the Rosetta map), and a port is done only as a complete [[trinity]] — matter (code) · antimatter (SKILL) · backend (generated schema) — that all agree.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `1`
+- entry uuids `646ce8c4-6e6c-868c-a0b0-d6d0f08c395b` · `b3081920-9174-81a9-9ef4-da4075500df9`
+- content uuids `7817d501-9786-81f0-bca3-4f3b70dfe79a` · `c7bd792c-3eae-8f20-bfea-1b31110c9d9f` · `ff228e2c-fc46-8a0e-8b1d-dae4236e3919`
+
+## [[entropy]] — gaps · seals
+
+> account code `port` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.7` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[diamond]]/sealed `1.585` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `1` eb | Σ seal `13.285` eb |
+
+> net residual `-12.285` eb · seal/gap ratio `13.285` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `port` · sub-root `0a8b9cb1-4214-89ab-8387-145a3ed77cef`
-- bond degree `128` · analysis neighbors —
-- graph root `06810c2c-2396-831f-a2b3-a58706a17051`
+- partition `port` · sub-root `c7bd792c-3eae-8f20-bfea-1b31110c9d9f`
+- bond degree `120` · analysis neighbors —
+- graph root `8ae3c782-7e14-8d31-8757-b5f5002ee21d`
 
 ## [[cloudflare]] bindings
 
@@ -35,16 +85,54 @@
 
 —
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·7 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `128` · sealed `1` · horo `8`
+- bond degree `120` · sealed `1` · horo `7`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `0`
 
 ## identity
 
-- uuid `b0215b4d-6fc3-8ccd-9b93-67f551dcea9a`
-- bonds in `40` · out `42`
+- uuid `c7bd792c-3eae-8f20-bfea-1b31110c9d9f`
+- bonds in `37` · out `37`
 - trinity form·code·proof `1`·`1`·`1`
 - links `40` / `40`
 - folded `1` · escapes `0`
@@ -55,4 +143,4 @@
 
 ---
 
-<sub>content-uuid `4864f70d-bc3c-892f-aa1b-4c7fa39dc39f` · framed by typography partition `port` bonds `128` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `eaf5685a-0584-8d83-ac2f-cb13783aacc2` · framed by typography partition `port` bonds `120` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,15 +3,15 @@
 
 # timestamp
 
-path `timestamp` · uuid `1319fa4e-c41c-8ca6-ae39-4795cf0cc5c1` · diamond `02ee311e-ce0a-8054-bf69-451136ecf7b4`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `timestamp` · uuid `f1315e2f-dc98-82e5-8895-023111e49072` · diamond `b45198f5-2863-80cf-8723-6ae256500cae`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports timestamp · escapes —
-links `2/2` · folded `1` · bonds in `6` out `6`
+links `2/2` · folded `1` · bonds in `5` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·contained·has·landmarks·memories·stat · ← cohort·contained·has·landmarks·memories·stat
-analysis diamond·hallucination·purity
+neighbors → audit·auto·hooks·law·law·thing · ← audit·auto·hooks·law·thing
+analysis —
 law timestamp is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `5805ad8f-4a0b-8fc7-8bf0-32a39005c525` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `fb24b35f-2ee9-8cf7-b4b5-4021be217874` · `pnpm readme` · `pnpm computed:check`</sub>

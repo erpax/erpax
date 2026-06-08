@@ -3,15 +3,15 @@
 
 # supported
 
-path `supported` · uuid `bfdeda40-5675-87b6-a0ae-cc457682fbf7` · diamond `602ee38d-116f-80d5-9cbb-e83e996f1c14`
+path `supported` · uuid `bfdeda40-5675-87b6-a0ae-cc457682fbf7` · diamond `559de159-262d-85ce-9eac-f618a3a8e5da`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·countries·law·merge·not·product·sti · exports supported · escapes —
-links `7/7` · folded `1` · bonds in `16` out `16`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → attestations·balance·eat·entity·getting·id·landmarks·lesser·manufacturing·memories·municipality·muscle·progression·supplement·syllabus·symbol · ← attestations·balance·eat·entity·getting·id·landmarks·lesser·manufacturing·memories·municipality·muscle·progression·supplement·syllabus·symbol
+neighbors → collapse·countries·law·merge·not·product·sti · ← collapse·countries·law·merge·not·product·sti
 analysis —
 law supported is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `c0e8a962-ca7a-8262-9404-dd905749e6a6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5f421deb-3ec7-83e4-936c-725805043909` · `pnpm readme` · `pnpm computed:check`</sub>

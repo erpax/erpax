@@ -3,8 +3,8 @@
 
 # decontextualized
 
-path `decontextualized` · uuid `9351dc25-db9c-82b1-9bd0-62487bcfce34` · diamond `773aa118-d722-836a-8a74-d34cc340fbf7`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `decontextualized` · uuid `5dfc0b82-0fc9-8e39-81e2-04a30af8fba6` · diamond `4ebac623-48b3-8e9b-ac6f-f3aedf1862b6`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports decontextualized · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law decontextualized is one schema.org word, content-addressed; the same word co
 
 ---
 
-<sub>content-uuid `860cc6e0-2d47-8ccd-b9ea-39518dbba848` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7ac89654-6fc9-8c9d-9786-cd03e8a3b1bf` · `pnpm readme` · `pnpm computed:check`</sub>

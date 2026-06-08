@@ -2,9 +2,11 @@
 
 # readme
 
-> atom `readme` · horo `8` `crest` · [[balance]] `1` · [[seal]] `0`
+> atom `readme` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
+
+> account code `readme` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -15,30 +17,129 @@
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
 | [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
 | [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[boundary]]/escape `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `explore:aura`
+- `explore:diamond`
+- `explore:purity`
+
+### collapse
+
+- `balance:conserved`
+- `seal:sealed`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `1`
+- entry uuids `179193c5-d016-8551-9185-5aedd06ddd1f`
+- content uuids `439f0a57-092d-812c-8ab4-56e1faa71dad` · `67441c7c-8905-8daf-a4ea-57281616f351`
+
+## [[entropy]] — gaps · seals
+
+> account code `readme` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+|  | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.7` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[diamond]]/sealed `1.585` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `0` eb | Σ seal `13.285` eb |
+
+> net residual `-13.285` eb · seal/gap ratio `1` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `readme` · sub-root `ae3c0269-7f7d-8a02-bc07-9553409eeb5a`
-- bond degree `85` · analysis neighbors `aura` · `diamond` · `purity`
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- partition `readme` · sub-root `439f0a57-092d-812c-8ab4-56e1faa71dad`
+- bond degree `106` · analysis neighbors `aura` · `diamond` · `purity`
+- graph root `8ae3c782-7e14-8d31-8757-b5f5002ee21d`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `RFC 9562 §5.8 (the README's own content-uuid is a v8 content-uuid)` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·7 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `106` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `1`
 
 ## identity
 
-- uuid `ae3c0269-7f7d-8a02-bc07-9553409eeb5a`
-- bonds in `27` · out `27`
+- uuid `439f0a57-092d-812c-8ab4-56e1faa71dad`
+- bonds in `34` · out `34`
 - trinity form·code·proof `1`·`1`·`1`
-- links `70` / `70`
-- folded `1` · escapes `1`
+- links `79` / `79`
+- folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `13fa50f8-f4ee-8d42-80a9-763f447984e4` · framed by typography partition `readme` bonds `85` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `dcc48bb0-4af1-83c6-ba2b-900b7a4aa716` · framed by typography partition `readme` bonds `106` · `pnpm readme` · `pnpm readme:check`</sub>

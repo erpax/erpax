@@ -3,15 +3,15 @@
 
 # wash
 
-path `wash` · uuid `6781545e-810f-88c7-a896-b0e32bdc7203` · diamond `cd381084-2028-82cd-9332-5057e35870ce`
+path `wash` · uuid `6781545e-810f-88c7-a896-b0e32bdc7203` · diamond `e7f304df-94f2-8e2f-821e-a8886ef6d9b6`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports auto·collapse·law·merge·sti · exports wash · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → auto·collapse·law·merge·sti · ← auto·collapse·law·merge·sti
 analysis —
 law wash is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `335b54dc-e1eb-87bb-ab55-3d17ea0ec297` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0bc099ee-e07d-855a-b994-9a37bf7a83d2` · `pnpm readme` · `pnpm computed:check`</sub>

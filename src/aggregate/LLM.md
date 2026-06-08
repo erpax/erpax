@@ -3,8 +3,8 @@
 
 # aggregate
 
-path `aggregate` · uuid `1745aca3-ee06-85e6-8e51-442e0e4e4d84` · diamond `05b85a0e-7114-8635-8717-342d84cf6e05`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `aggregate` · uuid `cd84fc00-094e-849a-a202-cd458fc7311a` · diamond `6a6eda1d-505c-8a6b-a5ac-ad3939f198cc`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·element·employer·law·merge·offer·rating·sti · exports aggregate · escapes —
 links `8/8` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law aggregate is one schema.org word, content-addressed; the same word collides 
 
 ---
 
-<sub>content-uuid `9457c4e2-af7e-81e0-9ddc-7833458abee0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `14ef92a2-5c22-8056-9f6c-b81997155ce7` · `pnpm readme` · `pnpm computed:check`</sub>

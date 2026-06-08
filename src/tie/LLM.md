@@ -8,10 +8,10 @@ horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti · exports tie · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·provider·stat · ← cohort·landmarks·memories·provider·stat
+neighbors → action·collapse·law·merge·sti · ← action·collapse·law·merge·sti
 analysis —
 law tie is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `75f569f4-7e14-8125-bfa5-b8bda6dc455a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `080968fa-76ae-81fe-a927-32079dbe569a` · `pnpm readme` · `pnpm computed:check`</sub>

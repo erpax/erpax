@@ -3,15 +3,15 @@
 
 # collect
 
-path `translations/collect` · uuid `d42a1143-5ed9-829f-bb76-658f408e8b8a` · diamond `98e4fd28-fa5e-870b-b51f-07321e2e960e`
+path `translations/collect` · uuid `d42a1143-5ed9-829f-bb76-658f408e8b8a` · diamond `3c98b0c6-f523-8656-ba9d-e88102054b79`
 horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports @/aura·@/message·@/translation · exports const·default·interface · escapes —
-links `6/6` · folded `1` · bonds in `8` out `8`
-faces worker·plugin·pwa `0·0·0`
-neighbors → boarding·built·landmarks·order·parent·query·story·toc · ← boarding·built·landmarks·order·parent·query·story·toc
+links `6/6` · folded `1` · bonds in `6` out `6`
+faces worker·plugin·pwa `1·0·0`
+neighbors → catalogue·law·merge·message·translation·translations · ← catalogue·law·merge·message·translation·translations
 analysis —
 law the collector walks every SKILL.md and ports its translatable strings into the one content-addressed [[catalogue]] — computed, idempotent, --verify-gated; the per-folder files are its shadows ([[merge]]).
 
 ---
 
-<sub>content-uuid `b5235d7c-2f22-8bcc-9981-7cd96ffb0bb9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `767be1e7-8fcd-835c-b29b-0956cf5d7823` · `pnpm readme` · `pnpm computed:check`</sub>

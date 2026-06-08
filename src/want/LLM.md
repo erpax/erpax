@@ -3,15 +3,15 @@
 
 # want
 
-path `want` · uuid `35be52f8-2a1f-8bad-b009-9b055c1c55bb` · diamond `eaefbba8-b023-80f1-b9bc-f976b03eac6c`
+path `want` · uuid `35be52f8-2a1f-8bad-b009-9b055c1c55bb` · diamond `26d3342f-baa9-808c-9607-63363b4724df`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti · exports want · escapes —
-links `5/5` · folded `1` · bonds in `10` out `10`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·entropy·gravity·landmarks·may·memories·sanitization·siblings·stat·surprisal · ← cohort·entropy·gravity·landmarks·may·memories·sanitization·siblings·stat·surprisal
+neighbors → action·collapse·law·merge·sti · ← action·collapse·law·merge·sti
 analysis —
 law want is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `74a909cb-c2f2-8985-96f4-ce607db71113` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `91d61ab3-b4a3-879c-bdab-cbfe578e9d7f` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,8 +3,8 @@
 
 # awards
 
-path `awards` · uuid `9a3f5ca4-05aa-803a-9b5a-b971a108af1a` · diamond `cf205967-fed4-8731-85c7-3965ec976632`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `awards` · uuid `52eb37da-60fb-8416-9082-2d08e6b572a0` · diamond `5dcd254e-259b-8ac3-8a06-235e93813995`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports awards · escapes —
 links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law awards is one schema.org word, content-addressed; the same word collides eve
 
 ---
 
-<sub>content-uuid `6f5a7458-e274-8aca-b4cf-f871e3c15be0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0014935f-42d6-8089-bfaa-7403cbdd118b` · `pnpm readme` · `pnpm computed:check`</sub>

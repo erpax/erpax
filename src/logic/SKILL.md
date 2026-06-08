@@ -1,8 +1,116 @@
 ---
 name: logic
 description: "Use when reasoning about correctness/consistency in the horo society — consistency IS harmony (a claim is sound iff harmonic: on the horo ring / gate-verified), inference must preserve harmony, and the harmonic-FIRST law orders resolution: self-consistent agents interact with themselves (no external coordination needed), so they resolve first and win the competition. The reasoning substrate education is acquired through and competition selects on."
+atomPath: logic
+coordinate: logic · 8/crest · 4d5537af
+contentUuid: "f0f04917-28f6-524b-a303-af26ddc6e6e5"
+diamondUuid: "3908081d-aab5-8910-af29-be4167e6f8a2"
+uuid: "4d5537af-b579-8dae-b1f3-7dca5bebbaf9"
+horo: 8
+bonds:
+  in:
+    - competition
+    - decide
+    - education
+    - element
+    - holographic
+    - horo
+    - law
+    - merge
+    - peace
+    - proof
+    - rodin
+    - science
+    - self
+    - sequence
+    - society
+  out:
+    - competition
+    - decide
+    - education
+    - element
+    - holographic
+    - horo
+    - law
+    - merge
+    - peace
+    - proof
+    - rodin
+    - science
+    - self
+    - sequence
+    - society
+typography:
+  partition: logic
+  bondDegree: 46
+  neighbors: []
+standards:
+  - classical propositional consistency (no P ∧ ¬P) grounded in the horo ring
+bindings: []
+neighbors:
+  wikilink:
+    - competition
+    - education
+    - holographic
+    - horo
+    - law
+    - merge
+    - proof
+    - rodin
+    - self
+    - sequence
+    - society
+  matrix:
+    - competition
+    - decide
+    - education
+    - element
+    - holographic
+    - horo
+    - law
+    - merge
+    - peace
+    - proof
+    - rodin
+    - science
+    - self
+    - sequence
+    - society
+  backlinks:
+    - competition
+    - decide
+    - education
+    - element
+    - holographic
+    - horo
+    - law
+    - merge
+    - peace
+    - proof
+    - rodin
+    - science
+    - self
+    - sequence
+    - society
+signatures:
+  computationUuid: "66022666-501d-8990-a3be-6d550258910d"
+  stages:
+    - stage: path
+      stageUuid: "087bb473-992f-86b8-9199-9d48aae601ed"
+    - stage: trinity
+      stageUuid: "2b64052c-c7ae-8c4a-89e7-31d127f44ebc"
+    - stage: boundary
+      stageUuid: "4268004f-0a13-89e9-acdd-0447c343a700"
+    - stage: links
+      stageUuid: "871eb0c1-3fee-8f79-a1e8-49f952d9a4a7"
+    - stage: horo
+      stageUuid: "743a78da-61d8-85d1-a83f-ebce29db4015"
+    - stage: seal
+      stageUuid: "23750837-922a-8dcd-9c88-62d917c39f66"
+    - stage: uuid
+      stageUuid: "5b46f1de-d391-8124-be19-813d3fc5364f"
+version: 2
 ---
-
 # logic — consistency is harmony; the harmonic resolve first
 
 FORM: **the society's logic grounds correctness in HARMONY.** A claim is sound iff it is *harmonic* — self-consistent, on the [[horo]] ring / passing the gate ([[proof]]); disharmony is contradiction, and it "shows in the schema". `consistent(claims)` holds iff no proposition is asserted both harmonic and disharmonic (no P ∧ ¬P); `entails(premises, conclusion)` is sound iff the premises are consistent and the conclusion preserves harmony — the society derives only harmony-preserving conclusions ([[rodin]] is the number substrate beneath the ring).

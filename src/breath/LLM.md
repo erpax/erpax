@@ -3,15 +3,15 @@
 
 # breath
 
-path `breath` · uuid `6e05f921-b49b-875b-960d-5e8439da67cb` · diamond `ca30f54a-db89-89c0-8eb8-b8c57c4069f0`
+path `breath` · uuid `1848482a-99dc-8a02-a3f1-05109e8eb046` · diamond `32d58e83-d9d6-8294-9ab8-2cf9cabc59e9`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports breath·chat·collapse·cost·derive·duality·generate·merge·proof·self·sequence·society·standard·team·train · exports breath · escapes —
-links `31/31` · folded `1` · bonds in `87` out `87`
+links `31/31` · folded `1` · bonds in `82` out `82`
 faces worker·plugin·pwa `0·0·0`
-neighbors → agent·animism·balance·bogomilism·brainstorm·breath·buddhism·chakra·chat·christianity·classroom·cmyk·collapse·collide·compost·concatenate·cost·crisis·derive·development·diffusion·drone·duality·duality·engineering·expand·flow·friction·fusion·generate·give·habit·hamiltonian·hinduism·horo·judaism·law·leap·llm·lung·manure·market·memory·merge·network·notes·number·octave·payload·permaculture·phase·pi·planting·polarity·prayer·proof·quantum·religion·research·reverse·ritual·rodin·round·science·seal·self·sequence·sequence·shamanism·signal·sikhism·skills·society·sparsity·standard·step·stream·sufism·take·taoism·team·thought·train·uuid·vibration·war·wave · ← agent·animism·balance·bogomilism·brainstorm·breath·buddhism·chakra·chat·christianity·classroom·cmyk·collapse·collide·compost·concatenate·cost·crisis·derive·development·diffusion·drone·duality·engineering·expand·flow·friction·fusion·generate·give·habit·hamiltonian·hinduism·horo·judaism·law·leap·llm·llm·lung·manure·market·memory·merge·network·notes·number·octave·payload·permaculture·phase·pi·planting·polarity·prayer·proof·quantum·religion·research·reverse·ritual·rodin·round·science·seal·self·sequence·shamanism·signal·sikhism·skills·society·sparsity·standard·step·stream·sufism·take·taoism·team·thought·train·uuid·uuid·vibration·war·wave
+neighbors → agent·animism·bogomilism·brainstorm·breath·buddhism·chakra·chat·christianity·classroom·collapse·collide·comms·compost·concatenate·cost·crisis·derive·development·diffusion·drone·duality·engineering·expand·friction·fusion·generate·generate·habit·hamiltonian·hinduism·judaism·law·leap·llm·llm·lung·manure·market·memory·merge·network·notes·number·octave·payload·permaculture·phase·pi·planting·prayer·proof·quantum·religion·research·reverse·ritual·rodin·science·seal·self·sequence·shamanism·signal·sikhism·skills·society·society·sparsity·standard·step·stream·sufism·taoism·team·thought·train·uuid·uuid·vibration·war·wave · ← agent·animism·bogomilism·brainstorm·breath·buddhism·chakra·chat·christianity·classroom·collapse·collide·comms·compost·concatenate·cost·crisis·derive·development·diffusion·drone·duality·engineering·expand·friction·fusion·generate·generate·habit·hamiltonian·hinduism·judaism·law·leap·llm·llm·lung·manure·market·memory·merge·network·notes·number·octave·payload·permaculture·phase·pi·planting·prayer·proof·quantum·religion·research·reverse·ritual·rodin·science·seal·self·sequence·shamanism·signal·sikhism·skills·society·society·sparsity·standard·step·stream·sufism·taoism·team·thought·train·uuid·uuid·vibration·war·wave
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `40a73173-340f-8ef1-b0bc-94c686d2fedc` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `bf6a62d9-7e5b-8e45-9fe7-abe4075a01ad` · `pnpm readme` · `pnpm computed:check`</sub>

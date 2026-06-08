@@ -8,10 +8,10 @@ horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports transformed · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law transformed is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `c3537bd2-1e8d-802d-9b78-be996b8ba0f6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f4dd0a92-4fd3-87ff-82b6-52c660f8baf3` · `pnpm readme` · `pnpm computed:check`</sub>

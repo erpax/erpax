@@ -3,15 +3,15 @@
 
 # toxicologic
 
-path `toxicologic` · uuid `35ff3237-3a16-8032-9f84-f1df836d44c8` · diamond `7e0c469e-0cb3-80e0-8d36-c3455b17630d`
+path `toxicologic` · uuid `35ff3237-3a16-8032-9f84-f1df836d44c8` · diamond `25402aa2-4124-8d49-ab2a-4e1618282ed6`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports toxicologic · escapes —
-links `4/4` · folded `1` · bonds in `2` out `2`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law toxicologic is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `dcea15c1-304a-8730-aa86-815fbe3af614` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1506e644-6378-84e2-ac99-a6445cce9549` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,7 +3,7 @@
 
 # demand
 
-path `demand` · uuid `50c0d35b-ca6c-8a20-8900-22b687a2c224` · diamond `d2bb6af3-c999-8eff-8fd1-587080ed155d`
+path `demand` · uuid `82d9ab76-adf9-88e7-a8a4-7f33ba7d2e0e` · diamond `d0cbb646-54e6-8229-9bbd-1921a48881ad`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports event·law · exports demand · escapes —
 links `2/2` · folded `1` · bonds in `2` out `2`
@@ -14,4 +14,4 @@ law demand is one schema.org word, content-addressed; the same word collides eve
 
 ---
 
-<sub>content-uuid `8c436f5f-ec1e-8c2b-b772-d176bf483a98` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8632f075-4670-8ca6-ac3a-f3323ea08bc9` · `pnpm readme` · `pnpm computed:check`</sub>

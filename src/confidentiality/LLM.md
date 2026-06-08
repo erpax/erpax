@@ -3,7 +3,7 @@
 
 # confidentiality
 
-path `confidentiality` · uuid `1de79b09-2e21-8f71-9628-0d6d181d0806` · diamond `db2e1690-f32f-8885-ad01-e4955a7ccd96`
+path `confidentiality` · uuid `922e7f33-0e9d-8596-8f66-77dbefe3bdba` · diamond `5b27be4e-ea9d-8447-864c-ffd6ac331e2e`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports contracts·law·localize·matter·privilege · exports confidentiality · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
@@ -14,4 +14,4 @@ law disclosure of confidential information is forbidden unless it falls within a
 
 ---
 
-<sub>content-uuid `1f207871-03f6-8f8b-91ca-01a8df638e6b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f5a6f054-8179-81c0-aa70-7ca08cb3da2c` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -2,9 +2,11 @@
 
 # orders
 
-> atom `maintenance/work/orders` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `maintenance/work/orders` · horo `2` `share` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `maintenance/work/orders` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,24 +23,139 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `law:a work order is the executable FM job promoted from a [[maintenance/requests]] request, tracking parts/labour/cost and posting a [[journal/entries]] [[entry]] on completion whose IAS-16 capex-vs-opex split is set by `capitalisationTreatment`.`
+- `seal:unsealed`
+- `trigger:Use when executing FM work — corrective/preventive/predictive maintenance, statutory inspections, refurbishments — tracking parts issued, labour hours, vendor cost, IAS-16 capex/opex classification, permit-to-work, failure codes, and GL journal-entry on completion. The CMMS work-order execution register per ISO 55000.`
+- `trigger:a work order is the executable FM job promoted from a [[maintenance/requests]] request, tracking parts/labour/cost and posting a [[journal/entries]] [[entry]] on completion whose IAS-16 capex-vs-opex split is set by `capitalisationTreatment`.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `3b78b939-9ced-81a5-af0f-5dabb3631243` · `99b1c292-09e7-87ee-a312-3adafe215e25` · `df71d3f7-4d74-8167-a8a6-83e4f0bc7316`
+- content uuids `a0fb0780-27e7-829f-98d8-c52d393100b6` · `a25fa078-cb1b-84da-88f1-1d1d4b54327d` · `d00a5c90-84be-80e1-a622-4981654d13a8`
+
+## [[entropy]] — gaps · seals
+
+> account code `maintenance/work/orders` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.2` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `2` eb | Σ seal `11.2` eb |
+
+> net residual `-9.2` eb · seal/gap ratio `5.6` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `maintenance` · sub-root `1e0b2845-0b4c-8e9e-b59f-58bbad6ad0f7`
-- bond degree `157` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- partition `maintenance` · sub-root `6dee8fe6-6f55-88a0-ab44-61596a7b8eb4`
+- bond degree `96` · analysis neighbors —
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `EN-13306:2017 maintenance-terminology` · banner
+- `EU-2014/55` · catalogue
+- `EU-537/2014` · catalogue
+- `EU-910/2014` · catalogue
+- `IFRS IAS-16 §12 §13 capitalisable-vs-expense routine-maintenance` · banner
+- `IFRS IAS-2 §10 cost-of-purchase materials-issued` · banner
+- `ILO-C100` · catalogue
+- `ISO-14224:2016 reliability-and-maintenance-data` · banner
+- `ISO-41001` · catalogue
+- `ISO-41001:2018 §8.1 facility-management operational-control` · banner
+- `ISO-55000` · catalogue
+- `ISO-55000:2014 asset-management work-management` · banner
+- `ISO-55001:2014 asset-management management-systems` · banner
+- `ISO-8601-1:2019 date-time scheduled-actual` · banner
+- `SOX §404 internal-controls capex-vs-opex-classification` · banner
+- `US-GAAP ASC-360 ppe-maintenance` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·2 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `96` · sealed `0` · horo `2`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `16`
 
 ## identity
 
-- uuid `321e385f-eb0d-80a3-998d-dd6c4e018486`
-- bonds in `48` · out `51`
+- uuid `a42fa201-77fb-8959-bcde-632c63cc03e0`
+- bonds in `19` · out `19`
 - trinity form·code·proof `1`·`1`·`1`
 - links `17` / `17`
 - folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `aac97e61-f07b-83ab-80d8-5cc48733e7cc` · framed by typography partition `maintenance` bonds `157` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `15a9d9b5-e89f-8fd1-82b6-360100e4af71` · framed by typography partition `maintenance` bonds `96` · `pnpm readme` · `pnpm readme:check`</sub>

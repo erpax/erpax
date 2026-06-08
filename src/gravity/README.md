@@ -24,8 +24,22 @@
 ## typography graph
 
 - partition `gravity` · sub-root `337eef5f-6873-8a51-9c4e-b41dff0188ed`
-- bond degree `208` · analysis neighbors `agent` · `diamond`
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- bond degree `209` · analysis neighbors `agent` · `diamond`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `computed from the live matrix, never hand-asserted` · banner
+
+## analytics
+
+- bond degree `209` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -41,4 +55,4 @@
 
 ---
 
-<sub>content-uuid `f5a10e57-0e71-86ec-adb8-a0d0b28aca2c` · framed by typography partition `gravity` bonds `208` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `5c575444-5257-83d4-b5d3-ccece97305f7` · framed by typography partition `gravity` bonds `209` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,8 +3,8 @@
 
 # artwork
 
-path `artwork` · uuid `62d1d2b4-3ccd-803e-80bc-1b30ab0b7d86` · diamond `f4ac7735-5fbc-859f-b432-7cb1c292e665`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `artwork` · uuid `e5f4a1e6-b610-8124-8201-4af9dcd714aa` · diamond `9b68eef2-856a-80d8-99bb-970970f80f1a`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·surface·visual · exports artwork · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law artwork is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `1addfa62-8bf6-8019-8232-804eccbfaffe` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2161f228-0e59-8863-8bed-903f699c6923` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -8,10 +8,10 @@ horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports traditional · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·trade·trading·trailer · ← landmarks·trade·trading·trailer
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law traditional is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `80fb9fff-92f7-8ebb-acb4-9b2b906f3df7` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b2797c81-48bb-8768-a42f-cfaca3af49a0` · `pnpm readme` · `pnpm computed:check`</sub>

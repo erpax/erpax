@@ -13,7 +13,8 @@
 import { describe, it, expect } from 'vitest'
 import {
   nodeOf, neighborsOf, backlinksOf, bindingOf, matrixDigest,
-  parentOf, prevOf, nextOf, coordinateOf, coordinateAddress, verifyBind, verifyRoot, tamperedAtoms,
+  parentOf, prevOf, nextOf, childrenOf, bidirectionalCrossOf,
+  coordinateOf, coordinateAddress, verifyBind, verifyRoot, tamperedAtoms,
   toUuid, merge,
   UUID_MATRIX_NODES, UUID_MATRIX_EDGES, UUID_MATRIX_ROOT,
 } from '@/uuid/matrix'
@@ -25,7 +26,25 @@ describe('uuid-matrix: the corpus is queryable as a content-addressed matrix', (
     expect(n?.uuid).toMatch(/^[0-9a-f]{8}-[0-9a-f]{4}-8[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/)
   })
 
-  it('nodeOf resolves nested atom paths (cross-named architecture by path, not leaf alone)', () => {
+  it('nodeOf resolves nested atom paths — folder path IS the matrix address', () => {
+    const lawFolder = nodeOf('law/folder')
+    expect(lawFolder).toBeDefined()
+    expect(lawFolder?.path).toBe('law/folder')
+    expect(lawFolder?.atom).toBe('folder')
+    expect(lawFolder?.horo).toBeGreaterThanOrEqual(1)
+    expect(lawFolder?.horo).toBeLessThanOrEqual(9)
+
+    const mcpTool = nodeOf('agents/mcp/tool')
+    const rootTool = nodeOf('tool')
+    expect(mcpTool).toBeDefined()
+    expect(mcpTool?.path).toBe('agents/mcp/tool')
+    expect(mcpTool?.atom).toBe('tool')
+    expect(rootTool).toBeDefined()
+    expect(rootTool?.path).toBe('tool')
+    expect(mcpTool?.uuid).not.toBe(rootTool?.uuid)
+  })
+
+  it('nodeOf resolves cross-named architecture by path, not leaf alone', () => {
     const byPath = nodeOf('architecture/invariant')
     const byLeaf = nodeOf('invariant')
     expect(byPath).toBeDefined()
@@ -48,8 +67,31 @@ describe('uuid-matrix: the corpus is queryable as a content-addressed matrix', (
     const seed = nodeOf('merge')
     expect(seed).toBeDefined()
     for (const nb of neighborsOf('merge')) {
-      expect(backlinksOf(nb.atom).some((x) => x.atom === 'merge')).toBe(true)
+      const target = nb.path ?? nb.atom
+      expect(backlinksOf(target).some((x) => (x.path ?? x.atom) === 'merge')).toBe(true)
     }
+  })
+
+  it('bidirectionalCrossOf — parent↔child, prev↔next, neighbor↔backlink', () => {
+    const cross = bidirectionalCrossOf('law/folder')
+    expect(cross?.path).toBe('law/folder')
+    expect(cross?.parent?.path).toBe('law')
+    expect(cross?.children.map((c) => c.path)).not.toContain('law/folder')
+    expect(childrenOf('law').map((c) => c.path)).toContain('law/folder')
+
+    const tool = bidirectionalCrossOf('agents/mcp/tool')
+    expect(tool?.parent?.path).toBe('agents/mcp')
+    if (tool?.prev && tool?.next) {
+      expect(prevOf(tool.next.path ?? '')?.path).toBe(tool.path)
+      expect(nextOf(tool.prev.path ?? '')?.path).toBe(tool.path)
+    }
+  })
+
+  it('neighborsOf/backlinksOf resolve by full path (homonyms stay distinct)', () => {
+    const mcpTool = nodeOf('agents/mcp/tool')
+    const rootTool = nodeOf('tool')
+    expect(mcpTool?.path).not.toBe(rootTool?.path)
+    expect(neighborsOf('agents/mcp/tool').every((n) => n.path !== rootTool?.path || n.path === 'tool')).toBe(true)
   })
 
   it('bindingOf returns the stored binding-uuid of an actual edge', () => {

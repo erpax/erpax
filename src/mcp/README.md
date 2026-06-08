@@ -2,7 +2,7 @@
 
 # mcp
 
-> atom `mcp` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
+> atom `mcp` · horo `8` `crest` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -17,26 +17,41 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `7` | Σ `7` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `mcp` · sub-root `23a1e7a1-7e17-81e7-b1bd-f23ae0eda49c`
-- bond degree `159` · analysis neighbors `agent`
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- bond degree `0` · analysis neighbors —
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `EU-1958` · catalogue
+- `RFC-7231` · catalogue
+
+## analytics
+
+- bond degree `0` · sealed `0` · horo `8`
+- variance `1` · balanced `0` · trinity sum `1`
+- bindings `0` · standards `2`
 
 ## identity
 
 - uuid `5f105b12-20b5-82f1-8c73-516cf2a12909`
-- bonds in `44` · out `52`
+- bonds in `45` · out `53`
 - trinity form·code·proof `1`·`0`·`0`
 - links `25` / `25`
 - folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `6c03c2ed-e4d8-8f4c-b732-99f63f24e60b` · framed by typography partition `mcp` bonds `159` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `838a5853-a265-884f-b4fb-326e84b405e4` · framed by typography partition `mcp` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

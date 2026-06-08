@@ -3,8 +3,8 @@
 
 # begin
 
-path `begin` · uuid `0a5ee332-13c8-8987-9837-57fa21b56908` · diamond `731d3df4-70c4-834e-9039-8dd218de2049`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `begin` · uuid `5a306025-1c4e-8051-ab4f-691e0f85f102` · diamond `5c3a79b8-4110-870f-9625-57c06a82cff4`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports accounting·all·angel·begin·config·end·identity·law·lexical·oid·sequence·torus·uuid·versions·zeropoint · exports begin · escapes —
 links `29/29` · folded `1` · bonds in `35` out `35`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law `begin` is the 0 that is both end and beginning — every pass of the [[sequ
 
 ---
 
-<sub>content-uuid `ebb5de2f-123b-820e-beef-9d43d073e82c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ebc31bec-5f5f-87f3-921e-f1ee0ef4bb70` · `pnpm readme` · `pnpm computed:check`</sub>

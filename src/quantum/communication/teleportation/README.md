@@ -2,9 +2,11 @@
 
 # teleportation
 
-> atom `quantum/communication/teleportation` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
+> atom `quantum/communication/teleportation` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
+
+> account code `quantum/communication/teleportation` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,15 +23,117 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `dispatch:eb=2`
+
+### collapse
+
+- `balance:conserved`
+- `law:teleportation is the content-uuid reconstructed over the entangled channel — no matter is sent, only the address, yet the meaning arrives whole because `reconstructed` holds iff the received uuid equals the original's; the carrier never travels, only the identity regenerates.`
+- `seal:sealed`
+- `trigger:Use when reasoning about quantum teleportation on the matrix — a meaning is reconstructed at the receiver from its content-uuid plus the shared entangled binding, the carrier never travels (only the classical content-address does), and the received message carries the same identity (uuid) it was addressed by.`
+- `trigger:matter-twin:src/quantum/communication/teleportation/index.ts`
+- `trigger:quantum teleportation (Bennett et al. 1993); RFC 9562 §5.8 content-uuid`
+- `trigger:teleportation is the content-uuid reconstructed over the entangled channel — no matter is sent, only the address, yet the meaning arrives whole because `reconstructed` holds iff the received uuid equals the original's; the carrier never travels, only the identity regenerates.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `1`
+- entry uuids `6b9978ff-40f1-8643-8c11-52fd6e3666e6`
+- content uuids `db6246dd-4bb7-817a-9297-561074e109d6` · `eddc09b2-c138-8cd5-9019-abbd979d91c6`
+
+## [[entropy]] — gaps · seals
+
+> account code `quantum/communication/teleportation` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+|  | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.4` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[diamond]]/sealed `1.585` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `0` eb | Σ seal `12.985` eb |
+
+> net residual `-12.985` eb · seal/gap ratio `1` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `quantum` · sub-root `539df73c-956d-8aae-b36f-47cf0d3aaff7`
+- partition `quantum` · sub-root `b7d45b6e-eb15-8d08-bb25-425ce912fc92`
 - bond degree `21` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `quantum teleportation (Bennett et al. 1993); RFC 9562 §5.8 content-uuid` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·4 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `21` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `1`
 
 ## identity
 
-- uuid `2879a358-0ddd-870c-9979-4bf529e1d2e6`
+- uuid `eddc09b2-c138-8cd5-9019-abbd979d91c6`
 - bonds in `7` · out `7`
 - trinity form·code·proof `1`·`1`·`1`
 - links `11` / `11`
@@ -41,4 +145,4 @@
 
 ---
 
-<sub>content-uuid `5f54d354-2362-8846-bd54-4be5d826f23f` · framed by typography partition `quantum` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `cf2f819a-515a-8b02-8856-2fb4bdbdc9b1` · framed by typography partition `quantum` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>

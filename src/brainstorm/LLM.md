@@ -3,8 +3,8 @@
 
 # brainstorm
 
-path `brainstorm` · uuid `b20df82f-692e-8830-baa4-8afaadf1b9e5` · diamond `589633fe-d97f-8fa0-b625-e8cdca4b40b4`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `brainstorm` · uuid `d7c149b5-061c-87f7-b9ef-e24bd400f868` · diamond `e07448e6-7e97-8509-95ef-16c939c53522`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports artist·atom·aura·breath·critic·generate·law·merge·perspective·quantum·society·team·uuid·word · exports brainstorm · escapes —
 links `28/28` · folded `1` · bonds in `15` out `15`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law brainstorming is the [[quantum]] solve on ideas — diverge into a parallel 
 
 ---
 
-<sub>content-uuid `e5e90fca-0de1-8f74-a046-5a47fc62f438` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3e5389f7-fa13-8b52-8efd-1a2138cf33d2` · `pnpm readme` · `pnpm computed:check`</sub>

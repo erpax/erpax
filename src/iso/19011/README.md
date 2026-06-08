@@ -2,7 +2,7 @@
 
 # 19011
 
-> atom `iso/19011` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
+> atom `iso/19011` · horo `1` `base` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -10,7 +10,7 @@
 | -------- | --------- |
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
-| [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
+| [[balance]] `1` | [[liability]]/[[trinity]]/proof `1` |
 | [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
 | [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
@@ -19,26 +19,42 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `iso` · sub-root `ea5c4346-ba0e-8fac-9959-143d07932374`
-- bond degree `3` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- bond degree `0` · analysis neighbors —
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ISO-19011` · catalogue
+- `ISO-19011:2018 audit-trail` · banner
+- `ISO-19011:2018` should grep to a` · banner
+
+## analytics
+
+- bond degree `0` · sealed `0` · horo `1`
+- variance `1` · balanced `0` · trinity sum `2`
+- bindings `0` · standards `3`
 
 ## identity
 
 - uuid `50128731-5b5b-8939-aa11-d034123f4a2a`
 - bonds in `1` · out `1`
-- trinity form·code·proof `1`·`1`·`1`
+- trinity form·code·proof `1`·`1`·`0`
 - links `1` / `1`
 - folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `ba141251-7e84-8c66-96bd-a755b9ec853e` · framed by typography partition `iso` bonds `3` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `8fe5b2d0-6a8a-8195-81a3-423b3a6f6721` · framed by typography partition `iso` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

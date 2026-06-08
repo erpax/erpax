@@ -3,8 +3,8 @@
 
 # affected
 
-path `affected` · uuid `a5011653-dfc0-8fc1-b659-e7300524130d` · diamond `344f28ea-8fbd-843f-8fd1-91f8e06ade08`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `affected` · uuid `3356d30b-c66d-836a-87e2-2d5a41b7a259` · diamond `36bb49cc-96db-847d-a58c-ffe4ff7782e1`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports affected · escapes —
 links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law affected is one schema.org word, content-addressed; the same word collides e
 
 ---
 
-<sub>content-uuid `02db3cb5-8292-8291-b850-2775cdc14798` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e949614f-6833-8d7f-b8ff-82b03900edf8` · `pnpm readme` · `pnpm computed:check`</sub>

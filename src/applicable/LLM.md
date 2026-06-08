@@ -3,8 +3,8 @@
 
 # applicable
 
-path `applicable` · uuid `3bf78dfe-6566-8bcc-859c-1035bceab0fb` · diamond `aee6ee0b-ba0b-865a-ba0f-adabcdb4eba0`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `applicable` · uuid `2f6eb0ac-6d7f-871a-ad0e-f875dc1cc307` · diamond `26fbc2c0-87b2-8fc2-baff-decaf04cf117`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·country·law·location·merge·sti · exports applicable · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law applicable is one schema.org word, content-addressed; the same word collides
 
 ---
 
-<sub>content-uuid `1d2b03fb-ae1a-8cbe-97eb-17a0b85f6ba9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b7950de5-b22d-8ed1-9a9a-3b1e0546d394` · `pnpm readme` · `pnpm computed:check`</sub>

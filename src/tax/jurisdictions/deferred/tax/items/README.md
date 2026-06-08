@@ -2,9 +2,11 @@
 
 # items
 
-> atom `tax/jurisdictions/deferred/tax/items` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
+> atom `tax/jurisdictions/deferred/tax/items` · horo `4` `weave` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `tax/jurisdictions/deferred/tax/items` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,24 +23,132 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `seal:unsealed`
+- `trigger:Use when originating or reversing IAS-12 deferred-tax positions — deductible/taxable temporary differences, tax-loss/credit carry-forwards, realisation probability, expected reversal date, substantively-enacted rate measurement and linking to the journal-entry booking. The IAS-12 deferred-tax register collection.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `1ed6d390-b428-8ef1-8cd0-d8008e4f5f9b` · `36a86f8b-d765-8b48-b0e8-9ff2510b767f` · `5f71f2be-54ac-809c-91c0-b47da5c0608a`
+- content uuids `33f34a6c-e476-84bc-b59d-3ac326fcbcfd` · `3764d2cb-c417-81fc-9a69-abcfbf99cdf6` · `f9fa67e7-ae71-8f3e-a9d9-f8d0c88e14ee`
+
+## [[entropy]] — gaps · seals
+
+> account code `tax/jurisdictions/deferred/tax/items` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.4` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `2` eb | Σ seal `11.4` eb |
+
+> net residual `-9.4` eb · seal/gap ratio `5.7` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `tax` · sub-root `94db23f9-1cc9-8309-92c8-a21dfe445e59`
-- bond degree `73` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- partition `tax` · sub-root `ee17b9ab-708d-85b0-b210-7574c7531c53`
+- bond degree `116` · analysis neighbors —
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `IAS-12` · catalogue
+- `IFRS IAS-12 §15-§68 income-taxes` · banner
+- `IFRS IAS-12 §29 deductible-temporary-differences` · banner
+- `IFRS IAS-12 §34 deferred-tax-asset-recognition` · banner
+- `IFRS IAS-12 §47 measurement-using-substantively-enacted-rate` · banner
+- `IFRS IAS-12 §74 offsetting-deferred-tax-assets-and-liabilities` · banner
+- `ISO-4217:2015 currency-codes` · banner
+- `ISO-8601-1:2019 date-time origination-reversal` · banner
+- `SOX §404 internal-controls TOM-TAX-02` · banner
+- `US-GAAP` · catalogue
+- `US-GAAP ASC-740 income-taxes` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·4 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `116` · sealed `0` · horo `4`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `11`
 
 ## identity
 
-- uuid `b090fe53-32ee-84e4-aa66-70edea05367e`
-- bonds in `10` · out `9`
+- uuid `f3b6cef2-4b08-8ea3-b366-082e9a235d68`
+- bonds in `31` · out `31`
 - trinity form·code·proof `1`·`1`·`1`
 - links `10` / `10`
 - folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `02f0045b-0c7a-861c-b73d-c2bbbf9f6a0d` · framed by typography partition `tax` bonds `73` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `60320c8a-280e-86bc-a4f9-f88044abb67e` · framed by typography partition `tax` bonds `116` · `pnpm readme` · `pnpm readme:check`</sub>

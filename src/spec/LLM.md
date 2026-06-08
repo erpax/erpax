@@ -3,15 +3,15 @@
 
 # spec
 
-path `spec` · uuid `3e3a0b43-c182-8c7e-b41a-239927a3f642` · diamond `4b4e03aa-9b4a-87b7-82b4-f13ed25b83bb`
+path `spec` · uuid `3e3a0b43-c182-8c7e-b41a-239927a3f642` · diamond `36d78dab-3e4a-843d-9eb6-6e9b040814c7`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports accounting·admin·api·commerce·identity·jobs·law·port·sequence · exports spec · escapes —
-links `12/12` · folded `1` · bonds in `3` out `3`
+links `12/12` · folded `1` · bonds in `16` out `16`
 faces worker·plugin·pwa `0·0·0`
-neighbors → gap·landmarks·terminals · ← gap·landmarks·terminals
+neighbors → accounting·admin·api·chat·collapse·commerce·concatenate·generate·identity·jobs·law·port·sequence·society·testing·trinity · ← accounting·admin·api·chat·collapse·commerce·concatenate·generate·identity·jobs·law·port·sequence·society·testing·trinity
 analysis —
 law one spec is the single source from which every materialization is generated, never hand-authored twice — e2e test and help tip share one step list; its content-uuid ([[identity]]) entangles the spec and its outputs.
 
 ---
 
-<sub>content-uuid `586b00ea-c7ee-8a70-8890-c0700a5d808c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2da76a3e-87f0-8857-871a-b569a54e8354` · `pnpm readme` · `pnpm computed:check`</sub>

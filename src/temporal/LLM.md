@@ -3,15 +3,15 @@
 
 # temporal
 
-path `temporal` · uuid `52b5277e-4c12-874c-9b07-8326ac8e88e2` · diamond `7ad53c1e-11d3-88e2-b99c-91861589e228`
+path `temporal` · uuid `52b5277e-4c12-874c-9b07-8326ac8e88e2` · diamond `149def78-72e0-8a02-8488-af8a64ca0103`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports coverage·law · exports temporal · escapes —
-links `2/2` · folded `1` · bonds in `6` out `6`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·geometry·industry·landmarks·memories·stat · ← cohort·geometry·industry·landmarks·memories·stat
+neighbors → coverage·law · ← coverage·law
 analysis —
 law the unspecific time qualifier is the fallback used only when no sharper date property fits, so temporal and temporalCoverage collapse to one identity that never competes with a more specific term.
 
 ---
 
-<sub>content-uuid `e520133c-ccd8-8f76-9f85-ac80b4b0e583` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3259eb6b-c145-8e19-837b-912c90baf416` · `pnpm readme` · `pnpm computed:check`</sub>

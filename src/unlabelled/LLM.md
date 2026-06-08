@@ -8,10 +8,10 @@ horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·fallback·law·merge·sti · exports unlabelled · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·pipelines·stat · ← cohort·landmarks·memories·pipelines·stat
+neighbors → collapse·fallback·law·merge·sti · ← collapse·fallback·law·merge·sti
 analysis —
 law the unlabelled state is the fallback of last resort — it holds only what no label has yet claimed, so it must shrink to empty as labelling completes, never become a permanent home.
 
 ---
 
-<sub>content-uuid `89c7bebd-134d-81a6-a006-7cc73fe88adc` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `19948a10-6317-829e-94a4-9c03f77803c6` · `pnpm readme` · `pnpm computed:check`</sub>

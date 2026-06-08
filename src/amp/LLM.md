@@ -3,8 +3,8 @@
 
 # amp
 
-path `amp` · uuid `88ab2a62-7546-8071-be88-ae3959477da0` · diamond `4f54cbfb-a9fa-8495-9772-26c00e343455`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `amp` · uuid `a58bae8c-cfb8-8fd7-993c-8c24cc027812` · diamond `19f2dc3c-d9c5-8507-b650-35bebf7c809d`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·story · exports amp · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law amp is one schema.org word, content-addressed; the same word collides every 
 
 ---
 
-<sub>content-uuid `bd46bdff-df1e-85dc-abcc-ff6641f7b492` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b979b039-19dc-86c3-b5f3-6c55443b95f8` · `pnpm readme` · `pnpm computed:check`</sub>

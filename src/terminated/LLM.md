@@ -3,15 +3,15 @@
 
 # terminated
 
-path `terminated` · uuid `8061bd39-1483-8c24-8b55-2d17780292c7` · diamond `d14fa633-2f94-84bd-8aa7-20b7a69fb5cc`
+path `terminated` · uuid `8061bd39-1483-8c24-8b55-2d17780292c7` · diamond `b335b9c4-552a-8a05-a406-48b27c5111fb`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports terminated · escapes —
-links `4/4` · folded `1` · bonds in `6` out `6`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·four·landmarks·memories·shannon·stat · ← cohort·four·landmarks·memories·shannon·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law terminated is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `31e29261-4517-8935-872b-da249b956dbe` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `13d2fbcb-4a58-8c29-9ce1-d4ed31786c35` · `pnpm readme` · `pnpm computed:check`</sub>

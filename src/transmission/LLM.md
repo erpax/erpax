@@ -3,15 +3,15 @@
 
 # transmission
 
-path `transmission` · uuid `187dd773-9888-8409-8713-a87f7c34ca21` · diamond `7229bef1-7b99-8d15-bf6f-2289677be623`
+path `transmission` · uuid `187dd773-9888-8409-8713-a87f7c34ca21` · diamond `4a1120da-2639-8d14-9847-32ec8ad948e3`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·method·sti·vehicle · exports transmission · escapes —
-links `6/6` · folded `1` · bonds in `4` out `4`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·method·sti·vehicle · ← collapse·law·merge·method·sti·vehicle
 analysis —
 law transmission is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `55384f51-b8df-8770-87c2-b4ab7b151568` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6c85dfdf-e998-821f-8e77-0d31178e8975` · `pnpm readme` · `pnpm computed:check`</sub>

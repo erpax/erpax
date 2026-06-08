@@ -2,9 +2,11 @@
 
 # measurements
 
-> atom `fair/value/measurements` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
+> atom `fair/value/measurements` · horo `5` `round` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `fair/value/measurements` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,15 +23,126 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `law:each fair-value measurement is classified into exactly one IFRS 13 hierarchy level (Level-1 quoted · Level-2 observable · Level-3 unobservable) carrying its valuation technique, inputs, and P&L/OCI recognition route — the level governs the disclosure, so the input observability determines where it sits.`
+- `seal:unsealed`
+- `trigger:Use when measuring or disclosing fair value of assets and liabilities — financial instruments, investment property, biological assets, share-based payments, PPA items — capturing IFRS 13 Level-1/2/3 hierarchy, valuation technique, unobservable inputs, and P&L / OCI recognition route. The IFRS 13 fair-value measurement register.`
+- `trigger:each fair-value measurement is classified into exactly one IFRS 13 hierarchy level (Level-1 quoted · Level-2 observable · Level-3 unobservable) carrying its valuation technique, inputs, and P&L/OCI recognition route — the level governs the disclosure, so the input observability determines where it sits.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `1bbe03dc-9fdc-8801-a336-83546c744ab7` · `4d6b6262-eb34-8678-b5bc-bdfa551d4b43` · `bc16cf90-4c1b-84c6-b070-f930ba576ae6`
+- content uuids `288dc1f2-1544-84c7-93bf-a4255b59dea0` · `de371a4e-906e-80c6-8c35-21b80378098f` · `f36ea8c2-180f-8bc6-902b-0fb5bbab25fd`
+
+## [[entropy]] — gaps · seals
+
+> account code `fair/value/measurements` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.5` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `2` eb | Σ seal `11.5` eb |
+
+> net residual `-9.5` eb · seal/gap ratio `5.75` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `fair` · sub-root `498739a4-f18c-898f-b745-4c6b578934b5`
+- partition `fair` · sub-root `979a7927-40dc-88a5-8a26-76727b2e67ba`
 - bond degree `40` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `IFRS IFRS-13 §72 fair-value-hierarchy-three-levels` · banner
+- `IFRS IFRS-13 §76 level-1-quoted-prices` · banner
+- `IFRS IFRS-13 §81 level-2-observable-inputs` · banner
+- `IFRS IFRS-13 §86 level-3-unobservable-inputs` · banner
+- `IFRS IFRS-13 §9 fair-value-definition` · banner
+- `IFRS IFRS-13 §93 disclosure-requirements` · banner
+- `IFRS-13` · catalogue
+- `ISO-4217:2015 currency-codes` · banner
+- `ISO-8601-1:2019 date-time measurement-date` · banner
+- `SOX §404 internal-controls TOM-FV-01 valuation-process` · banner
+- `US-GAAP` · catalogue
+- `US-GAAP ASC-820 fair-value-measurement` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·5 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `40` · sealed `0` · horo `5`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `12`
 
 ## identity
 
-- uuid `498739a4-f18c-898f-b745-4c6b578934b5`
+- uuid `0ac2fc80-78e6-89da-865e-8f15510a01f2`
 - bonds in `13` · out `13`
 - trinity form·code·proof `1`·`1`·`1`
 - links `7` / `7`
@@ -37,8 +150,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `dca286b2-7258-8dcf-bd57-2fd7712bd430` · framed by typography partition `fair` bonds `40` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ff8176ac-1326-813f-9aca-751dcd7cc5cd` · framed by typography partition `fair` bonds `40` · `pnpm readme` · `pnpm readme:check`</sub>

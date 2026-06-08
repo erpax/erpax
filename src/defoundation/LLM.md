@@ -3,8 +3,8 @@
 
 # defoundation
 
-path `defoundation` · uuid `b1302788-b849-89bb-b613-51835ce5317b` · diamond `c890d2ff-27ab-8c9a-969c-7ce51bdcfb78`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `defoundation` · uuid `58944c86-2114-8816-ba42-5ce3ae8696a2` · diamond `11af52f7-0f28-829c-bb6a-95ec1db51a58`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports defoundation · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law defoundation is one schema.org word, content-addressed; the same word collid
 
 ---
 
-<sub>content-uuid `fba56b66-56f0-8fa7-a829-30470305b2b5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0caf5a1b-a929-80d1-bc16-97be7b3b0754` · `pnpm readme` · `pnpm computed:check`</sub>

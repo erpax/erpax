@@ -2,7 +2,7 @@
 
 # 2020
 
-> atom `incoterms/2020` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
+> atom `incoterms/2020` · horo `8` `crest` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -25,7 +25,24 @@
 
 - partition `incoterms` · sub-root `f838d825-c4fd-822e-958f-686d5cb6fe5c`
 - bond degree `0` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ICC INCOTERMS 2020 publication-no-723E` · banner
+- `INCOTERMS-2020` · catalogue
+- `ISO 6346 freight-container-code (related)` · banner
+- `UBL-2.1` · catalogue
+
+## analytics
+
+- bond degree `0` · sealed `0` · horo `8`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `4`
 
 ## identity
 
@@ -37,8 +54,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `8af12588-1b8d-8a7a-9f47-14668e671777` · framed by typography partition `incoterms` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `3382700e-6022-8717-a9a4-48c3081e486c` · framed by typography partition `incoterms` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

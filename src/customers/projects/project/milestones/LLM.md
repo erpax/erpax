@@ -3,8 +3,8 @@
 
 # milestones
 
-path `customers/projects/project/milestones` · uuid `38f34a10-bc6e-8763-a144-5efe4aa297c6` · diamond `61711287-bbf2-8f58-a8c1-67b359241474`
-horo `2` `share` · trinity `1·1·1` · sealed `1`
+path `customers/projects/project/milestones` · uuid `3098569f-a1f2-88fc-9d50-5bfc9bc3ab53` · diamond `992aeedb-ca21-8859-87f0-8f7131819a77`
+horo `4` `weave` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/chain/event/emitter·@/standard/collection/hook · exports default · escapes —
 links `9/9` · folded `1` · bonds in `12` out `12`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law invoicing and revenue fire only when a milestone is marked achieved, and eac
 
 ---
 
-<sub>content-uuid `532952fa-58f4-8aa5-91c9-fe742024c240` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `34746fb2-815e-8230-ac1c-f793e21fab53` · `pnpm readme` · `pnpm computed:check`</sub>

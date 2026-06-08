@@ -30,6 +30,7 @@ import { protects } from '@/skin'
 import { wave, composeWaves, UNITY, type Wave } from '@/wave'
 import { signalForStep, type Signal } from '@/signal'
 import { HORO_DIGITS } from '@/horo'
+import { recordPathVisit, type PathCanonicalEntry } from '@/path'
 
 /** One organ: its name, its role, the verdict that proves it whole, and its ordinal (→ note). */
 export interface Organ {
@@ -107,6 +108,16 @@ export const chord = (): ReadonlyArray<{
     const s = organSignal(o)
     return { organ: o.name, note: s.note, hz: s.hz, hex: s.hex }
   })
+
+/** Canonical ledger hook — record body path step (append-only). */
+export function recordBodyOnPath(
+  payload: unknown,
+  at?: string,
+  prevEntryUuid?: string | null,
+  seq?: number,
+): PathCanonicalEntry {
+  return recordPathVisit('body', { kind: 'body.step', payload }, at, prevEntryUuid, seq)
+}
 
 if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('body — the organs harmonized (sent as waves, A432):')

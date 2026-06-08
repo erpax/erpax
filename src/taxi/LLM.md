@@ -3,15 +3,15 @@
 
 # taxi
 
-path `taxi` · uuid `d92d35f8-f8c5-8399-b7be-a6c28a0f17eb` · diamond `1f324988-ee81-8d5e-8290-4e9cf85483cc`
+path `taxi` · uuid `d92d35f8-f8c5-8399-b7be-a6c28a0f17eb` · diamond `d981775b-1a89-8e87-8b49-ef9ce4fa9e2a`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports law·reservation·service·stand · exports taxi · escapes —
-links `4/4` · folded `1` · bonds in `5` out `5`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → automated·cohort·landmarks·memories·stat · ← automated·cohort·landmarks·memories·stat
+neighbors → law·reservation·service·stand · ← law·reservation·service·stand
 analysis —
 law taxi is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `bf1280b8-cc9c-8686-b5a7-05cc8d223855` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `21e47a80-80f3-87bf-8815-3ba06ebaf750` · `pnpm readme` · `pnpm computed:check`</sub>

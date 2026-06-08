@@ -3,8 +3,8 @@
 
 # associated
 
-path `associated` · uuid `3fbf4c2a-f67e-8c00-afb6-4e553cb5e5a2` · diamond `8f741805-31e8-8796-86ab-98efe2e1a2f6`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `associated` · uuid `c37fb3ec-0322-8427-9e45-400a76e6c3de` · diamond `b202d859-8145-8148-abf1-89587c0831ac`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports anatomy·article·claim·collapse·disease·law·media·merge·pathophysiology·review·sti · exports associated · escapes —
 links `11/11` · folded `1` · bonds in `11` out `11`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law associated is one schema.org word, content-addressed; the same word collides
 
 ---
 
-<sub>content-uuid `89ec6a2f-4f83-84d8-be25-90973e14feb8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `dca4cf57-7108-85f0-ab67-f694b76f0b60` · `pnpm readme` · `pnpm computed:check`</sub>

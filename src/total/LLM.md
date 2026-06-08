@@ -3,15 +3,15 @@
 
 # total
 
-path `total` · uuid `18991c33-8365-8c78-90e7-1f723162731c` · diamond `39afa6b0-3fff-87e8-ada6-f6e691ce1751`
+path `total` · uuid `18991c33-8365-8c78-90e7-1f723162731c` · diamond `136b68c0-b7bc-8da3-b065-c67f4b385908`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports amount·calculate·currency·fields·measure · exports total · escapes —
-links `5/5` · folded `1` · bonds in `10` out `10`
+links `5/5` · folded `1` · bonds in `13` out `13`
 faces worker·plugin·pwa `0·0·0`
-neighbors → classified·compass·compensation·competencies·editor·emission·landmarks·query·runbook·thing · ← classified·compass·compensation·competencies·editor·emission·landmarks·query·runbook·thing
+neighbors → amount·bathrooms·calculate·currency·due·enrollment·fields·historical·job·measure·openings·price·weight · ← amount·bathrooms·calculate·currency·due·enrollment·fields·historical·job·measure·openings·price·weight
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `4c229568-c51d-8c0f-85c1-2f1b21771663` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c8a147db-d57c-853c-9ce8-b96005db7691` · `pnpm readme` · `pnpm computed:check`</sub>

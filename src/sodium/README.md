@@ -23,7 +23,7 @@
 
 - partition `sodium` · sub-root `fd3b0ad9-adf7-82aa-88b1-9fe82b8b56d3`
 - bond degree `16` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `40989359-b71b-8c7b-b292-2b85f0ba5495` · framed by typography partition `sodium` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `4945d2ea-9085-86bc-b81a-1e34a44f0217` · framed by typography partition `sodium` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

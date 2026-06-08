@@ -2,7 +2,7 @@
 
 # countersigned
 
-> atom `countersigned` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
+> atom `countersigned` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -21,9 +21,9 @@
 
 ## typography graph
 
-- partition `countersigned` · sub-root `412a514e-dcee-8f76-b7bd-7fe08d71f492`
+- partition `countersigned` · sub-root `0296f3ea-7708-8a63-9bf5-4222ee807e5d`
 - bond degree `15` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -33,15 +33,53 @@
 
 - `schema.org — the type vocabulary, collided to single words` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·4 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `15` · sealed `1` · horo `1`
+- bond degree `15` · sealed `1` · horo `4`
 - variance `0` · balanced `1` · trinity sum `1`
 - bindings `0` · standards `1`
 
 ## identity
 
-- uuid `412a514e-dcee-8f76-b7bd-7fe08d71f492`
+- uuid `0296f3ea-7708-8a63-9bf5-4222ee807e5d`
 - bonds in `5` · out `5`
 - trinity form·code·proof `1`·`0`·`0`
 - links `5` / `5`
@@ -53,4 +91,4 @@
 
 ---
 
-<sub>content-uuid `9404e2af-ca35-81e0-9f21-59819c294349` · framed by typography partition `countersigned` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c1ba9b42-84ab-8b59-bf6c-36689679530e` · framed by typography partition `countersigned` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,21 @@
 
 - partition `ethics` · sub-root `421ec7a8-f70b-8495-abb6-8ddd6c7abd74`
 - bond degree `25` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `25` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `9b74187f-d1f3-836a-b229-c2105207dcc3` · framed by typography partition `ethics` bonds `25` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c877e31c-ed77-8ecd-8a5c-ec511c4b8d3c` · framed by typography partition `ethics` bonds `25` · `pnpm readme` · `pnpm readme:check`</sub>

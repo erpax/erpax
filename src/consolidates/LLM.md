@@ -3,7 +3,7 @@
 
 # consolidates
 
-path `consolidates` · uuid `b2485e94-1e0d-845e-ac62-b7ae40c299d3` · diamond `fd0ccc36-73f9-8858-8662-17177c797896`
+path `consolidates` · uuid `a96e9433-7950-8e7d-9972-e31ec0ab5dcc` · diamond `a710a79a-afc4-8bec-8d5c-7cdf70086761`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·legislation·merge·sti · exports consolidates · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
@@ -14,4 +14,4 @@ law consolidates is one schema.org word, content-addressed; the same word collid
 
 ---
 
-<sub>content-uuid `67926be8-f230-8f7e-9dc9-154701a20cd9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `fdc669bb-715d-80e2-b66e-4c66167ff4c2` · `pnpm readme` · `pnpm computed:check`</sub>

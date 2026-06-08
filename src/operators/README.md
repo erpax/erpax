@@ -25,7 +25,23 @@
 
 - partition `operators` · sub-root `1bc6e7f1-4626-8fdd-8d5a-84e8d8a7dbee`
 - bond degree `6` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `BG Наредба-Н-18 §СУПТО operator-nomenclature` · banner
+- `ISO-19011:2018 audit-trail` · banner
+- `Naredba-N-18` · catalogue
+
+## analytics
+
+- bond degree `6` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `3`
 
 ## identity
 
@@ -41,4 +57,4 @@
 
 ---
 
-<sub>content-uuid `3685405b-a54e-80a3-ae88-3c24f4c8c78a` · framed by typography partition `operators` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `44dde58f-f069-88f1-9590-5d4d595996b2` · framed by typography partition `operators` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>

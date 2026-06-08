@@ -1,4 +1,4 @@
-import { cn } from '@/ui'
+import { cn } from '@/ui/utils'
 import * as React from 'react'
 
 const Textarea: React.FC<React.TextareaHTMLAttributes<HTMLTextAreaElement>> = ({

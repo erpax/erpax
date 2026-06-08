@@ -1,8 +1,379 @@
 ---
 name: tamper
-description: Use when reasoning about integrity attacks on the content-uuid store — the cost to forge, collide, or rewrite a record undetected, and why all-directions uuid wiring drives that cost toward infinity.
+description: "Use when reasoning about integrity attacks on the content-uuid store — the cost to forge, collide, or rewrite a record undetected, and why all-directions uuid wiring drives that cost toward infinity."
+atomPath: tamper
+coordinate: tamper · 4/weave · 5c56f6a8
+contentUuid: "d80019eb-524b-5505-9c93-6675ae4ebb22"
+diamondUuid: "6d094569-152a-84cc-b2fb-c48f237c4e84"
+uuid: "5c56f6a8-bccb-8ca0-b55c-f0e131d1c03f"
+horo: 4
+bonds:
+  in:
+    - access
+    - analog
+    - analytics
+    - anchor
+    - anchoring
+    - aura
+    - baked
+    - balance
+    - barrier
+    - biofield
+    - boundary
+    - coherence
+    - collider
+    - convention
+    - cost
+    - coverage
+    - digit
+    - dna
+    - drone
+    - dry
+    - emr
+    - entropy
+    - expense
+    - export
+    - exported
+    - fear
+    - finality
+    - fs
+    - fusion
+    - gate
+    - gravity
+    - hallucination
+    - identity
+    - import
+    - karma
+    - key
+    - law
+    - link
+    - log
+    - love
+    - mass
+    - math
+    - maxtampercost
+    - merge
+    - one
+    - patent
+    - peace
+    - plasma
+    - proof
+    - purity
+    - quantum
+    - reactor
+    - redundancy
+    - regeneration
+    - relocate
+    - research
+    - sanitization
+    - science
+    - security
+    - shallow
+    - shannon
+    - signal
+    - society
+    - surprisal
+    - sustainability
+    - symbiosis
+    - test
+    - trading
+    - translate
+    - truth
+    - typography
+    - uuid
+    - verification
+    - versions
+    - vibration
+    - vocabulary
+    - void
+    - war
+    - whole
+  out:
+    - access
+    - analog
+    - analytics
+    - anchor
+    - anchoring
+    - aura
+    - baked
+    - balance
+    - barrier
+    - biofield
+    - boundary
+    - coherence
+    - collider
+    - convention
+    - cost
+    - coverage
+    - digit
+    - dna
+    - drone
+    - dry
+    - emr
+    - entropy
+    - expense
+    - export
+    - exported
+    - fear
+    - finality
+    - fs
+    - fusion
+    - gate
+    - gravity
+    - hallucination
+    - identity
+    - import
+    - karma
+    - key
+    - law
+    - link
+    - log
+    - love
+    - mass
+    - math
+    - maxtampercost
+    - merge
+    - one
+    - patent
+    - peace
+    - plasma
+    - proof
+    - purity
+    - quantum
+    - reactor
+    - redundancy
+    - regeneration
+    - relocate
+    - research
+    - sanitization
+    - science
+    - security
+    - shallow
+    - shannon
+    - signal
+    - society
+    - surprisal
+    - sustainability
+    - symbiosis
+    - test
+    - trading
+    - translate
+    - truth
+    - typography
+    - uuid
+    - verification
+    - versions
+    - vibration
+    - vocabulary
+    - void
+    - war
+    - whole
+typography:
+  partition: tamper
+  bondDegree: 264
+  neighbors:
+    - aura
+standards:
+  - "W3C-PROV-O"
+bindings: []
+neighbors:
+  wikilink:
+    - analog
+    - anchor
+    - aura
+    - cost
+    - coverage
+    - entropy
+    - fusion
+    - gate
+    - gravity
+    - identity
+    - mass
+    - merge
+    - one
+    - proof
+    - uuid
+    - vibration
+    - whole
+  matrix:
+    - access
+    - analog
+    - analytics
+    - anchor
+    - anchoring
+    - aura
+    - baked
+    - balance
+    - barrier
+    - biofield
+    - boundary
+    - coherence
+    - collider
+    - convention
+    - cost
+    - coverage
+    - digit
+    - dna
+    - drone
+    - dry
+    - emr
+    - entropy
+    - expense
+    - export
+    - exported
+    - fear
+    - finality
+    - fs
+    - fusion
+    - gate
+    - gravity
+    - hallucination
+    - identity
+    - import
+    - karma
+    - key
+    - law
+    - link
+    - log
+    - love
+    - mass
+    - math
+    - maxtampercost
+    - merge
+    - one
+    - patent
+    - peace
+    - plasma
+    - proof
+    - purity
+    - quantum
+    - reactor
+    - redundancy
+    - regeneration
+    - relocate
+    - research
+    - sanitization
+    - science
+    - security
+    - shallow
+    - shannon
+    - signal
+    - society
+    - surprisal
+    - sustainability
+    - symbiosis
+    - test
+    - trading
+    - translate
+    - truth
+    - typography
+    - uuid
+    - verification
+    - versions
+    - vibration
+    - vocabulary
+    - void
+    - war
+    - whole
+  backlinks:
+    - access
+    - analog
+    - analytics
+    - anchor
+    - anchoring
+    - aura
+    - baked
+    - balance
+    - barrier
+    - biofield
+    - boundary
+    - coherence
+    - collider
+    - convention
+    - cost
+    - coverage
+    - digit
+    - dna
+    - drone
+    - dry
+    - emr
+    - entropy
+    - expense
+    - export
+    - exported
+    - fear
+    - finality
+    - fs
+    - fusion
+    - gate
+    - gravity
+    - hallucination
+    - identity
+    - import
+    - karma
+    - key
+    - law
+    - link
+    - log
+    - love
+    - mass
+    - math
+    - maxtampercost
+    - merge
+    - one
+    - patent
+    - peace
+    - plasma
+    - proof
+    - purity
+    - quantum
+    - reactor
+    - redundancy
+    - regeneration
+    - relocate
+    - research
+    - sanitization
+    - science
+    - security
+    - shallow
+    - shannon
+    - signal
+    - society
+    - surprisal
+    - sustainability
+    - symbiosis
+    - test
+    - trading
+    - translate
+    - truth
+    - typography
+    - uuid
+    - verification
+    - versions
+    - vibration
+    - vocabulary
+    - void
+    - war
+    - whole
+signatures:
+  computationUuid: "88c37a34-3c85-8596-bb1f-b2ac4dff9aec"
+  stages:
+    - stage: path
+      stageUuid: "209e4da2-c24c-8bb0-a60e-333f200fd98f"
+    - stage: trinity
+      stageUuid: "09060fc4-11b7-8847-bc13-cd973f56f8d5"
+    - stage: boundary
+      stageUuid: "47a72bb3-fa3b-8749-8b3c-92adc2ffac64"
+    - stage: links
+      stageUuid: "536b8ccd-f6b7-8bdb-8a16-03a839bcefbb"
+    - stage: horo
+      stageUuid: "502af10c-3cd7-8660-9781-660b3ad1f1eb"
+    - stage: seal
+      stageUuid: "b71a1ac2-89af-8d56-869d-38536cc05d75"
+    - stage: uuid
+      stageUuid: "ae20a4db-d4b8-87b5-90c8-9272398a5371"
+version: 2
 ---
-
 # tamper — integrity, not confidentiality
 
 erpax stores no secret: every id is a content-uuid derived from content ([[uuid]] · [[identity]]). The only attack is to out-compute the [[whole]] — so security is **integrity**, measured as **cost**. The measure lives in [[cost]] (`tamper/cost`): a local forge ≈ 2^digest, a chosen-content collision ≈ 2^(commitment/2), a global rewrite closed by the external [[anchor]]. Because every relation is a content-uuid wired in all directions ([[merge]]), changing one record cascades to the transitive closure — and at 100% coverage the undetected-tamper cost is ∞ ([[proof]]). Zero [[entropy]] ⇒ infinite [[mass]] ⇒ infinite tamper-cost: the [[one]] limit — driven by [[gravity]], fused by the [[fusion]] reactor. Each computed render channel — the [[aura]]'s colour, sound, and [[vibration]] ([[analog]]) — is another content-derived projection a forger must reproduce, so rendering the full sensory field *raises* [[coverage]] toward that limit.
@@ -11,3 +382,5 @@ Matter-twin: [[cost]] (`src/tamper/cost` — `crackVerdict`, the security math).
 Composes: [[cost]] · [[uuid]] · [[identity]] · [[merge]] · [[anchor]] · [[proof]] · [[whole]] · [[aura]] · [[analog]] · [[coverage]].
 
 **Law — [[gate]]** A tamper the O(N) verify cannot catch must not exist: `verifyBind`/`verifyRoot` recompute every content ⊕ coordinate bind, and the [[anchor]] borrows the external entropy that closes the free-rewrite path.
+
+**Law — max work × max tampering cost.** Each sealed improve/wave receipt compounds tamper floor via [[wave]]/policy — `workTamperProduct = workSealed × tamperCostLog2(coverage)`; append-only path ledger + horo wave receipts drive coverage → 1 ⇒ ∞ forge cost.

@@ -3,8 +3,8 @@
 
 # charitable
 
-path `charitable` · uuid `a22b9ef6-36e1-8c2f-82dc-cd124f873c1c` · diamond `a2178485-d597-8170-bdb9-80232ee951f2`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `charitable` · uuid `bebff471-24ef-8a3a-ad24-03ed6c9ed8a8` · diamond `3db2bece-ac8b-820d-84e3-6003d53bd08e`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports charitable · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law charitable is one schema.org word, content-addressed; the same word collides
 
 ---
 
-<sub>content-uuid `6919e365-6bdb-8987-ae3d-e3e6669f7ff4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c01d4394-e95a-8096-b1a1-5a595a7f1a1f` · `pnpm readme` · `pnpm computed:check`</sub>

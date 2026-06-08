@@ -87,7 +87,7 @@ describe('law/folder baseline — computed from math + ratchet.generated', () =>
     'recompute snapshot preserves DOWN-only ratchet vs prior emit',
     () => {
       const live = liveViolationCounts()
-      const snap = recomputeRatchetSnapshot()
+      const snap = recomputeRatchetSnapshot(process.cwd(), RATCHET_GENERATED.axes, { live })
       for (const axis of Object.keys(RATCHET_GENERATED.axes) as (keyof typeof RATCHET_GENERATED.axes)[]) {
         expect(snap.axes[axis]).toBe(ratchetDown(axis, RATCHET_GENERATED.axes[axis], live[axis]))
       }

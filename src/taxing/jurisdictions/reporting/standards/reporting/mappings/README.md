@@ -2,9 +2,11 @@
 
 # mappings
 
-> atom `taxing/jurisdictions/reporting/standards/reporting/mappings` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
+> atom `taxing/jurisdictions/reporting/standards/reporting/mappings` · horo `1` `base` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `taxing/jurisdictions/reporting/standards/reporting/mappings` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,24 +23,127 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `law:reporting-mappings is the cross-standard element-mapping node — each row binds one source element to its target (account · line-item · disclosure · metric) across reporting frameworks (XBRL-GL · IFRS-Taxonomy · SAF-T).`
+- `seal:unsealed`
+- `trigger:Use when translating elements across reporting frameworks — account/line-item/disclosure/metric mappings between a source and target standard (XBRL-GL, IFRS-Taxonomy, SAF-T). The cross-standard element-mapping node.`
+- `trigger:reporting-mappings is the cross-standard element-mapping node — each row binds one source element to its target (account · line-item · disclosure · metric) across reporting frameworks (XBRL-GL · IFRS-Taxonomy · SAF-T).`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `5c074d14-19e3-8365-8a3e-3593310e24c2` · `db5d5928-ec62-8e1f-9cc4-c6bfb380a5b0` · `ff3d0bfa-5b9c-8be4-934c-f26dc2777691`
+- content uuids `00477607-4476-8f8a-9292-ca3818f785b5` · `c6749592-6823-8c39-b96c-b906c11ae4ba` · `e0e663bc-70ab-81dc-8d57-fb3b9f007ad9`
+
+## [[entropy]] — gaps · seals
+
+> account code `taxing/jurisdictions/reporting/standards/reporting/mappings` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.1` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `2` eb | Σ seal `11.1` eb |
+
+> net residual `-9.1` eb · seal/gap ratio `5.55` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `taxing` · sub-root `43244244-8232-8564-876d-d1a099bee8db`
-- bond degree `16` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- partition `taxing` · sub-root `38ccaa08-3e11-83fe-be70-736e95ea2788`
+- bond degree `10` · analysis neighbors —
+- graph root `9c2fb72d-3e2b-8cb0-8bca-0ef7345627af`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `IFRS-Taxonomy reporting-mapping` · banner
+- `SAF-T OECD mapping` · banner
+- `XBRL` · catalogue
+- `XBRL-GL global-ledger-taxonomy` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·1 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `10` · sealed `0` · horo `1`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `4`
 
 ## identity
 
-- uuid `b645497a-f1fc-8b23-8a39-90b0db54bbb7`
-- bonds in `6` · out `6`
+- uuid `0b74309b-8e3e-82cd-9b95-6e6217d380c3`
+- bonds in `3` · out `3`
 - trinity form·code·proof `1`·`1`·`1`
 - links `1` / `1`
 - folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `062a2cff-7210-8c22-aa89-d1522394cb07` · framed by typography partition `taxing` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `3ccdcd20-b4f8-8ff5-a8ab-3f521895a0f3` · framed by typography partition `taxing` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>

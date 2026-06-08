@@ -2,7 +2,7 @@
 
 # brainstorm
 
-> atom `brainstorm` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
+> atom `brainstorm` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -21,9 +21,9 @@
 
 ## typography graph
 
-- partition `brainstorm` · sub-root `b20df82f-692e-8830-baa4-8afaadf1b9e5`
+- partition `brainstorm` · sub-root `d7c149b5-061c-87f7-b9ef-e24bd400f868`
 - bond degree `46` · analysis neighbors `aura`
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- graph root `1cef4f02-a3fa-83a5-8ea0-120b724ef456`
 
 ## [[cloudflare]] bindings
 
@@ -33,15 +33,53 @@
 
 —
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·8 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `46` · sealed `1` · horo `5`
+- bond degree `46` · sealed `1` · horo `8`
 - variance `0` · balanced `1` · trinity sum `1`
 - bindings `0` · standards `0`
 
 ## identity
 
-- uuid `b20df82f-692e-8830-baa4-8afaadf1b9e5`
+- uuid `d7c149b5-061c-87f7-b9ef-e24bd400f868`
 - bonds in `15` · out `15`
 - trinity form·code·proof `1`·`0`·`0`
 - links `28` / `28`
@@ -53,4 +91,4 @@
 
 ---
 
-<sub>content-uuid `537218ff-12bc-8b13-a68d-490731e94fc7` · framed by typography partition `brainstorm` bonds `46` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `69fcc8cc-d1f1-8978-9330-2e9725fb80d8` · framed by typography partition `brainstorm` bonds `46` · `pnpm readme` · `pnpm readme:check`</sub>

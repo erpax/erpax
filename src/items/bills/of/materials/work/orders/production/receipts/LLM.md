@@ -3,15 +3,15 @@
 
 # receipts
 
-path `items/bills/of/materials/work/orders/production/receipts` · uuid `96e945f8-5396-886b-ad34-5b77f05b8167` · diamond `4840bfba-ba84-8bf3-9084-35230bfe9292`
-horo `4` `weave` · trinity `1·1·1` · sealed `1`
+path `items/bills/of/materials/work/orders/production/receipts` · uuid `c47f499f-ec15-8570-aa00-729ae5b3e302` · diamond `6083f33d-3a39-802f-a33e-6980186888b5`
+horo `4` `weave` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/chain/event/emitter·@/standard/collection/hook · exports default · escapes —
-links `8/8` · folded `1` · bonds in `13` out `17`
+links `8/8` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `1·0·0`
-neighbors → accounting·accounting·collections·fields·horo·identity·law·law·law·orders·proof·proof·sales·standard·supto·transaction·versions · ← accounting·collections·fields·horo·identity·law·orders·proof·sales·standard·supto·transaction·versions
+neighbors → accounting·collections·fields·law·proof·sales·supto·versions · ← accounting·collections·fields·law·proof·sales·supto·versions
 analysis —
 law the receipt of finished goods from an internal [[work/orders|work order]] into inventory at absorbed cost (material + labour + overhead) — distinct from a vendor goods receipt.
 
 ---
 
-<sub>content-uuid `3c9f59d4-bd2c-87bd-aae0-3915ab66e601` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5ff011a0-eb26-8e28-82ce-0f0121cfffc4` · `pnpm readme` · `pnpm computed:check`</sub>

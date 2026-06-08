@@ -9,15 +9,25 @@
 
 import React from 'react'
 
+import { ComputedCssProvider } from '@/css'
+import { QuantumDimensionsProvider } from '@/quantum/QuantumDimensionsProvider'
 import { HeaderThemeProvider } from '@/providers/header/theme'
 import { ThemeProvider } from '@/providers/theme'
+import { Toaster } from '@/ui'
 
 export const Providers: React.FC<{
   children: React.ReactNode
 }> = ({ children }) => {
   return (
     <ThemeProvider>
-      <HeaderThemeProvider>{children}</HeaderThemeProvider>
+      <ComputedCssProvider>
+        <QuantumDimensionsProvider emitOnChange={false}>
+          <HeaderThemeProvider>
+            {children}
+            <Toaster />
+          </HeaderThemeProvider>
+        </QuantumDimensionsProvider>
+      </ComputedCssProvider>
     </ThemeProvider>
   )
 }

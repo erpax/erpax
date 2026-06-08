@@ -3,15 +3,15 @@
 
 # zeropoint
 
-path `zeropoint` · uuid `9bb13e63-391d-874e-a627-94e9ddd93bf1` · diamond `89736246-d954-8d6c-b7d6-18cb715aba11`
+path `zeropoint` · uuid `9bb13e63-391d-874e-a627-94e9ddd93bf1` · diamond `d991574b-a86a-8bc2-8a91-f90ed3119b00`
 horo `9` `unity` · trinity `1·0·0` · sealed `1`
 imports begin·collapse·competition·cost·decompression·dimension·end·gate·horo·identity·integrity·market·merge·number·peace·proof·refactor·rodin·self·sequence·sparsity·torus·utility·uuid · exports zeropoint · escapes —
-links `51/51` · folded `1` · bonds in `0` out `0`
+links `51/51` · folded `1` · bonds in `71` out `69`
 faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
+neighbors → akashic·angel·atom·begin·buddhism·christianity·collapse·compass·competition·constitution·cost·decompression·dimension·duality·empirical·end·entropy·forge·fusion·gate·generate·grace·gravity·hinduism·horo·identity·integrity·jainism·law·manichaeism·manufacturing·market·math·merge·number·one·orphism·orthodoxy·peace·power·prayer·projection·proof·purity·recycle·refactor·religion·research·reveal·rodin·sacred·science·self·sequence·shia·shinto·sikhism·skills·society·sparsity·suffering·torus·trinity·utility·uuid·vedanta·vitepress·void·zoroastrianism · ← akashic·angel·atom·begin·buddhism·christianity·collapse·compass·competition·constitution·cost·decompression·dimension·duality·empirical·end·entropy·forge·fusion·gate·generate·grace·gravity·gravity·hinduism·horo·identity·integrity·jainism·law·manichaeism·manufacturing·market·math·merge·number·one·orphism·orthodoxy·peace·power·prayer·projection·proof·purity·recycle·refactor·religion·research·research·reveal·rodin·sacred·science·self·sequence·shia·shinto·sikhism·skills·society·sparsity·suffering·torus·trinity·utility·uuid·vedanta·vitepress·void·zoroastrianism
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `3c4bd3d8-835e-8e7c-af52-950e70f8eea5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `72736da8-fe04-8bbd-ae96-0af0017815b8` · `pnpm readme` · `pnpm computed:check`</sub>

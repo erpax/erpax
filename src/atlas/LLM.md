@@ -3,8 +3,8 @@
 
 # atlas
 
-path `atlas` · uuid `341f65a6-2d80-8232-a777-b3a9dda2ea0b` · diamond `9efbdfe7-9089-8405-84e9-4a32fcb54de1`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `atlas` · uuid `4b8dbc2d-1c16-8a64-85d8-547bdfd5291f` · diamond `d2d88af1-954a-81c3-a561-70dfc94f0802`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports creative·law·thing · exports atlas · escapes —
 links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law atlas is one schema.org word, content-addressed; the same word collides ever
 
 ---
 
-<sub>content-uuid `df5acd73-3a1c-8abd-bbf8-24d47d569a6d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9cdc9c7c-ed58-8532-b80e-22bd94ca0a8e` · `pnpm readme` · `pnpm computed:check`</sub>

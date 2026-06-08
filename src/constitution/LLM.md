@@ -3,8 +3,8 @@
 
 # constitution
 
-path `constitution` · uuid `dd6e74f8-f181-8d94-8dc1-a3e42437dfcf` · diamond `919fe68a-e298-8970-a321-76067ac91dbb`
-horo `4` `weave` · trinity `1·1·1` · sealed `1`
+path `constitution` · uuid `699c08fa-5fcd-8703-b638-2603d6a7eb78` · diamond `297e6bf9-91cb-8211-afc2-f7f3ec7c0d60`
+horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports @/governance · exports const·function·interface · escapes —
 links `13/13` · folded `1` · bonds in `11` out `11`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `b45de1fc-02ac-8a39-9d44-1113c64edbdc` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `dc6e519d-bf75-8002-b12a-bcf29446d027` · `pnpm readme` · `pnpm computed:check`</sub>

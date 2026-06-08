@@ -3,8 +3,8 @@
 
 # pipelines
 
-path `cost/centers/job/positions/recruiting/pipelines` · uuid `beaa1eed-7787-8248-80fd-514860671f66` · diamond `21d94263-bfdf-8f4e-b837-5f5050265bec`
-horo `5` `round` · trinity `1·1·1` · sealed `1`
+path `cost/centers/job/positions/recruiting/pipelines` · uuid `b1bb9875-2bb7-89cd-9844-1879c3cbff99` · diamond `74e62bd7-6731-87ec-8228-95ef136282e0`
+horo `4` `weave` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
 links `6/6` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `5a8b107c-9b64-8cb7-bb50-81e57fb57a9f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e0d9fe9f-5f30-86b8-bb8b-6aa6bd23e9ad` · `pnpm readme` · `pnpm computed:check`</sub>

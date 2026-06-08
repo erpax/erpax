@@ -3,15 +3,15 @@
 
 # urltemplate
 
-path `urltemplate` · uuid `c7fb857f-977a-83fb-bcca-3200cd83936b` · diamond `da326060-becb-8b1e-8f90-06ac9236102f`
+path `urltemplate` · uuid `c7fb857f-977a-83fb-bcca-3200cd83936b` · diamond `59a07ae2-cb5e-8955-8f7f-215972ad8eaa`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports urltemplate · escapes —
-links `4/4` · folded `1` · bonds in `6` out `6`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·mandates·prerequisites·terms·therapeutic·underbust · ← landmarks·mandates·prerequisites·terms·therapeutic·underbust
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law urltemplate is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `8c4f979d-5a65-8ff4-a1de-8ca9e68ad4bb` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a8995a18-92b4-8b00-b8cd-bd4195a608a6` · `pnpm readme` · `pnpm computed:check`</sub>

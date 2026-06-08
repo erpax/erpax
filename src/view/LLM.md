@@ -3,15 +3,15 @@
 
 # view
 
-path `view` · uuid `32f59b83-64c9-85f6-80d0-09f9e7bf6127` · diamond `c684fa5f-8bb0-8565-968c-95856d371952`
+path `view` · uuid `32f59b83-64c9-85f6-80d0-09f9e7bf6127` · diamond `47298fbe-7d98-8524-964f-b12beef24354`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti · exports view · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → action·collapse·law·merge·sti · ← action·collapse·law·merge·sti
 analysis —
 law view is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `66feccb2-d92c-848c-aed5-86393a8edbbe` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `bf17123f-e996-8a05-98b7-d0aa18e3d6af` · `pnpm readme` · `pnpm computed:check`</sub>

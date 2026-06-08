@@ -3,8 +3,8 @@
 
 # beach
 
-path `beach` · uuid `9367614f-4c85-80d7-b4fd-aa15b206638e` · diamond `2a83a6d6-c1de-80eb-82b3-cb79e2f4cf18`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `beach` · uuid `05b06183-6db6-85fe-8dd8-77b1ad2f72e1` · diamond `2e1bdd51-7170-88b9-bd27-ab338c79a780`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports beach · escapes —
 links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law beach is one schema.org word, content-addressed; the same word collides ever
 
 ---
 
-<sub>content-uuid `c7bde776-fc33-8c79-8a5c-a050cc615e50` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `60427937-1472-8993-97e4-c3e016560cb4` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `ear` · sub-root `5d58a60d-e70b-83b0-88ab-d5e3c2e53a85`
 - bond degree `12` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `65867eff-1635-8d62-b855-c791ee60f996` · framed by typography partition `ear` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `46f44d99-3889-84af-887c-42594de2c036` · framed by typography partition `ear` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

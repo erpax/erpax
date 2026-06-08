@@ -3,15 +3,15 @@
 
 # snapshots
 
-path `fiscal/periods/fiscal/period/snapshots` · uuid `f4bd1b21-dd8c-88d7-bbce-a530c718983c` · diamond `7ba66524-3a0f-86be-b2e6-64b427373c0e`
-horo `4` `weave` · trinity `1·1·1` · sealed `1`
+path `fiscal/periods/fiscal/period/snapshots` · uuid `8e93c024-f3cd-8826-bfbe-d1ab2562a563` · diamond `1a5b243f-e8ea-8f26-9be1-bb5bf0ab4655`
+horo `2` `share` · trinity `1·1·1` · sealed `0`
 imports @/auth · exports const · escapes —
-links `5/5` · folded `1` · bonds in `10` out `12`
+links `5/5` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·accounting·adjustments·identity·law·law·periods·projects·proof·standard·standard·transaction · ← access·accounting·adjustments·identity·law·periods·projects·proof·standard·transaction
+neighbors → accounting·adjustments·law·periods·projects·standard·transaction · ← accounting·adjustments·law·periods·projects·standard·transaction
 analysis —
 law a fiscal-period snapshot is an immutable point-in-time capture chained to its prior snapshot — the priorSnapshot link makes any hidden amendment detectable, and critical amendments carry an eIDAS QES signature, so the period's history is replayable and tamper-evident.
 
 ---
 
-<sub>content-uuid `a4e36725-8a52-8adb-beff-a48991288041` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `06636830-e019-84d5-b718-3c1270788b95` · `pnpm readme` · `pnpm computed:check`</sub>

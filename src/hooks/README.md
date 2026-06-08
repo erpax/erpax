@@ -2,7 +2,7 @@
 
 # hooks
 
-> atom `hooks` · horo `3` `3` · [[balance]] `1` · [[seal]] `0`
+> atom `hooks` · horo `3` `3` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -19,13 +19,27 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `hooks` · sub-root `5575c13b-c1e4-879e-a093-d6015976d67c`
 - bond degree `357` · analysis neighbors `analytics` · `aura` · `diamond` · `hallucination` · `purity`
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `357` · sealed `0` · horo `3`
+- variance `1` · balanced `0` · trinity sum `3`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -41,4 +55,4 @@
 
 ---
 
-<sub>content-uuid `66058976-6c17-8af7-a39d-197f080dbba3` · framed by typography partition `hooks` bonds `357` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e96aec8f-fbe6-8805-bdb1-2caaef48c484` · framed by typography partition `hooks` bonds `357` · `pnpm readme` · `pnpm readme:check`</sub>

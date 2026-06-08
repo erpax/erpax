@@ -3,15 +3,15 @@
 
 # accounts
 
-path `regulatory/deferral/accounts` · uuid `afb97329-3149-81a6-a9b4-65c605b99d4c` · diamond `dd15a237-4756-8109-a4bc-672beed6acfc`
-horo `1` `base` · trinity `1·1·1` · sealed `1`
+path `regulatory/deferral/accounts` · uuid `15b5affa-5db0-8e0d-8a2a-177a2309e4c2` · diamond `41174711-cf5e-82f1-824c-20ed597cd8d1`
+horo `1` `base` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
-links `2/2` · folded `1` · bonds in `19` out `22`
+links `2/2` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·access·accounting·accounting·accounting·adjustments·auth·collections·escrow·hooks·identity·identity·law·lines·locations·orders·party·proof·reconciliations·runs·standard·transaction · ← access·accounting·adjustments·auth·collections·escrow·hooks·identity·law·lines·locations·orders·party·proof·reconciliations·reconciliations·runs·standard·transaction
+neighbors → access·accounting·auth·escrow·hooks·identity·party·reconciliations·reconciliations·runs · ← access·accounting·auth·escrow·hooks·identity·party·reconciliations·reconciliations·runs
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `1f3e1f41-aead-81f7-a942-be1979c5cb51` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9be3d5de-1470-8be8-8241-1ebf3dc3f9cb` · `pnpm readme` · `pnpm computed:check`</sub>

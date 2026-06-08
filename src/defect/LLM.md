@@ -3,8 +3,8 @@
 
 # defect
 
-path `defect` · uuid `5651d0b6-581f-814c-9069-3cbcf3177b71` · diamond `e55c6140-c255-86c6-92f7-af328d4a7a33`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `defect` · uuid `8408d20f-4488-8e50-96e1-c67f443d1cd7` · diamond `4a530300-7db4-8422-96ce-5ed8bd9e2d7b`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports incident·items·law·standard·workflow · exports defect · escapes —
 links `7/7` · folded `1` · bonds in `11` out `11`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law a defect is the non-conformance record — a quality problem captured agains
 
 ---
 
-<sub>content-uuid `3b3890a4-e97d-8fb2-97b3-4e829d23ec74` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8f05e200-3753-8174-8d29-d4b05fa99700` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # wallet
 
-path `wallet` · uuid `359504fb-5948-8313-aeac-16da7383f4a8` · diamond `173a6e6b-1556-8173-bee5-ef4b806e0cfe`
-horo `4` `weave` · trinity `1·1·1` · sealed `1`
+path `wallet` · uuid `f3e13781-1ca1-8237-873d-d1a523c50e59` · diamond `67b192b4-7d1d-8567-8411-3a0dabb2c2d1`
+horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports — · exports const·interface · escapes —
-links `16/16` · folded `1` · bonds in `5` out `5`
+links `16/16` · folded `1` · bonds in `12` out `16`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·cohort·landmarks·memories·stat · ← action·cohort·landmarks·memories·stat
-analysis diamond·hallucination·purity
+neighbors → account·balance·cost·entry·entry·identity·karma·law·law·merge·money·quantum·quantum·uuid·uuid·wallet · ← account·balance·cost·entry·identity·karma·law·merge·money·quantum·uuid·wallet
+analysis —
 law a wallet holds value as a [[balance]] under an owner [[identity]] — double-entry ([[entry]]) and content-addressed, so any balance change yields a new state uuid and every move balances ([[tamper/cost]]).
 
 ---
 
-<sub>content-uuid `68f9adeb-adb1-8d4f-b981-a16f013eb3a5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `05aacfd3-86d0-8205-be4f-bfade579f0b1` · `pnpm readme` · `pnpm computed:check`</sub>

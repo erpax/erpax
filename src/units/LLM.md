@@ -3,15 +3,15 @@
 
 # units
 
-path `units` · uuid `82107c0f-674c-8ab5-b23c-68e1cd81e5e2` · diamond `2f6481ef-2b64-8d77-b04a-fcf5fd64778d`
+path `units` · uuid `82107c0f-674c-8ab5-b23c-68e1cd81e5e2` · diamond `982cfa18-6761-8b0b-9a55-ec3d164a1f21`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports accommodation·available·collapse·law·merge·number·sti · exports units · escapes —
-links `7/7` · folded `1` · bonds in `4` out `4`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → accommodation·available·collapse·law·merge·number·sti · ← accommodation·available·collapse·law·merge·number·sti
 analysis —
 law units is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `4f3d964f-479f-88b0-9e98-0113433feaaf` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `93d89725-b8a2-8744-b49d-d8516415459f` · `pnpm readme` · `pnpm computed:check`</sub>

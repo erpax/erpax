@@ -3,15 +3,15 @@
 
 # underbust
 
-path `underbust` · uuid `a2e72ad8-d9d2-89b5-8486-6d013a464720` · diamond `8e9aa6ce-7461-8fe7-8ff5-6bc3084160f9`
+path `underbust` · uuid `a2e72ad8-d9d2-89b5-8486-6d013a464720` · diamond `fda14f21-1602-82d8-89ac-ad6953e3f4f3`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports underbust · escapes —
-links `4/4` · folded `1` · bonds in `8` out `8`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → arrival·cohort·exercise·landmarks·memories·prerequisites·stat·urltemplate · ← arrival·cohort·exercise·landmarks·memories·prerequisites·stat·urltemplate
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law underbust is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `dc6018be-8aa7-8bef-8d37-991fedc06b1d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0df0ccd6-70c9-8a31-a3c4-6059c5d1ff9d` · `pnpm readme` · `pnpm computed:check`</sub>

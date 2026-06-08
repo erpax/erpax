@@ -3,8 +3,8 @@
 
 # clincal
 
-path `clincal` · uuid `b5519ea5-0361-824b-acf3-3273b40a9702` · diamond `548802f9-5a18-8476-b085-8b6d4d2157e8`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `clincal` · uuid `63db1d4b-0212-85af-b4e5-cbf4b4e47eef` · diamond `46a2976c-499f-8984-a380-fd8d892cee6d`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·pharmacology·sti · exports clincal · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law clincal is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `a29554ba-6a7f-8154-b2f8-73d48c9d94a4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c9a140b0-ea0d-89b1-a568-da9af3305fa6` · `pnpm readme` · `pnpm computed:check`</sub>

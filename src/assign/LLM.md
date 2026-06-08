@@ -3,8 +3,8 @@
 
 # assign
 
-path `assign` · uuid `954023ec-067a-887e-8935-0783bd78c835` · diamond `3ef644bb-74d6-8362-8db9-8bde6bb6abf5`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `assign` · uuid `e717a856-f9c0-8ddb-925b-846d478e552e` · diamond `e75d5e3b-2a6e-84a8-a9c0-85669ea8f277`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti · exports assign · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law assign is one schema.org word, content-addressed; the same word collides eve
 
 ---
 
-<sub>content-uuid `62bba14a-22fd-808e-9ad1-9dfd7af725a9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `89d3b190-1a70-895c-be67-e91f33c826d4` · `pnpm readme` · `pnpm computed:check`</sub>

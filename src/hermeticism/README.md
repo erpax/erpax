@@ -23,7 +23,21 @@
 
 - partition `hermeticism` · sub-root `c97f74e4-fd33-86ed-8394-436894cd8dbf`
 - bond degree `59` · analysis neighbors `diamond`
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `59` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `7e957596-4e88-8da7-9859-6e8dfe176460` · framed by typography partition `hermeticism` bonds `59` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `4106d248-9518-877f-b685-c2a22a3df678` · framed by typography partition `hermeticism` bonds `59` · `pnpm readme` · `pnpm readme:check`</sub>

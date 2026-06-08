@@ -3,7 +3,7 @@
 
 # add
 
-path `add` · uuid `13a8bad4-28d9-813e-8bfd-d43365d4818b` · diamond `5d8c5ed9-dffd-89e7-bad7-412f0a7e6e49`
+path `add` · uuid `536dd378-f239-8c41-a262-b12cb34b2cb5` · diamond `41d3d5d5-d3ca-8421-bdff-8e29f894947a`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports action·law·menu·software · exports add · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
@@ -14,4 +14,4 @@ law add is one schema.org word, content-addressed; the same word collides every 
 
 ---
 
-<sub>content-uuid `f493e5f4-b2d2-8247-b5d9-9cb3e38dfaf8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `059e3e04-8c86-86de-b0dd-2fd4af5c2c06` · `pnpm readme` · `pnpm computed:check`</sub>

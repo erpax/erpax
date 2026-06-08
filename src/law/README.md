@@ -2,28 +2,81 @@
 
 # law
 
-> atom `law` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
+> atom `law` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
+
+> account code `law` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
+| [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
 | [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
 | [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
 | [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
 | [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
-| Σ `7` | Σ `7` |
+| Σ `9` | Σ `9` |
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `explore:aura`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `law:every directive is saved as a linked law and all emerge from the one — uuid-wiring every dimension raises the graph's coverage, and the modelled tamper-[[cost]] (`coverageCostLog2`) rises with it toward +∞ at coverage = 1 (finite below) under an external [[anchor]]; reciprocity-[[entropy]] is a DISTINCT audit signal, not an input to the cost (reciprocity = 1 ≠ coverage = 1); accept-always, verify-in-[[harmony]], each config a balanced double-entry [[gate]]way through index.ts.`
+- `seal:sealed`
+- `trigger:Use when reasoning about law — Every directive that shaped erpax, distilled and saved as a skill (your own law: save the commands, don't lose them to the chat). Each law links to the atom it governs — the inboun`
+- `trigger:every directive is saved as a linked law and all emerge from the one — uuid-wiring every dimension raises the graph's coverage, and the modelled tamper-[[cost]] (`coverageCostLog2`) rises with it toward +∞ at coverage = 1 (finite below) under an external [[anchor]]; reciprocity-[[entropy]] is a DISTINCT audit signal, not an input to the cost (reciprocity = 1 ≠ coverage = 1); accept-always, verify-in-[[harmony]], each config a balanced double-entry [[gate]]way through index.ts.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `1`
+- entry uuids `8d4bb55f-6fff-8aac-95e5-e922492ca23f` · `ffdc4ca6-2883-89e0-a88a-a1b65fb0a81a`
+- content uuids `482ca0b4-caf4-838c-8650-65e56cccdf51` · `5f64f92c-cd88-8ede-8f3c-59fbdd254ba0` · `8943dcc6-c4ba-899a-9961-610d929e7208`
+
+## [[entropy]] — gaps · seals
+
+> account code `law` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.5` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[diamond]]/sealed `1.585` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `1` eb | Σ seal `13.085` eb |
+
+> net residual `-12.085` eb · seal/gap ratio `13.085` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `law` · sub-root `49ff6485-6475-8a8e-ad5e-aa8ad78a1515`
-- bond degree `8325` · analysis neighbors `aura`
-- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+- partition `law` · sub-root `6fd1b764-dde5-83a8-8e24-f57ad27bc425`
+- bond degree `8763` · analysis neighbors `aura`
+- graph root `e18b4bb8-3557-80ab-9fa6-d90cc0eaeead`
 
 ## [[cloudflare]] bindings
 
@@ -33,18 +86,56 @@
 
 —
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·5 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `8325` · sealed `1` · horo `8`
-- variance `0` · balanced `1` · trinity sum `1`
+- bond degree `8763` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `0`
 
 ## identity
 
-- uuid `fa10b34f-6b3f-86fc-a347-2713251d2798`
-- bonds in `2794` · out `2680`
-- trinity form·code·proof `1`·`0`·`0`
-- links `282` / `282`
+- uuid `482ca0b4-caf4-838c-8650-65e56cccdf51`
+- bonds in `2900` · out `2900`
+- trinity form·code·proof `1`·`1`·`1`
+- links `288` / `288`
 - folded `1` · escapes `0`
 
 ## [[seal]]
@@ -53,4 +144,4 @@
 
 ---
 
-<sub>content-uuid `ec2d0930-4960-8140-a55b-ccf0a9f91dab` · framed by typography partition `law` bonds `8325` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `7dede5a4-918b-8410-86d5-2c11502561fe` · framed by typography partition `law` bonds `8763` · `pnpm readme` · `pnpm readme:check`</sub>

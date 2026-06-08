@@ -1,10 +1,124 @@
 ---
 name: bindings
-description: Use when wiring, debugging, or cost-tuning erpax's Cloudflare bindings — D1, R2, KV, Durable Objects, Queues, Workers AI, Vectorize, Analytics Engine, Browser, service self-reference, Hyperdrive, cron — or when a binding "works in config but fails at runtime" (e.g. "no such Durable Object class is exported from the worker"). The map of binding ↔ capability ↔ cost lever ↔ gap for the self-managed edge app.
-sessions:
-  - 776a49cb-8dfb-45ab-88ff-956e3b613adf
+description: "Use when wiring, debugging, or cost-tuning erpax's Cloudflare bindings — D1, R2, KV, Durable Objects, Queues, Workers AI, Vectorize, Analytics Engine, Browser, service self-reference, Hyperdrive, cron — or when a binding \\\"works in config but fails at runtime\\\" (e.g. \\\"no such Durable Object class is exported from the worker\\\"). The map of binding ↔ capability ↔ cost lever ↔ gap for the self-managed edge app."
+atomPath: bindings
+coordinate: bindings · 4/weave · fd270977
+contentUuid: "8a0617e5-a4a8-5962-9b0c-787fe9ae0c30"
+diamondUuid: "271cc41f-9f95-89e3-b6a5-9b5dc01520fc"
+uuid: "fd270977-05e0-8c4b-aabe-c0222d8158fc"
+horo: 4
+bonds:
+  in:
+    - binding
+    - bindings
+    - cache
+    - config
+    - currency
+    - deploy
+    - dev
+    - harden
+    - identity
+    - jobs
+    - law
+    - manufacturing
+    - mcp
+    - plugins
+    - search
+    - signal
+    - sufficient
+    - supto
+  out:
+    - binding
+    - bindings
+    - cache
+    - config
+    - currency
+    - deploy
+    - dev
+    - harden
+    - identity
+    - jobs
+    - law
+    - manufacturing
+    - mcp
+    - plugins
+    - search
+    - signal
+    - sufficient
+    - supto
+typography:
+  partition: bindings
+  bondDegree: 77
+  neighbors:
+    - analytics
+standards: []
+bindings: []
+neighbors:
+  wikilink:
+    - config
+    - deploy
+    - harden
+    - identity
+    - jobs
+    - law
+    - plugins
+  matrix:
+    - binding
+    - bindings
+    - cache
+    - config
+    - currency
+    - deploy
+    - dev
+    - harden
+    - identity
+    - jobs
+    - law
+    - manufacturing
+    - mcp
+    - plugins
+    - search
+    - signal
+    - sufficient
+    - supto
+  backlinks:
+    - binding
+    - bindings
+    - cache
+    - config
+    - currency
+    - deploy
+    - dev
+    - harden
+    - identity
+    - jobs
+    - law
+    - manufacturing
+    - mcp
+    - plugins
+    - search
+    - signal
+    - sufficient
+    - supto
+signatures:
+  computationUuid: "cf994c6a-a425-8f37-8c27-d5025a889ea4"
+  stages:
+    - stage: path
+      stageUuid: "9071a170-1a64-8d34-9de5-91310579dc04"
+    - stage: trinity
+      stageUuid: "6726ad8e-4810-8c30-b23e-8de8ac15e58c"
+    - stage: boundary
+      stageUuid: "2d1a480b-eb65-80eb-b8a1-28786ef0fea0"
+    - stage: links
+      stageUuid: "82e1ef67-2712-81e3-9e9c-41f185b630f1"
+    - stage: horo
+      stageUuid: "a302eb15-c983-8602-a167-d7886b44d77c"
+    - stage: seal
+      stageUuid: "4715aa9c-d40d-8912-972c-99523bd70596"
+    - stage: uuid
+      stageUuid: "70774aa9-8146-8c24-8e19-585c0679c0f2"
+version: 2
 ---
-
 # bindings — erpax fully self-managed on Cloudflare (every binding is a cost lever)
 
 erpax runs as a self-managed edge app: each Cloudflare binding is a capability AND a cost/efficiency lever. Using them fully means pushing each workload to its cheapest-correct primitive, metering its own usage, and (with [[identity]]'s content-uuid) cloning itself. Composes with [[deploy]], [[config]], [[harden]], [[jobs]]; declared in `wrangler.jsonc`, consumed via `src/services/cloudflare/` + `@erpax/cloudflare` (see [[plugins]]).

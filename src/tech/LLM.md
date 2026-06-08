@@ -3,15 +3,15 @@
 
 # tech
 
-path `tech` · uuid `41361c4a-cc8a-8754-869a-6bf4c0120088` · diamond `3bcdc859-ff38-8a4f-a530-947b8000c12c`
+path `tech` · uuid `41361c4a-cc8a-8754-869a-6bf4c0120088` · diamond `66a928d1-1c93-851a-bbb5-e7c962f9c906`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports article·collapse·law·merge·sti · exports tech · escapes —
-links `5/5` · folded `1` · bonds in `12` out `12`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → coach·cohort·credit·defence·dunning·harden·landmarks·literary·memories·serial·stat·trinity · ← coach·cohort·credit·defence·dunning·harden·landmarks·literary·memories·serial·stat·trinity
+neighbors → article·collapse·law·merge·sti · ← article·collapse·law·merge·sti
 analysis —
 law tech is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `27304657-e849-8f1c-a5ae-26ba58b25a3e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c5bf4bb1-f59e-8fe0-b953-2f94e23a29b8` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,8 +3,8 @@
 
 # attendees
 
-path `attendees` · uuid `3ab6f68a-0b87-8ec9-ae4a-90f38b9603e3` · diamond `4e02fd36-0d28-80ab-bff4-ff24bb882e0b`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `attendees` · uuid `d4439e75-201d-8cd9-962e-b98c0ee2712d` · diamond `f251c1e2-92ff-879e-97fd-4904999d0e66`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports law·person·thing · exports attendees · escapes —
 links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law an attendee is a person bound to a specific event — the link presupposes t
 
 ---
 
-<sub>content-uuid `64fc0949-b779-8d93-ad7b-4150a59074ab` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `49d2b9d1-1dce-8b9a-8c90-14048431d968` · `pnpm readme` · `pnpm computed:check`</sub>

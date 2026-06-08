@@ -3,8 +3,8 @@
 
 # disclosures
 
-path `csrd/disclosures` · uuid `40c2bb44-c647-8885-bfb2-0098df4e897d` · diamond `92155563-c062-8677-9fc1-d1a752f9cd69`
-horo `5` `round` · trinity `1·1·1` · sealed `1`
+path `csrd/disclosures` · uuid `c2cd60d3-840b-81e4-aea8-98953dcfd8ee` · diamond `01251052-4450-820a-805e-0a3921e35c29`
+horo `8` `crest` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/eu/csrd/esr·@/standard/collection/hook · exports default · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law exactly one row per ESRS datapoint per reporting year, each carrying its nar
 
 ---
 
-<sub>content-uuid `1022342b-25a2-8910-b71b-bd13c728fc26` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `49d78b40-9586-8f04-9606-724aba9cfeb7` · `pnpm readme` · `pnpm computed:check`</sub>

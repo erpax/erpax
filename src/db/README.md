@@ -2,7 +2,7 @@
 
 # db
 
-> atom `db` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
+> atom `db` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -23,9 +23,9 @@
 
 ## typography graph
 
-- partition `db` · sub-root `db14bd7d-6f1e-8b90-b30f-25a8e48592b1`
+- partition `db` · sub-root `b63f12d5-a96f-876a-a9fe-82131fe05f79`
 - bond degree `27` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -37,15 +37,53 @@
 - `the key is the content's uuid (content-addressed); dedup and round-trip are computed, never assigned` · banner
 - `the key is the content's uuid (content-addressed); dedup and the round-trip are computed` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·1 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `27` · sealed `1` · horo `4`
+- bond degree `27` · sealed `1` · horo `1`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `3`
 
 ## identity
 
-- uuid `db14bd7d-6f1e-8b90-b30f-25a8e48592b1`
+- uuid `b63f12d5-a96f-876a-a9fe-82131fe05f79`
 - bonds in `9` · out `9`
 - trinity form·code·proof `1`·`1`·`1`
 - links `17` / `17`
@@ -57,4 +95,4 @@
 
 ---
 
-<sub>content-uuid `076f44ad-d420-893b-a22c-3a9cd3f021fd` · framed by typography partition `db` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `5e3f751f-af21-8a52-960d-e698d4b65496` · framed by typography partition `db` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>

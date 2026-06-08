@@ -2,9 +2,11 @@
 
 # beyond
 
-> atom `beyond` · horo `7` `descent` · [[balance]] `1` · [[seal]] `0`
+> atom `beyond` · horo `1` `base` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `beyond` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -19,13 +21,56 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
+
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:stray:[[gap]]/[[diamond]]/stray/erasure/`
+
+### collapse
+
+- `balance:variance=1`
+- `seal:unsealed`
+- `trigger:Use when implementing any next-horizon conservation primitive beyond the base laws — causal provenance, deterministic replay, tenant isolation, bitemporal queries, cost accountability, carbon-aware execution, agent capability (RBAC), post-quantum signatures, self-explainability, reversibility/crypto-shred, or AI-decision audit. The 11-primitive barrel for Laws 11–22.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `09a5022c-99af-805c-b62a-363de7e9000a` · `14e28254-911f-83db-87fa-403722b7588b` · `94b36d50-1f47-8365-853a-ee95e5e9a20b`
+- content uuids `10f49627-9e29-83ae-9250-62985808a897` · `abd4f78b-22dd-83f1-a3e8-f0db319032d3` · `d96604c0-b014-8acf-90ef-74859decff05`
+
+## [[entropy]] — gaps · seals
+
+> account code `beyond` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[diamond]]/stray/erasure/ `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.1` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+| Σ gap `2` eb | Σ seal `8.1` eb |
+
+> net residual `-6.1` eb · seal/gap ratio `4.05` · [[entropy]] · [[seal]]
 
 ## typography graph
 
-- partition `beyond` · sub-root `d5c96de6-e131-8db0-8c67-746942d1018c`
-- bond degree `72` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- partition `beyond` · sub-root `ec7e7d91-7746-8185-bcbd-22a1d84517ed`
+- bond degree `0` · analysis neighbors —
+- graph root `86252db0-c776-84eb-b8e4-c884dca3a3ba`
 
 ## [[cloudflare]] bindings
 
@@ -67,15 +112,53 @@
 - `W3C-PROV-O` · catalogue
 - `XBRL` · catalogue
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unbalanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| not-held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·1 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `72` · sealed `0` · horo `7`
-- variance `0` · balanced `1` · trinity sum `3`
+- bond degree `0` · sealed `0` · horo `1`
+- variance `1` · balanced `0` · trinity sum `3`
 - bindings `0` · standards `33`
 
 ## identity
 
-- uuid `76c8fe58-fec1-8ffc-b2f4-577e2d7140b1`
+- uuid `7d761e6f-e0c7-89d2-a20d-39d43ab276e2`
 - bonds in `24` · out `24`
 - trinity form·code·proof `1`·`1`·`1`
 - links `18` / `18`
@@ -87,4 +170,4 @@
 
 ---
 
-<sub>content-uuid `4b103a21-ea34-8bf4-9f98-f611f30481f6` · framed by typography partition `beyond` bonds `72` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `5432934d-a043-8657-ada2-b0e4b910be46` · framed by typography partition `beyond` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,15 +3,15 @@
 
 # sourced
 
-path `sourced` · uuid `e76eeca7-aa28-874f-974c-d15ee8114bf3` · diamond `1e7449e7-e66f-8ec6-9e8c-9cf258eedd41`
+path `sourced` · uuid `e76eeca7-aa28-874f-974c-d15ee8114bf3` · diamond `d284a53f-66a8-8de1-b1f3-d05616afb045`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports sourced · escapes —
-links `2/2` · folded `1` · bonds in `8` out `8`
+links `2/2` · folded `1` · bonds in `6` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → aura·competitor·corrects·grant·honest·landmarks·mass·memories · ← aura·competitor·corrects·grant·honest·landmarks·mass·memories
+neighbors → aura·cost·honest·law·law·standards·thing · ← aura·cost·honest·law·standards·thing
 analysis aura
 law sourced is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `d910c358-6afd-8fa8-bb4d-4221e56300b5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a8eeb3e5-c190-80f0-ae46-dba913cd386c` · `pnpm readme` · `pnpm computed:check`</sub>

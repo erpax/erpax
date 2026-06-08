@@ -3,8 +3,8 @@
 
 # triggered
 
-path `convention/triggered` · uuid `8bcf5e04-3f10-8b44-92fd-eaaa81e3289f` · diamond `524761a7-e202-8d29-9f65-ca68678622ce`
-horo `1` `base` · trinity `1·1·1` · sealed `1`
+path `convention/triggered` · uuid `d159844c-ca25-8956-a198-469e13cdd90e` · diamond `954b3bad-78f5-80a9-b04a-0ba51591e86f`
+horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports @/aura · exports const·function · escapes —
 links `13/13` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law a SKILL description is a Use-when trigger; the corpus is self-routing iff co
 
 ---
 
-<sub>content-uuid `f65256fe-58e8-8d79-8883-7a7d066d76e9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f29f7047-e36a-8a48-9248-e7e774e69cb7` · `pnpm readme` · `pnpm computed:check`</sub>

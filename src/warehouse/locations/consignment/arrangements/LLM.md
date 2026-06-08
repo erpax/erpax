@@ -3,15 +3,15 @@
 
 # arrangements
 
-path `warehouse/locations/consignment/arrangements` · uuid `4eea95fa-ad9f-84aa-8aba-aafb281f5e45` · diamond `38c740d1-6f82-89e5-835a-094cc2fc2a11`
-horo `4` `weave` · trinity `1·1·1` · sealed `1`
+path `warehouse/locations/consignment/arrangements` · uuid `f768dc1b-680d-8f72-8da1-2b7259165f9b` · diamond `c9a7028f-c1b7-8aae-912b-4324e7f04ad7`
+horo `7` `descent` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
-links `10/10` · folded `1` · bonds in `4` out `4`
+links `10/10` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → accounting·balance·entry·identity·inventories·law·locations·proof·sales·transaction · ← accounting·balance·entry·identity·inventories·law·locations·proof·sales·transaction
 analysis —
 law control does not transfer until the consignee sells onward — the consignor keeps the inventory on its books and defers revenue until the §B77 indicators resolve at the [[warehouse/locations/consignment/arrangements/consignment/sales|sale event]].
 
 ---
 
-<sub>content-uuid `ccb9268a-ef4f-826b-8064-403c3bff7f2c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a6671393-7745-808f-b0e4-e7077268cca3` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # training
 
-path `training` · uuid `ecf60adc-fdcb-899d-9d56-a0ba005ef486` · diamond `b179a7d7-9881-8e83-8f75-6acbf1bed496`
+path `training` · uuid `ecf60adc-fdcb-899d-9d56-a0ba005ef486` · diamond `680470ad-d676-83db-80ec-bd168de7db12`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports classroom·competencies·competency·education·employees·law·time·train · exports training · escapes —
-links `9/9` · folded `1` · bonds in `9` out `9`
+links `9/9` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
-neighbors → agriculture·crisis·lines·masthead·moved·pickup·promise·seat·soil · ← agriculture·crisis·lines·masthead·moved·pickup·promise·seat·soil
+neighbors → classroom·competencies·competency·education·employees·gap·law·salary·time·train · ← classroom·competencies·competency·education·employees·gap·law·salary·time·train
 analysis —
 law training is the experience record of learning an actor undergoes — enrollment, completion, certification, the [[competency]] gain that closes a competency gap.
 
 ---
 
-<sub>content-uuid `68512f63-9c2a-8b6c-a17b-b38ad7205277` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f730ccf0-00b7-8b0f-a3bb-e014f92a35fb` · `pnpm readme` · `pnpm computed:check`</sub>

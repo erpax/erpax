@@ -3,8 +3,8 @@
 
 # athlete
 
-path `athlete` · uuid `050c9482-8073-8274-902b-1bc606cab378` · diamond `c311e1cc-6e68-8b88-a7d8-c73f9e62cefc`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `athlete` · uuid `019d1633-ec56-8dc0-800f-d053af2b4428` · diamond `b19ee35b-c647-8391-9d83-e235f4d33521`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports law·person·thing · exports athlete · escapes —
 links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law athlete is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `b4580f7f-0832-8f59-b631-01ea87de08e4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `86b41e50-9dd2-8f25-b6e8-df9224c745b4` · `pnpm readme` · `pnpm computed:check`</sub>

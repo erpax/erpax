@@ -23,7 +23,21 @@
 
 - partition `enrolling` · sub-root `444bd8ad-2809-8c8e-9376-62c5419652ba`
 - bond degree `12` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `12` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `e0c3ac83-62b1-8ac0-9b01-a569ee504dc4` · framed by typography partition `enrolling` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b2132b7e-6533-88f0-888f-d7269f2afbeb` · framed by typography partition `enrolling` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

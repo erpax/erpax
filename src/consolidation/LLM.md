@@ -3,15 +3,15 @@
 
 # consolidation
 
-path `consolidation` · uuid `977687ba-57b0-8456-8e15-a163746a3de6` · diamond `eb6a9b79-c744-8e0f-aba9-634aafe89722`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `consolidation` · uuid `d03fd3ef-7884-8240-9533-f956cb61a7f9` · diamond `1c96b28b-7634-880b-8f90-ed009ad9bd10`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports accounting·balance·consolidations·law · exports consolidation · escapes —
-links `9/9` · folded `1` · bonds in `4` out `5`
+links `9/9` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·balance·consolidations·law·law · ← accounting·balance·consolidations·law
+neighbors → accounting·balance·consolidations·law · ← accounting·balance·consolidations·law
 analysis —
 law the singular model of one [[consolidations]] row — the combination of multiple entities' figures into one set; every collection has its model ([[balance]]).
 
 ---
 
-<sub>content-uuid `c62cbc74-d954-82f3-9b48-a8890664039b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `eac76f59-fed2-81cf-a62d-8ca20fb53a39` · `pnpm readme` · `pnpm computed:check`</sub>

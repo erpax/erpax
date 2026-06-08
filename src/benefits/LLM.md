@@ -3,8 +3,8 @@
 
 # benefits
 
-path `benefits` · uuid `6a4869e8-95cf-8702-b745-9717fc4f5e0e` · diamond `28d08665-18c8-899a-8dd2-d229e71d2f04`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `benefits` · uuid `d72b8092-6fa8-87a4-b4d0-cb052223ab4a` · diamond `b1691db9-09ec-8d95-8eef-8a3f3cda8ae4`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports government·info·job·law·physiological·summary·type·url · exports benefits · escapes —
 links `8/8` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law benefits is one schema.org word, content-addressed; the same word collides e
 
 ---
 
-<sub>content-uuid `f70753f5-a234-8e96-8efb-1928fa305add` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `48bbc207-5138-81c0-8acd-0893b196ca2a` · `pnpm readme` · `pnpm computed:check`</sub>

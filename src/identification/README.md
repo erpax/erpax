@@ -25,7 +25,28 @@
 
 - partition `identification` · sub-root `5e6e10c8-3f63-8e7e-a94b-8d5eb6b2df9b`
 - bond degree `22` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `Conservation Law 10 referential-harmony (resolution = uuid-binding check)` · banner
+- `Conservation Law 46 uuid-short-display (short uuid kinds enumerated)` · banner
+- `ISO/IEC 25010:2023 §5.3 operability (one input → one resolver)` · banner
+- `RFC 7515 JWS compact form` · banner
+- `RFC 9562 §5.8 uuidv8` · banner
+- `schema.org — the type vocabulary, collided to single words` · banner
+- `W3C DID Core 1.0 (DID syntax)` · banner
+- `W3C-DID-1.0` · catalogue
+
+## analytics
+
+- bond degree `22` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `8`
 
 ## identity
 
@@ -41,4 +62,4 @@
 
 ---
 
-<sub>content-uuid `5da20d10-1f04-8f25-a2f6-c678d762a2aa` · framed by typography partition `identification` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `627e2845-121d-8c01-993c-4c24ce1be240` · framed by typography partition `identification` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>

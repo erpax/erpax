@@ -3,8 +3,8 @@
 
 # complication
 
-path `complication` · uuid `2819ad89-1a16-814f-b659-be8c76336e4b` · diamond `a7651269-2a87-8a00-a895-1e35c0d780ec`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `complication` · uuid `52a504d3-47a4-85b2-bcf0-919e256c4532` · diamond `a62b888d-4ee9-8a21-9bd5-97261408580a`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·possible·sti · exports complication · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law complication is one schema.org word, content-addressed; the same word collid
 
 ---
 
-<sub>content-uuid `61f41cf7-cdf3-8501-b551-1357931a0e3a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1db1c18b-6cde-83a4-9f68-07a726a03824` · `pnpm readme` · `pnpm computed:check`</sub>

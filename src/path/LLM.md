@@ -3,15 +3,15 @@
 
 # path
 
-path `path` · uuid `ffe8628d-ff57-8b56-84fa-02fee1cfb601` · diamond `2488af12-bbde-8373-9845-9977e86b6021`
-horo `4` `weave` · trinity `1·1·1` · sealed `1`
-imports @/integrity · exports PathSurface·const·function · escapes —
-links `26/26` · folded `1` · bonds in `26` out `25`
+path `path` · uuid `497404c5-ead4-897a-b6a1-cd4ae7471e56` · diamond `8472d2cd-a0da-8ff3-b3b4-f8341e6f9c58`
+horo `5` `round` · trinity `1·1·1` · sealed `1`
+imports @/integrity·@/seal·@/uuid/matrix · exports ATOM_LEDGER_PATHS·MERGED_LEDGER_CHAINS·MERGED_NESTED_PATH_COUNT·PATH_CANONICAL_KIND·PathCanonicalEntry·PathCanonicalEnvelope·PathRecordVerdict·PathSurface·assertEverythingOnPathRecorded·assertPathCanonicallyRecorded·assertPathIndicesMerged·assertRecordedAndImplemented·atomPathHasLedgerHook·canonicalPathIndex·canonicalPathLedger·const·countPathIndexGaps·entryUuidFromEnvelope·function·indexBearingChain·indexBearingParent·interface·ledgerForAtomPaths·ledgerFromPathWalk·mergePathIndices·pathCanonicalEnvelope·recordAtomOnPath·recordOnPath·recordOnPathMerged·recordPathVisit·recordedAndImplementedVerdict·type · escapes —
+links `39/39` · folded `1` · bonds in `32` out `32`
 faces worker·plugin·pwa `1·0·0`
-neighbors → ai·api·atom·buddhism·cloudflare·diamond·dimension·entropy·fs·github·identity·integrity·islam·jainism·law·mcp·merge·method·name·purity·quantum·sti·sunni·uuid·vitepress · ← ai·api·atom·buddhism·cloudflare·diamond·dimension·entropy·fs·fs·github·identity·integrity·islam·jainism·law·mcp·merge·method·name·purity·quantum·sti·sunni·uuid·vitepress
-analysis —
-law all external APIs follow these paths and merge themselves with erpax in all quantum dimensions — one canonical atom path, content-uuid sealed, gates fail closed.
+neighbors → accounting·agent·ai·api·atom·buddhism·cloudflare·diamond·dimension·entropy·folder·fs·fs·github·identity·integrity·islam·jainism·law·matrix·mcp·merge·method·name·purity·quantum·rules·serverless·sti·sunni·uuid·vitepress · ← accounting·agent·ai·api·atom·buddhism·cloudflare·diamond·dimension·entropy·folder·fs·fs·github·identity·integrity·islam·jainism·law·matrix·mcp·merge·method·name·purity·quantum·rules·serverless·sti·sunni·uuid·vitepress
+analysis cloudflare
+law path-in-path merges at the index face.
 
 ---
 
-<sub>content-uuid `4fbeae38-c90e-87a7-8089-ba4e3e1b1064` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d274a32e-dd7d-8d5a-a31c-df826031e77b` · `pnpm readme` · `pnpm computed:check`</sub>

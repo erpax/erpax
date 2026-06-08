@@ -23,7 +23,21 @@
 
 - partition `lactose` · sub-root `13843951-16c6-856c-a5bf-dc759a1b2102`
 - bond degree `12` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `12` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `a5120088-e4c2-8ff5-aadb-3b237b1f8b25` · framed by typography partition `lactose` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `5f124f81-fea8-8ac5-9880-35188f25d230` · framed by typography partition `lactose` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

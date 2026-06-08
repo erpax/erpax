@@ -2,7 +2,7 @@
 
 # collide
 
-> atom `collide` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
+> atom `collide` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -23,9 +23,9 @@
 
 ## typography graph
 
-- partition `collide` · sub-root `6a912f6c-5e20-8eae-b177-d937fefd259d`
+- partition `collide` · sub-root `9b1c3b23-c1d9-88bd-abb3-dc57ace6b07c`
 - bond degree `45` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -36,15 +36,53 @@
 - `collide is DEFINED here and DEFERRED — never applied to the live matrix in this atom` · banner
 - `schema.org — the type vocabulary, collided to single words` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·2 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `45` · sealed `1` · horo `5`
+- bond degree `45` · sealed `1` · horo `2`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `2`
 
 ## identity
 
-- uuid `6a912f6c-5e20-8eae-b177-d937fefd259d`
+- uuid `9b1c3b23-c1d9-88bd-abb3-dc57ace6b07c`
 - bonds in `15` · out `15`
 - trinity form·code·proof `1`·`1`·`1`
 - links `29` / `29`
@@ -56,4 +94,4 @@
 
 ---
 
-<sub>content-uuid `3dd333ed-5c34-8c55-8159-7737156c451e` · framed by typography partition `collide` bonds `45` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `8cb767e4-6b6d-8aa8-ba54-9a727495f2e1` · framed by typography partition `collide` bonds `45` · `pnpm readme` · `pnpm readme:check`</sub>

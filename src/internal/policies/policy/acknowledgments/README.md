@@ -2,9 +2,11 @@
 
 # acknowledgments
 
-> atom `internal/policies/policy/acknowledgments` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
+> atom `internal/policies/policy/acknowledgments` · horo `8` `crest` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `internal/policies/policy/acknowledgments` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,15 +23,115 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `law:a policy acknowledgment is the per-employee-per-policy-version attestation — signed-document upload, acknowledged date and status (pending/overdue/expired) — the SOX §404 evidence that a specific person accepted a specific policy version.`
+- `seal:unsealed`
+- `trigger:Use when recording or tracking employee acknowledgement of a policy version — signed-document upload, acknowledged date, status pending/overdue/expired; SOX §404 control-attestation evidence per employee per policy. The policy-acknowledgments collection.`
+- `trigger:a policy acknowledgment is the per-employee-per-policy-version attestation — signed-document upload, acknowledged date and status (pending/overdue/expired) — the SOX §404 evidence that a specific person accepted a specific policy version.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `8f1182ac-6a6f-8af1-9260-28cfec3b6da2` · `a826afbc-cbb8-8629-b40f-0e9ecde67bad` · `b148f2ba-c12d-85bd-9a8e-9ca02f761ef2`
+- content uuids `96d82bda-49ee-8503-9da0-c22db1cae4bc` · `9e6a6dd7-ea8c-87e1-ab39-90a15fa9a3df` · `c66fc1ac-bc76-8b01-b44a-9aaa143808a3`
+
+## [[entropy]] — gaps · seals
+
+> account code `internal/policies/policy/acknowledgments` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.8` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `2` eb | Σ seal `11.8` eb |
+
+> net residual `-9.8` eb · seal/gap ratio `5.9` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `internal` · sub-root `a3719802-d526-8179-9ae4-637b20c53cac`
+- partition `internal` · sub-root `420a9910-05e6-86dd-9eed-ecde159d99e3`
 - bond degree `9` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `a0b4e6a6-0230-8b95-a98c-2d4cf71fcc77`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `SOX §404 control-attestation` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·8 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `9` · sealed `0` · horo `8`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `1`
 
 ## identity
 
-- uuid `0ade7a04-1423-8cbc-9792-6e35ad43910a`
+- uuid `f06a89cf-3e30-8ce0-a0bd-f4ee2e333b1e`
 - bonds in `3` · out `3`
 - trinity form·code·proof `1`·`1`·`1`
 - links `1` / `1`
@@ -37,8 +139,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `7bd748d1-10ab-8203-92c1-885c92a06757` · framed by typography partition `internal` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `856bebc3-dc02-83af-b87b-b3609d623ff4` · framed by typography partition `internal` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>

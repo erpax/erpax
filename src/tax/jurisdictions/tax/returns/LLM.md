@@ -3,15 +3,15 @@
 
 # returns
 
-path `tax/jurisdictions/tax/returns` · uuid `c407251c-2232-897a-bced-499226386838` · diamond `1aaa852f-262a-806d-ab03-dd2ddc376829`
-horo `8` `crest` · trinity `1·1·1` · sealed `1`
+path `tax/jurisdictions/tax/returns` · uuid `51c5f62f-22c8-85bc-ae3a-1d305ed805ab` · diamond `8b69dcbc-ab9c-8d3f-9d96-a5713925b6bc`
+horo `2` `share` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/auto/set/timestamp·@/base/accounting/field·@/enforce/segregation/of/duty·@/standard/collection/hook · exports default · escapes —
-links `5/5` · folded `1` · bonds in `7` out `7`
+links `5/5` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·decentralization·fertility·holographic·issue·landmarks·orders · ← access·decentralization·fertility·holographic·issue·landmarks·orders
+neighbors → accounting·fields·hooks·law·offered·orders·proof·standard·store·transaction · ← accounting·fields·hooks·law·offered·orders·proof·standard·store·transaction
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `061ddce5-c1d5-8b8e-b3c9-16163f873b68` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9b932b58-5971-8e2e-840c-1dba026ded8e` · `pnpm readme` · `pnpm computed:check`</sub>

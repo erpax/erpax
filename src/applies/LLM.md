@@ -3,7 +3,7 @@
 
 # applies
 
-path `applies` · uuid `892bee00-43ce-8920-a045-9fe1f29239d4` · diamond `44417e93-0fa4-818f-a1b4-f083898553aa`
+path `applies` · uuid `4a30e745-924f-865a-854b-08364100900c` · diamond `e83f2829-da69-8144-8d76-c38cbe7a062f`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·delivery·law·legislation·merge·method·payment·sti · exports applies · escapes —
 links `8/8` · folded `1` · bonds in `8` out `8`
@@ -14,4 +14,4 @@ law applies is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `e9c0b32f-52c9-83b0-8b07-c3f3f42d803e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `936aa080-a137-8e02-9284-54922fff82aa` · `pnpm readme` · `pnpm computed:check`</sub>

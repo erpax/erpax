@@ -3,10 +3,10 @@
 
 # baseline
 
-path `baseline` · uuid `b249dc59-cfd3-87ff-bc09-f979450cacf4` · diamond `e6055ec8-7fb8-8695-8baa-1c1419bdf481`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `baseline` · uuid `156cb177-8811-8ac3-88ed-214ff5fb0b38` · diamond `9d765c83-ab5d-81d6-93b8-674c46fa128f`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports akashic·allocation·calculate·decompression·derive·empirical·horo·lineage·manufacturing·measure·rodin·sampling·source · exports baseline · escapes —
-links `27/27` · folded `1` · bonds in `13` out `13`
+links `25/25` · folded `1` · bonds in `13` out `13`
 faces worker·plugin·pwa `0·0·0`
 neighbors → akashic·allocation·calculate·decompression·derive·empirical·horo·lineage·manufacturing·measure·rodin·sampling·source · ← akashic·allocation·calculate·decompression·derive·empirical·horo·lineage·manufacturing·measure·rodin·sampling·source
 analysis —
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `df307cce-75eb-805b-a79c-03a6f14853e0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5a2902ff-3ec0-8cba-9b84-53f50fcc4eda` · `pnpm readme` · `pnpm computed:check`</sub>

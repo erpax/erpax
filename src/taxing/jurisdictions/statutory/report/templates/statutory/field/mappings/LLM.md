@@ -3,15 +3,15 @@
 
 # mappings
 
-path `taxing/jurisdictions/statutory/report/templates/statutory/field/mappings` · uuid `b645497a-f1fc-8b23-8a39-90b0db54bbb7` · diamond `3e24ff07-66fe-86e5-a0a8-1a7f698aeb47`
-horo `8` `crest` · trinity `1·1·1` · sealed `1`
+path `taxing/jurisdictions/statutory/report/templates/statutory/field/mappings` · uuid `3fb9dda3-cc87-8d88-b378-2435bb5a3370` · diamond `667d959a-8937-8dce-81ad-804b147fa271`
+horo `1` `base` · trinity `1·1·1` · sealed `0`
 imports @/role/based/access · exports const · escapes —
-links `0/0` · folded `1` · bonds in `6` out `6`
+links `0/0` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → brow·classifications·cohort·landmarks·memories·stat · ← brow·classifications·cohort·landmarks·memories·stat
+neighbors → law·mapping·standards · ← law·mapping·standards
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `1400663b-b627-8e66-90f5-134c00524c26` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ca31a727-640a-84b2-be8a-99252d759559` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,8 +3,8 @@
 
 # campaign
 
-path `campaign` · uuid `9c47542c-311c-8582-8ea9-89b07c5f296a` · diamond `b14f6a9c-ffe9-8367-8c11-e72e14a1dfd9`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `campaign` · uuid `3d7062c2-85e8-8ff2-b66b-fa00eece3bbd` · diamond `c8aaa33b-7792-8ad4-a2fd-b10eecf1202e`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports law·leads · exports campaign · escapes —
 links `2/2` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law a campaign coordinates one multi-channel marketing initiative — its channe
 
 ---
 
-<sub>content-uuid `d30aa709-f3e8-81ab-9f10-7c878534cd3c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ca6a7d58-746c-8758-b504-164e4c538b1e` · `pnpm readme` · `pnpm computed:check`</sub>

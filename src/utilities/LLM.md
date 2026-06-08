@@ -3,15 +3,15 @@
 
 # utilities
 
-path `utilities` · uuid `19dc3105-c3a6-8c94-8d06-cdf757d7aa5b` · diamond `07ea0897-1160-8b95-a6cc-8995dab6f634`
+path `utilities` · uuid `19dc3105-c3a6-8c94-8d06-cdf757d7aa5b` · diamond `cfb93f7f-93c6-8543-ba4c-630be9b7c602`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports all·collapse·config·identity·matter·proof·society·standard · exports utilities · escapes —
-links `9/9` · folded `1` · bonds in `4` out `4`
+links `9/9` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → all·collapse·config·identity·matter·proof·society·standard · ← all·collapse·config·identity·matter·proof·society·standard
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `12f0f5d0-f408-8917-b8e3-9be3b5a02a9a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `704492a8-edb6-889c-8d18-7d7b994c599e` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -1,10 +1,225 @@
 ---
 name: party
-description: Use when one entity is referenced under many roles (seller/buyer/agent/supplier/consignee/carrier/sender/receiver/authorized-by) OR when computing the counterparty side of a financial document — aging open balances into day-buckets (A/R and A/P share one algorithm) or validating a status-lifecycle transition; one party seen through infinite roles, receivable and payable seen from two sides.
-sessions:
-  - 776a49cb-8dfb-45ab-88ff-956e3b613adf
+description: "Use when one entity is referenced under many roles (seller/buyer/agent/supplier/consignee/carrier/sender/receiver/authorized-by) OR when computing the counterparty side of a financial document — aging open balances into day-buckets (A/R and A/P share one algorithm) or validating a status-lifecycle transition; one party seen through infinite roles, receivable and payable seen from two sides."
+atomPath: party
+coordinate: party · 8/crest · 3a6be360
+contentUuid: "b2e0cbb3-258d-5d26-9a3a-d13fb707fe65"
+diamondUuid: "ce2fdaca-f9b9-89cd-8cfd-db2103a85359"
+uuid: "3a6be360-d2e4-8b2b-b792-fe5536f08c43"
+horo: 8
+bonds:
+  in:
+    - accounting
+    - accounts
+    - akashic
+    - allocations
+    - attestations
+    - balance
+    - calculations
+    - certification
+    - checks
+    - commerce
+    - conflict
+    - corruption
+    - customers
+    - dimension
+    - duality
+    - events
+    - fields
+    - flow
+    - fractal
+    - horo
+    - identity
+    - invoices
+    - law
+    - matter
+    - measurements
+    - merge
+    - orders
+    - party
+    - plugins
+    - political
+    - runs
+    - sequence
+    - size
+    - society
+    - standard
+    - tags
+    - tax
+    - transaction
+    - transactions
+    - vendors
+  out:
+    - accounting
+    - accounts
+    - akashic
+    - allocations
+    - attestations
+    - balance
+    - calculations
+    - certification
+    - checks
+    - commerce
+    - conflict
+    - corruption
+    - customers
+    - dimension
+    - duality
+    - events
+    - fields
+    - flow
+    - fractal
+    - horo
+    - identity
+    - invoices
+    - law
+    - matter
+    - measurements
+    - merge
+    - orders
+    - party
+    - plugins
+    - political
+    - runs
+    - sequence
+    - size
+    - society
+    - standard
+    - tags
+    - tax
+    - transaction
+    - transactions
+    - vendors
+typography:
+  partition: party
+  bondDegree: 122
+  neighbors: []
+standards: []
+bindings: []
+neighbors:
+  wikilink:
+    - accounting
+    - akashic
+    - balance
+    - commerce
+    - corruption
+    - customers
+    - duality
+    - fields
+    - flow
+    - fractal
+    - horo
+    - identity
+    - law
+    - merge
+    - party
+    - plugins
+    - sequence
+    - society
+    - standard
+    - tags
+    - vendors
+  matrix:
+    - accounting
+    - accounts
+    - akashic
+    - allocations
+    - attestations
+    - balance
+    - calculations
+    - certification
+    - checks
+    - commerce
+    - conflict
+    - corruption
+    - customers
+    - dimension
+    - duality
+    - events
+    - fields
+    - flow
+    - fractal
+    - horo
+    - identity
+    - invoices
+    - law
+    - matter
+    - measurements
+    - merge
+    - orders
+    - party
+    - plugins
+    - political
+    - runs
+    - sequence
+    - size
+    - society
+    - standard
+    - tags
+    - tax
+    - transaction
+    - transactions
+    - vendors
+  backlinks:
+    - accounting
+    - accounts
+    - akashic
+    - allocations
+    - attestations
+    - balance
+    - calculations
+    - certification
+    - checks
+    - commerce
+    - conflict
+    - corruption
+    - customers
+    - dimension
+    - duality
+    - events
+    - fields
+    - flow
+    - fractal
+    - horo
+    - identity
+    - invoices
+    - law
+    - matter
+    - measurements
+    - merge
+    - orders
+    - party
+    - plugins
+    - political
+    - runs
+    - sequence
+    - size
+    - society
+    - standard
+    - tags
+    - tax
+    - transaction
+    - transactions
+    - vendors
+signatures:
+  computationUuid: "dfaddfd4-7ba6-8ebf-84d1-61860354ee27"
+  stages:
+    - stage: path
+      stageUuid: "0ef76c9e-8206-8572-a3b4-828ca52c220a"
+    - stage: trinity
+      stageUuid: "8745ca04-a341-8b9b-9d48-33cdfbebf89a"
+    - stage: boundary
+      stageUuid: "42bd6e05-dca0-874f-8670-68986bc540ff"
+    - stage: links
+      stageUuid: "6caf1e98-5c3a-827a-89da-22131a348949"
+    - stage: horo
+      stageUuid: "ae0eb0f4-9b00-8eae-ab50-2aded1e42370"
+    - stage: seal
+      stageUuid: "c8b3cb5c-fd4b-8cbf-a8ed-e35ca205e069"
+    - stage: uuid
+      stageUuid: "d3e68b95-0bf7-83e1-85e6-a965875e7374"
+version: 2
 ---
-
 # party — one party, infinite roles; two sides of the same debt
 
 `party` is the counterparty object. It has two coexisting facets — the **reference** (who the other side is, under which role) and the **document algorithms** (what that relationship owes, aging and lifecycle). One party, infinitely many roles; one document, two opposite ends.

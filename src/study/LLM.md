@@ -3,15 +3,15 @@
 
 # study
 
-path `study` · uuid `047e7d75-aa2e-896b-8ff0-3218bf41cab0` · diamond `79b1f08b-4921-8cc5-b1e0-357ce02a2e05`
+path `study` · uuid `047e7d75-aa2e-896b-8ff0-3218bf41cab0` · diamond `94725dcc-ece9-857c-879c-ab0535c2eea4`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports design·law·location·medical·observational·status·subject · exports study · escapes —
-links `7/7` · folded `1` · bonds in `4` out `4`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → design·law·location·medical·observational·status·subject · ← design·law·location·medical·observational·status·subject
 analysis —
 law study is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `a2ffe98a-6186-8d0a-b4dd-39a444b15b32` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e0f5e594-a85b-8f73-a97a-4d1d18b465f3` · `pnpm readme` · `pnpm computed:check`</sub>

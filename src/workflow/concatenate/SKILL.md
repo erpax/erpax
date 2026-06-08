@@ -1,8 +1,162 @@
 ---
 name: concatenate
-description: Use when building a completely autonomous workflow from command·question·answer atoms — the free monoid of steps, run as command then gate then computed-answer-on-NO until every gate is YES (zero entropy), no human in the loop.
+description: "Use when building a completely autonomous workflow from command·question·answer atoms — the free monoid of steps, run as command then gate then computed-answer-on-NO until every gate is YES (zero entropy), no human in the loop."
+atomPath: workflow/concatenate
+coordinate: workflow/concatenate · 5/round · c13fd658
+contentUuid: "55bf17ec-e103-5382-8551-58c26fa3daf6"
+diamondUuid: "2d09ba6a-df3e-80a4-b074-2eed7a198c2a"
+uuid: "c13fd658-41b4-8b9b-9cec-475895a8f4a6"
+horo: 5
+bonds:
+  in:
+    - answer
+    - aura
+    - balance
+    - breath
+    - command
+    - cost
+    - decide
+    - derive
+    - dry
+    - entropy
+    - gate
+    - generate
+    - law
+    - merge
+    - question
+    - recover
+    - self
+    - sequence
+    - society
+    - spec
+    - step
+    - vocabulary
+    - workflow
+  out:
+    - answer
+    - aura
+    - balance
+    - breath
+    - command
+    - cost
+    - decide
+    - derive
+    - dry
+    - entropy
+    - gate
+    - generate
+    - law
+    - merge
+    - question
+    - recover
+    - self
+    - sequence
+    - society
+    - spec
+    - step
+    - vocabulary
+    - workflow
+typography:
+  partition: workflow
+  bondDegree: 74
+  neighbors:
+    - aura
+standards:
+  - "ISO/IEC 19510:2013 BPMN-2.0 — a free monoid over the workflow step"
+  - pure — the algebra + an injected NAME→effect registry; effects at the boundary
+  - pure — the algebra + an injected NAME→effect registry; the canonical workflows are gated for groundedness
+bindings: []
+neighbors:
+  wikilink:
+    - answer
+    - aura
+    - balance
+    - breath
+    - command
+    - cost
+    - decide
+    - derive
+    - dry
+    - entropy
+    - gate
+    - generate
+    - law
+    - merge
+    - question
+    - recover
+    - self
+    - sequence
+    - society
+    - spec
+    - step
+    - vocabulary
+  matrix:
+    - answer
+    - aura
+    - balance
+    - breath
+    - command
+    - cost
+    - decide
+    - derive
+    - dry
+    - entropy
+    - gate
+    - generate
+    - law
+    - merge
+    - question
+    - recover
+    - self
+    - sequence
+    - society
+    - spec
+    - step
+    - vocabulary
+    - workflow
+  backlinks:
+    - answer
+    - aura
+    - balance
+    - breath
+    - command
+    - cost
+    - decide
+    - derive
+    - dry
+    - entropy
+    - gate
+    - generate
+    - law
+    - merge
+    - question
+    - recover
+    - self
+    - sequence
+    - society
+    - spec
+    - step
+    - vocabulary
+    - workflow
+signatures:
+  computationUuid: "fb864b01-8d37-8ac4-84b1-6780d052bdba"
+  stages:
+    - stage: path
+      stageUuid: "d5367a3e-ff14-831b-a8e8-89b629ea2592"
+    - stage: trinity
+      stageUuid: "a5f0af27-278b-895a-9266-aff60b1951ad"
+    - stage: boundary
+      stageUuid: "880a76ab-f721-8d44-9306-3e1c89046688"
+    - stage: links
+      stageUuid: "9b76ec74-712c-8c1e-bc59-3be6bea7ec2b"
+    - stage: horo
+      stageUuid: "d9e0c473-7ac2-86ed-b129-854b3fd80e57"
+    - stage: seal
+      stageUuid: "a8d9c3a9-9627-88ac-bb85-8779c68c821f"
+    - stage: uuid
+      stageUuid: "edefc557-8456-8697-82a3-0ede01778dbb"
+version: 2
 ---
-
 # workflow/concatenate — command·question·answer → autonomous workflows
 
 The **concatenator**: the atoms the society already has — verbs, gates, resolutions — chained into **completely autonomous workflows**. The algebra is a **free monoid** `(C×Q×A)*`.

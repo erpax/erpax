@@ -3,15 +3,15 @@
 
 # speakable
 
-path `speakable` · uuid `531ff91f-db16-8ced-8011-c63608c4b30f` · diamond `0a2c2e52-fd20-866f-8c05-c3395042be08`
+path `speakable` · uuid `531ff91f-db16-8ced-8011-c63608c4b30f` · diamond `62665b3c-2d23-8d63-9ac8-a72145f7a479`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports law·specification · exports speakable · escapes —
-links `2/2` · folded `1` · bonds in `6` out `6`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·harden·landmarks·memories·occupancy·stat · ← cohort·harden·landmarks·memories·occupancy·stat
+neighbors → law·specification · ← law·specification
 analysis —
 law speakable is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `c487358a-8702-8b64-b474-0fec02c256cd` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e7e8e146-5aa2-8e5f-9d51-e96eac30d4e8` · `pnpm readme` · `pnpm computed:check`</sub>

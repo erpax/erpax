@@ -3,15 +3,15 @@
 
 # word
 
-path `word` · uuid `52c9d674-4898-8ff6-a8f1-ff06af31f1f5` · diamond `4f5db67d-11b1-8fb2-a55b-f73bebe629f6`
-horo `4` `weave` · trinity `1·1·1` · sealed `1`
+path `word` · uuid `14d7927c-f7c7-8ff2-ad6e-542a4e62b8e9` · diamond `d853929f-9ebf-8253-887d-16974d1e4b4a`
+horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports @/integrity · exports WordTokenKind·const · escapes —
-links `22/22` · folded `1` · bonds in `10` out `10`
-faces worker·plugin·pwa `0·0·0`
-neighbors → ad·bar·blinded·cohort·follows·harmony·landmarks·memories·shipment·stat · ← ad·bar·blinded·cohort·follows·harmony·landmarks·memories·shipment·stat
+links `22/22` · folded `1` · bonds in `35` out `34`
+faces worker·plugin·pwa `1·0·0`
+neighbors → atom·bahai·brainstorm·christianity·collapse·count·diamond·digit·engineering·expand·fs·gnosticism·gravity·hermeticism·hinduism·islam·judaism·kabbalah·law·linearity·literature·merge·protestantism·religion·sikhism·sti·taoism·text·topography·translate·translation·typography·vocabulary·word · ← atom·bahai·brainstorm·christianity·collapse·count·diamond·digit·digit·engineering·expand·fs·gnosticism·gravity·hermeticism·hinduism·islam·judaism·kabbalah·law·linearity·literature·merge·protestantism·religion·sikhism·sti·taoism·text·topography·translate·translation·typography·vocabulary·word
 analysis diamond
 law a word token is one lexical [[diamond]] — content-addressed as uuid(jcs({ kind:'word', value })), saved in the [[text]] index, never materialized as one src/ folder per English word.
 
 ---
 
-<sub>content-uuid `5c570c98-4564-8d91-a7f5-8d0defab7b9a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `fbacf773-4d6d-8edc-a441-0f4ee83bda2a` · `pnpm readme` · `pnpm computed:check`</sub>

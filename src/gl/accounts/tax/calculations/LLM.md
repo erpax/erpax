@@ -3,8 +3,8 @@
 
 # calculations
 
-path `gl/accounts/tax/calculations` · uuid `b74b50ce-102c-8fda-8c30-6631e70fa44f` · diamond `96206d13-73cf-88d1-801b-068826a1951c`
-horo `5` `round` · trinity `1·1·1` · sealed `1`
+path `gl/accounts/tax/calculations` · uuid `ea9be5f6-017c-8191-8c4a-6855f6625946` · diamond `2559f315-74be-807b-ac65-cf8667fd6f18`
+horo `8` `crest` · trinity `1·1·1` · sealed `0`
 imports @/audit/trail/after/change·@/auth·@/auto/populate/created/by·@/auto/populate/tenant·@/auto/set/timestamp·@/base/accounting/field·@/utility · exports default · escapes —
 links `8/8` · folded `1` · bonds in `11` out `11`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law a tax calculation is a computed liability snapshot per period and jurisdicti
 
 ---
 
-<sub>content-uuid `087f465a-7ae6-858c-884a-0795148200cf` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a6c191e0-b6c4-8ebd-9ada-a8fc2ad7729b` · `pnpm readme` · `pnpm computed:check`</sub>

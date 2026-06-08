@@ -6,6 +6,8 @@
 
 ## [[debit]] · [[credit]]
 
+> account code `agent/ui` · currency `eb` (entropy-bit)
+
 | [[debit]] | [[credit]] |
 | -------- | --------- |
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
@@ -21,11 +23,66 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `explore:analytics/max-tamper-cost`
+- `explore:aura`
+- `explore:diamond`
+- `explore:hallucination`
+- `explore:purity`
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+
+### collapse
+
+- `balance:conserved`
+- `law:a UI agent renders identity, never paints. Every atom has a UI computed from its content-uuid — render and page — and the whole layer (pixel, component, design) agrees because it reads one identity, so nothing can drift. The trained agent covers the whole corpus: coverage 1, the aura is the corpus made visible.`
+- `seal:unsealed`
+- `trigger:Use when reasoning about the trained UI agent — it renders any atom to its UI (the sensory render + the page) from the atom's content-uuid, trained by the rendering teams on the whole rendering layer, covering the whole corpus because every atom has a UI.`
+- `trigger:a UI agent renders identity, never paints. Every atom has a UI computed from its content-uuid — render and page — and the whole layer (pixel, component, design) agrees because it reads one identity, so nothing can drift. The trained agent covers the whole corpus: coverage 1, the aura is the corpus made visible.`
+- `trigger:every facet computed from the atom's content-uuid; coverage read live from the matrix, never asserted`
+- `trigger:matter-twin:src/agent/ui/index.ts`
+- `trigger:the analog aura — every UI colour/sound is a projection of one content-uuid`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `e18149b8-5fce-86c6-9ce2-e447b3325779` · `e66af6a6-d549-8432-9b5e-8798b96b03d1`
+- content uuids `a0126a6a-be4a-897b-9a71-f292079973c0` · `afe6998d-c502-818c-9156-175bf9ba4a47`
+
+## [[entropy]] — gaps · seals
+
+> account code `agent/ui` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.2` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `1` eb | Σ seal `11.2` eb |
+
+> net residual `-10.2` eb · seal/gap ratio `11.2` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `agent` · sub-root `6c7e3159-1d51-809d-a4e0-83db8d6c35d5`
-- bond degree `28` · analysis neighbors `aura`
-- graph root `06810c2c-2396-831f-a2b3-a58706a17051`
+- partition `agent` · sub-root `1488bd5f-84f8-8dcb-9d93-550b9453341d`
+- bond degree `39` · analysis neighbors `analytics/max-tamper-cost` · `aura` · `diamond` · `hallucination` · `purity`
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
 
 ## [[cloudflare]] bindings
 
@@ -33,19 +90,55 @@
 
 ## [[standards]]
 
-- `every facet computed from the atom's content-uuid; coverage read live from the matrix` · banner
-- `every facet computed from the atom's content-uuid; coverage read live from the matrix, never asserted` · banner
 - `the analog aura — every UI colour/sound is a projection of one content-uuid` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·2 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
 
 ## analytics
 
-- bond degree `28` · sealed `0` · horo `2`
+- bond degree `39` · sealed `0` · horo `2`
 - variance `0` · balanced `1` · trinity sum `3`
-- bindings `0` · standards `3`
+- bindings `0` · standards `1`
 
 ## identity
 
-- uuid `551fe44f-61a6-84df-ada7-440b52fe1499`
+- uuid `5ad89eab-3599-8877-a328-18e2c8786cd6`
 - bonds in `9` · out `9`
 - trinity form·code·proof `1`·`1`·`1`
 - links `22` / `22`
@@ -57,4 +150,4 @@
 
 ---
 
-<sub>content-uuid `1b4c7802-b746-8419-aa8e-364ec69bc03a` · framed by typography partition `agent` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `83432de4-ea10-8e98-886d-6de7add10f51` · framed by typography partition `agent` bonds `39` · `pnpm readme` · `pnpm readme:check`</sub>

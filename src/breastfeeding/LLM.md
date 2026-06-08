@@ -3,8 +3,8 @@
 
 # breastfeeding
 
-path `breastfeeding` · uuid `3c556d9a-f492-8f4d-bdb5-56c989153bef` · diamond `23352d22-ad55-84c6-ae38-881ad4cd3103`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `breastfeeding` · uuid `e90e78c6-af10-8d4d-b40e-43fda2acd88c` · diamond `4a37f6c6-c800-8ed3-88e1-e935c05c0444`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·warning · exports breastfeeding · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law breastfeeding is one schema.org word, content-addressed; the same word colli
 
 ---
 
-<sub>content-uuid `406b16a2-ec11-8fc8-a4e9-7a6da0a0fc16` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `39c21516-8fb6-87e5-863d-552eaeeab4a3` · `pnpm readme` · `pnpm computed:check`</sub>

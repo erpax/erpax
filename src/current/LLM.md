@@ -3,8 +3,8 @@
 
 # current
 
-path `current` · uuid `cf315546-05d3-824e-9f08-a91c612c2003` · diamond `cef47526-c972-8ae7-9770-5ef5eb86859c`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `current` · uuid `3024cd62-2dfd-8d16-a7cb-558cc4159e57` · diamond `5b4e9d7c-8bde-827e-b33a-7fb1bf9efacd`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·exchange·law·merge·rate·sti · exports current · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law current is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `37d852d0-78c4-804b-9e6a-dcf9fd09d99f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e72c2a0a-6cc3-8c61-a8b0-69697dc3e96d` · `pnpm readme` · `pnpm computed:check`</sub>

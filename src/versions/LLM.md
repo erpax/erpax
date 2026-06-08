@@ -3,15 +3,15 @@
 
 # versions
 
-path `versions` · uuid `ca2e22c2-4266-86b4-96db-880f338baa99` · diamond `89a9cda9-c266-82c7-b6d7-a143eef2c846`
+path `versions` · uuid `ca2e22c2-4266-86b4-96db-880f338baa99` · diamond `9c0fc093-21f6-8de6-9bac-099f8f33ff41`
 horo `5` `round` · trinity `1·0·1` · sealed `1`
 imports access·akashic·angel·horo·law·localize·merge·proof·tamper·uuid · exports versions · escapes —
-links `14/14` · folded `1` · bonds in `6` out `6`
+links `14/14` · folded `1` · bonds in `39` out `39`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·dataprotection·landmarks·memories·stat·thing · ← cohort·dataprotection·landmarks·memories·stat·thing
+neighbors → access·akashic·angel·audit·begin·close·collections·conversion·cost·currency·date·defence·deploy·dimension·education·end·fs·horo·identity·law·localize·measure·merge·open·pages·period·phase·policies·posts·proof·rate·receipts·sequence·signal·snapshot·tamper·tax·uuid·whole · ← access·akashic·angel·audit·begin·close·collections·conversion·cost·currency·date·defence·deploy·dimension·education·end·fs·horo·identity·law·localize·measure·merge·open·pages·period·phase·policies·posts·proof·rate·receipts·sequence·signal·snapshot·tamper·tax·uuid·whole
 analysis —
 law all is versioned because every content-uuid'd entity already is — a version is a content-addressed leaf ([[uuid]]: change content ⇒ new leaf, identical content ⇒ same leaf, [[merge]]), read three ways (version · [[tamper]]-cost · analytics) with no new storage.
 
 ---
 
-<sub>content-uuid `c329b423-b8cd-8b37-b2dc-acee1e44ad5b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `693ca7a6-5b9b-8c71-a6e2-c7e39000ad81` · `pnpm readme` · `pnpm computed:check`</sub>

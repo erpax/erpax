@@ -23,7 +23,21 @@
 
 - partition `festival` · sub-root `1848c048-c6fa-8f3a-bfaf-e94c64a7b8aa`
 - bond degree `6` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `6` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `b716ed0a-0d68-8047-90f2-a858197bfb36` · framed by typography partition `festival` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c919dcc6-4087-811d-a2ed-e331b41d639a` · framed by typography partition `festival` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>

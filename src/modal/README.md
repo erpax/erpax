@@ -25,7 +25,25 @@
 
 - partition `modal` · sub-root `7f1ecdee-0bed-85eb-a654-627f91420f4b`
 - bond degree `3` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ECMA-262` · catalogue
+- `EU-2024/1183` · catalogue
+- `EU-2024/1620` · catalogue
+- `EU-2024/1624` · catalogue
+- `EU-CSDDD-2024/1760` · catalogue
+
+## analytics
+
+- bond degree `3` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `5`
 
 ## identity
 
@@ -41,4 +59,4 @@
 
 ---
 
-<sub>content-uuid `d76cf6dc-fceb-8e8b-831c-9c91f53d582d` · framed by typography partition `modal` bonds `3` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `bc53c77d-d151-8b13-b1ff-ac4d76e841e9` · framed by typography partition `modal` bonds `3` · `pnpm readme` · `pnpm readme:check`</sub>

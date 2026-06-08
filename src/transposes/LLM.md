@@ -3,15 +3,15 @@
 
 # transposes
 
-path `transposes` · uuid `1292b749-caa0-841c-a4d1-973f6f92e118` · diamond `7fcc6ba3-2793-87e8-9576-ade74a973b32`
+path `transposes` · uuid `1292b749-caa0-841c-a4d1-973f6f92e118` · diamond `199f88b7-0ccf-8afd-b16c-d8f76a245c80`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·legislation·merge·sti · exports transposes · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·legislation·merge·sti · ← collapse·law·legislation·merge·sti
 analysis —
 law transposes is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `485360ed-72cc-887e-a246-d57fba1dc316` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `64a7063c-8080-8dbd-91d5-93cd65b62b85` · `pnpm readme` · `pnpm computed:check`</sub>

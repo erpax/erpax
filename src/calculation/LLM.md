@@ -3,8 +3,8 @@
 
 # calculation
 
-path `calculation` · uuid `4e1c4b6c-fd03-86d9-b0f7-88cddce0bef5` · diamond `924d9698-78c5-8b7e-a29f-81bdbf111a57`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `calculation` · uuid `3a09d447-90fa-85b6-9214-a07139a6e79f` · diamond `23a59a59-a14c-8a28-a546-ae07d08f6e65`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports balance·calculations·math · exports calculation · escapes —
 links `6/6` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `6edf3177-4443-84aa-b755-a24e1ea12808` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b1eb738f-a220-8e57-9c55-5bdde6f4223d` · `pnpm readme` · `pnpm computed:check`</sub>

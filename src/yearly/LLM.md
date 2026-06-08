@@ -3,15 +3,15 @@
 
 # yearly
 
-path `yearly` · uuid `e607e86b-9300-8ac1-bb55-1bf0a5bfb8c6` · diamond `6133e766-f8d3-86a4-b6fc-c3956c25ae94`
+path `yearly` · uuid `e607e86b-9300-8ac1-bb55-1bf0a5bfb8c6` · diamond `6672ff41-38ce-8dfe-a0bc-117210a240df`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·revenue·sti · exports yearly · escapes —
-links `5/5` · folded `1` · bonds in `0` out `0`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
+neighbors → collapse·law·merge·revenue·sti · ← collapse·law·merge·revenue·sti
 analysis —
 law yearly is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `a2903383-79c5-8211-81b9-53bad9face7d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `76f7cded-6c28-8a8b-8adf-4e50d0472089` · `pnpm readme` · `pnpm computed:check`</sub>

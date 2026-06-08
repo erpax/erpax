@@ -3,8 +3,8 @@
 
 # deadline
 
-path `deadline` · uuid `1bc7fc2d-e6d6-8034-9584-3d97b4b946a9` · diamond `9c5de4df-adc8-84dd-9f6d-23e582bced6f`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `deadline` · uuid `a94134bd-a5d5-88a2-8d90-86278576fd66` · diamond `63ae29bc-33cf-845c-8849-e8c9b3350e04`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports application·collapse·law·merge·sti · exports deadline · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law deadline is one schema.org word, content-addressed; the same word collides e
 
 ---
 
-<sub>content-uuid `f116045f-2818-85e2-9c48-6555d0c6d6c0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3207adbe-a04d-8c89-b26a-1c43bcd7471e` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,8 +3,8 @@
 
 # available
 
-path `available` · uuid `05e25912-3ef8-8ec4-87ec-29d6ce8ff91f` · diamond `837364c5-cbe6-8190-88bc-8e0227dc071b`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `available` · uuid `09a1e5b4-cac6-827f-8fe3-44b1e9731210` · diamond `8bf1336e-3761-82eb-82d3-457300868a9b`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports accommodation·channel·delivery·device·generically·hours·language·law·method·number·service·strength·test·through·units · exports available · escapes —
 links `15/15` · folded `1` · bonds in `15` out `15`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law available is one schema.org word, content-addressed; the same word collides 
 
 ---
 
-<sub>content-uuid `49be3a4c-31da-8e73-80ee-a31ea55774fd` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `45b247d2-0c47-8628-a149-bc069b60117b` · `pnpm readme` · `pnpm computed:check`</sub>

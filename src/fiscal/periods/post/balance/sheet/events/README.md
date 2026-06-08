@@ -2,9 +2,11 @@
 
 # events
 
-> atom `fiscal/periods/post/balance/sheet/events` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
+> atom `fiscal/periods/post/balance/sheet/events` · horo `2` `share` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `fiscal/periods/post/balance/sheet/events` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,24 +23,131 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `law:an event after the reporting date is either adjusting (IAS 10 §8 — book it) or non-adjusting (§10 — disclose only); the classification, fixed by whether it evidences a condition existing at the reporting date, decides whether a journal entry is posted.`
+- `seal:unsealed`
+- `trigger:Use when capturing events between the reporting date and FS-authorisation date — classifying them as adjusting (IAS 10 §8 — book) or non-adjusting (§10 — disclose); assessing going-concern impact; linking booked journal entries; meeting §21 disclosure requirements. The IAS 10 subsequent-events register.`
+- `trigger:an event after the reporting date is either adjusting (IAS 10 §8 — book it) or non-adjusting (§10 — disclose only); the classification, fixed by whether it evidences a condition existing at the reporting date, decides whether a journal entry is posted.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `2161a0d0-208a-896b-900a-ce550937b5e4` · `7bc07abb-824f-8b45-910f-bcfd1277c03b` · `ddd9648f-d4a0-8928-82a5-adb903c84478`
+- content uuids `720cf52f-01b3-8ad9-88d2-038e33adfcac` · `7ae9d19e-1477-8e3d-a54c-402d8f74e650` · `fcc1f6f7-a8c5-8173-ba53-2712a5878a96`
+
+## [[entropy]] — gaps · seals
+
+> account code `fiscal/periods/post/balance/sheet/events` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.2` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `2` eb | Σ seal `11.2` eb |
+
+> net residual `-9.2` eb · seal/gap ratio `5.6` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `fiscal` · sub-root `cf5aa98e-ebac-8e2a-ac4c-50b4ac28b0e6`
-- bond degree `80` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- partition `fiscal` · sub-root `750f5b34-3dbd-8426-a310-55cde4a93bd3`
+- bond degree `54` · analysis neighbors —
+- graph root `a0b4e6a6-0230-8b95-a98c-2d4cf71fcc77`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `IFRS IAS-10 §10 non-adjusting-events-disclose` · banner
+- `IFRS IAS-10 §17 going-concern-after-reporting-date` · banner
+- `IFRS IAS-10 §21 disclosure-requirements` · banner
+- `IFRS IAS-10 §3 adjusting-vs-non-adjusting-events` · banner
+- `IFRS IAS-10 §8 adjusting-events-recognise` · banner
+- `ISO-4217:2015 currency-codes` · banner
+- `ISO-8601-1:2019 date-time event-date authorisation-date` · banner
+- `SOX §404 internal-controls TOM-CL-03` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·2 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `54` · sealed `0` · horo `2`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `8`
 
 ## identity
 
-- uuid `6197c33f-5deb-8007-bd53-cf9866a7afb3`
-- bonds in `23` · out `27`
+- uuid `fa605346-3e46-8164-9047-7afa8c16746a`
+- bonds in `12` · out `12`
 - trinity form·code·proof `1`·`1`·`1`
 - links `4` / `4`
 - folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `ac9c15c8-6bfc-87e7-b69b-81bb05cc271b` · framed by typography partition `fiscal` bonds `80` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c3db7fb1-0ee4-8814-862d-4defd041053e` · framed by typography partition `fiscal` bonds `54` · `pnpm readme` · `pnpm readme:check`</sub>

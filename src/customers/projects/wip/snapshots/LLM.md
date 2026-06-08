@@ -3,15 +3,15 @@
 
 # snapshots
 
-path `customers/projects/wip/snapshots` · uuid `f4bd1b21-dd8c-88d7-bbce-a530c718983c` · diamond `bc935429-3235-8992-b6ff-090921c1fb54`
-horo `4` `weave` · trinity `1·1·1` · sealed `1`
+path `customers/projects/wip/snapshots` · uuid `23f12d2c-5fb9-8adf-86f4-334ceb670d08` · diamond `c02bb7c7-7df7-8055-9890-0374de660e28`
+horo `7` `descent` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/chain/event/emitter·@/standard/collection/hook · exports default · escapes —
-links `7/7` · folded `1` · bonds in `10` out `12`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `1·0·0`
-neighbors → access·accounting·adjustments·identity·law·law·periods·projects·proof·standard·standard·transaction · ← access·accounting·adjustments·identity·law·periods·projects·proof·standard·transaction
+neighbors → accounting·adjustments·law·periods·projects·standard·transaction · ← accounting·adjustments·law·periods·projects·standard·transaction
 analysis —
 law each closed period freezes one immutable WIP valuation per project (cost-to-date, EAC, % complete, contract asset/liability) whose accrual JE balances — a sealed snapshot, never re-opened or recomputed.
 
 ---
 
-<sub>content-uuid `b3816c48-27db-81a1-9c8b-c4d0085ba0d3` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f55f3ff4-0a40-8b7e-8690-cf103309bb95` · `pnpm readme` · `pnpm computed:check`</sub>

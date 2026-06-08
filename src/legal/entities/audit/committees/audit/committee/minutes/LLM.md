@@ -3,8 +3,8 @@
 
 # minutes
 
-path `legal/entities/audit/committees/audit/committee/minutes` · uuid `805dd840-d31a-89b2-8b54-9cba43df7939` · diamond `dffd7d91-e438-8ee0-ae8e-063f30f54d60`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+path `legal/entities/audit/committees/audit/committee/minutes` · uuid `001c67e4-5738-88cb-9a21-c0084ba1dfd0` · diamond `3d1e3d26-6ef8-8a1f-baff-a0885275f56c`
+horo `5` `round` · trinity `1·1·1` · sealed `0`
 imports @/role/based/access · exports const · escapes —
 links `1/1` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `b2f31f2a-7ba3-8eb2-b712-ba0869bfaea7` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `cf490606-c047-80a5-b6b4-dd563b3374d6` · `pnpm readme` · `pnpm computed:check`</sub>

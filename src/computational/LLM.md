@@ -3,7 +3,7 @@
 
 # computational
 
-path `computational` · uuid `1ba7b584-169c-8c9f-aede-31a053020677` · diamond `ddb74855-1b39-873c-8eab-1b0bf37cbae3`
+path `computational` · uuid `a833aeb4-0d29-8a91-970a-c6c8e8fa0f01` · diamond `8462eb0b-e2e9-8098-b5fd-1a900b80d410`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports computational · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
@@ -14,4 +14,4 @@ law computational is one schema.org word, content-addressed; the same word colli
 
 ---
 
-<sub>content-uuid `e6351f1b-0ba0-8bb2-ad08-6a17f780d055` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `518a7f73-b799-8027-8a87-df0a8c555060` · `pnpm readme` · `pnpm computed:check`</sub>

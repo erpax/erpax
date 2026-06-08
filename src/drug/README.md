@@ -23,7 +23,7 @@
 
 - partition `drug` · sub-root `6e036fb0-6ddc-87d6-ade9-afd1cb981d51`
 - bond degree `60` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `c8136cbe-d730-8a85-afab-ff310be50a7e` · framed by typography partition `drug` bonds `60` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0c61d566-1552-8894-bf30-67c70866f8fc` · framed by typography partition `drug` bonds `60` · `pnpm readme` · `pnpm readme:check`</sub>

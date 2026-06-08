@@ -3,8 +3,8 @@
 
 # area
 
-path `area` · uuid `fe50a610-c16b-854e-9580-b7dd9ed81aa1` · diamond `5b68c120-20ad-89cc-ae07-c2c3c3f1713e`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `area` · uuid `9e4a21cf-8c5e-865f-8c82-5c1108865137` · diamond `3099a6c5-6844-8309-bc70-8b5edf67b906`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports administrative·geographic·law·served·service · exports area · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law area is one schema.org word, content-addressed; the same word collides every
 
 ---
 
-<sub>content-uuid `9d69db0c-6e03-8a46-a13f-0dc313d1969f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0b3a0439-49b4-8fdb-b140-769ff2f9d241` · `pnpm readme` · `pnpm computed:check`</sub>

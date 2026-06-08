@@ -3,15 +3,15 @@
 
 # taxonomy
 
-path `taxonomy` · uuid `a8613894-8011-8587-a593-0d7363a191ce` · diamond `a189303c-782c-89bc-ae72-4882603173c1`
+path `taxonomy` · uuid `a8613894-8011-8587-a593-0d7363a191ce` · diamond `fd4723a6-9583-8daf-bbe2-31744bef0038`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports agriculture·crop·dimension·family·fertility·fractal·identity·rotation·variant · exports taxonomy · escapes —
-links `19/19` · folded `1` · bonds in `8` out `8`
+links `19/19` · folded `1` · bonds in `16` out `16`
 faces worker·plugin·pwa `0·0·0`
-neighbors → agent·cooking·document·id·inverse·progression·taxonomic·transactions · ← agent·cooking·document·id·inverse·progression·taxonomic·transactions
+neighbors → agriculture·aquaculture·breed·classification·crop·dimension·family·fertility·fractal·graft·hardiness·identity·rootstock·rotation·scion·variant · ← agriculture·aquaculture·breed·classification·crop·dimension·family·fertility·fractal·graft·hardiness·identity·rootstock·rotation·scion·variant
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `f36a85bc-62bb-8cd7-a9a0-e8f48953e56c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `90519775-cf14-8362-a9ab-858cdec2aaa9` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -1,8 +1,51 @@
 ---
-name: "t"
+name: t
 description: "Use when implementing or referencing OECD SAF-T — Standard Audit File for Tax."
+atomPath: saf/t
+coordinate: saf/t · 1/base · 9a41197f
+contentUuid: "5167563a-51ff-5929-8601-c14a1f796ed8"
+diamondUuid: "40aca2c2-87b6-8a83-bcdd-046ac8d930ef"
+uuid: "9a41197f-0134-8af5-a98e-84006f0d83a3"
+horo: 1
+bonds:
+  in:
+    - law
+  out:
+    - law
+typography:
+  partition: saf
+  bondDegree: 0
+  neighbors: []
+standards:
+  - "OECD SAF-T 2.0 standard-audit-file-for-tax"
+  - "SAF-T"
+bindings: []
+neighbors:
+  wikilink:
+    - law
+  matrix:
+    - law
+  backlinks:
+    - law
+signatures:
+  computationUuid: "331dc2ec-4255-86ac-9312-e87f00b87c69"
+  stages:
+    - stage: path
+      stageUuid: "ba188100-552c-8994-b928-6f44f4117880"
+    - stage: trinity
+      stageUuid: "817588bc-3b36-89de-b19c-8e72298a746c"
+    - stage: boundary
+      stageUuid: "837089db-873d-8c8f-b559-d274fc064a4a"
+    - stage: links
+      stageUuid: "683f77c1-65eb-8060-b4f9-069de7d56c61"
+    - stage: horo
+      stageUuid: "27e9cf84-e002-89dc-bd90-ce21b351bd83"
+    - stage: seal
+      stageUuid: "e816edec-46e3-8dc2-8bdf-f4a177ed4ff4"
+    - stage: uuid
+      stageUuid: "08189f4b-ff66-89d5-9955-69e88a6db4af"
+version: 2
 ---
-
 # OECD SAF-T — Standard Audit File for Tax
 
 **Edition:** OECD SAF-T 2.0 (May 2005, current OECD reference). Country variants (PT 1.04, NO 1.10, LU 2.0, RO D406) extend this baseline with national tax codes and required tables.

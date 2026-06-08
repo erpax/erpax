@@ -1,7 +1,7 @@
 /**
  * Invariant tests for the shared standards catalogue — the uuid-native index
  * where the dissolved @standard vocabulary meets (registry ⊕ banners). Co-located
- * with the atom it proves; the generator (scripts/standards-catalogue.ts) is held
+ * with the atom it proves; the generator (src/standards/emit.ts) is held
  * to these by construction.
  *
  * @standard ISO/IEC-29119:2022 software-testing (invariant coverage)

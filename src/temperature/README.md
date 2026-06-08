@@ -24,13 +24,13 @@
 ## typography graph
 
 - partition `temperature` · sub-root `bd794a90-138b-8eef-9077-dbf55d3c43df`
-- bond degree `22` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `26` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `bd794a90-138b-8eef-9077-dbf55d3c43df`
-- bonds in `6` · out `6`
+- bonds in `8` · out `8`
 - trinity form·code·proof `1`·`1`·`1`
 - links `16` / `16`
 - folded `1` · escapes `0`
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `487455b9-23cb-807d-a4ee-751c14728ade` · framed by typography partition `temperature` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `13c97eeb-68f4-8b5d-b830-4e4efe561fd5` · framed by typography partition `temperature` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>

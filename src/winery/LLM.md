@@ -3,15 +3,15 @@
 
 # winery
 
-path `winery` · uuid `f3df3d0f-f5a4-8f7e-9ac9-cd4ca6941aa0` · diamond `9bbae3a0-2460-8e2f-ac82-70955ad26380`
+path `winery` · uuid `f3df3d0f-f5a4-8f7e-9ac9-cd4ca6941aa0` · diamond `752676fc-335c-80cb-88be-d32dc4803164`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports winery · escapes —
-links `2/2` · folded `1` · bonds in `12` out `12`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·approved·equals·events·fertility·holographic·landmarks·researcher·text·update·width·window · ← access·approved·equals·events·fertility·holographic·landmarks·researcher·text·update·width·window
+neighbors → law·thing · ← law·thing
 analysis —
 law winery is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `85e76ccd-7ca9-8bc5-94dc-bea20a5a0397` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c7318baf-7c71-88fe-92b7-1c3bcfdada8d` · `pnpm readme` · `pnpm computed:check`</sub>

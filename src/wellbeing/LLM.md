@@ -3,15 +3,15 @@
 
 # wellbeing
 
-path `wellbeing` · uuid `6a5203ac-c24e-89c3-b4ca-5283a6be8e74` · diamond `d0cff22d-7d6d-8ea4-80f3-518c0b43b26d`
+path `wellbeing` · uuid `6a5203ac-c24e-89c3-b4ca-5283a6be8e74` · diamond `8d7231ab-7eff-80ae-842e-b16c4fcf348e`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports age·aggregation·allocation·angel·balance·bottleneck·career·cohort·crisis·decompression·dimension·duality·entry·health·law·market·measure·society·time · exports wellbeing · escapes —
-links `44/44` · folded `1` · bonds in `18` out `17`
+links `44/44` · folded `1` · bonds in `19` out `19`
 faces worker·plugin·pwa `0·0·0`
-neighbors → boys·cohort·dietary·exemplifies·friday·grant·landmarks·ligament·memories·pipelines·quantity·resume·security·stat·tinid·tracks·trade · ← boys·cohort·dietary·dietary·exemplifies·friday·grant·landmarks·ligament·memories·pipelines·quantity·resume·security·stat·tinid·tracks·trade
+neighbors → age·aggregation·allocation·angel·balance·bottleneck·career·cohort·crisis·decompression·dimension·duality·entry·health·law·market·measure·society·time · ← age·aggregation·allocation·angel·balance·bottleneck·career·cohort·crisis·decompression·dimension·duality·entry·health·law·market·measure·society·time
 analysis —
 law wellbeing is the emergent composite a [[society]] is measured by — read as capabilities not income, mostly compensatory across [[dimension]]s but with non-compensatory floors where the [[bottleneck]] law returns; it is the credit side the ledger exists to fund.
 
 ---
 
-<sub>content-uuid `a2bec7d6-6eef-8050-adcd-7a042d2ce383` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c69354d9-c146-8cdc-ac93-32b25b0423ce` · `pnpm readme` · `pnpm computed:check`</sub>

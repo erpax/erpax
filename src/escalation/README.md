@@ -23,7 +23,21 @@
 
 - partition `escalation` · sub-root `83165e48-da96-8344-8c70-d0204ac54a63`
 - bond degree `28` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `28` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `00a0c230-c395-8440-88a8-6c38abef6bb1` · framed by typography partition `escalation` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `19b15962-9c6b-8b11-b4d0-c04d2ecba70e` · framed by typography partition `escalation` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>

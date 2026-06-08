@@ -3,8 +3,8 @@
 
 # declaration
 
-path `declaration` · uuid `c74775ee-36fb-8a33-a205-134cc6626e8b` · diamond `1e977932-fbee-8911-af20-2c197b6a1609`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `declaration` · uuid `578cbc25-c5a3-89a9-baec-11183a83c4ac` · diamond `7303ef99-80c6-8d80-9ecd-90278ab1b18e`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports balance·declarations·legal · exports declaration · escapes —
 links `6/6` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `8e7c01ef-8e42-8055-8447-ad82a2be678a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3f6f35cf-eda4-87f3-b11d-b4cdcf88ed8f` · `pnpm readme` · `pnpm computed:check`</sub>

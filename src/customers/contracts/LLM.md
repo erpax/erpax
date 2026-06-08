@@ -3,15 +3,15 @@
 
 # contracts
 
-path `customers/contracts` · uuid `527206ca-0fa5-833f-9afb-6703f2a74806` · diamond `343212fc-c432-8f1c-b652-92f4a06ffb88`
-horo `1` `base` · trinity `1·1·1` · sealed `1`
+path `customers/contracts` · uuid `466abf44-407e-8a6b-baa6-a9be8d04b628` · diamond `038ec629-2d43-879b-a036-7ed688c79530`
+horo `7` `descent` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/auto/set/timestamp·@/base/accounting/field·@/enforce/segregation/of/duty·@/standard/collection/hook · exports default · escapes —
-links `5/5` · folded `1` · bonds in `32` out `32`
+links `5/5` · folded `1` · bonds in `27` out `27`
 faces worker·plugin·pwa `1·0·0`
-neighbors → accounting·amendment·amendments·assignment·auditright·clause·confidentiality·consent·contract·dataprotection·deferredrevenue·disputeresolution·entry·forcemajeure·governinglaw·indemnity·jurisdiction·law·liability·license·measurements·obligations·orders·performances·proof·remediation·restriction·revenue·signatures·termination·transaction·warranty · ← accounting·amendment·amendments·assignment·auditright·clause·confidentiality·consent·contract·dataprotection·deferredrevenue·disputeresolution·entry·forcemajeure·governinglaw·indemnity·jurisdiction·law·liability·license·measurements·obligations·orders·performances·proof·remediation·restriction·revenue·signatures·termination·transaction·warranty
+neighbors → amendment·amendments·assignment·auditright·clause·confidentiality·consent·contract·dataprotection·deferredrevenue·disputeresolution·forcemajeure·governinglaw·indemnity·jurisdiction·law·liability·license·obligations·orders·performances·remediation·restriction·revenue·signatures·termination·warranty · ← amendment·amendments·assignment·auditright·clause·confidentiality·consent·contract·dataprotection·deferredrevenue·disputeresolution·forcemajeure·governinglaw·indemnity·jurisdiction·law·liability·license·obligations·orders·performances·remediation·restriction·revenue·signatures·termination·warranty
 analysis —
 law the transaction price decomposes into fixed, variable, and financing components that sum to the contract total, and no revenue is recognised before approval.
 
 ---
 
-<sub>content-uuid `a4768105-fff3-8506-82e6-876e21df39e8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2d06212e-8450-8283-873a-06df3e4f306d` · `pnpm readme` · `pnpm computed:check`</sub>

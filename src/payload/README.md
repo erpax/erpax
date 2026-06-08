@@ -2,7 +2,7 @@
 
 # payload
 
-> atom `payload` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
+> atom `payload` · horo `5` `round` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -19,13 +19,27 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `2` · [[conservation]] `0` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `payload` · sub-root `fff1cd42-9f30-8151-8e61-e5d925926388`
-- bond degree `111` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- bond degree `0` · analysis neighbors —
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `UBL-2.1` · catalogue
+
+## analytics
+
+- bond degree `0` · sealed `0` · horo `5`
+- variance `2` · balanced `0` · trinity sum `3`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -37,8 +51,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `59e35536-0d00-8266-b2a9-ee5885e9f31e` · framed by typography partition `payload` bonds `111` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `aa9efb3b-bf30-804c-ad34-c29ad3ce0d2b` · framed by typography partition `payload` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

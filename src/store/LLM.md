@@ -3,15 +3,15 @@
 
 # store
 
-path `store` · uuid `cbddec61-ba3e-80d0-8924-bb5bdcd3dc3a` · diamond `f4da1654-e740-8c9a-892c-0512f78aac36`
+path `store` · uuid `cbddec61-ba3e-80d0-8924-bb5bdcd3dc3a` · diamond `245aeddb-8a14-87a1-afd4-de7708490099`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports auto·bike·book·clothing·computer·convenience·department·electronics·equipment·furniture·garden·goods·grocery·hardware·has·home·jewelry·law·liquor·mens·mobile·movie·music·offered·office·online·outlet·parts·pet·phone·rental·returns·shoe·sporting·toy·wholesale · exports store · escapes —
-links `36/36` · folded `1` · bonds in `6` out `6`
+links `36/36` · folded `1` · bonds in `36` out `36`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·pronoun·sanitization·stat · ← cohort·landmarks·memories·pronoun·sanitization·stat
+neighbors → auto·bike·book·clothing·computer·convenience·department·electronics·equipment·furniture·garden·goods·grocery·hardware·has·home·jewelry·law·liquor·mens·mobile·movie·music·offered·office·online·outlet·parts·pet·phone·rental·returns·shoe·sporting·toy·wholesale · ← auto·bike·book·clothing·computer·convenience·department·electronics·equipment·furniture·garden·goods·grocery·hardware·has·home·jewelry·law·liquor·mens·mobile·movie·music·offered·office·online·outlet·parts·pet·phone·rental·returns·shoe·sporting·toy·wholesale
 analysis —
 law store is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `95c80176-af42-8e8e-8274-82d30c635064` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8f8e0b1c-bbd6-8b07-a21f-efb0fba1241b` · `pnpm readme` · `pnpm computed:check`</sub>

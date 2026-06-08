@@ -3,15 +3,15 @@
 
 # software
 
-path `software` · uuid `da356f49-e12a-842f-aaf0-dcfcc3c52808` · diamond `a61945c3-deea-8068-ba32-d9b8ebb11ad1`
+path `software` · uuid `da356f49-e12a-842f-aaf0-dcfcc3c52808` · diamond `a627fcaa-a47d-8b5a-a570-85d7940f4087`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports add·application·code·collapse·help·law·merge·requirements·source·sti·version · exports software · escapes —
-links `11/11` · folded `1` · bonds in `4` out `4`
+links `11/11` · folded `1` · bonds in `11` out `11`
 faces worker·plugin·pwa `0·0·0`
-neighbors → balance·landmarks·lnid·promotional · ← balance·landmarks·lnid·promotional
+neighbors → add·application·code·collapse·help·law·merge·requirements·source·sti·version · ← add·application·code·collapse·help·law·merge·requirements·source·sti·version
 analysis —
 law software is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `239d9579-a77f-86d4-b9c9-197ee74a2ef5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ae52a3ec-54ec-88f6-8313-22bc8c08aba8` · `pnpm readme` · `pnpm computed:check`</sub>

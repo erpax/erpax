@@ -3,8 +3,8 @@
 
 # denominator
 
-path `denominator` · uuid `b609e8f1-a401-82ba-b5c5-8c145dd18f82` · diamond `2975efb4-78a1-89c8-9040-ab6f408cb882`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `denominator` · uuid `39607874-3a7d-8d69-be95-5877236f49a1` · diamond `9481f174-bc7b-8794-86e7-8a061be32d90`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·measurement·merge·sti · exports denominator · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law a denominator only has meaning paired with its numerator — it names the ba
 
 ---
 
-<sub>content-uuid `c39aaa6a-0cbc-8c41-b9f0-3a091898ec98` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `bb74e0b8-f9f5-87e7-be8e-2ded57f7dbcf` · `pnpm readme` · `pnpm computed:check`</sub>

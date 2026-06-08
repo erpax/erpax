@@ -3,15 +3,15 @@
 
 # sugar
 
-path `sugar` · uuid `dfed5419-7176-89e0-9c49-41e876eb9089` · diamond `043f0f36-08fc-8b2c-afa4-8a918693b208`
+path `sugar` · uuid `dfed5419-7176-89e0-9c49-41e876eb9089` · diamond `b6b92152-d2eb-8824-8836-fb59432c8a14`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·content·law·merge·sti · exports sugar · escapes —
-links `5/5` · folded `1` · bonds in `3` out `3`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → blog·hostel·landmarks · ← blog·hostel·landmarks
+neighbors → collapse·content·law·merge·sti · ← collapse·content·law·merge·sti
 analysis —
 law sugar is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `f3505aa8-102a-8637-8657-2f2b645963cf` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `cc072428-8aaa-8aa4-a81c-6732b3e45cd9` · `pnpm readme` · `pnpm computed:check`</sub>

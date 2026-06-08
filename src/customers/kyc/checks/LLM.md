@@ -3,8 +3,8 @@
 
 # checks
 
-path `customers/kyc/checks` · uuid `c2a92b07-4497-8693-908a-f4174b3fb17d` · diamond `b0df5ba9-37c8-841a-b155-6337e8f8abdd`
-horo `1` `base` · trinity `1·1·1` · sealed `1`
+path `customers/kyc/checks` · uuid `9afe6471-627f-8fb9-9dc5-863e4c78713c` · diamond `800b863b-dceb-8811-9afe-d6f754b0cbab`
+horo `5` `round` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/auto/set/timestamp·@/base/accounting/field·@/enforce/segregation/of/duty·@/standard/collection/hook · exports default · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law due-diligence depth (SDD/CDD/EDD) must match the assessed risk rating, and n
 
 ---
 
-<sub>content-uuid `21ccde5f-66db-8598-bde8-156b3e4861d7` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ec033919-ba09-83db-b348-834bff399142` · `pnpm readme` · `pnpm computed:check`</sub>

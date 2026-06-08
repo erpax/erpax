@@ -3,15 +3,15 @@
 
 # sold
 
-path `sold` · uuid `7521078a-d8ab-813f-98df-b76d940b0123` · diamond `2b69cf4d-7fd9-86e3-9bb7-463d6e63bd58`
+path `sold` · uuid `7521078a-d8ab-813f-98df-b76d940b0123` · diamond `88f2bee5-8104-8fa1-842f-be2602b5379f`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports sold · escapes —
-links `4/4` · folded `1` · bonds in `6` out `6`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accessory·cohort·landmarks·memories·parent·stat · ← accessory·cohort·landmarks·memories·parent·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law sold is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `ee3b041c-7395-82f7-b6b4-aa890f079729` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `fd61752a-1fb3-8d14-873d-bf81e5fcf5fa` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -2,7 +2,7 @@
 
 # seal
 
-> atom `seal` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
+> atom `seal` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -23,16 +23,69 @@
 
 ## typography graph
 
-- partition `seal` · sub-root `b2f34d53-f985-8a70-95e5-7ffa287bab52`
-- bond degree `90` · analysis neighbors `purity`
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- partition `seal` · sub-root `19a6e79a-4941-8436-ad95-1156a3d8bfac`
+- bond degree `117` · analysis neighbors `purity`
+- graph root `7eecf209-2e8f-8c92-b8df-3d2a511684e8`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `/ signature lines when form is present.` · banner
+- `ISO/IEC 25010:2023 §5.5 testability — the decision is a pure function` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·8 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `117` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `2`
 
 ## identity
 
-- uuid `b2f34d53-f985-8a70-95e5-7ffa287bab52`
-- bonds in `28` · out `27`
+- uuid `19a6e79a-4941-8436-ad95-1156a3d8bfac`
+- bonds in `37` · out `37`
 - trinity form·code·proof `1`·`1`·`1`
-- links `23` / `23`
+- links `25` / `25`
 - folded `1` · escapes `0`
 
 ## [[seal]]
@@ -41,4 +94,4 @@
 
 ---
 
-<sub>content-uuid `05a80281-4775-8c91-bec8-5e5b00697308` · framed by typography partition `seal` bonds `90` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `734fb3ed-f81c-8b0e-8c40-39463ac03999` · framed by typography partition `seal` bonds `117` · `pnpm readme` · `pnpm readme:check`</sub>

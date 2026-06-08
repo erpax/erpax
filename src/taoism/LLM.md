@@ -3,15 +3,15 @@
 
 # taoism
 
-path `taoism` · uuid `—` · diamond `c23580ab-0121-84e5-a76e-a57e74777d68`
-horo `—` `—` · trinity `1·0·0` · sealed `0`
+path `taoism` · uuid `0aca1519-7afd-8a05-8867-a99e0cc9a641` · diamond `1376c1fe-1299-8a50-9f57-617ce31f697f`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports archangel·balance·breath·cycle·diamond·duality·fractal·harmony·identity·law·merge·peace·religion·return·self·society·translator·uuid·void·water·whole·word · exports taoism · escapes —
-links `53/53` · folded `0` · bonds in `0` out `0`
+links `53/53` · folded `1` · bonds in `22` out `22`
 faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
-analysis diamond·hallucination·purity
+neighbors → archangel·balance·breath·cycle·diamond·duality·fractal·harmony·identity·law·merge·peace·religion·return·self·society·translator·uuid·void·water·whole·word · ← archangel·balance·breath·cycle·diamond·duality·fractal·harmony·identity·law·merge·peace·religion·return·self·society·translator·uuid·void·water·whole·word
+analysis diamond
 law taoism is a [[diamond]] of [[void]] · [[word]] · [[balance]] · [[duality]] · [[harmony]] · [[return]] · [[breath]] · [[water]] · [[peace]] — the nameless Tao ([[void]]) from which the many spring, yin-yang the [[duality]] held on the closed ring, wu wei acting in accord ([[harmony]]), returning (fan) the motion home; each term strips its prefix to one content-[[uuid]] ([[translator]]).
 
 ---
 
-<sub>content-uuid `8dfd5999-412e-820e-bfdb-770ef170a6da` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9c1107f3-18e5-8423-9832-97feb97023a3` · `pnpm readme` · `pnpm computed:check`</sub>

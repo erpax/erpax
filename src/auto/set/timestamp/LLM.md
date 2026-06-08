@@ -3,15 +3,15 @@
 
 # timestamp
 
-path `auto/set/timestamp` · uuid `f1315e2f-dc98-82e5-8895-023111e49072` · diamond `e0570302-9afa-8e33-a326-aef079065552`
+path `auto/set/timestamp` · uuid `3dd9511a-e03b-8551-90ce-43f2271cc1b0` · diamond `c29483cc-fdd8-8706-ad84-513050eda34e`
 horo `8` `crest` · trinity `1·1·1` · sealed `0`
 imports — · exports function · escapes —
-links `5/5` · folded `1` · bonds in `5` out `6`
+links `5/5` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → audit·auto·hooks·law·law·thing · ← audit·auto·hooks·law·thing
+neighbors → law·thing · ← law·thing
 analysis —
 law a status-transition time is set once, server-side, in canonical UTC ISO-8601 — written only when the condition fires and the field is empty, so the event time is verifiable and cannot be silently restamped.
 
 ---
 
-<sub>content-uuid `0ea06ed2-7b58-8946-a764-c6bd9d41285b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d8ecd784-5ef3-8d12-91af-f5b0d3239139` · `pnpm readme` · `pnpm computed:check`</sub>

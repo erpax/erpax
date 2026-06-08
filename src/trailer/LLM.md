@@ -3,15 +3,15 @@
 
 # trailer
 
-path `trailer` · uuid `90666356-94ac-8a1b-8979-7e85f4881047` · diamond `b10a911e-0a0b-8995-a41e-14621bbb4bfd`
+path `trailer` · uuid `90666356-94ac-8a1b-8979-7e85f4881047` · diamond `ac8e23ab-99f3-835f-b63f-5edfb8724d5b`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports law·weight · exports trailer · escapes —
-links `2/2` · folded `1` · bonds in `6` out `6`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·memories·memory·trade·trading·traditional · ← landmarks·memories·memory·trade·trading·traditional
+neighbors → law·weight · ← law·weight
 analysis —
 law trailer is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `7134a393-5f5b-8bfe-b38f-6190e3775c78` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5828a514-66d7-8ba8-bde1-04da3ec9242e` · `pnpm readme` · `pnpm computed:check`</sub>

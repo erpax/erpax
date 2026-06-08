@@ -3,8 +3,8 @@
 
 # brow
 
-path `brow` · uuid `70d77f88-5a30-8820-9ce9-cff8a0e38a37` · diamond `84b44c7e-8ef3-8c53-a6e8-ac32f9f247b4`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+path `brow` · uuid `9cb707cc-bea8-8344-911a-49009e2edaee` · diamond `c2756a91-223c-812e-9206-fa8547c10532`
+horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports @/chakra · exports const · escapes —
 links `10/10` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law the brow is [[horo]] index 5 read straight from the computed seven [[chakra]
 
 ---
 
-<sub>content-uuid `4420d071-c526-8eb0-bbd5-977422777e28` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `52c37911-8eda-8429-9c2f-17bc15e5a092` · `pnpm readme` · `pnpm computed:check`</sub>

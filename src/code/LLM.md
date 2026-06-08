@@ -3,7 +3,7 @@
 
 # code
 
-path `code` · uuid `9fdd4e33-7f8d-8ecf-b18d-30f422a04f95` · diamond `ca502287-1ec9-8225-85a0-9591fcc6e545`
+path `code` · uuid `6f079482-c2ca-8812-9c87-9c73736192ee` · diamond `7e8ab448-a216-88ef-b896-8bbb9c3b9dc1`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports accounting·fields·hooks·identity·law · exports code · escapes —
 links `10/10` · folded `1` · bonds in `34` out `34`
@@ -14,4 +14,4 @@ law master-data carries a unique tenant-scoped `code` (derived from name when ab
 
 ---
 
-<sub>content-uuid `b7946e86-ee10-8764-ae34-286306dbb707` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a4878fa4-10a1-81ec-b2c8-78cf04144112` · `pnpm readme` · `pnpm computed:check`</sub>

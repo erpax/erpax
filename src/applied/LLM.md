@@ -3,8 +3,8 @@
 
 # applied
 
-path `applied` · uuid `af6477e6-e955-8616-8e5f-be1aa3359a9d` · diamond `1bd1ed60-315d-8a98-804a-bf580fd807ec`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `applied` · uuid `c9d3c9bc-05b3-8499-821e-503436dffd25` · diamond `157b48c6-82ba-8e15-9ef3-aacd08fbe69b`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports applied · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law applied is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `37dd124e-162d-8b2b-b611-889db5309e7b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5e28bcf9-0b12-8e32-bbc5-ce85021f446a` · `pnpm readme` · `pnpm computed:check`</sub>

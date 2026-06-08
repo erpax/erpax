@@ -1,120 +1,110 @@
 /**
  * QuickActionsWidget — admin shortcut tile for common accounting workflows.
- *
- * @standard ECMA-262 ECMAScript-2024 baseline
- * @standard WCAG-2.1 §2.1 keyboard-accessible
- * @audit ISO-19011:2018 audit-trail user-action-traceability
- * @compliance SOX §404 internal-controls
  */
-import React, { useState } from 'react';
+
+import React, { useState } from 'react'
 import {
   CreateInvoiceModal,
   CreateBillModal,
   CreateJournalEntryModal,
-} from '@/modal';
+} from '@/modal'
+import { Alert, AlertDescription, Button, Card, CardContent, CardHeader, CardTitle } from '@/ui'
 
 interface QuickActionsWidgetProps {
-  userRole: 'admin' | 'accountant';
+  userRole: 'admin' | 'accountant'
 }
 
-const QuickActionsWidget: React.FC<QuickActionsWidgetProps> = ({
-  userRole: _userRole,
-}) => {
-  const [showInvoiceModal, setShowInvoiceModal] = useState(false);
-  const [showBillModal, setShowBillModal] = useState(false);
-  const [showJournalEntryModal, setShowJournalEntryModal] = useState(false);
-  const [successMessage, setSuccessMessage] = useState<string | null>(null);
+const QuickActionsWidget: React.FC<QuickActionsWidgetProps> = ({ userRole: _userRole }) => {
+  const [showInvoiceModal, setShowInvoiceModal] = useState(false)
+  const [showBillModal, setShowBillModal] = useState(false)
+  const [showJournalEntryModal, setShowJournalEntryModal] = useState(false)
+  const [successMessage, setSuccessMessage] = useState<string | null>(null)
 
   const handleSuccess = (message: string) => {
-    setSuccessMessage(message);
-    setTimeout(() => setSuccessMessage(null), 5000);
-  };
+    setSuccessMessage(message)
+    setTimeout(() => setSuccessMessage(null), 5000)
+  }
 
   return (
-    <div className="bg-white rounded-lg shadow p-6 border border-gray-200 mb-6">
-      <h2 className="text-xl font-semibold mb-6">Quick Actions</h2>
+    <Card className="mb-6">
+      <CardHeader>
+        <CardTitle>Quick Actions</CardTitle>
+      </CardHeader>
+      <CardContent>
+        {successMessage ? (
+          <Alert className="mb-4 border-green-200 bg-green-50">
+            <AlertDescription className="text-green-800">{successMessage}</AlertDescription>
+          </Alert>
+        ) : null}
 
-      {successMessage && (
-        <div className="mb-4 p-3 bg-green-50 border border-green-200 rounded-md text-green-800">
-          {successMessage}
+        <div className="grid grid-cols-4 gap-4">
+          <ActionButton
+            icon="📄"
+            label="Create Invoice"
+            onClick={() => setShowInvoiceModal(true)}
+            description="Record customer sale"
+          />
+          <ActionButton
+            icon="📋"
+            label="Create Bill"
+            onClick={() => setShowBillModal(true)}
+            description="Record vendor purchase"
+          />
+          <ActionButton
+            icon="📓"
+            label="Journal Entry"
+            onClick={() => setShowJournalEntryModal(true)}
+            description="Manual GL entry"
+          />
+          <ActionButton
+            icon="🏦"
+            label="Bank Reconciliation"
+            onClick={() => alert('Bank reconciliation not yet implemented')}
+            description="Match GL to bank"
+            disabled
+          />
         </div>
-      )}
 
-      <div className="grid grid-cols-4 gap-4">
-        {/* Create Sales Invoice */}
-        <ActionButton
-          icon="📄"
-          label="Create Invoice"
-          onClick={() => setShowInvoiceModal(true)}
-          description="Record customer sale"
-        />
+        {showInvoiceModal ? (
+          <CreateInvoiceModal
+            onClose={() => setShowInvoiceModal(false)}
+            onSuccess={(msg: string) => {
+              handleSuccess(msg)
+              setShowInvoiceModal(false)
+            }}
+          />
+        ) : null}
 
-        {/* Create Vendor Bill */}
-        <ActionButton
-          icon="📋"
-          label="Create Bill"
-          onClick={() => setShowBillModal(true)}
-          description="Record vendor purchase"
-        />
+        {showBillModal ? (
+          <CreateBillModal
+            onClose={() => setShowBillModal(false)}
+            onSuccess={(msg: string) => {
+              handleSuccess(msg)
+              setShowBillModal(false)
+            }}
+          />
+        ) : null}
 
-        {/* Create Journal Entry */}
-        <ActionButton
-          icon="📓"
-          label="Journal Entry"
-          onClick={() => setShowJournalEntryModal(true)}
-          description="Manual GL entry"
-        />
-
-        {/* Bank Reconciliation */}
-        <ActionButton
-          icon="🏦"
-          label="Bank Reconciliation"
-          onClick={() => alert('Bank reconciliation not yet implemented')}
-          description="Match GL to bank"
-          disabled={true}
-        />
-      </div>
-
-      {/* Modals */}
-      {showInvoiceModal && (
-        <CreateInvoiceModal
-          onClose={() => setShowInvoiceModal(false)}
-          onSuccess={(msg: string) => {
-            handleSuccess(msg);
-            setShowInvoiceModal(false);
-          }}
-        />
-      )}
-
-      {showBillModal && (
-        <CreateBillModal
-          onClose={() => setShowBillModal(false)}
-          onSuccess={(msg: string) => {
-            handleSuccess(msg);
-            setShowBillModal(false);
-          }}
-        />
-      )}
-
-      {showJournalEntryModal && (
-        <CreateJournalEntryModal
-          onClose={() => setShowJournalEntryModal(false)}
-          onSuccess={(msg: string) => {
-            handleSuccess(msg);
-            setShowJournalEntryModal(false);
-          }}
-        />
-      )}
-    </div>
-  );
-};
+        {showJournalEntryModal ? (
+          <CreateJournalEntryModal
+            onClose={() => setShowJournalEntryModal(false)}
+            onSuccess={(msg: string) => {
+              handleSuccess(msg)
+              setShowJournalEntryModal(false)
+            }}
+          />
+        ) : null}
+      </CardContent>
+    </Card>
+  )
+}
 
 interface ActionButtonProps {
-  icon: string;
-  label: string;
-  description: string;
-  onClick: () => void;
-  disabled?: boolean;
+  icon: string
+  label: string
+  description: string
+  onClick: () => void
+  disabled?: boolean
 }
 
 const ActionButton: React.FC<ActionButtonProps> = ({
@@ -123,22 +113,18 @@ const ActionButton: React.FC<ActionButtonProps> = ({
   description,
   onClick,
   disabled,
-}) => {
-  return (
-    <button
-      onClick={onClick}
-      disabled={disabled}
-      className={`p-4 rounded-lg border-2 transition-colors ${
-        disabled
-          ? 'bg-gray-50 border-gray-200 text-gray-400 cursor-not-allowed'
-          : 'bg-blue-50 border-blue-300 hover:bg-blue-100 hover:border-blue-400 text-gray-800 cursor-pointer'
-      }`}
-    >
-      <div className="text-3xl mb-2">{icon}</div>
-      <div className="font-semibold text-sm">{label}</div>
-      <div className="text-xs text-gray-600 mt-1">{description}</div>
-    </button>
-  );
-};
+}) => (
+  <Button
+    type="button"
+    variant="outline"
+    disabled={disabled}
+    onClick={onClick}
+    className="flex h-auto flex-col items-start gap-1 p-4 text-left"
+  >
+    <span className="text-3xl">{icon}</span>
+    <span className="text-sm font-semibold">{label}</span>
+    <span className="text-muted-foreground text-xs">{description}</span>
+  </Button>
+)
 
-export default QuickActionsWidget;
+export default QuickActionsWidget

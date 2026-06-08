@@ -2,9 +2,11 @@
 
 # adjustments
 
-> atom `fiscal/periods/tax/periods/transfer/pricing/adjustments` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
+> atom `fiscal/periods/tax/periods/transfer/pricing/adjustments` · horo `7` `descent` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `fiscal/periods/tax/periods/transfer/pricing/adjustments` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,24 +23,127 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `law:a transfer-pricing adjustment restates an intercompany amount to arm's-length under one declared OECD method (CUP/cost-plus/resale/profit-split/TNMM), backed by contemporaneous documentation and advanced documented → validated → approved → posted; it cannot post without that method and evidence.`
+- `seal:unsealed`
+- `trigger:Use when documenting intercompany transfer-pricing adjustments — selecting the OECD method (CUP, cost-plus, resale, profit-split, TNMM), recording original vs arm's-length amounts, attaching contemporaneous documentation, and tracking approval through documented → validated → approved → posted. The OECD BEPS-compliant TP adjustment node.`
+- `trigger:a transfer-pricing adjustment restates an intercompany amount to arm's-length under one declared OECD method (CUP/cost-plus/resale/profit-split/TNMM), backed by contemporaneous documentation and advanced documented → validated → approved → posted; it cannot post without that method and evidence.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `1ab731f9-b760-8ff4-b948-13847005a199` · `c6f73668-8280-8845-ab87-9f3870e47c18` · `f99335ff-4368-8f90-9d04-b5f3f995a727`
+- content uuids `837ca43a-340a-86d2-947e-a993fa10e88c` · `87dfb71b-fa24-82a9-b429-df220cf522a8` · `cd27ff65-6559-8bf8-9180-c625f3f45f71`
+
+## [[entropy]] — gaps · seals
+
+> account code `fiscal/periods/tax/periods/transfer/pricing/adjustments` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.7` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `2` eb | Σ seal `11.7` eb |
+
+> net residual `-9.7` eb · seal/gap ratio `5.85` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `fiscal` · sub-root `cf5aa98e-ebac-8e2a-ac4c-50b4ac28b0e6`
-- bond degree `70` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- partition `fiscal` · sub-root `750f5b34-3dbd-8426-a310-55cde4a93bd3`
+- bond degree `41` · analysis neighbors —
+- graph root `a0b4e6a6-0230-8b95-a98c-2d4cf71fcc77`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `OECD BEPS Action-13 country-by-country` · banner
+- `OECD Transfer-Pricing-Guidelines-2022` · banner
+- `OECD-Transfer-Pricing` · catalogue
+- `US IRC §482 arms-length` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·7 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `41` · sealed `0` · horo `7`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `4`
 
 ## identity
 
-- uuid `5727c556-3390-885f-864c-8023b4811026`
-- bonds in `18` · out `25`
+- uuid `e4b5db03-70bc-89fd-9ea5-e5a8ee69543e`
+- bonds in `7` · out `7`
 - trinity form·code·proof `1`·`1`·`1`
 - links `1` / `1`
 - folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `61a21254-8c9c-8ee4-b03c-ee4411c484a0` · framed by typography partition `fiscal` bonds `70` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `2c078124-40f7-8537-a342-0ddcb51603b8` · framed by typography partition `fiscal` bonds `41` · `pnpm readme` · `pnpm readme:check`</sub>

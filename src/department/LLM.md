@@ -3,8 +3,8 @@
 
 # department
 
-path `department` · uuid `6407f944-7d8c-8112-b90c-8049158d855e` · diamond `7ebcbf47-ba47-849e-b802-a77c2f084f84`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `department` · uuid `e606eac8-0b3d-8b3b-b5a2-35c5d7c654ae` · diamond `6e41b093-e5de-85c6-969e-cb6aa94db455`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports law·store · exports department · escapes —
 links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law department is one schema.org word, content-addressed; the same word collides
 
 ---
 
-<sub>content-uuid `32fd1092-bfd5-86d5-914a-0e75ca9657af` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `893abd53-069f-80bb-803c-c1bf1848b368` · `pnpm readme` · `pnpm computed:check`</sub>

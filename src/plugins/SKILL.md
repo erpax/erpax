@@ -1,10 +1,176 @@
 ---
 name: plugins
-description: Use when building, configuring, or extracting a Payload plugin — a function that receives the config and returns a modified config, adding collections/globals/fields/hooks/endpoints. Relevant when packaging erpax (or a domain) as a publishable @erpax/* plugin.
-sessions:
-  - 776a49cb-8dfb-45ab-88ff-956e3b613adf
+description: "Use when building, configuring, or extracting a Payload plugin — a function that receives the config and returns a modified config, adding collections/globals/fields/hooks/endpoints. Relevant when packaging erpax (or a domain) as a publishable @erpax/* plugin."
+atomPath: plugins
+coordinate: plugins · 7/descent · d61a9a2e
+contentUuid: "ceb7bc99-fe5c-52ed-8ed6-18ea03f5ceb9"
+diamondUuid: "4eb15328-5407-85a2-a76c-fb3c41c91dac"
+uuid: "d61a9a2e-27e1-8577-ac10-938884491723"
+horo: 7
+bonds:
+  in:
+    - accounting
+    - all
+    - bindings
+    - chat
+    - collapse
+    - collections
+    - comment
+    - commerce
+    - config
+    - domain
+    - ecommerce
+    - fractal
+    - identity
+    - law
+    - manufacturing
+    - mcp
+    - merge
+    - one
+    - part
+    - party
+    - plugin
+    - port
+    - redirects
+    - research
+    - scopes
+    - sequence
+    - skills
+    - tag
+    - torus
+    - whole
+  out:
+    - accounting
+    - all
+    - bindings
+    - chat
+    - collapse
+    - collections
+    - comment
+    - commerce
+    - config
+    - domain
+    - ecommerce
+    - fractal
+    - identity
+    - law
+    - manufacturing
+    - mcp
+    - merge
+    - one
+    - part
+    - party
+    - plugin
+    - port
+    - redirects
+    - research
+    - scopes
+    - sequence
+    - skills
+    - tag
+    - torus
+    - whole
+typography:
+  partition: plugins
+  bondDegree: 0
+  neighbors: []
+standards:
+  - "ISO-27002"
+  - "ISO/IEC-27002:2022"
+  - "NIST-SP-800-162"
+  - "RFC-4122"
+bindings: []
+neighbors:
+  wikilink:
+    - accounting
+    - collections
+    - config
+    - fractal
+    - identity
+    - law
+    - merge
+    - sequence
+  matrix:
+    - accounting
+    - all
+    - bindings
+    - chat
+    - collapse
+    - collections
+    - comment
+    - commerce
+    - config
+    - domain
+    - ecommerce
+    - fractal
+    - identity
+    - law
+    - manufacturing
+    - mcp
+    - merge
+    - one
+    - part
+    - party
+    - plugin
+    - port
+    - redirects
+    - research
+    - scopes
+    - sequence
+    - skills
+    - tag
+    - torus
+    - whole
+  backlinks:
+    - accounting
+    - all
+    - bindings
+    - chat
+    - collapse
+    - collections
+    - comment
+    - commerce
+    - config
+    - domain
+    - ecommerce
+    - fractal
+    - identity
+    - law
+    - manufacturing
+    - mcp
+    - merge
+    - one
+    - part
+    - party
+    - plugin
+    - port
+    - redirects
+    - research
+    - scopes
+    - sequence
+    - skills
+    - tag
+    - torus
+    - whole
+signatures:
+  computationUuid: "3293210e-1bf8-8474-960c-818143dc1772"
+  stages:
+    - stage: path
+      stageUuid: "36f5dd4b-cef3-821c-8b1d-d3102c7119df"
+    - stage: trinity
+      stageUuid: "72f9a74f-79ef-89b5-8833-17ace8726c3b"
+    - stage: boundary
+      stageUuid: "07f11beb-0843-8e16-91ec-3eb9cba18fef"
+    - stage: links
+      stageUuid: "5b1fb269-5afa-8e3b-b4ed-1d15fcde949b"
+    - stage: horo
+      stageUuid: "eeaf1014-0f61-8e2a-952e-92491cf4bb6f"
+    - stage: seal
+      stageUuid: "ec57a8cc-6211-8937-b2c6-cab3fb9d1e68"
+    - stage: uuid
+      stageUuid: "30c1fc88-fc97-8fe1-8588-ac5fd58de166"
+version: 2
 ---
-
 # plugins — Payload plugins (config in → config out)
 
 A plugin is `(incomingConfig: Config) => Config` (often a factory `myPlugin(opts) => (config) => config`). It spreads/augments the config: appends collections/globals, injects fields, adds hooks/endpoints, wires admin components. Registered in `config.plugins: [...]` (see [[config]]). **erpax itself is a Payload plugin** — the whole ERP delivered as one extractable plugin.

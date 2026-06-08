@@ -3,8 +3,8 @@
 
 # notifications
 
-path `legal/entities/compliance/deadlines/compliance/notifications` · uuid `b3c1a0e4-794c-892d-b8e2-cc37799fe6d7` · diamond `fb42edef-9000-8ddd-bee9-30f3ff7460ed`
-horo `2` `share` · trinity `1·1·1` · sealed `1`
+path `legal/entities/compliance/deadlines/compliance/notifications` · uuid `82e99819-18d0-8051-968b-12b4c3d51b1a` · diamond `778cf911-b77c-83be-9dbf-bbc0e3a38654`
+horo `8` `crest` · trinity `1·1·1` · sealed `0`
 imports @/role/based/access · exports const · escapes —
 links `0/0` · folded `1` · bonds in `1` out `1`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `e7a42f3d-5a6f-8fe4-9237-430cad51ab23` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7f9975ac-bbf4-8065-bb93-d5f8a906dfe9` · `pnpm readme` · `pnpm computed:check`</sub>

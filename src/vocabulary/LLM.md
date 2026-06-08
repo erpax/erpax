@@ -3,15 +3,15 @@
 
 # vocabulary
 
-path `vocabulary` · uuid `f2a288a9-a379-80d8-a308-ec65234d7110` · diamond `82f14a54-a3ec-890d-8fce-0ac749df0734`
+path `vocabulary` · uuid `f2a288a9-a379-80d8-a308-ec65234d7110` · diamond `414e288b-3cda-8bb0-b106-c80c063c8f0a`
 horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports @/uuid/matrix · exports VocabularyAudit·const · escapes —
-links `16/16` · folded `1` · bonds in `2` out `2`
-faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+links `16/16` · folded `1` · bonds in `17` out `19`
+faces worker·plugin·pwa `1·0·0`
+neighbors → atom·collapse·concatenate·dry·entropy·gravity·law·matrix·matrix·merge·merge·quantum·singularity·standards·tamper·trinity·unavoidable·vocabulary·word · ← atom·collapse·concatenate·dry·entropy·gravity·law·matrix·merge·quantum·singularity·standards·tamper·trinity·unavoidable·vocabulary·word
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `e74c3f81-b997-8fb9-9757-132896a03360` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `af04b776-0353-84af-a23c-26a60bb72601` · `pnpm readme` · `pnpm computed:check`</sub>

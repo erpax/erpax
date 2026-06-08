@@ -3,15 +3,15 @@
 
 # touches
 
-path `touches` · uuid `cfdc627c-9361-8c73-9516-23f05d6cbc9c` · diamond `ebb777f8-5635-87f3-9856-3b555f9799b2`
+path `touches` · uuid `cfdc627c-9361-8c73-9516-23f05d6cbc9c` · diamond `bf5d19d5-4072-8af7-88cf-cc98b771a470`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·geo·law·merge·sti · exports touches · escapes —
-links `5/5` · folded `1` · bonds in `6` out `6`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·contained·family·landmarks·memories·stat · ← cohort·contained·family·landmarks·memories·stat
+neighbors → collapse·geo·law·merge·sti · ← collapse·geo·law·merge·sti
 analysis —
 law touches is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `f0b63c20-e619-8805-9c20-b73169eec8cb` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `259e39ec-3ea2-8d18-a718-4d4e275062de` · `pnpm readme` · `pnpm computed:check`</sub>

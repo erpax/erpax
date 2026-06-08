@@ -3,8 +3,8 @@
 
 # combination
 
-path `combination` · uuid `b07fe4c1-63ee-834c-8ad5-d00aa9e2fd1f` · diamond `ddf1c162-7c30-87d1-928a-511483eff5d4`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `combination` · uuid `6c8e820e-1a72-80e6-9aed-4bc92e462317` · diamond `eb656b3c-c0c6-8f30-b6c5-4b3422b8c989`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports balance·combinations·law·product · exports combination · escapes —
 links `9/9` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law a combination is the singular model of exactly one [[combinations]] row — 
 
 ---
 
-<sub>content-uuid `d1439602-89fc-8ca4-bc12-48fdf6eea624` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2d18623d-e568-8836-b122-0234c8c80e28` · `pnpm readme` · `pnpm computed:check`</sub>

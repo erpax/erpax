@@ -23,7 +23,7 @@
 
 - partition `disability` · sub-root `66f051f1-4a0b-826d-b799-a9049d9a92e8`
 - bond degree `12` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `e0f465ea-e79b-8482-802c-f34dee1d043f` · framed by typography partition `disability` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `5661ac37-4abe-8f05-ab26-f7d1fd24b421` · framed by typography partition `disability` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

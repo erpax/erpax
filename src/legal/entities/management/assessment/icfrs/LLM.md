@@ -3,8 +3,8 @@
 
 # icfrs
 
-path `legal/entities/management/assessment/icfrs` · uuid `064ab201-5f06-8e49-ac4a-8f02ceed2dbb` · diamond `08c371bb-6df4-859e-b9e2-2fd7072bfcd6`
-horo `8` `crest` · trinity `1·1·1` · sealed `1`
+path `legal/entities/management/assessment/icfrs` · uuid `01735b23-3bad-8212-a492-255bef285bc9` · diamond `ab8ceeb0-d1b2-8cc7-8138-24f284ff5f02`
+horo `5` `round` · trinity `1·1·1` · sealed `0`
 imports @/role/based/access · exports const · escapes —
 links `0/0` · folded `1` · bonds in `1` out `1`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `e0f22843-8d2d-8555-875b-0e5049942268` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `92a55df0-aca3-8ace-b716-5c877e9a2420` · `pnpm readme` · `pnpm computed:check`</sub>

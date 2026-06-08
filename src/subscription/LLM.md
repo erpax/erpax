@@ -3,15 +3,15 @@
 
 # subscription
 
-path `subscription` · uuid `19b8a423-b0e4-8ac5-aef9-2e035d1cc489` · diamond `f6f69593-827c-87a4-8caa-da82ee6cd357`
+path `subscription` · uuid `19b8a423-b0e4-8ac5-aef9-2e035d1cc489` · diamond `f3cadacd-5c1e-8065-b7c5-70e7bd3299b7`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·media·merge·requires·sti · exports subscription · escapes —
-links `6/6` · folded `1` · bonds in `10` out `10`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → age·answer·cohort·gastroenterologic·landmarks·material·may·memories·midpoint·stat · ← age·answer·cohort·gastroenterologic·landmarks·material·may·memories·midpoint·stat
+neighbors → collapse·law·media·merge·requires·sti · ← collapse·law·media·merge·requires·sti
 analysis —
 law subscription is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `4e13266b-cac6-81ef-ac69-57260079074d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `04e78069-f37e-8dc3-bb89-13a9d05a2e8c` · `pnpm readme` · `pnpm computed:check`</sub>

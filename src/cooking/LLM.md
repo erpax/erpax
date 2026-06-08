@@ -3,8 +3,8 @@
 
 # cooking
 
-path `cooking` · uuid `2abc5039-805e-8e44-ac09-dbb7644d36ef` · diamond `5dfafa77-c697-8d2b-a695-ee3e343415c8`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `cooking` · uuid `e2efcdf8-c1da-85c3-b65e-bc2be8623862` · diamond `223e90ab-9ac6-855a-9015-788d61e2b2d3`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·method·sti · exports cooking · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law cooking is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `e1237e2e-033a-8324-83f4-dbd0e0f79d39` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c9d8604b-4f74-8488-9b1d-698baa8dfe41` · `pnpm readme` · `pnpm computed:check`</sub>

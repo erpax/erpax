@@ -2,9 +2,11 @@
 
 # inspections
 
-> atom `items/quality/inspections` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `items/quality/inspections` · horo `1` `base` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `items/quality/inspections` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,15 +23,120 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+
+### collapse
+
+- `balance:conserved`
+- `law:every inspection records an outcome disposition (pass/fail/conditional) with nonconformance evidence that drives the inventory write-off — measurement attested as [[proof]].`
+- `seal:unsealed`
+- `trigger:Use when recording incoming, in-process, or final-inspection outcomes — inspected/failed/sample quantities, lot acceptance, calibration checks per ISO 17025, outcome disposition (pass/fail/conditional), and nonconformance evidence that drives inventory write-offs. The ISO 9001 §8.7 quality-inspection collection for manufacturing and vendor receipts.`
+- `trigger:every inspection records an outcome disposition (pass/fail/conditional) with nonconformance evidence that drives the inventory write-off — measurement attested as [[proof]].`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `2e6347b0-f9ef-8723-a372-93beef3daedc` · `3fed6c7b-80ad-8194-bae6-e84b39afd20b`
+- content uuids `23522155-1d30-8d69-99ca-b31d6a827b72` · `6e80a02b-8312-8c19-a6a5-76bc6c6e8877`
+
+## [[entropy]] — gaps · seals
+
+> account code `items/quality/inspections` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.1` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `1` eb | Σ seal `11.1` eb |
+
+> net residual `-10.1` eb · seal/gap ratio `11.1` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `items` · sub-root `1341dba3-9395-8200-8e47-ea3dc4d4b9e9`
+- partition `items` · sub-root `e1747762-a2bb-8ab4-aaeb-99c9513102fb`
 - bond degree `33` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ISO 17025:2017 testing-and-calibration-laboratories` · banner
+- `ISO 9001:2015 §8.7 control-of-nonconforming-outputs` · banner
+- `ISO 9001:2015 §8.7 quality-management-system` · banner
+- `ISO 9001:2015 §9.1.3 analysis-and-evaluation` · banner
+- `ISO-8601-1:2019 date-time inspection-date` · banner
+- `ISO-9001` · catalogue
+- `SOX §404 internal-controls quality-control TOM-QC-01` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·1 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `33` · sealed `0` · horo `1`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `7`
 
 ## identity
 
-- uuid `ba2d22e6-2ec8-847b-bf8a-76bb35c038b9`
+- uuid `46c9af13-f2c1-87a2-bc07-ce274ada67b0`
 - bonds in `11` · out `11`
 - trinity form·code·proof `1`·`1`·`1`
 - links `7` / `7`
@@ -37,8 +144,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `6efef476-6d10-84f5-8e0f-c42fe55c1e2f` · framed by typography partition `items` bonds `33` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0c1a363c-a414-8a8a-93fd-f134cf883055` · framed by typography partition `items` bonds `33` · `pnpm readme` · `pnpm readme:check`</sub>

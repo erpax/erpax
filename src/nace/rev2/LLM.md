@@ -4,7 +4,7 @@
 # rev2
 
 path `nace/rev2` · uuid `04f28d52-142e-8143-ac58-54cc0c4335fd` · diamond `578cc644-dd07-80c5-85a0-9c852e80f374`
-horo `4` `weave` · trinity `1·1·1` · sealed `1`
+horo `4` `weave` · trinity `1·1·1` · sealed `0`
 imports — · exports NaceSection·const · escapes —
 links `1/1` · folded `1` · bonds in `1` out `1`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law NACE Rev. 2 classifies an economic activity through one strict hierarchy —
 
 ---
 
-<sub>content-uuid `3d5802d6-d4e6-8f8c-ad9d-62e86a4bb39b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8faf5514-b061-868f-8343-aaa1e890304c` · `pnpm readme` · `pnpm computed:check`</sub>

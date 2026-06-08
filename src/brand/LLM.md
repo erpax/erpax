@@ -3,8 +3,8 @@
 
 # brand
 
-path `brand` · uuid `3853dc62-e7c2-84bb-997d-ad223475747b` · diamond `53d2faf7-c69a-8af4-8e2b-67b0138a3183`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `brand` · uuid `0b372f8b-5b1d-8b89-84d5-dd3123b2fc20` · diamond `6697d3d7-dec5-8641-9d47-eb1d0dc1ad9a`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports law·organization·thing · exports brand · escapes —
 links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law brand is one schema.org word, content-addressed; the same word collides ever
 
 ---
 
-<sub>content-uuid `b0e48d28-ed38-8873-b8ed-8ec02f44936f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `fa6e34cf-377c-8c79-8bce-ac23d62a0177` · `pnpm readme` · `pnpm computed:check`</sub>

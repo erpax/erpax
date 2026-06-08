@@ -2,9 +2,11 @@
 
 # invariant
 
-> atom `architecture/invariant` · horo `4` `weave` · [[balance]] `1` · [[seal]] `0`
+> atom `architecture/invariant` · horo `2` `share` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `architecture/invariant` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,11 +23,59 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `explore:aura`
+- `explore:diamond`
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `seal:unsealed`
+- `trigger:Use when enforcing the architecture laws in code — the executable checks (single-word atoms, no prefixes, every file payload⊕vitepress or junk, locality, the ≥2-cross balance, the naming matrix) that are the matter-twin of the gate.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `1a4f2aa5-a08c-88dc-9a53-9ef78c4683b2` · `b52a860f-aba6-8893-becb-6b959fa5d955` · `eb03608a-3149-8afe-b539-8534f47db392`
+- content uuids `0a3ee444-c6e8-8426-9feb-73901fb45782` · `7a0a771b-0834-80ea-8557-af04abd8dedd` · `85ff1109-7fe9-822b-9047-044a01d2d227`
+
+## [[entropy]] — gaps · seals
+
+> account code `architecture/invariant` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.2` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `2` eb | Σ seal `11.2` eb |
+
+> net residual `-9.2` eb · seal/gap ratio `5.6` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `architecture` · sub-root `66fe5a3e-24bf-891a-bead-173fbb6a8ec8`
+- partition `architecture` · sub-root `a3bb82de-58d5-8eb2-9532-1dd72e7dbbe4`
 - bond degree `44` · analysis neighbors `aura` · `diamond`
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
 
 ## [[cloudflare]] bindings
 
@@ -52,7 +102,6 @@
 - `EU-765/2008` · catalogue
 - `ILO-C001` · catalogue
 - `ISO-19011` · catalogue
-- `ISO-19011:2018 §6.4 audit-evidence-invariants` · banner
 - `ISO-27001` · catalogue
 - `ISO-27002` · catalogue
 - `ISO-27037` · catalogue
@@ -70,15 +119,53 @@
 - `US-CTA-2021` · catalogue
 - `W3C-JSON-LD-1.1` · catalogue
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·2 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `44` · sealed `0` · horo `4`
+- bond degree `44` · sealed `0` · horo `2`
 - variance `0` · balanced `1` · trinity sum `3`
-- bindings `0` · standards `36`
+- bindings `0` · standards `35`
 
 ## identity
 
-- uuid `66fe5a3e-24bf-891a-bead-173fbb6a8ec8`
+- uuid `bfa891e1-ae89-81a5-9467-b5b580ee8371`
 - bonds in `13` · out `13`
 - trinity form·code·proof `1`·`1`·`1`
 - links `21` / `21`
@@ -90,4 +177,4 @@
 
 ---
 
-<sub>content-uuid `9663b567-909b-8ed0-b913-db68fcc82d20` · framed by typography partition `architecture` bonds `44` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f719a61b-e212-86b5-9dad-0f693daf8dac` · framed by typography partition `architecture` bonds `44` · `pnpm readme` · `pnpm readme:check`</sub>

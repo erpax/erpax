@@ -1,8 +1,131 @@
 ---
 name: competition
 description: "Use when reasoning about how erpax skills EVOLVE — agents compete in commits, the fastest CORRECT solution (gate-verified) wins the lead, losers re-approach to beat it, optimising to infinity, at every scale. The selective-pressure dual of contribution; and because each competitor independently re-derives and content-addresses the canonical answer, competition AMPLIFIES tamper cost — performance pressure turned into security."
+atomPath: competition
+coordinate: competition · 2/share · bb22262d
+contentUuid: "5f252b32-b9e5-596f-828e-ea31b55aa853"
+diamondUuid: "66c59467-d303-87fe-81c5-101b328c2611"
+uuid: "bb22262d-24f7-8dbc-a009-2161ae25e8d7"
+horo: 2
+bonds:
+  in:
+    - classroom
+    - contribution
+    - cost
+    - decide
+    - decompression
+    - education
+    - fractal
+    - history
+    - identity
+    - law
+    - logic
+    - merge
+    - network
+    - peace
+    - proof
+    - routing
+    - self
+    - society
+    - zeropoint
+  out:
+    - classroom
+    - contribution
+    - cost
+    - decide
+    - decompression
+    - education
+    - fractal
+    - history
+    - identity
+    - law
+    - logic
+    - merge
+    - network
+    - peace
+    - proof
+    - routing
+    - self
+    - society
+    - zeropoint
+typography:
+  partition: competition
+  bondDegree: 57
+  neighbors: []
+standards:
+  - "ISO/IEC 25010:2023 §5.2 performance-efficiency (fastest-correct selection)"
+bindings: []
+neighbors:
+  wikilink:
+    - contribution
+    - decompression
+    - fractal
+    - history
+    - identity
+    - law
+    - merge
+    - proof
+    - self
+    - society
+  matrix:
+    - classroom
+    - contribution
+    - cost
+    - decide
+    - decompression
+    - education
+    - fractal
+    - history
+    - identity
+    - law
+    - logic
+    - merge
+    - network
+    - peace
+    - proof
+    - routing
+    - self
+    - society
+    - zeropoint
+  backlinks:
+    - classroom
+    - contribution
+    - cost
+    - decide
+    - decompression
+    - education
+    - fractal
+    - history
+    - identity
+    - law
+    - logic
+    - merge
+    - network
+    - peace
+    - proof
+    - routing
+    - self
+    - society
+    - zeropoint
+signatures:
+  computationUuid: "f558156f-06bc-836f-8692-16a05d0ec571"
+  stages:
+    - stage: path
+      stageUuid: "fa6c9ca3-e81f-8762-85d6-675365bb307e"
+    - stage: trinity
+      stageUuid: "84a9b260-0dc7-82c7-b065-c958942dee18"
+    - stage: boundary
+      stageUuid: "b95c4ff9-f549-8212-b294-ae0058bb30cc"
+    - stage: links
+      stageUuid: "e27e41bb-1005-8c37-bc27-dea38ef3aa46"
+    - stage: horo
+      stageUuid: "27736562-24c1-801a-ba85-abe00d0cd82a"
+    - stage: seal
+      stageUuid: "c25262c4-3d12-828d-84be-eda6bc32be9f"
+    - stage: uuid
+      stageUuid: "734f13a9-64e9-8738-bafa-6f0d81718442"
+version: 2
 ---
-
 # competition — skills evolve by competing (fastest correct wins, optimise to ∞)
 
 FORM: **skills evolve through COMPETITION in commits.** Many agents attempt the SAME problem; the **fastest CORRECT** candidate wins the lead — correctness is not voted, it is the GATE ([[proof]]: tsc · lint · vitest · aura — an objective referee, not opinion). `compete(candidates)` returns the winner (least cost among the correct) and the ranked losers. A loser reads the lead, picks a DIFFERENT `approach`, and re-enters to beat it; `takesLead` admits a challenger only if it is correct AND **strictly cheaper** — monotone optimisation that never regresses, and never finishes (there is always a better approach → `optimize` runs to ∞). Each solution is a content-uuid ([[identity]]); the same solution from two agents merges to one ([[merge]]); the lead is the canonical commit ([[history]]).

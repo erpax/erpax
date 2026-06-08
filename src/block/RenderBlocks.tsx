@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react'
 
+import { ComputedCssProvider } from '@/css'
 import type { Page } from '@/types'
 
 import { ArchiveBlock } from '@/blocks'
@@ -34,10 +35,16 @@ export const RenderBlocks: React.FC<{
 
             if (Block) {
               return (
-                <div className="my-16" key={index}>
-                  {/* @ts-expect-error there may be some mismatch between the expected types here */}
-                  <Block {...block} disableInnerContainer />
-                </div>
+                <ComputedCssProvider
+                  key={index}
+                  surface={{ kind: 'block', path: `blocks/${blockType}` }}
+                  injectRoot={false}
+                >
+                  <div className="my-16">
+                    {/* @ts-expect-error there may be some mismatch between the expected types here */}
+                    <Block {...block} disableInnerContainer />
+                  </div>
+                </ComputedCssProvider>
               )
             }
           }

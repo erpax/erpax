@@ -3,8 +3,8 @@
 
 # performances
 
-path `customers/contracts/contract/performances` · uuid `56736e30-2475-8a1f-8edd-07bc887e9348` · diamond `3e31b641-074e-8274-9830-db5ce6b70d33`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+path `customers/contracts/contract/performances` · uuid `7d9efd28-4695-8a84-a401-206a9c278a93` · diamond `a81d606b-892a-89f2-9c00-4d04368edcc9`
+horo `1` `base` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/enforce/segregation/of/duty·@/standard/collection/hook · exports default · escapes —
 links `7/7` · folded `1` · bonds in `11` out `11`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law revenue is recognised only at the instant (point-in-time) or over the span (
 
 ---
 
-<sub>content-uuid `67a660a8-35a4-81f8-bb11-6cabb2ad9d2d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `50c1a66f-b9dc-81a3-91a6-51bd96d17982` · `pnpm readme` · `pnpm computed:check`</sub>

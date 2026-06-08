@@ -3,8 +3,8 @@
 
 # cardinality
 
-path `cardinality` · uuid `f34c3453-0e82-84d9-b10c-0a5628aaf70e` · diamond `41ef3e69-ce6d-877c-abaa-4a82d4e8cc41`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `cardinality` · uuid `3eb9a388-59f4-84ae-9af5-5b45edaaa11f` · diamond `a1a8f3ad-d745-85c4-99df-7fa7073a9a4c`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports constraint·database·fields·law·nullability·queries·schema · exports cardinality · escapes —
 links `10/10` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law cardinality is the count-structure of a relationship — one-to-one / one-to
 
 ---
 
-<sub>content-uuid `8946b3b8-5b5d-87c2-9a7a-16a5920d8ca3` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `12bb77b9-8912-82aa-b6f0-981b50080867` · `pnpm readme` · `pnpm computed:check`</sub>

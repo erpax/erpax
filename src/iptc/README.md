@@ -23,7 +23,21 @@
 
 - partition `iptc` · sub-root `f5d6d372-ae7a-8cae-8a30-076a52990322`
 - bond degree `23` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `23` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `26412346-d651-88ff-90bf-9a3c46c8f89a` · framed by typography partition `iptc` bonds `23` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ac762f41-4614-8991-9767-bcd5747368f7` · framed by typography partition `iptc` bonds `23` · `pnpm readme` · `pnpm readme:check`</sub>

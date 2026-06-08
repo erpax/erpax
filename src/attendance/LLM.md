@@ -3,8 +3,8 @@
 
 # attendance
 
-path `attendance` · uuid `11f9fbfe-bb0c-8f75-b68e-165054ece615` · diamond `15558828-5769-8eaf-99cb-4f9416bfe93a`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `attendance` · uuid `d710ded6-b93b-86a1-ac51-ec0705908e08` · diamond `6fcba9c3-a01b-8dec-9232-67fd98a07318`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·enumeration·event·law·merge·mode·sti · exports attendance · escapes —
 links `7/7` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law attendance mode classifies how a participant joins an event — offline, onl
 
 ---
 
-<sub>content-uuid `95de5dce-e0bd-8095-bf39-8024404d7509` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8dd0ffd5-bc3d-86aa-8697-2c76459324e9` · `pnpm readme` · `pnpm computed:check`</sub>

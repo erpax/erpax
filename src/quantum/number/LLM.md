@@ -3,15 +3,15 @@
 
 # number
 
-path `quantum/number` · uuid `cc2f97b8-6ba0-894c-abaa-4a322ab998b3` · diamond `3da87ecc-1484-8083-bcb7-fd5746693e49`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
-imports breath·collapse·digit·finality·harmony·law·linearity·number·reality·realtime·sequence·snapshot·stream · exports number · escapes —
-links `21/21` · folded `1` · bonds in `77` out `77`
+path `quantum/number` · uuid `80f32373-1ea3-831e-b091-7ddda7a51ce3` · diamond `2f7c79d0-f89b-8374-a366-9d42d87ab5d6`
+horo `5` `round` · trinity `1·1·1` · sealed `1`
+imports @/path · exports function · escapes —
+links `29/29` · folded `1` · bonds in `63` out `63`
 faces worker·plugin·pwa `1·0·0`
-neighbors → accommodation·accounting·additional·airbags·available·axles·bathrooms·bedrooms·beds·box·breath·bus·catalog·clip·collapse·commerce·confirmation·credits·digit·doors·episode·episodes·fax·fields·finality·flight·forward·full·gears·global·guests·harmony·hooks·id·identification·identity·issue·item·law·linearity·loan·location·measure·membership·number·office·order·partial·passenger·pi·players·post·previous·rate·reality·realtime·report·rooms·science·seasons·seat·sequence·serial·service·sms·snapshot·stage·stream·supto·tracking·transaction·units·utility·uuid·vehicle·volume·zeropoint · ← accommodation·accounting·additional·airbags·available·axles·bathrooms·bedrooms·beds·box·breath·bus·catalog·clip·collapse·commerce·confirmation·credits·digit·doors·episode·episodes·fax·fields·finality·flight·forward·full·gears·global·guests·harmony·hooks·id·identification·identity·issue·item·law·linearity·loan·location·measure·membership·number·office·order·partial·passenger·pi·players·post·previous·rate·reality·realtime·report·rooms·science·seasons·seat·sequence·serial·service·sms·snapshot·stage·stream·supto·tracking·transaction·units·utility·uuid·vehicle·volume·zeropoint
+neighbors → accommodation·accounting·additional·airbags·available·axles·bathrooms·bedrooms·beds·box·bus·catalog·clip·commerce·confirmation·credits·doors·episode·episodes·fax·fields·flight·forward·full·gears·global·guests·hooks·id·identification·identity·issue·item·loan·location·measure·membership·number·office·order·partial·passenger·players·post·previous·rate·report·rooms·science·seasons·seat·serial·service·sms·stage·supto·tracking·transaction·units·utility·vehicle·volume·zeropoint · ← accommodation·accounting·additional·airbags·available·axles·bathrooms·bedrooms·beds·box·bus·catalog·clip·commerce·confirmation·credits·doors·episode·episodes·fax·fields·flight·forward·full·gears·global·guests·hooks·id·identification·identity·issue·item·loan·location·measure·membership·number·office·order·partial·passenger·players·post·previous·rate·report·rooms·science·seasons·seat·serial·service·sms·stage·supto·tracking·transaction·units·utility·vehicle·volume·zeropoint
 analysis —
 law the dot collapses iff the number is rational — a rational's digit-stream terminates or repeats, so the measurement finishes to a finite snapshot; an irrational's never repeats, so the dot can never settle it and the stream runs forever. Whether the measurement ends is fixed by the number's arithmetic nature, not by where you stop reading.
 
 ---
 
-<sub>content-uuid `4197c177-5306-8b70-ac76-ad43d94c55d8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ac2ab985-9b51-8393-9946-58e6243b7ea0` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -4,14 +4,14 @@
 # live
 
 path `live` · uuid `544e30b6-8262-8445-8c58-048cced2e033` · diamond `2907419d-8fe8-8891-8e8b-5b06b9b8fb0a`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+horo `1` `base` · trinity `1·0·0` · sealed `0`
 imports blog·broadcast·collapse·law·merge·posting·sti·update · exports live · escapes —
 links `8/8` · folded `1` · bonds in `14` out `15`
 faces worker·plugin·pwa `0·0·0`
 neighbors → aura·blog·broadcast·collapse·digit·horo·law·law·merge·posting·realtime·signal·society·sti·update · ← aura·blog·broadcast·collapse·digit·horo·law·merge·posting·realtime·signal·society·sti·update
-analysis aura
+analysis —
 law live is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `f508e4fb-1c55-8a20-902a-381de01b82b4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e6b5e7c0-0571-8365-9f11-77280cabcdcd` · `pnpm readme` · `pnpm computed:check`</sub>

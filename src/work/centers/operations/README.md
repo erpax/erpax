@@ -2,9 +2,11 @@
 
 # operations
 
-> atom `work/centers/operations` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `work/centers/operations` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
+
+> account code `work/centers/operations` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,16 +23,120 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `law:operations is the reusable operation-type catalog (Cut · Sew · Mix · Assemble · Inspect · Pack) that routings compose — an ISA-95 operation-type hierarchy with default work-center and KPI anchors, defined independently of any specific product.`
+- `seal:sealed`
+- `trigger:Use when defining reusable process-step types (Cut, Sew, Mix, Assemble, Inspect, Pack) that routings compose — with ISA-95 operation-type hierarchy, default work-center, and KPI anchors independent of any specific product. The operation-type catalog collection.`
+- `trigger:operations is the reusable operation-type catalog (Cut · Sew · Mix · Assemble · Inspect · Pack) that routings compose — an ISA-95 operation-type hierarchy with default work-center and KPI anchors, defined independently of any specific product.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `1`
+- entry uuids `45e78191-5f6b-87d7-9896-2b256acc5ff2` · `8975a4b8-a991-8c52-ae03-c701cb1ca769`
+- content uuids `15f37fb7-9a93-80e8-b007-8fc411ad690c` · `83aa00bd-c952-8520-959b-ac21273f7b01` · `f97c32a4-cc76-8481-a8e8-cff09a42280a`
+
+## [[entropy]] — gaps · seals
+
+> account code `work/centers/operations` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.5` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[diamond]]/sealed `1.585` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `1` eb | Σ seal `13.085` eb |
+
+> net residual `-12.085` eb · seal/gap ratio `13.085` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `work` · sub-root `2e48588c-79da-87d8-bc76-87ad4afd7aa4`
-- bond degree `16` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- partition `work` · sub-root `f9f718dc-be4b-86d4-96b4-21c202b9101e`
+- bond degree `24` · analysis neighbors —
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ISA-95` · catalogue
+- `ISA-95:2013 / IEC-62264-1 §B.4 operations-definition process-segment` · banner
+- `ISO-22400-2` · catalogue
+- `ISO-22400-2:2014 manufacturing-operations KPIs` · banner
+- `SOX §404 internal-controls production-control` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·5 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `24` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `5`
 
 ## identity
 
-- uuid `0dec84a6-49b0-8c38-b7db-22749a5a5af4`
-- bonds in `4` · out `4`
+- uuid `83aa00bd-c952-8520-959b-ac21273f7b01`
+- bonds in `8` · out `8`
 - trinity form·code·proof `1`·`1`·`1`
 - links `6` / `6`
 - folded `1` · escapes `0`
@@ -41,4 +147,4 @@
 
 ---
 
-<sub>content-uuid `622ab481-0a94-84e9-8ae9-49cc9a02d024` · framed by typography partition `work` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `690bad8a-7a80-8b5f-b712-c7e44bf4b884` · framed by typography partition `work` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>

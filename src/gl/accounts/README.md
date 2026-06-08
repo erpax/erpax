@@ -2,7 +2,7 @@
 
 # accounts
 
-> atom `gl/accounts` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
+> atom `gl/accounts` · horo `1` `base` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -19,13 +19,42 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `5` · [[conservation]] `0` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `gl` · sub-root `39b5ff82-5c79-838f-86f8-aeacb304fdf3`
-- bond degree `65` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- bond degree `0` · analysis neighbors —
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `COSO-ERM-2017` · catalogue
+- `EN-16931` · catalogue
+- `EU-2017/1132` · catalogue
+- `EU-2017/828` · catalogue
+- `IFRS IAS-1 presentation-of-financial-statements` · banner
+- `ISO-13616-1` · catalogue
+- `ISO-19011:2018 audit-trail chart-of-accounts-change` · banner
+- `ISO-20022` · catalogue
+- `ISO-3166-2` · catalogue
+- `ISO-4217:2015 currency-codes account-currency` · banner
+- `ISO-9362` · catalogue
+- `OECD SAF-T §2 general-ledger-accounts` · banner
+- `RFC-5545` · catalogue
+- `SOX §404 internal-controls` · banner
+- `US-GAAP ASC-210 balance-sheet` · banner
+- `W3C-PROV-O` · catalogue
+
+## analytics
+
+- bond degree `0` · sealed `0` · horo `1`
+- variance `5` · balanced `0` · trinity sum `3`
+- bindings `0` · standards `16`
 
 ## identity
 
@@ -37,8 +66,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `b3e8541b-afab-894b-86ca-f30c27e60e48` · framed by typography partition `gl` bonds `65` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `183cc8ff-6d27-8647-b6c6-f51afaad6cb7` · framed by typography partition `gl` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

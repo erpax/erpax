@@ -2,7 +2,7 @@
 
 # boltzmann
 
-> atom `boltzmann` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
+> atom `boltzmann` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -23,9 +23,9 @@
 
 ## typography graph
 
-- partition `boltzmann` · sub-root `4618156b-109a-8e4d-bbfc-b8a26cd61225`
+- partition `boltzmann` · sub-root `91d2f972-b0d0-8b3f-b5a8-54475e147f17`
 - bond degree `32` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- graph root `1cef4f02-a3fa-83a5-8ea0-120b724ef456`
 
 ## [[cloudflare]] bindings
 
@@ -36,15 +36,53 @@
 - `S = k·ln W, inverse W = e^(S/k), Gibbs S = −k·Σ pᵢ ln pᵢ -- all computed` · banner
 - `SI-2019 exact: k_B = 1.380649e-23 J/K` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·4 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `32` · sealed `1` · horo `8`
+- bond degree `32` · sealed `1` · horo `4`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `2`
 
 ## identity
 
-- uuid `4618156b-109a-8e4d-bbfc-b8a26cd61225`
+- uuid `91d2f972-b0d0-8b3f-b5a8-54475e147f17`
 - bonds in `10` · out `10`
 - trinity form·code·proof `1`·`1`·`1`
 - links `16` / `16`
@@ -56,4 +94,4 @@
 
 ---
 
-<sub>content-uuid `413a5229-bafb-8ce5-9986-5a8d80dbb8ce` · framed by typography partition `boltzmann` bonds `32` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `7a92ca5e-0471-85ca-9bfd-8b42a06aa20a` · framed by typography partition `boltzmann` bonds `32` · `pnpm readme` · `pnpm readme:check`</sub>

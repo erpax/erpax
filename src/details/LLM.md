@@ -3,7 +3,7 @@
 
 # details
 
-path `details` · uuid `cc73e3fc-dd6d-8e9c-a2a5-de6da52de2c1` · diamond `1096674c-253d-853e-91ae-0e81fb4d9253`
+path `details` · uuid `ce1621cc-58bf-8c17-b397-edd1cfad303e` · diamond `c37510f4-d1e0-855c-9a6a-49a15d85d0a5`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports bed·collapse·consumption·energy·has·label·law·merge·offer·shipping·sti · exports details · escapes —
 links `11/11` · folded `1` · bonds in `11` out `11`
@@ -14,4 +14,4 @@ law details is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `6e9d3b85-1510-859b-8890-2a70100f2bdb` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a8779734-32ff-847f-9fdc-3dea67fa2d04` · `pnpm readme` · `pnpm computed:check`</sub>

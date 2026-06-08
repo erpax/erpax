@@ -4,7 +4,7 @@
 # login
 
 path `login` · uuid `7181aeea-b2b8-8865-92cd-58111184bc20` · diamond `02f8957d-c458-81ad-9bce-4248144fdd68`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+horo `7` `descent` · trinity `1·1·1` · sealed `0`
 imports — · exports Login · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law login is one schema.org word, content-addressed; the same word collides ever
 
 ---
 
-<sub>content-uuid `86bc8818-d1f3-8fbb-81ef-5aaf8254f7b8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `dc77a148-e6b0-87f6-832d-c93d0e9aa798` · `pnpm readme` · `pnpm computed:check`</sub>

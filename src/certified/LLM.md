@@ -3,8 +3,8 @@
 
 # certified
 
-path `certified` · uuid `0bc29432-4a4b-8986-a883-a6acc3b70a83` · diamond `e8e7db46-c863-8c01-98b0-6845a3b0dd88`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `certified` · uuid `6535e4ae-fc65-879c-8dc2-221888ac54d0` · diamond `6af19060-a5fe-8d8e-8a75-f462650cb8d2`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports certified · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law certified is one schema.org word, content-addressed; the same word collides 
 
 ---
 
-<sub>content-uuid `7f0844ad-3089-8c34-977a-345e91925c99` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3f7263c9-ed8b-874c-9bc5-f9a1ddd2bbd1` · `pnpm readme` · `pnpm computed:check`</sub>

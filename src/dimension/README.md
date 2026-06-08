@@ -2,7 +2,7 @@
 
 # dimension
 
-> atom `dimension` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
+> atom `dimension` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -23,9 +23,9 @@
 
 ## typography graph
 
-- partition `dimension` · sub-root `bd1c5d7a-14ac-832a-8783-332309d3a359`
-- bond degree `188` · analysis neighbors `diamond`
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- partition `dimension` · sub-root `72eebc1c-ee7d-81f9-be90-a7b9163d17c1`
+- bond degree `192` · analysis neighbors `diamond`
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -37,18 +37,56 @@
 - `ISO/IEC 25010:2023 §5.7 modularity — plugin boundaries` · banner
 - `W3C Web Components composition pattern` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·4 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `188` · sealed `1` · horo `2`
+- bond degree `192` · sealed `1` · horo `4`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `3`
 
 ## identity
 
-- uuid `bd1c5d7a-14ac-832a-8783-332309d3a359`
-- bonds in `60` · out `60`
+- uuid `72eebc1c-ee7d-81f9-be90-a7b9163d17c1`
+- bonds in `61` · out `61`
 - trinity form·code·proof `1`·`1`·`1`
-- links `56` / `56`
+- links `58` / `58`
 - folded `1` · escapes `0`
 
 ## [[seal]]
@@ -57,4 +95,4 @@
 
 ---
 
-<sub>content-uuid `f1e166fc-0c31-8bd1-aacf-e88201379477` · framed by typography partition `dimension` bonds `188` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f918db50-2b16-8439-ac8e-303484ddbfb0` · framed by typography partition `dimension` bonds `192` · `pnpm readme` · `pnpm readme:check`</sub>

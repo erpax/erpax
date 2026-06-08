@@ -3,15 +3,15 @@
 
 # concatenate
 
-path `workflow/concatenate` · uuid `b926ead2-0625-8430-8151-32f04be767da` · diamond `b365371b-b510-8201-8c53-98ae82512dc6`
+path `workflow/concatenate` · uuid `b926ead2-0625-8430-8151-32f04be767da` · diamond `552d3917-5b7f-8ef2-8ddc-1ac40d3d5eef`
 horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports @/uuid/matrix · exports Workflow·const·function·interface · escapes —
-links `37/37` · folded `1` · bonds in `2` out `2`
-faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+links `37/37` · folded `1` · bonds in `23` out `23`
+faces worker·plugin·pwa `1·0·0`
+neighbors → answer·aura·balance·breath·command·cost·decide·derive·dry·entropy·gate·generate·law·merge·question·recover·self·sequence·society·spec·step·vocabulary·workflow · ← answer·aura·balance·breath·command·cost·decide·derive·dry·entropy·gate·generate·law·merge·question·recover·self·sequence·society·spec·step·vocabulary·workflow
 analysis aura
 law a workflow is the free monoid `(C×Q×A)*` over command·question·answer steps run with NO human — execute the command, ask the gate, on NO apply the COMPUTED [[self]]-sufficient answer and re-ask until YES — reaching its idempotent fixed point W* exactly when every gate is YES at once: the four faces of zero [[entropy]] ⟺ ∞ tamper-cost.
 
 ---
 
-<sub>content-uuid `eff96888-dcb7-828b-82a1-05d7e7a1fa7c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `be1e821e-6b93-8c3c-a85a-476dd48d052c` · `pnpm readme` · `pnpm computed:check`</sub>

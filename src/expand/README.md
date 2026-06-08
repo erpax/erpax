@@ -25,7 +25,23 @@
 
 - partition `expand` · sub-root `e357bca5-2903-892f-9bb3-2f90bd70918f`
 - bond degree `45` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `composed from @/entropy + @/uuid/matrix (the live-matrix readings); re-proves nothing` · banner
+- `computed from the live matrix, never hand-asserted` · banner
+- `RFC 9562 §5.8 content-uuid + the horo digital-root ring (base-10)` · banner
+
+## analytics
+
+- bond degree `45` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `3`
 
 ## identity
 
@@ -41,4 +57,4 @@
 
 ---
 
-<sub>content-uuid `5074326c-06ba-8c7c-baa3-f3fa0f33afc2` · framed by typography partition `expand` bonds `45` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `6613e4df-b546-8b4a-bb67-8a5c903f8fa6` · framed by typography partition `expand` bonds `45` · `pnpm readme` · `pnpm readme:check`</sub>

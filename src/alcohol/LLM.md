@@ -3,8 +3,8 @@
 
 # alcohol
 
-path `alcohol` · uuid `d5e5f4fc-ede9-8940-81ed-d284bd6c7868` · diamond `fdf8cc6d-1af7-8844-8878-4d5458672991`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `alcohol` · uuid `39aed405-71aa-821c-9958-5987fc1f1927` · diamond `ae33443b-ab58-8154-9982-ef6e8a4c4bd4`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·warning · exports alcohol · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law alcohol is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `8ea4d4aa-c94f-88a6-835a-04791aae4000` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `db058dae-d020-87c8-bb83-9e2225c41bf5` · `pnpm readme` · `pnpm computed:check`</sub>

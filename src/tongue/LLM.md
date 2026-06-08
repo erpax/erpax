@@ -3,15 +3,15 @@
 
 # tongue
 
-path `tongue` · uuid `d871d830-e810-8409-a878-f147f75ba30a` · diamond `70a8f3a9-4ad2-80ea-8dce-9b528bb201f1`
+path `tongue` · uuid `d871d830-e810-8409-a878-f147f75ba30a` · diamond `bf4c72d1-a9dd-8318-8f7a-8286c50106c9`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·weight · exports tongue · escapes —
-links `5/5` · folded `1` · bonds in `6` out `6`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·notice·stat·unlimited · ← cohort·landmarks·memories·notice·stat·unlimited
+neighbors → collapse·law·merge·sti·weight · ← collapse·law·merge·sti·weight
 analysis —
 law tongue is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `be9b4040-2d36-873b-8985-f274579fd474` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f6cdc64a-425e-8855-b4bd-5508121cb066` · `pnpm readme` · `pnpm computed:check`</sub>

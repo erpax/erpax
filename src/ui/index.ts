@@ -1,12 +1,52 @@
 /**
- * Utility functions for UI components automatically added by ShadCN and used in a few of our frontend components and blocks.
- *
- * Other functions may be exported from here in the future or by installing other shadcn components.
+ * shadcn/ui barrel — cn utility + full component catalog under src/ui/.
  */
 
-import { type ClassValue, clsx } from 'clsx'
-import { twMerge } from 'tailwind-merge'
+export { cn } from './utils'
 
-export function cn(...inputs: ClassValue[]) {
-  return twMerge(clsx(inputs))
-}
+export * from './accordion'
+export * from './alert'
+export * from './alert-dialog'
+export * from './aspect-ratio'
+export * from './avatar'
+export * from './badge'
+export * from './breadcrumb'
+export * from './button'
+export * from './calendar'
+export * from './card'
+export * from './carousel'
+export * from './chart'
+export * from './checkbox'
+export * from './collapsible'
+export * from './command'
+export * from './context-menu'
+export * from './dialog'
+export * from './drawer'
+export * from './dropdown-menu'
+export * from './form'
+export * from './hover-card'
+export * from './input'
+export * from './input-otp'
+export * from './label'
+export * from './menubar'
+export * from './navigation-menu'
+export * from './pagination'
+export * from './popover'
+export * from './progress'
+export * from './radio-group'
+export * from './resizable'
+export * from './scroll-area'
+export * from './select'
+export * from './separator'
+export * from './sheet'
+export * from './sidebar'
+export * from './skeleton'
+export * from './slider'
+export * from './sonner'
+export * from './switch'
+export * from './table'
+export * from './tabs'
+export * from './textarea'
+export * from './toggle'
+export * from './toggle-group'
+export * from './tooltip'

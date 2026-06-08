@@ -2,9 +2,11 @@
 
 # published
 
-> atom `authenticated/or/published` · horo `7` `descent` · [[balance]] `1` · [[seal]] `0`
+> atom `authenticated/or/published` · horo `8` `crest` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `authenticated/or/published` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,11 +23,59 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+
+### collapse
+
+- `balance:conserved`
+- `law:draft visibility is authenticated-only — a session grants full [[access]], an anonymous caller is filtered to published rows via [[scope]]'s `wherePublished`.`
+- `seal:unsealed`
+- `trigger:Use when a Payload collection should show drafts to logged-in users but only published versions to anonymous callers — the access predicate that grants `true` to a session and otherwise returns the published-only Where filter.`
+- `trigger:draft visibility is authenticated-only — a session grants full [[access]], an anonymous caller is filtered to published rows via [[scope]]'s `wherePublished`.`
+- `trigger:matter-twin:src/authenticated/or/published/index.ts`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `526b21b1-8b3c-871d-9eca-3755a48aca9d` · `93b06e17-7ac0-8ab6-9e76-bfbc8e3661d7`
+- content uuids `7f6d06bd-0a5e-8157-b3f0-74c406e6d1b5` · `bb2c00c4-0e04-8df3-aa06-465f81a0df5c`
+
+## [[entropy]] — gaps · seals
+
+> account code `authenticated/or/published` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.8` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `1` eb | Σ seal `11.8` eb |
+
+> net residual `-10.8` eb · seal/gap ratio `11.8` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `authenticated` · sub-root `4895a042-0394-8153-9779-6b0606cc1249`
-- bond degree `21` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- partition `authenticated` · sub-root `faf4d8ac-793e-8f8c-bf58-51557cba9111`
+- bond degree `14` · analysis neighbors —
+- graph root `86252db0-c776-84eb-b8e4-c884dca3a3ba`
 
 ## [[cloudflare]] bindings
 
@@ -33,18 +83,56 @@
 
 ## [[standards]]
 
-- `ISO-19011:2018 audit-trail draft-vs-published` · banner
+—
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·8 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
 
 ## analytics
 
-- bond degree `21` · sealed `0` · horo `7`
+- bond degree `14` · sealed `0` · horo `8`
 - variance `0` · balanced `1` · trinity sum `3`
-- bindings `0` · standards `1`
+- bindings `0` · standards `0`
 
 ## identity
 
-- uuid `c6f72ab4-290d-8217-9d0a-a52280b1d63f`
-- bonds in `6` · out `7`
+- uuid `8328e394-2f9f-8493-bd33-4d2645f3e8d7`
+- bonds in `3` · out `3`
 - trinity form·code·proof `1`·`1`·`1`
 - links `8` / `8`
 - folded `1` · escapes `0`
@@ -55,4 +143,4 @@
 
 ---
 
-<sub>content-uuid `7966a9d4-3715-84ca-9ed4-57335c35865b` · framed by typography partition `authenticated` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `57135743-1d54-88cd-8ac1-a60dd2369736` · framed by typography partition `authenticated` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>

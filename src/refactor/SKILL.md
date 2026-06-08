@@ -1,8 +1,131 @@
 ---
 name: refactor
-description: Use when reshaping the corpus toward the law — all logic mapped to fs, all is skills, every atom payload⊕vitepress, uuid the coordinate, anything that does not fit is junk. The migration organs live here as atoms, not as loose scripts.
+description: "Use when reshaping the corpus toward the law — all logic mapped to fs, all is skills, every atom payload⊕vitepress, uuid the coordinate, anything that does not fit is junk. The migration organs live here as atoms, not as loose scripts."
+atomPath: refactor
+coordinate: refactor · 1/base · ddadf41f
+contentUuid: "e6bc2584-3494-5b1a-ab1e-97ec6f8944ed"
+diamondUuid: "1d112177-f4b2-8de2-9dcc-62ea1b6de79d"
+uuid: "ddadf41f-b9c9-83fb-a24f-8031a3c1dc7d"
+horo: 1
+bonds:
+  in:
+    - accounting
+    - atom
+    - contribution
+    - dissolve
+    - gate
+    - identity
+    - integrity
+    - law
+    - matrix
+    - merge
+    - normalize
+    - payload
+    - proof
+    - refactor
+    - self
+    - sequence
+    - vitepress
+    - zeropoint
+  out:
+    - accounting
+    - atom
+    - contribution
+    - dissolve
+    - gate
+    - identity
+    - integrity
+    - law
+    - matrix
+    - merge
+    - normalize
+    - payload
+    - proof
+    - refactor
+    - self
+    - sequence
+    - vitepress
+    - zeropoint
+typography:
+  partition: refactor
+  bondDegree: 57
+  neighbors: []
+standards: []
+bindings: []
+neighbors:
+  wikilink:
+    - atom
+    - dissolve
+    - gate
+    - identity
+    - integrity
+    - matrix
+    - merge
+    - normalize
+    - payload
+    - proof
+    - refactor
+    - self
+    - sequence
+    - vitepress
+    - zeropoint
+  matrix:
+    - accounting
+    - atom
+    - contribution
+    - dissolve
+    - gate
+    - identity
+    - integrity
+    - law
+    - matrix
+    - merge
+    - normalize
+    - payload
+    - proof
+    - refactor
+    - self
+    - sequence
+    - vitepress
+    - zeropoint
+  backlinks:
+    - accounting
+    - atom
+    - contribution
+    - dissolve
+    - gate
+    - identity
+    - integrity
+    - law
+    - matrix
+    - merge
+    - normalize
+    - payload
+    - proof
+    - refactor
+    - self
+    - sequence
+    - vitepress
+    - zeropoint
+signatures:
+  computationUuid: "f7f5aec2-2e17-827a-937b-b7b10e08d71c"
+  stages:
+    - stage: path
+      stageUuid: "c214d354-0d94-8037-b4e5-ebb3bf5ee748"
+    - stage: trinity
+      stageUuid: "598267e1-2a40-8981-9dee-e9154616ef10"
+    - stage: boundary
+      stageUuid: "e9a8e4da-7ad5-834c-bc08-0c95194a6728"
+    - stage: links
+      stageUuid: "97bebf8e-1674-8c47-9339-1f77fd648b03"
+    - stage: horo
+      stageUuid: "d391a4eb-186f-83d6-b4f1-9798dbb4cfc5"
+    - stage: seal
+      stageUuid: "93407f97-bb2e-8f02-9aa3-ba280b905ba2"
+    - stage: uuid
+      stageUuid: "a50cdbc2-1588-8930-9ac4-d1a9ec72bcc2"
+version: 2
 ---
-
 # refactor — reshape the corpus toward the law
 
 Refactoring is itself logic, therefore itself a skill — it lives in `src`, not in a loose `scripts/` dir ([[sequence]]: location IS the address; logic outside the fs-map is junk). The law it serves:

@@ -3,7 +3,7 @@
 
 # agree
 
-path `agree` · uuid `a918ed9c-4f6b-888d-9a40-370389e011cd` · diamond `791c2c9c-f9ce-85aa-8da4-1bc7324d630e`
+path `agree` · uuid `5d46a397-7dea-8894-a689-359338719731` · diamond `f98e0443-c038-85bf-8e25-5a39b44aff0b`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti · exports agree · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
@@ -14,4 +14,4 @@ law agree is one schema.org word, content-addressed; the same word collides ever
 
 ---
 
-<sub>content-uuid `5099fda8-2728-8d00-b94e-cc46a1661619` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4fbf0838-aa2e-8ec2-81e2-93f411a4e56b` · `pnpm readme` · `pnpm computed:check`</sub>

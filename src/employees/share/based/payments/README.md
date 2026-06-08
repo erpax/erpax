@@ -2,9 +2,11 @@
 
 # payments
 
-> atom `employees/share/based/payments` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
+> atom `employees/share/based/payments` · horo `5` `round` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `employees/share/based/payments` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,11 +23,58 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+
+### collapse
+
+- `balance:conserved`
+- `law:one row per equity grant under IFRS 2 — the settlementType discriminator decides whether the grant credits equity or builds a liability, and expense is recognised straight-line over each vesting tranche; a single-folder collection node (no scatter, no drift).`
+- `seal:unsealed`
+- `trigger:Use when recording employee equity grants — stock options, RSUs, RSAs, PSUs, ESPP, SARs — under IFRS 2, tracking equity-settled vs cash-settled treatment, vesting tranches with service/performance/market conditions, cumulative expense recognition, exercises and forfeitures. The IFRS 2 share-based-payment grant register.`
+- `trigger:one row per equity grant under IFRS 2 — the settlementType discriminator decides whether the grant credits equity or builds a liability, and expense is recognised straight-line over each vesting tranche; a single-folder collection node (no scatter, no drift).`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `115be06d-aa22-89ff-98c8-fc898287ba6d` · `a09e556c-1409-808d-a226-48b6cef9cacf`
+- content uuids `8c390742-c1b1-8c27-ae49-a0b6fb6badb5` · `d6817cf8-155a-8c78-a244-c67b8c8a426c`
+
+## [[entropy]] — gaps · seals
+
+> account code `employees/share/based/payments` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.5` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `1` eb | Σ seal `11.5` eb |
+
+> net residual `-10.5` eb · seal/gap ratio `11.5` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `employees` · sub-root `b4e809aa-fd27-86f6-90b9-75ec1197d4f1`
-- bond degree `50` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- partition `employees` · sub-root `44323281-3d17-8530-94e1-e2b6734dac06`
+- bond degree `40` · analysis neighbors —
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
 
 ## [[cloudflare]] bindings
 
@@ -38,31 +87,68 @@
 - `IFRS IFRS-2 §30-§33 cash-settled-share-based-payment` · banner
 - `IFRS IFRS-2 §44 disclosure-requirements` · banner
 - `IFRS-2` · catalogue
-- `ISO 19011:2018 §6.4.6 audit-evidence-equity-grants` · banner
 - `ISO-4217:2015 currency-codes` · banner
 - `ISO-8601-1:2019 date-time grant-vesting-exercise` · banner
 - `SOX §404 internal-controls TOM-EQU-01` · banner
 - `US-GAAP` · catalogue
 - `US-GAAP ASC-718 stock-compensation` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·5 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `50` · sealed `1` · horo `1`
+- bond degree `40` · sealed `0` · horo `5`
 - variance `0` · balanced `1` · trinity sum `3`
-- bindings `0` · standards `11`
+- bindings `0` · standards `10`
 
 ## identity
 
-- uuid `e2d3c3c6-bde2-8ba9-a943-00c36ccb2ea7`
-- bonds in `12` · out `18`
+- uuid `270bfde6-f8ef-83bd-90cf-930fd33609a4`
+- bonds in `10` · out `10`
 - trinity form·code·proof `1`·`1`·`1`
 - links `7` / `7`
 - folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `0e0a9291-bdd0-8b16-8a7b-b5eec2a856a5` · framed by typography partition `employees` bonds `50` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `773fe91d-c25e-8927-9790-27babf1f0d27` · framed by typography partition `employees` bonds `40` · `pnpm readme` · `pnpm readme:check`</sub>

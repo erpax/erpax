@@ -2,7 +2,7 @@
 
 # connections
 
-> atom `connections` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
+> atom `connections` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -23,9 +23,9 @@
 
 ## typography graph
 
-- partition `connections` · sub-root `eb793249-1b5f-8bae-b67d-c288257f782b`
+- partition `connections` · sub-root `9ab5856a-9ee7-8bc1-8add-a4ac6cfefdd3`
 - bond degree `60` · analysis neighbors —
-- graph root `0349017a-99bf-8657-ae7e-21b09f363ed4`
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -48,15 +48,53 @@
 - `W3C ActivityStreams 2.0 social-graph-vocabulary (Follow/Block/Like)` · banner
 - `W3C-ActivityPub` · catalogue
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·4 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `60` · sealed `1` · horo `1`
+- bond degree `60` · sealed `1` · horo `4`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `14`
 
 ## identity
 
-- uuid `eb793249-1b5f-8bae-b67d-c288257f782b`
+- uuid `9ab5856a-9ee7-8bc1-8add-a4ac6cfefdd3`
 - bonds in `20` · out `20`
 - trinity form·code·proof `1`·`1`·`1`
 - links `14` / `14`
@@ -68,4 +106,4 @@
 
 ---
 
-<sub>content-uuid `42bcd60c-cf14-8e03-8fd6-59fe2906cdef` · framed by typography partition `connections` bonds `60` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `12765f61-00c5-8a05-875c-2cf443fca545` · framed by typography partition `connections` bonds `60` · `pnpm readme` · `pnpm readme:check`</sub>

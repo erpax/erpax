@@ -10,6 +10,7 @@
  * @see ./compute-rules.ts — ./bindings.ts — ../law/folder/ratchet.generated
  */
 import { startProgressHeartbeat } from '@/cli/progress-heartbeat'
+import { execSync } from 'node:child_process'
 import { guardian } from '@/guardian'
 import { seal, type SealVerdict } from '@/seal'
 import { folderGuardians, computedBaseline } from '@/law/folder'
@@ -262,7 +263,6 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   const accountingOnly = process.argv.includes('--accounting-only')
   if (emitRatchet) {
     // Delegate to emit-ratchet entry — avoids top-level await in this barrel.
-    const { execSync } = require('node:child_process') as typeof import('node:child_process')
     const extra = process.argv.includes('--bootstrap') ? ' --bootstrap' : ''
     execSync(`pnpm rules:ratchet${extra}`, { stdio: 'inherit', cwd: process.cwd() })
     process.exit(0)

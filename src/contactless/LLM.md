@@ -3,8 +3,8 @@
 
 # contactless
 
-path `contactless` · uuid `f00e50a3-97b6-8a42-91b3-d872238cca9d` · diamond `4cb1143e-3b47-8a6c-beb7-61e1681d595c`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `contactless` · uuid `6da3fe3f-a1ea-8ecc-a3ef-68466c69d03b` · diamond `e51a783b-9d06-82aa-a9a0-1e904be416fb`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·payment·sti · exports contactless · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law contactless is one schema.org word, content-addressed; the same word collide
 
 ---
 
-<sub>content-uuid `53b0aa91-6a50-827f-8deb-170da6dd7ad7` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `192c2435-238b-86e7-a97d-bef0e393d3bc` · `pnpm readme` · `pnpm computed:check`</sub>

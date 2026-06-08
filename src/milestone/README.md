@@ -23,7 +23,21 @@
 
 - partition `milestone` · sub-root `198fef17-9338-88e3-b7c3-7affdf4b2ae6`
 - bond degree `12` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `12` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `5dec0117-ce6b-8c48-8b48-7e5aaf1e782a` · framed by typography partition `milestone` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `fe322bec-13fb-8f0d-9dde-6af491fb815c` · framed by typography partition `milestone` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

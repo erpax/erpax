@@ -2,7 +2,7 @@
 
 # constitution
 
-> atom `constitution` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
+> atom `constitution` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -23,9 +23,9 @@
 
 ## typography graph
 
-- partition `constitution` · sub-root `dd6e74f8-f181-8d94-8dc1-a3e42437dfcf`
+- partition `constitution` · sub-root `699c08fa-5fcd-8703-b638-2603d6a7eb78`
 - bond degree `36` · analysis neighbors —
-- graph root `0349017a-99bf-8657-ae7e-21b09f363ed4`
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -38,15 +38,53 @@
 - `US-CTA-2021` · catalogue
 - `Venice Commission Rule of Law (entrenched fundamental guarantees)` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·7 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `36` · sealed `1` · horo `4`
+- bond degree `36` · sealed `1` · horo `7`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `4`
 
 ## identity
 
-- uuid `dd6e74f8-f181-8d94-8dc1-a3e42437dfcf`
+- uuid `699c08fa-5fcd-8703-b638-2603d6a7eb78`
 - bonds in `11` · out `11`
 - trinity form·code·proof `1`·`1`·`1`
 - links `13` / `13`
@@ -58,4 +96,4 @@
 
 ---
 
-<sub>content-uuid `a40db73b-fe75-8798-bef0-e01ce162dd42` · framed by typography partition `constitution` bonds `36` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b10980f2-8371-84da-a504-5d737a61e769` · framed by typography partition `constitution` bonds `36` · `pnpm readme` · `pnpm readme:check`</sub>

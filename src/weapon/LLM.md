@@ -3,15 +3,15 @@
 
 # weapon
 
-path `weapon` · uuid `9b44e079-8cdb-8a73-9d27-fc53c3932342` · diamond `3a70455b-213a-8a02-b350-86cb94480b59`
+path `weapon` · uuid `9b44e079-8cdb-8a73-9d27-fc53c3932342` · diamond `bc6effdf-4544-8467-8efe-e8073ec98725`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports weapon · escapes —
-links `4/4` · folded `1` · bonds in `5` out `5`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·cohort·landmarks·memories·stat · ← action·cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law weapon is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `36407b1a-a157-8567-84c9-7ff1e7a0999e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0ca31a1d-1ecc-8d84-adf8-83cd9b110c52` · `pnpm readme` · `pnpm computed:check`</sub>

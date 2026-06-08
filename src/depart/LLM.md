@@ -3,8 +3,8 @@
 
 # depart
 
-path `depart` · uuid `947d4f35-e990-83c4-897a-9b01087a30d0` · diamond `0b6e4c62-0a8a-8343-8119-adc430c5a54f`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `depart` · uuid `296f5ce5-5dd6-8326-b24d-a46aca025513` · diamond `c574f6d6-e434-8916-9641-a74ee3e11619`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti · exports depart · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law depart is one schema.org word, content-addressed; the same word collides eve
 
 ---
 
-<sub>content-uuid `1e5348c2-76ff-8360-a856-a0fb77879b9d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `71d371e0-4e30-8d18-9c0d-0aa1cfa3cafa` · `pnpm readme` · `pnpm computed:check`</sub>

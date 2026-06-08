@@ -3,15 +3,15 @@
 
 # statements
 
-path `gl/accounts/bank/statements` · uuid `f3831dc7-ef5c-8890-a515-6fde9703b11d` · diamond `165b53d7-3b0a-850e-97a7-39a06550b1bf`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+path `gl/accounts/bank/statements` · uuid `32cb5a4c-6508-8272-b929-0f31b912452e` · diamond `e9754da0-680d-868d-9d1b-6a9136b6c427`
+horo `1` `base` · trinity `1·1·1` · sealed `0`
 imports @/audit/trail/after/change·@/auth·@/auto/populate/created/by·@/auto/populate/tenant·@/auto/set/timestamp·@/base/accounting/field·@/utility · exports default · escapes —
-links `9/9` · folded `1` · bonds in `17` out `23`
+links `9/9` · folded `1` · bonds in `14` out `14`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·accounting·anchor·balance·budgetvariance·disclosure·hedge·horo·horo·identity·identity·law·law·materiality·proof·proof·reconciliations·segment·standard·standard·transaction·transaction·variance · ← accounting·anchor·balance·budgetvariance·disclosure·hedge·horo·identity·law·materiality·proof·reconciliations·reconciliations·segment·standard·transaction·variance
+neighbors → accounting·balance·budgetvariance·disclosure·hedge·horo·identity·law·materiality·proof·segment·standard·transaction·variance · ← accounting·balance·budgetvariance·disclosure·hedge·horo·identity·law·materiality·proof·segment·standard·transaction·variance
 analysis —
 law a bank statement is the external [[proof]] of cash — imported lines (CSV/OFX/API) matched against journal entries with a typed match and variance, feeding reconciliation; the bank is the [[anchor]] the ledger reconciles to.
 
 ---
 
-<sub>content-uuid `6d935338-8a01-8a65-8f7e-bb90e1501e95` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4c57408e-fc1f-8139-a0fd-69f5351ed676` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -25,7 +25,24 @@
 
 - partition `messages` · sub-root `8988fcce-f4cc-84b0-92fd-9331df8933bb`
 - bond degree `24` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `GDPR Art 5(1)(e) storage-limitation retention` · banner
+- `ISO-19011:2018 audit-trail message-provenance` · banner
+- `ISO-27001 A.5.23 cloud-service-tenant-isolation` · banner
+- `ISO-8601-1:2019 date-time sent-read-timestamps` · banner
+
+## analytics
+
+- bond degree `24` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `4`
 
 ## identity
 
@@ -41,4 +58,4 @@
 
 ---
 
-<sub>content-uuid `a7bc5365-f528-847a-aeac-7bc346cc6a79` · framed by typography partition `messages` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `798cb7d0-0e7d-8ee9-9639-111bc138678c` · framed by typography partition `messages` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>

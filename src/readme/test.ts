@@ -57,12 +57,17 @@ import {
   emptyCorpusQuantumThinking,
   assertCorpusPathFollowGate,
   corpusPathFollowOpts,
+  deriveReadmeRootInputsInWaves,
+  renderRootReadmeInWaves,
+  verifyRootReadmeUsesFrozenInputs,
+  verifyComputedFacesForPaths,
+  materializeComputedFacesForPathsStable,
   resetCorpusPathFollowCache,
   COMPARABLE_UNIT,
   LANDAUER_BIT,
   GAP_BASE_WEIGHT,
 } from '@/readme'
-import { followEveryPathAll } from '@/path'
+import { followEveryPathAll, ledgerFromPathWalk } from '@/path'
 import { deriveDiamond } from '@/diamond'
 import { finishedIdeaCrossed } from '@/seal'
 import { parseWranglerBindings } from '@/cloudflare'
@@ -734,6 +739,25 @@ describe('readme — quantum thinking (load → transform → render)', () => {
   })
 })
 
+describe('readme — root wave frozen inputs', () => {
+  it('verifyRootReadmeUsesFrozenInputs — back-to-back wave derives are byte-identical', () => {
+    resetCorpusPathFollowCache()
+    const { ok } = verifyRootReadmeUsesFrozenInputs(process.cwd())
+    expect(ok).toBe(true)
+  })
+
+  it('materializeComputedFacesForPathsStable — fresh verify is zero drift for quantum/digit', () => {
+    resetCorpusPathFollowCache()
+    const cwd = process.cwd()
+    const atomPath = 'quantum/digit'
+    materializeComputedFacesForPathsStable([atomPath], cwd)
+    const drift = verifyComputedFacesForPaths([atomPath], cwd)
+    expect(drift.readme.drift, drift.readme.drift.join()).toEqual([])
+    expect(drift.llm.drift).toEqual([])
+    expect(drift.diamond.drift).toEqual([])
+  }, 180_000)
+})
+
 describe('readme — path-follow gravity gate', () => {
   it('assertCorpusPathFollowGate — full lattice walk passes', () => {
     resetCorpusPathFollowCache()
@@ -745,9 +769,11 @@ describe('readme — path-follow gravity gate', () => {
 
   it('corpusPathFollowOpts pairs followEveryPathAll with canonical ledger', () => {
     resetCorpusPathFollowCache()
+    const paths = followEveryPathAll()
+    const expectedLedgerLen = ledgerFromPathWalk(paths, '2026-06-08T12:00:00.000Z').length
     const { pathsVisited, pathLedger } = corpusPathFollowOpts('2026-06-08T12:00:00.000Z')
-    expect(pathsVisited.size).toBe(followEveryPathAll().length)
-    expect(pathLedger).toHaveLength(followEveryPathAll().length)
+    expect(pathsVisited.size).toBe(paths.length)
+    expect(pathLedger).toHaveLength(expectedLedgerLen)
     expect(pathLedger[0]!.prevEntryUuid).toBeNull()
     expect(pathLedger[1]!.prevEntryUuid).toBe(pathLedger[0]!.entryUuid)
   })

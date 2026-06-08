@@ -2,7 +2,7 @@
 
 # frameworks
 
-> atom `compliance/frameworks` · horo `5` `round` · [[balance]] `1` · [[seal]] `0`
+> atom `compliance/frameworks` · horo `4` `weave` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -19,13 +19,13 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
 
 ## typography graph
 
-- partition `compliance` · sub-root `9b1931fc-526d-8686-bbd2-928435640965`
-- bond degree `6` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- partition `compliance` · sub-root `e6b33a58-3e66-81b0-a618-e68b7e76e9f5`
+- bond degree `0` · analysis neighbors —
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -39,15 +39,53 @@
 - `ISO-37301:2021 compliance-management-systems` · banner
 - `US-CTA-2021` · catalogue
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unbalanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| not-held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·4 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `6` · sealed `0` · horo `5`
-- variance `0` · balanced `1` · trinity sum `3`
+- bond degree `0` · sealed `0` · horo `4`
+- variance `1` · balanced `0` · trinity sum `3`
 - bindings `0` · standards `5`
 
 ## identity
 
-- uuid `c015579c-2e59-8c0e-aa04-abe14ffd58e8`
+- uuid `1050fa30-2bcd-8dad-9732-b9127754496a`
 - bonds in `2` · out `2`
 - trinity form·code·proof `1`·`1`·`1`
 - links `1` / `1`
@@ -59,4 +97,4 @@
 
 ---
 
-<sub>content-uuid `9ff80177-c987-817f-9b14-df4840e5b1a5` · framed by typography partition `compliance` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `7dc7c341-52b3-89c9-a605-5076c0afeece` · framed by typography partition `compliance` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

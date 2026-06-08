@@ -3,8 +3,8 @@
 
 # comic
 
-path `comic` · uuid `8e1b204a-5c82-8f1c-a5fc-eb8d32c6b244` · diamond `5ceeb4ec-d1b2-8b55-aed7-99f2f4e6997d`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `comic` · uuid `fd22f661-d595-8839-807d-9fa47dea6e5d` · diamond `60e25c8e-33b9-82e2-83d6-56909928aa11`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports art·collapse·cover·issue·law·merge·series·sti·story · exports comic · escapes —
 links `9/9` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law comic is one schema.org word, content-addressed; the same word collides ever
 
 ---
 
-<sub>content-uuid `afb02ee3-960a-8b4b-945e-31139f6afbbb` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ad891778-caed-8faa-bb6d-e286635aab91` · `pnpm readme` · `pnpm computed:check`</sub>

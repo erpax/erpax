@@ -3,15 +3,15 @@
 
 # unincorporated
 
-path `unincorporated` · uuid `4c4caad0-ee6b-8d31-a719-8995f30ea78d` · diamond `e792108d-2846-850d-8040-bb2e1334dfbb`
+path `unincorporated` · uuid `4c4caad0-ee6b-8d31-a719-8995f30ea78d` · diamond `c8c066f1-1905-8659-8a35-0270fd32b308`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports unincorporated · escapes —
-links `4/4` · folded `1` · bonds in `6` out `6`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·guarantee·landmarks·memories·negative·stat · ← cohort·guarantee·landmarks·memories·negative·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law unincorporated is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `5c94d0f5-ca06-85d1-b44f-5f40bcc65e4f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e2020937-9c2e-8367-9db4-6d6a8b3cbb15` · `pnpm readme` · `pnpm computed:check`</sub>

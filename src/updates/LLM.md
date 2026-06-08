@@ -3,15 +3,15 @@
 
 # updates
 
-path `updates` · uuid `722557bc-9bfa-84bc-a505-6e41c0e37c57` · diamond `66ea8c99-d96c-8da3-85dc-f1ef49efc0d8`
+path `updates` · uuid `722557bc-9bfa-84bc-a505-6e41c0e37c57` · diamond `09992dad-72b9-8adf-b19a-e52b96e2c209`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·guidelines·law·merge·news·sti · exports updates · escapes —
-links `6/6` · folded `1` · bonds in `9` out `9`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·detected·has·iata·landmarks·memories·physiological·spouse·stat · ← cohort·detected·has·iata·landmarks·memories·physiological·spouse·stat
+neighbors → collapse·guidelines·law·merge·news·sti · ← collapse·guidelines·law·merge·news·sti
 analysis —
 law updates is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `c2911252-f245-83a5-b1be-5a9c9bd85a33` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6ef7de2c-e18b-8b0a-9305-ec0d0e057ba7` · `pnpm readme` · `pnpm computed:check`</sub>

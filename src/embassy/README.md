@@ -23,7 +23,7 @@
 
 - partition `embassy` · sub-root `ddb04503-99a6-809c-9651-03fa495fda7c`
 - bond degree `6` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `471fe6c4-12f5-819e-bd1e-3e5bbd2a06c9` · framed by typography partition `embassy` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f0979802-d9ca-8e29-8e87-73be98aa6f6f` · framed by typography partition `embassy` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>

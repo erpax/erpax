@@ -3,7 +3,7 @@
 
 # achieve
 
-path `achieve` · uuid `1ba479ed-ff60-8dee-ae6a-7897f8f74143` · diamond `5efc0d6b-864b-878d-94ec-34206db9c350`
+path `achieve` · uuid `871d4f14-0fdf-8a27-83f3-31b700a2a94a` · diamond `1a177ec8-8d8a-8a14-922f-4c28e186fc81`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti · exports achieve · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
@@ -14,4 +14,4 @@ law achieve is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `642b1fb4-e02e-8834-a4fc-7847e7767ae8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4c88e692-9e0f-8a8c-815e-07ac0539f5be` · `pnpm readme` · `pnpm computed:check`</sub>

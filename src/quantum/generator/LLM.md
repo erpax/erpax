@@ -3,10 +3,10 @@
 
 # generator
 
-path `quantum/generator` · uuid `f371be60-75d1-8602-abab-dfe68098b26c` · diamond `521cceaa-ece8-8243-81cf-b11e53eeaea8`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
-imports atom·collapse·generate·law·matrix·merge·particle·reality·uuid·void · exports generator · escapes —
-links `21/21` · folded `1` · bonds in `12` out `12`
+path `quantum/generator` · uuid `f047e183-dea7-83a2-9694-7c11ad870964` · diamond `1a7c3c9c-53fe-8a4e-a154-685fc0e29e94`
+horo `8` `crest` · trinity `1·1·1` · sealed `1`
+imports @/path·@/uuid/matrix · exports const·function · escapes —
+links `32/32` · folded `1` · bonds in `12` out `12`
 faces worker·plugin·pwa `1·0·0`
 neighbors → atom·collapse·generate·law·matrix·mcp·merge·particle·reality·topography·uuid·void · ← atom·collapse·generate·law·matrix·mcp·merge·particle·reality·topography·uuid·void
 analysis —
@@ -14,4 +14,4 @@ law every possible content already has its address in the [[uuid]] space, so gen
 
 ---
 
-<sub>content-uuid `f9d0df9e-f1b2-892e-addc-c2745b5a5a20` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ff64115e-4b26-8e6e-a93a-8755326adbc5` · `pnpm readme` · `pnpm computed:check`</sub>

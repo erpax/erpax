@@ -3,15 +3,15 @@
 
 # successor
 
-path `successor` · uuid `c59a2d71-c683-8210-82aa-a3a5836f801f` · diamond `d2dd04b3-9844-8d95-8fa4-784cbbeb9903`
+path `successor` · uuid `c59a2d71-c683-8210-82aa-a3a5836f801f` · diamond `e947fceb-2842-807d-89b0-86403e47be47`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports successor · escapes —
-links `2/2` · folded `1` · bonds in `5` out `5`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·diagram·landmarks·memories·stat · ← cohort·diagram·landmarks·memories·stat
+neighbors → law·thing · ← law·thing
 analysis —
 law successor is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `7d123275-63be-8a15-bf97-8d4547db057c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3d5ce7b6-7544-8081-9325-f97fddb60980` · `pnpm readme` · `pnpm computed:check`</sub>

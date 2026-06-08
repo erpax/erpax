@@ -3,15 +3,15 @@
 
 # subcellular
 
-path `subcellular` · uuid `ea4994ef-a73f-8429-9825-0e6c365bc72e` · diamond `58fcc40b-eb7f-8be2-90bd-01d1da912fa4`
+path `subcellular` · uuid `ea4994ef-a73f-8429-9825-0e6c365bc72e` · diamond `cc7819a8-059a-8b0b-b9d2-67b70eeeb024`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·located·location·merge·sti · exports subcellular · escapes —
-links `6/6` · folded `1` · bonds in `5` out `5`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·lactose·landmarks·memories·stat · ← cohort·lactose·landmarks·memories·stat
+neighbors → collapse·law·located·location·merge·sti · ← collapse·law·located·location·merge·sti
 analysis —
 law subcellular is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `1bf5db4a-0a64-82d8-af20-98916547631b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `addff940-6aad-8434-98d8-bd56aa2554e6` · `pnpm readme` · `pnpm computed:check`</sub>

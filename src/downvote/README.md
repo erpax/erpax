@@ -23,7 +23,7 @@
 
 - partition `downvote` · sub-root `feec1371-3faf-8c42-9cd2-e91b8e557482`
 - bond degree `16` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `06a70b6c-79bd-86b1-b99f-24d22ae02786` · framed by typography partition `downvote` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e8d0ff4e-de7b-86ee-8a6e-ee8be055fd81` · framed by typography partition `downvote` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

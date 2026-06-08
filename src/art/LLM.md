@@ -3,8 +3,8 @@
 
 # art
 
-path `art` · uuid `9eea4880-70ec-83a2-9040-10a895423198` · diamond `cdbc2765-a7f0-882b-9e31-62c153d7d56f`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `art` · uuid `be8990e4-1c72-8133-91ae-d82af56314da` · diamond `f8cfc97f-b0ce-8efd-96b2-9b85ee78d9b5`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·comic·cover·edition·gallery·law·medium·merge·sequential·sti · exports art · escapes —
 links `10/10` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law art is one schema.org word, content-addressed; the same word collides every 
 
 ---
 
-<sub>content-uuid `c3980153-241d-835a-b551-eb06b5101f46` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e8c6ce56-41e1-85af-9eb7-787c9a0e836a` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # task
 
-path `task` · uuid `e6dd9663-8594-80e5-9dd6-9b4aa64efede` · diamond `8f807f40-35ae-84c4-b3bb-b83110c627c4`
+path `task` · uuid `e6dd9663-8594-80e5-9dd6-9b4aa64efede` · diamond `19a0fc8d-e467-86bc-9c8e-bb8476fd5d1f`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports balance·law·tasks·work · exports task · escapes —
-links `9/9` · folded `1` · bonds in `16` out `16`
+links `9/9` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → agriculture·aquaculture·breastfeeding·claim·crisis·diffusion·feed·founder·grants·hamiltonian·id·measurements·sbbi·torus·user·vibration · ← agriculture·aquaculture·breastfeeding·claim·crisis·diffusion·feed·founder·grants·hamiltonian·id·measurements·sbbi·torus·user·vibration
+neighbors → balance·law·tasks·work · ← balance·law·tasks·work
 analysis —
 law one task is the singular model of one tasks row — a unit of [[work]] to be completed by an actor; every collection has its model ([[balance]]).
 
 ---
 
-<sub>content-uuid `85249f65-d266-8427-925e-ce6d38c78afe` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `31e3fc34-955e-8dee-b285-815f7371abdf` · `pnpm readme` · `pnpm computed:check`</sub>

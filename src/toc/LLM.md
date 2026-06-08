@@ -3,15 +3,15 @@
 
 # toc
 
-path `toc` · uuid `56aa9b4e-690c-8bbe-b210-55269d628674` · diamond `53e55caa-147d-8372-8dd2-f288961c986a`
+path `toc` · uuid `56aa9b4e-690c-8bbe-b210-55269d628674` · diamond `7b435d9b-4436-806b-9016-5a590eb5d8fc`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·continuation·entry·hyper·law·merge·sti · exports toc · escapes —
-links `7/7` · folded `1` · bonds in `10` out `10`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → attraction·cdformat·cohort·collect·desire·infants·landmarks·memories·sanitization·stat · ← attraction·cdformat·cohort·collect·desire·infants·landmarks·memories·sanitization·stat
+neighbors → collapse·continuation·entry·hyper·law·merge·sti · ← collapse·continuation·entry·hyper·law·merge·sti
 analysis —
 law toc is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `19b094b0-caa1-8197-9388-a1dc88e6c8b4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `cce90ca1-745d-8ff7-a308-49597e5657b9` · `pnpm readme` · `pnpm computed:check`</sub>

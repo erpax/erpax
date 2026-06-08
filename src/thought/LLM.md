@@ -3,15 +3,15 @@
 
 # thought
 
-path `thought` · uuid `—` · diamond `399b1e4d-615e-8a57-8176-c6c549eca26e`
-horo `—` `—` · trinity `1·0·0` · sealed `0`
+path `thought` · uuid `91559ce7-8d1f-8330-b07b-cf3779a53ca5` · diamond `af9932b7-8513-8556-95b5-aad0c3f78b2e`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports akashic·atom·breath·confirm·diamond·dimension·generate·guardian·holographic·identity·memory·merge·part·quantum·seal·self·sequence·stream·uuid·whole · exports thought · escapes —
-links `46/48` · folded `0` · bonds in `0` out `0`
+links `48/48` · folded `1` · bonds in `20` out `20`
 faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
-analysis diamond·hallucination·purity
+neighbors → akashic·atom·breath·confirm·diamond·dimension·generate·guardian·holographic·identity·memory·merge·part·reference·seal·self·sequence·stream·uuid·whole · ← akashic·atom·breath·confirm·diamond·dimension·generate·guardian·holographic·identity·memory·merge·part·reference·seal·self·sequence·stream·uuid·whole
+analysis diamond
 law —
 
 ---
 
-<sub>content-uuid `e27db219-189a-8706-95e0-dcefc596182e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6bb76e2b-707f-8fdd-8052-999381dd44fd` · `pnpm readme` · `pnpm computed:check`</sub>

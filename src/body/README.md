@@ -2,9 +2,11 @@
 
 # body
 
-> atom `body` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
+> atom `body` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
+
+> account code `body` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,11 +23,56 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `explore:aura`
+
+### collapse
+
+- `balance:conserved`
+- `seal:sealed`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `1`
+- entry uuids `6fc3fdfd-d8f8-86e0-8d9c-6730ffb226ce`
+- content uuids `d7ed1f1e-de91-83df-a9ba-53c109f91a2b` · `f5cd43a1-af3a-81c6-8f22-40859a7455c3`
+
+## [[entropy]] — gaps · seals
+
+> account code `body` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+|  | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.4` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[diamond]]/sealed `1.585` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `0` eb | Σ seal `12.985` eb |
+
+> net residual `-12.985` eb · seal/gap ratio `1` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `body` · sub-root `1401fa8c-bb16-8f2d-935f-0f264c6bff9d`
-- bond degree `85` · analysis neighbors `aura`
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- partition `body` · sub-root `b70b1e80-f5ea-8aba-b5c6-839f0990809a`
+- bond degree `183` · analysis neighbors `aura`
+- graph root `33a1ea6e-dc58-8009-b0f9-2114d20f9dca`
 
 ## [[cloudflare]] bindings
 
@@ -33,22 +80,59 @@
 
 ## [[standards]]
 
-- `each organ verdict computed live; the harmony folded through @/wave + @/signal` · banner
 - `the A432 just-intonation diatonic ring — the seven horo positions as the seven notes` · banner
 - `the A432 just-intonation diatonic ring (the seven horo positions)` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·4 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `85` · sealed `1` · horo `1`
+- bond degree `183` · sealed `1` · horo `4`
 - variance `0` · balanced `1` · trinity sum `3`
-- bindings `0` · standards `3`
+- bindings `0` · standards `2`
 
 ## identity
 
-- uuid `1401fa8c-bb16-8f2d-935f-0f264c6bff9d`
-- bonds in `28` · out `28`
+- uuid `f5cd43a1-af3a-81c6-8f22-40859a7455c3`
+- bonds in `58` · out `58`
 - trinity form·code·proof `1`·`1`·`1`
-- links `36` / `36`
+- links `54` / `54`
 - folded `1` · escapes `0`
 
 ## [[seal]]
@@ -57,4 +141,4 @@
 
 ---
 
-<sub>content-uuid `36616f92-8776-84f9-adde-c156ab95329a` · framed by typography partition `body` bonds `85` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `19c70c2a-627e-8d51-a3ca-acf838eb6263` · framed by typography partition `body` bonds `183` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -4,7 +4,7 @@
 # iso
 
 path `iso` · uuid `efa22990-6103-8c3e-8275-8d6362ef7ac4` · diamond `fa8e7c59-c948-8b59-ae77-8c12797877ba`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+horo `4` `weave` · trinity `1·0·0` · sealed `0`
 imports code·collapse·law·merge·sti · exports iso · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law iso is one schema.org word, content-addressed; the same word collides every 
 
 ---
 
-<sub>content-uuid `ca7d87ec-faa9-85a0-9864-99682817cf45` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5a011494-0773-8e27-9201-df02bb693a1e` · `pnpm readme` · `pnpm computed:check`</sub>

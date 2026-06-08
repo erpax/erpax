@@ -2,7 +2,7 @@
 
 # digit
 
-> atom `digit` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `digit` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -23,9 +23,9 @@
 
 ## typography graph
 
-- partition `digit` · sub-root `6a5ae215-b295-8318-8b8c-a7c627444dd5`
-- bond degree `131` · analysis neighbors `aura` · `diamond`
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- partition `digit` · sub-root `7336a87c-448a-8e07-a0e3-6a58da148349`
+- bond degree `113` · analysis neighbors `aura` · `diamond`
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -36,16 +36,54 @@
 - `RFC 9562 §5.8 content-uuid + the horo digital-root ring` · banner
 - `the digit address is computed from the live matrix, never hand-maintained` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·8 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `131` · sealed `1` · horo `7`
+- bond degree `113` · sealed `1` · horo `8`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `2`
 
 ## identity
 
-- uuid `757b6ec0-52a3-8a21-8bf0-f0c0be92876e`
-- bonds in `38` · out `42`
+- uuid `7336a87c-448a-8e07-a0e3-6a58da148349`
+- bonds in `31` · out `31`
 - trinity form·code·proof `1`·`1`·`1`
 - links `29` / `29`
 - folded `1` · escapes `0`
@@ -56,4 +94,4 @@
 
 ---
 
-<sub>content-uuid `1118371b-ff8f-8828-8b8f-96e23843ead6` · framed by typography partition `digit` bonds `131` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `337b5135-ae1e-8972-bc2d-e434811c4df9` · framed by typography partition `digit` bonds `113` · `pnpm readme` · `pnpm readme:check`</sub>

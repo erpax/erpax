@@ -7,11 +7,11 @@ path `vendors` · uuid `daece71e-c8b3-81ae-8c5d-39f76fc04372` · diamond `d0bc19
 horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports @/audit/trail/after/change·@/auth·@/auto/populate/tenant·@/classify/tax/id·@/derive/country/from/iban · exports const · escapes —
 links `8/8` · folded `1` · bonds in `7` out `7`
-faces worker·plugin·pwa `0·0·0`
-neighbors → arts·artwork·cohort·euenergy·landmarks·memories·stat · ← arts·artwork·cohort·euenergy·landmarks·memories·stat
+faces worker·plugin·pwa `1·0·0`
+neighbors → activities·identity·law·party·quotes·scorecards·standard · ← activities·identity·law·party·quotes·scorecards·standard
 analysis —
 law vendors is the purchase-side party master — one [[identity]] per supplier carrying legal identity, tax classification, bank details, payment terms and AP ledger defaults; the accounts-payable party registry.
 
 ---
 
-<sub>content-uuid `9e8f849d-0731-830d-8a91-8a948825cff9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e9837d33-d54e-8800-8e95-c6232dde897e` · `pnpm readme` · `pnpm computed:check`</sub>

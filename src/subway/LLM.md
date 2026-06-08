@@ -3,15 +3,15 @@
 
 # subway
 
-path `subway` · uuid `7e5b3a3f-0285-892d-8851-2b0c50be6f90` · diamond `9074691a-086e-8d9a-bda0-0c068ff0e7a1`
+path `subway` · uuid `7e5b3a3f-0285-892d-8851-2b0c50be6f90` · diamond `a75d04d9-4e2b-8e83-bb28-31ee67d4ee05`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·station·sti · exports subway · escapes —
-links `5/5` · folded `1` · bonds in `2` out `2`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → collapse·law·merge·station·sti · ← collapse·law·merge·station·sti
 analysis —
 law subway is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `3b47d290-df45-81c2-907b-d70bae15a4e9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `743c4065-c615-8158-9a08-d1cb398fbd2f` · `pnpm readme` · `pnpm computed:check`</sub>

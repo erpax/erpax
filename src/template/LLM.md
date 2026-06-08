@@ -3,15 +3,15 @@
 
 # template
 
-path `template` · uuid `a400d29a-ca2f-8006-ab50-5312ab358df8` · diamond `4fb70f03-fa6c-8d84-ae7b-a21554e90a50`
+path `template` · uuid `a400d29a-ca2f-8006-ab50-5312ab358df8` · diamond `4052ac76-dfd9-8205-ae83-01f6f7816362`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports checkout·collapse·law·merge·page·sti·url · exports template · escapes —
-links `7/7` · folded `1` · bonds in `6` out `6`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → customer·emission·foot·snapshots·temple·typography · ← customer·emission·foot·snapshots·temple·typography
+neighbors → checkout·collapse·law·merge·page·sti·url · ← checkout·collapse·law·merge·page·sti·url
 analysis —
 law template is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `69c2b11b-300b-8ba5-988f-e5e7d75f80d7` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `12487abd-3aee-808b-8931-63f42be8e5b1` · `pnpm readme` · `pnpm computed:check`</sub>

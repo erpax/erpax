@@ -3,8 +3,8 @@
 
 # jobs
 
-path `jobs` · uuid `d0decf6f-e1a4-8633-b85e-da039773cfa6` · diamond `a6efa429-72aa-879a-babd-981db3fea435`
-horo `1` `base` · trinity `1·0·1` · sealed `1`
+path `jobs` · uuid `d0decf6f-e1a4-8633-b85e-da039773cfa6` · diamond `42a202bb-472c-8a86-9d68-5833e982813f`
+horo `1` `base` · trinity `1·0·0` · sealed `0`
 imports hooks·law·optimize · exports jobs · escapes —
 links `3/3` · folded `1` · bonds in `16` out `16`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law slow/async work leaves the request lifecycle for the queue as idempotent, re
 
 ---
 
-<sub>content-uuid `68398a8d-016a-8959-a9e1-9c0e5b02fdde` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `88f8fc56-ea95-826e-aa95-a5a5f19c018d` · `pnpm readme` · `pnpm computed:check`</sub>

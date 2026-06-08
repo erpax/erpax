@@ -2,7 +2,7 @@
 
 # count
 
-> atom `count` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
+> atom `count` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -21,9 +21,9 @@
 
 ## typography graph
 
-- partition `count` · sub-root `02362896-62bc-880d-8c80-fede53614d83`
+- partition `count` · sub-root `7ec4f297-c914-8814-a292-aa7ee72ab768`
 - bond degree `59` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -33,15 +33,53 @@
 
 - `schema.org — the type vocabulary, collided to single words` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·1 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `59` · sealed `1` · horo `2`
+- bond degree `59` · sealed `1` · horo `1`
 - variance `0` · balanced `1` · trinity sum `1`
 - bindings `0` · standards `1`
 
 ## identity
 
-- uuid `02362896-62bc-880d-8c80-fede53614d83`
+- uuid `7ec4f297-c914-8814-a292-aa7ee72ab768`
 - bonds in `16` · out `16`
 - trinity form·code·proof `1`·`0`·`0`
 - links `16` / `16`
@@ -53,4 +91,4 @@
 
 ---
 
-<sub>content-uuid `f42356a6-4e7b-824b-8a31-0d4cda69e5e3` · framed by typography partition `count` bonds `59` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `1efed628-ba5d-8721-bc07-c5eb710719d4` · framed by typography partition `count` bonds `59` · `pnpm readme` · `pnpm readme:check`</sub>

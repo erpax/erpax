@@ -4,7 +4,7 @@
 # 8601
 
 path `iso/8601` · uuid `3f550ce4-6e0b-8e9d-a6fb-3baadbba04bc` · diamond `549535d4-c01c-8f36-8566-978edd837be0`
-horo `5` `round` · trinity `1·1·1` · sealed `1`
+horo `5` `round` · trinity `1·1·1` · sealed `0`
 imports — · exports formatDateTime·isIso8601·toIso8601 · escapes —
 links `0/0` · folded `1` · bonds in `0` out `0`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `c9c56cad-eb4b-87b8-a937-b622f0d1d974` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `96bdc454-713c-85fb-bf86-bd7c60876105` · `pnpm readme` · `pnpm computed:check`</sub>

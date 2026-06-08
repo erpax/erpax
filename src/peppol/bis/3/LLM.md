@@ -3,8 +3,8 @@
 
 # 3
 
-path `peppol/bis/3` · uuid `c4ea32d7-f8e8-82f9-9e8b-df9c50272dce` · diamond `d9c3fd2b-6503-82ce-9153-279a6ad146b0`
-horo `4` `weave` · trinity `1·1·1` · sealed `1`
+path `peppol/bis/3` · uuid `c80c4942-c6f3-82f0-b194-32053295d603` · diamond `0e7984f8-cf0c-853d-9e6e-e26bdd6c748b`
+horo `4` `weave` · trinity `1·1·1` · sealed `0`
 imports — · exports PEPPOL_BIS_3_CUSTOMIZATION_ID·PeppolBillingMessage·PeppolDocumentTypeId·PeppolEndpointId·PeppolEnvelope·PeppolParticipantIdentifier·PeppolParticipantIdentifierScheme·PeppolProfileId·formatPeppolParticipantId·isPeppolDocumentTypeId·isPeppolParticipantIdentifierScheme·isPeppolProfileId·parsePeppolParticipantId · escapes —
 links `1/1` · folded `1` · bonds in `1` out `1`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law Peppol BIS Billing 3.0 wraps an EN-16931 semantic invoice (UBL 2.1 syntax) i
 
 ---
 
-<sub>content-uuid `ce0ce39d-1a94-86a1-90f8-dfc166486815` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `221ddb69-415f-8270-8b5d-6c237838e832` · `pnpm readme` · `pnpm computed:check`</sub>

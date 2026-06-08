@@ -3,15 +3,15 @@
 
 # transcript
 
-path `transcript` · uuid `a3bf64f4-bbca-8ae0-b088-6aa7ee9087a8` · diamond `ea55d3ff-4461-8a4a-b169-5f57fd625d7b`
+path `transcript` · uuid `a3bf64f4-bbca-8ae0-b088-6aa7ee9087a8` · diamond `c19a5485-8172-8a37-9f62-81f616a83a81`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports transcript · escapes —
-links `2/2` · folded `1` · bonds in `4` out `4`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → law·thing · ← law·thing
 analysis —
 law transcript is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `56fa310d-a61f-80c3-aa96-3b92b0779e19` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `94ed5cd2-27f4-8b0a-85ce-ae583e6339d9` · `pnpm readme` · `pnpm computed:check`</sub>

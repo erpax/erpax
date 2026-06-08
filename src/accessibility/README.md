@@ -2,9 +2,11 @@
 
 # accessibility
 
-> atom `accessibility` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
+> atom `accessibility` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
+
+> account code `accessibility` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -19,11 +21,56 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:trinity:[[gap]]/[[trinity]]/code`
+- `gap:trinity:[[gap]]/[[trinity]]/proof`
+
+### collapse
+
+- `balance:conserved`
+- `seal:sealed`
+- `trigger:Use when designing for inclusive experiences — WCAG 2.1/3.0 compliance, color contrast, keyboard navigation, screen-reader support, semantic HTML, alt-text. The capability for all users regardless of disability.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `1`
+- entry uuids `319c57a3-4efb-8753-b601-f0884bc12f18` · `68abb517-b92e-80d4-a9be-366e01351687` · `88abe8f8-3f5a-8c66-9fdd-3c663303b664`
+- content uuids `361cd553-0d18-80d9-b56c-1846262699e3` · `b100bd77-d562-8335-a41b-8479870f68b2` · `bce12c4b-5d32-8469-b0c9-854db78f74a4` · `d899b838-0da9-8de4-9c22-a5ccf7c2e1e9`
+
+## [[entropy]] — gaps · seals
+
+> account code `accessibility` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[trinity]]/code `1.585` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[trinity]]/proof `1.585` eb | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.4` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[diamond]]/sealed `1.585` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `3.17` eb | Σ seal `10.985` eb |
+
+> net residual `-7.815` eb · seal/gap ratio `3.465` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `accessibility` · sub-root `d83479d4-ade2-8666-b639-399e94cb4bf8`
+- partition `accessibility` · sub-root `d899b838-0da9-8de4-9c22-a5ccf7c2e1e9`
 - bond degree `32` · analysis neighbors —
-- graph root `06810c2c-2396-831f-a2b3-a58706a17051`
+- graph root `e9e46cd3-af78-8539-bcbd-58a485afeb8e`
 
 ## [[cloudflare]] bindings
 
@@ -33,15 +80,53 @@
 
 —
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·4 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `32` · sealed `1` · horo `1`
+- bond degree `32` · sealed `1` · horo `4`
 - variance `0` · balanced `1` · trinity sum `1`
 - bindings `0` · standards `0`
 
 ## identity
 
-- uuid `d83479d4-ade2-8666-b639-399e94cb4bf8`
+- uuid `d899b838-0da9-8de4-9c22-a5ccf7c2e1e9`
 - bonds in `10` · out `10`
 - trinity form·code·proof `1`·`0`·`0`
 - links `3` / `3`
@@ -53,4 +138,4 @@
 
 ---
 
-<sub>content-uuid `0affa988-65ed-8e57-9f3e-7053d503bdbf` · framed by typography partition `accessibility` bonds `32` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `87d83c17-a0aa-8fea-af76-1553fc216d34` · framed by typography partition `accessibility` bonds `32` · `pnpm readme` · `pnpm readme:check`</sub>

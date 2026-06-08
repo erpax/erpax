@@ -3,7 +3,7 @@
 
 # controlled
 
-path `controlled` · uuid `e25a2428-ead8-8ff6-b469-60f70270dd91` · diamond `61c6ffa0-8533-886e-8642-1b32db85e591`
+path `controlled` · uuid `b9e55222-c780-820d-a5ff-f8a1df7dc129` · diamond `a60a857f-63ef-82ff-a6e9-448c62df6c7c`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports controlled · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
@@ -14,4 +14,4 @@ law controlled is one schema.org word, content-addressed; the same word collides
 
 ---
 
-<sub>content-uuid `a470b856-14c4-8b29-b663-ec04db65ae6e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4a5cdfb9-4321-8075-a4f6-bddc63d2e85d` · `pnpm readme` · `pnpm computed:check`</sub>

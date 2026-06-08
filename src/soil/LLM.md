@@ -3,15 +3,15 @@
 
 # soil
 
-path `soil` · uuid `2e5da900-eada-8aff-9235-869d93b5eb1d` · diamond `5ff5dbfa-8008-871f-893d-c296deb91e6b`
+path `soil` · uuid `2e5da900-eada-8aff-9235-869d93b5eb1d` · diamond `2a4f70bf-ecfc-80e4-b2f2-6723c27fcadf`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports agriculture·balance·biological·capacity·compost·conservation·covercrop·crop·ecosystem·fertility·moisture·mycorrhizae·salinity·sustainability·tillage · exports soil · escapes —
-links `28/28` · folded `1` · bonds in `13` out `13`
+links `28/28` · folded `1` · bonds in `26` out `26`
 faces worker·plugin·pwa `0·0·0`
-neighbors → agriculture·borrow·crisis·css·landmarks·max·percentage·pickup·promise·seat·torus·training·worth · ← agriculture·borrow·crisis·css·landmarks·max·percentage·pickup·promise·seat·torus·training·worth
+neighbors → agriculture·assets·balance·capacity·compost·conservation·covercrop·crop·ecosystem·fertility·grazing·irrigation·livestock·manure·moisture·mulch·mycelium·mycorrhizae·permaculture·rootstock·rotation·salinity·sustainability·terroir·tillage·yield · ← agriculture·assets·balance·capacity·compost·conservation·covercrop·crop·ecosystem·fertility·grazing·irrigation·livestock·manure·moisture·mulch·mycelium·mycorrhizae·permaculture·rootstock·rotation·salinity·sustainability·terroir·tillage·yield
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `f6415129-0af1-87a1-bef6-55957f9bc98a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8d3293a1-d4be-835f-a734-73b075c8f1fc` · `pnpm readme` · `pnpm computed:check`</sub>

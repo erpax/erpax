@@ -3,8 +3,8 @@
 
 # animal
 
-path `animal` · uuid `bde675eb-34a0-8de4-84f7-006402935216` · diamond `15eed682-b3bc-8c05-9c73-eee6845aabc7`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `animal` · uuid `53fdce4c-7c4c-828e-a367-7bac08984bd0` · diamond `4c567b2a-5d8f-84f2-999a-bcb001904677`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports biological·breed·harvest·health·herd·id·identity·lactation·law·lineage·livestock·maturity·mortality·withdrawal · exports animal · escapes —
 links `29/29` · folded `1` · bonds in `16` out `16`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law the individual identified beast is the node — one animal carrying its clas
 
 ---
 
-<sub>content-uuid `fb4e0b04-85af-8f29-a1b1-a9b96e45f68a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `69a1d5be-4c2f-83b8-8ff6-faaa503ac4cb` · `pnpm readme` · `pnpm computed:check`</sub>

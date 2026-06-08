@@ -4,7 +4,7 @@
 # membership
 
 path `membership` · uuid `a7f656ac-9d3c-888a-b208-e4aad92839a2` · diamond `554b90df-e927-886f-a956-d8b0f4166c37`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+horo `4` `weave` · trinity `1·0·0` · sealed `0`
 imports collapse·earned·law·merge·number·points·program·sti·used · exports membership · escapes —
 links `9/9` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law membership is one schema.org word, content-addressed; the same word collides
 
 ---
 
-<sub>content-uuid `fe249d9f-c543-89b5-b9a6-96685e7f372a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f0bead65-a951-86b2-8296-6e53c5cca832` · `pnpm readme` · `pnpm computed:check`</sub>

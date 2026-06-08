@@ -1,10 +1,90 @@
 ---
 name: harden
-description: Use when hardening a Payload app against abuse/DoS or preparing for production security review — setting query-depth/complexity limits, login lockout, GraphQL exposure, CORS/CSRF, or securing upload collections.
-sessions:
-  - 776a49cb-8dfb-45ab-88ff-956e3b613adf
+description: "Use when hardening a Payload app against abuse/DoS or preparing for production security review — setting query-depth/complexity limits, login lockout, GraphQL exposure, CORS/CSRF, or securing upload collections."
+atomPath: harden
+coordinate: harden · 2/share · 0fe2bf79
+contentUuid: "5656198a-9860-50d9-9c02-a2c9bfeec925"
+diamondUuid: "2ddd6c84-5872-899f-9eb8-7cbe8078e20b"
+uuid: "0fe2bf79-df2c-8aca-816c-d0ab9281876b"
+horo: 2
+bonds:
+  in:
+    - access
+    - api
+    - auth
+    - beyond
+    - bindings
+    - config
+    - deploy
+    - engineering
+    - optimize
+    - upload
+  out:
+    - access
+    - api
+    - auth
+    - beyond
+    - bindings
+    - config
+    - deploy
+    - engineering
+    - optimize
+    - upload
+typography:
+  partition: harden
+  bondDegree: 35
+  neighbors: []
+standards: []
+bindings: []
+neighbors:
+  wikilink:
+    - access
+    - auth
+    - config
+    - deploy
+    - optimize
+    - upload
+  matrix:
+    - access
+    - api
+    - auth
+    - beyond
+    - bindings
+    - config
+    - deploy
+    - engineering
+    - optimize
+    - upload
+  backlinks:
+    - access
+    - api
+    - auth
+    - beyond
+    - bindings
+    - config
+    - deploy
+    - engineering
+    - optimize
+    - upload
+signatures:
+  computationUuid: "da71dc89-d910-8f48-931f-6b4a55d94eb5"
+  stages:
+    - stage: path
+      stageUuid: "e86df1dc-fdbe-8d7a-b4b8-2c9beff23aab"
+    - stage: trinity
+      stageUuid: "0e5c634b-8324-808a-a92c-c0397925c3ab"
+    - stage: boundary
+      stageUuid: "7f733562-c1bd-8062-8a11-06a2773c3842"
+    - stage: links
+      stageUuid: "24e0bee5-d713-8e67-b8a6-29c92f62d34b"
+    - stage: horo
+      stageUuid: "43505f0f-1d7f-82ac-989f-3e78bbe36e8e"
+    - stage: seal
+      stageUuid: "30115ef3-ba7f-8733-b3ea-a8eb4045f769"
+    - stage: uuid
+      stageUuid: "2883c1b1-6a87-85b6-96a6-49ae22f6e0dc"
+version: 2
 ---
-
 # harden — Payload anti-abuse & security config
 
 Source: payloadcms.com/docs/production/preventing-abuse (+ deployment). Exact config knobs:

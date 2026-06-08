@@ -23,9 +23,9 @@
 
 ## typography graph
 
-- partition `decoherence` · sub-root `b0d8ef07-c620-898f-bfad-814e14c164fa`
+- partition `decoherence` · sub-root `27117b2e-0e29-89ff-a405-e7b13babd5aa`
 - bond degree `24` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -35,6 +35,44 @@
 
 - `coherence e^(−t/τ); purity ½(1+c²); von Neumann entropy of the 2-state ρ — all computed` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·4 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
 - bond degree `24` · sealed `1` · horo `4`
@@ -43,7 +81,7 @@
 
 ## identity
 
-- uuid `b0d8ef07-c620-898f-bfad-814e14c164fa`
+- uuid `27117b2e-0e29-89ff-a405-e7b13babd5aa`
 - bonds in `8` · out `8`
 - trinity form·code·proof `1`·`1`·`1`
 - links `14` / `14`
@@ -55,4 +93,4 @@
 
 ---
 
-<sub>content-uuid `8a09a45d-6d54-8c53-bb04-bf1af1cc97b3` · framed by typography partition `decoherence` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `5abb8134-beb9-8df1-be3c-b39aaf89c00a` · framed by typography partition `decoherence` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>

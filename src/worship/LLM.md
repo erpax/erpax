@@ -3,15 +3,15 @@
 
 # worship
 
-path `worship` · uuid `1ea0eae4-829c-8dfd-beed-0c185acc9edd` · diamond `9ac12a2e-d462-8669-b423-ca2d15c2ca9f`
+path `worship` · uuid `1ea0eae4-829c-8dfd-beed-0c185acc9edd` · diamond `f2d6e3cf-354d-8e50-b39b-242a259de05e`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·place·sti · exports worship · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
+links `5/5` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·place·ritual·sti · ← collapse·law·merge·place·ritual·sti
 analysis —
 law worship is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `179e4f27-a257-8f85-907f-8f6a5f4e6a34` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d37ffa45-9f0c-8d0e-b240-0f6770a545d0` · `pnpm readme` · `pnpm computed:check`</sub>

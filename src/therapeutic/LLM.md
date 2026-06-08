@@ -3,15 +3,15 @@
 
 # therapeutic
 
-path `therapeutic` · uuid `9bd4395b-1f38-8f2c-9e11-25cf5e547741` · diamond `e9d9e70a-c82b-81e1-b76c-f7c99a799467`
+path `therapeutic` · uuid `9bd4395b-1f38-8f2c-9e11-25cf5e547741` · diamond `4dc2236f-8b31-8f0c-8900-d451a02be64c`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·procedure·sti · exports therapeutic · escapes —
-links `5/5` · folded `1` · bonds in `14` out `14`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → beneficiary·brewery·driving·entropy·harden·has·landmarks·mandates·natural·physiological·product·replication·separation·urltemplate · ← beneficiary·brewery·driving·entropy·harden·has·landmarks·mandates·natural·physiological·product·replication·separation·urltemplate
+neighbors → collapse·law·merge·procedure·sti · ← collapse·law·merge·procedure·sti
 analysis —
 law therapeutic is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `3c6fa636-0898-801e-ac9f-dea9b2e95ead` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a4dc0ba4-f4f8-8962-a3e5-42abdfde9a7f` · `pnpm readme` · `pnpm computed:check`</sub>

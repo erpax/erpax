@@ -3,8 +3,8 @@
 
 # critic
 
-path `critic` · uuid `a13c2cb1-886c-8d46-8f75-707a69ee1333` · diamond `2059fc97-1084-8d12-b6ca-41f1c7d8c34c`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `critic` · uuid `c2f4f14b-08ce-8ebf-a076-b3993d92935a` · diamond `03681828-e84d-81b0-8d06-78712522f607`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·review·sti · exports critic · escapes —
 links `5/5` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law critic is one schema.org word, content-addressed; the same word collides eve
 
 ---
 
-<sub>content-uuid `d3049acf-59bc-8293-bbe8-4c015e73d804` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b73f8a13-a689-8eae-b117-a3f0743c9a30` · `pnpm readme` · `pnpm computed:check`</sub>

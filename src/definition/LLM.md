@@ -3,8 +3,8 @@
 
 # definition
 
-path `definition` · uuid `22f3b765-51fd-8959-935d-0b1eb1949e28` · diamond `19d4e183-a77f-8771-993c-1ef7eb18e409`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `definition` · uuid `5bde0f04-9efe-8c27-8c0b-33f2652ed261` · diamond `5853b81a-2dc5-8c3f-b4b0-04806575bfc7`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports balance·definitions·reference · exports definition · escapes —
 links `6/6` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `6b38d8fc-c174-8b86-a7e8-2f9efcbc713f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `05738cd5-5d5a-87a4-9eae-797b7ca9da27` · `pnpm readme` · `pnpm computed:check`</sub>

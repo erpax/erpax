@@ -23,7 +23,21 @@
 
 - partition `hvac` · sub-root `8c94d8b9-27ac-898c-bb01-c188802b2dbb`
 - bond degree `16` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `16` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `9ef9ccce-1a3c-8457-a6f1-57cf4e893625` · framed by typography partition `hvac` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d312d3f2-dd88-83e0-88fb-94cca89a6df7` · framed by typography partition `hvac` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

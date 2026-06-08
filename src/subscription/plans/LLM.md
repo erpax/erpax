@@ -3,15 +3,15 @@
 
 # plans
 
-path `subscription/plans` · uuid `a4f8320e-4c9c-8e22-a2bf-6fae63b80e70` · diamond `ea2ba780-b1ac-821c-bc3e-258ffb61e70d`
+path `subscription/plans` · uuid `a4f8320e-4c9c-8e22-a2bf-6fae63b80e70` · diamond `56ac4830-133e-8783-aecd-8bd319d1168d`
 horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/anyone·@/base/accounting/field·@/is/super/admin · exports const · escapes —
-links `5/5` · folded `1` · bonds in `5` out `5`
+links `5/5` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·editor·landmarks·memories·stat · ← cohort·editor·landmarks·memories·stat
+neighbors → access·accounting·commerce·fields·findings·law·standard·subscriptions · ← access·accounting·commerce·fields·findings·law·standard·subscriptions
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `30d64bbc-949f-875d-81d7-2c3837f163ae` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `acb61dcc-617c-8557-9278-8e0ffb55f63f` · `pnpm readme` · `pnpm computed:check`</sub>

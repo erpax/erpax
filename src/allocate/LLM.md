@@ -3,7 +3,7 @@
 
 # allocate
 
-path `allocate` · uuid `07694411-d7ff-8b3b-a113-b0cf5986774c` · diamond `a1766416-f656-8c91-8fe5-3038fdc11511`
+path `allocate` · uuid `20fa47c0-d027-8f6a-b5c5-5449e06390c1` · diamond `0b9d53f4-4133-8275-8be8-89965510680d`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti · exports allocate · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
@@ -14,4 +14,4 @@ law allocate is one schema.org word, content-addressed; the same word collides e
 
 ---
 
-<sub>content-uuid `3f84f39d-778d-8eee-beb9-96b6b483dc1d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `70799653-8f38-8048-8405-08ebf1158355` · `pnpm readme` · `pnpm computed:check`</sub>

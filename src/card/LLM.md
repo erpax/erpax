@@ -3,15 +3,15 @@
 
 # card
 
-path `card` · uuid `ef9bb310-1a1c-8891-bb10-320a87c0520a` · diamond `ec04c468-0bad-8035-bc77-1ff57e975448`
+path `card` · uuid `666bb21b-aeef-866f-a66a-0620a968c665` · diamond `779fddd7-fa69-8695-92f2-db7dd37b6b87`
 horo `7` `descent` · trinity `1·1·0` · sealed `0`
 imports collapse·credit·law·merge·payment·sti · exports card · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
 neighbors → collapse·credit·law·merge·payment·sti · ← collapse·credit·law·merge·payment·sti
-analysis diamond·hallucination·purity
+analysis —
 law card is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `8ae70514-152f-8000-91da-23d99ec59396` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5db118eb-7cf1-8c59-b49c-c04cd98525ca` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,8 +3,8 @@
 
 # authorize
 
-path `authorize` · uuid `6bd7f36f-d2cf-84b2-b3f6-83db7ce571c9` · diamond `ff1ce76e-b03c-8571-995f-e1866da96b7e`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `authorize` · uuid `ff846603-b908-8067-9c18-57dea948c8c8` · diamond `c275391f-38c3-84e5-9431-65c88fd36d04`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti · exports authorize · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law authorize is one schema.org word, content-addressed; the same word collides 
 
 ---
 
-<sub>content-uuid `988e1253-c38c-8ce9-8fdc-c6b75e8b89ab` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a494587b-d6a7-858a-b001-4653ab4ccb14` · `pnpm readme` · `pnpm computed:check`</sub>

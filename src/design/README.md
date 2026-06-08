@@ -2,7 +2,7 @@
 
 # design
 
-> atom `design` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `design` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -23,9 +23,9 @@
 
 ## typography graph
 
-- partition `design` · sub-root `1d43a866-ede0-878d-9c7f-8794b58a4721`
+- partition `design` · sub-root `20b4b76c-cbfc-85f8-afe7-326ee760b3bd`
 - bond degree `57` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -37,15 +37,53 @@
 - `every token/palette/role colour computed via pixel(uuid); zero hardcoded hex in the design system` · banner
 - `the analog aura — colour as a projection of one content-uuid (digit → A432 spectrum)` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·4 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `57` · sealed `1` · horo `7`
+- bond degree `57` · sealed `1` · horo `4`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `3`
 
 ## identity
 
-- uuid `1d43a866-ede0-878d-9c7f-8794b58a4721`
+- uuid `20b4b76c-cbfc-85f8-afe7-326ee760b3bd`
 - bonds in `18` · out `18`
 - trinity form·code·proof `1`·`1`·`1`
 - links `13` / `13`
@@ -57,4 +95,4 @@
 
 ---
 
-<sub>content-uuid `9a64f0c8-2cea-8fd4-a5c1-76efd601db3b` · framed by typography partition `design` bonds `57` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `8fe05268-c291-8349-8f0c-41e1c3e15b22` · framed by typography partition `design` bonds `57` · `pnpm readme` · `pnpm readme:check`</sub>

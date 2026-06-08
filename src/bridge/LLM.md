@@ -3,8 +3,8 @@
 
 # bridge
 
-path `bridge` · uuid `2d3cc876-2967-8e2c-a44c-5fc6d49e17c8` · diamond `3495d9b1-8e1b-874d-9c10-9f77d2ab4651`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `bridge` · uuid `3adbce5a-a0d2-8f55-a672-6df9efc5cdc4` · diamond `0ef320f1-e86e-86f5-9b18-6dec3ce94db9`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports law·place·thing · exports bridge · escapes —
 links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law bridge is one schema.org word, content-addressed; the same word collides eve
 
 ---
 
-<sub>content-uuid `8913e800-b1f4-864e-8689-5319bf10e237` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `15fca214-3bdb-87a6-b06d-b56c14d1230f` · `pnpm readme` · `pnpm computed:check`</sub>

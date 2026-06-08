@@ -3,8 +3,8 @@
 
 # days
 
-path `days` · uuid `836ae87d-0d03-8c78-9dd1-3aaec443666b` · diamond `904dc59e-db9c-8710-a535-81a4b78015a2`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `days` · uuid `f6082908-4bb2-8c13-81ad-8fb48f707d7e` · diamond `762f1bd4-f09e-821c-8534-e4f4162bf834`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports business·collapse·law·merchant·merge·product·return·sti · exports days · escapes —
 links `8/8` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law days is one schema.org word, content-addressed; the same word collides every
 
 ---
 
-<sub>content-uuid `9b918435-f6af-8fb7-9560-583e65c94d33` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e8a16b85-27e3-8a14-9c5e-cf55788f351e` · `pnpm readme` · `pnpm computed:check`</sub>

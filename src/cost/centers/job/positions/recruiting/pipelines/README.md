@@ -2,9 +2,11 @@
 
 # pipelines
 
-> atom `cost/centers/job/positions/recruiting/pipelines` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
+> atom `cost/centers/job/positions/recruiting/pipelines` · horo `4` `weave` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `cost/centers/job/positions/recruiting/pipelines` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,11 +23,56 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+
+### collapse
+
+- `balance:conserved`
+- `seal:unsealed`
+- `trigger:Use when tracking candidate applications, interview stages, offers, and hiring decisions per position — GDPR-compliant funnel (applied→screening→interview→offer→hired/rejected), sourcing, skill-match, and recruiter activity. The GDPR Art.6(1)(b) candidate-pipeline collection.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `34eba9c1-834a-89b9-8d23-b5b06ec90595` · `676feb7c-efb0-8ba2-b338-12a91ce01392`
+- content uuids `732430dd-aa8e-8209-b16b-6ec395202e32` · `fa8c37e1-b85e-8ad9-976d-d780c52236ed`
+
+## [[entropy]] — gaps · seals
+
+> account code `cost/centers/job/positions/recruiting/pipelines` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.4` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `1` eb | Σ seal `11.4` eb |
+
+> net residual `-10.4` eb · seal/gap ratio `11.4` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `cost` · sub-root `39f13edb-cfbe-876c-9400-e150601cfd8b`
+- partition `cost` · sub-root `e0f89be4-3c44-8d3b-9b1f-a458cad445e7`
 - bond degree `21` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `a0b4e6a6-0230-8b95-a98c-2d4cf71fcc77`
 
 ## [[cloudflare]] bindings
 
@@ -37,18 +84,55 @@
 - `EU Equal Treatment Directive 2000/78` · banner
 - `GDPR Art.5(1)(e) storage-limitation` · banner
 - `GDPR Art.6(1)(b) recruitment-lawful-basis` · banner
-- `ISO-19011:2018 audit-trail recruiting-evidence` · banner
 - `ISO-8601-1:2019 date-time` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·4 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
 
 ## analytics
 
-- bond degree `21` · sealed `1` · horo `5`
+- bond degree `21` · sealed `0` · horo `4`
 - variance `0` · balanced `1` · trinity sum `3`
-- bindings `0` · standards `6`
+- bindings `0` · standards `5`
 
 ## identity
 
-- uuid `beaa1eed-7787-8248-80fd-514860671f66`
+- uuid `b1bb9875-2bb7-89cd-9844-1879c3cbff99`
 - bonds in `7` · out `7`
 - trinity form·code·proof `1`·`1`·`1`
 - links `6` / `6`
@@ -56,8 +140,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `d269abc3-c06c-8912-ac01-029d22b804ce` · framed by typography partition `cost` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c817142c-4c16-8b98-b1c4-ccb5a137b6b2` · framed by typography partition `cost` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>

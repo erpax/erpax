@@ -23,7 +23,21 @@
 
 - partition `florist` · sub-root `36f3b70b-5043-866f-b1d8-22d48eaee22e`
 - bond degree `6` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `6` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `8dd0cc09-f877-8177-87d0-3562a173773f` · framed by typography partition `florist` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `9271c4bf-8038-88a6-a150-045ef15a3f4a` · framed by typography partition `florist` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>

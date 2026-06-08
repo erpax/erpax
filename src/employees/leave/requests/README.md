@@ -2,9 +2,11 @@
 
 # requests
 
-> atom `employees/leave/requests` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `employees/leave/requests` · horo `1` `base` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `employees/leave/requests` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,11 +23,58 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+
+### collapse
+
+- `balance:conserved`
+- `law:one row per employee leave request — its approval decrements the entitlement balance and feeds the IAS-19 accrual, checked against multi-jurisdiction minimum-leave rules; a single-folder collection node (no scatter, no drift).`
+- `seal:unsealed`
+- `trigger:Use when managing employee leave — annual vacation, sick, parental, TOIL, bereavement — approval workflow, entitlement balance decrement, IAS-19 accrual feed, and multi-jurisdiction minimum-leave compliance (EU WTD, US FMLA, BG Labour Code). The employee leave-request register.`
+- `trigger:one row per employee leave request — its approval decrements the entitlement balance and feeds the IAS-19 accrual, checked against multi-jurisdiction minimum-leave rules; a single-folder collection node (no scatter, no drift).`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `41b934c3-3ad9-84e6-aeea-ed815fdf3eaf` · `ea412d5c-d273-8aeb-bfea-d6ec0379ec25`
+- content uuids `234dd9f0-701b-82c4-b0f0-0774a17807f5` · `401da5bd-4c21-8b05-9016-95e8cf12817c`
+
+## [[entropy]] — gaps · seals
+
+> account code `employees/leave/requests` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.1` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `1` eb | Σ seal `11.1` eb |
+
+> net residual `-10.1` eb · seal/gap ratio `11.1` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `employees` · sub-root `b4e809aa-fd27-86f6-90b9-75ec1197d4f1`
-- bond degree `57` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- partition `employees` · sub-root `44323281-3d17-8530-94e1-e2b6734dac06`
+- bond degree `37` · analysis neighbors —
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
 
 ## [[cloudflare]] bindings
 
@@ -40,31 +89,68 @@
 - `IAS-19` · collection
 - `IFRS IAS-19 §11 §13 §14 short-term-employee-benefits` · banner
 - `IFRS IAS-19 §16 accumulating-paid-absences` · banner
-- `ISO-19011:2018 audit-trail leave-evidence` · banner
 - `ISO-8601-1:2019` · collection
 - `ISO-8601-1:2019 date-time` · banner
 - `US FMLA family-medical-leave-act` · banner
 - `US-FMLA` · collection
 - `US-GAAP ASC-710-10-25 compensated-absences` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·1 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `57` · sealed `1` · horo `7`
+- bond degree `37` · sealed `0` · horo `1`
 - variance `0` · balanced `1` · trinity sum `3`
-- bindings `0` · standards `13`
+- bindings `0` · standards `12`
 
 ## identity
 
-- uuid `b4a902f2-885d-8c4e-bf89-5308d5f2348a`
-- bonds in `16` · out `20`
+- uuid `3feea78f-cac3-84ea-a33f-e3d6cc1da4d6`
+- bonds in `8` · out `8`
 - trinity form·code·proof `1`·`1`·`1`
 - links `6` / `6`
 - folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `93e95b31-4345-8f23-be16-8bcbaea35606` · framed by typography partition `employees` bonds `57` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `8344c81a-ee53-82f7-b199-15c20e13d5bb` · framed by typography partition `employees` bonds `37` · `pnpm readme` · `pnpm readme:check`</sub>

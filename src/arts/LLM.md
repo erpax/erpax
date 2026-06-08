@@ -3,7 +3,7 @@
 
 # arts
 
-path `arts` · uuid `b12a2109-820c-8122-9829-6eaceeef64a3` · diamond `773fb9fe-efd3-863a-b98b-fb333f1b7ea3`
+path `arts` · uuid `6d16ae2c-2721-8fbe-839d-1d77c06cebce` · diamond `e570582d-1880-827a-9018-e101db98a0d8`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·event·law·merge·performing·sti·theater·visual · exports arts · escapes —
 links `8/8` · folded `1` · bonds in `8` out `8`
@@ -14,4 +14,4 @@ law arts is one schema.org word, content-addressed; the same word collides every
 
 ---
 
-<sub>content-uuid `9f463ebb-d54f-85e6-87f6-d3ffe435a6b0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8b28c68a-f99f-831f-9d65-69830fa9424a` · `pnpm readme` · `pnpm computed:check`</sub>

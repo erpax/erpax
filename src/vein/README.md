@@ -2,7 +2,7 @@
 
 # vein
 
-> atom `vein` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `vein` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -24,13 +24,13 @@
 ## typography graph
 
 - partition `vein` · sub-root `c768a6c9-b7da-8704-b1ff-29bb4b8a39ac`
-- bond degree `13` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `19` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
-- uuid `2bf1955b-8dd9-8f2e-9502-b836b1ec81a8`
-- bonds in `3` · out `3`
+- uuid `c768a6c9-b7da-8704-b1ff-29bb4b8a39ac`
+- bonds in `6` · out `6`
 - trinity form·code·proof `1`·`1`·`1`
 - links `10` / `10`
 - folded `1` · escapes `0`
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `703952c2-84e4-8b89-bc7c-fdaba9ce4228` · framed by typography partition `vein` bonds `13` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0605d49d-9790-8253-875d-0571b1bb7908` · framed by typography partition `vein` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,8 +3,8 @@
 
 # designation
 
-path `designation` · uuid `6793e2db-653f-859b-9162-f59cd513eb87` · diamond `9bb6bccc-5976-83b7-9e8e-a4c6eed49b0b`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `designation` · uuid `426602fb-f8e3-8196-b2f2-1f25e29123aa` · diamond `5da099f8-efcb-8c5e-aa6d-7ed504b9033a`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports designation · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law designation is one schema.org word, content-addressed; the same word collide
 
 ---
 
-<sub>content-uuid `525358d8-567f-827f-9376-1283d21cef2a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `728468ac-91a2-8e99-be62-b33543bc3ddf` · `pnpm readme` · `pnpm computed:check`</sub>

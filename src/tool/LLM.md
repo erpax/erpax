@@ -3,15 +3,15 @@
 
 # tool
 
-path `tool` · uuid `be4046de-d5b2-8b34-8ead-76c01334612b` · diamond `84d788ea-06fc-8d54-be3c-00ae7f24d6d5`
+path `tool` · uuid `4f4610e2-8769-816b-8544-8f265cc4a990` · diamond `b075d9f9-ace2-802f-af42-83b6adf5ef51`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports how·law · exports tool · escapes —
-links `2/2` · folded `1` · bonds in `2` out `2`
+links `2/2` · folded `1` · bonds in `5` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·note · ← landmarks·note
-analysis diamond·hallucination·purity
+neighbors → how·law·law·mcp·tool·uuid · ← how·law·mcp·tool·uuid
+analysis —
 law tool is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `621274e5-2069-8186-8c09-73405546a828` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e3348615-7486-8179-88bf-6b2c9f750e92` · `pnpm readme` · `pnpm computed:check`</sub>

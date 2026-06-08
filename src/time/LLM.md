@@ -3,15 +3,15 @@
 
 # time
 
-path `time` · uuid `9e20cfb2-c5df-8ddc-a815-bd5fa0ba08a3` · diamond `caa74f6a-e12a-8fc3-9c01-264ec641afb3`
+path `time` · uuid `9e20cfb2-c5df-8ddc-a815-bd5fa0ba08a3` · diamond `4adee526-f503-8a11-9cd7-1f346baf5b44`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports fields·manufacturing·measure · exports time · escapes —
-links `3/3` · folded `1` · bonds in `2` out `2`
+links `3/3` · folded `1` · bonds in `46` out `46`
 faces worker·plugin·pwa `0·0·0`
-neighbors → hostel·landmarks · ← hostel·landmarks
+neighbors → acceleration·age·arrival·attrition·booking·career·checkin·checkout·complete·content·cook·coverage·crisis·cutoff·cycle·dataset·day·delivery·departure·door·dropoff·escalation·fields·handling·interval·interview·label·lead·manufacturing·measure·modified·perform·prep·processing·reference·required·scheduled·season·settings·shift·shipping·tenure·training·transit·web·wellbeing · ← acceleration·age·arrival·attrition·booking·career·checkin·checkout·complete·content·cook·coverage·crisis·cutoff·cycle·dataset·day·delivery·departure·door·dropoff·escalation·fields·handling·interval·interview·label·lead·manufacturing·measure·modified·perform·prep·processing·reference·required·scheduled·season·settings·shift·shipping·tenure·training·transit·web·wellbeing
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `60f87886-646c-84bc-990f-43675c3c1a94` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4a46a197-c001-8ad0-b237-db3e8696fe8c` · `pnpm readme` · `pnpm computed:check`</sub>

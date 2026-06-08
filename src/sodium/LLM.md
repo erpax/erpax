@@ -8,10 +8,10 @@ horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·content·law·merge·sti · exports sodium · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·dated·landmarks·memories·stat · ← cohort·dated·landmarks·memories·stat
+neighbors → collapse·content·law·merge·sti · ← collapse·content·law·merge·sti
 analysis —
 law sodium is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `f0c56a81-21b6-80d1-ba19-c38395e827c9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `20f6b65b-6799-83b0-b863-1ded5c7d919e` · `pnpm readme` · `pnpm computed:check`</sub>

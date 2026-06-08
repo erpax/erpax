@@ -1,8 +1,170 @@
 ---
 name: conversion
 description: "Use when a measured thing is re-expressed on another basis through a rate — unit conversion (kg↔g, acre↔decare), currency conversion (USD↔BGN↔EUR), and funnel-stage conversion (lead→deal) are one atom: a change of basis via a rate, pinned at a point, that conserves substance and accounts by double-entry. Automatic, never the spreadsheet's hand-typed 2.00 лв text that breaks the arithmetic."
+atomPath: conversion
+coordinate: conversion · 8/crest · 670658d7
+contentUuid: "d8dd7964-d181-54e9-8d88-cfba20fc2298"
+diamondUuid: "6f6c83e0-5dad-839c-b542-d6547d59d43c"
+uuid: "670658d7-5f84-8c82-be66-f4f7579f0702"
+horo: 8
+bonds:
+  in:
+    - accounting
+    - agriculture
+    - amount
+    - aquaculture
+    - attribution
+    - balance
+    - crop
+    - currency
+    - dimension
+    - entry
+    - fertility
+    - fodder
+    - friction
+    - funnel
+    - give
+    - hooks
+    - identity
+    - law
+    - localize
+    - measure
+    - orders
+    - organic
+    - rate
+    - service
+    - take
+    - versions
+    - yield
+  out:
+    - accounting
+    - agriculture
+    - amount
+    - aquaculture
+    - attribution
+    - balance
+    - crop
+    - currency
+    - dimension
+    - entry
+    - fertility
+    - fodder
+    - friction
+    - funnel
+    - give
+    - hooks
+    - identity
+    - law
+    - localize
+    - measure
+    - orders
+    - organic
+    - rate
+    - service
+    - take
+    - versions
+    - yield
+typography:
+  partition: conversion
+  bondDegree: 83
+  neighbors: []
+standards: []
+bindings: []
+neighbors:
+  wikilink:
+    - accounting
+    - amount
+    - attribution
+    - balance
+    - currency
+    - dimension
+    - entry
+    - funnel
+    - give
+    - hooks
+    - identity
+    - law
+    - localize
+    - measure
+    - orders
+    - rate
+    - take
+    - versions
+  matrix:
+    - accounting
+    - agriculture
+    - amount
+    - aquaculture
+    - attribution
+    - balance
+    - crop
+    - currency
+    - dimension
+    - entry
+    - fertility
+    - fodder
+    - friction
+    - funnel
+    - give
+    - hooks
+    - identity
+    - law
+    - localize
+    - measure
+    - orders
+    - organic
+    - rate
+    - service
+    - take
+    - versions
+    - yield
+  backlinks:
+    - accounting
+    - agriculture
+    - amount
+    - aquaculture
+    - attribution
+    - balance
+    - crop
+    - currency
+    - dimension
+    - entry
+    - fertility
+    - fodder
+    - friction
+    - funnel
+    - give
+    - hooks
+    - identity
+    - law
+    - localize
+    - measure
+    - orders
+    - organic
+    - rate
+    - service
+    - take
+    - versions
+    - yield
+signatures:
+  computationUuid: "9854b0fd-6a36-8ac4-9b20-29164741061c"
+  stages:
+    - stage: path
+      stageUuid: "8153fff8-d5cb-8cc9-a069-a48cabc4f404"
+    - stage: trinity
+      stageUuid: "f98ee95e-2bf4-8a89-b48c-d008550de4e1"
+    - stage: boundary
+      stageUuid: "8fde0d14-480b-8b26-9c85-5cbd8b7a9bce"
+    - stage: links
+      stageUuid: "5ad986f9-6a06-857f-9215-731792fb3ef1"
+    - stage: horo
+      stageUuid: "9dd77bf7-c9c7-8106-bf1d-a3c4a2f51df9"
+    - stage: seal
+      stageUuid: "238282ff-992e-8d36-b328-d20f4c3785a9"
+    - stage: uuid
+      stageUuid: "63941812-414d-8096-9cad-5eaceabdd191"
+version: 2
 ---
-
 # conversion — re-expressing a quantity on another basis, automatically and accounted
 
 A **conversion** re-expresses a measured thing on another **basis** through a [[rate]], at a point in time ([[versions]]). Three faces, one atom:

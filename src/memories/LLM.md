@@ -3,15 +3,15 @@
 
 # memories
 
-path `memories` · uuid `e91563e7-305c-8295-b910-ea8040579d7d` · diamond `2f0471d8-04d5-84f5-b678-e62bfa5a30a7`
-horo `2` `share` · trinity `1·1·1` · sealed `1`
+path `memories` · uuid `f4fe6fc0-a363-8387-b615-aa07ab52a034` · diamond `5a23ea42-e86f-830f-bbb6-b9c702bd6adc`
+horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports @/base/accounting/field·@/factory · exports default · escapes —
-links `17/17` · folded `1` · bonds in `8` out `8`
+links `17/17` · folded `1` · bonds in `13` out `13`
 faces worker·plugin·pwa `1·0·0`
-neighbors → accounting·fields·law·mcp·proof·standard·transaction·uuid · ← accounting·fields·law·mcp·proof·standard·transaction·uuid
+neighbors → accounting·akashic·architecture·diamond·fields·law·mcp·merge·proof·session·standard·transaction·uuid · ← accounting·akashic·architecture·diamond·fields·law·mcp·merge·proof·session·standard·transaction·uuid
 analysis diamond
 law memories persist agent substrate rows across restarts keyed by (ownerType, ownerId, kind, key), each content-[[uuid]]'d for federation and joined by relatedTo graph edges — a Payload projection INTO the lattice, not operational memory itself ([[memory/architecture]]).
 
 ---
 
-<sub>content-uuid `884d61a5-8bd1-8faf-be93-c7cb2f1a5878` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0ebc1bf5-bc18-850d-99c3-002febb304ee` · `pnpm readme` · `pnpm computed:check`</sub>

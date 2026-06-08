@@ -2,7 +2,7 @@
 
 # chat
 
-> atom `chat` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
+> atom `chat` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -21,9 +21,9 @@
 
 ## typography graph
 
-- partition `chat` · sub-root `92464f93-1e6c-8031-87da-a8d3661dabed`
-- bond degree `210` · analysis neighbors `agent` · `aura`
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- partition `chat` · sub-root `a9e4dbaf-322c-83d2-a23d-c65f9d0a58a3`
+- bond degree `213` · analysis neighbors `agent` · `aura`
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -33,16 +33,54 @@
 
 —
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·1 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `210` · sealed `1` · horo `8`
+- bond degree `213` · sealed `1` · horo `1`
 - variance `0` · balanced `1` · trinity sum `1`
 - bindings `0` · standards `0`
 
 ## identity
 
-- uuid `f914c1ec-09d2-8804-ad76-1d86bcfef351`
-- bonds in `60` · out `67`
+- uuid `a9e4dbaf-322c-83d2-a23d-c65f9d0a58a3`
+- bonds in `63` · out `63`
 - trinity form·code·proof `1`·`0`·`0`
 - links `123` / `123`
 - folded `1` · escapes `0`
@@ -53,4 +91,4 @@
 
 ---
 
-<sub>content-uuid `807bfc32-cb4c-8337-9cea-205fc3909f07` · framed by typography partition `chat` bonds `210` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `bb12f07f-16ba-80e8-a1f9-d8d69ef250c1` · framed by typography partition `chat` bonds `213` · `pnpm readme` · `pnpm readme:check`</sub>

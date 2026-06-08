@@ -3,7 +3,7 @@
 
 # contains
 
-path `contains` · uuid `a31b83d9-6879-8b20-a2a1-b78c26e2a2fd` · diamond `725b19c0-7ba2-8f53-823a-6b864240b0fa`
+path `contains` · uuid `e494526b-abfe-874a-84a4-de7436c74253` · diamond `3cc5a64d-d928-8cfd-8de5-eb30ee7ca184`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·geo·law·merge·place·season·sti · exports contains · escapes —
 links `7/7` · folded `1` · bonds in `7` out `7`
@@ -14,4 +14,4 @@ law contains is one schema.org word, content-addressed; the same word collides e
 
 ---
 
-<sub>content-uuid `b2c30a23-11e2-8eda-ac75-58c606a046c5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7939b2a1-326e-89af-be2d-8c8ccf0d3212` · `pnpm readme` · `pnpm computed:check`</sub>

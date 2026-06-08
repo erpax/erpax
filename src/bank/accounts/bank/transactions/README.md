@@ -2,9 +2,11 @@
 
 # transactions
 
-> atom `bank/accounts/bank/transactions` · horo `8` `crest` · [[balance]] `1` · [[seal]] `0`
+> atom `bank/accounts/bank/transactions` · horo `7` `descent` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `bank/accounts/bank/transactions` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,11 +23,57 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `seal:unsealed`
+- `trigger:Use when matching, querying, or auditing individual ISO 20022 camt.053 bank-statement lines — each line is a first-class row with externalId, bookingDate, valueDate, amount, creditDebitIndicator, currency, booking status, bank transaction code, counterparty IBAN/BIC, remittance info, and matchStatus against journal entries. The per-line reconciliation-evidence collection.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `29eba542-c77c-8606-bda4-8ba24272f1c1` · `e378623d-68d1-8c77-bc7f-3f19d57ef727` · `f9baddb2-16b1-81be-b1ae-ee3797efba81`
+- content uuids `3e17f830-f0f1-88f2-8169-a7d7a1053c73` · `ba7d9603-8ab5-8c3a-9e44-c38053b60b9d` · `efad47bb-d07e-85e1-82df-1508c57136c5`
+
+## [[entropy]] — gaps · seals
+
+> account code `bank/accounts/bank/transactions` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.7` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `2` eb | Σ seal `11.7` eb |
+
+> net residual `-9.7` eb · seal/gap ratio `5.85` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `bank` · sub-root `87606df1-5071-8b98-ac3b-0b1f53544470`
-- bond degree `83` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- partition `bank` · sub-root `04fbb928-276c-8212-a5e8-bb8be5c2fc18`
+- bond degree `54` · analysis neighbors —
+- graph root `86252db0-c776-84eb-b8e4-c884dca3a3ba`
 
 ## [[cloudflare]] bindings
 
@@ -53,7 +101,6 @@
 - `ISO-11649:2009 financial-services-creditor-reference` · banner
 - `ISO-13616-1` · catalogue
 - `ISO-13616-1:2020 iban` · banner
-- `ISO-19011:2018 audit-trail reconciliation-line-evidence` · banner
 - `ISO-20022` · catalogue
 - `ISO-20022 camt.053 bank-to-customer-statement` · banner
 - `ISO-20022 ChargeBearerType1Code` · banner
@@ -71,16 +118,54 @@
 - `SOX §404 internal-controls bank-reconciliation` · banner
 - `US-GAAP ASC-230 cash-flows` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·7 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `83` · sealed `0` · horo `8`
+- bond degree `54` · sealed `0` · horo `7`
 - variance `0` · balanced `1` · trinity sum `3`
-- bindings `0` · standards `37`
+- bindings `0` · standards `36`
 
 ## identity
 
-- uuid `de64d7c1-15fd-8ae5-a415-173b51516c8d`
-- bonds in `22` · out `29`
+- uuid `0b0dea24-595d-8ce2-9738-6b0ecb624299`
+- bonds in `11` · out `11`
 - trinity form·code·proof `1`·`1`·`1`
 - links `12` / `12`
 - folded `1` · escapes `0`
@@ -91,4 +176,4 @@
 
 ---
 
-<sub>content-uuid `779708f8-00b9-89ce-bbfb-b484d1e6a06b` · framed by typography partition `bank` bonds `83` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d028ba8a-44ef-8e6f-92d8-4960f889305d` · framed by typography partition `bank` bonds `54` · `pnpm readme` · `pnpm readme:check`</sub>

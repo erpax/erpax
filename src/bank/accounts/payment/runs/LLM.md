@@ -3,15 +3,15 @@
 
 # runs
 
-path `bank/accounts/payment/runs` · uuid `580005e3-30f4-86a6-8087-68d1126e7f6d` · diamond `0a04ff06-e785-8e03-ba9f-9cc025c170d8`
+path `bank/accounts/payment/runs` · uuid `df12e7ba-16e3-8b64-8f7a-36a29ff64ec0` · diamond `5a4c4bbf-4285-8f97-9d44-8c13e9ddadec`
 horo `7` `descent` · trinity `1·1·1` · sealed `0`
 imports @/audit/trail/after/change·@/auth·@/auto/populate/created/by·@/auto/populate/tenant·@/auto/set/timestamp·@/base/accounting/field·@/utility · exports default · escapes —
-links `5/5` · folded `1` · bonds in `22` out `25`
+links `5/5` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·accounting·accounts·adjustments·balance·centers·close·compensation·employees·entries·entry·give·horo·identity·law·mandates·orders·party·privilege·proof·proof·runs·standard·transaction·transaction · ← accounting·accounts·adjustments·balance·centers·close·compensation·employees·entries·entry·give·horo·identity·law·mandates·orders·party·privilege·proof·runs·standard·transaction
+neighbors → accounting·accounts·mandates·proof·runs·standard·transaction · ← accounting·accounts·mandates·proof·runs·standard·transaction
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `6d458f15-0c4a-849a-b7d8-184ed00fd953` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `87f12ab9-234f-8d1e-998f-25053a054033` · `pnpm readme` · `pnpm computed:check`</sub>

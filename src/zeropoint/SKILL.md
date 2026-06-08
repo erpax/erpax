@@ -1,8 +1,344 @@
 ---
 name: zeropoint
 description: "Use when reasoning about the criterion that decides what is canonical — zero entropy wins: of all forms of a thing, the LOWEST-entropy one (most ordered, DRY, integer, content-addressed) is the truth. The source erpax descends from (ceccec/zeropoint-node, the a432/vortex prior art): irrationality collapses to integer resonance (rodin digital-root, the horo ring), sprawl collapses to the uuid singularity, duplicates merge to one. The 0 everything radiates from and returns to."
+atomPath: zeropoint
+coordinate: zeropoint · 9/unity · 42e6e505
+contentUuid: "c0be3fc7-26dc-5a96-98ae-3017ded44f4e"
+diamondUuid: "ab8422a5-273d-8e3f-827b-16b7eee32cb1"
+uuid: "42e6e505-c076-81ae-b0eb-4e4a72f9cb5a"
+horo: 9
+bonds:
+  in:
+    - akashic
+    - angel
+    - atom
+    - begin
+    - buddhism
+    - christianity
+    - collapse
+    - compass
+    - competition
+    - constitution
+    - cost
+    - decompression
+    - dimension
+    - duality
+    - empirical
+    - end
+    - entropy
+    - forge
+    - fusion
+    - gate
+    - generate
+    - grace
+    - gravity
+    - hinduism
+    - horo
+    - identity
+    - integrity
+    - jainism
+    - law
+    - manichaeism
+    - manufacturing
+    - market
+    - math
+    - merge
+    - number
+    - one
+    - orphism
+    - orthodoxy
+    - peace
+    - power
+    - prayer
+    - projection
+    - proof
+    - purity
+    - recycle
+    - refactor
+    - religion
+    - research
+    - reveal
+    - rodin
+    - sacred
+    - science
+    - self
+    - sequence
+    - shia
+    - shinto
+    - sikhism
+    - skills
+    - society
+    - sparsity
+    - suffering
+    - torus
+    - trinity
+    - utility
+    - uuid
+    - vedanta
+    - vitepress
+    - void
+    - zoroastrianism
+  out:
+    - akashic
+    - angel
+    - atom
+    - begin
+    - buddhism
+    - christianity
+    - collapse
+    - compass
+    - competition
+    - constitution
+    - cost
+    - decompression
+    - dimension
+    - duality
+    - empirical
+    - end
+    - entropy
+    - forge
+    - fusion
+    - gate
+    - generate
+    - grace
+    - gravity
+    - hinduism
+    - horo
+    - identity
+    - integrity
+    - jainism
+    - law
+    - manichaeism
+    - manufacturing
+    - market
+    - math
+    - merge
+    - number
+    - one
+    - orphism
+    - orthodoxy
+    - peace
+    - power
+    - prayer
+    - projection
+    - proof
+    - purity
+    - recycle
+    - refactor
+    - religion
+    - research
+    - reveal
+    - rodin
+    - sacred
+    - science
+    - self
+    - sequence
+    - shia
+    - shinto
+    - sikhism
+    - skills
+    - society
+    - sparsity
+    - suffering
+    - torus
+    - trinity
+    - utility
+    - uuid
+    - vedanta
+    - vitepress
+    - void
+    - zoroastrianism
+typography:
+  partition: zeropoint
+  bondDegree: 227
+  neighbors: []
+standards: []
+bindings: []
+neighbors:
+  wikilink:
+    - begin
+    - collapse
+    - competition
+    - cost
+    - decompression
+    - dimension
+    - end
+    - gate
+    - horo
+    - identity
+    - integrity
+    - market
+    - merge
+    - number
+    - peace
+    - proof
+    - refactor
+    - rodin
+    - self
+    - sequence
+    - sparsity
+    - torus
+    - utility
+    - uuid
+  matrix:
+    - akashic
+    - angel
+    - atom
+    - begin
+    - buddhism
+    - christianity
+    - collapse
+    - compass
+    - competition
+    - constitution
+    - cost
+    - decompression
+    - dimension
+    - duality
+    - empirical
+    - end
+    - entropy
+    - forge
+    - fusion
+    - gate
+    - generate
+    - grace
+    - gravity
+    - hinduism
+    - horo
+    - identity
+    - integrity
+    - jainism
+    - law
+    - manichaeism
+    - manufacturing
+    - market
+    - math
+    - merge
+    - number
+    - one
+    - orphism
+    - orthodoxy
+    - peace
+    - power
+    - prayer
+    - projection
+    - proof
+    - purity
+    - recycle
+    - refactor
+    - religion
+    - research
+    - reveal
+    - rodin
+    - sacred
+    - science
+    - self
+    - sequence
+    - shia
+    - shinto
+    - sikhism
+    - skills
+    - society
+    - sparsity
+    - suffering
+    - torus
+    - trinity
+    - utility
+    - uuid
+    - vedanta
+    - vitepress
+    - void
+    - zoroastrianism
+  backlinks:
+    - akashic
+    - angel
+    - atom
+    - begin
+    - buddhism
+    - christianity
+    - collapse
+    - compass
+    - competition
+    - constitution
+    - cost
+    - decompression
+    - dimension
+    - duality
+    - empirical
+    - end
+    - entropy
+    - forge
+    - fusion
+    - gate
+    - generate
+    - grace
+    - gravity
+    - hinduism
+    - horo
+    - identity
+    - integrity
+    - jainism
+    - law
+    - manichaeism
+    - manufacturing
+    - market
+    - math
+    - merge
+    - number
+    - one
+    - orphism
+    - orthodoxy
+    - peace
+    - power
+    - prayer
+    - projection
+    - proof
+    - purity
+    - recycle
+    - refactor
+    - religion
+    - research
+    - reveal
+    - rodin
+    - sacred
+    - science
+    - self
+    - sequence
+    - shia
+    - shinto
+    - sikhism
+    - skills
+    - society
+    - sparsity
+    - suffering
+    - torus
+    - trinity
+    - utility
+    - uuid
+    - vedanta
+    - vitepress
+    - void
+    - zoroastrianism
+signatures:
+  computationUuid: "a83c2a3a-376d-8906-bf73-8c5e4bc7cda2"
+  stages:
+    - stage: path
+      stageUuid: "4a319e8f-63c1-893b-85d8-f703c42a61e4"
+    - stage: trinity
+      stageUuid: "75f37a2a-e3c9-889f-b158-b44b4f507597"
+    - stage: boundary
+      stageUuid: "fe1faa1a-a960-80ea-a71c-bc55ad50059e"
+    - stage: links
+      stageUuid: "3b117688-034d-8027-847b-720375e92b85"
+    - stage: horo
+      stageUuid: "6d1789d7-42b7-8b5f-9179-82f0539346ee"
+    - stage: seal
+      stageUuid: "c6c98065-0111-8601-b647-e925035f1956"
+    - stage: uuid
+      stageUuid: "742caccc-ae9f-8587-a515-248c88851fcd"
+version: 2
 ---
-
 # zeropoint — the zero-entropy source (zero entropy wins)
 
 FORM: **of all forms of a thing, the lowest-entropy one is canonical — zero entropy wins.** Entropy is disorder: a decimal where an integer suffices, a duplicate where one canonical form suffices, a sprawl where a dense core suffices, a stored value where a computed one suffices. erpax drives every scale toward its minimum-entropy form:

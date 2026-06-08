@@ -3,8 +3,8 @@
 
 # coordinates
 
-path `coordinates` · uuid `89d2487e-f5b2-8ca3-856b-a8152540395a` · diamond `56ee892f-d353-814a-ad9a-2c7c15050969`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `coordinates` · uuid `7cdcb5bc-acd7-88b2-81ee-da2372f079f7` · diamond `9f803219-5613-8c07-8378-0d78320cd767`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·geo·law·merge·sti · exports coordinates · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law coordinates is one schema.org word, content-addressed; the same word collide
 
 ---
 
-<sub>content-uuid `779c88e8-349c-893b-aa84-ed7f8c366797` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0febc23a-7214-86ef-bccc-51a4a469bffa` · `pnpm readme` · `pnpm computed:check`</sub>

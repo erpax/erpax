@@ -23,7 +23,7 @@
 
 - partition `dvdformat` · sub-root `765c14d9-9e40-89f3-8403-f072a5b92fd3`
 - bond degree `12` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `90fc05a2-ca89-8bdf-ac60-f57e0e8b60c4` · framed by typography partition `dvdformat` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0efa65bc-6672-8f2f-b1ba-7a7172302c92` · framed by typography partition `dvdformat` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

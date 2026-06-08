@@ -3,15 +3,15 @@
 
 # team
 
-path `team` · uuid `63c31061-8c5c-8b15-9493-ca40bce4cc52` · diamond `ef8cae1a-5416-833b-a730-4cdf35cd8d06`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
-imports agent·axis·chat·contribution·decompression·duality·fractal·give·holographic·horo·merge·one·part·rodin·self·society·take·tamper·trinity·whole · exports team · escapes —
-links `51/51` · folded `1` · bonds in `8` out `8`
-faces worker·plugin·pwa `0·0·0`
-neighbors → accrual·attrition·company·cost·emission·footer·reports·thing · ← accrual·attrition·company·cost·emission·footer·reports·thing
+path `team` · uuid `1bd23836-1ffa-8664-948d-e4ba5e3be0ba` · diamond `5e46d70e-230f-8e87-a662-655e50f26ad6`
+horo `7` `descent` · trinity `1·1·1` · sealed `1`
+imports @/agent/team·@/team/comms · exports BASIC_TEAM_SIZES·MAX_TEAM_COMMS_DEPTH·TEAM_DISCIPLINE·basicTeams·enforceTeamCommsEmit·formTeam·isBasicTeam·mergeTeams·shareSkills·spawnTeam·teamCommsBeforeChange·teamCovers·teamGrouping·teamSkills·teamUuid·type·waveCorrelationUuid·waveInSecureComms · escapes —
+links `62/62` · folded `1` · bonds in `43` out `43`
+faces worker·plugin·pwa `1·0·0`
+neighbors → access·agent·akashic·away·axis·brainstorm·breath·chat·classroom·comms·contribution·cost·decompression·drone·duality·fractal·give·holographic·home·horo·identity·law·merge·one·part·peace·quantum·realtime·receipt·rodin·sandbox·self·skill·skills·society·society·sports·take·test·trinity·war·wave·whole · ← access·agent·akashic·away·axis·brainstorm·breath·chat·classroom·comms·contribution·cost·decompression·drone·duality·fractal·give·holographic·home·horo·identity·law·merge·one·part·peace·quantum·realtime·receipt·rodin·sandbox·self·skill·skills·society·society·sports·take·test·trinity·war·wave·whole
 analysis agent
 law —
 
 ---
 
-<sub>content-uuid `31ad9f17-77ad-8e0a-8b20-638fcba76bd5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `04693acb-cc4a-80ad-9894-c2d570678dbc` · `pnpm readme` · `pnpm computed:check`</sub>

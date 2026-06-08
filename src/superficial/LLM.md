@@ -8,10 +8,10 @@ horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports anatomy·collapse·law·merge·sti · exports superficial · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·principle·stat · ← cohort·landmarks·memories·principle·stat
+neighbors → anatomy·collapse·law·merge·sti · ← anatomy·collapse·law·merge·sti
 analysis —
 law superficial is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `f6b4a4d0-cdba-8fc2-949b-269b7444c280` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8cf495f9-8107-88a9-81e2-cbdb34cebddd` · `pnpm readme` · `pnpm computed:check`</sub>

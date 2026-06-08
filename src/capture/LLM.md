@@ -3,8 +3,8 @@
 
 # capture
 
-path `capture` · uuid `9c8cecb4-07c2-83d8-9247-9a1c506a9a12` · diamond `2cf4f0e8-0143-8e89-a672-ce2e564f5c7d`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `capture` · uuid `70dfaf3b-ee14-8397-9a01-a41bc37b4bb9` · diamond `5f21807e-dc42-8ca7-9081-ab6c294a8bb2`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports capture · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law capture is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `6fe953bc-ea9e-8762-bfa4-2c280259a1b0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3994d26b-a37c-837c-9842-4c6f70958579` · `pnpm readme` · `pnpm computed:check`</sub>

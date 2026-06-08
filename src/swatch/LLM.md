@@ -3,15 +3,15 @@
 
 # swatch
 
-path `swatch` · uuid `cd3ab18c-86ca-8282-85e3-7d0e92a908b1` · diamond `dd7e913b-6c13-8c4d-a0f1-57039efe8d67`
+path `swatch` · uuid `cd3ab18c-86ca-8282-85e3-7d0e92a908b1` · diamond `70b2c7dd-7c21-82f9-9217-2c452474ee74`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·color·law·merge·sti · exports swatch · escapes —
-links `5/5` · folded `1` · bonds in `16` out `16`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → 9110·accounting·all·cohort·command·comment·diffusion·fertility·homeopathic·hook·llm·matrix·partial·sell·swimming·user · ← 9110·accounting·all·cohort·command·comment·diffusion·fertility·homeopathic·hook·llm·matrix·partial·sell·swimming·user
+neighbors → collapse·color·law·merge·sti · ← collapse·color·law·merge·sti
 analysis —
 law swatch is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `a4a6c596-20aa-8c4d-b8ea-3ef187e77286` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `cf84602f-226c-8d2b-b5a7-c26f50d990eb` · `pnpm readme` · `pnpm computed:check`</sub>

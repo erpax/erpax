@@ -3,8 +3,8 @@
 
 # contributor
 
-path `contributor` · uuid `170c514a-3e4d-86c8-a4c6-4207ad352cac` · diamond `2f73b04c-a1b6-8496-a5ef-1b9d048ec24c`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `contributor` · uuid `d6184013-ee21-8ad5-bb93-9b3abca809dd` · diamond `682de259-9ab1-8e88-b976-0c086dc531f3`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports law·person·thing · exports contributor · escapes —
 links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law contributor is one schema.org word, content-addressed; the same word collide
 
 ---
 
-<sub>content-uuid `33cdc428-2f3c-8522-a91b-a62a105197b5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `845cfd25-9ace-8020-b744-3be3d7df1ab4` · `pnpm readme` · `pnpm computed:check`</sub>

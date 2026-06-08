@@ -2,9 +2,11 @@
 
 # 5305
 
-> atom `un/cefact/5305` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
+> atom `un/cefact/5305` · horo `5` `round` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `un/cefact/5305` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,24 +23,126 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `law:exactly the nine codes EN-16931 admits are valid, and the chosen category code determines whether a VAT rate and an exemption reason are required.`
+- `seal:unsealed`
+- `trigger:Use when implementing or referencing UN/CEFACT 5305 — Duty / Tax / Fee Category Code.`
+- `trigger:exactly the nine codes EN-16931 admits are valid, and the chosen category code determines whether a VAT rate and an exemption reason are required.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `3430c215-5c7b-8101-82e8-5b709617c92a` · `5009d024-ae2d-8fdd-bf10-3f9f46030516` · `c2b279ef-fa6f-85a2-9f71-949e283c30b4`
+- content uuids `00b1798f-530e-8b97-8595-153dbee8e2a3` · `58b6120a-c6af-83e7-a52e-4c2db448b5c0` · `84b2600e-126e-841c-873f-a81eacb66c5f`
+
+## [[entropy]] — gaps · seals
+
+> account code `un/cefact/5305` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.5` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `2` eb | Σ seal `11.5` eb |
+
+> net residual `-9.5` eb · seal/gap ratio `5.75` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `un` · sub-root `668957bc-8068-80a9-a5fb-0d7aff2dc10a`
-- bond degree `13` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- partition `un` · sub-root `eca654d3-09a2-8b71-a16d-818d1d78df49`
+- bond degree `3` · analysis neighbors —
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `EN-16931:2017 BT-151 vat-category-code (subset that EN-16931 admits)` · banner
+- `UN-CEFACT` · catalogue
+- `UN/CEFACT Trade Data Element 5305 duty-tax-fee-category-code` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·5 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `3` · sealed `0` · horo `5`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `3`
 
 ## identity
 
-- uuid `df501f8c-9ecc-84a5-8ba2-75f1cdc1d1da`
-- bonds in `6` · out `6`
+- uuid `8cd575d0-d3c0-8c2d-875f-874f2fc8ff67`
+- bonds in `1` · out `1`
 - trinity form·code·proof `1`·`1`·`1`
 - links `1` / `1`
 - folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `b7d68899-487f-8726-91bf-9d0e48af4dd6` · framed by typography partition `un` bonds `13` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `83007fd3-2fa0-83fa-8da6-dc33afeb96a0` · framed by typography partition `un` bonds `3` · `pnpm readme` · `pnpm readme:check`</sub>

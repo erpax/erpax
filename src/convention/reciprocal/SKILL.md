@@ -1,8 +1,86 @@
 ---
 name: reciprocal
-description: Use when checking whether the corpus stays symmetrically entangled — the computed convention that every directed edge is reciprocated, measured live as coverage = reciprocal / total over the real uuid-matrix.
+description: "Use when checking whether the corpus stays symmetrically entangled — the computed convention that every directed edge is reciprocated, measured live as coverage = reciprocal / total over the real uuid-matrix."
+atomPath: convention/reciprocal
+coordinate: convention/reciprocal · 1/base · 8035b848
+contentUuid: "0188c81a-c19d-50d7-b869-af0f4f103ccd"
+diamondUuid: "3303357d-9c48-894a-9c1a-9ff1e1bcaf49"
+uuid: "8035b848-6c49-8d6e-9e7f-eb83562adc28"
+horo: 1
+bonds:
+  in:
+    - convention
+    - cost
+    - entanglement
+    - entropy
+    - gravity
+    - law
+    - link
+    - merge
+    - uuid
+  out:
+    - cost
+    - entanglement
+    - entropy
+    - gravity
+    - law
+    - link
+    - merge
+    - uuid
+typography:
+  partition: convention
+  bondDegree: 24
+  neighbors: []
+standards:
+  - "schema.org — the type vocabulary, collided to single words"
+bindings: []
+neighbors:
+  wikilink:
+    - cost
+    - entanglement
+    - entropy
+    - gravity
+    - law
+    - link
+    - merge
+    - uuid
+  matrix:
+    - cost
+    - entanglement
+    - entropy
+    - gravity
+    - law
+    - link
+    - merge
+    - uuid
+  backlinks:
+    - cost
+    - entanglement
+    - entropy
+    - gravity
+    - law
+    - link
+    - merge
+    - uuid
+signatures:
+  computationUuid: "38158b4b-848c-846e-81eb-7f5bd4078ca9"
+  stages:
+    - stage: path
+      stageUuid: "a02cd22c-756b-889f-81e6-f1eee32f6dc2"
+    - stage: trinity
+      stageUuid: "0c6f3a81-d58b-8247-b125-6848965b2894"
+    - stage: boundary
+      stageUuid: "7a911639-155e-8d86-817b-379f6326af23"
+    - stage: links
+      stageUuid: "66c09ab0-f99a-8672-95ad-d15e48262d40"
+    - stage: horo
+      stageUuid: "200ede29-fcb6-8d1f-b6e1-ec7f3cadc771"
+    - stage: seal
+      stageUuid: "789a7d1e-d3bd-8d59-90fc-995090ed4d23"
+    - stage: uuid
+      stageUuid: "5c7eb984-4720-8294-845f-0032c1387ea9"
+version: 2
 ---
-
 # convention/reciprocal — every directed edge is reciprocated (symmetric entanglement)
 
 The symmetric-entanglement convention, written as a self-measuring atom. It states one rule and computes its own compliance — it does not re-implement the corpus collision, it **composes** the generated edge set:

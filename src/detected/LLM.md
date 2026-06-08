@@ -3,8 +3,8 @@
 
 # detected
 
-path `detected` · uuid `848b27ec-2736-8c21-9121-58f3faac1d29` · diamond `0916ad5c-8fe0-8a45-b1f8-024de8d5daa4`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `detected` · uuid `7279c01f-c580-8122-ba57-03e83ce0e9c1` · diamond `98e19b30-e674-81e2-a991-0697e0eb6811`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sign·sti · exports detected · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law detected is one schema.org word, content-addressed; the same word collides e
 
 ---
 
-<sub>content-uuid `034ba17d-a743-8e76-a6e9-e54ac2546a35` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `cc976891-d1a5-849f-aae3-a32e840c35ed` · `pnpm readme` · `pnpm computed:check`</sub>

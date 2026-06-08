@@ -3,8 +3,8 @@
 
 # emissions
 
-path `fiscal/periods/carbon/emissions` · uuid `cc8dc717-8e57-899f-ac23-1c1a7da89fdc` · diamond `b84cfc7f-eca8-8d96-8760-346ea2917213`
-horo `8` `crest` · trinity `1·1·1` · sealed `1`
+path `fiscal/periods/carbon/emissions` · uuid `702132f7-97dd-8cad-9a7c-25de6ea5fe2b` · diamond `6700a2a6-9667-88ec-80ea-6d0afcc4b098`
+horo `7` `descent` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/ghg/protocol·@/standard/collection/hook · exports default · escapes —
 links `6/6` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law every emission row computes tCO2e as activity-data × emission-factor and is
 
 ---
 
-<sub>content-uuid `a5d42103-a0a5-823e-ada4-d1e9bc80333f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f83575fa-277c-88b0-8034-3a17b80a44c0` · `pnpm readme` · `pnpm computed:check`</sub>

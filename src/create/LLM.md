@@ -3,8 +3,8 @@
 
 # create
 
-path `create` · uuid `729ffefb-a54e-8860-8238-ba7af27e440f` · diamond `d5e3a77c-5b9d-8309-a882-a5abb39b4a3f`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `create` · uuid `5ff5cb93-afc7-8bc6-adff-93bcd08fd5a7` · diamond `5b44f800-85ee-8365-81a7-0b3f9d8c14c0`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti · exports create · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law create is one schema.org word, content-addressed; the same word collides eve
 
 ---
 
-<sub>content-uuid `ad51db46-8133-811c-b027-bbf3424c5f42` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `897f5d6d-53ec-8d5f-8967-e5036a56e7ef` · `pnpm readme` · `pnpm computed:check`</sub>

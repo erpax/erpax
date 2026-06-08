@@ -2,7 +2,7 @@
 
 # competition
 
-> atom `competition` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
+> atom `competition` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -23,9 +23,9 @@
 
 ## typography graph
 
-- partition `competition` · sub-root `fd4da768-c567-8844-93ef-8efee42195ab`
+- partition `competition` · sub-root `bb22262d-24f7-8dbc-a009-2161ae25e8d7`
 - bond degree `57` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -35,15 +35,53 @@
 
 - `ISO/IEC 25010:2023 §5.2 performance-efficiency (fastest-correct selection)` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·2 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `57` · sealed `1` · horo `4`
+- bond degree `57` · sealed `1` · horo `2`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `1`
 
 ## identity
 
-- uuid `fd4da768-c567-8844-93ef-8efee42195ab`
+- uuid `bb22262d-24f7-8dbc-a009-2161ae25e8d7`
 - bonds in `19` · out `19`
 - trinity form·code·proof `1`·`1`·`1`
 - links `24` / `24`
@@ -55,4 +93,4 @@
 
 ---
 
-<sub>content-uuid `5ad9ed7e-21e5-84e4-af6b-c06e4cfe7c18` · framed by typography partition `competition` bonds `57` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `6e5a66f4-14fd-824f-84dc-26d291163c0f` · framed by typography partition `competition` bonds `57` · `pnpm readme` · `pnpm readme:check`</sub>

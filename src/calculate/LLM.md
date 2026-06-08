@@ -3,7 +3,7 @@
 
 # calculate
 
-path `calculate` · uuid `1329395a-1c61-869f-a01b-cbe619ab591f` · diamond `31418695-2f0b-80c2-a4b5-ce0e3c723f09`
+path `calculate` · uuid `7e1d1e69-3f63-8431-87cd-0519b3877cb4` · diamond `8299e6f4-28af-8e86-9be2-fccf4d20eb0f`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports accounting·amortize·api·currency·depreciate·ebitda·law·measure·port · exports calculate · escapes —
 links `13/13` · folded `1` · bonds in `20` out `20`
@@ -14,4 +14,4 @@ law a calculator is a pure form-object (validate → standards-cited formula →
 
 ---
 
-<sub>content-uuid `8b4bebb1-0416-888c-ad20-0e11e0dde7f7` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4c248727-91b8-8b6b-968c-3ea1a2454d2a` · `pnpm readme` · `pnpm computed:check`</sub>

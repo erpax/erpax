@@ -2,7 +2,7 @@
 
 # 15
 
-> atom `ifrs/15` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
+> atom `ifrs/15` · horo `1` `base` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -25,7 +25,29 @@
 
 - partition `ifrs` · sub-root `573a4dc3-4d80-8d82-bc37-84cbc3e12567`
 - bond degree `3` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ECMA-262` · catalogue
+- `EU-2024/1183` · catalogue
+- `EU-2024/1620` · catalogue
+- `EU-2024/1624` · catalogue
+- `EU-CSDDD-2024/1760` · catalogue
+- `IFRS IFRS-15 revenue-from-contracts-with-customers` · banner
+- `IFRS IFRS-15` / `@accounting US-GAAP ASC-606`. Plus `gl-posting.service.ts` has four subscription-lifecycle handlers. Before this module, each defined its own ad-hoc types for the same concepts (performance obligation, transaction price, allocation). Now they all reference the canonical shapes here.` · banner
+- `ISO-4217:2015 currency-codes` · banner
+- `US-GAAP ASC-606 revenue-from-contracts-with-customers` · banner
+
+## analytics
+
+- bond degree `3` · sealed `0` · horo `1`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `9`
 
 ## identity
 
@@ -37,8 +59,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `1d2e72d4-a0d3-8949-a449-1ce33cd143ab` · framed by typography partition `ifrs` bonds `3` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `429ed6fd-5951-853a-a780-59ceb2f9a4f2` · framed by typography partition `ifrs` bonds `3` · `pnpm readme` · `pnpm readme:check`</sub>

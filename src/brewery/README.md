@@ -2,7 +2,7 @@
 
 # brewery
 
-> atom `brewery` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
+> atom `brewery` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -21,9 +21,9 @@
 
 ## typography graph
 
-- partition `brewery` · sub-root `f988cf53-357c-8764-b09b-980f697a81e4`
+- partition `brewery` · sub-root `9089d843-fa42-8932-a2ef-b71e71db6a1d`
 - bond degree `9` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- graph root `1cef4f02-a3fa-83a5-8ea0-120b724ef456`
 
 ## [[cloudflare]] bindings
 
@@ -33,15 +33,53 @@
 
 - `schema.org — the type vocabulary, collided to single words` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·1 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `9` · sealed `1` · horo `8`
+- bond degree `9` · sealed `1` · horo `1`
 - variance `0` · balanced `1` · trinity sum `1`
 - bindings `0` · standards `1`
 
 ## identity
 
-- uuid `f988cf53-357c-8764-b09b-980f697a81e4`
+- uuid `9089d843-fa42-8932-a2ef-b71e71db6a1d`
 - bonds in `3` · out `3`
 - trinity form·code·proof `1`·`0`·`0`
 - links `3` / `3`
@@ -53,4 +91,4 @@
 
 ---
 
-<sub>content-uuid `57c68c1a-001f-8883-a7fd-53dfd327fceb` · framed by typography partition `brewery` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `987a10bf-c84d-83cc-94c0-bfcbe4a48f00` · framed by typography partition `brewery` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>

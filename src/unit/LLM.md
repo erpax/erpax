@@ -3,15 +3,15 @@
 
 # unit
 
-path `unit` · uuid `386818e0-1e6d-827e-9ec1-30882e147e45` · diamond `7459f986-704b-8cac-ac6b-6d83c9eecfee`
+path `unit` · uuid `386818e0-1e6d-827e-9ec1-30882e147e45` · diamond `2be15027-82ca-8b34-991f-5a08de6214d2`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports code·collapse·cost·description·dose·drug·employment·law·lodging·merge·price·sensory·specification·sti·strength·text·type · exports unit · escapes —
-links `17/17` · folded `1` · bonds in `6` out `6`
+links `17/17` · folded `1` · bonds in `17` out `17`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·complete·landmarks·memories·runbook·stat · ← cohort·complete·landmarks·memories·runbook·stat
+neighbors → code·collapse·cost·description·dose·drug·employment·law·lodging·merge·price·sensory·specification·sti·strength·text·type · ← code·collapse·cost·description·dose·drug·employment·law·lodging·merge·price·sensory·specification·sti·strength·text·type
 analysis —
 law unit is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `346c908c-06f6-81c4-9bf9-647e81634967` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `61929128-e29c-8358-ac11-ab5168979936` · `pnpm readme` · `pnpm computed:check`</sub>

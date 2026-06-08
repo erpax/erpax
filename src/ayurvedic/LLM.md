@@ -3,8 +3,8 @@
 
 # ayurvedic
 
-path `ayurvedic` · uuid `b38fdd6b-ed53-854d-beb1-cb508208a263` · diamond `7d3aaabc-5d3a-8e84-affa-8674dc26b6da`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `ayurvedic` · uuid `6ddb539d-b011-84ed-8f18-bc15ffd3c68e` · diamond `0700c632-acaa-8b2b-a047-2bdab4fe1f73`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports ayurvedic · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law ayurvedic is one schema.org word, content-addressed; the same word collides 
 
 ---
 
-<sub>content-uuid `8e5ce8a9-29ab-88e7-8809-0d7d9a25c515` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `76fce55b-2fe0-8a0a-b430-136e4dc2d48e` · `pnpm readme` · `pnpm computed:check`</sub>

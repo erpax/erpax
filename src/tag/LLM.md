@@ -3,15 +3,15 @@
 
 # tag
 
-path `tag` · uuid `b3d10850-1ae3-8713-a131-7e38301b00b4` · diamond `4f6b658d-5b71-861e-b054-64259901de07`
+path `tag` · uuid `b3d10850-1ae3-8713-a131-7e38301b00b4` · diamond `f479742c-29da-8c67-83e9-494595537d64`
 horo `1` `base` · trinity `1·0·1` · sealed `1`
 imports accounting·admin·commerce·database·hooks·identity·manufacturing·merge·plugins·queries·sequence·taggings · exports tag · escapes —
-links `23/23` · folded `1` · bonds in `5` out `5`
+links `23/23` · folded `1` · bonds in `16` out `15`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·id·progression·spouse·table · ← accounting·id·progression·spouse·table
+neighbors → accounting·admin·commerce·database·dna·hooks·identity·karma·manufacturing·merge·plugins·queries·sequence·tagging·taggings · ← accounting·accounting·admin·commerce·database·dna·hooks·identity·karma·manufacturing·merge·plugins·queries·sequence·tagging·taggings
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `6f5bc1f2-5b74-8418-a659-0183b0d804a4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `bae2d17f-f834-88ad-80e3-915d91538884` · `pnpm readme` · `pnpm computed:check`</sub>

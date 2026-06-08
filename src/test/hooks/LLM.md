@@ -3,15 +3,15 @@
 
 # hooks
 
-path `test/hooks` · uuid `3a658e69-ed7c-86e0-b18b-59db2375967d` · diamond `f1e83d96-ec3d-87f3-a43c-88b48c2909bd`
-horo `6` `6` · trinity `1·1·1` · sealed `0`
+path `test/hooks` · uuid `742779e4-53e2-8c02-b0ce-00cd526850d0` · diamond `34992361-db29-8012-b3e8-cc8b6862ce82`
+horo `3` `3` · trinity `1·1·1` · sealed `0`
 imports @/color·@/quantum/matrix · exports const · escapes —
-links `16/16` · folded `1` · bonds in `10` out `10`
+links `16/16` · folded `1` · bonds in `113` out `113`
 faces worker·plugin·pwa `1·0·0`
-neighbors → api·flight·getting·homeopathic·hook·hopats·landmarks·rheumatologic·right·sell · ← api·flight·getting·homeopathic·hook·hopats·landmarks·rheumatologic·right·sell
+neighbors → access·accounting·accounts·activities·adjustments·admin·allocation·analytics·assets·atom·aura·auth·axis·balance·beyond·by·carriers·cases·centers·change·chat·close·code·coherence·coil·collections·color·commerce·connections·conservation·conversion·coordinate·corruption·currency·declarations·defence·definitions·diamond·disclosures·ecommerce·education·engine·event·events·factory·failures·federation·fields·findings·harmony·health·heart·hook·hooks·hooks·horo·identifier·identity·instances·integrity·jobs·justice·law·law·manufacturing·media·messages·milestones·models·number·obligations·operations·optimize·orders·packages·payload·pipelines·plugin·port·position·quantum·rate·rates·reconcile·records·returns·reviews·rodin·routings·science·scorecards·sectors·segments·self·sequence·services·skills·sti·submissions·supto·tag·tenant·terminals·test·timestamp·torus·train·transaction·trinity·upload·variances·worker·workflow · ← access·accounting·accounts·activities·adjustments·admin·allocation·analytics·assets·assets·atom·aura·auth·axis·balance·beyond·by·carriers·cases·centers·change·chat·close·code·coherence·coil·collections·color·commerce·connections·conservation·conversion·coordinate·corruption·currency·declarations·defence·definitions·diamond·disclosures·ecommerce·education·engine·event·events·factory·failures·federation·fields·findings·harmony·health·heart·hook·hooks·hooks·horo·identifier·identity·instances·integrity·jobs·justice·law·manufacturing·media·messages·milestones·models·number·obligations·operations·optimize·orders·packages·payload·pipelines·plugin·port·position·quantum·rate·rates·reconcile·records·returns·reviews·rodin·routings·science·scorecards·sectors·segments·self·sequence·services·skills·sti·submissions·supto·tag·tenant·terminals·test·timestamp·torus·train·transaction·trinity·upload·variances·worker·workflow
 analysis analytics·aura·diamond·hallucination·purity
 law a green test IS a whole aura — the corpus renders coherence as the A432 heart colour only when every dimension is bound (reciprocity 1, the double-torus complete); a gap renders red. Matrix-complete ⟺ aura-gap-0.
 
 ---
 
-<sub>content-uuid `86ab1f4a-52a3-87b2-abb1-10036c17babe` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `43ba7eb8-bd2c-8bee-8724-841065f796ca` · `pnpm readme` · `pnpm computed:check`</sub>

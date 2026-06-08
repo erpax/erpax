@@ -3,15 +3,15 @@
 
 # artery
 
-path `artery` · uuid `c902da2e-92b5-80f6-bcfd-f5dd676f48f8` · diamond `9d206bc9-d2ff-8567-a38c-0cad17f34cae`
-horo `5` `round` · trinity `1·1·1` · sealed `1`
+path `artery` · uuid `5bb32f58-1ceb-82ed-b4e7-388c5531e086` · diamond `7a5989df-196e-80bf-b909-1321c1ea3be3`
+horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports @/conservation · exports const·function·interface · escapes —
-links `11/11` · folded `1` · bonds in `6` out `6`
+links `11/11` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `1·0·0`
-neighbors → body·cache·conservation·heart·law·vein · ← body·cache·conservation·heart·law·vein
+neighbors → artery·body·cache·conservation·heart·law·vein · ← artery·body·cache·conservation·heart·law·vein
 analysis —
 law the artery is the outbound Windkessel — its elastic reservoir smooths pulsatile ejection into steady peripheral flow (the buffer), recoils to perfuse between beats (never starving the downstream), and conserves (Σ in = Σ out + held); direction is its essence — a vessel that reverses is no longer an artery.
 
 ---
 
-<sub>content-uuid `e0497344-35df-8e54-8d5d-4bb9b15ca423` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `27375441-7839-8589-8a54-dff465808946` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,8 +3,8 @@
 
 # binding
 
-path `binding` · uuid `2bc65601-45ef-823a-b269-5d6633880690` · diamond `2b04f69e-a712-8165-9670-f521f85fcd91`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `binding` · uuid `c11e45eb-bc69-88c9-a07c-87ab5d47f736` · diamond `0ea51b9d-a1f5-833e-9805-a853dd6fdc55`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports balance·bindings·config · exports binding · escapes —
 links `6/6` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `b09adca8-f73e-8a93-9902-0e818cd383ea` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e0843c24-a587-8949-aea6-9589d2ca103f` · `pnpm readme` · `pnpm computed:check`</sub>

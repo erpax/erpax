@@ -1,8 +1,96 @@
 ---
 name: utility
 description: "Use when dividing by anything that could be zero — pick the policy by what the zero MEANS (throw for money, collapse to 0 for an undefined ratio, coerce to 1 for an unset divisor) so ∞ or NaN never enters an account."
+atomPath: utility
+coordinate: utility · 8/crest · bad0e333
+contentUuid: "baf4c8ee-2e08-5ac7-a000-4c16a05cf80b"
+diamondUuid: "3c7e6291-349a-8a62-a8c8-ef34f2e7985a"
+uuid: "bad0e333-a64b-885b-9d69-9193df4ac121"
+horo: 8
+bonds:
+  in:
+    - accounting
+    - allocation
+    - balance
+    - decompression
+    - dimension
+    - law
+    - number
+    - orders
+    - peace
+    - torus
+    - zeropoint
+  out:
+    - accounting
+    - allocation
+    - balance
+    - decompression
+    - dimension
+    - law
+    - number
+    - orders
+    - peace
+    - torus
+    - zeropoint
+typography:
+  partition: utility
+  bondDegree: 34
+  neighbors: []
+standards:
+  - "IEEE-754"
+bindings: []
+neighbors:
+  wikilink:
+    - accounting
+    - allocation
+    - balance
+    - law
+    - number
+    - orders
+    - zeropoint
+  matrix:
+    - accounting
+    - allocation
+    - balance
+    - decompression
+    - dimension
+    - law
+    - number
+    - orders
+    - peace
+    - torus
+    - zeropoint
+  backlinks:
+    - accounting
+    - allocation
+    - balance
+    - decompression
+    - dimension
+    - law
+    - number
+    - orders
+    - peace
+    - torus
+    - zeropoint
+signatures:
+  computationUuid: "19ad84e6-9202-81e3-91ce-4b2f63f410b3"
+  stages:
+    - stage: path
+      stageUuid: "3bd7aaa3-8111-88cb-a65d-18ce8b4fe6ba"
+    - stage: trinity
+      stageUuid: "6f5be1ef-b0c1-8ec7-8aaf-94da96b43125"
+    - stage: boundary
+      stageUuid: "804511ab-8e87-852b-b2c9-8ddfc37223db"
+    - stage: links
+      stageUuid: "2fc1f84a-a345-8352-9056-1745bc6f7680"
+    - stage: horo
+      stageUuid: "d5a1f8e1-d6d7-8f01-9565-a9e09998e16e"
+    - stage: seal
+      stageUuid: "fe6041f7-550d-8393-8e06-a43f7f649aeb"
+    - stage: uuid
+      stageUuid: "abbe928a-d12e-8e39-9919-e463cad9f6c2"
+version: 2
 ---
-
 # utility — the operational guard organ (no naked zero)
 
 FORM: **division ⊖ guard = a finite value** — every quotient passes a guard chosen by what the denominator's zero MEANS, so the operational tree NEVER mints ∞ or NaN into a ledger.

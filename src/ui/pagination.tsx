@@ -3,7 +3,7 @@
 import type { ButtonProps } from './button'
 
 import { buttonVariants } from './button'
-import { cn } from '@/ui'
+import { cn } from '@/ui/utils'
 import { ChevronLeft, ChevronRight, MoreHorizontal } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import * as React from 'react'

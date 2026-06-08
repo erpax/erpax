@@ -3,15 +3,15 @@
 
 # tributary
 
-path `tributary` · uuid `dfd3df72-0e51-81f1-a657-b1f9b550fcd3` · diamond `ecbeaff9-7b38-8e90-b794-c08d7e9ecb10`
+path `tributary` · uuid `dfd3df72-0e51-81f1-a657-b1f9b550fcd3` · diamond `c005e518-2685-805e-b2eb-10866886e1ee`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports tributary · escapes —
-links `2/2` · folded `1` · bonds in `6` out `6`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat·trial·until · ← cohort·landmarks·memories·stat·trial·until
+neighbors → law·thing · ← law·thing
 analysis —
 law tributary is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `5306775d-eb00-8566-b495-8e5815951d7e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2cb012f2-23fe-83b1-84f4-08cd2b5676a4` · `pnpm readme` · `pnpm computed:check`</sub>

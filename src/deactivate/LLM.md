@@ -3,8 +3,8 @@
 
 # deactivate
 
-path `deactivate` · uuid `af9fa42f-7d06-8d75-9ae1-90f9e17fb591` · diamond `5a6b1615-2afe-8cbe-b987-e2cb4df1f971`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `deactivate` · uuid `0cf34097-496a-8e3e-bb61-cac2eb7487b4` · diamond `93bb85e2-1804-8de0-aadf-832e9e9bdd8f`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti · exports deactivate · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law deactivate is one schema.org word, content-addressed; the same word collides
 
 ---
 
-<sub>content-uuid `013416c4-5f57-8888-afb8-ec92c296c552` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6f01dc08-58a2-8afb-a6b9-588b93a8483c` · `pnpm readme` · `pnpm computed:check`</sub>

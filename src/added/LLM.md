@@ -3,8 +3,8 @@
 
 # added
 
-path `added` · uuid `52bb124e-bd77-8157-8805-66256fcacf1e` · diamond `71ca8aa6-eb77-8ff1-ba73-f21418014bc1`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `added` · uuid `35c2aeda-ca06-8db7-9ffc-79de674e3f64` · diamond `9cc5b5b2-3492-84dd-8dfa-b8937ebb249a`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·included·law·merge·sti·tax·value · exports added · escapes —
 links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law added is one schema.org word, content-addressed; the same word collides ever
 
 ---
 
-<sub>content-uuid `51428f06-7e60-84b1-b8d6-0c4dd9da699f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9e27839b-ff25-81ac-b934-cbfb36dbb938` · `pnpm readme` · `pnpm computed:check`</sub>

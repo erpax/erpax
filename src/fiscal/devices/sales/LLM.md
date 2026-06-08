@@ -3,15 +3,15 @@
 
 # sales
 
-path `fiscal/devices/sales` · uuid `5c839d12-9323-88a8-9458-a3d71964161c` · diamond `e0465698-bdb5-8b52-b1c2-d43f2decf51c`
-horo `5` `round` · trinity `1·1·1` · sealed `1`
+path `fiscal/devices/sales` · uuid `1bf0cda9-c432-82f7-9ddc-7b5ffc5d4036` · diamond `592c24e4-7817-8318-98cf-8fd1f0f98249`
+horo `1` `base` · trinity `1·1·1` · sealed `0`
 imports @/audit/trail/after/change·@/auth·@/auto/populate/tenant·@/auto/set/timestamp·@/fields·@/sale · exports default · escapes —
-links `5/5` · folded `1` · bonds in `17` out `19`
+links `5/5` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·accounting·accounting·arrangements·balance·close·commission·devices·entries·entry·horo·inventories·invoices·law·law·opportunity·receipts·standard·take · ← access·accounting·arrangements·balance·close·commission·devices·entries·entry·horo·inventories·invoices·law·opportunity·receipts·standard·take
+neighbors → access·accounting·commission·devices·law·opportunity·receipts·standard · ← access·accounting·commission·devices·law·opportunity·receipts·standard
 analysis —
 law every sale receives an immutable, gapless УНП and is frozen on close — there is no delete; a mistake is corrected only by a сторно reversal, and the content-uuid hash makes the closed sale tamper-proof (Наредба Н-18 СУПТО).
 
 ---
 
-<sub>content-uuid `aaeaeb19-043a-8a4c-b702-6a92403bbc51` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a7bf518d-a147-894f-82aa-752bd4bf6f61` · `pnpm readme` · `pnpm computed:check`</sub>

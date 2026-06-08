@@ -3,8 +3,8 @@
 
 # classifier
 
-path `classifier` · uuid `d448dcd4-c3e0-8e49-aaf9-c3e037ca94d5` · diamond `eec30f0c-e2ff-8125-bd80-01314c4b73d9`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `classifier` · uuid `dd68e128-cabb-8794-aa56-6d016ecd0c99` · diamond `1a0fcb34-49f5-8196-822f-9b6a2cefe43c`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports classifier · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law classifier is one schema.org word, content-addressed; the same word collides
 
 ---
 
-<sub>content-uuid `7096e0cb-1aa2-850d-b150-20319cbfada0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d07b4d09-ed09-8c48-8184-0c1f30bdfecf` · `pnpm readme` · `pnpm computed:check`</sub>

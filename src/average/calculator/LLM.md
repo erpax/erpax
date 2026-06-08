@@ -3,15 +3,15 @@
 
 # calculator
 
-path `average/calculator` · uuid `67c1eebb-3f2c-8804-bd8f-0156116af0ea` · diamond `5bccc13f-97fe-8fc9-9047-3db6e998bce9`
-horo `7` `descent` · trinity `1·1·1` · sealed `0`
+path `average/calculator` · uuid `1939ef13-0887-83dd-8e0e-1e21342da0b7` · diamond `641378b5-0aa3-8ac2-a8f3-d6108dbd086a`
+horo `1` `base` · trinity `1·1·1` · sealed `0`
 imports — · exports function · escapes —
-links `2/2` · folded `1` · bonds in `11` out `13`
+links `2/2` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → calculator·collapse·dry·law·law·law·math·medical·merge·quantum·risk·rodin·sti · ← calculator·collapse·dry·law·math·medical·merge·quantum·risk·rodin·sti
-analysis —
+neighbors → calculator·collapse·law·medical·merge·risk·sti · ← calculator·collapse·law·medical·merge·risk·sti
+analysis diamond·hallucination·purity
 law the arithmetic mean is computed in exactly one place and is zero-guarded — an empty input is the additive identity 0, never NaN; every mean path collapses here ([[dry]]).
 
 ---
 
-<sub>content-uuid `67279661-2a0d-8f07-847e-380015ef73ff` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5705b729-d08b-8726-b953-6400cc91f7d0` · `pnpm readme` · `pnpm computed:check`</sub>

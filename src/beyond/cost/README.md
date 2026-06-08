@@ -2,9 +2,11 @@
 
 # cost
 
-> atom `beyond/cost` · horo `2` `share` · [[balance]] `1` · [[seal]] `0`
+> atom `beyond/cost` · horo `8` `crest` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `beyond/cost` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,11 +23,60 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `explore:analytics`
+- `explore:aura`
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+
+### collapse
+
+- `balance:conserved`
+- `law:every step has a price; spend is conserved against a tenant cap and the step is refused once the cap is crossed ([[standard]] Cloudflare-Workers price list) — the [[trinity]] proof holds the budget-gate invariant.`
+- `seal:unsealed`
+- `trigger:Use when accounting the micro-USD price of a chain step against a tenant budget — estimateMicroUsd prices CPU-ms, egress and AI tokens; recordCost accrues spend and refuses once the cap is crossed; setBudget and getBudget manage the per-tenant cap.`
+- `trigger:every step has a price; spend is conserved against a tenant cap and the step is refused once the cap is crossed ([[standard]] Cloudflare-Workers price list) — the [[trinity]] proof holds the budget-gate invariant.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `5759f321-b8ae-8cd4-928c-55e7ed1b4b34` · `b785fc52-96c3-80fe-84db-283d811e2b17`
+- content uuids `2c5f3a33-052e-85f2-a60c-2ad4ec9c007b` · `c898e673-356a-8953-aa8d-9dd8a56228f0`
+
+## [[entropy]] — gaps · seals
+
+> account code `beyond/cost` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.8` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `1` eb | Σ seal `11.8` eb |
+
+> net residual `-10.8` eb · seal/gap ratio `11.8` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `beyond` · sub-root `d5c96de6-e131-8db0-8c67-746942d1018c`
-- bond degree `472` · analysis neighbors `analytics` · `aura`
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- partition `beyond` · sub-root `ec7e7d91-7746-8185-bcbd-22a1d84517ed`
+- bond degree `437` · analysis neighbors `analytics` · `aura`
+- graph root `86252db0-c776-84eb-b8e4-c884dca3a3ba`
 
 ## [[cloudflare]] bindings
 
@@ -35,16 +86,54 @@
 
 —
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·8 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `472` · sealed `0` · horo `2`
+- bond degree `437` · sealed `0` · horo `8`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `0`
 
 ## identity
 
-- uuid `806c15e6-dc68-8594-93cb-076001eef221`
-- bonds in `151` · out `150`
+- uuid `83876fcd-a24a-87b2-9878-6b93749e37b1`
+- bonds in `124` · out `124`
 - trinity form·code·proof `1`·`1`·`1`
 - links `5` / `5`
 - folded `1` · escapes `0`
@@ -55,4 +144,4 @@
 
 ---
 
-<sub>content-uuid `18c89e1c-e906-8a53-ae37-23a2c9ebaaf0` · framed by typography partition `beyond` bonds `472` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `31810479-1717-87a7-bf33-62d42967be0f` · framed by typography partition `beyond` bonds `437` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,8 +3,8 @@
 
 # assess
 
-path `assess` · uuid `3b5216e4-cbd8-89f6-9818-f52ed3308d14` · diamond `89ed91b0-838f-8e2a-8f04-1668b0b2d6e0`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `assess` · uuid `0880112c-a7b3-822a-a95b-083bcc121f44` · diamond `060faaff-5ea1-8327-90b6-780c33681b23`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti · exports assess · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law assess is one schema.org word, content-addressed; the same word collides eve
 
 ---
 
-<sub>content-uuid `e621b6f5-3f0d-851a-bd29-4b7b7e0d3cad` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `da0b27a8-7c3a-8c6f-a184-02335464ff9f` · `pnpm readme` · `pnpm computed:check`</sub>

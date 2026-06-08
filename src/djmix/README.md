@@ -23,7 +23,7 @@
 
 - partition `djmix` · sub-root `9858db7b-9658-8572-8080-284c8a1ecec4`
 - bond degree `12` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `a7b68153-15c4-8020-8e88-6b229e6da6b1` · framed by typography partition `djmix` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `1ccdad2d-af21-85cf-bf83-163b1ee9764a` · framed by typography partition `djmix` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

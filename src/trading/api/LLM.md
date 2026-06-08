@@ -3,15 +3,15 @@
 
 # api
 
-path `trading/api` · uuid `a7da4a69-75df-8318-89e4-0e08e42f0f5a` · diamond `a93c0244-b5c6-823e-9806-87a9245dc47b`
-horo `4` `weave` · trinity `1·1·1` · sealed `0`
+path `trading/api` · uuid `eeb3decd-2ac3-8363-b7f9-03f64061e086` · diamond `fd2d5fd0-7413-8039-9910-4d5588546d5d`
+horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports — · exports TradingApiAuth·TradingApiCategory·const·function·interface · escapes —
-links `7/7` · folded `0` · bonds in `16` out `16`
+links `7/7` · folded `1` · bonds in `32` out `33`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·cache·endorsement·endorser·golf·hall·hooks·landmarks·mcp·policy·recorded·recycling·root·society·soundtrack·war · ← access·cache·endorsement·endorser·golf·hall·hooks·landmarks·mcp·policy·recorded·recycling·root·society·soundtrack·war
-analysis diamond·hallucination·purity
+neighbors → access·calculate·carriers·client·commerce·connections·country·descent·dev·dimension·endpoint·endpoints·fs·github·harden·integrity·law·law·mcp·path·payload·payment·port·quantum·queries·redirects·reference·spec·trading·url·uuid·web·workspace · ← access·calculate·carriers·client·commerce·connections·country·descent·dev·dimension·endpoint·endpoints·fs·github·harden·integrity·law·mcp·path·payload·payment·port·quantum·queries·redirects·reference·spec·trading·url·uuid·web·workspace
+analysis —
 law api is one word on the trading diamond path — `trading/api`, not a hyphenated config folder; the catalogue and its clients share the same atom chain.
 
 ---
 
-<sub>content-uuid `8d7bf36f-6389-8c94-bd80-87f17cf6d92e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `19d27fca-983d-8888-8dd0-cb60ecc21214` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,8 +3,8 @@
 
 # actors
 
-path `actors` · uuid `d8c00500-9669-8896-a0d6-13dbb3e69e65` · diamond `135c2fe2-21a7-8c9f-925f-4f19757b6d9b`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `actors` · uuid `dec78dc0-e7d2-84eb-9fd9-8e1dd6dc20fa` · diamond `ba474da9-d039-8845-8746-d52df675536e`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports law·person·thing · exports actors · escapes —
 links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law actors is one schema.org word, content-addressed; the same word collides eve
 
 ---
 
-<sub>content-uuid `c5d57300-7676-8b0f-9d80-1cfde372b36d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8d22d9b9-9167-8217-a156-7c6a0a3ea83e` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -1,8 +1,90 @@
 ---
-name: "reporting"
+name: reporting
 description: "Use when implementing or referencing Phase B6: Audit & Compliance Reporting."
+atomPath: audit/compliance/reporting
+coordinate: audit/compliance/reporting · 5/round · 6856d1c7
+contentUuid: "fc6dcefd-402e-59ab-b39e-018841162463"
+diamondUuid: "ec92f658-3a94-8791-833b-dad369f0dcf2"
+uuid: "6856d1c7-c2af-81d8-902c-590dbdc98b10"
+horo: 5
+bonds:
+  in:
+    - collapse
+    - data
+    - healthcare
+    - law
+    - merge
+    - sti
+  out:
+    - collapse
+    - data
+    - healthcare
+    - law
+    - merge
+    - sti
+typography:
+  partition: audit
+  bondDegree: 20
+  neighbors: []
+standards:
+  - BEPS
+  - "BEPS Action 13:2021 Transfer Pricing Documentation"
+  - "EU-2016/679"
+  - "EU-2022/1925"
+  - "EU-2022/2065"
+  - "EU-2022/2554"
+  - "EU-2022/2555"
+  - "EU-2022/868"
+  - GDPR Art. 32 Data Protection
+  - "IAS-1"
+  - "IAS-1:2023 Presentation of Financial Statements"
+  - "NIST SP 800-92 Computer Security Incident Handling"
+  - "NIST-SP-800-63"
+  - "NIST-SP-800-92"
+  - "OECD Pillar Two:2023 Global Minimum Tax"
+  - "OECD Transfer Pricing Guidelines:2022 Documentation"
+  - "OECD-Pillar-Two"
+  - "OECD-Transfer-Pricing"
+  - "SAF-T"
+  - "SAF-T:3.0.2 Standard Audit File (Tax)"
+  - "US-CTA-2021"
+  - banner barrel (the regulatory contract)
+bindings: []
+neighbors:
+  wikilink: []
+  matrix:
+    - collapse
+    - data
+    - healthcare
+    - law
+    - merge
+    - sti
+  backlinks:
+    - collapse
+    - data
+    - healthcare
+    - law
+    - merge
+    - sti
+signatures:
+  computationUuid: "a0c052ae-6076-82de-8cea-198477475596"
+  stages:
+    - stage: path
+      stageUuid: "ff906584-7cd3-86ed-822c-d5619e136f2c"
+    - stage: trinity
+      stageUuid: "b899033b-24d9-87c8-93f9-e72b8aa2605d"
+    - stage: boundary
+      stageUuid: "a9f528b4-713a-892d-bc2f-61ec0fae5500"
+    - stage: links
+      stageUuid: "a33cf334-e2ab-8c33-998d-ff03bbe35f68"
+    - stage: horo
+      stageUuid: "6275b40d-0f43-8926-9766-b503f2d0755b"
+    - stage: seal
+      stageUuid: "c4da9bb5-a0ac-8412-8b35-c0699d4468f0"
+    - stage: uuid
+      stageUuid: "0cf0a779-ad2e-85b7-8430-7725efec51d9"
+version: 2
 ---
-
 # Phase B6: Audit & Compliance Reporting
 
 **Status:** Implementation Complete  

@@ -3,8 +3,8 @@
 
 # convention
 
-path `convention` · uuid `6e1a2aeb-f175-80c9-96b7-e9300a540fcf` · diamond `7f83b67b-f826-8c06-88ff-c6b8375faeed`
-horo `4` `weave` · trinity `1·1·1` · sealed `1`
+path `convention` · uuid `a0a94343-8762-84ac-8669-4221b6ac06e1` · diamond `4e4d1575-7df3-80a8-a58d-ef6e27d86f21`
+horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports @/convention/addressed·@/convention/complete·@/convention/dry·@/convention/folded·@/convention/fresh·@/convention/fronted·@/convention/honest·@/convention/import·@/convention/lawful·@/convention/link·@/convention/named·@/convention/reciprocal·@/convention/sealed·@/convention/shallow·@/convention/sourced·@/convention/triggered·@/convention/twinned · exports const · escapes —
 links `9/9` · folded `1` · bonds in `14` out `14`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law a convention is a law made a measured check — each convention atom exposes
 
 ---
 
-<sub>content-uuid `993fab8d-e281-8dfa-9218-c66ae8c1c8bf` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `33e010ff-1d99-8236-a5ec-09dba27de842` · `pnpm readme` · `pnpm computed:check`</sub>

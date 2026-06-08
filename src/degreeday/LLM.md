@@ -3,8 +3,8 @@
 
 # degreeday
 
-path `degreeday` · uuid `5e16d1d4-45b9-858c-ab69-6a8406470439` · diamond `31921502-88ce-888c-8851-de33742472f1`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `degreeday` · uuid `241701aa-8b6b-87f8-8529-8d15ee6c2685` · diamond `bb829caf-51bb-8acb-a195-09d698dbd3f0`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports agriculture·evapotranspiration·forecast·frost·harvest·law·maturity·measure·planting·season · exports degreeday · escapes —
 links `23/23` · folded `1` · bonds in `12` out `12`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law crops develop by banked heat, not calendar days — a fixed GDD total to [[m
 
 ---
 
-<sub>content-uuid `33bb78fc-b81b-8621-a02d-8df22ab358b1` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a99f37e6-32be-8d55-968b-ff5c60627ca2` · `pnpm readme` · `pnpm computed:check`</sub>

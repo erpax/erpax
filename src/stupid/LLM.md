@@ -3,15 +3,15 @@
 
 # stupid
 
-path `stupid` · uuid `78311084-88aa-880f-a5ce-f379249ebecf` · diamond `97fec787-2ff7-8849-a75e-bdec796d94a3`
+path `stupid` · uuid `78311084-88aa-880f-a5ce-f379249ebecf` · diamond `10a88944-bd36-8f54-9e2e-f451be543dc6`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·property·sti·type · exports stupid · escapes —
-links `6/6` · folded `1` · bonds in `2` out `2`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → checkout·landmarks · ← checkout·landmarks
+neighbors → collapse·law·merge·property·sti·type · ← collapse·law·merge·property·sti·type
 analysis —
 law stupid is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `bc5e25d7-7015-83f9-a22a-40189907e50a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `dfaa52e7-c103-84a9-a03b-a569597f0fac` · `pnpm readme` · `pnpm computed:check`</sub>

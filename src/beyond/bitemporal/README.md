@@ -2,9 +2,11 @@
 
 # bitemporal
 
-> atom `beyond/bitemporal` · horo `1` `base` · [[balance]] `1` · [[seal]] `0`
+> atom `beyond/bitemporal` · horo `2` `share` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `beyond/bitemporal` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,11 +23,58 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+
+### collapse
+
+- `balance:conserved`
+- `law:a value carries two clocks ([[standard]] SQL:2011 system-time × valid-time); a query that does not fix both is incomplete, and the temporal read refuses rather than fabricates — the [[trinity]] proof holds the refusal contract.`
+- `seal:unsealed`
+- `trigger:Use when querying a row AS OF two clocks at once — system-time (when the value was recorded) crossed with valid-time (when it was true in the world) — under SQL:2011 temporal tables; isHistoricalQuery gates whether a request looks back in time, asOf is the pending temporal-table read.`
+- `trigger:a value carries two clocks ([[standard]] SQL:2011 system-time × valid-time); a query that does not fix both is incomplete, and the temporal read refuses rather than fabricates — the [[trinity]] proof holds the refusal contract.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `c3a56711-4c94-8404-b15c-a04fd1e9f8d5` · `c9a1c31c-4641-8286-ad96-12e1780107de`
+- content uuids `009f43de-1762-86ca-ab96-8bb6f6779d66` · `f5270917-d1bc-8062-b189-65136005b3fb`
+
+## [[entropy]] — gaps · seals
+
+> account code `beyond/bitemporal` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.2` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `1` eb | Σ seal `11.2` eb |
+
+> net residual `-10.2` eb · seal/gap ratio `11.2` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `beyond` · sub-root `d5c96de6-e131-8db0-8c67-746942d1018c`
+- partition `beyond` · sub-root `ec7e7d91-7746-8185-bcbd-22a1d84517ed`
 - bond degree `12` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- graph root `86252db0-c776-84eb-b8e4-c884dca3a3ba`
 
 ## [[cloudflare]] bindings
 
@@ -38,15 +87,53 @@
 - `ISO/IEC 9075-2:2016 §4.15.10 temporal-tables` · banner
 - `SQL:2011 system-versioned + application-time tables` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·2 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `12` · sealed `0` · horo `1`
+- bond degree `12` · sealed `0` · horo `2`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `4`
 
 ## identity
 
-- uuid `a696e6a1-0f72-8e2e-90cd-1549a84ee706`
+- uuid `43be20f7-9a04-8e73-9b7e-618838c37978`
 - bonds in `4` · out `4`
 - trinity form·code·proof `1`·`1`·`1`
 - links `4` / `4`
@@ -58,4 +145,4 @@
 
 ---
 
-<sub>content-uuid `27b1d84e-2d9c-8daa-83dc-d66da7f3adc5` · framed by typography partition `beyond` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `06ba70b2-ea1d-8990-bfab-1baa7c11f950` · framed by typography partition `beyond` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

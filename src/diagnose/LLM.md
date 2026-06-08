@@ -3,8 +3,8 @@
 
 # diagnose
 
-path `diagnose` · uuid `e02151b0-129e-809c-a36d-fa4df2561d17` · diamond `910683e6-a301-84a7-b6e1-dc7e4125a61c`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `diagnose` · uuid `2c36e977-a511-872c-9aed-6272ba45b413` · diamond `85e918e1-8c23-86a1-a2b2-faadb76beec7`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·used · exports diagnose · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law diagnose is one schema.org word, content-addressed; the same word collides e
 
 ---
 
-<sub>content-uuid `a637f823-5690-88dd-80a8-d1718276d7ac` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7294a4fd-4613-8c1a-819e-4efe31d5bcb2` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -1,8 +1,136 @@
 ---
 name: sustainability
 description: "Use when asking whether a system can ENDURE — it is sustainable iff it draws down no stock faster than that stock regenerates (throughput ≤ carrying capacity) and its material loop closes, so each cycle adds zero NET entropy. Nature does it as a sun-driven dissipative structure — matter cycles, energy flows one-way and degrades. In erpax, zero-net-entropy-per-cycle IS sustainability; the borrowed anchor is the sun."
+atomPath: sustainability
+coordinate: sustainability · 7/descent · ddd3cd79
+contentUuid: "7692ef65-3553-5e69-9dda-0b0eeb5c3a0b"
+diamondUuid: "189e2154-eb84-8680-801c-8c3286af2af5"
+uuid: "ddd3cd79-398d-80ca-8d24-d872abcbdb1e"
+horo: 7
+bonds:
+  in:
+    - anchor
+    - balance
+    - biomass
+    - capacity
+    - compost
+    - conservation
+    - decentralization
+    - diversity
+    - ecosystem
+    - emission
+    - entropy
+    - entry
+    - law
+    - proof
+    - soil
+    - symbiosis
+    - tamper
+    - whole
+  out:
+    - anchor
+    - balance
+    - biomass
+    - capacity
+    - compost
+    - conservation
+    - decentralization
+    - diversity
+    - ecosystem
+    - emission
+    - entropy
+    - entry
+    - law
+    - proof
+    - soil
+    - symbiosis
+    - tamper
+    - whole
+typography:
+  partition: sustainability
+  bondDegree: 59
+  neighbors: []
+standards:
+  - "Brundtland Report, Our Common Future (1987) — canonical sustainability definition"
+  - "Prigogine dissipative structures (Nobel Chemistry, 1977) — order by dissipation"
+  - Second Law of Thermodynamics — local order requires entropy export
+  - Verhulst logistic growth (1838) — carrying capacity K; dN/dt = r·N·(1 − N/K)
+  - "computed, never hand-asserted"
+bindings: []
+neighbors:
+  wikilink:
+    - anchor
+    - balance
+    - capacity
+    - compost
+    - conservation
+    - decentralization
+    - diversity
+    - ecosystem
+    - entropy
+    - entry
+    - law
+    - proof
+    - soil
+    - tamper
+    - whole
+  matrix:
+    - anchor
+    - balance
+    - biomass
+    - capacity
+    - compost
+    - conservation
+    - decentralization
+    - diversity
+    - ecosystem
+    - emission
+    - entropy
+    - entry
+    - law
+    - proof
+    - soil
+    - symbiosis
+    - tamper
+    - whole
+  backlinks:
+    - anchor
+    - balance
+    - biomass
+    - capacity
+    - compost
+    - conservation
+    - decentralization
+    - diversity
+    - ecosystem
+    - emission
+    - entropy
+    - entry
+    - law
+    - proof
+    - soil
+    - symbiosis
+    - tamper
+    - whole
+signatures:
+  computationUuid: "cc555431-a4a9-8756-a6b4-20860c422c2f"
+  stages:
+    - stage: path
+      stageUuid: "7cd3828b-98c7-8439-94d5-f70532b839dd"
+    - stage: trinity
+      stageUuid: "4dbd3f07-bec5-8479-b9b2-0ddbcab06fd0"
+    - stage: boundary
+      stageUuid: "35bcb73e-a387-897d-9deb-14cc6d33ecf5"
+    - stage: links
+      stageUuid: "866e2423-9478-8bf4-b251-37b84fe17594"
+    - stage: horo
+      stageUuid: "4d1fcdbd-5263-85ed-ae1b-959080067ecc"
+    - stage: seal
+      stageUuid: "221a1154-d599-810c-861a-ca06ad9991d1"
+    - stage: uuid
+      stageUuid: "d44617a9-a4d7-848c-a503-66a3a5b8a2f6"
+version: 2
 ---
-
 # sustainability — endures because each cycle nets zero (the closed loop)
 
 **Sustainability** is the property of a system that can **run indefinitely** — it consumes no stock faster than that stock is replenished, and it returns its wastes as inputs so the material loop **closes**. The test is per-cycle: a sustainable cycle adds **zero net [[entropy]]** to its own ground. Draw down faster than regeneration and the stock collapses (overgrazing, a fishery crash, soil mining); leave a waste no process consumes and it accumulates as poison.

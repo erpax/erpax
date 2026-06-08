@@ -4,7 +4,7 @@
 # evidence
 
 path `evidence` · uuid `1c8e0ab4-22eb-85f4-9e64-5b980febad20` · diamond `a6975f01-3628-8d9e-ae55-ddfdc3cec329`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+horo `1` `base` · trinity `1·0·0` · sealed `0`
 imports collapse·law·level·medical·merge·origin·sti · exports evidence · escapes —
 links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law evidence is one schema.org word, content-addressed; the same word collides e
 
 ---
 
-<sub>content-uuid `fbe56bc4-0910-8c33-a483-02035248dcc7` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `960a8929-cadf-8d75-b02e-b924671c9f16` · `pnpm readme` · `pnpm computed:check`</sub>

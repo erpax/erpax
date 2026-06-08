@@ -2,7 +2,7 @@
 
 # baked
 
-> atom `convention/baked` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
+> atom `convention/baked` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -21,9 +21,9 @@
 
 ## typography graph
 
-- partition `convention` · sub-root `38cd2282-f75a-84ce-b2c7-ff7cff0bfb4c`
+- partition `convention` · sub-root `a93daa45-addb-8b21-89cd-ab385bae0306`
 - bond degree `19` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -34,15 +34,53 @@
 - `derivable artifacts (skills.index, docs/) are gitignored — regenerated at build from src` · banner
 - `one source of truth — a committed derivable is duplicated state that can drift` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·8 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `19` · sealed `1` · horo `1`
+- bond degree `19` · sealed `1` · horo `8`
 - variance `0` · balanced `1` · trinity sum `1`
 - bindings `0` · standards `2`
 
 ## identity
 
-- uuid `a001bba0-9fa9-8838-80e5-2e8301a7e02c`
+- uuid `4d0abb6c-9ecc-8655-b393-9e569b68339e`
 - bonds in `6` · out `6`
 - trinity form·code·proof `1`·`0`·`0`
 - links `12` / `12`
@@ -54,4 +92,4 @@
 
 ---
 
-<sub>content-uuid `200b3a02-e45a-839d-9731-050794f983cf` · framed by typography partition `convention` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `cd1e6aeb-fe9f-8011-849b-a966e0aacdee` · framed by typography partition `convention` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>

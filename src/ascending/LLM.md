@@ -3,8 +3,8 @@
 
 # ascending
 
-path `ascending` · uuid `acff5ec0-037d-8321-a385-8229da13d026` · diamond `5bf5da13-9979-8e9d-a205-9ff7970d17ab`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `ascending` · uuid `cf734af4-ddf5-8fba-8758-733113d5ded0` · diamond `75ed22bf-a38e-8cd1-b765-e3eabbf3587b`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports ascending · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law ascending is one schema.org word, content-addressed; the same word collides 
 
 ---
 
-<sub>content-uuid `65e0d27c-59f5-8f3d-99e5-b5fce7ee94f3` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `45d63d88-724b-8904-a2df-5f4debdd2a11` · `pnpm readme` · `pnpm computed:check`</sub>

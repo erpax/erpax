@@ -4,7 +4,7 @@
 # policies
 
 path `internal/policies` · uuid `7074e46e-8114-86d8-9025-5c9cdfa45746` · diamond `652b1fda-c7e7-86ee-8385-195e4141eeb9`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+horo `7` `descent` · trinity `1·1·1` · sealed `0`
 imports @/role/based/access · exports const · escapes —
 links `2/2` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `c9f31beb-1a41-8ce1-a106-9bd278a0a58f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `13457ff1-6606-809b-be9d-9c5600870e39` · `pnpm readme` · `pnpm computed:check`</sub>

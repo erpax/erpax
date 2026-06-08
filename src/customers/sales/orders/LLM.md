@@ -3,15 +3,15 @@
 
 # orders
 
-path `customers/sales/orders` · uuid `321e385f-eb0d-80a3-998d-dd6c4e018486` · diamond `1ba41e33-8a64-8e0a-9dfa-3a03134ad94f`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+path `customers/sales/orders` · uuid `52ced0bf-a62d-8a42-b754-a5998e9ec5e5` · diamond `8e172c0e-2a6d-8755-8260-dfd3cf1f3e5a`
+horo `2` `share` · trinity `1·1·1` · sealed `0`
 imports @/base/accounting/field·@/factory · exports default · escapes —
-links `5/5` · folded `1` · bonds in `48` out `51`
+links `5/5` · folded `1` · bonds in `19` out `19`
 faces worker·plugin·pwa `1·0·0`
-neighbors → accounting·accounts·agriculture·allocation·assets·attribution·bundle·choice·commitments·contracts·conversion·customers·discount·duality·entries·entry·forecast·fractal·funnel·hooks·horo·inspections·invoices·items·law·law·law·law·materials·movements·orders·packs·party·pipeline·properties·quotes·receipts·refunds·requests·returns·routings·runs·share·shift·shifts·shipments·standard·territory·upsell·utility·variances · ← accounting·accounts·agriculture·allocation·assets·attribution·bundle·choice·commitments·contracts·conversion·customers·discount·duality·entries·entry·forecast·fractal·funnel·hooks·horo·inspections·invoices·items·law·materials·movements·orders·packs·party·pipeline·properties·quotes·receipts·refunds·requests·returns·routings·runs·share·shift·shifts·shipments·standard·territory·upsell·utility·variances
+neighbors → accounting·allocation·duality·fractal·hooks·horo·law·materials·orders·packs·party·receipts·routings·runs·shift·shifts·standard·utility·variances · ← accounting·allocation·duality·fractal·hooks·horo·law·materials·orders·packs·party·receipts·routings·runs·shift·shifts·standard·utility·variances
 analysis —
 law a sales order progresses only forward through its O2C lifecycle, and fulfilled and invoiced quantities can never exceed the confirmed order-line quantities.
 
 ---
 
-<sub>content-uuid `f5c00277-1b03-868e-bd16-fd71f68fce90` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9fd7604d-3ed4-8bba-a714-3226a79e71ad` · `pnpm readme` · `pnpm computed:check`</sub>

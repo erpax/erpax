@@ -1,8 +1,54 @@
 ---
 name: anyone
-description: Use when granting deliberate public/unauthenticated read on a Payload collection or field — the access predicate that always grants, documenting the intentional public-read decision as part of the access-control regime.
+description: "Use when granting deliberate public/unauthenticated read on a Payload collection or field — the access predicate that always grants, documenting the intentional public-read decision as part of the access-control regime."
+atomPath: anyone
+coordinate: anyone · 2/share · c040fd76
+contentUuid: "e2f0cf6e-cfd9-5600-ac45-c3d903043d58"
+diamondUuid: "55866661-8ddc-885c-98e9-920d24101d8e"
+uuid: "c040fd76-ab4a-8fbf-9d6d-4366166e398b"
+horo: 2
+bonds:
+  in:
+    - access
+    - law
+  out:
+    - access
+    - law
+typography:
+  partition: anyone
+  bondDegree: 6
+  neighbors: []
+standards: []
+bindings: []
+neighbors:
+  wikilink:
+    - access
+    - law
+  matrix:
+    - access
+    - law
+  backlinks:
+    - access
+    - law
+signatures:
+  computationUuid: "ee8e5dd4-03fc-8356-8b2b-18a04b905a12"
+  stages:
+    - stage: path
+      stageUuid: "a25a040e-d3de-8b90-9744-85c571fc800c"
+    - stage: trinity
+      stageUuid: "aee59546-fb59-850b-8422-d42f2534d8e3"
+    - stage: boundary
+      stageUuid: "a4532ed0-a978-8b26-a371-85848da189ab"
+    - stage: links
+      stageUuid: "5f6bd8f9-01f1-8638-9873-4b6e8a0e71a2"
+    - stage: horo
+      stageUuid: "06c3059d-0bbe-85b5-ad79-58fedaa1fc8f"
+    - stage: seal
+      stageUuid: "56f270de-c061-81c4-9e95-068cde4bb0b8"
+    - stage: uuid
+      stageUuid: "18db3ff0-ccf6-8a8c-bf67-446b2f42bcb0"
+version: 2
 ---
-
 # anyone — public read predicate (always grant)
 
 The simplest [[access]] predicate: `() => true`. It grants every caller, authenticated or not, so a collection or field can expose itself to anonymous read. ISO 27002 §5.15 is still cited even though it GRANTS — the deliberate public-read is itself an access-control decision on the record.

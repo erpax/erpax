@@ -3,8 +3,8 @@
 
 # covered
 
-path `covered` · uuid `ae9b0ce9-a988-8660-8f2f-20c1afae08a7` · diamond `929fa09a-9d12-828c-8c27-2a15f280665a`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `covered` · uuid `65376948-50d2-83e8-9d81-2dc3856ced8c` · diamond `5b8b123e-b4af-8365-932a-e915e14d1102`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·geo·law·merge·sti · exports covered · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law covered is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `8dd32cff-8b54-89b3-b2bf-c7bf4fac243a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `12f8d0bc-c4fb-8e2e-8763-eb2dd2b5ac43` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -23,7 +23,21 @@
 
 - partition `hardcover` · sub-root `03369a1b-559b-81ee-b567-d098ea268b0f`
 - bond degree `12` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `12` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `4d2b793c-18eb-8769-9155-329113f6e9f4` · framed by typography partition `hardcover` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `56fdeaf0-dbdd-8722-92da-142c08159f3d` · framed by typography partition `hardcover` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

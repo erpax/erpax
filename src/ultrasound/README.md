@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `ultrasound` · sub-root `450dd900-55dc-8269-957e-2dfd64d9a66d`
-- bond degree `14` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `12` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `450dd900-55dc-8269-957e-2dfd64d9a66d`
-- bonds in `5` · out `5`
+- bonds in `4` · out `4`
 - trinity form·code·proof `1`·`0`·`0`
 - links `4` / `4`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `226d9df0-a9c8-8dfb-ae3f-65237f10c049` · framed by typography partition `ultrasound` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `7004bdf8-7737-8f9d-93fc-ba72b64667a3` · framed by typography partition `ultrasound` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,8 +3,8 @@
 
 # consideration
 
-path `consideration` · uuid `292e7adc-a61f-83ad-a2e0-498eccc51d27` · diamond `63d8174d-4972-80cb-a50e-c03769499b9a`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `consideration` · uuid `7cffe8ab-4727-8b71-b9f4-317f2c1d0bc1` · diamond `69e99b7c-ec02-8393-a42d-0a2b7ab910de`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports adult·collapse·has·law·merge·safety·sti · exports consideration · escapes —
 links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law consideration is one schema.org word, content-addressed; the same word colli
 
 ---
 
-<sub>content-uuid `3a92ef4a-6b97-86d4-8284-b6cc498a022c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0278c186-05d8-8582-ba32-d5abaa1decc0` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -2,7 +2,7 @@
 
 # deploy
 
-> atom `deploy` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
+> atom `deploy` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -23,9 +23,9 @@
 
 ## typography graph
 
-- partition `deploy` · sub-root `be02e68c-774d-88a2-b917-34ac0505d2db`
-- bond degree `114` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- partition `deploy` · sub-root `6d29bc8e-8025-824d-b43d-4e45ea2e4a6c`
+- bond degree `90` · analysis neighbors `cloudflare`
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -35,16 +35,54 @@
 
 - `the band is the doubling 1·2·4·8; its consonance is computed by @/harmony, the order never assumed` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·7 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `114` · sealed `1` · horo `1`
+- bond degree `90` · sealed `1` · horo `7`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `1`
 
 ## identity
 
-- uuid `5099ae95-1544-8d9a-b3bf-8f073689ed2c`
-- bonds in `33` · out `37`
+- uuid `6d29bc8e-8025-824d-b43d-4e45ea2e4a6c`
+- bonds in `21` · out `21`
 - trinity form·code·proof `1`·`1`·`1`
 - links `16` / `16`
 - folded `1` · escapes `0`
@@ -55,4 +93,4 @@
 
 ---
 
-<sub>content-uuid `bcb53bf2-8b30-8d31-a8e4-580f34c30a9f` · framed by typography partition `deploy` bonds `114` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0285a121-f4db-80af-8922-3db1a2362e5f` · framed by typography partition `deploy` bonds `90` · `pnpm readme` · `pnpm readme:check`</sub>

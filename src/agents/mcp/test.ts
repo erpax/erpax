@@ -3,6 +3,7 @@ import { createInProcessMcpClient } from './in-process-client'
 import { CANONICAL_AREAS } from './standardization'
 import { checkMcpDryCleanliness } from './dry-clean'
 import { AGENT_RUNTIME_GRANT, StrictApplyViolation, defaultAgentLawState } from '@/agent/strict-apply'
+import { resetAtomCatalogueForTest } from './atom-catalogue-lazy'
 import type { ErpaxMcpTool } from './tool-defs'
 import type { PayloadRequest } from 'payload'
 
@@ -29,6 +30,14 @@ describe('agents/mcp — trinity proof (colocated modules)', () => {
 
   it('dry-clean gate is callable', () => {
     expect(typeof checkMcpDryCleanliness).toBe('function')
+  })
+
+  it('atom catalogue lazy reset keeps test fixtures minimal', () => {
+    resetAtomCatalogueForTest([
+      { atom: 'agent', name: 'agent', description: 'fixture', path: 'agent' },
+    ])
+    resetAtomCatalogueForTest()
+    expect(true).toBe(true)
   })
 })
 

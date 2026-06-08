@@ -3,8 +3,8 @@
 
 # collider
 
-path `collider` · uuid `e6c1fdc9-b8b5-8ad9-a83a-77cd10dc6bef` · diamond `087f65c1-75ff-8546-ac7c-0cad39d1a90e`
-horo `5` `round` · trinity `1·1·1` · sealed `1`
+path `collider` · uuid `35baa33a-2646-880f-a884-4a24ff0ba834` · diamond `290ae99f-7abc-8b7b-85e9-f5e73ce430fc`
+horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports @/convention·@/cost · exports const·function·interface · escapes —
 links `10/10` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law the collider has no default — it computes the corpus's tamper-cost purely 
 
 ---
 
-<sub>content-uuid `35d4416a-3027-8639-b38e-c044841576b4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `18d21c52-a868-871f-af6e-165a19aa9af5` · `pnpm readme` · `pnpm computed:check`</sub>

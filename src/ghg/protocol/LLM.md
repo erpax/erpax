@@ -4,7 +4,7 @@
 # protocol
 
 path `ghg/protocol` · uuid `e342a455-3316-8de0-91ca-e267255f4406` · diamond `69fb4dbe-5980-8b19-8c97-b45d04834be2`
-horo `4` `weave` · trinity `1·1·1` · sealed `1`
+horo `4` `weave` · trinity `1·1·1` · sealed `0`
 imports — · exports GhgCategory·GhgMethodology·GhgScope·GwpHorizon·const · escapes —
 links `1/1` · folded `1` · bonds in `1` out `1`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law the GHG Protocol fixes the 4 + 3 + 15 = 22 sub-categories of Scope 1 + 2 + 3
 
 ---
 
-<sub>content-uuid `a39085fc-c634-8685-b55e-a6f491b68d93` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1e530c1c-c203-8fcd-bebe-1cb0900cbc71` · `pnpm readme` · `pnpm computed:check`</sub>

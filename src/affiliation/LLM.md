@@ -3,8 +3,8 @@
 
 # affiliation
 
-path `affiliation` · uuid `84860322-f304-81ab-96ea-9a2af2a92d43` · diamond `119d367a-665f-8508-84bd-24e93971dc9f`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `affiliation` · uuid `7b6ea21a-0eb0-85ac-9336-04103f41b7b3` · diamond `f2e16b51-bf8e-82e2-910c-8e70e51423cd`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports hospital·law · exports affiliation · escapes —
 links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law affiliation is one schema.org word, content-addressed; the same word collide
 
 ---
 
-<sub>content-uuid `a9855735-ef8d-8ef5-9421-b8f4d0a9d045` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d1e30455-bc05-8d40-a1f3-7502d8cf3d72` · `pnpm readme` · `pnpm computed:check`</sub>

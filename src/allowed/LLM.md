@@ -3,8 +3,8 @@
 
 # allowed
 
-path `allowed` · uuid `3a0f058f-b058-8dbd-9e3a-037d3a026bd7` · diamond `81747395-e99c-89c7-8f16-204393abae1b`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `allowed` · uuid `47e5ccc0-e9fd-8e6a-aeaa-3f201a8c8a65` · diamond `7b2ae958-b64e-8040-9d62-d6f992e55998`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·pets·regions·smoking·sti · exports allowed · escapes —
 links `7/7` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law allowed is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `1f5241e1-a2ca-851a-be11-07a713e3e658` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4a4ec90b-7a54-8ec4-87a9-16218c5861fd` · `pnpm readme` · `pnpm computed:check`</sub>

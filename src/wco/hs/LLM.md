@@ -3,15 +3,15 @@
 
 # hs
 
-path `wco/hs` · uuid `da78c52e-9a14-8915-8d58-df726a63afc4` · diamond `183c1f3e-cb4c-863e-aacf-d010ed85ad43`
+path `wco/hs` · uuid `da78c52e-9a14-8915-8d58-df726a63afc4` · diamond `a5029b3c-ab59-8578-b0a2-bf511c74abdc`
 horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports — · exports const · escapes —
-links `1/1` · folded `1` · bonds in `2` out `2`
+links `1/1` · folded `1` · bonds in `1` out `1`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → law · ← law
 analysis —
 law the Harmonised System is the global goods classification — a 6-digit harmonised root plus national extension (8 EU CN, 10 US HTS); the registry validates structure and indexes sections/chapters, never the full per-heading dictionary.
 
 ---
 
-<sub>content-uuid `35bb2999-15a4-818e-a435-15f3247e5a5c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0da0b1fc-f83f-8d91-9278-cff8df4c38be` · `pnpm readme` · `pnpm computed:check`</sub>

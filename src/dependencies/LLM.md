@@ -3,8 +3,8 @@
 
 # dependencies
 
-path `dependencies` · uuid `c9a5d1f3-c288-8871-89e6-23cf8d5e591c` · diamond `b6853078-d11c-8257-b502-17ab7ee6a457`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `dependencies` · uuid `da8fe982-68a8-8b4c-bc6b-8a38e6c3a282` · diamond `234ada66-6c91-8561-a910-bfe618086041`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports dependencies · escapes —
 links `2/2` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law dependencies is one schema.org word, content-addressed; the same word collid
 
 ---
 
-<sub>content-uuid `18910fbc-acb4-8b0b-88e7-d3f97881585f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `bc66a726-4af2-83d9-aceb-7c15d30a9d18` · `pnpm readme` · `pnpm computed:check`</sub>

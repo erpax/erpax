@@ -3,15 +3,15 @@
 
 # surface
 
-path `surface` · uuid `8d36cf54-e134-87c3-95bf-dc8940a68ca5` · diamond `389dfda9-4789-81db-86ec-3f5df8e17b01`
+path `surface` · uuid `8d36cf54-e134-87c3-95bf-dc8940a68ca5` · diamond `2a2aa0fd-6700-8103-9b07-f778c460d189`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports artwork·law · exports surface · escapes —
-links `2/2` · folded `1` · bonds in `4` out `4`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → artwork·law · ← artwork·law
 analysis —
 law surface is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `81a360ff-586f-82e7-b984-453b74184202` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `92620b5c-a7f1-8c71-accc-885645faa4b6` · `pnpm readme` · `pnpm computed:check`</sub>

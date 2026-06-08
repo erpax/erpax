@@ -2,7 +2,7 @@
 
 # timestamp
 
-> atom `timestamp` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
+> atom `timestamp` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `timestamp` · sub-root `1319fa4e-c41c-8ca6-ae39-4795cf0cc5c1`
-- bond degree `21` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `17` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
-- uuid `1319fa4e-c41c-8ca6-ae39-4795cf0cc5c1`
-- bonds in `6` · out `6`
+- uuid `f1315e2f-dc98-82e5-8895-023111e49072`
+- bonds in `5` · out `6`
 - trinity form·code·proof `1`·`0`·`0`
 - links `2` / `2`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `d562a193-2ef7-8089-9f31-1e853f33f53f` · framed by typography partition `timestamp` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `1b37ac82-abb6-8f2d-93c1-282e14cbba90` · framed by typography partition `timestamp` bonds `17` · `pnpm readme` · `pnpm readme:check`</sub>

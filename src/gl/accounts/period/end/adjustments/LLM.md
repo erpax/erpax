@@ -3,15 +3,15 @@
 
 # adjustments
 
-path `gl/accounts/period/end/adjustments` · uuid `5727c556-3390-885f-864c-8023b4811026` · diamond `51eb3c45-446b-8036-8f59-6d0be33df9d7`
-horo `5` `round` · trinity `1·1·1` · sealed `1`
+path `gl/accounts/period/end/adjustments` · uuid `4db77e37-8661-877e-807d-a89077c551b6` · diamond `01480312-16d9-888a-af01-4303100cf415`
+horo `2` `share` · trinity `1·1·1` · sealed `0`
 imports @/audit/trail/after/change·@/auth·@/auto/populate/created/by·@/auto/populate/tenant·@/auto/set/timestamp·@/base/accounting/field·@/enforce/segregation/of/duty·@/utility · exports default · escapes —
-links `4/4` · folded `1` · bonds in `18` out `25`
+links `4/4` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·accounting·accounting·accounting·accounts·accrual·adjustment·close·deferral·entries·entries·entries·fields·hooks·horo·law·law·law·law·periods·proof·runs·snapshots·standard·transactions · ← access·accounting·accounts·accrual·adjustment·close·deferral·entries·fields·hooks·horo·law·periods·proof·runs·snapshots·standard·transactions
+neighbors → accounting·adjustment·entries·horo·law·proof·standard · ← accounting·adjustment·entries·horo·law·proof·standard
 analysis —
 law period-end adjustments are the accrual-basis entries (depreciation, accruals, deferrals, allowances) that align the period to the framework — segregation-gated on approval and auto-posted to the GL on status change.
 
 ---
 
-<sub>content-uuid `86d4ac8c-8809-8c2a-8891-cb717540ce53` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b226f479-0e8d-8c96-97fb-bf644955e96c` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -2,9 +2,11 @@
 
 # tests
 
-> atom `internal/controls/control/tests` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
+> atom `internal/controls/control/tests` · horo `5` `round` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `internal/controls/control/tests` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -19,17 +21,118 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
+
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+- `gap:stray:[[gap]]/[[diamond]]/stray/audit/`
+
+### collapse
+
+- `balance:variance=1`
+- `law:a control test records its sampling method, assertion, sample size, tolerance and deviation count/rate, and concludes on the tested control's effectiveness — the evidence linking a SOX §404 control to its verdict.`
+- `seal:unsealed`
+- `trigger:Use when designing or executing SOX §404 control-effectiveness tests — sampling methodology (statistical/stratified/judgmental/census), assertion, sample size, tolerance, deviation count/rate, conclusion on effectiveness; links to the tested internal-control. The control-tests ISO-19011 sampling-evidence collection.`
+- `trigger:a control test records its sampling method, assertion, sample size, tolerance and deviation count/rate, and concludes on the tested control's effectiveness — the evidence linking a SOX §404 control to its verdict.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `38cbc697-3dea-88c0-817b-71058986fc8a` · `6cd0d93d-4511-8c44-b052-07a2cc786b45` · `a0de03a5-6801-8eb0-96f8-161959316947` · `b0b9a24c-82ca-8d34-ad86-42ef030ff9a3`
+- content uuids `17861f89-a270-80ae-9226-9f531e9eaf5c` · `7cc09156-09bc-8e50-a3ae-1c93291240a9` · `987da813-fbbd-8cf0-a717-2c0b1407ed8b` · `b3a962ac-d6d9-8d5d-b35d-4cff683e3437`
+
+## [[entropy]] — gaps · seals
+
+> account code `internal/controls/control/tests` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[diamond]]/stray/audit/ `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.5` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+| Σ gap `3` eb | Σ seal `8.5` eb |
+
+> net residual `-5.5` eb · seal/gap ratio `2.833` · [[entropy]] · [[seal]]
 
 ## typography graph
 
-- partition `internal` · sub-root `a3719802-d526-8179-9ae4-637b20c53cac`
-- bond degree `10` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- partition `internal` · sub-root `420a9910-05e6-86dd-9eed-ecde159d99e3`
+- bond degree `0` · analysis neighbors —
+- graph root `a0b4e6a6-0230-8b95-a98c-2d4cf71fcc77`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ISA-530` · catalogue
+- `ISO-19011` · catalogue
+- `ISO-19011:2018 audit-sampling` · banner
+- `SOX §404 internal-controls testing-evidence` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unbalanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| not-held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·5 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `0` · sealed `0` · horo `5`
+- variance `1` · balanced `0` · trinity sum `3`
+- bindings `0` · standards `4`
 
 ## identity
 
-- uuid `2f0526b4-9b02-8436-9679-dbde1ac51417`
+- uuid `eb01287d-bcbe-8309-975b-4262122d48f9`
 - bonds in `3` · out `3`
 - trinity form·code·proof `1`·`1`·`1`
 - links `1` / `1`
@@ -37,8 +140,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `4687cf33-0d65-8466-a219-7da7779a229b` · framed by typography partition `internal` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e88f039f-abdc-80e4-8b68-eac4a41faa7e` · framed by typography partition `internal` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -80,6 +80,8 @@ import { followEveryPathAll, ledgerFromPathWalk, type PathCanonicalEntry } from 
 import { assertPathFollowed, finishedIdeaCrossed, type PathFollowVerdict } from '@/seal'
 import { corpusPathWaveBatches } from '@/wave/scheduler'
 import { maxWorkTamperPolicy } from '@/wave'
+import { rulesOf } from '@/rules'
+import { loadEfficiencyStore } from '@/apply/efficiency'
 
 /** One facet of the diamond: a position on the closed horo ring + the atoms riding it. */
 export interface RingFacet {
@@ -433,7 +435,16 @@ export function renderReadme(
   for (const row of model.analytics.byHoro) {
     L.push(`| ${row.digit} | ${row.measure} | ${row.atoms} | ${row.sealed} |`)
   }
-  L.push('', renderCorpusEntropySection(model.analytics.entropy))
+  const rulesSnapshot = rulesOf(process.cwd(), { force: true })
+  const violationCount = rulesSnapshot.axes.reduce((s, a) => s + a.violations, 0)
+  const effLatest = loadEfficiencyStore(process.cwd()).latest
+  L.push(
+    '',
+    renderCorpusEntropySection(model.analytics.entropy, {
+      violationCount,
+      workTamperProduct: effLatest?.workTamperProduct ?? 0,
+    }),
+  )
   L.push('', renderCorpusQuantumThinkingSection(model.analytics.quantumThinking))
   if (model.papers.total > 0) {
     L.push('', renderMergedPapersSection(model.papers))
@@ -571,16 +582,71 @@ export interface CorpusPathFollowOpts {
 }
 
 let cachedCorpusPathFollow: CorpusPathFollowOpts | null = null
+let cachedCorpusPathFollowAt: string | undefined
 let cachedThinkingCtx: ThinkingLoadContext | null = null
+let cachedThinkingAt: string | undefined
+
+/** Stable receipt-chain anchor — typography graph root (content-addressed, not wall clock). */
+export function readmeCorpusFrozenAt(graph?: AnalysisTypographyGraph): string {
+  return graph?.root ?? UUID_MATRIX_ROOT
+}
+
+/** Frozen graph + thinking context — one pass per write/verify (OOM + drift guard). */
+export interface ReadmeCorpusFrozenInputs {
+  readonly graph: AnalysisTypographyGraph
+  readonly ctx: FolderReadmeContext
+  readonly at: string
+}
+
+export interface ReadmeCorpusContextOpts {
+  readonly pathFollowGate?: boolean
+  readonly frozenAt?: string
+  readonly frozenGraph?: AnalysisTypographyGraph
+  readonly frozenThinkingCtx?: ThinkingLoadContext
+}
+
+/** Build frozen typography graph + path ledger once — reuse across waves and verify. */
+export function buildReadmeCorpusFrozenInputs(
+  cwd: string = process.cwd(),
+  opts?: Pick<ReadmeCorpusContextOpts, 'pathFollowGate'>,
+): ReadmeCorpusFrozenInputs {
+  const graph = buildReadmeTypographyGraph(cwd)
+  const at = readmeCorpusFrozenAt(graph)
+  const ctx = buildReadmeCorpusContext(cwd, { ...opts, frozenAt: at, frozenGraph: graph })
+  return { graph, ctx, at }
+}
+
+/** Render root README from wave inputs — reuse frozen graph + receipt chain. */
+export function renderRootReadmeInWaves(
+  cwd: string = process.cwd(),
+  frozen: ReadmeCorpusFrozenInputs = buildReadmeCorpusFrozenInputs(cwd),
+  onWave?: (ordinal: number, itemCount: number) => void,
+): string {
+  const { analytics, papers, models } = deriveReadmeRootInputsInWaves(cwd, onWave, frozen)
+  return renderReadme(deriveModel(cwd, analytics, papers), models)
+}
+
+/** Drift gate — two consecutive wave derives must be byte-identical (frozen quantum inputs). */
+export function verifyRootReadmeUsesFrozenInputs(cwd: string = process.cwd()): {
+  readonly ok: boolean
+  readonly expected: string
+} {
+  const frozen = buildReadmeCorpusFrozenInputs(cwd)
+  const a = renderRootReadmeInWaves(cwd, frozen)
+  const b = renderRootReadmeInWaves(cwd, frozen)
+  return { ok: a === b, expected: a }
+}
 
 /** Full-matrix path walk + canonical ledger — cached for readme verify / gravity gate. */
 export function corpusPathFollowOpts(at?: string): CorpusPathFollowOpts {
-  if (!cachedCorpusPathFollow) {
+  const timestamp = at ?? readmeCorpusFrozenAt()
+  if (!cachedCorpusPathFollow || cachedCorpusPathFollowAt !== timestamp) {
     const paths = followEveryPathAll()
     cachedCorpusPathFollow = {
       pathsVisited: new Set(paths),
-      pathLedger: ledgerFromPathWalk(paths, at),
+      pathLedger: ledgerFromPathWalk(paths, timestamp),
     }
+    cachedCorpusPathFollowAt = timestamp
   }
   return cachedCorpusPathFollow
 }
@@ -588,13 +654,20 @@ export function corpusPathFollowOpts(at?: string): CorpusPathFollowOpts {
 /** Reset cached corpus path walk (tests). */
 export function resetCorpusPathFollowCache(): void {
   cachedCorpusPathFollow = null
+  cachedCorpusPathFollowAt = undefined
   cachedThinkingCtx = null
+  cachedThinkingAt = undefined
 }
 
 /** Cached path ledger for quantum thinking load — one lattice walk per process. */
 export function thinkingLoadContext(at?: string): ThinkingLoadContext {
-  if (!cachedThinkingCtx) {
-    cachedThinkingCtx = { pathLedger: ledgerFromPathWalk(followEveryPathAll(), at) }
+  const timestamp = at ?? readmeCorpusFrozenAt()
+  if (!cachedThinkingCtx || cachedThinkingAt !== timestamp) {
+    cachedThinkingCtx = {
+      pathLedger: ledgerFromPathWalk(followEveryPathAll(), timestamp),
+      at: timestamp,
+    }
+    cachedThinkingAt = timestamp
   }
   return cachedThinkingCtx
 }
@@ -834,13 +907,13 @@ const emptyCorpusAnalytics = (): CorpusAnalytics => ({
 export function deriveReadmeRootInputsInWaves(
   cwd: string = process.cwd(),
   onWave?: (ordinal: number, itemCount: number) => void,
+  frozen: ReadmeCorpusFrozenInputs = buildReadmeCorpusFrozenInputs(cwd),
 ): {
   readonly analytics: CorpusAnalytics
   readonly papers: MergedCorpusPapers
   readonly models: readonly FolderReadmeModel[]
 } {
-  const graph = buildReadmeTypographyGraph(cwd)
-  const ctx = buildReadmeCorpusContext(cwd)
+  const { graph, ctx } = frozen
   const standardIds = new Set<string>()
   const sealedByAtom = new Map<string, boolean>()
   const allModels: FolderReadmeModel[] = []
@@ -897,10 +970,9 @@ export interface ReadmeCorpus {
 
 export function buildReadmeCorpus(
   cwd: string = process.cwd(),
-  opts?: { readonly pathFollowGate?: boolean },
+  opts?: Pick<ReadmeCorpusContextOpts, 'pathFollowGate'>,
 ): ReadmeCorpus {
-  const graph = buildReadmeTypographyGraph(cwd)
-  const ctx = buildReadmeCorpusContext(cwd, opts)
+  const { graph, ctx } = buildReadmeCorpusFrozenInputs(cwd, opts)
   const atomPaths = listAtomPaths(cwd)
   const models = atomPaths.map((p) => deriveFolderModel(p, cwd, ctx, graph))
   const sealedByAtom = new Map(models.map((m) => [m.atomPath, m.sealed]))
@@ -1124,18 +1196,24 @@ export function buildFolderReadmeContext(srcRoot: string): FolderReadmeContext {
 /** Folder context + wrangler bindings + standards index (one corpus scan). */
 export function buildReadmeCorpusContext(
   cwd: string = process.cwd(),
-  opts?: { readonly pathFollowGate?: boolean },
+  opts?: ReadmeCorpusContextOpts,
 ): FolderReadmeContext {
   const srcRoot = join(cwd, SRC)
   const base = buildFolderReadmeContext(srcRoot)
   const atomPaths = listAtomPaths(cwd)
-  const pathFollow = opts?.pathFollowGate ? corpusPathFollowOpts() : undefined
+  const frozenAt = opts?.frozenAt ?? readmeCorpusFrozenAt(opts?.frozenGraph)
+  const pathFollow = opts?.pathFollowGate ? corpusPathFollowOpts(frozenAt) : undefined
+  const thinkingCtx: ThinkingLoadContext =
+    opts?.frozenThinkingCtx ??
+    (pathFollow
+      ? { pathLedger: pathFollow.pathLedger, at: frozenAt }
+      : thinkingLoadContext(frozenAt))
   return {
     ...base,
     bindingsByAtom: buildBindingsByAtom(loadWranglerEntries(cwd)),
     standardsByAtom: buildStandardsByAtom(cwd, atomPaths),
     pathFollowGate: opts?.pathFollowGate,
-    thinkingCtx: pathFollow ? { pathLedger: pathFollow.pathLedger } : thinkingLoadContext(),
+    thinkingCtx,
   }
 }
 
@@ -1609,12 +1687,18 @@ export interface ComputedFaceDrift {
 export function materializeComputedFacesForPaths(
   paths: readonly string[],
   cwd: string = process.cwd(),
-  graph: AnalysisTypographyGraph = buildReadmeTypographyGraph(cwd),
-  ctx: FolderReadmeContext = buildReadmeCorpusContext(cwd),
+  graph?: AnalysisTypographyGraph,
+  ctx?: FolderReadmeContext,
 ): number {
+  const frozen =
+    graph !== undefined && ctx !== undefined
+      ? { graph, ctx }
+      : buildReadmeCorpusFrozenInputs(cwd)
+  const g = graph ?? frozen.graph
+  const c = ctx ?? frozen.ctx
   let n = 0
   for (const atomPath of paths) {
-    const folder = deriveFolderModel(atomPath, cwd, ctx, graph)
+    const folder = deriveFolderModel(atomPath, cwd, c, g)
     const computation = folderComputation(atomPath, cwd)
     const diamond = computation.model
     const law = lawLineForAtom(atomPath, cwd)
@@ -1623,6 +1707,23 @@ export function materializeComputedFacesForPaths(
     writeFileSync(join(dir, 'LLM.md'), renderLLM(deriveLLMBrief(folder, diamond, law)))
     writeFileSync(join(dir, 'diamond.json'), renderDiamondJson(diamond, computation.stages))
     n++
+  }
+  return n
+}
+
+/**
+ * Path-batch materialize with frozen typography graph + receipt chain.
+ * Re-passes once when graph root shifts after writes so fresh verify ≡ on disk.
+ */
+export function materializeComputedFacesForPathsStable(
+  paths: readonly string[],
+  cwd: string = process.cwd(),
+): number {
+  let frozen = buildReadmeCorpusFrozenInputs(cwd)
+  let n = materializeComputedFacesForPaths(paths, cwd, frozen.graph, frozen.ctx)
+  const next = buildReadmeCorpusFrozenInputs(cwd)
+  if (next.graph.root !== frozen.graph.root) {
+    n += materializeComputedFacesForPaths(paths, cwd, next.graph, next.ctx)
   }
   return n
 }
@@ -1705,8 +1806,7 @@ export function verifyComputedFacesForPaths(
   paths: readonly string[],
   cwd: string = process.cwd(),
 ): ComputedFaceDrift {
-  const graph = buildReadmeTypographyGraph(cwd)
-  const ctx = buildReadmeCorpusContext(cwd)
+  const { graph, ctx } = buildReadmeCorpusFrozenInputs(cwd)
   const readmeDrift: string[] = []
   const llmDrift: string[] = []
   const diamondDrift: string[] = []
@@ -1729,8 +1829,7 @@ export function verifyComputedFacesInWaves(
   const readmeDrift: string[] = []
   const llmDrift: string[] = []
   const diamondDrift: string[] = []
-  const graph = buildReadmeTypographyGraph(cwd)
-  const ctx = buildReadmeCorpusContext(cwd)
+  const { graph, ctx } = buildReadmeCorpusFrozenInputs(cwd, { pathFollowGate: true })
   const policy = maxWorkTamperPolicy()
   for (const wave of corpusPathWaveBatches({}, policy)) {
     for (const atomPath of wave.items) {
@@ -1751,8 +1850,7 @@ export function materializeComputedFacesInWaves(
   cwd: string = process.cwd(),
   onWave?: (ordinal: number, itemCount: number, written: number) => void,
 ): number {
-  const graph = buildReadmeTypographyGraph(cwd)
-  const ctx = buildReadmeCorpusContext(cwd)
+  const { graph, ctx } = buildReadmeCorpusFrozenInputs(cwd, { pathFollowGate: true })
   let total = 0
   const policy = maxWorkTamperPolicy()
   for (const wave of corpusPathWaveBatches({}, policy)) {

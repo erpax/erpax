@@ -3,15 +3,15 @@
 
 # tour
 
-path `tour` · uuid `637b4252-b673-87bb-8f8f-73c9fbba0ed3` · diamond `d46d765b-27bf-8bd0-8f9d-4b8a4d08ede0`
+path `tour` · uuid `637b4252-b673-87bb-8f8f-73c9fbba0ed3` · diamond `a1d9e5f5-829d-8956-bb5d-7e0268dd6ea7`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports booking·collapse·law·merge·page·sti · exports tour · escapes —
-links `6/6` · folded `1` · bonds in `92` out `87`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·accounts·amendments·atom·balance·bank·basic·buddhist·carriers·chat·checklists·checks·cohort·commission·commitment·consciousness·contracts·cup·customers·dashboard·declaration·diffusion·dropoff·earned·elementary·elevation·emissions·empirical·employees·entity·equilibrium·fact·film·flight·fusion·getting·headline·hobby·holographic·icao·id·inventory·inverse·invoice·issue·it·itcooperative·items·jewelry·join·landmarks·lead·maintainer·marry·mass·materials·measure·medicine·milestones·notice·parent·partial·patient·periods·positions·projects·quote·quotes·reconciliations·reports·reviews·roadmap·runs·saturday·seasonal·segments·society·stat·syllabus·system·tasks·tourist·transactions·transport·vessel·visits·visual · ← accounting·accounts·amendments·atom·balance·bank·basic·buddhist·carriers·chat·checklists·checks·cohort·commission·commitment·consciousness·contracts·cup·customers·dashboard·declaration·diffusion·dropoff·earned·elementary·elevation·emissions·empirical·employees·entity·equilibrium·fact·film·film·flight·fusion·getting·headline·hobby·holographic·icao·id·inventory·inverse·invoice·issue·it·itcooperative·items·jewelry·join·landmarks·lead·maintainer·marry·mass·materials·measure·medicine·milestones·notice·parent·partial·patient·periods·positions·projects·quote·quotes·reconciliations·reports·reports·reviews·roadmap·runs·runs·saturday·seasonal·segments·society·stat·syllabus·system·tasks·tourist·transactions·transactions·transactions·transport·vessel·visits·visual
+neighbors → booking·collapse·law·merge·page·sti · ← booking·collapse·law·merge·page·sti
 analysis —
 law tour is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `be72ee6c-167c-8696-bd49-19122ae53e9a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `fc198e3a-ba17-807a-9fc9-7976ff1cc7e8` · `pnpm readme` · `pnpm computed:check`</sub>

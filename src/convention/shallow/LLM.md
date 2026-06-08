@@ -3,15 +3,15 @@
 
 # shallow
 
-path `convention/shallow` · uuid `57d93682-d252-8dea-a26a-8aa38a76f62a` · diamond `56eae43d-16ea-8283-a2b8-b848e9033c45`
-horo `1` `base` · trinity `1·1·1` · sealed `1`
+path `convention/shallow` · uuid `3ffe927d-5f8c-8421-8036-eef01380bcd1` · diamond `99fb2055-0dbb-8169-9c74-c02718d4ac60`
+horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports @/tamper/import · exports function · escapes —
-links `6/6` · folded `1` · bonds in `5` out `5`
+links `6/6` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `1·0·0`
-neighbors → cost·exported·fresh·law·tamper · ← cost·exported·fresh·law·tamper
+neighbors → cost·exported·law·tamper · ← cost·exported·law·tamper
 analysis —
 law import the index, not a deep file. The index is the atom's public seal; an import past it to a deep internal is an uncovered coupling that lowers tamper-[[cost]]. Import only shallow — every deep import is a measured gap, and the import lint (a ratchet) fails the build when that gap count grows, so the graph can only seal further toward the ∞ limit at coverage 1.
 
 ---
 
-<sub>content-uuid `1a553ce2-1b02-8003-9ba1-a68bb835d230` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c4e55f73-9d73-8a81-87aa-ccd25f5fed13` · `pnpm readme` · `pnpm computed:check`</sub>

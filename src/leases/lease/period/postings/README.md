@@ -2,9 +2,11 @@
 
 # postings
 
-> atom `leases/lease/period/postings` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `leases/lease/period/postings` · horo `8` `crest` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `leases/lease/period/postings` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -19,26 +21,126 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
+
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:stray:[[gap]]/[[diamond]]/stray/hooks/`
+
+### collapse
+
+- `balance:variance=1`
+- `seal:unsealed`
+- `trigger:Use when posting period-end lease amortisation — one row per lease × period capturing interest accretion, principal repayment, ROU amortisation, and opening/closing carrying amounts; JE fires on status → posted. The IFRS 16 §36-38 period evidence collection.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `7ab724cf-7298-8ecf-b2d3-477201ce1cb8` · `8c3ccfd7-86b1-8b3c-a475-65279b6122c6` · `e85e1476-77be-8858-8d38-bf06fb8d95c7`
+- content uuids `08b1665a-6a54-8ccc-8d8b-6babaf39fcf1` · `5811e629-9c1d-8aaf-a22e-104b6e290b52` · `8a7157ac-fb32-85b8-8041-ec951e288d0e`
+
+## [[entropy]] — gaps · seals
+
+> account code `leases/lease/period/postings` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[diamond]]/stray/hooks/ `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.8` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+| Σ gap `2` eb | Σ seal `8.8` eb |
+
+> net residual `-6.8` eb · seal/gap ratio `4.4` · [[entropy]] · [[seal]]
 
 ## typography graph
 
-- partition `leases` · sub-root `cae8cdb5-1757-821f-a7f6-3ea5fe499c3b`
-- bond degree `34` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- partition `leases` · sub-root `fa7e2d56-dfee-8d8f-b979-c5beb4a69d18`
+- bond degree `0` · analysis neighbors —
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `IFRS IFRS-16 §29-§31 rou-asset-subsequent-measurement` · banner
+- `IFRS IFRS-16 §36-§38 lease-liability-amortised-cost` · banner
+- `ISO-4217:2015 currency-codes` · banner
+- `ISO-8601-1:2019 date-time period-start period-end` · banner
+- `SOX §404 internal-controls capital-asset-register` · banner
+- `US-GAAP ASC-842-20-35 lessee-subsequent-measurement` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unbalanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| not-held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·8 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `0` · sealed `0` · horo `8`
+- variance `1` · balanced `0` · trinity sum `3`
+- bindings `0` · standards `6`
 
 ## identity
 
-- uuid `0113c14d-b124-8310-a56e-81704c7a9ab8`
-- bonds in `10` · out `11`
+- uuid `947ca018-5803-8452-a9a8-07c5c11aa29c`
+- bonds in `7` · out `7`
 - trinity form·code·proof `1`·`1`·`1`
 - links `3` / `3`
 - folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `be5902a5-155a-8d76-b126-1a633cc06dc3` · framed by typography partition `leases` bonds `34` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f69db555-079a-8679-81c5-bf85bb145c43` · framed by typography partition `leases` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

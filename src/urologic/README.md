@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `urologic` · sub-root `c513e81d-ffef-8e75-a823-c28c29b4a3f0`
-- bond degree `76` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `12` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `c513e81d-ffef-8e75-a823-c28c29b4a3f0`
-- bonds in `36` · out `36`
+- bonds in `4` · out `4`
 - trinity form·code·proof `1`·`0`·`0`
 - links `4` / `4`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `450db4cc-7f79-865e-87e6-0ae35631c603` · framed by typography partition `urologic` bonds `76` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `56ae897c-7b43-8039-b955-24093f2f1667` · framed by typography partition `urologic` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

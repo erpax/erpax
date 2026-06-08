@@ -3,15 +3,15 @@
 
 # supto
 
-path `supto` · uuid `c46bf388-4572-8578-bd20-836eb1d59b0f` · diamond `a2e0f563-6d1d-8236-b52f-8c070e12bd4e`
+path `supto` · uuid `c46bf388-4572-8578-bd20-836eb1d59b0f` · diamond `012415a1-d410-8f8c-9e0e-4f6d177eee9c`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports access·accounting·audit·bindings·duality·event·fiscal·hooks·identity·jobs·law·number·reverse·standard·sti·tax·uuid · exports supto · escapes —
-links `36/36` · folded `1` · bonds in `6` out `6`
+links `36/36` · folded `1` · bonds in `20` out `20`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·measurement·memories·shipped·stat · ← cohort·landmarks·measurement·memories·shipped·stat
+neighbors → access·accounting·bindings·corruption·devices·duality·event·hooks·identity·jobs·law·lineage·number·receipts·reverse·standard·sti·submissions·tax·uuid · ← access·accounting·bindings·corruption·devices·duality·event·hooks·identity·jobs·law·lineage·number·receipts·reverse·standard·sti·submissions·tax·uuid
 analysis —
 law a СУПТО sale carries a gapless per-ФУ УНП ([[number]], the regulatory handle) beside its content-[[uuid]] ([[identity]], the machine id) — no in-scope paid sale closes without a fiscal device → УНП (no silent bypass), completed sales are immutable (no delete/modify, [[reverse|сторно]]-only preserving the original), and content-addressing IS the tamper-proofing Наредба Н-18 demands.
 
 ---
 
-<sub>content-uuid `85c8b140-12e7-8ecb-837b-198d1005e203` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8725a41e-c2b7-8c93-aa46-6f5453935591` · `pnpm readme` · `pnpm computed:check`</sub>

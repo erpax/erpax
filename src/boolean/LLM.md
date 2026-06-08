@@ -3,8 +3,8 @@
 
 # boolean
 
-path `boolean` · uuid `5c7872fe-5bbf-8864-b9d1-c2a3915ef424` · diamond `a1f39de3-1bd6-812b-bf08-64e38de330c4`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `boolean` · uuid `d24eb0c0-8d7b-8dde-a339-8cbf5b53490c` · diamond `e6cef1a0-342e-8502-94dd-f366ff111773`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports boolean · escapes —
 links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law boolean is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `5f024a93-a008-8dd9-9bf9-60f848043c21` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `62a7cd37-bd02-835c-aba7-30b77b860afb` · `pnpm readme` · `pnpm computed:check`</sub>

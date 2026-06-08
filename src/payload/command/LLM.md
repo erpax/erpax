@@ -4,7 +4,7 @@
 # command
 
 path `payload/command` · uuid `5b279972-c7eb-8269-b0fa-f56ea10676c0` · diamond `4569a3ac-82a0-8a1b-b22b-c0bd214b5901`
-horo `4` `weave` · trinity `1·1·1` · sealed `1`
+horo `4` `weave` · trinity `1·1·1` · sealed `0`
 imports @/uuid/matrix · exports const·function · escapes —
 links `11/11` · folded `1` · bonds in `21` out `23`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law the Payload CLI command set, folded — each command is a name (name ≡ pat
 
 ---
 
-<sub>content-uuid `52649034-3f95-8199-976e-a07686d91ca5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ade6622f-ef92-8c82-b9db-ed20dcc7b531` · `pnpm readme` · `pnpm computed:check`</sub>

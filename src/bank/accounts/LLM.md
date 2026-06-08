@@ -3,15 +3,15 @@
 
 # accounts
 
-path `bank/accounts` · uuid `afb97329-3149-81a6-a9b4-65c605b99d4c` · diamond `e5385e54-38c2-8d27-9b66-ef29a55fa39a`
-horo `1` `base` · trinity `1·1·1` · sealed `0`
+path `bank/accounts` · uuid `ce2bb801-5cd9-8fca-9fd1-c5973fabeab3` · diamond `9d590a9f-8360-86e4-9fbf-b850d445fda0`
+horo `8` `crest` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/derive/country/from/iban·@/enforce/segregation/of/duty·@/iban·@/iso/9362·@/standard/collection/hook · exports default · escapes —
-links `7/7` · folded `1` · bonds in `19` out `22`
+links `7/7` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·access·accounting·accounting·accounting·adjustments·auth·collections·escrow·hooks·identity·identity·law·lines·locations·orders·party·proof·reconciliations·runs·standard·transaction · ← access·accounting·adjustments·auth·collections·escrow·hooks·identity·law·lines·locations·orders·party·proof·reconciliations·reconciliations·runs·standard·transaction
+neighbors → access·accounting·auth·escrow·hooks·identity·party·reconciliations·reconciliations·runs · ← access·accounting·auth·escrow·hooks·identity·party·reconciliations·reconciliations·runs
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `a3bb9638-c663-8452-bca3-ecf2aa310f9f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `12c0089d-6cf2-80da-8140-706ee8279431` · `pnpm readme` · `pnpm computed:check`</sub>

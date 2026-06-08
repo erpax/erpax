@@ -23,7 +23,7 @@
 
 - partition `drink` · sub-root `ef4b9fc4-d826-8439-b82e-d95f8d0ca74d`
 - bond degree `15` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `b4d3d71f-f488-8c9e-9f6b-729edad48f7f` · framed by typography partition `drink` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d08a6324-e8fb-8021-aff7-ff9682543ede` · framed by typography partition `drink` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

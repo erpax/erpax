@@ -2,9 +2,11 @@
 
 # standards
 
-> atom `taxing/jurisdictions/reporting/standards` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `taxing/jurisdictions/reporting/standards` · horo `4` `weave` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `taxing/jurisdictions/reporting/standards` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -19,26 +21,126 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
+
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+- `gap:stray:[[gap]]/[[diamond]]/stray/reporting/`
+
+### collapse
+
+- `balance:variance=1`
+- `seal:unsealed`
+- `trigger:Use when registering or querying GAAP/IFRS/SOX/Tax reporting frameworks per jurisdiction — standard name, code, type, effective date, and reference material. The per-jurisdiction reporting-standard catalogue node.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `00929534-4f4c-803b-8314-45cdc1c938d0` · `79fd233b-4994-8c40-b0d2-ac693165f184` · `8e740346-9513-8463-aab9-d69c30ebd6ca` · `b338e118-93b6-8f10-9fd3-0b674ce7013e`
+- content uuids `1abf53b2-8f01-805e-9af7-8fd91bd1ece2` · `4ef5d2f9-6831-8f18-9b9d-b1a394124b11` · `aa2d1495-1210-8acc-825c-10f578cb5154` · `dd745f0e-8948-864d-a5dc-cc66fce5d70c`
+
+## [[entropy]] — gaps · seals
+
+> account code `taxing/jurisdictions/reporting/standards` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[diamond]]/stray/reporting/ `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.4` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+| Σ gap `3` eb | Σ seal `8.4` eb |
+
+> net residual `-5.4` eb · seal/gap ratio `2.8` · [[entropy]] · [[seal]]
 
 ## typography graph
 
-- partition `taxing` · sub-root `43244244-8232-8564-876d-d1a099bee8db`
-- bond degree `86` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- partition `taxing` · sub-root `38ccaa08-3e11-83fe-be70-736e95ea2788`
+- bond degree `0` · analysis neighbors —
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ESRS EU-sustainability-reporting` · banner
+- `EU-ESRS` · catalogue
+- `IFRS reporting-framework` · banner
+- `US-GAAP reporting-framework` · banner
+- `XBRL` · catalogue
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unbalanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| not-held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·4 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `0` · sealed `0` · horo `4`
+- variance `1` · balanced `0` · trinity sum `3`
+- bindings `0` · standards `5`
 
 ## identity
 
-- uuid `350d7c15-cd02-845b-88fe-43153a762a7d`
-- bonds in `32` · out `32`
+- uuid `e7e3a4cf-4f9a-8964-ba75-b0ddabbc2ff9`
+- bonds in `19` · out `19`
 - trinity form·code·proof `1`·`1`·`1`
 - links `1` / `1`
 - folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `7d44d74c-356d-8a59-b4cb-252e18e1ae24` · framed by typography partition `taxing` bonds `86` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `af7f6f66-fc96-8d4c-b88f-aad8c7fa15de` · framed by typography partition `taxing` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

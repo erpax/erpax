@@ -2,7 +2,7 @@
 
 # decontextualized
 
-> atom `decontextualized` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
+> atom `decontextualized` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -21,9 +21,9 @@
 
 ## typography graph
 
-- partition `decontextualized` · sub-root `9351dc25-db9c-82b1-9bd0-62487bcfce34`
+- partition `decontextualized` · sub-root `5dfc0b82-0fc9-8e39-81e2-04a30af8fba6`
 - bond degree `12` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -33,15 +33,53 @@
 
 - `schema.org — the type vocabulary, collided to single words` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·7 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `12` · sealed `1` · horo `4`
+- bond degree `12` · sealed `1` · horo `7`
 - variance `0` · balanced `1` · trinity sum `1`
 - bindings `0` · standards `1`
 
 ## identity
 
-- uuid `9351dc25-db9c-82b1-9bd0-62487bcfce34`
+- uuid `5dfc0b82-0fc9-8e39-81e2-04a30af8fba6`
 - bonds in `4` · out `4`
 - trinity form·code·proof `1`·`0`·`0`
 - links `4` / `4`
@@ -53,4 +91,4 @@
 
 ---
 
-<sub>content-uuid `bc08d511-5ea7-897f-82e7-40f7fabfe5da` · framed by typography partition `decontextualized` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `65060e1c-c706-8bf7-8396-3cd4da111979` · framed by typography partition `decontextualized` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

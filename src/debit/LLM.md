@@ -3,8 +3,8 @@
 
 # debit
 
-path `debit` · uuid `ed56e325-5232-89e0-ae73-479ae5c9c636` · diamond `7ee7c95f-f19e-8ec0-b1f6-3b645f0c784d`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `debit` · uuid `c3ef2bd3-e34b-890d-b150-501937fcfc60` · diamond `c55b40b4-1088-8294-b0b0-f9514aba387f`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports debit · escapes —
 links `4/4` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law debit is one schema.org word, content-addressed; the same word collides ever
 
 ---
 
-<sub>content-uuid `c9dda9d7-588a-8705-847c-340316784126` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `811b8d78-5b72-8210-84bf-068a45261a17` · `pnpm readme` · `pnpm computed:check`</sub>

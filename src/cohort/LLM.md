@@ -3,8 +3,8 @@
 
 # cohort
 
-path `cohort` · uuid `c41509f7-c124-8d4f-898e-12a4fd500cda` · diamond `e7f79fca-fcf2-882e-9d4b-247b1585ca21`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `cohort` · uuid `ab0ae9af-7a07-86eb-bbbd-f93482427eed` · diamond `e2873a36-1f02-8166-a271-a9f2f976095c`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports aggregation·customer·measure·schedule·segment · exports cohort · escapes —
 links `5/5` · folded `1` · bonds in `15` out `15`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `09879054-770e-8a97-b4a7-bb340a5c0672` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `392dad4e-a6c7-8d81-a973-d1b93ce2503a` · `pnpm readme` · `pnpm computed:check`</sub>

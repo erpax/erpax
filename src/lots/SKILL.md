@@ -1,8 +1,122 @@
 ---
 name: lots
-description: Use when modeling a production order (a lot) — the manufacturing funnel head whose state is DERIVED from lifecycle watermarks on the horo ring, fanning into lot-variants and a lot-work-phases routing chain.
+description: "Use when modeling a production order (a lot) — the manufacturing funnel head whose state is DERIVED from lifecycle watermarks on the horo ring, fanning into lot-variants and a lot-work-phases routing chain."
+atomPath: lots
+coordinate: lots · 7/descent · 6dede112
+contentUuid: "0d37768f-91b2-5a8f-86b7-a06da2824ca1"
+diamondUuid: "86825f31-224b-8a55-895e-ea472fbc57bb"
+uuid: "6dede112-23a6-8fce-b361-99ba209c4593"
+horo: 7
+bonds:
+  in:
+    - accounting
+    - balance
+    - certification
+    - coordinate
+    - entry
+    - grade
+    - herd
+    - horo
+    - law
+    - lineage
+    - lot
+    - organic
+    - packs
+    - phases
+    - variants
+  out:
+    - accounting
+    - balance
+    - certification
+    - coordinate
+    - entry
+    - grade
+    - herd
+    - horo
+    - law
+    - lineage
+    - lot
+    - organic
+    - packs
+    - phases
+    - variants
+typography:
+  partition: lots
+  bondDegree: 50
+  neighbors: []
+standards:
+  - "EU-2014/55"
+  - "EU-537/2014"
+  - "EU-910/2014"
+  - "ISA-95"
+  - "ISA-95:2013 / IEC-62264-1 §B.3 production-schedule production-order"
+  - "ISO-19011:2018 audit-trail lot-lifecycle confirmed·started·finished·closed"
+  - "ISO-22400-2"
+  - "ISO-22400-2:2014 manufacturing-operations throughput"
+  - "SOX §404 internal-controls production-control"
+  - "double-entry — the lot total IS the sum of its variant postings;"
+bindings: []
+neighbors:
+  wikilink:
+    - accounting
+    - balance
+    - coordinate
+    - entry
+    - horo
+    - law
+    - phases
+    - variants
+  matrix:
+    - accounting
+    - balance
+    - certification
+    - coordinate
+    - entry
+    - grade
+    - herd
+    - horo
+    - law
+    - lineage
+    - lot
+    - organic
+    - packs
+    - phases
+    - variants
+  backlinks:
+    - accounting
+    - balance
+    - certification
+    - coordinate
+    - entry
+    - grade
+    - herd
+    - horo
+    - law
+    - lineage
+    - lot
+    - organic
+    - packs
+    - phases
+    - variants
+signatures:
+  computationUuid: "7dd9cfac-8b1d-8acd-ba2d-9ad5d530c14a"
+  stages:
+    - stage: path
+      stageUuid: "be1ef1f2-590a-83fa-a1d3-498285b60554"
+    - stage: trinity
+      stageUuid: "db9b4f1e-62eb-8b4f-99ff-f3e906d3bae4"
+    - stage: boundary
+      stageUuid: "0d8a8b6f-ccc5-8372-9eeb-351b46dc8396"
+    - stage: links
+      stageUuid: "5db61009-ae9e-8118-bf90-7c0764d34a6f"
+    - stage: horo
+      stageUuid: "da2be9e0-4e0a-8ede-8731-e588850ae6fe"
+    - stage: seal
+      stageUuid: "456aba67-2fe7-838f-b01f-d9b2e3408bb9"
+    - stage: uuid
+      stageUuid: "19ca4280-0dfc-8f93-8bcf-5c0d3e49717e"
+version: 2
 ---
-
 # lots — the production order (the funnel head, derived-state on the horo ring)
 
 A `lot` is a production run against a sales `order` for a `product`. It is the **containing axis** of the routing graph ([[coordinate]]): it fans out into [[lot/variants]] (the size/colour roll-up) and is produced through an ordered chain of [[lot/work/phases]] (the routing) that cross to the [[work/phases]] catalog. The lot is one materialization of the universal [[entry]] law — its unit funnel is a chain of balanced counters (give·take at each stage), and its total IS the sum of its variants ([[accounting]] double-entry, [[balance]]).

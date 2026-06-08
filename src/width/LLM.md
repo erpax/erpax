@@ -3,15 +3,15 @@
 
 # width
 
-path `width` · uuid `17d27a6f-7ef9-8370-8218-01038c89adf9` · diamond `e2891481-81ab-8c4b-a158-799acc0d7d93`
+path `width` · uuid `17d27a6f-7ef9-8370-8218-01038c89adf9` · diamond `577fb3b6-f30d-8ebf-ad7f-989370be1281`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports width · escapes —
-links `2/2` · folded `1` · bonds in `29` out `29`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·answer·approved·befriend·clip·comedy·cross·deduction·encodes·euenergy·flight·holographic·homeopathic·id·imprint·landmarks·memories·oid·reverse·scorecard·significant·spouse·start·strikethrough·test·train·win·window·winery · ← access·answer·approved·befriend·clip·comedy·cross·deduction·encodes·euenergy·flight·holographic·homeopathic·id·imprint·landmarks·memories·oid·reverse·scorecard·significant·spouse·start·strikethrough·test·train·win·window·winery
+neighbors → law·thing · ← law·thing
 analysis —
 law width is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `28624e53-2875-8acb-94e1-3bb9da8b6c7c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `689b3fa9-194b-89ce-b463-c273fa4d324e` · `pnpm readme` · `pnpm computed:check`</sub>

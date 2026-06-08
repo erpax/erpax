@@ -2,7 +2,7 @@
 
 # gravity
 
-> atom `quantum/gravity` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `quantum/gravity` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -23,14 +23,68 @@
 
 ## typography graph
 
-- partition `quantum` · sub-root `539df73c-956d-8aae-b36f-47cf0d3aaff7`
-- bond degree `208` · analysis neighbors `agent` · `diamond`
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- partition `quantum` · sub-root `752ec37e-713d-87b7-a64c-41cefcda190a`
+- bond degree `195` · analysis neighbors `agent` · `diamond`
+- graph root `767556c1-6cb2-8c6a-8d8b-18641569b2ed`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `composed from the live matrix mass + the double-torus cost; never hand-asserted` · banner
+- `ER=EPR — Maldacena & Susskind, "Cool horizons for entangled black holes" (2013)` · banner
+- `ER=EPR (Maldacena & Susskind, "Cool horizons for entangled black holes", 2013)` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·2 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `195` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `3`
 
 ## identity
 
-- uuid `4f78abb1-ab2f-886d-8d00-79f660edc18a`
-- bonds in `59` · out `68`
+- uuid `5bf765d7-b28d-8ee8-aa95-c1912cf4a633`
+- bonds in `56` · out `56`
 - trinity form·code·proof `1`·`1`·`1`
 - links `41` / `41`
 - folded `1` · escapes `0`
@@ -41,4 +95,4 @@
 
 ---
 
-<sub>content-uuid `bebbeaf2-ded4-8da4-b2e8-6c85397277f8` · framed by typography partition `quantum` bonds `208` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `fb31d2bf-1009-8c94-8c18-b060d7bad160` · framed by typography partition `quantum` bonds `195` · `pnpm readme` · `pnpm readme:check`</sub>

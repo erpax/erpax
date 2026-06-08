@@ -3,15 +3,15 @@
 
 # trinity
 
-path `trinity` · uuid `ae819458-4b18-8ea1-a8ff-2359110ea248` · diamond `af4eea5d-aa33-8675-b05f-9d6d0fea3d55`
+path `trinity` · uuid `ae819458-4b18-8ea1-a8ff-2359110ea248` · diamond `6ba60098-dd5c-8153-86d9-f148705c8a57`
 horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports — · exports const·function · escapes —
-links `55/55` · folded `1` · bonds in `9` out `9`
-faces worker·plugin·pwa `0·0·0`
-neighbors → age·cohort·credit·landmarks·memories·quota·satire·stat·tech · ← age·cohort·credit·landmarks·memories·quota·satire·stat·tech
+links `55/55` · folded `1` · bonds in `79` out `79`
+faces worker·plugin·pwa `1·0·0`
+neighbors → access·agent·akashic·analytics·angel·archangel·atom·aura·auth·balance·begin·bitemporal·carbon·chakra·chat·checker·collapse·collide·complete·components·cost·css·dashboard·decompression·diamond·digit·dimension·duality·emergence·end·explainability·flow·forge·fractal·generate·give·holographic·hooks·identity·interactive·law·limit·merge·one·part·payload·peace·port·profane·purity·quaternary·readme·replay·resolve·reveal·reversibility·rodin·sacred·sequence·services·signal·skills·snapshot·spec·standard·take·team·test·topography·transactions·types·typography·unavoidable·vibration·vocabulary·war·wave·whole·zeropoint · ← access·agent·akashic·analytics·angel·archangel·atom·aura·auth·balance·begin·bitemporal·carbon·chakra·chat·checker·collapse·collide·complete·components·cost·css·dashboard·decompression·diamond·digit·dimension·duality·emergence·end·explainability·flow·forge·fractal·generate·give·holographic·hooks·identity·interactive·law·limit·merge·one·part·payload·peace·port·profane·purity·quaternary·readme·replay·resolve·reveal·reversibility·rodin·sacred·sequence·services·signal·skills·snapshot·spec·standard·take·team·test·topography·transactions·types·typography·unavoidable·vibration·vocabulary·war·wave·whole·zeropoint
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `a0a5665d-d065-8262-a218-c1fd9829723d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0beae71f-8b56-8d67-b534-a5631fb02214` · `pnpm readme` · `pnpm computed:check`</sub>

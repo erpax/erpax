@@ -2,7 +2,7 @@
 
 # conversation
 
-> atom `conversation` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `conversation` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -21,9 +21,9 @@
 
 ## typography graph
 
-- partition `conversation` · sub-root `774cac65-1033-8513-af1b-dbcc79963fce`
+- partition `conversation` · sub-root `fcd279e1-877d-8d6b-88d5-03b7b5a15892`
 - bond degree `9` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -33,15 +33,53 @@
 
 - `schema.org — the type vocabulary, collided to single words` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·8 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `9` · sealed `1` · horo `7`
+- bond degree `9` · sealed `1` · horo `8`
 - variance `0` · balanced `1` · trinity sum `1`
 - bindings `0` · standards `1`
 
 ## identity
 
-- uuid `774cac65-1033-8513-af1b-dbcc79963fce`
+- uuid `fcd279e1-877d-8d6b-88d5-03b7b5a15892`
 - bonds in `3` · out `3`
 - trinity form·code·proof `1`·`0`·`0`
 - links `2` / `2`
@@ -53,4 +91,4 @@
 
 ---
 
-<sub>content-uuid `db77c011-6941-82a1-9269-b5649968851c` · framed by typography partition `conversation` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a9870072-d055-8b95-bf21-798c20b9f55c` · framed by typography partition `conversation` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>

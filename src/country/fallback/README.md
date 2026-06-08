@@ -2,7 +2,7 @@
 
 # fallback
 
-> atom `country/fallback` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
+> atom `country/fallback` · horo `4` `weave` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -23,9 +23,9 @@
 
 ## typography graph
 
-- partition `country` · sub-root `ff847416-c94d-8cbc-b684-32508188454e`
-- bond degree `38` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- partition `country` · sub-root `79127c52-f61b-8307-a4cd-7a0b45a6d1c3`
+- bond degree `26` · analysis neighbors —
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -44,24 +44,62 @@
 - `UN M.49 — 001 World (numeric)` · banner
 - `Unicode-CLDR` · catalogue
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·4 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `38` · sealed `1` · horo `8`
+- bond degree `26` · sealed `0` · horo `4`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `10`
 
 ## identity
 
-- uuid `f3f780cd-92f5-8d97-b005-9a31da4f3822`
-- bonds in `11` · out `13`
+- uuid `821a427b-54a9-81b7-9669-2d5568866ee7`
+- bonds in `6` · out `6`
 - trinity form·code·proof `1`·`1`·`1`
 - links `4` / `4`
 - folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `d3f727bc-c157-8b61-b360-3eeae91c209a` · framed by typography partition `country` bonds `38` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f052fbad-ac98-8fc2-94b3-3d4d52eb684a` · framed by typography partition `country` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>

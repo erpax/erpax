@@ -3,7 +3,7 @@
 
 # byline
 
-path `byline` · uuid `3a53bbbc-0258-8bda-961d-8b0da52b848c` · diamond `37984ace-0cea-8f81-b908-6100d80c1b0a`
+path `byline` · uuid `54f337ce-6a7d-8f2d-8b0f-70207cd4224b` · diamond `3f781fa3-fc4c-893f-a4b0-98978c76619b`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports article·balance·bylines · exports byline · escapes —
 links `6/6` · folded `1` · bonds in `3` out `3`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `bc42cb6a-8c86-8685-9704-43a029dd899a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6a5b41a7-ee1b-889e-8d3d-5bef684a1a89` · `pnpm readme` · `pnpm computed:check`</sub>

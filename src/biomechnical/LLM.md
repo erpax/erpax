@@ -3,8 +3,8 @@
 
 # biomechnical
 
-path `biomechnical` · uuid `27342001-5d00-8a09-a759-e2b7db1ddb37` · diamond `e65dffe9-5c54-8f69-99b8-1e6076ae9034`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `biomechnical` · uuid `040235e1-90aa-8fa8-9d6c-53d24b882dfa` · diamond `a7a1ae36-5b0f-86e0-8209-929ab2ce47e0`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports class·collapse·law·merge·sti · exports biomechnical · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law biomechnical is one schema.org word, content-addressed; the same word collid
 
 ---
 
-<sub>content-uuid `08166ed7-8a56-8498-bd7d-be8c4490667e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `003183eb-230a-833b-8729-f22bea0d1d9f` · `pnpm readme` · `pnpm computed:check`</sub>

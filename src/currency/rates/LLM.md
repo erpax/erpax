@@ -3,8 +3,8 @@
 
 # rates
 
-path `currency/rates` · uuid `9680f8e6-7260-8b76-ac00-f9e546751ea5` · diamond `f6d488cc-0faa-829f-b824-8dcf798b019f`
-horo `5` `round` · trinity `1·1·1` · sealed `1`
+path `currency/rates` · uuid `f791e26a-03f6-8d69-bccb-d9504c7c6c99` · diamond `cc952657-72cb-8b25-910c-ba3c16a36707`
+horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports @/audit/trail/after/change·@/auth·@/auto/populate/tenant·@/base/accounting/field · exports default · escapes —
 links `6/6` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `fbcf6deb-ef36-88c4-9e03-e368eb39ff2e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `06918fcf-73d6-8629-beaf-313703c228cf` · `pnpm readme` · `pnpm computed:check`</sub>

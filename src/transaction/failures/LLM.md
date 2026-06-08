@@ -3,15 +3,15 @@
 
 # failures
 
-path `transaction/failures` · uuid `f662f8ad-f4b1-8975-bd4d-fcd17991f7cf` · diamond `a064a92c-1928-83f7-8910-7574a1c8b0b0`
+path `transaction/failures` · uuid `f662f8ad-f4b1-8975-bd4d-fcd17991f7cf` · diamond `829935e6-d804-89f0-ac57-7216d2b8dcc5`
 horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
-links `9/9` · folded `1` · bonds in `7` out `7`
+links `9/9` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·agency·bans·cohort·landmarks·memories·stat · ← action·agency·bans·cohort·landmarks·memories·stat
+neighbors → access·accounting·failure·hooks·identity·law·proof·standard·transaction · ← access·accounting·failure·hooks·identity·law·proof·standard·transaction
 analysis —
 law a failed transaction is never silently dropped — it is retained in the queue with its retry count and last error until it succeeds or is dispositioned, leaving an auditable trail of every attempt.
 
 ---
 
-<sub>content-uuid `19cbfdd8-5be5-8c57-9d99-2006275f0a49` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `10b20a75-151f-80b6-8325-78fb88c1b581` · `pnpm readme` · `pnpm computed:check`</sub>

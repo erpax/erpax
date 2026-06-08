@@ -3,8 +3,8 @@
 
 # dermatology
 
-path `dermatology` · uuid `8048f07f-de34-8515-a22a-82815923fc53` · diamond `01009025-0be3-8556-bb4e-283554decb49`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `dermatology` · uuid `f275c719-1d3b-8000-9b2c-3e9375018030` · diamond `5eb6ba1a-fce2-89d3-bbf4-3c1cb9dade6e`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports dermatology · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law dermatology is one schema.org word, content-addressed; the same word collide
 
 ---
 
-<sub>content-uuid `a6540750-5258-8eae-b3b0-ebec7db2380a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `955d4d44-0850-8171-b580-3531d436efad` · `pnpm readme` · `pnpm computed:check`</sub>

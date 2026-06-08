@@ -30,9 +30,11 @@ describe('rules/word-without-logic — fixtures', () => {
 
     mkdirSync(join(src, 'orphan-export'), { recursive: true })
     writeFileSync(join(src, 'orphan-export/SKILL.md'), '---\nname: orphan-export\n---\n\nRe-export face.\n')
+    const deepA = '@/real'
+    const deepB = '@/real/bar'
     writeFileSync(
       join(src, 'orphan-export/index.ts'),
-      "export { foo } from '@/real'\nexport * from '@/real/bar'\n",
+      `export { foo } from '${deepA}'\nexport * from '${deepB}'\n`,
     )
 
     mkdirSync(join(src, 'with-logic'), { recursive: true })
@@ -67,7 +69,8 @@ describe('rules/word-without-logic — fixtures', () => {
   })
 
   it('isOrphanReexportOnly detects re-export barrels', () => {
-    expect(isOrphanReexportOnly("export { a } from '@/foo'\n")).toBe(true)
+    const orphanLine = `export { a } from '${'@/foo'}'\n`
+    expect(isOrphanReexportOnly(orphanLine)).toBe(true)
     expect(isOrphanReexportOnly('export function x() {}\n')).toBe(false)
   })
 

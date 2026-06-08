@@ -3,8 +3,8 @@
 
 # collide
 
-path `collide` · uuid `6a912f6c-5e20-8eae-b177-d937fefd259d` · diamond `925430ef-cef7-8dcc-869e-c38bca620cb9`
-horo `5` `round` · trinity `1·1·1` · sealed `1`
+path `collide` · uuid `9b1c3b23-c1d9-88bd-abb3-dc57ace6b07c` · diamond `2aeb0736-5150-8dbd-aa92-f1f7d26332aa`
+horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports @/entropy·@/horo·@/uuid/matrix · exports const·function·interface · escapes —
 links `29/29` · folded `1` · bonds in `15` out `15`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law collide is the inhale, deferred — first expand (raise entropy), collide la
 
 ---
 
-<sub>content-uuid `d63d5701-2f87-8f78-b3a6-8ce2a17c1f90` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d21cc093-f322-8d41-8cdd-80fceb8427bc` · `pnpm readme` · `pnpm computed:check`</sub>

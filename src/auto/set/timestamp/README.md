@@ -6,6 +6,8 @@
 
 ## [[debit]] · [[credit]]
 
+> account code `auto/set/timestamp` · currency `eb` (entropy-bit)
+
 | [[debit]] | [[credit]] |
 | -------- | --------- |
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
@@ -21,11 +23,62 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `law:a status-transition time is set once, server-side, in canonical UTC ISO-8601 — written only when the condition fires and the field is empty, so the event time is verifiable and cannot be silently restamped.`
+- `seal:unsealed`
+- `trigger:ISO-8601-1:2019 date-time utc-canonical`
+- `trigger:Use when stamping a status-transition timestamp (postedAt, approvedAt, reconciledAt, authorizedAt) onto a configurable field the first time a condition fires — a beforeChange hook factory emitting canonical UTC ISO-8601.`
+- `trigger:`autoSetTimestamp(timestampField, condition)` returning a `CollectionBeforeChangeHook`. One of the [[auto]]-set control gates ([[hooks]]).`
+- `trigger:a status-transition time is set once, server-side, in canonical UTC ISO-8601 — written only when the condition fires and the field is empty, so the event time is verifiable and cannot be silently restamped.`
+- `trigger:matter-twin:src/auto/set/timestamp/index.ts`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `3510d5bb-0ece-8cac-8eac-a91309ece504` · `b9054643-15e2-85fc-a545-4540e767a4ab` · `d340f267-e479-82a7-9a92-5e31a342a148`
+- content uuids `09c88db9-c383-88a8-8b7c-81510da07ee4` · `2af13157-e20f-8518-b2f4-0c66b459b687` · `da299b5b-24c9-80f4-913b-fee37b6f35ba`
+
+## [[entropy]] — gaps · seals
+
+> account code `auto/set/timestamp` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.8` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `2` eb | Σ seal `11.8` eb |
+
+> net residual `-9.8` eb · seal/gap ratio `5.9` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `auto` · sub-root `fb1afd9b-bd8f-8c8d-8f4e-d2d40410747f`
-- bond degree `17` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- partition `auto` · sub-root `f4fab508-f961-864c-be0f-f7a7df045e62`
+- bond degree `10` · analysis neighbors —
+- graph root `86252db0-c776-84eb-b8e4-c884dca3a3ba`
 
 ## [[cloudflare]] bindings
 
@@ -40,21 +93,58 @@
 - `EU-2019/770` · catalogue
 - `EU-2019/771` · catalogue
 - `EU-Intrastat-Reg-2019/2152` · catalogue
-- `ISO-19011:2018 audit-trail status-transition-timestamp` · banner
 - `ISO-8601-1` · catalogue
 - `ISO-8601-1:2019 date-time utc-canonical` · banner
 - `SOX §404 internal-controls verifiable-event-time` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·8 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `17` · sealed `0` · horo `8`
+- bond degree `10` · sealed `0` · horo `8`
 - variance `0` · balanced `1` · trinity sum `3`
-- bindings `0` · standards `11`
+- bindings `0` · standards `10`
 
 ## identity
 
-- uuid `f1315e2f-dc98-82e5-8895-023111e49072`
-- bonds in `5` · out `6`
+- uuid `3dd9511a-e03b-8551-90ce-43f2271cc1b0`
+- bonds in `2` · out `2`
 - trinity form·code·proof `1`·`1`·`1`
 - links `5` / `5`
 - folded `1` · escapes `0`
@@ -65,4 +155,4 @@
 
 ---
 
-<sub>content-uuid `a843ecaa-a585-880f-95af-fa8166d2464a` · framed by typography partition `auto` bonds `17` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `78831c37-1daf-882d-b31b-fbd01409e584` · framed by typography partition `auto` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>

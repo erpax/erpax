@@ -23,7 +23,21 @@
 
 - partition `fertility` · sub-root `be959057-62be-870a-83fd-c72cdef16e93`
 - bond degree `93` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `93` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `46a85915-852b-8e68-b5f6-ba2348806926` · framed by typography partition `fertility` bonds `93` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `64109555-90f6-8ddf-b927-cce6d7130761` · framed by typography partition `fertility` bonds `93` · `pnpm readme` · `pnpm readme:check`</sub>

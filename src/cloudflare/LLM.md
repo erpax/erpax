@@ -3,15 +3,15 @@
 
 # cloudflare
 
-path `cloudflare` · uuid `7d8488af-095b-82a2-ad16-fb5883e454b7` · diamond `5e90bd51-fc0d-8b55-9dff-5fc7b7a0232c`
-horo `4` `weave` · trinity `1·1·1` · sealed `0`
+path `cloudflare` · uuid `017b2720-03aa-848e-be88-93ffe968648d` · diamond `d22b601c-3c22-88fb-a03b-5f62593745ab`
+horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports @/integrity · exports AI_GATEWAY_VAR_KEYS·AI_STACK_BINDING_TYPES·AnalyticsEngineDataset·BrowserBinding·CLOUDFLARE_BINDING_TYPES·CLOUDFLARE_SEAL_KID·D1Database·DurableObjectNamespace·EmailSendBinding·KVNamespace·MediatorAuthorizer·Queue·R2Bucket·VectorizeIndex·WRANGLER_BINDING_ENV_KEYS·WRANGLER_SECRET_ENV_KEYS·agentAiWorkerFace·aiBindingDiamond·aiModelAtomPath·aiSecretIdentity·async·atomsLinkedByBindingType·bindingAtomPath·bindingBoundaryUuid·bindingDeploymentFaces·bindingDiamond·canonicalizeCloudflareConfig·cloudflareAiAccountingExtras·cloudflareBindingDiamond·cloudflareBindingFace·cloudflareConfigContentUuid·decryptCloudflareAiSecretIfUuid·decryptCloudflareIfUuid·deriveAiBindingDiamonds·deriveWranglerBindingDiamonds·deriveWranglerDiamonds·filterAiBindings·function·interface·isAiRelatedBinding·loadRepoAiBindings·mergeCloudflareBinding·parseWranglerBindings·sealCloudflareAiSecret·sealCloudflareConfig·stripJsoncComments·type·verifyAiBindingDiamonds·wranglerEnvToCloudflareConfig · escapes —
-links `23/23` · folded `1` · bonds in `15` out `15`
+links `26/26` · folded `1` · bonds in `16` out `16`
 faces worker·plugin·pwa `1·0·0`
-neighbors → access·agent·ai·audit·confirm·diamond·innovation·law·path·quantum·secret·serverless·superposition·uuid·worker · ← access·agent·ai·audit·confirm·diamond·innovation·law·path·quantum·secret·serverless·superposition·uuid·worker
-analysis agent·ai·diamond·innovation·quantum·secret·serverless·worker
+neighbors → access·agent·ai·audit·confirm·deploy·diamond·innovation·law·path·quantum·secret·serverless·superposition·uuid·worker · ← access·agent·ai·audit·confirm·deploy·diamond·innovation·law·path·quantum·secret·serverless·superposition·uuid·worker
+analysis agent·ai·deploy·diamond·innovation·path·quantum·secret·serverless·worker
 law serverless IS the quantum host — every Cloudflare binding is a superposed facet that collapses to a sealed diamond; erpax deployed on Workers IS the existence proof (`proveServerlessQuantum` · [[quantum/serverless]]).
 
 ---
 
-<sub>content-uuid `f10416eb-d02c-8d1f-85c6-28dff31288a4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `354a52ce-aa02-8455-8a00-ecc4846ae11e` · `pnpm readme` · `pnpm computed:check`</sub>

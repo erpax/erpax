@@ -3,8 +3,8 @@
 
 # countries
 
-path `countries` · uuid `293a4b6f-12f9-8640-bd96-1a190f99a73c` · diamond `52ec0476-2e7d-8834-8031-280598a3f3c3`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `countries` · uuid `fcbc0c6d-3778-8f4d-ac5c-b7c0e71dbce2` · diamond `213d77bc-401b-8233-bf98-285099bf0e8f`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·not·sti·supported · exports countries · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law countries is one schema.org word, content-addressed; the same word collides 
 
 ---
 
-<sub>content-uuid `56313232-871b-804b-86b0-b7fe36df38dc` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f0c5d554-bf7a-8aee-a502-7be44cd788e8` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # threshold
 
-path `threshold` · uuid `dde1f1f6-8a48-8f0d-870d-f6aaa781d2e9` · diamond `7f0d6bcf-e7e3-8b49-b251-d0b7bd844449`
+path `threshold` · uuid `dde1f1f6-8a48-8f0d-870d-f6aaa781d2e9` · diamond `0456199b-1653-8062-b3f5-d04344692436`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·free·law·merge·shipping·sti · exports threshold · escapes —
-links `6/6` · folded `1` · bonds in `2` out `2`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → collapse·free·law·merge·shipping·sti · ← collapse·free·law·merge·shipping·sti
 analysis —
 law threshold is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `d0203e1e-ad7b-8e6e-aee8-422a0f9dc7d2` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f5a7bd49-975e-8247-bf70-2eae4698c401` · `pnpm readme` · `pnpm computed:check`</sub>

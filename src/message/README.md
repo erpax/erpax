@@ -25,7 +25,22 @@
 
 - partition `message` · sub-root `ab07d1ae-04f3-8a6c-b3f8-6869450e6194`
 - bond degree `76` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `RFC 9562 §5.8 (the structured uuid carries the message)` · banner
+- `the uuid is self-decoding — every channel is an independent verify level` · banner
+
+## analytics
+
+- bond degree `76` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `2`
 
 ## identity
 
@@ -41,4 +56,4 @@
 
 ---
 
-<sub>content-uuid `d8bf8507-01aa-81cf-96c4-1c873eaaee53` · framed by typography partition `message` bonds `76` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d9d867b4-28a2-8a28-939c-c8ad38120d90` · framed by typography partition `message` bonds `76` · `pnpm readme` · `pnpm readme:check`</sub>

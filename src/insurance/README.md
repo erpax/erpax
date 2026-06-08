@@ -23,7 +23,24 @@
 
 - partition `insurance` · sub-root `7006f364-784b-8b65-bba1-157ce05f46c0`
 - bond degree `27` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `IFRS-13` · catalogue
+- `IFRS-17` · catalogue
+- `ILO-C100` · catalogue
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `27` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `4`
 
 ## identity
 
@@ -39,4 +56,4 @@
 
 ---
 
-<sub>content-uuid `772c05bc-3e3f-8eba-95cc-602c77123ddb` · framed by typography partition `insurance` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ea47384f-e54b-8330-934e-d9bffc995072` · framed by typography partition `insurance` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>

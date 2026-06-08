@@ -25,7 +25,24 @@
 
 - partition `patent` · sub-root `f03318d0-6a0e-8653-9b2d-d9054c8be18f`
 - bond degree `24` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `35 U.S.C. §§101–103; RFC 3161 / eIDAS anchored timestamps (the anteriority proof)` · banner
+- `anteriority is a timestamp comparison over anchor-bound digests; obviousness is a merge identity` · banner
+- `anteriority is a timestamp comparison over anchor-bound digests; obviousness is a merge identity; defensive only` · banner
+- `eIDAS` · catalogue
+
+## analytics
+
+- bond degree `24` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `4`
 
 ## identity
 
@@ -41,4 +58,4 @@
 
 ---
 
-<sub>content-uuid `e9012855-d8b8-8fdf-a0bb-d6b73652e85a` · framed by typography partition `patent` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ff27ad5d-5003-8fef-87f9-c7958b90ae47` · framed by typography partition `patent` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>

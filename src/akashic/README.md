@@ -2,7 +2,7 @@
 
 # akashic
 
-> atom `akashic` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `akashic` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -21,9 +21,9 @@
 
 ## typography graph
 
-- partition `akashic` · sub-root `bde29fb6-9409-8030-8c8f-79db7939ba70`
-- bond degree `286` · analysis neighbors `aura` · `diamond`
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- partition `akashic` · sub-root `682864f4-c8bd-88cc-b91b-93295b282459`
+- bond degree `293` · analysis neighbors `aura` · `diamond`
+- graph root `67d11a43-67e0-8dde-afd8-ecbed950ff42`
 
 ## [[cloudflare]] bindings
 
@@ -33,16 +33,54 @@
 
 —
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·2 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `286` · sealed `1` · horo `7`
+- bond degree `293` · sealed `1` · horo `2`
 - variance `0` · balanced `1` · trinity sum `1`
 - bindings `0` · standards `0`
 
 ## identity
 
-- uuid `bde29fb6-9409-8030-8c8f-79db7939ba70`
-- bonds in `88` · out `84`
+- uuid `682864f4-c8bd-88cc-b91b-93295b282459`
+- bonds in `89` · out `89`
 - trinity form·code·proof `1`·`0`·`0`
 - links `62` / `62`
 - folded `1` · escapes `0`
@@ -53,4 +91,4 @@
 
 ---
 
-<sub>content-uuid `4f17df25-0c28-8590-831e-dfae45979829` · framed by typography partition `akashic` bonds `286` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `83bf8732-dc69-82a2-a3d2-cc0f0fa47e21` · framed by typography partition `akashic` bonds `293` · `pnpm readme` · `pnpm readme:check`</sub>

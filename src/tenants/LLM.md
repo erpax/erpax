@@ -3,15 +3,15 @@
 
 # tenants
 
-path `tenants` · uuid `2ecfb2f2-9f5e-87ac-a223-28ba561e6a16` · diamond `90a3a42a-5c75-8fc4-aa2f-9b920643317d`
+path `tenants` · uuid `2ecfb2f2-9f5e-87ac-a223-28ba561e6a16` · diamond `a0c6a460-786c-81a2-8248-0c6223a66479`
 horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports @/authenticated·@/i18n·@/is/super/admin·@/tenants/access · exports GLOBAL_SPINE·PLUGIN_TENANT_SLUGS·TENANT_GLOBAL·TENANT_PARTY_SCOPED·const·tenantCollectionsConfig·tenantScopedSlugs · escapes —
-links `5/5` · folded `1` · bonds in `9` out `9`
+links `5/5` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·1·0`
-neighbors → arts·cohort·euenergy·gravity·landmarks·memories·motor·percutaneous·stat · ← arts·cohort·euenergy·gravity·landmarks·memories·motor·percutaneous·stat
+neighbors → agent·coordinate·domain·identity·memos·proof·tenant·transactions · ← agent·coordinate·domain·identity·memos·proof·tenant·transactions
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `5f2bae35-09d7-8031-ba8d-1350a6244a54` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c521760f-af6a-819a-bf22-f277ecec4371` · `pnpm readme` · `pnpm computed:check`</sub>

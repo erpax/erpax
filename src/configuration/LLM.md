@@ -3,8 +3,8 @@
 
 # configuration
 
-path `configuration` · uuid `9b3f533c-15e4-87f3-8a82-edf6eba946a1` · diamond `0855e64d-4729-8057-bc03-b14a4120a19d`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `configuration` · uuid `3d039f23-2e1e-8213-90ae-a58aea972d3f` · diamond `7dc0c319-1460-837d-8f4a-d9a1035f2ad5`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·drive·law·merge·sti·value·vehicle·wheel · exports configuration · escapes —
 links `8/8` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law configuration is one schema.org word, content-addressed; the same word colli
 
 ---
 
-<sub>content-uuid `0d913bd5-6a6e-87e8-a445-77d86daaab23` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b9d89910-205e-8439-9bbe-e49be7b3bf92` · `pnpm readme` · `pnpm computed:check`</sub>

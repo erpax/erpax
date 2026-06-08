@@ -3,15 +3,15 @@
 
 # sql
 
-path `sql` · uuid `dd494eb6-de9d-8e45-af4f-e9e222a7737f` · diamond `436f7c14-4f05-866f-9bb0-278f057609ae`
+path `sql` · uuid `dd494eb6-de9d-8e45-af4f-e9e222a7737f` · diamond `3b3936d1-a1a2-8da4-a9a6-09cb87ab6579`
 horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports — · exports const·interface · escapes —
-links `14/14` · folded `1` · bonds in `2` out `2`
-faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+links `14/14` · folded `1` · bonds in `8` out `12`
+faces worker·plugin·pwa `1·0·0`
+neighbors → column·law·law·merge·merge·quantum·quantum·query·sql·table·uuid·uuid · ← column·law·merge·quantum·query·sql·table·uuid
 analysis —
 law a query is pure data — a SELECT AST whose deterministic stringifier normalizes equivalent queries to one identical canonical form, so the [[quantum]] facet hashes them to a single content-[[uuid]] (equal meaning ⇒ equal id ⇒ [[merge]]).
 
 ---
 
-<sub>content-uuid `707a8e20-200e-820d-b16e-8b81c55757d6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ed182370-8180-8ffd-a377-ba0b69d9626f` · `pnpm readme` · `pnpm computed:check`</sub>

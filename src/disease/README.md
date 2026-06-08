@@ -23,7 +23,7 @@
 
 - partition `disease` · sub-root `60ee29ff-60b3-8537-8c39-f8deebe0a766`
 - bond degree `36` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `3c25d3af-de20-8be0-af51-50f4f0a42810` · framed by typography partition `disease` bonds `36` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0ffb07d7-b385-8c52-b70e-d22f30629a03` · framed by typography partition `disease` bonds `36` · `pnpm readme` · `pnpm readme:check`</sub>

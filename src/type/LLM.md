@@ -3,15 +3,15 @@
 
 # type
 
-path `type` · uuid `f61cafea-773d-8f7d-b752-1324e910e591` · diamond `1206dbb3-425b-8b65-829f-36439c2447bd`
+path `type` · uuid `f61cafea-773d-8f7d-b752-1324e910e591` · diamond `3def8797-c3d8-8c62-a12c-a146301f753a`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports fields · exports type · escapes —
-links `1/1` · folded `1` · bonds in `2` out `2`
+links `1/1` · folded `1` · bonds in `95` out `95`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → action·additional·album·alignment·audience·availability·bed·benefits·boarding·book·business·car·category·contact·content·customer·data·de·digital·document·edu·eligible·employment·encoding·entity·enumeration·exercise·expense·fields·format·fuel·fulfillment·game·gender·good·government·incentive·interaction·interactivity·interior·it·item·job·law·learning·list·loan·location·lodging·map·matrix·measurement·medical·merge·music·nl·node·nonprofit·order·permission·player·policy·population·price·procedure·production·program·publication·purchase·qualified·quantity·quantum·question·refund·release·reservation·resource·response·rsvp·sample·schema·seating·selector·service·stat·stupid·tourist·type·uk·unit·us·usage·uuid·vehicle·wearable · ← action·additional·album·alignment·audience·availability·bed·benefits·boarding·book·business·car·category·contact·content·customer·data·de·digital·document·edu·eligible·employment·encoding·entity·enumeration·exercise·expense·fields·format·fuel·fulfillment·game·gender·good·government·incentive·interaction·interactivity·interior·it·item·job·law·learning·list·loan·location·lodging·map·matrix·measurement·medical·merge·music·nl·node·nonprofit·order·permission·player·policy·population·price·procedure·production·program·publication·purchase·qualified·quantity·quantum·question·refund·release·reservation·resource·response·rsvp·sample·schema·seating·selector·service·stat·stupid·tourist·type·uk·unit·us·usage·uuid·vehicle·wearable
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `968052e1-e0ab-87d2-9a3a-183743d417a2` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a0815822-97ce-8f8a-8deb-01731574207a` · `pnpm readme` · `pnpm computed:check`</sub>

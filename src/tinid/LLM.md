@@ -3,15 +3,15 @@
 
 # tinid
 
-path `tinid` · uuid `6522c0b2-e2fb-835f-aa08-167fda5427a7` · diamond `b67b2b81-d605-8ebf-b395-5aa3ed889a92`
+path `tinid` · uuid `6522c0b2-e2fb-835f-aa08-167fda5427a7` · diamond `2ae570b4-4797-8c93-ae9a-410f261bdb38`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports tinid · escapes —
-links `4/4` · folded `1` · bonds in `15` out `15`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → aura·catalogue·dietary·gears·grant·likes·list·maps·marry·memory·quantitative·rank·spreadsheet·trade·wellbeing · ← aura·catalogue·dietary·gears·grant·likes·list·maps·marry·memory·quantitative·rank·spreadsheet·trade·wellbeing
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law tinid is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `fedbae87-8c97-812d-9a24-174dee7e3e56` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5a36776c-7198-8cd2-bc7c-86ca12091393` · `pnpm readme` · `pnpm computed:check`</sub>

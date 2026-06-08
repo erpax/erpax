@@ -2,7 +2,7 @@
 
 # segments
 
-> atom `customer/segments` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
+> atom `customer/segments` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -23,9 +23,9 @@
 
 ## typography graph
 
-- partition `customer` · sub-root `3ee5e60d-4127-84c7-abc4-3dae70dd0302`
+- partition `customer` · sub-root `eb9dc9a4-0b19-85ef-b75a-97df2da910c1`
 - bond degree `30` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -38,15 +38,53 @@
 - `ISO-19011:2018 audit-trail crm-segmentation` · banner
 - `ISO-8601-1:2019 date-time` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·7 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `30` · sealed `1` · horo `1`
+- bond degree `30` · sealed `1` · horo `7`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `4`
 
 ## identity
 
-- uuid `24320dbd-ef69-814d-91fa-d608bf522832`
+- uuid `cff6eb42-bb0c-8b96-a9a2-de833d63521a`
 - bonds in `10` · out `10`
 - trinity form·code·proof `1`·`1`·`1`
 - links `8` / `8`
@@ -58,4 +96,4 @@
 
 ---
 
-<sub>content-uuid `bd681fba-3619-8949-bc61-e520074f07f4` · framed by typography partition `customer` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `8d8af7dc-fb8c-8386-a750-01a575e3046f` · framed by typography partition `customer` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>

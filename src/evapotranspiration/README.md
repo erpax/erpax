@@ -23,7 +23,21 @@
 
 - partition `evapotranspiration` · sub-root `0d1091aa-c52d-82be-90cf-4b52d1f15d8e`
 - bond degree `33` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `33` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `454ca487-ea7f-8af6-9cd5-81208cd57e99` · framed by typography partition `evapotranspiration` bonds `33` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d7abfcfb-b992-8e9a-8e48-698904046960` · framed by typography partition `evapotranspiration` bonds `33` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,8 +3,8 @@
 
 # casino
 
-path `casino` · uuid `6e1f71e3-3b90-8ff6-b21e-8d6c2162b9cf` · diamond `c1e9f4c9-5363-8348-a316-b83f701ee223`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `casino` · uuid `10213814-8718-8420-96c0-5996905fe6be` · diamond `85d9c2a0-cf1a-8ec9-a815-14c7c42e27e1`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports law·place·thing · exports casino · escapes —
 links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law casino is one schema.org word, content-addressed; the same word collides eve
 
 ---
 
-<sub>content-uuid `f24f80d5-a690-8560-ae96-bb662e7ab083` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e9954bac-3d6f-88ca-ac78-0a2290c4b773` · `pnpm readme` · `pnpm computed:check`</sub>

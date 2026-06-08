@@ -3,15 +3,15 @@
 
 # reports
 
-path `legal/entities/consolidations/audit/reports` · uuid `16427f51-fd9f-823f-88d3-5987411e2dc6` · diamond `c6083cd8-b51e-8303-85c5-6e72bcfc0c8a`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+path `legal/entities/consolidations/audit/reports` · uuid `9eb8e064-0a3a-8cd4-bbfc-cbd8cf30a3a0` · diamond `d16ed004-4465-8d09-ba96-5f4d8f9670cc`
+horo `4` `weave` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/validate/audit/compliance/reporting · exports const · escapes —
-links `1/1` · folded `1` · bonds in `11` out `11`
+links `1/1` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·employees·entities·identity·law·projects·proof·reports·reports·standard·transaction · ← accounting·employees·entities·identity·law·projects·proof·reports·reports·standard·transaction
+neighbors → accounting·employees·identity·law·projects·proof·standard·transaction · ← accounting·employees·identity·law·projects·proof·standard·transaction
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `82914e6f-5a61-8403-b14e-36e1c36c625e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1e7eb5ee-ac9a-8d57-b748-855f3a62c945` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,8 +3,8 @@
 
 # dermatologic
 
-path `dermatologic` · uuid `dcb1d452-2a92-89dc-add0-7af73bac9bbb` · diamond `5c4fef42-8c58-89e6-bde7-4ab2ea6f52f1`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `dermatologic` · uuid `ddecd340-1d9a-8dec-8d15-c29c893e1e1b` · diamond `cef6b0eb-13d6-8496-90dd-20621e0a2503`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports dermatologic · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law dermatologic is one schema.org word, content-addressed; the same word collid
 
 ---
 
-<sub>content-uuid `8c9ba049-d649-8240-9045-28f640f0add3` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b23e619d-2b49-81d3-9af7-abf459e5c4be` · `pnpm readme` · `pnpm computed:check`</sub>

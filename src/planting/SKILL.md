@@ -1,8 +1,166 @@
 ---
 name: planting
 description: "Use when output is spread across the season by staggered sequential sowings — succession planting: number of plantings (sowings) and number of harvests (pickings) are the two scheduling levers that replace one glut with a continuous supply. The interval between sowings ≈ one planting's picking window; total seasonal row-length divides evenly across the plantings to size each sowing and its seed order."
+atomPath: planting
+coordinate: planting · 2/share · d69dc6b0
+contentUuid: "44586dd2-383a-5536-b23c-10328ad1d54d"
+diamondUuid: "777b31ec-a41a-859f-a95d-e7d2bc75935f"
+uuid: "d69dc6b0-2a95-8670-a17d-96a53f8e8f6c"
+horo: 2
+bonds:
+  in:
+    - agriculture
+    - breath
+    - crop
+    - cropplan
+    - degreeday
+    - fertility
+    - frost
+    - give
+    - hardiness
+    - harvest
+    - law
+    - market
+    - maturity
+    - pollination
+    - propagation
+    - rotation
+    - schedule
+    - season
+    - seed
+    - sequence
+    - share
+    - spacing
+    - take
+    - tillage
+    - transplant
+    - yield
+  out:
+    - agriculture
+    - breath
+    - crop
+    - cropplan
+    - degreeday
+    - fertility
+    - frost
+    - give
+    - hardiness
+    - harvest
+    - law
+    - market
+    - maturity
+    - pollination
+    - propagation
+    - rotation
+    - schedule
+    - season
+    - seed
+    - sequence
+    - share
+    - spacing
+    - take
+    - tillage
+    - transplant
+    - yield
+typography:
+  partition: planting
+  bondDegree: 87
+  neighbors: []
+standards: []
+bindings: []
+neighbors:
+  wikilink:
+    - agriculture
+    - breath
+    - crop
+    - cropplan
+    - give
+    - harvest
+    - law
+    - market
+    - propagation
+    - rotation
+    - schedule
+    - season
+    - sequence
+    - share
+    - spacing
+    - take
+    - transplant
+    - yield
+  matrix:
+    - agriculture
+    - breath
+    - crop
+    - cropplan
+    - degreeday
+    - fertility
+    - frost
+    - give
+    - hardiness
+    - harvest
+    - law
+    - market
+    - maturity
+    - pollination
+    - propagation
+    - rotation
+    - schedule
+    - season
+    - seed
+    - sequence
+    - share
+    - spacing
+    - take
+    - tillage
+    - transplant
+    - yield
+  backlinks:
+    - agriculture
+    - breath
+    - crop
+    - cropplan
+    - degreeday
+    - fertility
+    - frost
+    - give
+    - hardiness
+    - harvest
+    - law
+    - market
+    - maturity
+    - pollination
+    - propagation
+    - rotation
+    - schedule
+    - season
+    - seed
+    - sequence
+    - share
+    - spacing
+    - take
+    - tillage
+    - transplant
+    - yield
+signatures:
+  computationUuid: "060ce794-6b23-8771-a161-976803379081"
+  stages:
+    - stage: path
+      stageUuid: "b2696ba8-4b60-85e8-b4d9-6731f023b378"
+    - stage: trinity
+      stageUuid: "ff991df2-0b81-839b-8d13-a84638eeeb72"
+    - stage: boundary
+      stageUuid: "7b7a7bd8-3759-8ebb-ae0d-ad0308f2c0ae"
+    - stage: links
+      stageUuid: "268013d5-ddeb-89ab-ad82-a703c4bc6d4b"
+    - stage: horo
+      stageUuid: "0216cfb9-7fef-89b8-99a5-d5505cb2ecfb"
+    - stage: seal
+      stageUuid: "e398420b-1a64-8749-be5e-f14120ff68e8"
+    - stage: uuid
+      stageUuid: "a65f0033-f18d-8d06-a888-9503dbff961d"
+version: 2
 ---
-
 # planting — a sowing instance; successions that spread the harvest
 
 A **planting** is one sowing/transplant instance of a [[crop]]. **Succession planting** — staggered sequential plantings — is the technique that turns a single glut into a **continuous [[harvest]]** across the [[season]]. The two levers, both columns of the planning sheet:

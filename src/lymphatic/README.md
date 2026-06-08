@@ -23,7 +23,21 @@
 
 - partition `lymphatic` · sub-root `b36eed61-4e70-89a6-aff4-9d9991587a8b`
 - bond degree `16` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `16` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `405c8e9c-6d73-8f37-ab57-51bffa4a4cac` · framed by typography partition `lymphatic` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d11384a3-704d-89be-8197-86046455281e` · framed by typography partition `lymphatic` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

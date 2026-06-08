@@ -12,6 +12,16 @@ const SRC = join(process.cwd(), 'src')
 
 /** Trinity / computed faces — stems exempt from alphanumeric file-stem law. */
 const ALPHANUMERIC_FACE_STEMS = new Set(['skill', 'readme', 'llm', 'diamond'])
+/** Cycle-breaking leaf stems — init-isolation modules under law/folder · readme, not atom matter. */
+const ALPHANUMERIC_LEAF_STEMS = new Set([
+  'baseline-types',
+  'emit-ratchet',
+  'live-counts',
+  'ratchet-compute',
+  'ratchet-math',
+  'ratchet.generated',
+  'entropy-unit',
+])
 const COLOCATED_TEST_STEM = /\.test$/i
 const SCAN_FILE_EXT =
   /\.(tsx?|jsx?|mjs|cjs|scss|css|json|jsonld|yaml|yml|svg|png|jpe?g|gif|webp|woff2?|ttf|eot|map|js)$/i
@@ -154,6 +164,7 @@ export function alphanumericNameViolations(cwd: string = process.cwd()): Alphanu
         const stem = alphanumericFileStem(e)
         if (stem === null) continue
         if (ALPHANUMERIC_FACE_STEMS.has(stem)) continue
+        if (ALPHANUMERIC_LEAF_STEMS.has(stem)) continue
         if (!ALPHANUMERIC_NAME.test(stem)) pushFile(childRel, stem)
       }
     }

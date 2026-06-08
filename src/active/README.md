@@ -2,9 +2,11 @@
 
 # active
 
-> atom `active` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
+> atom `active` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
+
+> account code `active` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -19,11 +21,58 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:trinity:[[gap]]/[[trinity]]/code`
+- `gap:trinity:[[gap]]/[[trinity]]/proof`
+
+### collapse
+
+- `balance:conserved`
+- `law:active is the lifecycle toggle (active/inactive) that archives or disables an entity without deletion — the antonym of [[status]] when status carries workflow states.`
+- `seal:sealed`
+- `trigger:Use when an entity can be active or inactive — archived customers, disabled accounts, deactivated users. Boolean or select (active/inactive); toggle switches lifecycle state without deletion. Antonym of status when status carries workflow states.`
+- `trigger:active is the lifecycle toggle (active/inactive) that archives or disables an entity without deletion — the antonym of [[status]] when status carries workflow states.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `1`
+- entry uuids `0067c9dd-1957-825c-8a37-9c42a5c3172c` · `82b8e111-52a7-856f-a9f9-05ecc725f39d` · `d38c4662-d867-873b-9936-073ae4aba3fd`
+- content uuids `52734fda-511e-85e2-8f6f-f61750d93eba` · `703f5de9-0f3f-85da-b421-b875aebf3227` · `ca07ff7c-c5e4-8090-ae3c-b209bf05407f` · `efc3f037-643d-8a3e-930d-30ada88c5166`
+
+## [[entropy]] — gaps · seals
+
+> account code `active` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[trinity]]/code `1.585` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[trinity]]/proof `1.585` eb | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.5` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[diamond]]/sealed `1.585` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `3.17` eb | Σ seal `11.085` eb |
+
+> net residual `-7.915` eb · seal/gap ratio `3.497` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `active` · sub-root `cda13d33-306a-816d-b4b6-533197a713ad`
+- partition `active` · sub-root `ca07ff7c-c5e4-8090-ae3c-b209bf05407f`
 - bond degree `12` · analysis neighbors —
-- graph root `06810c2c-2396-831f-a2b3-a58706a17051`
+- graph root `e9e46cd3-af78-8539-bcbd-58a485afeb8e`
 
 ## [[cloudflare]] bindings
 
@@ -33,15 +82,53 @@
 
 —
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·5 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `12` · sealed `1` · horo `4`
+- bond degree `12` · sealed `1` · horo `5`
 - variance `0` · balanced `1` · trinity sum `1`
 - bindings `0` · standards `0`
 
 ## identity
 
-- uuid `cda13d33-306a-816d-b4b6-533197a713ad`
+- uuid `ca07ff7c-c5e4-8090-ae3c-b209bf05407f`
 - bonds in `4` · out `4`
 - trinity form·code·proof `1`·`0`·`0`
 - links `4` / `4`
@@ -53,4 +140,4 @@
 
 ---
 
-<sub>content-uuid `892b7196-ba72-8946-9608-aef026b3a5e4` · framed by typography partition `active` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f59a6cee-f525-84d0-8fdf-bad774b15318` · framed by typography partition `active` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

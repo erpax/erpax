@@ -2,9 +2,11 @@
 
 # requirements
 
-> atom `compliance/frameworks/compliance/requirements` · horo `7` `descent` · [[balance]] `1` · [[seal]] `0`
+> atom `compliance/frameworks/compliance/requirements` · horo `8` `crest` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `compliance/frameworks/compliance/requirements` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -19,13 +21,57 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
+
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+- `gap:stray:[[gap]]/[[diamond]]/stray/compliance/`
+
+### collapse
+
+- `balance:variance=1`
+- `seal:unsealed`
+- `trigger:Use when defining or querying individual control obligations within a compliance framework — code, title, description, section, severity (critical/high/medium/low) — linked to a ComplianceFramework; super-admin-only writes, tenant-read. The per-requirement obligation register that ComplianceGaps reference.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `0afb1aa7-fce0-8ae2-8da9-ccbae35c3336` · `43e28c05-a529-8aae-bc89-81a6ce454a7c` · `6bfdbdc4-8f7d-8b12-b25e-ca763775a829` · `e8fbca90-7f01-8128-9371-ec0cc4ab171a`
+- content uuids `19b64079-56da-8595-93a6-01affc8cf133` · `9ccc9ea9-d0f1-8053-8226-37b250c10f48` · `a11fd8f6-b8d4-824a-8161-9add1dabd94e` · `e691b449-0175-8f0e-a696-c55f422a8014`
+
+## [[entropy]] — gaps · seals
+
+> account code `compliance/frameworks/compliance/requirements` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[diamond]]/stray/compliance/ `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.8` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+| Σ gap `3` eb | Σ seal `8.8` eb |
+
+> net residual `-5.8` eb · seal/gap ratio `2.933` · [[entropy]] · [[seal]]
 
 ## typography graph
 
-- partition `compliance` · sub-root `9b1931fc-526d-8686-bbd2-928435640965`
-- bond degree `36` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- partition `compliance` · sub-root `7662057a-ec95-88c2-bbf3-3319903f58a7`
+- bond degree `0` · analysis neighbors —
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
 
 ## [[cloudflare]] bindings
 
@@ -38,15 +84,53 @@
 - `SOX §404 control-objective` · banner
 - `US-CTA-2021` · catalogue
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unbalanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| not-held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·8 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `36` · sealed `0` · horo `7`
-- variance `0` · balanced `1` · trinity sum `3`
+- bond degree `0` · sealed `0` · horo `8`
+- variance `1` · balanced `0` · trinity sum `3`
 - bindings `0` · standards `4`
 
 ## identity
 
-- uuid `bdb9d68b-e5d5-8475-8f10-5189d89d018b`
+- uuid `13aaf2c7-0a12-8ee7-bb31-a9acb5aac02a`
 - bonds in `12` · out `12`
 - trinity form·code·proof `1`·`1`·`1`
 - links `1` / `1`
@@ -58,4 +142,4 @@
 
 ---
 
-<sub>content-uuid `dc633c34-6612-8bb9-86f6-fbafe6424e21` · framed by typography partition `compliance` bonds `36` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `88350f40-d24c-84ec-a539-e5858f7df601` · framed by typography partition `compliance` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

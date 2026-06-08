@@ -3,8 +3,8 @@
 
 # design
 
-path `design` · uuid `1d43a866-ede0-878d-9c7f-8794b58a4721` · diamond `dfd86cda-0b61-8dc4-9997-3d95d5b7fc2e`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+path `design` · uuid `20b4b76c-cbfc-85f8-afe7-326ee760b3bd` · diamond `080e74f5-17a5-8b6a-8d3b-22a6c6abbedc`
+horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports @/pixel · exports const·function·interface · escapes —
 links `13/13` · folded `1` · bonds in `18` out `18`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law the design system holds no colour of its own — every token, palette entry 
 
 ---
 
-<sub>content-uuid `cb88036f-d3a3-805c-b88a-31501f4836d5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d1efac87-a983-8ebc-8d87-8e0043946897` · `pnpm readme` · `pnpm computed:check`</sub>

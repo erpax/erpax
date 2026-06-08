@@ -2,7 +2,7 @@
 
 # availability
 
-> atom `availability` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
+> atom `availability` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -21,9 +21,9 @@
 
 ## typography graph
 
-- partition `availability` · sub-root `d00b21f8-1c97-820c-839b-0d68df018c79`
+- partition `availability` · sub-root `1f251db8-fdab-876c-8605-ad30b271df5c`
 - bond degree `26` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- graph root `1cef4f02-a3fa-83a5-8ea0-120b724ef456`
 
 ## [[cloudflare]] bindings
 
@@ -33,15 +33,53 @@
 
 - `schema.org — the type vocabulary, collided to single words` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·1 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `26` · sealed `1` · horo `5`
+- bond degree `26` · sealed `1` · horo `1`
 - variance `0` · balanced `1` · trinity sum `1`
 - bindings `0` · standards `1`
 
 ## identity
 
-- uuid `d00b21f8-1c97-820c-839b-0d68df018c79`
+- uuid `1f251db8-fdab-876c-8605-ad30b271df5c`
 - bonds in `7` · out `7`
 - trinity form·code·proof `1`·`0`·`0`
 - links `7` / `7`
@@ -53,4 +91,4 @@
 
 ---
 
-<sub>content-uuid `2b631b85-5b93-8aea-8556-8e3a27eaac96` · framed by typography partition `availability` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a4f4b3c1-4dc9-8ba3-b6a6-0b6b64125792` · framed by typography partition `availability` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>

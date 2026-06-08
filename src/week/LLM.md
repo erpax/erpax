@@ -3,15 +3,15 @@
 
 # week
 
-path `week` · uuid `8f7200a5-dc4c-855b-bd90-78f3a017caf4` · diamond `a5af7504-bd70-81e4-b17f-8d9b91ac8d77`
+path `week` · uuid `8f7200a5-dc4c-855b-bd90-78f3a017caf4` · diamond `f99984a1-a70e-8ea8-9933-12357dfded0e`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·day·law·merge·month·sti · exports week · escapes —
-links `6/6` · folded `1` · bonds in `5` out `5`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·generically·landmarks·memories·stat · ← cohort·generically·landmarks·memories·stat
+neighbors → collapse·day·law·merge·month·sti · ← collapse·day·law·merge·month·sti
 analysis —
 law week is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `3c74ea57-af1d-87a6-bf5e-ad460faa276a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `91eb6078-9f5d-87fd-b123-41ff4b7635da` · `pnpm readme` · `pnpm computed:check`</sub>

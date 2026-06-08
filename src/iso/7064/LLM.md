@@ -4,7 +4,7 @@
 # 7064
 
 path `iso/7064` · uuid `831a6a5a-9088-82cc-99c8-3e957f166729` · diamond `c80f41a9-e486-888c-8aac-120e040789d8`
-horo `1` `base` · trinity `1·1·1` · sealed `1`
+horo `1` `base` · trinity `1·1·1` · sealed `0`
 imports — · exports decodeBgEgn·isBgEgn·type · escapes —
 links `1/1` · folded `1` · bonds in `1` out `1`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law a check-character system embeds integrity into the identifier itself — the
 
 ---
 
-<sub>content-uuid `12b7a50c-3250-8578-875a-9f39e0489e2b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `cc759b21-d497-82d4-b28b-1cd8cc9c56ca` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `disagree` · sub-root `099e8f5e-01c7-866f-8935-04d0158f001e`
 - bond degree `16` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `6706c443-cdc9-8a20-9474-b365bcb177ac` · framed by typography partition `disagree` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `09bd8d15-3c2e-8a71-a2bb-9c365e8354de` · framed by typography partition `disagree` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,8 +3,8 @@
 
 # twinned
 
-path `convention/twinned` · uuid `cce24eac-2b00-8283-91d3-aadee9b43782` · diamond `1fcb5a8e-4862-8de2-a9fc-32b70e070735`
-horo `4` `weave` · trinity `1·1·1` · sealed `1`
+path `convention/twinned` · uuid `419ddc50-3694-82ee-8841-988712107d67` · diamond `ced7f65b-6518-8546-a734-4f2423750fbf`
+horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports @/aura·@/corpus · exports const·function · escapes —
 links `10/10` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law a SKILL.md's `Matter-twin:` line must point to a real index.ts; the corpus i
 
 ---
 
-<sub>content-uuid `be12942b-a3be-8e09-9bdc-dd9dc97f5690` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7442be7a-0e51-81a7-8f38-80b9ed4afa2d` · `pnpm readme` · `pnpm computed:check`</sub>

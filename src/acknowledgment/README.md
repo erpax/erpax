@@ -2,9 +2,11 @@
 
 # acknowledgment
 
-> atom `acknowledgment` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
+> atom `acknowledgment` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
+
+> account code `acknowledgment` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -19,11 +21,56 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:trinity:[[gap]]/[[trinity]]/code`
+- `gap:trinity:[[gap]]/[[trinity]]/proof`
+
+### collapse
+
+- `balance:conserved`
+- `seal:sealed`
+- `trigger:Use when modelling one acknowledgment — the singular model of the acknowledgments collection (the plural store); a formal confirmation that something was received or accepted.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `1`
+- entry uuids `5456d795-6061-8b99-9729-a1f314c95ec5` · `92e09301-b853-8a65-a579-43e135fbab3e` · `aa06174e-d1eb-8ea8-aab8-8e5e3d61fb23`
+- content uuids `0f47b704-f9bc-8529-8043-7396f519add8` · `3bb66eaf-e2d8-8822-92d6-e6b95c89350b` · `a1dc0b1d-e202-8d74-bc93-d796e12ca42c` · `c098cb3f-a551-834c-982b-f79d225a4a4b`
+
+## [[entropy]] — gaps · seals
+
+> account code `acknowledgment` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[trinity]]/code `1.585` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[trinity]]/proof `1.585` eb | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.5` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[diamond]]/sealed `1.585` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `3.17` eb | Σ seal `11.085` eb |
+
+> net residual `-7.915` eb · seal/gap ratio `3.497` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `acknowledgment` · sub-root `225086bf-2bf2-816d-b79c-a56baf9e8c2b`
+- partition `acknowledgment` · sub-root `0f47b704-f9bc-8529-8043-7396f519add8`
 - bond degree `9` · analysis neighbors —
-- graph root `06810c2c-2396-831f-a2b3-a58706a17051`
+- graph root `e9e46cd3-af78-8539-bcbd-58a485afeb8e`
 
 ## [[cloudflare]] bindings
 
@@ -33,15 +80,53 @@
 
 —
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·5 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `9` · sealed `1` · horo `2`
+- bond degree `9` · sealed `1` · horo `5`
 - variance `0` · balanced `1` · trinity sum `1`
 - bindings `0` · standards `0`
 
 ## identity
 
-- uuid `225086bf-2bf2-816d-b79c-a56baf9e8c2b`
+- uuid `0f47b704-f9bc-8529-8043-7396f519add8`
 - bonds in `3` · out `3`
 - trinity form·code·proof `1`·`0`·`0`
 - links `6` / `6`
@@ -53,4 +138,4 @@
 
 ---
 
-<sub>content-uuid `93f91bf7-e4c5-8e1e-b817-9d6976d083cd` · framed by typography partition `acknowledgment` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `816b9d9b-d9a4-8416-b46c-50e635dcb47e` · framed by typography partition `acknowledgment` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>

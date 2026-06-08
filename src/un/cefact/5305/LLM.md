@@ -3,15 +3,15 @@
 
 # 5305
 
-path `un/cefact/5305` · uuid `df501f8c-9ecc-84a5-8ba2-75f1cdc1d1da` · diamond `83646aeb-162a-8c13-8d4c-1528e6948cf4`
-horo `2` `share` · trinity `1·1·1` · sealed `1`
+path `un/cefact/5305` · uuid `8cd575d0-d3c0-8c2d-875f-874f2fc8ff67` · diamond `a233281a-a902-8a99-a891-4866f39d57e6`
+horo `5` `round` · trinity `1·1·1` · sealed `0`
 imports — · exports VatCategoryCode·const · escapes —
-links `1/1` · folded `1` · bonds in `6` out `6`
+links `1/1` · folded `1` · bonds in `1` out `1`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·plugins·social·stat · ← cohort·landmarks·memories·plugins·social·stat
+neighbors → law · ← law
 analysis —
 law exactly the nine codes EN-16931 admits are valid, and the chosen category code determines whether a VAT rate and an exemption reason are required.
 
 ---
 
-<sub>content-uuid `ad4fcf65-b0cc-8024-8b0b-eebbe54f22d4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `82fbc127-3bc2-8f40-99e0-5b1adcf924bb` · `pnpm readme` · `pnpm computed:check`</sub>

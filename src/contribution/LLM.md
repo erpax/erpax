@@ -3,8 +3,8 @@
 
 # contribution
 
-path `contribution` · uuid `d4998f4f-5d54-8545-ab22-82ad24c46053` · diamond `f79085c1-5097-8026-b4c1-51790b2dee4c`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `contribution` · uuid `3efd58e0-70c7-86c1-9c67-d56fe62197ba` · diamond `3c8d05be-6a99-8633-8f50-07db7d4bd00c`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports akashic·aura·chat·derive·generate·give·history·holographic·identity·integrity·merge·one·proof·refactor·self·society·tamper · exports contribution · escapes —
 links `33/33` · folded `1` · bonds in `24` out `24`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `7a1622ad-7c5e-8ceb-a312-d15938fafd90` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b352d624-5ed5-8063-a365-074efbf4a931` · `pnpm readme` · `pnpm computed:check`</sub>

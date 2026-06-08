@@ -3,15 +3,15 @@
 
 # standard
 
-path `standard` · uuid `fdc09867-104a-8f6a-a56f-be1a97cbafee` · diamond `6dd7f626-7473-8288-91bb-c149348375d9`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
-imports accounting·akashic·aura·compliance·currency·identity·internal·port·profane·proof·sacred·sectors·sequence·standard·standards·supto · exports standard · escapes —
-links `16/16` · folded `1` · bonds in `6` out `6`
+path `standard` · uuid `9a72be84-1f69-8eb2-823b-b222cf71438a` · diamond `f3b959ed-5378-8121-bf18-cecb3310cb67`
+horo `7` `descent` · trinity `1·1·1` · sealed `0`
+imports — · exports const · escapes —
+links `16/16` · folded `1` · bonds in `184` out `184`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·police·stat·usage · ← cohort·landmarks·memories·police·stat·usage
-analysis aura
+neighbors → accessibility·accounting·accounting·accounts·adjustments·agent·akashic·all·allocation·allocations·amendments·anchor·assets·assets·attestations·aura·batches·beyond·bitemporal·breath·calculations·calendars·carbon·carriers·cases·certification·chat·checks·civilization·classifications·clause·codes·collapse·commissions·commitments·competencies·component·components·config·connections·contingencies·corruption·cost·cost·currency·customers·cycles·deduction·defect·defence·definitions·design·disclosure·disclosures·domain·education·emission·emissions·engine·entries·entries·events·events·explainability·failures·faith·federation·files·frameworks·gap·gate·governinglaw·grants·harmony·health·hedge·history·identifier·identity·inspections·integrity·invariant·inventories·items·jurisdiction·justice·law·leads·legislation·lines·localize·mandates·manufacturing·matter·measure·measurements·meets·memories·message·messages·methods·milestones·models·obligations·oid·operations·orders·organic·owners·packages·party·payments·payments·performances·pipelines·plan·plannings·plans·policies·port·position·positions·postings·profane·proof·pwa·quotes·rate·receipts·records·records·reports·requests·requests·requisitions·returns·returns·runs·sacred·sales·schedules·science·scorecards·sectors·seed·segments·sequence·shares·shipments·shred·signatures·snapshots·snapshots·society·spaces·standard·standards·statements·statements·stream·subscriptions·suggestions·supto·sync·taggings·tasks·tax·taxexempt·terminals·token·transactions·transactions·translations·trinity·truth·uses·utilities·uuid·variances·vendors·website·wisdom·workflow·workspace · ← accessibility·accounting·accounting·accounts·adjustments·agent·akashic·all·allocation·allocations·amendments·anchor·assets·assets·attestations·aura·batches·beyond·bitemporal·breath·calculations·calendars·carbon·carriers·cases·certification·chat·checks·civilization·classifications·clause·codes·collapse·commissions·commitments·competencies·component·components·config·connections·contingencies·corruption·cost·cost·currency·customers·cycles·deduction·defect·defence·definitions·design·disclosure·disclosures·domain·education·emission·emissions·engine·entries·entries·events·events·explainability·failures·faith·federation·files·frameworks·gap·gate·governinglaw·grants·harmony·health·hedge·history·identifier·identity·inspections·integrity·invariant·inventories·items·jurisdiction·justice·law·leads·legislation·lines·localize·mandates·manufacturing·matter·measure·measurements·meets·memories·message·messages·methods·milestones·models·obligations·oid·operations·orders·organic·owners·packages·party·payments·payments·performances·pipelines·plan·plannings·plans·policies·port·position·positions·postings·profane·proof·pwa·quotes·rate·receipts·records·records·reports·requests·requests·requisitions·returns·returns·runs·sacred·sales·schedules·science·scorecards·sectors·seed·segments·sequence·shares·shipments·shred·signatures·snapshots·snapshots·society·spaces·standard·standards·statements·statements·stream·subscriptions·suggestions·supto·sync·taggings·tasks·tax·taxexempt·terminals·token·transactions·transactions·translations·trinity·truth·uses·utilities·uuid·variances·vendors·website·wisdom·workflow·workspace
+analysis —
 law —
 
 ---
 
-<sub>content-uuid `bd323200-0133-8eab-a4fe-489558416631` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1267955c-02e8-80d3-9a32-9a42d8e2aa91` · `pnpm readme` · `pnpm computed:check`</sub>

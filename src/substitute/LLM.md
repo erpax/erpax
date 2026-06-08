@@ -8,10 +8,10 @@ horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports substitute · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law substitute is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `fdcb6f54-77de-898e-9c9d-ce620b0647b9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ea09aa93-e751-8f17-a2e5-74ed56420be8` · `pnpm readme` · `pnpm computed:check`</sub>

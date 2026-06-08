@@ -3,8 +3,8 @@
 
 # candidate
 
-path `candidate` · uuid `2a161a7c-c20c-87ec-8052-59643770ffea` · diamond `830bf009-e62c-8955-a8a0-a7f3b0e605fa`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `candidate` · uuid `326d42c1-95aa-8479-8d81-72b9b2804f92` · diamond `b68b15bc-fafb-8d83-aa34-883afe7968de`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports candidate · escapes —
 links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law a candidate is a proposed subject of an action, not the chosen one; the cand
 
 ---
 
-<sub>content-uuid `bb2af6a3-00de-854f-b0ce-576ef7f3d854` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8a2e405d-41b9-803f-b0ca-071273276f30` · `pnpm readme` · `pnpm computed:check`</sub>

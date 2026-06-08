@@ -1,8 +1,109 @@
 ---
 name: baseline
-description: "Use for the empirical reference distribution a calibration is computed FROM — the measured input (median / p50 / p99 / attractor of a real metric) a model is fitted to, NOT the fitted constants themselves. Swap the baseline (another tenant, another period) and every derived calibration recomputes. The agnostic home of values once hardcoded against a named source — the values stay, the source name dissolves into [[source]] / [[akashic]]."
+description: "Use when reasoning about baseline — A **baseline** is the real-data INPUT a model fits to — for example an efficiency distribution measured across observed shifts. It is the **data, not the calibration**: the calibra"
+atomPath: baseline
+coordinate: baseline · 8/crest · 156cb177
+contentUuid: "23bf7416-536a-51a1-b575-f1eed7833876"
+diamondUuid: "9d765c83-ab5d-81d6-93b8-674c46fa128f"
+uuid: "156cb177-8811-8ac3-88ed-214ff5fb0b38"
+horo: 8
+bonds:
+  in:
+    - akashic
+    - allocation
+    - calculate
+    - decompression
+    - derive
+    - empirical
+    - horo
+    - lineage
+    - manufacturing
+    - measure
+    - rodin
+    - sampling
+    - source
+  out:
+    - akashic
+    - allocation
+    - calculate
+    - decompression
+    - derive
+    - empirical
+    - horo
+    - lineage
+    - manufacturing
+    - measure
+    - rodin
+    - sampling
+    - source
+typography:
+  partition: baseline
+  bondDegree: 40
+  neighbors: []
+standards: []
+bindings: []
+neighbors:
+  wikilink:
+    - akashic
+    - allocation
+    - calculate
+    - decompression
+    - derive
+    - empirical
+    - horo
+    - lineage
+    - manufacturing
+    - measure
+    - rodin
+    - sampling
+    - source
+  matrix:
+    - akashic
+    - allocation
+    - calculate
+    - decompression
+    - derive
+    - empirical
+    - horo
+    - lineage
+    - manufacturing
+    - measure
+    - rodin
+    - sampling
+    - source
+  backlinks:
+    - akashic
+    - allocation
+    - calculate
+    - decompression
+    - derive
+    - empirical
+    - horo
+    - lineage
+    - manufacturing
+    - measure
+    - rodin
+    - sampling
+    - source
+signatures:
+  computationUuid: "c6642f3f-61d0-8cc2-8308-8fd0e9f4a1e3"
+  stages:
+    - stage: path
+      stageUuid: "e91d0ccc-bcb4-82cd-92a1-91579a4c5808"
+    - stage: trinity
+      stageUuid: "3f438d6e-766f-83c3-87f4-278bb8a893a0"
+    - stage: boundary
+      stageUuid: "b2d82659-0b2f-80d3-8097-f516bece40e7"
+    - stage: links
+      stageUuid: "d91ca300-536b-8cef-964d-a6407f3ff441"
+    - stage: horo
+      stageUuid: "794d4b62-fb7b-8f81-ab09-f87378b4966d"
+    - stage: seal
+      stageUuid: "61c44c64-4c7b-86bd-a492-067119cf6b57"
+    - stage: uuid
+      stageUuid: "daf99409-e978-8f6f-b7f6-f03494ac2239"
+version: 2
 ---
-
 # baseline — the measured reference a calibration is computed from
 
 A **baseline** is the real-data INPUT a model fits to — for example an efficiency distribution `{ median 75, p99 167, standard 100 }` measured across observed shifts. It is the **data, not the calibration**: the calibration is [[derive]]d from the baseline, never hardcoded.

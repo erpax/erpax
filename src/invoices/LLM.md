@@ -4,7 +4,7 @@
 # invoices
 
 path `invoices` · uuid `012efb77-8b29-8824-b4b4-55d46c24594b` · diamond `c7f1a08a-0069-8891-a329-4578ff21e4fa`
-horo `1` `base` · trinity `1·1·1` · sealed `1`
+horo `1` `base` · trinity `1·1·1` · sealed `0`
 imports @/audit/trail/after/change·@/auth·@/authenticated·@/auto/populate/tenant·@/fields·@/invoices/hooks·@/iso/4217·@/un/cefact/5305·@/utility · exports const · escapes —
 links `8/8` · folded `1` · bonds in `17` out `17`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law an EN-16931 invoice header posts its totals as a GL double-entry behind a pe
 
 ---
 
-<sub>content-uuid `cc25c698-3529-8136-85b6-87ccc8f0e246` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2e7f91ae-c387-880e-b63f-56b8ea7ca004` · `pnpm readme` · `pnpm computed:check`</sub>

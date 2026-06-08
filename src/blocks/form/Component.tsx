@@ -5,9 +5,9 @@ import { PayloadSDKError } from '@payloadcms/sdk'
 import { useRouter } from 'next/navigation'
 import { useTranslations } from 'next-intl'
 import React, { useCallback, useState } from 'react'
-import { useForm, FormProvider } from 'react-hook-form'
+import { useForm } from 'react-hook-form'
 import RichText from '@/rich/text'
-import { Button } from '@/ui'
+import { Alert, AlertDescription, Button, Form } from '@/ui'
 import type { DefaultTypedEditorState } from '@payloadcms/richtext-lexical'
 
 import { getPayloadSdk } from '@/payload/sdk'
@@ -133,17 +133,19 @@ export const FormBlock: React.FC<
         <RichText className="mb-8 lg:mb-12" data={introContent} enableGutter={false} />
       )}
       <div className="p-4 lg:p-6 border border-border rounded-[0.8rem]">
-        <FormProvider {...formMethods}>
+        <Form {...formMethods}>
           {!isLoading && hasSubmitted && confirmationType === 'message' && (
             <RichText data={confirmationMessage} />
           )}
           {isLoading && !hasSubmitted && <p>{t('loading')}</p>}
-          {error && (
-            <div className="text-red-600 text-sm mb-4" role="alert">
-              {error.status ? `${error.status}: ` : ''}
-              {error.message}
-            </div>
-          )}
+          {error ? (
+            <Alert variant="destructive" className="mb-4">
+              <AlertDescription>
+                {error.status ? `${error.status}: ` : ''}
+                {error.message}
+              </AlertDescription>
+            </Alert>
+          ) : null}
           {!hasSubmitted && (
             <form id={formElementID} onSubmit={handleSubmit(onSubmit)}>
               <div className="mb-4 last:mb-0">
@@ -178,7 +180,7 @@ export const FormBlock: React.FC<
               </Button>
             </form>
           )}
-        </FormProvider>
+        </Form>
       </div>
     </div>
   )

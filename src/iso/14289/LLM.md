@@ -4,7 +4,7 @@
 # 14289
 
 path `iso/14289` · uuid `7ace7031-a723-851f-aa22-f3e117d42487` · diamond `1091441c-3944-8e9c-b6c8-de0c74556137`
-horo `2` `share` · trinity `1·1·1` · sealed `1`
+horo `2` `share` · trinity `1·1·1` · sealed `0`
 imports — · exports PDF_UA_DEFAULT·pdfUaProfileToXmp·type · escapes —
 links `0/0` · folded `1` · bonds in `0` out `0`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `29a2ad4f-29a2-86ab-8035-99b658406b3f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6492f370-7cdb-8988-a736-d58128634c46` · `pnpm readme` · `pnpm computed:check`</sub>

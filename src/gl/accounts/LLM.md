@@ -4,7 +4,7 @@
 # accounts
 
 path `gl/accounts` · uuid `afb97329-3149-81a6-a9b4-65c605b99d4c` · diamond `e8705875-4fec-875f-8989-4e79a755af8c`
-horo `1` `base` · trinity `1·1·1` · sealed `1`
+horo `1` `base` · trinity `1·1·1` · sealed `0`
 imports @/audit/trail/after/change·@/auth·@/auto/populate/tenant·@/fields · exports default · escapes —
 links `8/8` · folded `1` · bonds in `19` out `22`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law the Chart of Accounts is the typed spine every [[transaction]] posts against
 
 ---
 
-<sub>content-uuid `005c5737-8857-8bb5-9133-b0f1875240f0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ae9c57d7-c870-8321-b630-203a5b5be63c` · `pnpm readme` · `pnpm computed:check`</sub>

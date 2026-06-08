@@ -3,8 +3,8 @@
 
 # cardiovascular
 
-path `cardiovascular` · uuid `62ed5c29-ccaf-85a0-b601-4b8f8462d0c8` · diamond `341784e6-1ca6-8f60-97ff-97ba9307e8c3`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `cardiovascular` · uuid `69ffbe5e-e8a1-8fb3-bccc-4c0470982a80` · diamond `78fc145b-993e-843f-a1f2-534a748d5233`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports cardiovascular · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law cardiovascular is one schema.org word, content-addressed; the same word coll
 
 ---
 
-<sub>content-uuid `b3a0d5a3-45ef-8dd3-a171-01ab9c56d70f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e17c87e1-60b6-8b52-b57a-69dc2e160bb0` · `pnpm readme` · `pnpm computed:check`</sub>

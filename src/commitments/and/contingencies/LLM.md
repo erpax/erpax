@@ -3,7 +3,7 @@
 
 # contingencies
 
-path `commitments/and/contingencies` · uuid `05fb6530-62f2-8853-b471-1b0388782190` · diamond `24aa770d-b280-8856-a6d0-01d27165a69a`
+path `commitments/and/contingencies` · uuid `a0765a06-cfcc-8e03-9a22-cf685f918079` · diamond `05cc0740-23f7-834c-915c-44db0349792d`
 horo `7` `descent` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
 links `7/7` · folded `1` · bonds in `10` out `10`
@@ -14,4 +14,4 @@ law an off-balance-sheet obligation is disclosed in the notes under the IAS-37 l
 
 ---
 
-<sub>content-uuid `aa0c3523-a475-8168-996f-ba2f84053629` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8871ec08-f4ce-85f8-b5a1-a5dac41ac85c` · `pnpm readme` · `pnpm computed:check`</sub>

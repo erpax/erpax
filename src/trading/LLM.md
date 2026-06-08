@@ -3,15 +3,15 @@
 
 # trading
 
-path `trading` · uuid `b0d00b62-7748-8923-8fcf-be00c361b1db` · diamond `dd3f0b74-0edf-848e-97b4-6106bfa2f5c0`
-horo `4` `weave` · trinity `1·1·1` · sealed `1`
-imports — · exports *:./api/client · escapes —
-links `35/35` · folded `1` · bonds in `13` out `13`
+path `trading` · uuid `a7c6c97a-3ab2-83a1-a206-7feb697347fc` · diamond `ab935a27-7ae7-8d2c-8091-040edf22f9a6`
+horo `8` `crest` · trinity `1·1·1` · sealed `1`
+imports — · exports *:./api/client·*:./quantum · escapes —
+links `40/40` · folded `1` · bonds in `19` out `19`
 faces worker·plugin·pwa `0·0·0`
-neighbors → balance·fertility·id·landmarks·llm·method·progression·request·spouse·tracks·trade·traditional·trailer · ← balance·fertility·id·landmarks·llm·method·progression·request·spouse·tracks·trade·traditional·trailer
-analysis diamond·hallucination·purity
+neighbors → access·anchor·api·api·carriers·commerce·connections·cost·country·law·merge·payment·proof·quantum·quantum·realtime·receipt·sandbox·tamper · ← access·anchor·api·api·carriers·commerce·connections·cost·country·law·merge·payment·proof·quantum·quantum·realtime·receipt·sandbox·tamper
+analysis —
 law every trading call is gated by the [[sandbox]] AND [[receipt]]ed in one chain — permitted against a content-addressed grant, secret brokered by handle at the host boundary, audit emitted as uuid-chained leaves — so the outbound surface is zero-entropy and forging it costs beyond the universe ([[cost]] · [[proof]]); the registry holds public metadata, never credentials.
 
 ---
 
-<sub>content-uuid `16bc35cc-ae95-8f72-adbd-ac348c105618` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `785ec902-04e5-834f-ad92-f33bd7d6dddb` · `pnpm readme` · `pnpm computed:check`</sub>

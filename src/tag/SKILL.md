@@ -1,10 +1,119 @@
 ---
 name: tag
-description: Use when modelling variation, categorization, or cross-domain links in erpax WITHOUT new collections or deep nesting — the polymorphic multi-context tag system (acts_as_taggable_on port). One collection presented infinitely by filtering (context, tag); tag/tagging collections, the taggable plugin, tagged_with→where mapping, tag clouds, ownership, relatedness, and tag-lists that link multiverses. "Anything is taggable."
-sessions:
-  - 776a49cb-8dfb-45ab-88ff-956e3b613adf
+description: "Use when modelling variation, categorization, or cross-domain links in erpax WITHOUT new collections or deep nesting — the polymorphic multi-context tag system (acts_as_taggable_on port). One collection presented infinitely by filtering (context, tag); tag/tagging collections, the taggable plugin, tagged_with→where mapping, tag clouds, ownership, relatedness, and tag-lists that link multiverses. \\\"Anything is taggable.\\\""
+atomPath: tag
+coordinate: tag · 8/crest · 1b566ff6
+contentUuid: "7b4dec37-c620-58f1-83b5-a06c038b2f57"
+diamondUuid: "009f2b89-1ed0-8811-b7d2-e4a9e24bc4f9"
+uuid: "1b566ff6-52bb-83f6-a40a-1e63f4055ed7"
+horo: 8
+bonds:
+  in:
+    - accounting
+    - admin
+    - commerce
+    - database
+    - dna
+    - hooks
+    - identity
+    - karma
+    - manufacturing
+    - merge
+    - plugins
+    - queries
+    - sequence
+    - tagging
+    - taggings
+  out:
+    - accounting
+    - admin
+    - commerce
+    - database
+    - dna
+    - hooks
+    - identity
+    - karma
+    - manufacturing
+    - merge
+    - plugins
+    - queries
+    - sequence
+    - tagging
+    - taggings
+typography:
+  partition: tag
+  bondDegree: 0
+  neighbors: []
+standards:
+  - "EU-2011/83"
+  - "EU-VAT-Implementing-Reg-282/2011"
+  - "RFC-4122"
+bindings: []
+neighbors:
+  wikilink:
+    - accounting
+    - admin
+    - commerce
+    - database
+    - hooks
+    - identity
+    - manufacturing
+    - merge
+    - plugins
+    - queries
+    - sequence
+    - taggings
+  matrix:
+    - accounting
+    - admin
+    - commerce
+    - database
+    - dna
+    - hooks
+    - identity
+    - karma
+    - manufacturing
+    - merge
+    - plugins
+    - queries
+    - sequence
+    - tagging
+    - taggings
+  backlinks:
+    - accounting
+    - admin
+    - commerce
+    - database
+    - dna
+    - hooks
+    - identity
+    - karma
+    - manufacturing
+    - merge
+    - plugins
+    - queries
+    - sequence
+    - tagging
+    - taggings
+signatures:
+  computationUuid: "f1a9084b-1c3e-876d-ab6c-dc991541c6ce"
+  stages:
+    - stage: path
+      stageUuid: "ba97207b-9567-8fdb-abd6-6b2a7816103c"
+    - stage: trinity
+      stageUuid: "1216f550-4ee9-8efc-9aed-f333f41400c5"
+    - stage: boundary
+      stageUuid: "9fdc03aa-5049-89ee-afca-a93dc31a0c58"
+    - stage: links
+      stageUuid: "6ebb09fc-cbcd-87b2-baeb-78ade91cc19f"
+    - stage: horo
+      stageUuid: "f9660d07-720f-8225-9432-9c4e938f5e49"
+    - stage: seal
+      stageUuid: "3e4a5bb6-7748-8c24-bbb8-09a74650d7d3"
+    - stage: uuid
+      stageUuid: "f5f204a0-3dda-8cd4-9c41-e6aaa55b2cd4"
+version: 2
 ---
-
 # tags — anything is taggable (less collections, more features)
 
 Port of Rails `acts_as_taggable_on`: variation lives in **tags + contexts**, not in new collections or nested field-groups. One collection is presented in infinite ways by filtering `(context, tag)` combinations — and shared tags **link** records across multiverses. Sibling of [[accounting]] "anything is accountable" — same polymorphic, uuid-driven shape. Ordered by the [[sequence]].

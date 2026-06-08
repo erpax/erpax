@@ -8,10 +8,10 @@ horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports sunday · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law sunday is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `c401bbb7-7367-8c29-bf6f-6cd0d91fdf33` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f6e5f686-5b65-80d9-977b-d26271d6f473` · `pnpm readme` · `pnpm computed:check`</sub>

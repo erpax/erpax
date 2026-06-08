@@ -3,7 +3,7 @@
 
 # validation
 
-path `address/validation` · uuid `82e7f69d-08e5-8876-b507-de0d10f49eef` · diamond `f7053641-f247-8a10-b091-2c8d5e80fc15`
+path `address/validation` · uuid `7c60afaf-fecb-863c-9e26-b2860dda0ced` · diamond `2241bcaa-0e9d-8b47-b3ce-c753f4fa6a54`
 horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports @/config/address-formats · exports function·interface · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
@@ -14,4 +14,4 @@ law an address is valid only against its declared country's format — required 
 
 ---
 
-<sub>content-uuid `dde2b088-9689-817a-928d-ee5a4e5d7257` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `46e0b7bf-8e22-8f4c-9f2b-084e07467461` · `pnpm readme` · `pnpm computed:check`</sub>

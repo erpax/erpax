@@ -2,7 +2,7 @@
 
 # journal
 
-> atom `journal` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `journal` · horo `7` `descent` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -17,13 +17,33 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `7` | Σ `7` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `journal` · sub-root `506cac7d-63cb-899f-9ec1-26c882cc61b3`
-- bond degree `12` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- bond degree `0` · analysis neighbors —
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ECMA-262` · catalogue
+- `EU-2024/1183` · catalogue
+- `EU-2024/1620` · catalogue
+- `EU-2024/1624` · catalogue
+- `EU-CSDDD-2024/1760` · catalogue
+- `IEEE-754` · catalogue
+- `W3C-PROV-O` · catalogue
+
+## analytics
+
+- bond degree `0` · sealed `0` · horo `7`
+- variance `1` · balanced `0` · trinity sum `1`
+- bindings `0` · standards `7`
 
 ## identity
 
@@ -35,8 +55,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `1329b0c0-d334-8896-bd44-93a51251dea3` · framed by typography partition `journal` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `361377d1-30d7-8ed5-85c7-0cc9e7d7c8cf` · framed by typography partition `journal` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

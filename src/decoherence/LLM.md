@@ -3,7 +3,7 @@
 
 # decoherence
 
-path `decoherence` · uuid `b0d8ef07-c620-898f-bfad-814e14c164fa` · diamond `960a9b1b-f528-80ce-a789-d3d8b2663213`
+path `decoherence` · uuid `27117b2e-0e29-89ff-a405-e7b13babd5aa` · diamond `e29ada88-abf5-8970-93f0-54ca6a0b4ed1`
 horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports — · exports const·function · escapes —
 links `14/14` · folded `1` · bonds in `8` out `8`
@@ -14,4 +14,4 @@ law decoherence turns a superposition classical irreversibly — coherence decay
 
 ---
 
-<sub>content-uuid `2ed933dd-0fd2-8fda-904c-49861237ffc7` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3030195e-1890-8f4f-815d-18c4b2a8b140` · `pnpm readme` · `pnpm computed:check`</sub>

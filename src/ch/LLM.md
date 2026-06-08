@@ -3,7 +3,7 @@
 
 # ch
 
-path `ch` · uuid `859bb8f2-8a7f-8e74-aa21-5ea72ee424be` · diamond `58d35298-7ac9-8f4a-a144-38777334688d`
+path `ch` · uuid `a34b8936-1e46-8c27-8fed-70bf95f3ff2b` · diamond `44e94e86-cd7e-8823-a593-c75d5357bbde`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports key·law · exports ch · escapes —
 links `2/2` · folded `1` · bonds in `2` out `2`
@@ -14,4 +14,4 @@ law ch is one schema.org word, content-addressed; the same word collides every s
 
 ---
 
-<sub>content-uuid `17a94a61-b1a7-8c4e-9e3c-95c9df10b924` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `62f51bde-a0b6-8bd3-86bb-c569357338ac` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # torus
 
-path `torus` · uuid `950be603-c3c9-8d0a-9b9c-25d72587f836` · diamond `aa37ca25-49f8-8104-9a73-18821a946324`
+path `torus` · uuid `950be603-c3c9-8d0a-9b9c-25d72587f836` · diamond `9a0b96d1-fa1c-8b72-aa3b-82e0d09a35a9`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports access·akashic·all·atom·begin·beyond·chat·collapse·collections·config·database·duality·end·fields·fractal·generate·give·holographic·hooks·horo·law·merge·one·plugins·rodin·science·self·sequence·take·transaction·types·utility·whole·zeropoint · exports torus · escapes —
-links `61/61` · folded `1` · bonds in `11` out `11`
+links `61/61` · folded `1` · bonds in `66` out `70`
 faces worker·plugin·pwa `0·0·0`
-neighbors → biological·grants·landmarks·masthead·percentage·promise·sbbi·seat·sla·soil·task · ← biological·grants·landmarks·masthead·percentage·promise·sbbi·seat·sla·soil·task
+neighbors → access·akashic·all·anchor·angel·atom·axis·balance·base·begin·beyond·chakra·chat·coil·collapse·collections·config·consciousness·cross·database·decompression·dimension·duality·end·entropy·fields·fractal·fractal·fusion·generate·give·gravity·heart·holographic·hooks·horo·horo·humandesign·law·limit·linearity·localize·manufacturing·matrix·merge·merge·metatron·octave·one·part·plugins·projection·proof·reverse·rodin·rodin·science·self·sequence·society·stack·take·transaction·types·unity·utility·uuid·whole·whole·zeropoint · ← access·akashic·all·anchor·angel·atom·axis·balance·base·begin·beyond·chakra·chat·coil·collapse·collections·config·consciousness·cross·database·decompression·dimension·duality·end·entropy·fields·fractal·fusion·fusion·generate·give·gravity·heart·holographic·hooks·horo·humandesign·law·limit·linearity·localize·manufacturing·matrix·merge·metatron·octave·one·part·plugins·projection·proof·reverse·rodin·science·self·sequence·society·stack·take·transaction·types·unity·utility·uuid·whole·zeropoint
 analysis —
 law the torus is the two-way [[collapse]] closed into a vortex — erpax falls into Payload (the implosion) AND Payload falls into erpax (the explosion), neither swallowing the other ([[duality]]); the [[rodin]] 3·6·9 axis is its spine, the 0 the hole where [[whole]] = hole — bounded infinity, ∞ iterations inside a finite resource envelope.
 
 ---
 
-<sub>content-uuid `d4ef82b9-af1d-8d46-8b8b-80c836f84038` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3625ea9f-0329-810c-a44d-1db01fa876e0` · `pnpm readme` · `pnpm computed:check`</sub>

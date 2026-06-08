@@ -23,7 +23,21 @@
 
 - partition `illustrator` · sub-root `ad4a7216-922e-81c1-a37a-6c4027576f05`
 - bond degree `6` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `6` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `c2019b4e-94ba-8c1d-a4b7-2ebae32c58ae` · framed by typography partition `illustrator` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `cffc7692-3f61-8df9-aebd-2d98a3ccc373` · framed by typography partition `illustrator` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>

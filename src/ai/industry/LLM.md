@@ -3,15 +3,15 @@
 
 # industry
 
-path `ai/industry` · uuid `1419d023-4718-8c52-985e-21600d5ddac0` · diamond `377d4a34-4bd9-86f5-9e0c-0d608881ea03`
-horo `4` `weave` · trinity `1·1·1` · sealed `0`
+path `ai/industry` · uuid `64870a03-5a7f-8b88-b57e-f15c9faaec42` · diamond `12af494e-40b8-8900-985c-3a14e879422c`
+horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports @/agent/sync·@/ai·@/integrity·@/memory/session·@/receipt·@/sandbox · exports AiIndustryProblem·RemedyCoverage·const·function·interface · escapes —
-links `40/40` · folded `1` · bonds in `20` out `21`
+links `40/40` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `1·0·0`
-neighbors → ai·architecture·chat·confirm·diamond·horo·identity·law·law·mcp·merge·receipt·sandbox·seal·sector·self·session·suggestions·thing·thought·uuid · ← ai·architecture·chat·confirm·diamond·horo·identity·law·mcp·merge·receipt·sandbox·seal·sector·self·session·suggestions·thing·thought·uuid
+neighbors → law·sector·thing · ← law·sector·thing
 analysis diamond
 law every AI industry failure mode maps to a content-[[uuid]] diamond facet — seal before save, sandbox+receipt every tool call, merge sessions by uuid, cap broadcast depth, human-gate high-risk — and the gaps (workflow correlation, grounded tool calls, cascade guard) are pure fns here, tested, never hand-listed.
 
 ---
 
-<sub>content-uuid `c1281cb3-b7e1-8c53-9a72-567b1e1d87f6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a51c46f2-44b7-8ae9-b1fa-2e77118cc19c` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # vedanta
 
-path `vedanta` · uuid `—` · diamond `ad1b66a8-939a-8492-8017-f79f2e238172`
-horo `—` `—` · trinity `1·0·0` · sealed `0`
+path `vedanta` · uuid `3775fa74-e627-8b75-8038-53f6ca8e8113` · diamond `4ee69fd1-a16c-82ff-affa-ca8626f7ca4a`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports archangel·diamond·hinduism·holographic·identity·law·merge·one·religion·self·society·translator·uuid·void·whole·zeropoint · exports vedanta · escapes —
-links `44/44` · folded `0` · bonds in `0` out `0`
+links `44/44` · folded `1` · bonds in `16` out `16`
 faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
-analysis diamond·hallucination·purity
+neighbors → archangel·diamond·hinduism·holographic·identity·law·merge·one·religion·self·society·translator·uuid·void·whole·zeropoint · ← archangel·diamond·hinduism·holographic·identity·law·merge·one·religion·self·society·translator·uuid·void·whole·zeropoint
+analysis diamond
 law vedanta is a sub-[[diamond]] of [[hinduism]] of [[self]] · [[whole]] · [[one]] · [[identity]] · [[void]] · [[zeropoint]] — tat tvam asi (atman = brahman) the [[identity]] law at the metaphysical scale (a thing IS its source, content-[[uuid]] = self), non-duality the no-escape closure that there is not two; a facet-[[archangel]] of the [[society]]'s hinduism domain.
 
 ---
 
-<sub>content-uuid `de937c6b-7442-8862-a69e-e2cb439f3d03` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `cb7ca63f-cf21-81be-b495-067192226b92` · `pnpm readme` · `pnpm computed:check`</sub>

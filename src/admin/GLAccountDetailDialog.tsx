@@ -3,17 +3,38 @@
  * Read-only view of full account details
  */
 
-'use client';
+'use client'
 
-import React from 'react';
-import { GLAccount } from '@/types/gl-account';
-import { Edit2 } from 'lucide-react';
+import React from 'react'
+import { GLAccount } from '@/types/gl-account'
+import { Edit2 } from 'lucide-react'
+import {
+  Badge,
+  Button,
+  Dialog,
+  DialogContent,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  Separator,
+} from '@/ui'
 
 interface GLAccountDetailDialogProps {
-  open: boolean;
-  account: GLAccount;
-  onClose: () => void;
-  onEdit: () => void;
+  open: boolean
+  account: GLAccount
+  onClose: () => void
+  onEdit: () => void
+}
+
+const statusVariant = (status: GLAccount['status']) => {
+  switch (status) {
+    case 'active':
+      return 'secondary' as const
+    case 'locked':
+      return 'destructive' as const
+    default:
+      return 'outline' as const
+  }
 }
 
 export default function GLAccountDetailDialog({
@@ -22,194 +43,139 @@ export default function GLAccountDetailDialog({
   onClose,
   onEdit,
 }: GLAccountDetailDialogProps) {
-  if (!open) return null;
-
-  const statusColors = {
-    active: 'bg-green-100 text-green-800',
-    inactive: 'bg-gray-100 text-gray-800',
-    locked: 'bg-red-100 text-red-800',
-  };
-
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-      <div className="bg-white rounded-lg shadow-xl max-w-2xl w-full mx-4 max-h-[90vh] overflow-y-auto">
-        {/* Header */}
-        <div className="flex items-center justify-between p-6 border-b">
-          <div className="flex items-center gap-4">
-            <div>
-              <h2 className="text-2xl font-bold text-gray-900">{account.code}</h2>
-              <p className="text-gray-600">{account.name}</p>
-            </div>
-          </div>
-          <button
-            onClick={onClose}
-            className="text-gray-400 hover:text-gray-600 text-2xl"
-          >
-            ×
-          </button>
-        </div>
+    <Dialog open={open} onOpenChange={(next) => !next && onClose()}>
+      <DialogContent className="max-h-[90vh] overflow-y-auto sm:max-w-2xl">
+        <DialogHeader>
+          <DialogTitle className="font-mono">{account.code}</DialogTitle>
+          <p className="text-muted-foreground text-sm">{account.name}</p>
+        </DialogHeader>
 
-        {/* Content */}
-        <div className="p-6 space-y-6">
-          {/* Status & Type */}
+        <div className="space-y-6">
           <div className="grid grid-cols-3 gap-4">
             <div>
-              <p className="text-sm font-medium text-gray-600">Status</p>
-              <span className={`inline-flex items-center px-3 py-1 rounded-full text-sm font-medium ${statusColors[account.status]} mt-2`}>
+              <p className="text-sm font-medium text-muted-foreground">Status</p>
+              <Badge variant={statusVariant(account.status)} className="mt-2 capitalize">
                 {account.status}
-              </span>
+              </Badge>
             </div>
             <div>
-              <p className="text-sm font-medium text-gray-600">Type</p>
-              <p className="text-lg font-semibold text-gray-900 mt-2 capitalize">
-                {account.type.replace(/_/g, ' ')}
-              </p>
+              <p className="text-sm font-medium text-muted-foreground">Type</p>
+              <p className="mt-2 font-semibold capitalize">{account.type.replace(/_/g, ' ')}</p>
             </div>
             <div>
-              <p className="text-sm font-medium text-gray-600">Normal Balance</p>
-              <p className="text-lg font-semibold text-gray-900 mt-2 capitalize">
-                {account.normalBalance}
-              </p>
+              <p className="text-sm font-medium text-muted-foreground">Normal Balance</p>
+              <p className="mt-2 font-semibold capitalize">{account.normalBalance}</p>
             </div>
           </div>
 
-          {/* Description */}
-          {account.description && (
+          {account.description ? (
             <div>
-              <p className="text-sm font-medium text-gray-600">Description</p>
-              <p className="text-gray-900 mt-2">{account.description}</p>
+              <p className="text-sm font-medium text-muted-foreground">Description</p>
+              <p className="mt-2">{account.description}</p>
             </div>
-          )}
+          ) : null}
 
-          {/* Hierarchy Information */}
+          <Separator />
+
           <div>
-            <h3 className="font-semibold text-gray-900 mb-3">Hierarchy</h3>
-            <div className="grid grid-cols-2 gap-4">
-              <div>
-                <p className="text-sm font-medium text-gray-600">Level</p>
-                <p className="text-gray-900 mt-1">{account.level}</p>
-              </div>
-              <div>
-                <p className="text-sm font-medium text-gray-600">Type</p>
-                <p className="text-gray-900 mt-1">{account.isLeaf ? 'Leaf' : 'Parent'}</p>
-              </div>
-              {account.parentId && (
-                <div>
-                  <p className="text-sm font-medium text-gray-600">Parent Account</p>
-                  <p className="text-gray-900 mt-1 font-mono">{account.parentId}</p>
-                </div>
-              )}
-            </div>
-          </div>
-
-          {/* Financial Configuration */}
-          <div>
-            <h3 className="font-semibold text-gray-900 mb-3">Financial Configuration</h3>
-            <div className="grid grid-cols-2 gap-4">
-              <div>
-                <p className="text-sm font-medium text-gray-600">Currency</p>
-                <p className="text-gray-900 mt-1 font-mono">{account.currencyCode}</p>
-              </div>
-              <div>
-                <p className="text-sm font-medium text-gray-600">Multi-Currency</p>
-                <p className="text-gray-900 mt-1">
-                  {account.allowMultiCurrency ? 'Yes' : 'No'}
-                </p>
-              </div>
-              <div>
-                <p className="text-sm font-medium text-gray-600">Allow Postings</p>
-                <p className="text-gray-900 mt-1">
-                  {account.allowPostings ? 'Yes' : 'No'}
-                </p>
-              </div>
-              <div>
-                <p className="text-sm font-medium text-gray-600">Requires Approval</p>
-                <p className="text-gray-900 mt-1">
-                  {account.requiresApproval ? 'Yes' : 'No'}
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Analytics Configuration */}
-          {account.analyticType !== 'none' && (
-            <div>
-              <h3 className="font-semibold text-gray-900 mb-3">Analytics Configuration</h3>
-              <div className="grid grid-cols-2 gap-4">
-                <div>
-                  <p className="text-sm font-medium text-gray-600">Analytic Type</p>
-                  <p className="text-gray-900 mt-1 capitalize">
-                    {account.analyticType.replace(/_/g, ' ')}
-                  </p>
-                </div>
-                <div>
-                  <p className="text-sm font-medium text-gray-600">Requires Dimension</p>
-                  <p className="text-gray-900 mt-1">
-                    {account.requiresAnalyticDimension ? 'Yes' : 'No'}
-                  </p>
-                </div>
-              </div>
-            </div>
-          )}
-
-          {/* Tax Configuration */}
-          {account.isTaxable && (
-            <div>
-              <h3 className="font-semibold text-gray-900 mb-3">Tax Configuration</h3>
-              <div>
-                <p className="text-sm font-medium text-gray-600">Tax Code</p>
-                <p className="text-gray-900 mt-1 font-mono">
-                  {account.taxCode || 'Not specified'}
-                </p>
-              </div>
-            </div>
-          )}
-
-          {/* Control & Audit */}
-          <div>
-            <h3 className="font-semibold text-gray-900 mb-3">Control & Audit</h3>
+            <h3 className="mb-3 font-semibold">Hierarchy</h3>
             <div className="grid grid-cols-2 gap-4 text-sm">
               <div>
-                <p className="font-medium text-gray-600">Created</p>
-                <p className="text-gray-900 mt-1">
-                  {new Date(account.createdAt).toLocaleDateString()}
-                </p>
-                <p className="text-gray-500 text-xs mt-1">by {account.createdBy}</p>
+                <p className="font-medium text-muted-foreground">Level</p>
+                <p className="mt-1">{account.level}</p>
               </div>
               <div>
-                <p className="font-medium text-gray-600">Updated</p>
-                <p className="text-gray-900 mt-1">
-                  {new Date(account.updatedAt).toLocaleDateString()}
-                </p>
-                <p className="text-gray-500 text-xs mt-1">by {account.updatedBy}</p>
+                <p className="font-medium text-muted-foreground">Type</p>
+                <p className="mt-1">{account.isLeaf ? 'Leaf' : 'Parent'}</p>
+              </div>
+              {account.parentId ? (
+                <div>
+                  <p className="font-medium text-muted-foreground">Parent Account</p>
+                  <p className="mt-1 font-mono">{account.parentId}</p>
+                </div>
+              ) : null}
+            </div>
+          </div>
+
+          <div>
+            <h3 className="mb-3 font-semibold">Financial Configuration</h3>
+            <div className="grid grid-cols-2 gap-4 text-sm">
+              <div>
+                <p className="font-medium text-muted-foreground">Currency</p>
+                <p className="mt-1 font-mono">{account.currencyCode}</p>
+              </div>
+              <div>
+                <p className="font-medium text-muted-foreground">Multi-Currency</p>
+                <p className="mt-1">{account.allowMultiCurrency ? 'Yes' : 'No'}</p>
+              </div>
+              <div>
+                <p className="font-medium text-muted-foreground">Allow Postings</p>
+                <p className="mt-1">{account.allowPostings ? 'Yes' : 'No'}</p>
+              </div>
+              <div>
+                <p className="font-medium text-muted-foreground">Requires Approval</p>
+                <p className="mt-1">{account.requiresApproval ? 'Yes' : 'No'}</p>
               </div>
             </div>
           </div>
 
-          {/* Display Order */}
+          {account.analyticType !== 'none' ? (
+            <div>
+              <h3 className="mb-3 font-semibold">Analytics Configuration</h3>
+              <div className="grid grid-cols-2 gap-4 text-sm">
+                <div>
+                  <p className="font-medium text-muted-foreground">Analytic Type</p>
+                  <p className="mt-1 capitalize">{account.analyticType.replace(/_/g, ' ')}</p>
+                </div>
+                <div>
+                  <p className="font-medium text-muted-foreground">Requires Dimension</p>
+                  <p className="mt-1">{account.requiresAnalyticDimension ? 'Yes' : 'No'}</p>
+                </div>
+              </div>
+            </div>
+          ) : null}
+
+          {account.isTaxable ? (
+            <div>
+              <h3 className="mb-3 font-semibold">Tax Configuration</h3>
+              <p className="text-sm font-medium text-muted-foreground">Tax Code</p>
+              <p className="mt-1 font-mono">{account.taxCode || 'Not specified'}</p>
+            </div>
+          ) : null}
+
           <div>
-            <p className="text-sm font-medium text-gray-600">Display Order</p>
-            <p className="text-gray-900 mt-1">{account.displayOrder}</p>
+            <h3 className="mb-3 font-semibold">Control & Audit</h3>
+            <div className="grid grid-cols-2 gap-4 text-sm">
+              <div>
+                <p className="font-medium text-muted-foreground">Created</p>
+                <p className="mt-1">{new Date(account.createdAt).toLocaleDateString()}</p>
+                <p className="text-muted-foreground text-xs">by {account.createdBy}</p>
+              </div>
+              <div>
+                <p className="font-medium text-muted-foreground">Updated</p>
+                <p className="mt-1">{new Date(account.updatedAt).toLocaleDateString()}</p>
+                <p className="text-muted-foreground text-xs">by {account.updatedBy}</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <p className="text-sm font-medium text-muted-foreground">Display Order</p>
+            <p className="mt-1">{account.displayOrder}</p>
           </div>
         </div>
 
-        {/* Footer */}
-        <div className="flex justify-end gap-4 p-6 border-t">
-          <button
-            onClick={onClose}
-            className="px-6 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 font-medium"
-          >
+        <DialogFooter>
+          <Button type="button" variant="outline" onClick={onClose}>
             Close
-          </button>
-          <button
-            onClick={onEdit}
-            className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 font-medium flex items-center gap-2"
-          >
-            <Edit2 size={18} />
+          </Button>
+          <Button type="button" onClick={onEdit}>
+            <Edit2 className="size-4" />
             Edit
-          </button>
-        </div>
-      </div>
-    </div>
-  );
+          </Button>
+        </DialogFooter>
+      </DialogContent>
+    </Dialog>
+  )
 }

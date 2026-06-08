@@ -3,8 +3,8 @@
 
 # borrow
 
-path `borrow` · uuid `6dbd2777-6d1e-8a95-ba5b-250858302358` · diamond `95b8ae07-2a7f-874f-b8f2-b227d713a670`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `borrow` · uuid `7beb611e-057f-8c09-9c4a-ccb6f4561791` · diamond `568e498c-cdaa-8fdd-89b5-2517fe18a7ff`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti · exports borrow · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law borrow is one schema.org word, content-addressed; the same word collides eve
 
 ---
 
-<sub>content-uuid `c388a916-44db-800d-a752-c99caa4b32bf` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `bc1157a8-1e28-8891-a988-18d2aa181e41` · `pnpm readme` · `pnpm computed:check`</sub>

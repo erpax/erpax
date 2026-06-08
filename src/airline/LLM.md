@@ -3,7 +3,7 @@
 
 # airline
 
-path `airline` · uuid `cc64a7ed-b834-82b1-a7bc-598ef8363e99` · diamond `3f9f6189-5b27-8991-88e0-6a122c87fa09`
+path `airline` · uuid `1a5d2e11-efb2-82b4-8ecc-1f5628397de8` · diamond `2f175ada-7b6f-87b6-81db-582e4cbea176`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports law·thing·transport · exports airline · escapes —
 links `3/3` · folded `1` · bonds in `3` out `3`
@@ -14,4 +14,4 @@ law airline is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `88e2d18d-4472-8aa6-a077-1fa267960b13` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0b5d8358-335a-88eb-aab9-67c6836b2afe` · `pnpm readme` · `pnpm computed:check`</sub>

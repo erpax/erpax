@@ -23,16 +23,69 @@
 
 ## typography graph
 
-- partition `quantum` · sub-root `539df73c-956d-8aae-b36f-47cf0d3aaff7`
-- bond degree `39` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- partition `quantum` · sub-root `752ec37e-713d-87b7-a64c-41cefcda190a`
+- bond degree `29` · analysis neighbors —
+- graph root `767556c1-6cb2-8c6a-8d8b-18641569b2ed`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `the digital-root / mod-9 group ([[rodin]])` · banner
+- `the digital-root / mod-9 group (rodin)` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·7 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `29` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `2`
 
 ## identity
 
-- uuid `67c1eebb-3f2c-8804-bd8f-0156116af0ea`
-- bonds in `11` · out `13`
+- uuid `0069b32d-c9a3-8454-a1aa-d0696868b776`
+- bonds in `7` · out `7`
 - trinity form·code·proof `1`·`1`·`1`
-- links `9` / `9`
+- links `10` / `10`
 - folded `1` · escapes `0`
 
 ## [[seal]]
@@ -41,4 +94,4 @@
 
 ---
 
-<sub>content-uuid `7a5d0257-9eea-85ae-9b06-6a7ab02a130a` · framed by typography partition `quantum` bonds `39` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a364933b-0cec-844c-ab12-80b9132f4ec1` · framed by typography partition `quantum` bonds `29` · `pnpm readme` · `pnpm readme:check`</sub>

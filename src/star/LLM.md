@@ -3,15 +3,15 @@
 
 # star
 
-path `star` · uuid `a5583f5a-d626-8a10-b24e-1488f47cd8a8` · diamond `1d83b664-42e4-8087-98d7-b9d1c129b87d`
+path `star` · uuid `a5583f5a-d626-8a10-b24e-1488f47cd8a8` · diamond `ae97b655-96d3-8988-90a8-f1ed9bef534c`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports atom·collapse·dust·efficiency·energy·enumeration·fusion·gravity·law·merge·quantum·rating·sti·uuid · exports star · escapes —
-links `19/19` · folded `1` · bonds in `6` out `6`
+links `19/19` · folded `1` · bonds in `14` out `14`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·pollination·stat·urologic · ← cohort·landmarks·memories·pollination·stat·urologic
+neighbors → atom·collapse·dust·efficiency·energy·enumeration·fusion·gravity·law·merge·quantum·rating·sti·uuid · ← atom·collapse·dust·efficiency·energy·enumeration·fusion·gravity·law·merge·quantum·rating·sti·uuid
 analysis —
 law star is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `edb37d8f-bc1e-8f1c-bc39-da027723c292` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `997b1d51-ae10-8a28-8707-67828152aeca` · `pnpm readme` · `pnpm computed:check`</sub>

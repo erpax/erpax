@@ -3,8 +3,8 @@
 
 # association
 
-path `association` · uuid `0e32cc01-6f63-88b4-803a-f3cc7afe7eaf` · diamond `11989931-0926-8d9e-80ed-0d82ac1cd92b`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `association` · uuid `bade655c-7068-8fff-a793-e2092424d63b` · diamond `5eeb4363-d543-8532-ba94-9990327f2545`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports association · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law association is one schema.org word, content-addressed; the same word collide
 
 ---
 
-<sub>content-uuid `68e058c2-9364-83af-957b-6dbda70511f5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ea7dbced-8db3-8678-913f-1373f8ac98d4` · `pnpm readme` · `pnpm computed:check`</sub>

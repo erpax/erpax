@@ -23,7 +23,21 @@
 
 - partition `geriatric` · sub-root `4dbf423d-de41-8e8d-8a16-71e2f4bf0530`
 - bond degree `12` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `12` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `a7c02026-8ec4-83ec-98ca-d54272e08177` · framed by typography partition `geriatric` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `8020a30b-bf9b-8565-a191-ad172d2a1a35` · framed by typography partition `geriatric` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

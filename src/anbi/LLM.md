@@ -3,8 +3,8 @@
 
 # anbi
 
-path `anbi` · uuid `de9532f0-a26e-8885-872f-ae8e35aa4dab` · diamond `eac49045-02db-84a0-b27b-9fe3f3170a1f`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `anbi` · uuid `36a3d703-4c5c-8150-b920-d64cea037a6c` · diamond `31bd025e-a8c7-877f-b1d9-cffd29eeead2`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports anbi · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law anbi is one schema.org word, content-addressed; the same word collides every
 
 ---
 
-<sub>content-uuid `e4efa572-0062-825f-bf76-f29cc7a5ad37` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0eb4bdc7-e0af-813e-9f2e-8b99012664b9` · `pnpm readme` · `pnpm computed:check`</sub>

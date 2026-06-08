@@ -3,8 +3,8 @@
 
 # copyright
 
-path `copyright` · uuid `85497d95-8bf3-8d0f-b273-51028a660ce7` · diamond `47fde4a2-7c26-8dc6-8e82-89fd16a54380`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `copyright` · uuid `68e8b9b1-b849-8f68-9a63-b1cc602fe2ab` · diamond `72f60f68-4cd9-8fe9-a002-416d163236b9`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·holder·law·merge·notice·sti·year · exports copyright · escapes —
 links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law copyright is one schema.org word, content-addressed; the same word collides 
 
 ---
 
-<sub>content-uuid `eeb6344a-74d5-8fe2-90e7-57c25ec6dbf3` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2511701b-ac71-8f48-b7ff-5fbb51988d4b` · `pnpm readme` · `pnpm computed:check`</sub>

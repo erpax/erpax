@@ -3,15 +3,15 @@
 
 # client
 
-path `country/api/client` · uuid `839fa652-3310-8567-84ec-d780a4ba0b22` · diamond `3fc38be2-016b-8e55-a590-5ccbf22c7bc0`
-horo `8` `crest` · trinity `1·1·1` · sealed `0`
-imports — · exports async·function·interface · escapes @/config/country-apis
-links `4/4` · folded `1` · bonds in `3` out `4`
+path `country/api/client` · uuid `20fe3189-b361-851d-bca6-306c36d7fc0a` · diamond `27d79aa7-9466-80cd-b041-83e70ca3b743`
+horo `2` `share` · trinity `1·1·1` · sealed `0`
+imports @/country/api · exports async·function·interface · escapes —
+links `4/4` · folded `1` · bonds in `1` out `1`
 faces worker·plugin·pwa `0·0·0`
-neighbors → api·country·law·law · ← api·country·law
+neighbors → law · ← law
 analysis —
 law every official-[[api]] call returns one `{ ok, data?, error?, source }` shape with `source` attributing the answering authority, and the EU fallback chain resolves national→pan-EU to the first success — so the [[country]] caller branches on one shape regardless of publisher or auth pattern.
 
 ---
 
-<sub>content-uuid `dad28428-32a1-8090-8a39-e96c242bfe6a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f8c0ea1f-1adf-8080-baf0-84343243e6ab` · `pnpm readme` · `pnpm computed:check`</sub>

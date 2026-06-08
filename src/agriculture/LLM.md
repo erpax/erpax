@@ -3,8 +3,8 @@
 
 # agriculture
 
-path `agriculture` · uuid `d65965f6-9220-88d9-949e-9cb968223e53` · diamond `57c347e4-60c3-8a02-b2c1-c4e01498522a`
-horo `5` `round` · trinity `1·0·0` · sealed `0`
+path `agriculture` · uuid `c6a205b8-f834-8f48-8e8c-aa3b6d93952f` · diamond `89ae0087-5a0e-81a9-acf9-66e58a2d8796`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports accounting·allocation·apiculture·aquaculture·atom·balance·biological·bottleneck·capacity·certification·choice·commerce·conversion·covercrop·crop·cropplan·cultivation·currency·customers·deferral·ecosystem·enterprisebudget·entry·fertility·forecast·forestry·grade·harvest·irrigation·items·law·livestock·manufacturing·measure·organic·perennial·permaculture·pickup·planting·postharvest·rate·recognition·rotation·season·share·soil·standards·tillage·whole·yield · exports agriculture · escapes —
 links `89/89` · folded `1` · bonds in `72` out `72`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law plan backward from the harvest you intend to sell, never forward from the la
 
 ---
 
-<sub>content-uuid `9d489b3c-00eb-8436-b668-bf1cfd54a1f7` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `962fea46-c74e-88da-85fe-96faa355123e` · `pnpm readme` · `pnpm computed:check`</sub>

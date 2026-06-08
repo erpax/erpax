@@ -23,7 +23,21 @@
 
 - partition `gym` · sub-root `c9b06502-01cd-84f1-b521-3296eef0d92c`
 - bond degree `16` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `16` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `d80cba83-3c47-8213-960b-df1660fc0d3d` · framed by typography partition `gym` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `37682bfa-a3a7-874e-8767-5d20e1b543d2` · framed by typography partition `gym` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

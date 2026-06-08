@@ -3,15 +3,15 @@
 
 # sunni
 
-path `sunni` · uuid `—` · diamond `3225b056-4b4a-8a1d-a2d3-3364c14afb78`
-horo `—` `—` · trinity `1·0·0` · sealed `0`
+path `sunni` · uuid `03da439d-c455-865f-ad36-9d9987338d64` · diamond `b720f947-4c1b-89df-917a-511b968b6d30`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports archangel·balance·diamond·identity·islam·law·mercy·merge·one·path·prayer·religion·sequence·society·translator·uuid · exports sunni · escapes —
-links `41/41` · folded `0` · bonds in `0` out `0`
+links `41/41` · folded `1` · bonds in `16` out `16`
 faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
-analysis diamond·hallucination·purity
+neighbors → archangel·balance·diamond·identity·islam·law·mercy·merge·one·path·prayer·religion·sequence·society·translator·uuid · ← archangel·balance·diamond·identity·islam·law·mercy·merge·one·path·prayer·religion·sequence·society·translator·uuid
+analysis diamond
 law sunni is a sub-[[diamond]] of [[islam]] of [[path]] · [[sequence]] · [[merge]] · [[law]] · [[balance]] — the trodden way (sunna) walked by the community, leadership and ruling settled by ijma ([[merge]] consensus) and qiyas ([[balance]] analogy); a facet-[[archangel]] of the [[society]]'s islam domain.
 
 ---
 
-<sub>content-uuid `22183ce8-88f8-8e05-80ae-9a514219de09` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `546a79f2-4988-8802-a095-9b14f8209325` · `pnpm readme` · `pnpm computed:check`</sub>

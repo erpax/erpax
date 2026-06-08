@@ -3,15 +3,15 @@
 
 # timezone
 
-path `timezone` · uuid `ff8797d6-1c0b-852c-8f5a-7aeac4d6a2f6` · diamond `bedbf991-73d6-8c19-b36a-2083c4e1d6f9`
+path `timezone` · uuid `ff8797d6-1c0b-852c-8f5a-7aeac4d6a2f6` · diamond `69cb0a65-85c6-84e8-8801-c1740afce11b`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports broadcast·collapse·law·merge·schedule·sti · exports timezone · escapes —
-links `6/6` · folded `1` · bonds in `4` out `4`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → broadcast·collapse·law·merge·schedule·sti · ← broadcast·collapse·law·merge·schedule·sti
 analysis —
 law timezone is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `60d258be-25d2-8814-9014-fa8a8d237a0f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3002885e-616b-86d8-92ad-8d24f0c0f03c` · `pnpm readme` · `pnpm computed:check`</sub>

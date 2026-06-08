@@ -2,9 +2,11 @@
 
 # lines
 
-> atom `invoices/invoice/lines` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `invoices/invoice/lines` · horo `4` `weave` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `invoices/invoice/lines` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -19,17 +21,133 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
+
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:stray:[[gap]]/[[diamond]]/stray/hooks/`
+
+### collapse
+
+- `balance:variance=1`
+- `law:each EN-16931 BG-25 line carries its own net + VAT (BG-30) that feed the GL double-entry and recompute inventory; the line is content-addressed, summing into its header without drift.`
+- `seal:unsealed`
+- `trigger:Use when adding, pricing or auditing individual line items on an invoice — EN-16931 BG-25 quantity/net-amount, BG-29 price details, BG-30 VAT category/rate, allowances, inventory recompute and GL posting. The invoice-lines collection.`
+- `trigger:each EN-16931 BG-25 line carries its own net + VAT (BG-30) that feed the GL double-entry and recompute inventory; the line is content-addressed, summing into its header without drift.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `016ec662-326f-8c83-90a0-3450a4480253` · `65dc5c44-f2fd-8dcd-b650-ab68213a86cb` · `96375951-f0b8-8140-afac-9876be35815d`
+- content uuids `21236a8b-3e9b-8f1a-8d7a-5876a7e0ee59` · `2ff32da0-9283-852b-8bb5-584bf9d379c1` · `54fd929e-5647-81d3-a415-7f4678aece14`
+
+## [[entropy]] — gaps · seals
+
+> account code `invoices/invoice/lines` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[diamond]]/stray/hooks/ `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.4` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+| Σ gap `2` eb | Σ seal `8.4` eb |
+
+> net residual `-6.4` eb · seal/gap ratio `4.2` · [[entropy]] · [[seal]]
 
 ## typography graph
 
-- partition `invoices` · sub-root `ef180ebe-02df-87e7-bd19-e59ea8c64805`
-- bond degree `25` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- partition `invoices` · sub-root `b70d85ab-64bf-818d-a26e-523e5fa58b35`
+- bond degree `0` · analysis neighbors —
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `EN-16931:2017 §BG-25 invoice-line` · banner
+- `EN-16931:2017 §BG-27 invoice-line-allowances` · banner
+- `EN-16931:2017 §BG-28 invoice-line-charges` · banner
+- `EN-16931:2017 §BG-29 price-details` · banner
+- `EN-16931:2017 §BG-30 line-vat-information` · banner
+- `EN-16931:2017 §BT-151 invoiced-item-vat-category-code` · banner
+- `EN-16931:2017 BT-126 invoice-line-identifier` · banner
+- `EN-16931:2017 BT-131 invoice-line-net-amount` · banner
+- `EN-16931:2017 BT-151 vat-category-code` · banner
+- `IFRS IFRS-15 revenue-from-contracts-with-customers` · banner
+- `ISO-4217:2015 currency-codes` · banner
+- `ISO-9735` · catalogue
+- `Peppol-BIS-3.0` · catalogue
+- `Peppol-BIS-3.0 billing line-detail` · banner
+- `UN-CEFACT` · catalogue
+- `UN-CEFACT-5305 tax-category-codes` · banner
+- `UN-EDIFACT INVOIC §LIN line-segment` · banner
+- `UN/CEFACT 5305 duty-tax-fee-category-coded` · banner
+- `US-GAAP` · catalogue
+- `US-GAAP ASC-606 revenue-from-contracts-with-customers` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unbalanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| not-held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·4 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `0` · sealed `0` · horo `4`
+- variance `1` · balanced `0` · trinity sum `3`
+- bindings `0` · standards `20`
 
 ## identity
 
-- uuid `098bc3f2-4883-8aea-a422-a6c5268e2fa2`
+- uuid `1280ed6a-ddef-833f-bb16-f3e770a3679c`
 - bonds in `8` · out `8`
 - trinity form·code·proof `1`·`1`·`1`
 - links `8` / `8`
@@ -37,8 +155,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `502d00ce-4123-8c93-ab71-3f6b9d15528a` · framed by typography partition `invoices` bonds `25` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `4a6798cc-75ac-8b71-9fb9-5ba7fc2430dd` · framed by typography partition `invoices` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

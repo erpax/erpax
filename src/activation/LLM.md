@@ -3,7 +3,7 @@
 
 # activation
 
-path `activation` · uuid `9522e571-ea3f-80ce-96ae-00a9c1f1b054` · diamond `eab9a928-f161-8bd1-8616-5436a4766069`
+path `activation` · uuid `d12f5b44-e140-809c-a973-07dfb8e4161d` · diamond `412be597-1f4a-85b4-89cf-e1ab548ef586`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports activation · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
@@ -14,4 +14,4 @@ law activation is one schema.org word, content-addressed; the same word collides
 
 ---
 
-<sub>content-uuid `e27f9ca3-1569-831f-9849-8da6a34d5c38` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ce453669-b41f-8733-871c-4833cd15ec28` · `pnpm readme` · `pnpm computed:check`</sub>

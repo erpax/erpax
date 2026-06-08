@@ -3,8 +3,8 @@
 
 # calories
 
-path `calories` · uuid `5fe6ffe4-59ea-8d1b-846b-89a040ef0419` · diamond `54f81db2-38a3-8ded-9b12-17fe5dfc7018`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `calories` · uuid `923be2c3-5737-8d11-8d3c-26c4e4dc6067` · diamond `aaddaa0f-a243-8b32-b6ae-73de3d00ec05`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports calories · escapes —
 links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law calories is one schema.org word, content-addressed; the same word collides e
 
 ---
 
-<sub>content-uuid `e062b75d-a86a-88c6-bc20-7b789b767634` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a7a9cb60-b495-8214-817b-604e246c0235` · `pnpm readme` · `pnpm computed:check`</sub>

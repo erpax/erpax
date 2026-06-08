@@ -2,7 +2,7 @@
 
 # billing
 
-> atom `billing` · horo `8` `crest` · [[balance]] `1` · [[seal]] `0`
+> atom `billing` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -23,9 +23,9 @@
 
 ## typography graph
 
-- partition `billing` · sub-root `00104ff6-0f74-81d1-8b48-3be285fb3eff`
+- partition `billing` · sub-root `12a2b7b1-66a4-8f16-a465-131c9f6aec79`
 - bond degree `30` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- graph root `1cef4f02-a3fa-83a5-8ea0-120b724ef456`
 
 ## [[cloudflare]] bindings
 
@@ -53,15 +53,53 @@
 - `PCI-DSS` · catalogue
 - `schema.org — the type vocabulary, collided to single words` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·8 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `30` · sealed `0` · horo `8`
+- bond degree `30` · sealed `1` · horo `8`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `19`
 
 ## identity
 
-- uuid `00104ff6-0f74-81d1-8b48-3be285fb3eff`
+- uuid `12a2b7b1-66a4-8f16-a465-131c9f6aec79`
 - bonds in `9` · out `9`
 - trinity form·code·proof `1`·`1`·`1`
 - links `9` / `9`
@@ -69,8 +107,8 @@
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `56c18d9a-6752-8f6a-bae7-8e9fc40de6ff` · framed by typography partition `billing` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `547959d1-6881-8ddb-b295-1138c553c32a` · framed by typography partition `billing` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>

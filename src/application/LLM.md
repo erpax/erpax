@@ -3,8 +3,8 @@
 
 # application
 
-path `application` · uuid `62bca687-e9ee-8930-b11a-4bad611cc585` · diamond `ecf0c1bc-d6ec-8c15-a5c4-6ea68668505e`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `application` · uuid `2913b3a9-279e-81fc-bac7-a7c8fa5e7f4f` · diamond `e3c5d403-4b0c-817e-987c-e39de0ffc29b`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports action·category·contact·date·deadline·law·mobile·software·start·sub·suite·web · exports application · escapes —
 links `12/12` · folded `1` · bonds in `12` out `12`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law application is one schema.org word, content-addressed; the same word collide
 
 ---
 
-<sub>content-uuid `0e3ace46-e2c2-888f-bf3b-3709c6aa786e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `26fcc6bb-7145-8cd7-97da-26993b3099d8` · `pnpm readme` · `pnpm computed:check`</sub>

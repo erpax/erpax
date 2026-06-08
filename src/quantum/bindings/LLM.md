@@ -3,15 +3,15 @@
 
 # bindings
 
-path `quantum/bindings` · uuid `09c6c882-5ea8-86eb-8b4c-d1dec858d824` · diamond `4e2caf50-9c7a-8702-b90d-3608c3a86ab4`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
-imports access·ai·analytics·bindings·broker·cache·database·deploy·email·law·quantum·queue·receipt·sandbox·storage·uuid·worker · exports bindings · escapes —
-links `30/30` · folded `1` · bonds in `32` out `33`
+path `quantum/bindings` · uuid `9eee0b75-9852-85b6-99d7-3246ada8aa20` · diamond `804f7976-0539-8e21-8d39-da8fc89a5c65`
+horo `7` `descent` · trinity `1·1·1` · sealed `1`
+imports @/cloudflare·@/path · exports function · escapes —
+links `42/42` · folded `1` · bonds in `19` out `19`
 faces worker·plugin·pwa `1·0·0`
-neighbors → access·ai·analytics·binding·bindings·broker·cache·config·currency·database·deploy·deploy·dev·device·email·harden·identity·jobs·law·law·manufacturing·mcp·plugins·queue·receipt·sandbox·search·signal·storage·sufficient·supto·uuid·worker · ← access·ai·analytics·binding·bindings·broker·cache·config·currency·database·deploy·deploy·dev·device·email·harden·identity·jobs·law·manufacturing·mcp·plugins·queue·receipt·sandbox·search·signal·storage·sufficient·supto·uuid·worker
+neighbors → binding·bindings·cache·config·currency·deploy·deploy·dev·harden·identity·jobs·law·manufacturing·mcp·plugins·search·signal·sufficient·supto · ← binding·bindings·cache·config·currency·deploy·deploy·dev·harden·identity·jobs·law·manufacturing·mcp·plugins·search·signal·sufficient·supto
 analysis analytics
 law attach-all is safe only because each call is gated — a binding is a capability grant, not a free reach, so widening the door to all 26 senses is bounded by the invariant that every use passes [[access]] in the caller's request, draws its credential from the [[broker]], and emits a [[receipt]]; it is the gate per call, never the length of the binding list, that holds, and a Durable-Object class reaches the Worker at all only as a named export of the OpenNext `main` entry.
 
 ---
 
-<sub>content-uuid `a9dc2bdb-d3f1-8685-9cd8-232dfa601c7c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `666217a2-505d-8ae5-8adb-0adca2396c2c` · `pnpm readme` · `pnpm computed:check`</sub>

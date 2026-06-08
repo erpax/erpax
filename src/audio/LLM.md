@@ -3,7 +3,7 @@
 
 # audio
 
-path `audio` · uuid `8c3131f8-b443-8d5b-bf67-472603d4356b` · diamond `63906865-437f-80d4-ae2e-91a3e3616744`
+path `audio` · uuid `39b7cfd4-725b-88d2-a60d-51a525982ecb` · diamond `69f29518-3d24-87bb-b23c-135cc5a0c172`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports law·object·snapshot · exports audio · escapes —
 links `3/3` · folded `1` · bonds in `3` out `3`
@@ -14,4 +14,4 @@ law audio is one schema.org word, content-addressed; the same word collides ever
 
 ---
 
-<sub>content-uuid `d37d0c40-a142-86aa-bceb-9644eaeb8765` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f54ba6b7-c7fd-89cf-b839-5eca4f129bc9` · `pnpm readme` · `pnpm computed:check`</sub>

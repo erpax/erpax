@@ -4,7 +4,7 @@
 # controls
 
 path `internal/controls` · uuid `9e0511a0-e16f-8a17-9c23-9a7aa290eb63` · diamond `0d80b935-aaea-84cf-9cf6-3d40f3d6f00b`
-horo `1` `base` · trinity `1·1·1` · sealed `1`
+horo `1` `base` · trinity `1·1·1` · sealed `0`
 imports @/audit/trail/after/change·@/auth·@/authenticated · exports const · escapes —
 links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law an internal control is a register entry typed by purpose (preventive/detecti
 
 ---
 
-<sub>content-uuid `79150546-acbd-843c-b7d4-7c5cf174fd8e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `01045306-5e4a-8596-b26c-07ac3a32bb49` · `pnpm readme` · `pnpm computed:check`</sub>

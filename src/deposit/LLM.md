@@ -3,8 +3,8 @@
 
 # deposit
 
-path `deposit` · uuid `e1d4314c-0b41-8388-99f1-2feeca0b0334` · diamond `6149c02e-0b84-85b3-a439-a6aa4a8b0720`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `deposit` · uuid `2cb39fca-3fc5-8f90-9f11-0ac50bdd0caf` · diamond `899fea7e-a61f-8586-b4cb-58ca14287f0f`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports account·collapse·investment·law·merge·sti · exports deposit · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law deposit is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `268d2325-2a1c-8bc2-93f7-e7c3f0a3b2d7` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7afd4cec-15b2-85e4-94a4-2c1bb56ddb54` · `pnpm readme` · `pnpm computed:check`</sub>

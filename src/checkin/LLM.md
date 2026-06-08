@@ -3,8 +3,8 @@
 
 # checkin
 
-path `checkin` · uuid `48e8b32c-efa0-8c67-a239-7e6b9375844f` · diamond `ef9863cb-d5a6-84ea-9a4b-42fe9dac47fa`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `checkin` · uuid `a2768d69-fbbb-8f5b-a57e-5afc28c73130` · diamond `bf4d215a-7af0-8176-acb9-dfb062bb9708`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·time·web · exports checkin · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law checkin is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `8abd6b82-de40-8b92-be17-8b143d021215` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0ef4c425-db0b-8a87-a7ec-abbc498838f5` · `pnpm readme` · `pnpm computed:check`</sub>

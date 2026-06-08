@@ -1,8 +1,65 @@
 ---
 name: sourced
-description: Use when an atom is written or reviewed — the convention is that every atom cites the external standard it realises with an @standard marker (in its SKILL.md or its sibling index.ts), never grounding itself in nothing but itself; this atom measures the corpus's live sourcing as coverage = sourced / total over the real tree.
+description: "Use when an atom is written or reviewed — the convention is that every atom cites the external standard it realises with an @standard marker (in its SKILL.md or its sibling index.ts), never grounding itself in nothing but itself; this atom measures the corpus's live sourcing as coverage = sourced / total over the real tree."
+atomPath: convention/sourced
+coordinate: convention/sourced · 5/round · 8ddbd614
+contentUuid: "ee57f0ec-f204-56a4-a8ef-be948c4a5877"
+diamondUuid: "7460ca79-2980-809a-8588-bc3b55acdadd"
+uuid: "8ddbd614-594d-8f09-a9a2-ee43510746bd"
+horo: 5
+bonds:
+  in:
+    - convention
+    - law
+    - thing
+  out:
+    - law
+    - thing
+typography:
+  partition: convention
+  bondDegree: 12
+  neighbors:
+    - aura
+standards:
+  - "<id> …` line names the external standard it"
+  - "<id> …` line names the external standard it realises — schema.org, an ISO/IEC code, a W3C spec, a national regulation. The marker may live in the `SKILL.md` body or in the sibling `index.ts` JSDoc; both are the atom's public face. It states one rule and computes its own compliance, and it does not re-implement the corpus walk or the SKILL reader — it"
+  - "<id> …` marker — a JSDoc/prose tag that names the external standard the atom cites."
+  - "THE LAW, written as a self-measuring atom:"
+  - "marker (in its SKILL.md or its sibling index.ts), never grounding itself in nothing but itself; this atom measures the corpus's live sourcing as coverage = sourced / total over the real tree.\""
+  - "schema.org — the type vocabulary, collided to single words"
+bindings: []
+neighbors:
+  wikilink:
+    - aura
+    - cost
+    - honest
+    - law
+    - standards
+  matrix:
+    - law
+    - thing
+  backlinks:
+    - law
+    - thing
+signatures:
+  computationUuid: "b903c5a9-bbe3-8f67-bca9-9b42da1445a9"
+  stages:
+    - stage: path
+      stageUuid: "85fdf454-21fb-83b0-a747-be6ab8a21e49"
+    - stage: trinity
+      stageUuid: "34fbea2d-f12f-8545-a643-42f70c5f3c0e"
+    - stage: boundary
+      stageUuid: "7075dfbd-11da-810e-9222-142e29bc1c14"
+    - stage: links
+      stageUuid: "7f63a4b2-b25d-87c8-a6d4-46da07600773"
+    - stage: horo
+      stageUuid: "459aafc4-cb20-855e-9dd8-704219eedc80"
+    - stage: seal
+      stageUuid: "bc6bb702-4da5-8814-9f96-aac49972f8af"
+    - stage: uuid
+      stageUuid: "bec40482-d6f4-8e4c-b2bd-53c0ab9fa0d7"
+version: 2
 ---
-
 # convention/sourced — every atom cites its @standard
 
 THE LAW, written as a self-measuring atom: **an atom cites its `@standard`**. An atom (a folder that carries a `SKILL.md`) is **sourced** when an `@standard <id> …` line names the external standard it realises — schema.org, an ISO/IEC code, a W3C spec, a national regulation. The marker may live in the `SKILL.md` body or in the sibling `index.ts` JSDoc; both are the atom's public face. It states one rule and computes its own compliance, and it does not re-implement the corpus walk or the SKILL reader — it **composes** the canonical ones from [[aura]]:

@@ -3,15 +3,15 @@
 
 # video
 
-path `video` · uuid `36f690ce-a701-86bf-9d52-418b2a3fb0a1` · diamond `5071820c-b65a-8682-b46f-2aef4ff9a08a`
+path `video` · uuid `36f690ce-a701-86bf-9d52-418b2a3fb0a1` · diamond `91725df3-9bdb-8e4b-925d-955d669fa2d4`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports clip·format·frame·gallery·game·law·music·object·quality·series·size·snapshot · exports video · escapes —
-links `12/12` · folded `1` · bonds in `10` out `10`
+links `12/12` · folded `1` · bonds in `12` out `12`
 faces worker·plugin·pwa `0·0·0`
-neighbors → corrects·corruption·dropoff·founder·good·high·id·marine·memories·progression · ← corrects·corruption·dropoff·founder·good·high·id·marine·memories·progression
+neighbors → clip·format·frame·gallery·game·law·music·object·quality·series·size·snapshot · ← clip·format·frame·gallery·game·law·music·object·quality·series·size·snapshot
 analysis —
 law video is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `af5ef90d-43cc-8611-91ba-528356d3bfd2` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `93741bf8-8b85-809c-8ccc-711c0e29e1e6` · `pnpm readme` · `pnpm computed:check`</sub>

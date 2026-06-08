@@ -3,15 +3,15 @@
 
 # reconciliation
 
-path `currency/reconciliation` · uuid `d115bcee-2e37-81a3-8f37-212ce4e9e48d` · diamond `61769e17-acc3-83c6-a0e2-42a09f77bbdb`
-horo `1` `base` · trinity `1·1·1` · sealed `1`
+path `currency/reconciliation` · uuid `f42ca11c-d7cf-8c4f-ac60-e3d180dc20e2` · diamond `cab8219b-e9ce-8643-9a48-fbd646fea1c0`
+horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports — · exports class · escapes —
-links `10/10` · folded `1` · bonds in `7` out `9`
+links `10/10` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·balance·balance·currency·law·law·proof·reconciliations·uuid · ← accounting·balance·currency·law·proof·reconciliations·uuid
+neighbors → accounting·balance·law·reconciliations · ← accounting·balance·law·reconciliations
 analysis —
 law a multi-[[currency]] close balances per currency within tolerance, revalues every non-reporting currency at the period-end rate for unrealized gain/loss, and folds into the reporting currency under a chain-linked [[uuid]] leaf (Law 60) — pure, missing rates recorded as errors, never thrown.
 
 ---
 
-<sub>content-uuid `48c03ff8-3f51-8dce-8d54-25228802507a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `cebaa78e-bd57-8ed5-997e-f8d2899e614d` · `pnpm readme` · `pnpm computed:check`</sub>

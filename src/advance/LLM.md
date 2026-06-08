@@ -3,8 +3,8 @@
 
 # advance
 
-path `advance` · uuid `a0349113-ef37-8927-a334-d2aa9d1326d5` · diamond `19ece2de-e98d-85e3-8765-a42f2165ce97`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `advance` · uuid `b2aa5294-8c2d-853c-ae0c-102ad53e9c8f` · diamond `318e27b3-2d03-87bd-87f4-3ba560bbd9ac`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports booking·collapse·law·merge·requirement·sti · exports advance · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law advance is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `4f202714-4a1c-8008-aa4c-de201ec947c5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b5ac5e10-6615-82e2-b158-57a6187d71bc` · `pnpm readme` · `pnpm computed:check`</sub>

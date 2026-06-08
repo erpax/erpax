@@ -2,7 +2,7 @@
 
 # memory
 
-> atom `quantum/memory` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
+> atom `quantum/memory` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -16,16 +16,16 @@
 | [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
 | [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
 | [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[typography]]/partition `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
-- partition `quantum` · sub-root `—`
-- bond degree `69` · analysis neighbors —
-- graph root `—`
+- partition `quantum` · sub-root `752ec37e-713d-87b7-a64c-41cefcda190a`
+- bond degree `93` · analysis neighbors `diamond` · `hallucination` · `purity`
+- graph root `767556c1-6cb2-8c6a-8d8b-18641569b2ed`
 
 ## [[cloudflare]] bindings
 
@@ -33,18 +33,56 @@
 
 ## [[standards]]
 
-—
+- `composed from live matrix + architecture lattice; never hand-asserted` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·8 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
 
 ## analytics
 
-- bond degree `69` · sealed `1` · horo `2`
+- bond degree `93` · sealed `1` · horo `8`
 - variance `0` · balanced `1` · trinity sum `3`
-- bindings `0` · standards `0`
+- bindings `0` · standards `1`
 
 ## identity
 
-- uuid `a34b1a22-051a-87cf-92c9-73e1ce0ece5f`
-- bonds in `31` · out `38`
+- uuid `3f543bbc-6ae1-8199-aedf-bb81da27ce22`
+- bonds in `18` · out `18`
 - trinity form·code·proof `1`·`1`·`1`
 - links `47` / `47`
 - folded `1` · escapes `0`
@@ -55,4 +93,4 @@
 
 ---
 
-<sub>content-uuid `b5ca4911-5cfc-8742-8853-59feb20c304d` · framed by typography partition `quantum` bonds `69` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `42ccccb7-6148-8c24-bb6e-225e930e443f` · framed by typography partition `quantum` bonds `93` · `pnpm readme` · `pnpm readme:check`</sub>

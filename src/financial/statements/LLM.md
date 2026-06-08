@@ -4,7 +4,7 @@
 # statements
 
 path `financial/statements` · uuid `f3831dc7-ef5c-8890-a515-6fde9703b11d` · diamond `29b787bd-2f1d-878d-8bfc-16376b5b0755`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+horo `7` `descent` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/auto/set/timestamp·@/base/accounting/field·@/enforce/segregation/of/duty·@/standard/collection/hook · exports default · escapes —
 links `8/8` · folded `1` · bonds in `17` out `23`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law every period-end statement is derived from the [[balance]]d ledger under IAS
 
 ---
 
-<sub>content-uuid `41e2ff83-e2b5-8902-9684-f65f44504534` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4fc7de90-65a5-8497-aa9c-ced4c41d167e` · `pnpm readme` · `pnpm computed:check`</sub>

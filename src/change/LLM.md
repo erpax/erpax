@@ -3,15 +3,15 @@
 
 # change
 
-path `change` · uuid `21431e57-6817-8be0-ac40-c56c7e91f317` · diamond `2e9eb5c3-156e-8a43-80f2-876cfe0205f7`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `change` · uuid `c81942a6-6af4-8913-af1b-0ce8aced2aee` · diamond `df140aae-b679-82c9-9014-509b65380f93`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports audit·balance·changes·law · exports change · escapes —
-links `9/9` · folded `1` · bonds in `5` out `7`
+links `9/9` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → audit·audit·balance·changes·hooks·law·law · ← audit·balance·changes·hooks·law
+neighbors → audit·balance·changes·law · ← audit·balance·changes·law
 analysis —
 law one change is the singular model of exactly one [[changes]] row — a recorded modification to a controlled record or system; every collection has its model ([[balance]]).
 
 ---
 
-<sub>content-uuid `76f93a6b-01c1-82a3-8df9-d7de702394df` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8fc82d42-f431-8aec-a2c9-e388a224de6f` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -25,7 +25,24 @@
 
 - partition `federation` · sub-root `5ed9f4d6-976d-82de-bc1e-4d29f7f555a0`
 - bond degree `57` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `W3C Activity Streams 2.0 + ActivityPub + LDN` · banner
+- `W3C Verifiable Credentials Data Model 2.0` · banner
+- `W3C-ActivityPub` · catalogue
+- `W3C-VC-2.0` · catalogue
+
+## analytics
+
+- bond degree `57` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `4`
 
 ## identity
 
@@ -41,4 +58,4 @@
 
 ---
 
-<sub>content-uuid `72f2d489-640a-8b55-8f1a-b0cae6279bac` · framed by typography partition `federation` bonds `57` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `92b60518-9c15-8ed7-a7fc-a400fb827449` · framed by typography partition `federation` bonds `57` · `pnpm readme` · `pnpm readme:check`</sub>

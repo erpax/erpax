@@ -3,15 +3,15 @@
 
 # inventories
 
-path `warehouse/locations/consignment/arrangements/consignment/inventories` · uuid `1bfb41cb-248d-8c0b-91b5-249806513215` · diamond `21734372-d43a-83b0-afca-3dd9ca54b81a`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+path `warehouse/locations/consignment/arrangements/consignment/inventories` · uuid `03e6b9ed-7b5e-8642-9d5a-6f05a55b5d3f` · diamond `43613225-1b35-8dc1-bcf8-356ee14a2b7c`
+horo `5` `round` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
-links `14/14` · folded `1` · bonds in `6` out `6`
+links `14/14` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·dated·landmarks·memories·modulation·stat · ← cohort·dated·landmarks·memories·modulation·stat
+neighbors → accounting·arrangements·balance·identity·law·movements·proof·sales·standard·transaction · ← accounting·arrangements·balance·identity·law·movements·proof·sales·standard·transaction
 analysis —
 law the per-SKU running balance at a consignee location that stays on the consignor's own balance sheet — every shipment in, [[warehouse/locations/consignment/arrangements/consignment/sales|sale]] out, and return mutates quantityOnHand + valueOnHand ([[balance]]).
 
 ---
 
-<sub>content-uuid `55db7f66-9319-842e-a225-cc78cf9f4a13` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f4962661-75aa-87f1-b278-eda3a5f8af1c` · `pnpm readme` · `pnpm computed:check`</sub>

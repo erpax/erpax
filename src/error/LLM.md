@@ -4,7 +4,7 @@
 # error
 
 path `error` · uuid `41e87302-d141-81d3-b164-3dc4c10ed46c` · diamond `8a47b64a-eb0b-89f8-a2fd-be171a0e0296`
-horo `2` `share` · trinity `1·1·1` · sealed `1`
+horo `2` `share` · trinity `1·1·1` · sealed `0`
 imports — · exports CodedError·ERR·ERROR_REGISTRY·GROUP_A·GROUP_B·apiErr·apiErrorJson·apiErrorResponse·apiErrorResponseMerge·codedFromRegistry·composeErrorCode·createAppApiError·formatPayloadSdkUserMessage·formatSupportReference·getPayloadErrorCode·isRegistryCodedApiError·messageFromFailedJsonResponse·parseErrorCode·parseSupportJson·throwRegistryValidation·type · escapes —
 links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law error is one schema.org word, content-addressed; the same word collides ever
 
 ---
 
-<sub>content-uuid `96c74a5c-ddca-8043-8d37-1b5753b798a8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f5b3fde6-69b4-879d-99b1-9b4ecdaa39b2` · `pnpm readme` · `pnpm computed:check`</sub>

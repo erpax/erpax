@@ -3,15 +3,15 @@
 
 # where
 
-path `where` · uuid `ad218905-6d30-81f9-8bce-8fd96ac9579f` · diamond `743aca6b-7759-8d76-9ff7-293508189323`
+path `where` · uuid `ad218905-6d30-81f9-8bce-8fd96ac9579f` · diamond `39c43bc7-de16-8030-ad57-a001d3593d25`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports where · escapes —
-links `4/4` · folded `1` · bonds in `6` out `6`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → balance·binding·departure·emergency·landmarks·wholesale · ← balance·binding·departure·emergency·landmarks·wholesale
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law where is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `a80f9e15-e142-87b8-ba27-31e47b95d264` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `46950baa-ec57-85c0-b89a-98131582b0dd` · `pnpm readme` · `pnpm computed:check`</sub>

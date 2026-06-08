@@ -3,15 +3,15 @@
 
 # topics
 
-path `topics` · uuid `ed5e78fd-5817-83fc-aadd-8076b79a616f` · diamond `d8d4bf99-11ad-8333-bdad-252b35d62d7c`
+path `topics` · uuid `ed5e78fd-5817-83fc-aadd-8076b79a616f` · diamond `6cbecdc8-22bf-8d30-9b35-4195ff425c2b`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports topics · escapes —
-links `4/4` · folded `1` · bonds in `14` out `14`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·anchor·cargo·comment·connected·corrects·countersigned·landmarks·memories·patient·progression·read·safety·symbol · ← access·anchor·cargo·comment·connected·corrects·countersigned·landmarks·memories·patient·progression·read·safety·symbol
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law topics is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `048a31cc-c5eb-8bcf-8e5e-9c2f409df3ab` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `aa7d39c4-cfa0-890f-a6ea-6388a4de5436` · `pnpm readme` · `pnpm computed:check`</sub>

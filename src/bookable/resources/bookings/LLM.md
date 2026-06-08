@@ -3,15 +3,15 @@
 
 # bookings
 
-path `bookable/resources/bookings` · uuid `0223db2e-bce0-8252-9914-ad421f8bb526` · diamond `8504a94c-314c-81df-a57f-c93d9f1516aa`
-horo `5` `round` · trinity `1·1·1` · sealed `0`
+path `bookable/resources/bookings` · uuid `9e4e03ce-cece-89a8-aee8-6e43ad1233f0` · diamond `afc53a5e-3fd6-8e7e-b575-dd7b13d91087`
+horo `2` `share` · trinity `1·1·1` · sealed `0`
 imports @/audit/trail/after/change·@/auth·@/auto/populate/created/by·@/auto/populate/tenant·@/auto/set/timestamp·@/base/accounting/field · exports default · escapes —
-links `9/9` · folded `1` · bonds in `8` out `8`
+links `9/9` · folded `1` · bonds in `9` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·customers·employees·entries·invoices·law·resources·schedule · ← accounting·customers·employees·entries·invoices·law·resources·schedule
+neighbors → accounting·customers·employees·entries·invoices·law·resources·schedule · ← accounting·customers·employees·entries·invoices·law·resources·resources·schedule
 analysis —
 law a booking is the canonical reservation event against a [[bookable/resources]] — IFRS-15 over-time / point-in-time revenue recognition decided by the resource's use, accountable OUT to [[accounting]].
 
 ---
 
-<sub>content-uuid `dac3af77-a926-86b6-b1ac-4c8009649b99` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `fe32e85f-12bc-8b60-80cb-689213c09466` · `pnpm readme` · `pnpm computed:check`</sub>

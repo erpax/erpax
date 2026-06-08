@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `tamper` · sub-root `3759fd7e-a41d-8b46-b85f-008b24a237ba`
-- bond degree `98` · analysis neighbors `aura`
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `260` · analysis neighbors `aura`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `99e79697-d118-819f-bf4e-a50d117e16b4`
-- bonds in `2` · out `2`
+- bonds in `86` · out `80`
 - trinity form·code·proof `1`·`0`·`0`
 - links `29` / `29`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `0d818175-cadc-8410-b2a8-2e23ce5e1405` · framed by typography partition `tamper` bonds `98` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `5df80151-a805-8dba-b2f0-646bbc221c18` · framed by typography partition `tamper` bonds `260` · `pnpm readme` · `pnpm readme:check`</sub>

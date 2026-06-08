@@ -3,15 +3,15 @@
 
 # web
 
-path `web` · uuid `7d79dc84-188e-840f-9c24-5209f8d7a81e` · diamond `d16d5878-9f97-8a96-b80c-cc89198de0c7`
+path `web` · uuid `7d79dc84-188e-840f-9c24-5209f8d7a81e` · diamond `801d7157-671e-854b-a373-991a2a2639bc`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports api·application·checkin·collapse·content·element·feed·law·medical·merge·page·site·sti·time · exports web · escapes —
-links `14/14` · folded `1` · bonds in `2` out `2`
+links `14/14` · folded `1` · bonds in `14` out `14`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → api·application·checkin·collapse·content·element·feed·law·medical·merge·page·site·sti·time · ← api·application·checkin·collapse·content·element·feed·law·medical·merge·page·site·sti·time
 analysis —
 law web is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `4bd8a22b-fbf9-8617-9d56-a99218106dda` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d0f8ee29-79b6-87e1-b67f-2f498a658492` · `pnpm readme` · `pnpm computed:check`</sub>

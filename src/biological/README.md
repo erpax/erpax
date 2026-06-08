@@ -2,7 +2,7 @@
 
 # biological
 
-> atom `biological` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
+> atom `biological` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -21,9 +21,9 @@
 
 ## typography graph
 
-- partition `biological` · sub-root `40a0b53b-7053-8f4a-b5ab-1d7131414b2d`
+- partition `biological` · sub-root `618023db-9e15-8677-ba26-aea7f75ea646`
 - bond degree `24` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- graph root `1cef4f02-a3fa-83a5-8ea0-120b724ef456`
 
 ## [[cloudflare]] bindings
 
@@ -46,15 +46,53 @@
 - `ISO-8601-1` · catalogue
 - `schema.org — the type vocabulary, collided to single words` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·5 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `24` · sealed `1` · horo `1`
+- bond degree `24` · sealed `1` · horo `5`
 - variance `0` · balanced `1` · trinity sum `1`
 - bindings `0` · standards `14`
 
 ## identity
 
-- uuid `03133be3-3898-86a1-b8a7-61e2b335847d`
+- uuid `ae48e97b-0cb7-8645-8f4b-a31a5d10d2c1`
 - bonds in `7` · out `7`
 - trinity form·code·proof `1`·`0`·`0`
 - links `7` / `7`
@@ -66,4 +104,4 @@
 
 ---
 
-<sub>content-uuid `7f7cf0ed-4d5e-8c3c-8312-b8145df5a1c8` · framed by typography partition `biological` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `60ca6863-1918-866e-b16f-9b53e98ba2ff` · framed by typography partition `biological` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>

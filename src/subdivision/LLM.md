@@ -3,15 +3,15 @@
 
 # subdivision
 
-path `subdivision` · uuid `55189c65-c390-86cf-94f5-d989a9dd81b3` · diamond `53981983-28da-8f92-9180-c71d747db581`
+path `subdivision` · uuid `55189c65-c390-86cf-94f5-d989a9dd81b3` · diamond `def547b3-2d30-809c-9a22-e132e506bb2a`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports subdivision · escapes —
-links `4/4` · folded `1` · bonds in `5` out `5`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stages·stat · ← cohort·landmarks·memories·stages·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law subdivision is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `0220ea79-1151-84ee-8732-049b7c26d0d6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f68e015d-d836-86f1-8318-80d66c5737f4` · `pnpm readme` · `pnpm computed:check`</sub>

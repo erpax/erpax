@@ -22,6 +22,10 @@ import { nodeOf } from '@/uuid/matrix'
 import { computedCssForUi } from '@/css/computed'
 import { verifySkillFrontmatter } from '@/skill/router/upgrade'
 import { alcapsBaselineViolations } from './baseline-debt'
+import { deriveCorpusAnalytics } from '@/readme/compute'
+import { rulesOf } from '@/rules'
+import { freeEnergyFromEntropy } from '@/accounting/entropy-proof'
+import { loadEfficiencyStore } from '@/apply/efficiency'
 
 /** ALCAPS seal-debt coordinate — ratchet.generated.ts emit via computedBaseline. */
 export const COMPUTED_AT_ALL_SCALES_COORDINATE = 'b576a290' as const
@@ -48,6 +52,7 @@ export type ComputedFace =
   | 'analytics'
   | 'bonds'
   | 'horo'
+  | 'entropy'
 
 export interface ComputedFaceCheck {
   readonly face: ComputedFace
@@ -92,6 +97,7 @@ const FACE_DERIVE: Readonly<Record<ComputedFace, { scale: ComputedScale; deriveF
   analytics: { scale: 'folder', deriveFn: 'deriveFolderAccounting' },
   bonds: { scale: 'matrix', deriveFn: 'deriveFolderModel.bondsIn' },
   horo: { scale: 'matrix', deriveFn: 'deriveDiamond.horo' },
+  entropy: { scale: 'corpus', deriveFn: 'freeEnergyFromEntropy' },
 }
 
 const checkOf = (
@@ -318,6 +324,26 @@ function baselinesCheck(cwd: string): ComputedFaceCheck {
   )
 }
 
+/** Corpus entropy scale — % progress toward zero entropy (Landauer free energy). */
+function entropyScaleCheck(cwd: string): ComputedFaceCheck {
+  const corpus = deriveCorpusAnalytics(cwd)
+  const snapshot = rulesOf(cwd, { force: true })
+  const violationCount = snapshot.axes.reduce((s, a) => s + a.violations, 0)
+  const eff = loadEfficiencyStore(cwd).latest
+  const verdict = freeEnergyFromEntropy({
+    entropyEb: corpus.entropy.netEntropyEb,
+    violationCount,
+    workTamperProduct: eff?.workTamperProduct ?? 0,
+    totalSealEb: corpus.entropy.totalSealEb,
+  })
+  const pct = verdict.scaleTowardZeroPct
+  const violations: string[] =
+    pct >= 100
+      ? []
+      : [`entropy scale ${pct}% toward zero (S=${verdict.S} bits · F=${verdict.freeEnergyBits})`]
+  return checkOf('entropy', violations)
+}
+
 /** Wave-scale corpus batch gate — verifyComputedFacesInWaves export exists. */
 function waveScaleCheck(corpusDriftCount: number): ComputedFaceCheck {
   return {
@@ -366,6 +392,7 @@ export function computedAtAllScalesVerdict(
 
     checks.push(cssVarsCheck('corpus', cwd))
     checks.push(baselinesCheck(cwd))
+    checks.push(entropyScaleCheck(cwd))
 
     const corpusViolations = [
       ...skillsIndexRuntimeViolations(cwd).slice(0, 5),

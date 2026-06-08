@@ -3,15 +3,15 @@
 
 # items
 
-path `tax/jurisdictions/deferred/tax/items` · uuid `b090fe53-32ee-84e4-aa66-70edea05367e` · diamond `1b40bd5a-de3b-8c64-88d1-0aac188fd501`
-horo `5` `round` · trinity `1·1·1` · sealed `1`
+path `tax/jurisdictions/deferred/tax/items` · uuid `f3b6cef2-4b08-8ea3-b366-082e9a235d68` · diamond `2efde30c-969b-8262-9599-2328a4a81aea`
+horo `4` `weave` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
-links `10/10` · folded `1` · bonds in `10` out `9`
+links `10/10` · folded `1` · bonds in `31` out `31`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·balance·issue·landmarks·motel·snapshots·tour·visit·visual · ← accounting·balance·comment·issue·landmarks·motel·snapshots·tour·visit·visual
+neighbors → agriculture·apiculture·aquaculture·batches·biomass·bundle·crop·cropplan·currency·declarations·forestry·harvest·inspections·lactation·law·lines·livestock·materials·measure·merge·movements·num·orders·packages·packs·postharvest·quotes·seed·share·upsell·variant · ← agriculture·apiculture·aquaculture·batches·biomass·bundle·crop·cropplan·currency·declarations·forestry·harvest·inspections·lactation·law·lines·livestock·materials·measure·merge·movements·num·orders·packages·packs·postharvest·quotes·seed·share·upsell·variant
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `d3564916-82ac-8611-9fce-e008749c6754` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `911a618f-be03-8bb9-937b-1ca3c64414e2` · `pnpm readme` · `pnpm computed:check`</sub>

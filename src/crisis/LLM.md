@@ -3,8 +3,8 @@
 
 # crisis
 
-path `crisis` · uuid `e639e2d0-5d3a-80e1-bdfc-e8edda7565f9` · diamond `a7983d35-fa47-83f4-91bd-b6dcdf4b56d6`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `crisis` · uuid `2d2466e0-cccf-8d04-9a5e-f5d7d64fb5c8` · diamond `bd75d0d4-d2c7-8a41-9606-6d2dfc113a7e`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports age·angel·balance·bottleneck·breath·career·cohort·dimension·society·time·wellbeing · exports crisis · escapes —
 links `24/24` · folded `1` · bonds in `11` out `11`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `7f9b4c5e-d879-8d8c-a41e-5ffe28cf900d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `dff4c5aa-4b52-87d1-87e8-f2014b09e540` · `pnpm readme` · `pnpm computed:check`</sub>

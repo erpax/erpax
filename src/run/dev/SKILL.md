@@ -1,10 +1,73 @@
 ---
 name: dev
-description: Use to run, start, launch, boot, dev-serve, smoke-test, or screenshot the erpax app (Payload 4 + Next.js on Cloudflare D1/R2). Drives the running app two ways — a Local API smoke (tsx) for backend/service/collection/hook changes, and a Playwright browser driver for the public frontend + admin. Use when asked to "run erpax", "start the dev server", "screenshot the site", or confirm a change works in the real app.
-sessions:
-  - 72427c9e-072d-492f-9706-07aeb29724b2
+description: "Use when reasoning about dev — erpax is a multi-tenant accounting platform: **Payload 4 CMS + Next.js 16**, backed by **Cloudflare D1** (SQLite) and R2, served in prod via OpenNext/workerd. Locally there is no r"
+atomPath: run/dev
+coordinate: run/dev · 4/weave · 50be8409
+contentUuid: "d9e65913-e63b-5835-b831-7562f140a40c"
+diamondUuid: "da957c06-c707-829b-acbd-cb2ec77642da"
+uuid: "50be8409-b89e-8e43-ae74-860b27de98e2"
+horo: 4
+bonds:
+  in:
+    - api
+    - bindings
+    - database
+    - deploy
+    - law
+    - run
+  out:
+    - api
+    - bindings
+    - database
+    - deploy
+    - law
+    - run
+typography:
+  partition: run
+  bondDegree: 0
+  neighbors: []
+standards: []
+bindings: []
+neighbors:
+  wikilink:
+    - api
+    - bindings
+    - database
+    - deploy
+    - law
+  matrix:
+    - api
+    - bindings
+    - database
+    - deploy
+    - law
+    - run
+  backlinks:
+    - api
+    - bindings
+    - database
+    - deploy
+    - law
+    - run
+signatures:
+  computationUuid: "ecfab72d-10ea-8f80-96c0-8f23642c0839"
+  stages:
+    - stage: path
+      stageUuid: "df9eef96-8448-8d48-ac42-bf649026aafd"
+    - stage: trinity
+      stageUuid: "50b5ec22-fb19-8c1c-bf1f-e594a75c718d"
+    - stage: boundary
+      stageUuid: "26f534a4-1c18-8aee-94bf-1ea92ed4d246"
+    - stage: links
+      stageUuid: "3178a008-71f7-8ff5-bbe0-9532f40650f5"
+    - stage: horo
+      stageUuid: "b983e892-4cc4-8471-9908-5780b6f6affc"
+    - stage: seal
+      stageUuid: "7e747893-40da-8ee4-ba88-f8fbd0ad6bda"
+    - stage: uuid
+      stageUuid: "9ee3853c-d2b5-8f89-8ef9-9d6df283064e"
+version: 2
 ---
-
 # run/dev — launch & drive the app locally
 
 erpax is a multi-tenant accounting platform: **Payload 4 CMS + Next.js 16**, backed

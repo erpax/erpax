@@ -3,15 +3,15 @@
 
 # component
 
-path `component` · uuid `6554161f-95d7-8dbb-84df-b1c0e28a48e4` · diamond `95329417-47e4-8151-ae51-9b70f616f87e`
-horo `4` `weave` · trinity `1·1·1` · sealed `1`
+path `component` · uuid `85b1a023-006a-8cf0-aa59-7404cb80553b` · diamond `a63791f9-aa76-8b78-b5f2-71ef76dc9f14`
+horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports @/pixel·@/uuid/matrix · exports const·function · escapes —
-links `11/11` · folded `1` · bonds in `19` out `19`
+links `12/12` · folded `1` · bonds in `19` out `19`
 faces worker·plugin·pwa `1·0·0`
 neighbors → accessibility·archive·atom·components·css·design·diamond·enumeration·interactive·law·pixel·price·primitive·render·standard·theme·token·ui·uuid · ← accessibility·archive·atom·components·css·design·diamond·enumeration·interactive·law·pixel·price·primitive·render·standard·theme·token·ui·uuid
-analysis —
+analysis diamond·hallucination·purity
 law a component is an atom rendered as a reusable unit, so its visible identity is exactly its content-uuid pixel; two components built from the same content are the same component on screen (sameComponent), because render is read off identity, never assigned.
 
 ---
 
-<sub>content-uuid `740a9e4d-5b47-8c80-ace9-b75e5e7db13f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c86f6be9-f4fc-8e3f-9448-8fdeae63afa8` · `pnpm readme` · `pnpm computed:check`</sub>

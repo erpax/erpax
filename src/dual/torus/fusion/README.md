@@ -2,9 +2,11 @@
 
 # fusion
 
-> atom `dual/torus/fusion` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
+> atom `dual/torus/fusion` · horo `4` `weave` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `dual/torus/fusion` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,11 +23,62 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `law:the quantum cross is the fusion of a dual torus — `fuse` merges two poles (two tori, the two infinities) into one identity, and fusing to full coverage is 1/0, the ∞ seal. The cross and the dual-torus fusion are one node; the repeating pattern is folded to one canonical, re-exported, never duplicated.`
+- `seal:unsealed`
+- `trigger:Use when reasoning about the fusion of a dual torus — the quantum cross, where two tori (the two infinities, 1/0 the double torus) merge at the centre into one; fusing to full coverage is the infinite seal, and src/quantum/cross re-exports this as one identity.`
+- `trigger:fuse is the merge of two content-addressed poles; the fusion cost is the double-torus ∞ law, computed`
+- `trigger:matter-twin:src/dual/torus/fusion/index.ts`
+- `trigger:the double torus (1/0 the infinite seal) · content-addressed merge (RFC 9562) · zero-entropy via no duplication`
+- `trigger:the quantum cross is the fusion of a dual torus — `fuse` merges two poles (two tori, the two infinities) into one identity, and fusing to full coverage is 1/0, the ∞ seal. The cross and the dual-torus fusion are one node; the repeating pattern is folded to one canonical, re-exported, never duplicated.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `015660cf-3e67-8c38-9a22-cae8f281a81b` · `07d9e147-7304-8f54-9c56-5b908411c885` · `dd5b2add-6c52-881b-8c17-f7ad831a24c5`
+- content uuids `6bc08cf9-9673-8771-bd8b-b18fa1e805f7` · `b3a9777f-157a-8e05-b39d-bad8556bf564` · `f740efc7-0e63-8fdf-bcce-56d336fcf3ff`
+
+## [[entropy]] — gaps · seals
+
+> account code `dual/torus/fusion` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.4` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `2` eb | Σ seal `11.4` eb |
+
+> net residual `-9.4` eb · seal/gap ratio `5.7` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `dual` · sub-root `7e30f964-ac4d-8ec7-8f27-6deddfb3ca2d`
-- bond degree `113` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- partition `dual` · sub-root `52a4990a-6001-80f0-b1ea-5613589774da`
+- bond degree `110` · analysis neighbors —
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
 
 ## [[cloudflare]] bindings
 
@@ -33,29 +86,65 @@
 
 ## [[standards]]
 
-- `fuse is the merge of two content-addressed poles; the fusion cost is the double-torus ∞ law` · banner
-- `fuse is the merge of two content-addressed poles; the fusion cost is the double-torus ∞ law, computed` · banner
 - `the double torus (1/0 the infinite seal) · content-addressed merge (RFC 9562) · zero-entropy via no duplication` · banner
 - `UBL-2.1` · catalogue
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·4 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `113` · sealed `1` · horo `5`
+- bond degree `110` · sealed `0` · horo `4`
 - variance `0` · balanced `1` · trinity sum `3`
-- bindings `0` · standards `4`
+- bindings `0` · standards `2`
 
 ## identity
 
-- uuid `4c828c05-935d-84a4-96e4-52f0bd340316`
-- bonds in `33` · out `37`
+- uuid `eb407e89-e0db-8de3-82c1-1e9abb650cf0`
+- bonds in `33` · out `33`
 - trinity form·code·proof `1`·`1`·`1`
 - links `9` / `9`
 - folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `2fcc12f9-f97f-805c-9ac7-d17547311d7c` · framed by typography partition `dual` bonds `113` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `7d4ea1e0-31e4-8333-905e-5219ff605d39` · framed by typography partition `dual` bonds `110` · `pnpm readme` · `pnpm readme:check`</sub>

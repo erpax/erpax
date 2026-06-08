@@ -2,7 +2,7 @@
 
 # deferral
 
-> atom `deferral` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `deferral` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -21,9 +21,9 @@
 
 ## typography graph
 
-- partition `deferral` · sub-root `90903979-bddd-82e0-9cb8-089b06b52377`
+- partition `deferral` · sub-root `69aefc5b-80bf-8a53-a8fc-590d32a620dd`
 - bond degree `34` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -33,15 +33,53 @@
 
 —
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·5 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `34` · sealed `1` · horo `7`
+- bond degree `34` · sealed `1` · horo `5`
 - variance `0` · balanced `1` · trinity sum `1`
 - bindings `0` · standards `0`
 
 ## identity
 
-- uuid `90903979-bddd-82e0-9cb8-089b06b52377`
+- uuid `69aefc5b-80bf-8a53-a8fc-590d32a620dd`
 - bonds in `11` · out `11`
 - trinity form·code·proof `1`·`0`·`0`
 - links `8` / `8`
@@ -53,4 +91,4 @@
 
 ---
 
-<sub>content-uuid `8adade7e-2214-8ce8-aac1-d2484e83cdf1` · framed by typography partition `deferral` bonds `34` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `43cffd4d-6751-839d-a60a-267e00cf548d` · framed by typography partition `deferral` bonds `34` · `pnpm readme` · `pnpm readme:check`</sub>

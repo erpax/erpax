@@ -23,7 +23,21 @@
 
 - partition `mycelium` · sub-root `ac80d139-7d3d-81b6-8c95-db75fa987151`
 - bond degree `40` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `40` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `8b82a6f8-b23d-88e7-ba73-9acbf6481c43` · framed by typography partition `mycelium` bonds `40` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `9301f963-1648-854d-961b-773c95183ab4` · framed by typography partition `mycelium` bonds `40` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,8 +3,8 @@
 
 # dietary
 
-path `dietary` · uuid `3f80f57a-dff9-8258-8301-212d6e1e7654` · diamond `d820b332-0925-8b3f-83ff-da044840fdf4`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `dietary` · uuid `6d7ab555-677a-8049-8aaa-0d3cd226bd20` · diamond `b50f9df8-f5c8-8e67-8bc7-9adb7f0c984f`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·supplement · exports dietary · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law dietary is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `b53410ff-aa52-8c7c-809b-79c43a9e9170` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `546f40fe-71d7-82fe-970b-019e2ee6f4d9` · `pnpm readme` · `pnpm computed:check`</sub>

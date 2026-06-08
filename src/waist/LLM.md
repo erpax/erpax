@@ -3,15 +3,15 @@
 
 # waist
 
-path `waist` · uuid `297d30b0-b27e-825c-9d01-b0348cecedd6` · diamond `a80ce1bb-2e99-818a-8dc7-4732ef5d439c`
+path `waist` · uuid `297d30b0-b27e-825c-9d01-b0348cecedd6` · diamond `465c8492-0bb4-8187-85ef-8d92489e6f8d`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports waist · escapes —
-links `4/4` · folded `1` · bonds in `1` out `1`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks · ← landmarks
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law waist is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `f84e5514-4f2f-809c-99b6-2280efbb8c0a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `160e2fd7-caed-89d4-b52c-f7e8412ec531` · `pnpm readme` · `pnpm computed:check`</sub>

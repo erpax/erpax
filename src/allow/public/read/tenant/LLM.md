@@ -3,15 +3,15 @@
 
 # tenant
 
-path `allow/public/read/tenant` · uuid `1a876b1c-4264-8aea-9978-f539bcc9d5da` · diamond `a4877819-86fc-8913-90d2-af31af26d034`
-horo `8` `crest` · trinity `1·1·1` · sealed `0`
+path `allow/public/read/tenant` · uuid `89e32db7-0902-878b-8f9c-a3d35cc76a0d` · diamond `130bfbf8-fd61-845a-984e-eef6505ab4d2`
+horo `7` `descent` · trinity `1·1·1` · sealed `0`
 imports @/iso/27002 · exports async·const·function · escapes —
-links `5/5` · folded `1` · bonds in `12` out `14`
+links `5/5` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·auto·balance·hooks·law·law·law·organization·research·scope·tenant·tenant·tenants·user · ← access·auto·balance·hooks·law·organization·research·scope·tenant·tenant·tenants·user
+neighbors → balance·law·organization·research·tenant·tenant·tenants · ← balance·law·organization·research·tenant·tenant·tenants
 analysis —
 law public read is tenant-scoped opt-in — only tenants flagged `allowPublicRead` expose published content to anonymous callers, resolved through a TTL cache to bound D1 row-reads.
 
 ---
 
-<sub>content-uuid `e016d5db-d177-84c5-914b-1568c9d05145` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `462a112f-0e92-8b0a-bd87-0a431afa0b15` · `pnpm readme` · `pnpm computed:check`</sub>

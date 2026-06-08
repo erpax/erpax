@@ -3,8 +3,8 @@
 
 # derive
 
-path `derive` · uuid `870ef6c4-be48-8557-9f71-78930af1a1a5` · diamond `16fe2472-453c-8dd0-9afd-2c62b885fc81`
-horo `5` `round` · trinity `1·1·1` · sealed `1`
+path `derive` · uuid `756e7287-ae65-854a-8e2c-28dee6463843` · diamond `6f795fdc-f3d8-8edf-8e2f-94eb0ac273c0`
+horo `5` `round` · trinity `1·1·1` · sealed `0`
 imports — · exports function · escapes —
 links `24/24` · folded `1` · bonds in `19` out `19`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `5021bd7c-f8b6-8c7e-a44b-ad31d5b07c9c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `124c0faa-0d39-8dd7-9ffa-fbbdc614e9f5` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # yes
 
-path `yes` · uuid `3c989236-ab42-8053-b2ef-5e7ff2d20260` · diamond `73831772-389b-8cdf-8520-259f4971785b`
+path `yes` · uuid `3c989236-ab42-8053-b2ef-5e7ff2d20260` · diamond `e79b235e-e6e8-8cf0-9a28-910271fd46f3`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports yes · escapes —
-links `4/4` · folded `1` · bonds in `0` out `0`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law yes is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `58cf2d7c-9f7a-8c76-aa80-6f3e64bb9eba` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6d3cdc5c-d49a-8e0b-a355-50d343bb716a` · `pnpm readme` · `pnpm computed:check`</sub>

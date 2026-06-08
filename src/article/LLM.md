@@ -3,8 +3,8 @@
 
 # article
 
-path `article` · uuid `28ccbbb8-1f8f-87af-b87d-475c109eb0de` · diamond `8f9e94a8-9bc4-87c1-871f-3d74665b35a3`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `article` · uuid `d808ced0-2d6a-8898-94aa-1c24393d8335` · diamond `17d06da5-e37f-8d74-8b98-cbd16c7ca53e`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports advertiser·analysis·ask·associated·background·body·content·law·medical·news·opinion·public·reportage·review·satirical·scholarly·section·tech · exports article · escapes —
 links `18/18` · folded `1` · bonds in `19` out `19`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law article is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `cc7c9a44-c6af-8dad-8697-cc70f36b6b97` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `08e0e0d9-8e01-8b24-91f7-669748784941` · `pnpm readme` · `pnpm computed:check`</sub>

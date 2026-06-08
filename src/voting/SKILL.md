@@ -1,8 +1,99 @@
 ---
 name: voting
-description: Use when the society casts and tallies collective choice — ballots, votes, and rating series — where every gameable violation (double-voting, stuffing, post-cast tampering, aggregate fudging, anonymity collision, cross-tenant pollution) is made a uuid-mismatch any third party can detect without trusting the platform.
+description: "Use when the society casts and tallies collective choice — ballots, votes, and rating series — where every gameable violation (double-voting, stuffing, post-cast tampering, aggregate fudging, anonymity collision, cross-tenant pollution) is made a uuid-mismatch any third party can detect without trusting the platform."
+atomPath: voting
+coordinate: voting · 8/crest · c927e5c7
+contentUuid: "79dc1aae-6a2b-5850-830f-fda2bb419bdf"
+diamondUuid: "261e6e6b-b8cf-8897-8de3-0ea47b42a9c4"
+uuid: "c927e5c7-c133-8eb3-bc99-068103d03c5d"
+horo: 8
+bonds:
+  in:
+    - corruption
+    - cost
+    - duality
+    - fractal
+    - governance
+    - history
+    - identity
+    - merge
+    - proof
+    - society
+  out:
+    - corruption
+    - cost
+    - duality
+    - fractal
+    - governance
+    - history
+    - identity
+    - merge
+    - proof
+    - society
+typography:
+  partition: voting
+  bondDegree: 30
+  neighbors: []
+standards:
+  - "ISO 19011:2018 §6.4.6 (every vote/rating audit-trailed)"
+  - "ISO/IEC 25010:2023 §5.6 security — non-repudiation"
+  - "RFC 4122 §4.3 + RFC 8785 (content-derived uuids)"
+  - W3C DID Core v1.0 (voter identity)
+  - W3C VC Data Model 2.0 (votes/ratings as verifiable claims)
+bindings: []
+neighbors:
+  wikilink:
+    - corruption
+    - cost
+    - duality
+    - fractal
+    - governance
+    - history
+    - identity
+    - merge
+    - proof
+    - society
+  matrix:
+    - corruption
+    - cost
+    - duality
+    - fractal
+    - governance
+    - history
+    - identity
+    - merge
+    - proof
+    - society
+  backlinks:
+    - corruption
+    - cost
+    - duality
+    - fractal
+    - governance
+    - history
+    - identity
+    - merge
+    - proof
+    - society
+signatures:
+  computationUuid: "bc1b616d-fec4-8767-8678-380e2c37a29a"
+  stages:
+    - stage: path
+      stageUuid: "9debe9bf-638e-8ad6-93a1-babceae3d7f9"
+    - stage: trinity
+      stageUuid: "f3d02d40-6317-8f23-b46a-ef1e9ec35bc0"
+    - stage: boundary
+      stageUuid: "4ba139d4-ca90-83b3-8f70-400cdb2aa74e"
+    - stage: links
+      stageUuid: "2830f216-7973-88b1-9c00-92409ef13f45"
+    - stage: horo
+      stageUuid: "cc2e4b41-d789-8b47-9c80-e07b5dde9e0e"
+    - stage: seal
+      stageUuid: "80ad7a6d-4a1f-8151-bfe9-60ea852e79d3"
+    - stage: uuid
+      stageUuid: "d75631d1-3232-85e4-9e04-176a67ccab16"
+version: 2
 ---
-
 # voting — the unforgeable cast and the honest tally
 
 FORM: **a vote is its own content-uuid, so every way to game a ballot becomes a mismatch a stranger can catch.** Voting and rating systems are notoriously gameable; erpax does not *trust* a tally and audit it after — it derives the vote's id from the vote's content ([[identity]]), and each fraud class collapses into a recomputable disagreement ([[proof]]). Pure, no I/O ⇒ testable.

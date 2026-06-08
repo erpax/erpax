@@ -3,8 +3,8 @@
 
 # booking
 
-path `booking` · uuid `e1778417-9ecd-8679-9ccc-79eabab26480` · diamond `bcdb550a-35e7-8202-87f5-2081caf715af`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `booking` · uuid `ab0f6b74-0a36-8ba4-bfd6-6faa47206e42` · diamond `6b88f0d6-20fd-8a03-9a31-afe8fb8ca32c`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports advance·agent·collapse·law·merge·page·requirement·sti·time·tour · exports booking · escapes —
 links `10/10` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law booking is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `3689930c-e8c5-8fb1-8c7c-9a3a4f1dcd7f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `bdff93b2-3efb-86aa-9f63-42d421095b0b` · `pnpm readme` · `pnpm computed:check`</sub>

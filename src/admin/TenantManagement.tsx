@@ -31,6 +31,15 @@ import HostTable from './TenantTable';
 import HostFilters from './TenantFilters';
 import HostDialog from './TenantDialog';
 import BatchActionsBar from './BatchActionsBar';
+import {
+  Badge,
+  Button,
+  Dialog,
+  DialogContent,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+} from '@/ui';
 
 interface HostManagementProps {
   onTenantCreated?: (tenant: Tenant) => void;
@@ -379,43 +388,30 @@ function HostDetailDialog({
   onEdit: () => void;
   onAction: (tenantId: string, action: string) => Promise<void>;
 }) {
-  if (!open) return null;
-
   const validActions = TENANT_STATUS_TRANSITIONS[tenant.status] || [];
   const statusColor = TENANT_STATUS_COLORS[tenant.status];
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-      <div className="bg-white rounded-lg shadow-xl max-w-2xl w-full mx-4 max-h-[90vh] overflow-y-auto">
-        {/* Header */}
-        <div className="flex items-center justify-between p-6 border-b">
-          <div>
-            <h2 className="text-2xl font-bold text-gray-900">{tenant.name}</h2>
-            <p className="text-sm text-gray-600 mt-1">{tenant.slug}</p>
-          </div>
-          <button
-            onClick={onClose}
-            className="text-gray-400 hover:text-gray-600 text-2xl"
-          >
-            ×
-          </button>
-        </div>
+    <Dialog
+      open={open}
+      onOpenChange={(nextOpen) => {
+        if (!nextOpen) onClose();
+      }}
+    >
+      <DialogContent className="max-h-[90vh] max-w-2xl overflow-y-auto sm:max-w-2xl">
+        <DialogHeader>
+          <DialogTitle className="text-2xl">{tenant.name}</DialogTitle>
+          <p className="text-sm text-gray-600">{tenant.slug}</p>
+        </DialogHeader>
 
-        {/* Content */}
-        <div className="p-6 space-y-6">
-          {/* Status */}
+        <div className="space-y-6">
           <div>
             <h3 className="text-sm font-semibold text-gray-900 mb-2">Status</h3>
-            <div className="flex items-center gap-2">
-              <span
-                className={`px-3 py-1 rounded-full text-sm font-medium text-white bg-${statusColor}-600`}
-              >
-                {TENANT_STATUS_LABELS[tenant.status]}
-              </span>
-            </div>
+            <Badge className={`bg-${statusColor}-600 text-white hover:bg-${statusColor}-600`}>
+              {TENANT_STATUS_LABELS[tenant.status]}
+            </Badge>
           </div>
 
-          {/* Details Grid */}
           <div className="grid grid-cols-2 gap-6">
             <div>
               <h4 className="text-sm font-semibold text-gray-900">Country</h4>
@@ -465,50 +461,44 @@ function HostDetailDialog({
           )}
         </div>
 
-        {/* Footer with actions */}
-        <div className="flex justify-between items-center p-6 border-t bg-gray-50">
+        <DialogFooter className="justify-between border-t bg-gray-50 sm:justify-between">
           <div className="flex gap-2">
             {validActions.includes('active') && (
-              <button
+              <Button
+                size="sm"
                 onClick={() => onAction(tenant.id, 'activate')}
-                className="px-3 py-1 bg-green-600 text-white rounded hover:bg-green-700 text-sm"
+                className="bg-green-600 hover:bg-green-700"
               >
                 Activate
-              </button>
+              </Button>
             )}
             {validActions.includes('suspended') && (
-              <button
+              <Button
+                size="sm"
                 onClick={() => onAction(tenant.id, 'suspend')}
-                className="px-3 py-1 bg-yellow-600 text-white rounded hover:bg-yellow-700 text-sm"
+                className="bg-yellow-600 hover:bg-yellow-700"
               >
                 Suspend
-              </button>
+              </Button>
             )}
             {validActions.includes('archived') && (
-              <button
+              <Button
+                size="sm"
+                variant="destructive"
                 onClick={() => onAction(tenant.id, 'archive')}
-                className="px-3 py-1 bg-red-600 text-white rounded hover:bg-red-700 text-sm"
               >
                 Archive
-              </button>
+              </Button>
             )}
           </div>
           <div className="flex gap-2">
-            <button
-              onClick={onEdit}
-              className="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50"
-            >
+            <Button variant="outline" onClick={onEdit}>
               Edit
-            </button>
-            <button
-              onClick={onClose}
-              className="px-4 py-2 bg-gray-900 text-white rounded-lg hover:bg-gray-800"
-            >
-              Close
-            </button>
+            </Button>
+            <Button onClick={onClose}>Close</Button>
           </div>
-        </div>
-      </div>
-    </div>
+        </DialogFooter>
+      </DialogContent>
+    </Dialog>
   );
 }

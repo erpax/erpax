@@ -25,7 +25,25 @@
 
 - partition `exchange` · sub-root `d46c03f7-124f-8fb6-8180-c9b87a9d117d`
 - bond degree `43` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `EU-2016/679` · catalogue
+- `GDPR Art.5(1)(c) data-minimisation (release only the granted fields)` · banner
+- `ISO-27001` · catalogue
+- `ISO/IEC 27001 A.5.14 information-transfer (controlled cross-boundary exchange)` · banner
+- `ISO/IEC-27001:2022` · catalogue
+
+## analytics
+
+- bond degree `43` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `5`
 
 ## identity
 
@@ -41,4 +59,4 @@
 
 ---
 
-<sub>content-uuid `a8abfe4b-4c2a-89c2-95c3-ca5b3f861a88` · framed by typography partition `exchange` bonds `43` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `6f92c617-0e91-88f5-8e08-0b85846b0afd` · framed by typography partition `exchange` bonds `43` · `pnpm readme` · `pnpm readme:check`</sub>

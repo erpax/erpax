@@ -4,7 +4,7 @@
 # footer
 
 path `footer` · uuid `a6d072f6-9117-870b-aa31-d47240b40cc7` · diamond `d6f817c1-cd73-8212-ba76-4de82320f608`
-horo `4` `weave` · trinity `1·1·1` · sealed `1`
+horo `4` `weave` · trinity `1·1·1` · sealed `0`
 imports — · exports Footer·FooterGlobal · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law footer is one schema.org word, content-addressed; the same word collides eve
 
 ---
 
-<sub>content-uuid `ed1d2206-af69-814d-9854-c395ecb8b3bb` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4335becd-62df-81d1-9b22-96596fb208db` · `pnpm readme` · `pnpm computed:check`</sub>

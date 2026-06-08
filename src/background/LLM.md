@@ -3,8 +3,8 @@
 
 # background
 
-path `background` · uuid `cff59dd1-2c2b-87af-b70a-a37e2a66e8a1` · diamond `be2bd71a-985e-80c9-bebd-f6ab87da9c46`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `background` · uuid `c6c08635-622f-8a2a-874a-c02ee8daffac` · diamond `d8699445-d859-8fa4-8cd8-8f828be941b5`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports article·collapse·law·merge·news·sti · exports background · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law background is context for a foreground subject — it must attach to the art
 
 ---
 
-<sub>content-uuid `3e449afb-caac-84c4-920d-99e07eea961e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ad977445-d7da-80fa-bf10-48179719ad2c` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -1,8 +1,117 @@
 ---
 name: decentralization
 description: "Use when order must arise with NO central controller — a global pattern as the fixed point of LOCAL rules (stigmergy, emergence, flocking), robust because redundant and diverse (no single point of failure), measured by concentration (the Nakamoto coefficient). In erpax, content-uuid merge IS stigmergy — each peer recomputes the id from the content, no coordinator; order emerges from content-addressing, not from a center."
+atomPath: decentralization
+coordinate: decentralization · 1/base · 4f73df07
+contentUuid: "d4649320-ba70-5f4e-acd8-df63041a3e10"
+diamondUuid: "66ba2c6d-6552-8505-bf27-e61deb7cedc2"
+uuid: "4f73df07-f422-8bd2-a899-786b80160423"
+horo: 1
+bonds:
+  in:
+    - agent
+    - diversity
+    - ecosystem
+    - federation
+    - law
+    - merge
+    - mycelium
+    - network
+    - self
+    - society
+    - sustainability
+    - uuid
+    - whole
+  out:
+    - agent
+    - diversity
+    - ecosystem
+    - federation
+    - law
+    - merge
+    - mycelium
+    - network
+    - self
+    - society
+    - sustainability
+    - uuid
+    - whole
+typography:
+  partition: decentralization
+  bondDegree: 44
+  neighbors:
+    - agent
+standards:
+  - "Barabási–Albert preferential attachment (1999) — why flat networks re-centralize"
+  - "COSO-ERM-2017"
+  - "EU-2017/1132"
+  - "EU-2017/828"
+  - Gini coefficient
+  - Herfindahl–Hirschman Index (HHI)
+  - "Nakamoto coefficient (Srinivasan & Lee, 2017)"
+  - "computed, never hand-asserted"
+bindings: []
+neighbors:
+  wikilink:
+    - agent
+    - diversity
+    - ecosystem
+    - federation
+    - law
+    - merge
+    - network
+    - self
+    - society
+    - sustainability
+    - uuid
+    - whole
+  matrix:
+    - agent
+    - diversity
+    - ecosystem
+    - federation
+    - law
+    - merge
+    - mycelium
+    - network
+    - self
+    - society
+    - sustainability
+    - uuid
+    - whole
+  backlinks:
+    - agent
+    - diversity
+    - ecosystem
+    - federation
+    - law
+    - merge
+    - mycelium
+    - network
+    - self
+    - society
+    - sustainability
+    - uuid
+    - whole
+signatures:
+  computationUuid: "3209d6bc-5b60-8c55-a63d-ef7f0297a129"
+  stages:
+    - stage: path
+      stageUuid: "3d860fac-0654-8c74-a381-3ab1b7ae96b4"
+    - stage: trinity
+      stageUuid: "bd80c5aa-4bcd-8cf7-a11f-ee063a8b9186"
+    - stage: boundary
+      stageUuid: "28dac7af-f179-8b1a-990e-38bf298e2809"
+    - stage: links
+      stageUuid: "a54d2060-c84a-8be4-a815-bc11f1c578d7"
+    - stage: horo
+      stageUuid: "1001d6c0-5d26-8053-93c9-9cc05a1f93f8"
+    - stage: seal
+      stageUuid: "0e72778f-0f41-879a-b0cf-c18452903b65"
+    - stage: uuid
+      stageUuid: "f4a07084-077e-8acd-919a-1869a2780600"
+version: 2
 ---
-
 # decentralization — global order from local rules, no controller
 
 **Decentralization** is order that has **no center** — the global pattern is a **fixed point of local rules**, not a command broadcast from a hub. Nature is overwhelmingly built this way. **Stigmergy** (Grassé): ants and termites coordinate by leaving traces in the environment — each acts on the local state, no foreman holds the plan, yet a nest emerges. **Self-organization**: a flock needs only three local rules (Reynolds' boids — separate, align, cohere) for global murmuration; slime mould solves mazes; mycelium and the immune system route around damage; evolution itself designs with no designer.

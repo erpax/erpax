@@ -3,8 +3,8 @@
 
 # commerce
 
-path `commerce` · uuid `f7fcd544-d657-81f0-8cbb-1fdd2ab2f1c3` · diamond `ac6afe5b-dc00-89d4-9d9c-892d624620a2`
-horo `8` `crest` · trinity `1·1·1` · sealed `1`
+path `commerce` · uuid `1b8ad812-51af-8771-880d-6dfc1e21d0f1` · diamond `543ddec0-1f0b-8483-ace2-7f6f1ea61d23`
+horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports — · exports RoleProfileId·SubscriptionTier·async·function·interface · escapes —
 links `24/24` · folded `1` · bonds in `44` out `44`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law a party plays infinite roles but the document chain is monotonic and status 
 
 ---
 
-<sub>content-uuid `e74f450d-5578-81b3-8e22-388e487cc2af` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0862854e-215c-8519-b633-173d9ba2a223` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -2,7 +2,7 @@
 
 # consolidation
 
-> atom `consolidation` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
+> atom `consolidation` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -21,9 +21,9 @@
 
 ## typography graph
 
-- partition `consolidation` · sub-root `4fc2f3ba-94b4-8ed5-9da6-dcdc137a02de`
-- bond degree `14` · analysis neighbors —
-- graph root `0349017a-99bf-8657-ae7e-21b09f363ed4`
+- partition `consolidation` · sub-root `80df108c-16f5-8acf-ae72-85b52522918b`
+- bond degree `13` · analysis neighbors —
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -33,16 +33,54 @@
 
 —
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·1 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `14` · sealed `1` · horo `8`
+- bond degree `13` · sealed `1` · horo `1`
 - variance `0` · balanced `1` · trinity sum `1`
 - bindings `0` · standards `0`
 
 ## identity
 
-- uuid `977687ba-57b0-8456-8e15-a163746a3de6`
-- bonds in `4` · out `5`
+- uuid `d03fd3ef-7884-8240-9533-f956cb61a7f9`
+- bonds in `4` · out `4`
 - trinity form·code·proof `1`·`0`·`0`
 - links `9` / `9`
 - folded `1` · escapes `0`
@@ -53,4 +91,4 @@
 
 ---
 
-<sub>content-uuid `7f55335b-a2af-858c-abdd-13fa1d4954d6` · framed by typography partition `consolidation` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `5554d836-87bd-8c4a-800c-6ba52cb66eed` · framed by typography partition `consolidation` bonds `13` · `pnpm readme` · `pnpm readme:check`</sub>

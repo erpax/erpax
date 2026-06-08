@@ -3,7 +3,7 @@
 
 # biophoton
 
-path `biophoton` · uuid `72cb2745-dbef-8f4f-9e5e-2117948455d2` · diamond `059730bf-c075-8cd8-8970-83071362b95c`
+path `biophoton` · uuid `19cec9cf-ad88-8bff-ada8-21797f2ad29c` · diamond `3ea55ba6-5298-8041-9c02-ba1d45957906`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports analog·aura·biofield·biomagnetism·cmyk·coherence·emission·health·measure·proof·radiation·signal · exports biophoton · escapes —
 links `19/19` · folded `1` · bonds in `13` out `13`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `ef36b4b4-b808-874e-a039-91d6aae4b208` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `19a3b276-a610-848c-a293-6f7cc30b7657` · `pnpm readme` · `pnpm computed:check`</sub>

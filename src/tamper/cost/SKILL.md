@@ -1,8 +1,534 @@
 ---
-name: tamper-cost
-description: Use when reasoning about how much it costs to tamper a zero-entropy (content-addressed, keyless) erpax store — second-preimage on the digest vs. rewriting the whole all-directions-wired graph and forging the external anchor. Integrity, not secrecy; the protection is the computational impossibility of changing all coherently. Matter-twin tamper-cost/index.ts.
+name: cost
+description: "Use when reasoning about how much it costs to tamper a zero-entropy (content-addressed, keyless) erpax store — second-preimage on the digest vs. rewriting the whole all-directions-wired graph and forging the external anchor. Integrity, not secrecy; the protection is the computational impossibility of changing all coherently. Matter-twin tamper-cost/index.ts."
+atomPath: tamper/cost
+coordinate: tamper/cost · 4/weave · 979ea6df
+contentUuid: "38ec5ac2-8d44-536f-b1cf-f118f0437cf7"
+diamondUuid: "f916e5b3-cb0a-8f1c-b169-730e86fad7a2"
+uuid: "979ea6df-c179-8559-a8b0-d8921d0b0aac"
+horo: 4
+bonds:
+  in:
+    - accounting
+    - addressed
+    - agent
+    - akashic
+    - analog
+    - analytics
+    - anchor
+    - anchoring
+    - angel
+    - aura
+    - baked
+    - balance
+    - barrier
+    - breath
+    - carbon
+    - category
+    - chat
+    - collider
+    - competition
+    - complete
+    - concatenate
+    - confirm
+    - consulting
+    - cost
+    - cultivation
+    - decide
+    - decompression
+    - development
+    - diamond
+    - digit
+    - drug
+    - dry
+    - dust
+    - enterprisebudget
+    - entropy
+    - entry
+    - estimated
+    - expand
+    - exported
+    - fear
+    - finality
+    - fodder
+    - folded
+    - folder
+    - fronted
+    - fusion
+    - gate
+    - generate
+    - gravity
+    - guardian
+    - hallucination
+    - harmony
+    - holographic
+    - honest
+    - import
+    - karma
+    - law
+    - lawful
+    - lexical
+    - log
+    - love
+    - math
+    - matrix
+    - maxtampercost
+    - mcp
+    - merge
+    - mulch
+    - named
+    - origin
+    - peace
+    - pickup
+    - plan
+    - plasma
+    - proof
+    - propagation
+    - pruning
+    - purity
+    - quantum
+    - reactor
+    - reciprocal
+    - redundancy
+    - relocate
+    - request
+    - research
+    - resolve
+    - rodin
+    - science
+    - scouting
+    - seal
+    - security
+    - self
+    - shallow
+    - shannon
+    - sharing
+    - singularity
+    - skills
+    - society
+    - specification
+    - strength
+    - suffering
+    - surprisal
+    - tamper
+    - trading
+    - translate
+    - trellis
+    - triggered
+    - tunnel
+    - twinned
+    - typography
+    - unavoidable
+    - unit
+    - variance
+    - vibration
+    - zeropoint
+  out:
+    - accounting
+    - addressed
+    - agent
+    - akashic
+    - analog
+    - analytics
+    - anchor
+    - anchoring
+    - angel
+    - aura
+    - baked
+    - balance
+    - barrier
+    - breath
+    - carbon
+    - category
+    - chat
+    - collider
+    - competition
+    - complete
+    - concatenate
+    - confirm
+    - consulting
+    - cost
+    - cultivation
+    - decide
+    - decompression
+    - development
+    - diamond
+    - digit
+    - drug
+    - dry
+    - dust
+    - enterprisebudget
+    - entropy
+    - entry
+    - estimated
+    - expand
+    - exported
+    - fear
+    - finality
+    - fodder
+    - folded
+    - folder
+    - fronted
+    - fusion
+    - gate
+    - generate
+    - gravity
+    - guardian
+    - hallucination
+    - harmony
+    - holographic
+    - honest
+    - import
+    - karma
+    - law
+    - lawful
+    - lexical
+    - log
+    - love
+    - math
+    - matrix
+    - maxtampercost
+    - mcp
+    - merge
+    - mulch
+    - named
+    - origin
+    - peace
+    - pickup
+    - plan
+    - plasma
+    - proof
+    - propagation
+    - pruning
+    - purity
+    - quantum
+    - reactor
+    - reciprocal
+    - redundancy
+    - relocate
+    - request
+    - research
+    - resolve
+    - rodin
+    - science
+    - scouting
+    - seal
+    - security
+    - self
+    - shallow
+    - shannon
+    - sharing
+    - singularity
+    - skills
+    - society
+    - specification
+    - strength
+    - suffering
+    - surprisal
+    - tamper
+    - trading
+    - translate
+    - trellis
+    - triggered
+    - tunnel
+    - twinned
+    - typography
+    - unavoidable
+    - unit
+    - variance
+    - vibration
+    - zeropoint
+typography:
+  partition: tamper
+  bondDegree: 440
+  neighbors:
+    - analytics
+    - "analytics/max-tamper-cost"
+    - aura
+    - diamond
+    - hallucination
+    - purity
+standards:
+  - "CRAQ (Terrace & Freedman, USENIX ATC 2009) — strong-consistency chain replication"
+  - "Conservation Law 55/60 (tamper cost cascades through the uuid-chain)"
+  - Conservation Law 62 (coverage) enlarged by the invariant (semantic) + replica axes
+  - "DeepSeek-Prover-V2 — recursive subgoal decomposition, Lean-4 kernel-checked invariants"
+  - "ISO-19011:2018 §6.5 (audit evidence integrity)"
+  - "NIST SP 800-107r1 §5.1 (hash security strengths: 2nd-preimage ≈ L bits, collision ≈ L/2)"
+  - "RFC 9562 §8 (UUID security considerations — no trusted-time / no integrity guarantee from the format alone)"
+  - "W3C-PROV-O"
+bindings: []
+neighbors:
+  wikilink:
+    - anchor
+    - aura
+    - collapse
+    - consistency
+    - cost
+    - coverage
+    - duality
+    - generate
+    - holographic
+    - identity
+    - merge
+    - one
+    - proof
+    - replication
+    - seal
+    - shred
+    - society
+    - standard
+    - uuid
+    - whole
+  matrix:
+    - accounting
+    - addressed
+    - agent
+    - akashic
+    - analog
+    - analytics
+    - anchor
+    - anchoring
+    - angel
+    - aura
+    - baked
+    - balance
+    - barrier
+    - breath
+    - carbon
+    - category
+    - chat
+    - collider
+    - competition
+    - complete
+    - concatenate
+    - confirm
+    - consulting
+    - cost
+    - cultivation
+    - decide
+    - decompression
+    - development
+    - diamond
+    - digit
+    - drug
+    - dry
+    - dust
+    - enterprisebudget
+    - entropy
+    - entry
+    - estimated
+    - expand
+    - exported
+    - fear
+    - finality
+    - fodder
+    - folded
+    - folder
+    - fronted
+    - fusion
+    - gate
+    - generate
+    - gravity
+    - guardian
+    - hallucination
+    - harmony
+    - holographic
+    - honest
+    - import
+    - karma
+    - law
+    - lawful
+    - lexical
+    - log
+    - love
+    - math
+    - matrix
+    - maxtampercost
+    - mcp
+    - merge
+    - mulch
+    - named
+    - origin
+    - peace
+    - pickup
+    - plan
+    - plasma
+    - proof
+    - propagation
+    - pruning
+    - purity
+    - quantum
+    - reactor
+    - reciprocal
+    - redundancy
+    - relocate
+    - request
+    - research
+    - resolve
+    - rodin
+    - science
+    - scouting
+    - seal
+    - security
+    - self
+    - shallow
+    - shannon
+    - sharing
+    - singularity
+    - skills
+    - society
+    - specification
+    - strength
+    - suffering
+    - surprisal
+    - tamper
+    - trading
+    - translate
+    - trellis
+    - triggered
+    - tunnel
+    - twinned
+    - typography
+    - unavoidable
+    - unit
+    - variance
+    - vibration
+    - zeropoint
+  backlinks:
+    - accounting
+    - addressed
+    - agent
+    - akashic
+    - analog
+    - analytics
+    - anchor
+    - anchoring
+    - angel
+    - aura
+    - baked
+    - balance
+    - barrier
+    - breath
+    - carbon
+    - category
+    - chat
+    - collider
+    - competition
+    - complete
+    - concatenate
+    - confirm
+    - consulting
+    - cost
+    - cultivation
+    - decide
+    - decompression
+    - development
+    - diamond
+    - digit
+    - drug
+    - dry
+    - dust
+    - enterprisebudget
+    - entropy
+    - entry
+    - estimated
+    - expand
+    - exported
+    - fear
+    - finality
+    - fodder
+    - folded
+    - folder
+    - fronted
+    - fusion
+    - gate
+    - generate
+    - gravity
+    - guardian
+    - hallucination
+    - harmony
+    - holographic
+    - honest
+    - import
+    - karma
+    - law
+    - lawful
+    - lexical
+    - log
+    - love
+    - math
+    - matrix
+    - maxtampercost
+    - mcp
+    - merge
+    - mulch
+    - named
+    - origin
+    - peace
+    - pickup
+    - plan
+    - plasma
+    - proof
+    - propagation
+    - pruning
+    - purity
+    - quantum
+    - reactor
+    - reciprocal
+    - redundancy
+    - relocate
+    - request
+    - research
+    - resolve
+    - rodin
+    - science
+    - scouting
+    - seal
+    - security
+    - self
+    - shallow
+    - shannon
+    - sharing
+    - singularity
+    - skills
+    - society
+    - specification
+    - strength
+    - suffering
+    - surprisal
+    - tamper
+    - trading
+    - translate
+    - trellis
+    - triggered
+    - tunnel
+    - twinned
+    - typography
+    - unavoidable
+    - unit
+    - variance
+    - vibration
+    - zeropoint
+signatures:
+  computationUuid: "9fcfe1f3-1ca2-865e-ad11-ec6878ef12ba"
+  stages:
+    - stage: path
+      stageUuid: "c4a6cfbb-5715-8b93-b12d-90915c16b1bd"
+    - stage: trinity
+      stageUuid: "3420ff2f-97d7-8964-b4d1-c8a7a14822c6"
+    - stage: boundary
+      stageUuid: "d2c970f6-248c-87f6-8dff-28e4ce4709ca"
+    - stage: links
+      stageUuid: "2aa5bbdc-cf42-8ea7-9fa1-0b349db7f220"
+    - stage: horo
+      stageUuid: "70a13429-e0b5-885e-a610-b38c37102c4c"
+    - stage: seal
+      stageUuid: "408bf16c-9155-836f-a1ec-2139af0f5e95"
+    - stage: uuid
+      stageUuid: "b300ff8e-bc5e-8d47-83c4-535b12b77c5c"
+version: 2
 ---
-
 # tamper-cost — what it costs to crack a zero-entropy app
 
 erpax holds **no secret**: every id is a deterministic v8 content-[[uuid]] (SHA-256, 106 binding bits — [[identity]]). So the security property is **integrity, not confidentiality** — there is nothing to *steal* or *guess*; the only attack is to **out-compute the whole**. Two paths, and the cheaper one binds:
@@ -26,7 +552,7 @@ The README front page is this verdict made public — the rungs computed live fr
 - **Replication amplifies the cascade — only under strong consistency (3FS/CRAQ inhale).** Under CRAQ ([[replication]]/[[consistency]] — the protocol behind deepseek-ai/3FS), R independently-anchored replicas each re-derive every content-uuid, so an undetected tamper must evade the all-directions coverage check on *all R at once* — the independent-check count is **×R**, widening forge while verify stays O(N) (any one replica suffices to audit). **Eventual** consistency leaves a stale-read window — one tampered replica can serve the bad version before reconciliation — so the multiplier is honest only with CRAQ. The same Law 62 coverage law run across the replica axis: `replicationChecks` feeds the one `coverageCostLog2`, never a parallel term ([[merge]]: same content ⇒ same uuid on every peer).
 - **Invariants enlarge the coherent-rewrite set — only if the audit runs them (DeepSeek-Prover inhale).** The uuid cascade forces a tamper to rewrite the *structural* closure; machine-checked conservation invariants ([[proof]] — balance, period-lock, chain-verify) force the *semantic* closure too: a uuid-consistent state that breaks balance is still caught. Each constraining invariant is one more independent gate — gates **add** (a distinct set) where replicas **multiply** (copies of the set). DeepSeek-Prover's recursive, kernel-checked proofs make these gates real while keeping the verifier O(N) ([[proof]]: green by construction). An invariant nobody checks is no gate — `invariantChecks` counts only the ones the `dry-proof` bundle actually evaluates.
 
-Matter-twin: `tamper-cost/index.ts` (`crackVerdict`/`secondPreimageLog2`/`birthdayMarginBits`/`replicationChecks`/`invariantChecks`) + `index.test.ts` (the proof — green by construction). The cited strengths must be true ([[standard]] NIST SP 800-107, RFC 9562 §8, CRAQ USENIX ATC 2009, DeepSeek-Prover-V2). Where this makes the record un-forgeable, [[shred]] makes the content un-recoverable — the same content-addressing, the [[duality]] of transparency↔confidentiality. Composes: [[uuid]] · [[anchor]] · [[shred]] · [[identity]] · [[merge]] · [[replication]] · [[consistency]] · [[proof]] · [[aura]] · [[holographic]] · [[whole]] · [[one]] · [[collapse]] · [[standard]].
+Matter-twin: `tamper-cost/index.ts` (`crackVerdict`/`secondPreimageLog2`/`birthdayMarginBits`/`replicationChecks`/`invariantChecks`) + `index.test.ts` (the proof — green by construction). The cited strengths must be true ([[standard]] NIST SP 800-107, RFC 9562 §8, CRAQ USENIX ATC 2009, DeepSeek-Prover-V2). Where this makes the record un-forgeable, [[shred]] makes the content un-recoverable — the same content-addressing, the [[duality]] of transparency↔confidentiality. **Manual development** composes here via [[cost]] `manualDevelopmentPrice` — hand-forge ≫ verify computed diamonds. **Improve receipts** amplify via [[wave]]/policy `tamperCostForImproveReceipt` — prev-chained path ledger + wave receipts compound `doubleTorusCostLog2` + `coverageCostLog2` toward ∞ at full session coverage. Composes: [[uuid]] · [[anchor]] · [[shred]] · [[identity]] · [[merge]] · [[replication]] · [[consistency]] · [[proof]] · [[aura]] · [[holographic]] · [[whole]] · [[one]] · [[collapse]] · [[standard]] · [[cost]] · [[society]] · [[seal]] · [[generate]] · [[wave]].
 
 ## Standards
 - NIST SP 800-107r1 §5.1 (hash security strengths: 2nd-preimage ≈ L bits, collision ≈ L/2)

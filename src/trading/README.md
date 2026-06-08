@@ -2,7 +2,7 @@
 
 # trading
 
-> atom `trading` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
+> atom `trading` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -23,16 +23,76 @@
 
 ## typography graph
 
-- partition `trading` · sub-root `570b9de2-c2b5-8612-bdc5-e2eabc92755f`
-- bond degree `44` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- partition `trading` · sub-root `e1c85cda-d9e7-8d1d-bec2-221832ed3b0e`
+- bond degree `57` · analysis neighbors —
+- graph root `7eecf209-2e8f-8c92-b8df-3d2a511684e8`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `EN-16931 Peppol-BIS-3 e-invoicing access-points (AS4 send/receive)` · banner
+- `EU-2002/58` · catalogue
+- `EU-Taxonomy-2020/852` · catalogue
+- `ISO-20022` · catalogue
+- `ISO-3166-1` · catalogue
+- `ISO-3166-1:2020 region-scope (the alpha-2 dispatch key, shared with the [[country]] twin)` · banner
+- `ISO-4217:2015 currency-codes (FX / market-data feeds)` · banner
+- `PSD2 EU-2015/2366 open-banking-aggregators (Berlin Group NextGenPSD2 consent)` · banner
+- `RFC-9110 http-semantics (the REST/fetch client surface)` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·8 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `57` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `9`
 
 ## identity
 
-- uuid `b0d00b62-7748-8923-8fcf-be00c361b1db`
-- bonds in `13` · out `13`
+- uuid `a7c6c97a-3ab2-83a1-a206-7feb697347fc`
+- bonds in `19` · out `19`
 - trinity form·code·proof `1`·`1`·`1`
-- links `35` / `35`
+- links `40` / `40`
 - folded `1` · escapes `0`
 
 ## [[seal]]
@@ -41,4 +101,4 @@
 
 ---
 
-<sub>content-uuid `85eb5485-4d04-8d65-be74-2942cfc9db93` · framed by typography partition `trading` bonds `44` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e4be42d2-d329-8a5e-9cbb-02cbd5bf9515` · framed by typography partition `trading` bonds `57` · `pnpm readme` · `pnpm readme:check`</sub>

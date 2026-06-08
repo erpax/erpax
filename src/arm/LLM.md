@@ -3,15 +3,15 @@
 
 # arm
 
-path `arm` · uuid `4c085083-7b70-88df-8bdd-67038be03c53` · diamond `011c0cab-4ac7-8539-93ba-b1fbddecba02`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `arm` · uuid `87edaede-7be9-87f0-aa7a-fe3507847dd4` · diamond `d45613dc-f694-873f-b2da-5171967a9f06`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports arm · escapes —
-links `4/4` · folded `1` · bonds in `4` out `4`
+links `4/4` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
+neighbors → arm·collapse·law·merge·sti · ← arm·collapse·law·merge·sti
 analysis —
 law arm is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `447d464f-7a3f-875c-954a-93006fe5771f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1cdf76c4-8151-8fa4-8723-7d1280564a72` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,7 +3,7 @@
 
 # causes
 
-path `causes` · uuid `98df4813-6949-8d5a-86a3-e8cf7c351f45` · diamond `34e19327-33cb-8acb-998c-4516d6b83ded`
+path `causes` · uuid `245edc93-ade1-8fbf-a70e-790299158ffe` · diamond `baefb335-21b7-8b0a-b035-8806363f9909`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports causes · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
@@ -14,4 +14,4 @@ law causes is one schema.org word, content-addressed; the same word collides eve
 
 ---
 
-<sub>content-uuid `03a5453d-4908-8087-96eb-3e2e67390d83` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f3694210-59cb-8c6e-a308-e95d10bba0f0` · `pnpm readme` · `pnpm computed:check`</sub>

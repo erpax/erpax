@@ -3,15 +3,15 @@
 
 # memory
 
-path `memory` · uuid `53ef030f-e55a-8d3d-86cf-f663c26b705e` · diamond `10f00b22-0b35-82fa-99f0-8de63b6ddbd3`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `memory` · uuid `a34b1a22-051a-87cf-92c9-73e1ce0ece5f` · diamond `6ae6141f-e444-8080-b736-230aa580d6c0`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports akashic·collapse·diamond·law·memory·merge·quantum·requirements·seal·sti·thought · exports memory · escapes —
-links `17/17` · folded `1` · bonds in `29` out `33`
+links `17/17` · folded `1` · bonds in `31` out `38`
 faces worker·plugin·pwa `0·0·0`
-neighbors → akashic·atom·breath·collapse·cross·diamond·entropy·fractal·generate·hallucination·holographic·law·law·memory·memory·merge·merge·part·peace·purity·quantum·quantum·realtime·requirements·seal·seal·self·snapshot·sti·sync·thought·uuid·whole · ← akashic·atom·breath·collapse·cross·diamond·entropy·fractal·generate·hallucination·holographic·law·memory·memory·merge·part·peace·purity·quantum·realtime·requirements·seal·self·snapshot·sti·sync·thought·uuid·whole
+neighbors → akashic·akashic·architecture·architecture·atom·breath·collapse·cross·diamond·diamond·entropy·fractal·generate·hallucination·holographic·law·law·memory·memory·merge·merge·part·peace·purity·quantum·quantum·realtime·requirements·seal·seal·self·session·snapshot·sti·sync·thought·uuid·whole · ← akashic·architecture·atom·breath·collapse·cross·diamond·entropy·fractal·generate·hallucination·holographic·law·memory·memory·merge·part·peace·purity·quantum·realtime·requirements·seal·self·session·snapshot·sti·sync·thought·uuid·whole
 analysis diamond·hallucination·purity
 law memory is one schema.org word, content-addressed; operational memory IS the architecture lattice ([[memory/architecture]]), not a side store — same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `6a0c0d90-8ee5-8dc5-a318-4d1fb5fb1d1f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ed105ce3-229a-8764-ba07-ad897f9eaf69` · `pnpm readme` · `pnpm computed:check`</sub>

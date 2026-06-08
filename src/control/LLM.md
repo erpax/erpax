@@ -3,8 +3,8 @@
 
 # control
 
-path `control` · uuid `d2febfdf-b01f-8579-b9fe-c957ded90b0d` · diamond `4b7cdcce-3f08-8221-82a2-c1b8c17b9a4c`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `control` · uuid `cedf283b-b2a5-89c8-aae2-1200a79874c1` · diamond `7419afe9-465b-8034-a6d4-d206a5a678a0`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports accessibility·action·collapse·law·merge·sti · exports control · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law control is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `bcf8f512-cf62-8073-ad6f-262b665a61b0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `945c09d5-7328-8fdf-baf9-885a3d04fce4` · `pnpm readme` · `pnpm computed:check`</sub>

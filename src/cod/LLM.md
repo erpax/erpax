@@ -3,8 +3,8 @@
 
 # cod
 
-path `cod` · uuid `e6edb6e6-2b43-84d4-81a5-24854fac8ebb` · diamond `4a55bb34-323a-8d44-80f6-ac0679915e1f`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `cod` · uuid `a6633c36-7ae1-884f-a10a-dfe309f3f37a` · diamond `6260a881-788c-8ac0-b4ec-6a3c9e8f3c70`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports cod · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law cod is one schema.org word, content-addressed; the same word collides every 
 
 ---
 
-<sub>content-uuid `48952860-cadc-81ee-b5f7-28b347c60b70` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `68d5f6be-a341-8c79-9711-e5c1ff86c353` · `pnpm readme` · `pnpm computed:check`</sub>

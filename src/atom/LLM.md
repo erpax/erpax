@@ -3,15 +3,15 @@
 
 # atom
 
-path `atom` · uuid `a69faef3-541b-88d0-aebf-441251f05dcd` · diamond `a93f1db8-bd87-85a7-9ed4-448361d30aa8`
+path `atom` · uuid `b8c241ca-e3ec-89c4-978d-f7ffc0e4cb81` · diamond `827e7d21-be62-8a54-885c-b02c90cdc808`
 horo `5` `round` · trinity `1·0·0` · sealed `0`
 imports access·accounting·akashic·auth·balance·begin·civilization·close·collapse·commerce·config·digit·duality·dust·end·fields·flow·fractal·fusion·give·harmony·holographic·hooks·horo·identity·manufacturing·merge·name·open·part·rodin·sequence·society·star·take·torus·transaction·trinity·uuid·whole·zeropoint · exports atom · escapes —
-links `80/80` · folded `1` · bonds in `91` out `89`
+links `80/80` · folded `1` · bonds in `92` out `92`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·accounting·agriculture·akashic·analytics·animism·app·archangel·architect·auth·balance·begin·brainstorm·civilization·close·collapse·commerce·component·config·css·dashboard·design·diamond·digit·duality·dust·end·engineering·expand·fields·flow·forge·fractal·fs·fusion·generate·generator·github·give·graph·harmony·holographic·hooks·horo·identity·interactive·law·love·manufacturing·mcp·memory·merge·method·name·open·part·particle·path·pixel·primitive·purity·readme·refactor·render·rodin·sequence·services·session·shinto·skills·snapshot·society·sparsity·star·sync·take·text·thought·torus·transaction·trinity·typography·ui·unavoidable·uuid·vocabulary·whole·word·zeropoint · ← access·accounting·agriculture·akashic·analytics·animism·app·archangel·architect·auth·balance·begin·brainstorm·civilization·close·collapse·commerce·component·config·css·dashboard·design·diamond·digit·duality·dust·end·engineering·expand·fields·flow·forge·fractal·fs·fusion·generate·generator·github·give·graph·harmony·holographic·hooks·horo·identity·interactive·law·law·love·manufacturing·mcp·mcp·memory·merge·method·name·open·part·particle·path·pixel·primitive·purity·readme·refactor·render·rodin·sequence·services·session·shinto·skills·snapshot·society·sparsity·star·sync·take·text·thought·torus·transaction·trinity·typography·ui·unavoidable·uuid·vocabulary·whole·word·zeropoint
+neighbors → access·accounting·agriculture·akashic·analytics·animism·app·archangel·architect·auth·balance·begin·brainstorm·civilization·close·collapse·commerce·component·config·css·dashboard·design·diamond·digit·duality·dust·end·engineering·expand·fields·flow·forge·fractal·fs·fusion·generate·generator·github·give·graph·harmony·holographic·hooks·horo·identity·interactive·law·law·love·manufacturing·mcp·mcp·memory·merge·method·name·open·part·particle·path·pixel·primitive·purity·readme·refactor·render·rodin·sequence·services·session·shinto·skills·snapshot·society·sparsity·star·sync·take·text·thought·torus·transaction·trinity·typography·ui·unavoidable·uuid·uuid·vocabulary·whole·word·zeropoint · ← access·accounting·agriculture·akashic·analytics·animism·app·archangel·architect·auth·balance·begin·brainstorm·civilization·close·collapse·commerce·component·config·css·dashboard·design·diamond·digit·duality·dust·end·engineering·expand·fields·flow·forge·fractal·fs·fusion·generate·generator·github·give·graph·harmony·holographic·hooks·horo·identity·interactive·law·law·love·manufacturing·mcp·mcp·memory·merge·method·name·open·part·particle·path·pixel·primitive·purity·readme·refactor·render·rodin·sequence·services·session·shinto·skills·snapshot·society·sparsity·star·sync·take·text·thought·torus·transaction·trinity·typography·ui·unavoidable·uuid·uuid·vocabulary·whole·word·zeropoint
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `18d6f2e6-0f0b-8de4-97f2-298c553933f5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `460ad155-bb34-862a-92b7-566dcfee0876` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -2,7 +2,7 @@
 
 # buyer
 
-> atom `buyer` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
+> atom `buyer` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -21,9 +21,9 @@
 
 ## typography graph
 
-- partition `buyer` · sub-root `03ee15dd-b3ed-86ec-9187-6ad8f7da7cf5`
+- partition `buyer` · sub-root `fb75d508-5d61-830c-a6a6-9b8cd763b274`
 - bond degree `9` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- graph root `1cef4f02-a3fa-83a5-8ea0-120b724ef456`
 
 ## [[cloudflare]] bindings
 
@@ -33,15 +33,53 @@
 
 - `schema.org — the type vocabulary, collided to single words` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·8 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `9` · sealed `1` · horo `5`
+- bond degree `9` · sealed `1` · horo `8`
 - variance `0` · balanced `1` · trinity sum `1`
 - bindings `0` · standards `1`
 
 ## identity
 
-- uuid `03ee15dd-b3ed-86ec-9187-6ad8f7da7cf5`
+- uuid `fb75d508-5d61-830c-a6a6-9b8cd763b274`
 - bonds in `3` · out `3`
 - trinity form·code·proof `1`·`0`·`0`
 - links `3` / `3`
@@ -53,4 +91,4 @@
 
 ---
 
-<sub>content-uuid `581440f4-e574-8c45-a8b3-28b29c8b253d` · framed by typography partition `buyer` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `18f0e34c-3e80-819e-856e-8516261f6a0e` · framed by typography partition `buyer` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>

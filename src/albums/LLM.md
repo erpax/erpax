@@ -3,8 +3,8 @@
 
 # albums
 
-path `albums` · uuid `ec83a9f0-af56-8995-a044-a3b30039277c` · diamond `c47dd999-68c1-8cc6-9fdd-63f42c3c0703`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `albums` · uuid `33cd8521-9972-8017-9357-7ea3af22921f` · diamond `ff2d82f2-30b5-8a2e-aee3-b396261def24`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports law·music·thing · exports albums · escapes —
 links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law albums is one schema.org word, content-addressed; the same word collides eve
 
 ---
 
-<sub>content-uuid `fe2d021a-9567-8b2d-b14d-412495a6f9ae` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `cbf7e54a-32dc-8762-b898-daf9b91b8d3f` · `pnpm readme` · `pnpm computed:check`</sub>

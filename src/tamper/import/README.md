@@ -25,21 +25,7 @@
 
 - partition `tamper` · sub-root `3759fd7e-a41d-8b46-b85f-008b24a237ba`
 - bond degree `60` · analysis neighbors `aura` · `quantum/boundary` · `tamper/import`
-- graph root `06810c2c-2396-831f-a2b3-a58706a17051`
-
-## [[cloudflare]] bindings
-
-—
-
-## [[standards]]
-
-—
-
-## analytics
-
-- bond degree `60` · sealed `1` · horo `7`
-- variance `0` · balanced `1` · trinity sum `3`
-- bindings `0` · standards `0`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
@@ -55,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `bce9bbf9-7310-8076-a4dd-16a332693250` · framed by typography partition `tamper` bonds `60` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `9b8d9841-f25f-8a3d-a28b-944957078148` · framed by typography partition `tamper` bonds `60` · `pnpm readme` · `pnpm readme:check`</sub>

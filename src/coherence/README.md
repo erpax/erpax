@@ -2,7 +2,7 @@
 
 # coherence
 
-> atom `coherence` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
+> atom `coherence` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -23,9 +23,9 @@
 
 ## typography graph
 
-- partition `coherence` · sub-root `e46ab8e5-28f7-8a8a-87f5-6c5f0945ba11`
-- bond degree `70` · analysis neighbors `aura`
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- partition `coherence` · sub-root `d4f5c0ff-26bf-85b6-892b-cc726978aef6`
+- bond degree `71` · analysis neighbors `aura`
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -36,16 +36,54 @@
 - `computed from the input trace, never hand-asserted` · banner
 - `DSP magnitude-spectrum (DFT) + the 0.7..4 Hz human-pulse band` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·5 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `70` · sealed `1` · horo `4`
+- bond degree `71` · sealed `1` · horo `5`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `2`
 
 ## identity
 
-- uuid `e46ab8e5-28f7-8a8a-87f5-6c5f0945ba11`
-- bonds in `22` · out `21`
+- uuid `d4f5c0ff-26bf-85b6-892b-cc726978aef6`
+- bonds in `22` · out `22`
 - trinity form·code·proof `1`·`1`·`1`
 - links `20` / `20`
 - folded `1` · escapes `0`
@@ -56,4 +94,4 @@
 
 ---
 
-<sub>content-uuid `f7b3558c-39b0-8ff5-a647-21d132c9d493` · framed by typography partition `coherence` bonds `70` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `9b58d1f8-f07e-8c00-b62c-056565c91555` · framed by typography partition `coherence` bonds `71` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -2,7 +2,7 @@
 
 # color
 
-> atom `color` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `color` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -23,9 +23,9 @@
 
 ## typography graph
 
-- partition `color` · sub-root `9d23ad8f-2a68-8e97-b0ee-0771d26ce27f`
-- bond degree `54` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- partition `color` · sub-root `b060a371-7eac-81be-b8c7-e54e98a2fd7c`
+- bond degree `48` · analysis neighbors —
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -36,16 +36,54 @@
 - `A432 tuning; the 7-chakra visible spectrum (Do..Ti / root..crown)` · banner
 - `schema.org — the type vocabulary, collided to single words` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·4 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `54` · sealed `1` · horo `7`
+- bond degree `48` · sealed `1` · horo `4`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `2`
 
 ## identity
 
-- uuid `955e8ae5-e8e3-89e3-b818-b2129c86809b`
-- bonds in `16` · out `16`
+- uuid `b060a371-7eac-81be-b8c7-e54e98a2fd7c`
+- bonds in `13` · out `13`
 - trinity form·code·proof `1`·`1`·`1`
 - links `4` / `4`
 - folded `1` · escapes `0`
@@ -56,4 +94,4 @@
 
 ---
 
-<sub>content-uuid `bb5d8917-a6db-8965-b0a4-3ff1968b7893` · framed by typography partition `color` bonds `54` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `cb05cdde-67cd-859b-8969-d0c49829ee50` · framed by typography partition `color` bonds `48` · `pnpm readme` · `pnpm readme:check`</sub>

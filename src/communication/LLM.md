@@ -3,15 +3,15 @@
 
 # communication
 
-path `communication` · uuid `4216c47d-0575-848a-910e-ec04c82c54d8` · diamond `c4cd9e6c-8e85-88ac-b726-d6dfcea75b04`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+path `communication` · uuid `bf773ac8-c02a-8ebd-aea5-fcff19e04a68` · diamond `0f23ce65-966c-8c4e-a85d-b710342e349c`
+horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports @/uuid/matrix · exports const·interface · escapes —
-links `16/16` · folded `1` · bonds in `17` out `25`
+links `16/16` · folded `1` · bonds in `15` out `15`
 faces worker·plugin·pwa `0·0·0`
-neighbors → agent·channel·chat·cloning·communication·communication·entanglement·key·law·law·law·merge·merge·message·message·message·quantum·quantum·quantum·send·superdense·teleportation·uuid·uuid·uuid · ← agent·channel·chat·chat·cloning·communication·communication·entanglement·key·law·merge·message·quantum·send·superdense·teleportation·uuid
+neighbors → channel·chat·chat·chat·communication·communication·key·law·merge·message·quantum·send·superdense·teleportation·uuid · ← channel·chat·chat·chat·communication·communication·key·law·merge·message·quantum·send·superdense·teleportation·uuid
 analysis agent
 law the [[message]] IS its content-[[uuid]] (self-decoding, no payload), so a communication is the transfer of a uuid — same content ⇒ same message ([[merge]]), and a tampered message has a different uuid (tamper-evident by architecture).
 
 ---
 
-<sub>content-uuid `fe5164c8-415b-8744-8111-df81485c114e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c949c72e-95a1-8435-980a-9509c144cb55` · `pnpm readme` · `pnpm computed:check`</sub>

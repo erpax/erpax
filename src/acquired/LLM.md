@@ -3,7 +3,7 @@
 
 # acquired
 
-path `acquired` · uuid `ac6df5e6-aa42-8b4e-9dd5-53bab71e60e0` · diamond `5eae79e9-321f-84d7-ab29-ece8657b0fbb`
+path `acquired` · uuid `960bf60b-1df5-8deb-bec6-557607de2590` · diamond `2557e43f-df2e-80d1-b2c4-ee6c79df1314`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports law·product·thing · exports acquired · escapes —
 links `3/3` · folded `1` · bonds in `3` out `3`
@@ -14,4 +14,4 @@ law acquired is one schema.org word, content-addressed; the same word collides e
 
 ---
 
-<sub>content-uuid `258690f2-423d-8873-97fd-4e9e2e0afa6b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2f421333-3382-8999-9a08-c93e6985b79f` · `pnpm readme` · `pnpm computed:check`</sub>

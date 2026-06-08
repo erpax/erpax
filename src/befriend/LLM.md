@@ -3,8 +3,8 @@
 
 # befriend
 
-path `befriend` · uuid `796f0521-699a-8aa0-8a1d-8702e4a79e0d` · diamond `1ed54f7e-ebe7-8017-9fd1-a75b3e0f8f72`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `befriend` · uuid `00f69041-6620-8401-9132-aeaab6487841` · diamond `04c455fe-4d24-82fc-913f-77c4b618ac9c`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti · exports befriend · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law befriend is one schema.org word, content-addressed; the same word collides e
 
 ---
 
-<sub>content-uuid `38474d13-6fc7-889b-8e79-8bba89ccc2b8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6a7b26f8-e7cc-8be7-8c20-9baa5dba9d6c` · `pnpm readme` · `pnpm computed:check`</sub>

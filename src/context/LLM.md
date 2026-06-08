@@ -3,15 +3,15 @@
 
 # context
 
-path `context` · uuid `adaba9aa-d971-877d-b313-6d100a0c8dc7` · diamond `9e172d4a-dc0c-8d86-bc52-44ef8b767976`
+path `context` · uuid `392c7a76-8455-8489-88e3-b382aadd68cc` · diamond `1fbacc43-0d52-8798-aa23-b3e3e194154e`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·description·law·media·merge·original·sti · exports context · escapes —
-links `7/7` · folded `1` · bonds in `8` out `9`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → collapse·country·description·law·law·media·merge·original·sti · ← collapse·country·description·law·media·merge·original·sti
+neighbors → collapse·description·law·media·merge·original·sti · ← collapse·description·law·media·merge·original·sti
 analysis —
 law context is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `e326b7f7-e7f9-843f-9f7b-9d0a9360240c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6014e94f-51d1-843c-8f6c-4d85cd685b7b` · `pnpm readme` · `pnpm computed:check`</sub>

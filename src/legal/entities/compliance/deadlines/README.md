@@ -2,9 +2,11 @@
 
 # deadlines
 
-> atom `legal/entities/compliance/deadlines` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
+> atom `legal/entities/compliance/deadlines` · horo `5` `round` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `legal/entities/compliance/deadlines` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -19,17 +21,118 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
+
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+- `gap:stray:[[gap]]/[[diamond]]/stray/compliance/`
+
+### collapse
+
+- `balance:variance=1`
+- `law:every compliance obligation carries a due date with a derived on-track/at-risk/overdue status per entity and jurisdiction — so the compliance calendar makes lateness a computed state, never an unobserved miss.`
+- `seal:unsealed`
+- `trigger:Use when tracking filing, audit, certification, reporting, payment, or disclosure deadlines per legal entity and jurisdiction — due-date management, on-track/at-risk/overdue status, and compliance calendar oversight per ISO-37301. The compliance-deadline calendar collection.`
+- `trigger:every compliance obligation carries a due date with a derived on-track/at-risk/overdue status per entity and jurisdiction — so the compliance calendar makes lateness a computed state, never an unobserved miss.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `2e6342e1-4b91-88a2-95a2-73aea81f77d3` · `7235e21c-bcd8-8ff0-91ea-2a4169ae9738` · `9e0d28f4-5bb9-8b7a-9d80-c0ad0669cadb` · `a2beab29-56fb-840c-8779-6ea3b480203b`
+- content uuids `20ac853a-ba2c-8344-9828-894ce0e96aa9` · `63b4afb7-9149-8f2e-87ae-73ffaac07d5c` · `bcd81839-9a86-8efe-96da-efc91bdc1b56` · `fe223966-1493-8716-9e7d-f3d2a71a8a4c`
+
+## [[entropy]] — gaps · seals
+
+> account code `legal/entities/compliance/deadlines` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[diamond]]/stray/compliance/ `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.5` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+| Σ gap `3` eb | Σ seal `8.5` eb |
+
+> net residual `-5.5` eb · seal/gap ratio `2.833` · [[entropy]] · [[seal]]
 
 ## typography graph
 
-- partition `legal` · sub-root `1fd2f1ff-ccee-87e0-8d80-12345443fed8`
-- bond degree `9` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- partition `legal` · sub-root `e259934b-eccd-8e89-bfbe-04889c9debb1`
+- bond degree `0` · analysis neighbors —
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ISO-37301` · catalogue
+- `ISO-37301:2021 compliance-management-systems` · banner
+- `ISO-8601-1:2019 due-date` · banner
+- `US-CTA-2021` · catalogue
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unbalanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| not-held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·5 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `0` · sealed `0` · horo `5`
+- variance `1` · balanced `0` · trinity sum `3`
+- bindings `0` · standards `4`
 
 ## identity
 
-- uuid `c1dbacc2-aec6-8745-a6bc-86d21c524e33`
+- uuid `26a44c55-2557-8d6b-88b7-4281fc879f16`
 - bonds in `3` · out `3`
 - trinity form·code·proof `1`·`1`·`1`
 - links `2` / `2`
@@ -37,8 +140,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `12727fae-2643-8d3a-9fd3-cd02ade5d3f4` · framed by typography partition `legal` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `5e89e034-5b52-89f7-8716-716f9b42c183` · framed by typography partition `legal` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

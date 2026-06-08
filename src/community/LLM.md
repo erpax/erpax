@@ -3,8 +3,8 @@
 
 # community
 
-path `community` · uuid `fd273b4f-6859-81e9-b8ed-d084097ef1c5` · diamond `914f85f3-1af3-88ac-b9ef-810bb89d5e87`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `community` · uuid `c008d5da-4436-8671-a78f-8d23e7dd4d06` · diamond `0cd29cfd-b258-846c-9245-a6fde94cc142`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·gated·law·merge·residence·sti · exports community · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law community is one schema.org word, content-addressed; the same word collides 
 
 ---
 
-<sub>content-uuid `38d5522b-ec46-86db-b5e0-2724fc1f3862` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `92a0860b-16c1-8523-bad0-79fd29d26243` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,8 +3,8 @@
 
 # choice
 
-path `choice` · uuid `86a41757-b780-8dea-83ac-4be4c78732f4` · diamond `9b63284d-bcb5-8ca9-af26-cd756cd07168`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `choice` · uuid `ea914267-e00d-8f2d-a985-4da0dfc358c3` · diamond `2ecb61b4-7e1c-8a73-bd7a-6a048bfa500a`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports agriculture·bundle·commerce·customers·harvest·limit·packs·retention·share · exports choice · escapes —
 links `18/18` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `ba097bfb-493f-82c8-adfa-c368db56edd1` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e16df7fe-c5ae-89d7-b170-d0d7fa7f4b27` · `pnpm readme` · `pnpm computed:check`</sub>

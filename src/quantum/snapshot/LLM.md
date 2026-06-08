@@ -3,15 +3,15 @@
 
 # snapshot
 
-path `quantum/snapshot` · uuid `63e55f02-ff14-8913-b307-299f7f9114ee` · diamond `4e280f21-12e2-85bd-ac46-3140034e8d66`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
-imports akashic·atom·file·finality·law·love·merge·quantum·reality·record·reverse·snapshot·trinity·uuid·versions · exports snapshot · escapes —
-links `27/27` · folded `1` · bonds in `33` out `34`
+path `quantum/snapshot` · uuid `1caf4107-06b5-88e0-8f92-9fdf256314de` · diamond `31f88b72-8728-89ca-9512-ab6756a72adf`
+horo `5` `round` · trinity `1·1·1` · sealed `1`
+imports @/integrity·@/path · exports async·const·function · escapes —
+links `36/36` · folded `1` · bonds in `24` out `24`
 faces worker·plugin·pwa `1·0·0`
-neighbors → akashic·atom·audio·biometric·collapse·deploy·device·emr·file·finality·folded·fs·github·image·law·law·literature·love·memory·merge·merge·number·object·reality·record·reverse·snapshot·sti·stream·sync·trinity·uuid·versions·video · ← akashic·atom·audio·biometric·collapse·deploy·device·emr·file·finality·folded·fs·fs·github·image·law·literature·love·memory·merge·number·object·reality·record·reverse·snapshot·sti·stream·sync·trinity·uuid·versions·video
+neighbors → audio·biometric·collapse·deploy·device·emr·folded·fs·fs·github·image·law·literature·memory·merge·number·object·readings·snapshot·sti·stream·sync·uuid·video · ← audio·biometric·collapse·deploy·device·emr·folded·fs·fs·github·image·law·literature·memory·merge·number·object·readings·snapshot·sti·stream·sync·uuid·video
 analysis —
 law a snapshot collapses a system's state at one moment, but its twin keeps the whole superposition — every captured state is content-uuid'd, immutable, and append-only, so identical states merge to one and the chain nests layer after layer without bound. The invariant is reconstructibility: any past layer can be rebuilt from the chain and nothing is ever lost; that round-trip is the gate.
 
 ---
 
-<sub>content-uuid `47a774a4-9e50-8c64-b7eb-f33e0f709e3e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a787712d-3285-8df8-be94-3210fa90310b` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -23,7 +23,21 @@
 
 - partition `mycorrhizae` · sub-root `dd790be9-9493-8ab0-875b-e4eca884ec17`
 - bond degree `41` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `41` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `419d1ee9-e974-8e09-bb64-97b6d727e075` · framed by typography partition `mycorrhizae` bonds `41` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `7aa9d616-52fb-861c-92ef-70658e547904` · framed by typography partition `mycorrhizae` bonds `41` · `pnpm readme` · `pnpm readme:check`</sub>

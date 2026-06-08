@@ -8,10 +8,10 @@ horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports vcard · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law vcard is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `da0f3976-f893-804b-8425-9fd0dee15f2c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c87db04c-64a4-8d3d-8abd-e09a74702d68` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,8 +3,8 @@
 
 # apartment
 
-path `apartment` · uuid `66cde420-3c55-8e11-a1a4-4aa9c2a17c18` · diamond `6110ba1a-7649-8fe5-bd4d-1e144fcefff5`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `apartment` · uuid `a16cf2e7-5930-879e-acab-6de3bd0cc34e` · diamond `e24abddb-b05d-8f25-9db4-c8c0f159b35a`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports complex·law·plan · exports apartment · escapes —
 links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law apartment is one schema.org word, content-addressed; the same word collides 
 
 ---
 
-<sub>content-uuid `17022ef3-d497-84f5-b4a2-b6bf1d3e4b4b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3b10b9a1-c6ba-8225-acf6-0786d20f31c2` · `pnpm readme` · `pnpm computed:check`</sub>

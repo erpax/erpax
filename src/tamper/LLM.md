@@ -3,15 +3,15 @@
 
 # tamper
 
-path `tamper` · uuid `99e79697-d118-819f-bf4e-a50d117e16b4` · diamond `f3486b99-704d-8416-95b9-8d0a0ae47d31`
+path `tamper` · uuid `99e79697-d118-819f-bf4e-a50d117e16b4` · diamond `3222d7b5-0c32-8963-9950-7f689fc90923`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports analog·anchor·aura·cost·coverage·entropy·fusion·gate·gravity·identity·mass·merge·one·proof·uuid·vibration·whole · exports tamper · escapes —
-links `29/29` · folded `1` · bonds in `2` out `2`
+links `29/29` · folded `1` · bonds in `86` out `80`
 faces worker·plugin·pwa `0·0·0`
-neighbors → table·tall · ← table·tall
+neighbors → access·analog·analytics·anchor·anchoring·aura·baked·balance·barrier·biofield·boundary·coherence·collider·convention·cost·coverage·digit·dna·drone·dry·emr·entropy·expense·export·exported·fear·finality·fresh·fs·fusion·gate·gravity·hallucination·identity·import·karma·key·law·link·log·love·mass·math·maxtampercost·merge·one·patent·peace·plasma·proof·purity·quantum·reactor·redundancy·regeneration·relocate·research·sanitization·science·security·shallow·shannon·signal·society·surprisal·sustainability·symbiosis·test·trading·translate·truth·typography·uuid·verification·versions·vibration·vocabulary·void·war·whole · ← access·analog·analytics·anchor·anchoring·aura·baked·balance·barrier·biofield·boundary·coherence·collider·convention·cost·coverage·digit·dna·drone·dry·emr·entropy·expense·export·exported·fear·fear·finality·fresh·fs·fusion·gate·gravity·hallucination·identity·import·import·import·karma·key·law·link·log·love·love·mass·math·maxtampercost·merge·one·patent·peace·plasma·proof·purity·quantum·reactor·redundancy·regeneration·relocate·research·sanitization·science·security·shallow·shannon·signal·society·surprisal·sustainability·symbiosis·test·trading·translate·truth·typography·typography·uuid·verification·verification·versions·vibration·vocabulary·void·war·whole
 analysis aura
 law —
 
 ---
 
-<sub>content-uuid `0490dadc-7e39-8a80-8a7e-34dcdfe5d0bf` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ef5b9562-ea09-879a-b656-1dddd6be2827` · `pnpm readme` · `pnpm computed:check`</sub>

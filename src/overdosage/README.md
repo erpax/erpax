@@ -23,7 +23,21 @@
 
 - partition `overdosage` · sub-root `6a37a54c-18c7-8b4a-af9d-5cc5b04a6cb9`
 - bond degree `6` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `6` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `51f3bb85-4c50-8231-9044-24e9ed30feff` · framed by typography partition `overdosage` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `48d93dd2-90ae-86bb-975a-a1fcf470dcf5` · framed by typography partition `overdosage` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>

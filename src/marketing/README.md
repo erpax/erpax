@@ -2,7 +2,7 @@
 
 # marketing
 
-> atom `marketing` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
+> atom `marketing` · horo `1` `base` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -17,13 +17,27 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `7` | Σ `7` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `5` · [[conservation]] `0` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `marketing` · sub-root `5494e8f5-d321-8da6-a8a9-99e80e369d49`
-- bond degree `26` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- bond degree `0` · analysis neighbors —
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `0` · sealed `0` · horo `1`
+- variance `5` · balanced `0` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -35,8 +49,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `0882d521-04ae-822d-bebf-1baef2597190` · framed by typography partition `marketing` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `3ab8e714-956f-8a37-a221-11d9c610269f` · framed by typography partition `marketing` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

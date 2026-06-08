@@ -3,15 +3,15 @@
 
 # sparsity
 
-path `sparsity` · uuid `bbfe5e5c-06e4-82e6-9686-d1aa9eb593e2` · diamond `b6b7bf46-b8ab-880f-92dc-c833457dd47f`
+path `sparsity` · uuid `bbfe5e5c-06e4-82e6-9686-d1aa9eb593e2` · diamond `ae819201-2fb7-810d-9afd-526afc0bb388`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports akashic·allocation·atom·bottleneck·breath·collapse·deduplication·dimension·flow·holographic·identity·law·market·merge·partition·proof·rodin·routing·sequence·throughput·uuid·zeropoint · exports sparsity · escapes —
-links `49/49` · folded `1` · bonds in `5` out `5`
+links `49/49` · folded `1` · bonds in `25` out `25`
 faces worker·plugin·pwa `0·0·0`
-neighbors → channel·cohort·landmarks·memories·stat · ← channel·cohort·landmarks·memories·stat
+neighbors → akashic·allocation·atom·bottleneck·brain·breath·collapse·deduplication·dimension·flow·holographic·identity·law·market·merge·partition·proof·rodin·routing·science·sequence·throughput·train·uuid·zeropoint · ← akashic·allocation·atom·bottleneck·brain·breath·collapse·deduplication·dimension·flow·holographic·identity·law·market·merge·partition·proof·rodin·routing·science·sequence·throughput·train·uuid·zeropoint
 analysis —
 law keep the dormant pool huge and the active set minimal — maximise capability ÷ cost by shrinking activation, never the pool, and never sparsify the load-bearing factor.
 
 ---
 
-<sub>content-uuid `3bea6c34-ffdf-8b62-ad09-cf69b57c3530` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `816c3511-1c23-8885-a273-be093f1e74ad` · `pnpm readme` · `pnpm computed:check`</sub>

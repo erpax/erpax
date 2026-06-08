@@ -3,8 +3,8 @@
 
 # eliminations
 
-path `consolidation/eliminations` · uuid `4f254bde-8bbe-8fee-a915-02af6de06b26` · diamond `5d8f6537-6d3d-8bc3-ac65-459aae72ba14`
-horo `1` `base` · trinity `1·1·1` · sealed `1`
+path `consolidation/eliminations` · uuid `d1535dd7-43ef-8943-a9e4-2ceabd89f3d8` · diamond `17528d5a-a1fe-8949-a0d8-c2a2b480c035`
+horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law the group-level elimination [[journal/entries|journal entries]] posted at co
 
 ---
 
-<sub>content-uuid `3a558f98-ae21-8499-b0d2-5bae9e37575c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0d5fd6ec-48d9-859d-ad65-c2695d6f959b` · `pnpm readme` · `pnpm computed:check`</sub>

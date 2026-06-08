@@ -3,15 +3,15 @@
 
 # translations
 
-path `translations` · uuid `0d10920d-f80c-8c26-a2bd-dc7a11a253be` · diamond `d1cb0b57-bcce-8062-ad40-a45b7f1f3c8b`
+path `translations` · uuid `0d10920d-f80c-8c26-a2bd-dc7a11a253be` · diamond `cc489cec-8e3c-84d3-84fa-57c3285ae32c`
 horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports @/base/accounting/field·@/factory · exports default · escapes —
-links `6/6` · folded `1` · bonds in `2` out `2`
-faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+links `6/6` · folded `1` · bonds in `13` out `13`
+faces worker·plugin·pwa `1·0·0`
+neighbors → balance·catalogue·collect·fields·identity·law·localize·proof·quaternary·standard·translate·translation·translator · ← balance·catalogue·collect·fields·identity·law·localize·proof·quaternary·standard·translate·translation·translator
 analysis —
 law a per-tenant override layer above the platform default — per-locale values within activation windows, each carrying provenance back to the row it overrides ([[balance]]).
 
 ---
 
-<sub>content-uuid `9c87cb9e-9b3b-809a-8eb5-29bfcb51f92b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `631c0c56-beb9-8655-9d23-e319fc67a32b` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -4,7 +4,7 @@
 # transactions
 
 path `fx/transactions` · uuid `de64d7c1-15fd-8ae5-a415-173b51516c8d` · diamond `f715da9c-4c90-83fc-96c9-7f25df8daca0`
-horo `8` `crest` · trinity `1·1·1` · sealed `1`
+horo `8` `crest` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
 links `12/12` · folded `1` · bonds in `22` out `29`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law each FX transaction is one durable conversion or revaluation event whose `ex
 
 ---
 
-<sub>content-uuid `03f9f3e1-5cd7-8b33-812d-405f03f8a6f4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `533c9ce7-e99b-8dfb-97d3-76fe0a12e156` · `pnpm readme` · `pnpm computed:check`</sub>

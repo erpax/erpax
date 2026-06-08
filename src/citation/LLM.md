@@ -3,7 +3,7 @@
 
 # citation
 
-path `citation` · uuid `5b8755a9-1225-8506-af95-a079234816c7` · diamond `f7c36007-cea6-8956-a678-a8b687a842b3`
+path `citation` · uuid `41fe9b9f-8f64-8f00-adb2-c46284c63aa1` · diamond `263e0b72-142d-896e-a7d5-a6c253b53dc0`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports creative·law·thing · exports citation · escapes —
 links `3/3` · folded `1` · bonds in `3` out `3`
@@ -14,4 +14,4 @@ law a citation must point to a real referenced work — every citation edge reso
 
 ---
 
-<sub>content-uuid `3038d3d9-9321-8b14-86cb-030734465c4c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `52746d7e-2600-8bf1-94ef-ca1e5dd19af7` · `pnpm readme` · `pnpm computed:check`</sub>

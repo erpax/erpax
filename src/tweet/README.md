@@ -23,7 +23,7 @@
 
 - partition `tweet` · sub-root `4564dc67-9f87-87b3-a105-947a94861003`
 - bond degree `12` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `dd5d5352-316c-8bca-9a73-d2c198a260d2` · framed by typography partition `tweet` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `fa9fe91d-48da-82de-a37f-46e8a76d1b0a` · framed by typography partition `tweet` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

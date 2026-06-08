@@ -4,7 +4,7 @@
 # journal
 
 path `journal` · uuid `9089ed41-4074-8c69-82d8-2f7596ffa53a` · diamond `c6155ed4-f437-8e6d-aad1-36350c6cf3c0`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+horo `7` `descent` · trinity `1·0·0` · sealed `0`
 imports accounting·balance·journals·law · exports journal · escapes —
 links `7/7` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law the journal is the chronological book of original entry — events are recor
 
 ---
 
-<sub>content-uuid `d8561b09-357c-8b3e-8cf1-22096b7386a2` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `135d18b9-8a63-85b1-8b2d-b22f66592a99` · `pnpm readme` · `pnpm computed:check`</sub>

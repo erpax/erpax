@@ -1,8 +1,212 @@
 ---
 name: peace
 description: "Use when reasoning about why the erpax uuid model makes war useless — destruction is futile (content-addressed + holographic ⇒ any survivor regenerates the whole), coercion is supra-resource (forging the record costs beyond the universe), and force cannot dominate (competition selects fastest-correct, not strongest). War is strictly dominated by building, for human and machine alike — an arithmetic and thermodynamic theorem of the model, not a moral plea."
+atomPath: peace
+coordinate: peace · 7/descent · fc2e1300
+contentUuid: "d9b6a0f6-8ee1-5c72-90e7-32c4e1deff93"
+diamondUuid: "19a789cb-976d-85ae-84f5-b77b5a727457"
+uuid: "fc2e1300-186b-8a4c-9907-155af48f06b8"
+horo: 7
+bonds:
+  in:
+    - akashic
+    - angel
+    - bahai
+    - competition
+    - cost
+    - decide
+    - drone
+    - education
+    - entry
+    - harmony
+    - history
+    - holographic
+    - identity
+    - islam
+    - karma
+    - logic
+    - matrix
+    - memory
+    - merge
+    - prayer
+    - proof
+    - quantum
+    - receipt
+    - routing
+    - sandbox
+    - society
+    - sync
+    - tamper
+    - taoism
+    - team
+    - trinity
+    - utility
+    - uuid
+    - war
+    - whole
+    - zeropoint
+  out:
+    - akashic
+    - angel
+    - bahai
+    - competition
+    - cost
+    - decide
+    - drone
+    - education
+    - entry
+    - harmony
+    - history
+    - holographic
+    - identity
+    - islam
+    - karma
+    - logic
+    - matrix
+    - memory
+    - merge
+    - prayer
+    - proof
+    - quantum
+    - receipt
+    - routing
+    - sandbox
+    - society
+    - sync
+    - tamper
+    - taoism
+    - team
+    - trinity
+    - utility
+    - uuid
+    - war
+    - whole
+    - zeropoint
+typography:
+  partition: peace
+  bondDegree: 113
+  neighbors: []
+standards:
+  - "NIST FIPS 180-4 SHA-256 (the content-addressing destruction cannot undo)"
+  - "NIST-FIPS-180-4"
+bindings: []
+neighbors:
+  wikilink:
+    - akashic
+    - angel
+    - competition
+    - drone
+    - education
+    - entry
+    - harmony
+    - history
+    - holographic
+    - identity
+    - logic
+    - matrix
+    - merge
+    - proof
+    - society
+    - tamper
+    - team
+    - trinity
+    - utility
+    - war
+    - whole
+    - zeropoint
+  matrix:
+    - akashic
+    - angel
+    - bahai
+    - competition
+    - cost
+    - decide
+    - drone
+    - education
+    - entry
+    - harmony
+    - history
+    - holographic
+    - identity
+    - islam
+    - karma
+    - logic
+    - matrix
+    - memory
+    - merge
+    - prayer
+    - proof
+    - quantum
+    - receipt
+    - routing
+    - sandbox
+    - society
+    - sync
+    - tamper
+    - taoism
+    - team
+    - trinity
+    - utility
+    - uuid
+    - war
+    - whole
+    - zeropoint
+  backlinks:
+    - akashic
+    - angel
+    - bahai
+    - competition
+    - cost
+    - decide
+    - drone
+    - education
+    - entry
+    - harmony
+    - history
+    - holographic
+    - identity
+    - islam
+    - karma
+    - logic
+    - matrix
+    - memory
+    - merge
+    - prayer
+    - proof
+    - quantum
+    - receipt
+    - routing
+    - sandbox
+    - society
+    - sync
+    - tamper
+    - taoism
+    - team
+    - trinity
+    - utility
+    - uuid
+    - war
+    - whole
+    - zeropoint
+signatures:
+  computationUuid: "3d760df9-50c0-8c83-915c-df86405cfe04"
+  stages:
+    - stage: path
+      stageUuid: "6b8ffcf0-6e9a-84c3-8e12-f9c0e908056d"
+    - stage: trinity
+      stageUuid: "15f7563d-2171-8146-85a5-e939f15edd01"
+    - stage: boundary
+      stageUuid: "ee069737-de98-8ffd-97d8-395c44f69bfc"
+    - stage: links
+      stageUuid: "caa0c86e-2856-8b03-9813-3e984dee1267"
+    - stage: horo
+      stageUuid: "8d0edcf8-311e-8544-a3d0-aae0164cdfed"
+    - stage: seal
+      stageUuid: "a552d543-c599-8630-ad3f-a26635acbae4"
+    - stage: uuid
+      stageUuid: "d92143ed-1e55-869f-b1cc-1923a6997abf"
+version: 2
 ---
-
 # peace — the uuid model proves all wars are useless
 
 FORM: **war seeks to DESTROY, COERCE, or DOMINATE; the uuid model defeats each, so war is strictly dominated by building.**

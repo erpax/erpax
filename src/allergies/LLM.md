@@ -3,8 +3,8 @@
 
 # allergies
 
-path `allergies` · uuid `aaf99cc2-548f-870d-bd53-4955fe9c405b` · diamond `69562346-4b84-8c8b-a333-2d8c30a3a2b3`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `allergies` · uuid `0f0754ea-e642-84ce-b844-e8652217a314` · diamond `268f1f63-2d6d-85ad-b77b-4ab452d0c6fc`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports allergies · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law allergies is one schema.org word, content-addressed; the same word collides 
 
 ---
 
-<sub>content-uuid `1c3db504-e08e-8fe1-9576-6a12a50f39e5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `022e2842-73f4-830f-bdb5-6c18fd667a30` · `pnpm readme` · `pnpm computed:check`</sub>

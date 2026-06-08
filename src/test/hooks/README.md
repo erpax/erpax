@@ -2,7 +2,7 @@
 
 # hooks
 
-> atom `test/hooks` · horo `6` `6` · [[balance]] `1` · [[seal]] `0`
+> atom `test/hooks` · horo `3` `3` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -24,13 +24,13 @@
 ## typography graph
 
 - partition `test` · sub-root `5e523a18-5976-8f7a-9234-6394e8ef5757`
-- bond degree `151` · analysis neighbors `analytics` · `aura` · `diamond` · `hallucination` · `purity`
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `357` · analysis neighbors `analytics` · `aura` · `diamond` · `hallucination` · `purity`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
-- uuid `3a658e69-ed7c-86e0-b18b-59db2375967d`
-- bonds in `10` · out `10`
+- uuid `742779e4-53e2-8c02-b0ce-00cd526850d0`
+- bonds in `113` · out `113`
 - trinity form·code·proof `1`·`1`·`1`
 - links `16` / `16`
 - folded `1` · escapes `0`
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `051ac514-ad47-8714-a7ca-f5c4969babdf` · framed by typography partition `test` bonds `151` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `637877c3-6314-8482-a70e-117488d906a0` · framed by typography partition `test` bonds `357` · `pnpm readme` · `pnpm readme:check`</sub>

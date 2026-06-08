@@ -1,10 +1,191 @@
 ---
 name: auth
-description: Use when enabling or configuring Payload authentication on a collection — login/logout, JWT/cookies, API keys, email verification, password reset, login lockout, token expiration, or admin-panel user accounts.
-sessions:
-  - 776a49cb-8dfb-45ab-88ff-956e3b613adf
+description: "Use when enabling or configuring Payload authentication on a collection — login/logout, JWT/cookies, API keys, email verification, password reset, login lockout, token expiration, or admin-panel user accounts."
+atomPath: auth
+coordinate: auth · 3/3 · f7239685
+contentUuid: "23a9f7bd-532e-569d-8967-ac4d6ec79127"
+diamondUuid: "453d6f12-fe97-84e7-98e4-37c32e569dfa"
+uuid: "f7239685-1106-8a18-8ea6-e00d4734bdfa"
+horo: 3
+bonds:
+  in:
+    - access
+    - accounts
+    - admin
+    - agent
+    - atom
+    - authenticated
+    - axis
+    - biometric
+    - coil
+    - collections
+    - config
+    - cross
+    - domain
+    - events
+    - harden
+    - hooks
+    - horo
+    - identity
+    - law
+    - limit
+    - mcp
+    - messages
+    - obligations
+    - owners
+    - proof
+    - published
+    - rodin
+    - skills
+    - submissions
+    - trinity
+    - users
+  out:
+    - access
+    - accounts
+    - admin
+    - agent
+    - atom
+    - authenticated
+    - axis
+    - biometric
+    - coil
+    - collections
+    - config
+    - cross
+    - domain
+    - events
+    - harden
+    - hooks
+    - horo
+    - identity
+    - law
+    - limit
+    - mcp
+    - messages
+    - obligations
+    - owners
+    - proof
+    - published
+    - rodin
+    - skills
+    - submissions
+    - trinity
+    - users
+typography:
+  partition: auth
+  bondDegree: 100
+  neighbors:
+    - diamond
+    - hallucination
+    - purity
+standards:
+  - "NIST INCITS-359-2012 rbac object-scoped-role-assignment"
+  - "NIST INCITS-359-2012 role-based-access-control"
+  - "NIST SP-800-162 attribute-based-access-control"
+  - "NIST-INCITS-359-2012"
+  - "NIST-SP-800-162"
+  - "NIST-SP-800-63"
+  - "OWASP-ASVS"
+  - "OWASP-ASVS V4 access-control"
+  - "SOC-2 CC6.1 logical-access-controls"
+bindings: []
+neighbors:
+  wikilink:
+    - access
+    - config
+    - domain
+    - events
+    - harden
+    - hooks
+    - identity
+    - law
+    - limit
+    - proof
+    - users
+  matrix:
+    - access
+    - accounts
+    - admin
+    - agent
+    - atom
+    - authenticated
+    - axis
+    - biometric
+    - coil
+    - collections
+    - config
+    - cross
+    - domain
+    - events
+    - harden
+    - hooks
+    - horo
+    - identity
+    - law
+    - limit
+    - mcp
+    - messages
+    - obligations
+    - owners
+    - proof
+    - published
+    - rodin
+    - skills
+    - submissions
+    - trinity
+    - users
+  backlinks:
+    - access
+    - accounts
+    - admin
+    - agent
+    - atom
+    - authenticated
+    - axis
+    - biometric
+    - coil
+    - collections
+    - config
+    - cross
+    - domain
+    - events
+    - harden
+    - hooks
+    - horo
+    - identity
+    - law
+    - limit
+    - mcp
+    - messages
+    - obligations
+    - owners
+    - proof
+    - published
+    - rodin
+    - skills
+    - submissions
+    - trinity
+    - users
+signatures:
+  computationUuid: "4057baf2-eb35-8fd4-86db-6410d9313c93"
+  stages:
+    - stage: path
+      stageUuid: "b7524e53-dec3-83e8-aabc-a84f5ebd1222"
+    - stage: trinity
+      stageUuid: "36c7bb00-1a50-886b-8863-d1ceb9c73eca"
+    - stage: boundary
+      stageUuid: "b9f8fe87-c176-8986-b64c-9e62ab8af626"
+    - stage: links
+      stageUuid: "e2230da0-7d68-83ab-97f6-404745395947"
+    - stage: horo
+      stageUuid: "71ccb6b5-aac3-8669-9798-b4fe704a05b6"
+    - stage: seal
+      stageUuid: "190078fb-3602-815e-b6e4-db99639dbbf9"
+    - stage: uuid
+      stageUuid: "4ce72b36-4215-8613-914d-2f7e535182c9"
+version: 2
 ---
-
 # auth — Payload authentication (position 9, the control triad)
 
 Enable on any collection via the `auth` property; each doc becomes a "user" with full login/logout/reset flow + admin UI. `auth: true` for defaults, or an object to configure.

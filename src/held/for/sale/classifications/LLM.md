@@ -3,8 +3,8 @@
 
 # classifications
 
-path `held/for/sale/classifications` · uuid `e0ceb759-08e4-87a3-94b3-8a0f9a24b5f5` · diamond `46d894c1-e038-8c6c-90a2-345f1902468b`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+path `held/for/sale/classifications` · uuid `e5fdd131-f7fd-80eb-aec9-8e1236ec23f4` · diamond `93fad0f0-7f1e-88c6-b489-a9bc0f43c3b9`
+horo `2` `share` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
 links `17/17` · folded `1` · bonds in `13` out `13`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law classifying an asset held-for-sale (IFRS 5 §6, sale highly-probable within 
 
 ---
 
-<sub>content-uuid `db89f045-5e6b-8ff8-bd07-197a1ef119c4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3878a0ad-c0a8-89c9-9a5b-b0b57014250b` · `pnpm readme` · `pnpm computed:check`</sub>

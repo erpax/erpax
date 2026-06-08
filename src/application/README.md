@@ -2,7 +2,7 @@
 
 # application
 
-> atom `application` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
+> atom `application` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -21,9 +21,9 @@
 
 ## typography graph
 
-- partition `application` · sub-root `62bca687-e9ee-8930-b11a-4bad611cc585`
+- partition `application` · sub-root `2913b3a9-279e-81fc-bac7-a7c8fa5e7f4f`
 - bond degree `44` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- graph root `67d11a43-67e0-8dde-afd8-ecbed950ff42`
 
 ## [[cloudflare]] bindings
 
@@ -33,15 +33,53 @@
 
 - `schema.org — the type vocabulary, collided to single words` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·4 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `44` · sealed `1` · horo `2`
+- bond degree `44` · sealed `1` · horo `4`
 - variance `0` · balanced `1` · trinity sum `1`
 - bindings `0` · standards `1`
 
 ## identity
 
-- uuid `62bca687-e9ee-8930-b11a-4bad611cc585`
+- uuid `2913b3a9-279e-81fc-bac7-a7c8fa5e7f4f`
 - bonds in `12` · out `12`
 - trinity form·code·proof `1`·`0`·`0`
 - links `12` / `12`
@@ -53,4 +91,4 @@
 
 ---
 
-<sub>content-uuid `64db1a63-61f2-82bc-84dc-309bea44da09` · framed by typography partition `application` bonds `44` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `fb7e1e67-44b5-81c2-9d02-70813cf5fbbf` · framed by typography partition `application` bonds `44` · `pnpm readme` · `pnpm readme:check`</sub>

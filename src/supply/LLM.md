@@ -3,15 +3,15 @@
 
 # supply
 
-path `supply` · uuid `6bbddb2b-edd9-8f0e-8d07-23a6784c4403` · diamond `81a8361b-3515-8f47-bddd-12998ec8b28e`
+path `supply` · uuid `6bbddb2b-edd9-8f0e-8d07-23a6784c4403` · diamond `6d53f9e6-b9a3-880d-a1c6-46af9adfc67f`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports blood·how·law · exports supply · escapes —
-links `3/3` · folded `1` · bonds in `6` out `6`
+links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·points·provider·stat · ← cohort·landmarks·memories·points·provider·stat
+neighbors → blood·how·law · ← blood·how·law
 analysis —
 law supply is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `ac0a6758-cb39-8905-8dfd-f6868fc1635e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a9749acb-648a-8ffb-a398-527c6791f48c` · `pnpm readme` · `pnpm computed:check`</sub>

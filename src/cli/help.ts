@@ -17,6 +17,8 @@ export const DOMAIN_META: Record<string, DomainMeta> = {
   monitor: { summary: 'Realtime violation watch loops', example: 'pnpm erpax monitor violations' },
   confirm: { summary: 'Scoped / full / uuid-pure confirm', example: 'pnpm erpax confirm uuid' },
   apply: { summary: 'Session apply + efficiency ledger', example: 'pnpm erpax apply session' },
+  automate: { summary: 'Orchestration loop (inventory → clean → ratchet)', example: 'pnpm erpax automate' },
+  clean: { summary: 'Coordinated dry-clean cycle', example: 'pnpm erpax clean' },
   standards: { summary: 'Standards banners + catalogue', example: 'pnpm erpax standards check' },
   corpus: { summary: 'Atom/matrix/skill catalogue emit', example: 'pnpm erpax corpus skill' },
   aura: { summary: 'Dead [[wikilink]] scan', example: 'pnpm erpax aura scan' },
@@ -41,7 +43,7 @@ export const DOMAIN_META: Record<string, DomainMeta> = {
 export const DOMAIN_GROUPS: readonly { readonly title: string; readonly domains: readonly string[] }[] = [
   { title: 'Corpus & docs', domains: ['readme', 'corpus', 'standards', 'translations', 'aura', 'harmony', 'plugin', 'spec'] },
   { title: 'Quality gates', domains: ['gate', 'doctor', 'lint', 'test', 'rules', 'confirm', 'monitor'] },
-  { title: 'Session & apply', domains: ['apply', 'build', 'codemod', 'path'] },
+  { title: 'Session & apply', domains: ['apply', 'automate', 'clean', 'build', 'codemod', 'path'] },
   { title: 'Runtime & deploy', domains: ['payload', 'deploy', 'db', 'import', 'mcp', 'seeds'] },
   { title: 'Meta', domains: ['aliases'] },
 ]

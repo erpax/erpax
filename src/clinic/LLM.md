@@ -3,8 +3,8 @@
 
 # clinic
 
-path `clinic` · uuid `8501af6c-e673-8e5a-8fa4-7d6cc4c665e3` · diamond `d4e3328c-5dda-8c26-9340-268591b33adc`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `clinic` · uuid `d10b580f-dc34-850f-ba21-9b49f2c3405d` · diamond `93d6ae60-413b-8482-a3b8-167492411002`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·medical·merge·sti · exports clinic · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law clinic is one schema.org word, content-addressed; the same word collides eve
 
 ---
 
-<sub>content-uuid `22ad954b-69e1-87bf-910c-8184a731ea31` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `67c577f9-fd94-82f5-a92a-944cc61bcf74` · `pnpm readme` · `pnpm computed:check`</sub>

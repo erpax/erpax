@@ -3,15 +3,15 @@
 
 # stop
 
-path `stop` · uuid `659b5521-313d-8634-a385-205d96698c3e` · diamond `757bc8f5-2216-845d-b175-db6205bc12e1`
+path `stop` · uuid `659b5521-313d-8634-a385-205d96698c3e` · diamond `33e480d6-733d-8ad5-baa5-6eddc4f641c2`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports arrival·bus·collapse·departure·law·merge·sti · exports stop · escapes —
-links `7/7` · folded `1` · bonds in `4` out `4`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → arrival·bus·collapse·departure·law·merge·sti · ← arrival·bus·collapse·departure·law·merge·sti
 analysis —
 law stop is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `f74b5e92-98d2-8d3b-bc8c-f8e2af51b7a2` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c94b5eff-672f-8ceb-bee7-f77123fb358d` · `pnpm readme` · `pnpm computed:check`</sub>

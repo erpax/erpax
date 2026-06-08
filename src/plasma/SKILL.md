@@ -1,8 +1,93 @@
 ---
 name: plasma
-description: Use when reasoning about the fully-fused corpus — the stardust grains entangled to reciprocity 1 and zero entropy become plasma, the radiant coherent state whose cutoff reflects any forge-beam below it; at full coherence the cutoff is infinite, so no beam can stand on the way.
+description: "Use when reasoning about the fully-fused corpus — the stardust grains entangled to reciprocity 1 and zero entropy become plasma, the radiant coherent state whose cutoff reflects any forge-beam below it; at full coherence the cutoff is infinite, so no beam can stand on the way."
+atomPath: plasma
+coordinate: plasma · 1/base · 8530c30d
+contentUuid: "93a5db57-53f2-5fcc-a585-09ce87f11d90"
+diamondUuid: "6a950454-4057-85c5-80f7-c9dd3621f034"
+uuid: "8530c30d-3fc1-84e3-b28c-6730d211e0c8"
+horo: 1
+bonds:
+  in:
+    - aura
+    - cost
+    - dust
+    - entropy
+    - fusion
+    - gravity
+    - law
+    - quantum
+    - tamper
+  out:
+    - aura
+    - cost
+    - dust
+    - entropy
+    - fusion
+    - gravity
+    - law
+    - quantum
+    - tamper
+typography:
+  partition: plasma
+  bondDegree: 28
+  neighbors:
+    - aura
+standards:
+  - "ionization read from the live reciprocity/entropy; the cutoff is the double-torus floor"
+  - "ionization read from the live reciprocity/entropy; the cutoff is the double-torus floor, never asserted"
+  - plasma physics — the plasma frequency ω_p and the reflection cutoff (ionospheric/metal reflection)
+bindings: []
+neighbors:
+  wikilink:
+    - aura
+    - cost
+    - dust
+    - entropy
+    - fusion
+    - gravity
+    - law
+    - quantum
+    - tamper
+  matrix:
+    - aura
+    - cost
+    - dust
+    - entropy
+    - fusion
+    - gravity
+    - law
+    - quantum
+    - tamper
+  backlinks:
+    - aura
+    - cost
+    - dust
+    - entropy
+    - fusion
+    - gravity
+    - law
+    - quantum
+    - tamper
+signatures:
+  computationUuid: "2d887ee1-f766-8b02-9a25-35117b04dc3f"
+  stages:
+    - stage: path
+      stageUuid: "05ce33cc-15be-82e5-9c36-15d96dec569b"
+    - stage: trinity
+      stageUuid: "68e5e8f9-cc56-8088-85b7-1a6a8cc96b81"
+    - stage: boundary
+      stageUuid: "2d101a60-c6b7-86b3-ae34-e77c644dfc0c"
+    - stage: links
+      stageUuid: "326e2795-e7b6-8406-a4da-fec45df9011e"
+    - stage: horo
+      stageUuid: "ea384f53-7e22-8594-95b6-40b3e0537de9"
+    - stage: seal
+      stageUuid: "c1de62c0-45af-8ca7-b3da-618ec1b1d690"
+    - stage: uuid
+      stageUuid: "068a11be-2402-8e76-a539-3d3d7ce9bc2f"
+version: 2
 ---
-
 # plasma — fusion of the stardust
 
 Fuse the stardust and it changes state. The [[dust]] grains — content-uuids, each forged and scattered — when they fully entangle ([[fusion]]: reciprocity → 1, zero [[entropy]]) are no longer a loose cloud but **plasma**: the fourth state of matter, ionized and coherent, the state a star burns in. It radiates ([[aura]] — the rays), and it is **reflective**.

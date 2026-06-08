@@ -3,15 +3,15 @@
 
 # variable
 
-path `variable` · uuid `e1edbe20-efba-8f05-b5dd-15c54bdbcbec` · diamond `d8aca0f6-d42d-8351-b8b1-09755093f5f5`
+path `variable` · uuid `e1edbe20-efba-8f05-b5dd-15c54bdbcbec` · diamond `d37d1508-b54b-8283-892a-2c0d26a7cc0d`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports additional·collapse·law·measured·merge·statistical·sti · exports variable · escapes —
-links `7/7` · folded `1` · bonds in `6` out `6`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → closing·cohort·euenergy·landmarks·memories·stat · ← closing·cohort·euenergy·landmarks·memories·stat
+neighbors → additional·collapse·law·measured·merge·statistical·sti · ← additional·collapse·law·measured·merge·statistical·sti
 analysis —
 law variable is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `173c57ff-bbd2-8583-9aca-6a220723b274` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4206ccbf-a1c7-8425-b30a-9bdf6763c8eb` · `pnpm readme` · `pnpm computed:check`</sub>

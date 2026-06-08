@@ -3,15 +3,15 @@
 
 # treatment
 
-path `treatment` · uuid `b41df446-6c94-8d12-93a6-d4cf3dd01a79` · diamond `37b50ed2-22ae-8222-b0fc-4784bd5e08d9`
+path `treatment` · uuid `b41df446-6c94-8d12-93a6-d4cf3dd01a79` · diamond `290bad89-b4df-82f9-a25d-d0948d41696b`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·indication·law·merge·possible·psychological·sti · exports treatment · escapes —
-links `7/7` · folded `1` · bonds in `4` out `4`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·indication·law·merge·possible·psychological·sti · ← collapse·indication·law·merge·possible·psychological·sti
 analysis —
 law treatment is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `7d610e0b-2911-8826-a140-4b5e51af2d3b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3f3e7a01-2ef4-8119-9ef1-56a832e9740b` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -2,7 +2,7 @@
 
 # aquaculture
 
-> atom `aquaculture` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
+> atom `aquaculture` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -21,9 +21,9 @@
 
 ## typography graph
 
-- partition `aquaculture` · sub-root `8cd5f771-0517-87a8-bfa5-08f9243fb1f2`
+- partition `aquaculture` · sub-root `bf9371cc-47a7-8e02-825e-e1733bc2c9f5`
 - bond degree `60` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- graph root `67d11a43-67e0-8dde-afd8-ecbed950ff42`
 
 ## [[cloudflare]] bindings
 
@@ -33,15 +33,53 @@
 
 —
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·4 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `60` · sealed `1` · horo `8`
+- bond degree `60` · sealed `1` · horo `4`
 - variance `0` · balanced `1` · trinity sum `1`
 - bindings `0` · standards `0`
 
 ## identity
 
-- uuid `8cd5f771-0517-87a8-bfa5-08f9243fb1f2`
+- uuid `bf9371cc-47a7-8e02-825e-e1733bc2c9f5`
 - bonds in `19` · out `19`
 - trinity form·code·proof `1`·`0`·`0`
 - links `39` / `39`
@@ -53,4 +91,4 @@
 
 ---
 
-<sub>content-uuid `d6dcae8e-0bf6-8c44-8b7f-da492f98dcd5` · framed by typography partition `aquaculture` bonds `60` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ab1102d6-bf1a-87fb-9522-cfaeee64d0b2` · framed by typography partition `aquaculture` bonds `60` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,15 +3,15 @@
 
 # memory
 
-path `quantum/memory` · uuid `53ef030f-e55a-8d3d-86cf-f663c26b705e` · diamond `9b59366d-9635-8605-9faa-1ae222c95951`
-horo `4` `weave` · trinity `1·1·1` · sealed `1`
+path `quantum/memory` · uuid `3f543bbc-6ae1-8199-aedf-bb81da27ce22` · diamond `946151cf-38af-8618-8718-6b2fcc3626e4`
+horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports @/memory/architecture·@/memory/session·@/quantum · exports const·function·isSealedDiamond·operationalMemoryFacet·operationalMemoryIsArchitecture·projectMemoryToArchitecture·saveSanitizedMemoryToLattice · escapes —
-links `47/47` · folded `1` · bonds in `29` out `33`
+links `47/47` · folded `1` · bonds in `18` out `18`
 faces worker·plugin·pwa `1·0·0`
-neighbors → akashic·atom·breath·collapse·cross·diamond·entropy·fractal·generate·hallucination·holographic·law·law·memory·memory·merge·merge·part·peace·purity·quantum·quantum·realtime·requirements·seal·seal·self·snapshot·sti·sync·thought·uuid·whole · ← akashic·atom·breath·collapse·cross·diamond·entropy·fractal·generate·hallucination·holographic·law·memory·memory·merge·part·peace·purity·quantum·realtime·requirements·seal·self·snapshot·sti·sync·thought·uuid·whole
+neighbors → akashic·architecture·collapse·computer·diamond·law·memory·memory·merge·quantum·quantum·requirements·seal·session·sti·sync·thought·uuid · ← akashic·architecture·collapse·computer·diamond·law·memory·memory·merge·quantum·quantum·requirements·seal·session·sti·sync·thought·uuid
 analysis diamond·hallucination·purity
 law in the quantum frame the content-[[uuid]] IS the memory manager — collapse allocates, dedup is free, collection is regeneration — so memory optimization is autosave (persist at collapse; the unsaved is regenerable, nothing to GC); and [[memory]] crossed with [[quantum]] across all four paths fuses into another [[seal]], the dual-torus cross at the centre.
 
 ---
 
-<sub>content-uuid `d94d5b68-1114-8445-8190-a3734ac962c2` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `43e8831d-e314-8a77-add1-25d2bb221bce` · `pnpm readme` · `pnpm computed:check`</sub>

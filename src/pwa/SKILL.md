@@ -1,8 +1,140 @@
 ---
 name: pwa
-description: Use when the offline web surface must stay trustworthy — service-worker cache keys, background-sync queue durability, manifest integrity, push dedup; every Progressive Web App pain point collapsed to a content-uuid problem.
+description: "Use when the offline web surface must stay trustworthy — service-worker cache keys, background-sync queue durability, manifest integrity, push dedup; every Progressive Web App pain point collapsed to a content-uuid problem."
+atomPath: pwa
+coordinate: pwa · 2/share · 5aad04e4
+contentUuid: "7055f457-4b65-5c3e-bd20-baae376101e6"
+diamondUuid: "3461e682-2a5e-894a-a488-abf3a48bb389"
+uuid: "5aad04e4-48c0-8b2d-ad32-acb6becc18d3"
+horo: 2
+bonds:
+  in:
+    - cache
+    - cost
+    - diamond
+    - duality
+    - fractal
+    - identity
+    - law
+    - merge
+    - plugin
+    - proof
+    - public
+    - pwa
+    - queue
+    - sequence
+    - standard
+    - uuid
+    - worker
+  out:
+    - cache
+    - cost
+    - diamond
+    - duality
+    - fractal
+    - identity
+    - law
+    - merge
+    - plugin
+    - proof
+    - public
+    - pwa
+    - queue
+    - sequence
+    - standard
+    - uuid
+    - worker
+typography:
+  partition: pwa
+  bondDegree: 65
+  neighbors:
+    - diamond
+standards:
+  - "ISO 19011:2018 §6.4.6 (PWA cache + queue audit-trailed)"
+  - RFC 9562 §5.8 + RFC 8785 (uuid composition)
+  - "RFC-8785"
+  - W3C Cache API + W3C IndexedDB 3.0 + W3C OPFS
+  - W3C Push API + W3C Notifications API
+  - "W3C Service Workers (W3C-SW)"
+  - "W3C Web App Manifest (W3C-WAM)"
+bindings:
+  - assets/ASSETS
+  - browser/BROWSER
+  - images/IMAGES
+  - r2_buckets/R2
+neighbors:
+  wikilink:
+    - cache
+    - cost
+    - diamond
+    - duality
+    - fractal
+    - identity
+    - law
+    - merge
+    - plugin
+    - proof
+    - public
+    - queue
+    - sequence
+    - standard
+    - uuid
+    - worker
+  matrix:
+    - cache
+    - cost
+    - diamond
+    - duality
+    - fractal
+    - identity
+    - law
+    - merge
+    - plugin
+    - proof
+    - public
+    - pwa
+    - queue
+    - sequence
+    - standard
+    - uuid
+    - worker
+  backlinks:
+    - cache
+    - cost
+    - diamond
+    - duality
+    - fractal
+    - identity
+    - law
+    - merge
+    - plugin
+    - proof
+    - public
+    - pwa
+    - queue
+    - sequence
+    - standard
+    - uuid
+    - worker
+signatures:
+  computationUuid: "bc4c9be5-3ea5-83cf-847d-2ccac5aa03ff"
+  stages:
+    - stage: path
+      stageUuid: "676397c4-de7a-80f0-a0ed-b7ebbf44bd01"
+    - stage: trinity
+      stageUuid: "12ef6088-f942-8b69-81cc-df23a6c75323"
+    - stage: boundary
+      stageUuid: "1c0228f1-27d0-88b8-b2ee-0e9f8208364c"
+    - stage: links
+      stageUuid: "3ebf72d4-ca43-84f7-bbf1-614f5dde77db"
+    - stage: horo
+      stageUuid: "ec0684b5-48a4-8b91-9412-2c804e12454a"
+    - stage: seal
+      stageUuid: "68ac116d-6d83-8268-bcc8-835584db53a4"
+    - stage: uuid
+      stageUuid: "1b1748a7-00b8-8f20-b1cd-4ae30e665221"
+version: 2
 ---
-
 # pwa — every offline pain point collapses to a content-uuid
 
 FORM: **the Progressive Web App surface is made trustworthy by content-addressing, not by the network.** Cache invalidation, sync conflicts, update push, queue durability, push dedup, manifest tampering, quota eviction, cross-device handoff — each classic PWA pain is a [[uuid]] problem in disguise, and the content-uuid ([[identity]]) is the one solvent. Proven by test (`index.test.ts`).

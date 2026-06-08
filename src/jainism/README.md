@@ -23,7 +23,21 @@
 
 - partition `jainism` · sub-root `3c083ec4-e204-8799-913f-a8b93492b08a`
 - bond degree `80` · analysis neighbors `diamond`
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `80` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `82e380db-1a27-8c17-b537-9290624b1aed` · framed by typography partition `jainism` bonds `80` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `62c775ab-ca88-8d94-b6ce-7ed9da31437f` · framed by typography partition `jainism` bonds `80` · `pnpm readme` · `pnpm readme:check`</sub>

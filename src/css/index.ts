@@ -28,6 +28,26 @@ export interface CssDiamondSeal {
   readonly byteLength: number
 }
 
+export {
+  computedCssForUi,
+  computedCssInjection,
+  computedCssStyleObject,
+  computedCssVarName,
+  payloadAdminAliases,
+  chromaOf,
+  mixHex,
+  contrastForeground,
+  DEFAULT_UI_SURFACE,
+  SHADCN_TOKEN_KEYS,
+  type ComputedCssTokens,
+  type CssMode,
+  type ShadcnTokenKey,
+  type UiSurface,
+  type UiSurfaceKind,
+} from './computed'
+
+export { ComputedCssProvider, useComputedCss, type ComputedCssContextValue, type ComputedCssProviderProps } from './ComputedCssProvider'
+
 export interface CssDiamondResult {
   /** Src-relative stylesheet path — the diamond address. */
   readonly path: string

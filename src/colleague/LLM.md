@@ -3,8 +3,8 @@
 
 # colleague
 
-path `colleague` · uuid `017c58fc-a86c-815f-8155-4ce524ee1a11` · diamond `3d1a5663-87ab-850c-b64d-2b553b28c844`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `colleague` · uuid `4e991876-da52-8279-8f88-d9684c93bc85` · diamond `4463e27a-82e0-83bf-8e20-8dc26aa5a18a`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports colleague · escapes —
 links `2/2` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law colleague is one schema.org word, content-addressed; the same word collides 
 
 ---
 
-<sub>content-uuid `738c26fa-a6a0-8369-acf6-4c3e8785360e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1322c077-fde5-8c5e-912f-4214e620359c` · `pnpm readme` · `pnpm computed:check`</sub>

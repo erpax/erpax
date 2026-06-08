@@ -3,8 +3,8 @@
 
 # workspace
 
-path `google/workspace` · uuid `2d9f4c14-a18e-8708-93f6-ffa6f543e9b9` · diamond `9361b24d-03bb-8bc2-a7c3-9df84d43ba0e`
-horo `7` `descent` · trinity `1·0·1` · sealed `1`
+path `google/workspace` · uuid `2d9f4c14-a18e-8708-93f6-ffa6f543e9b9` · diamond `73df3104-6769-8eca-8ab3-cd9202bd765a`
+horo `7` `descent` · trinity `1·0·0` · sealed `0`
 imports accounting·api·connections·entry·federation·flow·identity·ingest·law·merge·standard · exports workspace · escapes —
 links `22/22` · folded `1` · bonds in `13` out `13`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law a fetched Workspace resource is content-addressed and fused by the [[merge]]
 
 ---
 
-<sub>content-uuid `1a9040f8-1000-87f7-9756-b7d1198300bc` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0db4e352-9661-878a-8265-d9f5b1d4b2f3` · `pnpm readme` · `pnpm computed:check`</sub>

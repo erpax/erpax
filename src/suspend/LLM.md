@@ -3,15 +3,15 @@
 
 # suspend
 
-path `suspend` · uuid `ccb4fbf3-a6ca-8965-8996-190f77e6b11b` · diamond `f17ef1aa-1ae6-8154-9516-9e82374e21c8`
+path `suspend` · uuid `ccb4fbf3-a6ca-8965-8996-190f77e6b11b` · diamond `faab4970-18e6-8acb-96fd-0c973689cd15`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti · exports suspend · escapes —
-links `5/5` · folded `1` · bonds in `3` out `3`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·pi·terminals · ← landmarks·pi·terminals
+neighbors → action·collapse·law·merge·sti · ← action·collapse·law·merge·sti
 analysis —
 law suspend is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `b4599440-895f-8ca1-8575-0e7628709774` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `54b5d42e-d47b-80b2-a923-f18da57ca98c` · `pnpm readme` · `pnpm computed:check`</sub>

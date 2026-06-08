@@ -21,9 +21,9 @@
 
 ## typography graph
 
-- partition `classroom` · sub-root `fd251259-8a4e-87fe-83ba-d74ee3023855`
+- partition `classroom` · sub-root `5fba7100-e3f2-8bfd-bbc3-ec1c4fa9e9f2`
 - bond degree `51` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -33,6 +33,44 @@
 
 —
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·4 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
 - bond degree `51` · sealed `1` · horo `4`
@@ -41,7 +79,7 @@
 
 ## identity
 
-- uuid `fd251259-8a4e-87fe-83ba-d74ee3023855`
+- uuid `5fba7100-e3f2-8bfd-bbc3-ec1c4fa9e9f2`
 - bonds in `17` · out `17`
 - trinity form·code·proof `1`·`0`·`0`
 - links `40` / `40`
@@ -53,4 +91,4 @@
 
 ---
 
-<sub>content-uuid `d2183ca8-8858-8a91-9037-4f607e1e5349` · framed by typography partition `classroom` bonds `51` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e215998b-8ce3-8fec-9dbc-d382f2ec0885` · framed by typography partition `classroom` bonds `51` · `pnpm readme` · `pnpm readme:check`</sub>

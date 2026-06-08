@@ -2,9 +2,11 @@
 
 # calculations
 
-> atom `gl/accounts/tax/calculations` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
+> atom `gl/accounts/tax/calculations` · horo `8` `crest` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `gl/accounts/tax/calculations` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,15 +23,126 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `law:a tax calculation is a computed liability snapshot per period and jurisdiction — rate over gross/taxable/net, bound to a GL payable account and filing/payment deadlines — moving calculated→filed→paid; one immutable position, not a recompute.`
+- `seal:unsealed`
+- `trigger:Use when computing or reviewing tax-liability snapshots per period and jurisdiction — VAT, GST, income tax, payroll tax — with rate, gross/taxable/net amounts, GL payable account, and filing/payment deadlines; lifecycle from calculated to filed/paid. The tax-calculations period-snapshot collection.`
+- `trigger:a tax calculation is a computed liability snapshot per period and jurisdiction — rate over gross/taxable/net, bound to a GL payable account and filing/payment deadlines — moving calculated→filed→paid; one immutable position, not a recompute.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `1e3b9d13-a637-8c79-b6af-d3912e3f27d1` · `27dc5a6d-c858-8870-a830-47de1083ebcf` · `c7705dfa-51de-8611-a935-966ef99284ab`
+- content uuids `2cb65df6-7d84-89e2-a438-13d9047c5527` · `34678bb9-54c2-8a02-b52e-c6405da79ce1` · `39638b3a-f232-8f1f-91be-86628491470f`
+
+## [[entropy]] — gaps · seals
+
+> account code `gl/accounts/tax/calculations` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.8` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `2` eb | Σ seal `11.8` eb |
+
+> net residual `-9.8` eb · seal/gap ratio `5.9` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `gl` · sub-root `39b5ff82-5c79-838f-86f8-aeacb304fdf3`
+- partition `gl` · sub-root `966861c1-a32f-8ea4-b6bc-4e2bf862678d`
 - bond degree `34` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `COSO-ERM-2017` · catalogue
+- `EN-16931` · catalogue
+- `EN-16931:2017 §BG-23 vat-breakdown` · banner
+- `EU-2017/1132` · catalogue
+- `EU-2017/828` · catalogue
+- `ISO-3166-1:2020 country-codes jurisdiction` · banner
+- `ISO-3166-2` · catalogue
+- `ISO-3166-2:2020 subdivision-codes jurisdiction` · banner
+- `ISO-4217:2015 currency-codes` · banner
+- `ISO-8601-1:2019 date-time period posted-at filed-at paid-at` · banner
+- `OECD SAF-T tax-table` · banner
+- `SOX §404 internal-controls tax-position` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·8 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `34` · sealed `0` · horo `8`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `12`
 
 ## identity
 
-- uuid `b74b50ce-102c-8fda-8c30-6631e70fa44f`
+- uuid `ea9be5f6-017c-8191-8c4a-6855f6625946`
 - bonds in `11` · out `11`
 - trinity form·code·proof `1`·`1`·`1`
 - links `8` / `8`
@@ -37,8 +150,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `e351ad8e-e3b0-8b90-b0c3-87dd50c9bc30` · framed by typography partition `gl` bonds `34` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b31f29ac-e638-862c-b0ab-cc0054a4a388` · framed by typography partition `gl` bonds `34` · `pnpm readme` · `pnpm readme:check`</sub>

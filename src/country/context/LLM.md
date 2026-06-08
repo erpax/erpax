@@ -3,15 +3,15 @@
 
 # context
 
-path `country/context` · uuid `adaba9aa-d971-877d-b313-6d100a0c8dc7` · diamond `6e6ccc97-be58-835e-9f8e-1fecc365630d`
-horo `4` `weave` · trinity `1·1·1` · sealed `1`
+path `country/context` · uuid `73d5c13a-438c-8c50-993d-2b0e193ca6c3` · diamond `d2dc97c6-d4db-85c5-aaaa-69f0df9e2a76`
+horo `2` `share` · trinity `1·1·1` · sealed `0`
 imports @/config/country-specifics·@/config/regional-defaults·@/country/api·@/iban·@/trading/api · exports function·interface · escapes —
-links `2/2` · folded `1` · bonds in `8` out `9`
+links `2/2` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → collapse·country·description·law·law·media·merge·original·sti · ← collapse·country·description·law·media·merge·original·sti
+neighbors → collapse·description·law·media·merge·original·sti · ← collapse·description·law·media·merge·original·sti
 analysis —
 law every country branch resolves through one canonical merge — first-non-null of explicit/IBAN/address/tenant/default, always non-null, with a `source` diagnostic — so the registries are never read directly and the [[country]] decision is one auditable bundle.
 
 ---
 
-<sub>content-uuid `56047930-e780-813a-a46a-b276518ff1a4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `aa4f4554-0973-8af7-8c9d-d53338ac8659` · `pnpm readme` · `pnpm computed:check`</sub>

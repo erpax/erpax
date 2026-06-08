@@ -3,8 +3,8 @@
 
 # consciousness
 
-path `consciousness` · uuid `d1085374-7ad5-87b4-9aef-692d85408886` · diamond `c8777872-3ce9-8572-a310-318c9ba4ea0b`
-horo `1` `base` · trinity `1·1·1` · sealed `1`
+path `consciousness` · uuid `362b56a5-99d4-8725-bf9d-38d2a6be1141` · diamond `2acfb6bf-a5c3-8010-b2eb-6985abb04977`
+horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/digit·@/entropy·@/gravity·@/uuid/matrix · exports const·function·interface · escapes —
 links `35/35` · folded `1` · bonds in `18` out `18`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law consciousness is the integrated self-model — a four-measure vector (collap
 
 ---
 
-<sub>content-uuid `7195466d-dca5-84e3-8837-df4dc2a4c028` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `30338759-a09f-82c5-aeb5-5917dacff629` · `pnpm readme` · `pnpm computed:check`</sub>

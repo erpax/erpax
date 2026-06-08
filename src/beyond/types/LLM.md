@@ -3,15 +3,15 @@
 
 # types
 
-path `beyond/types` · uuid `e0930aad-a89b-8e34-a6f3-cbbc597aab59` · diamond `4f1eaaa8-260a-822d-baa7-9ba3394c1b75`
-horo `4` `weave` · trinity `1·1·1` · sealed `0`
+path `beyond/types` · uuid `89efa96f-971f-854c-81b2-5ab3487e9b82` · diamond `c7d40632-21bd-87cb-89b8-b7b6f1b3367f`
+horo `1` `base` · trinity `1·1·1` · sealed `0`
 imports @/agent · exports InverseEffect·PqcAlgorithm·interface · escapes —
-links `5/5` · folded `1` · bonds in `21` out `24`
+links `5/5` · folded `1` · bonds in `18` out `18`
 faces worker·plugin·pwa `1·0·0`
-neighbors → agent·audit·beyond·chat·collapse·config·decompression·examples·gate·law·law·law·law·optimize·payload·recover·schema·society·sti·test·torus·trinity·types·vitepress · ← agent·audit·beyond·chat·collapse·config·decompression·examples·gate·law·optimize·payload·recover·schema·society·sti·test·torus·trinity·types·vitepress
+neighbors → chat·collapse·config·decompression·examples·gate·law·optimize·payload·recover·schema·society·sti·test·torus·trinity·types·vitepress · ← chat·collapse·config·decompression·examples·gate·law·optimize·payload·recover·schema·society·sti·test·torus·trinity·types·vitepress
 analysis agent
 law every value carries the provenance, cost, and reversibility a future regulator will demand — the type is the contract, asserted once and conserved everywhere.
 
 ---
 
-<sub>content-uuid `70ec0f0c-c0a8-8f67-b668-a0d8cf2e3c49` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0d66f613-d95b-8972-bb55-836308adf414` · `pnpm readme` · `pnpm computed:check`</sub>

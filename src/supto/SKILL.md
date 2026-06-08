@@ -1,8 +1,141 @@
 ---
 name: supto
-description: Bulgarian Наредба Н-18 / СУПТО retail fiscal regime — the УНП (unique sales number XXXXXXXX-ZZZZ-0000001), no-delete / reversal-only immutability, read-only audit profile, the monthly standardized audit (XML, Appendix 38), and fiscal-device (ФУ) receipt linkage. Read when implementing BG point-of-sale compliance, or as the worked example of mapping a government audit regime onto the content-uuid model — СУПТО ≈ a state-mandated content-addressed audit system.
+description: "Use when reasoning about supto — СУПТО (*Софтуер за управление на продажбите в търговски обекти* — sales-management software for commercial outlets), regulated by **Наредба Н-18** and the НАП registry, is — struct"
+atomPath: supto
+coordinate: supto · 8/crest · eb296802
+contentUuid: "9479231c-74d8-5bd3-a877-b839a1c32e9b"
+diamondUuid: "322591bb-7855-8162-be29-42f67ec22f89"
+uuid: "eb296802-49db-8b1a-9e52-80a0cfbf4961"
+horo: 8
+bonds:
+  in:
+    - access
+    - accounting
+    - bindings
+    - corruption
+    - devices
+    - duality
+    - event
+    - hooks
+    - identity
+    - jobs
+    - law
+    - lineage
+    - number
+    - receipts
+    - reverse
+    - standard
+    - sti
+    - submissions
+    - tax
+    - uuid
+  out:
+    - access
+    - accounting
+    - bindings
+    - corruption
+    - devices
+    - duality
+    - event
+    - hooks
+    - identity
+    - jobs
+    - law
+    - lineage
+    - number
+    - receipts
+    - reverse
+    - standard
+    - sti
+    - submissions
+    - tax
+    - uuid
+typography:
+  partition: supto
+  bondDegree: 62
+  neighbors: []
+standards: []
+bindings: []
+neighbors:
+  wikilink:
+    - access
+    - accounting
+    - bindings
+    - devices
+    - duality
+    - event
+    - hooks
+    - identity
+    - jobs
+    - law
+    - number
+    - reverse
+    - standard
+    - sti
+    - submissions
+    - tax
+    - uuid
+  matrix:
+    - access
+    - accounting
+    - bindings
+    - corruption
+    - devices
+    - duality
+    - event
+    - hooks
+    - identity
+    - jobs
+    - law
+    - lineage
+    - number
+    - receipts
+    - reverse
+    - standard
+    - sti
+    - submissions
+    - tax
+    - uuid
+  backlinks:
+    - access
+    - accounting
+    - bindings
+    - corruption
+    - devices
+    - duality
+    - event
+    - hooks
+    - identity
+    - jobs
+    - law
+    - lineage
+    - number
+    - receipts
+    - reverse
+    - standard
+    - sti
+    - submissions
+    - tax
+    - uuid
+signatures:
+  computationUuid: "fbba193b-5edf-8cb8-a4c4-7bb1b51de65c"
+  stages:
+    - stage: path
+      stageUuid: "c1caa05d-8260-8f05-a39c-810de0d29926"
+    - stage: trinity
+      stageUuid: "da911176-f751-8955-ad5d-89dcc7f43d09"
+    - stage: boundary
+      stageUuid: "046049ba-c7c5-8698-88c0-1609db8533c8"
+    - stage: links
+      stageUuid: "93b2df3d-7f3e-8f2e-b0e1-2f044e149272"
+    - stage: horo
+      stageUuid: "c61dc154-dc88-82ed-ad15-5bb8d5de1132"
+    - stage: seal
+      stageUuid: "1d31b401-0e7d-8770-9897-811b0244330f"
+    - stage: uuid
+      stageUuid: "896ec796-6e4e-877e-b9de-36c11dcd3f99"
+version: 2
 ---
-
 # supto — Наредба Н-18 / СУПТО, mapped onto the content-uuid model
 
 СУПТО (*Софтуер за управление на продажбите в търговски обекти* — sales-management software for commercial outlets), regulated by **Наредба Н-18** and the НАП registry, is — structurally — a **government-mandated content-addressed audit system**. It maps onto the erpax [[identity]] framework almost 1:1; the divergences are exactly what [[identity]]'s *"the uuid type is standards-driven"* predicts.

@@ -1,8 +1,72 @@
 ---
-name: "closing"
+name: closing
 description: "Use when implementing or referencing Period-End Closing Standard."
+atomPath: period/end/closing
+coordinate: period/end/closing · 4/weave · 7459545e
+contentUuid: "23a08d35-1b49-5463-bc77-3a36d160ee51"
+diamondUuid: "9e4106be-94bb-8191-9288-e454793684ab"
+uuid: "7459545e-9a33-8524-89a9-72b46610762f"
+horo: 4
+bonds:
+  in:
+    - checker
+    - end
+    - law
+  out:
+    - checker
+    - law
+typography:
+  partition: period
+  bondDegree: 8
+  neighbors: []
+standards:
+  - "EU-2014/55"
+  - "EU-2016/679"
+  - "EU-537/2014"
+  - "EU-910/2014"
+  - "GDPR:2016/679 Art. 32 Security of processing"
+  - "IAS-34"
+  - "IAS-34:2023 Interim Financial Reporting"
+  - "NIST-SP-800-92"
+  - "NIST-SP-800-92 Audit logging"
+  - "SAF-T"
+  - "SAF-T:3.0.2 Standard Audit File for Tax"
+  - SOX
+  - "SOX:2002 Sec. 404 Internal control assessment"
+  - XBRL
+  - "XBRL-GL General Ledger"
+  - eIDAS
+  - "eIDAS:2014/910/EU Electronic signatures"
+bindings: []
+neighbors:
+  wikilink:
+    - accounting
+    - law
+  matrix:
+    - checker
+    - law
+  backlinks:
+    - checker
+    - law
+signatures:
+  computationUuid: "c722465d-bc19-8f7f-9419-c0d15af1575f"
+  stages:
+    - stage: path
+      stageUuid: "2d57c044-1d4f-8c3e-bcbb-12dcb0f8017f"
+    - stage: trinity
+      stageUuid: "63bdb167-8ee4-85b3-9549-0fcfa19450b3"
+    - stage: boundary
+      stageUuid: "59886a05-ea09-82ff-9b19-aafc4a11701a"
+    - stage: links
+      stageUuid: "6399e19d-b877-83e7-84c1-77a13b13b562"
+    - stage: horo
+      stageUuid: "796f5263-58de-8361-9b22-68a8efaf45bf"
+    - stage: seal
+      stageUuid: "0a281f98-f340-82d8-9580-503a3999484c"
+    - stage: uuid
+      stageUuid: "f2173523-aad2-8982-b323-ee53f5ff1489"
+version: 2
 ---
-
 # Period-End Closing Standard
 
 **Publisher:** International Accounting Standards Board (IASB), OECD, ISO, W3C  

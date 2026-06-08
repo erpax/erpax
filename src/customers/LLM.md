@@ -3,8 +3,8 @@
 
 # customers
 
-path `customers` · uuid `6ac4b816-f978-88d2-b10c-0ae7038212ef` · diamond `3b58dbfd-6c76-8682-8051-8e5d9873da05`
-horo `8` `crest` · trinity `1·1·1` · sealed `1`
+path `customers` · uuid `bb79375b-1f9b-83dd-94bd-b8c3ab9e095a` · diamond `b5ccb30b-70ef-8c2d-81b7-fbd3bc00d5b9`
+horo `1` `base` · trinity `1·1·1` · sealed `0`
 imports @/audit/trail/after/change·@/auth·@/auto/populate/tenant·@/classify/tax/id · exports const · escapes —
 links `7/7` · folded `1` · bonds in `21` out `21`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law a customer is the buyer-side party of record whose receivable exposure may n
 
 ---
 
-<sub>content-uuid `245a6fb6-554d-8fa2-84fa-a5f12b366278` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5eea60ea-3e8d-82a8-b236-bc0ab4ec7d78` · `pnpm readme` · `pnpm computed:check`</sub>

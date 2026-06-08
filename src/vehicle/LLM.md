@@ -3,15 +3,15 @@
 
 # vehicle
 
-path `vehicle` · uuid `21563ab1-412d-80d2-9514-9e98c5b16714` · diamond `9461c6dc-a505-8d36-b5d8-c10e9feed9e5`
+path `vehicle` · uuid `21563ab1-412d-80d2-9514-9e98c5b16714` · diamond `fd120f90-72f0-8663-8b06-78fdd718de8f`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports capacity·color·configuration·damages·date·engine·first·identification·interior·known·law·model·number·registered·seating·special·transmission·type·usage · exports vehicle · escapes —
-links `19/19` · folded `1` · bonds in `4` out `4`
+links `19/19` · folded `1` · bonds in `20` out `20`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → aircraft·capacity·color·configuration·damages·date·engine·first·identification·interior·known·law·model·number·registered·seating·special·transmission·type·usage · ← aircraft·capacity·color·configuration·damages·date·engine·first·identification·interior·known·law·model·number·registered·seating·special·transmission·type·usage
 analysis —
 law vehicle is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `e5477120-65c2-8e29-9891-e706be3cebd0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `991e9023-8f7c-8a45-8898-1b99a5bab343` · `pnpm readme` · `pnpm computed:check`</sub>

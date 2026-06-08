@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `theater` · sub-root `701c2f67-e6b1-88a1-ae91-010499250222`
-- bond degree `23` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `31` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `701c2f67-e6b1-88a1-ae91-010499250222`
-- bonds in `5` · out `5`
+- bonds in `9` · out `9`
 - trinity form·code·proof `1`·`0`·`0`
 - links `9` / `9`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `ebb82226-46d0-89cf-83c3-00bee7808660` · framed by typography partition `theater` bonds `23` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `36f0b2ce-aa07-8b63-87cb-1fbea5bf10d7` · framed by typography partition `theater` bonds `31` · `pnpm readme` · `pnpm readme:check`</sub>

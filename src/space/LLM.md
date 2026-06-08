@@ -8,10 +8,10 @@ horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports balance·law·location·spaces · exports space · escapes —
 links `9/9` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → balance·law·location·spaces · ← balance·law·location·spaces
 analysis —
 law a space is one bounded area that can be occupied or reserved — the singular model whose plural store is the [[spaces]] collection ([[balance]]: every collection has its model).
 
 ---
 
-<sub>content-uuid `0b36422b-66b5-8650-8fe4-cf4e05864146` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d5ce39b5-a81d-8425-9022-bc6923c1ff56` · `pnpm readme` · `pnpm computed:check`</sub>

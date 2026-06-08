@@ -3,8 +3,8 @@
 
 # circle
 
-path `circle` · uuid `fad78c04-834d-8d1e-a44d-391d85a42bd8` · diamond `819d54f8-96b4-8dbc-ac07-37d123d596d5`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `circle` · uuid `7d527585-cc6a-8c2a-a84f-babb3247d5ad` · diamond `f8b428ad-5423-869c-819f-8a56881b3261`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports geo·law · exports circle · escapes —
 links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law circle is one schema.org word, content-addressed; the same word collides eve
 
 ---
 
-<sub>content-uuid `e5e361b2-c49c-8b6b-927d-69986aa48f2f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `33202685-7212-847b-9577-adb1beb93139` · `pnpm readme` · `pnpm computed:check`</sub>

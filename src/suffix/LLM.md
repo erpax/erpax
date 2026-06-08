@@ -3,15 +3,15 @@
 
 # suffix
 
-path `suffix` · uuid `5bbc796f-3b4b-859f-801b-cc5434cde198` · diamond `a9c3b445-62f9-89cc-a965-30c39d907e41`
+path `suffix` · uuid `5bbc796f-3b4b-859f-801b-cc5434cde198` · diamond `b0cefaba-7925-8828-b073-a32b1122aad8`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·honorific·law·merge·stage·sti·sub · exports suffix · escapes —
-links `7/7` · folded `1` · bonds in `5` out `5`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·elementary·landmarks·memories·stat · ← cohort·elementary·landmarks·memories·stat
+neighbors → collapse·honorific·law·merge·stage·sti·sub · ← collapse·honorific·law·merge·stage·sti·sub
 analysis —
 law suffix is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `b83c55d3-bd88-827a-82fa-dcceab17f46a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `63dcb02e-9b95-8133-ac5e-8b65274d16ed` · `pnpm readme` · `pnpm computed:check`</sub>

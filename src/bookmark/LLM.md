@@ -3,8 +3,8 @@
 
 # bookmark
 
-path `bookmark` · uuid `0e17b4bd-c717-8d45-bb6c-61094153a2a2` · diamond `5fd1b00f-9b73-871a-bf3a-500d43e1dd0e`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `bookmark` · uuid `60a3be85-c542-82bd-8553-43575c80b735` · diamond `4cef7860-681e-88d3-a795-4b4bab8d308f`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti · exports bookmark · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law bookmark is one schema.org word, content-addressed; the same word collides e
 
 ---
 
-<sub>content-uuid `17ffbf7d-830e-87f1-b120-b83d018ef05d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `135c4dc3-60e4-847e-809d-863a679b03a7` · `pnpm readme` · `pnpm computed:check`</sub>

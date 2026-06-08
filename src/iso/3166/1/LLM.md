@@ -3,8 +3,8 @@
 
 # 1
 
-path `iso/3166/1` · uuid `7aa04c27-0544-8b6e-9478-21c2b02d9c23` · diamond `5d4924e0-c193-8748-b983-94aaee48254a`
-horo `1` `base` · trinity `1·1·1` · sealed `1`
+path `iso/3166/1` · uuid `e0664ada-22a0-870c-b1fa-c07a262f1ff7` · diamond `abf1f358-5f1a-8675-8da6-ad198983dfbf`
+horo `5` `round` · trinity `1·1·1` · sealed `0`
 imports — · exports isIso3166Alpha2·isIso3166Alpha3 · escapes —
 links `1/1` · folded `1` · bonds in `1` out `1`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law a country is identified only by its ISO 3166-1 code (alpha-2 / alpha-3) — 
 
 ---
 
-<sub>content-uuid `d722a3fc-edf9-8869-ba1f-e503af579321` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `becf26df-cc96-81a9-ad9a-1bf97ba2077a` · `pnpm readme` · `pnpm computed:check`</sub>

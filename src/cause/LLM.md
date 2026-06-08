@@ -3,8 +3,8 @@
 
 # cause
 
-path `cause` · uuid `943bc65d-eaad-8deb-9f85-54a02e751a46` · diamond `6e6f03e6-297f-89ff-a76f-cb1acd343424`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `cause` · uuid `b989e75d-6b09-818f-8010-0b0254636736` · diamond `5a1fda0d-6316-86a8-8a9a-f61417ef924d`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports law·medical · exports cause · escapes —
 links `2/2` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law cause is one schema.org word, content-addressed; the same word collides ever
 
 ---
 
-<sub>content-uuid `cf2721ec-2af5-8fff-8d97-deb1878e6f87` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8126b6ad-4be4-897c-9cd5-89186d4c39ff` · `pnpm readme` · `pnpm computed:check`</sub>

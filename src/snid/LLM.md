@@ -3,15 +3,15 @@
 
 # snid
 
-path `snid` · uuid `fa9f90c7-8d5e-8d39-aaf6-fafe708e86f5` · diamond `ab1dfcd7-d683-887b-a28b-531f03c2ed1d`
+path `snid` · uuid `fa9f90c7-8d5e-8d39-aaf6-fafe708e86f5` · diamond `930fe0c2-4c8f-8f58-b373-0289f66376fd`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports snid · escapes —
-links `4/4` · folded `1` · bonds in `18` out `18`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·audit·based·differential·emergence·entropy·fertility·gears·id·issn·kiosk·landmarks·optician·rates·refunds·relationship·restocking·sku · ← accounting·audit·based·differential·emergence·entropy·fertility·gears·id·issn·kiosk·landmarks·optician·rates·refunds·relationship·restocking·sku
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law snid is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `a5561b74-0d69-8d6d-87cd-ce733627f676` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b7a576f1-7ff2-8807-aef9-ce9b801053a4` · `pnpm readme` · `pnpm computed:check`</sub>

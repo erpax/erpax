@@ -23,7 +23,21 @@
 
 - partition `investment` · sub-root `20ac362e-a17a-8306-9ef1-849734ed6a2a`
 - bond degree `20` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `20` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `ff1ca3d5-96aa-8929-9805-afb5a7cea64b` · framed by typography partition `investment` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `9da56963-7b72-8627-a87b-6e34674adac5` · framed by typography partition `investment` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>

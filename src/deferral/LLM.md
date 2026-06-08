@@ -3,8 +3,8 @@
 
 # deferral
 
-path `deferral` · uuid `90903979-bddd-82e0-9cb8-089b06b52377` · diamond `50272091-da1a-8511-86a1-0f1836eecd7f`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `deferral` · uuid `69aefc5b-80bf-8a53-a8fc-590d32a620dd` · diamond `e8fc0233-7072-8875-a131-a3635247261e`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports accrual·customers·gl·journal·law·prepaid · exports deferral · escapes —
 links `8/8` · folded `1` · bonds in `11` out `11`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law a deferral postpones recognition of revenue or expense to a future period pe
 
 ---
 
-<sub>content-uuid `7a3528b6-a6ca-8897-83e1-c1b572b57ed1` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4a2c146d-1571-8b42-8f65-d2557eabbf65` · `pnpm readme` · `pnpm computed:check`</sub>

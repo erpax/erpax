@@ -3,8 +3,8 @@
 
 # continent
 
-path `continent` · uuid `eac110bf-7842-805e-b10b-5b0b61e8adae` · diamond `cff52812-d820-8b0b-a6e1-169f0b476160`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `continent` · uuid `53292df6-f7df-8d99-a32f-b9aa2e962dc4` · diamond `e8090265-4110-8211-8296-fc78407310bd`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports law·place·thing · exports continent · escapes —
 links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law continent is one schema.org word, content-addressed; the same word collides 
 
 ---
 
-<sub>content-uuid `3e377844-412e-86a0-b1ce-dd10ad9e174a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f13920f3-526e-8a5a-9f49-bd48ff382576` · `pnpm readme` · `pnpm computed:check`</sub>

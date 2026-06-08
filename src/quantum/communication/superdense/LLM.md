@@ -3,8 +3,8 @@
 
 # superdense
 
-path `quantum/communication/superdense` · uuid `4178a80e-0f9a-85b5-b30d-2b07d55bc028` · diamond `442dcad1-a815-8b3d-9042-08595848eb4c`
-horo `4` `weave` · trinity `1·1·1` · sealed `1`
+path `quantum/communication/superdense` · uuid `7a38fbef-310e-84f0-a363-2a15c8c2a2c0` · diamond `64c59f29-01e1-8180-a0ac-77a0ce3cae8b`
+horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports @/uuid/matrix · exports const · escapes —
 links `13/13` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law one entangled binding carries the full ordered pair — `encode(from,to)` is
 
 ---
 
-<sub>content-uuid `8717bc07-7510-82ff-8ece-0022e3bd2837` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `dca6d71e-e043-8be7-9182-fc159d000c36` · `pnpm readme` · `pnpm computed:check`</sub>

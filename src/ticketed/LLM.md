@@ -3,15 +3,15 @@
 
 # ticketed
 
-path `ticketed` · uuid `56e45f6e-dd56-842b-b951-b694f7934c34` · diamond `3017a90c-c796-8ed2-aa58-c3a60d8558fb`
+path `ticketed` · uuid `56e45f6e-dd56-842b-b951-b694f7934c34` · diamond `2ac8c821-d165-8f4f-a910-651234298974`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·seat·sti · exports ticketed · escapes —
-links `5/5` · folded `1` · bonds in `7` out `7`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·continental·entity·human·landmarks·memories·stat · ← cohort·continental·entity·human·landmarks·memories·stat
+neighbors → collapse·law·merge·seat·sti · ← collapse·law·merge·seat·sti
 analysis —
 law ticketed is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `ea0246ee-713a-8517-b284-a3f9eac5d8d6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `936a2c33-93e6-8359-93ec-3cd9826314dc` · `pnpm readme` · `pnpm computed:check`</sub>

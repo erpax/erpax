@@ -3,7 +3,7 @@
 
 # consistency
 
-path `consistency` · uuid `9de590dd-bcc3-8794-974d-dc3ac8cb8541` · diamond `2ab4e0e2-8741-8dcb-8b8a-34b3d71e2388`
+path `consistency` · uuid `09ea6471-6dc6-88fc-9a68-1273deb33110` · diamond `79f988ce-df24-8767-8583-73562e254f48`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports anti·constraint·database·identity·reconcile · exports consistency · escapes —
 links `5/5` · folded `1` · bonds in `11` out `11`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `ffd95eda-1db4-8c37-9446-ed6fde18dd52` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b16e3072-c105-8d03-94da-ed880c9cfc73` · `pnpm readme` · `pnpm computed:check`</sub>

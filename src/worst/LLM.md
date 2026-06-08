@@ -3,15 +3,15 @@
 
 # worst
 
-path `worst` · uuid `b8847e2c-fc22-817c-8e10-48cec75ad4b2` · diamond `00a461fa-271a-8d3b-806d-97e57d78bee8`
+path `worst` · uuid `b8847e2c-fc22-817c-8e10-48cec75ad4b2` · diamond `8c7bfc06-2632-80a7-8e8c-2c7248525c68`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·rating·sti · exports worst · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·rating·sti · ← collapse·law·merge·rating·sti
 analysis —
 law worst is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `18739799-6b82-80df-ac93-8663d889f534` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8a0863aa-1635-8167-aa0b-b75dacecd67f` · `pnpm readme` · `pnpm computed:check`</sub>

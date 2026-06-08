@@ -3,15 +3,15 @@
 
 # chart
 
-path `chart` · uuid `98c17fb4-10d6-8d86-a044-c4d54127f197` · diamond `891bdc3f-dabb-8e48-991a-feaf015b4cd0`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+path `chart` · uuid `9d5b59d3-87c4-8006-bcf6-3c78a439e424` · diamond `0b961737-2714-89b0-9fb1-ac91c18ef39b`
+horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports — · exports const·interface · escapes —
-links `15/15` · folded `1` · bonds in `9` out `14`
+links `15/15` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `1·0·0`
-neighbors → analog·chart·color·color·data·law·law·quantum·quantum·scale·scale·series·series·signal · ← analog·chart·color·data·law·quantum·scale·series·signal
+neighbors → chart·color·data·law·quantum·scale·series · ← chart·color·data·law·quantum·scale·series
 analysis —
 law a chart is pure data — a numeric [[series]] with its range and a deterministic normalizer to [0,1], testable and content-addressable; rendering is the [[quantum]] facet, never the spec.
 
 ---
 
-<sub>content-uuid `94dd3b47-e9af-84e1-b032-aea80fea6773` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `bb73d170-f339-893c-a83d-f9cb1b0c8796` · `pnpm readme` · `pnpm computed:check`</sub>

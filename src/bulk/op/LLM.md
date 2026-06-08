@@ -3,15 +3,15 @@
 
 # op
 
-path `bulk/op` · uuid `661db463-982c-8994-bb82-3b8f469e7517` · diamond `fadccdf1-3dbb-8d58-a6fc-77e4c75d1715`
-horo `4` `weave` · trinity `1·1·1` · sealed `0`
+path `bulk/op` · uuid `6911cde0-37d9-8970-8c9c-af48bebc230f` · diamond `882ec2bc-dbe5-8ff7-94c7-dff10b806fc2`
+horo `8` `crest` · trinity `1·1·1` · sealed `0`
 imports @/auth · exports BulkFormat·BulkOperationKind·async·interface·map · escapes —
-links `3/3` · folded `1` · bonds in `8` out `9`
+links `3/3` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → collapse·dry·law·law·merge·op·post·pre·sti · ← collapse·dry·law·merge·op·post·pre·sti
+neighbors → collapse·law·merge·op·post·pre·sti · ← collapse·law·merge·op·post·pre·sti
 analysis —
 law every bulk import/export flows through one contract — audited up front, idempotent by `operationId`, and per-row fail-closed into `transaction-failures` — so the per-format importers collapse to a single [[op]] ([[dry]]).
 
 ---
 
-<sub>content-uuid `5105744c-4a27-89b3-b5c6-c5ac10ad02dc` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8010aa98-323f-8f95-8342-e58568150965` · `pnpm readme` · `pnpm computed:check`</sub>

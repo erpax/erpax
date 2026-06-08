@@ -2,7 +2,7 @@
 
 # cap
 
-> atom `cap` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
+> atom `cap` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -21,9 +21,9 @@
 
 ## typography graph
 
-- partition `cap` · sub-root `9c584695-1f6f-8bcd-9260-997972825e46`
+- partition `cap` · sub-root `ba595f20-a933-8613-a8fe-d378a8cea529`
 - bond degree `12` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- graph root `1cef4f02-a3fa-83a5-8ea0-120b724ef456`
 
 ## [[cloudflare]] bindings
 
@@ -33,15 +33,53 @@
 
 - `schema.org — the type vocabulary, collided to single words` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·4 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `12` · sealed `1` · horo `2`
+- bond degree `12` · sealed `1` · horo `4`
 - variance `0` · balanced `1` · trinity sum `1`
 - bindings `0` · standards `1`
 
 ## identity
 
-- uuid `9c584695-1f6f-8bcd-9260-997972825e46`
+- uuid `ba595f20-a933-8613-a8fe-d378a8cea529`
 - bonds in `4` · out `4`
 - trinity form·code·proof `1`·`0`·`0`
 - links `4` / `4`
@@ -53,4 +91,4 @@
 
 ---
 
-<sub>content-uuid `10d6b12c-2bb7-82c8-9bd0-e57d41d52fc8` · framed by typography partition `cap` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c59dce88-906b-87c3-8bd5-e0ef635f3e28` · framed by typography partition `cap` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

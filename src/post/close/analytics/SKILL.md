@@ -1,8 +1,155 @@
 ---
 name: analytics
-description: Use when generating post-close financial analytics — budget-vs-actual and period-over-period variance with waterfall decomposition, the sixteen liquidity/profitability/solvency/efficiency ratios, IFRS-8 business and geographic segment reporting, and executive KPI dashboards, once audit and consolidation are approved.
+description: "Use when generating post-close financial analytics — budget-vs-actual and period-over-period variance with waterfall decomposition, the sixteen liquidity/profitability/solvency/efficiency ratios, IFRS-8 business and geographic segment reporting, and executive KPI dashboards, once audit and consolidation are approved."
+atomPath: post/close/analytics
+coordinate: post/close/analytics · 5/round · 04ea0659
+contentUuid: "089d1703-bb30-56d0-92aa-2d18806bc7f5"
+diamondUuid: "34942bc1-2747-84a3-a9d6-fe4605de2088"
+uuid: "04ea0659-2bbd-8010-9b21-e11ca17a800a"
+horo: 5
+bonds:
+  in:
+    - accounting
+    - atom
+    - aura
+    - balance
+    - bindings
+    - close
+    - collections
+    - cost
+    - dimension
+    - dry
+    - entropy
+    - hallucination
+    - harmony
+    - hooks
+    - horo
+    - matrix
+    - maxtampercost
+    - pivot
+    - purity
+    - relocate
+    - standards
+    - tamper
+    - trinity
+    - typography
+    - unavoidable
+  out:
+    - accounting
+    - atom
+    - aura
+    - balance
+    - bindings
+    - collections
+    - cost
+    - dimension
+    - dry
+    - entropy
+    - hallucination
+    - harmony
+    - hooks
+    - horo
+    - matrix
+    - maxtampercost
+    - pivot
+    - purity
+    - relocate
+    - standards
+    - tamper
+    - trinity
+    - typography
+    - unavoidable
+typography:
+  partition: post
+  bondDegree: 84
+  neighbors:
+    - "analytics/max-tamper-cost"
+    - aura
+    - bindings
+    - cost
+    - hallucination
+    - hooks
+    - maxtampercost
+    - pivot
+    - purity
+    - relocate
+    - typography
+    - unavoidable
+standards:
+  - "IAS-1"
+  - "IAS-34"
+bindings: []
+neighbors:
+  wikilink: []
+  matrix:
+    - accounting
+    - atom
+    - aura
+    - balance
+    - bindings
+    - collections
+    - cost
+    - dimension
+    - dry
+    - entropy
+    - hallucination
+    - harmony
+    - hooks
+    - horo
+    - matrix
+    - maxtampercost
+    - pivot
+    - purity
+    - relocate
+    - standards
+    - tamper
+    - trinity
+    - typography
+    - unavoidable
+  backlinks:
+    - accounting
+    - atom
+    - aura
+    - balance
+    - bindings
+    - collections
+    - cost
+    - dimension
+    - dry
+    - entropy
+    - hallucination
+    - harmony
+    - hooks
+    - horo
+    - matrix
+    - maxtampercost
+    - pivot
+    - purity
+    - relocate
+    - standards
+    - tamper
+    - trinity
+    - typography
+    - unavoidable
+signatures:
+  computationUuid: "132d5868-0ca5-8989-9d40-dcd5fc279a06"
+  stages:
+    - stage: path
+      stageUuid: "bc73c14b-269d-86d2-9db9-8aadd58b157c"
+    - stage: trinity
+      stageUuid: "5f2f32e6-4ee7-8839-8b72-16d20ce67034"
+    - stage: boundary
+      stageUuid: "4a72570d-3fae-8e4f-993a-2581e001e680"
+    - stage: links
+      stageUuid: "d1ee48ed-2c72-8a45-a347-ff6f1cb99fd4"
+    - stage: horo
+      stageUuid: "beb90cdd-5fb1-8fa1-9df4-c8153cdcf260"
+    - stage: seal
+      stageUuid: "c1f231f9-e4aa-84c0-b83b-f1f0aa56bacd"
+    - stage: uuid
+      stageUuid: "170e365c-5d49-81da-a741-56e042289ec9"
+version: 2
 ---
-
 # Phase B7: Post-Close Analytics
 
 **Status:** Implementation Complete  

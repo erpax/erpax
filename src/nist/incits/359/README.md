@@ -2,9 +2,11 @@
 
 # 359
 
-> atom `nist/incits/359` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
+> atom `nist/incits/359` · horo `2` `share` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `nist/incits/359` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,15 +23,119 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `seal:unsealed`
+- `trigger:Use when implementing or referencing NIST INCITS 359 — Role-Based Access Control.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `2a02bb24-1648-8630-b237-190168035ccc` · `8b680254-80a9-86ef-839a-e17a1e8b572b` · `9ebad49a-e8a9-814a-b7f4-640e7191dd7a`
+- content uuids `5ff6b209-8cdb-829b-aead-316a37ef54e2` · `9711b02b-0c3f-87fa-9ecd-1364e41f84e6` · `a7d244d0-a6c6-8efa-98b4-09962074690f`
+
+## [[entropy]] — gaps · seals
+
+> account code `nist/incits/359` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.2` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `2` eb | Σ seal `11.2` eb |
+
+> net residual `-9.2` eb · seal/gap ratio `5.6` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `nist` · sub-root `0f1c4f5f-986c-87d7-8f47-9317941a72ee`
+- partition `nist` · sub-root `d20aeddb-3850-863b-9a7e-00da9d4375b1`
 - bond degree `0` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `NIST INCITS-359-2012 role-based-access-control` · banner
+- `NIST SP-800-162 attribute-based-access-control` · banner
+- `NIST-INCITS-359-2012` · catalogue
+- `NIST-SP-800-162` · catalogue
+- `SOC-2 CC6.1 logical-access-controls` · banner
+- `SOC-2 CC6.3 access-removal` · banner
+- `SOX §404 internal-controls` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| not-held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·2 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `0` · sealed `0` · horo `2`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `7`
 
 ## identity
 
-- uuid `acf72bfb-d234-8743-9d8c-23fafb1e90b7`
+- uuid `a94eb8b8-b3cd-8007-9482-a5a4ca557dfe`
 - bonds in `0` · out `0`
 - trinity form·code·proof `1`·`1`·`1`
 - links `0` / `0`
@@ -37,8 +143,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `8729ddd5-d2f0-8634-81a0-4644316c2a26` · framed by typography partition `nist` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `adfe1070-8588-8ba7-a950-2a93c7b02d90` · framed by typography partition `nist` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

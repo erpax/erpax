@@ -3,15 +3,15 @@
 
 # toilet
 
-path `toilet` · uuid `706eb5f0-865a-87dd-9f61-d9cd69996c7f` · diamond `bf457b0a-3725-8eba-ab47-6bc72b69e57f`
+path `toilet` · uuid `706eb5f0-865a-87dd-9f61-d9cd69996c7f` · diamond `4e0b05f2-719a-8f86-bfb9-2546b48d709b`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·public·sti · exports toilet · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·public·sti · ← collapse·law·merge·public·sti
 analysis —
 law toilet is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `4fbb19c2-ff1e-8549-8e70-d1e4b8dd1864` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b88e8ad9-7914-8274-8080-b41b30d61e0e` · `pnpm readme` · `pnpm computed:check`</sub>

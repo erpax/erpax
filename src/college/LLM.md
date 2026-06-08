@@ -3,8 +3,8 @@
 
 # college
 
-path `college` · uuid `24c5f117-6eba-82fc-a7b9-31afd6fabdf0` · diamond `901a93f4-8912-8e6c-9a72-6267518cf0e7`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `college` · uuid `ac6eb14c-f7e6-80ed-bf0f-987fdf595d7c` · diamond `eafe50a0-69cb-8ab5-ace7-28d09bf7c61a`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·university · exports college · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law college is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `2082f39c-5434-8895-bb4d-4a52854e6bdf` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b759a50f-93e6-8ac0-b2db-bb5c51cf920b` · `pnpm readme` · `pnpm computed:check`</sub>

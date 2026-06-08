@@ -3,8 +3,8 @@
 
 # affiliate
 
-path `affiliate` · uuid `55aaf4b4-55e2-88ee-ad42-879e6f1aed73` · diamond `14265ba0-1c37-8aad-8090-d6d747e330a2`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `affiliate` · uuid `f0a06699-e938-89e6-a794-9b2177aaad8d` · diamond `cb38ba12-988e-8d73-ab30-aed0625b52a7`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports broadcast·collapse·law·merge·sti · exports affiliate · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law affiliate is one schema.org word, content-addressed; the same word collides 
 
 ---
 
-<sub>content-uuid `595fa758-3436-8feb-8fc5-5b106c85411e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3e7fd75c-bbec-8cab-81b6-3c7bd38d879a` · `pnpm readme` · `pnpm computed:check`</sub>

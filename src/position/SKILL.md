@@ -1,8 +1,121 @@
 ---
 name: position
-description: Use when defining job positions, the rate ladder, or government/society role structure. Each position is a rung on the harmonic ladder; its job description is computed; its conditions are content-addressed on the uuid chain (blockchain); government and society share one ladder.
+description: "Use when defining job positions, the rate ladder, or government/society role structure. Each position is a rung on the harmonic ladder; its job description is computed; its conditions are content-addressed on the uuid chain (blockchain); government and society share one ladder."
+atomPath: position
+coordinate: position · 8/crest · 99443006
+contentUuid: "6d1f4006-fe80-5967-b2c1-a6a0e3c3bb33"
+diamondUuid: "d567b6cf-f67b-814a-a2ac-1f9ee6023154"
+uuid: "99443006-f627-8c43-8f9a-cfa09bd3b820"
+horo: 8
+bonds:
+  in:
+    - allocation
+    - collections
+    - duality
+    - fractal
+    - hooks
+    - identity
+    - law
+    - merge
+    - named
+    - numbered
+    - responsibility
+    - self
+    - standard
+    - steering
+    - sufficient
+  out:
+    - allocation
+    - collections
+    - duality
+    - fractal
+    - hooks
+    - identity
+    - law
+    - merge
+    - named
+    - numbered
+    - responsibility
+    - self
+    - standard
+    - steering
+    - sufficient
+typography:
+  partition: position
+  bondDegree: 45
+  neighbors: []
+standards:
+  - ESCO
+  - "ESCO / ISCO-08 occupational classification"
+  - "ISO 19011:2018 §6.4.6 — conditions are content-addressed, tamper-evident"
+  - SFIA
+  - "SFIA 8 responsibility-levels (1..7) — the job-type / autonomy axis"
+  - "UN COFOG (Classification of the Functions of Government) — the `function` code"
+bindings: []
+neighbors:
+  wikilink:
+    - allocation
+    - collections
+    - duality
+    - fractal
+    - hooks
+    - identity
+    - law
+    - merge
+    - self
+    - standard
+    - sufficient
+  matrix:
+    - allocation
+    - collections
+    - duality
+    - fractal
+    - hooks
+    - identity
+    - law
+    - merge
+    - named
+    - numbered
+    - responsibility
+    - self
+    - standard
+    - steering
+    - sufficient
+  backlinks:
+    - allocation
+    - collections
+    - duality
+    - fractal
+    - hooks
+    - identity
+    - law
+    - merge
+    - named
+    - numbered
+    - responsibility
+    - self
+    - standard
+    - steering
+    - sufficient
+signatures:
+  computationUuid: "2200a6ff-cf14-8b36-95b6-55fa62ca8f99"
+  stages:
+    - stage: path
+      stageUuid: "a83cbf2d-83e1-8233-a8fb-88f785b66b9f"
+    - stage: trinity
+      stageUuid: "4dc850dd-9b02-8973-bc68-8859f122dd7e"
+    - stage: boundary
+      stageUuid: "e9fa8237-7d40-8ab7-9492-f6849de89239"
+    - stage: links
+      stageUuid: "45e1d1a1-1750-827a-a65a-796ecaa6c366"
+    - stage: horo
+      stageUuid: "d569958e-4b08-82cb-b90f-a853a211cc3a"
+    - stage: seal
+      stageUuid: "c934d697-3e40-8c18-be5d-da95956d6464"
+    - stage: uuid
+      stageUuid: "0bcc9105-af51-8487-8380-b3b7f08e99d9"
+version: 2
 ---
-
 # positions — the harmonic ladder, filled, where government and society are one
 
 FORM: **define the hourly rates as harmonics, fill the rungs with positions, and price government and society on the one ladder.** A position is a rung on the [[allocation]] harmonic ladder: tier `harmonic` earns `anchor × harmonic` per hour, tier 1 being the fundamental (work that saves no one else's time — see [[allocation]] for why the scale is harmonic). `index.test.ts` proves the laws.

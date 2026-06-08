@@ -2,7 +2,7 @@
 
 # bottleneck
 
-> atom `bottleneck` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
+> atom `bottleneck` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -21,9 +21,9 @@
 
 ## typography graph
 
-- partition `bottleneck` · sub-root `b1aaeacd-b609-8ee4-b5dd-5d048c44d41f`
+- partition `bottleneck` · sub-root `0a4dcd10-bc69-8e48-8abd-def041344d29`
 - bond degree `71` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- graph root `1cef4f02-a3fa-83a5-8ea0-120b724ef456`
 
 ## [[cloudflare]] bindings
 
@@ -33,15 +33,53 @@
 
 —
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·8 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `71` · sealed `1` · horo `5`
+- bond degree `71` · sealed `1` · horo `8`
 - variance `0` · balanced `1` · trinity sum `1`
 - bindings `0` · standards `0`
 
 ## identity
 
-- uuid `b1aaeacd-b609-8ee4-b5dd-5d048c44d41f`
+- uuid `0a4dcd10-bc69-8e48-8abd-def041344d29`
 - bonds in `23` · out `23`
 - trinity form·code·proof `1`·`0`·`0`
 - links `4` / `4`
@@ -53,4 +91,4 @@
 
 ---
 
-<sub>content-uuid `f41846bc-78d7-8a8d-b48e-f6642bdad013` · framed by typography partition `bottleneck` bonds `71` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a19e8acf-e296-882f-a949-a0680980e404` · framed by typography partition `bottleneck` bonds `71` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -24,13 +24,30 @@
 ## typography graph
 
 - partition `llm` · sub-root `1dc20a80-a088-8179-af1d-9b43e719cfdb`
-- bond degree `743` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- bond degree `754` · analysis neighbors —
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `Conservation Law 8 (content-uuid) · 61 (uuid carries its own features)` · banner
+- `NIST FIPS 180-4 (SHA-256 — the digest binding the utterance)` · banner
+- `NIST-FIPS-180-4` · catalogue
+- `RFC 9562 §5.8 (uuidv8 structured content-uuid)` · banner
+
+## analytics
+
+- bond degree `754` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `4`
 
 ## identity
 
 - uuid `e70f3d2a-47f6-8016-999c-4e133dd0f081`
-- bonds in `235` · out `231`
+- bonds in `239` · out `235`
 - trinity form·code·proof `1`·`1`·`1`
 - links `23` / `23`
 - folded `1` · escapes `0`
@@ -41,4 +58,4 @@
 
 ---
 
-<sub>content-uuid `662aca4f-7fcf-88b3-a761-32e1c6d540ba` · framed by typography partition `llm` bonds `743` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `9f27e789-5ff6-8601-9b17-459d507d047a` · framed by typography partition `llm` bonds `754` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,15 +3,15 @@
 
 # device
 
-path `device` · uuid `d018e48b-9af3-8f0e-bee8-8d228a17d7a0` · diamond `acd85521-fdfa-81db-83aa-bae755e9d824`
+path `device` · uuid `c2fa4002-80eb-8550-af38-462d5385acf4` · diamond `032cf445-1b04-8ed0-8589-82ddf8fad752`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports available·law·medical·purpose·uses · exports device · escapes —
-links `5/5` · folded `1` · bonds in `17` out `18`
+links `5/5` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → analog·available·bindings·biofield·biometric·coherence·device·finality·law·law·measurement·medical·purpose·reality·sensory·snapshot·stack·uses · ← analog·available·bindings·biofield·biometric·coherence·device·finality·law·measurement·medical·purpose·reality·sensory·snapshot·stack·uses
+neighbors → available·biometric·device·law·medical·purpose·stack·uses · ← available·biometric·device·law·medical·purpose·stack·uses
 analysis —
 law device is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `c84e0289-eebb-802d-8ae5-7c2fc1a4a974` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `be82ab76-c8e1-80c4-873e-6c7ba3ccdd03` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,8 +3,8 @@
 
 # attraction
 
-path `attraction` · uuid `210cac67-e232-8ece-97f0-9e7d343d203c` · diamond `9dc39378-61bd-841f-8891-59def9312d42`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `attraction` · uuid `76e1b248-aa86-80f8-b34b-d2d5e1f90113` · diamond `554f486a-6908-85ae-bb84-a0f7104013ed`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·includes·law·merge·sti·tourist · exports attraction · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law attraction is one schema.org word, content-addressed; the same word collides
 
 ---
 
-<sub>content-uuid `fdc621ab-ab5a-8906-8d29-4e6df49a34bb` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `725c363c-0504-8826-9a68-c39384e717d0` · `pnpm readme` · `pnpm computed:check`</sub>

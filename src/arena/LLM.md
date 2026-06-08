@@ -3,8 +3,8 @@
 
 # arena
 
-path `arena` · uuid `7f82d3a6-2313-8bfe-97f5-70664eeb3ed2` · diamond `bf790bdd-7510-819f-88ed-4cab1fce4bd7`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `arena` · uuid `39222579-66fc-8530-8b6b-57014d00ba30` · diamond `c177c3e2-dcf7-83ff-a332-adcf5536f45e`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·stadium·sti · exports arena · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law arena is one schema.org word, content-addressed; the same word collides ever
 
 ---
 
-<sub>content-uuid `b8a64510-7fed-8815-ac79-70340f88ffbf` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `07a175a9-dc91-8a13-8a0c-c6fed829a0fa` · `pnpm readme` · `pnpm computed:check`</sub>

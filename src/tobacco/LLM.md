@@ -3,15 +3,15 @@
 
 # tobacco
 
-path `tobacco` · uuid `c2e30c5d-55e3-8731-9aae-a42545ffb0d8` · diamond `73094a7f-53db-81b9-9786-96915d9a1d95`
+path `tobacco` · uuid `c2e30c5d-55e3-8731-9aae-a42545ffb0d8` · diamond `6ad53724-f38a-8b4f-9a22-906fe0e48a90`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports tobacco · escapes —
-links `4/4` · folded `1` · bonds in `6` out `6`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·owned·resources·stat · ← cohort·landmarks·memories·owned·resources·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law tobacco is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `99744268-0547-8abb-a2da-d4dc8863b988` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8dd32793-c081-8b05-a59e-fa4e75976201` · `pnpm readme` · `pnpm computed:check`</sub>

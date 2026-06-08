@@ -2,7 +2,7 @@
 
 # brow
 
-> atom `brow` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `brow` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -23,9 +23,9 @@
 
 ## typography graph
 
-- partition `brow` · sub-root `70d77f88-5a30-8820-9ce9-cff8a0e38a37`
+- partition `brow` · sub-root `9cb707cc-bea8-8344-911a-49009e2edaee`
 - bond degree `12` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- graph root `1cef4f02-a3fa-83a5-8ea0-120b724ef456`
 
 ## [[cloudflare]] bindings
 
@@ -36,15 +36,53 @@
 - `note, colour and uuid computed from the position math, never hand-asserted` · banner
 - `note·colour·uuid computed from the position math, never hand-asserted` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·2 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `12` · sealed `1` · horo `7`
+- bond degree `12` · sealed `1` · horo `2`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `2`
 
 ## identity
 
-- uuid `70d77f88-5a30-8820-9ce9-cff8a0e38a37`
+- uuid `9cb707cc-bea8-8344-911a-49009e2edaee`
 - bonds in `4` · out `4`
 - trinity form·code·proof `1`·`1`·`1`
 - links `10` / `10`
@@ -56,4 +94,4 @@
 
 ---
 
-<sub>content-uuid `6da8c91c-dd6b-8b94-986a-95d432c76427` · framed by typography partition `brow` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `8f77b70c-6c4b-8fe0-993c-0c93c40008e4` · framed by typography partition `brow` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

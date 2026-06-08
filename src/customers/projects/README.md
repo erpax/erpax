@@ -2,7 +2,7 @@
 
 # projects
 
-> atom `customers/projects` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `customers/projects` · horo `7` `descent` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -19,13 +19,13 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `2` · [[conservation]] `0` · [[entry]] · [[purity]]
 
 ## typography graph
 
-- partition `customers` · sub-root `85792e9b-a9f4-8af5-a801-0895f2af65cf`
-- bond degree `19` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- partition `customers` · sub-root `90301314-1363-8d40-8074-17ef0ba20d4c`
+- bond degree `0` · analysis neighbors —
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -43,15 +43,53 @@
 - `SOX §404 internal-controls` · banner
 - `US-GAAP ASC-606-10-25-27 over-time-criteria` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unbalanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| not-held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·7 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `19` · sealed `1` · horo `7`
-- variance `0` · balanced `1` · trinity sum `3`
+- bond degree `0` · sealed `0` · horo `7`
+- variance `2` · balanced `0` · trinity sum `3`
 - bindings `0` · standards `9`
 
 ## identity
 
-- uuid `897d73df-2061-815c-9ad3-33f03f9608f7`
+- uuid `06cbb2ac-d5b3-8242-91f3-918531f998d5`
 - bonds in `6` · out `6`
 - trinity form·code·proof `1`·`1`·`1`
 - links `4` / `4`
@@ -59,8 +97,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `89fb06f3-05c5-81f1-aab9-d58f8c99c190` · framed by typography partition `customers` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `32c90165-05c4-89a1-af27-4699f80acda4` · framed by typography partition `customers` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

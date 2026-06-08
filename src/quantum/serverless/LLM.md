@@ -3,15 +3,15 @@
 
 # serverless
 
-path `quantum/serverless` · uuid `2dbb7469-ecf6-8300-8f5a-a472916c1c39` · diamond `b9888a52-3b14-8ff0-a93c-d6bf8fd7405b`
-horo `2` `share` · trinity `1·1·1` · sealed `1`
+path `quantum/serverless` · uuid `4c2327d6-1677-80df-9fc9-8ddf6c32490f` · diamond `9a5c984a-40e4-83a0-958b-e5390c3a4854`
+horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports @/cloudflare·@/diamond·@/horo·@/integrity·@/quantum·@/superposition · exports const·function·interface · escapes —
-links `27/27` · folded `1` · bonds in `12` out `12`
+links `31/31` · folded `1` · bonds in `15` out `15`
 faces worker·plugin·pwa `1·0·0`
-neighbors → ai·cloudflare·collapse·confirm·deploy·diamond·entanglement·law·quantum·superposition·uuid·worker · ← ai·cloudflare·collapse·confirm·deploy·diamond·entanglement·law·quantum·superposition·uuid·worker
+neighbors → ai·cloudflare·collapse·confirm·deploy·deploy·diamond·entanglement·fs·law·path·quantum·superposition·uuid·worker · ← ai·cloudflare·collapse·confirm·deploy·deploy·diamond·entanglement·fs·law·path·quantum·superposition·uuid·worker
 analysis cloudflare·diamond
 law serverless IS the quantum host — Cloudflare Workers bindings are the superposed facet, each invocation collapses to a content-uuid, path+seal+binding entangle symmetrically, and the live tree recovers sealed diamonds for cloudflare ⊕ quantum; erpax deployed on Cloudflare IS the existence proof, and `proveServerlessQuantum()` folds both facets to one deterministic uuid.
 
 ---
 
-<sub>content-uuid `527688fa-665e-8e2b-bd0e-1ab435d16547` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4815d09e-cf64-8fa7-995b-bd651d9f29d6` · `pnpm readme` · `pnpm computed:check`</sub>

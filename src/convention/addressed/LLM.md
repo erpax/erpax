@@ -3,8 +3,8 @@
 
 # addressed
 
-path `convention/addressed` · uuid `6a5f13ba-7f31-8c7a-b107-5ef8502cd145` · diamond `ab752b0b-05d2-89d2-a5c8-eecaa5f29a19`
-horo `4` `weave` · trinity `1·1·1` · sealed `1`
+path `convention/addressed` · uuid `297fe354-dfc7-8be4-9b05-3dc5dab3e4a1` · diamond `0abbec90-bdaf-83b7-b747-0ae1f66af341`
+horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports @/aura·@/uuid/matrix · exports const·function · escapes —
 links `14/14` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law identity is content-addressed. An atom's identity is a v8 uuid derived from 
 
 ---
 
-<sub>content-uuid `69c73552-a203-8572-beab-8a861efc67af` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c414553c-4123-838f-b1fa-11dc0e02c807` · `pnpm readme` · `pnpm computed:check`</sub>

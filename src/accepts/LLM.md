@@ -3,8 +3,8 @@
 
 # accepts
 
-path `accepts` · uuid `20ac4a78-da3b-881e-87ae-0ca449d44ea8` · diamond `a2b819b1-2ebe-89a3-9042-e5f45372822c`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `accepts` · uuid `b89eb224-2da8-8635-9793-18e02d322fda` · diamond `ea802804-2fbc-88af-a314-9ed898f19645`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·reservations·sti · exports accepts · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law accepts is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `cae7dba1-6b6d-84b2-bda0-fa8e0c1bd911` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6d8aa081-528a-8692-a55a-feae6092c110` · `pnpm readme` · `pnpm computed:check`</sub>

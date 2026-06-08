@@ -3,8 +3,8 @@
 
 # confucianism
 
-path `confucianism` · uuid `691d60bb-f2b0-8c9a-8be2-d4ede5393bf3` · diamond `05dcbda4-0198-84d9-9349-47e860cc8fa5`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `confucianism` · uuid `379e9d7a-36a9-8a60-925e-e56f63f4119b` · diamond `cc615faa-3899-83df-8d61-856242ed0eec`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports archangel·architect·cycle·diamond·faith·fractal·harmony·identity·justice·law·love·merge·name·order·religion·ritual·self·society·translator·uuid·wisdom · exports confucianism · escapes —
 links `61/61` · folded `1` · bonds in `21` out `21`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law confucianism is a [[diamond]] of [[harmony]] · [[name]] · [[identity]] · 
 
 ---
 
-<sub>content-uuid `b18065fc-2258-8a8b-a105-87ad7f06b1d2` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b5058855-e9ae-8747-ae53-36f013ada2a3` · `pnpm readme` · `pnpm computed:check`</sub>

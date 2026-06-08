@@ -3,8 +3,8 @@
 
 # cash
 
-path `cash` · uuid `c6c9ee8c-0f7a-87f1-90ab-5cc65853bba8` · diamond `9f1d8cb5-808e-8ae7-b0ad-1960d6641ece`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `cash` · uuid `84686657-8c60-896f-98e7-73fb57e23d16` · diamond `5b62fc6f-c0e4-858c-8687-e17aa58ba1e7`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports back·collapse·law·merge·sti · exports cash · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law cash is one schema.org word, content-addressed; the same word collides every
 
 ---
 
-<sub>content-uuid `279dd33f-f27c-8076-8f73-6727139df37a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `71028062-8b63-8bfb-9f4c-b2d3f2f7f512` · `pnpm readme` · `pnpm computed:check`</sub>

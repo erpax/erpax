@@ -3,8 +3,8 @@
 
 # civic
 
-path `civic` · uuid `24d8851b-d74b-8b9d-be4d-cc9eca6f1714` · diamond `63bfb2c2-3061-8aa8-b0c0-09709f206c79`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `civic` · uuid `e04808b3-06b0-81e8-966e-8762e6dbe052` · diamond `c288c3f2-a280-8b01-a5fd-e5ff388e0b90`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·structure · exports civic · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law civic is one schema.org word, content-addressed; the same word collides ever
 
 ---
 
-<sub>content-uuid `3a765323-6d65-8844-a625-8283c1ff6d83` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b9e847fb-15ee-8cd0-813f-5735323b56a9` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # throat
 
-path `throat` · uuid `899ee9ee-069c-8c29-9ea5-3b915fc2ef71` · diamond `51e94af3-9ef7-8039-a7e0-c64fc1d852e9`
+path `throat` · uuid `899ee9ee-069c-8c29-9ea5-3b915fc2ef71` · diamond `99be301e-eb6f-8f3e-8580-6c403c40512f`
 horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports @/chakra · exports const · escapes —
-links `6/6` · folded `1` · bonds in `6` out `6`
-faces worker·plugin·pwa `0·0·0`
-neighbors → brewery·cohort·landmarks·memories·sandbox·stat · ← brewery·cohort·landmarks·memories·sandbox·stat
+links `6/6` · folded `1` · bonds in `3` out `3`
+faces worker·plugin·pwa `1·0·0`
+neighbors → chakra·horo·law · ← chakra·horo·law
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `2ad86310-c5a9-8077-ae10-0ab0e9a48d5a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `99fe7182-99c1-8aad-9db2-a1284cbf8c25` · `pnpm readme` · `pnpm computed:check`</sub>

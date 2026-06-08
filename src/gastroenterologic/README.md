@@ -23,7 +23,21 @@
 
 - partition `gastroenterologic` · sub-root `f119f09b-c076-88ce-92c5-875c213c3762`
 - bond degree `12` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `12` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `851c7a52-fb87-8705-854e-80081f13efe2` · framed by typography partition `gastroenterologic` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b6fb4962-2146-8a1e-b0a8-363aaa7cf66b` · framed by typography partition `gastroenterologic` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

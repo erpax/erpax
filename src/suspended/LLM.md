@@ -3,15 +3,15 @@
 
 # suspended
 
-path `suspended` · uuid `bceffa76-c190-8a6e-af8e-dbe637835bab` · diamond `6b9e29af-f4e8-84ca-918b-e9053e0d51f8`
+path `suspended` · uuid `bceffa76-c190-8a6e-af8e-dbe637835bab` · diamond `9bdb3b1d-778e-820b-9463-b93527390409`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports suspended · escapes —
-links `4/4` · folded `1` · bonds in `16` out `15`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·admin·comment·district·holographic·id·joint·maintainer·memories·platform·requests·sell·society·sustainability·swimming · ← accounting·accounting·admin·comment·district·holographic·id·joint·maintainer·memories·platform·requests·sell·society·sustainability·swimming
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law suspended is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `b1c694a7-ee1e-8dbd-9ee1-b5c55f34abe5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `926d6ec8-ab89-8ce1-bfd8-d30bfe036165` · `pnpm readme` · `pnpm computed:check`</sub>

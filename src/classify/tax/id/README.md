@@ -2,9 +2,11 @@
 
 # id
 
-> atom `classify/tax/id` · horo `7` `descent` · [[balance]] `1` · [[seal]] `0`
+> atom `classify/tax/id` · horo `8` `crest` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `classify/tax/id` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,11 +23,60 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `law:the type-label is derived once, at write time, from the [[country]] registry — so downstream branches on a normalised label, never a free-form regex; an unrecognised id leaves the document untouched (no false label).`
+- `seal:unsealed`
+- `trigger:Use when a tax-ID needs a normalised type-label stamped onto the document — a beforeChange hook that matches the raw number against the per-country regex registry so downstream code branches on a label, not a free-form match.`
+- `trigger:matter-twin:src/classify/tax/id/index.ts`
+- `trigger:the type-label is derived once, at write time, from the [[country]] registry — so downstream branches on a normalised label, never a free-form regex; an unrecognised id leaves the document untouched (no false label).`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `30cff820-dbe4-85ed-85c0-e49028c76120` · `e4a0ba24-2366-8b6e-804d-017b5d804e6f` · `fdbdb3c4-00f3-864d-9f78-3139eb41a874`
+- content uuids `40b27a84-5b9d-8b06-a4d9-e976ce110270` · `e6fafa8c-437a-8189-9829-e282fbdf7479` · `fcf059fb-ff41-84fb-8a74-bb9a1b39a2ca`
+
+## [[entropy]] — gaps · seals
+
+> account code `classify/tax/id` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.8` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `2` eb | Σ seal `11.8` eb |
+
+> net residual `-9.8` eb · seal/gap ratio `5.9` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `classify` · sub-root `adc34fd1-3f2f-83f2-8103-883e13c33c56`
-- bond degree `66` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- partition `classify` · sub-root `2d68dc3f-620a-8b12-a223-fae09bfb9944`
+- bond degree `61` · analysis neighbors —
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
 
 ## [[cloudflare]] bindings
 
@@ -34,20 +85,57 @@
 ## [[standards]]
 
 - `EU-Taxonomy-2020/852` · catalogue
-- `ISO-19011:2018 audit-trail tax-id-classification-evidence` · banner
 - `ISO-3166-1` · catalogue
 - `ISO-3166-1:2020 country-codes alpha-2` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·8 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `66` · sealed `0` · horo `7`
+- bond degree `61` · sealed `0` · horo `8`
 - variance `0` · balanced `1` · trinity sum `3`
-- bindings `0` · standards `4`
+- bindings `0` · standards `3`
 
 ## identity
 
-- uuid `4d14ca07-5246-8437-a2b3-de2258936261`
-- bonds in `21` · out `22`
+- uuid `2e8b9817-fbcc-822a-96d2-8d9c9ef647f2`
+- bonds in `19` · out `19`
 - trinity form·code·proof `1`·`1`·`1`
 - links `6` / `6`
 - folded `1` · escapes `0`
@@ -58,4 +146,4 @@
 
 ---
 
-<sub>content-uuid `80d3d347-0658-8e68-87e8-446648833eae` · framed by typography partition `classify` bonds `66` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `4b246600-bdd5-8fb6-a1ab-f6bf585cc919` · framed by typography partition `classify` bonds `61` · `pnpm readme` · `pnpm readme:check`</sub>

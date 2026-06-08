@@ -3,15 +3,15 @@
 
 # transfer
 
-path `transfer` · uuid `95fb336d-0c45-8cad-9604-8f0e5922f4da` · diamond `1004356e-554f-8671-bfb8-4687fe578846`
+path `transfer` · uuid `95fb336d-0c45-8cad-9604-8f0e5922f4da` · diamond `d0375a37-b359-8a5f-a138-9bf78fb77d06`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·money·sti · exports transfer · escapes —
-links `6/6` · folded `1` · bonds in `7` out `7`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·incorporated·landmarks·memories·polymer·protein·stat · ← cohort·incorporated·landmarks·memories·polymer·protein·stat
+neighbors → action·collapse·law·merge·money·sti · ← action·collapse·law·merge·money·sti
 analysis —
 law transfer is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `38486acf-48e3-84d1-a9e1-51240ce03c12` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a627aa1f-ad7a-87f4-a8f0-8e801f8c66c7` · `pnpm readme` · `pnpm computed:check`</sub>

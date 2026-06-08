@@ -25,7 +25,23 @@
 
 - partition `humandesign` · sub-root `addfa438-0c14-890f-8f33-0cfdd1a53bef`
 - bond degree `24` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `the combinatorics are computed; the metaphysics is named, never claimed` · banner
+- `the I Ching hexagram structure (public domain); Human Design (Ra Uru Hu, 1987) as named convention` · banner
+- `UBL-2.1` · catalogue
+
+## analytics
+
+- bond degree `24` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `3`
 
 ## identity
 
@@ -41,4 +57,4 @@
 
 ---
 
-<sub>content-uuid `1c4509e3-ebc7-8134-bf77-91f43c17ec2b` · framed by typography partition `humandesign` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c25335d7-4f05-86fd-9e8d-8c4b4936d582` · framed by typography partition `humandesign` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>

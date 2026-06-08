@@ -3,15 +3,15 @@
 
 # examples
 
-path `config/examples` · uuid `345e3c90-b864-8faf-93ce-980dfcfc1f5a` · diamond `bba869ab-b941-8ad5-b913-87fd90d5102a`
-horo `6` `6` · trinity `1·1·1` · sealed `0`
+path `config/examples` · uuid `dd3d97ea-e437-8fc4-b509-37a10fcb72f0` · diamond `29130dc5-07ef-898d-be20-fc294db72fbb`
+horo `9` `unity` · trinity `1·1·1` · sealed `0`
 imports @/config/types · exports const·function · escapes —
 links `5/5` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
 neighbors → config·law·types · ← config·law·types
-analysis diamond·hallucination·purity
+analysis —
 law every example tenant is a self-contained object that satisfies the one agnostic `TenantConfig` contract — the template seeds a working tenant by copy-and-edit, never by code change.
 
 ---
 
-<sub>content-uuid `428ef840-f62f-8d91-a39c-3803eac47cc1` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `475e624c-692f-8a20-9e65-9ba7818b3d89` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # trial
 
-path `trial` · uuid `bd661690-5c9c-85fe-a52b-51442f224871` · diamond `4d089273-e9ce-8fb4-a031-bb7b851f080d`
+path `trial` · uuid `bd661690-5c9c-85fe-a52b-51442f224871` · diamond `eaec13ac-7104-8a3a-9517-2d015cfe8f29`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·design·law·medical·merge·sti · exports trial · escapes —
-links `6/6` · folded `1` · bonds in `4` out `4`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → balance·landmarks·pond·tributary · ← balance·landmarks·pond·tributary
+neighbors → collapse·design·law·medical·merge·sti · ← collapse·design·law·medical·merge·sti
 analysis —
 law trial is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `13c414fe-39c2-8ff3-a6ae-84014f8c38f3` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `70372587-de33-8ea0-ab94-8f0f92c9505f` · `pnpm readme` · `pnpm computed:check`</sub>

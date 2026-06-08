@@ -3,15 +3,15 @@
 
 # sport
 
-path `sport` · uuid `7e570871-4d85-89aa-8ff4-b27fe0cb9ad9` · diamond `555fe77c-f4a0-8acb-8bc9-48d2b61887d7`
+path `sport` · uuid `7e570871-4d85-89aa-8ff4-b27fe0cb9ad9` · diamond `9e8a0c88-f6ea-8c49-a7ba-9ec7c3b657bd`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports sport · escapes —
-links `2/2` · folded `1` · bonds in `4` out `4`
+links `2/2` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → competitor·law·thing · ← competitor·law·thing
 analysis —
 law sport is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `0fd97e27-5837-85a5-a057-bb2a4e30a85d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `37e82150-4a9b-8512-88bd-42e02f6ef0ff` · `pnpm readme` · `pnpm computed:check`</sub>

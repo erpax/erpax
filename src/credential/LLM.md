@@ -3,8 +3,8 @@
 
 # credential
 
-path `credential` · uuid `5b5084f7-e61c-86de-848c-574809ec0aa1` · diamond `6d5d6d9c-37a8-8798-9935-18628482d5b9`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `credential` · uuid `33e3b411-b161-8f01-b536-df5a06745ee8` · diamond `793e5154-d4f2-8671-aabe-8bdd08099788`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports awarded·category·educational·has·law·occupational · exports credential · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law credential is one schema.org word, content-addressed; the same word collides
 
 ---
 
-<sub>content-uuid `6e0f5872-cd51-8234-8891-725ea2289599` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2538db58-3d2b-8591-a27c-5ead08194cac` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -2,7 +2,7 @@
 
 # rates
 
-> atom `currency/rates` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
+> atom `currency/rates` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -23,9 +23,9 @@
 
 ## typography graph
 
-- partition `currency` · sub-root `8d392f75-40f3-8871-ad7a-af6fcfb2b6a0`
+- partition `currency` · sub-root `f08d3b0c-89b2-86fd-abca-489af8fef80a`
 - bond degree `24` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -39,15 +39,53 @@
 - `ISO-8601-1:2019 date-time rate-date` · banner
 - `US-GAAP ASC-830 foreign-currency-matters` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·7 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `24` · sealed `1` · horo `5`
+- bond degree `24` · sealed `1` · horo `7`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `5`
 
 ## identity
 
-- uuid `9680f8e6-7260-8b76-ac00-f9e546751ea5`
+- uuid `f791e26a-03f6-8d69-bccb-d9504c7c6c99`
 - bonds in `8` · out `8`
 - trinity form·code·proof `1`·`1`·`1`
 - links `6` / `6`
@@ -59,4 +97,4 @@
 
 ---
 
-<sub>content-uuid `e143a085-c60a-8cff-8a8a-c920c41fa8ea` · framed by typography partition `currency` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `5aee0235-270d-8656-bee9-630e3bb5ab7e` · framed by typography partition `currency` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>

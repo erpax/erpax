@@ -25,7 +25,7 @@
 
 - partition `duality` · sub-root `32d1b730-f4a8-82a7-9075-0d3c1f5fb9b3`
 - bond degree `371` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
 
 ## [[cloudflare]] bindings
 
@@ -55,4 +55,4 @@
 
 ---
 
-<sub>content-uuid `1d3127a8-66e6-8cbf-ab57-21d5c0afbabf` · framed by typography partition `duality` bonds `371` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `afaec0a7-67ee-8512-b02f-88cc8a31e639` · framed by typography partition `duality` bonds `371` · `pnpm readme` · `pnpm readme:check`</sub>

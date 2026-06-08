@@ -3,8 +3,8 @@
 
 # center
 
-path `center` · uuid `68b9b5e9-e1a6-816f-aa46-2f3f8b7c8493` · diamond `70bac718-0d7b-829f-a2ac-fcee39131533`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `center` · uuid `e4bf2f29-c3cb-89e8-a5e7-bb56f40961d9` · diamond `aaeb7ad1-fd00-8739-9404-a04f3c6e680c`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·information·law·merge·recycling·shopping·sti·tourist · exports center · escapes —
 links `8/8` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law center is one schema.org word, content-addressed; the same word collides eve
 
 ---
 
-<sub>content-uuid `b19720a8-6f71-82d0-b8a3-0f88c1ee89e6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `963d84b7-b8bb-84bb-a428-1d9e2a1f753c` · `pnpm readme` · `pnpm computed:check`</sub>

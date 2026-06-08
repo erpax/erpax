@@ -3,8 +3,8 @@
 
 # competitor
 
-path `competitor` · uuid `68d99fc3-c85f-8df4-98c2-779ba18cb73e` · diamond `56fa6180-06a9-8a7b-b8a7-0ce22e701683`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `competitor` · uuid `25229cd1-cd03-84b3-a516-2830d9cf3fd6` · diamond `2bf3e038-67a7-8816-a26b-049f8779031a`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports law·sport·thing · exports competitor · escapes —
 links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law competitor is one schema.org word, content-addressed; the same word collides
 
 ---
 
-<sub>content-uuid `dc944246-ecdf-8200-86e5-fb779eb127e0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b14cc257-fe7c-8c10-92fb-ff6e6eb2e249` · `pnpm readme` · `pnpm computed:check`</sub>

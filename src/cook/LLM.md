@@ -3,8 +3,8 @@
 
 # cook
 
-path `cook` · uuid `e4a175fc-8e46-8fdd-8efe-fbbf909e2a4c` · diamond `5920db43-2ecb-8384-88af-ed15b1730ab2`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `cook` · uuid `cb22e9b2-d37c-87d6-8708-b40385bed5b4` · diamond `8970261d-a81d-8775-bcdf-0f3faf31b43d`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti·time · exports cook · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law cook is one schema.org word, content-addressed; the same word collides every
 
 ---
 
-<sub>content-uuid `4be1b50c-c6e7-875d-b2c4-a7b8442c0c4a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b9945102-e855-8bf3-8431-940e46b4fa20` · `pnpm readme` · `pnpm computed:check`</sub>

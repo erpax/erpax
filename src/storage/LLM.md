@@ -8,10 +8,10 @@ horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·requirements·self·sti · exports storage · escapes —
 links `6/6` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → dermatology·landmarks·lnid·measurement·nursing·standards·strength · ← dermatology·landmarks·lnid·measurement·nursing·standards·strength
+neighbors → bindings·collapse·law·merge·requirements·self·sti · ← bindings·collapse·law·merge·requirements·self·sti
 analysis —
 law storage is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `ef8a6eb3-5ebe-809b-9262-e824a30866ed` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2918d591-44cb-8900-8122-d1b49c7dc69d` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -1,8 +1,130 @@
 ---
-name: self-reference
+name: reference
 description: "Use when verifying erpax observes ITSELF — the platform's own genome must yield ≥1 collection, chain, agent, and standard, the erpax-platform role, and the meta agents (Conservation Law 23, checkErpaxObservesItself). The self reaching into its own root; the genome is the debit, the observation the credit."
+atomPath: self/reference
+coordinate: self/reference · 5/round · 673edd25
+contentUuid: "eccd1848-4082-566b-a414-193569124f91"
+diamondUuid: "17f79209-62cb-83cb-8adb-b24b045d9b80"
+uuid: "673edd25-11e8-8ae4-a911-07fa6547bc0c"
+horo: 5
+bonds:
+  in:
+    - api
+    - collapse
+    - content
+    - definition
+    - dependency
+    - law
+    - mapping
+    - merge
+    - practice
+    - prayer
+    - quantity
+    - reference
+    - self
+    - sti
+    - time
+    - value
+  out:
+    - api
+    - collapse
+    - content
+    - definition
+    - dependency
+    - law
+    - mapping
+    - merge
+    - practice
+    - prayer
+    - quantity
+    - reference
+    - sti
+    - time
+    - value
+typography:
+  partition: self
+  bondDegree: 77
+  neighbors:
+    - agent
+    - diamond
+standards: []
+bindings: []
+neighbors:
+  wikilink:
+    - agent
+    - akashic
+    - cloning
+    - coil
+    - diamond
+    - fs
+    - gate
+    - generate
+    - github
+    - holographic
+    - identity
+    - law
+    - mcp
+    - part
+    - reference
+    - role
+    - seal
+    - self
+    - society
+    - standards
+    - thought
+    - uuid
+    - whole
+  matrix:
+    - api
+    - collapse
+    - content
+    - definition
+    - dependency
+    - law
+    - mapping
+    - merge
+    - practice
+    - prayer
+    - quantity
+    - reference
+    - sti
+    - time
+    - value
+  backlinks:
+    - api
+    - collapse
+    - content
+    - definition
+    - dependency
+    - law
+    - mapping
+    - merge
+    - practice
+    - prayer
+    - quantity
+    - reference
+    - sti
+    - time
+    - value
+signatures:
+  computationUuid: "98284e1d-2f43-87a8-858c-b320dc0c5a1b"
+  stages:
+    - stage: path
+      stageUuid: "3523af6a-31aa-87ac-829c-f19895b8c94b"
+    - stage: trinity
+      stageUuid: "469ad7f8-9ab4-8c69-a170-b6c818439452"
+    - stage: boundary
+      stageUuid: "b6787f5e-fe85-8638-9df0-960ee9ae1ee1"
+    - stage: links
+      stageUuid: "f89c44be-ae7a-8da7-8fd9-a7b327358cf4"
+    - stage: horo
+      stageUuid: "a1bcdfe5-5623-895b-94da-f0b58f5d5db7"
+    - stage: seal
+      stageUuid: "88aeaa0c-81aa-8bc7-b46a-ab182e32d679"
+    - stage: uuid
+      stageUuid: "a66d2bb8-f897-8488-9dfb-a165f2a64cd8"
+version: 2
 ---
-
 # self-reference — the self observes itself (under [[self]])
 
 FORM: **erpax must appear inside its own [[akashic]] record.** `checkErpaxObservesItself` (Conservation Law 23) collects the platform genome (`collectGenome`, [[cloning]]) and asserts it is non-empty across its sections — collections · chains · [[agent]]s · [[standards]] — AND that the `erpax-platform` [[role]] is registered AND the `meta-skill` + `engineering` agents exist (the platform must hold the agent that watches the platform watch itself). This is [[self]] reaching into its own root (the `0` axis): an object's self is its content-[[uuid]]; the platform's self is the whole record it can query.

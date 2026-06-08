@@ -25,7 +25,21 @@
 
 - partition `karma` · sub-root `2e4bfaa7-93d5-86b0-a554-4d37ec53fb8e`
 - bond degree `106` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `composed from @/entry (the double-entry); the balance is computed, never hand-asserted` · banner
+
+## analytics
+
+- bond degree `106` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -41,4 +55,4 @@
 
 ---
 
-<sub>content-uuid `7c62512f-ca57-856c-9550-90994d486efa` · framed by typography partition `karma` bonds `106` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c6a8fb76-3e5f-8472-917f-546de5164ab3` · framed by typography partition `karma` bonds `106` · `pnpm readme` · `pnpm readme:check`</sub>

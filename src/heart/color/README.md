@@ -25,7 +25,21 @@
 
 - partition `heart` · sub-root `c7ad9cf8-738e-8390-aacb-942d908a05c4`
 - bond degree `54` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `A432 tuning; Anahata (4th chakra) = green` · banner
+
+## analytics
+
+- bond degree `54` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -41,4 +55,4 @@
 
 ---
 
-<sub>content-uuid `6da044fc-0f2e-86b2-9f7f-cb4e49b98953` · framed by typography partition `heart` bonds `54` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c5f5e40f-eec4-8da0-9e98-b94f2a092077` · framed by typography partition `heart` bonds `54` · `pnpm readme` · `pnpm readme:check`</sub>

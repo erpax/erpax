@@ -3,15 +3,15 @@
 
 # analog
 
-path `analog` · uuid `42b0ffed-7503-8c8e-86af-25ce2b978a5e` · diamond `cd2e2ebe-384b-8cd3-b3dd-00eab566d1db`
+path `analog` · uuid `eee29d96-b621-835a-8762-292060de8869` · diamond `585433d0-37d7-8a6d-99e3-e52256bb2d4b`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
-imports aura·axis·biofield·biophoton·cmyk·coherence·coordinate·cost·duality·fractal·holographic·horo·law·link·matrix·notes·proof·rodin·signal·tamper·uuid·vibration · exports analog · escapes —
-links `38/38` · folded `1` · bonds in `29` out `29`
+imports aura·axis·biofield·biophoton·cmyk·coherence·coordinate·cost·duality·emr·fractal·health·holographic·horo·law·link·matrix·notes·observation·proof·quantum·rodin·signal·tamper·uuid·vibration·vital · exports analog · escapes —
+links `48/48` · folded `1` · bonds in `35` out `36`
 faces worker·plugin·pwa `0·0·0`
-neighbors → aura·axis·biofield·biomagnetism·biophoton·chart·cmyk·coherence·coordinate·cost·development·device·digit·duality·fractal·holographic·horo·law·link·matrix·notes·pixel·proof·render·rodin·signal·tamper·uuid·vibration · ← aura·axis·biofield·biomagnetism·biophoton·chart·cmyk·coherence·coordinate·cost·development·device·digit·duality·fractal·holographic·horo·law·link·matrix·notes·pixel·proof·render·rodin·signal·tamper·uuid·vibration
+neighbors → aura·axis·biofield·biomagnetism·biophoton·chart·cmyk·coherence·coordinate·cost·development·device·device·digit·duality·emr·emr·fractal·health·holographic·horo·law·link·matrix·notes·observation·pixel·proof·readings·render·rodin·signal·tamper·uuid·vibration·vital · ← aura·axis·biofield·biomagnetism·biophoton·chart·cmyk·coherence·coordinate·cost·development·device·device·digit·duality·emr·fractal·health·holographic·horo·law·link·matrix·notes·observation·pixel·proof·readings·render·rodin·signal·tamper·uuid·vibration·vital
 analysis aura
-law every node renders an analog aura derived from its position alone — gapless at every scale, stored nowhere; a node with no aura would be a hole in the field, which cannot exist.
+law every node renders an analog aura derived from its position alone — gapless at every scale, stored nowhere; a node with no aura would be a hole in the field, which cannot exist. [[quantum/emr]] provides analog results — the clinical chain collapses to a continuous measured timeline, never binary on/off.
 
 ---
 
-<sub>content-uuid `f8d69f1a-d4ba-88e7-bb79-7668377782be` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `50f6ddb9-1992-8ace-9c45-ae4bfd768912` · `pnpm readme` · `pnpm computed:check`</sub>

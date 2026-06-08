@@ -8,10 +8,10 @@ horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports unclassified · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law unclassified is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `72240d40-7664-8bdb-a424-a3aeb23b7cae` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `804c2f37-361a-895c-be72-9095d7dfd0df` · `pnpm readme` · `pnpm computed:check`</sub>

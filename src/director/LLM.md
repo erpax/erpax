@@ -3,8 +3,8 @@
 
 # director
 
-path `director` · uuid `3932ac9f-1b82-876b-b56a-76ff29911899` · diamond `f110187d-39d0-8a91-ad26-e3630653ef12`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `director` · uuid `59d75e2f-16e3-84ff-9892-cf418afb8c92` · diamond `f27f6c65-aad8-8fc7-8297-0e4d5f956852`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports director · escapes —
 links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law director is one schema.org word, content-addressed; the same word collides e
 
 ---
 
-<sub>content-uuid `5fbc1f27-cc6d-8d94-85ab-b9c800e4cb49` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a82ad132-6cf8-8b12-a690-26f04d44cd22` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,8 +3,8 @@
 
 # dance
 
-path `dance` · uuid `1f3bc761-e4db-869c-84bc-6ea2edd86a6c` · diamond `989ff4e5-99fc-827a-8cf1-d58dd8cefb9b`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `dance` · uuid `1d47c1f5-6ea3-8349-a3f4-2f733360515b` · diamond `56488024-4412-89ed-8b27-f6af035ae53f`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·event·group·law·merge·sti · exports dance · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law dance is one schema.org word, content-addressed; the same word collides ever
 
 ---
 
-<sub>content-uuid `2e6a8ebb-caee-8125-9193-ad6382f81fbd` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `84a7fb6f-3801-8bd5-a3e5-b36b366cb529` · `pnpm readme` · `pnpm computed:check`</sub>

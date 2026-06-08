@@ -4,7 +4,7 @@
 # consolidation
 
 path `intercompany/consolidation` · uuid `977687ba-57b0-8456-8e15-a163746a3de6` · diamond `e5deb559-f8b2-8807-ab10-09f9d1aa6f5f`
-horo `8` `crest` · trinity `1·1·1` · sealed `1`
+horo `8` `crest` · trinity `1·1·1` · sealed `0`
 imports @/intercompany/reconciliation · exports IntercompanyReconciliation·for · escapes —
 links `1/1` · folded `1` · bonds in `4` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law consolidation is NEVER automatic — readiness requires every entity closed 
 
 ---
 
-<sub>content-uuid `800185c8-995e-8c99-adaf-193345b46a43` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6c980d09-dea0-8ff6-b17a-6faaa5ce343a` · `pnpm readme` · `pnpm computed:check`</sub>

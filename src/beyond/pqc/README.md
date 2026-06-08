@@ -2,9 +2,11 @@
 
 # pqc
 
-> atom `beyond/pqc` · horo `4` `weave` · [[balance]] `1` · [[seal]] `0`
+> atom `beyond/pqc` · horo `7` `descent` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `beyond/pqc` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,11 +23,60 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+
+### collapse
+
+- `balance:conserved`
+- `law:the [[signature]] that seals the [[audit]] chain must be forgeable by no adversary, classical or quantum — only NIST-approved post-quantum algorithms may sign, so the seal outlives the machine that would break it.`
+- `seal:unsealed`
+- `trigger:NIST FIPS 204 ML-DSA (Module-Lattice Digital Signature)`
+- `trigger:NIST SP 800-208 stateful-hash-based-signatures`
+- `trigger:Use when an audit-chain leaf signature must survive a quantum adversary — post-quantum cryptography, the migration target from SHA-256 to lattice signatures (ML-DSA / SLH-DSA, FIPS 204) so a future Shor-capable machine cannot forge the [[signature]] that seals the [[audit]] chain.`
+- `trigger:the [[signature]] that seals the [[audit]] chain must be forgeable by no adversary, classical or quantum — only NIST-approved post-quantum algorithms may sign, so the seal outlives the machine that would break it.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `61b2c359-627f-8234-b4ba-3abbf369f177` · `f03254c9-faf9-8c05-affc-e3aad20e1d1d`
+- content uuids `35f46412-a719-8b36-9c1b-de954df4ca7d` · `c14662b1-c40a-8e29-9d0a-8d0151439985`
+
+## [[entropy]] — gaps · seals
+
+> account code `beyond/pqc` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.7` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `1` eb | Σ seal `11.7` eb |
+
+> net residual `-10.7` eb · seal/gap ratio `11.7` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `beyond` · sub-root `d5c96de6-e131-8db0-8c67-746942d1018c`
+- partition `beyond` · sub-root `ec7e7d91-7746-8185-bcbd-22a1d84517ed`
 - bond degree `18` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- graph root `86252db0-c776-84eb-b8e4-c884dca3a3ba`
 
 ## [[cloudflare]] bindings
 
@@ -38,15 +89,53 @@
 - `NIST SP 800-208 stateful-hash-based-signatures` · banner
 - `NIST-SP-800-63` · catalogue
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·7 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `18` · sealed `0` · horo `4`
+- bond degree `18` · sealed `0` · horo `7`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `4`
 
 ## identity
 
-- uuid `52eb6f00-a748-87e6-b66d-5bb81ca292d8`
+- uuid `b826b476-537a-8276-a89c-2e7b7f27fbad`
 - bonds in `6` · out `6`
 - trinity form·code·proof `1`·`1`·`1`
 - links `11` / `11`
@@ -58,4 +147,4 @@
 
 ---
 
-<sub>content-uuid `09334282-f46d-810c-b494-c5ae9ea66d54` · framed by typography partition `beyond` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c2b013f8-e1e8-85c0-a476-288b603e5fed` · framed by typography partition `beyond` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>

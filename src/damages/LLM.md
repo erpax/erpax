@@ -3,8 +3,8 @@
 
 # damages
 
-path `damages` · uuid `92bec025-ab35-8ed8-8c9e-38bad155af85` · diamond `4c1b6082-330d-8e6c-aac6-82d58ab63bca`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `damages` · uuid `6876d669-7716-8a9a-bf41-75cac56f9085` · diamond `9791471c-b657-8ff1-a9c9-86b61306a97c`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·known·law·merge·sti·vehicle · exports damages · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law damages is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `9b5276db-6b49-8a0d-96bf-4201fa434950` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `14f441f6-4ebf-8ace-ae0e-0eaf4d174cf2` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -8,10 +8,10 @@ horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports studio · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law studio is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `2e56ec1c-ad03-8e3c-85d7-f0d54297fda3` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8546b906-538c-898d-ae37-6c84b7b3a096` · `pnpm readme` · `pnpm computed:check`</sub>

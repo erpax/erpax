@@ -3,15 +3,15 @@
 
 # sustainability
 
-path `sustainability` · uuid `a4b62011-1e2d-8cd9-9873-5349623b896c` · diamond `4edc43d2-8638-86b4-87aa-189131757821`
+path `sustainability` · uuid `a4b62011-1e2d-8cd9-9873-5349623b896c` · diamond `c696e115-5257-8c4c-8ee9-99e66fcb8962`
 horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports — · exports Cycle·const · escapes —
-links `26/26` · folded `1` · bonds in `3` out `3`
-faces worker·plugin·pwa `0·0·0`
-neighbors → balance·suspended·swimming · ← balance·suspended·swimming
+links `26/26` · folded `1` · bonds in `18` out `18`
+faces worker·plugin·pwa `1·0·0`
+neighbors → anchor·balance·biomass·capacity·compost·conservation·decentralization·diversity·ecosystem·emission·entropy·entry·law·proof·soil·symbiosis·tamper·whole · ← anchor·balance·biomass·capacity·compost·conservation·decentralization·diversity·ecosystem·emission·entropy·entry·law·proof·soil·symbiosis·tamper·whole
 analysis —
 law a system endures iff each cycle nets zero — throughput ≤ regeneration AND the material loop closes, so zero net [[entropy]] is added per cycle; the un-recycled free parameter is the unsustainable leak.
 
 ---
 
-<sub>content-uuid `1045749b-701b-8ee0-99a8-df6a9d73cf9a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `460ba28c-33e3-8c32-a10a-2a0372c33ec3` · `pnpm readme` · `pnpm computed:check`</sub>

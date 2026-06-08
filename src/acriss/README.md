@@ -2,9 +2,11 @@
 
 # acriss
 
-> atom `acriss` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `acriss` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
+
+> account code `acriss` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -19,11 +21,59 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:trinity:[[gap]]/[[trinity]]/code`
+- `gap:trinity:[[gap]]/[[trinity]]/proof`
+
+### collapse
+
+- `balance:conserved`
+- `law:an ACRISS code is a fixed four-letter classification (category·type·transmission/drive·fuel/AC) whose meaning is positional, so the four slots are never reordered or partially filled.`
+- `seal:sealed`
+- `trigger:Use when reasoning about acriss — A schema.org component word, collided out of schema.org compounds — fused from acrissCode (sti · collapse · merge).`
+- `trigger:an ACRISS code is a fixed four-letter classification (category·type·transmission/drive·fuel/AC) whose meaning is positional, so the four slots are never reordered or partially filled.`
+- `trigger:schema.org — the type vocabulary, collided to single words`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `1`
+- entry uuids `6eefa511-2d99-891f-8477-116135dda891` · `8b79adb0-5c13-8ce6-917b-44500f170564` · `fb6d9868-c7b7-89a6-a8d0-a815a0cf4825`
+- content uuids `443e177f-15fc-8837-b655-746e509ca0f6` · `8d6fb565-2aec-8b45-922e-f369889dcea2` · `c1858252-a8af-87a5-a001-b7120ea95594` · `d0889b99-9b20-812a-b6b0-186a37c95aa0`
+
+## [[entropy]] — gaps · seals
+
+> account code `acriss` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[trinity]]/code `1.585` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[trinity]]/proof `1.585` eb | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.1` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[diamond]]/sealed `1.585` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `3.17` eb | Σ seal `10.685` eb |
+
+> net residual `-7.515` eb · seal/gap ratio `3.371` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `acriss` · sub-root `5d4d9e3e-4f18-82e6-a282-b6e72e18064a`
+- partition `acriss` · sub-root `d0889b99-9b20-812a-b6b0-186a37c95aa0`
 - bond degree `15` · analysis neighbors —
-- graph root `06810c2c-2396-831f-a2b3-a58706a17051`
+- graph root `e9e46cd3-af78-8539-bcbd-58a485afeb8e`
 
 ## [[cloudflare]] bindings
 
@@ -34,15 +84,53 @@
 - `schema.org` · catalogue
 - `schema.org — the type vocabulary, collided to single words` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·1 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `15` · sealed `1` · horo `7`
+- bond degree `15` · sealed `1` · horo `1`
 - variance `0` · balanced `1` · trinity sum `1`
 - bindings `0` · standards `2`
 
 ## identity
 
-- uuid `5d4d9e3e-4f18-82e6-a282-b6e72e18064a`
+- uuid `d0889b99-9b20-812a-b6b0-186a37c95aa0`
 - bonds in `5` · out `5`
 - trinity form·code·proof `1`·`0`·`0`
 - links `5` / `5`
@@ -54,4 +142,4 @@
 
 ---
 
-<sub>content-uuid `0a5db777-e8ee-8c4d-999f-b6456b6a1409` · framed by typography partition `acriss` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `1d7e73d3-b9e5-808b-bf31-241d4726056e` · framed by typography partition `acriss` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

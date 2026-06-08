@@ -3,8 +3,8 @@
 
 # declined
 
-path `declined` · uuid `c8b86382-afc3-8234-b59b-0a5e18a64943` · diamond `d514e27b-a38e-8783-8432-1b38823c609b`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `declined` · uuid `8ff5f9a2-1607-8988-9e08-e7fbcd03091b` · diamond `7a5e03fe-ba37-832f-8b85-ec20790d29ef`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports declined · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law declined is one schema.org word, content-addressed; the same word collides e
 
 ---
 
-<sub>content-uuid `13628ab0-dfb3-8f1f-8437-d8244c0cb3cb` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `dd499fc2-a708-8185-a2c2-5a625d51864e` · `pnpm readme` · `pnpm computed:check`</sub>

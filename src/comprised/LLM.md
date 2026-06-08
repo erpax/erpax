@@ -3,8 +3,8 @@
 
 # comprised
 
-path `comprised` · uuid `5748c4d7-c45e-8161-aecf-974f0854190b` · diamond `14f1a456-7326-80b1-b936-4ceff8603621`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `comprised` · uuid `bc81cb39-30ce-8168-adc1-09379a36c96a` · diamond `12689a22-170c-8636-b3c9-0fa132d0dfd1`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports comprised · escapes —
 links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law comprised is one schema.org word, content-addressed; the same word collides 
 
 ---
 
-<sub>content-uuid `292e90e4-a24a-8b56-89bd-cc80e390cb53` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `acabecd0-d93d-8d27-b0a5-f12c6f784300` · `pnpm readme` · `pnpm computed:check`</sub>

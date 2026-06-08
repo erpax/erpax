@@ -3,9 +3,9 @@
 
 # log
 
-path `quantum/log` · uuid `eb3bfee8-4629-8698-9944-f627696bda5c` · diamond `76ca238b-eacc-8880-a94b-6466cf2782fa`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
-imports agent·cost·entropy·law·merge·quantum·realtime·receipt·stream·tamper·uuid·void · exports log · escapes —
+path `quantum/log` · uuid `298730b2-c071-88ac-b638-d614b31e3a71` · diamond `ee82567c-2737-8e21-a6e5-66db06bf9fb5`
+horo `2` `share` · trinity `1·1·1` · sealed `1`
+imports @/receipt · exports Decision·Receipt·async·const·function · escapes —
 links `21/21` · folded `1` · bonds in `13` out `13`
 faces worker·plugin·pwa `1·0·0`
 neighbors → agent·cost·digit·entropy·law·mcp·merge·realtime·receipt·stream·tamper·uuid·void · ← agent·cost·digit·entropy·law·mcp·merge·realtime·receipt·stream·tamper·uuid·void
@@ -14,4 +14,4 @@ law the agent trail is append-only and hash-chained, so its length IS the forgin
 
 ---
 
-<sub>content-uuid `66eb0e2f-3640-8cd0-8030-6f9947d60978` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d346d4ad-8958-88b8-aebb-929d72a45951` · `pnpm readme` · `pnpm computed:check`</sub>

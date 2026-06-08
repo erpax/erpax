@@ -3,15 +3,15 @@
 
 # sporting
 
-path `sporting` · uuid `d6a171a9-f824-8630-866a-72a7ba071631` · diamond `986c35f1-987d-82b4-8049-f8cb6ef4fa6b`
+path `sporting` · uuid `d6a171a9-f824-8630-866a-72a7ba071631` · diamond `b068deaf-438e-855c-9ab9-50b16401b85d`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·goods·law·merge·sti·store · exports sporting · escapes —
-links `6/6` · folded `1` · bonds in `4` out `4`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·goods·law·merge·sti·store · ← collapse·goods·law·merge·sti·store
 analysis —
 law sporting is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `51456043-34d3-8c68-a306-6cdbb45189eb` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `242d0f5e-02c3-82f5-8fd6-854b6de734ad` · `pnpm readme` · `pnpm computed:check`</sub>

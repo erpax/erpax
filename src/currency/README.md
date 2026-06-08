@@ -2,7 +2,7 @@
 
 # currency
 
-> atom `currency` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `currency` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -21,9 +21,9 @@
 
 ## typography graph
 
-- partition `currency` · sub-root `8d392f75-40f3-8871-ad7a-af6fcfb2b6a0`
-- bond degree `135` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- partition `currency` · sub-root `f08d3b0c-89b2-86fd-abca-489af8fef80a`
+- bond degree `136` · analysis neighbors —
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -38,16 +38,54 @@
 - `RFC-8785` · catalogue
 - `SAF-T` · catalogue
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·2 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `135` · sealed `1` · horo `7`
+- bond degree `136` · sealed `1` · horo `2`
 - variance `0` · balanced `1` · trinity sum `1`
 - bindings `0` · standards `6`
 
 ## identity
 
-- uuid `1bc8366e-ffb2-8e1d-a3f5-1a2c79aa68bc`
-- bonds in `44` · out `43`
+- uuid `ce402df1-cf04-8421-8ec1-e328d6a0dd50`
+- bonds in `44` · out `44`
 - trinity form·code·proof `1`·`0`·`0`
 - links `13` / `13`
 - folded `1` · escapes `0`
@@ -58,4 +96,4 @@
 
 ---
 
-<sub>content-uuid `40a026b8-08ac-8497-a878-c31c635b4dfd` · framed by typography partition `currency` bonds `135` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `695051d5-fe86-895c-856c-fbae4f836c2f` · framed by typography partition `currency` bonds `136` · `pnpm readme` · `pnpm readme:check`</sub>

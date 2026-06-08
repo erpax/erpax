@@ -3,15 +3,15 @@
 
 # workload
 
-path `workload` · uuid `4984ffd9-ac9e-8c85-a533-6fe37cbee763` · diamond `c6608221-3ab0-881c-b17a-1ce2bbfff98a`
+path `workload` · uuid `4984ffd9-ac9e-8c85-a533-6fe37cbee763` · diamond `c8539bc1-1c2d-8a71-bee9-05df0f3edd82`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports course·law · exports workload · escapes —
-links `2/2` · folded `1` · bonds in `5` out `5`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·result·stat · ← cohort·landmarks·memories·result·stat
+neighbors → course·law · ← course·law
 analysis —
 law workload is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `17e6be2e-6f44-8a67-9aee-cc0dfbf1cf3c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1cda9131-043e-8d82-a4cd-e99d97b1ef53` · `pnpm readme` · `pnpm computed:check`</sub>

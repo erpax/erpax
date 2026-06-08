@@ -3,15 +3,15 @@
 
 # biometric
 
-path `biometric` · uuid `4d930689-daf1-8cbd-9be0-638eae66884b` · diamond `9eb28301-74c3-8fe1-8f9d-b2ee3d155bab`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
-imports auth·biofield·coherence·consent·data-protection·device·finality·health·identity·measurement·quantum·security·snapshot·uuid·vital · exports biometric · escapes —
-links `25/25` · folded `1` · bonds in `16` out `16`
+path `biometric` · uuid `f9197fdf-5dc1-8873-86fe-109885aa4b27` · diamond `217383ca-50f7-86a8-8cef-58c8ed051fbb`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
+imports @/medical/device · exports deviceReadingFromCgm·deviceReadingFromOximeter·deviceReadingFromWatch·wireModalityToEmr · escapes —
+links `25/25` · folded `1` · bonds in `17` out `17`
 faces worker·plugin·pwa `0·0·0`
-neighbors → auth·biofield·coherence·consent·dataprotection·device·emr·finality·health·identity·measurement·sanitization·security·snapshot·uuid·vital · ← auth·biofield·coherence·consent·dataprotection·device·emr·finality·health·identity·measurement·sanitization·security·snapshot·uuid·vital
+neighbors → auth·biofield·coherence·consent·dataprotection·device·device·emr·finality·health·identity·measurement·sanitization·security·snapshot·uuid·vital · ← auth·biofield·coherence·consent·dataprotection·device·device·emr·finality·health·identity·measurement·sanitization·security·snapshot·uuid·vital
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `3104718a-af44-83e0-9260-222c2a164a45` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `14525e5c-02b8-834b-9db3-adb01cefe1f9` · `pnpm readme` · `pnpm computed:check`</sub>

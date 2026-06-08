@@ -3,8 +3,8 @@
 
 # bedrooms
 
-path `bedrooms` · uuid `8dc546ee-6a3a-8397-b2eb-c31b2f3b613e` · diamond `2657fc4a-d21e-844b-9163-6d4ad2d7d95e`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `bedrooms` · uuid `c6ab01c3-d73f-8cec-8f23-417ffe3e841a` · diamond `9ccc8661-d027-8150-a788-b953f2f8973d`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·number·sti · exports bedrooms · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law bedrooms is one schema.org word, content-addressed; the same word collides e
 
 ---
 
-<sub>content-uuid `5bd8fc45-ab72-8e02-9c22-2e8b65e5db63` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f938b1ae-b9b0-87ff-928e-a724389ea6fb` · `pnpm readme` · `pnpm computed:check`</sub>

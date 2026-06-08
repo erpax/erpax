@@ -8,10 +8,10 @@ horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports vinyl · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law vinyl is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `d0465afb-4f10-8ab2-a3ae-d12c41a14d97` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `749be20b-c8ff-82ad-9ebc-3867a296b7a8` · `pnpm readme` · `pnpm computed:check`</sub>

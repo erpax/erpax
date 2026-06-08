@@ -3,15 +3,15 @@
 
 # track
 
-path `track` · uuid `5d9addbe-8cff-8c82-b107-53379081f7f7` · diamond `b7dbbc6c-39b1-8e2c-9877-9a5952e518ec`
+path `track` · uuid `5d9addbe-8cff-8c82-b107-53379081f7f7` · diamond `81d32640-ec79-8003-b32a-d9f83147e2f5`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports action·law · exports track · escapes —
-links `2/2` · folded `1` · bonds in `4` out `4`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → action·law · ← action·law
 analysis —
 law track is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `de27e3d6-bd34-803f-9194-d92b9526d5ec` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `00773ae1-aa6f-8566-924c-f91834622c68` · `pnpm readme` · `pnpm computed:check`</sub>

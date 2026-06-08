@@ -3,15 +3,15 @@
 
 # surprisal
 
-path `surprisal` · uuid `3b569123-ed57-897e-99c5-ef5c3ae43b1a` · diamond `fddef29c-1333-8430-be70-e910b7bb1c9e`
+path `surprisal` · uuid `3b569123-ed57-897e-99c5-ef5c3ae43b1a` · diamond `06045df7-c07f-80e0-8d89-4893b7ed4cac`
 horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports — · exports const·function · escapes —
-links `13/13` · folded `1` · bonds in `13` out `13`
-faces worker·plugin·pwa `0·0·0`
-neighbors → anatomical·cod·cohort·entropy·landmarks·lender·mech·memories·online·parent·siblings·stat·want · ← anatomical·cod·cohort·entropy·landmarks·lender·mech·memories·online·parent·siblings·stat·want
+links `13/13` · folded `1` · bonds in `8` out `8`
+faces worker·plugin·pwa `1·0·0`
+neighbors → anchor·barrier·cost·law·proof·quantum·shannon·tamper · ← anchor·barrier·cost·law·proof·quantum·shannon·tamper
 analysis —
 law the information of an event is −log₂(p) bits — zero for a certainty, additive for independent events — so the cost to forge a thing of probability p is −log₂(p) bits, and each wired dimension a forgery must also satisfy adds its bits.
 
 ---
 
-<sub>content-uuid `0099ab8c-d18f-8eea-8e46-c32ac475f36d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `413cea1b-13e5-8e1a-83ec-1ad62bad1b1a` · `pnpm readme` · `pnpm computed:check`</sub>

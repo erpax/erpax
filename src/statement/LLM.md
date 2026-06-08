@@ -3,15 +3,15 @@
 
 # statement
 
-path `statement` · uuid `bfb9935b-75da-8d02-b20d-0cab10f7ca7f` · diamond `3a76d2a5-94a7-87a1-8c56-2539a7f10e99`
+path `statement` · uuid `bfb9935b-75da-8d02-b20d-0cab10f7ca7f` · diamond `4f73cb2c-e959-89a6-ae29-aae1737f2e66`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports statement · escapes —
-links `2/2` · folded `1` · bonds in `7` out `7`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → arrival·built·cohort·dentistry·landmarks·memories·stat · ← arrival·built·cohort·dentistry·landmarks·memories·stat
+neighbors → law·thing · ← law·thing
 analysis —
 law statement is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `b31b4811-5c82-804f-87fe-d9f0dcd98bd3` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8f9a633b-3063-82c6-8397-bc1b52793010` · `pnpm readme` · `pnpm computed:check`</sub>

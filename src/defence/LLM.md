@@ -3,8 +3,8 @@
 
 # defence
 
-path `defence` · uuid `aea5742f-c346-85fb-98a2-f1317aa15f70` · diamond `53043628-c796-8955-908e-d59a7cba3e5d`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `defence` · uuid `661fb374-8d0f-8e58-b86b-d128025c7767` · diamond `37f2cf2f-09fe-8da3-b4e4-f7dfb3ae4eee`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports access·accounting·akashic·close·collections·duality·fields·fractal·holographic·hooks·identity·law·merge·open·sectors·sequence·standard·versions · exports defence · escapes —
 links `30/30` · folded `1` · bonds in `21` out `21`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law defence is the COFOG-02 readiness [[sectors|sector]] — readiness is a DERI
 
 ---
 
-<sub>content-uuid `33788b2d-535f-868a-b595-35f515e00a58` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0c423c97-df7f-83ce-9219-6b2fa9cafd7b` · `pnpm readme` · `pnpm computed:check`</sub>

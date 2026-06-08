@@ -23,7 +23,21 @@
 
 - partition `palliative` · sub-root `080e13ca-1d11-827d-9f6a-4b9ce14e0383`
 - bond degree `16` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `16` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `a042a0de-81c3-863b-acd2-40770c7517da` · framed by typography partition `palliative` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `1825ac90-e73b-84a5-a9d1-1be950c5aed4` · framed by typography partition `palliative` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

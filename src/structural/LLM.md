@@ -8,10 +8,10 @@ horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports class·collapse·law·merge·sti · exports structural · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·cohort·landmarks·memories·stat · ← action·cohort·landmarks·memories·stat
+neighbors → class·collapse·law·merge·sti · ← class·collapse·law·merge·sti
 analysis —
 law structural is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `4f12ca46-bad5-8bab-b62a-3de672253516` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `66eff92a-024b-83da-bfe1-f32cb12e996d` · `pnpm readme` · `pnpm computed:check`</sub>

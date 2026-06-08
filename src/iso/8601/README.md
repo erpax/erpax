@@ -2,7 +2,7 @@
 
 # 8601
 
-> atom `iso/8601` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
+> atom `iso/8601` · horo `5` `round` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -25,7 +25,23 @@
 
 - partition `iso` · sub-root `ea5c4346-ba0e-8fac-9959-143d07932374`
 - bond degree `0` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ECMA-262` · catalogue
+- `ECMA-402` · catalogue
+- `ISO-8601-1:2019 date-time` · banner
+
+## analytics
+
+- bond degree `0` · sealed `0` · horo `5`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `3`
 
 ## identity
 
@@ -37,8 +53,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `150c9200-a450-85fb-8a0b-5828bb2972ba` · framed by typography partition `iso` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c6050707-9f39-8ee9-bc47-a0b1c78d1dcc` · framed by typography partition `iso` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

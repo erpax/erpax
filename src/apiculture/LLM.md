@@ -3,8 +3,8 @@
 
 # apiculture
 
-path `apiculture` · uuid `db77d786-3cf4-8a05-b0a6-00d9e5a8d5ad` · diamond `135a115a-62fa-8b71-9082-d1ea1d3e4a24`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `apiculture` · uuid `e58f818e-0e4e-86df-84f3-d07034104d2b` · diamond `01ce770b-4c15-8b56-8ea6-88ebd21ccb43`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports agriculture·biological·biomass·harvest·health·items·law·livestock·maturity·mortality·pollination·propagation·season·yield · exports apiculture · escapes —
 links `26/26` · folded `1` · bonds in `14` out `14`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law the bee colony is the IAS-41 biological asset while the hive housing it is I
 
 ---
 
-<sub>content-uuid `bba4af54-706d-8aff-8c8f-8d00ac1db63a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `17db4570-f6bd-88e1-a789-94dce0abe214` · `pnpm readme` · `pnpm computed:check`</sub>

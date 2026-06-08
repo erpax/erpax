@@ -23,7 +23,7 @@
 
 - partition `electrician` · sub-root `6a356ec3-7cc2-84cb-b2dd-3daaf878b407`
 - bond degree `6` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `a9fc0c6c-3f6e-84f7-a99a-dea9ff42bdec` · framed by typography partition `electrician` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f41e98d3-73e9-87aa-be52-e27ff455e6ed` · framed by typography partition `electrician` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>

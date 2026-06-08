@@ -3,8 +3,8 @@
 
 # contraindication
 
-path `contraindication` · uuid `f2054bcd-3394-8205-bee6-f0de3fa0b008` · diamond `17dcaf29-ca4b-86ea-af8f-a1ba534ec886`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `contraindication` · uuid `0445154f-f87a-88f0-af72-1d3f897508c3` · diamond `617624ba-dd24-8395-84b5-16743d3ce007`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports guideline·law·medical · exports contraindication · escapes —
 links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law contraindication is one schema.org word, content-addressed; the same word co
 
 ---
 
-<sub>content-uuid `5bdd6af8-cbed-82a7-8de8-6770778e66af` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d6818956-7edd-8229-87a2-14d6b36b440d` · `pnpm readme` · `pnpm computed:check`</sub>

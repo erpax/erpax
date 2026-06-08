@@ -8,10 +8,10 @@ horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti · exports subscribe · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·contained·landmarks·memories·stat · ← cohort·contained·landmarks·memories·stat
+neighbors → action·collapse·law·merge·sti · ← action·collapse·law·merge·sti
 analysis —
 law subscribe is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `9abfbd25-f6fd-8d90-bac0-c82752b8e0cb` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `fa8dabc2-3135-8846-acb3-6f16b92679dc` · `pnpm readme` · `pnpm computed:check`</sub>

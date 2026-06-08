@@ -3,8 +3,8 @@
 
 # amusement
 
-path `amusement` · uuid `797e0538-dfe5-8580-aa62-1bff0545c4ce` · diamond `109c27a9-b510-8b43-acbe-dd105c359082`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `amusement` · uuid `aff2c2ff-2214-8b03-8aa4-36bd80e6b510` · diamond `c186c5ac-e272-8b4c-b668-cfc466e02a47`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·park·sti · exports amusement · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law amusement is one schema.org word, content-addressed; the same word collides 
 
 ---
 
-<sub>content-uuid `d4d6c051-ac31-8b5b-906a-c65eddeef2c6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `856c6283-c51f-8d6b-8f39-96d8cbb1f235` · `pnpm readme` · `pnpm computed:check`</sub>

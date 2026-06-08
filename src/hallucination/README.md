@@ -22,8 +22,22 @@
 ## typography graph
 
 - partition `hallucination` · sub-root `96ac67d7-c641-8a28-a3f8-4b5cb0b1e043`
-- bond degree `117` · analysis neighbors `access` · `agent` · `analytics` · `analytics/max-tamper-cost` · `architecture` · `aura` · `auth` · `card` · `diamond` · `examples` · `hooks` · `maxtampercost` · `memory` · `pagination` · `propose` · `provider` · `purity` · `seed` · `session` · `sync` · `trading`
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- bond degree `122` · analysis neighbors `19011` · `9110` · `access` · `agent` · `analytics` · `analytics/max-tamper-cost` · `api` · `aura` · `auth` · `card` · `comms` · `cost` · `diamond` · `examples` · `factory` · `hooks` · `maxtampercost` · `memory` · `pagination` · `path` · `propose` · `provider` · `purity` · `seed` · `sync` · `upgrade`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `122` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `9dc9bbd6-9a11-845e-a510-caf7a93456c4` · framed by typography partition `hallucination` bonds `117` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `98865869-5ed7-8353-8c2a-75427f14e3d2` · framed by typography partition `hallucination` bonds `122` · `pnpm readme` · `pnpm readme:check`</sub>

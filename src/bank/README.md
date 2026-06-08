@@ -2,7 +2,7 @@
 
 # bank
 
-> atom `bank` · horo `2` `share` · [[balance]] `1` · [[seal]] `0`
+> atom `bank` · horo `8` `crest` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -17,13 +17,13 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `7` | Σ `7` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `2` · [[conservation]] `0` · [[entry]] · [[purity]]
 
 ## typography graph
 
-- partition `bank` · sub-root `87606df1-5071-8b98-ac3b-0b1f53544470`
-- bond degree `32` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- partition `bank` · sub-root `e77ec21e-45f7-81e6-b2ad-0e1431ec8837`
+- bond degree `0` · analysis neighbors —
+- graph root `1cef4f02-a3fa-83a5-8ea0-120b724ef456`
 
 ## [[cloudflare]] bindings
 
@@ -55,15 +55,53 @@
 - `ISO-9362` · catalogue
 - `SWIFT-MT` · catalogue
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unbalanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| not-held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·8 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `32` · sealed `0` · horo `2`
-- variance `0` · balanced `1` · trinity sum `1`
+- bond degree `0` · sealed `0` · horo `8`
+- variance `2` · balanced `0` · trinity sum `1`
 - bindings `0` · standards `23`
 
 ## identity
 
-- uuid `b27d6c5c-978f-8d23-8f59-1cd44ddaf7ea`
+- uuid `a5408513-546f-8676-ab4b-7a876339d2ac`
 - bonds in `10` · out `10`
 - trinity form·code·proof `1`·`0`·`0`
 - links `7` / `7`
@@ -75,4 +113,4 @@
 
 ---
 
-<sub>content-uuid `2ae3c205-80d0-8c1f-b868-836a17ac5478` · framed by typography partition `bank` bonds `32` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `95233d2d-6fbb-8827-a50b-704c7960bc80` · framed by typography partition `bank` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

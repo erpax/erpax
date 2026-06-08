@@ -3,8 +3,8 @@
 
 # breed
 
-path `breed` · uuid `8296322c-375a-8413-bf01-7de25fc7bc70` · diamond `dcac0d9c-e2a6-8bcf-b530-08d855bbc6f9`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `breed` · uuid `558bdd0d-0245-8f99-a499-5a8bfd217f48` · diamond `3d9f0c04-b1ed-8616-a7d0-e931669f25f8`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports animal·biological·cohort·forecast·law·lineage·livestock·metric·period·taxonomy · exports breed · escapes —
 links `21/21` · folded `1` · bonds in `13` out `13`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law a breed is the animal-genetics classifier — a genetically distinct sub-pop
 
 ---
 
-<sub>content-uuid `ac7a75a5-5eeb-8675-8892-4886fd28f8b4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0e256b50-9377-8b85-aec6-4c4d4cc74dc8` · `pnpm readme` · `pnpm computed:check`</sub>

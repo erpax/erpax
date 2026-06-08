@@ -3,15 +3,15 @@
 
 # scorecards
 
-path `vendors/vendor/scorecards` · uuid `23e57663-d477-8ff8-a65f-5f7f35bafcb8` · diamond `d47dc116-3423-8d44-b902-1819c61f3944`
-horo `8` `crest` · trinity `1·1·1` · sealed `1`
+path `vendors/vendor/scorecards` · uuid `1b49ec1e-1ae2-8c15-b820-3173b63ac926` · diamond `b33a29f1-f7b8-83f5-9c43-a10b82de8696`
+horo `1` `base` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
-links `6/6` · folded `1` · bonds in `6` out `6`
-faces worker·plugin·pwa `0·0·0`
-neighbors → biomechnical·cohort·landmarks·memories·shipped·stat · ← biomechnical·cohort·landmarks·memories·shipped·stat
+links `6/6` · folded `1` · bonds in `8` out `8`
+faces worker·plugin·pwa `1·0·0`
+neighbors → access·accounting·hooks·identity·law·scorecard·standard·vendors · ← access·accounting·hooks·identity·law·scorecard·standard·vendors
 analysis —
 law a scorecard is the periodic, evidence-backed re-evaluation of one vendor (OTD / quality / response / ESG metrics) that drives the ISO 9001 §8.4 renewal, probation or de-listing decision — the supplier re-approval node.
 
 ---
 
-<sub>content-uuid `3d39cd1a-7b84-80e0-bd9b-09e8e5f264cf` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3b903b2d-e825-8e16-845d-2da01328c852` · `pnpm readme` · `pnpm computed:check`</sub>

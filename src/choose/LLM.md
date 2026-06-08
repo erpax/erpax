@@ -3,8 +3,8 @@
 
 # choose
 
-path `choose` · uuid `b146a741-355e-89b0-a771-782e5e094f9d` · diamond `fd835d7f-71d2-8da6-ba50-d171ef48c949`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `choose` · uuid `2ec95461-6c52-8652-b3df-d2e11fe576d4` · diamond `7f22af2f-3cce-8e93-a87d-77eb257fdc25`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti · exports choose · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law choose is one schema.org word, content-addressed; the same word collides eve
 
 ---
 
-<sub>content-uuid `c362f0d5-7f1a-8608-b3e6-66e20bcb536e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `298e9311-3153-862a-a80e-ff3fe303240d` · `pnpm readme` · `pnpm computed:check`</sub>

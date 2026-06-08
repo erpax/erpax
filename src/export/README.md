@@ -25,7 +25,37 @@
 
 - partition `export` · sub-root `bfaa9f53-f137-8d04-8e11-dc7b06119c1e`
 - bond degree `25` · analysis neighbors `quantum/boundary`
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `COSO-ERM-2017` · catalogue
+- `EN-16931` · catalogue
+- `EU-2002/58` · catalogue
+- `EU-2011/83` · catalogue
+- `EU-2014/55` · catalogue
+- `EU-2017/1132` · catalogue
+- `EU-2017/828` · catalogue
+- `EU-537/2014` · catalogue
+- `EU-910/2014` · catalogue
+- `EU-VAT-Implementing-Reg-282/2011` · catalogue
+- `ISO-14289-1` · catalogue
+- `ISO-19005` · catalogue
+- `ISO-20022` · catalogue
+- `ISO-9735` · catalogue
+- `Peppol-BIS-3.0` · catalogue
+- `SAF-T` · catalogue
+- `UBL-2.1` · catalogue
+
+## analytics
+
+- bond degree `25` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `17`
 
 ## identity
 
@@ -41,4 +71,4 @@
 
 ---
 
-<sub>content-uuid `21674e81-88ac-8cf8-8961-0f2f4240ae83` · framed by typography partition `export` bonds `25` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `dd09911b-bb68-81c1-9bba-16c6415b7c44` · framed by typography partition `export` bonds `25` · `pnpm readme` · `pnpm readme:check`</sub>

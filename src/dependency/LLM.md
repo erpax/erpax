@@ -3,8 +3,8 @@
 
 # dependency
 
-path `dependency` · uuid `766bafe5-277f-81e7-8b38-726ecea4a81b` · diamond `9d9baf9e-f933-88b3-aaeb-43c3c818846c`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `dependency` · uuid `39296e30-bccb-826a-ad9d-3ea33936b674` · diamond `413b6c14-6ef1-86a4-aa18-a5b3dc1496dd`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports balance·dependencies·reference · exports dependency · escapes —
 links `6/6` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `a0dd4faf-b029-8ee1-a9f5-a2904a6998d7` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8198ab5e-fe55-8d65-a787-6f07f231d99d` · `pnpm readme` · `pnpm computed:check`</sub>

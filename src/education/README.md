@@ -21,9 +21,9 @@
 
 ## typography graph
 
-- partition `education` · sub-root `add6b7ba-3f6d-880b-8b55-f066da7b47cc`
+- partition `education` · sub-root `65f3ae02-49c1-858c-a67f-f68b0069568b`
 - bond degree `92` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `2bd402f7-3393-8d13-97d4-fe733a76f755` · framed by typography partition `education` bonds `92` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `bdb17ceb-ff28-8168-9c43-0a6525335bee` · framed by typography partition `education` bonds `92` · `pnpm readme` · `pnpm readme:check`</sub>

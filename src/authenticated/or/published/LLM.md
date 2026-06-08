@@ -3,15 +3,15 @@
 
 # published
 
-path `authenticated/or/published` · uuid `c6f72ab4-290d-8217-9d0a-a52280b1d63f` · diamond `4c20cf37-9efd-8aa6-b86a-f929d5a1a569`
-horo `7` `descent` · trinity `1·1·1` · sealed `0`
+path `authenticated/or/published` · uuid `8328e394-2f9f-8493-bd33-4d2645f3e8d7` · diamond `d70cef79-ca84-8780-ae9e-d0cf222806bc`
+horo `8` `crest` · trinity `1·1·1` · sealed `0`
 imports @/iso/27002·@/scope · exports const · escapes —
-links `8/8` · folded `1` · bonds in `6` out `7`
+links `8/8` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `1·0·0`
-neighbors → access·auth·date·law·law·scope·sd · ← access·auth·date·law·scope·sd
+neighbors → date·law·sd · ← date·law·sd
 analysis —
 law draft visibility is authenticated-only — a session grants full [[access]], an anonymous caller is filtered to published rows via [[scope]]'s `wherePublished`.
 
 ---
 
-<sub>content-uuid `0164b83c-8a6d-8fd9-a1ad-c546d2e87644` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d378d93e-5c8e-8a32-8872-3de6db700222` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,8 +3,8 @@
 
 # blinded
 
-path `blinded` · uuid `d11817c7-144a-8413-b941-b379dc066d1a` · diamond `80955de0-c8fc-82cb-942c-1bc302105724`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `blinded` · uuid `84a57e18-59f6-82ea-93ca-066fb1d58543` · diamond `ced4f8d6-6948-8a42-858a-eaab85804286`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports blinded · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law blinded is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `2e42fbbc-8653-8b85-8360-55c606958fc2` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7a0818b4-d395-8c3e-b171-3b58dfa4c3b8` · `pnpm readme` · `pnpm computed:check`</sub>

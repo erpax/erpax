@@ -3,8 +3,8 @@
 
 # depth
 
-path `depth` · uuid `b804ff6e-87f9-8ab3-8d62-47df3c643842` · diamond `601a7a9a-a91b-8c37-a848-4bc8295307cb`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `depth` · uuid `8f0182af-74e7-8a06-b152-753ddcf3ec54` · diamond `ca4d016f-e20b-859e-bfc2-519c350221ef`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports depth · escapes —
 links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law depth is one schema.org word, content-addressed; the same word collides ever
 
 ---
 
-<sub>content-uuid `a22107fb-2d33-88fb-bdba-1728af8b3d5e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f20e0954-fd1b-8e40-ab70-2dda7d90e30e` · `pnpm readme` · `pnpm computed:check`</sub>

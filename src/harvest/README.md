@@ -23,7 +23,21 @@
 
 - partition `harvest` · sub-root `35bb4408-36aa-8501-8bbc-6c91b445c331`
 - bond degree `111` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `111` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `9b61b30b-e027-8422-8915-ef1b3deb9716` · framed by typography partition `harvest` bonds `111` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `9a6e6046-a944-800e-8248-2a6985435059` · framed by typography partition `harvest` bonds `111` · `pnpm readme` · `pnpm readme:check`</sub>

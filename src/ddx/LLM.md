@@ -3,8 +3,8 @@
 
 # ddx
 
-path `ddx` · uuid `2cba2ec8-bad6-8afc-943d-ffa47261520d` · diamond `6cbc06f5-46c0-8a7e-89ce-2fb483edae19`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `ddx` · uuid `1a09475e-a23f-8bbd-a0b8-b0ca7c98b4c7` · diamond `05ea449f-670b-8bbf-8464-ed4496888640`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports ddx · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law ddx is one schema.org word, content-addressed; the same word collides every 
 
 ---
 
-<sub>content-uuid `ee05f6e7-5249-8c34-93f3-01729c8081e1` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a4668459-c577-8ac8-a4a8-c6743619b9bc` · `pnpm readme` · `pnpm computed:check`</sub>

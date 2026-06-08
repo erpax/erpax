@@ -2,7 +2,7 @@
 
 # cross
 
-> atom `cross` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
+> atom `cross` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -23,9 +23,9 @@
 
 ## typography graph
 
-- partition `cross` · sub-root `d465d0ad-e345-84aa-9b1a-9097fd39e8f2`
-- bond degree `70` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- partition `cross` · sub-root `f27b64c9-346d-8d3c-a3e5-d8b9854b1652`
+- bond degree `58` · analysis neighbors —
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -39,16 +39,54 @@
 - `NIST INCITS-359 role-based-access-control` · banner
 - `NIST-INCITS-359-2012` · catalogue
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·8 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `70` · sealed `1` · horo `2`
+- bond degree `58` · sealed `1` · horo `8`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `5`
 
 ## identity
 
-- uuid `207c8c13-f3a9-804a-9380-89048ba4c63f`
-- bonds in `22` · out `23`
+- uuid `f27b64c9-346d-8d3c-a3e5-d8b9854b1652`
+- bonds in `16` · out `16`
 - trinity form·code·proof `1`·`1`·`1`
 - links `10` / `10`
 - folded `1` · escapes `0`
@@ -59,4 +97,4 @@
 
 ---
 
-<sub>content-uuid `7beefc8e-275b-811e-8c85-a57ef2737275` · framed by typography partition `cross` bonds `70` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `2745f1eb-b306-83cc-bb6c-3c92dbda7be6` · framed by typography partition `cross` bonds `58` · `pnpm readme` · `pnpm readme:check`</sub>

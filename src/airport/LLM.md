@@ -3,8 +3,8 @@
 
 # airport
 
-path `airport` · uuid `ce862497-e3da-8eb7-a68c-c38471a944b1` · diamond `8956f36a-6057-8178-9f26-8d8c77afa831`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `airport` · uuid `fa67a452-9148-84cd-bb15-8cb6bff8c8d0` · diamond `e1636423-7e4c-85be-93c3-db25d92c1022`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports arrival·departure·law · exports airport · escapes —
 links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law airport is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `4fbb6fbe-a642-81d6-99c0-333c5902ed05` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `763b504c-6a19-87b9-9de1-4ab02ee11227` · `pnpm readme` · `pnpm computed:check`</sub>

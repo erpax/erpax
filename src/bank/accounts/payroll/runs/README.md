@@ -2,9 +2,11 @@
 
 # runs
 
-> atom `bank/accounts/payroll/runs` · horo `7` `descent` · [[balance]] `1` · [[seal]] `0`
+> atom `bank/accounts/payroll/runs` · horo `5` `round` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `bank/accounts/payroll/runs` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -19,13 +21,57 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
+
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+- `gap:stray:[[gap]]/[[diamond]]/stray/hooks/`
+
+### collapse
+
+- `balance:variance=1`
+- `seal:unsealed`
+- `trigger:Use when processing, auditing, or posting a periodic payroll batch — aggregates approved TimeEntries, computes gross-to-net deductions and employer-side accruals, posts IAS-19/ASC-710 journal entries, emits a pain.001 disbursement file; SOX §404 four-eyes (preparer ≠ authoriser), GDPR-classified personal data. The payroll-run collection.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `403847dc-6172-8b57-9ed7-3c8d4928f90e` · `64ca2f3f-2f67-8ee0-9e2e-274a3a81f22e` · `d2ce65b2-4394-88b6-a5e5-98c71b38e58e` · `f4942c28-f94d-897a-8769-53aaff782788`
+- content uuids `7e4a1db4-c1b3-8227-ac44-8e4dcd727d27` · `a6d6366c-bc7d-83c5-9ca7-bb8b49790683` · `cfe69277-8b59-8b0b-a8a0-782ac8e8cf26` · `f1250930-e53b-883e-89bf-d54b95900f00`
+
+## [[entropy]] — gaps · seals
+
+> account code `bank/accounts/payroll/runs` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[diamond]]/stray/hooks/ `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.5` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+| Σ gap `3` eb | Σ seal `8.5` eb |
+
+> net residual `-5.5` eb · seal/gap ratio `2.833` · [[entropy]] · [[seal]]
 
 ## typography graph
 
-- partition `bank` · sub-root `87606df1-5071-8b98-ac3b-0b1f53544470`
-- bond degree `74` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- partition `bank` · sub-root `04fbb928-276c-8212-a5e8-bb8be5c2fc18`
+- bond degree `0` · analysis neighbors —
+- graph root `86252db0-c776-84eb-b8e4-c884dca3a3ba`
 
 ## [[cloudflare]] bindings
 
@@ -57,7 +103,6 @@
 - `ILO-C001` · catalogue
 - `ISO-13616-1` · catalogue
 - `ISO-13616-1:2020 iban` · banner
-- `ISO-19011:2018 audit-trail payroll-evidence` · banner
 - `ISO-20022` · catalogue
 - `ISO-20022 pain.001 customer-credit-transfer-initiation` · banner
 - `ISO-4217` · catalogue
@@ -71,16 +116,54 @@
 - `US-GAAP ASC-710 compensation-general` · banner
 - `US-GAAP ASC-715 compensation-retirement-benefits` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unbalanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| not-held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·5 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `74` · sealed `0` · horo `7`
-- variance `0` · balanced `1` · trinity sum `3`
-- bindings `0` · standards `37`
+- bond degree `0` · sealed `0` · horo `5`
+- variance `1` · balanced `0` · trinity sum `3`
+- bindings `0` · standards `36`
 
 ## identity
 
-- uuid `580005e3-30f4-86a6-8087-68d1126e7f6d`
-- bonds in `22` · out `25`
+- uuid `e10b62c5-e45e-8bc7-a9f9-af9fdbb71008`
+- bonds in `7` · out `7`
 - trinity form·code·proof `1`·`1`·`1`
 - links `24` / `24`
 - folded `1` · escapes `0`
@@ -91,4 +174,4 @@
 
 ---
 
-<sub>content-uuid `6429d2f0-6c42-853b-a449-e691bc2151cb` · framed by typography partition `bank` bonds `74` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ecbefd68-7010-8dcd-b46f-e525e271026a` · framed by typography partition `bank` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

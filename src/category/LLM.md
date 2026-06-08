@@ -3,8 +3,8 @@
 
 # category
 
-path `category` · uuid `cc2d9416-050f-8af1-bc44-68c872a2a79f` · diamond `8a787be1-9416-86cd-b6b5-6363b1d88cef`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `category` · uuid `58a6b032-92a3-893d-9336-0d42a1e4af03` · diamond `3e62e537-8ac1-803b-8524-266848ff165d`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports accommodation·activity·application·authenticity·code·cost·credential·drug·efficiency·energy·has·health·law·map·media·occupational·pharmacy·physical·plan·policy·pregnancy·recipe·return·set·sub·type · exports category · escapes —
 links `26/26` · folded `1` · bonds in `26` out `26`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law category is one schema.org word, content-addressed; the same word collides e
 
 ---
 
-<sub>content-uuid `a7370410-900c-825e-a6b9-9a69035e1736` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4a9f1cf8-3b61-875e-9ff0-2ff28a0380e6` · `pnpm readme` · `pnpm computed:check`</sub>

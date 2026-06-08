@@ -3,15 +3,15 @@
 
 # change
 
-path `audit/trail/after/change` · uuid `21431e57-6817-8be0-ac40-c56c7e91f317` · diamond `a448d840-278d-8b8a-a737-2e3f5c293c2e`
+path `audit/trail/after/change` · uuid `3a0ad4cf-5e0f-8d05-b18c-de47528c2263` · diamond `49930854-b16f-85f1-a5db-6956c66501d2`
 horo `8` `crest` · trinity `1·1·1` · sealed `0`
 imports @/iso/19011 · exports function · escapes —
-links `4/4` · folded `1` · bonds in `5` out `7`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → audit·audit·balance·changes·hooks·law·law · ← audit·balance·changes·hooks·law
+neighbors → audit·balance·changes·law · ← audit·balance·changes·law
 analysis —
 law every write emits a canonical audit entry on two channels — a streaming log and a Merkle-chained durable row — and the source write is never blocked by an audit failure.
 
 ---
 
-<sub>content-uuid `d8131bfa-23a7-8ff6-b568-0ae24d80cd1c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9b028d2b-d115-883b-a661-7262dba752c9` · `pnpm readme` · `pnpm computed:check`</sub>

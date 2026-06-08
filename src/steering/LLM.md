@@ -3,15 +3,15 @@
 
 # steering
 
-path `steering` · uuid `7997291b-de3c-8e20-be00-78bda395974b` · diamond `1cda7ae1-5beb-8242-bd62-fde1ba79f10d`
+path `steering` · uuid `7997291b-de3c-8e20-be00-78bda395974b` · diamond `25a73bf2-47d3-8aaf-ae73-d25ac4f6dc6b`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·position·sti·value · exports steering · escapes —
-links `6/6` · folded `1` · bonds in `13` out `13`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → addressed·available·college·corrects·dietary·driving·grant·landmarks·list·memories·receipt·uk·urologic · ← addressed·available·college·corrects·dietary·driving·grant·landmarks·list·memories·receipt·uk·urologic
+neighbors → collapse·law·merge·position·sti·value · ← collapse·law·merge·position·sti·value
 analysis —
 law steering is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `f63332dd-3e6b-8209-9e68-cb580b764fda` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4a5ee093-205b-8661-b0fe-03aed6506c22` · `pnpm readme` · `pnpm computed:check`</sub>

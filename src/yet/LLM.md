@@ -3,15 +3,15 @@
 
 # yet
 
-path `yet` · uuid `f36d85ac-2151-8220-a1d3-28da2ca1b049` · diamond `825b23f8-1e75-8708-9b42-875cdb34a5ef`
+path `yet` · uuid `f36d85ac-2151-8220-a1d3-28da2ca1b049` · diamond `7a025f13-f3be-81f7-8681-ea5465f1e19f`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports yet · escapes —
-links `4/4` · folded `1` · bonds in `0` out `0`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law yet is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `59804a81-b223-8db3-bde2-3651d8a45838` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ca5d8ced-dfb7-85c1-baca-317329d5b83c` · `pnpm readme` · `pnpm computed:check`</sub>

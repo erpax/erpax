@@ -3,8 +3,8 @@
 
 # components
 
-path `components` · uuid `615edeff-717d-8305-9c39-4e445ace6e13` · diamond `e4a0d95b-d9f0-82e5-9126-457a9f0cae12`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `components` · uuid `df44f5d5-6bb7-8a2e-8cb2-db2edd618901` · diamond `5d6dd7ba-27ee-8570-b9bb-8b56736b4201`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports accessibility·admin·collapse·component·config·design·fractal·lexical·standard·theme·trinity · exports components · escapes —
 links `13/13` · folded `1` · bonds in `12` out `12`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `1fdf59ad-3434-851d-8dad-75790ba2cb3f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3a8d657c-d6d9-819e-b547-e212c0cc1460` · `pnpm readme` · `pnpm computed:check`</sub>

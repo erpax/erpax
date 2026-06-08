@@ -2,7 +2,7 @@
 
 # country
 
-> atom `country` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
+> atom `country` · horo `1` `base` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -17,13 +17,13 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `7` | Σ `7` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
 
 ## typography graph
 
-- partition `country` · sub-root `ff847416-c94d-8cbc-b684-32508188454e`
-- bond degree `56` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- partition `country` · sub-root `79127c52-f61b-8307-a4cd-7a0b45a6d1c3`
+- bond degree `0` · analysis neighbors —
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -40,6 +40,7 @@
 - `EU-2017/1132` · catalogue
 - `EU-2017/828` · catalogue
 - `EU-765/2008` · catalogue
+- `EU-Taxonomy-2020/852` · catalogue
 - `ISO-13616-1` · catalogue
 - `ISO-19005` · catalogue
 - `ISO-20022` · catalogue
@@ -59,24 +60,62 @@
 - `UN-CEFACT` · catalogue
 - `Unicode-CLDR` · catalogue
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unbalanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| not-held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·1 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `56` · sealed `1` · horo `4`
-- variance `0` · balanced `1` · trinity sum `1`
-- bindings `0` · standards `27`
+- bond degree `0` · sealed `0` · horo `1`
+- variance `1` · balanced `0` · trinity sum `1`
+- bindings `0` · standards `28`
 
 ## identity
 
-- uuid `24c78c98-2472-870d-a708-8b616c83dbea`
-- bonds in `16` · out `16`
+- uuid `611252a6-7a64-8bf2-8282-26fe595a603d`
+- bonds in `17` · out `17`
 - trinity form·code·proof `1`·`0`·`0`
 - links `9` / `9`
 - folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `aaed846e-e41b-8c73-b039-48adfb283638` · framed by typography partition `country` bonds `56` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `be27a19b-7273-8fb7-8860-8c5ac2e90644` · framed by typography partition `country` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

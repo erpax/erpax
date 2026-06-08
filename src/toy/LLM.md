@@ -3,15 +3,15 @@
 
 # toy
 
-path `toy` · uuid `14144490-67dd-8b99-a6ba-a3a9697e3f43` · diamond `4f37e5c7-3f46-8060-ae20-5cf33e9864fe`
+path `toy` · uuid `14144490-67dd-8b99-a6ba-a3a9697e3f43` · diamond `69e8a9f1-6965-8fbb-925c-30530e087404`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·store · exports toy · escapes —
-links `5/5` · folded `1` · bonds in `6` out `6`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·cohort·landmarks·memories·modification·stat · ← action·cohort·landmarks·memories·modification·stat
+neighbors → collapse·law·merge·sti·store · ← collapse·law·merge·sti·store
 analysis —
 law a toy is a play-good, identified by its kind alone, so it is the same atom whichever store offers it; the seller is context, never identity.
 
 ---
 
-<sub>content-uuid `fe23548c-5699-8e92-b871-be1fc9d166af` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1fe1f5e5-9661-8f4a-94f6-abfcace8d82b` · `pnpm readme` · `pnpm computed:check`</sub>

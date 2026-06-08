@@ -3,15 +3,15 @@
 
 # orders
 
-path `items/purchase/orders` · uuid `321e385f-eb0d-80a3-998d-dd6c4e018486` · diamond `ccdfd946-e57e-831b-8349-9f9dff66ed42`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+path `items/purchase/orders` · uuid `34b025bb-5eb3-8a5f-900b-b0e35c3684fd` · diamond `e89e2a94-712d-843f-adad-9f9368d6753f`
+horo `2` `share` · trinity `1·1·1` · sealed `0`
 imports @/audit/trail/after/change·@/auth·@/auto/populate/created/by·@/auto/populate/tenant·@/auto/set/timestamp·@/base/accounting/field·@/chain/event/emitter·@/enforce/segregation/of/duty · exports default · escapes —
-links `7/7` · folded `1` · bonds in `48` out `51`
+links `7/7` · folded `1` · bonds in `19` out `19`
 faces worker·plugin·pwa `1·0·0`
-neighbors → accounting·accounts·agriculture·allocation·assets·attribution·bundle·choice·commitments·contracts·conversion·customers·discount·duality·entries·entry·forecast·fractal·funnel·hooks·horo·inspections·invoices·items·law·law·law·law·materials·movements·orders·packs·party·pipeline·properties·quotes·receipts·refunds·requests·returns·routings·runs·share·shift·shifts·shipments·standard·territory·upsell·utility·variances · ← accounting·accounts·agriculture·allocation·assets·attribution·bundle·choice·commitments·contracts·conversion·customers·discount·duality·entries·entry·forecast·fractal·funnel·hooks·horo·inspections·invoices·items·law·materials·movements·orders·packs·party·pipeline·properties·quotes·receipts·refunds·requests·returns·routings·runs·share·shift·shifts·shipments·standard·territory·upsell·utility·variances
+neighbors → accounting·allocation·duality·fractal·hooks·horo·law·materials·orders·packs·party·receipts·routings·runs·shift·shifts·standard·utility·variances · ← accounting·allocation·duality·fractal·hooks·horo·law·materials·orders·packs·party·receipts·routings·runs·shift·shifts·standard·utility·variances
 analysis —
 law a purchase order is the vendor purchase commitment and first leg of the three-way match (PO → [[items/purchase/orders/goods/receipts|receipt]] → invoice), whose Incoterms FOB point gates the timing of GL posting (IFRS-15 §38-42).
 
 ---
 
-<sub>content-uuid `3288c552-5236-8bae-b655-879e54483b43` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9cb5ebb8-9d5d-8448-89ed-14de45e6a134` · `pnpm readme` · `pnpm computed:check`</sub>

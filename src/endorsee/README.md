@@ -23,7 +23,7 @@
 
 - partition `endorsee` · sub-root `535f1ef9-d12b-8097-b3da-136f90f8a470`
 - bond degree `6` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `5560037e-0173-8715-a036-e6803e2748b2` · framed by typography partition `endorsee` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `74c629a1-2895-87ad-817e-af9550362130` · framed by typography partition `endorsee` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>

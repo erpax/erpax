@@ -3,15 +3,15 @@
 
 # year
 
-path `year` · uuid `81d44386-fde6-8a7a-a784-2613a97031f4` · diamond `8416bf5a-ef1d-8131-bff4-807060b56bd8`
+path `year` · uuid `81d44386-fde6-8a7a-a784-2613a97031f4` · diamond `2a368319-0c9a-829f-ba00-f5b1f02711d2`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports built·collapse·copyright·law·merge·sti·terms · exports year · escapes —
-links `7/7` · folded `1` · bonds in `0` out `0`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
+neighbors → built·collapse·copyright·law·merge·sti·terms · ← built·collapse·copyright·law·merge·sti·terms
 analysis —
 law year is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `239b3777-90f1-8a1a-b9e3-a5510aee9609` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `479db605-fda6-892f-9509-f32be87e00c8` · `pnpm readme` · `pnpm computed:check`</sub>

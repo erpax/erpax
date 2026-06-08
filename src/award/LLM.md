@@ -3,7 +3,7 @@
 
 # award
 
-path `award` · uuid `09dcac1e-f891-82fe-88dc-9aece0aba2ea` · diamond `92764628-f18c-876b-91ab-77a74662a362`
+path `award` · uuid `0a6b62f2-4593-8f50-a2ec-fca105129c49` · diamond `d96154b3-2458-81ed-910e-c0e10a867f7f`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports award · escapes —
 links `2/2` · folded `1` · bonds in `2` out `2`
@@ -14,4 +14,4 @@ law award is one schema.org word, content-addressed; the same word collides ever
 
 ---
 
-<sub>content-uuid `4fd12bf3-8d02-88ec-b615-b069c6706e20` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b5315077-93b8-8fea-aa9a-6e8c8ce6ce07` · `pnpm readme` · `pnpm computed:check`</sub>

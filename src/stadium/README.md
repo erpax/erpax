@@ -23,7 +23,7 @@
 
 - partition `stadium` · sub-root `0c145004-3dc1-836e-986b-5f4ab95cc206`
 - bond degree `16` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `4357ee8d-5f24-8033-86ba-c84de3d4f599` · framed by typography partition `stadium` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `825af2c4-9f1b-8f7a-8784-424d7eda3a33` · framed by typography partition `stadium` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

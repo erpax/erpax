@@ -3,8 +3,8 @@
 
 # currencies
 
-path `currencies` · uuid `32cb9160-bc9d-8a86-8d77-e75ec2ccfaa0` · diamond `d62b194d-74ab-82b1-a760-721c8db13b59`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `currencies` · uuid `070e4252-3dc5-824c-9e18-acf8e700eec1` · diamond `811b10f6-ae0e-85ea-8506-2f8001eddef0`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports accepted·collapse·law·merge·sti · exports currencies · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law currencies is one schema.org word, content-addressed; the same word collides
 
 ---
 
-<sub>content-uuid `bcdfff06-078e-8ffb-91b2-7539d20c033b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `707d86bd-1e8c-8af6-8177-7d5d51326c22` · `pnpm readme` · `pnpm computed:check`</sub>

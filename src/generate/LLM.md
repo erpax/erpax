@@ -3,15 +3,15 @@
 
 # generate
 
-path `generate` · uuid `869a8d0b-90ba-8b19-8644-b49b26ff6f6f` · diamond `f71eb073-3703-8297-9e02-0af376ee9a8c`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `generate` · uuid `869a8d0b-90ba-8b19-8644-b49b26ff6f6f` · diamond `6a45e21c-52ca-80b6-87ab-af9f36b8b9ff`
+horo `1` `base` · trinity `1·0·0` · sealed `0`
 imports akashic·atom·aura·code·duality·fractal·generate·link·merge·one·part·port·recover·self·sequence·source·spec · exports generate · escapes —
-links `30/30` · folded `1` · bonds in `70` out `74`
+links `30/30` · folded `1` · bonds in `71` out `75`
 faces worker·plugin·pwa `1·0·0`
-neighbors → agent·akashic·akashic·allocation·atom·aura·aura·brainstorm·breath·chat·code·coil·collapse·command·compass·concatenate·contribution·derive·development·diamond·duality·element·fractal·fs·gate·generate·generate·generator·github·law·limit·link·matrix·mcp·memory·merge·merge·migrate·one·part·port·prayer·profane·propose·quantum·readme·recover·reference·religion·sacred·science·self·self·sequence·shamanism·shinto·skills·society·source·spec·stream·suffering·sync·test·thought·topography·torus·train·trinity·uuid·website·whole·wisdom·zeropoint · ← agent·akashic·allocation·atom·aura·brainstorm·breath·chat·code·coil·collapse·command·compass·concatenate·contribution·derive·development·diamond·duality·element·fractal·fs·gate·generate·generate·generator·github·law·limit·link·matrix·mcp·memory·merge·migrate·one·part·port·prayer·profane·propose·quantum·readme·recover·reference·religion·sacred·science·self·sequence·shamanism·shinto·skills·society·source·spec·stream·suffering·sync·test·thought·topography·torus·train·trinity·uuid·website·whole·wisdom·zeropoint
-analysis aura
+neighbors → agent·akashic·akashic·allocation·atom·aura·aura·brainstorm·breath·chat·code·coil·collapse·command·compass·concatenate·contribution·derive·development·diamond·duality·element·fractal·fs·gate·generate·generate·generator·github·law·limit·link·matrix·mcp·memory·merge·merge·migrate·one·part·port·prayer·profane·propose·quantum·readme·recover·reference·religion·sacred·science·self·self·sequence·session·shamanism·shinto·skills·society·source·spec·stream·suffering·sync·test·thought·topography·torus·train·trinity·uuid·website·whole·wisdom·zeropoint · ← agent·akashic·allocation·atom·aura·brainstorm·breath·chat·code·coil·collapse·command·compass·concatenate·contribution·derive·development·diamond·duality·element·fractal·fs·gate·generate·generate·generator·github·law·limit·link·matrix·mcp·memory·merge·migrate·one·part·port·prayer·profane·propose·quantum·readme·recover·reference·religion·sacred·science·self·sequence·session·shamanism·shinto·skills·society·source·spec·stream·suffering·sync·test·thought·topography·torus·train·trinity·uuid·website·whole·wisdom·zeropoint
+analysis —
 law —
 
 ---
 
-<sub>content-uuid `218ec7ba-e71a-820e-a649-6ea9740792d2` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4a6a7027-22d3-89c2-9b27-6232e9fe4e59` · `pnpm readme` · `pnpm computed:check`</sub>

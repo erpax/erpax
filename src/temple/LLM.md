@@ -3,15 +3,15 @@
 
 # temple
 
-path `temple` · uuid `1ae79732-06f6-8f33-9f59-2cc35fbcd827` · diamond `40659373-2eac-84d2-82ac-2a0217c458cf`
+path `temple` · uuid `1ae79732-06f6-8f33-9f59-2cc35fbcd827` · diamond `1e249b4c-c063-820e-972e-f43aeb93bc88`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports buddhist·collapse·hindu·law·merge·sti · exports temple · escapes —
-links `6/6` · folded `1` · bonds in `11` out `11`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → center·crisis·definition·donate·friction·illustrator·landmarks·lifestyle·percentage·sla·template · ← center·crisis·definition·donate·friction·illustrator·landmarks·lifestyle·percentage·sla·template
+neighbors → buddhist·collapse·hindu·law·merge·sti · ← buddhist·collapse·hindu·law·merge·sti
 analysis —
 law temple is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `e1ae34bc-a5e3-850d-a624-52e5ad2ded1b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a8c74d36-0872-8d97-81b4-89e7d5846350` · `pnpm readme` · `pnpm computed:check`</sub>

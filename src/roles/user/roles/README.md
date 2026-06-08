@@ -2,9 +2,11 @@
 
 # roles
 
-> atom `roles/user/roles` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
+> atom `roles/user/roles` · horo `7` `descent` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `roles/user/roles` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -19,26 +21,124 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
+
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:stray:[[gap]]/[[diamond]]/stray/hooks/`
+
+### collapse
+
+- `balance:variance=1`
+- `law:a user-role is the join that grants a [[users|user]] the capabilities and skill routes of one linked [[roles|role]]; the assignment is deduplicated by hook ([[access]]).`
+- `seal:unsealed`
+- `trigger:Use when assigning or revoking a role definition for a user — the HABTM join that grants a user the capabilities and skill routes of the linked role; duplicate assignments are prevented by hook. The NIST INCITS-359 role-assignment collection.`
+- `trigger:a user-role is the join that grants a [[users|user]] the capabilities and skill routes of one linked [[roles|role]]; the assignment is deduplicated by hook ([[access]]).`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `0adde418-6f3e-846c-9a6f-4923506053f2` · `2f0a3fc2-414d-838c-bc0b-8d0734115e03` · `4ce1da77-116b-860e-aa13-f1103e2f13a1`
+- content uuids `0a98d577-560e-8f40-9e52-75a6710a0f4c` · `c34fdbbb-7122-8b96-a45e-1a37210c29a0` · `d36dd096-67cc-8c4a-a515-e67f28545302`
+
+## [[entropy]] — gaps · seals
+
+> account code `roles/user/roles` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[diamond]]/stray/hooks/ `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.7` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+| Σ gap `2` eb | Σ seal `8.7` eb |
+
+> net residual `-6.7` eb · seal/gap ratio `4.35` · [[entropy]] · [[seal]]
 
 ## typography graph
 
-- partition `roles` · sub-root `6db0e54a-ab96-8a83-9e81-cb941b238d3d`
-- bond degree `33` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- partition `roles` · sub-root `b2bd58c3-f5dc-8794-8d31-5aa20a39c0fc`
+- bond degree `0` · analysis neighbors —
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `NIST INCITS-359-2012 role-based-access-control role-assignment` · banner
+- `SOC-2 CC6.3 access-removal` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unbalanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| not-held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·7 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `0` · sealed `0` · horo `7`
+- variance `1` · balanced `0` · trinity sum `3`
+- bindings `0` · standards `2`
 
 ## identity
 
-- uuid `ddd21d8e-a056-8b0c-922d-f903661d130f`
-- bonds in `9` · out `11`
+- uuid `8414414c-7a23-8a2b-b154-17403de703a4`
+- bonds in `8` · out `8`
 - trinity form·code·proof `1`·`1`·`1`
 - links `7` / `7`
 - folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `b391c3f0-46eb-8379-a1d4-9bdc3f583bf0` · framed by typography partition `roles` bonds `33` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `487d3e17-5672-8762-bf85-a7a6890b2360` · framed by typography partition `roles` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

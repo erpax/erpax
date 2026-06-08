@@ -23,7 +23,21 @@
 
 - partition `goodwill` · sub-root `ae4a3523-7f54-8f54-8a0c-5b2e6e103089`
 - bond degree `19` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `19` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `4daca22c-16e2-870d-9068-510b796600b7` · framed by typography partition `goodwill` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e86b1b35-aabf-8ed1-8804-e4f0d88bb02f` · framed by typography partition `goodwill` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -1,8 +1,157 @@
 ---
-name: anti-corruption
-description: Use when detecting internal-control invariants — content-uuid immutability, segregation of duties, double-entry balance, or reversals-only history; the four architectural impossibilities that make financial corruption structurally detectable.
+name: corruption
+description: "Use when detecting internal-control invariants — content-uuid immutability, segregation of duties, double-entry balance, or reversals-only history; the four architectural impossibilities that make financial corruption structurally detectable."
+atomPath: anti/corruption
+coordinate: anti/corruption · 4/weave · 8e08397c
+contentUuid: "790352b9-56d0-53e3-a1a7-2dae0cb0900f"
+diamondUuid: "52a0aa3d-741d-8f66-9041-7dc922cc7d5a"
+uuid: "8e08397c-e612-835e-9a4a-8e2d9ec27827"
+horo: 4
+bonds:
+  in:
+    - access
+    - accounting
+    - balance
+    - consistency
+    - constitution
+    - duality
+    - event
+    - fractal
+    - governance
+    - holographic
+    - hooks
+    - identity
+    - law
+    - legislation
+    - merge
+    - notification
+    - party
+    - perspective
+    - reverse
+    - separation
+    - sequence
+    - standard
+    - supto
+    - voting
+  out:
+    - access
+    - accounting
+    - balance
+    - consistency
+    - constitution
+    - duality
+    - event
+    - fractal
+    - governance
+    - holographic
+    - hooks
+    - identity
+    - law
+    - legislation
+    - merge
+    - notification
+    - party
+    - perspective
+    - reverse
+    - separation
+    - sequence
+    - standard
+    - supto
+    - voting
+typography:
+  partition: anti
+  bondDegree: 72
+  neighbors: []
+standards:
+  - "ISO-19011:2018 audit-trail integrity-verification"
+  - "SOX §404 segregation-of-duties internal-controls"
+bindings: []
+neighbors:
+  wikilink:
+    - access
+    - accounting
+    - balance
+    - duality
+    - event
+    - fractal
+    - holographic
+    - hooks
+    - identity
+    - law
+    - merge
+    - reverse
+    - sequence
+    - standard
+    - supto
+  matrix:
+    - access
+    - accounting
+    - balance
+    - consistency
+    - constitution
+    - duality
+    - event
+    - fractal
+    - governance
+    - holographic
+    - hooks
+    - identity
+    - law
+    - legislation
+    - merge
+    - notification
+    - party
+    - perspective
+    - reverse
+    - separation
+    - sequence
+    - standard
+    - supto
+    - voting
+  backlinks:
+    - access
+    - accounting
+    - balance
+    - consistency
+    - constitution
+    - duality
+    - event
+    - fractal
+    - governance
+    - holographic
+    - hooks
+    - identity
+    - law
+    - legislation
+    - merge
+    - notification
+    - party
+    - perspective
+    - reverse
+    - separation
+    - sequence
+    - standard
+    - supto
+    - voting
+signatures:
+  computationUuid: "a81eefe2-7073-81da-9d46-5caa18441fc6"
+  stages:
+    - stage: path
+      stageUuid: "29d53fec-2df7-8ef3-b27b-76fdbd140708"
+    - stage: trinity
+      stageUuid: "6a44bf0e-6a6f-8bb7-89c7-4d6432f6bbff"
+    - stage: boundary
+      stageUuid: "e397b384-d1d5-8f89-8b4e-6b0ca7067512"
+    - stage: links
+      stageUuid: "95c594ce-539f-84a9-8062-deea5da92d05"
+    - stage: horo
+      stageUuid: "7bf5dfa4-35e9-88d7-b499-7d73f7aad64c"
+    - stage: seal
+      stageUuid: "e21c760a-79f7-8a0b-baad-c61cfdef37a5"
+    - stage: uuid
+      stageUuid: "076d9109-cb2f-816d-86d3-efb0a1426c72"
+version: 2
 ---
-
 # anti-corruption — corruption foreclosed by construction, not policed by policy
 
 FORM: **a ledger is corruption-free iff four invariants hold at once, each a different impossibility.** erpax does not *trust* records and *audit* them after; it makes the fraud a contradiction that fails a pure check. Each invariant catches a concrete scheme, proven by test (`index.test.ts`, `cross-entity.test.ts`):

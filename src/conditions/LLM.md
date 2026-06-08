@@ -3,8 +3,8 @@
 
 # conditions
 
-path `conditions` · uuid `d038aebf-cc47-86ae-af92-996178d5f5c6` · diamond `0bf397e8-47a7-87f9-ba5d-0e0fd23d5445`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `conditions` · uuid `284aa1a3-44d8-8d74-af9a-3a58a8a02287` · diamond `01cb8f1e-1eb6-8858-818b-0b9ad04de085`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports access·collapse·law·merge·shipping·sti · exports conditions · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law conditions is one schema.org word, content-addressed; the same word collides
 
 ---
 
-<sub>content-uuid `f06c0da6-fe92-8fb0-83b9-e20d438ba3cd` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b8e3bcd2-0830-818a-9853-fa10e533e032` · `pnpm readme` · `pnpm computed:check`</sub>

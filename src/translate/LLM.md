@@ -3,15 +3,15 @@
 
 # translate
 
-path `translate` · uuid `a97d130d-2c54-89fb-b005-76b7264d10d6` · diamond `6104446c-de89-8b65-bc91-e3d058bd0403`
+path `translate` · uuid `a97d130d-2c54-89fb-b005-76b7264d10d6` · diamond `20749488-5e24-827c-a8ed-5f26702da151`
 horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports — · exports function·interface · escapes —
-links `26/26` · folded `1` · bonds in `10` out `10`
-faces worker·plugin·pwa `0·0·0`
-neighbors → awareness·diet·frame·guideline·landmarks·manufacturing·max·menu·originates·sandbox · ← awareness·diet·frame·guideline·landmarks·manufacturing·max·menu·originates·sandbox
+links `26/26` · folded `1` · bonds in `18` out `17`
+faces worker·plugin·pwa `1·0·0`
+neighbors → collection·cost·dashboard·gate·law·localize·merge·message·model·quantum·religion·tamper·translation·translations·translator·uuid·word · ← collection·cost·dashboard·gate·law·localize·merge·message·model·quantum·religion·tamper·translation·translations·translator·translator·uuid·word
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `bc165a7e-f9c9-8a7c-a767-36596ceca6ac` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e128dae3-0fee-8d30-89fa-047e685e29e7` · `pnpm readme` · `pnpm computed:check`</sub>

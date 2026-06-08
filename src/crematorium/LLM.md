@@ -3,8 +3,8 @@
 
 # crematorium
 
-path `crematorium` · uuid `52dd4081-c620-8412-93cc-7f1c5628f89f` · diamond `9da5e6a5-da40-8f03-913a-9f54681d3a7f`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `crematorium` · uuid `b8990c6a-60fd-8e78-a888-2aea0440d930` · diamond `a1c79c77-b37b-82c2-acdd-89ab28866ac3`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports law·place · exports crematorium · escapes —
 links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law crematorium is one schema.org word, content-addressed; the same word collide
 
 ---
 
-<sub>content-uuid `f85315e5-f037-8fc1-95c2-a9d610cd7f45` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `440c6b72-eee0-8598-a9a7-07425a04db08` · `pnpm readme` · `pnpm computed:check`</sub>

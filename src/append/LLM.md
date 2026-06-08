@@ -3,8 +3,8 @@
 
 # append
 
-path `append` · uuid `c3603232-b945-8c7b-8c5f-547497536600` · diamond `4bec774d-11f4-8d41-82cb-f73b79c3066d`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `append` · uuid `d59a1e4a-b30f-8e6f-8559-a11e1bc1dc9e` · diamond `a17f2a12-8cd9-83c7-9d18-461879617e48`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti · exports append · escapes —
 links `5/5` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law append is one schema.org word, content-addressed; the same word collides eve
 
 ---
 
-<sub>content-uuid `41d34963-ecb8-8b2b-83a1-c33ebf42e5a0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `bd69295d-085f-8a8d-8d9e-c0c653c19273` · `pnpm readme` · `pnpm computed:check`</sub>

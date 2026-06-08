@@ -3,15 +3,15 @@
 
 # warning
 
-path `warning` · uuid `3e84781b-c35d-8aba-b3e8-f5739437e91a` · diamond `bf0f774d-c9d6-894b-867c-09aa64f4fef2`
+path `warning` · uuid `3e84781b-c35d-8aba-b3e8-f5739437e91a` · diamond `6bfc1262-ade1-87c6-96b0-326498661354`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports alcohol·breastfeeding·food·law·pregnancy · exports warning · escapes —
-links `5/5` · folded `1` · bonds in `7` out `7`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·mobility·modified·pediatric·tillage·tissue·torque · ← landmarks·mobility·modified·pediatric·tillage·tissue·torque
+neighbors → alcohol·breastfeeding·food·law·pregnancy · ← alcohol·breastfeeding·food·law·pregnancy
 analysis —
 law warning is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `268eef41-9966-8d77-a72f-075384a06aec` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `871520a3-2744-81bf-9a25-d86aa3a858d1` · `pnpm readme` · `pnpm computed:check`</sub>

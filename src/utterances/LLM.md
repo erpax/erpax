@@ -3,15 +3,15 @@
 
 # utterances
 
-path `utterances` · uuid `2baf5bb1-5f58-8470-8759-b67aa1baa086` · diamond `d676af5a-01c8-8693-8908-0190ceb24bee`
+path `utterances` · uuid `2baf5bb1-5f58-8470-8759-b67aa1baa086` · diamond `fd244c39-96bc-886d-8144-51b61e0ef942`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports utterances · escapes —
-links `2/2` · folded `1` · bonds in `2` out `2`
+links `2/2` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → law·thing·utterance · ← law·thing·utterance
 analysis —
 law utterances is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `ec854cf6-f748-8f0a-948f-763ca4833a23` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4040df6e-5bec-8942-a98f-2fbe5e3f02da` · `pnpm readme` · `pnpm computed:check`</sub>

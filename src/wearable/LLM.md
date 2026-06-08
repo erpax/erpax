@@ -3,15 +3,15 @@
 
 # wearable
 
-path `wearable` · uuid `17041b2a-ccf3-8bb0-85f9-0be4e3597433` · diamond `30543ada-2ae9-88ba-b6df-2ffbd84feb27`
+path `wearable` · uuid `17041b2a-ccf3-8bb0-85f9-0be4e3597433` · diamond `61fc6ead-f947-8d00-a045-3eafe2c93eb7`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·enumeration·group·law·measurement·merge·size·sti·system·type · exports wearable · escapes —
-links `10/10` · folded `1` · bonds in `2` out `2`
+links `10/10` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → collapse·enumeration·group·law·measurement·merge·size·sti·system·type · ← collapse·enumeration·group·law·measurement·merge·size·sti·system·type
 analysis —
 law wearable is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `739fb110-d7f6-88d1-a03f-05b8c13f167c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `dfaea628-fef4-85a9-a9ba-70d24ce7689f` · `pnpm readme` · `pnpm computed:check`</sub>

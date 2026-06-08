@@ -4,7 +4,7 @@
 # entries
 
 path `journal/entries` · uuid `903df318-70a5-8608-9f3f-52170c6a3cd9` · diamond `e2778e28-a716-8fa8-9777-ce8bf179bdc8`
-horo `5` `round` · trinity `1·1·1` · sealed `1`
+horo `5` `round` · trinity `1·1·1` · sealed `0`
 imports @/audit/trail/after/change·@/auth·@/auto/populate/created/by·@/auto/populate/tenant·@/auto/set/timestamp·@/enforce/segregation/of/duty·@/fields·@/utility · exports default · escapes —
 links `6/6` · folded `1` · bonds in `37` out `40`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law every entry's debits equal its credits, creator never equals approver, and o
 
 ---
 
-<sub>content-uuid `1af322b4-b7e9-8f51-a97c-0cd2cd0b21be` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6166d1c6-96d3-8693-b9bc-cf70f24e3512` · `pnpm readme` · `pnpm computed:check`</sub>

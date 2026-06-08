@@ -3,8 +3,8 @@
 
 # complex
 
-path `complex` · uuid `95a1c89b-7814-8321-a35a-0c0b5beeb55a` · diamond `58b68c74-61ba-8bcb-9c31-e0cfeea101b6`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `complex` · uuid `197d5b26-1d37-89b2-b6a2-8021a7eb3013` · diamond `6877b2e9-03ab-8161-8d90-c4b2d341de01`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports apartment·collapse·law·merge·sti·tennis · exports complex · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law complex is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `13645e40-0ce0-8ed5-9d90-ab8716732997` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7d8572b6-f440-85e3-a52f-b0eeb644035e` · `pnpm readme` · `pnpm computed:check`</sub>

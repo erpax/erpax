@@ -3,8 +3,8 @@
 
 # categories
 
-path `categories` · uuid `0443cb23-daab-8d26-b186-9d128fb6e1d9` · diamond `91d3066d-cf12-8164-87b6-adef6429df84`
-horo `1` `base` · trinity `1·1·1` · sealed `1`
+path `categories` · uuid `54897dee-6e7f-8aa6-8f54-75d9ad1fa174` · diamond `b2ee1f33-2e95-829c-847e-4689b0d33607`
+horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports @/categories/hooks·@/ensure/unique/slug/within/tenant·@/i18n·@/membership/admin/mutate/access·@/tenant/scoped/read · exports const · escapes —
 links `1/1` · folded `1` · bonds in `1` out `1`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `8d8a6feb-e983-858a-be7e-d653394efecd` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d6cda512-7234-87fe-8f10-df6459a9dfc6` · `pnpm readme` · `pnpm computed:check`</sub>

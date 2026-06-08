@@ -23,7 +23,21 @@
 
 - partition `graft` · sub-root `087f3103-c86f-8f62-8b81-0d2da42fe9dc`
 - bond degree `27` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `27` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `e83591f6-fc40-84eb-8c29-4098ff5de70c` · framed by typography partition `graft` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `3c21d3ff-1386-87f7-b508-384596008686` · framed by typography partition `graft` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>

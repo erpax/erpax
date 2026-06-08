@@ -4,7 +4,7 @@
 # eu
 
 path `eu` · uuid `7a6e9dfd-0f49-8c3a-8b70-1d5a4f033789` · diamond `2b100d06-eb0b-88c7-a860-47117ed43c7b`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+horo `1` `base` · trinity `1·0·0` · sealed `0`
 imports collapse·efficiency·energy·enumeration·law·merge·sti · exports eu · escapes —
 links `7/7` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law eu is one schema.org word, content-addressed; the same word collides every s
 
 ---
 
-<sub>content-uuid `cc17259c-3d59-8898-9349-e02519da53f3` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `32a52da2-d4f8-8ac0-8c61-ccf3dfb3ccc4` · `pnpm readme` · `pnpm computed:check`</sub>

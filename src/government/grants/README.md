@@ -25,7 +25,31 @@
 
 - partition `government` · sub-root `ceb709d6-f303-8be1-a8b8-af4b1f24255f`
 - bond degree `22` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `EU CSRD ESRS 2 sbm-3 material-impacts (EU funds traceability)` · banner
+- `IFRS IAS-20 §12 §13 income-or-asset-presentation` · banner
+- `IFRS IAS-20 §17 §18 §28 §32 disclosure` · banner
+- `IFRS IAS-20 §39 disclosure-government-assistance` · banner
+- `IFRS IAS-20 §7 §8 §10 recognition` · banner
+- `ISO-19011:2018 audit-trail grant-evidence` · banner
+- `ISO-4217:2015 currency-codes` · banner
+- `ISO-8601-1:2019 date-time` · banner
+- `OECD BEPS Action 13 country-by-country (when grants ≥ threshold)` · banner
+- `US-GAAP ASC-832 government-assistance-disclosure` · banner
+- `US-GAAP ASC-958-605 contributions` · banner
+
+## analytics
+
+- bond degree `22` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `11`
 
 ## identity
 
@@ -41,4 +65,4 @@
 
 ---
 
-<sub>content-uuid `89020969-84e7-87df-a76b-e011ccac91db` · framed by typography partition `government` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `bf070191-9d7d-80ef-a2c9-8bbc9e5fd9f4` · framed by typography partition `government` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>

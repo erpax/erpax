@@ -3,8 +3,8 @@
 
 # desire
 
-path `desire` · uuid `1f65a340-6910-860d-940d-6f5825f0dd25` · diamond `4ff834d6-3174-899d-af2c-74336fa3d0e1`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `desire` · uuid `05235025-a40e-86c4-87d6-9b68f28b5123` · diamond `8624c92a-f460-8e53-a1a0-492ead6930c7`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports awareness·distribution·friction·habit·jobs·law·market·proof · exports desire · escapes —
 links `13/13` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law desire is the one [[market]] atom you cannot manufacture exogenously — you
 
 ---
 
-<sub>content-uuid `c36b5989-4d46-842c-91d1-bde0375337ba` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1bbc47bd-7294-861f-b46f-fb0c546f72d8` · `pnpm readme` · `pnpm computed:check`</sub>

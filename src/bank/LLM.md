@@ -3,8 +3,8 @@
 
 # bank
 
-path `bank` · uuid `b27d6c5c-978f-8d23-8f59-1cd44ddaf7ea` · diamond `d875467b-efca-899f-acc4-fa26d995560b`
-horo `2` `share` · trinity `1·0·0` · sealed `0`
+path `bank` · uuid `a5408513-546f-8676-ab4b-7a876339d2ac` · diamond `e87b6d15-3d12-84a8-866c-68f9ac7bc51e`
+horo `8` `crest` · trinity `1·0·0` · sealed `0`
 imports accounting·fields·identity·law·reconcile·transaction · exports bank · escapes —
 links `7/7` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law `bank` is the financial-institution context a [[transaction]] or account ref
 
 ---
 
-<sub>content-uuid `a23dd0c0-d9ad-81da-9821-99081d4d5d4e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `12e50add-ae1a-80b9-a8e7-a69b38548b2e` · `pnpm readme` · `pnpm computed:check`</sub>

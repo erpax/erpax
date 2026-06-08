@@ -3,8 +3,8 @@
 
 # signatures
 
-path `customers/contracts/contract/signatures` · uuid `121a7f05-72a8-8327-8b79-e08e71620c97` · diamond `108de99b-187a-8f27-bc06-05f8178f04ed`
-horo `4` `weave` · trinity `1·1·1` · sealed `1`
+path `customers/contracts/contract/signatures` · uuid `c370de75-cd3c-82ed-9083-126ea94f20aa` · diamond `93cfbad7-a0a6-85b9-8146-e83a4474349a`
+horo `2` `share` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/enforce/segregation/of/duty·@/standard/collection/hook · exports default · escapes —
 links `5/5` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law parties sign in the required sequence and each signature record is immutable
 
 ---
 
-<sub>content-uuid `21c0f3c4-dbf1-8d99-83fd-98044b1a4b30` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `139633b1-eaa8-8245-b8ad-2fbb9c347408` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,8 +3,8 @@
 
 # deregistered
 
-path `deregistered` · uuid `3b83225e-4f54-8640-8e3b-ea7f7fa1f7d4` · diamond `07e238b6-9947-8e1c-b0a1-e658fc8f72db`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `deregistered` · uuid `aed3e11b-7852-83dc-9a23-38e705f19de3` · diamond `15d3e8eb-09dd-8931-8ca1-40eea065a002`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports deregistered · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law deregistered is one schema.org word, content-addressed; the same word collid
 
 ---
 
-<sub>content-uuid `d79594e8-45d5-82f7-9237-4c0f06629c25` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ce1036a0-a8eb-82bc-8351-b79d4e7228b5` · `pnpm readme` · `pnpm computed:check`</sub>

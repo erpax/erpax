@@ -19,6 +19,7 @@ import { uuidNamesPlugin } from '@/plugins/naming'
 import { collapseApiKeyScopes } from '@/plugins/mcp/scopes'
 import { versionsPlugin } from '@/plugins/versions'
 import { skillRouterPlugin } from './skill/router/plugin'
+import { adminUiPlugin } from '@/plugins/admin-ui'
 // Accounting plugin removed: all collections now flat in src/collections/
 import { getTenantFromCookie } from '@payloadcms/plugin-multi-tenant/utilities'
 import { translations as multiTenantTranslations } from '@payloadcms/plugin-multi-tenant/translations/languages/all'
@@ -464,6 +465,8 @@ export default buildConfig({
     // the fallback of all. A routeless /api path resolves against the skill
     // corpus + serves the requested format. See src/services/skill-router.
     skillRouterPlugin(),
+    // Payload admin UI — corpus cells, entropy dashboard, computed nav (last: sees full config).
+    adminUiPlugin(),
   ],
   secret: payloadSecret || 'INSECURE_BUILD_ONLY_PLACEHOLDER',
   typescript: {

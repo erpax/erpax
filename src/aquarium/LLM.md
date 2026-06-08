@@ -3,8 +3,8 @@
 
 # aquarium
 
-path `aquarium` · uuid `e4297e53-a243-8152-a26b-f8929566ef20` · diamond `d7b60595-ed26-8b74-bb54-7967d0b78752`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `aquarium` · uuid `11769595-6b79-8ade-8f16-fcaaab7eac6c` · diamond `5cf5648a-0196-8036-bc5d-bd20c5b8873f`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports law·place·thing · exports aquarium · escapes —
 links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law aquarium is one schema.org word, content-addressed; the same word collides e
 
 ---
 
-<sub>content-uuid `c484eb8d-da05-81e9-81e8-b726406d266e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `aa191098-3d70-8f9c-88fa-d2abfc765d84` · `pnpm readme` · `pnpm computed:check`</sub>

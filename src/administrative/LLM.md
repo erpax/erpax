@@ -3,8 +3,8 @@
 
 # administrative
 
-path `administrative` · uuid `25dfe206-e6c7-8bed-8f54-16c439892e28` · diamond `ded4d4e5-e919-83ea-b9fc-11150b4f7f94`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `administrative` · uuid `78081980-4e59-85ab-8611-d7a58ab056c7` · diamond `20de7762-8602-88c5-9db5-6ef4ed10f6b0`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports area·collapse·law·merge·sti · exports administrative · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law administrative is one schema.org word, content-addressed; the same word coll
 
 ---
 
-<sub>content-uuid `1dabdf8e-cd1c-8d01-9130-2afcf6a505a4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1ccd0940-4e30-8ea7-9689-d34c11f02890` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -4,7 +4,7 @@
 # email
 
 path `email` · uuid `92d28840-d260-8e3b-83f6-7f8b7795e559` · diamond `14dfb06d-d718-8d4d-805e-499e29fe4ab1`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+horo `1` `base` · trinity `1·0·0` · sealed `0`
 imports law·message · exports email · escapes —
 links `2/2` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law email is one schema.org word, content-addressed; the same word collides ever
 
 ---
 
-<sub>content-uuid `1e20b295-02d8-853c-bedc-2cb1171b66a6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `87d4cb87-d253-82af-9a76-bec54223a8d2` · `pnpm readme` · `pnpm computed:check`</sub>

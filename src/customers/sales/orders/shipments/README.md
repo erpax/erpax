@@ -2,9 +2,11 @@
 
 # shipments
 
-> atom `customers/sales/orders/shipments` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
+> atom `customers/sales/orders/shipments` · horo `8` `crest` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `customers/sales/orders/shipments` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -19,13 +21,59 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `2` · [[conservation]] `0` · [[entry]] · [[purity]]
+
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:stray:[[gap]]/[[diamond]]/stray/customs/`
+- `gap:stray:[[gap]]/[[diamond]]/stray/tracking/`
+
+### collapse
+
+- `balance:variance=2`
+- `law:a shipment dispatches only goods owed by its sales order, advances state monotonically picked→packed→shipped→delivered, and cannot be delivered before it is shipped.`
+- `seal:unsealed`
+- `trigger:Use when dispatching goods against a sales order — recording carrier, tracking number and URL, line items shipped, ship-from/to addresses, and progressing through picked → packed → shipped → delivered states. The fulfillment and carrier-tracking collection per EN-16931 §BG-13.`
+- `trigger:a shipment dispatches only goods owed by its sales order, advances state monotonically picked→packed→shipped→delivered, and cannot be delivered before it is shipped.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `2f17f3f1-c924-8d9e-b9ff-b0de0657934a` · `32cd71c4-0bd2-88f5-a12c-c29613d9b223` · `824bc5b7-76ff-8037-9078-992d6813ed5a` · `a2acfc59-b276-8a9b-a002-5ab8ffa39413`
+- content uuids `02cd765c-cbb1-8f3e-ae35-e246327a2b86` · `67b23880-4df8-81e3-8074-1c5c66b08e22` · `86307b11-4c7f-839f-ba70-08c0a1e5a105` · `d136e6c7-e9c6-83ff-b0e6-915c3d76a5e2`
+
+## [[entropy]] — gaps · seals
+
+> account code `customers/sales/orders/shipments` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[diamond]]/stray/customs/ `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[diamond]]/stray/tracking/ `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.8` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+| Σ gap `3` eb | Σ seal `8.8` eb |
+
+> net residual `-5.8` eb · seal/gap ratio `2.933` · [[entropy]] · [[seal]]
 
 ## typography graph
 
-- partition `customers` · sub-root `85792e9b-a9f4-8af5-a801-0895f2af65cf`
-- bond degree `26` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- partition `customers` · sub-root `83c78df0-4d66-80df-ab25-5ba350869cf1`
+- bond degree `0` · analysis neighbors —
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
 
 ## [[cloudflare]] bindings
 
@@ -40,22 +88,59 @@
 - `EU-2017/828` · catalogue
 - `EU-UCC` · catalogue
 - `INCOTERMS-2020` · catalogue
-- `ISO-19011:2018 audit-trail fulfillment-evidence` · banner
 - `ISO-3166-1:2020 country-codes ship-from ship-to` · banner
 - `ISO-8601-1:2019 date-time shipped-at delivered-at` · banner
 - `ISO-9735` · catalogue
 - `SOX §404 internal-controls dispatch-controls` · banner
 - `WCO-HS` · catalogue
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unbalanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| not-held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·8 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `26` · sealed `1` · horo `4`
-- variance `0` · balanced `1` · trinity sum `3`
-- bindings `0` · standards `13`
+- bond degree `0` · sealed `0` · horo `8`
+- variance `2` · balanced `0` · trinity sum `3`
+- bindings `0` · standards `12`
 
 ## identity
 
-- uuid `4b6ed12f-52f7-8a2b-9d26-8db10cad27f0`
+- uuid `f19a48fb-fd95-8e92-a3ea-e09d79af0d10`
 - bonds in `8` · out `8`
 - trinity form·code·proof `1`·`1`·`1`
 - links `5` / `5`
@@ -63,8 +148,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `791493af-5da2-8dbe-9275-4577e6481fc9` · framed by typography partition `customers` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ce1a9faa-6380-8ffd-89cf-1e6af270e793` · framed by typography partition `customers` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

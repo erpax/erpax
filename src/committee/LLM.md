@@ -3,8 +3,8 @@
 
 # committee
 
-path `committee` · uuid `15f29314-86b9-8c61-b835-d306b1cb2a84` · diamond `2635f4cb-cd93-8907-87eb-bc43d84ce8b5`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `committee` · uuid `2109e484-b4ca-8699-9fcc-ca8cceae1cfb` · diamond `debd6576-2da5-815c-af00-6cc66bb2b620`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports balance·committees·governance·law · exports committee · escapes —
 links `8/8` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law one committee is the singular model of exactly one committees row — a cons
 
 ---
 
-<sub>content-uuid `dfc5925d-7ab7-87dd-b7c5-f0bcd5f9eba8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f8949a8e-b0ab-89db-8765-abd47ca4d1cb` · `pnpm readme` · `pnpm computed:check`</sub>

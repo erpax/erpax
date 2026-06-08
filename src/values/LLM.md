@@ -3,15 +3,15 @@
 
 # values
 
-path `values` · uuid `5eea38a9-60d1-83c0-8042-8c7874617749` · diamond `d591d93a-af44-837e-b971-e64a88170512`
+path `values` · uuid `5eea38a9-60d1-83c0-8042-8c7874617749` · diamond `10701d09-996c-8f66-97d9-8540ed37448c`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·multiple·sti · exports values · escapes —
-links `5/5` · folded `1` · bonds in `9` out `9`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·declarations·landmarks·maybe·memories·note·pasture·stat·unsid · ← cohort·declarations·landmarks·maybe·memories·note·pasture·stat·unsid
+neighbors → collapse·law·merge·multiple·sti · ← collapse·law·merge·multiple·sti
 analysis —
 law values is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `6f04c9c4-f77d-8926-b53d-47f0f5f66807` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `43434dff-7585-8769-b7ad-03b555372df9` · `pnpm readme` · `pnpm computed:check`</sub>

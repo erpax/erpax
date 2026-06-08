@@ -25,7 +25,23 @@
 
 - partition `lung` · sub-root `ea8311c2-903c-847e-a86d-f21fa4698bbb`
 - bond degree `30` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `computed from first principles (Fick's law · dichotomous branching · conservation)` · banner
+- `West,` · banner
+- `West, Respiratory Physiology (Fick's law) · Weibel, the 23-generation lung tree` · banner
+
+## analytics
+
+- bond degree `30` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `3`
 
 ## identity
 
@@ -41,4 +57,4 @@
 
 ---
 
-<sub>content-uuid `fc944c2d-0a5d-825a-a3bf-61f824376150` · framed by typography partition `lung` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `791d117c-2ee2-8ce2-abe1-68fd6b1d1e52` · framed by typography partition `lung` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>

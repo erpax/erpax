@@ -3,15 +3,15 @@
 
 # requests
 
-path `data/subject/requests` · uuid `b4a902f2-885d-8c4e-bf89-5308d5f2348a` · diamond `370e2205-3a2f-8035-809c-c57e8005b382`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+path `data/subject/requests` · uuid `5e312305-07d3-8245-9597-7228bc4dc0a2` · diamond `360ac082-50df-8f57-a04e-a145f56b7400`
+horo `5` `round` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/auto/set/timestamp·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
-links `4/4` · folded `1` · bonds in `16` out `20`
+links `4/4` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·accounting·assets·employees·identity·identity·law·law·orders·proof·proof·properties·request·resources·shred·spaces·standard·standard·transaction·users · ← access·accounting·assets·employees·identity·law·orders·proof·properties·request·resources·shred·spaces·standard·transaction·users
+neighbors → assets·law·orders·properties·request·resources·spaces·users · ← assets·law·orders·properties·request·resources·spaces·users
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `8047200c-6d48-8b5f-9f2b-434730fe492e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `30e641b4-5339-86b5-9abc-9a132ae7942a` · `pnpm readme` · `pnpm computed:check`</sub>

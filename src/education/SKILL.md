@@ -1,8 +1,188 @@
 ---
 name: education
-description: Use when managing educational institutions — student enrollment, curriculum delivery, academic assessment, teaching schedules, institutional capacity, or education program outcomes in government/nonprofit schools (COFOG 09).
+description: "Use when managing educational institutions — student enrollment, curriculum delivery, academic assessment, teaching schedules, institutional capacity, or education program outcomes in government/nonprofit schools (COFOG 09)."
+atomPath: education
+coordinate: education · 8/crest · 2fe4321e
+contentUuid: "43474fd2-40eb-5964-91f5-d4f1de9176c0"
+diamondUuid: "4f40fc01-d79a-898c-b516-1621826f9105"
+uuid: "2fe4321e-f5dc-8d7d-912a-a388684218b5"
+horo: 8
+bonds:
+  in:
+    - access
+    - accounting
+    - akashic
+    - classroom
+    - close
+    - collections
+    - commerce
+    - competencies
+    - competition
+    - derive
+    - duality
+    - experience
+    - fields
+    - flow
+    - fractal
+    - holographic
+    - hooks
+    - identity
+    - law
+    - logic
+    - merge
+    - open
+    - peace
+    - place
+    - self
+    - sequence
+    - standard
+    - train
+    - training
+    - versions
+  out:
+    - access
+    - accounting
+    - akashic
+    - classroom
+    - close
+    - collections
+    - commerce
+    - competencies
+    - competition
+    - derive
+    - duality
+    - experience
+    - fields
+    - flow
+    - fractal
+    - holographic
+    - hooks
+    - identity
+    - law
+    - logic
+    - merge
+    - open
+    - peace
+    - place
+    - self
+    - sequence
+    - standard
+    - train
+    - training
+    - versions
+typography:
+  partition: education
+  bondDegree: 92
+  neighbors: []
+standards: []
+bindings: []
+neighbors:
+  wikilink:
+    - access
+    - accounting
+    - akashic
+    - close
+    - collections
+    - commerce
+    - competition
+    - duality
+    - fields
+    - flow
+    - fractal
+    - holographic
+    - hooks
+    - identity
+    - law
+    - logic
+    - merge
+    - open
+    - peace
+    - self
+    - sequence
+    - standard
+    - train
+    - versions
+  matrix:
+    - access
+    - accounting
+    - akashic
+    - classroom
+    - close
+    - collections
+    - commerce
+    - competencies
+    - competition
+    - derive
+    - duality
+    - experience
+    - fields
+    - flow
+    - fractal
+    - holographic
+    - hooks
+    - identity
+    - law
+    - logic
+    - merge
+    - open
+    - peace
+    - place
+    - self
+    - sequence
+    - standard
+    - train
+    - training
+    - versions
+  backlinks:
+    - access
+    - accounting
+    - akashic
+    - classroom
+    - close
+    - collections
+    - commerce
+    - competencies
+    - competition
+    - derive
+    - duality
+    - experience
+    - fields
+    - flow
+    - fractal
+    - holographic
+    - hooks
+    - identity
+    - law
+    - logic
+    - merge
+    - open
+    - peace
+    - place
+    - self
+    - sequence
+    - standard
+    - train
+    - training
+    - versions
+signatures:
+  computationUuid: "fe18946a-2f7f-8dac-a7da-f3c0528a8d80"
+  stages:
+    - stage: path
+      stageUuid: "d1e9c3fd-f4ef-87b8-aedf-0c42b783dcdf"
+    - stage: trinity
+      stageUuid: "8e17fa68-06af-8038-886d-d8c74f9f716c"
+    - stage: boundary
+      stageUuid: "0a2881ee-0f63-8792-9c25-70af516fed2a"
+    - stage: links
+      stageUuid: "5e54324a-8b78-8f9c-847d-4443e0735b5e"
+    - stage: horo
+      stageUuid: "608255f0-7bc6-827d-a007-43825d927abb"
+    - stage: seal
+      stageUuid: "8cf84d1b-e3de-8572-9939-9546df23c940"
+    - stage: uuid
+      stageUuid: "b9ae6dca-e6b2-8af3-8cf9-eda3000a920a"
+version: 2
 ---
-
 # education — the learning-delivery sector (COFOG 09)
 
 The societal Education sector (COFOG **09**): institutions deliver a **curriculum** to **students** through **teaching capacity**, then **assess** the result. The same exchange [[duality]] every erpax sector holds — here the flow is **give → take** inverted: the institution *gives* instruction, the student *takes* enrollment and *gives* back assessment; the equilibrium is the **outcome** (a graded, certified attainment). Self-sufficient: references entities **OUT polymorphically** (a course *is accountable*, a tuition charge *is a transaction*; it never holds a GL account inward — see [[accounting]]).

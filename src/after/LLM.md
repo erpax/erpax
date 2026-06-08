@@ -3,8 +3,8 @@
 
 # after
 
-path `after` · uuid `44cf8029-4a6a-89af-ad1e-08d95b8e015c` · diamond `b4c13be1-8827-8042-b1b8-6c8b4824276d`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `after` · uuid `a395bc2a-1e3f-867d-bf78-a158e41a0ede` · diamond `d65ac170-a261-82e2-a53d-e928053f43e1`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·media·merge·sti · exports after · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law after is one schema.org word, content-addressed; the same word collides ever
 
 ---
 
-<sub>content-uuid `12eb7ea2-79ea-8726-918a-fad1e9026159` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f5c8464d-edc7-8dbe-993d-a57dab6b1d7c` · `pnpm readme` · `pnpm computed:check`</sub>

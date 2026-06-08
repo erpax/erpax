@@ -3,15 +3,15 @@
 
 # varies
 
-path `varies` · uuid `582ba01a-9156-8326-804a-0eb6eaa00550` · diamond `cf5ec041-212e-8d5d-a840-fecd99bea79e`
+path `varies` · uuid `582ba01a-9156-8326-804a-0eb6eaa00550` · diamond `22fb3ad8-713f-8225-96e9-b6fdbed0eb88`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports varies · escapes —
-links `2/2` · folded `1` · bonds in `12` out `12`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → clinical·closing·forecast·founders·fungus·funnel·landmarks·log·num·pwa·sender·siblings · ← clinical·closing·forecast·founders·fungus·funnel·landmarks·log·num·pwa·sender·siblings
+neighbors → law·thing · ← law·thing
 analysis —
 law varies is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `77ba7a6e-8a9b-8521-ad58-c93218ad08ce` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c81bb61b-6017-8c2d-8858-01d57d6a1b11` · `pnpm readme` · `pnpm computed:check`</sub>

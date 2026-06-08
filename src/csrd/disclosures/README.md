@@ -2,7 +2,7 @@
 
 # disclosures
 
-> atom `csrd/disclosures` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
+> atom `csrd/disclosures` · horo `8` `crest` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -23,9 +23,9 @@
 
 ## typography graph
 
-- partition `csrd` · sub-root `40c2bb44-c647-8885-bfb2-0098df4e897d`
+- partition `csrd` · sub-root `c2cd60d3-840b-81e4-aea8-98953dcfd8ee`
 - bond degree `19` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -61,15 +61,53 @@
 - `OECD GRI Standards` · banner
 - `XBRL` · catalogue
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·8 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `19` · sealed `1` · horo `5`
+- bond degree `19` · sealed `0` · horo `8`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `27`
 
 ## identity
 
-- uuid `40c2bb44-c647-8885-bfb2-0098df4e897d`
+- uuid `c2cd60d3-840b-81e4-aea8-98953dcfd8ee`
 - bonds in `6` · out `6`
 - trinity form·code·proof `1`·`1`·`1`
 - links `6` / `6`
@@ -77,8 +115,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `b6c02ac9-93f5-82d1-9cae-94753b461b8e` · framed by typography partition `csrd` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a34742a1-70a1-8bc9-a0e3-f693db60d656` · framed by typography partition `csrd` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>

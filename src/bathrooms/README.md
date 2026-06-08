@@ -2,7 +2,7 @@
 
 # bathrooms
 
-> atom `bathrooms` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `bathrooms` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -21,9 +21,9 @@
 
 ## typography graph
 
-- partition `bathrooms` · sub-root `d140a039-836d-812f-b2bc-e678680dcec3`
+- partition `bathrooms` · sub-root `d7c72558-7de0-885b-a97c-503969f7e372`
 - bond degree `26` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- graph root `1cef4f02-a3fa-83a5-8ea0-120b724ef456`
 
 ## [[cloudflare]] bindings
 
@@ -33,15 +33,53 @@
 
 - `schema.org — the type vocabulary, collided to single words` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·1 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `26` · sealed `1` · horo `7`
+- bond degree `26` · sealed `1` · horo `1`
 - variance `0` · balanced `1` · trinity sum `1`
 - bindings `0` · standards `1`
 
 ## identity
 
-- uuid `d140a039-836d-812f-b2bc-e678680dcec3`
+- uuid `d7c72558-7de0-885b-a97c-503969f7e372`
 - bonds in `8` · out `8`
 - trinity form·code·proof `1`·`0`·`0`
 - links `8` / `8`
@@ -53,4 +91,4 @@
 
 ---
 
-<sub>content-uuid `f2ac367f-d979-87aa-9237-ac04067ab974` · framed by typography partition `bathrooms` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b588e126-fb78-8294-bf68-3e4269695243` · framed by typography partition `bathrooms` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>

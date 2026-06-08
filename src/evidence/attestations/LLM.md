@@ -4,7 +4,7 @@
 # attestations
 
 path `evidence/attestations` · uuid `41df4da4-b584-8bc5-a224-58ac52b31486` · diamond `7ce6b6ac-c5bc-8668-8047-695b66383a03`
-horo `5` `round` · trinity `1·1·1` · sealed `1`
+horo `5` `round` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
 links `7/7` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law one durable index row per SOX §404 attestation — a PDF/A cover sheet per 
 
 ---
 
-<sub>content-uuid `a91f7582-23a1-8569-9a99-43082dabbe34` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `879afd5d-db03-8cd9-9943-2fc99e09aede` · `pnpm readme` · `pnpm computed:check`</sub>

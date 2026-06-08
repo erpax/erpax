@@ -3,8 +3,8 @@
 
 # changes
 
-path `changes` · uuid `d8c0c1dd-5cc7-88bc-ac4d-384b1738fdc2` · diamond `4009d030-c6b5-84f7-84c8-47a2b214d489`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `changes` · uuid `10cbfbc5-8b54-8771-918c-5c7e7397ce96` · diamond `3d344096-3b97-85bd-84cf-46a722b38bab`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·legislation·merge·sti · exports changes · escapes —
 links `5/5` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law changes is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `2a426d04-c865-8a54-b2af-827af7f60741` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c0127bc5-396e-87f4-b535-810bacf803f6` · `pnpm readme` · `pnpm computed:check`</sub>

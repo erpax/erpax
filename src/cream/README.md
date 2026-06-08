@@ -2,7 +2,7 @@
 
 # cream
 
-> atom `cream` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
+> atom `cream` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -21,9 +21,9 @@
 
 ## typography graph
 
-- partition `cream` · sub-root `d61b57eb-a301-83e1-95e4-e3a5cc3a5504`
+- partition `cream` · sub-root `2cd661a3-0b3f-8d14-bf1d-1fdfb7ac695f`
 - bond degree `20` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -33,15 +33,53 @@
 
 - `schema.org — the type vocabulary, collided to single words` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·1 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `20` · sealed `1` · horo `2`
+- bond degree `20` · sealed `1` · horo `1`
 - variance `0` · balanced `1` · trinity sum `1`
 - bindings `0` · standards `1`
 
 ## identity
 
-- uuid `d61b57eb-a301-83e1-95e4-e3a5cc3a5504`
+- uuid `2cd661a3-0b3f-8d14-bf1d-1fdfb7ac695f`
 - bonds in `6` · out `6`
 - trinity form·code·proof `1`·`0`·`0`
 - links `6` / `6`
@@ -53,4 +91,4 @@
 
 ---
 
-<sub>content-uuid `49c78677-714a-8ae2-b453-f3b893f28088` · framed by typography partition `cream` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `292b3666-1b58-8631-8e91-4a838b97846a` · framed by typography partition `cream` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,8 +3,8 @@
 
 # requisitions
 
-path `cost/centers/purchase/requisitions` · uuid `e6e0263e-ef94-83c5-b904-9c3864bb3232` · diamond `a62966af-7696-8649-ab99-99611493486a`
-horo `5` `round` · trinity `1·1·1` · sealed `1`
+path `cost/centers/purchase/requisitions` · uuid `ebc72cfb-d865-870e-95e8-c50d07f230b3` · diamond `111f1179-be22-8851-8017-4a6f7a4603d5`
+horo `1` `base` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/chain/event/emitter·@/standard/collection/hook · exports default · escapes —
 links `7/7` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law a requisition is the pre-PO approval gate — requisitioner ≠ approver (SO
 
 ---
 
-<sub>content-uuid `71ab91fa-78d1-8baf-9a6f-942adc49cb93` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `495762eb-3fa8-877f-a5eb-bd382f482397` · `pnpm readme` · `pnpm computed:check`</sub>

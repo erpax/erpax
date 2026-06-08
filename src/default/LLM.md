@@ -3,8 +3,8 @@
 
 # default
 
-path `default` · uuid `a58f5bc3-b73e-8d88-bd53-1d143a39d2e0` · diamond `14719097-9736-8231-ba60-181ec5c66282`
-horo `1` `base` · trinity `1·1·1` · sealed `1`
+path `default` · uuid `4571afd1-034a-8ae4-9083-c9782058b045` · diamond `b3a36ae5-c472-8381-9cea-ae5a16cbeaf8`
+horo `4` `weave` · trinity `1·1·1` · sealed `0`
 imports @/digit·@/name · exports const·function · escapes —
 links `10/10` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law nothing defines a default — the default is by architecture. A defined defa
 
 ---
 
-<sub>content-uuid `03b3e97f-2e8e-804a-a2ae-740007fa80d6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `16d90c54-c7ef-86e9-91e3-66d60d1ad5b9` · `pnpm readme` · `pnpm computed:check`</sub>

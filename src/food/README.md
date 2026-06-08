@@ -23,7 +23,21 @@
 
 - partition `food` · sub-root `ac78eae9-997d-8af7-92ea-3e431fce67b2`
 - bond degree `39` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `39` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `1c2704c8-9f9f-88dd-8ea5-7ef563f0c535` · framed by typography partition `food` bonds `39` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f25dc46d-d893-8c3f-b93a-1f5d21064686` · framed by typography partition `food` bonds `39` · `pnpm readme` · `pnpm readme:check`</sub>

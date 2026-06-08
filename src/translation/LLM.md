@@ -3,15 +3,15 @@
 
 # translation
 
-path `translation` · uuid `7007c635-5c95-8874-ae3d-063ade5c22d2` · diamond `30359492-0716-82c9-a39e-8f9ae230a5d5`
+path `translation` · uuid `7007c635-5c95-8874-ae3d-063ade5c22d2` · diamond `e5037215-b5de-8ef8-9f31-11e1d1ea1998`
 horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports @/i18n/localization·@/message · exports TranslationTable·function·interface · escapes —
-links `8/8` · folded `1` · bonds in `6` out `6`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·dermatology·landmarks·measurement·memories·stat · ← cohort·dermatology·landmarks·measurement·memories·stat
+links `8/8` · folded `1` · bonds in `14` out `14`
+faces worker·plugin·pwa `1·0·0`
+neighbors → catalogue·collapse·collect·law·literature·localize·merge·message·topography·translate·translations·translator·word·work · ← catalogue·collapse·collect·law·literature·localize·merge·message·topography·translate·translations·translator·word·work
 analysis —
 law translation is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `27fef589-53f0-8066-a777-3c0bb6d59d8e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `be5588a2-fae2-8bf6-97ed-32f61ba87461` · `pnpm readme` · `pnpm computed:check`</sub>

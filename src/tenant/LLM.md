@@ -3,15 +3,15 @@
 
 # tenant
 
-path `tenant` · uuid `9c6b3124-60eb-81cd-9fe5-e5b776688568` · diamond `19942e6d-5524-8623-8cf8-6f5205f18726`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+path `tenant` · uuid `1a876b1c-4264-8aea-9978-f539bcc9d5da` · diamond `ed7b2fee-7e0d-8da5-b9cb-b57acf53fe84`
+horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports — · exports tenantIdFromRelation · escapes —
-links `7/7` · folded `1` · bonds in `14` out `14`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cap·command·creator·differential·djmix·email·landmarks·map·num·perspective·program·spacing·uk·urologic · ← cap·command·creator·differential·djmix·email·landmarks·map·num·perspective·program·spacing·uk·urologic
-analysis diamond·hallucination·purity
+links `7/7` · folded `1` · bonds in `12` out `14`
+faces worker·plugin·pwa `1·0·0`
+neighbors → access·auto·balance·hooks·law·law·law·organization·research·scope·tenant·tenant·tenants·user · ← access·auto·balance·hooks·law·organization·research·scope·tenant·tenant·tenants·user
+analysis —
 law a tenant is one isolated organization, so its rows are visible only within its own boundary; data from one tenant can never leak into another's scope.
 
 ---
 
-<sub>content-uuid `f8f5454f-727a-81af-9f09-12a610c6c2c2` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `904454fd-a090-8c64-b55a-f1c1b719fe07` · `pnpm readme` · `pnpm computed:check`</sub>

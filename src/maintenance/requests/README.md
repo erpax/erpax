@@ -2,7 +2,7 @@
 
 # requests
 
-> atom `maintenance/requests` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `maintenance/requests` · horo `7` `descent` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -25,7 +25,32 @@
 
 - partition `maintenance` · sub-root `1e0b2845-0b4c-8e9e-b59f-58bbad6ad0f7`
 - bond degree `57` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `EU-2014/55` · catalogue
+- `EU-537/2014` · catalogue
+- `EU-910/2014` · catalogue
+- `ILO-C100` · catalogue
+- `ISO-19011:2018 audit-trail maintenance-request-evidence` · banner
+- `ISO-41001` · catalogue
+- `ISO-41001:2018 §8.1 facility-management operational-control` · banner
+- `ISO-41011:2017 facility-management vocabulary` · banner
+- `ISO-55000` · catalogue
+- `ISO-55000:2014 asset-management corrective-maintenance` · banner
+- `ISO-8601-1:2019 date-time reported-at sla` · banner
+- `SOX §404 internal-controls fm-service-delivery` · banner
+
+## analytics
+
+- bond degree `57` · sealed `0` · horo `7`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `12`
 
 ## identity
 
@@ -37,8 +62,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `9aa7cd22-df2b-8f76-aeef-51c9a135b37b` · framed by typography partition `maintenance` bonds `57` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `39c4c6b0-ee9e-87d9-9aaa-6609f8813d65` · framed by typography partition `maintenance` bonds `57` · `pnpm readme` · `pnpm readme:check`</sub>

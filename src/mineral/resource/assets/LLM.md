@@ -3,15 +3,15 @@
 
 # assets
 
-path `mineral/resource/assets` · uuid `303ae367-4c71-8291-9728-9f736ba9e6ce` · diamond `369ef1f7-ccb0-8323-92df-5f36d55fa5b4`
-horo `2` `share` · trinity `1·1·1` · sealed `1`
+path `mineral/resource/assets` · uuid `d61a1052-8260-81e2-a844-74f7e927f09a` · diamond `2315bf8a-1264-8dee-9cdf-7b7abc5d4bc2`
+horo `1` `base` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
-links `6/6` · folded `1` · bonds in `45` out `51`
+links `6/6` · folded `1` · bonds in `33` out `33`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·accounting·accounting·accounting·agriculture·animal·apiculture·aquaculture·asset·assets·balance·biomass·breed·classifications·collections·collections·combinations·crop·entries·fertility·fields·fields·forestry·fractal·goodwill·graft·grants·harvest·herd·hooks·hooks·identity·impairment·intangible·lactation·law·livestock·measurements·merge·mortality·orders·perennial·postharvest·prepaid·proof·requests·rootstock·schedules·soil·standard·standard · ← access·accounting·agriculture·animal·apiculture·aquaculture·asset·assets·balance·biomass·breed·classifications·collections·combinations·crop·entries·fertility·fields·forestry·fractal·goodwill·graft·grants·harvest·herd·hooks·identity·impairment·intangible·lactation·law·livestock·measurements·merge·mortality·orders·perennial·postharvest·prepaid·proof·requests·rootstock·schedules·soil·standard
+neighbors → access·accounting·agriculture·animal·apiculture·aquaculture·asset·balance·biomass·breed·collections·crop·entries·fertility·fields·forestry·fractal·graft·harvest·herd·hooks·identity·impairment·lactation·law·livestock·measurements·merge·mortality·perennial·postharvest·rootstock·soil · ← access·accounting·agriculture·animal·apiculture·aquaculture·asset·balance·biomass·breed·collections·crop·entries·fertility·fields·forestry·fractal·graft·harvest·herd·hooks·identity·impairment·lactation·law·livestock·measurements·merge·mortality·perennial·postharvest·rootstock·soil
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `1d4a6617-8179-8a20-a46d-9f656934d074` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6ea91048-9bdd-8ec3-a70e-c1d8b23c0880` · `pnpm readme` · `pnpm computed:check`</sub>

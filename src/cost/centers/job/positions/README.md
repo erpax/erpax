@@ -2,9 +2,11 @@
 
 # positions
 
-> atom `cost/centers/job/positions` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `cost/centers/job/positions` · horo `7` `descent` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `cost/centers/job/positions` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -19,13 +21,58 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
+
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:stray:[[gap]]/[[diamond]]/stray/recruiting/`
+
+### collapse
+
+- `balance:variance=1`
+- `law:a job-position is an ESCO/ISCO-08-classified org-chart slot (vacant·filled·planned) — it anchors headcount planning, drives the recruiting [[pipeline]], and accrues IAS-19 headcount, distinct from the person who fills it.`
+- `seal:unsealed`
+- `trigger:Use when managing org-chart slots, headcount planning, or recruiting — an ESCO/ISCO-08 classified position (vacant, filled, or planned) that drives the recruiting pipeline and IAS-19 headcount accruals. The HR job-position collection.`
+- `trigger:a job-position is an ESCO/ISCO-08-classified org-chart slot (vacant·filled·planned) — it anchors headcount planning, drives the recruiting [[pipeline]], and accrues IAS-19 headcount, distinct from the person who fills it.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `00ed4501-7631-8951-99a8-442bf335ad6c` · `4db54b7b-7956-8832-809f-e0158c5553b0` · `68217d7b-440c-8945-abcf-bbe3d60dff37`
+- content uuids `5a0167df-9d93-893b-9760-fedb3468bced` · `95b1534e-e2be-860c-beb6-efd15b6bd2f5` · `a8aae8f0-2009-8587-a59e-63b21e183e4f`
+
+## [[entropy]] — gaps · seals
+
+> account code `cost/centers/job/positions` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[diamond]]/stray/recruiting/ `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.7` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+| Σ gap `2` eb | Σ seal `8.7` eb |
+
+> net residual `-6.7` eb · seal/gap ratio `4.35` · [[entropy]] · [[seal]]
 
 ## typography graph
 
-- partition `cost` · sub-root `39f13edb-cfbe-876c-9400-e150601cfd8b`
-- bond degree `40` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- partition `cost` · sub-root `e0f89be4-3c44-8d3b-9b1f-a458cad445e7`
+- bond degree `0` · analysis neighbors —
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
 
 ## [[cloudflare]] bindings
 
@@ -34,18 +81,55 @@
 ## [[standards]]
 
 - `IFRS IAS-19 employee-benefits (planned-headcount accruals)` · banner
-- `ISO-19011:2018 audit-trail headcount-evidence` · banner
 - `ISO-8601-1:2019 date-time` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unbalanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| not-held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·7 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
 
 ## analytics
 
-- bond degree `40` · sealed `1` · horo `7`
-- variance `0` · balanced `1` · trinity sum `3`
-- bindings `0` · standards `3`
+- bond degree `0` · sealed `0` · horo `7`
+- variance `1` · balanced `0` · trinity sum `3`
+- bindings `0` · standards `2`
 
 ## identity
 
-- uuid `c6959486-ad2e-84f5-83de-ca2ca4ead052`
+- uuid `82f35770-9b8c-8849-84db-045ed235615d`
 - bonds in `13` · out `13`
 - trinity form·code·proof `1`·`1`·`1`
 - links `7` / `7`
@@ -53,8 +137,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `b411a560-6f63-88cb-8e71-928f69185ef3` · framed by typography partition `cost` bonds `40` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d86a3ecb-0a72-8aec-9ef4-d7735147c810` · framed by typography partition `cost` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

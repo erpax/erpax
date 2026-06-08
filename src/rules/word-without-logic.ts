@@ -275,9 +275,9 @@ export function useCaseOf(
   let useCase: string | null = null
   if (cases.length > 0) useCase = `test: ${cases[0]}`
   else if (importerCount > 0) useCase = `${importerCount} importer(s) via @/${atomPath}`
-  else if (mcp) useCase = mcp
   else if (hasLogic && hasTests) useCase = 'trinity with executable matter'
   else if (hasLogic) useCase = 'index.ts exports local logic'
+  else if (mcp && childCode) useCase = mcp
 
   const proseHeavy = readmeWords >= PROSE_HEAVY_README_WORDS && loc === 0 && !childCode
   const behaviorProse = skillReferencesBehavior(dir)

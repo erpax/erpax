@@ -23,7 +23,21 @@
 
 - partition `otolaryngologic` · sub-root `6b96b687-9283-812f-8409-971f685cd801`
 - bond degree `12` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `12` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `67e6fd94-8897-8435-8636-7a9eefd6f72d` · framed by typography partition `otolaryngologic` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `bd48654e-5102-8a71-9604-1c4b407b8a98` · framed by typography partition `otolaryngologic` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

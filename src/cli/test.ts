@@ -18,6 +18,7 @@ describe('cli/registry — minimal operational surface', () => {
       'test',
       'rules',
       'monitor',
+      'agent',
       'confirm',
       'apply',
       'standards',
@@ -82,6 +83,7 @@ describe('cli/doctor — health snapshot', () => {
     const text = formatDoctorReport(report)
     expect(text).toContain('stray-ts')
     expect(text).toContain('entry skill')
+    expect(text).toContain('inventory')
   })
 })
 
@@ -117,6 +119,11 @@ describe('cli/index — router smoke', () => {
   it('doctor stalls lists process table', () => {
     expect(runDoctorStalls()).toBe(0)
     expect(runCli(['doctor', 'stalls'])).toBe(0)
+  })
+
+  it('agent inventory resolves from registry', () => {
+    expect(resolveAction('agent', 'inventory')?.cmd).toMatch(/agent\/inventory\/cli/)
+    expect(resolveAction('monitor', 'inventory')?.cmd).toMatch(/agent\/inventory\/monitor/)
   })
 })
 

@@ -3,8 +3,8 @@
 
 # activity
 
-path `activity` · uuid `ecabb7df-49b9-882b-8191-d325777fad39` · diamond `d8882094-6044-88f1-9624-413de48e3542`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `activity` · uuid `2bca4b72-5e71-80d1-8849-68e040e415d3` · diamond `0b6e7133-f879-8006-840f-354d99902005`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports category·collapse·duration·frequency·law·location·merge·physical·sports·sti · exports activity · escapes —
 links `10/10` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law activity is one schema.org word, content-addressed; the same word collides e
 
 ---
 
-<sub>content-uuid `c11bfd2b-bc21-8421-b8a5-d627c3e6ce57` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `034fd575-5758-84f2-80b8-af9cc6af9f6a` · `pnpm readme` · `pnpm computed:check`</sub>

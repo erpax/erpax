@@ -1,10 +1,263 @@
 ---
 name: manufacturing
-description: Use when designing or porting the erpax manufacturing domain to Payload — production orders, routings/operations, work centers, BOMs, work shifts/labor, or modelling product variants without a fixed option grid. The all-industries `@erpax/manufacturing` pattern.
-sessions:
-  - 776a49cb-8dfb-45ab-88ff-956e3b613adf
+description: "Use when designing or porting the erpax manufacturing domain to Payload — production orders, routings/operations, work centers, BOMs, work shifts/labor, or modelling product variants without a fixed option grid. The all-industries `@erpax/manufacturing` pattern."
+atomPath: manufacturing
+coordinate: manufacturing · 4/weave · b10920ea
+contentUuid: "35df5a44-58dc-5cee-9cd3-b1078312cba8"
+diamondUuid: "0dfdd912-bdce-8692-91d2-65cb49c27f52"
+uuid: "b10920ea-dc54-8327-bf02-dede786633ec"
+horo: 4
+bonds:
+  in:
+    - accounting
+    - agriculture
+    - all
+    - allocation
+    - atom
+    - balance
+    - baseline
+    - bindings
+    - centers
+    - collections
+    - commerce
+    - cropplan
+    - cultivation
+    - decompression
+    - empirical
+    - enterprisebudget
+    - fields
+    - flow
+    - fodder
+    - hooks
+    - horo
+    - identity
+    - jobs
+    - lot
+    - measure
+    - merge
+    - part
+    - plugins
+    - port
+    - pruning
+    - queries
+    - rate
+    - reconcile
+    - seed
+    - sequence
+    - society
+    - standard
+    - tag
+    - time
+    - torus
+    - train
+    - transaction
+    - variances
+    - variant
+    - whole
+    - zeropoint
+  out:
+    - accounting
+    - agriculture
+    - all
+    - allocation
+    - atom
+    - balance
+    - baseline
+    - bindings
+    - centers
+    - collections
+    - commerce
+    - cropplan
+    - cultivation
+    - decompression
+    - empirical
+    - enterprisebudget
+    - fields
+    - flow
+    - fodder
+    - hooks
+    - horo
+    - identity
+    - jobs
+    - lot
+    - measure
+    - merge
+    - part
+    - plugins
+    - port
+    - pruning
+    - queries
+    - rate
+    - reconcile
+    - seed
+    - sequence
+    - society
+    - standard
+    - tag
+    - time
+    - torus
+    - train
+    - transaction
+    - variances
+    - variant
+    - whole
+    - zeropoint
+typography:
+  partition: manufacturing
+  bondDegree: 0
+  neighbors: []
+standards:
+  - ESCO
+  - "EU-2011/83"
+  - "EU-VAT-Implementing-Reg-282/2011"
+  - NACE
+  - SFIA
+  - "UN-CEFACT"
+bindings: []
+neighbors:
+  wikilink:
+    - accounting
+    - all
+    - allocation
+    - balance
+    - bindings
+    - centers
+    - collections
+    - decompression
+    - fields
+    - hooks
+    - horo
+    - identity
+    - jobs
+    - measure
+    - merge
+    - part
+    - plugins
+    - port
+    - queries
+    - rate
+    - sequence
+    - society
+    - standard
+    - torus
+    - train
+    - transaction
+    - variant
+    - whole
+    - zeropoint
+  matrix:
+    - accounting
+    - agriculture
+    - all
+    - allocation
+    - atom
+    - balance
+    - baseline
+    - bindings
+    - centers
+    - collections
+    - commerce
+    - cropplan
+    - cultivation
+    - decompression
+    - empirical
+    - enterprisebudget
+    - fields
+    - flow
+    - fodder
+    - hooks
+    - horo
+    - identity
+    - jobs
+    - lot
+    - measure
+    - merge
+    - part
+    - plugins
+    - port
+    - pruning
+    - queries
+    - rate
+    - reconcile
+    - seed
+    - sequence
+    - society
+    - standard
+    - tag
+    - time
+    - torus
+    - train
+    - transaction
+    - variances
+    - variant
+    - whole
+    - zeropoint
+  backlinks:
+    - accounting
+    - agriculture
+    - all
+    - allocation
+    - atom
+    - balance
+    - baseline
+    - bindings
+    - centers
+    - collections
+    - commerce
+    - cropplan
+    - cultivation
+    - decompression
+    - empirical
+    - enterprisebudget
+    - fields
+    - flow
+    - fodder
+    - hooks
+    - horo
+    - identity
+    - jobs
+    - lot
+    - measure
+    - merge
+    - part
+    - plugins
+    - port
+    - pruning
+    - queries
+    - rate
+    - reconcile
+    - seed
+    - sequence
+    - society
+    - standard
+    - tag
+    - time
+    - torus
+    - train
+    - transaction
+    - variances
+    - variant
+    - whole
+    - zeropoint
+signatures:
+  computationUuid: "5102005a-40bf-82fe-a40f-fbfcec5de767"
+  stages:
+    - stage: path
+      stageUuid: "8bab450d-b3ca-8478-9f36-9f07376e828d"
+    - stage: trinity
+      stageUuid: "d02ff0de-230d-83f1-9f2a-165f9a78d05e"
+    - stage: boundary
+      stageUuid: "525290c2-8ca9-8fe3-8f6a-8b04d1e02124"
+    - stage: links
+      stageUuid: "67a2ceb0-4880-846a-a9f1-f86ac2a6f69d"
+    - stage: horo
+      stageUuid: "ba04acaf-8a3f-84af-bc92-0c874a85d780"
+    - stage: seal
+      stageUuid: "dc652c59-5c80-85a2-ba3e-0fbff2083559"
+    - stage: uuid
+      stageUuid: "4aec312e-7e4b-83f3-97c6-25b0bcd05861"
+version: 2
 ---
-
 # manufacturing — the all-industries production plugin
 
 Generalizes the etrima (garment) production engine into an industry-agnostic, self-sufficient `@erpax/manufacturing` (textile, food, pharma, electronics, furniture, job-shop, process). Built from two universal primitives — **BOM + Routing** — composed of reusable field-objects (see [[fields]],[[collections]]), referencing OUT polymorphically so [[accounting]]/audit attach without inward deps (see [[plugins]]). Ordered by the [[sequence]].

@@ -3,15 +3,15 @@
 
 # subscriptions
 
-path `subscription/plans/subscriptions` · uuid `43aa7895-db1e-861d-9d74-49e9b61cf634` · diamond `08a54947-f07b-8c6a-a8a7-00dcfcac29af`
-horo `2` `share` · trinity `1·1·1` · sealed `1`
+path `subscription/plans/subscriptions` · uuid `f153f7bc-88c7-8e82-a1f9-8e8b8c9d1d05` · diamond `b4dd1ddc-d905-896c-9fe2-ef836bcb9616`
+horo `1` `base` · trinity `1·1·1` · sealed `0`
 imports @/audit/trail/after/change·@/is/super/admin·@/subscription/plans/subscriptions/hooks · exports const · escapes —
-links `7/7` · folded `1` · bonds in `4` out `4`
+links `7/7` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `0·0·0`
-neighbors → balance·features·landmarks·suggestions · ← balance·features·landmarks·suggestions
+neighbors → access·churn·collections·horo·invoices·plans·proof·sequence·standard · ← access·churn·collections·horo·invoices·plans·proof·sequence·standard
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `bfaeeac2-4326-8aed-b8b2-903e0b0ba4da` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3c192a4e-4df4-894b-bc4f-31e756d7d672` · `pnpm readme` · `pnpm computed:check`</sub>

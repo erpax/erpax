@@ -3,8 +3,8 @@
 
 # adverse
 
-path `adverse` · uuid `082d2173-f358-8523-9487-a563c458feac` · diamond `efa97a0c-c8b9-8173-bec1-b43278b59468`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `adverse` · uuid `bf152a38-2b6f-8eb5-b509-b6cd1af01159` · diamond `3744ea39-e172-81a8-8607-18fdb2ae15bd`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·outcome·serious·sti · exports adverse · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law adverse is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `bc894471-a05e-8ca6-a207-a9953e32808d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d5938e44-2547-853f-be08-c0214e058fe2` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,8 +3,8 @@
 
 # closes
 
-path `closes` · uuid `baa6d40a-32a7-8e97-bddc-1de5e27b43f2` · diamond `f8b7b65c-a8d7-8582-bd23-15133bc77403`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `closes` · uuid `d7375b80-1433-8908-901f-04a303ed345e` · diamond `3051a128-c46f-830c-beb5-86416ea2c28b`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports closes · escapes —
 links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law closes is one schema.org word, content-addressed; the same word collides eve
 
 ---
 
-<sub>content-uuid `7bbea72f-0d48-82e1-8879-68119e90106f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d3c00b9e-08b8-8ce9-bb0b-381d561de823` · `pnpm readme` · `pnpm computed:check`</sub>

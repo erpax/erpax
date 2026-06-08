@@ -3,7 +3,7 @@
 
 # care
 
-path `care` · uuid `2911ce57-820d-80ce-b735-590c06934766` · diamond `c6aaf534-769e-8f06-88a6-faae9a82f421`
+path `care` · uuid `7adbfc85-776e-8ec3-a6dc-a73706f05891` · diamond `a57c7cf5-b8bb-837d-9c93-1875f40106f9`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports child·collapse·law·merge·sti·veterinary · exports care · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
@@ -14,4 +14,4 @@ law care is one schema.org word, content-addressed; the same word collides every
 
 ---
 
-<sub>content-uuid `dd922c0d-35e7-847b-bd17-8c750ed043b1` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `947a53a1-84a3-8a0c-880e-5c9d231e85ff` · `pnpm readme` · `pnpm computed:check`</sub>

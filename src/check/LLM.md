@@ -3,7 +3,7 @@
 
 # check
 
-path `check` · uuid `7cbef0e2-b5cf-8ef5-adf9-e751bc934683` · diamond `82639964-32e0-85ea-80c8-ef8daf0617ec`
+path `check` · uuid `8b8114d2-38dd-8f7f-b70c-5473ef1cd605` · diamond `83df3e8c-b602-8bee-a737-c24dd6a534fb`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·out·sti · exports check · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
@@ -14,4 +14,4 @@ law check is one schema.org word, content-addressed; the same word collides ever
 
 ---
 
-<sub>content-uuid `1155a2d0-1b0b-8d25-b445-8856708e746e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `008d7329-66f3-8b57-9fd2-e78947874c15` · `pnpm readme` · `pnpm computed:check`</sub>

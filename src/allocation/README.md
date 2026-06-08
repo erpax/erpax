@@ -2,7 +2,7 @@
 
 # allocation
 
-> atom `allocation` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
+> atom `allocation` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -23,9 +23,9 @@
 
 ## typography graph
 
-- partition `allocation` · sub-root `c9bf5689-48f9-85ad-99d2-1dce65710963`
+- partition `allocation` · sub-root `2174b923-0ac9-8c41-8fbf-541e24c274c8`
 - bond degree `93` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- graph root `67d11a43-67e0-8dde-afd8-ecbed950ff42`
 
 ## [[cloudflare]] bindings
 
@@ -40,15 +40,53 @@
 - `SFIA` · catalogue
 - `SFIA 8 responsibility-levels (1..7) — job-type categorisation` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·8 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `93` · sealed `1` · horo `4`
+- bond degree `93` · sealed `1` · horo `8`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `6`
 
 ## identity
 
-- uuid `c9bf5689-48f9-85ad-99d2-1dce65710963`
+- uuid `2174b923-0ac9-8c41-8fbf-541e24c274c8`
 - bonds in `31` · out `31`
 - trinity form·code·proof `1`·`1`·`1`
 - links `26` / `26`
@@ -60,4 +98,4 @@
 
 ---
 
-<sub>content-uuid `576a74a9-a0f0-8291-809f-55a75c0ddc85` · framed by typography partition `allocation` bonds `93` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `89a9cce3-6322-8ecd-8846-84dff0ff3838` · framed by typography partition `allocation` bonds `93` · `pnpm readme` · `pnpm readme:check`</sub>

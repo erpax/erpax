@@ -25,7 +25,25 @@
 
 - partition `legislation` · sub-root `2a913f39-0a75-84d8-8b79-5c51d22d6302`
 - bond degree `99` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ISO 37000:2021 governance-of-organizations (the body of governing rules)` · banner
+- `ISO-19011:2018 §6.4 audit-evidence (every law content-addressed + citable)` · banner
+- `ISO-37000` · catalogue
+- `US-CTA-2021` · catalogue
+- `Venice Commission Rule of Law (law public, prospective, stable, equally applied)` · banner
+
+## analytics
+
+- bond degree `99` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `5`
 
 ## identity
 
@@ -41,4 +59,4 @@
 
 ---
 
-<sub>content-uuid `858e2ded-8967-8e67-8602-5034c825b5a1` · framed by typography partition `legislation` bonds `99` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b849f77d-483e-84c4-b9c2-3c0ae7723484` · framed by typography partition `legislation` bonds `99` · `pnpm readme` · `pnpm readme:check`</sub>

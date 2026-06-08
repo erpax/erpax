@@ -2,9 +2,11 @@
 
 # events
 
-> atom `customers/sales/orders/shipments/tracking/events` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
+> atom `customers/sales/orders/shipments/tracking/events` · horo `1` `base` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `customers/sales/orders/shipments/tracking/events` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,11 +23,58 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+
+### collapse
+
+- `balance:conserved`
+- `law:the event log is append-only, and the `delivered` event is the single point-in-time trigger that transfers control and recognises revenue exactly once.`
+- `seal:unsealed`
+- `trigger:Use when ingesting or querying carrier shipment-status events — webhook pushes, API polls, or EDI IFTSTA messages — to update a shipment's in-transit state and trigger IFRS-15 §38 point-in-time revenue recognition on the `delivered` event under DDP/DAP/DPU INCOTERMS. The append-only carrier-tracking event log.`
+- `trigger:the event log is append-only, and the `delivered` event is the single point-in-time trigger that transfers control and recognises revenue exactly once.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `75f178b3-6988-8c61-97b6-2e3738c4e8e8` · `a9779f75-9c08-86a3-971a-3ec76c2d42db`
+- content uuids `7e64efd2-ec45-8d13-84c1-d7dd2ac0a733` · `d9c0919a-9442-8c17-bc6e-77c6547f57a6`
+
+## [[entropy]] — gaps · seals
+
+> account code `customers/sales/orders/shipments/tracking/events` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.1` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `1` eb | Σ seal `11.1` eb |
+
+> net residual `-10.1` eb · seal/gap ratio `11.1` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `customers` · sub-root `85792e9b-a9f4-8af5-a801-0895f2af65cf`
-- bond degree `80` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- partition `customers` · sub-root `83c78df0-4d66-80df-ab25-5ba350869cf1`
+- bond degree `54` · analysis neighbors —
+- graph root `a0b4e6a6-0230-8b95-a98c-2d4cf71fcc77`
 
 ## [[cloudflare]] bindings
 
@@ -37,29 +86,66 @@
 - `IFRS IFRS-15 §38 point-in-time-revenue-recognition` · banner
 - `INCOTERMS 2020 control-transfer-points` · banner
 - `INCOTERMS-2020` · catalogue
-- `ISO-19011:2018 audit-trail shipment-tracking` · banner
 - `ISO-8601-1:2019 date-time event-time` · banner
 - `ISO-9735` · catalogue
 - `SOX §404 internal-controls delivery-evidence TOM-LOG-02` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·1 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `80` · sealed `1` · horo `8`
+- bond degree `54` · sealed `0` · horo `1`
 - variance `0` · balanced `1` · trinity sum `3`
-- bindings `0` · standards `8`
+- bindings `0` · standards `7`
 
 ## identity
 
-- uuid `6197c33f-5deb-8007-bd53-cf9866a7afb3`
-- bonds in `23` · out `27`
+- uuid `3215b4e3-9216-8456-9507-156e10840d3e`
+- bonds in `12` · out `12`
 - trinity form·code·proof `1`·`1`·`1`
 - links `5` / `5`
 - folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `84a7d298-90bc-812e-bd54-6f206e7964d4` · framed by typography partition `customers` bonds `80` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `dd99c2f1-b912-82c2-bca4-2a527cf5f3d8` · framed by typography partition `customers` bonds `54` · `pnpm readme` · `pnpm readme:check`</sub>

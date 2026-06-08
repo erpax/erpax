@@ -3,8 +3,8 @@
 
 # archived
 
-path `archived` · uuid `44e074ef-d3ad-85c7-9762-d97e8fc245c8` · diamond `55551983-df86-8925-b299-dcd20d54a9dd`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `archived` · uuid `05e1aea3-8710-8799-9b31-c33c40d34c5f` · diamond `c8e84369-91df-8424-b197-866e59322b62`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports creative·law·thing · exports archived · escapes —
 links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law archived is one schema.org word, content-addressed; the same word collides e
 
 ---
 
-<sub>content-uuid `c2702f5f-a44e-85dd-8212-d1da3c8e7e7f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f8ea12f4-44c5-8fa0-bd34-71bfcc9a2999` · `pnpm readme` · `pnpm computed:check`</sub>

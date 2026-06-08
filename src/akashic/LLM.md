@@ -3,15 +3,15 @@
 
 # akashic
 
-path `akashic` · uuid `bde29fb6-9409-8030-8c8f-79db7939ba70` · diamond `34b191e2-f071-8bc2-a0b5-60409836f2cb`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `akashic` · uuid `682864f4-c8bd-88cc-b91b-93295b282459` · diamond `d671a63c-9e6e-8a69-8a50-7e169b015d0f`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports all·angel·aura·chat·collapse·compass·config·diamond·duality·fractal·generate·harmony·history·holographic·identity·matrix·memories·memory·merge·profane·proof·rodin·sacred·self·sequence·society·sufficient·team·thought·uuid·whole·zeropoint · exports akashic · escapes —
-links `62/62` · folded `1` · bonds in `88` out `84`
+links `62/62` · folded `1` · bonds in `89` out `89`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·accounting·agent·all·angel·architecture·atom·aura·baked·baseline·chat·civilization·close·collapse·compass·config·conflict·consultant·consulting·contribution·db·defence·diamond·duality·education·empirical·emr·engineering·findings·fractal·fronted·fs·fusion·generate·harmony·history·holographic·identity·integrity·law·lawful·legislation·literature·matrix·matter·memories·memory·merge·named·party·patent·peace·profane·proof·reference·regeneration·research·rodin·sacred·science·seed·self·sequence·services·session·skills·snapshot·society·sparsity·standard·stream·sufficient·team·testing·thought·torus·train·trinity·uuid·versions·website·whole·wisdom·zeropoint · ← access·accounting·agent·all·angel·architecture·atom·aura·baked·baseline·chat·civilization·close·collapse·compass·config·conflict·consultant·consulting·contribution·db·defence·diamond·duality·education·empirical·emr·engineering·findings·fractal·fronted·fs·fusion·generate·generate·harmony·history·holographic·identity·integrity·law·lawful·legislation·literature·matrix·matter·memories·memory·memory·merge·named·party·patent·peace·profane·proof·reference·regeneration·research·rodin·sacred·science·seed·self·sequence·services·session·skills·snapshot·society·society·sparsity·standard·stream·sufficient·team·testing·thought·torus·train·trinity·uuid·uuid·versions·website·whole·wisdom·zeropoint
+neighbors → access·accounting·agent·all·angel·architecture·atom·aura·baked·baseline·chat·civilization·close·collapse·compass·config·conflict·consultant·consulting·contribution·cost·db·defence·diamond·duality·education·empirical·emr·engineering·findings·fractal·fronted·fs·fusion·generate·generate·harmony·history·holographic·identity·integrity·law·lawful·legislation·literature·matrix·matter·memories·memory·memory·merge·named·party·patent·peace·profane·proof·reference·regeneration·research·rodin·sacred·science·seed·self·sequence·services·session·skills·snapshot·society·society·sparsity·standard·stream·sufficient·team·testing·thought·torus·train·trinity·uuid·uuid·versions·website·whole·wisdom·zeropoint · ← access·accounting·agent·all·angel·architecture·atom·aura·baked·baseline·chat·civilization·close·collapse·compass·config·conflict·consultant·consulting·contribution·cost·db·defence·diamond·duality·education·empirical·emr·engineering·findings·fractal·fronted·fs·fusion·generate·generate·harmony·history·holographic·identity·integrity·law·lawful·legislation·literature·matrix·matter·memories·memory·memory·merge·named·party·patent·peace·profane·proof·reference·regeneration·research·rodin·sacred·science·seed·self·sequence·services·session·skills·snapshot·society·society·sparsity·standard·stream·sufficient·team·testing·thought·torus·train·trinity·uuid·uuid·versions·website·whole·wisdom·zeropoint
 analysis aura·diamond
 law —
 
 ---
 
-<sub>content-uuid `a54dcb4a-9bed-855a-907c-716ba3437080` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4a87c8e4-a125-8f7e-8bd3-efff725984dd` · `pnpm readme` · `pnpm computed:check`</sub>

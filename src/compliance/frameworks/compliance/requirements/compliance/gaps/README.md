@@ -2,9 +2,11 @@
 
 # gaps
 
-> atom `compliance/frameworks/compliance/requirements/compliance/gaps` · horo `1` `base` · [[balance]] `1` · [[seal]] `0`
+> atom `compliance/frameworks/compliance/requirements/compliance/gaps` · horo `5` `round` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `compliance/frameworks/compliance/requirements/compliance/gaps` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,11 +23,57 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `seal:unsealed`
+- `trigger:Use when identifying, tracking or remediating compliance deficiencies — missing controls, design deficiencies, operating gaps, documentation gaps — against a requirement; severity, status lifecycle (identified → in-remediation → closed), root cause, risk exposure, target closure date, audit trail. The per-tenant gap and deficiency register.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `159667c0-d06d-8d95-9db0-14e064cc5493` · `574e36f6-04c2-8e3b-8382-c934ce3d4fc1` · `864e0df1-fcbd-8605-b87a-d6b338164278`
+- content uuids `8d4ab3ce-93e1-820d-9596-149a269c3314` · `8f8ea788-90cc-8319-b2d3-e8bd60e40255` · `90fe5490-5c7b-8b18-8eeb-c8224a99c553`
+
+## [[entropy]] — gaps · seals
+
+> account code `compliance/frameworks/compliance/requirements/compliance/gaps` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.5` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `2` eb | Σ seal `11.5` eb |
+
+> net residual `-9.5` eb · seal/gap ratio `5.75` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `compliance` · sub-root `9b1931fc-526d-8686-bbd2-928435640965`
+- partition `compliance` · sub-root `7662057a-ec95-88c2-bbf3-3319903f58a7`
 - bond degree `3` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- graph root `a0b4e6a6-0230-8b95-a98c-2d4cf71fcc77`
 
 ## [[cloudflare]] bindings
 
@@ -33,21 +81,58 @@
 
 ## [[standards]]
 
-- `ISO-19011:2018 nonconformity` · banner
 - `ISO-37301` · catalogue
 - `ISO-37301:2021 compliance-management` · banner
 - `SOX §404 deficiency` · banner
 - `US-CTA-2021` · catalogue
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·5 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `3` · sealed `0` · horo `1`
+- bond degree `3` · sealed `0` · horo `5`
 - variance `0` · balanced `1` · trinity sum `3`
-- bindings `0` · standards `5`
+- bindings `0` · standards `4`
 
 ## identity
 
-- uuid `ecb82648-479e-8622-9549-118a09d6e196`
+- uuid `12e9297b-6d3a-817c-839b-d428c1da557a`
 - bonds in `1` · out `1`
 - trinity form·code·proof `1`·`1`·`1`
 - links `0` / `0`
@@ -59,4 +144,4 @@
 
 ---
 
-<sub>content-uuid `e338c0cc-36a3-80b0-9981-58e1b3283cef` · framed by typography partition `compliance` bonds `3` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `613c994e-4a22-83bf-b330-78ce02e704f9` · framed by typography partition `compliance` bonds `3` · `pnpm readme` · `pnpm readme:check`</sub>

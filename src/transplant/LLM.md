@@ -3,15 +3,15 @@
 
 # transplant
 
-path `transplant` · uuid `d8f92cf4-fcf6-860b-b462-009913cabf90` · diamond `83531e86-f7d7-8f46-8a40-253d72035587`
+path `transplant` · uuid `d8f92cf4-fcf6-860b-b462-009913cabf90` · diamond `01f99c6a-363a-80fd-bcc1-d310facfe08d`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports agriculture·crop·irrigation·mulch·planting·propagation·seed·spacing · exports transplant · escapes —
-links `15/15` · folded `1` · bonds in `4` out `4`
+links `15/15` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → agriculture·crop·irrigation·maturity·mulch·planting·propagation·seed·spacing · ← agriculture·crop·irrigation·maturity·mulch·planting·propagation·seed·spacing
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `36c3247d-66d8-8b01-a8f8-f64dc65bc0b3` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0e3aa5f8-f75b-8758-9ed4-47d6ff80f139` · `pnpm readme` · `pnpm computed:check`</sub>

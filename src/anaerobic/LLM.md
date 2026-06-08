@@ -3,8 +3,8 @@
 
 # anaerobic
 
-path `anaerobic` · uuid `9333624b-689c-8e61-9cd7-f7db09ed9f33` · diamond `57cf2e9a-2c2e-8769-b0a0-34e00aeda38b`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `anaerobic` · uuid `a41c2339-8b00-8832-96fe-ec2f58765472` · diamond `336c9370-7e64-8043-9470-02277678c747`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports anaerobic · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law anaerobic is one schema.org word, content-addressed; the same word collides 
 
 ---
 
-<sub>content-uuid `8292cb2c-49dc-8460-b4d9-d3fcb9876527` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `45504a26-5d81-8d9c-b306-3855cb5272fb` · `pnpm readme` · `pnpm computed:check`</sub>

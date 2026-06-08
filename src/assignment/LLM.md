@@ -3,8 +3,8 @@
 
 # assignment
 
-path `assignment` · uuid `d269e8a1-2109-80bb-999a-d9b7dcfedace` · diamond `6569c9fb-1677-87bd-b36f-dbfd6031fae3`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `assignment` · uuid `b551dbb6-a39d-855b-bf8c-25994642b079` · diamond `876473e2-37cb-8a3d-b63a-f7d87af532ba`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports consent·contracts·law·matter · exports assignment · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law assignment is the contract clause governing transfer of its rights — assig
 
 ---
 
-<sub>content-uuid `6c68a88d-78b8-81d6-8753-fcc59bb5e357` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6376c2d6-c6de-88d2-bff3-e27f9ea3bee8` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -23,7 +23,21 @@
 
 - partition `orphism` · sub-root `92a68e81-32e8-89f0-845c-b51b9839f810`
 - bond degree `56` · analysis neighbors `diamond`
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `56` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `52a5cf87-46c6-8785-82fc-78cf360f78a1` · framed by typography partition `orphism` bonds `56` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `17691f5d-331a-8ed4-b2c7-6eb97efb869a` · framed by typography partition `orphism` bonds `56` · `pnpm readme` · `pnpm readme:check`</sub>

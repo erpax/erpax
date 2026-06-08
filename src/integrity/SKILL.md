@@ -1,8 +1,220 @@
 ---
 name: integrity
-description: Use when verifying that a row's CURRENT bytes are the ones committed — content-uuid as a tamper detector (recompute ≠ stored ⇒ flagged), and the same canonical hash extended into signature, envelope encryption, and reference resolution.
+description: "Use when verifying that a row's CURRENT bytes are the ones committed — content-uuid as a tamper detector (recompute ≠ stored ⇒ flagged), and the same canonical hash extended into signature, envelope encryption, and reference resolution."
+atomPath: integrity
+coordinate: integrity · 2/share · 51a27605
+contentUuid: "339e87a9-fb91-5799-b32e-e0dd26238df7"
+diamondUuid: "f20ecacc-b9ee-8877-b618-d2c2a9fce708"
+uuid: "51a27605-f335-874e-84e3-a194994eeb86"
+horo: 2
+bonds:
+  in:
+    - akashic
+    - anchoring
+    - api
+    - architecture
+    - archival
+    - boundary
+    - certification
+    - confirm
+    - contribution
+    - cost
+    - duality
+    - fallback
+    - fractal
+    - hallucination
+    - hooks
+    - horo
+    - identity
+    - law
+    - merge
+    - organic
+    - path
+    - payload
+    - power
+    - pqc
+    - proof
+    - provenance
+    - purity
+    - refactor
+    - replay
+    - secret
+    - society
+    - standard
+    - stream
+    - sync
+    - upgrade
+    - zeropoint
+  out:
+    - akashic
+    - anchoring
+    - api
+    - architecture
+    - archival
+    - boundary
+    - certification
+    - confirm
+    - contribution
+    - cost
+    - duality
+    - fallback
+    - fractal
+    - hallucination
+    - hooks
+    - horo
+    - identity
+    - law
+    - merge
+    - organic
+    - path
+    - payload
+    - power
+    - pqc
+    - proof
+    - provenance
+    - purity
+    - refactor
+    - replay
+    - secret
+    - society
+    - standard
+    - stream
+    - sync
+    - upgrade
+    - zeropoint
+typography:
+  partition: integrity
+  bondDegree: 111
+  neighbors: []
+standards:
+  - "EU-2014/55"
+  - "EU-2016/679"
+  - "EU-537/2014"
+  - "EU-910/2014"
+  - "ISO-27001"
+  - "ISO/IEC-27001:2022"
+  - "NIST-FIPS-180-4"
+  - "NIST-SP-800-38D"
+  - "NIST-SP-800-57"
+  - "NIST-SP-800-63"
+  - "RFC-8785"
+  - "W3C-JSON-LD-1.1"
+  - "W3C-VC-2.0"
+  - eIDAS
+bindings:
+  - durable_objects/AUDIT_CHAIN_DO
+  - durable_objects/ERPAX_DO
+  - durable_objects/JOB_LOCK
+  - durable_objects/RATE_LIMITER
+  - durable_objects/TENANT_QUOTA
+neighbors:
+  wikilink:
+    - akashic
+    - cost
+    - duality
+    - fractal
+    - hooks
+    - identity
+    - law
+    - merge
+    - payload
+    - proof
+    - society
+    - standard
+    - zeropoint
+  matrix:
+    - akashic
+    - anchoring
+    - api
+    - architecture
+    - archival
+    - boundary
+    - certification
+    - confirm
+    - contribution
+    - cost
+    - duality
+    - fallback
+    - fractal
+    - hallucination
+    - hooks
+    - horo
+    - identity
+    - law
+    - merge
+    - organic
+    - path
+    - payload
+    - power
+    - pqc
+    - proof
+    - provenance
+    - purity
+    - refactor
+    - replay
+    - secret
+    - society
+    - standard
+    - stream
+    - sync
+    - upgrade
+    - zeropoint
+  backlinks:
+    - akashic
+    - anchoring
+    - api
+    - architecture
+    - archival
+    - boundary
+    - certification
+    - confirm
+    - contribution
+    - cost
+    - duality
+    - fallback
+    - fractal
+    - hallucination
+    - hooks
+    - horo
+    - identity
+    - law
+    - merge
+    - organic
+    - path
+    - payload
+    - power
+    - pqc
+    - proof
+    - provenance
+    - purity
+    - refactor
+    - replay
+    - secret
+    - society
+    - standard
+    - stream
+    - sync
+    - upgrade
+    - zeropoint
+signatures:
+  computationUuid: "1dbd1a0f-b160-8037-87ad-02d5be187412"
+  stages:
+    - stage: path
+      stageUuid: "d31b91cc-db18-84dd-8dcf-af4ca97c1b81"
+    - stage: trinity
+      stageUuid: "1c082fe6-5f6f-875a-9d5b-889fe311621a"
+    - stage: boundary
+      stageUuid: "6372a3ca-bf26-896d-8335-afd383e07f5f"
+    - stage: links
+      stageUuid: "21a6b652-eed2-8c1f-b00b-a0e48b8cfc51"
+    - stage: horo
+      stageUuid: "9f532f9d-a9c6-8ce3-ba65-0d3a9cb5b822"
+    - stage: seal
+      stageUuid: "d0cbd6db-3245-80af-b12b-504bacb3e0bc"
+    - stage: uuid
+      stageUuid: "554de61b-3209-80de-a094-c91558e74fd3"
+version: 2
 ---
-
 # integrity — the uuid is the witness; the bytes cannot lie
 
 FORM: **an object's id IS the SHA of its content, so any in-place edit recomputes to a different uuid.** This is Conservation Law 8: identity is *derivable*, never asserted. The Merkle history proves a transition happened in order; integrity proves the present state matches what that transition was supposed to produce — the two are complementary, neither alone sufficient. Detection is O(1) per row, even against a privileged admin running a raw `UPDATE`. Pure → testable.

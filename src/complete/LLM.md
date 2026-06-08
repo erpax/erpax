@@ -3,15 +3,15 @@
 
 # complete
 
-path `complete` · uuid `2fca8ba6-1fcc-8bdc-a85c-75d86215aecf` · diamond `d21c6674-432f-85f4-a5d5-2d484eb914b6`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `complete` · uuid `fd6de8fe-2587-8f53-ba0a-f229e53a393b` · diamond `1345961e-6476-8252-8f94-dbb0fa6e3b75`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·data·feed·law·merge·sti·time · exports complete · escapes —
-links `7/7` · folded `1` · bonds in `18` out `21`
+links `7/7` · folded `1` · bonds in `13` out `13`
 faces worker·plugin·pwa `0·0·0`
-neighbors → aura·collapse·collapse·cost·data·dry·feed·folded·fronted·gravity·honest·law·law·merge·merge·named·sti·time·triggered·trinity·twinned · ← aura·collapse·cost·data·dry·feed·folded·fronted·gravity·honest·law·merge·named·sti·time·triggered·trinity·twinned
+neighbors → collapse·data·feed·folded·fronted·honest·law·merge·named·sti·time·triggered·twinned · ← collapse·data·feed·folded·fronted·honest·law·merge·named·sti·time·triggered·twinned
 analysis aura
 law complete is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `cb69eea1-23a1-86db-abb9-f711cbbc8136` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4ebdbf42-a731-8480-8759-1ae2c9126631` · `pnpm readme` · `pnpm computed:check`</sub>

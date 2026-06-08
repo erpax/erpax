@@ -3,9 +3,9 @@
 
 # bed
 
-path `bed` · uuid `d3a58574-c089-8f9f-bcb2-eda49dc915f2` · diamond `bd926ea3-df5e-8796-a645-ba20b82f4afc`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
-imports breakfast·details·law·type · exports bed · escapes —
+path `bed` · uuid `1305d66c-e1f6-89bf-8f9d-4e04373b97e6` · diamond `667ffd7b-2bb5-85e8-ba37-101920fa9701`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
+imports @/medical/device · exports deviceReadingFromBed·wireModalityToEmr · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
 neighbors → breakfast·details·law·type · ← breakfast·details·law·type
@@ -14,4 +14,4 @@ law bed is one schema.org word, content-addressed; the same word collides every 
 
 ---
 
-<sub>content-uuid `83bfcb55-4338-85d3-873b-55b2a747dfa2` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `fc1889ba-6ce4-8d21-9539-3d7d86d81b87` · `pnpm readme` · `pnpm computed:check`</sub>

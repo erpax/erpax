@@ -4,7 +4,7 @@
 # format
 
 path `format` · uuid `cd8a94c8-4369-82bb-9780-9c32b9d51b51` · diamond `0ac47452-8bec-8908-a038-40c4f16dab59`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+horo `5` `round` · trinity `1·0·0` · sealed `0`
 imports book·collapse·encoding·file·law·merge·music·release·sti·type·video · exports format · escapes —
 links `11/11` · folded `1` · bonds in `11` out `11`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law format is one schema.org word, content-addressed; the same word collides eve
 
 ---
 
-<sub>content-uuid `2ddefc10-b9bf-8c82-af5c-6f6e833a3ac9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7a4822fc-0099-84b7-ba9d-9b7de95e1244` · `pnpm readme` · `pnpm computed:check`</sub>

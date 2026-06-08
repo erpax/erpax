@@ -3,15 +3,15 @@
 
 # tvclip
 
-path `tvclip` · uuid `5a6661db-35ea-8176-8754-3a06b00c4589` · diamond `9c95ae77-bedb-888e-bc65-36194431ef89`
+path `tvclip` · uuid `5a6661db-35ea-8176-8754-3a06b00c4589` · diamond `76ebf74f-b979-88e1-b603-0d512bf1a879`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports tvclip · escapes —
-links `4/4` · folded `1` · bonds in `24` out `24`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → agent·analytics·anchor·append·atom·aura·balance·borrow·catalogue·colleagues·consent·cooking·corrects·entertainment·entity·game·id·landmarks·list·memories·pathophysiology·progression·security·vent · ← agent·analytics·anchor·append·atom·aura·balance·borrow·catalogue·colleagues·consent·cooking·corrects·entertainment·entity·game·id·landmarks·list·memories·pathophysiology·progression·security·vent
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law tvclip is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `611e0d3f-026e-89c6-af81-a29d330b5462` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `06369424-395f-89b7-a1f9-2a109340b047` · `pnpm readme` · `pnpm computed:check`</sub>

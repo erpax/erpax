@@ -3,15 +3,15 @@
 
 # tweets
 
-path `tweets` · uuid `8702b3f6-90d9-8e19-9306-4509137152e2` · diamond `b557e6dd-bccb-8b57-87b7-704bdb637ea7`
+path `tweets` · uuid `8702b3f6-90d9-8e19-9306-4509137152e2` · diamond `b732ee3f-23eb-8e75-9c19-260bc10cdb85`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·user · exports tweets · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
+links `5/5` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·sti·tweet·user · ← collapse·law·merge·sti·tweet·user
 analysis —
 law tweets is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `ff064775-0442-8d4a-9337-0b5c471ad2ef` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `092b472f-1770-8a0d-b1e2-5a01ee4bcdda` · `pnpm readme` · `pnpm computed:check`</sub>

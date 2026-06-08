@@ -3,8 +3,8 @@
 
 # shipments
 
-path `customers/sales/orders/shipments` · uuid `4b6ed12f-52f7-8a2b-9d26-8db10cad27f0` · diamond `a1427c91-c3a0-808f-b133-aa3eea81d9ba`
-horo `4` `weave` · trinity `1·1·1` · sealed `1`
+path `customers/sales/orders/shipments` · uuid `f19a48fb-fd95-8e92-a3ea-e09d79af0d10` · diamond `fa5c8556-0530-841e-ac09-2036583b6f78`
+horo `8` `crest` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/auto/set/timestamp·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
 links `5/5` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law a shipment dispatches only goods owed by its sales order, advances state mon
 
 ---
 
-<sub>content-uuid `7efa3876-3e43-8427-8d1e-5b777f35b732` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `be6fe2f2-e544-847c-98bd-19f48b9be28d` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,8 +3,8 @@
 
 # amount
 
-path `amount` · uuid `a011cb63-85ab-8264-b19b-44a1a25c6dd3` · diamond `19278ac1-03e5-8a5b-9b39-be02a97e3628`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `amount` · uuid `c2edef54-f1b4-81f0-b325-ac9854014d17` · diamond `bbee271f-2255-8cdd-92ac-846f0d8d33f2`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports accounting·commerce·currency·fields · exports amount · escapes —
 links `4/4` · folded `1` · bonds in `24` out `24`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `0662766c-2e29-8ad9-acfb-c8fecd7bff35` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6c4ce78b-e569-82ae-9dd1-e224bf55c09d` · `pnpm readme` · `pnpm computed:check`</sub>

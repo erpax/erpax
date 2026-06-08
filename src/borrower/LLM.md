@@ -3,8 +3,8 @@
 
 # borrower
 
-path `borrower` · uuid `3cfb405a-5568-8b81-b87a-f03d61a31334` · diamond `aee63e92-7207-8640-9504-af85ad00f30b`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `borrower` · uuid `6a33fee8-c975-864d-8c75-44c571aa76b1` · diamond `b523ae1b-c8d6-8d0a-9f32-079c19745be0`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports law·person·thing · exports borrower · escapes —
 links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law borrower is one schema.org word, content-addressed; the same word collides e
 
 ---
 
-<sub>content-uuid `dee177b4-3c4a-81b9-a03e-87d37eec2907` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `212bc726-cf6a-89db-8763-ec41057e30e4` · `pnpm readme` · `pnpm computed:check`</sub>

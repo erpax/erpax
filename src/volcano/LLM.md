@@ -3,15 +3,15 @@
 
 # volcano
 
-path `volcano` · uuid `bbecc8a7-a656-802c-96e5-35640d020b9b` · diamond `9a73a21e-c4a3-818e-a498-62cf825ef60d`
+path `volcano` · uuid `bbecc8a7-a656-802c-96e5-35640d020b9b` · diamond `160a6097-aa9c-8348-84ea-a46668334cb8`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports volcano · escapes —
-links `2/2` · folded `1` · bonds in `5` out `5`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·cohort·landmarks·memories·stat · ← action·cohort·landmarks·memories·stat
+neighbors → law·thing · ← law·thing
 analysis —
 law volcano is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `c33ce1a6-6690-8d87-b478-de10b6c00750` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8acff086-484f-8986-abcf-99576ca779e5` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -23,7 +23,21 @@
 
 - partition `paganism` · sub-root `dfc6c516-71ba-8ad6-82e7-ec42ee652869`
 - bond degree `71` · analysis neighbors `diamond`
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `71` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `1f23d9a9-38b2-8845-b715-1c2f50405137` · framed by typography partition `paganism` bonds `71` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `1ce55680-7c9c-8330-8eac-6d00921299f9` · framed by typography partition `paganism` bonds `71` · `pnpm readme` · `pnpm readme:check`</sub>

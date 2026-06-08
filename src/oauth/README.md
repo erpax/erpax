@@ -25,7 +25,24 @@
 
 - partition `oauth` · sub-root `ec6c1381-8884-8822-982b-44720fc4e739`
 - bond degree `21` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `IETF RFC 6749 OAuth 2.0 (grant types, token lifecycle)` · banner
+- `IETF RFC 6750 Bearer token usage` · banner
+- `RFC-6749` · catalogue
+- `RFC-6750` · catalogue
+
+## analytics
+
+- bond degree `21` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `4`
 
 ## identity
 
@@ -41,4 +58,4 @@
 
 ---
 
-<sub>content-uuid `2602698b-880b-8f16-a28c-25831613d6d1` · framed by typography partition `oauth` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `9ce73bac-0d94-86ec-8d69-9464a8e46cbc` · framed by typography partition `oauth` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>

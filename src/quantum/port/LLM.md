@@ -3,15 +3,15 @@
 
 # port
 
-path `quantum/port` · uuid `b0215b4d-6fc3-8ccd-9b93-67f551dcea9a` · diamond `b79bbf9d-2932-8cd7-b654-f0ba0456642f`
-horo `8` `crest` · trinity `1·1·1` · sealed `1`
+path `quantum/port` · uuid `a0979db5-06b8-8941-9f38-5a39d0bda539` · diamond `9f4b0466-593c-8023-bbfd-deef4feb0192`
+horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports @/uuid/matrix · exports const · escapes —
-links `10/10` · folded `1` · bonds in `40` out `42`
+links `10/10` · folded `1` · bonds in `37` out `37`
 faces worker·plugin·pwa `1·0·0`
-neighbors → access·accounting·admin·amortize·api·calculate·chat·collapse·collections·commerce·config·database·depreciate·domain·ebitda·empirical·fields·fractal·generate·hooks·identity·jobs·law·law·manufacturing·measure·merge·merge·migrate·plugins·port·profane·quantum·queries·recover·sacred·sequence·spec·standard·sti·trinity·uuid · ← access·accounting·admin·amortize·api·calculate·chat·collapse·collections·commerce·config·database·depreciate·domain·ebitda·empirical·fields·fractal·generate·hooks·identity·jobs·law·manufacturing·measure·merge·migrate·plugins·port·profane·quantum·queries·recover·sacred·sequence·spec·standard·sti·trinity·uuid
+neighbors → access·accounting·admin·amortize·api·calculate·chat·collapse·collections·commerce·config·database·depreciate·domain·ebitda·empirical·fields·fractal·generate·hooks·identity·jobs·law·manufacturing·measure·merge·plugins·port·profane·queries·recover·sacred·sequence·spec·standard·sti·trinity · ← access·accounting·admin·amortize·api·calculate·chat·collapse·collections·commerce·config·database·depreciate·domain·ebitda·empirical·fields·fractal·generate·hooks·identity·jobs·law·manufacturing·measure·merge·plugins·port·profane·queries·recover·sacred·sequence·spec·standard·sti·trinity
 analysis —
 law the port-uuid is a pure function of the source content, so re-porting is idempotent — an unchanged source always ports to the same identity and merges to a no-op, while only a genuinely changed source yields a new one; "port all upstreams again" can run any number of times and the ported set is fixed, surfacing only the real gaps.
 
 ---
 
-<sub>content-uuid `24387ee3-67c4-87ad-aaea-bcc7596372d5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8a740dc3-3a2b-87d2-985b-62c1f33c7e0c` · `pnpm readme` · `pnpm computed:check`</sub>

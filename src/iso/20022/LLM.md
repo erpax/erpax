@@ -4,7 +4,7 @@
 # 20022
 
 path `iso/20022` · uuid `21b3b93f-5a08-8fd4-a4a3-e212db39b587` · diamond `fc96ec65-00bc-8b86-8584-a46137ab728d`
-horo `1` `base` · trinity `1·1·1` · sealed `1`
+horo `1` `base` · trinity `1·1·1` · sealed `0`
 imports — · exports AccountIdentification·BankTransactionCode·BookingStatus·Camt053Statement·Camt053Transaction·ChargeBearerCode·CreditDebitIndicator·CreditorReference·Pacs004Return·Pacs004ReturnTransaction·Pain001CreditTransfer·Pain001Initiation·Pain001Payment·Pain008DirectDebit·Pain008Initiation·Pain008Payment·PartyIdentification·PostalAddress·RemittanceInformation·isBankTransactionCodeShape·isBookingStatus·isChargeBearerCode·isCreditDebitIndicator · escapes —
 links `0/0` · folded `1` · bonds in `0` out `0`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `d815c596-b112-866c-bc52-44fe294d0e5b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `943ed268-aabe-8dc6-ab71-e1d26aef88d9` · `pnpm readme` · `pnpm computed:check`</sub>

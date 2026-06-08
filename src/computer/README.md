@@ -2,28 +2,77 @@
 
 # computer
 
-> atom `computer` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
+> atom `computer` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
+
+> account code `computer` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
+| [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
+| [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
 | [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
 | [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
 | [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
 | [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
-| Σ `7` | Σ `7` |
+| Σ `9` | Σ `9` |
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `dispatch:eb=1`
+
+### collapse
+
+- `balance:conserved`
+- `seal:sealed`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `1`
+- entry uuids `5edb6467-6c0d-83cc-a9af-1030bf2dd9af`
+- content uuids `8f044757-b82c-8def-ab7d-b2597ed3eb09` · `c74e502a-59dc-8590-8527-4af3d03ab7c8`
+
+## [[entropy]] — gaps · seals
+
+> account code `computer` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+|  | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.5` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[diamond]]/sealed `1.585` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `0` eb | Σ seal `13.085` eb |
+
+> net residual `-13.085` eb · seal/gap ratio `1` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `computer` · sub-root `ce256c56-84ac-84cc-8824-81fde105bf5b`
-- bond degree `20` · analysis neighbors —
-- graph root `0349017a-99bf-8657-ae7e-21b09f363ed4`
+- partition `computer` · sub-root `ae89383c-e32a-8ff7-a09c-469186a7d317`
+- bond degree `79` · analysis neighbors —
+- graph root `8ae3c782-7e14-8d31-8757-b5f5002ee21d`
 
 ## [[cloudflare]] bindings
 
@@ -33,18 +82,56 @@
 
 - `schema.org — the type vocabulary, collided to single words` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·5 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `20` · sealed `1` · horo `2`
-- variance `0` · balanced `1` · trinity sum `1`
+- bond degree `79` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `1`
 
 ## identity
 
-- uuid `ce256c56-84ac-84cc-8824-81fde105bf5b`
-- bonds in `6` · out `6`
-- trinity form·code·proof `1`·`0`·`0`
-- links `6` / `6`
+- uuid `8f044757-b82c-8def-ab7d-b2597ed3eb09`
+- bonds in `25` · out `25`
+- trinity form·code·proof `1`·`1`·`1`
+- links `32` / `32`
 - folded `1` · escapes `0`
 
 ## [[seal]]
@@ -53,4 +140,4 @@
 
 ---
 
-<sub>content-uuid `ca46d9df-74dd-8f01-85b3-c6df9849ff00` · framed by typography partition `computer` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `00ddbd68-7bf0-8961-bf55-63a586c16558` · framed by typography partition `computer` bonds `79` · `pnpm readme` · `pnpm readme:check`</sub>

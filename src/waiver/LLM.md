@@ -8,10 +8,10 @@ horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports waiver · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law waiver is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `ce4eebee-9d0c-84bc-b9eb-3cba4706f35b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `07dc605a-b76d-8b12-81f7-55a68c91073c` · `pnpm readme` · `pnpm computed:check`</sub>

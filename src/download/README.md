@@ -23,7 +23,7 @@
 
 - partition `download` · sub-root `4706f157-5b10-8915-876a-a0ac4f2251a8`
 - bond degree `23` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `dec53ee3-c99d-88eb-9496-fcc017d03894` · framed by typography partition `download` bonds `23` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f828d047-c6b6-8672-b31b-5e9d1dbceb1e` · framed by typography partition `download` bonds `23` · `pnpm readme` · `pnpm readme:check`</sub>

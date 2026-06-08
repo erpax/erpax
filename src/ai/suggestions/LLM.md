@@ -3,8 +3,8 @@
 
 # suggestions
 
-path `ai/suggestions` · uuid `365184af-0fed-8e23-a2f2-80494964be93` · diamond `367766da-11a0-8563-9253-9ea085983c2e`
-horo `1` `base` · trinity `1·1·1` · sealed `0`
+path `ai/suggestions` · uuid `af32093e-05c9-8651-adbb-68b9d34f7276` · diamond `ac92eef5-98d1-8a69-a07a-ffd24ae93381`
+horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports @/auth·@/base/accounting/field·@/eu/ai/act·@/standard/collection/hook · exports default · escapes —
 links `5/5` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `9e254ac4-a839-8b1e-9200-5005eb43b943` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `04150719-b4b6-8389-9115-90b3614d6616` · `pnpm readme` · `pnpm computed:check`</sub>

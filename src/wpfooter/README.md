@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `wpfooter` · sub-root `2ae71806-2bc3-8249-be1c-c15798755951`
-- bond degree `8` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `12` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `2ae71806-2bc3-8249-be1c-c15798755951`
-- bonds in `2` · out `2`
+- bonds in `4` · out `4`
 - trinity form·code·proof `1`·`0`·`0`
 - links `4` / `4`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `3180fec9-e3ed-8df2-a7e6-a9b4a17170a8` · framed by typography partition `wpfooter` bonds `8` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e74d0ef1-615b-8518-9ced-fbbf3ff05195` · framed by typography partition `wpfooter` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

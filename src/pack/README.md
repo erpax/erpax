@@ -23,7 +23,23 @@
 
 - partition `pack` · sub-root `eaa0f219-a11c-80b2-9fd6-89790168993e`
 - bond degree `12` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ISA-95` · catalogue
+- `ISO/IEC-29119` · catalogue
+- `UN-CEFACT` · catalogue
+
+## analytics
+
+- bond degree `12` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `3`
 
 ## identity
 
@@ -39,4 +55,4 @@
 
 ---
 
-<sub>content-uuid `e7b97a8e-5124-809b-8f6c-af27ae2b6476` · framed by typography partition `pack` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `66d41698-7fd8-883f-8ecb-ad854ab09a77` · framed by typography partition `pack` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

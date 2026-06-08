@@ -3,15 +3,15 @@
 
 # quotes
 
-path `customers/quotes` · uuid `a4474109-d68c-840d-b618-8d81a3c6d064` · diamond `1870c540-4262-8870-8b1d-cc4765da7c08`
-horo `8` `crest` · trinity `1·1·1` · sealed `1`
+path `customers/quotes` · uuid `1b87138f-de36-8272-9fc9-b1a90b173bb5` · diamond `a8f30355-3450-83e0-bce2-1fc1439f71c0`
+horo `1` `base` · trinity `1·1·1` · sealed `0`
 imports @/audit/trail/after/change·@/auth·@/auto/populate/created/by·@/auto/populate/tenant·@/auto/set/timestamp·@/base/accounting/field·@/enforce/segregation/of/duty · exports default · escapes —
-links `7/7` · folded `1` · bonds in `12` out `13`
+links `7/7` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `1·0·0`
-neighbors → accounting·collections·discount·fields·identity·items·law·law·orders·requisitions·standard·transaction·vendors · ← accounting·collections·discount·fields·identity·items·law·orders·requisitions·standard·transaction·vendors
+neighbors → accounting·collections·discount·fields·identity·law·orders·standard·transaction · ← accounting·collections·discount·fields·identity·law·orders·standard·transaction
 analysis —
 law a quote posts no GL entry until accepted, and its issuer can never be its approver.
 
 ---
 
-<sub>content-uuid `5cc1cc2b-85bf-8659-865e-54838a4d6840` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `647f4e0a-b4ab-86ce-90ae-43202be1db9a` · `pnpm readme` · `pnpm computed:check`</sub>

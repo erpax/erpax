@@ -8,10 +8,10 @@ horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·eligible·law·merge·sti · exports supplier · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·collide·landmarks·memories·stat · ← cohort·collide·landmarks·memories·stat
+neighbors → collapse·eligible·law·merge·sti · ← collapse·eligible·law·merge·sti
 analysis —
 law supplier is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `d81d2f2e-4ab1-86a1-8255-5d9f00629fd2` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `674f4108-49c8-87ec-9766-a56cd6f2f88c` · `pnpm readme` · `pnpm computed:check`</sub>

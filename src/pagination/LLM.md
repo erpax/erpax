@@ -9,9 +9,9 @@ imports — · exports Pagination · escapes —
 links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
 neighbors → creative·law · ← creative·law
-analysis diamond·hallucination·purity
+analysis —
 law pagination is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `76adc547-f247-8a52-b758-e7382e020507` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f4eeaae6-46e2-8d1b-8faa-14ab4b6f0d9b` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,8 +3,8 @@
 
 # demo
 
-path `demo` · uuid `c85c2149-b7b1-8d53-a362-fa3b361c6757` · diamond `c6d266e8-6213-8b89-b1b2-21cec127dd20`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `demo` · uuid `83118822-c7a1-8ab4-84b8-385921a18a91` · diamond `c5c9b023-c7f2-885b-b9e0-fd492877e0c6`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports demo · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law demo is one schema.org word, content-addressed; the same word collides every
 
 ---
 
-<sub>content-uuid `0c0772ac-e170-85e8-986d-d7cf528fe46d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a2907738-8d7c-8382-879c-cfe71c46b571` · `pnpm readme` · `pnpm computed:check`</sub>

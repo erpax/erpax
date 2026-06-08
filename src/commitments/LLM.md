@@ -3,8 +3,8 @@
 
 # commitments
 
-path `commitments` · uuid `1c409e72-72e2-8b19-9531-238f8957f17f` · diamond `ee5f2c6c-67c2-8a91-955a-f92d0a8e7bde`
-horo `1` `base` · trinity `1·1·1` · sealed `0`
+path `commitments` · uuid `3e7e0f94-6ed4-875d-9a0f-8423de66613f` · diamond `7309fce2-d8cb-8942-9a51-0853b50003cd`
+horo `5` `round` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/enforce/segregation/of/duty·@/standard/collection/hook · exports default · escapes —
 links `8/8` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law no pre-contract spend is committed without SOX §302 spending-authority vali
 
 ---
 
-<sub>content-uuid `fd3c5177-490f-8ad0-b672-9d8fccea4b05` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0972daa4-a713-8537-aea6-42855f8e4ab5` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # tuesday
 
-path `tuesday` · uuid `6b266685-b3ab-819c-99f7-2ef9371ef68f` · diamond `7383cb84-1319-8b23-819a-f1e53c457e87`
+path `tuesday` · uuid `6b266685-b3ab-819c-99f7-2ef9371ef68f` · diamond `d28c73fe-a869-8706-89ea-2e6660f8a5de`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports tuesday · escapes —
-links `4/4` · folded `1` · bonds in `6` out `6`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·cohort·landmarks·memories·referee·stat · ← action·cohort·landmarks·memories·referee·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law tuesday is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `b7e9904c-ad3d-801d-8185-f62fb81ada0d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e3ab4882-a358-8721-8da7-37e6a21bb635` · `pnpm readme` · `pnpm computed:check`</sub>

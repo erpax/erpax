@@ -3,8 +3,8 @@
 
 # acknowledgment
 
-path `acknowledgment` · uuid `225086bf-2bf2-816d-b79c-a56baf9e8c2b` · diamond `61ddb2f3-6a86-8abb-aa50-cb966a5372f9`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `acknowledgment` · uuid `0f47b704-f9bc-8529-8043-7396f519add8` · diamond `55573d36-7d9c-8be6-9e4e-60e5622e140b`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports acknowledgments·balance·document · exports acknowledgment · escapes —
 links `6/6` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `d9170543-01f6-8f7d-8c33-bd1f4520334e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `352f8466-4161-8744-9a1e-fa2155043f89` · `pnpm readme` · `pnpm computed:check`</sub>

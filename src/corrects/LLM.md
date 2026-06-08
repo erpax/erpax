@@ -3,8 +3,8 @@
 
 # corrects
 
-path `corrects` · uuid `d3189eab-a6be-8324-9e92-5e15f03d514c` · diamond `1235a2de-9168-801e-b447-e8e00b8f3d2f`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `corrects` · uuid `006dd6a2-d0e9-86a1-a935-0522dfec75cc` · diamond `1bbbb411-a316-8425-8e3b-12c0d9a0e364`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·legislation·merge·sti · exports corrects · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law corrects is one schema.org word, content-addressed; the same word collides e
 
 ---
 
-<sub>content-uuid `1163fbbd-21a3-8319-80e5-5f2357f946c3` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5fdfa76a-7489-8c53-842c-de77fe3d2f8f` · `pnpm readme` · `pnpm computed:check`</sub>

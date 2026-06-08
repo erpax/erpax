@@ -3,8 +3,8 @@
 
 # variances
 
-path `items/bills/of/materials/work/orders/cost/variances` · uuid `8abf0e36-4073-8865-acc9-55d99ee44045` · diamond `96c68e98-e6a7-8536-8125-d894370853b8`
-horo `8` `crest` · trinity `1·1·1` · sealed `1`
+path `items/bills/of/materials/work/orders/cost/variances` · uuid `f909ffb5-b172-86d8-bacc-05034f921adf` · diamond `7152c046-47bb-8a80-9a12-3b5334d81e2e`
+horo `5` `round` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
 links `12/12` · folded `1` · bonds in `12` out `12`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law generated on [[work/orders|work-order]] close, it decomposes standard vs act
 
 ---
 
-<sub>content-uuid `b4c62236-5383-84a9-a416-e9eca5f554af` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c729183b-d54c-824c-a3c2-eb573f764c87` · `pnpm readme` · `pnpm computed:check`</sub>

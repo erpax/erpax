@@ -3,7 +3,7 @@
 
 # checklist
 
-path `checklist` · uuid `1e44e6a3-360d-85ad-b19a-d4d334d9c2bd` · diamond `0f0cdf30-e282-8025-8a6d-5a70fb1d3afc`
+path `checklist` · uuid `44077540-6178-840a-9c4f-720e77d0356c` · diamond `a226d507-d39e-819d-8954-eabde4f33a9c`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports balance·checklists·document·law · exports checklist · escapes —
 links `8/8` · folded `1` · bonds in `4` out `4`
@@ -14,4 +14,4 @@ law a checklist is the singular model of one checklists row — an ordered set o
 
 ---
 
-<sub>content-uuid `30379b2f-49b6-884b-9b13-81bf5dba18f6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `29b3a28c-b86e-8735-b73c-522f6dc144c0` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,8 +3,8 @@
 
 # accessibility
 
-path `accessibility` · uuid `d83479d4-ade2-8666-b639-399e94cb4bf8` · diamond `b54bec54-6287-83c2-a145-8ecd24857a72`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `accessibility` · uuid `d899b838-0da9-8de4-9c22-a5ccf7c2e1e9` · diamond `9741d272-f1dd-8b8f-9538-b815898e709f`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports component·design·standard · exports accessibility · escapes —
 links `3/3` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `ff84b859-1035-8c67-b4c2-380d5c3cf9ce` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e225e870-5c54-8944-9bfc-0f6c3e511906` · `pnpm readme` · `pnpm computed:check`</sub>

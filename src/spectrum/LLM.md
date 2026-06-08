@@ -3,15 +3,15 @@
 
 # spectrum
 
-path `spectrum` · uuid `87a80a00-b7dd-8793-8eab-7e7609c0957c` · diamond `9f822ef1-82f3-8eec-930a-384b6d8aab1b`
+path `spectrum` · uuid `87a80a00-b7dd-8793-8eab-7e7609c0957c` · diamond `2843047a-8a44-88e3-86b8-c4dbc04d9627`
 horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports @/horo·@/leap · exports const·function·interface · escapes —
-links `16/16` · folded `1` · bonds in `6` out `6`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·differential·djmix·landmarks·memories·stat · ← cohort·differential·djmix·landmarks·memories·stat
+links `16/16` · folded `1` · bonds in `11` out `11`
+faces worker·plugin·pwa `1·0·0`
+neighbors → aura·frequency·hamiltonian·horo·law·leap·photon·quantum·series·uncertainty·wave · ← aura·frequency·hamiltonian·horo·law·leap·photon·quantum·series·uncertainty·wave
 analysis aura
 law the spectrum is the finite, deduplicated set of every leap's gap-frequency — the discrete lines sampling the continuous aura; each line is one symmetric content-uuid, so emission and absorption fold to the same coordinate and the fingerprint is tamper-evident.
 
 ---
 
-<sub>content-uuid `a6b29366-306c-8929-accf-89cd6f5a1d3d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `23fd1c66-9f77-8016-b680-3ee51e65c0d7` · `pnpm readme` · `pnpm computed:check`</sub>

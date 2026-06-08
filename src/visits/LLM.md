@@ -3,15 +3,15 @@
 
 # visits
 
-path `visits` · uuid `d58b6a36-a6d1-8fa4-886a-05f0ac5bb178` · diamond `3ccf2522-a741-8a40-9327-be252e3461aa`
+path `visits` · uuid `d58b6a36-a6d1-8fa4-886a-05f0ac5bb178` · diamond `83f26a6e-633c-85dd-acab-f0594cd7cbaf`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·page·sti·user · exports visits · escapes —
-links `6/6` · folded `1` · bonds in `10` out `10`
+links `6/6` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·balance·entity·finite·id·landmarks·progression·tour·visit·visual · ← accounting·balance·entity·finite·id·landmarks·progression·tour·visit·visual
+neighbors → collapse·law·merge·page·sti·user·visit · ← collapse·law·merge·page·sti·user·visit
 analysis —
 law visits is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `6ea74d67-2a4f-8f0c-acc3-59810c6a83dc` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3bddf3cf-4d43-8085-8f9f-d0ffa5ba2ecd` · `pnpm readme` · `pnpm computed:check`</sub>

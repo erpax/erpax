@@ -3,15 +3,15 @@
 
 # terminal
 
-path `terminal` · uuid `63de044b-6219-8bcc-a507-df855347e969` · diamond `43fe142a-3343-8f99-bc3e-22a805af9090`
+path `terminal` · uuid `63de044b-6219-8bcc-a507-df855347e969` · diamond `707148a2-6bc4-8b51-bb13-06c6481fdd7a`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports arrival·boat·collapse·departure·law·merge·sti · exports terminal · escapes —
-links `7/7` · folded `1` · bonds in `2` out `2`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → arrival·boat·collapse·departure·law·merge·sti · ← arrival·boat·collapse·departure·law·merge·sti
 analysis —
 law terminal is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `e9dab206-9fc8-8fe0-bbc8-f38393bd4739` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1529bdd6-a53e-875f-9d98-ad25482c4d42` · `pnpm readme` · `pnpm computed:check`</sub>

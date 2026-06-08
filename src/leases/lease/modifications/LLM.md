@@ -3,8 +3,8 @@
 
 # modifications
 
-path `leases/lease/modifications` · uuid `8898a650-f15b-8a73-be82-88746a959a7e` · diamond `cf136a59-522e-8259-960b-aa5f7212e275`
-horo `1` `base` · trinity `1·1·1` · sealed `1`
+path `leases/lease/modifications` · uuid `0d6325dd-0ff1-8bc5-992b-5e940204743a` · diamond `f65a8ccd-2017-8a13-8ae1-fb488bf7d724`
+horo `4` `weave` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/chain/event/emitter·@/standard/collection/hook · exports default · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `761e3cb3-6ffe-8cca-8aeb-64d241331c5b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `113db26c-48cb-8abe-82e1-c14e4f78f2c8` · `pnpm readme` · `pnpm computed:check`</sub>

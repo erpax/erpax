@@ -3,8 +3,8 @@
 
 # diagram
 
-path `diagram` · uuid `1df4a16d-c96c-8df2-a741-6aec3076e6f3` · diamond `5e8661f3-2934-8c96-9736-0e775c554cec`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `diagram` · uuid `bf5ff598-df68-8195-8c35-93243df50bc9` · diamond `7e7e66d8-9090-8224-8ba8-246ecb295ca2`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports creative·law · exports diagram · escapes —
 links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law diagram is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `5cfa78b3-f24b-8126-9f0b-a8114ae5187c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5be05a33-1642-8065-84d2-e3447f559e17` · `pnpm readme` · `pnpm computed:check`</sub>

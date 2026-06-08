@@ -3,8 +3,8 @@
 
 # clause
 
-path `clause` · uuid `ee99b7af-26d7-86d8-8f61-a9dbc1bfdc67` · diamond `807599fa-2c37-8d5f-aac6-25e32b0609ce`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `clause` · uuid `b10b0764-24b1-8d72-b14b-e30a7ffabbf0` · diamond `b6f81b40-91c9-85d3-83e2-0bd512f4b562`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports contracts·law·matter·standard · exports clause · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law a clause is the atomic unit of a contract — one distinct obligation or rig
 
 ---
 
-<sub>content-uuid `7bcf2a6d-a29b-86f0-8a31-392f98198887` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `949aa383-1c34-8985-8411-dcf2d1ddf35d` · `pnpm readme` · `pnpm computed:check`</sub>

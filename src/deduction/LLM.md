@@ -3,8 +3,8 @@
 
 # deduction
 
-path `deduction` · uuid `a24d33dd-8664-83ae-910f-cefc4cb269b8` · diamond `7debdc12-ee52-8f34-8de8-469f9e7b21aa`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `deduction` · uuid `8ce749ad-e643-80e5-b1c7-ae25b9f1fa63` · diamond `cec4f8d7-85d7-8a79-9ad9-75b458266dae`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports accrual·gl·journal·law·standard·tax·taxexempt·variance · exports deduction · escapes —
 links `10/10` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law a deduction is a tax-deductible expense classified by timing — permanent (
 
 ---
 
-<sub>content-uuid `ad93988a-cbcb-83c0-b8d8-964f1c369078` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `529de071-1eb8-87d0-8d0c-85debb965d1e` · `pnpm readme` · `pnpm computed:check`</sub>

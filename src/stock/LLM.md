@@ -3,15 +3,15 @@
 
 # stock
 
-path `stock` · uuid `111da35b-fe66-8f9d-83cc-8943b05f3126` · diamond `c7aa3996-897b-8a0b-9238-9e8a62204420`
+path `stock` · uuid `111da35b-fe66-8f9d-83cc-8943b05f3126` · diamond `fd8a41f2-be49-8f75-ab48-64ad6ce584b4`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports stock · escapes —
-links `4/4` · folded `1` · bonds in `5` out `5`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat·urologic · ← cohort·landmarks·memories·stat·urologic
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law stock is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `9aaba41b-278a-84a3-9170-644b81b4a422` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `eb72c21a-73a2-8f55-9932-172622f4546b` · `pnpm readme` · `pnpm computed:check`</sub>

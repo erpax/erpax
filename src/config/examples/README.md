@@ -2,7 +2,7 @@
 
 # examples
 
-> atom `config/examples` · horo `6` `6` · [[balance]] `1` · [[seal]] `0`
+> atom `config/examples` · horo `9` `unity` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -13,7 +13,7 @@
 | [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
 | [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[horo]]/off-ring `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
 | [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
 | [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
@@ -23,9 +23,9 @@
 
 ## typography graph
 
-- partition `config` · sub-root `6d70e9e7-e633-855e-84ff-572e1aab45d0`
-- bond degree `12` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `0349017a-99bf-8657-ae7e-21b09f363ed4`
+- partition `config` · sub-root `c9f7efd9-b1c7-84e6-886d-4c6b7e88b2c1`
+- bond degree `9` · analysis neighbors —
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -41,15 +41,53 @@
 - `ISO-3166-1:2020 country-codes` · banner
 - `ISO-4217:2015 currency-codes` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·9 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `12` · sealed `0` · horo `6`
+- bond degree `9` · sealed `0` · horo `9`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `7`
 
 ## identity
 
-- uuid `345e3c90-b864-8faf-93ce-980dfcfc1f5a`
+- uuid `dd3d97ea-e437-8fc4-b509-37a10fcb72f0`
 - bonds in `3` · out `3`
 - trinity form·code·proof `1`·`1`·`1`
 - links `5` / `5`
@@ -61,4 +99,4 @@
 
 ---
 
-<sub>content-uuid `ae839042-322e-8e54-bf2c-6a1690fd8d31` · framed by typography partition `config` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `085f0ac6-1558-8ee8-9058-c2f6c585ee18` · framed by typography partition `config` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>

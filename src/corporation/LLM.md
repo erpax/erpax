@@ -3,8 +3,8 @@
 
 # corporation
 
-path `corporation` · uuid `37e45e74-4e5c-8625-8759-14afbfa5eed7` · diamond `3c4b8277-f047-89cd-9be5-21c2c291ab83`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `corporation` · uuid `85916289-0d91-8ea6-8a73-5e39f806fc36` · diamond `f25a281b-edac-8be0-8a52-69eb48149ba7`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports law·organization·thing · exports corporation · escapes —
 links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law corporation is one schema.org word, content-addressed; the same word collide
 
 ---
 
-<sub>content-uuid `0c187c95-0e09-8cbc-b9a3-e60fe580428f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `93b52903-a723-8d71-8df6-497a692e3182` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -8,10 +8,10 @@ horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·imaging·law·measurement·medical·merge·sti · exports technique · escapes —
 links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → arrival·boarding·cohort·dentistry·landmarks·memories·stat · ← arrival·boarding·cohort·dentistry·landmarks·memories·stat
+neighbors → collapse·imaging·law·measurement·medical·merge·sti · ← collapse·imaging·law·measurement·medical·merge·sti
 analysis —
 law technique is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `0b01f655-e219-8c87-92d4-10495c47291a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `27c36bcd-6a81-878c-a48f-76baf23047ce` · `pnpm readme` · `pnpm computed:check`</sub>

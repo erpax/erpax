@@ -3,8 +3,8 @@
 
 # beds
 
-path `beds` · uuid `b8cd8793-1dc8-8866-b59c-98cb159f21b9` · diamond `33bb83cd-dd08-83aa-a3ab-ed47d97e9272`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `beds` · uuid `24e22083-2729-8737-9d6b-d8607854a218` · diamond `c08cd538-73c7-8e68-95ed-b414aa9ba669`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·cvd·icu·law·merge·num·number·occ·sti·tot · exports beds · escapes —
 links `10/10` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law beds is one schema.org word, content-addressed; the same word collides every
 
 ---
 
-<sub>content-uuid `83fe34f9-134e-809e-959a-fce2caa4040c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5910a645-6d88-8a8a-bf96-22f1863b97ac` · `pnpm readme` · `pnpm computed:check`</sub>

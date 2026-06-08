@@ -2,9 +2,11 @@
 
 # router
 
-> atom `skill/router` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
+> atom `skill/router` · horo `1` `base` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `skill/router` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,24 +23,124 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+
+### collapse
+
+- `balance:conserved`
+- `law:barrel re-export at `@/skill/router`; trinity sealed for import purity.`
+- `seal:unsealed`
+- `trigger:Use when reasoning about router — Barrel face for skill/router — re-exports the atom public surface at index.`
+- `trigger:barrel re-export at `@/skill/router`; trinity sealed for import purity.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `5630cf8a-5487-896f-8974-58e200824f0e` · `9df299eb-e0e3-8738-a6d5-f9de6a5d6f4a`
+- content uuids `82e80e3d-17ee-8cf0-ba4e-4bbcff0b4a0e` · `e7ff2bac-0c75-8c92-bd5b-60688035b2a3`
+
+## [[entropy]] — gaps · seals
+
+> account code `skill/router` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.1` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `1` eb | Σ seal `11.1` eb |
+
+> net residual `-10.1` eb · seal/gap ratio `11.1` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `skill` · sub-root `2bbdffe5-9fda-874a-ae4c-05894539a20b`
-- bond degree `3` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- partition `skill` · sub-root `f57fe0a3-fa07-86dd-9b47-1ae9c2e8007b`
+- bond degree `12` · analysis neighbors —
+- graph root `2e3a71a7-3cde-802e-9718-63cf7b3359aa`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ESCO` · catalogue
+- `SFIA` · catalogue
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·1 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `12` · sealed `0` · horo `1`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `2`
 
 ## identity
 
-- uuid `2bbdffe5-9fda-874a-ae4c-05894539a20b`
-- bonds in `1` · out `1`
+- uuid `8bee018c-4cfe-8896-82bd-eb56ac6f496c`
+- bonds in `4` · out `4`
 - trinity form·code·proof `1`·`1`·`1`
 - links `1` / `1`
 - folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `0a307b4e-6fd7-81fd-9d03-9526d1d0fd7e` · framed by typography partition `skill` bonds `3` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c5f1b97a-189a-809f-8a1d-5c982782a761` · framed by typography partition `skill` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

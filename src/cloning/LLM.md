@@ -3,15 +3,15 @@
 
 # cloning
 
-path `cloning` · uuid `4ea131a4-5375-89da-a0b2-61d7c6b569d7` · diamond `70954e9f-38b6-84b7-b481-93f3b85012fb`
-horo `7` `descent` · trinity `1·1·1` · sealed `0`
+path `cloning` · uuid `84c0f801-3e9f-8ffb-b92d-bb09628208bf` · diamond `8f8d337e-2911-8e9c-9f37-31197efccf71`
+horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports — · exports BootFailure·BootOutcome·BootSuccess·CloneIntegrityResult·CollectGenomeOptions·GenomeBundle·GenomePublication·GenomeScope·GenomeSignature·PublishSelfArgs·bootFromFederation·checkCloneIntegrity·collectGenome·computeGenomeUuid·publishSelf · escapes —
-links `15/15` · folded `1` · bonds in `18` out `17`
+links `15/15` · folded `1` · bonds in `18` out `18`
 faces worker·plugin·pwa `1·0·0`
-neighbors → anchor·communication·entanglement·fractal·holographic·identity·key·law·lineage·merge·proof·reference·replication·self·sequence·society·uuid · ← anchor·communication·entanglement·entanglement·fractal·holographic·identity·key·law·lineage·merge·proof·reference·replication·self·sequence·society·uuid
+neighbors → anchor·communication·entanglement·entanglement·fractal·holographic·identity·key·law·lineage·merge·proof·reference·replication·self·sequence·society·uuid · ← anchor·communication·entanglement·entanglement·fractal·holographic·identity·key·law·lineage·merge·proof·reference·replication·self·sequence·society·uuid
 analysis —
 law erpax serialises its own structural genome so a daughter boots bit-identical from the bundle alone — the clone is valid iff its recomputed content-[[uuid]] equals the publication's ([[merge]] same / [[proof]] tampered), reproduction without a central master.
 
 ---
 
-<sub>content-uuid `52efa0d6-9344-8293-9425-531f86f861e7` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e40d3a8f-4e9b-869b-b3fa-e9c3db0bd3f1` · `pnpm readme` · `pnpm computed:check`</sub>

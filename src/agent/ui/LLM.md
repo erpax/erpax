@@ -3,15 +3,15 @@
 
 # ui
 
-path `agent/ui` · uuid `551fe44f-61a6-84df-ada7-440b52fe1499` · diamond `d7caa8d1-c821-892a-8fb0-533ccfb23f35`
+path `agent/ui` · uuid `5ad89eab-3599-8877-a328-18e2c8786cd6` · diamond `3e025baf-2bd1-85d0-87e1-9ab83225575c`
 horo `2` `share` · trinity `1·1·1` · sealed `0`
 imports @/render·@/uuid/matrix·@/vitepress · exports function·interface · escapes —
 links `22/22` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `1·0·0`
 neighbors → atom·aura·component·design·law·pixel·render·uuid·vitepress · ← atom·aura·component·design·law·pixel·render·uuid·vitepress
-analysis aura
+analysis analytics/max-tamper-cost·aura·diamond·hallucination·purity
 law a UI agent renders identity, never paints. Every atom has a UI computed from its content-uuid — render and page — and the whole layer (pixel, component, design) agrees because it reads one identity, so nothing can drift. The trained agent covers the whole corpus: coverage 1, the aura is the corpus made visible.
 
 ---
 
-<sub>content-uuid `621bf913-af70-8c2d-9d31-69cafe276698` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `70ab2731-62dc-85a7-a792-f073e53faf38` · `pnpm readme` · `pnpm computed:check`</sub>

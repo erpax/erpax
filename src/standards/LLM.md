@@ -3,15 +3,15 @@
 
 # standards
 
-path `standards` · uuid `350d7c15-cd02-845b-88fe-43153a762a7d` · diamond `9baa9ce7-7111-8c04-8b1d-417ed93665f3`
+path `standards` · uuid `350d7c15-cd02-845b-88fe-43153a762a7d` · diamond `6a6747a8-fd61-80a9-acde-5fcc9ec4c36d`
 horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports @/base/accounting/field·@/factory · exports default · escapes —
-links `5/5` · folded `1` · bonds in `32` out `32`
-faces worker·plugin·pwa `0·0·0`
-neighbors → 38·action·active·age·approved·attrition·cardiovascular·create·deleted·diet·driving·entropy·equals·fertility·followup·funnel·imperial·issn·learning·manufacturing·measurement·opinion·participant·preparation·rating·representation·researcher·sentiment·storage·text·translator·western · ← 38·action·active·age·approved·attrition·cardiovascular·create·deleted·diet·driving·entropy·equals·fertility·followup·funnel·imperial·issn·learning·manufacturing·measurement·opinion·participant·preparation·rating·representation·researcher·sentiment·storage·text·translator·western
+links `5/5` · folded `1` · bonds in `20` out `20`
+faces worker·plugin·pwa `1·0·0`
+neighbors → accounting·agriculture·analytics·certification·factory·folder·grade·identity·jurisdictions·law·mappings·organic·proof·reference·skills·sourced·standard·topography·truth·vocabulary · ← accounting·agriculture·analytics·certification·factory·folder·grade·identity·jurisdictions·law·mappings·organic·proof·reference·skills·sourced·standard·topography·truth·vocabulary
 analysis —
 law standards are not folders — they are dissolved across `src/` as `@standard` / `@rfc` banners (the usage truth) and MEET here in one computed scan (curated registry ⊕ live banners → `catalogue.ts`) that BOTH seeds the payload `standards` collection AND renders the index; one scan, two indices, the banners the single source of truth.
 
 ---
 
-<sub>content-uuid `42e35ddd-419d-85ee-94ec-8e49c3ca4593` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `12172f64-f098-8bf0-92fe-a5cf09492b5b` · `pnpm readme` · `pnpm computed:check`</sub>

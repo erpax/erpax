@@ -3,15 +3,15 @@
 
 # resources
 
-path `bookable/resources` · uuid `6edaba9f-5bdb-8e35-a6a4-071d694fd490` · diamond `37327362-f084-8ae1-8891-f113455160af`
-horo `4` `weave` · trinity `1·1·1` · sealed `0`
-imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
-links `8/8` · folded `1` · bonds in `9` out `9`
+path `bookable/resources` · uuid `9d3ba530-2c87-852a-8eeb-7ba614ba0604` · diamond `a4b075ca-5605-8bc7-8e5a-9ecd979fddde`
+horo `8` `crest` · trinity `1·1·1` · sealed `0`
+imports @/auth·@/base/accounting/field·@/medical/device·@/standard/collection/hook · exports default · escapes —
+links `8/8` · folded `1` · bonds in `9` out `10`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·bookings·commerce·currency·identity·law·proof·requests·schedule · ← accounting·bookings·commerce·currency·identity·law·proof·requests·schedule
+neighbors → accounting·bookings·bookings·commerce·currency·identity·law·proof·requests·schedule · ← accounting·bookings·commerce·currency·identity·law·proof·requests·schedule
 analysis —
 law a bookable-resource is the agnostic master of anything reservable — one resource node (room, vehicle, equipment, slot) carrying its rate ladder and availability, paired with its [[bookable/resources/bookings]].
 
 ---
 
-<sub>content-uuid `7042c04e-f4b8-8ceb-92c8-0253989ba0c2` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4477d24e-4ee6-854d-b58d-4e6304386c51` · `pnpm readme` · `pnpm computed:check`</sub>

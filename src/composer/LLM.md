@@ -3,7 +3,7 @@
 
 # composer
 
-path `composer` · uuid `c6c97edd-f34f-816b-b4af-f03f71db6c9c` · diamond `ba888545-5a27-85cc-a4a8-39bae9d8bff9`
+path `composer` · uuid `db2166cf-3a76-88d3-bdcc-5aa862290c8a` · diamond `1eb51222-f3cd-879a-9158-35b5131eadf7`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports law·person·thing · exports composer · escapes —
 links `3/3` · folded `1` · bonds in `3` out `3`
@@ -14,4 +14,4 @@ law composer is one schema.org word, content-addressed; the same word collides e
 
 ---
 
-<sub>content-uuid `42dde0ee-35e9-8458-bf42-0d4f70430b26` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ea8aa3be-c653-8e3e-92c5-966b7d5128bb` · `pnpm readme` · `pnpm computed:check`</sub>

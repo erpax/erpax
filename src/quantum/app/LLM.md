@@ -3,8 +3,8 @@
 
 # app
 
-path `quantum/app` · uuid `0f109ddb-4304-874a-81f7-bb0455225bd1` · diamond `a7e5f80b-92b4-886b-a4d4-55a97a0c367e`
-horo `5` `round` · trinity `1·1·1` · sealed `1`
+path `quantum/app` · uuid `7eb187fb-e379-8281-be05-3bc027d19108` · diamond `77cd6693-c1c4-841f-97e1-f32501d10150`
+horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports @/uuid/matrix · exports const · escapes —
 links `15/15` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law no folder is exempt — `everyFolderIsQuantumApp()` holds iff the count of n
 
 ---
 
-<sub>content-uuid `4efbca0e-9793-8586-a1f0-9e4f9364c8df` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `850f93e8-f3c7-8521-b5ff-05ab71162b0a` · `pnpm readme` · `pnpm computed:check`</sub>

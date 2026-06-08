@@ -1,8 +1,140 @@
 ---
 name: domain
 description: "Use when modelling a tenant's domain — NOT tenant isolation (the multi-tenant plugin does that), but the domain as the tenant's identity and managed entity: the name that routes the request to the tenant, its hierarchy, status lifecycle, SSL, billing, and — the key — proof of domain ownership, which IS the computational admin grant: prove you control the domain and the tenant is yours."
+atomPath: domain
+coordinate: domain · 2/share · 218ef858
+contentUuid: "34534bb6-3f8d-5732-a8f6-9ffb6a14ea8e"
+diamondUuid: "88b29a42-9f41-8ca6-98a0-f8741aeaa1c3"
+uuid: "218ef858-9204-81ac-bf3b-dd74eb740594"
+horo: 2
+bonds:
+  in:
+    - access
+    - angel
+    - auth
+    - commerce
+    - dimension
+    - horo
+    - identity
+    - includes
+    - limit
+    - mcp
+    - merge
+    - part
+    - plugins
+    - port
+    - proof
+    - science
+    - standard
+    - tenants
+    - verification
+    - whole
+  out:
+    - access
+    - angel
+    - auth
+    - commerce
+    - dimension
+    - horo
+    - identity
+    - includes
+    - limit
+    - mcp
+    - merge
+    - part
+    - plugins
+    - port
+    - proof
+    - science
+    - standard
+    - tenants
+    - verification
+    - whole
+typography:
+  partition: domain
+  bondDegree: 66
+  neighbors: []
+standards: []
+bindings: []
+neighbors:
+  wikilink:
+    - access
+    - auth
+    - commerce
+    - horo
+    - identity
+    - limit
+    - merge
+    - part
+    - plugins
+    - port
+    - proof
+    - science
+    - standard
+    - tenants
+    - verification
+    - whole
+  matrix:
+    - access
+    - angel
+    - auth
+    - commerce
+    - dimension
+    - horo
+    - identity
+    - includes
+    - limit
+    - mcp
+    - merge
+    - part
+    - plugins
+    - port
+    - proof
+    - science
+    - standard
+    - tenants
+    - verification
+    - whole
+  backlinks:
+    - access
+    - angel
+    - auth
+    - commerce
+    - dimension
+    - horo
+    - identity
+    - includes
+    - limit
+    - mcp
+    - merge
+    - part
+    - plugins
+    - port
+    - proof
+    - science
+    - standard
+    - tenants
+    - verification
+    - whole
+signatures:
+  computationUuid: "b8582396-0e64-8cb3-b8dd-83ec854e46cf"
+  stages:
+    - stage: path
+      stageUuid: "d51a7a0f-f89c-8662-8ebd-2bb8db95d24e"
+    - stage: trinity
+      stageUuid: "2ea9c99f-61a3-8bc9-a64e-fae7e44e73cf"
+    - stage: boundary
+      stageUuid: "14ba162f-2347-8803-9755-9ea9075ef634"
+    - stage: links
+      stageUuid: "535501f4-42d8-864e-8df6-8ccedf07e910"
+    - stage: horo
+      stageUuid: "2a7f88dd-f8e2-84e7-9b95-828381207230"
+    - stage: seal
+      stageUuid: "40b59e7a-ca9a-84a8-ba93-0a07df20131c"
+    - stage: uuid
+      stageUuid: "ee5ee06c-8d96-894f-8d7b-478c87e7a61b"
+version: 2
 ---
-
 # domain — prove ownership and the tenant is yours
 
 **Tenant isolation is the plugin's** (`@payloadcms/plugin-multi-tenant` + the [[access]] cross — leave it there). The domain is *the rest*: the tenant's **address in the world** and the proof you own it. The missing link is that `tenant.domain` is not an inert string — it is the tenant's [[identity]] and the **routing key** (request host → `find_active_by_request_host(name)` → the tenant; [[port]] of `ceccec/erpax`'s `Domain`, which "acts as both a domain and a host").

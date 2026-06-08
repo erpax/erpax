@@ -3,8 +3,8 @@
 
 # compilation
 
-path `compilation` · uuid `e53458e6-7725-89b1-9972-e791cf2ad90f` · diamond `c6f16a54-dc2e-8a64-a123-5fd7d0c4e3c6`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `compilation` · uuid `4be5007c-19d4-8337-a47f-660f4a1b4bb2` · diamond `fbd7d1ea-0d94-8d02-89ed-a56c990adef1`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports compilation · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law compilation is one schema.org word, content-addressed; the same word collide
 
 ---
 
-<sub>content-uuid `d2f8d74f-cfdd-8b1b-817e-416e96b16e05` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9600b2a7-186d-8cfa-9ae0-edb9928c8558` · `pnpm readme` · `pnpm computed:check`</sub>

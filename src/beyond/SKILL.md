@@ -1,8 +1,185 @@
 ---
 name: beyond
-description: Use when implementing any next-horizon conservation primitive beyond the base laws — causal provenance, deterministic replay, tenant isolation, bitemporal queries, cost accountability, carbon-aware execution, agent capability (RBAC), post-quantum signatures, self-explainability, reversibility/crypto-shred, or AI-decision audit. The 11-primitive barrel for Laws 11–22.
+description: "Use when implementing any next-horizon conservation primitive beyond the base laws — causal provenance, deterministic replay, tenant isolation, bitemporal queries, cost accountability, carbon-aware execution, agent capability (RBAC), post-quantum signatures, self-explainability, reversibility/crypto-shred, or AI-decision audit. The 11-primitive barrel for Laws 11–22."
+atomPath: beyond
+coordinate: beyond · 1/base · 8df59e2d
+contentUuid: "1ef63d01-055a-5ca0-b038-6cfc2e59bd8b"
+diamondUuid: "2c172ca5-ab1c-8aa4-9ff2-d519285de592"
+uuid: "8df59e2d-4402-8f01-9a6c-9f67886db97f"
+horo: 1
+bonds:
+  in:
+    - access
+    - bitemporal
+    - carbon
+    - close
+    - cost
+    - duality
+    - event
+    - explainability
+    - fractal
+    - harden
+    - holographic
+    - hooks
+    - identity
+    - merge
+    - pqc
+    - privilege
+    - projection
+    - provenance
+    - replay
+    - reversibility
+    - sequence
+    - standard
+    - torus
+    - types
+  out:
+    - access
+    - bitemporal
+    - carbon
+    - close
+    - cost
+    - duality
+    - event
+    - explainability
+    - fractal
+    - harden
+    - holographic
+    - hooks
+    - identity
+    - merge
+    - pqc
+    - privilege
+    - projection
+    - provenance
+    - replay
+    - reversibility
+    - sequence
+    - standard
+    - torus
+    - types
+typography:
+  partition: beyond
+  bondDegree: 0
+  neighbors: []
+standards:
+  - "EU-2011/83"
+  - "EU-2016/679"
+  - "EU-2018/1673"
+  - "EU-2018/1725"
+  - "EU-2018/302"
+  - "EU-2018/389-SCA-RTS"
+  - "EU-2018/843"
+  - "EU-2018/957"
+  - "EU-2022/1925"
+  - "EU-2022/2065"
+  - "EU-2022/2554"
+  - "EU-2022/2555"
+  - "EU-2022/868"
+  - "EU-2024/1183"
+  - "EU-2024/1620"
+  - "EU-2024/1624"
+  - "EU-AI-Act"
+  - "EU-CSDDD-2024/1760"
+  - "EU-CSRD"
+  - "EU-ESRS"
+  - "EU-VAT-Implementing-Reg-282/2011"
+  - "GHG-Protocol"
+  - "ILO-C001"
+  - "ISO-19011"
+  - "ISO-27001"
+  - "ISO-27002"
+  - "ISO/IEC-23894"
+  - "ISO/IEC-27001:2022"
+  - "ISO/IEC-27002:2022"
+  - "NIST-SP-800-63"
+  - W3C PROV + ESRS E1 + EU AI Act + NIST FIPS 203/204
+  - "W3C-PROV-O"
+  - XBRL
+bindings: []
+neighbors:
+  wikilink:
+    - access
+    - close
+    - duality
+    - event
+    - fractal
+    - harden
+    - holographic
+    - hooks
+    - identity
+    - merge
+    - sequence
+    - standard
+  matrix:
+    - access
+    - bitemporal
+    - carbon
+    - close
+    - cost
+    - duality
+    - event
+    - explainability
+    - fractal
+    - harden
+    - holographic
+    - hooks
+    - identity
+    - merge
+    - pqc
+    - privilege
+    - projection
+    - provenance
+    - replay
+    - reversibility
+    - sequence
+    - standard
+    - torus
+    - types
+  backlinks:
+    - access
+    - bitemporal
+    - carbon
+    - close
+    - cost
+    - duality
+    - event
+    - explainability
+    - fractal
+    - harden
+    - holographic
+    - hooks
+    - identity
+    - merge
+    - pqc
+    - privilege
+    - projection
+    - provenance
+    - replay
+    - reversibility
+    - sequence
+    - standard
+    - torus
+    - types
+signatures:
+  computationUuid: "98a5b216-9e15-891b-aa6a-7e55453d0014"
+  stages:
+    - stage: path
+      stageUuid: "177106db-95e3-8019-9888-f1a8dc3d6d6e"
+    - stage: trinity
+      stageUuid: "997cf9fd-d9cd-8904-b0fc-53d0cefc29e8"
+    - stage: boundary
+      stageUuid: "aea6f962-8b09-8ad3-a0b3-7535eb9e4dcc"
+    - stage: links
+      stageUuid: "7e15f3bc-8645-88c5-bd44-5e4c30af3433"
+    - stage: horo
+      stageUuid: "3a363750-6843-8c4d-84c2-584b77f0f821"
+    - stage: seal
+      stageUuid: "75b3b9b9-bea0-85ef-8b31-9abb33117ad6"
+    - stage: uuid
+      stageUuid: "7a28d731-1508-83fd-9086-3c150fb1b03d"
+version: 2
 ---
-
 # beyond — 11 next-horizon conservation primitives (Laws 11–22)
 
 The barrel: `services/beyond/index.ts` exports all 11 law-modules (provenance, replay, tenant-isolation, bitemporal, cost, carbon, agent-capability, pqc, explainability, reversibility, ai-audit). None of the sub-modules mints its own skill; the whole folder collapses to this one antimatter twin.

@@ -2,7 +2,7 @@
 
 # merge
 
-> atom `deep/merge` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
+> atom `deep/merge` · horo `7` `descent` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -23,9 +23,9 @@
 
 ## typography graph
 
-- partition `deep` · sub-root `2b0d2543-9ee0-8258-a07b-0acb5b089364`
-- bond degree `5373` · analysis neighbors `aura`
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- partition `deep` · sub-root `fbd6fb45-3b3f-86d3-9e88-80c7fb7c435f`
+- bond degree `5419` · analysis neighbors `aura`
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -36,24 +36,62 @@
 - `semantics asserted against the live index.ts; never hand-asserted` · banner
 - `structural recursion over plain objects; arrays are opaque leaves` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·7 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `5373` · sealed `1` · horo `2`
+- bond degree `5419` · sealed `0` · horo `7`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `2`
 
 ## identity
 
-- uuid `2091437a-c6eb-8672-91c7-1797d57f8f23`
-- bonds in `1792` · out `1759`
+- uuid `fbd6fb45-3b3f-86d3-9e88-80c7fb7c435f`
+- bonds in `1791` · out `1791`
 - trinity form·code·proof `1`·`1`·`1`
 - links `4` / `4`
 - folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `79e56e49-0c91-84d8-b6fc-b8e28acad85f` · framed by typography partition `deep` bonds `5373` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `1f902686-e191-85b8-a0ce-c6948ca8c909` · framed by typography partition `deep` bonds `5419` · `pnpm readme` · `pnpm readme:check`</sub>

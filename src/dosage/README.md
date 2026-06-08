@@ -23,7 +23,7 @@
 
 - partition `dosage` · sub-root `e0afd2ff-7a39-8b88-8f24-5276649c12fc`
 - bond degree `16` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `d41523c1-e928-8cac-932c-b4120b6742b2` · framed by typography partition `dosage` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ab2346e6-ecfd-8471-944f-738dc90a2704` · framed by typography partition `dosage` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

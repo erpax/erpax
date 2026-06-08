@@ -2,9 +2,11 @@
 
 # replay
 
-> atom `beyond/replay` · horo `1` `base` · [[balance]] `1` · [[seal]] `0`
+> atom `beyond/replay` · horo `4` `weave` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `beyond/replay` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,11 +23,61 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+
+### collapse
+
+- `balance:conserved`
+- `law:the same inputs always recompute to the same [[integrity]] hash; a replay counts only when the recomputed effects-hash is byte-identical to the [[audit]] leaf's recorded output — the [[trinity]] proof holds the determinism invariant.`
+- `seal:unsealed`
+- `trigger:ISO/IEC 25010:2023 testability + reusability`
+- `trigger:ISRS 4400 agreed-upon-procedures (replay verification)`
+- `trigger:Use when an auditor demands \\\`
+- `trigger:Use when an auditor demands \\\"show me how this number was computed and reproduce it\\\" — deterministic replay re-runs a chain step and proves byte-identical output by hashing the AgentEffect sequence (timestamps stripped) and matching it against the leaf's recorded outputHash.`
+- `trigger:the same inputs always recompute to the same [[integrity]] hash; a replay counts only when the recomputed effects-hash is byte-identical to the [[audit]] leaf's recorded output — the [[trinity]] proof holds the determinism invariant.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `538f3a84-8922-868f-8ece-22875f380ae4` · `c3048904-f7cc-8b7a-aa33-4bd9cd0f15fc`
+- content uuids `ad2a7cb6-06cb-85bf-9e0a-2a89b96852f0` · `af92fed3-1c08-81aa-8a0e-7588b617152d`
+
+## [[entropy]] — gaps · seals
+
+> account code `beyond/replay` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.4` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `1` eb | Σ seal `11.4` eb |
+
+> net residual `-10.4` eb · seal/gap ratio `11.4` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `beyond` · sub-root `d5c96de6-e131-8db0-8c67-746942d1018c`
+- partition `beyond` · sub-root `ec7e7d91-7746-8185-bcbd-22a1d84517ed`
 - bond degree `15` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- graph root `86252db0-c776-84eb-b8e4-c884dca3a3ba`
 
 ## [[cloudflare]] bindings
 
@@ -37,15 +89,53 @@
 - `ISO/IEC 25010:2023 testability + reusability` · banner
 - `ISRS 4400 agreed-upon-procedures (replay verification)` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·4 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `15` · sealed `0` · horo `1`
+- bond degree `15` · sealed `0` · horo `4`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `3`
 
 ## identity
 
-- uuid `53220e35-ac53-8506-b714-2b7c70c2201c`
+- uuid `b812a842-15be-857d-a43e-d67958208b65`
 - bonds in `5` · out `5`
 - trinity form·code·proof `1`·`1`·`1`
 - links `7` / `7`
@@ -57,4 +147,4 @@
 
 ---
 
-<sub>content-uuid `70210258-b6fd-86d1-9736-47b39b5a4b9f` · framed by typography partition `beyond` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `59bdbe21-50a1-844a-85d1-cf17f32c6af0` · framed by typography partition `beyond` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

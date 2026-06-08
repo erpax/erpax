@@ -3,8 +3,8 @@
 
 # composition
 
-path `composition` · uuid `a9fb8a0e-624e-80f8-84bd-9399ea158977` · diamond `bda46651-9e61-8ad3-826b-d82c14511abb`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `composition` · uuid `a50dd1b7-a85d-8230-8855-cbd9d569edfb` · diamond `95317c6d-5088-836f-89ef-326523433781`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports chemical·collapse·form·included·law·merge·music·sti · exports composition · escapes —
 links `8/8` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law composition is one schema.org word, content-addressed; the same word collide
 
 ---
 
-<sub>content-uuid `6cfd44da-fed0-8ef1-b094-2db67f75e6ad` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1eb59770-7fd2-88de-8085-31d24a8e89a5` · `pnpm readme` · `pnpm computed:check`</sub>

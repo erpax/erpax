@@ -2,9 +2,11 @@
 
 # database
 
-> atom `database` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
+> atom `database` · horo `5` `round` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `database` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -17,13 +19,58 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `7` | Σ `7` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
+
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:stray:[[gap]]/[[diamond]]/stray/d1-column-audit.mjs`
+- `gap:trinity:[[gap]]/[[trinity]]/code`
+- `gap:trinity:[[gap]]/[[trinity]]/proof`
+
+### collapse
+
+- `balance:variance=1`
+- `law:the schema is generated from config, never hand-authored — migrations are derived artefacts (drop and regenerate, no backward-compat), and every id is a content-addressed uuid so rows merge collision-free.`
+- `seal:unsealed`
+- `trigger:Use when configuring the Payload database adapter or working with migrations/schema — choosing sqlite/d1/postgres/mongo, running migrate / migrate:create / migrate:down, dev push, transactions, indexes, defaultIDType, or fixing schema/enum/table-name errors.`
+- `trigger:the schema is generated from config, never hand-authored — migrations are derived artefacts (drop and regenerate, no backward-compat), and every id is a content-addressed uuid so rows merge collision-free.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `7a03fcc0-3a63-870d-abe7-54f77359dbfb` · `abc2c9a8-6c0a-8c4b-bdb4-b56d05d3a0c5` · `da906650-ac54-8967-a298-c45d561808a2` · `efc1a861-863e-8972-91fb-96b9d1b8c94e` · +1 more
+- content uuids `481ccd58-7d5a-8556-9b48-a855b6d68d37` · `7a8c97a1-99d0-8655-a289-3cb6a45d17fa` · `996d9939-1110-8037-b02e-11449d5f6211` · `a274205d-c485-8d4b-b102-83a9179764e4` · +1 more
+
+## [[entropy]] — gaps · seals
+
+> account code `database` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[diamond]]/stray/d1-column-audit.mjs `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[trinity]]/code `1.585` eb | [[seal]]/[[lattice]]/folded `1` eb |
+| [[gap]]/[[trinity]]/proof `1.585` eb | [[seal]]/[[links]]/resolved `1` eb |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[horo]]/ring `0.5` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+| Σ gap `5.17` eb | Σ seal `6.5` eb |
+
+> net residual `-1.33` eb · seal/gap ratio `1.257` · [[entropy]] · [[seal]]
 
 ## typography graph
 
-- partition `database` · sub-root `b341472b-4fb0-82c6-81f5-d1d04a2fc8d4`
-- bond degree `84` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- partition `database` · sub-root `f4d0d06c-d9a2-806c-b4a6-afd77a91389b`
+- bond degree `0` · analysis neighbors —
+- graph root `fc1c88b5-7998-87cb-a820-6e626bdad146`
 
 ## [[cloudflare]] bindings
 
@@ -33,24 +80,62 @@
 
 —
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unbalanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| not-held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·5 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `84` · sealed `1` · horo `8`
-- variance `0` · balanced `1` · trinity sum `1`
+- bond degree `0` · sealed `0` · horo `5`
+- variance `1` · balanced `0` · trinity sum `1`
 - bindings `1` · standards `0`
 
 ## identity
 
-- uuid `b341472b-4fb0-82c6-81f5-d1d04a2fc8d4`
-- bonds in `27` · out `26`
+- uuid `f4d0d06c-d9a2-806c-b4a6-afd77a91389b`
+- bonds in `27` · out `27`
 - trinity form·code·proof `1`·`0`·`0`
 - links `6` / `6`
 - folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `9bef86f8-8036-8109-808a-339fc15cf7ba` · framed by typography partition `database` bonds `84` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ec03c0a1-de27-8a32-a24e-161ae8407a8d` · framed by typography partition `database` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

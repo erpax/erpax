@@ -2,7 +2,7 @@
 
 # 16
 
-> atom `ifrs/16` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
+> atom `ifrs/16` · horo `1` `base` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -25,7 +25,24 @@
 
 - partition `ifrs` · sub-root `573a4dc3-4d80-8d82-bc37-84cbc3e12567`
 - bond degree `3` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `IFRS IFRS-16 leases` · banner
+- `ISO-4217:2015 currency-codes` · banner
+- `ISO/IEC-29119` · catalogue
+- `US-GAAP ASC-842-20 lessee-accounting` · banner
+
+## analytics
+
+- bond degree `3` · sealed `0` · horo `1`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `4`
 
 ## identity
 
@@ -37,8 +54,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `5244fb0d-c563-837c-9b60-8885563624b2` · framed by typography partition `ifrs` bonds `3` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `02d9d527-f507-8b7f-93dc-1a795fc9b28c` · framed by typography partition `ifrs` bonds `3` · `pnpm readme` · `pnpm readme:check`</sub>

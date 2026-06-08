@@ -3,15 +3,15 @@
 
 # tagging
 
-path `tagging` · uuid `46f55de2-fb18-8228-871f-3d6ec0697a7c` · diamond `90f762c2-6fd7-8a65-8369-f96755ec163f`
+path `tagging` · uuid `46f55de2-fb18-8228-871f-3d6ec0697a7c` · diamond `fa7dd2d3-80e1-8f8b-9503-2d7370a58b01`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports balance·tag·taggings · exports tagging · escapes —
-links `6/6` · folded `1` · bonds in `2` out `2`
+links `6/6` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → fire·landmarks · ← fire·landmarks
+neighbors → balance·tag·taggings · ← balance·tag·taggings
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `8505b7b0-bcb2-8de3-aa6f-492197a24235` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b5d1a7ff-6511-87cf-8df0-8c4c90ba6ff3` · `pnpm readme` · `pnpm computed:check`</sub>

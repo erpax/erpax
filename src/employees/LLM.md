@@ -4,7 +4,7 @@
 # employees
 
 path `employees` · uuid `5b3f05a4-e62a-818b-9b80-78df49b0b1e5` · diamond `cae9c6a3-ebff-8c21-b9f5-e56f6bf8241e`
-horo `4` `weave` · trinity `1·1·1` · sealed `1`
+horo `4` `weave` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/auto/set/timestamp·@/base/accounting/field·@/competency·@/standard/collection/hook · exports default · escapes —
 links `9/9` · folded `1` · bonds in `20` out `20`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law the employees collection is the GDPR-protected workforce master (admin/payro
 
 ---
 
-<sub>content-uuid `179016f8-6244-8bb0-8a0f-ce86a3b2e6bf` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `790460ba-d18b-85ba-b901-ddb9f29da816` · `pnpm readme` · `pnpm computed:check`</sub>

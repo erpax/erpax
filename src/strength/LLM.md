@@ -3,15 +3,15 @@
 
 # strength
 
-path `strength` · uuid `290ca453-b7d8-81b8-894e-1c248d3c18d1` · diamond `538035ab-0f7a-8259-afc3-c1f105eb1440`
+path `strength` · uuid `290ca453-b7d8-81b8-894e-1c248d3c18d1` · diamond `d9302b54-3758-8506-ac3d-1a52a35f8e33`
 horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports @/cost·@/dry·@/uuid/matrix · exports const·function · escapes —
-links `16/16` · folded `1` · bonds in `3` out `3`
-faces worker·plugin·pwa `0·0·0`
-neighbors → gtin8·landmarks·storage · ← gtin8·landmarks·storage
+links `16/16` · folded `1` · bonds in `13` out `13`
+faces worker·plugin·pwa `1·0·0`
+neighbors → available·collider·cost·digit·drug·dry·gravity·law·merge·recommendation·unit·uuid·value · ← available·collider·cost·digit·drug·dry·gravity·law·merge·recommendation·unit·uuid·value
 analysis —
 law the corpus's strength is its DRY-ness amplified by its dimensional slices — strength = coverageCostLog2(dryness, slices). Each slice (word, structural-digit, content-digit, uuid, colour, sound) is an independent check; the digit's 88.4% is one slice only. At perfect DRY — zero duplication residue, every dimension wired to one source — strength is ∞, the singularity. Any residue leaves it finite; folding repeating patterns to one raises it toward ∞.
 
 ---
 
-<sub>content-uuid `3c45e5bd-2773-8453-8e6b-44e07926230a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9ba0ff34-ac0d-845a-89d0-bd3aed5f521b` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -2,7 +2,7 @@
 
 # wave
 
-> atom `wave` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `wave` · horo `7` `descent` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -12,33 +12,34 @@
 | [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
 | [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
-| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[asset]]/[[links]]/resolved `37` | [[balance]] `37` |
+| [[balance]] `1` | [[liability]]/[[links]]/dangling `1` |
 | [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
 | [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
 | [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
-| Σ `9` | Σ `9` |
+| Σ `46` | Σ `46` |
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `wave` · sub-root `9c5202aa-94bb-8a77-ae7b-250f6a111791`
-- bond degree `35` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `73` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `9c5202aa-94bb-8a77-ae7b-250f6a111791`
-- bonds in `5` · out `5`
+- bonds in `24` · out `24`
 - trinity form·code·proof `1`·`1`·`1`
-- links `29` / `29`
+- links `37` / `38`
 - folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `383e6653-2df2-87bd-8453-818ef595638c` · framed by typography partition `wave` bonds `35` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `45e667fc-8dff-8690-8441-6ef1cf53d0cd` · framed by typography partition `wave` bonds `73` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,15 +3,15 @@
 
 # under
 
-path `under` · uuid `256fc91f-fd3e-82fd-8d48-0313930e566f` · diamond `f06be365-79a6-8c5f-803a-547bba86e67e`
+path `under` · uuid `256fc91f-fd3e-82fd-8d48-0313930e566f` · diamond `12d2ed78-742b-88dd-b8a1-3ba94e3deee3`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·name·sti · exports under · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·name·sti · ← collapse·law·merge·name·sti
 analysis —
 law under is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `18792486-2a47-8792-b5fc-d95b3b8ea6f0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8f164fed-f070-87a1-bbbf-cd7815d55f77` · `pnpm readme` · `pnpm computed:check`</sub>

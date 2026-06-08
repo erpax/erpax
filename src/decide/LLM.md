@@ -3,8 +3,8 @@
 
 # decide
 
-path `decide` · uuid `e5c5c062-faef-8e53-b163-f815f5353b77` · diamond `d486f9a8-709b-8b8d-be4a-131304b2cddc`
-horo `8` `crest` · trinity `1·1·1` · sealed `1`
+path `decide` · uuid `3d07e328-586b-83bb-8744-7e9b0cd9d4b3` · diamond `225b2ad0-f150-81cb-881d-23f5fcd92137`
+horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports @/competition·@/cost · exports function·interface · escapes —
 links `26/26` · folded `1` · bonds in `18` out `18`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law the society picks one winner by composing three selection laws into ONE func
 
 ---
 
-<sub>content-uuid `3c84461a-0aa6-86fc-9197-6afa76a53866` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8d5502a1-e335-897f-86e2-26dc0c810173` · `pnpm readme` · `pnpm computed:check`</sub>

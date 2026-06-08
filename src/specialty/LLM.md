@@ -3,15 +3,15 @@
 
 # specialty
 
-path `specialty` · uuid `4c7cc16a-27c5-8908-b130-1f5a6d9ee2dd` · diamond `aaa3d454-ef11-8eeb-af4d-ffe64067d6a6`
+path `specialty` · uuid `4c7cc16a-27c5-8908-b130-1f5a6d9ee2dd` · diamond `db179ce3-3032-88c5-a7ec-42696b8c6f7b`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports law·medical·relevant · exports specialty · escapes —
-links `3/3` · folded `1` · bonds in `10` out `10`
+links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → activity·closures·cohort·euenergy·landmarks·lnid·memories·optician·stat·tax · ← activity·closures·cohort·euenergy·landmarks·lnid·memories·optician·stat·tax
+neighbors → law·medical·relevant · ← law·medical·relevant
 analysis —
 law specialty is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `d58cfac4-6df0-8069-9a56-36719b8027d3` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e1725670-c54d-844f-bbee-0221f5f3b10e` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,8 +3,8 @@
 
 # colour
 
-path `colour` · uuid `93d856a5-c17c-8580-bacf-4ee96a851518` · diamond `d635acba-fa06-8e6f-88ed-11d6f09956f9`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `colour` · uuid `2a6026ce-5ae5-8265-8467-d24c74ba50fa` · diamond `ece77c66-a58e-8782-8158-6e8f3bde5c7a`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports colour · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law colour is one schema.org word, content-addressed; the same word collides eve
 
 ---
 
-<sub>content-uuid `823eed73-8b3d-8d14-aa28-8fdcc91afca8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ad210edd-dc65-82c3-9101-cd7fabf23b0d` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # spacing
 
-path `spacing` · uuid `cd8bc8d0-eecf-8fc2-8226-06e40db10617` · diamond `c58ae715-1f7b-8b31-9981-ec5abb4a64b7`
+path `spacing` · uuid `cd8bc8d0-eecf-8fc2-8226-06e40db10617` · diamond `a02b99bf-72fe-89ff-a1f1-f0b698b54b83`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports agriculture·bottleneck·crop·cultivation·law·measure·planting·seed·transplant·yield · exports spacing · escapes —
-links `23/23` · folded `1` · bonds in `7` out `7`
+links `23/23` · folded `1` · bonds in `13` out `13`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·map·memories·stat·tenant·vent · ← cohort·landmarks·map·memories·stat·tenant·vent
+neighbors → agriculture·bottleneck·crop·cultivation·law·measure·perennial·planting·propagation·rootstock·seed·transplant·yield · ← agriculture·bottleneck·crop·cultivation·law·measure·perennial·planting·propagation·rootstock·seed·transplant·yield
 analysis —
 law planting geometry (in-row × between-row × rows-per-bed) fixes plant density and through it the [[seed]]/[[transplant]] count and the area [[yield]] (density × per-plant yield) — but tighter is not linearly more: beyond an optimum plants compete and per-plant size falls, so yield plateaus then drops.
 
 ---
 
-<sub>content-uuid `37d211fb-85b7-83dc-8a44-dd352d6f5982` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `80265847-f398-85b3-949b-dc372c53bad6` · `pnpm readme` · `pnpm computed:check`</sub>

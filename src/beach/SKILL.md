@@ -1,8 +1,55 @@
 ---
 name: beach
-description: "Beach."
+description: Use when reasoning about beach — Beach.
+atomPath: beach
+coordinate: beach · 2/share · 05b06183
+contentUuid: "7043d108-62f6-5910-987e-aca22ebbff7b"
+diamondUuid: "2e1bdd51-7170-88b9-bd27-ab338c79a780"
+uuid: "05b06183-6db6-85fe-8dd8-77b1ad2f72e1"
+horo: 2
+bonds:
+  in:
+    - law
+    - thing
+  out:
+    - law
+    - thing
+typography:
+  partition: beach
+  bondDegree: 6
+  neighbors: []
+standards:
+  - "schema.org — the type vocabulary, collided to single words"
+bindings: []
+neighbors:
+  wikilink:
+    - law
+    - thing
+  matrix:
+    - law
+    - thing
+  backlinks:
+    - law
+    - thing
+signatures:
+  computationUuid: "885ddd93-5fa5-8b0a-b5a9-1197223fdd1a"
+  stages:
+    - stage: path
+      stageUuid: "99557f2b-15c1-8e3d-9261-c7b3b36ce639"
+    - stage: trinity
+      stageUuid: "54515475-368c-87d7-85cf-313887446206"
+    - stage: boundary
+      stageUuid: "5bbc7a7f-7903-80ce-b044-21b67ba69f4c"
+    - stage: links
+      stageUuid: "4631c57c-ad73-8afe-98c9-55c7718b3087"
+    - stage: horo
+      stageUuid: "6a9bb48f-791d-8ec3-bef2-df3dec2877ca"
+    - stage: seal
+      stageUuid: "a7ae2569-39a6-8737-a504-93a91e9e7fb5"
+    - stage: uuid
+      stageUuid: "29caac4f-4f8e-8023-9f38-fd207abfbb4d"
+version: 2
 ---
-
 # beach
 
 Beach.

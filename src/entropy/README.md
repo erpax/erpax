@@ -25,7 +25,21 @@
 
 - partition `entropy` · sub-root `725ee996-a7ae-8d46-9378-b5e04b6a00ea`
 - bond degree `291` · analysis neighbors `aura`
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `computed from the live matrix, never hand-asserted` · banner
+
+## analytics
+
+- bond degree `291` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -41,4 +55,4 @@
 
 ---
 
-<sub>content-uuid `317dbc52-d656-840b-8567-891fcd60be57` · framed by typography partition `entropy` bonds `291` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `50868f3f-3812-8baa-91a5-e878592188ec` · framed by typography partition `entropy` bonds `291` · `pnpm readme` · `pnpm readme:check`</sub>

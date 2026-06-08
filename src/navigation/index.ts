@@ -4,12 +4,25 @@
  * Sidebar · skill-router manifest · Payload admin grouping all read the SAME
  * prefix tree — never hand-listed menus. An atom at `agents/mcp/tool` lives in
  * nav group `agents → mcp`, admin group `agents`, route `/agents/mcp/tool/SKILL`.
+ * Root vocabulary nests under hub parents (`medical/clinic`, `body/abdomen`);
+ * `navPathsForGrouping` dedupes bare root leaves when a hub child exists.
  *
  *   tsx src/navigation/index.ts agents/mcp/tool
  *
  * @audit nav · group · route computed from the path only — never assigned
- * @see ../corpus -- ../vitepress -- ../compass -- ./SKILL.md
+ * @see ../corpus -- ../vitepress -- ../compass -- ./groups.ts -- ./SKILL.md
  */
+
+export {
+  NAV_HUBS,
+  ROOT_PIVOTS,
+  MEDICAL_WAVE_1,
+  BODY_FOLD_ROOT,
+  isNavHub,
+  navPathsForGrouping,
+  type NavHub,
+} from './groups'
+import { navPathsForGrouping } from './groups'
 
 /** VitePress sidebar node — folder segment with optional link and nested groups. */
 export interface NavGroup {
@@ -62,7 +75,10 @@ export function topNavAnchorsFromSequence(
   return out
 }
 
-/** Compute `nav` · `group` · `route` from one atom path (frontmatter injection). */
+/**
+ * Compute `nav` · `group` · `route` from one atom path (frontmatter injection).
+ * `group` is the first path segment — the Payload admin bucket and top nav hub.
+ */
 export function pathNavMeta(atomPath: string): PathNavMeta {
   const path = segmentsOf(atomPath)
   const nav = path.slice(0, -1)
@@ -114,12 +130,12 @@ const trieToGroups = (node: TrieNode, prefix: readonly string[], skillPaths: Rea
  * Intermediate prefixes without a listed path become group headers (no link).
  */
 export function navigationGroupsFromPaths(atomPaths: readonly string[]): readonly NavGroup[] {
+  const grouped = navPathsForGrouping(atomPaths)
   const skillPaths = new Set<string>()
   const root = trieNode()
-  for (const raw of atomPaths) {
-    const segs = segmentsOf(raw)
+  for (const key of grouped) {
+    const segs = key.split('/').filter(Boolean)
     if (!segs.length) continue
-    const key = segs.join('/')
     skillPaths.add(key)
     insertPath(root, segs)
   }

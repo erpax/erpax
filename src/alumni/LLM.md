@@ -3,8 +3,8 @@
 
 # alumni
 
-path `alumni` · uuid `f2f71982-2f97-8d6f-b6a4-707e3647a8c5` · diamond `e55e1366-11eb-8d11-b065-3d745021324e`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `alumni` · uuid `33f3c61a-6a0a-806d-8773-3f5ef84bdd31` · diamond `a4337d0b-676c-8b46-95eb-2869cb497e42`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports law·person·thing · exports alumni · escapes —
 links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law alumni is one schema.org word, content-addressed; the same word collides eve
 
 ---
 
-<sub>content-uuid `5da51a93-8ef7-83e1-b4b4-d1e8c9ef1f2c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `42152623-7754-819a-9156-31602d5b8f57` · `pnpm readme` · `pnpm computed:check`</sub>

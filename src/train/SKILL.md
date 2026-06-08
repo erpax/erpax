@@ -1,8 +1,183 @@
 ---
 name: train
-description: Use when auto-training an actor (user, employee, or agent) toward best efficiency in the app — closing the competency gap (required − held) by routing each deficit to the skillRoute that fills it, the gap priced as a decompression debt that off-gasses toward the role's M-value. Efficiency IS the pay-fraction (etrima efficiency_percent); training literally raises pay.
+description: "Use when auto-training an actor (user, employee, or agent) toward best efficiency in the app — closing the competency gap (required − held) by routing each deficit to the skillRoute that fills it, the gap priced as a decompression debt that off-gasses toward the role's M-value. Efficiency IS the pay-fraction (etrima efficiency_percent); training literally raises pay."
+atomPath: train
+coordinate: train · 2/share · 3827232d
+contentUuid: "340044d4-9e78-5ece-8e46-e6eafa7334f9"
+diamondUuid: "53c042dd-e20f-8a68-b43c-29b29d58a3fd"
+uuid: "3827232d-fc2b-8429-aed3-887d7b2c7863"
+horo: 2
+bonds:
+  in:
+    - allocation
+    - aura
+    - breath
+    - classroom
+    - command
+    - competencies
+    - decompression
+    - derive
+    - education
+    - gap
+    - generate
+    - hooks
+    - horo
+    - law
+    - llm
+    - manufacturing
+    - merge
+    - positions
+    - reservation
+    - routing
+    - science
+    - self
+    - sequence
+    - society
+    - sparsity
+    - station
+    - train
+    - training
+    - trip
+    - users
+  out:
+    - allocation
+    - aura
+    - breath
+    - classroom
+    - command
+    - competencies
+    - decompression
+    - derive
+    - education
+    - gap
+    - generate
+    - hooks
+    - horo
+    - law
+    - llm
+    - manufacturing
+    - merge
+    - positions
+    - reservation
+    - routing
+    - science
+    - self
+    - sequence
+    - society
+    - sparsity
+    - station
+    - train
+    - training
+    - trip
+    - users
+typography:
+  partition: train
+  bondDegree: 102
+  neighbors:
+    - aura
+standards:
+  - "ISO 19011 — efficiency, debt and pay are deterministic functions of the gap"
+  - "ISO 30405:2016 essential-vs-optional (mandatory gates the surface)"
+  - SFIA
+  - "SFIA 8 responsibility-levels-1-7 (the held/required/efficiency scale)"
+bindings: []
+neighbors:
+  wikilink:
+    - allocation
+    - aura
+    - decompression
+    - gap
+    - generate
+    - hooks
+    - horo
+    - law
+    - merge
+    - positions
+    - self
+    - sequence
+    - society
+    - sparsity
+  matrix:
+    - allocation
+    - aura
+    - breath
+    - classroom
+    - command
+    - competencies
+    - decompression
+    - derive
+    - education
+    - gap
+    - generate
+    - hooks
+    - horo
+    - law
+    - llm
+    - manufacturing
+    - merge
+    - positions
+    - reservation
+    - routing
+    - science
+    - self
+    - sequence
+    - society
+    - sparsity
+    - station
+    - train
+    - training
+    - trip
+    - users
+  backlinks:
+    - allocation
+    - aura
+    - breath
+    - classroom
+    - command
+    - competencies
+    - decompression
+    - derive
+    - education
+    - gap
+    - generate
+    - hooks
+    - horo
+    - law
+    - llm
+    - manufacturing
+    - merge
+    - positions
+    - reservation
+    - routing
+    - science
+    - self
+    - sequence
+    - society
+    - sparsity
+    - station
+    - train
+    - training
+    - trip
+    - users
+signatures:
+  computationUuid: "440452b3-83c7-8b74-981a-338f362dedac"
+  stages:
+    - stage: path
+      stageUuid: "a67248fb-3e0d-87f5-a3e2-ec84b3e1290e"
+    - stage: trinity
+      stageUuid: "734ba4b1-cabf-8f2a-8aba-8f1c660dec3f"
+    - stage: boundary
+      stageUuid: "d422c7fc-e05e-8cb9-8d75-8a7f7c1ab3d8"
+    - stage: links
+      stageUuid: "13392687-7c2f-8146-be8b-ee858fb75212"
+    - stage: horo
+      stageUuid: "da793291-bbc8-8428-b6d8-c446c8d675f4"
+    - stage: seal
+      stageUuid: "4212aac8-3a9b-8111-a07d-2e00f9205688"
+    - stage: uuid
+      stageUuid: "11ac1fc2-aa64-83dd-a895-5676e4a0115f"
+version: 2
 ---
-
 # train — close the competency gap, off-gas the debt, climb the pay curve
 
 FORM: **measure the actor's gap to the role, route each deficit to the skill that closes it, and let pay climb the one curve as efficiency rises.** A role's required competencies minus an actor's held competencies is the [[competency/gap]] — and that gap IS a [[decompression]] debt: capability the role demands that the actor has not yet verified. Training off-gasses it. `index.test.ts` proves the laws.

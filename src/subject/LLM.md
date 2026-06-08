@@ -3,15 +3,15 @@
 
 # subject
 
-path `subject` · uuid `99359d99-1f30-88a8-b090-da2a94214702` · diamond `ab2cb5b9-ff12-88c3-bbaa-b1a87355993b`
+path `subject` · uuid `99359d99-1f30-88a8-b090-da2a94214702` · diamond `1c30e60c-164e-82c9-a893-dffd332d2bd9`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports guideline·law·study · exports subject · escapes —
-links `3/3` · folded `1` · bonds in `2` out `2`
+links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → guideline·law·study · ← guideline·law·study
 analysis —
 law subject is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `8a91aec0-af6d-8c12-b368-fda6748c7564` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `85080be3-8c68-8897-ad2f-9f54ba917924` · `pnpm readme` · `pnpm computed:check`</sub>

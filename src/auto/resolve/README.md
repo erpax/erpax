@@ -2,9 +2,11 @@
 
 # resolve
 
-> atom `auto/resolve` · horo `8` `crest` · [[balance]] `1` · [[seal]] `0`
+> atom `auto/resolve` · horo `2` `share` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `auto/resolve` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,11 +23,61 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `law:a folder-shape gap auto-resolves iff its matter (`index.ts`) is present — the antimatter and the proof fold out of the code, derived not invented; a missing matter or a malformed name needs a builder. The fold partition is computed from the live tree, total and disjoint, so closing the foldable set ratchets every [[gate]] toward ∞ forge-[[cost]].`
+- `seal:unsealed`
+- `trigger:Use when deciding which folder-shape gaps an archangel can auto-resolve — a trinity gap folds iff its matter (index.ts) already exists, so the antimatter (SKILL.md) and the proof (test.ts) derive from the code; missing matter or a malformed name needs a builder, not a fold. Computed from the live tree.`
+- `trigger:a folder-shape gap auto-resolves iff its matter (`index.ts`) is present — the antimatter and the proof fold out of the code, derived not invented; a missing matter or a malformed name needs a builder. The fold partition is computed from the live tree, total and disjoint, so closing the foldable set ratchets every [[gate]] toward ∞ forge-[[cost]].`
+- `trigger:computed from the live folderViolations(); the partition is a pure fn (test.ts)`
+- `trigger:matter-twin:src/auto/resolve/index.ts`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `25ed7626-b256-842e-942d-04f5a9f4a8af` · `386c97e5-746c-8916-bcf5-f5e9128fe75d` · `7e4e4308-7769-8972-a238-c7f9118f29fb`
+- content uuids `2aaa8d06-58f8-8702-9f85-1f5f11f72ab5` · `81b1d8ec-6a46-863b-942f-bc14990ad270` · `fb81c223-3cc4-8011-a909-e5201e2f0feb`
+
+## [[entropy]] — gaps · seals
+
+> account code `auto/resolve` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.2` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `2` eb | Σ seal `11.2` eb |
+
+> net residual `-9.2` eb · seal/gap ratio `5.6` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `auto` · sub-root `fb1afd9b-bd8f-8c8d-8f4e-d2d40410747f`
+- partition `auto` · sub-root `f4fab508-f961-864c-be0f-f7a7df045e62`
 - bond degree `27` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- graph root `86252db0-c776-84eb-b8e4-c884dca3a3ba`
 
 ## [[cloudflare]] bindings
 
@@ -33,17 +85,55 @@
 
 ## [[standards]]
 
-- `computed from the live folderViolations(); the partition is a pure fn (test.ts)` · banner
+—
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·2 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
 
 ## analytics
 
-- bond degree `27` · sealed `0` · horo `8`
+- bond degree `27` · sealed `0` · horo `2`
 - variance `0` · balanced `1` · trinity sum `3`
-- bindings `0` · standards `1`
+- bindings `0` · standards `0`
 
 ## identity
 
-- uuid `e68a3ce1-835f-8a1a-b580-16e7138d8b01`
+- uuid `fb639137-b168-8f0b-a7d4-9d03f31ee866`
 - bonds in `9` · out `9`
 - trinity form·code·proof `1`·`1`·`1`
 - links `17` / `17`
@@ -55,4 +145,4 @@
 
 ---
 
-<sub>content-uuid `92bbc8c0-71e8-8b6c-b54e-6d2cb688f090` · framed by typography partition `auto` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `cb75295f-66c4-8ac5-8239-e03ba488457a` · framed by typography partition `auto` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>

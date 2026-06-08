@@ -3,8 +3,8 @@
 
 # covers
 
-path `covers` · uuid `c46a4fe9-f0c9-8936-bba6-519179c67049` · diamond `9cd9f3c5-6e82-89a6-a1ad-c98890380cc7`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `covers` · uuid `390a27d0-9eee-8780-b994-5f99d781cceb` · diamond `1c9998e6-ca88-8ff2-b4f3-ad63340014c0`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·geo·law·merge·sti · exports covers · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law covers is one schema.org word, content-addressed; the same word collides eve
 
 ---
 
-<sub>content-uuid `3bf534c9-4e8b-8397-8ce8-a8a5d908c201` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `11e57b1b-6155-8417-8eec-25dcdb2bc5ba` · `pnpm readme` · `pnpm computed:check`</sub>

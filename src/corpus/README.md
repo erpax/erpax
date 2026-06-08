@@ -2,7 +2,7 @@
 
 # corpus
 
-> atom `corpus` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
+> atom `corpus` · horo `7` `descent` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -19,13 +19,13 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
 
 ## typography graph
 
-- partition `corpus` · sub-root `60c3b068-6ff2-87a8-ab12-6fc6e08f1d76`
-- bond degree `3` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- partition `corpus` · sub-root `03555bb5-7a42-8884-82bd-43aeed9584ea`
+- bond degree `0` · analysis neighbors —
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -35,15 +35,53 @@
 
 —
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unbalanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| not-held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·7 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `3` · sealed `1` · horo `2`
-- variance `0` · balanced `1` · trinity sum `3`
+- bond degree `0` · sealed `0` · horo `7`
+- variance `1` · balanced `0` · trinity sum `3`
 - bindings `0` · standards `0`
 
 ## identity
 
-- uuid `60c3b068-6ff2-87a8-ab12-6fc6e08f1d76`
+- uuid `03555bb5-7a42-8884-82bd-43aeed9584ea`
 - bonds in `1` · out `1`
 - trinity form·code·proof `1`·`1`·`1`
 - links `1` / `1`
@@ -51,8 +89,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `a77667b2-5fa7-8de1-963d-9a954ff12765` · framed by typography partition `corpus` bonds `3` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `59626320-217c-8e89-bdf4-a4872904e122` · framed by typography partition `corpus` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

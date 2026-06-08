@@ -1,8 +1,278 @@
 ---
 name: signal
-description: Use when reasoning about a uuid as self-rendering media in erpax — one 128-bit uuid decodes (from the string alone) to color (cmyk) + sound (A432 Hz) + state (horo position) + identity + capability; a STREAM of uuids is interactive multimedia with no payload. Nested under identity.
+description: "Use when reasoning about a uuid as self-rendering media in erpax — one 128-bit uuid decodes (from the string alone) to color (cmyk) + sound (A432 Hz) + state (horo position) + identity + capability; a STREAM of uuids is interactive multimedia with no payload. Nested under identity."
+atomPath: identity/signal
+coordinate: identity/signal · 9/unity · b7f29a21
+contentUuid: "56cc9d68-76ab-5ce8-9e97-b17fa2918918"
+diamondUuid: "96504324-21ea-8986-b3e5-a60177a08f9b"
+uuid: "b7f29a21-a77c-8ee1-a2e9-5a60bcf4f7ff"
+horo: 9
+bonds:
+  in:
+    - all
+    - analog
+    - animism
+    - aura
+    - awareness
+    - axis
+    - bindings
+    - biomagnetism
+    - biophoton
+    - body
+    - breath
+    - broadcast
+    - chart
+    - cmyk
+    - coherence
+    - coil
+    - diamond
+    - diffusion
+    - duality
+    - flow
+    - gnosticism
+    - hamiltonian
+    - harmony
+    - horo
+    - identity
+    - law
+    - leap
+    - live
+    - llm
+    - market
+    - merge
+    - message
+    - modulation
+    - nerve
+    - notes
+    - particle
+    - phase
+    - photon
+    - pixel
+    - polarity
+    - render
+    - rodin
+    - round
+    - science
+    - sensory
+    - suffering
+    - tamper
+    - trinity
+    - unity
+    - uuid
+    - versions
+    - vibration
+  out:
+    - all
+    - analog
+    - animism
+    - aura
+    - awareness
+    - axis
+    - bindings
+    - biomagnetism
+    - biophoton
+    - body
+    - breath
+    - broadcast
+    - chart
+    - cmyk
+    - coherence
+    - coil
+    - diamond
+    - diffusion
+    - duality
+    - flow
+    - gnosticism
+    - hamiltonian
+    - harmony
+    - horo
+    - identity
+    - law
+    - leap
+    - live
+    - llm
+    - market
+    - merge
+    - message
+    - modulation
+    - nerve
+    - notes
+    - particle
+    - phase
+    - photon
+    - pixel
+    - polarity
+    - render
+    - rodin
+    - round
+    - science
+    - sensory
+    - suffering
+    - tamper
+    - trinity
+    - unity
+    - uuid
+    - versions
+    - vibration
+typography:
+  partition: identity
+  bondDegree: 173
+  neighbors:
+    - aura
+standards: []
+bindings: []
+neighbors:
+  wikilink:
+    - all
+    - analog
+    - aura
+    - axis
+    - bindings
+    - breath
+    - cmyk
+    - coil
+    - duality
+    - flow
+    - horo
+    - identity
+    - law
+    - merge
+    - notes
+    - phase
+    - polarity
+    - rodin
+    - round
+    - sensory
+    - tamper
+    - trinity
+    - unity
+    - versions
+    - vibration
+  matrix:
+    - all
+    - analog
+    - animism
+    - aura
+    - awareness
+    - axis
+    - bindings
+    - biomagnetism
+    - biophoton
+    - body
+    - breath
+    - broadcast
+    - chart
+    - cmyk
+    - coherence
+    - coil
+    - diamond
+    - diffusion
+    - duality
+    - flow
+    - gnosticism
+    - hamiltonian
+    - harmony
+    - horo
+    - identity
+    - law
+    - leap
+    - live
+    - llm
+    - market
+    - merge
+    - message
+    - modulation
+    - nerve
+    - notes
+    - particle
+    - phase
+    - photon
+    - pixel
+    - polarity
+    - render
+    - rodin
+    - round
+    - science
+    - sensory
+    - suffering
+    - tamper
+    - trinity
+    - unity
+    - uuid
+    - versions
+    - vibration
+  backlinks:
+    - all
+    - analog
+    - animism
+    - aura
+    - awareness
+    - axis
+    - bindings
+    - biomagnetism
+    - biophoton
+    - body
+    - breath
+    - broadcast
+    - chart
+    - cmyk
+    - coherence
+    - coil
+    - diamond
+    - diffusion
+    - duality
+    - flow
+    - gnosticism
+    - hamiltonian
+    - harmony
+    - horo
+    - identity
+    - law
+    - leap
+    - live
+    - llm
+    - market
+    - merge
+    - message
+    - modulation
+    - nerve
+    - notes
+    - particle
+    - phase
+    - photon
+    - pixel
+    - polarity
+    - render
+    - rodin
+    - round
+    - science
+    - sensory
+    - suffering
+    - tamper
+    - trinity
+    - unity
+    - uuid
+    - versions
+    - vibration
+signatures:
+  computationUuid: "19308ece-836d-8748-a935-9d824b2bb1b7"
+  stages:
+    - stage: path
+      stageUuid: "0215c3d3-bd72-8bee-86d8-f230bff5b25e"
+    - stage: trinity
+      stageUuid: "c505e5d3-41ea-8da4-a615-379eff28286d"
+    - stage: boundary
+      stageUuid: "6447601f-c1c1-8c3d-b1e9-074eaf05b41a"
+    - stage: links
+      stageUuid: "43a38d0a-05db-80ee-a0a2-8f33d65d26ac"
+    - stage: horo
+      stageUuid: "01aec767-6be8-8009-bd7c-ed9b70970214"
+    - stage: seal
+      stageUuid: "cd94b1ee-02f0-8825-a47b-4afefbdd1913"
+    - stage: uuid
+      stageUuid: "ff034961-ee1f-831f-a881-e448537afde0"
+version: 2
 ---
-
 # signal — a uuid renders as color + sound (a stream is multimedia)
 
 **Every object in erpax has a uuid** ([[all]] is content-addressed — [[identity]]), so *every* object — a posting, an invoice, a file, a folder's [[aura]], a row, the codebase itself — can be **presented as color animation + sound**. A uuid is not an opaque pointer — it is a **self-rendering frame**. The structured uuidv8 (`decodeStructured`) carries a [[horo]] position (the slot/state) readable **from the string alone, zero DB round-trips**, and a position decodes three ways at once:

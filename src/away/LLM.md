@@ -3,8 +3,8 @@
 
 # away
 
-path `away` · uuid `8f5e5ce7-b6f3-854e-b0a7-6f19f9af6f43` · diamond `01d6a568-9546-81ca-b63a-dfa3dce7a1d0`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `away` · uuid `e3d481b1-c30e-8f14-af33-567e7349e905` · diamond `761e55e9-c82c-82ec-886f-d97616a76236`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·team · exports away · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law away is one schema.org word, content-addressed; the same word collides every
 
 ---
 
-<sub>content-uuid `4a4fd60d-ea18-8db1-a2fd-6da10bf9eadd` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `42c5c797-b612-8092-8582-21e568545406` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,8 +3,8 @@
 
 # adjustment
 
-path `adjustment` · uuid `5c943e2c-4f20-8d26-b13e-6a14d8f2ff30` · diamond `f1c983b9-4703-8f21-8df8-1b09feb8bcf6`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `adjustment` · uuid `bff36514-9c9e-80bf-bc34-908569493811` · diamond `d8e06c49-65fc-833a-8d41-648a3668b057`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports accounting·adjustments·balance·law · exports adjustment · escapes —
 links `8/8` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law adjustment is the singular model of one correction posted against a prior fi
 
 ---
 
-<sub>content-uuid `7960d0f5-c6db-8b2b-886b-ce49e67266c2` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `96d0c54a-15c2-8d6a-97f6-9573f46e3c7f` · `pnpm readme` · `pnpm computed:check`</sub>

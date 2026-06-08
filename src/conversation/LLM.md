@@ -3,8 +3,8 @@
 
 # conversation
 
-path `conversation` · uuid `774cac65-1033-8513-af1b-dbcc79963fce` · diamond `7ce44e1a-203c-8bbb-99ba-fd63e1b6e8d3`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `conversation` · uuid `fcd279e1-877d-8d6b-88d5-03b7b5a15892` · diamond `fd4e8f7d-b218-8ea1-a2c3-7f8484c071cd`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports conversation · escapes —
 links `2/2` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law conversation is one schema.org word, content-addressed; the same word collid
 
 ---
 
-<sub>content-uuid `33813ac4-b051-8442-9d3c-20787a99860e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c7fcbd85-3dd1-84dd-a1ac-539b52161580` · `pnpm readme` · `pnpm computed:check`</sub>

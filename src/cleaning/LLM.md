@@ -3,8 +3,8 @@
 
 # cleaning
 
-path `cleaning` · uuid `6efb4cd9-2834-8675-8b50-6d06f0ed8025` · diamond `dbbb13a8-e7d6-836b-bf76-eb6270e76815`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `cleaning` · uuid `9e47fed9-68a6-8691-a580-4aaeb44f45fe` · diamond `07da5b64-53df-8d69-a91d-ede846d043f7`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·dry·laundry·law·merge·sti · exports cleaning · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law cleaning is one schema.org word, content-addressed; the same word collides e
 
 ---
 
-<sub>content-uuid `d7aec736-9621-8a24-bbbc-8b196dfe6826` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ea7eee39-0918-898a-8026-040e335ff40c` · `pnpm readme` · `pnpm computed:check`</sub>

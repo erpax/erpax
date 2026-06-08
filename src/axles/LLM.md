@@ -3,8 +3,8 @@
 
 # axles
 
-path `axles` · uuid `0f98c8a7-77ad-8308-85ca-d7d153478f55` · diamond `2f1afd22-ab71-8718-94ae-3459d3422009`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `axles` · uuid `84506ad6-971c-83ef-9843-aee1dfb0b733` · diamond `9cfdfc4f-347f-85af-9721-667a785ade60`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·number·sti · exports axles · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law axles is one schema.org word, content-addressed; the same word collides ever
 
 ---
 
-<sub>content-uuid `8cd82d31-08ec-8d34-95c6-c560f6c7c567` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3676dcfb-5a45-8ae0-8f43-cc7006cf5b2f` · `pnpm readme` · `pnpm computed:check`</sub>

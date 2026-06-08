@@ -3,7 +3,7 @@
 
 # algorithmically
 
-path `algorithmically` · uuid `d801d3e0-4253-81e9-abf0-ef1eb632f06f` · diamond `d5cbe8fb-8622-8eca-b859-d4a7aaa5886e`
+path `algorithmically` · uuid `98523f9e-13eb-8f7d-b8ac-26e4f3183bdb` · diamond `5762d234-f45a-8e95-bf73-8a7eff380e85`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports algorithmically · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
@@ -14,4 +14,4 @@ law algorithmically is one schema.org word, content-addressed; the same word col
 
 ---
 
-<sub>content-uuid `e8e075d0-e014-802a-8617-3b0de06e54d5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ad40b445-286c-87eb-b18d-1b670c9868f9` · `pnpm readme` · `pnpm computed:check`</sub>

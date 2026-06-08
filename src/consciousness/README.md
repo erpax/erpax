@@ -2,7 +2,7 @@
 
 # consciousness
 
-> atom `consciousness` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
+> atom `consciousness` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -23,9 +23,9 @@
 
 ## typography graph
 
-- partition `consciousness` · sub-root `d1085374-7ad5-87b4-9aef-692d85408886`
+- partition `consciousness` · sub-root `362b56a5-99d4-8725-bf9d-38d2a6be1141`
 - bond degree `55` · analysis neighbors —
-- graph root `0349017a-99bf-8657-ae7e-21b09f363ed4`
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -36,15 +36,53 @@
 - `computed from the live matrix, never hand-asserted` · banner
 - `RFC 9562 §5.8 content-uuid + the horo digital-root ring` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·5 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `55` · sealed `1` · horo `1`
+- bond degree `55` · sealed `1` · horo `5`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `2`
 
 ## identity
 
-- uuid `d1085374-7ad5-87b4-9aef-692d85408886`
+- uuid `362b56a5-99d4-8725-bf9d-38d2a6be1141`
 - bonds in `18` · out `18`
 - trinity form·code·proof `1`·`1`·`1`
 - links `35` / `35`
@@ -56,4 +94,4 @@
 
 ---
 
-<sub>content-uuid `762d08c8-e816-800b-993e-074dd9d3d977` · framed by typography partition `consciousness` bonds `55` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `fd6bfb87-94fc-8e6b-b7ae-19b479face39` · framed by typography partition `consciousness` bonds `55` · `pnpm readme` · `pnpm readme:check`</sub>

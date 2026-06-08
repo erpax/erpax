@@ -25,7 +25,7 @@
 
 - partition `emergence` · sub-root `a3362ea5-5b84-884b-836d-4f775a7adb16`
 - bond degree `30` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
 
 ## [[cloudflare]] bindings
 
@@ -56,4 +56,4 @@
 
 ---
 
-<sub>content-uuid `a9f967ea-f569-8105-a5d5-7b07471200bc` · framed by typography partition `emergence` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c263dd19-f36a-868b-af84-e20e33cd835a` · framed by typography partition `emergence` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>

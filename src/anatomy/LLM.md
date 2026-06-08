@@ -3,15 +3,15 @@
 
 # anatomy
 
-path `anatomy` · uuid `12a41b57-7381-88d5-9fde-0839f0438177` · diamond `797771f0-b532-83d9-9eb8-7d5c68ef6d63`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `anatomy` · uuid `91e95ccd-b6df-8434-be56-08e07363a39c` · diamond `1892746a-df2f-80f4-9764-cb87068edc51`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports associated·collapse·law·merge·related·sti·superficial · exports anatomy · escapes —
-links `7/7` · folded `1` · bonds in `7` out `7`
+links `7/7` · folded `1` · bonds in `14` out `14`
 faces worker·plugin·pwa `0·0·0`
-neighbors → associated·collapse·law·merge·related·sti·superficial · ← associated·collapse·law·merge·related·sti·superficial
+neighbors → abdomen·anatomy·arm·associated·collapse·foot·hand·head·law·leg·merge·related·sti·superficial · ← abdomen·anatomy·arm·associated·collapse·foot·hand·head·law·leg·merge·related·sti·superficial
 analysis —
 law anatomy is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `0af9529d-b61d-8c9a-b8cf-448c6eaa987f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5b767ff8-ed89-83d6-9fe8-a57840eb77fa` · `pnpm readme` · `pnpm computed:check`</sub>

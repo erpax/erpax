@@ -2,9 +2,11 @@
 
 # events
 
-> atom `api/audit/events` · horo `8` `crest` · [[balance]] `1` · [[seal]] `0`
+> atom `api/audit/events` · horo `7` `descent` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `api/audit/events` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,11 +23,59 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `law:every outbound external-API call lands one immutable row — kind-bucketed, country-scoped, source-attributed, result and error captured — so every external system contacted is provable evidence, never an untracked side-channel.`
+- `seal:unsealed`
+- `trigger:Use when recording or querying every outbound external-API call (FX rate, VAT validation, sanctions screening, e-invoicing discovery, business registry, mTLS filing) — one row per call, kind-bucketed, country-scoped, source-attributed, result + error captured; SOX §404 / ISO 19011 evidence of every external system contacted. The external-API audit-trail collection.`
+- `trigger:every outbound external-API call lands one immutable row — kind-bucketed, country-scoped, source-attributed, result and error captured — so every external system contacted is provable evidence, never an untracked side-channel.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `2e0112b3-1280-85df-80ac-8299541fd73b` · `a3aafcd2-f956-8486-a087-eaec10f779a5` · `d2ad85b6-73d4-8212-a538-8f07505edfcc`
+- content uuids `02745ac6-95c1-85b6-8bdd-eaa1fdd73d2f` · `4002f022-7fd8-881f-8834-090a5bd69ed6` · `56b59673-4458-8f64-b62c-1faba7ac87df`
+
+## [[entropy]] — gaps · seals
+
+> account code `api/audit/events` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.7` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `2` eb | Σ seal `11.7` eb |
+
+> net residual `-9.7` eb · seal/gap ratio `5.85` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `api` · sub-root `e53ea2d8-2396-80bf-8228-b488f4a66500`
-- bond degree `80` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- partition `api` · sub-root `a25a65cf-aef0-8891-a9c8-98e695f8c4a9`
+- bond degree `54` · analysis neighbors —
+- graph root `86252db0-c776-84eb-b8e4-c884dca3a3ba`
 
 ## [[cloudflare]] bindings
 
@@ -42,21 +92,58 @@
 - `EU-2018/957` · catalogue
 - `EU-Taxonomy-2020/852` · catalogue
 - `ISO-19011` · catalogue
-- `ISO-19011:2018 audit-trail` · banner
 - `ISO-19011:2018 audit-trail external-system-evidence` · banner
 - `ISO/IEC-27007:2020 isms-auditing` · banner
 - `SOX §404 internal-controls external-system-traceability` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·7 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `80` · sealed `0` · horo `8`
+- bond degree `54` · sealed `0` · horo `7`
 - variance `0` · balanced `1` · trinity sum `3`
-- bindings `0` · standards `13`
+- bindings `0` · standards `12`
 
 ## identity
 
-- uuid `6197c33f-5deb-8007-bd53-cf9866a7afb3`
-- bonds in `23` · out `27`
+- uuid `71bda6a3-8347-87c1-a6c8-0015914f3b0f`
+- bonds in `12` · out `12`
 - trinity form·code·proof `1`·`1`·`1`
 - links `6` / `6`
 - folded `1` · escapes `0`
@@ -67,4 +154,4 @@
 
 ---
 
-<sub>content-uuid `2768cddc-4e2b-8498-9290-ef982b0ce2c8` · framed by typography partition `api` bonds `80` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `81eb94b8-1c19-871d-9c96-4e55430c84ea` · framed by typography partition `api` bonds `54` · `pnpm readme` · `pnpm readme:check`</sub>

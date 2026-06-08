@@ -2,9 +2,11 @@
 
 # combinations
 
-> atom `legal/entities/business/combinations` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
+> atom `legal/entities/business/combinations` · horo `8` `crest` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `legal/entities/business/combinations` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,15 +23,125 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `law:goodwill is the residual, not an input — IFRS 3 §32 computes it as consideration + NCI + previously-held interest − fair value of identifiable net assets, so an acquisition's PPA must allocate to every asset/liability first and goodwill is whatever is left ([[accounting]] double-entry).`
+- `seal:unsealed`
+- `trigger:Use when recording an acquisition — asset deal, share deal, reverse acquisition, or NCI step-up — including IFRS 3 §32 goodwill computation, purchase price allocation (PPA) by asset/liability category, and measurement-period tracking. The IFRS 3 acquirer-side M&A register.`
+- `trigger:goodwill is the residual, not an input — IFRS 3 §32 computes it as consideration + NCI + previously-held interest − fair value of identifiable net assets, so an acquisition's PPA must allocate to every asset/liability first and goodwill is whatever is left ([[accounting]] double-entry).`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `457d3698-1e9c-8a0a-819c-5169aa30c94f` · `a2df0064-d4d1-820b-b472-04c91f825d79` · `dd17c346-cdfd-8626-a5b8-c1087cb6e53b`
+- content uuids `0467b1a2-58cf-8558-a7c6-84cbdd590dc7` · `66123fe2-d24e-8f09-aa39-dd71668f2f94` · `9e7af5cd-1ff9-89ae-996b-dbc731ef21d9`
+
+## [[entropy]] — gaps · seals
+
+> account code `legal/entities/business/combinations` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.8` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `2` eb | Σ seal `11.8` eb |
+
+> net residual `-9.8` eb · seal/gap ratio `5.9` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `legal` · sub-root `1fd2f1ff-ccee-87e0-8d80-12345443fed8`
+- partition `legal` · sub-root `e259934b-eccd-8e89-bfbe-04889c9debb1`
 - bond degree `39` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `IFRS IFRS-10 §B86 consolidation` · banner
+- `IFRS IFRS-3 §10-§13 identifying-the-acquirer` · banner
+- `IFRS IFRS-3 §18-§31 recognition-and-measurement-of-net-assets-acquired` · banner
+- `IFRS IFRS-3 §32 goodwill-or-bargain-purchase-gain` · banner
+- `IFRS IFRS-3 §B41-B49 reverse-acquisitions` · banner
+- `IFRS-3` · catalogue
+- `ISO-4217:2015 currency-codes` · banner
+- `ISO-8601-1:2019 date-time acquisition-date` · banner
+- `SOX §404 internal-controls TOM-MA-01 PPA-process` · banner
+- `US-GAAP` · catalogue
+- `US-GAAP ASC-805 business-combinations` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·8 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `39` · sealed `0` · horo `8`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `11`
 
 ## identity
 
-- uuid `0dee3d0e-d5f6-8fc2-ae2f-1b2c16edad38`
+- uuid `7ecb08ab-e0a5-8355-972f-bb5360e4ffd5`
 - bonds in `13` · out `13`
 - trinity form·code·proof `1`·`1`·`1`
 - links `11` / `11`
@@ -37,8 +149,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `9c7e84d3-612a-8f4c-9f39-64fb83de0cd4` · framed by typography partition `legal` bonds `39` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `7ecffc1e-3dc0-8077-8b98-cfc7966be1a1` · framed by typography partition `legal` bonds `39` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,8 +3,8 @@
 
 # benefit
 
-path `benefit` · uuid `09970ead-eb19-88f7-9579-4e49c28afa61` · diamond `3b9911f1-06e6-823f-aff8-dbd4e58b2910`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `benefit` · uuid `4ec2bf7e-ef75-83dd-9f3c-6cd320904b61` · diamond `099ef136-0e3a-82a0-be9e-e6b463679575`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·enumeration·has·law·merge·sti·tier · exports benefit · escapes —
 links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law benefit is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `d1762d1d-6f59-846b-b8b6-72e6314714d9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9ba7fbf4-c3f6-868e-ac47-23a2a6a69364` · `pnpm readme` · `pnpm computed:check`</sub>

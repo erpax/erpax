@@ -3,15 +3,15 @@
 
 # some
 
-path `some` · uuid `7b0aee28-cf56-8fb8-9308-b17583502e57` · diamond `13b79040-a1cc-89a8-aba5-400898144a64`
+path `some` · uuid `7b0aee28-cf56-8fb8-9308-b17583502e57` · diamond `3869a9a6-1c73-8e53-a5e1-4c32b35d7c0e`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·products·sti · exports some · escapes —
-links `5/5` · folded `1` · bonds in `2` out `2`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·spa · ← landmarks·spa
+neighbors → collapse·law·merge·products·sti · ← collapse·law·merge·products·sti
 analysis —
 law some is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `68b3a0d1-0e78-8cff-9519-06fac632bd0a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f68fb12a-42c8-8985-b693-10cfb7a8783b` · `pnpm readme` · `pnpm computed:check`</sub>

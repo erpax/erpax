@@ -2,7 +2,7 @@
 
 # consolidation
 
-> atom `intercompany/consolidation` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
+> atom `intercompany/consolidation` · horo `8` `crest` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -25,7 +25,21 @@
 
 - partition `intercompany` · sub-root `541780b1-65ee-874f-97a2-b3f661767685`
 - bond degree `14` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `14` · sealed `0` · horo `8`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -37,8 +51,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `73fa69f2-b4b2-87d6-9451-4853f2c60509` · framed by typography partition `intercompany` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `97accc74-7e4b-85b3-9a90-5b513597fb83` · framed by typography partition `intercompany` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>

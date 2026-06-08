@@ -1,10 +1,220 @@
 ---
 name: localize
-description: Use when ANY aspect must speak a locale AND stay tamper-evident — localization is the FUSION of tamper-cost (forge↑) and proof (verify, O(N) trustless). Every field/reference/scope/hook carries a translation + a translation-key uuid with ALL identification (content-digest, OID 2.25, cmyk, locale, capabilities) wired into the 128 bits. Coverage→1 ⇒ infinite tampering cost. The per-field leaf (facet localize-field) is native Payload `localized:true` over BCP-47 locales; a blank locale routes to its identity element `und`. Matter-twin localize/index.ts.
-sessions:
-  - 776a49cb-8dfb-45ab-88ff-956e3b613adf
+description: "Use when ANY aspect must speak a locale AND stay tamper-evident — localization is the FUSION of tamper-cost (forge↑) and proof (verify, O(N) trustless). Every field/reference/scope/hook carries a translation + a translation-key uuid with ALL identification (content-digest, OID 2.25, cmyk, locale, capabilities) wired into the 128 bits. Coverage→1 ⇒ infinite tampering cost. The per-field leaf (facet localize-field) is native Payload `localized:true` over BCP-47 locales; a blank locale routes to its identity element `und`. Matter-twin localize/index.ts."
+atomPath: localize
+coordinate: localize · 5/round · 7e1079c3
+contentUuid: "1329f777-5f61-54ba-8180-6e13844a99a6"
+diamondUuid: "a70457ef-a1fd-8b93-861d-6360e7a1ec11"
+uuid: "7e1079c3-3788-8b20-8cf4-c85604ed6f47"
+horo: 5
+bonds:
+  in:
+    - angel
+    - cmyk
+    - confidentiality
+    - config
+    - conversion
+    - cost
+    - decompression
+    - dimension
+    - fields
+    - fractal
+    - give
+    - horo
+    - identity
+    - lexical
+    - llm
+    - matter
+    - merge
+    - message
+    - oid
+    - privilege
+    - projection
+    - proof
+    - queries
+    - research
+    - seed
+    - standard
+    - tags
+    - take
+    - torus
+    - translate
+    - translation
+    - translations
+    - translator
+    - uuid
+    - versions
+  out:
+    - angel
+    - cmyk
+    - confidentiality
+    - config
+    - conversion
+    - cost
+    - decompression
+    - dimension
+    - fields
+    - fractal
+    - give
+    - horo
+    - identity
+    - lexical
+    - llm
+    - matter
+    - merge
+    - message
+    - oid
+    - privilege
+    - projection
+    - proof
+    - queries
+    - research
+    - seed
+    - standard
+    - tags
+    - take
+    - torus
+    - translate
+    - translation
+    - translations
+    - translator
+    - uuid
+    - versions
+typography:
+  partition: localize
+  bondDegree: 113
+  neighbors: []
+standards:
+  - "4647` (RFC 4647, Sept 2006, \"Matching of Language Tags\"; current as of 2026). Governs"
+  - "4647` alongside `@rfc 5646` wherever this skill does matching (it covers the behavior RFC 5646 does not)."
+  - "5646` (RFC 5646, Sept 2009, \"Tags for Identifying Languages\"; obsoletes RFC 4646/3066/1766; current as of 2026). Governs the"
+  - "5646` wherever this skill does matching (it covers the behavior RFC 5646 does not).\""
+  - "BCP-47 (locale tags) · EU 1958/1 (official EU languages)"
+  - "BCP-47` (no edition/version; permanently \"BCP 47\", a two-RFC IETF subseries updated by reassigning member RFCs). A locale identifier must be a well-formed, valid BCP-47 tag: hyphen-separated subtags in canonical order (`language[-extlang][-script][-region][-variant][-extension][-privateuse]`), each registered in the live IANA Language Subtag Registry (the registry, not any RFC text, is the source of truth for which subtag values are valid). The umbrella `@standard BCP-47` tag is correct as-is."
+  - "BCP-47` tag is correct as-is.\""
+  - "Conservation Law 8 (content-uuid) · 55 (tamper-reverse-cost) · 62 (coverage)"
+  - "EU-1958"
+  - "EU-2006/43"
+  - "ITU-T X.667 / ISO-IEC 9834-8 (UUID ↔ OID 2.25 arc)"
+  - "ITU-T-X667"
+  - "NIST SP 800-107r1 §5.1 (hash strengths — via tamper-cost)"
+  - "RFC 3061 (urn:oid: namespace) · RFC 4122 §3 (urn:uuid:)"
+  - "RFC 9562 §5.8 (uuidv8 structured, name-based)"
+  - "RFC-4122"
+bindings: []
+neighbors:
+  wikilink:
+    - cmyk
+    - config
+    - cost
+    - fields
+    - fractal
+    - give
+    - horo
+    - identity
+    - lexical
+    - merge
+    - oid
+    - proof
+    - queries
+    - seed
+    - standard
+    - tags
+    - take
+    - torus
+    - translations
+    - uuid
+  matrix:
+    - angel
+    - cmyk
+    - confidentiality
+    - config
+    - conversion
+    - cost
+    - decompression
+    - dimension
+    - fields
+    - fractal
+    - give
+    - horo
+    - identity
+    - lexical
+    - llm
+    - matter
+    - merge
+    - message
+    - oid
+    - privilege
+    - projection
+    - proof
+    - queries
+    - research
+    - seed
+    - standard
+    - tags
+    - take
+    - torus
+    - translate
+    - translation
+    - translations
+    - translator
+    - uuid
+    - versions
+  backlinks:
+    - angel
+    - cmyk
+    - confidentiality
+    - config
+    - conversion
+    - cost
+    - decompression
+    - dimension
+    - fields
+    - fractal
+    - give
+    - horo
+    - identity
+    - lexical
+    - llm
+    - matter
+    - merge
+    - message
+    - oid
+    - privilege
+    - projection
+    - proof
+    - queries
+    - research
+    - seed
+    - standard
+    - tags
+    - take
+    - torus
+    - translate
+    - translation
+    - translations
+    - translator
+    - uuid
+    - versions
+signatures:
+  computationUuid: "252b1d03-4b68-840b-9e95-22043cd5503f"
+  stages:
+    - stage: path
+      stageUuid: "2a33b115-eb41-89e9-a3b7-4aeb5c1c1125"
+    - stage: trinity
+      stageUuid: "f82ebb7b-0b3f-8cf3-a322-7b4e1ffb0a20"
+    - stage: boundary
+      stageUuid: "0ce870a4-f881-81e2-aca2-1e373874b949"
+    - stage: links
+      stageUuid: "e78a23a9-1081-8e22-8701-4b8888c78b39"
+    - stage: horo
+      stageUuid: "20097fa0-6d75-8f04-9ced-f4b0291ec413"
+    - stage: seal
+      stageUuid: "bcec3b7c-6409-87fb-ab6f-652154648237"
+    - stage: uuid
+      stageUuid: "57d770d4-3e83-8923-a5c1-4a2d41463429"
+version: 2
 ---
-
 # localize — localization as the tamper-cost ⊕ proof fusion
 
 Localizing every aspect is not a UX chore; it is the **fusion reaction** that secures the store. One act — translate each structural element into each locale — drives **both** nuclei at once:

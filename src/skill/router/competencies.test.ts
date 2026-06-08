@@ -25,8 +25,8 @@ describe('skill-router/competencies — the competency taxonomy computed from th
   })
 
   it('nodeToCompetency projects the corpus node exactly as the old seed did (transversal vs skill)', () => {
-    const root: SkillNode = { route: '/horo/SKILL', path: ['horo'], name: 'horo', description: 'the ring', content: '', ancestors: [], siblings: [], children: [], related: [] }
-    const leaf: SkillNode = { route: '/finance/reconciliation/SKILL', path: ['finance', 'reconciliation'], name: 'reconciliation', description: 'match', content: '', ancestors: ['finance'], siblings: [], children: [], related: [] }
+    const root: SkillNode = { route: '/horo/SKILL', path: ['horo'], name: 'horo', description: 'the ring', content: '', ancestors: [], siblings: [], children: [], related: [], nav: [], group: 'horo' }
+    const leaf: SkillNode = { route: '/finance/reconciliation/SKILL', path: ['finance', 'reconciliation'], name: 'reconciliation', description: 'match', content: '', ancestors: ['finance'], siblings: [], children: [], related: [], nav: ['finance'], group: 'finance' }
     expect(TRANSVERSAL_ROOTS.has('horo')).toBe(true)
     const r = nodeToCompetency(root)
     expect(r).toMatchObject({ skillRoute: '/horo/SKILL', reference: 'horo', subClassification: 'transversal', reusabilityLevel: 'transversal', maxProficiency: 7 })

@@ -3,7 +3,7 @@
 
 # appearance
 
-path `appearance` · uuid `39acc287-af1f-876e-a03e-4fa1d3871b26` · diamond `9db442f0-304d-8355-8a88-12af0cdfb56a`
+path `appearance` · uuid `8ef92c24-42fe-8197-8fdc-336d5d7988e2` · diamond `e9e5d854-a1ba-8aa9-aa74-136b94d144c4`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports first·item·law·media · exports appearance · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
@@ -14,4 +14,4 @@ law appearance is one schema.org word, content-addressed; the same word collides
 
 ---
 
-<sub>content-uuid `240a5a90-68f3-8e51-a9a1-1976f434f2fe` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `fc6e681d-61e3-899a-bb4e-642c1c312a80` · `pnpm readme` · `pnpm computed:check`</sub>

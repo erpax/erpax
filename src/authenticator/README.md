@@ -2,7 +2,7 @@
 
 # authenticator
 
-> atom `authenticator` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `authenticator` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -21,9 +21,9 @@
 
 ## typography graph
 
-- partition `authenticator` · sub-root `0de33f7b-b2a5-8ac4-a7ea-9284dce8d862`
+- partition `authenticator` · sub-root `40690d32-2a66-8e49-8533-f11e6deaf443`
 - bond degree `9` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- graph root `1cef4f02-a3fa-83a5-8ea0-120b724ef456`
 
 ## [[cloudflare]] bindings
 
@@ -33,15 +33,53 @@
 
 - `schema.org — the type vocabulary, collided to single words` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·4 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `9` · sealed `1` · horo `7`
+- bond degree `9` · sealed `1` · horo `4`
 - variance `0` · balanced `1` · trinity sum `1`
 - bindings `0` · standards `1`
 
 ## identity
 
-- uuid `0de33f7b-b2a5-8ac4-a7ea-9284dce8d862`
+- uuid `40690d32-2a66-8e49-8533-f11e6deaf443`
 - bonds in `3` · out `3`
 - trinity form·code·proof `1`·`0`·`0`
 - links `3` / `3`
@@ -53,4 +91,4 @@
 
 ---
 
-<sub>content-uuid `b5c8d4b3-fa01-867c-85ee-2a41ff1bc418` · framed by typography partition `authenticator` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `5c222281-c07f-8328-acd9-e0c0e02eb788` · framed by typography partition `authenticator` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>

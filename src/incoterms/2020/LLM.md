@@ -4,7 +4,7 @@
 # 2020
 
 path `incoterms/2020` · uuid `f838d825-c4fd-822e-958f-686d5cb6fe5c` · diamond `beb46e3e-fd11-8682-85bb-d997bf449659`
-horo `8` `crest` · trinity `1·1·1` · sealed `1`
+horo `8` `crest` · trinity `1·1·1` · sealed `0`
 imports — · exports Incoterm2020·const · escapes —
 links `0/0` · folded `1` · bonds in `0` out `0`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `2168dfc1-d2a9-8966-be23-d33c9a2e6d3c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b055b9fc-845e-83aa-a92e-84c5b6bc156c` · `pnpm readme` · `pnpm computed:check`</sub>

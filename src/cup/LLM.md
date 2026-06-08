@@ -3,8 +3,8 @@
 
 # cup
 
-path `cup` · uuid `e47c61af-e187-8dc8-9523-ea37b34738b3` · diamond `c72085f8-7d63-880a-8d80-6bea4112dd68`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `cup` · uuid `82eed428-91bb-8688-b87e-90456136bd14` · diamond `41409cbe-c0b4-88b3-85b2-f761b32ccb75`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports cup · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law cup is one schema.org word, content-addressed; the same word collides every 
 
 ---
 
-<sub>content-uuid `5f608983-09a3-86f5-b9a2-c5c82479239a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `01a06479-790c-8aed-a6ad-143a216fcd91` · `pnpm readme` · `pnpm computed:check`</sub>

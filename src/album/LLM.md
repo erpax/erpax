@@ -3,8 +3,8 @@
 
 # album
 
-path `album` · uuid `0f765228-39d7-80b2-a6b5-2f9a86b9fdb6` · diamond `9b487ea4-e117-8036-8808-1bef25f54e93`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `album` · uuid `2f0f5a82-9a5b-8f3c-bdbd-32357dde2e0a` · diamond `2eb227ec-357e-8c1b-8ea9-a4936b6da281`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports law·music·production·release·type · exports album · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law album is one schema.org word, content-addressed; the same word collides ever
 
 ---
 
-<sub>content-uuid `4f5ea260-d597-8f3e-bf11-17b2260d0975` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `fdf8ed40-5eb1-8f10-a8b0-586302d2611a` · `pnpm readme` · `pnpm computed:check`</sub>

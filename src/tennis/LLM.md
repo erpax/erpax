@@ -3,15 +3,15 @@
 
 # tennis
 
-path `tennis` · uuid `1538b6dd-d13d-8110-a3d4-40b09f1d2373` · diamond `50fd713e-2bd2-8c42-bba8-f7be8f7c5f50`
+path `tennis` · uuid `1538b6dd-d13d-8110-a3d4-40b09f1d2373` · diamond `9150728a-b76b-88b6-8882-89c45b0fc797`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·complex·law·merge·sti · exports tennis · escapes —
-links `5/5` · folded `1` · bonds in `7` out `7`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → 9110·accessibility·complication·complications·dermatology·landmarks·tier · ← 9110·accessibility·complication·complications·dermatology·landmarks·tier
+neighbors → collapse·complex·law·merge·sti · ← collapse·complex·law·merge·sti
 analysis —
 law tennis is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `3b7469d1-7fa4-85f2-8654-53439c8b0530` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9b2e6760-029c-826e-815a-f22b597b9637` · `pnpm readme` · `pnpm computed:check`</sub>

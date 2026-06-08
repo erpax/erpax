@@ -3,8 +3,8 @@
 
 # amendment
 
-path `amendment` · uuid `9e3aec37-b34f-8c49-ac00-c06a0f9daad1` · diamond `f773604a-fee8-8b61-baa8-68790c122cde`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `amendment` · uuid `3e40eeb8-ae34-87dc-a438-cbacef994d1d` · diamond `d13540f2-ec5f-8176-b246-401ec255f5e5`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports contracts·customers·law·matter · exports amendment · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law an amendment modifies a contract as a dated link in the chain of prior amend
 
 ---
 
-<sub>content-uuid `63ab034e-7a9e-84ab-84da-9e070289e3a1` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5af33f86-d1ae-8535-a431-933d66317579` · `pnpm readme` · `pnpm computed:check`</sub>

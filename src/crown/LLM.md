@@ -3,8 +3,8 @@
 
 # crown
 
-path `crown` · uuid `48d919a0-451b-85fa-ae41-46431d357a08` · diamond `27d61ba8-d183-8ed5-ad5b-c7452fbe23bf`
-horo `5` `round` · trinity `1·1·1` · sealed `1`
+path `crown` · uuid `2988b4d8-e2fa-83e6-885f-b8228d07ec05` · diamond `9757b709-b680-8f89-8fb8-80f9b97398df`
+horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports @/chakra · exports const · escapes —
 links `9/9` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law the crown is exactly index 6 of the seven chakra centers — it selects, nev
 
 ---
 
-<sub>content-uuid `a3c1d559-1a3a-8d3f-b209-e309fcb6df83` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e72925db-763e-87e9-b9fd-829ed9ab32c2` · `pnpm readme` · `pnpm computed:check`</sub>

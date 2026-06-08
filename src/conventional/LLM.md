@@ -3,8 +3,8 @@
 
 # conventional
 
-path `conventional` · uuid `814b1c3f-382f-89a7-9a52-95b59f4b23fe` · diamond `c046c645-f327-84b6-9023-91ed269c7bd0`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `conventional` · uuid `782cd28c-a929-83d8-8b96-2c3da520a609` · diamond `a51b69cf-b086-8b11-9ee3-4c46c3942a01`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports conventional · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law conventional is one schema.org word, content-addressed; the same word collid
 
 ---
 
-<sub>content-uuid `9fd3c344-8c2d-8575-bd3b-536f89d9d64a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f53fc734-86a5-8250-a16c-8b1cb00c8f30` · `pnpm readme` · `pnpm computed:check`</sub>

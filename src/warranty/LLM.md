@@ -3,15 +3,15 @@
 
 # warranty
 
-path `warranty` · uuid `6520bd0a-0fde-8246-86bb-ddc7a60d8815` · diamond `ddf764b5-7e43-8e8b-9051-2a26abb02713`
+path `warranty` · uuid `6520bd0a-0fde-8246-86bb-ddc7a60d8815` · diamond `795e27de-1dc6-830d-a841-d740e443ddb3`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports contracts·indemnity·liability·matter · exports warranty · escapes —
-links `4/4` · folded `1` · bonds in `19` out `19`
+links `4/4` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → age·aggregation·allocation·angel·balance·borrow·cardiovascular·coffee·credits·declaration·diffusion·dropoff·entity·has·landmarks·manufacturing·marine·max·thing · ← age·aggregation·allocation·angel·balance·borrow·cardiovascular·coffee·credits·declaration·diffusion·dropoff·entity·has·landmarks·manufacturing·marine·max·thing
+neighbors → contracts·duration·indemnity·liability·matter·promise·remediation·scope · ← contracts·duration·indemnity·liability·matter·promise·remediation·scope
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `17d71a93-bc37-807c-b6e6-77f781e6f21e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `729ab8fe-7033-84e3-bc9a-2230964cb68f` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,8 +3,8 @@
 
 # attorney
 
-path `attorney` · uuid `397816d1-5115-8802-a9dd-7730ef9c7729` · diamond `2cdcbcc5-8b75-86af-878b-9ffe53efa49d`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `attorney` · uuid `eecc92b4-09b6-8a41-9bbe-889aa6ef7fdc` · diamond `cb8850e6-f6a7-8a72-bc92-3869056947b6`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports law·person·thing · exports attorney · escapes —
 links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law attorney is one schema.org word, content-addressed; the same word collides e
 
 ---
 
-<sub>content-uuid `b8a6c793-9ad2-8fdc-8d70-76dec1d11fe9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `80bd398f-3e84-8155-8094-8669928c5557` · `pnpm readme` · `pnpm computed:check`</sub>

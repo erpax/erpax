@@ -3,15 +3,15 @@
 
 # works
 
-path `works` · uuid `ff4a3c43-266c-8ae4-85f8-c0644ae72455` · diamond `9eccd448-921c-871a-acbd-2e82497b15fb`
+path `works` · uuid `ff4a3c43-266c-8ae4-85f8-c0644ae72455` · diamond `c774d08b-782c-8a9f-91aa-7426b876c42d`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports works · escapes —
-links `2/2` · folded `1` · bonds in `5` out `5`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·only·stat · ← cohort·landmarks·memories·only·stat
+neighbors → law·thing · ← law·thing
 analysis —
 law works is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `e83de3a4-b633-86a1-be54-cd34e6a4a428` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3ecb0977-fd23-8dcd-b55f-e30eef73c2cf` · `pnpm readme` · `pnpm computed:check`</sub>

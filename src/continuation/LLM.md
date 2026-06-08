@@ -3,8 +3,8 @@
 
 # continuation
 
-path `continuation` · uuid `9a5acd66-7cca-891b-a9b4-11571d08cbec` · diamond `3a782ba4-39d5-83ef-ad2f-798494e126d8`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `continuation` · uuid `8997272f-8929-8a50-9e2a-1b850deadbe9` · diamond `c6b4c8f0-9222-8829-97ca-42f0c2f3c15d`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·toc · exports continuation · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law continuation is one schema.org word, content-addressed; the same word collid
 
 ---
 
-<sub>content-uuid `a8d9b4c0-b0c3-8047-ae06-1ab0f9cd72ff` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4ada376c-73fd-883f-8b87-89347c4c9e87` · `pnpm readme` · `pnpm computed:check`</sub>

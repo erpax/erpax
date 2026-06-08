@@ -3,15 +3,15 @@
 
 # blood
 
-path `blood` · uuid `016700eb-d572-8a5f-86eb-a56dbf097a32` · diamond `b8ad845e-f52f-8556-84e0-e89ddbb8c807`
-horo `1` `base` · trinity `1·1·1` · sealed `1`
+path `blood` · uuid `64c6394c-8450-8ecf-81c8-5d5134a2b234` · diamond `120affa0-02c5-8e27-a7c6-18efb1ea5a43`
+horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports @/conservation · exports const·function·interface · escapes —
-links `14/14` · folded `1` · bonds in `10` out `10`
+links `14/14` · folded `1` · bonds in `11` out `11`
 faces worker·plugin·pwa `1·0·0`
-neighbors → body·conservation·coverage·heart·law·lung·receipt·regeneration·supply·test · ← body·conservation·coverage·heart·law·lung·receipt·regeneration·supply·test
+neighbors → blood·body·conservation·coverage·heart·law·lung·receipt·regeneration·supply·test · ← blood·body·conservation·coverage·heart·law·lung·receipt·regeneration·supply·test
 analysis —
 law blood is the courier — it delivers value cooperatively (the sigmoidal load-full-at-lung, unload-at-tissue curve, coverage→1), is continuously regenerated yet stable (production × lifespan = the standing count), and conserves what it carries (loaded = delivered + returned, the double-entry).
 
 ---
 
-<sub>content-uuid `3c3b1151-f9e2-8684-883e-274eecbddb1d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a1dd03f4-7446-8475-9b32-53fc4b8e2470` · `pnpm readme` · `pnpm computed:check`</sub>

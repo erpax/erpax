@@ -3,7 +3,7 @@
 
 # marine
 
-path `quantum/marine` · uuid `ede57021-d23c-8359-bfc1-f9b6903c66f6` · diamond `723c1b02-17c5-89cf-8a42-8eacacbf3a3f`
+path `quantum/marine` · uuid `abe9cb7c-8b86-8717-85f3-787a9b0bcf9f` · diamond `f9657f72-33bf-87ae-a0e7-897ee95d8c10`
 horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports — · exports MaritimeZone·const·function · escapes —
 links `18/18` · folded `1` · bonds in `10` out `10`
@@ -14,4 +14,4 @@ law the sea is governed by geometry — distance from the baseline fixes the zon
 
 ---
 
-<sub>content-uuid `99705dd6-b492-80a1-8a51-f9a135940967` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `20c2e7f4-ccf4-8bdf-8c9b-94e048a092bd` · `pnpm readme` · `pnpm computed:check`</sub>

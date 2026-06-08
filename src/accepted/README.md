@@ -2,9 +2,11 @@
 
 # accepted
 
-> atom `accepted` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
+> atom `accepted` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
+
+> account code `accepted` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -19,11 +21,59 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:trinity:[[gap]]/[[trinity]]/code`
+- `gap:trinity:[[gap]]/[[trinity]]/proof`
+
+### collapse
+
+- `balance:conserved`
+- `law:accepted is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.`
+- `seal:sealed`
+- `trigger:Use when reasoning about accepted as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.`
+- `trigger:accepted is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.`
+- `trigger:schema.org — the type vocabulary, collided to single words`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `1`
+- entry uuids `170c1f8e-e141-87e0-a99f-54d5afb31aea` · `4048efc2-f7de-827c-8a82-88c35073cd45` · `88df4639-c67c-846c-93a2-305f3d688b81`
+- content uuids `7008ef5a-fbc6-894d-9a07-bb6b2ebb5939` · `a9341be2-4f1d-82c7-a221-dbadbf485aeb` · `b95ca92f-764b-8ac9-9012-1baae39dcd55` · `ec7fa332-6020-8b7f-8318-36c6f434dd45`
+
+## [[entropy]] — gaps · seals
+
+> account code `accepted` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[trinity]]/code `1.585` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[trinity]]/proof `1.585` eb | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.7` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[diamond]]/sealed `1.585` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `3.17` eb | Σ seal `11.285` eb |
+
+> net residual `-8.115` eb · seal/gap ratio `3.56` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `accepted` · sub-root `3e1cd6f1-6632-8951-b3fd-fd308c16092a`
+- partition `accepted` · sub-root `a9341be2-4f1d-82c7-a221-dbadbf485aeb`
 - bond degree `30` · analysis neighbors —
-- graph root `06810c2c-2396-831f-a2b3-a58706a17051`
+- graph root `e2ef5c1f-42ed-8f9f-ac69-25711349ebff`
 
 ## [[cloudflare]] bindings
 
@@ -34,15 +84,53 @@
 - `schema.org` · catalogue
 - `schema.org — the type vocabulary, collided to single words` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·7 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `30` · sealed `1` · horo `2`
+- bond degree `30` · sealed `1` · horo `7`
 - variance `0` · balanced `1` · trinity sum `1`
 - bindings `0` · standards `2`
 
 ## identity
 
-- uuid `3e1cd6f1-6632-8951-b3fd-fd308c16092a`
+- uuid `a9341be2-4f1d-82c7-a221-dbadbf485aeb`
 - bonds in `9` · out `9`
 - trinity form·code·proof `1`·`0`·`0`
 - links `9` / `9`
@@ -54,4 +142,4 @@
 
 ---
 
-<sub>content-uuid `43a5ab58-89c4-848f-a4c9-b0b5f792d406` · framed by typography partition `accepted` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `04a749b2-e62e-80d5-860d-112bd32efd71` · framed by typography partition `accepted` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>

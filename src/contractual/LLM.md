@@ -3,8 +3,8 @@
 
 # contractual
 
-path `contractual` · uuid `773e4b67-7057-8506-a5ef-9fbaa57e1e2b` · diamond `6acfa5fe-2f95-86ef-a4fe-f5d0a63b92de`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `contractual` · uuid `8290ca36-9e5c-8405-819c-4dd9852f910f` · diamond `8c5041a2-d3a4-88ea-b381-4bebe4cdca0f`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports contractual · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law contractual is one schema.org word, content-addressed; the same word collide
 
 ---
 
-<sub>content-uuid `0fa069d6-dad0-80c0-b430-45ed2bfd354a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1e7d32a3-f5fe-8ebf-808c-64cae4da75af` · `pnpm readme` · `pnpm computed:check`</sub>

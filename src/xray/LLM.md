@@ -3,15 +3,15 @@
 
 # xray
 
-path `xray` · uuid `674ce88a-61ff-8584-baaa-f447b174d1cd` · diamond `2a36fd57-28e1-8183-94d4-376a27953e9e`
+path `xray` · uuid `674ce88a-61ff-8584-baaa-f447b174d1cd` · diamond `d01acf53-f35a-85a5-a5c8-ba01e6383170`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports xray · escapes —
-links `4/4` · folded `1` · bonds in `0` out `0`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law xray is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `b98b43ff-0177-8df5-8327-8e7bfbbc497d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `892edbf7-f3cd-8a46-a8c8-f2539ace713a` · `pnpm readme` · `pnpm computed:check`</sub>

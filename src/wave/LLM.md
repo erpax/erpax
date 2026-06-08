@@ -3,15 +3,15 @@
 
 # wave
 
-path `wave` · uuid `9c5202aa-94bb-8a77-ae7b-250f6a111791` · diamond `f2180ce1-752d-8f59-abe5-42a37c6182fc`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+path `wave` · uuid `9c5202aa-94bb-8a77-ae7b-250f6a111791` · diamond `cb4b2421-2f8a-8f8b-b737-ff4e9954e7d5`
+horo `7` `descent` · trinity `1·1·1` · sealed `0`
 imports @/duality·@/entropy·@/horo·@/trinity·@/uuid/matrix · exports const·function·interface · escapes —
-links `29/29` · folded `1` · bonds in `5` out `5`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat·statistic · ← cohort·landmarks·memories·stat·statistic
+links `37/38` · folded `1` · bonds in `24` out `24`
+faces worker·plugin·pwa `1·0·0`
+neighbors → barrier·body·breath·collapse·decoherence·development·duality·entropy·feature·flow·horo·interference·law·leap·lung·matrix·merge·photon·sequence·spectrum·superposition·trinity·uncertainty·uuid · ← barrier·body·breath·collapse·decoherence·development·duality·entropy·feature·flow·horo·interference·law·leap·lung·matrix·merge·photon·sequence·spectrum·superposition·trinity·uncertainty·uuid
 analysis —
-law a wave is the EXHALE half of the breath — it ADDS features and so RAISES entropy on purpose; the collide is deferred and will DRY the wave back to the dense core. Never collapse while waving; never wave without later collapsing. The borrowed entropy is the charge the collide discharges back to zero.
+law a wave is the EXHALE half of the breath — it ADDS features and so RAISES entropy on purpose; the collide is deferred and will DRY the wave back to the dense core. Never collapse while waving; never wave without later collapsing. The borrowed entropy is the charge the collide discharges back to zero. Coordination waves are in coordinated secure communications ([[team]] · [[realtime]] · [[receipt]] · [[chat]]).
 
 ---
 
-<sub>content-uuid `e442c7b3-890b-8ac4-9d06-f267ae82f4a1` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8f0abd10-ef43-8278-b053-e9fa82789046` · `pnpm readme` · `pnpm computed:check`</sub>

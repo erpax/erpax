@@ -2,9 +2,11 @@
 
 # emissions
 
-> atom `fiscal/periods/carbon/emissions` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
+> atom `fiscal/periods/carbon/emissions` · horo `7` `descent` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `fiscal/periods/carbon/emissions` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,15 +23,136 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `law:every emission row computes tCO2e as activity-data × emission-factor and is classified into exactly one GHG scope (1 direct · 2 purchased energy · 3 value-chain) — the ESRS E1 disclosure total is the audited sum of these events, substantiated by ISAE 3410 verification, never a top-down figure.`
+- `seal:unsealed`
+- `trigger:Use when recording or auditing GHG emissions — Scope 1 direct, Scope 2 purchased energy, Scope 3 value-chain (15 sub-categories); computing tCO2e via activity-data × emission-factor; third-party ISAE 3410 verification; substantiating ESRS E1 §44-50 disclosure totals or EU CBAM filings. The GHG emission event register.`
+- `trigger:every emission row computes tCO2e as activity-data × emission-factor and is classified into exactly one GHG scope (1 direct · 2 purchased energy · 3 value-chain) — the ESRS E1 disclosure total is the audited sum of these events, substantiated by ISAE 3410 verification, never a top-down figure.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `4b06f05e-0ca6-83b2-b7fe-39cbfffa6d79` · `a4cfff91-7ba7-84f5-ad2d-726e6856f170` · `d62f0fb8-2072-8dcf-b26b-b422280e1dd6`
+- content uuids `43bf09a2-1140-85ba-b877-410ff8d6839e` · `82e4b416-408a-8ffe-a449-7165a6375c76` · `8ba8c9f2-5302-86b1-b4c8-34f0fae0083a`
+
+## [[entropy]] — gaps · seals
+
+> account code `fiscal/periods/carbon/emissions` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.7` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `2` eb | Σ seal `11.7` eb |
+
+> net residual `-9.7` eb · seal/gap ratio `5.85` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `fiscal` · sub-root `cf5aa98e-ebac-8e2a-ac4c-50b4ac28b0e6`
+- partition `fiscal` · sub-root `750f5b34-3dbd-8426-a310-55cde4a93bd3`
 - bond degree `22` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `EU CBAM Carbon Border Adjustment Mechanism (when applicable)` · banner
+- `EU ESRS E1 §44-50 ghg-emissions-disclosure` · banner
+- `EU ESRS E1 AR-25 location-vs-market-based` · banner
+- `EU SFDR PAI 1 ghg-emissions` · banner
+- `EU Taxonomy DNSH climate-mitigation` · banner
+- `EU-2011/83` · catalogue
+- `EU-2018/1673` · catalogue
+- `EU-2018/1725` · catalogue
+- `EU-2018/302` · catalogue
+- `EU-2018/389-SCA-RTS` · catalogue
+- `EU-2018/843` · catalogue
+- `EU-2018/957` · catalogue
+- `EU-ESRS` · catalogue
+- `EU-VAT-Implementing-Reg-282/2011` · catalogue
+- `GHG Protocol Corporate Standard (revised 2015)` · banner
+- `GHG Protocol Scope 2 Guidance (2015)` · banner
+- `GHG Protocol Scope 3 Standard (2011)` · banner
+- `GHG-Protocol` · catalogue
+- `IFRS S2 §29-32 climate-related-metrics` · banner
+- `ISO 14064-1:2018 organisation-level-ghg-quantification` · banner
+- `ISO 14067:2018 carbon-footprint-of-products` · banner
+- `ISO-14064-1` · catalogue
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·7 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `22` · sealed `0` · horo `7`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `22`
 
 ## identity
 
-- uuid `cc8dc717-8e57-899f-ac23-1c1a7da89fdc`
+- uuid `702132f7-97dd-8cad-9a7c-25de6ea5fe2b`
 - bonds in `7` · out `7`
 - trinity form·code·proof `1`·`1`·`1`
 - links `6` / `6`
@@ -37,8 +160,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `22f20e7c-1f1e-8bd1-afe7-de51cfb50311` · framed by typography partition `fiscal` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a6e17331-1243-837c-aabc-3b025505f784` · framed by typography partition `fiscal` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>

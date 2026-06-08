@@ -27,11 +27,17 @@ import { join, relative } from 'node:path'
 
 const requireAtom = createRequire(import.meta.url)
 import { toAtomPath } from '@/path'
-import { deriveFolderModel, buildFolderReadmeContext, type FolderReadmeModel } from '@/readme'
+import {
+  deriveFolderModel,
+  buildFolderReadmeContext,
+  buildReadmeTypographyGraph,
+  type FolderReadmeModel,
+} from '@/readme'
 import { methodPath, atomPathOf, parseMethodExports, type MethodDiamond } from '@/method'
 import { computeBoundary, type FileBoundary } from '@/quantum/boundary'
 import { linksOf } from '@/typography'
 import { HORO_DIGITS, type HoroState } from '@/horo'
+import { horoCrossed } from '@/uuid/matrix'
 import {
   type DiamondModel,
   type CollectionDiamondModel,
@@ -74,7 +80,6 @@ export {
   TRINITY_CODE,
   CODE_MARKERS,
   COLOCATED,
-  DIAMOND_FILES_BASELINE,
   auditDiamondFolder,
   diamondAtomKind,
   allowedDiamondFiles,
@@ -153,7 +158,7 @@ export function verifyDiamond(
     if (!trinity.form) impurities.push('trinity.form missing (SKILL.md)')
     if (!trinity.proof) impurities.push('trinity.proof missing (test.ts)')
   }
-  if (model.horo !== null && !HORO_DIGITS.includes(model.horo as (typeof HORO_DIGITS)[number])) {
+  if (model.horo !== null && !horoCrossed(model.atomPath, model.horo)) {
     impurities.push(`horo ${model.horo} off-ring`)
   }
   if (model.linksResolved < model.linksTotal) {
@@ -277,7 +282,8 @@ function computeAtomPipeline(
 
   const srcRoot = join(cwd, SRC)
   const ctx = buildFolderReadmeContext(srcRoot)
-  const folder = deriveFolderModel(atomPath, cwd, ctx)
+  const graph = buildReadmeTypographyGraph(cwd)
+  const folder = deriveFolderModel(atomPath, cwd, ctx, graph)
 
   pushStage(stages, 'trinity', { atomPath }, {
     form: folder.form,
@@ -405,7 +411,7 @@ function computeCollectionDiamond(
     (!code || (form && code && proof)) &&
       base.folded &&
       base.linksResolved === base.linksTotal &&
-      (base.horo === null || HORO_DIGITS.includes(base.horo as (typeof HORO_DIGITS)[number])) &&
+      (base.horo === null || horoCrossed(atomPath, base.horo)) &&
       (horoStates.length === 0 || validateHoroStates(horoStates).ok) &&
       tamperProofUuid,
   )

@@ -3,15 +3,15 @@
 
 # xpath
 
-path `xpath` · uuid `77b9a06f-c1f5-8c52-841e-b9ab60e93d5b` · diamond `1659f135-9bb2-87aa-9c22-9959f45ba4bb`
+path `xpath` · uuid `77b9a06f-c1f5-8c52-841e-b9ab60e93d5b` · diamond `a53e906c-caa4-80c5-822a-b93795a8dc6d`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports xpath · escapes —
-links `2/2` · folded `1` · bonds in `0` out `0`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
+neighbors → law·thing · ← law·thing
 analysis —
 law xpath is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `bd8764c7-6db6-8cb9-a956-9d7086f4f669` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7fb46744-c062-8ce7-bd53-43445f108610` · `pnpm readme` · `pnpm computed:check`</sub>

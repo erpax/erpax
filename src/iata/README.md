@@ -23,7 +23,21 @@
 
 - partition `iata` · sub-root `9b314b7a-198c-8d6c-9a3b-2bde25ef17da`
 - bond degree `15` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `15` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `57395017-cb12-868b-98a6-ae9bdf936359` · framed by typography partition `iata` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `54599348-2513-86bd-9e6c-f3b872c18f32` · framed by typography partition `iata` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

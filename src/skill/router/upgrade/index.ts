@@ -9,11 +9,10 @@
  *   pnpm exec tsx src/skill/router/upgrade/index.ts --sync    # materialize drift
  *   pnpm exec tsx src/skill/router/upgrade/index.ts --verify  # fail-closed drift gate
  *
- * @see ../build-index.mjs — ../../../readme — ../../../typography — ../../../diamond — ../../../uuid/matrix
+ * @see ../build — ../../../readme — ../../../typography — ../../../diamond — ../../../uuid/matrix
  */
 import { readFileSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
-import { createHash } from 'node:crypto'
 import {
   listAtomPaths,
   deriveFolderModel,
@@ -21,38 +20,37 @@ import {
   buildReadmeTypographyGraph,
   type FolderReadmeContext,
 } from '@/readme'
-import { computeDiamond, diamondUuid } from '@/diamond'
+import { computeDiamond, diamondUuid, type DiamondComputationStage } from '@/diamond'
 import { coordinateAddress, neighborsOf, backlinksOf, nodeOf } from '@/uuid/matrix'
 import { linksOf, partitionByFolder, type AnalysisTypographyGraph } from '@/typography'
+import {
+  isQuantumSkillPath,
+  upgradeQuantumSkillText,
+} from './quantum'
+import {
+  FRONTMATTER,
+  stripFrontmatter,
+  contentUuidOf,
+  renderFrontmatter,
+  upgradeSkillText,
+  parseSignaturesFromText,
+  signaturesFromStages,
+  type ConnectedFrontmatter,
+  type FrontmatterSignatures,
+  type FrontmatterStageSignature,
+} from './seal'
 
 const SRC = 'src'
-const FRONTMATTER = /^---\n([\s\S]*?)\n---\n?/
-const FM_VERSION = 1
+const FM_VERSION = 2
 
-export interface ConnectedFrontmatter {
-  readonly name: string
-  readonly description: string
-  readonly atomPath: string
-  readonly coordinate: string
-  readonly contentUuid: string
-  readonly diamondUuid: string
-  readonly uuid: string | null
-  readonly horo: number | null
-  readonly bonds: { readonly in: readonly string[]; readonly out: readonly string[] }
-  readonly typography: {
-    readonly partition: string
-    readonly bondDegree: number
-    readonly neighbors: readonly string[]
-  }
-  readonly standards: readonly string[]
-  readonly bindings: readonly string[]
-  readonly neighbors: {
-    readonly wikilink: readonly string[]
-    readonly matrix: readonly string[]
-    readonly backlinks: readonly string[]
-  }
-  readonly version: number
-}
+export type { ConnectedFrontmatter, FrontmatterSignatures, FrontmatterStageSignature }
+export {
+  contentUuidOf,
+  renderFrontmatter,
+  upgradeSkillText,
+  parseSignaturesFromText,
+  signaturesFromStages,
+} from './seal'
 
 export interface UpgradeContext {
   readonly cwd: string
@@ -62,16 +60,7 @@ export interface UpgradeContext {
   readonly partitionPeers: ReadonlyMap<string, readonly string[]>
 }
 
-const yamlQuote = (s: string): string => {
-  if (!s.length || /[:#\n"'&*!?|>@[`\-{}\[\],]/.test(s) || s.startsWith(' ') || /^\d/.test(s)) {
-    return `"${s.replace(/\\/g, '\\\\').replace(/"/g, '\\"')}"`
-  }
-  return s
-}
-
 const sortUnique = (xs: readonly string[]): string[] => [...new Set(xs)].filter(Boolean).sort()
-
-const stripFrontmatter = (text: string): string => text.replace(FRONTMATTER, '')
 
 const existingDescription = (text: string): string | undefined => {
   const fm = text.match(FRONTMATTER)?.[1] ?? ''
@@ -102,54 +91,24 @@ export function deriveDescription(leaf: string, text: string): string {
   return `Use when reasoning about ${leaf}.`
 }
 
-/** Deterministic v5-style uuid from bytes (matches build-index contentUuid). */
-export function contentUuidOf(bytes: string): string {
-  const h = createHash('sha256').update(bytes).digest('hex')
-  const y = ((parseInt(h[16]!, 16) & 0x3) | 0x8).toString(16)
-  return `${h.slice(0, 8)}-${h.slice(8, 12)}-5${h.slice(13, 16)}-${y}${h.slice(17, 20)}-${h.slice(20, 32)}`
-}
-
-const renderYamlList = (key: string, items: readonly string[], indent: string): string[] => {
-  if (items.length === 0) return [`${indent}${key}: []`]
-  return [`${indent}${key}:`, ...items.map((i) => `${indent}  - ${yamlQuote(i)}`)]
-}
-
-/** Render connected frontmatter as deterministic YAML (js-yaml compatible). */
-export function renderFrontmatter(fm: ConnectedFrontmatter): string {
-  const L: string[] = ['---']
-  L.push(`name: ${yamlQuote(fm.name)}`)
-  L.push(`description: ${yamlQuote(fm.description)}`)
-  L.push(`atomPath: ${yamlQuote(fm.atomPath)}`)
-  L.push(`coordinate: ${yamlQuote(fm.coordinate)}`)
-  L.push(`contentUuid: ${yamlQuote(fm.contentUuid)}`)
-  L.push(`diamondUuid: ${yamlQuote(fm.diamondUuid)}`)
-  if (fm.uuid) L.push(`uuid: ${yamlQuote(fm.uuid)}`)
-  if (fm.horo !== null) L.push(`horo: ${fm.horo}`)
-  L.push('bonds:')
-  L.push(...renderYamlList('in', fm.bonds.in, '  '))
-  L.push(...renderYamlList('out', fm.bonds.out, '  '))
-  L.push('typography:')
-  L.push(`  partition: ${yamlQuote(fm.typography.partition)}`)
-  L.push(`  bondDegree: ${fm.typography.bondDegree}`)
-  L.push(...renderYamlList('neighbors', fm.typography.neighbors, '  '))
-  L.push(...renderYamlList('standards', fm.standards, ''))
-  L.push(...renderYamlList('bindings', fm.bindings, ''))
-  L.push('neighbors:')
-  L.push(...renderYamlList('wikilink', fm.neighbors.wikilink, '  '))
-  L.push(...renderYamlList('matrix', fm.neighbors.matrix, '  '))
-  L.push(...renderYamlList('backlinks', fm.neighbors.backlinks, '  '))
-  L.push(`version: ${fm.version}`)
-  L.push('---', '')
-  return L.join('\n')
-}
-
-/** Splice computed frontmatter onto the SKILL body (prose preserved). */
-export function upgradeSkillText(text: string, fm: ConnectedFrontmatter): string {
-  const body = stripFrontmatter(text).trimStart()
-  const bodySuffix = body ? (body.endsWith('\n') ? body : `${body}\n`) : ''
-  const withoutUuid = renderFrontmatter({ ...fm, contentUuid: '' }).replace(/^contentUuid:.*\n/m, '')
-  const uuid = contentUuidOf(withoutUuid + bodySuffix)
-  return renderFrontmatter({ ...fm, contentUuid: uuid }) + bodySuffix
+/** Compare stored frontmatter signatures against the recomputed diamond chain. */
+export function signaturesMatch(
+  stored: FrontmatterSignatures | null,
+  expected: FrontmatterSignatures,
+): { ok: boolean; reasons: readonly string[] } {
+  if (!stored) return { ok: false, reasons: ['missing-signatures'] }
+  const reasons: string[] = []
+  if (stored.computationUuid !== expected.computationUuid) reasons.push('computationUuid-mismatch')
+  if (stored.stages.length !== expected.stages.length) {
+    reasons.push('stage-count-mismatch')
+  } else {
+    for (let i = 0; i < expected.stages.length; i++) {
+      const e = expected.stages[i]!
+      const s = stored.stages[i]!
+      if (s.stage !== e.stage || s.stageUuid !== e.stageUuid) reasons.push(`stage-mismatch:${e.stage}`)
+    }
+  }
+  return { ok: reasons.length === 0, reasons }
 }
 
 /** All outgoing edges encoded in one frontmatter patch — the connection fabric. */
@@ -248,7 +207,9 @@ export function connectFrontmatter(
   const { cwd, ctx, graph, corpusLeaves, partitionPeers } = upgradeCtx
   const leaf = atomPath.split('/').pop() ?? atomPath
   const folder = deriveFolderModel(atomPath, cwd, ctx, graph)
-  const diamond = computeDiamond({ kind: 'path', path: atomPath, cwd }).model
+  const computation = computeDiamond({ kind: 'path', path: atomPath, cwd })
+  const diamond = computation.model
+  const signatures = signaturesFromStages(computation.stages)
   const matrixIn = sortUnique(backlinksOf(folder.leaf).map((n) => n.atom))
   const matrixOut = sortUnique(neighborsOf(folder.leaf).map((n) => n.atom))
   const wikilink = sortUnique(linksOf(text))
@@ -285,6 +246,7 @@ export function connectFrontmatter(
       matrix: sortUnique([...matrixIn, ...matrixOut]),
       backlinks: matrixIn,
     },
+    signatures,
     version: FM_VERSION,
   }
 
@@ -315,7 +277,9 @@ export function connectCorpus(
   for (const atomPath of paths) {
     const text = readFileSync(join(cwd, SRC, atomPath, 'SKILL.md'), 'utf8')
     const fm = connectFrontmatter(atomPath, text, upgradeCtx)
-    const upgraded = upgradeSkillText(text, fm)
+    const upgraded = isQuantumSkillPath(atomPath, fm.typography.partition)
+      ? upgradeQuantumSkillText(text, fm)
+      : upgradeSkillText(text, fm)
     const uuid =
       upgraded.match(/^contentUuid:\s*(.+)$/m)?.[1]?.trim().replace(/^["']|["']$/g, '') ?? ''
     out.set(atomPath, { ...fm, contentUuid: uuid })
@@ -334,7 +298,9 @@ export function materializeSkillFrontmatter(
     if (scope && !scope.includes(atomPath)) continue
     const path = join(cwd, SRC, atomPath, 'SKILL.md')
     const text = readFileSync(path, 'utf8')
-    const expected = upgradeSkillText(text, fm)
+    const expected = isQuantumSkillPath(atomPath, fm.typography.partition)
+      ? upgradeQuantumSkillText(text, fm)
+      : upgradeSkillText(text, fm)
     if (expected !== text) {
       writeFileSync(path, expected)
       n++
@@ -343,18 +309,37 @@ export function materializeSkillFrontmatter(
   return n
 }
 
-/** Drift gate — committed SKILL.md frontmatter ≡ computed upgrade. */
+/** Verify signature chain alone — stored frontmatter vs recomputed diamond stages. */
+export function verifySignatures(
+  atomPath: string,
+  text: string,
+  upgradeCtx: UpgradeContext,
+): { ok: boolean; reasons: readonly string[] } {
+  const expected = connectFrontmatter(atomPath, text, upgradeCtx).signatures
+  return signaturesMatch(parseSignaturesFromText(text), expected)
+}
+
+/** Drift gate — committed SKILL.md frontmatter ≡ computed upgrade + stage seals. */
 export function verifySkillFrontmatter(
   cwd: string = process.cwd(),
   scope?: readonly string[],
 ): { ok: boolean; drift: string[] } {
-  const patches = connectCorpus(cwd, scope)
+  const upgradeCtx = buildUpgradeContext(cwd)
+  const paths = scope ? [...scope].sort() : listAtomPaths(cwd)
   const drift: string[] = []
-  for (const [atomPath, fm] of patches) {
+  for (const atomPath of paths) {
     const path = join(cwd, SRC, atomPath, 'SKILL.md')
     const text = readFileSync(path, 'utf8')
-    const expected = upgradeSkillText(text, fm)
-    if (expected !== text) drift.push(atomPath)
+    const fm = connectFrontmatter(atomPath, text, upgradeCtx)
+    const expected = isQuantumSkillPath(atomPath, fm.typography.partition)
+      ? upgradeQuantumSkillText(text, fm)
+      : upgradeSkillText(text, fm)
+    if (expected !== text) {
+      drift.push(atomPath)
+      continue
+    }
+    const sig = verifySignatures(atomPath, text, upgradeCtx)
+    if (!sig.ok) drift.push(`${atomPath} (${sig.reasons.join(', ')})`)
   }
   return { ok: drift.length === 0, drift }
 }
@@ -399,3 +384,21 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   const patches = connectCorpus(cwd)
   console.log(`skill:upgrade — ${patches.size} atoms (dry-run; use --sync to materialize)`)
 }
+
+export {
+  parseQuantumSkill,
+  generateQuantumSkill,
+  upgradeQuantumSkillText,
+  inferQuantumEnvironment,
+  entangledFieldsOf,
+  mergeEntangledFields,
+  collapseTriggersOf,
+  isQuantumSkillPath,
+  injectQuantumBlock,
+  renderQuantumBlock,
+  renderContentUuidFooter,
+  type QuantumSkillParsed,
+  type QuantumSkillModel,
+  type QuantumEnvironment,
+  type EntangledField,
+} from './quantum'

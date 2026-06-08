@@ -25,7 +25,21 @@
 
 - partition `navel` · sub-root `2313e805-1385-8e8e-9796-9bc8b4ac32d3`
 - bond degree `9` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `note·colour·uuid computed from the position math, never hand-asserted` · banner
+
+## analytics
+
+- bond degree `9` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -41,4 +55,4 @@
 
 ---
 
-<sub>content-uuid `7ca6ef67-8e0d-86b5-a726-a9db5ee9908e` · framed by typography partition `navel` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d00f5961-dbf7-8edf-bd83-9950a5db6141` · framed by typography partition `navel` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>

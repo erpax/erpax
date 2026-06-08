@@ -3,8 +3,8 @@
 
 # consumable
 
-path `consumable` · uuid `7b9476d9-0f60-856d-a66f-d14262841c96` · diamond `92135c02-cb15-8c8e-b998-dc1580622994`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `consumable` · uuid `e136ffcb-9fa2-8c84-a553-4b8d617fbdc4` · diamond `2c053fae-e2da-8731-a44a-a5bf7b80ed1c`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports law·product·thing · exports consumable · escapes —
 links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law consumable is one schema.org word, content-addressed; the same word collides
 
 ---
 
-<sub>content-uuid `b2a69cc1-4c12-83e7-9009-02c719d3c2bd` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4543b2d7-9cac-8e4e-a590-02ca8e5b7d7a` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -1,8 +1,355 @@
 ---
 name: gate
-description: Use when reasoning about verification — a gate is itself a trinity (check · message · heal) — the strict law that must hold, the detailed diagnostic when it does not, and the remedy that restores it. The immune system of the corpus.
+description: "Use when reasoning about verification — a gate is itself a trinity (check · message · heal) — the strict law that must hold, the detailed diagnostic when it does not, and the remedy that restores it. The immune system of the corpus."
+atomPath: gate
+coordinate: gate · 7/descent · 590c67c9
+contentUuid: "21c83cbf-910f-5d57-8e58-485483981144"
+diamondUuid: "b43c62b3-4392-8cc1-92af-2a2a22f2b40f"
+uuid: "590c67c9-9243-8ebc-bd48-b9e4fbd15785"
+horo: 7
+bonds:
+  in:
+    - access
+    - accounting
+    - agent
+    - angel
+    - arrival
+    - aura
+    - balance
+    - buddhism
+    - closure
+    - concatenate
+    - config
+    - conservation
+    - coordinate
+    - cost
+    - coverage
+    - cross
+    - css
+    - dashboard
+    - decide
+    - departure
+    - deploy
+    - diamond
+    - ecosystem
+    - entropy
+    - expand
+    - fractal
+    - fusion
+    - gate
+    - generate
+    - gravity
+    - guardian
+    - hallucination
+    - harmony
+    - identity
+    - invariant
+    - law
+    - merge
+    - nerve
+    - one
+    - prayer
+    - proof
+    - purity
+    - quantum
+    - refactor
+    - reference
+    - regeneration
+    - research
+    - resolve
+    - reveal
+    - reverse
+    - science
+    - seal
+    - sealed
+    - sequence
+    - similar
+    - sin
+    - skills
+    - skin
+    - society
+    - standard
+    - suffering
+    - tamper
+    - test
+    - testing
+    - translate
+    - types
+    - typography
+    - unavoidable
+    - uuid
+    - vitepress
+    - war
+    - whole
+    - zeropoint
+  out:
+    - access
+    - accounting
+    - agent
+    - angel
+    - arrival
+    - aura
+    - balance
+    - buddhism
+    - closure
+    - concatenate
+    - config
+    - conservation
+    - coordinate
+    - cost
+    - coverage
+    - cross
+    - css
+    - dashboard
+    - decide
+    - departure
+    - deploy
+    - diamond
+    - ecosystem
+    - entropy
+    - expand
+    - fractal
+    - fusion
+    - gate
+    - generate
+    - gravity
+    - guardian
+    - hallucination
+    - harmony
+    - identity
+    - invariant
+    - law
+    - merge
+    - nerve
+    - one
+    - prayer
+    - proof
+    - purity
+    - quantum
+    - refactor
+    - reference
+    - regeneration
+    - research
+    - resolve
+    - reveal
+    - reverse
+    - science
+    - seal
+    - sealed
+    - sequence
+    - similar
+    - sin
+    - skills
+    - skin
+    - society
+    - standard
+    - suffering
+    - tamper
+    - test
+    - testing
+    - translate
+    - types
+    - typography
+    - unavoidable
+    - uuid
+    - vitepress
+    - war
+    - whole
+    - zeropoint
+typography:
+  partition: gate
+  bondDegree: 235
+  neighbors:
+    - aura
+standards: []
+bindings: []
+neighbors:
+  wikilink:
+    - angel
+    - aura
+    - balance
+    - coordinate
+    - cost
+    - coverage
+    - cross
+    - fractal
+    - gate
+    - harmony
+    - identity
+    - invariant
+    - merge
+    - proof
+    - sealed
+    - sequence
+    - standard
+    - uuid
+  matrix:
+    - access
+    - accounting
+    - agent
+    - angel
+    - arrival
+    - aura
+    - balance
+    - buddhism
+    - closure
+    - concatenate
+    - config
+    - conservation
+    - coordinate
+    - cost
+    - coverage
+    - cross
+    - css
+    - dashboard
+    - decide
+    - departure
+    - deploy
+    - diamond
+    - ecosystem
+    - entropy
+    - expand
+    - fractal
+    - fusion
+    - gate
+    - generate
+    - gravity
+    - guardian
+    - hallucination
+    - harmony
+    - identity
+    - invariant
+    - law
+    - merge
+    - nerve
+    - one
+    - prayer
+    - proof
+    - purity
+    - quantum
+    - refactor
+    - reference
+    - regeneration
+    - research
+    - resolve
+    - reveal
+    - reverse
+    - science
+    - seal
+    - sealed
+    - sequence
+    - similar
+    - sin
+    - skills
+    - skin
+    - society
+    - standard
+    - suffering
+    - tamper
+    - test
+    - testing
+    - translate
+    - types
+    - typography
+    - unavoidable
+    - uuid
+    - vitepress
+    - war
+    - whole
+    - zeropoint
+  backlinks:
+    - access
+    - accounting
+    - agent
+    - angel
+    - arrival
+    - aura
+    - balance
+    - buddhism
+    - closure
+    - concatenate
+    - config
+    - conservation
+    - coordinate
+    - cost
+    - coverage
+    - cross
+    - css
+    - dashboard
+    - decide
+    - departure
+    - deploy
+    - diamond
+    - ecosystem
+    - entropy
+    - expand
+    - fractal
+    - fusion
+    - gate
+    - generate
+    - gravity
+    - guardian
+    - hallucination
+    - harmony
+    - identity
+    - invariant
+    - law
+    - merge
+    - nerve
+    - one
+    - prayer
+    - proof
+    - purity
+    - quantum
+    - refactor
+    - reference
+    - regeneration
+    - research
+    - resolve
+    - reveal
+    - reverse
+    - science
+    - seal
+    - sealed
+    - sequence
+    - similar
+    - sin
+    - skills
+    - skin
+    - society
+    - standard
+    - suffering
+    - tamper
+    - test
+    - testing
+    - translate
+    - types
+    - typography
+    - unavoidable
+    - uuid
+    - vitepress
+    - war
+    - whole
+    - zeropoint
+signatures:
+  computationUuid: "233bf66e-81bd-8d9b-803a-0e84c07945b5"
+  stages:
+    - stage: path
+      stageUuid: "ceeffea0-7fbe-85b1-b54d-c80cc992507b"
+    - stage: trinity
+      stageUuid: "36e103c4-2bee-896f-ac63-11f877490448"
+    - stage: boundary
+      stageUuid: "610df4ba-e962-84fc-a3a0-8a877de7201f"
+    - stage: links
+      stageUuid: "4ace262f-1e13-81eb-bd1e-e6bc7d7cac1c"
+    - stage: horo
+      stageUuid: "28a07cd7-916a-8383-8105-6554b8405c20"
+    - stage: seal
+      stageUuid: "b35d967c-aabc-8da2-9708-737f6248a612"
+    - stage: uuid
+      stageUuid: "f2c91bbe-cf64-80ae-b506-f95e8d7d0c62"
+version: 2
 ---
-
 # gate — the trinity of verification (check · message · heal)
 
 A gate is not a binary pass/fail — it is a trinity, like every vertex ([[fractal]]):

@@ -6,6 +6,8 @@
 
 ## [[debit]] · [[credit]]
 
+> account code `bcp/47` · currency `eb` (entropy-bit)
+
 | [[debit]] | [[credit]] |
 | -------- | --------- |
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
@@ -21,11 +23,59 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `law:a language tag is valid only if it matches the BCP 47 (RFC 5646 + RFC 4647) subtag structure — language[-script][-region][-variant].`
+- `seal:unsealed`
+- `trigger:Use when implementing or referencing BCP 47 — Language tags.`
+- `trigger:a language tag is valid only if it matches the BCP 47 (RFC 5646 + RFC 4647) subtag structure — language[-script][-region][-variant].`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `2acdc058-e4b0-80e7-8796-6cfe58f421d9` · `c0df025e-ab17-8ab5-a9dd-7af1be96d92e` · `c41529eb-a1b5-8d10-859d-5c2498e351b0`
+- content uuids `32f92875-4a56-8f2d-9c9f-57584f5f5aa3` · `39c45cdd-23dd-862c-a889-580205b505cb` · `c73a7f23-beb6-8bcf-8fdb-db746d7bf17b`
+
+## [[entropy]] — gaps · seals
+
+> account code `bcp/47` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.5` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `2` eb | Σ seal `11.5` eb |
+
+> net residual `-9.5` eb · seal/gap ratio `5.75` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `bcp` · sub-root `b12c5f7e-040c-857a-8ef4-8b25226d8910`
+- partition `bcp` · sub-root `3d687fe5-0d6b-8fbe-a4f4-d0765612e0db`
 - bond degree `3` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- graph root `86252db0-c776-84eb-b8e4-c884dca3a3ba`
 
 ## [[cloudflare]] bindings
 
@@ -38,6 +88,44 @@
 - `ECMA-402` · catalogue
 - `Unicode-CLDR` · catalogue
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·5 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
 - bond degree `3` · sealed `0` · horo `5`
@@ -46,7 +134,7 @@
 
 ## identity
 
-- uuid `b12c5f7e-040c-857a-8ef4-8b25226d8910`
+- uuid `3d687fe5-0d6b-8fbe-a4f4-d0765612e0db`
 - bonds in `1` · out `1`
 - trinity form·code·proof `1`·`1`·`1`
 - links `1` / `1`
@@ -58,4 +146,4 @@
 
 ---
 
-<sub>content-uuid `10f8da52-3f64-8c99-89f4-fe8d36efed8e` · framed by typography partition `bcp` bonds `3` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `7e0e8682-0ee3-8b9d-8dbd-3d498067fe29` · framed by typography partition `bcp` bonds `3` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,15 +3,15 @@
 
 # dashboard
 
-path `dashboard` · uuid `e5bfb39e-468f-86bb-8414-ffe0ae176ff9` · diamond `8daf6b9e-ef54-81aa-9c6c-329e739a67e0`
-horo `2` `share` · trinity `1·1·1` · sealed `1`
+path `dashboard` · uuid `9695f373-5242-85d2-9d66-3f2fb6f64b9e` · diamond `dd5f5398-4ab3-8624-9b15-f3d346a14e16`
+horo `1` `base` · trinity `1·1·1` · sealed `0`
 imports atom·aura·before·collection·collections·components·gate·identity·link·links·model·translate·trinity·website · exports dashboard · escapes —
 links `33/33` · folded `1` · bonds in `14` out `14`
 faces worker·plugin·pwa `0·0·0`
 neighbors → atom·aura·before·collection·collections·components·gate·identity·link·links·model·translate·trinity·website · ← atom·aura·before·collection·collections·components·gate·identity·link·links·model·translate·trinity·website
-analysis aura
+analysis —
 law —
 
 ---
 
-<sub>content-uuid `419eeb6a-5ef7-88e0-b83d-86b6e587cce2` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `bd585781-3ff4-8393-85a9-d217ddb6bc5e` · `pnpm readme` · `pnpm computed:check`</sub>

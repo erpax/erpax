@@ -4,7 +4,7 @@
 # payload
 
 path `payload` · uuid `f51c4ab0-c22e-80aa-b591-76ae74a54966` · diamond `c53eaf59-ede2-8286-8051-d2c507a8e5c3`
-horo `5` `round` · trinity `1·1·1` · sealed `1`
+horo `5` `round` · trinity `1·1·1` · sealed `0`
 imports — · exports default · escapes —
 links `33/33` · folded `1` · bonds in `36` out `35`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `79c7f8f3-7a18-8d08-9481-6388c08e9dfe` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ae0e6a88-a146-895a-b4ea-67efdc8b6e67` · `pnpm readme` · `pnpm computed:check`</sub>

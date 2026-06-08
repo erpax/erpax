@@ -4,7 +4,7 @@
 # 13616
 
 path `iso/13616` · uuid `3626329a-fae6-82e6-b0a0-c824354e38d8` · diamond `18358290-740d-8db3-9871-87e030cdaa6d`
-horo `5` `round` · trinity `1·1·1` · sealed `1`
+horo `5` `round` · trinity `1·1·1` · sealed `0`
 imports — · exports isBgIban·isIban·parseBgIban·type · escapes —
 links `1/1` · folded `1` · bonds in `1` out `1`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law an IBAN is self-validating — its mod-97 check digits (ISO 7064) make the i
 
 ---
 
-<sub>content-uuid `ef05b025-a1a8-81e1-a69e-3b41ba04b40d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6aa0c509-f23f-848a-8805-ec55fa6d93e5` · `pnpm readme` · `pnpm computed:check`</sub>

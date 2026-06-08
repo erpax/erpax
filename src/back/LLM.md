@@ -3,8 +3,8 @@
 
 # back
 
-path `back` · uuid `f323475f-9006-89d2-8280-a1c1f7e71923` · diamond `ad9a084c-9c43-8a74-8436-bc692323347e`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `back` · uuid `e6724378-eeca-8b0b-a92e-2ebbf9d984c5` · diamond `5299f68c-a6da-8855-88b3-701d70a66154`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports cash·collapse·law·merge·sti · exports back · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law back is one schema.org word, content-addressed; the same word collides every
 
 ---
 
-<sub>content-uuid `1d884ff3-d415-83fb-ac00-0c29bd9bc88d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `57bb61e4-162e-89f1-8569-994f1137d408` · `pnpm readme` · `pnpm computed:check`</sub>

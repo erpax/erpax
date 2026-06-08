@@ -3,15 +3,15 @@
 
 # body
 
-path `body` · uuid `1401fa8c-bb16-8f2d-935f-0f264c6bff9d` · diamond `8bbe5ae3-3c97-8386-a632-660e2e391a1a`
-horo `1` `base` · trinity `1·1·1` · sealed `1`
-imports @/artery·@/blood·@/brain·@/heart·@/horo·@/lung·@/nerve·@/signal·@/skin·@/vein·@/wave · exports const·function·interface · escapes —
-links `36/36` · folded `1` · bonds in `28` out `28`
+path `body` · uuid `f5cd43a1-af3a-81c6-8f22-40859a7455c3` · diamond `729b16b0-1056-838e-96bb-cb59d0dc500a`
+horo `4` `weave` · trinity `1·1·1` · sealed `1`
+imports @/artery·@/blood·@/brain·@/heart·@/horo·@/lung·@/nerve·@/path·@/signal·@/skin·@/vein·@/wave · exports const·function·interface · escapes —
+links `54/54` · folded `1` · bonds in `58` out `58`
 faces worker·plugin·pwa `1·0·0`
-neighbors → artery·article·aura·auto·blood·brain·coherence·enumeration·harmony·heart·lake·law·location·lung·measurement·merge·nerve·ocean·one·review·river·sea·shop·signal·skin·vein·water·wave · ← artery·article·aura·auto·blood·brain·coherence·enumeration·harmony·heart·lake·law·location·lung·measurement·merge·nerve·ocean·one·review·river·sea·shop·signal·skin·vein·water·wave
+neighbors → abdomen·anatomy·arm·artery·artery·article·aura·auto·auto·blood·blood·brain·brain·coherence·enumeration·folder·foot·hand·harmony·head·heart·heart·lake·lake·law·leg·location·location·lung·lung·measurement·measurement·memory·merge·nerve·nerve·ocean·ocean·one·one·quantum·review·review·river·river·sea·sea·shop·shop·signal·skin·skin·taichi·vein·vein·water·water·wave · ← abdomen·anatomy·arm·artery·artery·article·aura·auto·auto·blood·blood·brain·brain·coherence·enumeration·folder·foot·hand·harmony·head·heart·heart·lake·lake·law·leg·location·location·lung·lung·measurement·measurement·memory·merge·nerve·nerve·ocean·ocean·one·one·quantum·review·review·river·river·sea·sea·shop·shop·signal·skin·skin·taichi·vein·vein·water·water·wave
 analysis aura
-law the body is the organs harmonized — each sent as a wave to its note and colour, the whole harmonizes ⟺ every organ is healthy (no dissonant gap) AND the chord is full-spectrum (all seven positions) AND the waves fold to unity (the closing merge); wholeness is harmony, a failing organ is dissonance.
+law the body is the organs harmonized — each sent as a wave to its note and colour, the whole harmonizes ⟺ every organ is healthy (no dissonant gap) AND the chord is full-spectrum (all seven positions) AND the waves fold to unity (the closing merge); wholeness is harmony, a failing organ is dissonance; nested `body/<part>` pivots to the canonical atom, never duplicated.
 
 ---
 
-<sub>content-uuid `069d9a96-0cdd-8655-8d55-f1f4b4efb9c2` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c5b0fea6-8e92-8cf5-88fa-beec9e6e24e5` · `pnpm readme` · `pnpm computed:check`</sub>

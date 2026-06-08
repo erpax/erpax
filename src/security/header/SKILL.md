@@ -1,8 +1,70 @@
 ---
-name: "header"
+name: header
 description: "Use when implementing or referencing `_security-headers/` — Composite HTTP security-headers module."
+atomPath: security/header
+coordinate: security/header · 4/weave · 5da1412e
+contentUuid: "fcf62da7-b67e-5fa3-a22a-cd1bc4219328"
+diamondUuid: "a3349621-307e-818b-9c02-a1d7055da17c"
+uuid: "5da1412e-1e7d-84c3-95d6-cf8bee148a42"
+horo: 4
+bonds:
+  in:
+    - collapse
+    - law
+    - merge
+    - security
+    - sti
+    - wp
+  out:
+    - collapse
+    - law
+    - merge
+    - sti
+    - wp
+typography:
+  partition: security
+  bondDegree: 17
+  neighbors: []
+standards:
+  - "6797 hsts"
+  - "OWASP-ASVS"
+  - "W3C CSP-3"
+  - "W3C Permissions-Policy"
+bindings: []
+neighbors:
+  wikilink:
+    - law
+  matrix:
+    - collapse
+    - law
+    - merge
+    - sti
+    - wp
+  backlinks:
+    - collapse
+    - law
+    - merge
+    - sti
+    - wp
+signatures:
+  computationUuid: "f14d8f3d-5036-81b6-99e0-4b0c372bb38c"
+  stages:
+    - stage: path
+      stageUuid: "58b85437-450d-8dac-a4d8-2398c112c444"
+    - stage: trinity
+      stageUuid: "d70d400a-b5c1-8eff-94c6-c371ada318c0"
+    - stage: boundary
+      stageUuid: "16c34609-cfd5-86a6-9b1c-76751a83b50e"
+    - stage: links
+      stageUuid: "1a1cccf0-6988-8e89-857f-4a484420fc9e"
+    - stage: horo
+      stageUuid: "272108c0-d6ab-8e86-8eff-1379b89cfb65"
+    - stage: seal
+      stageUuid: "889afee7-f608-84f7-8d71-ace1d215bd25"
+    - stage: uuid
+      stageUuid: "2dab7afb-5a67-81ec-bdc0-fb5b3a400abf"
+version: 2
 ---
-
 # `_security-headers/` — Composite HTTP security-headers module
 
 A composite, not a single standard. Combines:

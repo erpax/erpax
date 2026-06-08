@@ -3,15 +3,15 @@
 
 # import
 
-path `quantum/import` · uuid `c34cceb3-27b2-85b2-882e-8e29e097983a` · diamond `ef5e4d74-bd99-89c7-96a8-cf98a70e8cc2`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
-imports aura·convention·cost·entanglement·import·law·quantum·tamper · exports import · escapes —
-links `12/12` · folded `1` · bonds in `14` out `20`
+path `quantum/import` · uuid `7ee018b6-c6db-82fa-a771-3986e2fc95db` · diamond `3a3840e2-5124-81a2-ade1-4e25c389c6aa`
+horo `1` `base` · trinity `1·1·1` · sealed `1`
+imports @/path·@/quantum/boundary · exports classifyImports·computeBoundary·function·parseSkillImports·parseTsImports·verifyBoundary · escapes —
+links `12/12` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `1·0·0`
-neighbors → aura·boundary·convention·cost·cost·cost·duality·entanglement·expense·exported·fresh·import·law·law·law·lawful·method·tamper·tamper·tamper · ← aura·boundary·convention·cost·duality·entanglement·expense·exported·fresh·import·law·lawful·method·tamper
+neighbors → cost·exported·import·law·lawful·method·tamper · ← cost·exported·import·law·lawful·method·tamper
 analysis aura·quantum/boundary·tamper/import
 law quantum computed import — entanglement with atom barrels only, derived from live source, never hand-drawn; deep imports are escapes that must collapse to `@/x`.
 
 ---
 
-<sub>content-uuid `72be3e2d-c4a8-8e96-8479-2dc01560d474` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9e3cbe27-36d7-8bce-b0a4-65a462e9f184` · `pnpm readme` · `pnpm computed:check`</sub>

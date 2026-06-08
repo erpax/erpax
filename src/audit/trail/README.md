@@ -2,9 +2,11 @@
 
 # trail
 
-> atom `audit/trail` · horo `8` `crest` · [[balance]] `1` · [[seal]] `0`
+> atom `audit/trail` · horo `2` `share` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `audit/trail` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -19,13 +21,58 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
+
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:stray:[[gap]]/[[diamond]]/stray/after/`
+
+### collapse
+
+- `balance:variance=1`
+- `law:barrel re-export at `@/audit/trail`; trinity sealed for import purity.`
+- `seal:unsealed`
+- `trigger:Use when reasoning about trail — **Law — law: barrel re-export at ; trinity sealed for import purity.**`
+- `trigger:barrel re-export at `@/audit/trail`; trinity sealed for import purity.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `30bdebbc-af1c-80ed-ae73-c03ad2551756` · `4646ce48-944c-86d2-ad41-984203734fa0` · `e241781b-1ce0-8dfc-8b2a-71a2f3e1d1a4`
+- content uuids `3d5de765-068e-81b7-8c68-af5cdfa1db18` · `be6394aa-3bf4-8e6d-bc1f-2568ac8029f3` · `e8f6543c-0b51-8256-9f84-9af917f6fb9a`
+
+## [[entropy]] — gaps · seals
+
+> account code `audit/trail` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[diamond]]/stray/after/ `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.2` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+| Σ gap `2` eb | Σ seal `8.2` eb |
+
+> net residual `-6.2` eb · seal/gap ratio `4.1` · [[entropy]] · [[seal]]
 
 ## typography graph
 
-- partition `audit` · sub-root `798aecfe-af8a-8d6c-9989-a51055e00adf`
-- bond degree `3` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- partition `audit` · sub-root `886efad5-9cfb-87e4-a30b-a445ae4c7a71`
+- bond degree `0` · analysis neighbors —
+- graph root `86252db0-c776-84eb-b8e4-c884dca3a3ba`
 
 ## [[cloudflare]] bindings
 
@@ -49,15 +96,53 @@
 - `RFC-9562` · catalogue
 - `SOX` · catalogue
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unbalanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| not-held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·2 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `3` · sealed `0` · horo `8`
-- variance `0` · balanced `1` · trinity sum `3`
+- bond degree `0` · sealed `0` · horo `2`
+- variance `1` · balanced `0` · trinity sum `3`
 - bindings `0` · standards `15`
 
 ## identity
 
-- uuid `d7206082-cb49-8c0d-a909-4fb55996ce72`
+- uuid `227da0bb-1d8e-8ca5-a1aa-4334e7bf61a2`
 - bonds in `1` · out `1`
 - trinity form·code·proof `1`·`1`·`1`
 - links `1` / `1`
@@ -69,4 +154,4 @@
 
 ---
 
-<sub>content-uuid `348bd25f-fd48-86e8-81d7-bff260aeafc9` · framed by typography partition `audit` bonds `3` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `4115f3e3-0ff9-8aac-bd57-cefbf6ed7570` · framed by typography partition `audit` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

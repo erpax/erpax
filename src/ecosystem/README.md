@@ -25,7 +25,7 @@
 
 - partition `ecosystem` · sub-root `bfcbbfb2-e52e-8fca-8465-e51196a6bb11`
 - bond degree `81` · analysis neighbors `agent`
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
 
 ## [[cloudflare]] bindings
 
@@ -59,4 +59,4 @@
 
 ---
 
-<sub>content-uuid `75d143e9-3356-8d12-851d-5c3a525838f7` · framed by typography partition `ecosystem` bonds `81` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b907ebc1-bc73-806a-8e14-0745a303adb1` · framed by typography partition `ecosystem` bonds `81` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `downpayment` · sub-root `cb079685-0d0a-8188-8037-431d8cd5d5eb`
 - bond degree `12` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `f592893b-1134-88a8-861a-b1549cbb8751` · framed by typography partition `downpayment` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `4ce60277-5190-8b4a-95cb-d201b09bb96d` · framed by typography partition `downpayment` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,21 @@
 
 - partition `narcotic` · sub-root `338bf931-47bf-8b27-8d0c-aa09bb196ea8`
 - bond degree `12` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `12` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `59cff210-2aea-84ae-a438-28008cb95c9c` · framed by typography partition `narcotic` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `5aab87a2-3fba-8443-b486-988c58673074` · framed by typography partition `narcotic` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,21 @@
 
 - partition `kabbalah` · sub-root `01078282-b83e-80a5-8aa9-f9d83f501833`
 - bond degree `53` · analysis neighbors `diamond`
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `53` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `37a97897-ecd2-86e6-941b-006edb18f12a` · framed by typography partition `kabbalah` bonds `53` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `9c5b6ae6-f167-8078-ab84-2925b15742ac` · framed by typography partition `kabbalah` bonds `53` · `pnpm readme` · `pnpm readme:check`</sub>

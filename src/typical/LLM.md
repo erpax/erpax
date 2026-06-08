@@ -3,15 +3,15 @@
 
 # typical
 
-path `typical` · uuid `d7636052-71f3-8734-844e-1ffe20214813` · diamond `1a522704-2e77-895a-867f-8adfce4cf82c`
+path `typical` · uuid `d7636052-71f3-8734-844e-1ffe20214813` · diamond `2adb55d1-d802-84f3-a50c-dffdc483ed7f`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports age·collapse·credits·law·merge·range·sti·term·test · exports typical · escapes —
-links `9/9` · folded `1` · bonds in `7` out `7`
+links `9/9` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `0·0·0`
-neighbors → bank·cohort·creator·landmarks·memories·stat·wholesale · ← bank·cohort·creator·landmarks·memories·stat·wholesale
+neighbors → age·collapse·credits·law·merge·range·sti·term·test · ← age·collapse·credits·law·merge·range·sti·term·test
 analysis —
 law typical is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `0a4919ef-e47c-8e03-90aa-005dba9a2ac3` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `bbc9d19f-dc56-863b-a8b9-44394fb90bf7` · `pnpm readme` · `pnpm computed:check`</sub>

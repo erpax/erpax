@@ -3,15 +3,15 @@
 
 # readme
 
-path `readme` · uuid `ae3c0269-7f7d-8a02-bc07-9553409eeb5a` · diamond `1462a650-1877-890f-b660-bc0119c1070a`
-horo `8` `crest` · trinity `1·1·1` · sealed `0`
-imports @/aura·@/cloudflare·@/conservation·@/diamond·@/horo·@/law/folder·@/quantum/boundary·@/seal·@/typography·@/uuid/matrix · exports ComputedFace·const·function·interface·renderDiamondJson · escapes @/diamond/membership
-links `70/70` · folded `1` · bonds in `27` out `27`
+path `readme` · uuid `439f0a57-092d-812c-8ab4-56e1faa71dad` · diamond `c6ff3f17-a237-85f3-a25c-88619a7bbf37`
+horo `7` `descent` · trinity `1·1·1` · sealed `1`
+imports — · exports *:./compute·AccountGapsAndSealsInput·AgentThinking·AgentThinkingReceipt·AssertGapsAccountedOpts·COMPARABLE_UNIT·CorpusEntropyRenderOpts·CorpusEntropyRollup·CorpusQuantumThinkingRollup·EntropyLine·EntropyStatementInput·FolderEntropyAccounting·GAP_BASE_WEIGHT·GapsAccountedVerdict·LANDAUER_BIT·MdPaperKind·MergedCorpusPapers·PaperMedium·PaperRollup·QuantumThinkingBlock·SEAL_BASE_WEIGHT·ScientificPaper·SealsAccountedVerdict·SectorEntropyRollup·ThinkingFolderInput·ThinkingLoadContext·TsPaperContext·TsPaperKind·accountGapsAndSeals·aggregateCorpusEntropy·aggregateCorpusQuantumThinking·assertGapsAccounted·assertSealsAccounted·collectCorpusPapers·computeFolderEntropy·emptyCorpusQuantumThinking·emptyMergedPapers·loadAgentThinking·mergeCorpusEntropy·mergeCorpusPapers·mergeCorpusQuantumThinking·paperUuid·quantumBlockAsEnvironment·quantumThinkingOf·renderCorpusEntropySection·renderCorpusQuantumThinkingSection·renderFolderEntropySection·renderFolderQuantumThinkingSection·renderMergedPapersSection·scientificPaperOf·scientificPaperOfTs·toComparableUnit·transformThinkingToQuantum · escapes —
+links `79/79` · folded `1` · bonds in `34` out `34`
 faces worker·plugin·pwa `1·0·0`
-neighbors → accounting·asset·atom·aura·balance·conservation·credit·debit·diamond·entropy·entry·generate·holographic·horo·identity·law·liability·matrix·merge·purity·seal·self·sequence·trinity·uuid·whole·worker · ← accounting·asset·atom·aura·balance·conservation·credit·debit·diamond·entropy·entry·generate·holographic·horo·identity·law·liability·matrix·merge·purity·seal·self·sequence·trinity·uuid·whole·worker
+neighbors → accounting·asset·atom·aura·balance·conservation·credit·debit·diamond·entropy·entry·generate·generate·gravity·holographic·horo·identity·law·liability·matrix·merge·pivot·purity·quantum·rules·seal·self·sequence·skills·trinity·upgrade·uuid·whole·worker · ← accounting·asset·atom·aura·balance·conservation·credit·debit·diamond·entropy·entry·generate·generate·gravity·holographic·horo·identity·law·liability·matrix·merge·pivot·purity·quantum·rules·seal·self·sequence·skills·trinity·upgrade·uuid·whole·worker
 analysis aura·diamond·purity
-law the README is a [[diamond]] — a content-addressed projection of the live tree, regenerable with zero [[entropy]] and drift-detectable (a hand-edit fails `pnpm readme:check` closed) — root and every atom folder; each per-folder README IS the debit/credit statement of that diamond's completeness; typography IS the diamond projected. Derived from the tree ([[matrix]] · fs walk · package.json), never hand-typed.
+law agent thinking transforms to quantum at readme generation — immediately, not post-hoc.
 
 ---
 
-<sub>content-uuid `1bc3f7e1-dea9-82ea-be57-ddaa1934cfba` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3e923ba8-49c0-86e4-9edd-63841b07ce71` · `pnpm readme` · `pnpm computed:check`</sub>

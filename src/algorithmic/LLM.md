@@ -3,8 +3,8 @@
 
 # algorithmic
 
-path `algorithmic` · uuid `208703b3-8081-8978-94b1-12ec6ef64bd9` · diamond `4483a5fc-dbd9-8fe1-a1a1-4aec7be3b373`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `algorithmic` · uuid `5e4cedef-9f63-8119-b795-930e1b3bdddf` · diamond `9f872670-8c8c-823f-a303-591a36d93adc`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports algorithmic · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law algorithmic is one schema.org word, content-addressed; the same word collide
 
 ---
 
-<sub>content-uuid `edb803c3-eda2-84df-85c5-2a438168fb44` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e859dac2-045a-86e8-86f3-32513e86470c` · `pnpm readme` · `pnpm computed:check`</sub>

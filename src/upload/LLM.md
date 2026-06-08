@@ -3,15 +3,15 @@
 
 # upload
 
-path `upload` · uuid `41edca3a-1bcf-87f1-ac86-1ca78543b007` · diamond `c36a4cf3-69c9-8972-bd73-186838a2862e`
+path `upload` · uuid `41edca3a-1bcf-87f1-ac86-1ca78543b007` · diamond `44a739c4-6210-87ef-8420-166a64d9c05d`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports access·config·deploy·harden·hooks·media · exports upload · escapes —
-links `6/6` · folded `1` · bonds in `4` out `4`
+links `6/6` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → access·accounting·collections·config·deploy·harden·hooks·identity·media · ← access·accounting·collections·config·deploy·harden·hooks·identity·media
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `684c8916-a7a1-85f8-b884-8359c528aac4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `78ca4d8e-d28a-8001-a3f4-08a597939305` · `pnpm readme` · `pnpm computed:check`</sub>

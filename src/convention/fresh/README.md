@@ -2,7 +2,7 @@
 
 # fresh
 
-> atom `convention/fresh` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `convention/fresh` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -23,9 +23,9 @@
 
 ## typography graph
 
-- partition `convention` · sub-root `38cd2282-f75a-84ce-b2c7-ff7cff0bfb4c`
-- bond degree `23` · analysis neighbors `tamper/import`
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- partition `convention` · sub-root `a93daa45-addb-8b21-89cd-ab385bae0306`
+- bond degree `11` · analysis neighbors `tamper/import`
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -37,18 +37,56 @@
 - `imports + on-disk existence scanned LIVE from src/scripts/.vitepress; coverage = resolving/total, never hand-asserted` · banner
 - `TypeScript module resolution (tsconfig `@/` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·5 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `23` · sealed `1` · horo `7`
+- bond degree `11` · sealed `1` · horo `5`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `3`
 
 ## identity
 
-- uuid `dd03e9ef-818f-8645-a1ce-ccabd1e0f1ff`
-- bonds in `7` · out `7`
+- uuid `cb062ec4-bfa1-88ed-bf87-bc6d270d65ed`
+- bonds in `1` · out `1`
 - trinity form·code·proof `1`·`1`·`1`
-- links `12` / `12`
+- links `0` / `0`
 - folded `1` · escapes `0`
 
 ## [[seal]]
@@ -57,4 +95,4 @@
 
 ---
 
-<sub>content-uuid `1c40194e-98fd-8dfd-8956-087486010309` · framed by typography partition `convention` bonds `23` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `5c0a82b5-2823-8839-a83a-713e8dc788aa` · framed by typography partition `convention` bonds `11` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,8 +3,8 @@
 
 # apireference
 
-path `apireference` · uuid `40735cc8-7b7b-8e10-ac7e-49ee03fea5be` · diamond `30e03967-4f00-85dc-ae1c-a574e1ea28d4`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `apireference` · uuid `a5d39c20-d4d0-804e-be89-69f4731c2e51` · diamond `7d2e5025-567c-8675-9693-be5c4a31710e`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports apireference · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law apireference is one schema.org word, content-addressed; the same word collid
 
 ---
 
-<sub>content-uuid `b08b6714-2b24-8f39-b29a-8f2f51ff7592` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `462006b3-3a3f-8547-98f5-7134e2fd4c7c` · `pnpm readme` · `pnpm computed:check`</sub>

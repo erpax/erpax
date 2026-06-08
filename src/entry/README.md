@@ -25,7 +25,26 @@
 
 - partition `entry` · sub-root `61ef9211-0883-8747-ad3c-dad565b80bdd`
 - bond degree `174` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `EU-2002/58` · catalogue
+- `FASB ASC 810-10-45: intercompany balances eliminate to net zero on consolidation` · banner
+- `IFRS/IAS — 2026 Issued: double-entry (Σdebit = Σcredit)` · banner
+- `ISO 20022: debtor/creditor are the two signs of ONE transfer` · banner
+- `ISO-20022` · catalogue
+- `UBL-2.1` · catalogue
+
+## analytics
+
+- bond degree `174` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `6`
 
 ## identity
 
@@ -41,4 +60,4 @@
 
 ---
 
-<sub>content-uuid `561fc39d-23de-8410-be1b-ab3379a53cea` · framed by typography partition `entry` bonds `174` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `2d72bea8-b0f9-82ac-9844-fbb9c3ac29ec` · framed by typography partition `entry` bonds `174` · `pnpm readme` · `pnpm readme:check`</sub>

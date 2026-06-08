@@ -3,10 +3,10 @@
 
 # pi
 
-path `quantum/pi` · uuid `056bcd48-25e1-83c8-a43b-bd3b6a47eeca` · diamond `f752092e-6692-8c50-8c40-4719020ab176`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
-imports breath·finality·law·linearity·quantum·realtime·stream·uuid·void · exports pi · escapes —
-links `15/15` · folded `1` · bonds in `10` out `10`
+path `quantum/pi` · uuid `ebb57730-de5e-81da-ae7a-53bbd26fcb0d` · diamond `b3f45781-17d0-8ae9-9663-de0046503bd1`
+horo `8` `crest` · trinity `1·1·1` · sealed `1`
+imports @/path · exports const·function · escapes —
+links `23/23` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `1·0·0`
 neighbors → breath·finality·law·linearity·number·realtime·stack·stream·uuid·void · ← breath·finality·law·linearity·number·realtime·stack·stream·uuid·void
 analysis —
@@ -14,4 +14,4 @@ law π exits the address-space limit but never the information limit — the str
 
 ---
 
-<sub>content-uuid `9db3c2f4-055f-83d2-8299-9e4c6b27d13b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b7eb5469-e27b-8235-b239-02b59a973051` · `pnpm readme` · `pnpm computed:check`</sub>

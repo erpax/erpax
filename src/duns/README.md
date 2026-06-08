@@ -23,7 +23,7 @@
 
 - partition `duns` · sub-root `6ae629ec-e5bd-8c89-b613-ff11cf1e759e`
 - bond degree `6` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `d9c7977d-17fd-8f96-b6ca-a1b6560fdd92` · framed by typography partition `duns` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c6e24b21-8c28-8d3f-9685-3e398c027f5a` · framed by typography partition `duns` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>

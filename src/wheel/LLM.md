@@ -3,15 +3,15 @@
 
 # wheel
 
-path `wheel` · uuid `6961a739-9f93-8139-9dc4-999a161b3384` · diamond `2e9b43ed-1366-8888-9f47-58efd3a8ecb0`
+path `wheel` · uuid `6961a739-9f93-8139-9dc4-999a161b3384` · diamond `c61edbf8-de48-8bac-918d-c4d0b71f4126`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·configuration·drive·law·merge·sti·value · exports wheel · escapes —
-links `7/7` · folded `1` · bonds in `8` out `8`
+links `7/7` · folded `1` · bonds in `12` out `12`
 faces worker·plugin·pwa `0·0·0`
-neighbors → 3986·accounting·fertility·holographic·item·landmarks·logo·spouse · ← 3986·accounting·fertility·holographic·item·landmarks·logo·spouse
+neighbors → buddhism·collapse·configuration·drive·hinduism·law·merge·orphism·paganism·ritual·sti·value · ← buddhism·collapse·configuration·drive·hinduism·law·merge·orphism·paganism·ritual·sti·value
 analysis —
 law wheel is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `5e5b3b5f-c851-80d4-ab4b-78fec6d498e0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e84d9501-863b-88bc-aac6-2138a66d0ca9` · `pnpm readme` · `pnpm computed:check`</sub>

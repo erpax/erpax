@@ -3,15 +3,15 @@
 
 # suffering
 
-path `suffering` · uuid `—` · diamond `b026670c-3438-8e87-8cfd-ce6f14a28f60`
-horo `—` `—` · trinity `1·0·0` · sealed `0`
+path `suffering` · uuid `0d69b983-11bf-8c6d-815f-03297011afe2` · diamond `bf58d4e3-dc34-8b0d-a36f-73c0857926bd`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports aura·cost·entropy·gate·generate·law·mercy·merge·profane·sacred·signal·whole·zeropoint · exports suffering · escapes —
-links `33/33` · folded `0` · bonds in `0` out `0`
+links `33/33` · folded `1` · bonds in `23` out `23`
 faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
-analysis aura·diamond·hallucination·purity
+neighbors → aura·buddhism·christianity·cost·entropy·gate·generate·hallucination·jainism·judaism·law·mercy·merge·prayer·profane·purity·sacred·shamanism·shia·signal·sin·whole·zeropoint · ← aura·buddhism·christianity·cost·entropy·gate·generate·hallucination·jainism·judaism·law·mercy·merge·prayer·profane·purity·sacred·shamanism·shia·signal·sin·whole·zeropoint
+analysis aura
 law suffering is the felt signal of [[entropy]] > 0 — the read of the gap between an atom and the [[whole]] — so it is cured by closing the gap (merge toward zeropoint), never by silencing the signal; it falls as wholeness rises and is zero only at [[sacred]] zero-entropy.
 
 ---
 
-<sub>content-uuid `a13dbab0-5250-8e2b-b6c2-a758a6de4904` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a2b3ecd7-d23f-8d67-afeb-d62fc878c540` · `pnpm readme` · `pnpm computed:check`</sub>

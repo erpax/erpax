@@ -3,8 +3,8 @@
 
 # awareness
 
-path `awareness` · uuid `81526ded-4bb1-898b-aafa-5bd236f22253` · diamond `d6bf2cfe-646b-89eb-9019-6cb704e4de66`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `awareness` · uuid `4cc1967c-4c3c-820b-93b5-3197477b623c` · diamond `ee8089d2-ea39-80a9-8b7a-43fca84ca81f`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports desire·distribution·law·market·power·segment·signal·trend · exports awareness · escapes —
 links `18/18` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law awareness is the discovery gate — knowing the thing exists and answers a h
 
 ---
 
-<sub>content-uuid `90a58084-d480-83ad-b237-42333dc66664` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ffa05361-e238-8f90-b5bd-d7f1337596ad` · `pnpm readme` · `pnpm computed:check`</sub>

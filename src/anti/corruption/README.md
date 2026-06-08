@@ -6,6 +6,8 @@
 
 ## [[debit]] · [[credit]]
 
+> account code `anti/corruption` · currency `eb` (entropy-bit)
+
 | [[debit]] | [[credit]] |
 | -------- | --------- |
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
@@ -21,11 +23,59 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `law:a ledger is corruption-free iff four invariants hold at once — content-uuid immutability ([[identity]]), segregation of duties, double-entry [[balance]], and reversal-only history; fraud is a contradiction that fails a pure check, not a record to be trusted-then-audited.`
+- `seal:unsealed`
+- `trigger:Use when detecting internal-control invariants — content-uuid immutability, segregation of duties, double-entry balance, or reversals-only history; the four architectural impossibilities that make financial corruption structurally detectable.`
+- `trigger:a ledger is corruption-free iff four invariants hold at once — content-uuid immutability ([[identity]]), segregation of duties, double-entry [[balance]], and reversal-only history; fraud is a contradiction that fails a pure check, not a record to be trusted-then-audited.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `cfcc3d94-4629-86fd-9aea-ce1a6001c4d0` · `da570456-9f5e-8625-b9f9-e8c0cf638d72` · `f68defe5-86ff-8e3c-a0d0-97231c433143`
+- content uuids `2f8e39aa-be9c-88cf-aa1e-e44526ee3d2b` · `c4f5a364-320d-8aa0-a7d9-663cac149231` · `ebd89608-d1ed-85d2-8e2d-bfc123d42888`
+
+## [[entropy]] — gaps · seals
+
+> account code `anti/corruption` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.4` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `2` eb | Σ seal `11.4` eb |
+
+> net residual `-9.4` eb · seal/gap ratio `5.7` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `anti` · sub-root `3f6af27a-e7ba-83c4-8910-296fe78e5ca9`
+- partition `anti` · sub-root `ad5c7c4f-b62b-8d44-af3a-8ef117c47854`
 - bond degree `72` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
 
 ## [[cloudflare]] bindings
 
@@ -33,18 +83,55 @@
 
 ## [[standards]]
 
-- `ISO-19011:2018 audit-trail integrity-verification` · banner
 - `SOX §404 segregation-of-duties internal-controls` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·4 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
 
 ## analytics
 
 - bond degree `72` · sealed `0` · horo `4`
 - variance `0` · balanced `1` · trinity sum `3`
-- bindings `0` · standards `2`
+- bindings `0` · standards `1`
 
 ## identity
 
-- uuid `3f6af27a-e7ba-83c4-8910-296fe78e5ca9`
+- uuid `8e08397c-e612-835e-9a4a-8e2d9ec27827`
 - bonds in `24` · out `24`
 - trinity form·code·proof `1`·`1`·`1`
 - links `17` / `17`
@@ -56,4 +143,4 @@
 
 ---
 
-<sub>content-uuid `074a2527-df0a-8c10-925a-b57014543886` · framed by typography partition `anti` bonds `72` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `6ab2c9fd-2509-8ece-bf59-7e1d99e82f73` · framed by typography partition `anti` bonds `72` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,15 +3,15 @@
 
 # medical
 
-path `medical` · uuid `dd75faed-972f-8872-8664-29d908bdcb9e` · diamond `d19e9832-47e9-8f1a-8082-a515796f35bc`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
-imports article·audience·business·calculator·cause·clinic·code·collapse·condition·contraindication·design·device·entity·enumeration·estimator·evidence·factor·guideline·imaging·indication·intangible·law·level·merge·observational·organization·panel·procedure·purpose·recommendation·risk·scholarly·score·sign·specialty·stage·status·sti·study·symptom·technique·test·therapy·type · exports medical · escapes —
-links `44/44` · folded `1` · bonds in `47` out `47`
-faces worker·plugin·pwa `0·0·0`
-neighbors → article·audience·business·calculator·cause·clinic·code·collapse·condition·contraindication·design·device·entity·enumeration·estimator·evidence·factor·guideline·imaging·indication·intangible·law·level·merge·observational·organization·page·panel·procedure·purpose·recommendation·risk·scholarly·score·sign·specialty·stage·status·sti·study·symptom·technique·test·therapy·trial·type·web · ← article·audience·business·calculator·cause·clinic·code·collapse·condition·contraindication·design·device·entity·enumeration·estimator·evidence·factor·guideline·imaging·indication·intangible·law·level·merge·observational·organization·page·panel·procedure·purpose·recommendation·risk·scholarly·score·sign·specialty·stage·status·sti·study·symptom·technique·test·therapy·trial·type·web
+path `medical` · uuid `3db72d38-a56c-8480-b198-6d3e79360de9` · diamond `e739c592-34ae-8291-ac6f-496546323d37`
+horo `5` `round` · trinity `1·1·1` · sealed `1`
+imports @/medical/device · exports MEDICAL_DEVICES·MODALITIES·allModalitiesBoundaryHold·deviceReadingFromModality·deviceSpec·devicesInCategory·observationsFromMedicalDevice·recordMedicalDeviceOnPath·type·wireModalityToEmr · escapes —
+links `44/44` · folded `1` · bonds in `100` out `100`
+faces worker·plugin·pwa `1·0·0`
+neighbors → allergies·article·article·audience·audience·business·business·calculator·calculator·cause·cause·clinic·clinic·code·code·collapse·condition·condition·contraindication·contraindication·design·device·device·diagnosis·disease·drug·entity·entity·enumeration·enumeration·estimator·estimator·evidence·evidence·factor·factor·folder·guideline·guideline·hospital·imaging·indication·indication·intangible·intangible·law·level·level·merge·monitor·observational·observational·organization·organization·page·page·panel·panel·patient·physician·prescription·procedure·procedure·purpose·purpose·recommendation·recommendation·risk·risk·scholarly·scholarly·score·score·sign·sign·specialty·specialty·stage·stage·status·status·sti·study·study·surgery·symptom·symptom·technique·technique·test·test·therapy·therapy·treatment·trial·trial·type·type·web·web · ← allergies·article·article·audience·audience·business·business·calculator·calculator·cause·cause·clinic·clinic·code·code·collapse·condition·condition·contraindication·contraindication·design·device·device·diagnosis·disease·drug·entity·entity·enumeration·enumeration·estimator·estimator·evidence·evidence·factor·factor·folder·guideline·guideline·hospital·imaging·indication·indication·intangible·intangible·law·level·level·merge·monitor·observational·observational·organization·organization·page·page·panel·panel·patient·physician·prescription·procedure·procedure·purpose·purpose·recommendation·recommendation·risk·risk·scholarly·scholarly·score·score·sign·sign·specialty·specialty·stage·stage·status·status·sti·study·study·surgery·symptom·symptom·technique·technique·test·test·therapy·therapy·treatment·trial·trial·type·type·web·web
 analysis —
 law medical is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `118e0152-88e0-8020-9628-1c0b8f6b4cc8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e07c8b34-514d-849c-81f4-baa7f33f8edc` · `pnpm readme` · `pnpm computed:check`</sub>

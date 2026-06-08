@@ -3,8 +3,8 @@
 
 # bundle
 
-path `bundle` · uuid `4d9a01de-f5b2-85c5-bfc5-1fe4d0c53bcc` · diamond `4245486c-89cb-8af5-ad5f-92adc654b1ce`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `bundle` · uuid `d68a7420-039e-8899-ab79-0a6db248b76b` · diamond `023e02e2-8d87-88e4-b138-d5dcd83445e5`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports customers·discount·items·law·variant · exports bundle · escapes —
 links `8/8` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law a bundle packages multiple [[Items]] for joint sale, priced as a bundle (wit
 
 ---
 
-<sub>content-uuid `c5bebf54-964c-8a70-b7ae-703247b64506` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `65369692-d2f5-85c9-94b1-8c9a3fe8bfec` · `pnpm readme` · `pnpm computed:check`</sub>

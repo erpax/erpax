@@ -3,15 +3,15 @@
 
 # story
 
-path `story` · uuid `5a16b91c-6a80-8783-919a-ca5acc6b85b9` · diamond `fe08bf31-12ff-8feb-aa11-a2534a70ec95`
+path `story` · uuid `5a16b91c-6a80-8783-919a-ca5acc6b85b9` · diamond `f1409522-fef7-843d-a78d-53ea0eb7a159`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports amp·collapse·comic·law·merge·short·sti · exports story · escapes —
-links `7/7` · folded `1` · bonds in `17` out `17`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → application·brewery·catalog·change·cohort·collect·euenergy·events·landmarks·memories·optician·representation·satire·sponsorship·stat·sti·submission · ← application·brewery·catalog·change·cohort·collect·euenergy·events·landmarks·memories·optician·representation·satire·sponsorship·stat·sti·submission
+neighbors → amp·collapse·comic·law·merge·short·sti · ← amp·collapse·comic·law·merge·short·sti
 analysis —
 law story is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `64442728-528e-88b5-9441-ab2d23cc4ab8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1ca74480-bcc7-8399-8462-6f86a45599a9` · `pnpm readme` · `pnpm computed:check`</sub>

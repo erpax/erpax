@@ -3,15 +3,15 @@
 
 # trend
 
-path `trend` · uuid `f8cc6818-fcab-8e77-ab5f-f06a85da4d3c` · diamond `fb592f8e-2377-87fa-841d-a2f4cea4b3be`
+path `trend` · uuid `f8cc6818-fcab-8e77-ab5f-f06a85da4d3c` · diamond `3afecff1-d7a7-848e-bdd0-b9accc31013c`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports law·measure·metric·outlier·schedule · exports trend · escapes —
-links `6/6` · folded `1` · bonds in `4` out `4`
+links `6/6` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → awareness·diffusion·friction·habit·law·market·measure·metric·outlier·schedule · ← awareness·diffusion·friction·habit·law·market·measure·metric·outlier·schedule
 analysis —
 law trend is the temporal-analysis dimension — it reads a [[metric]]'s evolution over time (moving averages, velocity, burndown, growth curves) to forecast and detect patterns; the value alone is a point, the trend is its motion.
 
 ---
 
-<sub>content-uuid `56d97fed-0118-828b-b07a-3e074ec43f5f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `44e16427-9e27-8a92-a1f2-3b1dff22cffc` · `pnpm readme` · `pnpm computed:check`</sub>

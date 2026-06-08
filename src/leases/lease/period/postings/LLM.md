@@ -3,15 +3,15 @@
 
 # postings
 
-path `leases/lease/period/postings` · uuid `0113c14d-b124-8310-a56e-81704c7a9ab8` · diamond `f5a8ae21-8c18-8ae9-b7fa-7432d7d061f2`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+path `leases/lease/period/postings` · uuid `947ca018-5803-8452-a9a8-07c5c11aa29c` · diamond `7fe8e5ec-7e1e-83c2-8c7f-5b0bf4590d32`
+horo `8` `crest` · trinity `1·1·1` · sealed `0`
 imports @/audit/trail/after/change·@/auth·@/auto/populate/created/by·@/auto/populate/tenant·@/auto/set/timestamp·@/base/accounting/field·@/utility · exports default · escapes —
-links `3/3` · folded `1` · bonds in `10` out `11`
+links `3/3` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `1·0·0`
-neighbors → accounting·accounting·entries·horo·identity·law·leases·modifications·proof·standard·transaction · ← accounting·entries·horo·identity·law·leases·modifications·proof·standard·transaction
+neighbors → accounting·horo·identity·law·proof·standard·transaction · ← accounting·horo·identity·law·proof·standard·transaction
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `2328d5d7-9d52-808d-93c3-9f8580492623` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3dca81d0-0adb-8428-bb8f-9a7c8871a5ea` · `pnpm readme` · `pnpm computed:check`</sub>

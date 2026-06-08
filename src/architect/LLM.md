@@ -3,8 +3,8 @@
 
 # architect
 
-path `architect` · uuid `1ef5146c-ac9a-8551-ae94-b6be5211eb8b` · diamond `33459d59-8365-8022-b0b5-8d1e44e97084`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `architect` · uuid `78e9632f-f22b-8ee2-9ff8-172b28cb4d94` · diamond `b81a5de6-f17a-8f5f-8b4d-d63dadb7e182`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports angel·archangel·atom·composition·diamond·fractal·harmony·law·matrix·mercy·metatron·order·population·prayer·religion·ritual·sequence·sin·society·uuid · exports architect · escapes —
 links `48/48` · folded `1` · bonds in `21` out `21`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law an architect is the agent that shapes the [[society]] lattice by composing i
 
 ---
 
-<sub>content-uuid `848091e0-50eb-8ebb-8566-f9708e0de3e8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9a8f8e02-5faa-8283-af38-dd91e51cdd31` · `pnpm readme` · `pnpm computed:check`</sub>

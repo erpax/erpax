@@ -3,15 +3,15 @@
 
 # users
 
-path `users` · uuid `f9255790-4fd6-8d00-a6a1-2269d414a599` · diamond `a92db2d7-e28c-82ca-b205-821a5134ff8d`
+path `users` · uuid `f9255790-4fd6-8d00-a6a1-2269d414a599` · diamond `341c4b2e-d0e8-8826-8320-ef915124762e`
 horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/competency·@/i18n·@/is/super/admin·@/users/access·@/users/endpoints·@/users/hooks · exports const · escapes —
-links `8/8` · folded `1` · bonds in `2` out `2`
-faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+links `8/8` · folded `1` · bonds in `16` out `16`
+faces worker·plugin·pwa `1·0·0`
+neighbors → access·activities·agent·auth·config·fields·identity·instances·law·posts·queue·requests·roles·suggestions·ticket·train · ← access·activities·agent·auth·config·fields·identity·instances·law·posts·queue·requests·roles·suggestions·ticket·train
 analysis —
 law a user is the ONE typeless universal actor and [[identity]] root — employee = agent = customer = author — holding cross-tenant membership, competencies, per-user locale/config, and email-login credentials; the type is a role the actor carries, never a separate table.
 
 ---
 
-<sub>content-uuid `9f9cc9c7-6eab-81d9-82ee-eb79c63cacd6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `89c36637-06e5-858d-a91b-4abe703f2061` · `pnpm readme` · `pnpm computed:check`</sub>

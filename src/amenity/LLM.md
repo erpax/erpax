@@ -3,8 +3,8 @@
 
 # amenity
 
-path `amenity` · uuid `21d42c03-dd99-8867-8d4f-b0c1e336e166` · diamond `dd608f5e-a8d1-8161-9729-c41d25de3181`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `amenity` · uuid `66a0aa8a-c6b8-8ec3-992a-14a120cd32f2` · diamond `658b1199-9fe0-8766-a661-37863ad0002c`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·feature·law·merge·sti · exports amenity · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law amenity is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `967cd4a6-20c9-8dff-a2e0-c43650e7dc07` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e2e30c53-9898-8805-bd2d-5a7221f7ca85` · `pnpm readme` · `pnpm computed:check`</sub>

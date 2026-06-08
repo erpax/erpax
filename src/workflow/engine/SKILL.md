@@ -1,8 +1,88 @@
 ---
-name: workflow-engine
-description: Use when executing or validating finite-state machines — gating transitions, detecting dead-ends, or auditing workflow harmony.
+name: engine
+description: "Use when executing or validating finite-state machines — gating transitions, detecting dead-ends, or auditing workflow harmony."
+atomPath: workflow/engine
+coordinate: workflow/engine · 5/round · 842f6a9b
+contentUuid: "4d519b36-7c6e-5783-ba20-474bb92dcb46"
+diamondUuid: "5b084c8d-befd-8bdc-8c07-4e174a7afe7b"
+uuid: "842f6a9b-c2e0-8505-a150-51d6ef1a054b"
+horo: 5
+bonds:
+  in:
+    - displacement
+    - find
+    - matrix
+    - query
+    - rank
+    - search
+    - specification
+    - vehicle
+    - workflow
+  out:
+    - displacement
+    - find
+    - matrix
+    - query
+    - rank
+    - search
+    - specification
+    - vehicle
+typography:
+  partition: workflow
+  bondDegree: 35
+  neighbors:
+    - aura
+standards:
+  - "OMG BPMN 2.0 process-execution-semantics"
+bindings: []
+neighbors:
+  wikilink:
+    - aura
+    - event
+    - flow
+    - hooks
+    - horo
+    - identity
+    - law
+    - merge
+    - standard
+  matrix:
+    - displacement
+    - find
+    - matrix
+    - query
+    - rank
+    - search
+    - specification
+    - vehicle
+  backlinks:
+    - displacement
+    - find
+    - matrix
+    - query
+    - rank
+    - search
+    - specification
+    - vehicle
+signatures:
+  computationUuid: "c1b122c5-ef8c-804c-b2bc-51fbaad83b39"
+  stages:
+    - stage: path
+      stageUuid: "d26ebc48-f8cf-8785-be51-1f16d8273a43"
+    - stage: trinity
+      stageUuid: "6b684c46-e995-8411-b03b-26d52fe18cfb"
+    - stage: boundary
+      stageUuid: "5e418758-46ec-802c-83d8-230236690856"
+    - stage: links
+      stageUuid: "1e72931c-e40b-80b3-a6ad-4c7c475af10d"
+    - stage: horo
+      stageUuid: "9b4f3143-99e8-861a-9fbb-2b807ab46c7d"
+    - stage: seal
+      stageUuid: "a312714d-904f-82f6-ab4d-eec1d3b25988"
+    - stage: uuid
+      stageUuid: "cecd44a7-bc39-85a4-a7a3-4f092e2ea2ec"
+version: 2
 ---
-
 # workflow-engine — the inert state machine made LIVE, self-auditing
 
 A `WorkflowDefinitions.stateMachine` is inert data until something reads it. This pure engine (`index.ts`) is that reader: it (a) **gates** a document transition against the machine and (b) **audits** the machine's harmony. The same code that runs the organism detects where the organism is incomplete — the keystone closing the data-vs-behaviour gap. No I/O, so it is wholly testable (`index.test.ts`, `fixtures.ts`).

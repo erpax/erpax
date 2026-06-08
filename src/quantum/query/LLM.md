@@ -3,15 +3,15 @@
 
 # query
 
-path `quantum/query` · uuid `87937cb3-5bb6-8fd6-acff-6fa8dabaed6c` · diamond `abd3e632-5bbb-89bb-87b8-f551eb90cee8`
-horo `1` `base` · trinity `1·1·1` · sealed `1`
+path `quantum/query` · uuid `835195f2-e48a-8806-997f-534dc01052f6` · diamond `c29681b5-c8fc-8f68-9e0b-ff5296e4a5a8`
+horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/uuid/matrix · exports const · escapes —
-links `10/10` · folded `1` · bonds in `8` out `9`
+links `10/10` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `1·0·0`
-neighbors → engine·law·law·merge·quantum·query·sql·thing·uuid · ← engine·law·merge·quantum·query·sql·thing·uuid
+neighbors → engine·law·query·sql·thing · ← engine·law·query·sql·thing
 analysis —
 law two queries share one identity iff their normalized text (trimmed and lower-cased) is equal — normalization defines the equivalence, so a lookup hits the same cache key under any whitespace or case variation, and any meaningful change yields a new uuid that invalidates by content-address.
 
 ---
 
-<sub>content-uuid `4e3846a3-c83a-82de-af8e-59c39dbbf86d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `85e28f2a-2f69-8e1f-819e-2ec076c32899` · `pnpm readme` · `pnpm computed:check`</sub>

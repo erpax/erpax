@@ -3,7 +3,7 @@
 
 # broker
 
-path `broker` · uuid `b3896987-ea01-8aad-a352-42347fefad33` · diamond `42bef6e0-23f2-81cb-a2c9-39b0ac111f96`
+path `broker` · uuid `43fb3d55-336d-80c4-bc0f-d1a24d8609fd` · diamond `0ea282c6-a6a2-8759-ab1c-dde886136c69`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports broker · escapes —
 links `2/2` · folded `1` · bonds in `7` out `7`
@@ -14,4 +14,4 @@ law broker is one schema.org word, content-addressed; the same word collides eve
 
 ---
 
-<sub>content-uuid `630ca618-a86e-89f1-aa36-91557d97ba8f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `960d746c-5e49-8d8d-96a2-174377dbcffd` · `pnpm readme` · `pnpm computed:check`</sub>

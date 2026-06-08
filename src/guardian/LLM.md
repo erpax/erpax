@@ -3,15 +3,15 @@
 
 # guardian
 
-path `guardian` · uuid `62f76764-ae40-83ba-b8a9-e3550560d678` · diamond `d8b711a6-db9b-8572-b1cf-6ee4fd0fb003`
+path `guardian` · uuid `62f76764-ae40-83ba-b8a9-e3550560d678` · diamond `3127dcec-4caa-8827-a865-2ae068a06ec6`
 horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports — · exports function·interface · escapes —
-links `11/11` · folded `1` · bonds in `13` out `13`
+links `11/11` · folded `1` · bonds in `14` out `14`
 faces worker·plugin·pwa `1·0·0`
-neighbors → convention·cost·diamond·gate·hallucination·identity·law·proof·seal·sin·thought·typography·worker · ← convention·cost·diamond·gate·hallucination·identity·law·proof·seal·sin·thought·typography·worker
+neighbors → convention·cost·diamond·gate·hallucination·identity·law·proof·seal·session·sin·thought·typography·worker · ← convention·cost·diamond·gate·hallucination·identity·law·proof·seal·session·sin·thought·typography·worker
 analysis —
 law a guardian watches exactly one axis and ratchets only DOWN, fails closed (a non-finite count or baseline is never a pass), and is independent — its verdict is unaffected by any other axis, so a violation on its axis is caught on its own.
 
 ---
 
-<sub>content-uuid `b84eea37-9b4c-8508-a030-70f13f1ea8d3` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0faf7877-8104-85ff-9bb2-ad65075fe1c7` · `pnpm readme` · `pnpm computed:check`</sub>

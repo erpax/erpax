@@ -10,9 +10,13 @@ import {
   harmony,
   harmonizes,
   chord,
+  recordBodyOnPath,
 } from '@/body'
 import { UNITY } from '@/wave'
 import { HORO_DIGITS } from '@/horo'
+import { finishedIdeaCrossed } from '@/seal'
+import { deriveDiamond } from '@/diamond'
+import { deriveFolderModel, buildReadmeCorpusContext, buildReadmeTypographyGraph } from '@/readme'
 
 describe('body — the eight organs', () => {
   it('carries all eight organs, each with a verdict and a distinct ordinal', () => {
@@ -68,5 +72,38 @@ describe('body — dissonance on a gap (harmony is not free)', () => {
     const notes = chord().map((c) => c.note)
     expect(notes[0]).toBe('C')
     expect(notes[notes.length - 1]).toBe('C') // the 8th organ closes the octave
+  })
+})
+
+describe('body — path ledger hook', () => {
+  it('recordBodyOnPath — content-addressed append-only entry', () => {
+    const a = recordBodyOnPath({ kind: 'test' }, '2026-06-08T12:00:00.000Z', null, 0)
+    const b = recordBodyOnPath({ kind: 'test' }, '2026-06-08T12:00:00.000Z', null, 0)
+    expect(a.entryUuid).toBe(b.entryUuid)
+    expect(a.atomPath).toBe('body')
+  })
+})
+
+describe('body — finishedIdeaCrossed', () => {
+  const cwd = process.cwd()
+  const graph = buildReadmeTypographyGraph(cwd)
+  const ctx = buildReadmeCorpusContext(cwd)
+
+  it.each(['body', 'body/heart', 'body/brain', 'body/abdomen', 'body/anatomy'] as const)(
+    '%s crosses after trinity collapse',
+    (atomPath) => {
+    const folder = deriveFolderModel(atomPath, cwd, ctx, graph)
+    const model = deriveDiamond(atomPath)
+    const cross = finishedIdeaCrossed({
+      ...model,
+      trinity: { form: folder.form, code: folder.code, proof: folder.proof },
+      sealed: folder.sealed,
+    })
+    expect(folder.sealed).toBe(true)
+    expect(folder.form).toBe(1)
+    expect(folder.code).toBe(1)
+    expect(folder.proof).toBe(1)
+    expect(cross.crossed).toBe(true)
+    expect(cross.impurities).toEqual([])
   })
 })

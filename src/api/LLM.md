@@ -3,15 +3,15 @@
 
 # api
 
-path `api` · uuid `eeb3decd-2ac3-8363-b7f9-03f64061e086` · diamond `6e74b146-0472-8d7f-89bf-3c3282912a6f`
-horo `8` `crest` · trinity `1·0·0` · sealed `0`
+path `api` · uuid `b2d03bcd-4a60-8e7c-a819-eb838cb0bba1` · diamond `f4a9e52c-8679-8b0a-b685-2c190506b3c2`
+horo `5` `round` · trinity `1·0·0` · sealed `0`
 imports access·dimension·fs·github·harden·integrity·law·mcp·path·payload·quantum·queries·url·uuid · exports api · escapes —
-links `21/21` · folded `1` · bonds in `32` out `33`
+links `21/21` · folded `1` · bonds in `26` out `26`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·calculate·carriers·client·commerce·connections·country·descent·dev·dimension·endpoint·endpoints·fs·github·harden·integrity·law·law·mcp·path·payload·payment·port·quantum·queries·redirects·reference·spec·trading·url·uuid·web·workspace · ← access·calculate·carriers·client·commerce·connections·country·descent·dev·dimension·endpoint·endpoints·fs·github·harden·integrity·law·mcp·path·payload·payment·port·quantum·queries·redirects·reference·spec·trading·url·uuid·web·workspace
-analysis diamond·hallucination·purity
+neighbors → access·calculate·client·descent·dev·dimension·endpoint·endpoints·fs·github·harden·integrity·law·mcp·path·payload·port·quantum·queries·redirects·reference·spec·url·uuid·web·workspace · ← access·calculate·client·descent·dev·dimension·endpoint·endpoints·fs·github·harden·integrity·law·mcp·path·payload·port·quantum·queries·redirects·reference·spec·url·uuid·web·workspace
+analysis —
 law three interfaces (Local/REST/GraphQL), one query syntax and one set of operations — the only divergence is that Local API skips access by default, so `overrideAccess: false` is what makes the three behave as one.
 
 ---
 
-<sub>content-uuid `31f7b792-7897-88b9-bdb8-5cf020674112` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `735ba882-4bbe-8da4-8901-66e1ff8ba4db` · `pnpm readme` · `pnpm computed:check`</sub>

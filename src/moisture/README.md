@@ -23,7 +23,21 @@
 
 - partition `moisture` · sub-root `29fc82c2-29c3-8a66-8b88-916299de0f97`
 - bond degree `43` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `43` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `73e965e2-69c8-8165-9261-29bd39d8ac1d` · framed by typography partition `moisture` bonds `43` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `982c7f8f-498d-842c-894c-f06879a0761b` · framed by typography partition `moisture` bonds `43` · `pnpm readme` · `pnpm readme:check`</sub>

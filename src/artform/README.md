@@ -2,7 +2,7 @@
 
 # artform
 
-> atom `artform` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
+> atom `artform` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -21,9 +21,9 @@
 
 ## typography graph
 
-- partition `artform` · sub-root `793eb0d2-e690-8c77-874c-49dfc77b5068`
+- partition `artform` · sub-root `5fe06bb2-a63d-81ea-b721-acbb3ef62b0d`
 - bond degree `9` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- graph root `30ef7fae-4ee3-8746-b14a-915657036770`
 
 ## [[cloudflare]] bindings
 
@@ -33,15 +33,53 @@
 
 - `schema.org — the type vocabulary, collided to single words` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·8 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `9` · sealed `1` · horo `2`
+- bond degree `9` · sealed `1` · horo `8`
 - variance `0` · balanced `1` · trinity sum `1`
 - bindings `0` · standards `1`
 
 ## identity
 
-- uuid `793eb0d2-e690-8c77-874c-49dfc77b5068`
+- uuid `5fe06bb2-a63d-81ea-b721-acbb3ef62b0d`
 - bonds in `3` · out `3`
 - trinity form·code·proof `1`·`0`·`0`
 - links `3` / `3`
@@ -53,4 +91,4 @@
 
 ---
 
-<sub>content-uuid `c418af8d-729d-85b3-9ebe-8a8088fbe553` · framed by typography partition `artform` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `313bc564-3bf6-8a3a-a828-268772a7b738` · framed by typography partition `artform` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,8 +3,8 @@
 
 # de
 
-path `de` · uuid `225d04ca-ef7e-8685-bdb3-02737a2d38ee` · diamond `baff404e-fe1d-8fe1-8687-45e655f2f1fa`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `de` · uuid `043fb745-ad4f-8286-9fe9-459442e94aaa` · diamond `76818a4c-0d58-8f45-987a-909c34f59e6f`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·nonprofit·sti·type · exports de · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law de is one schema.org word, content-addressed; the same word collides every s
 
 ---
 
-<sub>content-uuid `98698bba-f5b7-85fc-9c50-ffa558cb124a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `eddf3292-7985-8ac4-a012-1714fae972bf` · `pnpm readme` · `pnpm computed:check`</sub>

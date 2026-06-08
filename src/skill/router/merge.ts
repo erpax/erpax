@@ -21,6 +21,7 @@
  * @see ./skills.index (erpax atoms) · ./installed.catalogue (the loaded catalogue)
  */
 import type { SkillNode } from './resolve'
+import { pathNavMeta } from '@/navigation'
 
 /** One installed Claude domain skill (a row of the generated `installed.catalogue.ts`). */
 export interface InstalledSkill {
@@ -47,8 +48,9 @@ export const erpaxDomain = (domain: string): string => DOMAIN_ALIASES[domain] ??
 export function installedToNode(s: InstalledSkill): SkillNode {
   const domain = erpaxDomain(s.domain)
   const path = [domain, s.name]
+  const { nav, group, route } = pathNavMeta(path.join('/'))
   return {
-    route: '/' + path.join('/') + '/SKILL',
+    route,
     path,
     name: s.name,
     description: s.description,
@@ -57,6 +59,8 @@ export function installedToNode(s: InstalledSkill): SkillNode {
     siblings: [],
     children: [],
     related: [domain], // the leaf links to its domain (its DomainAgent)
+    nav,
+    group,
     ...(s.contentUuid ? { contentUuid: s.contentUuid } : {}),
   }
 }

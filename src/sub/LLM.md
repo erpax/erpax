@@ -3,15 +3,15 @@
 
 # sub
 
-path `sub` · uuid `efecf5b1-1a55-85c2-93e6-9bc9b5b2041f` · diamond `aa4d6f69-0d6a-83d7-93ce-acefb6601231`
+path `sub` · uuid `efecf5b1-1a55-85c2-93e6-9bc9b5b2041f` · diamond `e79b2ed9-c9e5-82ee-93f1-6c409bc3118a`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports application·broadcast·category·channel·collapse·event·events·law·merge·organization·reservation·stage·sti·structure·suffix·test·trip · exports sub · escapes —
-links `17/17` · folded `1` · bonds in `4` out `4`
+links `17/17` · folded `1` · bonds in `17` out `17`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → application·broadcast·category·channel·collapse·event·events·law·merge·organization·reservation·stage·sti·structure·suffix·test·trip · ← application·broadcast·category·channel·collapse·event·events·law·merge·organization·reservation·stage·sti·structure·suffix·test·trip
 analysis —
 law sub is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `34a5726e-263d-8fee-9a6f-ad0ba0515942` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `bd9f1986-54ab-8425-b84d-ffad7dc1b74c` · `pnpm readme` · `pnpm computed:check`</sub>

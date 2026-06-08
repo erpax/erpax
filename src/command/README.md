@@ -2,7 +2,7 @@
 
 # command
 
-> atom `command` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
+> atom `command` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -23,9 +23,9 @@
 
 ## typography graph
 
-- partition `command` · sub-root `261d1a23-7417-8e03-8aaf-cc87bd545214`
-- bond degree `71` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- partition `command` · sub-root `35e614a9-1813-81a7-b972-ec17944f26c8`
+- bond degree `59` · analysis neighbors —
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -36,16 +36,54 @@
 - `schema.org Action — the imperative move (here, the workflow step's verb)` · banner
 - `the C-set is gated for groundedness — every command resolves to a corpus atom` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·7 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `71` · sealed `1` · horo `4`
+- bond degree `59` · sealed `1` · horo `7`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `2`
 
 ## identity
 
-- uuid `5b279972-c7eb-8269-b0fa-f56ea10676c0`
-- bonds in `21` · out `23`
+- uuid `35e614a9-1813-81a7-b972-ec17944f26c8`
+- bonds in `16` · out `16`
 - trinity form·code·proof `1`·`1`·`1`
 - links `27` / `27`
 - folded `1` · escapes `0`
@@ -56,4 +94,4 @@
 
 ---
 
-<sub>content-uuid `3a04ec4c-1bef-8fa8-9036-fa6456db5f19` · framed by typography partition `command` bonds `71` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `7c409cba-5588-8115-bd6f-dcc8c2c1a48c` · framed by typography partition `command` bonds `59` · `pnpm readme` · `pnpm readme:check`</sub>

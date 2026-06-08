@@ -3,8 +3,8 @@
 
 # declarations
 
-path `customers/sales/orders/shipments/customs/declarations` · uuid `3cb8c2ca-0fee-89ee-b7ee-c7ff32b7c809` · diamond `d0c0d7d6-2f33-8272-95f7-c95c3b1307b5`
-horo `5` `round` · trinity `1·1·1` · sealed `1`
+path `customers/sales/orders/shipments/customs/declarations` · uuid `260591a7-ce27-8755-8fb7-8ef67923fbf4` · diamond `c1c63f4e-99ba-87b2-aa4a-605582e5093f`
+horo `2` `share` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/incoterms/2020·@/standard/collection/hook · exports default · escapes —
 links `6/6` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law every HS-coded line's declared value reconciles to its shipment item, and no
 
 ---
 
-<sub>content-uuid `cc205d60-88e1-8a37-825a-2108dc01dd25` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `027e4e08-e8c3-80cd-b543-dadce6b42c70` · `pnpm readme` · `pnpm computed:check`</sub>

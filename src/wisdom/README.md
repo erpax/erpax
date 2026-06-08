@@ -2,17 +2,17 @@
 
 # wisdom
 
-> atom `wisdom` · horo `—` `—` · [[balance]] `1` · [[seal]] `0`
+> atom `wisdom` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[horo]]/off-ring `1` |
-| [[balance]] `1` | [[liability]]/[[identity]]/uuid `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
 | [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `7` | Σ `7` |
@@ -22,21 +22,21 @@
 ## typography graph
 
 - partition `wisdom` · sub-root `7d124c32-b9f1-8253-aad6-6960c68160de`
-- bond degree `18` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `45` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
-- uuid `—`
-- bonds in `0` · out `0`
+- uuid `7d124c32-b9f1-8253-aad6-6960c68160de`
+- bonds in `15` · out `15`
 - trinity form·code·proof `1`·`0`·`0`
 - links `33` / `33`
-- folded `0` · escapes `0`
+- folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `fb7dd846-6c0a-888b-81bf-c899e1b96c5d` · framed by typography partition `wisdom` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `58eea925-5630-89a3-889a-7e79bb637b71` · framed by typography partition `wisdom` bonds `45` · `pnpm readme` · `pnpm readme:check`</sub>

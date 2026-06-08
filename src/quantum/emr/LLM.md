@@ -3,15 +3,15 @@
 
 # emr
 
-path `quantum/emr` · uuid `2ee151b3-49f6-8429-b3e8-8653d05b21e9` · diamond `9ac122a7-b986-8e8e-85c4-dfda4b1199f1`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
-imports akashic·diagnosis·finality·health·law·observation·patient·record·reverse·snapshot·tamper·uuid · exports emr · escapes —
-links `22/22` · folded `1` · bonds in `13` out `13`
+path `quantum/emr` · uuid `fdea25ac-fc3e-8f8c-9bc6-ea33c2aa989e` · diamond `ec042bdb-ecd2-8393-bdc8-3567bc09332c`
+horo `2` `share` · trinity `1·1·1` · sealed `1`
+imports @/integrity·@/path·@/readings · exports const·function·interface · escapes —
+links `38/38` · folded `1` · bonds in `20` out `19`
 faces worker·plugin·pwa `1·0·0`
-neighbors → akashic·biometric·diagnosis·finality·health·law·observation·patient·record·reverse·snapshot·tamper·uuid · ← akashic·biometric·diagnosis·finality·health·law·observation·patient·record·reverse·snapshot·tamper·uuid
+neighbors → akashic·analog·biometric·device·diagnosis·finality·health·law·monitor·observation·patient·readings·record·reverse·snapshot·snapshot·tamper·uuid·vital · ← akashic·analog·analog·biometric·device·diagnosis·finality·health·law·monitor·observation·patient·readings·record·reverse·snapshot·snapshot·tamper·uuid·vital
 analysis —
-law the EMR is a [[health]]-state snapshot chain — each encounter and [[observation]] is content-addressed, immutable, append-only; a correction is a new superseding entry never a deletion, so the full history stays reversible and tamper-evident.
+law the EMR is a [[health]]-state snapshot chain that provides [[analog]] results — each encounter and [[observation]] is content-addressed, immutable, append-only; a correction is a new superseding entry never a deletion, so the full history stays reversible, tamper-evident, and reconstructible at any instant.
 
 ---
 
-<sub>content-uuid `e77d698e-fb9d-8ab6-8bb0-55b8ff3704a4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f83ac076-8332-8df2-abbf-5e2e2204078c` · `pnpm readme` · `pnpm computed:check`</sub>

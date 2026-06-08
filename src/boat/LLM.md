@@ -3,8 +3,8 @@
 
 # boat
 
-path `boat` · uuid `760d8366-c7cc-8c12-ae63-3cfaf8d20de3` · diamond `829faf29-128b-8bce-a04b-b85496a79b59`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `boat` · uuid `2a27eda3-5571-8472-8538-0366a99f0fa2` · diamond `fa51c8a6-01ca-8121-9107-fbd53e51a05b`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports arrival·collapse·departure·law·merge·reservation·sti·terminal·trip · exports boat · escapes —
 links `9/9` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law boat is one schema.org word, content-addressed; the same word collides every
 
 ---
 
-<sub>content-uuid `69d1d884-12c2-8644-a8d1-ebbb697cdd5e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0d9896b1-96ad-854f-8c33-dd6b6df0f56b` · `pnpm readme` · `pnpm computed:check`</sub>

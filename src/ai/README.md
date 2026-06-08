@@ -2,7 +2,7 @@
 
 # ai
 
-> atom `ai` · horo `2` `share` · [[balance]] `1` · [[seal]] `0`
+> atom `ai` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -23,9 +23,9 @@
 
 ## typography graph
 
-- partition `ai` · sub-root `2d3a90be-68d2-8eac-ba70-c4c58554dc58`
-- bond degree `48` · analysis neighbors `agent` · `cloudflare` · `diamond` · `secret`
-- graph root `06810c2c-2396-831f-a2b3-a58706a17051`
+- partition `ai` · sub-root `dc207df0-6a0d-86c2-bc8f-4a1197b56c3f`
+- bond degree `31` · analysis neighbors `agent` · `cloudflare` · `diamond` · `secret`
+- graph root `67d11a43-67e0-8dde-afd8-ecbed950ff42`
 
 ## [[cloudflare]] bindings
 
@@ -80,24 +80,62 @@
 - `WCAG-2.1` · catalogue
 - `WCO-HS` · catalogue
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·4 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `48` · sealed `0` · horo `2`
+- bond degree `31` · sealed `1` · horo `4`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `2` · standards `45`
 
 ## identity
 
-- uuid `b3b0066a-e1d6-8a07-89b5-9fa59c6670d4`
-- bonds in `13` · out `14`
+- uuid `120e69b4-ee6e-89e2-953d-106134f1b117`
+- bonds in `5` · out `5`
 - trinity form·code·proof `1`·`1`·`1`
 - links `2` / `2`
 - folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `ceaae0f6-e35c-8a40-b880-5663a1acc0dc` · framed by typography partition `ai` bonds `48` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `3c74f16f-7140-8fc8-84f1-1f9a3b98c553` · framed by typography partition `ai` bonds `31` · `pnpm readme` · `pnpm readme:check`</sub>

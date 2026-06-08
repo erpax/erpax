@@ -1,8 +1,94 @@
 ---
 name: phases
-description: Use when modeling a routing step — one sort-ordered position in a lot's phase chain that crosses to the work-phases catalog, carrying per-step time and unit counters with derived (never stored) state.
+description: "Use when modeling a routing step — one sort-ordered position in a lot's phase chain that crosses to the work-phases catalog, carrying per-step time and unit counters with derived (never stored) state."
+atomPath: lot/work/phases
+coordinate: lot/work/phases · 4/weave · 3b89cf16
+contentUuid: "4a074620-fed6-5381-8db2-dafe85ab2c63"
+diamondUuid: "fbfa8cfa-6af1-8894-9a86-afd2701ca071"
+uuid: "3b89cf16-da9c-86b6-912b-fc2543d4decf"
+horo: 4
+bonds:
+  in:
+    - accounting
+    - balance
+    - coordinate
+    - law
+    - lots
+    - merge
+    - operations
+    - phases
+    - work
+  out:
+    - accounting
+    - balance
+    - coordinate
+    - law
+    - lots
+    - merge
+    - operations
+    - phases
+typography:
+  partition: lot
+  bondDegree: 36
+  neighbors: []
+standards:
+  - "EU-2014/55"
+  - "EU-537/2014"
+  - "EU-910/2014"
+  - "ISA-95"
+  - "ISA-95:2013 / IEC-62264-1 §B.4 process-segment routing-step"
+  - "ISO-19011:2018 audit-trail routing-step-changes"
+  - "ISO-22400-2"
+  - "ISO-22400-2:2014 manufacturing-operations efficiency throughput"
+  - "SOX §404 internal-controls production-control"
+bindings: []
+neighbors:
+  wikilink:
+    - accounting
+    - coordinate
+    - law
+    - lots
+    - merge
+    - phases
+    - sequence
+    - variants
+  matrix:
+    - accounting
+    - balance
+    - coordinate
+    - law
+    - lots
+    - merge
+    - operations
+    - phases
+  backlinks:
+    - accounting
+    - balance
+    - coordinate
+    - law
+    - lots
+    - merge
+    - operations
+    - phases
+signatures:
+  computationUuid: "e5b2b227-a53f-8483-b158-bb2f593b5be4"
+  stages:
+    - stage: path
+      stageUuid: "f0779abd-e603-888b-a27c-9443eb0e36cf"
+    - stage: trinity
+      stageUuid: "a51b2917-2e96-8397-b054-fdd161c660f7"
+    - stage: boundary
+      stageUuid: "8bd5bbaa-a9f3-836d-ac50-d1f267c68e27"
+    - stage: links
+      stageUuid: "c65f1ddb-f47e-85d4-b387-294137df57b2"
+    - stage: horo
+      stageUuid: "ceabb485-ab0e-876c-876c-823e1cc7bc9c"
+    - stage: seal
+      stageUuid: "7664e4d8-0478-8685-b4d9-a5e2e1471643"
+    - stage: uuid
+      stageUuid: "c3065548-256c-80a0-8102-d73dafb6403d"
+version: 2
 ---
-
 # lot/work/phases — the routing step (the sort-ordered cross to the catalog)
 
 This is where a [[lots|lot]] meets its production route. A lot is produced through an **ordered sequence** of these steps; each binds the lot to one [[work/phases]] catalog phase, the team that runs it, and the per-step time + unit counters. It is the [[coordinate]] cross of the routing graph made concrete: `lot` (the containing axis) ⊕ `workPhase` (the catalog) ⊕ `sort` (the prev/next sequence on the chain).

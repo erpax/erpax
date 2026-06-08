@@ -3,8 +3,8 @@
 
 # bogomilism
 
-path `bogomilism` · uuid `1f9371d1-eec8-8939-a5a9-a165ff702cd0` · diamond `a6ae7216-5c82-884d-a135-cd9824bb580e`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `bogomilism` · uuid `f28c8a8f-7b1f-80b3-9f6e-0d85885f4cee` · diamond `300fa3ba-3c7b-802b-adf6-dccc819b3b32`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports archangel·breath·diamond·duality·gnosticism·identity·law·manichaeism·prayer·profane·religion·return·ritual·sacred·self·society·translator·uuid·whole · exports bogomilism · escapes —
 links `47/47` · folded `1` · bonds in `19` out `19`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law bogomilism is a [[diamond]] of [[duality]] · [[profane]] · [[breath]] · [
 
 ---
 
-<sub>content-uuid `a8c032d4-7ae4-8df6-99c7-717f6cdd3850` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2e5acbdb-e7ab-8e29-b67d-db6ac1fa564b` · `pnpm readme` · `pnpm computed:check`</sub>

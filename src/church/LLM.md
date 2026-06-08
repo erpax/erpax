@@ -3,8 +3,8 @@
 
 # church
 
-path `church` · uuid `46484840-5321-8cba-8c77-778c60438a60` · diamond `cb6b528b-8a5a-8585-8b7a-76b3a17a0595`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `church` · uuid `d3df9b74-f576-8b9d-8247-5e37f6daf3b9` · diamond `dd13adbd-0d2f-8065-b7fe-f372a8935427`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports catholic·law · exports church · escapes —
 links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law church is one schema.org word, content-addressed; the same word collides eve
 
 ---
 
-<sub>content-uuid `a2017a5a-75d2-8f3d-abbe-3597d9cabbb3` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `44f3a70e-f8ea-8eff-b88b-6479e76d5a97` · `pnpm readme` · `pnpm computed:check`</sub>

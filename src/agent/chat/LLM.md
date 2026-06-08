@@ -3,15 +3,15 @@
 
 # chat
 
-path `agent/chat` · uuid `f914c1ec-09d2-8804-ad76-1d86bcfef351` · diamond `d88ae90a-dce5-8328-8fa9-dd1e4d9780dd`
-horo `8` `crest` · trinity `1·1·1` · sealed `0`
+path `agent/chat` · uuid `714f462d-5d9a-8c45-b8c1-a1cd65fc8994` · diamond `ef3c979e-d87d-84fd-a362-a3f8184c5687`
+horo `4` `weave` · trinity `1·1·1` · sealed `0`
 imports @/communication · exports AgentChat·const · escapes —
-links `12/12` · folded `1` · bonds in `60` out `67`
+links `12/12` · folded `1` · bonds in `63` out `63`
 faces worker·plugin·pwa `1·0·0`
-neighbors → accounting·agent·agent·akashic·all·architecture·aura·balance·breath·chat·chat·civilization·classroom·collections·communication·communication·config·contribution·cost·database·duality·fields·flow·fractal·generate·give·history·hooks·identity·industry·law·law·law·lexical·llm·matrix·mcp·merge·merge·message·message·one·part·plugins·port·quantum·quantum·recover·rodin·science·self·sequence·session·skills·society·spec·standard·take·team·torus·transaction·trinity·types·uuid·uuid·uuid·whole · ← accounting·agent·akashic·all·architecture·aura·balance·breath·chat·chat·civilization·classroom·collections·communication·config·contribution·cost·database·duality·fields·flow·fractal·generate·give·history·hooks·identity·industry·law·lexical·llm·matrix·mcp·merge·message·one·part·plugins·port·quantum·recover·rodin·science·self·sequence·session·skills·society·society·spec·standard·take·team·torus·transaction·trinity·types·uuid·uuid·whole
+neighbors → accounting·agent·akashic·all·architecture·aura·balance·breath·chat·chat·civilization·classroom·collections·comms·communication·config·contribution·cost·cost·database·duality·fields·flow·fractal·generate·give·history·hooks·identity·industry·law·lexical·llm·matrix·mcp·merge·message·one·part·plugins·port·realtime·recover·rodin·science·self·sequence·session·skills·society·society·spec·standard·take·team·torus·transaction·trinity·types·uuid·uuid·wave·whole · ← accounting·agent·akashic·all·architecture·aura·balance·breath·chat·chat·civilization·classroom·collections·comms·communication·config·contribution·cost·cost·database·duality·fields·flow·fractal·generate·give·history·hooks·identity·industry·law·lexical·llm·matrix·mcp·merge·message·one·part·plugins·port·realtime·recover·rodin·science·self·sequence·session·skills·society·society·spec·standard·take·team·torus·transaction·trinity·types·uuid·uuid·wave·whole
 analysis agent·aura
 law an agent chat is an ordered thread of content-[[uuid]] [[message]]s that folds to a chain-uuid — reorder or change any message and the thread's id changes, so the conversation is tamper-evident.
 
 ---
 
-<sub>content-uuid `6afa0b3b-20e0-8840-9f25-7c3cd7f0a047` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3795f5da-d3cb-812c-966e-f62001d9944c` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # types
 
-path `types` · uuid `54e9a6fa-48a6-80c4-aff4-395f79554e49` · diamond `80d160c2-808f-8ee3-a338-74b28d2f02ed`
-horo `8` `crest` · trinity `1·1·1` · sealed `1`
+path `types` · uuid `e0930aad-a89b-8e34-a6f3-cbbc597aab59` · diamond `c6b9c15c-0524-8066-816b-327ea1a099f3`
+horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports — · exports *:../payload-types·type · escapes —
-links `4/4` · folded `1` · bonds in `8` out `6`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·may·memories·mentions·stat · ← accounting·cohort·landmarks·may·memories·mentions·runs·stat
-analysis agent·diamond·hallucination·purity
+links `4/4` · folded `1` · bonds in `21` out `24`
+faces worker·plugin·pwa `1·0·0`
+neighbors → agent·audit·beyond·chat·collapse·config·decompression·examples·gate·law·law·law·law·optimize·payload·recover·schema·society·sti·test·torus·trinity·types·vitepress · ← agent·audit·beyond·chat·collapse·config·decompression·examples·gate·law·optimize·payload·recover·schema·society·sti·test·torus·trinity·types·vitepress
+analysis agent
 law `payload-types.ts` is generated from the config, never hand-edited; regenerate after ANY [[schema]] change or the stale types are a [[gate]]-caught gap.
 
 ---
 
-<sub>content-uuid `5a3fc59f-29c0-8040-b5ac-ccba68e10a34` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3bfacfb6-1cc5-8b0c-8664-be326929a78c` · `pnpm readme` · `pnpm computed:check`</sub>

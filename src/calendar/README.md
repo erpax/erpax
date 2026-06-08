@@ -21,9 +21,9 @@
 
 ## typography graph
 
-- partition `calendar` · sub-root `8c6d5f75-c8c8-8356-ac83-d6a65b5b2c29`
+- partition `calendar` · sub-root `160c7fed-08d2-84f7-89fa-9533e52bba12`
 - bond degree `12` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- graph root `1cef4f02-a3fa-83a5-8ea0-120b724ef456`
 
 ## [[cloudflare]] bindings
 
@@ -33,6 +33,44 @@
 
 —
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·1 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
 - bond degree `12` · sealed `1` · horo `1`
@@ -41,7 +79,7 @@
 
 ## identity
 
-- uuid `8c6d5f75-c8c8-8356-ac83-d6a65b5b2c29`
+- uuid `160c7fed-08d2-84f7-89fa-9533e52bba12`
 - bonds in `4` · out `4`
 - trinity form·code·proof `1`·`0`·`0`
 - links `8` / `8`
@@ -53,4 +91,4 @@
 
 ---
 
-<sub>content-uuid `680c12ab-c0bf-8001-81b9-8a74dc6c8c3e` · framed by typography partition `calendar` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `5c254bdd-bc9c-82dc-98c1-58f1f7337771` · framed by typography partition `calendar` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,15 +3,15 @@
 
 # summary
 
-path `summary` · uuid `4ae95de6-2297-8883-83c7-22c08344921b` · diamond `dceb08d1-3f7c-8a61-aa4e-09d41a3cfcbb`
+path `summary` · uuid `4ae95de6-2297-8883-83c7-22c08344921b` · diamond `4190695c-cbc1-856b-a9e1-3d949bb0db65`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports accessibility·benefits·collapse·law·merge·sti·url · exports summary · escapes —
-links `7/7` · folded `1` · bonds in `2` out `2`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → artwork·landmarks · ← artwork·landmarks
+neighbors → accessibility·benefits·collapse·law·merge·sti·url · ← accessibility·benefits·collapse·law·merge·sti·url
 analysis —
 law summary is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `087dc5ec-9120-8639-90ce-ee3742e33382` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4b5512b1-6cfc-822b-93b2-500fc6440698` · `pnpm readme` · `pnpm computed:check`</sub>

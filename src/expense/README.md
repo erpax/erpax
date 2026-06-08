@@ -25,7 +25,22 @@
 
 - partition `expense` · sub-root `b6333b28-3786-8d82-9b05-a928162473f5`
 - bond degree `47` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `entropy read live from @/entropy + @/tamper/import; billed as a balanced double-entry, never asserted` · banner
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `47` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `2`
 
 ## identity
 
@@ -41,4 +56,4 @@
 
 ---
 
-<sub>content-uuid `bc962f4c-efb3-8e7b-8aad-92a4d2682832` · framed by typography partition `expense` bonds `47` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `78cc2300-0c4f-83fd-9b71-ecb425d96afb` · framed by typography partition `expense` bonds `47` · `pnpm readme` · `pnpm readme:check`</sub>

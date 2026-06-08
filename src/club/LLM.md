@@ -3,8 +3,8 @@
 
 # club
 
-path `club` · uuid `26cb8b07-808d-8701-92f5-a9e51e4c0987` · diamond `8b966314-abd9-8073-89f1-34e3eac08906`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `club` · uuid `86e2878b-5803-813d-b254-433b3d5332f3` · diamond `f3a5723c-a117-8308-8b70-00756545f3c4`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·comedy·health·law·merge·night·sports·sti · exports club · escapes —
 links `8/8` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law a club is one membership-bound venue under many themes (comedy/health/night/
 
 ---
 
-<sub>content-uuid `350ad0f6-00be-8b07-87eb-bb2449fc7d71` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3a017d67-11ec-8105-a369-d4a602fe0192` · `pnpm readme` · `pnpm computed:check`</sub>

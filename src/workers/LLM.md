@@ -3,15 +3,15 @@
 
 # workers
 
-path `workers` · uuid `78ad00cf-1174-8b2f-bfc2-87514c2a86f7` · diamond `9c9fc96d-95a9-8e35-9078-6b760eec8f2a`
+path `workers` · uuid `78ad00cf-1174-8b2f-bfc2-87514c2a86f7` · diamond `27d63237-a6b8-8e55-b859-e1a4862bef5c`
 horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports — · exports translations · escapes —
-links `5/5` · folded `1` · bonds in `5` out `5`
-faces worker·plugin·pwa `0·0·0`
-neighbors → action·cohort·landmarks·memories·stat · ← action·cohort·landmarks·memories·stat
+links `5/5` · folded `1` · bonds in `6` out `6`
+faces worker·plugin·pwa `1·0·0`
+neighbors → collapse·law·merge·sti·union·worker · ← collapse·law·merge·sti·union·worker
 analysis —
 law workers is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `ec2169c9-ffaf-83c5-abe0-620737fb5a11` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `798c955c-975d-82ab-8d3e-43698ed0fc58` · `pnpm readme` · `pnpm computed:check`</sub>

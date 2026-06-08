@@ -3,15 +3,15 @@
 
 # tip
 
-path `tip` · uuid `15b23f65-522b-8ca3-a39f-935ecb0b8b2b` · diamond `44525039-6599-8342-9942-11d8f44076fe`
+path `tip` · uuid `15b23f65-522b-8ca3-a39f-935ecb0b8b2b` · diamond `ad77d2a7-a2ce-8373-920b-ccbc985ccaf5`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports action·collapse·game·how·law·merge·sti · exports tip · escapes —
-links `7/7` · folded `1` · bonds in `2` out `2`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → action·collapse·game·how·law·merge·sti · ← action·collapse·game·how·law·merge·sti
 analysis —
 law tip is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `a025586d-bba6-8ef1-8e52-91360e7f40c0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c189d5b8-901a-8ae5-8946-0ae15f728a9b` · `pnpm readme` · `pnpm computed:check`</sub>

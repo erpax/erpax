@@ -3,15 +3,15 @@
 
 # abdomen
 
-path `abdomen` · uuid `5d418791-6c98-840f-9780-f36bea5d2678` · diamond `b21cda5c-e31a-8bbc-89cd-3c64b58823ff`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `abdomen` · uuid `0bbf2d04-95ce-8def-a539-9bd193144b30` · diamond `cfa88fef-52cf-8a5d-bfe1-234d774e8387`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports abdomen · escapes —
-links `4/4` · folded `1` · bonds in `4` out `4`
+links `4/4` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
+neighbors → abdomen·collapse·law·merge·sti · ← abdomen·collapse·law·merge·sti
 analysis —
 law abdomen is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `ccf088ea-6478-8127-9ae1-26747a7151c1` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `dcf0a09b-1965-8a35-b7c5-46f1d27954a8` · `pnpm readme` · `pnpm computed:check`</sub>

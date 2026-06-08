@@ -3,8 +3,8 @@
 
 # asset
 
-path `asset` · uuid `436348d2-c536-8c8e-ae42-2095b0809f53` · diamond `627cac16-7ec4-8853-b158-8db14414e216`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `asset` · uuid `e264acbe-4350-8a36-901d-916c0330525f` · diamond `24affd62-6d37-80a6-b142-ac589935880b`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports accounting·assets·balance·law · exports asset · escapes —
 links `9/9` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law asset is the singular model of exactly one [[assets]] row — a resource the
 
 ---
 
-<sub>content-uuid `6f4c418e-b2a2-8be2-adeb-c3d2291c1ea3` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1c77be8d-109d-8cb6-820d-d3ebc53b20c2` · `pnpm readme` · `pnpm computed:check`</sub>

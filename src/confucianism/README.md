@@ -2,7 +2,7 @@
 
 # confucianism
 
-> atom `confucianism` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
+> atom `confucianism` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -21,9 +21,9 @@
 
 ## typography graph
 
-- partition `confucianism` · sub-root `691d60bb-f2b0-8c9a-8be2-d4ede5393bf3`
+- partition `confucianism` · sub-root `379e9d7a-36a9-8a60-925e-e56f63f4119b`
 - bond degree `65` · analysis neighbors `diamond`
-- graph root `0349017a-99bf-8657-ae7e-21b09f363ed4`
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -33,15 +33,53 @@
 
 —
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·7 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `65` · sealed `1` · horo `5`
+- bond degree `65` · sealed `1` · horo `7`
 - variance `0` · balanced `1` · trinity sum `1`
 - bindings `0` · standards `0`
 
 ## identity
 
-- uuid `691d60bb-f2b0-8c9a-8be2-d4ede5393bf3`
+- uuid `379e9d7a-36a9-8a60-925e-e56f63f4119b`
 - bonds in `21` · out `21`
 - trinity form·code·proof `1`·`0`·`0`
 - links `61` / `61`
@@ -53,4 +91,4 @@
 
 ---
 
-<sub>content-uuid `cc7da07e-5374-82ae-b538-fae4bd90831d` · framed by typography partition `confucianism` bonds `65` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d314cef6-8319-842f-bec5-77bc8b5634d8` · framed by typography partition `confucianism` bonds `65` · `pnpm readme` · `pnpm readme:check`</sub>

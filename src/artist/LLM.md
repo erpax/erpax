@@ -3,7 +3,7 @@
 
 # artist
 
-path `artist` · uuid `b5b0f654-e61e-8d5d-b9c6-9f84d3831f76` · diamond `b4214f7f-1ee3-8352-9417-4945719d44ee`
+path `artist` · uuid `5eb58f77-cbb3-8c8a-be26-7587f1bae2e8` · diamond `732a7849-4e1e-88a6-91fb-6fcb90965d2e`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports artist · escapes —
 links `2/2` · folded `1` · bonds in `4` out `4`
@@ -14,4 +14,4 @@ law artist is one schema.org word, content-addressed; the same word collides eve
 
 ---
 
-<sub>content-uuid `59684778-8fc6-8ebe-a226-4f2574509a92` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e51453d9-86ff-8ad5-ae26-7a1b4d421ca4` · `pnpm readme` · `pnpm computed:check`</sub>

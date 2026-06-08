@@ -2,7 +2,7 @@
 
 # assets
 
-> atom `fixed/assets` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
+> atom `fixed/assets` · horo `2` `share` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -19,13 +19,33 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `fixed` · sub-root `b2917309-346d-8f65-88a0-44ba41040e22`
-- bond degree `150` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- bond degree `0` · analysis neighbors —
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `IFRS IAS-16 property-plant-and-equipment` · banner
+- `IFRS IAS-36 impairment-of-assets` · banner
+- `ISO-19011:2018 audit-trail` · banner
+- `ISO-4217:2015 currency-codes` · banner
+- `ISO-8601-1:2019 date-time acquisition-date in-service-date disposal-date` · banner
+- `SOX §404 internal-controls capital-asset-register` · banner
+- `US-GAAP ASC-360 property-plant-and-equipment` · banner
+
+## analytics
+
+- bond degree `0` · sealed `0` · horo `2`
+- variance `1` · balanced `0` · trinity sum `3`
+- bindings `0` · standards `7`
 
 ## identity
 
@@ -37,8 +57,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `fc56fe76-dba8-83eb-a916-3c899863421f` · framed by typography partition `fixed` bonds `150` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `52400437-4d0b-8a22-b8c9-c02fa5d770e5` · framed by typography partition `fixed` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

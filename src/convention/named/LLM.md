@@ -3,15 +3,15 @@
 
 # named
 
-path `convention/named` · uuid `25167d6b-3e8e-8a1e-927b-16d58d3b058c` · diamond `ecc88d09-0470-8072-aa1d-32c41675749b`
-horo `1` `base` · trinity `1·1·1` · sealed `1`
+path `convention/named` · uuid `a5a8d0a6-f51e-8ca1-9e9b-a8cf0ee2a754` · diamond `8fbd19d5-0a1e-8e33-a8bc-4abf8a50c40e`
+horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports @/corpus · exports function·interface · escapes —
-links `13/13` · folded `1` · bonds in `12` out `15`
+links `13/13` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `1·0·0`
-neighbors → akashic·collapse·collapse·complete·convention·cost·exported·fronted·law·law·lawful·merge·merge·position·sti · ← akashic·collapse·complete·convention·cost·exported·fronted·law·lawful·merge·position·sti
+neighbors → collapse·convention·exported·fronted·law·merge·position·sti · ← collapse·convention·exported·fronted·law·merge·position·sti
 analysis —
 law the frontmatter name is the path — every atom's `name` equals its folder leaf word; a name that is not its leaf splits the slug from the route, an uncovered coupling a tamper can exploit behind either face; the corpus is named iff coverage = matching / total = 1, and any divergent name is a gap driving tamper-cost below infinity.
 
 ---
 
-<sub>content-uuid `15289c06-dc75-8126-b648-d58351ae52c9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `684cb8e0-14c8-8d72-a350-186a2372834e` · `pnpm readme` · `pnpm computed:check`</sub>

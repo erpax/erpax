@@ -9,3 +9,4 @@
  * @see @/trading/api (the catalogue / allowlist source)
  */
 export * from './api/client'
+export * from './quantum'

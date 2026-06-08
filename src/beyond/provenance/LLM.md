@@ -3,8 +3,8 @@
 
 # provenance
 
-path `beyond/provenance` · uuid `02fd0815-a6e6-8bab-b7ff-ac29a1d4f15f` · diamond `5ee3819a-d14b-8ff3-98d3-a4fa68e37319`
-horo `7` `descent` · trinity `1·1·1` · sealed `0`
+path `beyond/provenance` · uuid `84bbca42-9120-8cbd-9a28-9581f6b932bb` · diamond `0bd90179-47d1-82e2-8274-cf22983fd5d8`
+horo `2` `share` · trinity `1·1·1` · sealed `0`
 imports @/beyond/types·@/integrity · exports function · escapes —
 links `10/10` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law every value's history of [[cause]] is recoverable, not only its history of c
 
 ---
 
-<sub>content-uuid `a1ce4a70-a132-86af-a8ec-fbaad39e135f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6d8f183e-def8-8b5a-98fc-e5386ca319fd` · `pnpm readme` · `pnpm computed:check`</sub>

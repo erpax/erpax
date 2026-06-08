@@ -23,7 +23,21 @@
 
 - partition `mixtape` · sub-root `1cc0fc6f-cef9-8b16-8c1d-ac86bfca626f`
 - bond degree `12` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `12` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `597a64e5-09b9-8a91-a377-e19d2746d62e` · framed by typography partition `mixtape` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `65cddcf6-5e8d-8aa6-be0d-491908ecf5f1` · framed by typography partition `mixtape` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

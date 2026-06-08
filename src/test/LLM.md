@@ -3,15 +3,15 @@
 
 # test
 
-path `test` · uuid `3a9fe10c-4e80-833d-b0fb-4556bcc12a2e` · diamond `71feab3a-b8d5-8f53-816c-99b225d17009`
+path `test` · uuid `3a9fe10c-4e80-833d-b0fb-4556bcc12a2e` · diamond `6bdb268e-0678-89a4-876b-6dc685b6b14f`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports available·blood·collapse·identifying·imaging·law·medical·merge·panel·pathology·sti·sub·typical · exports test · escapes —
-links `13/13` · folded `1` · bonds in `14` out `14`
+links `13/13` · folded `1` · bonds in `37` out `38`
 faces worker·plugin·pwa `0·0·0`
-neighbors → agriculture·corrects·crisis·css·drive·license·max·monday·moved·plus·proprietary·reverse·transit·width · ← agriculture·corrects·crisis·css·drive·license·max·monday·moved·plus·proprietary·reverse·transit·width
+neighbors → aura·available·blood·collapse·color·confirm·diamond·dimension·dissolution·dry·folder·gate·generate·heart·holographic·hooks·identifying·imaging·law·medical·merge·merge·names·one·panel·pathology·pwa·schema·seed·society·sti·sub·tamper·team·testing·trinity·types·typical · ← aura·available·blood·collapse·color·confirm·diamond·dimension·dissolution·dry·folder·gate·generate·heart·holographic·hooks·identifying·imaging·law·medical·merge·names·one·panel·pathology·pwa·schema·seed·society·sti·sub·tamper·team·testing·trinity·types·typical
 analysis aura
 law test is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `864fd292-18a3-8515-8f5e-4704861b4ef5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2d4424ba-057d-830c-a7d3-dbaca8186c6b` · `pnpm readme` · `pnpm computed:check`</sub>

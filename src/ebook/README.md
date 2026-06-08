@@ -23,7 +23,7 @@
 
 - partition `ebook` · sub-root `c2ae8150-f8d7-86cc-9921-ac65f837ec18`
 - bond degree `12` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `1240746b-a762-8821-8d2a-62e068e4dc4c` · framed by typography partition `ebook` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `75d101d7-bc83-8b5d-b784-245db7d79a4d` · framed by typography partition `ebook` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

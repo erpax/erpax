@@ -2,7 +2,7 @@
 
 # gap
 
-> atom `competency/gap` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `competency/gap` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -23,9 +23,9 @@
 
 ## typography graph
 
-- partition `competency` · sub-root `56d98736-eb49-897e-8cd6-11a0be1bb1ed`
+- partition `competency` · sub-root `1816a001-5d4b-89ac-baf0-fd1ec44b61e1`
 - bond degree `30` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -37,15 +37,53 @@
 - `SFIA` · catalogue
 - `SFIA 8 responsibility-levels-1-7 (the shared held/required scale)` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·2 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `30` · sealed `1` · horo `7`
+- bond degree `30` · sealed `1` · horo `2`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `3`
 
 ## identity
 
-- uuid `4dac3941-459a-8cd7-b66e-af35a408a43b`
+- uuid `cf6f821f-3eef-8dda-88ee-1b0b2e7ab014`
 - bonds in `10` · out `10`
 - trinity form·code·proof `1`·`1`·`1`
 - links `7` / `7`
@@ -57,4 +95,4 @@
 
 ---
 
-<sub>content-uuid `adc88898-c289-8d90-aff4-9f09f8335b9d` · framed by typography partition `competency` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ff2e9838-dbd8-81c8-aeaa-59821f6b78c7` · framed by typography partition `competency` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>

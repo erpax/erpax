@@ -3,9 +3,9 @@
 
 # mri
 
-path `mri` · uuid `b58c11c9-5123-831f-8e71-3b281e26983e` · diamond `f4fa1d98-1232-8365-8cdf-87bf573f96ad`
+path `mri` · uuid `b58c11c9-5123-831f-8e71-3b281e26983e` · diamond `67d7a15b-344a-8439-9a99-41c3adf77bcb`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
-imports collapse·law·merge·sti · exports mri · escapes —
+imports @/medical/device · exports deviceReadingFromMri·wireModalityToEmr · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
 neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
@@ -14,4 +14,4 @@ law mri is one schema.org word, content-addressed; the same word collides every 
 
 ---
 
-<sub>content-uuid `fc3516df-7a41-8e8d-9de6-cf71b1318f72` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `fbb1cedf-b7c4-8bb9-b33a-0e36bbf55784` · `pnpm readme` · `pnpm computed:check`</sub>

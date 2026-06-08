@@ -3,15 +3,15 @@
 
 # work
 
-path `work` · uuid `25ae33f9-27be-8109-a9a5-87ff1266b052` · diamond `e0918287-a22b-8506-96d9-1cc98e39c8f8`
+path `work` · uuid `25ae33f9-27be-8109-a9a5-87ff1266b052` · diamond `1979ab7f-1019-83ae-bab8-74dc28520964`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports based·collapse·creative·eligibility·encodes·example·featured·hours·law·location·merge·performed·presented·program·requirement·season·series·status·sti·translation · exports work · escapes —
-links `20/20` · folded `1` · bonds in `4` out `4`
+links `20/20` · folded `1` · bonds in `22` out `22`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → based·collapse·creative·eligibility·encodes·example·featured·hours·law·location·merge·performed·presented·program·queue·requirement·season·series·status·sti·task·translation · ← based·collapse·creative·eligibility·encodes·example·featured·hours·law·location·merge·performed·presented·program·queue·requirement·season·series·status·sti·task·translation
 analysis —
 law work is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `9d9b4163-eb91-851c-86dc-aa5ccf4236ef` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a4e0cf5f-0e40-86a7-ae16-7109eca04ec3` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # subsidy
 
-path `subsidy` · uuid `b818aa3d-b987-8301-a075-3d402acf46a8` · diamond `06bebdc9-7e52-892f-b1c9-58c2d001ac9d`
+path `subsidy` · uuid `b818aa3d-b987-8301-a075-3d402acf46a8` · diamond `e9978145-759f-85bc-9a83-4f1a3d2535a8`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports subsidy · escapes —
-links `4/4` · folded `1` · bonds in `2` out `2`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → application·landmarks · ← application·landmarks
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law subsidy is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `b4ce5c69-732a-85d1-8500-11b81c706871` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4e6ed1e9-b664-8d56-b293-4633fae4a493` · `pnpm readme` · `pnpm computed:check`</sub>

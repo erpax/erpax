@@ -3,8 +3,8 @@
 
 # constraint
 
-path `constraint` · uuid `d09ad1c3-1a41-8474-a1a7-1fd5ec403145` · diamond `7d44e6d8-2cf0-893c-8028-dcc7eef8ffd7`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `constraint` · uuid `31f8fe59-5f09-8ce9-89c5-c4153ff71e71` · diamond `c1e0cbf0-c00f-875a-b6db-5c8f9c84080f`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports database·fields·identity·nullability·schema · exports constraint · escapes —
 links `5/5` · folded `1` · bonds in `11` out `11`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `271c5b7a-ab00-8aaf-9641-6ca15aa047df` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6b9046ce-85a6-81eb-aa2b-cf3ef458f234` · `pnpm readme` · `pnpm computed:check`</sub>

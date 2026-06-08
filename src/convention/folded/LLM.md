@@ -3,8 +3,8 @@
 
 # folded
 
-path `convention/folded` · uuid `31efc78c-4510-80d8-800f-27f313b711bd` · diamond `7b83fd61-b9b4-88ee-b504-b774ffe40006`
-horo `5` `round` · trinity `1·1·1` · sealed `1`
+path `convention/folded` · uuid `0083fa3c-ef92-892a-9648-83c9d9def093` · diamond `6ab7efc5-9aaa-87d8-a965-48ec7c8d2117`
+horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports @/aura·@/uuid/matrix · exports const·function · escapes —
 links `14/14` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law every atom folds into the matrix (is a node); the corpus is matrix-complete 
 
 ---
 
-<sub>content-uuid `76bca4fc-2eef-891e-bb1c-51af398cf11b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `99b39fc1-606b-8834-8635-87453c41855d` · `pnpm readme` · `pnpm computed:check`</sub>

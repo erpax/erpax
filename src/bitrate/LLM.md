@@ -3,8 +3,8 @@
 
 # bitrate
 
-path `bitrate` · uuid `d7afdf63-3f13-8603-a6b4-26f2cfcd31f0` · diamond `47c8ee3e-6bff-8fb5-9733-a23a89d9b42b`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `bitrate` · uuid `ce3a90df-15aa-8698-87cc-355da1004ac6` · diamond `7fc6391e-aaf3-8640-94e3-d99e1f93ebe3`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports bitrate · escapes —
 links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law bitrate is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `4065323b-3c70-8107-b9ef-0d58f3f26763` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `812ab264-3ad3-8b0b-aba4-8f6ba538f956` · `pnpm readme` · `pnpm computed:check`</sub>

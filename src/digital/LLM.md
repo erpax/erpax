@@ -3,8 +3,8 @@
 
 # digital
 
-path `digital` · uuid `fc8dbf80-3261-8082-8728-331022d0db0d` · diamond `c247a156-9ccb-83ce-ae91-46088d7d59d4`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `digital` · uuid `cd7cee31-2b23-88cb-adfe-702c24bd25ac` · diamond `bde22944-6a75-8a1c-8445-b1bb61d980c1`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·document·enumeration·gs·has·iptc·law·link·merge·note·permission·platform·presentation·source·spreadsheet·sti·text·type · exports digital · escapes —
 links `18/18` · folded `1` · bonds in `18` out `18`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law digital is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `025f49d4-53a9-8c0d-b4e8-6d19c181e1d1` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `fd09883f-17c2-8eec-8250-a4ad205c88e7` · `pnpm readme` · `pnpm computed:check`</sub>

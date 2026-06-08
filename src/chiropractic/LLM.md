@@ -3,7 +3,7 @@
 
 # chiropractic
 
-path `chiropractic` · uuid `ae65ae03-80e2-831e-ab7d-ad49d709b668` · diamond `2595c8d3-e39b-8376-9cb7-f08dc6eade66`
+path `chiropractic` · uuid `d34d20e6-3df7-8577-a876-50a474d77bab` · diamond `fc4b2360-db3d-8da6-8199-6e55491909f6`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports chiropractic · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
@@ -14,4 +14,4 @@ law chiropractic is one schema.org word, content-addressed; the same word collid
 
 ---
 
-<sub>content-uuid `011c2b54-6181-850a-93c3-be7b85964c4c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `15669ab4-832e-85f8-b6f6-b034a477be57` · `pnpm readme` · `pnpm computed:check`</sub>

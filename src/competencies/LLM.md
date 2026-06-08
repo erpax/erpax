@@ -3,8 +3,8 @@
 
 # competencies
 
-path `competencies` · uuid `650b3c77-5fa3-8066-888f-b08928544745` · diamond `1be4df7c-47ce-8906-a8ae-71c3a0c80341`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `competencies` · uuid `e475a942-187f-8003-bc0b-1c73928b519d` · diamond `80e64ee7-a59e-8bdc-ab2f-116f0abb0540`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports accounting·duality·education·employees·fractal·holographic·identity·merge·sequence·standard·train · exports competencies · escapes —
 links `18/18` · folded `1` · bonds in `14` out `14`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `5678230b-a34c-87c4-a495-bf0aa6db46ae` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c613bece-b05f-8c37-9fd0-ee6d1eb283c8` · `pnpm readme` · `pnpm computed:check`</sub>

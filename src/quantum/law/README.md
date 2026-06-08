@@ -2,7 +2,7 @@
 
 # law
 
-> atom `quantum/law` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
+> atom `quantum/law` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -23,16 +23,69 @@
 
 ## typography graph
 
-- partition `quantum` · sub-root `539df73c-956d-8aae-b36f-47cf0d3aaff7`
-- bond degree `8315` · analysis neighbors `aura`
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- partition `quantum` · sub-root `752ec37e-713d-87b7-a64c-41cefcda190a`
+- bond degree `8536` · analysis neighbors `aura`
+- graph root `767556c1-6cb2-8c6a-8d8b-18641569b2ed`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `the corpus convention — body states identity, suffix states invariant ([[law]])` · banner
+- `the law-suffix is read from each SKILL.md ending, never asserted` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·2 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `8536` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `2`
 
 ## identity
 
-- uuid `fa10b34f-6b3f-86fc-a347-2713251d2798`
-- bonds in `2791` · out `2678`
+- uuid `2f30570d-3c74-84bd-82fd-fdc571c04b34`
+- bonds in `2827` · out `2827`
 - trinity form·code·proof `1`·`1`·`1`
-- links `11` / `11`
+- links `12` / `12`
 - folded `1` · escapes `0`
 
 ## [[seal]]
@@ -41,4 +94,4 @@
 
 ---
 
-<sub>content-uuid `c78ddc32-883a-876a-af6c-3c1ed63013d6` · framed by typography partition `quantum` bonds `8315` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ffc57abb-cf99-858c-a66f-67026ab3a825` · framed by typography partition `quantum` bonds `8536` · `pnpm readme` · `pnpm readme:check`</sub>

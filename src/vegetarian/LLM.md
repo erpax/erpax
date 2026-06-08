@@ -3,15 +3,15 @@
 
 # vegetarian
 
-path `vegetarian` · uuid `4a05d419-944b-8b40-9179-f559fe1419ee` · diamond `03c8d313-0a79-8149-8b60-de17b7c44f57`
+path `vegetarian` · uuid `4a05d419-944b-8b40-9179-f559fe1419ee` · diamond `7e5e12d9-f4e1-8c51-a1bb-60fd5baf4a1f`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports vegetarian · escapes —
-links `4/4` · folded `1` · bonds in `8` out `8`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → attendee·candidate·cohort·landmarks·lnid·materiality·memories·stat · ← attendee·candidate·cohort·landmarks·lnid·materiality·memories·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law vegetarian is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `114f30e0-cc78-873a-8ef1-10a3d826c85c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4e20f9ce-24c0-858a-a379-e7c4af8dda52` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,8 +3,8 @@
 
 # cable
 
-path `cable` · uuid `9eae32db-3705-8f1e-b190-9d8ecb959e25` · diamond `ad23ab8a-bd6b-84ef-b6f2-55416f8d640a`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `cable` · uuid `30b49d79-7bc1-87b4-8e69-a7921252ca51` · diamond `8e536ef4-6e58-853b-a0f3-896daaac4381`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·satellite·service·sti · exports cable · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law cable is one schema.org word, content-addressed; the same word collides ever
 
 ---
 
-<sub>content-uuid `3ec54937-d52c-8cda-b0c9-487fe34b7c21` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f7f17f0a-6b57-82a9-a9f4-4997868b976f` · `pnpm readme` · `pnpm computed:check`</sub>

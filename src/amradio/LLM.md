@@ -3,8 +3,8 @@
 
 # amradio
 
-path `amradio` · uuid `92e6535b-6a97-890b-b19b-8b44b77bf38a` · diamond `ac3b08fe-ed64-8431-b8e9-0d9c0e304341`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `amradio` · uuid `9189a6bc-822b-84fa-80cc-c418cac2b0da` · diamond `47d3de53-0f56-84ac-ab4d-977c9e49264a`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports amradio · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law amradio is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `ed182d6c-c9f7-8bc9-847a-23798c6ba4aa` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `92de7399-90ea-80fc-be4a-ad9ecb44a6a1` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # events
 
-path `customers/sales/orders/shipments/tracking/events` · uuid `6197c33f-5deb-8007-bd53-cf9866a7afb3` · diamond `dcd1d291-3461-8732-acbe-4fa43fc21de9`
-horo `8` `crest` · trinity `1·1·1` · sealed `1`
+path `customers/sales/orders/shipments/tracking/events` · uuid `3215b4e3-9216-8456-9507-156e10840d3e` · diamond `3ba9ebff-e3f0-81c8-b934-c50e9704576e`
+horo `1` `base` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
-links `5/5` · folded `1` · bonds in `23` out `27`
+links `5/5` · folded `1` · bonds in `12` out `12`
 faces worker·plugin·pwa `1·0·0`
-neighbors → access·accounting·auditright·auth·carriers·currency·entries·fields·hooks·horo·identity·incident·instances·law·law·law·lineage·materiality·observability·party·periods·proof·proof·shipments·standard·standard·sub · ← access·accounting·auditright·auth·carriers·currency·entries·fields·hooks·horo·identity·incident·instances·law·lineage·materiality·observability·party·periods·proof·shipments·standard·sub
+neighbors → auditright·horo·identity·incident·instances·lineage·materiality·observability·party·proof·standard·sub · ← auditright·horo·identity·incident·instances·lineage·materiality·observability·party·proof·standard·sub
 analysis —
 law the event log is append-only, and the `delivered` event is the single point-in-time trigger that transfers control and recognises revenue exactly once.
 
 ---
 
-<sub>content-uuid `8f9aaf2d-0262-8a7b-b919-0fd80807f2e1` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `34fa763a-9c87-8eee-ab29-790e8d7b8b4a` · `pnpm readme` · `pnpm computed:check`</sub>

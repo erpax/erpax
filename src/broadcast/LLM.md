@@ -3,8 +3,8 @@
 
 # broadcast
 
-path `broadcast` · uuid `6c3bfef7-56df-87f2-99e6-27d6a5bd6677` · diamond `096893f0-b9c6-8035-bd03-f8a82c915480`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `broadcast` · uuid `d78dbc23-9bf3-8a57-98c1-886c5eb907f6` · diamond `72332e16-b16c-8f29-8b4a-dda8d57cfd73`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports affiliate·channel·collapse·display·event·frequency·has·id·law·lineup·live·merge·modulation·name·provides·radio·service·signal·specification·sti·sub·tier·timezone·value · exports broadcast · escapes —
 links `24/24` · folded `1` · bonds in `24` out `24`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law broadcast is one schema.org word, content-addressed; the same word collides 
 
 ---
 
-<sub>content-uuid `62afc393-2df9-8c92-bb2a-7af2305a2bf0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `23916e06-0757-8519-a4d1-1fd59ff58c04` · `pnpm readme` · `pnpm computed:check`</sub>

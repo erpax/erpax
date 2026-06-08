@@ -3,15 +3,15 @@
 
 # starts
 
-path `starts` · uuid `405fa0b1-2bcf-8423-be9f-a2f635e25acc` · diamond `5c5897c7-e986-88cb-b7b4-a520e1eccd44`
+path `starts` · uuid `405fa0b1-2bcf-8423-be9f-a2f635e25acc` · diamond `e706b8e3-84a2-8dc4-9f41-dcab5fb52aa5`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports availability·collapse·law·merge·sti · exports starts · escapes —
-links `5/5` · folded `1` · bonds in `2` out `2`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → availability·collapse·law·merge·sti · ← availability·collapse·law·merge·sti
 analysis —
 law starts is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `7ff11ab0-56ab-85ea-8f90-eb425ce568fe` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `53260f92-11b1-8adb-83e2-75291492b4ba` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,8 +3,8 @@
 
 # aid
 
-path `aid` · uuid `940266a9-53ac-8953-8853-42029f66f972` · diamond `dbc24fc5-ead1-8293-9e79-15daf8f77153`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `aid` · uuid `ff05db43-b3f3-8bfd-91e7-8da3651a9c1f` · diamond `b3874a02-09b0-8577-a213-e9359841c55d`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·eligible·financial·law·merge·sti · exports aid · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law aid is one schema.org word, content-addressed; the same word collides every 
 
 ---
 
-<sub>content-uuid `6c8cc6fa-b7d7-8ba0-b73b-cdae7d09e0c8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c3aaca1a-05c2-8d74-af61-51a8b10970d4` · `pnpm readme` · `pnpm computed:check`</sub>

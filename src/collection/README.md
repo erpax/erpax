@@ -2,7 +2,7 @@
 
 # collection
 
-> atom `collection` · horo `2` `share` · [[balance]] `1` · [[seal]] `0`
+> atom `collection` · horo `4` `weave` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -17,13 +17,13 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `7` | Σ `7` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
 
 ## typography graph
 
-- partition `collection` · sub-root `70c0d8a5-1db9-8d74-94bd-4fc580a1fa63`
-- bond degree `38` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- partition `collection` · sub-root `6dd5f28f-2c66-8a51-89fd-123381a3b99a`
+- bond degree `0` · analysis neighbors —
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -33,15 +33,53 @@
 
 - `schema.org — the type vocabulary, collided to single words` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unbalanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| not-held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·4 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `38` · sealed `0` · horo `2`
-- variance `0` · balanced `1` · trinity sum `1`
+- bond degree `0` · sealed `0` · horo `4`
+- variance `1` · balanced `0` · trinity sum `1`
 - bindings `0` · standards `1`
 
 ## identity
 
-- uuid `70c0d8a5-1db9-8d74-94bd-4fc580a1fa63`
+- uuid `6dd5f28f-2c66-8a51-89fd-123381a3b99a`
 - bonds in `11` · out `11`
 - trinity form·code·proof `1`·`0`·`0`
 - links `7` / `7`
@@ -53,4 +91,4 @@
 
 ---
 
-<sub>content-uuid `b87c386d-5368-8fab-81e7-cb4daeea7f4d` · framed by typography partition `collection` bonds `38` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `46dcee39-5232-8382-b27e-2a339555942d` · framed by typography partition `collection` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

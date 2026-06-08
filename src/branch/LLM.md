@@ -3,8 +3,8 @@
 
 # branch
 
-path `branch` · uuid `c79cd065-bc05-893c-9ea7-10663b5a7649` · diamond `88811611-f0c7-80d7-94b0-b5a512acbbe3`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `branch` · uuid `98a1decf-54a5-89c6-96aa-8d62a93c29c8` · diamond `d5b23fab-7c27-85bc-a271-8887b5b299d1`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports arterial·code·law · exports branch · escapes —
 links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law branch is one schema.org word, content-addressed; the same word collides eve
 
 ---
 
-<sub>content-uuid `1c32b618-b0e9-875a-a8c7-9d8dde90686c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `aff9492b-ceeb-8e8a-95fb-50534c00c8a7` · `pnpm readme` · `pnpm computed:check`</sub>

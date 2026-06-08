@@ -3,8 +3,8 @@
 
 # diffusion
 
-path `diffusion` · uuid `cf951b26-9f06-8c2b-9f6f-b1aee212a58f` · diamond `9b93e734-a58b-855d-a03e-c13982c0f740`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `diffusion` · uuid `da56f2b1-934c-8a36-a3c0-e83de9fe31f9` · diamond `8e3302f2-086f-8650-9f4f-40a2ec34ca5e`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports awareness·bottleneck·breath·cohort·desire·distribution·friction·habit·market·network·power·proof·segment·signal·status·trend · exports diffusion · escapes —
 links `36/36` · folded `1` · bonds in `16` out `16`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `eeee5891-21a6-89cb-9165-475222f9a298` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5830a0ef-1966-892b-8491-3fb8bf8957ec` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,8 +3,8 @@
 
 # audit-right
 
-path `audit-right` · uuid `8db5cb9b-0077-85d1-a9a3-0be24187e683` · diamond `a6af2bf7-290f-858f-8cf8-3a65075f5a77`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `audit-right` · uuid `f2c2cfdb-9808-8216-892c-1561accc3e04` · diamond `39652f4d-93c4-80e7-904d-7c3c91a5cfe5`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports audit·contracts·matter · exports audit-right · escapes —
 links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `3152b943-28a2-82fa-9947-56d27aed3cac` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ba895d3c-3782-870c-b943-f3c190857781` · `pnpm readme` · `pnpm computed:check`</sub>

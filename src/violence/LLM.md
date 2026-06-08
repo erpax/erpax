@@ -3,15 +3,15 @@
 
 # violence
 
-path `violence` · uuid `8af82861-975a-85fc-a8ae-6115fbcbc5ba` · diamond `563705a6-db70-86bb-9117-8063ac025d8a`
+path `violence` · uuid `8af82861-975a-85fc-a8ae-6115fbcbc5ba` · diamond `ea6a1d5d-2d8b-82a0-8c6f-fa6fb1e8ae91`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports violence · escapes —
-links `4/4` · folded `1` · bonds in `9` out `9`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → account·balance·corrects·entity·id·landmarks·list·modification·qualification · ← account·balance·corrects·entity·id·landmarks·list·modification·qualification
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law violence is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `574ccc8b-cf21-835f-9f71-a9b46a47b6ba` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `41da347a-52f5-88f4-a63a-41f8f209da3f` · `pnpm readme` · `pnpm computed:check`</sub>

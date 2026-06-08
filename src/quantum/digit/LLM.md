@@ -3,15 +3,15 @@
 
 # digit
 
-path `quantum/digit` · uuid `757b6ec0-52a3-8a21-8bf0-f0c0be92876e` · diamond `5ecba8cb-ab54-85c7-85f7-f4a76a03c6d9`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
-imports analog·digit·law·links·matrix·matter·quantum·sequence·stream·uuid·word · exports digit · escapes —
-links `20/20` · folded `1` · bonds in `38` out `42`
+path `quantum/digit` · uuid `387093c5-939a-84e0-906d-dd381d1fc01e` · diamond `73a2246b-5e0e-8b1b-adac-b23df27694c5`
+horo `2` `share` · trinity `1·1·1` · sealed `1`
+imports @/digit·@/path·@/quantum/word · exports architectureBond·architectureBondStable·architectureFoldPaths·architectureMask·combineArchitectures·const·digitAddress·digitTrace·function·interact64·offSequence·recordArchitectureFoldOnPath · escapes —
+links `30/30` · folded `1` · bonds in `32` out `32`
 faces worker·plugin·pwa `1·0·0`
-neighbors → analog·atom·aura·consciousness·cost·default·diamond·digit·horo·law·law·linearity·links·live·log·mala·math·matrix·matter·merge·method·mirror·number·particle·pixel·proof·quantum·religion·render·sequence·sequence·stream·strength·tamper·text·topography·trinity·typography·uuid·uuid·word·word · ← analog·atom·aura·consciousness·cost·default·diamond·digit·horo·law·linearity·links·live·log·mala·math·matrix·matter·merge·method·mirror·number·particle·pixel·proof·quantum·religion·render·sequence·stream·strength·tamper·text·topography·trinity·typography·uuid·word
+neighbors → atom·aura·consciousness·cost·default·diamond·digit·horo·law·linearity·live·mala·math·merge·method·mirror·number·particle·pixel·proof·quantum·religion·render·sequence·strength·tamper·text·trinity·typography·uuid·word·word · ← atom·aura·consciousness·cost·default·diamond·digit·horo·law·linearity·live·mala·math·merge·method·mirror·number·particle·pixel·proof·quantum·religion·render·sequence·strength·tamper·text·trinity·typography·uuid·word·word
 analysis aura·diamond
 law the digit corpus obeys the SAME address-law as the word corpus — one-folder-per-unit, crosslinked by [[links]], folded by one content-[[uuid]] — so the word ⊕ digit duality is symmetric: neither corpus has a law the other lacks. Because the identical uuid folds both, a measurement (a digit-stream) and a sentence (a letter-stream) are crosslinkable on one shelf; the symbolic and the numeric share a single matrix, never two.
 
 ---
 
-<sub>content-uuid `34833b3c-db82-8dbb-ab03-8b64565394e1` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8995df40-a9ce-88eb-9528-becf8e130440` · `pnpm readme` · `pnpm computed:check`</sub>

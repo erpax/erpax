@@ -3,15 +3,15 @@
 
 # value
 
-path `value` · uuid `dcd5fd62-10a0-8e7e-b369-f95dfc0c4cde` · diamond `078b3f88-0709-861a-9f05-e677448814c9`
+path `value` · uuid `dcd5fd62-10a0-8e7e-b369-f95dfc0c4cde` · diamond `0b2ccc54-99fe-892c-9040-cfc34fef496c`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports calculate·currency·fields·law·measure·rate · exports value · escapes —
-links `9/9` · folded `1` · bonds in `8` out `8`
+links `9/9` · folded `1` · bonds in `35` out `35`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·accounting·holographic·id·landmarks·scheduled·spouse·valid · ← access·accounting·holographic·id·landmarks·scheduled·spouse·valid
+neighbors → added·broadcast·calculate·configuration·currency·default·dose·drive·enterprisebudget·fields·frequency·included·law·legal·length·level·max·measure·min·order·pattern·property·qualitative·quantitative·rate·rating·readonly·reference·required·specification·steering·step·strength·structured·wheel · ← added·broadcast·calculate·configuration·currency·default·dose·drive·enterprisebudget·fields·frequency·included·law·legal·length·level·max·measure·min·order·pattern·property·qualitative·quantitative·rate·rating·readonly·reference·required·specification·steering·step·strength·structured·wheel
 analysis —
 law value is a bare numeric substance that means nothing alone — it pairs with a context ([[measure]] unit, [[currency]], or [[rate]]) to become money/quantity/rate; the unit is never baked into the number.
 
 ---
 
-<sub>content-uuid `f0be0fcb-820c-8461-930f-9f92ec16a9e9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9468dee3-8786-832f-b91c-de61bbb61098` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # request
 
-path `quantum/request` · uuid `bc02bf19-50a5-89f4-be56-9ef1363f0b80` · diamond `c0327ef1-3568-8c96-8dba-4fddac26059f`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
-imports access·agent·broker·cache·cost·entropy·finality·gravity·law·linearity·merge·queue·receipt·request·uuid · exports request · escapes —
-links `25/25` · folded `1` · bonds in `19` out `20`
+path `quantum/request` · uuid `e629fdca-767a-8b3b-8d0a-cc0193fe2a74` · diamond `38df20a3-ee4e-8a6e-bfac-e8d5f5bd7cd7`
+horo `8` `crest` · trinity `1·1·1` · sealed `1`
+imports @/integrity·@/path·@/quantum/cache · exports const·function · escapes —
+links `34/34` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `1·0·0`
-neighbors → access·agent·balance·broker·cache·cost·entropy·finality·gravity·law·law·linearity·mcp·merge·queue·receipt·request·requests·uuid·workflow · ← access·agent·balance·broker·cache·cost·entropy·finality·gravity·law·linearity·mcp·merge·queue·receipt·request·requests·uuid·workflow
+neighbors → balance·law·request·requests·workflow · ← balance·law·request·requests·workflow
 analysis agent
 law a request and its replay carry the same content-uuid, so that uuid is the idempotency key — identical calls collapse to one and the external side is never billed twice for the same question. The cost paid out is bounded below by only what is irreducible after dedup; compress the request toward a point and the bytes (and the bill) fall toward zero, but the trust gate still admits it.
 
 ---
 
-<sub>content-uuid `bd9d7b7f-3c65-8eda-8f8c-32ab1f1b4b3c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a017e7eb-cb51-804b-8645-8d1d618b4677` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -8,10 +8,10 @@ horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports wpad · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law wpad is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `e71dc92b-e5f4-815d-8bac-496d4c901e32` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9f3c3ef9-9c4c-8e5d-9164-7e527d8244ff` · `pnpm readme` · `pnpm computed:check`</sub>

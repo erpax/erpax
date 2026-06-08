@@ -25,7 +25,23 @@
 
 - partition `entity` · sub-root `84762c87-e4f9-8e17-8f93-df67e4ac2792`
 - bond degree `75` · analysis neighbors `agent`
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `COSO-2013` · catalogue
+- `COSO-2013 entity-classification` · banner
+- `SOX §302 entity-type-determination` · banner
+
+## analytics
+
+- bond degree `75` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `3`
 
 ## identity
 
@@ -41,4 +57,4 @@
 
 ---
 
-<sub>content-uuid `ac8e3656-0706-8cec-9f9d-ffc374efea31` · framed by typography partition `entity` bonds `75` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `981faaf9-dc2f-8bdc-be1f-309373ef2b26` · framed by typography partition `entity` bonds `75` · `pnpm readme` · `pnpm readme:check`</sub>

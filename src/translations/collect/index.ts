@@ -55,7 +55,7 @@ function walk(dir: string, out: string[] = []): string[] {
   return out
 }
 
-/** Frontmatter scalar (quoted or bare) — mirrors build-index.mjs#fmValue. */
+/** Frontmatter scalar (quoted or bare) — mirrors skill/router/build#fmValue. */
 function fmValue(fm: string, key: string): string {
   const m = fm.match(new RegExp(`^${key}:\\s*(.+)$`, 'm'))
   if (!m) return ''

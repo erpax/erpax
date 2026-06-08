@@ -3,7 +3,7 @@
 
 # close
 
-path `close` · uuid `7a777dc1-a761-8c13-b1d9-6c7a9fd4ac8e` · diamond `0dfef88f-b0fa-8357-8db2-62407c19f4f3`
+path `close` · uuid `9131b841-ef9a-8bfd-8beb-41e5b6836a06` · diamond `42fe52a3-71ae-8e83-bd3f-30c77d50bfa1`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports accounting·akashic·end·flow·hooks·identity·law·open·uuid·versions · exports close · escapes —
 links `17/17` · folded `1` · bonds in `36` out `36`
@@ -14,4 +14,4 @@ law close is the universal forbidding boundary — a fiscal period locks (no GL 
 
 ---
 
-<sub>content-uuid `bebcaef7-4a5b-8521-9092-db2e492b3033` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a38ef6f2-67fb-879d-bdda-f02f256cfc79` · `pnpm readme` · `pnpm computed:check`</sub>

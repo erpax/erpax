@@ -3,15 +3,15 @@
 
 # transaction
 
-path `transaction` · uuid `41947e42-aee1-8e61-b04f-872f67985f3c` · diamond `07ff8101-4e02-8d25-b6ff-6d938076ed19`
+path `transaction` · uuid `41947e42-aee1-8e61-b04f-872f67985f3c` · diamond `f5beed5a-a26e-8e6d-ae3a-4bbfb7db0931`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports accounting·balance·bank·currency·dimension·duality·flow·fx·give·hedge·holographic·hooks·identity·law·number·part·party·queries·rate·sti·take·tax·transaction · exports transaction · escapes —
-links `42/42` · folded `1` · bonds in `5` out `5`
+links `42/42` · folded `1` · bonds in `92` out `87`
 faces worker·plugin·pwa `0·0·0`
-neighbors → calendars·cohort·landmarks·memories·stat · ← calendars·cohort·landmarks·memories·stat
+neighbors → accounting·accounts·allocations·amendments·arrangements·atom·balance·bank·batch·budgetvariance·cases·chat·collapse·commissions·commitments·contingencies·contracts·currency·decompression·dimension·duality·dunning·ecommerce·eligible·elimination·entries·entry·escrow·failures·files·flow·give·hedge·holographic·hooks·idempotency·identity·inspections·inventories·invoices·items·justice·law·leases·mandates·manufacturing·matrix·matter·measurements·memories·memos·milestones·movements·number·part·party·payment·payments·performances·postings·provisions·queries·quotes·rate·receipts·reconciliations·records·reports·requests·requisitions·returns·runs·schedules·science·sectors·signatures·snapshots·statements·sti·take·tasks·tax·torus·transactions·trust·variances·volume · ← accounting·accounts·allocations·amendments·arrangements·atom·balance·bank·batch·budgetvariance·cases·chat·collapse·commissions·commitments·contingencies·contracts·currency·decompression·dimension·duality·dunning·ecommerce·eligible·elimination·entries·entry·escrow·failures·files·flow·give·hedge·holographic·hooks·idempotency·identity·inspections·inventories·invoices·items·justice·law·leases·mandates·manufacturing·matrix·matter·measurements·memories·memos·milestones·movements·number·part·party·payment·payments·payments·performances·postings·provisions·queries·quotes·rate·receipts·reconciliations·records·reports·requests·requisitions·returns·runs·runs·schedules·science·sectors·signatures·snapshots·statements·statements·sti·take·tasks·tax·torus·transactions·transactions·transactions·trust·variances·volume
 analysis —
 law every transaction is two-sided and sums to zero — its debit and credit faces must both be recorded so the exchange balances, and no single side may stand alone.
 
 ---
 
-<sub>content-uuid `62908d25-ae07-882e-81d0-058a85e954d7` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4e43da6f-9011-867b-9486-4498556a0bc7` · `pnpm readme` · `pnpm computed:check`</sub>

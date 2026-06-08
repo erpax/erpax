@@ -25,7 +25,21 @@
 
 - partition `interference` · sub-root `fc9efc54-402d-8f2b-9cee-4207eff0dec5`
 - bond degree `27` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `I = a1²+a2²+2a1a2·cos φ; constructive/destructive/visibility computed, never asserted` · banner
+
+## analytics
+
+- bond degree `27` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -41,4 +55,4 @@
 
 ---
 
-<sub>content-uuid `5d7cb060-3bc1-807d-a80a-ba37f3e7f8da` · framed by typography partition `interference` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `05d9b9ef-4bc5-8bd6-8d0e-858603bf7a1d` · framed by typography partition `interference` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>

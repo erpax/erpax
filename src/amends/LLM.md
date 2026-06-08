@@ -3,8 +3,8 @@
 
 # amends
 
-path `amends` · uuid `36bf4b2f-999a-8382-9d17-32d175a3f85e` · diamond `dd2a8a21-d44d-8c85-946a-9bd3bbeaaca4`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `amends` · uuid `b6a6a66c-1fda-8dc7-ac24-c14db2cbb6ea` · diamond `735d951a-adc9-8ba0-9fcd-3c56f78f60bf`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·legislation·merge·sti · exports amends · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law amends is one schema.org word, content-addressed; the same word collides eve
 
 ---
 
-<sub>content-uuid `ad55147d-7700-80e1-aed8-a9f161aca9e8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5ced7378-0cda-8cd1-ae9b-ef6276db7170` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -4,7 +4,7 @@
 # manufacturing
 
 path `manufacturing` · uuid `5f1b8d16-8da8-8539-9f81-d13071b7d228` · diamond `640bc883-99a6-86ba-9e75-341793a198e8`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+horo `8` `crest` · trinity `1·0·0` · sealed `0`
 imports accounting·all·allocation·balance·bindings·collections·decompression·fields·hooks·horo·identity·jobs·measure·merge·part·plugins·port·queries·rate·sequence·society·standard·torus·train·transaction·variant·whole·work·zeropoint · exports manufacturing · escapes —
 links `33/33` · folded `1` · bonds in `46` out `46`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `9392eea1-d447-8761-a409-e446c594bbd9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `dbf544c1-e442-8308-b276-4b0728ed7184` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -2,9 +2,11 @@
 
 # returns
 
-> atom `tax/jurisdictions/tax/returns` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
+> atom `tax/jurisdictions/tax/returns` · horo `2` `share` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `tax/jurisdictions/tax/returns` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,24 +23,127 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `seal:unsealed`
+- `trigger:Use when filing or tracking tax returns — VAT monthly/quarterly/annual, EC Sales List, Intrastat, SAF-T, US sales tax, GST, corporate income or withholding returns — with period, output/input tax, net liability, authority confirmation reference, filedAt/paidAt timestamps and attachment evidence. The filed-return record collection (distinct from the TaxCalculations snapshot).`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `59a30714-aac7-842d-b40d-0edfcf09f5c4` · `b05fc98e-4847-8dde-9197-1b684999573f` · `cb19e8eb-e60e-8140-b4ac-74f1b1ef9609`
+- content uuids `303b685d-fd57-8f60-8a16-3dbc03a04ca9` · `650d8339-04d6-82dc-915f-7d5c1044333c` · `7e57a03e-2f85-8025-9df5-4bb3177055b6`
+
+## [[entropy]] — gaps · seals
+
+> account code `tax/jurisdictions/tax/returns` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.2` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `2` eb | Σ seal `11.2` eb |
+
+> net residual `-9.2` eb · seal/gap ratio `5.6` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `tax` · sub-root `94db23f9-1cc9-8309-92c8-a21dfe445e59`
-- bond degree `30` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- partition `tax` · sub-root `ee17b9ab-708d-85b0-b210-7574c7531c53`
+- bond degree `36` · analysis neighbors —
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `EN-16931:2017 §BG-23 vat-breakdown` · banner
+- `ISO-3166-1:2020 country-codes jurisdiction` · banner
+- `ISO-8601-1:2019 date-time period filed-at` · banner
+- `OECD SAF-T 2.0 standard-audit-file-tax` · banner
+- `SOX §404 internal-controls tax-position` · banner
+- `US-GAAP ASC-740 income-taxes` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·2 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `36` · sealed `0` · horo `2`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `6`
 
 ## identity
 
-- uuid `c407251c-2232-897a-bced-499226386838`
-- bonds in `7` · out `7`
+- uuid `51c5f62f-22c8-85bc-ae3a-1d305ed805ab`
+- bonds in `10` · out `10`
 - trinity form·code·proof `1`·`1`·`1`
 - links `5` / `5`
 - folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `56f61b5b-df29-8b26-aa00-5336872dd252` · framed by typography partition `tax` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `4745c78f-5c8e-88b4-8458-b6c0398240b5` · framed by typography partition `tax` bonds `36` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,15 +3,15 @@
 
 # communication
 
-path `agent/communication` · uuid `4216c47d-0575-848a-910e-ec04c82c54d8` · diamond `79a6d4ce-7325-8eb8-9976-b9f817c6c5cd`
-horo `7` `descent` · trinity `1·1·1` · sealed `0`
+path `agent/communication` · uuid `9eaa988d-1640-83ba-a817-9fe464523e67` · diamond `d5800591-98b8-8ec0-8d56-915dcb7475d1`
+horo `5` `round` · trinity `1·1·1` · sealed `0`
 imports @/communication · exports const·sameMessage · escapes —
-links `12/12` · folded `1` · bonds in `17` out `25`
+links `12/12` · folded `1` · bonds in `15` out `15`
 faces worker·plugin·pwa `1·0·0`
-neighbors → agent·channel·chat·cloning·communication·communication·entanglement·key·law·law·law·merge·merge·message·message·message·quantum·quantum·quantum·send·superdense·teleportation·uuid·uuid·uuid · ← agent·channel·chat·chat·cloning·communication·communication·entanglement·key·law·merge·message·quantum·send·superdense·teleportation·uuid
+neighbors → channel·chat·chat·chat·communication·communication·key·law·merge·message·quantum·send·superdense·teleportation·uuid · ← channel·chat·chat·chat·communication·communication·key·law·merge·message·quantum·send·superdense·teleportation·uuid
 analysis agent
 law an agent-to-agent message IS its content-[[uuid]], and relaying preserves that uuid (no-cloning), so a forwarded message is provably the same one ([[merge]]) and never forged in transit.
 
 ---
 
-<sub>content-uuid `cfb4154a-f190-8bc9-90b9-2323d8abf689` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ee655d19-6d35-8199-aae7-4415312adde9` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,8 +3,8 @@
 
 # composite
 
-path `composite` · uuid `d8328efb-7313-8d3d-a636-c49cfbe597b0` · diamond `8728f325-528f-8c44-9ae6-a87c685754d0`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `composite` · uuid `0264cd3a-fb17-84b0-89a7-068bffc5cadb` · diamond `830c0f30-175e-8a19-ad28-1df82541fb43`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports composite · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law composite is one schema.org word, content-addressed; the same word collides 
 
 ---
 
-<sub>content-uuid `c552d5ad-a2ec-8f46-8842-50b23ee17fcf` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0ecf547d-5ab1-8e6e-8236-06ae43f68d7d` · `pnpm readme` · `pnpm computed:check`</sub>

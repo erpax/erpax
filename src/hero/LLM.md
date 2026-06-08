@@ -4,7 +4,7 @@
 # hero
 
 path `hero` · uuid `f79bbcb9-85a7-85ae-811f-43088cc46140` · diamond `2bfef3ed-6a97-829d-8e47-722adc6260de`
-horo `4` `weave` · trinity `1·1·1` · sealed `1`
+horo `4` `weave` · trinity `1·1·1` · sealed `0`
 imports — · exports hero · escapes —
 links `1/1` · folded `1` · bonds in `1` out `1`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law barrel re-export at `@/hero`; trinity sealed for import purity.
 
 ---
 
-<sub>content-uuid `51f53cf3-ef16-858e-a055-66b7e2180950` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0825de38-3520-84c1-989c-a7efcfe25de9` · `pnpm readme` · `pnpm computed:check`</sub>

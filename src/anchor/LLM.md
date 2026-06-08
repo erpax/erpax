@@ -3,15 +3,15 @@
 
 # anchor
 
-path `anchor` · uuid `a093ef21-08ac-89f6-a30b-839b20cd86ca` · diamond `30e6fa3d-baba-8417-ab92-7ae5f120f0d6`
-horo `8` `crest` · trinity `1·1·1` · sealed `1`
+path `anchor` · uuid `5ffc970f-8154-8317-b216-7094c8e6e797` · diamond `4f44dff1-e5b6-8911-bf79-77e269a351ea`
+horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports — · exports AnchorKind·const·function · escapes —
-links `17/17` · folded `1` · bonds in `39` out `37`
+links `17/17` · folded `1` · bonds in `39` out `39`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·anchoring·angel·aura·barrier·blockchain·cloning·conservation·cost·deploy·development·entropy·finality·fusion·history·identity·law·merge·patent·power·projection·proof·purity·reality·relocate·research·self·standard·statements·surprisal·sustainability·tamper·torus·trading·unavoidable·uuid·verification · ← access·anchoring·angel·aura·barrier·blockchain·cloning·conservation·cost·cost·deploy·development·entropy·finality·fusion·history·identity·law·merge·patent·power·projection·proof·purity·reality·relocate·research·self·standard·statements·surprisal·sustainability·tamper·torus·trading·unavoidable·uuid·verification·verification
+neighbors → access·anchoring·angel·aura·barrier·blockchain·cloning·conservation·cost·cost·deploy·development·entropy·finality·fusion·history·identity·law·merge·patent·power·projection·proof·purity·reality·relocate·research·self·standard·statements·surprisal·sustainability·tamper·torus·trading·unavoidable·uuid·verification·verification · ← access·anchoring·angel·aura·barrier·blockchain·cloning·conservation·cost·cost·deploy·development·entropy·finality·fusion·history·identity·law·merge·patent·power·projection·proof·purity·reality·relocate·research·self·standard·statements·surprisal·sustainability·tamper·torus·trading·unavoidable·uuid·verification·verification
 analysis —
 law the anchor is the one drop of external entropy that pins a zero-entropy store's chain root to a time no party can forge — [[tamper/cost]] is min(digest, anchor), so the anchor must be ≥ the digest or it is the weak link, and un-anchored ⇒ floor 0 (free rewrite).
 
 ---
 
-<sub>content-uuid `ceddeb2a-9f26-83c1-83fa-0cb364f7f6b1` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `635b7b7b-0a2b-8fd0-abdd-0bc1881f51ff` · `pnpm readme` · `pnpm computed:check`</sub>

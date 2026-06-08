@@ -32,6 +32,7 @@ import { entropy } from '@/entropy'
 import { toUuid, merge } from '@/uuid/matrix'
 import { TRINITY_FILES } from '@/trinity'
 import { dualOf } from '@/duality'
+import type { WaveBatch } from './load'
 
 /** The horo position whose composed step is unity — where a wave closes and the collide opens. */
 export const UNITY: HoroStep = 9
@@ -113,6 +114,60 @@ export const waveEntropy = (): number => entropy()
 
 /** The dual of `wave` as folded from the corpus — the collide/inhale pole it will later discharge into. */
 export const collideOf = (): string[] => dualOf('wave')
+
+export {
+  selfBalancingWaveLoad,
+  waveDispatchCost,
+  tamperCostForWave,
+  pathComparableUnits,
+  type WaveBatch,
+  type SelfBalancingWavePlan,
+  type SelfBalancingWaveLoadOpts,
+  type WaveDispatchCostOpts,
+  type WaveTamperCostOpts,
+} from './load'
+
+/** Development wave descriptor for a batch (exhale unit per horo step). */
+export function waveOfBatch<T>(batch: WaveBatch<T>): Wave {
+  return wave(
+    batch.items.map((item) => ({ name: String(item) })),
+    batch.ordinal,
+  )
+}
+
+export {
+  createWaveSession,
+  completeWaveHop,
+  waveSessionVerdict,
+  isWaveSessionReady,
+  type WaveSession,
+  type WaveSessionVerdict,
+} from './session'
+
+export {
+  scheduleCorpusPathsInWaves,
+  scheduleCorpusPathsWithPolicy,
+  corpusWaveOptsFromPolicy,
+  corpusPathWaveBatches,
+  runCorpusWaveChunks,
+  type CorpusWaveScheduleOpts,
+} from './scheduler'
+
+export {
+  maxWorkTamperPolicy,
+  baselineWorkTamperPolicy,
+  workTamperProduct,
+  workSealedFromUnits,
+  coverageFromWorkUnits,
+  tamperCostLog2ForCoverage,
+  tamperCostForImproveReceipt,
+  workUnitsFromImproveCycle,
+  workUnitFromWaveBatch,
+  type MaxWorkTamperPolicy,
+  type WorkUnit,
+  type WorkTamperProductVerdict,
+  type ImproveReceiptTamperOpts,
+} from './policy'
 
 if (import.meta.url === 'file://' + process.argv[1]) {
   const feats: Feature[] = [{ name: 'wave' }, { name: 'feature' }, { name: 'breath' }]

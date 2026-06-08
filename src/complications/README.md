@@ -2,7 +2,7 @@
 
 # complications
 
-> atom `complications` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
+> atom `complications` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -21,9 +21,9 @@
 
 ## typography graph
 
-- partition `complications` · sub-root `5e8a051c-e4a7-8e35-86f1-4b7a0feb132e`
+- partition `complications` · sub-root `c19a5028-9db7-8fa3-a353-05ab449d0823`
 - bond degree `12` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -33,15 +33,53 @@
 
 - `schema.org — the type vocabulary, collided to single words` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·8 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `12` · sealed `1` · horo `4`
+- bond degree `12` · sealed `1` · horo `8`
 - variance `0` · balanced `1` · trinity sum `1`
 - bindings `0` · standards `1`
 
 ## identity
 
-- uuid `5e8a051c-e4a7-8e35-86f1-4b7a0feb132e`
+- uuid `c19a5028-9db7-8fa3-a353-05ab449d0823`
 - bonds in `4` · out `4`
 - trinity form·code·proof `1`·`0`·`0`
 - links `4` / `4`
@@ -53,4 +91,4 @@
 
 ---
 
-<sub>content-uuid `6c977ab4-b62b-8047-a0d9-744767003333` · framed by typography partition `complications` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a41ee33a-da64-865e-93cb-d51ef8d6ffe4` · framed by typography partition `complications` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

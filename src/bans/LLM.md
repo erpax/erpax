@@ -3,8 +3,8 @@
 
 # bans
 
-path `bans` · uuid `2d0d37b8-35ba-8539-8cc4-6fbf0e41afa1` · diamond `d40d390e-82e4-8c17-8063-e6b82f0b1f3d`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `bans` · uuid `f4156b30-e5ba-8fe5-92de-3d94d9b0e672` · diamond `b95c75a2-638e-8f48-8f92-0fb6fbf53036`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·travel · exports bans · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law bans is one schema.org word, content-addressed; the same word collides every
 
 ---
 
-<sub>content-uuid `8cefcae4-505e-8d39-95b2-5938ef3b1156` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1e52af99-1152-8b0e-9fb5-538cd2b07c69` · `pnpm readme` · `pnpm computed:check`</sub>

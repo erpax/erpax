@@ -3,8 +3,8 @@
 
 # ask
 
-path `ask` · uuid `4e299202-a6fd-89c3-9b0f-b8b2eec5c3b6` · diamond `4440b2a8-30ae-8578-8e49-393dd90fa3c7`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `ask` · uuid `2b37cd25-46f4-8a7f-8648-9b6d0f3df043` · diamond `8ca70021-7862-85d0-831b-8b9b53b9b793`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports action·article·collapse·law·merge·news·public·sti · exports ask · escapes —
 links `8/8` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law ask is one schema.org word, content-addressed; the same word collides every 
 
 ---
 
-<sub>content-uuid `93efea11-da2d-8405-bcd2-5c0e5f8984f4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7e0f730e-a6fc-8ccd-8dac-79f37480dade` · `pnpm readme` · `pnpm computed:check`</sub>

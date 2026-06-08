@@ -2,9 +2,11 @@
 
 # requisitions
 
-> atom `cost/centers/purchase/requisitions` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
+> atom `cost/centers/purchase/requisitions` · horo `1` `base` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `cost/centers/purchase/requisitions` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,11 +23,58 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+
+### collapse
+
+- `balance:conserved`
+- `law:a requisition is the pre-PO approval gate — requisitioner ≠ approver (SOX §404 four-eyes / segregation-of-duties), and the PO→requisition→approval chain stays auditor-traceable.`
+- `seal:unsealed`
+- `trigger:Use when capturing spend requests before a purchase order is issued — SOX §404 four-eyes gate (requisitioner ≠ approver), multi-line item costing, GL account, preferred vendor, and auditor-traceable PO→requisition→approval chain. The pre-PO approval-gate collection.`
+- `trigger:a requisition is the pre-PO approval gate — requisitioner ≠ approver (SOX §404 four-eyes / segregation-of-duties), and the PO→requisition→approval chain stays auditor-traceable.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `34aecfc5-7487-8f6b-8a63-90c5b611b3d0` · `f89570b1-4a58-823a-8776-f223d21b2d5d`
+- content uuids `34e66822-e88c-8657-88ff-b71bfbd87ffb` · `af478579-4277-8439-bf38-18f76c8191b3`
+
+## [[entropy]] — gaps · seals
+
+> account code `cost/centers/purchase/requisitions` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.1` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `1` eb | Σ seal `11.1` eb |
+
+> net residual `-10.1` eb · seal/gap ratio `11.1` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `cost` · sub-root `39f13edb-cfbe-876c-9400-e150601cfd8b`
+- partition `cost` · sub-root `e0f89be4-3c44-8d3b-9b1f-a458cad445e7`
 - bond degree `27` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
 
 ## [[cloudflare]] bindings
 
@@ -33,20 +82,57 @@
 
 ## [[standards]]
 
-- `ISO-19011:2018 audit-trail requisition-evidence` · banner
 - `ISO-4217:2015 currency-codes` · banner
 - `ISO-8601-1:2019 date-time` · banner
 - `SOX §404 internal-controls four-eyes` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·1 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `27` · sealed `1` · horo `5`
+- bond degree `27` · sealed `0` · horo `1`
 - variance `0` · balanced `1` · trinity sum `3`
-- bindings `0` · standards `4`
+- bindings `0` · standards `3`
 
 ## identity
 
-- uuid `e6e0263e-ef94-83c5-b904-9c3864bb3232`
+- uuid `ebc72cfb-d865-870e-95e8-c50d07f230b3`
 - bonds in `9` · out `9`
 - trinity form·code·proof `1`·`1`·`1`
 - links `7` / `7`
@@ -54,8 +140,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `277355de-37a8-8052-8523-399e8bb222fe` · framed by typography partition `cost` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `4c0d7dc1-0c05-82a0-98c4-60cb07567304` · framed by typography partition `cost` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>

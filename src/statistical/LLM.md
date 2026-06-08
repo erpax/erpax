@@ -3,15 +3,15 @@
 
 # statistical
 
-path `statistical` · uuid `5419c111-a0bf-8cb0-80f4-17470c3d8bcb` · diamond `acf33056-dee3-8879-82b6-78c4d28c9322`
+path `statistical` · uuid `5419c111-a0bf-8cb0-80f4-17470c3d8bcb` · diamond `0af78c6b-ff8e-8dba-ae21-72e1032748b3`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·population·sti·variable · exports statistical · escapes —
-links `6/6` · folded `1` · bonds in `7` out `7`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → amp·cohort·combination·landmarks·memories·sheet·stat · ← amp·cohort·combination·landmarks·memories·sheet·stat
+neighbors → collapse·law·merge·population·sti·variable · ← collapse·law·merge·population·sti·variable
 analysis —
 law statistical is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `f8075c31-7c4e-8dfb-ab7e-60c845d22d8e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f293844e-9a70-87ec-b2a4-6c4afe3f72a7` · `pnpm readme` · `pnpm computed:check`</sub>

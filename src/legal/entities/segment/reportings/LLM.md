@@ -3,8 +3,8 @@
 
 # reportings
 
-path `legal/entities/segment/reportings` · uuid `4038c05b-d53b-89c3-ba6b-a1a538d6acac` · diamond `d081d448-5ea1-8eec-adc8-0df9a48af128`
-horo `4` `weave` · trinity `1·1·1` · sealed `1`
+path `legal/entities/segment/reportings` · uuid `fbe06508-fd7c-89e6-a4ae-1db2e84b3ea2` · diamond `b3ba0e7e-36e4-8c04-ae98-f242326b4786`
+horo `7` `descent` · trinity `1·1·1` · sealed `0`
 imports @/role/based/access · exports const · escapes —
 links `0/0` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `4c255c7e-5973-8e04-9eee-580aac910df7` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `cbe6d2b1-5fcf-8913-809a-bcf106857d0a` · `pnpm readme` · `pnpm computed:check`</sub>

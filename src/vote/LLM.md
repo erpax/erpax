@@ -3,15 +3,15 @@
 
 # vote
 
-path `vote` · uuid `155f9768-0776-86ae-8dc3-98888bd12cf0` · diamond `d4355cd8-a254-8cc3-8d77-7ce8cca77ac5`
+path `vote` · uuid `155f9768-0776-86ae-8dc3-98888bd12cf0` · diamond `efc1d5e0-b422-842f-9afb-5224ea06e488`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti · exports vote · escapes —
-links `5/5` · folded `1` · bonds in `2` out `2`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → action·collapse·law·merge·sti · ← action·collapse·law·merge·sti
 analysis —
 law a vote is one agent's choice cast over a candidate option, so it must bind exactly one voter to one option; an unattributed or double-counted vote is void.
 
 ---
 
-<sub>content-uuid `6cd1b3a7-a7d3-8f4f-a523-6a4fefc0ff60` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9f489ebc-d8b5-84de-a6e5-9c01364ab375` · `pnpm readme` · `pnpm computed:check`</sub>

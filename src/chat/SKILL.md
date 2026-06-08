@@ -1,8 +1,321 @@
 ---
 name: chat
-description: Use when reasoning about where the erpax agent society convenes — chat.erpax.com, the per-tenant agent-sync room (AGENT_SYNC_HOST venue) — and about the trinity-composition law that every vertex is itself a trinity all the way down to the base atoms.
+description: "Use when reasoning about where the erpax agent society convenes — chat.erpax.com, the per-tenant agent-sync room (AGENT_SYNC_HOST venue) — and about the trinity-composition law that every vertex is itself a trinity all the way down to the base atoms."
+atomPath: chat
+coordinate: chat · 1/base · a9e4dbaf
+contentUuid: "7e4e6f85-3d98-5ac6-9111-2b94dbf35eee"
+diamondUuid: "cf6a78c3-85f2-8c0e-890a-ebf4f3f50cdf"
+uuid: "a9e4dbaf-322c-83d2-a23d-c65f9d0a58a3"
+horo: 1
+bonds:
+  in:
+    - accounting
+    - agent
+    - akashic
+    - all
+    - architecture
+    - aura
+    - balance
+    - breath
+    - chat
+    - civilization
+    - classroom
+    - collections
+    - comms
+    - communication
+    - config
+    - contribution
+    - cost
+    - database
+    - duality
+    - fields
+    - flow
+    - fractal
+    - generate
+    - give
+    - history
+    - hooks
+    - identity
+    - industry
+    - law
+    - lexical
+    - llm
+    - matrix
+    - mcp
+    - merge
+    - message
+    - one
+    - part
+    - plugins
+    - port
+    - realtime
+    - recover
+    - rodin
+    - science
+    - self
+    - sequence
+    - session
+    - skills
+    - society
+    - spec
+    - standard
+    - take
+    - team
+    - torus
+    - transaction
+    - trinity
+    - types
+    - uuid
+    - wave
+    - whole
+  out:
+    - accounting
+    - agent
+    - akashic
+    - all
+    - architecture
+    - aura
+    - balance
+    - breath
+    - chat
+    - civilization
+    - classroom
+    - collections
+    - comms
+    - communication
+    - config
+    - contribution
+    - cost
+    - database
+    - duality
+    - fields
+    - flow
+    - fractal
+    - generate
+    - give
+    - history
+    - hooks
+    - identity
+    - industry
+    - law
+    - lexical
+    - llm
+    - matrix
+    - mcp
+    - merge
+    - message
+    - one
+    - part
+    - plugins
+    - port
+    - realtime
+    - recover
+    - rodin
+    - science
+    - self
+    - sequence
+    - session
+    - skills
+    - society
+    - spec
+    - standard
+    - take
+    - team
+    - torus
+    - transaction
+    - trinity
+    - types
+    - uuid
+    - wave
+    - whole
+typography:
+  partition: chat
+  bondDegree: 213
+  neighbors:
+    - agent
+    - aura
+standards: []
+bindings: []
+neighbors:
+  wikilink:
+    - accounting
+    - agent
+    - akashic
+    - all
+    - aura
+    - balance
+    - civilization
+    - collections
+    - config
+    - cost
+    - database
+    - duality
+    - fields
+    - flow
+    - fractal
+    - generate
+    - give
+    - history
+    - hooks
+    - identity
+    - law
+    - lexical
+    - merge
+    - one
+    - part
+    - plugins
+    - port
+    - recover
+    - rodin
+    - self
+    - sequence
+    - spec
+    - standard
+    - take
+    - transaction
+    - trinity
+    - types
+    - uuid
+    - whole
+  matrix:
+    - accounting
+    - agent
+    - akashic
+    - all
+    - architecture
+    - aura
+    - balance
+    - breath
+    - chat
+    - civilization
+    - classroom
+    - collections
+    - comms
+    - communication
+    - config
+    - contribution
+    - cost
+    - database
+    - duality
+    - fields
+    - flow
+    - fractal
+    - generate
+    - give
+    - history
+    - hooks
+    - identity
+    - industry
+    - law
+    - lexical
+    - llm
+    - matrix
+    - mcp
+    - merge
+    - message
+    - one
+    - part
+    - plugins
+    - port
+    - realtime
+    - recover
+    - rodin
+    - science
+    - self
+    - sequence
+    - session
+    - skills
+    - society
+    - spec
+    - standard
+    - take
+    - team
+    - torus
+    - transaction
+    - trinity
+    - types
+    - uuid
+    - wave
+    - whole
+  backlinks:
+    - accounting
+    - agent
+    - akashic
+    - all
+    - architecture
+    - aura
+    - balance
+    - breath
+    - chat
+    - civilization
+    - classroom
+    - collections
+    - comms
+    - communication
+    - config
+    - contribution
+    - cost
+    - database
+    - duality
+    - fields
+    - flow
+    - fractal
+    - generate
+    - give
+    - history
+    - hooks
+    - identity
+    - industry
+    - law
+    - lexical
+    - llm
+    - matrix
+    - mcp
+    - merge
+    - message
+    - one
+    - part
+    - plugins
+    - port
+    - realtime
+    - recover
+    - rodin
+    - science
+    - self
+    - sequence
+    - session
+    - skills
+    - society
+    - spec
+    - standard
+    - take
+    - team
+    - torus
+    - transaction
+    - trinity
+    - types
+    - uuid
+    - wave
+    - whole
+signatures:
+  computationUuid: "8067439e-c63f-8666-945a-a333dd4584b5"
+  stages:
+    - stage: path
+      stageUuid: "3fba1ee5-9eed-8728-9349-e186e6397390"
+    - stage: trinity
+      stageUuid: "b1bf3e35-0a1e-808e-9536-a9501f4166b1"
+    - stage: boundary
+      stageUuid: "4b84d24e-43b7-88d2-9c43-3659157a3d0b"
+    - stage: links
+      stageUuid: "25831562-bcc2-85bb-9c43-2ab7ef6012f7"
+    - stage: horo
+      stageUuid: "747ae3fe-4782-884e-a7a0-b3b4f89f6ba2"
+    - stage: seal
+      stageUuid: "9a53b292-4b62-8abc-8782-252212c373ad"
+    - stage: uuid
+      stageUuid: "f5af27f2-26e2-869a-8c77-a2e5ac68e928"
+version: 2
 ---
-
 # chat
 
 **chat.erpax.com** is the venue where the erpax agent society convenes. It is the `AGENT_SYNC_DEFAULT_HOST` (overridable by `AGENT_SYNC_HOST`); each tenant gets one Cloudflare Durable Object room reached at `wss://chat.erpax.com/api/room/<tenant>/websocket`, where every agent publishes its content-uuid events and hears every peer's the instant they happen. The room is the matter; the protocol is the speech ([[duality]]). Convening is the realtime act of [[merge]] — many agents resolved to one erpax — deduped on event id ([[identity]]). See `src/services/agent-sync`.

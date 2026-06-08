@@ -2,9 +2,11 @@
 
 # runs
 
-> atom `items/bills/of/materials/work/orders/operation/runs` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `items/bills/of/materials/work/orders/operation/runs` · horo `8` `crest` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `items/bills/of/materials/work/orders/operation/runs` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,24 +23,133 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+
+### collapse
+
+- `balance:conserved`
+- `law:the execution record of one routing step on a [[work/orders|work order]] — quantities ordered/produced/scrapped/backordered at one operation × work-center, yielding the ISA-95 yield and scrap KPIs.`
+- `seal:unsealed`
+- `trigger:Use when recording actual production at one operation × work-center — quantities ordered/produced/scrapped/backordered, variant attribute axes, shift, start/completion timestamps, and ISA-95 KPIs (yield, scrap). The per-routing-step execution record within a work order.`
+- `trigger:the execution record of one routing step on a [[work/orders|work order]] — quantities ordered/produced/scrapped/backordered at one operation × work-center, yielding the ISA-95 yield and scrap KPIs.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `446b4275-ceac-8157-8c1e-7f70c383c14a` · `80490089-7105-816f-a00b-ac030ac0cbd5`
+- content uuids `3fea3a8b-8ea1-8765-95d4-68540331c073` · `84bf5c4f-69dc-8b64-957e-57ad28dcd3ed`
+
+## [[entropy]] — gaps · seals
+
+> account code `items/bills/of/materials/work/orders/operation/runs` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.8` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `1` eb | Σ seal `11.8` eb |
+
+> net residual `-10.8` eb · seal/gap ratio `11.8` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `items` · sub-root `1341dba3-9395-8200-8e47-ea3dc4d4b9e9`
-- bond degree `74` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- partition `items` · sub-root `e1747762-a2bb-8ab4-aaeb-99c9513102fb`
+- bond degree `41` · analysis neighbors —
+- graph root `a0b4e6a6-0230-8b95-a98c-2d4cf71fcc77`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `EU-2014/55` · catalogue
+- `EU-537/2014` · catalogue
+- `EU-910/2014` · catalogue
+- `IFRS IAS-2 §12 cost-of-conversion` · banner
+- `ISA-95` · catalogue
+- `ISA-95:2013 / IEC-62264-1 §B.5 production-performance work-response` · banner
+- `ISO-22400-2` · catalogue
+- `ISO-22400-2:2014 manufacturing-operations KPIs (yield, scrap)` · banner
+- `ISO-8601-1:2019 date-time start-completion` · banner
+- `SOX §404 internal-controls production-control` · banner
+- `US-GAAP ASC-330-10-30 inventory-cost` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·8 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `41` · sealed `0` · horo `8`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `11`
 
 ## identity
 
-- uuid `580005e3-30f4-86a6-8087-68d1126e7f6d`
-- bonds in `22` · out `25`
+- uuid `a10a01e4-8daa-83e6-81a7-e88210122e5f`
+- bonds in `7` · out `7`
 - trinity form·code·proof `1`·`1`·`1`
 - links `4` / `4`
 - folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `24f576c6-adc8-858a-9fa7-4ae0d0f1680c` · framed by typography partition `items` bonds `74` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `8c857420-abb8-86dd-9b20-30a0d9baf017` · framed by typography partition `items` bonds `41` · `pnpm readme` · `pnpm readme:check`</sub>

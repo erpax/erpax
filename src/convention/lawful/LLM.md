@@ -3,8 +3,8 @@
 
 # lawful
 
-path `convention/lawful` · uuid `4ba68dad-1c8a-867c-bd7f-56124088013a` · diamond `ddb29a59-0961-8c2e-957e-002d32885a7a`
-horo `4` `weave` · trinity `1·1·1` · sealed `1`
+path `convention/lawful` · uuid `93a03a29-1b3a-8a19-971d-d3fc23769479` · diamond `22444e1e-2675-8986-9f80-2ac4fb5cf630`
+horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports @/corpus · exports const·function · escapes —
 links `12/12` · folded `1` · bonds in `11` out `11`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law every atom states its own invariant — a SKILL.md without a `
 
 ---
 
-<sub>content-uuid `7c72ad89-f860-8a35-b883-2f16882e9fc2` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d7747faa-4bd2-8937-8e6b-406ebd958571` · `pnpm readme` · `pnpm computed:check`</sub>

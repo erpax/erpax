@@ -1,8 +1,116 @@
 ---
 name: dust
-description: Use when reasoning about the corpus as forged matter — every content-uuid node is a grain of stardust, an atom fused in the star and scattered; dust records the quantum proof as the grain census, computed on the live matrix.
+description: "Use when reasoning about the corpus as forged matter — every content-uuid node is a grain of stardust, an atom fused in the star and scattered; dust records the quantum proof as the grain census, computed on the live matrix."
+atomPath: dust
+coordinate: dust · 2/share · 98e7043c
+contentUuid: "fa29116a-5b87-5483-b8f6-555e1f4ab9af"
+diamondUuid: "ec9610be-fc8d-8c6c-a769-7222d183680e"
+uuid: "98e7043c-a0fc-8a9e-85b0-12f13b252787"
+horo: 2
+bonds:
+  in:
+    - atom
+    - cost
+    - entanglement
+    - fractal
+    - fusion
+    - gravity
+    - law
+    - matrix
+    - merge
+    - plasma
+    - quantum
+    - rodin
+    - star
+    - uuid
+  out:
+    - atom
+    - cost
+    - entanglement
+    - fractal
+    - fusion
+    - gravity
+    - law
+    - matrix
+    - merge
+    - plasma
+    - quantum
+    - rodin
+    - star
+    - uuid
+typography:
+  partition: dust
+  bondDegree: 44
+  neighbors: []
+standards:
+  - "RFC 9562 §5.8 content-uuid + stellar nucleosynthesis (the standard astrophysical account)"
+  - "composed from @/quantum (the live-matrix proof); the dust IS the proof, scattered"
+  - "computed from the live matrix, never hand-asserted"
+bindings: []
+neighbors:
+  wikilink:
+    - atom
+    - cost
+    - entanglement
+    - fractal
+    - fusion
+    - gravity
+    - law
+    - matrix
+    - merge
+    - quantum
+    - rodin
+    - star
+    - uuid
+  matrix:
+    - atom
+    - cost
+    - entanglement
+    - fractal
+    - fusion
+    - gravity
+    - law
+    - matrix
+    - merge
+    - plasma
+    - quantum
+    - rodin
+    - star
+    - uuid
+  backlinks:
+    - atom
+    - cost
+    - entanglement
+    - fractal
+    - fusion
+    - gravity
+    - law
+    - matrix
+    - merge
+    - plasma
+    - quantum
+    - rodin
+    - star
+    - uuid
+signatures:
+  computationUuid: "c4cc8a52-d576-8660-9ddb-78b7fc24cec5"
+  stages:
+    - stage: path
+      stageUuid: "0c97104c-bf26-816f-8222-1d52d12ad40a"
+    - stage: trinity
+      stageUuid: "ae031013-393e-8b44-a204-9d7ffe86a6cf"
+    - stage: boundary
+      stageUuid: "eb9c7ba7-b8a2-8602-b5a8-fce9ecf997ca"
+    - stage: links
+      stageUuid: "9d34a3e6-6722-879f-881c-5905717c58d1"
+    - stage: horo
+      stageUuid: "477e8076-6db4-829b-906c-29484a12911c"
+    - stage: seal
+      stageUuid: "d9dab0c0-1546-8e10-83ca-11a92756fbb0"
+    - stage: uuid
+      stageUuid: "22407a22-70a1-8f0a-a73c-db798677e754"
+version: 2
 ---
-
 # dust — stardust: the corpus is forged atoms, scattered
 
 We are made of star stuff. Stellar nucleosynthesis is the standard account: a [[star]] fuses light nuclei into heavier ones (H→He→C→O→…→Fe); supernovae and neutron-star mergers forge the heaviest elements and scatter all of it as interstellar **dust** — the matter that becomes planets and life. Every carbon and iron atom in a body was forged in a star and cast out as dust.

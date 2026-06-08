@@ -3,15 +3,15 @@
 
 # subsidiary
 
-path `subsidiary` · uuid `95ae6ff2-662b-8c3b-a965-571d7da10828` · diamond `f93c80ea-71d2-836c-825b-f954cf1a1501`
+path `subsidiary` · uuid `95ae6ff2-662b-8c3b-a965-571d7da10828` · diamond `eb155862-3d48-8594-8827-e28728e091e6`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports subsidiary · escapes —
-links `4/4` · folded `1` · bonds in `5` out `5`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·diagnostic·landmarks·memories·stat · ← cohort·diagnostic·landmarks·memories·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law subsidiary is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `1b910347-3efb-8711-a9e3-b4388579720e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `77ddf789-9eb0-8bf0-ae46-36c296a35c3f` · `pnpm readme` · `pnpm computed:check`</sub>

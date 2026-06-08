@@ -23,7 +23,21 @@
 
 - partition `mulch` · sub-root `62c100e9-edb2-84cb-9a64-ba215f5245a2`
 - bond degree `35` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `35` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `c66d7811-0ec3-859f-a8c7-fb595a2c4a47` · framed by typography partition `mulch` bonds `35` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `616727ab-f27e-8950-b078-91a7cfdb6c40` · framed by typography partition `mulch` bonds `35` · `pnpm readme` · `pnpm readme:check`</sub>

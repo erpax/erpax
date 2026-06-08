@@ -3,15 +3,15 @@
 
 # tvseason
 
-path `tvseason` · uuid `8fcb639e-f74a-8674-8a53-efad4782a50f` · diamond `f915ad9b-98ea-8185-a10f-c2acec1b5c53`
+path `tvseason` · uuid `8fcb639e-f74a-8674-8a53-efad4782a50f` · diamond `bf6f90fd-60bb-8a3d-97c7-0bdf134bfe3a`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports tvseason · escapes —
-links `4/4` · folded `1` · bonds in `5` out `5`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·musical·stat · ← cohort·landmarks·memories·musical·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law tvseason is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `c1aab44a-7052-8a03-84bd-e9a9936e322b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8f1a9f1a-903a-837a-9927-48a3794ec6a6` · `pnpm readme` · `pnpm computed:check`</sub>

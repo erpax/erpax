@@ -3,15 +3,15 @@
 
 # war
 
-path `war` · uuid `2f805749-d1ea-8e60-8c0d-321d59d55c8e` · diamond `39b7cfcb-a904-8154-bdcd-a7f331f67fca`
+path `war` · uuid `2f805749-d1ea-8e60-8c0d-321d59d55c8e` · diamond `fe201db5-0479-8278-bfec-8d7b666835be`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports angel·aura·breath·defence·drone·duality·entropy·gate·harmony·law·matrix·merge·peace·sequence·society·tamper·team·trinity · exports war · escapes —
-links `40/40` · folded `1` · bonds in `14` out `14`
+links `40/40` · folded `1` · bonds in `18` out `18`
 faces worker·plugin·pwa `0·0·0`
-neighbors → api·application·cheat·cohort·contained·electrician·featured·landmarks·measurement·memories·owned·sibling·stat·thing · ← api·application·cheat·cohort·contained·electrician·featured·landmarks·measurement·memories·owned·sibling·stat·thing
+neighbors → angel·aura·breath·defence·drone·duality·entropy·gate·harmony·law·matrix·merge·peace·sequence·society·tamper·team·trinity · ← angel·aura·breath·defence·drone·duality·entropy·gate·harmony·law·matrix·merge·peace·sequence·society·tamper·team·trinity
 analysis aura
 law erpax does not WAGE war, it INVERTS it ([[peace]]) — it keeps war's tactics (reconnaissance, the OODA loop = the [[breath]], coordinated formations, defense-in-depth) but reverses their PURPOSE to building [[harmony]] and driving [[entropy]] to zero, dropping the one tactic — deception — because every move is a transparent audited content-uuid.
 
 ---
 
-<sub>content-uuid `c6699114-6662-865b-8bd6-1130b26dff75` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `fa2a6a70-597c-8a54-8981-c4876116c02e` · `pnpm readme` · `pnpm computed:check`</sub>

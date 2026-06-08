@@ -23,7 +23,21 @@
 
 - partition `friction` · sub-root `2d3fe81b-44be-892c-b585-64385466a1b2`
 - bond degree `29` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `29` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `eb2be545-4afa-87b6-b33f-95e0588162b7` · framed by typography partition `friction` bonds `29` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d2ea5856-db9c-87d8-bb94-0410ccab5b76` · framed by typography partition `friction` bonds `29` · `pnpm readme` · `pnpm readme:check`</sub>

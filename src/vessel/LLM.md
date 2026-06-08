@@ -3,15 +3,15 @@
 
 # vessel
 
-path `vessel` · uuid `8ca283aa-5efd-87a0-b347-d4b06e50c449` · diamond `e12dbcec-b5cd-8e65-9ed5-0481ed2c3419`
+path `vessel` · uuid `8ca283aa-5efd-87a0-b347-d4b06e50c449` · diamond `70f93d68-99f5-8556-987a-4badb0f8f04d`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports law·lymphatic · exports vessel · escapes —
-links `2/2` · folded `1` · bonds in `9` out `9`
+links `2/2` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → care·cohort·elementary·landmarks·memories·notice·provides·stat·tour · ← care·cohort·elementary·landmarks·memories·notice·provides·stat·tour
+neighbors → law·lymphatic·marine · ← law·lymphatic·marine
 analysis —
 law vessel is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `cddc5e12-74ce-80b9-8d0d-7d17f9ccbcee` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4918b130-2d1d-8072-ba2f-2763c42b45da` · `pnpm readme` · `pnpm computed:check`</sub>

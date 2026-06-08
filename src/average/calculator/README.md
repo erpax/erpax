@@ -2,9 +2,11 @@
 
 # calculator
 
-> atom `average/calculator` · horo `7` `descent` · [[balance]] `1` · [[seal]] `0`
+> atom `average/calculator` · horo `1` `base` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `average/calculator` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,11 +23,63 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `explore:diamond`
+- `explore:hallucination`
+- `explore:purity`
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `law:the arithmetic mean is computed in exactly one place and is zero-guarded — an empty input is the additive identity 0, never NaN; every mean path collapses here ([[dry]]).`
+- `seal:unsealed`
+- `trigger:Use when taking the arithmetic mean of a number array anywhere in the corpus — the zero-guarded collapse of the repeated `sum/length` reduce across receivables, payables, and multi-currency analytics, where an empty array yields 0 (never NaN).`
+- `trigger:matter-twin:src/average/calculator/index.ts`
+- `trigger:the arithmetic mean is computed in exactly one place and is zero-guarded — an empty input is the additive identity 0, never NaN; every mean path collapses here ([[dry]]).`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `21c49081-aba2-851c-a51c-843015211f4e` · `41286992-58ec-8fbb-9510-9e2c55cabcd0` · `a224962a-63c0-8a91-8f1b-c65e13a7e3de`
+- content uuids `03f1dd58-a5d3-899c-a218-34a8062d7eea` · `8954f078-6322-876f-8e4a-705a88938936` · `b17cc276-3e90-8fa8-859d-0350186b3315`
+
+## [[entropy]] — gaps · seals
+
+> account code `average/calculator` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.1` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `2` eb | Σ seal `11.1` eb |
+
+> net residual `-9.1` eb · seal/gap ratio `5.55` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `average` · sub-root `6b12f14e-5ca3-81db-a6a5-2be21347723b`
-- bond degree `39` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- partition `average` · sub-root `1939ef13-0887-83dd-8e0e-1e21342da0b7`
+- bond degree `37` · analysis neighbors `diamond` · `hallucination` · `purity`
+- graph root `86252db0-c776-84eb-b8e4-c884dca3a3ba`
 
 ## [[cloudflare]] bindings
 
@@ -35,16 +89,54 @@
 
 —
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·1 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `39` · sealed `0` · horo `7`
+- bond degree `37` · sealed `0` · horo `1`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `0`
 
 ## identity
 
-- uuid `67c1eebb-3f2c-8804-bd8f-0156116af0ea`
-- bonds in `11` · out `13`
+- uuid `1939ef13-0887-83dd-8e0e-1e21342da0b7`
+- bonds in `7` · out `7`
 - trinity form·code·proof `1`·`1`·`1`
 - links `2` / `2`
 - folded `1` · escapes `0`
@@ -55,4 +147,4 @@
 
 ---
 
-<sub>content-uuid `c9a5ad89-48fb-8f34-9262-e26b30197ed7` · framed by typography partition `average` bonds `39` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `bf06537e-868e-85d2-9837-158fb6601a95` · framed by typography partition `average` bonds `37` · `pnpm readme` · `pnpm readme:check`</sub>

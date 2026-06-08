@@ -1,10 +1,121 @@
 ---
 name: recover
-description: Use when a Payload collection/config reorg or rename leaves the build broken — `tsc` crashes with "Maximum call stack size exceeded", hundreds of type errors after moving collections, or `payload generate:types` fails with InvalidFieldRelationship, DuplicateFieldName, "does not provide an export named 'default'", or ERR_MODULE_NOT_FOUND.
-sessions:
-  - 776a49cb-8dfb-45ab-88ff-956e3b613adf
+description: "Use when a Payload collection/config reorg or rename leaves the build broken — `tsc` crashes with \\\"Maximum call stack size exceeded\\\", hundreds of type errors after moving collections, or `payload generate:types` fails with InvalidFieldRelationship, DuplicateFieldName, \\\"does not provide an export named 'default'\\\", or ERR_MODULE_NOT_FOUND."
+atomPath: recover
+coordinate: recover · 7/descent · e2e5802d
+contentUuid: "5e26a00a-43c4-56a5-a00c-96ed8e96df65"
+diamondUuid: "4e46bd4c-ae67-837b-82ee-965bae68b0eb"
+uuid: "e2e5802d-dd7a-85e0-84b7-ce6bfcd680f4"
+horo: 7
+bonds:
+  in:
+    - chat
+    - collapse
+    - collections
+    - concatenate
+    - config
+    - database
+    - decompression
+    - fields
+    - generate
+    - limit
+    - merge
+    - one
+    - port
+    - profane
+    - research
+    - sequence
+    - society
+    - types
+  out:
+    - chat
+    - collapse
+    - collections
+    - concatenate
+    - config
+    - database
+    - decompression
+    - fields
+    - generate
+    - limit
+    - merge
+    - one
+    - port
+    - profane
+    - research
+    - sequence
+    - society
+    - types
+typography:
+  partition: recover
+  bondDegree: 57
+  neighbors: []
+standards: []
+bindings: []
+neighbors:
+  wikilink:
+    - collections
+    - config
+    - database
+    - port
+    - types
+  matrix:
+    - chat
+    - collapse
+    - collections
+    - concatenate
+    - config
+    - database
+    - decompression
+    - fields
+    - generate
+    - limit
+    - merge
+    - one
+    - port
+    - profane
+    - research
+    - sequence
+    - society
+    - types
+  backlinks:
+    - chat
+    - collapse
+    - collections
+    - concatenate
+    - config
+    - database
+    - decompression
+    - fields
+    - generate
+    - limit
+    - merge
+    - one
+    - port
+    - profane
+    - research
+    - sequence
+    - society
+    - types
+signatures:
+  computationUuid: "e9c4f116-1d63-8605-b39c-46fc8418888f"
+  stages:
+    - stage: path
+      stageUuid: "3c2c067a-9ed0-89de-a2c6-6b73bcf28913"
+    - stage: trinity
+      stageUuid: "28a48f83-0535-8000-9ab3-6930f13e66bb"
+    - stage: boundary
+      stageUuid: "745c2b5f-a376-8aa1-bb9c-667ac917b275"
+    - stage: links
+      stageUuid: "e047ab4c-40de-814c-8c76-8a2ce27b3590"
+    - stage: horo
+      stageUuid: "04889bbc-0c12-83cb-a051-df967b45f619"
+    - stage: seal
+      stageUuid: "c3c31f62-7cb3-8c08-8706-031073d389ea"
+    - stage: uuid
+      stageUuid: "71d10067-cadc-8816-8936-0868ab0da29f"
+version: 2
 ---
-
 # recover — Repair a Payload Build After a Reorg
 
 ## Overview

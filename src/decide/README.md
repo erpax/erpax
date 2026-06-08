@@ -2,7 +2,7 @@
 
 # decide
 
-> atom `decide` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
+> atom `decide` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -23,9 +23,9 @@
 
 ## typography graph
 
-- partition `decide` · sub-root `e5c5c062-faef-8e53-b163-f815f5353b77`
+- partition `decide` · sub-root `3d07e328-586b-83bb-8744-7e9b0cd9d4b3`
 - bond degree `54` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -35,15 +35,53 @@
 
 —
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·4 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `54` · sealed `1` · horo `8`
+- bond degree `54` · sealed `1` · horo `4`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `0`
 
 ## identity
 
-- uuid `e5c5c062-faef-8e53-b163-f815f5353b77`
+- uuid `3d07e328-586b-83bb-8744-7e9b0cd9d4b3`
 - bonds in `18` · out `18`
 - trinity form·code·proof `1`·`1`·`1`
 - links `26` / `26`
@@ -55,4 +93,4 @@
 
 ---
 
-<sub>content-uuid `ae3adf06-0b1f-8350-83f0-ef82a14c5a48` · framed by typography partition `decide` bonds `54` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `07aa1b3b-b31a-8b7d-8be0-324ffdee3a5a` · framed by typography partition `decide` bonds `54` · `pnpm readme` · `pnpm readme:check`</sub>

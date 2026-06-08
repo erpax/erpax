@@ -2,9 +2,11 @@
 
 # activities
 
-> atom `activities` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
+> atom `activities` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
+
+> account code `activities` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,11 +23,36 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## [[entropy]] — gaps · seals
+
+> account code `activities` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+|  | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.5` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[diamond]]/sealed `1.585` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `0` eb | Σ seal `13.085` eb |
+
+> net residual `-13.085` eb · seal/gap ratio `1` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `activities` · sub-root `bbe34623-f840-8143-b1f0-75bc5443add1`
-- bond degree `70` · analysis neighbors —
-- graph root `06810c2c-2396-831f-a2b3-a58706a17051`
+- partition `activities` · sub-root `683e3f56-ae03-8d1c-be34-b392e91bbcf9`
+- bond degree `58` · analysis neighbors —
+- graph root `841a8e48-08eb-8dfa-9b96-29beea086012`
 
 ## [[cloudflare]] bindings
 
@@ -48,16 +75,54 @@
 - `RFC-5545` · catalogue
 - `rfc-5545 icalendar` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·5 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `70` · sealed `1` · horo `4`
+- bond degree `58` · sealed `1` · horo `5`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `14`
 
 ## identity
 
-- uuid `4a014d12-f969-891a-850d-7a18eebf73d5`
-- bonds in `23` · out `23`
+- uuid `683e3f56-ae03-8d1c-be34-b392e91bbcf9`
+- bonds in `17` · out `17`
 - trinity form·code·proof `1`·`1`·`1`
 - links `6` / `6`
 - folded `1` · escapes `0`
@@ -68,4 +133,4 @@
 
 ---
 
-<sub>content-uuid `e09de046-200a-88b6-bc35-842adfb6e737` · framed by typography partition `activities` bonds `70` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f5610598-588a-8f32-be3d-ffe858f0ebaf` · framed by typography partition `activities` bonds `58` · `pnpm readme` · `pnpm readme:check`</sub>

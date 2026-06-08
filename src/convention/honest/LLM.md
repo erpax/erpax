@@ -3,15 +3,15 @@
 
 # honest
 
-path `convention/honest` · uuid `79b9c14c-0149-83a9-a104-9c0b9c199b73` · diamond `ea1a5cd7-ad09-8d04-8a71-a089c519fad9`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+path `convention/honest` · uuid `61528455-4d3d-8674-919a-681c9b72f820` · diamond `56321463-2a39-8e90-bf40-cce7794a93ed`
+horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports @/aura · exports const·function · escapes —
-links `11/11` · folded `1` · bonds in `6` out `6`
+links `11/11` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `1·0·0`
-neighbors → aura·complete·cost·law·rodin·sourced · ← aura·complete·cost·law·rodin·sourced
+neighbors → aura·complete·cost·law·rodin · ← aura·complete·cost·law·rodin
 analysis aura
 law metaphysics is named as convention, never asserted as fact. The arithmetic is real; a figure of speech is allowed only when it is named as a convention, and an unmarked assertion is a measured gap. Name every metaphor as convention and the corpus seals honest to ∞ — coverage = honest / total = 1.
 
 ---
 
-<sub>content-uuid `c203411a-bbc3-85b7-8a16-9221241adf52` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2826fca7-67af-8f96-993f-f525cc758aa7` · `pnpm readme` · `pnpm computed:check`</sub>

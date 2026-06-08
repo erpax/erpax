@@ -23,9 +23,9 @@
 
 ## typography graph
 
-- partition `blockchain` · sub-root `2eec06cd-eea8-863e-bb18-a9b45cecc3a3`
+- partition `blockchain` · sub-root `f2b8c236-16a5-8cca-be06-3f9f61bd59ab`
 - bond degree `52` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- graph root `1cef4f02-a3fa-83a5-8ea0-120b724ef456`
 
 ## [[cloudflare]] bindings
 
@@ -36,6 +36,44 @@
 - `computed from the live matrix, never hand-asserted` · banner
 - `RFC 9562 §5.8 content-uuid · Bitcoin genesis block (the external anchor)` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·2 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
 - bond degree `52` · sealed `1` · horo `2`
@@ -44,7 +82,7 @@
 
 ## identity
 
-- uuid `2eec06cd-eea8-863e-bb18-a9b45cecc3a3`
+- uuid `f2b8c236-16a5-8cca-be06-3f9f61bd59ab`
 - bonds in `17` · out `17`
 - trinity form·code·proof `1`·`1`·`1`
 - links `31` / `31`
@@ -56,4 +94,4 @@
 
 ---
 
-<sub>content-uuid `a383b12a-8500-8586-8c16-7c492daed281` · framed by typography partition `blockchain` bonds `52` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `19000cdf-ac2c-8ad8-bbe4-5c2cb275ace5` · framed by typography partition `blockchain` bonds `52` · `pnpm readme` · `pnpm readme:check`</sub>

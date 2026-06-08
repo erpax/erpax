@@ -3,8 +3,8 @@
 
 # authoritative
 
-path `authoritative` · uuid `cd045c45-a519-87fb-9bd2-1316dca187ed` · diamond `b06f3256-0be9-86c5-bb50-2462c592b381`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `authoritative` · uuid `80309ec9-7e74-84b7-9797-c5034d2274cf` · diamond `304eb7bb-462b-8240-9d9d-cba77e8b17dd`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports authoritative · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law authoritative is one schema.org word, content-addressed; the same word colli
 
 ---
 
-<sub>content-uuid `e6b461da-52f6-8e0b-ac94-491a2ff4b8e5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e5622871-110a-8315-b4c7-1218f377542f` · `pnpm readme` · `pnpm computed:check`</sub>

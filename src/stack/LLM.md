@@ -3,15 +3,15 @@
 
 # stack
 
-path `stack` · uuid `ca0a54a2-8da8-87f6-bca3-d335609408dd` · diamond `1776f9db-e0ea-8be9-b9ce-1a05f7231ecc`
+path `stack` · uuid `ca0a54a2-8da8-87f6-bca3-d335609408dd` · diamond `f0a8cfc0-7678-8a88-9753-4eda2b31ae38`
 horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports @/uuid/matrix · exports const·function · escapes —
-links `18/18` · folded `1` · bonds in `13` out `13`
-faces worker·plugin·pwa `0·0·0`
-neighbors → application·bill·courthouse·database·encodes·fertility·fire·ignore·itnonprofit·landmarks·owned·prerequisite·tpg · ← application·bill·courthouse·database·encodes·fertility·fire·ignore·itnonprofit·landmarks·owned·prerequisite·tpg
+links `18/18` · folded `1` · bonds in `12` out `12`
+faces worker·plugin·pwa `1·0·0`
+neighbors → db·deploy·device·entropy·fold·law·merge·payload·pi·torus·uuid·vitepress · ← db·deploy·device·entropy·fold·law·merge·payload·pi·torus·uuid·vitepress
 analysis —
 law the full stack round-trips both ways — device to the db and back — a palindrome, all wired in uuid, every hop content-addressed, folding to a new state. Entropy expands to ∞ inside and folds to ∞ outside; the travel runs ∞ → ∞ on the line of pi. Both sides encoded — the pipeline's books balance, and the request returns home a new state, never the old one overwritten.
 
 ---
 
-<sub>content-uuid `3b72effc-5d25-89a8-944d-7fb3c3c074e4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0910fcd9-a874-80ae-8e79-52c940c0b1be` · `pnpm readme` · `pnpm computed:check`</sub>

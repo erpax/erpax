@@ -61,7 +61,7 @@ export const CLI_REGISTRY: Record<string, CliDomain> = {
     violations: { desc: 'Watch violations', cmd: `${TSX} src/monitor/violations/index.ts --watch` },
     improve: { desc: 'Improve watch loop', cmd: `${TSX} src/monitor/violations/loop.ts --watch` },
     inventory: {
-      desc: 'Poll task inventory every 5min (violations toast on stale)',
+      desc: 'Watch task inventory (push on stale · poll fallback)',
       cmd: `${TSX} src/agent/inventory/monitor.ts`,
     },
   },
@@ -73,6 +73,10 @@ export const CLI_REGISTRY: Record<string, CliDomain> = {
     inventory: {
       desc: 'Full coordinator inventory report',
       cmd: `${TSX} src/agent/inventory/cli.ts`,
+    },
+    realtime: {
+      desc: 'Active realtime channels · subscribers · last event age',
+      cmd: `${TSX} src/agent/communication/realtime-cli.ts`,
     },
   },
   confirm: {
@@ -201,6 +205,10 @@ export const CLI_REGISTRY: Record<string, CliDomain> = {
   },
   doctor: {
     default: { desc: 'Quick health: stray-ts, efficiency, entry skill', cmd: '__doctor__' },
+  },
+  quantum: {
+    default: { desc: 'Quantum status — superposition, collapse, reciprocity', cmd: `${TSX} src/quantum/status.ts` },
+    status: { desc: 'Superposition pending paths, last collapse, bond reciprocity', cmd: `${TSX} src/quantum/status.ts` },
   },
 }
 

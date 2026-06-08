@@ -3,8 +3,8 @@
 
 # attestation
 
-path `attestation` · uuid `1943417c-0768-8c7c-b8d6-9a216c1a27fd` · diamond `6286775a-cf15-895a-95ea-ca2d53dc8ada`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `attestation` · uuid `f5d12072-9176-8555-bfb0-1e81f210ec54` · diamond `23bedcf9-388f-84e0-9da7-6f8b9e0ced11`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports attestations·audit·balance·law · exports attestation · escapes —
 links `9/9` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law one attestation is the singular model of one attestations row — a signed a
 
 ---
 
-<sub>content-uuid `fbe79c3d-b3d8-850e-8751-72adce265c82` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6d291f93-a665-81c1-9a14-216db767aae2` · `pnpm readme` · `pnpm computed:check`</sub>

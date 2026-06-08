@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `synagogue` · sub-root `79dc06ec-cde9-8fc1-b6e1-a33c5bca048a`
-- bond degree `10` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `6` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `79dc06ec-cde9-8fc1-b6e1-a33c5bca048a`
-- bonds in `4` · out `4`
+- bonds in `2` · out `2`
 - trinity form·code·proof `1`·`0`·`0`
 - links `2` / `2`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `7a91ea0b-58a5-8ce4-a0cd-1a2d67841a26` · framed by typography partition `synagogue` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `97e0e6dc-4a73-8e90-8b2a-ff5575e1f3ae` · framed by typography partition `synagogue` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>

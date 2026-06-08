@@ -3,8 +3,8 @@
 
 # boarding
 
-path `boarding` · uuid `63e1a71d-c159-83c9-913b-699ca08fe6c0` · diamond `6001c3fb-d43e-86a8-8d32-fd80580e5f8f`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `boarding` · uuid `023088b7-0dbf-855c-b36f-2f33622de072` · diamond `9ee0005e-cfb9-84b1-85a0-5b03b63a79e7`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·group·law·merge·policy·sti·type · exports boarding · escapes —
 links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law boarding is one schema.org word, content-addressed; the same word collides e
 
 ---
 
-<sub>content-uuid `cea9c702-442d-8fe1-b7d0-f17002c25435` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e960ab50-3f54-8b3e-a7b5-dd328079de43` · `pnpm readme` · `pnpm computed:check`</sub>

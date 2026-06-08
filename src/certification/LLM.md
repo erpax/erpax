@@ -3,7 +3,7 @@
 
 # certification
 
-path `certification` · uuid `237971a0-6ed6-8454-8012-805b2c2d835b` · diamond `f81e56a4-006d-83af-ac7e-08a9e8a93914`
+path `certification` · uuid `11e8e327-dfcb-8024-b0d9-c679a574932a` · diamond `de0d66da-3753-834a-9e2d-ce0c48a5cc97`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports agriculture·audit·governance·integrity·law·lineage·lots·organic·party·period·proof·standard·standards · exports certification · escapes —
 links `28/28` · folded `1` · bonds in `23` out `23`
@@ -14,4 +14,4 @@ law certification is one shape — a [[standard]] + an accredited agent + an [[a
 
 ---
 
-<sub>content-uuid `cb10a5f7-d32b-8036-8055-96ad9647701f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `be39047d-ea27-89cd-ab6b-e929ad69485f` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -4,7 +4,7 @@
 # 16931
 
 path `en/16931` · uuid `aecfc1ef-8d5b-85e2-9373-2b82f1c6b070` · diamond `15baf9e7-dae1-8308-a4eb-6ca6732c0f6a`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+horo `7` `descent` · trinity `1·1·1` · sealed `0`
 imports — · exports DocumentLevelAllowance·DocumentLevelCharge·DocumentTotals·InvoiceHeader·InvoiceLine·InvoiceTypeCode·ItemPriceDetails·LineAllowance·LineCharge·LineVatInformation·PaymentMeansCode·VatBreakdown·VatCategoryCode·isInvoiceTypeCode·isPaymentMeansCode·isVatCategoryCode · escapes —
 links `1/1` · folded `1` · bonds in `1` out `1`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law EN 16931 is the EU's semantic data model of the core e-invoice (BG/BT codes)
 
 ---
 
-<sub>content-uuid `be938d1c-810a-817f-994e-ae012a86e265` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3c889254-bcf7-8b86-87b9-d2102a291e7a` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -2,7 +2,7 @@
 
 # sanitization
 
-> atom `quantum/sanitization` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `quantum/sanitization` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -16,16 +16,16 @@
 | [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
 | [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
 | [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[typography]]/partition `1` |
+| [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
-- partition `quantum` · sub-root `—`
-- bond degree `30` · analysis neighbors —
-- graph root `—`
+- partition `quantum` · sub-root `752ec37e-713d-87b7-a64c-41cefcda190a`
+- bond degree `45` · analysis neighbors —
+- graph root `767556c1-6cb2-8c6a-8d8b-18641569b2ed`
 
 ## [[cloudflare]] bindings
 
@@ -33,17 +33,55 @@
 
 ## [[standards]]
 
-—
+- `boundaries composed from memory/architecture + shred + receipt; never hand-asserted` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·8 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
 
 ## analytics
 
-- bond degree `30` · sealed `1` · horo `7`
+- bond degree `45` · sealed `1` · horo `8`
 - variance `0` · balanced `1` · trinity sum `3`
-- bindings `0` · standards `0`
+- bindings `0` · standards `1`
 
 ## identity
 
-- uuid `7a8ca2d0-9d66-82fb-b9b6-3a848f8bdb80`
+- uuid `a79bea99-97a4-8db5-a05e-8c2e2978ef97`
 - bonds in `15` · out `15`
 - trinity form·code·proof `1`·`1`·`1`
 - links `24` / `24`
@@ -55,4 +93,4 @@
 
 ---
 
-<sub>content-uuid `33220aae-d326-8e33-b4f5-a919470661ca` · framed by typography partition `quantum` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `8b24c9d5-af4d-8684-b492-c9e1507fc5bd` · framed by typography partition `quantum` bonds `45` · `pnpm readme` · `pnpm readme:check`</sub>

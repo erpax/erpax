@@ -4,7 +4,7 @@
 # double
 
 path `double` · uuid `1a97a204-9953-8f35-80b2-d2e3e0bfccea` · diamond `6c341fb7-4ccb-853e-bed7-1b4ace73f12d`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+horo `2` `share` · trinity `1·0·0` · sealed `0`
 imports collapse·law·merge·sti · exports double · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law double is one schema.org word, content-addressed; the same word collides eve
 
 ---
 
-<sub>content-uuid `a9363bca-e0ae-89e5-8328-85d08935f043` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4eb560fb-87db-855f-a8ee-e610918fb149` · `pnpm readme` · `pnpm computed:check`</sub>

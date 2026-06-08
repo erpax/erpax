@@ -21,9 +21,9 @@
 
 ## typography graph
 
-- partition `convention` · sub-root `38cd2282-f75a-84ce-b2c7-ff7cff0bfb4c`
+- partition `convention` · sub-root `a93daa45-addb-8b21-89cd-ab385bae0306`
 - bond degree `40` · analysis neighbors `tamper/import`
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -34,6 +34,44 @@
 - `an atom's only public face is its index.ts; what it exports through it IS its contract` · banner
 - `the producer dual of importPurity — index-reachable cross-atom symbols, live over src` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·7 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
 - bond degree `40` · sealed `1` · horo `7`
@@ -42,7 +80,7 @@
 
 ## identity
 
-- uuid `b6459a82-b09d-8acb-b73c-18123cf271c3`
+- uuid `f60cba62-9b32-89ab-993f-cf0f7bfe6066`
 - bonds in `12` · out `12`
 - trinity form·code·proof `1`·`0`·`0`
 - links `16` / `16`
@@ -54,4 +92,4 @@
 
 ---
 
-<sub>content-uuid `c3bec9f6-7476-88eb-bc71-5ff1f387a59a` · framed by typography partition `convention` bonds `40` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `5704dc95-64a4-8a7f-862f-4e15ff35cbcb` · framed by typography partition `convention` bonds `40` · `pnpm readme` · `pnpm readme:check`</sub>

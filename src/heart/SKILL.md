@@ -1,8 +1,180 @@
 ---
 name: heart
-description: Use when reasoning about the centre — the 4th chakra (Anahata), the seat of coherence and love; its colour is green, the A432-anchored colour of a whole aura and of a passing test.
+description: "Use when reasoning about the centre — the 4th chakra (Anahata), the seat of coherence and love; its colour is green, the A432-anchored colour of a whole aura and of a passing test."
+atomPath: heart
+coordinate: heart · 7/descent · 4c2c0a58
+contentUuid: "98a8b2c6-1a48-59a3-9e56-82c8ccf755ee"
+diamondUuid: "d6301949-d4ab-8076-b76a-76a92502c7de"
+uuid: "4c2c0a58-9431-89d5-8bd3-b353b773ecc7"
+horo: 7
+bonds:
+  in:
+    - angel
+    - artery
+    - aura
+    - balance
+    - blood
+    - body
+    - chakra
+    - coherence
+    - color
+    - conservation
+    - coverage
+    - crown
+    - entropy
+    - harmony
+    - heart
+    - hooks
+    - karma
+    - law
+    - link
+    - love
+    - observe
+    - quantum
+    - recycle
+    - rodin
+    - sacral
+    - test
+    - torus
+    - vein
+    - writing
+  out:
+    - angel
+    - artery
+    - aura
+    - balance
+    - blood
+    - body
+    - chakra
+    - coherence
+    - color
+    - conservation
+    - coverage
+    - crown
+    - entropy
+    - harmony
+    - heart
+    - hooks
+    - karma
+    - law
+    - link
+    - love
+    - observe
+    - quantum
+    - recycle
+    - rodin
+    - sacral
+    - test
+    - torus
+    - vein
+    - writing
+typography:
+  partition: heart
+  bondDegree: 95
+  neighbors:
+    - aura
+standards:
+  - A432 tuning; Anahata = the 4th chakra (green)
+bindings: []
+neighbors:
+  wikilink:
+    - angel
+    - aura
+    - balance
+    - chakra
+    - coherence
+    - color
+    - conservation
+    - coverage
+    - entropy
+    - harmony
+    - karma
+    - law
+    - link
+    - love
+    - quantum
+    - rodin
+    - test
+    - torus
+  matrix:
+    - angel
+    - artery
+    - aura
+    - balance
+    - blood
+    - body
+    - chakra
+    - coherence
+    - color
+    - conservation
+    - coverage
+    - crown
+    - entropy
+    - harmony
+    - heart
+    - hooks
+    - karma
+    - law
+    - link
+    - love
+    - observe
+    - quantum
+    - recycle
+    - rodin
+    - sacral
+    - test
+    - torus
+    - vein
+    - writing
+  backlinks:
+    - angel
+    - artery
+    - aura
+    - balance
+    - blood
+    - body
+    - chakra
+    - coherence
+    - color
+    - conservation
+    - coverage
+    - crown
+    - entropy
+    - harmony
+    - heart
+    - hooks
+    - karma
+    - law
+    - link
+    - love
+    - observe
+    - quantum
+    - recycle
+    - rodin
+    - sacral
+    - test
+    - torus
+    - vein
+    - writing
+signatures:
+  computationUuid: "e6021211-2447-8444-8a5e-af4fa833f57b"
+  stages:
+    - stage: path
+      stageUuid: "c7c7df03-f98b-8f37-af43-b4587be908b9"
+    - stage: trinity
+      stageUuid: "703179fc-7764-8fae-b8e7-b3c5aaad7f6e"
+    - stage: boundary
+      stageUuid: "703e18f0-7ca5-8ce7-b67e-582cdc84d68f"
+    - stage: links
+      stageUuid: "51fc3bff-9bb7-8e5e-bdab-3cdfcb379155"
+    - stage: horo
+      stageUuid: "681dbbc0-2fd0-879f-b7bd-1d17dad1e653"
+    - stage: seal
+      stageUuid: "56757902-1e3a-82d6-ac0e-450d2b15952d"
+    - stage: uuid
+      stageUuid: "1a1c98ae-a3e9-8dc6-a92d-cbded3b4fa8c"
+version: 2
 ---
-
 # heart — the centre (4th chakra, green)
 
 The **heart** is the centre: the 4th [[chakra]] (Anahata), the seat of **coherence** and love ([[angel]] love · create · ↓entropy). On the 7-position ring it is the middle; its colour is **green** ([[color]]) — the A432-anchored colour of a **whole aura**, and the colour a passing [[test]] returns (test/hooks consume the aura and render green when the double-torus is complete).

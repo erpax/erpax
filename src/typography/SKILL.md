@@ -1,8 +1,262 @@
 ---
 name: typography
-description: Use when measuring or rendering the vitepress typographic feature-set of a SKILL.md page — headings, code, links, tables, containers, math; coverage is the fraction of features used.
+description: "Use when measuring or rendering the vitepress typographic feature-set of a SKILL.md page — headings, code, links, tables, containers, math; coverage is the fraction of features used."
+atomPath: typography
+coordinate: typography · 4/weave · 3743849c
+contentUuid: "f6a5c92a-bba0-51e0-8f24-9ad6277aee56"
+diamondUuid: "91b9c0d9-6c09-8a5b-879f-c3f03b6f6233"
+uuid: "3743849c-4b5a-8327-925d-f4969e456665"
+horo: 4
+bonds:
+  in:
+    - analytics
+    - architecture
+    - atom
+    - aura
+    - blockchain
+    - collapse
+    - cost
+    - css
+    - diamond
+    - digit
+    - entanglement
+    - form
+    - fractal
+    - gate
+    - guardian
+    - harmony
+    - holographic
+    - horo
+    - identity
+    - law
+    - link
+    - matrix
+    - metatron
+    - name
+    - navigation
+    - payload
+    - pivot
+    - proof
+    - purity
+    - quantum
+    - rodin
+    - seal
+    - search
+    - sequence
+    - skill
+    - tamper
+    - text
+    - trinity
+    - typography
+    - upgrade
+    - uuid
+    - vitepress
+    - word
+    - worker
+  out:
+    - analytics
+    - architecture
+    - atom
+    - aura
+    - blockchain
+    - collapse
+    - cost
+    - css
+    - diamond
+    - digit
+    - entanglement
+    - form
+    - fractal
+    - gate
+    - guardian
+    - harmony
+    - holographic
+    - horo
+    - identity
+    - law
+    - link
+    - matrix
+    - metatron
+    - name
+    - navigation
+    - payload
+    - pivot
+    - proof
+    - purity
+    - quantum
+    - rodin
+    - seal
+    - search
+    - sequence
+    - skill
+    - tamper
+    - text
+    - trinity
+    - typography
+    - upgrade
+    - uuid
+    - vitepress
+    - word
+    - worker
+typography:
+  partition: typography
+  bondDegree: 146
+  neighbors:
+    - analytics
+    - aura
+    - diamond
+    - purity
+standards:
+  - CommonMark + the vitepress markdown extensions
+  - "ISO/IEC 25010:2023 §5.5 testability — the guardian decision is a pure fn"
+bindings: []
+neighbors:
+  wikilink:
+    - analytics
+    - atom
+    - aura
+    - blockchain
+    - collapse
+    - cost
+    - diamond
+    - digit
+    - entanglement
+    - form
+    - fractal
+    - gate
+    - guardian
+    - harmony
+    - holographic
+    - horo
+    - identity
+    - law
+    - link
+    - matrix
+    - metatron
+    - name
+    - navigation
+    - payload
+    - proof
+    - purity
+    - rodin
+    - seal
+    - search
+    - sequence
+    - skill
+    - tamper
+    - trinity
+    - typography
+    - uuid
+    - vitepress
+  matrix:
+    - analytics
+    - architecture
+    - atom
+    - aura
+    - blockchain
+    - collapse
+    - cost
+    - css
+    - diamond
+    - digit
+    - entanglement
+    - form
+    - fractal
+    - gate
+    - guardian
+    - harmony
+    - holographic
+    - horo
+    - identity
+    - law
+    - link
+    - matrix
+    - metatron
+    - name
+    - navigation
+    - payload
+    - pivot
+    - proof
+    - purity
+    - quantum
+    - rodin
+    - seal
+    - search
+    - sequence
+    - skill
+    - tamper
+    - text
+    - trinity
+    - typography
+    - upgrade
+    - uuid
+    - vitepress
+    - word
+    - worker
+  backlinks:
+    - analytics
+    - architecture
+    - atom
+    - aura
+    - blockchain
+    - collapse
+    - cost
+    - css
+    - diamond
+    - digit
+    - entanglement
+    - form
+    - fractal
+    - gate
+    - guardian
+    - harmony
+    - holographic
+    - horo
+    - identity
+    - law
+    - link
+    - matrix
+    - metatron
+    - name
+    - navigation
+    - payload
+    - pivot
+    - proof
+    - purity
+    - quantum
+    - rodin
+    - seal
+    - search
+    - sequence
+    - skill
+    - tamper
+    - text
+    - trinity
+    - typography
+    - upgrade
+    - uuid
+    - vitepress
+    - word
+    - worker
+signatures:
+  computationUuid: "3e7f73ce-7f5c-87c5-bbab-d26abaf91873"
+  stages:
+    - stage: path
+      stageUuid: "4dcf14cd-0c9d-86d4-9878-229fa4a8ff9b"
+    - stage: trinity
+      stageUuid: "4813643e-787f-8396-9e8d-a1884c85b9b1"
+    - stage: boundary
+      stageUuid: "ebc0b3bf-69fd-8996-8429-0f1480cf2525"
+    - stage: links
+      stageUuid: "26bab8a3-7ffc-8cd1-8669-3e9c66f56a50"
+    - stage: horo
+      stageUuid: "d8d91117-ebd0-858a-804b-b4f8270d9555"
+    - stage: seal
+      stageUuid: "32faa7b7-3153-892f-90d4-974e3c0e2194"
+    - stage: uuid
+      stageUuid: "fb294f0d-2e2f-8c87-8e31-3ca71d2a6be8"
+version: 2
 ---
-
 # typography — the rendered feature-set
 
 The [[vitepress]] typographic feature-set a [[skill]]'s SKILL.md renders with: headings, bold, italic, code, code-blocks, links, lists, tables, blockquotes, containers, math. **Coverage** is the fraction of that set a page actually uses. Test results in erpax *are* vitepress content — full-featured typography with no gaps in the components and features used (and that fullness is itself tested).

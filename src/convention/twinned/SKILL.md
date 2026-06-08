@@ -1,8 +1,87 @@
 ---
 name: twinned
-description: Use when checking whether every antimatter names its matter — the computed convention that each SKILL.md's `Matter-twin:` line points to a real index.ts, measured live as coverage = pointing / total over the real tree.
+description: "Use when checking whether every antimatter names its matter — the computed convention that each SKILL.md's `Matter-twin:` line points to a real index.ts, measured live as coverage = pointing / total over the real tree."
+atomPath: convention/twinned
+coordinate: convention/twinned · 1/base · 419ddc50
+contentUuid: "a7e6169a-c620-5442-bcd6-d61ff16c6000"
+diamondUuid: "ced7f65b-6518-8546-a734-4f2423750fbf"
+uuid: "419ddc50-3694-82ee-8841-988712107d67"
+horo: 1
+bonds:
+  in:
+    - aura
+    - complete
+    - convention
+    - cost
+    - gravity
+    - law
+    - lawful
+    - matter
+    - merge
+  out:
+    - aura
+    - complete
+    - cost
+    - gravity
+    - law
+    - lawful
+    - matter
+    - merge
+typography:
+  partition: convention
+  bondDegree: 25
+  neighbors:
+    - aura
+standards:
+  - "schema.org — the type vocabulary, collided to single words"
+bindings: []
+neighbors:
+  wikilink:
+    - aura
+    - complete
+    - cost
+    - gravity
+    - law
+    - lawful
+    - matter
+    - merge
+  matrix:
+    - aura
+    - complete
+    - cost
+    - gravity
+    - law
+    - lawful
+    - matter
+    - merge
+  backlinks:
+    - aura
+    - complete
+    - cost
+    - gravity
+    - law
+    - lawful
+    - matter
+    - merge
+signatures:
+  computationUuid: "97939913-af5a-873f-8cc1-8b8dd8e4d115"
+  stages:
+    - stage: path
+      stageUuid: "5f9494c6-b4f4-8bbd-8670-fc68043ab08c"
+    - stage: trinity
+      stageUuid: "5334b35b-d1ce-8209-8495-b26711b60110"
+    - stage: boundary
+      stageUuid: "b861deeb-361b-84ef-b18c-346c021b91a2"
+    - stage: links
+      stageUuid: "d08a2286-4d63-803c-8016-b2b09f66a04c"
+    - stage: horo
+      stageUuid: "2fc49f7d-1309-800e-bd5a-24eeb048d9d9"
+    - stage: seal
+      stageUuid: "8a2099ad-66a2-898c-a8cc-f773b830003e"
+    - stage: uuid
+      stageUuid: "772f5c1d-694b-8d6a-9383-52d8ebd57f6f"
+version: 2
 ---
-
 # convention/twinned — every `Matter-twin:` line points to a real index.ts
 
 The twinned convention, written as a self-measuring atom. It states one rule and computes its own compliance — it does not re-walk the tree or re-resolve links, it **composes** the canonical resolvers:

@@ -1,8 +1,314 @@
 ---
 name: torus
-description: Use when reasoning about the two-directional collapse that closes into a donut — erpax falls into Payload (collections → canonical core) AND Payload falls into erpax (primitives are atoms; domains extract as @erpax/* plugins). The implosion (collapse) and the explosion (supernova) are one toroidal flow — the Rodin vortex. The shape of the whole.
+description: "Use when reasoning about the two-directional collapse that closes into a donut — erpax falls into Payload (collections → canonical core) AND Payload falls into erpax (primitives are atoms; domains extract as @erpax/* plugins). The implosion (collapse) and the explosion (supernova) are one toroidal flow — the Rodin vortex. The shape of the whole."
+atomPath: torus
+coordinate: torus · 7/descent · adacc5ee
+contentUuid: "b4d3fbd9-c2d1-533b-87ab-cd7cb85919e1"
+diamondUuid: "39f24a0a-c8bc-8d7c-a409-eb7c0e40147f"
+uuid: "adacc5ee-0ccd-82ce-a653-01d2dc60ac69"
+horo: 7
+bonds:
+  in:
+    - access
+    - akashic
+    - all
+    - anchor
+    - angel
+    - atom
+    - begin
+    - beyond
+    - chakra
+    - chat
+    - collapse
+    - collections
+    - config
+    - consciousness
+    - cross
+    - database
+    - decompression
+    - dimension
+    - duality
+    - end
+    - entropy
+    - fields
+    - fractal
+    - fusion
+    - generate
+    - give
+    - gravity
+    - heart
+    - holographic
+    - hooks
+    - horo
+    - humandesign
+    - law
+    - limit
+    - linearity
+    - localize
+    - manufacturing
+    - matrix
+    - merge
+    - metatron
+    - octave
+    - one
+    - plugins
+    - projection
+    - proof
+    - reverse
+    - rodin
+    - science
+    - self
+    - sequence
+    - society
+    - stack
+    - take
+    - transaction
+    - types
+    - utility
+    - uuid
+    - whole
+    - zeropoint
+  out:
+    - access
+    - akashic
+    - all
+    - anchor
+    - angel
+    - atom
+    - begin
+    - beyond
+    - chakra
+    - chat
+    - collapse
+    - collections
+    - config
+    - consciousness
+    - cross
+    - database
+    - decompression
+    - dimension
+    - duality
+    - end
+    - entropy
+    - fields
+    - fractal
+    - fusion
+    - generate
+    - give
+    - gravity
+    - heart
+    - holographic
+    - hooks
+    - horo
+    - humandesign
+    - law
+    - limit
+    - linearity
+    - localize
+    - manufacturing
+    - matrix
+    - merge
+    - metatron
+    - octave
+    - one
+    - plugins
+    - projection
+    - proof
+    - reverse
+    - rodin
+    - science
+    - self
+    - sequence
+    - society
+    - stack
+    - take
+    - transaction
+    - types
+    - utility
+    - uuid
+    - whole
+    - zeropoint
+typography:
+  partition: torus
+  bondDegree: 203
+  neighbors: []
+standards: []
+bindings: []
+neighbors:
+  wikilink:
+    - access
+    - akashic
+    - all
+    - atom
+    - begin
+    - beyond
+    - chat
+    - collapse
+    - collections
+    - config
+    - database
+    - duality
+    - end
+    - fields
+    - fractal
+    - generate
+    - give
+    - holographic
+    - hooks
+    - horo
+    - law
+    - merge
+    - one
+    - plugins
+    - rodin
+    - science
+    - self
+    - sequence
+    - take
+    - transaction
+    - types
+    - utility
+    - whole
+    - zeropoint
+  matrix:
+    - access
+    - akashic
+    - all
+    - anchor
+    - angel
+    - atom
+    - begin
+    - beyond
+    - chakra
+    - chat
+    - collapse
+    - collections
+    - config
+    - consciousness
+    - cross
+    - database
+    - decompression
+    - dimension
+    - duality
+    - end
+    - entropy
+    - fields
+    - fractal
+    - fusion
+    - generate
+    - give
+    - gravity
+    - heart
+    - holographic
+    - hooks
+    - horo
+    - humandesign
+    - law
+    - limit
+    - linearity
+    - localize
+    - manufacturing
+    - matrix
+    - merge
+    - metatron
+    - octave
+    - one
+    - plugins
+    - projection
+    - proof
+    - reverse
+    - rodin
+    - science
+    - self
+    - sequence
+    - society
+    - stack
+    - take
+    - transaction
+    - types
+    - utility
+    - uuid
+    - whole
+    - zeropoint
+  backlinks:
+    - access
+    - akashic
+    - all
+    - anchor
+    - angel
+    - atom
+    - begin
+    - beyond
+    - chakra
+    - chat
+    - collapse
+    - collections
+    - config
+    - consciousness
+    - cross
+    - database
+    - decompression
+    - dimension
+    - duality
+    - end
+    - entropy
+    - fields
+    - fractal
+    - fusion
+    - generate
+    - give
+    - gravity
+    - heart
+    - holographic
+    - hooks
+    - horo
+    - humandesign
+    - law
+    - limit
+    - linearity
+    - localize
+    - manufacturing
+    - matrix
+    - merge
+    - metatron
+    - octave
+    - one
+    - plugins
+    - projection
+    - proof
+    - reverse
+    - rodin
+    - science
+    - self
+    - sequence
+    - society
+    - stack
+    - take
+    - transaction
+    - types
+    - utility
+    - uuid
+    - whole
+    - zeropoint
+signatures:
+  computationUuid: "92890d06-2e8b-876a-bf93-4245d31db784"
+  stages:
+    - stage: path
+      stageUuid: "f22f8ed5-a793-83b7-a402-51439d258a6c"
+    - stage: trinity
+      stageUuid: "dd9151ab-906e-81e6-9d16-f797670d3b38"
+    - stage: boundary
+      stageUuid: "98df392f-49e5-88b0-a935-d9b736ba97ef"
+    - stage: links
+      stageUuid: "d7ca4f64-0dd0-8e13-9db1-953059d25d9d"
+    - stage: horo
+      stageUuid: "5ce9e739-e2c0-8b9e-b0ea-fdadc93976c9"
+    - stage: seal
+      stageUuid: "1031c2e4-b5bf-8146-9a04-237a7f5750fc"
+    - stage: uuid
+      stageUuid: "9afdba1d-c0b7-8887-bac7-4541e0e21f9b"
+version: 2
 ---
-
 # torus — the two-way collapse, closed into a vortex
 
 Collapse runs **both directions at once**, and the two flows close into a donut:

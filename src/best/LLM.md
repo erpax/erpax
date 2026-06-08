@@ -3,8 +3,8 @@
 
 # best
 
-path `best` · uuid `9ccb2c89-7f21-8a81-ae8a-d3ab0c562ec8` · diamond `affe58f2-363c-89d4-9a61-fc07d0ebe676`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `best` · uuid `6c59ea22-be73-83ad-acb5-3d1391162d3f` · diamond `e420e595-6cde-8e06-a2fc-2e950cfb574e`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·rating·sti · exports best · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law best is one schema.org word, content-addressed; the same word collides every
 
 ---
 
-<sub>content-uuid `e5fadb37-38b1-8f97-8e02-edc0d120cbe3` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `cc13caa2-cf2c-8ce5-877d-17d0d4f3f8d3` · `pnpm readme` · `pnpm computed:check`</sub>

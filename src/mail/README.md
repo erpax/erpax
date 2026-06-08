@@ -23,7 +23,21 @@
 
 - partition `mail` · sub-root `b94d4ecd-6ad3-8c2e-9b7d-1dc568d607d9`
 - bond degree `20` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `20` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `99dbf5eb-205c-83cd-acf9-41673095106e` · framed by typography partition `mail` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `deb05053-7e41-818e-b463-8df1f07632e6` · framed by typography partition `mail` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,15 +3,15 @@
 
 # link
 
-path `convention/link` · uuid `16105c24-b4e4-8ff6-b4bb-b1c5e698299e` · diamond `0dc45e49-2bab-8e98-b9f7-2005e15f929f`
-horo `5` `round` · trinity `1·1·1` · sealed `1`
+path `convention/link` · uuid `f9f30763-26c7-8226-9c63-c0fc17bed200` · diamond `1b433223-1ac2-8733-a268-2fafd742935f`
+horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports @/aura·@/corpus · exports function·interface · escapes —
-links `21/21` · folded `1` · bonds in `51` out `50`
+links `21/21` · folded `1` · bonds in `43` out `43`
 faces worker·plugin·pwa `1·0·0`
-neighbors → analog·aura·balance·collapse·convention·dashboard·digital·entropy·fear·forge·fractal·fresh·fusion·generate·graph·gravity·gs·harmony·has·heart·interference·law·law·link·love·media·merchant·merge·original·product·purity·reciprocal·regeneration·related·relationship·religion·return·reveal·role·search·self·settings·shipping·significant·sti·superdense·tamper·triggered·typography·uuid · ← analog·aura·aura·balance·collapse·convention·dashboard·digital·entropy·fear·fear·forge·fractal·fresh·fusion·generate·graph·gravity·gs·harmony·has·heart·interference·law·link·love·media·merchant·merge·original·product·purity·reciprocal·regeneration·related·relationship·religion·return·reveal·role·search·self·settings·shipping·significant·sti·superdense·tamper·triggered·typography·uuid
+neighbors → analog·aura·aura·collapse·convention·dashboard·digital·fear·fear·forge·fusion·generate·graph·gravity·gs·has·heart·interference·law·link·love·media·merchant·merge·original·product·purity·reciprocal·regeneration·related·relationship·religion·return·reveal·role·self·settings·shipping·significant·sti·superdense·triggered·typography · ← analog·aura·aura·collapse·convention·dashboard·digital·fear·fear·forge·fusion·generate·graph·gravity·gs·has·heart·interference·law·link·love·media·merchant·merge·original·product·purity·reciprocal·regeneration·related·relationship·religion·return·reveal·role·self·settings·shipping·significant·sti·superdense·triggered·typography
 analysis aura
 law every wikilink resolves to a real atom — no dead wires. A link is a uuid-edge in prose; a dead link is broken wiring, a gap in the aura that buys zero tamper-cost. Drive resolving/total to 1 and the corpus is wired whole on the link axis: zero dead-wire entropy ⇒ infinite tamper-cost.
 
 ---
 
-<sub>content-uuid `ee3e429c-cdef-8633-ba40-19bf3228001f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `56c30a11-a161-8ccf-b99c-051f66fea872` · `pnpm readme` · `pnpm computed:check`</sub>

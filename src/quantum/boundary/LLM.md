@@ -3,7 +3,7 @@
 
 # boundary
 
-path `quantum/boundary` · uuid `b74f651a-8bee-80ed-90f5-38a70e50cf96` · diamond `e2d0f27c-50e1-8007-9000-1744a55b5f19`
+path `quantum/boundary` · uuid `74c87a11-459a-8615-aafd-4c1946bbab97` · diamond `cdf3b0df-e969-8330-9bd5-e9294199f183`
 horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports @/aura·@/integrity·@/tamper/import · exports boundary·function·interface·per · escapes —
 links `17/17` · folded `1` · bonds in `15` out `15`
@@ -14,4 +14,4 @@ law quantum computed import/export — every file's boundary is algorithmically 
 
 ---
 
-<sub>content-uuid `2ad0d736-c273-897b-87a5-23ea3af8aee4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0f7b9f43-5122-87ab-a5d3-da1501727a55` · `pnpm readme` · `pnpm computed:check`</sub>

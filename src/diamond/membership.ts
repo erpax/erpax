@@ -21,6 +21,13 @@ export const CODE_MARKERS = ['index.ts', 'index.tsx', 'test.ts', 'test.tsx'] as 
 const TSX_EXT = /\.tsx$/i
 const COLOCATED_TEST = /\.test\.(ts|tsx)$/i
 const FORBIDDEN_NAME = /\.(bak|backup)$/i
+/** Lawful generated emit — never hand-edited gate inputs (coordinate b2f75a6f). */
+const GENERATED_FACE = /\.generated\.(ts|json)$/i
+/** CLI entry scripts at atom roots (package.json scripts · COLOCATED siblings). */
+const CLI_SCRIPT = /\.mjs$/i
+const MODULE_SCRIPT = /\.mts$/i
+/** Framework asset extensions — seed images · admin styles (aligned with quaternary ASSET_EXT). */
+const ASSET_EXT = /\.(scss|webp|mdc)$/i
 
 export const COLOCATED = [
   'index.tsx',
@@ -31,6 +38,7 @@ export const COLOCATED = [
   'seed.ts',
   'load-hook.mjs',
   'etrima-import.mjs',
+  'hooks.registry.mjs',
 ] as const
 
 const vocabularyCore = (): ReadonlySet<string> =>
@@ -78,11 +86,16 @@ export function isChildAtomDir(parentDir: string, name: string): boolean {
 const isAllowedFile = (name: string, kind: DiamondAtomKind): boolean => {
   if (FORBIDDEN_NAME.test(name)) return false
   if (name.startsWith('.') && name !== '.gitkeep') return false
+  if (GENERATED_FACE.test(name)) return true
+  if (CLI_SCRIPT.test(name) || MODULE_SCRIPT.test(name)) return true
+  if (ASSET_EXT.test(name)) return true
   const allowed = ALLOWED_DIAMOND_FILES[kind]
   if (allowed.has(name)) return true
+  if (TSX_EXT.test(name)) return true
   if (kind === 'code') {
-    if (TSX_EXT.test(name)) return true
     if (COLOCATED_TEST.test(name)) return true
+    // Barrel siblings — index.ts re-exports; not stray matter (integrity · typography · …).
+    if (/\.ts$/i.test(name) && name !== TRINITY_CODE[0] && name !== TRINITY_CODE[1]) return true
   }
   return false
 }

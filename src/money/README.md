@@ -25,7 +25,25 @@
 
 - partition `money` · sub-root `8b9410ac-9cd7-8f49-8f2e-0ac62e0e5279`
 - bond degree `27` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `IEEE-754` · catalogue
+- `IFRS IAS-21 foreign-currency-translation` · banner
+- `ISO-4217:2015 currency-codes` · banner
+- `ISO/IEC-29119` · catalogue
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `27` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `5`
 
 ## identity
 
@@ -41,4 +59,4 @@
 
 ---
 
-<sub>content-uuid `3603d049-7758-8a78-a234-76a50706c725` · framed by typography partition `money` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `22de185b-1e46-8d6c-b1ca-446f5f99beff` · framed by typography partition `money` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>

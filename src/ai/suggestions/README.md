@@ -2,9 +2,11 @@
 
 # suggestions
 
-> atom `ai/suggestions` · horo `1` `base` · [[balance]] `1` · [[seal]] `0`
+> atom `ai/suggestions` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
+
+> account code `ai/suggestions` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,11 +23,56 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `dispatch:eb=1.585`
+
+### collapse
+
+- `balance:conserved`
+- `seal:sealed`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `1`
+- entry uuids `e14103de-4afd-852c-a9cd-ec28afe91608`
+- content uuids `af32093e-05c9-8651-adbb-68b9d34f7276` · `c6e4f9df-fa66-8971-9c7a-b69cc0f689b8`
+
+## [[entropy]] — gaps · seals
+
+> account code `ai/suggestions` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+|  | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.7` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[diamond]]/sealed `1.585` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `0` eb | Σ seal `13.285` eb |
+
+> net residual `-13.285` eb · seal/gap ratio `1` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `ai` · sub-root `2d3a90be-68d2-8eac-ba70-c4c58554dc58`
+- partition `ai` · sub-root `00f1dddc-4124-8f45-b06e-3569a314cc18`
 - bond degree `24` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
 
 ## [[cloudflare]] bindings
 
@@ -44,7 +91,6 @@
 - `GDPR Art.22 automated-individual-decision-making` · banner
 - `GDPR Art.22(3) right-to-human-intervention` · banner
 - `ILO-C001` · catalogue
-- `ISO-19011:2018 §6.4.6 audit-evidence ai-inference-trail` · banner
 - `ISO-8601-1` · catalogue
 - `ISO-8601-1:2019 date-time inference-time` · banner
 - `ISO/IEC 23894:2023 ai-risk-management` · banner
@@ -57,15 +103,53 @@
 - `rfc-9562 uuid suggestion-id` · banner
 - `SOX §404 internal-controls ai-assisted-decision TOM-AI-01` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·7 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `24` · sealed `0` · horo `1`
+- bond degree `24` · sealed `1` · horo `7`
 - variance `0` · balanced `1` · trinity sum `3`
-- bindings `0` · standards `23`
+- bindings `0` · standards `22`
 
 ## identity
 
-- uuid `365184af-0fed-8e23-a2f2-80494964be93`
+- uuid `af32093e-05c9-8651-adbb-68b9d34f7276`
 - bonds in `8` · out `8`
 - trinity form·code·proof `1`·`1`·`1`
 - links `5` / `5`
@@ -73,8 +157,8 @@
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `d95c40d5-8814-8810-8355-74cf96871a3c` · framed by typography partition `ai` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `7aa9bc51-3000-89f6-8237-a4c238e10f88` · framed by typography partition `ai` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>

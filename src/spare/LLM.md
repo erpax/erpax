@@ -3,15 +3,15 @@
 
 # spare
 
-path `spare` · uuid `ec88c6c1-1a09-8b66-b2f9-065749561590` · diamond `629356f0-75f2-8471-ac2c-b49b19d3951a`
+path `spare` · uuid `ec88c6c1-1a09-8b66-b2f9-065749561590` · diamond `98e762e5-c7b6-8876-adfc-45f7286c733a`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports accessory·collapse·law·merge·part·sti · exports spare · escapes —
-links `6/6` · folded `1` · bonds in `3` out `3`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → fields·landmarks·terminals · ← fields·landmarks·terminals
+neighbors → accessory·collapse·law·merge·part·sti · ← accessory·collapse·law·merge·part·sti
 analysis —
 law spare is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `1416c94f-dfdc-8fe9-b62f-cf6a2e53ad87` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4b70f4b1-8d03-85ba-bc35-f1a71a9c1ffd` · `pnpm readme` · `pnpm computed:check`</sub>

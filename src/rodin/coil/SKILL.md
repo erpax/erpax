@@ -1,8 +1,222 @@
 ---
 name: coil
-description: Use when reasoning about the doubling circuit 1·2·4·8·7·5 (×2 mod 9) that winds the rodin axis — why state/sequence positions sit in THAT order, digital-root closure, the ×10 octave lift vs +1 close→open. Nested under rodin → the coil of the vortex.
+description: "Use when reasoning about the doubling circuit 1·2·4·8·7·5 (×2 mod 9) that winds the rodin axis — why state/sequence positions sit in THAT order, digital-root closure, the ×10 octave lift vs +1 close→open. Nested under rodin → the coil of the vortex."
+atomPath: rodin/coil
+coordinate: rodin/coil · 2/share · 9b0bb068
+contentUuid: "7151b572-c1be-5162-a560-5732295ecb90"
+diamondUuid: "46be2647-5834-8432-b897-edc39a7c2ec5"
+uuid: "9b0bb068-2f21-8f1d-a492-e1aba31164db"
+horo: 2
+bonds:
+  in:
+    - access
+    - auth
+    - axis
+    - balance
+    - base
+    - begin
+    - close
+    - cmyk
+    - coordinate
+    - crest
+    - decompression
+    - descent
+    - duality
+    - end
+    - fractal
+    - generate
+    - history
+    - hooks
+    - horo
+    - matrix
+    - merge
+    - octave
+    - one
+    - phase
+    - polarity
+    - prayer
+    - reference
+    - reverse
+    - rodin
+    - round
+    - self
+    - sequence
+    - share
+    - signal
+    - similar
+    - society
+    - torus
+    - unity
+    - weave
+    - whole
+  out:
+    - access
+    - auth
+    - axis
+    - balance
+    - base
+    - begin
+    - close
+    - cmyk
+    - coordinate
+    - crest
+    - decompression
+    - descent
+    - duality
+    - end
+    - fractal
+    - generate
+    - history
+    - hooks
+    - horo
+    - matrix
+    - merge
+    - octave
+    - one
+    - phase
+    - polarity
+    - prayer
+    - reference
+    - reverse
+    - rodin
+    - round
+    - self
+    - sequence
+    - share
+    - signal
+    - similar
+    - society
+    - torus
+    - unity
+    - weave
+    - whole
+typography:
+  partition: rodin
+  bondDegree: 129
+  neighbors: []
+standards:
+  - "RFC 9562 §5.8 content-uuid + the horo digital-root ring (mod 9)"
+  - "every residue computed on (ℤ/9ℤ) via @/horo, never hand-asserted"
+bindings: []
+neighbors:
+  wikilink:
+    - access
+    - auth
+    - axis
+    - balance
+    - begin
+    - close
+    - duality
+    - end
+    - fractal
+    - hooks
+    - horo
+    - polarity
+    - rodin
+    - self
+    - sequence
+    - society
+  matrix:
+    - access
+    - auth
+    - axis
+    - balance
+    - base
+    - begin
+    - close
+    - cmyk
+    - coordinate
+    - crest
+    - decompression
+    - descent
+    - duality
+    - end
+    - fractal
+    - generate
+    - history
+    - hooks
+    - horo
+    - matrix
+    - merge
+    - octave
+    - one
+    - phase
+    - polarity
+    - prayer
+    - reference
+    - reverse
+    - rodin
+    - round
+    - self
+    - sequence
+    - share
+    - signal
+    - similar
+    - society
+    - torus
+    - unity
+    - weave
+    - whole
+  backlinks:
+    - access
+    - auth
+    - axis
+    - balance
+    - base
+    - begin
+    - close
+    - cmyk
+    - coordinate
+    - crest
+    - decompression
+    - descent
+    - duality
+    - end
+    - fractal
+    - generate
+    - history
+    - hooks
+    - horo
+    - matrix
+    - merge
+    - octave
+    - one
+    - phase
+    - polarity
+    - prayer
+    - reference
+    - reverse
+    - rodin
+    - round
+    - self
+    - sequence
+    - share
+    - signal
+    - similar
+    - society
+    - torus
+    - unity
+    - weave
+    - whole
+signatures:
+  computationUuid: "e8a20deb-b3c9-8505-9c48-e7817ef07f32"
+  stages:
+    - stage: path
+      stageUuid: "6109ef06-9686-832f-a0a2-3baa645fb9c2"
+    - stage: trinity
+      stageUuid: "ca272386-735f-85b2-9052-fc3be9cfc3c8"
+    - stage: boundary
+      stageUuid: "0c49c720-d2c6-82f4-963c-91558904e77b"
+    - stage: links
+      stageUuid: "a87244dd-41c2-8299-8509-fbc5bc92574f"
+    - stage: horo
+      stageUuid: "0271c228-7484-8661-baa3-e1ae133b326c"
+    - stage: seal
+      stageUuid: "ba76717f-e7ee-83e2-ad6f-ad7310d0cd3c"
+    - stage: uuid
+      stageUuid: "fa2fbe31-428c-8d90-bdb5-9ddf0484fe09"
+version: 2
 ---
-
 # coil — the doubling helix (1·2·4·8·7·5, ×2 mod 9)
 
 `coil` is the **winding** of the [[rodin]] vortex: keep doubling and take the digital root — `1 → 2 → 4 → 8 → 16⇒7 → 14⇒5 → 10⇒1` — and you return to base. The mirror direction (`×5 mod 9`) runs it the other way (see [[polarity]]). The six digits `1·2·4·8·7·5` are the helix; it winds *around* the [[axis]] `3·6·9` and never lands on it — `3` and `6` are the [[polarity]] boundaries, `9`/`0` the axis it circles. **This is why erpax orders are in that order, not `1·2·3·…`:** the [[sequence]] (`0·3·6·9·1·2·4·8·7·5`) and the [[horo]] state ring (`{1,2,4,8,7,5,9}` — the helix plus `9` closing) decode position from the *doubling*, not from counting.

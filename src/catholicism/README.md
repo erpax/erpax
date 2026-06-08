@@ -2,7 +2,7 @@
 
 # catholicism
 
-> atom `catholicism` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
+> atom `catholicism` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -21,9 +21,9 @@
 
 ## typography graph
 
-- partition `catholicism` · sub-root `4554f61f-6885-8e3a-a67b-27ce9966278f`
+- partition `catholicism` · sub-root `15cf49dc-3ce1-8e33-a6ad-b3df1b225b9a`
 - bond degree `59` · analysis neighbors `diamond`
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- graph root `1cef4f02-a3fa-83a5-8ea0-120b724ef456`
 
 ## [[cloudflare]] bindings
 
@@ -33,15 +33,53 @@
 
 —
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·1 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `59` · sealed `1` · horo `4`
+- bond degree `59` · sealed `1` · horo `1`
 - variance `0` · balanced `1` · trinity sum `1`
 - bindings `0` · standards `0`
 
 ## identity
 
-- uuid `4554f61f-6885-8e3a-a67b-27ce9966278f`
+- uuid `15cf49dc-3ce1-8e33-a6ad-b3df1b225b9a`
 - bonds in `19` · out `19`
 - trinity form·code·proof `1`·`0`·`0`
 - links `45` / `45`
@@ -53,4 +91,4 @@
 
 ---
 
-<sub>content-uuid `e5a6c8ff-e47a-8a4c-8470-7d3bc46e0b8a` · framed by typography partition `catholicism` bonds `59` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f96a2d64-bb09-835b-8f8b-ec9dcc4cfb59` · framed by typography partition `catholicism` bonds `59` · `pnpm readme` · `pnpm readme:check`</sub>

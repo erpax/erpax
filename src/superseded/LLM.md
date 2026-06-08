@@ -3,15 +3,15 @@
 
 # superseded
 
-path `superseded` · uuid `32525838-ad08-84f1-a84f-d46860bc0d4d` · diamond `ece3f9dd-39f3-8796-8859-88863552916e`
+path `superseded` · uuid `32525838-ad08-84f1-a84f-d46860bc0d4d` · diamond `cfa0a95f-ee94-83db-a2b7-d3bdf832bc7c`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports superseded · escapes —
-links `2/2` · folded `1` · bonds in `4` out `4`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → law·thing · ← law·thing
 analysis —
 law superseded is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `4cb6317c-edfb-814c-87de-985c362a310f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9523f0d9-9d2f-8532-8f2d-07133da40f60` · `pnpm readme` · `pnpm computed:check`</sub>

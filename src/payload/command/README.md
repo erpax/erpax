@@ -2,7 +2,7 @@
 
 # command
 
-> atom `payload/command` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
+> atom `payload/command` · horo `4` `weave` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -25,7 +25,24 @@
 
 - partition `payload` · sub-root `fff1cd42-9f30-8151-8e61-e5d925926388`
 - bond degree `71` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `the command list is the installed CLI's; each uuid and the fold are computed` · banner
+- `the command list is the installed CLI's; each uuid and the fold are computed, never assumed` · banner
+- `the Payload CLI (generate / migrate / jobs / run) · double-entry (every reversible command has its inverse)` · banner
+- `UBL-2.1` · catalogue
+
+## analytics
+
+- bond degree `71` · sealed `0` · horo `4`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `4`
 
 ## identity
 
@@ -37,8 +54,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `e6ffdb2f-d3ba-8f51-9d1e-081a96b79e80` · framed by typography partition `payload` bonds `71` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0c4db60e-df47-8e23-8812-cb065179968d` · framed by typography partition `payload` bonds `71` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,15 +3,15 @@
 
 # shifts
 
-path `work/shifts` · uuid `816af96f-181a-896c-ac6f-9ade38c52b5d` · diamond `4b6613dd-72dc-8bf8-a0fb-d26e80ab95c0`
+path `work/shifts` · uuid `816af96f-181a-896c-ac6f-9ade38c52b5d` · diamond `d9e33543-30bc-81b8-bd74-8d6c820e7253`
 horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports @/fields·@/horo·@/membership/admin/mutate/access·@/tenant/scoped/read · exports const·default · escapes —
-links `11/11` · folded `1` · bonds in `4` out `4`
+links `11/11` · folded `1` · bonds in `11` out `11`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → accounting·capacity·cases·centers·duality·employees·horo·law·orders·schedule·shift · ← accounting·capacity·cases·centers·duality·employees·horo·law·orders·schedule·shift
 analysis —
 law the shift is the one row per (actor, day) and the AUTHORITY a [[work/orders|work order]] rolls UP into and reads back DOWN — `efficiencyPercent = ⌊minutesProduced·100/presenceMinutes⌋` (integer truncation, not rounding), `wage = max(time-pay, Σ order-wages)`, and a day closes only once reconciled into a wage (the [[horo]] ring 1·2·4·8·7·5·9).
 
 ---
 
-<sub>content-uuid `a8c1d449-1e13-809c-a442-59d2251b2099` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `06c0e6f3-b92d-8fae-9b9f-73654cd72d86` · `pnpm readme` · `pnpm computed:check`</sub>

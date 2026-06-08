@@ -2,9 +2,11 @@
 
 # checker
 
-> atom `closing/period/checker` · horo `2` `share` · [[balance]] `1` · [[seal]] `0`
+> atom `closing/period/checker` · horo `1` `base` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `closing/period/checker` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,11 +23,62 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `law:a [[period]] closes only through the gate — in-range, not already closed, entries that [[balance]] within tolerance, and a legal state transition — and the check is pure, so the verdict is itself the audit evidence ([[trinity]]).`
+- `seal:unsealed`
+- `trigger:IAS-34:2023 — interim financial reporting, period structure`
+- `trigger:SAF-T:3.0.2 — period coding, regulatory audit trail`
+- `trigger:Use when validating whether a fiscal period may be closed — pure, no-mutation checks that the period is in range and not already closed, that the closing entries balance, that a state transition is legal, and that reversals can post to the next period.`
+- `trigger:a [[period]] closes only through the gate — in-range, not already closed, entries that [[balance]] within tolerance, and a legal state transition — and the check is pure, so the verdict is itself the audit evidence ([[trinity]]).`
+- `trigger:matter-twin:src/closing/period/checker/index.ts`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `429531b3-82de-8a89-bee3-212ebf9570d9` · `8f22b79e-bebc-822d-8ae3-75387d7dfc36` · `b91282ab-467a-883d-b3bf-f265ec758f81`
+- content uuids `233e1ca0-2d60-8ba0-8c28-82afc41f8f3b` · `82990757-651d-88dc-a64a-523310dfe963` · `9beb0abb-8c25-823c-9b46-bce60dd9074f`
+
+## [[entropy]] — gaps · seals
+
+> account code `closing/period/checker` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.1` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `2` eb | Σ seal `11.1` eb |
+
+> net residual `-9.1` eb · seal/gap ratio `5.55` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `closing` · sub-root `6c9d747c-d9cf-8dea-96c8-90425c7f2d8d`
+- partition `closing` · sub-root `6c93f05f-3f4e-80a1-a7a4-88b807160764`
 - bond degree `15` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
 
 ## [[cloudflare]] bindings
 
@@ -40,15 +93,53 @@
 - `SAF-T:3.0.2 — period coding, regulatory audit trail` · banner
 - `SAF-T:3.0.2 (period coding, regulatory audit trail)` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·1 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `15` · sealed `0` · horo `2`
+- bond degree `15` · sealed `0` · horo `1`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `6`
 
 ## identity
 
-- uuid `6c9d747c-d9cf-8dea-96c8-90425c7f2d8d`
+- uuid `92d05df7-f270-8ccf-85d9-d87f96134544`
 - bonds in `5` · out `5`
 - trinity form·code·proof `1`·`1`·`1`
 - links `10` / `10`
@@ -60,4 +151,4 @@
 
 ---
 
-<sub>content-uuid `4c753d13-0f75-8e72-9463-e9e21263e99c` · framed by typography partition `closing` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d275748c-476e-882d-8e11-17eb12fceaf4` · framed by typography partition `closing` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

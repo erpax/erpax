@@ -25,6 +25,8 @@ import {
   noCloning,
   entanglement,
   entangle,
+  quantum2dHolds,
+  quantumInAllDimensions,
 } from '@/quantum'
 import {
   computeDiamond,
@@ -63,8 +65,12 @@ export interface ServerlessQuantumProperties {
   readonly bindingsSealed: boolean
   /** worker deployment face materialises on cloudflare + AI bindings. */
   readonly workerHosted: boolean
-  /** superposition normalises — Σ|c|² = 1 over the horo basis. */
+  /** superposition normalises — Σ|c|² = 1 over the horo basis (1D) and partition×horo grid (2D). */
   readonly superpositionHolds: boolean
+  /** 2D typography/partition × horo plane — Born · collapse · seal. */
+  readonly quantum2dHolds: boolean
+  /** all projection dimensions fold (1D·2D·3D·matrix·deployment). */
+  readonly allDimensionsHold: boolean
   /** matrix Merkle fold intact + measurement lands on a definite horo eigenstate. */
   readonly collapseHolds: boolean
   /** reciprocal entanglement whole + symmetric entangle() fix. */
@@ -143,12 +149,12 @@ export function workerHosted(cwd = process.cwd()): boolean {
   return faces.worker && cloudflareBindingFace(ai.type) === 'worker'
 }
 
-/** Born rule: superposed amplitudes balance at unity. */
+/** Born rule: superposed amplitudes balance at unity (1D horo + 2D partition×horo). */
 export const superpositionHolds = (): boolean => {
   const u = uniform()
   if (Math.abs(total(u) - 1) > 1e-9) return false
   const biased = superpose({ 1: 2, 2: 1, 4: 3 })
-  return Math.abs(total(biased) - 1) < 1e-9
+  return Math.abs(total(biased) - 1) < 1e-9 && quantum2dHolds()
 }
 
 /** Matrix collapse + superposition measurement to one eigenstate. */
@@ -200,6 +206,8 @@ export function serverlessQuantum(cwd = process.cwd()): ServerlessQuantumPropert
     bindingsSealed: bindingsSealed(cwd),
     workerHosted: workerHosted(cwd),
     superpositionHolds: superpositionHolds(),
+    quantum2dHolds: quantum2dHolds(),
+    allDimensionsHold: quantumInAllDimensions(cwd).ok,
     collapseHolds: collapseHolds(),
     entanglementHolds: entanglementHolds(),
     existenceSealed: existenceSealed(cwd),

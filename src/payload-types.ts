@@ -7768,6 +7768,47 @@ export interface BookableResource {
    */
   category?: string | null;
   /**
+   * Clinical device modality — wired to medical/device registry (LOINC outputs).
+   */
+  medicalModality?:
+    | (
+        | 'bp'
+        | 'oximeter'
+        | 'thermometer'
+        | 'glucometer'
+        | 'ecg'
+        | 'holter'
+        | 'fetal'
+        | 'xray'
+        | 'ct'
+        | 'mri'
+        | 'ultrasound'
+        | 'pet'
+        | 'centrifuge'
+        | 'analyzer'
+        | 'cassette'
+        | 'infusion'
+        | 'ventilator'
+        | 'dialysis'
+        | 'pacemaker'
+        | 'defibrillator'
+        | 'cautery'
+        | 'laparoscope'
+        | 'anesthesia'
+        | 'cgm'
+        | 'watch'
+        | 'cpap'
+        | 'spirometer'
+        | 'audiometer'
+        | 'ophthalmoscope'
+        | 'otoscope'
+        | 'endoscope'
+        | 'monitor'
+        | 'bed'
+        | 'ivpump'
+      )
+    | null;
+  /**
    * For room-like resources, the FM space this resource lives in.
    */
   space?: (string | null) | Space;
@@ -17776,7 +17817,7 @@ export interface Share {
 /**
  * Live registry of every cited published standard (IFRS / ISO / W3C / RFC / Directive / etc.) + per-tenant citation graph. Backs the erpax.standards.* MCP family with persistent storage. Standards-as-vortices (Law 27) + supersession trail (Law 28).
  *
- * — diamond-uuid: bc90ac31-6ac5-8796-94ba-82cfdaca2206
+ * — diamond-uuid: 4f68b62e-409e-843c-b6b3-2a2f2bff40be
  *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "standards".
@@ -18672,7 +18713,7 @@ export interface TransferPricingFile {
 /**
  * Per-tenant override layer above the platform-default localizations. Resolution order: tenant translation > mcp-tool-metadata > code default. Edit value.<locale> via admin UI; runtime resolver picks it up automatically (Payload i18n).
  *
- * — diamond-uuid: cf04a4ef-c31a-854f-b44b-736c4c65fc14
+ * — diamond-uuid: a321ca46-3ae8-85c8-85ba-51a43a103512
  *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "translations".
@@ -20839,6 +20880,7 @@ export interface BookableResourcesSelect<T extends boolean = true> {
   description?: T;
   kind?: T;
   category?: T;
+  medicalModality?: T;
   space?: T;
   fixedAsset?: T;
   capacity?: T;

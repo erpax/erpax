@@ -23,6 +23,7 @@
  */
 
 import type { CollectionConfig } from 'payload'
+import { MODALITIES } from '@/medical/device'
 import { standardCollectionHooks } from '@/standard/collection/hook'
 import { accountingCollectionAccess } from '@/auth'
 import { currencyField, statusField, notesField, auditFields } from '@/base/accounting/field'
@@ -63,10 +64,28 @@ const BookableResources: CollectionConfig = {
     },
     { name: 'category', type: 'text',
       admin: { description: 'Sub-category within kind (e.g. `executive_suite`, `cargo_van`, `5-axis_mill`).' } },
+    {
+      name: 'medicalModality',
+      type: 'select',
+      admin: {
+        description: 'Clinical device modality — wired to medical/device registry (LOINC outputs).',
+        condition: (data) => data?.kind === 'equipment' || data?.kind === 'bed',
+        components: { Field: '@/admin/ui/fields/MedicalModalityPickerField' },
+      },
+      options: MODALITIES.map((m) => ({ label: m, value: m })),
+    },
     { name: 'space', type: 'relationship', relationTo: 'spaces',
-      admin: { description: 'For room-like resources, the FM space this resource lives in.' } },
+      admin: {
+        description: 'For room-like resources, the FM space this resource lives in.',
+        components: { Field: '@/admin/ui/fields/MatrixBondField' },
+        custom: { atomPath: 'bookable/resources' },
+      } },
     { name: 'fixedAsset', type: 'relationship', relationTo: 'fixed-assets',
-      admin: { description: 'For tangible bookables (vehicle / equipment / machinery), the underlying IAS-16 asset row.' } },
+      admin: {
+        description: 'For tangible bookables (vehicle / equipment / machinery), the underlying IAS-16 asset row.',
+        components: { Field: '@/admin/ui/fields/MatrixBondField' },
+        custom: { atomPath: 'bookable/resources' },
+      } },
     { name: 'capacity', type: 'number', defaultValue: 1, min: 0,
       admin: { description: 'Concurrent occupancy (people for room, kg/m³ for storage, hours for time slot).' } },
     { name: 'unitOfCapacity', type: 'text', defaultValue: 'persons',

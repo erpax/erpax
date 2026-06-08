@@ -23,7 +23,21 @@
 
 - partition `maternity` · sub-root `58bb79ee-251f-82c1-95b5-d02c285caf75`
 - bond degree `12` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `12` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `1691cfe3-e15d-806e-98aa-d795bd57ed18` · framed by typography partition `maternity` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `7a4c7117-4526-88b3-af22-06ad0290e122` · framed by typography partition `maternity` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

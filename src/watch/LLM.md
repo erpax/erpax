@@ -3,15 +3,15 @@
 
 # watch
 
-path `watch` · uuid `1eb667a7-9864-8a8b-8b49-53c3b04d7ed8` · diamond `558e0c9a-37d8-865b-828d-75e0ba5091ce`
+path `watch` · uuid `1eb667a7-9864-8a8b-8b49-53c3b04d7ed8` · diamond `ae74de33-0d62-850b-aa66-3d7173c7f167`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti · exports watch · escapes —
-links `5/5` · folded `1` · bonds in `7` out `7`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·confidentiality·draw·landmarks·memories·stat·urologic · ← cohort·confidentiality·draw·landmarks·memories·stat·urologic
+neighbors → action·collapse·law·merge·sti · ← action·collapse·law·merge·sti
 analysis —
 law watch is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `b4dd4b32-b65f-8753-b063-d588af80a121` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `00375bc7-7bdb-87fa-9a8d-adf41cb889c2` · `pnpm readme` · `pnpm computed:check`</sub>

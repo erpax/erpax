@@ -3,8 +3,8 @@
 
 # alternative
 
-path `alternative` · uuid `3eaa8efe-d597-889a-94bd-1433ffd84392` · diamond `b5bdeb45-cbc1-8b26-a017-50fe7c577ad3`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `alternative` · uuid `5cb808e5-3545-8445-9ad2-d55b5cbf4492` · diamond `16e6e21e-e1eb-81f3-8eab-f9d2079b6a4a`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports headline·law · exports alternative · escapes —
 links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law an alternative is a variant of a referent, not an independent thing — it o
 
 ---
 
-<sub>content-uuid `b4edd8f5-b174-8761-a896-7130f8be468e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `14944412-02f6-8d80-a898-eabf239f668e` · `pnpm readme` · `pnpm computed:check`</sub>

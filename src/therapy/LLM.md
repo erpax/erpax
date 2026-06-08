@@ -3,15 +3,15 @@
 
 # therapy
 
-path `therapy` · uuid `a19dc180-dcc5-8a04-bd86-d6165a873d35` · diamond `876bbc7b-9fe9-85a9-bab5-5c3ae9baf762`
+path `therapy` · uuid `a19dc180-dcc5-8a04-bd86-d6165a873d35` · diamond `baa3d61a-0712-802a-8b3a-064b50c5c613`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·duplicate·law·medical·merge·occupational·physical·radiation·related·sti · exports therapy · escapes —
-links `10/10` · folded `1` · bonds in `5` out `5`
+links `10/10` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·harden·landmarks·memories·stat · ← cohort·harden·landmarks·memories·stat
+neighbors → collapse·duplicate·law·medical·merge·occupational·physical·radiation·related·sti · ← collapse·duplicate·law·medical·merge·occupational·physical·radiation·related·sti
 analysis —
 law therapy is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `6de3db7a-ebd1-8099-99f7-3d80fcfb949d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `05fa012c-7fa0-8f36-bd02-1ca4de0132e3` · `pnpm readme` · `pnpm computed:check`</sub>

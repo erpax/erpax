@@ -21,9 +21,9 @@
 
 ## typography graph
 
-- partition `chiropractic` · sub-root `ae65ae03-80e2-831e-ab7d-ad49d709b668`
+- partition `chiropractic` · sub-root `d34d20e6-3df7-8577-a876-50a474d77bab`
 - bond degree `12` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -33,6 +33,44 @@
 
 - `schema.org — the type vocabulary, collided to single words` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·8 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
 - bond degree `12` · sealed `1` · horo `8`
@@ -41,7 +79,7 @@
 
 ## identity
 
-- uuid `ae65ae03-80e2-831e-ab7d-ad49d709b668`
+- uuid `d34d20e6-3df7-8577-a876-50a474d77bab`
 - bonds in `4` · out `4`
 - trinity form·code·proof `1`·`0`·`0`
 - links `4` / `4`
@@ -53,4 +91,4 @@
 
 ---
 
-<sub>content-uuid `e74d16a5-dec4-83ce-be11-4bbeeac7c59f` · framed by typography partition `chiropractic` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `3b2b9206-5bc8-8924-afe7-c2c663e262fd` · framed by typography partition `chiropractic` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,8 +3,8 @@
 
 # direction
 
-path `direction` · uuid `d36aa8c8-7841-8adb-8f20-2825a82f28c7` · diamond `d0152294-fc60-84e7-b7ce-8fa44f85921b`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `direction` · uuid `e8f4beeb-f893-8c42-967f-a733ddef2f88` · diamond `1abaebb4-387b-884a-8ff0-a88b6413c4c0`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·how·law·merge·sti · exports direction · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law direction is one schema.org word, content-addressed; the same word collides 
 
 ---
 
-<sub>content-uuid `9ca97616-0016-8ed3-8052-84ebc9bd4330` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e2afb4da-1bee-80e9-8f7f-90895b3f179c` · `pnpm readme` · `pnpm computed:check`</sub>

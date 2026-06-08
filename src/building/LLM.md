@@ -3,8 +3,8 @@
 
 # building
 
-path `building` · uuid `6d12a113-eb54-8e0b-8ea1-5336bde92093` · diamond `b95ffbaf-a36d-8773-b7c6-1d34be30a983`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `building` · uuid `5ade275e-886b-86cf-8dd9-553a182dc00a` · diamond `1c3bf2d3-c729-81a6-b1f8-5743089afdf8`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·government·law·legislative·merge·sti · exports building · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law building is one schema.org word, content-addressed; the same word collides e
 
 ---
 
-<sub>content-uuid `3653d9be-299e-8a48-bf4a-7b1ec196de2b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `444e596d-29f3-88f9-b22f-4fa610a3d369` · `pnpm readme` · `pnpm computed:check`</sub>

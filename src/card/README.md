@@ -2,7 +2,7 @@
 
 # card
 
-> atom `card` · horo `7` `descent` · [[balance]] `1` · [[seal]] `0`
+> atom `card` · horo `7` `descent` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -19,13 +19,13 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
 
 ## typography graph
 
-- partition `card` · sub-root `ef9bb310-1a1c-8891-bb10-320a87c0520a`
-- bond degree `22` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- partition `card` · sub-root `666bb21b-aeef-866f-a66a-0620a968c665`
+- bond degree `0` · analysis neighbors —
+- graph root `1cef4f02-a3fa-83a5-8ea0-120b724ef456`
 
 ## [[cloudflare]] bindings
 
@@ -35,15 +35,53 @@
 
 - `schema.org — the type vocabulary, collided to single words` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unbalanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| not-held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| incomplete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·7 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `22` · sealed `0` · horo `7`
-- variance `0` · balanced `1` · trinity sum `2`
+- bond degree `0` · sealed `0` · horo `7`
+- variance `1` · balanced `0` · trinity sum `2`
 - bindings `0` · standards `1`
 
 ## identity
 
-- uuid `ef9bb310-1a1c-8891-bb10-320a87c0520a`
+- uuid `666bb21b-aeef-866f-a66a-0620a968c665`
 - bonds in `6` · out `6`
 - trinity form·code·proof `1`·`1`·`0`
 - links `6` / `6`
@@ -55,4 +93,4 @@
 
 ---
 
-<sub>content-uuid `a278f25f-4973-8dc6-bdf0-0759192036de` · framed by typography partition `card` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `1168da63-d420-8500-a403-c4a6b49571be` · framed by typography partition `card` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

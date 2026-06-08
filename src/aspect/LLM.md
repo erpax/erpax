@@ -3,8 +3,8 @@
 
 # aspect
 
-path `aspect` · uuid `507bfc11-c719-8eda-8850-2ced87d8ba1f` · diamond `c23d8936-b99f-838e-8232-6531d203a431`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `aspect` · uuid `0194a49a-0ced-8c4b-94a8-0c10aa6b6fe7` · diamond `6a9d2e8a-448b-84d7-bd50-7202cdf937d5`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports enumeration·has·health·law·review · exports aspect · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law aspect is one schema.org word, content-addressed; the same word collides eve
 
 ---
 
-<sub>content-uuid `a5816af7-8f8e-88c6-a803-6c955229c157` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a78085c9-6db9-80a1-9e5b-9aec5514c302` · `pnpm readme` · `pnpm computed:check`</sub>

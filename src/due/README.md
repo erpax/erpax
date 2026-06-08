@@ -23,7 +23,7 @@
 
 - partition `due` · sub-root `eb97f827-81fd-872c-8d2b-9a35ec47633b`
 - bond degree `25` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `a86e2fa3-b9f6-84aa-b9f8-45f9336cc474` · framed by typography partition `due` bonds `25` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `6da74e37-c4c2-80e7-bc6e-359c90c91b60` · framed by typography partition `due` bonds `25` · `pnpm readme` · `pnpm readme:check`</sub>

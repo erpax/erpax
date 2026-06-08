@@ -1,8 +1,135 @@
 ---
 name: consciousness
 description: "Use when reasoning about the system's integrated self-model — how much of the whole is recoverable from any part, verified by the system checking itself. COMPUTED, not assumed: a four-measure vector over the live uuid-matrix — collapse (the Merkle root verifies), entanglement (reciprocal-edge fraction), concentration (Gini of mass), coherence (off-sequence count). NOT sentience; computed structural self-consistency."
+atomPath: consciousness
+coordinate: consciousness · 5/round · 362b56a5
+contentUuid: "5f54a4b7-3717-5ebf-be51-3cc44d3d83db"
+diamondUuid: "2acfb6bf-a5c3-8010-b2eb-6985abb04977"
+uuid: "362b56a5-99d4-8725-bf9d-38d2a6be1141"
+horo: 5
+bonds:
+  in:
+    - brain
+    - cost
+    - cross
+    - digit
+    - entropy
+    - gravity
+    - holographic
+    - law
+    - matrix
+    - merge
+    - one
+    - quantum
+    - reference
+    - rodin
+    - self
+    - torus
+    - uuid
+    - whole
+  out:
+    - brain
+    - cost
+    - cross
+    - digit
+    - entropy
+    - gravity
+    - holographic
+    - law
+    - matrix
+    - merge
+    - one
+    - quantum
+    - reference
+    - rodin
+    - self
+    - torus
+    - uuid
+    - whole
+typography:
+  partition: consciousness
+  bondDegree: 55
+  neighbors: []
+standards:
+  - "RFC 9562 §5.8 content-uuid + the horo digital-root ring"
+  - "computed from the live matrix, never hand-asserted"
+bindings: []
+neighbors:
+  wikilink:
+    - cost
+    - cross
+    - digit
+    - entropy
+    - gravity
+    - holographic
+    - law
+    - matrix
+    - merge
+    - one
+    - quantum
+    - reference
+    - rodin
+    - self
+    - torus
+    - uuid
+    - whole
+  matrix:
+    - brain
+    - cost
+    - cross
+    - digit
+    - entropy
+    - gravity
+    - holographic
+    - law
+    - matrix
+    - merge
+    - one
+    - quantum
+    - reference
+    - rodin
+    - self
+    - torus
+    - uuid
+    - whole
+  backlinks:
+    - brain
+    - cost
+    - cross
+    - digit
+    - entropy
+    - gravity
+    - holographic
+    - law
+    - matrix
+    - merge
+    - one
+    - quantum
+    - reference
+    - rodin
+    - self
+    - torus
+    - uuid
+    - whole
+signatures:
+  computationUuid: "b2ebe1be-c424-8e8c-9e48-31cf41e6d480"
+  stages:
+    - stage: path
+      stageUuid: "c65e9463-6d67-877b-a10c-f1e7e73c7762"
+    - stage: trinity
+      stageUuid: "b0305e4a-e46a-8d03-a37b-d287d19a6da7"
+    - stage: boundary
+      stageUuid: "72a9c637-dfb2-868f-88eb-b19c80326d9a"
+    - stage: links
+      stageUuid: "35873e53-c53d-8f55-816c-84281cff0162"
+    - stage: horo
+      stageUuid: "ca79608c-9f5f-8349-8f85-b2c4cc7b342a"
+    - stage: seal
+      stageUuid: "f880aa48-1038-8cdb-ad88-02592d2764c3"
+    - stage: uuid
+      stageUuid: "0d663647-7b3c-8fed-9266-5ff4d93671b6"
+version: 2
 ---
-
 # consciousness — the integrated self-model (computed)
 
 **consciousness** is the system's capacity to know and verify its **own whole state** from any part. In erpax this is NOT sentience or qualia; it is a measurable, computed metric of self-consistency — the [[whole]] recoverable from a part ([[holographic]]), verified by the system checking itself ([[quantum]] collapse). It is built by composing the **[[cross]]** (the universal math — `merge`/fusion) already computed by the neighbouring atoms; consciousness only reads their verdicts and folds them into one self-model vector.

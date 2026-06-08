@@ -3,15 +3,15 @@
 
 # research
 
-path `agent/research` · uuid `d4d6de7f-c43c-89df-90a7-a6439ccfa4f4` · diamond `08280f1d-8780-87b1-ba14-1aa70dbe4c4f`
+path `agent/research` · uuid `cb7a0ecc-fce0-8e62-957c-ae004c9a3daf` · diamond `43a142b0-01bf-8b74-87f3-03ff0dc7bf9c`
 horo `1` `base` · trinity `1·1·1` · sealed `0`
 imports @/agent/sync·@/cross·@/integrity·@/receipt·@/types/auth·@/uuid/share · exports FindingKind·async·const·function·interface · escapes —
-links `18/18` · folded `1` · bonds in `61` out `76`
+links `18/18` · folded `1` · bonds in `31` out `31`
 faces worker·plugin·pwa `1·0·0`
-neighbors → accept·access·account·accounting·agent·agent·akashic·anchor·angel·audit·balance·breath·broker·civilization·collapse·collapse·consultant·consulting·cost·cost·cross·design·development·drone·email·entanglement·entropy·entropy·entry·entry·expense·feedback·gate·harmony·history·identity·identity·interview·law·law·law·law·law·literature·localize·matrix·mcp·merge·merge·merge·oid·organization·plugins·profane·project·proof·proof·quantum·receipt·receipt·recover·research·research·research·reset·sacred·sandbox·science·security·self·tamper·tenant·user·uuid·zeropoint·zeropoint · ← accept·access·account·accounting·agent·akashic·anchor·angel·audit·balance·breath·broker·civilization·collapse·consultant·consulting·cost·cross·design·development·drone·email·entanglement·entropy·entry·expense·feedback·gate·harmony·history·identity·interview·law·literature·localize·matrix·mcp·merge·oid·organization·plugins·profane·project·proof·quantum·receipt·recover·research·research·research·reset·sacred·sandbox·science·security·self·tamper·tenant·user·uuid·zeropoint
+neighbors → accounting·akashic·anchor·angel·breath·civilization·collapse·consultant·consulting·design·development·drone·feedback·history·interview·law·literature·localize·merge·oid·organization·profane·project·proof·research·research·research·sacred·science·uuid·zeropoint · ← accounting·akashic·anchor·angel·breath·civilization·collapse·consultant·consulting·design·development·drone·feedback·history·interview·law·literature·localize·merge·oid·organization·profane·project·proof·research·research·research·sacred·science·uuid·zeropoint
 analysis agent
 law an [[agent]] IS a [[user]] (the actor-merge), so a finding is content-addressed (same find ⇒ one row) and only a tenant-admin approver may issue the allow-[[receipt]] that lets it LAND — the gate chains into the uuid-linked [[audit]], tamper-evident end to end.
 
 ---
 
-<sub>content-uuid `6214f2df-3c17-8d88-857b-81e7daadd568` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b126177e-7cd2-835c-af96-5d5acf9cd6db` · `pnpm readme` · `pnpm computed:check`</sub>

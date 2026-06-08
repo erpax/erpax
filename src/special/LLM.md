@@ -3,15 +3,15 @@
 
 # special
 
-path `special` · uuid `8b2d10f0-b2b4-88bc-8da2-39fd470c9ed3` · diamond `85342be2-6184-8430-aef2-d38b5e503cc5`
+path `special` · uuid `8b2d10f0-b2b4-88bc-8da2-39fd470c9ed3` · diamond `fa4fa0ec-3c6f-8a1c-90c4-bfb9b7202719`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports announcement·collapse·commitments·hours·law·merge·opening·specification·sti·usage·vehicle · exports special · escapes —
-links `11/11` · folded `1` · bonds in `6` out `6`
+links `11/11` · folded `1` · bonds in `11` out `11`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·global·landmarks·memories·stat·statistic · ← cohort·global·landmarks·memories·stat·statistic
+neighbors → announcement·collapse·commitments·hours·law·merge·opening·specification·sti·usage·vehicle · ← announcement·collapse·commitments·hours·law·merge·opening·specification·sti·usage·vehicle
 analysis —
 law special is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `702ea34f-47f3-8e52-9c55-8b3835fbd12e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `20502c1a-e4ee-8c58-9438-98bf8eff7ff3` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # zoo
 
-path `zoo` · uuid `9f6f7bab-a7d9-8e9d-9ae7-a3e02c88d261` · diamond `7c695971-9e5e-8cb1-af7d-1c1807a1bdca`
+path `zoo` · uuid `9f6f7bab-a7d9-8e9d-9ae7-a3e02c88d261` · diamond `48a6f6c5-dacc-833e-bb04-c80c22ff3f3f`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports zoo · escapes —
-links `2/2` · folded `1` · bonds in `0` out `0`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
+neighbors → law·thing · ← law·thing
 analysis —
 law zoo is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `620c2bc4-4c1e-839b-9661-79e4b4596fdc` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7085af82-17a5-8273-9a45-779a8c31d46c` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # tillage
 
-path `tillage` · uuid `489a12c7-24fc-8f8b-8d49-97dff9996164` · diamond `42c139e9-93d0-85e5-9892-edd51b86b078`
+path `tillage` · uuid `489a12c7-24fc-8f8b-8d49-97dff9996164` · diamond `7f55a66c-c166-8e3c-8398-293211b56c21`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports agriculture·balance·compost·cultivation·law·mulch·mycorrhizae·planting·sequence·soil · exports tillage · escapes —
-links `24/24` · folded `1` · bonds in `5` out `5`
+links `24/24` · folded `1` · bonds in `13` out `13`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat·warning · ← cohort·landmarks·memories·stat·warning
+neighbors → agriculture·balance·compost·covercrop·cultivation·law·moisture·mulch·mycorrhizae·permaculture·planting·sequence·soil · ← agriculture·balance·compost·covercrop·cultivation·law·moisture·mulch·mycorrhizae·permaculture·planting·sequence·soil
 analysis —
 law tillage intensity is the soil-disturbance dial — a short-term seedbed/weed win debited against long-term [[soil]] structure, biology, and [[mycorrhizae]]; the central [[balance]] of regenerative practice.
 
 ---
 
-<sub>content-uuid `8fc1c2f6-07dc-8ab8-9e78-78446dcda29f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ab256679-d515-8f54-8de9-7000d60dbc69` · `pnpm readme` · `pnpm computed:check`</sub>

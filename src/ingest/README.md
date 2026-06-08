@@ -25,7 +25,21 @@
 
 - partition `ingest` · sub-root `6ebd3dcb-1fa7-81e9-9d87-b9fa1de4b0bc`
 - bond degree `40` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `idempotent upsert by content-address (re-runnable, no cursor needed)` · banner
+
+## analytics
+
+- bond degree `40` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -41,4 +55,4 @@
 
 ---
 
-<sub>content-uuid `be84b1e1-8483-8501-833d-8524d1622e82` · framed by typography partition `ingest` bonds `40` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c3db4d25-2be7-8cde-a1ed-5b2037d64d37` · framed by typography partition `ingest` bonds `40` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,15 +3,15 @@
 
 # uktrust
 
-path `uktrust` · uuid `bce6e60a-fbdc-810a-bc93-53779e22f006` · diamond `a864d10e-eb8f-8119-91fb-7df60946315e`
+path `uktrust` · uuid `bce6e60a-fbdc-810a-bc93-53779e22f006` · diamond `6ccdc897-923a-8e8d-b54a-550e35805921`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports uktrust · escapes —
-links `4/4` · folded `1` · bonds in `5` out `5`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·collection·landmarks·memories·stat · ← cohort·collection·landmarks·memories·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law uktrust is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `54b5472a-51b1-8e88-a796-351dd993ade8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `54a3a50d-ba6e-8210-b936-9e12b0cde11b` · `pnpm readme` · `pnpm computed:check`</sub>

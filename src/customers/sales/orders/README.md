@@ -2,9 +2,11 @@
 
 # orders
 
-> atom `customers/sales/orders` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `customers/sales/orders` · horo `2` `share` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `customers/sales/orders` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,11 +23,58 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+
+### collapse
+
+- `balance:conserved`
+- `law:a sales order progresses only forward through its O2C lifecycle, and fulfilled and invoiced quantities can never exceed the confirmed order-line quantities.`
+- `seal:unsealed`
+- `trigger:Use when recording or progressing a customer order — from quote conversion through confirmation, partial fulfillment, invoicing, and closure; track order lines, delivery dates, shipping and billing addresses, and fulfillment progress. The O2C customer-order register (UBL-2.1 / UN-EDIFACT ORDERS / Peppol BIS-3.0), distinct from purchase-orders (P2P).`
+- `trigger:a sales order progresses only forward through its O2C lifecycle, and fulfilled and invoiced quantities can never exceed the confirmed order-line quantities.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `495da4bd-22b0-822c-add4-d26aa00bc8a6` · `aa321512-3dc3-89ed-83ae-30fb48d3e3e1`
+- content uuids `d750c328-fc79-86f2-b4d2-aa9be5082d54` · `f8648254-71ae-848a-ad72-523311626076`
+
+## [[entropy]] — gaps · seals
+
+> account code `customers/sales/orders` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.2` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `1` eb | Σ seal `11.2` eb |
+
+> net residual `-10.2` eb · seal/gap ratio `11.2` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `customers` · sub-root `85792e9b-a9f4-8af5-a801-0895f2af65cf`
-- bond degree `157` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- partition `customers` · sub-root `83c78df0-4d66-80df-ab25-5ba350869cf1`
+- bond degree `96` · analysis neighbors —
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
 
 ## [[cloudflare]] bindings
 
@@ -48,7 +97,6 @@
 - `IFRS IFRS-15 §31 transfer-of-control` · banner
 - `IFRS-15` · collection
 - `INCOTERMS-2020` · catalogue
-- `ISO-19011:2018 audit-trail` · banner
 - `ISO-9735` · catalogue
 - `Peppol-BIS-3.0` · collection
 - `Peppol-BIS-3.0 Order ordering-process` · banner
@@ -60,24 +108,62 @@
 - `US-GAAP ASC-606 revenue-from-contracts` · banner
 - `WCO-HS` · catalogue
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·2 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `157` · sealed `1` · horo `7`
+- bond degree `96` · sealed `0` · horo `2`
 - variance `0` · balanced `1` · trinity sum `3`
-- bindings `0` · standards `26`
+- bindings `0` · standards `25`
 
 ## identity
 
-- uuid `321e385f-eb0d-80a3-998d-dd6c4e018486`
-- bonds in `48` · out `51`
+- uuid `52ced0bf-a62d-8a42-b754-a5998e9ec5e5`
+- bonds in `19` · out `19`
 - trinity form·code·proof `1`·`1`·`1`
 - links `5` / `5`
 - folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `670bfbf6-2861-8c44-a161-190053818909` · framed by typography partition `customers` bonds `157` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `eacb1126-bef0-8bed-b9ba-d771da959d73` · framed by typography partition `customers` bonds `96` · `pnpm readme` · `pnpm readme:check`</sub>

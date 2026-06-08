@@ -3,8 +3,8 @@
 
 # cancelled
 
-path `cancelled` · uuid `1eb00c39-ddea-8774-84c5-5840d49dea45` · diamond `0eaa93bf-7694-8513-a282-9cfe1761bc6f`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `cancelled` · uuid `f3ecdc5b-710e-839c-bec8-87ea4a6fcdf1` · diamond `490c8660-fdd6-8041-8f94-5c5b317c3e9e`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports cancelled · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law cancelled is one schema.org word, content-addressed; the same word collides 
 
 ---
 
-<sub>content-uuid `acb906b6-0923-8f2b-9586-e0a37cd1ff1b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1635b1a4-1f8f-8a8d-abb0-5cf7fef5fdce` · `pnpm readme` · `pnpm computed:check`</sub>

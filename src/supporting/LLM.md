@@ -8,10 +8,10 @@ horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·data·law·merge·sti · exports supporting · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat·testing · ← cohort·landmarks·memories·stat·testing
+neighbors → collapse·data·law·merge·sti · ← collapse·data·law·merge·sti
 analysis —
 law supporting is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `44d926c9-b4f8-8c37-9941-f10af7f5c8ee` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7255ef9f-25fd-803e-8bbd-4bd7e10a227c` · `pnpm readme` · `pnpm computed:check`</sub>

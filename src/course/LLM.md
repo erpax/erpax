@@ -3,8 +3,8 @@
 
 # course
 
-path `course` · uuid `674c780a-25b3-8ec0-802e-dfd8cc116964` · diamond `4779f0f6-6cc9-88fe-9e67-53feb868d2b3`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `course` · uuid `f2d59556-2a19-86a3-895e-14e1279062aa` · diamond `2c7c14e7-3a45-8529-8607-1a2275a3b80c`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports code·exercise·golf·has·instance·law·mode·prerequisites·schedule·workload · exports course · escapes —
 links `10/10` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law course is one schema.org word, content-addressed; the same word collides eve
 
 ---
 
-<sub>content-uuid `4d59b142-5295-8037-b5ab-cfd2e99d32c4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `762c7a58-0dcf-8644-86a4-1040022b2694` · `pnpm readme` · `pnpm computed:check`</sub>

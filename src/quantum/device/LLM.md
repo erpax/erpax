@@ -3,15 +3,15 @@
 
 # device
 
-path `quantum/device` · uuid `d018e48b-9af3-8f0e-bee8-8d228a17d7a0` · diamond `3235af90-8f99-8011-98d2-1f8aa0c00495`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
-imports analog·biofield·biometric·coherence·device·finality·law·measurement·quantum·reality·sensory·snapshot · exports device · escapes —
-links `25/25` · folded `1` · bonds in `17` out `18`
+path `quantum/device` · uuid `a91918b9-1f5d-83ad-b272-b8b777c3d1f6` · diamond `7e906d47-f1dc-8998-a3c3-b2b373bac27b`
+horo `8` `crest` · trinity `1·1·1` · sealed `1`
+imports @/integrity·@/path · exports DetectableSignal·MedicalSignal·const·function · escapes —
+links `37/37` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `1·0·0`
-neighbors → analog·available·bindings·biofield·biometric·coherence·device·finality·law·law·measurement·medical·purpose·reality·sensory·snapshot·stack·uses · ← analog·available·bindings·biofield·biometric·coherence·device·finality·law·measurement·medical·purpose·reality·sensory·snapshot·stack·uses
+neighbors → available·biometric·device·device·law·medical·purpose·stack·uses · ← available·biometric·device·device·law·medical·purpose·stack·uses
 analysis —
 law a device may only collapse what is physically real — the continuous [[analog]] field is measurable (rPPG/HRV), the [[biofield]] is not, so a device must never report a reading it cannot sense. Capture stays on the edge and only numbers cross the boundary (the raw stream never leaves the device); each reading is an append-only content-addressed [[snapshot]], final the moment it is taken.
 
 ---
 
-<sub>content-uuid `ce505742-2043-8164-95a8-9383c85739b5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `661c3de4-9112-8a7c-b280-f0faccdafce8` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # upon
 
-path `upon` · uuid `c98d7093-9257-8fb2-b62b-b198f5833f7a` · diamond `2d7b4e24-6500-8cb3-8eae-9016d9fd0d2e`
+path `upon` · uuid `c98d7093-9257-8fb2-b62b-b198f5833f7a` · diamond `c3f0d5a1-7cac-85a0-8b26-516b9cef475e`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·completion·law·merge·salary·sti · exports upon · escapes —
-links `6/6` · folded `1` · bonds in `8` out `8`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → all·cohort·conference·id·marine·mass·progression·spouse · ← all·cohort·conference·id·marine·mass·progression·spouse
+neighbors → collapse·completion·law·merge·salary·sti · ← collapse·completion·law·merge·salary·sti
 analysis —
 law upon is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `d488eff3-9c6a-87c4-8781-0fb56bb0c288` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `80f9aace-4ee2-853d-a5ee-b40d89afab4d` · `pnpm readme` · `pnpm computed:check`</sub>

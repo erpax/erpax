@@ -23,7 +23,35 @@
 
 - partition `legal` · sub-root `1fd2f1ff-ccee-87e0-8d80-12345443fed8`
 - bond degree `57` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `COSO-2013` · catalogue
+- `EU-2016/679` · catalogue
+- `IAS-34` · catalogue
+- `IFRS-3` · catalogue
+- `ILO-C100` · catalogue
+- `ISO-17442-1` · catalogue
+- `ISO-37000` · catalogue
+- `ISO-37301` · catalogue
+- `PCAOB-AS-2201` · catalogue
+- `SAF-T` · catalogue
+- `schema.org — the type vocabulary, collided to single words` · banner
+- `SOX` · catalogue
+- `US-CTA-2021` · catalogue
+- `US-GAAP` · catalogue
+- `XBRL` · catalogue
+
+## analytics
+
+- bond degree `57` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `15`
 
 ## identity
 
@@ -39,4 +67,4 @@
 
 ---
 
-<sub>content-uuid `98dd3e94-2296-8844-8670-637c92aad543` · framed by typography partition `legal` bonds `57` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `9d4ab9e2-0b1c-83b6-ac00-9e0edb038c3c` · framed by typography partition `legal` bonds `57` · `pnpm readme` · `pnpm readme:check`</sub>

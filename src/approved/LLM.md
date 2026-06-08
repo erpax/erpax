@@ -3,8 +3,8 @@
 
 # approved
 
-path `approved` · uuid `412eeac3-7731-8050-8c66-c1f2c8f376c9` · diamond `edfa4d22-6ecf-8698-a16f-5685af5de2fe`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `approved` · uuid `7692544f-c780-820c-9e9c-a0103f7ed57c` · diamond `732a1d05-abb8-80d0-9942-e99d0e672938`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports audit·fields·status · exports approved · escapes —
 links `3/3` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `2addfece-c41e-804a-9e25-e207ebefc298` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a796f5b3-21e7-8262-a324-1aec6d82fdd4` · `pnpm readme` · `pnpm computed:check`</sub>

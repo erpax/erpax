@@ -2,9 +2,11 @@
 
 # classifications
 
-> atom `held/for/sale/classifications` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `held/for/sale/classifications` · horo `2` `share` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `held/for/sale/classifications` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,15 +23,127 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `law:classifying an asset held-for-sale (IFRS 5 §6, sale highly-probable within 12 months) triggers §15 remeasurement to the lower of carrying amount and FV−CTS, suspends depreciation, and posts a [[journal/entries]] [[entry]] that keeps the [[accounting]] [[balance]] across a [[horo]] disposal ring.`
+- `seal:unsealed`
+- `trigger:Use when classifying a non-current asset, disposal group, or discontinued operation as held-for-sale under IFRS 5 §6 — triggers §15 remeasurement to lower of carrying amount and fair-value-less-costs-to-sell, depreciation suspended, separate balance-sheet presentation, gain/loss on disposal. The held-for-sale-classifications IFRS 5 event collection.`
+- `trigger:classifying an asset held-for-sale (IFRS 5 §6, sale highly-probable within 12 months) triggers §15 remeasurement to the lower of carrying amount and FV−CTS, suspends depreciation, and posts a [[journal/entries]] [[entry]] that keeps the [[accounting]] [[balance]] across a [[horo]] disposal ring.`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `302605cd-8542-8f95-9ff4-7774019d1033` · `b2ec9de6-62a0-8789-b99e-a921618e9b12` · `e67dd7ce-667a-845d-8b26-0a816dc1c071`
+- content uuids `88a296d1-0096-8ce4-8b43-6009b768092f` · `8e57981b-f599-8b8b-b0ae-959f29b5b92b` · `a479d54f-ae5a-8ee8-bdb6-3e07802cec8f`
+
+## [[entropy]] — gaps · seals
+
+> account code `held/for/sale/classifications` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.2` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `2` eb | Σ seal `11.2` eb |
+
+> net residual `-9.2` eb · seal/gap ratio `5.6` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `held` · sub-root `1ca92b43-e8f4-8dba-bcbb-6a439add8841`
+- partition `held` · sub-root `36bfd639-06f5-8f8a-8a18-cfb6c9120bd8`
 - bond degree `40` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `IFRS IFRS-13 fair-value-input-hierarchy` · banner
+- `IFRS IFRS-5 §15 measurement-lower-of-cv-and-fv-less-cts` · banner
+- `IFRS IFRS-5 §25 depreciation-suspended` · banner
+- `IFRS IFRS-5 §31-§40 discontinued-operations-presentation` · banner
+- `IFRS IFRS-5 §6-§9 classification-criteria` · banner
+- `IFRS-13` · catalogue
+- `IFRS-5` · catalogue
+- `ISO-4217:2015 currency-codes` · banner
+- `ISO-8601-1:2019 date-time classification-date` · banner
+- `SOX §404 internal-controls` · banner
+- `US-GAAP` · catalogue
+- `US-GAAP ASC-205-20 discontinued-operations` · banner
+- `US-GAAP ASC-360-10 long-lived-assets-held-for-sale` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·2 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `40` · sealed `0` · horo `2`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `13`
 
 ## identity
 
-- uuid `e0ceb759-08e4-87a3-94b3-8a0f9a24b5f5`
+- uuid `e5fdd131-f7fd-80eb-aec9-8e1236ec23f4`
 - bonds in `13` · out `13`
 - trinity form·code·proof `1`·`1`·`1`
 - links `17` / `17`
@@ -37,8 +151,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `62de6d4c-abb3-8262-ac78-558e68419eda` · framed by typography partition `held` bonds `40` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `6d797f3a-7f97-865a-a72f-aabfa004ea67` · framed by typography partition `held` bonds `40` · `pnpm readme` · `pnpm readme:check`</sub>

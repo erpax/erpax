@@ -3,15 +3,15 @@
 
 # tourist
 
-path `tourist` · uuid `5b81fa0b-36de-827d-887e-d7f027d7c8f5` · diamond `9da7e1fd-032b-8739-91f0-b7999c1ac0fc`
+path `tourist` · uuid `5b81fa0b-36de-827d-887e-d7f027d7c8f5` · diamond `6d8a8174-c2e2-807d-8f52-b3c516103d33`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports attraction·center·collapse·destination·information·law·merge·sti·trip·type · exports tourist · escapes —
-links `10/10` · folded `1` · bonds in `9` out `9`
+links `10/10` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·accounting·facility·holographic·id·landmarks·progression·spouse·tour · ← access·accounting·facility·holographic·id·landmarks·progression·spouse·tour
+neighbors → attraction·center·collapse·destination·information·law·merge·sti·trip·type · ← attraction·center·collapse·destination·information·law·merge·sti·trip·type
 analysis —
 law tourist is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `672f6733-25f7-832d-aabf-8779b0b5e36c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `df1d1ab2-c34f-80ee-9836-98ea08dff755` · `pnpm readme` · `pnpm computed:check`</sub>

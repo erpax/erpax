@@ -3,15 +3,15 @@
 
 # un
 
-path `un` · uuid `70c7aba9-a797-8bf7-84e1-4304d9dfb4ae` · diamond `dbd33889-2882-866a-a7b1-434c2832e082`
+path `un` · uuid `70c7aba9-a797-8bf7-84e1-4304d9dfb4ae` · diamond `128e096f-864e-8d4b-bf90-c89edd940080`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·register·sti · exports un · escapes —
-links `6/6` · folded `1` · bonds in `4` out `4`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → action·collapse·law·merge·register·sti · ← action·collapse·law·merge·register·sti
 analysis —
 law the un- prefix inverts its action — applying it twice returns the original state (an involution).
 
 ---
 
-<sub>content-uuid `5e1c96ec-f8ee-8a45-b104-4f0224df830d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0f601553-eb47-8440-bad9-139d00087e6e` · `pnpm readme` · `pnpm computed:check`</sub>

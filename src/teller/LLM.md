@@ -3,15 +3,15 @@
 
 # teller
 
-path `teller` · uuid `59adb2ed-0c12-85c5-a2ee-02c2182e67bf` · diamond `2aed131f-6d33-8f9c-bdb4-f132db1fb2ce`
+path `teller` · uuid `59adb2ed-0c12-85c5-a2ee-02c2182e67bf` · diamond `365aa46b-c87c-857c-80ee-a77b3cf4d1a3`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports automated·collapse·law·merge·sti · exports teller · escapes —
-links `5/5` · folded `1` · bonds in `9` out `9`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → clip·food·homeopathic·landmarks·lend·length·mass·related·segments · ← clip·food·homeopathic·landmarks·lend·length·mass·related·segments
+neighbors → automated·collapse·law·merge·sti · ← automated·collapse·law·merge·sti
 analysis —
 law teller is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `622921d9-5702-8e58-ae4b-e918894678a1` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4921c7a7-95d1-85f5-89ac-f4d3cc8a5458` · `pnpm readme` · `pnpm computed:check`</sub>

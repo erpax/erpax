@@ -3,15 +3,15 @@
 
 # standards
 
-path `taxing/jurisdictions/reporting/standards` · uuid `350d7c15-cd02-845b-88fe-43153a762a7d` · diamond `96b004e6-14c0-8886-bd67-4346aa64a968`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+path `taxing/jurisdictions/reporting/standards` · uuid `e7e3a4cf-4f9a-8964-ba75-b0ddabbc2ff9` · diamond `85561254-332c-84e8-87dd-eed529df4424`
+horo `4` `weave` · trinity `1·1·1` · sealed `0`
 imports @/role/based/access · exports const · escapes —
-links `1/1` · folded `1` · bonds in `32` out `32`
+links `1/1` · folded `1` · bonds in `19` out `19`
 faces worker·plugin·pwa `0·0·0`
-neighbors → 38·action·active·age·approved·attrition·cardiovascular·create·deleted·diet·driving·entropy·equals·fertility·followup·funnel·imperial·issn·learning·manufacturing·measurement·opinion·participant·preparation·rating·representation·researcher·sentiment·storage·text·translator·western · ← 38·action·active·age·approved·attrition·cardiovascular·create·deleted·diet·driving·entropy·equals·fertility·followup·funnel·imperial·issn·learning·manufacturing·measurement·opinion·participant·preparation·rating·representation·researcher·sentiment·storage·text·translator·western
+neighbors → accounting·agriculture·analytics·api·certification·factory·folder·grade·identity·law·organic·proof·reference·skills·sourced·standard·topography·truth·vocabulary · ← accounting·agriculture·analytics·api·certification·factory·folder·grade·identity·law·organic·proof·reference·skills·sourced·standard·topography·truth·vocabulary
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `f35963ea-a52a-8835-808d-526debbad07c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `eb9ffa07-d4a6-8177-aecf-4af9e323c05a` · `pnpm readme` · `pnpm computed:check`</sub>

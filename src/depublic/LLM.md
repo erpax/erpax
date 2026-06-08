@@ -3,8 +3,8 @@
 
 # depublic
 
-path `depublic` · uuid `0066bc08-575a-8231-93f8-60f9ac4aa84d` · diamond `7014ebfe-1951-8df1-b3c3-e96900b75827`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `depublic` · uuid `1b95c592-1c62-8c6a-9df5-0f0f543b7da6` · diamond `23cdff59-fb39-86f7-bea9-fdab345d86d0`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports depublic · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law depublic is one schema.org word, content-addressed; the same word collides e
 
 ---
 
-<sub>content-uuid `946254f0-8076-8c5d-8853-4aed6d8c160f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1b609929-2336-8ecf-9f63-5d7901465ed1` · `pnpm readme` · `pnpm computed:check`</sub>

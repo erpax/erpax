@@ -3,8 +3,8 @@
 
 # memos
 
-path `invoices/credit/memos` · uuid `6f223d31-3170-8474-a3bf-7e9d070699b1` · diamond `5ad18b5a-4b70-86ec-b07b-f3baf0a8423e`
-horo `1` `base` · trinity `1·1·1` · sealed `1`
+path `invoices/credit/memos` · uuid `5e760ae0-037a-8836-9baa-8e8957a1266b` · diamond `5f2640cf-1218-877c-bc6d-1a2cf527c314`
+horo `1` `base` · trinity `1·1·1` · sealed `0`
 imports @/audit/trail/after/change·@/auth·@/auto/populate/created/by·@/auto/populate/tenant·@/auto/set/timestamp·@/base/accounting/field·@/enforce/segregation/of/duty·@/utility · exports default · escapes —
 links `6/6` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `e3f9c820-b1bd-8489-bdf9-2325bf7f8620` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6574fe7b-3920-8256-8dff-10c10ce59b9f` · `pnpm readme` · `pnpm computed:check`</sub>

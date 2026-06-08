@@ -3,15 +3,15 @@
 
 # snapshot
 
-path `snapshot` · uuid `63e55f02-ff14-8913-b307-299f7f9114ee` · diamond `fcd3ca31-86fa-8870-ba47-8fe1563871cb`
+path `snapshot` · uuid `63e55f02-ff14-8913-b307-299f7f9114ee` · diamond `d9c145b8-4bb1-86c5-a4d8-830d3dff72a2`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports audio·collapse·image·law·merge·object·sti·video · exports snapshot · escapes —
-links `8/8` · folded `1` · bonds in `5` out `5`
+links `8/8` · folded `1` · bonds in `33` out `34`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·guarantee·landmarks·memories·stat · ← cohort·guarantee·landmarks·memories·stat
+neighbors → akashic·atom·audio·biometric·collapse·deploy·device·emr·file·finality·folded·fs·github·image·law·law·literature·love·memory·merge·merge·number·object·reality·record·reverse·snapshot·sti·stream·sync·trinity·uuid·versions·video · ← akashic·atom·audio·biometric·collapse·deploy·device·emr·file·finality·folded·fs·fs·github·image·law·literature·love·memory·merge·number·object·reality·record·reverse·snapshot·sti·stream·sync·trinity·uuid·versions·video
 analysis —
 law snapshot is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `b583d069-3feb-8893-bcc3-1761997a6cc5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5ae060f7-643b-8a93-902b-ea692d33e723` · `pnpm readme` · `pnpm computed:check`</sub>

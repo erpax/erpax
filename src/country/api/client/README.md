@@ -2,9 +2,11 @@
 
 # client
 
-> atom `country/api/client` · horo `8` `crest` · [[balance]] `1` · [[seal]] `0`
+> atom `country/api/client` · horo `2` `share` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `country/api/client` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -15,17 +17,67 @@
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
 | [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
 | [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[boundary]]/escape `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `law:every official-[[api]] call returns one `{ ok, data?, error?, source }` shape with `source` attributing the answering authority, and the EU fallback chain resolves national→pan-EU to the first success — so the [[country]] caller branches on one shape regardless of publisher or auth pattern.`
+- `seal:unsealed`
+- `trigger:Use when calling the public, no-auth and key-based official country APIs (VIES, Companies House, KvK, Brønnøysund, INSEE, BG Търговски Регистър, Peppol, EU/OFAC sanctions, БНБ/ECB FX) and resolving them through the EU national→pan-EU fallback chains.`
+- `trigger:`checkVies` · `lookupCompaniesHouse` · `lookupBrreg` · `lookupBnbExchangeRate` / `lookupEcbExchangeRate` · `lookupEuFallbackRate` · `validateBgVatId` / `validateBgEik` · `discoverBgAspsps` · `listAllCountryApis`, over the `@/country/api` catalogue.`
+- `trigger:every official-[[api]] call returns one `{ ok, data?, error?, source }` shape with `source` attributing the answering authority, and the EU fallback chain resolves national→pan-EU to the first success — so the [[country]] caller branches on one shape regardless of publisher or auth pattern.`
+- `trigger:matter-twin:src/country/api/client/index.ts`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `3773a826-51f4-82b4-a77d-3d20e83c549b` · `926bb1f0-c7c4-86fe-9589-1e532da43cbd` · `da7dc79e-61d5-8bc6-98f4-e50bce5dd3f6`
+- content uuids `34c6e9e6-d71c-81ff-96da-6d9c98558824` · `7c009a46-3ea9-8fab-85d2-6a82b7d11f9d` · `8230affe-eb3c-8b2c-ab28-7a3e7e470ab4`
+
+## [[entropy]] — gaps · seals
+
+> account code `country/api/client` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.2` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `2` eb | Σ seal `11.2` eb |
+
+> net residual `-9.2` eb · seal/gap ratio `5.6` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `country` · sub-root `ff847416-c94d-8cbc-b684-32508188454e`
-- bond degree `11` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- partition `country` · sub-root `33ad0b5c-505d-8c1f-946f-2a1c3a71ff4d`
+- bond degree `6` · analysis neighbors —
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
 
 ## [[cloudflare]] bindings
 
@@ -46,7 +98,6 @@
 - `EU-2017/1132` · catalogue
 - `EU-2017/828` · catalogue
 - `IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates` · banner
-- `ISO-19011:2018 audit-trail external-system-evidence` · banner
 - `ISO-3166-1` · catalogue
 - `ISO-3166-1:2020 BG country-code` · banner
 - `ISO-3166-1:2020 country-codes alpha-2` · banner
@@ -59,19 +110,57 @@
 - `PSD2 EU 2015/2366 ais-pis` · banner
 - `SDMX 2.1 statistical-data-and-metadata-exchange` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·2 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `11` · sealed `0` · horo `8`
+- bond degree `6` · sealed `0` · horo `2`
 - variance `0` · balanced `1` · trinity sum `3`
-- bindings `0` · standards `25`
+- bindings `0` · standards `24`
 
 ## identity
 
-- uuid `839fa652-3310-8567-84ec-d780a4ba0b22`
-- bonds in `3` · out `4`
+- uuid `20fe3189-b361-851d-bca6-306c36d7fc0a`
+- bonds in `1` · out `1`
 - trinity form·code·proof `1`·`1`·`1`
 - links `4` / `4`
-- folded `1` · escapes `1`
+- folded `1` · escapes `0`
 
 ## [[seal]]
 
@@ -79,4 +168,4 @@
 
 ---
 
-<sub>content-uuid `346235a4-e528-8beb-91a6-cb8330fc2069` · framed by typography partition `country` bonds `11` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a7f4694a-4316-88b6-b14d-5606389a2a3c` · framed by typography partition `country` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>

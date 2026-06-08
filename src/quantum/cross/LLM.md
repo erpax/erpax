@@ -3,15 +3,15 @@
 
 # cross
 
-path `quantum/cross` · uuid `207c8c13-f3a9-804a-9380-89048ba4c63f` · diamond `8ca0b74e-9d21-87bd-8edb-db774726503e`
-horo `2` `share` · trinity `1·1·1` · sealed `1`
+path `quantum/cross` · uuid `e417545c-e716-8ce8-9025-16920cb92f1d` · diamond `8105b909-e1ca-8501-a504-b10cc8d8b146`
+horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports @/dual/torus/fusion · exports *:@/dual/torus/fusion · escapes —
-links `7/7` · folded `1` · bonds in `22` out `23`
+links `7/7` · folded `1` · bonds in `16` out `16`
 faces worker·plugin·pwa `1·0·0`
-neighbors → access·auth·blockchain·christianity·consciousness·diamond·duality·entropy·fusion·gate·horo·law·law·memory·merge·orthodoxy·quantum·research·roles·scopes·shamanism·torus·uuid · ← access·auth·blockchain·christianity·consciousness·diamond·duality·entropy·fusion·gate·horo·law·memory·merge·orthodoxy·quantum·research·roles·scopes·shamanism·torus·uuid
+neighbors → access·auth·blockchain·christianity·consciousness·diamond·gate·horo·law·merge·orthodoxy·research·roles·scopes·shamanism·uuid · ← access·auth·blockchain·christianity·consciousness·diamond·gate·horo·law·merge·orthodoxy·research·roles·scopes·shamanism·uuid
 analysis —
 law the quantum cross is the fusion of a dual torus — one node at two names. quantum/cross re-exports dual/torus/fusion verbatim, so the cross (⊕) and the dual-torus fusion are provably the same functions. A repeating pattern is folded to one canonical and re-exported, never duplicated — the merge law at the path scale.
 
 ---
 
-<sub>content-uuid `b4000d0d-e701-81de-a47c-42611ffca4e6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d5590e0a-24e1-89e7-8ff3-ee58b1d47df8` · `pnpm readme` · `pnpm computed:check`</sub>

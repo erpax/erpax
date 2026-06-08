@@ -2,7 +2,7 @@
 
 # packages
 
-> atom `items/packages` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
+> atom `items/packages` · horo `1` `base` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -25,7 +25,30 @@
 
 - partition `items` · sub-root `1341dba3-9395-8200-8e47-ea3dc4d4b9e9`
 - bond degree `27` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `EU-2014/55` · catalogue
+- `EU-537/2014` · catalogue
+- `EU-910/2014` · catalogue
+- `GS1 General Specifications AI(00) SSCC serial-shipping-container-code` · banner
+- `GS1 Logistic Label` · banner
+- `ISO-19011:2018 audit-trail packing-evidence` · banner
+- `ISO-8601-1:2019 date-time` · banner
+- `ISO/IEC 15459-1:2014 unique-identification transport-units` · banner
+- `UN-CEFACT` · catalogue
+- `UN/CEFACT Recommendation 21 packaging-codes` · banner
+
+## analytics
+
+- bond degree `27` · sealed `0` · horo `1`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `10`
 
 ## identity
 
@@ -37,8 +60,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `fa6bceb3-12c6-8b94-97a8-fee0861481b5` · framed by typography partition `items` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `81bfd0a0-ede9-8c13-a960-6cf59de6335c` · framed by typography partition `items` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>

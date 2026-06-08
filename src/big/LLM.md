@@ -3,8 +3,8 @@
 
 # big
 
-path `big` · uuid `9d0fecb5-72b0-84ef-be8b-25bcec63e2a1` · diamond `63d78a77-b596-8d69-acc3-01384c697201`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `big` · uuid `710eb2d6-f41d-833b-9072-24260dbde3aa` · diamond `09b52e94-3328-8a07-a116-fbd68f2b8251`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports big · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law big is one schema.org word, content-addressed; the same word collides every 
 
 ---
 
-<sub>content-uuid `696eb5db-2ef1-8204-ba5e-5efca716a1cb` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7540c263-8394-8075-82e3-42c432f2c962` · `pnpm readme` · `pnpm computed:check`</sub>

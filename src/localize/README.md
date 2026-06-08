@@ -25,7 +25,34 @@
 
 - partition `localize` · sub-root `1033138f-c956-81bd-8930-63e13507656d`
 - bond degree `112` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `4647` (RFC 4647, Sept 2006, "Matching of Language Tags"; current as of 2026). Governs` · banner
+- `4647` alongside `@rfc 5646` wherever this skill does matching (it covers the behavior RFC 5646 does not).` · banner
+- `5646` (RFC 5646, Sept 2009, "Tags for Identifying Languages"; obsoletes RFC 4646/3066/1766; current as of 2026). Governs the` · banner
+- `BCP-47 (locale tags) · EU 1958/1 (official EU languages)` · banner
+- `BCP-47` (no edition/version; permanently "BCP 47", a two-RFC IETF subseries updated by reassigning member RFCs). A locale identifier must be a well-formed, valid BCP-47 tag: hyphen-separated subtags in canonical order (`language[-extlang][-script][-region][-variant][-extension][-privateuse]`), each registered in the live IANA Language Subtag Registry (the registry, not any RFC text, is the source of truth for which subtag values are valid). The umbrella `@standard BCP-47` tag is correct as-is.` · banner
+- `Conservation Law 8 (content-uuid) · 55 (tamper-reverse-cost) · 62 (coverage)` · banner
+- `EU-1958` · catalogue
+- `EU-2006/43` · catalogue
+- `ITU-T X.667 / ISO-IEC 9834-8 (UUID ↔ OID 2.25 arc)` · banner
+- `ITU-T-X667` · catalogue
+- `NIST SP 800-107r1 §5.1 (hash strengths — via tamper-cost)` · banner
+- `RFC 3061 (urn:oid: namespace) · RFC 4122 §3 (urn:uuid:)` · banner
+- `RFC 9562 §5.8 (uuidv8 structured, name-based)` · banner
+- `RFC-4122` · catalogue
+
+## analytics
+
+- bond degree `112` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `14`
 
 ## identity
 
@@ -41,4 +68,4 @@
 
 ---
 
-<sub>content-uuid `846a134f-ca3e-8f5c-b1bc-161ec410a562` · framed by typography partition `localize` bonds `112` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c454790e-93ef-8bf6-9bf3-00912a399d75` · framed by typography partition `localize` bonds `112` · `pnpm readme` · `pnpm readme:check`</sub>

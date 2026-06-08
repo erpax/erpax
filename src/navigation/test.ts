@@ -3,6 +3,7 @@ import {
   adminGroupOf,
   navigationGroupsFromPaths,
   navManifestFromPaths,
+  navPathsForGrouping,
   pathNavMeta,
   routeOfPath,
   segmentsOf,
@@ -67,6 +68,33 @@ describe('navigation — path-derived nav groups', () => {
       },
       { text: 'vitepress', link: '/vitepress/SKILL' },
     ])
+  })
+
+  it('navigationGroupsFromPaths nests medical hub children', () => {
+    const tree = navigationGroupsFromPaths(['medical', 'medical/clinic', 'medical/patient', 'clinic'])
+    expect(tree).toEqual([
+      {
+        text: 'medical',
+        link: '/medical/SKILL',
+        collapsed: true,
+        items: [
+          { text: 'clinic', link: '/medical/clinic/SKILL' },
+          { text: 'patient', link: '/medical/patient/SKILL' },
+        ],
+      },
+    ])
+  })
+
+  it('navPathsForGrouping drops bare root when hub/leaf exists', () => {
+    expect(navPathsForGrouping(['abdomen', 'body/abdomen', 'heart', 'body/heart'])).toEqual([
+      'body/abdomen',
+      'heart',
+      'body/heart',
+    ])
+  })
+
+  it('navPathsForGrouping keeps root pivot without hub child', () => {
+    expect(navPathsForGrouping(['corpus', 'navigation'])).toEqual(['corpus', 'navigation'])
   })
 
   it('navManifestFromPaths emits one manifest row per atom', () => {

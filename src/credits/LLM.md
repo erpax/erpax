@@ -3,8 +3,8 @@
 
 # credits
 
-path `credits` · uuid `199dd438-f4c4-8154-af70-ff28ef5f4f53` · diamond `282063a0-1eb0-8afc-9f93-266021b855f3`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `credits` · uuid `09e9ed4c-1d38-8b3f-8ccd-c1146d99cd9d` · diamond `1da24054-6afc-80c8-b6b8-b16f127b2a39`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·number·sti·term·typical · exports credits · escapes —
 links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law credits is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `cd96b01f-26b2-8ebe-99c2-01081b5b9708` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `dd11bb4a-3a43-89d8-ab9e-458103254c0d` · `pnpm readme` · `pnpm computed:check`</sub>

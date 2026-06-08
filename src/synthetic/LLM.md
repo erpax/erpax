@@ -3,15 +3,15 @@
 
 # synthetic
 
-path `synthetic` · uuid `c449e53d-381e-8a81-9ac8-07dc090b3cb2` · diamond `3cdc19d3-2b7c-852d-a30f-29acddfbbade`
+path `synthetic` · uuid `c449e53d-381e-8a81-9ac8-07dc090b3cb2` · diamond `8635bf35-82a3-8792-92a9-79eae3c885fd`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports synthetic · escapes —
-links `4/4` · folded `1` · bonds in `5` out `5`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·parasite·stat · ← cohort·landmarks·memories·parasite·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law synthetic is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `0a8eaed8-fdca-8a5c-92b2-e20a82cedf97` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7835f388-a056-8bd7-9021-767c3ff459ed` · `pnpm readme` · `pnpm computed:check`</sub>

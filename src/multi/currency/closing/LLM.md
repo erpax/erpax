@@ -3,15 +3,15 @@
 
 # closing
 
-path `multi/currency/closing` · uuid `d6231602-10d9-81e7-afd6-d5ceb5b39950` · diamond `3163ae55-6ac3-86fa-98b1-7d4de0d10507`
-horo `5` `round` · trinity `1·1·1` · sealed `1`
+path `multi/currency/closing` · uuid `b60da4bf-e41e-8312-98ec-0f8f38998db2` · diamond `527b84c2-9185-8984-963a-025da228db05`
+horo `8` `crest` · trinity `1·1·1` · sealed `0`
 imports @/currency/reconciliation · exports ...·CurrencyBalance·CurrencyReconciliation·ExchangeRateRevaluation·MultiCurrencyReconciliation·barrel · escapes —
-links `1/1` · folded `1` · bonds in `3` out `4`
+links `1/1` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·checker·law·law · ← accounting·checker·law
+neighbors → checker·law · ← checker·law
 analysis —
 law closing must balance per currency, not just consolidated — exchange rates pinned to the period-end date make revaluation deterministic, and an immutable chain leaf proves no rate change was hidden.
 
 ---
 
-<sub>content-uuid `42157ed3-e59d-8345-bae2-1b54bf0c6795` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d18b717b-3178-8828-a078-5051384d57ec` · `pnpm readme` · `pnpm computed:check`</sub>

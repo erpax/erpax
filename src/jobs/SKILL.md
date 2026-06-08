@@ -1,10 +1,112 @@
 ---
 name: jobs
-description: Use when offloading work to Payload's jobs queue — defining tasks/workflows, queuing jobs, scheduling/cron, retries, or moving slow hook logic to background processing.
-sessions:
-  - 776a49cb-8dfb-45ab-88ff-956e3b613adf
+description: "Use when offloading work to Payload's jobs queue — defining tasks/workflows, queuing jobs, scheduling/cron, retries, or moving slow hook logic to background processing."
+atomPath: jobs
+coordinate: jobs · 2/share · 4c8510ab
+contentUuid: "7a108259-fd12-5862-bb78-dd3c29526514"
+diamondUuid: "f35bd7b1-43a1-8511-8bb7-d18bc9a3bf87"
+uuid: "4c8510ab-ba32-8162-83f3-efa953791834"
+horo: 2
+bonds:
+  in:
+    - batch
+    - bindings
+    - currency
+    - desire
+    - event
+    - hooks
+    - idempotency
+    - law
+    - manufacturing
+    - observability
+    - optimize
+    - port
+    - reconcile
+    - run
+    - spec
+    - supto
+  out:
+    - batch
+    - bindings
+    - currency
+    - desire
+    - event
+    - hooks
+    - idempotency
+    - law
+    - manufacturing
+    - observability
+    - optimize
+    - port
+    - reconcile
+    - run
+    - spec
+    - supto
+typography:
+  partition: jobs
+  bondDegree: 0
+  neighbors: []
+standards:
+  - "Naredba-N-18"
+bindings: []
+neighbors:
+  wikilink:
+    - hooks
+    - law
+    - optimize
+  matrix:
+    - batch
+    - bindings
+    - currency
+    - desire
+    - event
+    - hooks
+    - idempotency
+    - law
+    - manufacturing
+    - observability
+    - optimize
+    - port
+    - reconcile
+    - run
+    - spec
+    - supto
+  backlinks:
+    - batch
+    - bindings
+    - currency
+    - desire
+    - event
+    - hooks
+    - idempotency
+    - law
+    - manufacturing
+    - observability
+    - optimize
+    - port
+    - reconcile
+    - run
+    - spec
+    - supto
+signatures:
+  computationUuid: "90805952-6704-802f-b35a-ea28932c46f1"
+  stages:
+    - stage: path
+      stageUuid: "2219ff37-c700-8086-99fd-8affa98b0a2b"
+    - stage: trinity
+      stageUuid: "406e53e7-7c3d-8e66-94ac-029c3d861e66"
+    - stage: boundary
+      stageUuid: "281c5b55-b96a-8cf8-823a-5e5c7994350b"
+    - stage: links
+      stageUuid: "e5de92d1-2a09-89d8-9376-144538b7fc48"
+    - stage: horo
+      stageUuid: "3ed8b2ca-0826-87b0-a367-084e465ad827"
+    - stage: seal
+      stageUuid: "ebbe4f7e-5f39-8414-966e-e8759fca6b84"
+    - stage: uuid
+      stageUuid: "dda563bd-2da8-8e50-a400-8e63c96eff8b"
+version: 2
 ---
-
 # jobs — the jobs queue (background work)
 
 Move slow/async work (emails, third-party calls, heavy compute) out of the request lifecycle. Configure `config.jobs`.

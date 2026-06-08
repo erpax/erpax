@@ -3,15 +3,15 @@
 
 # stand
 
-path `stand` · uuid `ec1e9c1f-114b-84e9-8032-8b62a9b30eea` · diamond `5dd0f3d8-8e7c-83eb-ade6-279451c56f29`
+path `stand` · uuid `ec1e9c1f-114b-84e9-8032-8b62a9b30eea` · diamond `e6197a27-5855-811d-bfe0-981bde8b3643`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·taxi · exports stand · escapes —
-links `5/5` · folded `1` · bonds in `6` out `6`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → agent·cohort·integer·landmarks·memories·stat · ← agent·cohort·integer·landmarks·memories·stat
+neighbors → collapse·law·merge·sti·taxi · ← collapse·law·merge·sti·taxi
 analysis —
 law stand is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `45e092ee-7be4-83fb-86d0-528527dd53b2` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c1dd6a46-aa6f-85c5-a65f-1d9331359913` · `pnpm readme` · `pnpm computed:check`</sub>

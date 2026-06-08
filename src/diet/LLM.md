@@ -3,8 +3,8 @@
 
 # diet
 
-path `diet` · uuid `052faa5a-2aad-8127-a192-95790fdd36d4` · diamond `fdddf132-239f-827f-8bdf-1b8a1d4beeed`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `diet` · uuid `d20b6632-8d30-8407-b206-e336143f5d6f` · diamond `da5d98f4-e0fc-8c46-9f6b-5c856c896450`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports exercise·features·law·related·restricted·suitable · exports diet · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law diet is one schema.org word, content-addressed; the same word collides every
 
 ---
 
-<sub>content-uuid `068242a1-ba1c-84f6-93b1-2485447c9b7a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d62661b4-aabe-8ae2-9fb3-8b8efc4281c0` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,8 +3,8 @@
 
 # authenticator
 
-path `authenticator` · uuid `0de33f7b-b2a5-8ac4-a7ea-9284dce8d862` · diamond `8b155968-489a-8e6c-b81c-aa6b25d08e6f`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `authenticator` · uuid `40690d32-2a66-8e49-8533-f11e6deaf443` · diamond `19dc8331-2590-87d5-91cd-2b95c165cc22`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports law·organization·thing · exports authenticator · escapes —
 links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law authenticator is one schema.org word, content-addressed; the same word colli
 
 ---
 
-<sub>content-uuid `af82d661-b422-80de-bbfa-915e6afb9462` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a2ffffad-2606-8c55-86f7-2327804cd185` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,8 +3,8 @@
 
 # crosses
 
-path `crosses` · uuid `fcfa845c-08ff-8ba9-8047-50a61cf95de0` · diamond `c33acdc6-12ac-8102-90d6-7eadbd1d112a`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `crosses` · uuid `6584fd9b-db60-8c06-9faa-7f67a2f55121` · diamond `ddc320c0-255f-83e9-840a-b8bed2f4caec`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·geo·law·merge·sti · exports crosses · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law crosses is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `8c3bdc6e-c292-888d-b1aa-98e0e4a1ce78` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `afcb13b1-e76b-8bbd-9537-06d27caa04d9` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -2,7 +2,7 @@
 
 # devices
 
-> atom `fiscal/devices` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
+> atom `fiscal/devices` · horo `2` `share` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -25,7 +25,23 @@
 
 - partition `fiscal` · sub-root `cf5aa98e-ebac-8e2a-ac4c-50b4ac28b0e6`
 - bond degree `15` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `BG Наредба-Н-18 §СУПТО fiscal-device-register` · banner
+- `ISO-19011:2018 audit-trail` · banner
+- `Naredba-N-18` · catalogue
+
+## analytics
+
+- bond degree `15` · sealed `0` · horo `2`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `3`
 
 ## identity
 
@@ -37,8 +53,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `1ad4e901-74ff-89b1-9b92-71efd2853af4` · framed by typography partition `fiscal` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d0d9a310-29e4-8ef8-812e-10133d1e3ffb` · framed by typography partition `fiscal` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

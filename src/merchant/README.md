@@ -23,7 +23,21 @@
 
 - partition `merchant` · sub-root `17207f83-8399-8324-9231-f2bf628ae04d`
 - bond degree `34` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `34` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `d7a190b3-688b-89dc-af1c-1a6cbd185672` · framed by typography partition `merchant` bonds `34` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `bbaa46e2-eeb8-850b-b21f-bfee2c1a770b` · framed by typography partition `merchant` bonds `34` · `pnpm readme` · `pnpm readme:check`</sub>

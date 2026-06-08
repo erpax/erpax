@@ -3,7 +3,7 @@
 
 # comment
 
-path `comment` · uuid `c56e9ce8-0a67-8f3a-8f04-7cbd68253899` · diamond `9de75e27-01f3-84f6-ada8-63d303ee7c8d`
+path `comment` · uuid `8765b3df-5649-8bb2-afac-5ed9967c42a3` · diamond `81dfed49-3884-8b68-a13d-ff81395b0291`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports access·accounting·fields·identity·messages·plugins·tags · exports comment · escapes —
 links `12/12` · folded `1` · bonds in `19` out `19`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `0e509c6d-f3bf-8644-a60b-45f51d8edc46` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b9fc7b9d-fd6a-8114-a76a-c47a21bffcac` · `pnpm readme` · `pnpm computed:check`</sub>

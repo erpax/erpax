@@ -3,15 +3,15 @@
 
 # territory
 
-path `territory` · uuid `8db99cfe-dd4b-83f1-9618-e7cdbfaf9e80` · diamond `f5ad54e5-8e03-8f50-9cb0-f2a9f07d7c5a`
+path `territory` · uuid `8db99cfe-dd4b-83f1-9618-e7cdbfaf9e80` · diamond `ac65c27a-b90d-8d31-b83f-adfa21612aae`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports customers·employees·forecast·quota · exports territory · escapes —
-links `5/5` · folded `1` · bonds in `10` out `10`
+links `5/5` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → borrow·correlation·flight·florist·grantee·landmarks·max·quote·solve·worth · ← borrow·correlation·flight·florist·grantee·landmarks·max·quote·solve·worth
+neighbors → customers·employees·forecast·orders·quota·terroir · ← customers·employees·forecast·orders·quota·terroir
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `e2351219-8511-8531-a7c4-31d1686e5ffa` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ccd80f6c-5480-87af-8ae8-abc8fe0c4574` · `pnpm readme` · `pnpm computed:check`</sub>

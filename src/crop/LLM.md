@@ -3,8 +3,8 @@
 
 # crop
 
-path `crop` · uuid `80757938-9cc0-8ea1-9413-e237670b2bf6` · diamond `eb2ffcbc-c879-8839-8a62-c6f2373afa63`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `crop` · uuid `d11685d7-264b-8a5e-aa87-06b891955c39` · diamond `5f19bb38-c5c8-8bca-ac9c-6be3281ef23e`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports agriculture·amount·balance·biological·bottleneck·commerce·conversion·currency·dimension·enterprisebudget·fertility·harvest·items·law·measure·planting·pollination·rate·season·share·yield · exports crop · escapes —
 links `42/42` · folded `1` · bonds in `46` out `46`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law a crop is the agricultural SKU carrying agronomic constants ([[yield]]/area,
 
 ---
 
-<sub>content-uuid `08f59c3c-3a76-8a17-9861-27b781118338` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7776ef82-13aa-8935-8d99-01adbdf982fa` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,8 +3,8 @@
 
 # countersigned
 
-path `countersigned` · uuid `412a514e-dcee-8f76-b7bd-7fe08d71f492` · diamond `47f12ded-2aaf-8190-b001-c18e2979d22a`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `countersigned` · uuid `0296f3ea-7708-8a63-9bf5-4222ee807e5d` · diamond `eac48752-fed4-8f46-95fa-6b7e27f91d68`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·legislation·merge·sti · exports countersigned · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law countersigned is one schema.org word, content-addressed; the same word colli
 
 ---
 
-<sub>content-uuid `398dcc1a-58d1-8c1d-930c-43cbc81363ac` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `890549d6-87a8-8fd5-9ad9-685bcbd35fdb` · `pnpm readme` · `pnpm computed:check`</sub>

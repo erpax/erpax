@@ -2,7 +2,7 @@
 
 # serverless
 
-> atom `quantum/serverless` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
+> atom `quantum/serverless` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -23,9 +23,9 @@
 
 ## typography graph
 
-- partition `quantum` · sub-root `faef889d-ad2e-83c4-8dee-232fdd73554d`
-- bond degree `41` · analysis neighbors `cloudflare` · `diamond`
-- graph root `0349017a-99bf-8657-ae7e-21b09f363ed4`
+- partition `quantum` · sub-root `752ec37e-713d-87b7-a64c-41cefcda190a`
+- bond degree `51` · analysis neighbors `cloudflare` · `diamond`
+- graph root `767556c1-6cb2-8c6a-8d8b-18641569b2ed`
 
 ## [[cloudflare]] bindings
 
@@ -35,18 +35,56 @@
 
 - `computed from live wrangler.jsonc + live tree; never hand-asserted` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·4 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `41` · sealed `1` · horo `2`
+- bond degree `51` · sealed `1` · horo `4`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `1`
 
 ## identity
 
-- uuid `2dbb7469-ecf6-8300-8f5a-a472916c1c39`
-- bonds in `12` · out `12`
+- uuid `4c2327d6-1677-80df-9fc9-8ddf6c32490f`
+- bonds in `15` · out `15`
 - trinity form·code·proof `1`·`1`·`1`
-- links `27` / `27`
+- links `31` / `31`
 - folded `1` · escapes `0`
 
 ## [[seal]]
@@ -55,4 +93,4 @@
 
 ---
 
-<sub>content-uuid `6f903a58-c0ed-8b46-a2d5-03bf0abc9e8f` · framed by typography partition `quantum` bonds `41` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `1dc00fe2-8bd0-8e98-a361-b5faeaab59a0` · framed by typography partition `quantum` bonds `51` · `pnpm readme` · `pnpm readme:check`</sub>

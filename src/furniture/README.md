@@ -23,7 +23,21 @@
 
 - partition `furniture` · sub-root `ccb80e62-c1af-81de-a7d3-abbc451220b1`
 - bond degree `16` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `16` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `27420b79-4a56-8efb-972b-47f4ae445f9c` · framed by typography partition `furniture` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `642f66b7-1d94-8308-ac41-5dc0f0069c4b` · framed by typography partition `furniture` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

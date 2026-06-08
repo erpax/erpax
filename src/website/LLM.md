@@ -3,15 +3,15 @@
 
 # website
 
-path `website` · uuid `00dc4c57-e6f1-8313-83b4-465ef0af101d` · diamond `5daaf012-49e0-8a71-82d0-b496bb47306c`
+path `website` · uuid `00dc4c57-e6f1-8313-83b4-465ef0af101d` · diamond `c193eed3-bcc1-806e-8369-6443d9cce5b5`
 horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports — · exports BrandVoice·BrandVoiceFinding·ChannelVariants·ERPAX_DEFAULT_VOICE·ERPAX_MARKETING_STRATEGY·EmailDrip·MarketingChannel·MicrodataValidation·OgType·SHADCN_SURFACE_MAP·SchemaEdge·SchemaType·SeoAudit·SeoCouplingResult·SeoMeta·SeoVortexFace·ShadcnComponentSet·SiteSurface·TransparencyFinding·__resetFacesForTests·allRequiredShadcnComponents·async·auditSeo·bitemporalAnchor·buildOnboardingDrip·checkMarketingTransparency·checkSeoVortexCoupling·crossLink·deriveKeywords·deriveSeoMeta·function·generateChannelVariants·generateRobots·generateSitemap·getFace·interface·listFaces·registerFace·renderJsonLd·renderOgMeta·reviewBrandVoice·shadcnSurfaceFor·validateMicrodata · escapes —
-links `14/14` · folded `1` · bonds in `10` out `10`
-faces worker·plugin·pwa `0·0·0`
-neighbors → animal·center·fire·government·hardcover·has·knows·landmarks·lineup·reverse · ← animal·center·fire·government·hardcover·has·knows·landmarks·lineup·reverse
+links `14/14` · folded `1` · bonds in `13` out `13`
+faces worker·plugin·pwa `1·0·0`
+neighbors → akashic·civilization·dashboard·duality·flow·fractal·generate·holographic·law·merge·sequence·society·standard · ← akashic·civilization·dashboard·duality·flow·fractal·generate·holographic·law·merge·sequence·society·standard
 analysis —
 law nothing is authored — every Page is DERIVED from the live corpus ([[generate]]), and because each seed is content-addressed the same Page from two instances is ONE Page ([[merge]]); the website is the perceptible twin of the queryable record.
 
 ---
 
-<sub>content-uuid `25e3d6b3-6789-8e5f-94ee-104eadaeea70` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ae6e93e6-dc7a-8489-8599-e6f8e6909853` · `pnpm readme` · `pnpm computed:check`</sub>

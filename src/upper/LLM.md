@@ -3,15 +3,15 @@
 
 # upper
 
-path `upper` · uuid `ea25943a-4a70-8323-85cc-7cb7deb5f919` · diamond `ae548e4d-2cc6-8baf-bc10-38e7668de6c2`
+path `upper` · uuid `ea25943a-4a70-8323-85cc-7cb7deb5f919` · diamond `62d7bc27-b8e7-8907-bb67-47a6505bad98`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports upper · escapes —
-links `4/4` · folded `1` · bonds in `11` out `11`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·allocation·balance·declaration·diffusion·landmarks·notice·pats·roadmap·snapshots·wp · ← accounting·allocation·balance·declaration·diffusion·landmarks·notice·pats·roadmap·snapshots·wp
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law upper is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `658ba228-fa93-80f8-80a9-a6128db1c7d1` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b62be783-db8f-8a87-b38a-69762eef1922` · `pnpm readme` · `pnpm computed:check`</sub>

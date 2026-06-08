@@ -3,15 +3,15 @@
 
 # wisdom
 
-path `wisdom` · uuid `—` · diamond `b752d7ee-ef01-8ca9-8412-74f669d9051d`
-horo `—` `—` · trinity `1·0·0` · sealed `0`
+path `wisdom` · uuid `7d124c32-b9f1-8253-aad6-6960c68160de` · diamond `d7a807ee-bc6d-8fa5-8d7b-22461acb3412`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports akashic·generate·harmony·holographic·law·part·sacred·sequence·standard·truth·whole · exports wisdom · escapes —
-links `33/33` · folded `0` · bonds in `0` out `0`
+links `33/33` · folded `1` · bonds in `15` out `15`
 faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
-analysis diamond·hallucination·purity
+neighbors → akashic·confucianism·generate·gnosticism·harmony·holographic·jainism·law·manichaeism·part·sacred·sequence·standard·truth·whole · ← akashic·confucianism·generate·gnosticism·harmony·holographic·jainism·law·manichaeism·part·sacred·sequence·standard·truth·whole
+analysis —
 law wisdom is holding the generating law rather than its enumerated cases — the [[holographic]] compression in which a [[part]] regenerates the [[whole]] ([[generate]]) — so it is measured by what it can recompute from the pattern, not by what it has stored; distinct from [[truth]] (a verified fact) and from knowledge (facts kept).
 
 ---
 
-<sub>content-uuid `fe6aabba-c720-872a-be25-97d6067b3bf2` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ff9e09aa-481c-8760-b7e6-fe5610b226f7` · `pnpm readme` · `pnpm computed:check`</sub>

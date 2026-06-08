@@ -25,7 +25,24 @@
 
 - partition `governance` · sub-root `53029436-5c63-83cc-bbb7-57e654c2f434`
 - bond degree `57` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ISO 37000:2021 governance-of-organizations` · banner
+- `ISO-37000` · catalogue
+- `one-person-one-vote (Venice Commission Code of Good Practice in Electoral Matters)` · banner
+- `US-CTA-2021` · catalogue
+
+## analytics
+
+- bond degree `57` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `4`
 
 ## identity
 
@@ -41,4 +58,4 @@
 
 ---
 
-<sub>content-uuid `a39fbcbc-8ada-88f2-b8b7-83479f47cefa` · framed by typography partition `governance` bonds `57` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `91236dbe-be05-8845-8cb4-15c104f83c1b` · framed by typography partition `governance` bonds `57` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,8 +3,8 @@
 
 # auth
 
-path `auth` · uuid `6534ea1f-c98a-8977-919f-968e8abcfd39` · diamond `30be8105-ef3b-8a30-aa0f-756ecba355d4`
-horo `6` `6` · trinity `1·1·1` · sealed `0`
+path `auth` · uuid `f8e7de5f-2e3e-82e3-9e5b-39b9729dad99` · diamond `e3e56532-f5db-821e-aace-077baa35d5ee`
+horo `3` `3` · trinity `1·1·1` · sealed `1`
 imports @/is/super/admin·@/roles/registry·@/types·@/types/auth · exports const·function·superAdminOnly · escapes —
 links `14/14` · folded `1` · bonds in `31` out `31`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law authentication is the measured bridge from form to the world — proving con
 
 ---
 
-<sub>content-uuid `bfb61b62-6b09-8b5b-8c4d-e564c66b727b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `02aee6fe-c6bb-8c58-863a-1676a4e1b3ec` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # centers
 
-path `work/centers` · uuid `0eef6c5e-d9ff-8690-b65a-bdcec917487c` · diamond `fb501c56-3718-81cc-b35b-3490ec0dc291`
+path `work/centers` · uuid `0eef6c5e-d9ff-8690-b65a-bdcec917487c` · diamond `ddcb4f01-f99b-8ab8-90df-8d1d38b9bb3e`
 horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
-links `5/5` · folded `1` · bonds in `7` out `7`
+links `5/5` · folded `1` · bonds in `20` out `22`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·fertility·holographic·id·international·progression·spouse · ← access·fertility·holographic·id·international·progression·spouse
+neighbors → access·accounting·accounting·bottleneck·budgetvariance·capacity·fields·hooks·identity·journals·law·law·manufacturing·materials·positions·proof·routings·runs·segment·shift·shifts·throughput · ← access·accounting·bottleneck·budgetvariance·capacity·fields·hooks·identity·journals·law·manufacturing·materials·positions·proof·routings·runs·segment·shift·shifts·throughput
 analysis —
 law a work-center is the capacity unit production flows through (machine · line · cell · vat · workstation · crew) carrying throughput rate, parallelism, and the IAS-2 cost-of-conversion rate that feeds routing and overhead absorption — the ISA-95 resource the [[work/shifts|shift]] runs on.
 
 ---
 
-<sub>content-uuid `bb1d8f98-a70f-84da-bddd-f3b95a4171c8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `05776658-68be-87fe-9015-44a2fc24c631` · `pnpm readme` · `pnpm computed:check`</sub>

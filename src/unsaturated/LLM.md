@@ -3,15 +3,15 @@
 
 # unsaturated
 
-path `unsaturated` · uuid `fb112432-ba8f-8873-a6a5-192478b35d27` · diamond `39d3dff8-6d66-8389-a5aa-3090fd129052`
+path `unsaturated` · uuid `fb112432-ba8f-8873-a6a5-192478b35d27` · diamond `11456e8c-1c10-80ba-9968-7218c0d39cd3`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·content·fat·law·merge·sti · exports unsaturated · escapes —
-links `6/6` · folded `1` · bonds in `10` out `10`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → caption·cohort·industry·landmarks·locks·memories·sanitization·source·stat·utterance · ← caption·cohort·industry·landmarks·locks·memories·sanitization·source·stat·utterance
+neighbors → collapse·content·fat·law·merge·sti · ← collapse·content·fat·law·merge·sti
 analysis —
 law unsaturated is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `f390c74d-e5a3-89c7-87fb-7afec4eee0d5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `84b0c559-d099-8c9e-9c69-5513d1df4a68` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -2,9 +2,11 @@
 
 # cost
 
-> atom `cost` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
+> atom `cost` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
+
+> account code `cost` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,11 +23,36 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## [[entropy]] — gaps · seals
+
+> account code `cost` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+|  | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.7` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[diamond]]/sealed `1.585` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `0` eb | Σ seal `13.285` eb |
+
+> net residual `-13.285` eb · seal/gap ratio `1` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `cost` · sub-root `39f13edb-cfbe-876c-9400-e150601cfd8b`
-- bond degree `472` · analysis neighbors `analytics` · `aura`
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- partition `cost` · sub-root `31044ee4-6799-8b5a-bd55-c5e980823d29`
+- bond degree `436` · analysis neighbors `analytics` · `aura`
+- graph root `ec673811-cc2c-8848-bd41-d0c818433cd7`
 
 ## [[cloudflare]] bindings
 
@@ -33,6 +60,7 @@
 
 ## [[standards]]
 
+- `Conservation Law 62 (coverage) — manual bypass ⇒ ∞ forge path` · banner
 - `Conservation Law 62 (coverage) — the all-directions cascade` · banner
 - `CRAQ — Terrace & Freedman, USENIX ATC 2009` · banner
 - `CRAQ (Terrace & Freedman, USENIX ATC 2009) — strong-consistency chain replication` · banner
@@ -46,18 +74,56 @@
 - `RFC-9562` · catalogue
 - `W3C-PROV-O` · catalogue
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·7 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `472` · sealed `1` · horo `2`
+- bond degree `436` · sealed `1` · horo `7`
 - variance `0` · balanced `1` · trinity sum `3`
-- bindings `0` · standards `12`
+- bindings `0` · standards `13`
 
 ## identity
 
-- uuid `806c15e6-dc68-8594-93cb-076001eef221`
-- bonds in `151` · out `150`
+- uuid `c58d230c-8f3d-8670-a488-27f001a05392`
+- bonds in `124` · out `124`
 - trinity form·code·proof `1`·`1`·`1`
-- links `30` / `30`
+- links `50` / `50`
 - folded `1` · escapes `0`
 
 ## [[seal]]
@@ -66,4 +132,4 @@
 
 ---
 
-<sub>content-uuid `708fd0ac-2fc5-8049-9222-a69310d3999c` · framed by typography partition `cost` bonds `472` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f2bac968-e037-895a-ba3e-87d1b2763461` · framed by typography partition `cost` bonds `436` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -2,7 +2,7 @@
 
 # artwork
 
-> atom `artwork` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `artwork` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -21,9 +21,9 @@
 
 ## typography graph
 
-- partition `artwork` · sub-root `62d1d2b4-3ccd-803e-80bc-1b30ab0b7d86`
+- partition `artwork` · sub-root `e5f4a1e6-b610-8124-8201-4af9dcd714aa`
 - bond degree `20` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- graph root `30ef7fae-4ee3-8746-b14a-915657036770`
 
 ## [[cloudflare]] bindings
 
@@ -33,15 +33,53 @@
 
 - `schema.org — the type vocabulary, collided to single words` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·4 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `20` · sealed `1` · horo `7`
+- bond degree `20` · sealed `1` · horo `4`
 - variance `0` · balanced `1` · trinity sum `1`
 - bindings `0` · standards `1`
 
 ## identity
 
-- uuid `62d1d2b4-3ccd-803e-80bc-1b30ab0b7d86`
+- uuid `e5f4a1e6-b610-8124-8201-4af9dcd714aa`
 - bonds in `6` · out `6`
 - trinity form·code·proof `1`·`0`·`0`
 - links `6` / `6`
@@ -53,4 +91,4 @@
 
 ---
 
-<sub>content-uuid `95283605-b392-8f39-b85f-695889df9372` · framed by typography partition `artwork` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `4fcf2c20-ba48-8a2a-9516-3b61299694c9` · framed by typography partition `artwork` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>

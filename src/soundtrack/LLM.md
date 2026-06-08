@@ -3,15 +3,15 @@
 
 # soundtrack
 
-path `soundtrack` · uuid `c3a722b7-2dbb-8f52-b441-f4f6a678417a` · diamond `294d3d35-5c95-843d-97cf-9ecba82b609d`
+path `soundtrack` · uuid `c3a722b7-2dbb-8f52-b441-f4f6a678417a` · diamond `fe822ca7-d455-8b60-b55b-d30ca5f6857e`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports soundtrack · escapes —
-links `4/4` · folded `1` · bonds in `15` out `15`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·admin·api·catalogue·cohort·comment·gears·id·itsocial·landmarks·marine·policy·sell·temporarily·win · ← accounting·admin·api·catalogue·cohort·comment·gears·id·itsocial·landmarks·marine·policy·sell·temporarily·win
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law soundtrack is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `2ba78b00-b8cc-87ed-9d0d-56de92a2b69e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `08d0c005-36c3-807f-a9bf-db38f8964763` · `pnpm readme` · `pnpm computed:check`</sub>

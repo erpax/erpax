@@ -3,8 +3,8 @@
 
 # agency
 
-path `agency` · uuid `de318794-2849-88a6-8499-8fea82a98bde` · diamond `22436cce-3c0d-80c7-9411-ff843cf4a7d7`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `agency` · uuid `61206104-edd0-8225-897b-65031969bdcb` · diamond `9791ec31-44ff-80a3-8e2f-187e29a1bda4`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·employment·funding·insurance·law·merge·sti·travel · exports agency · escapes —
 links `8/8` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law agency is one schema.org word, content-addressed; the same word collides eve
 
 ---
 
-<sub>content-uuid `4c3db40d-9663-81a3-9744-19c9b6d2f43b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3a310906-dd79-87e9-9acc-88d9d83ff04d` · `pnpm readme` · `pnpm computed:check`</sub>

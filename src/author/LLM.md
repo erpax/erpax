@@ -3,8 +3,8 @@
 
 # author
 
-path `author` · uuid `73a5661f-9aa2-8550-9a59-d14bed3b651f` · diamond `ec0831df-7a58-814c-8e05-eb81084592e1`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `author` · uuid `6f5bb80e-d211-8181-95ae-4ff8f470bac7` · diamond `60fde6bb-516b-8820-9a14-c6543ecd88e4`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports law·person·thing · exports author · escapes —
 links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law author is one schema.org word, content-addressed; the same word collides eve
 
 ---
 
-<sub>content-uuid `b9590087-dcb4-8477-a621-1676bf6132be` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c1efcfa8-7ea5-8688-94bd-c884967bede5` · `pnpm readme` · `pnpm computed:check`</sub>

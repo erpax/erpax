@@ -3,8 +3,8 @@
 
 # artform
 
-path `artform` · uuid `793eb0d2-e690-8c77-874c-49dfc77b5068` · diamond `ee0be312-9b84-8224-8510-94819bc003cb`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `artform` · uuid `5fe06bb2-a63d-81ea-b721-acbb3ef62b0d` · diamond `892b5bc7-67d7-8f4c-bdee-3c34c4476f21`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports creative·law·thing · exports artform · escapes —
 links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law artform is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `aed7d4be-b6e9-8c85-a857-2d7055235d2d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `902e8076-d19d-8be8-8b28-866642e2aa84` · `pnpm readme` · `pnpm computed:check`</sub>

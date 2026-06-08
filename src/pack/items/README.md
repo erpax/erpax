@@ -25,7 +25,27 @@
 
 - partition `pack` · sub-root `eaa0f219-a11c-80b2-9fd6-89790168993e`
 - bond degree `146` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `IFRS IAS-2 §10 finished-goods at dispatch` · banner
+- `ISA-95` · catalogue
+- `ISA-95:2013 §B.5 production-operations dispatch line` · banner
+- `ISO-19011:2018 audit-trail dispatch line` · banner
+- `ISO/IEC-29119` · catalogue
+- `UN-CEFACT` · catalogue
+- `UN/CEFACT Rec20 mass (gram) per-unit` · banner
+
+## analytics
+
+- bond degree `146` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `7`
 
 ## identity
 
@@ -41,4 +61,4 @@
 
 ---
 
-<sub>content-uuid `0e699caf-8618-86d4-b580-5b1f1625e9bb` · framed by typography partition `pack` bonds `146` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `825a6662-1567-82cf-87a9-2291fb7287e4` · framed by typography partition `pack` bonds `146` · `pnpm readme` · `pnpm readme:check`</sub>

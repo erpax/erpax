@@ -3,15 +3,15 @@
 
 # street
 
-path `street` · uuid `e876bdf7-a394-8500-a956-fa0ff1515c47` · diamond `8f431aaa-f191-850b-92a5-94ea0324118b`
+path `street` · uuid `e876bdf7-a394-8500-a956-fa0ff1515c47` · diamond `36ba7776-edf3-8cdb-9192-7dc5eb9938b2`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports address·collapse·law·merge·sti · exports street · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → address·collapse·law·merge·sti · ← address·collapse·law·merge·sti
 analysis —
 law street is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `c3852567-5fc2-8ae0-bd2b-78ba4e14895c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a0bc5aed-4639-8075-97e0-cdb444d13658` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # tags
 
-path `tags` · uuid `afbc22af-fb44-8fef-80c9-791bcd2bba11` · diamond `0cffc4cf-db86-875e-955c-628a8f6ded35`
+path `tags` · uuid `afbc22af-fb44-8fef-80c9-791bcd2bba11` · diamond `a5574b6d-a8d6-8494-aa2b-82796f18fe59`
 horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/audit/trail/after/change·@/auth·@/auto/populate/created/by·@/auto/populate/tenant·@/base/accounting/field · exports default · escapes —
-links `0/0` · folded `1` · bonds in `7` out `7`
-faces worker·plugin·pwa `0·0·0`
-neighbors → decompression·disagree·girls·issue·lease·spouse·system · ← decompression·disagree·girls·issue·lease·spouse·system
+links `0/0` · folded `1` · bonds in `16` out `16`
+faces worker·plugin·pwa `1·0·0`
+neighbors → accounting·all·cmyk·collapse·comment·commerce·crest·dimension·fields·horo·localize·metadata·party·sequence·taggings·variant · ← accounting·all·cmyk·collapse·comment·commerce·crest·dimension·fields·horo·localize·metadata·party·sequence·taggings·variant
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `df203cd4-b16d-840d-9980-bf088abaf603` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ba389d22-a458-86a8-a0a8-067b25d6a368` · `pnpm readme` · `pnpm computed:check`</sub>

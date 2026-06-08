@@ -3,8 +3,8 @@
 
 # catholicism
 
-path `catholicism` · uuid `4554f61f-6885-8e3a-a67b-27ce9966278f` · diamond `504bc439-eee0-8882-beb1-5a0b6dc10941`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `catholicism` · uuid `15cf49dc-3ce1-8e33-a6ad-b3df1b225b9a` · diamond `af0e6dd9-70f5-8108-b517-bef4c6d2ebb4`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports archangel·authority·christianity·cycle·diamond·dna·grace·identity·law·lineage·mercy·one·order·religion·ritual·society·translator·uuid·whole · exports catholicism · escapes —
 links `45/45` · folded `1` · bonds in `19` out `19`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law catholicism is a sub-[[diamond]] of [[christianity]] of [[one]] · [[order]]
 
 ---
 
-<sub>content-uuid `57b3bf8d-84c1-8038-8067-f353ddf4e94c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `44631aca-d332-84de-82de-5e2f5a83a9e7` · `pnpm readme` · `pnpm computed:check`</sub>

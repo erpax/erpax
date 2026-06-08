@@ -3,15 +3,15 @@
 
 # fresh
 
-path `convention/fresh` · uuid `dd03e9ef-818f-8645-a1ce-ccabd1e0f1ff` · diamond `58e358f4-4feb-8e01-a846-65a4e375c402`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+path `convention/fresh` · uuid `cb062ec4-bfa1-88ed-bf87-bc6d270d65ed` · diamond `99285a10-b45f-8a03-af39-5f89948d6e42`
+horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/cost · exports const·function·interface · escapes —
-links `12/12` · folded `1` · bonds in `7` out `7`
+links `0/0` · folded `1` · bonds in `1` out `1`
 faces worker·plugin·pwa `1·0·0`
-neighbors → baked·cost·import·law·link·shallow·tamper · ← baked·cost·import·law·link·shallow·tamper
+neighbors → baked · ← baked
 analysis tamper/import
 law no stale refs — every import target exists on disk. An `@/` import whose target is absent is a dead wire, a stale ref, entropy that lowers tamper-cost. coverage = (imports resolving to a real file) / (total `@/` imports); coverage → 1 ⟺ the import graph is fully grounded ⇒ tamper-cost → ∞.
 
 ---
 
-<sub>content-uuid `12de87b7-0c14-87cf-a2f6-96a6eeb2255d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8665c28f-66a0-84d2-aea4-0e6919ff8257` · `pnpm readme` · `pnpm computed:check`</sub>

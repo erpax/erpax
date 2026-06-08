@@ -3,8 +3,8 @@
 
 # cropplan
 
-path `cropplan` · uuid `2d047a59-bc1d-8a19-a325-3d5ff900c143` · diamond `2421173b-c9b5-81b6-9843-cdc97e6ff7db`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `cropplan` · uuid `000a71f1-3c4b-875a-bc12-e032bd32da23` · diamond `f61b1cf1-f7d3-8b21-8158-a46293fcceb3`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports agriculture·allocation·crop·forecast·harvest·law·manufacturing·planting·rotation·schedule·season·seed·version·yield · exports cropplan · escapes —
 links `32/32` · folded `1` · bonds in `17` out `17`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law a crop plan is the recorded, re-runnable backward computation from a sales/[
 
 ---
 
-<sub>content-uuid `e94fd6c8-b1f7-8458-bea6-7e0f01b4b44a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4badb7bd-be40-8f30-8af4-3dcfd2e900a2` · `pnpm readme` · `pnpm computed:check`</sub>

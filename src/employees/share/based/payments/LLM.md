@@ -3,15 +3,15 @@
 
 # payments
 
-path `employees/share/based/payments` · uuid `e2d3c3c6-bde2-8ba9-a943-00c36ccb2ea7` · diamond `59cb11a2-ac2e-8fd7-a623-90aa7dfdce30`
-horo `1` `base` · trinity `1·1·1` · sealed `1`
+path `employees/share/based/payments` · uuid `270bfde6-f8ef-83bd-90cf-930fd33609a4` · diamond `7322b47a-4c11-80be-a23f-67c29ed0ddc1`
+horo `5` `round` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
-links `7/7` · folded `1` · bonds in `12` out `18`
+links `7/7` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `1·0·0`
-neighbors → accounting·accounting·allocations·dunning·employees·escrow·identity·identity·law·law·loan·proof·proof·standard·standard·tenure·transaction·transaction · ← accounting·allocations·dunning·employees·escrow·identity·law·loan·proof·standard·tenure·transaction
+neighbors → accounting·allocations·dunning·escrow·identity·law·loan·proof·standard·transaction · ← accounting·allocations·dunning·escrow·identity·law·loan·proof·standard·transaction
 analysis —
 law one row per equity grant under IFRS 2 — the settlementType discriminator decides whether the grant credits equity or builds a liability, and expense is recognised straight-line over each vesting tranche; a single-folder collection node (no scatter, no drift).
 
 ---
 
-<sub>content-uuid `19adf893-55b2-81d9-bf40-d20e1dce4606` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7293d3c8-3e46-8e0b-a101-befd17b4fd88` · `pnpm readme` · `pnpm computed:check`</sub>

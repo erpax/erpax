@@ -3,15 +3,15 @@
 
 # computer
 
-path `computer` · uuid `ce256c56-84ac-84cc-8824-81fde105bf5b` · diamond `04695ac9-bd1d-8025-9fae-c8cd02f5b39f`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
-imports collapse·language·law·merge·sti·store · exports computer · escapes —
-links `6/6` · folded `1` · bonds in `6` out `6`
+path `computer` · uuid `8f044757-b82c-8def-ab7d-b2597ed3eb09` · diamond `7e4169f2-2a74-89f4-9991-07728d5f0d31`
+horo `5` `round` · trinity `1·1·1` · sealed `1`
+imports @/component·@/computer/algorithm·@/computer/complexity·@/computer/finite·@/computer/graph·@/computer/memory·@/computer/queue·@/computer/stack·@/memory/quantum·@/path·@/uuid/matrix · exports FifoQueue·LifoStack·SEAL_CHECK_FSM·accepts·adjacencyFromAtom·binarySearch·classifyComplexity·const·createAddressSpace·dominantComplexity·edgesFromAtom·function·hasBond·inBounds·insertionSort·interface·isSorted·maxLoopDepth·reachableAtoms·read·recordComputerAlgorithmOnPath·recordComputerComplexityOnPath·recordComputerFiniteOnPath·recordComputerGraphOnPath·recordComputerMemoryOnPath·recordComputerQueueOnPath·recordComputerStackOnPath·step·type·write·writeCostBits · escapes —
+links `32/32` · folded `1` · bonds in `25` out `25`
 faces worker·plugin·pwa `1·0·0`
-neighbors → collapse·language·law·merge·sti·store · ← collapse·language·law·merge·sti·store
+neighbors → collapse·component·component·folder·hardware·hardware·language·language·law·memory·memory·merge·network·network·processor·processor·screen·screen·software·software·sti·storage·storage·store·store · ← collapse·component·component·folder·hardware·hardware·language·language·law·memory·memory·merge·network·network·processor·processor·screen·screen·software·software·sti·storage·storage·store·store
 analysis —
-law computer is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
+law computer science here is executable, not glossary — every CS nested atom ships logic in `index.ts`, proofs in `test.ts`, and a path ledger hook; literary folders without use cases violate the one law.
 
 ---
 
-<sub>content-uuid `47d8778c-48ef-8717-865d-9913ce75d233` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7e3efa13-6325-8175-8932-f29e58ef0752` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # tested
 
-path `tested` · uuid `57ed37dd-2d38-8b56-9273-c4d66cec4fe0` · diamond `1bd7cbb9-541b-8e4b-aac8-ef11cab38f7e`
+path `tested` · uuid `57ed37dd-2d38-8b56-9273-c4d66cec4fe0` · diamond `c1c4abf6-9c6a-8680-8b5e-67260acff49c`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·getting·info·law·merge·sti · exports tested · escapes —
-links `6/6` · folded `1` · bonds in `4` out `4`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·getting·info·law·merge·sti · ← collapse·getting·info·law·merge·sti
 analysis —
 law tested is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `9c914f8a-8a47-83f2-b4eb-f5018127d7b5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b24520e0-efc4-8f70-b0e3-df41fa12cc23` · `pnpm readme` · `pnpm computed:check`</sub>

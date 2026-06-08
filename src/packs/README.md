@@ -25,7 +25,28 @@
 
 - partition `packs` · sub-root `42280e54-aade-8ff0-9f00-015a850049a3`
 - bond degree `39` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `GS1 logistics SSCC carton-identity (the `number` / `barcode`)` · banner
+- `IFRS IAS-2 §10 finished-goods carried to dispatch` · banner
+- `ISA-95` · catalogue
+- `ISA-95:2013 §B.5 production-operations dispatch` · banner
+- `ISO-19011:2018 audit-trail dispatch` · banner
+- `ISO/IEC-29119` · catalogue
+- `UN-CEFACT` · catalogue
+- `UN/CEFACT Rec20 weight (kilogram) · volume (cubic-metre)` · banner
+
+## analytics
+
+- bond degree `39` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `8`
 
 ## identity
 
@@ -41,4 +62,4 @@
 
 ---
 
-<sub>content-uuid `29920d09-25ab-8387-9e69-b485971fb04f` · framed by typography partition `packs` bonds `39` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d9d017f6-19ce-8f24-bde1-1b005467e417` · framed by typography partition `packs` bonds `39` · `pnpm readme` · `pnpm readme:check`</sub>

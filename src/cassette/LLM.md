@@ -3,9 +3,9 @@
 
 # cassette
 
-path `cassette` · uuid `488180ae-2868-83d8-8f0a-c1f097a3c7cf` · diamond `814afa08-0bb5-8564-b411-1f7958dba1fd`
+path `cassette` · uuid `f7eb5bd9-6d40-8652-ab23-a5fe7e014176` · diamond `39de1490-10bd-8b9c-993b-7f757adcafe5`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
-imports collapse·law·merge·sti · exports cassette · escapes —
+imports @/medical/device · exports deviceReadingFromCassette·wireModalityToEmr · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
 neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
@@ -14,4 +14,4 @@ law cassette is one schema.org word, content-addressed; the same word collides e
 
 ---
 
-<sub>content-uuid `9ab7c0a1-5b9b-86e0-90e6-2f5296f454ff` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `20716b5b-a514-8448-b1dc-290e76992895` · `pnpm readme` · `pnpm computed:check`</sub>

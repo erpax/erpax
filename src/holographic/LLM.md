@@ -3,15 +3,15 @@
 
 # holographic
 
-path `holographic` · uuid `5d018913-b3f1-8341-aa70-3213b1beabfb` · diamond `7da7907b-507b-8fa6-9268-b8d3c08b3cef`
+path `holographic` · uuid `5d018913-b3f1-8341-aa70-3213b1beabfb` · diamond `41559ea6-6730-8b40-9e2b-6a47ca573550`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports akashic·aura·config·dimension·duality·fractal·identity·merge·one·self · exports holographic · escapes —
-links `19/19` · folded `1` · bonds in `85` out `80`
+links `19/19` · folded `1` · bonds in `86` out `81`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·agent·akashic·analog·animism·atom·aura·beyond·cache·cases·classroom·cloning·collapse·compass·competencies·config·consciousness·contribution·corruption·cost·defence·diamond·dimension·duality·education·federation·fractal·gravity·health·hermeticism·hinduism·identity·justice·linearity·llm·logic·matrix·matter·memory·merge·message·one·paganism·peace·projection·proof·protestantism·readme·receipt·reference·religion·rodin·science·sectors·seed·self·sequence·services·shinto·similar·skill·skills·society·sparsity·stream·sufficient·sync·team·test·thought·torus·transaction·trinity·typography·uuid·vedanta·void·website·whole·wisdom · ← access·agent·akashic·analog·animism·atom·aura·beyond·cache·cases·classroom·cloning·collapse·compass·competencies·config·consciousness·contribution·corruption·cost·cost·defence·diamond·dimension·duality·education·federation·fractal·gravity·health·hermeticism·hinduism·identity·justice·linearity·llm·logic·matrix·matter·memory·merge·message·one·paganism·peace·projection·proof·protestantism·readme·receipt·reference·religion·rodin·science·sectors·seed·self·sequence·services·shinto·similar·skill·skills·society·sparsity·stream·sufficient·sync·sync·team·test·thought·torus·transaction·trinity·typography·typography·uuid·uuid·vedanta·void·website·whole·whole·wisdom
+neighbors → access·agent·akashic·analog·animism·atom·aura·beyond·cache·cases·classroom·cloning·collapse·compass·competencies·config·consciousness·contribution·corruption·cost·defence·diamond·dimension·duality·education·federation·fractal·gravity·health·hermeticism·hinduism·identity·justice·linearity·llm·logic·matrix·matter·memory·merge·message·one·paganism·peace·projection·proof·protestantism·readme·receipt·reference·religion·rodin·science·sectors·seed·self·sequence·services·session·shinto·similar·skill·skills·society·sparsity·stream·sufficient·sync·team·test·thought·torus·transaction·trinity·typography·uuid·vedanta·void·website·whole·wisdom · ← access·agent·akashic·analog·animism·atom·aura·beyond·cache·cases·classroom·cloning·collapse·compass·competencies·config·consciousness·contribution·corruption·cost·cost·defence·diamond·dimension·duality·education·federation·fractal·gravity·health·hermeticism·hinduism·identity·justice·linearity·llm·logic·matrix·matter·memory·merge·message·one·paganism·peace·projection·proof·protestantism·readme·receipt·reference·religion·rodin·science·sectors·seed·self·sequence·services·session·shinto·similar·skill·skills·society·sparsity·stream·sufficient·sync·sync·team·test·thought·torus·transaction·trinity·typography·typography·uuid·uuid·vedanta·void·website·whole·whole·wisdom
 analysis aura
 law —
 
 ---
 
-<sub>content-uuid `83a2d916-70bb-8dd4-aaba-3500f6629897` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0b21570f-bde1-8aa5-934f-0748f15e745f` · `pnpm readme` · `pnpm computed:check`</sub>

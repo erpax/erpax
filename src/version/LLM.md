@@ -3,15 +3,15 @@
 
 # version
 
-path `version` · uuid `d4718560-ccd4-8a44-a0ad-9f66ed3b584d` · diamond `9fdfc147-31d7-85bf-8ad3-a070ed75c658`
+path `version` · uuid `d4718560-ccd4-8a44-a0ad-9f66ed3b584d` · diamond `e8a0763f-8d3e-8567-989f-129bac20f2b8`
 horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/integrity·@/skill/router · exports const·function · escapes —
-links `12/12` · folded `1` · bonds in `2` out `2`
-faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+links `12/12` · folded `1` · bonds in `11` out `11`
+faces worker·plugin·pwa `1·0·0`
+neighbors → assembly·aura·cropplan·identity·merge·projection·proof·seed·self·sequence·software · ← assembly·aura·cropplan·identity·merge·projection·proof·seed·self·sequence·software
 analysis aura
 law —
 
 ---
 
-<sub>content-uuid `149d038d-4130-8128-ad19-b99edb03f217` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5fe1a40f-0078-806f-8d53-7bd285797c32` · `pnpm readme` · `pnpm computed:check`</sub>

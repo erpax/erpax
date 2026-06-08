@@ -23,7 +23,7 @@
 
 - partition `drains` · sub-root `0ffd05f6-9bc4-847d-9466-dfeb3058dcbf`
 - bond degree `9` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `807c7d6a-6bd6-8749-832c-8f0e8d7fe4a8` · framed by typography partition `drains` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `876175e3-d0c4-8b2f-b1f6-10b916f419cc` · framed by typography partition `drains` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -25,7 +25,23 @@
 
 - partition `interactive` · sub-root `37e0639c-c155-861e-9e93-72661e220af2`
 - bond degree `21` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `the interactive face is renderAtom over the node's content-uuid; coverage read live from the matrix` · banner
+- `the interactive face is renderAtom over the node's content-uuid; coverage read live from the matrix, never asserted` · banner
+- `the trinity (one node, three sources, one page) extended by the render (the fourth, live face)` · banner
+
+## analytics
+
+- bond degree `21` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `3`
 
 ## identity
 
@@ -41,4 +57,4 @@
 
 ---
 
-<sub>content-uuid `450fbc68-1aa1-8c91-a7b3-6c74933e1cd8` · framed by typography partition `interactive` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `3e9e310d-4ba5-89e7-8bc2-11fd18c5cac3` · framed by typography partition `interactive` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>

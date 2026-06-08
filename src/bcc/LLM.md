@@ -3,8 +3,8 @@
 
 # bcc
 
-path `bcc` · uuid `08dffde5-594e-81cc-8328-4f0d980cb95f` · diamond `3423fbb4-07ce-84e3-9b99-32d78ad437da`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `bcc` · uuid `27623e54-dda0-8454-99b8-ba2b66833663` · diamond `221d21d1-f3ff-849a-9b59-38295cab3890`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·recipient·sti · exports bcc · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law bcc is one schema.org word, content-addressed; the same word collides every 
 
 ---
 
-<sub>content-uuid `7442b7ca-a918-8b6d-a9c7-ba3037557710` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `69235a66-e82f-87b8-b3ae-04e76573443d` · `pnpm readme` · `pnpm computed:check`</sub>

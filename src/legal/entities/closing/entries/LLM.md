@@ -3,15 +3,15 @@
 
 # entries
 
-path `legal/entities/closing/entries` · uuid `903df318-70a5-8608-9f3f-52170c6a3cd9` · diamond `338863b6-5022-86e3-b14b-0bb27a59a7a5`
-horo `5` `round` · trinity `1·1·1` · sealed `1`
+path `legal/entities/closing/entries` · uuid `f0205628-43e1-894a-a16a-2bf0f0a7913c` · diamond `7d6c014d-75fb-87c8-b82d-b1bdb6207ff2`
+horo `5` `round` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/generate/reversing/entry·@/validate/closing/period·@/validate/multi/currency/closing · exports const · escapes —
-links `1/1` · folded `1` · bonds in `37` out `40`
+links `1/1` · folded `1` · bonds in `34` out `34`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·accounting·accrual·adjustments·assets·bookings·classifications·combinations·cycles·deduction·deferral·deferredrevenue·elimination·eliminations·employees·events·harvest·horo·identity·identity·journals·law·law·law·modifications·orders·postings·prepaid·proof·proof·provision·recognition·reconciliations·refunds·runs·sales·standard·standard·transaction·transactions · ← accounting·accrual·adjustments·adjustments·adjustments·assets·bookings·classifications·combinations·cycles·deduction·deferral·deferredrevenue·elimination·eliminations·employees·events·harvest·horo·identity·journals·law·modifications·orders·postings·prepaid·proof·provision·recognition·reconciliations·refunds·runs·sales·standard·transaction·transactions·transactions
+neighbors → accounting·accrual·adjustments·adjustments·adjustments·assets·bookings·classifications·combinations·cycles·deduction·deferral·deferredrevenue·elimination·eliminations·events·harvest·identity·journals·law·modifications·orders·postings·prepaid·proof·provision·recognition·reconciliations·refunds·runs·sales·standard·transactions·transactions · ← accounting·accrual·adjustments·adjustments·adjustments·assets·bookings·classifications·combinations·cycles·deduction·deferral·deferredrevenue·elimination·eliminations·events·harvest·identity·journals·law·modifications·orders·postings·prepaid·proof·provision·recognition·reconciliations·refunds·runs·sales·standard·transactions·transactions
 analysis —
 law period-end close zeroes the P&L accounts to retained earnings, auto-generates the reversing entries, locks the period, and leaves an immutable close audit trail.
 
 ---
 
-<sub>content-uuid `d32a4b5c-1df1-83e4-8ca3-90be4d18ee23` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1f831435-27eb-8dc4-aa0e-184d93482ac5` · `pnpm readme` · `pnpm computed:check`</sub>

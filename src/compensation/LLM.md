@@ -3,7 +3,7 @@
 
 # compensation
 
-path `compensation` · uuid `799e2d05-4ce8-8611-8cc6-66bb61aa35d5` · diamond `ff769c2f-647c-8c9c-a6ce-fa893a38ac30`
+path `compensation` · uuid `d23e6a75-6b34-81e4-bb37-808bf9855890` · diamond `a43dba1b-3511-8f95-9be9-680196cb9e9e`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports allocation·bank·currency·employees·positions·rate·tenure · exports compensation · escapes —
 links `7/7` · folded `1` · bonds in `8` out `8`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `0ac7eba1-665b-8b97-ac43-a089731055ee` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b06b1273-eee4-84d5-98a1-b9a7ad83768d` · `pnpm readme` · `pnpm computed:check`</sub>

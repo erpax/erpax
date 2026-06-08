@@ -2,9 +2,11 @@
 
 # mcp
 
-> atom `agents/mcp` · horo `8` `crest` · [[balance]] `1` · [[seal]] `0`
+> atom `agents/mcp` · horo `5` `round` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `agents/mcp` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -19,13 +21,59 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
+
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:stray:[[gap]]/[[diamond]]/stray/tools-list.mjs`
+
+### collapse
+
+- `balance:variance=1`
+- `law:erpax does not build an MCP server — it adopts the official `@payloadcms/plugin-mcp` ([[collapse]]), every tool handler inheriting the key owner's [[access]] so the gateway can never exceed the actor's rights, made trust-native: each call passes [[sandbox]] and emits a [[receipt]].`
+- `seal:unsealed`
+- `trigger:Use when reasoning about erpax's agent gateway — it IS the official @payloadcms/plugin-mcp (collapse sink #1, never hand-roll an MCP server): every enabled collection becomes find/create/update/delete tools at /api/mcp, custom tools (GW fusion, trust) are added via the plugin's mcp config, Bearer API-key auth inherits the key owner's access + multi-tenant scope. erpax makes it TRUST-NATIVE — every tool call passes sandbox (capability + credential-broker + allowlist) and emits a receipt (uuid-chained audit), the dual of an external trust wrapper done from the inside.`
+- `trigger:erpax does not build an MCP server — it adopts the official `@payloadcms/plugin-mcp` ([[collapse]]), every tool handler inheriting the key owner's [[access]] so the gateway can never exceed the actor's rights, made trust-native: each call passes [[sandbox]] and emits a [[receipt]].`
+- `trigger:matter-twin:src/services/agents/mcp/`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `061c6950-c2e9-84d8-b97a-095fa8495c94` · `0d888f73-6052-80b0-b347-4b66c7dfc014` · `b3a86cb2-0f53-8201-86a1-1fcf6d51fda9`
+- content uuids `2e31a7d6-0784-8ee4-99b3-dde281ec915c` · `c780fd19-f153-8613-b38c-e523c4ca00b1` · `e6724f14-778c-8448-8b0c-10170507e2e8`
+
+## [[entropy]] — gaps · seals
+
+> account code `agents/mcp` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[diamond]]/stray/tools-list.mjs `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.5` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+| Σ gap `2` eb | Σ seal `8.5` eb |
+
+> net residual `-6.5` eb · seal/gap ratio `4.25` · [[entropy]] · [[seal]]
 
 ## typography graph
 
-- partition `agents` · sub-root `d61c922b-8275-8cea-b2f7-58d389dcbd08`
-- bond degree `162` · analysis neighbors `agent`
-- graph root `06810c2c-2396-831f-a2b3-a58706a17051`
+- partition `agents` · sub-root `ebb64057-771d-8596-aa2c-0ae29c531a68`
+- bond degree `0` · analysis neighbors —
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
 
 ## [[cloudflare]] bindings
 
@@ -60,23 +108,60 @@
 - `NIST-SP-800-162` · catalogue
 - `NIST-SP-800-63` · catalogue
 - `OWASP-ASVS` · catalogue
-- `re-exports only; the truth lives in ./in-process-client and ./tool-defs` · banner
 - `RFC-7231` · catalogue
 - `RFC-9562` · catalogue
 - `W3C-DID-1.0` · catalogue
 - `W3C-JSON-LD-1.1` · catalogue
 - `W3C-WAI-ARIA-1.2` · catalogue
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unbalanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| not-held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·5 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `162` · sealed `0` · horo `8`
-- variance `0` · balanced `1` · trinity sum `3`
-- bindings `0` · standards `33`
+- bond degree `0` · sealed `0` · horo `5`
+- variance `1` · balanced `0` · trinity sum `3`
+- bindings `0` · standards `32`
 
 ## identity
 
-- uuid `5f105b12-20b5-82f1-8c73-516cf2a12909`
-- bonds in `45` · out `53`
+- uuid `1d8e2e3f-8193-8353-9d15-be65bac543ec`
+- bonds in `22` · out `22`
 - trinity form·code·proof `1`·`1`·`1`
 - links `39` / `39`
 - folded `1` · escapes `0`
@@ -87,4 +172,4 @@
 
 ---
 
-<sub>content-uuid `948fe64f-02fd-8203-a25c-bdf3e002df3e` · framed by typography partition `agents` bonds `162` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c548b31d-7921-82d6-a837-5fdbedd957d3` · framed by typography partition `agents` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

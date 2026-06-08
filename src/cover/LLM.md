@@ -3,8 +3,8 @@
 
 # cover
 
-path `cover` · uuid `7d4ff821-0b8e-86bf-ba9b-af9c73b577bc` · diamond `a760561e-80d8-8fa1-8156-7a20ca07fc0b`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `cover` · uuid `c6085a17-a80f-89c7-ac38-3b603213d360` · diamond `d314ea19-7a21-85d5-ba78-a6c042cc7eaf`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports art·collapse·comic·law·merge·sti·variant · exports cover · escapes —
 links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law cover is one schema.org word, content-addressed; the same word collides ever
 
 ---
 
-<sub>content-uuid `78fb0fee-8cfd-8348-bc32-509aaeb07819` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9c581b1f-fb2d-80de-a8cf-de7c85e8484c` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -2,7 +2,7 @@
 
 # crown
 
-> atom `crown` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
+> atom `crown` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -23,9 +23,9 @@
 
 ## typography graph
 
-- partition `crown` · sub-root `48d919a0-451b-85fa-ae41-46431d357a08`
+- partition `crown` · sub-root `2988b4d8-e2fa-83e6-885f-b8228d07ec05`
 - bond degree `12` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -36,15 +36,53 @@
 - `note, colour and uuid computed from the position math, never hand-asserted` · banner
 - `note·colour·uuid computed from the position math, never hand-asserted` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·7 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `12` · sealed `1` · horo `5`
+- bond degree `12` · sealed `1` · horo `7`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `2`
 
 ## identity
 
-- uuid `48d919a0-451b-85fa-ae41-46431d357a08`
+- uuid `2988b4d8-e2fa-83e6-885f-b8228d07ec05`
 - bonds in `4` · out `4`
 - trinity form·code·proof `1`·`1`·`1`
 - links `9` / `9`
@@ -56,4 +94,4 @@
 
 ---
 
-<sub>content-uuid `410b41fa-f476-8e6f-9029-86680d8c3b5b` · framed by typography partition `crown` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `473bf7f6-b9e4-8554-a4aa-3cb03d6107ad` · framed by typography partition `crown` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

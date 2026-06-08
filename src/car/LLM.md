@@ -3,7 +3,7 @@
 
 # car
 
-path `car` · uuid `7ea60c64-5dcd-831d-9021-cc9338fb6d64` · diamond `68197917-b15f-88fb-aeb7-c7bccd4ff9a5`
+path `car` · uuid `c2551b9f-c148-848c-b14d-be7b05962dd7` · diamond `0ebf480b-621c-8f35-abb5-5cd01b5eccf2`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports law·rental·reservation·type·usage · exports car · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
@@ -14,4 +14,4 @@ law car is one schema.org word, content-addressed; the same word collides every 
 
 ---
 
-<sub>content-uuid `514816a0-a3c1-8992-9ba1-5dbb965415b9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f33d86d3-6e7d-80da-a253-5586809cf584` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `taxi` · sub-root `d92d35f8-f8c5-8399-b7be-a6c28a0f17eb`
-- bond degree `17` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `15` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `d92d35f8-f8c5-8399-b7be-a6c28a0f17eb`
-- bonds in `5` · out `5`
+- bonds in `4` · out `4`
 - trinity form·code·proof `1`·`0`·`0`
 - links `4` / `4`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `2e51876b-3716-8d81-976c-709f04ed875b` · framed by typography partition `taxi` bonds `17` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `29ebe274-902a-81ac-bdab-6a55f03acd45` · framed by typography partition `taxi` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

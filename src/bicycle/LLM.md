@@ -3,8 +3,8 @@
 
 # bicycle
 
-path `bicycle` · uuid `6c9d7716-ee58-8e26-95bb-c2ca8c62a71c` · diamond `c1b4fddf-3ecf-8e08-b47f-4a3db00168be`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `bicycle` · uuid `91f5a700-7382-8264-b1b5-f6ddbd42dbb1` · diamond `af9ea6dd-8468-86c2-bf9a-97f59558be80`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·motorized·sti · exports bicycle · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law bicycle is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `80ead69a-d011-890c-8695-346fa9c5dd6e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6924766e-0ac8-8fd5-9f52-a40ab88cfafe` · `pnpm readme` · `pnpm computed:check`</sub>

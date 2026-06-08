@@ -3,8 +3,8 @@
 
 # deferredrevenue
 
-path `deferredrevenue` · uuid `d20bce8e-7383-8544-8768-03cb13701d68` · diamond `0a5dac2c-2f6f-8ab0-b123-077d15fc405a`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `deferredrevenue` · uuid `891c0e99-6344-8b13-8fba-e54d07cda942` · diamond `b1b25d22-5e30-8cc5-b299-091bd0d66330`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports accrual·contracts·customers·deferral·invoices·journal·law · exports deferredrevenue · escapes —
 links `9/9` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law deferred revenue is a contract liability — cash received before the perfor
 
 ---
 
-<sub>content-uuid `d77631bc-b44e-8aae-a183-86e8d7c4655a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `85056288-e6ef-8061-8a17-ff07308797f2` · `pnpm readme` · `pnpm computed:check`</sub>

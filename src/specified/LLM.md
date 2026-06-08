@@ -3,15 +3,15 @@
 
 # specified
 
-path `specified` · uuid `ae341f9a-27cc-8913-980e-2f6db9d278e8` · diamond `ed66fb61-8f5a-8a6f-81ee-fd9e09fc0d50`
+path `specified` · uuid `ae341f9a-27cc-8913-980e-2f6db9d278e8` · diamond `ad3b31bb-4dd3-84c9-b050-d9566e036e3d`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports specified · escapes —
-links `4/4` · folded `1` · bonds in `8` out `8`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → attestations·cohort·discover·landmarks·memories·quote·stat·truth · ← attestations·cohort·discover·landmarks·memories·quote·stat·truth
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law specified is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `fd13e777-571e-8466-b277-b94315e15900` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7ac2fc6b-7a85-8289-93f9-00c0c6e23e8c` · `pnpm readme` · `pnpm computed:check`</sub>

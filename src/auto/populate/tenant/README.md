@@ -2,9 +2,11 @@
 
 # tenant
 
-> atom `auto/populate/tenant` · horo `8` `crest` · [[balance]] `1` · [[seal]] `0`
+> atom `auto/populate/tenant` · horo `2` `share` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `auto/populate/tenant` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,11 +23,61 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `law:a row's [[tenant]] is derived from the request [[user]], not the client — the first `req.user.tenants[]` reference is stamped onto the data before validation, the seam of cloud-tenant isolation.`
+- `seal:unsealed`
+- `trigger:Use when auto-populating the multi-tenant tenant field from the request user before validation — a beforeValidate hook that copies req.user.tenants[0].tenant onto the incoming data for tenant isolation.`
+- `trigger:`autoPopulateTenant` (a `CollectionBeforeValidateHook`). One of the [[auto]]-populate control gates ([[hooks]]).`
+- `trigger:a row's [[tenant]] is derived from the request [[user]], not the client — the first `req.user.tenants[]` reference is stamped onto the data before validation, the seam of cloud-tenant isolation.`
+- `trigger:matter-twin:src/auto/populate/tenant/index.ts`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `346e8c59-4344-8e42-961f-09f60d5caa93` · `ce42cfed-e0c0-8bf7-936d-e197556939ee` · `da078668-1711-8f6c-8a79-3e3e617df1c8`
+- content uuids `09710b1a-d9de-8cd1-8a09-a3fadf8c2bc3` · `9025a55b-943e-81bb-b7f4-028b4cd136f4` · `9368dca0-38a6-883d-9a6d-527ba557fcd1`
+
+## [[entropy]] — gaps · seals
+
+> account code `auto/populate/tenant` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.2` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `2` eb | Σ seal `11.2` eb |
+
+> net residual `-9.2` eb · seal/gap ratio `5.6` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `auto` · sub-root `fb1afd9b-bd8f-8c8d-8f4e-d2d40410747f`
-- bond degree `42` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- partition `auto` · sub-root `f4fab508-f961-864c-be0f-f7a7df045e62`
+- bond degree `30` · analysis neighbors —
+- graph root `86252db0-c776-84eb-b8e4-c884dca3a3ba`
 
 ## [[cloudflare]] bindings
 
@@ -33,19 +85,56 @@
 
 ## [[standards]]
 
-- `ISO-19011:2018 audit-trail before-validate-hooks` · banner
 - `SOC-2 CC4.1 monitoring-and-evaluation` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·2 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
 
 ## analytics
 
-- bond degree `42` · sealed `0` · horo `8`
+- bond degree `30` · sealed `0` · horo `2`
 - variance `0` · balanced `1` · trinity sum `3`
-- bindings `0` · standards `2`
+- bindings `0` · standards `1`
 
 ## identity
 
-- uuid `1a876b1c-4264-8aea-9978-f539bcc9d5da`
-- bonds in `12` · out `14`
+- uuid `65597364-6af4-86a1-a5b4-cb29b301f573`
+- bonds in `7` · out `7`
 - trinity form·code·proof `1`·`1`·`1`
 - links `8` / `8`
 - folded `1` · escapes `0`
@@ -56,4 +145,4 @@
 
 ---
 
-<sub>content-uuid `f64d73a2-3292-8505-a15b-7b9765910c0a` · framed by typography partition `auto` bonds `42` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `904e7cbc-cd3e-80a5-89ff-ad4b871bcb80` · framed by typography partition `auto` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>

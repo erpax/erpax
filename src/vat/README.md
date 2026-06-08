@@ -23,7 +23,7 @@
 
 - partition `vat` · sub-root `0400246b-0499-82d4-abf8-57fc6220dea4`
 - bond degree `15` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `899eb851-bdef-8f37-a11c-92f1b7d21ee6` · framed by typography partition `vat` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d7c348e3-103c-8ae8-896d-2cdff2baf509` · framed by typography partition `vat` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

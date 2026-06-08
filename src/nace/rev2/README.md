@@ -2,7 +2,7 @@
 
 # rev2
 
-> atom `nace/rev2` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
+> atom `nace/rev2` · horo `4` `weave` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -25,7 +25,26 @@
 
 - partition `nace` · sub-root `04f28d52-142e-8143-ac58-54cc0c4335fd`
 - bond degree `3` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `EU CSRD ESRS 2 §80(b) sector-classification` · banner
+- `EU Regulation (EC) No 1893/2006 NACE Rev.2` · banner
+- `EU-2006/43` · catalogue
+- `NACE` · catalogue
+- `NAICS 2022 (US/CA/MX companion)` · banner
+- `UN ISIC Rev.4 (companion)` · banner
+
+## analytics
+
+- bond degree `3` · sealed `0` · horo `4`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `6`
 
 ## identity
 
@@ -37,8 +56,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `4560734d-c6ed-8c24-889a-de54c135b024` · framed by typography partition `nace` bonds `3` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `aae5f961-db35-8ee5-85a7-3397ef8a1492` · framed by typography partition `nace` bonds `3` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,21 @@
 
 - partition `idempotency` · sub-root `878e73a6-735f-8f5f-b133-9858d8fa09f9`
 - bond degree `16` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `16` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `171d08c9-24a7-813c-8daa-5c5cb4536cde` · framed by typography partition `idempotency` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `39e6360d-3179-808b-a2fe-08cc66e7c99c` · framed by typography partition `idempotency` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

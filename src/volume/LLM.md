@@ -8,10 +8,10 @@ horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports cargo·collapse·eligible·law·merge·number·publication·sti·transaction · exports volume · escapes —
 links `9/9` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `0·0·0`
-neighbors → boat·cohort·kpi·landmarks·memories·observe·review·scope·stat · ← boat·cohort·kpi·landmarks·memories·observe·review·scope·stat
+neighbors → cargo·collapse·eligible·law·merge·number·publication·sti·transaction · ← cargo·collapse·eligible·law·merge·number·publication·sti·transaction
 analysis —
 law volume is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `6cd076b6-e608-8a8a-a581-2cb1a1b199fc` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `866734f4-d1ea-86f9-aaae-67a911de1384` · `pnpm readme` · `pnpm computed:check`</sub>

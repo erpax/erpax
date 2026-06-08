@@ -23,7 +23,21 @@
 
 - partition `osteopathic` · sub-root `fba7c300-02e8-8ef1-bd20-44b22311f3d3`
 - bond degree `12` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `12` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `976a270b-04b9-8a5d-92cb-804331d93ced` · framed by typography partition `osteopathic` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `1752d3f5-f2e8-8249-af0c-af6ff7f512db` · framed by typography partition `osteopathic` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

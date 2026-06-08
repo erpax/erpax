@@ -2,7 +2,7 @@
 
 # iso
 
-> atom `iso` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
+> atom `iso` · horo `4` `weave` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -17,13 +17,56 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `7` | Σ `7` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `iso` · sub-root `ea5c4346-ba0e-8fac-9959-143d07932374`
-- bond degree `15` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- bond degree `0` · analysis neighbors —
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ECMA-262` · catalogue
+- `ECMA-402` · catalogue
+- `EU-2000/31` · catalogue
+- `EU-2003/88/EC` · catalogue
+- `EU-2005/29` · catalogue
+- `EU-2011/83` · catalogue
+- `EU-2014/55` · catalogue
+- `EU-2024/1183` · catalogue
+- `EU-2024/1620` · catalogue
+- `EU-2024/1624` · catalogue
+- `EU-537/2014` · catalogue
+- `EU-765/2008` · catalogue
+- `EU-910/2014` · catalogue
+- `EU-CSDDD-2024/1760` · catalogue
+- `EU-VAT-Implementing-Reg-282/2011` · catalogue
+- `ISO-13616-1` · catalogue
+- `ISO-14289-1` · catalogue
+- `ISO-17442-1` · catalogue
+- `ISO-19005` · catalogue
+- `ISO-19011` · catalogue
+- `ISO-27001` · catalogue
+- `ISO-27002` · catalogue
+- `ISO-3166-2` · catalogue
+- `ISO-32000` · catalogue
+- `ISO-7064` · catalogue
+- `ISO-9362` · catalogue
+- `ISO/IEC-27001:2022` · catalogue
+- `ISO/IEC-27002:2022` · catalogue
+- `Peppol-BIS-3.0` · catalogue
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `0` · sealed `0` · horo `4`
+- variance `1` · balanced `0` · trinity sum `1`
+- bindings `0` · standards `30`
 
 ## identity
 
@@ -35,8 +78,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `d40abab4-0eea-8133-92dd-4775c7c046f8` · framed by typography partition `iso` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `dd50b95d-295b-8da1-8cd8-8c236c497539` · framed by typography partition `iso` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

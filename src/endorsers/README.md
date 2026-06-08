@@ -23,7 +23,7 @@
 
 - partition `endorsers` · sub-root `4cb01295-79da-87b3-8acd-6c79964a5cd3`
 - bond degree `9` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `759beb7f-99d3-8054-9a36-605a51cef233` · framed by typography partition `endorsers` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `3ad9cf3a-c1f6-816f-838a-1c6d45d16b8c` · framed by typography partition `endorsers` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -2,7 +2,7 @@
 
 # depart
 
-> atom `depart` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
+> atom `depart` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -21,9 +21,9 @@
 
 ## typography graph
 
-- partition `depart` · sub-root `947d4f35-e990-83c4-897a-9b01087a30d0`
+- partition `depart` · sub-root `296f5ce5-5dd6-8326-b24d-a46aca025513`
 - bond degree `16` · analysis neighbors —
-- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -33,15 +33,53 @@
 
 - `schema.org — the type vocabulary, collided to single words` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·1 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `16` · sealed `1` · horo `4`
+- bond degree `16` · sealed `1` · horo `1`
 - variance `0` · balanced `1` · trinity sum `1`
 - bindings `0` · standards `1`
 
 ## identity
 
-- uuid `947d4f35-e990-83c4-897a-9b01087a30d0`
+- uuid `296f5ce5-5dd6-8326-b24d-a46aca025513`
 - bonds in `5` · out `5`
 - trinity form·code·proof `1`·`0`·`0`
 - links `5` / `5`
@@ -53,4 +91,4 @@
 
 ---
 
-<sub>content-uuid `7b32420c-bc94-8fc4-ad56-0b2fdfb65792` · framed by typography partition `depart` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b62edfb4-964a-842d-b81e-b2e71b38aba8` · framed by typography partition `depart` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

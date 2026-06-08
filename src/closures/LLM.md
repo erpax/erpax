@@ -3,8 +3,8 @@
 
 # closures
 
-path `closures` · uuid `c83038f0-ab08-8b67-b286-701381bd80b9` · diamond `4817d108-0dad-8fc6-9c48-3fbbbf86b31c`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `closures` · uuid `4afbde40-e198-85a8-b05f-723c691b9367` · diamond `bae822e1-ffc1-8ec0-aa66-5dafd7be0e2f`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·info·law·merge·public·school·sti·transport · exports closures · escapes —
 links `8/8` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law closures is one schema.org word, content-addressed; the same word collides e
 
 ---
 
-<sub>content-uuid `e4b3c49d-faef-8bc8-8d74-165d9fbc7d87` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5963fccc-f91d-8701-818b-7249899e0f43` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,8 +3,8 @@
 
 # allocations
 
-path `invoices/payments/payment/allocations` · uuid `0b50d883-bb8c-83b3-966b-32c409b16b25` · diamond `26ab8a1a-a852-88b5-ba66-e796b6803e2e`
-horo `1` `base` · trinity `1·1·1` · sealed `1`
+path `invoices/payments/payment/allocations` · uuid `a6c1e0ec-73fa-88a0-8600-dd28a0bd9e76` · diamond `a36514ca-d9bd-8d46-b1a4-0b808dbc61e2`
+horo `7` `descent` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
 links `7/7` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law an allocation explicitly maps one payment onto the specific invoices/bills i
 
 ---
 
-<sub>content-uuid `e300c83f-8635-8ceb-b2fb-3093cbb6e640` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2465d835-6b60-8406-bdfd-74849dd84b39` · `pnpm readme` · `pnpm computed:check`</sub>

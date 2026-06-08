@@ -2,7 +2,7 @@
 
 # manufacturing
 
-> atom `manufacturing` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
+> atom `manufacturing` · horo `8` `crest` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -17,13 +17,32 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `7` | Σ `7` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `manufacturing` · sub-root `5f1b8d16-8da8-8539-9f81-d13071b7d228`
-- bond degree `144` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- bond degree `0` · analysis neighbors —
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ESCO` · catalogue
+- `EU-2011/83` · catalogue
+- `EU-VAT-Implementing-Reg-282/2011` · catalogue
+- `NACE` · catalogue
+- `SFIA` · catalogue
+- `UN-CEFACT` · catalogue
+
+## analytics
+
+- bond degree `0` · sealed `0` · horo `8`
+- variance `1` · balanced `0` · trinity sum `1`
+- bindings `0` · standards `6`
 
 ## identity
 
@@ -35,8 +54,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `f84ea99e-5cc6-854c-8a31-31e34787cff4` · framed by typography partition `manufacturing` bonds `144` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `54a9984e-1257-851d-b720-25b948d87232` · framed by typography partition `manufacturing` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

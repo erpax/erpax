@@ -8,10 +8,10 @@ horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports tvseries · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law tvseries is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `6c8f81ae-b31e-8144-8cfd-9a00c9172682` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e517d12b-bc98-8e6a-ba67-087ea5d2b8c3` · `pnpm readme` · `pnpm computed:check`</sub>

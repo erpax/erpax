@@ -3,8 +3,8 @@
 
 # cropped
 
-path `cropped` · uuid `1ff39cf7-25cc-82bd-a7e9-b6c9201f46b0` · diamond `d38306ec-f24c-8fc1-971d-0f22caf148a1`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `cropped` · uuid `0d619cc0-9878-882a-8813-b4edf443797e` · diamond `ef2bd03f-8e9c-84cb-8a6b-bb65bb17ab6a`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports cropped · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law cropped is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `6dde3075-7895-871a-b0ee-2fb89d358a0e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1692c84c-f835-86dc-8304-cf535d4f6642` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,8 +3,8 @@
 
 # call
 
-path `call` · uuid `c0c82bb0-d4ac-8117-a62e-beaa0ea1922a` · diamond `2e2b16fc-1ce6-85c9-af8a-571af33df22b`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `call` · uuid `42d01d6d-4e72-8376-8527-845213c5022d` · diamond `4a00b0dd-a9cd-8d7d-81bd-2afebd69095c`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sign·sti · exports call · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law call is one schema.org word, content-addressed; the same word collides every
 
 ---
 
-<sub>content-uuid `54eed44d-742b-8c27-949f-e2fccae8ffa9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7fedfd07-26c3-8ab4-91ae-147435141e83` · `pnpm readme` · `pnpm computed:check`</sub>

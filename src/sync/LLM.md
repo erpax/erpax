@@ -3,15 +3,15 @@
 
 # sync
 
-path `sync` · uuid `7faca436-8f85-82e2-83f6-71e10a3ac0ce` · diamond `05b1615f-b177-8b08-a26d-219d03da74f9`
-horo `4` `weave` · trinity `1·0·0` · sealed `0`
+path `sync` · uuid `5e46aec2-1452-8280-89ed-e8779874a699` · diamond `faf6e96c-3090-8326-8445-95f81c480061`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports atom·blockchain·collapse·distribution·entropy·fractal·generate·hallucination·holographic·identity·integrity·law·linearity·memory·merge·part·peace·purity·quantum·snapshot·sync·uuid·whole · exports sync · escapes —
-links `48/48` · folded `0` · bonds in `8` out `8`
+links `48/48` · folded `1` · bonds in `26` out `31`
 faces worker·plugin·pwa `0·0·0`
-neighbors → agent·dropoff·founder·hobby·id·landmarks·memories·spouse · ← agent·dropoff·founder·hobby·id·landmarks·memories·spouse
-analysis diamond·hallucination·purity
+neighbors → agent·atom·blockchain·collapse·distribution·duality·entropy·fractal·fractal·generate·hallucination·holographic·holographic·identity·identity·integrity·law·law·linearity·memory·merge·merge·part·peace·purity·snapshot·standard·stream·sync·uuid·whole · ← agent·atom·blockchain·collapse·distribution·duality·entropy·fractal·generate·hallucination·holographic·identity·integrity·law·linearity·memory·merge·part·peace·purity·snapshot·standard·stream·sync·uuid·whole
+analysis hallucination·purity
 law the content-[[uuid]] is the one invariant across every compute substrate — identical content ⇒ identical hash ⇒ zero divergence — so memory, cpu, and gpu stay synchronized at zero [[entropy]] for free and exactly; sync is not a protocol but a consequence of content-addressing (the [[merge]] law across substrates), and a divergence is a different hash, an impurity caught by [[integrity]].
 
 ---
 
-<sub>content-uuid `d72fc185-fe05-8b27-bbcf-63776dd02c7c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e7f8153f-c5b4-8329-a252-c67cf3e0ebcd` · `pnpm readme` · `pnpm computed:check`</sub>

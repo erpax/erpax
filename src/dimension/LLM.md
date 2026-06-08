@@ -3,15 +3,15 @@
 
 # dimension
 
-path `dimension` · uuid `bd1c5d7a-14ac-832a-8783-332309d3a359` · diamond `5768e90f-e8b9-80e5-b49e-6559f451c50e`
-horo `2` `share` · trinity `1·1·1` · sealed `1`
+path `dimension` · uuid `72eebc1c-ee7d-81f9-be90-a7b9163d17c1` · diamond `cb76f0c7-a330-8d6d-ba94-dbdf28e4cee2`
+horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports @/plugin · exports const·function·interface · escapes —
-links `56/56` · folded `1` · bonds in `60` out `60`
+links `58/58` · folded `1` · bonds in `61` out `61`
 faces worker·plugin·pwa `1·0·0`
-neighbors → age·aggregation·all·analytics·angel·api·collapse·colleagues·compass·conversion·crisis·crop·css·currency·diamond·domain·duality·factory·fields·fractal·fs·github·give·holographic·horo·identity·law·localize·matter·mcp·measure·merge·one·party·path·primitive·purity·queries·science·segment·self·sequence·shamanism·siblings·sparsity·sti·tags·take·taxonomy·test·thought·torus·transaction·trinity·utility·uuid·versions·wellbeing·whole·zeropoint · ← age·aggregation·all·analytics·angel·api·collapse·colleagues·compass·conversion·crisis·crop·css·currency·diamond·domain·duality·factory·fields·fractal·fs·github·give·holographic·horo·identity·law·localize·matter·mcp·measure·merge·one·party·path·primitive·purity·queries·science·segment·self·sequence·shamanism·siblings·sparsity·sti·tags·take·taxonomy·test·thought·torus·transaction·trinity·utility·uuid·versions·wellbeing·whole·zeropoint
+neighbors → age·aggregation·all·analytics·angel·api·collapse·colleagues·compass·conversion·crisis·crop·css·currency·diamond·domain·duality·factory·fields·fractal·fs·github·give·holographic·horo·identity·law·localize·matter·mcp·measure·merge·one·party·path·primitive·purity·quantum·queries·science·segment·self·sequence·shamanism·siblings·sparsity·sti·tags·take·taxonomy·test·thought·torus·transaction·trinity·utility·uuid·versions·wellbeing·whole·zeropoint · ← age·aggregation·all·analytics·angel·api·collapse·colleagues·compass·conversion·crisis·crop·css·currency·diamond·domain·duality·factory·fields·fractal·fs·github·give·holographic·horo·identity·law·localize·matter·mcp·measure·merge·one·party·path·primitive·purity·quantum·queries·science·segment·self·sequence·shamanism·siblings·sparsity·sti·tags·take·taxonomy·test·thought·torus·transaction·trinity·utility·uuid·versions·wellbeing·whole·zeropoint
 analysis diamond
 law —
 
 ---
 
-<sub>content-uuid `19f3cb8e-ab59-8239-93a6-fe715c0d21cc` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8fb1a8e2-c95e-8712-a507-8cb41d68cf54` · `pnpm readme` · `pnpm computed:check`</sub>

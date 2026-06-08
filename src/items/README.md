@@ -2,7 +2,7 @@
 
 # items
 
-> atom `items` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
+> atom `items` · horo `5` `round` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -19,13 +19,48 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `5` · [[conservation]] `0` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `items` · sub-root `1341dba3-9395-8200-8e47-ea3dc4d4b9e9`
-- bond degree `146` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- bond degree `0` · analysis neighbors —
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `EN-16931:2017 §BG-31 item-information` · banner
+- `EU-1007/2011 textile-fibre-names + composition-labelling (the `contents` field)` · banner
+- `EU-2005/29` · catalogue
+- `EU-2011/83` · catalogue
+- `EU-2014/55` · catalogue
+- `EU-537/2014` · catalogue
+- `EU-910/2014` · catalogue
+- `EU-VAT-Implementing-Reg-282/2011` · catalogue
+- `GS1 GTIN global-trade-item-number` · banner
+- `GS1-GTIN` · catalogue
+- `IFRS IAS-2 inventories` · banner
+- `ILO-C100` · catalogue
+- `INCOTERMS-2020` · catalogue
+- `ISA-95` · catalogue
+- `ISO-22400-2` · catalogue
+- `ISO-4217:2015 currency-codes price-currency` · banner
+- `ISO-9001` · catalogue
+- `ISO-9735` · catalogue
+- `UN-CEFACT` · catalogue
+- `UN-CEFACT UNSPSC product-classification` · banner
+- `UNSPSC` · catalogue
+- `US-GAAP ASC-330 inventory` · banner
+
+## analytics
+
+- bond degree `0` · sealed `0` · horo `5`
+- variance `5` · balanced `0` · trinity sum `3`
+- bindings `0` · standards `22`
 
 ## identity
 
@@ -37,8 +72,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `6b2008e5-3660-88f0-8854-8254f793c0ed` · framed by typography partition `items` bonds `146` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c6e94007-7044-82da-afe3-04fabd439ee1` · framed by typography partition `items` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

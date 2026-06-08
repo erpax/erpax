@@ -2,7 +2,7 @@
 
 # agriculture
 
-> atom `agriculture` · horo `5` `round` · [[balance]] `1` · [[seal]] `0`
+> atom `agriculture` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -21,9 +21,9 @@
 
 ## typography graph
 
-- partition `agriculture` · sub-root `d65965f6-9220-88d9-949e-9cb968223e53`
+- partition `agriculture` · sub-root `c6a205b8-f834-8f48-8e8c-aa3b6d93952f`
 - bond degree `244` · analysis neighbors —
-- graph root `06810c2c-2396-831f-a2b3-a58706a17051`
+- graph root `67d11a43-67e0-8dde-afd8-ecbed950ff42`
 
 ## [[cloudflare]] bindings
 
@@ -35,15 +35,53 @@
 - `IFRS-15` · catalogue
 - `UBL-2.1` · catalogue
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·5 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `244` · sealed `0` · horo `5`
+- bond degree `244` · sealed `1` · horo `5`
 - variance `0` · balanced `1` · trinity sum `1`
 - bindings `0` · standards `3`
 
 ## identity
 
-- uuid `d65965f6-9220-88d9-949e-9cb968223e53`
+- uuid `c6a205b8-f834-8f48-8e8c-aa3b6d93952f`
 - bonds in `72` · out `72`
 - trinity form·code·proof `1`·`0`·`0`
 - links `89` / `89`
@@ -51,8 +89,8 @@
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `a1504f63-89c5-8440-9c37-11d36c7df7a8` · framed by typography partition `agriculture` bonds `244` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b356c70a-0501-8366-86fc-aa4597e16e38` · framed by typography partition `agriculture` bonds `244` · `pnpm readme` · `pnpm readme:check`</sub>

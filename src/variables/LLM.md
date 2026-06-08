@@ -3,15 +3,15 @@
 
 # variables
 
-path `variables` · uuid `c887f2e6-3a2b-88c1-a10f-9227aae13486` · diamond `4a87ada4-a532-8f2c-ab03-892c6b98854b`
+path `variables` · uuid `c887f2e6-3a2b-88c1-a10f-9227aae13486` · diamond `9964e754-9931-874c-af21-1a7a5a46ac4c`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·measured·merge·sti · exports variables · escapes —
-links `5/5` · folded `1` · bonds in `11` out `11`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → assembly·aura·crop·id·memories·progression·project·seat·sections·sell·sku · ← assembly·aura·crop·id·memories·progression·project·seat·sections·sell·sku
+neighbors → collapse·law·measured·merge·sti · ← collapse·law·measured·merge·sti
 analysis —
 law variables is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `fadec8a2-82f2-8d00-9c69-37bb5bbd549c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4830ac49-a214-8e02-a036-71a3899f6aa7` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,8 +3,8 @@
 
 # departure
 
-path `departure` · uuid `644ab8b0-5a4f-8acf-bf1d-9c0ef9874e9d` · diamond `c21df3c5-fdc2-8313-99b4-29b443f3614f`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `departure` · uuid `b12a60da-ee62-8bdd-ad67-583ebdd87ca3` · diamond `917ae177-a678-8cf1-8b41-d43bf3f6ba2d`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports airport·boat·bus·collapse·gate·law·merge·platform·station·sti·stop·terminal·time · exports departure · escapes —
 links `13/13` · folded `1` · bonds in `13` out `13`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law departure is one schema.org word, content-addressed; the same word collides 
 
 ---
 
-<sub>content-uuid `9c489283-ca66-8ea9-b886-14913bcad55d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8842f50f-5953-82d1-9f29-70ad8d8d0259` · `pnpm readme` · `pnpm computed:check`</sub>

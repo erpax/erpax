@@ -3,8 +3,8 @@
 
 # carriers
 
-path `carriers` · uuid `59a910dc-53ff-8dce-9232-fc3accedc757` · diamond `975ddc9c-d183-8316-aff3-c3924f6e52ac`
-horo `1` `base` · trinity `1·1·1` · sealed `1`
+path `carriers` · uuid `2b3a89ff-e298-850a-8a6b-93a733f13104` · diamond `bc8c3ba7-b0d9-82ae-86fd-ac4f2582ef42`
+horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports @/auth·@/base/accounting/field·@/incoterms/2020·@/standard/collection/hook · exports default · escapes —
 links `7/7` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law the carrier master is the one normalized [[identity]] for every shipping/fre
 
 ---
 
-<sub>content-uuid `586e3706-fa00-8345-88d0-e521017b1430` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `72555ddd-bf24-85a2-b7eb-2edd2d6df1fd` · `pnpm readme` · `pnpm computed:check`</sub>

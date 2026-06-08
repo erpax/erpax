@@ -25,7 +25,35 @@
 
 - partition `insurance` · sub-root `7006f364-784b-8b65-bba1-157ce05f46c0`
 - bond degree `99` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `IFRS IFRS-13 fair-value-input-hierarchy` · banner
+- `IFRS IFRS-17 §3 scope` · banner
+- `IFRS IFRS-17 §32 general-measurement-model-building-blocks` · banner
+- `IFRS IFRS-17 §38 contractual-service-margin` · banner
+- `IFRS IFRS-17 §53 premium-allocation-approach-simplified` · banner
+- `IFRS IFRS-17 §93 disclosure-requirements` · banner
+- `IFRS IFRS-17 §B100 variable-fee-approach` · banner
+- `IFRS-13` · catalogue
+- `IFRS-17` · catalogue
+- `ILO-C100` · catalogue
+- `ISO 19011:2018 §6.4.6 audit-evidence-insurance-contracts` · banner
+- `ISO-4217:2015 currency-codes` · banner
+- `ISO-8601-1:2019 date-time` · banner
+- `Solvency II / IAIS ICS — actuarial reserving link` · banner
+- `SOX §404 internal-controls TOM-INS-01` · banner
+
+## analytics
+
+- bond degree `99` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `15`
 
 ## identity
 
@@ -41,4 +69,4 @@
 
 ---
 
-<sub>content-uuid `ac3c4451-d5f6-8033-a8b0-79ca74982f3e` · framed by typography partition `insurance` bonds `99` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ec9394c8-4ebd-8d2c-b4d5-dccf6b9dff70` · framed by typography partition `insurance` bonds `99` · `pnpm readme` · `pnpm readme:check`</sub>

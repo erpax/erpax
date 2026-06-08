@@ -23,7 +23,21 @@
 
 - partition `game` · sub-root `fdfd5a19-a098-8016-8d6c-8dd6babad4b2`
 - bond degree `64` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `64` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `cc0aaeb7-36f2-8251-9594-a63f4a3298df` · framed by typography partition `game` bonds `64` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `643d4f48-329c-8c9d-86dc-4b5e18a2753e` · framed by typography partition `game` bonds `64` · `pnpm readme` · `pnpm readme:check`</sub>

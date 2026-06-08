@@ -2,7 +2,7 @@
 
 # signal
 
-> atom `identity/signal` · horo `9` `unity` · [[balance]] `1` · [[seal]] `1`
+> atom `identity/signal` · horo `9` `unity` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -23,7 +23,21 @@
 
 - partition `identity` · sub-root `b7e2b408-e05c-80ec-894d-7da74fa699c1`
 - bond degree `169` · analysis neighbors `aura`
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `169` · sealed `0` · horo `9`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -35,8 +49,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `e6dc44fa-b162-8375-9115-9c231db7d4b6` · framed by typography partition `identity` bonds `169` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `7dbc6266-b487-80c9-9fa1-b4467733dc49` · framed by typography partition `identity` bonds `169` · `pnpm readme` · `pnpm readme:check`</sub>

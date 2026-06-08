@@ -3,8 +3,8 @@
 
 # cdformat
 
-path `cdformat` · uuid `9482efd6-5a13-8a73-ab02-6bd9267989ff` · diamond `ad736182-6e8c-889e-9b14-3ab28741a23d`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `cdformat` · uuid `890d0c51-1883-84f3-b2ce-cb03b80ee5e3` · diamond `e157a273-c230-882d-a2b1-2434e3695515`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports cdformat · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law cdformat is one schema.org word, content-addressed; the same word collides e
 
 ---
 
-<sub>content-uuid `a3ec653c-826e-8276-8733-099ec4d3b349` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `023d05c4-385c-8f50-9cc2-38b0aee11f66` · `pnpm readme` · `pnpm computed:check`</sub>

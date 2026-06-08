@@ -2,9 +2,11 @@
 
 # movements
 
-> atom `items/inventory/movements` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
+> atom `items/inventory/movements` · horo `1` `base` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `items/inventory/movements` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -19,17 +21,121 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
+
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:stray:[[gap]]/[[diamond]]/stray/hooks/`
+
+### collapse
+
+- `balance:variance=1`
+- `law:the append-only stock ledger — every quantity change records its source and destination location and posts COGS/variance to the GL, never an in-place edit ([[balance]]).`
+- `seal:unsealed`
+- `trigger:Use when tracking any stock quantity change — receipts, sales/issues, production consumption, transfers, returns, cycle-count adjustments, write-offs, or opening balances — with from/to warehouse locations and GL hook for COGS/variance posting. The append-only stock ledger per IAS-2 cost-flow assumption.`
+- `trigger:the append-only stock ledger — every quantity change records its source and destination location and posts COGS/variance to the GL, never an in-place edit ([[balance]]).`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `084a7a91-4742-8bfc-aa6b-7be3c86ad37b` · `9cc5962d-6adb-86d9-ad2b-8bdd0991f6e6` · `bf1f7e4b-e116-8894-ac28-357a64c4f65b`
+- content uuids `636e76aa-6167-817d-ac78-3c589a0f0dca` · `71199eb9-9d62-83d4-a6ca-430e368c21f3` · `9f2ee5bc-e1c9-87a2-aeea-e6232bf41df9`
+
+## [[entropy]] — gaps · seals
+
+> account code `items/inventory/movements` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[diamond]]/stray/hooks/ `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.1` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+| Σ gap `2` eb | Σ seal `8.1` eb |
+
+> net residual `-6.1` eb · seal/gap ratio `4.05` · [[entropy]] · [[seal]]
 
 ## typography graph
 
-- partition `items` · sub-root `1341dba3-9395-8200-8e47-ea3dc4d4b9e9`
-- bond degree `32` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- partition `items` · sub-root `e1747762-a2bb-8ab4-aaeb-99c9513102fb`
+- bond degree `0` · analysis neighbors —
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `IFRS IAS-2 §10 §36 inventories cost-formulas` · banner
+- `IFRS IAS-2 §25 cost-formulas` · banner
+- `ISO-3166-1:2020 country-codes via location` · banner
+- `ISO-8601-1:2019 date-time movement-at posted-at` · banner
+- `SOX §404 internal-controls inventory-cycle-count` · banner
+- `US-GAAP ASC-330 inventory cost-flow` · banner
+- `US-GAAP ASC-330-10-30 inventory-valuation` · banner
+- `US-GAAP ASC-606 cogs-recognition` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unbalanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| not-held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·1 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `0` · sealed `0` · horo `1`
+- variance `1` · balanced `0` · trinity sum `3`
+- bindings `0` · standards `8`
 
 ## identity
 
-- uuid `e2b16d2a-a8a6-8fcc-8938-e22aec2fb54d`
+- uuid `5ccc3079-0a39-8bd4-9a04-053790c1031d`
 - bonds in `10` · out `10`
 - trinity form·code·proof `1`·`1`·`1`
 - links `6` / `6`
@@ -37,8 +143,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `c43444d4-d5c3-8e1d-ba89-db3ebd8fde32` · framed by typography partition `items` bonds `32` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0666c161-f6a2-8933-857e-981e22bcf71b` · framed by typography partition `items` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,8 +3,8 @@
 
 # asin
 
-path `asin` · uuid `3e3e3d3d-a471-871f-a97e-a542538c4edd` · diamond `663613ae-8be6-8e5a-8972-8add97c4aece`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `asin` · uuid `3d82b3d9-46d6-8fb3-8060-396df71aab79` · diamond `8bdc576e-2f79-8047-a500-c439556a5496`
+horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports law·product·thing · exports asin · escapes —
 links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law asin is one schema.org word, content-addressed; the same word collides every
 
 ---
 
-<sub>content-uuid `8576166d-3d6a-8ede-96e0-5fe11bd3a20d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `29a134f6-e6da-8d94-b48f-eb971fdc7166` · `pnpm readme` · `pnpm computed:check`</sub>

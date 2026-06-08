@@ -3,8 +3,8 @@
 
 # delivery
 
-path `delivery` · uuid `c6b3f6e3-5b97-812d-abe4-39f0cf9b31a9` · diamond `a525f527-d348-835c-8753-8cb1daec877e`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `delivery` · uuid `b8245893-f9a6-8899-a0c3-3824a9bc3860` · diamond `7cee3158-a59f-87c5-95d2-ce54d5266efb`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports address·applies·available·charge·collapse·event·has·law·lead·merge·method·order·parcel·settings·shipping·specification·status·sti·time · exports delivery · escapes —
 links `19/19` · folded `1` · bonds in `20` out `20`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law delivery is one schema.org word, content-addressed; the same word collides e
 
 ---
 
-<sub>content-uuid `a6947198-bdee-888b-8016-cb457ae5431a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f0b25d53-0d3a-8b65-b7b5-e3486e67494d` · `pnpm readme` · `pnpm computed:check`</sub>

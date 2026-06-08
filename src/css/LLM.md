@@ -3,15 +3,15 @@
 
 # css
 
-path `css` · uuid `8ac7e2ab-b02d-8084-9f94-5da3562b0671` · diamond `a3f169b2-9868-84c1-ac87-5643aadd125d`
+path `css` · uuid `03b0b976-5cb0-8110-8b2a-5a3c73ea0475` · diamond `510b9452-ce87-8eb8-b518-c0853cabcf88`
 horo `7` `descent` · trinity `1·1·1` · sealed `1`
-imports @/diamond·@/integrity · exports function·interface · escapes —
-links `28/28` · folded `1` · bonds in `13` out `13`
+imports @/diamond·@/integrity · exports ComputedCssProvider·DEFAULT_UI_SURFACE·SHADCN_TOKEN_KEYS·chromaOf·computedCssForUi·computedCssInjection·computedCssStyleObject·computedCssVarName·contrastForeground·function·interface·mixHex·payloadAdminAliases·type·useComputedCss · escapes —
+links `32/32` · folded `1` · bonds in `18` out `18`
 faces worker·plugin·pwa `1·0·0`
-neighbors → atom·component·diamond·dimension·gate·law·primitive·proof·purity·seal·selector·trinity·typography · ← atom·component·diamond·dimension·gate·law·primitive·proof·purity·seal·selector·trinity·typography
+neighbors → atom·component·design·diamond·dimension·gate·law·pixel·primitive·proof·purity·seal·selector·signal·speech·trinity·typography·ui · ← atom·component·design·diamond·dimension·gate·law·pixel·primitive·proof·purity·seal·selector·signal·speech·trinity·typography·ui
 analysis diamond·purity
-law css is the styling diamond — the form facet of the visual [[dimension]]; each stylesheet is content-addressed and sealed; loaders and typegen paths MUST recognize `.css` (and `.scss`) as on-ring diamond surfaces (stub hook), never as unknown external extensions.
+law UI theme is computed from diamond state — `computedCssForUi(surface)` derives every shadcn `--token` and Payload `--theme-*` alias from content-uuid · horo · seal · path account code; no hand-maintained palette strings on any surface (src/ui, admin/ui, dashboard, widgets, blocks).
 
 ---
 
-<sub>content-uuid `d96dbb61-5c9f-83d8-b1dd-e92823d4edf9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `64b0d791-661a-8eff-a395-b8ee9599171e` · `pnpm readme` · `pnpm computed:check`</sub>

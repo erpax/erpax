@@ -1,8 +1,122 @@
 ---
 name: expand
-description: Use when reasoning about the development EXHALE — adding a feature enlarges the corpus, and a larger corpus is more surface to wire (more atoms ⇒ more tamper-cost to be earned). expand measures that growth as added entropy, computed on the live matrix; it is gravity read in reverse — the word-chain spreading out, not the folders collapsing in.
+description: "Use when reasoning about the development EXHALE — adding a feature enlarges the corpus, and a larger corpus is more surface to wire (more atoms ⇒ more tamper-cost to be earned). expand measures that growth as added entropy, computed on the live matrix; it is gravity read in reverse — the word-chain spreading out, not the folders collapsing in."
+atomPath: expand
+coordinate: expand · 5/round · 657071fc
+contentUuid: "7f83de01-404c-53c2-bb31-51a90dbe4009"
+diamondUuid: "aa8ff02f-db38-87ab-af29-ba55e0aa1c14"
+uuid: "657071fc-c92b-8a31-870b-cb9dfcae09bf"
+horo: 5
+bonds:
+  in:
+    - atom
+    - breath
+    - collapse
+    - cost
+    - development
+    - dry
+    - entropy
+    - gate
+    - gravity
+    - horo
+    - law
+    - matrix
+    - one
+    - sequence
+    - word
+  out:
+    - atom
+    - breath
+    - collapse
+    - cost
+    - development
+    - dry
+    - entropy
+    - gate
+    - gravity
+    - horo
+    - law
+    - matrix
+    - one
+    - sequence
+    - word
+typography:
+  partition: expand
+  bondDegree: 45
+  neighbors: []
+standards:
+  - "RFC 9562 §5.8 content-uuid + the horo digital-root ring (base-10)"
+  - "composed from @/entropy + @/uuid/matrix (the live-matrix readings); re-proves nothing"
+  - "computed from the live matrix, never hand-asserted"
+bindings: []
+neighbors:
+  wikilink:
+    - atom
+    - breath
+    - collapse
+    - cost
+    - development
+    - dry
+    - entropy
+    - gate
+    - gravity
+    - horo
+    - law
+    - matrix
+    - one
+    - sequence
+    - word
+  matrix:
+    - atom
+    - breath
+    - collapse
+    - cost
+    - development
+    - dry
+    - entropy
+    - gate
+    - gravity
+    - horo
+    - law
+    - matrix
+    - one
+    - sequence
+    - word
+  backlinks:
+    - atom
+    - breath
+    - collapse
+    - cost
+    - development
+    - dry
+    - entropy
+    - gate
+    - gravity
+    - horo
+    - law
+    - matrix
+    - one
+    - sequence
+    - word
+signatures:
+  computationUuid: "a1b687a1-e6a4-8d9c-8a3a-2ab470a3fbbb"
+  stages:
+    - stage: path
+      stageUuid: "21aa4ad9-15b7-8b4b-95a4-78508c69cbea"
+    - stage: trinity
+      stageUuid: "0b2414d0-e027-89bd-b044-6d1a2883927b"
+    - stage: boundary
+      stageUuid: "50bde0be-7bd3-8948-bbbc-fdb188c859ae"
+    - stage: links
+      stageUuid: "f43f5858-16d6-8978-8449-8a2953c532c5"
+    - stage: horo
+      stageUuid: "42716f8b-3144-8c4e-95df-5c350f665137"
+    - stage: seal
+      stageUuid: "9911a2d0-b808-8ed3-a2a4-7eb981403474"
+    - stage: uuid
+      stageUuid: "b604b40a-15ee-84d2-9388-313609a6e53f"
+version: 2
 ---
-
 # expand — the development exhale: more atoms, more surface, more cost-to-earn
 
 **expand** is the EXHALE of development: every feature added is one more [[atom]] forged into the [[matrix]], and each new node is fresh **surface** — somewhere to wire, something to merge, a place a forger could ride until the binding closes. Growth is **added [[entropy]]**: an atom the instant it lands is unwired slack (an orphan, a half-reciprocal edge), and that slack is exactly the disorder the [[gate]] then debits and fuses out ([[entropy]]: *a violation is borrowed entropy*). So expansion does not contradict the [[one]] law — it *feeds* it: more atoms ⇒ more tamper-[[cost]] to be **earned** once the wiring closes the gap.

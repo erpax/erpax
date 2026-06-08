@@ -52,7 +52,8 @@ import { manifestOf } from '@/agent'
 import { BUSINESS_CHAINS } from '@/business/chain'
 import { listTenantRoles } from '@/tenant/role'
 import { TAMPER_PROOF_COLLECTIONS_REGISTRY } from '@/integrity'
-import { ATOM_CATALOGUE } from './atom-catalogue.generated'
+import { loadAtomCatalogue, lookupAtomSkill, atomCatalogueLength } from './atom-catalogue-lazy'
+import { loadSkillByAtomPath } from '@/skill/router/lazy-load'
 
 const text = (s: string) => ({ content: [{ text: s, type: 'text' as const }] })
 const json = (v: unknown) => text(JSON.stringify(v, null, 2))
@@ -139,12 +140,23 @@ function toolsForStandardsFamilies(): ErpaxMcpTool[] {
  * primitive like agents/chains/roles; it self-projects the same way.
  */
 function toolsForSkills(): ErpaxMcpTool[] {
-  return ATOM_CATALOGUE.map((skill) => ({
+  return loadAtomCatalogue().map((skill) => ({
     name: `erpax.auto.skill.${skill.atom}`,
     description: `[generated] skill atom '${skill.name}': ${skill.description}`,
     parameters: {} as z.ZodRawShape,
     async handler() {
-      return json(skill)
+      const meta = lookupAtomSkill(skill.atom) ?? skill
+      const sealed = loadSkillByAtomPath(meta.path)
+      return json({
+        atom: meta.atom,
+        name: meta.name,
+        description: meta.description,
+        path: meta.path,
+        sealedExcerpt: sealed?.excerpt ?? null,
+        excerptChars: sealed?.excerptChars ?? 0,
+        fullChars: sealed?.fullChars ?? 0,
+        contentUuid: sealed?.contentUuid ?? null,
+      })
     },
   }))
 }
@@ -203,8 +215,8 @@ export function checkAutoGenerationCoverage(
   const collectionTools = [...TAMPER_PROOF_COLLECTIONS_REGISTRY].filter((s) => toolNames.has(`erpax.auto.collection.${s}.verify`)).length
   const roleTools = listTenantRoles().filter((r) => toolNames.has(`erpax.auto.role.${r.id.replace(/[^a-z0-9-]/g, '-')}`)).length
   const familyTools = STANDARDS_FAMILIES.filter((f) => toolNames.has(`erpax.auto.standards.${f}`)).length
-  const skillsCount = ATOM_CATALOGUE.length
-  const skillTools = ATOM_CATALOGUE.filter((s) => toolNames.has(`erpax.auto.skill.${s.atom}`)).length
+  const skillsCount = atomCatalogueLength()
+  const skillTools = loadAtomCatalogue().filter((s) => toolNames.has(`erpax.auto.skill.${s.atom}`)).length
 
   if (agentTools < agentsCount) violations.push(`agents: ${agentTools}/${agentsCount} have auto-generated tools`)
   if (chainTools < chainsCount) violations.push(`chains: ${chainTools}/${chainsCount} have auto-generated tools`)

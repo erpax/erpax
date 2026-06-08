@@ -2,7 +2,7 @@
 
 # eliminations
 
-> atom `consolidation/eliminations` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
+> atom `consolidation/eliminations` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -23,9 +23,9 @@
 
 ## typography graph
 
-- partition `consolidation` · sub-root `4fc2f3ba-94b4-8ed5-9da6-dcdc137a02de`
+- partition `consolidation` · sub-root `80df108c-16f5-8acf-ae72-85b52522918b`
 - bond degree `13` · analysis neighbors —
-- graph root `0349017a-99bf-8657-ae7e-21b09f363ed4`
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -42,15 +42,53 @@
 - `US-GAAP ASC-810-10-45 consolidation-elimination` · banner
 - `US-GAAP ASC-830-30 foreign-currency-translation` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·4 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `13` · sealed `1` · horo `1`
+- bond degree `13` · sealed `1` · horo `4`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `8`
 
 ## identity
 
-- uuid `4f254bde-8bbe-8fee-a915-02af6de06b26`
+- uuid `d1535dd7-43ef-8943-a9e4-2ceabd89f3d8`
 - bonds in `4` · out `4`
 - trinity form·code·proof `1`·`1`·`1`
 - links `4` / `4`
@@ -62,4 +100,4 @@
 
 ---
 
-<sub>content-uuid `4b2da059-2542-8416-aa39-6b65ee2c611d` · framed by typography partition `consolidation` bonds `13` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `891cdfe6-c00f-879e-9287-1732fad06e16` · framed by typography partition `consolidation` bonds `13` · `pnpm readme` · `pnpm readme:check`</sub>

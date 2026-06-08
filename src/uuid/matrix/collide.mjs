@@ -73,46 +73,53 @@ const positionOf = (atom, dim, uuid) => {
 }
 const HORO_LABEL = { 1: 'base', 2: 'share', 4: 'weave', 8: 'crest', 7: 'descent', 5: 'round', 9: 'unity', 3: 'axis·3', 6: 'axis·6' }
 
-// ── 1. nodes ──
+// ── 1. nodes — one node per atom path (folder path IS the matrix address) ──
 const files = walk(ROOT)
-const idx = new Map() // word key -> node index
-const nodes = [] // {atom, uuid, dim, band, horo, path, members?}
+const pathIdx = new Map() // atomPath -> node index
+const leafPaths = new Map() // norm(leaf) -> atomPath[] (homonym disambiguation for [[links]])
+const nodes = [] // {atom, uuid, dim, band, horo, path}
 let corpusBytes = 0
+const atomPathOf = (f) => relative(ROOT, dirname(f)).replace(/\\/g, '/')
+const parentPathOf = (p) => { const i = p.lastIndexOf('/'); return i >= 0 ? p.slice(0, i) : null }
 for (const f of files) {
   const content = readFileSync(f)
   corpusBytes += content.length
-  const key = norm(basename(dirname(f)))
-  const path = relative(ROOT, dirname(f)) // where this occurrence lives — the path reveals
+  const path = atomPathOf(f)
+  const leaf = norm(basename(dirname(f)))
   const uuid = toUuid(content)
   const dim = dimOf(relative(ROOT, f))
-  if (idx.has(key)) {
-    // collision = an ACCOUNTABLE COLLECTION: the same word at many paths is ONE
-    // concept. Merge the occurrence into the word's account — the binding-uuid IS
-    // the double-entry — and accumulate the member paths. Nothing is discarded
-    // (was `last wins`, which silently lost 8 atoms; the path reveals each member).
-    const ex = nodes[idx.get(key)]
-    ex.members = [...(ex.members ?? [ex.path]), path]
-    ex.uuid = merge(ex.uuid, uuid)
-    ex.path = null // a collection spans paths; no single one
-    const p = positionOf(key, ex.dim, ex.uuid) // re-place from the accountable (merged) uuid
-    ex.band = p.band
-    ex.horo = p.horo
-    continue
+  const pos = positionOf(leaf, dim, uuid)
+  pathIdx.set(path, nodes.length)
+  if (!leafPaths.has(leaf)) leafPaths.set(leaf, [])
+  leafPaths.get(leaf).push(path)
+  nodes.push({ atom: leaf, uuid, dim, band: pos.band, horo: pos.horo, path })
+}
+/** Resolve [[link]] to a node index — full path first, then leaf with root/shortest preference. */
+const resolveLink = (raw) => {
+  const link = raw.replace(/\\/g, '/')
+  const segments = link.split('/').map((s) => norm(s))
+  if (segments.length > 1) {
+    const pi = pathIdx.get(segments.join('/'))
+    if (pi !== undefined) return pi
   }
-  const pos = positionOf(key, dim, uuid)
-  idx.set(key, nodes.length)
-  nodes.push({ atom: key, uuid, dim, band: pos.band, horo: pos.horo, path })
+  const leaf = segments[segments.length - 1]
+  const paths = leafPaths.get(leaf)
+  if (!paths?.length) return undefined
+  if (paths.length === 1) return pathIdx.get(paths[0])
+  const root = paths.find((p) => !p.includes('/'))
+  if (root) return pathIdx.get(root)
+  paths.sort((a, b) => a.split('/').length - b.split('/').length || a.localeCompare(b))
+  return pathIdx.get(paths[0])
 }
 
 // ── 1b. the [[coordinate]] cross: parent (tree axis) ⊕ prev ⊕ next (sequence ring, the 2 coils) ──
 // Each atom binds to its three neighbour uuids; tampering any atom ripples to parent/prev/next.
 const NIL = '00000000-0000-8000-8000-000000000000'
-const byPath = new Map()
-for (const n of nodes) if (n.path) byPath.set(n.path, n)
-const ordered = [...nodes].sort((a, b) => String(a.path ?? a.atom).localeCompare(String(b.path ?? b.atom)))
+const ordered = [...nodes].sort((a, b) => a.path.localeCompare(b.path))
 const N = ordered.length
 ordered.forEach((n, i) => {
-  const parent = (n.path && byPath.get(dirname(n.path))?.uuid) || NIL // tree (axis)
+  const pp = parentPathOf(n.path)
+  const parent = (pp && pathIdx.has(pp) ? nodes[pathIdx.get(pp)].uuid : null) || NIL // tree (axis)
   const prev = ordered[(i - 1 + N) % N].uuid // reverse coil (ring wraps via octave)
   const next = ordered[(i + 1) % N].uuid // forward coil
   n.parent = parent
@@ -126,16 +133,16 @@ ordered.forEach((n, i) => {
 const edges = [] // {f, t, binding, dir}
 let totalRefs = 0, unresolved = 0
 for (const f of files) {
-  const from = idx.get(norm(basename(dirname(f))))
+  const from = pathIdx.get(atomPathOf(f))
   const text = stripCode(readFileSync(f, 'utf8'))
   const seen = new Set()
   let m
   while ((m = LINK_RE.exec(text))) {
-    const w = norm(m[1].split('/').pop())
-    if (seen.has(w)) continue
-    seen.add(w)
+    const key = m[1].replace(/\\/g, '/').toLowerCase()
+    if (seen.has(key)) continue
+    seen.add(key)
     totalRefs++
-    const to = idx.get(w)
+    const to = resolveLink(m[1])
     if (to === undefined) { unresolved++; continue }
     edges.push({ f: from, t: to, binding: merge(nodes[from].uuid, nodes[to].uuid), dir: compose(nodes[from].horo, nodes[to].horo) })
   }
@@ -190,13 +197,13 @@ console.log(`\n── harmonic directions (edges by horo composeSteps a×b — c
 for (const d of [1, 2, 4, 8, 7, 5, 9, 3, 6]) if (byDir[d]) console.log(`  ${d} ${HORO_LABEL[d].padEnd(8)} ${fmt(byDir[d])}`)
 console.log(`  flow {1,2,4,8,7,5} = ${fmt(flow)}   ·   axis {3,6,9} = ${fmt(axis)}   (${(flow / (flow + axis) * 100).toFixed(1)}% flow)`)
 
-const collections = nodes.filter((n) => n.members)
-if (collections.length) {
-  const accounted = collections.reduce((s, n) => s + n.members.length, 0)
-  console.log(`\n── accountable collections (one word, many paths — merged, double-entry) ──`)
-  console.log(`  ${collections.length} collections accounting ${accounted} member paths (else lost to last-wins)`)
-  for (const c of collections.sort((a, b) => b.members.length - a.members.length))
-    console.log(`  ${c.atom.padEnd(12)} ${c.members.join(' · ')}`)
+const homonyms = [...leafPaths.entries()].filter(([, ps]) => ps.length > 1)
+if (homonyms.length) {
+  const accounted = homonyms.reduce((s, [, ps]) => s + ps.length, 0)
+  console.log(`\n── homonym leaves (one word, many paths — each path is its own node) ──`)
+  console.log(`  ${homonyms.length} leaves at ${accounted} paths (folder path IS the matrix address)`)
+  for (const [leaf, ps] of homonyms.sort((a, b) => b[1].length - a[1].length).slice(0, 12))
+    console.log(`  ${leaf.padEnd(12)} ${ps.join(' · ')}`)
 }
 
 // ── 5. emit the registry ──
@@ -218,7 +225,7 @@ if (EMIT) {
     ' * @audit aura gap=0 parity (.claude/skills/aura/scan.mjs)',
     ' */',
     '',
-    'export interface MatrixNode { readonly atom: string; readonly uuid: string; readonly parent?: string; readonly prev?: string; readonly next?: string; readonly cross?: string; readonly bind?: string; readonly dim: string; readonly band: string; readonly horo: number; readonly path: string | null; readonly members?: readonly string[] }',
+    'export interface MatrixNode { readonly atom: string; readonly uuid: string; readonly parent?: string; readonly prev?: string; readonly next?: string; readonly cross?: string; readonly bind?: string; readonly dim: string; readonly band: string; readonly horo: number; readonly path: string }',
     'export interface MatrixEdge { readonly f: number; readonly t: number; readonly binding: string; readonly dir: number }',
     '',
     `export const UUID_MATRIX_ROOT = ${j(root)} as const`,

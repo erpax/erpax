@@ -2,7 +2,7 @@
 
 # integrity
 
-> atom `integrity` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
+> atom `integrity` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -24,13 +24,44 @@
 ## typography graph
 
 - partition `integrity` · sub-root `797b228e-19d3-89b7-a84a-dbe2db72ba7f`
-- bond degree `106` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- bond degree `109` · analysis neighbors —
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+- `durable_objects`/`AUDIT_CHAIN_DO` · atom `cloudflare/durable-objects/AUDIT_CHAIN_DO`
+- `durable_objects`/`ERPAX_DO` · atom `cloudflare/durable-objects/ERPAX_DO`
+- `durable_objects`/`JOB_LOCK` · atom `cloudflare/durable-objects/JOB_LOCK`
+- `durable_objects`/`RATE_LIMITER` · atom `cloudflare/durable-objects/RATE_LIMITER`
+- `durable_objects`/`TENANT_QUOTA` · atom `cloudflare/durable-objects/TENANT_QUOTA`
+
+## [[standards]]
+
+- `eIDAS` · catalogue
+- `EU-2014/55` · catalogue
+- `EU-2016/679` · catalogue
+- `EU-537/2014` · catalogue
+- `EU-910/2014` · catalogue
+- `ISO-27001` · catalogue
+- `ISO/IEC-27001:2022` · catalogue
+- `NIST-FIPS-180-4` · catalogue
+- `NIST-SP-800-38D` · catalogue
+- `NIST-SP-800-57` · catalogue
+- `NIST-SP-800-63` · catalogue
+- `RFC-8785` · catalogue
+- `W3C-JSON-LD-1.1` · catalogue
+- `W3C-VC-2.0` · catalogue
+
+## analytics
+
+- bond degree `109` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `5` · standards `14`
 
 ## identity
 
-- uuid `ebabaf5c-1569-8e44-80ce-39525495bea1`
-- bonds in `34` · out `34`
+- uuid `797b228e-19d3-89b7-a84a-dbe2db72ba7f`
+- bonds in `35` · out `35`
 - trinity form·code·proof `1`·`1`·`1`
 - links `19` / `19`
 - folded `1` · escapes `0`
@@ -41,4 +72,4 @@
 
 ---
 
-<sub>content-uuid `c34e3dcc-c295-8b6c-9878-9d53321dadc9` · framed by typography partition `integrity` bonds `106` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `847a0468-9d1e-8477-8173-5e0f88145101` · framed by typography partition `integrity` bonds `109` · `pnpm readme` · `pnpm readme:check`</sub>

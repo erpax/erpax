@@ -3,15 +3,15 @@
 
 # worker
 
-path `worker` · uuid `428a4c23-72fd-8b99-9dbd-8433f23ae48b` · diamond `77e04e2a-a56f-8fd0-8c16-fd8240fb94f7`
+path `worker` · uuid `a7422363-338f-85ed-8106-cc0f64fef750` · diamond `53441e80-cb5a-8cd9-b3d3-268a99d4f758`
 horo `7` `descent` · trinity `1·0·0` · sealed `0`
 imports agent·balance·cloudflare·confirm·diamond·employee·guardian·hooks·law·plugin·pwa·quantum·readme·typography·workers · exports worker · escapes —
-links `25/26` · folded `1` · bonds in `4` out `4`
+links `25/26` · folded `1` · bonds in `15` out `15`
 faces worker·plugin·pwa `1·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → agent·balance·bindings·confirm·deploy·diamond·employee·guardian·hooks·law·plugin·pwa·readme·typography·workers · ← agent·balance·bindings·confirm·deploy·diamond·employee·guardian·hooks·law·plugin·pwa·readme·typography·workers
 analysis agent·diamond
 law the worker deployment face is the autonomous executor of a [[diamond]] — hook, CLI, guardian, agent, or MCP handler that runs without a human in the loop.
 
 ---
 
-<sub>content-uuid `8531089e-825a-8b37-854b-70787f6e3480` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f1e05be7-d83e-864d-b2d4-0769fa4d0539` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -8,10 +8,10 @@ horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·id·law·merge·sti · exports vat · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·cohort·landmarks·memories·stat · ← action·cohort·landmarks·memories·stat
+neighbors → collapse·id·law·merge·sti · ← collapse·id·law·merge·sti
 analysis —
 law vat is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `d62d8321-afb3-818e-85ca-06c14640e1f6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4a47d50c-8986-89e6-900f-ab9acf68a73a` · `pnpm readme` · `pnpm computed:check`</sub>

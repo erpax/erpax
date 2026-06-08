@@ -3,15 +3,15 @@
 
 # anesthesia
 
-path `anesthesia` · uuid `4fb2f4b0-47e8-87b6-b0f7-4aa3b49c59ba` · diamond `65e0d91d-69b2-8bf0-8e7b-bbc5b52668d7`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
-imports collapse·law·merge·sti · exports anesthesia · escapes —
-links `4/4` · folded `1` · bonds in `4` out `4`
+path `anesthesia` · uuid `34090f74-8328-88fa-9168-794d880ef4cb` · diamond `fb2edf14-ce07-8e7d-a1f8-dd72cd0330c4`
+horo `5` `round` · trinity `1·1·1` · sealed `1`
+imports @/medical/device · exports deviceReadingFromAnesthesia·wireModalityToEmr · escapes —
+links `4/4` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
+neighbors → collapse·device·law·merge·sti · ← collapse·device·law·merge·sti
 analysis —
 law anesthesia is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `1f743838-fb5b-8c48-b303-6fc448210271` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `851d38ad-cb30-8efa-b19d-6f609065b880` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,7 +3,7 @@
 
 # breadcrumb
 
-path `breadcrumb` · uuid `89b3968d-4e2e-8d2f-932d-20f140f69bd3` · diamond `07d798ed-a10a-80fb-b0dc-7aa37451f15a`
+path `breadcrumb` · uuid `5cefc459-5748-8731-ac64-8977cc90fd86` · diamond `10804503-5e66-8773-bd13-69c4cc1569a7`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports law·list · exports breadcrumb · escapes —
 links `2/2` · folded `1` · bonds in `2` out `2`
@@ -14,4 +14,4 @@ law breadcrumb is one schema.org word, content-addressed; the same word collides
 
 ---
 
-<sub>content-uuid `b6cbc03e-7d8b-8232-8c3f-0abdee7fb5f9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d6c7bcc5-50bc-8cfa-becf-44cd88265acd` · `pnpm readme` · `pnpm computed:check`</sub>

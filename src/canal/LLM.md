@@ -3,8 +3,8 @@
 
 # canal
 
-path `canal` · uuid `ea3eb2f7-b5e6-8dcd-9730-f1affc5c26ca` · diamond `fe9fd4c3-5a1e-8ee7-882a-ee4341d41188`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `canal` · uuid `bd838331-54ea-80d6-b31a-2eb3389a2d31` · diamond `ad11ec4d-a299-84f4-9b6f-cf69dbfa2849`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports law·place·thing · exports canal · escapes —
 links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law canal is one schema.org word, content-addressed; the same word collides ever
 
 ---
 
-<sub>content-uuid `704368a8-1809-8279-9221-f0104073574d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2526fbb6-ba3d-8013-ab9f-ed58977cc0fb` · `pnpm readme` · `pnpm computed:check`</sub>

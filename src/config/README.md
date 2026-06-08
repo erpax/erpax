@@ -2,29 +2,28 @@
 
 # config
 
-> atom `config` · horo `9` `unity` · [[balance]] `1` · [[seal]] `1`
+> atom `config` · horo `6` `6` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
-| [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
 | [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
-| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[balance]] `1` | [[liability]]/[[horo]]/off-ring `1` |
 | [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
 | [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
-| Σ `8` | Σ `8` |
+| Σ `7` | Σ `7` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `7` · [[conservation]] `0` · [[entry]] · [[purity]]
 
 ## typography graph
 
-- partition `config` · sub-root `6d70e9e7-e633-855e-84ff-572e1aab45d0`
-- bond degree `166` · analysis neighbors `aura`
-- graph root `0349017a-99bf-8657-ae7e-21b09f363ed4`
+- partition `config` · sub-root `c9f7efd9-b1c7-84e6-886d-4c6b7e88b2c1`
+- bond degree `0` · analysis neighbors —
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -56,24 +55,62 @@
 - `SWIFT-MT` · catalogue
 - `UPU-S42` · catalogue
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unbalanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| not-held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| off-ring·6 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `166` · sealed `1` · horo `9`
-- variance `0` · balanced `1` · trinity sum `2`
+- bond degree `0` · sealed `0` · horo `6`
+- variance `7` · balanced `0` · trinity sum `1`
 - bindings `0` · standards `23`
 
 ## identity
 
-- uuid `1645ca1a-f87c-8d2e-987f-ed0746699325`
-- bonds in `52` · out `52`
-- trinity form·code·proof `1`·`0`·`1`
+- uuid `0f5bc7f7-7b2d-82b7-a177-7a7d67321252`
+- bonds in `53` · out `53`
+- trinity form·code·proof `1`·`0`·`0`
 - links `30` / `30`
 - folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `7369ddf4-6242-82a6-b5cc-c45ccfdc827b` · framed by typography partition `config` bonds `166` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b205aa1c-e885-89e6-9ff4-00afc6db03f7` · framed by typography partition `config` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

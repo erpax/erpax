@@ -2,9 +2,11 @@
 
 # findings
 
-> atom `internal/controls/audit/findings` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
+> atom `internal/controls/audit/findings` · horo `8` `crest` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `internal/controls/audit/findings` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -19,17 +21,136 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
+
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+- `gap:stray:[[gap]]/[[diamond]]/stray/remediation/`
+
+### collapse
+
+- `balance:variance=1`
+- `law:an audit finding is an issue raised against a control — classified by severity (deficiency / significant deficiency / material weakness / misstatement) with root cause, management response and remediation status — persisted as permanent, tamper-evident evidence ([[proof]]).`
+- `seal:unsealed`
+- `trigger:Use when recording, tracking, or resolving audit findings against internal controls — control deficiency, significant deficiency, material weakness, misstatement; severity, root cause, management response, remediation status, ISMS-audit (ISO/IEC 27007) and SOX §404 deficiency workflow. The audit-findings ISO-19011 evidence collection.`
+- `trigger:an audit finding is an issue raised against a control — classified by severity (deficiency / significant deficiency / material weakness / misstatement) with root cause, management response and remediation status — persisted as permanent, tamper-evident evidence ([[proof]]).`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `1f52ed92-a3be-81c0-8382-c5f82d2fb170` · `54f2ac65-e680-8254-93cf-42e1ea5f7969` · `8aa965b4-6e53-80f4-b004-3e6059fad6a5` · `e39857b5-3066-8ec1-b9b1-b3229ec970f8`
+- content uuids `48532aae-127f-8a8a-9a58-ed9d0659b5a9` · `9d7498af-c0c7-899f-93e2-bbc5015daf42` · `bc2f3d18-3a85-8b07-bef0-f00af05db5b1` · `e17d5796-846e-8f52-b7de-5fde5d90e805`
+
+## [[entropy]] — gaps · seals
+
+> account code `internal/controls/audit/findings` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[diamond]]/stray/remediation/ `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.8` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+| Σ gap `3` eb | Σ seal `8.8` eb |
+
+> net residual `-5.8` eb · seal/gap ratio `2.933` · [[entropy]] · [[seal]]
 
 ## typography graph
 
-- partition `internal` · sub-root `a3719802-d526-8179-9ae4-637b20c53cac`
-- bond degree `30` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- partition `internal` · sub-root `420a9910-05e6-86dd-9eed-ecde159d99e3`
+- bond degree `0` · analysis neighbors —
+- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `COSO-2013` · catalogue
+- `COSO-ERM-2017` · catalogue
+- `EN-16931` · catalogue
+- `EU-2017/1132` · catalogue
+- `EU-2017/828` · catalogue
+- `EU-2018/1673` · catalogue
+- `EU-2018/1725` · catalogue
+- `EU-2018/302` · catalogue
+- `EU-2018/389-SCA-RTS` · catalogue
+- `EU-2018/843` · catalogue
+- `EU-2018/957` · catalogue
+- `IAS-1` · catalogue
+- `IFRS-9` · catalogue
+- `ILO-C105` · catalogue
+- `ISO-19011` · catalogue
+- `ISO-19011:2018 audit-finding` · banner
+- `ISO/IEC-27007:2020 ISMS-auditing` · banner
+- `ISO/IEC-29119` · catalogue
+- `SOX` · catalogue
+- `SOX §404 internal-controls deficiency-tracking` · banner
+- `US-GAAP` · catalogue
+- `W3C-PROV-O` · catalogue
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unbalanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| not-held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·8 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `0` · sealed `0` · horo `8`
+- variance `1` · balanced `0` · trinity sum `3`
+- bindings `0` · standards `22`
 
 ## identity
 
-- uuid `c2be9c7a-6b9c-8c70-8c4e-a01ebdfd9de4`
+- uuid `f136fef9-7ef3-88b3-b4e9-1e6d1bd2cb67`
 - bonds in `10` · out `10`
 - trinity form·code·proof `1`·`1`·`1`
 - links `9` / `9`
@@ -37,8 +158,8 @@
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `cd6d60c7-04c1-812b-98bd-2220e70baadb` · framed by typography partition `internal` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `6c6c6528-9b1c-83f3-bb76-46a22817ba39` · framed by typography partition `internal` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

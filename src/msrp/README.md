@@ -23,7 +23,21 @@
 
 - partition `msrp` · sub-root `ff9d7605-d6c6-8787-a32b-19e533b29acb`
 - bond degree `12` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `12` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `bc2a03b6-d82a-8601-a1a0-9e99d8f6890c` · framed by typography partition `msrp` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `cc014711-cb2e-8401-991b-676c4a8499c7` · framed by typography partition `msrp` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

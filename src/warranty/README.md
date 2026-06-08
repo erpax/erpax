@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `warranty` · sub-root `6520bd0a-0fde-8246-86bb-ddc7a60d8815`
-- bond degree `47` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `25` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `6520bd0a-0fde-8246-86bb-ddc7a60d8815`
-- bonds in `19` · out `19`
+- bonds in `8` · out `8`
 - trinity form·code·proof `1`·`0`·`0`
 - links `4` / `4`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `98f583a9-9ab2-87fe-86d1-e1caf2f2e261` · framed by typography partition `warranty` bonds `47` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `dce1e974-1521-87f4-8196-815130e21b7c` · framed by typography partition `warranty` bonds `25` · `pnpm readme` · `pnpm readme:check`</sub>

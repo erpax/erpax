@@ -3,15 +3,15 @@
 
 # testing
 
-path `testing` · uuid `ec8e323e-8a3e-89d3-8944-99bac5fce70f` · diamond `bc4fc6e0-be0a-8dd0-abad-b30e56ac477a`
+path `testing` · uuid `ec8e323e-8a3e-89d3-8944-99bac5fce70f` · diamond `82da08cd-99fc-8bc6-92ce-bbcfd67cdaf1`
 horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports @/testing/config-discovery·@/testing/test-seed-factory·@/testing/test-setup · exports //·IsolatedTestEnvironment·ParallelTestRunner·PayloadConfigDiscovery·SEED_VALIDATION_REGISTRY·SeedSnapshot·TestSeedFactory·TransactionalSeedFactory·createFieldValidator·getCustomFieldValidator·getDiscovery·getFieldValidator·getSeedCategoryRegistry·getSeedsByCategory·registerCustomValidator·registerSeedCategory·resetDiscovery·setupTestEnvironment·setupVitestEnvironment·type·validateFieldType · escapes —
-links `41/41` · folded `1` · bonds in `5` out `5`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat·supporting · ← cohort·landmarks·memories·stat·supporting
+links `41/41` · folded `1` · bonds in `25` out `25`
+faces worker·plugin·pwa `1·0·0`
+neighbors → akashic·aura·collapse·collections·config·consistency·coverage·covid·entropy·facility·fractal·gate·harmony·identity·law·merge·proof·quantum·schema·security·seed·society·spec·test·vitepress · ← akashic·aura·collapse·collections·config·consistency·coverage·covid·entropy·facility·fractal·gate·harmony·identity·law·merge·proof·quantum·schema·security·seed·society·spec·test·vitepress
 analysis aura
 law —
 
 ---
 
-<sub>content-uuid `cbd94458-5ac2-8396-96f5-b683b54c7248` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b834caa3-e0ad-8175-9512-c309824b992f` · `pnpm readme` · `pnpm computed:check`</sub>

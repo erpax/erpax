@@ -3,15 +3,15 @@
 
 # matrix
 
-path `quantum/matrix` · uuid `0c44820b-f9fd-83fd-80c9-ce9df04a64ad` · diamond `7ad64503-4837-8259-abda-c05d957327f5`
-horo `7` `descent` · trinity `1·1·1` · sealed `1`
+path `quantum/matrix` · uuid `a969d52c-0b52-85e3-8b8c-d9facd9a8ff6` · diamond `fc0dccfb-9892-84b2-9f64-55e48a5944b7`
+horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports @/entanglement·@/gravity·@/quantum·@/uuid/matrix · exports const · escapes —
-links `17/17` · folded `1` · bonds in `86` out `80`
+links `17/17` · folded `1` · bonds in `91` out `90`
 faces worker·plugin·pwa `1·0·0`
-neighbors → addressed·akashic·analog·analytics·app·architect·aura·biomagnetism·blockchain·chat·coil·collapse·collide·consciousness·cost·development·diamond·digit·dna·drone·dry·duality·dust·emergence·engine·entanglement·entropy·expand·fold·folded·forge·fusion·generate·generator·graph·gravity·hallucination·harmony·holographic·kabbalah·law·linearity·links·llm·math·matrix·merge·merge·metatron·one·particle·peace·purity·quantum·reactor·readme·reality·refactor·religion·relocate·research·reveal·schema·science·self·sequence·singularity·skills·society·topography·torus·transaction·translator·type·typography·uuid·vocabulary·war·wave·whole · ← addressed·akashic·analog·analytics·app·architect·aura·biomagnetism·blockchain·chat·coil·collapse·collide·consciousness·cost·development·development·diamond·digit·dna·drone·dry·duality·dust·emergence·engine·entanglement·entanglement·entropy·expand·fold·folded·forge·fusion·generate·generator·graph·gravity·gravity·hallucination·harmony·holographic·kabbalah·law·linearity·links·llm·llm·math·matrix·merge·metatron·one·particle·peace·purity·quantum·reactor·readme·reality·reality·refactor·religion·relocate·research·reveal·schema·science·self·sequence·singularity·skills·society·topography·torus·transaction·translator·translator·type·typography·uuid·vocabulary·vocabulary·war·wave·whole
+neighbors → addressed·akashic·analog·analytics·app·architect·architecture·aura·aura·biomagnetism·blockchain·chat·coil·collapse·collide·consciousness·cost·development·development·diamond·digit·dna·drone·dry·duality·dust·emergence·engine·entanglement·entanglement·entropy·expand·fold·folded·forge·fusion·generate·generator·graph·gravity·gravity·hallucination·harmony·holographic·kabbalah·law·linearity·llm·llm·math·matrix·merge·metatron·one·particle·path·peace·purity·quantum·reactor·readme·reality·reality·refactor·religion·relocate·research·reveal·schema·science·self·sequence·session·singularity·skills·society·topography·torus·transaction·translator·translator·type·typography·upgrade·uuid·vocabulary·vocabulary·war·wave·whole · ← addressed·akashic·analog·analytics·app·architect·architecture·aura·aura·biomagnetism·blockchain·chat·coil·collapse·collide·consciousness·cost·development·development·diamond·diamond·digit·dna·drone·dry·duality·dust·emergence·engine·entanglement·entanglement·entropy·expand·fold·folded·forge·fusion·generate·generator·graph·gravity·gravity·hallucination·harmony·holographic·kabbalah·law·linearity·llm·llm·math·matrix·merge·metatron·one·particle·path·peace·purity·quantum·reactor·readme·reality·reality·refactor·religion·relocate·research·reveal·schema·science·self·sequence·session·singularity·skills·society·topography·torus·transaction·translator·translator·type·typography·upgrade·uuid·vocabulary·vocabulary·war·wave·whole
 analysis aura
 law the cross is order-free and monogamous — cross(a,b) === cross(b,a), and where both directed edges exist they share exactly one binding-uuid (bidirectionalCross). The torus is closed: every node binds both its prev and its next on the sequence ring, with no gap in any node — the link adjacency stays sparse, but the ring is total.
 
 ---
 
-<sub>content-uuid `78554093-ed2b-8661-8974-78b8211b47b4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f5fb0beb-b9bb-817d-8cc9-2967e9c898de` · `pnpm readme` · `pnpm computed:check`</sub>

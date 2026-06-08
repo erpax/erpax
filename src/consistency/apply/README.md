@@ -2,7 +2,7 @@
 
 # apply
 
-> atom `consistency/apply` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
+> atom `consistency/apply` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -23,9 +23,9 @@
 
 ## typography graph
 
-- partition `consistency` · sub-root `6ae1b17e-6830-8066-9e1b-a7c2a7b151d6`
-- bond degree `29` · analysis neighbors —
-- graph root `0349017a-99bf-8657-ae7e-21b09f363ed4`
+- partition `consistency` · sub-root `3371c9c5-a1d5-8d8c-b216-12378d9c588b`
+- bond degree `26` · analysis neighbors —
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -50,16 +50,54 @@
 - `WCAG-2.1` · catalogue
 - `WCAG-2.1-AA contrast text-spacing` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·7 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `29` · sealed `1` · horo `4`
+- bond degree `26` · sealed `1` · horo `7`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `16`
 
 ## identity
 
-- uuid `b2b8c8f3-88bf-8d69-bd90-5d899c63b4b0`
-- bonds in `8` · out `9`
+- uuid `1e1a16a7-0cfe-8c3d-a2ee-acc131e1440f`
+- bonds in `7` · out `7`
 - trinity form·code·proof `1`·`1`·`1`
 - links `3` / `3`
 - folded `1` · escapes `0`
@@ -70,4 +108,4 @@
 
 ---
 
-<sub>content-uuid `68f7a7ae-990d-8d5b-a213-9b8d1c4390e0` · framed by typography partition `consistency` bonds `29` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `272b7a14-e1be-8daa-8c11-c8ee813182d2` · framed by typography partition `consistency` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>

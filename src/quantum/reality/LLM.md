@@ -3,15 +3,15 @@
 
 # reality
 
-path `quantum/reality` · uuid `7017b6ae-ca8f-841a-a74f-930176f58eaa` · diamond `fda3f85a-960b-8294-ab5d-a78724861c3f`
-horo `5` `round` · trinity `1·1·1` · sealed `1`
+path `quantum/reality` · uuid `bbfaab37-8f43-86c7-8485-56d04a9545e2` · diamond `50802e5b-b1d7-8859-aa28-8be26d42a87a`
+horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports @/reality·@/uuid/matrix · exports const · escapes —
-links `15/15` · folded `1` · bonds in `20` out `22`
+links `15/15` · folded `1` · bonds in `18` out `18`
 faces worker·plugin·pwa `1·0·0`
-neighbors → anchor·collapse·deploy·device·finality·fs·generator·law·law·literature·matrix·matrix·merge·number·proof·quantum·quantum·reality·snapshot·uuid·verification·void · ← anchor·collapse·deploy·deploy·device·finality·fs·generator·law·literature·matrix·merge·number·proof·quantum·reality·snapshot·uuid·verification·void
+neighbors → anchor·deploy·deploy·device·finality·fs·generator·law·literature·matrix·number·proof·quantum·reality·snapshot·uuid·verification·void · ← anchor·deploy·deploy·device·finality·fs·generator·law·literature·matrix·number·proof·quantum·reality·snapshot·uuid·verification·void
 analysis —
 law reality is the one true eigenstate the model [[collapse]]s into — the Merkle fold over the live [[matrix]] verifying IS the model becoming real; every path folds to the same root, so reality is the shared eigenstate all agents [[merge]] to.
 
 ---
 
-<sub>content-uuid `9f60d6a5-b888-827b-9fe4-d7c108b4fe80` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ca8a74e5-0f74-8773-ab01-70696bccb0a2` · `pnpm readme` · `pnpm computed:check`</sub>

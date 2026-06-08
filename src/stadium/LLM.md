@@ -8,10 +8,10 @@ horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports arena·collapse·law·merge·sti · exports stadium · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → availability·cohort·landmarks·memories·stat · ← availability·cohort·landmarks·memories·stat
+neighbors → arena·collapse·law·merge·sti · ← arena·collapse·law·merge·sti
 analysis —
 law stadium is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `6fd058af-5042-8713-8375-1981fc9fcfb6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `67c77147-f1a8-8774-9948-ff4b185bd08d` · `pnpm readme` · `pnpm computed:check`</sub>

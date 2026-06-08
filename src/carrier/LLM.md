@@ -3,8 +3,8 @@
 
 # carrier
 
-path `carrier` · uuid `91f74222-a844-82c2-816c-a9e458310b04` · diamond `fb6ba4a6-96c5-89a2-88f0-335aab473c54`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `carrier` · uuid `3f9aa7ef-25d8-8d28-8a66-1acf41e5ba2d` · diamond `d50d5bde-b016-822e-86b2-f7c5c2b11bb3`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports law·requirements · exports carrier · escapes —
 links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law carrier is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `8515e536-2d57-89dd-8111-d20ee4a6ea51` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `37204159-2429-8e07-9b87-94ed9ce7ef3b` · `pnpm readme` · `pnpm computed:check`</sub>

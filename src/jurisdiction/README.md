@@ -23,7 +23,21 @@
 
 - partition `jurisdiction` · sub-root `031dacb0-4e06-804b-b604-b267f444ea25`
 - bond degree `21` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `21` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `e765252a-c08f-894d-902b-02aa01a19c92` · framed by typography partition `jurisdiction` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `8af2a997-2b72-8627-acae-970cb64e3dfa` · framed by typography partition `jurisdiction` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>

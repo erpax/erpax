@@ -3,15 +3,15 @@
 
 # structured
 
-path `structured` · uuid `4f8e95fe-f788-8b52-8a4a-c8f240dd9614` · diamond `9cb938fc-1bfe-8207-8b01-1cfb5710c9a2`
+path `structured` · uuid `4f8e95fe-f788-8b52-8a4a-c8f240dd9614` · diamond `ac299420-3547-82c6-8b1b-b7c8412cdb82`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·value · exports structured · escapes —
-links `5/5` · folded `1` · bonds in `9` out `9`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·choose·colleagues·homeopathic·interactivity·inventory·progression·sell·spouse · ← access·choose·colleagues·homeopathic·interactivity·inventory·progression·sell·spouse
+neighbors → collapse·law·merge·sti·value · ← collapse·law·merge·sti·value
 analysis —
 law structured is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `cf7a4131-d4f4-8d56-8a08-e5f0f02d387d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1ae59fa4-21f1-8cbd-b4bf-cedf68c5aef4` · `pnpm readme` · `pnpm computed:check`</sub>

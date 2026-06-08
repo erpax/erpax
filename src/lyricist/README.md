@@ -23,7 +23,21 @@
 
 - partition `lyricist` · sub-root `287eff70-2306-8c0f-a99d-92ffff0de450`
 - bond degree `6` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `6` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `6fd9f06d-ac2a-8ead-a455-fcfeef9e4f84` · framed by typography partition `lyricist` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `9ab641e5-4352-818a-ab54-560ef685bc78` · framed by typography partition `lyricist` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>

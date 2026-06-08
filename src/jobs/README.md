@@ -2,42 +2,55 @@
 
 # jobs
 
-> atom `jobs` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
+> atom `jobs` · horo `1` `base` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
-| [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
 | [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
 | [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
 | [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
 | [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
-| Σ `8` | Σ `8` |
+| Σ `7` | Σ `7` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `5` · [[conservation]] `0` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `jobs` · sub-root `d0decf6f-e1a4-8633-b85e-da039773cfa6`
-- bond degree `49` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- bond degree `0` · analysis neighbors —
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `Naredba-N-18` · catalogue
+
+## analytics
+
+- bond degree `0` · sealed `0` · horo `1`
+- variance `5` · balanced `0` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
 - uuid `d0decf6f-e1a4-8633-b85e-da039773cfa6`
 - bonds in `16` · out `16`
-- trinity form·code·proof `1`·`0`·`1`
+- trinity form·code·proof `1`·`0`·`0`
 - links `3` / `3`
 - folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `2ef7740e-d37e-8e63-bc5e-226e55fb245c` · framed by typography partition `jobs` bonds `49` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `dc8cdc3d-ee43-84f9-8c08-98acb8777541` · framed by typography partition `jobs` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

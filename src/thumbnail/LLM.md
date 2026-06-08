@@ -3,15 +3,15 @@
 
 # thumbnail
 
-path `thumbnail` · uuid `7b439809-43ce-8839-b14f-5d1363d93a56` · diamond `73830bf0-4395-8ef2-93d7-707f83407aaa`
+path `thumbnail` · uuid `7b439809-43ce-8839-b14f-5d1363d93a56` · diamond `36e9266e-1655-8fca-9a8a-d9365c00bc20`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports law·url · exports thumbnail · escapes —
-links `2/2` · folded `1` · bonds in `5` out `5`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·shared·stat · ← cohort·landmarks·memories·shared·stat
+neighbors → law·url · ← law·url
 analysis —
 law a thumbnail is a reduced derivative of a source image or video, so it must reference that source and regenerates from it; it is a cache, never the original.
 
 ---
 
-<sub>content-uuid `d620497e-7e26-8640-b42d-d0942b04958f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `470f82b4-e22b-80e3-ae8d-9243001dacf9` · `pnpm readme` · `pnpm computed:check`</sub>

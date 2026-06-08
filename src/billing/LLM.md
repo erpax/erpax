@@ -3,8 +3,8 @@
 
 # billing
 
-path `billing` · uuid `00104ff6-0f74-81d1-8b48-3be285fb3eff` · diamond `097b63df-49db-8810-8d56-4ab583aebe4a`
-horo `8` `crest` · trinity `1·1·1` · sealed `0`
+path `billing` · uuid `12a2b7b1-66a4-8f16-a465-131c9f6aec79` · diamond `e0940190-3f17-89f2-92ea-2321e1b4874b`
+horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports — · exports *:./stripeWebhookHandlers · escapes —
 links `9/9` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law billing is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `fce3f08b-26f9-899b-88d6-3f3403c2648f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `460b9b2c-0ba3-89fe-82ce-591f56449034` · `pnpm readme` · `pnpm computed:check`</sub>

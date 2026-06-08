@@ -3,7 +3,7 @@ import { CollectionConfig } from 'payload'
 // that don't exist in `src/services/` (silent no-ops). Aging is now a
 // service-generated DTO via `financialReportingService`; COGS will fold
 // into `gl-posting.service.ts`'s invoice handler when built.
-import { invoiceAccountingHook } from '@/invoices/hooks'
+import { deriveInvoiceNumber, invoiceAccountingHook } from '@/invoices/hooks'
 import { validateNotLocked } from '@/utility'
 import { adminOnly, multiTenantRead } from '@/auth'
 import { authenticated } from '@/authenticated'
@@ -11,6 +11,7 @@ import { autoPopulateTenant } from '@/auto/populate/tenant'
 import { auditTrailAfterChange } from '@/audit/trail/after/change'
 import { VAT_CATEGORY_OPTIONS } from '@/un/cefact/5305'
 import { unpField, fiscalDeviceNumberField, operatorCodeField, fiscalQrField, saleStatusOptions } from '@/fields'
+import { adminFieldVisibleForWrite } from '@/admin/ui'
 import { isIso4217 } from '@/iso/4217'
 
 /**
@@ -83,7 +84,7 @@ export const Invoices: CollectionConfig = {
     delete: adminOnly,
   },
   hooks: {
-    beforeValidate: [autoPopulateTenant],
+    beforeValidate: [autoPopulateTenant, deriveInvoiceNumber],
     beforeChange: [validateNotLocked],
     // AAAAA-cont (2026-05-11): wired the canonical audit-trail emission
     // alongside the GL-posting hook. The auditTrailAfterChange call
@@ -209,13 +210,19 @@ export const Invoices: CollectionConfig = {
           relationTo: 'addresses',
           required: true,
           index: true,
-          admin: { description: 'Selling party' },
+          admin: {
+            description: 'Selling party',
+            components: { Field: '@/admin/ui/fields/EntanglementWarningField' },
+          },
         },
         {
           name: 'sellerAgent',
           type: 'relationship',
           relationTo: 'addresses',
-          admin: { description: 'Seller agent' },
+          admin: {
+            description: 'Seller agent',
+            components: { Field: '@/admin/ui/fields/EntanglementWarningField' },
+          },
         },
         {
           name: 'buyer',
@@ -223,25 +230,39 @@ export const Invoices: CollectionConfig = {
           relationTo: 'addresses',
           required: true,
           index: true,
-          admin: { description: 'Buying party' },
+          admin: {
+            description: 'Buying party',
+            components: {
+              Field: '@/admin/ui/fields/EntanglementWarningField',
+            },
+          },
         },
         {
           name: 'buyerAgent',
           type: 'relationship',
           relationTo: 'addresses',
-          admin: { description: 'Buyer agent' },
+          admin: {
+            description: 'Buyer agent',
+            components: { Field: '@/admin/ui/fields/EntanglementWarningField' },
+          },
         },
         {
           name: 'supplier',
           type: 'relationship',
           relationTo: 'addresses',
-          admin: { description: 'Supplier' },
+          admin: {
+            description: 'Supplier',
+            components: { Field: '@/admin/ui/fields/EntanglementWarningField' },
+          },
         },
         {
           name: 'consignee',
           type: 'relationship',
           relationTo: 'addresses',
-          admin: { description: 'Delivery recipient' },
+          admin: {
+            description: 'Delivery recipient',
+            components: { Field: '@/admin/ui/fields/EntanglementWarningField' },
+          },
         },
       ],
     },
@@ -700,7 +721,10 @@ export const Invoices: CollectionConfig = {
       name: 'fiscal',
       type: 'group',
       label: 'Fiscal (Наредба Н-18 / СУПТО)',
-      admin: { description: 'СУПТО фискализация — касов бон / УНП, издаден при плащане в обхват.' },
+      admin: {
+        description: 'СУПТО фискализация — касов бон / УНП, издаден при плащане в обхват.',
+        condition: adminFieldVisibleForWrite,
+      },
       fields: [
         unpField(), // УНП — уникален номер на продажба
         { name: 'unpSequence', type: 'number', admin: { readOnly: true, hidden: true } },

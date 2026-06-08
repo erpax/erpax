@@ -3,8 +3,8 @@
 
 # alley
 
-path `alley` · uuid `1e4cb938-0c1e-85a5-94cf-455b36f1a8a2` · diamond `2fdee3d4-f5b3-8c21-9a87-0d4aa7ca19a8`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `alley` · uuid `0fc32ca2-5075-87f8-9e55-7e77c63e83ad` · diamond `c2e674ff-6fde-8884-9ab9-b2654b1ec967`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports bowling·collapse·law·merge·sti · exports alley · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law alley is one schema.org word, content-addressed; the same word collides ever
 
 ---
 
-<sub>content-uuid `95f1e6a8-0d08-89ea-9f85-6db711e32ed1` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `76adeeac-eeda-8f32-a619-d6e430bc6eec` · `pnpm readme` · `pnpm computed:check`</sub>

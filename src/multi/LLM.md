@@ -4,7 +4,7 @@
 # multi
 
 path `multi` · uuid `bfe450bf-7e83-8716-abda-c63d441b3dd6` · diamond `8299f360-4275-8144-bf01-ca8740710c74`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+horo `7` `descent` · trinity `1·0·0` · sealed `0`
 imports collapse·law·merge·sti · exports multi · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law multi is one schema.org word, content-addressed; the same word collides ever
 
 ---
 
-<sub>content-uuid `5ea53c5b-1248-8fb3-a42f-7b482e852c7a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8959fc6c-976a-877d-9e46-cba4cfaa894f` · `pnpm readme` · `pnpm computed:check`</sub>

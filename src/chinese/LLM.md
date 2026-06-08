@@ -3,8 +3,8 @@
 
 # chinese
 
-path `chinese` · uuid `a99cc645-b40a-8d06-82a8-08d70d119771` · diamond `2f54fb7a-0d6e-82c7-8ca4-320191dad1af`
-horo `7` `descent` · trinity `1·0·0` · sealed `1`
+path `chinese` · uuid `4c880a3b-fd5b-84a8-bec4-0af8228e1721` · diamond `2e6da236-8e43-88fd-a545-d5c24eda0c20`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports chinese · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law chinese is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `803d942e-91d2-8d24-9df4-2e201d8473c2` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0a5c9bc3-247e-8ae6-b7c5-6911adfea640` · `pnpm readme` · `pnpm computed:check`</sub>

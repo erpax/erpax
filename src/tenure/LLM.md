@@ -3,15 +3,15 @@
 
 # tenure
 
-path `tenure` · uuid `2b7fc9df-c7d8-8166-bc68-036d7b54eb6d` · diamond `08a94a1f-471d-8228-8b40-3e66800981d5`
+path `tenure` · uuid `2b7fc9df-c7d8-8166-bc68-036d7b54eb6d` · diamond `2050f792-684c-8a26-9623-66cfa0efaf7b`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports accrual·employees·positions·time · exports tenure · escapes —
-links `5/5` · folded `1` · bonds in `5` out `5`
+links `5/5` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·principle·stat · ← cohort·landmarks·memories·principle·stat
+neighbors → accrual·attrition·compensation·employees·forestry·payments·positions·time · ← accrual·attrition·compensation·employees·forestry·payments·positions·time
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `0a22ee39-f480-8ccc-8149-d49f3c30d2a9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `adb9e37f-a491-8149-a9e5-3fcc3587bf7d` · `pnpm readme` · `pnpm computed:check`</sub>

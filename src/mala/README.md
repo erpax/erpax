@@ -25,7 +25,24 @@
 
 - partition `mala` · sub-root `92e72ef7-b20d-84da-a0b5-359ba4299beb`
 - bond degree `24` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `CoE-108+` · catalogue
+- `the 108 identities + digital root are computed; the dualities-on-round read live from @/duality` · banner
+- `the 108 identities + digital root are computed; the dualities-on-round read live from the corpus` · banner
+- `the base-10 digital root (the rodin reduction); 108 = 1¹·2²·3³ (computed identity)` · banner
+
+## analytics
+
+- bond degree `24` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `4`
 
 ## identity
 
@@ -41,4 +58,4 @@
 
 ---
 
-<sub>content-uuid `f0a6c439-8c20-8f51-951e-4098e7463809` · framed by typography partition `mala` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f665f6aa-0129-8a40-8f56-e47ddae95ff0` · framed by typography partition `mala` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>

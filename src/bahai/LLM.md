@@ -3,7 +3,7 @@
 
 # bahai
 
-path `bahai` · uuid `e3b63286-3fbf-801b-aa1d-374c44cd05a1` · diamond `c2b179df-836c-86e8-9cd2-53460f458400`
+path `bahai` · uuid `b68e9f2f-5842-8070-bd33-3125d057ee8a` · diamond `4bca8c34-27c1-8ae6-a881-aef2b4308323`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports archangel·diamond·fractal·harmony·identity·justice·law·love·merge·one·peace·religion·society·translator·word · exports bahai · escapes —
 links `43/43` · folded `1` · bonds in `15` out `15`
@@ -14,4 +14,4 @@ law bahai is a [[diamond]] of [[one]] · [[merge]] · [[translator]] · [[harmon
 
 ---
 
-<sub>content-uuid `bc1426c9-107a-8990-bce3-1bd0b16c9faf` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b8807a54-7968-8dec-8a43-2bfb683ef51e` · `pnpm readme` · `pnpm computed:check`</sub>

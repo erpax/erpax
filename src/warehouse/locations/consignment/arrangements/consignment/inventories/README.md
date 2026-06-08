@@ -2,9 +2,11 @@
 
 # inventories
 
-> atom `warehouse/locations/consignment/arrangements/consignment/inventories` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `warehouse/locations/consignment/arrangements/consignment/inventories` · horo `5` `round` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `warehouse/locations/consignment/arrangements/consignment/inventories` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -21,24 +23,130 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:deployment:[[gap]]/[[deployment]]/face`
+
+### collapse
+
+- `balance:conserved`
+- `law:the per-SKU running balance at a consignee location that stays on the consignor's own balance sheet — every shipment in, [[warehouse/locations/consignment/arrangements/consignment/sales|sale]] out, and return mutates quantityOnHand + valueOnHand ([[balance]]).`
+- `seal:unsealed`
+- `trigger:Use when tracking per-SKU on-hand inventory balance at a consignee location — shipments in, sales out, returns, cycle-count reconciliation, IAS-2 §6 balance-sheet ownership retained by consignor, valuation method, and GL account mapping. The consignment per-SKU running-balance collection.`
+- `trigger:the per-SKU running balance at a consignee location that stays on the consignor's own balance sheet — every shipment in, [[warehouse/locations/consignment/arrangements/consignment/sales|sale]] out, and return mutates quantityOnHand + valueOnHand ([[balance]]).`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `03f2a8ce-7775-827f-ae92-a6ce4c5d6c30` · `852c1a21-a03f-86ae-a93c-843f9ab8cf86` · `927d5f6b-6eae-8c60-bd5b-d6b3d99d6477`
+- content uuids `2815554a-eb17-8d0b-bb1d-e0714469c6d8` · `6289d0bd-0a0b-8038-bba9-8f43d986d891` · `a213da1b-91b2-8c56-87ab-2f4b2e844cf1`
+
+## [[entropy]] — gaps · seals
+
+> account code `warehouse/locations/consignment/arrangements/consignment/inventories` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[deployment]]/face `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.5` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `2` eb | Σ seal `11.5` eb |
+
+> net residual `-9.5` eb · seal/gap ratio `5.75` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `warehouse` · sub-root `203b0f71-ce7f-8ef0-82c5-d4fce11680a0`
-- bond degree `24` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- partition `warehouse` · sub-root `ef5b5584-1e82-81d8-955b-612434819876`
+- bond degree `32` · analysis neighbors —
+- graph root `9c2fb72d-3e2b-8cb0-8bca-0ef7345627af`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `IFRS IAS-2 §6 inventories-held-at-other-location` · banner
+- `IFRS IFRS-15 §B77-B78 consignment-arrangements` · banner
+- `ISO-4217:2015 currency-codes` · banner
+- `ISO-8601-1:2019 date-time as-of-date` · banner
+- `SOX §404 internal-controls inventory-segregation TOM-INV-03` · banner
+- `US-GAAP ASC-330 inventory-location-tracked` · banner
+- `US-GAAP ASC-606-10-55-79 consignment-indicators` · banner
+
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·5 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
+## analytics
+
+- bond degree `32` · sealed `0` · horo `5`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `7`
 
 ## identity
 
-- uuid `1bfb41cb-248d-8c0b-91b5-249806513215`
-- bonds in `6` · out `6`
+- uuid `03e6b9ed-7b5e-8642-9d5a-6f05a55b5d3f`
+- bonds in `10` · out `10`
 - trinity form·code·proof `1`·`1`·`1`
 - links `14` / `14`
 - folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `2e437de7-cb55-8164-8802-698f059f6d9a` · framed by typography partition `warehouse` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `476d8ae1-481a-8216-ba55-ac4cdde4b54c` · framed by typography partition `warehouse` bonds `32` · `pnpm readme` · `pnpm readme:check`</sub>

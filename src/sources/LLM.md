@@ -3,15 +3,15 @@
 
 # sources
 
-path `sources` · uuid `83835135-a358-8107-97bb-66ecc7cbb190` · diamond `16d6abca-a8b2-859c-95c5-65c9fcefdfa4`
+path `sources` · uuid `83835135-a358-8107-97bb-66ecc7cbb190` · diamond `b1d52b05-5850-8a2b-a1fd-13b0d1f6b234`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·policy·sti·unnamed · exports sources · escapes —
-links `6/6` · folded `1` · bonds in `3` out `3`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·measurement·regular · ← landmarks·measurement·regular
+neighbors → collapse·law·merge·policy·sti·unnamed · ← collapse·law·merge·policy·sti·unnamed
 analysis —
 law sources is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `f2ab1da2-648e-8945-b178-d65523cb5703` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9d654e03-c2e4-80e5-8794-64969610b970` · `pnpm readme` · `pnpm computed:check`</sub>

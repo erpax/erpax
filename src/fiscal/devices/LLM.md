@@ -4,7 +4,7 @@
 # devices
 
 path `fiscal/devices` · uuid `7ab3c847-0aeb-863b-ac15-395e439266c6` · diamond `b8866523-b72d-8f18-a1fd-d29be82e84e0`
-horo `2` `share` · trinity `1·1·1` · sealed `1`
+horo `2` `share` · trinity `1·1·1` · sealed `0`
 imports @/audit/trail/after/change·@/auth·@/auto/populate/tenant·@/fields · exports default · escapes —
 links `4/4` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law every fiscal device carries a unique 8-digit ФУ number that anchors the fi
 
 ---
 
-<sub>content-uuid `a023830f-cb8f-85bf-9a69-cebcd01ee52a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4376f802-45c8-8e38-acf2-5925232cfc59` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -8,6 +8,7 @@ import { formatAutomateSummary } from '@/apply/automate'
 import { detectStalledProcesses, formatStallTable } from '@/apply/stall-watch'
 import { formatDoctorInventorySection } from '@/agent/inventory'
 import { emitInventorySnapshot } from '@/agent/inventory/emit'
+import { INVENTORY_DOCTOR_SCAN_LIMIT } from '@/agent/inventory'
 import { loadEfficiencyStore } from '@/apply/efficiency'
 import { freeEnergyFromEntropy } from '@/accounting/entropy-proof'
 import { computedBaseline } from '@/law/folder/baseline'
@@ -130,7 +131,7 @@ export function runDoctor(cwd: string = process.cwd(), sub?: string): number {
   const report = collectDoctorReport(cwd)
   console.log(formatDoctorReport(report))
   try {
-    emitInventorySnapshot(cwd)
+    emitInventorySnapshot(cwd, INVENTORY_DOCTOR_SCAN_LIMIT)
   } catch {
     /* emit-only — doctor still reports when snapshot dir missing */
   }

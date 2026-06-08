@@ -3,15 +3,15 @@
 
 # quotes
 
-path `vendors/vendor/quotes` · uuid `a4474109-d68c-840d-b618-8d81a3c6d064` · diamond `4f99d85d-30c0-8f72-b315-e31dfbb30a92`
-horo `8` `crest` · trinity `1·1·1` · sealed `1`
+path `vendors/vendor/quotes` · uuid `b868e63d-9994-8299-9bb3-69e7054e34c9` · diamond `4169615c-2fb7-8955-8ee5-c3f03cb2b884`
+horo `8` `crest` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/chain/event/emitter·@/incoterms/2020·@/standard/collection/hook · exports default · escapes —
-links `5/5` · folded `1` · bonds in `13` out `16`
-faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·accounting·fertility·girls·holographic·id·landmarks·occupation·progression·progression·snapshots·spouse·spouse·statistic·table·tour · ← accounting·fertility·girls·holographic·id·landmarks·occupation·progression·snapshots·spouse·statistic·table·tour
+links `5/5` · folded `1` · bonds in `9` out `9`
+faces worker·plugin·pwa `1·0·0`
+neighbors → accounting·collections·discount·fields·identity·law·orders·standard·transaction · ← accounting·collections·discount·fields·identity·law·orders·standard·transaction
 analysis —
 law a vendor-quote is one supplier's RFQ response with its award decision and rationale — the competitive-bid record that stands as arm's-length transfer-pricing evidence (BEPS Action 13 / SOX §404).
 
 ---
 
-<sub>content-uuid `7d86588a-718c-8c6c-a6cc-db2cfd0e7205` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `609750c6-4bb1-8281-97cd-9bb70d12d7e7` · `pnpm readme` · `pnpm computed:check`</sub>

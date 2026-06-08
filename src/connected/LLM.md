@@ -3,8 +3,8 @@
 
 # connected
 
-path `connected` · uuid `92caa619-f301-80b2-bf05-d3e2018f9deb` · diamond `56566973-d6af-84fe-bc5d-48d4654ef5c3`
-horo `4` `weave` · trinity `1·0·0` · sealed `1`
+path `connected` · uuid `8928cf37-f3fe-8cde-be6c-c2ac78e30278` · diamond `1b03722b-58fa-8d70-8630-8a6f1120337a`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports connected · escapes —
 links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law connected is one schema.org word, content-addressed; the same word collides 
 
 ---
 
-<sub>content-uuid `93c841d0-5655-8a4a-9055-6903a8108594` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b24bcce6-3202-8fdb-bd13-3072dfcdf5de` · `pnpm readme` · `pnpm computed:check`</sub>

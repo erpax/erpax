@@ -3,8 +3,8 @@
 
 # coffee
 
-path `coffee` · uuid `468116b0-3e33-8e4d-b3f0-7604c5d01958` · diamond `f2572ae4-a42b-86eb-9b6c-ca1ad1e1a8f9`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `coffee` · uuid `f04327d1-5154-833b-9216-a3c1e65140e3` · diamond `e9de9998-a94c-8f4f-b5d6-615cbd28d325`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports cafe·collapse·law·merge·shop·sti · exports coffee · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law coffee is one schema.org word, content-addressed; the same word collides eve
 
 ---
 
-<sub>content-uuid `036bfc35-0923-893a-ad00-fd11f6fab0b2` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `28b9ac5c-0290-8960-844e-b1db4629377e` · `pnpm readme` · `pnpm computed:check`</sub>

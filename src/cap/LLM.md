@@ -3,8 +3,8 @@
 
 # cap
 
-path `cap` · uuid `9c584695-1f6f-8bcd-9260-997972825e46` · diamond `efdb63fa-933c-8e5c-8549-6f7cdcbfceb8`
-horo `2` `share` · trinity `1·0·0` · sealed `1`
+path `cap` · uuid `ba595f20-a933-8613-a8fe-d378a8cea529` · diamond `59127d9e-42d6-840d-a301-a98bbd36f5b7`
+horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports cap · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law cap is one schema.org word, content-addressed; the same word collides every 
 
 ---
 
-<sub>content-uuid `323e1d8c-279b-8e43-b09a-cb2163310bf9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `28d3b7ab-a6a9-8c0f-b2c7-dcebb735ec78` · `pnpm readme` · `pnpm computed:check`</sub>

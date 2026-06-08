@@ -23,9 +23,9 @@
 
 ## typography graph
 
-- partition `conservation` · sub-root `64a4f4c7-7be3-8423-b46e-32f965b45152`
-- bond degree `90` · analysis neighbors —
-- graph root `0349017a-99bf-8657-ae7e-21b09f363ed4`
+- partition `conservation` · sub-root `0bcabad1-b4fd-8015-bfe7-acb9dd492acc`
+- bond degree `93` · analysis neighbors —
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -39,16 +39,54 @@
 - `Noether's theorem (E. Noether, 1918) — continuous symmetry ⇔ conserved quantity` · banner
 - `UBL-2.1` · catalogue
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·2 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `90` · sealed `1` · horo `2`
+- bond degree `93` · sealed `1` · horo `2`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `5`
 
 ## identity
 
-- uuid `64a4f4c7-7be3-8423-b46e-32f965b45152`
-- bonds in `29` · out `29`
+- uuid `0bcabad1-b4fd-8015-bfe7-acb9dd492acc`
+- bonds in `30` · out `30`
 - trinity form·code·proof `1`·`1`·`1`
 - links `28` / `28`
 - folded `1` · escapes `0`
@@ -59,4 +97,4 @@
 
 ---
 
-<sub>content-uuid `23ff2dde-833a-8e49-824c-dd4c14f9f3c8` · framed by typography partition `conservation` bonds `90` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a3f6aa8b-8aac-8c32-8832-79a61d182d2f` · framed by typography partition `conservation` bonds `93` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,8 +3,8 @@
 
 # amendments
 
-path `customers/contracts/contract/amendments` · uuid `69eb404d-2fc9-8108-b417-fb1398085e72` · diamond `3cdf2e14-cfc7-8862-b0d5-5a1460d8774d`
-horo `8` `crest` · trinity `1·1·1` · sealed `1`
+path `customers/contracts/contract/amendments` · uuid `d39dc842-a8ea-868f-ba06-a64f7dc7e0a0` · diamond `b9e89fbf-5be6-850c-80bd-da2752b416ea`
+horo `7` `descent` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/enforce/segregation/of/duty·@/standard/collection/hook · exports default · escapes —
 links `8/8` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law an amendment is classified as a separate or integrated modification before a
 
 ---
 
-<sub>content-uuid `99c75e99-a6a7-8ab9-aea2-e1bc8eb4ccf9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `20945e03-b27a-85a8-9a4a-9f48484d1a00` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -8,10 +8,10 @@ horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports unofficial · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law unofficial is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `bd2a70dd-220f-8c54-a2f2-07cc2169b67c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ce3a6fbd-f942-882b-82a3-49e51bb266e8` · `pnpm readme` · `pnpm computed:check`</sub>

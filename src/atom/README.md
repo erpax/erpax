@@ -2,7 +2,7 @@
 
 # atom
 
-> atom `atom` · horo `5` `round` · [[balance]] `1` · [[seal]] `0`
+> atom `atom` · horo `5` `round` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -17,13 +17,13 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `7` | Σ `7` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
 
 ## typography graph
 
-- partition `atom` · sub-root `a69faef3-541b-88d0-aebf-441251f05dcd`
-- bond degree `279` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- partition `atom` · sub-root `b8c241ca-e3ec-89c4-978d-f7ffc0e4cb81`
+- bond degree `0` · analysis neighbors —
+- graph root `30ef7fae-4ee3-8746-b14a-915657036770`
 
 ## [[cloudflare]] bindings
 
@@ -33,16 +33,54 @@
 
 - `MCP` · catalogue
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unbalanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| not-held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| vocabulary | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·5 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `279` · sealed `0` · horo `5`
-- variance `0` · balanced `1` · trinity sum `1`
+- bond degree `0` · sealed `0` · horo `5`
+- variance `1` · balanced `0` · trinity sum `1`
 - bindings `0` · standards `1`
 
 ## identity
 
-- uuid `a69faef3-541b-88d0-aebf-441251f05dcd`
-- bonds in `91` · out `89`
+- uuid `b8c241ca-e3ec-89c4-978d-f7ffc0e4cb81`
+- bonds in `92` · out `92`
 - trinity form·code·proof `1`·`0`·`0`
 - links `80` / `80`
 - folded `1` · escapes `0`
@@ -53,4 +91,4 @@
 
 ---
 
-<sub>content-uuid `e62ab8f6-c2d3-8c55-9fcc-015f9e3df95b` · framed by typography partition `atom` bonds `279` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `1ac9d212-ebe3-8d60-85d6-cd0bf8d628e3` · framed by typography partition `atom` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,8 +3,8 @@
 
 # desktop
 
-path `desktop` · uuid `e5f3385c-bf20-8e21-809c-98962d46fc4e` · diamond `b3dbb287-026b-80be-b49d-bcecb93e8d41`
-horo `8` `crest` · trinity `1·0·0` · sealed `1`
+path `desktop` · uuid `7e46fc11-bedd-8ae5-83ce-75b1c8f8bd52` · diamond `f84bb478-92c0-87d3-8381-0e77119f9a55`
+horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports desktop · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law desktop is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `fa2cc528-b20d-852b-b74b-f3ece8471ec8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d47429f6-4831-8501-9cba-58b20a8e5c1e` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -23,7 +23,21 @@
 
 - partition `enterprisebudget` · sub-root `5e393942-8f43-8ef6-aaae-72d1e26dfbe5`
 - bond degree `38` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `1689b0bf-ae1a-88c5-8b8e-7675b05d5fcf`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `38` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `0947f879-83b0-8429-9bb6-3a93bd1fa62c` · framed by typography partition `enterprisebudget` bonds `38` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b3210195-697f-8d80-8a9f-f55917fba031` · framed by typography partition `enterprisebudget` bonds `38` · `pnpm readme` · `pnpm readme:check`</sub>

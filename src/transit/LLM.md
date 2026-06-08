@@ -3,15 +3,15 @@
 
 # transit
 
-path `transit` · uuid `c7c10af3-7cd2-8a57-add6-81b969bf3d7e` · diamond `49bb891f-4dd1-8c34-ab97-a7c9f6e80ea1`
+path `transit` · uuid `c7c10af3-7cd2-8a57-add6-81b969bf3d7e` · diamond `7bc4bd1d-a05c-8154-9c74-51cacf2fb1c2`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·label·law·merge·sti·time · exports transit · escapes —
-links `6/6` · folded `1` · bonds in `9` out `9`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → agriculture·corrects·crisis·government·landmarks·proprietary·test·travel·worth · ← agriculture·corrects·crisis·government·landmarks·proprietary·test·travel·worth
+neighbors → collapse·label·law·merge·sti·time · ← collapse·label·law·merge·sti·time
 analysis —
 law transit is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `88786bef-9d48-8601-b047-0cecd90140dc` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `cf648616-d1bb-8761-8cc1-5c95c531b86f` · `pnpm readme` · `pnpm computed:check`</sub>

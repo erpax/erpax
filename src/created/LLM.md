@@ -3,7 +3,7 @@
 
 # created
 
-path `created` · uuid `c15f7184-78fc-8a6d-8e03-9d788fca2983` · diamond `abfc8112-99b6-8c7d-86c9-c8d6b39848f3`
+path `created` · uuid `58f09019-e3a2-86b5-80d8-665c4c1aa519` · diamond `7f5eda84-a943-8f81-9986-7c8697084673`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·date·law·location·merge·sti · exports created · escapes —
 links `6/6` · folded `1` · bonds in `6` out `6`
@@ -14,4 +14,4 @@ law created is one schema.org word, content-addressed; the same word collides ev
 
 ---
 
-<sub>content-uuid `2c169788-0429-8b98-9097-84b083b6a89a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ef49bf36-2f6c-8c7e-9e06-f3286cbc12e5` · `pnpm readme` · `pnpm computed:check`</sub>

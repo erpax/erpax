@@ -2,9 +2,11 @@
 
 # cloudflare
 
-> atom `cloudflare` · horo `4` `weave` · [[balance]] `1` · [[seal]] `0`
+> atom `cloudflare` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
+
+> account code `cloudflare` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -23,11 +25,61 @@
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `explore:agent`
+- `explore:ai`
+- `explore:deploy`
+- `explore:diamond`
+- `explore:innovation`
+- `explore:path`
+
+### collapse
+
+- `balance:conserved`
+- `seal:sealed`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `1`
+- entry uuids `19482567-3c63-86d3-8754-749861d1461a`
+- content uuids `017b2720-03aa-848e-be88-93ffe968648d` · `50fd9ce4-f4e2-8e72-877e-102f7e30f5c5`
+
+## [[entropy]] — gaps · seals
+
+> account code `cloudflare` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+|  | [[seal]]/[[trinity]]/form `1` eb |
+|  | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
+|  | [[seal]]/[[horo]]/ring `0.7` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+|  | [[seal]]/[[diamond]]/sealed `1.585` eb |
+|  | [[seal]]/[[balance]]/zero `1` eb |
+|  | [[seal]]/[[gravity]]/held `1` eb |
+|  | [[seal]]/[[diamond]]/membership `1` eb |
+| Σ gap `0` eb | Σ seal `13.285` eb |
+
+> net residual `-13.285` eb · seal/gap ratio `1` · [[entropy]] · [[seal]]
+
 ## typography graph
 
-- partition `cloudflare` · sub-root `29127283-cb09-8fe6-ae5e-13f41e36f651`
-- bond degree `60` · analysis neighbors `agent` · `ai` · `diamond` · `innovation` · `quantum` · `secret` · `serverless` · `worker`
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- partition `cloudflare` · sub-root `cc72d1e7-d526-83ff-8571-99da310118e0`
+- bond degree `66` · analysis neighbors `agent` · `ai` · `deploy` · `diamond` · `innovation` · `path` · `quantum` · `secret` · `serverless` · `worker`
+- graph root `fc1c88b5-7998-87cb-a820-6e626bdad146`
 
 ## [[cloudflare]] bindings
 
@@ -70,24 +122,62 @@
 - `ISO/IEC-27002:2022` · catalogue
 - `W3C Service Worker §4 (Workers compat)` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| sealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| balanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·7 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `60` · sealed `0` · horo `4`
+- bond degree `66` · sealed `1` · horo `7`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `27` · standards `8`
 
 ## identity
 
-- uuid `7d8488af-095b-82a2-ad16-fb5883e454b7`
-- bonds in `15` · out `15`
+- uuid `017b2720-03aa-848e-be88-93ffe968648d`
+- bonds in `16` · out `16`
 - trinity form·code·proof `1`·`1`·`1`
-- links `23` / `23`
+- links `26` / `26`
 - folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `ccea0c05-a808-862f-b824-f5658f71d80b` · framed by typography partition `cloudflare` bonds `60` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `038390d8-9747-83dc-b083-aa50fe5311e5` · framed by typography partition `cloudflare` bonds `66` · `pnpm readme` · `pnpm readme:check`</sub>

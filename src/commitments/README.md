@@ -2,7 +2,7 @@
 
 # commitments
 
-> atom `commitments` · horo `1` `base` · [[balance]] `1` · [[seal]] `0`
+> atom `commitments` · horo `5` `round` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -19,13 +19,13 @@
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
 
 ## typography graph
 
-- partition `commitments` · sub-root `98330a8e-5a19-8bf9-933b-24c323542f1f`
-- bond degree `31` · analysis neighbors —
-- graph root `644bd379-ed14-8bd8-91e3-ceefeed1a554`
+- partition `commitments` · sub-root `be817380-1dec-8ae3-bc70-1e44883944de`
+- bond degree `0` · analysis neighbors —
+- graph root `38ca2e4d-02bc-8693-bd0d-b6b7ba81600e`
 
 ## [[cloudflare]] bindings
 
@@ -46,15 +46,53 @@
 - `SOX §302 management-certification internal-controls` · banner
 - `SOX §404 internal-controls spending-authority` · banner
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unbalanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| not-held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·5 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `31` · sealed `0` · horo `1`
-- variance `0` · balanced `1` · trinity sum `3`
+- bond degree `0` · sealed `0` · horo `5`
+- variance `1` · balanced `0` · trinity sum `3`
 - bindings `0` · standards `12`
 
 ## identity
 
-- uuid `1c409e72-72e2-8b19-9531-238f8957f17f`
+- uuid `3e7e0f94-6ed4-875d-9a0f-8423de66613f`
 - bonds in `10` · out `10`
 - trinity form·code·proof `1`·`1`·`1`
 - links `8` / `8`
@@ -66,4 +104,4 @@
 
 ---
 
-<sub>content-uuid `d84d9d26-1b55-8107-ab0a-c6ca4eb240ae` · framed by typography partition `commitments` bonds `31` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a24fb92c-43a0-892d-8977-eceeafe81032` · framed by typography partition `commitments` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

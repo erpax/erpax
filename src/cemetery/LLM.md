@@ -3,8 +3,8 @@
 
 # cemetery
 
-path `cemetery` · uuid `56892016-0bbf-87e8-81db-499a09c3451c` · diamond `5741c002-b0d1-8777-8f03-f86a98624e46`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `cemetery` · uuid `2157871b-7501-8d9b-b0aa-c515a1dc73cc` · diamond `870ab055-8dd1-8d20-a3ed-b57b6e6414a5`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports law·place·thing · exports cemetery · escapes —
 links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law cemetery is one schema.org word, content-addressed; the same word collides e
 
 ---
 
-<sub>content-uuid `f16bab2e-03b5-8c07-b5c0-1ab5aab342e1` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `cf1bbce1-5a3b-87db-a701-959454de9853` · `pnpm readme` · `pnpm computed:check`</sub>

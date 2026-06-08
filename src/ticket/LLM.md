@@ -3,15 +3,15 @@
 
 # ticket
 
-path `ticket` · uuid `8778d086-1f0c-8563-9f44-62c570baa1c0` · diamond `684f9866-cae9-8c63-a0e2-55c44868c67e`
+path `ticket` · uuid `8778d086-1f0c-8563-9f44-62c570baa1c0` · diamond `efb3f7c9-3f42-8800-9ae2-c7009b23bd3c`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports activities·comment·escalation·law·queue·resolution·status·users·workflow · exports ticket · escapes —
-links `10/10` · folded `1` · bonds in `4` out `4`
+links `10/10` · folded `1` · bonds in `11` out `11`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → activities·backlog·comment·escalation·instances·law·queue·reserved·resolution·status·users · ← activities·backlog·comment·escalation·instances·law·queue·reserved·resolution·status·users
 analysis —
 law a ticket is the polymorphic support-case container — any request, complaint, or issue becomes one tracked work item carrying its [[queue]], priority, assignment, and SLA.
 
 ---
 
-<sub>content-uuid `064d53f3-ee5e-8e7c-81bd-8a385fc16fe2` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `de1aaae6-5a8f-8cd9-abff-0625d94afa2c` · `pnpm readme` · `pnpm computed:check`</sub>

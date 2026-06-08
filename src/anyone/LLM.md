@@ -3,8 +3,8 @@
 
 # anyone
 
-path `anyone` · uuid `e4bb6345-26f7-8589-8069-5aa4a4d3d3ff` · diamond `ef6d8a3e-4c41-8132-901b-3b1fe47ff16a`
-horo `1` `base` · trinity `1·1·1` · sealed `1`
+path `anyone` · uuid `c040fd76-ab4a-8fbf-9d6d-4366166e398b` · diamond `55866661-8ddc-885c-98e9-920d24101d8e`
+horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports @/iso/27002 · exports const · escapes —
 links `4/4` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law a deliberate public grant is still an [[access]] decision — `anyone` retur
 
 ---
 
-<sub>content-uuid `c8961634-0b4f-8f79-9882-cd44f81a7662` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0017e1c5-2013-80de-a108-3669a3562a99` · `pnpm readme` · `pnpm computed:check`</sub>

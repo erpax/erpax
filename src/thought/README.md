@@ -2,42 +2,41 @@
 
 # thought
 
-> atom `thought` · horo `—` `—` · [[balance]] `1` · [[seal]] `0`
+> atom `thought` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
-| [[asset]]/[[links]]/resolved `46` | [[balance]] `46` |
-| [[balance]] `2` | [[liability]]/[[links]]/dangling `2` |
-| [[balance]] `1` | [[liability]]/[[horo]]/off-ring `1` |
-| [[balance]] `1` | [[liability]]/[[identity]]/uuid `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
 | [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
-| Σ `54` | Σ `54` |
+| Σ `7` | Σ `7` |
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
-- partition `thought` · sub-root `91559ce7-8d1f-8330-b07b-cf3779a53ca5`
-- bond degree `26` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- partition `thought` · sub-root `7c9a3b07-3e23-885e-80a2-e1253fd55eb5`
+- bond degree `68` · analysis neighbors `diamond`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
-- uuid `—`
-- bonds in `0` · out `0`
+- uuid `91559ce7-8d1f-8330-b07b-cf3779a53ca5`
+- bonds in `20` · out `20`
 - trinity form·code·proof `1`·`0`·`0`
-- links `46` / `48`
-- folded `0` · escapes `0`
+- links `48` / `48`
+- folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `41f440bb-bc0f-87c7-9f44-eb1825ed8f7a` · framed by typography partition `thought` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `432dd13a-af47-89d5-b972-8d90620984b5` · framed by typography partition `thought` bonds `68` · `pnpm readme` · `pnpm readme:check`</sub>

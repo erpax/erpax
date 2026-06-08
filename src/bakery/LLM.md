@@ -3,8 +3,8 @@
 
 # bakery
 
-path `bakery` · uuid `6f5746c2-377e-85f3-bd98-d9429de53418` · diamond `38937e03-342f-87ee-9f06-481f8f5306e5`
-horo `5` `round` · trinity `1·0·0` · sealed `1`
+path `bakery` · uuid `ab15a891-6f6c-8aab-8a6c-b4f19a49277e` · diamond `f2aa3e97-a84e-8e8e-b829-f687c2e1b1c8`
+horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports law·place·thing · exports bakery · escapes —
 links `3/3` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law bakery is one schema.org word, content-addressed; the same word collides eve
 
 ---
 
-<sub>content-uuid `9ed6b5be-ff1d-8453-89da-933b854f015d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `91c88297-a525-8a31-9274-5d489c8d23e3` · `pnpm readme` · `pnpm computed:check`</sub>
