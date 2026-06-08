@@ -1,0 +1,2 @@
+{"role":"user","message":{"content":[{"type":"text","text":"<user_query>\n**Goal**\nImplement batch commit for staged corpus\n</user_query>"}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"Staging files."}]}}

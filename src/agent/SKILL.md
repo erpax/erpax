@@ -1,8 +1,346 @@
 ---
 name: agent
-description: Use when reasoning about an agent — its identity, cloning, and replication (an agent IS its content, its id is the content-uuid of skills + purpose, so identical clones merge and distinct agents are specialised children), AND when wiring the society's actors (the pure DomainAgent contract, the registry that gives each collection exactly one owner, the runtime that dispatches chain steps and events and scheduled ticks, the effect-processor where every side effect fires — the A-vortex coupling layer that decides without acting).
+description: "Use when reasoning about an agent — its identity, cloning, and replication (an agent IS its content, its id is the content-uuid of skills + purpose, so identical clones merge and distinct agents are specialised children), AND when wiring the society's actors (the pure DomainAgent contract, the registry that gives each collection exactly one owner, the runtime that dispatches chain steps and events and scheduled ticks, the effect-processor where every side effect fires — the A-vortex coupling layer that decides without acting)."
+atomPath: agent
+coordinate: agent · 8/crest · 1d6237db
+contentUuid: "e11733ce-2b6f-5bec-98d0-7e5cb352e278"
+diamondUuid: "fa1e7649-4913-8151-9c54-4ea70e1620b5"
+uuid: "1d6237db-1fbf-8f77-8aaa-89cbb83deddc"
+horo: 8
+bonds:
+  in:
+    - access
+    - agent
+    - ai
+    - akashic
+    - aura
+    - auth
+    - booking
+    - breath
+    - chat
+    - class
+    - cloudflare
+    - comms
+    - communication
+    - contribution
+    - coordinate
+    - cost
+    - decentralization
+    - diamond
+    - drone
+    - duality
+    - ecosystem
+    - entropy
+    - estate
+    - event
+    - fractal
+    - gate
+    - generate
+    - gravity
+    - hallucination
+    - holographic
+    - horo
+    - identity
+    - infectious
+    - interaction
+    - law
+    - log
+    - mcp
+    - merge
+    - observe
+    - one
+    - real
+    - receipt
+    - reference
+    - request
+    - research
+    - reversibility
+    - roles
+    - self
+    - skill
+    - skills
+    - society
+    - standard
+    - statistic
+    - sync
+    - team
+    - tenants
+    - types
+    - unavoidable
+    - users
+    - uuid
+    - whole
+    - worker
+  out:
+    - access
+    - agent
+    - ai
+    - akashic
+    - aura
+    - auth
+    - booking
+    - breath
+    - chat
+    - class
+    - cloudflare
+    - comms
+    - communication
+    - contribution
+    - coordinate
+    - cost
+    - decentralization
+    - diamond
+    - drone
+    - duality
+    - ecosystem
+    - entropy
+    - estate
+    - event
+    - fractal
+    - gate
+    - generate
+    - gravity
+    - hallucination
+    - holographic
+    - horo
+    - identity
+    - infectious
+    - interaction
+    - law
+    - log
+    - mcp
+    - merge
+    - observe
+    - one
+    - real
+    - receipt
+    - reference
+    - request
+    - research
+    - reversibility
+    - roles
+    - self
+    - skill
+    - skills
+    - society
+    - standard
+    - statistic
+    - sync
+    - team
+    - tenants
+    - types
+    - unavoidable
+    - users
+    - uuid
+    - whole
+    - worker
+typography:
+  partition: agent
+  bondDegree: 0
+  neighbors: []
+standards:
+  - "EU-2018/1673"
+  - "EU-2018/1725"
+  - "EU-2018/302"
+  - "EU-2018/389-SCA-RTS"
+  - "EU-2018/843"
+  - "EU-2018/957"
+  - "EU-2023/1113"
+  - "EU-2023/2854"
+  - "EU-2023/956-CBAM"
+  - "ILO-C001"
+  - "ISO-19011"
+  - "ISO-27001"
+  - "ISO/IEC-12207"
+  - "ISO/IEC-25010"
+  - "ISO/IEC-27001:2022"
+  - MCP
+  - "NIST-FIPS-180-4"
+  - "RFC-4122"
+  - "RFC-9562"
+  - SFIA
+  - "W3C-ActivityPub"
+bindings: []
+neighbors:
+  wikilink:
+    - access
+    - akashic
+    - aura
+    - auth
+    - breath
+    - chat
+    - contribution
+    - coordinate
+    - cost
+    - diamond
+    - duality
+    - entropy
+    - event
+    - fractal
+    - gate
+    - generate
+    - holographic
+    - horo
+    - identity
+    - law
+    - merge
+    - one
+    - receipt
+    - roles
+    - self
+    - society
+    - standard
+    - sync
+    - team
+    - tenants
+    - users
+    - uuid
+    - whole
+  matrix:
+    - access
+    - agent
+    - ai
+    - akashic
+    - aura
+    - auth
+    - booking
+    - breath
+    - chat
+    - class
+    - cloudflare
+    - comms
+    - communication
+    - contribution
+    - coordinate
+    - cost
+    - decentralization
+    - diamond
+    - drone
+    - duality
+    - ecosystem
+    - entropy
+    - estate
+    - event
+    - fractal
+    - gate
+    - generate
+    - gravity
+    - hallucination
+    - holographic
+    - horo
+    - identity
+    - infectious
+    - interaction
+    - law
+    - log
+    - mcp
+    - merge
+    - observe
+    - one
+    - real
+    - receipt
+    - reference
+    - request
+    - research
+    - reversibility
+    - roles
+    - self
+    - skill
+    - skills
+    - society
+    - standard
+    - statistic
+    - sync
+    - team
+    - tenants
+    - types
+    - unavoidable
+    - users
+    - uuid
+    - whole
+    - worker
+  backlinks:
+    - access
+    - agent
+    - ai
+    - akashic
+    - aura
+    - auth
+    - booking
+    - breath
+    - chat
+    - class
+    - cloudflare
+    - comms
+    - communication
+    - contribution
+    - coordinate
+    - cost
+    - decentralization
+    - diamond
+    - drone
+    - duality
+    - ecosystem
+    - entropy
+    - estate
+    - event
+    - fractal
+    - gate
+    - generate
+    - gravity
+    - hallucination
+    - holographic
+    - horo
+    - identity
+    - infectious
+    - interaction
+    - law
+    - log
+    - mcp
+    - merge
+    - observe
+    - one
+    - real
+    - receipt
+    - reference
+    - request
+    - research
+    - reversibility
+    - roles
+    - self
+    - skill
+    - skills
+    - society
+    - standard
+    - statistic
+    - sync
+    - team
+    - tenants
+    - types
+    - unavoidable
+    - users
+    - uuid
+    - whole
+    - worker
+signatures:
+  computationUuid: "851b5c9e-16a3-824b-9db5-30a9bc5f1bfe"
+  stages:
+    - stage: path
+      stageUuid: "a0f973da-5aaf-8198-87b0-f6e725af250f"
+    - stage: trinity
+      stageUuid: "af664f1d-7869-83a9-bc02-d8710e05dbe0"
+    - stage: boundary
+      stageUuid: "1781846e-44f3-86c6-9acd-7d88b564a6dc"
+    - stage: links
+      stageUuid: "bec6620e-ca66-844b-ba8c-b314a384142f"
+    - stage: horo
+      stageUuid: "aad90ca0-dd20-825b-9fb4-9fef507960da"
+    - stage: seal
+      stageUuid: "287db0da-1d77-8407-9349-f39626e2bc97"
+    - stage: uuid
+      stageUuid: "13c562da-9ea0-8075-b732-9539fe52bc0a"
+version: 2
 ---
-
 # agent — an agent is its content; cloning is content-addressing; the actor decides in pure functions while only the substrate acts
 
 Two facets of ONE accountable object meet here. The self-replication law (what an agent IS) and the runtime coupling layer (how the society of agents acts) are the singular and plural of the same word.
@@ -61,6 +399,22 @@ An agent reaching a peer is how the society covers its own gaps: where `emit` br
 Matter-twin: `src/agent/strict-apply.ts` (gates) wired through `effect-processor.ts`, `runtime.ts`, `agents/mcp/in-process-client.ts`, `sync/chat-broadcast.ts`. Remedies from `src/ai/industry/` (`groundToolCall`, `trustBoundaryVerdict`, `cascadeDepthVerdict`). Proven by `strict-apply.test.ts` + `agents/mcp/test.ts`.
 
 **Law — [[law]]: agents strictly apply — every dispatch, effect, and MCP tool call passes the law checklist (sandbox + receipt + access scope + depth cap) before execute; violation throws `StrictApplyViolation` and nothing runs.**
+
+## Agent cost — prompt-only routing (min tokens · max tamper)
+
+**Price manual forge out; route agents on the derive path.** `agentCostPolicy()` composes [[cost]] `manualDevelopmentPrice` + `promptOnlyOptionVerdict` with [[wave]] `maxWorkTamperPolicy`: **derive-path verify ≪ manual forge** (ratio grows without bound as coverage → 1); when manual forge is impossible, `promptOnly: true` — the only viable path is **prompt→erpax** at [[chat]]/MCP (society derives one gate-verified move, never hand-forge). **Horo wave cap:** `maxContextAtoms = waveDepth` (7) — one wave of harmonic context per dispatch, not the full 77MB `skills.index` bundle. **Lazy skill load:** `loadSkillByAtomPath` reads one sealed SKILL excerpt from disk; MCP `erpax.auto.skill.*` handlers fetch on demand via `atom-catalogue-lazy` (catalogue deferred until first lookup).
+
+**Cheap dispatch.** `cheapAgentDispatch({ atomPath })` assembles minimal context only: sealed SKILL excerpt + `accountCodeOf(atomPath)` + eb balance (`pathComparableUnits`) — no full index, no chat lattice memory dump. Uses the same `loadSealedSkill` / `DEFAULT_SKILL_EXCERPT_CHARS` path as full realisation. Tamper cost and seal gates are unchanged ([[agent]] wave-complete · path-follow · recorded+implemented).
+
+**Skill realisation — any path touched, all skills realised.** `realiseSkillsForPath(filePath | atomPath)` lazy-loads the ordered bundle: ancestors · self (skill-bearing atom) · bonded neighbors (`parseQuantumSkill` bonds ∪ matrix `neighborsOf`/`backlinksOf`) · domain hub (`adminGroupOf`) · 1-hop `skillsForImport(@/foo)` from source files. Each entry carries sealed SKILL excerpt · compact quantum block · eb balance; one cached `compactRulesSnapshot()` (TTL `rulesOf`) caps the payload at **50KB**. `strictApplyDispatch` attaches `skillContext` on every compliant dispatch when paths are declared; effect gates reuse that snapshot (no second `rulesOf` scan). IDE agents should call `realiseSkillsForPath` on first file open. **CS prompts:** touch `computer/<concept>` (algorithm · complexity · graph · queue · stack · finite · memory) — imports resolve to `@/computer/*` executables (`classifyComplexity`, `adjacencyFromAtom`, `FifoQueue`, `binarySearch`, `SEAL_CHECK_FSM`, `AddressSpace`), not glossary prose.
+
+**Unified load API.** `loadSealedSkill(atomPath)` · `resolveSkillLoadOpts()` · `compactRulesSnapshot()` · `realiseSkillsForPath()` · `cheapAgentDispatch()` · `agentSkillContextForDispatch()` — one lazy-load face (`src/skill/router/lazy-load.ts`), one excerpt cap (4096 chars), one horo wave atom cap (`agentCostPolicy.maxContextAtoms`).
+
+**skills.index — Worker-only debt.** The 77MB `skills.index.ts` bundle remains imported only by Cloudflare Workers / build-time catalogue generation (`atom-catalogue-lazy` defers until first MCP lookup). Agent dispatch, strict-apply, and IDE skill realisation never import it — runtime loads sealed SKILL.md excerpts from disk via `loadSealedSkill`. Removing the Worker import path is tracked debt ([[convention/baked]] · `skill/router/build`).
+
+Matter-twin: `src/agent/cost-policy.ts` · `src/agent/cheap-dispatch.ts` · `src/agent/skill-context.ts` · `src/skill/router/lazy-load.ts` · `src/agents/mcp/atom-catalogue-lazy.ts`. Composes: [[cost]] · [[wave]] · [[path]] · [[accounting]] · [[seal]] · [[rules]] · [[navigation]] · [[mcp]] · [[chat]] · [[convention/baked]].
+
+**Law — [[law]]: any agent opening any part of the code must immediately realise all needed skills — ancestors, bonds, quantum env, entanglement, rules — via `realiseSkillsForPath` / `agentSkillContextForDispatch`; lazy disk load only, never `skills.index`.**
 
 ## Standards
 

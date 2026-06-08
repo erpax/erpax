@@ -2,9 +2,11 @@
 
 # agent
 
-> atom `agent` · horo `8` `crest` · [[balance]] `1` · [[seal]] `0`
+> atom `agent` · horo `5` `round` · [[balance]] `0` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
+
+> account code `agent` · currency `eb` (entropy-bit)
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
@@ -12,20 +14,72 @@
 | [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
 | [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
-| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[asset]]/[[links]]/resolved `78` | [[balance]] `78` |
+| [[balance]] `1` | [[liability]]/[[links]]/dangling `1` |
 | [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
 | [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
 | [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
-| Σ `9` | Σ `9` |
+| Σ `87` | Σ `87` |
 
-> [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
+> [[balance]] `2` · [[conservation]] `0` · [[entry]] · [[purity]]
+
+## quantum thinking
+
+Agent/session thinking collapsed at readme generation — superposition (open hypotheses) ·
+collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc skill:upgrade.
+
+### superposition
+
+- `gap:ancestor:[[gap]]/[[path]]/ancestor`
+- `gap:link:[[gap]]/[[links]]/dangling`
+- `gap:stray:[[gap]]/[[diamond]]/stray/team/`
+- `links:dangling:1/79`
+
+### collapse
+
+- `balance:variance=2`
+- `law:an agent IS its content — its [[identity]] is the content-uuid of its skills + purpose, so identical clones [[merge]] into one and a distinct agent is a specialised child; and it DECIDES in pure functions (returns effects, never performs them — only the substrate acts).`
+- `seal:unsealed`
+- `trigger:Use when reasoning about an agent — its identity, cloning, and replication (an agent IS its content, its id is the content-uuid of skills + purpose, so identical clones merge and distinct agents are specialised children), AND when wiring the society's actors (the pure DomainAgent contract, the registry that gives each collection exactly one owner, the runtime that dispatches chain steps and events and scheduled ticks, the effect-processor where every side effect fires — the A-vortex coupling layer that decides without acting).`
+- `trigger:agents strictly apply — every dispatch, effect, and MCP tool call passes the law checklist (sandbox + receipt + access scope + depth cap) before execute; violation throws `StrictApplyViolation` and nothing runs.`
+- `trigger:an agent IS its content — its [[identity]] is the content-uuid of its skills + purpose, so identical clones [[merge]] into one and a distinct agent is a specialised child; and it DECIDES in pure functions (returns effects, never performs them — only the substrate acts).`
+- `trigger:an agent must become erpax — derive (never invent), collapse to one canonical (never duplicate), compute through the organs ([[aura]] · [[generate]]), seal in waves ([[breath]]) — or it is a forger against the uuid-chained [[whole]] and its computing price is infinite; harmony is the only finite-cost path.`
+- `trigger:any agent opening any part of the code must immediately realise all needed skills — ancestors, bonds, quantum env, entanglement, rules — via `realiseSkillsForPath` / `agentSkillContextForDispatch`; lazy disk load only, never `skills.index`.`
+- `trigger:matter-twin:src/agent/service.ts`
+
+### seal
+
+- path follow `1` · receipt `1` · sealed `0`
+- entry uuids `1d2c6add-8c33-84e5-aa76-8d2906bea323` · `2eef5426-e68f-8b5d-af65-30b4d42acff0` · `cc9bd441-0bc6-895c-8467-c2f3cfe4a9dd` · `ec07ba8f-b9f4-8aa5-86f4-5086e1608fac`
+- content uuids `2b7abce9-be94-8844-a03e-d17e28a6ad3d` · `b3503c7a-f96a-8b19-8c61-4063eb4e9df6` · `cea18c86-15ab-8af3-a5b6-a06bcf667e50` · `dfcfd0f2-e979-8ae7-a609-c3468a81acec`
+
+## [[entropy]] — gaps · seals
+
+> account code `agent` · currency `eb` (entropy-bit)
+
+Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horoRatio/10`.
+
+| [[gap]] debit (eb) | [[seal]] credit (eb) |
+| -----------------: | -------------------: |
+| [[gap]]/[[links]]/dangling `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[diamond]]/stray/team/ `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/proof `1` eb |
+|  | [[seal]]/[[lattice]]/folded `1` eb |
+|  | [[seal]]/[[links]]/resolved `78` eb |
+|  | [[seal]]/[[horo]]/ring `0.5` eb |
+|  | [[seal]]/[[identity]]/uuid `1` eb |
+|  | [[seal]]/[[boundary]]/barrel `1` eb |
+|  | [[seal]]/[[typography]]/partition `1` eb |
+| Σ gap `3` eb | Σ seal `85.5` eb |
+
+> net residual `-82.5` eb · seal/gap ratio `28.5` · [[entropy]] · [[seal]]
 
 ## typography graph
 
-- partition `agent` · sub-root `6c7e3159-1d51-809d-a4e0-83db8d6c35d5`
-- bond degree `254` · analysis neighbors `agent` · `ai` · `aura` · `booking` · `chat` · `class` · `cloudflare` · `comms` · `communication` · `decentralization` · `diamond` · `drone` · `ecosystem` · `estate` · `gravity` · `hallucination` · `infectious` · `interaction` · `log` · `mcp` · `observe` · `real` · `reference` · `request` · `research` · `reversibility` · `skill` · `skills` · `statistic` · `team` · `types` · `unavoidable` · `worker`
-- graph root `06810c2c-2396-831f-a2b3-a58706a17051`
+- partition `agent` · sub-root `69182b59-26e8-84aa-8e6f-1633b3122fc4`
+- bond degree `0` · analysis neighbors —
+- graph root `86252db0-c776-84eb-b8e4-c884dca3a3ba`
 
 ## [[cloudflare]] bindings
 
@@ -55,18 +109,56 @@
 - `SFIA` · catalogue
 - `W3C-ActivityPub` · catalogue
 
+## [[pivot]]
+
+### [[seal]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unsealed | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[balance]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| unbalanced | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[gravity]]
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| not-held | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### folder law / trinity
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| code-complete | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+### [[horo]] ring
+
+| state | count | share % |
+| ----- | ----: | ------: |
+| ring·5 | 1 | 100 |
+| **Σ** | **1** | **100** |
+
+
 ## analytics
 
-- bond degree `254` · sealed `0` · horo `8`
-- variance `0` · balanced `1` · trinity sum `3`
+- bond degree `0` · sealed `0` · horo `5`
+- variance `2` · balanced `0` · trinity sum `3`
 - bindings `0` · standards `21`
 
 ## identity
 
-- uuid `fe5cfadf-1598-87bf-9a01-94aacd043a09`
-- bonds in `69` · out `69`
+- uuid `4cfa118a-0f1d-8604-8668-0c3298e3da89`
+- bonds in `73` · out `73`
 - trinity form·code·proof `1`·`1`·`1`
-- links `63` / `63`
+- links `78` / `79`
 - folded `1` · escapes `0`
 
 ## [[seal]]
@@ -75,4 +167,4 @@
 
 ---
 
-<sub>content-uuid `5cfc9751-1d62-8ca2-b5bd-6bfb43ebffdd` · framed by typography partition `agent` bonds `254` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `2da6767d-47ae-82e4-900f-85ce4b539522` · framed by typography partition `agent` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

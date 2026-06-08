@@ -14,13 +14,67 @@ export {
   StrictApplyViolation,
   AGENT_RUNTIME_GRANT,
   defaultAgentLawState,
+  createPathSession,
+  agentLawWithPathSession,
+  dispatchPathsFrom,
+  recordPathVisits,
   strictApplyDispatch,
   strictApplyEffect,
   strictApplyMcpCall,
   assertStrictDispatch,
   assertStrictEffect,
   assertStrictMcpCall,
+  type PathSession,
 } from './strict-apply'
+
+export { agentCostPolicy, type AgentCostPolicy, type AgentCostPolicyOpts } from './cost-policy'
+export {
+  cheapAgentDispatch,
+  fullSkillIndexContextBytes,
+  type CheapAgentDispatchOpts,
+  type CheapAgentDispatchContext,
+} from './cheap-dispatch'
+
+export {
+  MAX_AGENT_SKILL_CONTEXT_BYTES,
+  AGENT_SKILL_CONTEXT_CACHE_TTL_MS,
+  realiseSkillsForPath,
+  skillsForImport,
+  agentSkillContextForDispatch,
+  atomPathFromInput,
+  skillBearingAtomPath,
+  domainHubFor,
+  bondedNeighborPaths,
+  clearAgentSkillContextCache,
+  getAgentSkillContextCache,
+  skillContextCacheKey,
+  loadSealedSkill,
+  resolveSkillLoadOpts,
+  isProseSkillFace,
+  compactRulesSnapshot,
+  type AgentSkillContext,
+  type RealisedSkillEntry,
+  type RealiseSkillsOpts,
+  type CompactQuantumSnapshot,
+  type CompactRulesSnapshot,
+  type SkillBundleRole,
+} from './skill-context'
+
+export {
+  createWaveSession,
+  completeWaveHop,
+  waveSessionVerdict,
+  isWaveSessionReady,
+  selfBalancingWaveLoad,
+  waveDispatchCost,
+  tamperCostForWave,
+  scheduleCorpusPathsInWaves,
+  corpusPathWaveBatches,
+  pathComparableUnits,
+  type WaveSession,
+  type WaveBatch,
+  type SelfBalancingWavePlan,
+} from '@/wave'
 
 export { createAgentRegistry } from './registry'
 export { processEffect, processEffects } from './effect-processor'
@@ -35,6 +89,20 @@ export type { ErpaxMcpResource } from '@/agents/mcp'
 export { ERPAX_MCP_RESOURCES } from '@/agents/mcp'
 export type { ErpaxMcpPrompt } from '@/agents/mcp'
 export { ERPAX_MCP_PROMPTS } from '@/agents/mcp'
+
+export {
+  taskInventory,
+  inventoryReport,
+  formatDoctorInventorySection,
+  inventoryGateWarnings,
+  INVENTORY_STALE_AFTER_SEC,
+  INVENTORY_MAX_ACTIVE,
+  INVENTORY_JSON_REL,
+  type InventoryRow,
+  type InventoryStatus,
+  type TaskInventoryResult,
+} from './inventory'
+export { emitInventorySnapshot, buildInventorySnapshot } from './inventory/emit'
 
 export { agentRegistry, agentRuntime } from './bootstrap'
 export { erpaxMcpTools, erpaxMcpResources, erpaxMcpPrompts } from './mcp-surface'

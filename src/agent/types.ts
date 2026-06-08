@@ -20,8 +20,11 @@ import type { Payload } from 'payload'
 import type { SupportedLocale } from '@/i18n'
 import type { Translator, SpecChainStep } from '@/spec/generator'
 import type { McpClient } from '@/agents/mcp'
+import type { PathCanonicalEntry } from '@/path'
 import type { Receipt } from '@/receipt'
 import type { ToolGrant } from '@/sandbox'
+import type { WaveSession } from '@/wave'
+import type { AgentSkillContext } from './skill-context'
 
 export type AgentId =
   | 'finance' | 'sales' | 'marketing' | 'hr' | 'legal'
@@ -74,6 +77,18 @@ export interface AgentLawState {
   readonly receiptHead: { leafUuid: string; seq: number } | null
   readonly untrustedPayload?: unknown
   readonly onReceipt?: (receipt: Receipt) => void
+  /** Paths touched this session — paired with pathLedger for persist gates. */
+  readonly pathsVisited?: ReadonlySet<string>
+  /** Required paths for path-follow gate (default: full matrix lattice). */
+  readonly requiredPaths?: readonly string[]
+  /** Canonical path ledger — append-only entries from recordOnPath. */
+  readonly pathLedger?: readonly PathCanonicalEntry[]
+  /** Wave session — persist only after all horo waves complete with receipts. */
+  readonly waveSession?: WaveSession
+  /** Axes the agent acknowledged via `agent.cross.acknowledge` receipts — education gate. */
+  readonly crossAcknowledgedAxes?: ReadonlySet<string>
+  /** Lazy-realised skill bundle from dispatch — rules snapshot reused by effect gates. */
+  readonly skillContext?: AgentSkillContext
 }
 
 /**
