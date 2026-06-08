@@ -3,15 +3,15 @@
 
 # fear
 
-path `fear` · uuid `49972782-70e1-8b34-a295-be69628acf5d` · diamond `82edeaea-1ee5-8ce0-9655-660c03f3b1b0`
+path `fear` · uuid `49972782-70e1-8b34-a295-be69628acf5d` · diamond `dd3faa0e-4766-8076-810d-fb35b4ba9370`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports angel·cost·entropy·fear·karma·law·link·love·quantum·tamper · exports fear · escapes —
-links `23/23` · folded `1` · bonds in `5` out `5`
+links `23/23` · folded `1` · bonds in `20` out `26`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·diagnostic·landmarks·memories·stat · ← cohort·diagnostic·landmarks·memories·stat
+neighbors → angel·balance·cost·cost·duality·engineering·entropy·entropy·fear·fear·finality·gravity·karma·karma·law·law·link·link·love·love·merge·quantum·security·society·tamper·tamper · ← angel·balance·cost·duality·engineering·entropy·fear·fear·finality·gravity·karma·law·link·love·love·merge·quantum·security·society·tamper
 analysis —
 law fear is the destroy pole that RAISES [[entropy]] (break, forget, forge, open a gap) — the credit whose matching debit is [[love]]; the cost is always conserved, and the irreversible bit-erasure it performs pays Landauer's kT ln2 floor.
 
 ---
 
-<sub>content-uuid `55ed94ce-fe6e-8815-b953-45f8ebad3c69` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7f7675ec-4aa5-8d0a-9bae-0639cdd46aaf` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # fat
 
-path `fat` · uuid `13036878-f015-8fb3-aa94-a34bbfd75371` · diamond `4e929e0d-203a-8f6c-abbb-ce1136f596eb`
+path `fat` · uuid `13036878-f015-8fb3-aa94-a34bbfd75371` · diamond `cccb0c98-d520-87c5-918c-578b7b582a3d`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·content·law·merge·saturated·sti·trans·unsaturated · exports fat · escapes —
-links `8/8` · folded `1` · bonds in `20` out `26`
+links `8/8` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → angel·balance·corrects·corrects·dropoff·entertainment·entertainment·fat·fat·fax·fax·fields·grant·import·import·joint·landmarks·landmarks·literature·marine·memories·postings·qualification·resume·symbol·symbol · ← angel·balance·corrects·dropoff·entertainment·fat·fat·fax·fax·fields·grant·import·joint·landmarks·literature·marine·memories·qualification·resume·symbol
+neighbors → collapse·content·law·merge·saturated·sti·trans·unsaturated · ← collapse·content·law·merge·saturated·sti·trans·unsaturated
 analysis —
 law fat is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `863ab978-f3a3-851e-aa06-078c9af2f5fb` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `eb64678d-6045-890a-afce-832fbeaeddf4` · `pnpm readme` · `pnpm computed:check`</sub>

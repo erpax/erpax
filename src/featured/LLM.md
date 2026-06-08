@@ -3,15 +3,15 @@
 
 # featured
 
-path `featured` · uuid `4405a51c-8173-8d7d-933c-6926ceb7b8f9` · diamond `7e633165-dabd-8eb7-bf78-b32026e1c2d5`
+path `featured` · uuid `4405a51c-8173-8d7d-933c-6926ceb7b8f9` · diamond `32f911d5-9267-8379-9cb3-83aa8d97d5d5`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·work · exports featured · escapes —
-links `5/5` · folded `1` · bonds in `9` out `9`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·competitor·dangerous·electrician·issn·landmarks·memories·stat·war · ← cohort·competitor·dangerous·electrician·issn·landmarks·memories·stat·war
+neighbors → collapse·law·merge·sti·work · ← collapse·law·merge·sti·work
 analysis —
 law featured is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `6a142067-3715-8b3a-b5cb-5bcf7be8e752` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b434dc5d-d63f-83e8-baf6-e38921662255` · `pnpm readme` · `pnpm computed:check`</sub>

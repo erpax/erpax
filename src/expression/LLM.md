@@ -3,15 +3,15 @@
 
 # expression
 
-path `expression` · uuid `3159e20c-698a-8376-b359-d66b3604093c` · diamond `659bde8a-198b-83b0-9978-cc3614608888`
+path `expression` · uuid `3159e20c-698a-8376-b359-d66b3604093c` · diamond `49eb5be0-6e44-8eda-9f6e-5614ad92fa25`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·math·merge·sti · exports expression · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·math·merge·sti · ← collapse·law·math·merge·sti
 analysis —
 law expression is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `5193e24f-f6ef-8abc-a647-4d8a794c6ce3` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d44b8c68-ea49-88d4-b5d0-a6a6161a2bc5` · `pnpm readme` · `pnpm computed:check`</sub>

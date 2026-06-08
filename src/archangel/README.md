@@ -23,7 +23,7 @@
 
 - partition `archangel` · sub-root `31a26713-d5af-82be-be2d-6d96a1ef635d`
 - bond degree `150` · analysis neighbors `diamond`
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `1c65e160-5137-86a1-ad8e-dc86b0e96873`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `cbf99cb0-08ac-84f0-9759-03371df64117` · framed by typography partition `archangel` bonds `150` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `eee65ae7-2c1b-8313-ab13-693184bd5d9f` · framed by typography partition `archangel` bonds `150` · `pnpm readme` · `pnpm readme:check`</sub>

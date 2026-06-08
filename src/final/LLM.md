@@ -3,15 +3,15 @@
 
 # final
 
-path `final` · uuid `87a7d943-94d2-85ef-a3a6-a923849185a7` · diamond `0459e1a3-7028-8a03-a22d-54cf08298f2b`
+path `final` · uuid `87a7d943-94d2-85ef-a3a6-a923849185a7` · diamond `c9750cbb-07ae-878c-9357-6c16779c90e4`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports final · escapes —
-links `4/4` · folded `1` · bonds in `6` out `6`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·cohort·landmarks·memories·scorecard·stat · ← action·cohort·landmarks·memories·scorecard·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law final is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `bcf2e47c-d312-8663-9850-68f0935d620d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b06b25de-3991-88ce-9db0-6ffdeffa0555` · `pnpm readme` · `pnpm computed:check`</sub>

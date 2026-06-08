@@ -23,7 +23,21 @@
 
 - partition `church` · sub-root `46484840-5321-8cba-8c77-778c60438a60`
 - bond degree `7` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `7` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `b40e6d28-6761-83ca-943d-b71adb4c5bc8` · framed by typography partition `church` bonds `7` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `16eb4436-8191-8681-a685-647edc17a6f0` · framed by typography partition `church` bonds `7` · `pnpm readme` · `pnpm readme:check`</sub>

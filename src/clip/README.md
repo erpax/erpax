@@ -23,7 +23,21 @@
 
 - partition `clip` · sub-root `b9f21fe7-42d9-8095-85c2-55059028dc27`
 - bond degree `26` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `26` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `c3fd6935-502d-833d-a207-4e73d862646a` · framed by typography partition `clip` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `52985621-e9ed-8f42-ae0e-752a777ac23a` · framed by typography partition `clip` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>

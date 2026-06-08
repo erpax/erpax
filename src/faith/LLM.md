@@ -3,15 +3,15 @@
 
 # faith
 
-path `faith` · uuid `de0739bd-b990-825d-a417-d17e3a70877e` · diamond `e526b6bd-5eca-8a84-9393-d27be924f336`
+path `faith` · uuid `de0739bd-b990-825d-a417-d17e3a70877e` · diamond `c3ea844e-10b6-8eab-b5bf-0da162bfa29d`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports contribution·duality·grace·law·profane·proof·sacred·standard · exports faith · escapes —
-links `14/14` · folded `1` · bonds in `5` out `5`
+links `14/14` · folded `1` · bonds in `15` out `15`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·owned·stat · ← cohort·landmarks·memories·owned·stat
+neighbors → christianity·confucianism·contribution·covenant·duality·grace·islam·jainism·law·profane·proof·protestantism·religion·sacred·standard · ← christianity·confucianism·contribution·covenant·duality·grace·islam·jainism·law·profane·proof·protestantism·religion·sacred·standard
 analysis —
 law faith is trust extended before or without the trustless recompute — the dual of [[proof]]; the healthy ratio is most-proof, least-faith, spending faith only at the irreducible root key every system must bootstrap from.
 
 ---
 
-<sub>content-uuid `0f7a244d-34bb-8885-bc1e-b1b1f6c1d360` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6b375ef7-1ea6-8714-b2fc-14260588da80` · `pnpm readme` · `pnpm computed:check`</sub>

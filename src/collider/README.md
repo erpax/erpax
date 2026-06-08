@@ -25,7 +25,23 @@
 
 - partition `collider` · sub-root `e6c1fdc9-b8b5-8ad9-a83a-77cd10dc6bef`
 - bond degree `28` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `coverageCostLog2 (the ∞ law) · the product of independent convention coverages · computed-not-hardcoded` · banner
+- `each check is a live computation in @/convention; the verdict is coverageCostLog2 of the product, never assumed` · banner
+- `every check is a live computation; coverages bounded by construction, atom count positive by architecture; the verdict is never assumed` · banner
+
+## analytics
+
+- bond degree `28` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `3`
 
 ## identity
 
@@ -41,4 +57,4 @@
 
 ---
 
-<sub>content-uuid `8c76331b-c523-8291-8e08-6aa41e38b8fa` · framed by typography partition `collider` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `3e38ed3e-d9b9-8ddb-ab9d-f3ea4fd55754` · framed by typography partition `collider` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>

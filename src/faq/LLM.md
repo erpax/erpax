@@ -8,10 +8,10 @@ horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·page·sti · exports faq · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·notice·stat · ← cohort·landmarks·memories·notice·stat
+neighbors → collapse·law·merge·page·sti · ← collapse·law·merge·page·sti
 analysis —
 law faq is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `3d1c91be-2a7a-894a-973a-903079113116` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `48074329-b2b0-8346-929a-4680ff5d7133` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -25,7 +25,23 @@
 
 - partition `component` · sub-root `6554161f-95d7-8dbb-84df-b1c0e28a48e4`
 - bond degree `61` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `a component's render is its atom-uuid pixel (via [[pixel]]) — computed, deterministic, never hand-styled` · banner
+- `a component's visible identity IS its atom-uuid pixel — computed, never hand-styled` · banner
+- `WAI-ARIA semantics on a render whose identity is the content-uuid` · banner
+
+## analytics
+
+- bond degree `61` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `3`
 
 ## identity
 
@@ -41,4 +57,4 @@
 
 ---
 
-<sub>content-uuid `2d4054ad-fff3-85c9-8af7-79e4d8b05754` · framed by typography partition `component` bonds `61` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `9006f2c1-14ef-889d-8715-94e5e5362746` · framed by typography partition `component` bonds `61` · `pnpm readme` · `pnpm readme:check`</sub>

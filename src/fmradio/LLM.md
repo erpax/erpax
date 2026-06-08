@@ -3,15 +3,15 @@
 
 # fmradio
 
-path `fmradio` · uuid `276b86d2-31e7-8644-a357-4d35ae668b24` · diamond `c43481cf-ba21-8f71-89d4-bb82b10d4472`
+path `fmradio` · uuid `276b86d2-31e7-8644-a357-4d35ae668b24` · diamond `239b475e-d7e2-8602-8a34-a565401e36f5`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports fmradio · escapes —
-links `4/4` · folded `1` · bonds in `2` out `2`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law fmradio is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `b7852963-3db3-8419-ac3e-f823ce4ae0d8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `91fb47a4-548d-8ea9-97a1-5e4eb742ff5d` · `pnpm readme` · `pnpm computed:check`</sub>

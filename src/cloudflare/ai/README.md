@@ -24,9 +24,31 @@
 
 ## typography graph
 
-- partition `cloudflare` · sub-root `6d217abe-fbe3-8eb7-ba5c-b4f6d6537fdb`
-- bond degree `42` · analysis neighbors `agent` · `cloudflare` · `diamond` · `secret`
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- partition `cloudflare` · sub-root `29127283-cb09-8fe6-ae5e-13f41e36f651`
+- bond degree `44` · analysis neighbors `agent` · `cloudflare` · `diamond` · `secret`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+- `ai`/`AI` · atom `cloudflare/ai/AI`
+- `analytics_engine_datasets`/`ANALYTICS_AI` · atom `cloudflare/analytics-engine-datasets/ANALYTICS_AI`
+- `durable_objects`/`AUDIT_CHAIN_DO` · atom `cloudflare/durable-objects/AUDIT_CHAIN_DO`
+- `kv_namespaces`/`AI_CACHE` · atom `cloudflare/kv-namespaces/AI_CACHE`
+- `queues`/`QUEUE_AI_BATCH` · atom `cloudflare/queues/QUEUE_AI_BATCH`
+- `queues`/`QUEUE_EMAIL_OUT` · atom `cloudflare/queues/QUEUE_EMAIL_OUT`
+- `ratelimit`/`RATE_LIMITER_AI` · atom `cloudflare/ratelimit/RATE_LIMITER_AI`
+- `send_email`/`EMAIL_SENDER` · atom `cloudflare/send-email/EMAIL_SENDER`
+- `vectorize`/`VECTORIZE_DOCS` · atom `cloudflare/vectorize/VECTORIZE_DOCS`
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `44` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `9` · standards `0`
 
 ## identity
 
@@ -42,4 +64,4 @@
 
 ---
 
-<sub>content-uuid `01fcacb1-d2ee-8e1c-b2ea-c23607ec22e5` · framed by typography partition `cloudflare` bonds `42` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `628e3322-4517-8fe3-925e-796579dc08d2` · framed by typography partition `cloudflare` bonds `44` · `pnpm readme` · `pnpm readme:check`</sub>

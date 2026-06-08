@@ -3,15 +3,15 @@
 
 # financial
 
-path `financial` · uuid `aa0a41bc-f87e-88d6-98e1-1f0d38cade35` · diamond `0f76512c-9764-87c3-91bf-8623f1380993`
+path `financial` · uuid `aa0a41bc-f87e-88d6-98e1-1f0d38cade35` · diamond `288de767-0f2f-854e-a78a-d73557f3996e`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports aid·collapse·eligible·incentive·law·merge·product·service·sti · exports financial · escapes —
-links `9/9` · folded `1` · bonds in `4` out `4`
+links `9/9` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → aid·collapse·eligible·incentive·law·merge·product·service·sti · ← aid·collapse·eligible·incentive·law·merge·product·service·sti
 analysis —
 law financial is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `afe96839-bdba-8cb0-a7ba-7f9eabba52c5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `33ee8d53-c565-8467-a188-f82b6ffa5593` · `pnpm readme` · `pnpm computed:check`</sub>

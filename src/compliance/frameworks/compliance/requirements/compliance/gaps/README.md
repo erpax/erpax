@@ -25,7 +25,25 @@
 
 - partition `compliance` · sub-root `9b1931fc-526d-8686-bbd2-928435640965`
 - bond degree `3` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ISO-19011:2018 nonconformity` · banner
+- `ISO-37301` · catalogue
+- `ISO-37301:2021 compliance-management` · banner
+- `SOX §404 deficiency` · banner
+- `US-CTA-2021` · catalogue
+
+## analytics
+
+- bond degree `3` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `5`
 
 ## identity
 
@@ -41,4 +59,4 @@
 
 ---
 
-<sub>content-uuid `a4ddf590-7f3f-8985-a3dd-933d31e5b950` · framed by typography partition `compliance` bonds `3` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `953ec74e-69df-81d9-b455-58d99bcb5ead` · framed by typography partition `compliance` bonds `3` · `pnpm readme` · `pnpm readme:check`</sub>

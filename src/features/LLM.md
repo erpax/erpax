@@ -3,15 +3,15 @@
 
 # features
 
-path `features` · uuid `8270fa19-6883-8a89-b6d6-7feeb1d48b15` · diamond `8d6f516f-d495-8b0c-bab9-6ee73fa84f23`
+path `features` · uuid `8270fa19-6883-8a89-b6d6-7feeb1d48b15` · diamond `52ceed37-c7e9-85f0-8695-d6ca45d6dd4d`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·diet·law·merge·sti · exports features · escapes —
-links `5/5` · folded `1` · bonds in `11` out `11`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → actionable·command·details·employee·endpoints·international·plugins·salon·saturday·similar·subscriptions · ← actionable·command·details·employee·endpoints·international·plugins·salon·saturday·similar·subscriptions
+neighbors → collapse·diet·law·merge·sti · ← collapse·diet·law·merge·sti
 analysis —
 law features is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `76a47795-a265-8535-a19d-549f8e91bc86` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5555f1ed-b4ae-8145-b075-61f9e5c5dd7a` · `pnpm readme` · `pnpm computed:check`</sub>

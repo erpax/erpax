@@ -3,15 +3,15 @@
 
 # food
 
-path `food` · uuid `ac78eae9-997d-8af7-92ea-3e431fce67b2` · diamond `83bbddef-f1d4-8d22-a7cf-0ed5bfc4f659`
+path `food` · uuid `ac78eae9-997d-8af7-92ea-3e431fce67b2` · diamond `8a65b07f-b548-828f-9a74-621644bbaa29`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·establishment·event·fast·law·merge·reservation·restaurant·service·sti·warning · exports food · escapes —
-links `11/11` · folded `1` · bonds in `5` out `5`
+links `11/11` · folded `1` · bonds in `11` out `11`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·mass·notifications·segments·teller · ← landmarks·mass·notifications·segments·teller
+neighbors → collapse·establishment·event·fast·law·merge·reservation·restaurant·service·sti·warning · ← collapse·establishment·event·fast·law·merge·reservation·restaurant·service·sti·warning
 analysis —
 law food is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `95008a61-746f-8283-817d-55af9f706039` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e02e2d2e-83bf-8745-8d6f-43e3a965754a` · `pnpm readme` · `pnpm computed:check`</sub>

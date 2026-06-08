@@ -22,8 +22,22 @@
 ## typography graph
 
 - partition `collapse` · sub-root `5c3cb38e-0a65-8fb1-a7a5-158f54af9308`
-- bond degree `4787` · analysis neighbors `aura`
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- bond degree `4788` · analysis neighbors `aura`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `4788` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `db3463e3-e615-899a-9739-2509f528ba8c` · framed by typography partition `collapse` bonds `4787` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `09211b57-16fe-85ef-8f7a-8014d1490640` · framed by typography partition `collapse` bonds `4788` · `pnpm readme` · `pnpm readme:check`</sub>

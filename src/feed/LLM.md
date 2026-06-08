@@ -3,15 +3,15 @@
 
 # feed
 
-path `feed` · uuid `a4127391-c051-89ef-883f-a2ee0a8500b8` · diamond `d32969b3-94a1-83b5-ba0e-3af6e5df986f`
+path `feed` · uuid `a4127391-c051-89ef-883f-a2ee0a8500b8` · diamond `88eca7e1-5f55-8fe1-9270-7b7a9a7ae411`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·complete·data·element·item·law·merge·sti·web · exports feed · escapes —
-links `9/9` · folded `1` · bonds in `28` out `28`
+links `9/9` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `0·0·0`
-neighbors → agriculture·balance·biological·candidate·composite·conventional·cover·crisis·entity·footer·grantee·landmarks·lines·lineup·makes·max·measurements·mobile·muscle·partition·performance·pickup·quote·rv·sla·task·vibration·worth · ← agriculture·balance·biological·candidate·composite·conventional·cover·crisis·entity·footer·grantee·landmarks·lines·lineup·makes·max·measurements·mobile·muscle·partition·performance·pickup·quote·rv·sla·task·vibration·worth
+neighbors → collapse·complete·data·element·item·law·merge·sti·web · ← collapse·complete·data·element·item·law·merge·sti·web
 analysis —
 law feed is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `5ff702bf-bafb-84d8-9148-1937537dc06a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a6464fb5-fd80-8bb0-9bb5-2e13d60e024f` · `pnpm readme` · `pnpm computed:check`</sub>

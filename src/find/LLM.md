@@ -3,15 +3,15 @@
 
 # find
 
-path `find` · uuid `fa180bc6-ddb7-8bc3-982a-68644cd9ec29` · diamond `eedbea7d-299f-88f4-9454-460af809cf93`
+path `find` · uuid `fa180bc6-ddb7-8bc3-982a-68644cd9ec29` · diamond `c6e0e602-f244-850b-b413-b12c18912c4c`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti · exports find · escapes —
-links `5/5` · folded `1` · bonds in `9` out `9`
+links `5/5` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → appearance·cohort·database·landmarks·memories·percentile10·reference·stat·utterance · ← appearance·cohort·database·landmarks·memories·percentile10·reference·stat·utterance
+neighbors → action·collapse·engine·law·merge·sti · ← action·collapse·engine·law·merge·sti
 analysis —
 law find is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `06a6c5d9-aee4-8663-bc16-02c0f70b0b1c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `81e3f0cc-c808-889e-aa27-68c461689fea` · `pnpm readme` · `pnpm computed:check`</sub>

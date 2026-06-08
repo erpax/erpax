@@ -3,15 +3,15 @@
 
 # formation
 
-path `formation` · uuid `58bd435d-bce9-8455-ab91-ac2d6364c43c` · diamond `a6b51d3a-9a39-8198-9c6d-56c8829e4261`
+path `formation` · uuid `58bd435d-bce9-8455-ab91-ac2d6364c43c` · diamond `68d0f539-60e3-8c83-8f71-3a7cf70861b2`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports formation · escapes —
-links `4/4` · folded `1` · bonds in `6` out `6`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·gas·landmarks·memories·notice·stat · ← cohort·gas·landmarks·memories·notice·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law formation is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `16b5ebb6-890b-8a65-b63a-32455a65ebb9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d56b5af2-37e2-807b-868c-6a8ccb1d9765` · `pnpm readme` · `pnpm computed:check`</sub>

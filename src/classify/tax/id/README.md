@@ -25,7 +25,24 @@
 
 - partition `classify` · sub-root `adc34fd1-3f2f-83f2-8103-883e13c33c56`
 - bond degree `66` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `EU-Taxonomy-2020/852` · catalogue
+- `ISO-19011:2018 audit-trail tax-id-classification-evidence` · banner
+- `ISO-3166-1` · catalogue
+- `ISO-3166-1:2020 country-codes alpha-2` · banner
+
+## analytics
+
+- bond degree `66` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `4`
 
 ## identity
 
@@ -41,4 +58,4 @@
 
 ---
 
-<sub>content-uuid `a17de3d9-3738-8dbb-a2f5-c0bf2cfc49ec` · framed by typography partition `classify` bonds `66` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c69d8dc0-c9d2-8217-8abf-d780f39b1efc` · framed by typography partition `classify` bonds `66` · `pnpm readme` · `pnpm readme:check`</sub>

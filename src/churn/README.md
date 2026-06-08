@@ -23,7 +23,21 @@
 
 - partition `churn` · sub-root `e15b5534-96d5-8d77-8427-1573ffa36eb4`
 - bond degree `24` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `24` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `aecd8031-d0a5-8b3d-832d-d2193b0d0aab` · framed by typography partition `churn` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ebfa0599-a61a-8850-850f-4b80bb45d3e4` · framed by typography partition `churn` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>

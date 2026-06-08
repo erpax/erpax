@@ -23,7 +23,7 @@
 
 - partition `attrition` · sub-root `ab1c2865-26cc-811e-92e5-f20abef2a48e`
 - bond degree `18` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `1c65e160-5137-86a1-ad8e-dc86b0e96873`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `0df34503-155d-8075-9b0e-68135f027512` · framed by typography partition `attrition` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d1d0f6e4-d82e-8675-b2a0-50dba16825c5` · framed by typography partition `attrition` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>

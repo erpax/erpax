@@ -2,7 +2,7 @@
 
 # fallback
 
-> atom `fallback` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
+> atom `fallback` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `fallback` · sub-root `42746b65-8828-897b-b149-91b213d85557`
-- bond degree `28` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `38` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
-- uuid `42746b65-8828-897b-b149-91b213d85557`
-- bonds in `4` · out `4`
+- uuid `f3f780cd-92f5-8d97-b005-9a31da4f3822`
+- bonds in `11` · out `13`
 - trinity form·code·proof `1`·`0`·`0`
 - links `5` / `5`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `8775599e-9022-87d3-84b4-407434432867` · framed by typography partition `fallback` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `42605c0c-9fb3-8e33-b43e-74c7dac84d05` · framed by typography partition `fallback` bonds `38` · `pnpm readme` · `pnpm readme:check`</sub>

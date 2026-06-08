@@ -3,15 +3,15 @@
 
 # feedback
 
-path `feedback` · uuid `e255edb7-d35a-8d9e-a8c8-059281e3a5ba` · diamond `c7518b11-20d7-8093-8acd-b786bf15c204`
+path `feedback` · uuid `e255edb7-d35a-8d9e-a8c8-059281e3a5ba` · diamond `ea69f380-953a-8e4a-b78d-c4419dd4abd4`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports comment·employees·interview·research·satisfaction · exports feedback · escapes —
-links `5/5` · folded `1` · bonds in `2` out `2`
+links `5/5` · folded `1` · bonds in `11` out `11`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → actionable·comment·engagement·interview·policy·research·reviews·satisfaction·science·sentiment·suggestion · ← actionable·comment·engagement·interview·policy·research·reviews·satisfaction·science·sentiment·suggestion
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `fbe1eb33-e9e8-846e-a4b0-34af8dcf83fb` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8ce76ad8-6953-8141-9f70-a335507604f6` · `pnpm readme` · `pnpm computed:check`</sub>

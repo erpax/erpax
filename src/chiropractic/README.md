@@ -23,7 +23,21 @@
 
 - partition `chiropractic` · sub-root `ae65ae03-80e2-831e-ab7d-ad49d709b668`
 - bond degree `12` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `12` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `d9a51660-d381-8a40-aa99-2ec947cd70dd` · framed by typography partition `chiropractic` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `1c0cdd71-119f-8592-9ed7-8211c7999410` · framed by typography partition `chiropractic` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

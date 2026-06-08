@@ -23,7 +23,21 @@
 
 - partition `chemical` · sub-root `4fa0f631-ec49-8cc4-ba9c-9188c5548c9c`
 - bond degree `24` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `24` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `41d9b67d-fd61-860b-ac32-3e85ac6a3534` · framed by typography partition `chemical` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `5e368228-b184-8159-80d4-27c6e295908d` · framed by typography partition `chemical` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>

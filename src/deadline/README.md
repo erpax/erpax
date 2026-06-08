@@ -23,7 +23,7 @@
 
 - partition `deadline` · sub-root `1bc7fc2d-e6d6-8034-9584-3d97b4b946a9`
 - bond degree `16` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `08417410-9529-8662-a45d-0e6296f0598e`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `31627d00-2ecf-88fc-97a4-f1356b765847` · framed by typography partition `deadline` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0211fa46-c4ed-84c6-a94a-f4e468742148` · framed by typography partition `deadline` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

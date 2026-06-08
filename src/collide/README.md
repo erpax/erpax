@@ -25,7 +25,22 @@
 
 - partition `collide` · sub-root `6a912f6c-5e20-8eae-b177-d937fefd259d`
 - bond degree `45` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `collide is DEFINED here and DEFERRED — never applied to the live matrix in this atom` · banner
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `45` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `2`
 
 ## identity
 
@@ -41,4 +56,4 @@
 
 ---
 
-<sub>content-uuid `f1ba3d6a-ab9a-88dd-97a5-68ab025c929f` · framed by typography partition `collide` bonds `45` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `8ee9e61a-0538-87dd-9af2-166993235886` · framed by typography partition `collide` bonds `45` · `pnpm readme` · `pnpm readme:check`</sub>

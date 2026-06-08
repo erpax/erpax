@@ -3,15 +3,15 @@
 
 # shares
 
-path `fiscal/periods/earnings/per/shares` · uuid `7abe7948-1544-805c-8cd2-2f23cf1c6bf3` · diamond `b2cb1d25-1c32-8194-8e57-30e5d7dd5dff`
+path `fiscal/periods/earnings/per/shares` · uuid `7abe7948-1544-805c-8cd2-2f23cf1c6bf3` · diamond `9e957edb-e796-81d0-94e4-3726eee95b4b`
 horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
-links `6/6` · folded `1` · bonds in `4` out `4`
+links `6/6` · folded `1` · bonds in `6` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → accounting·identity·law·law·periods·proof·standard · ← accounting·identity·law·periods·proof·standard
 analysis —
 law EPS is earnings over the weighted-average ordinary shares for the period — diluted EPS must reflect every dilutive option/convertible/grant and can never exceed basic, and continuing operations are reported separately from discontinued (IAS-33).
 
 ---
 
-<sub>content-uuid `ac4f4657-9de0-81a6-a180-d979fbc5ed85` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `cdc0bfe0-1d8e-8478-bb69-3af06c105f30` · `pnpm readme` · `pnpm computed:check`</sub>

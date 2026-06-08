@@ -23,7 +23,7 @@
 
 - partition `crematorium` · sub-root `52dd4081-c620-8412-93cc-7f1c5628f89f`
 - bond degree `6` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `08417410-9529-8662-a45d-0e6296f0598e`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `bf43285e-7901-84b3-af4d-6b7b1de88c16` · framed by typography partition `crematorium` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `33a4de9d-d450-89b6-a489-5e76ad29569b` · framed by typography partition `crematorium` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>

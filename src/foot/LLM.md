@@ -3,15 +3,15 @@
 
 # foot
 
-path `foot` · uuid `d79343e0-c965-8e4c-848c-770bb11dd033` · diamond `9d27404e-4242-8276-90ea-4f13f64a8182`
+path `foot` · uuid `d79343e0-c965-8e4c-848c-770bb11dd033` · diamond `bec9ab53-ad58-841c-8317-86f625a43f36`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports foot · escapes —
-links `4/4` · folded `1` · bonds in `20` out `20`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → aggregation·agriculture·biomagnetism·breastfeeding·buddhist·choose·crop·definition·enrollment·escalation·footer·funded·landmarks·law·photon·result·snapshots·template·typography·university · ← aggregation·agriculture·biomagnetism·breastfeeding·buddhist·choose·crop·definition·enrollment·escalation·footer·funded·landmarks·law·photon·result·snapshots·template·typography·university
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law foot is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `cd237c6a-bc5b-86d7-be84-005ae67a4cd2` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `65752e4b-d751-85d5-9c6b-015ec9579c2f` · `pnpm readme` · `pnpm computed:check`</sub>

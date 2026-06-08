@@ -25,7 +25,7 @@
 
 - partition `accounting` · sub-root `8b33fe24-86ed-890b-bd50-163f8f64b128`
 - bond degree `739` · analysis neighbors `aura`
-- graph root `1c65e160-5137-86a1-ad8e-dc86b0e96873`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
 
 ## [[cloudflare]] bindings
 
@@ -67,4 +67,4 @@
 
 ---
 
-<sub>content-uuid `28678515-0078-81ef-b686-ab92cc67b4bf` · framed by typography partition `accounting` bonds `739` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `cf7fbb1a-7970-8564-888c-d9345256b885` · framed by typography partition `accounting` bonds `739` · `pnpm readme` · `pnpm readme:check`</sub>

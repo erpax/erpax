@@ -76,7 +76,10 @@ export function scanImports(root = SRC): { total: number; violations: ImportViol
       const body = readFileSync(p, 'utf8')
       for (let m; (m = re.exec(body)); ) {
         total++
-        if (!isIndexImport(m[1]!)) violations.push({ file: p.slice(root.length + 1), spec: m[1]! })
+        const spec = m[1]!
+        if (!resolveBarrel(spec) && !isIndexImport(spec)) {
+          violations.push({ file: p.slice(root.length + 1), spec })
+        }
       }
     }
   }

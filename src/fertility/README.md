@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `fertility` · sub-root `be959057-62be-870a-83fd-c72cdef16e93`
-- bond degree `243` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `93` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `be959057-62be-870a-83fd-c72cdef16e93`
-- bonds in `104` · out `102`
+- bonds in `28` · out `28`
 - trinity form·code·proof `1`·`0`·`0`
 - links `36` / `36`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `5e910dcc-e162-8f9d-b60b-d6561572d71d` · framed by typography partition `fertility` bonds `243` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `46a85915-852b-8e68-b5f6-ba2348806926` · framed by typography partition `fertility` bonds `93` · `pnpm readme` · `pnpm readme:check`</sub>

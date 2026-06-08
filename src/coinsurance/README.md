@@ -23,7 +23,21 @@
 
 - partition `coinsurance` · sub-root `e8c78058-462b-8165-abbc-9adf516820f7`
 - bond degree `26` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `26` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `30311058-385b-8111-a076-f88f5e59f861` · framed by typography partition `coinsurance` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `5f5e8398-b17b-8076-8d72-069ec4f6cf75` · framed by typography partition `coinsurance` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,15 +3,15 @@
 
 # floor
 
-path `floor` · uuid `4a52686d-1552-88d3-8b27-077e60bbcb82` · diamond `4f851630-b99d-8dc0-961d-3a12fc543851`
+path `floor` · uuid `4a52686d-1552-88d3-8b27-077e60bbcb82` · diamond `673e6dda-47c9-8ce3-838c-f177a4827a19`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports accommodation·collapse·law·level·limit·merge·plan·size·sti · exports floor · escapes —
-links `9/9` · folded `1` · bonds in `4` out `4`
+links `9/9` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → accommodation·collapse·law·level·limit·merge·plan·size·sti · ← accommodation·collapse·law·level·limit·merge·plan·size·sti
 analysis —
 law floor is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `d34bcb6b-ace4-827a-8055-0f89408f00ab` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9f852846-c711-8604-91db-8f7ca54b1618` · `pnpm readme` · `pnpm computed:check`</sub>

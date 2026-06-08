@@ -3,15 +3,15 @@
 
 # follows
 
-path `follows` · uuid `b49e6b08-0bd6-838d-93aa-ef5956021e29` · diamond `375778cf-ff59-8e0a-845b-18cfacd0e047`
+path `follows` · uuid `b49e6b08-0bd6-838d-93aa-ef5956021e29` · diamond `e63237b6-e945-8914-a3f4-af9f4465437b`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports follows · escapes —
-links `2/2` · folded `1` · bonds in `5` out `5`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat·word · ← cohort·landmarks·memories·stat·word
+neighbors → law·thing · ← law·thing
 analysis —
 law follows is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `2605b0a9-407b-86e5-9dd0-4696ece4b824` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e4e7044d-9265-81c3-8be0-b2d0e243ae95` · `pnpm readme` · `pnpm computed:check`</sub>

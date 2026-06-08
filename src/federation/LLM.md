@@ -3,15 +3,15 @@
 
 # federation
 
-path `federation` · uuid `5ed9f4d6-976d-82de-bc1e-4d29f7f555a0` · diamond `686b8d78-b07d-868f-957e-8b4e9f32b2a3`
+path `federation` · uuid `5ed9f4d6-976d-82de-bc1e-4d29f7f555a0` · diamond `77f66845-0613-844d-883e-3f6597e3ce4e`
 horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports — · exports FederatedRow·FederationManifest·ImportResult·TrustEntry·exportRow·importRow · escapes —
-links `19/19` · folded `1` · bonds in `14` out `14`
+links `19/19` · folded `1` · bonds in `19` out `19`
 faces worker·plugin·pwa `0·0·0`
-neighbors → amount·cohort·deduction·employees·entropy·issn·landmarks·memories·rates·relationship·restocking·shannon·spa·stat · ← amount·cohort·deduction·employees·entropy·issn·landmarks·memories·rates·relationship·restocking·shannon·spa·stat
+neighbors → access·decentralization·duality·ecosystem·event·exchange·fractal·holographic·hooks·identity·ingest·law·lineage·merge·replication·sequence·standard·uuid·workspace · ← access·decentralization·duality·ecosystem·event·exchange·fractal·holographic·hooks·identity·ingest·law·lineage·merge·replication·sequence·standard·uuid·workspace
 analysis —
 law federation is the wire under [[merge]] — two tenants converge on the same row WITHOUT trusting each other or coordinating, because the receiver independently recomputes the content-[[uuid]] under the SOURCE namespace through a fixed strictest-first gate (shape · trust · accepted-collection · signature · sender-tamper · idempotency): it matches and ingests, or the envelope is rejected.
 
 ---
 
-<sub>content-uuid `1883ca89-790b-8f10-b38d-37ddf43afef4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `49337d01-9356-897f-a9cb-b87bf34dae7d` · `pnpm readme` · `pnpm computed:check`</sub>

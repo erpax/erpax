@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `fax` · sub-root `a0702d8b-52b9-852a-8576-606bbcbfcb26`
-- bond degree `61` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `15` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `a0702d8b-52b9-852a-8576-606bbcbfcb26`
-- bonds in `25` · out `31`
+- bonds in `5` · out `5`
 - trinity form·code·proof `1`·`0`·`0`
 - links `5` / `5`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `aec26c77-504c-8ca3-a85d-c2a3fd3e9e48` · framed by typography partition `fax` bonds `61` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f2b10cea-4a82-8e95-8f3f-d40c4fbcbe60` · framed by typography partition `fax` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

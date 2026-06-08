@@ -3,15 +3,15 @@
 
 # fast
 
-path `fast` · uuid `5cffaeb9-62fc-850b-a6ac-dff9ca0d24dc` · diamond `26f9d44d-ad9b-8e25-a5d9-cb9c53b321f1`
+path `fast` · uuid `5cffaeb9-62fc-850b-a6ac-dff9ca0d24dc` · diamond `9007a6f2-1a73-808e-8ac8-f7e49ac5e0aa`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·food·law·merge·restaurant·sti · exports fast · escapes —
-links `6/6` · folded `1` · bonds in `4` out `4`
+links `6/6` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·food·islam·jainism·judaism·law·merge·restaurant·ritual·sti · ← collapse·food·islam·jainism·judaism·law·merge·restaurant·ritual·sti
 analysis —
 law fast is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `fe3ed78b-ea69-812d-b0ce-fd7db99e5544` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a59638ca-2cc4-8f38-9ae3-a0721d38c4ea` · `pnpm readme` · `pnpm computed:check`</sub>

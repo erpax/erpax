@@ -25,7 +25,22 @@
 
 - partition `color` · sub-root `9d23ad8f-2a68-8e97-b0ee-0771d26ce27f`
 - bond degree `54` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `A432 tuning; the 7-chakra visible spectrum (Do..Ti / root..crown)` · banner
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `54` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `2`
 
 ## identity
 
@@ -41,4 +56,4 @@
 
 ---
 
-<sub>content-uuid `fb8ce39e-99f0-8d16-a510-0cb1c59d8b64` · framed by typography partition `color` bonds `54` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `980ac1e3-5964-880f-a6ce-708cee143efe` · framed by typography partition `color` bonds `54` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,15 +3,15 @@
 
 # family
 
-path `family` · uuid `8038edb5-ceb0-889a-9b04-d5264e6884b8` · diamond `aa55ba88-3f9f-83c8-9ea9-dd767690c3fc`
+path `family` · uuid `8038edb5-ceb0-889a-9b04-d5264e6884b8` · diamond `c7eb818e-d3b5-8f9a-821b-7e2466a34f43`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports agriculture·crop·fertility·fractal·law·rotation·taxonomy·variant · exports family · escapes —
-links `18/18` · folded `1` · bonds in `8` out `8`
+links `18/18` · folded `1` · bonds in `11` out `11`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·contained·landmarks·memories·salt·stat·touches·uncertainty · ← cohort·contained·landmarks·memories·salt·stat·touches·uncertainty
+neighbors → agriculture·crop·fertility·fractal·friendly·law·residence·rotation·single·taxonomy·variant · ← agriculture·crop·fertility·fractal·friendly·law·residence·rotation·single·taxonomy·variant
 analysis —
 law family (not species) is the practical unit of crop [[rotation]] because members share pests, diseases, and nutrient demands — same family ⇒ must not follow itself in a bed; pest/[[fertility]] traits inherit down the [[taxonomy]] rank.
 
 ---
 
-<sub>content-uuid `2b545d27-0899-8074-a2db-88dbdd610c65` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `bbbb198c-4766-8c47-a4de-60cd53e31564` · `pnpm readme` · `pnpm computed:check`</sub>

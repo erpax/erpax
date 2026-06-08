@@ -3,15 +3,15 @@
 
 # field
 
-path `field` · uuid `481fcd9a-fa27-8eed-873b-952007ae1a97` · diamond `19b150a7-b81e-8250-bd26-647d7555b7e5`
+path `field` · uuid `23770393-a143-8c85-adc5-86018040c085` · diamond `77f6124e-bc97-8018-af41-8499c7d93d1c`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports balance·fields·schema · exports field · escapes —
-links `6/6` · folded `1` · bonds in `4` out `4`
+links `6/6` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
-analysis diamond·hallucination·purity
+neighbors → accounting·balance·base·currency·dry·fields·law·measure·schema · ← accounting·balance·base·currency·dry·fields·law·measure·schema
+analysis —
 law —
 
 ---
 
-<sub>content-uuid `2f1fe3c0-26a4-86bb-82a3-9a7779d2e664` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a891f557-28f2-86fb-b97e-33a997e9120a` · `pnpm readme` · `pnpm computed:check`</sub>

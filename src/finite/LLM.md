@@ -3,15 +3,15 @@
 
 # finite
 
-path `finite` · uuid `d5ac55c0-75d6-81b4-9796-67430986385a` · diamond `9190387d-80af-8b45-b059-b19f72dbc362`
+path `finite` · uuid `d5ac55c0-75d6-81b4-9796-67430986385a` · diamond `f4315f91-2c48-8d3c-9f9c-d5524e5becb0`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports finite · escapes —
-links `4/4` · folded `1` · bonds in `17` out `19`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·accounting·accounting·balance·clip·comments·entity·finding·honorific·inventory·itcooperative·landmarks·landmarks·opens·reviews·spouse·syllabus·visits·visual · ← access·accounting·balance·clip·comments·entity·finding·honorific·investment·itcooperative·landmarks·opens·reviews·spouse·syllabus·visits·visual
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law finite is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `05c6dc76-bc91-86b8-9b4f-632ef316d1a1` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b65e9fbc-290a-81cd-a8e7-4a3150947bc1` · `pnpm readme` · `pnpm computed:check`</sub>

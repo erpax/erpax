@@ -25,7 +25,26 @@
 
 - partition `cloning` · sub-root `4ea131a4-5375-89da-a0b2-61d7c6b569d7`
 - bond degree `53` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ISO 19011:2018 §6.4.6 (clone provenance + Conservation Law 24)` · banner
+- `RFC-8785` · catalogue
+- `RFC-9562` · catalogue
+- `W3C Verifiable Credentials Data Model 2.0` · banner
+- `W3C-PROV-O` · catalogue
+- `W3C-VC-2.0` · catalogue
+
+## analytics
+
+- bond degree `53` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `6`
 
 ## identity
 
@@ -41,4 +60,4 @@
 
 ---
 
-<sub>content-uuid `9f71788a-2a66-82fa-8bde-57e6c71f8931` · framed by typography partition `cloning` bonds `53` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `6fb91dbe-80ec-863d-90c6-916e5e25cc44` · framed by typography partition `cloning` bonds `53` · `pnpm readme` · `pnpm readme:check`</sub>

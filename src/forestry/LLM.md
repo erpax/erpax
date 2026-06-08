@@ -3,15 +3,15 @@
 
 # forestry
 
-path `forestry` · uuid `c3742c7f-011a-853c-b908-2a6616f77fe1` · diamond `5a69f015-c8e0-85c2-aaf4-74d936ba9956`
+path `forestry` · uuid `c3742c7f-011a-853c-b908-2a6616f77fe1` · diamond `08455e2b-ef79-81c8-84e0-c7bf8e4bfdf9`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports agriculture·aquaculture·biological·biomass·certification·cultivation·fertility·forecast·harvest·items·lineage·mortality·propagation·rotation·tenure·yield · exports forestry · escapes —
-links `33/33` · folded `1` · bonds in `4` out `4`
+links `33/33` · folded `1` · bonds in `16` out `16`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → agriculture·aquaculture·assets·biomass·certification·cultivation·fertility·forecast·harvest·items·lineage·mortality·propagation·rotation·tenure·yield · ← agriculture·aquaculture·assets·biomass·certification·cultivation·fertility·forecast·harvest·items·lineage·mortality·propagation·rotation·tenure·yield
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `fcbf7779-c7ce-8b19-b159-1c9e62f18aff` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `bdbbe652-8743-8c56-9f19-d077b4b3c5fe` · `pnpm readme` · `pnpm computed:check`</sub>

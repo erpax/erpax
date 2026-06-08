@@ -3,15 +3,15 @@
 
 # expires
 
-path `expires` · uuid `6adfeb48-1358-8ba1-82ac-e6dbd63d1bc3` · diamond `30cffaed-16b2-860b-a740-614f7dc0be9d`
+path `expires` · uuid `6adfeb48-1358-8ba1-82ac-e6dbd63d1bc3` · diamond `cadbdf2f-1916-807b-a541-92d7b8c5a3c5`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports expires · escapes —
-links `2/2` · folded `1` · bonds in `5` out `5`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → address·cohort·landmarks·memories·stat · ← address·cohort·landmarks·memories·stat
+neighbors → law·thing · ← law·thing
 analysis —
 law expires is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `35cc55c9-139d-81f6-807a-81918d2d551e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `fec1b679-5cc7-8d88-9161-a7d32f802586` · `pnpm readme` · `pnpm computed:check`</sub>

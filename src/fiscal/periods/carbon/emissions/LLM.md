@@ -3,15 +3,15 @@
 
 # emissions
 
-path `fiscal/periods/carbon/emissions` · uuid `cc8dc717-8e57-899f-ac23-1c1a7da89fdc` · diamond `d076b303-b981-8610-8d4f-a954daff3321`
+path `fiscal/periods/carbon/emissions` · uuid `cc8dc717-8e57-899f-ac23-1c1a7da89fdc` · diamond `b84cfc7f-eca8-8d96-8760-346ea2917213`
 horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports @/auth·@/base/accounting/field·@/ghg/protocol·@/standard/collection/hook · exports default · escapes —
-links `6/6` · folded `1` · bonds in `10` out `10`
+links `6/6` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·balance·biological·id·instructions·landmarks·lease·progression·spouse·tour · ← accounting·balance·biological·id·instructions·landmarks·lease·progression·spouse·tour
+neighbors → accounting·attestations·co·disclosures·law·proof·standard · ← accounting·attestations·co·disclosures·law·proof·standard
 analysis —
 law every emission row computes tCO2e as activity-data × emission-factor and is classified into exactly one GHG scope (1 direct · 2 purchased energy · 3 value-chain) — the ESRS E1 disclosure total is the audited sum of these events, substantiated by ISAE 3410 verification, never a top-down figure.
 
 ---
 
-<sub>content-uuid `36316af0-ed27-8c6b-baa6-296d551b6539` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a5d42103-a0a5-823e-ada4-d1e9bc80333f` · `pnpm readme` · `pnpm computed:check`</sub>

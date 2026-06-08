@@ -3,15 +3,15 @@
 
 # footer
 
-path `footer` · uuid `a6d072f6-9117-870b-aa31-d47240b40cc7` · diamond `c0ce76c3-7b16-8724-b7c4-978f60a7540b`
+path `footer` · uuid `a6d072f6-9117-870b-aa31-d47240b40cc7` · diamond `d6f817c1-cd73-8212-ba76-4de82320f608`
 horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports — · exports Footer·FooterGlobal · escapes —
-links `5/5` · folded `1` · bonds in `15` out `16`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → agriculture·aquaculture·biological·biomagnetism·center·css·feed·foot·hardcover·issue·lifestyle·monday·promise·team·vibration·worth · ← aquaculture·biological·biomagnetism·center·css·feed·foot·hardcover·issue·lifestyle·monday·promise·team·vibration·worth
+neighbors → collapse·law·merge·sti·wp · ← collapse·law·merge·sti·wp
 analysis —
 law footer is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `2d7896d9-32ae-86c2-9d7e-3a51b9bc3beb` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ed1d2206-af69-814d-9854-c395ecb8b3bb` · `pnpm readme` · `pnpm computed:check`</sub>

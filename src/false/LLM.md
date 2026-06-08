@@ -3,15 +3,15 @@
 
 # false
 
-path `false` · uuid `5c82b306-1137-8f26-be0e-63f7c2ed28aa` · diamond `199f1472-91d4-86bb-9bac-9f189707e8ce`
+path `false` · uuid `5c82b306-1137-8f26-be0e-63f7c2ed28aa` · diamond `962455a4-5eef-8bb0-acf0-656690990d43`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports false · escapes —
-links `4/4` · folded `1` · bonds in `6` out `6`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·follow·landmarks·memories·resolution·stat · ← cohort·follow·landmarks·memories·resolution·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law false is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `80ed9cbc-8667-88c8-a53d-858ae1593ceb` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a13587b5-918e-88a9-81e2-f2899311ac19` · `pnpm readme` · `pnpm computed:check`</sub>

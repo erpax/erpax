@@ -3,15 +3,15 @@
 
 # provisions
 
-path `fiscal/periods/provisions` · uuid `054f173a-e2cb-8d99-ba86-699c9687b339` · diamond `061f3bc2-7199-8f90-a6e9-a2a1143dbe3f`
+path `fiscal/periods/provisions` · uuid `054f173a-e2cb-8d99-ba86-699c9687b339` · diamond `2837caab-3fba-82dc-9f4d-0d147266b799`
 horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
-links `5/5` · folded `1` · bonds in `2` out `2`
+links `5/5` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → accounting·contingencies·findings·grants·law·liability·transaction · ← accounting·contingencies·findings·grants·law·liability·transaction
 analysis —
 law a provision recognises a liability that is probable but uncertain in amount or timing — measured at best estimate (discounted where material), with every addition, reversal and unwind kept as movement history so the §85 disclosure is reconstructable, not asserted.
 
 ---
 
-<sub>content-uuid `933f89b7-f221-823a-9a59-c0b82a1ee419` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `382ed212-ee27-881b-ade1-a269e6bb9e16` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # fdanot
 
-path `fdanot` · uuid `2267c877-b1e7-8aff-acf6-76194f7cfa58` · diamond `e228a23e-61ae-8487-bc77-bee05b81121b`
+path `fdanot` · uuid `2267c877-b1e7-8aff-acf6-76194f7cfa58` · diamond `ada14205-bb2e-838d-8868-fa3c989d11a1`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports fdanot · escapes —
-links `4/4` · folded `1` · bonds in `5` out `5`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat·western · ← cohort·landmarks·memories·stat·western
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law fdanot is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `87c25344-533b-82c0-af39-2b2e4bfaf551` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f0e7b1ee-89a6-881d-aacd-219ed54640e6` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -25,7 +25,25 @@
 
 - partition `compost` · sub-root `cda9024a-3a6e-850b-b561-e11c1c1ea90c`
 - bond degree `56` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `computed, never hand-asserted` · banner
+- `SARE, Building Soils for Better Crops — organic-matter management` · banner
+- `US Composting Council — compost maturity/stability (C:N criteria)` · banner
+- `USDA NOP 7 CFR §205.203 — compost and raw-manure rules` · banner
+- `USDA-NOP` · catalogue
+
+## analytics
+
+- bond degree `56` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `5`
 
 ## identity
 
@@ -41,4 +59,4 @@
 
 ---
 
-<sub>content-uuid `6427f318-1c88-8849-9c3d-a93a44b88a20` · framed by typography partition `compost` bonds `56` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `1e7c8f1c-5835-8429-b78c-58ca4474ae0c` · framed by typography partition `compost` bonds `56` · `pnpm readme` · `pnpm readme:check`</sub>

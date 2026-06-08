@@ -3,15 +3,15 @@
 
 # festival
 
-path `festival` · uuid `1848c048-c6fa-8f3a-bfaf-e94c64a7b8aa` · diamond `e4ce95e2-5191-87a0-a601-922ed835e796`
+path `festival` · uuid `1848c048-c6fa-8f3a-bfaf-e94c64a7b8aa` · diamond `54d0b633-6364-8d19-8b95-e51bb1f3b164`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports festival · escapes —
-links `2/2` · folded `1` · bonds in `9` out `8`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·forecast·friday·landmarks·log·memories·siblings·stat · ← cohort·forecast·friday·friday·landmarks·log·memories·siblings·stat
+neighbors → law·thing · ← law·thing
 analysis —
 law festival is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `8fb159f9-d909-83fc-899e-33ed5c278ff2` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `87f57692-4f33-8cd3-ba44-4e72adebfcb6` · `pnpm readme` · `pnpm computed:check`</sub>

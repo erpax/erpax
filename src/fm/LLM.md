@@ -3,15 +3,15 @@
 
 # fm
 
-path `fm` · uuid `d10520c6-9dbf-8033-aa9d-67a2ad661ad9` · diamond `47e78b0f-f0bc-82e8-a0e9-ca4098d7b76e`
+path `fm` · uuid `d10520c6-9dbf-8033-aa9d-67a2ad661ad9` · diamond `79b10d1a-a3cb-8f2b-8b05-a2987caadf00`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports channel·collapse·law·merge·radio·sti · exports fm · escapes —
-links `6/6` · folded `1` · bonds in `5` out `5`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → action·cohort·landmarks·memories·stat · ← action·cohort·landmarks·memories·stat
+neighbors → channel·collapse·law·merge·radio·sti · ← channel·collapse·law·merge·radio·sti
 analysis —
 law fm is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `b53fd9c2-c875-8cee-bd0d-f436cd36789a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `172e03a9-7d5f-8993-8185-7a8290ee3058` · `pnpm readme` · `pnpm computed:check`</sub>

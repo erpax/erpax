@@ -25,7 +25,21 @@
 
 - partition `competition` · sub-root `fd4da768-c567-8844-93ef-8efee42195ab`
 - bond degree `57` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ISO/IEC 25010:2023 §5.2 performance-efficiency (fastest-correct selection)` · banner
+
+## analytics
+
+- bond degree `57` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -41,4 +55,4 @@
 
 ---
 
-<sub>content-uuid `c33d4cb9-b796-8bbe-9a73-edbbe7bedf30` · framed by typography partition `competition` bonds `57` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `76d1240a-9dd1-8fc6-b771-c4e1c43a3f05` · framed by typography partition `competition` bonds `57` · `pnpm readme` · `pnpm readme:check`</sub>

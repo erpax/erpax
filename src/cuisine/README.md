@@ -23,7 +23,7 @@
 
 - partition `cuisine` · sub-root `0fdc2b0f-79fe-88f3-a4ea-8f1f1a566ceb`
 - bond degree `20` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `08417410-9529-8662-a45d-0e6296f0598e`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `4fe611c0-3543-8d25-9c7f-945ac5c29ba3` · framed by typography partition `cuisine` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d5001024-fa30-8e55-83a4-ac970b840271` · framed by typography partition `cuisine` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>

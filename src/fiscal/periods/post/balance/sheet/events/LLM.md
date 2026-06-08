@@ -8,10 +8,10 @@ horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
 links `4/4` · folded `1` · bonds in `23` out `27`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·accounting·auditright·auth·cargo·cup·fertility·first·home·homeopathic·id·imprint·landmarks·landmarks·landmarks·lifestyle·marketing·numbered·orders·partial·progression·progression·reviews·spouse·spouse·story·winery · ← access·accounting·auditright·auth·cargo·cup·fertility·first·home·homeopathic·id·imprint·landmarks·lifestyle·marketing·numbered·orders·partial·progression·reviews·spouse·story·winery
+neighbors → access·accounting·auditright·auth·carriers·currency·entries·fields·hooks·horo·identity·incident·instances·law·law·law·lineage·materiality·observability·party·periods·proof·proof·shipments·standard·standard·sub · ← access·accounting·auditright·auth·carriers·currency·entries·fields·hooks·horo·identity·incident·instances·law·lineage·materiality·observability·party·periods·proof·shipments·standard·sub
 analysis —
 law an event after the reporting date is either adjusting (IAS 10 §8 — book it) or non-adjusting (§10 — disclose only); the classification, fixed by whether it evidences a condition existing at the reporting date, decides whether a journal entry is posted.
 
 ---
 
-<sub>content-uuid `b858f17b-8444-820d-a94c-02905e0d7bd2` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `074b7a68-ba76-85e5-98f3-bdabef26855b` · `pnpm readme` · `pnpm computed:check`</sub>

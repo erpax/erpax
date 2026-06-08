@@ -25,7 +25,7 @@
 
 - partition `dashboard` · sub-root `e5bfb39e-468f-86bb-8414-ffe0ae176ff9`
 - bond degree `43` · analysis neighbors `aura`
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `08417410-9529-8662-a45d-0e6296f0598e`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `0f196498-43b0-88be-b218-a601e8a0b677` · framed by typography partition `dashboard` bonds `43` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `2759b761-9da0-8edb-8915-73e7f73a994e` · framed by typography partition `dashboard` bonds `43` · `pnpm readme` · `pnpm readme:check`</sub>

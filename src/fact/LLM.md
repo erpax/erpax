@@ -3,15 +3,15 @@
 
 # fact
 
-path `fact` · uuid `9a1d9ad4-74ef-8781-93ba-bacd151e5892` · diamond `146340fd-9e11-86f8-b9ad-b44df04f068d`
+path `fact` · uuid `9a1d9ad4-74ef-8781-93ba-bacd151e5892` · diamond `fd2ed9f8-267a-8b9d-a53c-6269627f60f9`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports checking·collapse·law·merge·policy·sti·verification · exports fact · escapes —
-links `7/7` · folded `1` · bonds in `13` out `13`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·biological·evaluated·gluten·headline·hearing·landmarks·legal·partial·promotion·segments·spouse·tour · ← accounting·biological·evaluated·gluten·headline·hearing·landmarks·legal·partial·promotion·segments·spouse·tour
+neighbors → checking·collapse·law·merge·policy·sti·verification · ← checking·collapse·law·merge·policy·sti·verification
 analysis —
 law fact is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `c6858863-5d78-8fe3-a5d1-08be30269d01` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f4a0cf54-8e4e-84c7-aadf-32ebff1f91de` · `pnpm readme` · `pnpm computed:check`</sub>

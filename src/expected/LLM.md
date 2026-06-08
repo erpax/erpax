@@ -3,15 +3,15 @@
 
 # expected
 
-path `expected` · uuid `3e4d2879-9414-8e13-9505-b4cd8f24b7cc` · diamond `3893df26-0b31-8404-a7fa-b05f4731e1d5`
+path `expected` · uuid `3e4d2879-9414-8e13-9505-b4cd8f24b7cc` · diamond `51d0b680-c070-8637-b67f-6250ea83deea`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports arrival·collapse·law·merge·prognosis·sti·until · exports expected · escapes —
-links `7/7` · folded `1` · bonds in `5` out `5`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·conservation·landmarks·memories·stat · ← cohort·conservation·landmarks·memories·stat
+neighbors → arrival·collapse·law·merge·prognosis·sti·until · ← arrival·collapse·law·merge·prognosis·sti·until
 analysis —
 law expected is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `7356e0db-1bd8-85ec-8798-533c28164f48` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0fa038b3-559d-8624-bc36-0901d95e29ca` · `pnpm readme` · `pnpm computed:check`</sub>

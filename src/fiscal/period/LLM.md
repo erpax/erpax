@@ -3,15 +3,15 @@
 
 # period
 
-path `fiscal/period` · uuid `30e05202-9953-85fe-b814-e7b20a36244a` · diamond `270e8722-7303-83ba-beab-3f08c30c3cf5`
+path `fiscal/period` · uuid `30e05202-9953-85fe-b814-e7b20a36244a` · diamond `09d8cd26-b62a-87dd-af3e-1b4c06938a62`
 horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports @/fiscal/period/resolver · exports ...·FiscalPeriodConfig·FiscalPeriodResolver·PeriodResolution·barrel · escapes —
-links `1/1` · folded `1` · bonds in `18` out `25`
+links `1/1` · folded `1` · bonds in `17` out `18`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·accounting·accounting·accounting·accounts·accrual·adjustment·clip·default·fertility·first·home·homeopathic·landmarks·landmarks·landmarks·landmarks·milestones·progression·reviews·reviews·reviews·runs·spouse·transactions · ← access·accounting·accounts·accrual·adjustment·clip·default·fertility·first·home·homeopathic·landmarks·milestones·progression·reviews·runs·spouse·transactions
+neighbors → accounting·billing·breed·certification·checker·date·fields·integration·law·law·locks·observation·organic·season·service·start·versions·withdrawal · ← accounting·billing·breed·certification·checker·date·fields·integration·law·locks·observation·organic·season·service·start·versions·withdrawal
 analysis —
 law the fiscal calendar is fully reproducible from its configuration plus the immutable snapshot chain — same config yields the same regulatory codes deterministically, and every amendment is captured by a chainLeafUuid so no period change can be hidden.
 
 ---
 
-<sub>content-uuid `5201f2c4-734f-863b-b8da-75bf5d2a730b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `310bfde5-95ec-8fea-882d-72fd61cb36d3` · `pnpm readme` · `pnpm computed:check`</sub>

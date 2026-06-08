@@ -8,10 +8,10 @@ horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports eye · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law eye is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `e308776b-247f-8e3f-a45a-84fd007b8227` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5465cbd5-b3e6-8e68-9e3e-3fed1a7bcbd7` · `pnpm readme` · `pnpm computed:check`</sub>

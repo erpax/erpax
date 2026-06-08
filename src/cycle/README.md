@@ -23,7 +23,7 @@
 
 - partition `cycle` · sub-root `33df03d6-53c1-8e7f-82cc-cdf946f633cd`
 - bond degree `51` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `08417410-9529-8662-a45d-0e6296f0598e`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `3c7fc3b9-85f6-87ee-81ba-2b9e631fede1` · framed by typography partition `cycle` bonds `51` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b175ed81-6b99-820a-810f-bdac08f7ed6f` · framed by typography partition `cycle` bonds `51` · `pnpm readme` · `pnpm readme:check`</sub>

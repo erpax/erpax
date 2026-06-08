@@ -3,15 +3,15 @@
 
 # formula
 
-path `formula` · uuid `958555c3-c607-84a3-aeb2-ec4e01555a77` · diamond `b4be0db3-c69a-8e13-9fc8-323e4db476be`
+path `formula` · uuid `958555c3-c607-84a3-aeb2-ec4e01555a77` · diamond `ff908a63-e480-8850-996d-ef1afb6a0151`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·molecular·sti · exports formula · escapes —
-links `5/5` · folded `1` · bonds in `2` out `2`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → collapse·law·merge·molecular·sti · ← collapse·law·merge·molecular·sti
 analysis —
 law formula is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `c27f2730-b098-8d1b-a3d0-fbba88112563` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `404a38c7-1e0f-8219-ad9a-616c4c8913c5` · `pnpm readme` · `pnpm computed:check`</sub>

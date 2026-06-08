@@ -3,15 +3,15 @@
 
 # fire
 
-path `fire` · uuid `7f860b52-5b52-8d8f-9af3-dba4cbad84e2` · diamond `bd5a8f24-7eeb-8438-a388-2c46f4525134`
+path `fire` · uuid `7f860b52-5b52-8d8f-9af3-dba4cbad84e2` · diamond `6a29e7e8-c896-8ecd-8ccf-00907ee442b5`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·station·sti · exports fire · escapes —
-links `5/5` · folded `1` · bonds in `16` out `17`
+links `5/5` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·bill·breastfeeding·center·database·fertility·landmarks·landmarks·numeric·opportunity·perennial·screen·separation·stack·tagging·tests·website · ← accounting·bill·breastfeeding·center·database·fertility·landmarks·numeric·opportunity·perennial·screen·separation·stack·tagging·tests·website
+neighbors → collapse·hinduism·law·merge·paganism·ritual·station·sti·zoroastrianism · ← collapse·hinduism·law·merge·paganism·ritual·station·sti·zoroastrianism
 analysis —
 law fire is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `c41781d0-ed01-826c-a64a-ebedc13bee04` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `23967863-f557-8135-895f-ad1f0be87d5c` · `pnpm readme` · `pnpm computed:check`</sub>

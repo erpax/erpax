@@ -3,15 +3,15 @@
 
 # finality
 
-path `finality` · uuid `87d61fa4-9bec-8b4d-9539-752845638cc2` · diamond `87831a8b-9adf-896b-8b1a-e235e5bc2e7c`
+path `finality` · uuid `87d61fa4-9bec-8b4d-9539-752845638cc2` · diamond `1a2d7635-7a97-8328-b708-daa854f28e03`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports anchor·balance·cost·entropy·entry·fear·governance·gravity·law·love·merge·reality·reverse·speed·tamper·uuid · exports finality · escapes —
-links `33/33` · folded `1` · bonds in `5` out `4`
+links `33/33` · folded `1` · bonds in `27` out `27`
 faces worker·plugin·pwa `0·0·0`
-neighbors → audit·balance·interactive·landmarks · ← accounting·audit·balance·interactive·landmarks
+neighbors → anchor·balance·biometric·cost·deploy·device·emr·engineering·entropy·entry·fear·fs·governance·gravity·law·love·merge·number·pi·reality·request·reverse·sanitization·snapshot·speed·tamper·uuid · ← anchor·balance·biometric·cost·deploy·device·emr·engineering·entropy·entry·fear·fs·governance·gravity·law·love·merge·number·pi·reality·request·reverse·sanitization·snapshot·speed·tamper·uuid
 analysis —
 law finality is the conjugate of [[speed]] — sharper localisation in time is bought with lost reversibility; reversible holds a superposition with a compensating-[[reverse|reversal]] path, final posts one [[tamper]]-[[anchor]]ed [[entry]] whose only undo is a governance judgment.
 
 ---
 
-<sub>content-uuid `f1828e6c-1c0f-8b98-bc45-e648c12a1b9b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e64e27d2-07c6-86b6-8f4f-43bc0f4a3f97` · `pnpm readme` · `pnpm computed:check`</sub>

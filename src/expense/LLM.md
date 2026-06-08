@@ -3,15 +3,15 @@
 
 # expense
 
-path `expense` · uuid `b6333b28-3786-8d82-9b05-a928162473f5` · diamond `8b086d72-df73-8e98-bc18-1910ac82340a`
+path `expense` · uuid `b6333b28-3786-8d82-9b05-a928162473f5` · diamond `4ba413eb-623d-8114-aff0-3eebfc693f64`
 horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports @/entropy·@/entry·@/tamper/import · exports function · escapes —
-links `18/18` · folded `1` · bonds in `6` out `6`
-faces worker·plugin·pwa `0·0·0`
-neighbors → answer·cohort·landmarks·memories·radiation·stat · ← answer·cohort·landmarks·memories·radiation·stat
+links `18/18` · folded `1` · bonds in `15` out `15`
+faces worker·plugin·pwa `1·0·0`
+neighbors → balance·collapse·consulting·entropy·entry·import·incentive·karma·law·merge·qualified·research·sti·tamper·type · ← balance·collapse·consulting·entropy·entry·import·incentive·karma·law·merge·qualified·research·sti·tamper·type
 analysis —
 law entropy is measurable and billable. Every gap is a cost, booked as a balanced double-entry expense against whoever opened it; disorder created here is disorder paid for here. The ledger, not a fixer, enforces the law.
 
 ---
 
-<sub>content-uuid `4406d808-fe8f-8f88-8506-b404a1d73501` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `abe6380a-c40b-8ece-8867-fcaad80016cf` · `pnpm readme` · `pnpm computed:check`</sub>

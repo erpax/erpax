@@ -3,15 +3,15 @@
 
 # fertility
 
-path `fertility` · uuid `be959057-62be-870a-83fd-c72cdef16e93` · diamond `9fa7bbf3-2a3c-838c-83fd-c79074fc9a95`
+path `fertility` · uuid `be959057-62be-870a-83fd-c72cdef16e93` · diamond `ea7297b5-b5a8-87f1-90f1-f29fdd7b6426`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports agriculture·balance·biological·capacity·compost·conversion·covercrop·crop·entry·irrigation·law·measure·mycorrhizae·planting·rate·salinity·soil·yield · exports fertility · escapes —
-links `36/36` · folded `1` · bonds in `104` out `102`
+links `36/36` · folded `1` · bonds in `28` out `28`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·accounting·active·activities·amount·approved·atom·audit·bank·batches·beyond·biological·carbohydrate·cargo·carriers·centers·chat·checks·coach·colleagues·command·comment·competencies·connected·consciousness·consortium·cooking·correlation·crosses·cup·currencies·current·database·deduplication·dermatologic·diffusion·editor·employee·events·female·fire·founder·generator·has·holographic·honorific·id·interactivity·issue·issued·it·itcooperative·join·landmarks·leisure·llm·login·maintainer·matrix·max·medicine·mens·models·musical·notary·notice·operation·parent·partial·pathophysiology·period·permaculture·policy·quote·quotes·rating·recommendation·requests·returns·roadmap·sanitization·seasonal·seed·sign·snid·society·stack·standards·stat·submissions·swatch·system·tasks·telephone·thing·tissue·trading·update·urologic·wheel·window·winery · ← access·accounting·active·activities·amount·approved·atom·audit·bank·batches·beyond·biological·biological·carbohydrate·cargo·carriers·centers·chat·checks·coach·colleagues·command·comment·competencies·connected·consciousness·consortium·cooking·correlation·crosses·cup·currencies·current·database·deduplication·dermatologic·diffusion·editor·employee·events·female·fire·founder·generator·has·holographic·honorific·id·interactivity·issue·issued·it·itcooperative·join·landmarks·leisure·llm·login·maintainer·matrix·matrix·max·medicine·mens·models·musical·notary·notice·operation·parent·partial·pathophysiology·period·permaculture·policy·quote·quotes·rating·recommendation·requests·returns·roadmap·sanitization·seasonal·seed·sign·snid·society·stack·standards·stat·submissions·swatch·system·tasks·telephone·thing·tissue·trading·update·urologic·wheel·window·winery
+neighbors → agriculture·assets·balance·capacity·compost·conversion·covercrop·crop·entry·family·forestry·grazing·irrigation·law·livestock·manure·measure·moisture·mycorrhizae·pasture·permaculture·planting·rate·rotation·salinity·soil·taxonomy·yield · ← agriculture·assets·balance·capacity·compost·conversion·covercrop·crop·entry·family·forestry·grazing·irrigation·law·livestock·manure·measure·moisture·mycorrhizae·pasture·permaculture·planting·rate·rotation·salinity·soil·taxonomy·yield
 analysis —
 law fertility is a double-entry budget — [[crop]] removal debits the [[soil]], application credits it, and it must [[balance]] like any ledger; the N-P-K need scales with [[yield]] and a soil test, not book rates.
 
 ---
 
-<sub>content-uuid `e58cd750-dcb4-8304-807d-a650f5f1781b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f5ec3a37-0d65-883d-9a62-4681f850cc7c` · `pnpm readme` · `pnpm computed:check`</sub>

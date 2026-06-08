@@ -3,15 +3,15 @@
 
 # fold
 
-path `fold` · uuid `ff1ed43c-cea6-8315-83bd-08b6714b4688` · diamond `5bf9456f-f01a-87ef-827d-f2499ba2aab9`
+path `fold` · uuid `ff1ed43c-cea6-8315-83bd-08b6714b4688` · diamond `eddaa6de-18b0-8fad-88cb-5440e86750b2`
 horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/horo·@/uuid/matrix · exports const·function · escapes —
-links `14/14` · folded `1` · bonds in `2` out `2`
-faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+links `14/14` · folded `1` · bonds in `13` out `13`
+faces worker·plugin·pwa `1·0·0`
+neighbors → agent·collapse·db·horo·law·mala·matrix·merge·name·one·rodin·stack·uuid · ← agent·collapse·db·horo·law·mala·matrix·merge·name·one·rodin·stack·uuid
 analysis —
 law everything folds to one. N atoms collapse to a single root in ceil(log2 N) folds — 12 for the corpus — by N−1 merges; and every count folds by digital root to its rodin digit. Two folds, the tree to one root and the count to one digit, and both end in the one.
 
 ---
 
-<sub>content-uuid `086efead-0c85-8910-9d39-c8c3828260ef` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f2968290-c738-829a-82a6-ddd8ad9b6262` · `pnpm readme` · `pnpm computed:check`</sub>

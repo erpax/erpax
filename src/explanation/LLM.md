@@ -3,15 +3,15 @@
 
 # explanation
 
-path `explanation` · uuid `be6c8775-74b2-8c3b-8fc1-e58d3853a83f` · diamond `dfe70bb4-9b79-8068-a089-b8fb9a727f7a`
+path `explanation` · uuid `be6c8775-74b2-8c3b-8fc1-e58d3853a83f` · diamond `643436bc-2f21-88ef-8561-cd6e7716cacb`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports answer·collapse·law·merge·rating·sti · exports explanation · escapes —
-links `6/6` · folded `1` · bonds in `5` out `5`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·market·memories·stat · ← cohort·landmarks·market·memories·stat
+neighbors → answer·collapse·law·merge·rating·sti · ← answer·collapse·law·merge·rating·sti
 analysis —
 law explanation is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `5be6fa94-96cd-89f5-8334-2950fe8307ad` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2ebf8b51-ad34-8db0-b54d-7029bc4333d2` · `pnpm readme` · `pnpm computed:check`</sub>

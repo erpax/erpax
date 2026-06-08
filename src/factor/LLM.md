@@ -3,15 +3,15 @@
 
 # factor
 
-path `factor` · uuid `baf1a507-67a3-8dec-a67e-fe0377c39a10` · diamond `4a8e7257-f08a-8ee2-ad1a-faae6e1403d9`
+path `factor` · uuid `baf1a507-67a3-8dec-a67e-fe0377c39a10` · diamond `f21b113b-5899-8ca5-9bd5-68c021b12e9a`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·included·law·medical·merge·risk·sti · exports factor · escapes —
-links `7/7` · folded `1` · bonds in `8` out `8`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → contractual·dropoff·governinglaw·landmarks·process·progression·rule·spouse · ← contractual·dropoff·governinglaw·landmarks·process·progression·rule·spouse
+neighbors → collapse·included·law·medical·merge·risk·sti · ← collapse·included·law·medical·merge·risk·sti
 analysis —
 law factor is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `3441d5a5-3600-8aee-9022-a792b910ee9e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `22b00fc7-6451-8c34-9e42-aa15712a8143` · `pnpm readme` · `pnpm computed:check`</sub>

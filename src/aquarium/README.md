@@ -23,7 +23,7 @@
 
 - partition `aquarium` · sub-root `e4297e53-a243-8152-a26b-f8929566ef20`
 - bond degree `9` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `1c65e160-5137-86a1-ad8e-dc86b0e96873`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `7bb51560-be68-8583-bead-84b95f8d9009` · framed by typography partition `aquarium` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `420c7d3f-44c6-8324-9393-9cd62a45cad1` · framed by typography partition `aquarium` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>

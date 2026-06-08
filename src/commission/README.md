@@ -23,7 +23,21 @@
 
 - partition `commission` · sub-root `e4b9639b-9aa5-8e35-bbbc-408dcc549109`
 - bond degree `12` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `12` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `ee2c3c25-6efc-8b3d-8ba2-ef79c57932fb` · framed by typography partition `commission` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `fac7a846-a682-8302-988d-37c76dadcc78` · framed by typography partition `commission` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

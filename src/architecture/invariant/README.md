@@ -2,7 +2,7 @@
 
 # invariant
 
-> atom `architecture/invariant` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
+> atom `architecture/invariant` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -24,8 +24,8 @@
 ## typography graph
 
 - partition `architecture` · sub-root `66fe5a3e-24bf-891a-bead-173fbb6a8ec8`
-- bond degree `40` · analysis neighbors `aura` · `diamond`
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- bond degree `44` · analysis neighbors `aura` · `diamond`
+- graph root `1c65e160-5137-86a1-ad8e-dc86b0e96873`
 
 ## [[cloudflare]] bindings
 
@@ -72,14 +72,14 @@
 
 ## analytics
 
-- bond degree `40` · sealed `1` · horo `2`
+- bond degree `44` · sealed `1` · horo `4`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `36`
 
 ## identity
 
-- uuid `61bd0ffc-6f67-8e33-a7a8-0daac8500f88`
-- bonds in `11` · out `11`
+- uuid `66fe5a3e-24bf-891a-bead-173fbb6a8ec8`
+- bonds in `13` · out `13`
 - trinity form·code·proof `1`·`1`·`1`
 - links `21` / `21`
 - folded `1` · escapes `0`
@@ -90,4 +90,4 @@
 
 ---
 
-<sub>content-uuid `97d9c4b0-d4a0-8ece-ace2-ef20d8b86c8e` · framed by typography partition `architecture` bonds `40` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `5826d0cf-535e-835d-bdcd-f43d00803de5` · framed by typography partition `architecture` bonds `44` · `pnpm readme` · `pnpm readme:check`</sub>

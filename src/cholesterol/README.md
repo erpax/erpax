@@ -23,7 +23,21 @@
 
 - partition `cholesterol` · sub-root `f530b042-8971-8e12-8874-31984ff719dd`
 - bond degree `16` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `16` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `d0e3c4ac-1113-8d34-af3b-d97147dbb1b7` · framed by typography partition `cholesterol` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `bc3ac2c3-a0a0-8100-a33c-2446016105ca` · framed by typography partition `cholesterol` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

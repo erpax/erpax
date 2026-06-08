@@ -25,7 +25,28 @@
 
 - partition `commerce` · sub-root `f7fcd544-d657-81f0-8cbb-1fdd2ab2f1c3`
 - bond degree `138` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `Cloudflare Workers API (deployments + durable-object namespaces)` · banner
+- `EU-2024/1183` · catalogue
+- `EU-2024/1620` · catalogue
+- `EU-2024/1624` · catalogue
+- `EU-CSDDD-2024/1760` · catalogue
+- `Stripe API v2024-10-28-acacia` · banner
+- `W3C Verifiable Credentials Data Model 2.0 (subscription receipts)` · banner
+- `W3C-VC-2.0` · catalogue
+
+## analytics
+
+- bond degree `138` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `8`
 
 ## identity
 
@@ -41,4 +62,4 @@
 
 ---
 
-<sub>content-uuid `8a4b0a5a-24c8-839e-a561-10fdc867c8dc` · framed by typography partition `commerce` bonds `138` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `06551070-297c-8009-9cb9-22ae9060fcac` · framed by typography partition `commerce` bonds `138` · `pnpm readme` · `pnpm readme:check`</sub>

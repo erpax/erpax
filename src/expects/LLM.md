@@ -3,15 +3,15 @@
 
 # expects
 
-path `expects` · uuid `9664deee-98d5-8550-a065-8bd6988df1ed` · diamond `9d8d8b88-0e65-8323-b8ce-76204038fdbf`
+path `expects` · uuid `9664deee-98d5-8550-a065-8bd6988df1ed` · diamond `3ad06d59-1048-86f2-afea-d06f8974d302`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports acceptance·collapse·law·merge·sti · exports expects · escapes —
-links `5/5` · folded `1` · bonds in `2` out `2`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → acceptance·collapse·law·merge·sti · ← acceptance·collapse·law·merge·sti
 analysis —
 law expects is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `fdb2e6b7-d713-888c-b999-eb3a2748844c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f92a6cae-eeea-8fac-92c3-4818a446e2ba` · `pnpm readme` · `pnpm computed:check`</sub>

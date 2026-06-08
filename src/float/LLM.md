@@ -3,15 +3,15 @@
 
 # float
 
-path `float` · uuid `fc276d05-cb6a-87ae-b145-16349f8c0099` · diamond `dc996b3a-75f4-8bb3-add8-c5dac8c68b89`
+path `float` · uuid `fc276d05-cb6a-87ae-b145-16349f8c0099` · diamond `2167d409-5c63-8c8d-b89e-6d5ad591a318`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports float · escapes —
-links `2/2` · folded `1` · bonds in `6` out `6`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → change·cohort·landmarks·memories·quest·stat · ← change·cohort·landmarks·memories·quest·stat
+neighbors → law·thing · ← law·thing
 analysis —
 law float is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `db758d31-f9a9-8366-bdc8-ce411c8cc403` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a385ed65-50b1-86d6-aac4-24515e350f5f` · `pnpm readme` · `pnpm computed:check`</sub>

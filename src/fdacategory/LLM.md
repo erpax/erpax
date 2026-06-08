@@ -3,15 +3,15 @@
 
 # fdacategory
 
-path `fdacategory` · uuid `19fd2c66-9f8b-8a75-8591-e8d845e20ffb` · diamond `ca22ae44-f6fd-85ae-a49e-428e6b152c90`
+path `fdacategory` · uuid `19fd2c66-9f8b-8a75-8591-e8d845e20ffb` · diamond `93330740-5653-820b-aa82-1950d9f56bc9`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports fdacategory · escapes —
-links `4/4` · folded `1` · bonds in `10` out `10`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accessibility·amenity·cohort·landmarks·limited·lnid·memories·spa·stat·voting · ← accessibility·amenity·cohort·landmarks·limited·lnid·memories·spa·stat·voting
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law fdacategory is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `0709041c-ebfb-84da-b060-e47fdb0b0ff3` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9fffec8b-01a0-82f1-afeb-ddcc4dc938f0` · `pnpm readme` · `pnpm computed:check`</sub>

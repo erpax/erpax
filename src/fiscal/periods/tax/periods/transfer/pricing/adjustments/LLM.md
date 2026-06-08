@@ -3,15 +3,15 @@
 
 # adjustments
 
-path `fiscal/periods/tax/periods/transfer/pricing/adjustments` · uuid `5727c556-3390-885f-864c-8023b4811026` · diamond `5bd83b93-010f-8d6f-8fe0-131aea0690ee`
+path `fiscal/periods/tax/periods/transfer/pricing/adjustments` · uuid `5727c556-3390-885f-864c-8023b4811026` · diamond `6cca317f-234d-8468-a21a-6242ae45c5f8`
 horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/auth · exports const · escapes —
-links `1/1` · folded `1` · bonds in `6` out `6`
+links `1/1` · folded `1` · bonds in `18` out `25`
 faces worker·plugin·pwa `0·0·0`
-neighbors → display·dunning·escrow·landmarks·notice·representation · ← display·dunning·escrow·landmarks·notice·representation
+neighbors → access·accounting·accounting·accounting·accounts·accrual·adjustment·close·deferral·entries·entries·entries·fields·hooks·horo·law·law·law·law·periods·proof·runs·snapshots·standard·transactions · ← access·accounting·accounts·accrual·adjustment·close·deferral·entries·fields·hooks·horo·law·periods·proof·runs·snapshots·standard·transactions
 analysis —
 law a transfer-pricing adjustment restates an intercompany amount to arm's-length under one declared OECD method (CUP/cost-plus/resale/profit-split/TNMM), backed by contemporaneous documentation and advanced documented → validated → approved → posted; it cannot post without that method and evidence.
 
 ---
 
-<sub>content-uuid `e72f4089-5312-8b0c-a6df-af9dca2cf913` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `2df0ba16-23cb-87d4-9b41-3bd2e9008086` · `pnpm readme` · `pnpm computed:check`</sub>

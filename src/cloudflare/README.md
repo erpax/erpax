@@ -2,7 +2,7 @@
 
 # cloudflare
 
-> atom `cloudflare` · horo `2` `share` · [[balance]] `1` · [[seal]] `0`
+> atom `cloudflare` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -12,36 +12,82 @@
 | [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
 | [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
-| [[asset]]/[[links]]/resolved `20` | [[balance]] `20` |
-| [[balance]] `3` | [[liability]]/[[links]]/dangling `3` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
 | [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
 | [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
 | [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | [[asset]]/[[cloudflare]]/ai/bindings `9` | [[balance]] `9` |
 | [[asset]]/[[cloudflare]]/wrangler/bindings `27` | [[balance]] `27` |
-| Σ `67` | Σ `67` |
+| Σ `45` | Σ `45` |
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
-- partition `cloudflare` · sub-root `6d217abe-fbe3-8eb7-ba5c-b4f6d6537fdb`
-- bond degree `40` · analysis neighbors `agent` · `ai` · `diamond` · `innovation` · `secret`
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- partition `cloudflare` · sub-root `29127283-cb09-8fe6-ae5e-13f41e36f651`
+- bond degree `50` · analysis neighbors `agent` · `ai` · `diamond` · `innovation` · `quantum` · `secret` · `serverless` · `worker`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+- `ai`/`AI` · atom `cloudflare/ai/AI`
+- `analytics_engine_datasets`/`ANALYTICS_AI` · atom `cloudflare/analytics-engine-datasets/ANALYTICS_AI`
+- `analytics_engine_datasets`/`ANALYTICS_API` · atom `cloudflare/analytics-engine-datasets/ANALYTICS_API`
+- `analytics_engine_datasets`/`ANALYTICS_GL` · atom `cloudflare/analytics-engine-datasets/ANALYTICS_GL`
+- `analytics_engine_datasets`/`ANALYTICS_JOBS` · atom `cloudflare/analytics-engine-datasets/ANALYTICS_JOBS`
+- `assets`/`ASSETS` · atom `cloudflare/assets/ASSETS`
+- `browser`/`BROWSER` · atom `cloudflare/browser/BROWSER`
+- `d1_databases`/`D1` · atom `cloudflare/d1-databases/D1`
+- `durable_objects`/`AUDIT_CHAIN_DO` · atom `cloudflare/durable-objects/AUDIT_CHAIN_DO`
+- `durable_objects`/`ERPAX_DO` · atom `cloudflare/durable-objects/ERPAX_DO`
+- `durable_objects`/`JOB_LOCK` · atom `cloudflare/durable-objects/JOB_LOCK`
+- `durable_objects`/`RATE_LIMITER` · atom `cloudflare/durable-objects/RATE_LIMITER`
+- `durable_objects`/`TENANT_QUOTA` · atom `cloudflare/durable-objects/TENANT_QUOTA`
+- `images`/`IMAGES` · atom `cloudflare/images/IMAGES`
+- `kv_namespaces`/`AI_CACHE` · atom `cloudflare/kv-namespaces/AI_CACHE`
+- `queues`/`QUEUE_AI_BATCH` · atom `cloudflare/queues/QUEUE_AI_BATCH`
+- `queues`/`QUEUE_DUNNING_OUT` · atom `cloudflare/queues/QUEUE_DUNNING_OUT`
+- `queues`/`QUEUE_EINVOICE_OUT` · atom `cloudflare/queues/QUEUE_EINVOICE_OUT`
+- `queues`/`QUEUE_EMAIL_OUT` · atom `cloudflare/queues/QUEUE_EMAIL_OUT`
+- `queues`/`QUEUE_PERIOD_CLOSE` · atom `cloudflare/queues/QUEUE_PERIOD_CLOSE`
+- `r2_buckets`/`R2` · atom `cloudflare/r2-buckets/R2`
+- `ratelimit`/`RATE_LIMITER_AI` · atom `cloudflare/ratelimit/RATE_LIMITER_AI`
+- `ratelimit`/`RATE_LIMITER_API` · atom `cloudflare/ratelimit/RATE_LIMITER_API`
+- `send_email`/`EMAIL_SENDER` · atom `cloudflare/send-email/EMAIL_SENDER`
+- `services`/`WORKER_SELF_REFERENCE` · atom `cloudflare/services/WORKER_SELF_REFERENCE`
+- `triggers`/`CRON` · atom `cloudflare/triggers/CRON`
+- `vectorize`/`VECTORIZE_DOCS` · atom `cloudflare/vectorize/VECTORIZE_DOCS`
+
+## [[standards]]
+
+- `Cloudflare Workers Runtime API` · banner
+- `ILO-C001` · catalogue
+- `ISO-27001` · catalogue
+- `ISO-27002` · catalogue
+- `ISO/IEC 25010:2023 §5.2 reliability — fail-fast at boot` · banner
+- `ISO/IEC-27001:2022` · catalogue
+- `ISO/IEC-27002:2022` · catalogue
+- `W3C Service Worker §4 (Workers compat)` · banner
+
+## analytics
+
+- bond degree `50` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `27` · standards `8`
 
 ## identity
 
 - uuid `8e6ca479-db8e-895f-8e9d-ac04195ec061`
 - bonds in `10` · out `10`
 - trinity form·code·proof `1`·`1`·`1`
-- links `20` / `23`
+- links `23` / `23`
 - folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `e0652ae9-bd69-8b4f-b234-4d5a2b6bd353` · framed by typography partition `cloudflare` bonds `40` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `5e3b6be9-817d-8922-8fe1-459a6c9ba088` · framed by typography partition `cloudflare` bonds `50` · `pnpm readme` · `pnpm readme:check`</sub>

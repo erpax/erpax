@@ -25,7 +25,22 @@
 
 - partition `coherence` · sub-root `e46ab8e5-28f7-8a8a-87f5-6c5f0945ba11`
 - bond degree `70` · analysis neighbors `aura`
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `computed from the input trace, never hand-asserted` · banner
+- `DSP magnitude-spectrum (DFT) + the 0.7..4 Hz human-pulse band` · banner
+
+## analytics
+
+- bond degree `70` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `2`
 
 ## identity
 
@@ -41,4 +56,4 @@
 
 ---
 
-<sub>content-uuid `0ce00699-47c0-859a-8303-fd81bd7764a1` · framed by typography partition `coherence` bonds `70` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `1be26eff-477c-8391-8519-799603ebb1b1` · framed by typography partition `coherence` bonds `70` · `pnpm readme` · `pnpm readme:check`</sub>

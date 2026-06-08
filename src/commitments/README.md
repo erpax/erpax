@@ -25,7 +25,32 @@
 
 - partition `commitments` · sub-root `98330a8e-5a19-8bf9-933b-24c323542f1f`
 - bond degree `31` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `COSO Internal-Control-Integrated-Framework 2013 authorization` · banner
+- `GDPR Art.6(1)(b) lawful-basis-contract-processing` · banner
+- `IAS-1` · catalogue
+- `IFRS IAS-1 presentation-of-financial-statements` · banner
+- `IFRS IFRS-15 §10 contract-with-customer` · banner
+- `IFRS-15` · catalogue
+- `ISO-19011:2018 audit-trail authorization-evidence` · banner
+- `ISO-4217:2015 currency-codes` · banner
+- `ISO-8601-1:2019 date-time authorization-date` · banner
+- `SOX` · catalogue
+- `SOX §302 management-certification internal-controls` · banner
+- `SOX §404 internal-controls spending-authority` · banner
+
+## analytics
+
+- bond degree `31` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `12`
 
 ## identity
 
@@ -41,4 +66,4 @@
 
 ---
 
-<sub>content-uuid `08e10eee-24ba-8b28-b675-20cc299a4108` · framed by typography partition `commitments` bonds `31` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `36049da2-6502-8a32-932f-bbc00b9f6ff4` · framed by typography partition `commitments` bonds `31` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,21 @@
 
 - partition `comedy` · sub-root `a3dd765a-db7a-8cbd-897e-57e59b5267d7`
 - bond degree `19` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `19` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `259c2a66-76d0-8408-904a-596202916fe0` · framed by typography partition `comedy` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d15f49ce-856a-8afb-87a5-92f626189f27` · framed by typography partition `comedy` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>

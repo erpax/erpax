@@ -3,15 +3,15 @@
 
 # finding
 
-path `finding` · uuid `4e5ce9cb-9cd4-8c16-a5c5-6b3e98832504` · diamond `639822bd-0e4a-8157-823c-8b3f106343af`
+path `finding` · uuid `4e5ce9cb-9cd4-8c16-a5c5-6b3e98832504` · diamond `3e7cff03-54d8-8360-ae69-313376a530f2`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports audit·balance·findings·law · exports finding · escapes —
-links `9/9` · folded `1` · bonds in `5` out `5`
+links `9/9` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → finite·landmarks·open·suite·telephone · ← finite·landmarks·open·suite·telephone
+neighbors → audit·balance·findings·law · ← audit·balance·findings·law
 analysis —
 law a finding is the singular model of exactly one [[findings]] row — an observation of fact produced by an audit or review; the model and its plural store always [[balance]].
 
 ---
 
-<sub>content-uuid `07f9b9e8-2855-8735-883f-be433521fc49` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b50682c8-294b-8e50-a83e-9b9e098e21c2` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -25,7 +25,26 @@
 
 - partition `closing` · sub-root `6c9d747c-d9cf-8dea-96c8-90425c7f2d8d`
 - bond degree `15` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `IAS-34` · catalogue
+- `IAS-34:2023 — interim financial reporting, period structure` · banner
+- `IAS-34:2023 (period structure, interim closing requirements)` · banner
+- `SAF-T` · catalogue
+- `SAF-T:3.0.2 — period coding, regulatory audit trail` · banner
+- `SAF-T:3.0.2 (period coding, regulatory audit trail)` · banner
+
+## analytics
+
+- bond degree `15` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `6`
 
 ## identity
 
@@ -41,4 +60,4 @@
 
 ---
 
-<sub>content-uuid `7cee3470-b54c-8121-b970-968d37fdbd3a` · framed by typography partition `closing` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `49e73049-dd53-8ef4-b6af-4f59fbae50c9` · framed by typography partition `closing` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

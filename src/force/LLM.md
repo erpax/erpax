@@ -3,15 +3,15 @@
 
 # force
 
-path `force` · uuid `8ff753f5-a1bf-8aa6-99d2-6c7282a72137` · diamond `d3d1a670-f067-8840-b368-ea1bd129a291`
+path `force` · uuid `8ff753f5-a1bf-8aa6-99d2-6c7282a72137` · diamond `357dcde7-79ed-84c8-b60e-7e330520b060`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·legal·legislation·merge·status·sti · exports force · escapes —
-links `7/7` · folded `1` · bonds in `15` out `15`
+links `7/7` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → atom·catalogue·cohort·drone·dropoff·entertainment·homeopathic·import·landmarks·list·marry·memories·office·seed·wp · ← atom·catalogue·cohort·drone·dropoff·entertainment·homeopathic·import·landmarks·list·marry·memories·office·seed·wp
+neighbors → collapse·law·legal·legislation·merge·science·status·sti · ← collapse·law·legal·legislation·merge·science·status·sti
 analysis —
 law force is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `9327d40c-ab3d-84bc-9bdc-ace8674ccc93` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9d734040-f4c6-8676-81f4-89624129128d` · `pnpm readme` · `pnpm computed:check`</sub>

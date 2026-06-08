@@ -3,15 +3,15 @@
 
 # love
 
-path `fear/love` · uuid `5f75322f-2515-8e5d-ae77-8ec870080d96` · diamond `bfd3acc7-09f2-8251-8b97-ec038fb8978b`
+path `fear/love` · uuid `5f75322f-2515-8e5d-ae77-8ec870080d96` · diamond `41bbb014-7aea-8743-9f7e-18f2dd9a1788`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports balance·cost·duality·entropy·fear·karma·law·love·proof·tamper · exports love · escapes —
-links `22/22` · folded `1` · bonds in `19` out `19`
+links `22/22` · folded `1` · bonds in `33` out `39`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·attestations·death·dropoff·eat·euenergy·founder·golf·hold·home·id·infectious·landmarks·lifestyle·list·memories·repair·sell·spouse · ← access·attestations·death·dropoff·eat·euenergy·founder·golf·hold·home·id·infectious·landmarks·lifestyle·list·memories·repair·sell·spouse
+neighbors → angel·atom·bahai·balance·buddhism·christianity·confucianism·cost·cost·duality·duality·entropy·entropy·fear·fear·finality·fs·gravity·heart·hinduism·karma·karma·law·law·link·love·love·mercy·merge·proof·quantum·security·sikhism·snapshot·society·sufism·tamper·tamper·uuid · ← angel·atom·bahai·balance·buddhism·christianity·confucianism·cost·duality·entropy·fear·fear·finality·fs·gravity·heart·hinduism·karma·law·link·love·love·mercy·merge·proof·quantum·security·sikhism·snapshot·society·sufism·tamper·uuid
 analysis —
 law fear acting on love is the +[[entropy]] arrow that corrupts order — the [[tamper]] erpax makes expensive; what fear opens here, love must close there, or [[proof]] catches the broken [[balance]].
 
 ---
 
-<sub>content-uuid `b7b2e7c7-03de-8b0b-8ed7-0158394e194d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `554995fa-48b6-8d0f-811e-8322d9204481` · `pnpm readme` · `pnpm computed:check`</sub>

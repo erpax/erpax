@@ -3,15 +3,15 @@
 
 # experience
 
-path `experience` · uuid `b45bea6c-a172-8286-8ad6-8aa1e3318aec` · diamond `3ba6992f-f224-8e9f-81ca-d50a591cc238`
+path `experience` · uuid `b45bea6c-a172-8286-8ad6-8aa1e3318aec` · diamond `f73308d6-cf93-804c-87fd-9dfdd70ddf12`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·education·law·merge·months·occupational·place·requirements·sti · exports experience · escapes —
-links `9/9` · folded `1` · bonds in `2` out `2`
+links `9/9` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → collapse·education·law·merge·months·occupational·place·requirements·sti · ← collapse·education·law·merge·months·occupational·place·requirements·sti
 analysis —
 law experience is the one accumulated-time-in-occupation word fused from the schema.org experience compounds, substitutable for education only where a requirement permits it.
 
 ---
 
-<sub>content-uuid `b95a0897-ec89-8e63-ac77-ff6a3ff1e3a8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `55ca448f-ed79-86db-98ed-29b5277ae149` · `pnpm readme` · `pnpm computed:check`</sub>

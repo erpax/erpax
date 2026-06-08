@@ -3,15 +3,15 @@
 
 # florist
 
-path `florist` · uuid `36f3b70b-5043-866f-b1d8-22d48eaee22e` · diamond `7207bbac-0ac2-8fff-b2f6-5eafaf00d2ec`
+path `florist` · uuid `36f3b70b-5043-866f-b1d8-22d48eaee22e` · diamond `afce97ed-b59f-8812-8980-eb459890ca44`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports florist · escapes —
-links `2/2` · folded `1` · bonds in `13` out `13`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → animal·conventional·corrects·grantee·hardcover·height·landmarks·lineup·maintainer·makes·position·quote·territory · ← animal·conventional·corrects·grantee·hardcover·height·landmarks·lineup·maintainer·makes·position·quote·territory
+neighbors → law·thing · ← law·thing
 analysis —
 law florist is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `3f07774f-c2e9-8699-aa2f-310403a5f159` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d3fb68be-6be9-840b-9c6d-e7e996f6744c` · `pnpm readme` · `pnpm computed:check`</sub>

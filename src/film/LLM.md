@@ -3,15 +3,15 @@
 
 # film
 
-path `film` · uuid `71c042c3-053c-8959-9dbb-7b7df88a619d` · diamond `6a37e2ac-784d-8c07-8ad3-d4ca3a539ccd`
+path `film` · uuid `71c042c3-053c-8959-9dbb-7b7df88a619d` · diamond `2ef5cebb-a433-8762-95c5-6013196f2870`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti · exports film · escapes —
-links `5/5` · folded `1` · bonds in `16` out `23`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·accounting·anchor·balance·buddhist·disagree·headline·homeopathic·homeopathic·id·id·landmarks·landmarks·marketing·progression·progression·reconciliations·section·spouse·spouse·tour·tour·used · ← anchor·balance·buddhist·disagree·headline·homeopathic·id·landmarks·marketing·progression·reconciliations·reconciliations·section·spouse·tour·used
+neighbors → action·collapse·law·merge·sti · ← action·collapse·law·merge·sti
 analysis —
 law film is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `33a48ea0-d89b-891d-92c6-eb4461c83b40` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c3621ec9-77c5-8ee4-a53f-ddafacaddb74` · `pnpm readme` · `pnpm computed:check`</sub>

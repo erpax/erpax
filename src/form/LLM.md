@@ -3,15 +3,15 @@
 
 # form
 
-path `form` · uuid `517d76c6-1976-802d-8b41-086efdc591fd` · diamond `b54411d5-4d42-83dd-a536-5f4c8bc1a71d`
+path `form` · uuid `517d76c6-1976-802d-8b41-086efdc591fd` · diamond `fc1cd550-44c8-80ca-a0b0-042ed7f68769`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·composition·dosage·law·loan·merge·music·repayment·sti · exports form · escapes —
-links `9/9` · folded `1` · bonds in `7` out `7`
+links `9/9` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·has·incentive·landmarks·memories·physiological·stat · ← cohort·has·incentive·landmarks·memories·physiological·stat
+neighbors → collapse·composition·dosage·law·loan·merge·music·repayment·sti·typography · ← collapse·composition·dosage·law·loan·merge·music·repayment·sti·typography
 analysis —
 law form is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `308cd666-222d-8f01-95f6-e671e9be1c43` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b632a6e4-23e9-815b-ae57-611581ad9669` · `pnpm readme` · `pnpm computed:check`</sub>

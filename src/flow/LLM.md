@@ -3,15 +3,15 @@
 
 # flow
 
-path `flow` · uuid `2f86cc0b-d49a-817e-bd5b-46fb656c059c` · diamond `e3148a25-1fde-86e9-870e-cf00f130b713`
+path `flow` · uuid `2f86cc0b-d49a-817e-bd5b-46fb656c059c` · diamond `dec2f89b-3683-83a1-bd62-b08b49ebb818`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports accounting·balance·commerce·give·law·manufacturing·queries·reconcile·sequence·take · exports flow · escapes —
-links `15/15` · folded `1` · bonds in `13` out `13`
+links `15/15` · folded `1` · bonds in `45` out `45`
 faces worker·plugin·pwa `0·0·0`
-neighbors → 3986·agent·cohort·day·homeopathic·landmarks·list·lyricist·marry·memories·musical·office·speed · ← 3986·agent·cohort·day·homeopathic·landmarks·list·lyricist·marry·memories·musical·office·speed
+neighbors → accounting·atom·balance·base·bottleneck·breath·chat·close·commerce·descent·duality·education·end·engine·event·give·grazing·horo·ingest·law·manufacturing·manure·notification·open·party·perspective·phase·queries·reconcile·science·sequence·signal·society·sparsity·stream·take·throughput·transaction·trinity·unity·wave·weave·website·workflow·workspace · ← accounting·atom·balance·base·bottleneck·breath·chat·close·commerce·descent·duality·education·end·engine·event·give·grazing·horo·ingest·law·manufacturing·manure·notification·open·party·perspective·phase·queries·reconcile·science·sequence·signal·society·sparsity·stream·take·throughput·transaction·trinity·unity·wave·weave·website·workflow·workspace
 analysis —
 law all movement is a [[give]] met by a [[take]], conserved and [[accounting]]-posted; its stage is derived by [[queries]] never stored, and it is the dual of [[balance]] (movement ↔ rest).
 
 ---
 
-<sub>content-uuid `1a8858e7-4f9c-8a3a-9423-784efa41852f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f39aa689-111b-8f72-bea2-8beadfda4a3e` · `pnpm readme` · `pnpm computed:check`</sub>

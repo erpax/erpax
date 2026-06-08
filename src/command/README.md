@@ -25,7 +25,22 @@
 
 - partition `command` · sub-root `261d1a23-7417-8e03-8aaf-cc87bd545214`
 - bond degree `71` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org Action — the imperative move (here, the workflow step's verb)` · banner
+- `the C-set is gated for groundedness — every command resolves to a corpus atom` · banner
+
+## analytics
+
+- bond degree `71` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `2`
 
 ## identity
 
@@ -41,4 +56,4 @@
 
 ---
 
-<sub>content-uuid `2b975b6c-a99c-8d24-8c08-b0e92c1ffed6` · framed by typography partition `command` bonds `71` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `11354e77-6263-8e7b-9fd7-3a1e8848424b` · framed by typography partition `command` bonds `71` · `pnpm readme` · `pnpm readme:check`</sub>

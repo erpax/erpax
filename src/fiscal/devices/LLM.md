@@ -3,15 +3,15 @@
 
 # devices
 
-path `fiscal/devices` · uuid `7ab3c847-0aeb-863b-ac15-395e439266c6` · diamond `d65fde2a-a118-8a45-a62d-84815a468555`
+path `fiscal/devices` · uuid `7ab3c847-0aeb-863b-ac15-395e439266c6` · diamond `b8866523-b72d-8f18-a1fd-d29be82e84e0`
 horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports @/audit/trail/after/change·@/auth·@/auto/populate/tenant·@/fields · exports default · escapes —
-links `4/4` · folded `1` · bonds in `7` out `7`
+links `4/4` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·clothing·crosses·evaluated·landmarks·progression·spouse · ← accounting·clothing·crosses·evaluated·landmarks·progression·spouse
+neighbors → law·operators·sales·supto·terminals · ← law·operators·sales·supto·terminals
 analysis —
 law every fiscal device carries a unique 8-digit ФУ number that anchors the first segment of every УНП it issues — the device identity is the root of the gapless sale-numbering chain Наредба Н-18 demands, and decommission is a lifecycle state, not a deletion.
 
 ---
 
-<sub>content-uuid `f5197667-55dc-8d7e-a5c5-2a7411eb79d1` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a023830f-cb8f-85bf-9a69-cebcd01ee52a` · `pnpm readme` · `pnpm computed:check`</sub>

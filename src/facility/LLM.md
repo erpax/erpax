@@ -3,15 +3,15 @@
 
 # facility
 
-path `facility` · uuid `166456b9-83e8-83c8-85b7-687c074bc48c` · diamond `965d4625-a0a0-89cd-88ea-8ff7e83e7828`
+path `facility` · uuid `166456b9-83e8-83c8-85b7-687c074bc48c` · diamond `5b29c964-0f05-8780-8be0-1d66bad98b57`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·county·covid·cvd·id·law·merge·parking·sti·testing · exports facility · escapes —
-links `10/10` · folded `1` · bonds in `3` out `3`
+links `10/10` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
-neighbors → balance·pwa·tourist · ← balance·pwa·tourist
+neighbors → collapse·county·covid·cvd·id·law·merge·parking·sti·testing · ← collapse·county·covid·cvd·id·law·merge·parking·sti·testing
 analysis —
 law facility is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `17ad1024-ca95-8f57-b2b2-f06ffb8dbc0f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f02840d2-d7f2-86c8-ad80-82091886b7c3` · `pnpm readme` · `pnpm computed:check`</sub>

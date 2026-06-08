@@ -23,7 +23,7 @@
 
 - partition `cutoff` · sub-root `9bd7a315-b87f-8cf6-b77a-a1229757d93a`
 - bond degree `15` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `08417410-9529-8662-a45d-0e6296f0598e`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `4365e124-8643-85a5-8ba3-5e69018df24b` · framed by typography partition `cutoff` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `74ac4c95-c083-8b1d-aa5a-c02fd81bdbd4` · framed by typography partition `cutoff` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

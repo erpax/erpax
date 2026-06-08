@@ -25,7 +25,31 @@
 
 - partition `commitments` · sub-root `98330a8e-5a19-8bf9-933b-24c323542f1f`
 - bond degree `31` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `IFRS IAS-1 §112(c) other-disclosures` · banner
+- `IFRS IAS-37 §10 contingent-liability-definition` · banner
+- `IFRS IAS-37 §27-30 recognition-prohibition` · banner
+- `IFRS IAS-37 §86-92 disclosure-requirements` · banner
+- `IFRS IFRS-15 §B50 onerous-contract-disclosure` · banner
+- `ISO-19011:2018 audit-trail off-balance-sheet` · banner
+- `ISO-4217:2015 currency-codes` · banner
+- `ISO-8601-1:2019 date-time` · banner
+- `SOX §404 internal-controls disclosure-completeness` · banner
+- `US-GAAP ASC-440 commitments` · banner
+- `US-GAAP ASC-450-20-50 loss-contingency-disclosure` · banner
+
+## analytics
+
+- bond degree `31` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `11`
 
 ## identity
 
@@ -41,4 +65,4 @@
 
 ---
 
-<sub>content-uuid `dd8d9e40-a075-8101-a694-5524a597c54e` · framed by typography partition `commitments` bonds `31` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `98f34f5f-9f9b-81cc-ac6a-297732f68a5d` · framed by typography partition `commitments` bonds `31` · `pnpm readme` · `pnpm readme:check`</sub>

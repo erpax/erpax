@@ -23,7 +23,7 @@
 
 - partition `dance` · sub-root `1f3bc761-e4db-869c-84bc-6ea2edd86a6c`
 - bond degree `19` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `08417410-9529-8662-a45d-0e6296f0598e`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `e5c27026-6452-866d-9089-ad075ddad44a` · framed by typography partition `dance` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `1613b96a-8478-86c3-adac-7b0be4c76341` · framed by typography partition `dance` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>

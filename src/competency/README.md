@@ -25,7 +25,24 @@
 
 - partition `competency` · sub-root `56d98736-eb49-897e-8cd6-11a0be1bb1ed`
 - bond degree `22` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ISO 30405:2016 essential-vs-desirable (mandatory flag)` · banner
+- `schema.org — the type vocabulary, collided to single words` · banner
+- `SFIA` · catalogue
+- `SFIA 8 proficiency-levels` · banner
+
+## analytics
+
+- bond degree `22` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `4`
 
 ## identity
 
@@ -41,4 +58,4 @@
 
 ---
 
-<sub>content-uuid `de36f386-6a43-8f4b-bd81-ca5d05857029` · framed by typography partition `competency` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b4ae5dd1-ae35-8b6f-afb5-899c260b826a` · framed by typography partition `competency` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,15 +3,15 @@
 
 # measurements
 
-path `fair/value/measurements` · uuid `498739a4-f18c-898f-b745-4c6b578934b5` · diamond `1f3b7883-5291-88de-ba75-28ea724c3e8e`
+path `fair/value/measurements` · uuid `498739a4-f18c-898f-b745-4c6b578934b5` · diamond `eed004d5-ffa9-8ffb-ac40-84b3e3c27959`
 horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
-links `7/7` · folded `1` · bonds in `11` out `11`
+links `7/7` · folded `1` · bonds in `13` out `13`
 faces worker·plugin·pwa `0·0·0`
-neighbors → agriculture·crisis·feed·founder·free·landmarks·rescheduled·short·task·user·vibration · ← agriculture·crisis·feed·founder·free·landmarks·rescheduled·short·task·user·vibration
+neighbors → accounting·assets·attestations·classifications·combinations·contracts·goodwill·hedge·law·party·properties·standard·transaction · ← accounting·assets·attestations·classifications·combinations·contracts·goodwill·hedge·law·party·properties·standard·transaction
 analysis —
 law each fair-value measurement is classified into exactly one IFRS 13 hierarchy level (Level-1 quoted · Level-2 observable · Level-3 unobservable) carrying its valuation technique, inputs, and P&L/OCI recognition route — the level governs the disclosure, so the input observability determines where it sits.
 
 ---
 
-<sub>content-uuid `d6c8bfe5-7e18-804d-9670-ef3df7d90350` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d41a3352-848e-826d-8523-c7dcc7402f80` · `pnpm readme` · `pnpm computed:check`</sub>

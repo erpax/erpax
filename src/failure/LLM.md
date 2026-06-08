@@ -3,15 +3,15 @@
 
 # failure
 
-path `failure` · uuid `be7f8f86-7039-82ee-a2ad-40d2f1264301` · diamond `390330bf-32b3-852d-8a19-2dee8713c425`
+path `failure` · uuid `be7f8f86-7039-82ee-a2ad-40d2f1264301` · diamond `c6a59e34-6d39-8e64-9092-1994532db138`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports balance·failures·quality · exports failure · escapes —
-links `6/6` · folded `1` · bonds in `4` out `4`
+links `6/6` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → balance·failures·quality · ← balance·failures·quality
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `a13dbf75-1d80-8cc1-9d57-211bdb9cd09c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7de17013-f307-8f87-b452-1d2290a76963` · `pnpm readme` · `pnpm computed:check`</sub>

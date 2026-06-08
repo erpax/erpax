@@ -3,15 +3,15 @@
 
 # adjustments
 
-path `fiscal/periods/prior/period/adjustments` · uuid `5727c556-3390-885f-864c-8023b4811026` · diamond `41980f10-48a3-82e8-ad8a-0a74f53646ba`
+path `fiscal/periods/prior/period/adjustments` · uuid `5727c556-3390-885f-864c-8023b4811026` · diamond `25a54b3b-dd76-8f84-8977-ae69c6094015`
 horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
-links `8/8` · folded `1` · bonds in `6` out `6`
+links `8/8` · folded `1` · bonds in `18` out `25`
 faces worker·plugin·pwa `0·0·0`
-neighbors → display·dunning·escrow·landmarks·notice·representation · ← display·dunning·escrow·landmarks·notice·representation
+neighbors → access·accounting·accounting·accounting·accounts·accrual·adjustment·close·deferral·entries·entries·entries·fields·hooks·horo·law·law·law·law·periods·proof·runs·snapshots·standard·transactions · ← access·accounting·accounts·accrual·adjustment·close·deferral·entries·fields·hooks·horo·law·periods·proof·runs·snapshots·standard·transactions
 analysis —
 law a prior-period adjustment corrects a material error in a closed period by restating opening balances — it NEVER re-opens that period (IAS-8 §42); the closed past stays sealed, the correction flows through the earliest period presented with CEO/CFO certification.
 
 ---
 
-<sub>content-uuid `71c4b19c-7a61-81e7-bdb5-634a40565a90` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d62cd677-9862-8be2-a8e2-53b9939fd82c` · `pnpm readme` · `pnpm computed:check`</sub>

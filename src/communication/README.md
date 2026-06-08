@@ -25,7 +25,22 @@
 
 - partition `communication` · sub-root `aea7ad79-ea24-8ce2-9e90-a4b0a9ed88ec`
 - bond degree `72` · analysis neighbors `agent`
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `RFC-9562` · catalogue
+- `the message-uuid (self-decoding); RFC 9562 §5.8 content-uuid` · banner
+
+## analytics
+
+- bond degree `72` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `2`
 
 ## identity
 
@@ -41,4 +56,4 @@
 
 ---
 
-<sub>content-uuid `8d779de8-c53b-88f8-8247-cfa71539ddfc` · framed by typography partition `communication` bonds `72` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `865debe6-4a10-8426-b97a-324c4d616565` · framed by typography partition `communication` bonds `72` · `pnpm readme` · `pnpm readme:check`</sub>

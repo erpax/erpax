@@ -3,15 +3,15 @@
 
 # followee
 
-path `followee` · uuid `13662a39-f386-8695-9b72-34416fee0a2b` · diamond `e7b60a25-4499-8972-b30e-ccba6855b465`
+path `followee` · uuid `13662a39-f386-8695-9b72-34416fee0a2b` · diamond `64632fda-b7ae-85c2-a9f5-34ff655bdeb9`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports followee · escapes —
-links `2/2` · folded `1` · bonds in `4` out `4`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → law·thing · ← law·thing
 analysis —
 law followee is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `80beacd9-9d80-8dfb-8e69-f1e5d8ecdd93` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9f476129-8158-83ad-ae4b-082b2199c359` · `pnpm readme` · `pnpm computed:check`</sub>

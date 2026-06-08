@@ -3,15 +3,15 @@
 
 # female
 
-path `female` · uuid `ab7dd7e6-484e-8a8c-81fd-7f8f1c25c739` · diamond `ffec00c8-1214-8014-8c82-5b65927c7872`
+path `female` · uuid `ab7dd7e6-484e-8a8c-81fd-7f8f1c25c739` · diamond `6cc63830-b0aa-8f5f-8a45-da62d45e480e`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports female · escapes —
-links `4/4` · folded `1` · bonds in `3` out `3`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → balance·fertility·generator · ← balance·fertility·generator
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law female is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `218b0c2f-7640-8856-8e1b-620cf7bcb009` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ff166015-3160-8d58-a7ae-3e1fdac55202` · `pnpm readme` · `pnpm computed:check`</sub>

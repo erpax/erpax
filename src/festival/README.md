@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `festival` · sub-root `1848c048-c6fa-8f3a-bfaf-e94c64a7b8aa`
-- bond degree `19` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `6` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `1848c048-c6fa-8f3a-bfaf-e94c64a7b8aa`
-- bonds in `9` · out `8`
+- bonds in `2` · out `2`
 - trinity form·code·proof `1`·`0`·`0`
 - links `2` / `2`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `0522df41-8e52-88e9-bac0-744540aad04c` · framed by typography partition `festival` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b716ed0a-0d68-8047-90f2-a858197bfb36` · framed by typography partition `festival` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>

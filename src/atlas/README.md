@@ -23,7 +23,7 @@
 
 - partition `atlas` · sub-root `341f65a6-2d80-8232-a777-b3a9dda2ea0b`
 - bond degree `9` · analysis neighbors —
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- graph root `1c65e160-5137-86a1-ad8e-dc86b0e96873`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `b1fc9e01-df63-8100-afa5-fa031cb9dd30` · framed by typography partition `atlas` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `1ca5be5d-f6d9-8e4d-87e8-791ad30e78f7` · framed by typography partition `atlas` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>

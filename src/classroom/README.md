@@ -23,7 +23,21 @@
 
 - partition `classroom` · sub-root `fd251259-8a4e-87fe-83ba-d74ee3023855`
 - bond degree `51` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `51` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `cf3023cc-9de3-857e-910d-0ab8aa47928a` · framed by typography partition `classroom` bonds `51` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `78ddd356-ab28-8ae7-bf1e-409a659b1783` · framed by typography partition `classroom` bonds `51` · `pnpm readme` · `pnpm readme:check`</sub>

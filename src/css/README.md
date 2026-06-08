@@ -2,7 +2,7 @@
 
 # css
 
-> atom `css` · horo `7` `descent` · [[balance]] `1` · [[seal]] `0`
+> atom `css` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -15,7 +15,7 @@
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
 | [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
 | [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[boundary]]/escape `1` |
+| [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
 
@@ -25,7 +25,7 @@
 
 - partition `css` · sub-root `8ac7e2ab-b02d-8084-9f94-5da3562b0671`
 - bond degree `41` · analysis neighbors `diamond` · `purity`
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `08417410-9529-8662-a45d-0e6296f0598e`
 
 ## identity
 
@@ -33,12 +33,12 @@
 - bonds in `13` · out `13`
 - trinity form·code·proof `1`·`1`·`1`
 - links `28` / `28`
-- folded `1` · escapes `1`
+- folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `51fe34ca-4524-8eb1-9caf-bc2fdaac6e51` · framed by typography partition `css` bonds `41` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `461ef7fa-8c11-8863-876d-9da40bb2431e` · framed by typography partition `css` bonds `41` · `pnpm readme` · `pnpm readme:check`</sub>

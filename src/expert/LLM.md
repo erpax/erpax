@@ -8,10 +8,10 @@ horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·considerations·law·merge·sti · exports expert · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·markup·memories·stat · ← cohort·landmarks·markup·memories·stat
+neighbors → collapse·considerations·law·merge·sti · ← collapse·considerations·law·merge·sti
 analysis —
 law expert is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `320d6858-4392-8383-8594-3642f56594ca` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0dda8082-b63f-803a-8b68-464dbde3f8da` · `pnpm readme` · `pnpm computed:check`</sub>

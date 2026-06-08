@@ -3,15 +3,15 @@
 
 # forge
 
-path `forge` · uuid `4e3c0ee8-15f0-8786-bdfb-4d9521ee9e98` · diamond `d961e52f-11cb-898e-b991-cbe86fc2c6ed`
+path `forge` · uuid `4e3c0ee8-15f0-8786-bdfb-4d9521ee9e98` · diamond `6ab40284-41d5-88ef-9d69-65cce0d5c890`
 horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports @/duality·@/entropy·@/horo·@/trinity·@/uuid/matrix · exports function·interface · escapes —
-links `30/30` · folded `1` · bonds in `5` out `5`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·mobility·stat · ← cohort·landmarks·memories·mobility·stat
+links `30/30` · folded `1` · bonds in `15` out `15`
+faces worker·plugin·pwa `1·0·0`
+neighbors → atom·collapse·duality·entropy·fusion·horo·law·link·matrix·merge·one·trinity·uuid·whole·zeropoint · ← atom·collapse·duality·entropy·fusion·horo·law·link·matrix·merge·one·trinity·uuid·whole·zeropoint
 analysis —
 law the forge only re-folds what the corpus already declares — every node and every binding strike together by content-collision into ONE root, so the forge state is a measurement of the whole, never an authored value, and re-striking the same corpus always cools to the same root.
 
 ---
 
-<sub>content-uuid `303bd4ae-a78d-8b7e-83a6-05764c11546b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `adc40f5b-3604-8cb9-b542-639f6ccf4989` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # follow
 
-path `follow` · uuid `ac79df2f-7381-8431-833f-e4c0440f4e17` · diamond `1417fb1c-2bbb-8d4c-bb92-c359bb44b6a1`
+path `follow` · uuid `ac79df2f-7381-8431-833f-e4c0440f4e17` · diamond `7a8766ab-eb4d-86fc-8f36-ba36750bc6da`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports action·collapse·law·merge·sti · exports follow · escapes —
-links `5/5` · folded `1` · bonds in `11` out `11`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·equipment·euenergy·false·landmarks·memories·representation·resolution·separation·stat·vital · ← cohort·equipment·euenergy·false·landmarks·memories·representation·resolution·separation·stat·vital
+neighbors → action·collapse·law·merge·sti · ← action·collapse·law·merge·sti
 analysis —
 law follow is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `77b79fb9-9232-8f33-beaf-faf1f030f806` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `507548e9-d2a6-89f4-b800-121e379c1e39` · `pnpm readme` · `pnpm computed:check`</sub>

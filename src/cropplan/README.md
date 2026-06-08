@@ -23,7 +23,7 @@
 
 - partition `cropplan` · sub-root `2d047a59-bc1d-8a19-a325-3d5ff900c143`
 - bond degree `53` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `08417410-9529-8662-a45d-0e6296f0598e`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `e887d1a1-bbf3-89e3-9eb5-587bba5bcb72` · framed by typography partition `cropplan` bonds `53` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e745989d-4c1c-8346-8156-d499ed55e3df` · framed by typography partition `cropplan` bonds `53` · `pnpm readme` · `pnpm readme:check`</sub>

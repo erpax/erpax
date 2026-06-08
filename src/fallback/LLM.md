@@ -3,15 +3,15 @@
 
 # fallback
 
-path `fallback` · uuid `42746b65-8828-897b-b149-91b213d85557` · diamond `6b16ab4d-5d97-8f53-aaa0-bfa0f5b329bd`
-horo `1` `base` · trinity `1·0·0` · sealed `1`
+path `fallback` · uuid `f3f780cd-92f5-8d97-b005-9a31da4f3822` · diamond `001b9116-061c-84a3-9dc7-893c2349cd98`
+horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·unlabelled · exports fallback · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
+links `5/5` · folded `1` · bonds in `11` out `13`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
-analysis diamond·hallucination·purity
+neighbors → balance·collapse·country·currency·integrity·law·law·law·merge·science·sti·unlabelled·uuid · ← balance·collapse·country·currency·integrity·law·merge·science·sti·unlabelled·uuid
+analysis —
 law fallback is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `2760a84e-6cfb-869b-a760-19e519d6f8f3` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a1f5a823-26ce-87fc-9cec-cd22c12f36df` · `pnpm readme` · `pnpm computed:check`</sub>

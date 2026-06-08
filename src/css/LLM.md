@@ -3,9 +3,9 @@
 
 # css
 
-path `css` · uuid `8ac7e2ab-b02d-8084-9f94-5da3562b0671` · diamond `7391d305-ec4a-89f9-bf24-7a76a2c81c4a`
-horo `7` `descent` · trinity `1·1·1` · sealed `0`
-imports @/integrity · exports function·interface · escapes @/diamond/projection
+path `css` · uuid `8ac7e2ab-b02d-8084-9f94-5da3562b0671` · diamond `a3f169b2-9868-84c1-ac87-5643aadd125d`
+horo `7` `descent` · trinity `1·1·1` · sealed `1`
+imports @/diamond·@/integrity · exports function·interface · escapes —
 links `28/28` · folded `1` · bonds in `13` out `13`
 faces worker·plugin·pwa `1·0·0`
 neighbors → atom·component·diamond·dimension·gate·law·primitive·proof·purity·seal·selector·trinity·typography · ← atom·component·diamond·dimension·gate·law·primitive·proof·purity·seal·selector·trinity·typography
@@ -14,4 +14,4 @@ law css is the styling diamond — the form facet of the visual [[dimension]]; e
 
 ---
 
-<sub>content-uuid `a5c81845-bc88-8524-a6da-34c1b3acf138` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d96dbb61-5c9f-83d8-b1dd-e92823d4edf9` · `pnpm readme` · `pnpm computed:check`</sub>

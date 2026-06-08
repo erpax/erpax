@@ -3,15 +3,15 @@
 
 # extra
 
-path `extra` · uuid `b8b08bdc-7898-867d-acb6-ff95d3bb4849` · diamond `3993d27c-60b8-8f16-8229-c6c2e053c1f6`
+path `extra` · uuid `b8b08bdc-7898-867d-acb6-ff95d3bb4849` · diamond `c5ed4351-3776-85e7-9ce2-b958d5f7695c`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports extra · escapes —
-links `4/4` · folded `1` · bonds in `7` out `7`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·inactive·landmarks·measurement·memories·reverse·stat · ← cohort·inactive·landmarks·measurement·memories·reverse·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law extra is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `39efd9d8-89f3-83cd-a5b6-00d9bd802ca5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3180a8e0-f7db-861b-89e5-6ee79a55b2a7` · `pnpm readme` · `pnpm computed:check`</sub>

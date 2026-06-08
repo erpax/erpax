@@ -3,15 +3,15 @@
 
 # expand
 
-path `expand` · uuid `e357bca5-2903-892f-9bb3-2f90bd70918f` · diamond `ca362f0e-fbdf-8cf0-9e4a-d98776b61d27`
+path `expand` · uuid `e357bca5-2903-892f-9bb3-2f90bd70918f` · diamond `5a46c95c-629c-8087-828f-fcd993ddb1f1`
 horo `5` `round` · trinity `1·1·1` · sealed `1`
 imports @/entropy·@/horo·@/uuid/matrix · exports const·function · escapes —
-links `45/45` · folded `1` · bonds in `9` out `9`
-faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·complex·editor·landmarks·memories·molecular·observation·physician·stat · ← cohort·complex·editor·landmarks·memories·molecular·observation·physician·stat
+links `45/45` · folded `1` · bonds in `15` out `15`
+faces worker·plugin·pwa `1·0·0`
+neighbors → atom·breath·collapse·cost·development·dry·entropy·gate·gravity·horo·law·matrix·one·sequence·word · ← atom·breath·collapse·cost·development·dry·entropy·gate·gravity·horo·law·matrix·one·sequence·word
 analysis —
 law expansion is borrowed entropy, not a breach of the one law. To add a feature is to forge one more [[atom]] — fresh surface that lands as slack and must be wired ([[entropy]] · [[matrix]]). The [[gate]] debits the slack and fuses it out, so the corpus grows toward zero entropy, never away: more atoms ⇒ more tamper-[[cost]] to be EARNED, the exhale conjugate of [[gravity]]'s inward collapse.
 
 ---
 
-<sub>content-uuid `772b3b3d-a900-8a84-ba85-fe46d4e38629` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `39aeb4c7-c0c9-863c-97ee-0e9d449efa8a` · `pnpm readme` · `pnpm computed:check`</sub>

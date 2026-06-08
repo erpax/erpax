@@ -3,15 +3,15 @@
 
 # force-majeure
 
-path `force-majeure` · uuid `e0b114f6-aad5-87f0-b35e-b25c88b30697` · diamond `802851f0-816d-859a-9521-ffbb9cac7eb3`
+path `force-majeure` · uuid `e0b114f6-aad5-87f0-b35e-b25c88b30697` · diamond `a871ed8c-c628-8361-899d-15a3105bf08f`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports contracts·law·legal·matter·termination · exports force-majeure · escapes —
-links `5/5` · folded `1` · bonds in `10` out `9`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → closing·cohort·composer·door·landmarks·literary·memories·remediation·stat · ← agriculture·closing·cohort·composer·door·landmarks·literary·memories·remediation·stat
+neighbors → contracts·law·matter·registers·termination · ← contracts·law·matter·registers·termination
 analysis —
 law force-majeure excuses performance when an unforeseeable event outside a party's control occurs — a notified trigger suspends or terminates the obligation rather than breaching it.
 
 ---
 
-<sub>content-uuid `26e06789-4083-86a8-a86d-343926b0257c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `65932d93-8a49-86df-84af-3d7ac53a4f83` · `pnpm readme` · `pnpm computed:check`</sub>

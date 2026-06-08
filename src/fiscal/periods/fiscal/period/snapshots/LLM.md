@@ -3,15 +3,15 @@
 
 # snapshots
 
-path `fiscal/periods/fiscal/period/snapshots` · uuid `f4bd1b21-dd8c-88d7-bbce-a530c718983c` · diamond `5c7cc266-664c-84af-b2e4-a306b634649f`
+path `fiscal/periods/fiscal/period/snapshots` · uuid `f4bd1b21-dd8c-88d7-bbce-a530c718983c` · diamond `7ba66524-3a0f-86be-b2e6-64b427373c0e`
 horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports @/auth · exports const · escapes —
-links `5/5` · folded `1` · bonds in `48` out `51`
+links `5/5` · folded `1` · bonds in `10` out `12`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·accounts·agriculture·allocation·attribution·biological·buildings·chinese·commission·conventional·customer·dashboard·disc·dropoff·entity·foot·founder·funded·holographic·homeopathic·horo·inventory·investment·issue·iswc·it·itcooperative·item·items·landmarks·landmarks·landmarks·landmarks·materials·orders·overview·partial·photon·promotion·quotes·reviews·runs·segments·settings·snapshots·spouse·tasks·template·university·upper·wheelbase · ← accounting·accounts·agriculture·allocation·attribution·biological·buildings·chinese·commission·conventional·customer·dashboard·disc·dropoff·entity·foot·founder·funded·holographic·homeopathic·horo·inventory·investment·issue·iswc·it·itcooperative·item·items·landmarks·materials·orders·overview·partial·photon·promotion·quotes·reviews·runs·segments·settings·snapshots·spouse·tasks·template·university·upper·wheelbase
+neighbors → access·accounting·adjustments·identity·law·law·periods·projects·proof·standard·standard·transaction · ← access·accounting·adjustments·identity·law·periods·projects·proof·standard·transaction
 analysis —
 law a fiscal-period snapshot is an immutable point-in-time capture chained to its prior snapshot — the priorSnapshot link makes any hidden amendment detectable, and critical amendments carry an eIDAS QES signature, so the period's history is replayable and tamper-evident.
 
 ---
 
-<sub>content-uuid `36b0628a-c257-86fc-84a1-c3d6c14856f4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a4e36725-8a52-8adb-beff-a48991288041` · `pnpm readme` · `pnpm computed:check`</sub>

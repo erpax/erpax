@@ -3,15 +3,15 @@
 
 # followup
 
-path `followup` · uuid `bb9705cf-fc3a-822d-87c7-930f8a1499f7` · diamond `ef264f02-2d13-8abd-b20b-fa82067dbc49`
+path `followup` · uuid `bb9705cf-fc3a-822d-87c7-930f8a1499f7` · diamond `4a3de676-dde9-8f9e-b66b-e79876d551a9`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports followup · escapes —
-links `2/2` · folded `1` · bonds in `8` out `8`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → calendars·cohort·landmarks·learning·memories·saturday·standards·stat · ← calendars·cohort·landmarks·learning·memories·saturday·standards·stat
+neighbors → law·thing · ← law·thing
 analysis —
 law followup is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `ac2209b0-7511-8092-8819-8c6ec912b3f9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `402e5735-5e39-8f2e-9719-01bcfe4a41f5` · `pnpm readme` · `pnpm computed:check`</sub>

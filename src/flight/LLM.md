@@ -3,15 +3,15 @@
 
 # flight
 
-path `flight` · uuid `76b4b0b8-6a23-8d58-a525-b914f84fbf53` · diamond `27f9a7ed-4aaa-8c25-84a6-8967167b12dd`
+path `flight` · uuid `76b4b0b8-6a23-8d58-a525-b914f84fbf53` · diamond `0c753ebb-bfc0-8dcf-8bef-a22f697bba22`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports distance·duration·estimated·law·number·reservation · exports flight · escapes —
-links `6/6` · folded `1` · bonds in `45` out `45`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·atom·balance·base·borrow·breakfast·catalogue·chat·clip·comment·crest·dropoff·editor·encodes·euenergy·getting·golf·grantee·homeopathic·honorific·hooks·idempotency·infectious·landmarks·locations·maintainer·makes·marine·nonprofit527·oid·partial·permaculture·received·risks·saturday·scorecard·sell·society·solve·statistics·syllabus·territory·tour·voting·width · ← accounting·atom·balance·base·borrow·breakfast·catalogue·chat·clip·comment·crest·dropoff·editor·encodes·euenergy·getting·golf·grantee·homeopathic·honorific·hooks·idempotency·infectious·landmarks·locations·maintainer·makes·marine·nonprofit527·oid·partial·permaculture·received·risks·saturday·scorecard·sell·society·solve·statistics·syllabus·territory·tour·voting·width
+neighbors → distance·duration·estimated·law·number·reservation · ← distance·duration·estimated·law·number·reservation
 analysis —
 law flight is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `b3c2c7df-d628-8c90-857b-26b52e8c920c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0b9fa7df-e398-8bea-b669-c40dfdd42538` · `pnpm readme` · `pnpm computed:check`</sub>

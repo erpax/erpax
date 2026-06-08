@@ -23,7 +23,21 @@
 
 - partition `comic` · sub-root `8e1b204a-5c82-8f1c-a5fc-eb8d32c6b244`
 - bond degree `32` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `32` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `60804bef-9f62-8839-ac88-ba8a03235af4` · framed by typography partition `comic` bonds `32` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `55a83fbb-388a-8c97-9318-dba93866c1d8` · framed by typography partition `comic` bonds `32` · `pnpm readme` · `pnpm readme:check`</sub>

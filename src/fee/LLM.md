@@ -3,15 +3,15 @@
 
 # fee
 
-path `fee` · uuid `635afee1-f847-8b17-93d5-38d7d1fafdfc` · diamond `7d48da84-6d28-86fb-9477-4f17dcdb0e4e`
+path `fee` · uuid `635afee1-f847-8b17-93d5-38d7d1fafdfc` · diamond `5bd3cf5e-c495-8b19-871b-a6e5e6e036c5`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·restocking·sti · exports fee · escapes —
-links `5/5` · folded `1` · bonds in `4` out `4`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·restocking·sti · ← collapse·law·merge·restocking·sti
 analysis —
 law fee is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `3a386d3a-d20e-848d-8dec-8d301a0b18e9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3fa6865d-5fbe-8b7d-8a41-3fb9889dbe34` · `pnpm readme` · `pnpm computed:check`</sub>

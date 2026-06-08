@@ -3,15 +3,15 @@
 
 # failed
 
-path `failed` · uuid `0ac355ee-2664-854f-9acd-0765831ddaac` · diamond `592c6165-31ba-8893-aea9-f66f523e2c8a`
+path `failed` · uuid `0ac355ee-2664-854f-9acd-0765831ddaac` · diamond `9e385731-2752-8559-97c4-55e0a2bfa4c4`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports failed · escapes —
-links `4/4` · folded `1` · bonds in `6` out `6`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·saturday·stat·ultrasound · ← cohort·landmarks·memories·saturday·stat·ultrasound
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law failed is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `f1c8ce21-cf59-8fc1-97f9-9f57bcc8072b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a3a50166-147b-8204-9c64-e031efc1321c` · `pnpm readme` · `pnpm computed:check`</sub>

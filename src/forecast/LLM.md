@@ -3,15 +3,15 @@
 
 # forecast
 
-path `forecast` · uuid `4f60e0f0-81e7-84e4-a12d-6050a4994a4f` · diamond `73392409-f510-843b-87e8-ff0b70aeafc8`
+path `forecast` · uuid `4f60e0f0-81e7-84e4-a12d-6050a4994a4f` · diamond `57c603e7-cdd1-8a45-8b6d-d0991b428087`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports aggregation·customers·law·opportunities·pipeline·revenue·territory · exports forecast · escapes —
-links `7/7` · folded `1` · bonds in `11` out `11`
+links `7/7` · folded `1` · bonds in `20` out `20`
 faces worker·plugin·pwa `0·0·0`
-neighbors → boltzmann·closing·cohort·en13402·festival·landmarks·memories·registered·sanitization·stat·varies · ← boltzmann·closing·cohort·en13402·festival·landmarks·memories·registered·sanitization·stat·varies
+neighbors → aggregation·agriculture·biomass·breed·budgetvariance·churn·cropplan·degreeday·enterprisebudget·estimate·forestry·funnel·law·opportunities·orders·pipeline·quota·revenue·territory·upsell · ← aggregation·agriculture·biomass·breed·budgetvariance·churn·cropplan·degreeday·enterprisebudget·estimate·forestry·funnel·law·opportunities·orders·pipeline·quota·revenue·territory·upsell
 analysis —
 law a forecast is a projection, never a commitment — each amount is the deal value weighted by its probability and stage, so the total is provisional until the close date resolves it to won or lost.
 
 ---
 
-<sub>content-uuid `df1067eb-f2c9-8f4c-b2a8-0feeb9e56e0f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `671921d7-7bc7-888f-90e6-b27ce0a8cdec` · `pnpm readme` · `pnpm computed:check`</sub>

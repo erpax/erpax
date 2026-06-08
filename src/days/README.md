@@ -23,7 +23,7 @@
 
 - partition `days` · sub-root `836ae87d-0d03-8c78-9dd1-3aaec443666b`
 - bond degree `28` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `08417410-9529-8662-a45d-0e6296f0598e`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `9c3db5f7-e661-819e-9e5a-57401429f8f9` · framed by typography partition `days` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f30fe750-6ae5-8cf7-8351-a14e3248f64f` · framed by typography partition `days` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>

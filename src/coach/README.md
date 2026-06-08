@@ -23,7 +23,21 @@
 
 - partition `coach` · sub-root `75c376eb-5dc1-8940-8dcb-6b9d820b9ee9`
 - bond degree `7` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `7` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `33561c11-3159-822a-a144-940a14c817c6` · framed by typography partition `coach` bonds `7` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `5e75caa1-9745-8472-8fbc-293ae34c04b9` · framed by typography partition `coach` bonds `7` · `pnpm readme` · `pnpm readme:check`</sub>

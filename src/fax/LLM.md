@@ -3,15 +3,15 @@
 
 # fax
 
-path `fax` · uuid `a0702d8b-52b9-852a-8576-606bbcbfcb26` · diamond `86f6b363-0942-8213-8dcb-42baa6d08b6c`
+path `fax` · uuid `a0702d8b-52b9-852a-8576-606bbcbfcb26` · diamond `545f5c1b-6006-8c7e-8cb2-777ad5b79ccf`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·number·sti · exports fax · escapes —
-links `5/5` · folded `1` · bonds in `25` out `31`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → angel·atom·balance·corrects·corrects·dropoff·dropoff·entertainment·entertainment·fat·fat·fax·fax·fields·friday·grant·header·import·joint·landmarks·landmarks·list·literature·log·marine·memories·postings·progression·qualification·symbol·symbol · ← angel·atom·balance·corrects·dropoff·entertainment·fat·fat·fax·fax·fields·friday·grant·header·import·joint·landmarks·list·literature·log·marine·memories·progression·qualification·symbol
+neighbors → collapse·law·merge·number·sti · ← collapse·law·merge·number·sti
 analysis —
 law fax is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `50ae4f0a-bddd-8713-b51d-e3765b7c2e8a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `45642d1d-ad93-8d91-ab92-22aff9834ca1` · `pnpm readme` · `pnpm computed:check`</sub>

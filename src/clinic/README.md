@@ -23,7 +23,21 @@
 
 - partition `clinic` · sub-root `8501af6c-e673-8e5a-8fa4-7d6cc4c665e3`
 - bond degree `16` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `16` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `e96250c7-3a1f-8b5e-976c-f18facd8c54c` · framed by typography partition `clinic` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `973c1e80-6e3a-8e27-900f-25699990912f` · framed by typography partition `clinic` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

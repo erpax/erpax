@@ -3,15 +3,15 @@
 
 # expressed
 
-path `expressed` · uuid `2d685081-959f-8fdf-9a8c-642c513121aa` · diamond `96d86c2b-e874-83dc-99d3-398fca6cc307`
+path `expressed` · uuid `2d685081-959f-8fdf-9a8c-642c513121aa` · diamond `8f234196-74a7-850e-9de1-f794ed872d5d`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports expressed · escapes —
-links `2/2` · folded `1` · bonds in `4` out `4`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → law·thing · ← law·thing
 analysis —
 law expressed is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `38876d17-3f5a-89a5-bd54-3209f8571fcc` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `fdebad3f-6877-8230-96bf-a284335c1856` · `pnpm readme` · `pnpm computed:check`</sub>

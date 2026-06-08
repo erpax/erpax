@@ -3,15 +3,15 @@
 
 # export
 
-path `export` · uuid `—` · diamond `4d849d00-fee7-8638-9550-faa4936b386b`
-horo `—` `—` · trinity `1·1·1` · sealed `0`
+path `export` · uuid `8bb1642a-b500-8fe1-8b31-f79e1243d0e2` · diamond `6959fc28-aa50-80e8-a4d7-54e5fbe0beca`
+horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports — · exports *:./standards-import·*:./standards.service·barrel·type · escapes —
-links `1/1` · folded `0` · bonds in `0` out `0`
+links `1/1` · folded `1` · bonds in `7` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
-analysis diamond·hallucination·purity·quantum/boundary
+neighbors → boundary·convention·duality·entanglement·exported·law·law·tamper · ← boundary·convention·duality·entanglement·exported·law·tamper
+analysis quantum/boundary
 law barrel re-export at `@/export`; trinity sealed for import purity.
 
 ---
 
-<sub>content-uuid `3d5ba953-d631-81e8-8481-accb06e0b0c2` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `16c1f4e4-8f44-8f41-99ea-ef6a4b4f3a34` · `pnpm readme` · `pnpm computed:check`</sub>

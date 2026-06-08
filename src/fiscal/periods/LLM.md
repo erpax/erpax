@@ -3,15 +3,15 @@
 
 # periods
 
-path `fiscal/periods` · uuid `5a460662-0765-8b8e-adb7-2e6d1a33202d` · diamond `903d330e-c148-8eec-99af-5cd004456616`
+path `fiscal/periods` · uuid `5a460662-0765-8b8e-adb7-2e6d1a33202d` · diamond `d51aabd9-efef-844e-b213-1e319e3dd43a`
 horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports @/audit/trail/after/change·@/auth·@/auto/populate/tenant·@/enforce/segregation/of/duty · exports const · escapes —
-links `6/6` · folded `1` · bonds in `7` out `7`
+links `6/6` · folded `1` · bonds in `12` out `13`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·commitment·interest·landmarks·lend·tour·workspace · ← accounting·commitment·interactive·landmarks·lend·tour·workspace
+neighbors → accounting·accrual·adjustments·events·law·law·periods·periods·quota·rest·share·shares·snapshots · ← accounting·accrual·adjustments·events·law·periods·periods·quota·rest·share·shares·snapshots
 analysis —
 law a fiscal period moves open → closed → locked and never backward freely — once locked, GL writes are blocked, and every transition requires four-eyes segregation (closer ≠ creator, locker ≠ creator); the accounting calendar is a gated lifecycle, not a free date range.
 
 ---
 
-<sub>content-uuid `6d1bddd5-fbe9-846d-a667-ac11724fd2b5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `cdd0545d-4e5d-88d1-9feb-07ab1a81402f` · `pnpm readme` · `pnpm computed:check`</sub>

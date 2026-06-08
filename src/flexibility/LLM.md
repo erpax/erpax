@@ -3,15 +3,15 @@
 
 # flexibility
 
-path `flexibility` · uuid `c7245076-9671-8704-9514-7da52dce3960` · diamond `b0f8666b-10de-80ac-b488-db72c75d6131`
+path `flexibility` · uuid `c7245076-9671-8704-9514-7da52dce3960` · diamond `d50d54fa-ede1-89bd-9f9d-d94297a2bef2`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports flexibility · escapes —
-links `4/4` · folded `1` · bonds in `2` out `2`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law flexibility is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `96bf29e1-d099-85d7-a59f-2a05e4069b38` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `6a8f5572-2a54-82d4-9c0a-7ed2c8279ebb` · `pnpm readme` · `pnpm computed:check`</sub>

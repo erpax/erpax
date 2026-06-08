@@ -3,15 +3,15 @@
 
 # extended
 
-path `extended` · uuid `96125ab2-a5e7-8671-bdbd-25eaa2fb80ab` · diamond `b8e2af48-0d78-8116-b916-4f3c81aaa68f`
+path `extended` · uuid `96125ab2-a5e7-8671-bdbd-25eaa2fb80ab` · diamond `d903cff2-4403-8094-8d3b-47bb34bbf669`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports address·collapse·law·merge·sti · exports extended · escapes —
-links `5/5` · folded `1` · bonds in `10` out `10`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·countries·covered·declarations·iata·landmarks·memories·paperback·stat·temporarily · ← cohort·countries·covered·declarations·iata·landmarks·memories·paperback·stat·temporarily
+neighbors → address·collapse·law·merge·sti · ← address·collapse·law·merge·sti
 analysis —
 law extended is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `42a3782f-97f2-8fd3-b4aa-fc5961531a11` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `370c2313-14c8-8603-be8f-4a96b3168672` · `pnpm readme` · `pnpm computed:check`</sub>

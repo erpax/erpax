@@ -3,15 +3,15 @@
 
 # extent
 
-path `extent` · uuid `9cccacd1-d699-8492-9e21-78eec9e74314` · diamond `684951e3-f303-8dab-aeb4-939671d14050`
+path `extent` · uuid `9cccacd1-d699-8492-9e21-78eec9e74314` · diamond `64cd6485-f430-81bb-a9b9-48adb032066f`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·material·merge·sti · exports extent · escapes —
-links `5/5` · folded `1` · bonds in `7` out `7`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → check·cohort·documentation·landmarks·memories·plugins·stat · ← check·cohort·documentation·landmarks·memories·plugins·stat
+neighbors → collapse·law·material·merge·sti · ← collapse·law·material·merge·sti
 analysis —
 law extent is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `c649b0b5-1c0c-8448-8550-ddc47acff905` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e17cbf67-1e18-89d5-b6a6-c8934f1d42f1` · `pnpm readme` · `pnpm computed:check`</sub>

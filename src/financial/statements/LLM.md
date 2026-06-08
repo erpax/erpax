@@ -3,15 +3,15 @@
 
 # statements
 
-path `financial/statements` · uuid `f3831dc7-ef5c-8890-a515-6fde9703b11d` · diamond `4483ac72-2b09-83cb-94f0-80003f74402e`
+path `financial/statements` · uuid `f3831dc7-ef5c-8890-a515-6fde9703b11d` · diamond `29b787bd-2f1d-878d-8bfc-16376b5b0755`
 horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports @/auth·@/auto/set/timestamp·@/base/accounting/field·@/enforce/segregation/of/duty·@/standard/collection/hook · exports default · escapes —
-links `8/8` · folded `1` · bonds in `5` out `5`
+links `8/8` · folded `1` · bonds in `17` out `23`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stages·stat · ← cohort·landmarks·memories·stages·stat
+neighbors → accounting·accounting·anchor·balance·budgetvariance·disclosure·hedge·horo·horo·identity·identity·law·law·materiality·proof·proof·reconciliations·segment·standard·standard·transaction·transaction·variance · ← accounting·anchor·balance·budgetvariance·disclosure·hedge·horo·identity·law·materiality·proof·reconciliations·reconciliations·segment·standard·transaction·variance
 analysis —
 law every period-end statement is derived from the [[balance]]d ledger under IAS-1/IFRS-18, and the preparer can never be the certifier (SOX §302 segregation) — the statement is generated, not asserted.
 
 ---
 
-<sub>content-uuid `16aed886-2537-845b-8553-b0c1281ef8b4` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `41e2ff83-e2b5-8902-9684-f65f44504534` · `pnpm readme` · `pnpm computed:check`</sub>

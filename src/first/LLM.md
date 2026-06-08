@@ -3,15 +3,15 @@
 
 # first
 
-path `first` · uuid `2a5b3690-eed8-824a-b2ed-4fb2fabf31cf` · diamond `16f262a1-b2f7-87ef-96cb-d5f24ac3b756`
+path `first` · uuid `2a5b3690-eed8-824a-b2ed-4fb2fabf31cf` · diamond `141638a2-2312-8e2c-93f5-0f2fd3cc85ba`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports appearance·collapse·date·law·merge·performance·registered·sti·vehicle · exports first · escapes —
-links `9/9` · folded `1` · bonds in `12` out `13`
+links `9/9` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·accrual·events·first·first·horo·landmarks·landmarks·milestones·period·resizable·sales·typography · ← accounting·accrual·events·first·first·horo·landmarks·milestones·period·resizable·sales·typography
+neighbors → appearance·collapse·date·law·merge·performance·registered·sti·vehicle · ← appearance·collapse·date·law·merge·performance·registered·sti·vehicle
 analysis —
 law first is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `05b5c336-f168-89e0-8602-5fa0707b3e5a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5c9c1a4c-b6e2-8293-a392-d603617f3705` · `pnpm readme` · `pnpm computed:check`</sub>

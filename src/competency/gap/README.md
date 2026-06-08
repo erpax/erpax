@@ -25,7 +25,23 @@
 
 - partition `competency` · sub-root `56d98736-eb49-897e-8cd6-11a0be1bb1ed`
 - bond degree `30` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ISO 30405:2016 essential-vs-optional (mandatory gating)` · banner
+- `SFIA` · catalogue
+- `SFIA 8 responsibility-levels-1-7 (the shared held/required scale)` · banner
+
+## analytics
+
+- bond degree `30` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `3`
 
 ## identity
 
@@ -41,4 +57,4 @@
 
 ---
 
-<sub>content-uuid `15ba48de-d393-86dd-87cd-88a1bcd5f922` · framed by typography partition `competency` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `53010540-2f03-8e7c-a19c-dacfe99229b9` · framed by typography partition `competency` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,15 +3,15 @@
 
 # fields
 
-path `fields` · uuid `98899790-31b6-84ac-a358-0c0549fc9852` · diamond `f6034016-a68a-83df-a5e8-3e83c98089b2`
+path `fields` · uuid `98899790-31b6-84ac-a358-0c0549fc9852` · diamond `113221f1-01a3-84c2-9881-f5f60a00f765`
 horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports @/fiscal·@/receivable · exports *:../shared/field·createARAnalysisFields·createDueDateField·createInvoiceNumberField·createInvoiceStatusField·createPaymentTermsField·fiscalDeviceNumberField·fiscalQrField·operatorCodeField·saleStatusOptions·unpField · escapes —
-links `10/10` · folded `1` · bonds in `27` out `27`
-faces worker·plugin·pwa `0·0·0`
-neighbors → anchor·balance·biomechnical·consultant·corrects·cross·departure·detected·emr·entertainment·entity·fat·fax·friday·good·grant·landmarks·list·log·memories·notice·quality·range·results·resume·spare·symbol · ← anchor·balance·biomechnical·consultant·corrects·cross·departure·detected·emr·entertainment·entity·fat·fax·friday·good·grant·landmarks·list·log·memories·notice·quality·range·results·resume·spare·symbol
+links `10/10` · folded `1` · bonds in `108` out `106`
+faces worker·plugin·pwa `1·0·0`
+neighbors → access·account·accounting·active·activities·adjustments·amount·approved·assets·atom·audit·bank·base·batches·cardinality·carriers·cases·centers·chat·code·collections·comment·commerce·connections·constraint·coordinate·currency·database·date·declarations·defence·definitions·description·diamond·dimension·disclosures·education·events·factory·field·fractal·gap·health·hooks·identifier·identity·instances·items·justice·law·lexical·localize·manufacturing·measure·memories·messages·metadata·milestones·models·name·nullability·number·operations·optimize·packages·part·party·payload·period·perspective·pipelines·plans·port·primitive·queries·quotes·rate·rates·reason·receipts·records·recover·returns·reviews·schema·sectors·segments·skills·source·start·status·sti·submissions·tags·tax·terminals·time·torus·total·translations·type·users·value·variances·variants·whole · ← access·account·accounting·active·activities·adjustments·amount·approved·assets·assets·atom·audit·bank·base·batches·cardinality·carriers·cases·centers·chat·code·collections·comment·commerce·connections·constraint·coordinate·currency·database·date·declarations·defence·definitions·description·diamond·dimension·disclosures·education·events·factory·field·fractal·gap·health·hooks·identifier·identity·instances·items·justice·law·lexical·localize·manufacturing·measure·memories·messages·metadata·metadata·milestones·models·name·nullability·number·operations·optimize·packages·part·party·payload·period·perspective·pipelines·plans·port·primitive·queries·quotes·rate·rates·reason·receipts·records·recover·returns·reviews·schema·sectors·segments·skills·source·start·status·sti·submissions·tags·tax·terminals·time·torus·total·translations·type·users·value·variances·variants·whole
 analysis —
 law a field defines the document schema and auto-generates the admin UI from one definition — every field has a `type`, data fields a `name` unique at their level; the schema and its UI never drift because they are the same source.
 
 ---
 
-<sub>content-uuid `8ebdad8a-5324-8259-9b8d-5ff9b48c1d98` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `59c6fcf1-3370-88f6-b608-643f61f47e27` · `pnpm readme` · `pnpm computed:check`</sub>

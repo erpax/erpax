@@ -3,15 +3,15 @@
 
 # fiber
 
-path `fiber` · uuid `c15c10ef-de6b-85a6-b818-bc46b5294f3a` · diamond `afb0e768-d286-8ff0-95bd-67b7192b74d5`
+path `fiber` · uuid `c15c10ef-de6b-85a6-b818-bc46b5294f3a` · diamond `c7e1aa27-e808-8da6-816a-a5f25ab5d741`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·content·law·merge·sti · exports fiber · escapes —
-links `5/5` · folded `1` · bonds in `6` out `6`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → account·action·cohort·landmarks·memories·stat · ← account·action·cohort·landmarks·memories·stat
+neighbors → collapse·content·law·merge·sti · ← collapse·content·law·merge·sti
 analysis —
 law fiber is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `f43b247f-7780-84ed-adec-870b69735bbf` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3368365d-5656-832a-bab0-c0e25a2acd91` · `pnpm readme` · `pnpm computed:check`</sub>

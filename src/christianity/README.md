@@ -23,7 +23,21 @@
 
 - partition `christianity` · sub-root `b6a3ced0-08b4-845b-b6b5-b4ed50e046be`
 - bond degree `92` · analysis neighbors `diamond`
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `92` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `d81b50a7-38d6-870a-a057-c8fc2167afde` · framed by typography partition `christianity` bonds `92` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `13ceab72-d422-8289-9984-9077f9810f4d` · framed by typography partition `christianity` bonds `92` · `pnpm readme` · `pnpm readme:check`</sub>

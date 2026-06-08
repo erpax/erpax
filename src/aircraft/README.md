@@ -23,7 +23,7 @@
 
 - partition `aircraft` · sub-root `458aa72f-43cc-8633-b2e5-5c9ba8ea2a0a`
 - bond degree `9` · analysis neighbors —
-- graph root `1c65e160-5137-86a1-ad8e-dc86b0e96873`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `c9cb9191-0e7e-8674-817c-8a0dda28ae7e` · framed by typography partition `aircraft` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f70875a5-5293-81a8-88e2-c2417aa67b7d` · framed by typography partition `aircraft` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>

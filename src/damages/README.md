@@ -23,7 +23,7 @@
 
 - partition `damages` · sub-root `92bec025-ab35-8ed8-8c9e-38bad155af85`
 - bond degree `20` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `08417410-9529-8662-a45d-0e6296f0598e`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `850c01ba-d628-8436-8236-dec4b7f45916` · framed by typography partition `damages` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b34993c6-6e96-81c9-b234-24351b760855` · framed by typography partition `damages` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>

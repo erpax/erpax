@@ -3,15 +3,15 @@
 
 # fodder
 
-path `fodder` · uuid `d7932f29-d4d5-80f2-b945-bf2b8dca89b7` · diamond `d2b5a023-e1ba-8272-8f39-7acc92526fa0`
+path `fodder` · uuid `d7932f29-d4d5-80f2-b945-bf2b8dca89b7` · diamond `336e8c9c-5b60-8430-ae10-b461260ac984`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports animal·conversion·cost·grazing·harvest·herd·law·livestock·manufacturing·postharvest·rate·throughput · exports fodder · escapes —
-links `29/29` · folded `1` · bonds in `2` out `2`
+links `29/29` · folded `1` · bonds in `13` out `13`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → animal·conversion·cost·grazing·harvest·herd·law·livestock·manufacturing·manure·postharvest·rate·throughput · ← animal·conversion·cost·grazing·harvest·herd·law·livestock·manufacturing·manure·postharvest·rate·throughput
 analysis —
 law fodder is feed brought to the [[livestock]] (the harvested twin of [[grazing|grazed forage]]) — the dominant [[cost]] of confined animals, its efficiency the feed-conversion ratio (a [[conversion]] [[rate]]); what is not grazed must be fed.
 
 ---
 
-<sub>content-uuid `c455869a-36d2-8a05-9a43-25773de58648` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ed7ee666-4adf-820e-8706-426dd90a7a0e` · `pnpm readme` · `pnpm computed:check`</sub>

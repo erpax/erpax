@@ -25,7 +25,26 @@
 
 - partition `collections` · sub-root `07381af7-d6db-8776-aed7-1f06a6f441b4`
 - bond degree `162` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `EU-2022/1925` · catalogue
+- `EU-2022/2065` · catalogue
+- `EU-2022/2554` · catalogue
+- `EU-2022/2555` · catalogue
+- `EU-2022/868` · catalogue
+- `ISO/IEC-29119` · catalogue
+
+## analytics
+
+- bond degree `162` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `6`
 
 ## identity
 
@@ -41,4 +60,4 @@
 
 ---
 
-<sub>content-uuid `9a931dc4-a767-86bd-a810-cd7857b71e10` · framed by typography partition `collections` bonds `162` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0a8a530d-f0b7-89ef-bcd6-8a24a7cab503` · framed by typography partition `collections` bonds `162` · `pnpm readme` · `pnpm readme:check`</sub>

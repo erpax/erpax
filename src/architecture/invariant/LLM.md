@@ -3,15 +3,15 @@
 
 # invariant
 
-path `architecture/invariant` · uuid `61bd0ffc-6f67-8e33-a7a8-0daac8500f88` · diamond `48eb4e7a-d2ad-80eb-b240-307361658d61`
-horo `2` `share` · trinity `1·1·1` · sealed `1`
+path `architecture/invariant` · uuid `66fe5a3e-24bf-891a-bead-173fbb6a8ec8` · diamond `9fd0222a-c275-81ee-9766-bf3114986bad`
+horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports — · exports InvariantAxis·InvariantContext·InvariantResult·InvariantSeverity·InvariantSuiteResult·LAW_CATALOG·TRINITY·async·buildAgentLawProfile·buildAllAgentLawProfiles·checkAgentLawCoverage·function·inferEmittedEffectKinds·rollUpToTrinity·runInvariantsAtBoot·trinityForPriorLaw·trinityGrouping·type · escapes —
-links `21/21` · folded `1` · bonds in `11` out `11`
+links `21/21` · folded `1` · bonds in `13` out `13`
 faces worker·plugin·pwa `0·0·0`
-neighbors → aura·balance·coordinate·dissolve·gate·identity·merge·payload·sequence·standard·vitepress · ← aura·balance·coordinate·dissolve·gate·identity·merge·payload·sequence·standard·vitepress
+neighbors → architecture·aura·balance·coordinate·diamond·dissolve·gate·identity·merge·payload·sequence·standard·vitepress · ← architecture·aura·balance·coordinate·diamond·dissolve·gate·identity·merge·payload·sequence·standard·vitepress
 analysis aura·diamond
 law —
 
 ---
 
-<sub>content-uuid `8579adcf-1730-8495-9334-14d29b056112` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a3f028e5-5427-8100-98dd-0528d50e5501` · `pnpm readme` · `pnpm computed:check`</sub>
