@@ -28,6 +28,7 @@ describe('confirm:uuid — substrate-independent gate stack (no Payload typegen)
       'gateReadme',
       'gateBoundary',
       'gateDiamond',
+      'gateDiamondFiles',
       'gateCloudflareAi',
       'gateTypography',
     ]) {
@@ -46,6 +47,7 @@ describe('confirm:uuid — substrate-independent gate stack (no Payload typegen)
       'gateReadme',
       'gateBoundary',
       'gateDiamond',
+      'gateDiamondFiles',
       'gateCloudflareAi',
       'gateTypography',
     ]) {

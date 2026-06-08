@@ -15,6 +15,11 @@
 #
 # Bypass: git push --no-verify
 #
+# UUID-only alternative (when payload generate:types is an environmental blocker):
+#   pnpm confirm:uuid          # content-address seal — no Payload typegen
+#   bash scripts/pre-push-uuid.sh   # same gate, explicit script
+# The full pre-push stack below still requires payload-verify-types.sh.
+#
 # @standard ISO 19011:2018 §6.4.6 audit-trail self-heal-visible-in-git-log
 # @standard ISO/IEC 25010:2023 §5.5 testability + §5.7 reusability
 # @audit deterministic-regeneration-of-artefacts-only

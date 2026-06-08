@@ -12,6 +12,7 @@
 //   node scripts/confirm.mjs <file...>     scoped, fast, in-process (per-edit confirm)
 //   node scripts/confirm.mjs --hook        read PostToolUse JSON on stdin, scope to the edited file
 //   node scripts/confirm.mjs --full        whole-corpus + the build lane; a true SUPERSET of `pnpm check`
+//   pnpm confirm:uuid                      uuid-pure stack in src/confirm/index.ts (no Payload typegen)
 //                                          (so confirm-green now implies CI-green, not docs-only-green)
 //
 // Exit 0 only when ALL lanes confirm. In --hook mode a real failure exits 2 (surfaced to the agent).

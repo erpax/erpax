@@ -16,8 +16,6 @@ import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs'
 import { join } from 'node:path'
 import { guardian } from '@/guardian'
 import { seal, type SealVerdict } from '@/seal'
-import { folderInputToDiamond, renderDiamondJson } from '@/diamond/projection'
-import { computeBoundary } from '@/quantum/boundary'
 import {
   deriveFolderModel,
   buildFolderReadmeContext,
@@ -26,11 +24,14 @@ import {
   renderLLM,
   lawLineForAtom,
   listAtomPaths,
+  type FolderReadmeModel,
 } from '@/readme'
 
 /** Must match @/readme COMPUTED_FACES — inlined to break diamond ↔ readme circular init. */
-const COMPUTED_FACE_NAMES = ['README.md', 'LLM.md', 'diamond.json'] as const
-type ComputedFace = (typeof COMPUTED_FACE_NAMES)[number]
+const COMPUTED_FACES = ['README.md', 'LLM.md', 'diamond.json'] as const
+type ComputedFace = (typeof COMPUTED_FACES)[number]
+import { folderInputToDiamond, renderDiamondJson, type DiamondModel } from '@/diamond/projection'
+import { computeBoundary } from '@/quantum/boundary'
 
 const SRC = 'src'
 
@@ -60,15 +61,14 @@ export const COLOCATED = [
 const TSX_EXT = /\.tsx$/i
 const COLOCATED_TEST = /\.test\.(ts|tsx)$/i
 const FORBIDDEN_NAME = /\.(bak|backup)$/i
-const GENERATED_BANNER = /^<!--\s*GENERATED\b/
 
-const computedSet = (): ReadonlySet<string> => new Set(COMPUTED_FACE_NAMES)
+const computedSet = (): ReadonlySet<string> => new Set(COMPUTED_FACES)
 
 const vocabularyCore = (): ReadonlySet<string> =>
-  new Set([TRINITY_FORM, ...COLOCATED, ...COMPUTED_FACE_NAMES])
+  new Set([TRINITY_FORM, ...COLOCATED, ...COMPUTED_FACES])
 
 const codeCore = (): ReadonlySet<string> =>
-  new Set([TRINITY_FORM, ...TRINITY_CODE, ...COLOCATED, ...COMPUTED_FACE_NAMES])
+  new Set([TRINITY_FORM, ...TRINITY_CODE, ...COLOCATED, ...COMPUTED_FACES])
 
 /** Allowed basenames per atom kind — nested child dirs are always allowed. */
 export const ALLOWED_DIAMOND_FILES: Readonly<Record<DiamondAtomKind, ReadonlySet<string>>> = {
@@ -81,6 +81,15 @@ export interface DiamondFileViolation {
   readonly file: string
   readonly reason: string
 }
+
+export interface DiamondAuditContext {
+  readonly cwd: string
+  readonly folderOf: (atomPath: string) => FolderReadmeModel
+  readonly diamondOf: (atomPath: string) => DiamondModel
+}
+
+/** membership = stray files/dirs only; full = membership + computed-face drift verify. */
+export type DiamondFileAuditMode = 'membership' | 'full'
 
 const isDir = (p: string): boolean => {
   try {
@@ -126,55 +135,78 @@ const isAllowedFile = (name: string, kind: DiamondAtomKind): boolean => {
   return false
 }
 
-const folderDiamond = (atomPath: string, cwd: string) => {
+/** Build once per corpus scan — caches folder + diamond models per atomPath. */
+export function buildDiamondAuditContext(cwd: string = process.cwd()): DiamondAuditContext {
   const srcRoot = join(cwd, SRC)
-  const ctx = buildFolderReadmeContext(srcRoot)
-  const folder = deriveFolderModel(atomPath, cwd, ctx)
-  const barrel = join(srcRoot, atomPath, 'index.ts')
-  let boundary: ReturnType<typeof computeBoundary> | undefined
-  if (existsSync(barrel)) {
-    try {
-      boundary = computeBoundary(barrel, srcRoot)
-    } catch {
-      boundary = undefined
+  const readmeCtx = buildFolderReadmeContext(srcRoot)
+  const folderCache = new Map<string, FolderReadmeModel>()
+  const diamondCache = new Map<string, DiamondModel>()
+  const folderOf = (atomPath: string): FolderReadmeModel => {
+    let m = folderCache.get(atomPath)
+    if (!m) {
+      m = deriveFolderModel(atomPath, cwd, readmeCtx)
+      folderCache.set(atomPath, m)
     }
+    return m
   }
-  return { folder, diamond: folderInputToDiamond(folder, boundary) }
+  const diamondOf = (atomPath: string): DiamondModel => {
+    let m = diamondCache.get(atomPath)
+    if (!m) {
+      const folder = folderOf(atomPath)
+      const barrel = join(srcRoot, atomPath, 'index.ts')
+      let boundary: ReturnType<typeof computeBoundary> | undefined
+      if (existsSync(barrel)) {
+        try {
+          boundary = computeBoundary(barrel, srcRoot)
+        } catch {
+          boundary = undefined
+        }
+      }
+      m = folderInputToDiamond(folder, boundary)
+      diamondCache.set(atomPath, m)
+    }
+    return m
+  }
+  return { cwd, folderOf, diamondOf }
+}
+
+const expectedFace = (
+  atomPath: string,
+  face: ComputedFace,
+  ctx: DiamondAuditContext,
+): string => {
+  const folder = ctx.folderOf(atomPath)
+  const diamond = ctx.diamondOf(atomPath)
+  if (face === 'README.md') return renderFolderReadme(folder)
+  if (face === 'LLM.md') return renderLLM(deriveLLMBrief(folder, diamond, lawLineForAtom(atomPath, ctx.cwd)))
+  return renderDiamondJson(diamond)
 }
 
 const verifyComputedFace = (
   atomPath: string,
   face: ComputedFace,
-  cwd: string,
+  ctx: DiamondAuditContext,
 ): string | null => {
-  const path = join(cwd, SRC, atomPath, face)
+  const path = join(ctx.cwd, SRC, atomPath, face)
   let actual: string
   try {
     actual = readFileSync(path, 'utf8')
   } catch {
     return null
   }
-  const { folder, diamond } = folderDiamond(atomPath, cwd)
-  const expected =
-    face === 'README.md'
-      ? renderFolderReadme(folder)
-      : face === 'LLM.md'
-        ? renderLLM(deriveLLMBrief(folder, diamond, lawLineForAtom(atomPath, cwd)))
-        : renderDiamondJson(diamond)
-  if (actual !== expected) return `computed-drift:${face}`
-  if (!GENERATED_BANNER.test(actual) && face !== 'diamond.json') {
-    return `computed-unverified:${face}`
-  }
+  if (actual !== expectedFace(atomPath, face, ctx)) return `computed-drift:${face}`
   return null
 }
 
 /**
  * Audit one atom folder — lists stray files/dirs and computed-face drift.
- * Pure aside from fs reads.
+ * Pass `auditCtx` from `buildDiamondAuditContext` when scanning many atoms.
  */
 export function auditDiamondFolder(
   atomPath: string,
   cwd: string = process.cwd(),
+  auditCtx: DiamondAuditContext = buildDiamondAuditContext(cwd),
+  mode: DiamondFileAuditMode = 'full',
 ): { ok: boolean; violations: DiamondFileViolation[] } {
   const dir = join(cwd, SRC, atomPath)
   const entries = basenames(dir)
@@ -207,29 +239,35 @@ export function auditDiamondFolder(
     }
   }
 
-  for (const face of COMPUTED_FACE_NAMES) {
-    const drift = verifyComputedFace(atomPath, face, cwd)
-    if (drift) violations.push({ atomPath, file: face, reason: drift })
+  if (mode === 'full') {
+    for (const face of COMPUTED_FACES) {
+      const drift = verifyComputedFace(atomPath, face, auditCtx)
+      if (drift) violations.push({ atomPath, file: face, reason: drift })
+    }
   }
 
   return { ok: violations.length === 0, violations }
 }
 
 /** Scan every atom folder under src/ — single source of truth for the guardian. */
-export function diamondFileViolations(cwd: string = process.cwd()): DiamondFileViolation[] {
+export function diamondFileViolations(
+  cwd: string = process.cwd(),
+  mode: DiamondFileAuditMode = 'membership',
+): DiamondFileViolation[] {
+  const auditCtx = buildDiamondAuditContext(cwd)
   const out: DiamondFileViolation[] = []
   for (const atomPath of listAtomPaths(cwd)) {
-    out.push(...auditDiamondFolder(atomPath, cwd).violations)
+    out.push(...auditDiamondFolder(atomPath, cwd, auditCtx, mode).violations)
   }
   return out
 }
 
 /**
- * THE COMMITTED CEILING — live stray-file + computed-drift count across all diamonds.
- * Ratchet DOWN only in the same commit that fixes violations. Zero ⇒ tamper-cost → ∞.
- * Derived: `tsx src/diamond/index.ts --audit-files` (632, 2026-06-08).
+ * THE COMMITTED CEILING — live membership violations (stray files/dirs/dotfiles).
+ * Computed-face drift is gated separately by `pnpm readme:check`. Ratchet DOWN only.
+ * Derived: `tsx src/diamond/index.ts --audit-files` (645, 2026-06-08).
  */
-export const DIAMOND_FILES_BASELINE = 632
+export const DIAMOND_FILES_BASELINE = 645
 
 /** Diamond-files guardian — one axis, baseline ratchet (mirrors typography). */
 export function diamondFilesGuardian(

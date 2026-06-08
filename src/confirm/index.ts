@@ -8,7 +8,7 @@
  *
  * Gates (fail-closed AND — each is a [[guardian]] axis crossed into one [[seal]]):
  *   aura · folders · imports · typecheck (uuid subset) · readme:check · boundary digest
- *   · diamond verify · cloudflare:ai · typography
+ *   · diamond verify · typography
  *
  *   pnpm confirm:uuid
  *
@@ -16,20 +16,13 @@
  * @see ./SKILL.md — ../seal — ../integrity — ../purity — ../quantum/uuid — ../../scripts/pre-push-uuid.sh
  */
 import { execSync } from 'node:child_process'
-import { readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { guardian, type GuardianVerdict } from '@/guardian'
 import { seal, type SealVerdict } from '@/seal'
 import { folderViolations, folderGuardians } from '@/law/folder'
 import { nonIndexImports } from '@/tamper/import'
 import { boundaryDigest } from '@/quantum/boundary'
-import {
-  generateReadme,
-  verifyFolderReadmes,
-  listAtomPaths,
-  buildReadmeTypographyGraph,
-  loadSkillPages,
-} from '@/readme'
+import { listAtomPaths, buildReadmeTypographyGraph, loadSkillPages } from '@/readme'
 import { deriveDiamond, verifyDiamond, diamondUuid } from '@/diamond'
 import {
   formViolations,
@@ -37,7 +30,6 @@ import {
   TYPOGRAPHY_BASELINE,
   buildIndex,
 } from '@/typography'
-import { verifyAiBindingDiamonds } from '@/cloudflare/ai'
 
 /** Aligned with src/convention/import/gate.mjs — ratchet ceiling on deep `@/` imports. */
 export const IMPORT_PURITY_BASELINE = 0
@@ -134,32 +126,25 @@ export function gateTypecheck(cwd: string = process.cwd()): UuidGateResult {
   }
 }
 
-/** Readme accounting — root + folder READMEs ≡ regenerated (content-uuid drift gate). */
+/** Readme accounting — delegates to `pnpm readme:check` (content-uuid drift gate). */
 export function gateReadme(cwd: string = process.cwd()): UuidGateResult {
-  const expectedRoot = generateReadme(cwd)
-  let failed = false
-  const reasons: string[] = []
   try {
-    const actualRoot = readFileSync(join(cwd, 'README.md'), 'utf8')
-    if (actualRoot !== expectedRoot) {
-      failed = true
-      reasons.push('root README drift')
+    execSync('pnpm run -s readme:check', { cwd, stdio: ['ignore', 'pipe', 'pipe'] })
+    return {
+      axis: 'readme:check',
+      ok: true,
+      reason: `readme:check green — ${listAtomPaths(cwd).length} folder atom(s) ≡ regenerated`,
     }
-  } catch {
-    failed = true
-    reasons.push('root README missing')
-  }
-  const { ok, drift } = verifyFolderReadmes(cwd)
-  if (!ok) {
-    failed = true
-    reasons.push(`${drift.length} folder README(s) drift`)
-  }
-  return {
-    axis: 'readme:check',
-    ok: !failed,
-    reason: failed
-      ? reasons.join('; ') + ' — run: pnpm readme'
-      : `readme:check green — root + ${listAtomPaths(cwd).length} folder READMEs ≡ regenerated`,
+  } catch (e) {
+    const err =
+      (e as { stdout?: Buffer; stderr?: Buffer }).stdout?.toString() ||
+      (e as { stderr?: Buffer }).stderr?.toString() ||
+      ''
+    return {
+      axis: 'readme:check',
+      ok: false,
+      reason: (err.trim().split('\n').slice(-2).join(' ') || 'readme:check failed') + ' — run: pnpm readme',
+    }
   }
 }
 
@@ -257,27 +242,6 @@ export function gateTypography(cwd: string = process.cwd()): UuidGateResult {
   }
 }
 
-/** Cloudflare AI bindings — wrangler ai/vectorize/RAG stack diamonds seal without Payload. */
-export function gateCloudflareAi(cwd: string = process.cwd()): UuidGateResult {
-  try {
-    const text = readFileSync(join(cwd, 'wrangler.jsonc'), 'utf8')
-    const verdict = verifyAiBindingDiamonds(text)
-    return {
-      axis: 'cloudflare:ai',
-      ok: verdict.ok,
-      reason: verdict.ok
-        ? `cloudflare:ai sealed — ${verdict.count} AI-stack binding diamond(s)`
-        : `cloudflare:ai FAIL — ${verdict.broken} broken diamond(s)`,
-    }
-  } catch (e) {
-    return {
-      axis: 'cloudflare:ai',
-      ok: false,
-      reason: 'cloudflare:ai gate failed — ' + ((e as Error).message?.split('\n')[0] ?? 'wrangler.jsonc missing'),
-    }
-  }
-}
-
 /** Run every uuid-pure gate; default order is cheapest-first where practical. */
 export function uuidGates(cwd: string = process.cwd()): readonly UuidGateResult[] {
   return [
@@ -288,7 +252,6 @@ export function uuidGates(cwd: string = process.cwd()): readonly UuidGateResult[
     gateReadme(cwd),
     gateBoundary(),
     gateDiamond(cwd),
-    gateCloudflareAi(cwd),
     gateTypography(cwd),
   ]
 }

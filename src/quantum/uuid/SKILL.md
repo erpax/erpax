@@ -21,4 +21,6 @@ It is *at all quantum scales* because the address is [[fractal]]: the identical 
 
 **Law — [[law]]: the collapse is deterministic and observer-independent — sha-256 measures the same content to the same 128-bit point for every observer, so identity is reproducible rather than assigned, and identical content necessarily merges. Because every atom carries this one address, `content_id` ≡ `contentUuid` ≡ `uuid` names a single thing and the corpus is one entangled body: the id is at once the identity, the capability, the schema, and the colour-plus-sound projection of its content — never an empty label.**
 
-@see [[uuid]] · [[identity]] · [[merge]] · [[quantum/number]] · [[quantum/matrix]] · [[reality]] · [[finality]] · [[signal]] · [[realtime]] · [[memory]] · [[generate]] · [[snapshot]] · [[akashic]] · [[fractal]] · [[holographic]]
+**Law — [[law]]: all is passed with uuids without [[payload]] — the uuid substrate seals and verifies through `pnpm confirm:uuid` alone; backend typegen is a deployment face, not the identity layer.**
+
+@see [[uuid]] · [[identity]] · [[merge]] · [[quantum/number]] · [[quantum/matrix]] · [[reality]] · [[finality]] · [[signal]] · [[realtime]] · [[memory]] · [[generate]] · [[snapshot]] · [[akashic]] · [[fractal]] · [[holographic]] · [[confirm]] · [[payload]] · [[seal]]

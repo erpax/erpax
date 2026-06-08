@@ -1,0 +1,39 @@
+{
+  "extends": "./tsconfig.typecheck.json",
+  "include": [
+    "next-env.d.ts",
+    "payload-next-css.d.ts",
+    "cloudflare-env.d.ts",
+    "src/confirm/**/*.ts",
+    "src/seal/**/*.ts",
+    "src/integrity/**/*.ts",
+    "src/guardian/**/*.ts",
+    "src/law/**/*.ts",
+    "src/typography/**/*.ts",
+    "src/diamond/**/*.ts",
+    "src/readme/**/*.ts",
+    "src/aura/**/*.ts",
+    "src/quantum/**/*.ts",
+    "src/uuid/**/*.ts",
+    "src/tamper/**/*.ts",
+    "src/convention/**/*.ts",
+    "src/purity/**/*.ts",
+    "src/harmony/**/*.ts",
+    "src/equity/**/*.ts",
+    "src/path/**/*.ts",
+    "src/horo/**/*.ts",
+    "src/corpus/**/*.ts",
+    "src/method/**/*.ts",
+    "src/analytics/**/*.ts",
+    "src/hallucination/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "src/**/*.spec.ts",
+    "src/**/*.spec.tsx",
+    "src/app/**",
+    "src/migrations/**",
+    "src/rfc/**",
+    "src/cloudflare/**"
+  ]
+}
