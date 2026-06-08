@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `hackathon` · sub-root `b8219a82-f06a-8db5-a38f-1cd8279ddf96`
-- bond degree `10` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `6` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `b8219a82-f06a-8db5-a38f-1cd8279ddf96`
-- bonds in `4` · out `4`
+- bonds in `2` · out `2`
 - trinity form·code·proof `1`·`0`·`0`
 - links `2` / `2`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `dbd6f7ec-1e1f-8af1-8f03-c3a015346e2f` · framed by typography partition `hackathon` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `cec463b1-3c71-8c18-8024-50a09bd55133` · framed by typography partition `hackathon` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>

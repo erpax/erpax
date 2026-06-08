@@ -8,10 +8,10 @@ horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports halal · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law halal is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `865094a4-be8f-8fb4-8608-9f6b80c2976a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a2bf9cd0-7fd4-8cf0-baf4-046daf43bf69` · `pnpm readme` · `pnpm computed:check`</sub>

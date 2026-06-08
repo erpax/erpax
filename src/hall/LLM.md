@@ -3,15 +3,15 @@
 
 # hall
 
-path `hall` · uuid `752fd298-19b1-844b-9d03-fdddcd409dd4` · diamond `5a675f48-5908-8915-838a-62a199234519`
+path `hall` · uuid `752fd298-19b1-844b-9d03-fdddcd409dd4` · diamond `de26c2ac-4512-89eb-8e27-53040c83e107`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports city·collapse·law·merge·sti · exports hall · escapes —
-links `5/5` · folded `1` · bonds in `10` out `10`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → access·api·auth·best·binding·conference·departure·operation·resume·union · ← access·api·auth·best·binding·conference·departure·operation·resume·union
+neighbors → city·collapse·law·merge·sti · ← city·collapse·law·merge·sti
 analysis —
 law hall is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `b312151b-a0f4-89e7-b02a-fe2ad2a6f75b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3d14b4cc-7a7d-85d2-bfe4-6282efeb1967` · `pnpm readme` · `pnpm computed:check`</sub>

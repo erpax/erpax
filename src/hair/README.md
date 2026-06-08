@@ -23,7 +23,7 @@
 
 - partition `hair` · sub-root `42f3cc99-8633-8891-8833-9e351a0b42c3`
 - bond degree `16` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `454a01d6-4d98-8aa4-91fd-69d5b3ef1b64` · framed by typography partition `hair` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `7ecf295d-5eab-851c-8f7d-1e180e3904cd` · framed by typography partition `hair` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

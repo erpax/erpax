@@ -8,10 +8,10 @@ horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·salon·sti · exports hair · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat·thing · ← cohort·landmarks·memories·stat·thing
+neighbors → collapse·law·merge·salon·sti · ← collapse·law·merge·salon·sti
 analysis —
 law hair is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `2e152a1b-710c-8e26-8720-de7e03c698b0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4f65a1f5-da48-84e2-888f-2451d2c85833` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -23,7 +23,21 @@
 
 - partition `covenant` · sub-root `c6b78778-585b-87c2-b434-95135ee56655`
 - bond degree `45` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `45` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `a23cff0d-1cfb-8528-9b5d-a55ba0815a2a` · framed by typography partition `covenant` bonds `45` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d4169b88-c32d-8f5d-96b4-fa80337e758a` · framed by typography partition `covenant` bonds `45` · `pnpm readme` · `pnpm readme:check`</sub>

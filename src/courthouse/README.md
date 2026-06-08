@@ -23,7 +23,21 @@
 
 - partition `courthouse` · sub-root `61f27c87-bef7-8628-b651-86b7ce5314a7`
 - bond degree `9` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `9` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `6b2c0320-a62b-89e5-9dab-5a070770977b` · framed by typography partition `courthouse` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `eb279f14-dd12-87d3-8456-71ecbc6fd8b3` · framed by typography partition `courthouse` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>

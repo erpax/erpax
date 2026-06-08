@@ -23,7 +23,7 @@
 
 - partition `halal` · sub-root `a6ff38a3-c817-85f6-b232-de360d967caa`
 - bond degree `12` · analysis neighbors —
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `f55aba0d-d6d2-819d-b54d-e1ed7207bb14` · framed by typography partition `halal` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `9a7d8a39-5e8c-8f0d-aa5d-8581418c2d65` · framed by typography partition `halal` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

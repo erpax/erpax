@@ -3,15 +3,15 @@
 
 # hackathon
 
-path `hackathon` · uuid `b8219a82-f06a-8db5-a38f-1cd8279ddf96` · diamond `b1c017bc-ebd1-8335-9383-494b0c6f03ff`
+path `hackathon` · uuid `b8219a82-f06a-8db5-a38f-1cd8279ddf96` · diamond `c80314e7-9772-8929-80e6-f69fbd06c9bd`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports hackathon · escapes —
-links `2/2` · folded `1` · bonds in `4` out `4`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → law·thing · ← law·thing
 analysis —
 law hackathon is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `f0a97802-bf64-87c0-a1f4-0c6b1d3e896c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `672bdcd2-d1c4-851f-8df8-b455e007b9b6` · `pnpm readme` · `pnpm computed:check`</sub>
