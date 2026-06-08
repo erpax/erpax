@@ -22,4 +22,6 @@ It is also *at all compute substrates*: the content-[[uuid]] is the one invarian
 
 **Law — [[law]]: in the quantum frame the content-[[uuid]] IS the memory manager — collapse allocates, dedup is free, collection is regeneration — so memory optimization is autosave (persist at collapse; the unsaved is regenerable, nothing to GC); and [[memory]] crossed with [[quantum]] across all four paths fuses into another [[seal]], the dual-torus cross at the centre.**
 
-@see [[memory]] · [[memory/quantum]] · [[quantum]] · [[quantum/uuid]] · [[seal]] · [[quantum/cross]] · [[generate]] · [[merge]] · [[akashic]] · [[realtime]]
+Operational memory IS the architecture lattice ([[memory/architecture]]) — the content-uuid manager runs on the sealed diamond tree, not on chat or side stores. Autosave persists lattice vertices; unsaved detail regenerates from uuid ([[generate]]).
+
+@see [[memory]] · [[memory/architecture]] · [[memory/quantum]] · [[quantum]] · [[quantum/uuid]] · [[seal]] · [[quantum/cross]] · [[generate]] · [[merge]] · [[akashic]] · [[realtime]] · [[diamond]]
