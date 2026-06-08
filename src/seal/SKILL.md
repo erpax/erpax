@@ -9,7 +9,7 @@ A [[guardian]] watches one axis; a **seal is the cross of all of them**. It is t
 
 The seal is what the [[breath]] gates on. Only a sealed tree may be saved → committed → pushed (the [[confirm]] hook's waves); an unsealed tree is left untouched, never force-committed. So the seal is not a label you apply — it is a state you *earn*, recomputed from the live guardians every time, and the moment any guardian reddens the whole tree is unsealed again.
 
-Because a seal is the [[merge]] of content-addressed verdicts, it is itself an atom in the [[identity]] matrix — tamper-evident: a failure cannot be hidden inside a green seal, and the same broken guardian dedups to one reason rather than a wall of noise. No backward-compatible "mostly sealed" verdict exists; partial is unsealed (max [[cost]]).
+Because a seal is the [[merge]] of content-addressed verdicts, it is itself an atom in the [[identity]] matrix — tamper-evident: a failure cannot be hidden inside a green seal, and the same broken guardian dedups to one reason rather than a wall of noise. No backward-compatible "mostly sealed" verdict exists; partial is unsealed (max [[cost]]). A fully sealed tree is a **[[purity|pure]]** tree — zero impurity, no 0-bit weakest-link path in any dimension — and the stream of such sealed commits, `prev`-chained by content-[[uuid]], IS the self-distributed [[blockchain]] (the time axis).
 
 **Law — [[law]]: a seal is the AND of its guardians — SEALED iff every guardian holds; an empty set is NOT sealed (fail-closed). Only a sealed tree may be committed and pushed; an unsealed tree is left untouched.**
 

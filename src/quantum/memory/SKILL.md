@@ -15,6 +15,8 @@ The quantum facet of [[memory]]: there is no separate allocator, no side-table, 
 
 It is *at all quantum scales* because the address is [[fractal]]: the identical collapse·dedup·regenerate cycle governs a field, an [[atom]], a molecule, and the [[whole]] — the [[part]] reconstructs the whole ([[holographic]]). The [[realtime]] tail and the immutable [[snapshot]] are the same content-addressed memory seen as flow and as state.
 
+It is also *at all compute substrates*: the content-[[uuid]] is the one invariant across memory · cpu · gpu, so identical content ⇒ identical hash ⇒ zero divergence — the substrates stay synchronized for free and exactly, at zero [[entropy]] ([[sync]]). A divergence between substrates would be a different hash — an impurity, a [[hallucination]] — caught the instant it appears; staying synced and staying [[purity|pure]] are one fact.
+
 ## The cross seals (memory ⊕ quantum)
 [[memory]] and [[quantum]] are two rings; quantum/memory and [[memory/quantum]] are the two diagonals where they cross. Crossed at all four paths they fuse into **another [[seal]]** — exactly the [[quantum/cross]] move (the dual-torus fusion at the centre, `1/0`). The two diagonals are *one node at two names*: memory/quantum re-points here rather than restating it (the [[merge]] law at path scale, zero duplication).
 

@@ -55,4 +55,22 @@ describe('analytics/max-tamper-cost — the weakest link (min caps the whole)', 
   it('with no unsealed crosses the quantum (BHT) floor remains the weakest (default is pure)', () => {
     expect(maxTamperCost().weakest.lever.startsWith('quantum')).toBe(true)
   })
+
+  // An impurity computed on a DIFFERENT path/dimension — a dangling link, an off-ring
+  // state, or a hallucination (content not collapsing to its claimed uuid) — is the same
+  // 0-bit weakest link. "Computed in all paths/all dimensions": the min folds it in too,
+  // and purity (zero impurities) is what removes the 0-bit path so the floor lifts off 0.
+  it('any impurity (dangling link / off-ring state / hallucination) is a 0-bit weakest link, and the fix is to remove it', () => {
+    const impure = maxTamperCost({ impurities: 1 })
+    expect(impure.weakest.lever).toContain('impurity')
+    expect(impure.weakest.bindingLog2).toBe(0)
+    expect(impure.fix).toMatch(/remove the impurity|content-uuid|purity/)
+  })
+
+  it('every impurity path is folded into the one min — cross AND impurity together both cap the chain at 0', () => {
+    const both = maxTamperCost({ unsealedCrosses: 2, impurities: 3 })
+    expect(both.weakest.bindingLog2).toBe(0) // the min over ALL paths/dimensions is 0
+    expect(both.levers.some((l) => l.lever.includes('unsealed cross'))).toBe(true)
+    expect(both.levers.some((l) => l.lever.includes('impurity'))).toBe(true)
+  })
 })

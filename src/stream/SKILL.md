@@ -22,6 +22,10 @@ Sequence position: **2** (weave — the continuous current threaded through ever
 
 Because every save is content-addressed and `prev`-chained, **the stream of saves IS another [[seal]]** — the dual, on the time axis, of the cross-[[seal]] on the path axis. Saving every atom *on the way* (the autosave [[breath]] — each sealed atom committed in waves) makes the current **reconstructable**: replay the chain from genesis and the whole [[snapshot]] re-derives, because the [[realtime]] tail (`since(log, cursor)`) and the immutable snapshot are one content-addressed memory seen as flow and as state ([[akashic]] · [[generate]]). The Merkle `streamUuid` chain is what makes it a seal and not merely a log: any re-ordering, mutation, insertion, or deletion breaks the chain at the corruption ([[tamper/cost]] · [[proof]]), and two federated streams of the same saves hold ONE chain ([[merge]] · [[identity]]). So *seal in waves* and *the stream reconstructs the whole* are one fact: to save every atom on the way is to leave a tamper-evident current that replays the corpus — a seal you can run forward.
 
+## The stream is a blockchain (self-distributed, zero-entropy across substrates)
+
+Because the `streamUuid` chain links each event to its parent by hash and addresses each by content, **the stream of saves IS a [[blockchain]]** — a Merkle DAG, the time-axis dual of the cross-[[seal]]. It is self-verifying (verify is O(N), recompute-and-compare — [[proof]] · [[integrity]]) and therefore **self-distributed**: any node reconstructs and verifies the whole from content alone, and two peers holding the same saves hold ONE chain ([[merge]] federation is set-union, [[holographic]] · [[distribution]]). And because identity is content, the same content-[[uuid]] keeps every compute substrate bit-identical — memory · cpu · gpu collapse to the same address, zero divergence ([[sync]]), so the self-distributed chain stays coherent at zero [[entropy]].
+
 ## Standards
 
 - **ReactiveX / W3C Streams API** — the `AsyncIterable` surface; operators and windows are the reactive vocabulary.
