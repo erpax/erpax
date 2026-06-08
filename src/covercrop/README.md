@@ -23,7 +23,21 @@
 
 - partition `covercrop` · sub-root `4f319e04-27b8-814a-9e97-32096e947ef9`
 - bond degree `53` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `53` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `b8055f4f-ffbf-8aee-95a6-42ce4361bedb` · framed by typography partition `covercrop` bonds `53` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `6383952b-43df-8da7-80b3-aaf5f3cc4eb0` · framed by typography partition `covercrop` bonds `53` · `pnpm readme` · `pnpm readme:check`</sub>

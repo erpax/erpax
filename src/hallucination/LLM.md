@@ -3,15 +3,15 @@
 
 # hallucination
 
-path `hallucination` · uuid `—` · diamond `cbef5165-0cd9-86b5-aba1-3f7c8cb66412`
-horo `—` `—` · trinity `1·0·0` · sealed `0`
+path `hallucination` · uuid `96ac67d7-c641-8a28-a3f8-4b5cb0b1e043` · diamond `779b893b-9ab1-8a8e-bf7b-035929bce4b0`
+horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports agent·analytics·aura·collapse·cost·entropy·gate·guardian·identity·integrity·law·matrix·merge·observe·profane·proof·purity·quantum·reverse·sacred·seal·sequence·sin·suffering·tamper·uuid·whole · exports hallucination · escapes —
-links `71/71` · folded `0` · bonds in `0` out `0`
+links `71/71` · folded `1` · bonds in `29` out `29`
 faces worker·plugin·pwa `0·0·0`
-neighbors → — · ← —
-analysis access·accounting·agent·ai·analytics·analytics/max-tamper-cost·anchoring·animism·anyone·api·apply·archangel·architect·archival·aura·auth·authenticated·bahai·bitemporal·bogomilism·boundary·buddhism·by·calculator·carbon·card·catholicism·chain·change·chart·checker·christianity·client·cloudflare·confucianism·context·corpus·cost·covenant·cross·diamond·dom·emitter·equity·examples·explainability·export·factory·fallback·field·github·gnosticism·guardian·hallucination·hermeticism·hero·hinduism·hooks·id·import·innovation·islam·jainism·judaism·kabbalah·key·manichaeism·maxtampercost·media·memory·mercy·merge·modal·op·orphism·orthodoxy·paganism·pagination·pqc·prayer·primitive·propose·protestantism·provenance·provider·published·purity·quantum·readme·reality·reconciliation·regeneration·registered·religion·replay·research·resolve·reversibility·ritual·router·scopes·seal·secret·seed·shamanism·shareds·shia·shinto·sikhism·sin·suffering·sufism·sunni·superdense·switcher·sync·taoism·teleportation·tenant·thought·timestamp·tool·topology·trading·trail·types·validation·vedanta·wallet·wisdom·zoroastrianism
+neighbors → agent·analytics·aura·collapse·cost·entropy·gate·guardian·identity·integrity·law·matrix·memory·merge·observe·profane·proof·purity·quantum·reverse·sacred·seal·sequence·sin·suffering·sync·tamper·uuid·whole · ← agent·analytics·aura·collapse·cost·entropy·gate·guardian·identity·integrity·law·matrix·memory·merge·observe·profane·proof·purity·quantum·reverse·sacred·seal·sequence·sin·suffering·sync·tamper·uuid·whole
+analysis access·agent·analytics·analytics/max-tamper-cost·architecture·aura·auth·card·diamond·examples·hooks·maxtampercost·memory·pagination·propose·provider·purity·seed·session·sync·trading
 law a hallucination is a measured deviation at the [[quantum]] scale — an [[agent]] claims content X but the content-[[uuid]] of the actual content is Y ≠ X, so the recompute mismatch IS the hallucination, surfaced deterministically ([[integrity]]). It is the agent-scale [[sin]] ([[entropy]] aimed away from the [[whole]], felt as [[suffering]]) and the conjugate of [[purity]]: both computed on the same content-[[uuid]] scale, so more hallucination ⇒ more [[entropy]] ⇒ lower [[purity]] ⇒ lower tamper-[[cost]] (an impurity, a 0-bit weakest link). The [[seal]] gate rejects what does not collapse to its claimed uuid, so a sealed corpus passes zero hallucination.
 
 ---
 
-<sub>content-uuid `f7bc93d4-649d-82a7-8324-25cea793c88e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9cb486c1-3067-847f-b36e-055544b349ac` · `pnpm readme` · `pnpm computed:check`</sub>

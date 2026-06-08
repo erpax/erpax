@@ -3,15 +3,15 @@
 
 # hand
 
-path `hand` · uuid `460e86cf-627f-8859-9aaf-d0fd3c3d74b9` · diamond `e9b456e0-2f8b-8d65-ba02-04dd64e01630`
+path `hand` · uuid `460e86cf-627f-8859-9aaf-d0fd3c3d74b9` · diamond `60140de1-c7db-853b-83a4-794c53b086af`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports hand · escapes —
-links `4/4` · folded `1` · bonds in `5` out `5`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat·statistic · ← cohort·landmarks·memories·stat·statistic
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law hand is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `f7cc2eb5-3346-81a0-9887-82d17823526f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4d2e3455-b16a-8485-8939-7b35de94d1a1` · `pnpm readme` · `pnpm computed:check`</sub>

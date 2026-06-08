@@ -3,15 +3,15 @@
 
 # hamiltonian
 
-path `hamiltonian` · uuid `5916b22b-0498-8ab9-942a-d855ef5b7c8d` · diamond `4a06979c-556c-8140-9d77-876d08456aea`
+path `hamiltonian` · uuid `5916b22b-0498-8ab9-942a-d855ef5b7c8d` · diamond `a7ee6809-6bc2-847b-9dbd-fc0be24e1bb5`
 horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports @/horo·@/photon·@/signal·@/superposition · exports const · escapes —
-links `20/20` · folded `1` · bonds in `10` out `10`
-faces worker·plugin·pwa `0·0·0`
-neighbors → agriculture·crisis·friction·hardcover·landmarks·pickup·screen·task·travel·user · ← agriculture·crisis·friction·hardcover·landmarks·pickup·screen·task·travel·user
+links `20/20` · folded `1` · bonds in `13` out `13`
+faces worker·plugin·pwa `1·0·0`
+neighbors → breath·energy·horo·law·leap·metatron·photon·quantum·rodin·signal·spectrum·superposition·temperature · ← breath·energy·horo·law·leap·metatron·photon·quantum·rodin·signal·spectrum·superposition·temperature
 analysis —
 law the Hamiltonian's eigenvalues are the energy rungs (Eₙ = h·νₙ) and its phase e^(−iHt/ħ) winds the breath; ⟨H⟩ = Σ|cₙ|²·Eₙ is conserved under evolution (unitary phase never touches the probabilities) — the energy-conservation that balances the ledger.
 
 ---
 
-<sub>content-uuid `3043f761-d73c-8740-b226-d45187c74382` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9257f6fb-8a25-8fac-8756-d78271a5f260` · `pnpm readme` · `pnpm computed:check`</sub>
