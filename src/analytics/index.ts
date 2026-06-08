@@ -34,6 +34,12 @@ import { STANDARDS_CATALOGUE, STANDARDS_COUNT } from '@/standards/catalogue'
 // The deep security capability — the weakest link relating to MAX tamper cost.
 export { maxTamperCost, type MaxTamperCostReport, type TamperLever } from './max-tamper-cost'
 
+// The trend / forecast card — a pure widget + its `trendAnalysisSource` localApi
+// DataSource over a trailing income-statement window. Re-exported so the dashboard
+// composes it via the atom index (`@/analytics`), not the deep `./TrendAnalysisCard`.
+export { default as TrendAnalysisCard, trendAnalysisWidget, trendAnalysisSource } from './TrendAnalysisCard'
+export type { TrendAnalysisData } from './TrendAnalysisCard'
+
 // The render-time view-model shapes — the single projection of the financial
 // statements every analytics card + dashboard widget consumes. Re-exported here so
 // importers seal against the atom's INDEX (`@/analytics`), not the deep `./types`

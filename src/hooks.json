@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "hooks": {
+    "stop": [
+      {
+        "command": "node --import tsx/esm src/confirm/seal-and-push.ts",
+        "timeout": 30
+      }
+    ]
+  }
+}

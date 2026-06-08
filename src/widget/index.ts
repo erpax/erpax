@@ -14,3 +14,9 @@
 export { default as TrialBalanceWidget } from './TrialBalanceWidget'
 export { default as BalanceSheetWidget } from './BalanceSheetWidget'
 export { default as IncomeStatementWidget } from './IncomeStatementWidget'
+
+// The audit-trail widget — the ⊥ overlay tile (its own spec + audit-events
+// localApi DataSource). Re-exported so the dashboard composes it via the atom
+// index (`@/widget`), never the deep `./AuditLogWidget` file.
+export { default as AuditLogWidget, auditLogWidget, auditLogSource } from './AuditLogWidget'
+export type { AuditLogData, AuditLogEntry } from './AuditLogWidget'

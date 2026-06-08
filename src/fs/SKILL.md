@@ -11,4 +11,4 @@ A filesystem is stateful, so every state of the tree is a [[snapshot]]; its cont
 
 **Law — [[law]]: erpax's substrate is a tree where every [[path]] IS the address and every leaf [[word]] IS the [[atom]] — derived from the live tree first (never a stale index), and every state of the tree is a [[snapshot]].**
 
-@see [[path]] · [[word]] · [[atom]] · [[matter]] · [[file]] · [[snapshot]]
+@see [[path]] · [[word]] · [[atom]] · [[matter]] · [[file]] · [[snapshot]] · [[mcp]] · [[github]]

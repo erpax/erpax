@@ -19,6 +19,8 @@ import {
   type ResolvedWidget,
   type AnyWidgetSpec,
 } from '@/dashboard/spec';
+import { DASHBOARD_REGISTRY, DASHBOARDS } from '@/dashboard/dashboards';
+import { Nav } from '@/dashboard/nav';
 
 import { getUserContext } from '@/auth';
 import { actorCapabilityResolved } from '@/cross';
@@ -112,7 +114,11 @@ const trialBalanceWidget: AnyWidgetSpec = {
 /**
  * The Read-only Overview composition (the statement core every tier inherits).
  * Higher tiers add action / audit widgets in their own slices; this slice ships
- * the read foundation, gated at `minCapability: 'read'`.
+ * the read foundation, gated at `minCapability: 'read'`. It is the legacy
+ * three-statement view kept for the MetricCards header math below; the renderer
+ * now SELECTS from the capability-keyed `DASHBOARD_REGISTRY` (the seven role
+ * dashboards in `@/dashboard/dashboards`) so each tier gets its full composition
+ * (admin / sign / write / read / audit), not just this read base.
  */
 export const financialStatementsDashboard: DashboardSpec = {
   id: 'financial-statements',
@@ -120,11 +126,6 @@ export const financialStatementsDashboard: DashboardSpec = {
   audience: 'read',
   widgets: [trialBalanceWidget, balanceSheetWidget, incomeStatementWidget],
 };
-
-/** The capability-keyed registry selectDashboard walks (the read base for now). */
-const DASHBOARD_REGISTRY = {
-  read: financialStatementsDashboard,
-} as const;
 
 /** Build the loader context from the actor's request + the as-of date. */
 function dashboardContext(req: PayloadRequest, asOfDate: Date): DashboardContext {
@@ -176,6 +177,11 @@ const Dashboard = async ({
   const ctx = dashboardContext(req, asOfDate);
   const resolved = await resolveDashboard(spec, ctx);
 
+  // The nav's active row is the selected dashboard's position on the double-torus
+  // (one row per section in DASHBOARDS); a section not in the canonical seven wraps
+  // onto the surface (the torus has no edge), so a negative index lands on row 0.
+  const activeRow = DASHBOARDS.indexOf(spec);
+
   const balanceSheet = resolved.find((r) => r.spec.id === 'balance-sheet')?.data as
     | BalanceSheetData
     | null
@@ -198,6 +204,12 @@ const Dashboard = async ({
         <p className="text-gray-600 text-sm">
           As of {asOfDate.toISOString().split('T')[0]}
         </p>
+      </div>
+
+      {/* The 7×6 double-torus navigation — the active row is this dashboard's
+          section; the access cross gates which cells are reachable. */}
+      <div className="mb-6 rounded-lg border border-gray-200 bg-white p-4">
+        <Nav activeRow={activeRow} />
       </div>
 
       {/* Metric Cards (computed server-side from the resolved balance sheet) */}

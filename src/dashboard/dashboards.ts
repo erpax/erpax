@@ -14,15 +14,18 @@
  * THE REUSE RULE (this slice adds NO new widget components): every widget here is
  * an already-pure `React.FC<{ data: TVM | null }>` from the corpus — the three
  * statement widgets (TrialBalance / BalanceSheet / IncomeStatement, each over an
- * `@/analytics/types` view-model) and the four analytics cards (KPIDashboard /
+ * `@/analytics/types` view-model), the four analytics cards (KPIDashboard /
  * FinancialRatiosCard / BudgetVsActualCard / CostAnalysisCard, each over the
- * combined `{ balanceSheet, incomeStatement }` view-model). AuditLogWidget is now
- * also pure (it ships its own `auditLogWidget` spec + `audit-events` localApi
- * DataSource in `@/widget/AuditLogWidget`); it is not composed into these seven
- * yet, but is ready to drop into the audit-overlay slice. QuickActionsWidget
- * (the write-tile) is intentionally not a data widget — its modals call the
- * `@/dashboard/actions` server actions directly — so it has no DataSource and is
- * mounted by the action surface, not by this read composition.
+ * combined `{ balanceSheet, incomeStatement }` view-model), the `trendAnalysisWidget`
+ * (its own `trendAnalysisSource` over a trailing income-statement window, in
+ * `@/analytics/TrendAnalysisCard`), and the `auditLogWidget` — also pure, shipping its
+ * own spec + `audit-events` localApi DataSource (`@/widget/AuditLogWidget`), `live:true`,
+ * `minCapability:'audit'`. The audit widget is the ⊥ OVERLAY: it carries its own audit
+ * tier, so the resolver unlocks it for any actor holding an audit grant regardless of
+ * the read/write/sign/admin tier of the dashboard it sits in (admin / controller /
+ * auditor all compose it). QuickActionsWidget (the write-tile) is intentionally not a
+ * data widget — its modals call the `@/dashboard/actions` server actions directly — so
+ * it has no DataSource and is mounted by the action surface, not by this read composition.
  *
  * THE DATA SEAM: the three statement widgets bind to `localApi` DataSources backed
  * by the existing `@/accounting/reports.service` generators, projected DTO →
@@ -44,11 +47,12 @@
 
 import type React from 'react'
 
-import { TrialBalanceWidget, BalanceSheetWidget, IncomeStatementWidget } from '@/widget'
+import { TrialBalanceWidget, BalanceSheetWidget, IncomeStatementWidget, auditLogWidget } from '@/widget'
 import KPIDashboard from '@/analytics/KPIDashboard'
 import FinancialRatiosCard from '@/analytics/FinancialRatiosCard'
 import BudgetVsActualCard from '@/analytics/BudgetVsActualCard'
 import CostAnalysisCard from '@/analytics/CostAnalysisCard'
+import { trendAnalysisWidget } from '@/analytics'
 
 import {
   generateTrialBalance,
@@ -208,31 +212,70 @@ const costAnalysisWidget: WidgetSpec<FinancialOverview> = {
 // `audience` drives selectDashboard; the widgets' own minCapability still gates each
 // tile, so a dashboard handed to a higher tier than its audience degrades gracefully.
 
-/** 4 · Read-only Overview (capability=read; viewer, customer). Observe, no act. */
+/**
+ * 4 · Read-only Overview (capability=read; viewer, customer). Observe, no act.
+ * The statement core + the two read-tier analytics (ratios, trend) — six pure
+ * read widgets, zero action affordance.
+ */
 export const readOverviewDashboard: DashboardSpec = {
   id: 'read-overview',
   title: 'Read-only Overview',
   audience: 'read',
-  widgets: [kpiWidget, trialBalanceWidget, balanceSheetWidget, incomeStatementWidget, ratiosWidget],
+  widgets: [
+    kpiWidget,
+    trialBalanceWidget,
+    balanceSheetWidget,
+    incomeStatementWidget,
+    ratiosWidget,
+    trendAnalysisWidget,
+  ],
 }
 
-/** 3 · Operator (capability=write; finance, accountant, manager, payroll, hr). Act in scope. */
+/**
+ * 3 · Operator (capability=write; finance, accountant, manager, payroll, hr). Act in
+ * scope. The read core plus the write-tier cost lens — six tiles; the cost card
+ * (minCapability='write') is the one a pure-read actor would not see.
+ */
 export const operatorDashboard: DashboardSpec = {
   id: 'operator',
   title: 'Operator',
   audience: 'write',
-  widgets: [kpiWidget, trialBalanceWidget, balanceSheetWidget, incomeStatementWidget, costAnalysisWidget, ratiosWidget],
+  widgets: [
+    kpiWidget,
+    trialBalanceWidget,
+    balanceSheetWidget,
+    incomeStatementWidget,
+    costAnalysisWidget,
+    ratiosWidget,
+  ],
 }
 
-/** 2 · Controller / Close (capability=sign; director, compliance-officer). Seal/certify. */
+/**
+ * 2 · Controller / Close (capability=sign; director, compliance-officer). Seal/certify
+ * — the SOX §302/§404 officer board. Statements + the sign-tier budget-vs-actual +
+ * the trend lens, with the live audit trail as the ⊥ overlay (unlocks when the
+ * controller also holds an audit grant).
+ */
 export const controllerDashboard: DashboardSpec = {
   id: 'controller-close',
   title: 'Controller / Close',
   audience: 'sign',
-  widgets: [kpiWidget, balanceSheetWidget, incomeStatementWidget, trialBalanceWidget, budgetWidget, ratiosWidget],
+  widgets: [
+    kpiWidget,
+    balanceSheetWidget,
+    incomeStatementWidget,
+    trialBalanceWidget,
+    budgetWidget,
+    trendAnalysisWidget,
+    auditLogWidget,
+  ],
 }
 
-/** 1 · Admin Control (capability=admin; super-admin, admin). The owner facing the Source. */
+/**
+ * 1 · Admin Control (capability=admin; super-admin, admin). The owner facing the
+ * Source — everything: the full statement set, all four analytics cards, plus the
+ * live audit trail as the ⊥ overlay (unlocks for an admin who also holds audit).
+ */
 export const adminControlDashboard: DashboardSpec = {
   id: 'admin-control',
   title: 'Admin Control',
@@ -245,31 +288,67 @@ export const adminControlDashboard: DashboardSpec = {
     trialBalanceWidget,
     budgetWidget,
     costAnalysisWidget,
+    auditLogWidget,
   ],
 }
 
-/** ⊥ · Auditor (capability=audit; auditor, audit-staff). Sees all read-only, displaces nothing. */
+/**
+ * ⊥ · Auditor (capability=audit; auditor, audit-staff). Sees all read-only, displaces
+ * nothing — observe-only + append-to-chain. The live audit trail leads; the
+ * debit=credit / A=L+E evidence statements + the KPI/trend read-outs follow. The
+ * audit widget gates on the actor's audit grant (`minCapability='audit'`); the read
+ * statements gate on 'read', so a pure-audit actor (audit ⊥, no read tier) sees only
+ * the audit trail unless they ALSO hold a concrete read tier — the cross's semantics.
+ */
 export const auditorDashboard: DashboardSpec = {
   id: 'auditor',
   title: 'Auditor',
   audience: 'audit',
-  widgets: [trialBalanceWidget, balanceSheetWidget, incomeStatementWidget, kpiWidget],
+  widgets: [
+    auditLogWidget,
+    trialBalanceWidget,
+    balanceSheetWidget,
+    incomeStatementWidget,
+    kpiWidget,
+    trendAnalysisWidget,
+  ],
 }
 
-/** ★ · Executive KPI (capability=admin). The financial roll-up the design's executive slice names. */
+/**
+ * ★ · Executive KPI (capability=admin). The financial roll-up the design's executive
+ * slice names — the four analytics cards (KPI / ratios / budget / cost) over the two
+ * statements + the trend lens; the action/audit tiles stay off the executive board.
+ */
 export const executiveDashboard: DashboardSpec = {
   id: 'executive-kpi',
   title: 'Executive KPI',
   audience: 'admin',
-  widgets: [kpiWidget, ratiosWidget, budgetWidget, costAnalysisWidget, balanceSheetWidget, incomeStatementWidget],
+  widgets: [
+    kpiWidget,
+    ratiosWidget,
+    budgetWidget,
+    costAnalysisWidget,
+    balanceSheetWidget,
+    incomeStatementWidget,
+    trendAnalysisWidget,
+  ],
 }
 
-/** ◇ · Society Overview (capability=sign). The governance/society audience's read board. */
+/**
+ * ◇ · Society Overview (capability=sign). The governance/society audience's read board
+ * — the statement core + ratios + the trend lens, six pure read-outs.
+ */
 export const societyDashboard: DashboardSpec = {
   id: 'society-overview',
   title: 'Society Overview',
   audience: 'sign',
-  widgets: [kpiWidget, balanceSheetWidget, incomeStatementWidget, ratiosWidget],
+  widgets: [
+    kpiWidget,
+    balanceSheetWidget,
+    incomeStatementWidget,
+    ratiosWidget,
+    trendAnalysisWidget,
+  ],
 }
 
 /**
@@ -310,4 +389,6 @@ export const DASHBOARD_WIDGETS: readonly AnyWidgetSpec[] = [
   ratiosWidget,
   budgetWidget,
   costAnalysisWidget,
+  trendAnalysisWidget,
+  auditLogWidget,
 ]

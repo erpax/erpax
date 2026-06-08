@@ -46,6 +46,12 @@ import {
 import type { DashboardSpec } from '@/dashboard/spec'
 import { DASHBOARDS } from '@/dashboard/dashboards'
 
+// The pure RENDER of this model — re-exported so `@/dashboard/nav` is the single
+// face (model + component): the renderer imports `Nav` from here, never the deep
+// `./Nav` file (the corpus import convention, [[tamper]]/import).
+export { default as Nav } from './Nav'
+export type { NavProps } from './Nav'
+
 /** The torus has SEVEN rows — one per horo position (one per top-level section). */
 export const NAV_ROWS = HORO_DIGITS.length // 7
 
