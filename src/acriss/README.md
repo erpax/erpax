@@ -23,7 +23,22 @@
 
 - partition `acriss` · sub-root `5d4d9e3e-4f18-82e6-a282-b6e72e18064a`
 - bond degree `15` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `1c65e160-5137-86a1-ad8e-dc86b0e96873`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org` · catalogue
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `15` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `2`
 
 ## identity
 
@@ -39,4 +54,4 @@
 
 ---
 
-<sub>content-uuid `441713d0-8863-8af6-bc55-c3882a6db37f` · framed by typography partition `acriss` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `6878746a-5527-8b56-b82d-12f4f0d62f3a` · framed by typography partition `acriss` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

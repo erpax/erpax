@@ -23,7 +23,7 @@
 
 - partition `hedge` · sub-root `cb21fc44-9d39-8c82-8e31-84dd5375a02b`
 - bond degree `18` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `8796d9c3-35e8-80e1-827a-5d3a65c92619` · framed by typography partition `hedge` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c8e94dd9-50c2-894a-89af-8eac13ec95b5` · framed by typography partition `hedge` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>

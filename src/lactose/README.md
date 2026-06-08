@@ -23,7 +23,7 @@
 
 - partition `lactose` · sub-root `13843951-16c6-856c-a5bf-dc759a1b2102`
 - bond degree `18` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `79b9ad73-e0ec-86f5-91a1-d35d03c9ddc2` · framed by typography partition `lactose` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `fd95e207-ef7e-8262-be1e-8b71de797879` · framed by typography partition `lactose` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -264,15 +264,14 @@ export function proveServerlessQuantum(cwd = process.cwd()): ServerlessQuantumPr
   })
   stages.push(finalizeStage('entanglement', entBase, entExtra, props.entanglementHolds))
 
-  // 6 — existence proof (erpax IS the proof)
-  const selfBase = computeDiamond({ kind: 'path', path: 'quantum/serverless', cwd })
+  // 6 — existence proof (erpax IS the proof) — cloudflare ⊕ quantum seal on live tree
   const existExtra: DiamondComputationStage[] = []
-  pushStage(existExtra, 'existence', { repo: 'erpax' }, {
+  pushStage(existExtra, 'existence', { repo: 'erpax', proofAtom: 'quantum/serverless' }, {
     cloudflareUuid: diamondUuid(cloudBase.model),
     quantumUuid: diamondUuid(quantumBase.model),
     wranglerBindings: entries.length,
   })
-  stages.push(finalizeStage('existence', selfBase, existExtra, props.existenceSealed))
+  stages.push(finalizeStage('existence', quantumBase, existExtra, props.existenceSealed))
 
   const serverlessFacetUuid = diamondUuid(cloudBase.model)
   const quantumFacetUuid = diamondUuid(quantumBase.model)

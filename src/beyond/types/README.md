@@ -2,7 +2,7 @@
 
 # types
 
-> atom `beyond/types` · horo `8` `crest` · [[balance]] `1` · [[seal]] `0`
+> atom `beyond/types` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -11,7 +11,7 @@
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
 | [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
 | [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
@@ -24,21 +24,51 @@
 ## typography graph
 
 - partition `beyond` · sub-root `d5c96de6-e131-8db0-8c67-746942d1018c`
-- bond degree `49` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `75` · analysis neighbors `agent`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ESRS E1 (climate change disclosures — gCO2e per activity)` · banner
+- `EU AI Act 2024/1689 (Annex IV — technical documentation)` · banner
+- `EU-2024/1183` · catalogue
+- `EU-2024/1620` · catalogue
+- `EU-2024/1624` · catalogue
+- `EU-AI-Act` · catalogue
+- `EU-CSDDD-2024/1760` · catalogue
+- `EU-ESRS` · catalogue
+- `ISO 19944 cloud-services data-flow + jurisdiction` · banner
+- `ISRS 4400 agreed-upon-procedures (replay verification)` · banner
+- `NIST FIPS 203 ML-KEM + FIPS 204 ML-DSA (PQC, 2024)` · banner
+- `NIST SP 800-208 stateful-hash-based-signatures (PQC)` · banner
+- `NIST-SP-800-63` · catalogue
+- `W3C PROV (Provenance Data Model)` · banner
+- `W3C-PROV-O` · catalogue
+- `XBRL` · catalogue
+- `XBRL inline-XBRL (machine-explainability of financial values)` · banner
+
+## analytics
+
+- bond degree `75` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `17`
 
 ## identity
 
-- uuid `54e9a6fa-48a6-80c4-aff4-395f79554e49`
-- bonds in `8` · out `6`
+- uuid `e0930aad-a89b-8e34-a6f3-cbbc597aab59`
+- bonds in `21` · out `24`
 - trinity form·code·proof `1`·`1`·`1`
 - links `5` / `5`
-- folded `0` · escapes `0`
+- folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `b37d5fb0-4a18-87ff-88c0-5bdae9f323ed` · framed by typography partition `beyond` bonds `49` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `50356011-591f-83f6-9cf6-7cd99b2e1e79` · framed by typography partition `beyond` bonds `75` · `pnpm readme` · `pnpm readme:check`</sub>

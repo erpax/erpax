@@ -23,7 +23,7 @@
 
 - partition `loyalty` · sub-root `cfa1b83b-b5db-88e9-a34b-bd0fcf74ae88`
 - bond degree `18` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `ca8bcbd9-1f0a-8736-9830-f063ab3cbb48` · framed by typography partition `loyalty` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `aa0423e2-0bb0-8b26-92b0-08ce83d19891` · framed by typography partition `loyalty` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>

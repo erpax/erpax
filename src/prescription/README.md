@@ -23,7 +23,7 @@
 
 - partition `prescription` · sub-root `ead2d4d8-80a8-8dc8-857a-8aafd255e1ba`
 - bond degree `23` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `7d974de8-f261-8af4-a027-525432806272` · framed by typography partition `prescription` bonds `23` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `23f8c65d-fd60-8346-8d04-15ccca4ec337` · framed by typography partition `prescription` bonds `23` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `wear` · sub-root `c451e494-e74c-8653-8b34-a91f49287dc2`
 - bond degree `13` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `d15855b7-4cf1-8fb6-9571-f5bfee9492b4` · framed by typography partition `wear` bonds `13` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `6541075e-4d71-8684-9c5d-505606de63b9` · framed by typography partition `wear` bonds `13` · `pnpm readme` · `pnpm readme:check`</sub>

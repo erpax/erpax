@@ -23,7 +23,7 @@
 
 - partition `nail` · sub-root `5cf97c83-ca53-8d2d-bb61-4fa0b4a16846`
 - bond degree `14` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `c2ec92c2-2990-83e4-8406-cbd687fb191e` · framed by typography partition `nail` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d8c7b111-47af-8b48-a553-6065cfff28f4` · framed by typography partition `nail` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>

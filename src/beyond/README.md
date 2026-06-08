@@ -24,13 +24,59 @@
 ## typography graph
 
 - partition `beyond` · sub-root `d5c96de6-e131-8db0-8c67-746942d1018c`
-- bond degree `48` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `72` · analysis neighbors —
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `EU-2011/83` · catalogue
+- `EU-2016/679` · catalogue
+- `EU-2018/1673` · catalogue
+- `EU-2018/1725` · catalogue
+- `EU-2018/302` · catalogue
+- `EU-2018/389-SCA-RTS` · catalogue
+- `EU-2018/843` · catalogue
+- `EU-2018/957` · catalogue
+- `EU-2022/1925` · catalogue
+- `EU-2022/2065` · catalogue
+- `EU-2022/2554` · catalogue
+- `EU-2022/2555` · catalogue
+- `EU-2022/868` · catalogue
+- `EU-2024/1183` · catalogue
+- `EU-2024/1620` · catalogue
+- `EU-2024/1624` · catalogue
+- `EU-AI-Act` · catalogue
+- `EU-CSDDD-2024/1760` · catalogue
+- `EU-CSRD` · catalogue
+- `EU-ESRS` · catalogue
+- `EU-VAT-Implementing-Reg-282/2011` · catalogue
+- `GHG-Protocol` · catalogue
+- `ILO-C001` · catalogue
+- `ISO-19011` · catalogue
+- `ISO-27001` · catalogue
+- `ISO-27002` · catalogue
+- `ISO/IEC-23894` · catalogue
+- `ISO/IEC-27001:2022` · catalogue
+- `ISO/IEC-27002:2022` · catalogue
+- `NIST-SP-800-63` · catalogue
+- `W3C PROV + ESRS E1 + EU AI Act + NIST FIPS 203/204` · banner
+- `W3C-PROV-O` · catalogue
+- `XBRL` · catalogue
+
+## analytics
+
+- bond degree `72` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `33`
 
 ## identity
 
 - uuid `76c8fe58-fec1-8ffc-b2f4-577e2d7140b1`
-- bonds in `12` · out `12`
+- bonds in `24` · out `24`
 - trinity form·code·proof `1`·`1`·`1`
 - links `18` / `18`
 - folded `1` · escapes `0`
@@ -41,4 +87,4 @@
 
 ---
 
-<sub>content-uuid `1cd49345-50c4-859f-a68b-012524c7f7e0` · framed by typography partition `beyond` bonds `48` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `866bff76-f32e-8cbe-93f3-8f559eed408b` · framed by typography partition `beyond` bonds `72` · `pnpm readme` · `pnpm readme:check`</sub>

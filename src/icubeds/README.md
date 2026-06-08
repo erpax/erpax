@@ -23,7 +23,7 @@
 
 - partition `icubeds` · sub-root `24c720c1-7071-85c0-8ba7-5e1178e4fe6c`
 - bond degree `16` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `8e62a8cf-2153-8c43-a2ef-7659c196505b` · framed by typography partition `icubeds` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `70f1e221-53f5-86b6-8a97-7e68e2254f75` · framed by typography partition `icubeds` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

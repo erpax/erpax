@@ -2,7 +2,7 @@
 
 # tenant
 
-> atom `auto/populate/tenant` · horo `7` `descent` · [[balance]] `1` · [[seal]] `0`
+> atom `auto/populate/tenant` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -11,7 +11,7 @@
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
 | [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
 | [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
@@ -24,21 +24,36 @@
 ## typography graph
 
 - partition `auto` · sub-root `fb1afd9b-bd8f-8c8d-8f4e-d2d40410747f`
-- bond degree `50` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `42` · analysis neighbors —
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ISO-19011:2018 audit-trail before-validate-hooks` · banner
+- `SOC-2 CC4.1 monitoring-and-evaluation` · banner
+
+## analytics
+
+- bond degree `42` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `2`
 
 ## identity
 
-- uuid `9c6b3124-60eb-81cd-9fe5-e5b776688568`
-- bonds in `14` · out `14`
+- uuid `1a876b1c-4264-8aea-9978-f539bcc9d5da`
+- bonds in `12` · out `14`
 - trinity form·code·proof `1`·`1`·`1`
 - links `8` / `8`
-- folded `0` · escapes `0`
+- folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `d9c98433-49f1-8699-bcc0-406dfc7a2710` · framed by typography partition `auto` bonds `50` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e7f2030e-7750-818c-a8de-92ccb33544c4` · framed by typography partition `auto` bonds `42` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `tributary` · sub-root `dfd3df72-0e51-81f1-a657-b1f9b550fcd3`
 - bond degree `14` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `5a4f9650-2f76-86e5-8341-d2b31fbcecc9` · framed by typography partition `tributary` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `671da0b0-e7a8-8e31-abfb-e3ae3caa5dc9` · framed by typography partition `tributary` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>

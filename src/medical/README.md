@@ -23,7 +23,7 @@
 
 - partition `medical` · sub-root `dd75faed-972f-8872-8664-29d908bdcb9e`
 - bond degree `89` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `b7f9e2cf-5866-8328-b2b0-5f3bc5d28415` · framed by typography partition `medical` bonds `89` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f98387b9-8416-8810-a5a1-8a184f05ced2` · framed by typography partition `medical` bonds `89` · `pnpm readme` · `pnpm readme:check`</sub>

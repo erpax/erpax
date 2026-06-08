@@ -22,13 +22,28 @@
 ## typography graph
 
 - partition `access` · sub-root `0e4b457c-8c5f-8fe4-a7cc-a05454ed73a4`
-- bond degree `406` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `426` · analysis neighbors `diamond` · `hallucination` · `purity`
+- graph root `1c65e160-5137-86a1-ad8e-dc86b0e96873`
+
+## [[cloudflare]] bindings
+
+- `ratelimit`/`RATE_LIMITER_AI` · atom `cloudflare/ratelimit/RATE_LIMITER_AI`
+- `ratelimit`/`RATE_LIMITER_API` · atom `cloudflare/ratelimit/RATE_LIMITER_API`
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `426` · sealed `0` · horo `6`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `2` · standards `0`
 
 ## identity
 
-- uuid `c10051a0-750e-86a3-8906-7520d06c4243`
-- bonds in `121` · out `123`
+- uuid `72acef20-9204-8da3-8dfe-2fc2ef695141`
+- bonds in `130` · out `133`
 - trinity form·code·proof `1`·`0`·`0`
 - links `46` / `46`
 - folded `1` · escapes `0`
@@ -39,4 +54,4 @@
 
 ---
 
-<sub>content-uuid `c5bfc17a-f45d-858f-8bac-063877c14b8e` · framed by typography partition `access` bonds `406` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0a46efe6-b2eb-8fd6-8f57-b53186daab60` · framed by typography partition `access` bonds `426` · `pnpm readme` · `pnpm readme:check`</sub>

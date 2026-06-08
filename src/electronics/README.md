@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `electronics` · sub-root `df33cf14-912e-8dd6-bdb9-18d0436d9e9b`
-- bond degree `10` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `16` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `df33cf14-912e-8dd6-bdb9-18d0436d9e9b`
-- bonds in `2` · out `2`
+- bonds in `5` · out `5`
 - trinity form·code·proof `1`·`0`·`0`
 - links `5` / `5`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `40802ae6-bea9-8f72-8f76-82c461d95da3` · framed by typography partition `electronics` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `4a266328-f639-8c92-8fea-85a19393dff0` · framed by typography partition `electronics` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

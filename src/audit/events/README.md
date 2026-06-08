@@ -25,7 +25,45 @@
 
 - partition `audit` · sub-root `798aecfe-af8a-8d6c-9989-a51055e00adf`
 - bond degree `80` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `5424 §6.2.1 syslog-severity-levels` · banner
+- `EU-2018/1673` · catalogue
+- `EU-2018/1725` · catalogue
+- `EU-2018/302` · catalogue
+- `EU-2018/389-SCA-RTS` · catalogue
+- `EU-2018/843` · catalogue
+- `EU-2018/957` · catalogue
+- `GDPR Art.30 records-of-processing-activities` · banner
+- `ISO 27037:2012 evidence-preservation` · banner
+- `ISO-19011` · catalogue
+- `ISO-19011:2018 §6.4.6 audit-evidence-collection` · banner
+- `ISO-19011:2018 §6.4.6 audit-evidence-collection unique-event-identifier` · banner
+- `ISO-19011:2018 §6.4.6 audit-evidence-immutability` · banner
+- `ISO-19011:2018 §6.5 audit-conclusions` · banner
+- `ISO-19011:2018 audit-trail` · banner
+- `ISO-27037` · catalogue
+- `ISO/IEC 27037:2012 evidence-preservation` · banner
+- `NIST FIPS-180-4 sha-256` · banner
+- `NIST-FIPS-180-4` · catalogue
+- `RFC-9562` · catalogue
+- `rfc-9562 uuid event-id` · banner
+- `SOC-2 CC4.1 monitoring-and-evaluation` · banner
+- `SOX §302 disclosure-controls` · banner
+- `SOX §404 internal-controls audit-tamper-evidence` · banner
+- `SOX §404 internal-controls evidence-preservation` · banner
+
+## analytics
+
+- bond degree `80` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `25`
 
 ## identity
 
@@ -41,4 +79,4 @@
 
 ---
 
-<sub>content-uuid `2d0a89d9-d538-8991-a17b-bffb2807a0f8` · framed by typography partition `audit` bonds `80` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `66529f56-77b1-8dc7-b717-4395d52d2f23` · framed by typography partition `audit` bonds `80` · `pnpm readme` · `pnpm readme:check`</sub>

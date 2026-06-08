@@ -25,7 +25,7 @@
 
 - partition `nist` · sub-root `0f1c4f5f-986c-87d7-8f47-9317941a72ee`
 - bond degree `14` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `03f8bd4a-1706-8484-9754-b20840a6a169` · framed by typography partition `nist` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f56c54b3-c64b-8439-a075-654da9ce3496` · framed by typography partition `nist` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>

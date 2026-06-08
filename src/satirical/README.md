@@ -23,7 +23,7 @@
 
 - partition `satirical` · sub-root `566ac1b1-0e43-8319-bdd1-4a8712b6c0e0`
 - bond degree `16` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `9e4d0b4c-5660-8020-8bbc-18c33a993a5b` · framed by typography partition `satirical` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f9a2203b-1bbd-8b2a-88ad-55f9e02f7d85` · framed by typography partition `satirical` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

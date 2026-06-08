@@ -22,13 +22,27 @@
 ## typography graph
 
 - partition `cardiovascular` · sub-root `62ed5c29-ccaf-85a0-b601-4b8f8462d0c8`
-- bond degree `32` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `12` · analysis neighbors —
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `12` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
 - uuid `62ed5c29-ccaf-85a0-b601-4b8f8462d0c8`
-- bonds in `14` · out `14`
+- bonds in `4` · out `4`
 - trinity form·code·proof `1`·`0`·`0`
 - links `4` / `4`
 - folded `1` · escapes `0`
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `abd4347e-70c1-81cd-b184-ec9f32089b58` · framed by typography partition `cardiovascular` bonds `32` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `9b534d65-37b0-8974-813a-169592aed723` · framed by typography partition `cardiovascular` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -21,9 +21,9 @@
 
 ## typography graph
 
-- partition `mcp` · sub-root `0e5c00ee-d337-8aca-86da-8d1f325f1b09`
-- bond degree `140` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- partition `mcp` · sub-root `23a1e7a1-7e17-81e7-b1bd-f23ae0eda49c`
+- bond degree `143` · analysis neighbors `agent`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `2fb25427-3d87-8d48-a62d-d5e3828133c4` · framed by typography partition `mcp` bonds `140` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `824499cb-76c1-883a-829e-d8ae1f29dea2` · framed by typography partition `mcp` bonds `143` · `pnpm readme` · `pnpm readme:check`</sub>

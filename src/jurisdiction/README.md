@@ -23,7 +23,7 @@
 
 - partition `jurisdiction` · sub-root `031dacb0-4e06-804b-b604-b267f444ea25`
 - bond degree `15` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `4d94ebe0-550d-8194-b0ce-73e5dae15bce` · framed by typography partition `jurisdiction` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `3b6d5b8d-45c8-8493-ba7c-d19c85b0da2c` · framed by typography partition `jurisdiction` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

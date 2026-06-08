@@ -25,7 +25,7 @@
 
 - partition `navel` · sub-root `2313e805-1385-8e8e-9796-9bc8b4ac32d3`
 - bond degree `11` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `e8ccd33b-1f5a-81a2-a121-532ea3819a23` · framed by typography partition `navel` bonds `11` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c26f2dbe-0117-89ab-a68d-7d0587008743` · framed by typography partition `navel` bonds `11` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -2,7 +2,7 @@
 
 # akashic
 
-> atom `akashic` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
+> atom `akashic` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -21,16 +21,30 @@
 
 ## typography graph
 
-- partition `akashic` · sub-root `b665a26f-9969-8279-9b5e-bd96b51c8cbd`
-- bond degree `255` · analysis neighbors `aura`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- partition `akashic` · sub-root `bde29fb6-9409-8030-8c8f-79db7939ba70`
+- bond degree `286` · analysis neighbors `aura` · `diamond`
+- graph root `1c65e160-5137-86a1-ad8e-dc86b0e96873`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `286` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
-- uuid `b665a26f-9969-8279-9b5e-bd96b51c8cbd`
-- bonds in `77` · out `75`
+- uuid `bde29fb6-9409-8030-8c8f-79db7939ba70`
+- bonds in `88` · out `84`
 - trinity form·code·proof `1`·`0`·`0`
-- links `53` / `53`
+- links `62` / `62`
 - folded `1` · escapes `0`
 
 ## [[seal]]
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `e08ceebb-ef83-8aa5-b5a0-1fe5db214d74` · framed by typography partition `akashic` bonds `255` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `2373b11d-2a87-8425-bda8-a7709e690b40` · framed by typography partition `akashic` bonds `286` · `pnpm readme` · `pnpm readme:check`</sub>

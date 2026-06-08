@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `coinsurance` · sub-root `e8c78058-462b-8165-abbc-9adf516820f7`
-- bond degree `18` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `26` · analysis neighbors —
+- graph root `08417410-9529-8662-a45d-0e6296f0598e`
 
 ## identity
 
 - uuid `e8c78058-462b-8165-abbc-9adf516820f7`
-- bonds in `4` · out `4`
+- bonds in `8` · out `8`
 - trinity form·code·proof `1`·`0`·`0`
 - links `8` / `8`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `95223d1d-5ec4-8755-bc15-ca068ee03bd9` · framed by typography partition `coinsurance` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `30311058-385b-8111-a076-f88f5e59f861` · framed by typography partition `coinsurance` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>

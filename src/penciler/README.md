@@ -23,7 +23,7 @@
 
 - partition `penciler` · sub-root `8cfe5b90-3df9-8c3f-96a3-4dd1fbb61a52`
 - bond degree `10` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `c5f65442-fb7d-8186-8a1c-f7c74b94cf67` · framed by typography partition `penciler` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `40a67b7f-ed09-8c5d-8344-1dc805ed91c6` · framed by typography partition `penciler` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>

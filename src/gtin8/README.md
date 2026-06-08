@@ -23,7 +23,7 @@
 
 - partition `gtin8` · sub-root `4fe455d1-c670-8b60-94aa-3db1ee6cf0e4`
 - bond degree `16` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `c961deb2-c940-825b-a3ab-18604b776243` · framed by typography partition `gtin8` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `03b0037c-0684-8a8b-9100-38f4f6969213` · framed by typography partition `gtin8` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -24,13 +24,55 @@
 ## typography graph
 
 - partition `bookable` · sub-root `81a5c4cf-d55f-83da-84b6-028a286649f2`
-- bond degree `19` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `25` · analysis neighbors —
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `COSO-ERM-2017` · catalogue
+- `EU-2015/847` · catalogue
+- `EU-2015/849` · catalogue
+- `EU-2017/1132` · catalogue
+- `EU-2017/828` · catalogue
+- `EU-2019/1150` · catalogue
+- `EU-2019/1152` · catalogue
+- `EU-2019/1937` · catalogue
+- `EU-2019/2161` · catalogue
+- `EU-2019/770` · catalogue
+- `EU-2019/771` · catalogue
+- `EU-Intrastat-Reg-2019/2152` · catalogue
+- `GDPR Art.6(1)(b) lawful-basis-contract guest-data` · banner
+- `HTNG-2017 hotel-technology-next-generation` · banner
+- `IFRS IFRS-15 §35 over-time-recognition (multi-night stay)` · banner
+- `IFRS IFRS-15 §38 point-in-time-recognition (single-use)` · banner
+- `IFRS IFRS-15 §B20-B27 right-of-return cancellation-policy` · banner
+- `ISO-18513:2021 tourism-services-vocabulary check-in check-out` · banner
+- `ISO-19011:2018 audit-trail booking-lifecycle` · banner
+- `ISO-4217` · catalogue
+- `ISO-4217:2015 currency-codes pricing` · banner
+- `ISO-8601-1` · catalogue
+- `ISO-8601-1:2019 date-time start-end-windows` · banner
+- `OpenTravel Alliance reservation-message` · banner
+- `RFC-5545` · catalogue
+- `rfc-5545 icalendar-rrule recurring-bookings` · banner
+- `SOX §404 internal-controls revenue-completeness TOM-RES-01` · banner
+- `US-CTA-2021` · catalogue
+- `US-GAAP ASC-606-10-25-27 over-time-criteria` · banner
+
+## analytics
+
+- bond degree `25` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `29`
 
 ## identity
 
 - uuid `0223db2e-bce0-8252-9914-ad421f8bb526`
-- bonds in `5` · out `5`
+- bonds in `8` · out `8`
 - trinity form·code·proof `1`·`1`·`1`
 - links `9` / `9`
 - folded `1` · escapes `0`
@@ -41,4 +83,4 @@
 
 ---
 
-<sub>content-uuid `134082db-27ab-8e2c-a87f-33548c11dc38` · framed by typography partition `bookable` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f42f106f-7615-81f3-886f-a89c5209e9b7` · framed by typography partition `bookable` bonds `25` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -25,7 +25,23 @@
 
 - partition `balance` · sub-root `a333c702-6daf-8ba4-ab67-5e3a393db9fc`
 - bond degree `664` · analysis neighbors `aura`
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `computed on the live uuid-matrix atom names, never hand-asserted` · banner
+- `double-entry bookkeeping (Pacioli, 1494) — every credit a debit; imbalance is the bug` · banner
+- `UBL-2.1` · catalogue
+
+## analytics
+
+- bond degree `664` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `3`
 
 ## identity
 
@@ -41,4 +57,4 @@
 
 ---
 
-<sub>content-uuid `5bda736d-fc1f-8a22-bc71-cfded6479bac` · framed by typography partition `balance` bonds `664` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b6869d99-bb73-8478-ad83-e5bc105b0c37` · framed by typography partition `balance` bonds `664` · `pnpm readme` · `pnpm readme:check`</sub>

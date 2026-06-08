@@ -23,7 +23,7 @@
 
 - partition `loser` · sub-root `0ec432ec-57a4-84a6-b187-b009b8e558d9`
 - bond degree `10` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `d20697bd-97c1-8353-a132-110e72f51586` · framed by typography partition `loser` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d0088651-35cb-8cc6-95b1-a38a0b6cde4c` · framed by typography partition `loser` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>

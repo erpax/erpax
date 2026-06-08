@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `dvdformat` · sub-root `765c14d9-9e40-89f3-8403-f072a5b92fd3`
-- bond degree `16` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `12` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `765c14d9-9e40-89f3-8403-f072a5b92fd3`
-- bonds in `6` · out `6`
+- bonds in `4` · out `4`
 - trinity form·code·proof `1`·`0`·`0`
 - links `4` / `4`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `e8cee705-df22-89c5-bffc-3369ab832e23` · framed by typography partition `dvdformat` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a0294d85-7386-84b3-903b-38c23a8e6461` · framed by typography partition `dvdformat` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

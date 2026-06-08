@@ -2,7 +2,7 @@
 
 # import
 
-> atom `convention/import` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
+> atom `convention/import` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -24,13 +24,13 @@
 ## typography graph
 
 - partition `convention` · sub-root `38cd2282-f75a-84ce-b2c7-ff7cff0bfb4c`
-- bond degree `118` · analysis neighbors `aura` · `diamond` · `hallucination` · `purity` · `quantum/boundary` · `tamper/import`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `60` · analysis neighbors `aura` · `quantum/boundary` · `tamper/import`
+- graph root `08417410-9529-8662-a45d-0e6296f0598e`
 
 ## identity
 
-- uuid `041e9f45-3959-88df-b51f-72777153e544`
-- bonds in `45` · out `44`
+- uuid `c34cceb3-27b2-85b2-882e-8e29e097983a`
+- bonds in `14` · out `20`
 - trinity form·code·proof `1`·`1`·`1`
 - links `9` / `9`
 - folded `1` · escapes `0`
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `0e86c8ea-aacf-8ce9-bf26-4066bc66b2a4` · framed by typography partition `convention` bonds `118` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c9f1410e-298d-820b-aa28-0a5aaa7e34a5` · framed by typography partition `convention` bonds `60` · `pnpm readme` · `pnpm readme:check`</sub>

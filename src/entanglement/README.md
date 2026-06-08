@@ -24,13 +24,13 @@
 ## typography graph
 
 - partition `entanglement` · sub-root `6682e649-5672-8655-b92e-eb470d882c57`
-- bond degree `73` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `104` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `23b597f1-d923-8704-a9f8-d652775bf0d0`
-- bonds in `16` · out `16`
+- bonds in `29` · out `34`
 - trinity form·code·proof `1`·`1`·`1`
 - links `15` / `15`
 - folded `1` · escapes `0`
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `eb7a59e5-1958-88d9-97d2-e63a1340f14b` · framed by typography partition `entanglement` bonds `73` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `912fd58f-78d6-8a49-9b29-37bedd0ce742` · framed by typography partition `entanglement` bonds `104` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -22,13 +22,27 @@
 ## typography graph
 
 - partition `breed` · sub-root `8296322c-375a-8413-bf01-7de25fc7bc70`
-- bond degree `21` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `41` · analysis neighbors —
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `41` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
 - uuid `8296322c-375a-8413-bf01-7de25fc7bc70`
-- bonds in `3` · out `3`
+- bonds in `13` · out `13`
 - trinity form·code·proof `1`·`0`·`0`
 - links `21` / `21`
 - folded `1` · escapes `0`
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `90daa4f8-4c1a-82d0-986d-60af177a3d6a` · framed by typography partition `breed` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `29e6bb2e-4676-8a44-8bbb-0a04f589050e` · framed by typography partition `breed` bonds `41` · `pnpm readme` · `pnpm readme:check`</sub>

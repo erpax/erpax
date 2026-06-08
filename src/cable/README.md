@@ -22,13 +22,27 @@
 ## typography graph
 
 - partition `cable` · sub-root `9eae32db-3705-8f1e-b190-9d8ecb959e25`
-- bond degree `22` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `20` · analysis neighbors —
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `20` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
 - uuid `9eae32db-3705-8f1e-b190-9d8ecb959e25`
-- bonds in `7` · out `7`
+- bonds in `6` · out `6`
 - trinity form·code·proof `1`·`0`·`0`
 - links `6` / `6`
 - folded `1` · escapes `0`
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `235960a0-f4c5-8be0-bb83-0216e3695ed8` · framed by typography partition `cable` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `1d4d7647-5af2-8698-991b-2e548071609c` · framed by typography partition `cable` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>

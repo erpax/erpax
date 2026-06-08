@@ -23,7 +23,7 @@
 
 - partition `taxexempt` · sub-root `554032ca-3307-87c7-94b5-4b8b690519cd`
 - bond degree `20` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `8d8e8ed4-062d-884f-a38c-1d4b87147925` · framed by typography partition `taxexempt` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f803f1a1-bb97-8d15-ae2b-cc5da8b31c5a` · framed by typography partition `taxexempt` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>

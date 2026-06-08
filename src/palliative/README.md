@@ -23,7 +23,7 @@
 
 - partition `palliative` · sub-root `080e13ca-1d11-827d-9f6a-4b9ce14e0383`
 - bond degree `14` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `313ce1ef-f947-81c7-b5e1-359c8e65458d` · framed by typography partition `palliative` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ee683690-e8df-80c0-b75b-6144a10c6536` · framed by typography partition `palliative` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>

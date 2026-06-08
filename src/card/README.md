@@ -24,13 +24,27 @@
 ## typography graph
 
 - partition `card` · sub-root `ef9bb310-1a1c-8891-bb10-320a87c0520a`
-- bond degree `18` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `22` · analysis neighbors `diamond` · `hallucination` · `purity`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `22` · sealed `0` · horo `7`
+- variance `0` · balanced `1` · trinity sum `2`
+- bindings `0` · standards `1`
 
 ## identity
 
 - uuid `ef9bb310-1a1c-8891-bb10-320a87c0520a`
-- bonds in `4` · out `4`
+- bonds in `6` · out `6`
 - trinity form·code·proof `1`·`1`·`0`
 - links `6` / `6`
 - folded `1` · escapes `0`
@@ -41,4 +55,4 @@
 
 ---
 
-<sub>content-uuid `d0762f46-20fa-854f-9682-d67fbe6c14ae` · framed by typography partition `card` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `cbd7462a-28a5-8a84-b0d9-6628c5f6bf11` · framed by typography partition `card` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>

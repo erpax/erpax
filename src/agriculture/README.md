@@ -24,7 +24,23 @@
 
 - partition `agriculture` · sub-root `d65965f6-9220-88d9-949e-9cb968223e53`
 - bond degree `244` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `1c65e160-5137-86a1-ad8e-dc86b0e96873`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `IAS-41` · catalogue
+- `IFRS-15` · catalogue
+- `UBL-2.1` · catalogue
+
+## analytics
+
+- bond degree `244` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `2`
+- bindings `0` · standards `3`
 
 ## identity
 
@@ -40,4 +56,4 @@
 
 ---
 
-<sub>content-uuid `bab2c852-1ab2-8a8e-9304-fa157764e81e` · framed by typography partition `agriculture` bonds `244` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `8e2006a1-2dfe-856d-b553-d3fed0a95931` · framed by typography partition `agriculture` bonds `244` · `pnpm readme` · `pnpm readme:check`</sub>

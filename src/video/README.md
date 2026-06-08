@@ -23,7 +23,7 @@
 
 - partition `video` · sub-root `36f690ce-a701-86bf-9d52-418b2a3fb0a1`
 - bond degree `43` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `9edfa7c5-e853-8a71-898d-612a2c92d44b` · framed by typography partition `video` bonds `43` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `43c48005-37e1-8292-bc3b-8cca17b29e23` · framed by typography partition `video` bonds `43` · `pnpm readme` · `pnpm readme:check`</sub>

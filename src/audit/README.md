@@ -22,13 +22,58 @@
 ## typography graph
 
 - partition `audit` · sub-root `798aecfe-af8a-8d6c-9989-a51055e00adf`
-- bond degree `66` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `91` · analysis neighbors —
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+- `analytics_engine_datasets`/`ANALYTICS_AI` · atom `cloudflare/analytics-engine-datasets/ANALYTICS_AI`
+- `analytics_engine_datasets`/`ANALYTICS_API` · atom `cloudflare/analytics-engine-datasets/ANALYTICS_API`
+- `analytics_engine_datasets`/`ANALYTICS_GL` · atom `cloudflare/analytics-engine-datasets/ANALYTICS_GL`
+- `analytics_engine_datasets`/`ANALYTICS_JOBS` · atom `cloudflare/analytics-engine-datasets/ANALYTICS_JOBS`
+
+## [[standards]]
+
+- `BEPS` · catalogue
+- `EU-2016/679` · catalogue
+- `EU-2018/1673` · catalogue
+- `EU-2018/1725` · catalogue
+- `EU-2018/302` · catalogue
+- `EU-2018/389-SCA-RTS` · catalogue
+- `EU-2018/843` · catalogue
+- `EU-2018/957` · catalogue
+- `EU-2022/1925` · catalogue
+- `EU-2022/2065` · catalogue
+- `EU-2022/2554` · catalogue
+- `EU-2022/2555` · catalogue
+- `EU-2022/868` · catalogue
+- `IAS-1` · catalogue
+- `ILO-C001` · catalogue
+- `ISO-19011` · catalogue
+- `ISO-27001` · catalogue
+- `ISO-27037` · catalogue
+- `ISO/IEC-27001:2022` · catalogue
+- `Naredba-N-18` · catalogue
+- `NIST-FIPS-180-4` · catalogue
+- `NIST-SP-800-63` · catalogue
+- `NIST-SP-800-92` · catalogue
+- `OECD-Pillar-Two` · catalogue
+- `OECD-Transfer-Pricing` · catalogue
+- `RFC-9562` · catalogue
+- `SAF-T` · catalogue
+- `SOX` · catalogue
+- `US-CTA-2021` · catalogue
+
+## analytics
+
+- bond degree `91` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `4` · standards `29`
 
 ## identity
 
 - uuid `ad9f3271-fbf4-876f-a76a-b6da7a1ac515`
-- bonds in `17` · out `17`
+- bonds in `30` · out `29`
 - trinity form·code·proof `1`·`0`·`0`
 - links `5` / `5`
 - folded `1` · escapes `0`
@@ -39,4 +84,4 @@
 
 ---
 
-<sub>content-uuid `8ebaba3e-72cb-8019-89f9-f0be07a77da7` · framed by typography partition `audit` bonds `66` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b913cd1e-c1e0-8f41-8f2a-630ac3fa7f3c` · framed by typography partition `audit` bonds `91` · `pnpm readme` · `pnpm readme:check`</sub>

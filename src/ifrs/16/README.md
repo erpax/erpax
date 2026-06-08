@@ -25,7 +25,7 @@
 
 - partition `ifrs` · sub-root `573a4dc3-4d80-8d82-bc37-84cbc3e12567`
 - bond degree `15` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `25cb76e2-9018-80e4-ab5b-c5095b3cf08f` · framed by typography partition `ifrs` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f2f38b74-6fce-8cfc-91df-350ec6ad320c` · framed by typography partition `ifrs` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

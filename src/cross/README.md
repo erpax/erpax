@@ -2,7 +2,7 @@
 
 # cross
 
-> atom `cross` · horo `5` `round` · [[balance]] `1` · [[seal]] `0`
+> atom `cross` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -11,7 +11,7 @@
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
 | [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
 | [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
@@ -24,21 +24,21 @@
 ## typography graph
 
 - partition `cross` · sub-root `d465d0ad-e345-84aa-9b1a-9097fd39e8f2`
-- bond degree `67` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `70` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
-- uuid `cf197d9d-3de0-8f7d-a6db-b754bd0a5b54`
-- bonds in `19` · out `20`
+- uuid `207c8c13-f3a9-804a-9380-89048ba4c63f`
+- bonds in `22` · out `23`
 - trinity form·code·proof `1`·`1`·`1`
 - links `10` / `10`
-- folded `0` · escapes `0`
+- folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `91eef0cd-0987-8197-9c01-97e0f52e07cf` · framed by typography partition `cross` bonds `67` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `2358f207-5eaa-80a5-9168-0eefb4d8c635` · framed by typography partition `cross` bonds `70` · `pnpm readme` · `pnpm readme:check`</sub>

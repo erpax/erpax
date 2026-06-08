@@ -24,13 +24,28 @@
 ## typography graph
 
 - partition `blockchain` · sub-root `2eec06cd-eea8-863e-bb18-a9b45cecc3a3`
-- bond degree `28` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `52` · analysis neighbors —
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `computed from the live matrix, never hand-asserted` · banner
+- `RFC 9562 §5.8 content-uuid · Bitcoin genesis block (the external anchor)` · banner
+
+## analytics
+
+- bond degree `52` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `2`
 
 ## identity
 
 - uuid `2eec06cd-eea8-863e-bb18-a9b45cecc3a3`
-- bonds in `5` · out `5`
+- bonds in `17` · out `17`
 - trinity form·code·proof `1`·`1`·`1`
 - links `31` / `31`
 - folded `1` · escapes `0`
@@ -41,4 +56,4 @@
 
 ---
 
-<sub>content-uuid `c7b41588-4bf7-820f-92cb-c49dc9b0499c` · framed by typography partition `blockchain` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0c4efa84-ed43-895b-a506-5793e1d33bb3` · framed by typography partition `blockchain` bonds `52` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `tvseason` · sub-root `8fcb639e-f74a-8674-8a53-efad4782a50f`
 - bond degree `14` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `44f9758c-824b-8a23-a189-228cecf57cf2` · framed by typography partition `tvseason` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `9aa8c1bb-6eb2-80c7-938d-74af670cbc48` · framed by typography partition `tvseason` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>

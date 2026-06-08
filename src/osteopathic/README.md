@@ -23,7 +23,7 @@
 
 - partition `osteopathic` · sub-root `fba7c300-02e8-8ef1-bd20-44b22311f3d3`
 - bond degree `14` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `5752a11b-ffb8-8da7-aee0-9108d8805723` · framed by typography partition `osteopathic` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `936fa158-f43c-87d4-bff6-fe7dde3f5343` · framed by typography partition `osteopathic` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>

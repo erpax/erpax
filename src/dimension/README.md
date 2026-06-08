@@ -2,7 +2,7 @@
 
 # dimension
 
-> atom `dimension` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `dimension` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -24,13 +24,13 @@
 ## typography graph
 
 - partition `dimension` · sub-root `bd1c5d7a-14ac-832a-8783-332309d3a359`
-- bond degree `73` · analysis neighbors `diamond`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `188` · analysis neighbors `diamond`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
-- uuid `2e84e0b5-0e2b-8a60-ace1-9b0a0346b209`
-- bonds in `2` · out `2`
+- uuid `bd1c5d7a-14ac-832a-8783-332309d3a359`
+- bonds in `60` · out `60`
 - trinity form·code·proof `1`·`1`·`1`
 - links `56` / `56`
 - folded `1` · escapes `0`
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `89b73949-7f91-86d0-b4ae-34f34dbcb8b6` · framed by typography partition `dimension` bonds `73` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `fbb800e4-21cd-8bb5-9ce8-e5cb7e016e66` · framed by typography partition `dimension` bonds `188` · `pnpm readme` · `pnpm readme:check`</sub>

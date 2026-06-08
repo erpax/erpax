@@ -22,13 +22,34 @@
 ## typography graph
 
 - partition `admin` · sub-root `ce84b495-c8c5-82dd-93b4-144c06e69c35`
-- bond degree `34` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `36` · analysis neighbors —
+- graph root `1c65e160-5137-86a1-ad8e-dc86b0e96873`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ECMA-262` · catalogue
+- `EU-2024/1183` · catalogue
+- `EU-2024/1620` · catalogue
+- `EU-2024/1624` · catalogue
+- `EU-CSDDD-2024/1760` · catalogue
+- `EU-Taxonomy-2020/852` · catalogue
+- `ISO-3166-1` · catalogue
+- `W3C-WAI-ARIA-1.2` · catalogue
+
+## analytics
+
+- bond degree `36` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `8`
 
 ## identity
 
 - uuid `ce84b495-c8c5-82dd-93b4-144c06e69c35`
-- bonds in `11` · out `11`
+- bonds in `12` · out `12`
 - trinity form·code·proof `1`·`0`·`0`
 - links `5` / `5`
 - folded `1` · escapes `0`
@@ -39,4 +60,4 @@
 
 ---
 
-<sub>content-uuid `fd96a7c0-e9e9-8b97-902b-fcf202320acd` · framed by typography partition `admin` bonds `34` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `9cff4a1a-c724-8ca4-988f-3e8684d7571a` · framed by typography partition `admin` bonds `36` · `pnpm readme` · `pnpm readme:check`</sub>

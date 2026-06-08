@@ -25,7 +25,7 @@
 
 - partition `redundancy` · sub-root `33cfd375-bafc-80e9-b7b0-de8d81fed636`
 - bond degree `21` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `ecf5b2c8-c1ce-8134-938a-594a8596e58c` · framed by typography partition `redundancy` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c0a8c30d-ec4e-86a7-8b86-f5c11e6e4e81` · framed by typography partition `redundancy` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>

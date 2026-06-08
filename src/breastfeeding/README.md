@@ -22,13 +22,27 @@
 ## typography graph
 
 - partition `breastfeeding` · sub-root `3c556d9a-f492-8f4d-bdb5-56c989153bef`
-- bond degree `32` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `16` · analysis neighbors —
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `16` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
 - uuid `3c556d9a-f492-8f4d-bdb5-56c989153bef`
-- bonds in `13` · out `13`
+- bonds in `5` · out `5`
 - trinity form·code·proof `1`·`0`·`0`
 - links `5` / `5`
 - folded `1` · escapes `0`
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `bba4385e-14c7-82d0-b7c2-1813870715d8` · framed by typography partition `breastfeeding` bonds `32` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `67b0c6d2-3e3f-87bf-a37e-77bd6bd98618` · framed by typography partition `breastfeeding` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

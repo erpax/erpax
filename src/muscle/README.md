@@ -23,7 +23,7 @@
 
 - partition `muscle` · sub-root `c3ac508c-7e29-8369-8286-d209fcd382a2`
 - bond degree `26` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `2af27a7f-8c78-8940-9189-f6d63ce1a6a2` · framed by typography partition `muscle` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `6e961ceb-fae4-86fb-b4b0-6356768b86ff` · framed by typography partition `muscle` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>

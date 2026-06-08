@@ -23,7 +23,7 @@
 
 - partition `dosage` · sub-root `e0afd2ff-7a39-8b88-8f24-5276649c12fc`
 - bond degree `16` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `144b8833-836c-808b-95c2-ad42492b46b5` · framed by typography partition `dosage` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `655d4a35-0ef3-8370-bd88-5ac390523852` · framed by typography partition `dosage` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

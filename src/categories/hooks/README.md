@@ -2,7 +2,7 @@
 
 # hooks
 
-> atom `categories/hooks` · horo `6` `6` · [[balance]] `1` · [[seal]] `0`
+> atom `categories/hooks` · horo `3` `3` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -11,7 +11,7 @@
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
 | [[balance]] `1` | [[liability]]/[[horo]]/off-ring `1` |
 | [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
@@ -24,16 +24,30 @@
 ## typography graph
 
 - partition `categories` · sub-root `8327e755-6fa3-8a4b-b084-a90724a32919`
-- bond degree `151` · analysis neighbors `analytics` · `aura` · `diamond` · `hallucination` · `purity`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `357` · analysis neighbors `analytics` · `aura` · `diamond` · `hallucination` · `purity`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ISO-19011:2018 audit-trail collection-module-boundary` · banner
+
+## analytics
+
+- bond degree `357` · sealed `0` · horo `3`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `1`
 
 ## identity
 
-- uuid `3a658e69-ed7c-86e0-b18b-59db2375967d`
-- bonds in `10` · out `10`
+- uuid `742779e4-53e2-8c02-b0ce-00cd526850d0`
+- bonds in `113` · out `113`
 - trinity form·code·proof `1`·`1`·`1`
 - links `3` / `3`
-- folded `0` · escapes `0`
+- folded `1` · escapes `0`
 
 ## [[seal]]
 
@@ -41,4 +55,4 @@
 
 ---
 
-<sub>content-uuid `6eeb73ed-3da6-8b3e-9e3a-3e545da649e8` · framed by typography partition `categories` bonds `151` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `1fd008f0-21fe-8aee-83f6-702354c4f66d` · framed by typography partition `categories` bonds `357` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -22,13 +22,27 @@
 ## typography graph
 
 - partition `biomagnetism` · sub-root `9d517f80-7f00-8bb2-afdb-524682db5790`
-- bond degree `53` · analysis neighbors `aura`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `43` · analysis neighbors `aura`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `43` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
 - uuid `9d517f80-7f00-8bb2-afdb-524682db5790`
-- bonds in `18` · out `18`
+- bonds in `13` · out `13`
 - trinity form·code·proof `1`·`0`·`0`
 - links `18` / `18`
 - folded `1` · escapes `0`
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `e76f0eee-7129-8a07-bd8c-8115e04d5ee0` · framed by typography partition `biomagnetism` bonds `53` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `96744caf-dcea-8b80-92ec-e5b54fb53d3b` · framed by typography partition `biomagnetism` bonds `43` · `pnpm readme` · `pnpm readme:check`</sub>

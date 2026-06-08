@@ -23,7 +23,7 @@
 
 - partition `hindu` · sub-root `8c0781ef-23eb-8545-a818-bbb3d4a58170`
 - bond degree `22` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `b5e12dff-e2f5-87c7-ac19-37a0c0a76b5b` · framed by typography partition `hindu` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0e3a3c42-02fd-85d6-a845-883b0fd607f2` · framed by typography partition `hindu` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>

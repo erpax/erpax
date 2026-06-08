@@ -24,13 +24,50 @@
 ## typography graph
 
 - partition `biological` · sub-root `40a0b53b-7053-8f4a-b5ab-1d7131414b2d`
-- bond degree `81` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `150` · analysis neighbors —
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `EU-2015/847` · catalogue
+- `EU-2015/849` · catalogue
+- `EU-2019/1150` · catalogue
+- `EU-2019/1152` · catalogue
+- `EU-2019/1937` · catalogue
+- `EU-2019/2161` · catalogue
+- `EU-2019/770` · catalogue
+- `EU-2019/771` · catalogue
+- `EU-Intrastat-Reg-2019/2152` · catalogue
+- `IAS-41` · catalogue
+- `IFRS IAS-41 §10 recognition-criteria` · banner
+- `IFRS IAS-41 §12 measurement-fair-value-less-costs-to-sell` · banner
+- `IFRS IAS-41 §13 biological-transformation` · banner
+- `IFRS IAS-41 §26 gains-losses-recognised-in-pnl` · banner
+- `IFRS IAS-41 §30 bearer-plants-now-IAS-16-since-2016-amendment` · banner
+- `IFRS IAS-41 §40 disclosure-by-class` · banner
+- `IFRS IFRS-13 fair-value-input-hierarchy` · banner
+- `IFRS-13` · catalogue
+- `ISO 19011:2018 §6.4.6 audit-evidence-biological-assets` · banner
+- `ISO-4217` · catalogue
+- `ISO-4217:2015 currency-codes` · banner
+- `ISO-8601-1` · catalogue
+- `ISO-8601-1:2019 date-time` · banner
+- `SOX §404 internal-controls TOM-AGRI-01` · banner
+
+## analytics
+
+- bond degree `150` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `24`
 
 ## identity
 
 - uuid `303ae367-4c71-8291-9728-9f736ba9e6ce`
-- bonds in `13` · out `14`
+- bonds in `45` · out `51`
 - trinity form·code·proof `1`·`1`·`1`
 - links `13` / `13`
 - folded `1` · escapes `0`
@@ -41,4 +78,4 @@
 
 ---
 
-<sub>content-uuid `b056dbce-a457-89bf-ad44-2ac5998f9966` · framed by typography partition `biological` bonds `81` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `6caa0a27-d10f-8d82-ba19-f92389e9748e` · framed by typography partition `biological` bonds `150` · `pnpm readme` · `pnpm readme:check`</sub>

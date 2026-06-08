@@ -2,7 +2,7 @@
 
 # research
 
-> atom `development/research` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `development/research` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -24,13 +24,13 @@
 ## typography graph
 
 - partition `development` · sub-root `91f0328b-2317-8a07-916a-8a6bd4bf3306`
-- bond degree `98` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `224` · analysis neighbors `agent`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
-- uuid `f2a22870-40a9-8da9-9f5a-a9745e81f284`
-- bonds in `5` · out `5`
+- uuid `d4d6de7f-c43c-89df-90a7-a6439ccfa4f4`
+- bonds in `61` · out `76`
 - trinity form·code·proof `1`·`1`·`1`
 - links `14` / `14`
 - folded `1` · escapes `0`
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `77dcee02-b06c-81bf-a2e4-3327e3e970dc` · framed by typography partition `development` bonds `98` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a124ba46-ce15-8906-97af-fcf01a7d77dd` · framed by typography partition `development` bonds `224` · `pnpm readme` · `pnpm readme:check`</sub>

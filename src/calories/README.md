@@ -22,13 +22,27 @@
 ## typography graph
 
 - partition `calories` · sub-root `5fe6ffe4-59ea-8d1b-846b-89a040ef0419`
-- bond degree `8` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `6` · analysis neighbors —
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `6` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
 - uuid `5fe6ffe4-59ea-8d1b-846b-89a040ef0419`
-- bonds in `3` · out `3`
+- bonds in `2` · out `2`
 - trinity form·code·proof `1`·`0`·`0`
 - links `2` / `2`
 - folded `1` · escapes `0`
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `10625e6a-7d18-8ab3-a56e-7fe4aa5d9eac` · framed by typography partition `calories` bonds `8` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `5b6ad3c6-f864-8692-8e2e-c8434eb1fc48` · framed by typography partition `calories` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>

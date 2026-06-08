@@ -25,7 +25,26 @@
 
 - partition `allocation` · sub-root `c9bf5689-48f9-85ad-99d2-1dce65710963`
 - bond degree `93` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `1c65e160-5137-86a1-ad8e-dc86b0e96873`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ESCO` · catalogue
+- `ESCO / ISCO-08 competency framework (skill level)` · banner
+- `Hamilton (largest-remainder) apportionment — integer fair division` · banner
+- `ISO 19011 — reward is a deterministic, auditable function (no discretion)` · banner
+- `SFIA` · catalogue
+- `SFIA 8 responsibility-levels (1..7) — job-type categorisation` · banner
+
+## analytics
+
+- bond degree `93` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `6`
 
 ## identity
 
@@ -41,4 +60,4 @@
 
 ---
 
-<sub>content-uuid `1eac839b-16bd-8759-90ac-53ea31c31679` · framed by typography partition `allocation` bonds `93` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `48b84b6d-fa41-8603-9f2e-9f84f386ed92` · framed by typography partition `allocation` bonds `93` · `pnpm readme` · `pnpm readme:check`</sub>

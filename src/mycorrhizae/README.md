@@ -23,7 +23,7 @@
 
 - partition `mycorrhizae` · sub-root `dd790be9-9493-8ab0-875b-e4eca884ec17`
 - bond degree `27` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `60a16876-49ab-87f1-b0e2-5268dd7841fc` · framed by typography partition `mycorrhizae` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d74703e3-14d3-88a6-af1c-5a640d2d2ffa` · framed by typography partition `mycorrhizae` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `chiropractic` · sub-root `ae65ae03-80e2-831e-ab7d-ad49d709b668`
-- bond degree `14` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `12` · analysis neighbors —
+- graph root `08417410-9529-8662-a45d-0e6296f0598e`
 
 ## identity
 
 - uuid `ae65ae03-80e2-831e-ab7d-ad49d709b668`
-- bonds in `5` · out `5`
+- bonds in `4` · out `4`
 - trinity form·code·proof `1`·`0`·`0`
 - links `4` / `4`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `b5603618-40bc-8629-8b48-c94cf2232953` · framed by typography partition `chiropractic` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d9a51660-d381-8a40-aa99-2ec947cd70dd` · framed by typography partition `chiropractic` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

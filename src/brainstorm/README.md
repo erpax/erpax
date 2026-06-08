@@ -22,13 +22,27 @@
 ## typography graph
 
 - partition `brainstorm` · sub-root `b20df82f-692e-8830-baa4-8afaadf1b9e5`
-- bond degree `22` · analysis neighbors `aura`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `46` · analysis neighbors `aura`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `46` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
 - uuid `b20df82f-692e-8830-baa4-8afaadf1b9e5`
-- bonds in `3` · out `3`
+- bonds in `15` · out `15`
 - trinity form·code·proof `1`·`0`·`0`
 - links `28` / `28`
 - folded `1` · escapes `0`
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `e89cfda5-b7df-8d61-8f9b-858eb5678eb7` · framed by typography partition `brainstorm` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `686c9c16-90be-82bc-a664-c58719ace455` · framed by typography partition `brainstorm` bonds `46` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `funnel` · sub-root `5c072a83-cf61-8634-b705-24bc5244868a`
 - bond degree `42` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `18273efe-18a3-85f9-9095-21669e21d869` · framed by typography partition `funnel` bonds `42` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `87674672-7b35-84f2-8504-4c64ce2b8c63` · framed by typography partition `funnel` bonds `42` · `pnpm readme` · `pnpm readme:check`</sub>

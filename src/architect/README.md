@@ -2,17 +2,17 @@
 
 # architect
 
-> atom `architect` · horo `—` `—` · [[balance]] `1` · [[seal]] `0`
+> atom `architect` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[horo]]/off-ring `1` |
-| [[balance]] `1` | [[liability]]/[[identity]]/uuid `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
 | [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `7` | Σ `7` |
@@ -22,21 +22,35 @@
 ## typography graph
 
 - partition `architect` · sub-root `1ef5146c-ac9a-8551-ae94-b6be5211eb8b`
-- bond degree `27` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `66` · analysis neighbors `diamond`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `66` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
-- uuid `—`
-- bonds in `0` · out `0`
+- uuid `1ef5146c-ac9a-8551-ae94-b6be5211eb8b`
+- bonds in `21` · out `21`
 - trinity form·code·proof `1`·`0`·`0`
 - links `48` / `48`
-- folded `0` · escapes `0`
+- folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `12a47ce2-6270-89c6-8e2b-8047770ec49c` · framed by typography partition `architect` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f9401bcc-0148-8856-86e2-7685033b6b28` · framed by typography partition `architect` bonds `66` · `pnpm readme` · `pnpm readme:check`</sub>

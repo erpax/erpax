@@ -25,7 +25,7 @@
 
 - partition `sustainability` · sub-root `a4b62011-1e2d-8cd9-9873-5349623b896c`
 - bond degree `29` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `7b773dd9-11e8-8cfe-91e0-a5da92b3dcfa` · framed by typography partition `sustainability` bonds `29` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `87faa658-361e-8670-a548-5109c1febb9d` · framed by typography partition `sustainability` bonds `29` · `pnpm readme` · `pnpm readme:check`</sub>

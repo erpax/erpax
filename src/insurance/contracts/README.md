@@ -25,7 +25,7 @@
 
 - partition `insurance` · sub-root `7006f364-784b-8b65-bba1-157ce05f46c0`
 - bond degree `57` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `8423a08d-245e-8838-b771-fff008f9ae2f` · framed by typography partition `insurance` bonds `57` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `94010662-3ec8-8e6c-981d-85a1f5d72da2` · framed by typography partition `insurance` bonds `57` · `pnpm readme` · `pnpm readme:check`</sub>

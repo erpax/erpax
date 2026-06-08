@@ -23,7 +23,7 @@
 
 - partition `imprint` · sub-root `b0c0c240-81d9-89fc-b7d6-0552533a9c44`
 - bond degree `22` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `18dc24e9-3db5-8f35-93a9-4942c367d9c8` · framed by typography partition `imprint` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `7f72bd64-4823-85de-b70f-e6cc47e6404f` · framed by typography partition `imprint` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>

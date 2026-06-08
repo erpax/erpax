@@ -23,7 +23,7 @@
 
 - partition `fdacategory` · sub-root `19fd2c66-9f8b-8a75-8591-e8d845e20ffb`
 - bond degree `24` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `cdf2754a-e987-8bd4-9da9-da96cd55608f` · framed by typography partition `fdacategory` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `de774c4b-694d-878f-bfa1-7a265748c03a` · framed by typography partition `fdacategory` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>

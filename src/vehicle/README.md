@@ -23,7 +23,7 @@
 
 - partition `vehicle` · sub-root `21563ab1-412d-80d2-9514-9e98c5b16714`
 - bond degree `41` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `2cc5377f-aca2-8644-8964-c53c7f1075fa` · framed by typography partition `vehicle` bonds `41` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f712aa06-c3a8-8b58-8a5e-09622b03f83d` · framed by typography partition `vehicle` bonds `41` · `pnpm readme` · `pnpm readme:check`</sub>

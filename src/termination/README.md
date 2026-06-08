@@ -23,7 +23,7 @@
 
 - partition `termination` · sub-root `31229b06-3fa1-845a-ae1f-eaccedb624c5`
 - bond degree `15` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `7111878e-06e7-8771-a3fa-b5e06f28fa76` · framed by typography partition `termination` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `13510eaf-cc58-8ed7-9321-d893925b942e` · framed by typography partition `termination` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

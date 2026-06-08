@@ -22,13 +22,27 @@
 ## typography graph
 
 - partition `bottleneck` · sub-root `b1aaeacd-b609-8ee4-b5dd-5d048c44d41f`
-- bond degree `35` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `71` · analysis neighbors —
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `71` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
 - uuid `b1aaeacd-b609-8ee4-b5dd-5d048c44d41f`
-- bonds in `5` · out `5`
+- bonds in `23` · out `23`
 - trinity form·code·proof `1`·`0`·`0`
 - links `4` / `4`
 - folded `1` · escapes `0`
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `65ab309b-a338-84f7-95a0-818aa8ff56fe` · framed by typography partition `bottleneck` bonds `35` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `27023d23-c3b9-889a-9269-ca7445c96368` · framed by typography partition `bottleneck` bonds `71` · `pnpm readme` · `pnpm readme:check`</sub>

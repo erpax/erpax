@@ -25,7 +25,7 @@
 
 - partition `leases` · sub-root `cae8cdb5-1757-821f-a7f6-3ea5fe499c3b`
 - bond degree `8` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `d157b53e-9be6-8036-bdf0-2829a6330a3d` · framed by typography partition `leases` bonds `8` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `52bb0fdb-8fc3-8077-b554-8283ba39f39b` · framed by typography partition `leases` bonds `8` · `pnpm readme` · `pnpm readme:check`</sub>

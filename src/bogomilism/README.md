@@ -2,17 +2,17 @@
 
 # bogomilism
 
-> atom `bogomilism` · horo `—` `—` · [[balance]] `1` · [[seal]] `0`
+> atom `bogomilism` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[horo]]/off-ring `1` |
-| [[balance]] `1` | [[liability]]/[[identity]]/uuid `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
 | [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `7` | Σ `7` |
@@ -22,21 +22,35 @@
 ## typography graph
 
 - partition `bogomilism` · sub-root `1f9371d1-eec8-8939-a5a9-a165ff702cd0`
-- bond degree `24` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `59` · analysis neighbors `diamond`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `59` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
-- uuid `—`
-- bonds in `0` · out `0`
+- uuid `1f9371d1-eec8-8939-a5a9-a165ff702cd0`
+- bonds in `19` · out `19`
 - trinity form·code·proof `1`·`0`·`0`
 - links `47` / `47`
-- folded `0` · escapes `0`
+- folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `dd7e1fa2-5c3b-8092-a5e5-1a1b5f2304dd` · framed by typography partition `bogomilism` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `54951493-5503-809b-9f7a-f966dd1df29a` · framed by typography partition `bogomilism` bonds `59` · `pnpm readme` · `pnpm readme:check`</sub>

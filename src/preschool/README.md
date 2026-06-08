@@ -23,7 +23,7 @@
 
 - partition `preschool` · sub-root `58c609e7-b712-86a3-8638-3632ff947a8c`
 - bond degree `16` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `32841b48-0542-8837-9643-eb8af1e3693d` · framed by typography partition `preschool` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `5b645ad2-b381-8272-a749-825ddb11dd8c` · framed by typography partition `preschool` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

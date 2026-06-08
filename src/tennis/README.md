@@ -23,7 +23,7 @@
 
 - partition `tennis` · sub-root `1538b6dd-d13d-8110-a3d4-40b09f1d2373`
 - bond degree `20` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `c6e4b093-7faf-8c30-9978-ad28a13f2462` · framed by typography partition `tennis` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `4ebca9c5-3b74-88f2-998f-8a7ede733df5` · framed by typography partition `tennis` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>

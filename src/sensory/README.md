@@ -23,7 +23,7 @@
 
 - partition `sensory` · sub-root `97124444-e0a2-827d-a953-9df62854936c`
 - bond degree `25` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `2ad60f93-4521-81bc-8157-697256206100` · framed by typography partition `sensory` bonds `25` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e6f1f749-e4b2-8fc6-abac-2662c76b1d4e` · framed by typography partition `sensory` bonds `25` · `pnpm readme` · `pnpm readme:check`</sub>

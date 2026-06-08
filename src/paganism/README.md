@@ -23,7 +23,7 @@
 
 - partition `paganism` · sub-root `dfc6c516-71ba-8ad6-82e7-ec42ee652869`
 - bond degree `28` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `0508a243-2264-83c7-aafe-c0c60fc4ed2c` · framed by typography partition `paganism` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `3669ddb4-fe31-8016-bf72-3b08e649b480` · framed by typography partition `paganism` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>

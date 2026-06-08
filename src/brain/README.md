@@ -24,13 +24,29 @@
 ## typography graph
 
 - partition `brain` · sub-root `702f6ecf-ff93-858c-8bb5-de7778aa50f4`
-- bond degree `15` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `27` · analysis neighbors —
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `≈86×10⁹ neurons, ≈1.5×10¹⁴ synapses; brain networks are small-world (Bassett & Bullmore, 2006)` · banner
+- `≈86×10⁹ neurons, ≈1.5×10¹⁴ synapses; brain networks are small-world (Bassett, Bullmore)` · banner
+- `computed (small-world path length log(N)/log(k) · sparsity k/N · scale cross-check)` · banner
+
+## analytics
+
+- bond degree `27` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `3`
 
 ## identity
 
-- uuid `41266386-e75a-8215-b312-90650d82c817`
-- bonds in `3` · out `3`
+- uuid `702f6ecf-ff93-858c-8bb5-de7778aa50f4`
+- bonds in `9` · out `9`
 - trinity form·code·proof `1`·`1`·`1`
 - links `11` / `11`
 - folded `1` · escapes `0`
@@ -41,4 +57,4 @@
 
 ---
 
-<sub>content-uuid `038325e4-f610-85f5-aba1-6a5a6f3cd266` · framed by typography partition `brain` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `bf9efeb3-aabe-86da-b0fd-d8fd45d52fd2` · framed by typography partition `brain` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>

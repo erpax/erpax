@@ -23,7 +23,7 @@
 
 - partition `zoroastrianism` · sub-root `6cf90c29-6e5d-8e42-9379-32b5217adc54`
 - bond degree `28` · analysis neighbors `aura` · `diamond` · `hallucination` · `purity`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `6ef4b45c-6e5e-8a19-89b4-4321d869eb76` · framed by typography partition `zoroastrianism` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `93f880a6-76fa-8da8-8232-a50181adf47f` · framed by typography partition `zoroastrianism` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>

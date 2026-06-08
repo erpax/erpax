@@ -19,7 +19,6 @@ import { join } from 'node:path'
 import {
   deriveModel,
   renderReadme,
-  generateReadme,
   readmeUuid,
   deriveFolderModel,
   deriveFolderAccounting,
@@ -29,7 +28,6 @@ import {
   renderFolderReadme,
   folderReadmeUuid,
   listAtomPaths,
-  deriveCorpusAnalytics,
   aggregateCorpusAnalytics,
   buildBindingsByAtom,
   type ReadmeModel,
@@ -124,8 +122,16 @@ describe('readme — the README is a diamond', () => {
     expect(m.corpusRoot).toMatch(/^[0-9a-f-]{36}$/)
   })
 
-  it('ZERO ENTROPY: generateReadme on the live tree is deterministic (run twice ⇒ identical)', () => {
-    expect(generateReadme()).toBe(generateReadme())
+  it('deriveModel includes corpus analytics rollup', () => {
+    const m = deriveModel()
+    expect(m.analytics.folderCount).toBeGreaterThan(100)
+    expect(m.analytics.byHoro.length).toBeGreaterThan(0)
+    expect(m.analytics.distinctStandards).toBeGreaterThan(10)
+  })
+
+  it('ZERO ENTROPY: renderReadme on deriveModel is byte-identical', () => {
+    const m = deriveModel()
+    expect(renderReadme(m)).toBe(renderReadme(m))
   })
 })
 
@@ -215,12 +221,12 @@ describe('readme — per-folder debit/credit statement', () => {
     expect(renderFolderReadme(m)).toContain('## [[standards]]')
   })
 
-  it('aggregateCorpusAnalytics is deterministic', () => {
-    const a = deriveCorpusAnalytics()
-    const b = deriveCorpusAnalytics()
-    expect(a).toEqual(b)
-    expect(a.folderCount).toBeGreaterThan(100)
-    expect(a.distinctStandards).toBeGreaterThan(10)
+  it('aggregateCorpusAnalytics is deterministic on a fixed slice', () => {
+    const ctx = buildReadmeCorpusContext()
+    const graph = buildReadmeTypographyGraph()
+    const sample = ['readme', 'cloudflare', 'database', 'standards', 'horo']
+    const models = sample.map((p) => deriveFolderModel(p, process.cwd(), ctx, graph))
+    expect(aggregateCorpusAnalytics(models)).toEqual(aggregateCorpusAnalytics(models))
   })
 
   it('buildBindingsByAtom maps TYPE_LINKS atoms', () => {

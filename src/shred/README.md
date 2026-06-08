@@ -25,7 +25,7 @@
 
 - partition `shred` · sub-root `c92d2177-3509-8029-b0ba-d54b799fef78`
 - bond degree `48` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `407c5394-8ccb-8b96-8c92-ddc2f759285d` · framed by typography partition `shred` bonds `48` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `2e868429-8dd5-8fa1-b0c0-634ec9a3391c` · framed by typography partition `shred` bonds `48` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -2,7 +2,7 @@
 
 # anchoring
 
-> atom `anchoring` · horo `—` `—` · [[balance]] `1` · [[seal]] `0`
+> atom `anchoring` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -11,10 +11,10 @@
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[horo]]/off-ring `1` |
-| [[balance]] `1` | [[liability]]/[[identity]]/uuid `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
 | [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
@@ -24,21 +24,50 @@
 ## typography graph
 
 - partition `anchoring` · sub-root `d680be10-fe5c-87ae-b7e2-eb63119945e5`
-- bond degree `9` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `18` · analysis neighbors —
+- graph root `1c65e160-5137-86a1-ad8e-dc86b0e96873`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `Conservation Law 55/62 (tamper cost; the anchor is mandatory external entropy)` · banner
+- `eIDAS` · catalogue
+- `EU-2014/55` · catalogue
+- `EU-2018/1673` · catalogue
+- `EU-2018/1725` · catalogue
+- `EU-2018/302` · catalogue
+- `EU-2018/389-SCA-RTS` · catalogue
+- `EU-2018/843` · catalogue
+- `EU-2018/957` · catalogue
+- `EU-537/2014` · catalogue
+- `EU-910/2014` · catalogue
+- `ISO 19011:2018 §6.4.6 (third-party-verifiable audit trail)` · banner
+- `ISO-19011` · catalogue
+- `RFC 3161 (TSA) · eIDAS (EU 910/2014) — the real external anchors` · banner
+- `W3C Verifiable Credentials Data Model 2.0` · banner
+- `W3C-VC-2.0` · catalogue
+
+## analytics
+
+- bond degree `18` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `16`
 
 ## identity
 
-- uuid `—`
-- bonds in `0` · out `0`
+- uuid `d680be10-fe5c-87ae-b7e2-eb63119945e5`
+- bonds in `6` · out `6`
 - trinity form·code·proof `1`·`1`·`1`
 - links `7` / `7`
-- folded `0` · escapes `0`
+- folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `7b9bec8a-6453-8bbc-a4ef-97080561cda7` · framed by typography partition `anchoring` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `19136e0d-9bb7-8196-990a-b3739c21d879` · framed by typography partition `anchoring` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>

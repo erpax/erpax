@@ -23,7 +23,7 @@
 
 - partition `flow` · sub-root `2f86cc0b-d49a-817e-bd5b-46fb656c059c`
 - bond degree `74` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `78bbce75-1c3a-8b35-a9c0-408bc7ef0e1f` · framed by typography partition `flow` bonds `74` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e215362f-5ce0-8f43-93ad-87232830fed7` · framed by typography partition `flow` bonds `74` · `pnpm readme` · `pnpm readme:check`</sub>

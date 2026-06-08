@@ -23,7 +23,7 @@
 
 - partition `sporting` · sub-root `d6a171a9-f824-8630-866a-72a7ba071631`
 - bond degree `16` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `a37f547d-200e-8135-a851-55e957acc49b` · framed by typography partition `sporting` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f84372d2-aea1-82e2-b301-6ad3028978b6` · framed by typography partition `sporting` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

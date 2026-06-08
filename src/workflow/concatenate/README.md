@@ -25,7 +25,7 @@
 
 - partition `workflow` · sub-root `c55e2d9d-0ed3-8f77-b802-adce4bd48e46`
 - bond degree `32` · analysis neighbors `aura`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `55c42d80-181d-8ec4-bc38-92f24f5735a9` · framed by typography partition `workflow` bonds `32` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `89334e7f-e85a-8027-b69d-503ca634dab9` · framed by typography partition `workflow` bonds `32` · `pnpm readme` · `pnpm readme:check`</sub>

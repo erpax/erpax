@@ -23,7 +23,7 @@
 
 - partition `laser` · sub-root `5dec0a24-0dc2-8995-91ea-2c6ff88f68c8`
 - bond degree `14` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `dfcbd539-bf86-8679-b73e-44bf10af6d06` · framed by typography partition `laser` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `432c6964-3c70-87b9-aeba-56c485ac7e4d` · framed by typography partition `laser` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>

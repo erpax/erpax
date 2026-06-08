@@ -23,7 +23,7 @@
 
 - partition `grocery` · sub-root `dd8b8fe6-af11-8901-8300-5e1530b38f20`
 - bond degree `10` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `20fb1905-be7b-8a2d-8c4a-70c41fa3aef0` · framed by typography partition `grocery` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `05a4b369-3810-8a5a-ae1e-4586ea689c24` · framed by typography partition `grocery` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>

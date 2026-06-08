@@ -22,13 +22,27 @@
 ## typography graph
 
 - partition `buddhist` · sub-root `405571da-9653-8ad4-a328-726ce611e855`
-- bond degree `24` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `16` · analysis neighbors —
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `16` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
 - uuid `405571da-9653-8ad4-a328-726ce611e855`
-- bonds in `9` · out `9`
+- bonds in `5` · out `5`
 - trinity form·code·proof `1`·`0`·`0`
 - links `5` / `5`
 - folded `1` · escapes `0`
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `234c00c3-bae0-81e2-89a0-72761fc465f6` · framed by typography partition `buddhist` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ac77fee4-b1ea-8d30-ad39-69abd70894e9` · framed by typography partition `buddhist` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `toy` · sub-root `14144490-67dd-8b99-a6ba-a3a9697e3f43`
 - bond degree `18` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `3d19a018-5a31-82c7-abca-92a103f0b211` · framed by typography partition `toy` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `371411c6-0bca-8388-aea8-76a793d77b23` · framed by typography partition `toy` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>

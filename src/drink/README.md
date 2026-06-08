@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `drink` · sub-root `ef4b9fc4-d826-8439-b82e-d95f8d0ca74d`
-- bond degree `13` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `15` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `ef4b9fc4-d826-8439-b82e-d95f8d0ca74d`
-- bonds in `4` · out `4`
+- bonds in `5` · out `5`
 - trinity form·code·proof `1`·`0`·`0`
 - links `5` / `5`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `6af75813-c946-8bb2-ab84-92b4a5554bed` · framed by typography partition `drink` bonds `13` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `4f6fbd45-b8be-88ae-ae9b-74db6d9b0117` · framed by typography partition `drink` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

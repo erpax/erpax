@@ -2,7 +2,7 @@
 
 # worker
 
-> atom `worker` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `worker` · horo `7` `descent` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -10,33 +10,34 @@
 | -------- | --------- |
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
 | [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
-| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[asset]]/[[links]]/resolved `25` | [[balance]] `25` |
+| [[balance]] `1` | [[liability]]/[[links]]/dangling `1` |
 | [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
 | [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
 | [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
-| Σ `7` | Σ `7` |
+| Σ `32` | Σ `32` |
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
 ## typography graph
 
 - partition `worker` · sub-root `a7422363-338f-85ed-8106-cc0f64fef750`
-- bond degree `28` · analysis neighbors `diamond`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `28` · analysis neighbors `agent` · `diamond`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
 - uuid `428a4c23-72fd-8b99-9dbd-8433f23ae48b`
 - bonds in `4` · out `4`
 - trinity form·code·proof `1`·`0`·`0`
-- links `23` / `23`
+- links `25` / `26`
 - folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `sealed` — [[purity]] · [[seal]] · [[diamond]]
+- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `9f321c17-2e1c-83f8-963b-fd46782ff831` · framed by typography partition `worker` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `268ecd91-e8ff-8174-aced-a2ccd60aa35b` · framed by typography partition `worker` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -2,7 +2,7 @@
 
 # agent
 
-> atom `agent` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
+> atom `agent` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -24,13 +24,47 @@
 ## typography graph
 
 - partition `agent` · sub-root `6b0b62ea-3947-81da-b55b-1d66462cc188`
-- bond degree `181` · analysis neighbors `aura` · `diamond`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `251` · analysis neighbors `agent` · `ai` · `aura` · `booking` · `chat` · `class` · `cloudflare` · `communication` · `decentralization` · `diamond` · `drone` · `ecosystem` · `estate` · `gravity` · `hallucination` · `infectious` · `interaction` · `log` · `mcp` · `observe` · `real` · `reference` · `request` · `research` · `reversibility` · `skill` · `skills` · `statistic` · `team` · `types` · `unavoidable` · `worker`
+- graph root `1c65e160-5137-86a1-ad8e-dc86b0e96873`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `EU-2018/1673` · catalogue
+- `EU-2018/1725` · catalogue
+- `EU-2018/302` · catalogue
+- `EU-2018/389-SCA-RTS` · catalogue
+- `EU-2018/843` · catalogue
+- `EU-2018/957` · catalogue
+- `EU-2023/1113` · catalogue
+- `EU-2023/2854` · catalogue
+- `EU-2023/956-CBAM` · catalogue
+- `ILO-C001` · catalogue
+- `ISO-19011` · catalogue
+- `ISO-27001` · catalogue
+- `ISO/IEC-12207` · catalogue
+- `ISO/IEC-25010` · catalogue
+- `ISO/IEC-27001:2022` · catalogue
+- `MCP` · catalogue
+- `NIST-FIPS-180-4` · catalogue
+- `RFC-4122` · catalogue
+- `RFC-9562` · catalogue
+- `SFIA` · catalogue
+- `W3C-ActivityPub` · catalogue
+
+## analytics
+
+- bond degree `251` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `21`
 
 ## identity
 
-- uuid `9e40539f-0528-8963-8bf3-c0d7ef289faa`
-- bonds in `52` · out `53`
+- uuid `fe5cfadf-1598-87bf-9a01-94aacd043a09`
+- bonds in `69` · out `69`
 - trinity form·code·proof `1`·`1`·`1`
 - links `60` / `60`
 - folded `1` · escapes `0`
@@ -41,4 +75,4 @@
 
 ---
 
-<sub>content-uuid `101510d1-9259-81d3-95c1-40bd37243ed3` · framed by typography partition `agent` bonds `181` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e91da1ad-15b6-82ed-83a5-eed50bd95f77` · framed by typography partition `agent` bonds `251` · `pnpm readme` · `pnpm readme:check`</sub>

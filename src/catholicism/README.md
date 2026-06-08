@@ -2,17 +2,17 @@
 
 # catholicism
 
-> atom `catholicism` · horo `—` `—` · [[balance]] `1` · [[seal]] `0`
+> atom `catholicism` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[horo]]/off-ring `1` |
-| [[balance]] `1` | [[liability]]/[[identity]]/uuid `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
 | [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `7` | Σ `7` |
@@ -22,21 +22,35 @@
 ## typography graph
 
 - partition `catholicism` · sub-root `4554f61f-6885-8e3a-a67b-27ce9966278f`
-- bond degree `24` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `59` · analysis neighbors `diamond`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `59` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
-- uuid `—`
-- bonds in `0` · out `0`
+- uuid `4554f61f-6885-8e3a-a67b-27ce9966278f`
+- bonds in `19` · out `19`
 - trinity form·code·proof `1`·`0`·`0`
 - links `45` / `45`
-- folded `0` · escapes `0`
+- folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `7fb3a2c4-4ede-8bd8-9c0c-8a762ed9caa0` · framed by typography partition `catholicism` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e7dfaaed-3707-822d-a38d-66cccee6cb62` · framed by typography partition `catholicism` bonds `59` · `pnpm readme` · `pnpm readme:check`</sub>

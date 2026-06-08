@@ -24,13 +24,28 @@
 ## typography graph
 
 - partition `boltzmann` · sub-root `4618156b-109a-8e4d-bbfc-b8a26cd61225`
-- bond degree `24` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `32` · analysis neighbors —
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `S = k·ln W, inverse W = e^(S/k), Gibbs S = −k·Σ pᵢ ln pᵢ -- all computed` · banner
+- `SI-2019 exact: k_B = 1.380649e-23 J/K` · banner
+
+## analytics
+
+- bond degree `32` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `2`
 
 ## identity
 
 - uuid `4618156b-109a-8e4d-bbfc-b8a26cd61225`
-- bonds in `6` · out `6`
+- bonds in `10` · out `10`
 - trinity form·code·proof `1`·`1`·`1`
 - links `16` / `16`
 - folded `1` · escapes `0`
@@ -41,4 +56,4 @@
 
 ---
 
-<sub>content-uuid `8e0fc4c4-6305-80b9-86cc-304f08b8201f` · framed by typography partition `boltzmann` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `960de2a8-ed0a-87f3-9db5-84d1779394a2` · framed by typography partition `boltzmann` bonds `32` · `pnpm readme` · `pnpm readme:check`</sub>

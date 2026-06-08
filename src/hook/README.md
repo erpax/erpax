@@ -23,7 +23,7 @@
 
 - partition `hook` · sub-root `3862969b-2c32-8e17-a522-fe48fdf96f22`
 - bond degree `24` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `04c9ee50-9a57-8b21-b940-490fe1f94893` · framed by typography partition `hook` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `2a8e5c84-fb53-8b67-98af-a942c80d9c16` · framed by typography partition `hook` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>

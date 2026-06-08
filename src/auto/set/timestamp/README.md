@@ -2,7 +2,7 @@
 
 # timestamp
 
-> atom `auto/set/timestamp` · horo `1` `base` · [[balance]] `1` · [[seal]] `0`
+> atom `auto/set/timestamp` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -11,7 +11,7 @@
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
 | [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
 | [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
@@ -24,21 +24,45 @@
 ## typography graph
 
 - partition `auto` · sub-root `fb1afd9b-bd8f-8c8d-8f4e-d2d40410747f`
-- bond degree `21` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `17` · analysis neighbors —
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `EU-2019/1150` · catalogue
+- `EU-2019/1152` · catalogue
+- `EU-2019/1937` · catalogue
+- `EU-2019/2161` · catalogue
+- `EU-2019/770` · catalogue
+- `EU-2019/771` · catalogue
+- `EU-Intrastat-Reg-2019/2152` · catalogue
+- `ISO-19011:2018 audit-trail status-transition-timestamp` · banner
+- `ISO-8601-1` · catalogue
+- `ISO-8601-1:2019 date-time utc-canonical` · banner
+- `SOX §404 internal-controls verifiable-event-time` · banner
+
+## analytics
+
+- bond degree `17` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `11`
 
 ## identity
 
-- uuid `1319fa4e-c41c-8ca6-ae39-4795cf0cc5c1`
-- bonds in `6` · out `6`
+- uuid `f1315e2f-dc98-82e5-8895-023111e49072`
+- bonds in `5` · out `6`
 - trinity form·code·proof `1`·`1`·`1`
 - links `5` / `5`
-- folded `0` · escapes `0`
+- folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `c1a06547-4a9a-868e-8e5a-84be8549e8e4` · framed by typography partition `auto` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `03b9fddc-13c8-846a-a515-a9d7638c8b7d` · framed by typography partition `auto` bonds `17` · `pnpm readme` · `pnpm readme:check`</sub>

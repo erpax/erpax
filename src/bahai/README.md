@@ -2,17 +2,17 @@
 
 # bahai
 
-> atom `bahai` · horo `—` `—` · [[balance]] `1` · [[seal]] `0`
+> atom `bahai` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[horo]]/off-ring `1` |
-| [[balance]] `1` | [[liability]]/[[identity]]/uuid `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
 | [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `7` | Σ `7` |
@@ -22,21 +22,35 @@
 ## typography graph
 
 - partition `bahai` · sub-root `e3b63286-3fbf-801b-aa1d-374c44cd05a1`
-- bond degree `20` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `47` · analysis neighbors `diamond`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `47` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
-- uuid `—`
-- bonds in `0` · out `0`
+- uuid `e3b63286-3fbf-801b-aa1d-374c44cd05a1`
+- bonds in `15` · out `15`
 - trinity form·code·proof `1`·`0`·`0`
 - links `43` / `43`
-- folded `0` · escapes `0`
+- folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `12b69330-445e-8528-89d6-1d15140a331d` · framed by typography partition `bahai` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `89beef91-e79e-8eac-9ec7-aebe941103d2` · framed by typography partition `bahai` bonds `47` · `pnpm readme` · `pnpm readme:check`</sub>

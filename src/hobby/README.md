@@ -23,7 +23,7 @@
 
 - partition `hobby` · sub-root `4f3ea5e1-df4a-86d9-b575-341e8ba1ede6`
 - bond degree `130` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `0232975b-1112-8915-a51e-4b4743e38959` · framed by typography partition `hobby` bonds `130` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `baa3ef84-aa77-8a00-82ce-12ab3c01c0d3` · framed by typography partition `hobby` bonds `130` · `pnpm readme` · `pnpm readme:check`</sub>

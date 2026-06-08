@@ -2,7 +2,7 @@
 
 # industry
 
-> atom `ai/industry` · horo `2` `share` · [[balance]] `1` · [[seal]] `0`
+> atom `ai/industry` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -11,7 +11,7 @@
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
 | [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
 | [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
@@ -24,8 +24,8 @@
 ## typography graph
 
 - partition `ai` · sub-root `2d3a90be-68d2-8eac-ba70-c4c58554dc58`
-- bond degree `34` · analysis neighbors `diamond` · `hallucination` · `purity` · `quantum/boundary` · `tamper/import`
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- bond degree `64` · analysis neighbors `diamond`
+- graph root `1c65e160-5137-86a1-ad8e-dc86b0e96873`
 
 ## [[cloudflare]] bindings
 
@@ -39,22 +39,22 @@
 
 ## analytics
 
-- bond degree `34` · sealed `0` · horo `2`
+- bond degree `64` · sealed `1` · horo `4`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `3`
 
 ## identity
 
-- uuid `a713f0f5-7d70-8a2a-8295-05c926a85b63`
-- bonds in `3` · out `3`
+- uuid `1419d023-4718-8c52-985e-21600d5ddac0`
+- bonds in `20` · out `21`
 - trinity form·code·proof `1`·`1`·`1`
 - links `40` / `40`
-- folded `0` · escapes `0`
+- folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `4ea8d511-bb03-8287-9bee-88546a3a1fbe` · framed by typography partition `ai` bonds `34` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d4ca82ba-e789-80db-a1a9-519a4974e8fb` · framed by typography partition `ai` bonds `64` · `pnpm readme` · `pnpm readme:check`</sub>

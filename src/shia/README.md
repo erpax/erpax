@@ -23,7 +23,7 @@
 
 - partition `shia` · sub-root `8c9f9ddf-9297-8fee-8ef8-1a16ce86dac5`
 - bond degree `23` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `b2d96880-e3c6-808e-aaff-196db980b2d3` · framed by typography partition `shia` bonds `23` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `675afd2e-8500-8efe-849f-57ae12f48ec2` · framed by typography partition `shia` bonds `23` · `pnpm readme` · `pnpm readme:check`</sub>

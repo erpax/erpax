@@ -23,7 +23,21 @@
 
 - partition `accrual` · sub-root `66e37f7c-b9d2-8153-a80d-1f65f135c4f0`
 - bond degree `36` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `1c65e160-5137-86a1-ad8e-dc86b0e96873`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `36` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `bb1123ce-1e58-86f9-9f1b-08c1617a9c9e` · framed by typography partition `accrual` bonds `36` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c9cd9270-cb7d-8233-9644-5220e7c12b62` · framed by typography partition `accrual` bonds `36` · `pnpm readme` · `pnpm readme:check`</sub>

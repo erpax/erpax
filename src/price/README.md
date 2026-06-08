@@ -23,7 +23,7 @@
 
 - partition `price` · sub-root `7f764a8c-2eb3-877f-a979-6c1206c4be8b`
 - bond degree `54` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `8706845d-c66f-8436-83b8-a638f860d63c` · framed by typography partition `price` bonds `54` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ca3be635-bf15-88cb-b5dc-49aca917790d` · framed by typography partition `price` bonds `54` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `season` · sub-root `9df00562-c211-8481-a0cb-105287b64a16`
 - bond degree `50` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `97798cc2-02e0-8c57-913e-b4c950254be6` · framed by typography partition `season` bonds `50` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e619a05e-522b-83af-ae6a-582abb573220` · framed by typography partition `season` bonds `50` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -2,7 +2,7 @@
 
 # corpus
 
-> atom `corpus` · horo `—` `—` · [[balance]] `1` · [[seal]] `0`
+> atom `corpus` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -11,10 +11,10 @@
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[horo]]/off-ring `1` |
-| [[balance]] `1` | [[liability]]/[[identity]]/uuid `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
 | [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
@@ -24,21 +24,21 @@
 ## typography graph
 
 - partition `corpus` · sub-root `60c3b068-6ff2-87a8-ab12-6fc6e08f1d76`
-- bond degree `4` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `3` · analysis neighbors —
+- graph root `08417410-9529-8662-a45d-0e6296f0598e`
 
 ## identity
 
-- uuid `—`
-- bonds in `0` · out `0`
+- uuid `60c3b068-6ff2-87a8-ab12-6fc6e08f1d76`
+- bonds in `1` · out `1`
 - trinity form·code·proof `1`·`1`·`1`
 - links `1` / `1`
-- folded `0` · escapes `0`
+- folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `4b5d41f1-9802-8527-bba1-d4d7e47068de` · framed by typography partition `corpus` bonds `4` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `af21374e-e78b-8af6-8245-d5d5a2663f2c` · framed by typography partition `corpus` bonds `3` · `pnpm readme` · `pnpm readme:check`</sub>

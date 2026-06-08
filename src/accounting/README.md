@@ -2,7 +2,7 @@
 
 # accounting
 
-> atom `accounting` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
+> atom `accounting` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -24,13 +24,39 @@
 ## typography graph
 
 - partition `accounting` · sub-root `8b33fe24-86ed-890b-bd50-163f8f64b128`
-- bond degree `735` · analysis neighbors `aura` · `diamond` · `hallucination` · `purity`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `739` · analysis neighbors `aura`
+- graph root `1c65e160-5137-86a1-ad8e-dc86b0e96873`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `EU-2015/847` · catalogue
+- `EU-2015/849` · catalogue
+- `EU-2019/1150` · catalogue
+- `EU-2019/1152` · catalogue
+- `EU-2019/1937` · catalogue
+- `EU-2019/2161` · catalogue
+- `EU-2019/770` · catalogue
+- `EU-2019/771` · catalogue
+- `EU-Intrastat-Reg-2019/2152` · catalogue
+- `IEEE-754` · catalogue
+- `ISO-4217` · catalogue
+- `ISO-8601-1` · catalogue
+- `re-exports only; the truth lives in the leaf modules (debit-credit / reports.service / financial-analysis / margin)` · banner
+
+## analytics
+
+- bond degree `739` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `13`
 
 ## identity
 
-- uuid `ad355258-c719-81be-b94f-269e50dd133a`
-- bonds in `225` · out `221`
+- uuid `fd3e612d-c5be-8dcb-a973-232bb1198fa2`
+- bonds in `228` · out `225`
 - trinity form·code·proof `1`·`1`·`1`
 - links `79` / `79`
 - folded `1` · escapes `0`
@@ -41,4 +67,4 @@
 
 ---
 
-<sub>content-uuid `45166740-b189-8c33-8093-e2155bbf8f1b` · framed by typography partition `accounting` bonds `735` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `28678515-0078-81ef-b686-ab92cc67b4bf` · framed by typography partition `accounting` bonds `739` · `pnpm readme` · `pnpm readme:check`</sub>

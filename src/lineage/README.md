@@ -23,7 +23,7 @@
 
 - partition `lineage` · sub-root `d2716b54-26bb-878e-bd2f-be75d6687051`
 - bond degree `46` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `220c779d-35ef-8343-8c4e-75845d48c575` · framed by typography partition `lineage` bonds `46` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `715733ca-2fd1-869b-b4d5-dcf294dcd721` · framed by typography partition `lineage` bonds `46` · `pnpm readme` · `pnpm readme:check`</sub>

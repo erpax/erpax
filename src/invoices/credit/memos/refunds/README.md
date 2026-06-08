@@ -25,7 +25,7 @@
 
 - partition `invoices` · sub-root `ef180ebe-02df-87e7-bd19-e59ea8c64805`
 - bond degree `23` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `fde0e484-a753-8a81-9304-79d6d5f3fa9f` · framed by typography partition `invoices` bonds `23` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `2379575c-914a-881f-8729-2227835f20b2` · framed by typography partition `invoices` bonds `23` · `pnpm readme` · `pnpm readme:check`</sub>

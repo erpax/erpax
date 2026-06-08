@@ -23,7 +23,7 @@
 
 - partition `reconciliation` · sub-root `84acb7e3-30cc-8756-a411-d424b6e34433`
 - bond degree `22` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `5865049e-bd80-8a98-8027-9653c2cb59c1` · framed by typography partition `reconciliation` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `706d523d-cb45-832f-8b0c-61ab7ac56b93` · framed by typography partition `reconciliation` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>

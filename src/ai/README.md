@@ -24,8 +24,8 @@
 ## typography graph
 
 - partition `ai` · sub-root `2d3a90be-68d2-8eac-ba70-c4c58554dc58`
-- bond degree `44` · analysis neighbors `agent` · `cloudflare` · `diamond` · `secret`
-- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+- bond degree `48` · analysis neighbors `agent` · `cloudflare` · `diamond` · `secret`
+- graph root `1c65e160-5137-86a1-ad8e-dc86b0e96873`
 
 ## [[cloudflare]] bindings
 
@@ -82,14 +82,14 @@
 
 ## analytics
 
-- bond degree `44` · sealed `1` · horo `2`
+- bond degree `48` · sealed `1` · horo `2`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `2` · standards `45`
 
 ## identity
 
-- uuid `76b57c9d-9ec1-833f-a3eb-6ed37e897098`
-- bonds in `11` · out `12`
+- uuid `b3b0066a-e1d6-8a07-89b5-9fa59c6670d4`
+- bonds in `13` · out `14`
 - trinity form·code·proof `1`·`1`·`1`
 - links `2` / `2`
 - folded `1` · escapes `0`
@@ -100,4 +100,4 @@
 
 ---
 
-<sub>content-uuid `27636969-ca0c-842b-834c-1fa2408ad6b0` · framed by typography partition `ai` bonds `44` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `eb872c28-0709-8921-8713-a56c2391f99c` · framed by typography partition `ai` bonds `48` · `pnpm readme` · `pnpm readme:check`</sub>

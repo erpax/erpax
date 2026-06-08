@@ -23,7 +23,7 @@
 
 - partition `trellis` · sub-root `e3a6d276-5d31-8fda-8d39-db48c5a48776`
 - bond degree `18` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `661497ed-aec6-8025-b0b3-6eae4f214524` · framed by typography partition `trellis` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `73c80663-a736-81df-ae2b-afbd7b33649b` · framed by typography partition `trellis` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>

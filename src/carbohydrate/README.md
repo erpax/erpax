@@ -22,13 +22,27 @@
 ## typography graph
 
 - partition `carbohydrate` · sub-root `639a20eb-afe1-88f3-9759-4582678d9edc`
-- bond degree `20` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `16` · analysis neighbors —
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `16` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
 - uuid `639a20eb-afe1-88f3-9759-4582678d9edc`
-- bonds in `7` · out `7`
+- bonds in `5` · out `5`
 - trinity form·code·proof `1`·`0`·`0`
 - links `5` / `5`
 - folded `1` · escapes `0`
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `eeb2693d-89c6-8831-a4e8-87e987714270` · framed by typography partition `carbohydrate` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d76b9986-4b84-8c35-bc6c-7ebfbd5d16df` · framed by typography partition `carbohydrate` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

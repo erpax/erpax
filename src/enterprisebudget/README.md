@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `enterprisebudget` · sub-root `5e393942-8f43-8ef6-aaae-72d1e26dfbe5`
-- bond degree `47` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `38` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `5e393942-8f43-8ef6-aaae-72d1e26dfbe5`
-- bonds in `16` · out `17`
+- bonds in `12` · out `12`
 - trinity form·code·proof `1`·`0`·`0`
 - links `26` / `26`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `f6fac598-aa05-826b-a0d1-da9b5cde00a3` · framed by typography partition `enterprisebudget` bonds `47` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0947f879-83b0-8429-9bb6-3a93bd1fa62c` · framed by typography partition `enterprisebudget` bonds `38` · `pnpm readme` · `pnpm readme:check`</sub>

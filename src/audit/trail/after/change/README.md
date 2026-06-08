@@ -2,7 +2,7 @@
 
 # change
 
-> atom `audit/trail/after/change` · horo `8` `crest` · [[balance]] `1` · [[seal]] `0`
+> atom `audit/trail/after/change` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -11,7 +11,7 @@
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
 | [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
 | [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
@@ -24,21 +24,41 @@
 ## typography graph
 
 - partition `audit` · sub-root `798aecfe-af8a-8d6c-9989-a51055e00adf`
-- bond degree `40` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `19` · analysis neighbors —
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ISO-19011:2018 §6.4.6 audit-evidence-collection` · banner
+- `NIST FIPS-180-4 sha-256` · banner
+- `NIST-FIPS-180-4` · catalogue
+- `RFC-9562` · catalogue
+- `rfc-9562 uuid event-id` · banner
+- `SOC-2 CC4.1 monitoring-and-evaluation` · banner
+- `SOX §404 internal-controls evidence-preservation` · banner
+
+## analytics
+
+- bond degree `19` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `7`
 
 ## identity
 
-- uuid `33e957c2-adf0-813a-9a9b-883f282725d4`
-- bonds in `15` · out `15`
+- uuid `21431e57-6817-8be0-ac40-c56c7e91f317`
+- bonds in `5` · out `7`
 - trinity form·code·proof `1`·`1`·`1`
 - links `4` / `4`
-- folded `0` · escapes `0`
+- folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `9da17fc6-83fc-8cd0-aafc-340b83639b88` · framed by typography partition `audit` bonds `40` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c5598b6c-d154-8926-8014-6739cb56e629` · framed by typography partition `audit` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>

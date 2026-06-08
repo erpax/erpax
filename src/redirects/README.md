@@ -23,7 +23,7 @@
 
 - partition `redirects` · sub-root `040607b0-444d-8303-bee7-cdddcbae7309`
 - bond degree `19` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `bc6b83d4-cf1d-8f19-8632-d47a42978232` · framed by typography partition `redirects` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `469a5e1f-9029-8985-a257-eacfd2fea9f8` · framed by typography partition `redirects` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `evapotranspiration` · sub-root `0d1091aa-c52d-82be-90cf-4b52d1f15d8e`
-- bond degree `25` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `33` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `0d1091aa-c52d-82be-90cf-4b52d1f15d8e`
-- bonds in `6` · out `6`
+- bonds in `10` · out `10`
 - trinity form·code·proof `1`·`0`·`0`
 - links `18` / `18`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `dd8fb8ef-c977-8664-8301-4c675fa2ba7a` · framed by typography partition `evapotranspiration` bonds `25` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `454ca487-ea7f-8af6-9cd5-81208cd57e99` · framed by typography partition `evapotranspiration` bonds `33` · `pnpm readme` · `pnpm readme:check`</sub>

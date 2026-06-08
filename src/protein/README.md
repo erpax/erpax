@@ -23,7 +23,7 @@
 
 - partition `protein` · sub-root `eb1799e0-3ce5-8cb5-bd09-c45d4191fb0f`
 - bond degree `13` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `e4acfc6e-aecf-8b2d-890b-05b2e9973cce` · framed by typography partition `protein` bonds `13` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `8e0a01fa-c931-857c-9f4e-08c4070dd83f` · framed by typography partition `protein` bonds `13` · `pnpm readme` · `pnpm readme:check`</sub>

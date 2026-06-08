@@ -24,8 +24,8 @@
 ## typography graph
 
 - partition `ui` · sub-root `e426b88f-b143-8f66-bf3d-7a7b9766a41b`
-- bond degree `181` · analysis neighbors `aura` · `diamond`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `218` · analysis neighbors `agent` · `ai` · `aura` · `booking` · `chat` · `class` · `cloudflare` · `communication` · `decentralization` · `diamond` · `drone` · `ecosystem` · `estate` · `gravity` · `hallucination` · `infectious` · `interaction` · `log` · `mcp` · `observe` · `real` · `reference` · `request` · `research` · `reversibility` · `skill` · `skills` · `statistic` · `team` · `types` · `unavoidable` · `worker`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `00ed2b0e-9873-8f71-86d0-8e11457273c1` · framed by typography partition `ui` bonds `181` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ec7f3625-2791-86f2-9f42-d8f11cf40c8e` · framed by typography partition `ui` bonds `218` · `pnpm readme` · `pnpm readme:check`</sub>

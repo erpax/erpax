@@ -23,7 +23,21 @@
 
 - partition `alley` · sub-root `1e4cb938-0c1e-85a5-94cf-455b36f1a8a2`
 - bond degree `16` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `1c65e160-5137-86a1-ad8e-dc86b0e96873`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `16` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `b03b1730-2540-8768-a31b-f3388b04a148` · framed by typography partition `alley` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `32fe1cea-b697-8742-8da3-d57bc9410022` · framed by typography partition `alley` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

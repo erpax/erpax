@@ -25,7 +25,7 @@
 
 - partition `humandesign` · sub-root `addfa438-0c14-890f-8f33-0cfdd1a53bef`
 - bond degree `18` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `0ee220b5-56e9-8034-9ad2-07f152ea836e` · framed by typography partition `humandesign` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `28b2a531-e9ad-829a-8321-73ba543cf755` · framed by typography partition `humandesign` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>

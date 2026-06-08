@@ -23,7 +23,21 @@
 
 - partition `alcohol` · sub-root `d5e5f4fc-ede9-8940-81ed-d284bd6c7868`
 - bond degree `16` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `1c65e160-5137-86a1-ad8e-dc86b0e96873`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `16` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `212ec828-24f6-8615-b005-c73fdf11a463` · framed by typography partition `alcohol` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `1bdb1eeb-f5d8-898b-b72c-48e582b80ff9` · framed by typography partition `alcohol` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

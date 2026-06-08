@@ -25,7 +25,7 @@
 
 - partition `fiscal` · sub-root `cf5aa98e-ebac-8e2a-ac4c-50b4ac28b0e6`
 - bond degree `113` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `4ac29253-5317-8141-a326-d3e454832847` · framed by typography partition `fiscal` bonds `113` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d9cb02f5-e9a4-8c44-a7f7-685b310bd79d` · framed by typography partition `fiscal` bonds `113` · `pnpm readme` · `pnpm readme:check`</sub>

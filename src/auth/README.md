@@ -24,13 +24,35 @@
 ## typography graph
 
 - partition `auth` · sub-root `6534ea1f-c98a-8977-919f-968e8abcfd39`
-- bond degree `94` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `100` · analysis neighbors `diamond` · `hallucination` · `purity`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `NIST INCITS-359-2012 rbac object-scoped-role-assignment` · banner
+- `NIST INCITS-359-2012 role-based-access-control` · banner
+- `NIST SP-800-162 attribute-based-access-control` · banner
+- `NIST-INCITS-359-2012` · catalogue
+- `NIST-SP-800-162` · catalogue
+- `NIST-SP-800-63` · catalogue
+- `OWASP-ASVS` · catalogue
+- `OWASP-ASVS V4 access-control` · banner
+- `SOC-2 CC6.1 logical-access-controls` · banner
+
+## analytics
+
+- bond degree `100` · sealed `0` · horo `6`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `9`
 
 ## identity
 
 - uuid `6534ea1f-c98a-8977-919f-968e8abcfd39`
-- bonds in `28` · out `28`
+- bonds in `31` · out `31`
 - trinity form·code·proof `1`·`1`·`1`
 - links `14` / `14`
 - folded `1` · escapes `0`
@@ -41,4 +63,4 @@
 
 ---
 
-<sub>content-uuid `08b18979-bda6-825b-a53a-eb447e6bf6af` · framed by typography partition `auth` bonds `94` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `9b86d609-f84d-894c-9107-ef3349071b16` · framed by typography partition `auth` bonds `100` · `pnpm readme` · `pnpm readme:check`</sub>

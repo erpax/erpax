@@ -23,7 +23,7 @@
 
 - partition `veterinary` · sub-root `bd5d5c41-9c85-8663-acc0-2955aadb8d70`
 - bond degree `16` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `fe66a113-59b8-8f4f-a339-248517f66d29` · framed by typography partition `veterinary` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `86357b53-b679-83de-924b-a79e02e47d02` · framed by typography partition `veterinary` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

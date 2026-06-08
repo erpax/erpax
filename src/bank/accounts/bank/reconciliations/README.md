@@ -25,7 +25,40 @@
 
 - partition `bank` · sub-root `87606df1-5071-8b98-ac3b-0b1f53544470`
 - bond degree `34` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `EU-2002/58` · catalogue
+- `EU-2015/847` · catalogue
+- `EU-2015/849` · catalogue
+- `EU-2019/1150` · catalogue
+- `EU-2019/1152` · catalogue
+- `EU-2019/1937` · catalogue
+- `EU-2019/2161` · catalogue
+- `EU-2019/770` · catalogue
+- `EU-2019/771` · catalogue
+- `EU-Intrastat-Reg-2019/2152` · catalogue
+- `IFRS IAS-7 §6 §44 cash-flow-reconciliation` · banner
+- `ISO-19011:2018 §6.4.6 audit-evidence-bank-reconciliation` · banner
+- `ISO-20022` · catalogue
+- `ISO-20022 camt.053 bank-to-customer-statement (input)` · banner
+- `ISO-4217` · catalogue
+- `ISO-4217:2015 currency-codes` · banner
+- `ISO-8601-1` · catalogue
+- `ISO-8601-1:2019 date-time reconciliation-date` · banner
+- `SOX §404 internal-controls TOM-CSH-01 cash-balance-proof` · banner
+- `US-GAAP ASC-230 statement-of-cash-flows` · banner
+
+## analytics
+
+- bond degree `34` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `20`
 
 ## identity
 
@@ -41,4 +74,4 @@
 
 ---
 
-<sub>content-uuid `0a0f2a98-ecf1-8afc-af46-0dbf1dcb193a` · framed by typography partition `bank` bonds `34` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d83d718d-e44d-869c-b029-7506e382ebb6` · framed by typography partition `bank` bonds `34` · `pnpm readme` · `pnpm readme:check`</sub>

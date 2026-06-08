@@ -23,7 +23,7 @@
 
 - partition `virus` · sub-root `f6709678-4dad-81f4-a057-bde31ebb29a5`
 - bond degree `40` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `97dfe589-f5e3-8360-91a1-0f035769333f` · framed by typography partition `virus` bonds `40` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `3b97007d-597b-8630-a9d1-24409d7e30de` · framed by typography partition `virus` bonds `40` · `pnpm readme` · `pnpm readme:check`</sub>

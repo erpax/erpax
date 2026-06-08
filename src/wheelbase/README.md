@@ -23,7 +23,7 @@
 
 - partition `wheelbase` · sub-root `27801b12-c3b1-8ee1-a23c-dec08a1e741c`
 - bond degree `24` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `015eb76e-ddc9-8f1e-8fe6-087838644253` · framed by typography partition `wheelbase` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `227dcdbe-2560-84ca-96d9-6d78336f7f54` · framed by typography partition `wheelbase` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>

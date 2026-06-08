@@ -2,7 +2,7 @@
 
 # types
 
-> atom `entity/types` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
+> atom `entity/types` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -24,13 +24,13 @@
 ## typography graph
 
 - partition `entity` · sub-root `84762c87-e4f9-8e17-8f93-df67e4ac2792`
-- bond degree `49` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `75` · analysis neighbors `agent`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
-- uuid `54e9a6fa-48a6-80c4-aff4-395f79554e49`
-- bonds in `8` · out `6`
+- uuid `e0930aad-a89b-8e34-a6f3-cbbc597aab59`
+- bonds in `21` · out `24`
 - trinity form·code·proof `1`·`1`·`1`
 - links `1` / `1`
 - folded `1` · escapes `0`
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `5b0258ba-45b3-8e85-9f36-7ce9eff1c60c` · framed by typography partition `entity` bonds `49` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ac8e3656-0706-8cec-9f9d-ffc374efea31` · framed by typography partition `entity` bonds `75` · `pnpm readme` · `pnpm readme:check`</sub>

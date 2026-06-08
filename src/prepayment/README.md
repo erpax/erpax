@@ -23,7 +23,7 @@
 
 - partition `prepayment` · sub-root `20d51746-78e7-8d79-9d3a-53f141e1a1b8`
 - bond degree `18` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `2290cecf-44e9-8221-93e8-54d1ef68a22b` · framed by typography partition `prepayment` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `27d1577f-cbfe-84da-aff2-868d2a4734ef` · framed by typography partition `prepayment` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -25,7 +25,23 @@
 
 - partition `aura` · sub-root `863a5e37-ab12-800b-aa2e-be7556faeb44`
 - bond degree `49` · analysis neighbors `aura`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `each frame counts the live atoms at a horo position; the signal is computed per step` · banner
+- `each frame counts the live atoms at a horo position; the signal is computed per step, the join is the atom's horo` · banner
+- `the horo ring (1·2·4·8·7·5·9) · A432 signal per step · content-addressed colour/sound (the analog aura)` · banner
+
+## analytics
+
+- bond degree `49` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `3`
 
 ## identity
 
@@ -41,4 +57,4 @@
 
 ---
 
-<sub>content-uuid `964ae3e5-9028-8404-9dc3-fbe91341590f` · framed by typography partition `aura` bonds `49` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `658472be-8dad-807d-82f7-ab0f37bf0525` · framed by typography partition `aura` bonds `49` · `pnpm readme` · `pnpm readme:check`</sub>

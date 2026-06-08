@@ -23,7 +23,21 @@
 
 - partition `allergies` · sub-root `aaf99cc2-548f-870d-bd53-4955fe9c405b`
 - bond degree `12` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `1c65e160-5137-86a1-ad8e-dc86b0e96873`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `12` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `cccfcd7d-d0fe-87d0-8f26-77bb0866ba37` · framed by typography partition `allergies` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ebb540f7-977f-8983-b45b-4c72eddc8ee9` · framed by typography partition `allergies` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

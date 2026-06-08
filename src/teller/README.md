@@ -23,7 +23,7 @@
 
 - partition `teller` · sub-root `59adb2ed-0c12-85c5-a2ee-02c2182e67bf`
 - bond degree `24` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `02eed164-5712-84aa-a273-7f5bce4d96d8` · framed by typography partition `teller` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `51e1f208-bc22-8da8-8063-7d835d3974e8` · framed by typography partition `teller` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>

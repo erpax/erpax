@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `cooking` · sub-root `2abc5039-805e-8e44-ac09-dbb7644d36ef`
-- bond degree `62` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `15` · analysis neighbors —
+- graph root `08417410-9529-8662-a45d-0e6296f0598e`
 
 ## identity
 
 - uuid `2abc5039-805e-8e44-ac09-dbb7644d36ef`
-- bonds in `29` · out `28`
+- bonds in `5` · out `5`
 - trinity form·code·proof `1`·`0`·`0`
 - links `5` / `5`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `e7625504-c51b-8719-a54a-d9fb1f723c47` · framed by typography partition `cooking` bonds `62` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b4ad6368-79e5-876b-8ba4-1e1e2f586e35` · framed by typography partition `cooking` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

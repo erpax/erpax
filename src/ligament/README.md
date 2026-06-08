@@ -23,7 +23,7 @@
 
 - partition `ligament` · sub-root `4903c30f-4ffa-8e8d-b4c2-3d3ec9367fa9`
 - bond degree `32` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `83b05852-7bed-8b91-8875-b19df32a801b` · framed by typography partition `ligament` bonds `32` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `bc275924-c3bc-8315-946d-38d141b27d7d` · framed by typography partition `ligament` bonds `32` · `pnpm readme` · `pnpm readme:check`</sub>

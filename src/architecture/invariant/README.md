@@ -25,7 +25,56 @@
 
 - partition `architecture` · sub-root `66fe5a3e-24bf-891a-bead-173fbb6a8ec8`
 - bond degree `40` · analysis neighbors `aura` · `diamond`
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `BCP-47` · catalogue
+- `COSO-ERM-2017` · catalogue
+- `EN-16931` · catalogue
+- `EU-2017/1132` · catalogue
+- `EU-2017/828` · catalogue
+- `EU-2018/1673` · catalogue
+- `EU-2018/1725` · catalogue
+- `EU-2018/302` · catalogue
+- `EU-2018/389-SCA-RTS` · catalogue
+- `EU-2018/843` · catalogue
+- `EU-2018/957` · catalogue
+- `EU-2022/1925` · catalogue
+- `EU-2022/2065` · catalogue
+- `EU-2022/2554` · catalogue
+- `EU-2022/2555` · catalogue
+- `EU-2022/868` · catalogue
+- `EU-765/2008` · catalogue
+- `ILO-C001` · catalogue
+- `ISO-19011` · catalogue
+- `ISO-19011:2018 §6.4 audit-evidence-invariants` · banner
+- `ISO-27001` · catalogue
+- `ISO-27002` · catalogue
+- `ISO-27037` · catalogue
+- `ISO-37000` · catalogue
+- `ISO/IEC 25010:2023 quality-model` · banner
+- `ISO/IEC-12207` · catalogue
+- `ISO/IEC-25010` · catalogue
+- `ISO/IEC-27001:2022` · catalogue
+- `ISO/IEC-27002:2022` · catalogue
+- `MCP` · catalogue
+- `NIST-FIPS-180-4` · catalogue
+- `RFC-5545` · catalogue
+- `RFC-8785` · catalogue
+- `RFC-9562` · catalogue
+- `US-CTA-2021` · catalogue
+- `W3C-JSON-LD-1.1` · catalogue
+
+## analytics
+
+- bond degree `40` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `36`
 
 ## identity
 
@@ -41,4 +90,4 @@
 
 ---
 
-<sub>content-uuid `620cd64f-61ca-812a-b950-6b625fafd47c` · framed by typography partition `architecture` bonds `40` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `97d9c4b0-d4a0-8ece-ace2-ef20d8b86c8e` · framed by typography partition `architecture` bonds `40` · `pnpm readme` · `pnpm readme:check`</sub>

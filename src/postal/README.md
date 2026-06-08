@@ -23,7 +23,7 @@
 
 - partition `postal` · sub-root `e2b47328-aa57-801a-8df9-357504ece288`
 - bond degree `30` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `35e1889d-6511-8278-a6d1-1ec1f4b43eca` · framed by typography partition `postal` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `18137571-77bc-86c9-ae59-451163f6c35d` · framed by typography partition `postal` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>

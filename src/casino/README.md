@@ -22,13 +22,27 @@
 ## typography graph
 
 - partition `casino` · sub-root `6e1f71e3-3b90-8ff6-b21e-8d6c2162b9cf`
-- bond degree `15` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `9` · analysis neighbors —
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `9` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
 - uuid `6e1f71e3-3b90-8ff6-b21e-8d6c2162b9cf`
-- bonds in `6` · out `6`
+- bonds in `3` · out `3`
 - trinity form·code·proof `1`·`0`·`0`
 - links `3` / `3`
 - folded `1` · escapes `0`
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `6b22f0d8-30ec-85bf-b66c-2f15949b8388` · framed by typography partition `casino` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `666f5c89-0115-825a-a6ba-f79715810e52` · framed by typography partition `casino` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>

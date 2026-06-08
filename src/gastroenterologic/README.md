@@ -23,7 +23,7 @@
 
 - partition `gastroenterologic` · sub-root `f119f09b-c076-88ce-92c5-875c213c3762`
 - bond degree `12` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `565f0324-82a0-8c47-b5ee-3c8946ebe3f8` · framed by typography partition `gastroenterologic` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a928d54f-bd25-80d6-8b10-cb9dbea8b3b6` · framed by typography partition `gastroenterologic` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

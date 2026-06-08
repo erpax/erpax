@@ -23,7 +23,7 @@
 
 - partition `orthodoxy` · sub-root `7e4bfb97-dd13-815b-94fd-2698891c0565`
 - bond degree `29` · analysis neighbors `aura` · `diamond` · `hallucination` · `purity`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `7e9246aa-94a3-8baf-a3e4-2a155b386fee` · framed by typography partition `orthodoxy` bonds `29` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `3a5a0abd-30fb-8119-9a9a-e4536ce9e8e6` · framed by typography partition `orthodoxy` bonds `29` · `pnpm readme` · `pnpm readme:check`</sub>

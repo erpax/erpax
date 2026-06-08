@@ -23,7 +23,7 @@
 
 - partition `iupac` · sub-root `d4338da9-4cd2-8ac8-9873-ffebbb2fde52`
 - bond degree `13` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `d34cf2b6-0494-81ca-bbc3-740a304f030a` · framed by typography partition `iupac` bonds `13` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `9c3ac03f-1fe4-8b5b-bd37-3dcfbadfd906` · framed by typography partition `iupac` bonds `13` · `pnpm readme` · `pnpm readme:check`</sub>

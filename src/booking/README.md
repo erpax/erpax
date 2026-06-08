@@ -22,13 +22,27 @@
 ## typography graph
 
 - partition `booking` · sub-root `e1778417-9ecd-8679-9ccc-79eabab26480`
-- bond degree `18` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `35` · analysis neighbors `agent`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `35` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
 - uuid `e1778417-9ecd-8679-9ccc-79eabab26480`
-- bonds in `2` · out `2`
+- bonds in `10` · out `10`
 - trinity form·code·proof `1`·`0`·`0`
 - links `10` / `10`
 - folded `1` · escapes `0`
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `8629e241-68dd-845f-b16f-fafe9c4a8824` · framed by typography partition `booking` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c171d6d1-96d9-8515-9415-5be50a799ccb` · framed by typography partition `booking` bonds `35` · `pnpm readme` · `pnpm readme:check`</sub>

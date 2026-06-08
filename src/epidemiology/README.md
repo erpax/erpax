@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `epidemiology` · sub-root `05343d99-102b-8a74-b11b-177cd966472a`
-- bond degree `10` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `6` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `05343d99-102b-8a74-b11b-177cd966472a`
-- bonds in `4` · out `4`
+- bonds in `2` · out `2`
 - trinity form·code·proof `1`·`0`·`0`
 - links `2` / `2`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `d4fbfc35-7486-8e6f-bb76-8f2576a1b911` · framed by typography partition `epidemiology` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e8e5db4e-b44a-85f1-8607-f220419f4bc9` · framed by typography partition `epidemiology` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>

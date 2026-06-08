@@ -23,7 +23,7 @@
 
 - partition `roofing` · sub-root `f5f8d3dc-f56c-8c15-af76-2339b7921515`
 - bond degree `20` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `1fe9732f-fefb-89c8-af75-08f446a49569` · framed by typography partition `roofing` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `1f20e3d0-085e-8e6f-8259-40fe7f3dc6e0` · framed by typography partition `roofing` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `intersects` · sub-root `795c2167-5c3a-8ecd-8374-607358053da7`
 - bond degree `14` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `6efc5096-87bc-87d6-90a8-6c81db215141` · framed by typography partition `intersects` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `3b7e6476-b215-8f4c-bff2-b397771c6d77` · framed by typography partition `intersects` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>

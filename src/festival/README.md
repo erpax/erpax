@@ -23,7 +23,7 @@
 
 - partition `festival` · sub-root `1848c048-c6fa-8f3a-bfaf-e94c64a7b8aa`
 - bond degree `19` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `20db0714-0274-84c9-9d2d-c08c8fb54b0f` · framed by typography partition `festival` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0522df41-8e52-88e9-bac0-744540aad04c` · framed by typography partition `festival` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>

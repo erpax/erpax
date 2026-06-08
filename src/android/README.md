@@ -23,7 +23,21 @@
 
 - partition `android` · sub-root `e9c86493-9430-875b-99e5-4211c90ef36d`
 - bond degree `12` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `1c65e160-5137-86a1-ad8e-dc86b0e96873`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `12` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `9d328b0f-23ab-8cab-95b4-f2d0fca34ede` · framed by typography partition `android` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `2328e8f5-ec97-8910-a195-a0daed3303dc` · framed by typography partition `android` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

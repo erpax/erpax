@@ -23,7 +23,7 @@
 
 - partition `tattoo` · sub-root `0d9700ac-7770-8dce-ba29-597ba8fa9c7f`
 - bond degree `10` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `58322759-6d54-8cb7-9eaf-8b56469b353f` · framed by typography partition `tattoo` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `2595ee74-254b-88c8-966a-fb4e1e92acbe` · framed by typography partition `tattoo` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>

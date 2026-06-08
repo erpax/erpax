@@ -23,7 +23,7 @@
 
 - partition `plumber` · sub-root `7b1daf6d-5b16-8a98-9a34-a369be13f98e`
 - bond degree `12` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `432d27fb-1b55-86fb-8186-6670f1d25f71` · framed by typography partition `plumber` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `6cee50e5-a988-868b-9818-b1df7caba3c3` · framed by typography partition `plumber` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

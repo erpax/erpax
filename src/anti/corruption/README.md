@@ -25,7 +25,22 @@
 
 - partition `anti` · sub-root `3f6af27a-e7ba-83c4-8910-296fe78e5ca9`
 - bond degree `72` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ISO-19011:2018 audit-trail integrity-verification` · banner
+- `SOX §404 segregation-of-duties internal-controls` · banner
+
+## analytics
+
+- bond degree `72` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `2`
 
 ## identity
 
@@ -41,4 +56,4 @@
 
 ---
 
-<sub>content-uuid `5dd494a2-7d9c-8640-960b-5d50e80b5fe9` · framed by typography partition `anti` bonds `72` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b9da3137-2814-89a8-9fd4-e12c177369fd` · framed by typography partition `anti` bonds `72` · `pnpm readme` · `pnpm readme:check`</sub>

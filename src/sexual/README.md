@@ -23,7 +23,7 @@
 
 - partition `sexual` · sub-root `928cf7bb-e2cf-81aa-98ef-32e630bdca3d`
 - bond degree `18` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `c612c925-472d-81d8-8c97-cea3dedbfc94` · framed by typography partition `sexual` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d5b82325-6810-81b2-b23f-e2818878ab8e` · framed by typography partition `sexual` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>

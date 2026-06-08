@@ -2,7 +2,7 @@
 
 # validation
 
-> atom `address/validation` · horo `—` `—` · [[balance]] `1` · [[seal]] `0`
+> atom `address/validation` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -11,10 +11,10 @@
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[horo]]/off-ring `1` |
-| [[balance]] `1` | [[liability]]/[[identity]]/uuid `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
 | [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
@@ -24,21 +24,48 @@
 ## typography graph
 
 - partition `address` · sub-root `dbe3663f-52b1-8624-94cf-89b280b1265a`
-- bond degree `9` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `18` · analysis neighbors —
+- graph root `1c65e160-5137-86a1-ad8e-dc86b0e96873`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `COSO-ERM-2017` · catalogue
+- `EU-2017/1132` · catalogue
+- `EU-2017/828` · catalogue
+- `EU-Taxonomy-2020/852` · catalogue
+- `GDPR Art.5(1)(c) data-minimisation — only the fields the format requires` · banner
+- `GDPR Art.5(1)(c) data-minimisation collect-only-fields-the-format-requires` · banner
+- `ISO-19011:2018 audit-trail address-validation` · banner
+- `ISO-19160-4` · catalogue
+- `ISO-19160-4:2017 addressing · UPU-S42 international-postal-addressing` · banner
+- `ISO-19160-4:2017 addressing components-and-conceptual-model` · banner
+- `ISO-3166-1` · catalogue
+- `ISO-3166-1:2020 country-codes alpha-2` · banner
+- `UPU-S42` · catalogue
+- `UPU-S42 international-postal-addressing` · banner
+
+## analytics
+
+- bond degree `18` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `14`
 
 ## identity
 
-- uuid `—`
-- bonds in `0` · out `0`
+- uuid `82e7f69d-08e5-8876-b507-de0d10f49eef`
+- bonds in `6` · out `6`
 - trinity form·code·proof `1`·`1`·`1`
 - links `6` / `6`
-- folded `0` · escapes `0`
+- folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `b1ddffcf-c06c-8ffb-9416-35cc4e878ed2` · framed by typography partition `address` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e3ddaf9e-c7d1-82ba-b9c3-c4e5fbde7cb4` · framed by typography partition `address` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>

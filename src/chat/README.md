@@ -22,8 +22,22 @@
 ## typography graph
 
 - partition `chat` · sub-root `92464f93-1e6c-8031-87da-a8d3661dabed`
-- bond degree `199` · analysis neighbors `aura`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `204` · analysis neighbors `agent` · `aura`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `204` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `41713354-b8d2-863e-abe3-719d763dbdbb` · framed by typography partition `chat` bonds `199` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `4a0daa94-459a-824a-92ea-33958c36e81d` · framed by typography partition `chat` bonds `204` · `pnpm readme` · `pnpm readme:check`</sub>

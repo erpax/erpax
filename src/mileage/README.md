@@ -23,7 +23,7 @@
 
 - partition `mileage` · sub-root `69750ca1-876e-8705-87a9-5296421a7d5d`
 - bond degree `14` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `adfc637a-76b7-81b2-8198-fdbd11d43a37` · framed by typography partition `mileage` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `1b760994-5b8d-818b-91ea-12823195b3fb` · framed by typography partition `mileage` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>

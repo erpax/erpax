@@ -22,13 +22,27 @@
 ## typography graph
 
 - partition `biofield` · sub-root `85bfe319-dff3-88d8-bd31-df58e478c523`
-- bond degree `33` · analysis neighbors `aura`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `45` · analysis neighbors `aura`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `45` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
 - uuid `85bfe319-dff3-88d8-bd31-df58e478c523`
-- bonds in `7` · out `7`
+- bonds in `13` · out `13`
 - trinity form·code·proof `1`·`0`·`0`
 - links `18` / `18`
 - folded `1` · escapes `0`
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `844d3cd1-4907-8585-9691-497eff0184f5` · framed by typography partition `biofield` bonds `33` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c47ff0c4-dcdb-80d7-adc8-5c0455220507` · framed by typography partition `biofield` bonds `45` · `pnpm readme` · `pnpm readme:check`</sub>

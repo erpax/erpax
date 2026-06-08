@@ -23,7 +23,7 @@
 
 - partition `ocean` · sub-root `345be815-9ed4-8b2f-be44-88525f1af22d`
 - bond degree `15` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `06870201-381e-8317-a051-f88a480c9641` · framed by typography partition `ocean` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `4ad6b89b-b6d3-8afd-b7d6-63df22ed70d0` · framed by typography partition `ocean` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

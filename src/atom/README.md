@@ -2,7 +2,7 @@
 
 # atom
 
-> atom `atom` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
+> atom `atom` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -22,13 +22,27 @@
 ## typography graph
 
 - partition `atom` · sub-root `a69faef3-541b-88d0-aebf-441251f05dcd`
-- bond degree `233` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `277` · analysis neighbors —
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `MCP` · catalogue
+
+## analytics
+
+- bond degree `277` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
-- uuid `30268cef-8017-8ed1-b33f-e06dd474bed8`
-- bonds in `70` · out `68`
+- uuid `a69faef3-541b-88d0-aebf-441251f05dcd`
+- bonds in `90` · out `88`
 - trinity form·code·proof `1`·`0`·`0`
 - links `80` / `80`
 - folded `1` · escapes `0`
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `67fe8329-8405-8bd8-bfd4-5522117733c6` · framed by typography partition `atom` bonds `233` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `71b4ce2a-00d3-8ba9-a829-5aa52b803eab` · framed by typography partition `atom` bonds `277` · `pnpm readme` · `pnpm readme:check`</sub>

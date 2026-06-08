@@ -23,7 +23,7 @@
 
 - partition `judaism` · sub-root `90e46675-3c5e-854f-8164-d0a034918b95`
 - bond degree `34` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `bf4ec370-2345-8032-bbbd-36d5109f8d16` · framed by typography partition `judaism` bonds `34` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0310d515-93e8-8863-834d-1ddb6f01b240` · framed by typography partition `judaism` bonds `34` · `pnpm readme` · `pnpm readme:check`</sub>

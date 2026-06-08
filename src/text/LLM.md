@@ -4,21 +4,14 @@
 # text
 
 path `text` · uuid `8a548400-f905-8026-8a9d-19f1e11d04c5` · diamond `dc78faaf-f559-8f27-aa6b-90a8f632b440`
-horo `4` `weave` · trinity `1·1·1` · sealed `1` · agnostic `1`
+horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports @/digit·@/typography·@/word · exports TextTokenKind·const·function·interface · escapes —
 links `23/23` · folded `1` · bonds in `11` out `11`
 faces worker·plugin·pwa `0·0·0`
 neighbors → activities·backlog·command·equals·landmarks·requirement·researcher·standards·translator·update·winery · ← activities·backlog·command·equals·landmarks·requirement·researcher·standards·translator·update·winery
 analysis diamond·quantum/boundary
 law text is words ⊕ digits at the token layer — parse emits a positioned word/digit sequence, each token content-addressed as a [[diamond]]; save persists into the computed index and folds a [[typography]]-style root, never one src/ folder per English word.
-compute agnostic · serves all — one pipeline for every diamond and dimension
-
-## agent instructions
-
-test `vitest run src/text` · verify `pnpm computed:check` · diamond `tsx src/diamond/index.ts text` · build `pnpm build:uuid`
-never trust .erpax-build-uuid — recompute spatial⊕temporal via computeBuildCoils(); verify both coils
-barrel imports only — @/path atoms, no deep imports · derive never invent — become erpax law
 
 ---
 
-<sub>content-uuid `3929fa9a-2a65-8487-a5bd-bdfdc6fb2761` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8511474d-c9ad-82cf-b204-17697a8ca4f9` · `pnpm readme` · `pnpm computed:check`</sub>

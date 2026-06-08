@@ -23,7 +23,7 @@
 
 - partition `resort` · sub-root `858ec556-81c2-86cb-a965-327dc90da37d`
 - bond degree `13` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `067eaec8-c174-8d6e-a65a-96f5214c625c` · framed by typography partition `resort` bonds `13` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e7470e7e-f93b-8a38-8fc0-b9d11724a787` · framed by typography partition `resort` bonds `13` · `pnpm readme` · `pnpm readme:check`</sub>

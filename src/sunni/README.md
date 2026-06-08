@@ -23,7 +23,7 @@
 
 - partition `sunni` · sub-root `03da439d-c455-865f-ad36-9d9987338d64`
 - bond degree `21` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `1183bbc1-4c0b-848b-935d-63380a39fd3e` · framed by typography partition `sunni` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `08b4cc7e-714d-8099-b50d-bf4cbcf628b1` · framed by typography partition `sunni` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>

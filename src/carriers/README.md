@@ -24,13 +24,36 @@
 ## typography graph
 
 - partition `carriers` · sub-root `59a910dc-53ff-8dce-9232-fc3accedc757`
-- bond degree `51` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `30` · analysis neighbors —
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `EU-Taxonomy-2020/852` · catalogue
+- `IATA DGR dangerous-goods-regulations` · banner
+- `IMDG-Code maritime-dangerous-goods` · banner
+- `INCOTERMS 2020 international-commercial-terms` · banner
+- `INCOTERMS-2020` · catalogue
+- `ISO-19011:2018 audit-trail carrier-master` · banner
+- `ISO-8601-1:2019 date-time effective-from` · banner
+- `SOX §404 internal-controls carrier-master TOM-LOG-01` · banner
+- `UPU-S10 universal-postal-union shipment-identifier` · banner
+- `UPU-S42` · catalogue
+
+## analytics
+
+- bond degree `30` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `10`
 
 ## identity
 
 - uuid `59a910dc-53ff-8dce-9232-fc3accedc757`
-- bonds in `21` · out `21`
+- bonds in `10` · out `10`
 - trinity form·code·proof `1`·`1`·`1`
 - links `7` / `7`
 - folded `1` · escapes `0`
@@ -41,4 +64,4 @@
 
 ---
 
-<sub>content-uuid `a9ab5c91-c167-8a08-ba8b-d0b1775d1c42` · framed by typography partition `carriers` bonds `51` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `572005bc-ad36-8619-94f4-8a1bbf8dedc9` · framed by typography partition `carriers` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>

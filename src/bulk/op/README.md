@@ -2,7 +2,7 @@
 
 # op
 
-> atom `bulk/op` · horo `2` `share` · [[balance]] `1` · [[seal]] `0`
+> atom `bulk/op` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -11,7 +11,7 @@
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
 | [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
 | [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
@@ -24,21 +24,49 @@
 ## typography graph
 
 - partition `bulk` · sub-root `0e1069f8-b184-866b-b249-56308d6f5199`
-- bond degree `25` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `29` · analysis neighbors —
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `COSO-ERM-2017` · catalogue
+- `EN-16931` · catalogue
+- `EN-16931:2017 (UBL / CII import)` · banner
+- `EU-2002/58` · catalogue
+- `EU-2005/29` · catalogue
+- `EU-2017/1132` · catalogue
+- `EU-2017/828` · catalogue
+- `ILO-C001` · catalogue
+- `ISO 20022 camt.053 pain.001 pain.008` · banner
+- `ISO-19011:2018 audit-trail bulk-ops-evidence` · banner
+- `ISO-20022` · catalogue
+- `ISO/IEC 19503:2005 XMI` · banner
+- `rfc-4180 csv-format` · banner
+- `SOX §404 internal-controls bulk-import-completeness` · banner
+- `UBL-2.1` · catalogue
+
+## analytics
+
+- bond degree `29` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `15`
 
 ## identity
 
-- uuid `c17a82bb-b12a-8d0a-887c-e93cfee768a7`
-- bonds in `5` · out `5`
+- uuid `661db463-982c-8994-bb82-3b8f469e7517`
+- bonds in `8` · out `9`
 - trinity form·code·proof `1`·`1`·`1`
 - links `3` / `3`
-- folded `0` · escapes `0`
+- folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `441ad1d7-82db-88a2-934c-75c28dc55bff` · framed by typography partition `bulk` bonds `25` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `64bbd709-02e1-8c67-9806-a92589978a45` · framed by typography partition `bulk` bonds `29` · `pnpm readme` · `pnpm readme:check`</sub>

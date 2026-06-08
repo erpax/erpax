@@ -23,7 +23,7 @@
 
 - partition `warranty` · sub-root `6520bd0a-0fde-8246-86bb-ddc7a60d8815`
 - bond degree `47` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `d9ccdc9c-10b5-8c6b-9d61-d81e8261f8ae` · framed by typography partition `warranty` bonds `47` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `98f583a9-9ab2-87fe-86d1-e1caf2f2e261` · framed by typography partition `warranty` bonds `47` · `pnpm readme` · `pnpm readme:check`</sub>

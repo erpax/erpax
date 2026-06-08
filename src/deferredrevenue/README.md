@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `deferredrevenue` · sub-root `d20bce8e-7383-8544-8768-03cb13701d68`
-- bond degree `18` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `30` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `d20bce8e-7383-8544-8768-03cb13701d68`
-- bonds in `4` · out `4`
+- bonds in `10` · out `10`
 - trinity form·code·proof `1`·`0`·`0`
 - links `9` / `9`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `ef23cef0-c323-8317-8570-cb78efd2e56e` · framed by typography partition `deferredrevenue` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `70c4f09c-022b-86b6-b2bf-bc8a80fa7e06` · framed by typography partition `deferredrevenue` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>

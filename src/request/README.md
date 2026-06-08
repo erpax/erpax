@@ -22,8 +22,8 @@
 ## typography graph
 
 - partition `request` · sub-root `f849f3f6-7d6d-8ab1-9dd6-9ae27cdf2960`
-- bond degree `58` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `59` · analysis neighbors `agent`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `81ce532f-6eca-8563-98f1-6af14468a3f5` · framed by typography partition `request` bonds `58` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `66eaf68b-7f32-8903-b465-efe5948c2dfb` · framed by typography partition `request` bonds `59` · `pnpm readme` · `pnpm readme:check`</sub>

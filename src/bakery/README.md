@@ -23,7 +23,21 @@
 
 - partition `bakery` · sub-root `6f5746c2-377e-85f3-bd98-d9429de53418`
 - bond degree `9` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `9` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `27153a15-fabd-8bbe-9fd2-6931a4d427ca` · framed by typography partition `bakery` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b0d91ce9-b221-895f-9114-48ace7b6ee49` · framed by typography partition `bakery` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>

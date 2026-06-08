@@ -23,7 +23,7 @@
 
 - partition `uktrust` · sub-root `bce6e60a-fbdc-810a-bc93-53779e22f006`
 - bond degree `14` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `80da2ebe-0a1a-89ec-9a68-963e6fe80cfe` · framed by typography partition `uktrust` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `af6618f8-695a-8e2c-b715-4f0d429d4025` · framed by typography partition `uktrust` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>

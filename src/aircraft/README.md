@@ -23,7 +23,21 @@
 
 - partition `aircraft` · sub-root `458aa72f-43cc-8633-b2e5-5c9ba8ea2a0a`
 - bond degree `9` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `1c65e160-5137-86a1-ad8e-dc86b0e96873`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `9` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `29c86440-691b-887b-a2d7-1c1f562aa3de` · framed by typography partition `aircraft` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c9cb9191-0e7e-8674-817c-8a0dda28ae7e` · framed by typography partition `aircraft` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>

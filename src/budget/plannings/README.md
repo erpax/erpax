@@ -24,13 +24,34 @@
 ## typography graph
 
 - partition `budget` · sub-root `925ee759-0c57-8caa-8939-50ecb423953b`
-- bond degree `21` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `25` · analysis neighbors —
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `IFRS IAS-1 presentation-of-financial-statements` · banner
+- `IFRS IAS-8 accounting-policies-changes-and-errors` · banner
+- `ISO-19011:2018 audit-trail` · banner
+- `ISO-4217:2015 currency-codes` · banner
+- `ISO-8601-1` · catalogue
+- `ISO-8601-1:2019 date-time fiscal-year period` · banner
+- `SOX §404 internal-controls budget-approval-workflow` · banner
+- `US-GAAP ASC-270 interim-reporting` · banner
+
+## analytics
+
+- bond degree `25` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `8`
 
 ## identity
 
 - uuid `925ee759-0c57-8caa-8939-50ecb423953b`
-- bonds in `6` · out `6`
+- bonds in `8` · out `8`
 - trinity form·code·proof `1`·`1`·`1`
 - links `6` / `6`
 - folded `1` · escapes `0`
@@ -41,4 +62,4 @@
 
 ---
 
-<sub>content-uuid `920e3c43-c88e-8229-ac14-16e433e443b8` · framed by typography partition `budget` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c7f34b3d-a205-8101-85c5-bd6d24ed73b8` · framed by typography partition `budget` bonds `25` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -3,15 +3,15 @@
 
 # cross
 
-path `cross` · uuid `cf197d9d-3de0-8f7d-a6db-b754bd0a5b54` · diamond `3b43576f-2c5d-831b-a6c4-8b3b4fad3fb8`
-horo `5` `round` · trinity `1·1·1` · sealed `0`
+path `cross` · uuid `207c8c13-f3a9-804a-9380-89048ba4c63f` · diamond `fa1086c1-fa62-8b4c-9f6a-d453d54a9658`
+horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports @/auth·@/horo·@/types/auth·@/uuid/share · exports CrudOp·Sphere·const·digitalRoot·interface · escapes —
-links `10/10` · folded `0` · bonds in `19` out `20`
-faces worker·plugin·pwa `0·0·0`
-neighbors → access·agent·balance·broadcaster·c19·corrects·cross·dashboard·entertainment·fields·grant·landmarks·landmarks·ligament·list·mcp·memories·read·translator·width · ← access·agent·balance·broadcaster·c19·corrects·cross·dashboard·entertainment·fields·grant·landmarks·ligament·list·mcp·memories·read·translator·width
-analysis diamond·hallucination·purity
+links `10/10` · folded `1` · bonds in `22` out `23`
+faces worker·plugin·pwa `1·0·0`
+neighbors → access·auth·blockchain·christianity·consciousness·diamond·duality·entropy·fusion·gate·horo·law·law·memory·merge·orthodoxy·quantum·research·roles·scopes·shamanism·torus·uuid · ← access·auth·blockchain·christianity·consciousness·diamond·duality·entropy·fusion·gate·horo·law·memory·merge·orthodoxy·quantum·research·roles·scopes·shamanism·torus·uuid
+analysis —
 law capability rides ROLES on the `read < write < sign < admin` lattice (audit ⊥); merging roles takes the lattice MAX, and an operation is authorised iff that merged capability reaches the op's required role — one factory for every collection.
 
 ---
 
-<sub>content-uuid `536ddb79-d376-867d-a8d0-75b44c3ff247` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7cf6e562-c0c2-800d-a831-fc2444d9bd88` · `pnpm readme` · `pnpm computed:check`</sub>

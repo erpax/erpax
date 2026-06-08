@@ -23,7 +23,7 @@
 
 - partition `hematologic` · sub-root `cb5fa588-8f79-88f5-8fb1-2000a9127fa3`
 - bond degree `14` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `bec9ab74-bbca-84e2-b75c-6648d72f988d` · framed by typography partition `hematologic` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `7896142b-a398-8a92-90a9-9c42166dfb5e` · framed by typography partition `hematologic` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>

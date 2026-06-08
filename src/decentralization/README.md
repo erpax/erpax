@@ -24,13 +24,13 @@
 ## typography graph
 
 - partition `decentralization` · sub-root `7dd4fb78-345c-8528-9ba4-cd754cb5bf87`
-- bond degree `23` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `44` · analysis neighbors `agent`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `7dd4fb78-345c-8528-9ba4-cd754cb5bf87`
-- bonds in `3` · out `3`
+- bonds in `13` · out `13`
 - trinity form·code·proof `1`·`1`·`1`
 - links `20` / `20`
 - folded `1` · escapes `0`
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `b3f734c1-6ed6-87e0-a723-5f37b26052a9` · framed by typography partition `decentralization` bonds `23` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b3f14755-7233-8240-a3f6-d4fb065e4e35` · framed by typography partition `decentralization` bonds `44` · `pnpm readme` · `pnpm readme:check`</sub>

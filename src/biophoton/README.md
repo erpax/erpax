@@ -22,13 +22,27 @@
 ## typography graph
 
 - partition `biophoton` · sub-root `72cb2745-dbef-8f4f-9e5e-2117948455d2`
-- bond degree `31` · analysis neighbors `aura`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `45` · analysis neighbors `aura`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `45` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
 - uuid `72cb2745-dbef-8f4f-9e5e-2117948455d2`
-- bonds in `6` · out `6`
+- bonds in `13` · out `13`
 - trinity form·code·proof `1`·`0`·`0`
 - links `19` / `19`
 - folded `1` · escapes `0`
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `bedaf87e-e7f7-8cd3-aec7-f956afce90af` · framed by typography partition `biophoton` bonds `31` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `340100cb-3cb4-8404-9c4a-7636217cb4ca` · framed by typography partition `biophoton` bonds `45` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `lake` · sub-root `e75764f6-2e7a-83fb-ae09-6239844aae9e`
 - bond degree `15` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `7b2ec525-2a13-893e-b11e-1797d997162f` · framed by typography partition `lake` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `8d2979bd-eaca-80f9-bab0-c116a7c36eeb` · framed by typography partition `lake` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

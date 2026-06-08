@@ -23,7 +23,21 @@
 
 - partition `artform` · sub-root `793eb0d2-e690-8c77-874c-49dfc77b5068`
 - bond degree `9` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `9` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `600ebdfa-be4c-841d-9007-d1d3fd26d449` · framed by typography partition `artform` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f7d6c5cd-9f1a-895d-8e25-5530e88cd3ac` · framed by typography partition `artform` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>

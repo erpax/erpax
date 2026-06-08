@@ -23,7 +23,7 @@
 
 - partition `interview` · sub-root `726b36a1-b5d7-856a-85ee-d59c685c57eb`
 - bond degree `10` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `7d6ab4a9-a7b9-89fd-b212-811342ac4f0f` · framed by typography partition `interview` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a9cb1435-3ff1-83e2-80a4-e22c51ebdec0` · framed by typography partition `interview` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>

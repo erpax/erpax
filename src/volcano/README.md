@@ -23,7 +23,7 @@
 
 - partition `volcano` · sub-root `bbecc8a7-a656-802c-96e5-35640d020b9b`
 - bond degree `12` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `937fb74e-c460-82e1-8320-52fa870f9f87` · framed by typography partition `volcano` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d1f37f6d-e422-842d-aa21-0814c68e7950` · framed by typography partition `volcano` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

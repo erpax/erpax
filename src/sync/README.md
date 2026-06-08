@@ -23,7 +23,7 @@
 
 - partition `sync` · sub-root `e1ef1f99-73a7-8495-8a7c-48506d52cc1c`
 - bond degree `54` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `e9a97622-8302-84f4-8b72-c711e07c2a17` · framed by typography partition `sync` bonds `54` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `471497f8-e850-872d-a73d-6cb9978d87a4` · framed by typography partition `sync` bonds `54` · `pnpm readme` · `pnpm readme:check`</sub>

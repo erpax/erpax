@@ -23,7 +23,7 @@
 
 - partition `hvac` · sub-root `8c94d8b9-27ac-898c-bb01-c188802b2dbb`
 - bond degree `18` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `95d6a8d2-21f9-8161-9ee7-e1a8ff41ad77` · framed by typography partition `hvac` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ff313cf1-de9f-8f2e-a15e-e4f065b58586` · framed by typography partition `hvac` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -25,7 +25,49 @@
 
 - partition `bank` · sub-root `87606df1-5071-8b98-ac3b-0b1f53544470`
 - bond degree `65` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `EU-2002/58` · catalogue
+- `EU-2015/847` · catalogue
+- `EU-2015/849` · catalogue
+- `EU-2019/1150` · catalogue
+- `EU-2019/1152` · catalogue
+- `EU-2019/1937` · catalogue
+- `EU-2019/2161` · catalogue
+- `EU-2019/770` · catalogue
+- `EU-2019/771` · catalogue
+- `EU-2022/1925` · catalogue
+- `EU-2022/2065` · catalogue
+- `EU-2022/2554` · catalogue
+- `EU-2022/2555` · catalogue
+- `EU-2022/868` · catalogue
+- `EU-Intrastat-Reg-2019/2152` · catalogue
+- `EU-Taxonomy-2020/852` · catalogue
+- `IFRS IAS-7 statement-of-cash-flows cash-and-equivalents` · banner
+- `ILO-C001` · catalogue
+- `ISO-13616-1` · catalogue
+- `ISO-13616-1:2020 iban` · banner
+- `ISO-19011:2018 audit-trail bank-account-master` · banner
+- `ISO-20022` · catalogue
+- `ISO-20022 financial-messaging account-identification` · banner
+- `ISO-4217` · catalogue
+- `ISO-4217:2015 currency-codes` · banner
+- `ISO-8601-1` · catalogue
+- `ISO-9362` · catalogue
+- `ISO-9362:2022 bic` · banner
+- `SOX §404 internal-controls cash-management` · banner
+
+## analytics
+
+- bond degree `65` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `29`
 
 ## identity
 
@@ -41,4 +83,4 @@
 
 ---
 
-<sub>content-uuid `5f4bf8ee-18d9-8f9b-b3f9-cd0f8761cd7b` · framed by typography partition `bank` bonds `65` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b4697bd6-5b7e-870f-89da-4bcb116f4d2d` · framed by typography partition `bank` bonds `65` · `pnpm readme` · `pnpm readme:check`</sub>

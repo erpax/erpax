@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `ecommerce` · sub-root `0aebf1e8-6dd6-8ac9-ad29-8f86cf41b1e4`
-- bond degree `19` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `33` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `0aebf1e8-6dd6-8ac9-ad29-8f86cf41b1e4`
-- bonds in `4` · out `4`
+- bonds in `11` · out `11`
 - trinity form·code·proof `1`·`0`·`0`
 - links `19` / `19`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `d4d92863-6dac-81c4-8bbd-e7c717703090` · framed by typography partition `ecommerce` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `78dcf00f-f228-8642-b1df-8bc42c5746ee` · framed by typography partition `ecommerce` bonds `33` · `pnpm readme` · `pnpm readme:check`</sub>

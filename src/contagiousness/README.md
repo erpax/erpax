@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `contagiousness` · sub-root `c96ac9bf-e714-8eea-aa2e-0d4400a9f188`
-- bond degree `18` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `12` · analysis neighbors —
+- graph root `08417410-9529-8662-a45d-0e6296f0598e`
 
 ## identity
 
 - uuid `c96ac9bf-e714-8eea-aa2e-0d4400a9f188`
-- bonds in `7` · out `7`
+- bonds in `4` · out `4`
 - trinity form·code·proof `1`·`0`·`0`
 - links `4` / `4`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `27c3e640-55db-80a2-aca8-e02818f906e2` · framed by typography partition `contagiousness` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c2ecaed7-8909-83e5-be64-6c8cbc91fb10` · framed by typography partition `contagiousness` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

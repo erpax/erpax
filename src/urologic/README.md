@@ -23,7 +23,7 @@
 
 - partition `urologic` · sub-root `c513e81d-ffef-8e75-a823-c28c29b4a3f0`
 - bond degree `76` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `f078f5c2-723a-898f-8993-6100b4f4d471` · framed by typography partition `urologic` bonds `76` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `450db4cc-7f79-865e-87e6-0ae35631c603` · framed by typography partition `urologic` bonds `76` · `pnpm readme` · `pnpm readme:check`</sub>

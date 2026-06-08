@@ -23,7 +23,7 @@
 
 - partition `hearing` · sub-root `f5905787-cd42-8d43-afb3-6ef0f071c8bc`
 - bond degree `30` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `f9535dbf-2e03-8f79-8ff2-ec2b663f406d` · framed by typography partition `hearing` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `3da9ce99-4649-8116-bc6d-db9bb9d0bcd7` · framed by typography partition `hearing` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>

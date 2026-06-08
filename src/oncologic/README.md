@@ -23,7 +23,7 @@
 
 - partition `oncologic` · sub-root `592ff385-dc92-84ab-95b5-313591c1f75a`
 - bond degree `18` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `0293bc0b-7e00-8a34-bfd8-03a854d125c7` · framed by typography partition `oncologic` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `89ce6bc2-7c4c-87d7-8b0d-85405e412b98` · framed by typography partition `oncologic` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>

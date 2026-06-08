@@ -24,13 +24,65 @@
 ## typography graph
 
 - partition `bookable` · sub-root `81a5c4cf-d55f-83da-84b6-028a286649f2`
-- bond degree `30` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `28` · analysis neighbors —
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `COSO-ERM-2017` · catalogue
+- `EU-2014/55` · catalogue
+- `EU-2015/847` · catalogue
+- `EU-2015/849` · catalogue
+- `EU-2017/1132` · catalogue
+- `EU-2017/828` · catalogue
+- `EU-2018/1673` · catalogue
+- `EU-2018/1725` · catalogue
+- `EU-2018/302` · catalogue
+- `EU-2018/389-SCA-RTS` · catalogue
+- `EU-2018/843` · catalogue
+- `EU-2018/957` · catalogue
+- `EU-2019/1150` · catalogue
+- `EU-2019/1152` · catalogue
+- `EU-2019/1937` · catalogue
+- `EU-2019/2161` · catalogue
+- `EU-2019/770` · catalogue
+- `EU-2019/771` · catalogue
+- `EU-537/2014` · catalogue
+- `EU-910/2014` · catalogue
+- `EU-Intrastat-Reg-2019/2152` · catalogue
+- `EU-Taxonomy-2020/852` · catalogue
+- `ILO-C001` · catalogue
+- `ILO-C100` · catalogue
+- `ISO-18513:2021 tourism-services-vocabulary (when kind=hotel_room)` · banner
+- `ISO-19011:2018 audit-trail resource-master-changes` · banner
+- `ISO-3166-1` · catalogue
+- `ISO-3166-1:2020 country-codes resource-country` · banner
+- `ISO-41001` · catalogue
+- `ISO-41001:2018 facility-management bookable-spaces` · banner
+- `ISO-4217` · catalogue
+- `ISO-4217:2015 currency-codes pricing` · banner
+- `ISO-55000` · catalogue
+- `ISO-55000:2014 asset-management resource-as-asset` · banner
+- `ISO-8601-1` · catalogue
+- `ISO-8601-1:2019 date-time availability-windows` · banner
+- `RFC-5545` · catalogue
+- `SOX §404 internal-controls revenue-completeness` · banner
+- `US-CTA-2021` · catalogue
+
+## analytics
+
+- bond degree `28` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `39`
 
 ## identity
 
 - uuid `6edaba9f-5bdb-8e35-a6a4-071d694fd490`
-- bonds in `10` · out `10`
+- bonds in `9` · out `9`
 - trinity form·code·proof `1`·`1`·`1`
 - links `8` / `8`
 - folded `1` · escapes `0`
@@ -41,4 +93,4 @@
 
 ---
 
-<sub>content-uuid `67d65b51-4980-89e2-91c2-bed2f7623a54` · framed by typography partition `bookable` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `9e3e7a0a-dc2d-83c1-8961-916b128536ae` · framed by typography partition `bookable` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>

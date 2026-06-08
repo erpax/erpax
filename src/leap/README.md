@@ -25,7 +25,7 @@
 
 - partition `leap` · sub-root `29f89521-49be-81f8-b7e1-ac3b0cdacec9`
 - bond degree `28` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `005ce510-5219-8f87-b9fc-d715afdc986a` · framed by typography partition `leap` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0a8c6e46-8f75-811c-8da1-866077147578` · framed by typography partition `leap` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>

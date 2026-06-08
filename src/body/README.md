@@ -2,7 +2,7 @@
 
 # body
 
-> atom `body` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
+> atom `body` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -24,13 +24,29 @@
 ## typography graph
 
 - partition `body` · sub-root `1401fa8c-bb16-8f2d-935f-0f264c6bff9d`
-- bond degree `33` · analysis neighbors `aura`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `85` · analysis neighbors `aura`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `each organ verdict computed live; the harmony folded through @/wave + @/signal` · banner
+- `the A432 just-intonation diatonic ring — the seven horo positions as the seven notes` · banner
+- `the A432 just-intonation diatonic ring (the seven horo positions)` · banner
+
+## analytics
+
+- bond degree `85` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `3`
 
 ## identity
 
-- uuid `d68083f2-b185-8ac1-9877-dd905455281a`
-- bonds in `2` · out `2`
+- uuid `1401fa8c-bb16-8f2d-935f-0f264c6bff9d`
+- bonds in `28` · out `28`
 - trinity form·code·proof `1`·`1`·`1`
 - links `36` / `36`
 - folded `1` · escapes `0`
@@ -41,4 +57,4 @@
 
 ---
 
-<sub>content-uuid `7d269064-df7b-800e-8cd8-cdcfca7b2f84` · framed by typography partition `body` bonds `33` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `5317c411-691a-8dc8-850f-285d04d6a80d` · framed by typography partition `body` bonds `85` · `pnpm readme` · `pnpm readme:check`</sub>

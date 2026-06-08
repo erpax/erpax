@@ -2,17 +2,17 @@
 
 # christianity
 
-> atom `christianity` · horo `—` `—` · [[balance]] `1` · [[seal]] `0`
+> atom `christianity` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[horo]]/off-ring `1` |
-| [[balance]] `1` | [[liability]]/[[identity]]/uuid `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
 | [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `7` | Σ `7` |
@@ -22,21 +22,21 @@
 ## typography graph
 
 - partition `christianity` · sub-root `b6a3ced0-08b4-845b-b6b5-b4ed50e046be`
-- bond degree `35` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `92` · analysis neighbors `diamond`
+- graph root `08417410-9529-8662-a45d-0e6296f0598e`
 
 ## identity
 
-- uuid `—`
-- bonds in `0` · out `0`
+- uuid `b6a3ced0-08b4-845b-b6b5-b4ed50e046be`
+- bonds in `30` · out `30`
 - trinity form·code·proof `1`·`0`·`0`
 - links `61` / `61`
-- folded `0` · escapes `0`
+- folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `492c007b-1b24-84d5-a3fb-6de0950a7dfe` · framed by typography partition `christianity` bonds `35` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d81b50a7-38d6-870a-a057-c8fc2167afde` · framed by typography partition `christianity` bonds `92` · `pnpm readme` · `pnpm readme:check`</sub>

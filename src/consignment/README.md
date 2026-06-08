@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `consignment` · sub-root `c665c964-60e4-808c-a095-84783df6892a`
-- bond degree `14` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `12` · analysis neighbors —
+- graph root `08417410-9529-8662-a45d-0e6296f0598e`
 
 ## identity
 
 - uuid `c665c964-60e4-808c-a095-84783df6892a`
-- bonds in `5` · out `5`
+- bonds in `4` · out `4`
 - trinity form·code·proof `1`·`0`·`0`
 - links `4` / `4`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `b42c5138-0166-8948-a631-28d7579bec26` · framed by typography partition `consignment` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a5c7f733-aba8-8a86-959a-eb9d9c77abaf` · framed by typography partition `consignment` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

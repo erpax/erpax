@@ -25,7 +25,57 @@
 
 - partition `bank` · sub-root `87606df1-5071-8b98-ac3b-0b1f53544470`
 - bond degree `83` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `EU-2002/58` · catalogue
+- `EU-2015/847` · catalogue
+- `EU-2015/849` · catalogue
+- `EU-2019/1150` · catalogue
+- `EU-2019/1152` · catalogue
+- `EU-2019/1937` · catalogue
+- `EU-2019/2161` · catalogue
+- `EU-2019/770` · catalogue
+- `EU-2019/771` · catalogue
+- `EU-2022/1925` · catalogue
+- `EU-2022/2065` · catalogue
+- `EU-2022/2554` · catalogue
+- `EU-2022/2555` · catalogue
+- `EU-2022/868` · catalogue
+- `EU-Intrastat-Reg-2019/2152` · catalogue
+- `EU-Taxonomy-2020/852` · catalogue
+- `IFRS IAS-7 statement-of-cash-flows` · banner
+- `ISO-11649:2009 financial-services-creditor-reference` · banner
+- `ISO-13616-1` · catalogue
+- `ISO-13616-1:2020 iban` · banner
+- `ISO-19011:2018 audit-trail reconciliation-line-evidence` · banner
+- `ISO-20022` · catalogue
+- `ISO-20022 camt.053 bank-to-customer-statement` · banner
+- `ISO-20022 ChargeBearerType1Code` · banner
+- `ISO-20022 CreditDebitCode` · banner
+- `ISO-20022 EntryStatus2Code` · banner
+- `ISO-20022 ExternalBankTransactionDomain1Code` · banner
+- `ISO-20022 ExternalBankTransactionFamily1Code` · banner
+- `ISO-20022 ExternalBankTransactionSubFamily1Code` · banner
+- `ISO-4217` · catalogue
+- `ISO-4217:2015 currency-codes` · banner
+- `ISO-8601-1` · catalogue
+- `ISO-8601-1:2019 date-time value-date booking-date matched-at` · banner
+- `ISO-9362` · catalogue
+- `ISO-9362:2022 bic` · banner
+- `SOX §404 internal-controls bank-reconciliation` · banner
+- `US-GAAP ASC-230 cash-flows` · banner
+
+## analytics
+
+- bond degree `83` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `37`
 
 ## identity
 
@@ -41,4 +91,4 @@
 
 ---
 
-<sub>content-uuid `57744900-7bfe-8b47-973b-5ad9c765bba1` · framed by typography partition `bank` bonds `83` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `637b5515-300d-8650-a514-50a402863e23` · framed by typography partition `bank` bonds `83` · `pnpm readme` · `pnpm readme:check`</sub>

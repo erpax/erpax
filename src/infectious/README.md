@@ -22,8 +22,8 @@
 ## typography graph
 
 - partition `infectious` · sub-root `de9457f2-d5c6-8ac3-b470-ee316066c307`
-- bond degree `35` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `36` · analysis neighbors `agent`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `10e06b5d-47c1-8ccd-8fe9-71a8d968b63e` · framed by typography partition `infectious` bonds `35` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `546cc1d4-f499-8fd8-8180-c32fda2399db` · framed by typography partition `infectious` bonds `36` · `pnpm readme` · `pnpm readme:check`</sub>

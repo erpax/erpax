@@ -23,7 +23,7 @@
 
 - partition `pipeline` · sub-root `7ebf9c49-914b-8617-b677-a62ade429b08`
 - bond degree `26` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `bdd26f8c-1751-81ea-afe8-0dfe9e1160e1` · framed by typography partition `pipeline` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `841cb2d2-946a-8593-afb3-7194f5649d15` · framed by typography partition `pipeline` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>

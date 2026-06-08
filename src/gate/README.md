@@ -23,7 +23,7 @@
 
 - partition `gate` · sub-root `b079aad2-959e-82a1-a707-f7ecd7b2a03b`
 - bond degree `87` · analysis neighbors `aura`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `d0cda877-a8ce-8559-9867-6f6d5fdb1371` · framed by typography partition `gate` bonds `87` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ef43906d-a914-8b02-81c0-95c3f6cfc3ce` · framed by typography partition `gate` bonds `87` · `pnpm readme` · `pnpm readme:check`</sub>

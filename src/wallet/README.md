@@ -25,7 +25,7 @@
 
 - partition `wallet` · sub-root `359504fb-5948-8313-aeac-16da7383f4a8`
 - bond degree `30` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `20d8e340-26d8-894b-81e5-a8f4ea9e5b1a` · framed by typography partition `wallet` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `696bb677-ff2e-857d-9dad-19f8dc86f3e4` · framed by typography partition `wallet` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>

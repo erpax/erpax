@@ -23,7 +23,7 @@
 
 - partition `overdosage` · sub-root `6a37a54c-18c7-8b4a-af9d-5cc5b04a6cb9`
 - bond degree `8` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `2a00a963-12e6-8500-bd89-c282ab6aeace` · framed by typography partition `overdosage` bonds `8` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `9a07d4c9-ae5e-8ef0-935a-a0b2c02d946a` · framed by typography partition `overdosage` bonds `8` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `protozoa` · sub-root `e11b6412-de4f-8288-8169-b6f366120360`
 - bond degree `14` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `bad0d5b1-8803-8a5b-b394-9617683c4c1a` · framed by typography partition `protozoa` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `dd38f3d8-aa2f-8432-881f-cad71c630fcc` · framed by typography partition `protozoa` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -2,7 +2,7 @@
 
 # carbon
 
-> atom `beyond/carbon` · horo `—` `—` · [[balance]] `1` · [[seal]] `0`
+> atom `beyond/carbon` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -11,10 +11,10 @@
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[horo]]/off-ring `1` |
-| [[balance]] `1` | [[liability]]/[[identity]]/uuid `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
 | [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
@@ -24,21 +24,45 @@
 ## typography graph
 
 - partition `beyond` · sub-root `d5c96de6-e131-8db0-8c67-746942d1018c`
-- bond degree `9` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `16` · analysis neighbors —
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ESRS E1 climate-change-disclosures` · banner
+- `EU CSRD 2022/2464 sustainability-reporting-directive` · banner
+- `EU-2022/1925` · catalogue
+- `EU-2022/2065` · catalogue
+- `EU-2022/2554` · catalogue
+- `EU-2022/2555` · catalogue
+- `EU-2022/868` · catalogue
+- `EU-CSRD` · catalogue
+- `EU-ESRS` · catalogue
+- `GHG Protocol Scope-2 location-based` · banner
+- `GHG-Protocol` · catalogue
+
+## analytics
+
+- bond degree `16` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `11`
 
 ## identity
 
-- uuid `—`
-- bonds in `0` · out `0`
+- uuid `0d9f34bd-dc5f-8d20-a4a3-29f189a062da`
+- bonds in `5` · out `5`
 - trinity form·code·proof `1`·`1`·`1`
 - links `6` / `6`
-- folded `0` · escapes `0`
+- folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `d868b829-5e9d-8281-8348-54545d0b792c` · framed by typography partition `beyond` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f112ba4b-9df2-80d3-a737-0a04d8208d60` · framed by typography partition `beyond` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

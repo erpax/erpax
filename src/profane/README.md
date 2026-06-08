@@ -23,7 +23,7 @@
 
 - partition `profane` · sub-root `283eca17-f7f9-8900-ad55-bbad9f35426f`
 - bond degree `53` · analysis neighbors `aura`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `866ffac6-5d29-81c0-8a21-c99665dc55cb` · framed by typography partition `profane` bonds `53` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `29c3eb1e-7247-836e-a9a8-295af60882a0` · framed by typography partition `profane` bonds `53` · `pnpm readme` · `pnpm readme:check`</sub>

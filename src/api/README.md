@@ -2,7 +2,7 @@
 
 # api
 
-> atom `api` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
+> atom `api` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -22,13 +22,34 @@
 ## typography graph
 
 - partition `api` · sub-root `e53ea2d8-2396-80bf-8228-b488f4a66500`
-- bond degree `63` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `103` · analysis neighbors —
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `EU-2018/1673` · catalogue
+- `EU-2018/1725` · catalogue
+- `EU-2018/302` · catalogue
+- `EU-2018/389-SCA-RTS` · catalogue
+- `EU-2018/843` · catalogue
+- `EU-2018/957` · catalogue
+- `EU-Taxonomy-2020/852` · catalogue
+- `ISO-19011` · catalogue
+
+## analytics
+
+- bond degree `103` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `8`
 
 ## identity
 
-- uuid `a7da4a69-75df-8318-89e4-0e08e42f0f5a`
-- bonds in `16` · out `16`
+- uuid `eeb3decd-2ac3-8363-b7f9-03f64061e086`
+- bonds in `32` · out `33`
 - trinity form·code·proof `1`·`0`·`0`
 - links `21` / `21`
 - folded `1` · escapes `0`
@@ -39,4 +60,4 @@
 
 ---
 
-<sub>content-uuid `60f63701-91ee-85c3-8684-ad55e3976522` · framed by typography partition `api` bonds `63` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e4a856b2-7d55-8584-b7e6-a2caa3d9e99c` · framed by typography partition `api` bonds `103` · `pnpm readme` · `pnpm readme:check`</sub>

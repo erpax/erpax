@@ -23,7 +23,21 @@
 
 - partition `amradio` · sub-root `92e6535b-6a97-890b-b19b-8b44b77bf38a`
 - bond degree `12` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `1c65e160-5137-86a1-ad8e-dc86b0e96873`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `12` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `8beb2978-55fe-860e-9098-314bf69502ba` · framed by typography partition `amradio` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `52c3eeda-17cf-8813-b7ca-c32b8c389e06` · framed by typography partition `amradio` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

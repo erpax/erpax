@@ -24,13 +24,29 @@
 ## typography graph
 
 - partition `chakra` · sub-root `0b1b99f8-aafb-8c47-bab7-f0593c4d948e`
-- bond degree `40` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `80` · analysis neighbors —
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ISO-16:1975 a432-tuning-reference (pitch from position)` · banner
+- `note, colour and uuid all computed from the position math, never hand-asserted` · banner
+- `note, colour and uuid computed from the position math, never hand-asserted` · banner
+
+## analytics
+
+- bond degree `80` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `3`
 
 ## identity
 
 - uuid `0b1b99f8-aafb-8c47-bab7-f0593c4d948e`
-- bonds in `6` · out `6`
+- bonds in `26` · out `26`
 - trinity form·code·proof `1`·`1`·`1`
 - links `33` / `33`
 - folded `1` · escapes `0`
@@ -41,4 +57,4 @@
 
 ---
 
-<sub>content-uuid `3bc1ccb8-4284-850b-a6f2-42e62dc3c941` · framed by typography partition `chakra` bonds `40` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0982c637-c695-86a3-a4b8-c0643acec650` · framed by typography partition `chakra` bonds `80` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `transposes` · sub-root `1292b749-caa0-841c-a4d1-973f6f92e118`
 - bond degree `13` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `52d4ed5c-3135-8ed0-9518-5ed29ad558b0` · framed by typography partition `transposes` bonds `13` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `8724c627-fd57-8d9c-9e1b-7287d3a83ef7` · framed by typography partition `transposes` bonds `13` · `pnpm readme` · `pnpm readme:check`</sub>

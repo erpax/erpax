@@ -23,7 +23,21 @@
 
 - partition `anesthesia` · sub-root `4fb2f4b0-47e8-87b6-b0f7-4aa3b49c59ba`
 - bond degree `12` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `1c65e160-5137-86a1-ad8e-dc86b0e96873`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `12` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `ce54e988-f258-8ec6-8655-1ad459862d55` · framed by typography partition `anesthesia` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `86d1c65c-3c4f-8638-885d-d0e5f9ac96f4` · framed by typography partition `anesthesia` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

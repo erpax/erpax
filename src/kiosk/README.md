@@ -23,7 +23,7 @@
 
 - partition `kiosk` · sub-root `e41b7364-3bd4-868b-b478-a5df9c1c0fb5`
 - bond degree `36` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `fbac11fe-1ff4-8615-b9f1-d481ae5c7602` · framed by typography partition `kiosk` bonds `36` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a241d54f-cb6e-8dc7-ae18-45c1ede8de99` · framed by typography partition `kiosk` bonds `36` · `pnpm readme` · `pnpm readme:check`</sub>

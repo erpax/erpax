@@ -23,7 +23,7 @@
 
 - partition `motorized` · sub-root `7b1b815c-b246-8c78-8ef9-b74151e19579`
 - bond degree `10` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `11885e1f-42cc-8742-8e75-f6d2f6f03886` · framed by typography partition `motorized` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `03291b70-de22-8212-8f0c-0957346b5646` · framed by typography partition `motorized` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>

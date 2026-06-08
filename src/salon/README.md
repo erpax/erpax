@@ -23,7 +23,7 @@
 
 - partition `salon` · sub-root `f49c7be9-de92-80b9-bbd7-be80e6017ed2`
 - bond degree `26` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `4ec5ddad-2aa1-8a78-b068-c3fa8cc54821` · framed by typography partition `salon` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `4498b9da-a986-8e35-a20e-607d1781c9bc` · framed by typography partition `salon` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>

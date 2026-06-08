@@ -23,7 +23,7 @@
 
 - partition `varies` · sub-root `582ba01a-9156-8326-804a-0eb6eaa00550`
 - bond degree `26` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `87d1d917-fe8b-80de-9fb9-a9a34b81ab03` · framed by typography partition `varies` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ce452cd7-b22a-85a0-92d8-4436229ac106` · framed by typography partition `varies` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>

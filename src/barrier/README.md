@@ -24,13 +24,28 @@
 ## typography graph
 
 - partition `barrier` · sub-root `52489704-67d5-86a9-b1ca-5cce213a2287`
-- bond degree `18` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `30` · analysis neighbors —
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `CODATA-2018 ħ (via ../photon); WKB + exact rectangular-barrier transmission` · banner
+- `κ from (m,V0,E); T exact + WKB; tamper-cost = −log2(T) — computed, never asserted` · banner
+
+## analytics
+
+- bond degree `30` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `2`
 
 ## identity
 
 - uuid `52489704-67d5-86a9-b1ca-5cce213a2287`
-- bonds in `4` · out `4`
+- bonds in `10` · out `10`
 - trinity form·code·proof `1`·`1`·`1`
 - links `14` / `14`
 - folded `1` · escapes `0`
@@ -41,4 +56,4 @@
 
 ---
 
-<sub>content-uuid `0fdb0183-0c56-8eae-a0aa-2aea13759caa` · framed by typography partition `barrier` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b7e1aeb6-2531-89ac-af3c-cce99e5565df` · framed by typography partition `barrier` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `trend` · sub-root `f8cc6818-fcab-8e77-ab5f-f06a85da4d3c`
 - bond degree `18` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `e5eb72f8-9bc0-8564-aeb4-2d5012e45abf` · framed by typography partition `trend` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `3dc28570-89cc-8c07-8a17-533d5e1ff8e2` · framed by typography partition `trend` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>

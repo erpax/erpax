@@ -23,7 +23,7 @@
 
 - partition `recipe` · sub-root `83312512-fd4c-8831-b471-cd76bfadd4d0`
 - bond degree `18` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `c3931534-ede0-8851-b6e2-064822a2ed1c` · framed by typography partition `recipe` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d57e9abb-0adc-82bd-ae23-9d560046d206` · framed by typography partition `recipe` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>

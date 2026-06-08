@@ -23,7 +23,7 @@
 
 - partition `dentist` · sub-root `f381adf9-8f30-81f4-a064-64ecfd5d664e`
 - bond degree `6` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `79f509bc-518c-866a-b726-904676d1f843` · framed by typography partition `dentist` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `76b95286-c2b8-8da4-bca7-c45e81fd9f68` · framed by typography partition `dentist` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>

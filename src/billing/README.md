@@ -24,13 +24,45 @@
 ## typography graph
 
 - partition `billing` · sub-root `00104ff6-0f74-81d1-8b48-3be285fb3eff`
-- bond degree `18` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `30` · analysis neighbors —
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `EU-2015/847` · catalogue
+- `EU-2015/849` · catalogue
+- `EU-2019/1150` · catalogue
+- `EU-2019/1152` · catalogue
+- `EU-2019/1937` · catalogue
+- `EU-2019/2161` · catalogue
+- `EU-2019/770` · catalogue
+- `EU-2019/771` · catalogue
+- `EU-2022/1925` · catalogue
+- `EU-2022/2065` · catalogue
+- `EU-2022/2554` · catalogue
+- `EU-2022/2555` · catalogue
+- `EU-2022/868` · catalogue
+- `EU-Intrastat-Reg-2019/2152` · catalogue
+- `ISO-4217` · catalogue
+- `ISO-8601-1` · catalogue
+- `ISO/IEC-29119` · catalogue
+- `PCI-DSS` · catalogue
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `30` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `19`
 
 ## identity
 
 - uuid `00104ff6-0f74-81d1-8b48-3be285fb3eff`
-- bonds in `3` · out `3`
+- bonds in `9` · out `9`
 - trinity form·code·proof `1`·`1`·`1`
 - links `9` / `9`
 - folded `1` · escapes `0`
@@ -41,4 +73,4 @@
 
 ---
 
-<sub>content-uuid `50911d43-3d1f-8384-b8ca-bf86783fb508` · framed by typography partition `billing` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `2fe35897-b18b-8f75-bf58-9116d7f10d18` · framed by typography partition `billing` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>

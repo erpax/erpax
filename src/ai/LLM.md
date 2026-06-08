@@ -3,15 +3,15 @@
 
 # ai
 
-path `ai` · uuid `76b57c9d-9ec1-833f-a3eb-6ed37e897098` · diamond `7726a4bb-7dfe-8201-ac99-e99f67964963`
+path `ai` · uuid `b3b0066a-e1d6-8a07-89b5-9fa59c6670d4` · diamond `4473bb2e-df09-8cb2-a293-992ba7673020`
 horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports — · exports AI_INDUSTRY_PROBLEMS·allProblems·callWorkersAi·cascadeDepthVerdict·classifyDocument·classifyInvoiceLineTax·convergeAgentArtifacts·detectJournalEntryAnomalies·detectPromptInjection·embedAndUpsertDocument·extractInvoiceFromScan·groundOutputVerdict·groundToolCall·humanGateVerdict·matchBankTransactionToInvoice·receiptAgentStep·remedyFor·sanitisePiiForAi·screenSubjectAgainstSanctions·semanticSearch·suggestHsCode·summariseAuditTrail·trustBoundaryVerdict·type·workflowCorrelationUuid · escapes —
-links `2/2` · folded `1` · bonds in `11` out `12`
+links `2/2` · folded `1` · bonds in `13` out `14`
 faces worker·plugin·pwa `1·0·0`
-neighbors → agent·bindings·cloudflare·diamond·identity·innovation·law·law·models·path·payload·secret · ← agent·bindings·cloudflare·diamond·identity·innovation·law·models·path·payload·secret
+neighbors → agent·bindings·cloudflare·diamond·identity·industry·innovation·law·law·models·path·payload·secret·serverless · ← agent·bindings·cloudflare·diamond·identity·industry·innovation·law·models·path·payload·secret·serverless
 analysis agent·cloudflare·diamond·secret
 law every AI inference flows through the one `callWorkersAi` gate (entitlement · audit row · tenant scope · risk class · metering) — no wrapper bypasses it, so each call is uuid-accounted and high-risk decisions are refused an auto-accept path.
 
 ---
 
-<sub>content-uuid `4d47597a-8082-8c9d-b370-e684055b102c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `bed07686-7cfb-839e-99aa-00167ec57812` · `pnpm readme` · `pnpm computed:check`</sub>

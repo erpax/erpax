@@ -23,7 +23,7 @@
 
 - partition `optician` · sub-root `d3f415a5-8bf9-85e8-9caf-14e6b6bc9e14`
 - bond degree `54` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `5e01677b-bfcd-808f-b762-b8aedf493bd0` · framed by typography partition `optician` bonds `54` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `68ac8014-687f-8e69-84e4-d3538fef9bd5` · framed by typography partition `optician` bonds `54` · `pnpm readme` · `pnpm readme:check`</sub>

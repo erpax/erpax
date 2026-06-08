@@ -23,7 +23,7 @@
 
 - partition `hermeticism` · sub-root `c97f74e4-fd33-86ed-8394-436894cd8dbf`
 - bond degree `24` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `08acc02d-2221-8dc2-9f28-1b4cfaff88cd` · framed by typography partition `hermeticism` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `4ddb3d40-9c00-8507-90b8-3c5288f482d3` · framed by typography partition `hermeticism` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>

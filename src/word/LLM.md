@@ -4,21 +4,14 @@
 # word
 
 path `word` · uuid `52c9d674-4898-8ff6-a8f1-ff06af31f1f5` · diamond `4f5db67d-11b1-8fb2-a55b-f73bebe629f6`
-horo `4` `weave` · trinity `1·1·1` · sealed `1` · agnostic `1`
+horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports @/integrity · exports WordTokenKind·const · escapes —
 links `22/22` · folded `1` · bonds in `10` out `10`
 faces worker·plugin·pwa `0·0·0`
 neighbors → ad·bar·blinded·cohort·follows·harmony·landmarks·memories·shipment·stat · ← ad·bar·blinded·cohort·follows·harmony·landmarks·memories·shipment·stat
 analysis diamond
 law a word token is one lexical [[diamond]] — content-addressed as uuid(jcs({ kind:'word', value })), saved in the [[text]] index, never materialized as one src/ folder per English word.
-compute agnostic · serves all — one pipeline for every diamond and dimension
-
-## agent instructions
-
-test `vitest run src/word` · verify `pnpm computed:check` · diamond `tsx src/diamond/index.ts word` · build `pnpm build:uuid`
-never trust .erpax-build-uuid — recompute spatial⊕temporal via computeBuildCoils(); verify both coils
-barrel imports only — @/path atoms, no deep imports · derive never invent — become erpax law
 
 ---
 
-<sub>content-uuid `8a09e9bb-186d-8e53-8b97-8bfbd4415782` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `5c570c98-4564-8d91-a7f5-8d0defab7b9a` · `pnpm readme` · `pnpm computed:check`</sub>

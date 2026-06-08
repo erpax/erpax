@@ -23,7 +23,7 @@
 
 - partition `tissue` · sub-root `18f6335e-2fee-83e6-bff0-c003da56e7ca`
 - bond degree `32` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `893a8889-e612-8047-ad21-f9c8b5ad5eef` · framed by typography partition `tissue` bonds `32` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `5b44e36f-9ea1-88c6-a3dd-56c863072d56` · framed by typography partition `tissue` bonds `32` · `pnpm readme` · `pnpm readme:check`</sub>

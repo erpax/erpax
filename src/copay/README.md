@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `copay` · sub-root `0587d678-8f5f-8586-b4e6-39010c0b4320`
-- bond degree `15` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `23` · analysis neighbors —
+- graph root `08417410-9529-8662-a45d-0e6296f0598e`
 
 ## identity
 
 - uuid `0587d678-8f5f-8586-b4e6-39010c0b4320`
-- bonds in `3` · out `3`
+- bonds in `7` · out `7`
 - trinity form·code·proof `1`·`0`·`0`
 - links `7` / `7`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `ef127465-82f3-8294-8d43-7ed368effadd` · framed by typography partition `copay` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `3e28a81f-4e41-8354-9f43-ffdad8202a2c` · framed by typography partition `copay` bonds `23` · `pnpm readme` · `pnpm readme:check`</sub>

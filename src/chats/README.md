@@ -24,13 +24,34 @@
 ## typography graph
 
 - partition `chats` · sub-root `9e795428-4d27-8fa9-b270-55a98f196236`
-- bond degree `16` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `12` · analysis neighbors —
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ILO-C001` · catalogue
+- `ISO-27001` · catalogue
+- `ISO-27001 A.5.23 cloud-service-tenant-isolation (room per tenant)` · banner
+- `ISO/IEC-27001:2022` · catalogue
+- `RFC 9562 §5.8 content-uuid event-identity (idempotency key)` · banner
+- `RFC-9562` · catalogue
+- `W3C ActivityPub server-to-server activity-distribution (the model)` · banner
+- `W3C-ActivityPub` · catalogue
+
+## analytics
+
+- bond degree `12` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `8`
 
 ## identity
 
 - uuid `9e795428-4d27-8fa9-b270-55a98f196236`
-- bonds in `6` · out `6`
+- bonds in `4` · out `4`
 - trinity form·code·proof `1`·`1`·`1`
 - links `4` / `4`
 - folded `1` · escapes `0`
@@ -41,4 +62,4 @@
 
 ---
 
-<sub>content-uuid `1ef79c15-94ef-8464-84d5-f6323d126640` · framed by typography partition `chats` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ba788628-1266-851b-8e75-bb8bbd287e05` · framed by typography partition `chats` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

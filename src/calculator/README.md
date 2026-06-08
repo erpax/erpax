@@ -22,13 +22,27 @@
 ## typography graph
 
 - partition `calculator` · sub-root `36c099b1-fc39-8814-93ea-e7a3d3fe1c62`
-- bond degree `28` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `39` · analysis neighbors —
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `39` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
-- uuid `2b3e0125-2630-8299-89c1-25dd93ff963e`
-- bonds in `5` · out `5`
+- uuid `67c1eebb-3f2c-8804-bd8f-0156116af0ea`
+- bonds in `11` · out `13`
 - trinity form·code·proof `1`·`0`·`0`
 - links `6` / `6`
 - folded `1` · escapes `0`
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `b66c2303-1509-8ad3-adf9-45c4e7b753b7` · framed by typography partition `calculator` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c7696dbc-da02-8510-9e66-22f75d64ae27` · framed by typography partition `calculator` bonds `39` · `pnpm readme` · `pnpm readme:check`</sub>

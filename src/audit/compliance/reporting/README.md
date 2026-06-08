@@ -25,7 +25,42 @@
 
 - partition `audit` · sub-root `798aecfe-af8a-8d6c-9989-a51055e00adf`
 - bond degree `20` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `banner barrel (the regulatory contract)` · banner
+- `BEPS` · catalogue
+- `BEPS Action 13:2021 Transfer Pricing Documentation` · banner
+- `EU-2016/679` · catalogue
+- `EU-2022/1925` · catalogue
+- `EU-2022/2065` · catalogue
+- `EU-2022/2554` · catalogue
+- `EU-2022/2555` · catalogue
+- `EU-2022/868` · catalogue
+- `GDPR Art. 32 Data Protection` · banner
+- `IAS-1` · catalogue
+- `IAS-1:2023 Presentation of Financial Statements` · banner
+- `NIST SP 800-92 Computer Security Incident Handling` · banner
+- `NIST-SP-800-63` · catalogue
+- `NIST-SP-800-92` · catalogue
+- `OECD Pillar Two:2023 Global Minimum Tax` · banner
+- `OECD Transfer Pricing Guidelines:2022 Documentation` · banner
+- `OECD-Pillar-Two` · catalogue
+- `OECD-Transfer-Pricing` · catalogue
+- `SAF-T` · catalogue
+- `SAF-T:3.0.2 Standard Audit File (Tax)` · banner
+- `US-CTA-2021` · catalogue
+
+## analytics
+
+- bond degree `20` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `22`
 
 ## identity
 
@@ -41,4 +76,4 @@
 
 ---
 
-<sub>content-uuid `11c7ca72-8189-88dd-97b3-abcd7216c3c1` · framed by typography partition `audit` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a6d5b01c-aae2-8f68-a33d-a6cc776018bd` · framed by typography partition `audit` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>

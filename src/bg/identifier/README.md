@@ -24,13 +24,30 @@
 ## typography graph
 
 - partition `bg` · sub-root `e8c8b64e-7061-8f4f-8616-6a17230e37f8`
-- bond degree `23` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `37` · analysis neighbors —
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ISO-7064` · catalogue
+- `ISO-7064 check-character-systems (the modulo family these implement)` · banner
+- `БУЛСТАТ register law (Закон за регистър БУЛСТАТ) — ЕИК checksum` · banner
+- `ЕГН regulation (Наредба РД-02-20-9/2012 on the population register)` · banner
+
+## analytics
+
+- bond degree `37` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `4`
 
 ## identity
 
 - uuid `e8c8b64e-7061-8f4f-8616-6a17230e37f8`
-- bonds in `5` · out `5`
+- bonds in `12` · out `12`
 - trinity form·code·proof `1`·`1`·`1`
 - links `21` / `21`
 - folded `1` · escapes `0`
@@ -41,4 +58,4 @@
 
 ---
 
-<sub>content-uuid `b3403e44-f77f-8852-afdc-bcb628bffd3d` · framed by typography partition `bg` bonds `23` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `67cedd94-cb5b-8076-a7e4-0383250cd002` · framed by typography partition `bg` bonds `37` · `pnpm readme` · `pnpm readme:check`</sub>

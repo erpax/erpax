@@ -23,7 +23,7 @@
 
 - partition `fmradio` · sub-root `276b86d2-31e7-8644-a357-4d35ae668b24`
 - bond degree `8` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `a9cbf925-d7ac-8176-b7df-7cf0132952b4` · framed by typography partition `fmradio` bonds `8` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ff8be4a3-2ea4-8d8f-bcca-20d827a9e4e4` · framed by typography partition `fmradio` bonds `8` · `pnpm readme` · `pnpm readme:check`</sub>

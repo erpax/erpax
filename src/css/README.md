@@ -2,7 +2,7 @@
 
 # css
 
-> atom `css` · horo `1` `base` · [[balance]] `1` · [[seal]] `0`
+> atom `css` · horo `7` `descent` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -24,13 +24,13 @@
 ## typography graph
 
 - partition `css` · sub-root `8ac7e2ab-b02d-8084-9f94-5da3562b0671`
-- bond degree `37` · analysis neighbors `diamond` · `purity` · `quantum/boundary` · `tamper/import`
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `41` · analysis neighbors `diamond` · `purity`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
-- uuid `7b31a48a-afbd-8fd0-8b89-b62b275d2e16`
-- bonds in `10` · out `10`
+- uuid `8ac7e2ab-b02d-8084-9f94-5da3562b0671`
+- bonds in `13` · out `13`
 - trinity form·code·proof `1`·`1`·`1`
 - links `28` / `28`
 - folded `1` · escapes `1`
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `6be38cbc-4bd1-823a-abfc-0d57ba4a180f` · framed by typography partition `css` bonds `37` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `51fe34ca-4524-8eb1-9caf-bc2fdaac6e51` · framed by typography partition `css` bonds `41` · `pnpm readme` · `pnpm readme:check`</sub>

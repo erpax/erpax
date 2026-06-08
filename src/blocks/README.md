@@ -24,13 +24,34 @@
 ## typography graph
 
 - partition `blocks` · sub-root `8ce2cc40-5b21-803c-b7da-4f37c0ba399a`
-- bond degree `18` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `16` · analysis neighbors —
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ECMA-262` · catalogue
+- `EU-2024/1183` · catalogue
+- `EU-2024/1620` · catalogue
+- `EU-2024/1624` · catalogue
+- `EU-CSDDD-2024/1760` · catalogue
+- `ISO/IEC-10918` · catalogue
+- `schema.org — the type vocabulary, collided to single words` · banner
+- `W3C-WAI-ARIA-1.2` · catalogue
+
+## analytics
+
+- bond degree `16` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `8`
 
 ## identity
 
 - uuid `8ce2cc40-5b21-803c-b7da-4f37c0ba399a`
-- bonds in `6` · out `6`
+- bonds in `5` · out `5`
 - trinity form·code·proof `1`·`1`·`1`
 - links `6` / `6`
 - folded `1` · escapes `0`
@@ -41,4 +62,4 @@
 
 ---
 
-<sub>content-uuid `0b7e2f46-717c-835b-a017-849702d62709` · framed by typography partition `blocks` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `868d7e0e-b34a-8b84-bdf5-e483495dec3a` · framed by typography partition `blocks` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

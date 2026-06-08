@@ -23,7 +23,7 @@
 
 - partition `therapy` · sub-root `a19dc180-dcc5-8a04-bd86-d6165a873d35`
 - bond degree `26` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `8bd35440-c7c6-8bb2-9acd-b4b300a856ca` · framed by typography partition `therapy` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `fae7bfb0-f11c-8353-965f-58d77dfaf3ed` · framed by typography partition `therapy` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>

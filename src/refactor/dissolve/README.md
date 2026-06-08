@@ -23,7 +23,7 @@
 
 - partition `refactor` · sub-root `83681380-5563-8481-9c34-775a8516a314`
 - bond degree `26` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `dade3e34-f325-8aac-82ad-fc96416aea07` · framed by typography partition `refactor` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `9d9bf5df-4ccd-8108-a8e9-89bc201f0969` · framed by typography partition `refactor` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>

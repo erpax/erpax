@@ -25,7 +25,57 @@
 
 - partition `bank` · sub-root `87606df1-5071-8b98-ac3b-0b1f53544470`
 - bond degree `74` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `EU-2002/58` · catalogue
+- `EU-2015/847` · catalogue
+- `EU-2015/849` · catalogue
+- `EU-2019/1150` · catalogue
+- `EU-2019/1152` · catalogue
+- `EU-2019/1937` · catalogue
+- `EU-2019/2161` · catalogue
+- `EU-2019/770` · catalogue
+- `EU-2019/771` · catalogue
+- `EU-2022/1925` · catalogue
+- `EU-2022/2065` · catalogue
+- `EU-2022/2554` · catalogue
+- `EU-2022/2555` · catalogue
+- `EU-2022/868` · catalogue
+- `EU-Intrastat-Reg-2019/2152` · catalogue
+- `EU-Taxonomy-2020/852` · catalogue
+- `GDPR Art.30 records-of-processing-activities` · banner
+- `GDPR Art.6(1)(b) lawful-basis-contract` · banner
+- `IFRS IAS-19 §51 defined-contribution-plans` · banner
+- `IFRS IAS-19 employee-benefits short-term` · banner
+- `IFRS IAS-26 §13 §14 §17 retirement-benefit-plan-reporting (employer-side contributions feed the §17 plan-asset disclosures)` · banner
+- `ILO-C001` · catalogue
+- `ISO-13616-1` · catalogue
+- `ISO-13616-1:2020 iban` · banner
+- `ISO-19011:2018 audit-trail payroll-evidence` · banner
+- `ISO-20022` · catalogue
+- `ISO-20022 pain.001 customer-credit-transfer-initiation` · banner
+- `ISO-4217` · catalogue
+- `ISO-4217:2015 currency-codes` · banner
+- `ISO-8601-1` · catalogue
+- `ISO-8601-1:2019 date-time period payment-date` · banner
+- `ISO-9362` · catalogue
+- `ISO-9362:2022 bic` · banner
+- `SOX §302 disclosure-controls` · banner
+- `SOX §404 internal-controls four-eyes` · banner
+- `US-GAAP ASC-710 compensation-general` · banner
+- `US-GAAP ASC-715 compensation-retirement-benefits` · banner
+
+## analytics
+
+- bond degree `74` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `37`
 
 ## identity
 
@@ -41,4 +91,4 @@
 
 ---
 
-<sub>content-uuid `98947771-1fc7-8582-b790-7ee92f6833ec` · framed by typography partition `bank` bonds `74` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `9765e66c-64d7-88be-8645-7bf96b15c10d` · framed by typography partition `bank` bonds `74` · `pnpm readme` · `pnpm readme:check`</sub>

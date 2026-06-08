@@ -23,7 +23,7 @@
 
 - partition `juniors` · sub-root `3b7a762f-17d1-815d-9b6e-6bb9e2770c4c`
 - bond degree `14` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `ab02851b-a4b1-8dd1-ab63-68dbfc4a27b3` · framed by typography partition `juniors` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f24adb19-e9ee-8488-a1e5-49747ca0e7bd` · framed by typography partition `juniors` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>

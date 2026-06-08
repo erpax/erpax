@@ -23,7 +23,7 @@
 
 - partition `override` · sub-root `0a768a8b-3b57-8317-a4ef-c42bb89e2846`
 - bond degree `22` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `394bc885-e748-895c-9c9d-fadf8afbdf62` · framed by typography partition `override` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `4a61202f-70d7-8574-a2ef-357ebc8f03b3` · framed by typography partition `override` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>

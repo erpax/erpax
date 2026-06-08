@@ -23,7 +23,7 @@
 
 - partition `merge` · sub-root `dbe80a0f-2a68-84e7-b5d0-7aab701c3d9f`
 - bond degree `1831` · analysis neighbors `aura` · `diamond` · `hallucination` · `purity`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `8b27529a-2998-8051-94ad-e860d4350396` · framed by typography partition `merge` bonds `1831` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `737fc0b1-97cd-8007-abb4-3699d34d03a2` · framed by typography partition `merge` bonds `1831` · `pnpm readme` · `pnpm readme:check`</sub>

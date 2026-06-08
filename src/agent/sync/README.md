@@ -24,13 +24,37 @@
 ## typography graph
 
 - partition `agent` · sub-root `6b0b62ea-3947-81da-b55b-1d66462cc188`
-- bond degree `54` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `92` · analysis neighbors `hallucination` · `purity`
+- graph root `1c65e160-5137-86a1-ad8e-dc86b0e96873`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ILO-C001` · catalogue
+- `ISO-27001` · catalogue
+- `ISO/IEC-27001:2022` · catalogue
+- `RFC 9562 §5.8 content-uuid event-identity (idempotency key)` · banner
+- `RFC-4122` · catalogue
+- `RFC-4122 §4.3 content-uuid event-identity (idempotency key)` · banner
+- `RFC-6455 websocket` · banner
+- `RFC-9562` · catalogue
+- `SFIA` · catalogue
+- `W3C ActivityPub server-to-server activity-distribution (the model)` · banner
+- `W3C-ActivityPub` · catalogue
+
+## analytics
+
+- bond degree `92` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `11`
 
 ## identity
 
-- uuid `7faca436-8f85-82e2-83f6-71e10a3ac0ce`
-- bonds in `8` · out `8`
+- uuid `5e46aec2-1452-8280-89ed-e8779874a699`
+- bonds in `26` · out `31`
 - trinity form·code·proof `1`·`1`·`1`
 - links `12` / `12`
 - folded `1` · escapes `0`
@@ -41,4 +65,4 @@
 
 ---
 
-<sub>content-uuid `142425cf-d491-8f62-b785-9e560390fe9e` · framed by typography partition `agent` bonds `54` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e27571f5-c540-84f3-9bce-5c15506b33ff` · framed by typography partition `agent` bonds `92` · `pnpm readme` · `pnpm readme:check`</sub>

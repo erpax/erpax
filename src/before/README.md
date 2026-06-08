@@ -22,13 +22,29 @@
 ## typography graph
 
 - partition `before` · sub-root `c4d44480-de75-8d94-b65b-bf9633b1befb`
-- bond degree `16` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `18` · analysis neighbors —
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `BCP-47` · catalogue
+- `schema.org — the type vocabulary, collided to single words` · banner
+- `W3C-WAI-ARIA-1.2` · catalogue
+
+## analytics
+
+- bond degree `18` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `3`
 
 ## identity
 
 - uuid `c4d44480-de75-8d94-b65b-bf9633b1befb`
-- bonds in `5` · out `5`
+- bonds in `6` · out `6`
 - trinity form·code·proof `1`·`0`·`0`
 - links `5` / `5`
 - folded `1` · escapes `0`
@@ -39,4 +55,4 @@
 
 ---
 
-<sub>content-uuid `569fd104-d1e8-8c09-950c-5ac575b5061e` · framed by typography partition `before` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `fc8828cc-d923-8a23-add4-dd3e1f20f0f3` · framed by typography partition `before` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>

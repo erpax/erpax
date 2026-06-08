@@ -23,7 +23,7 @@
 
 - partition `refurbished` · sub-root `10c08ee5-7822-8fef-a7ea-abcdf366b9ec`
 - bond degree `14` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `cb7235f0-b21d-813b-89e0-54e56ce6ffe2` · framed by typography partition `refurbished` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `60d2bd54-9607-8ce4-a188-6ca4e0427d9c` · framed by typography partition `refurbished` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>

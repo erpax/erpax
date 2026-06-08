@@ -25,7 +25,7 @@
 
 - partition `hamiltonian` · sub-root `5916b22b-0498-8ab9-942a-d855ef5b7c8d`
 - bond degree `33` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `ffc26f77-bc08-8513-9251-7a2b0e732626` · framed by typography partition `hamiltonian` bonds `33` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0c170b1e-94f1-874f-809a-7373b66a1f64` · framed by typography partition `hamiltonian` bonds `33` · `pnpm readme` · `pnpm readme:check`</sub>

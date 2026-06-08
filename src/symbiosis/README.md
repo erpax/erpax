@@ -23,7 +23,7 @@
 
 - partition `symbiosis` · sub-root `c9bc5508-0a38-8b1b-be80-8e4cf3e627a6`
 - bond degree `26` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `739fd73a-25e7-891f-b72f-7f7ca8bf5029` · framed by typography partition `symbiosis` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `69fe5968-f8a6-8640-b9e7-7320dae2ec20` · framed by typography partition `symbiosis` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `naics` · sub-root `955983a8-df55-850f-a1f5-fee172c8c38a`
 - bond degree `14` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `8211103d-4cfe-80d9-bacf-de6013b79f9d` · framed by typography partition `naics` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `314e6d4f-1d1a-8915-8437-aedd4c83df6d` · framed by typography partition `naics` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>

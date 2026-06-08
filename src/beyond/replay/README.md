@@ -2,7 +2,7 @@
 
 # replay
 
-> atom `beyond/replay` · horo `—` `—` · [[balance]] `1` · [[seal]] `0`
+> atom `beyond/replay` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -11,10 +11,10 @@
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[horo]]/off-ring `1` |
-| [[balance]] `1` | [[liability]]/[[identity]]/uuid `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
 | [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
@@ -24,21 +24,37 @@
 ## typography graph
 
 - partition `beyond` · sub-root `d5c96de6-e131-8db0-8c67-746942d1018c`
-- bond degree `8` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `15` · analysis neighbors —
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ISO/IEC 25010:2023 §5.5 testability + §5.7 reusability` · banner
+- `ISO/IEC 25010:2023 testability + reusability` · banner
+- `ISRS 4400 agreed-upon-procedures (replay verification)` · banner
+
+## analytics
+
+- bond degree `15` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `3`
 
 ## identity
 
-- uuid `—`
-- bonds in `0` · out `0`
+- uuid `53220e35-ac53-8506-b714-2b7c70c2201c`
+- bonds in `5` · out `5`
 - trinity form·code·proof `1`·`1`·`1`
 - links `7` / `7`
-- folded `0` · escapes `0`
+- folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `42094e0f-8e08-8fa1-8aef-fb7e1441f9e5` · framed by typography partition `beyond` bonds `8` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c8fb6b34-f4f2-8081-b5ef-0c617e02d65e` · framed by typography partition `beyond` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

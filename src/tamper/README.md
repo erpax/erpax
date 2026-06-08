@@ -22,8 +22,8 @@
 ## typography graph
 
 - partition `tamper` · sub-root `3759fd7e-a41d-8b46-b85f-008b24a237ba`
-- bond degree `97` · analysis neighbors `aura`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `98` · analysis neighbors `aura`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `5d7e61af-006a-87f0-a8ff-00761050c94e` · framed by typography partition `tamper` bonds `97` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0d818175-cadc-8410-b2a8-2e23ce5e1405` · framed by typography partition `tamper` bonds `98` · `pnpm readme` · `pnpm readme:check`</sub>

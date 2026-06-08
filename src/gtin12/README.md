@@ -23,7 +23,7 @@
 
 - partition `gtin12` · sub-root `4165c191-5d20-8f7d-aecb-2ecd2836b97d`
 - bond degree `12` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `d37be75b-fac1-8374-b4ad-4457da487461` · framed by typography partition `gtin12` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `3f7c353b-af4b-8644-8d10-09142ebbbb9a` · framed by typography partition `gtin12` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

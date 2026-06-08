@@ -25,7 +25,7 @@
 
 - partition `self` · sub-root `b4dbad62-5160-8e20-965a-beb081d259ee`
 - bond degree `735` · analysis neighbors `aura` · `diamond` · `hallucination` · `purity`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `d7557c8f-d606-89c6-80b8-e6df257c6fd1` · framed by typography partition `self` bonds `735` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f53c6254-60d2-8ace-b258-2ad52d2a1c64` · framed by typography partition `self` bonds `735` · `pnpm readme` · `pnpm readme:check`</sub>

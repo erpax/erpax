@@ -24,13 +24,28 @@
 ## typography graph
 
 - partition `aura` · sub-root `863a5e37-ab12-800b-aa2e-be7556faeb44`
-- bond degree `23` · analysis neighbors `aura` · `diamond` · `hallucination` · `purity`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `25` · analysis neighbors `aura` · `diamond` · `hallucination` · `purity`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `no link invented -- every proposal is a co-occurrence the tree witnesses` · banner
+- `no link invented — every proposal is a co-occurrence the live tree witnesses` · banner
+
+## analytics
+
+- bond degree `25` · sealed `0` · horo `8`
+- variance `0` · balanced `1` · trinity sum `2`
+- bindings `0` · standards `2`
 
 ## identity
 
 - uuid `943f7ea6-8071-8fbf-a1d8-e37edbbbbb02`
-- bonds in `6` · out `6`
+- bonds in `7` · out `7`
 - trinity form·code·proof `1`·`1`·`0`
 - links `7` / `7`
 - folded `1` · escapes `0`
@@ -41,4 +56,4 @@
 
 ---
 
-<sub>content-uuid `f420b7ee-cd1b-8f12-9374-1887db6118ca` · framed by typography partition `aura` bonds `23` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `203eb708-9a11-8a4e-870d-3c29c9b6af85` · framed by typography partition `aura` bonds `25` · `pnpm readme` · `pnpm readme:check`</sub>

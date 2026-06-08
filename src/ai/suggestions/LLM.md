@@ -3,15 +3,15 @@
 
 # suggestions
 
-path `ai/suggestions` · uuid `365184af-0fed-8e23-a2f2-80494964be93` · diamond `86d3958e-b551-8205-854c-4abc3b81981e`
+path `ai/suggestions` · uuid `365184af-0fed-8e23-a2f2-80494964be93` · diamond `367766da-11a0-8563-9253-9ea085983c2e`
 horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports @/auth·@/base/accounting/field·@/eu/ai/act·@/standard/collection/hook · exports default · escapes —
-links `5/5` · folded `1` · bonds in `7` out `7`
+links `5/5` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `1·0·0`
-neighbors → models·proof·records·standard·suggestion·users·uuid · ← models·proof·records·standard·suggestion·users·uuid
+neighbors → industry·models·proof·records·standard·suggestion·users·uuid · ← industry·models·proof·records·standard·suggestion·users·uuid
 analysis —
 law —
 
 ---
 
-<sub>content-uuid `a89a95d6-6e70-83e2-ad01-f3a9b6a6036a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `fd4bb9b6-6aad-8513-b0fd-a1a532f091d3` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -2,7 +2,7 @@
 
 # confirm
 
-> atom `confirm` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
+> atom `confirm` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -24,13 +24,13 @@
 ## typography graph
 
 - partition `confirm` · sub-root `079e8289-1a74-8e03-bcc1-94b92adcae4a`
-- bond degree `33` · analysis neighbors `purity`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `71` · analysis neighbors `purity`
+- graph root `08417410-9529-8662-a45d-0e6296f0598e`
 
 ## identity
 
-- uuid `1d9ffd48-8dd0-8834-b690-ad65220843b6`
-- bonds in `4` · out `4`
+- uuid `079e8289-1a74-8e03-bcc1-94b92adcae4a`
+- bonds in `21` · out `21`
 - trinity form·code·proof `1`·`1`·`1`
 - links `15` / `15`
 - folded `1` · escapes `0`
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `d5662b9b-354b-83ef-b01a-69f7ad109093` · framed by typography partition `confirm` bonds `33` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `1eaf305c-39c7-82a7-ada3-b50b0d47c1b1` · framed by typography partition `confirm` bonds `71` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `moisture` · sub-root `29fc82c2-29c3-8a66-8b88-916299de0f97`
 - bond degree `31` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `df52be58-04b5-80c1-a2e8-63b4b90d1cfa` · framed by typography partition `moisture` bonds `31` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `8689a60b-5f68-8d31-bf15-a70673c95edd` · framed by typography partition `moisture` bonds `31` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `frequency` · sub-root `a4f80f2a-28c3-8108-ae9a-f738dc92f478`
 - bond degree `23` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `b15fa90e-5fda-8bd4-b1e2-fd86a29ae98c` · framed by typography partition `frequency` bonds `23` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `92fbda1f-e4e9-8eed-941b-1f2f73a1cbba` · framed by typography partition `frequency` bonds `23` · `pnpm readme` · `pnpm readme:check`</sub>

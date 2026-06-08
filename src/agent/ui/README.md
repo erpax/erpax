@@ -25,7 +25,23 @@
 
 - partition `agent` · sub-root `6b0b62ea-3947-81da-b55b-1d66462cc188`
 - bond degree `28` · analysis neighbors `aura`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `1c65e160-5137-86a1-ad8e-dc86b0e96873`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `every facet computed from the atom's content-uuid; coverage read live from the matrix` · banner
+- `every facet computed from the atom's content-uuid; coverage read live from the matrix, never asserted` · banner
+- `the analog aura — every UI colour/sound is a projection of one content-uuid` · banner
+
+## analytics
+
+- bond degree `28` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `3`
 
 ## identity
 
@@ -41,4 +57,4 @@
 
 ---
 
-<sub>content-uuid `8ee7aead-1b7f-80a6-a7ee-54cd490026c8` · framed by typography partition `agent` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c049197c-097b-8e9e-a48d-917597d66dc9` · framed by typography partition `agent` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>

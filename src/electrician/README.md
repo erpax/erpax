@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `electrician` · sub-root `6a356ec3-7cc2-84cb-b2dd-3daaf878b407`
-- bond degree `50` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `6` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `6a356ec3-7cc2-84cb-b2dd-3daaf878b407`
-- bonds in `24` · out `24`
+- bonds in `2` · out `2`
 - trinity form·code·proof `1`·`0`·`0`
 - links `2` / `2`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `3ed25564-f705-8842-9584-934d7ffa0d7e` · framed by typography partition `electrician` bonds `50` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `13d57a08-95d8-8d11-88ec-8e8c379f7cec` · framed by typography partition `electrician` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>

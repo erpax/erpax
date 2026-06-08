@@ -23,7 +23,7 @@
 
 - partition `rebate` · sub-root `ccdc2fb1-54dd-8aa0-b65f-8ab07caa9aac`
 - bond degree `14` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `657c1f8d-3343-8abe-87e9-a12eb23bcd3f` · framed by typography partition `rebate` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ef3ba98c-8efe-8f1f-904e-1de1d1f23e7d` · framed by typography partition `rebate` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>

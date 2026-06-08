@@ -2,7 +2,7 @@
 
 # reconciliation
 
-> atom `currency/reconciliation` · horo `4` `weave` · [[balance]] `1` · [[seal]] `0`
+> atom `currency/reconciliation` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -11,7 +11,7 @@
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
 | [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
 | [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
@@ -24,21 +24,21 @@
 ## typography graph
 
 - partition `currency` · sub-root `8d392f75-40f3-8871-ad7a-af6fcfb2b6a0`
-- bond degree `22` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `25` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
-- uuid `84acb7e3-30cc-8756-a411-d424b6e34433`
-- bonds in `5` · out `5`
+- uuid `d115bcee-2e37-81a3-8f37-212ce4e9e48d`
+- bonds in `7` · out `9`
 - trinity form·code·proof `1`·`1`·`1`
 - links `10` / `10`
-- folded `0` · escapes `0`
+- folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `611ef36f-a4a7-8e5f-801a-48c1f40b2372` · framed by typography partition `currency` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `9b6d8086-82bb-85c6-876e-99b70f91da7e` · framed by typography partition `currency` bonds `25` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -24,13 +24,30 @@
 ## typography graph
 
 - partition `bcp` · sub-root `b12c5f7e-040c-857a-8ef4-8b25226d8910`
-- bond degree `5` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `3` · analysis neighbors —
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `BCP-47` · catalogue
+- `BCP-47 language-tag` · banner
+- `ECMA-402` · catalogue
+- `Unicode-CLDR` · catalogue
+
+## analytics
+
+- bond degree `3` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `4`
 
 ## identity
 
 - uuid `b12c5f7e-040c-857a-8ef4-8b25226d8910`
-- bonds in `2` · out `2`
+- bonds in `1` · out `1`
 - trinity form·code·proof `1`·`1`·`1`
 - links `1` / `1`
 - folded `1` · escapes `0`
@@ -41,4 +58,4 @@
 
 ---
 
-<sub>content-uuid `6b6e54fa-8db9-8707-bdc9-08e363091591` · framed by typography partition `bcp` bonds `5` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d696ed86-bdd9-8665-bd4d-62ab4e79a33b` · framed by typography partition `bcp` bonds `3` · `pnpm readme` · `pnpm readme:check`</sub>

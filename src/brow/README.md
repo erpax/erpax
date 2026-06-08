@@ -24,13 +24,28 @@
 ## typography graph
 
 - partition `brow` · sub-root `70d77f88-5a30-8820-9ce9-cff8a0e38a37`
-- bond degree `14` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `12` · analysis neighbors —
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `note, colour and uuid computed from the position math, never hand-asserted` · banner
+- `note·colour·uuid computed from the position math, never hand-asserted` · banner
+
+## analytics
+
+- bond degree `12` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `2`
 
 ## identity
 
 - uuid `70d77f88-5a30-8820-9ce9-cff8a0e38a37`
-- bonds in `5` · out `5`
+- bonds in `4` · out `4`
 - trinity form·code·proof `1`·`1`·`1`
 - links `10` / `10`
 - folded `1` · escapes `0`
@@ -41,4 +56,4 @@
 
 ---
 
-<sub>content-uuid `9f959af6-342c-8bcc-9301-2477d750030a` · framed by typography partition `brow` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `16b55d18-873f-8786-bd6d-83a4cd14c5cc` · framed by typography partition `brow` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

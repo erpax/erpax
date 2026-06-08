@@ -23,7 +23,7 @@
 
 - partition `river` · sub-root `27b1d870-05f9-86d7-8dc6-5ee1c552496e`
 - bond degree `33` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `f726e3c3-a707-826f-9e71-30be116fec08` · framed by typography partition `river` bonds `33` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e24caa7f-03bb-80bb-b7df-7dbdae3c96c8` · framed by typography partition `river` bonds `33` · `pnpm readme` · `pnpm readme:check`</sub>

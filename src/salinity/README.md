@@ -23,7 +23,7 @@
 
 - partition `salinity` · sub-root `0fd8688a-2722-8d83-8aba-f10b140a1b3d`
 - bond degree `20` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `fa7d9a0c-3c8e-87bd-affb-751c2c1ee388` · framed by typography partition `salinity` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `84b73b06-c4e6-8530-92a8-5732016c7ac8` · framed by typography partition `salinity` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>

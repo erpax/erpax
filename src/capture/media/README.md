@@ -2,7 +2,7 @@
 
 # media
 
-> atom `capture/media` · horo `1` `base` · [[balance]] `1` · [[seal]] `0`
+> atom `capture/media` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -11,7 +11,7 @@
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
 | [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
 | [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
@@ -24,21 +24,48 @@
 ## typography graph
 
 - partition `capture` · sub-root `2434236d-08b0-8501-a972-dc5bd6591c23`
-- bond degree `45` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `93` · analysis neighbors —
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `EU-2018/1673` · catalogue
+- `EU-2018/1725` · catalogue
+- `EU-2018/302` · catalogue
+- `EU-2018/389-SCA-RTS` · catalogue
+- `EU-2018/843` · catalogue
+- `EU-2018/957` · catalogue
+- `ISO 19011:2018 audit-trail test-evidence` · banner
+- `ISO-19011` · catalogue
+- `ISO-19011:2018 audit-trail test-recording-provenance` · banner
+- `ISO/IEC 14496-30 timed-text-formats` · banner
+- `W3C WebVTT` · banner
+- `W3C WebVTT video-text-track-format` · banner
+- `WCAG-2.1 §1.2.2 captions-prerecorded` · banner
+- `WCAG-2.1 §1.2.5 audio-description-prerecorded` · banner
+
+## analytics
+
+- bond degree `93` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `14`
 
 ## identity
 
-- uuid `532cdb92-d0c1-8469-91b9-98c6947db609`
-- bonds in `5` · out `5`
+- uuid `7b517e9c-e681-80b1-94a0-2efb4181418a`
+- bonds in `30` · out `31`
 - trinity form·code·proof `1`·`1`·`1`
 - links `5` / `5`
-- folded `0` · escapes `0`
+- folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `34fa8cdc-e2c6-8d47-aca2-cfb834bedc67` · framed by typography partition `capture` bonds `45` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d670ed18-4a2e-83e9-9307-5ec87ea3ea0c` · framed by typography partition `capture` bonds `93` · `pnpm readme` · `pnpm readme:check`</sub>

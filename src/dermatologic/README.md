@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `dermatologic` · sub-root `dcb1d452-2a92-89dc-add0-7af73bac9bbb`
-- bond degree `20` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `12` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `dcb1d452-2a92-89dc-add0-7af73bac9bbb`
-- bonds in `8` · out `8`
+- bonds in `4` · out `4`
 - trinity form·code·proof `1`·`0`·`0`
 - links `4` / `4`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `3b6b2b89-afc1-80ae-883a-fa72f096b7d6` · framed by typography partition `dermatologic` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `8a2981d6-fe3e-843c-8fcf-f2e7534d7659` · framed by typography partition `dermatologic` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

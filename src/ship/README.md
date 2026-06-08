@@ -23,7 +23,7 @@
 
 - partition `ship` · sub-root `8c27033a-adbe-82ad-8486-e958dbce555e`
 - bond degree `15` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `54662c28-6b3d-82c8-bc9d-fa45cf853dc0` · framed by typography partition `ship` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `720012d5-0e5e-8eeb-8f62-da743734b0d1` · framed by typography partition `ship` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

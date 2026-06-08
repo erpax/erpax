@@ -23,7 +23,7 @@
 
 - partition `lexical` · sub-root `a839cd92-4dae-8ddc-bfb7-9efe75c858d6`
 - bond degree `20` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `c43716c7-9666-8fdb-bb66-6c0b8ad16f40` · framed by typography partition `lexical` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `1d4207a3-8ca6-8bad-8b1a-60755916e897` · framed by typography partition `lexical` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>

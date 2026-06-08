@@ -25,7 +25,7 @@
 
 - partition `lung` · sub-root `ea8311c2-903c-847e-a86d-f21fa4698bbb`
 - bond degree `14` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `af8cf712-563a-8c9d-8284-0709de73dbbd` · framed by typography partition `lung` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e4fcff7b-e966-81a2-a193-7dd8e4add81f` · framed by typography partition `lung` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>

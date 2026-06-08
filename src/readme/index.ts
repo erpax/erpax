@@ -59,13 +59,14 @@ import {
   type SkillPage,
 } from '@/typography'
 import { conserves, trialBalance } from '@/conservation'
-import { computeDiamond, deriveDiamond } from '@/diamond'
 import {
+  computeDiamond,
+  deriveDiamond,
   deploymentFaces,
   diamondUuid,
   renderDiamondJson,
   type DiamondModel,
-} from '@/diamond/projection'
+} from '@/diamond'
 
 /** One facet of the diamond: a position on the closed horo ring + the atoms riding it. */
 export interface RingFacet {

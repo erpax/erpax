@@ -2,7 +2,7 @@
 
 # archival
 
-> atom `archival` · horo `—` `—` · [[balance]] `1` · [[seal]] `0`
+> atom `archival` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -11,10 +11,10 @@
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[horo]]/off-ring `1` |
-| [[balance]] `1` | [[liability]]/[[identity]]/uuid `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
 | [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
@@ -24,21 +24,37 @@
 ## typography graph
 
 - partition `archival` · sub-root `316a7a5b-5727-8d9c-a083-ed7f95e6114b`
-- bond degree `9` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `18` · analysis neighbors —
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `Arweave Pay-Once-Store-Forever` · banner
+- `Filecoin storage proofs (Spacegap / Spacetime)` · banner
+- `W3C IPFS CID v1 — sha-256 maps to ERPax content-uuid` · banner
+
+## analytics
+
+- bond degree `18` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `3`
 
 ## identity
 
-- uuid `—`
-- bonds in `0` · out `0`
+- uuid `316a7a5b-5727-8d9c-a083-ed7f95e6114b`
+- bonds in `6` · out `6`
 - trinity form·code·proof `1`·`1`·`1`
 - links `6` / `6`
-- folded `0` · escapes `0`
+- folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `d06cf73a-cd58-831b-8896-de10cd4223c3` · framed by typography partition `archival` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `5896731b-ffa2-8376-9f61-fa867b40bb28` · framed by typography partition `archival` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>

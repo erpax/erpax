@@ -23,7 +23,7 @@
 
 - partition `pulmonary` · sub-root `1b2c7ecc-7b12-8c21-b054-813f8bc44fdd`
 - bond degree `18` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `594c955e-bbc6-85b1-a982-a223b52ce167` · framed by typography partition `pulmonary` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `31d3ffff-8d43-8a70-95b0-4bdb78c73e9b` · framed by typography partition `pulmonary` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>

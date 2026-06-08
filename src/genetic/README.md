@@ -23,7 +23,7 @@
 
 - partition `genetic` · sub-root `675741fc-5896-8e80-8261-e60f37dd0a8e`
 - bond degree `14` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `2fd44b91-5244-8ed5-8800-8fbb81726ad1` · framed by typography partition `genetic` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `796348b2-c20b-8e12-af14-844a8f5b48c3` · framed by typography partition `genetic` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>

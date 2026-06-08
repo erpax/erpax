@@ -23,7 +23,7 @@
 
 - partition `genitourinary` · sub-root `686decf2-f5d7-8232-beb2-0f3c2b438676`
 - bond degree `12` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `7fe93a4b-e353-81f6-8e01-c84c588781c3` · framed by typography partition `genitourinary` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b51e1f21-f9ea-8972-9486-b0a1dd0914b3` · framed by typography partition `genitourinary` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

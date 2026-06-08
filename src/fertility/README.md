@@ -23,7 +23,7 @@
 
 - partition `fertility` · sub-root `be959057-62be-870a-83fd-c72cdef16e93`
 - bond degree `243` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `a1912132-d5b9-8f0f-ad5f-78fa2697461a` · framed by typography partition `fertility` bonds `243` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `5e910dcc-e162-8f9d-b60b-d6561572d71d` · framed by typography partition `fertility` bonds `243` · `pnpm readme` · `pnpm readme:check`</sub>

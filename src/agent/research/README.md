@@ -2,7 +2,7 @@
 
 # research
 
-> atom `agent/research` · horo `7` `descent` · [[balance]] `1` · [[seal]] `0`
+> atom `agent/research` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -11,7 +11,7 @@
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
 | [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
 | [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
@@ -24,21 +24,36 @@
 ## typography graph
 
 - partition `agent` · sub-root `6b0b62ea-3947-81da-b55b-1d66462cc188`
-- bond degree `98` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `224` · analysis neighbors `agent`
+- graph root `1c65e160-5137-86a1-ad8e-dc86b0e96873`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `RFC 9562 §5.8 content-addressed identity (agent uuid, finding uuid)` · banner
+- `RFC-9562` · catalogue
+
+## analytics
+
+- bond degree `224` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `2`
 
 ## identity
 
-- uuid `f2a22870-40a9-8da9-9f5a-a9745e81f284`
-- bonds in `5` · out `5`
+- uuid `d4d6de7f-c43c-89df-90a7-a6439ccfa4f4`
+- bonds in `61` · out `76`
 - trinity form·code·proof `1`·`1`·`1`
 - links `18` / `18`
-- folded `0` · escapes `0`
+- folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `e795656d-b020-83ab-b3a0-9525752df410` · framed by typography partition `agent` bonds `98` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `9301c384-9e28-8a06-bb48-b5fdab754ee5` · framed by typography partition `agent` bonds `224` · `pnpm readme` · `pnpm readme:check`</sub>

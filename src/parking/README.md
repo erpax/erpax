@@ -23,7 +23,7 @@
 
 - partition `parking` · sub-root `f5451ab7-54ba-8ad9-9d02-5e683290fa32`
 - bond degree `18` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `7341f56e-be65-8b85-b5d4-03a4c6d503e2` · framed by typography partition `parking` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `af1f75a7-938b-896c-a118-24a7fdab2284` · framed by typography partition `parking` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>

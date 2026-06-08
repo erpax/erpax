@@ -24,13 +24,38 @@
 ## typography graph
 
 - partition `cases` · sub-root `e87cc0cf-ba13-8f29-8ba1-8e0622203cb4`
-- bond degree `27` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `63` · analysis neighbors —
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `EU-2018/1673` · catalogue
+- `EU-2018/1725` · catalogue
+- `EU-2018/302` · catalogue
+- `EU-2018/389-SCA-RTS` · catalogue
+- `EU-2018/843` · catalogue
+- `EU-2018/957` · catalogue
+- `ISA-500` · catalogue
+- `ISO-19011` · catalogue
+- `ISO-19011:2018 audit-trail file·hear·rule·seal` · banner
+- `ISO-19011:2018 ISA-500 evidence chain-of-custody append-only` · banner
+- `UBL-2.1` · catalogue
+- `UN-COFOG-03 public-order-and-safety law-courts` · banner
+
+## analytics
+
+- bond degree `63` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `12`
 
 ## identity
 
 - uuid `e87cc0cf-ba13-8f29-8ba1-8e0622203cb4`
-- bonds in `3` · out `3`
+- bonds in `21` · out `21`
 - trinity form·code·proof `1`·`1`·`1`
 - links `24` / `24`
 - folded `1` · escapes `0`
@@ -41,4 +66,4 @@
 
 ---
 
-<sub>content-uuid `bf2522ca-a5af-8785-addc-adb1e6dad23f` · framed by typography partition `cases` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c4ebfacc-1019-88f0-9b9e-2e3f09a1d827` · framed by typography partition `cases` bonds `63` · `pnpm readme` · `pnpm readme:check`</sub>

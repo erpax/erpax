@@ -23,7 +23,7 @@
 
 - partition `computer` · sub-root `ce256c56-84ac-84cc-8824-81fde105bf5b`
 - bond degree `20` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `08417410-9529-8662-a45d-0e6296f0598e`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `7f9367b1-389e-823e-80d9-f05a8f0aa49c` · framed by typography partition `computer` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `9b2e2334-928b-823d-91e0-7be2fca57cb2` · framed by typography partition `computer` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>

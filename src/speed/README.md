@@ -23,7 +23,7 @@
 
 - partition `speed` · sub-root `b57c2655-41d2-849b-970e-259bddd96739`
 - bond degree `27` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `c7998c26-e075-8171-b2ba-7ece4e3cf242` · framed by typography partition `speed` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `d161557d-05ea-821b-a48a-55eba4e18cd6` · framed by typography partition `speed` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>

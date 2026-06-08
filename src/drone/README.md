@@ -24,13 +24,13 @@
 ## typography graph
 
 - partition `drone` · sub-root `2ed3cbf6-baa6-803c-8ca9-23d8511235bf`
-- bond degree `89` · analysis neighbors `aura`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `52` · analysis neighbors `agent` · `aura`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `2ed3cbf6-baa6-803c-8ca9-23d8511235bf`
-- bonds in `33` · out `37`
+- bonds in `16` · out `16`
 - trinity form·code·proof `1`·`1`·`1`
 - links `28` / `28`
 - folded `1` · escapes `0`
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `56ebb105-ec0c-8eb2-bb93-9c0682fb05b9` · framed by typography partition `drone` bonds `89` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `aa1490af-991a-80f3-b1f2-4f7bbb92485d` · framed by typography partition `drone` bonds `52` · `pnpm readme` · `pnpm readme:check`</sub>

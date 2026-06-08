@@ -23,7 +23,7 @@
 
 - partition `continent` · sub-root `eac110bf-7842-805e-b10b-5b0b61e8adae`
 - bond degree `9` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `08417410-9529-8662-a45d-0e6296f0598e`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `45330c27-6f81-847b-88a6-fe626c7b5592` · framed by typography partition `continent` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `02abb491-a4b6-8775-8221-0130a9d5afc6` · framed by typography partition `continent` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>

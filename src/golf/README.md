@@ -23,7 +23,7 @@
 
 - partition `golf` · sub-root `91d52ee9-7e4d-8bf3-a861-c75332a6065b`
 - bond degree `32` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `6c76359d-a692-874c-b037-16f3396155ab` · framed by typography partition `golf` bonds `32` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `0bc4dafe-2b7b-8a51-97e0-45d5a896e903` · framed by typography partition `golf` bonds `32` · `pnpm readme` · `pnpm readme:check`</sub>

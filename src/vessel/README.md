@@ -23,7 +23,7 @@
 
 - partition `vessel` · sub-root `8ca283aa-5efd-87a0-b347-d4b06e50c449`
 - bond degree `22` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `516df13d-62e6-84de-9f88-503097ae83f2` · framed by typography partition `vessel` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `cc1289ea-70b9-8fa4-8ba1-bae2ab0a0930` · framed by typography partition `vessel` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>

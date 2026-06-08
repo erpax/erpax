@@ -25,7 +25,33 @@
 
 - partition `api` · sub-root `e53ea2d8-2396-80bf-8228-b488f4a66500`
 - bond degree `80` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `EU 910/2014 eidas signature-evidence` · banner
+- `EU-2018/1673` · catalogue
+- `EU-2018/1725` · catalogue
+- `EU-2018/302` · catalogue
+- `EU-2018/389-SCA-RTS` · catalogue
+- `EU-2018/843` · catalogue
+- `EU-2018/957` · catalogue
+- `EU-Taxonomy-2020/852` · catalogue
+- `ISO-19011` · catalogue
+- `ISO-19011:2018 audit-trail` · banner
+- `ISO-19011:2018 audit-trail external-system-evidence` · banner
+- `ISO/IEC-27007:2020 isms-auditing` · banner
+- `SOX §404 internal-controls external-system-traceability` · banner
+
+## analytics
+
+- bond degree `80` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `13`
 
 ## identity
 
@@ -41,4 +67,4 @@
 
 ---
 
-<sub>content-uuid `f042efde-2f6a-80e6-b0d9-b1f02b5aae37` · framed by typography partition `api` bonds `80` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c60db2b0-808a-8a49-bb29-df6af65ce483` · framed by typography partition `api` bonds `80` · `pnpm readme` · `pnpm readme:check`</sub>

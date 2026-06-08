@@ -23,7 +23,7 @@
 
 - partition `fungus` · sub-root `ad00a97a-618b-8244-bc11-2d13a37784d7`
 - bond degree `20` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `6c04cab2-5a48-8f1e-8eeb-b77756c01f71` · framed by typography partition `fungus` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e3eb70ef-8bd3-8244-b4f2-4c1d908b7f99` · framed by typography partition `fungus` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>

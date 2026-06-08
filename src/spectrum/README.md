@@ -25,7 +25,7 @@
 
 - partition `spectrum` · sub-root `87a80a00-b7dd-8793-8eab-7e7609c0957c`
 - bond degree `26` · analysis neighbors `aura`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `9997a8f7-97d3-8d76-948d-8ea024437789` · framed by typography partition `spectrum` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f7435562-dd29-85d0-947c-2f502a8282b2` · framed by typography partition `spectrum` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>

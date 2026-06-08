@@ -25,7 +25,34 @@
 
 - partition `activities` · sub-root `bbe34623-f840-8143-b1f0-75bc5443add1`
 - bond degree `70` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `1c65e160-5137-86a1-ad8e-dc86b0e96873`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `EU-2019/1150` · catalogue
+- `EU-2019/1152` · catalogue
+- `EU-2019/1937` · catalogue
+- `EU-2019/2161` · catalogue
+- `EU-2019/770` · catalogue
+- `EU-2019/771` · catalogue
+- `EU-Intrastat-Reg-2019/2152` · catalogue
+- `GDPR Art.30 records-of-processing-activities` · banner
+- `GDPR Art.5(1)(c) data-minimisation` · banner
+- `ISO-19011:2018 audit-trail crm-activity` · banner
+- `ISO-8601-1` · catalogue
+- `ISO-8601-1:2019 date-time` · banner
+- `RFC-5545` · catalogue
+- `rfc-5545 icalendar` · banner
+
+## analytics
+
+- bond degree `70` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `14`
 
 ## identity
 
@@ -41,4 +68,4 @@
 
 ---
 
-<sub>content-uuid `a6b4b667-8698-8563-8e1b-557ca1b10f23` · framed by typography partition `activities` bonds `70` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `664079fd-6e05-8ee2-976a-20a8cfb32107` · framed by typography partition `activities` bonds `70` · `pnpm readme` · `pnpm readme:check`</sub>

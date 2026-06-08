@@ -23,7 +23,21 @@
 
 - partition `attorney` · sub-root `397816d1-5115-8802-a9dd-7730ef9c7729`
 - bond degree `9` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `9` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `e37f6266-9b62-8545-945e-8c6ffbf73d88` · framed by typography partition `attorney` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `368b46d5-dc8d-88f4-afcd-8eb9a8f84684` · framed by typography partition `attorney` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>

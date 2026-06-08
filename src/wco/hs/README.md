@@ -25,7 +25,7 @@
 
 - partition `wco` · sub-root `da78c52e-9a14-8915-8d58-df726a63afc4`
 - bond degree `5` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `bdeeea75-6967-8291-9974-c1fc4a09edad` · framed by typography partition `wco` bonds `5` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `fcfa1d80-35ff-863b-9f26-fe024648b7b3` · framed by typography partition `wco` bonds `5` · `pnpm readme` · `pnpm readme:check`</sub>

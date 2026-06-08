@@ -23,7 +23,7 @@
 
 - partition `zoo` · sub-root `9f6f7bab-a7d9-8e9d-9ae7-a3e02c88d261`
 - bond degree `2` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `66848432-869d-8988-ba5a-126f8f837fad` · framed by typography partition `zoo` bonds `2` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e907e90e-c8eb-89fc-a7d3-be858fa91635` · framed by typography partition `zoo` bonds `2` · `pnpm readme` · `pnpm readme:check`</sub>

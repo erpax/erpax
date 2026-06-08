@@ -23,7 +23,7 @@
 
 - partition `geopolitical` · sub-root `a9c04eb3-61eb-85c4-930b-e16734f4359b`
 - bond degree `6` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `59929d17-7435-8df1-b71f-dccf22205541` · framed by typography partition `geopolitical` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `9065c792-d91a-885b-a9d2-5df21a9ee3d2` · framed by typography partition `geopolitical` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>

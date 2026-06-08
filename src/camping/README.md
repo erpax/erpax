@@ -23,7 +23,21 @@
 
 - partition `camping` · sub-root `c9557763-3903-8fd8-8a3d-c196df954673`
 - bond degree `16` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `16` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `41e9ce0b-983d-807b-81ff-e3b968fb24a8` · framed by typography partition `camping` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b2bc6e27-f25b-80be-9598-9cf81810b272` · framed by typography partition `camping` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

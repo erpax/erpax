@@ -23,7 +23,7 @@
 
 - partition `violence` · sub-root `8af82861-975a-85fc-a8ae-6115fbcbc5ba`
 - bond degree `22` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `98ff6c40-ca9b-897b-b107-6f5f80271331` · framed by typography partition `violence` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `2309b0b9-7157-8c63-b9ba-b5ea983ec91d` · framed by typography partition `violence` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>

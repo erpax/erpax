@@ -23,7 +23,7 @@
 
 - partition `tvclip` · sub-root `5a6661db-35ea-8176-8754-3a06b00c4589`
 - bond degree `52` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `72c252e7-4a33-8bf8-b93f-234851904f3c` · framed by typography partition `tvclip` bonds `52` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `11e87816-4ddc-8a73-aa57-099d4f4230e5` · framed by typography partition `tvclip` bonds `52` · `pnpm readme` · `pnpm readme:check`</sub>

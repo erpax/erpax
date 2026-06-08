@@ -24,13 +24,34 @@
 ## typography graph
 
 - partition `anchor` · sub-root `a093ef21-08ac-89f6-a30b-839b20cd86ca`
-- bond degree `109` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `117` · analysis neighbors —
+- graph root `1c65e160-5137-86a1-ad8e-dc86b0e96873`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `eIDAS` · catalogue
+- `EU-2014/55` · catalogue
+- `EU-537/2014` · catalogue
+- `EU-910/2014` · catalogue
+- `NIST SP 800-57 Part 1 r5 §5.6.1 (comparable key strengths)` · banner
+- `NIST-SP-800-57` · catalogue
+- `NIST-SP-800-63` · catalogue
+- `RFC 3161 §2.4 (TSA timestamp token) · eIDAS (EU 910/2014) Art.41–42 · ETSI EN 319 422` · banner
+
+## analytics
+
+- bond degree `117` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `8`
 
 ## identity
 
 - uuid `a093ef21-08ac-89f6-a30b-839b20cd86ca`
-- bonds in `35` · out `33`
+- bonds in `39` · out `37`
 - trinity form·code·proof `1`·`1`·`1`
 - links `17` / `17`
 - folded `1` · escapes `0`
@@ -41,4 +62,4 @@
 
 ---
 
-<sub>content-uuid `477362f0-fa7a-8e5f-a3f0-a3544b3f4827` · framed by typography partition `anchor` bonds `109` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c205029c-2713-8b2f-bfb9-91afbe0c8e8b` · framed by typography partition `anchor` bonds `117` · `pnpm readme` · `pnpm readme:check`</sub>

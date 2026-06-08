@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `dentistry` · sub-root `8db364e1-d679-81f3-9ae3-86bd00b70acd`
-- bond degree `30` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `12` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `8db364e1-d679-81f3-9ae3-86bd00b70acd`
-- bonds in `13` · out `13`
+- bonds in `4` · out `4`
 - trinity form·code·proof `1`·`0`·`0`
 - links `4` / `4`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `dc1ce330-3354-879d-9594-3811298e3b1e` · framed by typography partition `dentistry` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `38b894e8-fcfe-8bfa-8406-c9cfb488b68e` · framed by typography partition `dentistry` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

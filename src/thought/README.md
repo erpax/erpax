@@ -10,12 +10,13 @@
 | -------- | --------- |
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
 | [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
-| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
+| [[asset]]/[[links]]/resolved `46` | [[balance]] `46` |
+| [[balance]] `2` | [[liability]]/[[links]]/dangling `2` |
 | [[balance]] `1` | [[liability]]/[[horo]]/off-ring `1` |
 | [[balance]] `1` | [[liability]]/[[identity]]/uuid `1` |
 | [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
-| Σ `7` | Σ `7` |
+| Σ `54` | Σ `54` |
 
 > [[balance]] `0` · [[conservation]] `1` · [[entry]] · [[purity]]
 
@@ -23,14 +24,14 @@
 
 - partition `thought` · sub-root `91559ce7-8d1f-8330-b07b-cf3779a53ca5`
 - bond degree `26` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
 - uuid `—`
 - bonds in `0` · out `0`
 - trinity form·code·proof `1`·`0`·`0`
-- links `45` / `45`
+- links `46` / `48`
 - folded `0` · escapes `0`
 
 ## [[seal]]
@@ -39,4 +40,4 @@
 
 ---
 
-<sub>content-uuid `99ab43a5-d428-80ec-83a0-5ffe4b99d53a` · framed by typography partition `thought` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `41f440bb-bc0f-87c7-9f44-eb1825ed8f7a` · framed by typography partition `thought` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>

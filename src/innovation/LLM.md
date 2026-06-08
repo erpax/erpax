@@ -3,15 +3,15 @@
 
 # innovation
 
-path `innovation` · uuid `—` · diamond `81b596bf-b6dc-86e4-9cc8-8f8f7239ccf0`
+path `innovation` · uuid `—` · diamond `ba6b9828-ea39-888f-8b25-72bf117ac9b3`
 horo `—` `—` · trinity `1·0·0` · sealed `0`
-imports — · exports — · escapes —
+imports cloudflare·confirm·diamond·law·seal·secret · exports innovation · escapes —
 links `8/8` · folded `0` · bonds in `0` out `0`
 faces worker·plugin·pwa `0·0·0`
 neighbors → — · ← —
-analysis cloudflare·diamond·hallucination·purity
+analysis cloudflare·diamond·hallucination·purity·secret
 law innovation extends proven patterns with tests — no parallel framework without a green vitest proof.
 
 ---
 
-<sub>content-uuid `c2675f7f-5a38-8323-886e-3a4d5ed4bfdd` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `bf412f56-ec74-82c5-bb72-56c197243dee` · `pnpm readme` · `pnpm computed:check`</sub>

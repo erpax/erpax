@@ -23,7 +23,7 @@
 
 - partition `manipulation` · sub-root `12fcb628-429a-8575-a9d6-ab434d16a791`
 - bond degree `13` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `e7bac10b-936f-82ee-98cb-75a6ee53166e` · framed by typography partition `manipulation` bonds `13` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `3d2b578e-314a-8864-a329-93b8594936df` · framed by typography partition `manipulation` bonds `13` · `pnpm readme` · `pnpm readme:check`</sub>

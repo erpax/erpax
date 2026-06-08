@@ -2,7 +2,7 @@
 
 # tenant
 
-> atom `allow/public/read/tenant` · horo `7` `descent` · [[balance]] `1` · [[seal]] `0`
+> atom `allow/public/read/tenant` · horo `8` `crest` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -11,7 +11,7 @@
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
 | [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
 | [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
@@ -24,21 +24,36 @@
 ## typography graph
 
 - partition `allow` · sub-root `4ee982fc-d3e7-8ba2-8093-14447a5c479d`
-- bond degree `50` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `42` · analysis neighbors —
+- graph root `1c65e160-5137-86a1-ad8e-dc86b0e96873`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `9110 §13 caching` · banner
+- `GDPR Art.5(1)(c) data-minimization` · banner
+
+## analytics
+
+- bond degree `42` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `2`
 
 ## identity
 
-- uuid `9c6b3124-60eb-81cd-9fe5-e5b776688568`
-- bonds in `14` · out `14`
+- uuid `1a876b1c-4264-8aea-9978-f539bcc9d5da`
+- bonds in `12` · out `14`
 - trinity form·code·proof `1`·`1`·`1`
 - links `5` / `5`
-- folded `0` · escapes `0`
+- folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `5c27bd95-5cc4-8cd9-aa55-2437425c3c47` · framed by typography partition `allow` bonds `50` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `cfaf1b65-b4b4-8dd5-b5fe-63fa4420b90f` · framed by typography partition `allow` bonds `42` · `pnpm readme` · `pnpm readme:check`</sub>

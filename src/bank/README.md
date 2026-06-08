@@ -23,7 +23,43 @@
 
 - partition `bank` · sub-root `87606df1-5071-8b98-ac3b-0b1f53544470`
 - bond degree `32` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `EU-2002/58` · catalogue
+- `EU-2015/847` · catalogue
+- `EU-2015/849` · catalogue
+- `EU-2019/1150` · catalogue
+- `EU-2019/1152` · catalogue
+- `EU-2019/1937` · catalogue
+- `EU-2019/2161` · catalogue
+- `EU-2019/770` · catalogue
+- `EU-2019/771` · catalogue
+- `EU-2022/1925` · catalogue
+- `EU-2022/2065` · catalogue
+- `EU-2022/2554` · catalogue
+- `EU-2022/2555` · catalogue
+- `EU-2022/868` · catalogue
+- `EU-Intrastat-Reg-2019/2152` · catalogue
+- `EU-Taxonomy-2020/852` · catalogue
+- `ILO-C001` · catalogue
+- `ISO-13616-1` · catalogue
+- `ISO-20022` · catalogue
+- `ISO-4217` · catalogue
+- `ISO-8601-1` · catalogue
+- `ISO-9362` · catalogue
+- `SWIFT-MT` · catalogue
+
+## analytics
+
+- bond degree `32` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `23`
 
 ## identity
 
@@ -39,4 +75,4 @@
 
 ---
 
-<sub>content-uuid `48d8e3b0-448e-8814-89f6-1f5dab424550` · framed by typography partition `bank` bonds `32` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `2bde0eba-393d-8473-95b0-6990f67c88c9` · framed by typography partition `bank` bonds `32` · `pnpm readme` · `pnpm readme:check`</sub>

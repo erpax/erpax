@@ -103,7 +103,7 @@ describe('proveServerlessQuantum — diamond-sealed computation chain', () => {
     const cloudUuid = diamondUuid(deriveDiamond('cloudflare'))
     const quantumUuid = diamondUuid(deriveDiamond('quantum'))
     expect(a.stages.find((s) => s.stage === 'existence')!.computation.model.atomPath).toBe(
-      'quantum/serverless',
+      'quantum',
     )
     expect(cloudUuid).toMatch(UUID_RE)
     expect(quantumUuid).toMatch(UUID_RE)

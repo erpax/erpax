@@ -23,7 +23,7 @@
 
 - partition `pharmacology` · sub-root `61a559dd-47a4-8351-b5e2-338ac0c6d43d`
 - bond degree `32` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `4c0ec913-7c0f-8942-8f85-86c52fe54288` · framed by typography partition `pharmacology` bonds `32` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `6227e1a9-13a7-8a02-a113-461ae74bedaa` · framed by typography partition `pharmacology` bonds `32` · `pnpm readme` · `pnpm readme:check`</sub>

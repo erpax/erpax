@@ -3,15 +3,15 @@
 
 # css
 
-path `css` · uuid `7b31a48a-afbd-8fd0-8b89-b62b275d2e16` · diamond `93215cd4-cd98-856e-a906-d48f69baf45d`
-horo `1` `base` · trinity `1·1·1` · sealed `0`
+path `css` · uuid `8ac7e2ab-b02d-8084-9f94-5da3562b0671` · diamond `7391d305-ec4a-89f9-bf24-7a76a2c81c4a`
+horo `7` `descent` · trinity `1·1·1` · sealed `0`
 imports @/integrity · exports function·interface · escapes @/diamond/projection
-links `28/28` · folded `1` · bonds in `10` out `10`
-faces worker·plugin·pwa `0·0·0`
-neighbors → agriculture·corrects·crisis·footer·maintainer·moved·screen·soil·test·thesis · ← agriculture·corrects·crisis·footer·maintainer·moved·screen·soil·test·thesis
-analysis diamond·purity·quantum/boundary·tamper/import
+links `28/28` · folded `1` · bonds in `13` out `13`
+faces worker·plugin·pwa `1·0·0`
+neighbors → atom·component·diamond·dimension·gate·law·primitive·proof·purity·seal·selector·trinity·typography · ← atom·component·diamond·dimension·gate·law·primitive·proof·purity·seal·selector·trinity·typography
+analysis diamond·purity
 law css is the styling diamond — the form facet of the visual [[dimension]]; each stylesheet is content-addressed and sealed; loaders and typegen paths MUST recognize `.css` (and `.scss`) as on-ring diamond surfaces (stub hook), never as unknown external extensions.
 
 ---
 
-<sub>content-uuid `60be764e-344b-82f7-be79-5432a25caff5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a5c81845-bc88-8524-a6da-34c1b3acf138` · `pnpm readme` · `pnpm computed:check`</sub>

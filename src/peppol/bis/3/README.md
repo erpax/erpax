@@ -25,7 +25,7 @@
 
 - partition `peppol` · sub-root `c4ea32d7-f8e8-82f9-9e8b-df9c50272dce`
 - bond degree `9` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `9e8a321b-c017-8475-8eb2-66121f20a24f` · framed by typography partition `peppol` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a12163a1-8954-8c8d-b60c-bcc72a56a5a8` · framed by typography partition `peppol` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>

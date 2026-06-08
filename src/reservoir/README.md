@@ -23,7 +23,7 @@
 
 - partition `reservoir` · sub-root `794af776-c63d-81ad-8c81-b3a5237703cf`
 - bond degree `8` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `223bf30e-aafc-8934-a2e8-06eb348b5eda` · framed by typography partition `reservoir` bonds `8` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `6a708bfa-5cfe-85ee-999d-82396d455554` · framed by typography partition `reservoir` bonds `8` · `pnpm readme` · `pnpm readme:check`</sub>

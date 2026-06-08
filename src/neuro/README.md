@@ -23,7 +23,7 @@
 
 - partition `neuro` · sub-root `e03db360-87a5-8d8b-89ab-e9dbeb03039f`
 - bond degree `12` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `6e9f972b-c25d-848c-a96e-5a0dfdfe32ca` · framed by typography partition `neuro` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `16484a08-de52-8d7f-bff3-4d0bd713a3b5` · framed by typography partition `neuro` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

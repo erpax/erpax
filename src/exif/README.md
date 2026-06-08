@@ -23,7 +23,7 @@
 
 - partition `exif` · sub-root `bb6afa0e-6fd6-81f9-a279-edd9fc7666f1`
 - bond degree `36` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `f2db2ccf-a408-857a-bb65-305077de14cf` · framed by typography partition `exif` bonds `36` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `722d113e-d6b4-811e-a30e-5ad4608a676b` · framed by typography partition `exif` bonds `36` · `pnpm readme` · `pnpm readme:check`</sub>

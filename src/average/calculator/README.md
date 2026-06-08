@@ -2,7 +2,7 @@
 
 # calculator
 
-> atom `average/calculator` · horo `7` `descent` · [[balance]] `1` · [[seal]] `0`
+> atom `average/calculator` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -11,7 +11,7 @@
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
 | [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
 | [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
@@ -24,21 +24,35 @@
 ## typography graph
 
 - partition `average` · sub-root `6b12f14e-5ca3-81db-a6a5-2be21347723b`
-- bond degree `28` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `39` · analysis neighbors —
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `39` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `0`
 
 ## identity
 
-- uuid `2b3e0125-2630-8299-89c1-25dd93ff963e`
-- bonds in `5` · out `5`
+- uuid `67c1eebb-3f2c-8804-bd8f-0156116af0ea`
+- bonds in `11` · out `13`
 - trinity form·code·proof `1`·`1`·`1`
 - links `2` / `2`
-- folded `0` · escapes `0`
+- folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `227d66f9-3629-8394-8886-1d92cbef05d9` · framed by typography partition `average` bonds `28` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `5ff5dbd4-fcfc-815e-9ae5-f9636e89a0f6` · framed by typography partition `average` bonds `39` · `pnpm readme` · `pnpm readme:check`</sub>

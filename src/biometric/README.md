@@ -22,13 +22,27 @@
 ## typography graph
 
 - partition `biometric` · sub-root `4d930689-daf1-8cbd-9be0-638eae66884b`
-- bond degree `43` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `49` · analysis neighbors —
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `49` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
 - uuid `4d930689-daf1-8cbd-9be0-638eae66884b`
-- bonds in `13` · out `13`
+- bonds in `16` · out `16`
 - trinity form·code·proof `1`·`0`·`0`
 - links `25` / `25`
 - folded `1` · escapes `0`
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `c9ea9dff-4cff-8427-b9dd-766d89977c3b` · framed by typography partition `biometric` bonds `43` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `62e7ea26-493c-8bbd-8639-dc72b2e48dcd` · framed by typography partition `biometric` bonds `49` · `pnpm readme` · `pnpm readme:check`</sub>

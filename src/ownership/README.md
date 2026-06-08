@@ -23,7 +23,7 @@
 
 - partition `ownership` · sub-root `6136c334-e519-88de-baa3-db352cbdccfc`
 - bond degree `12` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `f4c930d5-e456-8253-a6e0-c5d17bbe0890` · framed by typography partition `ownership` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `6479b971-d02b-887f-96f6-6f23b917b072` · framed by typography partition `ownership` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

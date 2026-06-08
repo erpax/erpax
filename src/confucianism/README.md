@@ -2,17 +2,17 @@
 
 # confucianism
 
-> atom `confucianism` · horo `—` `—` · [[balance]] `1` · [[seal]] `0`
+> atom `confucianism` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
 | [[debit]] | [[credit]] |
 | -------- | --------- |
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[horo]]/off-ring `1` |
-| [[balance]] `1` | [[liability]]/[[identity]]/uuid `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
 | [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `7` | Σ `7` |
@@ -22,21 +22,21 @@
 ## typography graph
 
 - partition `confucianism` · sub-root `691d60bb-f2b0-8c9a-8be2-d4ede5393bf3`
-- bond degree `26` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `65` · analysis neighbors `diamond`
+- graph root `08417410-9529-8662-a45d-0e6296f0598e`
 
 ## identity
 
-- uuid `—`
-- bonds in `0` · out `0`
+- uuid `691d60bb-f2b0-8c9a-8be2-d4ede5393bf3`
+- bonds in `21` · out `21`
 - trinity form·code·proof `1`·`0`·`0`
 - links `61` / `61`
-- folded `0` · escapes `0`
+- folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `da2c56ab-52a7-85cb-bc28-f81d97479aa1` · framed by typography partition `confucianism` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `7627b07d-10a1-894f-98d6-cc3e0c3eea74` · framed by typography partition `confucianism` bonds `65` · `pnpm readme` · `pnpm readme:check`</sub>

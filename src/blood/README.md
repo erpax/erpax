@@ -2,7 +2,7 @@
 
 # blood
 
-> atom `blood` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
+> atom `blood` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -24,13 +24,29 @@
 ## typography graph
 
 - partition `blood` · sub-root `016700eb-d572-8a5f-86eb-a56dbf097a32`
-- bond degree `24` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `30` · analysis neighbors —
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `A. V. Hill,` · banner
+- `computed (Hill equation · Little's law · mass balance) from cited constants` · banner
+- `Hill, J. Physiol. 1910 (cooperativity) · erythropoiesis (≈2M RBC/s, ≈120 d)` · banner
+
+## analytics
+
+- bond degree `30` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `3`
 
 ## identity
 
-- uuid `3ac547fc-faa1-8b42-8597-f4605777ac28`
-- bonds in `7` · out `7`
+- uuid `016700eb-d572-8a5f-86eb-a56dbf097a32`
+- bonds in `10` · out `10`
 - trinity form·code·proof `1`·`1`·`1`
 - links `14` / `14`
 - folded `1` · escapes `0`
@@ -41,4 +57,4 @@
 
 ---
 
-<sub>content-uuid `fd934810-2f88-83ee-bfca-cf94f91615d5` · framed by typography partition `blood` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `efeeab85-d79d-88e7-8e4e-991cfaffa3fc` · framed by typography partition `blood` bonds `30` · `pnpm readme` · `pnpm readme:check`</sub>

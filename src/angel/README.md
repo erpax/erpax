@@ -22,13 +22,27 @@
 ## typography graph
 
 - partition `angel` · sub-root `31b6bc01-b53f-8283-b2ef-4eacd1771926`
-- bond degree `157` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `169` · analysis neighbors —
+- graph root `1c65e160-5137-86a1-ad8e-dc86b0e96873`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `169` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `0`
 
 ## identity
 
 - uuid `31b6bc01-b53f-8283-b2ef-4eacd1771926`
-- bonds in `46` · out `45`
+- bonds in `52` · out `51`
 - trinity form·code·proof `1`·`0`·`0`
 - links `54` / `54`
 - folded `1` · escapes `0`
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `c83aacfa-25bc-8e19-a905-813cb2076b42` · framed by typography partition `angel` bonds `157` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c3a80f60-7da8-8a18-8f10-ea30d9c43460` · framed by typography partition `angel` bonds `169` · `pnpm readme` · `pnpm readme:check`</sub>

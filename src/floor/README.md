@@ -23,7 +23,7 @@
 
 - partition `floor` · sub-root `4a52686d-1552-88d3-8b27-077e60bbcb82`
 - bond degree `21` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `b2ef9de7-8685-8099-bd76-6d6bdd93ad87` · framed by typography partition `floor` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `04112b49-92c2-84e3-9adf-41e13f6fe502` · framed by typography partition `floor` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>

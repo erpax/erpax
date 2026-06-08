@@ -23,7 +23,7 @@
 
 - partition `hiring` · sub-root `d315685a-3920-816a-8616-6aa4041fd97b`
 - bond degree `14` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `c1de7bd4-a669-8472-b9ee-4408314758f3` · framed by typography partition `hiring` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `4ea139cf-8379-835f-a07d-2d88f58c8e38` · framed by typography partition `hiring` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>

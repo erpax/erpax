@@ -2,7 +2,7 @@
 
 # published
 
-> atom `authenticated/or/published` · horo `7` `descent` · [[balance]] `1` · [[seal]] `0`
+> atom `authenticated/or/published` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -11,7 +11,7 @@
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
 | [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
 | [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
@@ -24,21 +24,35 @@
 ## typography graph
 
 - partition `authenticated` · sub-root `4895a042-0394-8153-9779-6b0606cc1249`
-- bond degree `19` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `21` · analysis neighbors —
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ISO-19011:2018 audit-trail draft-vs-published` · banner
+
+## analytics
+
+- bond degree `21` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `1`
 
 ## identity
 
-- uuid `0771bf2a-c3d1-8036-a630-4839cf9d3080`
-- bonds in `4` · out `4`
+- uuid `c6f72ab4-290d-8217-9d0a-a52280b1d63f`
+- bonds in `6` · out `7`
 - trinity form·code·proof `1`·`1`·`1`
 - links `8` / `8`
-- folded `0` · escapes `0`
+- folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `fe5c16ab-4ee1-8b34-83cb-01eebd0a0d1e` · framed by typography partition `authenticated` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `274783b1-0076-8933-bf40-4a1ac86999b0` · framed by typography partition `authenticated` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `sms` · sub-root `6afb0274-4b66-866f-b760-fad5ee6e3bff`
 - bond degree `15` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `ff6c655c-3f20-84dc-a867-c4fe391ef301` · framed by typography partition `sms` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e45d66cc-7f25-8a34-b2d2-1d31906ff2ea` · framed by typography partition `sms` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

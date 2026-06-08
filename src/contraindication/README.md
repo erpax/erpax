@@ -23,7 +23,7 @@
 
 - partition `contraindication` · sub-root `f2054bcd-3394-8205-bee6-f0de3fa0b008`
 - bond degree `11` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `08417410-9529-8662-a45d-0e6296f0598e`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `4078861a-bb6d-83a0-82ec-5484adc81b23` · framed by typography partition `contraindication` bonds `11` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `6c9370a7-6391-87c0-835d-37540ce41a11` · framed by typography partition `contraindication` bonds `11` · `pnpm readme` · `pnpm readme:check`</sub>

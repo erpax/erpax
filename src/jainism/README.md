@@ -23,7 +23,7 @@
 
 - partition `jainism` · sub-root `3c083ec4-e204-8799-913f-a8b93492b08a`
 - bond degree `31` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `8b7fda90-8b07-862a-8a60-9c9e7d86a53b` · framed by typography partition `jainism` bonds `31` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `13632f27-1654-8da6-86ef-fbf4448cb6ca` · framed by typography partition `jainism` bonds `31` · `pnpm readme` · `pnpm readme:check`</sub>

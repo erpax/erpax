@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `diabetic` · sub-root `eedfb2d0-caeb-8d5a-bf84-fb43ef9ef430`
-- bond degree `16` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `12` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `eedfb2d0-caeb-8d5a-bf84-fb43ef9ef430`
-- bonds in `6` · out `6`
+- bonds in `4` · out `4`
 - trinity form·code·proof `1`·`0`·`0`
 - links `4` / `4`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `1ecd8581-c780-86c3-96c1-43fde527a11e` · framed by typography partition `diabetic` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a499d0b1-a983-84a9-a870-b3f47aee752d` · framed by typography partition `diabetic` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -2,7 +2,7 @@
 
 # chain
 
-> atom `business/chain` · horo `—` `—` · [[balance]] `1` · [[seal]] `0`
+> atom `business/chain` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -11,10 +11,10 @@
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[horo]]/off-ring `1` |
-| [[balance]] `1` | [[liability]]/[[identity]]/uuid `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
 | [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
@@ -24,21 +24,36 @@
 ## typography graph
 
 - partition `business` · sub-root `a6497829-8079-8f33-a432-ca948675c76a`
-- bond degree `7` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `12` · analysis neighbors —
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `EU-Taxonomy-2020/852` · catalogue
+- `ISO-3166-1` · catalogue
+
+## analytics
+
+- bond degree `12` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `2`
 
 ## identity
 
-- uuid `—`
-- bonds in `0` · out `0`
+- uuid `1bb5f966-b73e-826e-bb0d-51e0fd4a5901`
+- bonds in `4` · out `4`
 - trinity form·code·proof `1`·`1`·`1`
 - links `3` / `3`
-- folded `0` · escapes `0`
+- folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `e342a45e-d90b-8a78-b990-6f9e3d788fee` · framed by typography partition `business` bonds `7` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ae26ed5e-78b5-8ced-b347-3aaeff1dba13` · framed by typography partition `business` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

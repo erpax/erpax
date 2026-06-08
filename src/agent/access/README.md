@@ -24,13 +24,31 @@
 ## typography graph
 
 - partition `agent` · sub-root `6b0b62ea-3947-81da-b55b-1d66462cc188`
-- bond degree `406` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `426` · analysis neighbors `diamond` · `hallucination` · `purity`
+- graph root `1c65e160-5137-86a1-ad8e-dc86b0e96873`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `MCP` · catalogue
+- `reachVia is content-addressed (modality-free); trustNative marks the MCP door (sandbox + receipt) only` · banner
+- `RFC-9562` · catalogue
+- `the official @payloadcms/plugin-mcp gateway · content-addressed identity (RFC 9562) · trust-native sandbox+receipt` · banner
+- `the reached uuid is content-addressed (modality-free); trustNative marks the MCP door only` · banner
+
+## analytics
+
+- bond degree `426` · sealed `0` · horo `6`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `5`
 
 ## identity
 
-- uuid `c10051a0-750e-86a3-8906-7520d06c4243`
-- bonds in `121` · out `123`
+- uuid `72acef20-9204-8da3-8dfe-2fc2ef695141`
+- bonds in `130` · out `133`
 - trinity form·code·proof `1`·`1`·`1`
 - links `9` / `9`
 - folded `1` · escapes `0`
@@ -41,4 +59,4 @@
 
 ---
 
-<sub>content-uuid `02e97292-f512-8c54-b11c-b0c3ebe25c8d` · framed by typography partition `agent` bonds `406` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f6fcace9-abc2-80cc-8ce5-248814c08d8e` · framed by typography partition `agent` bonds `426` · `pnpm readme` · `pnpm readme:check`</sub>

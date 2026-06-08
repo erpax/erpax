@@ -23,7 +23,7 @@
 
 - partition `government` · sub-root `ceb709d6-f303-8be1-a8b8-af4b1f24255f`
 - bond degree `51` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `46807d7d-dcbd-8177-8a65-f02fea1aad92` · framed by typography partition `government` bonds `51` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a3bc7912-6852-87ce-841a-38dd37d09e72` · framed by typography partition `government` bonds `51` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `ritual` · sub-root `9dd5de29-44eb-85a8-b873-d5b051e0354d`
 - bond degree `36` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `f16deb1b-55c2-8886-8a16-74482f305fde` · framed by typography partition `ritual` bonds `36` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `2bc69bc0-f063-8d2b-a89a-0f2aa2e97f79` · framed by typography partition `ritual` bonds `36` · `pnpm readme` · `pnpm readme:check`</sub>

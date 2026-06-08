@@ -2,7 +2,7 @@
 
 # pqc
 
-> atom `beyond/pqc` · horo `—` `—` · [[balance]] `1` · [[seal]] `0`
+> atom `beyond/pqc` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -11,10 +11,10 @@
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[horo]]/off-ring `1` |
-| [[balance]] `1` | [[liability]]/[[identity]]/uuid `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
 | [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
@@ -24,21 +24,38 @@
 ## typography graph
 
 - partition `beyond` · sub-root `d5c96de6-e131-8db0-8c67-746942d1018c`
-- bond degree `9` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `18` · analysis neighbors —
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `NIST FIPS 203 ML-KEM (Module-Lattice Key Encapsulation)` · banner
+- `NIST FIPS 204 ML-DSA (Module-Lattice Digital Signature)` · banner
+- `NIST SP 800-208 stateful-hash-based-signatures` · banner
+- `NIST-SP-800-63` · catalogue
+
+## analytics
+
+- bond degree `18` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `4`
 
 ## identity
 
-- uuid `—`
-- bonds in `0` · out `0`
+- uuid `52eb6f00-a748-87e6-b66d-5bb81ca292d8`
+- bonds in `6` · out `6`
 - trinity form·code·proof `1`·`1`·`1`
 - links `11` / `11`
-- folded `0` · escapes `0`
+- folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `af288616-4ca4-8fed-b5d2-4b3a68405eeb` · framed by typography partition `beyond` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `000f0d3a-0a46-8cff-98fb-3edc0a0a8928` · framed by typography partition `beyond` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `telephone` · sub-root `ab900449-f75a-87e7-ba2f-7ee56c3fad84`
 - bond degree `16` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `422ff684-d1ae-8f76-aa9f-e854e8af2eb6` · framed by typography partition `telephone` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `26a4bf08-4c5a-8b84-837b-ea8c95fb19f4` · framed by typography partition `telephone` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

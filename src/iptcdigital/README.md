@@ -23,7 +23,7 @@
 
 - partition `iptcdigital` · sub-root `f26f19fb-758e-82b1-b11e-45c364ed4610`
 - bond degree `6` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `2d2edc70-731c-89c0-ba24-1774f823ff80` · framed by typography partition `iptcdigital` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `cba796df-8701-80e0-a7de-cc4129bbbe98` · framed by typography partition `iptcdigital` bonds `6` · `pnpm readme` · `pnpm readme:check`</sub>

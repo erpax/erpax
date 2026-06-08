@@ -2,7 +2,7 @@
 
 # emitter
 
-> atom `chain/event/emitter` · horo `—` `—` · [[balance]] `1` · [[seal]] `0`
+> atom `chain/event/emitter` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -11,10 +11,10 @@
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[horo]]/off-ring `1` |
-| [[balance]] `1` | [[liability]]/[[identity]]/uuid `1` |
+| [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
+| [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
 | [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
 | Σ `9` | Σ `9` |
@@ -24,21 +24,36 @@
 ## typography graph
 
 - partition `chain` · sub-root `78522b2d-1585-8a0c-a12e-0e5a1e0c78e1`
-- bond degree `7` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `12` · analysis neighbors —
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ISO-19011:2018 audit-trail event-emit` · banner
+- `SOX §404 internal-controls process-evidence` · banner
+
+## analytics
+
+- bond degree `12` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `2`
 
 ## identity
 
-- uuid `—`
-- bonds in `0` · out `0`
+- uuid `78522b2d-1585-8a0c-a12e-0e5a1e0c78e1`
+- bonds in `4` · out `4`
 - trinity form·code·proof `1`·`1`·`1`
 - links `7` / `7`
-- folded `0` · escapes `0`
+- folded `1` · escapes `0`
 
 ## [[seal]]
 
-- `unsealed` — [[purity]] · [[seal]] · [[diamond]]
+- `sealed` — [[purity]] · [[seal]] · [[diamond]]
 
 ---
 
-<sub>content-uuid `65be6005-56a1-8947-ba5e-4a6ee6c6402f` · framed by typography partition `chain` bonds `7` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `00492c8d-f052-8da6-b6c9-b16f28a48860` · framed by typography partition `chain` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

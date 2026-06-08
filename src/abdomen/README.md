@@ -23,7 +23,22 @@
 
 - partition `abdomen` · sub-root `5d418791-6c98-840f-9780-f36bea5d2678`
 - bond degree `12` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `1c65e160-5137-86a1-ad8e-dc86b0e96873`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org` · catalogue
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `12` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `2`
 
 ## identity
 
@@ -39,4 +54,4 @@
 
 ---
 
-<sub>content-uuid `cac4dd81-5617-895d-8a22-df9cec162a42` · framed by typography partition `abdomen` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `8ea51080-f223-8d26-8e99-c921f03ab6f8` · framed by typography partition `abdomen` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

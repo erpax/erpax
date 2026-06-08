@@ -23,7 +23,7 @@
 
 - partition `intangible` · sub-root `0027a96b-14fa-8edb-b1a3-13070515345a`
 - bond degree `18` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `22b6b9cc-11ec-81da-82b8-e17217c8575d` · framed by typography partition `intangible` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `81314397-93f9-8a7d-a9f7-e5b80c0eb371` · framed by typography partition `intangible` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `supto` · sub-root `c46bf388-4572-8578-bd20-836eb1d59b0f`
 - bond degree `34` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `abc9bb39-ac1c-803e-b098-6c53aa53af3d` · framed by typography partition `supto` bonds `34` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `923c26f4-67d3-8fb8-8241-49e9b5f730ee` · framed by typography partition `supto` bonds `34` · `pnpm readme` · `pnpm readme:check`</sub>

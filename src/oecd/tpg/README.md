@@ -25,7 +25,7 @@
 
 - partition `oecd` · sub-root `227f289c-ade6-8b9d-b7fe-c6a92045d4e1`
 - bond degree `12` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `166d4c22-25f6-8593-a194-d01ade12410b` · framed by typography partition `oecd` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `3a089f46-a7d8-8ca3-ac2c-7ea63bc50981` · framed by typography partition `oecd` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

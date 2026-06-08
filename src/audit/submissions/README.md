@@ -25,7 +25,24 @@
 
 - partition `audit` · sub-root `798aecfe-af8a-8d6c-9989-a51055e00adf`
 - bond degree `27` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `BG Наредба-Н-18 §Приложение-38 audit-file-submission-log` · banner
+- `ISO-19011:2018 §6.4 audit-evidence` · banner
+- `Naredba-N-18` · catalogue
+- `SOX §404 internal-controls` · banner
+
+## analytics
+
+- bond degree `27` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `4`
 
 ## identity
 
@@ -41,4 +58,4 @@
 
 ---
 
-<sub>content-uuid `c0cc0557-608b-887b-a5d7-502ba70c27ca` · framed by typography partition `audit` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `8614339e-9794-837b-b0d6-648b0d8c9e8a` · framed by typography partition `audit` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>

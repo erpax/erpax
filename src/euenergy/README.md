@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `euenergy` · sub-root `41fabc0a-e51a-882d-a5a9-957006631e7e`
-- bond degree `108` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `12` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `41fabc0a-e51a-882d-a5a9-957006631e7e`
-- bonds in `52` · out `52`
+- bonds in `4` · out `4`
 - trinity form·code·proof `1`·`0`·`0`
 - links `4` / `4`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `96a83bdb-9380-84fc-a83e-541bd6475012` · framed by typography partition `euenergy` bonds `108` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b43fe97c-008c-8b71-b7a8-d634c6a50fe8` · framed by typography partition `euenergy` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>

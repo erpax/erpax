@@ -2,7 +2,7 @@
 
 # artery
 
-> atom `artery` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
+> atom `artery` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -24,13 +24,29 @@
 ## typography graph
 
 - partition `artery` · sub-root `c902da2e-92b5-80f6-bcfd-f5dd676f48f8`
-- bond degree `11` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `19` · analysis neighbors —
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `computed (a two-element Windkessel: compliant reservoir + peripheral resistance)` · banner
+- `Frank's Windkessel model — aortic elastic storage smooths cardiac output; arterial pressure ≈120/80 mmHg` · banner
+- `Frank's Windkessel model; aortic elastic storage smooths cardiac output` · banner
+
+## analytics
+
+- bond degree `19` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `3`
 
 ## identity
 
-- uuid `20b48e79-d0f2-8da1-8984-1d6a41c27693`
-- bonds in `2` · out `2`
+- uuid `c902da2e-92b5-80f6-bcfd-f5dd676f48f8`
+- bonds in `6` · out `6`
 - trinity form·code·proof `1`·`1`·`1`
 - links `11` / `11`
 - folded `1` · escapes `0`
@@ -41,4 +57,4 @@
 
 ---
 
-<sub>content-uuid `ff2b9877-9b89-875d-9c4e-ff47729e2bf5` · framed by typography partition `artery` bonds `11` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `885bec04-0e64-8387-94c8-2908f5ed4b3d` · framed by typography partition `artery` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>

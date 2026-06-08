@@ -25,7 +25,7 @@
 
 - partition `skin` · sub-root `7eab7791-988d-8738-823c-b63c8d0e6598`
 - bond degree `16` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `1a6ac6cd-9286-8632-b104-76c51c78086b` · framed by typography partition `skin` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `9348e085-8d51-8040-a345-8ce85ccede36` · framed by typography partition `skin` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

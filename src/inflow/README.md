@@ -23,7 +23,7 @@
 
 - partition `inflow` · sub-root `df652ff7-7127-81b8-9fda-6091ccbd82a7`
 - bond degree `19` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `e91a5690-05e9-8a40-8b00-dc10b6b0f914` · framed by typography partition `inflow` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `7d5fb8a9-8f45-86ff-904f-8765bae6bcaa` · framed by typography partition `inflow` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>

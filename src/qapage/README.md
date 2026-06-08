@@ -23,7 +23,7 @@
 
 - partition `qapage` · sub-root `ba0e8f4a-900d-88d7-b6e8-fdb901a54da6`
 - bond degree `18` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `aa2a906c-c826-8678-ae49-880d1035ce72` · framed by typography partition `qapage` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `1f3ab805-72cc-8f6f-abb0-31c62c28bf3e` · framed by typography partition `qapage` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>

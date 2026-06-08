@@ -23,7 +23,7 @@
 
 - partition `prognosis` · sub-root `95be6bf7-1a3e-895b-846a-7a8d3284df52`
 - bond degree `14` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `13be0fe2-eff8-8d0c-b385-82cb2f9ae7da` · framed by typography partition `prognosis` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `18d425aa-951f-89aa-abc6-8ce5527ed0a4` · framed by typography partition `prognosis` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>

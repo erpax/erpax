@@ -3,15 +3,15 @@
 
 # digit
 
-path `digit` · uuid `4cf458d4-f2bd-802c-91b2-168ed47f199b` · diamond `11faf118-87e5-882e-ac27-2d1d65e16601`
-horo `8` `crest` · trinity `1·1·1` · sealed `1`
+path `digit` · uuid `757b6ec0-52a3-8a21-8bf0-f0c0be92876e` · diamond `1f325755-75c6-8ba0-9a1b-93e975949f4e`
+horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports @/integrity·@/uuid/matrix · exports DigitTokenKind·const·function · escapes —
-links `29/29` · folded `1` · bonds in `6` out `6`
-faces worker·plugin·pwa `0·0·0`
-neighbors → analytics·apply·cohort·landmarks·memories·stat · ← analytics·apply·cohort·landmarks·memories·stat
+links `29/29` · folded `1` · bonds in `38` out `42`
+faces worker·plugin·pwa `1·0·0`
+neighbors → analog·atom·aura·consciousness·cost·default·diamond·digit·horo·law·law·linearity·links·live·log·mala·math·matrix·matter·merge·method·mirror·number·particle·pixel·proof·quantum·religion·render·sequence·sequence·stream·strength·tamper·text·topography·trinity·typography·uuid·uuid·word·word · ← analog·atom·aura·consciousness·cost·default·diamond·digit·horo·law·linearity·links·live·log·mala·math·matrix·matter·merge·method·mirror·number·particle·pixel·proof·quantum·religion·render·sequence·stream·strength·tamper·text·topography·trinity·typography·uuid·word
 analysis aura·diamond
 law digit is the dual of [[word]] — every atom's [[horo]] [[sequence]] position ⊕ the digital-root of its content-[[uuid]]; computing it completes the [[aura]] into the word·digit·uuid [[trinity]], a three-fold fold whose mutual consistency drives tamper-[[cost]] to ∞. At the prose layer, digit-runs are numeric token [[diamond]]s in [[text]], content-addressed separately from horo digital-root.
 
 ---
 
-<sub>content-uuid `bba872eb-c718-8023-bafb-2a699bf4196f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f0140d58-f5b1-81dc-ad36-ea8181b5b88d` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -23,7 +23,7 @@
 
 - partition `hardware` · sub-root `e813542a-4231-8eca-bb8a-0a1279f08ee2`
 - bond degree `14` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `c3032a78-39f2-84e0-a662-0bc9291cbe21` · framed by typography partition `hardware` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a73e8308-c517-80c0-87f2-313b8a281159` · framed by typography partition `hardware` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>

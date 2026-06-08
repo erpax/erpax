@@ -23,7 +23,7 @@
 
 - partition `lyricist` · sub-root `287eff70-2306-8c0f-a99d-92ffff0de450`
 - bond degree `18` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `466af55d-2f97-86b2-a814-e641de837310` · framed by typography partition `lyricist` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `dffbe976-3786-8e6c-a157-0a9cf4c97a3f` · framed by typography partition `lyricist` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>

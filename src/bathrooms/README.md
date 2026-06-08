@@ -22,13 +22,27 @@
 ## typography graph
 
 - partition `bathrooms` · sub-root `d140a039-836d-812f-b2bc-e678680dcec3`
-- bond degree `20` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `26` · analysis neighbors —
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `26` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
 - uuid `d140a039-836d-812f-b2bc-e678680dcec3`
-- bonds in `5` · out `5`
+- bonds in `8` · out `8`
 - trinity form·code·proof `1`·`0`·`0`
 - links `8` / `8`
 - folded `1` · escapes `0`
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `37104e41-0bf3-8fad-b37f-2e58ae796742` · framed by typography partition `bathrooms` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ca1112e6-33ee-8d7a-9a8f-a3aa1a1eccae` · framed by typography partition `bathrooms` bonds `26` · `pnpm readme` · `pnpm readme:check`</sub>

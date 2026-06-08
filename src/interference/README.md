@@ -25,7 +25,7 @@
 
 - partition `interference` · sub-root `fc9efc54-402d-8f2b-9cee-4207eff0dec5`
 - bond degree `13` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `0af2e26f-b707-8f46-9e37-c23b8589a770` · framed by typography partition `interference` bonds `13` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `24b91565-d2f6-8f21-969f-a24abe871114` · framed by typography partition `interference` bonds `13` · `pnpm readme` · `pnpm readme:check`</sub>

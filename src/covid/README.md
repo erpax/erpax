@@ -22,13 +22,13 @@
 ## typography graph
 
 - partition `covid` · sub-root `744258de-1ba1-837e-9a14-2efa0cdff635`
-- bond degree `17` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `19` · analysis neighbors —
+- graph root `08417410-9529-8662-a45d-0e6296f0598e`
 
 ## identity
 
 - uuid `744258de-1ba1-837e-9a14-2efa0cdff635`
-- bonds in `5` · out `5`
+- bonds in `6` · out `6`
 - trinity form·code·proof `1`·`0`·`0`
 - links `6` / `6`
 - folded `1` · escapes `0`
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `1d70b1ab-0a2e-8410-a52d-c9468a33ccb7` · framed by typography partition `covid` bonds `17` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `cbd50172-58ea-8839-85ed-fc910518bbab` · framed by typography partition `covid` bonds `19` · `pnpm readme` · `pnpm readme:check`</sub>

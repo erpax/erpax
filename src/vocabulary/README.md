@@ -25,7 +25,7 @@
 
 - partition `vocabulary` · sub-root `8d633ecb-91f1-839c-a4a7-e39e79486ae1`
 - bond degree `24` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `3548142b-0510-870f-9e85-8fce386d98eb` · framed by typography partition `vocabulary` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `6a04d58a-6115-8bdd-9279-eaaafde8758d` · framed by typography partition `vocabulary` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>

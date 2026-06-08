@@ -24,13 +24,13 @@
 ## typography graph
 
 - partition `employees` · sub-root `b4e809aa-fd27-86f6-90b9-75ec1197d4f1`
-- bond degree `74` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `57` · analysis neighbors —
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
 - uuid `b4a902f2-885d-8c4e-bf89-5308d5f2348a`
-- bonds in `27` · out `26`
+- bonds in `16` · out `20`
 - trinity form·code·proof `1`·`1`·`1`
 - links `6` / `6`
 - folded `1` · escapes `0`
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `44a6f7d1-9d65-88c7-851b-a4dabeff8fc3` · framed by typography partition `employees` bonds `74` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `04e04524-c7aa-8f44-9d57-34b46a3944bf` · framed by typography partition `employees` bonds `57` · `pnpm readme` · `pnpm readme:check`</sub>

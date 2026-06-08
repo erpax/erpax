@@ -22,13 +22,27 @@
 ## typography graph
 
 - partition `bike` · sub-root `dcbcff65-9da7-823d-87fa-6902c7e6c0f4`
-- bond degree `14` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `16` · analysis neighbors —
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `16` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
 - uuid `dcbcff65-9da7-823d-87fa-6902c7e6c0f4`
-- bonds in `4` · out `4`
+- bonds in `5` · out `5`
 - trinity form·code·proof `1`·`0`·`0`
 - links `5` / `5`
 - folded `1` · escapes `0`
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `e06d1592-f564-8910-9ba7-5621509e8be5` · framed by typography partition `bike` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ecb7f34d-738e-825c-bcf2-1103a45f2ecc` · framed by typography partition `bike` bonds `16` · `pnpm readme` · `pnpm readme:check`</sub>

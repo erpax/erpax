@@ -23,7 +23,7 @@
 
 - partition `ngo` · sub-root `741bb15a-d062-85d6-b10b-a66b81c7114c`
 - bond degree `10` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `a5a1b1b1-f657-8fd4-8abc-fd9e5334c88e` · framed by typography partition `ngo` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `5cdff3a9-721d-8de6-b8e4-f27d0a709705` · framed by typography partition `ngo` bonds `10` · `pnpm readme` · `pnpm readme:check`</sub>

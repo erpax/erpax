@@ -23,7 +23,7 @@
 
 - partition `nursing` · sub-root `e944337d-4260-8c06-9234-5cec4177de44`
 - bond degree `18` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `ebedc98d-9f12-852c-a907-975f773af51f` · framed by typography partition `nursing` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `33cac662-b188-8f75-b9d9-791070a78e40` · framed by typography partition `nursing` bonds `18` · `pnpm readme` · `pnpm readme:check`</sub>

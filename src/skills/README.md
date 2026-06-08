@@ -22,8 +22,8 @@
 ## typography graph
 
 - partition `skills` · sub-root `f6165a80-9235-84e7-8fce-f8618ea35f7e`
-- bond degree `64` · analysis neighbors `aura`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `65` · analysis neighbors `agent` · `aura`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `95f8d644-2898-8c37-a9d4-4b5e50bf657d` · framed by typography partition `skills` bonds `64` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `7bbf5cc7-271b-85b5-9ed0-de6b087dc36e` · framed by typography partition `skills` bonds `65` · `pnpm readme` · `pnpm readme:check`</sub>

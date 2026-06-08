@@ -23,7 +23,7 @@
 
 - partition `refund` · sub-root `831814aa-b9c4-81ff-afa1-fc1b26e012b6`
 - bond degree `15` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `3a6498fe-6b01-8e2c-a699-3cc98439da84` · framed by typography partition `refund` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `39c1bffd-a215-800f-a118-7c98f3f4edd4` · framed by typography partition `refund` bonds `15` · `pnpm readme` · `pnpm readme:check`</sub>

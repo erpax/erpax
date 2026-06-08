@@ -23,7 +23,7 @@
 
 - partition `placebo` · sub-root `f0c0d70f-d23e-8044-acc7-5e2f1291e874`
 - bond degree `14` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `00d4fdc9-6ea7-898a-9ba0-4cc942345db0` · framed by typography partition `placebo` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `75a3c52f-b440-833a-88ba-ef1714328fb6` · framed by typography partition `placebo` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>

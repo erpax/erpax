@@ -23,7 +23,7 @@
 
 - partition `taoism` · sub-root `0aca1519-7afd-8a05-8867-a99e0cc9a641`
 - bond degree `27` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `ff40904b-744b-89c5-91cd-632316c9c00d` · framed by typography partition `taoism` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `e82ceef2-ab2b-8ee6-b505-29186e467e0f` · framed by typography partition `taoism` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>

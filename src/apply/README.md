@@ -2,7 +2,7 @@
 
 # apply
 
-> atom `apply` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
+> atom `apply` · horo `4` `weave` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -22,13 +22,27 @@
 ## typography graph
 
 - partition `apply` · sub-root `4edacf1f-0d52-8e71-90e3-2e4b1b248554`
-- bond degree `27` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `29` · analysis neighbors —
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `29` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
-- uuid `4edacf1f-0d52-8e71-90e3-2e4b1b248554`
-- bonds in `6` · out `6`
+- uuid `b2b8c8f3-88bf-8d69-bd90-5d899c63b4b0`
+- bonds in `8` · out `9`
 - trinity form·code·proof `1`·`0`·`0`
 - links `6` / `6`
 - folded `1` · escapes `0`
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `58eaa619-ec31-8ece-8e92-212e4b4d8351` · framed by typography partition `apply` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `a9b341e9-e05e-8f6b-af5c-79a1ac03db2c` · framed by typography partition `apply` bonds `29` · `pnpm readme` · `pnpm readme:check`</sub>

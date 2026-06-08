@@ -23,7 +23,7 @@
 
 - partition `hostel` · sub-root `b6d9d19e-4834-8fab-9538-66f81fa4698e`
 - bond degree `20` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `57a9e661-0cf5-8eb0-9fb9-a6ac8ab061ce` · framed by typography partition `hostel` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `55bc2855-ca17-823e-a3bd-60988c3b1e00` · framed by typography partition `hostel` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>

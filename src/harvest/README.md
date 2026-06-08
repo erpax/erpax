@@ -23,7 +23,7 @@
 
 - partition `harvest` · sub-root `35bb4408-36aa-8501-8bbc-6c91b445c331`
 - bond degree `45` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `4b12ff6c-725f-8da4-a031-a5e705e1c39c` · framed by typography partition `harvest` bonds `45` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b424e8d1-671b-8895-8979-ac6986d14ca0` · framed by typography partition `harvest` bonds `45` · `pnpm readme` · `pnpm readme:check`</sub>

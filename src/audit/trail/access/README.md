@@ -11,7 +11,7 @@
 | [[asset]]/[[trinity]]/form `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
-| [[balance]] `1` | [[liability]]/[[lattice]]/unfolded `1` |
+| [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
 | [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
 | [[balance]] `1` | [[liability]]/[[horo]]/off-ring `1` |
 | [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
@@ -24,16 +24,30 @@
 ## typography graph
 
 - partition `audit` · sub-root `798aecfe-af8a-8d6c-9989-a51055e00adf`
-- bond degree `406` · analysis neighbors `diamond` · `hallucination` · `purity`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `426` · analysis neighbors `diamond` · `hallucination` · `purity`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+—
+
+## analytics
+
+- bond degree `426` · sealed `0` · horo `6`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `0`
 
 ## identity
 
-- uuid `c10051a0-750e-86a3-8906-7520d06c4243`
-- bonds in `121` · out `123`
+- uuid `72acef20-9204-8da3-8dfe-2fc2ef695141`
+- bonds in `130` · out `133`
 - trinity form·code·proof `1`·`1`·`1`
 - links `6` / `6`
-- folded `0` · escapes `0`
+- folded `1` · escapes `0`
 
 ## [[seal]]
 
@@ -41,4 +55,4 @@
 
 ---
 
-<sub>content-uuid `59557af8-2e03-85d2-af19-e3d9d6da7f48` · framed by typography partition `audit` bonds `406` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `211c0683-3c4e-85b8-8ca4-67b6792790c8` · framed by typography partition `audit` bonds `426` · `pnpm readme` · `pnpm readme:check`</sub>

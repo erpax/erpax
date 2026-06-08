@@ -25,7 +25,7 @@
 
 - partition `country` · sub-root `ff847416-c94d-8cbc-b684-32508188454e`
 - bond degree `38` · analysis neighbors —
-- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
+- graph root `08417410-9529-8662-a45d-0e6296f0598e`
 
 ## identity
 
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `201d0680-abd1-861d-9c96-6b29bf73c4ec` · framed by typography partition `country` bonds `38` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b050e7fb-9497-8519-aef4-70922f14b443` · framed by typography partition `country` bonds `38` · `pnpm readme` · `pnpm readme:check`</sub>

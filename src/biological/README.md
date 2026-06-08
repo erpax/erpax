@@ -22,13 +22,40 @@
 ## typography graph
 
 - partition `biological` · sub-root `40a0b53b-7053-8f4a-b5ab-1d7131414b2d`
-- bond degree `105` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- bond degree `24` · analysis neighbors —
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `EU-2015/847` · catalogue
+- `EU-2015/849` · catalogue
+- `EU-2019/1150` · catalogue
+- `EU-2019/1152` · catalogue
+- `EU-2019/1937` · catalogue
+- `EU-2019/2161` · catalogue
+- `EU-2019/770` · catalogue
+- `EU-2019/771` · catalogue
+- `EU-Intrastat-Reg-2019/2152` · catalogue
+- `IAS-41` · catalogue
+- `IFRS-13` · catalogue
+- `ISO-4217` · catalogue
+- `ISO-8601-1` · catalogue
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `24` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `14`
 
 ## identity
 
 - uuid `03133be3-3898-86a1-b8a7-61e2b335847d`
-- bonds in `45` · out `50`
+- bonds in `7` · out `7`
 - trinity form·code·proof `1`·`0`·`0`
 - links `7` / `7`
 - folded `1` · escapes `0`
@@ -39,4 +66,4 @@
 
 ---
 
-<sub>content-uuid `43362d29-edea-8acf-8f23-97d36b604e53` · framed by typography partition `biological` bonds `105` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `8faef467-606a-89cd-a098-c0d88887a8c7` · framed by typography partition `biological` bonds `24` · `pnpm readme` · `pnpm readme:check`</sub>

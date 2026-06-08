@@ -23,7 +23,21 @@
 
 - partition `audiobook` · sub-root `2c54409f-2555-861c-a697-020eef5a7624`
 - bond degree `9` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `9` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `fdf2b22a-f75c-8012-a40d-91da276e399b` · framed by typography partition `audiobook` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `deb01bfc-9c92-8bc9-940f-d7cb77d80d42` · framed by typography partition `audiobook` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>

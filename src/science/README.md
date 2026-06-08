@@ -23,7 +23,7 @@
 
 - partition `science` · sub-root `4e42d97c-297d-87a1-b0e8-f5d82d270308`
 - bond degree `77` · analysis neighbors `aura`
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `1c90d3c5-a791-8a8a-a240-8966873321d1` · framed by typography partition `science` bonds `77` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ac417b5c-7209-82d7-948d-36f3918ebcce` · framed by typography partition `science` bonds `77` · `pnpm readme` · `pnpm readme:check`</sub>
