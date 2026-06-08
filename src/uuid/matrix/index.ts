@@ -7,10 +7,11 @@
  * data is generated; this barrel is the hand-authored, stable API over it so
  * callers query atoms/edges/bindings without touching the raw arrays.
  *
- * @see ./matrix.generated.ts (the data) · src/services/uuid-matrix/collide.mjs (the collider)
+ * @see ./matrix.generated.ts (the data) · ./collide.mjs (the collider)
  */
 import { createHash } from 'node:crypto'
 import { norm } from '@/corpus'
+import { HORO_DIGITS, HORO_MEASURE } from '@/horo'
 import {
   UUID_MATRIX_NODES,
   UUID_MATRIX_EDGES,
@@ -49,7 +50,24 @@ const ubytes = (u: string): Buffer => Buffer.from(u.replace(/-/g, ''), 'hex')
 export const merge = (a: string, b: string): string => toUuid(Buffer.concat([ubytes(a), ubytes(b)]))
 
 const byAtom = new Map<string, number>()
-UUID_MATRIX_NODES.forEach((n, i) => byAtom.set(n.atom, i))
+const byPath = new Map<string, number>()
+UUID_MATRIX_NODES.forEach((n, i) => {
+  byAtom.set(n.atom, i)
+  if (n.path) byPath.set(n.path, i)
+  if (n.members) for (const m of n.members) byPath.set(m, i)
+})
+
+/** Resolve a node index: full path → atom key → member path (never hand-named). */
+const nodeIndexOf = (key: string): number | undefined => {
+  const pathKey = key.replace(/\\/g, '/')
+  if (pathKey.includes('/')) {
+    const pi = byPath.get(pathKey)
+    if (pi !== undefined) return pi
+  }
+  const ai = byAtom.get(norm(key))
+  if (ai !== undefined) return ai
+  return byPath.get(pathKey)
+}
 
 /**
  * Resolve a node by its content-uuid (the neighbour pointers — parent/prev/next
@@ -67,30 +85,53 @@ const nodeByUuid = (u: string | undefined): MatrixNode | undefined => {
   return i === undefined ? undefined : at(i)
 }
 
-/** The node for an atom (any spelling), or undefined. */
+/** The node for an atom path or leaf (any spelling), or undefined. */
 export const nodeOf = (atom: string): MatrixNode | undefined => {
-  const i = byAtom.get(norm(atom))
+  const i = nodeIndexOf(atom)
   return i === undefined ? undefined : at(i)
+}
+
+/** Canonical matrix atom key after path resolution — for edge graph queries. */
+export const matrixAtomOf = (key: string): string | undefined => nodeOf(key)?.atom
+
+/**
+ * Cross-named architecture address — path · horo/measure · uuid prefix.
+ * Violation messages cite this coordinate (digits + bind), not hand labels alone.
+ */
+export const coordinateAddress = (atomPath: string): string => {
+  const n = nodeOf(atomPath)
+  if (!n) return atomPath
+  const path = n.path ?? atomPath
+  const mi = HORO_DIGITS.indexOf(n.horo as (typeof HORO_DIGITS)[number])
+  const measure = mi >= 0 ? HORO_MEASURE[mi]! : String(n.horo)
+  return `${path} · ${n.horo}/${measure} · ${n.uuid.slice(0, 8)}`
 }
 
 /** Atoms this atom links TO (outgoing edges). */
 export const neighborsOf = (atom: string): MatrixNode[] => {
-  const i = byAtom.get(norm(atom))
+  const ma = matrixAtomOf(atom)
+  if (ma === undefined) return []
+  const i = byAtom.get(ma)
   if (i === undefined) return []
   return UUID_MATRIX_EDGES.filter((e) => e.f === i).map((e) => at(e.t)).filter(isNode)
 }
 
 /** Atoms that link TO this atom (incoming edges — its backlinks; empty ⇒ orphan). */
 export const backlinksOf = (atom: string): MatrixNode[] => {
-  const i = byAtom.get(norm(atom))
+  const ma = matrixAtomOf(atom)
+  if (ma === undefined) return []
+  const i = byAtom.get(ma)
   if (i === undefined) return []
   return UUID_MATRIX_EDGES.filter((e) => e.t === i).map((e) => at(e.f)).filter(isNode)
 }
 
 /** The binding-uuid of the edge a→b (the collision), or undefined if no such edge. */
 export const bindingOf = (a: string, b: string): string | undefined => {
-  const fi = byAtom.get(norm(a))
-  const ti = byAtom.get(norm(b))
+  const fa = matrixAtomOf(a)
+  const ta = matrixAtomOf(b)
+  if (fa === undefined || ta === undefined) return undefined
+  const fi = byAtom.get(fa)
+  const ti = byAtom.get(ta)
   if (fi === undefined || ti === undefined) return undefined
   const edge = UUID_MATRIX_EDGES.find((e) => e.f === fi && e.t === ti)
   return edge === undefined ? undefined : edge.binding

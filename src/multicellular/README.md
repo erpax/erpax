@@ -23,7 +23,7 @@
 
 - partition `multicellular` · sub-root `8ee66291-05ec-866c-86c1-4045cd6fab45`
 - bond degree `14` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
 
 ## identity
 
@@ -39,4 +39,4 @@
 
 ---
 
-<sub>content-uuid `eaf93373-43a0-8405-a0d6-464eda48e459` · framed by typography partition `multicellular` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `8a90e59c-3aa2-80bd-ab3a-af99cb31f95d` · framed by typography partition `multicellular` bonds `14` · `pnpm readme` · `pnpm readme:check`</sub>

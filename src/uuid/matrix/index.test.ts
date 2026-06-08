@@ -13,7 +13,7 @@
 import { describe, it, expect } from 'vitest'
 import {
   nodeOf, neighborsOf, backlinksOf, bindingOf, matrixDigest,
-  parentOf, prevOf, nextOf, coordinateOf, verifyBind, verifyRoot, tamperedAtoms,
+  parentOf, prevOf, nextOf, coordinateOf, coordinateAddress, verifyBind, verifyRoot, tamperedAtoms,
   toUuid, merge,
   UUID_MATRIX_NODES, UUID_MATRIX_EDGES, UUID_MATRIX_ROOT,
 } from '@/uuid/matrix'
@@ -23,6 +23,20 @@ describe('uuid-matrix: the corpus is queryable as a content-addressed matrix', (
     const n = nodeOf('access')
     expect(n).toBeDefined()
     expect(n?.uuid).toMatch(/^[0-9a-f]{8}-[0-9a-f]{4}-8[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/)
+  })
+
+  it('nodeOf resolves nested atom paths (cross-named architecture by path, not leaf alone)', () => {
+    const byPath = nodeOf('architecture/invariant')
+    const byLeaf = nodeOf('invariant')
+    expect(byPath).toBeDefined()
+    expect(byPath?.path).toBe('architecture/invariant')
+    expect(byPath?.uuid).toBe(byLeaf?.uuid)
+    expect(byPath?.horo).toBe(2)
+  })
+
+  it('coordinateAddress folds path · horo/measure · uuid (digit-computed, not hand labels)', () => {
+    const addr = coordinateAddress('architecture/invariant')
+    expect(addr).toMatch(/^architecture\/invariant · 2\/share · [0-9a-f]{8}$/)
   })
 
   it('the band assignment landed: a control atom → control, a noble-0 atom → source', () => {
