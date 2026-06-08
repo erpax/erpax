@@ -13,6 +13,7 @@
  */
 
 import type { PayloadRequest } from 'payload'
+import { AI_AUTO_ACCEPT_ROUTING } from './confidence'
 import { callWorkersAi, type WorkersAiBinding, type AiCallResult } from './cloudflare-ai'
 
 export type DocumentKind =
@@ -69,6 +70,6 @@ export async function classifyDocument(
     },
     sourceCollection: options.sourceCollection,
     sourceId: options.sourceId,
-    autoAcceptThreshold: 0.9, // routing decisions are reversible — auto-accept high confidence
+    autoAcceptThreshold: AI_AUTO_ACCEPT_ROUTING, // 9/10 — routing decisions are reversible
   })
 }

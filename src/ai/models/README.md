@@ -23,9 +23,33 @@
 
 ## typography graph
 
-- partition `ai` · sub-root `3adcfca5-a4b8-8e12-82e4-3959ea2c246f`
+- partition `ai` · sub-root `2d3a90be-68d2-8eac-ba70-c4c58554dc58`
 - bond degree `27` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `EU AI Act 2024 risk-classification + transparency` · banner
+- `EU-2024/1183` · catalogue
+- `EU-2024/1620` · catalogue
+- `EU-2024/1624` · catalogue
+- `EU-AI-Act` · catalogue
+- `EU-CSDDD-2024/1760` · catalogue
+- `GDPR data-residency (`euHostable` — EU PoPs for EU tenants)` · banner
+- `ISO-19011:2018 audit-trail model-catalogue-changes` · banner
+- `RFC-4122` · catalogue
+- `RFC-4122 §4.3 uuid (content-addressed model identity)` · banner
+- `SOX §404 internal-controls` · banner
+
+## analytics
+
+- bond degree `27` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `11`
 
 ## identity
 
@@ -41,4 +65,4 @@
 
 ---
 
-<sub>content-uuid `df9afb1d-bd19-863a-921c-02743b7c371b` · framed by typography partition `ai` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `ef378c83-2ad2-8d71-aac5-8d78a394ced3` · framed by typography partition `ai` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>

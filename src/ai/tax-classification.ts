@@ -14,6 +14,7 @@
  */
 
 import type { PayloadRequest } from 'payload'
+import { AI_AUTO_ACCEPT_TAX } from './confidence'
 import { callWorkersAi, type WorkersAiBinding, type AiCallResult } from './cloudflare-ai'
 
 export interface TaxClassificationInput {
@@ -63,6 +64,6 @@ Buyer has valid VAT ID: ${input.buyerHasValidVatId}`,
     },
     sourceCollection: 'invoice-lines',
     sourceId: input.invoiceLineId,
-    autoAcceptThreshold: 0.97, // very-high confidence only (tax misclassification has fines)
+    autoAcceptThreshold: AI_AUTO_ACCEPT_TAX, // 97/100 — tax misclassification has fines
   })
 }

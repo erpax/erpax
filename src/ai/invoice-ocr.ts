@@ -17,6 +17,7 @@
  */
 
 import type { PayloadRequest } from 'payload'
+import { AI_AUTO_ACCEPT_INVOICE } from './confidence'
 import { callWorkersAi, type WorkersAiBinding, type AiCallResult } from './cloudflare-ai'
 
 export interface InvoiceOcrInput {
@@ -81,6 +82,6 @@ export async function extractInvoiceFromScan(
     },
     sourceCollection: options.sourceCollection,
     sourceId: options.sourceId,
-    autoAcceptThreshold: 0.95, // very-high confidence auto-applies; below threshold human reviews
+    autoAcceptThreshold: AI_AUTO_ACCEPT_INVOICE, // 19/20 — below threshold human reviews
   })
 }

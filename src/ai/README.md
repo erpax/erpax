@@ -2,7 +2,7 @@
 
 # ai
 
-> atom `ai` · horo `1` `base` · [[balance]] `1` · [[seal]] `1`
+> atom `ai` · horo `2` `share` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -23,16 +23,75 @@
 
 ## typography graph
 
-- partition `ai` · sub-root `3adcfca5-a4b8-8e12-82e4-3959ea2c246f`
-- bond degree `12` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- partition `ai` · sub-root `2d3a90be-68d2-8eac-ba70-c4c58554dc58`
+- bond degree `44` · analysis neighbors `agent` · `cloudflare` · `diamond` · `secret`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+- `ai`/`AI` · atom `cloudflare/ai/AI`
+- `vectorize`/`VECTORIZE_DOCS` · atom `cloudflare/vectorize/VECTORIZE_DOCS`
+
+## [[standards]]
+
+- `COSO-ERM-2017` · catalogue
+- `EN-16931` · catalogue
+- `EU AI Act 2024 transparency-and-risk-classification` · banner
+- `EU-2002/58` · catalogue
+- `EU-2017/1132` · catalogue
+- `EU-2017/828` · catalogue
+- `EU-2019/1150` · catalogue
+- `EU-2019/1152` · catalogue
+- `EU-2019/1937` · catalogue
+- `EU-2019/2161` · catalogue
+- `EU-2019/770` · catalogue
+- `EU-2019/771` · catalogue
+- `EU-2022/1925` · catalogue
+- `EU-2022/2065` · catalogue
+- `EU-2022/2554` · catalogue
+- `EU-2022/2555` · catalogue
+- `EU-2022/868` · catalogue
+- `EU-2023/1113` · catalogue
+- `EU-2023/2854` · catalogue
+- `EU-2023/956-CBAM` · catalogue
+- `EU-2024/1183` · catalogue
+- `EU-2024/1620` · catalogue
+- `EU-2024/1624` · catalogue
+- `EU-AI-Act` · catalogue
+- `EU-CSDDD-2024/1760` · catalogue
+- `EU-Intrastat-Reg-2019/2152` · catalogue
+- `GDPR Art.22(3) right-to-human-intervention` · banner
+- `ILO-C001` · catalogue
+- `ISO-20022` · catalogue
+- `ISO-27001` · catalogue
+- `ISO-27037` · catalogue
+- `ISO-8601-1` · catalogue
+- `ISO/IEC 42001:2023 ai-management-system` · banner
+- `ISO/IEC-23894` · catalogue
+- `ISO/IEC-25010` · catalogue
+- `ISO/IEC-27001:2022` · catalogue
+- `ISO/IEC-42001` · catalogue
+- `NIST-AI-RMF` · catalogue
+- `NIST-FIPS-180-4` · catalogue
+- `RFC-4122` · catalogue
+- `RFC-8785` · catalogue
+- `RFC-9562` · catalogue
+- `UN-CEFACT` · catalogue
+- `WCAG-2.1` · catalogue
+- `WCO-HS` · catalogue
+
+## analytics
+
+- bond degree `44` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `2` · standards `45`
 
 ## identity
 
-- uuid `d8068dfd-9584-8b92-b5f9-12ae7fc9ed97`
-- bonds in `4` · out `4`
+- uuid `76b57c9d-9ec1-833f-a3eb-6ed37e897098`
+- bonds in `11` · out `12`
 - trinity form·code·proof `1`·`1`·`1`
-- links `1` / `1`
+- links `2` / `2`
 - folded `1` · escapes `0`
 
 ## [[seal]]
@@ -41,4 +100,4 @@
 
 ---
 
-<sub>content-uuid `0368454d-3c2b-8dd3-a989-de9b1cbf56ce` · framed by typography partition `ai` bonds `12` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `27636969-ca0c-842b-834c-1fa2408ad6b0` · framed by typography partition `ai` bonds `44` · `pnpm readme` · `pnpm readme:check`</sub>

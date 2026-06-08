@@ -17,6 +17,7 @@
  */
 
 import type { PayloadRequest } from 'payload'
+import { AI_AUTO_ACCEPT_BANK } from './confidence'
 import { callWorkersAi, type WorkersAiBinding, type AiCallResult } from './cloudflare-ai'
 
 export interface BankMatchInput {
@@ -80,6 +81,6 @@ ${candidatesText}`,
     sourceId: input.bankTransactionId,
     // Bank matching auto-accepts very high confidence ONLY (downstream
     // payment-allocation creation is reversible, so the risk is low).
-    autoAcceptThreshold: 0.92,
+    autoAcceptThreshold: AI_AUTO_ACCEPT_BANK,
   })
 }

@@ -12,6 +12,8 @@
  * @see ./cloudflare-ai.ts
  */
 
+export { detectPromptInjection, sanitisePiiForAi } from './ai-security'
+
 // Canonical entry point — every AI inference goes through here.
 export {
   callWorkersAi,
@@ -31,3 +33,21 @@ export { classifyDocument, type DocumentClassificationInput, type DocumentClassi
 export { embedAndUpsertDocument, type EmbedDocumentInput, type EmbedDocumentOutput, type VectorizeBinding } from './embed-document'
 export { semanticSearch, type SemanticSearchInput, type SemanticSearchOutput, type VectorizeQueryBinding } from './semantic-search'
 export { summariseAuditTrail, type AuditSummarisationInput, type AuditSummarisationOutput } from './audit-summarisation'
+
+// Industry problem → diamond remedy mapping (production failure modes).
+export {
+  AI_INDUSTRY_PROBLEMS,
+  remedyFor,
+  allProblems,
+  groundToolCall,
+  workflowCorrelationUuid,
+  receiptAgentStep,
+  convergeAgentArtifacts,
+  cascadeDepthVerdict,
+  groundOutputVerdict,
+  humanGateVerdict,
+  trustBoundaryVerdict,
+  type AiIndustryProblem,
+  type DiamondRemedy,
+  type RemedyCoverage,
+} from './industry'

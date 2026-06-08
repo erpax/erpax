@@ -23,9 +23,45 @@
 
 ## typography graph
 
-- partition `ai` · sub-root `3adcfca5-a4b8-8e12-82e4-3959ea2c246f`
-- bond degree `21` · analysis neighbors —
-- graph root `9d2ea751-9bae-8b17-857d-d2f9a75150e8`
+- partition `ai` · sub-root `2d3a90be-68d2-8eac-ba70-c4c58554dc58`
+- bond degree `22` · analysis neighbors —
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `EU AI Act 2024 risk-classification + transparency` · banner
+- `EU-2019/1150` · catalogue
+- `EU-2019/1152` · catalogue
+- `EU-2019/1937` · catalogue
+- `EU-2019/2161` · catalogue
+- `EU-2019/770` · catalogue
+- `EU-2019/771` · catalogue
+- `EU-Intrastat-Reg-2019/2152` · catalogue
+- `GDPR Art.22 automated-individual-decision-making` · banner
+- `GDPR Art.22(3) right-to-human-intervention` · banner
+- `ILO-C001` · catalogue
+- `ISO-19011:2018 §6.4.6 audit-evidence ai-inference-trail` · banner
+- `ISO-8601-1` · catalogue
+- `ISO-8601-1:2019 date-time inference-time` · banner
+- `ISO/IEC 23894:2023 ai-risk-management` · banner
+- `ISO/IEC 42001:2023 ai-management-system` · banner
+- `ISO/IEC-23894` · catalogue
+- `ISO/IEC-42001` · catalogue
+- `NIST AI-RMF-1.0 ai-risk-management-framework` · banner
+- `NIST-AI-RMF` · catalogue
+- `RFC-9562` · catalogue
+- `rfc-9562 uuid suggestion-id` · banner
+- `SOX §404 internal-controls ai-assisted-decision TOM-AI-01` · banner
+
+## analytics
+
+- bond degree `22` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `23`
 
 ## identity
 
@@ -41,4 +77,4 @@
 
 ---
 
-<sub>content-uuid `5e39ef7c-f733-8aa5-a1c0-a8ec38da560f` · framed by typography partition `ai` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `2e274966-8e96-8ca0-834d-baee321d91b9` · framed by typography partition `ai` bonds `22` · `pnpm readme` · `pnpm readme:check`</sub>
