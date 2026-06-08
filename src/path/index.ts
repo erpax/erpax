@@ -1,6 +1,6 @@
 /**
  * path — THE merge point: every external surface collapses to one canonical atom path.
- * fs ⊕ url ⊕ github ⊕ mcp ⊕ api ⊕ http — all follow THE path, entangle at
+ * fs ⊕ url ⊕ github ⊕ mcp ⊕ api ⊕ http ⊕ cloudflare — all follow THE path, entangle at
  * content-uuid ([[integrity]]), and merge with erpax in every [[dimension]].
  *
  * Canonical form: `atom/subatom` — forward slashes, no `src/` prefix, no leading
@@ -14,7 +14,7 @@
 import { uuid, jcsCanonicalize } from '@/integrity'
 
 /** Every address surface that folds into the one canonical atom path. */
-export type PathSurface = 'fs' | 'url' | 'github' | 'mcp' | 'api' | 'http'
+export type PathSurface = 'fs' | 'url' | 'github' | 'mcp' | 'api' | 'http' | 'cloudflare'
 
 /** All surfaces — the merged API face list. */
 export const PATH_SURFACES: readonly PathSurface[] = [
@@ -24,6 +24,7 @@ export const PATH_SURFACES: readonly PathSurface[] = [
   'mcp',
   'api',
   'http',
+  'cloudflare',
 ] as const
 
 const LEAF_FILE =
@@ -106,7 +107,7 @@ function peelMcp(input: string): string {
       return normSlashes(raw.replace(/^mcp:\/\/[^/]+\/?/i, '')).replace(/^\/+|\/+$/g, '')
     }
   }
-  let path = stripCorpusPrefix(normSlashes(raw))
+  const path = stripCorpusPrefix(normSlashes(raw))
   return path.replace(/^\/+|\/+$/g, '')
 }
 
@@ -131,6 +132,46 @@ function peelApi(input: string): string {
     else return ''
   }
   path = stripCorpusPrefix(path)
+  return path.replace(/^\/+|\/+$/g, '')
+}
+
+/** Cloudflare Worker routes, R2/D1 keys, workers.dev URLs, wrangler bindings → atom path. */
+function peelCloudflare(input: string): string {
+  const raw = stripQuery(input)
+  let path: string
+  if (/^r2:(\/\/)?/i.test(raw)) {
+    path = normSlashes(raw.replace(/^r2:(\/\/)?/i, ''))
+    const parts = path.split('/').filter(Boolean)
+    if (parts.length > 1) path = parts.slice(1).join('/')
+  } else if (/^d1:(\/\/)?/i.test(raw)) {
+    path = normSlashes(raw.replace(/^d1:(\/\/)?/i, ''))
+    const parts = path.split('/').filter(Boolean)
+    if (parts.length > 1) path = parts.slice(1).join('/')
+  } else if (/^ai:(\/\/)?/i.test(raw)) {
+    path = normSlashes(raw.replace(/^ai:(\/\/)?/i, ''))
+    if (path.startsWith('@cf/')) path = path.slice(4)
+    if (path.startsWith('models/')) path = path.slice('models/'.length)
+  } else if (/^wrangler:\/\/binding\//i.test(raw)) {
+    path = normSlashes(raw.replace(/^wrangler:\/\/binding\//i, ''))
+  } else if (/^https?:\/\//i.test(raw) && /\.workers\.dev\b/i.test(raw)) {
+    try {
+      path = new URL(raw).pathname.replace(/^\/+/, '')
+      if (path.startsWith('api/')) path = path.slice(4)
+      path = stripCorpusPrefix(path)
+    } catch {
+      path = normSlashes(raw)
+    }
+  } else if (/^(?:cf|cloudflare):\/\//i.test(raw)) {
+    path = normSlashes(raw.replace(/^(?:cf|cloudflare):\/\//i, ''))
+    if (path.startsWith('worker/')) path = path.slice('worker/'.length)
+    if (path.startsWith('routes/')) path = path.slice('routes/'.length)
+    if (path.startsWith('binding/')) path = path.slice('binding/'.length)
+    if (path.startsWith('api/')) path = path.slice(4)
+    path = stripCorpusPrefix(path)
+  } else {
+    path = normSlashes(raw)
+  }
+  if (/^t:[^/]+\//.test(path)) path = path.replace(/^t:[^/]+\//, '')
   return path.replace(/^\/+|\/+$/g, '')
 }
 
@@ -171,6 +212,8 @@ function peel(input: string, surface: PathSurface): string {
       return peelApi(input)
     case 'http':
       return peelHttp(input)
+    case 'cloudflare':
+      return peelCloudflare(input)
     default:
       path = normSlashes(raw)
   }
@@ -220,6 +263,7 @@ if (import.meta.url === 'file://' + process.argv[1]) {
       mcp: `erpax://${sample}`,
       api: `/api/corpus/${sample}`,
       http: `https://docs.erpax.dev/${sample}/SKILL`,
+      cloudflare: `r2://erpax/t:tenant/${sample}/report.pdf`,
     }
     console.log(`  ${s.padEnd(7)}`, toAtomPath(examples[s], s))
   }
