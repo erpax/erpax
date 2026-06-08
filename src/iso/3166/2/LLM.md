@@ -3,8 +3,8 @@
 
 # 2
 
-path `iso/3166/2` · uuid `d9198d40-e78b-8cfb-9e10-15b04fa80640` · diamond `35c37a57-a385-8b72-941e-8601adc840f8`
-horo `1` `base` · trinity `1·1·1` · sealed `0`
+path `iso/3166/2` · uuid `1ca99117-1ec9-83db-a005-ce9eb4d4e3fe` · diamond `0f206561-7de1-8b8e-a913-a174c1859aac`
+horo `4` `weave` · trinity `1·1·1` · sealed `0`
 imports — · exports isIso3166_2 · escapes —
 links `1/1` · folded `1` · bonds in `1` out `1`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law a subdivision code is only valid as `<alpha-2>-<subdivision>` — a region i
 
 ---
 
-<sub>content-uuid `8ed8c1c9-c2fa-8623-b889-bac76668c1c6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `41d81074-3bca-8a05-891d-281ffb0bf1fb` · `pnpm readme` · `pnpm computed:check`</sub>

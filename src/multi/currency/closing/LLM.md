@@ -3,8 +3,8 @@
 
 # closing
 
-path `multi/currency/closing` · uuid `b60da4bf-e41e-8312-98ec-0f8f38998db2` · diamond `527b84c2-9185-8984-963a-025da228db05`
-horo `8` `crest` · trinity `1·1·1` · sealed `0`
+path `multi/currency/closing` · uuid `f2b10cfe-05ac-8269-90c2-b2cd525840fd` · diamond `8f3c545e-1f49-8110-8799-4b84be9f31a1`
+horo `2` `share` · trinity `1·1·1` · sealed `0`
 imports @/currency/reconciliation · exports ...·CurrencyBalance·CurrencyReconciliation·ExchangeRateRevaluation·MultiCurrencyReconciliation·barrel · escapes —
 links `1/1` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law closing must balance per currency, not just consolidated — exchange rates 
 
 ---
 
-<sub>content-uuid `d18b717b-3178-8828-a078-5051384d57ec` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8fa55229-9ac5-8cae-9428-f1d6ffd8cf28` · `pnpm readme` · `pnpm computed:check`</sub>

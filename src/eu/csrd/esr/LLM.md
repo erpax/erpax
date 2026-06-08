@@ -3,8 +3,8 @@
 
 # esr
 
-path `eu/csrd/esr` · uuid `bca075d1-29eb-8005-84e8-f3cecbdb9f36` · diamond `c1aeb228-ab4c-8c67-acc7-ff61941b7bfe`
-horo `5` `round` · trinity `1·1·1` · sealed `0`
+path `eu/csrd/esr` · uuid `fdefbeda-03ab-83fa-9335-267301efe47d` · diamond `921051bd-016e-8404-9970-c92ca33d7525`
+horo `2` `share` · trinity `1·1·1` · sealed `0`
 imports — · exports EsrsAssuranceLevel·EsrsCategory·EsrsMateriality·EsrsTopic·const · escapes —
 links `1/1` · folded `1` · bonds in `1` out `1`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law the CSRD/ESRS topic + double-materiality + assurance-level taxonomy consumed
 
 ---
 
-<sub>content-uuid `886c8df2-ce35-882e-bf11-5f260d6be7a1` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `80944033-67d1-884f-bcd1-599aa32a6e31` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -13,7 +13,7 @@
  *
  * @see ../coa — ../../readme/entropy — ../../entry — ../SKILL.md
  */
-import { DebitCreditLogic, type ValidatedEntry } from '../debit'
+import { type ValidatedEntry } from '../debit'
 import {
   accountCodeOf,
   accountCoordinateOf,
@@ -95,9 +95,8 @@ export function entropyToValidatedEntry(
 /** Map validated journal lines → Payload `journal-entries.lines[]` with path + coordinate. */
 export function validatedToCorpusJournalLines(
   entry: ValidatedEntry,
-  atomPath: string,
+  _atomPath: string,
 ): CorpusJournalLine[] {
-  const code = accountCodeOf(atomPath)
   return entry.lines.map((l, i) => ({
     lineNumber: i + 1,
     accountCode: l.accountCode,

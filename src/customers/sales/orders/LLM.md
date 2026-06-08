@@ -3,8 +3,8 @@
 
 # orders
 
-path `customers/sales/orders` · uuid `52ced0bf-a62d-8a42-b754-a5998e9ec5e5` · diamond `8e172c0e-2a6d-8755-8260-dfd3cf1f3e5a`
-horo `2` `share` · trinity `1·1·1` · sealed `0`
+path `customers/sales/orders` · uuid `e96f294c-8557-8514-8945-36d57874240d` · diamond `9f3a920f-1248-8615-88e9-0a7d5d7e2dde`
+horo `4` `weave` · trinity `1·1·1` · sealed `0`
 imports @/base/accounting/field·@/factory · exports default · escapes —
 links `5/5` · folded `1` · bonds in `19` out `19`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law a sales order progresses only forward through its O2C lifecycle, and fulfill
 
 ---
 
-<sub>content-uuid `9fd7604d-3ed4-8bba-a714-3226a79e71ad` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `dc8bb33a-a49e-8ee4-a579-a8622aad7b56` · `pnpm readme` · `pnpm computed:check`</sub>

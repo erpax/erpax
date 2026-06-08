@@ -3,15 +3,15 @@
 
 # level
 
-path `medical/level` · uuid `be73d023-4f37-8bb3-a695-a87ce54de1bd` · diamond `5b0c36bd-8595-807d-aa59-abb821be6c76`
-horo `5` `round` · trinity `1·1·1` · sealed `0`
+path `medical/level` · uuid `faae8305-bdd4-87f7-a22d-37ca7cec9bf0` · diamond `3678ebb0-0472-8281-b8eb-f0743974817c`
+horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports — · exports const·stub · escapes —
-links `5/5` · folded `0` · bonds in `15` out `15`
+links `5/5` · folded `1` · bonds in `16` out `16`
 faces worker·plugin·pwa `1·0·0`
-neighbors → collapse·educational·evidence·floor·inventory·law·leap·legal·medical·merge·photon·proficiency·sti·superposition·value · ← collapse·educational·evidence·floor·inventory·law·leap·legal·medical·merge·photon·proficiency·sti·superposition·value
-analysis diamond·hallucination·purity
+neighbors → collapse·educational·evidence·floor·inventory·law·leap·legal·level·medical·merge·photon·proficiency·sti·superposition·value · ← collapse·educational·evidence·floor·inventory·law·leap·legal·level·medical·merge·photon·proficiency·sti·superposition·value
+analysis —
 law medical/level names level under medical — one word, content-addressed, nested not duplicated.
 
 ---
 
-<sub>content-uuid `9475ef71-122f-837f-83ec-28f4ffc6982c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7a972a19-d24d-8d1f-9133-d495fc9dae45` · `pnpm readme` · `pnpm computed:check`</sub>

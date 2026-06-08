@@ -15,7 +15,7 @@ import {
   type ComputedSpeech,
 } from './computed'
 import type { ComputedWriting } from '@/writing/computed'
-import { isHoroStep, type HoroStep } from '@/horo'
+import { type HoroStep } from '@/horo'
 
 const pathUuid = (atomPath: string): string => uuid(jcsCanonicalize({ path: atomPath }))
 

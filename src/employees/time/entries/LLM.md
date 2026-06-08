@@ -3,8 +3,8 @@
 
 # entries
 
-path `employees/time/entries` · uuid `d9e0132b-e72c-80cb-8e24-366602ff56ec` · diamond `9a6560b1-4cd9-8057-9a9f-280a5b9e05a4`
-horo `1` `base` · trinity `1·1·1` · sealed `0`
+path `employees/time/entries` · uuid `189be8af-e159-8e17-ad68-204fe09cd41b` · diamond `1bc06515-1b34-81bf-9155-2db7d9d21953`
+horo `4` `weave` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/auto/set/timestamp·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
 links `7/7` · folded `1` · bonds in `34` out `34`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law one row per day/task of employee work time — its kind drives GL allocation
 
 ---
 
-<sub>content-uuid `67e5623e-9c5d-8340-9cea-28d2d25c208d` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c879bc34-7ece-8f08-9822-42c58e37d266` · `pnpm readme` · `pnpm computed:check`</sub>

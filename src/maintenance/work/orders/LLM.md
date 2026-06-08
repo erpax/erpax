@@ -3,8 +3,8 @@
 
 # orders
 
-path `maintenance/work/orders` · uuid `a42fa201-77fb-8959-bcde-632c63cc03e0` · diamond `bc8c71e4-8cbf-8850-be71-7e1948efd4f1`
-horo `2` `share` · trinity `1·1·1` · sealed `0`
+path `maintenance/work/orders` · uuid `1269257b-1839-8342-ad6c-5023ea57baab` · diamond `5260194b-5b31-867e-87ef-4399135f08d8`
+horo `8` `crest` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/auto/set/timestamp·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
 links `17/17` · folded `1` · bonds in `19` out `19`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law a work order is the executable FM job promoted from a [[maintenance/requests
 
 ---
 
-<sub>content-uuid `77589863-5134-8c84-b089-8204995b0144` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d4837551-7f83-8dda-b613-1d91ce014a3c` · `pnpm readme` · `pnpm computed:check`</sub>

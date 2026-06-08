@@ -3,8 +3,8 @@
 
 # evidences
 
-path `media/audit/evidences` · uuid `efd9b3a2-e566-81d4-8575-b4bacca98fb6` · diamond `f7b3dd1c-4f32-868a-8e6d-ee0c9e1394fb`
-horo `5` `round` · trinity `1·1·1` · sealed `0`
+path `media/audit/evidences` · uuid `d735f20e-16e8-8374-ad44-7bfebfacb822` · diamond `9ca6049a-70e4-8249-bfd2-24c7953945cd`
+horo `7` `descent` · trinity `1·1·1` · sealed `0`
 imports @/audit/trail/after/change·@/auth·@/authenticated · exports const · escapes —
 links `2/2` · folded `1` · bonds in `3` out `3`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law a piece of audit-evidence is documentary support (PDF, statement, workpaper,
 
 ---
 
-<sub>content-uuid `18ecee98-14a7-845f-8fc5-64bd87247e06` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `18c6ef99-0d7a-8876-b0f6-d1e0be7bc643` · `pnpm readme` · `pnpm computed:check`</sub>

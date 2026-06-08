@@ -1,14 +1,14 @@
 {
   "_law": "coordinator inventory is automatic — snapshot is emit-only; classify from transcripts + terminals",
   "sealedAt": "2026-06-08",
-  "scannedAt": "2026-06-08T22:08:50.321Z",
-  "activeCount": 52,
-  "staleCount": 17,
-  "duplicateCount": 160,
+  "scannedAt": "2026-06-08T22:19:14.347Z",
+  "activeCount": 55,
+  "staleCount": 18,
+  "duplicateCount": 163,
   "warnings": [
     "queue depth exceeded",
-    "17 stale >30min",
-    "128 long-running erpax process(es) — erpax doctor stalls"
+    "18 stale >30min",
+    "157 long-running erpax process(es) — erpax doctor stalls"
   ],
   "rows": [
     {
@@ -523,7 +523,7 @@
     },
     {
       "id": "825368fd",
-      "ageSeconds": 21339,
+      "ageSeconds": 21963,
       "status": "done",
       "title": "You are working in erpax at /Users/ceci/github/erpax/erpax.",
       "speedUpHint": "—",
@@ -677,7 +677,7 @@
     },
     {
       "id": "0935d8ce",
-      "ageSeconds": 14409,
+      "ageSeconds": 15033,
       "status": "done",
       "title": "Prior agent 25f9cea6 stalled after initial exploration. Resume: complete computer + parts and body + parts atom hierarch",
       "speedUpHint": "—",
@@ -788,7 +788,7 @@
     },
     {
       "id": "term-319418",
-      "ageSeconds": 12877,
+      "ageSeconds": 13501,
       "status": "duplicate",
       "title": "cd /Users/ceci/github/erpax/erpax && NODE_OPTIONS='--no-deprecation --import=tsx/esm' npx tsx -e \\",
       "speedUpHint": "cancel younger agent id term-319418",
@@ -798,7 +798,7 @@
     },
     {
       "id": "f593d3c9",
-      "ageSeconds": 12864,
+      "ageSeconds": 13488,
       "status": "done",
       "title": "Bring ALL outstanding session work and incomplete atoms to **complete diamonds**: trinity (form·code·proof), matrix folde",
       "speedUpHint": "—",
@@ -938,7 +938,7 @@
     },
     {
       "id": "term-303690",
-      "ageSeconds": 12585,
+      "ageSeconds": 13209,
       "status": "duplicate",
       "title": "cd /Users/ceci/github/erpax/erpax && NODE_OPTIONS=\\\"--no-deprecation --import=tsx/esm\\\" npx tsx -e \\",
       "speedUpHint": "cancel younger agent id term-303690",
@@ -958,7 +958,7 @@
     },
     {
       "id": "term-268226",
-      "ageSeconds": 12184,
+      "ageSeconds": 12808,
       "status": "duplicate",
       "title": "cd /Users/ceci/github/erpax/erpax && NODE_OPTIONS=\\\"--no-deprecation --import=tsx/esm\\\" npx tsx -e \\",
       "speedUpHint": "cancel younger agent id term-268226",
@@ -988,7 +988,7 @@
     },
     {
       "id": "term-897603",
-      "ageSeconds": 11910,
+      "ageSeconds": 12534,
       "status": "duplicate",
       "title": "cd /Users/ceci/github/erpax/erpax && NODE_OPTIONS=\\\"--no-deprecation --import=tsx/esm\\\" pnpm exec ts",
       "speedUpHint": "cancel younger agent id term-897603",
@@ -1018,7 +1018,7 @@
     },
     {
       "id": "term-751511",
-      "ageSeconds": 11747,
+      "ageSeconds": 12371,
       "status": "duplicate",
       "title": "cd /Users/ceci/github/erpax/erpax && NODE_OPTIONS=\\\"--no-deprecation --import=tsx/esm\\\" pnpm exec ts",
       "speedUpHint": "cancel younger agent id term-751511",
@@ -1098,7 +1098,7 @@
     },
     {
       "id": "term-269129",
-      "ageSeconds": 11401,
+      "ageSeconds": 12025,
       "status": "duplicate",
       "title": "cd /Users/ceci/github/erpax/erpax && NODE_OPTIONS=\\\"--no-deprecation --import=tsx/esm\\\" npx tsx -e \\",
       "speedUpHint": "cancel younger agent id term-269129",
@@ -1158,7 +1158,7 @@
     },
     {
       "id": "1a7c7f91",
-      "ageSeconds": 11157,
+      "ageSeconds": 11781,
       "status": "done",
       "title": "Follow-up from 25f9cea6: computer + body hierarchies complete (25 atoms trinity, 35 tests) but need matrix fold + path l",
       "speedUpHint": "—",
@@ -1268,7 +1268,7 @@
     },
     {
       "id": "term-92536",
-      "ageSeconds": 10857,
+      "ageSeconds": 11481,
       "status": "duplicate",
       "title": "cd /Users/ceci/github/erpax/erpax && NODE_OPTIONS=\\\"--no-deprecation --import=tsx/esm\\\" pnpm exec ts",
       "speedUpHint": "cancel younger agent id term-92536",
@@ -1318,7 +1318,7 @@
     },
     {
       "id": "cb223b26",
-      "ageSeconds": 10506,
+      "ageSeconds": 11130,
       "status": "done",
       "title": "Follow-up from 117b28ec: accountGapsAndSeals, aggregateCorpusEntropy, corpus entropy section in readme renderer.",
       "speedUpHint": "—",
@@ -1348,7 +1348,7 @@
     },
     {
       "id": "term-796983",
-      "ageSeconds": 10482,
+      "ageSeconds": 11106,
       "status": "duplicate",
       "title": "cd /Users/ceci/github/erpax/erpax && NODE_OPTIONS=\\\"--no-deprecation --import=tsx/esm --max-old-spac",
       "speedUpHint": "cancel younger agent id term-796983",
@@ -1398,7 +1398,7 @@
     },
     {
       "id": "7b0ddd75",
-      "ageSeconds": 10383,
+      "ageSeconds": 11007,
       "status": "done",
       "title": "Reorganize **root-level** `src/` atoms into **logical navigation groups** by moving folders — computed nav must reflect g",
       "speedUpHint": "—",
@@ -1474,7 +1474,7 @@
     },
     {
       "id": "term-318519",
-      "ageSeconds": 10378,
+      "ageSeconds": 11002,
       "status": "duplicate",
       "title": "cd /Users/ceci/github/erpax/erpax && NODE_OPTIONS=\\\"--no-deprecation --import=tsx/esm\\\" pnpm exec ts",
       "speedUpHint": "cancel younger agent id term-318519",
@@ -1504,7 +1504,7 @@
     },
     {
       "id": "46d26f5b",
-      "ageSeconds": 10175,
+      "ageSeconds": 10799,
       "status": "done",
       "title": "Follow-up from 29e6d26e: all 17 quantum/* children now trinity 1·1·1, 77 tests pass.",
       "speedUpHint": "—",
@@ -1557,7 +1557,7 @@
     },
     {
       "id": "b4c0d5f6",
-      "ageSeconds": 10133,
+      "ageSeconds": 10757,
       "status": "done",
       "title": "User law: \"no gaps\"",
       "speedUpHint": "—",
@@ -1615,32 +1615,8 @@
       "lastActivityMs": 1780947889352.142
     },
     {
-      "id": "95768f71",
-      "ageSeconds": 10008,
-      "status": "done",
-      "title": "Follow-up from 24026c37 + b7d47a5d: Payload admin UI wired but CorpusEntropyDashboard slow (~75s deriveModel fs walk).",
-      "speedUpHint": "—",
-      "source": "subagent",
-      "startedAtMs": 1780946522129.9553,
-      "lastActivityMs": 1780947566817.0913,
-      "paths": [
-        "src/admin/ui/corpus-rollup.ts",
-        "src/admin/ui/corpus-rollup.test.ts",
-        "src/admin/ui/dashboard/CorpusEntropyDashboard.tsx",
-        "src/readme",
-        "src/readme/index.ts",
-        "src/readme/entropy.ts",
-        "src/entanglement/index.ts",
-        "src/admin/ui/field-visibility.test.ts",
-        "src/ui",
-        "src/quantum/entanglement/registry.ts",
-        "src/ui/index.ts",
-        "src/admin"
-      ]
-    },
-    {
       "id": "ab317cc9",
-      "ageSeconds": 9940,
+      "ageSeconds": 10564,
       "status": "done",
       "title": "Wire Radix-based UI that **renders and updates across all quantum dimensions in realtime** — each horo digit / partition",
       "speedUpHint": "—",
@@ -1690,36 +1666,13 @@
     },
     {
       "id": "term-264181",
-      "ageSeconds": 9890,
+      "ageSeconds": 10514,
       "status": "duplicate",
       "title": "cd /Users/ceci/github/erpax/erpax && NODE_OPTIONS=\\\"--no-deprecation --import=tsx/esm\\\" pnpm exec ts",
       "speedUpHint": "cancel younger agent id term-264181",
       "source": "terminal",
       "startedAtMs": 1780946639882.8452,
       "lastActivityMs": 1780946955448.7825
-    },
-    {
-      "id": "3b8e0226",
-      "ageSeconds": 9842,
-      "status": "done",
-      "title": "Follow-up from 7e5702f5: src/medical/test.ts fails — observationsFromMedicalDevice('monitor', [78,97,118]) should use De",
-      "speedUpHint": "—",
-      "source": "subagent",
-      "startedAtMs": 1780946688157.1746,
-      "lastActivityMs": 1780947718712.2688,
-      "paths": [
-        "src/medical/test.ts",
-        "src/medical",
-        "src/medical/device/index.ts",
-        "src/medical/index.ts",
-        "src/medical/device/test.ts",
-        "src/medical/",
-        "src/monitor/",
-        "src/monitor/test.ts",
-        "src/monitor",
-        "src/monitor/index.ts",
-        "src/monitor/LLM.md"
-      ]
     },
     {
       "id": "term-855613",
@@ -1733,7 +1686,7 @@
     },
     {
       "id": "d8ea3532",
-      "ageSeconds": 9830,
+      "ageSeconds": 10454,
       "status": "done",
       "title": "User report: \"another violation. src/skill/router/upgrade/quantum.test.ts\"",
       "speedUpHint": "—",
@@ -1779,7 +1732,7 @@
     },
     {
       "id": "63af6c07",
-      "ageSeconds": 9802,
+      "ageSeconds": 10426,
       "status": "done",
       "title": "Follow-up from f81b989a: readme:check:waves fails on root README drift before wave folder verify.",
       "speedUpHint": "—",
@@ -1824,66 +1777,6 @@
       ]
     },
     {
-      "id": "36da8fd1",
-      "ageSeconds": 9676,
-      "status": "done",
-      "title": "Follow-up from b1f22647: field-visibility.test.ts fails — `coordinateAddress is not a function` in quantum/entanglement/",
-      "speedUpHint": "—",
-      "source": "subagent",
-      "startedAtMs": 1780946854032.1667,
-      "lastActivityMs": 1780947748203.802,
-      "paths": [
-        "src/quantum/entanglement/registry.ts",
-        "src/admin/ui/field-visibility.test.ts",
-        "src/admin/ui/field-visibility.ts",
-        "src/uuid/matrix/index.ts",
-        "src/access",
-        "src/plugins/admin-ui/index.ts",
-        "src/payload.config.ts",
-        "src/quantum/entanglement/index.ts",
-        "src/uuid",
-        "src/corpus",
-        "src/quantum/index.ts",
-        "src/quantum",
-        "src/entanglement",
-        "src/uuid/index.ts",
-        "src/horo",
-        "src/access/index.ts",
-        "src/cross",
-        "src/sandbox",
-        "src/admin/ui/fields",
-        "src/admin/ui/fields/EntanglementField.tsx",
-        "src/skill/router/plugin.ts",
-        "src/team/comms",
-        "src/navigation",
-        "src/uuid/share/index.ts",
-        "src/auth/index.ts",
-        "src/corpus/index.ts",
-        "src/rules",
-        "src/quantum/entanglement",
-        "src/accounting/path-coa.ts",
-        "src/apply/index.ts",
-        "src/apply/test.ts",
-        "src/medical/test.ts",
-        "src/quantum/entanglement/test.ts",
-        "src/accounting/path-coa.test.ts",
-        "src/admin/ui",
-        "src/apply",
-        "src/accounting/index.ts",
-        "src/accounting/path/coa/index.ts",
-        "src/accounting",
-        "src/admin/ui/collection-meta.ts",
-        "src/css/computed.ts",
-        "src/agent/cheap-dispatch.ts",
-        "src/monitor/violations/index.ts",
-        "src/monitor/violations/improve.ts",
-        "src/skill/router/upgrade/quantum/index.ts",
-        "src/path/merge.ts",
-        "src/path",
-        "src/path/hooks.registry.generated.ts"
-      ]
-    },
-    {
       "id": "term-591355",
       "ageSeconds": 35,
       "status": "duplicate",
@@ -1905,7 +1798,7 @@
     },
     {
       "id": "fb3c1c26",
-      "ageSeconds": 9535,
+      "ageSeconds": 10159,
       "status": "done",
       "title": "Realtime monitor for **all** erpax violations — folder law, rules:check, diamond strays, gap eb, finishedIdeaCrossed impu",
       "speedUpHint": "—",
@@ -1968,7 +1861,7 @@
     },
     {
       "id": "term-947262",
-      "ageSeconds": 9400,
+      "ageSeconds": 10024,
       "status": "stale",
       "title": "kill 86657 2>/dev/null; cd /Users/ceci/github/erpax/erpax && NODE_OPTIONS=\\\"--no-deprecation --impor",
       "speedUpHint": "resume batch commit or publishDirection abort",
@@ -1978,7 +1871,7 @@
     },
     {
       "id": "4dbb5344",
-      "ageSeconds": 9279,
+      "ageSeconds": 9903,
       "status": "done",
       "title": "User law: \"max work max tampering cost\"",
       "speedUpHint": "—",
@@ -2028,7 +1921,7 @@
     },
     {
       "id": "b901c94e",
-      "ageSeconds": 9193,
+      "ageSeconds": 9817,
       "status": "done",
       "title": "Reduce **AI agent** token/compute cost and wall-clock while preserving tamper cost and seal laws.",
       "speedUpHint": "—",
@@ -2096,7 +1989,7 @@
     },
     {
       "id": "fb3b9ddc",
-      "ageSeconds": 9179,
+      "ageSeconds": 9803,
       "status": "done",
       "title": "Follow-up from ca6a163b: 5 accounting-structure violations — move to nested atoms.",
       "speedUpHint": "—",
@@ -2204,7 +2097,7 @@
     },
     {
       "id": "993fef5f",
-      "ageSeconds": 9069,
+      "ageSeconds": 9693,
       "status": "done",
       "title": "User bug/law: \"path in path leads to gaps. the logic is not merged in the indices\"",
       "speedUpHint": "—",
@@ -2252,7 +2145,7 @@
     },
     {
       "id": "544da267",
-      "ageSeconds": 9047,
+      "ageSeconds": 9671,
       "status": "done",
       "title": "Follow-up from 26f53864: css unsealed — 2 eb gaps (typography partition + path ancestor) after focused readme; computed.",
       "speedUpHint": "—",
@@ -2299,7 +2192,7 @@
     },
     {
       "id": "b0d5c101",
-      "ageSeconds": 9026,
+      "ageSeconds": 9650,
       "status": "done",
       "title": "Follow-up from cd3eb0da: parseQuantumSkill/generateQuantumSkill wired. d8ea3532 may have restructured quantum.test.ts.",
       "speedUpHint": "—",
@@ -2338,7 +2231,7 @@
     },
     {
       "id": "5c2108cc",
-      "ageSeconds": 8864,
+      "ageSeconds": 9489,
       "status": "done",
       "title": "User request: \"review all usage of path in paths. most will be violations\"",
       "speedUpHint": "—",
@@ -2372,7 +2265,7 @@
     },
     {
       "id": "term-592421",
-      "ageSeconds": 8811,
+      "ageSeconds": 9435,
       "status": "duplicate",
       "title": "cd /Users/ceci/github/erpax/erpax && NODE_OPTIONS=\\\"--no-deprecation --import=tsx/esm\\\" npx tsx -e \\",
       "speedUpHint": "cancel younger agent id term-592421",
@@ -2392,7 +2285,7 @@
     },
     {
       "id": "a031e146",
-      "ageSeconds": 8668,
+      "ageSeconds": 9292,
       "status": "done",
       "title": "Follow-up from 5c2108cc path-in-path audit backlog:",
       "speedUpHint": "—",
@@ -2415,7 +2308,7 @@
     },
     {
       "id": "42b79d4b",
-      "ageSeconds": 8638,
+      "ageSeconds": 9262,
       "status": "done",
       "title": "Follow-up from 7b0ddd75: 48 hub children trinity 100% but 0% sealed; scoped readme fails on `quantumEntangle` TDZ in ent",
       "speedUpHint": "—",
@@ -2454,7 +2347,7 @@
     },
     {
       "id": "10b19f10",
-      "ageSeconds": 8559,
+      "ageSeconds": 9183,
       "status": "done",
       "title": "During readme generation, **immediately load** agent/session thinking and **transform to quantum** (superposition | colla",
       "speedUpHint": "—",
@@ -2506,7 +2399,7 @@
     },
     {
       "id": "term-17264",
-      "ageSeconds": 8491,
+      "ageSeconds": 9115,
       "status": "duplicate",
       "title": "cd /Users/ceci/github/erpax/erpax && NODE_OPTIONS=\\\"--no-deprecation --import=tsx/esm\\\" pnpm exec ts",
       "speedUpHint": "cancel younger agent id term-17264",
@@ -2516,7 +2409,7 @@
     },
     {
       "id": "c330b472",
-      "ageSeconds": 8490,
+      "ageSeconds": 9114,
       "status": "done",
       "title": "When an agent touches any file/path, **instantly resolve** all required skills — ancestors, bonds, quantum env, entanglem",
       "speedUpHint": "—",
@@ -2560,7 +2453,7 @@
     },
     {
       "id": "e95cb46c",
-      "ageSeconds": 8449,
+      "ageSeconds": 9073,
       "status": "done",
       "title": "Follow-up from 993fef5f: merge uses MERGED_LEDGER_CHAINS but docs/tests still cite `accounting/path/coa`. User law: path",
       "speedUpHint": "—",
@@ -2604,7 +2497,7 @@
     },
     {
       "id": "26c52b13",
-      "ageSeconds": 8055,
+      "ageSeconds": 8679,
       "status": "done",
       "title": "Follow-up from c330b472: first realiseSkillsForPath ~25-40s due to rulesOf() full scan.",
       "speedUpHint": "—",
@@ -2627,7 +2520,7 @@
     },
     {
       "id": "e91c6593",
-      "ageSeconds": 7900,
+      "ageSeconds": 8524,
       "status": "done",
       "title": "User law: \"if an agent tries to violate the rules it does not understand erpax cross concept\"",
       "speedUpHint": "—",
@@ -2674,7 +2567,7 @@
     },
     {
       "id": "2888f27b",
-      "ageSeconds": 7704,
+      "ageSeconds": 8328,
       "status": "done",
       "title": "Follow-up from 544da267: css sealed but may still use accounting/path/coa. User law: path useless → accounting/coa only.",
       "speedUpHint": "—",
@@ -2711,7 +2604,7 @@
     },
     {
       "id": "4f811289",
-      "ageSeconds": 7642,
+      "ageSeconds": 8266,
       "status": "done",
       "title": "User law: \"i see concentration of logic that needs to be distributed and this is also violation\"",
       "speedUpHint": "—",
@@ -2742,7 +2635,7 @@
     },
     {
       "id": "6f87602b",
-      "ageSeconds": 7597,
+      "ageSeconds": 8221,
       "status": "done",
       "title": "Follow-up from b901c94e + c330b472: two skill loaders exist (cheapAgentDispatch vs realiseSkillsForPath). Unify:",
       "speedUpHint": "—",
@@ -2783,7 +2676,7 @@
     },
     {
       "id": "5df78a5a",
-      "ageSeconds": 7541,
+      "ageSeconds": 8165,
       "status": "done",
       "title": "User law: \"folder and filenames may be only digits or letters\"",
       "speedUpHint": "—",
@@ -2862,7 +2755,7 @@
     },
     {
       "id": "0d1502e9",
-      "ageSeconds": 7520,
+      "ageSeconds": 8144,
       "status": "stale",
       "title": "Follow-up from 825368fd: bindings/standards/analytics in readme; full materialize not green.",
       "speedUpHint": "resume batch commit or publishDirection abort",
@@ -2872,7 +2765,7 @@
     },
     {
       "id": "term-433721",
-      "ageSeconds": 7513,
+      "ageSeconds": 8137,
       "status": "duplicate",
       "title": "cd /Users/ceci/github/erpax/erpax && NODE_OPTIONS=\\\"--no-deprecation --import=tsx/esm\\\" pnpm exec ts",
       "speedUpHint": "cancel younger agent id term-433721",
@@ -2892,7 +2785,7 @@
     },
     {
       "id": "c0b07355",
-      "ageSeconds": 7435,
+      "ageSeconds": 8059,
       "status": "done",
       "title": "Follow-up from a031e146: pre-existing stale template `@/${hub}/${leaf}` in navigation/distribute.ts breaks link resolve.",
       "speedUpHint": "—",
@@ -2917,7 +2810,7 @@
     },
     {
       "id": "151429da",
-      "ageSeconds": 7423,
+      "ageSeconds": 8047,
       "status": "done",
       "title": "User law: \"no useless wording. every word matters in code\"",
       "speedUpHint": "—",
@@ -2955,7 +2848,7 @@
     },
     {
       "id": "996147a5",
-      "ageSeconds": 7332,
+      "ageSeconds": 7956,
       "status": "done",
       "title": "User law: \"every word is a folder with code\"",
       "speedUpHint": "—",
@@ -3016,7 +2909,7 @@
     },
     {
       "id": "45e915bf",
-      "ageSeconds": 7287,
+      "ageSeconds": 7911,
       "status": "done",
       "title": "User law: \"speach computes\" (interpret as **speech computes**)",
       "speedUpHint": "—",
@@ -3093,7 +2986,7 @@
     },
     {
       "id": "58c28701",
-      "ageSeconds": 7027,
+      "ageSeconds": 7651,
       "status": "done",
       "title": "User question: \"is erpax getting closer to be self sufficient ai?\"",
       "speedUpHint": "—",
@@ -3123,7 +3016,7 @@
     },
     {
       "id": "b576a290",
-      "ageSeconds": 6954,
+      "ageSeconds": 7578,
       "status": "done",
       "title": "User law: \"alcaps like ACCOUNTING_STRUCTURE_BASELINE are eventual violations of the seals\"",
       "speedUpHint": "—",
@@ -3160,7 +3053,7 @@
     },
     {
       "id": "f7d22d8d",
-      "ageSeconds": 6923,
+      "ageSeconds": 7547,
       "status": "done",
       "title": "User law: \"all is computed at all scales\"",
       "speedUpHint": "—",
@@ -3200,7 +3093,7 @@
     },
     {
       "id": "82bdf99d",
-      "ageSeconds": 6896,
+      "ageSeconds": 7520,
       "status": "done",
       "title": "User request: \"audit all constants\"",
       "speedUpHint": "—",
@@ -3345,7 +3238,7 @@
     },
     {
       "id": "d1840104",
-      "ageSeconds": 6416,
+      "ageSeconds": 7040,
       "status": "done",
       "title": "Shrink codebase to **bindings only** — explicit wire points (wrangler, collection slugs, `@/` imports, matrix bonds) — **",
       "speedUpHint": "—",
@@ -3396,7 +3289,7 @@
     },
     {
       "id": "191d19f0",
-      "ageSeconds": 6391,
+      "ageSeconds": 7015,
       "status": "done",
       "title": "Follow-up from f593d3c9 complete diamonds:",
       "speedUpHint": "—",
@@ -3470,7 +3363,7 @@
     },
     {
       "id": "db321929",
-      "ageSeconds": 5845,
+      "ageSeconds": 6469,
       "status": "done",
       "title": "User law: \"with every pass skills and code become more efficient\"",
       "speedUpHint": "—",
@@ -3512,7 +3405,7 @@
     },
     {
       "id": "21fdc94e",
-      "ageSeconds": 5717,
+      "ageSeconds": 6341,
       "status": "done",
       "title": "User law: \"word without a complete diamond is useless complexity\"",
       "speedUpHint": "—",
@@ -3552,7 +3445,7 @@
     },
     {
       "id": "10080ff8",
-      "ageSeconds": 5700,
+      "ageSeconds": 6324,
       "status": "done",
       "title": "Follow-up from b4c0d5f6 no-gaps P0: 2845 form-only atoms, 390 unsealed, corpus net −26k eb.",
       "speedUpHint": "—",
@@ -3600,7 +3493,7 @@
     },
     {
       "id": "cdf6c3e3",
-      "ageSeconds": 5685,
+      "ageSeconds": 6309,
       "status": "done",
       "title": "Follow-up from d8ea3532: only remaining stray at skill/router/upgrade/ is seal.ts.",
       "speedUpHint": "—",
@@ -3647,7 +3540,7 @@
     },
     {
       "id": "term-432900",
-      "ageSeconds": 5223,
+      "ageSeconds": 5847,
       "status": "duplicate",
       "title": "cd /Users/ceci/github/erpax/erpax && NODE_OPTIONS=\\\"--no-deprecation --import=tsx/esm\\\" pnpm exec ts",
       "speedUpHint": "cancel younger agent id term-432900",
@@ -3667,7 +3560,7 @@
     },
     {
       "id": "term-590080",
-      "ageSeconds": 5076,
+      "ageSeconds": 5700,
       "status": "stale",
       "title": "term-590080",
       "speedUpHint": "resume batch commit or publishDirection abort",
@@ -3677,7 +3570,7 @@
     },
     {
       "id": "b2f75a6f",
-      "ageSeconds": 5064,
+      "ageSeconds": 5688,
       "status": "done",
       "title": "User: \"ratchet.json is not in the allowed list\"",
       "speedUpHint": "—",
@@ -3738,7 +3631,7 @@
     },
     {
       "id": "cc3c5cb1",
-      "ageSeconds": 4950,
+      "ageSeconds": 5574,
       "status": "done",
       "title": "Stop recurring \"not allowed file\" violations. Root-cause and fix systematically — not one-off whack-a-mole.",
       "speedUpHint": "—",
@@ -3780,7 +3673,7 @@
     },
     {
       "id": "6fdfc02b",
-      "ageSeconds": 4869,
+      "ageSeconds": 5493,
       "status": "done",
       "title": "Make agent direction-change **immediate** and **entangled** — a new law/rule/signal propagates to running workers without",
       "speedUpHint": "—",
@@ -3831,7 +3724,7 @@
     },
     {
       "id": "54d95209",
-      "ageSeconds": 4701,
+      "ageSeconds": 5325,
       "status": "done",
       "title": "Follow-up from [Every word matters law](151429da-dacc-4626-95ba-26672ac6ee6d).",
       "speedUpHint": "—",
@@ -3890,7 +3783,7 @@
     },
     {
       "id": "b8e8e69c",
-      "ageSeconds": 4595,
+      "ageSeconds": 5219,
       "status": "duplicate",
       "title": "User request: \"commit all in tested batches when finished and push addressing all push errors canonically\"",
       "speedUpHint": "cancel younger agent id b8e8e69c",
@@ -3965,7 +3858,7 @@
     },
     {
       "id": "347c3b25",
-      "ageSeconds": 4383,
+      "ageSeconds": 5007,
       "status": "done",
       "title": "Audit `scripts/` + `package.json` script entries. Move most script logic into **lawful `src/` atoms** that export shared",
       "speedUpHint": "—",
@@ -4073,7 +3966,7 @@
     },
     {
       "id": "term-689493",
-      "ageSeconds": 4053,
+      "ageSeconds": 4677,
       "status": "stale",
       "title": "term-689493",
       "speedUpHint": "resume batch commit or publishDirection abort",
@@ -4083,7 +3976,7 @@
     },
     {
       "id": "a3c40e94",
-      "ageSeconds": 4013,
+      "ageSeconds": 4637,
       "status": "done",
       "title": "Follow-up from [Fix upgrade seal stray](cdf6c3e3-ffe7-423c-b904-1a9058044b0c).",
       "speedUpHint": "—",
@@ -4104,17 +3997,17 @@
     },
     {
       "id": "term-305523",
-      "ageSeconds": 3882,
+      "ageSeconds": 4503,
       "status": "duplicate",
       "title": "cd /Users/ceci/github/erpax/erpax && PAYLOAD_TEST_SKIP_MIGRATE=1 pnpm erpax test int -- src/law/fold",
       "speedUpHint": "cancel younger agent id term-305523",
       "source": "terminal",
       "startedAtMs": 1780952647144,
-      "lastActivityMs": 1780956529851.1597
+      "lastActivityMs": 1780957150309.2048
     },
     {
       "id": "term-329644",
-      "ageSeconds": 3851,
+      "ageSeconds": 4475,
       "status": "duplicate",
       "title": "cd /Users/ceci/github/erpax/erpax && pnpm exec tsx -e \\\"\\nimport {\\n  computedAtAllScalesVerdict,\\n ",
       "speedUpHint": "cancel younger agent id term-329644",
@@ -4134,7 +4027,7 @@
     },
     {
       "id": "6d6da414",
-      "ageSeconds": 3716,
+      "ageSeconds": 4340,
       "status": "done",
       "title": "Follow-up: [All computed all scales](f7d22d8d-28eb-4824-b611-7e47c37b4910) complete but still documents `ratchet.json` (",
       "speedUpHint": "—",
@@ -4174,7 +4067,7 @@
     },
     {
       "id": "6dc3a1e5",
-      "ageSeconds": 3681,
+      "ageSeconds": 4305,
       "status": "done",
       "title": "Follow-up from [Seal last 3 session atoms](191d19f0-c9d4-4f03-9173-5ab6fefd0c87).",
       "speedUpHint": "—",
@@ -4237,7 +4130,7 @@
     },
     {
       "id": "513e188d",
-      "ageSeconds": 3598,
+      "ageSeconds": 4222,
       "status": "done",
       "title": "Any AI assistant (Cursor, Claude, ChatGPT, Copilot, Windsurf, etc.) that receives the repo URL should **immediately** dis",
       "speedUpHint": "—",
@@ -4305,7 +4198,7 @@
     },
     {
       "id": "b627d993",
-      "ageSeconds": 3475,
+      "ageSeconds": 4099,
       "status": "done",
       "title": "Ship focused usability wins across surfaces already in flight — no greenfield UI. Make erpax easier for humans AND agents",
       "speedUpHint": "—",
@@ -4345,22 +4238,55 @@
     },
     {
       "id": "44451f28",
-      "ageSeconds": 3418,
-      "status": "duplicate",
+      "ageSeconds": 4042,
+      "status": "done",
       "title": "Dry-clean the repo — remove cruft, dead paths, duplicates, and session debris while keeping all lawful atoms sealed. **Dr",
-      "speedUpHint": "cancel younger agent id 44451f28",
+      "speedUpHint": "—",
       "source": "subagent",
       "startedAtMs": 1780953112230.9792,
-      "lastActivityMs": 1780953192705.158,
+      "lastActivityMs": 1780956628276.282,
       "paths": [
         "src/apply/efficiency.ts",
         "src/apply/",
-        "src/monitor/"
+        "src/monitor/",
+        "src/agents/mcp/dry-clean.ts",
+        "src/agents/mcp/dry-clean.test.ts",
+        "src/quantum/entanglement/direction-bus.ts",
+        "src/cli/doctor.ts",
+        "src/apply/index.ts",
+        "src/cli/registry.ts",
+        "src/apply/emit-efficiency.ts",
+        "src/apply/SKILL.md",
+        "src/quantum/entanglement/direction-bus.test.ts",
+        "src/monitor/violations/improve.ts",
+        "src/cli/index.ts",
+        "src/apply/efficiency.test.ts",
+        "src/monitor",
+        "src/rules/compute-rules.ts",
+        "src/rules/concentration.ts",
+        "src/cli/rules-check.ts",
+        "src/quantum/entanglement/index.ts",
+        "src/law/folder/live-counts.ts",
+        "src/rules/tightened-scans.ts",
+        "src/law/folder/ratchet-compute.ts",
+        "src/rules/index.ts",
+        "src/path/index.ts",
+        "src/path",
+        "src/apply/clean.ts",
+        "src/apply/clean.test.ts",
+        "src/law/folder/ratchet-math.ts",
+        "src/law/folder/ratchet.generated.ts",
+        "src/apply",
+        "src/apply/automate/SKILL.md",
+        "src/aura/scan.mjs",
+        "src/navigation/groups",
+        "src/apply/clean.manifest.generated.json",
+        "src/navigation/index.ts"
       ]
     },
     {
       "id": "8620dd54",
-      "ageSeconds": 3279,
+      "ageSeconds": 3904,
       "status": "done",
       "title": "Make the gap **visible, gated, and shrinking** — every word must earn its folder with code logic OR explicit human-gate v",
       "speedUpHint": "—",
@@ -4440,7 +4366,7 @@
     },
     {
       "id": "a91dd3f3",
-      "ageSeconds": 3259,
+      "ageSeconds": 3883,
       "status": "stale",
       "title": "Follow-up from [Seal quantum subtree matrix](46d26f5b-aa07-4c76-b664-b6bd9f0da6a7).",
       "speedUpHint": "resume batch commit or publishDirection abort",
@@ -4470,7 +4396,7 @@
     },
     {
       "id": "ad45187c",
-      "ageSeconds": 3215,
+      "ageSeconds": 3839,
       "status": "stale",
       "title": "Close **gaps** (missing trinity, missing hooks, literary words, drift) and drive **entropy → 0** at every scale in `compu",
       "speedUpHint": "resume batch commit or publishDirection abort",
@@ -4490,7 +4416,7 @@
     },
     {
       "id": "28e6848a",
-      "ageSeconds": 3197,
+      "ageSeconds": 3821,
       "status": "stale",
       "title": "Follow-up from [Seal hub pivots readme waves](42b79d4b-0754-4e54-ae09-05e16d680459).",
       "speedUpHint": "resume batch commit or publishDirection abort",
@@ -4530,7 +4456,7 @@
     },
     {
       "id": "30086f93",
-      "ageSeconds": 3032,
+      "ageSeconds": 3656,
       "status": "done",
       "title": "User law: \"free energy comes from zero entropy\"",
       "speedUpHint": "—",
@@ -4567,7 +4493,7 @@
     },
     {
       "id": "term-894943",
-      "ageSeconds": 2993,
+      "ageSeconds": 3617,
       "status": "duplicate",
       "title": "cd /Users/ceci/github/erpax/erpax && NODE_OPTIONS=\\\"--no-deprecation --import=tsx/esm\\\" pnpm exec ts",
       "speedUpHint": "cancel younger agent id term-894943",
@@ -4587,7 +4513,7 @@
     },
     {
       "id": "2188af0f",
-      "ageSeconds": 2972,
+      "ageSeconds": 3596,
       "status": "done",
       "title": "In /Users/ceci/github/erpax/erpax, audit these P0 hub paths (max 25 total): agent, accounting, seal, path, monitor, quan",
       "speedUpHint": "—",
@@ -4664,7 +4590,7 @@
     },
     {
       "id": "55594ea6",
-      "ageSeconds": 2840,
+      "ageSeconds": 3464,
       "status": "duplicate",
       "title": "Diagnose stalls, unblock or kill safely, and ship **stall prevention** so coordinated work doesn't hang silently.",
       "speedUpHint": "cancel younger agent id 55594ea6",
@@ -4692,7 +4618,7 @@
     },
     {
       "id": "c8b93c59",
-      "ageSeconds": 2818,
+      "ageSeconds": 3442,
       "status": "stale",
       "title": "Follow-up from [Split readme compute bind](d1840104-a983-4b6d-96aa-7eb36e96e19b).",
       "speedUpHint": "resume batch commit or publishDirection abort",
@@ -4702,17 +4628,17 @@
     },
     {
       "id": "term-660934",
-      "ageSeconds": 2812,
+      "ageSeconds": 3433,
       "status": "duplicate",
       "title": "cd /Users/ceci/github/erpax/erpax && pnpm vitest run 2>&1 | tail -80",
       "speedUpHint": "cancel younger agent id term-660934",
       "source": "terminal",
       "startedAtMs": 1780953716363,
-      "lastActivityMs": 1780956529150.506
+      "lastActivityMs": 1780957149564.4482
     },
     {
       "id": "0843a868",
-      "ageSeconds": 2785,
+      "ageSeconds": 3409,
       "status": "done",
       "title": "Follow-up from [Upgrade quantum skills batch](b0d5c101-324d-4f2f-aac2-20c8c18c2fd3).",
       "speedUpHint": "—",
@@ -4730,17 +4656,17 @@
     },
     {
       "id": "term-675795",
-      "ageSeconds": 2756,
+      "ageSeconds": 3382,
       "status": "duplicate",
       "title": "cd /Users/ceci/github/erpax/erpax && NODE_OPTIONS=\\\"--no-deprecation --import=tsx/esm\\\" npx tsx -e \\",
       "speedUpHint": "cancel younger agent id term-675795",
       "source": "terminal",
       "startedAtMs": 1780953771224,
-      "lastActivityMs": 1780956528138.6414
+      "lastActivityMs": 1780957153579.7756
     },
     {
       "id": "term-391942",
-      "ageSeconds": 2647,
+      "ageSeconds": 3271,
       "status": "stale",
       "title": "term-391942",
       "speedUpHint": "resume batch commit or publishDirection abort",
@@ -4760,7 +4686,7 @@
     },
     {
       "id": "5bf93af2",
-      "ageSeconds": 2555,
+      "ageSeconds": 3179,
       "status": "done",
       "title": "The coordinator stall/inventory review (oldest→newest, DONE/ACTIVE/STALE/DUPLICATE, speed-up actions) must run **automati",
       "speedUpHint": "—",
@@ -4806,7 +4732,7 @@
     },
     {
       "id": "6c286fde",
-      "ageSeconds": 2516,
+      "ageSeconds": 3140,
       "status": "stale",
       "title": "One **automated orchestration loop** that maximizes efficiency (free energy, ratchet UP) and **tampering costs** (workTam",
       "speedUpHint": "resume batch commit or publishDirection abort",
@@ -4819,7 +4745,7 @@
     },
     {
       "id": "464226d8",
-      "ageSeconds": 2469,
+      "ageSeconds": 3093,
       "status": "done",
       "title": "User: \"learn and implement computer science\"",
       "speedUpHint": "—",
@@ -4927,7 +4853,7 @@
     },
     {
       "id": "term-377849",
-      "ageSeconds": 2392,
+      "ageSeconds": 3016,
       "status": "stale",
       "title": "cd /Users/ceci/github/erpax/erpax && node -e \\\"\\nconst { wordWithoutLogicViolations, useCaseOf, buil",
       "speedUpHint": "resume batch commit or publishDirection abort",
@@ -4937,7 +4863,7 @@
     },
     {
       "id": "ac6a7c87",
-      "ageSeconds": 2332,
+      "ageSeconds": 2956,
       "status": "done",
       "title": "User law: \"fold any 2 interacting 64bit architectures into quantum\"",
       "speedUpHint": "—",
@@ -5018,7 +4944,7 @@
     },
     {
       "id": "a0f78c75",
-      "ageSeconds": 2128,
+      "ageSeconds": 2752,
       "status": "done",
       "title": "Follow-up from [Prove free energy math](30086f93).",
       "speedUpHint": "—",
@@ -5045,7 +4971,7 @@
     },
     {
       "id": "90acca6b",
-      "ageSeconds": 2079,
+      "ageSeconds": 2703,
       "status": "stale",
       "title": "Follow-up from [Fix root readme waves check](63af6c07-fc07-44d4-a69f-6defe8a850c1).",
       "speedUpHint": "resume batch commit or publishDirection abort",
@@ -5075,17 +5001,17 @@
     },
     {
       "id": "term-147378",
-      "ageSeconds": 2036,
+      "ageSeconds": 2661,
       "status": "duplicate",
       "title": "cd /Users/ceci/github/erpax/erpax && NODE_OPTIONS=\\\"--no-deprecation --import=tsx/esm\\\" pnpm exec ts",
       "speedUpHint": "cancel younger agent id term-147378",
       "source": "terminal",
       "startedAtMs": 1780954489601,
-      "lastActivityMs": 1780956525742.7039
+      "lastActivityMs": 1780957151231.0312
     },
     {
       "id": "term-925676",
-      "ageSeconds": 1899,
+      "ageSeconds": 2523,
       "status": "stale",
       "title": "term-925676",
       "speedUpHint": "resume batch commit or publishDirection abort",
@@ -5105,10 +5031,10 @@
     },
     {
       "id": "19a73c6f",
-      "ageSeconds": 1674,
-      "status": "active",
+      "ageSeconds": 2298,
+      "status": "stale",
       "title": "Follow-up from [Fix COMPARABLE_UNIT ratchet](54d95209).",
-      "speedUpHint": "—",
+      "speedUpHint": "resume batch commit or publishDirection abort",
       "source": "subagent",
       "startedAtMs": 1780954855429.2239,
       "lastActivityMs": 1780954860906.5188
@@ -5164,28 +5090,35 @@
       "lastActivityMs": 1780955512402.0596
     },
     {
-      "id": "term-65054",
-      "ageSeconds": 1150,
-      "status": "duplicate",
-      "title": "cd /Users/ceci/github/erpax/erpax && NODE_OPTIONS=\\\"--no-deprecation --import=tsx/esm\\\" npx tsx -e \\",
-      "speedUpHint": "cancel younger agent id term-65054",
-      "source": "terminal",
-      "startedAtMs": 1780955376540,
-      "lastActivityMs": 1780956526947.7368
-    },
-    {
       "id": "10c35074",
-      "ageSeconds": 1137,
-      "status": "active",
+      "ageSeconds": 1761,
+      "status": "done",
       "title": "Follow-up from [Unblock skill/router seal](6dc3a1e5).",
       "speedUpHint": "—",
       "source": "subagent",
       "startedAtMs": 1780955393200.3237,
-      "lastActivityMs": 1780955398812.7224
+      "lastActivityMs": 1780956587060.125,
+      "paths": [
+        "src/skill/router/upgrade/test.ts",
+        "src/seal",
+        "src/readme/index.ts",
+        "src/cli",
+        "src/readme/regen.ts",
+        "src/cli/registry.ts",
+        "src/readme/compute.ts",
+        "src/seal/index.ts",
+        "src/diamond/index.ts",
+        "src/diamond/membership.ts",
+        "src/skill/router",
+        "src/law/folder/word.ts",
+        "src/skill/router/build-index.mjs",
+        "src/skill/router/build-installed.mjs",
+        "src/skill/router/"
+      ]
     },
     {
       "id": "d367264d",
-      "ageSeconds": 1093,
+      "ageSeconds": 1717,
       "status": "active",
       "title": "User: \"after push address all github errors\"",
       "speedUpHint": "—",
@@ -5195,20 +5128,57 @@
     },
     {
       "id": "35be8967",
-      "ageSeconds": 1001,
-      "status": "active",
+      "ageSeconds": 1625,
+      "status": "done",
       "title": "Communication is **always realtime** — not classical poll/resume-wait. Every agent surface, watch loop, and coordinator p",
       "speedUpHint": "—",
       "source": "subagent",
       "startedAtMs": 1780955529037.6423,
-      "lastActivityMs": 1780955533943.569,
+      "lastActivityMs": 1780956583509.1428,
       "paths": [
-        "src/agent/communication/realtime.ts"
+        "src/agent/communication/realtime.ts",
+        "src/quantum/entanglement/direction-bus.ts",
+        "src/monitor/violations/cross-realtime.ts",
+        "src/agent/communication/index.ts",
+        "src/agent/communication/SKILL.md",
+        "src/quantum/dimension-realtime.ts",
+        "src/monitor/violations/stream.ts",
+        "src/monitor/violations/loop.ts",
+        "src/agent/inventory/monitor.ts",
+        "src/monitor/violations/index.ts",
+        "src/cli/doctor.ts",
+        "src/cli/registry.ts",
+        "src/agent/strict-apply.ts",
+        "src/apply/automate/index.ts",
+        "src/admin/ui/violations/ViolationMonitorProvider.tsx",
+        "src/agent/communication/test.ts",
+        "src/realtime/index.ts",
+        "src/agent/sync/index.ts",
+        "src/apply/index.ts",
+        "src/agent/inventory/index.ts",
+        "src/quantum/entanglement/direction-bus.test.ts",
+        "src/cli",
+        "src/cli/index.ts",
+        "src/apply/clean.ts",
+        "src/wave/session.ts",
+        "src/apply/batch.ts",
+        "src/path",
+        "src/path/hooks.registry.mjs",
+        "src/uuid/matrix/collide.mjs",
+        "src/agent/inventory/cli.ts",
+        "src/agent/communication/realtime-cli.ts",
+        "src/agent/communication/realtime.test.ts",
+        "src/monitor/violations/improve.test.ts",
+        "src/monitor/violations/test.ts",
+        "src/path/index.ts",
+        "src/seal",
+        "src/seal/index.ts",
+        "src/quantum/context.ts"
       ]
     },
     {
       "id": "a4212b10",
-      "ageSeconds": 974,
+      "ageSeconds": 1598,
       "status": "done",
       "title": "erpax runs in **quantum mode by default** — superposition until seal, entangled communication, collapse on observe/commit",
       "speedUpHint": "—",
@@ -5272,33 +5242,23 @@
     },
     {
       "id": "term-745321",
-      "ageSeconds": 520,
+      "ageSeconds": 1145,
       "status": "duplicate",
       "title": "cd /Users/ceci/github/erpax/erpax && NODE_OPTIONS=\\\"--no-deprecation --import=tsx/esm --max-old-spac",
       "speedUpHint": "cancel younger agent id term-745321",
       "source": "terminal",
       "startedAtMs": 1780956005434,
-      "lastActivityMs": 1780956525914.475
-    },
-    {
-      "id": "term-924204",
-      "ageSeconds": 515,
-      "status": "active",
-      "title": "cd /Users/ceci/github/erpax/erpax && pnpm erpax clean 2>&1 | head -40",
-      "speedUpHint": "—",
-      "source": "terminal",
-      "startedAtMs": 1780956012802,
-      "lastActivityMs": 1780956528138.6243
+      "lastActivityMs": 1780957151371.4512
     },
     {
       "id": "term-581200",
-      "ageSeconds": 510,
+      "ageSeconds": 1135,
       "status": "duplicate",
       "title": "cd /Users/ceci/github/erpax/erpax && NODE_OPTIONS=\\\"--no-deprecation --import=tsx/esm --max-old-spac",
       "speedUpHint": "cancel younger agent id term-581200",
       "source": "terminal",
       "startedAtMs": 1780956016487,
-      "lastActivityMs": 1780956526899.9482
+      "lastActivityMs": 1780957152356.3733
     },
     {
       "id": "term-370878",
@@ -5321,15 +5281,161 @@
       "lastActivityMs": 1780956352053.6616
     },
     {
-      "id": "term-817793",
-      "ageSeconds": 340,
+      "id": "term-220227",
+      "ageSeconds": 900,
       "status": "duplicate",
-      "title": "cd /Users/ceci/github/erpax/erpax && pnpm exec vitest run src/skill/router/upgrade/test.ts --reporte",
-      "speedUpHint": "cancel younger agent id term-817793",
+      "title": "cd /Users/ceci/github/erpax/erpax && NODE_OPTIONS=\\\"--no-deprecation --import=tsx/esm\\\" pnpm exec ts",
+      "speedUpHint": "cancel younger agent id term-220227",
       "source": "terminal",
-      "startedAtMs": 1780956189512,
-      "lastActivityMs": 1780956529675.6958
+      "startedAtMs": 1780956252884,
+      "lastActivityMs": 1780957152917.0898
+    },
+    {
+      "id": "term-772426",
+      "ageSeconds": 890,
+      "status": "active",
+      "title": "cd /Users/ceci/github/erpax/erpax && pnpm erpax corpus upgrade 2>&1 | tail -15",
+      "speedUpHint": "—",
+      "source": "terminal",
+      "startedAtMs": 1780956261380,
+      "lastActivityMs": 1780957151874.7993
+    },
+    {
+      "id": "term-637984",
+      "ageSeconds": 285,
+      "status": "duplicate",
+      "title": "cd /Users/ceci/github/erpax/erpax && NODE_OPTIONS=\\\"--no-deprecation --import=tsx/esm\\\" pnpm exec ts",
+      "speedUpHint": "cancel younger agent id term-637984",
+      "source": "terminal",
+      "startedAtMs": 1780956426283,
+      "lastActivityMs": 1780956714448.2068
+    },
+    {
+      "id": "term-771565",
+      "ageSeconds": 510,
+      "status": "duplicate",
+      "title": "cd /Users/ceci/github/erpax/erpax && NODE_OPTIONS=\\\"--no-deprecation --import=tsx/esm\\\" pnpm exec vi",
+      "speedUpHint": "cancel younger agent id term-771565",
+      "source": "terminal",
+      "startedAtMs": 1780956569318,
+      "lastActivityMs": 1780957081556.7734
+    },
+    {
+      "id": "237335e9",
+      "ageSeconds": 556,
+      "status": "active",
+      "title": "[Always realtime](35be8967) + [Always quantum](a4212b10) are **unstaged**.",
+      "speedUpHint": "—",
+      "source": "subagent",
+      "startedAtMs": 1780956598020.8555,
+      "lastActivityMs": 1780956604035.3398
+    },
+    {
+      "id": "00105075",
+      "ageSeconds": 544,
+      "status": "done",
+      "title": "Follow-up from [Cross skill router upgrade](10c35074): `pnpm erpax readme --paths` returns Unknown; working path is `tsx",
+      "speedUpHint": "—",
+      "source": "subagent",
+      "startedAtMs": 1780956609861.7373,
+      "lastActivityMs": 1780957070989.8367,
+      "paths": [
+        "src/readme/index.ts",
+        "src/cli/registry.ts",
+        "src/cli/test.ts",
+        "src/cli",
+        "src/cli/index.ts",
+        "src/cli/help.ts",
+        "src/readme",
+        "src/cli/gate.ts",
+        "src/cli/legacy-shim.ts",
+        "src/readme/regen.ts"
+      ]
+    },
+    {
+      "id": "8da79300",
+      "ageSeconds": 521,
+      "status": "duplicate",
+      "title": "Follow-up from [Coordinated dry clean](44451f28): push **blocked** by pre-push `lint:imports` — cannot resolve `src/navi",
+      "speedUpHint": "cancel younger agent id 8da79300",
+      "source": "subagent",
+      "startedAtMs": 1780956632546.7463,
+      "lastActivityMs": 1780956637743.0225,
+      "paths": [
+        "src/navigation/groups",
+        "src/navigation/index.ts"
+      ]
+    },
+    {
+      "id": "term-748794",
+      "ageSeconds": 490,
+      "status": "active",
+      "title": "cd /Users/ceci/github/erpax/erpax && git add -f docs/STANDARDS_INDEX.md && git commit -m \\\"$(cat <<'",
+      "speedUpHint": "—",
+      "source": "terminal",
+      "startedAtMs": 1780956661916,
+      "lastActivityMs": 1780957152233.2383
+    },
+    {
+      "id": "term-589167",
+      "ageSeconds": 365,
+      "status": "duplicate",
+      "title": "cd /Users/ceci/github/erpax/erpax && pnpm exec vitest run --config ./vitest.config.mts src/cli/test.",
+      "speedUpHint": "cancel younger agent id term-589167",
+      "source": "terminal",
+      "startedAtMs": 1780956678869,
+      "lastActivityMs": 1780957044237.9802
+    },
+    {
+      "id": "term-895070",
+      "ageSeconds": 460,
+      "status": "active",
+      "title": "bash /Users/ceci/github/erpax/erpax/scripts/pre-push-uuid.sh 2>&1 | tail -50",
+      "speedUpHint": "—",
+      "source": "terminal",
+      "startedAtMs": 1780956692921,
+      "lastActivityMs": 1780957153173.759
+    },
+    {
+      "id": "term-638338",
+      "ageSeconds": 455,
+      "status": "active",
+      "title": "while ! grep -q exit_code /Users/ceci/.cursor/projects/Users-ceci-github-erpax-erpax/terminals/74879",
+      "speedUpHint": "—",
+      "source": "terminal",
+      "startedAtMs": 1780956695707,
+      "lastActivityMs": 1780957150898.7979
+    },
+    {
+      "id": "term-468294",
+      "ageSeconds": 405,
+      "status": "active",
+      "title": "cd /Users/ceci/github/erpax/erpax && git push -u origin HEAD 2>&1",
+      "speedUpHint": "—",
+      "source": "terminal",
+      "startedAtMs": 1780956745325,
+      "lastActivityMs": 1780957150604.9287
+    },
+    {
+      "id": "term-979727",
+      "ageSeconds": 245,
+      "status": "active",
+      "title": "git -C /Users/ceci/github/erpax/erpax push origin HEAD 2>&1 | tail -40",
+      "speedUpHint": "—",
+      "source": "terminal",
+      "startedAtMs": 1780956906695,
+      "lastActivityMs": 1780957151745.5066
+    },
+    {
+      "id": "term-636994",
+      "ageSeconds": 120,
+      "status": "duplicate",
+      "title": "cd /Users/ceci/github/erpax/erpax && NODE_OPTIONS=\\\"--no-deprecation --max-old-space-size=8000\\\" pnp",
+      "speedUpHint": "cancel younger agent id term-636994",
+      "source": "terminal",
+      "startedAtMs": 1780957027128,
+      "lastActivityMs": 1780957148182.7258
     }
   ],
-  "contentUuid": "53e5ae30-c848-857d-ab39-db83bf0ee4b6"
+  "contentUuid": "fb2484ef-6a6e-854a-9637-d322a00ba90b"
 }

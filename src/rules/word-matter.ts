@@ -7,7 +7,7 @@
  *
  * @see ./index.ts — ../seal/cross-concept
  */
-import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs'
+import { readFileSync, readdirSync, statSync } from 'node:fs'
 import { join, basename } from 'node:path'
 
 const SRC = 'src'

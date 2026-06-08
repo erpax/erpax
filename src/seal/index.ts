@@ -26,7 +26,6 @@ import {
   type DiamondModel,
   type CollectionDiamondModel,
 } from '@/diamond'
-import { HORO_DIGITS } from '@/horo'
 import {
   coordinateAddress,
   coordinateOf,
@@ -39,8 +38,6 @@ import {
 import {
   assertEveryPathFollowed,
   assertPathCanonicallyRecorded,
-  followEveryPath,
-  pathWalkCoverage,
   toAtomPath,
   type PathCanonicalEntry,
   type PathFollowVerdict,

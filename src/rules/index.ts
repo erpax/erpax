@@ -16,12 +16,7 @@ import { seal, type SealVerdict } from '@/seal'
 import { folderGuardians, computedBaseline } from '@/law/folder'
 import { bypassMathViolations } from '@/law/folder/ratchet-compute'
 import { matrixCrackViolations } from '@/matrix'
-import {
-  computeRulesOf,
-  type RulesSnapshot,
-  type TightenedViolation,
-  type RuleAxis,
-} from './compute-rules'
+import { computeRulesOf, type RulesSnapshot } from './compute-rules'
 
 export {
   ACCOUNTING_NEST_MAP,

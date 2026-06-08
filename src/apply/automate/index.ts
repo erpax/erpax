@@ -273,12 +273,13 @@ export function tamperCostOf(
   )
 
   const policy = maxWorkTamperPolicy()
-  const tamperCostLog2 = tamperCostLog2ForCoverage(coverage, policy)
+  const _tamperCostLog2 = tamperCostLog2ForCoverage(coverage, policy)
+  const waveOrdinal = Math.max(1, Math.round(coverage * policy.waveDepth))
   const units: WorkUnit[] = [
     {
       sealedEb: corpus.entropy.totalSealEb,
       paths: corpus.folderCount,
-      waveOrdinal: policy.waveDepth,
+      waveOrdinal,
       receiptSeq: Math.round(coverage * policy.receiptChainDepth),
     },
   ]

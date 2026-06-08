@@ -3,15 +3,15 @@
 
 # reports
 
-path `employees/expense/reports` · uuid `33f75b6c-6e8d-8b5a-a1e5-621576d6c0fb` · diamond `63ec5f43-afa1-8e7f-a3c0-338caa690d30`
-horo `5` `round` · trinity `1·1·1` · sealed `0`
+path `employees/expense/reports` · uuid `86d92138-8dd1-8bcc-ad88-fc6b9b06bac4` · diamond `e20a3d1c-e19d-8956-96d0-0fdea9c369b1`
+horo `7` `descent` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
 links `7/7` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `1·0·0`
 neighbors → accounting·employees·identity·law·projects·proof·standard·transaction · ← accounting·employees·identity·law·projects·proof·standard·transaction
-analysis —
+analysis diamond·hallucination·purity
 law no expense claim reimburses without passing the SOX §404 four-eyes approval chain (claimant ≠ approver), GL-coded and FX-converted before it posts.
 
 ---
 
-<sub>content-uuid `e8078127-f50f-89f6-b09b-5f9f81b448f0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f2c1166a-f9fe-89b3-ab67-5e106ad339b0` · `pnpm readme` · `pnpm computed:check`</sub>

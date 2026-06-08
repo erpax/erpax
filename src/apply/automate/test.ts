@@ -69,8 +69,9 @@ const mockCorpus = (sealed: number, total: number, bond: number): CorpusAnalytic
 
 describe('tamperCostOf — monotone corpus signals', () => {
   it('rises when sealed coverage increases', () => {
-    const low = tamperCostOf(mockCorpus(10, 100, 5))
-    const high = tamperCostOf(mockCorpus(50, 100, 5))
+    const vfd = { violationFloorDistance: 50 }
+    const low = tamperCostOf(mockCorpus(10, 100, 5), undefined, vfd)
+    const high = tamperCostOf(mockCorpus(50, 100, 5), undefined, vfd)
     expect(high.product).toBeGreaterThanOrEqual(low.product)
     expect(high.contentUuidPct).toBeGreaterThan(low.contentUuidPct)
   })
@@ -83,11 +84,12 @@ describe('tamperCostOf — monotone corpus signals', () => {
       `${JSON.stringify({
         _law: 'test',
         cycleId: 'prior',
-        tamper: { product: 200 },
+        tamper: { product: 999_999 },
       })}\n`,
     )
-    const report = tamperCostReport(mockCorpus(5, 100, 3), cwd)
-    expect(report.priorProduct).toBe(200)
+    const report = tamperCostReport(mockCorpus(5, 100, 3), cwd, { violationFloorDistance: 10 })
+    expect(report.priorProduct).toBe(999_999)
+    expect(report.product).toBeLessThan(999_999)
     expect(report.monotone).toBe(false)
     rmSync(cwd, { recursive: true, force: true })
   })

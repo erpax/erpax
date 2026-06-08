@@ -3,8 +3,8 @@
 
 # requests
 
-path `data/subject/requests` · uuid `5e312305-07d3-8245-9597-7228bc4dc0a2` · diamond `360ac082-50df-8f57-a04e-a145f56b7400`
-horo `5` `round` · trinity `1·1·1` · sealed `0`
+path `data/subject/requests` · uuid `5124ff31-80d9-898f-aa6f-534c20ed4fba` · diamond `a9105938-5968-87d8-9539-e9703d7defbf`
+horo `7` `descent` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/auto/set/timestamp·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
 links `4/4` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `30e641b4-5339-86b5-9abc-9a132ae7942a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7c25570f-52ee-8561-88eb-5f9227626fc3` · `pnpm readme` · `pnpm computed:check`</sub>

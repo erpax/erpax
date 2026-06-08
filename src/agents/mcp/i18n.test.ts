@@ -36,7 +36,7 @@ describe('resolveLocalized', () => {
     expect(resolveLocalized({ bg: 'Здр', de: 'Hallo' }, 'fr')).toBe('Здр')
   })
   it('returns empty string when given a null/undefined map', () => {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+     
     expect(resolveLocalized(undefined as any)).toBe('')
   })
 })

@@ -3,8 +3,8 @@
 
 # requests
 
-path `employees/leave/requests` · uuid `3feea78f-cac3-84ea-a33f-e3d6cc1da4d6` · diamond `36db970e-3c4d-8de2-b35c-aab7b03a8f71`
-horo `1` `base` · trinity `1·1·1` · sealed `0`
+path `employees/leave/requests` · uuid `9b7ea0d1-c546-8e1d-88eb-93f1ec3d32eb` · diamond `6c8126a0-0db0-88c3-8aae-e4bd71ea64e0`
+horo `5` `round` · trinity `1·1·1` · sealed `0`
 imports @/base/accounting/field·@/factory · exports default · escapes —
 links `6/6` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law one row per employee leave request — its approval decrements the entitleme
 
 ---
 
-<sub>content-uuid `d142b959-e69d-8722-bcf5-33c2a9c9b227` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0de5e2c9-1093-813b-8237-f1607978aaad` · `pnpm readme` · `pnpm computed:check`</sub>

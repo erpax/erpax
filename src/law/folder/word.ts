@@ -13,7 +13,7 @@
 import { existsSync, mkdirSync, readFileSync, readdirSync, statSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { linksOf } from '@/typography/links'
-import { NAV_HUBS, ROOT_PIVOTS, type NavHub } from '@/navigation/groups'
+import { ROOT_PIVOTS, type NavHub } from '@/navigation/groups'
 import { type DiamondModel } from '@/diamond'
 import { finishedIdeaCrossed } from '@/seal'
 

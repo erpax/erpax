@@ -3,15 +3,15 @@
 
 # enumeration
 
-path `medical/enumeration` · uuid `ec2676fb-3246-82bd-9583-0f36c7fbfb50` · diamond `85428f0c-2068-8017-a8bd-e8696329cc8f`
-horo `7` `descent` · trinity `1·1·1` · sealed `0`
+path `medical/enumeration` · uuid `28040468-bf0d-8024-99c0-b33e03dcd388` · diamond `43d14dcf-80ec-885e-993b-3cbeef0f32d8`
+horo `4` `weave` · trinity `1·1·1` · sealed `1`
 imports — · exports const·stub · escapes —
-links `5/5` · folded `0` · bonds in `43` out `43`
+links `5/5` · folded `1` · bonds in `44` out `44`
 faces worker·plugin·pwa `1·0·0`
-neighbors → adult·aspect·attendance·availability·benefit·body·certification·component·digital·efficiency·energy·eu·event·fees·fulfillment·game·group·health·iptc·label·law·manipulation·measurement·media·medical·merchant·method·mode·oriented·platform·price·product·rating·refund·return·size·source·star·status·system·tier·type·wearable · ← adult·aspect·attendance·availability·benefit·body·certification·component·digital·efficiency·energy·eu·event·fees·fulfillment·game·group·health·iptc·label·law·manipulation·measurement·media·medical·merchant·method·mode·oriented·platform·price·product·rating·refund·return·size·source·star·status·system·tier·type·wearable
-analysis diamond·hallucination·purity
+neighbors → adult·aspect·attendance·availability·benefit·body·certification·component·digital·efficiency·energy·enumeration·eu·event·fees·fulfillment·game·group·health·iptc·label·law·manipulation·measurement·media·medical·merchant·method·mode·oriented·platform·price·product·rating·refund·return·size·source·star·status·system·tier·type·wearable · ← adult·aspect·attendance·availability·benefit·body·certification·component·digital·efficiency·energy·enumeration·eu·event·fees·fulfillment·game·group·health·iptc·label·law·manipulation·measurement·media·medical·merchant·method·mode·oriented·platform·price·product·rating·refund·return·size·source·star·status·system·tier·type·wearable
+analysis —
 law medical/enumeration names enumeration under medical — one word, content-addressed, nested not duplicated.
 
 ---
 
-<sub>content-uuid `a7f34ba0-fdfe-8ef8-8ece-2c75c673d844` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `f41d1bbf-31bf-8eec-a891-793c47c45d97` · `pnpm readme` · `pnpm computed:check`</sub>

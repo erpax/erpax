@@ -3,9 +3,9 @@
 
 # communication
 
-path `agent/communication` · uuid `9eaa988d-1640-83ba-a817-9fe464523e67` · diamond `d5800591-98b8-8ec0-8d56-915dcb7475d1`
-horo `5` `round` · trinity `1·1·1` · sealed `0`
-imports @/communication · exports const·sameMessage · escapes —
+path `agent/communication` · uuid `63db2c08-d526-8e07-ba2a-12026256f29f` · diamond `4a0eda46-ab15-8cf3-a021-30da29e6cb2f`
+horo `2` `share` · trinity `1·1·1` · sealed `0`
+imports @/communication · exports REALTIME_DEFAULT·automateDirectionPath·bindWatchRealtime·cleanDirectionPath·const·emitInventoryStalePush·formatRealtimeChannelsReport·improveDirectionPath·inventoryWatchPath·isRealtimeEnabled·listActiveRealtimeChannels·publish·realtimeChannelFor·realtimeDoctorLine·sameMessage·sessionApplyPath·strictApplyPath·subscribe·type·violationsWatchPath · escapes —
 links `12/12` · folded `1` · bonds in `15` out `15`
 faces worker·plugin·pwa `1·0·0`
 neighbors → channel·chat·chat·chat·communication·communication·key·law·merge·message·quantum·send·superdense·teleportation·uuid · ← channel·chat·chat·chat·communication·communication·key·law·merge·message·quantum·send·superdense·teleportation·uuid
@@ -14,4 +14,4 @@ law an agent-to-agent message IS its content-[[uuid]], and relaying preserves th
 
 ---
 
-<sub>content-uuid `ee655d19-6d35-8199-aae7-4415312adde9` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ce23ae92-f359-8392-97a6-8c3c0da5348a` · `pnpm readme` · `pnpm computed:check`</sub>

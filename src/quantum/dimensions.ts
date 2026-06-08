@@ -11,7 +11,7 @@
  * @see ./index.ts — ../superposition — ../horo — ../typography — ../diamond — ./serverless
  */
 import { HORO_DIGITS, HORO_MEASURE, type HoroStep } from '@/horo'
-import { superpose, total, collapse as collapse1D, uniform } from '@/superposition'
+import { total, collapse as collapse1D, uniform } from '@/superposition'
 import { computeDiamond, deploymentFaces, type DiamondModel } from '@/diamond'
 import { uuid, jcsCanonicalize } from '@/integrity'
 import { UUID_MATRIX_NODES as N, verifyRoot } from '@/uuid/matrix'

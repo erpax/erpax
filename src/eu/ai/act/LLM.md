@@ -3,8 +3,8 @@
 
 # act
 
-path `eu/ai/act` · uuid `d2920fce-f7be-8062-ba7d-6b69969813d8` · diamond `96a9f50f-cca7-8ac1-831d-3a15135de28a`
-horo `4` `weave` · trinity `1·1·1` · sealed `0`
+path `eu/ai/act` · uuid `dba90e6f-cb9a-85fc-a730-8ba6eb273396` · diamond `ccdd17dd-4bf2-8d58-8a43-51f734a7c068`
+horo `1` `base` · trinity `1·1·1` · sealed `0`
 imports — · exports EuAiActRiskClass·const · escapes —
 links `1/1` · folded `1` · bonds in `1` out `1`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law the registry of the four-class AI risk taxonomy (minimal/limited/high/prohib
 
 ---
 
-<sub>content-uuid `f311ff94-1bfc-8e79-8c8c-ff13c3512eed` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `1cd5d01e-5f93-8d1a-a318-de6ac05b214d` · `pnpm readme` · `pnpm computed:check`</sub>

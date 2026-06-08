@@ -8,7 +8,7 @@
  * Uuid-pure stack lives in ./index.ts (`pnpm confirm:uuid`).
  */
 import { readFileSync, existsSync, readdirSync, statSync } from 'node:fs'
-import { join, dirname, basename, relative } from 'node:path'
+import { join, basename, relative } from 'node:path'
 import { execSync } from 'node:child_process'
 import { createRequire } from 'node:module'
 import { GATE_LANES } from '@/cli/gate'

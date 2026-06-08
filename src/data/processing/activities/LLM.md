@@ -3,8 +3,8 @@
 
 # activities
 
-path `data/processing/activities` · uuid `02336b30-a4c2-8230-8598-0d81cf0d216d` · diamond `7f6455be-ba91-88b5-9187-7e0dd8f5feec`
-horo `8` `crest` · trinity `1·1·1` · sealed `0`
+path `data/processing/activities` · uuid `0f3b39a3-073f-81e5-8459-26a7ec54eb0e` · diamond `331c93c9-229e-8b5b-ad6a-4cf48526d3e3`
+horo `2` `share` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
 links `7/7` · folded `1` · bonds in `17` out `17`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `a9b180d3-6b16-8ea1-9be7-a88b88a0c664` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `69546663-fa29-8027-a408-af95349f3ce3` · `pnpm readme` · `pnpm computed:check`</sub>

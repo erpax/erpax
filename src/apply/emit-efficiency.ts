@@ -10,13 +10,13 @@ import { existsSync, readFileSync, unlinkSync, writeFileSync } from 'node:fs'
 import { dirname, join, relative } from 'node:path'
 import type { EfficiencyStore } from './efficiency'
 
-const OUT = join(process.cwd(), 'src', 'apply', 'efficiency.generated.json')
+const _OUT = join(process.cwd(), 'src', 'apply', 'efficiency.generated.json')
 const HAND = join(process.cwd(), 'src', 'apply', 'efficiency.json')
 
 const STORE_LAW =
   'efficiency UP only — each pass must improve vs prior snapshot; regressions require documented exceptions'
 
-function bootstrapStore(cwd: string): EfficiencyStore {
+function bootstrapStore(_cwd: string): EfficiencyStore {
   if (existsSync(HAND)) {
     const parsed = JSON.parse(readFileSync(HAND, 'utf8')) as EfficiencyStore
     return {

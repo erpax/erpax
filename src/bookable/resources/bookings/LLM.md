@@ -3,8 +3,8 @@
 
 # bookings
 
-path `bookable/resources/bookings` · uuid `9e4e03ce-cece-89a8-aee8-6e43ad1233f0` · diamond `afc53a5e-3fd6-8e7e-b575-dd7b13d91087`
-horo `2` `share` · trinity `1·1·1` · sealed `0`
+path `bookable/resources/bookings` · uuid `22b2d163-3e08-845b-a74d-0134e455b413` · diamond `88381b9f-7f6a-80bd-8a04-46eccb6cbf72`
+horo `4` `weave` · trinity `1·1·1` · sealed `0`
 imports @/audit/trail/after/change·@/auth·@/auto/populate/created/by·@/auto/populate/tenant·@/auto/set/timestamp·@/base/accounting/field · exports default · escapes —
 links `9/9` · folded `1` · bonds in `9` out `8`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law a booking is the canonical reservation event against a [[bookable/resources]
 
 ---
 
-<sub>content-uuid `fe32e85f-12bc-8b60-80cb-689213c09466` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `bb1caa60-258e-8f47-b467-9ef1cc4f5a23` · `pnpm readme` · `pnpm computed:check`</sub>

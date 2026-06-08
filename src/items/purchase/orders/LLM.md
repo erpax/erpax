@@ -3,8 +3,8 @@
 
 # orders
 
-path `items/purchase/orders` · uuid `34b025bb-5eb3-8a5f-900b-b0e35c3684fd` · diamond `e89e2a94-712d-843f-adad-9f9368d6753f`
-horo `2` `share` · trinity `1·1·1` · sealed `0`
+path `items/purchase/orders` · uuid `22d7356f-75b3-83eb-9209-4301c14da918` · diamond `6861eb25-c9c1-84d7-b87d-b5e110c7ff2f`
+horo `8` `crest` · trinity `1·1·1` · sealed `0`
 imports @/audit/trail/after/change·@/auth·@/auto/populate/created/by·@/auto/populate/tenant·@/auto/set/timestamp·@/base/accounting/field·@/chain/event/emitter·@/enforce/segregation/of/duty · exports default · escapes —
 links `7/7` · folded `1` · bonds in `19` out `19`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law a purchase order is the vendor purchase commitment and first leg of the thre
 
 ---
 
-<sub>content-uuid `9cb5ebb8-9d5d-8448-89ed-14de45e6a134` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `db95f6ed-8864-8929-a8a4-003872b101ae` · `pnpm readme` · `pnpm computed:check`</sub>

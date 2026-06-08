@@ -3,8 +3,8 @@
 
 # measurements
 
-path `fair/value/measurements` · uuid `0ac2fc80-78e6-89da-865e-8f15510a01f2` · diamond `e253a418-7b76-8009-b8bf-078c06e3a915`
-horo `5` `round` · trinity `1·1·1` · sealed `0`
+path `fair/value/measurements` · uuid `979a7927-40dc-88a5-8a26-76727b2e67ba` · diamond `aff072b3-05f1-87ad-8d26-df3c2529e82f`
+horo `4` `weave` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
 links `7/7` · folded `1` · bonds in `13` out `13`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law each fair-value measurement is classified into exactly one IFRS 13 hierarchy
 
 ---
 
-<sub>content-uuid `df716da5-2af1-8321-b4f9-90ffce9dfde1` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `176f7ea4-7827-8e75-a211-915f30ddaffe` · `pnpm readme` · `pnpm computed:check`</sub>

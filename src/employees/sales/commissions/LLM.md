@@ -3,8 +3,8 @@
 
 # commissions
 
-path `employees/sales/commissions` · uuid `f4396700-7fcd-8393-a501-47af5dd169cb` · diamond `eaceee92-ab7c-8652-921b-78342982bdeb`
-horo `4` `weave` · trinity `1·1·1` · sealed `0`
+path `employees/sales/commissions` · uuid `14248f26-2fd7-8c28-a47a-b0f2bdedb741` · diamond `668ef336-875f-81e1-b446-398a99bf3a89`
+horo `5` `round` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
 links `7/7` · folded `1` · bonds in `11` out `11`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law every closed-won commission is an IFRS-15 §91-94 incremental cost double-en
 
 ---
 
-<sub>content-uuid `7b3f1093-dc2a-8e74-b57d-4d6062b0dcc6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `da47f98f-9f77-8e79-a1de-53789874d3e8` · `pnpm readme` · `pnpm computed:check`</sub>

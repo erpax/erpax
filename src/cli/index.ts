@@ -7,7 +7,7 @@ import { runDoctor } from './doctor'
 import { printHelp, printUnknownHint, suggestNearestAction } from './help'
 import { runGate, runShell } from './gate'
 import { runRulesCheck } from './rules-check'
-import { CLI_REGISTRY, LEGACY_ALIASES, listDomains, resolveAction } from './registry'
+import { CLI_REGISTRY, LEGACY_ALIASES, resolveAction } from './registry'
 
 function resolveLegacyColon(domain: string, action?: string): { modern: string; argv: string[] } | undefined {
   const key = action ? `${domain}:${action}` : domain

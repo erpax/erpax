@@ -3,15 +3,15 @@
 
 # organization
 
-path `medical/organization` · uuid `b98666cc-d7a9-89c8-983f-880e9f727c9d` · diamond `d322e48c-6674-8ffd-8544-7bfada4a448a`
-horo `8` `crest` · trinity `1·1·1` · sealed `0`
+path `medical/organization` · uuid `e4a274cf-1121-84f5-a5cd-3fa65bf8dc94` · diamond `9ecb1563-5c4b-862f-87c5-cd3dd944b581`
+horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports — · exports const·stub · escapes —
-links `5/5` · folded `0` · bonds in `26` out `26`
+links `5/5` · folded `1` · bonds in `27` out `27`
 faces worker·plugin·pwa `1·0·0`
-neighbors → archive·authenticator·brand·broadcaster·consortium·cooperative·corporation·educational·government·hiring·hosting·isic·law·media·medical·news·parent·plumber·rescue·research·role·search·source·sports·sub·tenant · ← archive·authenticator·brand·broadcaster·consortium·cooperative·corporation·educational·government·hiring·hosting·isic·law·media·medical·news·parent·plumber·rescue·research·role·search·source·sports·sub·tenant
-analysis diamond·hallucination·purity
+neighbors → archive·authenticator·brand·broadcaster·consortium·cooperative·corporation·educational·government·hiring·hosting·isic·law·media·medical·news·organization·parent·plumber·rescue·research·role·search·source·sports·sub·tenant · ← archive·authenticator·brand·broadcaster·consortium·cooperative·corporation·educational·government·hiring·hosting·isic·law·media·medical·news·organization·parent·plumber·rescue·research·role·search·source·sports·sub·tenant
+analysis —
 law medical/organization names organization under medical — one word, content-addressed, nested not duplicated.
 
 ---
 
-<sub>content-uuid `01f0fecb-24b4-831b-9495-1d1217ab4746` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e6ede417-a3e7-8666-8530-5fd86c520bed` · `pnpm readme` · `pnpm computed:check`</sub>

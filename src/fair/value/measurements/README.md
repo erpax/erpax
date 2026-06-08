@@ -2,7 +2,7 @@
 
 # measurements
 
-> atom `fair/value/measurements` · horo `5` `round` · [[balance]] `1` · [[seal]] `0`
+> atom `fair/value/measurements` · horo `4` `weave` · [[balance]] `1` · [[seal]] `0`
 
 ## [[debit]] · [[credit]]
 
@@ -44,8 +44,8 @@ collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc s
 ### seal
 
 - path follow `1` · receipt `1` · sealed `0`
-- entry uuids `1bbe03dc-9fdc-8801-a336-83546c744ab7` · `4d6b6262-eb34-8678-b5bc-bdfa551d4b43` · `bc16cf90-4c1b-84c6-b070-f930ba576ae6`
-- content uuids `288dc1f2-1544-84c7-93bf-a4255b59dea0` · `de371a4e-906e-80c6-8c35-21b80378098f` · `f36ea8c2-180f-8bc6-902b-0fb5bbab25fd`
+- entry uuids `3b1b481f-d77d-86bc-9f39-62e89faaae4d` · `54deea53-c4cb-84d6-bc35-8925abda9eb7` · `67cea018-1bc7-8b98-990e-b48a2e760e36`
+- content uuids `288dc1f2-1544-84c7-93bf-a4255b59dea0` · `cf2d7033-01ee-829e-bdb0-80167143e110` · `f36ea8c2-180f-8bc6-902b-0fb5bbab25fd`
 
 ## [[entropy]] — gaps · seals
 
@@ -60,22 +60,22 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 |  | [[seal]]/[[trinity]]/proof `1` eb |
 |  | [[seal]]/[[lattice]]/folded `1` eb |
 |  | [[seal]]/[[links]]/resolved `1` eb |
-|  | [[seal]]/[[horo]]/ring `0.5` eb |
+|  | [[seal]]/[[horo]]/ring `0.4` eb |
 |  | [[seal]]/[[identity]]/uuid `1` eb |
 |  | [[seal]]/[[boundary]]/barrel `1` eb |
 |  | [[seal]]/[[typography]]/partition `1` eb |
 |  | [[seal]]/[[balance]]/zero `1` eb |
 |  | [[seal]]/[[gravity]]/held `1` eb |
 |  | [[seal]]/[[diamond]]/membership `1` eb |
-| Σ gap `2` eb | Σ seal `11.5` eb |
+| Σ gap `2` eb | Σ seal `11.4` eb |
 
-> net residual `-9.5` eb · seal/gap ratio `5.75` · [[entropy]] · [[seal]]
+> net residual `-9.4` eb · seal/gap ratio `5.7` · [[entropy]] · [[seal]]
 
 ## typography graph
 
 - partition `fair` · sub-root `979a7927-40dc-88a5-8a26-76727b2e67ba`
 - bond degree `40` · analysis neighbors —
-- graph root `fe3c01f8-de78-8f0f-b8e6-1abc91cb1d02`
+- graph root `a0b4e6a6-0230-8b95-a98c-2d4cf71fcc77`
 
 ## [[cloudflare]] bindings
 
@@ -130,19 +130,19 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 
 | state | count | share % |
 | ----- | ----: | ------: |
-| ring·5 | 1 | 100 |
+| ring·4 | 1 | 100 |
 | **Σ** | **1** | **100** |
 
 
 ## analytics
 
-- bond degree `40` · sealed `0` · horo `5`
+- bond degree `40` · sealed `0` · horo `4`
 - variance `0` · balanced `1` · trinity sum `3`
 - bindings `0` · standards `12`
 
 ## identity
 
-- uuid `0ac2fc80-78e6-89da-865e-8f15510a01f2`
+- uuid `979a7927-40dc-88a5-8a26-76727b2e67ba`
 - bonds in `13` · out `13`
 - trinity form·code·proof `1`·`1`·`1`
 - links `7` / `7`
@@ -154,4 +154,4 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 
 ---
 
-<sub>content-uuid `ff8176ac-1326-813f-9aca-751dcd7cc5cd` · framed by typography partition `fair` bonds `40` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `91b4542b-62c9-85b8-9aa3-d68a3c14cf72` · framed by typography partition `fair` bonds `40` · `pnpm readme` · `pnpm readme:check`</sub>

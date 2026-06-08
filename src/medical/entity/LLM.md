@@ -3,15 +3,15 @@
 
 # entity
 
-path `medical/entity` · uuid `86e0a0fb-2a57-8e61-8b58-09a26a911b9c` · diamond `de7313e5-5575-873f-8d1e-4fb05362dc2f`
-horo `2` `share` · trinity `1·1·1` · sealed `0`
+path `medical/entity` · uuid `67f429bb-5c0c-8cf1-9828-5896fc7a24c8` · diamond `34736f73-0baa-8bf4-99e9-a28771b2eb28`
+horo `1` `base` · trinity `1·1·1` · sealed `1`
 imports — · exports const·stub · escapes —
-links `5/5` · folded `0` · bonds in `16` out `16`
+links `5/5` · folded `1` · bonds in `17` out `17`
 faces worker·plugin·pwa `1·0·0`
-neighbors → bio·business·chem·collapse·encoded·encodes·has·law·main·medical·merge·molecular·page·part·sti·type · ← bio·business·chem·collapse·encoded·encodes·has·law·main·medical·merge·molecular·page·part·sti·type
-analysis diamond·hallucination·purity
+neighbors → bio·business·chem·collapse·encoded·encodes·entity·has·law·main·medical·merge·molecular·page·part·sti·type · ← bio·business·chem·collapse·encoded·encodes·entity·has·law·main·medical·merge·molecular·page·part·sti·type
+analysis —
 law medical/entity names entity under medical — one word, content-addressed, nested not duplicated.
 
 ---
 
-<sub>content-uuid `1870ccd0-8cc4-830a-b827-d0580d2394a8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d237a33f-d204-8b8a-99ae-15b1ef391ffd` · `pnpm readme` · `pnpm computed:check`</sub>

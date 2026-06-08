@@ -13,7 +13,7 @@ const run = (
 ): Record<string, unknown> => {
   const hook = warnLotWorkPhaseFunnel as CollectionBeforeChangeHook
   const req = { payload: { logger: { warn } } }
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+   
   return hook({ data, req, operation: 'create' } as any) as Record<string, unknown>
 }
 

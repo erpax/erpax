@@ -36,7 +36,7 @@ import {
 import { methodPath, atomPathOf, parseMethodExports, type MethodDiamond } from '@/method'
 import { computeBoundary, type FileBoundary } from '@/quantum/boundary'
 import { linksOf } from '@/typography'
-import { HORO_DIGITS, type HoroState } from '@/horo'
+import { type HoroState } from '@/horo'
 import { horoCrossed } from '@/uuid/matrix'
 import {
   type DiamondModel,

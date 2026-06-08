@@ -3,8 +3,8 @@
 
 # cycles
 
-path `invoices/dunning/cycles` · uuid `211c9446-d7e8-871a-accf-4c96fea5de1b` · diamond `571eecef-520c-8fc5-9aae-90c2925d8a97`
-horo `1` `base` · trinity `1·1·1` · sealed `0`
+path `invoices/dunning/cycles` · uuid `cafad642-0c4e-8b5c-a888-c0e91fc966d5` · diamond `8629ad1c-9953-82ab-93de-9c7ee038ec2b`
+horo `2` `share` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/auto/set/timestamp·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
 links `5/5` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law each overdue invoice carries one dunning-cycle record advancing reminder→d
 
 ---
 
-<sub>content-uuid `50f9c88c-b33f-8194-b066-446b5d0c0286` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `deb7e631-6405-8d8a-ad1c-50327fa02561` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -132,14 +132,6 @@ const flattenHandMaintained = (checks: readonly ComputedFaceCheck[]): string[] =
     c.violations.map((v) => `hand-maintained: ${c.face} (${c.deriveFn}) — ${v}`),
   )
 
-const isFile = (p: string): boolean => {
-  try {
-    return statSync(p).isFile()
-  } catch {
-    return false
-  }
-}
-
 const walkTs = (dir: string, cwd: string, out: string[]): void => {
   let entries: string[]
   try {

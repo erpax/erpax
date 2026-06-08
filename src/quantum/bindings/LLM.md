@@ -3,9 +3,9 @@
 
 # bindings
 
-path `quantum/bindings` · uuid `9eee0b75-9852-85b6-99d7-3246ada8aa20` · diamond `804f7976-0539-8e21-8d39-da8fc89a5c65`
+path `quantum/bindings` · uuid `9eee0b75-9852-85b6-99d7-3246ada8aa20` · diamond `7c9fafca-3cb6-830b-9899-e072c984b289`
 horo `7` `descent` · trinity `1·1·1` · sealed `1`
-imports @/cloudflare·@/path · exports function · escapes —
+imports @/cloudflare·@/path · exports const·function · escapes —
 links `42/42` · folded `1` · bonds in `19` out `19`
 faces worker·plugin·pwa `1·0·0`
 neighbors → binding·bindings·cache·config·currency·deploy·deploy·dev·harden·identity·jobs·law·manufacturing·mcp·plugins·search·signal·sufficient·supto · ← binding·bindings·cache·config·currency·deploy·deploy·dev·harden·identity·jobs·law·manufacturing·mcp·plugins·search·signal·sufficient·supto
@@ -14,4 +14,4 @@ law attach-all is safe only because each call is gated — a binding is a capabi
 
 ---
 
-<sub>content-uuid `666217a2-505d-8ae5-8adb-0adca2396c2c` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `509fa2b7-8d71-84ab-842c-9fe4d1a59956` · `pnpm readme` · `pnpm computed:check`</sub>

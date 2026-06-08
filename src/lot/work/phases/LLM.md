@@ -3,8 +3,8 @@
 
 # phases
 
-path `lot/work/phases` · uuid `3b89cf16-da9c-86b6-912b-fc2543d4decf` · diamond `fbfa8cfa-6af1-8894-9a86-afd2701ca071`
-horo `4` `weave` · trinity `1·1·1` · sealed `0`
+path `lot/work/phases` · uuid `2d73e207-3367-84e0-a6a5-fbc94dabae26` · diamond `b00c90c8-0862-897f-9b9e-dcbe4ffb9ec3`
+horo `7` `descent` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports const·default · escapes —
 links `19/19` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law a routing step is one sort-ordered position in a [[lots|lot]]'s phase chain 
 
 ---
 
-<sub>content-uuid `04999b3d-b289-8ee2-9f1a-afdf324b0a88` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `71127eb2-b967-88ac-8101-4eeb2ac5d1ca` · `pnpm readme` · `pnpm computed:check`</sub>

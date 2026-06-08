@@ -3,15 +3,15 @@
 
 # rules
 
-path `gl/posting/rules` · uuid `f001701f-610d-8b8d-b7bf-bf633a4a9a1d` · diamond `a12bcc40-e643-8911-adc2-1dc4acf10502`
-horo `2` `share` · trinity `1·1·1` · sealed `0`
+path `gl/posting/rules` · uuid `0efd4b29-0ed8-82e5-85f6-cb2aa44889dd` · diamond `eb56c3b4-39cf-8bff-b2f3-d3abc36de74c`
+horo `1` `base` · trinity `1·1·1` · sealed `0`
 imports @/auth · exports const · escapes —
-links `3/3` · folded `1` · bonds in `14` out `14`
+links `3/3` · folded `1` · bonds in `19` out `19`
 faces worker·plugin·pwa `0·0·0`
-neighbors → accounting·accounting·confirm·convention·diamond·folder·gate·guardian·law·path·readme·rule·rules·seal · ← accounting·accounting·confirm·convention·diamond·folder·gate·guardian·law·path·readme·rule·rules·seal
+neighbors → accounting·accounting·agent·apply·confirm·convention·diamond·folder·gate·guardian·law·navigation·path·readme·rule·rules·seal·thought·violations · ← accounting·accounting·agent·apply·confirm·convention·diamond·folder·gate·guardian·law·navigation·path·readme·rule·rules·seal·thought·violations
 analysis diamond
 law each GL account carries its validation-metadata — type, normal debit/credit polarity, balance-sheet-vs-P&L category, reconciliation frequency, cash-flow relevance, close flag — that drives double-entry validation ([[accounting]], [[balance]]).
 
 ---
 
-<sub>content-uuid `3d0d4f3f-4e20-8a8b-add6-6f535c372e63` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `e62220b1-ddad-8fdc-b177-b453d95dde7e` · `pnpm readme` · `pnpm computed:check`</sub>

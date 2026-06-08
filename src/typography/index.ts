@@ -79,7 +79,6 @@ const FRONTMATTER = /^---\n([\s\S]*?)\n---/
 // Fresh (per-call) global regexes — a module-level global regex would leak its
 // lastIndex between .test() and .matchAll() (a stateful-regex bug). Stateless here.
 const headingRe = (): RegExp => /^(#{1,6})\s+(.+?)\s*$/gm
-const wikilinkRe = (): RegExp => /\[\[([^\]]+)\]\]/g
 
 /** The H1 (`# title`) text of a page, or '' when none. */
 export const titleOf = (text: string): string => {

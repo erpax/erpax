@@ -120,7 +120,7 @@ const STORE_LAW =
 
 const isFiniteN = (n: number): boolean => Number.isFinite(n) && n >= 0
 
-const emptyMetrics = (): EfficiencyMetrics => ({
+const _emptyMetrics = (): EfficiencyMetrics => ({
   skillContextBytes: 0,
   rulesOfMs: 0,
   readmeWaveDurationMs: 0,

@@ -3,8 +3,8 @@
 
 # fusion
 
-path `dual/torus/fusion` · uuid `eb407e89-e0db-8de3-82c1-1e9abb650cf0` · diamond `3aa085cb-7c36-8a1c-b1a6-2de112970025`
-horo `4` `weave` · trinity `1·1·1` · sealed `0`
+path `dual/torus/fusion` · uuid `52a4990a-6001-80f0-b1ea-5613589774da` · diamond `c88dcfc4-a70e-862d-88e8-dd9ce5abbce8`
+horo `2` `share` · trinity `1·1·1` · sealed `0`
 imports @/quantum·@/uuid/matrix · exports const · escapes —
 links `9/9` · folded `1` · bonds in `33` out `33`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law the quantum cross is the fusion of a dual torus — `fuse` merges two poles 
 
 ---
 
-<sub>content-uuid `05e756c4-b0ac-878a-8c64-2ce6790fda1b` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `29f8adfd-21d2-8faf-a50b-988d9b10be72` · `pnpm readme` · `pnpm computed:check`</sub>

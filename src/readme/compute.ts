@@ -64,6 +64,7 @@ import {
   renderFolderEntropySection,
   type CorpusEntropyRollup,
   type FolderEntropyAccounting,
+  type CorpusEntropyRenderOpts,
 } from './entropy'
 import {
   aggregateCorpusQuantumThinking,
@@ -372,6 +373,7 @@ export function renderForAiAssistantsSection(): readonly string[] {
 export function renderReadme(
   model: ReadmeModel,
   models?: readonly FolderReadmeModel[],
+  entropyRender?: CorpusEntropyRenderOpts,
 ): string {
   const uuid = readmeUuid(model)
   const L: string[] = []
@@ -435,16 +437,8 @@ export function renderReadme(
   for (const row of model.analytics.byHoro) {
     L.push(`| ${row.digit} | ${row.measure} | ${row.atoms} | ${row.sealed} |`)
   }
-  const rulesSnapshot = rulesOf(process.cwd(), { force: true })
-  const violationCount = rulesSnapshot.axes.reduce((s, a) => s + a.violations, 0)
-  const effLatest = loadEfficiencyStore(process.cwd()).latest
-  L.push(
-    '',
-    renderCorpusEntropySection(model.analytics.entropy, {
-      violationCount,
-      workTamperProduct: effLatest?.workTamperProduct ?? 0,
-    }),
-  )
+  const entropyOpts = entropyRender ?? readmeCorpusEntropyRenderOpts()
+  L.push('', renderCorpusEntropySection(model.analytics.entropy, entropyOpts))
   L.push('', renderCorpusQuantumThinkingSection(model.analytics.quantumThinking))
   if (model.papers.total > 0) {
     L.push('', renderMergedPapersSection(model.papers))
@@ -596,6 +590,18 @@ export interface ReadmeCorpusFrozenInputs {
   readonly graph: AnalysisTypographyGraph
   readonly ctx: FolderReadmeContext
   readonly at: string
+  readonly entropyRender: CorpusEntropyRenderOpts
+}
+
+/** Live rules + efficiency snapshot for corpus entropy footer — freeze once per pass. */
+export function readmeCorpusEntropyRenderOpts(cwd: string = process.cwd()): CorpusEntropyRenderOpts {
+  const rulesSnapshot = rulesOf(cwd, { force: true })
+  const violationCount = rulesSnapshot.axes.reduce((s, a) => s + a.violations, 0)
+  const effLatest = loadEfficiencyStore(cwd).latest
+  return {
+    violationCount,
+    workTamperProduct: effLatest?.workTamperProduct ?? 0,
+  }
 }
 
 export interface ReadmeCorpusContextOpts {
@@ -612,8 +618,9 @@ export function buildReadmeCorpusFrozenInputs(
 ): ReadmeCorpusFrozenInputs {
   const graph = buildReadmeTypographyGraph(cwd)
   const at = readmeCorpusFrozenAt(graph)
+  const entropyRender = readmeCorpusEntropyRenderOpts(cwd)
   const ctx = buildReadmeCorpusContext(cwd, { ...opts, frozenAt: at, frozenGraph: graph })
-  return { graph, ctx, at }
+  return { graph, ctx, at, entropyRender }
 }
 
 /** Render root README from wave inputs — reuse frozen graph + receipt chain. */
@@ -623,7 +630,7 @@ export function renderRootReadmeInWaves(
   onWave?: (ordinal: number, itemCount: number) => void,
 ): string {
   const { analytics, papers, models } = deriveReadmeRootInputsInWaves(cwd, onWave, frozen)
-  return renderReadme(deriveModel(cwd, analytics, papers), models)
+  return renderReadme(deriveModel(cwd, analytics, papers), models, frozen.entropyRender)
 }
 
 /** Drift gate — two consecutive wave derives must be byte-identical (frozen quantum inputs). */

@@ -21,16 +21,6 @@
  */
 import { entanglement as matrixEntanglement } from '@/quantum'
 import { reciprocity, isFullyEntangled, noCloning } from '@/entanglement'
-import {
-  COLLAPSE_HOOKS,
-  FIELD_ENTANGLEMENT_REGISTRY,
-  fieldEntanglementCount,
-  fieldEntanglementKey,
-  entangledFieldsFromRegistry,
-  type CollapseHookId,
-  type FieldEntanglement,
-} from '@/quantum/entanglement/registry'
-
 export {
   COLLAPSE_HOOKS,
   FIELD_ENTANGLEMENT_REGISTRY,

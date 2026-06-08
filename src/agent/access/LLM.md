@@ -3,7 +3,7 @@
 
 # access
 
-path `agent/access` · uuid `4f0081eb-b3eb-8f2d-be3c-de9b4325e3f3` · diamond `bacbcc42-908b-8562-a4bf-9bb3e83798a2`
+path `agent/access` · uuid `dc3b9293-137f-839b-a7a7-1aba6aff4937` · diamond `da74e6cc-c635-8c03-8a54-d2eef722d1b7`
 horo `9` `unity` · trinity `1·1·1` · sealed `0`
 imports @/uuid/matrix · exports Modality·const · escapes —
 links `9/9` · folded `1` · bonds in `124` out `124`
@@ -14,4 +14,4 @@ law an agent does everything both ways — via the MCP gateway and via the files
 
 ---
 
-<sub>content-uuid `06f3dad0-671f-8d85-ace5-e00355e63349` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9c2396f4-b49e-8320-9bbf-12b3064a0273` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,7 +3,7 @@
 
 # id
 
-path `classify/tax/id` · uuid `2e8b9817-fbcc-822a-96d2-8d9c9ef647f2` · diamond `6cd6ab44-7f65-8315-863a-3eaad18baea1`
+path `classify/tax/id` · uuid `2d68dc3f-620a-8b12-a223-fae09bfb9944` · diamond `56807fe8-2667-8e91-9d5b-8f760e80495d`
 horo `8` `crest` · trinity `1·1·1` · sealed `0`
 imports @/config/country-specifics · exports function · escapes —
 links `6/6` · folded `1` · bonds in `19` out `19`
@@ -14,4 +14,4 @@ law the type-label is derived once, at write time, from the [[country]] registry
 
 ---
 
-<sub>content-uuid `14ffc80c-3aaa-8712-899f-ba083f6ec015` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a0a888b0-cd17-8cff-b7b3-48c95e6fa759` · `pnpm readme` · `pnpm computed:check`</sub>

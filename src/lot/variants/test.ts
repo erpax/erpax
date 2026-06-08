@@ -9,7 +9,7 @@ import type { CollectionBeforeChangeHook } from 'payload'
 // The hook signature only reads `data`; the other args are unused by the impl.
 const run = (data: Record<string, unknown>): Record<string, unknown> => {
   const hook = rollUpLotVariantOptions as CollectionBeforeChangeHook
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+   
   return hook({ data, operation: 'create', req: {} } as any) as Record<string, unknown>
 }
 

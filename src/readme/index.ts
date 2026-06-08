@@ -91,16 +91,13 @@ import {
   generateReadme,
   listAtomPaths,
   materializeComputedFaces,
-  materializeComputedFacesForPaths,
   materializeComputedFacesForPathsStable,
   materializeComputedFacesInWaves,
   readmeUuid,
-  renderReadme,
   renderRootReadmeInWaves,
   verifyComputedFaces,
   verifyComputedFacesForPaths,
   verifyComputedFacesInWaves,
-  verifyRootReadmeUsesFrozenInputs,
 } from './compute'
 
 if (import.meta.url === `file://${process.argv[1]}`) {

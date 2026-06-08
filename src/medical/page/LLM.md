@@ -3,15 +3,15 @@
 
 # page
 
-path `medical/page` · uuid `f731a2b3-3226-869f-869d-1076b5b7c2f1` · diamond `f85f3e09-3aec-89fd-a75b-6f1c3b0be71d`
-horo `7` `descent` · trinity `1·1·1` · sealed `0`
+path `medical/page` · uuid `b188a2cf-dbea-81e1-8105-2d0da181a05c` · diamond `9248dc0f-b018-8b66-bfd9-166e48936d7f`
+horo `8` `crest` · trinity `1·1·1` · sealed `1`
 imports — · exports const·stub · escapes —
-links `5/5` · folded `0` · bonds in `34` out `34`
+links `5/5` · folded `1` · bonds in `35` out `35`
 faces worker·plugin·pwa `1·0·0`
-neighbors → about·acquire·booking·checkout·collapse·collection·contact·content·element·end·entity·faq·image·item·law·license·main·medical·merge·primary·print·profile·qa·representative·results·search·start·sti·template·tour·url·user·visits·web · ← about·acquire·booking·checkout·collapse·collection·contact·content·element·end·entity·faq·image·item·law·license·main·medical·merge·primary·print·profile·qa·representative·results·search·start·sti·template·tour·url·user·visits·web
-analysis diamond·hallucination·purity
+neighbors → about·acquire·booking·checkout·collapse·collection·contact·content·element·end·entity·faq·image·item·law·license·main·medical·merge·page·primary·print·profile·qa·representative·results·search·start·sti·template·tour·url·user·visits·web · ← about·acquire·booking·checkout·collapse·collection·contact·content·element·end·entity·faq·image·item·law·license·main·medical·merge·page·primary·print·profile·qa·representative·results·search·start·sti·template·tour·url·user·visits·web
+analysis —
 law medical/page names page under medical — one word, content-addressed, nested not duplicated.
 
 ---
 
-<sub>content-uuid `6a85569c-f271-8b10-8eef-35215c6def5e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `0d0749f6-56e6-844a-a08f-13244575bb5e` · `pnpm readme` · `pnpm computed:check`</sub>

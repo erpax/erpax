@@ -3,8 +3,8 @@
 
 # provisions
 
-path `fiscal/periods/provisions` · uuid `b7643c83-b004-8ca8-a009-778fe71d4531` · diamond `d3aa02fa-0418-8ab2-869e-0f9919734b95`
-horo `2` `share` · trinity `1·1·1` · sealed `0`
+path `fiscal/periods/provisions` · uuid `47aea71f-408e-837c-854f-5218b64f992f` · diamond `ed1b2282-1566-8135-b1a5-eccf921c4489`
+horo `8` `crest` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
 links `5/5` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law a provision recognises a liability that is probable but uncertain in amount 
 
 ---
 
-<sub>content-uuid `c8168a17-0036-80f2-8234-52d75eb20a86` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `d2470e19-407e-8e82-a472-6ff6229f7059` · `pnpm readme` · `pnpm computed:check`</sub>

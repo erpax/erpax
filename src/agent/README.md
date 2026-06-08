@@ -14,15 +14,14 @@
 | [[asset]]/[[trinity]]/code `1` | [[balance]] `1` |
 | [[asset]]/[[trinity]]/proof `1` | [[balance]] `1` |
 | [[asset]]/[[lattice]]/folded `1` | [[balance]] `1` |
-| [[asset]]/[[links]]/resolved `78` | [[balance]] `78` |
-| [[balance]] `1` | [[liability]]/[[links]]/dangling `1` |
+| [[asset]]/[[links]]/resolved `1` | [[balance]] `1` |
 | [[asset]]/[[horo]]/ring `1` | [[balance]] `1` |
 | [[asset]]/[[identity]]/uuid `1` | [[balance]] `1` |
 | [[asset]]/[[boundary]]/barrel `1` | [[balance]] `1` |
 | [[asset]]/[[typography]]/partition `1` | [[balance]] `1` |
-| Σ `87` | Σ `87` |
+| Σ `9` | Σ `9` |
 
-> [[balance]] `2` · [[conservation]] `0` · [[entry]] · [[purity]]
+> [[balance]] `1` · [[conservation]] `0` · [[entry]] · [[purity]]
 
 ## quantum thinking
 
@@ -32,13 +31,11 @@ collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc s
 ### superposition
 
 - `gap:ancestor:[[gap]]/[[path]]/ancestor`
-- `gap:link:[[gap]]/[[links]]/dangling`
-- `gap:stray:[[gap]]/[[diamond]]/stray/team/`
-- `links:dangling:1/79`
+- `gap:stray:[[gap]]/[[diamond]]/stray/inventory/`
 
 ### collapse
 
-- `balance:variance=2`
+- `balance:variance=1`
 - `law:an agent IS its content — its [[identity]] is the content-uuid of its skills + purpose, so identical clones [[merge]] into one and a distinct agent is a specialised child; and it DECIDES in pure functions (returns effects, never performs them — only the substrate acts).`
 - `seal:unsealed`
 - `trigger:Use when reasoning about an agent — its identity, cloning, and replication (an agent IS its content, its id is the content-uuid of skills + purpose, so identical clones merge and distinct agents are specialised children), AND when wiring the society's actors (the pure DomainAgent contract, the registry that gives each collection exactly one owner, the runtime that dispatches chain steps and events and scheduled ticks, the effect-processor where every side effect fires — the A-vortex coupling layer that decides without acting).`
@@ -51,8 +48,8 @@ collapse (decisions) · seal (content-uuid receipts). Single pass; no post-hoc s
 ### seal
 
 - path follow `1` · receipt `1` · sealed `0`
-- entry uuids `1d2c6add-8c33-84e5-aa76-8d2906bea323` · `2eef5426-e68f-8b5d-af65-30b4d42acff0` · `cc9bd441-0bc6-895c-8467-c2f3cfe4a9dd` · `ec07ba8f-b9f4-8aa5-86f4-5086e1608fac`
-- content uuids `2b7abce9-be94-8844-a03e-d17e28a6ad3d` · `b3503c7a-f96a-8b19-8c61-4063eb4e9df6` · `cea18c86-15ab-8af3-a5b6-a06bcf667e50` · `dfcfd0f2-e979-8ae7-a609-c3468a81acec`
+- entry uuids `0e2d457d-483c-8d34-af0b-2afc687eae3d` · `1d11a7f2-be4b-8718-bddb-4016435da535` · `4c86012d-c72a-888f-a1d2-d61012c80ae4`
+- content uuids `069ad33e-62fa-84fd-8531-cc7ae8db4371` · `a17f183f-7790-8a37-8d16-588a09c1457e` · `b3503c7a-f96a-8b19-8c61-4063eb4e9df6`
 
 ## [[entropy]] — gaps · seals
 
@@ -62,24 +59,24 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 
 | [[gap]] debit (eb) | [[seal]] credit (eb) |
 | -----------------: | -------------------: |
-| [[gap]]/[[links]]/dangling `1` eb | [[seal]]/[[trinity]]/form `1` eb |
-| [[gap]]/[[diamond]]/stray/team/ `1` eb | [[seal]]/[[trinity]]/code `1` eb |
-| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/proof `1` eb |
+| [[gap]]/[[diamond]]/stray/inventory/ `1` eb | [[seal]]/[[trinity]]/form `1` eb |
+| [[gap]]/[[path]]/ancestor `1` eb | [[seal]]/[[trinity]]/code `1` eb |
+|  | [[seal]]/[[trinity]]/proof `1` eb |
 |  | [[seal]]/[[lattice]]/folded `1` eb |
-|  | [[seal]]/[[links]]/resolved `78` eb |
+|  | [[seal]]/[[links]]/resolved `1` eb |
 |  | [[seal]]/[[horo]]/ring `0.5` eb |
 |  | [[seal]]/[[identity]]/uuid `1` eb |
 |  | [[seal]]/[[boundary]]/barrel `1` eb |
 |  | [[seal]]/[[typography]]/partition `1` eb |
-| Σ gap `3` eb | Σ seal `85.5` eb |
+| Σ gap `2` eb | Σ seal `8.5` eb |
 
-> net residual `-82.5` eb · seal/gap ratio `28.5` · [[entropy]] · [[seal]]
+> net residual `-6.5` eb · seal/gap ratio `4.25` · [[entropy]] · [[seal]]
 
 ## typography graph
 
-- partition `agent` · sub-root `69182b59-26e8-84aa-8e6f-1633b3122fc4`
+- partition `agent` · sub-root `f4b94bea-9669-8515-9167-4d09383cd078`
 - bond degree `0` · analysis neighbors —
-- graph root `86252db0-c776-84eb-b8e4-c884dca3a3ba`
+- graph root `9eb764d2-12af-88d1-a220-afe79901fdba`
 
 ## [[cloudflare]] bindings
 
@@ -150,15 +147,15 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 ## analytics
 
 - bond degree `0` · sealed `0` · horo `5`
-- variance `2` · balanced `0` · trinity sum `3`
+- variance `1` · balanced `0` · trinity sum `3`
 - bindings `0` · standards `21`
 
 ## identity
 
-- uuid `4cfa118a-0f1d-8604-8668-0c3298e3da89`
-- bonds in `73` · out `73`
+- uuid `70931bf4-760e-8ef9-941f-86b4801c74c5`
+- bonds in `75` · out `75`
 - trinity form·code·proof `1`·`1`·`1`
-- links `78` / `79`
+- links `79` / `79`
 - folded `1` · escapes `0`
 
 ## [[seal]]
@@ -167,4 +164,4 @@ Comparable unit: **eb** (entropy-bit) — `eb = amount × log₂(weight) × horo
 
 ---
 
-<sub>content-uuid `2da6767d-47ae-82e4-900f-85ce4b539522` · framed by typography partition `agent` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `1b048cb8-4448-8817-9dc2-64c0da719ebc` · framed by typography partition `agent` bonds `0` · `pnpm readme` · `pnpm readme:check`</sub>

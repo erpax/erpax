@@ -20,7 +20,7 @@ import {
   buildReadmeTypographyGraph,
   type FolderReadmeContext,
 } from '@/readme'
-import { computeDiamond, diamondUuid, type DiamondComputationStage } from '@/diamond'
+import { computeDiamond, diamondUuid } from '@/diamond'
 import { coordinateAddress, neighborsOf, backlinksOf, nodeOf } from '@/uuid/matrix'
 import { linksOf, partitionByFolder, type AnalysisTypographyGraph } from '@/typography'
 import {
@@ -30,8 +30,6 @@ import {
 import {
   FRONTMATTER,
   stripFrontmatter,
-  contentUuidOf,
-  renderFrontmatter,
   upgradeSkillText,
   parseSignaturesFromText,
   signaturesFromStages,

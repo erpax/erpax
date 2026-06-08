@@ -3,8 +3,8 @@
 
 # research
 
-path `agent/research` · uuid `cb7a0ecc-fce0-8e62-957c-ae004c9a3daf` · diamond `43a142b0-01bf-8b74-87f3-03ff0dc7bf9c`
-horo `1` `base` · trinity `1·1·1` · sealed `0`
+path `agent/research` · uuid `d1f8334e-6dcd-887f-9529-eba8f1f3d0d7` · diamond `79ae3135-daa4-837f-b4d9-6cd43424576d`
+horo `5` `round` · trinity `1·1·1` · sealed `0`
 imports @/agent/sync·@/cross·@/integrity·@/receipt·@/types/auth·@/uuid/share · exports FindingKind·async·const·function·interface · escapes —
 links `18/18` · folded `1` · bonds in `31` out `31`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law an [[agent]] IS a [[user]] (the actor-merge), so a finding is content-addres
 
 ---
 
-<sub>content-uuid `b126177e-7cd2-835c-af96-5d5acf9cd6db` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3d6ad198-e376-8bc4-a47b-2e1a0a0a7cfb` · `pnpm readme` · `pnpm computed:check`</sub>

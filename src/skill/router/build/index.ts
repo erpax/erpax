@@ -12,7 +12,6 @@
  */
 import {
   readdirSync,
-  lstatSync,
   existsSync,
   readFileSync,
   writeFileSync,

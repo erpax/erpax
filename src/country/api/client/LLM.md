@@ -3,8 +3,8 @@
 
 # client
 
-path `country/api/client` · uuid `20fe3189-b361-851d-bca6-306c36d7fc0a` · diamond `27d79aa7-9466-80cd-b041-83e70ca3b743`
-horo `2` `share` · trinity `1·1·1` · sealed `0`
+path `country/api/client` · uuid `85d11580-107d-88b7-83f6-9de187fd9475` · diamond `0640d6e6-9e3b-8bf0-9781-f5fdf6419ae1`
+horo `5` `round` · trinity `1·1·1` · sealed `0`
 imports @/country/api · exports async·function·interface · escapes —
 links `4/4` · folded `1` · bonds in `1` out `1`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law every official-[[api]] call returns one `{ ok, data?, error?, source }` shap
 
 ---
 
-<sub>content-uuid `f8c0ea1f-1adf-8080-baf0-84343243e6ab` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `652fb866-a46b-82c2-b184-fa5ebba32c56` · `pnpm readme` · `pnpm computed:check`</sub>

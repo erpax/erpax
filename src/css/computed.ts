@@ -150,14 +150,14 @@ function neutralPlane(chroma: string, mode: CssMode): { bg: string; fg: string; 
   if (mode === 'dark') {
     const bg = mixHex(substrate, chroma, 0.12)
     const card = mixHex(substrate, chroma, 0.18)
-    const muted = mixHex(substrate, chroma, 0.28)
+    const _muted = mixHex(substrate, chroma, 0.28)
     const border = mixHex(substrate, chroma, 0.38)
     const fg = contrastForeground(bg)
     return { bg, fg, muted: card, border }
   }
   const bg = mixHex(paper, chroma, 0.04)
   const card = mixHex(paper, chroma, 0.08)
-  const muted = mixHex(paper, chroma, 0.14)
+  const _muted = mixHex(paper, chroma, 0.14)
   const border = mixHex(paper, chroma, 0.22)
   const fg = contrastForeground(bg, '#fafafa', '#1a1a1a')
   return { bg, fg, muted: card, border }

@@ -3,8 +3,8 @@
 
 # 359
 
-path `nist/incits/359` · uuid `a94eb8b8-b3cd-8007-9482-a5a4ca557dfe` · diamond `5189cf05-1bdf-84f3-a9ee-90f592331827`
-horo `2` `share` · trinity `1·1·1` · sealed `0`
+path `nist/incits/359` · uuid `14350d62-f769-8095-b4ea-4c0ac4d2563b` · diamond `d062717c-08ab-8583-92f9-4216a679da4f`
+horo `7` `descent` · trinity `1·1·1` · sealed `0`
 imports — · exports AddRoleResource·AnyScope·BIT_DELETE·BIT_READ·BIT_WRITE·MutationArgs·PermissionDigit·PermissionTriplet·RoleDefinition·RoleMatch·ScopeResourceCollection·ScopedResource·addRole·grant·hasAllRoles·hasAnyRole·hasCachedRole·hasRole·hasStrictRole·permissionStringToTriplet·permissionTripletToString·removeRole·revoke·scopeResourceCollections · escapes —
 links `0/0` · folded `1` · bonds in `0` out `0`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `711a1cb0-bf37-8d0c-ba1c-3a37c9b64b3a` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7208666a-ad8f-8ff0-a447-a9c301670dc7` · `pnpm readme` · `pnpm computed:check`</sub>

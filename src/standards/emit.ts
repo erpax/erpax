@@ -15,8 +15,8 @@ import { STANDARDS_REGISTRY, type RegisteredStandard } from '@/standards/registr
 import { uuid } from '@/integrity/content-uuid'
 import { uuidColor } from '@/uuid/projection'
 
-const CATALOGUE_TS = join(process.cwd(), 'src/standards/catalogue.ts')
-const SKILL_MD = join(process.cwd(), 'src/standards/SKILL.md')
+const _CATALOGUE_TS = join(process.cwd(), 'src/standards/catalogue.ts')
+const _SKILL_MD = join(process.cwd(), 'src/standards/SKILL.md')
 
 interface Module {
   path: string

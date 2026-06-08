@@ -3,8 +3,8 @@
 
 # reviews
 
-path `employees/performance/reviews` · uuid `e7d9287c-fa7c-8da4-9840-2f2399eb1aee` · diamond `d7a4ee4e-7f04-846a-b64d-28500a3f6118`
-horo `8` `crest` · trinity `1·1·1` · sealed `0`
+path `employees/performance/reviews` · uuid `57158852-f619-8d93-85c3-fdf787e34e3f` · diamond `ebe4bcca-1a4f-8384-a67b-1101ebabdd20`
+horo `4` `weave` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
 links `6/6` · folded `1` · bonds in `9` out `9`
 faces worker·plugin·pwa `1·0·0`
@@ -14,4 +14,4 @@ law one record per employee performance cycle — self-assessment plus manager r
 
 ---
 
-<sub>content-uuid `76517fa5-393e-8190-8da8-9c2d9d0f64d0` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4f9e6aeb-fcb4-8df6-873a-57931a3e286e` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -20,18 +20,7 @@ import {
   type ChiCungBreath,
 } from '@/taichi'
 import { isHoroStep, type HoroStep } from '@/horo'
-import {
-  computedSpeechForUi,
-  durationMs,
-  phonemeDurationMs,
-  phonemesOf,
-  pitchOf,
-  SPEACH_ALIAS,
-  speechFromHoro,
-  type ComputedSpeech,
-  type NibblePhoneme,
-  NIBBLE_PHONEMES,
-} from './computed'
+import { speechFromHoro, type ComputedSpeech } from './computed'
 
 export {
   computedSpeechForUi,

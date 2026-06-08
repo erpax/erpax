@@ -3,7 +3,7 @@
 
 # sales
 
-path `fiscal/devices/sales` · uuid `1bf0cda9-c432-82f7-9ddc-7b5ffc5d4036` · diamond `592c24e4-7817-8318-98cf-8fd1f0f98249`
+path `fiscal/devices/sales` · uuid `b6051016-1446-8e3a-bdf3-9f4ec6cfc70c` · diamond `c905d71f-c50c-8e6c-ba5c-5fdfce4317c7`
 horo `1` `base` · trinity `1·1·1` · sealed `0`
 imports @/audit/trail/after/change·@/auth·@/auto/populate/tenant·@/auto/set/timestamp·@/fields·@/sale · exports default · escapes —
 links `5/5` · folded `1` · bonds in `8` out `8`
@@ -14,4 +14,4 @@ law every sale receives an immutable, gapless УНП and is frozen on close — 
 
 ---
 
-<sub>content-uuid `a7bf518d-a147-894f-82aa-752bd4bf6f61` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ca06a540-11d7-8f88-a0ce-374cb415095a` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,8 +3,8 @@
 
 # metadata
 
-path `mcp/tool/metadata` · uuid `bc50002b-a5e9-8870-93ef-ddbc44e81e07` · diamond `b819fe18-6dc1-868a-9770-2769f4c17c78`
-horo `2` `share` · trinity `1·1·1` · sealed `0`
+path `mcp/tool/metadata` · uuid `610cbfe6-c484-8ef4-b149-43215552cd84` · diamond `46906afa-a80a-8d4d-85b1-62025c14e3cf`
+horo `7` `descent` · trinity `1·1·1` · sealed `0`
 imports @/base/accounting/field·@/factory · exports default · escapes —
 links `3/3` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `46dc7f71-b17c-8562-a5e8-dfdd7cbee4a5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `55c70e5f-b429-8761-9486-a9c45481bf3a` · `pnpm readme` · `pnpm computed:check`</sub>

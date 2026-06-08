@@ -3,8 +3,8 @@
 
 # assets
 
-path `mineral/resource/assets` · uuid `d61a1052-8260-81e2-a844-74f7e927f09a` · diamond `2315bf8a-1264-8dee-9cdf-7b7abc5d4bc2`
-horo `1` `base` · trinity `1·1·1` · sealed `0`
+path `mineral/resource/assets` · uuid `a26409fa-adba-88b6-a804-209bcec6f18d` · diamond `fe4bfdf3-bf94-852f-8d47-dc92b544e5de`
+horo `8` `crest` · trinity `1·1·1` · sealed `0`
 imports @/auth·@/base/accounting/field·@/standard/collection/hook · exports default · escapes —
 links `6/6` · folded `1` · bonds in `33` out `33`
 faces worker·plugin·pwa `0·0·0`
@@ -14,4 +14,4 @@ law —
 
 ---
 
-<sub>content-uuid `6ea91048-9bdd-8ec3-a70e-c1d8b23c0880` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `27c2d8a1-38b9-8451-9ff7-1a1b7fbea75b` · `pnpm readme` · `pnpm computed:check`</sub>
