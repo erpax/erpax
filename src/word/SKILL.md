@@ -1,16 +1,17 @@
 ---
 name: word
-description: Use when reasoning about word as a schema.org vocabulary word — the single word collided from the schema.org terms that contain it, content-addressed into the corpus.
+description: Use when addressing a lexical prose token — one vocabulary diamond content-addressed as uuid(jcs({ kind:'word', value })); saved in the text token index, not as a per-word src/ folder.
 ---
 
-# word
+# word — lexical token diamond
 
-A schema.org component word, collided out of schema.org compounds — fused from wordCount ([[sti]] · [[collapse]] · [[merge]]).
+A **vocabulary [[diamond]]** at the prose layer: one lexical token (`hello`, `world`, …). Content-addressed as `uuid(jcs({ kind: 'word', value }))` — the [[word]] half of [[text]]'s word ⊕ digit decomposition. Persisted through [[text]]/saveTextDiamonds into the computed in-memory index; distinct from schema.org vocabulary [[atom]] folders (those are corpus addresses, not prose tokens).
 
-Entangled with — [[count]]
+Entangled with — [[text]] · [[digit]] · [[diamond]] · [[typography]] · [[atom]] · [[collapse]] · [[count]] · [[sti]] · [[merge]]
 
-Attested in schema.org — wordCount
+Attested in schema.org — wordCount (corpus facet; prose tokens use the computed index)
 
-**Law — [[law]]: word is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.**
+**Law — [[law]]: a word token is one lexical [[diamond]] — content-addressed as uuid(jcs({ kind:'word', value })), saved in the [[text]] index, never materialized as one src/ folder per English word.**
 
-@standard schema.org — the type vocabulary, collided to single words
+@standard RFC 8785 JCS + RFC 9562 §5.8 content-uuid
+@see [[text]] · [[digit]] · [[diamond]] · [[typography]] · [[atom]]

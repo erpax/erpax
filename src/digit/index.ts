@@ -20,6 +20,7 @@
  * @audit the digit address is computed from the live matrix, never hand-maintained
  * @see ../word -- ../horo -- ../sequence -- ../uuid -- ../aura
  */
+import { uuid } from '@/integrity'
 import { UUID_MATRIX_NODES, nodeOf } from '@/uuid/matrix'
 
 /** Digital root (base-10) of a content-uuid's hex digits -> 1..9 (0 only for nil).
@@ -56,6 +57,19 @@ export function digitTrace(): Map<string, string[]> {
 export function offSequence(): string[] {
   return UUID_MATRIX_NODES.filter((n) => !(n.horo >= 1 && n.horo <= 9)).map((n) => n.atom)
 }
+
+// ───────────────────────── numeric token facet (prose layer) ─────────────────────────
+// Distinct from horo digital-root / digitAddress above — those are atom-space duals;
+// digitTokenUuid is a content-addressed numeric token in parsed [[text]] (e.g. "42").
+
+export type DigitTokenKind = 'digit'
+
+/** Content-address of one numeric prose token — uuid(jcs({ kind: 'digit', value })). */
+export const digitTokenUuid = (value: string): string => uuid({ kind: 'digit' as const, value })
+
+/** One numeric token diamond — kind, digit sequence, and its content-uuid. */
+export const digitDiamond = (value: string) =>
+  ({ kind: 'digit' as const, value, tokenUuid: digitTokenUuid(value) }) as const
 
 if (import.meta.url === 'file://' + process.argv[1]) {
   const trace = digitTrace()

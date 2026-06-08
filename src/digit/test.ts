@@ -1,6 +1,14 @@
 import { describe, it, expect } from 'vitest'
 import * as digitModule from '@/digit'
-import { digitOf, digitalRootOfUuid, digitAddress, digitTrace, offSequence } from '@/digit'
+import {
+  digitOf,
+  digitalRootOfUuid,
+  digitAddress,
+  digitTrace,
+  offSequence,
+  digitTokenUuid,
+  digitDiamond,
+} from '@/digit'
 import { digitalRoot as horoDigitalRoot } from '@/horo'
 
 // digit is the computed dual of word: word . digit . uuid is the trinity that
@@ -29,6 +37,16 @@ describe('digit: the digit-space dual of word (word . digit . uuid)', () => {
     expect(typeof digitOf('access')).toBe('number')
     expect(digitAddress('access')).toMatch(/^[1-9]\/[1-9]$/)
     expect(digitAddress('not-an-atom-xyzzy')).toBeUndefined()
+  })
+
+  it('digitTokenUuid is the numeric prose facet (distinct from horo digital-root)', () => {
+    expect(digitTokenUuid('42')).toBe(digitTokenUuid('42'))
+    expect(digitDiamond('007')).toEqual({
+      kind: 'digit',
+      value: '007',
+      tokenUuid: digitTokenUuid('007'),
+    })
+    expect(digitTokenUuid('42')).not.toBe(digitalRootOfUuid('00000000-0000-0000-0000-000000000000'))
   })
 
   it('the trace folds the whole corpus onto the ring (no off-sequence anomalies)', () => {
