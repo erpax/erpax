@@ -3,15 +3,15 @@
 
 # guide
 
-path `guide` · uuid `bac555ea-01a7-8e87-9dd5-0c491a1ad405` · diamond `c138b4fd-ea2d-851e-94b4-5d9a108d65d8`
+path `guide` · uuid `bac555ea-01a7-8e87-9dd5-0c491a1ad405` · diamond `bc616d43-253c-8229-8471-e77918f4f673`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports guide · escapes —
-links `2/2` · folded `1` · bonds in `4` out `4`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → law·thing · ← law·thing
 analysis —
 law a guide must disclose what it recommends and why — every ranked choice carries its reasoning, so the recommendation is auditable and never an unaccountable verdict.
 
 ---
 
-<sub>content-uuid `764e688a-6250-81db-a610-fe1871e3039e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7ab1ea29-73fe-800b-8947-8345672ee9ac` · `pnpm readme` · `pnpm computed:check`</sub>

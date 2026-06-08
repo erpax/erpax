@@ -3,15 +3,15 @@
 
 # group
 
-path `group` · uuid `ebb26ebf-366d-8d80-b854-a06c8f6d301f` · diamond `0a12c950-04c5-80e0-98e0-ae9a9ebbd6e2`
+path `group` · uuid `ebb26ebf-366d-8d80-b854-a06c8f6d301f` · diamond `5e991819-9023-8efe-817f-361af12825b5`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports boarding·collapse·dance·enumeration·id·law·member·merge·music·performing·product·size·sti·theater·wearable · exports group · escapes —
-links `15/15` · folded `1` · bonds in `4` out `4`
+links `15/15` · folded `1` · bonds in `15` out `15`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → boarding·collapse·dance·enumeration·id·law·member·merge·music·performing·product·size·sti·theater·wearable · ← boarding·collapse·dance·enumeration·id·law·member·merge·music·performing·product·size·sti·theater·wearable
 analysis —
 law group is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `ed3af031-f8c3-80bc-82a1-5f361daf799e` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `a6c7ef83-841c-856a-8c4c-e7de61068e92` · `pnpm readme` · `pnpm computed:check`</sub>

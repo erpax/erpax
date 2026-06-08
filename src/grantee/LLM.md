@@ -3,15 +3,15 @@
 
 # grantee
 
-path `grantee` · uuid `a9488f43-9e10-84e9-8a63-605904a0b698` · diamond `444d64e1-99fc-8f9f-889b-8a1024e75c2c`
+path `grantee` · uuid `a9488f43-9e10-84e9-8a63-605904a0b698` · diamond `b7b1d465-6ec0-8e2f-aab6-72fc0df6f4af`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports grantee · escapes —
-links `2/2` · folded `1` · bonds in `14` out `14`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → candidate·feed·flight·florist·height·landmarks·lead·lineup·makes·max·partition·sla·territory·vibration · ← candidate·feed·flight·florist·height·landmarks·lead·lineup·makes·max·partition·sla·territory·vibration
+neighbors → law·thing · ← law·thing
 analysis —
 law grantee is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `3c1f2731-4b0f-898e-98fc-c8a77d913e76` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4bb6b666-b414-86d8-91cf-11e5e3d987a4` · `pnpm readme` · `pnpm computed:check`</sub>

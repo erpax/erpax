@@ -3,15 +3,15 @@
 
 # gtin
 
-path `gtin` · uuid `49fb356c-7a55-8e73-b916-f0468c072b7f` · diamond `d48bd1b9-961e-8fe3-ab0f-5b11b0901b4c`
+path `gtin` · uuid `49fb356c-7a55-8e73-b916-f0468c072b7f` · diamond `4965d406-3c2e-892b-9782-01d7e9f1af6e`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports law·thing · exports gtin · escapes —
-links `2/2` · folded `1` · bonds in `4` out `4`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → law·thing · ← law·thing
 analysis —
 law gtin is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `045985c9-a05d-8cb0-a193-1f9519353a34` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `bda33266-00bc-8128-b462-c388e923c05f` · `pnpm readme` · `pnpm computed:check`</sub>

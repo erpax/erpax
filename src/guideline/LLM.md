@@ -3,15 +3,15 @@
 
 # guideline
 
-path `guideline` · uuid `b6a8951a-afd5-84bb-9317-a7822a01a13a` · diamond `6cab247b-9962-83d0-9e6c-e388531210e2`
+path `guideline` · uuid `b6a8951a-afd5-84bb-9317-a7822a01a13a` · diamond `8c1930c1-80ca-8931-b950-f4f985e51cbe`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports contraindication·date·law·medical·recommendation·subject · exports guideline · escapes —
-links `6/6` · folded `1` · bonds in `14` out `14`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → awareness·breakfast·choose·coffee·description·diet·endpoints·frame·landmarks·manufacturing·natural·progression·rest·translate · ← awareness·breakfast·choose·coffee·description·diet·endpoints·frame·landmarks·manufacturing·natural·progression·rest·translate
+neighbors → contraindication·date·law·medical·recommendation·subject · ← contraindication·date·law·medical·recommendation·subject
 analysis —
 law guideline is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `52aea9d1-2aaf-8ac8-8d7f-4e91a91f6e83` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `85441d5d-0968-86ca-a718-e7a8b6ec91f8` · `pnpm readme` · `pnpm computed:check`</sub>

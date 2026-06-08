@@ -3,15 +3,15 @@
 
 # greater
 
-path `greater` · uuid `7b21cb9b-f451-8fe2-8eaa-d921de25df34` · diamond `92fa9feb-c2df-8a8c-a0b5-7425db33da97`
+path `greater` · uuid `7b21cb9b-f451-8fe2-8eaa-d921de25df34` · diamond `ca091a3b-aac1-8ac8-8110-d25e3d82ebb4`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports equal·law · exports greater · escapes —
-links `2/2` · folded `1` · bonds in `4` out `4`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → equal·law · ← equal·law
 analysis —
 law greater is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `27b15b33-2e43-8120-90a0-9f796e534cb6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `ae1edc6c-f091-8c04-bcfe-0632cef73ab2` · `pnpm readme` · `pnpm computed:check`</sub>

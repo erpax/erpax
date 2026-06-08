@@ -3,15 +3,15 @@
 
 # grant
 
-path `grant` · uuid `7cd3ad66-e123-8182-aac9-1db64a735c6a` · diamond `90c78e66-05c9-824a-b90b-b74870c1d896`
+path `grant` · uuid `7cd3ad66-e123-8182-aac9-1db64a735c6a` · diamond `6e04f497-5314-86a5-ab01-2c8da620a57b`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports law·monetary · exports grant · escapes —
-links `2/2` · folded `1` · bonds in `50` out `56`
+links `2/2` · folded `1` · bonds in `2` out `2`
 faces worker·plugin·pwa `0·0·0`
-neighbors → addressed·addressed·cohort·cohort·collections·competitor·connection·corrects·corrects·cross·drone·drone·dry·duplicate·enrolling·entertainment·exemplifies·fat·fax·fields·funding·grant·hobby·import·landmarks·landmarks·ligament·likes·link·maps·markup·marry·marry·memories·memories·office·parlor·pipeline·qualification·quantity·reimbursement·resume·roadmap·security·seed·sell·shallow·shred·sourced·srp·steering·symbol·tinid·venue·wellbeing·wp · ← addressed·cohort·collections·competitor·connection·corrects·cross·drone·dry·duplicate·enrolling·enrolling·entertainment·exemplifies·fat·fax·fields·funding·grant·hobby·import·landmarks·ligament·likes·link·maps·markup·marry·memories·office·parlor·pipeline·qualification·quantity·reimbursement·resume·roadmap·security·seed·sell·shallow·shred·sourced·srp·steering·symbol·tinid·venue·wellbeing·wp
+neighbors → law·monetary · ← law·monetary
 analysis —
 law grant is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `6690a09f-6e29-8849-a645-687cefc9f8de` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8af50a7d-e9c5-8ac3-b439-e3b7f87785f2` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -2,7 +2,7 @@
 
 # gravity
 
-> atom `gravity` · horo `5` `round` · [[balance]] `1` · [[seal]] `1`
+> atom `gravity` · horo `7` `descent` · [[balance]] `1` · [[seal]] `1`
 
 ## [[debit]] · [[credit]]
 
@@ -24,13 +24,13 @@
 ## typography graph
 
 - partition `gravity` · sub-root `337eef5f-6873-8a51-9c4e-b41dff0188ed`
-- bond degree `111` · analysis neighbors `agent` · `diamond`
-- graph root `7c2cf1f9-0fe1-8a7e-bdcb-4603375d6cce`
+- bond degree `208` · analysis neighbors `agent` · `diamond`
+- graph root `5d766ace-d4e0-8893-a5ee-3fd5dea23d7e`
 
 ## identity
 
-- uuid `c3d92738-351f-82da-90a1-483440487663`
-- bonds in `15` · out `15`
+- uuid `4f78abb1-ab2f-886d-8d00-79f660edc18a`
+- bonds in `59` · out `68`
 - trinity form·code·proof `1`·`1`·`1`
 - links `36` / `36`
 - folded `1` · escapes `0`
@@ -41,4 +41,4 @@
 
 ---
 
-<sub>content-uuid `a92edd63-f28b-8ed0-8dab-9f378c54b01c` · framed by typography partition `gravity` bonds `111` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f5a10e57-0e71-86ec-adb8-a0d0b28aca2c` · framed by typography partition `gravity` bonds `208` · `pnpm readme` · `pnpm readme:check`</sub>

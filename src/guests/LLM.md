@@ -3,15 +3,15 @@
 
 # guests
 
-path `guests` · uuid `f033424b-84cd-80aa-93b1-e50726ad9e25` · diamond `dd28b3c8-d69a-8f98-8393-d680e13faf67`
+path `guests` · uuid `f033424b-84cd-80aa-93b1-e50726ad9e25` · diamond `9f9730fc-95f0-8f1d-aa9a-141e9e4ac7f4`
 horo `5` `round` · trinity `1·0·0` · sealed `1`
 imports additional·collapse·law·merge·number·sti · exports guests · escapes —
-links `6/6` · folded `1` · bonds in `5` out `5`
+links `6/6` · folded `1` · bonds in `6` out `6`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·except·landmarks·memories·stat · ← cohort·except·landmarks·memories·stat
+neighbors → additional·collapse·law·merge·number·sti · ← additional·collapse·law·merge·number·sti
 analysis —
 law guests is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `bec2498d-7969-8b5f-937f-24929a5e37b5` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4e5b09b3-4856-89ff-84d7-e789dd118689` · `pnpm readme` · `pnpm computed:check`</sub>

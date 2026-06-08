@@ -3,15 +3,15 @@
 
 # gtin8
 
-path `gtin8` · uuid `4fe455d1-c670-8b60-94aa-3db1ee6cf0e4` · diamond `d8559872-e45d-8b91-9f6f-6866c0821954`
+path `gtin8` · uuid `4fe455d1-c670-8b60-94aa-3db1ee6cf0e4` · diamond `86f59e59-0db3-8200-a70b-bee5b35e57aa`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports gtin8 · escapes —
-links `4/4` · folded `1` · bonds in `6` out `6`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → contractor·database·landmarks·measurement·receipt·strength · ← contractor·database·landmarks·measurement·receipt·strength
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law gtin8 is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `36067ced-d766-86d7-8acb-8e260bceb811` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `43a489c6-9372-8505-97da-bd8400109b24` · `pnpm readme` · `pnpm computed:check`</sub>

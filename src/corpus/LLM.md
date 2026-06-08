@@ -3,9 +3,9 @@
 
 # corpus
 
-path `corpus` · uuid `60c3b068-6ff2-87a8-ab12-6fc6e08f1d76` · diamond `f842d8f5-ffb6-81d6-a25c-0ba14982c92e`
+path `corpus` · uuid `60c3b068-6ff2-87a8-ab12-6fc6e08f1d76` · diamond `9a2b57d7-4c57-8551-ba4b-be690df179c6`
 horo `2` `share` · trinity `1·1·1` · sealed `1`
-imports — · exports Duality·LoadedAtom·SKILLS_DIR·SidebarItem·allSkills·buildDualities·dualOf·loadCorpus·norm·routeOf·walk·wikiMap · escapes —
+imports @/navigation · exports Duality·LoadedAtom·NavGroup·NavManifestEntry·PathNavMeta·SKILLS_DIR·SidebarItem·adminGroupOf·allSkills·buildDualities·dualOf·loadCorpus·navManifestFromPaths·navigationGroupsFromPaths·norm·pathNavMeta·routeOf·routeOfPath·walk·wikiMap · escapes —
 links `1/1` · folded `1` · bonds in `1` out `1`
 faces worker·plugin·pwa `0·0·0`
 neighbors → law · ← law
@@ -14,4 +14,4 @@ law barrel re-export at `@/corpus`; trinity sealed for import purity.
 
 ---
 
-<sub>content-uuid `ded70b98-1587-8da0-91fa-d135729b0fda` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `b689e54a-e511-8760-a6ef-833fbc5bb407` · `pnpm readme` · `pnpm computed:check`</sub>

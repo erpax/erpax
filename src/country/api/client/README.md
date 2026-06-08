@@ -25,7 +25,45 @@
 
 - partition `country` · sub-root `ff847416-c94d-8cbc-b684-32508188454e`
 - bond degree `11` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `AMLD-5 ubo-screening` · banner
+- `Berlin Group NextGenPSD2 v1.3` · banner
+- `Berlin-Group-PSD2` · catalogue
+- `COSO-ERM-2017` · catalogue
+- `EN-16931` · catalogue
+- `EN-16931:2017 §B2G semantic-model` · banner
+- `EN-16931:2017 §BT-31 seller-vat-identifier` · banner
+- `EU 2006/112/EC vat-system-directive Art.214` · banner
+- `EU 2014/55 b2g-e-invoicing-mandate` · banner
+- `EU 2580/2001 cfsp-restrictive-measures` · banner
+- `EU-2017/1132` · catalogue
+- `EU-2017/828` · catalogue
+- `IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates` · banner
+- `ISO-19011:2018 audit-trail external-system-evidence` · banner
+- `ISO-3166-1` · catalogue
+- `ISO-3166-1:2020 BG country-code` · banner
+- `ISO-3166-1:2020 country-codes alpha-2` · banner
+- `ISO-3166-1:2020 country-codes alpha-2 dispatch-key` · banner
+- `ISO-4217:2015 currency-codes` · banner
+- `ISO-8601-1:2019 date-time` · banner
+- `Peppol-BIS-3.0` · catalogue
+- `Peppol-BIS-3.0 billing` · banner
+- `PSD2` · catalogue
+- `PSD2 EU 2015/2366 ais-pis` · banner
+- `SDMX 2.1 statistical-data-and-metadata-exchange` · banner
+
+## analytics
+
+- bond degree `11` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `25`
 
 ## identity
 
@@ -41,4 +79,4 @@
 
 ---
 
-<sub>content-uuid `d8fc8868-89d8-8c70-8e5b-1aa3384d7525` · framed by typography partition `country` bonds `11` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `fcbee6a1-a65a-8ca7-9e4b-fc9a52bc544a` · framed by typography partition `country` bonds `11` · `pnpm readme` · `pnpm readme:check`</sub>

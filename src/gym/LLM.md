@@ -8,10 +8,10 @@ horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports collapse·exercise·law·merge·sti · exports gym · escapes —
 links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·rvpark·stat · ← cohort·landmarks·memories·rvpark·stat
+neighbors → collapse·exercise·law·merge·sti · ← collapse·exercise·law·merge·sti
 analysis —
 law gym is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `76db0e55-d0be-8c93-b238-5fbd78ae7865` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `4376f795-d357-87ee-899d-4269d15dd5f3` · `pnpm readme` · `pnpm computed:check`</sub>

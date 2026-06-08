@@ -3,15 +3,15 @@
 
 # grocery
 
-path `grocery` · uuid `dd8b8fe6-af11-8901-8300-5e1530b38f20` · diamond `647e5d61-2028-89f2-a47d-393ae608ff75`
+path `grocery` · uuid `dd8b8fe6-af11-8901-8300-5e1530b38f20` · diamond `42c8bd17-3e9d-8680-abb0-165ed45c2ea2`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti·store · exports grocery · escapes —
-links `5/5` · folded `1` · bonds in `2` out `2`
+links `5/5` · folded `1` · bonds in `5` out `5`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → collapse·law·merge·sti·store · ← collapse·law·merge·sti·store
 analysis —
 law grocery is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `3c0c93f2-deb5-81b8-9655-4f0722d32b68` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `de1835b4-c4d4-8de9-a8dc-1ffa8a14354e` · `pnpm readme` · `pnpm computed:check`</sub>

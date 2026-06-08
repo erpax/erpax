@@ -25,7 +25,24 @@
 
 - partition `cost` · sub-root `39f13edb-cfbe-876c-9400-e150601cfd8b`
 - bond degree `27` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ISO-19011:2018 audit-trail requisition-evidence` · banner
+- `ISO-4217:2015 currency-codes` · banner
+- `ISO-8601-1:2019 date-time` · banner
+- `SOX §404 internal-controls four-eyes` · banner
+
+## analytics
+
+- bond degree `27` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `4`
 
 ## identity
 
@@ -41,4 +58,4 @@
 
 ---
 
-<sub>content-uuid `31a7f099-7b38-8cc9-b673-501db7dcc516` · framed by typography partition `cost` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b2779edc-15c5-831c-8120-852448c48a9e` · framed by typography partition `cost` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>

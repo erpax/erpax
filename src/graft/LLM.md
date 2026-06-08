@@ -3,15 +3,15 @@
 
 # graft
 
-path `graft` · uuid `087f3103-c86f-8f62-8b81-0d2da42fe9dc` · diamond `97753bae-1fa1-870d-8f64-39d9de2abbe9`
+path `graft` · uuid `087f3103-c86f-8f62-8b81-0d2da42fe9dc` · diamond `041a4403-6957-8f0c-ba48-3dd638ef40c5`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports biological·law·perennial·propagation·rootstock·scion·seed·taxonomy · exports graft · escapes —
-links `19/19` · folded `1` · bonds in `4` out `4`
+links `19/19` · folded `1` · bonds in `8` out `8`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → assets·law·perennial·propagation·rootstock·scion·seed·taxonomy · ← assets·law·perennial·propagation·rootstock·scion·seed·taxonomy
 analysis —
 law a graft assembles one [[perennial]] plant from two chosen parts — the [[scion]] sets the variety, the [[rootstock]] sets vigour/size/resistance — rather than growing it from [[seed]]; the graft union is the moment the [[biological/assets|bearer-plant]] asset is created.
 
 ---
 
-<sub>content-uuid `5927520c-5cc4-8a30-b6e4-cc8a2674e7ac` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `9bd6faa0-e8a5-89dd-8e59-ed36a8c91479` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -25,7 +25,42 @@
 
 - partition `country` · sub-root `ff847416-c94d-8cbc-b684-32508188454e`
 - bond degree `11` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `Berlin-Group-PSD2` · catalogue
+- `COSO-ERM-2017` · catalogue
+- `EN-16931` · catalogue
+- `ETSI-EN-319-142` · catalogue
+- `EU-2000/31` · catalogue
+- `EU-2002/58` · catalogue
+- `EU-2017/1132` · catalogue
+- `EU-2017/828` · catalogue
+- `EU-765/2008` · catalogue
+- `ISO-13616-1` · catalogue
+- `ISO-19005` · catalogue
+- `ISO-20022` · catalogue
+- `ISO-3166-1` · catalogue
+- `ISO-32000` · catalogue
+- `NIST-FIPS-180-4` · catalogue
+- `PSD2` · catalogue
+- `RFC-5652` · catalogue
+- `RFC-6749` · catalogue
+- `SAF-T` · catalogue
+- `SEPA` · catalogue
+- `UBL-2.1` · catalogue
+- `UN-CEFACT` · catalogue
+
+## analytics
+
+- bond degree `11` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `22`
 
 ## identity
 
@@ -41,4 +76,4 @@
 
 ---
 
-<sub>content-uuid `0574e6fe-656b-8e5e-b730-93a924453f49` · framed by typography partition `country` bonds `11` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `5eab43e5-a060-8d97-8808-10ec820eaffa` · framed by typography partition `country` bonds `11` · `pnpm readme` · `pnpm readme:check`</sub>

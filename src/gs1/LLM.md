@@ -8,10 +8,10 @@ horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports gs1 · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law gs1 is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `c56e52ac-18fa-8dad-b0d4-8b752b5e7eb6` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7511186a-04ba-8fb5-8d38-d296c1b9f2c3` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -25,7 +25,23 @@
 
 - partition `country` · sub-root `ff847416-c94d-8cbc-b684-32508188454e`
 - bond degree `27` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `EU 2014/55 b2g-e-invoicing-mandate-resolution` · banner
+- `ISO-19011:2018 audit-trail country-decision-evidence` · banner
+- `ISO-3166-1:2020 country-codes alpha-2 dispatch-key` · banner
+
+## analytics
+
+- bond degree `27` · sealed `1` · horo `4`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `3`
 
 ## identity
 
@@ -41,4 +57,4 @@
 
 ---
 
-<sub>content-uuid `58cc9519-3a4c-863f-ae51-9ea542a3c9b6` · framed by typography partition `country` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `b8320788-a1c7-8dd5-80c1-c334bbc497a4` · framed by typography partition `country` bonds `27` · `pnpm readme` · `pnpm readme:check`</sub>

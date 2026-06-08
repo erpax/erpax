@@ -3,15 +3,15 @@
 
 # guarantee
 
-path `guarantee` · uuid `d3329214-8dae-888e-a813-89304cb5ecd2` · diamond `3b51d9bd-8a99-8170-bde7-4b54f306614a`
+path `guarantee` · uuid `d3329214-8dae-888e-a813-89304cb5ecd2` · diamond `4dbe7822-1a26-80f4-8dbd-e23ac9a63c48`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports guarantee · escapes —
-links `4/4` · folded `1` · bonds in `7` out `7`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·negative·snapshot·stat·unincorporated · ← cohort·landmarks·memories·negative·snapshot·stat·unincorporated
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law guarantee is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `921119c1-dac6-887e-94a0-2ae92b33bb3f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `639db95f-8fa5-8fa4-a0eb-7e3c192e6069` · `pnpm readme` · `pnpm computed:check`</sub>

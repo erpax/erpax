@@ -3,15 +3,15 @@
 
 # gs
 
-path `gs` · uuid `d2589621-53dd-8c6c-9206-a6ee808f3780` · diamond `747ad9cb-0562-800d-b872-2cf008951463`
+path `gs` · uuid `d2589621-53dd-8c6c-9206-a6ee808f3780` · diamond `d403c680-a087-82ef-954b-c0f05354a54f`
 horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·digital·has·law·link·merge·sti · exports gs · escapes —
-links `7/7` · folded `1` · bonds in `4` out `4`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·digital·has·law·link·merge·sti · ← collapse·digital·has·law·link·merge·sti
 analysis —
 law gs is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `5916c780-1af1-8fc7-8927-2258b18fee7f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `3e8dd7a8-a95e-8f6a-a84d-ba44e0336b78` · `pnpm readme` · `pnpm computed:check`</sub>

@@ -3,15 +3,15 @@
 
 # gravity
 
-path `gravity` · uuid `c3d92738-351f-82da-90a1-483440487663` · diamond `c7f4e123-f68b-8f68-8cc9-471bc854650f`
-horo `5` `round` · trinity `1·1·1` · sealed `1`
+path `gravity` · uuid `4f78abb1-ab2f-886d-8d00-79f660edc18a` · diamond `87e4c944-0e7b-8712-ac43-6d350b679845`
+horo `7` `descent` · trinity `1·1·1` · sealed `1`
 imports @/uuid/matrix · exports function · escapes —
-links `36/36` · folded `1` · bonds in `15` out `15`
-faces worker·plugin·pwa `0·0·0`
-neighbors → blood·closing·cohort·damaged·entropy·iata·landmarks·mandates·memories·percutaneous·privilege·siblings·stat·tenants·want · ← blood·closing·cohort·damaged·entropy·iata·landmarks·mandates·memories·percutaneous·privilege·siblings·stat·tenants·want
+links `36/36` · folded `1` · bonds in `59` out `68`
+faces worker·plugin·pwa `1·0·0`
+neighbors → agent·boltzmann·brain·collapse·collapse·collide·complete·consciousness·cost·cost·diamond·dry·dry·dust·engineering·entanglement·entropy·entropy·expand·fear·finality·folded·fusion·fusion·gate·gravity·harmony·holographic·horo·interference·law·law·linearity·link·links·literature·love·mass·math·matrix·matrix·merge·merge·one·particle·plasma·quantum·reactor·reciprocal·relocate·request·sequence·sequence·singularity·star·strength·tamper·temperature·topography·torus·triggered·twinned·vocabulary·void·whole·word·zeropoint·zeropoint · ← agent·boltzmann·brain·collapse·collide·complete·consciousness·cost·diamond·dry·dust·engineering·entanglement·entanglement·entropy·expand·fear·finality·folded·fusion·gate·gravity·harmony·holographic·horo·interference·law·linearity·link·links·literature·love·mass·math·matrix·merge·one·particle·plasma·quantum·reactor·reciprocal·relocate·request·sequence·singularity·star·strength·tamper·temperature·topography·torus·triggered·twinned·vocabulary·void·whole·word·zeropoint
 analysis agent·diamond
 law DRY = [[mass]] = gravity — the more an atom is referenced the stronger its pull, attracting duplicates and orphans to fuse into it; it is bidirectional (forward collapses folders to a minimal root, reverse expands an infinite [[word]]-chain), so the limit is a [[holographic]] boundary where minimal [[mass]] = maximal tamper-[[cost]] — gravity and the one law are the same curve.
 
 ---
 
-<sub>content-uuid `f4b51080-0fb2-8f87-9a27-503aa51edf51` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `077345ef-738f-820f-81da-040cda112b87` · `pnpm readme` · `pnpm computed:check`</sub>

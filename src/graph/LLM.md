@@ -3,15 +3,15 @@
 
 # graph
 
-path `graph` · uuid `fa7cf446-e628-8de9-bbe6-1dc0c077cb6d` · diamond `55bef31b-5765-8a92-9a45-a25ac09d9231`
+path `graph` · uuid `fa7cf446-e628-8de9-bbe6-1dc0c077cb6d` · diamond `38078b56-e6e4-8b45-834a-0340cefd5c1c`
 horo `2` `share` · trinity `1·1·1` · sealed `1`
 imports — · exports const·interface · escapes —
-links `13/13` · folded `1` · bonds in `2` out `2`
-faces worker·plugin·pwa `0·0·0`
-neighbors → episode·landmarks · ← episode·landmarks
+links `13/13` · folded `1` · bonds in `10` out `14`
+faces worker·plugin·pwa `1·0·0`
+neighbors → atom·entanglement·entanglement·graph·law·law·link·links·matrix·merge·merge·node·quantum·quantum · ← atom·entanglement·graph·law·link·links·matrix·merge·node·quantum
 analysis —
 law a graph is the shape of the corpus itself — [[atom]]s as nodes, [[links]] as edges; neighbors and breadth-first reachability derived purely from the edge list, the [[quantum]] facet reading the edges as [[entanglement]].
 
 ---
 
-<sub>content-uuid `22015f1f-0623-8ca9-b87a-d973613b6cb8` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `400215e1-697a-81c9-a71b-96414af59bae` · `pnpm readme` · `pnpm computed:check`</sub>

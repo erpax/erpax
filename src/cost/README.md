@@ -25,7 +25,32 @@
 
 - partition `cost` · sub-root `39f13edb-cfbe-876c-9400-e150601cfd8b`
 - bond degree `472` · analysis neighbors `analytics` · `aura`
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `Conservation Law 62 (coverage) — the all-directions cascade` · banner
+- `CRAQ — Terrace & Freedman, USENIX ATC 2009` · banner
+- `CRAQ (Terrace & Freedman, USENIX ATC 2009) — strong-consistency chain replication` · banner
+- `DeepSeek-Prover-V2 — recursive, kernel-checked invariants` · banner
+- `DeepSeek-Prover-V2 (recursive subgoal decomposition; Lean 4 kernel-checked)` · banner
+- `ISO-3166-1` · catalogue
+- `ISO/IEC 25010:2023 §5.3 resource-utilisation (output per resource spent)` · banner
+- `NIST SP 800-107r1 §5.1 — 2nd-preimage ≈ L bits, collision ≈ L/2` · banner
+- `NIST-SP-800-63` · catalogue
+- `RFC 9562 §8 — UUID security considerations` · banner
+- `RFC-9562` · catalogue
+- `W3C-PROV-O` · catalogue
+
+## analytics
+
+- bond degree `472` · sealed `1` · horo `2`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `12`
 
 ## identity
 
@@ -41,4 +66,4 @@
 
 ---
 
-<sub>content-uuid `f2b964fd-3214-8b31-b962-24fbedad45b5` · framed by typography partition `cost` bonds `472` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `5c0f5756-4ed2-8792-a2d4-6972d44eeb37` · framed by typography partition `cost` bonds `472` · `pnpm readme` · `pnpm readme:check`</sub>

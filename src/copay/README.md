@@ -23,7 +23,21 @@
 
 - partition `copay` · sub-root `0587d678-8f5f-8586-b4e6-39010c0b4320`
 - bond degree `23` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `23` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `3e28a81f-4e41-8354-9f43-ffdad8202a2c` · framed by typography partition `copay` bonds `23` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `eb2b2372-f9b9-8c52-9fe7-7f8a7cf58f94` · framed by typography partition `copay` bonds `23` · `pnpm readme` · `pnpm readme:check`</sub>

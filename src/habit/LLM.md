@@ -3,15 +3,15 @@
 
 # habit
 
-path `habit` · uuid `f43ae62d-750b-88a1-b277-010619fcda2b` · diamond `90dcd7e7-4bae-84f5-9ba3-fab840e7f24a`
+path `habit` · uuid `f43ae62d-750b-88a1-b277-010619fcda2b` · diamond `39728904-612d-8421-a78d-4fdeaa57a326`
 horo `4` `weave` · trinity `1·0·0` · sealed `1`
 imports awareness·breath·churn·cohort·desire·engagement·friction·law·market·proof·retention·trend · exports habit · escapes —
-links `22/22` · folded `1` · bonds in `5` out `5`
+links `22/22` · folded `1` · bonds in `14` out `14`
 faces worker·plugin·pwa `0·0·0`
-neighbors → circle·cohort·landmarks·memories·stat · ← circle·cohort·landmarks·memories·stat
+neighbors → awareness·breath·churn·cohort·desire·diffusion·engagement·friction·law·market·network·proof·retention·trend · ← awareness·breath·churn·cohort·desire·diffusion·engagement·friction·law·market·network·proof·retention·trend
 analysis —
 law habit is the repetition atom that converts one transaction into many; without it a [[market]] is a spike that decays, and if habit is the zero atom every other atom's compounding collapses to a leaky bucket.
 
 ---
 
-<sub>content-uuid `cba60386-b772-8794-92b3-f5e960b7e004` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `964cd649-40e6-80a8-a4c4-ecf9c5d05e4d` · `pnpm readme` · `pnpm computed:check`</sub>

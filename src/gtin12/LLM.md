@@ -8,10 +8,10 @@ horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports gtin12 · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law gtin12 is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `0d48e38d-21fc-88d5-9391-331229e687fc` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `311af54d-c9eb-8a59-aa63-e79c4c9f59ad` · `pnpm readme` · `pnpm computed:check`</sub>

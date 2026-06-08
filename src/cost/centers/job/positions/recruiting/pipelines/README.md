@@ -25,7 +25,26 @@
 
 - partition `cost` · sub-root `39f13edb-cfbe-876c-9400-e150601cfd8b`
 - bond degree `21` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `ADA / EEOC US-equal-opportunity` · banner
+- `EU Equal Treatment Directive 2000/78` · banner
+- `GDPR Art.5(1)(e) storage-limitation` · banner
+- `GDPR Art.6(1)(b) recruitment-lawful-basis` · banner
+- `ISO-19011:2018 audit-trail recruiting-evidence` · banner
+- `ISO-8601-1:2019 date-time` · banner
+
+## analytics
+
+- bond degree `21` · sealed `1` · horo `5`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `6`
 
 ## identity
 
@@ -41,4 +60,4 @@
 
 ---
 
-<sub>content-uuid `21d576d8-d7af-8765-a32a-a3c10d445a91` · framed by typography partition `cost` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `1d286a34-3b6f-8569-84d8-b24088bdedb2` · framed by typography partition `cost` bonds `21` · `pnpm readme` · `pnpm readme:check`</sub>

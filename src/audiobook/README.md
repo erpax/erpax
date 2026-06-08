@@ -23,7 +23,7 @@
 
 - partition `audiobook` · sub-root `2c54409f-2555-861c-a697-020eef5a7624`
 - bond degree `9` · analysis neighbors —
-- graph root `1c65e160-5137-86a1-ad8e-dc86b0e96873`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
 
 ## [[cloudflare]] bindings
 
@@ -53,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `d3639d7a-5a03-849c-8b8d-9a7654f35617` · framed by typography partition `audiobook` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `f2a000a2-5dcc-8912-a635-a5394c7040e5` · framed by typography partition `audiobook` bonds `9` · `pnpm readme` · `pnpm readme:check`</sub>

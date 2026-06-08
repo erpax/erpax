@@ -25,7 +25,23 @@
 
 - partition `cost` · sub-root `39f13edb-cfbe-876c-9400-e150601cfd8b`
 - bond degree `40` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `IFRS IAS-19 employee-benefits (planned-headcount accruals)` · banner
+- `ISO-19011:2018 audit-trail headcount-evidence` · banner
+- `ISO-8601-1:2019 date-time` · banner
+
+## analytics
+
+- bond degree `40` · sealed `1` · horo `7`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `3`
 
 ## identity
 
@@ -41,4 +57,4 @@
 
 ---
 
-<sub>content-uuid `86f45264-3dc6-8ea6-a02c-3135046e1410` · framed by typography partition `cost` bonds `40` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c159724f-327e-8e7d-902f-6d0fffd7ff4f` · framed by typography partition `cost` bonds `40` · `pnpm readme` · `pnpm readme:check`</sub>

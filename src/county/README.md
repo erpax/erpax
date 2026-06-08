@@ -23,7 +23,21 @@
 
 - partition `county` · sub-root `d0801e11-ae5c-8a21-a4c3-eba4a6e82bd2`
 - bond degree `20` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `schema.org — the type vocabulary, collided to single words` · banner
+
+## analytics
+
+- bond degree `20` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `1`
+- bindings `0` · standards `1`
 
 ## identity
 
@@ -39,4 +53,4 @@
 
 ---
 
-<sub>content-uuid `440e8a20-f2a4-8f79-bdd5-689dd6e067fb` · framed by typography partition `county` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `c5da120c-dddf-88d8-9e3e-eedceff3e64d` · framed by typography partition `county` bonds `20` · `pnpm readme` · `pnpm readme:check`</sub>

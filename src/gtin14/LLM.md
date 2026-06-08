@@ -3,15 +3,15 @@
 
 # gtin14
 
-path `gtin14` · uuid `e8c58cd0-819c-8fdb-8cd1-94a9eddf56bf` · diamond `c747f537-90b7-83ce-a09b-fcd32e775dac`
+path `gtin14` · uuid `e8c58cd0-819c-8fdb-8cd1-94a9eddf56bf` · diamond `78a14aba-9438-887c-a4fa-163d0edf810d`
 horo `2` `share` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports gtin14 · escapes —
-links `4/4` · folded `1` · bonds in `2` out `2`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law gtin14 is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `da6b48a9-8486-8c63-b888-9dd61591a127` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `c716d798-0462-8706-b9de-06e7cf465156` · `pnpm readme` · `pnpm computed:check`</sub>

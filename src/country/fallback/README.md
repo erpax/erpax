@@ -25,7 +25,30 @@
 
 - partition `country` · sub-root `ff847416-c94d-8cbc-b684-32508188454e`
 - bond degree `38` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `CLDR ZZ Unknown Region` · banner
+- `Conservation Law 54 universal-identity-element (country instance)` · banner
+- `EU VIES — alpha-2 country code element` · banner
+- `ISO 3166-1 §6 user-assigned codes` · banner
+- `ISO 3166-2 — subdivision codes (handled by country-context)` · banner
+- `ISO-3166-2` · catalogue
+- `SWIFT BIC §3 country code (BIC normalises ZZ → reject; ERPax stores)` · banner
+- `SWIFT-MT` · catalogue
+- `UN M.49 — 001 World (numeric)` · banner
+- `Unicode-CLDR` · catalogue
+
+## analytics
+
+- bond degree `38` · sealed `1` · horo `8`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `10`
 
 ## identity
 
@@ -41,4 +64,4 @@
 
 ---
 
-<sub>content-uuid `b050e7fb-9497-8519-aef4-70922f14b443` · framed by typography partition `country` bonds `38` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `93f403d7-0629-8704-ae4f-9549479762a6` · framed by typography partition `country` bonds `38` · `pnpm readme` · `pnpm readme:check`</sub>

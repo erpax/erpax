@@ -23,7 +23,7 @@
 
 - partition `audit` · sub-root `798aecfe-af8a-8d6c-9989-a51055e00adf`
 - bond degree `91` · analysis neighbors —
-- graph root `1c65e160-5137-86a1-ad8e-dc86b0e96873`
+- graph root `8fbf4641-a4fe-846f-b7b5-6732efae3c1b`
 
 ## [[cloudflare]] bindings
 
@@ -84,4 +84,4 @@
 
 ---
 
-<sub>content-uuid `807f88da-686b-89cd-a207-e292bb6d0066` · framed by typography partition `audit` bonds `91` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `1ee136da-1e84-88ef-ae69-1fbc9200b026` · framed by typography partition `audit` bonds `91` · `pnpm readme` · `pnpm readme:check`</sub>

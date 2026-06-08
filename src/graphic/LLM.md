@@ -3,15 +3,15 @@
 
 # graphic
 
-path `graphic` · uuid `f6062f22-8e06-85cc-a7bb-ffce648584c6` · diamond `ceb76d2b-e059-825f-92ee-e9e423349733`
+path `graphic` · uuid `f6062f22-8e06-85cc-a7bb-ffce648584c6` · diamond `30e20bf0-4c76-8ad3-8065-5bd19089fc94`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports graphic · escapes —
-links `4/4` · folded `1` · bonds in `5` out `5`
+links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat·statistic · ← cohort·landmarks·memories·stat·statistic
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law graphic is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `0a96c725-ec19-8a9c-86ac-75e404ed5c67` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `78bfa936-1598-8325-89bf-489afe868b2b` · `pnpm readme` · `pnpm computed:check`</sub>

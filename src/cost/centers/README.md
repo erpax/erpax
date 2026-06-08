@@ -25,7 +25,28 @@
 
 - partition `cost` · sub-root `39f13edb-cfbe-876c-9400-e150601cfd8b`
 - bond degree `66` · analysis neighbors —
-- graph root `08417410-9529-8662-a45d-0e6296f0598e`
+- graph root `d6f4a36c-338b-86ce-9e35-5b6cba1c44fd`
+
+## [[cloudflare]] bindings
+
+—
+
+## [[standards]]
+
+- `IFRS IAS-1 §99 statement-of-comprehensive-income` · banner
+- `IFRS IFRS-8 operating-segments` · banner
+- `ISO-19011:2018 audit-trail` · banner
+- `ISO-3166-1` · catalogue
+- `ISO-3166-1:2020 country-codes geographic-segment-tagging` · banner
+- `ISO-4217:2015 currency-codes` · banner
+- `SOX §302 disclosure-controls segment-disclosure` · banner
+- `US-GAAP ASC-280 segment-reporting` · banner
+
+## analytics
+
+- bond degree `66` · sealed `1` · horo `1`
+- variance `0` · balanced `1` · trinity sum `3`
+- bindings `0` · standards `8`
 
 ## identity
 
@@ -41,4 +62,4 @@
 
 ---
 
-<sub>content-uuid `c8a39ced-b704-8215-a7f8-f70f15bb9e39` · framed by typography partition `cost` bonds `66` · `pnpm readme` · `pnpm readme:check`</sub>
+<sub>content-uuid `8e1a7914-eaa9-89ed-ba68-40b260d67017` · framed by typography partition `cost` bonds `66` · `pnpm readme` · `pnpm readme:check`</sub>

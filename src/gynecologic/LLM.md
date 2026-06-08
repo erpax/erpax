@@ -8,10 +8,10 @@ horo `8` `crest` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·sti · exports gynecologic · escapes —
 links `4/4` · folded `1` · bonds in `4` out `4`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·landmarks·memories·stat · ← cohort·landmarks·memories·stat
+neighbors → collapse·law·merge·sti · ← collapse·law·merge·sti
 analysis —
 law gynecologic is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `9e5f350c-4551-86c7-bd7b-9cb76aa5c20f` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `8353f27c-7c0e-878a-a4ff-2611aa46d38a` · `pnpm readme` · `pnpm computed:check`</sub>

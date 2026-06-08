@@ -3,15 +3,15 @@
 
 # guidelines
 
-path `guidelines` · uuid `b3e89019-e901-8c11-acd2-aa9b44ad8dbe` · diamond `040d7a9a-39a3-8069-9319-23ae5b2a7bdf`
+path `guidelines` · uuid `b3e89019-e901-8c11-acd2-aa9b44ad8dbe` · diamond `94274256-92c6-8cee-8878-05caf33fb7b9`
 horo `1` `base` · trinity `1·0·0` · sealed `1`
 imports collapse·law·merge·news·quarantine·sti·updates · exports guidelines · escapes —
-links `7/7` · folded `1` · bonds in `2` out `2`
+links `7/7` · folded `1` · bonds in `7` out `7`
 faces worker·plugin·pwa `0·0·0`
-neighbors → landmarks·terminals · ← landmarks·terminals
+neighbors → collapse·law·merge·news·quarantine·sti·updates · ← collapse·law·merge·news·quarantine·sti·updates
 analysis —
 law guidelines is one schema.org word, content-addressed; the same word collides every schema.org term that contains it into one atom, deduped, never duplicated.
 
 ---
 
-<sub>content-uuid `55947d28-f08b-8559-a435-a0043b2828bb` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `7e6d5ea1-0b46-8e71-992b-652ace83b05e` · `pnpm readme` · `pnpm computed:check`</sub>

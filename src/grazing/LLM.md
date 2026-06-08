@@ -3,15 +3,15 @@
 
 # grazing
 
-path `grazing` · uuid `6115244c-80ae-87e5-b7c8-4d34477889ec` · diamond `edc5b00e-73a4-8175-81fa-78e347fce3fd`
+path `grazing` · uuid `6115244c-80ae-87e5-b7c8-4d34477889ec` · diamond `b9f5c08b-73de-86e1-9311-ec051a59d9d2`
 horo `7` `descent` · trinity `1·0·0` · sealed `1`
 imports capacity·fertility·flow·fodder·herd·law·leases·livestock·manure·measure·pasture·rotation·soil·throughput · exports grazing · escapes —
-links `30/30` · folded `1` · bonds in `7` out `7`
+links `30/30` · folded `1` · bonds in `14` out `14`
 faces worker·plugin·pwa `0·0·0`
-neighbors → cohort·differential·harden·import·landmarks·memories·stat · ← cohort·differential·harden·import·landmarks·memories·stat
+neighbors → capacity·fertility·flow·fodder·herd·law·leases·livestock·manure·measure·pasture·rotation·soil·throughput · ← capacity·fertility·flow·fodder·herd·law·leases·livestock·manure·measure·pasture·rotation·soil·throughput
 analysis —
 law livestock consuming standing forage in place, bounded by carrying [[capacity]] (the stocking rate in AUM); its paddock move is the SAME [[rotation]] atom as crop rotation, and it closes to [[fertility]] via deposited manure.
 
 ---
 
-<sub>content-uuid `2ebcf165-25a6-8776-84e4-7df108e79f66` · `pnpm readme` · `pnpm computed:check`</sub>
+<sub>content-uuid `74434a98-3ddd-8e20-9081-e6855cbf757e` · `pnpm readme` · `pnpm computed:check`</sub>
